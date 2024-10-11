@@ -5,9 +5,9 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Een productieprogramma is voorgenomen voor een team dat klaar is beginnen te sch
 
 Nadat u [ uw productieprogramma ](creating-production-programs.md) creeert, leidt de tovenaar van de a [ programmaverwezenlijking ](using-the-wizard.md) de gebruiker door selecties afhankelijk van het doel van de gebruiker in het creëren van het programma.
 
-## Opties voor het maken van programma {#program-creation-options}
+## Opties voor programmaontwerp {#program-creation-options}
 
 Uw contractuele overeenkomst met Adobe bepaalt het aantal en de soorten oplossingen beschikbaar aan uw specifieke organisatie wanneer het creëren van productieprogramma&#39;s. U hebt controle over hoe u de beschikbare oplossingen aan Cloud Manager-programma&#39;s kunt toewijzen.
 
@@ -29,9 +29,9 @@ In de volgende tabel worden de algemene scenario&#39;s beschreven van de beschik
 |---------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1 Sites-oplossing | 1 programma voor alleen sites maken | 1 productie + 1 fase, 1 ontwikkeling, 1 snelle ontwikkeling | NVT | NVT |
 | 1 Assets-oplossing | 1 Assets-programma maken | 1 productie + 1 fase, 1 ontwikkeling, 1 snelle ontwikkeling | NVT | NVT |
-| 1 sites +1 Assets | Eén programma maken: <br> 1 Sites &amp; Assets-programma | 1 productie + 1 fase, 2 ontwikkeling, 2 snelle ontwikkeling | Wanneer een meerderheid van de digitale activa wordt gebruikt om de plaatsimplementatie te steunen.<br> In dergelijke gevallen, zijn de meeste digitale activa in een gebeëindigde staat, klaar om voor kanaalervaringen via Plaatsen te worden gebruikt.<br> typisch, is één enkel team verantwoordelijk voor het beheren van inhoud voor zowel Plaatsen als Assets. | Afbeeldingen die voornamelijk voor een website worden gebruikt.<br> PDF die door als intern portaal worden verdeeld die in AEM Sites wordt gebouwd. |
+| 1 sites +1 Assets | Eén programma maken: <br> 1 Sites &amp; Assets-programma | 1 productie + 1 fase, 2 ontwikkeling, 2 snelle ontwikkeling | Wanneer een meerderheid van de digitale activa wordt gebruikt om de plaatsimplementatie te steunen.<br> In dergelijke gevallen, zijn de meeste digitale activa in een gebeëindigde staat, klaar om voor kanaalervaringen via Plaatsen te worden gebruikt.<br> typisch, is één enkel team verantwoordelijk voor het beheren van inhoud voor zowel Plaatsen als Assets. | Afbeeldingen die voornamelijk voor een website worden gebruikt.<br> een intern portaal dat in AEM Sites wordt gebouwd verdeelt PDF. |
 | 1 sites +1 Assets | Creeer afzonderlijke programma&#39;s:<br> 1 slechts het programma van Plaatsen &amp; 1 slechts het programma van Assets | 1 Productie + 1 Stadium, 1 Ontwikkeling, 1 Snelle Ontwikkeling <br> 1 Productie + 1 Stadium, 1 Ontwikkeling, 1 Snelle Ontwikkeling | Wanneer veel digitale elementen de implementatie van sites niet rechtstreeks ondersteunen.<br> In dergelijke gevallen bevinden elementen zich in verschillende statussen, waaronder Raw-bestandstypen en werken in uitvoering.<br> een specifiek creatief team beheert digitale activa door zijn eigen levenscyclus en heeft afzonderlijke werkschema&#39;s en versiecycli dan het de inhoudbeheerteam van Plaatsen. | Raw-afbeeldingen van een fotoshoot worden opgeslagen in het Assets-programma en er worden slechts een paar foto&#39;s gebruikt voor de implementatie van Sites.<br> een groot aantal dossiertypes van Creatives Cloud, zoals Photoshop en Illustrator, worden beheerd in AEM Assets en gaan door hun eigen goedkeuringswerkschema alvorens een gebeëindigde activa wordt geproduceerd.<br> overweeg gebruikend [ Verbonden Assets ](/help/assets/use-assets-across-connected-assets-instances.md#overview-of-connected-assets) in dergelijke gevallen. |
-| 1 sites + 1 sites | Creeer afzonderlijke programma&#39;s:<br> 1 slechts het programma van Plaatsen &amp; 1 slechts programma van Plaatsen | 1 Productie + 1 Stadium, 1 Ontwikkeling, 1 Snelle Ontwikkeling <br> 1 Productie + 1 Stadium, 1 Ontwikkeling, 1 Snelle Ontwikkeling | Voor plaatsen multi-huurder implementaties.<br> in dergelijke gevallen, moeten de veelvoudige plaatsen met hun eigen versieschema en specifieke ontwikkeling en inhoudsteams worden beheerd. | Twee handelsmerken met specifieke websites en afzonderlijke ontwikkelingsteams |
+| 1 sites + 1 sites | Creeer afzonderlijke programma&#39;s:<br> 1 slechts het programma van Plaatsen &amp; 1 slechts programma van Plaatsen | 1 Productie + 1 Stadium, 1 Ontwikkeling, 1 Snelle Ontwikkeling <br> 1 Productie + 1 Stadium, 1 Ontwikkeling, 1 Snelle Ontwikkeling | Voor implementaties van multi-huurdersplaatsen.<br> in dergelijke gevallen, moeten de veelvoudige plaatsen met hun eigen versieschema en specifieke ontwikkeling en inhoudsteams worden beheerd. | Twee handelsmerken met specifieke websites en afzonderlijke ontwikkelingsteams |
 
 
 >[!NOTE]

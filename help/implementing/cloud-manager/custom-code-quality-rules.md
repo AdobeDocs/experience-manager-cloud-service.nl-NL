@@ -1,13 +1,13 @@
 ---
 title: Aangepaste regels voor codekwaliteit
-description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die Cloud Manager uitvoert als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
+description: Meer informatie over de kwaliteitsregels voor aangepaste code in Cloud Manager, op basis van de best practices van Adobe Experience Manager Engineering, voor code van hoge kwaliteit via grondig testen.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '4513'
+source-wordcount: '4421'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Aangepaste regels voor codekwaliteit"
->abstract="Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die Cloud Manager uitvoert als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering."
+>abstract="Meer informatie over de kwaliteitsregels voor aangepaste code in Cloud Manager, op basis van de best practices van Adobe Experience Manager Engineering, voor code van hoge kwaliteit via grondig testen."
 
-Deze pagina beschrijft de de kwaliteitsregels van de douanecode die door Cloud Manager als deel van [ worden uitgevoerd codekwaliteit het testen ](/help/implementing/cloud-manager/code-quality-testing.md). Zij zijn gebaseerd op beste praktijken van de Techniek van de Experience Manager.
+Meer informatie over de kwaliteitsregels voor aangepaste code in Cloud Manager, op basis van de best practices van Adobe Experience Manager Engineering, voor code van hoge kwaliteit via grondig testen. Zie ook [ het testen van de codekwaliteit ](/help/implementing/cloud-manager/code-quality-testing.md).
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Deze pagina beschrijft de de kwaliteitsregels van de douanecode die door Cloud M
 
 >[!NOTE]
 >
->De hier opgegeven codevoorbeelden dienen slechts ter illustratie. Zie de documentatie SonarQube [ Concepts ](https://docs.sonarqube.org/latest/) om over concepten SonarQube en kwaliteitsregels te leren.
+>De hier opgegeven codevoorbeelden dienen slechts ter illustratie. Zie de documentatie SonarQube [ Concepts ](https://docs.sonarsource.com/sonarqube/latest/) om over concepten SonarQube en kwaliteitsregels te leren.
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -115,7 +115,8 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Ernst**: Kritiek
 * **sinds**: Versie 2018.6.0
 
-Wanneer het uitvoeren van HTTP- verzoeken van binnen een toepassing van de Experience Manager, is het kritiek om ervoor te zorgen dat juiste onderbrekingen worden gevormd om onnodige draadconsumptie te vermijden. Jammer genoeg, is het standaardgedrag van zowel de standaardHTTP- Cliënt van Java™ (`java.net.HttpUrlConnection`) als de algemeen gebruikte cliënt van de Componenten van Apache HTTP aan geen tijd uit, zodat moeten de onderbrekingen uitdrukkelijk worden geplaatst. Bovendien zouden deze onderbrekingen, als beste praktijken, niet meer dan 60 seconden moeten zijn.
+Wanneer het maken van HTTP- verzoeken binnen een toepassing van de Experience Manager, is het essentieel om aangewezen onderbrekingen te vormen om onnodige draadconsumptie te verhinderen.
+Standaard leggen zowel de Java™ HTTP-client (java.net.HttpUrlConnection) als de veelgebruikte Apache HTTP Components-client geen time-outs op, zodat deze handmatig moeten worden geconfigureerd. De beste manier is om de time-outs in te stellen op 60 seconden of minder.
 
 #### Niet-compatibele code {#non-compliant-code-2}
 
@@ -190,9 +191,9 @@ public void orDoThis () {
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2018.4.0
 
-`ResourceResolver` -objecten die uit `ResourceResolverFactory` zijn opgehaald, gebruiken systeembronnen. Hoewel er maatregelen zijn om deze bronnen terug te winnen wanneer een `ResourceResolver` niet meer in gebruik is, is het efficiënter om geopende `ResourceResolver` -objecten expliciet te sluiten door de methode `close()` aan te roepen.
+ResourceResolver-objecten die uit `ResourceResolverFactory` zijn opgehaald, gebruiken systeembronnen. Hoewel er maatregelen zijn om deze bronnen terug te winnen wanneer een `ResourceResolver` niet meer in gebruik is, is het efficiënter om geopende `ResourceResolver` -objecten expliciet te sluiten door de methode `close()` aan te roepen.
 
-Een relatief gebruikelijke misvatting is dat `ResourceResolver` -objecten die met een bestaande JCR-sessie zijn gemaakt, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dat is niet het geval. Ongeacht hoe een `ResourceResolver` wordt geopend, moet deze worden gesloten wanneer deze niet meer wordt gebruikt. Aangezien `ResourceResolver` de interface `Closeable` implementeert, is het ook mogelijk om de syntaxis `try-with-resources` te gebruiken in plaats van `close()` expliciet aan te roepen.
+Een veel voorkomende misvatting is dat `ResourceResolver` -objecten die met een bestaande JCR-sessie zijn gemaakt, niet expliciet moeten worden gesloten of dat het sluiten van deze objecten gevolgen heeft voor de JCR-sessie. Deze informatie is onjuist. Een `ResourceResolver` moet altijd worden gesloten wanneer het niet meer nodig is. Aangezien `ResourceResolver` de `Closeable` -interface implementeert, kunt u ook de `try-with-resources` -syntaxis gebruiken in plaats van `close()` rechtstreeks aan te roepen.
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
@@ -232,7 +233,7 @@ public void orDoThis(Session session) throws Exception {
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2018.4.0
 
-Zoals die in de [ het Schuiven documentatie ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) wordt beschreven, bindingen servlets door wegen wordt ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
+Zoals die in de [ het Schuiven documentatie ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) wordt beschreven, binden servlets door wegen worden ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
 
 #### Niet-compatibele code {#non-compliant-code-5}
 
@@ -252,7 +253,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
-In het algemeen, zou een uitzondering precies één keer moeten worden geregistreerd. Het registreren van uitzonderingen kan veelvoudige tijden verwarring veroorzaken aangezien het onduidelijk is hoe vaak een uitzondering voorkwam. Het meest gangbare patroon dat tot dit leidt is het registreren en het werpen van een gevangen uitzondering.
+In het algemeen, zou een uitzondering precies één keer moeten worden geregistreerd. Het registreren van uitzonderingen kan veelvoudige tijden verwarring veroorzaken. De reden is dat het onduidelijk is hoe vaak een uitzondering is opgetreden. Het meest gangbare patroon dat tot dit effect leidt is het registreren en het werpen van een gevangen uitzondering.
 
 #### Niet-compatibele code {#non-compliant-code-6}
 
@@ -319,11 +320,11 @@ public void doThis() throws Exception {
 * **Type**: Code Smell
 * **Ernst**: Klein
 
-In het algemeen, zou het INFO logboekniveau moeten worden gebruikt om belangrijke acties te afbakenen en, door gebrek, wordt de Experience Manager gevormd om bij het INFO niveau of boven te registreren. GET- en HEAD-methoden mogen nooit alleen-lezen zijn en vormen dus geen belangrijke acties. Het registreren op het niveau INFO in antwoord op GET of HEAD verzoeken zal waarschijnlijk tot significante logboeklawaai leiden, die het moeilijker maken om nuttige informatie in logboekdossiers te identificeren. Het registreren wanneer de behandeling van GET of HEAD- verzoeken of op de niveaus van de WAARSCHUWING of van de FOUT zou moeten zijn wanneer iets verkeerd is gegaan of op de niveaus DEBUG of van de TRACE als de diepere het oplossen van problemeninformatie nuttig zou zijn.
+In het algemeen, zou het INFO logboekniveau moeten worden gebruikt om belangrijke acties te afbakenen en, door gebrek, wordt de Experience Manager gevormd om bij het INFO niveau of boven te registreren. GET- en HEAD-methoden mogen nooit alleen-lezen zijn en vormen dus geen belangrijke acties. Het registreren op het niveau INFO in antwoord op GET of HEAD verzoeken zal waarschijnlijk tot significante logboeklawaai leiden, die het moeilijker maken om nuttige informatie in logboekdossiers te identificeren. Wanneer het behandelen van GET of HEAD verzoeken, logboek bij de WARN of niveaus van de FOUT als iets verkeerd is gegaan. Gebruik DEBUG- of TRACE-niveaus als gedetailleerde informatie over probleemoplossing nodig is.
 
 >[!NOTE]
 >
->Dit is niet van toepassing op het registreren van het type `access.log` voor elke aanvraag.
+>Is niet van toepassing op `access.log` type registreren voor elke aanvraag.
 
 #### Niet-compatibele code {#non-compliant-code-8}
 
@@ -348,7 +349,7 @@ public void doGet() throws Exception {
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
-Als beste praktijken, zouden de logboekberichten contextuele informatie over moeten verstrekken waar in de toepassing een uitzondering is voorgekomen. Terwijl de context ook door stapelsporen te gebruiken kan worden bepaald, over het algemeen zal het logboekbericht gemakkelijker zijn te lezen en te begrijpen. Dientengevolge, wanneer het registreren van een uitzondering, is het een slechte praktijk om het bericht van de uitzondering als logboekbericht te gebruiken. Het uitzonderingsbericht bevat wat verkeerd ging terwijl het logboekbericht zou moeten worden gebruikt om een logboeklezer te vertellen wat de toepassing deed toen de uitzondering gebeurde. Het uitzonderingsbericht wordt nog geregistreerd. Door uw eigen bericht te specificeren, zijn de logboeken gemakkelijker te begrijpen.
+Als beste praktijken, zouden de logboekberichten contextuele informatie over moeten verstrekken waar in de toepassing een uitzondering is voorgekomen. Terwijl de context ook door stapelsporen te gebruiken kan worden bepaald, over het algemeen zal het logboekbericht gemakkelijker zijn te lezen en te begrijpen. Dientengevolge, wanneer het registreren van een uitzondering, is het een slechte praktijk om het bericht van de uitzondering als logboekbericht te gebruiken. Het uitzonderingsbericht verklaart wat verkeerd ging, terwijl het logboekbericht de lezer zou moeten informeren over wat de toepassing deed toen de uitzondering voorkwam. Het uitzonderingsbericht wordt nog geregistreerd. Door uw eigen bericht te specificeren, zijn de logboeken gemakkelijker te begrijpen.
 
 #### Niet-compatibele code {#non-compliant-code-9}
 
@@ -381,7 +382,7 @@ public void doThis() {
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
-Zoals de naam al aangeeft, moeten Java™-uitzonderingen altijd in uitzonderlijke omstandigheden worden gebruikt. Dientengevolge, wanneer een uitzondering wordt gevangen, is het belangrijk om ervoor te zorgen dat de logboekberichten op het aangewezen niveau, of WARN of FOUT worden geregistreerd. Dit zorgt ervoor dat die berichten correct in de logboeken verschijnen.
+Zoals de naam al aangeeft, moeten Java™-uitzonderingen altijd in uitzonderlijke omstandigheden worden gebruikt. Dientengevolge, wanneer een uitzondering wordt gevangen, is het belangrijk om ervoor te zorgen dat de logboekberichten op het aangewezen niveau, of WARN of FOUT worden geregistreerd. Dit proces zorgt ervoor dat die berichten correct in de logboeken verschijnen.
 
 #### Niet-compatibele code {#non-compliant-code-10}
 
@@ -473,14 +474,14 @@ public void doThis() {
 }
 ```
 
-### Vermijd hardcoded /apps en /libs paden {#avoid-hardcoded-apps-and-libs-paths}
+### Harde apps en bibliotheekpaden vermijden {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Sleutel**: CQRules:CQBP-71
 * **Type**: Code Smell
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
-Doorgaans moeten paden die beginnen met `/libs` en `/apps` niet worden gecodeerd als de paden waarnaar ze verwijzen, meestal worden opgeslagen als paden die relatief zijn ten opzichte van het zoekpad met de optie Schuivend, dat standaard is ingesteld op `/libs,/apps` . Het gebruik van het absolute pad kan leiden tot subtiele defecten die pas later in de levenscyclus van het project verschijnen.
+Paden die beginnen met `/libs` en `/apps` , moeten gewoonlijk niet worden gecodeerd. Deze paden worden meestal opgeslagen ten opzichte van het zoekpad voor de splitsing, dat standaard op `/libs,/apps` staat. Het gebruik van het absolute pad kan leiden tot subtiele defecten die pas later in de levenscyclus van het project verschijnen.
 
 #### Niet-compatibele code {#non-compliant-code-13}
 
@@ -529,7 +530,7 @@ Er zijn echter gevallen waarin een API in de context van Experience Manager is a
 * **Ernst**: Klein
 * **sinds**: Versie 2023.11
 
-Het Apache Sling-project ontmoedigt het gebruik van de `@Inject` -annotatie in de context van Sling Models, omdat dit tot slechte prestaties kan leiden wanneer het wordt gecombineerd met `DefaultInjectionStrategy.OPTIONAL` (op veld- of klassenniveau). In plaats daarvan moeten meer specifieke injecties (zoals de `@ValueMapValue` - of `@OsgiInjector` -annotaties) worden gebruikt.
+Het Apache Sling-project ontmoedigt het gebruik van de `@Inject` -annotatie in de context van Sling Models, omdat dit tot slechte prestaties kan leiden wanneer het wordt gecombineerd met `DefaultInjectionStrategy.OPTIONAL` (op veld- of klassenniveau). In plaats daarvan moeten specifiekere injecties (zoals de `@ValueMapValue` - of `@OsgiInjector` -annotaties) worden gebruikt.
 
 Controleer de [ documentatie van Apache Sling ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) voor meer informatie over de geadviseerde annotaties en waarom deze aanbeveling in de eerste plaats werd gemaakt.
 
@@ -541,9 +542,9 @@ Controleer de [ documentatie van Apache Sling ](https://sling.apache.org/documen
 * **Ernst**: Klein
 * **sinds**: Versie 2023.11
 
-AEM toepassingen bereiken vaak andere toepassingen met behulp van het HTTP-protocol en Apache HttpClient is een vaak gebruikte bibliotheek om dit te bereiken. Maar de verwezenlijking van zulk een voorwerp HttpClient komt met wat overheadkosten, zodat zouden deze voorwerpen zo veel mogelijk moeten worden opnieuw gebruikt.
+AEM toepassingen bereiken vaak andere toepassingen met behulp van het HTTP-protocol en Apache HttpClient is een vaak gebruikte bibliotheek om dit doel te bereiken. Maar de verwezenlijking van zulk een voorwerp HttpClient komt met wat overheadkosten, zodat zouden deze voorwerpen zo veel mogelijk moeten worden opnieuw gebruikt.
 
-Deze regel controleert dat zulk een voorwerp HttpClient niet privé binnen een methode, maar globaal op een klassenniveau is, zodat kan het worden opnieuw gebruikt. In dit geval moet het veld httpClient worden ingesteld in de constructor van de klasse of de methode `activate()` (als deze klasse een OSGi-component/service is).
+Deze regel controleert dat zulk een voorwerp HttpClient niet privé binnen een methode, maar globaal op een klassenniveau is, zodat kan het worden opnieuw gebruikt. In dit geval moet het veld HttpClient worden ingesteld in de constructor van de klasse of de methode `activate()` (als deze klasse een OSGi-component/service is).
 
 Controleer de [ Gids van de Optimalisering ](https://hc.apache.org/httpclient-legacy/performance.html) van HttpClient voor sommige beste praktijken betreffende het gebruik van HttpClient.
 
@@ -576,20 +577,20 @@ In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manag
 
 >[!NOTE]
 >
->OakPAL is een framework dat inhoudspakketten valideert met behulp van een zelfstandige Oak-opslagplaats. Het werd ontwikkeld door een partner van de Experience Manager en winnaar van de Experience Manager Rockstar North America van 2019.
+>OakPAL is een framework dat inhoudspakketten valideert met behulp van een zelfstandige Oak-opslagplaats. Een partner van de Experience Manager, die de prijs van 2019 voor de Experience Manager Rockstar North America won, ontwikkelde deze.
 
-### Product-API&#39;s die met @ProviderType zijn geannoteerd, mogen niet door klanten worden geïmplementeerd of uitgebreid {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Klanten moeten product-API&#39;s die met @ProviderType zijn aangeroepen, niet implementeren of uitbreiden{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Sleutel**: CQBP-84
 * **Type**: Bug
 * **Ernst**: Kritiek
 * **sinds**: Versie 2018.7.0
 
-De Experience Manager-API bevat Java™-interfaces en -klassen die alleen bedoeld zijn voor gebruik — maar niet geïmplementeerd — door aangepaste code. De interface `com.day.cq.wcm.api.Page` moet bijvoorbeeld alleen door de Experience Manager worden geïmplementeerd.
+De Experience Manager-API bevat Java™-interfaces en -klassen, die alleen bedoeld zijn voor gebruik — maar niet geïmplementeerd — door aangepaste code. Alleen Experience Managers moeten bijvoorbeeld de interface `com.day.cq.wcm.api.Page` implementeren.
 
 Wanneer nieuwe methodes aan deze interfaces worden toegevoegd, beïnvloeden die extra methodes geen bestaande code die deze interfaces gebruikt. Dientengevolge, wordt de toevoeging van nieuwe methodes aan deze interfaces beschouwd achterwaarts-compatibel te zijn. Nochtans, als de douanecode één van deze interfaces uitvoert, heeft die douanecode een achterwaarts-verenigbaarheidsrisico voor de klant geïntroduceerd.
 
-Interfaces en klassen — zoals geïmplementeerd door Experience Manager — zijn voorzien van een annotatie `org.osgi.annotation.versioning.ProviderType` of soms een vergelijkbare oudere annotatie `aQute.bnd.annotation.ProviderType` . Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd of een klasse door douanecode wordt uitgebreid.
+Interfaces en klassen — zoals geïmplementeerd door Experience Manager — zijn voorzien van een annotatie `org.osgi.annotation.versioning.ProviderType` of soms een vergelijkbare oudere annotatie `aQute.bnd.annotation.ProviderType` . Deze regel identificeert gevallen waar de douanecode zulk een interface uitvoert of een klasse uitbreidt.
 
 #### Niet-compatibele code {#non-compliant-code-3}
 
@@ -645,7 +646,7 @@ Zie [ het indexeren documentatie ](/help/operations/indexing.md#preparing-the-ne
 * **Ernst**: Blocker
 * **sinds**: 2021.8.0
 
-Oak-indexen van het type `lucene` moeten altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van de indexen van Lucene kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition) worden gevonden.
+Oak-indexen van het type `lucene` moeten altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot systeeminstabiliteit. Meer informatie over de structuur van de indexen van Lucene kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition) worden gevonden.
 
 #### Niet-compatibele code {#non-compliant-code-indexasync}
 
@@ -674,14 +675,14 @@ Oak-indexen van het type `lucene` moeten altijd asynchroon worden geïndexeerd. 
         + config.xml
 ```
 
-### Aangepaste DAM Asset Lucene Oak-indexen hebben de juiste structuur  {#oakpal-damAssetLucene-sanity-check}
+### Aangepaste DAM Asset Lucene Oak-indexen hebben de juiste structuur {#oakpal-damAssetLucene-sanity-check}
 
 * **Sleutel**: IndexDamAssetLucene
 * **Type**: Bug
 * **Ernst**: Blocker
 * **sinds**: 2021.6.0
 
-Als u wilt dat het zoeken naar elementen correct werkt in Experience Manager Assets, moeten aanpassingen van de Oak-index van `damAssetLucene` een aantal richtlijnen volgen die specifiek zijn voor deze index. Deze regel controleert of de indexdefinitie een multi-getaxeerde eigenschap met de naam `tags` moet hebben die de waarde `visualSimilaritySearch` bevat.
+Als u wilt dat het zoeken naar elementen correct werkt in Experience Manager Assets, moeten aanpassingen van de Oak-index van `damAssetLucene` een aantal richtlijnen volgen die specifiek zijn voor deze index. Deze regel controleert of de indexdefinitie een multi-getaxeerde eigenschap met de naam `tags` moet hebben, die de waarde `visualSimilaritySearch` bevat.
 
 #### Niet-compatibele code {#non-compliant-code-damAssetLucene}
 
@@ -710,14 +711,14 @@ Als u wilt dat het zoeken naar elementen correct werkt in Experience Manager Ass
         + config.xml
 ```
 
-### Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen {#oakpal-customer-package}
+### Klantpakketten mogen geen knooppunten onder libs maken of wijzigen {#oakpal-customer-package}
 
 * **Sleutel**: BannedPath
 * **Type**: Bug
 * **Ernst**: Kritiek
 * **sinds**: Versie 2019.6.0
 
-Het is al lang een goede gewoonte om de `/libs` -inhoudsstructuur in de opslagplaats voor inhoud van de Experience Manager als alleen-lezen te beschouwen voor klanten. Als u knooppunten en eigenschappen wijzigt onder `/libs` , ontstaat een aanzienlijk risico voor belangrijke en kleine updates. Wijzigingen in `/libs` moeten via officiële Adobe plaatsvinden.
+Het is al lang een goede gewoonte om de `/libs` -inhoudsstructuur in de opslagplaats voor inhoud van de Experience Manager als alleen-lezen te beschouwen voor klanten. Als u knooppunten en eigenschappen wijzigt onder `/libs` , ontstaat een aanzienlijk risico voor belangrijke en kleine updates. Gebruik Adobe via officiële kanalen om wijzigingen aan te brengen in `/libs` .
 
 ### De pakketten zouden geen dubbele configuraties OSGi moeten bevatten {#oakpal-package-osgi}
 
@@ -726,7 +727,7 @@ Het is al lang een goede gewoonte om de `/libs` -inhoudsstructuur in de opslagpl
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2019.6.0
 
-Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Deze kwestie leidt tot dubbelzinnigheid over welke configuratie van toepassing is. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties identificeert waar de zelfde component veelvoudige tijden op de zelfde looppaswijze of de combinatie looppaswijzen wordt gevormd.
+Een gemeenschappelijk probleem dat in complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Deze kwestie leidt tot dubbelzinnigheid over welke configuratie van toepassing is. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties identificeert waar de zelfde component veelvoudige tijden op de zelfde looppaswijze of de combinatie looppaswijzen wordt gevormd.
 
 >[!NOTE]
 >
@@ -734,7 +735,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 >
 >Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` where `com.myco:com.myco.all` embeds `com.myco:com.myco.ui.apps` genereert, worden alle configuraties in `com.myco:com.myco.ui.apps` als duplicaten gerapporteerd.
 >
->Dit is over het algemeen een geval van het niet volgen van de [ Richtlijnen van de Structuur van het Pakket van de Inhoud ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In dit specifieke voorbeeld ontbreekt de eigenschap `<cloudManagerTarget>none</cloudManagerTarget>` in het pakket `com.myco:com.myco.ui.apps` .
+>Over het algemeen, is deze situatie een geval van het niet volgen van de [ Richtlijnen van de Structuur van het Pakket van de Inhoud ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In dit voorbeeld ontbreekt de eigenschap `<cloudManagerTarget>none</cloudManagerTarget>` in het pakket `com.myco:com.myco.ui.apps` .
 
 #### Niet-compatibele code {#non-compliant-code-osgi}
 
@@ -764,7 +765,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2019.6.0
 
-Om veiligheidsredenen, zijn de wegen die `/config/` en `/install/` bevatten slechts leesbaar door administratieve gebruikers in Experience Manager en zouden slechts voor configuratie OSGi en bundels OSGi moeten worden gebruikt. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
+Om veiligheidsredenen, zijn de wegen die `/config/` en `/install/` bevatten slechts leesbaar door administratieve gebruikers in Experience Manager en zouden slechts voor configuratie OSGi en bundels OSGi moeten worden gebruikt. Door andere typen inhoud onder paden met deze segmenten te plaatsen, kan het gedrag van de toepassing per ongeluk verschillen tussen gebruikers met en zonder beheerdersrechten.
 
 Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` in componentdialoogvensters of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit probleem op te lossen, moet de naam van het desbetreffende knooppunt worden gewijzigd in een compatibele naam. Voor de configuratie van de RTF-editor gebruikt u de eigenschap `configPath` op het knooppunt `cq:inplaceEditing` om de nieuwe locatie op te geven.
 
@@ -794,9 +795,9 @@ Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` 
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2019.6.0
 
-Gelijkaardig aan de [ Pakketten zouden niet Dubbele regel van de Configuraties moeten bevatten OSGi ](#oakpal-package-osgi), is dit een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
+Gelijkaardig aan de [ Pakketten zouden niet Dubbele regel van OSGi Configuraties ](#oakpal-package-osgi) moeten bevatten, is deze situatie een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
 
-### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
+### De standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
 
 * **Sleutel**: ClassicUIAuthoringMode
 * **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
@@ -805,14 +806,14 @@ Gelijkaardig aan de [ Pakketten zouden niet Dubbele regel van de Configuraties m
 
 De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaalt de standaard auteurswijze binnen Experience Manager. Omdat Klassieke UI sinds Experience Manager 6.4 is afgekeurd, wordt een kwestie nu opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
 
-### Componenten met dialoogvensters moeten een interface-aanraakdialoogvensters hebben {#oakpal-components-dialogs}
+### Componenten met dialoogvensters moeten aanraakinterface-dialoogvensters hebben {#oakpal-components-dialogs}
 
 * **Sleutel**: ComponentWithOnlyClassicUIDialog
 * **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
-Componenten van Experience Managers die een Klassieke UI-dialoogvenster hebben, moeten altijd een overeenkomstig dialoogvenster Touch UI hebben. Beide bieden een optimale ontwerpervaring en zijn compatibel met het implementatiemodel van de Cloud Service, waarbij de klassieke gebruikersinterface niet wordt ondersteund. Deze regel verifieert de volgende scenario&#39;s:
+Componenten van Experience Managers die een Klassieke UI-dialoogvenster hebben, moeten altijd een overeenkomstig dialoogvenster Touch UI hebben. Beide bieden een optimale ontwerpervaring die compatibel is met het implementatiemodel van de Cloud Service, waarbij de klassieke gebruikersinterface niet meer wordt ondersteund. Deze regel verifieert de volgende scenario&#39;s:
 
 * Een component met een klassieke UI-dialoogvenster (dat wil zeggen een `dialog` onderliggende node) moet een overeenkomend Touch UI-dialoogvenster hebben (dat wil zeggen een `cq:dialog` onderliggende node).
 * Een component met een klassieke UI-ontwerpdialoogvenster (dat wil zeggen een `design_dialog` -knooppunt) moet een corresponderend dialoogvenster voor het aanraakinterface-ontwerp hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
@@ -831,7 +832,7 @@ Om compatibel te zijn met het implementatiemodel van Cloud Servicen, moeten afzo
 
 >[!NOTE]
 >
->De regel [ Pakketten van de Klant zouden geen knopen onder /libs ](#oakpal-customer-package) moeten creëren of wijzigen altijd van toepassing zijn.
+>De regel [ Pakketten van de Klant zouden geen knopen onder libs ](#oakpal-customer-package) moeten creëren of wijzigen altijd van toepassing zijn.
 
 Zie ](/help/implementing/developing/introduction/aem-project-content-package-structure.md) de Structuur van het Project van de Experience Manager 0} {voor meer details.[
 
@@ -884,7 +885,7 @@ Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zo
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2021.2.0
 
-Met de overgang naar assetmicro-services voor middelenverwerking op as a Cloud Service Experience Manager zijn verschillende workflowprocessen die werden gebruikt in on-premise- en AMS-versies van Experience Manager, niet ondersteund of overbodig geworden.
+Met de verschuiving naar assetmicro-services voor middelenverwerking in Adobe Experience Manager as a Cloud Service worden verschillende workflowprocessen die in on-premise- en AMS-versies worden gebruikt, nu niet ondersteund. Veel van deze workflows zijn ook overbodig geworden.
 
 Het migratiehulpmiddel in de [ as a Cloud Service bewaarplaats van Assets GitHub van de Experience Manager ](https://github.com/adobe/aem-cloud-migration) kan worden gebruikt om werkschemamodellen tijdens migratie aan as a Cloud Service Experience Manager bij te werken.
 
@@ -908,7 +909,7 @@ De migratie van statisch aan editable malplaatjes kan grotendeels worden geautom
 
 De oudere Foundation Components (componenten onder `/libs/foundation`) zijn afgekeurd voor verschillende versies van Experience Managers ten gunste van Core Components. Het gebruik van de Componenten van de Stichting als basis voor douanecomponenten (hetzij door bedekking of erfenis) wordt ontmoedigd en zou in de overeenkomstige Componenten van de Kern moeten worden omgezet.
 
-Deze omzetting kan door de [ Hulpmiddelen van de Modernisering van de Experience Manager ](https://opensource.adobe.com/aem-modernize-tools/) worden vergemakkelijkt.
+[ Hulpmiddelen van de Modernisering van de Experience Manager ](https://opensource.adobe.com/aem-modernize-tools/) kunnen deze omzetting vergemakkelijken.
 
 ### Gebruik alleen ondersteunde namen van de uitvoermodi en de volgorde {#oakpal-supported-runmodes}
 
@@ -917,9 +918,9 @@ Deze omzetting kan door de [ Hulpmiddelen van de Modernisering van de Experience
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-De as a Cloud Service van de Experience Manager dwingt een strikt noemend beleid voor looppas wijzenamen en een strikte het opdracht geven tot voor die looppaswijzen af. De lijst van gesteunde looppaswijzen kan in het document [ worden gevonden die aan Experience Manager as a Cloud Service ](/help/implementing/deploying/overview.md#runmodes) opstelt en om het even welke afwijking van dit wordt geïdentificeerd als kwestie.
+De as a Cloud Service van de Experience Manager dwingt een strikt noemend beleid voor looppas wijzenamen en een strikte het opdracht geven tot voor die looppaswijzen af. De lijst van gesteunde looppaswijzen wordt gegrondvest in het document [ dat aan Experience Manager as a Cloud Service ](/help/implementing/deploying/overview.md#runmodes) opstelt en om het even welke afwijking van deze lijst wordt geïdentificeerd als kwestie.
 
-### De definitieknooppunten van de de onderzoeksindex van de douane moeten directe kinderen van /oak zijn:index {#oakpal-custom-search}
+### Definitieknooppunten van aangepaste zoekindex moeten onderliggende knooppunten van `/oak:index` zijn {#oakpal-custom-search}
 
 * **Sleutel**: OakIndexLocation
 * **Type**: Code Smell
@@ -935,9 +936,9 @@ Experience Manager as a Cloud Service vereist dat aangepaste zoekindexdefinities
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Experience Manager as a Cloud Service vereist dat voor aangepaste zoekindexdefinities (zoals knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` is ingesteld op `2` . Andere waarden worden niet ondersteund door as a Cloud Service Experience Managers. Meer informatie over onderzoeksindexen kan op [ Inhoud het Onderzoek en het Indexeren van de Inhoud ](/help/operations/indexing.md) worden gevonden.
+Experience Manager as a Cloud Service vereist dat voor aangepaste zoekindexdefinities (zoals knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` is ingesteld op `2` . Adobe Experience Manager as a Cloud Service ondersteunt geen andere waarde. Zie [ Inhoud Onderzoek en het Indexeren ](/help/operations/indexing.md) voor meer informatie over onderzoeksindexen.
 
-### Afstammende knooppunten van de definitieknooppunten van de aangepaste zoekindex moeten van het type &#39;niet-gestructureerd&#39; zijn {#oakpal-descendent-nodes}
+### Afstammende knooppunten van definitieknooppunten van de aangepaste zoekindex moeten van het type zijn `nt:unstructured `{#oakpal-descendent-nodes}
 
 * **Sleutel**: IndexDescendantNodeType
 * **Type**: Code Smell
@@ -953,7 +954,7 @@ Problemen kunnen moeilijk worden opgelost wanneer een definitieknooppunt van een
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten, dat op zijn beurt minstens één onderliggend knooppunt moet hebben. Meer informatie kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) worden gevonden.
+Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten, dat op zijn beurt ten minste één onderliggend knooppunt moet hebben. Meer informatie kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) worden gevonden.
 
 ### Definitieknooppunten van aangepaste zoekindex moeten de naamgevingsconventies volgen {#oakpal-custom-search-definitions}
 
@@ -964,7 +965,7 @@ Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex mo
 
 De as a Cloud Service van de Experience Manager vereist dat de definities van de douaneonderzoek (namelijk knopen van type `oak:QueryIndexDefinition`) na een specifiek patroon moeten worden genoemd dat in het document [ wordt beschreven Inhoud Onderzoek en het Indexeren ](/help/operations/indexing.md).
 
-### De de definitieknooppunten van de onderzoeksindex van de douane moeten het indextype Lucene gebruiken  {#oakpal-index-type-lucene}
+### De de definitieknooppunten van de onderzoeksindex van de douane moeten het indextype Lucene gebruiken {#oakpal-index-type-lucene}
 
 * **Sleutel**: IndexType
 * **Type**: Bug
@@ -992,7 +993,7 @@ Experience Manager as a Cloud Service verbiedt aangepaste zoekindexdefinities (k
 Experience Manager as a Cloud Service verbiedt aangepaste zoekindexdefinities (knooppunten van het type `oak:QueryIndexDefinition` ) die een eigenschap met de naam `reindex` bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar Experience Manager als een
 Cloud Service. Zie het document [ Inhoud Onderzoek en het Indexeren ](/help/operations/indexing.md#how-to-use) voor meer informatie.
 
-### Aangepaste DAM-knooppunten voor elementenwinst mogen geen queryPaths opgeven {#oakpal-damAssetLucene-queryPaths}
+### Aangepaste DAM-knooppunten voor elementluceen mogen niet worden opgegeven `queryPaths` {#oakpal-damAssetLucene-queryPaths}
 
 * **Sleutel**: IndexDamAssetLucene
 * **Type**: Bug
@@ -1027,7 +1028,7 @@ Cloud Service. Zie het document [ Inhoud Onderzoek en het Indexeren ](/help/oper
         + config.xml
 ```
 
-### Als de definitie van de aangepaste zoekindex compatVersion bevat, moet deze zijn ingesteld op 2 {#oakpal-compatVersion}
+### Als de definitie van de aangepaste zoekindex `compatVersion` bevat, moet deze zijn ingesteld op 2 {#oakpal-compatVersion}
 
 * **Sleutel**: IndexCompatVersion
 * **Type**: Code Smell
@@ -1035,16 +1036,16 @@ Cloud Service. Zie het document [ Inhoud Onderzoek en het Indexeren ](/help/oper
 * **sinds**: Versie 2022.1.0
 
 
-### Indexknooppunt dat &#39;includedPaths&#39; opgeeft, moet ook &#39;queryPaths&#39; met dezelfde waarden opgeven {#oakpal-included-paths-without-query-paths}
+### Indexknooppunt dat `includedPaths` opgeeft, moet ook `queryPaths` met dezelfde waarden opgeven {#oakpal-included-paths-without-query-paths}
 
 * **Sleutel**: IndexIncludedPathsWithoutQueryPaths
 * **Type**: Code Smell
 * **Ernst**: Klein
 * **sinds**: Versie 2023.1.0
 
-Voor aangepaste indexen moeten zowel `includedPaths` als `queryPaths` zijn geconfigureerd met identieke waarden. Als één wordt gespecificeerd, moet andere het aanpassen. Er is echter een speciaal geval voor indexen van `damAssetLucene`, inclusief aangepaste versies. U moet hiervoor alleen `includedPaths` opgeven.
+Configureer `includedPaths` en `queryPaths` voor aangepaste indexen met identieke waarden. Als één wordt gespecificeerd, moet andere het aanpassen. Er is echter een speciaal geval voor indexen van `damAssetLucene`, inclusief aangepaste versies. Geef in deze gevallen alleen `includedPaths` op.
 
-### Indexknooppunt dat nodeScopeIndex opgeeft op generiek knooppunttype moet ook includePaths en queryPaths specificeren {#oakpal-full-text-on-generic-node-type}
+### Index node die `nodeScopeIndex` opgeeft op algemeen knooppunttype, moet ook `includedPaths` en `queryPaths` opgeven {#oakpal-full-text-on-generic-node-type}
 
 * **Sleutel**: IndexFulltextOnGenericType
 * **Type**: Code Smell
@@ -1052,7 +1053,7 @@ Voor aangepaste indexen moeten zowel `includedPaths` als `queryPaths` zijn gecon
 * **sinds**: Versie 2023.1.0
 
 Wanneer u de eigenschap `nodeScopeIndex` instelt voor een &quot;algemeen&quot; knooppunttype zoals `nt:unstructured` of `nt:base` , moet u ook de eigenschappen `includedPaths` en `queryPaths` opgeven.
-`nt:base` kan als &quot;algemeen&quot;worden beschouwd, aangezien alle knooptypes van het erven. Als u dus een `nodeScopeIndex` on `nt:base` instelt, worden alle knooppunten in de gegevensopslagruimte geïndexeerd. Op dezelfde manier wordt `nt:unstructured` ook beschouwd als &#39;algemeen&#39;, omdat er veel knooppunten in opslagruimten van dit type zijn.
+Het knooppunttype `nt:base` kan als &quot;algemeen,&quot;worden beschouwd omdat alle knooppunttypes van het erven. Als u dus een `nodeScopeIndex` on `nt:base` instelt, worden alle knooppunten in de gegevensopslagruimte geïndexeerd. Op dezelfde manier wordt `nt:unstructured` ook beschouwd als &#39;algemeen&#39;, omdat er veel knooppunten in opslagruimten van dit type zijn.
 
 #### Niet-compatibele code {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1097,9 +1098,9 @@ Wanneer u de eigenschap `nodeScopeIndex` instelt voor een &quot;algemeen&quot; k
 * **Ernst**: Klein
 * **sinds**: Versie 2023.1.0
 
-Als u de standaardwaarde overschrijft, wordt de pagina zeer traag gelezen, vooral wanneer er meer inhoud wordt toegevoegd.
+Als u de standaardwaarde overschrijft, kan het lezen van de pagina vertragen, vooral wanneer er meer inhoud wordt toegevoegd.
 
-### Meerdere actieve versies van dezelfde code {#oakpal-multiple-active-versions}
+### Meerdere actieve versies van dezelfde index {#oakpal-multiple-active-versions}
 
 * **Sleutel**: IndexDetectMultipleActiveVersionsOfSameIndex
 * **Type**: Code Smell
@@ -1185,7 +1186,7 @@ Voorbeeld:
         - analyzed: true
 ```
 
-Als de geanalyseerde eigenschap niet expliciet is ingesteld, is de standaardwaarde false.
+Wanneer de geanalyseerde eigenschap niet expliciet wordt ingesteld, is de standaardwaarde false.
 
 ### Tags, eigenschap {#tags-property}
 
@@ -1196,7 +1197,7 @@ Als de geanalyseerde eigenschap niet expliciet is ingesteld, is de standaardwaar
 
 Voor specifieke indexen, zorg ervoor u het markeringsbezit en zijn huidige waarden behoudt. Als u nieuwe waarden toevoegt aan de eigenschap tags, kan het verwijderen van bestaande waarden (of de eigenschap in zijn geheel) leiden tot onverwachte resultaten.
 
-### De knooppunten van de indexdefinitie moeten niet in het inhoudspakket worden opgesteld UI {#oakpal-ui-content-package}
+### De definitieknooppunten van de index moeten niet in het inhoudspakket worden opgesteld UI {#oakpal-ui-content-package}
 
 * **Sleutel**: IndexNotUnderUIContent
 * **Type**: Verbetering
@@ -1207,9 +1208,9 @@ AEM Cloud Service staat toe dat definities van aangepaste zoekindexen (knooppunt
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
+>U zou deze kwestie zo spoedig mogelijk moeten oplossen, aangezien het pijpleidingsmislukkingen kan veroorzaken die met de [ versie beginnen van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
-### Aangepaste full-text indexdefinitie van type damAssetLucene moet correct worden voorgefixeerd met &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
+### Aangepaste full-text indexdefinitie van type damAssetLucene moet correct worden voorafgegaan door &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
 
 * **Sleutel**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Type**: Verbetering
@@ -1220,9 +1221,9 @@ AEM Cloud Service staat toe dat aangepaste full-text indexdefinities van het typ
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
+>Los deze kwestie zo spoedig mogelijk op, aangezien het pijpleidingsmislukkingen kan veroorzaken die met de [ versie beginnen van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
-### De knooppunten van de indexdefinitie mogen geen eigenschappen met dezelfde naam bevatten {#oakpal-index-property-name}
+### Indexdefinitieknooppunten mogen geen eigenschappen met dezelfde naam bevatten {#oakpal-index-property-name}
 
 * **Sleutel**: DuplicateNameProperty
 * **Type**: Verbetering
@@ -1233,9 +1234,9 @@ AEM Cloud Service staat definities van aangepaste zoekindexen (knooppunten van h
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
+>Los deze kwestie zo spoedig mogelijk op, aangezien het pijpleidingsmislukkingen kan veroorzaken die met de [ versie beginnen van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
-### Het aanpassen van bepaalde OTB-indexdefinities is verboden {#oakpal-customizing-ootb-index}
+### Het is niet toegestaan bepaalde buiten de box-indexdefinities aan te passen {#oakpal-customizing-ootb-index}
 
 * **Sleutel**: RestrictIndexCustomization
 * **Type**: Verbetering
@@ -1253,9 +1254,9 @@ AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen n
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
+>Los deze kwestie zo spoedig mogelijk op, aangezien het pijpleidingsmislukkingen kan veroorzaken die met de [ versie beginnen van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
-### De conkenizers in de analysatoren moeten worden geconfigureerd met de naam &#39;tokenizer&#39;. {#oakpal-tokenizer}
+### De configuratie van de tokenizers in de analysatoren moet worden gemaakt met de naam &quot;tokenizer&quot; {#oakpal-tokenizer}
 
 * **Sleutel**: AnalyzerTokenizerConfigCheck
 * **Type**: Verbetering
@@ -1266,13 +1267,13 @@ AEM Cloud Service staat het maken van kenizers met onjuiste namen in analysatore
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
+>Los deze kwestie zo spoedig mogelijk op, aangezien het pijpleidingsmislukkingen kan veroorzaken die met de [ versie beginnen van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
-### Configuratie van indexdefinities mag geen spaties bevatten {#oakpal-indexing-definitions-spaces}
+### Configuratie van indexeringsdefinities mag geen spaties bevatten {#oakpal-indexing-definitions-spaces}
 
 * **Sleutel**: PathSpacesCheck
 * **Type**: Verbetering
 * **Ernst**: Klein
 * **sinds**: Versie 2024.7.0
 
-AEM Cloud Service staat het maken van indexeringsdefinities die eigenschappen met spaties bevatten, niet toe.
+AEM Cloud Service staat het maken van indexdefinities met spaties niet toe.

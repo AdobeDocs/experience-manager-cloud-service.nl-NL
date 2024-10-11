@@ -1,22 +1,22 @@
 ---
-title: De variabelen van de Pijpleiding vormen
+title: Pipetvariabelen in Cloud Manager
 description: Leer hoe u pijpleidingsvariabelen in Cloud Manager kunt gebruiken om specifieke configuratievariabelen voor uw bouwstijl te beheren.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
-# pijpleidingsvariabelen configureren {#configuring-pipeline-variables}
+# Pipetvariabelen in Cloud Manager {#configuring-pipeline-variables}
 
 Uw bouwstijlproces zou op specifieke configuratievariabelen kunnen baseren die niet in de bewaarplaats van het Git zouden moeten worden opgeslagen. Of, kunt u hen tussen pijpleidingslooppas op de zelfde tak moeten aanpassen. Met Cloud Manager kunt u deze instellingen als pijpleidingvariabelen beheren.
 
-## Pipetvariabelen {#pipeline-variables}
+## Info over pijpleidingsvariabelen {#pipeline-variables}
 
 Met Cloud Manager kunt u pijpleidingvariabelen op verschillende manieren configureren.
 
@@ -26,7 +26,7 @@ Met Cloud Manager kunt u pijpleidingvariabelen op verschillende manieren configu
 
 Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele, waarnaar vervolgens kan worden verwezen vanuit het `pom.xml` -bestand of andere constructiescripts.
 
-## Pijpvariabelen toevoegen via Cloud Manager {#ui}
+## Voeg een pijpleidingsvariabele door Cloud Manager toe {#ui}
 
 De variabelen van de pijpleiding kunnen door het gebruikersinterface van Cloud Manager worden gevormd en worden beheerd. Zij helpen pijpleidingsbeheer stroomlijnen, vooral wanneer de variërende configuraties over verschillende stappen worden vereist.
 
@@ -34,7 +34,7 @@ U moet toestemmingen hebben om de pijpleiding uit te geven om, pijpleidingsvaria
 
 Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
-### Voeg een pijpleidingsvariabele toe {#add-ui}
+**om een pijpleidingsvariabele door Cloud Manager toe te voegen:**
 
 1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt tot stand brengen.
 
@@ -59,7 +59,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
 1. Klik **sparen**.
 
-### Een pijpleidingsvariabele bewerken {#edit-ui}
+## Een pijpleidingsvariabele bewerken {#edit-ui}
 
 1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt uitgeven.
 
@@ -84,7 +84,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
 1. Klik **sparen**.
 
-### Een pijpleidingsvariabele verwijderen {#delete-ui}
+## Een pijpleidingsvariabele verwijderen {#delete-ui}
 
 1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt schrappen.
 

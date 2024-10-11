@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Ontdek de kwaliteitspoorten beschikbaar in het [ de plaatsingsproces van AEM as a Cloud Service ](/help/implementing/cloud-manager/deploy-code.md) en de diverse soorten ingebouwde functionele het testen. Leer hoe u hun gebruik kunt bijdragen en optimaliseren in het kader van een uitgebreide teststrategie.
 
-## Overzicht
+## Informatie over functionele tests
 
 Het volgende diagram verstrekt een overzicht op hoog niveau van de beschikbare pijpleidingen in de context van een algemene het testen strategie en het [ plaatsingsproces van AEM as a Cloud Service ](/help/implementing/cloud-manager/deploy-code.md).
 
 ![ de plaatsen van de plaatsingskwaliteit van AEM Cloud Service gates ](assets/functional-testing/quality-gates-compact.svg)
 
-## Doel
+## Doel van functionele tests
 
 Het doel van de AEM Cloud Service-distributiepijpleidingen is om robuuste en veilige implementaties in verschillende fasen van de ontwikkelings- en AEM levenscyclus van producten te vergemakkelijken. Deze pijpleidingen omvatten veelvoudige kwaliteitsspoorten op verschillende niveaus om de integriteit en de veiligheid van plaatsingen voor zowel uw AEM toepassingsveranderingen als AEM productupdates te verzekeren.
 
@@ -38,13 +38,13 @@ De ingebouwde kwaliteitspoorten valideren vooral de functionaliteit van het AEM 
 
 Het is belangrijk om op te merken dat deze kwaliteitspoorten niet bedoeld zijn als een uitgebreid testkader voor uw volledige teststrategie. Het AEM product wordt uitgebreid getest voordat het de AEM implementatieproces van de cloudservice binnengaat. Uw toepassing moet ook al van hoge kwaliteit zijn voordat deze de implementatiefase bereikt. Deze aanpak zorgt ervoor dat de kwaliteitsdoelen zich richten op hun primaire doel om het implementatieproces te waarborgen, in plaats van een volledig testregime te vervangen.
 
-## Kwaliteitsgates
+## Kwaliteitscijfers bij tests
 
 Het volgende diagram verstrekt een gedetailleerde mening van beschikbare kwaliteitskates en hun gebruik in de algemene het testen strategie en het [ de plaatsingsproces van AEM as a Cloud Service ](/help/implementing/cloud-manager/deploy-code.md).
 
 ![ de plaatsen van de plaatsingskwaliteit van AEM Cloud Service gates ](assets/functional-testing/quality-gates-overview.svg)
 
-### Door de klant geleverde kwaliteitsbonnen
+### Door de klant geleverde kwaliteitsmodellen
 
 |                               | Eenheidstests | Aangepaste <br/> functionele tests | Aangepaste <br/> UI-tests | Klant <br/> Validaties | Handmatig <br/> testen |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
