@@ -4,9 +4,9 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
+source-wordcount: '3137'
 ht-degree: 1%
 
 ---
@@ -228,6 +228,20 @@ Om deze beperking mogelijk te vermijden, stel de [ Analysator van Beste praktijk
 >[!NOTE]
 >
 >](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versie 2.1.50+ van de Analysator van Beste praktijken van 0} zal over grote knopen rapporteren die unicode karakters bevatten die de maximumgrootte overschrijden. [ Zorg ervoor dat u de nieuwste versie uitvoert. In BPA-versies vóór 2.1.50 worden deze grote knooppunten niet geïdentificeerd en gerapporteerd. Deze knooppunten moeten afzonderlijk worden gedetecteerd met behulp van de hiervoor genoemde Oak-voorwaarde.
+
+### Ingestiefout als gevolg van onverwachte intermitterende fouten {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Onverwachte intermitterende fouten"
+>abstract="Soms kunnen zich onverwachte afwisselende downstreamservicefouten voordoen en helaas is het enige middel om de inname eenvoudig opnieuw te proberen."
+
+Soms zouden onverwachte intermitterende problemen zich lenen voor mislukte inname, waarbij het helaas de enige mogelijkheid is om de inname opnieuw te proberen. Onderzoek het innamelogboek om de oorzaak van de mislukking te ontdekken en te zien of richt het zich op om het even welke hieronder vermelde fouten, waar een herpoging zou moeten worden geprobeerd.
+
+## MongoDB-problemen {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - In de introductiefase wordt geprobeerd de doelcloud-database vooraf in te stellen op een geschikte grootte die is afgestemd op de grootte van de inhoud van de migratieset die wordt opgenomen. Deze bewerking wordt soms niet binnen de verwachte tijd voltooid.
+* `Exhausted mongo restore retries` - Pogingen om een lokale stortplaats van de opgenomen migratie vastgestelde vastgestelde inhoud aan het wolkengegevensbestand te herstellen zijn uitgeput. Dit wijst op een algemene gezondheid/netwerkkwestie met MongoDB, die zich vaak na een paar minuten geneest.
 
 ### Ingestie gestopt {#ingestion-rescinded}
 
