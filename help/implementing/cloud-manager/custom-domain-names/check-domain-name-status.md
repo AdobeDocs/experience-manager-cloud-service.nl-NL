@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,11 @@ ht-degree: 0%
 
 Leer hoe u kunt controleren of Cloud Manager uw aangepaste domeinnaam heeft bevestigd.
 
-## Vereisten {#requirements}
+## De status van een aangepaste domeinnaam controleren {#how-to}
 
-Voldoe aan deze vereisten voordat u de status van uw domeinnaam in Cloud Manager controleert.
+Alvorens uw status van de domeinnaam in Cloud Manager te controleren, zorg ervoor u reeds een klant geleid (OV/EV) SSL certificaat voor uw douanedomein zoals die in [ wordt beschreven toevoegt een klant beheerd SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert).
 
-* Voeg eerst een EV/OV- certificaat voor uw douanedomein toe zoals die in het document [ wordt beschreven een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegt.
-
-## De status van uw aangepaste domeinnaam controleren {#how-to}
-
-U kunt de status van uw aangepaste domeinnaam in Cloud Manager bepalen.
+**om het statuut van een naam van het douanedomein te controleren:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
@@ -33,7 +29,7 @@ U kunt de status van uw aangepaste domeinnaam in Cloud Manager bepalen.
 
 1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Klik **Montages van het Domein** in het linkernavigatievenster.
+1. Klik **Montages van het Domein** in het linkerzijmenu.
 
 1. Klik het **pictogram van de Status** voor de domeinnaam.
 
@@ -41,11 +37,14 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 >[!NOTE]
 >
->Cloud Manager brengt automatisch verificatie teweeg wanneer u **** op de verificatiestap van **selecteert creeert de Add tovenaar van het Domein van de Douane** wanneer [ toevoegend een nieuwe naam van het douanedomein aan Cloud Manager ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
+>Als u een *beheerde Adobe (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **** in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>
+>Als u op het gebruiken van a **beheerde klant (OV/EV) SSL certificaat** van plan bent, wordt uw domein geverifieerd *nadat* u [ het OV/EV SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
+
 
 ## Verificatiestatus {#statuses}
 
-Cloud Manager verifieert domeineigendom via het door de klant beheerde certificaat. Wanneer gereed, toont het één van de volgende statusberichten:
+Cloud Manager verifieert domeineigendom via het SSL-certificaat (OV/EV) dat door de klant wordt beheerd. Wanneer gereed, toont het één van de volgende statusberichten:
 
 | Status | Beschrijving |
 | --- | --- |

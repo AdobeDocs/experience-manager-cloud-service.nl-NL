@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Leer hoe te om een naam van het douanedomein toe te voegen gebruikend **Montages
 
 Voldoe aan deze vereisten voordat u een aangepaste domeinnaam in Cloud Manager toevoegt.
 
-* U moet een domeinSSL certificaat voor het domein hebben toegevoegd u alvorens een naam van het douanedomein toe te voegen zoals die in het document [ wordt beschreven een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
+* U moet een domeinSSL certificaat voor het domein hebben toegevoegd u *wilt toevoegen alvorens* een naam van het douanedomein zoals die in het document [ wordt beschreven een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
 * U moet de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** hebben om een naam van het douanedomein in Cloud Manager toe te voegen.
 * Gebruik de sneltoets of een andere CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
->Zelfs als u een niet-Adobe CDN gebruikt, moet u nog uw domein aan Cloud Manager toevoegen.
+>Als u een Adobe beheerde CDN gebruikt, moet u nog uw domein aan Cloud Manager toevoegen.
 
 ## Waar kunt u aangepaste domeinnamen toevoegen {#where-to-add-cdn}
 
@@ -46,14 +46,14 @@ De stappen voor beide methoden die in dit document worden beschreven, zijn gebas
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. In het zijmenu, onder **Diensten**, uitgezochte ![ pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Montages van het Domein**.
+1. In het zijmenu, onder **Diensten**, klik ![ het pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Montages van het Domein**.
 
    ![ het venster van de Montages van het Domein ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
 1. Vlak de hoger-juiste hoek van de **pagina van de Montages van het Domein**, klik **voegt Domein** toe.
 
 1. In **voeg domein** dialoogdoos toe, op het **gebied van de Naam van het Domein**, ga de naam van het douanedomein in u gebruikt.
-Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
+Neem bij het invoeren van de domeinnaam geen `http://` , `https://` of spaties op.
 
 1. Klik **creëren**.
 
@@ -61,28 +61,24 @@ Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
 
    | Certificaattype, optie | Beschrijving |
    | --- | --- |
-   | Door Adobe beheerd certificaat | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
-   | Door de klant beheerd certificaat | Selecteer dit certificaattype als u een EV/OV-certificaat wilt gebruiken. Deze optie biedt uitgebreide beveiliging met EV (Extended Validation) of OV (Organization Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
+   | SSL-certificaat (met DV-beheer) voor Adobe | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
+   | Door de klant beheerd SSL-certificaat (OV/EV) | Selecteer dit certificaattype als u een EV/OV SSL-certificaat wilt gebruiken om het domein te beveiligen. Deze optie biedt uitgebreide beveiliging met OV (Organisation Validation) of EV (Extended Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
 
 1. In **verifieer domein** dialoogdoos, die op het certificaattype wordt gebaseerd u selecteerde, doe één van het volgende:
 
    | Als u het certificaattype hebt geselecteerd | Beschrijving |
    | --- | ---  |
-   | Door Adobe beheerd certificaat | Voltooi de [ Adobe beheerde certificaatstappen ](#adobe-managed-cert-steps) alvorens aan stap 9 verder te gaan. |
-   | Door de klant beheerd certificaat | Voltooi de [ Klant beheerde certificaatstappen ](#customer-managed-cert-steps) alvorens aan stap 9 verder te gaan. |
-
-1. Klik **verifieer**.
-
-1. U bent nu klaar om [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe te voegen.
+   | Door Adobe beheerd certificaat | a. Voltooi de [ Adobe beheerde certificaatstappen ](#adobe-managed-cert-steps) hieronder. Wanneer u de stappen in **voltooit verifieer domein** dialoogdoos, **verifieert**.<ul><li>DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.</li><li>Cloud Manager verifieert uiteindelijk het bezit van de domeinnaam en werkt de status in de **lijst van de Montages van het Domein** bij. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li>![ verifieer domeinstatus ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. U bent nu klaar om [ een beheerde Adobe (DV) toe te voegen SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).</li></ul> |
+   | Door de klant beheerd certificaat | a. Klik **OK**.<br> b. U bent nu klaar om [ een klant beheerde (OV/EV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe te voegen.<ul><li>Nadat u het certificaat toevoegt, wordt uw domeinnaam duidelijk zoals geverifieerd in de **lijst van de Montages van het Domein**. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li></ul><br>![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >Als u een klant-geleid SSL certificaat en een klant-geleide leverancier CDN gebruikt, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+   >Als u een klant beheerde (OV/EV) SSL certificaat en een klant beheerde leverancier CDN gebruikt, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
 
 
 ### Door Adobe beheerde certificaatstappen {#adobe-managed-cert-steps}
 
-Als u het certificaattype *beheerde Adobe* selecteerde, voltooi de volgende stappen in **verifieer domein** dialoogdoos.
+Als u het certificaattype *beheerde Adobe* selecteerde, voltooi de volgende stap in **verifieer domein** dialoogdoos.
 
 ![ Adobe beheerde certificaatstappen ](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
@@ -133,21 +129,6 @@ Voeg de volgende `A` verslagen aan DNS montages van uw domein als uw domeinlever
 >[!TIP]
 >
 >*CNAME* of *het Verslag van A* kan op de regerende DNS server worden geplaatst om u tijd te bewaren.
-
-
-### Door de klant beheerde certificaatstappen {#customer-managed-cert-steps}
-
-Als u het certificaattype *Klant beheerde certificaat* selecteerde, voltooi de volgende stappen.
-
-1. In **verifieer domein** dialoogdoos, upload een nieuw certificaat EV/OV dat het geselecteerde domein behandelt.
-
-   ![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-1. Klik **OK**.
-
-   Na het uploaden van een geldig certificaat EV/OV, wordt de status van het domein duidelijk als **Verified** in de **3} lijst van de Montages van het Domein {.**
-
-   ![ het Plaatsen van het Domein lijst die een Verified status ](/help/implementing/cloud-manager/assets/domain-settings-verified.png) toont.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
@@ -206,11 +187,7 @@ dig TXT _aemverification.example.com -t txt
 
 -->
 
->[!NOTE]
->
->DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
->
->Cloud Manager verifieert eigendom en werkt de status bij, die in de **lijst van de Montages van het Domein** kan worden gezien. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.
+
 
 <!--
 ## Next Steps {#next-steps}

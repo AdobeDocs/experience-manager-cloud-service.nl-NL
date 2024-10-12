@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Cloud Manager biedt zelfbedieningstools voor het installeren en beheren van SSL-
 
 | | Model | Beschrijving |
 | --- | --- | --- |
-| A | **[Adobe beheerde certificaat (DV)](#adobe-managed)** | Met Cloud Manager kunnen gebruikers DV-certificaten (Domain Validation) configureren die via Adobe worden geleverd voor snelle domeininstallatie. |
-| B | **[Klant beheerde certificaat (OV/EV)](#customer-managed)** | Cloud Manager biedt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) aan om u te laten OV en EV SSL certificaten beheren die u en privé sleutels van de Autoriteiten van het Certificaat van de derde bezit, zoals *laat versleutelen*. |
+| A | **[Adobe beheerde SSL certificaat (DV)](#adobe-managed)** | Met Cloud Manager kunnen gebruikers DV-certificaten (Domain Validation) configureren die via Adobe worden geleverd voor snelle domeininstallatie. |
+| B | **[Klant beheerde SSL certificaat (OV/EV)](#customer-managed)** | Cloud Manager biedt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) aan om u te laten OV en EV SSL certificaten beheren die u en privé sleutels van de Autoriteiten van het Certificaat van de derde bezit, zoals *laat versleutelen*. |
 
 Beide modellen bieden de volgende algemene functies voor het beheer van uw certificaten:
 
@@ -53,20 +53,19 @@ Beide modellen bieden de volgende algemene functies voor het beheer van uw certi
 >
 >[ om een douanedomein met een milieu ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) toe te voegen en te associëren, moet u een geldig SSL certificaat hebben dat het domein behandelt.
 
-### Door Adobe beheerde certificaten {#adobe-managed}
+### Door Adobe beheerde SSL-certificaten (DV) {#adobe-managed}
 
 DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productieprogramma&#39;s als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Nadat het DV-certificaat is gemaakt, wordt dit door de Adobe automatisch elke drie maanden vernieuwd, tenzij het wordt verwijderd.
 
-### Door de klant beheerde certificaten {#customer-managed}
+### Door de klant beheerde OV/EV SSL-certificaten {#customer-managed}
 
 OV- en EV-certificaten bieden voor CA gevalideerde informatie. Met deze informatie kunnen gebruikers beoordelen of de eigenaar van de website, de e-mailafzender of de digitale handtekening van code- of PDF-documenten kan worden vertrouwd. DV-certificaten staan een dergelijke eigendomsverificatie niet toe.
 
 OV en EV bieden deze functies bovendien via DV-certificaten in Cloud Manager.
 
-* Meerdere omgevingen kunnen een OV/EV-certificaat gebruiken.
-   * Dat wil zeggen dat het eenmaal kan worden toegevoegd, maar meerdere keren wordt gebruikt.
+* Meerdere omgevingen kunnen een OV/EV-certificaat gebruiken. Dat wil zeggen dat het eenmaal kan worden toegevoegd, maar meerdere keren wordt gebruikt.
 * Elk OV/EV-certificaat bevat doorgaans meerdere domeinen.
 * Cloud Manager accepteert OV/EV-jokertekens voor een domein.
 
@@ -80,12 +79,12 @@ OV en EV bieden deze functies bovendien via DV-certificaten in Cloud Manager.
 >
 >Als uw domein bijvoorbeeld `dev.adobe.com` is en u een certificaat voor `*.adobe.com` en een ander certificaat voor `dev.adobe.com` hebt, wordt het specifiekere (`dev.adobe.com`) gebruikt.
 
-#### Vereisten voor door klanten beheerde certificaten {#requirements}
+#### Vereisten voor door klanten beheerde OV/EV SSL-certificaten {#requirements}
 
-Als u ervoor kiest om uw eigen EV/OV-certificaat te uploaden, moet het aan de volgende vereisten voldoen:
+Als u ervoor kiest om uw eigen door de klant beheerde OV/EV SSL-certificaat toe te voegen, moet het aan de volgende vereisten voldoen:
 
 * AEM as a Cloud Service accepteert certificaten die voldoen aan het OV- (Organization Validation) of EV-beleid (Extended Validation).
-   * Cloud Manager biedt geen ondersteuning voor het uploaden van uw eigen DV-certificaten (Domain Validation).
+   * Cloud Manager biedt geen ondersteuning voor het toevoegen van uw eigen DV-certificaten (Domain Validation).
 * Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
 * Zelfondertekende certificaten worden niet geaccepteerd.
 
@@ -115,7 +114,7 @@ De volgende `openssl` -opdrachten kunnen worden gebruikt om niet-PEM-certificate
 
 >[!TIP]
 >
->Adobe raadt u aan de integriteit van uw certificaat lokaal te valideren met een hulpprogramma zoals `openssl verify -untrusted intermediate.pem certificate.pem` voordat u probeert het te installeren met gebruik van Cloud Manager.
+>Adobe raadt u aan de integriteit van uw certificaat lokaal te valideren met een hulpprogramma zoals `openssl verify -untrusted intermediate.pem certificate.pem` voordat u probeert het te installeren met Cloud Manager.
 
 ## Beperking van het aantal geïnstalleerde SSL-certificaten {#limitations}
 
