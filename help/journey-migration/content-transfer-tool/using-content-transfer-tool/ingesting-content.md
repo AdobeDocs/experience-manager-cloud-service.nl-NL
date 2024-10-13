@@ -4,7 +4,7 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >id="aemcloud_ctt_ingestion"
 >title="Inktatie van inhoud"
 >abstract="Ingestie verwijst naar het opnemen van inhoud van de migratie die is ingesteld in de Cloud Service-instantie van de bestemming. De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extractie naar boven"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extractie naar boven"
 
 Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceleration Manager:
 
@@ -94,7 +94,7 @@ Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceler
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up-inname"
 >abstract="Gebruik de functie top-up om inhoud te verplaatsen die is gewijzigd sinds de vorige activiteit van de inhoudsoverdracht. Controleer de logboeken op fouten of waarschuwingen na voltooiing van de inname. Eventuele fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de klantenservice van de Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Logbestanden weergeven"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Logbestanden weergeven"
 
 Het hulpmiddel van de Overdracht van de Inhoud heeft een eigenschap die de extractie van differentiële inhoud door a *bovenop-up* van de migratiereeks uit te voeren toestaat. Hierdoor kan de migratieset worden gewijzigd, zodat alleen de inhoud wordt opgenomen die sinds de vorige extractie is gewijzigd, zonder dat alle inhoud opnieuw moet worden geëxtraheerd.
 
@@ -113,7 +113,7 @@ Begin door een Baan van de Opname te creëren en ervoor te zorgen dat **Sluitere
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Problemen met inslikken van inhoud oplossen"
 >abstract="Verwijs naar de innamelogboeken en de documentatie om oplossingen aan gemeenschappelijke redenen te vinden waarom een inname kan ontbreken en de manier vinden om het probleem te bevestigen. Als de injectie eenmaal is vastgezet, kan deze weer worden uitgevoerd."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Inhoudsoverdrachten valideren"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Inhoudsoverdrachten valideren"
 
 ### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van d
 > Het veld &quot;Migratietoken&quot; wordt weergegeven omdat het ophalen van dat token in sommige gevallen niet is toegestaan. Door het handmatig aanbrengen van de injectie toe te staan, kan de gebruiker de opname snel starten, zonder extra hulp. Als het token is opgegeven en het bericht nog steeds wordt weergegeven, was het ophalen van het token niet het probleem.
 
 * AEM as a Cloud Service handhaaft de milieustaat, en moet af en toe de migratiedienst opnieuw beginnen om diverse normale redenen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar is uiteindelijk beschikbaar.
-* Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Bijvoorbeeld, als [ AEM de Updates van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Zodra dat proces is voltooid, kan opnieuw worden geprobeerd om met de inname te beginnen.
+* Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Bijvoorbeeld, als [ AEM de Updates van de Versie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Zodra dat proces is voltooid, kan opnieuw worden geprobeerd om met de inname te beginnen.
 * Als een [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) door Cloud Manager is toegepast, verhindert het Cloud Acceleration Manager de migratiedienst te bereiken. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen tijdens de opname en het indexeren proces onbruikbaar te maken.
 * Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van de Adobe als de opname of indexering nog steeds mislukt.
 
 ### Updates en oplossingen AEM versie {#aem-version-updates-and-ingestions}
 
-[ AEM de Updates van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) worden automatisch toegepast op milieu&#39;s om hen bijgewerkt met de meest recente versie van AEM as a Cloud Service te houden. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
+[ AEM de Updates van de Versie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) worden automatisch toegepast op milieu&#39;s om hen bijgewerkt met de meest recente versie van AEM as a Cloud Service te houden. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
 
 Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma wordt ingezien, probeert het innameproces om zijn rij onbruikbaar te maken alvorens het begint. Wanneer de opname volledig is, wordt de status van de versieupdater teruggegeven aan hoe het was alvorens ingestions begonnen.
 
@@ -174,7 +174,7 @@ Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Ongelijkheidsbeperking schending"
 >abstract="Een gemeenschappelijke oorzaak van een niet-sluitingsmislukking is een conflict in knoop ids. Er kan slechts een van de conflicterende knooppunten bestaan."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Bovenste inname"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Bovenste inname"
 
 Een gemeenschappelijke oorzaak van de mislukking van de Opname van de a [ ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een conflict in knoopids. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
@@ -194,7 +194,7 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Kan knooppunt waarnaar wordt verwezen niet verwijderen"
 >abstract="Een gemeenschappelijke oorzaak van een niet-veeggebaren ingangsmislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. De versies van het knooppunt moeten worden hersteld."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Bovenste inname"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Bovenste inname"
 
 Een andere gemeenschappelijke oorzaak van de mislukking van de Opname van de a [ ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
@@ -212,7 +212,7 @@ De beste praktijken wijzen erop dat als a **niet-Wipe** ingestie moet worden in 
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Eigenschap voor grote knooppunten"
 >abstract="Een veelvoorkomende oorzaak van een mislukte opname is dat de maximale grootte van eigenschapswaarden voor knooppunten wordt overschreden. Volg de documentatie, met inbegrip van de documentatie met betrekking tot het BPA-verslag, om deze situatie te verhelpen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migratievereisten"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Migratievereisten"
 
 Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt het opnemen en het logboek zal of bevatten:
 
