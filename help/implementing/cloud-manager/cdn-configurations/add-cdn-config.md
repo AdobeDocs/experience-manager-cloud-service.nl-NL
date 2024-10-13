@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# Een CDN-configuratie (Content Delivery Network) toevoegen {#add-cdn}
+# Een CDN-configuratie toevoegen {#add-cdn}
 
 Als u een domein wilt koppelen aan een SSL-certificaat op de door Adobe beheerde CDN binnen uw programma, moet u een CDN-configuratie (Content Delivery Network) toevoegen.
 
-Voor Adobe beheerde CDNs, wanneer het gebruiken van DV certificaten, slechts worden de plaatsen met de bevestiging van ACME toegelaten.
+Voor Adobe beheerde CDN&#39;s zijn bij gebruik van een DV SSL-certificaat alleen sites met ACME-validatie toegestaan.
 
 >[!IMPORTANT]
 >
@@ -31,8 +31,8 @@ Voor Adobe beheerde CDNs, wanneer het gebruiken van DV certificaten, slechts wor
 
    | Hoofdletters gebruiken | Stappen |
    | --- | --- |
-   | Ik wil een configuratie CDN aan een *bestaande* plaats van Edge Delivery in Cloud Manager toevoegen | a. In het linkernavigatievenster, onder **Diensten**, klik **de Plaatsen van Edge Delivery**.<br> b. Klik in de Edge Delivery-tabel aan het einde van een rij waaraan geen domein is gekoppeld, op de ellips.<br> c. Klik **vormen CDN**.  ![ klik vormen CDN voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
-   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkernavigatievenster, onder **Diensten**, klik **Configuraties CDN**.<br> b. Dichtbij de hoger-juiste hoek van de CDN pagina van Configuraties, voegt de klik **toe**. |
+   | Ik wil een configuratie CDN aan een *bestaande* plaats van Edge Delivery in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik **de Plaatsen van Edge Delivery**.<br> b. In de lijst van Edge Delivery, aan het eind van een rij die geen domein verbonden aan het heeft, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br> c. Klik **vormen CDN**.  ![ klik vormen CDN voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik **Configuraties CDN**.<br> b. Dichtbij de hoger-juiste hoek van de CDN pagina van Configuraties, voegt de klik **toe**. |
 
 1. In **vorm CDN** dialoogdoos, in de **Vervolgkeuzelijst van de Oorsprong**, selecteer één van het volgende:
 
