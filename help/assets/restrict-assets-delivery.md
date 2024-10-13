@@ -1,66 +1,42 @@
 ---
-title: Levering van activa in Experience Manager beperken
-description: Leer hoe te om de levering van activa in  [!DNL Experience Manager] te beperken.
+title: Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkheden
+description: Leer hoe u de levering van middelen kunt beperken met OpenAPI-mogelijkheden.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
-# Toegang tot elementen beperken in [!DNL Experience Manager] {#restrict-access-to-assets}
+# Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkheden {#restrict-access-to-assets}
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Centrale beheer van bedrijfsmiddelen in Experience Manager stelt de DAM-beheerder of -bedrijfsleiders in staat de toegang tot bedrijfsmiddelen te beheren. Zij kunnen de toegang beperken door rollen voor goedgekeurde activa aan de auteurskant, specifiek op de auteursinstantie van AEM as a Cloud Service te vormen.
+Met centraal beheer van bedrijfsmiddelen in Experience Manager kan de DAM-beheerder of -manager de toegang tot bedrijfsmiddelen beheren die via Dynamic Media beschikbaar zijn met OpenAPI-mogelijkheden. Zij kunnen levering van goedgekeurde activa (neer aan individuele activa) aan geselecteerde [ Gebruiker of Groepen van Identity Management van het Systeem van de Adobe (IMS) ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beperken door bepaalde meta-gegevens op activa op hun de auteursdienst van AEM as a Cloud Service te vormen.
 
-De gebruikers [ die ](search-assets-api.md) zoeken of gebruiken [ levering URLs ](deliver-assets-apis.md) kan toegang tot beperkte activa verkrijgen wanneer met succes het vergunningsproces overgaan.
+Zodra een middel via Dynamic Media met OpenAPIs wordt beperkt, slechts krijgen de (Adobe IMS bewaakte) gebruikers die worden gemachtigd om tot het genoemde middel toegang te hebben toegang. Om tot de activa toegang te hebben, moet de gebruiker hefboomwerking [ Onderzoek ](search-assets-api.md) en [ Levering ](deliver-assets-apis.md) mogelijkheden van Dynamic Media met OpenAPI.
 
 ![ Beperkte toegang tot activa ](/help/assets/assets/restricted-access.png)
-
-## Beperkte levering met een IMS-token {#restrict-delivery-ims-token}
 
 In Experience Manager Assets bestaat een beperkte levering via IMS uit twee belangrijke stappen:
 
 * Authoring
 * Aflevering
 
-### Authoring {#authoring}
+## Authoring {#authoring}
 
-U kunt de levering van elementen binnen [!DNL Experience Manager] beperken op basis van rollen. Voer de volgende stappen uit om rollen te configureren:
+### Beperkte aflevering met gebruik van een IMS-token voor toonder {#restrict-delivery-ims-token}
 
-1. Ga naar [!DNL Experience Manager] als DAM-beheerder.
-1. Selecteer de activa waarvoor u de rol moet vormen.
-1. Ga naar **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** en controleer of het veld **[!UICONTROL Roles]** bestaat op het tabblad [!UICONTROL Advanced Metadata] .
+U kunt de levering van elementen binnen [!DNL Experience Manager] beperken op basis van IMS-gebruikers- en -groepsidentiteiten.
 
-   ![ de meta-gegevens van Rollen ](/help/assets/assets/roles_metadata.jpg)
-Als het veld niet beschikbaar is, voert u de volgende stappen uit om het veld toe te voegen:
+>[!NOTE]
+>
+> Dit vermogen is momenteel niet zelfbediening. Om activalevering voor IMS [ Gebruikers ](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) en [ Groepen ](https://helpx.adobe.com/in/enterprise/using/user-groups.html) te beperken, bereik uit aan uw team van de Steun van de Onderneming voor begeleiding op hoe te om de informatie terug te winnen die voor het beperken van toegang van [ Adobe Admin Console ](https://adminconsole.adobe.com/) wordt vereist portaal en hoe te om toegang in de de auteursdienst van AEM as a Cloud Service te vormen.
 
-   1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** .
-   1. Selecteer het meta-gegevensschema en klik **[!UICONTROL Edit _(e)_]**.
-   1. Voeg een veld **[!UICONTROL Multi Value Text]** toe van de sectie **[!UICONTROL Build Form]** rechts naar de sectie Metagegevens in het formulier.
-   1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
-      1. Verander **[!UICONTROL Field Label]** in _Rollen_.
-      1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:rollen_.
-
-1. Haal de IMS-groepen op die moeten worden toegevoegd aan de metagegevens voor rollen van het element. Voer de volgende stappen uit om de IMS-groepen op te halen:
-   1. Aanmelden bij `https://adminconsole.adobe.com/.`
-   1. Ga naar uw respectievelijke organisatie en navigeer naar **[!UICONTROL User Groups]** .
-   1. Selecteer de **[!UICONTROL User Group]** die u wilt toevoegen en extraheer de **[!UICONTROL orgID]** en **[!UICONTROL userGroupID]** uit de URL of gebruik uw organisatie-id, zoals `{orgID}@AdobeOrg:{usergroupID}` .
-
-1. Voeg de Group-id toe aan het veld **[!UICONTROL Roles]** met de eigenschappen van Asset. <br>
-De groep-id&#39;s die in het veld **[!UICONTROL Roles]** zijn gedefinieerd, zijn de enige gebruikers die toegang hebben tot het element. Naast de IMS-groep-id kunt u ook de IMS-gebruikers-id en de IMS-profiel-id toevoegen in het veld **[!UICONTROL Roles]** . Bijvoorbeeld `{orgId}@AdobeOrg:{profileId}` .
-
-   >[!NOTE]
-   >
-   >Voor de nieuwe Assets-weergave kunt u alleen toegang verlenen tot het mapniveau en alleen tot groepen in plaats van individuele gebruikers. Leer meer over [ het leiden toestemmingen binnen Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### Levering van activa beperken met de datum en tijd Aan en Uit {#restrict-delivery-assets-date-time}
+### Levering van activa beperken met de datum en tijd Aan en Uit {#restrict-delivery-assets-date-time}
 
 DAM-auteurs kunnen ook de levering van activa beperken door een Aan- of Uit-tijd voor activering te definiëren die beschikbaar is in Asset-eigenschappen.
 
@@ -95,28 +71,36 @@ Op dezelfde manier voert u voor de weergave Assets de volgende stappen uit als u
 
 
 
-### Levering van beperkte activa {#delivery-restricted-assets}
+## Levering van beperkte activa {#delivery-restricted-assets}
 
-De levering van beperkte activa is gebaseerd op een geslaagde toelating tot activa. De autorisatie is gebaseerd op een IMS-token als het verzoek wordt verzonden van een AEM auteur of Asset Selector, of is gebaseerd op een speciaal cookie als u aangepaste identiteitsproviders hebt ingesteld op uw Publish- of Preview-instantie.
+De levering van beperkte activa is gebaseerd op een geslaagde toelating tot activa. De vergunning is of door [ IMS Dragertokens ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (toepassing voor verzoeken die van [ AEM de Selecteur van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) worden in werking gesteld), of veilig-koekje (als u de leveranciers van de douaneidentiteit opstelling op uw AEM Publish/de diensten van de Voorproef hebt, en opstelling de koekjesverwezenlijking en opneming op de pagina&#39;s).
 
-#### Levering voor AEM auteur- of Asset Selector-aanvragen {#delivery-aem-author-asset-selector}
+### Levering voor AEM auteur- of Asset Selector-aanvragen {#delivery-aem-author-asset-selector}
 
-Om de levering van beperkte activa toe te laten in het geval dat het verzoek van AEM auteursinstantie of de Selecteur van Activa wordt verzonden, is een geldig symbolisch IMS essentieel. Voer de volgende stappen uit:
+Om de levering van beperkte activa mogelijk te maken voor het geval dat het verzoek van AEM auteursdienst of AEM de Selecteur van Activa wordt verzonden, is een geldige token IMS Betoonder essentieel.\
+Op de auteur van AEM Cloud Service en Asset Selector wordt de IMS-token voor toonder automatisch gegenereerd en gebruikt voor aanvragen na een geslaagde aanmelding.
 
-1. [ produceer een toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
-   * Meld u aan bij de Dev Console van uw AEM as a Cloud Service-omgeving.
+>[!NOTE]
+>
+>Neem contact op met de Enterprise Support voor meer informatie over hoe u IMS-verificatie kunt inschakelen voor integratie met AEM Asset Selector.
 
-   * Navigeer naar **[!UICONTROL Environment]** > **[!UICONTROL Integrations]** > **[!UICONTROL Local Token]** > **[!UICONTROL Get Local Development Token]** > **[!UICONTROL Copy accessToken value]** . Leer meer over [ hoe te om tot token en verwante aspecten toegang te hebben ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. AEM as a Cloud Service en Dynamic Media met OpenAPI-mogelijkheden ondersteunen momenteel API-integratie aan de serverzijde en kunnen IMS-tokens voor toonder genereren. Dit geldt ook voor ervaringen die niet op Asset Selector zijn gebaseerd.
+   * Volg de instructies [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) om dienst-aan-server API integratie uit te voeren die de tokens IMS van de Drager door [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) kan terugwinnen
+   * Voor beperkte duur, kan de lokale ontwikkelaarstoegang (niet bedoeld voor de gevallen van het productiegebruik), de korte - levende tokens IMS van de Drager voor de gebruiker die op [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) wordt voor authentiek verklaard door de instructies [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow) te volgen
 
-1. Integreer het verkregen toegangstoken in de **[!UICONTROL Authorization]** header en zorg ervoor dat de waarde ervan voorafgaat aan **[!UICONTROL Bearer]** .
+1. Terwijl het maken van [ Onderzoek ](search-assets-api.md) en [ levering ](deliver-assets-apis.md) API verzoeken, voeg het verkregen token IMS Betower aan de **[!UICONTROL Authorization]** kopbal van het HTTP- verzoek toe (zorg ervoor dat zijn waarde met **[!UICONTROL Bearer]** vooraf bepaald is).
 
-1. Valideer de functionaliteit van het toegangstoken door een verzoek in werking te stellen. Het zou een fout 404 in gevallen moeten opleveren waar er geen toegangstoken IMS is, of het verstrekte toegangstoken heeft de zelfde principes of de groepen die in de meta-gegevens van het middel worden toegevoegd.
+1. Als u de toegangsbeperking wilt valideren, start u een API-aanvraag voor levering met en zonder de header **[!UICONTROL Authorization]** .
+   * De reactie levert een `404` foutstatuscode op in gevallen waarin er geen IMS Betoonder-token is, of de opgegeven IMS Betoonder-token behoort niet tot de gebruiker aan wie toegang tot het element is verleend (rechtstreeks of via groepslidmaatschap).
+   * De reactie levert een `200` successtatus-code op met de binaire inhoud van het element als het token IMS Betoonder een van de gebruikers of groepen is die toegang tot het element hebben gekregen.
 
-#### Levering voor aangepaste identiteitsproviders op Publish-instantie {#delivery-custom-identity-provider}
+### Levering voor aangepaste identiteitsproviders op Publish-service {#delivery-custom-identity-provider}
 
-In het geval van een aangepaste identiteitsprovider die is ingesteld op uw Publish- of Preview-instantie, kunt u de groep noemen die tijdens het installatieproces toegang moet hebben tot beveiligde elementen in het `groupMembership` -kenmerk. Wanneer u het programma opent aan de leverancier van de douaneidentiteit via [ integratie SAML ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), wordt het `groupMembership` attribuut gelezen en gebruikt om een koekje te construeren, dat in alle verzoeken om authentificatie, gelijkend op een teken IMS in het geval van een verzoek van AEM auteur of de Selecteur van Activa wordt verzonden.
+AEM Sites, AEM Assets en Dynamic Media met OpenAPI-licenties kunnen samen worden gebruikt en beperkte levering van middelen kan worden geconfigureerd op websites die worden geleverd via AEM Publish- of Preview-services.
+In het geval AEM Sites&#39; Publish en de diensten van de Voorproef aan gebruiker a [ de leverancier van de douaneidentiteit (IdP) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) worden gevormd, kan de groep die toegang tot beveiligde activa binnen moet hebben in het `groupMembership` attribuut tijdens het opstellingsproces worden omvat.\
+Wanneer een gebruiker van een website zich aanmeldt bij een aangepaste identiteitsprovider en de website opent die wordt gehost via de Publish/Preview-service, wordt het kenmerk `groupMembership` gelezen en wordt een beveiligde cookie gemaakt en afgeleverd op de website nadat de verificatie is voltooid. Deze Secure-cookie wordt opgenomen in alle volgende aanvragen om de website-inhoud aan de gebruikersagent te leveren.
 
-Wanneer een beveiligd element beschikbaar is op een pagina en er een aanvraag wordt gedaan naar de leverings-URL om het element te renderen, controleert AEM de rollen in het cookie of de IMS-token en stemt het overeen met de `dam:roles property` die tijdens het ontwerpen van het element is toegepast. Als er een overeenkomst is, wordt het element weergegeven.
+Wanneer een beveiligd element op een pagina wordt opgevraagd, extraheren AEM Publish en Preview het machtigingsmateriaal uit de beveiligde cookie en valideren ze de toegang. Als er een overeenkomst is, wordt het element weergegeven.
 
 >[!NOTE]
 >
