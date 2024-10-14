@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,10 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen.
 
+
 >[!NOTE]
 >
->Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem en dat domein wordt gedekt door één certificaat en het andere wordt bijgewerkt, wordt het laatste domein nu geïnstalleerd voor het domein.
+>Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem en dat domein wordt gedekt door één certificaat en het andere wordt bijgewerkt, wordt het laatste geïnstalleerd voor het domein.
 >
 >Zie [ problemen oplossen SSL van het Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) voor meer informatie.
 
@@ -80,13 +81,21 @@ Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wi
 **om een Adobe te hernoemen beheerde SSL certificaat:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+
 1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
-1. Op de **SSL Certificaten** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan *beheerde Adobe* certificaat u wilt anders noemen.
+
+1. Op de **SSL Certificaten** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan **Adobe beheerde** SSL certificaat u wilt anders noemen.
+
 1. In het drop-down menu, klik **anders noemen**.
+
 1. In **noem DV Certificaat** dialoogdoos anders, op het **de naam van het Certificaat** tekstgebied, ga de nieuwe naam van het certificaat in.
+
 1. Klik **anders noemen**.
+
 
 ## Een SSL-certificaat verwijderen {#deleting-an-ssl-certificate}
 
@@ -101,17 +110,25 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 **om een SSL certificaat te schrappen:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+
 1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
-1. Op de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts
+
+1. Voor de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts.
+
 1. In het drop-down menu, klik **Schrapping**.
-Zie de opmerking hierboven als op de knop Verwijderen een informatiepictogram wordt weergegeven zoals in de volgende afbeelding.
+
+   Als **Schrapping** een informatiepictogram zoals gezien in het volgende beeld heeft, zie de Nota hierboven.
 
    ![ knoop van de Schrapping met het pictogram van de Informatie ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. In het **SSL van de Schrapping** dialoogvakje, klik **Schrapping** om de schrapping te bevestigen.
+
 1. Stel de pijpleiding in werking om het geschrapte certificaat ongedaan te maken.
+
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 

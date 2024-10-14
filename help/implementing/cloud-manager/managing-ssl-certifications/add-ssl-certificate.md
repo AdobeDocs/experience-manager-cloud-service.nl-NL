@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 0%
@@ -90,13 +90,18 @@ U bent nu klaar om de configuratie van a [ CDN ](/help/implementing/cloud-manage
 
 ## Een door de klant beheerd (OV/ED) SSL-certificaat toevoegen {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 Hebt u hulp nodig bij het kiezen of u een door Adobe beheerd SSL-certificaat (aanbevolen) of een door de klant beheerd SSL-certificaat met uw domein wilt gebruiken? Zie [ Kiezen welk SSL certificaat om toe te voegen ](#which-ssl-to-add)
 
 **om een klant beheerde (OV/EV) SSL certificaat toe te voegen:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+
 1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 
    ![ Toevoegend een SSL certificaat ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -109,7 +114,8 @@ Hebt u hulp nodig bij het kiezen of u een door Adobe beheerd SSL-certificaat (aa
 Dit veld is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar het SSL-certificaat kunt verwijzen.
 
 1. In het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** gebieden, kopieer de vereiste waarden van uw OV of EV SSL certificaat, en kleef hen in hun respectieve gebieden in de dialoogdoos.
-Eventuele gevonden fouten in waarden worden weergegeven. Voordat u het certificaat kunt opslaan, moet u alle fouten verhelpen. Zie [ de Fouten van het Certificaat ](#certificate-errors) om meer over het oplossen van problemen gemeenschappelijke fouten te leren.
+
+   Eventuele gevonden fouten in waarden worden weergegeven. Voordat u het certificaat kunt opslaan, moet u alle fouten verhelpen. Zie [ de Fouten van het Certificaat ](#certificate-errors) om meer over het oplossen van problemen gemeenschappelijke fouten te leren.
 
    ![ voeg SSL certificaatdialoogdoos ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png) toe|
 
