@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ Voor een nieuw gemaakt programma wordt een New Relic One-subaccount voor u gemaa
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, tik of klik het programma waarvoor u uw gebruikers van New Relic One wilt beheren.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u uw gebruikers van New Relic One wilt beheren.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik de ellipsknoop en selecteer **New Relic** activeren.
+1. Bij de bodem van de **kaart van Milieu** op de pagina van het programmaoverzicht, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en selecteer **New Relic** activeren.
 
    ![ beheert gebruikers ](assets/newrelic-activate-sub-account.png)
 
-   * U kunt tot **toegang hebben leidt gebruikers** optie via de ellipsis knoop bij de bovenkant van het **milieu&#39;s** scherm van uw programma.
+   * U kunt tot **toegang hebben leidt gebruikers** optie door https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg bij de bovenkant van het **milieu&#39;s** scherm van uw programma te klikken.
 
 1. [ stel een pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) voor het zelfde milieu in werking aan succesvolle voltooiing om de subrekeningsactivering te voltooien.
 
@@ -71,11 +71,11 @@ Voer de volgende stappen uit om de gebruikers van uw New Relic One-subaccount vo
 
 1. Klik op het programma waarvoor u de New Relic One-gebruikers wilt beheren.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik de ellipsknoop en selecteer **leiden gebruikers**.
+1. Bij de bodem van de **kaart van Milieu** op de pagina van het programmaoverzicht, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en selecteer **leiden gebruikers**.
 
    ![ beheert gebruikers ](assets/newrelic-manage-users.png)
 
-   * U kunt tot **toegang hebben leidt gebruikers** optie via de ellipsis knoop bij de bovenkant van het **milieu&#39;s** scherm van uw programma.
+   * U kunt tot **toegang hebben leidt gebruikers** optie door https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg bij de bovenkant van het **milieu&#39;s** scherm van uw programma te klikken.
 
 1. In **beheer de gebruikers van New Relic** dialoog, ga de eerste en achternaam van de gebruiker in u wilt toevoegen, en klik **toevoegen** knoop. Herhaal deze stap voor alle gebruikers die u wilt toevoegen.
 
@@ -121,11 +121,11 @@ Zodra u [ uw rekening van New Relic ](#activate-account) hebt geactiveerd, kunt 
 
 1. Klik op het programma waartoe u New Relic One wilt openen.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik de ellipsknoop en selecteer **Open New Relic**.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en selecteer **Open New Relic**.
 
    ![ beheert gebruikers ](assets/newrelic-access.png)
 
-   * U kunt tot New Relic via de ellipsknoop bij de bovenkant van het **scherm van Milieu** van uw programma ook toegang hebben.
+   * U kunt tot New Relic ook toegang hebben door https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg bij de bovenkant van het **milieu&#39;s** scherm van uw programma te klikken.
 
 1. Meld u aan bij New Relic One op het nieuwe browsertabblad dat wordt geopend.
 

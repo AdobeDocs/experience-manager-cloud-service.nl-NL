@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Als u een sandboxprogramma verwijdert, worden alle bijbehorende omgevingen en pi
 
    ![ de programmaoptie van de Schrapping ](assets/delete-sandbox1.png)
 
-Alternatief kunt u de ellipsknoop op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
+Alternatief, kunt u https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
 
 ![ Schrap zandbak van programmakaart ](assets/delete-sandbox2.png)
 

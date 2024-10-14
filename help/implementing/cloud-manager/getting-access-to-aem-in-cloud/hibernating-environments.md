@@ -1,11 +1,11 @@
 ---
-title: Sluiende en ontsmette zandbakomgevingen
-description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
+title: Hibernate en de-Sluimerige zandbakmilieu's
+description: Leer hoe de omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt dehiberneren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -13,38 +13,40 @@ ht-degree: 0%
 ---
 
 
-# Sluimerende en Sluimerende zandbakomgevingen {#hibernating-introduction}
+# Hibernate en de-Sluimerige zandbakmilieu&#39;s {#hibernating-introduction}
 
-De omgevingen van een sandboxprogramma gaan in op een slaapstand als er gedurende acht uur geen activiteit wordt gedetecteerd. De slaapstand is uniek in sandboxprogrammaomgevingen. In productieprogrammaomgevingen vindt geen hiberatie plaats.
+De omgevingen van een sandboxprogramma voeren een slaapstand in als er gedurende acht uur geen activiteit wordt gedetecteerd. Hibernatie is uniek in sandboxprogrammaomgevingen. Productieprogrammaomgevingen kunnen niet worden gehiberneerd.
 
 ## Sluimerstand {#hibernation-introduction}
 
 Sluimerstand kan automatisch of handmatig plaatsvinden.
 
-* **Automatisch** - De milieu&#39;s van het Sandbox programma worden automatisch gehiberneerd na acht uren van inactiviteit. Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
-* **Handboek** - als gebruiker kunt u een milieu van het zandbakprogramma manueel hiberneren. Dit is niet verplicht, aangezien de herberging automatisch plaatsvindt, zoals eerder beschreven.
+* **Automatisch** - De milieu&#39;s van het Sandbox programma worden automatisch gehiberneerd na acht uren van inactiviteit. Inactiviteit wordt gedefinieerd als het ontbreken van verzoeken aan de auteur, voorproef, en publicatieservices.
+* **Handboek** - als gebruiker kunt u een milieu van het zandbakprogramma manueel hiberneren. Dit is niet verplicht, omdat er automatisch sprake is van een sluimerstand, zoals eerder beschreven.
 
 Het kan een paar minuten duren voordat de slaapstand wordt geactiveerd in sandboxprogrammaomgevingen. De gegevens blijven behouden tijdens de winterslaap.
 
-### Handmatige slaapstand gebruiken {#using-manual-hibernation}
+### De omgeving van een sandboxprogramma handmatig moderniseren {#using-manual-hibernation}
 
-U kunt uw sandboxprogramma handmatig via de Developer Console herbergen. Alle gebruikers van Cloud Manager hebben toegang tot Developer Console voor een sandboxprogramma.
+U kunt uw sandboxprogramma handmatig via de Developer Console herbergen. Alle gebruikers van Cloud Manager hebben toegang tot de Developer Console voor een sandboxprogramma.
 
-Voer de volgende stappen uit om de omgevingen van uw sandboxprogramma handmatig te hiberneren.
+**om een milieu van het zandbakprogramma manueel te hiberneren:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, tik of klik het programma u wilt hiberneren om zijn details te tonen.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik a *zandbakprogramma* dat u wilt hiberneren om zijn details te tonen.
 
-1. Op de **kaart van Milieu&#39;s**, klik de elliptische knoop en selecteer **Developer Console**.
+1. Op de **kaart van Milieu&#39;s**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en klik **Developer Console**.
 
    * Zie [ Toegang hebbend tot Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor extra details over Developer Console.
 
-   ![ het menuoptie van Developer Console ](assets/developer-console-menu-option.png)
+   ![ het menuoptie van Developer Console ](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
-1. In Developer Console, klik **Sluimerstand**.
+1. Op de **Developer Console** pagina, klik **Sluimerstand**.
 
-   ![ knoop van de Slaapsteen ](assets/hibernate-1.png)
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+
+![ knoop van de Slaapsteen ](assets/hibernate-1.png)
 
 1. Klik **Sluimerstand** om de stap te bevestigen.
 
@@ -54,23 +56,25 @@ Wanneer de hibernatie succesvol is, ziet u het volledige bericht van het hiberna
 
 ![ Bevestiging van de Slaapstand ](assets/hibernate-4.png)
 
-In Developer Console kunt u ook de **Milieu** verbinding in de broodkruimels boven de **Peul** drop-down lijst voor een lijst van milieu&#39;s aan hibernate klikken.
+In Developer Console, klik de **verbinding van Milieu&#39;s** in de broodkruimels boven de **Peul** drop-down lijst aan meningsmilieu&#39;s beschikbaar voor hibernatie.
 
 ![ Lijst van milieu&#39;s aan hibernate ](assets/hibernate-1b.png)
 
-## De-Hibernatie {#de-hibernation-introduction}
+## Een sandboxprogramma handmatig dehiberneren vanuit de Developer Console {#de-hibernation-introduction}
 
-U kunt uw Sandbox-programma handmatig van de Developer Console voorzien.
+U kunt uw sandboxprogramma handmatig via de Developer Console herbergen.
 
 >[!IMPORTANT]
 >
 >Een gebruiker met de rol van de a **Ontwikkelaar** kan een milieu van het zandbakprogramma ontruimen-onderbreken.
 
+**om een zandbakprogramma van Developer Console manueel te ontruimen-te ontruimen:**
+
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, ontruim of klik het programma u zijn details wilt tonen.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma u wilt dehibernate om zijn details te tonen.
 
-1. Op de **kaart van Milieu&#39;s**, klik de elliptische knoop en selecteer **Developer Console**.
+1. Op de **kaart van Milieu&#39;s**, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en klik **Developer Console**.
 
    * Zie [ Toegang hebbend tot Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor extra details over Developer Console.
 
@@ -90,18 +94,17 @@ U kunt uw Sandbox-programma handmatig van de Developer Console voorzien.
 
    ![ De-hibernatie voltooide ](assets/de-hibernation-img4.png)
 
-
-In Developer Console kunt u ook de **Milieu** verbinding in de broodkruimels boven de **Peul** drop-down lijst voor een lijst van milieu&#39;s aan dehibernate klikken.
+In Developer Console, klik de **verbinding van Milieu&#39;s** in de broodkruimels boven de **Peul** drop-down lijst aan toegangsomgevingen beschikbaar voor de-hibernatie.
 
 ![ Lijst van hibernated pods ](assets/de-hibernate-1b.png)
 
-### Machtigingen om de-Slaapstand te verwijderen {#permissions-de-hibernate}
+### Machtigingen om de-hibernate te verwijderen {#permissions-de-hibernate}
 
 Om het even welke gebruiker met een productprofiel dat hen toegang tot AEM as a Cloud Service geeft zou tot **Developer Console** moeten kunnen toegang hebben, toestaand hen om het milieu te ontruimen-hiberneren.
 
-## Een gedownloade omgeving openen {#accessing-hibernated-environment}
+## Toegang tot een gehiberde omgeving {#accessing-hibernated-environment}
 
-Wanneer de gebruiker om het even welke browser verzoeken tegen de auteur, voorproef, of publicatieservice van een gehiberneerde milieu, zal de gebruiker een landende pagina ontmoeten die de gehiberneerde status van het milieu samen met een verbinding aan Developer Console beschrijft waar de dienst kan worden ontruimd-hibernated.
+Wanneer een gebruiker een browser vraagt aan de auteur, voorproef, of publicatieservice van een gehiberneerde milieu, ontmoeten zij een het landen pagina. Deze pagina geeft uitleg over de status van de omgeving met een hibernatie en bevat een koppeling naar de Developer Console voor het uit de vaart nemen van de omgeving.
 
 ![ Gesamberneerde dienst die pagina ](assets/de-hibernation-img5.png) landen
 
@@ -109,15 +112,15 @@ Wanneer de gebruiker om het even welke browser verzoeken tegen de auteur, voorpr
 
 In gesluimerde omgevingen zijn implementaties en handmatige AEM nog steeds mogelijk.
 
-* Een gebruiker kan een pijpleiding gebruiken om douanecode aan gehiberneerde milieu&#39;s op te stellen. Het milieu zal gehiberneerd blijven en de nieuwe code zal in het milieu verschijnen zodra ontruimd-hibernated.
+* Een gebruiker kan een pijpleiding gebruiken om douanecode aan gehiberneerde milieu&#39;s op te stellen. Het milieu blijft gehiberneerd en de nieuwe code verschijnt in het milieu zodra het wordt ontruimd.
 
-* AEM upgrades kunnen worden toegepast op gehiberde omgevingen en kunnen handmatig worden geactiveerd vanuit Cloud Manager. Het milieu zal gehiberneerd blijven en de nieuwe introductie zal in het milieu verschijnen zodra het wordt gedehiberneerd.
+* AEM upgrades kunnen worden toegepast op gehiberde omgevingen en kunnen handmatig worden geactiveerd vanuit Cloud Manager. Het milieu blijft gehiberneerd en de nieuwe introductie verschijnt in het milieu als de stof eenmaal is gedehiberneerd.
 
 ## Sluimerstand en verwijdering {#hibernation-deletion}
 
 * De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd.
-   * Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
-   * Zodra hibernated, kunnen zij [ manueel worden ontruimd-hibernated ].(#de-hibernation-Introduction)
+   * Inactiviteit wordt gedefinieerd als het ontbreken van verzoeken aan de auteur, voorproef, en publicatieservices.
+   * Zodra hibernated, kunnen zij [ manueel worden ontruimd-hibernated ](#de-hibernation-introduction).
 * Sandboxprogramma&#39;s worden verwijderd na zes maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
 
 >[!NOTE]

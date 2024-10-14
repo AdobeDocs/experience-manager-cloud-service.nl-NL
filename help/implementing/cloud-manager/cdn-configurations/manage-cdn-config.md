@@ -4,9 +4,9 @@ description: Leer hoe u met Cloud Manager CDN-configuraties voor een Edge Delive
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 **om een configuratie CDN uit te geven van de CDN pagina van Configuraties:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-1. In het zijpaneel, onder **Diensten**, klik ![ het sociale netwerkpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN Configuraties**.
+1. In het linkerzijmenu, onder **Diensten**, klik ![ het sociale netwerkpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN Configuraties**.
 1. In de **CDN Configuraties** lijst, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan configuratie CDN u wilt bijwerken.
 
    ![ Uitgevend een configuratie CDN ](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
@@ -87,13 +87,11 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In het linkerzijpaneel, onder **Diensten**, klik **Configuraties CDN**.
+1. In het linkerzijmenu, onder **Diensten**, klik **Configuraties CDN**.
 
-1. In de lijst van Configuraties CDN, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij die aan CDN beantwoordt u wilt verwijderen.
+1. In de CDN lijst van Configuraties, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij die aan CDN beantwoordt u wilt verwijderen, dan **Schrapping** klikken.
 
    ![ het Schrappen van een configuratie CDN ](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
-
-1. In het drop-down menu, klik **Schrapping**.
 
 1. In het **de dialoogvakje van de Configuratie CDN van de Schrapping**, klik **Schrapping**.
 
@@ -112,11 +110,9 @@ De stappen voor het schrappen van een configuratie CDN van de **pagina van Milie
 
 1. Voor de **pagina van Milieu&#39;s**, selecteer een milieu van belang.
 
-1. Voor de pagina van de milieudetails, in de **groepering van de Configuraties CDN 0}**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie beantwoordt CDN u wilt verwijderen.
+1. Op de pagina van de milieudetails, in de **groepering van de Configuraties CDN, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie CDN beantwoordt u wilt verwijderen, dan** Schrapping **klikken.**
 
    ![ CDN configuratiegroep op een pagina van het omgevingsdetail ](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
-1. In het drop-down menu, klik **Schrapping**.
 
 1. In het **de dialoogvakje van de Configuratie CDN van de Schrapping**, klik **Schrapping**.
 

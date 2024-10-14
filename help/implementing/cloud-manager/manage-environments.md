@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Als u in eerste instantie geen extra gebieden hebt opgegeven, kunt u dat doen na
 
 U kunt ook extra publicatiegebieden verwijderen. U kunt echter slechts gebieden in één transactie toevoegen of verwijderen. Als u één gebied moet toevoegen en één gebied wilt verwijderen, voegt u eerst de wijziging toe, slaat u de wijziging op en verwijdert u vervolgens (of omgekeerd).
 
-1. Van de console van het Overzicht van het Programma van uw programma, klik de ellipsknoop voor uw productiemilieu en selecteer **uitgeven** van het menu.
+1. Van de console van het Overzicht van het Programma van uw programma, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg voor uw productiemilieu en selecteer **uitgeven** van het menu.
 
    ![ geef milieu ](assets/select-edit-environment.png) uit
 
@@ -129,7 +129,7 @@ Als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanc
 
 Van de **pagina van het Overzicht**, kunt u tot het detail van een milieu op twee manieren toegang hebben.
 
-1. Van de **pagina van het Overzicht**, klik het **milieu&#39;s** lusje in het paneel van de zijnavigatie.
+1. Van de **pagina van het Overzicht**, klik het **milieu&#39;s** lusje in het linkerzijmenu.
 
    ![ Milieu&#39;s tabel ](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ Van de **pagina van het Overzicht**, kunt u tot het detail van een milieu op twe
 
    ![ het milieu tabel ](assets/environments-tab2.png)
 
-1. Tik of klik op een omgeving in de lijst zodat u de details ervan kunt tonen.
+1. Klik op een omgeving in de lijst zodat u de details ervan kunt weergeven.
 
    ![ de details van het Milieu ](assets/environ-preview1.png)
 
-Alternatief, klik de elliptische knoop van het milieu u wilt en dan **Details van de Mening** selecteren.
+Alternatief, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg van het milieu u wilt en dan **Details van de Mening** selecteren.
 
 ![ het omgevingsdetails van de Mening ](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Alternatief kunt u tot de zelfde informatie van de **Milieu&#39;s** toegang hebb
 
 1. Voor de **pagina van het Overzicht**, selecteer de **Milieu&#39;s** tabel.
 
-1. Voor het **lusje van Milieu&#39;s**, selecteer het milieu u in het linkernavigatievenster wilt vragen.
+1. Voor het **lusje van Milieu&#39;s**, selecteer het milieu u in het linkerzijmenu wilt vragen.
 
 1. Nadat een omgeving is geselecteerd:
 
@@ -235,11 +235,11 @@ Het proces van actualisering bestaat daarom uit twee stappen:
 >[!NOTE]
 > Vanaf 2024 worden ontwikkelingsinstanties en sommige sandboxprogramma&#39;s al automatisch bijgewerkt, zodat er geen noodzaak is om updates voor deze instanties handmatig te beheren. Als resultaat van deze overgang, zou de optie om milieu voor ontwikkelingsinstanties manueel bij te werken niet aan _kunnen beschikbaar zijn wat_ van uw programma&#39;s.
 
-De **optie van de Update** is beschikbaar bij de **** kaart van Milieu&#39;s {voor sommige ontwikkelmilieu&#39;s en milieu&#39;s in zandbakprogramma&#39;s door de elliptische knoop van het milieu te klikken.
+De **optie van de Update** is beschikbaar bij de **** kaart van Milieu&#39;s {voor sommige ontwikkelmilieu&#39;s en milieu&#39;s in zandbakprogramma&#39;s door https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg van het milieu te klikken.
 
 ![ optie van de Update van de kaart van Milieu&#39;s ](assets/environ-update2.png)
 
-Deze optie is ook beschikbaar door het **lusje van Milieu&#39;s** van het programma te klikken en dan de ellipsknoop van het milieu te selecteren.
+Deze optie is ook beschikbaar door het **lusje van Milieu** van het programma te klikken en dan https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg van het milieu te klikken.
 
 ![ optie van de Update van het lusje van Milieu&#39;s ](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Het **gedrag van de Update** optie varieert afhankelijk van de configuratie en d
 
 Een gebruiker met de **Manager van de Plaatsing** of **BedrijfsEigenaar** rol kan een ontwikkelomgeving schrappen.
 
-Van het **scherm van het Overzicht** van het programma op de **3} kaart van Milieu&#39;s {, klik de elliptische knoop van het ontwikkelmilieu u wilt schrappen.**
+Van het **scherm van het Overzicht** van het programma op de **Milieu** kaart, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg van het ontwikkelmilieu u wilt schrappen.
 
 ![ schrapt optie ](assets/environ-delete.png)
 
-De schrappingsoptie is ook beschikbaar bij het **Milieu** lusje van het **venster van het Overzicht** van het programma. Klik de elliptische knoop van het milieu en selecteer **Schrapping**.
+De schrappingsoptie is ook beschikbaar bij het **Milieu** lusje van het **venster van het Overzicht** van het programma. Klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg van het milieu en selecteer **Schrapping**.
 
 ![ schrapt optie van het lusje van Milieu&#39;s ](assets/environ-delete2.png)
 

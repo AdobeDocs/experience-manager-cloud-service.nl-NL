@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
-1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik de elliptische knoop bij uiterst rechts, dan selecteren de uitgezochte **Mening en Update**.
+1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg in uiterst rechts, dan klik **Mening en Update**.
 
    ![ werk een verlopen klant beheerde SSL certificatie bij ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,9 +117,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 
-1. Voor de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts.
-
-1. In het drop-down menu, klik **Schrapping**.
+1. Voor de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts, dan klik **Schrapping**.
 
    Als **Schrapping** een informatiepictogram zoals gezien in het volgende beeld heeft, zie de Nota hierboven.
 

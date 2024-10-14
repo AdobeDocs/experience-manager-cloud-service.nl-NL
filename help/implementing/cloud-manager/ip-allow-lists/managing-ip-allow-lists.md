@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsin
 **om IP Lijsten van gewenste personen te bekijken en bij te werken:**
 
 1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
-1. Van de **pagina van het Overzicht**, in het zijpaneel, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
+1. Van de **pagina van het Overzicht**, in het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
 1. Identificeer de rij voor de IP Lijsten van gewenste personen die u wilt bekijken of bijwerken.
 1. Klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij het rechtereind van de rij.
 1. Van het drop-down menu, klik **Mening &amp; Update**.
@@ -40,7 +40,7 @@ De **Mening &amp; van de Update IP de dialoogdoos van de Lijst van gewenste pers
 
 1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht**, in het zijpaneel, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
+1. Van de **pagina van het Overzicht**, in het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
 
 1. In de **kolom van de Status** van de IP lijst van Lijsten van gewenste personen, bewaar de muiswijzer over een IP Lijst van gewenste personen die (in gebruik) groen is om één of meerdere diensten te zien die op het worden toegepast.
 
@@ -63,10 +63,9 @@ Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsin
 **om een IP Lijst van gewenste personen te schrappen:**
 
 1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
-1. Van de **pagina van het Overzicht**, in het zijpaneel, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
-1. Identificeer de rij voor de IP Lijst van gewenste personen die u wilt schrappen, dan ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het rechtereind van de rij klikken.
-1. In het drop-down menu, klik **Schrapping**.
-1. In het de dialoogvakje van de Lijst van gewenste personen van de Schrapping IP, klik **Schrapping**.
+1. Van de **pagina van het Overzicht**, in het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
+1. Identificeer de rij voor de IP Lijst van gewenste personen die u wilt schrappen, dan klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij het rechtereind van de rij, dan klik **Schrapping**.
+1. In het **schrapt IP de dialoogvakje van de Lijst van gewenste personen**, klik **Schrapping**.
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 

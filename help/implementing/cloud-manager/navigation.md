@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
 1. Tabs waarmee u de huidige weergave van uw programma&#39;s kunt schakelen.
    * **Begin** mening (gebrek) die **Mijn mening van Programma&#39;s** met een overzicht van alle programma&#39;s selecteert
    * **Vergunning** die tot het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) toegang heeft.
-   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager ](#cloud-manager-header).
+   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg in de [ kopbal van Cloud Manager ](#cloud-manager-header).
 1. [ Statistieken en vraag-aan-actie ](#statistics) voor een overzicht van uw recente activiteit
 1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
 1. [ Snelle verbindingen ](#quick-links-section) om tot verwante middelen gemakkelijk toegang te hebben.
@@ -195,7 +195,7 @@ Op de werkbalk van het programma hebt u nog steeds toegang om snel over te schak
 
 ![ de toolbar van het Programma ](assets/cloud-manager-program-toolbar.png)
 
-Op de werkbalk wordt altijd het tabblad weergegeven dat u momenteel hebt ingeschakeld, zelfs als u de tabbladen hebt verborgen via het hamburgermenu.
+Op de werkbalk wordt altijd het tabblad weergegeven dat u momenteel hebt ingeschakeld, zelfs als u de tabbladen hebt verborgen met https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.
 
 ### Tabbladen van programma {#program-tabs}
 

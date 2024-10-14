@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
 1. Klik **sparen**.
 
+
 ## Een pijpleidingsvariabele verwijderen {#delete-ui}
 
 1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt schrappen.
@@ -92,10 +93,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
    ![ Mening/geef pijpleidingsvariabelen ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png) uit
 
-1. In het **de dialoogvakje van de Configuratie van Variabelen 0} {, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele u wilt verwijderen.**
-
-1. In het drop-down menu, klik **Schrapping**.
-
+1. In het **de dialoogvakje van de Configuratie van Variabelen 0} {, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele u wilt verwijderen, dan** Schrapping **klikken.**
 
 ## De pijpleidingsvariabelen van de reeks gebruikend Cloud Manager CLI {#cli}
 

@@ -1,34 +1,31 @@
 ---
 title: Projectinstelling
-description: Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
+description: Leer hoe AEM Projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
 
 # Projectinstelling {#project-setup}
 
-Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
+Leer hoe AEM Projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 
 ## Details projectinstelling {#project-setup-details}
 
-Om met Cloud Manager succesvol te bouwen en op te stellen, moeten AEM projecten aan de volgende richtlijnen voldoen:
+Om met Cloud Manager succesvol te bouwen en op te stellen, moeten AEM Projecten aan de volgende richtlijnen voldoen:
 
 * De projecten moeten worden gebouwd gebruikend [ Apache Maven ](https://maven.apache.org).
 * Er moet een `pom.xml` -bestand aanwezig zijn in de hoofdmap van de it-opslagplaats. Dit bestand van `pom.xml` kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enzovoort) als dat nodig is.
-* U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw `pom.xml` dossiers.
-   * De toegang tot [ wachtwoord-beschermde artefactrepositories ](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
-* Implementeerbare inhoudspakketten worden ontdekt door te zoeken naar `.zip` -bestanden voor inhoudspakketten, die zich in een map met de naam `target` bevinden.
-   * Elk aantal submodules kan inhoudspakketten produceren.
-* Inzetbare verzendingsartefacten worden gedetecteerd door te zoeken naar `.zip` -bestanden (ook aanwezig in de map met de naam `target` ) met mappen met de naam `conf` en `conf.d` .
-* Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd.
-   * Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen.
+* U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw `pom.xml` dossiers. De toegang tot [ wachtwoord-beschermde artefactrepositories ](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
+* Implementeerbare inhoudspakketten worden ontdekt door te zoeken naar `.zip` -bestanden voor inhoudspakketten, die zich in een map met de naam `target` bevinden. Elk aantal submodules kan inhoudspakketten produceren.
+* Inzetbare Dispatcher-artefacten worden gevonden door te zoeken naar `.zip` -bestanden (ook in de map met de naam `target` ) met mappen met de naam `conf` en `conf.d` .
+* Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd. Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen.
 * De pakketten kunnen [ worden overgeslagen ](#skipping-content-packages) tijdens plaatsing.
 
 ## Geweven profielen activeren in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
@@ -37,7 +34,7 @@ In sommige beperkte gevallen kan het zijn dat u het constructieproces iets moet 
 
 De activering van een Geweven profiel binnen Cloud Manager bouwt milieu zou moeten worden gedaan door `CM_BUILD` [ milieuvariabele ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) te zoeken. Evenzo moet een profiel dat alleen buiten de Cloud Manager-ontwikkelomgeving moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
 
-Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build in Cloud Manager wordt uitgevoerd, doet u dit.
+Als u bijvoorbeeld een eenvoudig bericht wilt uitvoeren wanneer de build in Cloud Manager wordt uitgevoerd, doet u het volgende:
 
 ```xml
         <profile>
@@ -75,7 +72,7 @@ Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build 
 >
 >Als u dit profiel wilt testen op een werkstation voor ontwikkelaars, kunt u het in de opdrachtregel (met `-PcmBuild` ) of in de geïntegreerde ontwikkelomgeving (IDE) inschakelen.
 
-En als u een eenvoudig bericht wilde uitvoeren slechts wanneer de bouwstijl buiten Cloud Manager in werking wordt gesteld, zou u dit doen.
+En als u een eenvoudig bericht wilde uitvoeren slechts wanneer de bouwstijl buiten Cloud Manager in werking wordt gesteld, zou u het volgende doen:
 
 ```xml
         <profile>
@@ -109,13 +106,13 @@ En als u een eenvoudig bericht wilde uitvoeren slechts wanneer de bouwstijl buit
         </profile>
 ```
 
-## Ondersteuning voor met wachtwoord beveiligde gegevensopslagruimte {#password-protected-maven-repositories}
+## Een met wachtwoord beveiligde Maven-opslagplaats gebruiken in Cloud Manager {#password-protected-maven-repositories}
 
 >[!NOTE]
 >
->Artefacten van een wachtwoord-beschermde Gemaakt bewaarplaats zouden voorzichtig moeten worden gebruikt omdat de code die door dit mechanisme wordt opgesteld momenteel niet door [ wordt in werking gesteld codekwaliteitsregels ](/help/implementing/cloud-manager/custom-code-quality-rules.md) die in Cloud Manager wordt uitgevoerd kwaliteitshates. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java en de volledige code van de projectbron samen met het binaire getal op te stellen.
+>Stel artefacten van wachtwoord-beschermde Gegeven bewaarplaatsen voorzichtig op, aangezien Cloud Manager deze code niet met zijn [ regels van de codekwaliteit ](/help/implementing/cloud-manager/custom-code-quality-rules.md) evalueert. Deze methode moet worden gereserveerd voor zeldzame situaties en alleen worden toegepast op code die geen verband houdt met AEM. De Adobe adviseert het omvatten van zowel de bronnen van Java als de volledige projectbroncode samen met binair getal. Dit zorgt voor meer transparantie en onderhoudsgemak tijdens het gehele implementatieproces.
 
-Een met wachtwoord beveiligde Maven-opslagplaats gebruiken in Cloud Manager:
+**om een wachtwoord-beschermde Gegeven bewaarplaats binnen Cloud Manager te gebruiken:**
 
 1. Specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [ pijpleidingsvariabele ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. Dan verwijzing dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de git bewaarplaats, die het [ Gemaakte schema van het Dossier van Montages ](https://maven.apache.org/settings.html) volgt.
@@ -124,11 +121,11 @@ Wanneer het Cloud Manager-constructieproces start:
 
 * Het element `<servers>` in dit bestand wordt samengevoegd in het standaardbestand van `settings.xml` dat door Cloud Manager wordt geleverd.
    * Server-id&#39;s die beginnen met `adobe` en `cloud-manager` worden als gereserveerd beschouwd. Gebruik deze niet op aangepaste servers.
-   * Server-id&#39;s die niet overeenkomen met een van deze voorvoegsels of de standaard-id `central` worden nooit weerspiegeld door Cloud Manager.
+   * Cloud Manager spiegelt alleen de server-id&#39;s die overeenkomen met specifieke voorvoegsels of de standaard-id `central` . Alle andere server-id&#39;s worden niet gespiegeld.
 * Als dit bestand is geïnstalleerd, wordt vanuit een element `<repository>` en/of `<pluginRepository>` in het bestand `pom.xml` naar de server-id verwezen.
-* Over het algemeen, zouden deze `<repository>` en/of `<pluginRepository>` elementen binnen a [ Cloud Manager-specifiek profiel ](#activating-maven-profiles-in-cloud-manager) bevat zijn, hoewel dat niet strikt noodzakelijk is.
+* Over het algemeen, zijn deze `<repository>` en `<pluginRepository>` elementen inbegrepen binnen a [ Cloud Manager-Specifieke profiel ](#activating-maven-profiles-in-cloud-manager), hoewel hun opneming niet strikt vereist is.
 
-Stel bijvoorbeeld dat de repository zich op `https://repository.myco.com/maven2` bevindt, dat de gebruikersnaam die Cloud Manager moet gebruiken `cloudmanager` is en dat het wachtwoord `secretword` is. Voer de volgende stappen uit.
+Stel bijvoorbeeld dat de repository zich op `https://repository.myco.com/maven2` bevindt, dat de gebruikersnaam die Cloud Manager moet gebruiken `cloudmanager` is en dat het wachtwoord `secretword` is. Voer de volgende stappen uit:
 
 1. Plaats het wachtwoord als geheim in de pijpleiding.
 
@@ -136,7 +133,7 @@ Stel bijvoorbeeld dat de repository zich op `https://repository.myco.com/maven2`
    $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
    ```
 
-1. Verwijs hier vanuit het `.cloudmanager/maven/settings.xml` -bestand naar.
+1. Verwijs naar dit geheim van het `.cloudmanager/maven/settings.xml` dossier in het volgende:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -216,9 +213,9 @@ Om dit te doen, vorm maven-bron-stop in uw project.
 
 ### Projectbronnen implementeren {#deploying-project-sources}
 
-Het is een goede praktijk om de volledige projectbron samen met binair aan een Geweven bewaarplaats op te stellen. Hierdoor kan het exacte artefact opnieuw worden opgebouwd.
+Het is een goede praktijk om de volledige projectbron samen met binair aan een Geweven bewaarplaats op te stellen. Zo kan het exacte artefact opnieuw opbouwen.
 
-Om dit te doen, vorm maven-assemblage-stop in uw project.
+Vorm maven-assemblage-stop in uw project op de volgende manier:
 
 ```xml
          <plugin>
@@ -243,7 +240,7 @@ Om dit te doen, vorm maven-assemblage-stop in uw project.
 
 ## Inhoudspakketten worden overgeslagen {#skipping-content-packages}
 
-In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren. Om diverse redenen is het misschien gewenst om een inhoudspakket te maken, maar dit niet te implementeren. Een voorbeeld zou kunnen zijn wanneer het bouwen van inhoudspakketten die slechts voor het testen worden gebruikt of die door een andere stap in het bouwstijlproces worden herverpakt. Dit is een subpakket van een ander pakket.
+In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren. Om diverse redenen is het misschien gewenst om een inhoudspakket te maken, maar dit niet te implementeren. Een voorbeeld doet zich voor wanneer inhoudspakketten alleen voor testdoeleinden worden gebouwd of wanneer een andere stap in het constructieproces deze opnieuw verpakt. Dit is een subpakket van een ander pakket.
 
 Cloud Manager zoekt naar een eigenschap met de naam `cloudManagerTarget` in de eigenschappen van samengestelde inhoudspakketten om deze scenario&#39;s te kunnen gebruiken. Als deze eigenschap is ingesteld op `none` , wordt het pakket overgeslagen en niet geïmplementeerd.
 
@@ -281,13 +278,13 @@ De `content-package-maven-plugin` heeft een vergelijkbare configuratie.
 
 ## Artefacthergebruik maken {#build-artifact-reuse}
 
-In veel gevallen, wordt de zelfde code opgesteld aan veelvoudige AEM milieu&#39;s. Waar mogelijk, zal Cloud Manager vermijden herbouwend de codebasis wanneer het ontdekt dat het zelfde gat begaan wordt gebruikt in veelvoudige full-stack pijpleidinguitvoeringen.
+In veel gevallen, wordt de zelfde code opgesteld aan veelvoudige AEM milieu&#39;s. Waar mogelijk, vermijdt Cloud Manager het herbouwen van de codebasis wanneer het ontdekt dat het zelfde gat begaan wordt gebruikt in veelvoudige full-stack pijpleidinguitvoeringen.
 
 Wanneer een uitvoering is begonnen, begaat de huidige HEAD voor de takpijpleiding wordt gehaald. De commit hash is zichtbaar in UI en via API. Wanneer de bouwstijlstap met succes voltooit, worden de resulterende artefacten opgeslagen gebaseerd op die knoeiboel begaan en kunnen in verdere pijpleidingsuitvoeringen opnieuw worden gebruikt.
 
 Pakketten worden opnieuw gebruikt via pijpleidingen als ze zich in hetzelfde programma bevinden. Wanneer u pakketten zoekt die opnieuw kunnen worden gebruikt, negeert AEM vertakkingen en hergebruikt artefacten tussen vertakkingen.
 
-Wanneer een hergebruik voorkomt, worden de bouw en de stappen van de codekwaliteit effectief vervangen met de resultaten van de originele uitvoering. Het logboekdossier voor de bouwstijlstap zal van de artefacten en de uitvoeringsinformatie een lijst maken die werd gebruikt om hen oorspronkelijk te bouwen.
+Wanneer een hergebruik voorkomt, worden de bouw en de stappen van de codekwaliteit effectief vervangen met de resultaten van de originele uitvoering. Het logboekdossier voor de bouwstijlstap maakt een lijst van de artefacten en de uitvoeringsinformatie die werd gebruikt om hen oorspronkelijk te bouwen.
 
 Hieronder ziet u een voorbeeld van een dergelijke loguitvoer.
 
@@ -297,7 +294,7 @@ build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
 build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
 ```
 
-Het logboek van de stap van de codekwaliteit zal gelijkaardige informatie bevatten.
+Het logboek van de stap van de codekwaliteit bevat gelijkaardige informatie.
 
 ### Voorbeelden {#example-reuse}
 
@@ -310,8 +307,8 @@ Houd er rekening mee dat uw programma twee ontwikkelingspijplijnen heeft:
 
 Beide vertakkingen zijn op zelfde verbind identiteitskaart
 
-1. De lopende Pijpleiding 1 zal eerst de pakketten normaal bouwen.
-1. Dan zal het lopen Pijpleiding 2 pakketten hergebruiken die door Pijpleiding 1 worden gecreeerd.
+1. Als u Pipeline 1 uitvoert, worden de pakketten normaal gebouwd.
+1. Dan, gebruikt het lopen Pijpleiding 2 de pakketten opnieuw die door Pijpleiding 1 worden gecreeerd.
 
 #### Voorbeeld 2 {#example-2}
 
@@ -329,7 +326,7 @@ In dit geval wordt het artefact van `foo` opnieuw gebruikt voor de productiepijp
 
 ### Afmelden {#opting-out}
 
-Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen worden onbruikbaar gemaakt door de pijpleidingsvariabele `CM_DISABLE_BUILD_REUSE` aan `true` te plaatsen. Als deze variabele wordt geplaatst, begaan hash nog wordt gehaald en de resulterende artefacten voor later gebruik worden opgeslagen, maar om het even welke eerder opgeslagen artefacten zullen niet opnieuw worden gebruikt. Overweeg het volgende scenario om dit gedrag te begrijpen.
+Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen worden onbruikbaar gemaakt door de pijpleidingsvariabele `CM_DISABLE_BUILD_REUSE` aan `true` te plaatsen. Als deze variabele wordt geplaatst, haalt het systeem de geënquêteerde knoeiboel uit en slaat de resulterende artefacten voor later gebruik op maar hergebruikt eerder opgeslagen artefacten. Overweeg het volgende scenario om dit gedrag te begrijpen:
 
 1. Er wordt een nieuwe pijpleiding gemaakt.
 1. De pijpleiding wordt uitgevoerd (uitvoering #1) en de huidige HEAD begaan is `becdddb`. De uitvoering is geslaagd en de resulterende artefacten worden opgeslagen.
@@ -343,6 +340,7 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen worden on
 
 * Artefacten van de bouwstijl worden niet opnieuw gebruikt over verschillende programma&#39;s, ongeacht als de commit knoeiboel identiek is.
 * De kunstmatigheden van de bouwstijl worden opnieuw gebruikt binnen het zelfde programma zelfs als de tak en/of de pijpleiding verschillend is.
-* [ Gemaakt versie behandelend ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) vervangt de projectversie slechts in productiepijpleidingen. Daarom als het zelfde begaat op zowel een ontwikkelt uitvoering en een uitvoering van de productiepijplijn en de ontwikkelings opstellen pijpleiding eerst wordt gebruikt, worden de versies opgesteld aan stadium en productie zonder wordt veranderd. In dit geval wordt echter nog steeds een tag gemaakt.
-* Als de terugwinning van de opgeslagen artefacten niet succesvol is, wordt de bouwstijlstap in werking gesteld alsof geen artefacten waren opgeslagen.
+* [ Gemaakt versie behandelend ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) vervangt de projectversie slechts in productiepijpleidingen.
+Als het zelfde begaat voor zowel een ontwikkelings opstellen als productiepijpleiding, en de ontwikkeling stelt looppas eerst in, worden de versies opgesteld aan stadium en de productie onveranderd. In dit geval wordt echter nog steeds een tag gemaakt.
+* Als de terugwinning van de opgeslagen artefacten niet succesvol is, wordt de bouwstijlstap in werking gesteld alsof geen artefacten werden opgeslagen.
 * Andere pijplijnvariabelen dan `CM_DISABLE_BUILD_REUSE` worden niet in aanmerking genomen wanneer Cloud Manager besluit eerder gemaakte constructieartefacten opnieuw te gebruiken.

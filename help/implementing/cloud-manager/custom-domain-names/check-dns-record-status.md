@@ -5,7 +5,7 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -33,7 +33,7 @@ U moet reeds de DNS montages voor uw naam van het douanedomein zoals die in [ wo
 
 1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Klik **Montages van het Domein** in het linkernavigatievenster.
+1. Klik **Montages van het Domein** in het linkerzijmenu.
 
 1. Klik het **pictogram van de Status** voor de domeinnaam.
 

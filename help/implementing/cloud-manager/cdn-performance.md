@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -42,17 +42,17 @@ Het dashboard presenteert een algemene score voor CDN-prestaties samen met trend
 
 ![ CDN prestatiedashboard ](assets/cdn-performance-dashboard.png)
 
-Voor details op uw prestaties CDN evenals voor suggesties op hoe te om het te verbeteren, te tikken of **trend van de Mening** te klikken.
+Voor details op uw prestaties CDN evenals voor suggesties op hoe te om het te verbeteren, klik **trend van de Mening**.
 
 ![ De trend van Prestaties ](assets/cdn-performance-trend.png)
 
-Tik of klik **Mening** onder de grafiek om de tijdspanwijdte van de grafiek te veranderen.
+Klik **Mening** onder de grafiek om de tijdspanwijdte van de grafiek te veranderen.
 
 Voor suggesties op hoe te om uw prestaties te verbeteren CDN, selecteer het **Recommendations** lusje.
 
 ![ CDN aanbevelingen ](assets/cdn-performance-recommendations.png)
 
-Tik of klik op het chevron naast een aanbeveling in de lijst om meer informatie te bekijken over de stappen die u moet ondernemen om de situatie te verbeteren en de oorzaak van het probleem.
+Klik op het chevron naast een aanbeveling in de lijst om details te bekijken over de stappen die moeten worden ondernomen om de situatie te verbeteren en de oorzaak van het probleem.
 
 ## Cachehit-definitie {#cache-hit}
 

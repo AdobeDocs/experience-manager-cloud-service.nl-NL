@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -156,12 +156,12 @@ De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpl
 
    ![ Config pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Als u de Controle van de Ervaring toeliet, blijf of klik **** {om aan de **Controle van de Ervaring** tabel verder te gaan waar u de wegen kunt bepalen die altijd in de Controle van de Ervaring zouden moeten worden omvat.
+1. Als u de Controle van de Ervaring toeliet, ga **** **lusje van de Controle van de Ervaring verder {waar u de wegen kunt bepalen die altijd in de Controle van de Ervaring zouden moeten worden omvat.**
 
    * Als u **de Controle van de Ervaring** toeliet, zie de controle van de de 2} Ervaring van het document ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor details op hoe te vormen.[
    * Als u dit niet hebt gedaan, slaat u deze stap over.
 
-1. Tik of klik **sparen** om de pijpleiding te bewaren.
+1. Klik **sparen** om de pijpleiding te bewaren.
 
 De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.[
 

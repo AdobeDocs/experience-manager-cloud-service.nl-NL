@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3567'
+source-wordcount: '3565'
 ht-degree: 3%
 
 ---
@@ -151,7 +151,7 @@ Zie ook [ Beste praktijken voor video het coderen ](/help/assets/dynamic-media/v
 
 Om geavanceerde verwerkingsparameters voor andere activatypes te bepalen, zie [ activa verwerking ](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing) vormen.
 
-**om een VideoProfiel voor het adaptieve bitsnelheidstreaming** te creëren,
+**om een VideoProfiel voor het adaptieve bitrate stromen tot stand te brengen:**
 
 1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** .
 1. Selecteer **[!UICONTROL Create]** .
@@ -192,7 +192,7 @@ U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie [ Toepas
 
 Als u ervoor kiest de optie **[!UICONTROL Encode for adaptive streaming]** niet te gebruiken, worden alle coderingsvoorinstellingen die u aan het profiel toevoegt, behandeld als afzonderlijke video-uitvoeringen voor streaming met enkele bitsnelheid of progressieve videoverzending. Er is ook geen validatie om ervoor te zorgen dat alle video-uitvoeringen dezelfde hoogte-breedteverhouding hebben.
 
-De ondersteunde video-indelingscodecs zijn H.264 (.mp4) en WebM.
+De ondersteunde video-indelingscodec is H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 Zie ook [ een video het coderen profiel voor het adaptieve bitrate stromen ](#creating-a-video-encoding-profile-for-adaptive-streaming) creëren.
 

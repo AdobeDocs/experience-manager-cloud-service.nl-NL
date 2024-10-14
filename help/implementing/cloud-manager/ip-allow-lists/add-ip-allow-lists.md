@@ -5,9 +5,9 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsin
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Van de **pagina van het Overzicht van het Programma**, die het zijpaneel gebruikt (u kunt ![ het menupictogram van de Show ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in de upper-left hoek moeten klikken om het paneel te zien), klik ![ het pictogram van de lijstvan de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
+1. Van de **pagina van het Overzicht van het Programma**, die het linkerzijmenu gebruikt (u kunt ![ het menupictogram van de Show ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in de upper-left hoek moeten klikken om het menu te zien), klik ![ het pictogram van de Lijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
 
-   ![ IP de optie van Lijsten van gewenste personen in het zijpaneel ](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+   ![ IP de optie van Lijsten van gewenste personen in het linkerzijmenu ](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
 1. Vlak de hoger-juiste hoek van de IP pagina van Lijsten van gewenste personen, klik **toevoegen IP Lijst van gewenste personen**.
 
