@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Zodra u het DV SSL-certificaat hebt toegevoegd aan Cloud Manager, wacht u tot Ad
 * **voor een klant beheerde (OV/EV) SSL certificaat:**
 
    * Vraag uw OV/EV SSL-certificaat aan bij een certificeringsinstantie. Voor meer details, herzie de [ vereisten voor klant beheerde OV/EV SSL certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
-   * Na het verwerven van het certificaat, [ voeg uw klant beheerde (OV/EV) SSL certificaat ](#add-customer-manage-ssl-cert) details in Cloud Manager toe.
+   * Na het verwerven van het certificaat, [ voeg uw klant beheerde (OV/EV) SSL certificaat ](#add-customer-managed-ssl-cert) details in Cloud Manager toe.
    * Nadat de aangepaste domeinnaam is toegevoegd, wordt deze gemarkeerd als geverifieerd en wordt het SSL-certificaat toegepast.
 
 In beide gevallen is het aangepaste domein beschikbaar voor veilig gebruik in uw omgeving nadat het certificaat is geverifieerd en geïnstalleerd. Zorg ervoor om [ de status van het domein ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) in de interface van Cloud Manager regelmatig te controleren om alles te bevestigen zoals verwacht werkt.
@@ -76,8 +76,7 @@ Hebt u hulp nodig bij het kiezen of u een door Adobe beheerd SSL-certificaat (aa
 1. Op het **gebied van de Naam van het Certificaat**, ga een naam in u verbonden aan het DV SSL certificaat wilt.
 
 1. In de **Uitgezochte domeinen** drop-down lijst, selecteer één of meerdere geverifieerde domeinen die u verbonden aan het DV SSL certificaat wilt.
-   * Geen domeinen om te selecteren? Als dat het geval is, moet u eerst een aangepaste domeinnaam toevoegen en controleren of deze is geverifieerd voordat u een SSL-certificaat kunt toevoegen.
-   * Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.
+   * Geen domeinen om te selecteren? Als zo, moet u eerst [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen en ervoor zorgen het wordt geverifieerd alvorens u een Adobe beheerde SSL certificaat kunt toevoegen.
    * Wanneer u wordt gebeëindigd toevoegend een naam van het douanedomein, terugkeer aan dit onderwerp en begin opnieuw bij stap 1.
 
 1. In de laag-juiste hoek van de dialoogdoos, klik **sparen**.
