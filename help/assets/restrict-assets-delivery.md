@@ -3,9 +3,9 @@ title: Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkhede
 description: Leer hoe u de levering van middelen kunt beperken met OpenAPI-mogelijkheden.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,4 @@ Op de auteur van AEM Cloud Service en Asset Selector wordt de IMS-token voor too
 
 ### Levering voor aangepaste identiteitsproviders op Publish-service {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets en Dynamic Media met OpenAPI-licenties kunnen samen worden gebruikt en beperkte levering van middelen kan worden geconfigureerd op websites die worden geleverd via AEM Publish- of Preview-services.
-In het geval AEM Sites&#39; Publish en de diensten van de Voorproef aan gebruiker a [ de leverancier van de douaneidentiteit (IdP) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) worden gevormd, kan de groep die toegang tot beveiligde activa binnen moet hebben in het `groupMembership` attribuut tijdens het opstellingsproces worden omvat.\
-Wanneer een gebruiker van een website zich aanmeldt bij een aangepaste identiteitsprovider en de website opent die wordt gehost via de Publish/Preview-service, wordt het kenmerk `groupMembership` gelezen en wordt een beveiligde cookie gemaakt en afgeleverd op de website nadat de verificatie is voltooid. Deze Secure-cookie wordt opgenomen in alle volgende aanvragen om de website-inhoud aan de gebruikersagent te leveren.
-
-Wanneer een beveiligd element op een pagina wordt opgevraagd, extraheren AEM Publish en Preview het machtigingsmateriaal uit de beveiligde cookie en valideren ze de toegang. Als er een overeenkomst is, wordt het element weergegeven.
-
->[!NOTE]
->
-> In het [ steunkaartje om Dynamic Media met mogelijkheden te activeren OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), vermeld beperkte levering in het gebruiksgeval. De Techniek van de Adobe zal met noodzakelijke verduidelijkingen en/of opstellingsproces voor beperkte levering helpen.
+AEM Sites, AEM Assets en Dynamic Media met OpenAPI-licenties kunnen samen worden gebruikt, zodat beperkte levering van middelen kan worden geconfigureerd op websites die worden gehost op AEM Publish- of Preview-service. De veilige leveringsstroom gebruikt browser koekjes om de toegang van de gebruiker te vestigen en het hebben van een douanedomein voor leveringsrij die subdomein van publiceer domein is is een vereiste voor het uitvoeren van dit gebruiksgeval. In het geval dat de diensten van Publish van AEM Sites en van de Voorproef worden gevormd om a [ leverancier van de douaneidentiteit (IdP) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) te gebruiken, moet een nieuw koekje genoemd `delivery-token` het inkapselen van de groepslidmaatschap van de gebruiker op de authentificatie van de publicatiedomeinpost worden geplaatst. De leveringsrij haalt het vergunningsmateriaal uit veilig-koekje en bevestigt de toegang. Gelieve te registreren een [ kaartje van de ondernemingssteun ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) voor meer details.
