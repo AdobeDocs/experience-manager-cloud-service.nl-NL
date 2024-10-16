@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
+source-wordcount: '4537'
 ht-degree: 0%
 
 ---
@@ -94,10 +94,38 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    aio plugins:update
    ```
 
-1. Configureer de RDE-plug-in om uw organisatie, programma en omgeving te gebruiken. De opstellingsbevel hieronder zal interactief de gebruiker van een lijst van programma&#39;s in hun organisatie voorzien, en zal milieu&#39;s RDE in dat programma tonen om van te kiezen.
+1. Meld u aan met de AIR-client.
 
    ```
    aio login
+   ```
+   De login informatie (teken) wordt opgeslagen in de globale luchtvaartconfiguratie en steunt daarom slechts één login en organisatie. Voor het geval u veelvoudige RDEs wilt gebruiken die verschillende logins of organisaties vereisen, volg hieronder voorbeeld introducerend contexten.
+
+   <details><summary>Volg dit voorbeeld om een lokale context voor één van uw logins van de RDE te plaatsen</summary>
+   Voer de volgende stappen uit om de aanmeldingsgegevens lokaal op te slaan in een .aio-bestand in de huidige map binnen een specifieke context. Een context is ook een slimme manier om een milieu CI/CD of een manuscript te plaatsen.  Gebruik ten minste AIR versie 10.3.1 om van deze functie gebruik te maken. Deze bijwerken met behulp van 'npm install -g @adobe/aio-cli'
+
+   Laten we een context met de naam &#39;mycontext&#39; maken die we vervolgens instellen als de standaardcontext met de automatische insteekmodule voordat we de aanmeldingsopdracht aanroepen.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > De login bevel met de `--no-open` optie zal een URL in de terminal in plaats van het openen van uw standaardbrowser uitvoeren. Als dat kunt u het met een **incognito** venster van uw browser kopiëren en openen. Op deze manier blijft de sessie die momenteel is aangemeld in het normale browservenster ongewijzigd en kunt u ervoor zorgen dat u de specifieke aanmelding en organisatie gebruikt die nodig zijn voor uw context.
+
+   Met de eerste opdracht maakt u een nieuwe aanmeldingscontextconfiguratie met de naam `mycontext` in het lokale `.aio` -configuratiebestand (het bestand wordt indien nodig gemaakt). Met de tweede opdracht stelt u de context `mycontext` in als de &quot;huidige&quot; context, d.w.z. de standaardcontext.
+
+   Met deze configuratie op zijn plaats, slaat het login bevel automatisch de login tokens in de context `mycontext` op, en houdt zo het lokaal.
+
+   U kunt meerdere contexten beheren door lokale configuraties in meerdere mappen te bewaren. Alternatief, is het ook mogelijk om veelvoudige context binnen één enkel configuratiedossier te plaatsen, en tussen hen te schakelen door de &quot;huidige&quot;context te veranderen.
+   </details>
+
+1. Configureer de RDE-plug-in om uw organisatie, programma en omgeving te gebruiken. De opstellingsbevel hieronder zal interactief de gebruiker van een lijst van programma&#39;s in hun organisatie voorzien, en zal milieu&#39;s RDE in dat programma tonen om van te kiezen.
+
+   ```
    aio aem:rde:setup
    ```
 
