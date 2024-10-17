@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
+source-git-commit: 126ac2a086423ee52f88c5eb78693bd3c3d5bf63
 workflow-type: tm+mt
 source-wordcount: '3206'
 ht-degree: 0%
@@ -171,9 +171,7 @@ De opdrachten Afbeeldingsserver `fmt` en `qlt` worden niet ondersteund. Alle res
 
 ## Veelgestelde vragen over Smart Imaging{#smart-imaging-faq}
 
-+++
-
-**zijn er vergunningskosten verbonden aan Slimme Beeldvorming?**
++++**zijn er vergunningskosten verbonden aan Slimme Beeldvorming?**
 
 Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en as a Cloud Service Experience Manager).
 
@@ -183,37 +181,34 @@ Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt
 
 +++
 
-+++
-
-**kan het Slimme Beeld voor om het even welk verzoek worden uitgezet?**
++++**kan het Slimme Beeld voor om het even welk verzoek worden uitgezet?**
 
 Ja. U kunt Smart Imaging uitschakelen door een van de volgende opties toe te voegen:
 
 * `bfc=off` om Browser Format Conversion uit te schakelen. Zie ook [ Browser de Omzetting van het Formaat ](#bfc).
 * `dpr=off` om de pixelverhouding van het apparaat uit te schakelen. Zie ook {de Verhouding van het Pixel van 0} Apparaat ](#dpr).[
 * `network=off` om netwerkbandbreedte uit te schakelen. Zie ook [ Bandbreedte van het Netwerk ](#network).
-+++
 
 +++
 
-**is het mogelijk om &quot;Slim Beeld te &quot;stemmen?**
++++**is het mogelijk om &quot;Slim Beeld te &quot;stemmen?**
 
 Ja. Slimme afbeeldingen hebben drie opties die u kunt in- of uitschakelen.
 
 * [Conversie browserindeling](#bfc)
 * [Pixelverhouding apparaat](#dpr)
-* [ Bandbreedte van het Netwerk ](#network)
-+++
+* [Netwerkbandbreedte](#network)
 
 +++
 
-**werkt het Slimme Beeld met mijn bestaand beeld vooraf instelt?**
++++**werkt het Slimme Beeld met mijn bestaand beeld vooraf instelt?**
 
 Slimme afbeeldingen worden naadloos geïntegreerd met uw bestaande voorinstellingen voor afbeeldingen, waarbij alle afbeeldingsinstellingen worden gerespecteerd.
 
 De enige aanpassingen hebben betrekking op de afbeeldingsindeling, de kwaliteit of beide. Tijdens het omzetten van indelingen behoudt Smart Imaging de volledige visuele getrouwheid op basis van de vooraf ingestelde instellingen, maar het bestand wordt kleiner. U kunt deze functie alleen inschakelen door `bfc=on` , `dpr=on,dprValue` , `network=on` of alle drie parameterinstellingen toe te voegen aan uw bestaande URL&#39;s of voorinstellingen.
 
 Een voorinstelling voor een afbeelding geeft bijvoorbeeld een JPEG-indeling op van 500 × 500 pixels, met `quality=85` en `unsharp mask=0.1,1,5` . Smart Imaging detecteert of de gebruiker zich in een Chrome-browser bevindt. Vervolgens wordt de afbeelding omgezet in een webpagina met dezelfde afmetingen (500 × 500) en een onscherp masker dat overeenkomt met de instellingen van de JPEG. Het systeem vergelijkt dan de dossiergrootte van WebP en de versies van JPEG en dient kleinere aan de gebruiker.
+
 +++
 
 <!-- OLD VERSION BELOW AS PER CQDOC-22085>
@@ -237,26 +232,20 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 -->
 
-+++
-
-**werkt het Slimme Beelden met HTTPS? Hoe zit het met HTTP/2?**
++++**werkt het Slimme Beelden met HTTPS? Hoe zit het met HTTP/2?**
 
 Ja, op beide vragen. Slimme afbeeldingen werken met afbeeldingen die via HTTP of HTTPS worden geleverd. Bovendien werkt het ook via HTTP/2.
 +++
 
-+++
-
-**Ben ik verkiesbaar om Slimme Beelden te gebruiken?**
++++**Ben ik verkiesbaar om Slimme Beelden te gebruiken?**
 
 Smart Imaging is klaar om direct voor alle klanten te worden gebruikt. Als u van de voordelen ervan wilt genieten, voegt u `bfc=on` of `dpr=on,dprValue` , of `network=on` , of alle drie parameterinstellingen toe aan uw bestaande URL&#39;s of voorinstellingen.
 
 Als u Smart Imaging wilt activeren, moet de Dynamic Media Classic of Dynamic Media van uw bedrijf voor een Experience Manager-account de Adobe gebundelde CDN (Content Delivery Network) als onderdeel van uw licentie opnemen.
-+++
-
 
 +++
 
-**wat is het proces om Slim Beeld op een rekening toe te laten?**
++++**wat is het proces om Slim Beeld op een rekening toe te laten?**
 
 Als u Smart Imaging wilt gaan gebruiken, voegt u `bfc=on` , `dpr=on,dprValue` of `network=on` of alle drie parameterinstellingen toe aan uw bestaande URL&#39;s of voorinstellingen. Als u deze wijzigingen liever niet handmatig doorvoert, kunt u Smart Imaging standaard inschakelen door een ondersteuningscase te maken.
 
@@ -311,10 +300,9 @@ De TTL aanpassen:
       1. Volg [ deze instructies ](/help/assets/dynamic-media/config-dm.md).
       1. Stel de waarde **[!UICONTROL Expiration]** in op 24 uur of langer.
 
-
 +++
 
-**wanneer is een rekening die met Slimme Beelden wordt toegelaten?**
++++**wanneer is een rekening die met Slimme Beelden wordt toegelaten?**
 
 De processen van de Steun van de klant verzoeken in de orde dat zij hen, na de Lijst van de Wacht ontvangen.
 
@@ -324,16 +312,15 @@ De processen van de Steun van de klant verzoeken in de orde dat zij hen, na de L
 
 +++
 
-**zijn er risico&#39;s met het gebruiken van Slimme Beeldvorming?**
++++**zijn er risico&#39;s met het gebruiken van Slimme Beeldvorming?**
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de CDN-cache echter wel gewist. Bij deze bewerking gaat u naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media op Experience Manager.
 
 Tijdens de eerste overgang raken de oorspronkelijke servers van de Adobe rechtstreeks door de niet-cacheafbeeldingen totdat het cachegeheugen opnieuw wordt opgebouwd. Als dusdanig, is de Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van de oorsprong. Voor de meeste klanten, wordt het geheime voorgeheugen volledig opnieuw opgebouwd bij CDN binnen ongeveer één tot twee dagen.
-+++
 
 +++
 
-**kan ik verifiëren als het Slimme Beeld werkt?**
++++**kan ik verifiëren als het Slimme Beeld werkt?**
 
 Ja. U kunt het volgende doen:
 
@@ -353,11 +340,10 @@ Ja. U kunt het volgende doen:
 >Niet alle afbeeldingen worden omgezet. Smart Imaging bepaalt of de conversie de prestaties kan verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling geen JPEG of PNG is.
 
 ![ image2017-11-14_15398 ](assets/image2017-11-14_15398.png)
-+++
 
 +++
 
-**is er een manier om de voordelen van Slim Beeld te kennen?**
++++**is er een manier om de voordelen van Slim Beeld te kennen?**
 
 Ja. De koptekst Slimme afbeeldingen bepaalt de voordelen van Slimme afbeeldingen. Wanneer Slimme afbeeldingen is ingeschakeld, kunt u na een verzoek om een afbeelding onder de kop **[!UICONTROL Response Headers]** `-X-Adobe-Smart-Imaging` zien zoals in het volgende gemarkeerde voorbeeld:
 
@@ -382,16 +368,13 @@ Deze koptekst geeft het volgende aan:
 
 +++
 
-+++
-
-**kan ik optimalisering AVIF in Slimme Beeldvorming onbruikbaar maken?**
++++**kan ik optimalisering AVIF in Slimme Beeldvorming onbruikbaar maken?**
 
 Ja. Als u terug naar het dienen WebP door gebrek wilt schakelen, creeer een steungeval voor het zelfde. Zoals gebruikelijk, kunt u Smart Imaging uitzetten door de parameter `bfc=off` aan URL van het beeld toe te voegen. U kunt WebP of AVIF echter niet selecteren in de URL-optie voor Smart Imaging. Deze mogelijkheid blijft behouden op het niveau van uw bedrijfsaccount.
-+++
 
 +++
 
-**waarom mijn verzoek ontbreekt wanneer ik een URL met fmt=tif op Webbrowser van Chrome heb?**
++++**waarom mijn verzoek ontbreekt wanneer ik een URL met fmt=tif op Webbrowser van Chrome heb?**
 
 Deze fout treedt niet op als Smart Imaging niet is ingeschakeld voor uw account. Slimme afbeeldingen werken alleen in de indeling JPEG of PNG.
 
@@ -400,73 +383,65 @@ U kunt deze fout voorkomen door:
 * Geef JPEG of PNG op, of
 * Gebruik de optie `fmt` helemaal niet, of
 * Gebruik een browservoorkeursindeling die wordt gedefinieerd door Smart Imaging. U kunt bijvoorbeeld WebP gebruiken voor de Chrome-webbrowser.
-+++
 
 +++
 
-**kan ik een beeld van TIFF van URL van een beeld downloaden?**
++++**kan ik een beeld van TIFF van URL van een beeld downloaden?**
 
 Ja. Voeg `fmt=tif` en `bfc=off` toe aan het URL-pad van de afbeelding.
-+++
 
 +++
 
-**beheert het Slimme Beeld beeldformaat en de montages van de beeldkwaliteit?**
++++**beheert het Slimme Beeld beeldformaat en de montages van de beeldkwaliteit?**
 
 Ja. Voor Smart Imaging worden zowel de indeling als de kwaliteit gebruikt. De overige parameters blijven ongewijzigd, indien gevraagd in de URL van de afbeelding.
-+++
 
 +++
 
-**kan ik een minimum en maximumkwaliteit plaatsen die?**
++++**kan ik een minimum en maximumkwaliteit plaatsen die?**
 
 Nee. Op dit moment bestaat een dergelijke voorziening niet.
-+++
 
 +++
 
-**past Slimme Beeldvorming de percenten kwaliteitsuitvoer aan die plaatsen?**
++++**past Slimme Beeldvorming de percenten kwaliteitsuitvoer aan die plaatsen?**
 
 Ja. Met Slimme afbeeldingen wordt het kwaliteitspercentage automatisch aangepast. Deze kwaliteit wordt bepaald met behulp van een machinaal leeralgoritme dat door Adobe wordt ontwikkeld. Dit percentage is niet bereikspecifiek.
-+++
 
 +++
 
-**zijn slechts JPEG en PNG vervangen door Slimme Beeldvorming?**
++++**zijn slechts JPEG en PNG vervangen door Slimme Beeldvorming?**
 
 Ja. Deze functionaliteit werkt alleen voor JPEG en PNG.
-+++
 
 +++
 
-**waarom is JPEG soms teruggekeerd aan Chrome in plaats van WebP?**
++++**waarom is JPEG soms teruggekeerd aan Chrome in plaats van WebP?**
 
 Slimme afbeeldingen bepalen of de conversie nuttig is. Het retourneert alleen de nieuwe afbeelding van de conversie.
-+++
 
 +++
 
-**waarom werkt de Verhouding van het Pixel van het Apparaat (dpr) niet met samengestelde beelden?**
++++**waarom werkt de Verhouding van het Pixel van het Apparaat (dpr) niet met samengestelde beelden?**
 
 Als een samengestelde afbeelding te veel lagen bevat, kan de dpr-functionaliteit worden beïnvloed wanneer u een positiewijziging gebruikt. Dit probleem is bekend en wordt opgelost in toekomstige versies van Smart Imaging. Als andere functies voor Smart Imaging niet naar behoren werken, kunt u een ondersteuningscase maken om het probleem te melden.
-+++
 
 +++
 
-**waarom zet het Slimme Beeld PNG in lossless WebP/AVIF om?**
++++**waarom zet het Slimme Beeld PNG in lossless WebP/AVIF om?**
 
 Omdat PNG een indeling zonder gegevensverlies is, zijn eerdere WebP- en AVIF-bewerkingen zonder gegevensverlies uitgevoerd. Hierdoor is het bestand groter dan u had verwacht. Smart Imaging ondersteunt nu omzetten met verlies. U kunt de optie `cache=update` (slechts één keer) in een afbeeldingsaanvraag gebruiken om dit probleem op te lossen. Een voorbeeld van het gebruik van deze modifier:
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
 Om het volledige geheime voorgeheugen ongeldig te maken, moet u een steungeval creëren die om zulk een inspanning verzoekt.
-+++
 
 +++
 
-**kan ik blijven gebruikend PNG aan verliesloze omzetting in Slimme Beeldvorming?**
++++**kan ik blijven gebruikend PNG aan verliesloze omzetting in Slimme Beeldvorming?**
 
 Ja. Smart Imaging ondersteunt nu verliesconversie op basis van het kwaliteitsniveau. U kunt de omzetting zonder verlies blijven gebruiken door de kwaliteit in te stellen op 100, via de instellingen van uw bedrijf of door `qlt=100` toe te voegen aan het URL-pad van de afbeelding.
+
 +++
 
 
