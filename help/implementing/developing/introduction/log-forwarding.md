@@ -4,9 +4,9 @@ description: Leer over het door:sturen van logboeken aan Splunk en andere regist
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
@@ -304,7 +304,13 @@ data:
 
 Overwegingen:
 
-* standaard is de poort 443 . Optioneel kan deze worden overschreven door een eigenschap met de naam `port` .
+* Standaard is de poort 443. Optioneel kan deze worden overschreven door een eigenschap met de naam `port` .
+* Het sourcetype gebied zal één van de volgende waarden, afhankelijk van het specifieke logboek hebben: *aemaccess*, *aemerror*,
+  *verzoek*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [ als het migreren ](#legacy-migration) van erfenisLogboek dat aan dit zelf-servermodel door:sturen, kunnen de `sourcetype` waarden van het gebied die naar uw Splunk index worden verzonden veranderd zijn, zo dienovereenkomstig aangepast.
 
 
 <!--
@@ -385,6 +391,10 @@ Klanten die op die manier door Adobe waren opgezet, zijn welkom om zich aan het 
 Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de Cloud Manager config pijpleiding om aan elk van de milieu&#39;s op te stellen waar de configuratie zou moeten worden toegepast.
 
 Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelf-servercontrole zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-servermanier zijn gevormd.
+
+>[!NOTE]
+>
+>De waarden van het veld `sourcetype` die naar uw verzonken index zijn verzonden, zijn mogelijk gewijzigd, dus pas de waarden dienovereenkomstig aan.
 
 >[!NOTE]
 >
