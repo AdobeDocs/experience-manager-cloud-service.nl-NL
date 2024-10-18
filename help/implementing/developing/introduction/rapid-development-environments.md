@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
+source-wordcount: '4794'
 ht-degree: 0%
 
 ---
@@ -1052,3 +1052,17 @@ Controleren of de aanmelding is voltooid door uitvoering
 `aio cloudmanager:list-programs`
 
 Dit zou van alle programma&#39;s onder uw gevormde organisatie moeten een lijst maken en bevestigen dat u de correcte toegewezen rol hebt.
+
+### Afgekeurde context &#39;aio-cli-plugin-cloudmanager&#39; gebruiken {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+Vanwege de geschiedenis van de &#39;aio-cli-plugin-aem-rde&#39; werd de contextnaam &#39;aio-cli-plugin-cloudmanager&#39; al een tijd gebruikt. De rode plug-in gebruikt nu de IMS-manier om te gaan met contextinformatie, wat betekent dat er opties zijn om contextinformatie globaal of lokaal op te slaan en dat alle AIR-aanroepen standaard worden uitgevoerd als u dat wilt. De standaard gevormde context wordt plaatselijk opgeslagen en laat de ontwikkelaars toe om individuele contexten en hun informatie binnen een omslag te volgen en te gebruiken. Voor verdere details, lees [ het voorbeeld aan opstelling hierboven een lokale context ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
+
+Ontwikkelaars die beide plug-ins gebruiken, de air-cli-plugin-cloudmanager en de air-cli-plugin-aem-mode gebruiken en alle informatie in dezelfde context willen houden, moeten nu opties hebben:
+
+#### Context &#39;air-cli-plugin-cloudmanager&#39; blijven gebruiken
+
+De context kan nog steeds worden gebruikt. In de RDE-plug-in wordt een afleidingswaarschuwing weergegeven. Deze waarschuwing kan worden weggelaten in de modus ```--quiet``` . Recentere versies van de RDE-plug-in bieden geen fallback om de context &#39;aio-cli-plugin-cloudmanager&#39; meer te lezen. Om nog gebruik van het te maken, vorm eenvoudig de standaardcontext aan &#39;air-cli-stop-cloudmanager&#39;, zie [ het voorbeeld aan opstelling een lokale context ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) hierboven.
+
+#### Gebruik een andere contextnaam ook voor de plug-in voor cloud Manager
+
+De insteekmodules van de cloud Manager bieden een parameter om een context te definiëren die moet worden gebruikt. De standaard IMS-contextconfiguratie wordt nog niet ondersteund. Om dit te doen, vorm de insteekmodule RDE gebruikend [ het voorbeeld om een lokale context ](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) te opstelling en vertelt de insteekmodule van de wolkenmanager om &quot;myContext&quot;als ```--imsContextName=myContext``` in elke vraag aan het te gebruiken.
