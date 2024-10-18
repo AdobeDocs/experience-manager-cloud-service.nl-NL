@@ -4,7 +4,7 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 0%
@@ -99,6 +99,7 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    ```
    aio login
    ```
+
    De login informatie (teken) wordt opgeslagen in de globale luchtvaartconfiguratie en steunt daarom slechts één login en organisatie. Voor het geval u veelvoudige RDEs wilt gebruiken die verschillende logins of organisaties vereisen, volg hieronder voorbeeld introducerend contexten.
 
    <details><summary>Volg dit voorbeeld om een lokale context voor één van uw logins van de RDE te plaatsen</summary>
@@ -111,7 +112,6 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > De login bevel met de `--no-open` optie zal een URL in de terminal in plaats van het openen van uw standaardbrowser uitvoeren. Als dat kunt u het met een **incognito** venster van uw browser kopiëren en openen. Op deze manier blijft de sessie die momenteel is aangemeld in het normale browservenster ongewijzigd en kunt u ervoor zorgen dat u de specifieke aanmelding en organisatie gebruikt die nodig zijn voor uw context.
@@ -153,8 +153,8 @@ Kies `yes` naar
 Zodra de lokale of globale configuratie wordt geselecteerd, zal het opstellingsbevel proberen om uw organisatie identiteitskaart van uw huidige login te lezen en dan de programma&#39;s van de organisatie te lezen. Als de organisatie niet kan worden gevonden, kunt u het manueel samen met sommige begeleiding ingaan.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 Nadat de programma&#39;s zijn opgehaald, kan de gebruiker een keuze maken in de lijst en filteren.
@@ -248,7 +248,6 @@ Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars e
 * Voor gedetailleerde hulp voor een bevel, type:
 
   `aio aem rde <command> --help`
-
 
 ### Globale vlaggen {#global-flags}
 
@@ -507,7 +506,7 @@ In het volgende voorbeeld wordt getoond hoe u de auteurslaag kunt staart, met é
 >
 >Als de fout `RDECLI:UNEXPECTED_API_ERROR` wordt weergegeven bij het afspelen met de logboekopdrachten voor de auteurservice, moet u de omgeving opnieuw instellen en het opnieuw proberen. Deze fout treedt op als uw laatste herstelbewerking voor eind mei 2024 is uitgevoerd.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
   }
 }
 ```
+
 </details>
 
 ### Installeren {#install}
@@ -723,6 +723,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
   ]
 }
 ```
+
 </details>
 
 ### Verwijderen {#delete}
@@ -901,6 +902,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
   ]
 }
 ```
+
 </details>
 
 ### Herstellen {#reset}
@@ -931,6 +933,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Opnieuw starten {#restart}
