@@ -4,9 +4,9 @@ description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) as a
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5557'
 ht-degree: 0%
 
 ---
@@ -929,6 +929,15 @@ GraphQL voor AEM de Fragmenten van de Inhoud staat u toe om een URL aan een AEM 
 Met de oplossing in GraphQL kunt u:
 
 * gebruik `_dmS7Url` op de `ImageRef` -referentie
+   * zie [ vraag van de Steekproef voor Dynamic Media activalevering door URL - de Verwijzing van het Beeld ](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* gebruik `_dmS7Url` op meerdere referenties; `ImageRef` , `MultimediaRef` en `DocumentRef`
+   * zie [ vraag van de Steekproef voor Dynamic Media activalevering door URL - Veelvoudige Verwijzingen ](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* gebruik van `_dmS7Url` met de functie Slim uitsnijden
+
+   * De eigenschap `_smartCrops` stelt de configuraties voor slim uitsnijden beschikbaar voor een specifiek element
+
+   * zie [ vraag van de Steekproef voor de activalevering van Dynamic Media door URL - met Slim Gewas ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### Voorbeeldquery voor levering van Dynamic Media-elementen via URL - met Smart Crop {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+Hier volgt een voorbeeldquery:
+
+* om de slimme configuraties van het Gewas beschikbaar voor de gevraagde activa bloot te stellen
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL for AEM - Overzicht van extensies {#graphql-extensions}
