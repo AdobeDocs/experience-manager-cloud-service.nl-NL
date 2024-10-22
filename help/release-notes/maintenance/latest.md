@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
+source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '569'
+ht-degree: 1%
 
 ---
 
@@ -16,87 +16,61 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 18175 {#release-18175}
+## Release 18311 {#18311}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18175 samengevat, die op 10 oktober 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17964. Release 18099 is privé gemaakt vanwege een uitgave.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18311 samengevat, die op 22 oktober 2024 openbaar werd gemaakt. De vorige onderhoudrelease was release 18175.
 
 De activering van de 2024.10.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-18175}
+### Verbeteringen {#enhancements-18311}
 
-* ASSETS-38322: Het toelaten van de gebeurtenis van het HTTP- verzoek voor AEM.
-* ASSETS-41448: Update auth.ims bundle om FI aan groepstoewijzingen te steunen.
-* ASSETS-41684: Voeg OOB OSGI-configuraties toe om FI te definiëren voor groepstoewijzing voor Assets, Foundation, Sites en Forms.
-* ASSETS-43015: Update to latest auth.ims bundle.
-* CQ-4356633: Extra tekens toevoegen in de knopinfo Alleen inhoud.
-* GRANITE-50948: Integreer de dataopslagservice in AEM Support for repository service.
-* GRANITE-52454: ondersteunende helper 0.1.2 toevoegen.
-* GRANITE-52454: Verbetering van de ondersteuning Helper GRANITE-52454 voor upgradeondersteuning voor gebruik van de nieuwste release voor AEMaaCS.
-* GRANITE-53287: Bezig met bijwerken van testversie voor integratie met beveiligingsrechten.
-* GRANITE-53485: Support Service Principal authentication for replication Azure Blob Storage.
-* GRANITE-53514: Treeactivation bijgewerkt naar versie 1.0.26.
-* GRANITE-53870: Maak een intern mechanisme om de maximale JVM-versiecontrole voor de snelstart over te slaan.
-* GRANITE-53914: Los de testmislukkingen van het Platform met Java 17 bijgewerkte moduleversie op.
-* GRANITE-53966: Gebruik afzonderlijke draadpool voor inhoud-distributie.
-* GRANITE-54006: update Jackson to 2.17.2.
-* GRANITE-54038: Voeg de Enterprise IMS-client van het Creative Cloud toe aan de AEM IMS-client-lijst van gewenste personen.
-* GRANITE-54054: Omgevingsvariabele voor com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
-* GRANITE-54266: Production SDK mist Search Suggestor-service.
-* GRANITE-54274: Accept Firefly IMS client.
-* GRANITE-54300: Werk Oak bij naar de meest recente openbare release (1.70.0).
-* HULPLIJNEN-19069: Voeg hulplijnenPeerLinkIndex toe voor naamhulplijnen.
-* SITES-23584: Correctie van falende test voor de component van de Stichting op Java 17.
-* SKYOPS-69768: SlingModels deserialize ResourceResolvers niet.
-* SKYOPS-76378: Verbeter draad-veiligheid van de registratie/deregistratie van ResourceBundle in i18n.
-* SKYOPS-79285: Update Sling XSS aan 2.4.2.
-* SKYOPS-82383: Stel het &quot;helm-waarden&quot;omzet-fusie-analyseresultaat in de beschrijver van de beveluitvoering bloot.
-* SKYOPS-84810: sla uitvoering &quot;40-initialize-publish.sh&quot;bij opstarten voor RDE over.
-* SKYOPS-84951: Fix Mutable content checksum generation code.
-* SKYOPS-85335: Update org.apache.sling.jcr.repoinit naar 1.1.52.
-* SKYOPS-85336: Update Sling Commons Threads to 3.3.0.
-* SKYOPS-86329: het bijwerken van versies van platformtestmodules voor java 21 sdk steun.
+* ASSETS-41820: Indexering verbeteringen voor de verwerking van waakhond.
+* ASSETS-43720: Functionele verbeteringen in de verwerking van waakhond.
+* ASSETS-42554: Prestatieverbeteringen voor grote mappen.
+* SKYOPS-77603: Beheer van omleidingen door zakelijke gebruikers.
 
-### Opgeloste problemen {#fixed-issues-18175}
+### Opgeloste problemen {#fixed-issues-18311}
 
-* CNTBF-298: verwijder jcr:uid uit CC-geëxporteerde pakketten.
-* SKYOPS-83910: Los problemen met gelijktijdige uitvoering op die in SKYOPS-82371 zijn aangetroffen.
-* GRANITE-52876: Bijwerken naar com.adobe.granite.ui.content 0.8.1448.
-* GUIDEN-14445: De inheemse generatie van PDF ontbreekt met een fout met betrekking tot het krijgen van gebiedsdelen voor Node.js.
-* HULPLIJNEN-16961: De titel met `<conref>` lost niet in Baseline en de Vertaaldashboards van de Redacteur van het Web op.
-* HULPLIJNEN-17283: Wanneer het selecteren van de **meta-gegevens van het Gebruik die in de topicmeta** optie worden toegevoegd, worden de meta-gegevenseigenschappen niet verspreid in de documenteigenschappen van de inheemse output van PDF.
-* HULPLIJNEN-17793: De referenced PDF wordt niet geactiveerd van het **BulkPublish Dashboard** tijdens de Bulkactivering van gepubliceerde inhoud.
+* ASSETS-37534: Wijzigingen in zoekopdracht om eigenschap die wordt gebruikt voor goedkeuringsdoel, niet beschikbaar te maken.
+* ASSETS-38322: Verwijder de publicatiecriteria provider config Remove publiceer gebeurteniseigenschap.
+* ASSETS-40482: Toegankelijkheidsprobleem in spel/pauze en dempen/dempen in Scene7-videospeler.
+* ASSETS-40593: De foutpagina treedt op nadat u op de knop &quot;Eigenschappen&quot; hebt geklikt in Assets > Bestanden.
+* ASSETS-40598: Synchroniseer slimme gewassen wanneer niet-gesynchroniseerd element wordt verplaatst naar een map waarvoor synchronisatie is ingeschakeld.
+* ASSETS-40743: Problemen met het activeren van het dialoogvenster Element vervangen wanneer bepaalde tekens voorkomen in de bestandsnaam.
+* ASSETS-40825: Assets Search Facets verdwijnt na bewerking van zoekformulier.
+* ASSETS-41007: Verwijdering op AEM laat soms verweesde Assets bij levering.
+* ASSETS-41172: Dynamic Media sjablonen met speciale tekens niet toegestaan in naam.
+* ASSETS-41896 : Assets genoemd in cq:discted property on the folder should NOT be published to Brand Portal.
+* ASSETS-42067: Dynamic Media Templates - Download geeft een fout.
+* ASSETS-42070: Dynamic Media-sjablonen - gebruikers zonder beheerdersrechten moeten toegang hebben tot Sjabloon voor maken/bewerken.
+* ASSETS-42344: Connected Assets Sync verbroken - Opnieuw verbinden en advies voor klant.
+* ASSETS-42620: Probleem met de voorvertoningsoptie van elementversies - laat een leeg voorbeeld zien wanneer we het element openen.
+* ASSETS-42701: Probleem met levering en uitsnijden van geoptimaliseerde webafbeeldingen.
+* ASSETS-42966: Async barricade kan bij vergissing worden vrijgegeven als meerdere taken hetzelfde pad hebben.
+* ASSETS-43072: Dynamic Media Templates - Sjabloonverwijzingen, zoekonderbrekingen op een ongeldige referentie.
+* ASSETS-43212: Problemen met internationalisatie in de editor voor het metagegevensschema.
+* ASSETS-43202: oplossingen voor het selecteren van annotaties die u wilt afdrukken vanuit de tijdlijn.
+* ASSETS-43502: AEM naam bestaande voorinstelling CS-afbeelding niet weergegeven op pagina Bewerken.
+* ASSETS-43538: Bij het synchroniseren van een taak met kopieerelementen wordt een onjuiste eigenschap gebruikt voor het bronpad.
+* ASSETS-43798: controleer eerst op bestemmingspad voordat u elementen kopieert.
+* ASSETS-43945: Verhoog de wachttijd voor opnieuw proberen tot 20 minuten voor de taakwachtrij voor async-elementen.
+* ASSETS-44025: De functie voor het verwijderen van elementen kan niet worden gesynchroniseerd wanneer afzonderlijke elementen zijn geselecteerd.
+* SITES-26128 : Class cast-uitzondering in CreateLiveCopyStep.
+* SCRNS-4551: [ SG Pools ] het kanaal van Screens die videocomponent bevatten toont &quot;Algemene Fout van de Pagina&quot;op browser voorproef en speler
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en de kwesties van Gidsen die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Bekende problemen {#known-issues-18175}
+### Bekende problemen {#known-issues-18311}
 
 * FORMS-15818: Component descriptor-item `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
 
-### Verouderde functies en API&#39;s {#deprecated-18175}
+### Verouderde functies en API&#39;s {#deprecated-18311}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-Hieronder volgt een overzicht van onlangs vervangen functies of functies die verouderd zijn.
+### Beveiligingsproblemen {#security-18311}
 
-#### JavaScript Use API {#javascript-use-api}
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 3 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-[ het Gebruik API van JavaScript ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) wordt officieel verouderd toe te schrijven aan uitdagingen hebben de gebruikers het zuiveren en het handhaven van code die hefboomwerkingen API, evenals prestatiesbeperkingen in vergelijking met het alternatief van Java.
-
-U zou overgang aan [ het Gebruik API van Java moeten overschakelen, ](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) dat betere prestaties, gemakkelijkere zuivering, en grotere steun op lange termijn aanbiedt.
-
-#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
-
-Houd er rekening mee dat de Adobe bezig is met het bijwerken van `com.day.cq.wcm.api` . Sommige methoden en klassen zijn in de huidige release gemarkeerd als `@Deprecated` . Deze worden in toekomstige versies verwijderd. Overstappen op de voorgestelde alternatieven.
-
-#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
-
-* GRANITE-54165: Deprecate org.apache.jackrabbit.oak.plugins.blob in public API.
-
-### Beveiligingsproblemen {#security-18175}
-
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt twee geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
-
-### Ingesloten technologieën {#embedded-tech-18175}
+### Ingesloten technologieën {#embedded-tech-18311}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
