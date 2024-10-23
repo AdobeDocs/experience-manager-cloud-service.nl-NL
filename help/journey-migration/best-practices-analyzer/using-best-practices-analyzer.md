@@ -4,9 +4,9 @@ description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
+source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2701'
 ht-degree: 31%
 
 ---
@@ -73,45 +73,43 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
 1. Selecteer Adobe Experience Manager en navigeer aan hulpmiddelen > **Verrichtingen** > **Analysator van Beste praktijken**.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![ Analyzer van Beste praktijken ](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Klik **produceren Rapport** om de Analysator van Beste praktijken uit te voeren.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![ produceer Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Verstrek BPA upload sleutel om het geproduceerde BPA- rapport aan [ Cloud Acceleration Manager (CAM) ](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md) automatisch te uploaden. Om uploadt sleutel te krijgen, navigeer aan de [ Analyse van Beste praktijken in CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![ plaats BPA uploadt Sleutel ](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >U hebt de optie om automatisch over te slaan uploadt aan CAM door **te selecteren overslaat rapport auto uploadt aan CAM**. Als u verkiest om over te slaan, zult u het BPA- rapport als komma-gescheiden waardedossier manueel moeten downloaden en dan het dossier in CAM uploaden. Het wordt aanbevolen de optie Upload key te gebruiken omdat deze de bewerking stroomlijnt.
 
 1. **produceer** knoop actief wordt wanneer een geldige sleutel wordt verstrekt. Klik op **produceren** om rapportgeneratie in werking te stellen.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+   ![ produceer Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. Terwijl BPA het rapport produceert, kunt u de vooruitgang zien die door het hulpmiddel op het scherm wordt gemaakt. De voortgang wordt weergegeven in procenten dat is voltooid. Ook wordt het aantal geanalyseerde items weergegeven en wordt het aantal gevonden bevindingen weergegeven.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![ Genererend Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >De tijdstempel van de BPA-upload met sleutelvervaldatum wordt in de rechterbovenhoek weergegeven. U zou BPA moeten vernieuwen uploadt sleutel wanneer het bijna zijn vervaldatum is. Om de sleutel te vernieuwen, kunt u op **klikken vernieuwt** om aan CAM te navigeren om de sleutel te vernieuwen.
 
 1. Nadat het BPA-rapport is gegenereerd, worden een samenvatting en het aantal bevindingen weergegeven in een tabelvorm die is ingedeeld op basis van het type bevinding en het belangrijkste niveau. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![ Overzicht van het Rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. U hebt de optie om het rapport in een komma-gescheiden waarden (CSV) formaat te downloaden door op **Uitvoer naar CSV** te klikken. U hebt ook de optie om het rapport in CAM te bekijken door op **te klikken gaat naar CAM**. Dit zal u aan de [ pagina van de Analyse van Beste praktijken ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM nemen.
 
 U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door **te klikken verfrist Rapport**.
 
-![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
-
+![ verfrist rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. Als het geheime voorgeheugen verloopt, hebt u de optie om het laatste geproduceerde rapport in CAM te bekijken door op **te klikken Mening het laatste geproduceerde rapport in CAM** of een nieuwe rapportgeneratie in werking te stellen door op **te klikken produceert Nieuw Rapport**.
 
-![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![ Geen rapport ](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}
@@ -120,14 +118,14 @@ Om bevindingen met betrekking tot [ ACS Commons ](https://adobe-consulting-servi
 
 1. Klik op het linkerspoorpictogram aan de linkerkant van de pagina. Dit zal de **filter van de Bevelen ACS** tonen. Klik de **filter van Bevelen ACS** om interactieve checkbox zoals aangetoond in het hieronder beeld te tonen.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ ACS Commons Filter ](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSCommons ontdekt.
 
 1. Schakel het selectievakje uit om alle bevindingen met betrekking tot ACS-opdrachten uit te filteren. U zou a **Gefilterde het Vinden Aantal** op het rapport zoals aangetoond in het beeld hieronder moeten zien. Het filter wordt ook toegepast op het rapport wanneer het in een komma-gescheiden-waarde (CSV) formaat wordt uitgevoerd.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![ Gefilterde het Vinden Telling ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [ documentatie ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om verenigbaarheid met AEM as a Cloud Service te bepalen.

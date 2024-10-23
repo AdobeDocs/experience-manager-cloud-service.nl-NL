@@ -4,9 +4,9 @@ description: Zorg ervoor dat uw code en inhoud klaar zijn voor de migratie naar 
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2288'
 ht-degree: 8%
 
 ---
@@ -49,7 +49,7 @@ De exacte stappen van de overgang naar de Cloud Service zijn afhankelijk van de 
 
 In de volgende afbeelding ziet u de belangrijkste stappen in de fase die het omzetten van uw code en inhoud voor gebruik met AEM as a Cloud Service omvat:
 
-![afbeelding](/help/journey-migration/assets/exec-image1.png)
+![ stappen van de Omzetting ](/help/journey-migration/assets/exec-image1.png)
 
 We gaan de gereedschappen die u nodig hebt, in detail beschrijven, zodat u dit kunt bereiken in de onderstaande hoofdstukken.
 
@@ -217,7 +217,7 @@ De volgende tabel illustreert een functionele migratiecontracker:
 
 In de volgende sectie worden de belangrijke stappen en bijbehorende taken weergegeven die kunnen worden gebruikt om een strategie en tijdlijn voor inhoudsmigratie te formuleren.
 
-![afbeelding](/help/journey-migration/assets/content-migration2.png)
+![ Stappen om een migratiestrategie te formuleren ](/help/journey-migration/assets/content-migration2.png)
 
 ### Inrichting {#fitment}
 

@@ -4,9 +4,9 @@ description: Java&trade; en JavaScript APIs laten u toe om koorden te internatio
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ Test of u alle tekenreeksen in uw gebruikersinterface hebt geïnternationaliseer
 
 In de volgende afbeelding ziet u de stub-vertaling voor de AEM homepage:
 
-![ chlimage_1 ](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![ vertaling van de Stub voor de AEM homepage ](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Om de taal voor de gebruiker te plaatsen, vorm het taalbezit van de voorkeurenknoop voor de gebruikersrekening.
 

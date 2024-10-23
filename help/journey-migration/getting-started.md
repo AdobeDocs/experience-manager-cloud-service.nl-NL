@@ -4,9 +4,9 @@ description: De migratiejourney starten door u vertrouwd te maken met de basis v
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '579'
 ht-degree: 6%
 
 ---
@@ -35,15 +35,15 @@ De migratiereis naar Cloud Service omvat de volgende fasen:
 * Begin door te bepalen als uw plaatsing klaar is om aan AEM as a Cloud Service met de [ Fase van de Bereidheid ](/help/journey-migration/readiness.md) worden bewogen. In deze fase moet u zich ook vertrouwd maken met de veranderingen die AEM as a Cloud Service heeft geïntroduceerd.
 * Daarna, maak uw code en inhoudswolk klaar met de [ Fase van de Implementatie ](/help/journey-migration/implementation.md). In deze fase verkent u de Adobe voor het gereedschap om de overstap naar de cloud te vereenvoudigen.
 * Nadat alles op zijn plaats is, kunt u de migratie met de [ gaan-Levende Fase ](/help/journey-migration/go-live.md) uitvoeren.
-* Tot slot zorg ervoor om voor kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is, in de [ Post Go-live Fase ](/help/journey-migration/post-go-live.md).
+* Tot slot zorg ervoor om voor kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is, in de [ post Go-live Fase ](/help/journey-migration/post-go-live.md).
 
 In onderstaande afbeelding ziet u een grote voorstelling van de aanbevolen overgang naar AEM as a Cloud Service.
 
-![afbeelding](/help/journey-migration/assets/move-aemcloud-process.png)
+![ vertegenwoordiging op hoog niveau van de geadviseerde overgangsreis aan AEM as a Cloud Service ](/help/journey-migration/assets/move-aemcloud-process.png)
 
 U kunt ook het onderstaande diagram raadplegen voor een gedetailleerdere, gedetailleerdere weergave van de migratiereis.
 
-![afbeelding](/help/journey-migration/assets/migration-process.png)
+![ Gedetailleerde, korrelige mening van de migratiereis ](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

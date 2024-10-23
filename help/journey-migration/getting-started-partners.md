@@ -4,9 +4,9 @@ description: De Gids van de migratie aan Experience Manager as a Cloud Service v
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7c704aa09ae4a6a3368b1eccb12982360a3350b3
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1472'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 4%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="Nieuwe en andere functies?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="Inleiding tot AEM as a Cloud Service."
 
-Adobe Experience Manager (AEM) as a Cloud Service biedt een herarchitected basis voor Experience Manager, die is gebaseerd op een containergebaseerde infrastructuur, API-gestuurde ontwikkeling en het geleide DevOps-proces, waardoor marketers en ontwikkelaars altijd op de curve kunnen blijven vooruitlopen in innovaties op het gebied van het beheer van de gebruikerservaring.
+Adobe Experience Manager (AEM) as a Cloud Service biedt een bijgewerkte architectuur voor Experience Manager. Deze basis is gebaseerd op een containergebaseerde infrastructuur, API-gestuurde ontwikkeling en het geleide DevOps-proces. Dit staat marketers en ontwikkelaars toe om voor de kromme in het beheerinnovaties van de klantenervaring te blijven.
 
-Cloud Service combineert de rijke mogelijkheden en uitbreidbaarheid van Adobe Experience Manager buiten de box met de flexibiliteit van de moderne cloudnative architectuur die merken in staat stelt aan de voortdurend veranderende consumentenvraag te voldoen.
+Cloud Service combineert de rijke mogelijkheden en uitbreidbaarheid van Adobe Experience Manager buiten de box met de flexibiliteit van de moderne cloud-native architectuur, waardoor merken kunnen voldoen aan de voortdurend veranderende consumentenvraag.
 
-Deze één-pager schetst de geadviseerde gefaseerde benadering van overgangs klanten van diverse plaatsingen van de Experience Manager aan Experience Manager as a Cloud Service en de hulp bestaande klanten leveren verbonden, ononderbroken ervaringen op dit moderne, doelgericht-gebouwde platform voor ervaringsbeheer.
+Deze pagina schetst de gefaseerde benadering die aan overgangs klanten van vorige plaatsingen van de Experience Manager aan Experience Manager as a Cloud Service wordt geadviseerd. Het nieuwe, doelgerichte platform helpt u verbonden, continue ervaringen te bieden.
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -33,7 +33,7 @@ Deze één-pager schetst de geadviseerde gefaseerde benadering van overgangs kla
 
 Zie het onderstaande diagram voor een algemene weergave van de migratiereis.
 
-![afbeelding](/help/journey-migration/assets/migration-process.png)
+![ Algemene vertegenwoordiging van de migratiereis ](/help/journey-migration/assets/migration-process.png)
 
 ## Aan de slag met Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -49,9 +49,9 @@ Zie het onderstaande diagram voor een algemene weergave van de migratiereis.
 
 ### Ontwikkelen
 
-De grondbeginselen van codeontwikkeling zijn in Adobe Experience Manager as a Cloud Service vergelijkbaar met de oplossingen Adobe Experience Manager On Premise en Managed Services.
+De grondbeginselen van codeontwikkeling in Adobe Experience Manager as a Cloud Service zijn vergelijkbaar met die in de oplossingen Adobe Experience Manager On Premise en Managed Services.
 
-Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe Adobe Experience Manager as a Cloud Service-omgevingen.
+Ontwikkelaars schrijven code en testen deze lokaal en drukken deze vervolgens naar externe Adobe Experience Manager as a Cloud Service-omgevingen.
 
 Zie zelf-hulp middelen over implementatie voor Experience Manager as a Cloud Service leren hoe te om uw as a Cloud Service plaatsing van de Experience Manager aan te passen.
 
@@ -64,9 +64,9 @@ Zie zelf-hulp middelen over implementatie voor Experience Manager as a Cloud Ser
 
 ### Implementeren
 
-Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe AEM as a Cloud Service-omgevingen.
+Ontwikkelaars schrijven code en testen deze lokaal en drukken deze vervolgens naar externe AEM as a Cloud Service-omgevingen.
 
-Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit is nu het enige mechanisme voor het implementeren van code in AEM as a Cloud Service-omgevingen.
+Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is nu vereist. Het is het enige mechanisme voor het implementeren van code in AEM as a Cloud Service-omgevingen.
 
 Zie voor zelfhulp bronnen over het configureren en implementeren van AEM as a Cloud Service-omgevingen.
 
@@ -113,18 +113,22 @@ Zie voor zelfhulp bronnen over het configureren en implementeren van AEM as a Cl
 
 Met Experience Manager as a Cloud Service, kunnen uw teams zich op het vernieuwen in plaats van planning voor productverbeteringen concentreren. Nieuwe productfuncties worden grondig getest en zonder onderbreking aan uw teams geleverd, zodat zij altijd toegang hebben tot de geavanceerde toepassing.
 
-De overgang naar Cloud Service bestaat uit drie fasen: Planning, Executie en Post Go-live.
+De overgang naar Cloud Service omvat drie fasen - Planning, Uitvoering, en post Go-live.
 Voor een geslaagde en soepele overgang moet u zorgen voor een goede planning en volgt u de best practices die in deze gids worden beschreven.
 
 In de onderstaande afbeelding ziet u een afbeelding op hoog niveau van de aanbevolen overgang naar Cloud Service.
 
-![afbeelding](/help/journey-migration/assets/home-img1.png)
+![ vertegenwoordiging op hoog niveau van de geadviseerde overgangsreis aan Cloud Service ](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
 ### Planning
 
-Voordat u begint met de overgang naar de Cloud Service, dient u uzelf vertrouwd te maken met de Experience Manager as a Cloud Service en de opmerkelijke wijzigingen te bekijken die erin zijn aangebracht. U dient ook de functies te bekijken die zijn vervangen of vervangen.
+Voordat u begint met de overgang naar de Cloud Service, moet u:
+
+* zich vertrouwd maken met Experience Manager as a Cloud Service
+* bekijk de opmerkelijke wijzigingen die erin zijn aangebracht
+* de vervangen of vervangen functies controleren
 
 <table>
 <tr>
