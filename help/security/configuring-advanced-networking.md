@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
 workflow-type: tm+mt
-source-wordcount: '5676'
+source-wordcount: '5657'
 ht-degree: 0%
 
 ---
@@ -563,9 +563,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
 
 ### Nuttige domeinen voor configuratie {#vpn-useful-domains-for-configuration}
 
-Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks domeinen en bijbehorende IPs die voor configuratie en ontwikkeling nuttig zijn. De lijst verder onder het diagram beschrijft die domeinen en IPs.
-
-![ Configuratie van het Domein van VPN ](/help/security/assets/AdvancedNetworking.jpg)
+De lijst beschrijft hieronder een reeks domeinen en IPs die voor configuratie en ontwikkeling nuttig zijn.
 
 <table>
 <thead>
