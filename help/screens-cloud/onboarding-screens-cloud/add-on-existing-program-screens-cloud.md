@@ -4,9 +4,9 @@ description: Leer hoe u een Screens-invoegtoepassing toevoegt aan een bestaand p
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -33,14 +33,14 @@ Ga als volgt te werk om Screens toe te voegen aan een bestaand programma:
 
 1. Navigeer aan uw project en klik **geef programmaoptie** van de Cloud Manager **pagina van het Overzicht** uit.
 
-   ![afbeelding](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![ geef programma ](/help/screens-cloud/assets/onboarding/add-onexisting1.png) uit
 
    >[!NOTE]
    >De **geeft de pagina van het Programma** uit toont twee lusjes **Algemeen** en **Oplossingen &amp; toe:voegen-ons**.
 
 1. De **Oplossingen &amp; toe:voegen-ons** opties van lusjevertoningen, zoals Plaatsen, Assets, en Screens. Selecteer **toe:voegen-op optie 0} Screens {, zoals aangetoond in het hieronder cijfer.**
 
-   ![afbeelding](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![ Screens toe:voegen-op optie ](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Klik **Update**, zodra u uw opties hebt geselecteerd.
 

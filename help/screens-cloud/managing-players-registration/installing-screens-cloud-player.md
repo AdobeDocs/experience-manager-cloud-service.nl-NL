@@ -4,9 +4,9 @@ description: In deze pagina wordt beschreven hoe u spelers in Screens as a Cloud
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,13 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
 
 1. Klik het **lusje van de Configuratie** en klik **aan de knoop van de Fabriek** onder **het Terugstellen** optie.
 
-   ![afbeelding](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![ aan de knoop van de Fabriek onder de optie van het Terugstellen ](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Klik **bevestigen** om uw speler terug te stellen.
 
 1. Opnieuw van het **lusje van de Configuratie** en klik **Verandering in de knoop van de Wijze van de Wolk** onder **Wissel Runmode** optie.
 
-   ![afbeelding](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![ Verandering in de knoop van de Wijze van de Wolk onder Runmode van de Wisselen optie ](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Klik **bevestigen** dat herinneringen wanneer het schakelen aan wolkenwijze unregisters de speler.
 
