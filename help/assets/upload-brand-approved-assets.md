@@ -3,14 +3,19 @@ title: Upload uw door uw merk goedgekeurde middelen naar  [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
 
 # Door een merk goedgekeurde middelen uploaden naar Content Hub {#upload-brand-approved-assets-content-hub}
+
+>[!CONTEXTUALHELP]
+>id="upload_assets_content_hub"
+>title="Door een merk goedgekeurde middelen uploaden naar Content Hub"
+>abstract="Voeg goedgekeurde middelen toe aan Content Hub via een lokaal bestandssysteem of importeer elementen van OneDrive- of Dropbox-gegevensbronnen. Alle middelen worden op het hoogste niveau in Content Hub weergegeven, ongeacht de mapstructuur, om de zoekmogelijkheden te verbeteren."
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
