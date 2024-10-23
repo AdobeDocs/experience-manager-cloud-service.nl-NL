@@ -1,18 +1,18 @@
 ---
-title: WYSIWYG-inhoud ontwerpen voor Edge Delivery Services
+title: WYSIWYG Content Authoring voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
+source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
 
-# WYSIWYG-inhoud ontwerpen voor Edge Delivery Services {#authoring-edge}
+# WYSIWYG Content Authoring voor Edge Delivery Services {#authoring-edge}
 
 Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U hebt twee opties om inhoud voor Edge Delivery Services te ontwerpen:
 
@@ -23,7 +23,7 @@ Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U hebt twee
 
 Als u Edge Delivery Services gebruikt met AEM as a Cloud Service, is het meest fundamentele feit dat u begrijpt dat de inhoud die u maakt, in AEM as a Cloud Service blijft bestaan.
 
-![ hoe WYSIWYG Authoring met Edge Delivery Services ](assets/how-aem-edge-works.png)
+![ hoe het Authoring van WYSIWYG met Edge Delivery Services ](assets/how-aem-edge-works.png) werkt
 
 1. [ het milieu van AEM Sites ](/help/sites-cloud/authoring/quick-start.md) wordt gebruikt voor inhoudsbeheer zoals het creëren van nieuwe pagina&#39;s, de Fragmenten van de Ervaring, de Fragmenten van de Inhoud, enz.
    * Alle functies van AEM zijn beschikbaar, zoals workflows, MSM, transleren, Starten, enz.
@@ -40,9 +40,9 @@ Als u Edge Delivery Services gebruikt met AEM as a Cloud Service, is het meest f
 
 Blokken zijn basisonderdelen van een pagina die door Edge Delivery Services wordt geleverd. De auteurs kunnen van standaardblokken kiezen die door Adobe worden verstrekt of van blokken die voor uw project door uw ontwikkelaars worden aangepast.
 
-De Universal Editor biedt een moderne en intuïtieve GUI voor het ontwerpen van uw inhoud door blokken te slepen en neer te zetten.
+De Universele Redacteur verstrekt een moderne en intuïtieve GUI voor het ontwerpen van uw inhoud door blokken toe te voegen en te schikken.
 
-![ het slepen-en-droppen blokken in de Universele Redacteur ](assets/blocks.png)
+![ Toevoegend en rangschikkend blokken in de Universele Redacteur ](assets/blocks.png)
 
 De details van de blokken kunnen dan in de spoorstaaf van Eigenschappen worden gevormd.
 
@@ -50,10 +50,10 @@ De details van de blokken kunnen dan in de spoorstaaf van Eigenschappen worden g
 
 Voor details op hoe te om auteur te gebruiken de Universele Redacteur, te zien gelieve het document [ Authoring Inhoud met de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Gelieve te zien de [ Begonnen Gids van de Ontwikkelaar Begonnen voor WYSIWYG Authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om te leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
+Gelieve te zien de [ Begonnen Gids van de Ontwikkelaar Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om te leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
 
 ## Aanvullende ontwerpmethoden  {#authoring-methods}
 
-WYSIWYG-authoring is een krachtig en intuïtief hulpmiddel voor inhoudsauteurs. Nochtans, zijn er vele verschillende auteursgebruiksgevallen, en daarom biedt AEM extra auteursoplossingen aan.
+WYSIWYG-authoring is een krachtig en intuïtief hulpmiddel voor inhoudsauteurs. Nochtans, zijn er vele verschillende auteursgebruiksgevallen, en daarom AEM biedt extra auteursoplossingen aan.
 
 Gelieve te zien het document [ Kiezen een Authoring Methode ](/help/edge/authoring-methods.md) om meer over de auteursoplossingen te leren AEM aanbiedingen met inbegrip van op document-gebaseerde creatie en zonder kop.
