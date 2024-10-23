@@ -4,9 +4,9 @@ description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschill
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,10 @@ Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u het `paths.json` -
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >Dit `paths.json` -item is gebaseerd op het voorbeeld van het maken van omleidingen met behulp van tabelgegevens. Zorg ervoor om de weg aangewezen aan het [ type van spreadsheet bij te werken u creeert.](#other)
 
 1. Klik **Veranderingen vastleggen...** om de veranderingen in `main` te bewaren.
 

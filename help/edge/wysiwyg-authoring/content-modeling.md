@@ -4,9 +4,9 @@ description: Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge D
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -608,20 +608,7 @@ Het is ook mogelijk om aanvullende metagegevens voor pagina&#39;s op twee manier
 
 Het is mogelijk metagegevens per pad of per padpatroonbasis op een tabelachtige manier te definiëren in AEM as a Cloud Service. Er is een ontwerpgebruikersinterface voor tabelachtige gegevens beschikbaar die vergelijkbaar is met Excel- of Google-bladen.
 
-U maakt een dergelijke tabel door een pagina te maken en de sjabloon Metagegevens in de Sites-console te gebruiken.
-
-Definieer in de pagina-eigenschappen van het werkblad de metagegevensvelden die u samen met de URL nodig hebt. Voeg vervolgens metagegevens toe per paginapad of paginapad.
-
-Zorg ervoor dat het werkblad ook aan de padtoewijzing is toegevoegd voordat u het publiceert.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+Voor verdere details, te zien gelieve het document [ Gebruikend Spreadsheets om Gegevens in Tabel te beheren ](/help/edge/wysiwyg-authoring/tabular-data.md) voor meer informatie.
 
 ### Pagina-eigenschappen {#page-properties}
 
@@ -631,7 +618,7 @@ Veel van de standaardpagina-eigenschappen die beschikbaar zijn in AEM, worden to
 * De tijd waarop het document voor het laatst is gepubliceerd als `published-time` in de ISO8601-indeling
 * `cq:tags` als `cq-tags` als een door komma&#39;s gescheiden lijst met de tag-id&#39;s.
 
-Het is ook mogelijk om een componentenmodel voor meta-gegevens van de douanepagina te bepalen, die aan de auteur als lusje van het de paginaeigenschappen van AEM Sites beschikbaar zullen worden gemaakt.
+Het is ook mogelijk om een componentenmodel voor meta-gegevens van de douanepagina te bepalen, die aan de auteur in de Universele Redacteur ter beschikking zullen worden gesteld.
 
 Hiertoe maakt u een componentmodel met de id `page-metadata` .
 
