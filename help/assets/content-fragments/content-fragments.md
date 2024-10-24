@@ -1,20 +1,20 @@
 ---
 title: Werken met inhoudsfragmenten (Assets - Inhoudsfragmenten)
-description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken, ideaal voor het ontwerpen van pagina's en voor het leveren van koploze inhoud. Ook hoe zij samen met MSM kunnen worden gebruikt.
+description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, beheren en gebruiken, ideaal voor het schrijven van pagina's en het leveren zonder kop.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2220'
 ht-degree: 2%
 
 ---
 
 # Werken met inhoudsfragmenten {#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) as a Cloud Service, laten de Fragmenten van de Inhoud u, pagina-onafhankelijke inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) ontwerpen, creëren, leiden en publiceren. [ Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop. Zij kunnen ook samen met [ multi-Plaats Beheer worden gebruikt om u toe te laten om uw inhoud ](#reusing-content-fragments-with-msm) opnieuw te gebruiken.
+Met Adobe Experience Manager (AEM) as a Cloud Service, laten de Fragmenten van de Inhoud u, pagina-onafhankelijke inhoud ontwerpen tot stand brengen, leiden en [ publiceren ](/help/sites-cloud/authoring/fragments/content-fragments.md). Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop. Zij kunnen ook samen met [ multi-Plaats Beheer worden gebruikt om u toe te laten om uw inhoud ](#reusing-content-fragments-with-msm) opnieuw te gebruiken.
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 

@@ -1,20 +1,20 @@
 ---
 title: Een overzicht van het werken met inhoudsfragmenten
-description: Leer hoe u met Content Fragments in AEM as a Cloud Service inhoud kunt maken en gebruiken; ideaal voor levering zonder kop en voor het schrijven van pagina's.
+description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service gestructureerde inhoud kunt maken en gebruiken; ideaal voor levering zonder kop en voor het schrijven van pagina's.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1807'
 ht-degree: 1%
 
 ---
 
 # Een overzicht van het werken met inhoudsfragmenten {#overview-working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) as a Cloud Service, staan de Fragmenten van de Inhoud u toe om te ontwerpen, tot stand te brengen, te leiden, en [ pagina-onafhankelijke inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) te publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties en via meerdere kanalen, ideaal voor levering zonder kop en voor het ontwerpen van pagina&#39;s.
+Met Adobe Experience Manager (AEM) as a Cloud Service kunt u met inhoudsfragmenten paginaonafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Zij staan u toe om inhoud klaar voor gebruik in veelvoudige plaatsen, en over veelvoudige kanalen voor te bereiden, ideaal voor [ hoofdloze levering ](/help/headless/what-is-headless.md), en [ pagina authoring ](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!IMPORTANT]
 >
