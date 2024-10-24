@@ -1,24 +1,24 @@
 ---
 title: Inhoudsfragmenten
-description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u kanaalonafhankelijke inhoud ontwerpen, maken, beheren en gebruiken. Deze inhoud kan ook worden gebruikt bij het ontwerpen van uw pagina's.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
 # Inhoudsfragmenten {#content-fragments}
 
-De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service worden gecreeerd en worden geleid als pagina-onafhankelijke activa ](/help/sites-cloud/administering/content-fragments/overview.md).[
+De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service worden [ gecreeerd en als pagina-onafhankelijke activa ](/help/sites-cloud/administering/content-fragments/overview.md) beheerd, toestaand u om kanaal-neutrale inhoud, samen met (misschien kanaal-specifieke) variaties tot stand te brengen. U kunt deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
-U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
-
-Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM inhoud via Content Services te leveren aan andere kanalen dan AEM pagina&#39;s.
+>[!CAUTION]
+>
+>Deze pagina moet samen met [ worden gelezen het Werken met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) (en verwante pagina&#39;s) aangezien het basisterminologie en concepten, samen met informatie over het creëren van en het leiden van fragmenten introduceert, en het leveren van gestructureerde inhoudsfragmenten aan kanalen buiten AEM pagina&#39;s.
 
 >[!NOTE]
 >
@@ -40,10 +40,6 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
 >Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
-
->[!CAUTION]
->
->Deze pagina moet samen met [ worden gelezen het Werken met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) (en verwante pagina&#39;s) aangezien het basisterminologie en concepten, samen met het creëren en het beheren van fragmenten introduceert.
 
 Met de inhoudsfragmenten kunt u:
 
