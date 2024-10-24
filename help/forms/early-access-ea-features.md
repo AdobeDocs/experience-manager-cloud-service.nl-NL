@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Als u in het aansluiten van bij ons programma van de Vroege Toegang voor om het 
 
 ## Innovaties voor vroege toegang
 
-### AEM Forms Generative AI (Gen AI)
+### AEM Forms AI Assistant (Gen AI)
 
 Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. Met behulp van intelligente AI-functies kunt u sneller dan ooit betere formulieren maken.
 
-![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-De beschikbare Generative AI-mogelijkheden zijn:
+De generatieve AI-mogelijkheden die via AEM Forms AI Assistant worden aangeboden, zijn:
 
 * **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw AEM vorm-verwante vragen. Onze AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
 
@@ -76,7 +76,7 @@ Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaa
 
 ### WYSIWYG Authoring voor Edge Delivery Services
 
-WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. WYSIWYG Authoring biedt alle mogelijkheden van [ op document-gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
+WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren voor Edge Delivery Services. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
@@ -85,7 +85,7 @@ WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms E
 * Integratie met Adobe Sign voor elektronische handtekeningen.
 * Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
 * Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
-* Mogelijkheid om te kiezen uit meerdere verzendacties voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
+* Mogelijkheid om te kiezen uit meerdere verzendacties voor het verwerken van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
 
 
 ### AEM Forms naar Marketo Connector
@@ -135,12 +135,12 @@ Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om 
 
 Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-### Doc Assurance-API&#39;s
+### Doc Assurance API&#39;s
 
 
-AEM Forms Doc Assurance API&#39;s zijn een set gereedschappen in de communicatie-API&#39;s voor AEM Forms Cloud Service waarmee u de beveiliging en gebruikersinteractie van uw PDF-documenten kunt beheren.
+AEM Forms Doc Assurance APIs is een reeks hulpmiddelen binnen de Communicatie APIs van de Cloud Service van AEM Forms die u toestaan om de veiligheid en gebruikersinteractie van uw PDF documenten te beheren.
 
-Hier volgt een overzicht van wat Doc Assurance API&#39;s kunnen doen:
+Hier is een uitsplitsing van wat Doc Assurance APIs kan doen:
 
 * **codeer en decrypteer documenten**: Protect uw documenten door hun inhoud met encryptie onleesbaar te maken. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
 
@@ -152,7 +152,7 @@ Hier volgt een overzicht van wat Doc Assurance API&#39;s kunnen doen:
 
   Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
 
-Globaal, [ de Verzekering APIs van Doc ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
+Algemeen, [ Doc Assurance APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
 
 
 ### Forms Service-API&#39;s
