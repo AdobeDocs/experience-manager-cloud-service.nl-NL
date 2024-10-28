@@ -2,7 +2,7 @@
 title: Assets goedkeuren voor Content Hub
 description: Leer hoe u middelen in Assets as a Cloud Service goedkeurt om ze beschikbaar te maken in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Voordat u begint, moet u beschikken over:
 
 * Schrijf toestemmingen om activa meta-gegevens uit te geven om het **[!UICONTROL Status]** gebied beschikbaar in [ activa eigenschappen ](/help/assets/manage-organize-assets-view.md##manage-asset-status) voor een activa uit te geven.
 
-## Assets goedkeuren voor Content Hub {#approve-assets-for-content-hub}
+## Assets goedkeuren voor Content Hub{#approve-assets-for-content-hub}
 
 De elementen die zijn gemarkeerd als `approved` in Assets as a Cloud Service, zijn automatisch beschikbaar in Content Hub.
 

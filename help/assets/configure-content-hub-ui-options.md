@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ Als beheerder, beheer de volgende configuratieopties voor uw gebruikers:
 * [Filters](#configure-filters-content-hub)
 
 * [Gegevens van element](#configure-asset-details-content-hub)
+* [Asset Card](#asset-card)
 
 * [Zoeken](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ De eigenschappen die op de vertoning van het Gebruikersinterface van de Configur
 
 ![ eigenschappen van Activa op Content Hub ](assets/config-ui-asset-properties.png)
 
+### Asset Card {#asset-card}
+
+In Content Hub UI, toont de activa-vlakke mening de **Kaart van Activa** van goedgekeurde activa. Op de Asset Card worden de belangrijkste gegevens van de middelen voor de gebruikers weergegeven. De elementenkaart bevat een miniatuur, metagegevens van elementen en andere opties die u kunt activeren. De Content Hub-beheerders voegen de metagegevensvelden op het niveau van de gegevensopslagruimte toe om de naam van de metagegevens en de bijbehorende metagegevenswaarde in de Asset Card van alle elementen tegelijk weer te geven. De Asset Card accepteert zes metagegevensvelden. Het metagegevensveld bevat de naam van de metagegevens en de eigenschap metadata. Met Asset Card worden de metagegevens en de bijbehorende metagegevenswaarde weergegeven. Beheerder geeft de naam van de metagegevens op en wijst deze toe aan de juiste eigenschap metadata. De eigenschap metadata geeft een metagegevenswaarde weer in de Asset Card. De eigenschap metadata is gekoppeld aan de eigenschappen van het element en daarom varieert de waarde voor de weergegeven metagegevens voor alle Asset Cards. Bijvoorbeeld, voegen de beheerders een meta-gegevens toe, **Vergunning gegeven** in de Kaart van Activa en in kaart brengen deze **Vergunning gegeven** meta-gegevens aan het correcte meta-gegevensbezit. De kaarten van Activa op Content Hub UI tonen dit **meta-gegevens met licentie** en zijn meta-gegevenswaarde (**ja** of **Nr**). In dit voorbeeld, Assets die een vergunningsvertoningen hebben **ja** in de Kaart van Activa terwijl de activa zonder vergunningsvertoningen **NEEN**.
+
+![ eigenschappen van Activa op Content Hub ](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Metagegevens toevoegen, bewerken of verwijderen onder Asset Card {#add-edit-delete-metadata}
+
+Zie de onderstaande instructies voor het toevoegen van metagegevens aan een element:
+
+1. Op het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **Kaart van Activa**.
+2. Klik **toevoegen meta-gegevens**. **voegt de meta-gegevens van de activakaart** vertoningen van de dialoogdoos toe.
+3. Specificeer de meta-gegevensnaam op het **gebied van het Etiket** en selecteer een meta-gegevensbezit op het **Meta-gegevens** gebied. Bijvoorbeeld, noem de meta-gegevens **toegelaten** en selecteer **dc:vergunning** als meta-gegevensbezit. De geselecteerde eigenschap metadata wordt toegewezen aan een waarde die wordt weergegeven met de metagegevens in de gebruikersinterface van Content Hub. In dit voorbeeld, wordt **dc:vergunning** bezit in kaart gebracht aan identiteitskaart van de Vergunning. Dit bezit volgt de gespecificeerde activa (de vergunning van PDF) weg om van het overeenkomstige activa de plaats te bepalen en geeft dienovereenkomstig een booleaanse waarde (**ja** of **Nr**) in UI terug die op de aanwezigheid van activa wordt gebaseerd. Als de PDF van de vergunning wordt gevonden, toont het **ja**. Als niet, toont het **Nr**. Daarom in Content Hub UI, de activa met een identiteitskaart van de Vergunning **ja** toont, terwijl de activa zonder de vertoning van identiteitskaart van de Vergunning **Nr**.
+4. Klik **bevestigen** en dan **sparen** om de veranderingen toe te passen zodat de nieuwe bezitsvertoning op de pagina van activadetails.
+   ![ activakaart ](/help/assets/assets/asset-card.png)
+
+Op dezelfde manier geeft de klik ![ ](/help/assets/assets/edit-content-hub.svg) uit die naast elk beschikbaar bezit beschikbaar is, om het even welke vereiste wijzigingen te maken of ![ schrapping ](/help/assets/assets/delete-content-hub.svg) te klikken om het even welk bestaand meta-gegevensbezit te schrappen. Klik **sparen** na het aanbrengen van alle wijzigingen om de veranderingen toe te passen.
+
+
 ### Zoeken {#configure-metadata-search-content-hub}
 
 Beheerders kunnen de metagegevensvelden definiëren die worden doorzocht wanneer een gebruiker een zoekcriterium opgeeft op Content Hub. Voer de volgende stappen uit:
@@ -174,7 +194,7 @@ De brandingsupdates die op de vertoning van het Gebruikersinterface van de Confi
 
 ![ het brandmerken van de Configuratie UI op Content Hub ](assets/configuration-ui-branding-updates.png)
 
-### Verlopen activa {#expired-assets-content-hub}
+### Verlopen activa{#expired-assets-content-hub}
 
 Beheerders kunnen bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
 
@@ -198,7 +218,7 @@ Nadat u de zichtbaarheid van elementen hebt ingeschakeld, kunt u de verlopen ele
 
 Als de beheerder downloaden heeft ingeschakeld, kunnen de Content Hub-gebruikers deze ook downloaden, zoals in de afbeelding is aangegeven.
 
-Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hub ook elementen die binnen de komende 15 dagen verlopen met behulp van het `Expiring in n days` -bericht op de elementenkaart.
+Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hub ook elementen die binnen de komende 15 dagen verlopen met behulp van het `Expiring in n days` -bericht op de Asset Card.
 
 
 ### Aangepaste koppelingen {#configure-custom-links-content-hub}
