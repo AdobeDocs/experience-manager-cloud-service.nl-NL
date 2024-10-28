@@ -2,9 +2,9 @@
 title: Groepsmigratie
 description: Overzicht van groepsmigratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Merk op dat de weg die voor een groep wordt geregistreerd/wordt gemeld slechts d
 
 De meeste gemigreerde groepen zijn geconfigureerd om te worden beheerd door IMS.  Dit betekent dat een groep in IMS met dezelfde naam wordt gekoppeld aan de groep in AEM en dat alle IMS-gebruikers in de IMS-groep AEM gebruikers en leden van de groep in AEM worden.  Dit staat die gebruikers toe om toegang tot de inhoud volgens ACLs of beleid CUGs voor de groep te hebben.
 
+Merk op dat de gemigreerde groepen niet meer als &quot;lokale groepen&quot;worden beschouwd; zij zijn groepen IMS, en zij moeten in IMS opnieuw worden gecreeerd zodat zij tussen AEM en IMS kunnen worden gesynchroniseerd.  Groepen kunnen in IMS worden gemaakt via Admin Console, onder andere, afzonderlijk of in bulk.  Zie [ gebruikersgroepen ](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) voor details over het creëren van groepen individueel of in bulk op de Admin Console leiden.
+
 De uitzondering op deze IMS-configuratie geldt voor groepen die zijn gemaakt met Assets Collections. Wanneer een inzameling op AEM wordt gecreeerd, worden de groepen gecreeerd voor toegang tot die inzameling; dergelijke groepen worden gemigreerd naar het wolkensysteem, maar zij worden niet gevormd om door IMS te worden beheerd.  Als u IMS-gebruikers aan deze groepen wilt toevoegen, moeten ze op de pagina Groepseigenschappen in de Assets-gebruikersinterface worden toegevoegd, afzonderlijk of gezamenlijk als onderdeel van een andere IMS-groep.
 
 
@@ -53,7 +55,7 @@ De uitzondering op deze IMS-configuratie geldt voor groepen die zijn gemaakt met
 
 CTT versie 3.0.20 en hoger bevat een optie om de migratie van groepen uit te schakelen.  Dit wordt gevormd in de console OSGI als volgt:
 
-* De configuratie van OSGI openen `(http://<server> /system/console/configMgr)`
+* De configuratie van OSGI openen `(http://<server>/system/console/configMgr)`
 * Klik op de configuratie genoemd {de Configuratie van de Dienst van de Uitwinning van het Hulpmiddel van de Overdracht van 0} Inhoud ****
 * Uncheck **omvat Groepen in migratie** om groepsmigraties onbruikbaar te maken
 * Klik **sparen** om de configuratie te verzekeren wordt bewaard en op de server actief
@@ -73,7 +75,9 @@ Naast de groepen voor elke gebruiker, is er een gebied in het rapport waar de no
 
 Deze gevallen kunnen tegelijkertijd en ook op hetzelfde moment als de eerdere gevallen plaatsvinden.
 
-Het Rapport van de Gebruiker wordt toegevoegd aan het eind van (en is daarom deel van) het Belangrijkste Rapport van de Migratie (zie [ Definitief Samenvatting en Rapport ](#final-summary-and-report) hieronder).
+Het Rapport van de Gebruiker wordt toegevoegd aan het eind van (en is daarom deel van) het Belangrijkste Rapport van de Migratie (zie [ Definitief Samenvatting en Rapport ](#final-summary-and-report) hieronder).  De informatie in dit rapport, met inbegrip van de groepen die voor elke gebruiker worden gemeld, kan worden gebruikt om een bulkgebruiker te creëren uploadt dossier dat in Admin Console kan worden gebruikt om vele gebruikers in IMS in bulk tot stand te brengen.  Bestaande IMS-gebruikers kunnen ook bulksgewijs worden bewerkt.
+
+Zie [ Meerdere gebruikers beheren | Bulk CSV upload ](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) voor details over het creëren van of het uitgeven van gebruikers in bulk via de Admin Console.
 
 ## Aanvullende overwegingen {#additional-considerations}
 
