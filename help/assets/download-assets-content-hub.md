@@ -3,9 +3,9 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -22,20 +22,12 @@ Met de Content Hub kunt u uw middelen downloaden en delen. Deze elementen kunnen
 
 Met de Content Hub kunt u een of meerdere middelen downloaden. De oorspronkelijke versies van het element worden gedownload.
 
-## Vereisten {#prerequisites}
-
-[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen de acties uitvoeren die in dit artikel worden vermeld.
-
-## Middelen downloaden {#download-single-asset}
-
-[ keur de vergunning van activa ](/help/assets/approve-assets-content-hub.md) goed alvorens hen te downloaden.
-
-### Eén download {#single-download-asset}
+## Eén gelicentieerd bedrijfsmiddel downloaden {#single-download-asset}
 
 Selecteer een activa en klik ![ download ](/help/assets/assets/download-icon.svg) van het hoogste spoor. In het dialoogvenster Elementen downloaden wordt de licentie van het element weergegeven. Accepteer de verlenen van vergunningen voorwaarden en klik **Download**.
 Alternatief, klik ![ download ](/help/assets/assets/download-icon.svg) in de activakaart om de activa te downloaden.
 
-#### Eén elementdownload van het dialoogvenster Element {#single-download-from-asset-dialog-box}
+### Eén gelicentieerd element downloaden uit het dialoogvenster Element {#single-download-from-asset-dialog-box}
 
 1. Klik op de elementminiatuur. Het dialoogvenster Middelen wordt weergegeven.
 1. Klik ![ download ](/help/assets/assets/download-icon.svg) van de meest rechtse toolbar. In het downloadvenster worden de elementuitvoeringen en het selectievakje voor het accepteren van licentievoorwaarden en -voorwaarden weergegeven.
@@ -49,7 +41,7 @@ Alternatief, klik ![ download ](/help/assets/assets/download-icon.svg) in de act
    * Klik de **Oorspronkelijke Doos van de Vertoning** om op de originele activavertoning in de linkerruit terug te keren.
 1. Accepteer de vergunningsvoorwaarden (voor vergunning gegeven activa) en klik **Download** om de activa te downloaden.
 
-### Multi-download {#multi-download}
+## Download Multiple Licence Assets{#multi-download}
 
 1. Selecteer de activa en klik ![ download ](/help/assets/assets/download-icon.svg) van het hoogste spoor. Het dialoogvenster dat wordt weergegeven, is afhankelijk van het feit of de downloadlijst verlopen elementen of alleen niet-verlopen elementen bevat. <br/>
    **Download verlopen de dialoogdoos van activa:** Dit dialoogvakje toont de verlopen voorproef van activa samen met hun vervaldatum in de linkerruit. Het aantal verlopen elementen in het rechterdeelvenster dat in totaal is geselecteerd, wordt uitgedrukt als een waarde die lager is dan het aantal geselecteerde elementen. Klik **met alle activa** te werk gaan om verlopen activa met andere activa (als heden) te downloaden. Het dialoogvenster Download Assets wordt weergegeven. Zie de [ doos van de de activadialoog van de Download ](#Download-asset-dialog-box) om verder te werk te gaan.
@@ -62,14 +54,14 @@ Alternatief, klik ![ download ](/help/assets/assets/download-icon.svg) in de act
 
    >[!NOTE]
    >
-   > Het **de dialoogvakje van Activa van de Download** previews verlenen van vergunningen voorwaarden slechts voor goedgekeurde vergunningen. [ keur de vergunningen van activa ](/help/assets/approve-assets-content-hub.md) goed alvorens hen te downloaden om hun het verlenen van vergunningen te bekijken termijnen in de **de dialoogdoos van Activa van de Download**.
+   > Het **de dialoogvakje van Activa van de Download** previews verlenen van vergunningen voorwaarden slechts voor goedgekeurde vergunningen. [](/help/assets/approve-assets-content-hub.md)****
 
 1. Klik ![ verwijderen-pictogram ](/help/assets/assets/remove-icon.svg) om een vergunning uit de doos van de downloaddialoog te verwijderen.
 
 1. Accepteer de termijnen en de voorwaarden en klik dan **Download** om activa te downloaden verbonden aan de beschikbare vergunningen in de linkerruit.
    ![ download-veelvoudige-vergunning ](/help/assets/assets/download-multiple-license.png)
 
-### Niet-gelicentieerde middelen downloaden {#download-non-licensed-assets}
+### Assets zonder licentie downloaden {#download-non-licensed-assets}
 
 Om niet-vergunning gegeven activa te downloaden, selecteer de activa en klik ![ download ](/help/assets/assets/download-icon.svg) van hoogste spoor.
 
