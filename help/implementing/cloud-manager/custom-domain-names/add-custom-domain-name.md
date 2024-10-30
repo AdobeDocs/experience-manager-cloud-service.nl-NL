@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
+source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,8 @@ Neem bij het invoeren van de domeinnaam geen `http://` , `https://` of spaties o
 
    >[!NOTE]
    >
-   >Als u een klant beheerde (OV/EV) SSL certificaat en een klant beheerde leverancier CDN gebruikt, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+   >Als u uw eigen klant beheerde (OV/EV of DV) SSL certificaat gebruikt, en van plan bent om een klant beheerde CDN ***leverancier te gebruiken***, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+
 
 ### Door Adobe beheerde certificaatstappen {#adobe-managed-cert-steps}
 
