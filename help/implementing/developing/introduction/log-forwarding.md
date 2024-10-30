@@ -1,25 +1,25 @@
 ---
 title: Log Forwarding for AEM as a Cloud Service
-description: Leer over het door:sturen van logboeken aan Splunk en andere registrerenverkopers in AEM as a Cloud Service
+description: Meer informatie over het doorsturen van logbestanden naar Splunk en andere leveranciers van logbestanden in AEM als cloudservice
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 0%
 
 ---
 
-# Log doorsturen {#log-forwarding}
+# Logboek doorsturen {#log-forwarding}
 
 >[!NOTE]
 >
->Deze eigenschap wordt nog niet vrijgegeven, en sommige registrerenbestemmingen kunnen niet op het tijdstip van versie beschikbaar zijn. Ondertussen, kunt u een steunkaartje openen om logboeken aan **Splunk** door:sturen, zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) wordt beschreven.
+>Deze functie is nog niet beschikbaar en sommige logboekbestemmingen zijn mogelijk niet beschikbaar op het moment van de release. Ondertussen, kunt u een steunkaartje openen om logboeken aan **Splunk** door:sturen, zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) wordt beschreven.
 
 Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM logboeken (met inbegrip van Apache/Dispatcher) en CDN- logboeken hebben die aan de bijbehorende registrerenbestemmingen door:sturen. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
-* Azure Blob Storage
+* Azure Blob-opslag
 * DataDog
 * Elasticsearch of OpenSearch
 * HTTPS
@@ -34,11 +34,11 @@ Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbes
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
-Dit artikel is als volgt geordend:
+Dit artikel is als volgt georganiseerd:
 
-* Opstelling - gemeenschappelijk voor alle registrerenbestemmingen
-* Logboekdoelconfiguraties - elke bestemming heeft een lichtjes verschillende indeling
-* Indelingen voor logberichten - informatie over de indelingen van logberichten
+* Setup - algemeen voor alle logboekbestemmingen
+* Logboekdoelconfiguraties - elke bestemming heeft een iets andere indeling
+* Opmaak voor logberichten - informatie over de indelingen voor logbestandvermeldingen
 * Geavanceerde netwerken - het verzenden van AEM en Apache/Dispatcher logboeken door een specifiek uitgang of door VPN
 * Het migreren van erfenislogboek door:sturen - hoe te zich van logboek door:sturen eerder opstelling door Adobe aan de zelf-serverbenadering te bewegen
 
@@ -63,7 +63,7 @@ Dit artikel is als volgt geordend:
 
 1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die in [ wordt beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
-1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in Cloud Manager, zoals die door [ wordt van verwijzingen voorzien deze sectie ](/help/operations/config-pipeline.md#creating-and-managing); merk op dat de Volledige pijpleidingen van de Stapel en de pijpleidingen van de Rij van het Web niet het configuratiedossier opstellen.
+1. Voor milieutypes buiten RDE (die het hulpmiddel van de bevellijn gebruikt), creeer een gerichte plaatsing config pijpleiding in Cloud Manager, zoals die door [ wordt van verwijzingen voorzien deze sectie ](/help/operations/config-pipeline.md#creating-and-managing); merk op dat de Volledige pijpleidingen van de Stapel en de pijpleidingen van de Rij van het Web niet het configuratiedossier opstellen.
 
 1. Implementeer de configuratie.
 
@@ -111,7 +111,7 @@ Een ander scenario moet of het door:sturen van de logboeken onbruikbaar maken CD
 
 De configuraties voor de gesteunde registrerenbestemmingen worden hieronder vermeld, samen met om het even welke specifieke overwegingen.
 
-### Azure Blob Storage {#azureblob}
+### Azure Blob-opslag {#azureblob}
 
 ```
 kind: "LogForwarding"
@@ -141,9 +141,9 @@ Hier is een schermafbeelding van een voorbeeld van een SAS-tokenconfiguratie:
 
 #### Azure Blob Storage CDN-logs {#azureblob-cdn}
 
-Elke globaal gedistribueerde logbestandsserver produceert elke paar seconden een nieuw bestand onder de map `aemcdn` . Nadat het bestand is gemaakt, wordt het niet meer toegevoegd aan het bestand. Het filename formaat is JJJ-MM-DDThh :mm: ss.sss-uniqueid.log. Bijvoorbeeld, 2024-03-04T10 :00: 00.000-WnFWYN9BpOUs2aOVn4ee.log.
+Elke globaal gedistribueerde logboekserver produceert om de paar seconden een nieuw bestand onder de map `aemcdn` . Nadat het bestand is gemaakt, wordt het niet meer toegevoegd aan het bestand. Het filename formaat is YYYY-MM-DDThh :mm: ss.sss-uniqueid.log. Bijvoorbeeld, 2024-03-04T10 :00: 00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
-Zo kunt u op een bepaald tijdstip bijvoorbeeld:
+Zo kunt u op een bepaald moment:
 
 ```
 aemcdn/
@@ -201,7 +201,7 @@ data:
 
 Overwegingen:
 
-* Maak een API-sleutel zonder integratie met een specifieke cloud provider.
+* Maak een API-sleutel zonder integratie met een specifieke cloudprovider.
 * de eigenschap tags is optioneel
 * Voor AEM logs wordt de gegevenshondenbrontag ingesteld op `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
 * Voor CDN-logs wordt de gegevenshondenbrontag ingesteld op `aemcdn`
@@ -233,7 +233,7 @@ Overwegingen:
 ![ Elastische plaatsingsgeloofsbrieven ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
 * Voor AEM logs wordt `index` ingesteld op een van `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
-* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
+* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier volgt een voorbeeldscriptfragment om logitems naar een index te leiden, zoals aemaccess_dev_26_06_2024:
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -388,9 +388,9 @@ Klanten die op die manier door Adobe waren opgezet, zijn welkom om zich aan het 
 * De Adobe had opstelling uw logboek door:sturen alvorens de logboeken CDN beschikbaar waren en u zou CDN logboeken willen ontvangen.
 * Een bewust besluit om zich proactief aan het zelf-servermodel aan te passen zodat heeft uw organisatie de kennis zelfs alvorens een tijdgevoelige verandering noodzakelijk is.
 
-Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de Cloud Manager config pijpleiding om aan elk van de milieu&#39;s op te stellen waar de configuratie zou moeten worden toegepast.
+Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de configuratiepijplijn van Cloud Manager om te implementeren naar elk van de omgevingen waar de configuratie moet worden toegepast.
 
-Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelf-servercontrole zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-servermanier zijn gevormd.
+Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelfbediening controle zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-server manier zijn gevormd.
 
 >[!NOTE]
 >

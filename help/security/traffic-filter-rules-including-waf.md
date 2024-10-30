@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cf9e1b3c290d142095912c794de58547913faece
+source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4019'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De meeste van deze verkeersfilterregels zijn beschikbaar aan alle klanten van AE
 
 Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) die later in dit artikel worden beschreven.
 
-De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
+De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Het configuratiedossier kan aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijntooling.
 
 [ volg door een leerprogramma ](#tutorial) om concrete deskundigheid op deze eigenschap snel te bouwen.
 
@@ -67,7 +67,7 @@ Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de 
 
 ## Voorgesteld proces {#suggested-process}
 
-Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor het komen met de juiste regels van de verkeersfilter:
+Het volgende is een geadviseerd begin-aan-eind proces op hoog niveau voor het komen met de juiste regels van de verkeersfilter:
 
 1. Vorm niet-productie en productie config pijpleidingen, zoals die in de [ sectie van de Opstelling ](#setup) worden beschreven.
 1. Klanten die een licentie voor de subcategorie van WAF-verkeersfilterregels hebben, moeten deze in Cloud Manager inschakelen.
@@ -75,7 +75,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 1. Kopieer de aanbevolen startregels naar `cdn.yaml` en implementeer de configuratie in de logmodus in de productieomgeving.
 1. Na het verzamelen van wat verkeer, analyseer de resultaten gebruikend [ dashboard tooling ](#dashboard-tooling) om te zien of waren er om het even welke gelijken. Lookout voor valse positieven, en maak om het even welke noodzakelijke aanpassingen, uiteindelijk toelatend de starterregels op blokwijze.
 1. Voeg douaneregels toe die op analyse van de logboeken CDN worden gebaseerd, eerst het testen met gesimuleerd verkeer op ontwikkelmilieu&#39;s alvorens aan stadium en productiemilieu&#39;s op logboekwijze, dan blokwijze op te stellen.
-1. Het verkeer van de controle voortdurend, veranderend de regels aangezien het bedreigingslandschap evolueert.
+1. Het verkeer van de monitor op een voortdurende basis, veranderend de regels aangezien het bedreigingslandschap evolueert.
 
 ## Instellen {#setup}
 
@@ -103,7 +103,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
    Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou aan *CDN* moeten worden geplaatst en de versie zou aan `1` moeten worden geplaatst.
 
 
-1. Als WAF-regels een licentie hebben, moet u de functie in Cloud Manager inschakelen, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
+1. Als WAF-regels zijn gelicentieerd, moet u de functie inschakelen in Cloud Manager, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
 
    1. Om WAF op een nieuw programma te vormen, controleer **WAF-DDOS Beveiliging** controle-doos op het **3} lusje van de Veiligheid {wanneer u [ een productieprogramma toevoegt.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)**
 
@@ -227,13 +227,13 @@ De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt
 
 | **Naam** | **Toegestane Eigenschappen** | **Betekenis** |
 |---|---|---|
-| **toestaan** | `wafFlags` (optioneel), `alert` (optioneel) | als wafFlags niet aanwezig is, houdt verdere regelverwerking tegen en gaat aan het dienen van reactie te werk. Als wafFlags aanwezig is, maakt het gespecificeerde bescherming van WAF onbruikbaar en gaat aan verdere regelverwerking te werk. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
+| **toestaan** | `wafFlags` (optioneel), `alert` (optioneel) | als wafFlags niet aanwezig is, stopt u de verdere regelverwerking en gaat u verder met reageren. Als wafFlags aanwezig is, schakelt het gespecificeerde bescherming van WAF uit en gaat naar verdere regelverwerking. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
 | **blok** | `status, wafFlags` (optioneel en wederzijds exclusief), `alert` (optioneel) | als wafFlags niet aanwezig is, retourneert de HTTP-fout waarbij alle andere eigenschappen worden overgeslagen, wordt de foutcode gedefinieerd door de status-eigenschap of is de standaardwaarde 406. Als wafFlags aanwezig is, laat het gespecificeerde bescherming van WAF toe en gaat aan verdere regelverwerking te werk. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
 | **logboek** | `wafFlags` (optioneel), `alert` (optioneel) | registreert het feit dat de regel werd teweeggebracht, anders beïnvloedt niet de verwerking. wafFlags heeft geen effect. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
 
 ### Lijst met WAF-markeringen {#waf-flags-list}
 
-De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels voor verkeersfilters, kan naar het volgende verwijzen:
+De eigenschap `wafFlags`, die kan worden gebruikt in de regels voor het licentiebare WAF-verkeersfilter, kan naar het volgende verwijzen:
 
 | **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
 |---|---|---|
@@ -241,8 +241,8 @@ De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels
 | BACKEUR | Achterkant | Een achterdeursignaal is een verzoek dat probeert te bepalen als een gemeenschappelijk achterdeurdossier op het systeem aanwezig is. |
 | CMDEXE | Opdracht uitvoeren | De Uitvoering van het bevel is de poging om controle te verkrijgen of een doelsysteem door willekeurige systeembevelen door middel van gebruikersinput te beschadigen. |
 | CMDEXE-NO-BIN | Opdracht uitvoeren, behalve op `/bin/` | Zorg voor hetzelfde beschermingsniveau als `CMDEXE` en schakel false-positive in `/bin` uit vanwege AEM architectuur. |
-| XSS | Scripts voor meerdere sites | Met scripts die verwijzen naar andere sites wordt geprobeerd een gebruikersaccount of een webbrowsersessie te kapen via kwaadaardige JavaScript-code. |
-| TRAVERSAL | Directorytraversal | Directorytraversal is de poging om bevoorrechte omslagen door een systeem in hoop te navigeren om gevoelige informatie te verkrijgen. |
+| XSS | Scripts voor meerdere sites | Met scripts die verwijzen naar andere sites wordt geprobeerd om een gebruikersaccount of een webbladersessie te kapen via kwaadaardige JavaScript-code. |
+| TRAVERSEEL | Directorytraversal | Directorytraversal is de poging om bevoorrechte omslagen door een systeem in hoop te navigeren om gevoelige informatie te verkrijgen. |
 | GEBRUIKER | Gereedschap Bijsluiten | De Tooling van de aanval is het gebruik van geautomatiseerde software om veiligheidskwetsbaarheid te identificeren of te proberen om een ontdekte kwetsbaarheid te exploiteren. |
 | LOG4J-JNDI | Log4J JNDI | De aanvallen van Log4J JNDI proberen om de [ kwetsbaarheid Log4Shell ](https://en.wikipedia.org/wiki/Log4Shell) huidig in versies Log4J vroeger dan 2.16.0 te exploiteren |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
@@ -251,16 +251,16 @@ De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels
 | DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
 | NOTUTF8 | Ongeldige codering | Ongeldige codering kan ertoe leiden dat de server schadelijke tekens van een verzoek in een reactie omzet, wat of een ontkenning van de dienst of XSS veroorzaakt |
 | JSON-ERROR | JSON-coderingsfout | Een POST, PUT, of PATCH- verzoeklichaam dat als bevattende JSON binnen de &quot;Content-Type&quot;verzoekkopbal wordt gespecificeerd maar JSON het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
-| MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
+| MALFORMED-DATA | Onjuiste gegevens in de aanvraagtekst | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Als bijvoorbeeld een aanvraagheader &quot;Content-Type: application/x-www-form-urlencoded&quot; is opgegeven en deze de hoofdtekst van een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
 | SANS | Verkeer van kwaadwillige IP | [ SANS Internet Storm Center ](https://isc.sans.edu/) lijst van gemelde IP adressen die in kwaadwillige activiteit betrokken waren. |
-| NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
+| NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag zonder de aanvraagheader &quot;Content-Type&quot;. Toepassingsservers moeten in dit geval uitgaan van &quot;Content-Type: text/plain; charset=us-ascii&quot;. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het inhoudssoort. |
 | NOUA | Geen gebruikersagent | Geeft aan dat een aanvraag geen header &quot;User-Agent&quot; bevat of dat de headerwaarde niet is ingesteld. |
 | TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
 | NULLBYTE | Null Byte | Null-bytes worden normaal gesproken niet weergegeven in een verzoek en geven aan dat het verzoek onjuist is geformuleerd en mogelijk kwaadaardig is. |
 | PRIVATEFIEL | Persoonlijke bestanden | Persoonlijke bestanden zijn vertrouwelijk, zoals een Apache `.htaccess` -bestand of een configuratiebestand dat vertrouwelijke informatie kan lekken |
 | SCANNER | Scanner | Identificeert populaire scanservices en -gereedschappen |
 | RESPONSESPLIT | HTTP-antwoordsplitsing | Identificeert wanneer CRLF-tekens als invoer naar de toepassing worden verzonden om headers in de HTTP-reactie te injecteren |
-| XML-ERROR | XML-coderingsfout | Een POST, PUT, of PATCH aanvraaglichaam dat als bevattende XML binnen de &quot;Inhoud-Type&quot;verzoekkopbal wordt gespecificeerd maar XML het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
+| XML-ERROR | XML-coderingsfout | Een POST, PUT of PATCH-aanvraaghoofdtekst die is opgegeven als een XML-bestand met de aanvraagheader &quot;Content-Type&quot;, maar die XML-parseringsfouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
 | DATACENTER | Datacenter | Identificeert de aanvraag als afkomstig van een bekende hostingprovider. Dit type van verkeer wordt niet algemeen geassocieerd met een echt eind - gebruiker. |
 
 
@@ -411,9 +411,9 @@ Soms is het wenselijk om verkeer te blokkeren als het een bepaald tarief van ink
 
 Regels voor tarieflimieten kunnen niet verwijzen naar WAF-vlaggen. Ze zijn beschikbaar voor alle klanten van Sites en Forms.
 
-Snelheidslimieten worden berekend per CDN POP. Als voorbeeld, veronderstel dat POPs in Montreal, Miami, en Dublin verkeerstarieven van 80, 90, respectievelijk 120 verzoeken per seconde ervaren. En de tarieflimietregel is ingesteld op een limiet van 100. In dat geval zou alleen het verkeer naar Dublin beperkt zijn.
+De tarieflimieten worden berekend per CDN POP. Stel bijvoorbeeld dat POP&#39;s in Montreal, Miami en Dublin te maken hebben met een dataverkeer van respectievelijk 80, 90 en 120 verzoeken per seconde. En de tarieflimietregel is ingesteld op een limiet van 100. In dat geval zou alleen het verkeer naar Dublin beperkt zijn.
 
-De grenzen van het tarief worden geëvalueerd gebaseerd op of verkeer dat de rand raakt, verkeer dat de oorsprong raakt, of het aantal fouten.
+De snelheidsgrenzen worden geëvalueerd gebaseerd op of verkeer dat de rand raakt, verkeer dat de oorsprong raakt, of het aantal fouten.
 
 ### rateLimit-structuur {#ratelimit-structure}
 
@@ -429,7 +429,7 @@ De grenzen van het tarief worden geëvalueerd gebaseerd op of verkeer dat de ran
 
 **Voorbeeld 1**
 
-Deze regel blokkeert een cliënt voor 5 milliseconden wanneer het een gemiddelde van 60 req/sec (per KNP CDN) in de laatste 10 sec overschrijdt:
+Deze regel blokkeert een cliënt voor 5 milliseconden wanneer het een gemiddelde van 60 req/sec (per POP CDN) in de laatste 10 sec overschrijdt:
 
 ```
 kind: "CDN"
@@ -733,9 +733,9 @@ data:
 
 Er zijn twee zelfstudies beschikbaar.
 
-### Websites beschermen met verkeersfilterregels (inclusief WAF-regels) {#tutorial-protecting-websites}
+### Beveiliging van websites met regels voor verkeersfilters (inclusief WAF-regels) {#tutorial-protecting-websites}
 
-[ het Werk door een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om algemene, praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van WAF te bereiken.
+[ Werk door een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om algemene, praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van de WAF te bereiken.
 
 De zelfstudie begeleidt u door:
 

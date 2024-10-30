@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,11 @@ Voer de volgende stappen uit, zodat u Cloud Manager kunt gebruiken om een RDE vo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Klik het programma waaraan u RDE wilt toevoegen om zijn details te tonen.
+1. Klik op het programma waaraan u een RDE wilt toevoegen om de details weer te geven.
 
-   * RDEs kan aan zowel [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) als [ productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) worden toegevoegd.
+   * RDEs kan aan beide [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) en [ productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) worden toegevoegd.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, klik** voeg Milieu **op de** kaart van Milieu **toe om een milieu toe te voegen.**
+1. Van de **pagina van het Overzicht van het Programma**, klik **voeg Milieu** op de **kaart van Milieu** toe om een milieu toe te voegen.
 
    ![ kaart van Milieu&#39;s ](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -114,11 +114,11 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    ```
 
    >[!NOTE]
-   > De login bevel met de `--no-open` optie zal een URL in de terminal in plaats van het openen van uw standaardbrowser uitvoeren. Als dat kunt u het met een **incognito** venster van uw browser kopiëren en openen. Op deze manier blijft de sessie die momenteel is aangemeld in het normale browservenster ongewijzigd en kunt u ervoor zorgen dat u de specifieke aanmelding en organisatie gebruikt die nodig zijn voor uw context.
+   > De login bevel met de `--no-open` optie zal een URL in de terminal in plaats van het openen van uw standaardbrowser uitvoeren. Als dat kunt u het met een **incognito** venster van uw browser kopiëren en openen. Op deze manier blijft uw momenteel aangemelde sessie in het normale browservenster ongewijzigd en kunt u ervoor zorgen dat u de specifieke aanmeldingsgegevens en organisatie gebruikt die nodig zijn voor uw context.
 
-   Met de eerste opdracht maakt u een nieuwe aanmeldingscontextconfiguratie met de naam `mycontext` in het lokale `.aio` -configuratiebestand (het bestand wordt indien nodig gemaakt). Met de tweede opdracht stelt u de context `mycontext` in als de &quot;huidige&quot; context, d.w.z. de standaardcontext.
+   Met de eerste opdracht maakt u een nieuwe aanmeldingscontextconfiguratie, `mycontext` genoemd, in uw lokale `.aio` -configuratiebestand (het bestand wordt indien nodig gemaakt). Met de tweede opdracht wordt de context `mycontext` ingesteld op de &quot;huidige&quot; context, dat wil zeggen de standaardinstelling.
 
-   Met deze configuratie op zijn plaats, slaat het login bevel automatisch de login tokens in de context `mycontext` op, en houdt zo het lokaal.
+   Als deze configuratie op zijn plaats staat, slaat het login bevel automatisch de login tokens in de context `mycontext` op, en houdt zo het lokaal.
 
    U kunt meerdere contexten beheren door lokale configuraties in meerdere mappen te bewaren. Alternatief, is het ook mogelijk om veelvoudige context binnen één enkel configuratiedossier te plaatsen, en tussen hen te schakelen door de &quot;huidige&quot;context te veranderen.
    </details>
@@ -187,15 +187,15 @@ Voor omgevingen waar geen enkele gebruiker de hierboven beschreven opstellingsop
 
    `aio config:set cloudmanager_programid 12345`
 
-1. Dan, vorm milieu identiteitskaart dat RDE aan in bijlage zal zijn:
+1. Dan, vorm milieu-identiteitskaart dat RDE zal worden verbonden aan:
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Nadat u klaar bent met het configureren van de insteekmodule, meldt u zich aan door
+1. Nadat u de insteekmodule hebt geconfigureerd, meldt u zich aan door
 
    `aio login`
 
-   Deze stappen vereisen u om een lid van de Ontwikkelaar van Cloud Manager **te zijn - Cloud Service** Profiel van het Product. Zie [ de Leden van het Team aan de Profielen van het Product van Cloud Manager toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
+   Deze stappen vereisen u om een lid van de Ontwikkelaar van de Manager van de Wolk te zijn **- Cloud Service** Profiel van het Product. Zie [ de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
 
 Voor meer informatie en demonstratie, bekijk het videoleerprogramma [ hoe te opstelling RDE (06:24) ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
@@ -235,11 +235,11 @@ Het werkschema is gelijkaardig aan het ontwikkelen van een nieuwe eigenschap. He
 
 RDE steunt één enkel project tegelijkertijd. Aangezien de code van een lokale ontwikkelomgeving aan het milieu RDE wordt gesynchroniseerd, is het het meest natuurlijk voor één ontwikkelaar om het op een bepaald ogenblik op zich te gebruiken.
 
-Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars een specifieke functie valideren of fouten in een specifiek probleem opsporen. De sleutel is dat elke ontwikkelaar hun lokale projecten synchroon houdt zodat de codeveranderingen door een bepaalde ontwikkelaar worden aangebracht door de andere ontwikkelaars worden geabsorbeerd, anders zou één ontwikkelaar onbedoeld de code van andere kunnen overschrijven. De geadviseerde strategie is voor elke ontwikkelaar om hun veranderingen in een gedeelde git tak alvorens aan RDE te synchroniseren, zodat de andere ontwikkelaars de veranderingen trekken alvorens hun eigen veranderingen te maken.
+Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars een specifieke functie valideren of fouten in een specifiek probleem opsporen. De sleutel is dat elke ontwikkelaar hun lokale projecten synchroon houdt zodat de codeveranderingen door een bepaalde ontwikkelaar worden aangebracht door de andere ontwikkelaars worden geabsorbeerd, anders zou één ontwikkelaar onbedoeld de code van andere kunnen overschrijven. De geadviseerde strategie is voor elke ontwikkelaar om hun veranderingen in een gedeelde git tak alvorens aan RDE te synchroniseren vast te leggen, zodat de andere ontwikkelaars de veranderingen trekken alvorens hun eigen veranderingen aan te brengen.
 
 ## Opdrachten voor RDE-opdrachtregelprogramma&#39;s {#rde-cli-commands}
 
-### Help/algemene informatie {#help}
+### Help/Algemene informatie {#help}
 
 * Voor een lijst met opdrachten typt u:
 
@@ -277,7 +277,7 @@ Het algemene gebruikspatroon is `aio aem:rde:install <artifact>` .
 
 Hieronder vindt u enkele voorbeelden:
 
-<u> die een Pakket van de Inhoud </u> opstellen
+#### Een inhoudspakket implementeren {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ Om het even welk AEM pakket kan worden opgesteld, zoals pakketten met code, inho
 >
 >De Dispatcher-configuratie voor het WKND-project wordt niet geïmplementeerd via de bovenstaande installatie van het inhoudspakket. Implementeer deze afzonderlijk volgens de stappen &quot;Apache/Dispatcher Configuration implementeren&quot;.
 
-<u> het Opstellen van een Configuratie OSGI </u>
+#### Het opstellen van een Configuratie OSGI {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ Waar de reactie voor een succesvolle plaatsing op het volgende lijkt:
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u> die een Bundel </u> opstelt
+#### Een bundel implementeren {#deploy-bundle}
 
 Om een bundel op te stellen, gebruik:
 
@@ -324,7 +324,7 @@ Waar de reactie voor een succesvolle plaatsing op het volgende lijkt:
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u> het Opstellen van een Dossier van de Inhoud </u>
+#### Inhoudsbestanden gebruiken {#deploy-content-file}
 
 Als u een inhoudsbestand wilt implementeren, gebruikt u:
 
@@ -337,7 +337,7 @@ Waar de reactie voor een succesvolle plaatsing op het volgende lijkt:
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u> het Opstellen van een Configuratie Apache/Dispatcher </u>
+#### Een Apache/Dispatcher-configuratie implementeren {#deploy-apache-config}
 
 Voor dit type configuratie moet de volledige mapstructuur de vorm hebben van een ZIP-bestand.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 Het bovenstaande codevoorbeeld illustreert het gedrag als een bundel niet oplost. In dat geval wordt het &quot;gefaseerd&quot; en wordt het alleen geïnstalleerd als aan de vereisten ervan (ontbrekende invoer, in dit geval) wordt voldaan door de installatie van andere code.
+
+#### Het opstellen van de verwante configuratie van de Pijpleiding Config (yaml vormt) {#deploy-config-pipeline}
+
+De milieu-specifieke configuraties (één of meerdere yaml dossiers) die in het artikel [ worden beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) kunnen als volgt worden opgesteld:
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+waarbij my-config-folder de ouderomslag is die uw yaml configuraties bevat.
+
+U kunt ook een ZIP-bestand met de mapstructuur config installeren:
+
+`aio aem:rde:install -t env-config config.zip`
+
+Merk op dat de serie envTypes van het yaml dossier de waarde *zou moeten omvatten*, zoals in het hieronder voorbeeld:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Voorste code implementeren op basis van sitethema&#39;s en sitesjablonen {#deploying-themes-to-rde}
 
@@ -462,7 +482,7 @@ Environment: Ready
  com.adobe.granite.demo.MyServlet
 ```
 
-Als het bevel een nota over instanties terugkeert die opstellen, kunt u nog gaan en de volgende update uitvoeren, maar uw laatste zou nog niet op de instantie zichtbaar kunnen zijn.
+Als de opdracht een opmerking retourneert over het implementeren van instanties, kunt u de volgende update nog steeds uitvoeren, maar is de laatste nog niet zichtbaar voor de instantie.
 
 ### Implementatiegeschiedenis tonen {#show-deployment-history}
 
@@ -729,7 +749,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
 ### Verwijderen {#delete}
 
 <details>
-  <summary>Uitbreiden om voorbeelden van verwijderen weer te geven</summary>
+  <summary>Uitbreiden om voorbeelden verwijderen te zien</summary>
 
 ```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
 

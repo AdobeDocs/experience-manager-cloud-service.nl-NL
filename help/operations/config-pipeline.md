@@ -4,9 +4,9 @@ description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende con
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AE
 
 Een Cloud Manager config pijpleiding stelt configuratiedossiers (die in formaat YAML worden gecreeerd) aan een doelmilieu op. Een aantal eigenschappen in AEM as a Cloud Service kan op deze manier worden gevormd, met inbegrip van logboek het door:sturen, zuivert-verwante onderhoudstaken, en verscheidene eigenschappen CDN.
 
-Config Pipelines kunnen via Cloud Manager worden geïmplementeerd om omgevingstypen in productieprogramma&#39;s (zonder sandbox) op te zetten, te ontwikkelen en te produceren. RDE&#39;s worden niet ondersteund.
+Config Pipelines kunnen via Cloud Manager worden geïmplementeerd om omgevingstypen in productieprogramma&#39;s (zonder sandbox) op te zetten, te ontwikkelen en te produceren. De configuratiedossiers kunnen aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend [ het hulpmiddel van de bevellijn van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 Deze volgende secties van dit document geven een overzicht van belangrijke informatie betreffende hoe de Pijpleidingen Config kunnen worden gebruikt en hoe de configuraties voor hen zouden moeten worden gestructureerd. Het beschrijft algemene concepten die over of allen of een ondergroep van de eigenschappen worden gedeeld die door config pijpleidingen worden gesteund.
 
@@ -53,6 +53,9 @@ De volgende lijst biedt een uitvoerige lijst van dergelijke configuraties met ve
 Voor informatie over om pijpleidingen tot stand te brengen en te vormen, te zien gelieve het document [ CI/CD Pijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 Wanneer het creëren van een Pijpleiding Config in Cloud Manager, ben zeker om a **gerichte Plaatsing** eerder dan **Volledige Code van de Stapel** te selecteren wanneer het vormen van de pijpleiding.
+
+Zoals vroeger genoteerd, wordt de configuratie voor RDEs opgesteld gebruikend [ het hulpmiddel van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) eerder dan een pijpleiding.
+
 
 ## Algemene syntaxis {#common-syntax}
 
