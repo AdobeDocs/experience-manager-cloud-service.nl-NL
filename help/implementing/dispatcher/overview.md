@@ -4,7 +4,7 @@ description: Meer informatie over de gegevensstroom voor de levering van inhoud 
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -34,6 +34,5 @@ Standaard verloopt het inhoudstype HTML/tekst na 300 seconden (5 minuten) op de 
 In de volgende secties vindt u meer informatie over de levering van inhoud:
 * [CDN-configuratie](/help/implementing/dispatcher/cdn.md)
 * [Caching](/help/implementing/dispatcher/caching.md)
-
 
 Voor informatie over replicatie van de auteursdienst aan de publicatiedienst zie [ Replicatie ](/help/operations/replication.md).
