@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,6 @@ Het vormen van specifiek uitgang IP adres is gelijkaardig aan [ flexibele havenu
 >
 >Zodra gecreeerd, kunnen de specifieke IP van de uitgang de types van adresinfrastructuur niet worden uitgegeven. De enige manier om configuratiewaarden te veranderen is hen te schrappen en te ontspannen.
 
->[!INFO]
->
->Als een specifieke egress IP wordt gevormd, zal het door:sturen van de Splunk de dynamische egress waaiers blijven gebruiken. Splunk door:sturen kan niet worden gevormd om een specifieke uitgang IP te gebruiken.
-
 ### UI-configuratie {#configuring-dedicated-egress-provision-ui}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
@@ -411,7 +407,6 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 >Hieronder volgt een beperking van een VPN-infrastructuur:
 >
 >* De steun wordt beperkt tot één enkele verbinding van VPN
->* Het Splunk door:sturen vermogen is niet mogelijk over een verbinding van VPN.
 >* DNS Resolvers moeten in de ruimte van het Adres van de Gateway worden vermeld om privé gastheernamen op te lossen.
 
 ### UI-configuratie {#configuring-vpn-ui}

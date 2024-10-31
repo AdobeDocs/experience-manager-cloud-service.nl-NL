@@ -1,31 +1,31 @@
 ---
 title: Log Forwarding for AEM as a Cloud Service
-description: Meer informatie over het doorsturen van logbestanden naar Splunk en andere leveranciers van logbestanden in AEM als cloudservice
+description: Meer informatie over het doorsturen van logbestanden naar houtkapselaars in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
 
-# Logboek doorsturen {#log-forwarding}
+# Log doorsturen {#log-forwarding}
 
 >[!NOTE]
 >
->Deze functie is nog niet beschikbaar en sommige logboekbestemmingen zijn mogelijk niet beschikbaar op het moment van de release. Ondertussen, kunt u een steunkaartje openen om logboeken aan **Splunk** door:sturen, zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) wordt beschreven.
+>Het door:sturen van het logboek wordt nu gevormd op zelfbediende manier, verschillend van de erfenismethode, die het voorleggen van een kaartje van de Steun van de Adobe vereiste. Zie [ het Migreren ](#legacy-migration) sectie als uw logboek het door:sturen opstelling door Adobe was.
 
-Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM logboeken (met inbegrip van Apache/Dispatcher) en CDN- logboeken hebben die aan de bijbehorende registrerenbestemmingen door:sturen. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
+Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM logboeken (inclusief Apache/Dispatcher) en CDN-logboeken hebben die naar de gekoppelde logbestemming worden doorgestuurd. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
-* Azure Blob-opslag
-* DataDog
+* Azure Blob Storage
+* Datahond
 * Elasticsearch of OpenSearch
 * HTTPS
 * Splunk
 
-Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en het op te stellen via de Pijpleiding van de Configuratie van Cloud Manager om, stadium, en de types van productiemilieu in productie (niet-zandbak) programma&#39;s te ontwikkelen.
+Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en het op te stellen via de Pijpleiding van Cloud Manager Config aan RDE, dev, stadium, en de types van productiemilieu in productie (niet-zandbak) programma&#39;s.
 
 Er is een optie voor de logboeken van de AEM en van Apache/Dispatcher om door AEM geavanceerde voorzien van een netwerkinfrastructuur, zoals specifieke uitgang IP worden verpletterd.
 
@@ -34,11 +34,11 @@ Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbes
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
-Dit artikel is als volgt georganiseerd:
+Dit artikel is als volgt geordend:
 
-* Setup - algemeen voor alle logboekbestemmingen
-* Logboekdoelconfiguraties - elke bestemming heeft een iets andere indeling
-* Opmaak voor logberichten - informatie over de indelingen voor logbestandvermeldingen
+* Opstelling - gemeenschappelijk voor alle registrerenbestemmingen
+* Logboekdoelconfiguraties - elke bestemming heeft een lichtjes verschillende indeling
+* Indelingen voor logberichten - informatie over de indelingen van logberichten
 * Geavanceerde netwerken - het verzenden van AEM en Apache/Dispatcher logboeken door een specifiek uitgang of door VPN
 * Het migreren van erfenislogboek door:sturen - hoe te zich van logboek door:sturen eerder opstelling door Adobe aan de zelf-serverbenadering te bewegen
 
@@ -111,7 +111,7 @@ Een ander scenario moet of het door:sturen van de logboeken onbruikbaar maken CD
 
 De configuraties voor de gesteunde registrerenbestemmingen worden hieronder vermeld, samen met om het even welke specifieke overwegingen.
 
-### Azure Blob-opslag {#azureblob}
+### Azure Blob Storage {#azureblob}
 
 ```
 kind: "LogForwarding"
@@ -139,11 +139,13 @@ Hier is een schermafbeelding van een voorbeeld van een SAS-tokenconfiguratie:
 
 ![ Azure Blob SAS symbolische configuratie ](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+Als de logboeken na eerder correct functionerende niet meer worden geleverd, controleert u of het door u gevormde SAS-token nog geldig is, aangezien het mogelijk verlopen is.
+
 #### Azure Blob Storage CDN-logs {#azureblob-cdn}
 
-Elke globaal gedistribueerde logboekserver produceert om de paar seconden een nieuw bestand onder de map `aemcdn` . Nadat het bestand is gemaakt, wordt het niet meer toegevoegd aan het bestand. Het filename formaat is YYYY-MM-DDThh :mm: ss.sss-uniqueid.log. Bijvoorbeeld, 2024-03-04T10 :00: 00.000-WnFWYN9BpOUs2aOVn4ee.log.
+Elke globaal gedistribueerde logbestandsserver produceert elke paar seconden een nieuw bestand onder de map `aemcdn` . Nadat het bestand is gemaakt, wordt het niet meer toegevoegd aan het bestand. Het filename formaat is JJJ-MM-DDThh :mm: ss.sss-uniqueid.log. Bijvoorbeeld, 2024-03-04T10 :00: 00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
-Zo kunt u op een bepaald moment:
+Zo kunt u op een bepaald tijdstip bijvoorbeeld:
 
 ```
 aemcdn/
@@ -201,11 +203,13 @@ data:
 
 Overwegingen:
 
-* Maak een API-sleutel zonder integratie met een specifieke cloudprovider.
-* de eigenschap tags is optioneel
+* Maak een API-sleutel zonder integratie met een specifieke cloud provider.
+* De eigenschap tags is optioneel
 * Voor AEM logs wordt de gegevenshondenbrontag ingesteld op `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
 * Voor CDN-logs wordt de gegevenshondenbrontag ingesteld op `aemcdn`
-* De Datadog-servicetag is ingesteld op `adobeaemcloud` , maar u kunt deze overschrijven in de sectie Tags
+* De servicetag DataHond is ingesteld op `adobeaemcloud` , maar u kunt deze overschrijven in de sectie Tags
+* Als uw innamepijpleiding de markeringen van Datadog gebruikt om de aangewezen index voor het door:sturen van logboeken te bepalen, verifieer dat deze markeringen correct in het Logboek door:sturen YAML- dossier worden gevormd. Het ontbreken van markeringen kan succesvolle logboekopname verhinderen als de pijpleiding van hen afhangt.
+
 
 
 ### Elasticsearch en OpenSearch {#elastic}
@@ -233,7 +237,7 @@ Overwegingen:
 ![ Elastische plaatsingsgeloofsbrieven ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
 * Voor AEM logs wordt `index` ingesteld op een van `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
-* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier volgt een voorbeeldscriptfragment om logitems naar een index te leiden, zoals aemaccess_dev_26_06_2024:
+* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -307,6 +311,8 @@ Overwegingen:
 * Standaard is de poort 443. Optioneel kan deze worden overschreven door een eigenschap met de naam `port` .
 * Het sourcetype gebied zal één van de volgende waarden, afhankelijk van het specifieke logboek hebben: *aemaccess*, *aemerror*,
   *verzoek*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* Als vereiste IPs is gevoegd op lijst van gewenste personen en de logboeken nog niet worden geleverd, verifieer dat er geen firewallregels die de symbolische bevestiging van de Splunk afdwingen zijn. Voert snel een eerste validatiestap uit waarbij een ongeldig token voor segmentering opzettelijk wordt verzonden. Als uw firewall wordt geplaatst om verbindingen met ongeldige tokens van de Splunk te eindigen, zal het bevestigingsproces ontbreken, verhinderend snel logboeken aan uw instantie van de Splunk te leveren.
+
 
 >[!NOTE]
 >
@@ -388,9 +394,9 @@ Klanten die op die manier door Adobe waren opgezet, zijn welkom om zich aan het 
 * De Adobe had opstelling uw logboek door:sturen alvorens de logboeken CDN beschikbaar waren en u zou CDN logboeken willen ontvangen.
 * Een bewust besluit om zich proactief aan het zelf-servermodel aan te passen zodat heeft uw organisatie de kennis zelfs alvorens een tijdgevoelige verandering noodzakelijk is.
 
-Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de configuratiepijplijn van Cloud Manager om te implementeren naar elk van de omgevingen waar de configuratie moet worden toegepast.
+Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de Cloud Manager config pijpleiding om aan elk van de milieu&#39;s op te stellen waar de configuratie zou moeten worden toegepast.
 
-Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelfbediening controle zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-server manier zijn gevormd.
+Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelf-servercontrole zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-servermanier zijn gevormd.
 
 >[!NOTE]
 >

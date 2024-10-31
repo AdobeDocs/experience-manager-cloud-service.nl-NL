@@ -4,9 +4,9 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2376'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service is een platform waarop klanten aangepaste code kunnen opnemen om unieke ervaringen voor hun klanten te creëren. Met dit in mening, is de registrerendienst een kritieke functie om code uitvoering op lokale ontwikkeling, en wolkenmilieu&#39;s, in het bijzonder de milieu&#39;s van AEM as a Cloud Service te zuiveren en te begrijpen Dev.
 
-AEM as a Cloud Service het registreren montages en logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git, worden opgeslagen en als deel van het AEM project via Cloud Manager worden opgesteld. Logboekregistratie in AEM as a Cloud Service kan worden opgedeeld in twee logische sets:
+AEM as a Cloud Service het registreren montages en logboekniveaus worden beheerd in configuratiedossiers die als deel van het AEM project in Git, worden opgeslagen en als deel van het AEM project via Cloud Manager worden opgesteld. Logboekregistratie in AEM as a Cloud Service kan worden opgedeeld in drie logische sets:
 
 * AEM registreren, die registreren op het niveau van de AEM toepassing uitvoert
 * Apache HTTPD Web Server/Dispatcher-logboekregistratie, die het registreren van de webserver en Dispatcher op de Publish-laag uitvoert.
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service biedt toegang tot CDN-logboeken. Deze zijn handig voor het gebruik van gevallen zoals optimalisatie van de cache-raakverhouding. De CDN-logindeling kan niet worden aangepast en er bestaat geen concept om de indeling in te stellen op verschillende modi, zoals info, warn of error.
 
-CDN de logboeken zullen aan Splunk voor nieuwe Splunk door:sturen de verzoeken van het steunkaartje worden door:sturen; de klanten die reeds Splunk hebben toegelaten zullen CDN- logboeken in de toekomst kunnen toevoegen.
-
 **Voorbeeld**
 
 ```
@@ -611,82 +609,18 @@ Afhankelijk van het verkeer en de hoeveelheid logboekverklaring die door Debug w
 * Op een verstandige manier en alleen wanneer dat absoluut noodzakelijk is
 * Omgekeerd naar de juiste niveaus en zo snel mogelijk opnieuw ingezet
 
-## Logbestanden splitsen {#splunk-logs}
+## Log doorsturen {#log-forwarding}
 
-Klanten die Splunk-accounts hebben, kunnen via een ticket voor klantenondersteuning aanvragen dat hun AEM Cloud Service-logbestanden naar de juiste index worden doorgestuurd. De logboekgegevens zijn gelijkwaardig aan wat door het logboekdownloads van Cloud Manager beschikbaar is, maar de klanten kunnen het geschikt vinden om de vraageigenschappen te gebruiken beschikbaar in het product van de Splunk.
+Hoewel de logboeken van Cloud Manager kunnen worden gedownload, vinden sommige organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming door:sturen. AEM steunt het stromen logboeken aan de volgende bestemmingen:
 
-De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
+* Azure Blob Storage
+* Datahond
+* HTTPD
+* Elasticsearch (en OpenSearch)
+* Splunk
 
-CDN de logboeken zullen aan Splunk voor nieuwe verzoeken van het steunkaartje door:sturen worden doorgestuurd; de klanten die reeds Splunk hebben toegelaten zullen CDN- logboeken in de toekomst kunnen toevoegen.
-
->[!NOTE]
->
->*Specifieke* logboeken, en *specifieke* Logboeken van de Gebruiker, kunnen niet aan Splunk door:sturen.
->
->**Alle** logboeken zullen aan Splunk door:sturen, waar om het even welk verder filtreren door de klant kan worden gedaan die op hun vereisten wordt gebaseerd.
-
-### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
-
-In het supportverzoek moeten klanten aangeven:
-
-* Splunk HEC eindpuntadres. Dit eindpunt moet een geldig SSL certificaat hebben en openbaar toegankelijk zijn.
-* De segmentindex
-* De segmentpoort
-* De Splunk HEC-token. Zie {de voorbeelden van de Collector van de Gebeurtenis van 0} HTTP ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) voor meer informatie.[
-
-De bovenstaande eigenschappen moeten voor elke relevante combinatie van programma/omgevingstype worden gespecificeerd. Als een klant bijvoorbeeld ontwikkelings-, staging- en productieomgevingen wilde, moeten deze drie informatiesets leveren, zoals hieronder wordt aangegeven.
+Verwijs naar het [ Logboek door:sturen artikel ](/help/implementing/developing/introduction/log-forwarding.md) voor details op hoe te om deze eigenschap te vormen.
 
 >[!NOTE]
 >
->Splunk forward for sandbox program environment is not supported.
-
->[!NOTE]
->
->Het Splunk door:sturen vermogen is niet mogelijk van een specifiek uitgangIP adres.
-
-Zorg ervoor dat het eerste verzoek alle ontwikkelomgeving bevat die moet worden ingeschakeld, in aanvulling op de fase-/prodomgevingen. Splunk moet een SSL-certificaat hebben en openbaar zijn.
-
-Als om het even welke nieuwe dev milieu&#39;s na het aanvankelijke verzoek worden gecreeerd om Splunk te hebben door:sturen, maar het niet toegelaten hebben, zou een extra verzoek moeten worden gemaakt.
-
-Merk ook op dat als de ontwikkelmilieu&#39;s zijn gevraagd, het mogelijk is dat andere ontwikkelmilieu&#39;s niet in het verzoek of zelfs zandbakmilieu&#39;s toegelaten Splunk door:sturen zullen hebben en een index van het Splunk zullen delen. Klanten kunnen het veld `aem_env_id` gebruiken om een onderscheid te maken tussen deze omgevingen.
-
-Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
-
-Programma 123, Production Env
-
-* Splunk HEC-eindpuntadres: `splunk-hec-ext.acme.com`
-* Splunk-index: acme_123prod (de klant kan kiezen welke naamgevingsconventie hij wil)
-* Splondepoort: 443
-* Splunk HEC token: ABC123
-
-Programma 123, Stage Env
-
-* Splunk HEC-eindpuntadres: `splunk-hec-ext.acme.com`
-* Splonindex: acme_123stage
-* Splondepoort: 443
-* Splunk HEC token: ABC123
-
-Programma 123, Dev Envs
-
-* Splunk HEC-eindpuntadres: `splunk-hec-ext.acme.com`
-* Splonindex: acme_123dev
-* Splondepoort: 443
-* Splunk HEC token: ABC123
-
-Het kan voldoende zijn dat dezelfde segmentindex wordt gebruikt voor elke omgeving. In dat geval kan het veld `aem_env_type` worden gebruikt om onderscheid te maken op basis van de waarden dev, stage en prod. Als er meerdere ontwikkelomgevingen zijn, kan het veld `aem_env_id` ook worden gebruikt. Sommige organisaties kunnen een afzonderlijke index voor de logboeken van het productiemilieu kiezen als de bijbehorende index toegang tot een verminderde reeks gebruikers van de Splunk beperkt.
-
-Hier volgt een voorbeeld van een logbestandvermelding:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>Logdoorsturen voor sandboxprogrammaomgevingen wordt niet ondersteund.
