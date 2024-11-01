@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: d98aa9d206486022d465ca19c8888088562d56c3
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,10 @@ De volgende AEM Sites-paginagebeurtenissen zijn nu beschikbaar als extern verbru
 **produceer Variaties**
 
 Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
+
+**AEM REST OpenAPI voor levering van inhoudsfragmenten**
+
+[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is nu beschikbaar voor AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 

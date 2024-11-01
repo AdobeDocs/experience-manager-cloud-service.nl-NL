@@ -4,9 +4,9 @@ description: AEM beschikt over uitgebreide en krachtige API's die u kunt gebruik
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,7 @@ AEM biedt aanpasbare componenten en leveringsopties voor inhoud.
 | [ het Fragment van de Inhoud GraphQL API ](/help/headless/graphql-api/content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients in CMS-implementaties zonder kop inschakelen |
 | [ de Fragmenten van de Inhoud Assets HTTP API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Exacte indeling van ondersteunde HTTP-elementaanvragen |
 | [ het Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) | Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s |
+| [ AEM REST OpenAPI voor levering van inhoudsfragmenten ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | Een HTTP REST API op AEM Edge Delivery Services, die wordt ontworpen om gestructureerde inhoud van de Fragments van de Inhoud in formaat te leveren JSON. |
 
 ## SPA-specifieke API&#39;s {#spa-apis}
 

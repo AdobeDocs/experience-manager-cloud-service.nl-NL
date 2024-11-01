@@ -5,17 +5,17 @@ landing-page-description: Inzicht in gebruik en beheer van Headless in Adobe Exp
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '701'
 ht-degree: 8%
 
 ---
 
 
-# Inleiding tot Adobe Experience Manager als een headless CMS {#introduction-aem-headless}
+# Inleiding tot Adobe Experience Manager als een CMS zonder kop {#introduction-aem-headless}
 
-Leer hoe u Adobe Experience Manager (AEM) kunt gebruiken als een CMS zonder hoofd (Content Management System), met functies zoals modellen van inhoudsfragmenten, contentfragmenten en een GraphQL API die samen een krachtige ervaring zonder hoofd op schaal bieden.
+Leer hoe u Adobe Experience Manager (AEM) gebruikt als een Headless CMS (Content Management System), met functies zoals Content Fragment Models, Content Fragments en een GraphQL API die samen een krachtige ervaring zonder inhoud op schaal bieden.
 
 U kunt gedetailleerde documentatie van de diverse betrokken eigenschappen lezen en/of de selectie van [ Dagloze Reizen volgen om een overzicht van de eerste stappen ](#first-steps) te krijgen.
 
@@ -46,8 +46,8 @@ AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zo
    * Inhoudsfragmenten worden gemaakt door auteurs van inhoud, die de AEM Content Fragment-editor gebruiken.
    * De Fragmenten van de inhoud worden opgeslagen als AEM Assets, maar kunnen door of de Console van Assets, of de [ Console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) worden beheerd.
 1. **Inhoud API voor levering**
-   * De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
-   * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
+   * Zie [ AEM APIs voor Gestructureerde Inhoudslevering en Beheer ](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
+
    * De directe inhoudslevering is ook mogelijk met de [ uitvoer JSON van de Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
 ## Uw eerste stappen {#first-steps}
