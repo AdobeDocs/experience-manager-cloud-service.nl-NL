@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -19,22 +19,22 @@ Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-produ
 
 >[!IMPORTANT]
 >
->Het licentiedashboard geldt alleen voor de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het vergunningsdashboard.
+>Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
 >
 >Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Overzicht {#overview}
 
-Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrechten die beschikbaar zijn in al uw programma&#39;s, inclusief wat er wordt gebruikt en wat er beschikbaar is. En, de verbruiksmetriek van het Verzoek van de Inhoud die door maand voor de oplossing van Plaatsen wordt getrend.
+Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrechten die beschikbaar zijn in al uw programma&#39;s, inclusief wat er wordt gebruikt en wat er beschikbaar is. En, de metriek van de het verbruiksvraag van de inhoud die door maand voor de oplossing van Plaatsen wordt trended.
 
 ## Het licentiedashboard openen {#using-dashboard}
 
 >[!NOTE]
 >
->Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om het Dashboard van de Vergunning te bekijken.
+>Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om het dashboard van de Vergunning te bekijken.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg op de [ Kopbal van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Deze actie onthult de lusjes.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) op de [ Kopbal van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Deze actie onthult de lusjes.
 1. Klik de **optie van de Vergunning** in het lusje.
 
 ![ Dashboard van de Vergunning ](assets/license-dashboard.png)
@@ -49,9 +49,9 @@ Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruik
 
 * De **kolom van de Status** toont het aantal ongebruikte rechten tegenover het totaal beschikbaar voor de huurder.
 * **die op** wordt gevormd wijst op de programma&#39;s waarop de oplossingsbevoegdheid is toegepast.
-   * Een recht wordt beschouwd als gebruikt slechts wanneer een productiemilieu is gecreeerd of als één bestaat, als een updatepijpleiding op het is in werking gesteld.
+   * Een machtiging wordt alleen als gebruikt beschouwd wanneer een productieomgeving wordt gecreëerd. Of, als één bestaat, als een updatepijpleiding op het is in werking gesteld.
    * Slechts een beperkt aantal programma&#39;s wordt afzonderlijk vermeld in de kolom, de rest wordt vertegenwoordigd door een `+x` -item.
-   * Houd de muisaanwijzer boven het item `+x` voor een pop-up met de details van alle programma&#39;s.
+   * Houd de muisaanwijzer boven de `+x` -vermelding om een pop-up met gegevens over alle programma&#39;s weer te geven.
 * De **kolom van het Gebruik** {toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
 
 >[!TIP]
@@ -67,7 +67,7 @@ De **knoop van de het gebruikdetails van de Mening** in het gebied van de Vergun
 
 ### Gebruiksgegevens voor sites {#sites-usage-details}
 
-Het **venster van de het gebruikdetails van Plaatsen**, stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken ](#what-is-a-content-request).
+Het **het gebruikdetails van Plaatsen** venster stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken ](#what-is-a-content-request).
 
 ![ het venster van de het gebruikdetails van Plaatsen ](assets/sites-usage-details.png)
 
@@ -100,11 +100,9 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Veelgestelde vragen {#faq}
 
-+++
++++**wat is een inhoudsverzoek?** {#what-is-a-content-request}
 
-### Wat is een inhoudsverzoek? {#what-is-a-content-request}
-
-Een inhoudsverzoek is een verzoek dat in AEM Sites of om het even welk klant-verstrekt in het voorgeheugen onderbrengend systeem zoals een netwerk van de inhoudslevering komt om inhoud of gegevens in één van beide formaat van de HTML als paginamening of in formaat JSON als API vraag te leveren.
+Een inhoudsverzoek is elke aanvraag die is gericht aan AEM Sites of een door de klant beschikbaar cachesysteem, zoals een netwerk voor de levering van inhoud. Inhoud of gegevens worden opgehaald in de indeling HTML voor paginaweergaven. Of in JSON-indeling voor API-aanroepen.
 
 Één inhoudsverzoek wordt geteld voor elke paginamening of voor elke vijf API vraag, die bij de ingang van het eerste caching systeem wordt gemeten om een inhoudsverzoek te ontvangen. Inhoudsaanvragen worden alleen in mindering gebracht op productieomgevingen.
 
@@ -113,9 +111,7 @@ Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe 
 Zie ook [ verzoeken van de inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md) begrijpen.
 +++
 
-+++
-
-### Hoe meet Adobe Experience Manager verzoeken om inhoud? {#how-are-content-requests-measured}
++++**hoe meet Adobe Experience Manager inhoudsverzoeken?** {#how-are-content-requests-measured}
 
 Aanvragen voor inhoud worden bijgehouden op AEM as a Cloud Service Edge-servers. Het verkeer van de oorsprong telt niet op inhoudverzoeken. De CDN die in AEM as a Cloud Service is ingebouwd, houdt geldige HTML- en JSON-aanvragen bij.
 
@@ -124,23 +120,17 @@ AEM heeft ook regels om bekende bots uit te sluiten, met inbegrip van bekende di
 Zie ook [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 +++
 
-+++
-
-### Waarom toont mijn Analytics-rapport andere resultaten dan de AEM Content Requests? {#why-are-reports-different}
++++**waarom toont mijn rapport Analytics verschillende resultaten dan de Verzoeken van de Inhoud van de AEM?** {#why-are-reports-different}
 
 Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Voor meer informatie, zie [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 +++
 
++++**wat als ik meer over mijn volume van het inhoudsverzoek zou willen leren?** {#current-request-volumes}
+
+Als u meer inzichten in het volume van de inhoudsaanvraag wilt zien in het dashboard van de Vergunning, kan uw team van de Adobe een rapport verstrekken dat de hoogste volumebestuurders van inhoudverzoeken toont. Neem contact op met uw Adobe-team of met de Adobe Klantenondersteuning om een rapport met het hoogste verbruik aan te vragen.
 +++
 
-### Wat als ik meer over mijn volume van de inhoudshulp zou willen leren? {#current-request-volumes}
-
-Als u meer inzichten in het volume van de inhoudsaanvraag wilt zien in het Dashboard van de Vergunning, kan uw team van de Adobe een rapport verstrekken dat de hoogste volumebestuurders van inhoudverzoeken toont. Neem contact op met uw Adobe-team of met de Adobe Klantenondersteuning om een rapport met het hoogste verbruik aan te vragen.
-+++
-
-+++
-
-### Wat als ik mijn eigen CDN gebruik? {#using-own-cdn}
++++**wat als ik mijn eigen CDN gebruik?** {#using-own-cdn}
 
 Op het licentiedashboard worden alleen gegevens weergegeven die door de Cloud Service CDN worden bijgehouden. Als u verkiest om uw eigen CDN (BYOCDN) te brengen, rapporteert u het volume van uw inhoudsverzoek terug aan Adobe op jaarbasis, zoals die in uw contract wordt verklaard.
 +++
