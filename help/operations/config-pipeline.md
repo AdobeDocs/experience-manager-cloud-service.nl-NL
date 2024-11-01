@@ -1,12 +1,12 @@
 ---
-title: Config Pipelines gebruiken
+title: \s gebruiken
 description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AEM as a Cloud Service zoals logboek op te stellen door:sturen montages, zuivert-verwante onderhoudstaken, en diverse configuraties CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AE
 
 Een Cloud Manager config pijpleiding stelt configuratiedossiers (die in formaat YAML worden gecreeerd) aan een doelmilieu op. Een aantal eigenschappen in AEM as a Cloud Service kan op deze manier worden gevormd, met inbegrip van logboek het door:sturen, zuivert-verwante onderhoudstaken, en verscheidene eigenschappen CDN.
 
-Config Pipelines kunnen via Cloud Manager worden geïmplementeerd om omgevingstypen in productieprogramma&#39;s (zonder sandbox) op te zetten, te ontwikkelen en te produceren. De configuratiedossiers kunnen aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend [ het hulpmiddel van de bevellijn van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Config-pijplijnen kunnen via Cloud Manager worden geïmplementeerd voor het ontwikkelen, uitvoeren en produceren van omgevingstypen in productieprogramma&#39;s (niet-sandbox). De configuratiedossiers kunnen aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend [ het hulpmiddel van de bevellijn van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
-Deze volgende secties van dit document geven een overzicht van belangrijke informatie betreffende hoe de Pijpleidingen Config kunnen worden gebruikt en hoe de configuraties voor hen zouden moeten worden gestructureerd. Het beschrijft algemene concepten die over of allen of een ondergroep van de eigenschappen worden gedeeld die door config pijpleidingen worden gesteund.
+Deze volgende secties van dit document geven een overzicht van belangrijke informatie betreffende hoe config de pijpleidingen kunnen worden gebruikt en hoe de configuraties voor hen zouden moeten worden gestructureerd. Het beschrijft algemene concepten die over of allen of een ondergroep van de eigenschappen worden gedeeld die door config pijpleidingen worden gesteund.
 
 * [ Gesteunde Configuraties ](#configurations) - een lijst van configuraties die met config pijpleidingen kunnen worden opgesteld
 * [ Creërend en Leidend Pijpleidingen Config ](#creating-and-managing) - hoe te om een config pijpleiding tot stand te brengen.
@@ -43,16 +43,16 @@ De volgende lijst biedt een uitvoerige lijst van dergelijke configuraties met ve
 | [ CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Overschrijf de standaardfoutenpagina als AEM oorsprong niet kan worden bereikt, verwijzend de plaats van zelf-ontvangen statische inhoud in het configuratiedossier |
 | [ CDN zuiveren ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declareer de Leegmaken API-sleutels die worden gebruikt om de CDN op te lossen |
 | [ Klantbeheerd het teken van HTTP CDN ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Declareer de waarde van x-AEM-Edge-Sleutel nodig om de Adobe CDN van een Klant CDN te roepen |
-| [ Basisauthentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declareer de gebruikersnamen en de wachtwoorden voor een basisautwaldialoog die bepaalde URLs beschermen [ (beschikbaar aan vroege adopters slechts) ](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [ Basisauthentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declareer de gebruikersnamen en de wachtwoorden voor een basisautwiedialoog die bepaalde URLs beschermen. |
 | [ Taak van het Onderhoud van de Opruiming van de Versie ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer de AEM opslagplaats door regels te declareren rond het tijdstip waarop versies van inhoud moeten worden gewist |
 | [ Taak van het Onderhoud van de Aanzuivering van het Logboek van de Controle ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer het AEM controlelogboek voor verhoogde prestaties door regels rond te verklaren wanneer de logboeken zouden moeten worden gezuiverd |
-| [ Logboek door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Nog niet beschikbaar - vorm de eindpunten en de geloofsbrieven voor het door:sturen van logboeken aan diverse bestemmingen (b.v., Splunk, Datadog, HTTPS) |
+| [ Logboek door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Vorm de eindpunten en de geloofsbrieven voor het door:sturen van logboeken aan diverse bestemmingen, met inbegrip van de Opslag van Stem Azure, Datadog, HTTPS, Elasticsearch, Splunk) |
 
 ## Config-pijplijnen maken en beheren {#creating-and-managing}
 
 Voor informatie over om pijpleidingen tot stand te brengen en te vormen, te zien gelieve het document [ CI/CD Pijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
-Wanneer het creëren van een Pijpleiding Config in Cloud Manager, ben zeker om a **gerichte Plaatsing** eerder dan **Volledige Code van de Stapel** te selecteren wanneer het vormen van de pijpleiding.
+Wanneer het creëren van een config pijpleiding in Cloud Manager, ben zeker om a **gerichte Plaatsing** eerder dan **Volledige Code van de Stapel** te selecteren wanneer het vormen van de pijpleiding.
 
 Zoals vroeger genoteerd, wordt de configuratie voor RDEs opgesteld gebruikend [ het hulpmiddel van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) eerder dan een pijpleiding.
 
@@ -70,7 +70,7 @@ Elk configuratiebestand begint met eigenschappen die op het volgende voorbeeldfr
 
 | Eigenschap | Beschrijving | Standaard |
 |---|---|---|
-| `kind` | Een koord dat bepaalt welk type van configuratie, bijvoorbeeld logboek het door:sturen, de regels van de verkeersfilter, of verzoektransformaties | Vereist, geen standaard |
+| `kind` | Een koord dat bepaalt welk type van configuratie, zoals logboek het door:sturen, de regels van de verkeersfilter, of verzoektransformaties | Vereist, geen standaard |
 | `version` | Een tekenreeks die de schemaversie vertegenwoordigt | Vereist, geen standaard |
 | `envTypes` | Deze array van tekenreeksen is een onderliggende eigenschap van het knooppunt `metadata` . Mogelijke waarden zijn dev, stage, prod of een willekeurige combinatie en het bepaalt voor welke omgevingstypen de configuratie wordt verwerkt. Als de array bijvoorbeeld alleen `dev` bevat, wordt de configuratie niet geladen in werkgebied- of prodomgevingen, zelfs niet als de configuratie daar wordt geïmplementeerd. | Alle omgevingstypen (dev, stage, prod) |
 
@@ -111,7 +111,7 @@ De bestandsstructuur lijkt op het volgende:
   logForwarding.yaml
 ```
 
-Gebruik deze structuur wanneer de zelfde configuratie voor alle milieu&#39;s en voor alle types van configuratie (CDN, logboek het door:sturen, enz.) voldoende is. In dit scenario zou de array-eigenschap `envTypes` alle omgevingstypen bevatten.
+Gebruik deze structuur wanneer de zelfde configuratie voor alle milieu&#39;s en voor alle types van configuratie (CDN, logboek het door:sturen, etc.) voldoende is. In dit scenario zou de array-eigenschap `envTypes` alle omgevingstypen bevatten.
 
 ```yaml
    kind: "cdn"

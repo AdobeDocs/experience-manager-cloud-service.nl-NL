@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2024.9.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2024.9.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2024.9.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2024.9.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,34 +26,32 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.10.0) is 31 oktober 2024. De volgende functieversie (2024.11.0) is gepland voor 21 november 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.9.0) is 26 september 2024. De volgende release met functies (2024.10.0) is gepland voor 31 oktober 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-<!-- ## Release Video {#release-video}
+## Video vrijgeven {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Bekijk de video Overzicht van de release van september 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.9.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
-**Modernized de Gebeurtenissen van de Pagina**
+### Nieuwe functie in Experience Manager Sites {#new-feature-sites}
 
-De volgende AEM Sites-paginagebeurtenissen zijn nu beschikbaar als extern verbruikbare gebeurtenissen die zijn gebaseerd op het AEM as a Cloud Service Event Platform. De gebeurtenissen kunnen via Adobe I/O worden verwerkt om met externe processen in wisselwerking te staan.
-* Pagina gepubliceerd
-* Pagina niet gepubliceerd
-* Pagina verwijderd
+#### Vertaalbeheer {#translation-management}
+
+AEM vertaalworkflows en API-acties activeren nu gebeurtenissen om inzicht te krijgen in wijzigingen in de status van vertaaltaken. Gebruikers kunnen zich op deze gebeurtenissen abonneren via de Adobe Developer Console. Zie [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) voor meer informatie over AEM Vertaalbeheer API.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
 **produceer Variaties**
 
 Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
+
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -67,33 +63,16 @@ Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmat
 
 Om vroege toegang tot AI-Gegenereerde titelsteun op uw rekening van Dynamic Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
-### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
+### Nieuwe functies in Asset Selector {#asset-selector-new-features}
 
-**Geplande Rapporten**
-
-De rapporten kunnen nu automatisch in de Mening van Assets op een terugkerend programma of op een toekomstige datum worden geproduceerd, die de inspanning vermindert om gegeven-gedreven inzichten te ontdekken.
-
-![ Geplande Rapporten- ](/help/assets/assets/scheduled-reports-tab.png)
+Asset Selector biedt nu ondersteuning voor het bladeren in verzamelingen naar het gewenste element.
+![ de selecteursinzamelingen van Activa ](/help/assets/assets/collections-rail-modal-view.png)
 
 ### Nieuwe functies in Content Hub {#content-hub-new-features}
 
-**Digitaal beheer van Rechten voor vergunning gegeven activa**
-
-Organisaties kunnen nu de naleving van de licentievoorwaarden verhogen en het risico minimaliseren dat ze middelen delen met licentievoorwaarden door DRM te gebruiken voor gelicentieerde middelen voor gebruikers van Content Hub, waardoor gebruikers de licentievoorwaarden moeten controleren en accepteren voordat ze gelicentieerde activa kunnen downloaden.
-
-![ download-veelvoudige-vergunning ](/help/assets/assets/download-multiple-license.png)
-
-**de meta-gegevensconfiguratie van de kaart van Activa**
-
-Met Content Hub kunt u nu maximaal zes velden configureren voor de belangrijkste metagegevensvelden die u op de Asset Card moet weergeven.
-
-![ zeer belangrijke meta-gegevens op de Kaart van Activa ](/help/assets/assets/asset-card-key-metadata.png)
-
-**vorm het zicht en de download van verlopen activa**
-
 Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
 
-![ Verlopen activa op Content Hub ](/help/assets/assets/expired-assets-content-hub.png)
+![ Verlopen activa op Content Hub ](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -102,6 +81,7 @@ Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Cont
 #### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
 
 Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -133,34 +113,31 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 ## CIF invoegtoepassing {#cloud-services-cif}
 
+### Verbeteringen {#improvements-fixes-cif}
+
+* Categoriebeperking aanpasbaar maken.
+
 ### Bugfixes {#bug-fixes-cif}
 
-* Vaste UI-tests om correct te werken met Core CIF-componenten.
-* Correctie van het probleem waarbij de categorie-URL-indeling niet werkte zoals verwacht in de cloud-instantie.
+* Commerce-velden zijn niet correct geïntegreerd met de Assets Metadata Schema-editor.
+* Probleem met multifield Carrouselproducten voor slepen en neerzetten.
+* Probleem met multiveld van categorie Carrousel voor slepen en neerzetten.
+* Als u eenmaal klikt, werkt dit niet voor de menu&#39;s in de pagina-informatie op de pagina met categorieën en producteditor.
+* Het bestelnummer is niet zichtbaar op de pagina voor bevestiging van de bestelling.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### Self-Serve Log Forwarding met de Geavanceerde Optie van het Voorzien van een netwerk {#log-forwarding}
+### Edge Side Includes (ESI) voor het laden van dynamische inhoud {#esi}
 
-Terwijl AEM (met inbegrip van Apache/Dispatcher) en CDN logboeken van Cloud Manager kunnen worden gedownload, vinden vele organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming te stromen. AEM steunt nu [ logboek het door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) aan de Opslag van Azure Blob, Datadog, HTTPS, Elasticsearch (en OpenSearch), en Splunk. AEM logboeken kunnen naar keuze over geavanceerde voorzien van een netwerkconfiguraties, zoals het gebruiken van een specifiek IP adres door:sturen.
+De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. Dit onderdeel wordt geleidelijk ingevoerd.
 
-Deze eigenschap wordt gevormd door gebruikers op een zelfbediende manier, en gebruikend de [ Pijpleiding Config ](/help/operations/config-pipeline.md) opgesteld.
+### Basisverificatie bij de CDN {#basicauth-cdn}
 
-### URL-omleidingen zonder pijplijn voor zakelijke gebruikers {#pipeline-free-redirects}
+Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden wordt beheerd door een configuratiedossier in Git dat via Pijpleiding Config, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-Omleidingen aan de browserzijde zijn handig wanneer een webpagina is omlaag of verplaatst of wanneer er andere scenario&#39;s zijn toegepast. Met [ lijn-vrije URL richt ](/help/implementing/dispatcher/pipeline-free-url-redirects.md) opnieuw, kunt u een Apache kaartdossier in AEM plaatsen publiceert plaats, waar het automatisch wordt geladen — geen behoefte om het dossier aan broncontrole vast te leggen of een pijpleiding van Cloud Manager in werking te stellen.
+### Omleiding op de client {#client-side-redirects}
 
-De opties voor het publiceren van het herschrijven dossier omvatten het uploaden van het als activa, het gebruiken van de Bevelen ACS herschrijft de Manager van de Kaart, of het in wisselwerking staan met een douanegebruikersinterface.
-
-### Config Pipeline voor RDEs {#config-pipeline-rdes}
-
-De milieu&#39;s van de Snelle Ontwikkeling zijn een krachtig hulpmiddel om code en configuratie in een milieu van de Wolk snel op te stellen en te testen. RDEs steunt nu [ het synchroniseren van configuratie YAML-dossiers ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), met inbegrip van CDN montages zoals de regels van de verkeersfilter en verzoek/reactietransformaties, evenals logboek het door:sturen en andere configuratieopties. [ zie de volledige lijst ](/help/operations/config-pipeline.md) van gesteunde configuratieopties voor meer details.
-
-### Nieuwe productprofielen {#new-product-profiles}
-
-Wanneer een nieuwe AEM wordt gecreeerd, verschijnen de Profielen van het Product automatisch in Adobe Admin Console, toelatend beheerders om toegang tot vergunning gegeven oplossingen en eigenschappen toe te wijzen.
-
-Nieuwe omgevingen bevatten nu een bijgewerkte set productprofielen, waardoor deze compatibel zijn met toekomstige functies, waaronder het genereren van API-referenties in de Adobe Developer Console. Bestaande omgevingen kunnen hun productprofielen in een toekomstige release bijwerken. [ leer meer ](/help/onboarding/aem-cs-team-product-profiles.md).
+Declareer [ browser richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in een Git van het configuratiedossier opnieuw die aan en geëvalueerd bij CDN worden opgesteld. Dit kan handig zijn voor scenario&#39;s zoals het verwijderen van pagina&#39;s, gewijzigde sitestructuur en SEO-optimalisatie.
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
@@ -169,6 +146,14 @@ Probeer uit gevernieuwde [ AEM Developer Console ](/help/implementing/developing
 Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe is verheugd over feedback, die u via e-mail kunt verzenden naar **<aemcs-new-devconsole-ui-beta@adobe.com>** .
 
 ![ het Scherm van Bundles OSGi in AEM Developer Console ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+
+### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
+
+Net als bij AEM 6.5 worden door Apache/dispatcher ingegrepen opnieuw kaarten geschreven die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en worden deze geladen zonder dat een pijpleiding op de weblaag hoeft te worden uitgevoerd. Deze benadering laat bedrijfsgebruikers redirects verklaren gebruikend een spreadsheet of een UI, zoals ACS Commons Redirect de Manager van de Kaart of een douanetoepassing. U kunt deelnemen aan het programma voor vroege adoptie door een e-mail te verzenden **<aemcs-cdn-config-adopter@adobe.com>** .
+
+### Config Pipeline voor RDEs (Vroege Programma van de Aannemer) {#config-pipeline-rdes-early-adopter}
+
+De [ Pijpleiding Config ](/help/operations/config-pipeline.md) wordt gebruikt om uw dossierconfiguraties, met inbegrip van CDN opties (de regels van de verkeersfilter, verzoek/reactietransformaties, etc.) op te stellen. U kunt deelnemen aan het programma voor vroege adoptie door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om dezelfde configuraties te implementeren in RDE&#39;s (Rapid Development Environment), die een CLI gebruiken.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 

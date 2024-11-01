@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-Het Nut van de Omzetting van Forms, deel van [ AEM de Reeks van het Hulpmiddel van de Modernisering ](https://opensource.adobe.com/aem-modernize-Tools/), helpt u Aanpassings Forms gemakkelijk omzetten die met de componenten van de erfenisStichting aan vormen wordt gebouwd die hefboomwerking de moderne, gesteunde mogelijkheden van de Componenten van de Kern.
+Het Nut van de Omzetting van Forms, deel van de [ AEM 1} reeks van het Hulpmiddel van de Modernisering, helpt u Aanpassings Forms gemakkelijk omzetten die met erfenisComponenten van de Stichting aan vormen wordt gebouwd die hefboomwerking de moderne, gesteunde mogelijkheden van de Componenten van de Kern.](https://opensource.adobe.com/aem-modernize-tools/)
 
 ## Wat is AEM moderniseringsgereedschappen?
 
-[ AEM Moderniseer Hulpmiddelen ](https://opensource.adobe.com/aem-modernize-Tools/) verwijst naar een reeks nut of softwaretoepassingen die worden ontworpen om het proces te vergemakkelijken om de projecten van Adobe Experience Manager (AEM) te moderniseren of bij te werken. Deze hulpmiddelen helpen typisch bij het omzetten van oudere componenten of functionaliteit binnen AEM in nieuwere, efficiëntere, en gesteunde alternatieven. Het Forms Conversion-hulpprogramma is geïnstalleerd onder AEM Moderniseringsgereedschappen voor het omzetten van adaptieve Forms op basis van Foundation Components in op Core Component gebaseerde formulieren.
+[ AEM Moderniseer Hulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/) verwijst naar een reeks nut of softwaretoepassingen die worden ontworpen om het proces te vergemakkelijken om de projecten van Adobe Experience Manager (AEM) te moderniseren of bij te werken. Deze hulpmiddelen helpen typisch bij het omzetten van oudere componenten of functionaliteit binnen AEM in nieuwere, efficiëntere, en gesteunde alternatieven. Het Forms Conversion-hulpprogramma is geïnstalleerd onder AEM Moderniseringsgereedschappen voor het omzetten van adaptieve Forms op basis van Foundation Components in op Core Component gebaseerde formulieren.
 
 Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere Foundation Components om in nieuwere op Core Component gebaseerde formulieren. Dit conversieproces zorgt ervoor dat de formulieren zijn afgestemd op moderne standaarden en mogelijkheden, waardoor de prestaties, compatibiliteit en het onderhoudsgemak binnen de AEM kunnen worden verbeterd.
 
@@ -68,7 +68,7 @@ Voer de volgende stappen uit om AEM Moderniseer Hulpmiddelen aan uw lokale milie
 
    `java -jar aem-author-p4502.jar`
 
-1. Kloon de [ AEM Moderniseer Hulpmiddel ](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) bewaarplaats in uw lokaal systeem.
+1. Kloon de [ AEM Moderniseer Hulpmiddel ](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) bewaarplaats in uw lokaal systeem.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -101,7 +101,7 @@ Om de AEM Moderniseren Hulpmiddelen voor uw AEM Milieu toe te laten en te gebrui
 
 ![ AEM Moderniseer de Regel van de Component ](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## Het nut van de Omzetting van de Vorm van de looppas om de op componenten gebaseerde vormen van de Stichting in de vorm van de Component van de Kern om te zetten
+## Voer het hulpprogramma Formulierconversie uit om formulieren op basis van Foundation Components om te zetten in formulieren op basis van Core Component
 
 1. Ga naar **[!UICONTROL Tools > AEM Modernize Tools > Forms Conversion]** .
 

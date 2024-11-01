@@ -3,7 +3,7 @@ title: Nota's van de versie voor 2024.8.0 versie van  [!DNL Adobe Experience Man
 description: Nota's van de versie voor 2024.8.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 35ec3edfec42936b9a5908265d6dbb529a70f6cf
+source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Opmerkingen bij de release 2024.8.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2024.8.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
