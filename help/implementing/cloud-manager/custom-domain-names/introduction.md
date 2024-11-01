@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '704'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 
 >[!TIP]
 >
->Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Soms kunnen echter problemen met domeindelegatie optreden die 1 tot 2 werkdagen in beslag kunnen nemen om op te lossen. Daarom wordt het ten zeerste aanbevolen de domeinen ruim vóór hun live datum te installeren. Zie het document [ status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie.
+>Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Soms kunnen echter problemen met domeindelegatie optreden die 1 tot 2 werkdagen in beslag kunnen nemen om op te lossen. Daarom wordt aangeraden de domeinen ruim vóór hun live datum te installeren. Zie het document [ status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie.
 
 ## Beperkingen {#limitations}
 
