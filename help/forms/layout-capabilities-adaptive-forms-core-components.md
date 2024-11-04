@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Indeling van adaptief formulier op basis van kerncomponenten, verschillende indelingen voor formulieren, dynamische formulierindelingen AEM, AEM Cloud Service-formulierindelingen, formulierindelingstypen in AEM kerncomponenten, adaptieve formulierindelingen
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2091'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Adaptive Forms biedt eersteklas componenten om de formulieren effectief in te delen en te ontwerpen. De indeling bepaalt hoe componenten in een formulier worden weergegeven. Adaptieve Forms biedt ondersteuning voor verschillende lay-outs: deelvenster, wizard, accordeon, tabs op horizontale/bovenste tabbladen en tabbladen op links/verticale tabbladen.
 
-![ Types van Lay-out ](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Voorwaarde
 
