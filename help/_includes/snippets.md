@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,10 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >De Universele Redacteur is niet compatibel met [ IP lijsten van gewenste personen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Als u de Universele Redacteur wilt gebruiken, IP moeten de Lijsten van gewenste personen niet worden toegelaten.
+>Als u de Universele Redacteur wilt gebruiken, moet u of:
+>
+>* Laat IP Lijsten van gewenste personen niet toe.
+>* [ stel uw eigen geval van de Universele Dienst van de Redacteur in werking.](/help/implementing/universal-editor/local-dev.md)
 
 ## Werken met Dynamic Media {#work-with-dynamic-media}
 

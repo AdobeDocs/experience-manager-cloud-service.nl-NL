@@ -1,20 +1,20 @@
 ---
-title: Ontwikkeling van lokale AEM met de Universal Editor
-description: Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
+title: Uw eigen Universal Editor-service uitvoeren
+description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lokale ontwikkeling of als onderdeel van uw eigen infrastructuur.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5a6795056090908652a72730939024e974a9a697
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
 
 
-# Ontwikkeling van lokale AEM met de Universal Editor {#local-dev-ue}
+# Uw eigen Universal Editor-service uitvoeren {#local-ue-service}
 
-Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
+Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lokale ontwikkeling of als onderdeel van uw eigen infrastructuur.
 
 ## Overzicht {#overview}
 
@@ -24,11 +24,20 @@ De Universal Editor-service bindt de Universal Editor en het back-endsysteem. Al
 * Tijdens het ontwikkelen met een lokale AEM SDK is de Universal Editor Service van de Adobe niet toegankelijk via internet.
 * Als uw AEM instantie IP beperkingen heeft en de Universele Dienst van de Redacteur van de Adobe niet in een bepaalde IP waaier is, kunt u het zelf ontvangen.
 
-In dit document wordt uitgelegd hoe u AEM uitvoert in HTTPS naast een lokale kopie van de Universal Editor-service, zodat u zich lokaal kunt ontwikkelen op AEM voor gebruik met de Universal Editor.
+## Gevallen gebruiken {#use-cases}
+
+Uw eigen exemplaar van de Universal Editor-service is handig als u het volgende wilt doen:
+
+* Lokaal ontwikkelen op AEM voor gebruik met de Universele Redacteur.
+* Voer uw eigen Universal Editor Service uit als onderdeel van uw eigen infrastructuur, onafhankelijk van de Universal Editor Service van Adobe.
+
+Beide gebruiksgevallen worden ondersteund. In dit document wordt uitgelegd hoe u AEM uitvoert in HTTPS naast een lokale kopie van de Universal Editor-service.
+
+Als u uw eigen Universal Editor-service wilt uitvoeren als onderdeel van uw eigen infrastructuur, voert u dezelfde stappen uit als in het lokale ontwikkelingsvoorbeeld.
 
 ## AEM instellen voor uitvoering op HTTPS {#aem-https}
 
-Binnen een buitenframe dat is beveiligd met HTTPS kan een onbeveiligd HTTP-frame niet worden geladen. De Universal Editor Service wordt uitgevoerd op HTTPS en daarom moet AEM of een andere externe pagina ook worden uitgevoerd op HTTPS.
+Binnen een buitenframe dat is beveiligd met HTTPS, kan een onbeveiligd HTTP-frame niet worden geladen. De Universal Editor Service wordt uitgevoerd op HTTPS en daarom moet AEM of een andere externe pagina ook worden uitgevoerd op HTTPS.
 
 Hiervoor moet u AEM instellen voor uitvoering op HTTPS. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
 
