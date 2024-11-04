@@ -4,7 +4,7 @@ description: Leer hoe u een aangepaste verzendactie maakt voor een adaptieve For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b1d5e210d84ad1443b30e4b166f52da51a182b09
+source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -277,6 +277,5 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 ## Verwante artikelen
 
 {{af-submit-action}}
-
 
 <!-- The [Adaptive Forms Core Components](https://github.com/adobe/aem-core-forms-components) repository includes a sample folder, `customsubmission/logsubmit`, to simplify the process of adding new custom submit actions. It also provides the Java service implementation for the `logsubmit` custom submit action, named `CustomAFSubmitService`.java. These resources are available on GitHub. -->
