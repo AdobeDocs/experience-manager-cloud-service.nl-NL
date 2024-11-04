@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1480'
 ht-degree: 0%
 
 ---
@@ -143,6 +143,19 @@ De beschikbare Generative AI-mogelijkheden zijn:
 * Correctie van het probleem waarbij de categorie-URL-indeling niet werkte zoals verwacht in de cloud-instantie.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
+
+### Configuratie om formulierverzendingen te beheren {#configuration-submissions}
+
+AEM heeft een nieuwe configuratie geïntroduceerd: `com.adobe.granite.ui.components.FormRestrict` om formulierverzendingen voor Coral of Foundation op specifieke locaties te beheren. Deze configuratie bestaat uit twee velden:
+
+1. **voegt Toegestane Wegen** toe: Specificeert de wegen waar de vormacties worden toegelaten.
+1. **Beperk Gedrag**: Bepaalt het gedrag voor beperkte wegen (wegen niet inbegrepen in de lijst van gewenste personen). U kunt kiezen uit twee opties:
+   * **Popup** (gebrek): Toont een popup bericht.
+   * **verhinderen**:Blokken van voorlegging.
+
+>[!NOTE]
+>
+>Deze configuratie wordt niet ondersteund voor alle koraal- of stichtingsformulieren onder `/apps` , `/libs` , `/mnt/overlay` en `/mnt/override` .
 
 ### Self-Serve Log Forwarding met de Geavanceerde Optie van het Voorzien van een netwerk {#log-forwarding}
 
