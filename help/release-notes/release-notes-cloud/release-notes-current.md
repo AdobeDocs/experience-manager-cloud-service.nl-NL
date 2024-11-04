@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -83,19 +83,19 @@ De rapporten kunnen nu automatisch in de Mening van Assets op een terugkerend pr
 
 **Digitaal beheer van Rechten voor vergunning gegeven activa**
 
-Organisaties kunnen nu de naleving van de licentievoorwaarden verhogen en het risico minimaliseren dat ze middelen delen met licentievoorwaarden door DRM te gebruiken voor gelicentieerde middelen voor gebruikers van Content Hub, waardoor gebruikers de licentievoorwaarden moeten controleren en accepteren voordat ze gelicentieerde activa kunnen downloaden.
+Organisaties kunnen nu de naleving van de licentievoorwaarden verhogen en het risico minimaliseren dat ze middelen delen met licentievoorwaarden door DRM te gebruiken voor gelicentieerde middelen voor gebruikers van Content Hub, waardoor gebruikers de licentievoorwaarden moeten controleren en accepteren voordat ze gelicentieerde activa kunnen downloaden. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
 ![ download-veelvoudige-vergunning ](/help/assets/assets/download-multiple-license.png)
 
 **de meta-gegevensconfiguratie van de kaart van Activa**
 
-Met Content Hub kunt u nu maximaal zes velden configureren voor de belangrijkste metagegevensvelden die u op de Asset Card moet weergeven.
+Met Content Hub kunt u nu maximaal zes velden configureren voor de belangrijkste metagegevensvelden die u op de Asset Card moet weergeven. Voor meer informatie, zie de sectie van de Kaart van Activa in [ vormen Content Hub ](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![ zeer belangrijke meta-gegevens op de Kaart van Activa ](/help/assets/assets/asset-card-key-metadata.png)
 
 **vorm het zicht en de download van verlopen activa**
 
-Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
+Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden. Voor meer informatie, zie de Verlopen sectie van Assets in [ vormen Content Hub ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![ Verlopen activa op Content Hub ](/help/assets/assets/expired-assets-content-hub.png)
 
