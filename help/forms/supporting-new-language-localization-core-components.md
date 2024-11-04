@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Clone the Adaptive Forms Core Components Repository: U hebt een clientbibliothee
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Met deze opdracht downloadt u de opslagplaats en maakt u een map met de naam `aem-core-forms-components` op uw computer. In deze handleiding wordt deze map de `[Adaptive Forms Core Components repository]`
+   Met deze opdracht downloadt u de opslagplaats en maakt u een map met de naam `aem-core-forms-components` op uw computer. In deze handleiding wordt deze map de `[Adaptive Forms Core Components repository]` genoemd.
 
 
 ## Een landinstelling toevoegen {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ Nu, neem de `clientlib-it-custom-locale` bibliotheek in uw AEM as a Cloud Servic
 
       ![ het Plakken clientlib-het-douane-scène ](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. `aemLangUrl` pad bijwerken in `languageinit.js`
+
+   1. Navigeer aan de volgende folder binnen uw [ AEMaaCS projectfolder ]:
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. Open het `languageinit.js` -bestand in de editor.
+   1. Zoek de volgende regel in het `languageinit.js` -bestand:
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. Vervang `forms-core-components-it` door uw `<app-id>` (werkelijke id van uw toepassing) op de bovenstaande regel.
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![ taal-init-dossier ](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> Als u `forms-core-components-it` niet vervangt door uw projectnaam of `<app-id>` , kan de component voor de datumkiezer niet worden vertaald.
 
 ### Maak een bestand voor uw nieuwe landinstelling:
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,12 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3} bezit van de output van de Dienst {voor het aanhalen van APIs in de Redacteur van de Regel.</b>
    </td>
    </tr>
+   <tr>
+   <td>Navigeren tussen de deelvensters</td>
+   <td> De <b> Volgende knoop </b> en <b> Vorige knoop </b> componenten worden verstrekt om tussen de panelen te navigeren. Een navigatieknop die binnen de container wordt geplaatst, werkt op de onderliggende elementen ervan</td>
+   <td> De <b> Navigatie in Comité </b> regel is beschikbaar in de regelredacteur, die gebruikers toestaat om regels tot stand te brengen voor het navigeren tussen de kinderen van panelen.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [Verschil in verschillende versies van de redacteur van de Regel](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
 * [Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
+* [Object Scope in aangepaste functies](/help/forms/custom-function-core-component-scope-function.md)
 * [Voorbeelden van het ontwikkelen en gebruiken van een aangepaste functie](/help/forms/custom-function-core-components-use-cases.md)
 
 

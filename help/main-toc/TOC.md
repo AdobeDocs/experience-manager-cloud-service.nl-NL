@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
+source-wordcount: '5741'
 ht-degree: 2%
 
 ---
@@ -746,9 +746,11 @@ ht-degree: 2%
                + [Verschil tussen de Redacteur van de Regel van de Stichting en de Redacteur van de Regel van de Component van de Kern](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Operator- en gebeurtenistypen beschikbaar in de regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-events-operators.md)
                + [Voorbeelden voor een Regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-usecases.md)
+               + [Asynchrone functies in een adaptief formulier gebruiken](/help/forms/using-async-funct-in-rule-editor.md)
             + Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd {#create-and-use-custom-function-core-component}
                + [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
                + [Een aangepaste functie maken en gebruiken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
+               + [Object Scope in aangepaste functies](/help/forms/custom-function-core-component-scope-function.md)
                + [Voorbeelden van aangepaste functies voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-components-use-cases.md)
             + Inleiding aan het Portaal van Forms en zijn componenten {#introduction-to-forms-portal}
                + [Inleiding tot Forms Portal-component](/help/forms/configure-forms-portal.md)

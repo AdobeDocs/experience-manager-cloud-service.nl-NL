@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,26 @@ ht-degree: 0%
 Het artikel verstrekt gedetailleerde voorbeelden van een Redacteur van de Regel voor een Adaptief Vorm die op kerncomponenten wordt gebaseerd, die inzichten in zijn juiste implementatie voor verschillende scenario&#39;s verstrekken. Met de regeleditor kunnen ontwikkelaars de logica voor het beheren van het gedrag van formulieren definiëren en beheren.
 Nu, laten wij de verschillende implementaties voor een regelredacteur bespreken.
 
+
+## Navigeren tussen deelvensters met een knop
+
+Met de regeleditor kunt u navigatieknoppen toevoegen aan uw deelvensterlay-outs, zoals Horizontale tabbladen, Verticale tabbladen, Accordeons of Wizard. Deze knoppen verbeteren de gebruikerservaring door de overgangen tussen de verschillende deelvensters in een formulier te vereenvoudigen en de focus naar het geselecteerde deelvenster te verplaatsen.
+
+Stel dat u communiceert met het gedeelte met profielinstellingen van een toepassing waarin navigatie wordt vergemakkelijkt door knoppen in plaats van door tabbladen. Op het ingaan van de profielmontages van het belangrijkste dashboard, ontmoet u een reeks panelen gewijd aan verschillende aspecten van hun profiel: **Persoonlijke Informatie**, **de Veiligheid van de Rekening**, en **Voorkeur van het Bericht**.
+
+Elk deelvenster bevat relevante velden en opties voor het bijwerken van specifieke informatie. Navigatieknoppen, zoals `Next` en `Back` , worden op de voorgrond geplaatst, zodat u tussen deze deelvensters kunt navigeren. Klik `Next` om de gebruiker aan het **paneel van de Veiligheid van de Rekening** te vooruit en `Back` te klikken om aan het **Persoonlijke paneel van de Informatie** terug te keren. Deze navigatiemethode zorgt voor een naadloze overgang tussen secties zonder dat de context verloren gaat, waardoor een vloeiende en intuïtieve gebruikerservaring ontstaat. Het gebruik van navigatieknoppen vereenvoudigt het proces om profielmontages te beheren, die de interactie organiseren en gebruikersvriendelijker maken.
+
+Met de regel `Navigate among the panels` kunt u navigatieregels maken voor knoppen waarmee tussen verschillende deelvensters kan worden geschakeld.  Selecteer het kenmerk `Shift focus to the next item` om de focus naar het volgende deelvenster in de layout te verplaatsen.
+
+![ Volgende paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-next.png) {width=50%}
+
+Wanneer op de knop `Next` wordt geklikt, gaat de focus naar het volgende deelvenster in de layout.
+
+![ navigeer in paneel gebruikend Volgende knoop ](/help/forms/assets/navigate-in-panel.gif)
+
+Op dezelfde manier kunt u een regel maken voor de knop `Previous` om de focus naar het vorige deelvenster te verplaatsen.
+
+![ Vorige paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png) {width=50%}
 
 ## Complexe berekeningen stroomlijnen in herhaalbare deelvensters met functies
 

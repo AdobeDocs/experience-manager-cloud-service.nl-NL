@@ -4,13 +4,13 @@ description: Het artikel beschrijft verschillende gebruiksgevallen voor een aang
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeelden van het ontwikkelen en gebruiken van douanefunctie
 
@@ -264,7 +264,7 @@ U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de 
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken om verzendingshandlers te negeren met behulp van een `Contact Us` -formulier.
 
-Voeg de volgende lijn van code toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie, om de voorlegging of het mislukkingsbericht voor vormvoorlegging aan te passen en de berichten van de vormvoorlegging in een modaal vakje te tonen:
+Voeg de volgende lijn van code toe zoals die in [ wordt verklaard creeer-douane-functionas ](/help/forms/custom-function-core-component-create-function.md) sectie, om de voorlegging of het mislukkingsbericht voor vormvoorlegging aan te passen en de berichten van de vormvoorlegging in een modaal vakje te tonen:
 
 ```javascript
 /**

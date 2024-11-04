@@ -4,13 +4,13 @@ description: AEM Forms ondersteunt aangepaste functies, waarmee gebruikers hun e
 keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een douanefunctie, gebruik douanefunctie in regel redacteur.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
-
 
 # Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten
 
@@ -238,49 +238,7 @@ Laten we eens kijken naar de functies van aangepaste functies.
 
 ### Asynchrone ondersteuning in aangepaste functies {#support-of-async-functions}
 
-De asynchrone douanefuncties verschijnen niet in de lijst van de regelredacteur. Het is echter mogelijk om asynchrone functies aan te roepen binnen aangepaste functies die zijn gemaakt met synchrone functie-expressies.
-
-![ Synchronisatie en async douanefunctie ](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> Het voordeel van het aanroepen van asynchrone functies in aangepaste functies is dat asynchrone functies gelijktijdige uitvoering van meerdere taken mogelijk maken, met het resultaat van elke functie die binnen de aangepaste functies wordt gebruikt.
-
-Bekijk de code hieronder om te zien hoe we asynchrone functies kunnen aanroepen met behulp van aangepaste functies:
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-In het bovenstaande voorbeeld is de functie asyncFunction een `asynchronous function` . De toepassing voert een asynchrone bewerking uit door een `GET` -aanvraag in te dienen bij `https://petstore.swagger.io/v2/store/inventory` . Het wacht op de reactie met `await`, parseert de hoofdtekst van de reactie met JSON met de `response.json()` en retourneert de gegevens. De functie `callAsyncFunction` is een synchrone aangepaste functie die de functie `asyncFunction` aanroept en de reactiegegevens in de console weergeeft. Hoewel de functie `callAsyncFunction` synchroon is, roept deze de asynchrone functie asynchrone functie asyncFunction aan en verwerkt deze het resultaat met `then` - en `catch` -instructies.
-
-Om zijn het werken te zien, laten wij een knoop toevoegen en een regel voor de knoop creëren die de asynchrone functie na een knoop klikt.
-
-![ creërend regel voor async functie ](/help/forms/assets/rule-for-async-funct.png)
-
-Raadpleeg de illustratie van het onderstaande consolevenster om aan te tonen dat wanneer de gebruiker op de knop `Fetch` klikt, de aangepaste functie `callAsyncFunction` wordt aangeroepen, die op zijn beurt een asynchrone functie `asyncFunction` aanroept. Inspect het consolevenster om de reactie op de knoop te bekijken klik:
-
-![ venster van de Console ](/help/forms/assets/async-custom-funct-console.png)
-
+U kunt asynchrone functies in de regelredacteur uitvoeren gebruikend douanefuncties. Voor begeleiding op hoe te om dit te doen, verwijs naar het artikel [ Gebruikend asynchrone functies in een AanpassingsVorm ](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Veld- en globale bereikobjecten ondersteunen aangepaste functies {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ Veldobjecten verwijzen naar de afzonderlijke componenten of elementen in een for
 >[!NOTE]
 >
 > `param {scope} globals` moet de laatste parameter zijn en wordt niet weergegeven in de regeleditor van een adaptief formulier.
+
+Voor meer informatie over werkingsgebiedvoorwerpen, zie de [ voorwerpen van het Toepassingsgebied in douanefuncties ](/help/forms/custom-function-core-component-scope-function.md) artikel.
 
 ### Ondersteuning voor caching in aangepaste functies
 

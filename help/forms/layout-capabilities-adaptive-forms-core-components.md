@@ -4,13 +4,13 @@ description: De lay-out en vormgeving van Adaptief Forms op verschillende appara
 feature: Adaptive Forms, Core Components
 keywords: Indeling van adaptief formulier op basis van kerncomponenten, verschillende indelingen voor formulieren, dynamische formulierindelingen AEM, AEM Cloud Service-formulierindelingen, formulierindelingstypen in AEM kerncomponenten, adaptieve formulierindelingen
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
 
 ---
-
 
 # Lay-outmogelijkheden van adaptieve Forms op basis van kerncomponenten
 
@@ -261,7 +261,6 @@ Op dezelfde manier kunt u ook titels voor de andere twee deelvensters verbergen.
    ![ De componenten van het Derde Comité ](/help/forms/assets/panel-3-component.png)
 
 1. Klik op **[!UICONTROL Preview]** in de rechterbovenhoek van de ontwerpomgeving.
-
    ![ Horizontale Lay-out ](/help/forms/assets/horizontal-layout.gif)
 
 U kunt ook [ slepen-en-daling de componenten ](#extra-bytes) om de vormcomponenten aan elk paneel toe te voegen.
