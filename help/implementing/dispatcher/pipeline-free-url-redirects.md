@@ -3,7 +3,7 @@ title: URL-omleidingen zonder pijplijn
 description: Leer hoe u 301 of 302 omleidingen declareert zonder toegang tot Git- of Cloud Manager-pijpleidingen.
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -57,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Vervolgens moet u in een Apache-configuratiebestand zoals `rewrites/rewrite.rules` of `<yourfile>.vhost` het kaartbestand configureren waarnaar wordt verwezen door de eigenschap name ( `my.map` in het bovenstaande voorbeeld).
+Vervolgens moet u in een Apache-configuratiebestand zoals `rewrites/rewrite.rules` of `<yourfile>.vhost` het kaartbestand configureren waarnaar wordt verwezen door de eigenschap name (`my.map` in het bovenstaande voorbeeld).
 
 De instructie `RewriteMap` geeft aan dat de gegevens worden opgeslagen in een databasemanagementbestandsindeling (DBM) met behulp van de indeling `sdbm` (simple DBM).
 
