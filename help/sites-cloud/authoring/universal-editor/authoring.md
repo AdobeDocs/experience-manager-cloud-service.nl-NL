@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
+source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1317'
 ht-degree: 0%
 
 ---
@@ -159,7 +159,11 @@ De geselecteerde component is verwijderd.
 
 1. De gesleepte component wordt grijs in de inhoudsstructuur, terwijl de invoegpositie wordt aangeduid met een blauwe lijn. Laat de component los om deze op de nieuwe locatie te plaatsen.
 
-De componenten worden opnieuw gerangschikt in zowel de inhoudsstructuur als de editor
+De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de redacteur.
+
+>[!NOTE]
+>
+>De componenten kunnen niet tussen containers worden bewogen als een verschillend [ componentenfilter ](/help/implementing/universal-editor/customizing.md#filtering-components) tussen de bron en doelcontainers wordt geplaatst.
 
 ## Inhoud voorvertonen {#previewing-content}
 

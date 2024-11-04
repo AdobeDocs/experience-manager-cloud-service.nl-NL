@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2024.08.13
-description: Dit zijn de releaseopmerkingen voor de release 2024.08.13 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2024.09.3
+description: Dit zijn de releaseopmerkingen voor de release 2024.09.3 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
+source-git-commit: b70acef8dc259fff3041617abe0a89f7eb73dfab
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2024.08.13 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2024.09.3 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 13 augustus 2024 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 3 september 2024 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ Dit zijn de opmerkingen bij de release van 13 augustus 2024 van de Universal Edi
 
 ## Nieuwe functies {#what-is-new}
 
-* **de Types van Gegevens van de Douane**: Tailor de redacteur aan uw unieke gegevensbehoeften met de capaciteit om [ douanegebieden binnen het eigenschappenpaneel tot stand te brengen.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-   * Of u nu een aangepaste productkiezer ontwikkelt voor gebruik in handelsversies of een vervolgkeuzelijst vult met waarden uit uw achtergronden, deze functie geeft u de controle die u nodig hebt over de gegevens die auteurs gebruiken om inhoud samen te stellen.
-* **de Belemmering &amp; Daling van 0} dwars-Container: Geniet van grotere flexibiliteit in lay-outsamenstelling met de capaciteit om componenten over verschillende containers te bewegen via belemmering en daling ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) binnen het [ paneel van de Boom van de Inhoud.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)**[
-* **Geoptimaliseerde Integratie GitHub**: Het coderen voor reacties GitHub is geïntroduceerd, beduidend sneller terugwinning van markeringen en `universal-editor-cors-library`, resulterend in een snellere en vlottere gebruikerservaring.
-* **configureerbare IMS Symbolische Bevestiging**: Om flexibiliteit in symbolisch beheer te verhogen, [ IMS symbolische bevestiging is nu facultatief.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
-   * Met deze configuratieoptie kunt u validatie desgewenst uitschakelen en de instellingen van uw cloudgateway vereenvoudigen.
-* **de Integratie van het Splunk**: Het registreren van het spleet is geïntegreerd in de [ Universele Dienst van de Redacteur voor lokale ontwikkeling, ](/help/implementing/universal-editor/local-dev.md#setting-up-service) verbeterend toezicht en diagnostiek.
-   * Deze integratie zorgt voor een efficiënte logboekregistratie, vloeiendere bewerkingen en snellere probleemoplossing.
+* **`rootPath`nu beschikbaar voor de inhoudkiezer**: De inhoudkiezer kan nu van a `rootPath` worden voorzien om de gebruiker met een gerichte selectie van inhoud voor te stellen wanneer het gebruiken van [ AEM Inhoud, ](/help/implementing/universal-editor/field-types.md#aem-content) [ het Fragment van de Inhoud, ](/help/implementing/universal-editor/field-types.md#content-fragment) en [ het gebiedstypes van het Fragment van de Ervaring ](/help/implementing/universal-editor/field-types.md#experience-fragment).
+   * De selectie van inhoud is daardoor beperkt tot de inhoud in het opgegeven pad en eventuele submappen.
+
+## Programma voor vroegtijdige adoptie voor 6.5-ondersteuning {#early-adoption}
+
+De Universele Redacteur is nu beschikbaar voor hoofdloze gebruikgevallen wanneer het gebruiken van AEM 6.5 als deel van een vroege adoptieprogramma.
+
+Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw feedback, stuurt u een e-mail naar uw Adobe via het e-mailadres dat bij uw Adobe ID hoort.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* **Verbeterde het Publiceren Terugkoppeling**: Als de publicatie wegens ontoereikende toestemmingen ontbreekt, terugkoppel aan de gebruiker tijdens het publiceren is verbeterd om een duidelijke waarschuwing te tonen in plaats van eenvoudig op een mislukking te wijzen.
-* **Verbeterde behandeling URL**: De kwesties met onjuiste het coderen URL/decoderen die het publiceren mislukkingen veroorzaakten werden opgelost.
-* **Accurate Gegevens die** behandelen: Een kwestie waar de vlotteraantallen verkeerd werden opgeslagen aangezien de gehelen zijn gericht, die nauwkeurige gegevens behandelen over uw inhoud verzekeren.
-* **Veiligheid en Stabiliteit**: De kwetsbaarheid van de veiligheid in de beelden van het Docker is bevestigd en de testdekking voor kritieke componenten zoals de Plukker van de Component en Breadcrumbs zijn uitgevoerd, leidend tot een veiligere, stabielere, en betrouwbare redactervaring.
+* **de Belemmering &amp; Daling van 0} dwars-Container: [ bewegende componenten tussen verschillende containers via belemmering-en-daling ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) respecteert nu [ componentenfilters ](/help/implementing/universal-editor/customizing.md#filtering-components) in zowel de bron als het doel.**

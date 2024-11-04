@@ -4,9 +4,9 @@ description: In deze video ziet u voorbeelden van velden en componenttypen die d
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
+source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1281'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,11 @@ Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebrui
 
 #### Inhoud AEM {#aem-content}
 
-Een AEM type inhoudcomponent laat een AEM inhoudkiezer toe, die kan worden gebruikt om inhoudsverwijzingen te plaatsen.
+Een AEM type inhoudcomponent laat een AEM inhoudkiezer toe, die kan worden gebruikt om inhoudsverwijzingen te plaatsen. Het biedt een aanvullend validatietype aan.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `rootPath` | `string` | Het pad dat de inhoudkiezer opent voor de gebruiker om AEM inhoud te selecteren, waarbij de selectie wordt beperkt tot die map en submappen | Nee |
 
 >[!BEGINTABS]
 
@@ -298,11 +302,15 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt 
 
 #### Inhoudsfragment {#content-fragment}
 
-De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
+De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie en bevestiging aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `variationName` | `string` | Naam variabele waarin de geselecteerde variatie wordt opgeslagen. Indien ongedefinieerd, wordt geen variatietekiezer weergegeven | Nee |
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `rootPath` | `string` | Het pad dat de inhoudkiezer opent voor de gebruiker om het inhoudsfragment te selecteren, waarbij de selectie wordt beperkt tot die map en submappen | Nee |
 
 >[!NOTE]
 >
@@ -430,11 +438,15 @@ Het biedt ook een aanvullend validatietype.
 
 #### Ervaar fragment {#experience-fragment}
 
-De plukker van het Fragment van de Ervaring kan worden gebruikt om een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
+De plukker van het Fragment van de Ervaring kan worden gebruikt om een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie en bevestiging aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `variationName` | `string` | Naam variabele waarin de geselecteerde variatie wordt opgeslagen. Indien ongedefinieerd, wordt geen variatietekiezer weergegeven | Nee |
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `rootPath` | `string` | Het pad dat de inhoudkiezer opent voor de gebruiker om het ervaringsfragment te selecteren, waarbij de selectie wordt beperkt tot die map en submappen | Nee |
 
 >[!BEGINTABS]
 
