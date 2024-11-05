@@ -4,10 +4,10 @@ description: Open de gegevens in de sectie Rapporten van de mening van Assets om
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 5ff36490c4d9a6f61255ad06ffab984f18c1823b
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '1197'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,7 @@ Alle gebruikers die zijn toegewezen aan het productprofiel van Assets-weergavebe
 Navigeer naar **[!UICONTROL Reports]** onder **[!UICONTROL Settings]** om rapporten te openen.
 
 ![ Rapporten ](assets/reports.png)
+
 <!--
 In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
 
@@ -36,11 +37,148 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 * **Created**: Gives information of the date when the report was generated.
 -->
 
+## Een rapport maken {#create-report}
+
+De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het dashboard Rapporten. Met deze mogelijkheid kunnen gebruikers CSV-rapporten genereren en downloaden waarin de uploads en downloads van bedrijfsmiddelen binnen een opgegeven tijdsspanne worden beschreven, variërend van een eenmalig tot een dagelijks, wekelijks, maandelijks of jaarlijks interval.
+
+**om een rapport tot stand te brengen:**
+
+1. Navigeer aan **Rapporten** en klik **creëren rapport** (van het hoogste recht). **creeer rapport** dialoogdoos toont de hieronder gebieden:
+   ![ creeer-rapport ](/help/assets/assets/executed-reports1.svg)
+
+   **In het lusje van de Configuratie:**
+
+   1. **type van Rapport:** Uitgezocht tussen uploadt en downloadtype.
+   1. **Titel:** voeg een titel aan het rapport toe.
+   1. **Beschrijving:** voeg een facultatieve beschrijving aan het rapport toe.
+   1. **Uitgezochte omslagweg:** selecteer een omslagweg om het rapport van geupload en gedownloade activa binnen die specifieke omslag te produceren. Als u bijvoorbeeld het rapport met middelen nodig hebt die naar een map zijn geüpload, geeft u het pad naar die map op.
+   1. **Uitgezochte datuminterval:** selecteer de datumwaaier om te bekijken uploadt of downloadactiviteit binnen de omslag.
+   <br>
+
+   >[!NOTE]
+   >
+   > In de Assets-weergave worden alle lokale tijdzones omgezet in UTC (Coordinated Universal Time).
+
+   **in het Lusje van Kolommen:** selecteer de kolomnamen in het rapport te tonen. In de volgende tabel wordt het gebruik van alle kolommen uitgelegd:
+
+   <table>
+    <tbody>
+     <tr>
+      <th><strong>Kolomnaam</strong></th>
+      <th><strong>Beschrijving</strong></th>
+      <th><strong>Rapporttype</strong></th>
+     </tr>
+     <tr>
+      <td>Titel</td>
+      <td>De titel van het element.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Pad</td>
+      <td>Het mappad waar het element beschikbaar is in de Assets-weergave.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>MIME-type</td>
+      <td>Het MIME-type voor het element.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Grootte</td>
+      <td>De grootte van het element in bytes.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Gedownload door</td>
+      <td>De e-mailid van de gebruiker die het element heeft gedownload.</td>
+      <td>Downloaden</td>
+     </tr>
+     <tr>
+      <td>Downloaddatum</td>
+      <td>De datum waarop de handeling voor het downloaden van middelen wordt uitgevoerd.</td>
+      <td>Downloaden</td>
+     </tr>
+     <tr>
+      <td>Auteur</td>
+      <td>De auteur voor het element.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Aanmaakdatum</td>
+      <td>De datum waarop het element is geüpload naar de weergave Assets.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Wijzigingsdatum</td>
+      <td>De datum waarop het element voor het laatst is gewijzigd.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Verlopen</td>
+      <td>De vervalstatus van het actief.</td>
+      <td>Uploaden en downloaden</td>
+     </tr>
+     <tr>
+      <td>Gedownload op gebruikersnaam</td>
+      <td>De naam van de gebruiker die het element heeft gedownload.</td>
+      <td>Downloaden</td>
+     </tr>           
+    </tbody>
+   </table>
+
+## Bestaand rapport weergeven en downloaden {#View-and-download-existing-report}
+
+De bestaande rapporten tonen onder **Uitvoerde Rapporten** tabel. Klik **Rapporten** en selecteer **Uitvoerde Rapporten** om alle gecreeerde rapporten met de status te bekijken zoals **voltooide**, erop wijzend zij klaar zijn te downloaden. Om het rapport in formaat te downloaden CSV of het rapport te schrappen, selecteer de rapportrij. Dan selecteer **CSV van de Download** of **Schrapping**.
+![ mening en download bestaande rapporten ](/help/assets/assets/view-download-existing-report.png)
+
+## Een rapport plannen {#schedule-report}
+
+In de mening UI van AEM Assets, **het Rapport van het Programma** plaatst - omhoog een automatische generatie rapporten met gespecificeerde toekomstige intervallen zoals dagelijks, wekelijks, maandelijks, of jaarlijks. Met deze functie kunt u terugkerende rapportagebehoeften stroomlijnen en actuele gegevensupdates garanderen. Terwijl **Rapport** leidt produceert rapporten voor vroegere data. De voltooide rapporten worden vermeld onder **Uitvoerde Rapporten** en de komende rapporten worden gevonden onder **Geplande Rapporten**.
+
+Volg onderstaande stappen om een rapport te plannen:
+
+1. Klik op Rapporten in het linkervenster en klik vervolgens op Rapport maken (van rechtsboven).
+1. In het dialoogvenster Rapport wordt de volgende informatie weergegeven:
+   1. **type van Rapport:** Uitgezocht tussen uploadt en downloadtype.
+   1. **Titel:** voeg een titel aan het rapport toe.
+   1. **Beschrijving**: Voeg een facultatieve beschrijving aan het rapport toe.
+   1. **Uitgezochte omslagweg:** selecteer een omslagweg om een rapport voor activa te produceren die aan of van die specifieke omslag in de toekomst zullen worden geupload.
+   1. Wissel **rapport van het Programma:** Wissel om het rapport voor een recentere tijd of voor zijn herhaalde voorkomen te plannen.
+      ![ planningsrapport ](/help/assets/assets/schedule-reports1.svg)
+
+   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde activiteitstype in de AEM. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1} gebied van het datuminterval {.**
+
+   >[!NOTE]
+   >
+   > In de Assets-weergave worden alle lokale tijdzones omgezet in UTC (Coordinated Universal Time).
+
+## Geplande rapporten weergeven {#view-scheduled-reports}
+
+De geplande rapporten tonen onder **Geplande Rapporten** lusje op een systematisch georganiseerde manier. Alle voltooide rapporten voor elk gepland rapport worden opgeslagen binnen één enkele rapportomslag. Klik ![ vouwen samen ](/help/assets/assets/expand-icon1.svg) om de voltooide rapporten te bekijken. Als u bijvoorbeeld een dagelijks rapport hebt gepland, worden alle voltooide rapporten gegroepeerd in één map. Deze organisatie vereenvoudigt zowel de navigatie als de ontdekkingsbaarheid van rapporten. Om geplande rapporten te bekijken, klik **Rapporten** en klik dan **Geplande Rapporten**. Alle geplande rapporten worden weergegeven met hun status als lopend of voltooid. Voltooide rapporten kunnen worden gedownload.\
+![ gepland rapport ](/help/assets/assets/scheduled-reports-tab.png)
+
+## Geplande rapporten bewerken en annuleren {#edit-cancel-scheduled-reports}
+
+1. Navigeer aan de **Geplande Rapporten** tabel.
+1. Selecteer de rapportrij.
+1. Klik **uitgeven**.
+1. Klik **annuleer Programma** en klik dan **bevestigen**, om het geplande rapport te annuleren. Voor geannuleerde rapporten, wordt de volgende runtime leeg en toont de status geannuleerd.
+   ![ geef uit en annuleer gepland rapport ](/help/assets/assets/cancel-edit-scheduled-reports.png)
+
+### Plan hervatten {#resume-schedule}
+
+Om het geannuleerde programma te hervatten, selecteer de rapportrij en klik **Programma van de Hervatting**. Wanneer deze wordt hervat, worden de volgende runtimegegevens opnieuw weergegeven en wordt de status weergegeven als zijnde actief.
+![ hervat programma ](/help/assets/assets/resume-schedule.png)
+
+>[!NOTE]
+>
+> Als u een geannuleerd rapport hervat vóór de geplande einddatum, de rapporten van de annuleringsdatum aan de hervattingsdatum automatisch produceren.
+
 ## Inzichten weergeven {#view-live-statistics}
 
 Met de Assets-weergave kunt u realtime gegevens voor uw Assets-weergaveomgeving bekijken met het dashboard Insights. U kunt real-time gebeurtenismetriek tijdens de laatste 30 dagen of voor de laatste 12 maanden bekijken.
 
-<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
+<!--![Toolbar options when you select an asset](assets/assets-view-live-statistics.png)-->
 
 Klik op **[!UICONTROL Insights]** beschikbaar in het linkernavigatievenster om de volgende automatisch gegenereerde grafieken weer te geven:
 
@@ -63,178 +201,7 @@ Klik op **[!UICONTROL Insights]** beschikbaar in het linkernavigatievenster om d
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-
-## Een downloadrapport maken {#create-download-report}
-
-Een downloadrapport maken:
-
-1. Navigeer naar **[!UICONTROL Settings]** > **[!UICONTROL Reports]** en klik op **[!UICONTROL Create Report]** .
-
-1. Geef op het tabblad [!UICONTROL Configuration] het rapporttype op als **[!UICONTROL Download]** .
-
-1. Geef een titel en een optionele beschrijving voor het rapport op.
-
-1. Selecteer met behulp van het veld **[!UICONTROL Select Folder Path]** het mappad met de elementen waarop het rapport moet worden uitgevoerd.
-
-1. Selecteer het datuminterval voor het rapport.
-
-   >[!NOTE]
-   >
-   > In de Assets-weergave worden alle lokale tijdzones omgezet in UTC (Coordinated Universal Time).
-
-1. Selecteer op het tabblad [!UICONTROL Columns] de kolomnamen die u in het rapport wilt weergeven.
-
-1. Klik op **[!UICONTROL Create]**.
-
-   ![ Rapport van de Download ](assets/download-reports-config.png)
-
-De volgende lijst verklaart het gebruik van alle kolommen die u aan het rapport kunt toevoegen:
-
-<table>
-    <tbody>
-     <tr>
-      <th><strong>Kolomnaam</strong></th>
-      <th><strong>Beschrijving</strong></th>
-     </tr>
-     <tr>
-      <td>Titel</td>
-      <td>De titel van het element.</td>
-     </tr>
-     <tr>
-      <td>Pad</td>
-      <td>Het mappad waar het element beschikbaar is in de Assets-weergave.</td>
-     </tr>
-     <tr>
-      <td>MIME-type</td>
-      <td>Het MIME-type voor het element.</td>
-     </tr>
-     <tr>
-      <td>Grootte</td>
-      <td>De grootte van het element in bytes.</td>
-     </tr>
-     <tr>
-      <td>Gedownload door</td>
-      <td>De e-mailid van de gebruiker die het element heeft gedownload.</td>
-     </tr>
-     <tr>
-      <td>Downloaddatum</td>
-      <td>De datum waarop de handeling voor het downloaden van middelen wordt uitgevoerd.</td>
-     </tr>
-     <tr>
-      <td>Auteur</td>
-      <td>De auteur voor het element.</td>
-     </tr>
-     <tr>
-      <td>Aanmaakdatum</td>
-      <td>De datum waarop het element is geüpload naar de weergave Assets.</td>
-     </tr>
-     <tr>
-      <td>Wijzigingsdatum</td>
-      <td>De datum waarop het element voor het laatst is gewijzigd.</td>
-     </tr>
-     <tr>
-      <td>Verlopen</td>
-      <td>De vervalstatus van het actief.</td>
-     </tr>
-     <tr>
-      <td>Gedownload op gebruikersnaam</td>
-      <td>De naam van de gebruiker die het element heeft gedownload.</td>
-     </tr>           
-    </tbody>
-   </table>
-
-## Een rapport voor uploaden maken {#create-upload-report}
-
-Een rapport voor uploaden maken:
-
-1. Navigeer naar **[!UICONTROL Settings]** > **[!UICONTROL Reports]** en klik op **[!UICONTROL Create Report]** .
-
-1. Geef op het tabblad [!UICONTROL Configuration] het rapporttype op als **[!UICONTROL Upload]** .
-
-1. Geef een titel en een optionele beschrijving voor het rapport op.
-
-1. Selecteer met behulp van het veld **[!UICONTROL Select Folder Path]** het mappad met de elementen waarop het rapport moet worden uitgevoerd.
-
-1. Selecteer het datuminterval voor het rapport.
-
-1. Selecteer op het tabblad [!UICONTROL Columns] de kolomnamen die u in het rapport wilt weergeven.
-
-1. Klik op **[!UICONTROL Create]**.
-
-   ![ upload Rapport ](assets/upload-reports-config.png)
-
-De volgende lijst verklaart het gebruik van alle kolommen die u aan het rapport kunt toevoegen:
-
-<table>
-    <tbody>
-     <tr>
-      <th><strong>Kolomnaam</strong></th>
-      <th><strong>Beschrijving</strong></th>
-     </tr>
-     <tr>
-      <td>Titel</td>
-      <td>De titel van het element.</td>
-     </tr>
-     <tr>
-      <td>Pad</td>
-      <td>Het mappad waar het element beschikbaar is in de Assets-weergave.</td>
-     </tr>
-     <tr>
-      <td>MIME-type</td>
-      <td>Het MIME-type voor het element.</td>
-     </tr>
-     <tr>
-      <td>Grootte</td>
-      <td>De grootte van het element.</td>
-     </tr>
-     <tr>
-      <td>Auteur</td>
-      <td>De auteur voor het element.</td>
-     </tr>
-     <tr>
-      <td>Aanmaakdatum</td>
-      <td>De datum waarop het element is geüpload naar de weergave Assets.</td>
-     </tr>
-     <tr>
-      <td>Wijzigingsdatum</td>
-      <td>De datum waarop het element voor het laatst is gewijzigd.</td>
-     </tr>
-     <tr>
-      <td>Verlopen</td>
-      <td>De vervalstatus van het actief.</td>
-     </tr>              
-    </tbody>
-   </table>
-
-## Bestaande rapporten weergeven {#view-report-list}
-
-Na [ creërend het rapport ](#create-download-report), kunt u de lijst van bestaande rapporten bekijken en selecteren om hen in een formaat te downloaden CSV of hen te schrappen.
-
-Navigeer naar **[!UICONTROL Settings]** > **[!UICONTROL Reports]** om de lijst met rapporten weer te geven.
-
-Voor elk rapport, kunt u rapporttitel, het type van het rapport, gespecificeerde beschrijving bekijken terwijl het creëren van het rapport, status van het rapport, e-mailidentiteitskaart van de auteur die het rapport creeerde, en de datum van de rapportverwezenlijking.
-
-`Completed ` status van het rapport geeft aan dat het rapport gereed is voor downloaden.
-
-![ Lijst van rapporten ](assets/list-of-reports.png)
-
-
-## Een CSV-rapport downloaden {#download-csv-report}
-
-Een rapport in CSV-indeling downloaden:
-
-1. Ga naar **[!UICONTROL Settings]** > **[!UICONTROL Reports]**.
-
-1. Selecteer een rapport en klik op **[!UICONTROL Download CSV]** .
-
-Het geselecteerde rapport wordt gedownload in CSV-indeling. De kolommen die in het CSV-rapport worden weergegeven, zijn afhankelijk van de kolommen die u selecteert terwijl [ het rapport ](#create-download-report) maakt.
-
-## Een rapport verwijderen {#delete-report}
-
-Een rapport verwijderen:
-
-1. Ga naar **[!UICONTROL Settings]** > **[!UICONTROL Reports]**.
-
-1. Selecteer een rapport en klik op **[!UICONTROL Delete]** .
-
-1. Klik nogmaals op **[!UICONTROL Delete]** om te bevestigen.
+* **Telling van Activa door grootte:** segmenteert de totale activa tellen in uw milieu van de Mening van Assets in verschillende groottewaaiers, die de telling en het percentage activa in elke groottewaaier benadrukken, door een donutgrafiek wordt vertegenwoordigd.
+  ![ inzichten-activa-telling-door-grootte ](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Telling van Activa door het Type van Activa:** segmenteert het totale assetentelling in uw milieu van de Mening van Assets, die de telling en het percentage van activa benadrukken die op hun dossiertypes worden gebaseerd, door een donutgrafiek wordt vertegenwoordigd.
+  ![ inzichten-activa-telling-door-grootte ](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
