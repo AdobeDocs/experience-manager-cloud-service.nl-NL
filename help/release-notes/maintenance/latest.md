@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
+source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
@@ -16,61 +16,58 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 18311 {#18311}
+## Release 18459 {#18459}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18311 samengevat, die op 22 oktober 2024 openbaar werd gemaakt. De vorige onderhoudrelease was release 18175.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18459 samengevat, die op 5 november 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 18311.
 
-De activering van de 2024.10.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-18311}
+### Verbeteringen {#enhancements-18459}
 
-* ASSETS-41820: Indexering verbeteringen voor de verwerking van waakhond.
-* ASSETS-43720: Functionele verbeteringen in de verwerking van waakhond.
-* ASSETS-42554: Prestatieverbeteringen voor grote mappen.
-* SKYOPS-77603: Beheer van omleidingen door zakelijke gebruikers.
+* CQ-4357471: Voeg ondersteuning toe voor i18n-woordenboeken omzetten in AEMaaCS.
+* SITES-23591: Content Fragments: Content fragment upgrade for UID support.
+* SITES-25440: Inhoudsfragmenten: CFM Search API om replicatiestatus weer te geven.
+* SITES-24369: Content Fragments: OpenAPI documentatieverbeteringen.
+* SITES-25478: Content Fragments: Add back-end support for external asset references.
+* SITES-26119: Content Fragments: Add support of external asset references in reference type.
+* SITES-21199: Edge Delivery met Universal Editor: voeg ondersteuning toe voor sjablonen die op basis van pagina&#39;s zijn gemaakt.
+* SITES-20311: Edge Delivery met Universal Editor: voeg ondersteuning toe voor het importeren van CSV&#39;s in spreadsheets.
+* SITES-24821: Edge Delivery met Universal Editor: zorg dat aem.page / aem.live de standaardinstelling is voor integratie met Edge Delivery.
 
-### Opgeloste problemen {#fixed-issues-18311}
+### Opgeloste problemen {#fixed-issues-18459}
 
-* ASSETS-37534: Wijzigingen in zoekopdracht om eigenschap die wordt gebruikt voor goedkeuringsdoel, niet beschikbaar te maken.
-* ASSETS-38322: Verwijder de publicatiecriteria provider config Remove publiceer gebeurteniseigenschap.
-* ASSETS-40482: Toegankelijkheidsprobleem in spel/pauze en dempen/dempen in Scene7-videospeler.
-* ASSETS-40593: De foutpagina treedt op nadat u op de knop &quot;Eigenschappen&quot; hebt geklikt in Assets > Bestanden.
-* ASSETS-40598: Synchroniseer slimme gewassen wanneer niet-gesynchroniseerd element wordt verplaatst naar een map waarvoor synchronisatie is ingeschakeld.
-* ASSETS-40743: Problemen met het activeren van het dialoogvenster Element vervangen wanneer bepaalde tekens voorkomen in de bestandsnaam.
-* ASSETS-40825: Assets Search Facets verdwijnt na bewerking van zoekformulier.
-* ASSETS-41007: Verwijdering op AEM laat soms verweesde Assets bij levering.
-* ASSETS-41172: Dynamic Media sjablonen met speciale tekens niet toegestaan in naam.
-* ASSETS-41896 : Assets genoemd in cq:discted property on the folder should NOT be published to Brand Portal.
-* ASSETS-42067: Dynamic Media Templates - Download geeft een fout.
-* ASSETS-42070: Dynamic Media-sjablonen - gebruikers zonder beheerdersrechten moeten toegang hebben tot Sjabloon voor maken/bewerken.
-* ASSETS-42344: Connected Assets Sync verbroken - Opnieuw verbinden en advies voor klant.
-* ASSETS-42620: Probleem met de voorvertoningsoptie van elementversies - laat een leeg voorbeeld zien wanneer we het element openen.
-* ASSETS-42701: Probleem met levering en uitsnijden van geoptimaliseerde webafbeeldingen.
-* ASSETS-42966: Async barricade kan bij vergissing worden vrijgegeven als meerdere taken hetzelfde pad hebben.
-* ASSETS-43072: Dynamic Media Templates - Sjabloonverwijzingen, zoekonderbrekingen op een ongeldige referentie.
-* ASSETS-43212: Problemen met internationalisatie in de editor voor het metagegevensschema.
-* ASSETS-43202: oplossingen voor het selecteren van annotaties die u wilt afdrukken vanuit de tijdlijn.
-* ASSETS-43502: AEM naam bestaande voorinstelling CS-afbeelding niet weergegeven op pagina Bewerken.
-* ASSETS-43538: Bij het synchroniseren van een taak met kopieerelementen wordt een onjuiste eigenschap gebruikt voor het bronpad.
-* ASSETS-43798: controleer eerst op bestemmingspad voordat u elementen kopieert.
-* ASSETS-43945: Verhoog de wachttijd voor opnieuw proberen tot 20 minuten voor de taakwachtrij voor async-elementen.
-* ASSETS-44025: De functie voor het verwijderen van elementen kan niet worden gesynchroniseerd wanneer afzonderlijke elementen zijn geselecteerd.
-* SITES-26128 : Class cast-uitzondering in CreateLiveCopyStep.
-* SCRNS-4551: [ SG Pools ] het kanaal van Screens die videocomponent bevatten toont &quot;Algemene Fout van de Pagina&quot;op browser voorproef en speler
+* CQ-4358730: CQPagePreviewGenerator mislukt als er meer dan 10 toetsen moeten worden vertaald.
+* FORMS-14978: Pagina laden inschakelen voor een formulier op basis van kerncomponenten voor themaceredacteur.
+* FORMS-16596: Toegankelijkheidsprobleem: uitgeschakelde knoppen niet herkend door Screen Reader.
+* SITES-10575: MSM: Vervagings-bloomfilter Loader probeert meer dan 100.000 rijen te laden.
+* SITES-20755: Inhoudsfragmenten: Verwijzing naar element met UUID vernieuwen geeft de miniatuur niet aan.
+* SITES-26253: Inhoudsfragmenten: UUID-migratie: Wijzig het onderwerp van de schrijftaak om generiek te zijn.
+* SITES-21338: Content Fragments: referencedBy eindpunt keert niet de correcte paginaverwijzing terug.
+* SITES-24421: De Fragmenten van de inhoud: geef het eindpunt van CF uit werkt niet voor CF die via GET CF wordt teruggewonnen.
+* SITES-25461: Inhoudsfragmenten: Filter op model in zoekopdracht naar CF&#39;s moet niet hoofdlettergevoelig zijn.
+* SITES-25471: Content Fragments: Fix validation of global models in the ModelValidatorServlet.
+* SITES-25795: Content Fragments: CF Model API ontbreekt wanneer er geen cq datum wordt geplaatst.
+* SITES-25817: Inhoudsfragmenten: Verbeteren, starten: laatste promotie bijwerken voor CF-opstarters.
+* SITES-26030: Inhoudsfragmenten: Endpoint /referencesTree retourneert geen benodigde header.
+* SITES-26031: De Fragmenten van de inhoud: De status van de replicatie is niet teruggekeerd op CFM onderzoekseindpunt.
+* SITES-26213: Content Fragments: Unpublish content fragments should only validate published references.
+* SITES-26226: Inhoudsfragmenten: workflowprobleem starten wanneer geen van de opgegeven paden bruikbaar is.
+* SITES-26238: Inhoudsfragmenten: De elementverwijzingen die door de API worden geretourneerd, hebben een andere volgorde dan de volgorde van JCR.
+* SITES-25456: Gebeurtenissen: wanneer u een pagina verplaatst, wordt naast de gebeurtenis die door de pagina wordt verplaatst, een gebeurtenis gegenereerd die door de pagina wordt verwijderd.
+* SITES-25658: Gebeurtenissen: De laag en sourceUrl worden niet gevuld in de gebeurtenissen van de paginacontrolestatus.
+* SITES-6497: Launches: Create page in launch does not working.
+* SITES-25393: Edge Delivery met Universal Editor: tekstknooppunten die verloren gaan bij het renderen van opgemaakte richtext met één alinea.
+* SITES-24643: Edge Delivery with Universal Editor: OpenGraph- en twitter-metagegevenskenmerken werken niet in het metagegevensmodel van de pagina.
 
-### Bekende problemen {#known-issues-18311}
+### Bekende problemen {#known-issues-18459}
 
-* FORMS-15818: Component descriptor-item `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
+Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-18311}
+### Verouderde functies en API&#39;s {#deprecated-18459}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-18311}
-
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 3 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
-
-### Ingesloten technologieën {#embedded-tech-18311}
+### Ingesloten technologieën {#embedded-tech-18459}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
