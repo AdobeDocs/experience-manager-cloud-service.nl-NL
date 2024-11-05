@@ -4,10 +4,10 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 2%
+source-wordcount: '1084'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +24,11 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
 1. Klik op uw projectkaart.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![ kaart van het Project ](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. Voor het project dat pagina landt, navigeer aan de **Readiness** sectie, zoals aangetoond in het hieronder cijfer.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
+   ![ Gereedheid ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >Zie Een project maken en beheren in Cloud Acceleration Manager voor meer informatie.
@@ -43,7 +43,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
 1. Klik **Overzicht** van de **kaart van de Analyse van Beste praktijken**.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
+   ![ Analyse van Beste praktijken - Overzicht ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Download Best Practices Analyzer (BPA).
 
@@ -57,14 +57,14 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
 1. In CAM, krijgt de klik **uploadt sleutel**, zodat kunt u de sleutel krijgen die wordt gebruikt om uw systeem te vormen om BPA- rapporten direct aan CAM automatisch te uploaden.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
+   ![ krijg uploadsleutel ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
    >Het rapport kan nog steeds handmatig worden geüpload, maar met Upload Key wordt de bewerking gestroomlijnd. Het rapport kan niet handmatig worden geüpload in de Incognito-modus van de browser.
 
 1. Nadat een nieuw rapport is geupload, kunt u het rapport van de Analyse van Beste praktijken in CAM zien.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![ het rapport van de Analyse van Beste praktijken ](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
    >Als er meerdere, verschillende rapporten worden geüpload, is het rapport dat in detail wordt weergegeven altijd het rapport met de meest recente aanmaakdatum (geen uploaddatum).
@@ -82,7 +82,7 @@ Voer de onderstaande stappen uit:
 
 1. Klik de **actie van de Voorproef van de Druk**.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
+   ![ Voorproef van de Druk ](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
 1. Op het nieuwe lusje met het rapport dat in een afdrukbare voorproef wordt getoond, klik **Druk** om het rapport aan een formaat van PDF te drukken.
 
@@ -91,7 +91,7 @@ Voer de onderstaande stappen uit:
    >* De optie **sparen als PDF** wordt geadviseerd en voor de bovengenoemde functionaliteit gesteund.
    >* Als de knop Afdrukken van de browser wordt gebruikt, wordt slechts één pagina afgedrukt.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![ Druk ](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Trendline weergeven gebruiken {#trendline-view-cam}
 
@@ -104,15 +104,15 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
 
 1. Navigeer aan uw project en klik **Overzicht** van de **3} kaart van de Analyse van Beste praktijken in de** Readiness **fase.**
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![ Analyse van Beste praktijken - Overzicht ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Van de **drop-down lijst van de Mening**, klik **Trendline Rapport**, zoals aangetoond in het hieronder cijfer.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![ Trendline Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Het klikken **Rapport Trendline** opent de trendlinemening van het rapport.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![ Trendline Mening ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
    >1. **de Componenten van de Douane en Trend van het Malplaatje**
    >
    >U kunt de grafische weergave toevoegen of wijzigen in de keuzelijst, zoals in de onderstaande afbeelding wordt getoond:
-   >![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![ selecteer de grafische mening ](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Rapport Analyse van beste praktijken {#analysis-report}
 
 Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de Analyse van Beste praktijken:
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![ Rapport van de Analyse van de Analyse van Beste praktijken ](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Met elke kaart kunt u:
@@ -144,21 +144,21 @@ Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de An
 
 De **kaart van de Eigenschappen van het Rapport** verstrekt informatie over rapporteigenschappen zoals rapportdatum, duur, filters, uploaddatum, en (AEM) details van Adobe Experience Manager.
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![ Eigenschappen van het Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Overzicht van rapporten {#report-overview}
 
 Dit **kaart van het Overzicht van 0} Rapport verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich naar AEM as a Cloud Service te bewegen, zoals aangetoond in het hieronder cijfer van toepassing zijn.**
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
+![ Overzicht van het Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 Het klikken van dit rapport opent het **Rapport** tabel.
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
+![ lusje van het Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 U kunt het rapport filtreren dat op belangrijkheid, subtype, of telling wordt gebaseerd.
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
+![ de filters van het Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Zie [ Interpreting het Rapport van de Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) over vondsten categorieën en belangrijkheidsniveaus leren.
@@ -183,17 +183,17 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 * Beoordeling
 * Overwegingen bij migratie van inhoud
 
-  ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![ Beoordeling van de Complexiteit van de Migratie ](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Planning en de Kaart van de Opstelling gebruiken {#planning-setup}
 
 1. Klik **Mening** van de **Planning en de kaart van de Opstelling**. Deze kaart biedt alle relevante inhoud die u helpt uw AEM te plannen en in te stellen.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
+   ![ Planning en Opstelling - mening ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. Een inhoudscarrousel geeft alle relevante informatie weer voor deze fase van de migratiereis.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![ Planning en Opstelling carrousel ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Het schrappen van een Rapport van de Analyse van de Beste praktijken van de mening Trendline {#delete-trendline}
 
@@ -202,23 +202,23 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
 1. Navigeer aan uw project en klik **Overzicht** van de **3} kaart van de Analyse van Beste praktijken in de** Readiness **fase.**
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![ Analyse van Beste praktijken - Overzicht ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klik **...**.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![ Ellipse ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. In de drop-down lijst, klik **Mening Trendline**, zoals aangetoond in het hieronder cijfer.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![ Mening Trendline ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Klik het schrappingspictogram van het **Trendline scherm van het Rapport**.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![ Trendline Rapport - schrap ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Klik **Schrapping** om de schrapping te bevestigen.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![ Schrapping ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Volgende functies {#whats-next}
 

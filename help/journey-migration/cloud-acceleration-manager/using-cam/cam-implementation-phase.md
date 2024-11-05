@@ -4,10 +4,10 @@ description: Deze pagina biedt een overzicht van de implementatiefase in Cloud A
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ De implementatiefase omvat:
 
 Klik uw projectkaart zodat kunt u het project openen die pagina landen en aan de **sectie van de Implementatie** navigeren, zoals aangetoond in het volgende cijfer.
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![ het landen van het Project pagina - Implementatie ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >Zie [ Creërend en het Leiden een Project in Cloud Acceleration Manager ](getting-started-cam.md#create-project) om meer te leren.
@@ -37,11 +37,11 @@ Volg deze sectie zodat u de de activiteitenkaart van de Lokale Ontwikkeling kunt
 
 1. Klik **Mening** van de **Lokale kaart van de Ontwikkeling**.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
+   ![ Lokale kaart van de Ontwikkeling ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. Een inhoudscarrousel geeft de relevante informatie voor deze fase van de migratiereis weer.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![ Lokale de carrousel van de Ontwikkeling ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Code Refactoring Card gebruiken {#code-refactoring}
@@ -52,7 +52,7 @@ Volg deze sectie zodat kunt u de Activiteitenkaart van de Refactoring van de Cod
 
 1. Klik **Overzicht** van de **Refactoring van de Code** activiteitenkaart.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![ het refactoring van de Code kaart ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. De pagina toont de lijst van code refactoring activiteiten die door het strengheidsniveau worden georganiseerd. Klik op de twee gemarkeerde pictogrammen voor meer informatie.
 
@@ -67,11 +67,11 @@ Volg deze sectie zodat kunt u de Activiteitenkaart van de Refactoring van de Cod
 
 Het **Dispatcher** lusje verstrekt informatie over hoe te om de configuraties van AEM as a Cloud Service Apache en van Dispatcher te structureren, en hoe te om het plaatselijk te bevestigen en in werking te stellen alvorens aan de milieu&#39;s van de Wolk op te stellen. Hierin wordt ook foutopsporing in Cloud-omgevingen beschreven.
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![ Dispatcher tabel ](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 Het **Testen** lusje verstrekt informatie over functioneel, de Controle van de Ervaring, en het testen UI.
 
-![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![ het Testen lusje ](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Service-implementatiekaart gebruiken {#aem-as-a-cloud-service-deployment}
@@ -82,11 +82,11 @@ Volg deze sectie zodat kunt u de activiteitenkaart van AEM as a Cloud Service De
 
 1. Klik **Mening** van de **3} activiteitenkaart van de Plaatsing van AEM as a Cloud Service.**
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
+   ![ Plaatsing AEM as a Cloud Service - kaart ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. Een inhoudscarrousel geeft de relevante informatie voor deze fase van de migratiereis weer.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![ Plaatsing AEM as a Cloud Service - carrousel ](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Inhoudsoverdrachtkaart gebruiken {#content-transfer}
@@ -97,11 +97,11 @@ Volg deze sectie zodat u de activiteitenkaart van de Overdracht van de Inhoud ku
 
 1. Klik **Overzicht** van de **Vervoerkaart van de Inhoud** activiteit.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
+   ![ Overdracht van de Inhoud - Overzicht ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
 1. Als u een inhoudsoverdracht wilt starten, moet u een migratieset maken. Klik **creeer migratieset**. Met een migratieset kan inhoud worden overgebracht naar AEM as a Cloud Service.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![ creeer migratieset ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Een migratieset verloopt na een langdurige periode van inactiviteit. Zie [ Verval van de Reeks van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
@@ -113,13 +113,13 @@ Volg deze sectie zodat u de activiteitenkaart van de Overdracht van de Inhoud ku
 
 1. Als u inhoud uit de Migratie-set wilt opnemen in een omgeving op AEM as a Cloud Service, moet u een opname starten. Navigeer aan **IngestieBanen** en klik **Nieuwe opname**. Het overzicht [ Ingesting Inhoud in Doel ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) zodat kunt u leren hoe te om de fase van de Ingestie van inhoudoverdracht te voltooien.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![ Ingestietaken ](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![Content Transfer Tool calculator](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
