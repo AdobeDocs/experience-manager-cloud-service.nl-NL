@@ -4,9 +4,9 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
+source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3187'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,7 @@ Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceler
    * **Sluitereffect:** kies de `Wipe` waarde
       * De **Sluitereffect** optie plaatst het uitgangspunt van de bestemming van de opname. Als **Sluitereffect** wordt toegelaten, wordt de bestemming met inbegrip van al zijn inhoud teruggesteld aan de versie van AEM die in Cloud Manager wordt gespecificeerd. Als deze optie niet is ingeschakeld, behoudt de bestemming de huidige inhoud als beginpunt.
       * Deze optie beïnvloedt **NIET** hoe de opname van inhoud zal worden uitgevoerd. De congestie gebruikt altijd een strategie van de inhoudsvervanging en _niet_ een strategie van de inhoudssamenvoeging zodat, in zowel **Wipe** als **niet-Wipe** gevallen, zal het opnemen van een migratiereeks inhoud in de zelfde weg op de bestemming beschrijven. Als de migratieset bijvoorbeeld `/content/page1` bevat en het doel al `/content/page1/product1` bevat, verwijdert de opname het gehele `page1` -pad en de bijbehorende subpagina&#39;s, inclusief `product1` , en vervangt u deze door de inhoud in de migratieset. Dit betekent zorgvuldige planning moet worden gedaan wanneer het uitvoeren van a **niet-Wipe** opname aan een bestemming die om het even welke inhoud bevat die zou moeten worden gehandhaafd.
+      * Niet-vette ingesties zijn specifiek ontworpen voor de meest voorkomende inname. Deze indelingen hebben een incrementele hoeveelheid nieuwe inhoud die is gewijzigd sinds de laatste inname in een bestaande migratieset. Het uitvoeren van niet-wegwerpinjecties buiten dit gebruiksgeval kan leiden tot zeer lange inname.
 
    >[!IMPORTANT]
    > Als het plaatsen **Sluitereffect** voor het opnemen wordt toegelaten, stelt het de volledige bestaande bewaarplaats met inbegrip van de gebruikerstoestemmingen op de instantie van de doel Cloud Service terug. Dit het terugstellen is waar ook voor een admin gebruiker die aan de **wordt toegevoegd beheerders** groep en die gebruiker moet aan de beheerdersgroep opnieuw worden toegevoegd om een opname te beginnen.
