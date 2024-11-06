@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 1%
+source-wordcount: '613'
+ht-degree: 0%
 
 ---
 
@@ -66,6 +66,10 @@ Geen.
 ### Verouderde functies en API&#39;s {#deprecated-18459}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
+
+### Beveiligingsproblemen {#security-18459}
+
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 21 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
 ### Ingesloten technologieën {#embedded-tech-18459}
 
