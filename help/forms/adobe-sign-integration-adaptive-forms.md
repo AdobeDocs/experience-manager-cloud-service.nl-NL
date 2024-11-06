@@ -4,10 +4,9 @@ description: Leer hoe te om Adobe Acrobat Sign voor  [!DNL AEM Forms]  as a Clou
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -57,7 +56,8 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
 1. U kunt nu **[!UICONTROL Select solution]** selecteren om [!DNL Adobe Acrobat Sign] te selecteren.
 
-   ![ Adobe Acrobat Sign Solutions ](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![ Configuratie van Adobe Acrobat Sign Solutions ](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -104,11 +104,17 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
+   
+   > U kunt de bereikmodifier wijzigen van `self` in `account` rechtstreeks vanuit AEM interface, zoals in stap 12 wordt beschreven.
+
    Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Acrobat Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
 
    ![ OAuth Config ](/help/forms/assets/oauthconfig-new.png)
 
 1. Ga terug naar de **[!UICONTROL Create Adobe Acrobat Sign Configuration]** pagina. Geef op het tabblad **[!UICONTROL Settings]** de [**[!UICONTROL Client ID]** (ook wel toepassings-id genoemd) en **[!UICONTROL Client Secret]**] op. Gebruik [ identiteitskaart van de Cliënt en Geheim van de Cliënt van de toepassing van Adobe Acrobat Sign ](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) u in de vorige stap creeerde.
+
+1. In de sectie [!UICONTROL Authorization Scope] kunt u het bereik wijzigen naar &quot;account&quot; of &quot;zelf&quot; door het voorvoegsel &quot;self&quot; of &quot;account&quot; toe te voegen aan het bereik, indien nodig.
+   ![ Reikwijdte van de Vergunning ](/help/forms/assets/authorization-scope.png)
 
 1. Selecteer de optie **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** om bestanden die zijn gekoppeld aan een adaptief formulier, toe te voegen aan het corresponderende [!DNL Adobe Acrobat Sign] -document dat ter ondertekening is verzonden.
 
@@ -263,6 +269,10 @@ Bijvoorbeeld, om de configuratiedienst dagelijks bij 00 in werking te stellen:00
 
 Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van de Cloud Service op.
 
+## Veelgestelde vragen
+
+* **Q: Kan ik de Adobe Sign GovCloud-pagina van de Handtekening in een iframe teruggeven?**
+* **A:** ja, kunt u de pagina van de Handtekening van Adobe Sign GovCloud in een iframe teruggeven.
 
 >[!MORELIKETHIS]
 >
