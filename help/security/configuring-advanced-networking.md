@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
+source-wordcount: '5524'
 ht-degree: 0%
 
 ---
@@ -398,7 +398,7 @@ Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres,
 
 ## Virtual Private Network (VPN) {#vpn}
 
-VPN staat het verbinden met een infrastructuur op-gebouw of gegevenscentrum van de auteur toe, publiceert, of voorproefinstanties. Dit kan bijvoorbeeld handig zijn om de toegang tot een database te beveiligen. Het staat ook het verbinden met verkopers SaaS zoals een verkoper van CRM toe die VPN steunt of het verbinden van een collectief netwerk met de auteur van AEM as a Cloud Service, voorproef, of publiceer instantie.
+VPN staat het verbinden met een infrastructuur op-gebouw of gegevenscentrum van de auteur toe, publiceert, of voorproefinstanties. Dit kan bijvoorbeeld handig zijn om de toegang tot een database te beveiligen. Het staat ook het verbinden met verkopers SaaS zoals een verkoper van CRM toe die VPN steunt.
 
 De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de informatie in de **RouteBased configuratieinstructies** kolom in [ deze lijst van apparaten.](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configureer het apparaat zoals beschreven in de tabel.
 
@@ -558,7 +558,9 @@ De lijst beschrijft hieronder verkeer dat verplettert.
 
 ### Nuttige domeinen voor configuratie {#vpn-useful-domains-for-configuration}
 
-De lijst beschrijft hieronder een reeks domeinen en IPs die voor configuratie en ontwikkeling nuttig zijn.
+Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks domeinen en bijbehorende IPs die voor configuratie en ontwikkeling nuttig zijn. De lijst verder onder het diagram beschrijft die domeinen en IPs.
+
+![ Configuratie van het Domein van VPN ](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -581,21 +583,6 @@ De lijst beschrijft hieronder een reeks domeinen en IPs die voor configuratie en
   </tr>
 </tbody>
 </table>
-
-### VPN beperken tot Ingress-verbindingen {#restrict-vpn-to-ingress-connections}
-
-Als u slechts de toegang van VPN tot AEM wilt toestaan, kunnen de milieu lijsten van gewenste personen in Cloud Manager worden gevormd zodat slechts IP die door `p{PROGRAM_ID}.external.adobeaemcloud.com` wordt bepaald om met het milieu wordt toegestaan te spreken. Dit kan de zelfde manier zoals om het even welke andere op IP-Gebaseerde lijst van gewenste personen in Cloud Manager worden gedaan.
-
-Als de regels op weg-gebaseerd moeten zijn, gebruik standaardHTTP- richtlijnen op het niveau van Dispatcher om bepaalde IPs te ontkennen of toe te staan. Zij zouden ervoor moeten zorgen dat de gewenste wegen bij CDN ook niet cacheable zijn zodat het verzoek altijd aan oorsprong krijgt.
-
-#### Voorbeeld van HTTP-configuratie {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## Geavanceerde netwerkconfiguraties inschakelen voor omgevingen {#enabling}
 
