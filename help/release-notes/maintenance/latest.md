@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -56,8 +56,11 @@ De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is
 * SITES-25456: Gebeurtenissen: wanneer u een pagina verplaatst, wordt naast de gebeurtenis die door de pagina wordt verplaatst, een gebeurtenis gegenereerd die door de pagina wordt verwijderd.
 * SITES-25658: Gebeurtenissen: De laag en sourceUrl worden niet gevuld in de gebeurtenissen van de paginacontrolestatus.
 * SITES-6497: Launches: Create page in launch does not working.
+* SITES-25938: Launches: Unexpected delete post Translation project.
 * SITES-25393: Edge Delivery met Universal Editor: tekstknooppunten die verloren gaan bij het renderen van opgemaakte richtext met één alinea.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph- en twitter-metagegevenskenmerken werken niet in het metagegevensmodel van de pagina.
+* SITES-25401: Experience Fragments: Trage XF referentie update
+
 
 ### Bekende problemen {#known-issues-18459}
 
