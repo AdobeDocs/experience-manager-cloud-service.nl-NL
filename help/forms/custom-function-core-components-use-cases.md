@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 Het artikel bevat de gedetailleerde voorbeelden van aangepaste functies voor een adaptief formulier dat is gebaseerd op kerncomponenten en dat waardevolle inzichten biedt in de effectieve implementatie ervan in verschillende scenario&#39;s. De functies van de douane worden gebruikt in de regelredacteur van AEM Forms, laten ontwikkelaars toe om de logica te bepalen en te controleren die vormgedrag beheerst.
 In dit artikel worden verschillende implementaties van aangepaste functies besproken, waarbij wordt getoond hoe deze kunnen worden gebruikt om formulieren af te stemmen op specifieke vereisten en de algemene functionaliteit te verbeteren.
 
-## Opties voor vervolgkeuzelijsten instellen met behulp van aangepaste functies
+## De opties in de vervolgkeuzelijst vullen met aangepaste functies
 
-De Redacteur van de regel in de Componenten van de Kern steunt niet de **Vastgestelde Opties van** bezit om de opties van de dropdown lijst bij runtime te plaatsen. U kunt de opties voor de vervolgkeuzelijst echter instellen met behulp van aangepaste functies.
+De Redacteur van de Regel in de Componenten van de Kern steunt niet het **Vastgestelde bezit van Opties** om dropdown lijstopties dynamisch bij runtime te bevolken. U kunt de opties in de vervolgkeuzelijst echter vullen met behulp van aangepaste functies, waarmee u opties kunt ophalen op basis van specifieke logica. Aangepaste functies bieden meer flexibiliteit en controle over de manier waarop en wanneer de vervolgkeuzemogelijkheden worden gevuld. Hierdoor wordt de gebruikerservaring verbeterd.
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie om de opties van de dropdown lijst te plaatsen gebruikend douanefuncties:
+Om de opties van de dropdown lijst te bevolken gebruikend een douanefunctie, voeg de volgende code toe zoals die in [ wordt beschreven creeer-douane-functie ](/help/forms/custom-function-core-component-create-function.md) sectie:
+
 
 ```javascript
     /**
