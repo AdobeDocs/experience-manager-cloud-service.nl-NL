@@ -3,13 +3,13 @@ title: Een Edge Delivery-site toevoegen aan Cloud Manager
 description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramma of sandboxprogramma.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
+source-git-commit: db661281831dcb07491dca16e73e835b487814a6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
 
 ---
-
 
 # Een Edge Delivery-site toevoegen aan Cloud Manager {#adding}
 
@@ -54,8 +54,6 @@ Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
 
 1. Klik **verifieer**.
 
-Zodra de opslagplaats wordt geverifieerd, wordt zijn status in de Edge Delivery-sitetabel bijgewerkt. Een groene cirkel met een wit vinkje geeft de status aan.
+Wanneer de opslagplaats wordt geverifieerd, wordt de status in de Edge Delivery-sitetabel bijgewerkt. Een groene cirkel met een wit vinkje geeft de status aan.
 
 In de zelfde lijst, klik ![ Informatie over de plaats van Edge Delivery ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) om plaatsdetails te bekijken. Deze informatie omvat de geverifieerde Repository URL, samen met de URL&#39;s van de website Voorbeeld en Productie.
-
-
