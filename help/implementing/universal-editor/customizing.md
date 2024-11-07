@@ -4,7 +4,7 @@ description: Leer over de verschillende uitbreidingspunten en andere eigenschapp
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -75,9 +75,9 @@ Als u het kenmerk `components` in een filterdefinitie instelt op `null` , worden
 ]
 ```
 
-### Componenten voorwaardelijk tonen en verbergen in Eigenschapcontrole {#conditionally-hide}
+### Componenten voorwaardelijk tonen en verbergen in deelvenster Eigenschappen {#conditionally-hide}
 
-Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen spoor verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel toe te voegen.](/help/implementing/universal-editor/field-types.md#fields)
+Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel toe te voegen.](/help/implementing/universal-editor/field-types.md#fields)
 
 De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic.](https://jsonlogic.com/) Als de voorwaarde true is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
 
@@ -132,7 +132,7 @@ Hiervoor neemt u gewoon de gewenste voorvertoning-URL op in een metatag van de v
 
 Als dienst van Adobe Experience Cloud, kan de Universele UI van de Redacteur worden uitgebreid gebruikend App Builder en de Experience Manager.
 
-UI-extensies zijn JavaScript-toepassingen die zijn gebouwd met Adobe App Builder en die kunnen worden ingesloten in UI-toepassingen die worden uitgevoerd onder Adobe Experience Cloud Unified Shell, zoals de Universal Editor. U kunt uw eigen knoppen en handelingen toevoegen aan het koptekstmenu en de eigenschappen per spoor en u kunt uw eigen gebeurtenissen voor de Universal Editor maken.
+UI-extensies zijn JavaScript-toepassingen die zijn gebouwd met Adobe App Builder en die kunnen worden ingesloten in UI-toepassingen die worden uitgevoerd onder Adobe Experience Cloud Unified Shell, zoals de Universal Editor. U kunt uw eigen knoppen en handelingen toevoegen aan het koptekstmenu en het deelvenster Eigenschappen en u kunt ook uw eigen gebeurtenissen voor de Universal Editor maken.
 
 Zie de volgende bronnen als u deze mogelijkheden wilt verkennen:
 

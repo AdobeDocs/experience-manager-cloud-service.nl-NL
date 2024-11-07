@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Inhoud bewerken is eenvoudig en intuïtief. Terwijl u de muis over de inhoud in 
 >
 >Door gebrek, selecteert het tikken of het klikken op inhoud het voor het uitgeven. Als u uw inhoud door verbindingen wilt navigeren, schakelaar aan [ voorproefwijze.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Afhankelijk van de inhoud u selecteert, kunt u verschillende op zijn plaats het uitgeven opties hebben en u kunt extra informatie en opties voor de inhoud in het [ eigenschappen spoor.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Afhankelijk van de inhoud u selecteert, kunt u verschillende op zijn plaats het uitgeven opties hebben en u kunt extra informatie en opties voor de inhoud in het [ eigenschappen paneel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Onbewerkte tekst bewerken {#edit-plain-text}
 
@@ -51,11 +51,11 @@ U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of
 
 De dunne blauwe omtrek wordt omgezet in een zware blauwe omtrek om de selectie aan te geven en er wordt een cursor weergegeven. Breng de wijzigingen aan en druk vervolgens op Enter/Return of selecteer buiten het tekstvak om de wijzigingen op te slaan.
 
-Wanneer u selecteert om de tekstcomponent te selecteren, worden zijn details getoond in het [ eigenschappen spoor.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) U kunt de tekst ook in de rails bewerken.
+Wanneer u selecteert om de tekstcomponent te selecteren, worden zijn details getoond in het [ eigenschappen paneel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) U kunt de tekst in het deelvenster ook bewerken.
 
-![ het Uitgeven tekst in de eigenschappen spoorstaaf ](assets/ue-editing-text-component-rail.png)
+![ het Uitgeven tekst in het eigenschappen paneel ](assets/ue-editing-text-component-rail.png)
 
-De details van uw tekst zijn ook beschikbaar in de eigenschappen rail. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
+Details over de tekst zijn ook beschikbaar in het deelvenster Eigenschappen. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld in het deelvenster Eigenschappen verlaat.
 
 ### RTF-tekst bewerken {#edit-rich-text}
 
@@ -75,7 +75,7 @@ Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat
 
 #### Het deelvenster Eigenschappen {#properties-rail}
 
-De [ eigenschappen spoorstaaf ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) toont een punt voor de geselecteerde tekst. Tik op het item om een dialoogvenster te openen waarin een groter canvas wordt weergegeven om de tekst te bewerken.
+Het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) toont een punt voor de geselecteerde tekst. Tik op het item om een dialoogvenster te openen waarin een groter canvas wordt weergegeven om de tekst te bewerken.
 
 ![ rijke tekst het uitgeven dialoog ](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Tik of klik **annuleer** of **Gedaan** om de veranderingen, respectievelijk te v
 
 ### Media bewerken {#edit-media}
 
-U kunt zijn details in het [ eigenschappen spoor bekijken.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+U kunt zijn details in het [ eigenschappen paneel bekijken.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![ het Uitgeven media ](assets/ue-edit-media.png)
 
-1. Tik of klik op de voorvertoning van de geselecteerde afbeelding in de eigenschappenbalk.
+1. Tik of klik op de voorvertoning van de geselecteerde afbeelding in het deelvenster Eigenschappen.
 1. Het [ activa selecteur ](/help/assets/overview-asset-selector.md#using-asset-selector) venster opent om u toe te staan om activa te selecteren.
 1. Selecteer deze optie om een nieuw element te selecteren.
-1. Selecteer **Uitgezochte** om aan eigenschappen spoor terug te keren waar de activa werd vervangen.
+1. Selecteer **Uitgezocht** om aan het eigenschappen paneel terug te keren waar de activa werd vervangen.
 
 Wijzigingen worden automatisch in de inhoud opgeslagen.
 
 ### Inhoudsfragmenten bewerken {#edit-content-fragment}
 
-Als u a [ het Fragment van de Inhoud selecteert, ](/help/sites-cloud/administering/content-fragments/overview.md) kunt u zijn details in het [ eigenschappen spoor uitgeven.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Als u a [ het Fragment van de Inhoud selecteert, ](/help/sites-cloud/administering/content-fragments/overview.md) kunt u zijn details in het [ eigenschappen paneel uitgeven.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![ Uitgevend een Fragment van de Inhoud ](assets/ue-edit-cf.png)
 
-De velden die zijn gedefinieerd in het inhoudsmodel van het geselecteerde inhoudsfragment, worden weergegeven en kunnen worden bewerkt in de eigenschappenbalk.
+De velden die zijn gedefinieerd in het inhoudsmodel van het geselecteerde inhoudsfragment, worden weergegeven en kunnen worden bewerkt in het deelvenster Eigenschappen.
 
-Als u een veld selecteert dat verwant is aan een inhoudsfragment, wordt het inhoudsfragment in de componentrail geladen en wordt het veld automatisch naar het veld geschoven.
+Als u een veld selecteert dat verwant is aan een inhoudsfragment, wordt het inhoudsfragment in het deelvenster Componenten geladen en wordt het veld automatisch naar dit fragment geschoven.
 
-Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
+Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld in het deelvenster Eigenschappen verlaat.
 
-Als u uw Fragment van de Inhoud in de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) in plaats daarvan wilt uitgeven, tik of klik [**Open in de Redacteur van het CF** knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in het eigenschappen spoor.
+Als u uw Fragment van de Inhoud in de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) in plaats daarvan wilt uitgeven, tikt of klikt [**Open in de Redacteur van het CF** knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in het eigenschappen paneel.
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht
 ### Componenten toevoegen aan containers {#adding-components}
 
 1. Selecteer een containercomponent in de [ inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) of in de redacteur.
-1. Selecteer vervolgens het invoegpictogram in de eigenschappenrails.
+1. Selecteer vervolgens het pictogram Toevoegen in het deelvenster Eigenschappen.
 
    ![ Selecterend een component om aan een container ](assets/ue-add-component.png) toe te voegen
 
@@ -136,7 +136,7 @@ De component wordt opgenomen in de container en kan in de redacteur worden uitge
 ### Componenten in containers dupliceren {#duplicating-components}
 
 1. Selecteer een component in een container gebruikend de [ inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) of de redacteur.
-1. Dan selecteer het **Dubbele** pictogram in de eigenschappen spoorstaaf.
+1. Dan selecteer het **Dubbele** pictogram in het eigenschappen paneel.
 
    ![ Selecterend een component om aan een container ](assets/ue-duplicate-component.png) toe te voegen
 1. De component wordt gedupliceerd en onder de geselecteerde component ingevoegd.
@@ -148,7 +148,7 @@ De component wordt opgenomen in de container en kan in de redacteur worden uitge
 1. Selecteer een containercomponent in de [ inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) of in de redacteur.
 1. Selecteer het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
 1. Selecteer vervolgens in de inhoudsstructuur een component in de container.
-1. Selecteer het verwijderingspictogram in de eigenschappenrails.
+1. Selecteer het verwijderpictogram in het deelvenster Eigenschappen.
 
    ![ Deleting a component ](assets/ue-delete-component.png)
 

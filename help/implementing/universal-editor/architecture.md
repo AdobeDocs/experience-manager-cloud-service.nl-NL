@@ -4,7 +4,7 @@ description: Leer over de architectuur van de Universele Redacteur en hoe de geg
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Dit document schetst elk van deze bouwstenen en hoe zij gegevens uitwisselen.
 ### Editors {#editors}
 
 * **Universele Redacteur** - De Universele Redacteur gebruikt van instrumenten voorzien DOM om op zijn plaats het uitgeven van inhoud toe te staan. Zie [ Attributen en Types ](attributes-types.md) voor details betreffende de noodzakelijke meta-gegevens. Zie het document [ Worden Begonnen met de Universele Redacteur in AEM ](getting-started.md) voor een voorbeeld van de instrumentatie in AEM.
-* **Rail van Eigenschappen** - sommige eigenschappen van componenten kunnen niet in-context worden uitgegeven, bijvoorbeeld, omwentelingstijd van een carrousel of die accordeonlusje altijd zal worden geopend of worden gesloten. Om het bewerken van dergelijke componentgegevens mogelijk te maken, wordt een formuliereditor geleverd in de zijspoor van de editor.
+* **het Comité van Eigenschappen** - sommige eigenschappen van componenten kunnen niet in-context worden uitgegeven, bijvoorbeeld, omwentelingstijd van een carrousel of die accordeonlusje altijd zal worden geopend of worden gesloten. Als u dergelijke componentgegevens wilt bewerken, vindt u een formuliereditor in het zijpaneel van de editor.
 
 ### Externe app {#remote-app}
 
@@ -51,7 +51,7 @@ De Universal Editor streeft naar een minimale SDK, zodat de instrumentatie de ve
 
 ### Persistentielaag {#persistence-layer}
 
-* **Model van het Fragment van de Inhoud** - om spoorstaaf voor het uitgeven van de eigenschappen van het Fragment van de Inhoud, de Redacteur van het Fragment van de Inhoud, en op vorm-gebaseerde redacteurs te steunen, worden de modellen per component en inhoudsfragment vereist.
+* **Model van het Fragment van de Inhoud** - om het paneel voor het uitgeven van de eigenschappen van het Fragment van de Inhoud, de Redacteur van het Fragment van de Inhoud, en op vorm-gebaseerde redacteurs te steunen, worden de modellen per component en inhoudsfragment vereist.
 * **Inhoud** - de Inhoud kan overal, zoals in AEM, Magento, etc. worden opgeslagen.
 
 ![ Persistence laag ](assets/persistence-layer.png)

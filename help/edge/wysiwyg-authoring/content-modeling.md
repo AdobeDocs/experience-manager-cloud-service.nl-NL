@@ -4,7 +4,7 @@ description: Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge D
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Voor elk blok:
 * U moet de bloknaam definiëren. Deze wordt weergegeven in de tabelkoptekst van het blok.
    * De bloknaam wordt gebruikt om de juiste stijl en het script op te halen om het blok te versieren.
 * Kan a [ modelidentiteitskaart bepalen.](/help/implementing/universal-editor/field-types.md#model-structure)
-   * De model-id is een verwijzing naar het model van de component, dat de velden definieert die beschikbaar zijn voor de auteur in de eigenschappen-rail.
+   * De model-id is een verwijzing naar het model van de component, dat de velden definieert die beschikbaar zijn voor de auteur in het deelvenster Eigenschappen.
 * Kan a [ filteridentiteitskaart bepalen.](/help/implementing/universal-editor/customizing.md#filtering-components)
    * De filterID is een verwijzing naar het filter van de component, dat toestaat om het auteursgedrag te veranderen, bijvoorbeeld door te beperken welke kinderen aan het blok of de sectie kunnen worden toegevoegd, of welke eigenschappen RTE worden toegelaten.
 

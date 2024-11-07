@@ -4,7 +4,7 @@ description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -44,7 +44,7 @@ De Universele Redacteur verstrekt een moderne en intuïtieve GUI voor het ontwer
 
 ![ Toevoegend en rangschikkend blokken in de Universele Redacteur ](assets/blocks.png)
 
-De details van de blokken kunnen dan in de spoorstaaf van Eigenschappen worden gevormd.
+De details van de blokken kunnen dan in het paneel van Eigenschappen worden gevormd.
 
 ![ Vormend blokeigenschappen ](assets/block-properties.png)
 

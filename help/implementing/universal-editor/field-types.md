@@ -1,10 +1,10 @@
 ---
 title: Modeldefinities, velden en componenttypen
-description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
+description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 1%
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # Modeldefinities, velden en componenttypen {#field-types}
 
-In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
+In het deelvenster Eigenschappen vindt u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 
 ## Overzicht {#overview}
 
-Wanneer u uw eigen toepassingen aanpast voor gebruik met de Universal Editor, moet u de componenten instrumenten en definiëren welke velden en componenttypen zij kunnen manipuleren in de eigenschappentrack van de editor. U doet dit door een model te creëren en met dat van de component te verbinden.
+Wanneer u uw eigen toepassingen aanpast voor gebruik met de universele editor, moet u de componenten van instrumenten voorzien en definiëren welke velden en componenttypen ze kunnen manipuleren in het deelvenster Eigenschappen van de editor. U doet dit door een model te creëren en met dat van de component te verbinden.
 
 Dit document biedt een overzicht van een modeldefinitie en van de velden en componenttypen waarover u beschikt, samen met voorbeeldconfiguraties.
 
@@ -28,7 +28,7 @@ Dit document biedt een overzicht van een modeldefinitie en van de velden en comp
 
 ## Modeldefinitiestructuur {#model-structure}
 
-Om een component te configureren via de eigenschappen rail in de Universal Editor moet een modeldefinitie bestaan en aan de component zijn gekoppeld.
+Als u een component wilt configureren via het deelvenster Eigenschappen in de Universal Editor, moet er een modeldefinitie bestaan en aan de component zijn gekoppeld.
 
 De modeldefinitie is een JSON-structuur, te beginnen met een array van modellen.
 
@@ -36,7 +36,7 @@ De modeldefinitie is een JSON-structuur, te beginnen met een array van modellen.
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

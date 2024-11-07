@@ -4,7 +4,7 @@ description: Leer over de belangrijkste gebruiksgevallen van de Universele Redac
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Als u meer over de architectuur van de Universele Redacteur zou willen leren, ge
 Een pagina of toepassing kan alleen worden bewerkt met de Universal Editor als deze correct van instrumenten is voorzien.
 
 * [ Attributen en Types ](/help/implementing/universal-editor/attributes-types.md) - opdat een app of een pagina door de Universele Redacteur editable zijn, moet het behoorlijk van instrumenten voorzien zijn. Dit omvat onder andere de juiste metagegevens, zodat de editor de inhoud van de app kan bewerken.
-* [ Modeldefinities, Gebieden, en de Types van Component ](/help/implementing/universal-editor/field-types.md) - Zodra de meta-gegevens aanwezig zijn om het uitgeven van een component toe te laten, bepaalt u welke gebieden en componententypes zij in de eigenschappen spoorstaaf van de redacteur kunnen manipuleren.
+* [ Modeldefinities, Gebieden, en de Types van Component ](/help/implementing/universal-editor/field-types.md) - Zodra de meta-gegevens aanwezig zijn om het uitgeven van een component toe te laten, bepaalt u welke gebieden en componententypes zij in het eigenschappen paneel van de redacteur kunnen manipuleren.
 * [ Universele Gebeurtenissen van de Redacteur ](/help/implementing/universal-editor/events.md) - u kunt uw app verder aanpassen door de het uitgeven ervaring in uw app te verbeteren door gebeurtenissen te verbruiken de Universele Redacteur op inhoud of UI interactie uitgeeft.
 
 De universele editor kan ook worden aangepast aan uw projectbehoeften.

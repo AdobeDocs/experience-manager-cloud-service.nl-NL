@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 0%
@@ -63,7 +63,7 @@ De interface is verdeeld in deze hoofdgebieden.
 * [De koptekst van het Experience Cloud](#experience-cloud-header)
 * [De werkbalk van de Universal Editor](#universal-editor-toolbar)
 * [De editor](#editor)
-* [De eigenschappen per spoor](#properties-rail)
+* [Het deelvenster Eigenschappen](#properties-rail)
 
 ![ Universele Redacteur UI ](assets/ui.png)
 
@@ -224,19 +224,19 @@ De redacteur bezet het grootste deel van het venster en is waar de pagina die in
 
 Als de redacteur op [ voorproefwijze is, ](#preview-mode) zal de inhoud navigeerbaar zijn en u kunt verbindingen volgen, maar u kunt niet de inhoud uitgeven.
 
-### Eigenschappenspoorlijn {#properties-rail}
+### Deelvenster Eigenschappen {#properties-rail}
 
-De eigenschap rail is altijd aanwezig langs de rechterkant van de redacteur. Afhankelijk van de modus, kunnen er details worden weergegeven voor een component die is geselecteerd in de inhoud of de hiërarchie van de pagina-inhoud.
+Het deelvenster Eigenschappen is altijd aanwezig aan de rechterkant van de editor. Afhankelijk van de modus, kunnen er details worden weergegeven voor een component die is geselecteerd in de inhoud of de hiërarchie van de pagina-inhoud.
 
-![ de eigenschappen spoorstaaf ](assets/properties-rail.png)
+![ het eigenschappen paneel ](assets/properties-rail.png)
 
 #### Eigenschappenmodus {#properties-mode}
 
-In de modus Eigenschappen toont de rail de eigenschappen van de component die momenteel in de editor is geselecteerd. Dit is de standaardmodus van de eigenschap rail wanneer een pagina wordt geladen.
+In de modus Eigenschappen toont het deelvenster de eigenschappen van de component die momenteel in de editor is geselecteerd. Dit is de standaardmodus van het deelvenster Eigenschappen wanneer een pagina wordt geladen.
 
 ![ wijze van Eigenschappen ](assets/properties-mode.png)
 
-Afhankelijk van het type component dat u selecteert, kunnen details worden weergegeven en gewijzigd in de eigenschappenrails.
+Afhankelijk van het type component dat u selecteert, kunnen details worden weergegeven en gewijzigd in het deelvenster Eigenschappen.
 
 ![ de details van de Component ](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Niet alle componenten hebben details die kunnen worden getoond en/of worden uitg
 
 #### Modus Inhoudsstructuur {#content-tree-mode}
 
-In de modus Inhoudsboomstructuur wordt in de rails de hiërarchie van de pagina-inhoud weergegeven.
+In de modus Inhoudsboomstructuur wordt in het deelvenster de hiërarchie van de pagina-inhoud weergegeven.
 
 ![ de boomwijze van de Inhoudsboom ](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan d
 
 ##### Openen in CF-editor {#edit}
 
-Tijdens het bewerken worden de opties voor de geselecteerde component weergegeven in de eigenschappenbalk, waar u de geselecteerde component kunt bewerken. Als de geselecteerde component een Fragment van de Inhoud is, kunt u **Open in de redacteur van het CF** knoop ook selecteren.
+Tijdens het bewerken worden de opties voor de geselecteerde component weergegeven in het deelvenster Eigenschappen, waar u de geselecteerde component kunt bewerken. Als de geselecteerde component een Fragment van de Inhoud is, kunt u **Open in de redacteur van het CF** knoop ook selecteren.
 
 ![ Open in het pictogram van de Redacteur van CF ](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht
 
 ##### Toevoegen {#add}
 
-Als u een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Toevoegen weergegeven op de eigenschappenrails.
+Als u een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Toevoegen weergegeven in het deelvenster Eigenschappen.
 
 ![ voeg pictogram ](assets/ue-add-component-icon.png) toe
 
@@ -290,7 +290,7 @@ Het tikken of het klikken van toevoegen knoop opent een drop-down menu van compo
 
 ##### Dupliceren {#duplicate}
 
-Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Dupliceren weergegeven op de eigenschappenrails.
+Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Dupliceren weergegeven in het deelvenster Eigenschappen.
 
 ![ Dupliceer pictogram ](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Tapping of het klikken van de dubbele knoop [ dupliceert de geselecteerde compon
 
 ##### Verwijderen {#delete}
 
-Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de verwijderingsoptie weergegeven op de eigenschappenrails.
+Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de verwijderingsoptie weergegeven in het deelvenster Eigenschappen.
 
 ![ pictogram van de Schrapping ](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Tapping of het klikken van de schrappingsknoop [ schrapt de component.](/help/si
 
 #### Aanvullende knoppen {#additional-properties-rail-buttons}
 
-De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen ziet in de eigenschappenrails, is de Universal Editor uitgebreid.
+De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen ziet in het deelvenster Eigenschappen, is de Universal Editor uitgebreid.
 
 * Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur uitbreiden.](/help/implementing/universal-editor/customizing.md)
 * Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager te zien.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

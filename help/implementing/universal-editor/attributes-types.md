@@ -4,7 +4,7 @@ description: Leer over de gegevensattributen en de punttypes die de Universele R
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `data-aue-type` | [ Type van het editable punt ](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
 | `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
 | `data-aue-label` | Bepaalt een douanelabel voor een selecteerbaar punt dat in de redacteur <br> wordt getoond Voor het geval `data-aue-model` wordt geplaatst, wordt het etiket teruggewonnen als model |
-| `data-aue-model` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
+| `data-aue-model` | Definieert een model dat wordt gebruikt voor formulierbewerkingen in het deelvenster Eigenschappen |
 | `data-aue-behavior` | Bepaalt het [ gedrag van een instrumentatie ](#behaviors), bijvoorbeeld, kan de stand-alone tekst of het beeld een component ook simuleren om het te bewegen of te schrappen |
 
 ## Itemtypen {#item-types}
@@ -44,7 +44,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
 | `media` | Het bewerkbare element is bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Facultatieve <br> lijst van beeld of videofiltercriteria die tot de activaselecteur wordt overgegaan | Optioneel | nvt | Optioneel |
 | `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br> zie hieronder | Afhankelijkheden <br> zie hieronder | Facultatieve <br> een lijst van toegestane componenten | Optioneel | nvt | nvt |
-| `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en de spoorstaaf en de velden ervan te openen. | Vereist | nvt | nvt | Optioneel | Optioneel | nvt |
+| `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en het deelvenster Eigenschappen en zijn velden te openen. | Vereist | nvt | nvt | Optioneel | Optioneel | nvt |
 | `reference` | Bewerkbaar is een verwijzing, bijvoorbeeld Inhoudsfragment, Ervaring Fragment of Product | Afhankelijkheden <br> zie hieronder | Afhankelijkheden <br> zie hieronder | Facultatieve <br> lijst van het de filtercriteria van het Fragment van de Inhoud, van het Product, of van het Fragment van de Ervaring die tot de verwijzingsselecteur wordt overgegaan | Optioneel | Optioneel | nvt |
 
 Afhankelijk van het gebruiksgeval `data-aue-prop` of `data-aue-resource` kan vereist zijn of niet. Bijvoorbeeld:

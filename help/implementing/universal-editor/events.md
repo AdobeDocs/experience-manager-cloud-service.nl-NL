@@ -4,7 +4,7 @@ description: Leer over de verschillende gebeurtenissen die de Universele Redacte
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -55,7 +55,7 @@ De nuttige lading is inhoud van de Universele dienst van de Redacteur, met reser
 
 ### aub:content-details {#content-details}
 
-De gebeurtenis `aue:content-details` wordt geactiveerd wanneer een component in de eigenschappenrails wordt geladen.
+De gebeurtenis `aue:content-details` wordt geactiveerd wanneer een component in het deelvenster Eigenschappen wordt geladen.
 
 De nuttige lading is de inhoud van de component en naar keuze zijn schema.
 
@@ -91,7 +91,7 @@ De nuttige lading is de component, broncontainer, en doelcontainer.
 
 ### aue:content-patch {#content-patch}
 
-De `aue:content-patch` -gebeurtenis wordt geactiveerd wanneer de gegevens van een component worden bijgewerkt in de eigenschappen rail.
+De gebeurtenis `aue:content-patch` wordt geactiveerd wanneer de gegevens van een component worden bijgewerkt in het deelvenster Eigenschappen.
 
 De payload is een JSON-patch van de bijgewerkte eigenschappen.
 

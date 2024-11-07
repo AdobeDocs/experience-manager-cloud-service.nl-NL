@@ -4,7 +4,7 @@ description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
    * Om de pagina te laden, kunt u **Teken binnen met Adobe** moeten tikken of klikken om aan AEM in de Universele Redacteur voor authentiek te verklaren.
 
-1. Selecteer een sectie in de Universal Editor. In de eigenschappen spoorstaaf, tik of klik **voeg** pictogram toe en selecteer dan uw nieuw **Citaat** blok van het menu.
+1. Selecteer een sectie in de Universal Editor. In het eigenschappen paneel, ontvang of klik **voeg** pictogram toe en selecteer dan uw nieuw **Citaat** blok van het menu.
 
    * Het **voegt** pictogram toe is een plus symbool.
    * U weet dat u een sectie hebt geselecteerd als het blauwe overzicht van het geselecteerde voorwerp een lusje genoemd **Sectie** heeft.
@@ -175,7 +175,7 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
 1. De pagina wordt opnieuw geladen en het aanhalingsteken wordt onder aan de geselecteerde sectie toegevoegd met de standaardinhoud die in het `component-definitions.json` -bestand is opgegeven.
 
-   * Het aanhalingsteken kan worden geselecteerd en bewerkt zoals elk ander blok op zijn plaats of in de eigenschappenrails.
+   * U kunt het aanhalingsteken selecteren en bewerken als elk ander blok op zijn plaats of in het deelvenster Eigenschappen.
    * Stijlen wordt in een volgende stap toegepast.
 
    ![ de pagina met het nieuwe citaatblok in de geselecteerde sectie ](assets/create-block/quote-added.png)

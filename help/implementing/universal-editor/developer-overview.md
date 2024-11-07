@@ -4,7 +4,7 @@ description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universel
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -240,7 +240,7 @@ Uw componenten moeten ook van instrumenten voorzien zijn om met de Universele Re
 
 1. Klik in de Universal Editor op de tasercomponent boven aan de pagina en controleer of u deze nu kunt selecteren.
 
-1. Als u het **pictogram van de boom van de Inhoud** in de eigenschappen spoor van de Universele Redacteur klikt, kunt u zien dat de redacteur alle tellers op de pagina erkende nu u het van instrumenten voorzien hebt. Het geselecteerde tasje is gemarkeerd.
+1. Als u het **pictogram van de boom van de Inhoud** in het eigenschappenpaneel van de Universele Redacteur klikt, kunt u zien dat de redacteur alle tellers op de pagina erkende nu dat u het van instrumenten voorzien hebt. Het geselecteerde tasje is gemarkeerd.
 
    ![ het Selecteren van de van instrumenten voorzien lasercomponent ](assets/dev-select-teaser.png)
 
@@ -355,13 +355,13 @@ U kunt zien dat de wijziging aanhoudt in het JCR.
 >
 >Het basisvoorbeeld van de verificatieheader `Basic YWRtaW46YWRtaW4=` is voor de combinatie van gebruiker en wachtwoord van `admin:admin` , net als bij lokale AEM.
 
-## Instrumenteren van de app voor de Properties Rail {#properties-rail}
+## De app van instrumenten voorzien voor het deelvenster Eigenschappen {#properties-rail}
 
 U hebt nu een app die van instrumenten is voorzien om te kunnen worden bewerkt met de Universal Editor.
 
-Het bewerken is momenteel beperkt tot het online bewerken van de titel van de taser. Er zijn echter gevallen waarin op plaats bewerken niet voldoende is. Tekst zoals de titel van het gummetje kan worden bewerkt op de plaats waar deze zich bevindt met behulp van het toetsenbord. Nochtans moeten de meer gecompliceerde punten kunnen tonen en het uitgeven van gestructureerde gegevens los van hoe het in browser wordt teruggegeven toestaan. Dat is waar de eigenschappen van de spoorwegen voor zijn.
+Het bewerken is momenteel beperkt tot het online bewerken van de titel van de taser. Er zijn echter gevallen waarin op plaats bewerken niet voldoende is. Tekst zoals de titel van het gummetje kan worden bewerkt op de plaats waar deze zich bevindt met behulp van het toetsenbord. Nochtans moeten de meer gecompliceerde punten kunnen tonen en het uitgeven van gestructureerde gegevens los van hoe het in browser wordt teruggegeven toestaan. Daar is het deelvenster Eigenschappen voor.
 
-Als u uw app wilt bijwerken zodat de eigenschappencontrole voor bewerking wordt gebruikt, gaat u terug naar het koptekstbestand van de paginacomponent van uw app. Dit is waar u reeds de verbindingen aan uw lokale AEM ontwikkelingsinstantie en uw lokale Universele dienst van de Redacteur vestigde. Hier moet u de componenten definiëren die bewerkbaar zijn in de app en de bijbehorende gegevensmodellen.
+Ga terug naar het koptekstbestand van de paginacomponent van uw app om de app bij te werken zodat deze het deelvenster Eigenschappen kan gebruiken voor bewerking. Dit is waar u reeds de verbindingen aan uw lokale AEM ontwikkelingsinstantie en uw lokale Universele dienst van de Redacteur vestigde. Hier moet u de componenten definiëren die bewerkbaar zijn in de app en de bijbehorende gegevensmodellen.
 
 1. Open CRXDE Lite.
 
@@ -462,7 +462,7 @@ Als u uw app wilt bijwerken zodat de eigenschappencontrole voor bewerking wordt 
 
 ## Wat betekent het allemaal? {#what-does-it-mean-2}
 
-Als u bewerkbaar wilt zijn met behulp van de eigenschap rail, moeten de componenten worden toegewezen aan `groups` , zodat elke definitie begint als een lijst met groepen die de componenten bevatten.
+Om bewerkbaar te zijn met het deelvenster Eigenschappen, moeten de componenten worden toegewezen aan `groups` , zodat elke definitie begint als een lijst met groepen die de componenten bevatten.
 
 * `title` is de naam van de groep.
 * `id` is de unieke id van de groep, in dit geval algemene componenten waaruit de pagina-inhoud bestaat, in tegenstelling tot bijvoorbeeld geavanceerde componenten voor de paginalay-out.
@@ -487,7 +487,7 @@ Elke component moet vervolgens worden toegewezen aan een `model` om de afzonderl
 * `label` is de beschrijving van het veld dat wordt weergegeven in de gebruikersinterface van de editor.
 * `valueType` is het type gegevens.
 
-## Instrumenteren van de component voor de Eigenschapcontrole {#properties-rail-component}
+## De component van instrumenten voorzien voor het paneel van Eigenschappen {#properties-rail-component}
 
 U moet ook definiëren op componentniveau, welk model de component moet gebruiken.
 
@@ -509,17 +509,17 @@ U moet ook definiëren op componentniveau, welk model de component moet gebruike
 
 1. Klik **sparen allen** in de toolbar en herlaad de Universele Redacteur.
 
-Nu bent u klaar om de eigenschappen spoorstaaf te testen die voor uw component van instrumenten worden voorzien.
+Nu kunt u het deelvenster Eigenschappen uittesten dat van instrumenten is voorzien voor uw component.
 
 1. Klik in de Universal Editor op de titel van het gummetje om deze nogmaals te bewerken.
 
-1. Klik op de eigenschappen-rail om het tabblad Eigenschappen weer te geven en de velden te zien waarop u net van instrumenten hebt voorzien.
+1. Klik op het deelvenster Eigenschappen om het tabblad Eigenschappen weer te geven en de velden weer te geven waarop u net hebt geïnstrueerd.
 
-   ![ de van instrumenten voorzien eigenschappen spoorstaaf ](assets/dev-properties-rail-instrumented.png)
+   ![ het van instrumenten voorzien eigenschappen paneel ](assets/dev-properties-rail-instrumented.png)
 
-U kunt de titel van de taser nu in line bewerken zoals u eerder had, of in de eigenschappenrails. In beide gevallen worden de wijzigingen doorgevoerd in uw lokale AEM ontwikkelingsexemplaar.
+U kunt de titel van het gummetje nu in line bewerken zoals u eerder had, of in het deelvenster Eigenschappen. In beide gevallen worden de wijzigingen doorgevoerd in uw lokale AEM ontwikkelingsexemplaar.
 
-## Extra velden toevoegen aan het vak Eigenschappen {#add-fields}
+## Extra velden toevoegen aan het deelvenster Eigenschappen {#add-fields}
 
 Met behulp van de basisstructuur van het gegevensmodel voor de component die u al hebt geïmplementeerd, kunt u aanvullende velden toevoegen volgens hetzelfde model.
 
@@ -555,9 +555,9 @@ U kunt bijvoorbeeld een veld toevoegen om de opmaak van de component aan te pass
 
 1. Klik op de titel van het gummetje om deze nogmaals te bewerken.
 
-1. Klik de eigenschappen spoorstaaf en zie dat er een nieuw gebied is om de stijl van de component aan te passen.
+1. Klik op het deelvenster Eigenschappen en controleer of er een nieuw veld is waarin u de stijl van de component kunt aanpassen.
 
-   ![ de van instrumenten voorzien eigenschappen spoorstaaf met het stijlgebied ](assets/dev-style-instrumented.png)
+   ![ het van instrumenten voorzien eigenschappen paneel met het stijlgebied ](assets/dev-style-instrumented.png)
 
 Elk veld in het JCR voor de component kan op deze manier worden weergegeven in de Universal Editor.
 
@@ -580,8 +580,8 @@ Wanneer u uw eigen app van instrumenten begint te voorzien, moet u rekening houd
 1. [U hebt de teaser-component van instrumenten voorzien.](#instrumenting-components)
 1. [U hebt de subcomponenten van het gummetje van instrumenten voorzien.](#subcomponents)
 1. [U hebt een aangepaste verificatieheader gedefinieerd zodat u wijzigingen kunt opslaan met uw lokale Universal Editor-service.](#auth-header)
-1. [U hebt de app van instrumenten voorzien om de eigenschappen rail te gebruiken.](#properties-rail)
-1. [U hebt de teaser-component van instrumenten voorzien om de eigenschappen rail te gebruiken.](#properties-rail-component)
+1. [U hebt de toepassing van instrumenten voorzien om het deelvenster Eigenschappen te gebruiken.](#properties-rail)
+1. [U hebt van instrumenten voorzien dat de component teaser het deelvenster Eigenschappen gebruikt.](#properties-rail-component)
 
 U kunt dezelfde stappen volgen om uw eigen app te gebruiken met de Universal Editor. Alle eigenschappen in het JCR kunnen worden weergegeven in de Universal Editor.
 
