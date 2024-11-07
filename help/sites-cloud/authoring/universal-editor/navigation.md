@@ -4,13 +4,13 @@ description: Leer de basisbeginselen van toegang tot en navigatie in de Universa
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
-
 
 # Toegang tot en navigatie in de Universal Editor {#navigating}
 
@@ -54,7 +54,7 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 
 1. Meld u aan bij de Universal Editor. U hebt een Adobe ID nodig om binnen te ondertekenen en [ heeft toegang tot de Universele Redacteur.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. Nadat u binnen wordt ondertekend, ga URL van de pagina in u in de [ plaatsbar wilt uitgeven.](#location-bar) zodat kunt u beginnen inhoud zoals [ tekstinhoud ](#text-mode) uit te geven of [ media inhoud.](#media-mode)
+1. Nadat u binnen wordt ondertekend, ga URL van de pagina in u in de [ plaatsbar wilt uitgeven.](#location-bar) zodat u inhoud kunt gaan bewerken, zoals tekstinhoud of media-inhoud.
 
 ## De gebruikersinterface begrijpen {#ui}
 
@@ -280,7 +280,7 @@ Als u een containercomponent selecteert in de inhoudsstructuur of in de editor, 
 
 ![ voeg pictogram ](assets/ue-add-component-icon.png) toe
 
-Het tikken of het klikken van toevoegen knoop opent een drop-down menu van componenten die beschikbaar zijn aan [ toevoegen aan de geselecteerde container.](#adding-components)
+Het tikken of het klikken van toevoegen knoop opent een drop-down menu van componenten die beschikbaar zijn aan [ toevoegen aan de geselecteerde container.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![ voeg contextmenu ](assets/add-context-menu.png) toe
 
@@ -288,13 +288,21 @@ Het tikken of het klikken van toevoegen knoop opent een drop-down menu van compo
 >
 >Gebruik de sneltoets `a` om een component aan een geselecteerde containercomponent toe te voegen.
 
+##### Dupliceren {#duplicate}
+
+Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie Dupliceren weergegeven op de eigenschappenrails.
+
+![ Dupliceer pictogram ](assets/duplicate.png)
+
+Tapping of het klikken van de dubbele knoop [ dupliceert de geselecteerde component.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Verwijderen {#delete}
 
 Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de verwijderingsoptie weergegeven op de eigenschappenrails.
 
 ![ pictogram van de Schrapping ](assets/ue-delete-component-icon.png)
 
-Tapping of het klikken van de schrappingsknoop [ schrapt de component.](#deleting-components)
+Tapping of het klikken van de schrappingsknoop [ schrapt de component.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >

@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,16 @@ De component wordt opgenomen in de container en kan in de redacteur worden uitge
 >[!TIP]
 >
 >Gebruik de sneltoets `a` om een component aan de geselecteerde container toe te voegen.
+
+### Componenten in containers dupliceren {#duplicating-components}
+
+1. Selecteer een component in een container gebruikend de [ inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) of de redacteur.
+1. Dan selecteer het **Dubbele** pictogram in de eigenschappen spoorstaaf.
+
+   ![ Selecterend een component om aan een container ](assets/ue-duplicate-component.png) toe te voegen
+1. De component wordt gedupliceerd en onder de geselecteerde component ingevoegd.
+
+De component wordt opgenomen in de container en kan in de redacteur worden uitgegeven.
 
 ### Componenten uit containers verwijderen {#deleting-components}
 
