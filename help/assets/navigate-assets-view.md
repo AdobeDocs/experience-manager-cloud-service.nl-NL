@@ -4,9 +4,9 @@ description: Begrijp gebruikersinterface van en navigatie in  [!DNL Assets view]
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Wanneer u zich aanmeldt bij [!DNL Assets view] , ziet u de volgende interface.
 
 ## Door elementen en mappen bladeren en deze weergeven {#browse-repository}
 
-U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de linkerzijbalk. Experience Manager Assets geeft nu visuele voorvertoningen van de inhoud van de map weer op de miniatuur van de map wanneer u naar inhoud bladert of zoekt, waardoor de beschikbare middelen in de AEM Assets-opslagruimte beter kunnen worden ontdekt. Met deze mapminiatuur bespaart u tijd die u hebt besteed aan het zoeken naar specifieke middelen in een map in de AEM Assets-opslagruimte.
+U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de linkerzijbalk. Experience Manager Assets geeft visuele voorvertoningen van de mapinhoud weer in de miniatuur van de map wanneer wordt gebladerd of wordt gezocht naar inhoud. Dit verbetert de ontdekkbaarheid van de middelen die beschikbaar zijn in de AEM Assets-opslagplaats. Met deze mapminiatuur bespaart u tijd die u hebt besteed aan het zoeken naar specifieke middelen in een map in de AEM Assets-opslagruimte.
 Wanneer u door elementen in een map bladert, kunt u met de interface elementminiaturen weergeven om visueel door de opslagplaats te bladeren of elementdetails te bekijken om snel het gewenste element te vinden. In de linkerzijbalk zijn de volgende opties beschikbaar:
 
 * [ Mijn Workspace ](/help/assets/my-workspace-assets-view.md): Assets omvat nu een klantgerichte werkruimte die widgets voor gemakkelijke toegang tot zeer belangrijke gebieden van het gebruikersinterface van Assets en informatie verstrekt die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
@@ -77,9 +77,9 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
 
 Om activa voor te vertonen, het te selecteren en [!UICONTROL Details] ![ detailspictogram ](assets/do-not-localize/edit-in-icon.png) van de toolbar bij de bovenkant te klikken. U kunt niet alleen het element weergeven, maar ook de gedetailleerde metagegevens ervan bekijken en andere handelingen uitvoeren.
 
-![ Voorproef een activa ](assets/preview-asset-2.png)
+![ Voorproef een activa ](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**}: De taken van de mening met betrekking tot de geselecteerde Activa **H**: Bekijk en beheer versies **I**: De vertoningen van de mening van beeld **J**: Bewerk beeld **K**: De fundamentele meta-gegevens **L**: Geavanceerde meta-gegevens **M** Trefwoorden: en slimme markeringen **N**: nauwkeuriger Voorproef. Zoomen, volledig scherm, en andere opties **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag te gaan
+**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G** : De taken van de mening met betrekking tot de geselecteerde Activa **H**: Bekijk en beheer versies **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De vertoningen van Dynamic Media van de mening met Slimme Uitsnede en Dynamic Media met OpenAPI mogelijkheden. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 

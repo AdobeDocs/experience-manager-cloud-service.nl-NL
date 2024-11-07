@@ -4,9 +4,9 @@ description: Leer hoe AEM Assets en Dynamic Media effectief imagebeheer vereenvo
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Uitvoeringen in Adobe Experience Manager (AEM) zijn aangepaste versies van digitale elementen, zoals afbeeldingen, die zijn ontworpen voor verschillende apparaten en platforms voor optimale prestaties. AEM vergemakkelijkt het maken en beheren van deze uitvoeringen, waardoor de gebruikerservaring wordt verbeterd. U kunt miniaturen maken, afbeeldingen optimaliseren voor internet of mobiele apparaten, watermerken toevoegen, dynamische uitvoeringen of SmartCrop-uitvoeringen weergeven en downloaden en nog veel meer doen.
+Uitvoeringen in Adobe Experience Manager (AEM) zijn aangepaste versies van digitale elementen, zoals afbeeldingen, die zijn ontworpen voor verschillende apparaten en platforms voor optimale prestaties. AEM vergemakkelijkt het maken en beheren van deze uitvoeringen, waardoor de gebruikerservaring wordt verbeterd. U kunt miniaturen maken, afbeeldingen optimaliseren voor internet of mobiele apparaten, watermerken toevoegen, dynamische uitvoeringen of Smart Crop-uitvoeringen weergeven en downloaden en nog veel meer doen.
 
 Dynamic Media-voorinstellingen voor afbeeldingen en SmartCrop-uitvoeringen bevorderen een systematisch imagebeheer dat is afgestemd op de standaarden van het merk, waardoor de cohesie van het merk wordt gemaximaliseerd. Dit vereenvoudigt het proces waarbij dynamische afbeeldingsuitvoeringen snel worden gevonden en gebruikt zonder dat er beheerfuncties beschikbaar zijn.
 
@@ -32,37 +32,56 @@ Leer [ om ](#view-dynamic-renditions) statische vertoningen in [!DNL Experience 
 Dynamische uitvoeringen zijn aangepaste versies van elementen die in realtime zijn gemaakt om aan specifieke behoeften te voldoen, zoals het formaat van afbeeldingen wijzigen op basis van de apparaatresolutie of het bijsnijden om aan verschillende hoogte-breedteverhoudingen te voldoen.
 Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren. U kunt dynamische uitvoeringen weergeven en downloaden in [!DNL Experience Manager Assets] .
 
+## Dynamic Media-uitvoeringen {#dynamic-media-renditions}
+
 ### Voordat u begint
 
 * U moet een licentie hebben AEM Dynamic Media-gebruiker.
-
-* Gebruik [!UICONTROL Admin view] om in te stellen:
+* Gebruik de lus [!UICONTROL Admin view] om in te stellen:
    * [ Slimme Profielen van het Beeld van het Gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Voorinstellingen voor afbeeldingen](/help/assets/dynamic-media/managing-image-presets.md)
 
   U kunt [ schakelaar de mening ](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later aan voorproef dynamische vertoningen in de mening van Assets.
+* Publish-middelen naar Dynamic Media om Dynamic Media-uitvoeringen beschikbaar te maken in de Assets-weergave. Voor meer informatie, zie [ Publish Assets aan AEM en Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
-### Dynamische uitvoeringen weergeven en downloaden {#view-renditions}
 
-Voer de volgende stappen uit om dynamische uitvoeringen van afbeeldingen in [!DNL Experience Manager Assets] weer te geven of te downloaden:
+### Dynamic Media-uitvoeringen weergeven en downloaden {#view-download-dm-renditions}
+
+Voer de volgende stappen uit om dynamische uitvoeringen van afbeeldingen in Experience Manager Assets weer te geven of te downloaden:
 
 1. Ga naar **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]** .
 
 1. Navigeer naar de toepasselijke elementenmap.
 
-1. Klik op de afbeelding die u wilt weergeven en klik op **[!UICONTROL Details]** .
+1. Klik op het element dat u wilt weergeven en klik op **[!UICONTROL Details]** .
 
-1. Klik in het rechtermenu op **[!UICONTROL Renditions]** . <br> Het deelvenster **[!UICONTROL Renditions]** wordt geopend met de beschikbare **[!UICONTROL Dynamic]** en **[!UICONTROL Smart Crop]** uitvoeringen.
+1. Klik in het rechtermenu op het pictogram **[!UICONTROL Dynamic Media]** . In het deelvenster **[!UICONTROL Dynamic Media]** worden Dynamic Media- en Smart Crop-uitvoeringen weergegeven.
 
-   ![ dynamische vertoningen ](assets/preset_smart_crop.png)
+   ![ dynamische vertoningen ](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
-1. Klik op de vertoning die u wilt weergeven of downloaden.
+1. Selecteer de vertoning aan voorproef en klik **Exemplaar URL** om URL van de geselecteerde vertoning te kopiëren. Klik **Vertoning van de Download** om de vertoningen van beeldactiva te downloaden.
+1. Selecteer de Slimme vertoning van het Gewas aan voorproef en klik **Exemplaar URL** om URL van de geselecteerde vertoning te kopiëren.
+1. Klik ![ downloadpictogram ](assets/do-not-localize/download-icon.png) om alle beschikbare Slimme vertoningen van het Gewas als één enkel ZIP dossier te downloaden.
+   ![ downloadpictogram ](/help/assets/assets/smartcrop-rendition.png)
 
-1. Klik het ![ pictogram van de downloaddownload ](assets/do-not-localize/download-icon.png) naast de dynamische vertoning u moet downloaden. <br> U kunt ook de afbeeldingsuitvoering selecteren en op de optie **[!UICONTROL Download Rendition]** onder in het dialoogvenster klikken.
+   >[!NOTE]
+   >
+   >Deze uitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
 
-   U kunt het ![ pictogram van het downloadpictogram ](assets/do-not-localize/download-icon.png) klikken beschikbaar bij de bovenkant van **[!UICONTROL Smart Crop]** sectie van vertoningen om alle beschikbare Slimme vertoningen van het Gewas voor dat activa te downloaden.
+## Dynamic Media met OpenAPI Capabilities-uitvoeringen {#dm-with-openapi-renditions}
 
->[!NOTE]
->
->Dynamische uitvoeringen zijn alleen zichtbaar als de elementen vanuit de beheerweergave zijn geüpload.
+### Voordat u begint
+
+* U moet een licentie hebben AEM Dynamic Media-gebruiker.
+* Assets moet zijn goedgekeurd om Dynamic Media weer te geven met OpenAPI-mogelijkheden. Voor meer informatie, zie [ activa in Experience Manager goedkeuren ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* Dynamic Media met OpenAPI-mogelijkheden moet zijn ingeschakeld op uw AEM as a Cloud Service-exemplaar.
+
+### Dynamic Media met OpenAPI Capabilities-uitvoeringen weergeven {#view-download-dm-with-openapi-renditions}
+
+1. Selecteer de activa en klik **Details**.
+1. Klik op het Dynamic Media-pictogram in het rechterdeelvenster. In het deelvenster Dynamic Media wordt de Dynamic Media met OpenAPI Capabilities-uitvoering weergegeven voor alle elementtypen.
+   ![ downloadpictogram ](/help/assets/assets/dm-with-open-api-copy-url.png)
+1. Selecteer **Dynamic Media met OpenAPI** optie en klik dan **Exemplaar URL** om de levering URL van de activa te kopiëren.
+
+

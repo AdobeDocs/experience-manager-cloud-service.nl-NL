@@ -3,9 +3,9 @@ title: Elementen in Experience Manager goedkeuren
 description: Leer hoe te om activa in  [!DNL Experience Manager] goed te keuren.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -96,13 +96,15 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
 
 1. Selecteer het element en klik op **[!UICONTROL Details]** .
 
-1. Klik op het pictogram Uitvoeringen in het rechterdeelvenster.
+1. Klik op het Dynamic Media-pictogram in het rechterdeelvenster.
 
-1. Selecteer **[!UICONTROL Dynamic Media with OpenAPI]** beschikbaar in de sectie **[!UICONTROL Dynamic]** .
+1. Selecteer **[!UICONTROL Dynamic Media with OpenAPI]** beschikbaar in het deelvenster **[!UICONTROL Dynamic Media]** .
 
 1. Klik op **[!UICONTROL Copy URL]** om de URL van de levering van het element te kopiëren.
-   ![ exemplaarlevering URL ](/help/assets/assets/copy-delivery-url.png)
+   ![ dynamische vertoningen ](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
+
+Voor informatie over andere vertoningen die binnen het paneel van Dynamic Media tonen, zie [ Mening en download de vertoningen van Dynamic Media ](/help/assets/renditions.md#view-download-dm-renditions).
