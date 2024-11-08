@@ -4,9 +4,9 @@ description: Leer hoe AEM as a Cloud Service-teams en productprofielen toegang t
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '2059'
 ht-degree: 0%
 
 ---
@@ -275,6 +275,27 @@ De volgende afbeelding vertegenwoordigt de AEM groepen die overeenkomen met het 
 >
 >* Meer over AEM productprofielen leren, zie [ Toewijzend AEM Profielen van het Product ](/help/journey-onboarding/assign-profiles-aem.md).
 >* Voor meer informatie over het onboarding proces, zie [ onboarding reis ](/help/journey-onboarding/overview.md).
+
+### Productprofielen toevoegen voor bestaande omgevingen {#adding-product-profiles-for-existing-environments}
+
+In omgevingen die vóór begin november 2024 zijn gemaakt, ontbreekt mogelijk de in bovenstaande secties beschreven productinstantie op Org-niveau en bepaalde productprofielen. Bestaande productprofielen zullen ook de de dienstknevels missen. U wordt aangeraden deze productprofielen bij te werken. Dit is een eerste vereiste voor toegang tot bepaalde toekomstige API&#39;s.
+
+Als voor een of meer omgevingen in een programma de productprofielen moeten worden bijgewerkt, geeft Cloud Manager de onderstaande kennisgeving weer. Merk op dat een milieu op de recentste AEM versie moet zijn alvorens zijn productprofielen kunnen worden bijgewerkt.
+
+![ Moderniseer de Profielen van het Product ](/help/onboarding/assets/modernize-product-profiles.png)
+
+Het klikken **voegt de knoop van Profielen van het Product** toe zal een menu openen dat opties toont om nieuwe productprofielen aan alle milieu&#39;s toe te voegen beschikbaar in het programma of de individuele milieu&#39;s.
+
+![ vervang Milieu&#39;s ](/help/onboarding/assets/choose-env-r.png)
+
+Klik **Alle Milieu&#39;s** om de nieuwe productprofielen aan alle milieu&#39;s in het programma toe te voegen. Alternatief, klik **Individuele Milieu&#39;s** om de nieuwe productprofielen aan geselecteerde milieu&#39;s toe te voegen; dit navigeert de gebruiker aan een milieu&#39;s die pagina van een lijst maken, waar **toevoegen de actie van de Profielen van het Product** van het **Meer pictogram van Opties** kan worden geselecteerd.
+
+![ Individuele Milieu&#39;s ](/help/onboarding/assets/individual-environments.png)
+
+U kunt productprofielen ook toevoegen aan geselecteerde omgevingen door naar de sectie Omgeving van de pagina Programmaoverzicht te navigeren, op het pictogram Meer opties voor een omgeving te klikken en Productprofielen toevoegen te selecteren.
+
+In de status van de omgeving wordt het toevoegen van productprofielen weergegeven terwijl de nieuwe productprofielen worden toegevoegd en vervolgens wordt Running weergegeven wanneer het proces is voltooid.
+
 
 ## Cloud Manager-productprofielen {#cloud-manager-product-profiles}
 
