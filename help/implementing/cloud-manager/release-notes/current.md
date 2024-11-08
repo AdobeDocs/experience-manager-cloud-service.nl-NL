@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2024.11.0 in AEM 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans
 
 ### AEM {#aem-home}
 
-AEM Home is een nieuw, gecentraliseerd startpunt voor het beheer van uw inhoud, middelen en sites in Adobe Experience Manager. AEM Home is ontworpen om gebruikers een persoonlijke ervaring te bieden en helpt hen naadloos door het AEM ecosysteem te navigeren op basis van hun rollen en doelen. Het is ontworpen als uw gids, die zeer belangrijke inzichten en geadviseerde acties aanbieden om gewenste resultaten efficiënt te bereiken. Door een duidelijke, persoonlijke routekaart te presenteren, zorgt AEM Home ervoor dat gebruikers snel kunnen vinden wat ze nodig hebben om hun doelstellingen te bereiken, en zo een gestroomlijnde en effectievere ervaring in alle AEM mogelijkheden ondersteunen.
+AEM Home introduceert een gecentraliseerd beginpunt voor het beheren van inhoud, middelen, en plaatsen binnen Adobe Experience Manager. AEM Home is ontworpen om een persoonlijke ervaring te bieden en kunt u naadloos door het AEM ecosysteem navigeren op basis van uw rollen en doelen. Als gids biedt deze informatie belangrijke inzichten en aanbevolen acties om u te helpen uw doelstellingen efficiënt te verwezenlijken. Met een duidelijke, persoonlijke lay-out zorgt AEM Home voor snelle toegang tot essentiële gereedschappen en ondersteunt het een gestroomlijnde en effectieve ervaring voor alle AEM functies.
 
-AEM Home is beschikbaar voor klanten met een vroege adoptie en biedt een eerste blik op een verbeterde ervaring die workflows optimaliseert, prioriteiten stelt aan doelstellingen en resultaten aanstuurt. Door in te gaan, heb je de kans om vorm te geven aan de ontwikkeling van AEM Home, en feedback te geven die zijn evolutie beïnvloedt om de AEM gemeenschap het beste te dienen.
+Beschikbaar voor vroege gebruikers biedt AEM Home een geoptimaliseerde ervaring die is gericht op het verbeteren van workflows, het prioriteren van doelen en het leveren van resultaten. Door in te schakelen kunt u de ontwikkeling van AEM huis beïnvloeden door feedback te geven die helpt de toekomst te bepalen en de waarde ervan voor de hele AEM gemeenschap verbetert.
 
 Als u in het testen van dit nieuwe vermogen en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-AemHome@adobe.com ](mailto:Grp-AemHome@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u de volgende informatie opneemt:
 
