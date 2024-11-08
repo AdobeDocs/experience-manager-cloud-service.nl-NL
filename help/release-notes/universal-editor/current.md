@@ -4,7 +4,7 @@ description: Dit zijn de releaseopmerkingen voor de release 2024.11.05 van de Un
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e7839425012a101321b19d728f0ea3f0272dc394
+source-git-commit: 7ace83e0df1d917c359f07a806da638739b4a4a6
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -24,4 +24,4 @@ Dit zijn de versienota&#39;s voor de 5 november 2024 versie van de Universele Re
 
 * **Pijpleiding van het Terugschroeven van prijzen voor de Universele Dienst van de Redacteur:** Een terugschroeven van prijzenpijpleiding laat de teams van de Adobe op vraag toe om de Universele Dienst van de Redacteur indien nodig snel terug te keren naar om het even welke specifieke tak, die hoge beschikbaarheid door snel terugwinning in het geval van kwesties verzekert.
 * **Geoptimaliseerde API Vraag naar Inhoudsverrichtingen:** De Universele Dienst van de Redacteur gebruikt nu JSON APIs in plaats van HTML APIs voor creeer, exemplaar, en bewegingsverrichtingen via SlingPostServlet, die het ontleden van de reacties stroomlijnt.
-* **Steun voor Universele Redacteur op AEM 6.5:** De Universele Redacteur is nu beschikbaar voor hoofdloze gebruiksgevallen [ wanneer het gebruiken van AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction.html)
+* **Steun voor Universele Redacteur op AEM 6.5:** De Universele Redacteur is nu beschikbaar voor hoofdloze gebruiksgevallen [ wanneer het gebruiken van AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
