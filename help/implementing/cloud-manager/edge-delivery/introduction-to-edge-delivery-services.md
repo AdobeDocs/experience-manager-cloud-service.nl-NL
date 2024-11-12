@@ -4,9 +4,9 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Met Cloud Manager in AEM as a Cloud Service kunt u Edge Delivery Service inschak
 
 Als u Edge Delivery Services als deel van Adobe Experience Manager Sites vergunning hebt gegeven, kunt u aan boord uw plaats met Edge Delivery Services direct in Cloud Manager en gaan levend [ gebruikend een geleide, zelfbediening ervaring ](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
-Bovendien kunt u tot een verenigde ervaring toegang hebben voor het beheren van al uw AEM eigenschappen terwijl het verzekeren van consistentie over zeer belangrijke werkschema&#39;s. Dit zijn domeinnaambeheer, SSL-certificaatbeheer en CDN-toewijzingen.
+Bovendien kunt u tot een verenigde ervaring toegang hebben voor het beheren van al uw AEM eigenschappen terwijl het verzekeren van consistentie over zeer belangrijke werkschema&#39;s. Deze workflows omvatten domeinnaambeheer, SSL-certificaatbeheer en CDN-toewijzingen.
 
 ## Voordelen van het gebruik van het aanbevolen pad voor Adoben {#recommended-path-eds}
 
@@ -67,19 +67,20 @@ Een Edge Delivery Services kan op verschillende manieren worden toegevoegd afhan
 
 <!-- &#x2460; for "1" inside circle -->
 
-De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die wordt bedoeld om u door onboarding te begeleiden, uw plaats van Edge Delivery te beheren al manier aan [ gaan-leven ](/help/journey-onboarding/go-live-checklist.md).
+De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die wordt bedoeld om u door onboarding te begeleiden, uw plaats van Edge Delivery te beheren al manier aan [ gaan-Levend ](/help/journey-onboarding/go-live-checklist.md).
 
 ![ de plaats van Edge Delivery om lijst ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png) te doen
 
 |   | Taak | Beschrijving |
 | --- | --- | --- |
 | 1 | Deelnemen aan het samenwerkingskanaal voor producten | Het klikken **legt nu verzoek voor** legt een verzoek aan Adobe voor om een kanaal voor uw bedrijf tot stand te brengen. Als het kanaal reeds bestaat, door:sturen u aan het kanaal van uw bedrijf. |
-| 2 | Volledige voorwaarden | Het klikken van **Mening die Begonnen leerprogramma** krijgt, leidt u aan [ Begonnen het worden - Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial). |
+| 2 | Volledige voorwaarden | Zie [ Mening die Begonnen leerprogramma ](https://www.aem.live/developer/tutorial) krijgen. |
 | 3 | Edge Delivery-site toevoegen | Zie [ een plaats van Edge Delivery ](#eds-add-site) toevoegen. |
 | 4 | Domein toevoegen | Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
 | 5 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
 | 6 | De CDN van uw Edge Delivery-site configureren | Zie [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen. |
-| 7 | Live gaan | Voltooi de laatste stap in Ga Live. |
+| 7 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling ](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md). |
+| 8 | Go-Live | Zie [ gaan-Levende checklist ](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
