@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
+source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
 workflow-type: tm+mt
-source-wordcount: '5780'
+source-wordcount: '5782'
 ht-degree: 2%
 
 ---
@@ -362,7 +362,7 @@ ht-degree: 2%
          + [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Overerving van inhoud in de Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-         + [Paginasjablonen](/help/edge/wysiwyg-authoring/templates.md)
+         + [Paginasjablonen](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -454,6 +454,7 @@ ht-degree: 2%
             + [Aanbevolen werkwijzen voor vertaling](/help/sites-cloud/administering/translation/best-practices.md)
       + [Tags beheren](/help/sites-cloud/administering/tags.md)
       + [Workflows beheren](/help/sites-cloud/administering/workflows-administering.md)
+      + [Sjabloonconsole](/help/sites-cloud/administering/templates-console.md)
    + Integreren met AEM as a Cloud Service {#integrations}
       + [Integreren met Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integreren met Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)

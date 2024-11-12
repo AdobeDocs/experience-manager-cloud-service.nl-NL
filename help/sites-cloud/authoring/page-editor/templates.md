@@ -1,27 +1,31 @@
 ---
-title: Paginasjablonen maken
-description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
+title: Sjablonen om pagina's te maken die kunnen worden bewerkt met de Pagina-editor
+description: U kunt de Redacteur van het Malplaatje gebruiken om malplaatjes tot stand te brengen die uw inhoudsauteurs kunnen gebruiken om pagina's tot stand te brengen die met de Redacteur van de Pagina editable zijn.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 7%
+source-wordcount: '4415'
+ht-degree: 5%
 
 ---
 
-# Paginasjablonen maken {#creating-page-templates}
 
-Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele eerste inhoud en de componenten die kunnen worden gebruikt.
+# Sjablonen om pagina&#39;s te maken die kunnen worden bewerkt met de Pagina-editor {#creating-page-templates}
 
-Met de **Sjablooneditor** is het creëren en onderhouden van sjablonen niet meer alleen een taak voor ontwikkelaars. Een hoofdgebruiker die ook **maker van sjablonen** wordt genoemd, kan ook worden betrokken. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de **maker van sjablonen** sjablonen maken en configureren zonder een ontwikkelingsproject.
+U kunt de Redacteur van het Malplaatje gebruiken om malplaatjes tot stand te brengen die uw inhoudsauteurs kunnen gebruiken om pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina editable zijn.
 
-De **Console van Malplaatjes** staat malplaatjeauteurs toe om:
+## Overzicht {#overview}
 
-* Maak een nieuwe sjabloon of kopieer een bestaande sjabloon.
-* De levenscyclus van de sjabloon beheren.
+Wanneer een auteur een pagina maakt, moet hij of zij een sjabloon selecteren dat als basis voor de nieuwe pagina wordt gebruikt. De sjabloon definieert de structuur van de resulterende pagina, eventuele eerste inhoud en de componenten die kunnen worden gebruikt bij het bewerken van de pagina in de Pagina-editor.
+
+>[!NOTE]
+>
+>[ de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Universele Redacteur editable zijn.](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Met de **Redacteur van het Malplaatje**, creërend en het handhaven van malplaatjes is geen ontwikkelaar-enige taak. Een type van macht-gebruiker, die a **malplaatjeauteur** wordt genoemd, kan malplaatjes tot stand brengen. De ontwikkelaars worden vereist om het milieu te plaatsen, cliëntbibliotheken te creëren, en de te gebruiken componenten tot stand te brengen, maar zodra deze grondbeginselen op zijn plaats zijn heeft de **malplaatjeauteur** de flexibiliteit om malplaatjes tot stand te brengen en te vormen zonder een ontwikkelaar te impliceren.
 
 De **Redacteur van het Malplaatje** staat malplaatjeauteurs toe om:
 
@@ -29,9 +33,9 @@ De **Redacteur van het Malplaatje** staat malplaatjeauteurs toe om:
 * Configureer de componenten vooraf.
 * Bepaal welke componenten op pagina&#39;s kunnen worden uitgegeven die met het malplaatje worden gecreeerd.
 
-Dit document verklaart hoe de auteur van het a **malplaatje** de malplaatjeconsole en de redacteur kan gebruiken om editable malplaatjes tot stand te brengen en te beheren.
+Dit document verklaart hoe de auteur van het a **malplaatje** de **Redacteur van het Malplaatje** kan gebruiken om editable malplaatjes tot stand te brengen en te beheren.
 
-Voor gedetailleerde informatie over hoe editable malplaatjes op een technisch niveau werken, zie het ontwikkelaarsdocument [ Malplaatjes van de Pagina ](/help/implementing/developing/components/templates.md) voor meer informatie.
+Voor gedetailleerde informatie over hoe editable malplaatjes op een technisch niveau werken, zie het ontwikkelaarsdocument [ Bewerkbare Malplaatjes ](/help/implementing/developing/components/templates.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ Voor gedetailleerde informatie over hoe editable malplaatjes op een technisch ni
 
 ## Voordat u begint {#before-you-start}
 
+Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een sjabloon samenwerking vereist is. Om deze reden wordt de [ Rol ](#roles) vermeld voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
+
 >[!NOTE]
 >
 >Een beheerder moet een malplaatjeomslag in **Browser van Configuraties** vormen en juiste toestemmingen toepassen alvorens een malplaatjeauteur een malplaatje in die omslag kan tot stand brengen.
 
-Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een sjabloon samenwerking vereist is. Om deze reden wordt de [ Rol ](#roles) vermeld voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
-
 ### Rollen {#roles}
 
-Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sjablooneditor** is samenwerking tussen de volgende rollen vereist:
+Voor het maken van een nieuwe sjabloon is samenwerking tussen de volgende rollen vereist:
 
 * **Admin**:
    * Voor het maken van een nieuwe map met sjablonen zijn `admin` -rechten vereist.
@@ -72,9 +76,6 @@ De in dit document beschreven taken worden weergegeven met de rol die verantwoor
 
 Bij het maken van een bewerkbare sjabloon:
 
-* Gebruik de **console van het Malplaatje**. Dit is beschikbaar in de **Algemene** sectie van de **3} console van Hulpmiddelen {.**
-   * Of rechtstreeks bij: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Kan [ een omslag voor de malplaatjes ](#creating-a-template-folder-admin) tot stand brengen indien noodzakelijk
 * [ creeer een nieuw malplaatje ](#creating-a-new-template-template-author), dat aanvankelijk leeg zal zijn
 * [ bepaal extra eigenschappen ](#defining-template-properties-template-author) voor het malplaatje indien nodig
 * [ geef het malplaatje ](#editing-templates-template-authors) uit om te bepalen:
@@ -92,7 +93,7 @@ Bij het maken van een bewerkbare sjabloon:
 
 >[!TIP]
 >
->Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Ga nooit om het even welke informatie in die [ ](/help/implementing/developing/extending/i18n/dev.md) in een malplaatje moet worden geinternationaliseerd.
 >
 >Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [ localisatieeigenschappen van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -102,7 +103,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
-1. Open de **Console van Malplaatjes** (als **Hulpmiddelen >** **Algemeen**) dan navigeren aan de vereiste omslag.
+1. Open de **[Console van Malplaatjes](/help/sites-cloud/administering/templates-console.md)** dan navigeer aan de vereiste omslag.
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
    >
    >Wanneer een nieuw malplaatje wordt gecreeerd is het duidelijk als **Ontwerp** in de console, wijst dit erop dat het nog niet beschikbaar aan gebruik door paginaauteurs is.
 
->[!NOTE]
+>[!TIP]
 >
 >Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
 >
@@ -148,15 +149,7 @@ Een sjabloon kan de volgende eigenschappen hebben:
 * Beschrijving
    * Een facultatieve beschrijving om meer informatie over het malplaatje en zijn gebruik te verstrekken, dat bijvoorbeeld, in **kan worden gezien leidt tot de tovenaar van de Pagina**.
 
-De eigenschappen weergeven en/of bewerken:
-
-1. In de **Console van Malplaatjes**, selecteer het malplaatje.
-1. Selecteer **Eigenschappen weergeven** op de werkbalk of kies Snelle opties om het dialoogvenster te openen.
-1. U kunt nu de sjablooneigenschappen weergeven of bewerken.
-
->[!NOTE]
->
->De status van een sjabloon (concept, ingeschakeld of uitgeschakeld) wordt aangegeven in de console.
+Na het creëren van het malplaatje, gebruik de **[Console van Malplaatjes](/help/sites-cloud/administering/templates-console.md)** om de malplaatjeeigenschappen te bekijken of uit te geven.
 
 #### Miniatuurafbeelding sjabloon {#template-thumbnail-image}
 
@@ -181,17 +174,11 @@ Als u een sjabloon wilt kunnen gebruiken bij het maken van een pagina, moet u:
 
 Een malplaatje kan worden toegelaten of worden onbruikbaar gemaakt om het beschikbaar of niet beschikbaar te maken in **creëren de tovenaar van de Pagina**.
 
+Gebruik de **[Console van Malplaatjes](/help/sites-cloud/administering/templates-console.md)** om een malplaatje toe te laten of onbruikbaar te maken.
+
 >[!CAUTION]
 >
 >Nadat een sjabloon is ingeschakeld, wordt een waarschuwing weergegeven wanneer een sjabloonauteur de sjabloon verder gaat bijwerken. Dit moet de gebruiker informeren dat naar de sjabloon kan worden verwezen, zodat wijzigingen van invloed kunnen zijn op de pagina&#39;s die naar de sjabloon verwijzen.
-
-1. In de **Console van Malplaatjes**, selecteer het malplaatje.
-1. Selecteer **toelaten** of **onbruikbaar maken** van de toolbar, en opnieuw in de bevestigingsdialoog.
-1. U kunt uw malplaatje nu gebruiken wanneer [ creërend een pagina ](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), hoewel u waarschijnlijk het malplaatje [ ](#editing-templates-template-authors) volgens uw vereisten zult willen uitgeven.
-
->[!NOTE]
->
->De status van een sjabloon (concept, ingeschakeld of uitgeschakeld) wordt aangegeven in de console.
 
 #### Een sjabloon toestaan - Auteur {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
    >
    >Als de **Toegestane lijst van Malplaatjes** leeg wordt verlaten, dan wordt de boom gevergd tot een waarde/lijst wordt gevonden.
    >
-   >
    >Zie [ Beschikbaarheid van het Malplaatje ](/help/implementing/developing/components/templates.md#template-availability) - de principes voor toegestane malplaatjes blijven het zelfde.
 
 1. Klik **sparen** om de veranderingen in de paginaeigenschappen te bewaren.
@@ -224,10 +210,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
 Aangezien het malplaatje van verwijzingen wordt voorzien wanneer een pagina wordt teruggegeven, moet het volledig gevormde malplaatje worden gepubliceerd zodat het op het publicatiemilieu beschikbaar is.
 
-1. In de **Console van Malplaatjes**, selecteer het malplaatje.
-1. Selecteer **Publish** van de toolbar om de tovenaar te openen.
-1. Selecteer het **Beleid van de Inhoud** om gelijktijdig worden gepubliceerd.
-1. Selecteer **Publish** van de toolbar om de actie te voltooien.
+Publish malplaatjes die de **[Console van Malplaatjes gebruiken.](/help/sites-cloud/administering/templates-console.md)**
 
 ## Sjablonen bewerken - Sjabloonauteurs {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ Houd bij het maken van sjablonen rekening met:
    >AEM geeft expliciete waarschuwingen wanneer het veranderen van de slotstatus van componenten op malplaatjes die niet meer concepten zijn.
 
 1. [ Creërend uw eigen omslagen ](#creating-a-template-folder-admin) voor uw plaats-specifieke malplaatjes.
-1. [ Publish uw malplaatjes ](#publishing-a-template-template-author) van de **console van Malplaatjes**.
+1. [ Publish uw malplaatjes ](#publishing-a-template-template-author) van de **[console van Malplaatjes.]** (/help/sites-cloud/administering/templates-console.md)

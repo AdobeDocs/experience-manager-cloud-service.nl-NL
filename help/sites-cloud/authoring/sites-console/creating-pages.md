@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 1. Vanaf de eerste fase van de wizard kunt u:
 
    * Selecteer het malplaatje u wilt gebruiken om de nieuwe pagina tot stand te brengen, dan selecteren **daarna** te werk te gaan of **annuleert** om het proces af te breken.
-   * De malplaatjes worden gesteund voor zowel de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) als voor de [ Universele Redacteur.](/help/edge/wysiwyg-authoring/templates.md)
+   * De malplaatjes worden gesteund voor zowel de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) als voor de [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/templates.md)
 
    ![ Selecterend een malplaatje voor een nieuwe pagina ](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

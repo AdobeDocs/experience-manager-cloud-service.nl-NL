@@ -1,46 +1,60 @@
 ---
-title: Paginasjablonen
-description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
+title: Bewerkbare sjablonen
+description: Leer hoe bewerkbare sjablonen worden gebruikt bij het maken van een pagina, het definiëren van de initiële inhoud, gestructureerde inhoud, het ontwerpbeleid en de lay-out van de pagina.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3443'
 ht-degree: 0%
 
 ---
 
-# Paginasjablonen {#page-templates}
+# Bewerkbare sjablonen {#editable-templates}
 
-Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele initiële inhoud en de componenten die kunnen worden gebruikt (ontwerpeigenschappen). Dit heeft verschillende voordelen:
+Leer hoe bewerkbare sjablonen worden gebruikt bij het maken van een pagina, het definiëren van de initiële inhoud, gestructureerde inhoud, het ontwerpbeleid en de lay-out van de pagina.
 
-* De Malplaatjes van de pagina staan gespecialiseerde auteurs toe om [ malplaatjes ](/help/sites-cloud/authoring/page-editor/templates.md) tot stand te brengen en uit te geven.
-   * Dergelijke gespecialiseerde auteurs worden genoemd **malplaatjeauteurs**
-   * Sjabloonauteurs moeten lid zijn van de groep `template-authors` .
-* Paginasjablonen behouden een dynamische verbinding met alle pagina&#39;s die daaruit zijn gemaakt. Zo zorgt u ervoor dat wijzigingen in de sjabloon ook op de pagina&#39;s zelf worden doorgevoerd.
-* Met paginasjablonen wordt de paginacomponent generischer, zodat de basispaginacomponent zonder aanpassing kan worden gebruikt.
+## Overzicht {#overview}
 
-Met paginasjablonen worden de onderdelen die een pagina maken, geïsoleerd in onderdelen. U kunt de noodzakelijke combinaties componenten in een UI vormen, daardoor eliminerend de behoefte aan een nieuwe paginacomponent die voor elke paginariatie moet worden ontwikkeld.
+Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. Met de sjabloon kunt u de structuur van de resulterende pagina, eventuele eerste inhoud en de componenten definiëren die kunnen worden gebruikt (ontwerpeigenschappen).
+
+* Met bewerkbare sjablonen kunnen auteurs sjablonen maken en gebruiken.
+* Bewerkbare sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met beide
+   * [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) en
+   * [Universele editor](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Met paginasjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Universal Editor, wordt een beperkte subset van bewerkbare sjabloonfunctionaliteit gebruikt. Daarom richt de rest van dit document zich op bewerkbare sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Pagina-editor.
+
+## Bewerkbare sjablonen en pagina&#39;s bewerkt met de Pagina-editor {#page-editor}
+
+Bij het maken van sjablonen voor het maken van pagina&#39;s die kunnen worden bewerkt met de Pagina-editor, worden gewoonlijk gespecialiseerde auteurs geïdentificeerd.
+
+* Dergelijke gespecialiseerde auteurs worden genoemd **malplaatjeauteurs**
+* Sjabloonauteurs moeten lid zijn van de groep `template-authors` .
+* Bewerkbare sjablonen behouden een dynamische verbinding met alle pagina&#39;s die ermee zijn gemaakt. Zo zorgt u ervoor dat wijzigingen in de sjabloon ook op de pagina&#39;s zelf worden doorgevoerd.
+* Bewerkbare sjablonen maken de paginacomponent generischer, zodat de basispaginacomponent zonder aanpassing kan worden gebruikt.
+
+Met bewerkbare sjablonen worden de onderdelen die een pagina maken, geïsoleerd in componenten. U kunt de noodzakelijke combinaties componenten in een UI vormen, daardoor eliminerend de behoefte aan een nieuwe paginacomponent die voor elke paginariatie moet worden ontwikkeld.
 
 Dit document:
 
-* Geeft een overzicht van het maken van een paginasjabloon
+* Geeft een overzicht van het maken van een bewerkbare sjabloon
 * Beschrijft de admin/ontwikkelaarstaken die worden vereist om editable malplaatjes tot stand te brengen
 * Beschrijft de technische onderbouwing van editable malplaatjes
 * Beschrijft hoe AEM de beschikbaarheid van een malplaatje evalueert
 
 >[!NOTE]
 >
->In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewerken van sjablonen. Zie het auteursdocument [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md), die de mogelijkheden van editable malplaatjes zoals blootgesteld aan de malplaatjeauteur detailleert.
+>In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewerken van sjablonen. Zie het auteursdocument [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn, die de mogelijkheden van editable malplaatjes zoals blootgesteld aan de malplaatjeauteur detailleert.
 
 >[!TIP]
 >
->[ het leerprogramma WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) gaat diepgaand in hoe te om de Malplaatjes van de Pagina te gebruiken door een voorbeeld uit te voeren en is vrij nuttig voor het begrip hoe te opstelling een malplaatje in een nieuw project
+>[ het leerprogramma WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) gaat diepgaand in hoe te om editable malplaatjes te gebruiken door een voorbeeld uit te voeren en is vrij nuttig voor het begrip hoe te opstelling een malplaatje in een nieuw project
 
-## Een nieuwe sjabloon maken {#creating-a-new-template}
+## Een nieuwe bewerkbare sjabloon maken {#creating-a-new-template}
 
-Het creëren van de Malplaatjes van de Pagina wordt hoofdzakelijk gedaan met de [ malplaatjeconsole en malplaatjeredacteur ](/help/sites-cloud/authoring/page-editor/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
+Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [ malplaatjeconsole en malplaatjeredacteur ](/help/sites-cloud/authoring/page-editor/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
 Bij het maken van een bewerkbare sjabloon:
 
@@ -60,7 +74,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
 
-   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) editable zijn.
 
    Voor technische details van de structuur, zie [ Structuur ](#structure) in dit document.
 
@@ -72,7 +86,7 @@ Bij het maken van een bewerkbare sjabloon:
 
    * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Voor details op hoe een malplaatjeauteur beleid bepaalt, zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Voor details op hoe een malplaatjeauteur beleid bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author) editable zijn.
 
    Voor technische details van beleid, zie [ Beleid van de Inhoud ](#content-policies) in dit document.
 
@@ -81,7 +95,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Met Eerste inhoud wordt inhoud gedefinieerd die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon.
    * De initiële inhoud kan vervolgens worden bewerkt door auteurs van pagina&#39;s.
 
-   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
+   Voor details op hoe een malplaatjeauteur de structuur bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author) editable zijn.
 
    Voor technische details op aanvankelijke inhoud, zie [ Aanvankelijke Inhoud ](#initial-content) in dit document.
 
@@ -90,7 +104,7 @@ Bij het maken van een bewerkbare sjabloon:
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
 
-   Voor details op hoe een malplaatjeauteur de malplaatjelay-out bepaalt, zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
+   Voor details op hoe een malplaatjeauteur de malplaatjelay-out bepaalt, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author) editable zijn.
 
    Voor technische details op malplaatjelay-out, zie [ Lay-out ](#layout) in dit document.
 
@@ -99,7 +113,7 @@ Bij het maken van een bewerkbare sjabloon:
    * U kunt een sjabloon in- of uitschakelen om de sjabloon beschikbaar of niet beschikbaar te maken voor auteurs van pagina&#39;s.
    * Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
 
-   Voor details op hoe een malplaatjeauteur een malplaatje toelaat, zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
+   Voor details op hoe een malplaatjeauteur een malplaatje toelaat, zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) editable zijn.
 
    Voor technische details bij het toelaten van een malplaatje, zie [ Toelatend en Toestaan een Malplaatje voor Gebruik ](#enabling-and-allowing-a-template-for-use) e in dit document
 
@@ -129,8 +143,6 @@ Bij het maken van een bewerkbare sjabloon:
 >Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared` , dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared` . Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze te baseren op voorbeeldinhoud, moet u de naamruimte `cq.shared` wel invoegen.
 >
 >Zie [ Gebruikend Cliënt-Kant Bibliotheken ](/help/implementing/developing/introduction/clientlibs.md) voor verdere informatie.
-
-
 
 ## Sjabloonmappen {#template-folders}
 
@@ -357,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
-1. Maak een sjabloon op dezelfde manier als een paginasjabloon. Zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Dit zal als basis van uw malplaatjetype dienen.
+1. Maak een sjabloon op dezelfde manier als een paginasjabloon. Zie [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author) editable zijn. Dit zal als basis van uw malplaatjetype dienen.
 1. Gebruikend CRXDE Lite, kopieer het gecreeerde malplaatje van de `templates` knoop aan de `template-types` knoop onder de [ malplaatjeomslag ](#template-folders).
 1. Schrap het malplaatje van de `templates` knoop onder de [ malplaatjeomslag ](#template-folders).
 1. Verwijder in de kopie van de sjabloon onder het knooppunt `template-types` alle eigenschappen `cq:template` en `cq:templateType` uit alle `jcr:content` knooppunten.
@@ -455,9 +467,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 
 ### Layout {#layout}
 
-Wanneer [ het uitgeven van een malplaatje u de lay-out ](/help/sites-cloud/authoring/page-editor/templates.md) kunt bepalen, gebruikt dit [ standaard ontvankelijke lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
-
-<!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
+Wanneer [ het uitgeven van een malplaatje u de lay-out ](/help/sites-cloud/authoring/page-editor/templates.md) kunt bepalen, gebruikt dit [ standaard ontvankelijke lay-out, ](/help/sites-cloud/administering/responsive-layout.md) die [ op de pagina door de inhoudauteur kan worden gevormd.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 ### Inhoudsbeleid {#content-policies}
 
