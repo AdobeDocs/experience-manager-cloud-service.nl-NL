@@ -3,9 +3,10 @@ title: Uitbreidbaarheid gebruikersinterface AEM Assets View
 description: Meer informatie over de UI-uitbreidingsmogelijkheden van AEM Assets View. Met de gebruikersinterface van de AEM Assets View kunt u aangepaste UI-componenten toevoegen om aan specifieke bedrijfsbehoeften te voldoen.
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ U kunt uw extensies toevoegen aan het niveau voor middelen, mappen en verzamelin
 U kunt de Assets-weergave op de volgende manieren openen:
 ![ toegang-activa-mening-ui ](/help/assets/assets/access-assets-view.jpg)
 
-## Waar wordt de gebruikersinterface weergegeven van de gebruikersinterface die is toegevoegd voor de gebruikersinterface van de Assets View? {#ui-extensibility-panel-assets-view}
+## Waar worden UI-extensies weergegeven op de gebruikersinterface van de Assets-weergave? {#ui-extensibility-panel-assets-view}
 
 Navigeer in de weergave Assets naar de pagina Details van een element, map of verzameling. Deze pagina Details bevat een speciaal deelvenster waarin de toegevoegde UI-extensie wordt weergegeven.
 ![ mijn werkruimte ](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ Navigeer in de weergave Assets naar de pagina Details van een element, map of ve
 1. Stel uw lokale omgeving in en ervaar het proces voor het ontwikkelen van UI-extensies in de Assets-weergave zelf door uw eerste UI-extensie te maken. Zie [ geleidelijke de Ontwikkeling van de Uitbreiding van de Uitbreiding van de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) voor meer details.
 1. Stel uw app in met de AIO CLI om de basisextensiestructuur en de vereiste code te genereren. Zie [ de Generatie van de Code voor de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) voor gedetailleerde informatie.
 1. Test uw extensies lokaal om te controleren of ze werken zoals u had verwacht vóór de implementatie. Voer uw extensie uit in een volledig geïsoleerde omgeving of met een gedeeltelijke isolatie en sluit uw extensie aan op de productie-AEM Assets View voor tests. Zie [ het Oplossen van problemen - de Uitbreidbaarheid van de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) voor gedetailleerde informatie.
-
-
