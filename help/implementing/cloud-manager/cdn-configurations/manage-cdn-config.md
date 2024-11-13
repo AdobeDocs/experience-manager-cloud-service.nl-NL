@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 0%
@@ -63,7 +63,7 @@ De stappen voor het uitgeven van een configuratie CDN van de **pagina van Milieu
 
 1. In **geef CDN de dialoogdoos van de Configuratie** uit, plaats één of meerdere opties in de respectieve drop-down lijst.
 
-De opties die in de dialoogdoos worden getoond hangen af van of u een **beheerde Adobe CDN** of een **Andere leverancier CDN** (klant beheerde CDN) gebruikt.
+   De opties die in de dialoogdoos worden getoond hangen af van of u een **beheerde Adobe CDN** of een **Andere leverancier CDN** (klant beheerde CDN) gebruikt.
 
 1. Klik **Update**.
 

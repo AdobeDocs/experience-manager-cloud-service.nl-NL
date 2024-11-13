@@ -4,9 +4,10 @@ description: Leer over hoe te om dupbevestiging voor de bouw van uw eigen produc
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -28,4 +29,4 @@ De volgende configuratieeigenschappen bepalen de naam van de productiegastheer e
 
 Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers voorproef en hen activeren gebruikend het [ hulpmiddel van de Sidekick ](/help/edge/docs/sidekick.md) om de updates toe te passen.
 
-Zie ook [ Inleiding aan Edge Delivery Services in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
+Zie ook [ Ongeveer Edge Delivery om lijst in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) te doen.
