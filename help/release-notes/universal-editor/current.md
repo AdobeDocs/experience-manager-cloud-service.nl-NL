@@ -1,10 +1,10 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2024.11.12
-description: Dit zijn de releaseopmerkingen voor de release 2024.11.12 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2024.11.13
+description: Dit zijn de releaseopmerkingen voor de release 2024.11.13 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2024.11.12 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2024.11.13 {#release-notes}
 
-Dit zijn de releaseopmerkingen voor de release van 12 november 2024 van de Universal Editor.
+Dit zijn de releaseopmerkingen voor de release van 13 november 2024 van de Universal Editor.
 
 >[!TIP]
 >
