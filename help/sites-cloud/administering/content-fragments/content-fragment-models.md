@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3284'
 ht-degree: 1%
 
 ---
@@ -151,9 +151,12 @@ Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de r
 Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 * **Enige lijntekst**
-   * Voeg een of meer velden van één regel tekst toe. De maximumlengte kan worden gedefinieerd
+   * Een veld toevoegen voor één regel tekst; de maximumlengte kan worden gedefinieerd
+   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
+
 * **Meerdere lijntekst**
    * Een tekstgebied dat RTF-tekst, platte tekst of Markering kan zijn
+   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
 
   >[!NOTE]
   >
@@ -162,28 +165,40 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
   Dit formaat kan niet van de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) worden veranderd, maar slechts van het Model.
 
 * **Aantal**
-   * Een of meer numerieke velden toevoegen
+   * Een numeriek veld toevoegen
+   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
+
 * **Van Boole**
    * Een Booleaans selectievakje toevoegen
+
 * **Datum en tijd**
-   * Een datum en/of tijd toevoegen
+   * Een datum- en/of tijdveld toevoegen
+
 * **Opsomming**
-   * Een set selectievakjes, keuzerondjes of vervolgkeuzelijstvelden toevoegen
+   * Een set selectievakjes, keuzerondjes of vervolgkeuzelijsten toevoegen
+      * U kunt de opties specificeren beschikbaar aan de fragmentauteur
+
 * **Markeringen**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
+
 * **Verwijzing van de Inhoud**
    * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
+   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
+
 * **Verwijzing van het Fragment**
    * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
-   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
-      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+   * Het veld kan zo worden geconfigureerd dat auteurs van fragmenten:
+      * Het fragment waarnaar wordt verwezen, rechtstreeks bewerken
       * Een nieuw inhoudsfragment maken op basis van het juiste model
+      * Nieuwe instanties van het veld maken
+
 * **voorwerp JSON**
    * Hiermee stelt u de auteur van inhoudsfragment in staat JSON-syntaxis in te voeren in de overeenkomende elementen van een fragment.
       * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd/gekleefd.
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
+
 * **Placeholder van het Lusje**
    * Hiermee kunt u tabbladen invoeren die u kunt gebruiken bij het bewerken van de inhoud van het inhoudsfragment.
       * Deze worden getoond als verdelers in de modelredacteur, scheidend secties van de lijst van inhoudstypes. Elke instantie vertegenwoordigt het begin van een nieuw lusje.

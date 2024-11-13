@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Met Adobe Experience Manager (AEM) as a Cloud Service kunt u met inhoudsfragment
 >
 >De Fragmenten van de inhoud kunnen van twee consoles worden betreden: **de Fragmenten van de Inhoud** en **Assets**.
 >
->Er zijn ook twee editors beschikbaar voor Content Fragments. (Beide editors zijn toegankelijk vanuit beide consoles.)
+>Er zijn ook twee editors voor het ontwerpen van inhoudsfragmenten. Hoewel de basisfunctionaliteit hetzelfde is, zijn er enkele verschillen. Beide editors zijn toegankelijk vanuit beide consoles.
 >
 >Deze sectie behandelt de **console van de Fragmenten van de Inhoud** en de *nieuwe* redacteur van het Fragment van de Inhoud. Deze zijn ontwikkeld voor inhoud zonder kop (hoewel ze voor alle scenario&#39;s kunnen worden gebruikt)
 >
