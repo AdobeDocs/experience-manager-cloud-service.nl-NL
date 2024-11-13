@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
+source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,18 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 18459 {#18459}
+## Release 18598 {#18598}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18459 samengevat, die op 5 november 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 18311.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18598 samengevat, die op 13 november 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 18311. Release 18459 is privé gemaakt vanwege een uitgave.
 
 De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-18459}
+### Verbeteringen {#enhancements-18598}
 
 * CQ-4357471: Voeg ondersteuning toe voor i18n-woordenboeken omzetten in AEMaaCS.
+* FORMS-11646: GlobalContext Variables instellen voor relevante pagina&#39;s van AEM Forms.
+* FORMS-14833: De AEM Forms beschikt nu over de mogelijkheid om Adaptieve formulierfragmenten op te nemen in het uiteindelijke document of record (DoR).
+* FORMS-14255: gebruikers kunnen nu profiteren van een functie voor automatisch opslaan waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien.
 * SITES-23591: Content Fragments: Content fragment upgrade for UID support.
 * SITES-25440: Inhoudsfragmenten: CFM Search API om replicatiestatus weer te geven.
 * SITES-24369: Content Fragments: OpenAPI documentatieverbeteringen.
@@ -33,16 +36,18 @@ De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is
 * SITES-21199: Edge Delivery met Universal Editor: voeg ondersteuning toe voor sjablonen die op basis van pagina&#39;s zijn gemaakt.
 * SITES-20311: Edge Delivery met Universal Editor: voeg ondersteuning toe voor het importeren van CSV&#39;s in spreadsheets.
 * SITES-24821: Edge Delivery met Universal Editor: zorg dat aem.page / aem.live de standaardinstelling is voor integratie met Edge Delivery.
-* FORMS-11646: GlobalContext-variabelen instellen voor relevante pagina&#39;s van AEM Forms
-* FORMS-14833: De AEM Forms beschikt nu over de mogelijkheid om Adaptieve formulierfragmenten op te nemen in het uiteindelijke document of record (DoR).
-* FORMS-14255: gebruikers kunnen nu profiteren van een functie voor automatisch opslaan waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien.
 
-
-### Opgeloste problemen {#fixed-issues-18459}
+### Opgeloste problemen {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator mislukt als er meer dan 10 toetsen moeten worden vertaald.
+* CQ-4358028: AEM project creeert ontbreekt wanneer een gebruiker met slechts project-beheerders groep een nieuwe duimnagel op de pagina van de projectverwezenlijking uploadt.
 * FORMS-14978: Pagina laden inschakelen voor een formulier op basis van kerncomponenten voor themaceredacteur.
+* FORMS-15682: Het probleem betreft de integratie van AEM Forms en Dynamics FDM. Wanneer een gebruiker een formulier verzendt, wordt het Document of Record (DOR) niet verzonden als een PDF-bijlage bij het opgegeven entiteitveld.
+* FORMS-15799: Adobe Sign GovCloud-pagina voor handtekeningen wordt niet weergegeven in iframe.
+* FORMS-16113: Wanneer een gebruiker, die een beheerder is van de Adobe Sign-account, toegang probeert te krijgen tot een document dat door een andere gebruiker (ook een beheerder) is verzonden, kan de API van de get-overeenkomst een andere overeenkomst-id retourneren dan de id die oorspronkelijk is gegenereerd toen de overeenkomst werd gemaakt.
 * FORMS-16596: Toegankelijkheidsprobleem: uitgeschakelde knoppen niet herkend door Screen Reader.
+* GRANITE-53907: Kan de servicegebruiker niet identificeren als supergebruiker van de workflow.
+* SKYOPS-90560: De nieuwste release van het Sling Model is van invloed op de prestaties van het exporteren van het Sling Model.
 * SITES-10575: MSM: Vervagings-bloomfilter Loader probeert meer dan 100.000 rijen te laden.
 * SITES-20755: Inhoudsfragmenten: Verwijzing naar element met UUID vernieuwen geeft de miniatuur niet aan.
 * SITES-26253: Inhoudsfragmenten: UUID-migratie: Wijzig het onderwerp van de schrijftaak om generiek te zijn.
@@ -63,27 +68,21 @@ De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is
 * SITES-25938: Launches: Unexpected delete post Translation project.
 * SITES-25393: Edge Delivery met Universal Editor: tekstknooppunten die verloren gaan bij het renderen van opgemaakte richtext met één alinea.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph- en twitter-metagegevenskenmerken werken niet in het metagegevensmodel van de pagina.
-* SITES-25401: Experience Fragments: Trage XF referentie update
-* GRANITE-53907: Kan servicegebruiker niet identificeren als supergebruiker van workflow
-* CQ-4358028: AEM project creeert ontbreekt wanneer een gebruiker met slechts project-beheerders groep een nieuwe duimnagel op de pagina van de projectverwezenlijking uploadt.
-* FORMS-15682: Het probleem betreft de integratie van AEM Forms en Dynamics FDM. Wanneer een gebruiker een formulier verzendt, wordt het Document of Record (DOR) niet verzonden als een PDF-bijlage bij het opgegeven entiteitveld.
-* FORMS-15799: Adobe Sign GovCloud-pagina voor handtekeningen wordt niet weergegeven in iframe
-* FORMS-16113: Wanneer een gebruiker, die een beheerder is van de Adobe Sign-account, toegang probeert te krijgen tot een document dat door een andere gebruiker (ook een beheerder) is verzonden, kan de API van de get-overeenkomst een andere overeenkomst-id retourneren dan de id die oorspronkelijk is gegenereerd toen de overeenkomst werd gemaakt.
+* SITES-25401: Experience Fragments: Trage XF referentie update.
 
-
-### Bekende problemen {#known-issues-18459}
+### Bekende problemen {#known-issues-18598}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-18459}
+### Verouderde functies en API&#39;s {#deprecated-18598}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-18459}
+### Beveiligingsproblemen {#security-18598}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 21 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-18459}
+### Ingesloten technologieën {#embedded-tech-18598}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
