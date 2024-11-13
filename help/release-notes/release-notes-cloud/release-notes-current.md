@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
@@ -101,11 +101,19 @@ Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Cont
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
+### Nieuwe functies in AEM Forms {#forms-new-features}
+
+* **verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs**: U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
+
+* **specificeer de Stijlen van de Vertoning voor Document van de Componenten van het Verslag (DoR)**: In een XFA dossier, kunt u de vertoningsstijlen voor Document van de componenten van het Verslag nu specificeren. Deze stijlen kunnen later worden toegepast op de corresponderende componenten in de Adaptive Forms Editor.
+
 ### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
-#### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
+* **auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms**: De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
-Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+* **het werkingsgebied van Adobe Sign van de Update gemakkelijk**: U kunt het werkingsgebied van een configuratie van Adobe Sign direct van de pagina van de Configuraties van de AEMWolk wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
+
+* **Asynchrone functiesteun voor Adaptieve Forms**: Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
