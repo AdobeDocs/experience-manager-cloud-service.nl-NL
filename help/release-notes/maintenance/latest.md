@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is
 * SITES-21199: Edge Delivery met Universal Editor: voeg ondersteuning toe voor sjablonen die op basis van pagina&#39;s zijn gemaakt.
 * SITES-20311: Edge Delivery met Universal Editor: voeg ondersteuning toe voor het importeren van CSV&#39;s in spreadsheets.
 * SITES-24821: Edge Delivery met Universal Editor: zorg dat aem.page / aem.live de standaardinstelling is voor integratie met Edge Delivery.
+* FORMS-11646: GlobalContext-variabelen instellen voor relevante pagina&#39;s van AEM Forms
+* FORMS-14833: De AEM Forms beschikt nu over de mogelijkheid om Adaptieve formulierfragmenten op te nemen in het uiteindelijke document of record (DoR).
+* FORMS-14255: gebruikers kunnen nu profiteren van een functie voor automatisch opslaan waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien.
+
 
 ### Opgeloste problemen {#fixed-issues-18459}
 
@@ -60,6 +64,11 @@ De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is
 * SITES-25393: Edge Delivery met Universal Editor: tekstknooppunten die verloren gaan bij het renderen van opgemaakte richtext met één alinea.
 * SITES-24643: Edge Delivery with Universal Editor: OpenGraph- en twitter-metagegevenskenmerken werken niet in het metagegevensmodel van de pagina.
 * SITES-25401: Experience Fragments: Trage XF referentie update
+* GRANITE-53907: Kan servicegebruiker niet identificeren als supergebruiker van workflow
+* CQ-4358028: AEM project creeert ontbreekt wanneer een gebruiker met slechts project-beheerders groep een nieuwe duimnagel op de pagina van de projectverwezenlijking uploadt.
+* FORMS-15682: Het probleem betreft de integratie van AEM Forms en Dynamics FDM. Wanneer een gebruiker een formulier verzendt, wordt het Document of Record (DOR) niet verzonden als een PDF-bijlage bij het opgegeven entiteitveld.
+* FORMS-15799: Adobe Sign GovCloud-pagina voor handtekeningen wordt niet weergegeven in iframe
+* FORMS-16113: Wanneer een gebruiker, die een beheerder is van de Adobe Sign-account, toegang probeert te krijgen tot een document dat door een andere gebruiker (ook een beheerder) is verzonden, kan de API van de get-overeenkomst een andere overeenkomst-id retourneren dan de id die oorspronkelijk is gegenereerd toen de overeenkomst werd gemaakt.
 
 
 ### Bekende problemen {#known-issues-18459}
