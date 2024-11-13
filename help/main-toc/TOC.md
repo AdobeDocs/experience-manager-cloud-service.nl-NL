@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
 workflow-type: tm+mt
-source-wordcount: '5794'
+source-wordcount: '5799'
 ht-degree: 2%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 2%
       + Edge Delivery-sites {#edge-delivery-sites}
          + [Inleiding tot Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Een Edge Delivery-site toevoegen aan Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Pushvalidatie instellen voor een Edge Delivery-site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Edge Delivery-sites beheren in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Domeininstellingen {#custom-domain-names}
          + [Inleiding tot domeininstellingen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1163,7 +1164,6 @@ ht-degree: 2%
          + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN-configuraties {#cdn-configurations}
          + [Een CDN-configuratie toevoegen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Pushvalidatie instellen](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [CDN-configuraties beheren](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP-Lijsten van gewenste personen {#ip-allow-lists}
          + [Inleiding aan IP Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
