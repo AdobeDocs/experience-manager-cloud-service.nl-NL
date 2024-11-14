@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
@@ -101,19 +101,19 @@ Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Cont
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-### Nieuwe functies in AEM Forms {#forms-new-features}
+### Nieuwe functie in AEM Forms {#forms-new-features}
 
-* **verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs**: U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
+* [ verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs ](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
 
-* **specificeer de Stijlen van de Vertoning voor Document van de Componenten van het Verslag (DoR)**: In een XFA dossier, kunt u de vertoningsstijlen voor Document van de componenten van het Verslag nu specificeren. Deze stijlen kunnen later worden toegepast op de corresponderende componenten in de Adaptive Forms Editor.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
-* **auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms**: De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+* [ auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms ](/help/forms/save-core-component-based-form-as-draft.md): De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
-* **het werkingsgebied van Adobe Sign van de Update gemakkelijk**: U kunt het werkingsgebied van een configuratie van Adobe Sign direct van de pagina van de Configuraties van de AEMWolk wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
+* [ het werkingsgebied van Adobe Sign van de Update gemakkelijk ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): U kunt het werkingsgebied van een configuratie van Adobe Sign direct van de pagina van de Configuraties van de AEMWolk wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
 
-* **Asynchrone functiesteun voor Adaptieve Forms**: Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
+* [ Asynchrone functiesteun voor Adaptieve Forms ](/help/forms/using-async-funct-in-rule-editor.md): Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 #### AEM Forms AI Assistant
 
-Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. Hierdoor kunt u sneller dan ooit betere formulieren maken.
+[ Generatieve AI voor Aanpassings Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) brengt een geheel nieuw niveau van macht en gemak aan uw processen van de vormontwikkeling. Hierdoor kunt u sneller dan ooit betere formulieren maken.
 
 ![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
 
