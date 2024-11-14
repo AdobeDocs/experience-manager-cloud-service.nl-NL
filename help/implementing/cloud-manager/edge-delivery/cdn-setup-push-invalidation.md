@@ -1,13 +1,13 @@
 ---
-title: Push Invalidation instellen
-description: Leer over hoe te om dupbevestiging voor de bouw van uw eigen productieCDN te vormen.
+title: Instelbare pushvalidatie voor een Edge Delivery-site
+description: Ontdek hoe u pushvalidatie voor een Edge Delivery-site configureert voor efficiënte updates van inhoud en caching.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

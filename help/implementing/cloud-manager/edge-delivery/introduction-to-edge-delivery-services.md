@@ -4,9 +4,9 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 1%
 
 ---
@@ -63,13 +63,13 @@ Een Edge Delivery Services kan op verschillende manieren worden toegevoegd afhan
 >* Zodra de vergunning van Edge Delivery Services wordt toegepast op of uit een programma verwijderd, wordt de verandering onmiddellijk van kracht zonder de behoefte om een pijpleiding in werking te stellen.
 
 
-## De Edge Delivery-lijst met taken {#ed-todo-list}
+## De Edge Delivery-lijst voor te doen in Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die wordt bedoeld om u door onboarding te begeleiden, uw plaats van Edge Delivery te beheren al manier aan [ gaan-Levend ](/help/journey-onboarding/go-live-checklist.md).
+De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak controlelijst die wordt bedoeld om u door onboarding te begeleiden, die uw plaats van Edge Delivery helemaal beheren aan [ gaan-Levend ](/help/journey-onboarding/go-live-checklist.md).
 
-![ de plaats van Edge Delivery om lijst ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png) te doen
+![ de plaats van Edge Delivery aan-doe lijst in Cloud Manager ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Taak | Beschrijving |
 | --- | --- | --- |
