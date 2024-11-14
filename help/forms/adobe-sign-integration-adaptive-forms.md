@@ -4,7 +4,8 @@ description: Leer hoe te om Adobe Acrobat Sign voor  [!DNL AEM Forms]  as a Clou
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
+exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
+source-git-commit: 31a4a8b5b86439483b058c1fb132979476aab2e5
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -104,7 +105,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
-   
+   >[!NOTE]
    > U kunt de bereikmodifier wijzigen van `self` in `account` rechtstreeks vanuit AEM interface, zoals in stap 12 wordt beschreven.
 
    Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Acrobat Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
