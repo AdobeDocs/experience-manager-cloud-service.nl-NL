@@ -1,7 +1,7 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -214,7 +214,7 @@ Als een productkwestie extra onderzoek en het oplossen van problemen vereist en 
 
 Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-site registreren in Cloud Manager. Het registreren van uw website bij Cloud Manager wordt geadviseerd aan alle gebruikers van AEM as a Cloud Service en [ brengt een aantal voordelen ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Zie [ de documentatie van Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) voor details als u nog niet uw plaats hebt geregistreerd.
 
-Nadat uw website is geregistreerd bij Cloud Manager, volgt u dit proces met de Admin Console om een ondersteuningsticket te verzenden:
+**om een steunkaartje te registreren:**
 
 1. [ volg het standaardsteunproces ](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
 1. Voeg **Edge Delivery** in de titel van het kaartje toe.
