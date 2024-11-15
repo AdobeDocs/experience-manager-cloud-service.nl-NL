@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
+source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2576'
 ht-degree: 0%
 
 ---
@@ -499,3 +499,16 @@ De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats
       * Type: boolean
 +++
 
+## Java Runtime-update naar versie 21 {#java-runtime-update-21}
+
+AEM as a Cloud Service wordt verplaatst naar Java 21-runtime. Met het oog op de verenigbaarheid is het van essentieel belang de volgende aanpassingen aan te brengen:
+
+### Minimale versie van org.objectweb.asm {#org.objectweb.asm}
+
+Werk het gebruik van org.objectweb.asm bij naar versie 9.5 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+
+### Minimumversie van org.apache.groovy {#org.apache.groovy}
+
+Werk het gebruik van org.apache.groovy bij naar versie 4.0.22 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+
+Deze bundel kan indirect worden omvat door dergebiedsdelen zoals de AEM Groovy Console toe te voegen.
