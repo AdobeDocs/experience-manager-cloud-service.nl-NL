@@ -4,10 +4,10 @@ description: Leer over de gegevensattributen en de punttypes die de Universele R
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 1%
+source-wordcount: '574'
+ht-degree: 0%
 
 ---
 
@@ -31,8 +31,8 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `data-aue-resource` | URL aan het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
 | `data-aue-prop` | Attribuut van het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
 | `data-aue-type` | [ Type van het editable punt ](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
-| `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
-| `data-aue-label` | Bepaalt een douanelabel voor een selecteerbaar punt dat in de redacteur <br> wordt getoond Voor het geval `data-aue-model` wordt geplaatst, wordt het etiket teruggewonnen als model |
+| `data-aue-filter` | Bepaalt:<br> - welke functies RTE <br> - welke componenten aan een container <br> kunnen worden toegevoegd - welke activa aan een media type kunnen worden toegevoegd |
+| `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor formulierbewerkingen in het deelvenster Eigenschappen |
 | `data-aue-behavior` | Bepaalt het [ gedrag van een instrumentatie ](#behaviors), bijvoorbeeld, kan de stand-alone tekst of het beeld een component ook simuleren om het te bewegen of te schrappen |
 
@@ -47,10 +47,14 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en het deelvenster Eigenschappen en zijn velden te openen. | Vereist | nvt | nvt | Optioneel | Optioneel | nvt |
 | `reference` | Bewerkbaar is een verwijzing, bijvoorbeeld Inhoudsfragment, Ervaring Fragment of Product | Afhankelijkheden <br> zie hieronder | Afhankelijkheden <br> zie hieronder | Facultatieve <br> lijst van het de filtercriteria van het Fragment van de Inhoud, van het Product, of van het Fragment van de Ervaring die tot de verwijzingsselecteur wordt overgegaan | Optioneel | Optioneel | nvt |
 
-Afhankelijk van het gebruiksgeval `data-aue-prop` of `data-aue-resource` kan vereist zijn of niet. Bijvoorbeeld:
+`data-aue-resource` is altijd vereist omdat dit de primaire sleutel is die aangeeft waar wijzigingen in de inhoud worden geschreven.
 
-* `data-aue-resource` is vereist als u een query uitvoert op Inhoudsfragmenten via GraphQL en u de lijst in de context bewerkbaar wilt maken.
-* `data-aue-prop` is vereist als u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
+* Dit is niet rechtstreeks vereist voor de tag waarin de eigenschap `data-aue-type` is ingesteld.
+* Als deze niet is ingesteld, wordt het kenmerk `data-aue-resource` van het dichtstbijzijnde bovenliggende element gebruikt.
+
+`data-aue-prop` is vereist wanneer u een bewerking wilt uitvoeren in context en met uitzondering van een container waarin dit optioneel is (als de container een inhoudsfragment is en de eigenschap verwijst naar een veld met meerdere referenties).
+
+* `data-aue-prop` is het kenmerk dat moet worden bijgewerkt voor de primaire sleutel van `data-aue-resource` .
 
 ## Gedrag {#behaviors}
 

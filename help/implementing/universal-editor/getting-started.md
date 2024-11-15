@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -20,82 +20,7 @@ Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van
 >
 >Als u in een voorbeeld liever zou duiken, kunt u de [ Universele SteekproefApp van de Redacteur op GitHub herzien.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-## Stappen aan boord {#onboarding}
-
-Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit document een AEM-app als voorbeeld gebruikt.
-
-Er zijn verschillende stappen om uw AEM-app aan te melden en van instrumenten te voorzien voor gebruik van de Universal Editor.
-
-1. [Neem de kernbibliotheek van de Universal Editor op.](#core-library)
-1. [Voeg de noodzakelijke configuratie OSGi toe.](#osgi-configurations)
-1. [Instrueer de pagina.](#instrument-page)
-
-Dit document begeleidt u door deze stappen.
-
-## Inclusief de Universal Editor Core-bibliotheek {#core-library}
-
-Voordat uw app van instrumenten kan worden voorzien voor gebruik met de Universal Editor, moet deze de volgende afhankelijkheid bevatten.
-
-```javascript
-@adobe/universal-editor-cors
-```
-
-Om de instrumentatie te activeren, moet de volgende import worden toegevoegd aan de `index.js` .
-
-```javascript
-import "@adobe/universal-editor-cors";
-```
-
-### Alternatief voor toepassingen die niet reageren {#alternative}
-
-Als u geen React app implementeert en/of rendering op de server vereist, kunt u het volgende opnemen in de hoofdtekst van het document.
-
-```html
-<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
-```
-
-De recentste versie wordt altijd geadviseerd, maar de vorige versies van de dienst kunnen in het geval van het breken van veranderingen worden van verwijzingen voorzien.
-
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - De nieuwste UE CORS lib
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - De nieuwste UE CORS lib onder versie 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - De nieuwste UE CORS lib onder versie 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` - De exacte UE CORS lib versie 2.1.1
-
-## Voeg de noodzakelijke configuraties OSGi toe {#osgi-configurations}
-
-Als u AEM inhoud wilt kunnen bewerken met uw app met de Universal Editor, moeten de instellingen voor CORS en cookie binnen AEM zijn uitgevoerd.
-
-De volgende [ configuraties OSGi moeten op de AEM auteursinstantie worden geplaatst.](/help/implementing/deploying/configuring-osgi.md)
-
-* `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* X-FRAME-OPTIONS verwijderen: SAMEORIGIN-koptekst in `org.apache.sling.engine.impl.SlingMainServlet`
-
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
-
-Het inlogtoken cookie moet als een extern domein naar AEM worden verzonden. Daarom moet het cookie van dezelfde site expliciet worden ingesteld op `None` .
-
-Deze eigenschap moet worden ingesteld in de `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi-configuratie.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          token.samesite.cookie.attr="None" />
-```
-
-### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
-
-X-Frame-Opties: SAMEORIGIN voorkomt dat AEM pagina&#39;s binnen een iframe worden weergegeven. Als u de koptekst verwijdert, kunnen de pagina&#39;s worden geladen.
-
-Deze eigenschap moet worden ingesteld in de `org.apache.sling.engine.impl.SlingMainServlet` OSGi-configuratie.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          jcr:primaryType="sling:OsgiConfig"
-          sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
-```
+Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit document een AEM-app als voorbeeld gebruikt. Dit document begeleidt u door deze stappen.
 
 ## De pagina instrumenteren {#instrument-page}
 
