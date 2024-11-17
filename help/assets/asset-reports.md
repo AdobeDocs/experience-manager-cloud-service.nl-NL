@@ -1,13 +1,13 @@
 ---
 title: Rapporten over gebruik en delen
-description: Rapporten over uw activa in  [!DNL Adobe Experience Manager Assets]  die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
+description: Rapporten over uw activa in  [!DNL Adobe Experience Manager Assets]  die u helpen het gebruik, de activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '942'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets]
 
 Gebruik de informatie in de rapporten om belangrijke succesmetriek af te leiden om de goedkeuring van [!DNL Assets] binnen uw onderneming en door klanten te meten.
 
-Het [!DNL Assets] -rapportagekader gebruikt [!DNL Sling] -taken om rapportageaanvragen op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
+Het [!DNL Assets] -rapportagekader gebruikt [!DNL Sling] -taken asynchroon om rapportageaanvragen op geordende wijze te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
@@ -65,11 +65,11 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
    ![ pagina van Hulpmiddelen om activa te navigeren rapport ](assets/navigation.png)
 
 1. Klik op de pagina [!UICONTROL Asset Reports] op **[!UICONTROL Create]** op de werkbalk.
-1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]** .
+1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]** . Entitle zelf aan een **AEM het productprofiel van de Beheerder** om a **download** rapport tot stand te brengen. Zie [ Toewijzend AEM Profielen van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) om zich aan een AEM het productprofiel van de Beheerder te vergunning te geven.
 
    ![ Uitgezochte rapporttype ](assets/choose_report.png)
 
-1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad. Standaard is het mappad `/content/dam` . U kunt een andere weg specificeren om het rapport over een specifieke omslag uit te voeren.
+1. Configureer rapportdetails, zoals titel, beschrijving, miniatuur en mappad. Standaard is het mappad `/content/dam` . U kunt een andere weg specificeren om het rapport over een specifieke omslag uit te voeren.
 
    ![ Pagina om rapportdetails toe te voegen ](assets/report_configuration.png)
 
@@ -103,12 +103,12 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
 
    ![ Uitgezocht of annuleer selectie van rapportkolommen ](assets/configure_columns.png)
 
-   Als u een aangepaste kolomnaam of een aangepast eigenschapspad wilt weergeven, configureert u de eigenschappen voor het binaire element onder het knooppunt `jcr:content` in CRX. U kunt dit ook toevoegen via de padkiezer voor eigenschappen.
+   Als u een aangepaste kolomnaam of een aangepast eigenschapspad wilt weergeven, configureert u de eigenschappen voor het binaire element onder het knooppunt `jcr:content` in CRX. U kunt het ook toevoegen via een padkiezer voor eigenschappen.
 
    ![ Uitgezocht of annuleer selectie van rapportkolommen ](assets/custom_columns.png)
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
-1. Op de pagina [!UICONTROL Asset Reports] is de status van het genereren van het rapport gebaseerd op de huidige status van de rapporttaak, bijvoorbeeld [!UICONTROL Success] , [!UICONTROL Failed] , [!UICONTROL Queued] of [!UICONTROL Scheduled] . Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op **[!UICONTROL View]** op de werkbalk klikken.
+1. Op de pagina [!UICONTROL Asset Reports] is de status van het genereren van het rapport gebaseerd op de huidige status van de rapporttaak, bijvoorbeeld [!UICONTROL Success] , [!UICONTROL Failed] , [!UICONTROL Queued] of [!UICONTROL Scheduled] . Dezelfde status wordt weergegeven in het postvak meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op **[!UICONTROL View]** op de werkbalk klikken.
 
    <!--![A generated report](assets/report_page.png)-->
    ![ geproduceerde rapportstatus ](assets/report-status.JPG)
