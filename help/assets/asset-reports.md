@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 3%
@@ -65,7 +65,11 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
    ![ pagina van Hulpmiddelen om activa te navigeren rapport ](assets/navigation.png)
 
 1. Klik op de pagina [!UICONTROL Asset Reports] op **[!UICONTROL Create]** op de werkbalk.
-1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]** . Entitle zelf aan een **AEM het productprofiel van de Beheerder** om a **download** rapport tot stand te brengen. Zie [ Toewijzend AEM Profielen van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) om zich aan een AEM het productprofiel van de Beheerder te vergunning te geven.
+1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]** .
+
+   >[!NOTE]
+   >
+   >Entitle zelf aan een **AEM het productprofiel van de Beheerder** om a **download** rapport tot stand te brengen. Zie [ Toewijzend AEM Profielen van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) om zich aan een AEM het productprofiel van de Beheerder te vergunning te geven.
 
    ![ Uitgezochte rapporttype ](assets/choose_report.png)
 
