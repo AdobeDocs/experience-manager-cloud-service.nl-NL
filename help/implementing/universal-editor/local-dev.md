@@ -4,9 +4,9 @@ description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lo
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-Dit zijn de minimumwaarden die vereist zijn voor lokale ontwikkeling in ons voorbeeld. In de volgende tabel worden deze en aanvullende waarden beschreven.
+Dit zijn de minimumwaarden die vereist zijn voor lokale ontwikkeling in ons voorbeeld.
+
+>[!NOTE]
+>
+>Als u versie 130+ van Chrome in werking stelt, moet u het verzenden van de kopballen van CORS voor [ privé netwerktoegang ](https://wicg.github.io/private-network-access/#private-network-request) toelaten gebruikend de `UES_CORS_PRIVATE_NETWORK` optie.
+
+
+In de volgende tabel worden deze en aanvullende waarden beschreven.
 
 | Waarde | Optioneel | Standaard | Beschrijving |
 |---|---|---|---|
@@ -93,6 +101,7 @@ Dit zijn de minimumwaarden die vereist zijn voor lokale ontwikkeling in ons voor
 | `UES_SPLUNK_TOKEN` | Ja | Geen | Splunk-token |
 | `UES_SPLUNK_INDEX` | Ja | Geen | Index die moet worden gebruikt voor het schrijven van logbestanden naar |
 | `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Naam van de bron in de splunklogboeken |
+| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Laat het verzenden van kopballen CORS toe om [ Privé netwerk toe te staan.](https://wicg.github.io/private-network-access/#private-network-request) Vereist voor gebruikers van Chrome versie 130+ |
 
 >[!NOTE]
 >
