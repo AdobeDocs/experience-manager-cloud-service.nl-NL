@@ -4,9 +4,9 @@ description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschill
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
+source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,52 @@ In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor u
    * Gebruik de Tab-toets om de focus naar de volgende cel te verplaatsen.
    * De redacteur voegt nieuwe rijen aan spreadsheet toe zonodig.
    * Om een rij te schrappen of te bewegen, gebruik het **1} pictogram van de Schrapping aan het eind van elke rij en de belemmeringshandvatten aan het begin van elke rij, respectievelijk.**
+
+## Werkbladgegevens importeren {#importing}
+
+Naast het bewerken van spreadsheets in de AEM Pagina-editor kunt u ook gegevens uit een CSV-bestand importeren.
+
+1. Wanneer het uitgeven van uw spreadsheet in AEM, tik of klik **uploadt** knoop bij top-left van het scherm.
+1. Selecteer in de vervolgkeuzelijst hoe u de gegevens wilt importeren.
+   * **vervangt Doc** om de inhoud van volledige spreadsheet met de inhoud van het Csv- dossier te vervangen u zult uploaden.
+   * **voeg aan Doc** toe om de gegevens van het Csv- dossier toe u aan de bestaande spreadsheetinhoud zult uploaden.
+1. In de dialoog die opent, selecteer uw Csv- dossier en dan ontleend of klik **Open**.
+
+Er wordt een dialoogvenster geopend wanneer het importeren wordt verwerkt. Wanneer de gegevens in het CSV-bestand zijn voltooid, worden deze toegevoegd aan of vervangen door de inhoud van het spreadsheet. Als er fouten optreden, zoals een fout in de kolomverhoudingen, worden deze gemeld zodat u het CSV-bestand kunt corrigeren.
+
+>[!NOTE]
+>
+>* De koppen in het CSV-bestand moeten exact overeenkomen met de kolommen in het werkblad.
+>* Als u de volledige CSV importeert, worden de kolomkoppen niet gewijzigd, alleen de inhoudsrijen.
+>* Als u de kolommen moet bijwerken, moet u dat doen in de AEM Pagina-editor voordat u de CSV-bestanden kunt importeren.
+>* Een CSV-bestand kan niet groter zijn dan 10 MB voor importeren.
+
+Afhankelijk van de selectie van `mode` kunt u ook `create` , `replace` of `append` naar spreadsheets gaan met een opdracht CSV en cURL, vergelijkbaar met de volgende.
+
+```text
+curl --request POST \
+  --url http://<aem-instance>/bin/asynccommand \
+  --header 'content-type: multipart/form-data' \
+  --form file=@/path/to/your.csv \
+  --form spreadsheetPath=/content/<your-site>/<your-spreadsheet> \
+  --form 'spreadsheetTitle=Your Spreadsheet' \
+  --form cmd=spreadsheetImport \
+  --form operation=asyncSpreadsheetImport \
+  --form _charset_=utf-8 \
+  --form mode=append
+```
+
+De aanroep retourneert een HTML-pagina met informatie over de taak-id.
+
+```text
+Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
+```
+
+[ u kunt de **2} console van Banen ](/help/operations/asynchronous-jobs.md) gebruiken om het statuut van de baan te bekijken of identiteitskaart te gebruiken die aan vraag het is teruggekeerd.**
+
+```text
+https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
+```
 
 ## Een spreadsheetpad.json publiceren {#paths-json}
 
