@@ -4,9 +4,9 @@ description: Leer de richtlijnen en de beste werkwijzen voor het gebruik van het
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 11%
 
 ---
@@ -72,8 +72,6 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Als het plaatsen **bestaande inhoud op de instantie van de Wolk alvorens wordt toegelaten** wordt de optie van de opname toegelaten, schrapt het de volledige bestaande bewaarplaats en leidt tot een nieuwe bewaarplaats om inhoud in te nemen. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Het is ook waar voor een admin gebruiker die aan de **wordt toegevoegd beheerders** groep. De gebruiker moet aan de **beheerders** groep worden gelezen om het toegangstoken voor het Hulpmiddel van de Overdracht van de Inhoud terug te winnen.
 
-* Oplossingen ondersteunen het samenvoegen van inhoud van meerdere bronnen in de instantie van de Cloud Service van het doel niet als de inhoud van de twee bronnen naar dezelfde paden op het doel wordt verplaatst. Als u inhoud van meerdere bronnen naar één doelinstantie wilt verplaatsen, zorgt u ervoor dat de inhoudspaden van de bronnen elkaar niet overlappen.
-
 * De extractietoets is 14 dagen geldig vanaf het moment dat deze is gemaakt of vernieuwd. Het kan op elk ogenblik worden verlengd. Als de extractietoets is verlopen, kunt u geen extractie uitvoeren.
 
 * Met het gereedschap Inhoud overbrengen (CTT) kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een Publish-omgeving. De inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. Een gebruiker kan een migratieset opnemen in een instantie Auteur, een instantie Publish of beide. De Adobe beveelt aan dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur wordt geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen. En installeer op dezelfde manier CTT op de Publish-broninstantie om inhoud naar de Publish-doelinstantie te verplaatsen. Zie [ Lopend het Hulpmiddel van de Overdracht van de Inhoud op een instantie van Publish ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) voor meer details.
@@ -91,6 +89,8 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 * Als u aanvullende onderdelen wilt uitvoeren, mag de inhoudstructuur van bestaande inhoud niet veranderen van het tijdstip waarop de eerste extractie wordt uitgevoerd tot het moment waarop de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
 * Als u van plan bent versies op te nemen als onderdeel van een migratieset en aanvullende versies uitvoert met `wipe=false` , moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true` .
+
+* De CTT (Content Transfer Tool) ondersteunt geen samenvoegingstips. Om inhoud van meerdere systemen te consolideren in één Cloud Service-instantie, kunnen alleen versies van één bronsysteem worden gemigreerd. Dit proces vereist het gebruik van migraties met de wipe=false parameter, die in langere innametijden wegens de stijgende aard van de verrichting kan resulteren. Voeg, indien mogelijk, inhoud vóór het begin van de migratie toe aan één bronsysteem om te voorkomen dat de inhoud moet worden samengevoegd.
 
 * Een migratieset verloopt na een langdurige periode van inactiviteit, waarna de gegevens ervan niet meer beschikbaar zijn. Het overzicht [ Vastgestelde Vervaldatum van de Migratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) voor meer details.
 
