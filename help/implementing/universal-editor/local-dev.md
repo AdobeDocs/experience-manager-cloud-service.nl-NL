@@ -4,7 +4,7 @@ description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lo
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -154,7 +154,7 @@ Als deze eenmaal is ingesteld, wordt elke aanroep van de inhoudsupdate weergegev
 
 Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst te gebruiken, ](#using-loca-ue) kunt u de redacteur nu beginnen.
 
-1. Open uw browser naar `https://localhost:8000/corslib/LATEST` .
+1. Open uw browser naar `https://localhost:8000/ping` .
 1. Verricht uw browser om [ uw zelf-ondertekend certificaat goed te keuren.](#ue-https)
 1. Zodra het zelfondertekende certificaat wordt vertrouwd, kunt u de pagina bewerken met uw lokale Universal Editor-service.
 
