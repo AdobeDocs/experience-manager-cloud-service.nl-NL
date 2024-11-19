@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ De activering van de 2024.11.0-functie biedt de volledige functionaliteit die is
 * SITES-24369: Content Fragments: OpenAPI documentatieverbeteringen.
 * SITES-25478: Content Fragments: Add back-end support for external asset references.
 * SITES-26119: Content Fragments: Add support of external asset references in reference type.
+* SITES-24609: Inhoudsfragmenten: Verbeteren van validatie bij verwijderen van inhoudsfragmenten.
 * SITES-21199: Edge Delivery met Universal Editor: voeg ondersteuning toe voor sjablonen die op basis van pagina&#39;s zijn gemaakt.
 * SITES-20311: Edge Delivery met Universal Editor: voeg ondersteuning toe voor het importeren van CSV&#39;s in spreadsheets.
 * SITES-24821: Edge Delivery met Universal Editor: zorg dat aem.page / aem.live de standaardinstelling is voor integratie met Edge Delivery.
