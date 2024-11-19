@@ -4,9 +4,9 @@ description: Leer hoe te om caching voorwerpen uit het geheime voorgeheugen van 
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,19 @@ curl
 ```
 
 Houd er rekening mee dat de header `X-AEM-Purge` de waarde &#39;all&#39; moet bevatten.
+
+## Interactie met door Klant beheerde CDN
+
+In het geval van a [ Klant Beheerde CDN ](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) ook `X-Forwarded-Host` en `X-AEM-Edge-Key` moet worden verstrekt:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Interacties met de laag Apache/Dispatcher {#apache-layer}
 
