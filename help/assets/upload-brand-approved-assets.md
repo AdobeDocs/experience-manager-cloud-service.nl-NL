@@ -3,9 +3,9 @@ title: Upload uw door uw merk goedgekeurde middelen naar  [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 0%
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of de gegevensbronnen van de Dropbox toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
 

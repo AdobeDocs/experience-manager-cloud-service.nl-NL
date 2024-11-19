@@ -3,9 +3,9 @@ title: Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkhede
 description: Leer hoe u de levering van middelen kunt beperken met OpenAPI-mogelijkheden.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Met centraal beheer van bedrijfsmiddelen in Experience Manager kan de DAM-beheerder of -manager de toegang tot bedrijfsmiddelen beheren die via Dynamic Media beschikbaar zijn met OpenAPI-mogelijkheden. Zij kunnen levering van goedgekeurde activa (neer aan individuele activa) aan geselecteerde [ Gebruiker of Groepen van Identity Management van het Systeem van de Adobe (IMS) ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beperken door bepaalde meta-gegevens op activa op hun de auteursdienst van AEM as a Cloud Service te vormen.
 
@@ -34,7 +40,7 @@ U kunt de levering van elementen binnen [!DNL Experience Manager] beperken op ba
 
 >[!NOTE]
 >
-> Dit vermogen is momenteel niet zelfbediening. Om activalevering voor IMS [ Gebruikers ](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) en [ Groepen ](https://helpx.adobe.com/in/enterprise/using/user-groups.html) te beperken, bereik uit aan uw team van de Steun van de Onderneming voor begeleiding op hoe te om de informatie terug te winnen die voor het beperken van toegang van [ Adobe Admin Console ](https://adminconsole.adobe.com/) wordt vereist portaal en hoe te om toegang in de de auteursdienst van AEM as a Cloud Service te vormen.
+Dit vermogen is momenteel niet zelfbediening. Om activalevering voor IMS [ Gebruikers ](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) en [ Groepen ](https://helpx.adobe.com/in/enterprise/using/user-groups.html) te beperken, bereik uit aan uw team van de Steun van de Onderneming voor begeleiding op hoe te om de informatie terug te winnen die voor het beperken van toegang van [ Adobe Admin Console ](https://adminconsole.adobe.com/) wordt vereist portaal en hoe te om toegang in de de auteursdienst van AEM as a Cloud Service te vormen.
 
 ### Levering van activa beperken met de datum en tijd Aan en Uit {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ Op de auteur van AEM Cloud Service en Asset Selector wordt de IMS-token voor too
 
 >[!NOTE]
 >
->Neem contact op met de Enterprise Support voor meer informatie over hoe u IMS-verificatie kunt inschakelen voor integratie met AEM Asset Selector.
+Neem contact op met de Enterprise Support voor meer informatie over hoe u IMS-verificatie kunt inschakelen voor integratie met AEM Asset Selector.
 
 1. AEM as a Cloud Service en Dynamic Media met OpenAPI-mogelijkheden ondersteunen momenteel API-integratie aan de serverzijde en kunnen IMS-tokens voor toonder genereren. Dit geldt ook voor ervaringen die niet op Asset Selector zijn gebaseerd.
    * Volg de instructies [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) om dienst-aan-server API integratie uit te voeren die de tokens IMS van de Drager door [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) kan terugwinnen

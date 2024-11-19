@@ -1,26 +1,33 @@
 ---
-title: Configure Content Hub user interface
+title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
 
 # Content Hub-gebruikersinterface configureren {#configure-content-hub-user-interface}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [](/help/assets/product-overview.md) | [](/help/assets/dynamic-media-open-apis-overview.md) | [](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
->title="Configure Content Hub user interface"
+>title="Content Hub-gebruikersinterface configureren"
 >abstract="Met Experience Manager Assets kunnen beheerders de opties configureren die beschikbaar zijn in de Content Hub-gebruikersinterface. Op basis van de configuratieopties die door de beheerders zijn geselecteerd, kunnen de Content Hub-gebruikers velden weergeven op Content Hub. De configuratieopties omvatten meta-gegevens terwijl het invoeren van activa, filters, activa eigenschappen, meta-gegevens terwijl het zoeken van activa, gepersonaliseerde branding, en om het even welke douaneverbindingen."
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="Video bekijken"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![ vorm activa op Content Hub ](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met Experience Manager Assets kunnen beheerders de opties configureren die beschikbaar zijn in de Content Hub-gebruikersinterface. Op basis van de configuratieopties die door de beheerders zijn geselecteerd, kunnen de Content Hub-gebruikers velden weergeven op Content Hub. De configuratieopties omvatten:
 
@@ -79,7 +86,7 @@ U kunt de meta-gegevensgebieden vormen die aan de gebruikers tijdens het uploade
 
 1. Geef een label voor de eigenschap op, wijs deze toe aan een eigenschap met behulp van het veld **[!UICONTROL Metadata]** en selecteer het invoertype voor de nieuwe metagegevens van het element.
 
-1. **[!UICONTROL Required field]**
+1. Klik op de schakeloptie **[!UICONTROL Required field]** om het nieuwe metagegevensveld verplicht te maken voor gebruikers tijdens het uploaden van nieuwe elementen.
 
 1. Klik op **[!UICONTROL Confirm]**. De nieuwe metagegevens worden weergegeven in de lijst met bestaande eigenschappen van elementen.
 
@@ -87,7 +94,7 @@ U kunt de meta-gegevensgebieden vormen die aan de gebruikers tijdens het uploade
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elk beschikbaar bezit, om de etiketten uit te geven, deze gebieden verplicht of niet-verplicht te maken aan gebruikers terwijl het uploaden van activa gebruikend de **[!UICONTROL Required field]** knevel, of het pictogram van de Schrapping te klikken om het even welk meta-gegevensbezit te schrappen.
 
-Klik op de schakeloptie **[!UICONTROL Auto-approval]** als u alle elementen die u toevoegt aan de Experience Manager Assets-opslagplaats automatisch wilt laten goedkeuren, zodat ze direct beschikbaar zijn in Content Hub. Else, DAM authors or administrators need to manually approve the assets to make them available on Content Hub. De schakeloptie is standaard ingesteld op Uit.
+Klik op de schakeloptie **[!UICONTROL Auto-approval]** als u alle elementen die u toevoegt aan de Experience Manager Assets-opslagplaats automatisch wilt laten goedkeuren, zodat ze direct beschikbaar zijn in Content Hub. Anders moeten DAM-auteurs of -beheerders de elementen handmatig goedkeuren om deze beschikbaar te maken op Content Hub. De schakeloptie is standaard ingesteld op Uit.
 
 Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
 
@@ -106,28 +113,28 @@ Met Content Hub kunnen beheerders filters configureren die worden weergegeven te
 1. Klik op **[!UICONTROL Add filters]**.
 
 1. Geef een label voor het filter op, wijs het filter toe aan een eigenschap met behulp van het veld **[!UICONTROL Metadata]** en selecteer het invoertype voor het nieuwe filter.
-1. Klik op **[!UICONTROL Confirm]**. The new filter displays in the list of the existing filters.
+1. Klik op **[!UICONTROL Confirm]**. Het nieuwe filter wordt weergegeven in de lijst met bestaande filters.
 
-1. **[!UICONTROL Save]**
+1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen, zodat het nieuwe filter op de pagina Zoeken wordt weergegeven tijdens het filteren van elementen.
 
    >[!NOTE]
    >
-   >The new filter gets displayed on the Search page only if there is alteast one asset in the repository matching the filter criteria.
+   Het nieuwe filter wordt alleen op de zoekpagina weergegeven als er in de opslagplaats ten minste één element aanwezig is dat aan de filtercriteria voldoet.
 
-![](assets/do-not-localize/edit_icon.svg) Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
+Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elke beschikbare filter, om de etiketten uit te geven of het schrappingspictogram te klikken om het even welk bestaand filter te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
 
 ![ filters UI van de Configuratie op Content Hub ](assets/configuration-ui-filters.png)
 
-The filters enabled on the Configuration User Interface display on the Search page:
+De filters die op de vertoning van het Gebruikersinterface van de Configuratie op de pagina van het Onderzoek worden toegelaten:
 
-![](assets/filters-for-search.png)
+![ Onderzoek op Content Hub ](assets/filters-for-search.png)
 
 
-### Asset details {#configure-asset-details-content-hub}
+### Gegevens van element {#configure-asset-details-content-hub}
 
-You can also configure the asset properties that display for each asset, such as file name, title, format, size, and so on. To do so, execute the following steps:
+U kunt ook de elementeigenschappen configureren die voor elk element worden weergegeven, zoals de bestandsnaam, titel, indeling, grootte, enzovoort. Voer daartoe de volgende stappen uit:
 
-1. [](#access-configuration-options-content-hub)**[!UICONTROL Asset details]**
+1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Asset details]**.
 
 1. Klik op **[!UICONTROL Add metadata]**.
 
@@ -217,23 +224,23 @@ Als de beheerder downloaden heeft ingeschakeld, kunnen de Content Hub-gebruikers
 Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hub ook elementen die binnen de komende 15 dagen verlopen met behulp van het `Expiring in n days` -bericht op de Asset Card.
 
 
-### Custom Links {#configure-custom-links-content-hub}
+### Aangepaste koppelingen {#configure-custom-links-content-hub}
 
-**[!UICONTROL All Assets]****[!UICONTROL Collections]****[!UICONTROL Insights]** To do so, execute the following steps:
+U kunt ook aangepaste tabbladen toevoegen naast de standaardtabbladen **[!UICONTROL All Assets]** , **[!UICONTROL Collections]** en **[!UICONTROL Insights]** op de Content Hub-portal net onder de banner. Voer daartoe de volgende stappen uit:
 
 1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Custom Links]**.
 
 1. Klik op **[!UICONTROL Add link]**.
 
-1. Geef tekst op in **[!UICONTROL Label]** - en **[!UICONTROL URL]** -velden. **[!UICONTROL URL]**
+1. Geef tekst op in **[!UICONTROL Label]** - en **[!UICONTROL URL]** -velden. Het label dat u definieert, wordt weergegeven als een tab en wanneer u op het label klikt, navigeert u naar de URL die is gedefinieerd in het veld **[!UICONTROL URL]** .
 
 1. Klik op **[!UICONTROL Confirm]**.
 
-1. **[!UICONTROL Save]**
+1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
-![](assets/do-not-localize/edit_icon.svg) **[!UICONTROL Save]**
+Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elke URL, om de verbindingen uit te geven of het schrappingspictogram te klikken om het even welke bestaande URL te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
 
-![](assets/configuration-ui-custom-links.png)
+![ Verbindingen van de Douane UI van de Configuratie UI op Content Hub ](assets/configuration-ui-custom-links.png)
 
 De aangepaste koppeling wordt weergegeven als een nieuw tabblad naast het tabblad Inzichten op de startpagina van Content Hub.
 

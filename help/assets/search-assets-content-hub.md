@@ -2,17 +2,23 @@
 title: Middelen zoeken in Content Hub
 description: Leer hoe te om activa in  [!DNL Content Hub] te zoeken
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-
 # Assets zoeken in [!DNL Content Hub] {#search-assets}
 
 ![ de bannerbeeld van het Aandeel activa ](assets/search.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Als u een groot aantal middelen in uw opslagplaats hebt, is het tijdrovend om naar het juiste middel te zoeken. Met de zoekfunctie van [!DNL The Content Hub] kunt u zoeken naar de goedgekeurde elementen, zodat u er aanvullende handelingen op kunt uitvoeren, zoals downloaden, delen of verzamelingen maken. U kunt verschillende mogelijkheden gebruiken om uw zoekresultaten te beperken, zoals het uitvoeren van op tekst gebaseerde zoekopdrachten, het gebruik van filters, het uitvoeren van tags of een specifieke zoekopdracht met slimme tags, het zoeken naar een bepaalde bestandsindeling, enzovoort.
 

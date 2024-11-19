@@ -2,9 +2,9 @@
 title: Afbeeldingen in Content Hub bewerken met Adobe Express
 description: Afbeeldingen in Content Hub bewerken met Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 0%
 
 ![ geeft beelden in Content Hub uit gebruikend Adobe Express ](assets/edit-images-content-hub.png)
 
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 Met Content Hub kunt u nieuwe inhoud maken met Adobe Express. U kunt bestaande inhoud bewerken met gebruiksvriendelijke gereedschappen, onmerkvariaties maken met sjablonen en merkelementen en nieuwe inhoud maken met de nieuwste GenAI-mogelijkheden van de Adobe Firefly.
 
 ## Vereisten {#prereqs-edit-image-content-hub}
@@ -24,7 +30,7 @@ De rechten om tot Adobe Express en [ gebruikers van Content Hub met rechten toeg
 
 >[!NOTE]
 >
->Met [!DNL Adobe Express] kunt u afbeeldingen van de bestandstypen PNG en JPG/JPEG bewerken.
+Met [!DNL Adobe Express] kunt u afbeeldingen van de bestandstypen PNG en JPG/JPEG bewerken.
 
 ## Afbeeldingen bewerken met [!DNL Adobe Express] {#edit-images-using-content-hub}
 

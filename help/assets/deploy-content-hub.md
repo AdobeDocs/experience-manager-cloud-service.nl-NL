@@ -3,9 +3,9 @@ title: Implementeren  [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en gebruikers toegang kunt bieden met verschillende typen rechten (middelen uploaden, gebruikers van Adoben Express) en hoe u beheerdersrechten kunt bieden aan gebruikers.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![ stel Content Hub ](assets/deploy-content-hub.png) op
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Cloud Service voor het democratiseren van de toegang tot online-inhoud voor organisaties en hun zakelijke partners.
 
@@ -53,7 +59,7 @@ De volgende tabel geeft een overzicht van de beschikbare Content Hub-gebruikerst
 
 >[!NOTE]
 >
->[ de gebruikers van Experience Manager Assets ](#experience-manager-assets-users) hebben de capaciteit om activa op een as a Cloud Service milieu van Experience Manager Assets goed te keuren om die activa op Content Hub ter beschikking te stellen. Deze gebruikers moeten worden toegevoegd aan AEM > Production Author-instantie > AEM gebruikersprofiel met Admin Console.
+[ de gebruikers van Experience Manager Assets ](#experience-manager-assets-users) hebben de capaciteit om activa op een as a Cloud Service milieu van Experience Manager Assets goed te keuren om die activa op Content Hub ter beschikking te stellen. Deze gebruikers moeten worden toegevoegd aan AEM > Production Author-instantie > AEM gebruikersprofiel met Admin Console.
 
 ## Stap 1: Content Hub for Experience Manager Assets inschakelen met Cloud Manager {#enable-content-hub}
 
@@ -72,7 +78,7 @@ Om toegang te krijgen tot het Content Hub-portaal, moeten beheerders eerst Conte
 
    >[!NOTE]
    >
-   >Als **[!UICONTROL Update]** niet voor u wordt toegelaten na het selecteren van Content Hub, zorg ervoor dat u Go-Live montages voor het programma hebt gespecificeerd.
+   Als **[!UICONTROL Update]** niet voor u wordt toegelaten na het selecteren van Content Hub, zorg ervoor dat u Go-Live montages voor het programma hebt gespecificeerd.
 
 1. Klik op **[!UICONTROL Update]**.
 
@@ -80,7 +86,7 @@ Content Hub is nu ingeschakeld voor Experience Manager Assets as a Cloud Service
 
 >[!NOTE]
 >
->U kunt Content Hub openen en gebruiken met maximaal 250 Content Hub-gebruikers. Neem contact op met uw Adobe als u nog meer vragen hebt.
+U kunt Content Hub openen en gebruiken met maximaal 250 Content Hub-gebruikers. Neem contact op met uw Adobe als u nog meer vragen hebt.
 
 
 Als u nog geen ervaring hebt met Experience Manager Assets, klikt u op **[!UICONTROL Add Program]** en geeft u de programmagegevens op (Programmanaam, Instellen voor productie). Klik vervolgens op **[!UICONTROL Continue]** . U kunt vervolgens **[!UICONTROL Assets]** en **[!UICONTROL Content Hub]** selecteren op het tabblad **[!UICONTROL Solutions & Add-ons]** .
@@ -93,7 +99,7 @@ Na [ toelatend Content Hub voor Assets as a Cloud Service gebruikend Cloud Manag
 
 >[!NOTE]
 >
->Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt de nieuwe instantie gemaakt met `contenthub` als achtervoegsel.
+Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt de nieuwe instantie gemaakt met `contenthub` als achtervoegsel.
 
 De instantienaam voor Content Hub bevat geen `author` of `publish` .
 
@@ -103,7 +109,7 @@ Klik op de instantienaam om het Content Hub-productprofiel weer te geven.
 
 >[!NOTE]
 >
->Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt het Content Hub-productprofiel `contenthub` vermeld na `Limited Users` in plaats van `delivery` .
+Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt het Content Hub-productprofiel `contenthub` vermeld na `Limited Users` in plaats van `delivery` .
 
 ## Stap 2: on-board Content Hub-beheerder {#onboard-content-hub-administrator}
 
@@ -144,7 +150,7 @@ Deze gebruikers hebben nu toegang tot de middelen die beschikbaar zijn op de Con
 
 >[!NOTE]
 >
->U kunt alle geavanceerde bedrijfsfuncties gebruiken, zoals synchronisatie met externe identiteitsproviders.
+U kunt alle geavanceerde bedrijfsfuncties gebruiken, zoals synchronisatie met externe identiteitsproviders.
 
 ### Hoe kan ik Content Hub openen? {#access-content-hub}
 
@@ -222,4 +228,4 @@ Experience Manager Assets-gebruikers configureren:
 
    >[!NOTE]
    >
-   > U te hoeven niet aan het [ het productprofiel van Content Hub ](#onboard-content-hub-users) voor de gebruikers van Experience Manager Assets worden toegevoegd.
+   U te hoeven niet aan het [ het productprofiel van Content Hub ](#onboard-content-hub-users) voor de gebruikers van Experience Manager Assets worden toegevoegd.

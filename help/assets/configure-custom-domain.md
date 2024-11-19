@@ -2,9 +2,9 @@
 title: Een aangepast domein voor de Publish-reeks configureren
 description: Leer hoe u een aangepast domein configureert voor een publicatielaag in Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,12 @@ ht-degree: 0%
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In Adobe Cloud Manager kunt u uw website opvallen door een aangepast domein toe te voegen. Als AEM as a Cloud Service wordt geleverd met een standaarddomein, kunt u dit naar wens aanpassen.
 
@@ -39,4 +45,4 @@ DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen v
 
 >[!NOTE]
 >
->Voeg het aangepaste domein toe aan de lijst met toegestane omleidings-URL&#39;s. De lijst bevindt zich in de IMS-client voor de elementenkiezer.<br> coördinaat met het respectieve team van de Adobe om deze taak uit te voeren door het koord van het douanedomein te verstrekken.
+Voeg het aangepaste domein toe aan de lijst met toegestane omleidings-URL&#39;s. De lijst bevindt zich in de IMS-client voor de elementenkiezer.<br> coördinaat met het respectieve team van de Adobe om deze taak uit te voeren door het koord van het douanedomein te verstrekken.

@@ -3,9 +3,9 @@ title: Elementen in Experience Manager goedkeuren
 description: Leer hoe te om activa in  [!DNL Experience Manager] goed te keuren.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Merkbeheerders en marketeers houden strikte controle over merkmiddelen. Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
 
@@ -36,7 +42,7 @@ Als u de eigenschap wilt weergeven waaraan het veld **[!UICONTROL Review Status]
 
 >[!NOTE]
 >
->Als uw elementen of mappen een ander standaardschema hebben, moet u deze update uitvoeren in dat specifieke schema.
+Als uw elementen of mappen een ander standaardschema hebben, moet u deze update uitvoeren in dat specifieke schema.
 
 ## Elementen goedkeuren {#approve-assets}
 
@@ -78,7 +84,7 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
 
 >[!NOTE]
 > 
->Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren. <br> U kunt ook de optie **[!UICONTROL Reprocess]** gebruiken om de wijzigingen van het metagegevensprofiel toe te passen op oudere elementen.
+Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren. <br> U kunt ook de optie **[!UICONTROL Reprocess]** gebruiken om de wijzigingen van het metagegevensprofiel toe te passen op oudere elementen.
 
 En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt selecteren, gaat u als volgt te werk:
 
@@ -105,6 +111,6 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
 
    >[!NOTE]
    >
-   >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
+   De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
 
 Voor informatie over andere vertoningen die binnen het paneel van Dynamic Media tonen, zie [ Mening en download de vertoningen van Dynamic Media ](/help/assets/renditions.md#view-download-dm-renditions).

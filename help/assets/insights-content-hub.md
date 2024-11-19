@@ -3,9 +3,9 @@ title: Elementen weergeven in Content Hub
 description: Leer hoe u inzicht in elementen kunt weergeven in  [!DNL Content Hub]
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![ de inzichten van Assets ](assets/asset-insights-banner.jpg)
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL Content Hub] biedt waardevolle inzichten in middelen, waarmee een veelvoorkomende uitdaging wordt aangepakt die marketingbelanghebbenden vaak ondervinden - statistieken over het gebruik van bedrijfsmiddelen die worden gebruikt in marketingcampagnes, kanalen en verschillende regio&#39;s. Door een duidelijk inzicht te krijgen in de prestaties en populariteit van de middelen, biedt het actioneerbare inzichten die essentieel zijn voor het verbeteren van de gebruikerservaring.
 

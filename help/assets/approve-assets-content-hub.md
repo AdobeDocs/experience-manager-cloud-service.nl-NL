@@ -2,9 +2,9 @@
 title: Assets goedkeuren voor Content Hub
 description: Leer hoe u middelen in Assets as a Cloud Service goedkeurt om ze beschikbaar te maken in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![ keur activa voor Content Hub ](assets/content-hub-approve-assets.png) goed
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Merkbeheerders en marketeers houden strikte controle over merkmiddelen. Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik in Content Hub, zodat alle kanalen en toepassingen consistent zijn.
 
@@ -34,7 +40,7 @@ De elementen die zijn gemarkeerd als `approved` in Assets as a Cloud Service, zi
 
 >[!NOTE]
 >
->Assets as a Cloud Service en Content Hub moeten dezelfde organisatie gebruiken om de middelen in Content Hub weer te geven.
+Assets as a Cloud Service en Content Hub moeten dezelfde organisatie gebruiken om de middelen in Content Hub weer te geven.
 
 De elementstatus instellen op `approved` in de Assets-weergave in AEM as a Cloud Service:
 
@@ -89,7 +95,7 @@ Voer de volgende stappen uit om goedkeuring voor nieuw opgenomen elementen in [!
 
 >[!NOTE]
 > 
->Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren.
+Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren.
 
 ## Middelen beheren die met Content Hub zijn geüpload {#manage-assets-uploaded-using-content-hub}
 

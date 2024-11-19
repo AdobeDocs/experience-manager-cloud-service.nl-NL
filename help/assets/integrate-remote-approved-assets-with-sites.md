@@ -2,9 +2,9 @@
 title: AEM Assets op afstand integreren met AEM Sites
 description: Leer hoe u AEM sites kunt configureren en verbinden met Goedgekeurde AEM Assets.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,12 @@ ht-degree: 0%
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Het effectief beheren van digitale middelen is van cruciaal belang voor het aanbieden van aantrekkelijke en consistente merkervaringen op verschillende online platforms. Dynamic Media met OpenAPI-mogelijkheden verbetert het beheer van digitale middelen door naadloze integratie tussen AEM Sites en AEM Assets as a Cloud Service mogelijk te maken. Met deze vernieuwende functie kunt u eenvoudig verschillende typen goedgekeurde digitale elementen delen en beheren in meerdere AEM omgevingen, waardoor workflows voor siteauteurs en inhoudseditors worden gestroomlijnd.
 
@@ -121,7 +127,7 @@ Voer de onderstaande stappen uit om Externe elementen te gebruiken in AEM inhoud
 
    >[!NOTE]
    >
-   >Als u geen AEM model van het Fragment van de Inhoud hebt, kunt u één ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) moeten [ creëren.
+   Als u geen AEM model van het Fragment van de Inhoud hebt, kunt u één ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) moeten [ creëren.
 
 1. Klik het ![ controlemerkpictogram ](/help/assets/assets/do-not-localize/checkmark-icon.svg) pictogram naast de tekstcomponent.
 1. Selecteer **[!UICONTROL Remote]** om het element op te halen van de externe DAM. <br>

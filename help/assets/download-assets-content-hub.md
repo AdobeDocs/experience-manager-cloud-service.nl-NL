@@ -3,9 +3,9 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![ de activa van de Download ](assets/download-asset-genstudio.jpeg)
+
+>[!AVAILABILITY]
+>
+>Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met de Content Hub kunt u uw middelen downloaden en delen. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. De Content Hub verbetert de toegankelijkheid en het aanpassingsvermogen voor een effectieve verdeling van activa.
 
@@ -36,7 +42,7 @@ Alternatief, klik ![ download ](/help/assets/assets/download-icon.svg) in de act
 
      >[!NOTE]
      >
-     >Het selectievakje Voorwaarden en Voorwaarden wordt alleen weergegeven voor gelicentieerde elementen. Bovendien wordt in het dialoogvenster voor middelen alleen een voorvertoning weergegeven van de licentievoorwaarden voor middelen met goedgekeurde licenties. [ keur de vergunning van activa ](/help/assets/approve-assets-content-hub.md) vóór het downloaden goed om de voorproef van het verlenen van vergunningen termijnen in de doos van de activadialoog toe te laten.
+     Het selectievakje Voorwaarden en Voorwaarden wordt alleen weergegeven voor gelicentieerde elementen. Bovendien wordt in het dialoogvenster voor middelen alleen een voorvertoning weergegeven van de licentievoorwaarden voor middelen met goedgekeurde licenties. [ keur de vergunning van activa ](/help/assets/approve-assets-content-hub.md) vóór het downloaden goed om de voorproef van het verlenen van vergunningen termijnen in de doos van de activadialoog toe te laten.
 
    * Klik de **Oorspronkelijke Doos van de Vertoning** om op de originele activavertoning in de linkerruit terug te keren.
 1. Accepteer de vergunningsvoorwaarden (voor vergunning gegeven activa) en klik **Download** om de activa te downloaden.
@@ -48,13 +54,13 @@ Alternatief, klik ![ download ](/help/assets/assets/download-icon.svg) in de act
 
    >[!NOTE]
    >
-   >[ laat de downloadoptie voor verlopen activa ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) toe om hen te downloaden. Alleen verlopen elementen waarvoor downloaden is ingeschakeld, kunnen worden gedownload.
+   [ laat de downloadoptie voor verlopen activa ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) toe om hen te downloaden. Alleen verlopen elementen waarvoor downloaden is ingeschakeld, kunnen worden gedownload.
 
    <a id="Download-asset-dialog-box"></a> **de dialoogdoos van de activa van de Download:** Dit dialoogvakje toont de lijst van vergunningen verbonden aan de geselecteerde activa in de linkerruit. Selecteer een licentie om een voorvertoning van de voorwaarden (in pdf-indeling) ervan weer te geven in het middelste venster en de voorvertoning van de bijbehorende elementen en hun aantal in het rechterdeelvenster. Gecontroleerde licenties worden lichtblauw gemarkeerd.
 
    >[!NOTE]
    >
-   > Het **de dialoogvakje van Activa van de Download** previews verlenen van vergunningen voorwaarden slechts voor goedgekeurde vergunningen. [](/help/assets/approve-assets-content-hub.md)****
+   Het **de dialoogvakje van Activa van de Download** previews verlenen van vergunningen voorwaarden slechts voor goedgekeurde vergunningen. [ keur de vergunningen van activa ](/help/assets/approve-assets-content-hub.md) goed alvorens hen te downloaden om hun het verlenen van vergunningen te bekijken termijnen in de **de dialoogdoos van Activa van de Download**.
 
 1. Klik ![ verwijderen-pictogram ](/help/assets/assets/remove-icon.svg) om een vergunning uit de doos van de downloaddialoog te verwijderen.
 

@@ -3,9 +3,9 @@ title: Dynamic Media met OpenAPI-mogelijkheden
 description: Leer belangrijke concepten zoals waarom Dynamic Media met OpenAPI-mogelijkheden wordt gebruikt en hoe u dit kunt inschakelen.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>
+>[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In de snelle digitale wereld van vandaag, is het ontsluiten van het volledige potentieel van de digitale activa van uw merk cruciaal om voor de concurrentie te blijven. Een holistische DAM-oplossing (Digital Assets Management) vereenvoudigt het beheer van bedrijfsmiddelen, bevordert de consistentie van merken en versnelt de levering van inhoud, waarbij de integriteit van merken en uitzonderlijke ervaringen met klanten worden gegarandeerd.
 
@@ -65,7 +71,7 @@ Als u Dynamic Media met OpenAPI-mogelijkheden op AEM as a Cloud Service wilt ins
 
   >[!NOTE]
   >
-  > Als u wilt integreren met een toepassing die geen Adobe is, moet u domeinnamen opgeven voor de lijst van gewenste personen waar de toepassing wordt gehost.
+  Als u wilt integreren met een toepassing die geen Adobe is, moet u domeinnamen opgeven voor de lijst van gewenste personen waar de toepassing wordt gehost.
 
 * Details van zeer belangrijke klantencontacten betrokken bij integratieproject.
 
@@ -75,7 +81,7 @@ Nadat u het ondersteuningsticket hebt verzonden, biedt Adobe Dynamic Media met O
 
 >[!NOTE]
 >
->Sluit `/conf/global/settings/dam/assets-configurations/assetdelivery` uit van een inhoudspakket om deactivering van Dynamic Media met OpenAPI-mogelijkheden te voorkomen.
+Sluit `/conf/global/settings/dam/assets-configurations/assetdelivery` uit van een inhoudspakket om deactivering van Dynamic Media met OpenAPI-mogelijkheden te voorkomen.
 
 ## Dien meer in zeer belangrijke mogelijkheden {#learn-more-key-capabilities}
 
