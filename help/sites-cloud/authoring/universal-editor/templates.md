@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 0%
 # Sjablonen voor het maken van pagina&#39;s die kunnen worden bewerkt met de universele editor {#page-templates}
 
 Leer hoe u sjablonen maakt die u kunt gebruiken om pagina&#39;s te maken die u kunt bewerken met de universele editor, zodat u tijd bespaart en zorgt voor consistente branding.
-
->[!NOTE]
->
->Deze functie is beschikbaar in een komende release van AEM as a Cloud Service.
 
 >[!NOTE]
 >

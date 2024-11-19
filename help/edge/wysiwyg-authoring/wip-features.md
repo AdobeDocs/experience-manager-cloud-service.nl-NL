@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -35,7 +35,7 @@ De volgende lijst stelt dergelijke eigenschappen van WIP en afwisselende oplossi
 | [ Exemplaar van de Taal ](/help/sites-cloud/administering/translation/overview.md) | Gedeeltelijk beschikbaar | Componenten nemen inhoud over, maar overerving kan alleen op paginaniveau worden ongedaan gemaakt | [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [ Multisite Beheer van de Plaats ](/help/sites-cloud/administering/msm/overview.md) | Gedeeltelijk beschikbaar | Componenten nemen inhoud over, maar overerving kan alleen op paginaniveau worden ongedaan gemaakt | [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [ Lanceringen ](/help/sites-cloud/authoring/launches/overview.md) | Gedeeltelijk beschikbaar | Componenten nemen inhoud over, maar overerving kan alleen op paginaniveau worden ongedaan gemaakt | [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [Paginasjablonen](/help/sites-cloud/authoring/page-editor/templates.md) | Binnenkort verkrijgbaar! | Pagina&#39;s die met sjablonen zijn gemaakt, zijn onafhankelijke kopieën van de oorspronkelijke sjabloon. | [ Gebruikend de Malplaatjes van de Pagina met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) |
+| [Paginasjablonen](/help/sites-cloud/authoring/page-editor/templates.md) | Gedeeltelijk beschikbaar | Pagina&#39;s die met sjablonen zijn gemaakt, zijn onafhankelijke kopieën van de oorspronkelijke sjabloon. | [ Gebruikend de Malplaatjes van de Pagina met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [ de Hub en het richten van de context ](/help/sites-cloud/authoring/personalization/overview.md) | Niet beschikbaar |  |  |
 | [ Timewarp ](/help/sites-cloud/authoring/launches/preview.md) | Niet beschikbaar |  |  |
 | [ Verwante Inhoud ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | Niet beschikbaar |  |  |
