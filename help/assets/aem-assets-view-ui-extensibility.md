@@ -4,9 +4,9 @@ description: Meer informatie over de UI-uitbreidingsmogelijkheden van AEM Assets
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets View heeft UI-uitbreidingsmogelijkheden. Met deze functie kunnen gebruikers aangepaste UI-componenten toevoegen aan de gebruikersinterface van de Assets View om tegemoet te komen aan specifieke bedrijfsbehoeften waaraan de functies van de AEM Assets View niet voldoen. Deze uitbreidbaarheidsfunctie verbetert de flexibiliteit van AEM Assets View die organisaties in staat stelt de interface voor specifieke workflows en vereisten aan te passen.
-U kunt uw extensies toevoegen aan het niveau voor middelen, mappen en verzamelingen. De toegevoegde extensie wordt weergegeven in een speciaal deelvenster op de pagina Details van element, verzameling of map.
+U kunt uw extensies toevoegen aan het niveau voor middelen, mappen en verzamelingen. De toegevoegde extensie wordt weergegeven in een speciaal deelvenster op de pagina Middelen, Verzameling of Mapdetails.
 
 >[!IMPORTANT]
-> De Uitbreidbaarheid UI van de Mening van AEM Assets is beschikbaar met [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md).
+>
+> * De Uitbreidbaarheid UI van de Mening van AEM Assets is beschikbaar met [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md).
+> * U hebt de mogelijkheid om de gebruikersinterface van de Assets-weergave uit te breiden als Beta-release. Om vroege toegang tot de de meningsrekbaarheid van UI van Assets te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * U kunt feedback geven in de documentatie door de opties voor Gedetailleerde feedback uit te vouwen en op Een probleem melden te klikken.
 
 ## <a id="1"></a> Toegang tot Assets View
 
@@ -32,9 +35,6 @@ U kunt de Assets-weergave op de volgende manieren openen:
 Navigeer in de weergave Assets naar de pagina Details van een element, map of verzameling. Deze pagina Details bevat een speciaal deelvenster waarin de toegevoegde UI-extensie wordt weergegeven.
 ![ mijn werkruimte ](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> U hebt de mogelijkheid om de gebruikersinterface van de AEM Assets-weergave uit te breiden als Beta-release. U kunt feedback geven in de documentatie door de opties voor Gedetailleerde feedback uit te vouwen en op Een probleem melden te klikken.
 
 ## Vereisten voor het toevoegen van de component Uitbreidbaarheid
 
