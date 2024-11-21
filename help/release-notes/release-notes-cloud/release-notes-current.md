@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,10 @@ U kunt elke Edge Delivery-pagina snel veranderen in een paginasjabloon. Hierdoor
 **[!DNL Edge Delivery Services]CSV-importmodule voor publicatie via een AEM-instantie**
 
 Beheer uw Edge Delivery-spreadsheetgegevens (bijvoorbeeld omleidingen) efficiënt in uw favoriete spreadsheetprogramma en upload deze naar AEM via de nieuwe CSV-importmodule. [ las meer ](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### Prerelease-mogelijkheden in AEM Sites
+
+Verbeterd inhoudsfragment dat verwijst naar unieke ID-verwijzingen, zorgt voor stabiele koppelingen die geldig blijven, zelfs wanneer elementen of fragmenten worden verplaatst. Hierdoor is het niet langer nodig om updates uit te voeren of opnieuw te publiceren. Huidige beperking: paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
