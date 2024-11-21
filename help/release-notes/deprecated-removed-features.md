@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2603'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,11 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | [!DNL Assets] | Upload elementen rechtstreeks naar [!DNL Experience Manager] . Zie [ afgekeurde activa uploaden APIs ](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Het gebruik [ Directe binaire upload ](/help/assets/add-assets.md). Voor technische details, zie [ directe upload APIs ](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [ Bepaalde werkschemasstappen ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` werkschema worden niet gesteund, met inbegrip van het roepen van bevel-lijn hulpmiddelen zoals [!DNL ImageMagick]. | [ microservices van Activa ](/help/assets/asset-microservices-overview.md) verstrekken een vervanging voor vele werkschema&#39;s. Voor douaneverwerking, gebruik [ post-verwerkings werkschema&#39;s ](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | MPEG-transcodering van video&#39;s. | Voor de duimnagelgeneratie van MPEG, gebruik [ microservices van Activa ](/help/assets/asset-microservices-overview.md). Voor transcodering MPEG, gebruik [ Dynamic Media ](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ publiceer het werkschema van de inhoudsboom ](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
-| [!DNL Foundation] | U kunt inhoudspakketten niet repliceren via het tabblad Distribute van het scherm van de replicatieagent en de Replicatie-API. In plaats daarvan, gebruik of [ publiceer ](/help/operations/replication.md#manage-publication) of [ publiceer inhoudsboomwerkschema ](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) benaderingen. |
+| [!DNL Foundation] | U kunt inhoudspakketten niet repliceren via het tabblad Distribute van het scherm van de replicatieagent en de Replicatie-API. | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning van JWT-referenties (Service Account). De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 1 Mei worden gecreeerd, 2024, hoewel de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) nog voor reeds-gevormde integraties tot 1 Januari, 2025 kunnen worden gebruikt, toen de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) niet meer werken, en de klanten moeten naar geloofsbrieven van Server-aan Server-aan-server migreren. [ leer meer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [ migreer ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) aan OAuth server-aan-Server geloofsbrieven. |
+| [!DNL Foundation] | Publish Content Tree Workflow en de gerelateerde Publish Content Tree Workflow Step, die werd gebruikt voor replicaties van hiërarchieën van inhoud. | De Stap van het Werkschema van de Activering van de Boom van het gebruik [ ](/help/operations/replication.md#tree-activation), die uitvoeriger is. |
+
 
 ## Verwijderde functies {#removed-features}
 
