@@ -5,9 +5,9 @@ keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptie
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | Dit artikel |
+| AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Core Components) | Dit artikel |
 
 Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt. Forms as a Cloud Service biedt voor Adaptive Forms op basis van Core Components een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
 
@@ -68,11 +69,13 @@ Zie voor meer informatie over de volgende verzendhandelingen:
 * [Verzenden naar REST-eindpunt](/help/forms/configure-submit-action-restpoint.md)
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
+* [Verzenden naar Marketo-pagina](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 U kunt ook een adaptief formulier verzenden naar andere opslagconfiguraties:
 
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier aansluiten op Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Een adaptief formulier verbinden met Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 U kunt [ aanpassen het gebrek verzendt Acties ](custom-submit-action-form.md). Daarnaast kunt u de optie Handelingen verzenden aanpassen om deze aan te passen aan specifieke organisatorische vereisten.
 

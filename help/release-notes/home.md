@@ -4,7 +4,7 @@ description: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 45d0d96e686d4e6c4d6cf96a8897533701665c64
+source-git-commit: e8a8542c9e767113d01491c6d328c34fac8a1dbd
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2024 10,0 |
+| Versie | 2024 11,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 

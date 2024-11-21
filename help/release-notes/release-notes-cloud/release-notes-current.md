@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
+source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1721'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.10.0) is 31 oktober 2024. De volgende functieversie (2024.11.0) is gepland voor 21 november 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.11.0) is 21 november 2024. De volgende release met functies (2024.12.0) is gepland voor 12 december 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -36,7 +36,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 <!-- ## Release Video {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Have a look at the November 2024 Release Overview video for a summary of the features added in the 2024.11.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
@@ -44,18 +44,15 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
-**Modernized de Gebeurtenissen van de Pagina**
+**[!DNL Edge Delivery Services]Paginasjablonen met Universal Editor-ontwerp**
 
-De volgende AEM Sites-paginagebeurtenissen zijn nu beschikbaar als extern verbruikbare gebeurtenissen die zijn gebaseerd op het AEM as a Cloud Service Event Platform. De gebeurtenissen kunnen via Adobe I/O worden verwerkt om met externe processen in wisselwerking te staan.
-* Pagina gepubliceerd
-* Pagina niet gepubliceerd
-* Pagina verwijderd
+U kunt elke Edge Delivery-pagina snel veranderen in een paginasjabloon. Hierdoor kunt u een nieuwe pagina met een vooraf gedefinieerde structuur en inhoud starten in plaats van een lege pagina. [ las meer ](/help/sites-cloud/authoring/universal-editor/templates.md).
+
+**[!DNL Edge Delivery Services]CSV-importmodule voor publicatie via een AEM-instantie**
+
+Beheer uw Edge Delivery-spreadsheetgegevens (bijvoorbeeld omleidingen) efficiënt in uw favoriete spreadsheetprogramma en upload deze naar AEM via de nieuwe CSV-importmodule. [ las meer ](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
-
-**produceer Variaties**
-
-Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
 
 **AEM REST OpenAPI voor levering van inhoudsfragmenten**
 
@@ -63,7 +60,7 @@ Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/ge
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Functie voor vroege toegang in Dynamic Media {#dm-early-access}
+### Functies voor vroege toegang in Dynamic Media {#dm-early-access}
 
 **AI-Gegenereerde videotitels**
 
@@ -71,49 +68,38 @@ Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmat
 
 Om vroege toegang tot AI-Gegenereerde titelsteun op uw rekening van Dynamic Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
+**Dynamic Media leveringsrapport**
+
+Krijg leveringsinzichten voor activa die met Dynamic Media worden geleverd, met de levering op activaniveau, informatie over de referentie, middelenweg in AEM Assets en unieke activa-id. Er kunnen rapporten worden gegenereerd voor alle middelen die via Dynamic Media voor AEM Assets-gegevensopslagruimte of voor een specifieke maphiërarchie in AEM Assets worden geleverd. Met behulp van inzichten kunt u het rendement van de geleverde middelen meten, de kanaalprestaties meten en weloverwogen taken voor middelenbeheer voor middelen uitvoeren.
+
+Om vroege toegang tot het Rapport van de Levering van Dynamic Media over uw rekening van Dynamic Media te krijgen, [ creeer en verzend een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
-**Geplande Rapporten**
+**het paneel van Dynamic Media**
 
-De rapporten kunnen nu automatisch in de Mening van Assets op een terugkerend programma of op een toekomstige datum worden geproduceerd, die de inspanning vermindert om gegeven-gedreven inzichten te ontdekken.
+In de Assets-weergave hebt u nu toegang tot Dynamic Media en Dynamic Media met OpenAPI-uitvoeringen vanuit een apart deelvenster dat u ter beschikking wordt gesteld. U kunt ervoor kiezen de leverings-URL te kopiëren of de uitvoeringen te downloaden op basis van het element- en weergavetype. Voor meer informatie, zie [ de vertoningen van Dynamic Media ](/help/assets/renditions.md#dynamic-media-renditions) en [ Dynamic Media met OpenAPI mogelijkheden vertoningen ](/help/assets/renditions.md#dm-with-openapi-renditions).
 
-![ Geplande Rapporten- ](/help/assets/assets/scheduled-reports-tab.png)
-
-### Nieuwe functies in Content Hub {#content-hub-new-features}
-
-**Digitaal beheer van Rechten voor vergunning gegeven activa**
-
-Organisaties kunnen nu de naleving van de licentievoorwaarden verhogen en het risico minimaliseren dat ze middelen delen met licentievoorwaarden door DRM te gebruiken voor gelicentieerde middelen voor gebruikers van Content Hub, waardoor gebruikers de licentievoorwaarden moeten controleren en accepteren voordat ze gelicentieerde activa kunnen downloaden. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
-
-![ download-veelvoudige-vergunning ](/help/assets/assets/download-multiple-license.png)
-
-**de meta-gegevensconfiguratie van de kaart van Activa**
-
-Met Content Hub kunt u nu maximaal zes velden configureren voor de belangrijkste metagegevensvelden die u op de Asset Card moet weergeven. Voor meer informatie, zie de sectie van de Kaart van Activa in [ vormen Content Hub ](/help/assets/configure-content-hub-ui-options.md#asset-card).
-
-![ zeer belangrijke meta-gegevens op de Kaart van Activa ](/help/assets/assets/asset-card-key-metadata.png)
-
-**vorm het zicht en de download van verlopen activa**
-
-Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden. Voor meer informatie, zie de Verlopen sectie van Assets in [ vormen Content Hub ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
-
-![ Verlopen activa op Content Hub ](/help/assets/assets/expired-assets-content-hub.png)
+![ dynamische vertoningen ](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-### Nieuwe functie in AEM Forms {#forms-new-features}
+### Nieuwe functies in AEM Forms {#forms-new-features}
 
-* [ verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs ](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
+* **[het werkingsgebied van Adobe Sign van de Update gemakkelijk](/help/forms/adobe-sign-integration-adaptive-forms.md)**: U kunt het werkingsgebied van een configuratie van Adobe Sign direct van de pagina van de Configuraties van de AEMWolk wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
 
-<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
+* **[Asynchrone functiesteun voor Adaptieve Forms](/help/forms/using-async-funct-in-rule-editor.md)**: Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
 
-### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
+### Functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
-* [ auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms ](/help/forms/save-core-component-based-form-as-draft.md): De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+* **beheer Publicatie**: U kunt het Manage werkschema van de Publicatie gebruiken om formulieren over milieu&#39;s, typisch van de auteursinstantie aan te publiceren en voorproef instantie(s) te publiceren of unpublish. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
 
-* [ het werkingsgebied van Adobe Sign van de Update gemakkelijk ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): U kunt het werkingsgebied van een configuratie van Adobe Sign direct van de pagina van de Configuraties van de AEMWolk wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
+* **[auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms](/help/forms/save-core-component-based-form-as-draft.md)**: De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
-* [ Asynchrone functiesteun voor Adaptieve Forms ](/help/forms/using-async-funct-in-rule-editor.md): Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
+* **[de redacteursverhogingen van de Regel](/help/forms/invoke-service-enhancements-rule-editor.md)**: Voor Aanpassings Forms die op de Componenten van de Kern wordt gebaseerd, kunt u dropdown opties nu bevolken gebruikend de output van de Invoke Dienst, reeks herhaalbare panelen gebruikend de output van de InvokeDienst, en gebruik de outputparameter van de InvokeDienst om andere gebieden te bevestigen.
+
+* **[verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
+
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -121,29 +107,54 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### AEM Forms AI Assistant
+#### Integrations
 
-[ Generatieve AI voor Aanpassings Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) brengt een geheel nieuw niveau van macht en gemak aan uw processen van de vormontwikkeling. Hierdoor kunt u sneller dan ooit betere formulieren maken.
+* **[integreer Aanpassings Forms met Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service omvat nu een makkelijk te gebruiken optie om Aanpassings Forms met Adobe Marketo Engage te verbinden. Dankzij deze integratie kunt u Adaptive Forms rechtstreeks maken met het vastleggen van leads van het Marketo Engage en verwante aangepaste objecten. U kunt nu formuliervelden vooraf invullen met gegevens uit Marketo Engage en gegevens terugsturen om workflows zoals slimme campagnes en e-mailautomatisering te automatiseren. U kunt ook een adaptief formulier verbinden met de Munchkin-bibliotheek om het aantal bezoeken, klikken en verzonden formulieren bij te houden.
 
-![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
+#### Adaptieve Forms en HTML5 Forms
 
-De beschikbare Generative AI-mogelijkheden zijn:
+* **[creeer Aangepast Forms dat op bestaand malplaatje XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)** wordt gebaseerd: U kunt tot de Component-Gebaseerde Aangepaste Forms van de Kern nu leiden gebruikend XFA vormmalplaatjes (*.XDP dossiers). Dankzij deze mogelijkheid kunnen AEM Forms On-Premise klanten met bestaande investeringen in XFA-technologie AEM Forms as a Cloud Service aannemen.
 
-* **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw AEM vorm-verwante vragen. De AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
+* **HTML5 Forms (op XFA-Gebaseerde Vormen van het Web)**: Nu, kunnen de klanten die van AEM Forms op locatie XFA technologie gebruiken moeiteloos overgang aan AEM Forms as a Cloud Service terwijl het bewaren van hun bestaande gebruikerservaring met HTML5 Forms (op XFA-Gebaseerde Vormen van het Web). Met deze functie wordt de weergave van XFA-formuliersjablonen in HTML5-indeling mogelijk, waardoor formulieren toegankelijk worden gemaakt voor apparaten die geen XFA-gebaseerde PDF forms ondersteunen.
 
-* **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met generatieve herinneringen AI. De generatieve AI van de Adobe produceert automatisch gebruikersvriendelijke vormen die drop-outs verminderen en de ervaring personaliseren.
+  ![ HTML Forms (op XFA-Gebaseerde Vormen van het Web) ](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
-* **de Generatie van het Comité voor Forms**: produceer vormsecties die aan specifieke behoeften van de gegevensinzameling worden aangepast. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
 
-* **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend generatieve herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik generatieve AI-aanwijzingen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
+* **[Base64 de Gecodeerde Steun van het Koord voor de Bijlage van het Dossier ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: De component van de Bijlage van het Dossier in Aanpassende Forms die op de Componenten van de Kern wordt gebaseerd omvat nu een optie om dossiers in bijlage als Base64-Gecodeerde koorden voor te leggen.
 
-* **vormt Voorlegt Actie**: De generatieve herinneringen van AI van het gebruik om een voorlegt actie voor uw vorm te vormen. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw ontwikkelingsteam.
+#### Interactieve communicatie- en communicatie-API&#39;s
+
+* **Interactieve Communicatie Redacteur**: De Interactieve Communicatie Redacteur is een gebruikersvriendelijk, grafisch Communicatie ontwerphulpmiddel dat de verwezenlijking van gepersonaliseerde, gegeven-gedreven correspondentie vereenvoudigt en in om het even welke moderne browser loopt. Het steunt naadloze gegevensintegratie, ingewikkelde logische definitie, en rijke media integratie, die professioneel en volgzaam document, Communicatie, en malplaatjegeneratie voor diverse bedrijfsbehoeften verzekeren.
+
+  ![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
+
+
+* **[PDF/A de Verbeteringen van de Naleving van de Naleving](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: U kunt Communicatie APIs nu gebruiken om de documenten van PDF in formaten PDF/A (1a, 2a, 3a) voor archiefdoeleinden om te zetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
+
+
+* **[handtekening API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: Een nieuwe RESTful API in Communicatie APIs laat gemakkelijk beheer van PDF handtekeningen toe. Deze ondersteunt bewerkingen zoals:
+   * Handtekening wissen: verwijdert een handtekening uit een opgegeven veld.
+   * Handtekeningveld verwijderen: hiermee wordt een opgegeven handtekeningveld verwijderd.
+
+
+<!-- 
+* **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
+intuitive and improving the mobile form-filling experience.
+
+* **Masked Field with Eye Icon (Password Box Component)**: The Password Box is a text input field that masks the characters typed into it by displaying placeholder symbols. It allows users to securely input sensitive information, such as passwords and enables them to toggle visibility on demand using the eye icon.
+
+-->
+
+## Automatede form conversion-service
+
+* **[zet PDF forms in de Componenten van de Kern om die Aangepast Forms ](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)** worden gebaseerd: U kunt de Dienst van de Automatede form conversion nu gebruiken om PDF forms, AcroForms, of op XFA-Gebaseerde vormen in Op de Componenten gebaseerde Aangepaste Forms om te zetten.
+
 
 >[!IMPORTANT]
 >
-> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.
+> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.## CIF invoegtoepassing {#cloud-services-cif}
 
-## CIF invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cif}
 
 ### Bugfixes {#bug-fixes-cif}
 
@@ -152,52 +163,35 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### Configuratie om formulierverzendingen te beheren {#configuration-submissions}
+### Verbeterde boomstructuurreplicatieprestaties (en veroudering van de Publish Content Tree Workflow) {#tree-replication-performance}
 
-AEM heeft een nieuwe configuratie geïntroduceerd: `com.adobe.granite.ui.components.FormRestrict` om formulierverzendingen voor Coral of Foundation op specifieke locaties te beheren. Deze configuratie bestaat uit twee velden:
+[ de Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) is een nieuwe stap van het werkschemamodel die voor het herhalen van diepe inhoudshiërarchieën wordt geadviseerd. Nota, staat het onafhankelijke replicaties (b.v. door snel te publiceren of publicatie te beheren) toe om parallel aan de lopende boom replicatiewerkschema te werk te gaan. Dit is vooral nuttig als u wat tijd-gevoelige inhoud moet publiceren terwijl een bulkreplicatie nog bezig is. De Stap van de Replicatie van de boom vervangt de Werkstroom van de Inhoudsboom van Publish en zijn verwante Stap van het Werkschema, die nu verouderd zijn.
 
-1. **voegt Toegestane Wegen** toe: Specificeert de wegen waar de vormacties worden toegelaten.
-1. **Beperk Gedrag**: Bepaalt het gedrag voor beperkte wegen (wegen niet inbegrepen in de lijst van gewenste personen). U kunt kiezen uit twee opties:
-   * **Popup** (gebrek): Toont een popup bericht.
-   * **verhinderen**:Blokken van voorlegging.
+### API&#39;s op basis van OpenAPI&#39;s - Vroege adopter-programma {#open-apis-earlyadopter}
 
->[!NOTE]
->
->Deze configuratie wordt niet ondersteund voor alle koraal- of stichtingsformulieren onder `/apps` , `/libs` , `/mnt/overlay` en `/mnt/override` .
+Ontwikkelaars kunnen AEM als functies voor Cloud Servicen diep integreren in hun eigen toepassingen en gereedschappen. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen zullen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
 
-### Self-Serve Log Forwarding met de Geavanceerde Optie van het Voorzien van een netwerk {#log-forwarding}
+Meer informatie over op OpenAPI gebaseerde AEM API&#39;s en een end-to-end zelfstudie ter illustratie van configuratie en gebruik.
 
-Terwijl AEM (met inbegrip van Apache/Dispatcher) en CDN logboeken van Cloud Manager kunnen worden gedownload, vinden vele organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming te stromen. AEM steunt nu [ logboek het door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) aan de Opslag van Azure Blob, Datadog, HTTPS, Elasticsearch (en OpenSearch), en Splunk. AEM logboeken kunnen naar keuze over geavanceerde voorzien van een netwerkconfiguraties, zoals het gebruiken van een specifiek IP adres door:sturen.
+Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
+* [ de Fragmenten APIs van de Inhoud van Plaatsen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [ Assets APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [ Plaatsen en de Omslagen APIs van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* [ Communicatie APIs van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
-Deze eigenschap wordt gevormd door gebruikers op een zelfbediende manier, en gebruikend de [ Pijpleiding Config ](/help/operations/config-pipeline.md) opgesteld.
+### Edge Computing - Verzoek om feedback! {#edge-computing-feedback}
 
-### URL-omleidingen zonder pijplijn voor zakelijke gebruikers {#pipeline-free-redirects}
-
-Omleidingen aan de browserzijde zijn handig wanneer een webpagina is omlaag of verplaatst of wanneer er andere scenario&#39;s zijn toegepast. Met [ lijn-vrije URL richt ](/help/implementing/dispatcher/pipeline-free-url-redirects.md) opnieuw, kunt u een Apache kaartdossier in AEM plaatsen publiceert plaats, waar het automatisch wordt geladen — geen behoefte om het dossier aan broncontrole vast te leggen of een pijpleiding van Cloud Manager in werking te stellen.
-
-De opties voor het publiceren van het herschrijven dossier omvatten het uploaden van het als activa, het gebruiken van de Bevelen ACS herschrijft de Manager van de Kaart, of het in wisselwerking staan met een douanegebruikersinterface.
-
-### Config Pipeline voor RDEs {#config-pipeline-rdes}
-
-De milieu&#39;s van de Snelle Ontwikkeling zijn een krachtig hulpmiddel om code en configuratie in een milieu van de Wolk snel op te stellen en te testen. RDEs steunt nu [ het synchroniseren van configuratie YAML-dossiers ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), met inbegrip van CDN montages zoals de regels van de verkeersfilter en verzoek/reactietransformaties, evenals logboek het door:sturen en andere configuratieopties. [ zie de volledige lijst ](/help/operations/config-pipeline.md) van gesteunde configuratieopties voor meer details.
-
-### Nieuwe productprofielen {#new-product-profiles}
-
-Wanneer een nieuwe AEM wordt gecreeerd, verschijnen de Profielen van het Product automatisch in Adobe Admin Console, toelatend beheerders om toegang tot vergunning gegeven oplossingen en eigenschappen toe te wijzen.
-
-Nieuwe omgevingen bevatten nu een bijgewerkte set productprofielen, waardoor deze compatibel zijn met toekomstige functies, waaronder het genereren van API-referenties in de Adobe Developer Console. Bestaande omgevingen kunnen hun productprofielen in een toekomstige release bijwerken. [ leer meer ](/help/onboarding/aem-cs-team-product-profiles.md).
+Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen heeft, zoals minder latentie. Als input in de roadmap, zouden wij graag horen als u deze technologie nuttig voor AEM projecten van de Levering van Publish en van Edge Delivery Services en zou vinden waarvoor u het gebruikt. E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met vragen en commentaren!
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
 Probeer uit gevernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
 
-Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe is verheugd over feedback, die u via e-mail kunt verzenden naar **<aemcs-new-devconsole-ui-beta@adobe.com>** .
-
-![ het Scherm van Bundles OSGi in AEM Developer Console ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. De Adobe verwelkomt terugkoppelt, die u aan [ aemcs-new-devconsole-ui-beta@adobe.com ](mailto:aemcs-new-devconsole-ui-beta@adobe.com) kunt e-mailen
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0) vinden.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 0%
 * [Verzenden naar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Een adaptief formulier verbinden met Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Aangepaste verzendactie maken](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Zie ook {#see-more-forms-eds}
@@ -131,6 +132,8 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [De Redacteur van de regel Gebruikersinterface voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components-user-interface.md)
 * [Verschillende gevallen van gebruik van de Rule Editor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-usecases.md)
 * [Verschil in verschillende versies van de redacteur van de Regel](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Asynchrone functies in een adaptief formulier gebruiken](/help/forms/using-async-funct-in-rule-editor.md)
+* [De verhogingen van de Dienst van de aanwending in de Visuele Redacteur van de Regel voor vormen die op de Componenten van de Kern worden gebaseerd](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
 * [Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
 * [Object Scope in aangepaste functies](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [Uw formulieren opslaan als concepten](/help/forms/save-core-component-based-form-as-draft.md)
 * [Formulierkoppelingen toevoegen aan een sitepagina](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [ vorm vormen om met Marketo Engage te integreren ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Gegevensbron van Marketo Engage configureren voor bestaande adaptieve Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [De handeling Verzenden naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP Lijst van gewenste personen en front-end pijpleidingen {#allowlist-frontend-pipeline}
 

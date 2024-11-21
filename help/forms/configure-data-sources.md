@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 * SOAP webservices
 * OData-diensten (versie 4.0)
 * Microsoft® Dynamics
-* SalesForce
+* Salesforce
 * Microsoft® Azure Blob Storage
 
 De integratie van gegevens steunt OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, en API Zeer belangrijke authentificatietypen uit-van-de-doos, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, SOAP-gebaseerde, en OData de diensten in [!DNL Experience Manager] as a Cloud Service worden gevormd, worden JDBC voor relationele gegevensbestanden en schakelaar voor [!DNL Experience Manager] gebruikersprofiel gevormd in [!DNL Experience Manager] Webconsole.
@@ -329,7 +329,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## Volgende stappen {#next-steps}
 
 U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een FDM (Form Data Model) maken of als u al een FDM (Form Data Model) zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [ het model van vormgegevens ](create-form-data-models.md) voor details creëren.
-
 
 <!--
 

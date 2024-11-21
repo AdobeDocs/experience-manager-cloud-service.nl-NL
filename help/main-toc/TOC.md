@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
+source-wordcount: '5873'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 2%
    + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Opmerkingen bij de release 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Opmerkingen bij de release 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [Opmerkingen bij de release 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [Opmerkingen bij de release 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -719,6 +720,11 @@ ht-degree: 2%
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
          + [XML-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + Adaptieve Forms integreren met Adobe Marketo Engage {#integrate-adaptive-form-with-market-engage}
+            + [Adobe Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [ vorm vormen om met Marketo Engage te integreren ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Adobe Marketo Engage-gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [De handeling Verzenden naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Adaptieve Forms {#adaptive-forms-authoring}
       + [Een adaptief formulier maken](/help/forms/create-an-adaptive-form.md)
       + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 2%
             + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments-core-components.md)
             + [Thema&#39;s maken voor een adaptief formulier - Core Components](/help/forms/using-themes-in-core-components.md)
             + [Een adaptieve formuliersjabloon maken op basis van kerncomponenten](/help/forms/template-editor-core-components.md)
+            + [Een adaptief formulier maken (kerncomponenten) op basis van XFA-formuliersjablonen](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)
             + [Een adaptief formulier vertalen met behulp van automatische vertaling of menselijke vertaling](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Pagina omleiden of bedankbericht configureren](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 2%
                + [Operator- en gebeurtenistypen beschikbaar in de regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-events-operators.md)
                + [Voorbeelden voor een Regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-usecases.md)
                + [Asynchrone functies in een adaptief formulier gebruiken](/help/forms/using-async-funct-in-rule-editor.md)
+               + [De verhogingen van de Dienst van de aanwending in de Visuele Redacteur van de Regel voor vormen die op de Componenten van de Kern worden gebaseerd](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd {#create-and-use-custom-function-core-component}
                + [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
                + [Een aangepaste functie maken en gebruiken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)

@@ -4,9 +4,9 @@ description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een h
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3725'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | Dit artikel |
+| AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Foundation Components) | Dit artikel |
 
 **is op** van toepassing: ✔️ de Aangepaste Componenten van de Stichting van de Vorm. ❌ [ Aangepaste Componenten van de Kern van de Vorm ](/help/forms/configure-submit-actions-core-components.md). De Adobe beveelt het gebruiken van de Componenten van de Kern aan [ om Aangepaste Forms aan een Pagina van AEM Sites ](create-or-add-an-adaptive-form-to-aem-sites-page.md) toe te voegen of [ standalone Aangepaste Forms ](creating-adaptive-form-core-components.md) tot stand te brengen.
 
@@ -31,6 +32,7 @@ Een handeling Verzenden wordt geactiveerd wanneer een gebruiker op de knop **[!U
 * [Verzenden naar Azure Blob Storage](#azure-blob-storage)
 * [Verzenden naar Power Automate](#microsoft-power-automate)
 * [Verzenden naar Workfront Fusion](#workfront-fusion)
+* [Verzenden naar Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 U kunt [ ook uitbreiden het gebrek verzendt Acties ](custom-submit-action-form.md) om uw eigen te creëren verzendt Actie.
 

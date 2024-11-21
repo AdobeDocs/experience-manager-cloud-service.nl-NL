@@ -4,9 +4,9 @@ description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als 
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Formulieren opslaan als concepten en deze weergeven op de pagina Sites
 
-<span class="preview"> Dit artikel bevat inhoud over **Auto sparen** eigenschap, een pre-versieeigenschap. De pre-vrijlatingseigenschap is toegankelijk slechts door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Dit artikel bevat inhoud over de **trek** eigenschap, een pre-versieeigenschap. De pre-vrijlatingseigenschap is toegankelijk slechts door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, maar later moet pauzeren en terugsturen. AEM bevat een optie `save-as-draft` waarmee de gebruiker het formulier kan opslaan als concept dat in de toekomst kan worden ingevuld. Om dit te vergemakkelijken, verstrekt AEM de **Concepten &amp; van het Portaal van het Forsm** component van het Portaal van het Forsm uit de doos, die concepten en voorlegging op de pagina&#39;s van AEM Sites toont. De component bevat formulieren die zijn opgeslagen als concepten die later kunnen worden ingevuld, en formulieren die zijn verzonden. Alleen aangemelde gebruikers kunnen hun concepten bewerken of hun verzonden formulieren weergeven. Nochtans, als een anonieme gebruiker door de lijst van vormen navigeert gebruikend de **component van het Onderzoek &amp; van het Registreren** en een vorm als ontwerp opslaat, wordt dat ontwerp niet vermeld door de **Concepten &amp; van Submissies** component. Gebruikers moeten zich bij het verzenden van het formulier hebben aangemeld om concepten en verzendingen weer te geven.
 
@@ -137,7 +137,7 @@ Om een vorm als Ontwerp te bewaren, creeer a **sparen de regel van de Vorm** op 
 
 Wanneer u voorproef een Aangepast Vorm, vult het uit, en klikt **sparen Vorm** knoop, wordt de vorm bewaard als ontwerp.
 
-### Automatisch opslaan
+### Concepten
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ U kunt ook een adaptief formulier zo configureren dat het automatisch wordt opge
 
 1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram en open het **[!UICONTROL Auto-Save]** lusje.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram en open het **[!UICONTROL Drafts]** lusje.
 
    ![ auto-sparen ](/help/forms/assets/auto-save.png)
 
-1. Schakel het selectievakje **[!UICONTROL Enable]** in om het formulier automatisch op te slaan.
-1. Vorm **[!UICONTROL Trigger]** als **Gebaseerde Tijd**, om de vorm <!--based on the occurrence of an event or--> na een specifiek tijdsinterval auto-sparen.
-1. Geef het tijdsinterval in **[!UICONTROL Auto save on this interval (In seconds)]** op om de duur in te stellen waarmee het automatisch opslaan van het formulier met het gedefinieerde interval wordt geactiveerd.
+1. Schakel het selectievakje **[!UICONTROL Automatically Save Drafts]** in om het formulier automatisch op te slaan als concepten.
+1. Vorm **[!UICONTROL Save Preference]** als **sparen concepten met regelmatige intervallen**, om de vorm <!--based on the occurrence of an event or--> na een specifiek tijdsinterval automatisch te bewaren.
+1. Geef het tijdsinterval in **[!UICONTROL Save interval frequency (Seconds)]** op om de duur in te stellen waarmee het automatisch opslaan van het formulier met het gedefinieerde interval wordt geactiveerd.
 1. Klik op **[!UICONTROL Done]**.
 
 ## Concepten/verzonden formulieren op de pagina Sites weergeven met de component Concepten en verzendingen

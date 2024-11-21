@@ -5,9 +5,9 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2365'
 ht-degree: 1%
 
 ---
@@ -194,7 +194,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Converteren naar en valideren van documenten die voldoen aan PDF/A
 
-Via API&#39;s voor documentconversie kunt u een PDF-document converteren naar PDF/A. U kunt de API&#39;s gebruiken om een PDF-document te converteren naar een document dat voldoet aan de PDF/A-standaard en ook om te bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+Via API&#39;s voor documentconversie kunt u een PDF-document converteren naar PDF/A. U kunt de API&#39;s gebruiken om een PDF-document te converteren naar een document dat voldoet aan de PDF/A-standaard en ook om te bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud. De ondersteunde PDF/A-compatibiliteitsnormen omvatten PDF/A-1a, 1b, 2a, 2b, 3a en 3b.
 
 ### PDF omzetten in XDP {#convert-pdf-to-xdp}
 
@@ -202,7 +202,7 @@ Via API&#39;s voor documentconversie kunt u een PDF-document converteren naar PD
 
 Zet een PDF-document om in een XDP-bestand. Een PDF-document kan alleen met succes worden geconverteerd naar een XDP-bestand als het PDF-document een XFA-stroom bevat in het woordenboek.
 
-## Documentcontrole {#doc-assurance}
+## Document Assurance {#doc-assurance}
 
 De DocAssurance-service bevat de API&#39;s voor handtekening en versleuteling:
 
@@ -214,6 +214,24 @@ Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-doc
 * Voeg een onzichtbaar handtekeningveld toe aan een PDF-document.
 * Onderteken het opgegeven handtekeningveld in een PDF-document.
 * Een PDF-document certificeren
+* De handtekening verwijderen uit het opgegeven handtekeningveld in een PDF-document
+* Het opgegeven handtekeningveld uit een PDF-document verwijderen
+
+<span class="preview"> Verwijder de handtekening uit het opgegeven handtekeningveld en verwijder het opgegeven handtekeningveld uit een PDF-document dat beschikbaar is in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### Coderings-API&#39;s
 
