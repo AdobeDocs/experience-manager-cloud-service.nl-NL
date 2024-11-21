@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrec
 
 Het dashboard bestaat uit drie gedeelten die u laten zien:
 
-* **Oplossingen** - Deze sectie vat welke oplossingen samen die u zoals Plaatsen of Assets hebt vergunning gegeven.
-* **toe:voegen-ons** - Deze sectie vat welke toe:voegen-ons aan uw vergunning gegeven oplossingen samen die u beschikbaar hebt.
-* **Andere Entitlements** - Deze sectie vat samen welke zandbak en dev milieu evenals andere rechten die binnen uw huurder kunnen worden verbruikt.
+* **Oplossingen** - welke oplossingen die u vergunning hebt gegeven.
+* **toe:voegen-ons** - welke toe:voegen-ons aan uw vergunning gegeven oplossingen die u beschikbaar hebt.
+* **Andere Entitlements** - welke zandbak en dev milieu en andere rechten die binnen uw huurder kunnen worden verbruikt.
 
 Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruikt. Momenteel slechts worden de Plaatsen en de oplossingen van Assets getoond zelfs als andere oplossingen in de huurder bestaan.
 

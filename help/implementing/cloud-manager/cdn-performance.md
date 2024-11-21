@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Het dashboard presenteert een algemene score voor CDN-prestaties samen met trend
 
 ![ CDN prestatiedashboard ](assets/cdn-performance-dashboard.png)
 
-Voor details op uw prestaties CDN evenals voor suggesties op hoe te om het te verbeteren, klik **trend van de Mening**.
+Voor details op uw prestaties CDN en voor suggesties op hoe te om het te verbeteren, klik **trend van de Mening**.
 
 ![ De trend van Prestaties ](assets/cdn-performance-trend.png)
 
