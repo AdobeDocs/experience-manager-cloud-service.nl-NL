@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebrui
 
 #### Inhoud AEM {#aem-content}
 
-Een AEM type inhoudcomponent laat een AEM inhoudkiezer toe, die kan worden gebruikt om inhoudsverwijzingen te plaatsen. Het biedt een aanvullend validatietype aan.
+Een AEM inhoudcomponenttype laat een AEM inhoudkiezer toe, die kan worden gebruikt om het even welke AEM bron te selecteren. In tegenstelling tot de [ verwijzingscomponent, ](#reference) die slechts activa kan selecteren, kan de AEM inhoudscomponent om het even welke AEM inhoud van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -636,6 +636,8 @@ Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opt
 >[!ENDTABS]
 
 #### Referentie {#reference}
+
+Een type van verwijzingscomponent laat een AEM elementenkiezer toe, die kan worden gebruikt om om het even welk AEM te verwijzen. In tegenstelling tot de [ AEM inhoudscomponent, ](#aem-content) die om het even welk AEM middel kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
 
 Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject van het huidige object mogelijk.
 
