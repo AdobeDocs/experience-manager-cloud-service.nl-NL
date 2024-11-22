@@ -4,7 +4,7 @@ description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) as a
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 0%
@@ -1142,7 +1142,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
       * `_path` : het pad naar het inhoudsfragment in de opslagplaats
          * Zie [ Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad ](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
-      * `_id_` : de UUID voor het inhoudsfragment in de opslagplaats
+      * `_id` : de UUID voor het inhoudsfragment in de opslagplaats
 
          * Zie [ Vraag van de Steekproef voor een Fragment van de Inhoud van een specifiek Model met verwijzingen UID ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Zie Voorbeeldquery voor inhoudsfragmenten op UUID-verwijzing](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
