@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3591'
 ht-degree: 1%
 
 ---
 
 # Modellen van inhoudsfragmenten {#content-fragment-models}
+
+>[!IMPORTANT]
+>
+>Verschillende kenmerken van de modellen van inhoudsfragmenten zijn beschikbaar via het programma Early adopter.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 De Modellen van het Fragment van de inhoud in Adobe Experience Manager (AEM) bepalen as a Cloud Service de structuur voor de inhoud van uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
 
@@ -180,18 +186,33 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 * **Markeringen**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
+* **Verwijzing van het Fragment**
+   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
+   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
+      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+      * Een nieuw inhoudsfragment maken op basis van het juiste model
+      * Nieuwe instanties van het veld maken
+   * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
+* **Verwijzing van het Fragment (UUID)**
+   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
+   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
+      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+      * Een nieuw inhoudsfragment maken op basis van het juiste model
+      * Nieuwe instanties van het veld maken
+   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
+      * U hoeft de UUID niet te weten; in de fragmenteditor kunt u naar het vereiste fragment bladeren
 
 * **Verwijzing van de Inhoud**
    * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
    * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
-
-* **Verwijzing van het Fragment**
-   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
-   * Het veld kan zo worden geconfigureerd dat auteurs van fragmenten:
-      * Het fragment waarnaar wordt verwezen, rechtstreeks bewerken
-      * Een nieuw inhoudsfragment maken op basis van het juiste model
-      * Nieuwe instanties van het veld maken
+   * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
+* **Verwijzing van de Inhoud (UUID)**
+   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
+   * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
+   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
+   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
+      * U hoeft de UUID niet te weten; in de fragmenteditor kunt u naar de vereiste elementbron bladeren
 
 * **voorwerp JSON**
    * Hiermee stelt u de auteur van inhoudsfragment in staat JSON-syntaxis in te voeren in de overeenkomende elementen van een fragment.
@@ -293,17 +314,28 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
 
 Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenstypen:
 
-* **[Verwijzing van de Inhoud](#content-reference)**
+* [Content Reference](#content-reference)
    * Verstrekt een eenvoudige verwijzing naar andere inhoud; van om het even welk type.
+   * Verstrekt door de gegevenstypes:
+      * **Verwijzing van de Inhoud** - gebaseerd weg
+      * **Verwijzing van de Inhoud (UUID)** - gebaseerd UUID
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
-* **[Verwijzing van het Fragment](#fragment-reference-nested-fragments)** (Geneste Fragmenten)
+* [ Verwijzing van het Fragment ](#fragment-reference-nested-fragments) (Geneste Fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
+   * Verstrekt door de gegevenstypes:
+      * **Verwijzing van het Fragment** - gebaseerd weg
+      * **Verwijzing van het Fragment (UUID)** - gebaseerd UUID
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
+
      >[!NOTE]
      >
      Deze methode is van bijzonder belang wanneer u [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) gebruikt.
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
+
+>[!NOTE]
+>
+Zie [ bevorderen uw Fragmenten van de Inhoud voor Verwijzingen UUID ](/help/headless/graphql-api/uuid-reference-upgrade.md) voor verdere informatie over de Verwijzing van de Inhoud/van het Fragment en de Verwijzing van de Inhoud/van het Fragment (UUID), en bevordering aan de op UUID-Gebaseerde gegevenstypes.
 
 >[!NOTE]
 >
@@ -323,11 +355,11 @@ Voor verdere details zie [ AEM GraphQL API voor gebruik met de Fragmenten van de
 
 ### Content Reference {#content-reference}
 
-Met de Content Reference kunt u inhoud van een andere bron renderen, bijvoorbeeld een afbeelding, pagina of Experience Fragment.
+De **Verwijzing van de Inhoud** en **Verwijzing van de Inhoud (UUID)** gegevenstypes staan u toe om inhoud van een andere bron terug te geven; bijvoorbeeld, beeld, pagina of het Fragment van de Ervaring.
 
 Naast de standaardeigenschappen kunt u opgeven:
 
-* Het **Weg van de Wortel**, dat specificeert waar te om het even welke referenced inhoud op te slaan
+* Het **Weg van de Wortel**, dat specificeert, of vertegenwoordigt, waar om het even welke referenced inhoud op te slaan
   >[!NOTE]
   >
   Dit is verplicht als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Content Fragment-editor gebruikt.
@@ -350,7 +382,7 @@ Naast de standaardeigenschappen kunt u opgeven:
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
+De **Verwijzing van het Fragment** en **Verwijzing van het Fragment (UUID)** gegevenstypes kunnen één, of meer, de Fragmenten van de Inhoud van verwijzingen voorzien. Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
 Bijvoorbeeld:
 
@@ -387,7 +419,7 @@ Naast de standaardeigenschappen kunt u definiëren:
 U kunt meerdere modellen selecteren. Wanneer u verwijzingen toevoegt aan een inhoudsfragment, moeten fragmenten waarnaar wordt verwezen, met deze modellen zijn gemaakt.
 
 * **Weg van de Wortel**
-Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
+Hiermee geeft u een hoofdpad op of vertegenwoordigt u dit voor alle fragmenten waarnaar wordt verwezen.
 
 * **staat het Maken van het Fragment toe**
 

@@ -4,15 +4,21 @@ description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) as a
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
+source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
 workflow-type: tm+mt
-source-wordcount: '5582'
+source-wordcount: '5814'
 ht-degree: 0%
 
 ---
 
 
 # GraphQL API AEM voor gebruik met inhoudsfragmenten {#graphql-api-for-use-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Verschillende functies van de GraphQL API voor gebruik met inhoudsfragmenten zijn beschikbaar via het programma Vroege adopter.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 
@@ -252,6 +258,8 @@ Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
 GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen van het inhoudsfragmentmodel en de bijbehorende GraphQL-typen worden weergegeven:
 
+<!-- CQDOC-21487 - check additions to table -->
+
 | Inhoudsfragmentmodel - Gegevenstype | GraphQL-type | Beschrijving |
 |--- |--- |--- |
 | Tekst met één regel | `String`, `[String]` | Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, namen van locaties, enzovoort. |
@@ -262,7 +270,9 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 | Opsomming | `String` | Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
 | Tags | `[String]` | Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
 | Content Reference | `String`, `[String]` | Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
+| Content Reference (UUID) | `String`, `[String]` | Wordt gebruikt om het pad weer te geven, weergegeven door een UUID naar een ander element in AEM |
 | Fragmentverwijzing |  *ModelType van A* <br><br> Enig gebied: `Model` - Model type, direct van verwijzingen voorzien <br><br> Multifield, met één referenced type: `[Model]` - Serie van type `Model`, die direct van serie <br><br> Multifield, met veelvoudige referenced types wordt voorzien: `[AllFragmentModels]` - Serie van alle modeltypes, van serie met verenigingstype van verwijzingen voorzien type |  Gebruikt om één, of meer, de Fragmenten van de Inhoud van bepaalde ModelTypes van Verwijzing te voorzien, die toen het model werd gecreeerd |
+| Fragmentverwijzing (UUID) |  *ModelType van A* <br><br> Enig gebied: `Model` - Model type, direct van verwijzingen voorzien <br><br> Multifield, met één referenced type: `[Model]` - Serie van type `Model`, die direct van serie <br><br> Multifield, met veelvoudige referenced types wordt voorzien: `[AllFragmentModels]` - Serie van alle modeltypes, van serie met verenigingstype van verwijzingen voorzien type |  Gebruikt om één, of meer, de Fragmenten van de Inhoud van bepaalde ModelTypes van Verwijzing te voorzien, die toen het model werd gecreeerd |
 
 {style="table-layout:auto"}
 
@@ -306,6 +316,27 @@ Als u één inhoudsfragment van een bepaald type wilt ophalen, moet u ook eerst 
 ```
 
 Zie [ Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad ](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
+
+#### ID (UUID) {#id-uuid}
+
+Het veld Id wordt ook gebruikt als id in AEM GraphQL. Het vertegenwoordigt het pad van het Content Fragment-element in de AEM opslagplaats, maar in plaats van het feitelijke pad te houden, bevat het een UUID die de bron vertegenwoordigt. Dit is de id van een inhoudsfragment, omdat dit:
+
+* uniek is binnen AEM,
+* gemakkelijk kan worden opgehaald,
+* verandert niet wanneer de bron wordt verplaatst.
+
+De UUID voor een inhoudsfragment en voor een inhoudsfragment waarnaar wordt verwezen, of element, kan worden geretourneerd via de JSON-eigenschap `_id` .
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### Metagegevens {#metadata}
 
@@ -1112,6 +1143,11 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
       * `_path` : het pad naar het inhoudsfragment in de opslagplaats
          * Zie [ Vraag van de Steekproef - Één enkel Specifiek Fragment van de Stad ](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
+      * `_id_` : de UUID voor het inhoudsfragment in de opslagplaats
+        <!-- CQDOC-21487 -->
+         * Zie [ Vraag van de Steekproef voor een Fragment van de Inhoud van een specifiek Model met verwijzingen UID ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * [Zie Voorbeeldquery voor inhoudsfragmenten op UUID-verwijzing](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference` : om verwijzingen weer te geven; inclusief inline-verwijzingen in de Rich Text Editor
          * Zie [ Vraag van de Steekproef voor de veelvoudige Fragmenten van de Inhoud met Vooraf ingestelde Verwijzingen ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)

@@ -4,9 +4,9 @@ description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1940'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
 Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen door voorbeeldinhoud en query&#39;s te verkennen.
+
+>[!IMPORTANT]
+>
+>Verschillende functies van de GraphQL API voor gebruik met inhoudsfragmenten zijn beschikbaar via het programma Vroege adopter.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ Met de volgende query worden alle `attachments` - een specifiek veld (subgroep) 
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### Voorbeeldquery&#39;s voor een inhoudsfragment van een specifiek model met UUID-verwijzingen {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+Deze vragen worden ondervraagd:
+
+* de UUID voor een inhoudsfragment en voor inhoudsfragmenten of -elementen waarnaar wordt verwezen
+* het resultaat wordt geretourneerd via de JSON-eigenschap `_id`
+
+#### Voorbeeldquery voor een inhoudsfragment van een specifiek model dat een UUID-verwijzing gebruikt {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+De volgende query retourneert alle inhoudsverwijzingen met `_id` en `_path` :
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Voorbeeldquery voor inhoudsfragmenten op UUID-verwijzing {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+De volgende query retourneert alle inhoudsverwijzingen die betrekking hebben op een specifieke `_id` :
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }
