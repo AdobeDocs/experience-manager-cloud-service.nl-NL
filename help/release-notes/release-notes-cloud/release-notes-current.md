@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Beheer uw Edge Delivery-spreadsheetgegevens (bijvoorbeeld omleidingen) efficiën
 
 ### Prerelease-mogelijkheden in AEM Sites
 
-Verbeterd inhoudsfragment dat verwijst naar unieke ID-verwijzingen, zorgt voor stabiele koppelingen die geldig blijven, zelfs wanneer elementen of fragmenten worden verplaatst. Hierdoor is het niet langer nodig om updates uit te voeren of opnieuw te publiceren. Huidige beperking: paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt.
+Verbeterd [ het Fragment van de Inhoud die met unieke op identiteitskaart-Gebaseerde verwijzingen ](/help/headless/graphql-api/uuid-reference-upgrade.md) van verwijzingen voorzien, die stabiele verbindingen verzekeren die geldig blijven zelfs wanneer de activa of de fragmenten worden bewogen-eliminerend de behoefte aan updates of herpublicatie. Huidige beperking: paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
