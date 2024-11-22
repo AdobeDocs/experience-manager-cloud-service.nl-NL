@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 98cd20679f67373323c326c3ea083774ced6649f
+source-git-commit: 0ca20c601a640e7acea5b49c7d399475e7af9fbc
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -31,16 +31,26 @@ De [ pagina van Adobe Experience Manager ](https://experience.adobe.com/#/experi
 * Softwaredistributie en
 * Extension Manager
 
-Deze oplossingen worden nu verplaatst naar de belangrijkste navigatie onder **Hulpmiddelen**. Bovendien, bieden de nieuwe navigatie elementen voor **Plaatsen** en **Assets** nu snelle toegang tot zeer belangrijke eigenschappen van Adobe Experience Manager, met inbegrip van Assets, Inzamelingen, Plaatsen, en de Fragmenten van de Inhoud aan.
+Deze oplossingen worden nu verplaatst naar de belangrijkste navigatie onder **Hulpmiddelen**. Bovendien, verstrekken de nieuwe navigatie elementen voor **Plaatsen** en **Assets** snelle toegang tot zeer belangrijke eigenschappen van Adobe Experience Manager zoals Assets, Inzamelingen, Plaatsen, en de Fragmenten van de Inhoud. Deze functies zijn beschikbaar voor de primaire productieomgeving waartoe u toegang hebt.
 
-![ AEM homepage ](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
+![ AEM de milieu&#39;s van het Huis ](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
 
 Als centraal knooppunt voor Adobe Experience Manager wordt de AEM startpagina uitgebreid met extra widgets en acties die zijn afgestemd op elke gebruikersrol. Volledig aanpasbaar, laat de pagina u de optimale lay-out voor uw scherm kiezen. Widgets kunnen worden gefilterd, zodat alleen geselecteerde widgets op de hoofdpagina worden weergegeven, zodat u over een persoonlijke ervaring beschikt.
 
-![ AEM homepage ](/help/implementing/cloud-manager/assets/aem-home-custom.png)
+![ AEM Huis aangepast ](/help/implementing/cloud-manager/assets/aem-home-custom.png)
 
 U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aanpassen aan uw behoeften en voorkeuren.
 
-![ AEM homepage ](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
+![ AEM Van het Huis widgets ](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
 
-De **sectie van milieu&#39;s van de Auteurs** {toont alle AEM milieu&#39;s toegankelijk voor u, terwijl de **sectie van Recenten** een lijst van onlangs bezochte pagina&#39;s verstrekt die binnen het AEM systeem worden gevolgd.
+De **sectie van milieu&#39;s van de Auteurs** {toont alle AEM milieu&#39;s toegankelijk voor u, terwijl de **sectie van Recenten** een lijst van onlangs bezochte pagina&#39;s verstrekt die binnen de systemen van de AEM worden gevolgd.
+
+De navigatie-elementen zijn onder andere Assets Browse, waarmee de opslagplaats van de productieomgeving die voor de gebruiker toegankelijk is, wordt geladen.
+
+![ AEM de navigatieelementen van het Huis ](/help/implementing/cloud-manager/assets/aem-home-navigation.png)
+
+Als er geen productie-AEM Cloud Service-omgevingen beschikbaar zijn, worden de opties grijs (niet beschikbaar) weergegeven voor de gebruiker.
+
+![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+
+

@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
+source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,11 @@ De stappen voor beide methoden die in dit document worden beschreven, zijn gebas
 1. In **voeg domein** dialoogdoos toe, op het **gebied van de Naam van het Domein**, ga de naam van het douanedomein in u gebruikt.
 Neem bij het invoeren van de domeinnaam geen `http://` , `https://` of spaties op.
 
+   >[!NOTE]
+   >
+   >Als u zowel `www` als `non-www` versies van een domein nodig hebt, moet u ze afzonderlijk toevoegen. Bijvoorbeeld `example.com` en `www.example.com` .
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. Klik **creëren**.
 
 1. In **verifieer domein** dialoogdoos, in **welk certificaattype u op het gebruiken van dit domein van plan bent?** selecteert u een van de volgende opties in de vervolgkeuzelijst:
@@ -70,7 +75,7 @@ Neem bij het invoeren van de domeinnaam geen `http://` , `https://` of spaties o
 
    >[!NOTE]
    >
-   >Als u uw eigen klant beheerde (OV/EV of DV) SSL certificaat gebruikt, en van plan bent om een klant beheerde CDN ***leverancier te gebruiken***, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+   >Als u uw eigen klant beheerde (OV/EV of DV) SSL certificaat gebruikt, en van plan bent om een klant beheerde CDN ***leverancier te gebruiken***, kunt u overslaan toevoegend een SSL certificaat. In plaats daarvan, ga direct aan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
 
 
 ### Door Adobe beheerde certificaatstappen {#adobe-managed-cert-steps}

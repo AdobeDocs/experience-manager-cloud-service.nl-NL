@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
-source-wordcount: '5883'
+source-wordcount: '5886'
 ht-degree: 2%
 
 ---
@@ -1100,6 +1100,7 @@ ht-degree: 2%
          + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](/help/journey-headless/author/metadata-tagging.md)
 + Generatieve AI {#generative-ai}
    + [Variaties genereren](/help/generative-ai/generate-variations.md)
+   + [Assistent (beperkte Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementatie {#implementing}
    + [Toepassingen voor AEM as a Cloud Service](/help/implementing/home.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
@@ -1123,7 +1124,7 @@ ht-degree: 2%
          + [Opslagplaatsen in Cloud Manager beheren](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Een opslagplaats voor Adoben toevoegen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Een privéopslagplaats toevoegen](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Een externe opslagplaats toevoegen (vroege adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Een externe opslagplaats toevoegen (beperkte Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Ondersteuning voor Git-submodule](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Git gebruiken met Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
