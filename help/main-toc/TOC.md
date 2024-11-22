@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 2%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 2%
             + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)
             + [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [hCAPTCHA gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [hCAPTCHA gebruiken in een adaptieve Core-component van een formulier](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components](/help/forms/supporting-new-language-localization-core-components.md)
             + [JSON-schema ontwerpen voor een adaptief formulier (kerncomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 2%
          + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
             + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
             + [Captcha gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Draaien in een adaptieve vorm gebruiken](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Turnstile CAPTCHA gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [ Componenten van de Kern van het Gebruik ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
             + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
