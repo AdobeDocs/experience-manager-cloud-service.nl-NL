@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
+source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -505,12 +505,67 @@ De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats
 
 AEM as a Cloud Service wordt verplaatst naar Java 21-runtime. Met het oog op de verenigbaarheid is het van essentieel belang de volgende aanpassingen aan te brengen:
 
-### Minimale versie van org.objectweb.asm {#org.objectweb.asm}
+### Vereisten voor runtime:
+
+#### Minimale versie van org.objectweb.asm {#org.objectweb.asm}
 
 Werk het gebruik van org.objectweb.asm bij naar versie 9.5 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
 
-### Minimumversie van org.apache.groovy {#org.apache.groovy}
+#### Minimumversie van org.apache.groovy {#org.apache.groovy}
 
 Werk het gebruik van org.apache.groovy bij naar versie 4.0.22 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
 
 Deze bundel kan indirect worden omvat door dergebiedsdelen zoals de AEM Groovy Console toe te voegen.
+
+#### Minimale versie van de plug-in voor bnd-maven {#bnd-maven-plugin}
+
+Werk het gebruik van de ingebouwde plug-in naar versie 6.4.0 of hoger bij om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+
+#### Minimumversie van de door de analysator vervaardigde insteekmodule {#aemanalyser-maven-plugin}
+
+Werk het gebruik van de aemanalyser-maven-stop in versie 1.6.6 of hoger bij om steun voor nieuwere JVM runtimes te verzekeren.
+
+#### Minimumversie van de gefabriceerde bundelinsteekmodule  {#maven-bundle-plugin}
+
+Werk het gebruik van een maven-bundle-plugin bij naar versie 5.1.5 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+
+#### Afhankelijkheden bijwerken in een maven-scr-plug-in  {#maven-scr-plugin}
+
+`maven-scr-plugin` is niet rechtstreeks compatibel met Java 17 en 21. Het is echter mogelijk om de descriptorbestanden te genereren door de ASM-afhankelijkheidsversie bij te werken in de plug-inconfiguratie, vergelijkbaar met het onderstaande fragment:
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
