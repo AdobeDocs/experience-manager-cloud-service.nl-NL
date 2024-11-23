@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 0ca20c601a640e7acea5b49c7d399475e7af9fbc
+source-git-commit: ecf42a4bda424bb344e1b348924f1435a99f26c7
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -52,5 +52,6 @@ De navigatie-elementen zijn onder andere Assets Browse, waarmee de opslagplaats 
 Als er geen productie-AEM Cloud Service-omgevingen beschikbaar zijn, worden de opties grijs (niet beschikbaar) weergegeven voor de gebruiker.
 
 ![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+
 
 
