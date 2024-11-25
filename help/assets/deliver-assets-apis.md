@@ -3,9 +3,9 @@ title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,11 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 | [ meta-gegevens van Activa ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Retourneert de eigenschappen die aan een element zijn gekoppeld, zoals titel, beschrijving, CreateDate, ModifyDate enzovoort. |
 | [ de container van de Speler voor de videoactiva ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Retourneert de spelercontainer voor het video-element. U kunt de speler insluiten in een iframe HTML-element en de video afspelen. |
 | [ manifests van de Playback in het geselecteerde outputformaat ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Retourneert het afspeelmanifestbestand voor het opgegeven video-element in de geselecteerde uitvoerindeling. U moet een aangepaste speler maken die het afspeelmanifestbestand kan ophalen en de video kan afspelen door middel van HLS- of DASH-protocollen. |
+
+
+>[!NOTE]
+>
+[ vooraf instelt van het Beeld, slimme beeldvorming, en extra beeldbepalingen ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), zijn beschikbaar aan u als beperkte beschikbaarheidseigenschap. Om toegang te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Eindpunten van bezorgings-API&#39;s {#delivery-apis-endpoint}
 
