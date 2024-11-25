@@ -5,16 +5,16 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2504'
+ht-degree: 4%
 
 ---
 
 # Variaties - Fragmentinhoud ontwerpen{#variations-authoring-fragment-content}
 
-[ de Variaties ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een significante eigenschap van de Fragmenten van de Inhoud in de Manager van de Belichting van de Adobe (AEM) as a Cloud Service. Dit is omdat zij u exemplaren van de **Hoofd** inhoud voor gebruik op specifieke kanalen en scenario&#39;s laten tot stand brengen en uitgeven. Dit maakt met name de levering van inhoud zonder kop nog flexibeler.
+[ de Variaties ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een significante eigenschap van de Fragmenten van de Inhoud in Adobe Experience Manager (AEM) as a Cloud Service. Dit is omdat zij u exemplaren van de **Hoofd** inhoud voor gebruik op specifieke kanalen en scenario&#39;s laten tot stand brengen en uitgeven. Dit maakt met name de levering van inhoud zonder kop nog flexibeler.
 
 >[!NOTE]
 >
