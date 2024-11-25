@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
+source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2800'
 ht-degree: 0%
 
 ---
@@ -505,7 +505,9 @@ De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats
 
 AEM as a Cloud Service wordt verplaatst naar Java 21-runtime. Met het oog op de verenigbaarheid is het van essentieel belang de volgende aanpassingen aan te brengen:
 
-### Vereisten voor runtime:
+### Runtime-vereisten
+
+Deze aanpassingen zijn vereist om compatibiliteit met de Java 21-runtime te garanderen. De bibliotheken kunnen op elk gewenst moment worden bijgewerkt, omdat ze compatibel zijn met oudere versies van Java.
 
 #### Minimale versie van org.objectweb.asm {#org.objectweb.asm}
 
@@ -517,9 +519,13 @@ Werk het gebruik van org.apache.groovy bij naar versie 4.0.22 of hoger om onders
 
 Deze bundel kan indirect worden omvat door dergebiedsdelen zoals de AEM Groovy Console toe te voegen.
 
+### Vereisten voor runtime
+
+Deze aanpassingen zijn vereist om het project te kunnen bouwen met nieuwere versies van Java, maar niet vereist voor runtimecompatibiliteit. De plug-ins Maven kunnen op elk gewenst moment worden bijgewerkt omdat ze compatibel zijn met oudere versies van Java.
+
 #### Minimale versie van de plug-in voor bnd-maven {#bnd-maven-plugin}
 
-Werk het gebruik van de ingebouwde plug-in naar versie 6.4.0 of hoger bij om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+Werk het gebruik van de ingebouwde insteekmodule naar versie 6.4.0 bij om ondersteuning voor nieuwere JVM-runtimes te garanderen. Versie 7 of hoger is niet compatibel met Java 11 of lager. Een upgrade naar die versie wordt daarom op dit moment niet aanbevolen.
 
 #### Minimumversie van de door de analysator vervaardigde insteekmodule {#aemanalyser-maven-plugin}
 
