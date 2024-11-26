@@ -4,9 +4,9 @@ description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -328,8 +328,6 @@ Door een eigenschap `classes` aan het blok toe te voegen, wordt de eigenschap we
 In deze handleiding hebt u zich voor de eenvoud rechtstreeks vastgelegd op de `main` -vertakking. Voor experimenteren in een voorbeeldopslagplaats, is dit gewoonlijk geen kwestie. Voor werkelijk projectwerk, [ zou u ontwikkeling beste praktijken ](https://www.aem.live/docs/dev-collab-and-good-practices) moeten volgen door zich op een verschillende tak te ontwikkelen en alle veranderingen te herzien via trekkingsverzoek alvorens aan `main` samen te voegen.
 
 Wanneer u zich niet ontwikkelt op de `main` -vertakking, kunt u `?ref=<branch>` toevoegen in de locatiebalk van de universele editor om de pagina vanuit uw vertakking te laden. `<branch>` is de vertakkingsnaam zoals deze zou worden gebruikt voor de voorvertoning van uw project of voor live URL&#39;s, bijvoorbeeld `https://<branch>--<repo>--<owner>.hlx.page` .
-
-Het publiceren van inhoud met een nieuw model wordt slechts gesteund wanneer het model aan de `main` tak wordt samengevoegd.
 
 ## De blokken opnieuw gebruiken voor op documenten gebaseerde ontwerpen {#reusing-blocks}
 
