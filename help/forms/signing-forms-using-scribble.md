@@ -7,9 +7,9 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 | AEM as a Cloud Service | Dit artikel |
 
 
-U kunt de **component van de Handtekening van 0} Krabbelen en** component van de Stap van de Handtekening **gebruiken om (Krabbelen) handtekening op een AanpassingsVorm te trekken.** In de stapcomponent Handtekening wordt een PDF-versie van het adaptieve formulier weergegeven. Als u de stapcomponent Handtekening wilt gebruiken, hebt u een optie Document of Record ingeschakeld of een op een formuliersjabloon gebaseerde Adaptieve Forms nodig.
+U kunt de **component van de Ondertekening van 0} Krabbelen gebruiken {om (Krabbelen) handtekening op een Aangepaste Vorm te trekken. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->**
 
 ![ Scripttekendialoog ](assets/scribble-signature.png)
 
@@ -55,50 +55,89 @@ U kunt **selecteren vormt** ![ pictogram ](assets/configure.png) om de aspectver
 
 ## Een adaptief formulier configureren voor het gebruik van een scripthandtekening {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. Maak een optie Document of Record ingeschakeld of maak een op een formuliersjabloon gebaseerd adaptief formulier. Voor geleidelijke informatie, zie [ Creërend een Aangepaste Vorm ](creating-adaptive-form.md).
+1. Open een adaptief formulier in de bewerkingsmodus.
 1. De belemmering-en-daling de **component van de Handtekening van 0} Krabbelen {van componentenbrowser aan de Aangepaste Vorm.**
-1. Selecteer **vormen** ![ ](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. Configureer eigenschappen van de component Krabbelhandtekening.
-1. Sleep de component Signature Step van de componentbrowser naar het Adaptieve formulier.
+1. Selecteer **vormen** ![ ](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. [ vormt eigenschappen van Krabbelhandtekening ](#properties-of-scribble-signature-component) zoals die in de volgende sectie wordt besproken.
 
-   >[!NOTE]
-   >
-   >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
+   ![ Krabbelen Handtekening ](/help/forms/assets/scribblesig.png)
 
-1. In browser van de Inhoud, de uitgezochte **Container van de Vorm**, en selecteert **** ![ vormt pictogram ](assets/configure.png). De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer aan **Aangepaste Container van de Vorm** > **Elektronische Ondertekening** en schrap **toelaten Adobe Sign** optie. Selecteer het Gedaan ![ name_forms_save ](assets/aem_forms_save.png) pictogram om de veranderingen te bewaren.
+1. Selecteer het Gedaan ![ name_forms_save ](assets/aem_forms_save.png) pictogram om de veranderingen te bewaren. De handtekening is geconfigureerd.
 
-   >[!NOTE]
-   >
-   >Wanneer u een component Handtekeningstap toevoegt aan een adaptief formulier, wordt de optie Adobe Sign inschakelen automatisch geselecteerd.
+## Eigenschappen van de component Krabbelhandtekening configureren
 
-1. Selecteer **vormen** ![ ](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen voor stap Handtekening worden weergegeven. Configureer de volgende eigenschappen:
+Met het dialoogvenster Configureren kunt u de component Scripthandtekening eenvoudig aanpassen voor bezoekers.
 
-   * **Naam van het Element**: specificeer naam van de component.
+### Tabblad Standaard
 
-   * **Titel:** specificeer unieke titel van de component.
-   * **bericht van het Malplaatje:** specificeer het bericht dat moet worden getoond terwijl de handtekening PDF wordt geladen. Adobe Sign-services hebben enige tijd nodig om de PDF van de handtekening voor te bereiden en te laden.
-   * **Ondertekenende Dienst:** selecteer de **Krabbelen optie van de Ondertekening**.
+![ Basis lusje ](/help/forms/assets/scribblesig-basic.png)
 
-   * **CSS Klasse**: specificeer CSS klasse van de cliëntbibliotheek, als om het even welk. De Adobe adviseert gebruikend [ thema&#39;s ](themes.md) en [ in-lijn stijlen ](inline-style-adaptive-forms.md) in plaats van CSS Klasse.
+* **Naam** - u kunt een vormcomponent gemakkelijk met zijn unieke naam zowel in de vorm als in de regelredacteur identificeren, maar de naam moet geen ruimten of speciale karakters bevatten.
 
-   Selecteer het Gedaan ![ name_forms_save ](assets/aem_forms_save.png) pictogram om de veranderingen te bewaren. De handtekening is geconfigureerd.
+* **Titel** - met zijn Titel, kunt u een component in een vorm gemakkelijk identificeren en door gebrek, verschijnt de titel bovenop de component. Als u geen titel toevoegt, wordt de naam van de component weergegeven in plaats van de titeltekst.
 
-   Wanneer u nu een formulier invult, wordt een PDF-versie van het adaptieve formulier weergegeven en worden opties voor de ondertekening van het PDF-document weergegeven. Voor gedetailleerde informatie, zie [ een AanpassingsVorm gebruikend de Krabbelhandtekening ](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature) ondertekenen.
+* **staat RTF voor Titel** toe - Deze eigenschappen laat gebruikers toe om gewone teksttitels te formatteren, die eigenschappen zoals vette, cursieve, onderstreepte tekst, diverse doopvonten, doopvontgrootte, kleuren, en extra optie opnemen om visuele presentatie en aanpassing te verbeteren. Deze functie biedt meer flexibiliteit en creatieve controle bij het opvallen van titels in documenten, websites of toepassingen.\
+  Op het selecteren van checkbox voor **staat RTF-tekst voor Titel** toe, wordt het formatteren opties zichtbaar om de titel van de component te stileren. Om tot alle beschikbare het formatteren opties toegang te hebben, kunt u op het ![ pictogram Volledig scherm ](/help/forms/assets/fullscreen-icon.png) tabel klikken.
 
-## Een adaptief formulier ondertekenen met behulp van een scripthandtekening {#sign-an-adaptive-form-using-scribble-signature}
+  ](/help/forms/assets/richtext-support-title.png) de rijke tekststeun van 0}![
 
-1. Nadat u een adaptief formulier hebt ingevuld en de pagina Stap handtekening hebt bereikt, wordt het handtekeningscherm weergegeven.
+* **Verberg Titel** - selecteer de optie om de Titel van de component te verbergen.
+* **Vereist Gebied** - selecteer de optie om het gebied verplicht te maken.
+* **Vereiste Bericht van het Gebied** - het **Vereiste Bericht van het Gebied** is een klantgericht bericht dat aan gebruikers wordt getoond wanneer zij proberen om een vorm voor te leggen zonder een verplicht gebied in te vullen.
+* **Model van Gegevens Bind Verwijzing** - A bindt verwijzing is een verwijzing naar een gegevenselement dat in een externe gegevensbron wordt opgeslagen en in een vorm wordt gebruikt. Met de bind-verwijzing kunt u gegevens dynamisch binden aan formuliervelden, zodat in het formulier de meest actuele gegevens uit de gegevensbron kunnen worden weergegeven. Een bind-verwijzing kan bijvoorbeeld worden gebruikt om de naam en het adres van een klant in een formulier weer te geven op basis van de id van de klant die in het formulier is ingevoerd. De bind verwijzing kan ook worden gebruikt om de gegevensbron met gegevens bij te werken ingegaan in de vorm. Op deze manier kunt u in AEM Forms formulieren maken die interageren met externe gegevensbronnen, zodat u een naadloze gebruikerservaring hebt voor het verzamelen en beheren van gegevens.
+* **Verberg Voorwerp** - selecteer de optie om de component van de vorm te verbergen. De component blijft toegankelijk voor andere doeleinden, zoals het gebruiken voor berekeningen in de Redacteur van de Regel. Dit is handig wanneer u informatie wilt opslaan die niet hoeft te worden bekeken of rechtstreeks door de gebruiker hoeft te worden gewijzigd.
+* **maak Voorwerp** onbruikbaar - selecteer de optie om de component onbruikbaar te maken. De uitgeschakelde component is niet actief of bewerkbaar voor de eindgebruiker. De gebruiker kan de waarde van het veld zien, maar kan deze niet wijzigen. De component blijft toegankelijk voor andere doeleinden, zoals het gebruiken voor berekeningen in de Redacteur van de Regel.
+* **Verhouding** - de aspectverhouding in een Krabbelende component van de Handtekening bepaalt het proportionele verband tussen zijn breedte en hoogte.
+* **Lay-out van het Gebied** - de **optie van de Lay-out van het Gebied** bepaalt hoe de vormelementen, met inbegrip van de etiketten (titels) en foutenmeldingen, met betrekking tot de component worden geplaatst. De **Titel en de Fout als Boven van Widget** plaatsen de titel van het gebied (etiket) en foutenmeldingen boven de component. **erf van de AanpassingsConfiguratie van de Vorm** gebruikt de montages van de standaardgebiedlay-out die in de Aangepaste configuratie van de Vorm worden gespecificeerd.
+* **CSS Klasse** - de **CSS klasse** staat u toe om douanestijlen op een component toe te passen door één of meerdere CSS klassen toe te wijzen die in uw stijlpagina worden bepaald. Het maakt consistente opmaak en aanpassing van de layout mogelijk in uw adaptieve formulier.
 
-   ![ het scherm van de Handtekening voor EchoSign pagina ](assets/esignscribblesign.jpg)
+### Help-inhoud
 
-1. Klik op **[!UICONTROL Sign]**. Het dialoogvenster Scriptteken wordt weergegeven. Onderteken de vorm en klik het Gedaan ![ a_forms_save ](assets/aem_forms_save.png) pictogram om de handtekening te bewaren.
+![ Inhoud tabel van de Hulp ](/help/forms/assets/scribblesig-help.png)
 
-   ![ Scripttekendialoog ](assets/scribblewidget.png)
+* **Korte beschrijving** - een korte beschrijving is een korte tekstverklaring die extra informatie of verduidelijking over het doel van een specifiek vormgebied verstrekt. Het helpt de gebruiker begrijpen welk type gegevens in het gebied moeten worden ingegaan en kan richtlijnen of voorbeelden verstrekken helpen ervoor zorgen dat de ingevoerde informatie geldig is en aan de gewenste criteria voldoet. Korte beschrijvingen blijven standaard verborgen. Laat **toe tonen altijd korte beschrijving** optie om het onder de component te tonen.
 
-1. Klik op Voltooien om het ondertekeningsproces te voltooien.
+* **toont altijd korte beschrijving** - laat de optie toe om de Korte beschrijving onder de component te tonen.
 
-   ![ voltooi het het ondertekenen proces ](assets/scribblecomplete.jpg)
+* **Lange Beschrijving** - het verwijst naar extra informatie of begeleiding die aan de gebruiker wordt verstrekt om hen bij het correct invullen van een vormgebied bij te staan. Deze wordt weergegeven wanneer de gebruiker op het Help-pictogram (i) naast de component klikt. De klasse biedt gedetailleerdere informatie dan de label- of plaatsaanduidingstekst van een formulierveld en is ontworpen om de gebruiker te helpen de vereisten of beperkingen van het veld te begrijpen. Het kan ook suggesties of voorbeelden bevatten om het invullen van het formulier eenvoudiger en nauwkeuriger te maken.
 
-De handtekeningen worden toegevoegd aan het formulier en het formulierbesturingselement gaat naar het volgende venster.
+### Tabblad Toegankelijkheid {#accessibility}
+
+![ Toegankelijkheid tabel ](/help/forms/assets/scribblesig-acc.png)
+
+Op het **lusje van de Toegankelijkheid**, worden de waarden geplaatst voor [ toegankelijkheid ARIA ](https://www.w3.org/WAI/standards-guidelines/aria/) etiketten voor de component. Er zijn verschillende opties beschikbaar voor het gebruik van de tekst voor schermlezers:
+
+* **de Voorrang van de Reader van het 1} Scherm** - de Voorrang van de Reader van het Scherm verwijst naar extra tekst die specifiek bedoeld is om door ondersteunende technologieën, zoals het schermlezers te worden gelezen, die door visueel gehandicapte individuen wordt gebruikt. Deze tekst bevat een audiobeschrijving van het doel van het formulierveld en kan informatie bevatten over de titel, beschrijving, naam en relevante berichten (aangepaste tekst) van het veld. Met de schermlezertekst kunt u ervoor zorgen dat het formulier toegankelijk is voor alle gebruikers, inclusief gebruikers met een visuele handicap, en krijgt deze een volledig inzicht in het formulierveld en de vereisten ervan.
+
+   * **Tekst van de Douane**: Selecteer deze optie om de douanetekst voor de toegankelijkheidslabels van ARIA te gebruiken. Als u deze optie selecteert, wordt het dialoogvenster Aangepaste tekst weergegeven. U kunt relevante informatie toevoegen in het dialoogvenster Aangepaste tekst.
+   * **Korte Beschrijving**: Selecteer deze optie om de beschrijving voor de toegankelijkheidslabels van ARIA te gebruiken.
+   * **Titel**: Selecteer deze optie om de titel voor de toegankelijkheidslabels van ARIA te gebruiken.
+   * **Naam**: Selecteer deze optie om de naam voor de toegankelijkheidslabels van ARIA te gebruiken.
+   * **niets**: Selecteer deze optie als u niet voor de toegankelijkheidslabels van ARIA wilt toevoegen.
+
+<!--
+
+ * **Element Name**: Specify name of the component.
+
+    * **Title:** Specify unique title of the component.
+    * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
+    * **Signing Service:** Select the **Scribble Signature** option.
+
+    * **CSS Class**: Specify CSS class of the client library, if any. Adobe recommends using [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
+## Sign an Adaptive Form using Scribble Signature {#sign-an-adaptive-form-using-scribble-signature}
+
+1. After you fill an Adaptive Form and reach the Signature Step page, the signature screen is displayed.
+
+   ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
+
+1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
+
+   ![Scribble sign dialog](assets/scribblewidget.png)
+
+1. Click complete to finish the signing process.
+
+   ![Complete the signing process](assets/scribblecomplete.jpg)
+
+The signatures are added to the form and the form control moves to the next panel. -->
 
 ## Zie ook {#see-also}
 
