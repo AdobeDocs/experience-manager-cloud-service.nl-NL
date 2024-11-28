@@ -1,16 +1,16 @@
 ---
-title: Eigenschappen van element in  [!DNL the Content Hub]
-description: Leer hoe u elementen kunt weergeven en beheren in  [!DNL Content Hub]
+title: Elementen en eigenschappen voorvertonen in  [!DNL the Content Hub]
+description: Leer hoe u elementen en eigenschappen voorvertoont in  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
 
-# Elementeigenschappen beheren in Content Hub {#asset-properties}
+# Middelen voorvertonen en de eigenschappen ervan in Content Hub {#asset-properties}
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -25,17 +25,17 @@ ht-degree: 0%
 
 Met [!DNL The Content Hub] kunt u informatie over het element weergeven die essentieel is voor een efficiënte distributie van elementen. Het is de verzameling van alle gegevens die beschikbaar zijn voor een element.
 
-Door de eigenschappen van elementen weer te geven, kunt u elementen verder indelen. Dit is handig als de hoeveelheid digitale informatie toeneemt. U kunt een paar honderd bestanden beheren op basis van alleen de bestandsnamen, miniaturen en het geheugen. Nochtans, is deze benadering niet scalable wanneer het aantal betrokken personen, en het aantal beheerde activa stijgen. Bovendien neemt de waarde van een digitaal element toe naarmate het element wordt:
+Door de voorvertoning van elementen en de bijbehorende eigenschappen weer te geven, kunt u elementen verder indelen. Dit is handig als de hoeveelheid digitale informatie toeneemt. U kunt een paar honderd bestanden beheren op basis van alleen de bestandsnamen, miniaturen en het geheugen. Nochtans, is deze benadering niet scalable wanneer het aantal betrokken personen, en het aantal beheerde activa stijgen. Bovendien neemt de waarde van een digitaal element toe naarmate het element wordt:
 
 * Toegankelijker - systemen en gebruikers kunnen het gemakkelijk vinden.
-* Eenvoudiger te beheren - u kunt gemakkelijk middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
+* Gemakkelijker om op te treden - u hebt volledige informatie over de visuals en de verwante informatie van activa, om op hen sneller en met meer vertrouwen te kunnen handelen.
 * Complete - asset bevat meer informatie en context.
 
 ## Vereisten {#prerequisites}
 
 [ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
-## Eigenschappen van een element weergeven {#properties-ui}
+## Middelen voorvertonen en de eigenschappen ervan {#properties-ui}
 
 Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijken. Met de voorvertoningsfunctie kunt u niet alleen de afbeeldingen bekijken, maar ook een paar andere ondersteunde elementtypen. U kunt niet alleen het element weergeven, maar ook de gedetailleerde informatie ervan bekijken en andere handelingen uitvoeren. Om informatie van een activa te bekijken, navigeer aan de activa of [ onderzoek ](search-assets.md) de activa en klik dan de activa om zijn eigenschappen te openen. In de volgende afbeelding ziet u de velden die beschikbaar zijn op een pagina met eigenschappen van elementen:
 
@@ -54,9 +54,9 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
 * **K:** Dichte voorproefscherm
 * **L:** Informatie van activa die titel, formaat, grootte, resolutie, markeringen, kleurenmarkeringen, en slimme markeringen omvat.
 
-## Ondersteunde indelingen {#supported-formats}
+## Ondersteunde elementindelingen {#supported-formats}
 
-In de volgende tabel worden de ondersteunde bestandsindelingen weergegeven in [!DNL the Content Hub] :
+[!DNL Content Hub] ondersteunt alle typen elementen en indelingen die door de onderliggende [!DNL Assets] -opslagplaats worden ondersteund. In de volgende tabel vindt u een overzicht van de belangrijkste bestandsindelingen in [!DNL the Content Hub] , die extra ondersteuning bieden voor het visueel voorvertonen van elementen:
 
 <table> 
     <tbody>
@@ -104,15 +104,15 @@ In de volgende tabel worden de ondersteunde bestandsindelingen weergegeven in [!
     </tbody>
    </table>
 
-### Afgeleide eigenschappen na het uploaden van een element {#derived-properties}
+### Afgeleide eigenschappen {#derived-properties}
 
-Nadat u een element hebt geüpload, leidt de Content Hub een aantal eigenschappen af die automatisch worden gegenereerd. Hieronder volgt een lijst van enkele voorbeelden:
+Sommige eigenschappen voor elementen die worden weergegeven in [!DNL Content Hub] , worden afgeleid of automatisch gegenereerd wanneer elementen worden geüpload naar [!DNL Assets] en vervolgens worden goedgekeurd voor beschikbaarheid op [!DNL Content Hub] . Hieronder volgt een lijst van enkele voorbeelden:
 
-* **Grootte:** de Grootte toont de logische waarde van een activa volgens zijn afmetingen aan. Het verduidelijkt de ruimte die een activa in een bewaarplaats neemt. [!DNL The Content Hub] ondersteunt elementen tot 2 GB.
+* **Grootte:** de Grootte vertegenwoordigt de grootte van de activa binair die in de onderliggende bewaarplaats wordt opgeslagen.
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Slimme Markeringen:** [!DNL The Content Hub] gebruikt de slimme inhoudsdiensten van Adobe Sensei om activa te trainen gebruikend herkenningsalgoritme op de op markeringen-gebaseerde structuur. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. Met slimme tags verhoogt u de snelheid van de inhoud van uw projecten doordat u snel relevante middelen kunt vinden. De slimme tags zijn een voorbeeld van informatie over elementen die niet in de afbeelding voorkomen. [!DNL The Content Hub] past standaard automatisch slimme tags toe op elementen.
+* **Slimme Markeringen:** [!DNL The Content Hub] gebruikt de slimme inhoudsdiensten van Adobe Sensei om activa te trainen gebruikend herkenningsalgoritme op de op markeringen-gebaseerde structuur. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. Met slimme tags verhoogt u de snelheid van de inhoud van uw projecten doordat u snel relevante middelen kunt vinden. De slimme tags zijn een voorbeeld van informatie over elementen die niet in de afbeelding voorkomen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op elementen.
 
 * **de Markeringen van de Kleur:** [ markeringen van de Kleur ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helpen u activa herkennen gebruikend kleuren die automatisch in een activa gebruikend de mogelijkheden van Sensei van de Adobe worden geïdentificeerd AI.
 
@@ -126,7 +126,10 @@ Nadat u een element hebt geüpload, leidt de Content Hub een aantal eigenschappe
 
 Er zijn ook eigenschappen die worden opgegeven wanneer elementen aan Content Hub worden toegevoegd. Voor meer informatie, zie [ merk goedgekeurde activa aan Content Hub ](upload-brand-approved-assets.md) toevoegen. Deze eigenschappen worden ook weergegeven op de pagina met eigenschappen van elementen.
 
-Beheerders kunnen ook de eigenschappen configureren die voor elk element worden weergegeven. Voor meer informatie, zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#configure-asset-details-content-hub) vormen.
+Beheerders kunnen ook de eigenschappen configureren, die voor elk element worden weergegeven:
+
+* In de activavoorproef UI: zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#configure-asset-details-content-hub) vormen.
+* Op activakaarten in onderzoeksresultaten of inzamelingen: zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#asset-card) vormen.
 
 <!--
 
