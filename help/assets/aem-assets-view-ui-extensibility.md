@@ -4,9 +4,9 @@ description: Meer informatie over de UI-uitbreidingsmogelijkheden van AEM Assets
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Navigeer in de weergave Assets naar de pagina Details van een element, map of ve
 ## Vereisten voor het toevoegen van de component Uitbreidbaarheid
 
 * [ Toegang tot de Mening van Assets ](#1).
-* Toegang tot [ Adobe app builder ](https://developer.adobe.com/app-builder/docs/overview/), die in [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md) door gebrek inbegrepen is.
+* Toegang tot de [ Adobe app builder ](https://developer.adobe.com/app-builder/docs/overview/).
 * Toelating tot de Ontwikkelaar van de rol van Systeembeheerder binnen de Organisatie. Zie [ dit ](https://developer.adobe.com/uix/docs/guides/get-access/) voor meer informatie.
 * Het hulpmiddel van de bevellijn van de Adobe IO (AIO CLI) moet op uw lokale machines worden geïnstalleerd. Dit hulpmiddel is essentieel voor het creëren van en het opstellen van uitbreidingsprojecten. Zie [ dit ](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) voor meer informatie.
 * Goed inzicht in JavaScript, Node.js, en React technologieën.

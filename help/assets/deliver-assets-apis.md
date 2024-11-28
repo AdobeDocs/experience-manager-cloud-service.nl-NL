@@ -3,9 +3,9 @@ title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 
 >[!NOTE]
 >
-[ vooraf instelt van het Beeld, slimme beeldvorming, en extra beeldbepalingen ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), zijn beschikbaar aan u als beperkte beschikbaarheidseigenschap. Om toegang te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+* [ vooraf instelt van het Beeld, slimme beeldvorming, en extra beeldbepalingen ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), zijn beschikbaar aan u als beperkte beschikbaarheidseigenschap. Om toegang te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+* Het slimme Gewas is niet beschikbaar met [ Première van Assets ](/help/assets/assets-ultimate-overview.md).
 
 ## Eindpunten van bezorgings-API&#39;s {#delivery-apis-endpoint}
 
