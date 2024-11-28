@@ -4,9 +4,9 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -169,6 +169,17 @@ Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### Ingestiefout als gevolg van Cloud Environment niet gereed {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="Cloud-omgeving niet gereed"
+>abstract="In zeldzame gevallen kan de doelcloud onverwachte problemen veroorzaken, waardoor de opname mislukt."
+
+In zeldzame gevallen kan de doelomgeving van de Cloud Service van de inname onverwachte problemen veroorzaken. Als gevolg hiervan zal de inname mislukken omdat de omgeving niet in de verwachte gebruiksklare toestand verkeert. Controleer het innamelogboek om meer details van de aangetroffen foutenstaat te openbaren.
+
+Zorg ervoor dat de auteursomgeving beschikbaar is en wacht een paar minuten voordat u de inname opnieuw bevestigt. Neem contact op met de klantenondersteuning als het probleem zich blijft voordoen.
+
 ### Bijkomende congestiefout als gevolg van Uniqueness Constraint {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ Om deze beperking mogelijk te vermijden, stel de [ Analysator van Beste praktijk
 
 Soms zouden onverwachte intermitterende problemen zich lenen voor mislukte inname, waarbij het helaas de enige mogelijkheid is om de inname opnieuw te proberen. Onderzoek het innamelogboek om de oorzaak van de mislukking te ontdekken en te zien of richt het zich op om het even welke hieronder vermelde fouten, waar een herpoging zou moeten worden geprobeerd.
 
-## MongoDB-problemen {#mongo-db-issues}
+#### MongoDB-problemen {#mongo-db-issues}
 
 * `Atlas prescale timeout error` - In de introductiefase wordt geprobeerd de doelcloud-database vooraf in te stellen op een geschikte grootte die is afgestemd op de grootte van de inhoud van de migratieset die wordt opgenomen. Deze bewerking wordt soms niet binnen de verwachte tijd voltooid.
 * `Exhausted mongo restore retries` - Pogingen om een lokale stortplaats van de opgenomen migratie vastgestelde vastgestelde inhoud aan het wolkengegevensbestand te herstellen zijn uitgeput. Dit wijst op een algemene gezondheid/netwerkkwestie met MongoDB, die zich vaak na een paar minuten geneest.
