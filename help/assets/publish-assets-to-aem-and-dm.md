@@ -1,12 +1,12 @@
 ---
 title: Quick Publish to AEM and Dynamic Media
-description: Met Quick Publish in de Assets-weergave kunt u elementen tegelijkertijd of afzonderlijk publiceren naar AEM en Dynamic Media. U kunt elementen en mappen selecteren en publiceren naar Dynamic Media of AEM.
+description: Met Quick Publish in Assets-weergave kunt u elementen gelijktijdig of afzonderlijk publiceren naar AEM en Dynamic Media. U kunt elementen en mappen selecteren en publiceren naar Dynamic Media of AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Met Experience Manager Assets kunt u snel elementen publiceren naar Experience Manager en Dynamic Media met de Assets-weergave. Dit zorgt ervoor dat u uw activa beheert en hen dan publiceert gebruikend [ mening van Assets zonder omschakeling aan de mening Admin ](/help/assets/overview.md##persona-based-experiences).
+Met Experience Manager Assets kunt u snel elementen publiceren naar Experience Manager en Dynamic Media met de Assets-weergave. Dit zorgt ervoor dat u uw activa beheert en dan hen publiceert gebruikend de [ mening van Assets zonder omschakeling aan de mening Admin ](/help/assets/overview.md##persona-based-experiences).
 
 De weergave Experience Manager Assets biedt de flexibiliteit om elementen tegelijkertijd naar AEM of Dynamic Media te publiceren. U kunt elementen publiceren tijdens het uploaden, bladeren en zoeken in elementen. Al deze opties voor het publiceren van elementen worden in dit artikel uitgebreid uitgelegd.
 
@@ -24,18 +24,18 @@ De weergave Experience Manager Assets biedt de flexibiliteit om elementen tegeli
 
 Configureer deze instellingen om de publicatieopties voor AEM en Dynamic Media weer te geven:
 
-* Als u de publicatieopties voor Dynamic Media wilt weergeven, configureert u de volgende instellingen met de Admin-weergave:
+* Als u de publicatieopties voor Dynamic Media wilt weergeven, configureert u de volgende instellingen in de beheerweergave:
 
-   * [ creeer een de wolkenconfiguratie van Dynamic Media ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
-   * Stel de Dynamic Media Publish-modus in op mapniveau. U kunt deze instellingen configureren tijdens het maken van de Dynamic Media-cloudconfiguratie. Om die montages op omslag-niveau te beschrijven, zie [ Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/dynamic-media/selective-publishing.md) vormen.
+   * [ creeer een configuratie van de Wolk van Dynamic Media ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * Stel de Dynamic Media Publish-modus in op mapniveau. U kunt deze instellingen ook configureren tijdens het maken van de Dynamic Media Cloud-configuratie. Om die montages op omslag-niveau te beschrijven, zie [ Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/dynamic-media/selective-publishing.md) vormen.
 
-* Om de publicatieopties voor AEM te bekijken, moet u AEM vormen publiceert eindpunt voor uw milieu.
+* Als u de publicatieopties voor AEM wilt weergeven, moet u het AEM voor uw omgeving configureren.
 
 ## Publish Assets tijdens uploaden {#piblish-assets-during-upload}
 
 U kunt elementen publiceren naar AEM en Dynamic Media terwijl u elementen uploadt naar een map. De publicatieopties die worden weergegeven, zijn afhankelijk van de Dynamic Media-publicatiemodus die is ingesteld voor de map waarnaar de elementen worden geüpload. De Dynamic Media-publicatiemodus kan worden ingesteld op:
 
-* **op activering:** wanneer de activa aan deze omslag worden geupload, moet u uitdrukkelijk de activa van publiceren eerst alvorens een verbinding URL/Embed wordt verstrekt.
+* **op activering:** wanneer de activa aan deze omslag worden geupload, moet u de activa eerst uitdrukkelijk publiceren alvorens een verbinding URL/Embed wordt verstrekt.
 
 * **Onmiddellijk:** wanneer de activa aan deze omslag worden geupload, neemt het systeem de activa in Experience Manager op en verstrekt direct URL/bedt.
 * **Selectieve Publish:** Assets wordt gepubliceerd aan uw keus van of Experience Manager of aan Dynamic Media voor levering in het openbare domein.
@@ -52,7 +52,7 @@ Om activa tijdens te publiceren upload aan een omslag met de Wijze van Dynamic M
 
 Om activa tijdens te publiceren upload aan een omslag met de Wijze van Dynamic Media Publish die aan **wordt geplaatst Onmiddellijk**:
 
-1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De sectie van de Opties van Publish toont de **DM Wijze van Publish** als **Onmiddellijk**.
+1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De sectie van de Opties van Publish toont de **wijze van Publish DM** als **Onmiddellijk**.
    ![ dossier uploadt beeld - directe wijze ](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
@@ -82,7 +82,7 @@ Om activa tijdens te publiceren upload aan een omslag met de Wijze die van Dynam
 Als u elementen wilt publiceren met behulp van het element, bladert u naar de pagina:
 
 1. Klik **Assets** in de **sectie van het Beheer van Assets** beschikbaar in de linkerruit.
-2. Selecteer de activa of de omslag(en) die u **Publish** moet publiceren en klikken.
+2. Selecteer één of meerdere activa of omslagen die u moet publiceren en **Publish** klikken.
 3. Selecteer **AEM** en klik **Publish** om activa aan AEM en Dynamic Media te publiceren.
    ![ activa doorbladeren ](/help/assets/assets/browse-uactivation-immediate.svg)
 U kunt geen omslag publiceren die de Wijze heeft van Dynamic Media Publish die aan **Selectief het Publiceren wordt geplaatst.** Alle andere geselecteerde mappen of elementen worden na het selecteren van AEM gepubliceerd naar AEM en Dynamic Media.
@@ -100,15 +100,15 @@ De optie om naar Dynamic Media te publiceren op de pagina met zoekresultaten is 
 
    >[!NOTE]
    >
-   >Als u een omslag selecteert en **Publish** van de pagina van onderzoeksresultaten klikt, toont Experience Manager Assets een optie om activa aan AEM en niet Dynamic Media ongeacht de montages van de Wijze van Dynamic Media Publish voor de omslag te publiceren.
+   >Als u een omslag selecteert en **Publish** van de pagina van onderzoeksresultaten klikt dan toont Experience Manager Assets een optie om activa aan AEM en niet Dynamic Media ongeacht de montages van de Wijze van Dynamic Media Publish voor de omslag te publiceren.
 
 ## Publish-status controleren {#check-publish-status}
 
-De publicatiestatus controleren op een middel of een map:
+U kunt als volgt de gepubliceerde status voor een element of map controleren:
 
 1. Klik op **[!UICONTROL Assets]** in de sectie **[!UICONTROL Assets Management]** in het linkerdeelvenster.
-2. Schakelaar aan de Mening van de Lijst gebruikend de Schakelaar van de Mening. U kunt eigenschappen van elementen weergeven, zoals AEM Publish, Dynamic Media Publish, titel, grootte, dimensies, enzovoort.\
-   Als een activa of een omslag niet worden gepubliceerd, wordt de status voor **AEM Publish** en **Publish van Dynamic Media** kolommen getoond als **N/A.**
+2. Schakel over naar de lijstweergave met behulp van de View Switcher. U kunt de eigenschappen van elementen weergeven, zoals AEM publiceren, Dynamic Media Publish, titel, grootte, afmetingen enzovoort.\
+   Als een activa of een omslag niet worden gepubliceerd, wordt de status voor kolommen **AEM Publish** en **Dynamic Media Publish** getoond als **N/A.**
    ![ controle publiceert status1 ](/help/assets/assets/check-publish-status1.png)
 Als u de kolommen AEM Publish en Dynamic Media Publish niet kunt weergeven in de lijstweergave:
    1. Klik ![ montages ](/help/assets/assets/settings-icon.svg) en selecteer **AEM Publish** en **Publish van Dynamic Media** kolommen van de **Configurable dialoog van Kolommen**.
@@ -125,8 +125,8 @@ U kunt activa controleren publiceert status door activa te selecteren en **Detai
 De volgende mogelijkheden zijn momenteel buiten bereik wanneer u middelen publiceert naar AEM en Dynamic Media:
 
 * Publish-middelen naar AEM en Dynamic Media vanaf de pagina met gegevens over middelen.
-* Visualiseer de eindpunten waar de activa gepubliceerd worden gebruikend de Snelle tovenaar van Publish.
-* Voeg of verwijder meer middelen toe in de wizard Quick Publish.
+* Visualiseer de eindpunten waar de activa gebruikend de Snelle tovenaar van Publish worden gepubliceerd.
+* Voeg of verwijder meer elementen toe aan de wizard Quick Publish.
 * Een pagina om gepubliceerde elementen weer te geven.
 * De mogelijkheid om Dynamic Media URL te kopiëren of te plakken op elementniveau (als de elementen naar Dynamic Media worden gepubliceerd).
 * De mogelijkheid om verwijzingen (elementen, tags, enzovoort) te publiceren tijdens het publiceren naar AEM.
