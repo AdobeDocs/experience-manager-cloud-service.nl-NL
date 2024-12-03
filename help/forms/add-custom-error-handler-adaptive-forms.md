@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2292'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ Gebruikend de ](https://experienceleague.adobe.com/docs/experience-manager-65/fo
 
 Gebruikend de Redacteur van de Regel, kunt u:
 * [Standaardfouthandlerfunctie toevoegen](#add-default-errror-handler)
-* [Aangepaste fouthandlerfunctie toevoegen](#add-custom-errror-handler)
+* [Aangepaste fouthandlerfunctie toevoegen](#add-custom-error-handler-function)
 
 
 ### Standaardfouthandlerfunctie toevoegen {#add-default-errror-handler}
@@ -208,7 +208,7 @@ Als resultaat van deze regel, de waarden u voor **identiteitskaart van het Huisd
 
 ![ toon het standaardfoutenbericht wanneer u een standaardfoutenmanager in een vorm toevoegt om foutenreacties te behandelen ](/help/forms/assets/default-error-message.png)
 
-### Aangepaste fouthandlerfunctie toevoegen {#add-custom-errror-handler}
+### Aangepaste fouthandlerfunctie toevoegen
 
 U kunt een aangepaste fouthandlerfunctie toevoegen om een aantal van de volgende handelingen uit te voeren:
 
@@ -222,14 +222,12 @@ De manager van de douanefout is een functie (de Bibliotheek van de Cliënt) die 
 Om te begrijpen hoe te om een manager van de douanefout tot stand te brengen en te gebruiken die de [ Invoke dienst van de Redacteur van de Regel gebruikt ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) actie, neem een voorbeeld van AanpassingsVorm met twee gebieden, **Huididentiteitskaart** en **Naam van Huisdier** en gebruik een manager van de douanefout bij het **Huisdier ID** gebied om diverse fouten te controleren die door het eindpunt van REST wordt teruggegeven dat wordt gevormd om een externe dienst aan te halen; voorbeeld, `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
 
 Voer de volgende stappen uit om een aangepaste fouthandler toe te voegen en te gebruiken in een adaptief formulier:
-1. [Aangepaste functie toevoegen voor fouthandler](#1-add-custom-function-for-error-handler)
+1. [Aangepaste functie toevoegen voor fouthandler](#1-add-the-custom-function-for-the-error-handler)
 2. [Gebruik de Redacteur van de Regel om de manager van de douanefout te vormen](#use-custom-error-handler)
 
 #### 1. Voeg de aangepaste functie voor de fouthandler toe
 
->[!NOTE]
->
-> Leren hoe te om douanefuncties toe te voegen, klik [ creeer douanefuncties in een Aanpassings Vorm die op de Componenten van de Kern ](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function) wordt gebaseerd.
+Leren hoe te om douanefuncties toe te voegen, klik [ creeer douanefuncties in een Aanpassings Vorm die op de Componenten van de Kern ](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function) wordt gebaseerd.
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,6 +256,20 @@ Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopbal
        }
    ```
 
+   >[!NOTE]
+   >
+   > * Om de standaardfoutenmanager van uw manager van de douanefout te roepen, wordt de volgende lijn van de steekproefcode gebruikt: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * Voeg in het `.content.xml` -bestand de eigenschappen `allowProxy` en `categories` toe om de aangepaste fouthandler-clientbibliotheek in een adaptief formulier te gebruiken.
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       Bijvoorbeeld, in dit geval, [ douane-errorhandler-name ] wordt verstrekt als `customfunctionsdemo`.
+
+
+1. Voeg de wijzigingen in de opslagplaats toe, wijs deze toe en duw ze op.
+
+<!--
+
 <!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
@@ -271,22 +283,7 @@ Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopbal
 3. Save the `js.txt` file.    
 The created folder structure looks like:
 
-    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
-
-
-    >[!NOTE] 
-    > 
-     > * Om de standaardfoutenmanager van uw manager van de douanefout te roepen, wordt de volgende lijn van de steekproefcode gebruikt: ` guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) ` 
-     > * In het `.content.xml- dossier, voeg ` allowProxy ` toe `- `- `- `- eigenschappen ` en categorieën ` `&#39; eigenschappen `&#39; om douanefhandler te gebruiken in een adaptief formulier.
-    >
-    >   * ` allowProxy = [Boolean]true`
-    >   * ` Categ= customfunctionsdemo`
-    >       Bijvoorbeeld, in dit geval, wordt [douane-errorhandler-name] verstrekt als &quot;customfunctionsdemo `.
-
-
-1. Voeg de wijzigingen in de opslagplaats toe, wijs deze toe en duw ze op.
-
-<!--
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
     using the below commands:
          
     ```javascript
@@ -295,8 +292,8 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
-
 -->
+
 1. [ stel de pijpleiding in werking.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de manager van de douanefout beschikbaar in uw Adaptieve redacteur van de Regel van de Vorm. Nu, begrijpen hoe te om een manager van de douanefout te vormen en te gebruiken gebruikend de Invoke van de Redacteur van de Regel dienst in AEM Forms.

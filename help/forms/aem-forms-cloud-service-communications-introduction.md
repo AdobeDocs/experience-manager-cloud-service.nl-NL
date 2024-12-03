@@ -5,7 +5,7 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 1%
@@ -33,6 +33,9 @@ De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U 
 * HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen.
 
 * een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant-aangewezen gegevensbewaarplaatsen, die mededelingen hoogst veilig maken.
+
+De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden en uploaden naar Postman om de functionaliteit van de API&#39;s te controleren.
+
 
 <!-- 
 ![A sample credit card statement](assets/statement.png)
@@ -304,8 +307,6 @@ De verschillende mogelijkheden van gebruiksrechten voor het uitbreiden van de di
 
 * **Bericht**: Het bericht dat binnen Adobe Acrobat Reader wordt getoond bij het openen van een document van de PDF met één of meerdere toegepaste gebruiksrechten.
 * **Ontgrendel Wachtwoord**: Het wachtwoord dat voor het openen van een gecodeerd document van PDF wordt vereist. Dit is doorgaans het wachtwoord voor het openen van het document, maar als het PDF-document extra wordt beveiligd door een wachtwoord voor machtigingen, kan een van beide worden gebruikt om het document te openen.
-
-De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden en uploaden naar Postman om de functionaliteit van de API&#39;s te controleren.
 
 ## Typen communicatie-API&#39;s {#types}
 
