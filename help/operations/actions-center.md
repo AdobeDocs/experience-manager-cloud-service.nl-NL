@@ -4,9 +4,9 @@ description: Gebruik het actiecentrum om incidenten en andere belangrijke inform
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -86,4 +86,5 @@ In de volgende tabel worden de berichttypen weergegeven die momenteel worden ond
 | Gebruikers die rechtstreeks aan een aangepaste groep zijn toegevoegd | Proactief | Gebruikers moeten worden toegevoegd aan relevante IMS-groepen en deze IMS-groepen moeten worden toegevoegd als leden van AEM groepen. Lijn met [ IMS beste praktijken ](/help/security/ims-support.md) uit | |
 | Ontbrekende JCR-inhoud | Proactief | Voeg het ontbrekende knooppunt voor JCR-inhoud toe. Verwijs naar [ de documentatie van de Validator van de Inhoud van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Voltooide workflows niet gewist | Proactief | Minimaliseer het aantal workflowinstanties en verbeter de prestaties door workflowinstanties van meer dan 90 dagen oud te wissen. Leer hoe te [ om onderhoudstaken ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) te vormen | |
-| Ontbrekend Sling-brontype in pagina | Proactief | Ontbrekend knooppunt voor Sling-resource toevoegen. Verwijs naar [ de documentatie van de Validator van de Inhoud van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| Ontbrekend Sling-brontype in pagina | Proactief | Ontbrekend knooppunt voor Sling-resource toevoegen. Verwijs naar [ de documentatie van de Validator van de Inhoud van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Langzame query | Proactief | Repareer langzame vragen door correcte indexdefinities te bepalen zoals die door het [ JCQ vraagbedriegblad ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) worden voorgesteld |
