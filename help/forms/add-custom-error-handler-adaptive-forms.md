@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2305'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Om te begrijpen hoe te om een standaardfoutenmanager te gebruiken die de ](https
 1. Selecteer **[!UICONTROL Create]** .
 1. Creeer een voorwaarde in **wanneer** sectie van de regel. Bijvoorbeeld, **wanneer [ Naam van het gebied van identiteitskaart van het Huisdier]** wordt veranderd. Uitgezocht wordt veranderd van de **Uitgezochte Staat** drop-down lijst.
 1. In **toen** sectie, selecteer **[!UICONTROL Invoke Service]** van **Uitgezochte de drop-down lijst van de Actie**.
-1. Selecteer de dienst van a **Post** en zijn overeenkomstige gegevensbindingen van de **3} sectie van de Input {.** Bijvoorbeeld, om **identiteitskaart van het Huisdier** te bevestigen, selecteer de dienst van a **Post** als **GET /pet/ {petId}** en selecteer **Huisdier identiteitskaart** in de **10} sectie van de Input.**
+1. Selecteer de dienst van het a **Post** en zijn overeenkomstige gegevensbindingen van de **3} sectie van de Input {.** Bijvoorbeeld, om **identiteitskaart van het Huisdier** te bevestigen, selecteer de dienst van het a **Post** als **GET /pet/ {petId}** en selecteer **Huisdier identiteitskaart** in de **10} sectie van de Input.**
 1. Selecteer de gegevensbindingen van de **sectie van de Output**. Selecteer **Naam van Huisdier** in de **sectie van de Output**.
 1. Selecteer **[!UICONTROL Default Error Handler]** van de **Handler van de Fout** sectie.
 1. Klik op **[!UICONTROL Done]**.
@@ -222,19 +222,24 @@ De manager van de douanefout is een functie (de Bibliotheek van de Cliënt) die 
 Om te begrijpen hoe te om een manager van de douanefout tot stand te brengen en te gebruiken die de [ Invoke dienst van de Redacteur van de Regel gebruikt ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) actie, neem een voorbeeld van AanpassingsVorm met twee gebieden, **Huididentiteitskaart** en **Naam van Huisdier** en gebruik een manager van de douanefout bij het **Huisdier ID** gebied om diverse fouten te controleren die door het eindpunt van REST wordt teruggegeven dat wordt gevormd om een externe dienst aan te halen; voorbeeld, `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
 
 Voer de volgende stappen uit om een aangepaste fouthandler toe te voegen en te gebruiken in een adaptief formulier:
-1. [ creeer een manager van de douanefout ](#create-custom-error-message)
-1. [Gebruik de Redacteur van de Regel om de manager van de douanefout te vormen](#use-custom-error-handler)
+1. [Aangepaste functie toevoegen voor fouthandler](#1-add-custom-function-for-error-handler)
+2. [Gebruik de Redacteur van de Regel om de manager van de douanefout te vormen](#use-custom-error-handler)
 
-#### 1. Een aangepaste fouthandler maken {#create-custom-error-message}
+#### 1. Voeg de aangepaste functie voor de fouthandler toe
 
-Voer de volgende stappen uit om een aangepaste foutfunctie te maken:
+>[!NOTE]
+>
+> Leren hoe te om douanefuncties toe te voegen, klik [ creeer douanefuncties in een Aanpassings Vorm die op de Componenten van de Kern ](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function) wordt gebaseerd.
 
-1. [ kloon uw as a Cloud Service Bewaarplaats van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Maak een map onder de map `[AEM Forms as a Cloud Service repository folder]/apps/` . Maak bijvoorbeeld een map met de naam `experience-league`
-1. Navigeer naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en maak een `ClientLibraryFolder` as `clientlibs` .
-1. Maak een map met de naam `js` .
-1. Navigeer naar de map `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` .
-1. Voeg een JavaScript-bestand toe, bijvoorbeeld `function.js` . Het bestand bevat de code voor aangepaste fouthandler.
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. Voeg de onderstaande code voor aangepaste fouthandler bijvoorbeeld toe aan het JavaScript-bestand `function.js` . Het bestand bevat de code voor aangepaste fouthandler.
 Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopballen te tonen, die van het de diensteindpunt van REST, in de browser console worden ontvangen.
 
    ```javascript
@@ -253,43 +258,45 @@ Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopbal
        }
    ```
 
-   Om de standaardfoutenmanager van uw manager van de douanefout te roepen, wordt de volgende lijn van de steekproefcode gebruikt:
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > Voeg in het `.content.xml` -bestand de eigenschappen `allowProxy` en `categories` toe.
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >Bijvoorbeeld, in dit geval, [ douane-errorhandler-name ] wordt verstrekt als `customfunctionsdemo`.
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. Sla het `function.js` -bestand op.
-1. Navigeer naar de map `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` .
-1. Voeg een tekstbestand toe als `js.txt` . Het bestand bevat:
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. Sla het `js.txt` -bestand op.\
-   De gemaakte mapstructuur ziet er als volgt uit:
 
-   ![ creeerde de Omslagstructuur van de Bibliotheek van de Cliënt ](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[!NOTE] 
+    > 
+     > * Om de standaardfoutenmanager van uw manager van de douanefout te roepen, wordt de volgende lijn van de steekproefcode gebruikt: ` guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) ` 
+     > * In het `.content.xml- dossier, voeg ` allowProxy ` toe `- `- `- `- eigenschappen ` en categorieën ` `&#39; eigenschappen `&#39; om douanefhandler te gebruiken in een adaptief formulier.
+    >
+    >   * ` allowProxy = [Boolean]true`
+    >   * ` Categ= customfunctionsdemo`
+    >       Bijvoorbeeld, in dit geval, wordt [douane-errorhandler-name] verstrekt als &quot;customfunctionsdemo `.
 
-   >[!NOTE]
-   >
-   > Meer over leren hoe te om douanefuncties tot stand te brengen, klik [ douanefuncties in de Redacteur van de Regel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 
-1. U kunt de wijzigingen in de opslagplaats toevoegen, vastleggen en doorvoeren met behulp van de onderstaande opdrachten:
+1. Voeg de wijzigingen in de opslagplaats toe, wijs deze toe en duw ze op.
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [ stel de pijpleiding in werking.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de manager van de douanefout beschikbaar in uw Adaptieve redacteur van de Regel van de Vorm. Nu, begrijpen hoe te om een manager van de douanefout te vormen en te gebruiken gebruikend de Invoke van de Redacteur van de Regel dienst in AEM Forms.
@@ -308,7 +315,7 @@ Een aangepaste fouthandler gebruiken met de handeling **[!UICONTROL Rule Editor'
 1. Selecteer **[!UICONTROL Create]** .
 1. Creeer een voorwaarde in **wanneer** sectie van de regel. Bijvoorbeeld, wanneer **[Naam van het gebied van identiteitskaart van het Huisdier]** wordt veranderd, wordt de uitgezochte **veranderd** van de **Uitgezochte Staat** drop-down lijst.
 1. In **toen** sectie, selecteer **[!UICONTROL Invoke Service]** van **Uitgezochte de drop-down lijst van de Actie**.
-1. Selecteer de dienst van a **Post** en zijn overeenkomstige gegevensbindingen van de **3} sectie van de Input {.** Bijvoorbeeld, om **identiteitskaart van het Huisdier** te bevestigen, selecteer de dienst van a **Post** als **GET /pet/ {petId}** en selecteer **Huisdier identiteitskaart** in de **10} sectie van de Input.**
+1. Selecteer de dienst van het a **Post** en zijn overeenkomstige gegevensbindingen van de **3} sectie van de Input {.** Bijvoorbeeld, om **identiteitskaart van het Huisdier** te bevestigen, selecteer de dienst van het a **Post** als **GET /pet/ {petId}** en selecteer **Huisdier identiteitskaart** in de **10} sectie van de Input.**
 1. Selecteer de gegevensbindingen van de **sectie van de Output**. Bijvoorbeeld, Uitgezochte **Naam van Huisdier** in de **sectie van de Output**.
 1. Selecteer **[!UICONTROL Custom Error Handler]** in de sectie **[!UICONTROL Error Handler]** .
 1. Klik op **[!UICONTROL Done]**.
