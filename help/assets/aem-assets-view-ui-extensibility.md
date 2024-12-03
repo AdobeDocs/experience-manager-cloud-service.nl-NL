@@ -4,9 +4,9 @@ description: Meer informatie over de UI-uitbreidingsmogelijkheden van AEM Assets
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ U kunt uw extensies toevoegen aan het niveau voor middelen, mappen en verzamelin
 >[!IMPORTANT]
 >
 > * De Uitbreidbaarheid UI van de Mening van AEM Assets is beschikbaar met [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md).
-> * U hebt de mogelijkheid om de gebruikersinterface van de Assets-weergave uit te breiden als Beta-release. Om vroege toegang tot de de meningsrekbaarheid van UI van Assets te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * Om toegang tot de uitbreidbaarheid van de meningUI van Assets te krijgen, [ creeer en verzend een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * U kunt feedback geven in de documentatie door de opties voor Gedetailleerde feedback uit te vouwen en op Een probleem melden te klikken.
 
 ## <a id="1"></a> Toegang tot Assets View
