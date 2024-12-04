@@ -4,9 +4,9 @@ description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acc
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
    ![ krijg uploadsleutel ](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >Het rapport kan nog steeds handmatig worden geüpload, maar met Upload Key wordt de bewerking gestroomlijnd. Het rapport kan niet handmatig worden geüpload in de Incognito-modus van de browser.
+   >Het rapport kan nog steeds handmatig worden geüpload, maar met Upload Key wordt de bewerking gestroomlijnd. Het rapport kan niet handmatig worden geüpload als het bestand een grootte heeft van ongeveer 200 MB of meer. Het rapport kan ook niet worden geüpload gebruikend browser Incognito wijze.
 
 1. Nadat een nieuw rapport is geupload, kunt u het rapport van de Analyse van Beste praktijken in CAM zien.
 

@@ -4,10 +4,10 @@ description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 31%
+source-wordcount: '2724'
+ht-degree: 30%
 
 ---
 
@@ -85,6 +85,9 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
 >[!NOTE]
 >U hebt de optie om automatisch over te slaan uploadt aan CAM door **te selecteren overslaat rapport auto uploadt aan CAM**. Als u verkiest om over te slaan, zult u het BPA- rapport als komma-gescheiden waardedossier manueel moeten downloaden en dan het dossier in CAM uploaden. Het wordt aanbevolen de optie Upload key te gebruiken omdat deze de bewerking stroomlijnt.
+
+>[!IMPORTANT]
+>Wanneer het manueel uploaden aan CAM, zijn de rapportgrootte beperkt tot ongeveer 200MB. Voor grotere rapporten moet u de automatische upload gebruiken.
 
 1. **produceer** knoop actief wordt wanneer een geldige sleutel wordt verstrekt. Klik op **produceren** om rapportgeneratie in werking te stellen.
 
