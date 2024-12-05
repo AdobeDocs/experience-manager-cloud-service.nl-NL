@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Als u het certificaattype *beheerde Adobe* selecteerde, voltooi de volgende stap
 
 Om het domein in gebruik te verifiëren, moet u een NAAM toevoegen en verifiëren.
 
-Een `CNAME` of een verslag, zodra provisioned, leidt al verkeer van Internet voor het domein aan waar het richt. Als die plaats niet provisioned is om het verkeer te dienen, is er een stroomonderbreking. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en u klaar bent om live te gaan.
+Een `CNAME` recordtype of een `A` recordtype leidt, zodra provisioned, al verkeer van Internet voor het domein aan waar het richt. Als die plaats niet provisioned is om het verkeer te dienen, is er een stroomonderbreking. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en u klaar bent om live te gaan.
 
 Als u deze instellingen wilt configureren, moet u bepalen of een `CNAME` - of apex-record moet zijn geconfigureerd om uw aangepaste domeinnaam te laten verwijzen naar de Cloud Manager-domeinnaam. De volgende secties van dit document kunnen u helpen bepalen welk type van verslag voor uw DNS configuratie aangewezen is.
 
@@ -130,7 +130,7 @@ Voeg de volgende `A` verslagen aan DNS montages van uw domein als uw domeinlever
 
 >[!TIP]
 >
->*CNAME* of *het Verslag van A* kan op de regerende DNS server worden geplaatst om u tijd te bewaren.
+>Het *verslag van de NAAM* of *het verslag van A* kan op de regerende DNS server worden geplaatst om u tijd te bewaren.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

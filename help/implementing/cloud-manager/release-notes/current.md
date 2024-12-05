@@ -1,19 +1,18 @@
 ---
-title: Opmerkingen bij de release van Cloud Manager 2024.11.0 in Adobe Experience Manager as a Cloud Service
-description: Meer informatie over de release van Cloud Manager 2024.11.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2024.12.0 in Adobe Experience Manager as a Cloud Service
+description: Meer informatie over de release van Cloud Manager 2024.12.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager 2024.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2024.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Meer informatie over de release van Cloud Manager 2024.11.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Meer informatie over de release van Cloud Manager 2024.12.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,37 +20,42 @@ Meer informatie over de release van Cloud Manager 2024.11.0 in AEM (Adobe Experi
 
 ## Releasedatums {#release-date}
 
-De releasedatum voor Cloud Manager 2024.11.0 in AEM as a Cloud Service is 7 november 2024.
+De releasedatum voor Cloud Manager 2024.12.0 in AEM as a Cloud Service is donderdag 5 december 2024.
 
-De volgende geplande release is 5 december 2024.
+De volgende geplande release is januari 2024.
 
 ## Nieuwe functies {#what-is-new}
 
-* Ervaar de nieuwste innovaties op het gebied van Edge Delivery Services met AEM Cloud Service-now die u kunt verkennen in uw Sandbox-programma. [ Leer meer ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
-* De pagina met domeininstellingen in AEM Cloud Manager bevat nu een zoekfunctie waarmee u snel domeinen op naam kunt zoeken. U kunt trefwoorden in het zoekveld invoeren om overeenkomende domeinen te filteren en weer te geven, zodat u meerdere domeinen efficiënter kunt beheren. Bovendien, biedt de pagina statusfilters aan, zoals **Verified** en **niet Verified**, om de onderzoeksresultaten verder te verfijnen. <!-- (CMGR-62615) -->
+* **Java 21 steun:** de klanten kunnen nu naar keuze met Java 17 of Java 21 bouwen, die van prestatiesverbeteringen en nieuwe taaleigenschappen profiteren. Zie [ milieu bouwen ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor configuratiestappen, met inbegrip van het bijwerken van uw Maven projectbeschrijving, en bepaalde bibliotheekversies. Wanneer de versie voor samenstellen is ingesteld op Java 17 of Java 21, wordt voor de runtime standaard Java 21 gebruikt.
 
-![ gebied van het Onderzoek in de Montages van het Domein ](/help/implementing/cloud-manager/assets/domain-settings-search.png)
+  Vanaf februari 2025 upgraden sandboxen en ontwikkelomgevingen naar de Java 21-runtime, ongeacht de versie van de build (Java 8, 11, 17 of 21). Productieomgevingen volgen met een upgrade in april 2025.
+
+* **de verslagtypes van A:** Steun voor A verslagtypes is toegevoegd om Go Live Gereedheid voor domeinen te verbeteren gebruikend configuraties CDN in AEM Cloud Manager. U hebt nu de optie om levend te gaan door of een CNAME- verslagtype of een A- verslagtype toe te voegen dat IPs van Fastly vertegenwoordigt, die domein het verpletteren vereenvoudigen. Deze verbetering elimineert de beperking om zich alleen op CNAME- verslagen voor domeinopstelling met Fastly te baseren.
+
+  Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. <!-- CMGR-63076 -->
+
+* **voeg veelvoudige domeinen aan een Plaats van Edge Delivery toe:** u kunt veelvoudige domeinen, met inbegrip van zowel apex als niet-apex domeinen, aan een Plaats van Edge Delivery (EDS) in AEM Cloud Manager nu toevoegen. Deze verhoging verhelpt vroegere beperkingen die de capaciteit beperkten om veelvoudige domeinen met een oorsprong te associëren EDS. De update zorgt voor betere flexibiliteit voor het beheer van domeinconfiguraties en vereenvoudigt de Go Live-processen voor sites met complexe domeininstellingen. <!-- CMGR-63007 -->
+
+* **Geavanceerde het filtreren opties:** Geavanceerde het filtreren opties zijn geïntroduceerd op de uitvoeringspagina&#39;s van de Pijpleiding en SSL certificaatpagina&#39;s in AEM Cloud Manager. U kunt nu filteren op meerdere criteria, zodat u sneller toegang hebt tot relevante gegevens en de efficiëntie van de implementatie verbetert. <!-- CMGR-26263 -->
+
+   * **activiteiten die van de Pijpleiding filtreren:** omvat pijpleidingsactiviteit het filtreren, latend u onderzoeksresultaten voor specifieke pijpleidingsactiviteiten verfijnen. Beschikbare filters omvatten pijpleiding, actie, en status.
+     ![ Activiteiten die van de Pijpleiding ](/help/implementing/cloud-manager/assets/filters-pipeline.png) filtreren
+
+
+   * **SSL certificaten het fileren:** omvat SSL certificaten het filtreren, latend u onderzoeksresultaten voor specifieke certificaten verfijnen. Beschikbare filters zijn SSL-certificaatnaam, -eigendom en -status.
+     ![ SSL certificaat het filtreren ](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
 Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
 
-### AEM {#aem-home}
-
-AEM Home introduceert een gecentraliseerd beginpunt voor het beheren van inhoud, middelen, en plaatsen binnen Adobe Experience Manager. AEM Home is ontworpen om een persoonlijke ervaring te bieden en kunt u naadloos door het AEM ecosysteem navigeren op basis van uw rollen en doelen. Als gids biedt deze informatie belangrijke inzichten en aanbevolen acties om u te helpen uw doelstellingen efficiënt te verwezenlijken. Met een duidelijke, persoonlijke lay-out zorgt AEM Home voor snelle toegang tot essentiële gereedschappen en ondersteunt het een gestroomlijnde en effectieve ervaring voor alle AEM functies.
-
-Beschikbaar voor vroege gebruikers biedt AEM Home een geoptimaliseerde ervaring die is gericht op het verbeteren van workflows, het prioriteren van doelen en het leveren van resultaten. Door in te schakelen kunt u de ontwikkeling van AEM huis beïnvloeden door feedback te geven die helpt de toekomst te bepalen en de waarde ervan voor de hele AEM gemeenschap verbetert.
-
-Als u in het testen van dit nieuwe vermogen en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-AemHome@adobe.com ](mailto:Grp-AemHome@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u de volgende informatie opneemt:
-
-* De rol die het beste bij uw profiel past: auteur van inhoud, ontwikkelaar, eigenaar van bedrijf, beheerder of andere (geef een beschrijving op).
-* Uw primaire AEM toegangsoppervlak: AEM Sites, AEM Assets, AEM Forms, Cloud Manager of Overige (geef een beschrijving op).
-
 ### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de opslagplaats van de Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen, zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de opslagplaats van de Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+
+De pijpleidingen die externe bewaarplaatsen gebruiken (exclusief GitHub-ontvangen degenen) en de **Trekker van de Plaatsing** aan **wordt geplaatst op de Veranderingen van het Git** beginnen nu automatisch.
 
 Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toevoegen.
 
@@ -63,15 +67,10 @@ Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager
 
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:Grp-CloudManager_BYOG@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
 
-
 ## Bugfixes
 
-* Een recente update verhelpt een probleem in SonarQube waarbij in bepaalde gevallen hardcoded wachtwoorden niet werden gedetecteerd. De correctie bevat nu een uitgebreide patrooncontrole en wordt uitgelijnd op de standaarddetectienormen in SonarQube. <!-- CMGR-62682 -->
-* Wanneer u probeert een SSL-certificaat bij te werken in Cloud Manager, wordt een onbekende fout weergegeven nadat u op **[!UICONTROL Update]** in het dialoogvenster **[!UICONTROL View & Update SSL Certificate]** hebt geklikt. <!-- CMGR-62848 -->
-* In Cloud Manager zouden updates van SSL-certificaten mislukken met de fout &quot;Het nieuwe certificaat komt niet overeen met de bestaande domeinen&quot;, zelfs als de domeinen identiek waren maar verschillen in hoofdletters of kleine letters hadden. In de update worden domeinen nu herkend als hoofdlettergevoelig, uitgelijnd op RFC-standaarden. <!-- CMGR-62844 -->
-* In Cloud Manager, bleven IP de banden van de Lijst van gewenste personen in een lopende staat vastzitten omdat de buitenlandse zeer belangrijke verbindingen aan domeinconfiguraties ontbraken. De moeilijke situatie verzekert nu IP de bindingen van de Lijst van gewenste personen correct met bijbehorende domeinconfiguraties. <!-- CMGR-62838 -->
-* Cloud Manager valideert de OCSP-status (Online Certificate Status Protocol) van een SSL-certificaat. Adobe raadt u aan om de integriteit van uw certificaat ook lokaal te valideren met een hulpprogramma zoals `openssl verify -untrusted intermediate.pem certificate.pem` voordat u het certificaat installeert via Cloud Manager. Voor meer details, zie de [ SSL documentatie van certificaatvereisten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements). <!-- CMGR-62341  -->
-
+* Er is een beveiliging toegevoegd om te voorkomen dat domeinen met actieve domeintoewijzingen in AEM Cloud Manager worden verwijderd. Gebruikers die dergelijke domeinen proberen te verwijderen, ontvangen nu een foutbericht waarin ze worden opgedragen eerst de domeintoewijzing te verwijderen voordat ze verdergaan met de domeinverwijdering. Deze workflow zorgt voor domeinintegriteit en voorkomt onbedoelde onjuiste configuraties. <!-- CMGR-63033 -->
+* Zelden konden gebruikers geen domeinnaam toevoegen of een SSL-certificaat bijwerken vanwege een onjuiste status die was gekoppeld in de betreffende gevallen. <!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->
