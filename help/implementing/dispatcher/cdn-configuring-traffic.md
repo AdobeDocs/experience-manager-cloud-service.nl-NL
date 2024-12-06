@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## Responstransformaties {#response-transformations}
 
-De de transformatieregels van de Reactie staan u toe om kopballen van de uitgaande reacties van CDN te plaatsen en unset. Zie ook het bovenstaande voorbeeld voor het verwijzen naar een variabele die eerder is ingesteld in een aanvraagtransformatieregel.
+De de transformatieregels van de Reactie staan u toe om kopballen van de uitgaande reacties van CDN te plaatsen en unset. Zie ook het bovenstaande voorbeeld voor het verwijzen naar een variabele die eerder is ingesteld in een aanvraagtransformatieregel. De statuscode van de reactie kan ook worden ingesteld.
 
 Voorbeeld van configuratie:
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **Acties**
@@ -291,6 +300,7 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
 | **plaats** | reqHeader, waarde | Stelt een opgegeven header in op een bepaalde waarde in de reactie. |
+|          | respProperty, value | Hiermee wordt een eigenschap response ingesteld. Ondersteunt alleen de eigenschap &quot;status&quot; om de statuscode in te stellen. |
 | **unset** | respHeader | Hiermee verwijdert u een opgegeven koptekst uit het antwoord. |
 
 ## Oorspronkelijke kiezers {#origin-selectors}
