@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d424b6f2e0a2ec40ab607dcbdcba3120c7f45a58
+source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1802'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,11 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-<!-- ## Release Video {#release-video}
+## Video vrijgeven {#release-video}
 
-Have a look at the November 2024 Release Overview video for a summary of the features added in the 2024.11.0 release:
+Heb een blik bij de Video van het Overzicht van de Versie van november 2024 voor een samenvatting van de eigenschappen die in de versie 2024.11.0 worden toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
