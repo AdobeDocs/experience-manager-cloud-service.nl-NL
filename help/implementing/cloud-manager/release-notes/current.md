@@ -3,9 +3,10 @@ title: Opmerkingen bij de release voor Cloud Manager 2024.12.0 in Adobe Experien
 description: Meer informatie over de release van Cloud Manager 2024.12.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -22,17 +23,20 @@ Meer informatie over de release van Cloud Manager 2024.12.0 in AEM (Adobe Experi
 
 De releasedatum voor Cloud Manager 2024.12.0 in AEM as a Cloud Service is donderdag 5 december 2024.
 
-De volgende geplande release is januari 2024.
+De volgende geplande release is 23 januari 2025.
+
 
 ## Nieuwe functies {#what-is-new}
 
-* **Java 21 steun:** de klanten kunnen nu naar keuze met Java 17 of Java 21 bouwen, die van prestatiesverbeteringen en nieuwe taaleigenschappen profiteren. Zie [ milieu bouwen ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor configuratiestappen, met inbegrip van het bijwerken van uw Maven projectbeschrijving, en bepaalde bibliotheekversies. Wanneer de versie voor samenstellen is ingesteld op Java 17 of Java 21, wordt voor de runtime standaard Java 21 gebruikt.
+<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
-  Vanaf februari 2025 upgraden sandboxen en ontwikkelomgevingen naar de Java 21-runtime, ongeacht de versie van de build (Java 8, 11, 17 of 21). Productieomgevingen volgen met een upgrade in april 2025.
+    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
 * **de verslagtypes van A:** Steun voor A verslagtypes is toegevoegd om Go Live Gereedheid voor domeinen te verbeteren gebruikend configuraties CDN in AEM Cloud Manager. U hebt nu de optie om levend te gaan door of een CNAME- verslagtype of een A- verslagtype toe te voegen dat IPs van Fastly vertegenwoordigt, die domein het verpletteren vereenvoudigen. Deze verbetering elimineert de beperking om zich alleen op CNAME- verslagen voor domeinopstelling met Fastly te baseren.
 
   Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. <!-- CMGR-63076 -->
+
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
 * **voeg veelvoudige domeinen aan een Plaats van Edge Delivery toe:** u kunt veelvoudige domeinen, met inbegrip van zowel apex als niet-apex domeinen, aan een Plaats van Edge Delivery (EDS) in AEM Cloud Manager nu toevoegen. Deze verhoging verhelpt vroegere beperkingen die de capaciteit beperkten om veelvoudige domeinen met een oorsprong te associëren EDS. De update zorgt voor betere flexibiliteit voor het beheer van domeinconfiguraties en vereenvoudigt de Go Live-processen voor sites met complexe domeininstellingen. <!-- CMGR-63007 -->
 
