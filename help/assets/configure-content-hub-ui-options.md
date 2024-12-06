@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,8 @@ Als beheerder, beheer de volgende configuratieopties voor uw gebruikers:
 * [Branding](#configure-branding-content-hub)
 
 * [Verlopen Assets](#expired-assets-content-hub)
+
+* [Uitvoeringen](#renditions-content-hub)
 
 * [Aangepaste koppelingen](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ U kunt de zeer belangrijke meta-gegevensgebieden ook vormen die u op de **Kaart 
 
 Op dezelfde manier geeft de klik ![ ](/help/assets/assets/edit-content-hub.svg) uit die naast elk beschikbaar bezit beschikbaar is, om het even welke vereiste wijzigingen te maken of ![ schrapping ](/help/assets/assets/delete-content-hub.svg) te klikken om het even welk bestaand meta-gegevensbezit te schrappen. Klik **sparen** na het aanbrengen van alle wijzigingen om de veranderingen toe te passen.
 
-
 ### Zoeken {#configure-metadata-search-content-hub}
 
 Beheerders kunnen de metagegevensvelden definiëren die worden doorzocht wanneer een gebruiker een zoekcriterium opgeeft op Content Hub. Voer de volgende stappen uit:
@@ -223,6 +224,23 @@ Als de beheerder downloaden heeft ingeschakeld, kunnen de Content Hub-gebruikers
 
 Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hub ook elementen die binnen de komende 15 dagen verlopen met behulp van het `Expiring in n days` -bericht op de Asset Card.
 
+### Uitvoeringen {#renditions-content-hub}
+
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub staat het downloaden van statische uitvoeringen toe. Statische uitvoeringen zijn verschillende weergaven van het oorspronkelijke bestand van een element die native worden gegenereerd. Voorbeelden zijn miniaturen of geoptimaliseerde mobiele uitvoeringen. Beheerders kunnen de beschikbaarheid van elementuitvoeringen beheren en beheren en bepalen of u oorspronkelijke elementen kunt downloaden of niet.
+
+Voer daartoe de volgende stappen uit:
+
+Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Renditions]**. De volgende opties zijn beschikbaar:
+
+* Schakel de schakeloptie [!UICONTROL Enable availability of static renditions] in om alle statische uitvoeringen zichtbaar te maken op Content Hub.
+
+* Schakel **[!UICONTROL Allow users to download original assets]** in of uit om te bepalen of de oorspronkelijke elementen kunnen worden gedownload.
+
+  ![ vorm vertoningen op Content Hub ](assets/config-renditions.png)
+
+Voor informatie over om statische vertoningen in Content Hub te bekijken en te downloaden, zie [ downloadactiva in Content Hub ](/help/assets/download-assets-content-hub.md).
 
 ### Aangepaste koppelingen {#configure-custom-links-content-hub}
 

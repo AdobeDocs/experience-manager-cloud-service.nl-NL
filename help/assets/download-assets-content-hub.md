@@ -3,9 +3,9 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28424cb184d0378669498c78e571961227f6539a
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,52 +24,81 @@ ht-degree: 0%
 >
 >[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Met de Content Hub kunt u uw middelen downloaden en delen. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. De Content Hub verbetert de toegankelijkheid en het aanpassingsvermogen voor een effectieve verdeling van activa.
+Met de Content Hub kunt u uw middelen downloaden en delen. In de Content Hub-gebruikersinterface worden alleen goedgekeurde elementen weergegeven. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. De Content Hub verbetert de toegankelijkheid en het aanpassingsvermogen voor een effectieve verdeling van activa.
 
-Met de Content Hub kunt u een of meerdere middelen downloaden. De oorspronkelijke versies van het element worden gedownload.
+Met Content Hub kunt u een of meer elementen en de beschikbare uitvoeringen downloaden.
 
-## Eén gelicentieerd bedrijfsmiddel downloaden {#single-download-asset}
+## Een middel en de bijbehorende uitvoeringen downloaden {#download-asset-renditions}
 
-Selecteer een activa en klik ![ download ](/help/assets/assets/download-icon.svg) van het hoogste spoor. In het dialoogvenster Elementen downloaden wordt de licentie van het element weergegeven. Accepteer de verlenen van vergunningen voorwaarden en klik **Download**.
-Alternatief, klik ![ download ](/help/assets/assets/download-icon.svg) in de activakaart om de activa te downloaden.
+Voer de volgende stappen uit om een element en de bijbehorende uitvoeringen te downloaden:
 
-### Eén gelicentieerd element downloaden uit het dialoogvenster Element {#single-download-from-asset-dialog-box}
+1. Klik op het element om de eigenschappen ervan weer te geven.
 
-1. Klik op de elementminiatuur. Het dialoogvenster Middelen wordt weergegeven.
-1. Klik ![ download ](/help/assets/assets/download-icon.svg) van de meest rechtse toolbar. In het downloadvenster worden de elementuitvoeringen en het selectievakje voor het accepteren van licentievoorwaarden en -voorwaarden weergegeven.
-   ![ enig-download-dialoog-doos ](/help/assets/assets/asset-dialog-box-for-single-download.png)
-   * Klik op de koppeling voor de voorwaarden en bepalingen om de licentievoorwaarden in het linkerdeelvenster weer te geven.
+1. Klik ![ download ](/help/assets/assets/download-icon.svg) om het downloadproces te beginnen. In het deelvenster Download worden alle beschikbare elementuitvoeringen weergegeven (Origineel + andere uitvoeringen).
+
+   >[!NOTE]
+   >
+   De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+
+1. Selecteer de vertoning(en) en klik op **[!UICONTROL Download]** .
+
+   ![ Download enige activa vertoningen ](/help/assets/assets/download-single-asset-renditions.png)
+
+
+Als u een middel met licentie downloadt, selecteert u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** en klikt u op **[!UICONTROL Download]** . U kunt ook op **[!UICONTROL terms & conditions]** klikken om de elementlicentie weer te geven. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de as a Cloud Service ontwerpomgeving van Assets. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
+
+## Meerdere elementen en de bijbehorende uitvoeringen downloaden {#download-multiple-assets-renditions}
+
+Voer de volgende stappen uit om meerdere elementen en de bijbehorende uitvoeringen te downloaden:
+
+1. Selecteer de activa en klik ![ download ](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. In het scherm [!UICONTROL Download assets] worden alle geselecteerde elementen weergegeven.
+1. Klik op **[!UICONTROL Download]** om een keuze te maken uit de verschillende downloadopties om te beginnen met downloaden:
+
+   * **Downloaden[!UICONTROL Originals]**: selecteer deze optie om de geselecteerde elementen in het oorspronkelijke formulier te downloaden.
+   * **Downloaden[!UICONTROL Renditions only]**: selecteer deze optie om alle beschikbare vertoningen van de activa behalve de originele activa te downloaden.
+   * **Downloaden[!UICONTROL Originals & All renditions]**: selecteer deze optie om zowel het origineel als de vertoningen van de geselecteerde elementen te downloaden.
+
+     ![ Download veelvoudige vertoningen ](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     Het selectievakje Voorwaarden en Voorwaarden wordt alleen weergegeven voor gelicentieerde elementen. Bovendien wordt in het dialoogvenster voor middelen alleen een voorvertoning weergegeven van de licentievoorwaarden voor middelen met goedgekeurde licenties. [ keur de vergunning van activa ](/help/assets/approve-assets-content-hub.md) vóór het downloaden goed om de voorproef van het verlenen van vergunningen termijnen in de doos van de activadialoog toe te laten.
+     De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
 
-   * Klik de **Oorspronkelijke Doos van de Vertoning** om op de originele activavertoning in de linkerruit terug te keren.
-1. Accepteer de vergunningsvoorwaarden (voor vergunning gegeven activa) en klik **Download** om de activa te downloaden.
+   Als een van de geselecteerde elementen een onder licentie geplaatst element is, klikt u op de licentie van het element in het linkerdeelvenster om de voorvertoning weer te geven. Hierin kunt u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** selecteren en vervolgens op **[!UICONTROL Download]** klikken. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de as a Cloud Service ontwerpomgeving van Assets. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
-## Download Multiple Licence Assets{#multi-download}
-
-1. Selecteer de activa en klik ![ download ](/help/assets/assets/download-icon.svg) van het hoogste spoor. Het dialoogvenster dat wordt weergegeven, is afhankelijk van het feit of de downloadlijst verlopen elementen of alleen niet-verlopen elementen bevat. <br/>
-   **Download verlopen de dialoogdoos van activa:** Dit dialoogvakje toont de verlopen voorproef van activa samen met hun vervaldatum in de linkerruit. Het aantal verlopen elementen in het rechterdeelvenster dat in totaal is geselecteerd, wordt uitgedrukt als een waarde die lager is dan het aantal geselecteerde elementen. Klik **met alle activa** te werk gaan om verlopen activa met andere activa (als heden) te downloaden. Het dialoogvenster Download Assets wordt weergegeven. Zie de [ doos van de de activadialoog van de Download ](#Download-asset-dialog-box) om verder te werk te gaan.
-
-   >[!NOTE]
-   >
-   [ laat de downloadoptie voor verlopen activa ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) toe om hen te downloaden. Alleen verlopen elementen waarvoor downloaden is ingeschakeld, kunnen worden gedownload.
-
-   <a id="Download-asset-dialog-box"></a> **de dialoogdoos van de activa van de Download:** Dit dialoogvakje toont de lijst van vergunningen verbonden aan de geselecteerde activa in de linkerruit. Selecteer een licentie om een voorvertoning van de voorwaarden (in pdf-indeling) ervan weer te geven in het middelste venster en de voorvertoning van de bijbehorende elementen en hun aantal in het rechterdeelvenster. Gecontroleerde licenties worden lichtblauw gemarkeerd.
-
-   >[!NOTE]
-   >
-   Het **de dialoogvakje van Activa van de Download** previews verlenen van vergunningen voorwaarden slechts voor goedgekeurde vergunningen. [ keur de vergunningen van activa ](/help/assets/approve-assets-content-hub.md) goed alvorens hen te downloaden om hun het verlenen van vergunningen te bekijken termijnen in de **de dialoogdoos van Activa van de Download**.
-
-1. Klik ![ verwijderen-pictogram ](/help/assets/assets/remove-icon.svg) om een vergunning uit de doos van de downloaddialoog te verwijderen.
-
-1. Accepteer de termijnen en de voorwaarden en klik dan **Download** om activa te downloaden verbonden aan de beschikbare vergunningen in de linkerruit.
    ![ download-veelvoudige-vergunning ](/help/assets/assets/download-multiple-license.png)
 
-### Assets zonder licentie downloaden {#download-non-licensed-assets}
+<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
+1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
+1. Select **I have read and accept all the terms and conditions mentioned above.** 
+1. Click **Download** to download the selected assets.-->
 
-Om niet-vergunning gegeven activa te downloaden, selecteer de activa en klik ![ download ](/help/assets/assets/download-icon.svg) van hoogste spoor.
+<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+
+
+The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
+    
+    >[!NOTE]
+    >
+    >[Enable the download option for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them. Only expired assets that have enabled downloading are available for download.
+
+   <a id="Download-asset-dialog-box"></a> **Download assets dialog box:** This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
+
+    >[!NOTE]
+    >
+    > The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset dialog box**.
+
+1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
+
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+<!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+
+<!---
+### Download non-licensed Assets {#download-non-licensed-assets}
+
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
 

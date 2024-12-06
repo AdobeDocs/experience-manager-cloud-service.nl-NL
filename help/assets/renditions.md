@@ -4,9 +4,9 @@ description: Leer hoe AEM Assets en Dynamic Media effectief imagebeheer vereenvo
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
+source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,22 @@ Uitvoeringen worden geclassificeerd als statisch en dynamisch, elk type dat unie
 ## Statische vertoningen {#static-renditions}
 
 Statische uitvoeringen zijn vooraf gegenereerde versies van digitale elementen, die gewoonlijk worden gemaakt tijdens het opnemen of wijzigen van elementen. Deze uitvoeringen zijn geoptimaliseerd voor specifieke doeleinden en platforms, zoals webminiaturen, mobiele indelingen voor responsief ontwerp of versies met hoge resolutie voor afdrukken, zodat u over een efficiënte en consistente ervaring beschikt.
-Leer [ om ](#view-dynamic-renditions) statische vertoningen in [!DNL Experience Manager Assets] te bekijken en te downloaden.
+Leer hoe te [ om statische vertoningen ](#view-and-download-static-renditions) in Experience Manager Assets te bekijken en te downloaden.
+
+### Statische vertoningen weergeven en downloaden{#view-and-download-static-renditions}
+
+Voer de volgende stappen uit om de elementuitvoeringen weer te geven en te downloaden:
+
+1. Op de Mening van Assets, klik **Assets**, navigeer aan een omslag, selecteer een activa, en klik **Details**.
+1. Klik op het pictogram van de vertoning in het rechterdeelvenster.
+1. Selecteer een vertoning aan voorproef het, en klik ![ downloadpictogram ](/help/assets/assets/download-icon.svg) om het te downloaden.
+
+   ![ Mening en download Dynamische vertoningen ](/help/assets/assets/view-download-static-rendition.png)
 
 ## Dynamische uitvoeringen {#dynamic-renditions}
 
 Dynamische uitvoeringen zijn aangepaste versies van elementen die in realtime zijn gemaakt om aan specifieke behoeften te voldoen, zoals het formaat van afbeeldingen wijzigen op basis van de apparaatresolutie of het bijsnijden om aan verschillende hoogte-breedteverhoudingen te voldoen.
-Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren. U kunt dynamische uitvoeringen weergeven en downloaden in [!DNL Experience Manager Assets] .
+Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren. U kunt dynamische uitvoeringen weergeven en downloaden in Experience Manager Assets.
 
 ## Dynamic Media-uitvoeringen {#dynamic-media-renditions}
 
