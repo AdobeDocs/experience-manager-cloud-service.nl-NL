@@ -4,9 +4,9 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 1%
 
 ---
@@ -64,8 +64,9 @@ Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceler
    >[!IMPORTANT]
    > U kunt een opname aan het bestemmingsmilieu in werking stellen slechts als u tot de lokale **AEM beheerders** groep op de de auteursdienst van de bestemmingsCloud Service behoort. Als u geen ingestie kunt beginnen, zie [ Onbekwaam om Ingestie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer details te beginnen.
 
-1. Wanneer de keuze voor inname eenmaal is gemaakt, wordt een schatting van de duur van de inname weergegeven. Dit is een inspanningsschatting gebaseerd op historische gegevens van vergelijkbare ingestie.
+1. Nadat de keuze voor inname is gemaakt, kan een schatting van de duur van de inname worden weergegeven. Dit is een inspanningsschatting gebaseerd op historische gegevens van vergelijkbare ingestie.
 
+   * Deze schatting wordt niet berekend of getoond voor **niet-veeggebaren** ingestions, aangezien CAM niet weet hoeveel inhoud op het doelsysteem in dit geval is.
    * Deze schatting wordt alleen berekend en weergegeven als de waarden voor &#39;grootte controleren&#39; van de extractie zijn verzameld en beschikbaar zijn.
    * Deze waarde is een schatting en mag, hoewel intelligent berekend, niet als exact worden beschouwd. De werkelijke duur kan door verschillende factoren worden gewijzigd.
    * Terwijl ingestie loopt, zal deze waarde ook beschikbaar in de duurdialoog zijn, die door de &quot;**wordt betreden de duur van de Mening**&quot;actie van de opname.
