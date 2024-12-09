@@ -4,7 +4,7 @@ description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 0%
@@ -182,7 +182,7 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
 1. Zodra u met de inhoud van uw citaat wordt tevredengesteld, kunt u de pagina publiceren door te tikken of de **knoop van Publish** in de toolbar van de Universele Redacteur te klikken.
 
-1. Controleer of de inhoud is gepubliceerd door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.hlx.page`
+1. Controleer of de inhoud is gepubliceerd door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
 
    ![ het gepubliceerde citaat ](assets/create-block/quote-published.png)
 
@@ -273,7 +273,7 @@ export default function decorate(block) {
 
 ![ het gestileerde citaatblok in de Universele Redacteur ](assets/create-block/quote-styled.png)
 
-8&amp;punt; controleer of de wijzigingen zijn doorgevoerd in de productie door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;punt; controleer of de wijzigingen zijn doorgevoerd in de productie door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
 
 ![ het gepubliceerde en gestileerde citaatblok ](assets/create-block/quote-styled-published.png)
 
@@ -327,7 +327,7 @@ Door een eigenschap `classes` aan het blok toe te voegen, wordt de eigenschap we
 
 In deze handleiding hebt u zich voor de eenvoud rechtstreeks vastgelegd op de `main` -vertakking. Voor experimenteren in een voorbeeldopslagplaats, is dit gewoonlijk geen kwestie. Voor werkelijk projectwerk, [ zou u ontwikkeling beste praktijken ](https://www.aem.live/docs/dev-collab-and-good-practices) moeten volgen door zich op een verschillende tak te ontwikkelen en alle veranderingen te herzien via trekkingsverzoek alvorens aan `main` samen te voegen.
 
-Wanneer u zich niet ontwikkelt op de `main` -vertakking, kunt u `?ref=<branch>` toevoegen in de locatiebalk van de universele editor om de pagina vanuit uw vertakking te laden. `<branch>` is de vertakkingsnaam zoals deze zou worden gebruikt voor de voorvertoning van uw project of voor live URL&#39;s, bijvoorbeeld `https://<branch>--<repo>--<owner>.hlx.page` .
+Wanneer u zich niet ontwikkelt op de `main` -vertakking, kunt u `?ref=<branch>` toevoegen in de locatiebalk van de universele editor om de pagina vanuit uw vertakking te laden. `<branch>` is de vertakkingsnaam zoals deze zou worden gebruikt voor de voorvertoning van uw project of voor live URL&#39;s, bijvoorbeeld `https://<branch>--<repo>--<owner>.aem.page` .
 
 ## De blokken opnieuw gebruiken voor op documenten gebaseerde ontwerpen {#reusing-blocks}
 

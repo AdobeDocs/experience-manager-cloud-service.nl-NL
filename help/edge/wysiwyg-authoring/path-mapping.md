@@ -3,13 +3,13 @@ title: Padtoewijzing voor Edge Delivery Services
 description: Leer hoe u paginapaden die in de AEM ontwerpinstantie worden gebruikt, kunt toewijzen aan openbare paginapaden die op de website worden gebruikt en bepalen welke inhoud naar Edge Delivery Services wordt gepubliceerd.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
 
 ---
-
 
 # Padtoewijzing voor Edge Delivery Services {#path-mapping}
 
@@ -20,7 +20,7 @@ Leer hoe u paginapaden die in de AEM ontwerpinstantie worden gebruikt, kunt toew
 Als u WYSIWYG-inhoud wilt kunnen schrijven met AEM en publiceren naar Edge Delivery Services, moet u de padtoewijzing van uw project instellen. Deze toewijzing heeft twee doelen.
 
 * Hiermee wordt een relatie toegewezen en gemaakt tussen paginapaden die worden gebruikt op uw AEM ontwerpinstantie en de openbare paginapaden die worden gebruikt op uw website.
-* Hiermee bepaalt u welke inhoud (pagina&#39;s, bladen, elementen, enz.) worden gepubliceerd aan Edge Delivery Services.
+* Het bepaalt welke inhoud (pagina&#39;s, bladen, elementen, enz.) aan Edge Delivery Services wordt gepubliceerd.
 
 De padtoewijzing moet voor elk project afzonderlijk worden geconfigureerd en op basis van de inhoud en URL-structuur van het project. Het wordt gebruikt door AEM tijdens inhoud het publiceren en terwijl het uitgeven van inhoud in de [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
@@ -79,7 +79,7 @@ Uw wegtoewijzingen kunnen op één van twee manieren afhankelijk van de opstelli
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{

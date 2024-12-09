@@ -4,7 +4,7 @@ description: Leer hoe u taxonomiegegevens beheert voor het gebruik van tags met 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Zodra uw taxonomie wordt gepubliceerd, kan zijn informatie door de Universele Re
 
 U kunt tot de taxonomie als gegevens JSON bij het volgende adres toegang hebben.
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
+`https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
 Gebruik `<taxonomy-json-name>` dat u bepaalde toen [ uw taxonomie aan het `paths.json` dossier in uw project in kaart bracht.](#paths-json) De taxonomiegegevens worden geretourneerd als JSON-gegevens, zoals in het volgende voorbeeld.
 
