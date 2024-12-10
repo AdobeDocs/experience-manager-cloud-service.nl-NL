@@ -4,9 +4,9 @@ description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 ### Blokdefinitie en -model maken {#create-block-model}
 
-1&amp;period; Kloon het project GitHub plaatselijk dat u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG creeerde creeerde met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids en open het in een redacteur van uw keus.
+1\. Kloon het project GitHub plaatselijk dat u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids en open het in een redacteur van uw keus creeerde.
 
 * Microsoft-code wordt hier gebruikt ter illustratie.
 
 ![ Klonend het project ](assets/create-block/clone.png)
 
-2&amp;punt; geef het `component-definition.json` dossier bij de wortel van het project uit en voeg de volgende definitie voor uw nieuw citaatblok toe en bewaar het dossier.
+2\. Bewerk het `component-definition.json` -bestand in de hoofdmap van het project en voeg de volgende definitie toe voor het nieuwe prijsblok en sla het bestand op.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-3&amp;punt; geef het `component-models.json` dossier bij de wortel van het project uit en voeg de volgende [ modeldefinitie ](/help/implementing/universal-editor/field-types.md#model-structure) voor uw nieuw citaatblok toe en bewaar het dossier.
+3 Bewerk het `component-models.json` dossier bij de wortel van het project en voeg de volgende [ modeldefinitie ](/help/implementing/universal-editor/field-types.md#model-structure) voor uw nieuw citaatblok toe en bewaar het dossier.
 
 * Gelieve te zien de document [ Modellering van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md) voor meer informatie over wat belangrijk is om te overwegen wanneer het creëren van inhoudsmodellen.
 
@@ -119,7 +119,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-4&amp;punt; geef het `component-filters.json` dossier bij de wortel van het project uit en voeg het citaatblok aan de [ filterdefinitie ](/help/implementing/universal-editor/customizing.md#filtering-components) toe om het blok toe te staan om aan om het even welke sectie worden toegevoegd en het dossier te bewaren.
+4\. Bewerk het `component-filters.json` dossier bij de wortel van het project en voeg het citaatblok aan de [ filterdefinitie ](/help/implementing/universal-editor/customizing.md#filtering-components) toe om het blok toe te staan om aan om het even welke sectie worden toegevoegd en het dossier te bewaren.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-5&amp;period; met git past u deze wijzigingen toe op uw `main` -vertakking.
+5 Leg deze wijzigingen met behulp van git vast in de `main` -vertakking.
 
 * Het toewijzen aan `main` is alleen ter illustratie. [ volg beste praktijken ](https://www.aem.live/docs/dev-collab-and-good-practices) en gebruik een trekkingsverzoek voor werkelijk projectwerk.
 
@@ -190,13 +190,13 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
 Nu u een werkend citaatblok hebt kunt u het stileren toepassen.
 
-1&amp;period; Ga terug naar de editor voor uw project.
+1\. Ga terug naar de redacteur voor uw project.
 
-2&amp;punt; maak een map `quote` onder de map `blocks` .
+2\. Maak een map `quote` onder de map `blocks` .
 
 ![ creeer een citaatomslag ](assets/create-block/new-folder.png)
 
-3&amp;punt; in de nieuwe `quote` map voegt u een `quote.js` -bestand toe om blokdecoratie te implementeren door de volgende JavaScript toe te voegen en het bestand op te slaan.
+3 Voeg in de nieuwe map `quote` een `quote.js` -bestand toe om blokdecoratie te implementeren door de volgende JavaScript toe te voegen en het bestand op te slaan.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;punt; voeg in de map `quote` een `quote.css` -bestand toe om de opmaak voor het blok te definiëren door de volgende CSS-code toe te voegen en het bestand op te slaan.
+4\. Voeg in de map `quote` een `quote.css` -bestand toe om de opmaak voor het blok te definiëren door de volgende CSS-code toe te voegen en sla het bestand op.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;period; met git past u deze wijzigingen toe op uw `main` -vertakking.
+5 Leg deze wijzigingen met behulp van git vast in de `main` -vertakking.
 
 * Het toewijzen aan `main` is alleen ter illustratie. [ volg beste praktijken ](https://www.aem.live/docs/dev-collab-and-good-practices) en gebruik een trekkingsverzoek voor werkelijk projectwerk.
 
-6&amp;punt; Keer terug naar uw browser lusje van de Universele Redacteur waar u de pagina van uw project uitgeeft en herlaadt de pagina om uw gestileerde blok te bekijken.
+6 Keer terug naar uw browser lusje van de Universele Redacteur waar u de pagina van uw project uitgeeft en herlaadt de pagina om uw gestileerde blok te bekijken.
 
-7&amp;punt; Zie het nu gestileerde citaatblok op de pagina.
+7\ Zie het nu gestileerde citaatblok op de pagina.
 
 ![ het gestileerde citaatblok in de Universele Redacteur ](assets/create-block/quote-styled.png)
 
-8&amp;punt; controleer of de wijzigingen zijn doorgevoerd in de productie door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
+8. Controleer of de wijzigingen naar de productie zijn verplaatst door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
 
 ![ het gepubliceerde en gestileerde citaatblok ](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ Gelieve te zien het document [ Modelleren van de Inhoud voor WYSIWYG authoring m
 >[!TIP]
 >
 >Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
