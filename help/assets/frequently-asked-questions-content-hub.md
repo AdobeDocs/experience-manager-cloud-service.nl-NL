@@ -2,9 +2,9 @@
 title: Veelgestelde vragen (FAQ's) voor Content Hub
 description: Antwoorden op enkele veelgestelde vragen (FAQ's) voor Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,7 @@ Content Hub stelt bredere teams in staat om eenvoudig relevante, goedgekeurde mi
 
 ## Waarom kan ik Content Hub niet inschakelen voor mijn Cloud Manager-programma/omgeving? {#cannot-enable-content-hub}
 
-Content Hub is op dit moment alleen beschikbaar voor AEM Cloud Manager Production-programma&#39;s, die een Assets-licentie bevatten. Wanneer u [ Content Hub ](/help/assets/deploy-content-hub.md#enable-content-hub) klikt om het toe te laten, wordt het opgesteld en geassocieerd met het milieu van de auteursproductie van AEM in dat programma. Zie [ Content Hub ](/help/assets/deploy-content-hub.md) voor details en eerste vereisten opstellen.
-
-Er is een programma voor vroege toegang tot Content Hub voor Sandbox-programma&#39;s/productieomgevingen van auteurs. Voor meer informatie, zie [ Inleiding aan Programma&#39;s Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Neem contact op met het accountteam van uw Adobe voor meer informatie over het programma voor vroege toegang.
-
-Content Hub is in dit stadium niet beschikbaar voor omgevingen die niet voor productie bestemd zijn (werkgebied, dev, enzovoort).
+Content Hub is op dit moment alleen beschikbaar voor AEM Cloud Manager Production-programma&#39;s, waaronder een Assets-licentie (Assets Cloud Service, Assets Ultimate, Assets). Wanneer u [ Content Hub ](/help/assets/deploy-content-hub.md#enable-content-hub) klikt om het toe te laten, wordt het opgesteld en geassocieerd met het milieu van de auteursproductie van AEM in dat programma. Zie [ Content Hub ](/help/assets/deploy-content-hub.md) voor details en eerste vereisten opstellen.
 
 ## Ik heb Content Hub ingeschakeld in mijn productieprogramma/omgeving. Mag ik het uitschakelen? {#can-i-disable-content-hub}
 
@@ -55,7 +51,9 @@ Het is mogelijk om Content Hub te evalueren zonder gevolgen voor uw gebruikers/p
 * De beheerder van de Admin Console voegt [ een paar geselecteerde gebruikers ](/help/assets/deploy-content-hub.md#onboard-content-hub-users) aan het het productprofiel van Content Hub toe, zodat zij evaluatie kunnen beginnen.
 * Nadat de evaluatie is voltooid, kunnen AEM Gebruikers in auteurinstantie goedkeuring uit testactiva verwijderen, productieactiva voor Content Hub goedkeuren, en dan kan de beheerder van de Admin Console alle gebruikers toevoegen die toegang tot Content Hub en goedgekeurde inhoud nodig hebben. Gefeliciteerd, je Content Hub is nu live.
 
-Adobe biedt Content Hub ook vroege toegang tot Stage-omgevingen - raadpleeg de vraag [ Waarom kan ik Content Hub niet inschakelen in mijn Cloud Manager-programma/omgeving?](#cannot-enable-content-hub) voor meer informatie.
+Er is een programma voor vroege toegang tot Content Hub voor Sandbox-programma&#39;s en de productieomgevingen van de auteur. Voor meer informatie, zie [ Inleiding aan Programma&#39;s Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Neem contact op met het accountteam van uw Adobe voor meer informatie over het programma voor vroege toegang.
+
+Content Hub is nog niet beschikbaar voor niet-productieomgevingen (stadium &amp; ontwikkeling). Assets Ultimate zal naar verwachting in maart 2025 beschikbaar zijn voor stadium-/ontwikkelomgevingen.
 
 ## Waarom zie ik geen middelen na het aanmelden bij Content Hub? {#no-assets-in-content-hub}
 
