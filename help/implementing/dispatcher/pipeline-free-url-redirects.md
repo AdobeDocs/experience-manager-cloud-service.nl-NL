@@ -3,9 +3,10 @@ title: URL-omleidingen zonder pijplijn
 description: Leer hoe u 301 of 302 omleidingen declareert zonder toegang tot Git- of Cloud Manager-pijpleidingen.
 feature: Dispatcher
 role: Admin
-source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
+exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,9 +58,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Vervolgens moet u in een Apache-configuratiebestand zoals `rewrites/rewrite.rules` of `<yourfile>.vhost` het kaartbestand configureren waarnaar wordt verwezen door de eigenschap name (`my.map` in het bovenstaande voorbeeld).
+Vervolgens moet u in een Apache-configuratiebestand zoals `rewrites/rewrite.rules` of `<yourfile>.vhost` het kaartbestand configureren waarnaar wordt verwezen door de eigenschap name (`my.map` in het bovenstaande voorbeeld). Zodra geladen, wordt dit kaartdossier bewaard in de verzender lokale opslag onder de **vaste** plaats `/tmp/rewrites/`.
 
-De instructie `RewriteMap` geeft aan dat de gegevens worden opgeslagen in een databasemanagementbestandsindeling (DBM) met behulp van de indeling `sdbm` (simple DBM).
+De instructie `RewriteMap` geeft aan dat de gegevens worden opgeslagen in een databasemanagementbestandsindeling (DBM) met behulp van de indeling `sdbm` (simple DBM). Het volledige bestandspad wordt afgeleid van het voorvoegsel van de opslaglocatie en de eigenschap name.
 
 De rest van de configuratie is afhankelijk van de indeling van de `redirectmap.txt` . De eenvoudigste indeling, die in het onderstaande voorbeeld wordt getoond, is een-op-een-toewijzing tussen de oorspronkelijke URL en de toegewezen URL:
 
