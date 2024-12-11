@@ -4,9 +4,9 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3412'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,9 @@ Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceler
 
    >[!NOTE]
    > Als de doellaag `Author` is, wordt de auteurinstantie gesloten tijdens de lengte van de opname en niet beschikbaar voor gebruikers (bijvoorbeeld, auteurs of iedereen die onderhoud uitvoert). De reden is om het systeem te beschermen en om eventuele veranderingen te voorkomen die verloren zouden kunnen gaan of een innameconflict zouden veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens de opname door de auteur wordt genegeerd.
+
+   >[!NOTE]
+   > Als de doellaag `Publish` is, blijft de publicatie-instantie actief tijdens de opname.  Nochtans, als het samenstellingsproces terwijl opneming loopt, zal een conflict tussen de twee processen waarschijnlijk gebeuren.  Om deze reden onbruikbaar maakt het inslikken proces 1) het compaction getimede manuscript zodat zal de samenperking niet tijdens de inname beginnen, en 2) controleert of momenteel de compensatie loopt, en als het is, wacht tot het alvorens de inname gaat te voltooien.  Als het publiceren neemt langer dan verwacht, controleer de innamelogboeken voor verwante logboekverklaringen.
 
    * **Sluitereffect:** kies de `Wipe` waarde
       * De **Sluitereffect** optie plaatst het uitgangspunt van de bestemming van de opname. Als **Sluitereffect** wordt toegelaten, wordt de bestemming met inbegrip van al zijn inhoud teruggesteld aan de versie van AEM die in Cloud Manager wordt gespecificeerd. Als deze optie niet is ingeschakeld, behoudt de bestemming de huidige inhoud als beginpunt.

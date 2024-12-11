@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 45eecefbb39476671e90218cd502e0242172c1a1
 workflow-type: tm+mt
-source-wordcount: '3575'
+source-wordcount: '3404'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 {{work-with-dynamic-media}}
 
-Als u Adobe Experience Manager voor verschillende omgevingen gebruikt, zoals ontwikkeling, staging en live productie, configureert u Dynamic Media-Cloud Servicen voor elk van deze omgevingen.
+Als u Adobe Experience Manager as a Cloud Service voor verschillende omgevingen gebruikt, zoals ontwikkeling, staging en live productie, configureert u Dynamic Media-Cloud Servicen voor elk van deze omgevingen.
 
 Zie ook [ een het bedrijfalias rekening van Dynamic Media ](/help/assets/dynamic-media/dm-alias-account.md) vormen
 
@@ -200,32 +200,35 @@ Om de configuratie en de opstelling van Dynamic Media verder aan te passen, of z
 
 -->
 
-### (Optioneel) De toegangsbeheerlijst inschakelen in Dynamic Media {#optional-enable-acl}
+<!-- Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
 
-Wanneer u Dynamic Media op AEM in werking stelt, stuurt het momenteel `/is/image` verzoeken om het Beeld van de Voorproef te beveiligen die zonder ACL (de Lijst van het Toegangsbeheer) toestemmingen op PlatformServerServlet te controleren. U kunt, echter, __ ACL toestemmingen toelaten. Hiermee stuurt u de geautoriseerde `/is/image` -aanvragen door. Als een gebruiker niet gemachtigd is om toegang te krijgen tot het middel, wordt de fout &quot;403 - Verboden&quot; weergegeven.
+### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
 
-**om ACL toestemmingen in Dynamic Media toe te laten:**
+When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, _enable_ ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
 
-1. Navigeer vanuit Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** .
+**To enable Access Control List permissions in Dynamic Media on AEM as a Cloud Service:**
 
-   ![ 2019-08-02_16-13-14 ](assets/2019-08-02_16-13-14.png)
+1. From Adobe Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-1. Er wordt een nieuw browsertabblad geopend voor de pagina **[!UICONTROL Adobe Experience Manager Web Console Configuration]** .
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-   ![ 2019-08-02_16-17-29 ](assets/2019-08-02_16-17-29.png)
+1. A new browser tab opens to the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page.
 
-1. Voor de pagina, scrol aan de naam _Adobe CQ Scene7 PlatformServer_.
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. Rechts van de naam selecteert u het potloodpictogram (**[!UICONTROL Edit the configuration values]**).
+1. On the page, scroll to the name _Adobe CQ Scene7 PlatformServer_.
 
-1. Voor de **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** pagina, selecteer de controledoos voor de volgende twee montages:
+1. To the right of the name, select the pencil icon (**[!UICONTROL Edit the configuration values]**).
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Als deze instelling is ingeschakeld, wordt de toestemming voor het opslaan gedurende twee minuten (standaard) in cache geplaatst.
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Als deze instelling is ingeschakeld, wordt de toegang van een gebruiker gevalideerd terwijl deze elementen voorvertoont via Dynamic Media Image Server.
+1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
 
-   ![ laat de montages van de Lijst van het Toegangsbeheer op Dynamic Media toe - de wijze van Scene7 ](/help/assets/dynamic-media/assets/acl.png)
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
 
-1. Selecteer **[!UICONTROL Save]** in de rechterbenedenhoek van de pagina.
+   ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/dynamic-media/assets/acl.png)
+
+1. Near the lower-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 ### (Optioneel) Dynamic Media-instellingen instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
