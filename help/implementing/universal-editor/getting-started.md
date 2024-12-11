@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,17 @@ Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit docum
 
 ## De pagina instrumenteren {#instrument-page}
 
-De Universele dienst van de Redacteur vereist a [ eenvormige middelnaam (URN) ](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het correcte backendesysteem voor de inhoud in app te identificeren en te gebruiken die wordt uitgegeven. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
+De Universal Editor heeft een JavaScript-bibliotheek nodig om de pagina in de editor te kunnen renderen en bewerken.
+
+Bovendien vereist de Universele dienst van de Redacteur a [ eenvormige middelnaam (URN) ](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het correcte backendesysteem voor de inhoud in app te identificeren en te gebruiken die wordt uitgegeven. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
+
+### Inclusief de Universal Editor CORS-bibliotheek {#cors-library}
+
+Als u wilt dat de Universal Editor verbinding maakt met uw app, moet uw app de Universal Editor CORS-bibliotheek bevatten. Voeg het volgende script toe aan uw app.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### Verbindingen maken {#connections}
 

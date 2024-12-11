@@ -4,9 +4,9 @@ description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universel
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ U moet de benodigde JavaScript-bibliotheek toevoegen aan de paginacomponent van 
 1. Voeg de JavaScript-bibliotheek toe aan het einde van het bestand.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Klik **sparen allen** en laad dan de Universele Redacteur opnieuw.
@@ -160,7 +160,12 @@ De pagina wordt nu geladen met de juiste JavaScript-bibliotheek zodat de Univers
 >[!TIP]
 >
 >* De bibliotheek kan in de kop- of voettekst worden geladen.
->* De `universal-editor-embedded.js` bibliotheek [ is beschikbaar op NPM ](https://www.npmjs.com/package/@adobe/universal-editor-cors) en u kunt het ontvangen zelf als dat wordt vereist of het direct in uw toepassing plaatst.
+
+>[!NOTE]
+>
+>De eerder aanbevolen methode voor het opnemen van de JavaScript-bibliotheek `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` of via npmjs.com wordt niet meer aanbevolen, omdat het pakket is vervangen.
+>
+>Als een toepassing het vervangen pakket nog steeds gebruikt, geeft de Universal Editor een waarschuwing in de UI weer dat een verouderd pakket wordt gedetecteerd.
 
 ## Een verbinding definiëren om wijzigingen te behouden {#connection}
 
