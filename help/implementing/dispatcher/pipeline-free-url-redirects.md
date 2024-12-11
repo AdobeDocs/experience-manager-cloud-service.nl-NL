@@ -4,9 +4,9 @@ description: Leer hoe u 301 of 302 omleidingen declareert zonder toegang tot Git
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,14 @@ AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experiencelea
 De kern van deze functie is de mogelijkheid voor AEM Apache/Dispatcher om een of meer kaartbestanden te laden (of opnieuw te laden) die op een opgegeven locatie in de publicatieopslagplaats zijn geplaatst. Het is belangrijk om te vermelden dat hoe de dossiers daar krijgen buiten het werkingsgebied van deze eigenschap is maar u kunt één van de volgende methodes overwegen:
 
 * De kaart voor herschrijven als een element invoegen in de gebruikersinterface van de auteur en deze publiceren.
-* Het installeren van de [ ACS-Bevelen herschrijft de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html), die een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
+* Het installeren van de [ ACS-Bevelen herschrijft de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([ minstens versie 6.7.0 of hoger ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
 * Volledige flexibiliteit door een aangepaste toepassing te schrijven. U kunt bijvoorbeeld een gebruikersinterface of opdrachtregelinterface gebruiken om de URL-toewijzingen te beheren, of een formulier om een herschrijfmap te uploaden, die vervolgens AEM API&#39;s gebruikt om het kaartbestand voor herschrijven te publiceren.
 
 >[!NOTE]
 > Deze eigenschap vereist AEM versie **18311 of hoger**.
+
+>[!NOTE]
+> Het gebruik van deze eigenschap van het schrijven van de Manager van de Kaart vereist ACSCommons versie **6.7.0 of hoger**.
 
 ## De kaart voor herschrijven {#rewrite-map}
 
