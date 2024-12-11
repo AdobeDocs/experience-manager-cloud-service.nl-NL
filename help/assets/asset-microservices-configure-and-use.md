@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2863'
+source-wordcount: '2846'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,6 @@ Het verwerkingsprofiel kan een FPO-uitvoering (alleen voor plaatsing) bevatten. 
 
 ### Een standaardprofiel maken {#create-standard-profile}
 
-Ga als volgt te werk om een standaard verwerkingsprofiel te maken:
-
 1. Beheerders openen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** . Klik op **[!UICONTROL Create]**.
 1. Geef een naam op waarmee u het profiel op unieke wijze kunt identificeren wanneer u het toepast op een map.
 1. Schakel **[!UICONTROL Create FPO Rendition]** in op het tabblad **[!UICONTROL Image]** om FPO-uitvoeringen te genereren. Voer een **[!UICONTROL Quality]** -waarde in van 1-100.
@@ -124,8 +122,6 @@ De ontwikkelaars kunnen [!DNL Asset Compute Service] gebruiken [ om douanetoepas
 >U kunt de standaardmetagegevens niet bewerken met de aangepaste toepassingen. U kunt alleen aangepaste metagegevens wijzigen.
 
 ### Een aangepast profiel maken {#create-custom-profile}
-
-Ga als volgt te werk om een aangepast profiel te maken:
 
 1. Beheerders openen **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** > **[!UICONTROL Create]** .
 1. Klik op de pagina Profiel verwerken op de tab **[!UICONTROL Custom]** en klik vervolgens op **[!UICONTROL Add New]** .
