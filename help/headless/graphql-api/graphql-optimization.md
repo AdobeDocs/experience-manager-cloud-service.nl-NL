@@ -4,9 +4,9 @@ description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filter
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1824'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,6 @@ Zie:
 
 * [Door uw doorlopende query&#39;s in cache te plaatsen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Het beheren van geheime voorgeheugen voor uw persistente vragen](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### GraphQL-voorcaching gebruiken AEM {#use-aem-graphql-pre-caching}
-
-**Aanbeveling**
-
-Dankzij deze mogelijkheid kan AEM inhoud binnen het bereik van GraphQL-query&#39;s verder in cache plaatsen die vervolgens als blokken in JSON-uitvoer kan worden geassembleerd in plaats van regel voor regel.
-
-**Verdere Verwijzing**
-
-Neem contact op met de Adobe om deze mogelijkheid in te schakelen voor uw AEM Cloud Service-programma en -omgevingen.
 
 ### GraphQL Query-optimalisatie {#graphql-query-optimization}
 
