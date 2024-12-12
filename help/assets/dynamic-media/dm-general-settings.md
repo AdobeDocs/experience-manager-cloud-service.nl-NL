@@ -1,6 +1,6 @@
 ---
 title: Algemene instellingen van Dynamic Media configureren
-description: Leer hoe u Algemene instellingen in Dynamic Media beheert. U kunt hier de naam van de publicatieserver en de naam van de oorspronkelijke server instellen en een optie voor het overschrijven van afbeeldingen instellen. Er zijn ook standaard uploadopties voor onscherpe maskers van afbeeldingen en uploadopties voor de manier waarop u PostScript-, Adobe Photoshop-, PDF- en Adobe Illustrator-bestanden wilt verwerken.
+description: Leer Algemene instellingen te beheren in Dynamic Media. U kunt de namen van de publicatie- en oorspronkelijke server configureren en opties voor het overschrijven van afbeeldingen instellen. Pas de standaardinstellingen voor uploaden voor onscherpe maskers en bestandsverwerking aan voor PostScript-, Photoshop-, PDF- en Illustrator-bestanden.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 6251b9bb6f56d387fa1a158ac62ef3b25b1ab56b
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2311'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Het configureren van **[!UICONTROL Dynamic Media General Settings]** is alleen b
 * U hebt *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. Zie [ een Configuratie van Dynamic Media in Cloud Servicen ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) creëren.
 * U bent een systeembeheerder van het systeem van de Experience Manager met beheerdervoorrechten.
 
-Dynamic Media General Settings is bedoeld voor gebruik door ervaren ontwikkelaars en programmeurs van websites. Adobe Dynamic Media raadt gebruikers die deze publicatie-instellingen wijzigen aan bekend te zijn met Dynamic Media op Adobe Experience Manager en de basistechnologie voor beeldbewerking.
+Ervaren ontwikkelaars en programmeurs van websites zijn het beoogde publiek voor Dynamic Media General Settings. Adobe Dynamic Media raadt gebruikers die hun publicatie-instellingen wijzigen aan om op de hoogte te zijn van Dynamic Media op Adobe Experience Manager en de basistechnologie voor beeldbewerking.
 
 Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account.
 
@@ -43,7 +43,7 @@ Zie ook [ Facultatief - Opstelling en configuratie van de montages van Dynamic M
 **om de Algemene Montages van Dynamic Media te vormen:**
 
 1. Selecteer in de modus Auteur Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
-1. Selecteer in de linkertrack het pictogram Gereedschappen en ga vervolgens naar **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Settings]** .
+1. In het linkerspoor, klik ![ pictogram van Hulpmiddelen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![ geeft de Lijnen uit ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media General Settings]**.
 1. Stel op de pagina Server de opties **[!UICONTROL Published Server Name]** en **[!UICONTROL Origin Server Name]** in en gebruik vervolgens de vijf tabbladen om de standaardopties voor het uploaden van afbeeldingen te configureren voor Beeldbewerking en voor Postscript-, Photoshop-, PDF- en Illustrator-bestanden.
 
    * [Server](#server-general-setting)
@@ -57,7 +57,7 @@ Zie ook [ Facultatief - Opstelling en configuratie van de montages van Dynamic M
    ![ Dynamic Media Algemene pagina van Montages ](/help/assets/assets-dm/dm-general-settings.png)
    *Dynamic Media Algemene pagina van Montages, met het **[!UICONTROL Image Editing]**geselecteerde lusje.*<br><br>
 
-1. Wanneer u klaar bent, selecteert u **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
+1. Als u klaar bent, klikt u in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** .
 
 ## Server {#server-general-setting}
 
@@ -66,7 +66,7 @@ Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toege
 | Optie | Beschrijving |
 | --- | --- |
 | **[!UICONTROL Published Server Name]** | Vereist.<br> de naam moet `https://` in de weg gebruiken.<br> Deze server is de levende die server CDN (het Netwerk van de Levering van de Inhoud) in alle systeem-geproduceerde vraag wordt gebruikt URL die voor uw rekening specifiek is. Wijzig deze servernaam alleen als u hiervoor instructies hebt gekregen van de Adobe Technische ondersteuning. |
-| **[!UICONTROL Origin Server Name]** | Vereist.<br> Deze server wordt gebruikt voor het testen van de kwaliteitsverzekering slechts. Wijzig deze servernaam alleen als u hiervoor instructies hebt gekregen van de Adobe Technical Support. |
+| **[!UICONTROL Origin Server Name]** | Vereist.<br> Deze server wordt gebruikt voor het testen van de kwaliteitsverzekering slechts. Wijzig deze servernaam alleen als u hiervoor instructies hebt gekregen van de Adobe Technische ondersteuning. |
 
 ## Uploaden naar toepassing {#upload-to-application}
 
@@ -76,20 +76,20 @@ Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toege
 
   >[!NOTE]
   >
-  >Selecteer de optie Afbeeldingen overschrijven **[!UICONTROL Overwrite in current folder, same base name/extension]** om consistentie met Experience Manager te behouden.
+  >Selecteer de optie Afbeeldingen overschrijven **[!UICONTROL Overwrite in the current folder, same base name/extension]** om consistentie met Experience Manager te behouden.
 
   | Afbeeldingen overschrijven, optie | Beschrijving |
   | --- | --- |
   | **[!UICONTROL Overwrite in current folder, same base name/extension]** | *Gebrek* voor nieuwe slechts rekeningen van Dynamic Media.<br> deze optie is de strengste regel voor vervanging. Hiervoor moet u de vervangende afbeelding uploaden naar dezelfde map als het origineel en moet de vervangende afbeelding dezelfde bestandsnaamextensie hebben als het origineel. Als niet aan deze vereisten wordt voldaan, wordt een dubbel gecreeerd.<br>*om consistentie met Experience Manager te handhaven, selecteer deze optie*. |
-  | **[!UICONTROL Overwrite in current folder, same base name regardless of extension]** | U moet de vervangende afbeelding uploaden naar dezelfde map als het origineel, maar de bestandsnaamextensie kan afwijken van het origineel. bijvoorbeeld stoel.tif vervangt stoel.jpg. |
-  | **[!UICONTROL Overwrite in any folder, same base asset name/extension]** | Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (bijvoorbeeld stoel.jpg moet de naam stoel.jpg vervangen, niet stoel.tif). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding bevindt zich in de nieuwe map. Het bestand is niet meer gevonden op de oorspronkelijke locatie. |
+  | **[!UICONTROL Overwrite in current folder, same base name regardless of extension]** | Hiervoor moet u de vervangende afbeelding uploaden naar dezelfde map als het origineel, maar de bestandsnaamextensie kan afwijken van het origineel. bijvoorbeeld stoel.tif vervangt stoel.jpg. |
+  | **[!UICONTROL Overwrite in any folder, same base asset name/extension]** | Hiervoor is het vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (bijvoorbeeld: stoel.jpg moet stoel.jpg vervangen, niet stoel.tif). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding bevindt zich in de nieuwe map. Het bestand is niet meer gevonden op de oorspronkelijke locatie. |
   | **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** | Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload. |
 
-* **[!UICONTROL Preserve Crop]**
+* **[!UICONTROL Preserve crop]**
 
   Hiermee regelt u het behoud van bestaande handmatige snijddefinities.
 
-  Zie ook `preserveCrop` in [ UploadPostJob ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) en [ ReprocessAssetsJob ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), zowel in de Gids van de Verwijzing van de Kijkers van Dynamic Media.
+  Zie ook `preserveCrop` in [ UploadPostJob ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) en [ ReprocessAssetsJob ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), zowel in de Gids van de Verwijzing van de Kijkers van Dynamic Media.
 
 ## Standaardopties voor uploaden {#default-upload-options}
 
@@ -101,7 +101,7 @@ Voor het effect Onscherp masker worden dezelfde opties gebruikt als voor het fil
 
 | Onscherpe maskeropties | Beschrijving |
 | --- | --- |
-| **[!UICONTROL Amount]** | Vereist.<br> controleert de hoeveelheid contrast die op randpixel wordt toegepast.<br> denk van het als de intensiteit van het effect. Het belangrijkste verschil tussen de waarden voor de hoeveelheid Unsharp Mask in Adobe Dynamic Media en de waarden voor de hoeveelheid in Adobe Photoshop is dat Photoshop een bereik heeft van 1% tot 500%. In Adobe Dynamic Media is het waardebereik `0.0` tot `5.0` . Een waarde van 5,0 in Adobe Dynamic Media is het ruwe equivalent van 500% in Photoshop; een waarde van 0,9 is het equivalent van 90%, etc. |
+| **[!UICONTROL Amount]** | Vereist.<br> het controleert de hoeveelheid contrast die op randpixel wordt toegepast.<br> denk van het als de intensiteit van het effect. De waarden voor de hoeveelheid Onscherp masker verschillen tussen de Adobe Dynamic Media en Adobe Photoshop. Photoshop biedt een bereik van 1% tot 500%. In Adobe Dynamic Media is het waardebereik `0.0` tot `5.0` . Een waarde van 5,0 in Adobe Dynamic Media is het ruwe equivalent van 500% in Photoshop; een waarde van 0,9 is het equivalent van 90%, etc. |
 | **[!UICONTROL Radius]** | Vereist.<br> controleert de straal van het effect.<br> Het waardebereik is `0` tot `250` . Het effect wordt op alle pixels in een afbeelding uitgevoerd en wordt vanuit alle pixels in alle richtingen uitgestraald. De straal wordt gemeten in pixels. Als u bijvoorbeeld een vergelijkbaar verscherpingseffect wilt toepassen op een afbeelding van 2000 x 2000 pixels en een afbeelding van 500 x 500 pixels, stelt u een straal van twee pixels in voor de afbeelding van 2000 x 2000 pixels. Stel vervolgens een straalwaarde in van 1 pixel in de afbeelding van 500 x 500 pixels. Een hogere waarde wordt gebruikt voor een afbeelding met meer pixels. |
 | **[!UICONTROL Threshold]** | Vereist.<br> de Drempel is een waaier van contrast die wordt genegeerd wanneer de filter Onscherp Masker wordt toegepast. Dit effect is belangrijk, zodat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is `0` - `255` . Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. `0`=zwart, `128`=50% grijs en `255`=wit.<br> de drempelwaarde van A van `12` negeert lichte variaties is de helderheid van de huidskleur om het toevoegen van lawaai te vermijden, maar nog toevoegt randcontrast aan contrasterende gebieden zoals waar de wimpers huid ontmoeten.<br> als u een foto van iemands gezicht hebt, beïnvloedt het Onscherp Masker de contrasterende delen van het beeld. Bijvoorbeeld, waar wimpers en huid samenkomen om een duidelijk gebied van contrast tot stand te brengen, en de vlotte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele wijzigingen in de pixels van de skin. Er wordt op zijn beurt een lawaai en ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> om deze kwestie te vermijden, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixel te negeren die contrast, zoals vlotte huid niet dramatisch veranderen.<br> in zipper grafisch vroeger getoond, merk de textuur naast de ritppers op. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
 | **[!UICONTROL Monochrome]** | Selecteer deze optie om de helderheid (intensiteit) van een afbeelding zonder scherp masker te wijzigen.<br> schrap aan unshark-masker elke kleurencomponent afzonderlijk. |
@@ -118,10 +118,10 @@ Wanneer u PostScript (EPS)-afbeeldingsbestanden uploadt, kunt u deze op verschil
 
 | PostScript, optie | Beschrijving |
 | --- | --- |
-| **[!UICONTROL Processing]** | Kies Rasteren om vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
-| **[!UICONTROL Maintain transparent background in rendered images]** | Hiermee blijft de achtergrondtransparantie van het bestand behouden. |
+| **[!UICONTROL Processing]** | Kies Rasteren om de vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
+| **[!UICONTROL Maintain a transparent background in rendered images]** | Hierbij blijft de achtergrondtransparantie van het bestand behouden. |
 | **[!UICONTROL Resolution (pixel/inch)]** | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het bestand worden weergegeven. |
-| **[!UICONTROL Color space]** | ・ **[!UICONTROL Detect automatically]** - Behoudt de kleurruimte van het bestand.<br>・ **[!UICONTROL Force as RGB]** - Zet om in de kleurruimte RGB.<br>・ **[!UICONTROL Force as CMYK]** - Converteert naar de CMYK-kleurruimte.<br>・ **[!UICONTROL Force as Grayscale]** - Zet om in de grijswaardenkleurruimte. |
+| **[!UICONTROL Color space]** | ・ **[!UICONTROL Detect automatically]** - Behoudt de kleurruimte van het bestand.<br>・ **[!UICONTROL Force as RGB]** - Het wordt omgezet in de kleurruimte RGB.<br>・ **[!UICONTROL Force as CMYK]** - Converteert naar de CMYK-kleurruimte.<br>・ **[!UICONTROL Force as Grayscale]** - De afbeelding wordt omgezet in de grijswaardenkleurruimte. |
 
 ### Het tabblad Photoshop {#photoshop-tab}
 
@@ -130,7 +130,7 @@ U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeve
 | Photoshop, optie | Beschrijving |
 | --- | --- |
 | **[!UICONTROL Maintain layers]** | Hiermee worden de lagen in de PSD, indien aanwezig, uitgelijnd op afzonderlijke elementen. De elementlagen blijven gekoppeld aan de PSD. U kunt deze weergeven door het PSD-bestand te openen in de gedetailleerde weergave en het deelvenster Lagen te selecteren. Zie Lagen weergeven en bewerken in een PSD-bestand. |
-| **[!UICONTROL Create template]** | Maakt een sjabloon op basis van de lagen in het PSD-bestand. |
+| **[!UICONTROL Create a template]** | Maakt een sjabloon op basis van de lagen in het PSD-bestand. |
 | **[!UICONTROL Extract text]** | Extraheert de tekst zodat gebruikers naar tekst in een viewer kunnen zoeken. |
 | **[!UICONTROL Extend layers to background size]** | Hiermee vergroot u de grootte van de uitgesneden afbeeldingslagen tot de grootte van de achtergrondlaag. |
 | **[!UICONTROL Layer naming]** | Hiermee vergroot u de grootte van de uitgesneden afbeeldingslagen tot de grootte van de achtergrondlaag.<br>・ **[!UICONTROL Layer name]** - De afbeeldingen krijgen een naam na hun laagnamen in het PSD-bestand. Een laag met de naam Prijscode in het oorspronkelijke PSD-bestand wordt bijvoorbeeld een afbeelding met de naam Prijscode. Als de laagnamen in het PSD-bestand echter standaard Photoshop-laagnamen zijn (Achtergrond, Laag 1, Laag 2, enzovoort), krijgen de afbeeldingen een naam na hun laagnummers in het PSD-bestand. <br>・ **[!UICONTROL Photoshop and layer number]** - De afbeeldingen krijgen een naam na hun laagnummer in het PSD-bestand, waarbij de namen van de oorspronkelijke lagen worden genegeerd. Afbeeldingen krijgen de naam Photoshop en een toegevoegd laagnummer. De tweede laag van een bestand met de naam `Spring Ad.psd` krijgt bijvoorbeeld de naam `Spring Ad_2` , zelfs als het bestand een andere naam heeft dan de standaardnaam in Photoshop.<br>・ **[!UICONTROL Photoshop and layer name]** - De afbeeldingen krijgen een naam na het PSD-bestand gevolgd door de naam van de laag of het laagnummer. Het laagnummer wordt gebruikt als de laagnamen in het PSD-bestand standaard Photoshop-laagnamen zijn. Een laag met de naam `Price Tag` in een PSD-bestand met de naam `SpringAd` krijgt bijvoorbeeld de naam `Spring Ad_Price Tag` . Een laag met de standaardnaam Laag 2 wordt genoemd `Spring Ad_2`. |
@@ -145,9 +145,9 @@ U kunt de bestanden omzetten in pixels, zoekwoorden en koppelingen extraheren, d
 | PDF, optie | Beschrijving |
 | --- | --- |
 | **[!UICONTROL Processing]** | ・ **[!UICONTROL None]** - De PDF wordt niet verwerkt.<br>・ **[!UICONTROL Thumbnail]** - Ript elke pagina in het dossier van de PDF en zet het in een duimnagelbeeld om.<br> ・ **[!UICONTROL Rasterize]** - Hiermee worden de pagina&#39;s in het PDF-bestand uitgelijnd en worden vectorafbeeldingen omgezet in bitmapafbeeldingen. Kies deze optie om een eCatalog te maken. |
-| **[!UICONTROL Extract]** | ・ **[!UICONTROL None]** - Er worden geen zoekwoorden of koppelingen uit de PDF geëxtraheerd.<br>・ **[!UICONTROL Search words]** - Extraheert zoekwoorden uit het PDF-bestand, zodat het bestand kan worden doorzocht op trefwoord in een eCatalog-viewer.<br>・ **[!UICONTROL Links]** - Extraheert koppelingen uit de PDF-bestanden en converteert deze naar Afbeeldingen met hyperlinks die worden gebruikt in een eCatalog-viewer.<br>・ **[!UICONTROL Search words and links]** - Extraheert zowel zoekwoorden als koppelingen voor gebruik in een eCatalog-viewer. |
+| **[!UICONTROL Extract]** | ・ **[!UICONTROL None]** - Er worden geen zoekwoorden of koppelingen uit de PDF geëxtraheerd.<br>・ **[!UICONTROL Search words]** - Het systeem extraheert zoekwoorden uit het PDF-bestand en maakt zoekopdrachten van trefwoorden in een eCatalog-viewer mogelijk.<br>・ **[!UICONTROL Links]** - Extraheert koppelingen uit de PDF-bestanden en converteert deze naar Afbeeldingen met hyperlinks die worden gebruikt in een eCatalog-viewer.<br>・ **[!UICONTROL Search words and links]** - Extraheert zowel zoekwoorden als koppelingen voor gebruik in een eCatalog-viewer. |
 | **[!UICONTROL Resolution (pixel/inch)]** | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het PDF-bestand worden weergegeven. De standaardwaarde is 150. |
-| **[!UICONTROL Color space]** | ・ **[!UICONTROL Detect automatically]** - Behoudt de kleurruimte van het PDF-bestand.<br>・ **[!UICONTROL Force as RGB]** - Zet om in de kleurruimte RGB.<br>・ **[!UICONTROL Force as CMYK]** - Converteert naar de CMYK-kleurruimte.<br>・ **[!UICONTROL Force as Grayscale]** - Zet om in de grijswaardenkleurruimte. |
+| **[!UICONTROL Color space]** | ・ **[!UICONTROL Detect automatically]** - Behoudt de kleurruimte van het PDF-bestand.<br>・ **[!UICONTROL Force as RGB]** - Het wordt omgezet in de kleurruimte RGB.<br>・ **[!UICONTROL Force as CMYK]** - De kleurruimte wordt omgezet in de CMYK-kleurruimte.<br>・ **[!UICONTROL Force as Grayscale]** - Zet om in de grijswaardenkleurruimte. |
 
 ### Het tabblad Illustrator {#illustrator-tab}
 
@@ -160,7 +160,7 @@ Wanneer u Illustrator-afbeeldingsbestanden (AI) uploadt, kunt u deze op verschil
 
 | Illustrator, optie | Beschrijving |
 | --- | --- |
-| **[!UICONTROL Processing]** | Kies Rasteren om vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
-| **[!UICONTROL Maintain transparent background in rendered images]** | Hiermee blijft de achtergrondtransparantie van het bestand behouden. |
+| **[!UICONTROL Processing]** | Kies Rasteren om de vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
+| **[!UICONTROL Maintain a transparent background in rendered images]** | Hierbij blijft de achtergrondtransparantie van het bestand behouden. |
 | **[!UICONTROL Resolution (pixel/inch)]** | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het bestand worden weergegeven. |
-| **[!UICONTROL Color space]** | ・ **[!UICONTROL Detect automatically]** - Behoudt de kleurruimte van het bestand.<br>・ **[!UICONTROL Force as RGB]** - Zet om in de kleurruimte RGB.<br>・ **[!UICONTROL Force as CMYK]** - Converteert naar de CMYK-kleurruimte.<br>・ **[!UICONTROL Force as Grayscale]** - Zet om in de grijswaardenkleurruimte. |
+| **[!UICONTROL Color space]** | ・ **[!UICONTROL Detect automatically]** - Behoudt de kleurruimte van het bestand.<br>・ **[!UICONTROL Force as RGB]** - Het wordt omgezet in de kleurruimte RGB.<br>・ **[!UICONTROL Force as CMYK]** - Converteert naar de CMYK-kleurruimte.<br>・ **[!UICONTROL Force as Grayscale]** - Zet om in de grijswaardenkleurruimte. |
