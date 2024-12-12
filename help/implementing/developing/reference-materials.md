@@ -4,9 +4,9 @@ description: AEM beschikt over uitgebreide en krachtige API's die u kunt gebruik
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
+source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
@@ -70,16 +70,21 @@ AEM biedt aanpasbare componenten en leveringsopties voor inhoud.
 | [ de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | De gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken |
 | [ JSON Exporter ](/help/implementing/developing/components/json-exporter.md) | De inhoud van elke AEM pagina leveren in de indeling van het JSON-gegevensmodel |
 | [ toelatend de Uitvoer JSON voor een Component ](/help/implementing/developing/components/enabling-json-exporter.md) | JSON-export van componentinhoud genereren op basis van een modellerframework |
-| [ Assets API ](/help/assets/mac-api-assets.md) | Hiermee kunt u CRUD-bewerkingen (read-read-update-delete) maken voor elementen, waaronder binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie AEM Assets HTTP API |
-| [ de Fragmenten van de Inhoud HTTP API ](/help/assets/content-fragments/assets-api-content-fragments.md) | Inhoud rechtstreeks benaderen via de HTTP-API via CRUD-bewerkingen |
-| [ het Fragment van de Inhoud GraphQL API ](/help/headless/graphql-api/content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients in CMS-implementaties zonder kop inschakelen |
-| [ de Fragmenten van de Inhoud Assets HTTP API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Exacte indeling van ondersteunde HTTP-elementaanvragen |
 | [ het Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) | Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s |
 | [ AEM REST OpenAPI voor levering van inhoudsfragmenten ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | Een HTTP REST API op AEM Edge Delivery Services, die wordt ontworpen om gestructureerde inhoud van de Fragments van de Inhoud in formaat te leveren JSON. |
+| [ het Fragment van de Inhoud GraphQL API ](/help/headless/graphql-api/content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients in CMS-implementaties zonder kop inschakelen |
+|  |  |
+| [ Assets API ](/help/assets/mac-api-assets.md) | Hiermee kunt u CRUD-bewerkingen (read-read-update-delete) maken voor elementen, waaronder binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie AEM Assets HTTP API |
+| [ de Fragmenten van de Inhoud HTTP API ](/help/assets/content-fragments/assets-api-content-fragments.md) | Inhoud rechtstreeks benaderen via de HTTP-API via CRUD-bewerkingen |
+| [ de Fragmenten van de Inhoud Assets HTTP API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Exacte indeling van ondersteunde HTTP-elementaanvragen |
+
+>[!NOTE]
+>
+>Zie [ AEM APIs voor Gestructureerde Inhoudslevering en Beheer ](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
 
 ## SPA-specifieke API&#39;s {#spa-apis}
 
-AEM SDK-framework van de Editor (SPA) voor één pagina biedt specifieke JavaScript API-referenties.
+AEM Single-Page Application (SPA) Editor SDK-framework biedt specifieke JavaScript API-referenties.
 
 | API | Beschrijving |
 |---|---|
