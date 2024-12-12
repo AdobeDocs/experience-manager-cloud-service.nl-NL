@@ -4,9 +4,9 @@ description: Leer hoe u met de Universal Editor het bewerken van 'what-you-see-i
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -87,8 +87,7 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent en de implementatie ervan in uw eigen projecten doorvoert.
 
 * Niet meer dan 25 AEM bronnen (Content Fragments, pages, Experience Fragments, Assets, enz.) moeten verwijzingen zijn als instrumentatie op één pagina.
-* AEM as a Cloud Service is de enige ondersteunde AEM.
-   * [Steun voor AEM 6.5 is beschikbaar als onderdeel van een programma voor vroegtijdige adoptie.](/help/release-notes/universal-editor/current.md#early-adoption)
+* AEM as a Cloud Service en [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) zijn de enige gesteunde AEM achtergronden.
 * AEM as a Cloud Service-release `2023.8.13099` of hoger is vereist.
 * Inhoudsauteurs moeten hun eigen individuele Experience Cloud-accounts hebben.
 * Als onderdeel van AEM ondersteunt de Universal Editor dezelfde desktopbrowsers als AEM.
