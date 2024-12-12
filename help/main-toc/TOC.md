@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eb3dbdc8107075cb5f6955f549bc9370f319588a
+source-git-commit: 5d0af9f7eaea4ad1aa6a979f46713d735f3a461a
 workflow-type: tm+mt
 source-wordcount: '5901'
 ht-degree: 2%
@@ -711,6 +711,11 @@ ht-degree: 2%
          + [Een adaptieve Forms insluiten in een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Adaptief formulier insluiten op basis van Core Components op een externe webpagina](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Het aangepaste formulier insluiten op basis van Foundation Components op een externe webpagina](/help/forms/embed-adaptive-form-external-web-page.md)
+         + Adaptieve Forms integreren met Adobe Marketo Engage {#integrate-adaptive-form-with-market-engage}
+            + [Adobe Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [ vorm vormen om met Marketo Engage te integreren ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Adobe Marketo Engage-gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [De handeling Verzenden naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + Formuliergegevensmodel {#use-form-data-model}
          + [AEM Forms verbinden met database of gegevensbron](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
@@ -722,11 +727,6 @@ ht-degree: 2%
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
          + [XML-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Adaptieve Forms integreren met Adobe Marketo Engage {#integrate-adaptive-form-with-market-engage}
-            + [Adobe Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [ vorm vormen om met Marketo Engage te integreren ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Adobe Marketo Engage-gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [De handeling Verzenden naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Adaptieve Forms {#adaptive-forms-authoring}
       + [Een adaptief formulier maken](/help/forms/create-an-adaptive-form.md)
       + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments.md)
