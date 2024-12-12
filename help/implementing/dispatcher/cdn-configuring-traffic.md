@@ -4,7 +4,7 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
+source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -431,7 +431,7 @@ data:
 De locaties van een omleiding kunnen letterlijke tekenreeksen zijn (bijvoorbeeld https://www.example.com/page) of het resultaat van een eigenschap (bijvoorbeeld pad) die optioneel wordt getransformeerd, met de volgende syntaxis:
 
 ```
-experimental_redirects:
+redirects:
   rules:
     - name: country-code-redirect
       when: { reqProperty: path, like: "/" }
