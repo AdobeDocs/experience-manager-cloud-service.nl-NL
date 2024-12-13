@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 65e6948053cc3e8f489cf00140c5513ca04583b7
+source-git-commit: 771724c248e2c566d466b11d3560895062ce8da0
 workflow-type: tm+mt
 source-wordcount: '5919'
 ht-degree: 2%
@@ -1112,7 +1112,7 @@ ht-degree: 2%
    + [Toepassingen voor AEM as a Cloud Service](/help/implementing/home.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
       + [Navigatie](/help/implementing/cloud-manager/navigation.md)
-      + [AEM](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + Programma&#39;s {#programs}
          + [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
