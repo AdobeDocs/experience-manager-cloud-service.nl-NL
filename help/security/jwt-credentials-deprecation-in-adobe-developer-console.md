@@ -4,9 +4,9 @@ description: Meer informatie over de impact van afschrijving van JWT-referenties
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,35 @@ De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [ 
 Als Cloud Manager AEM as a Cloud Service-omgevingen aanbiedt, wordt automatisch een Adobe Developer Console-project met JWT-referenties gegenereerd. Dit project is gemarkeerd als alleen-lezen, zoals in de onderstaande schermafbeelding wordt geïllustreerd. De klanten kunnen en zouden niet moeten proberen om deze projecten aan OAuth server-aan-Server geloofsbrieven te migreren. In plaats daarvan, zal de Adobe deze projecten op zich migreren, alvorens de geloofsbrieven niet meer bruikbaar zijn.
 
 ![ auto-geproduceerde projecten ](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## Veelgestelde vragen over automatisch gegenereerde projecten {#autogen-projects-faqs}
+
+Deze sectie verstrekt antwoorden op de vaakst gestelde vragen over JWT geloofsvervanging voor auto-geproduceerde projecten in AEM as a Cloud Service.
+
+**hoe ik doe welke projecten auto-geproduceerd zijn?**
+Navigeren naar de Adobe Developer Console | Sectie Projecten.  Automatisch gegenereerde AEM as a Cloud Service-projecten krijgen een vergrendelingspictogram met de id &#39;Automatisch gegenereerd&#39;.  Automatisch gegenereerde projecten volgen de indeling AEM-p#####-e####### en worden gemaakt door de gebruiker van een technische account.
+
+<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**wat als wij kwesties met onze auto-geproduceerde projecten ontmoeten?**
+
+De Zorg van de Klant van de Adobe van het contact ](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html).[
+
+**zou ik vooruit moeten gaan en onze auto-geproduceerde projecten migreren?**
+
+Er is geen actie vereist omdat Adobe automatisch gegenereerde gegevens voor uw rekening migreert voor omgevingen met AEM versie 17258 (aug &#39;24) en hoger.
+
+**wat zijn de chronologie voor migratie van auto-geproduceerde projecten?**
+
+Adobe zal in het eerste kwartaal van 2025 een gefaseerde migratiebenadering op gang brengen, te beginnen met ontwikkelomgevingen.
+
+**hoe zal onze instantie van AEM as a Cloud Service worden beïnvloed als wij een AEM versie hebben die ouder is dan AEM Versie 17258 (aug &quot;24)?**
+
+Automatisch gegenereerde projectintegratie werkt niet meer als ze in juni 2025 niet naar OAuth worden gemigreerd.
+
+Om een vlotte overgang te verzekeren zouden de klanten ](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) de Zorg van de Klant van de Adobe moeten contacteren [ en met het proces beginnen om aan de [ recentste AEM Versie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken. Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+
+**kan ik aan een gesteunde versie OAuth bevorderen zonder mijn Versie van AEM as a Cloud Service AEM te bevorderen?**
+
+Nee. Om een vlotte overgang te verzekeren zouden de klanten ](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) de Zorg van de Klant van de Adobe moeten contacteren [ en met het proces beginnen om aan de [ recentste AEM Versie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken. Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
