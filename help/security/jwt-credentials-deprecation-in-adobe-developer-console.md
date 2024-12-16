@@ -4,9 +4,9 @@ description: Meer informatie over de impact van afschrijving van JWT-referenties
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -65,10 +65,10 @@ Als Cloud Manager AEM as a Cloud Service-omgevingen aanbiedt, wordt automatisch 
 Deze sectie verstrekt antwoorden op de vaakst gestelde vragen over JWT geloofsvervanging voor auto-geproduceerde projecten in AEM as a Cloud Service.
 
 **hoe ik doe welke projecten auto-geproduceerd zijn?**
+
 Navigeren naar de Adobe Developer Console | Sectie Projecten.  Automatisch gegenereerde AEM as a Cloud Service-projecten krijgen een vergrendelingspictogram met de id &#39;Automatisch gegenereerd&#39;.  Automatisch gegenereerde projecten volgen de indeling AEM-p#####-e####### en worden gemaakt door de gebruiker van een technische account.
 
-<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
-
+![ Automatisch geproduceerde Projecten ](/help/security/assets/jwt-alert.png)
 
 **wat als wij kwesties met onze auto-geproduceerde projecten ontmoeten?**
 
