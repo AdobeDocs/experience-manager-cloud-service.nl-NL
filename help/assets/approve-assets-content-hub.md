@@ -2,9 +2,9 @@
 title: Assets goedkeuren voor Content Hub
 description: Leer hoe u middelen in Assets as a Cloud Service goedkeurt om ze beschikbaar te maken in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,12 @@ Voer de volgende stappen uit om goedkeuring voor nieuw opgenomen elementen in [!
    1. Verander **[!UICONTROL Field Label]** in _Goedgekeurde Assets_.
    1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:status_.
    1. Verander de Standaardwaarde in _goedgekeurd_.
+
+1. Net als bij stap 6 sleept u een **[!UICONTROL Single Line Text Field]** van de sectie **[!UICONTROL Build Form]** rechts naar de sectie Metagegevens in het formulier.
+1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
+   1. Verander **[!UICONTROL Field Label]** in _Doel van de Activering_.
+   1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:activationTarget_.
+   1. Verander de Standaardwaarde in _contenthub_.
 
 1. Klik op **[!UICONTROL Save]**.
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** het nieuwe metagegevensprofiel.
