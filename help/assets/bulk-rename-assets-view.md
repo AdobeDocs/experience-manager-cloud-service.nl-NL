@@ -2,7 +2,8 @@
 title: Naam van elementen wijzigen en naam van elementen in grote hoeveelheden wijzigen in  [!DNL Assets view]
 description: Leer hoe u de namen van elementen bulksgewijs kunt wijzigen met de nieuwe gebruikersinterface van Assets (Assets-weergave). Hiermee kunt u de naam van meerdere elementen tegelijk wijzigen.
 role: User
-source-git-commit: 8a62db7ecae8b90e05939b031344c226000bb304
+exl-id: e041811b-0246-408f-9246-248da55f66a1
+source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -50,7 +51,7 @@ Hieronder volgen enkele voorbeelden waarmee u AI kunt gebruiken om de naam van a
 * Verwijder het voor- en achtervoegsel en zorg dat u het middelste gedeelte van de naam behoudt.
 * Plaats een voorvoegsel voor de bestanden tussen 001, 002, enz. en vertalen in het Engels.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440975)
+>[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
 >[!NOTE]
 >
