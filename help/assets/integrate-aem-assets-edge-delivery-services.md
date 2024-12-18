@@ -2,9 +2,9 @@
 title: AEM Assets integreren tijdens het ontwerpen van inhoud voor Edge Delivery Services
 description: Leer hoe u de AEM Assets met Edge Delivery Services kunt integreren. Dankzij deze integratie kunt u AEM Assets integreren met Microsoft Word- en Google Docs, AEM Assets integreren met Universal Editor, Dynamic Media integreren met OpenAPI-mogelijkheden met Universal Editor en Dynamic Media integreren met OpenAPI-mogelijkheden met Microsoft Word en Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Als u een elementverwijzing wilt gebruiken, moet u beschikken over:
 * Toestemming voor een Assets Cloud Service-omgeving waarin Dynamic Media met Open API-mogelijkheden is ingeschakeld.
 * Een Dynamic Media-licentie.
 * De AEM Assets-insteekmodule sidekick is ingeschakeld en de verwijzing naar de kopie voor afbeeldingselementen is ingeschakeld. Voor meer details, zie [ dit ](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) voor Op document-Gebaseerd Authoring en zie [ dit ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) voor Universele Redacteur gebaseerd auteursrecht.
-* Assets die zijn goedgekeurd. Goedgekeurde Assets heeft `dam:status=Approved` via de Assets Cloud Servicen back-end- of UI-acties.
+* Assets die zijn goedgekeurd. Goedgekeurde middelen hebben `dam:status=Approved` via de Assets Cloud Servicen back-end- of UI-acties.
 
 ### Elementen gebruiken die zijn geleverd met Dynamic Media met OpenAPI-mogelijkheden{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
