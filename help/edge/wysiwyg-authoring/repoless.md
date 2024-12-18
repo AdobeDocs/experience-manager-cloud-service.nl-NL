@@ -3,13 +3,13 @@ title: Code op verschillende sites opnieuw gebruiken
 description: Als u veel vergelijkbare sites hebt die er meestal hetzelfde uitzien en hetzelfde gedrag vertonen, maar andere inhoud hebben, leert u hoe u code kunt delen over meerdere sites in een repoless-model.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
-
 
 # Code op verschillende sites opnieuw gebruiken {#repoless}
 
@@ -45,7 +45,7 @@ Er zijn verschillende stappen om de functie voor probleemloos gebruik voor uw pr
 
 1. [Toegangstoken ophalen](#access-token)
 1. [Configuratieservice instellen](#config-service)
-1. [Toegangsbeheer instellen](#access-control)
+1. [Siteconfiguratie en technische account toevoegen](#access-control)
 1. [AEM bijwerken](#update-aem)
 1. [Site verifiëren](#authenticate-site)
 
@@ -126,9 +126,9 @@ Bereik uit aan Adobe via uw kanaal van de Slack van het project of breng een ste
 
 Wanneer de openbare configuratie is gemaakt, kunt u deze openen via een URL die lijkt op `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` om de openbare configuratie te controleren.
 
-### Toegangsbeheer instellen {#access-control}
+### Padtoewijzing toevoegen voor siteconfiguratie en technische account instellen {#access-control}
 
-Om toegangsbeheer op te zetten, moet u de technische rekening verstrekken.
+U moet een siteconfiguratie maken en deze toevoegen aan uw padtoewijzing.
 
 1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het [**malplaatje van de Configuratie**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * U kunt de configuratie leeg laten met alleen de vooraf gedefinieerde kolommen `key` en `value` . U hoeft deze alleen te maken.
@@ -156,28 +156,31 @@ Om toegangsbeheer op te zetten, moet u de technische rekening verstrekken.
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. In uw browser kunt u nu de technische account ophalen als reactie op de volgende koppeling.
+
+Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vormen door uw technische rekening te bepalen zodat heeft het voorrechten om te publiceren.
+
+1. Haal in uw browser de technische account op als antwoord op de volgende koppeling.
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-De reactie zal gelijkaardig aan het volgende zijn.
+1. De reactie zal gelijkaardig aan het volgende zijn.
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. Stel de technische account in uw configuratie in met een cURL-opdracht die lijkt op het volgende:
 
