@@ -2,9 +2,9 @@
 title: Groepsmigratie
 description: Overzicht van groepsmigratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
+source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -37,16 +37,16 @@ Een belangrijke wijziging in AEM as a Cloud Service is het volledig geïntegreer
 
 Met het gereedschap Inhoud overbrengen en Cloud Acceleration Manager kunt u groepen migreren die zijn gekoppeld aan de inhoud die wordt gemigreerd naar het cloudsysteem. Dit doet u met het gereedschap Inhoud overbrengen door tijdens het extractieproces alle groepen van het bron- AEM systeem te kopiëren. Met CAM-inname worden dan alleen bepaalde groepen geselecteerd en gemigreerd:
 
+* Als een groep op ACL of het beleid van de GIDS van gemigreerde inhoud is, zal die groep worden gemigreerd, met een paar hieronder vermelde uitzonderingen.
 * Er zijn een aantal geïntegreerde groepen die al aanwezig zijn op het doelwolkensysteem; deze worden nooit gemigreerd.
-* De directe lidgroepen van om het even welke ingebouwde groep die direct of indirect in ACL of het beleid van de GIDS van gemigreerde inhoud wordt bedoeld zullen worden gemigreerd, om gebruikers te verzekeren die directe of indirecte leden van dergelijke groepen zijn hun toegang tot de gemigreerde inhoud handhaven.
-* Als een groep op ACL of het beleid van de GIDS van gemigreerde inhoud is, zal die groep worden gemigreerd.
+   * Sommige ingebouwde groepen kunnen lidgroepen omvatten die _niet_ ingebouwd zijn; om het even welke dergelijke lidgroepen (directe leden of leden van leden, enz.) die in ACL of het beleid van de GIDS van gemigreerde inhoud van verwijzingen worden voorzien zullen worden gemigreerd, om gebruikers te verzekeren die (of direct of indirect) lid van deze groepen zijn hun toegang tot de gemigreerde inhoud handhaven.
 * Andere groepen, zoals die niet gevonden op ACL of beleid van de GIDS, die reeds op het bestemmingssysteem, en die met om het even welke uniek-beperkte gegevens reeds op het doelsysteem, zullen niet worden gemigreerd.
 
 Merk op dat de weg die voor een groep wordt geregistreerd/wordt gemeld slechts de eerste weg is die die groep teweegbracht om worden gemigreerd, en die groep kon ook op andere inhoudspaden zijn.
 
 De meeste gemigreerde groepen zijn geconfigureerd om te worden beheerd door IMS.  Dit betekent dat een groep in IMS met dezelfde naam wordt gekoppeld aan de groep in AEM en dat alle IMS-gebruikers in de IMS-groep AEM gebruikers en leden van de groep in AEM worden.  Dit staat die gebruikers toe om toegang tot de inhoud volgens ACLs of beleid CUGs voor de groep te hebben.
 
-Merk op dat de gemigreerde groepen niet meer als &quot;lokale groepen&quot;worden beschouwd; zij zijn groepen IMS, en zij moeten in IMS opnieuw worden gecreeerd zodat zij tussen AEM en IMS kunnen worden gesynchroniseerd.  Groepen kunnen in IMS worden gemaakt via Admin Console, onder andere, afzonderlijk of in bulk.  Zie [ gebruikersgroepen ](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) voor details over het creëren van groepen individueel of in bulk op de Admin Console leiden.
+Merk op dat gemigreerde groepen niet meer worden beschouwd AEM &quot;lokale groepen&quot;; zij zijn voor IMS geschikte groepen in AEM hoewel zij misschien nog niet in IMS bestaan.  Ze moeten afzonderlijk opnieuw worden gemaakt in IMS, zodat ze kunnen worden gesynchroniseerd tussen AEM en IMS.  Groepen kunnen in IMS worden gemaakt via Admin Console, onder andere, afzonderlijk of in bulk.  Zie [ gebruikersgroepen ](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) voor details over het creëren van groepen individueel of in bulk op de Admin Console leiden.
 
 De uitzondering op deze IMS-configuratie geldt voor groepen die zijn gemaakt met Assets Collections. Wanneer een inzameling op AEM wordt gecreeerd, worden de groepen gecreeerd voor toegang tot die inzameling; dergelijke groepen worden gemigreerd naar het wolkensysteem, maar zij worden niet gevormd om door IMS te worden beheerd.  Als u IMS-gebruikers aan deze groepen wilt toevoegen, moeten ze op de pagina Groepseigenschappen in de Assets-gebruikersinterface worden toegevoegd, afzonderlijk of gezamenlijk als onderdeel van een andere IMS-groep.
 
