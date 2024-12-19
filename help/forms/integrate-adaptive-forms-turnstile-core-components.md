@@ -4,7 +4,8 @@ description: Verbeter de formulierbeveiliging met de Turnstile-service zonder mo
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 0%
@@ -91,13 +92,13 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
    * **[!UICONTROL Configuration Settings]:** selecteer een Configuratie van de Wolk die voor de Turnstile dienst wordt gevormd Captcha.
      >[!NOTE]
      >* U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen de dienst vermeld is, zie de sectie, [ Vorm Turnstile ](#steps-to-configure-hcaptcha), om te leren hoe te om een Container van de Configuratie tot stand te brengen om uw milieu van AEM Forms met de Dienst van Turnstile te verbinden.
+
    * **[!UICONTROL Validation]:** geef Captcha-validatie op in de vorm van een foutbericht:
+
       * **Bericht van de Fout:** verstrek het foutenbericht aan vertoning aan de gebruiker wanneer de voorlegging Captcha ontbreekt.
         >[!NOTE]
         >* Er wordt alleen een foutbericht weergegeven als de CAPTCHA op de client is ingevuld.
-
-
-1. Selecteer **[!UICONTROL Done]** .
+1. Klik op **[!UICONTROL Done]**.
 
 
 Alleen legitieme formulieren waarin de invuller van het formulier de uitdaging van de Turnstile-service met succes heeft verholpen, kunnen nu worden verzonden.
