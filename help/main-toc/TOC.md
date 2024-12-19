@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
+source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
 workflow-type: tm+mt
-source-wordcount: '5929'
+source-wordcount: '5938'
 ht-degree: 2%
 
 ---
@@ -755,7 +755,8 @@ ht-degree: 2%
             + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)
             + [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [hCAPTCHA gebruiken in een adaptieve Core-component van een formulier](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Captcha gebruiken in een adaptieve Core-component van een formulier](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Turnstile Captcha gebruiken in een adaptief formulier met Core-componenten](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components](/help/forms/supporting-new-language-localization-core-components.md)
             + [JSON-schema ontwerpen voor een adaptief formulier (kerncomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
