@@ -2,7 +2,7 @@
 title: AEM Assets integreren tijdens het ontwerpen van inhoud voor Edge Delivery Services
 description: Leer hoe u de AEM Assets met Edge Delivery Services kunt integreren. Dankzij deze integratie kunt u AEM Assets integreren met Microsoft Word- en Google Docs, AEM Assets integreren met Universal Editor, Dynamic Media integreren met OpenAPI-mogelijkheden met Universal Editor en Dynamic Media integreren met OpenAPI-mogelijkheden met Microsoft Word en Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
+source-git-commit: 3a758af4d17d761b8e3e4a77ea3cda6a4b6d0bb7
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -84,3 +84,4 @@ Stel de Universal Editor in om deze te integreren met AEM Assets. Dankzij deze i
 
 * Zie [ Configuratie in de Plaats van Edge Delivery ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) om een functie van de plukker van douanemiddelen in Universele Redacteur toe te voegen. Met de aangepaste elementkiezer kunt u elementen rechtstreeks in uw Universal Editor-inhoud invoegen.
 * Zie [ Overzicht van de Uitbreiding ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) leren hoe te om tot AEM Assets toegang te hebben en de activa op te nemen terwijl het ontwerpen in Universele Redacteur.
+
