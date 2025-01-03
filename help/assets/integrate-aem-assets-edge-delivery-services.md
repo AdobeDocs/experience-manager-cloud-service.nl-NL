@@ -2,9 +2,9 @@
 title: AEM Assets integreren tijdens het ontwerpen van inhoud voor Edge Delivery Services
 description: Leer hoe u de AEM Assets met Edge Delivery Services kunt integreren. Dankzij deze integratie kunt u AEM Assets integreren met Microsoft Word- en Google Docs, AEM Assets integreren met Universal Editor, Dynamic Media integreren met OpenAPI-mogelijkheden met Universal Editor en Dynamic Media integreren met OpenAPI-mogelijkheden met Microsoft Word en Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
+source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![ EDS2 ](/help/assets/assets/EDS2.png)
 
-Edge Delivery Services is een samenstellbare set services die u in staat stelt om een hoge mate van flexibiliteit te betrachten bij het schrijven en leveren van inhoud op uw website. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend de Universele Redacteur evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[ Edge Delivery Services ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u auteur en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend de Universele Redacteur evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 U kunt inhoud bewerken in:
 
