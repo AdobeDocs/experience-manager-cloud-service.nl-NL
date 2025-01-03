@@ -4,9 +4,9 @@ description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
@@ -23,12 +23,12 @@ AEM as a Cloud Service wordt geleverd met een geïntegreerde CDN, die is ontworp
 
 AEM-beheerde CDN voldoet aan de prestaties en de veiligheidsbehoeften van de meeste klanten. Voor publiceer rij, kunnen de klanten verkiezen om verkeer door hun eigen CDN te leiden, die zij moeten leiden. Deze optie is beschikbaar per geval, vooral wanneer de klanten bestaande erfenisintegratie met een leverancier hebben CDN die moeilijk zijn te vervangen.
 
-De klanten die aan de Edge Delivery Services rij willen publiceren kunnen uit beheerde CDN van de Adobe voordeel halen. Zie [ beheerde Adobe CDN ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+De klanten die aan de Edge Delivery Services rij willen publiceren kunnen uit beheerde CDN van de Adobe voordeel halen. Zie [ Beheerde Adobe CDN ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN met beheerde Adobe {#aem-managed-cdn}
+## Adobe beheerde CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Wanneer u uw eigen CDN gebruikt, hoeft u geen domeinen en certificaten in Cloud Manager te installeren. Het verpletteren in Adobe CDN wordt gedaan door het standaarddomein `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` te gebruiken, dat in het verzoek `Host` kopbal zou moeten worden verzonden. Als u de aanvraagheader `Host` overschrijft met een aangepaste domeinnaam, wordt de aanvraag mogelijk onjuist doorgestuurd via de Adobe-CDN.
+>Wanneer u uw eigen CDN gebruikt, hoeft u geen domeinen en certificaten in Cloud Manager te installeren. Het verpletteren in Adobe CDN wordt gedaan door het standaarddomein `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` te gebruiken, dat in het verzoek `Host` kopbal zou moeten worden verzonden. Als u de aanvraagheader `Host` overschrijft met een aangepaste domeinnaam, wordt de aanvraag mogelijk onjuist doorgestuurd via de Adobe-CDN of worden er 421 fouten gegenereerd.
 
 >[!NOTE]
 >
@@ -134,7 +134,31 @@ De extra hop tussen klant CDN en AEM CDN is slechts nodig als er een geheim voor
 
 Deze CDN-configuratie van de klant wordt ondersteund voor de publicatielaag, maar niet vóór de auteurslaag.
 
-### Voorbeeld van CDN-leveranciersconfiguraties {#sample-configurations}
+### Configuratie van foutopsporing
+
+Gebruik de header `x-aem-debug` met de waarde `edge=true` om fouten op te sporen in een BYOCDN-configuratie. Bijvoorbeeld:
+
+In Linux®:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+In Windows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+Dit weerspiegelt bepaalde eigenschappen die worden gebruikt in de aanvraag in de antwoordheader van `x-aem-debug` . Bijvoorbeeld:
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+Met behulp van deze methode kunt u bijvoorbeeld de waarden van de host controleren, of de randverificatie is geconfigureerd en de headerwaarde van de x-door:sturen-host, of een Edge-toets is ingesteld en welke sleutel wordt gebruikt (voor het geval één sleutel overeenkomt).
+
+### Voorbeeld-CDN-leveranciersconfiguraties {#sample-configurations}
 
 Hieronder worden verschillende configuratievoorbeelden van verschillende toonaangevende CDN-leveranciers weergegeven.
 
@@ -160,6 +184,11 @@ De voorbeeldconfiguraties die worden geleverd, tonen de benodigde basisinstellin
 **Redirection aan het publiceer de diensteindpunt**
 
 Wanneer een verzoek een verboden antwoord van 403 ontvangt, betekent dit dat in het verzoek een aantal vereiste koppen ontbreken. Een algemene reden hiervoor is dat de CDN zowel het apex- als het `www` -domeinverkeer beheert, maar niet de juiste header voor het `www` -domein toevoegt. Dit probleem kan worden opgelost door de AEM as a Cloud Service CDN-logboeken te controleren en de benodigde aanvraagheaders te controleren.
+
+**Fout 421 Verkeerd opnieuw richten**
+
+Wanneer een aanvraag een fout van 421 ontvangt met een hoofdtekst rond `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` , geeft deze aan dat de HTTP `Host` -set niet overeenkomt met een host op de certificaten voor de host. Dit geeft meestal aan dat `Host` of de SNI-instelling onjuist is. Zorg ervoor dat zowel de instellingen voor `Host` als die voor SNI verwijzen naar de publicatie-p&lt;PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com host.
+
 
 **teveel richt Lijn** opnieuw
 

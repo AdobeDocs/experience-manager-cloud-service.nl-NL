@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,14 @@ Er is een sectie op hoe te [ te roteren sleutels ](#rotating-secrets), die goede
 
 Zoals die in [ CDN in AEM as a Cloud Service ](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) pagina wordt beschreven, kunnen de klanten verkiezen om verkeer door hun eigen CDN te leiden, die als Klant CDN (ook genoemd ook BYOCDN) wordt bedoeld.
 
-Als deel van de opstelling, moeten CDN van de Adobe en CDN van de Klant over een waarde van de `X-AEM-Edge-Key` Kopbal van HTTP akkoord gaan. Deze waarde wordt geplaatst op elk verzoek, bij Klant CDN, alvorens het aan Adobe CDN wordt verpletterd, die dan bevestigt dat de waarde zoals verwacht is, zodat kan het andere kopballen van HTTP vertrouwen, met inbegrip van die die helpen het verzoek aan de aangewezen AEM oorsprong leiden.
+Als deel van de opstelling, moeten CDN van de Adobe en CDN van de Klant over een waarde van de `X-AEM-Edge-Key` Kopbal van HTTP akkoord gaan. Deze waarde wordt geplaatst op elk verzoek bij Klant CDN, alvorens het aan Adobe CDN wordt verpletterd, die dan bevestigt dat de waarde zoals verwacht is, zodat kan het andere kopballen van HTTP vertrouwen, met inbegrip van die die helpen het verzoek aan de aangewezen AEM oorsprong leiden.
 
 De *x-AEM-Edge-Zeer belangrijke* waarde wordt van verwijzingen voorzien door `edgeKey1` en `edgeKey2` eigenschappen in een dossier genoemd `cdn.yaml` of gelijkaardig, ergens onder een top-level `config` omslag. Lees [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure) voor details over de omslagstructuur en hoe te om de configuratie op te stellen.  De syntaxis wordt beschreven in het onderstaande voorbeeld.
 
+Voor verdere het zuiveren informatie en gemeenschappelijke fouten, gelieve te controleren [ Gemeenschappelijke Fouten ](/help/implementing/dispatcher/cdn.md#common-errors).
+
 >[!WARNING]
->Rechtstreekse toegang zonder de juiste X-AEM-Edge-Key wordt geweigerd voor alle aanvragen die aan de voorwaarde voldoen (in de onderstaande steekproef betekent dit dat alle aanvragen naar de publicatielaag worden verzonden). Als u authentificatie moet geleidelijk introduceren gelieve te zien [ veilig migrerend het risico van geblokkeerd verkeer ](#migrating-safely) sectie verminderen.
+>Rechtstreekse toegang zonder de juiste X-AEM-Edge-Key wordt geweigerd voor alle aanvragen die aan de voorwaarde voldoen (in de onderstaande steekproef betekent dit dat alle aanvragen naar de publicatielaag worden verzonden). Als u authentificatie moet geleidelijk introduceren, gelieve te zien [ veilig migrerend het risico van geblokkeerd verkeer ](#migrating-safely) sectie verminderen.
 
 ```
 kind: "CDN"
@@ -147,7 +149,7 @@ Tot de aanvullende eigenschappen behoren:
    * name - a descriptive string.
    * type - moet leeg zijn .
    * purgeKey1 - zijn waarde moet a [ Cloud Manager geheim-type de Variabele van het Milieu ](/help/operations/config-pipeline.md#secret-env-vars) van verwijzingen voorzien. Selecteer Alle voor het veld Toegepaste service. Het wordt aanbevolen dat de waarde (bijvoorbeeld `${{CDN_PURGEKEY_031224}}` ) de dag weergeeft waarop deze is toegevoegd.
-   * purgeKey2 - die voor omwenteling van geheimen wordt gebruikt, die in de [ het roteren geheime sectie ](#rotating-secrets) hieronder wordt beschreven. Minstens een van `purgeKey1` en `purgeKey2` moet worden gedeclareerd.
+   * purgeKey2 - die voor omwenteling van geheimen wordt gebruikt, die in de [ het roteren geheimen ](#rotating-secrets) hieronder sectie wordt beschreven. Minstens een van `purgeKey1` en `purgeKey2` moet worden gedeclareerd.
 * Regels: hiermee kunt u aangeven welke van de authenticatoren moeten worden gebruikt en of dit voor de publicatie- en/of voorvertoningslaag is.  Het omvat:
    * name - a descriptive string
    * wanneer - een voorwaarde die bepaalt wanneer de regel, volgens de syntaxis in het [ artikel van de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md) zou moeten worden geëvalueerd. Doorgaans bevat dit een vergelijking van de huidige laag (bijvoorbeeld publiceren).
@@ -202,7 +204,7 @@ Daarnaast bevat de syntaxis:
    * name - a descriptive string
    * type - must be `basic`
    * een array met maximaal 10 referenties, die elk de volgende naam/waarde-paren bevatten, die eindgebruikers kunnen invoeren in het standaard dialoogvenster voor de verificatie:
-      * gebruiker - de naam van de gebruiker
+      * gebruiker - de naam van de gebruiker.
       * wachtwoord - zijn waarde moet a [ Cloud Manager geheim-type milieuvariabele ](/help/operations/config-pipeline.md#secret-env-vars) van verwijzingen voorzien, met **allen** geselecteerd als de dienstgebied.
 * Regels: laat u verklaren welke authentificators zouden moeten worden gebruikt, en welke middelen zouden moeten worden beschermd. Elke regel bevat:
    * name - a descriptive string
