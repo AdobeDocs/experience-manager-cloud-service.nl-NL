@@ -2,7 +2,7 @@
 title: AEM Assets integreren tijdens het ontwerpen van inhoud voor Edge Delivery Services
 description: Leer hoe u de AEM Assets met Edge Delivery Services kunt integreren. Dankzij deze integratie kunt u AEM Assets integreren met Microsoft Word- en Google Docs, AEM Assets integreren met Universal Editor, Dynamic Media integreren met OpenAPI-mogelijkheden met Universal Editor en Dynamic Media integreren met OpenAPI-mogelijkheden met Microsoft Word en Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Bekijk deze video voor informatie over hoe u middelen kunt leveren met Dynamic M
 
 ## Voorbeeldsite voor Edge Delivery Services{#example-of-an-Edge-Delivery-Services-site}
 
-Zie [ WKND Reizen ](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home). Deze site wordt gemaakt met behulp van de op documenten gebaseerde ontwerpmogelijkheden van Edge Delivery Services. De inhoud van de plaats wordt authored in [ Dokken van Google ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), gebruikend Dynamic Media met mogelijkheden OpenAPI voor activalevering. Nadat de inhoud is gemaakt, wordt deze rechtstreeks vanuit het document gepubliceerd. Voor deze op document-Gebaseerde Opstelling van de Authoring, worden alle essentiële dossiers, omslagen, configuraties, het stileren van de website en functionaliteit codes opgeslagen in deze [ bewaarplaats van de Git ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+Zie [ WKND Reizen ](http://bit.ly/3DExLnf). Deze site wordt gemaakt met behulp van de op documenten gebaseerde ontwerpmogelijkheden van Edge Delivery Services. De inhoud van de plaats wordt authored in [ Dokken van Google ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), gebruikend Dynamic Media met mogelijkheden OpenAPI voor activalevering. Nadat de inhoud is gemaakt, wordt deze rechtstreeks vanuit het document gepubliceerd. Voor deze op document-Gebaseerde Opstelling van de Authoring, worden alle essentiële dossiers, omslagen, configuraties, het stileren van de website en functionaliteit codes opgeslagen in deze [ bewaarplaats van de Git ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
 
 ## AEM Assets integreren met op Universal Editor gebaseerde ontwerpflows voor Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
 
