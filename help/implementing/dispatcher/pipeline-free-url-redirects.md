@@ -4,9 +4,9 @@ description: Leer hoe u 301 of 302 omleidingen declareert zonder toegang tot Git
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 41d610728fe92b07db722694432653cf7f03ce9c
+source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
@@ -25,19 +25,20 @@ AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experiencelea
 
 * De mensen die redirects handhaven zijn bedrijfsgebruikers, die niet de noodzakelijke toegang hebben om dossierveranderingen in broncontrole of de mogelijkheid vast te leggen om een Cloud Manager web-tier configuratiepijplijn uit te voeren.
 * Het aantal omleidingen varieert van een paar tot tienduizenden.
-* U wilt de optie van een gebruikersinterface, of als douaneproject worden gecreeerd of door de [ ACS Commons te gebruiken richt de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) opnieuw.
+* U wilt de optie van een gebruikersinterface, of als douaneproject worden gecreeerd of door de [ ACS Commons te gebruiken richt de Manager van de Kaart van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) of [ ACS de Commons Redirect Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
 De kern van deze functie is de mogelijkheid voor AEM Apache/Dispatcher om een of meer kaartbestanden te laden (of opnieuw te laden) die op een opgegeven locatie in de publicatieopslagplaats zijn geplaatst. Het is belangrijk om te vermelden dat hoe de dossiers daar krijgen buiten het werkingsgebied van deze eigenschap is maar u kunt één van de volgende methodes overwegen:
 
 * De kaart voor herschrijven als een element invoegen in de gebruikersinterface van de auteur en deze publiceren.
 * Het installeren van de [ ACS Commons richt de Manager van de Kaart ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) opnieuw ([ minstens versie 6.7.0 of hoger ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
+* Het installeren van de [ ACS Commons richt Manager ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) opnieuw ([ minstens versie 6.10.0 of hoger ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), die ook een gebruikersinterface omvat om de url in kaart te brengen en kan ook het herschrijven kaartdossier publiceren.
 * Volledige flexibiliteit door een aangepaste toepassing te schrijven. U kunt bijvoorbeeld een gebruikersinterface of opdrachtregelinterface gebruiken om de URL-toewijzingen te beheren, of een formulier om een herschrijfmap te uploaden, die vervolgens AEM API&#39;s gebruikt om het kaartbestand voor herschrijven te publiceren.
 
 >[!NOTE]
 > Deze eigenschap vereist AEM versie **18311 of hoger**.
 
 >[!NOTE]
-> Het gebruik van deze eigenschap van de Manager van de Kaart van Redirect vereist ACSCommons versie **6.7.0 of hoger**.
+> Het gebruik van deze eigenschap van de Manager van de Kaart van Redirect vereist ACS versie van Commons **6.7.0 of hoger** terwijl het gebruik van Redirect Manager versie **6.10.0 of hoger** vereist.
 
 ## De kaart voor herschrijven {#rewrite-map}
 
