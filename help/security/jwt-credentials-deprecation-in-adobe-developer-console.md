@@ -4,9 +4,9 @@ description: Meer informatie over de impact van afschrijving van JWT-referenties
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
+source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >AEM 6.5 klanten zouden [ de vergelijkbare documentatie voor AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) voor meer informatie moeten van verwijzingen voorzien.
 
-De klanten van de Adobe gebruiken [ Adobe Developer Console ](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 3 juni 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet aan of na 27 jan. 2025 werken. U kunt [ lezen over de veroudering ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+De klanten van de Adobe gebruiken [ Adobe Developer Console ](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 3 juni 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet op of na 30 juni 2025 werken. U kunt [ lezen over de veroudering ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 Dit artikel bevat een extra context voor de manier waarop AEM as a Cloud Service de afleiding moet verwerken.
 
@@ -48,7 +48,7 @@ Zie {de Integraties IMS van de Opstelling voor AEM as a Cloud Service ](/help/se
 
 **Relevante AEM versies**: AEM as a Cloud Service
 
-De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [ Cloud Manager APIs ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aanhalen. De geloofsbrieven in het project van Adobe Developer zouden aan het server-aan-Server referentie type OAuth moeten worden gemigreerd alvorens de afgekeurde geloofsbrieven JWT in Januari 2025 verlopen.
+De klanten creëren de projecten van Adobe Developer Console zodat kunnen zij [ Cloud Manager APIs ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aanhalen. De geloofsbrieven in het project van Adobe Developer zouden aan het server-aan-Server referentie type OAuth moeten worden gemigreerd alvorens de afgekeurde geloofsbrieven JWT in juni 2025 verlopen.
 
 ## Automatisch gegenereerde projecten {#autogen-projects}
 
