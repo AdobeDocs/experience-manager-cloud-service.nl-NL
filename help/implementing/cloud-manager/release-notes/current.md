@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2024.12.0 in AEM 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ De volgende geplande release is 23 januari 2025.
 
 
 ## Nieuwe functies {#what-is-new}
+
+* **de Regels van de Kwaliteit van de Code:** Beginnend Donderdag, 13 Februari, 2025, gebruikt de stap van de de codekwaliteit van Cloud Manager nu een bijgewerkte versie SonarQube 9.9.5.90363.
+
+  De bijgewerkte regels, beschikbaar voor Cloud Manager op AEM as a Cloud Service bij [ deze verbinding ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager. Deze update kan van invloed zijn op uw kwaliteitswachttijden en kan implementaties blokkeren.
 
 <!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
