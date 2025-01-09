@@ -4,9 +4,9 @@ description: Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge D
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2195'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Het [`component-models.json` ](https://github.com/adobe-rnd/aem-boilerplate-xwal
 
 Merk op dat niet elk blok een model moet hebben. Sommige blokken zijn eenvoudig [ containers ](#container) voor een lijst van kinderen, waar elk kind zijn eigen model heeft.
 
-Het is ook nodig om te bepalen welke blokken bestaan en aan een pagina kunnen worden toegevoegd gebruikend de Universele Redacteur. Het [`component-definitions.json` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) dossier maakt een lijst van de componenten aangezien zij door de Universele Redacteur ter beschikking worden gesteld.
+Het is ook nodig om te bepalen welke blokken bestaan en aan een pagina kunnen worden toegevoegd gebruikend de Universele Redacteur. In het bestand [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) worden de componenten weergegeven zoals deze door de Universal Editor beschikbaar worden gesteld.
 
 ```json
 {

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
+source-git-commit: f971857e10cbed5f7c64870c53fa7409e39493bc
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5940'
 ht-degree: 2%
 
 ---
@@ -1247,6 +1247,7 @@ ht-degree: 2%
          + [Inleiding](/help/implementing/universal-editor/introduction.md)
          + [Gevallen gebruiken](/help/implementing/universal-editor/use-cases.md)
          + [Kenmerken en itemtypen](/help/implementing/universal-editor/attributes-types.md)
+         + [Componentdefinitie](/help/implementing/universal-editor/component-definition.md)
          + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)
          + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
          + [Gebeurtenissen](/help/implementing/universal-editor/events.md)

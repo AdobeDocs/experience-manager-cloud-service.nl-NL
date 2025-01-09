@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -123,9 +123,12 @@ Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht
 ### Componenten toevoegen aan containers {#adding-components}
 
 1. Selecteer een containercomponent in de [ inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) of in de redacteur.
-1. Selecteer vervolgens het pictogram Toevoegen in het deelvenster Eigenschappen.
 
    ![ Selecterend een component om aan een container ](assets/ue-add-component.png) toe te voegen
+
+1. Selecteer vervolgens het pictogram Toevoegen in het deelvenster Eigenschappen.
+
+   ![ Uitgezocht voeg pictogram toe ](assets/add-icon.png)
 
 De component wordt opgenomen in de container en kan in de redacteur worden uitgegeven.
 

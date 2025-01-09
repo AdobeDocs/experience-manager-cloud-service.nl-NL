@@ -4,7 +4,7 @@ description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 ![ Klonend het project ](assets/create-block/clone.png)
 
-2\. Bewerk het `component-definition.json` -bestand in de hoofdmap van het project en voeg de volgende definitie toe voor het nieuwe prijsblok en sla het bestand op.
+2\. Bewerk het [`component-definition.json` dossier ](/help/implementing/universal-editor/component-definition.md) bij de wortel van het project en voeg de volgende definitie voor uw nieuw citaatblok toe en bewaar het dossier.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-4\. Bewerk het `component-filters.json` dossier bij de wortel van het project en voeg het citaatblok aan de [ filterdefinitie ](/help/implementing/universal-editor/customizing.md#filtering-components) toe om het blok toe te staan om aan om het even welke sectie worden toegevoegd en het dossier te bewaren.
+4\. Bewerk het [`component-filters.json` dossier ](/help/implementing/universal-editor/customizing.md#filtering-components) bij de wortel van het project en voeg het citaatblok aan de [ filterdefinitie ](/help/implementing/universal-editor/customizing.md#filtering-components) toe om het blok toe te staan om aan om het even welke sectie worden toegevoegd en het dossier te bewaren.
 
 >[!BEGINTABS]
 
