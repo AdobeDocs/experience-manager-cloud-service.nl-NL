@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1809'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Voer de volgende stappen uit om de gebruikers van uw New Relic One-subaccount vo
 
    * U kunt tot **toegang hebben leidt gebruikers** optie. Bij de bovenkant van het **scherm van Milieu&#39;s** van uw programma, klik ![ Smock meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
-1. In **beheer de gebruikers van New Relic** dialoog, ga de eerste en achternaam van de gebruiker in u wilt toevoegen, en klik **toevoegen** knoop. Herhaal deze stap voor alle gebruikers die u wilt toevoegen.
+1. In **beheer de gebruikers van New Relic** dialoogdoos, ga de eerste en achternaam van de gebruiker in u wilt toevoegen, en klik **toevoegen** knoop. Herhaal deze stap voor alle gebruikers die u wilt toevoegen.
 
    ![ voeg gebruikers ](assets/newrelic-add-users.png) toe
 
@@ -174,7 +174,7 @@ Ga als volgt te werk als je geen e-mail van New Relic ontvangt:
 Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperkingen:
 
 * Er kunnen maximaal 30 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
-* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Beperkt**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change).
+* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Beperkt**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change).
 * AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
 
 >[!NOTE]
@@ -193,15 +193,15 @@ Adobe volgt de auteur-, publicatie- en voorvertoningsservices van AEM as a Cloud
 
 Uw New Relic One-account is gekoppeld aan een account met een primaire Adobe en bevat meerdere toepassingen die erin worden gerapporteerd: drie per AEM as a Cloud Service-omgeving.
 
-* Eén toepassing voor de auteurservice per omgeving
-* Eén toepassing voor de publicatieservice per omgeving (inclusief Golden Publish)
+* Eén toepassing voor de service Auteur per omgeving
+* Eén toepassing voor de `Publish` -service per omgeving (inclusief Golden Publish)
 * Eén toepassing voor de voorbeeldservice per omgeving
 
 Opmerking:
 
 * Elke toepassing gebruikt één licentiecode.
 * AEM as a Cloud Service-omgevingen rapporteren slechts aan één New Relic One-account.
-* De volledige meetgegevens en gebeurtenissen voor de bewaking van beide New Relic One worden zeven dagen bewaard.
+* De volledige meetgegevens en gebeurtenissen voor de bewaking van beide New Relic One worden drie maanden bewaard. &lt;!— CQDOC-22238 - Bijgewerkt van zeven dagen tot drie maanden. >
 +++
 
 +++**verzendt de Adobe waakzame berichten van New Relic One?** {#alerting-new-relic}
