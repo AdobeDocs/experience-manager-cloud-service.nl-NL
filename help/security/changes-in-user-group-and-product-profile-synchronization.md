@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
+source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # Wijzigingen in de synchronisatie van gebruikersgroepen en productprofielen {#changes-in-user-group-and-product-profile-synchronization}
 
@@ -43,3 +43,4 @@ Hiermee navigeert u naar de Adobe Admin Console, zoals hieronder in de schermafb
 ![ Achtervoegsels in de Admin Console ](/help/security/assets/admin-console-profile-suffixes.png)
 
 In het onwaarschijnlijke geval dat uw AEM toepassing verwijst naar een groep die niet meer in AEM wordt weergegeven, moet u in plaats daarvan i) een productprofiel uit de rechterAEM of ii) een Adobe Admin Console-gebruikersgroep gebruiken.
+
