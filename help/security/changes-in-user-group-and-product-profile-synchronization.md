@@ -5,9 +5,9 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
+source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,15 @@ Wanneer een gebruiker zich aanmeldt bij AEM as a Cloud Service of een toegangsto
 
 Op 28 januari zullen er enkele wijzigingen in het synchronisatiegedrag optreden plaatsvinden, zodat de gebruikersinterface overzichtelijker wordt en de prestaties worden geoptimaliseerd. Hierdoor zullen er minder groepen in AEM verschijnen. Twee categorieën van AEM worden verwijderd:
 
-1. AEM groepen met achtervoegsel `GROUP_NAME_SUFFIX` . Deze groepen verschijnen niet in Adobe Developer Console, maar in het scherm van het Beheer van de Groep van de AEM, zoals hieronder getoond. In het onwaarschijnlijke geval dat uw AEM toepassing naar deze groepen verwijst, zorg ervoor om de gebruikersgroepen van Adobe Admin Console in plaats daarvan te gebruiken.
+1. AEM groepen met achtervoegsel `GROUP_NAME_SUFFIX` . Deze groepen verschijnen niet in Adobe Developer Console, maar in het scherm van het Beheer van de Groep van de AEM, zoals hieronder getoond. In het onwaarschijnlijke geval dat uw AEM toepassing naar deze groepen verwijst, zorg ervoor om Adobe Admin Console gebruikersgroepen zonder dat achtervoegsel in plaats daarvan van verwijzingen te voorzien.
 
    ![ Verwijderde groepen 1 ](/help/security/assets/removed-groups-1.png)
 
-1. AEM groepen die zijn gekoppeld aan Adobe Admin Console-productprofielen die geen verband houden met de specifieke combinatie van AEM of omgeving (bijvoorbeeld `author` of `e4535` ). Dit kunnen productprofielen zijn die:
+1. AEM groepen die verbonden zijn met Adobe Admin Console-productprofielen die geen verband houden met de specifieke omgeving. Dit kunnen productprofielen zijn die:
 
    * in verband met andere Adobe producten
    * in verband met andere AEM
    * gerelateerd aan andere AEM omgevingen in hetzelfde AEM
-   * gerelateerd aan een andere laag (bijvoorbeeld `author` vs `publish` ) in dezelfde AEM.
    * gerelateerd aan Cloud Manager (bijvoorbeeld `Business Owner - Cloud Service`)
 
    In de onderstaande afbeelding ziet u bijvoorbeeld een groot aantal rijen met het patroon `AEM Administrators-<suffix>` of `AEM Users-<suffix>` , waarbij het achtervoegsel niet gerelateerd is aan de huidige omgeving.
@@ -43,11 +42,4 @@ Hiermee navigeert u naar de Adobe Admin Console, zoals hieronder in de schermafb
 
 ![ Achtervoegsels in de Admin Console ](/help/security/assets/admin-console-profile-suffixes.png)
 
-In het onwaarschijnlijke geval dat uw AEM toepassing naar deze groepen verwijst, zorg ervoor om de gebruikersgroepen van Adobe Admin Console in plaats daarvan te gebruiken.
-
->[!NOTE]
->
->Let vooral op deze potentiële valkuilen:
->
->1. Uw AEM toepassing is afhankelijk van een AEM groep die vanuit een Cloud Manager-productprofiel is gesynchroniseerd
->1. De publicatielaag van de AEM toepassing is afhankelijk van een AEM groep die vanuit een productprofiel voor de auteurslaag is gesynchroniseerd. Dit geldt ook voor het omgekeerde scenario (auteurslaag die op publicatielaag baseert).
+In het onwaarschijnlijke geval dat uw AEM toepassing verwijst naar een groep die niet meer in AEM wordt weergegeven, moet u in plaats daarvan i) een productprofiel uit de rechterAEM of ii) een Adobe Admin Console-gebruikersgroep gebruiken.
