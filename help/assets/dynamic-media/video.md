@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10380'
+source-wordcount: '10401'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,8 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
    * Maak uw eigen videocoderingsprofiel. Of, kunt u het vooraf bepaalde _Aangepaste Video Coderen_ profiel eenvoudig gebruiken dat met Dynamic Media komt.
 
-      * [ creeer een video het coderen profiel ](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [ creeer een video het coderen profiel ] (/help/assets/dynamic-media/video-profielen.
+      * De maximale resolutie voor videocodering van de uitvoer is 8,192 × 4,320 of 4,320 × 8,192,md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Leer meer over [ Beste praktijken voor video het coderen ](#best-practices-for-encoding-videos).
 
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waar u de primaire bronvideo&#39;s gaat uploaden.
@@ -41,7 +42,8 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
    * Upload uw primaire bronvideo&#39;s naar de toegewezen mappen. Nadat de video&#39;s zijn toegevoegd, worden deze gecodeerd volgens het videoverwerkingsprofiel dat aan de map is toegewezen.
 
-      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
+      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 × 25.
+      * De maximale ondersteunde invoervideoresolutie is 16,384 × 16,384.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [ upload uw video&#39;s ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Leer meer over [ Ondersteunde formaten van het inputdossier ](/help/assets/file-format-support.md).
@@ -168,9 +170,9 @@ Zie ook [ Kijkers voor Experience Manager Assets slechts ](https://experiencelea
 
 Voor adaptieve videostreaming op het bureaublad en mobiele apparaten zijn de video&#39;s die worden gebruikt voor het schakelen naar een andere bitsnelheid, gebaseerd op alle MP4-video&#39;s in de adaptieve videoset.
 
-Het afspelen van video vindt plaats met HLS of DASH of met progressieve videodownload. In eerdere versies van Experience Manager, zoals 6.0, 6.1 en 6.2, werden video&#39;s gestreamd via HTTP.
+Het afspelen van video vindt plaats met HLS of DASH of met progressief downloaden van video. In eerdere versies van Experience Manager, zoals 6.0, 6.1 en 6.2, werden video&#39;s gestreamd via HTTP.
 
-In Experience Manager 6.3 en hoger worden video&#39;s nu gestreamd via HTTPS (dat wil zeggen, HLS of DASH) omdat de URL van de DM-gatewayservice altijd HTTPS gebruikt. Dit standaardgedrag heeft geen gevolgen voor de klant. Videostreaming vindt altijd plaats via HTTPS als de browser dit ondersteunt. Zie de volgende tabel.
+In Experience Manager 6.3 en hoger worden video&#39;s nu gestreamd via HTTPS (dat wil zeggen HLS of DASH) omdat de URL van de DM-gatewayservice altijd HTTPS gebruikt. Dit standaardgedrag heeft geen gevolgen voor de klant. Videostreaming vindt altijd plaats via HTTPS als de browser dit ondersteunt. Zie de volgende tabel.
 
 Daarom
 
@@ -198,7 +200,7 @@ De volgende lijst beschrijft het apparaat, browser, en playbackmethode van video
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer DASH of HLS wordt aangevraagd. Bekende beperking: HTTP op DASH of HLS werkt niet in deze browser/werkend systeemcombinatie <br /> <br /> op Windows® 7 - Progressieve download. Gebruikt standaardlogica voor HTTP versus HTTPS protocol.</td>
+   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer DASH of HLS wordt aangevraagd. Bekende beperking: HTTP op DASH of HLS werkt niet in deze combinatie browser/besturingssysteem <br /> <br /> Op Windows® 7 - Progressief downloaden. Gebruikt standaardlogica voor HTTP versus HTTPS protocol.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -208,17 +210,17 @@ De volgende lijst beschrijft het apparaat, browser, en playbackmethode van video
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 of hoger</td>
-   <td>HLS of DASH* adaptieve bitsnelheidstreaming</td>
+   <td>Adaptieve bitsnelheidstreaming HLS of DASH*</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS of DASH* adaptieve bitsnelheidstreaming</td>
+   <td>Adaptieve bitsnelheidstreaming HLS of DASH*</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS adaptieve bitsnelheidstreaming</td>
+   <td>Adaptieve bitsnelheidstreaming van HLS</td>
   </tr>
   <tr>
    <td>Mobiel</td>
@@ -228,7 +230,7 @@ De volgende lijst beschrijft het apparaat, browser, en playbackmethode van video
   <tr>
    <td>Mobiel</td>
    <td>Chrome (Android™ 7 of hoger)</td>
-   <td>HLS of DASH* adaptieve bitsnelheidstreaming/td&gt;
+   <td>Adaptieve bitsnelheidstreaming HLS of DASH*/td&gt;
   </tr>
   <tr>
    <td>Mobiel</td>
@@ -238,12 +240,12 @@ De volgende lijst beschrijft het apparaat, browser, en playbackmethode van video
   <tr>
    <td>Mobiel</td>
    <td>Safari (iOS)</td>
-   <td>HLS adaptieve bitsnelheidstreaming</td>
+   <td>Adaptieve bitsnelheidstreaming van HLS</td>
   </tr>
   <tr>
    <td>Mobiel</td>
    <td>Chrome (iOS)</td>
-   <td>HLS adaptieve bitsnelheidstreaming</td>
+   <td>Adaptieve bitsnelheidstreaming van HLS</td>
   </tr>
  </tbody>
 </table>
@@ -284,16 +286,16 @@ Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
+* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 × 25.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
 
 | Grootte | Hoogte-breedteverhouding | Minimale bitsnelheid |
 |--- |--- |--- |
-| 1024 x 768 | 4:3 | 4500 kbps voor de meeste video&#39;s. |
-| 1280 x 720 | 16:9 | 3000 - 6000 kbps, afhankelijk van de hoeveelheid beweging in de video. |
-| 1920 x 1080 | 16:9 | 6000 - 8000 kbps, afhankelijk van de mate van beweging in de video. |
+| 1024 × 768 | 4:3 | 4500 kbps voor de meeste video&#39;s. |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps, afhankelijk van de hoeveelheid beweging in de video. |
+| 1920 × 1080 | 16:9 | 6000 - 8000 kbps, afhankelijk van de mate van beweging in de video. |
 
 ### De metagegevens van een bestand verkrijgen {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ In de volgende tabel wordt beschreven hoe de resultaten van de formule worden om
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
-Een video van 1440 x 1080 hoogte heeft bijvoorbeeld een hoogte-breedteverhouding van 1440/1080 of 1,33. In dit geval kiest u een voorinstelling voor videocodering met een hoogte-breedteverhouding van 4:3 om het videobestand te coderen.
+Een video van 1440 bij 1080 heeft bijvoorbeeld een hoogte-breedteverhouding van 1440/1080 of 1,33. In dit geval kiest u een voorinstelling voor videocodering met een hoogte-breedteverhouding van 4:3 om het videobestand te coderen.
 
 ### Bitsnelheid {#bitrate}
 
@@ -354,16 +356,16 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 
 ### Resolutie {#resolution}
 
-**Resolutie** beschrijft de hoogte en de breedte van een videodossier in pixel. De meeste bronvideo wordt opgeslagen met een hoge resolutie (bijvoorbeeld 1920 x 1080). Voor streamingdoeleinden wordt bronvideo gecomprimeerd tot een lagere resolutie (640 x 480 of lager).
+**Resolutie** beschrijft de hoogte en de breedte van een videodossier in pixel. De meeste bronvideo wordt opgeslagen met een hoge resolutie (bijvoorbeeld 1920 × 1080). Voor streamingdoeleinden wordt bronvideo gecomprimeerd tot een lagere resolutie (640 × 480 of lager).
 
-Resolutie en gegevenssnelheid zijn twee geïntegreerde gekoppelde factoren die de videokwaliteit bepalen. Als u dezelfde videokwaliteit wilt behouden, geldt dat hoe hoger het aantal pixels in een videobestand (hoe hoger de resolutie), hoe hoger de gegevenssnelheid. Neem bijvoorbeeld het aantal pixels per frame in een videobestand met een resolutie van 320 x 240 en een resolutie van 640 x 480:
+Resolutie en gegevenssnelheid zijn twee geïntegreerde gekoppelde factoren die de videokwaliteit bepalen. Als u dezelfde videokwaliteit wilt behouden, geldt dat hoe hoger het aantal pixels in een videobestand (hoe hoger de resolutie), hoe hoger de gegevenssnelheid. Neem bijvoorbeeld het aantal pixels per frame in een videobestand met een resolutie van 320 × 240 en een resolutie van 640 × 480:
 
 | Resolutie | Pixels per frame |
 |--- |--- |
-| 320 x 240 | 76.800 |
-| 640 x 480 | 307.200 |
+| 320 × 240 | 76.800 |
+| 640 × 480 | 307.200 |
 
-Het bestand van 640 x 480 heeft vier keer zoveel pixels per frame. Als u voor deze twee voorbeeldresoluties dezelfde gegevenssnelheid wilt bereiken, past u viermaal de compressie toe op het bestand van 640 x 480, waardoor de kwaliteit van de video kan afnemen. Daarom levert een videogegevenssnelheid van 250 Kbps beelden van hoge kwaliteit bij een resolutie van 320 x 240, maar niet bij een resolutie van 640 x 480.
+Het bestand van 640 × 480 heeft vier keer meer pixels per frame. Als u voor deze twee voorbeeldresoluties dezelfde gegevenssnelheid wilt bereiken, past u viermaal de compressie toe op het bestand van 640 × 480, waardoor de kwaliteit van de video afneemt. Een videogegevenssnelheid van 250 Kbps resulteert daarom in beelden van hoge kwaliteit bij een resolutie van 320 × 240, maar niet bij een resolutie van 640 × 480.
 
 Over het algemeen geldt dat hoe hoger de gegevenssnelheid, hoe beter de video wordt weergegeven en hoe hoger de resolutie die u gebruikt, hoe hoger de gegevenssnelheid waarmee u de weergavekwaliteit wilt behouden (in vergelijking met lagere resoluties).
 
@@ -383,6 +385,8 @@ Wanneer u een voorinstelling voor videocodering kiest (of maakt) voor uw primair
 | 720p | 720 | Groot scherm |
 | 1080p | 1080 | High-definition groot scherm |
 
+De maximale ondersteunde invoervideoresolutie is 16,384 × 16,384. De maximale resolutie voor videocodering van de uitvoer is 8,192 × 4,320 of 4,320 × 8,192.
+
 ### FPS (frames per seconde) {#fps-frames-per-second}
 
 In de Verenigde Staten en Japan wordt de meeste video met 29,97 fps opgenomen; in Europa wordt de meeste video met 25 fps opgenomen. Een film wordt opgenomen met 24 fps.
@@ -397,14 +401,14 @@ Als u deze verhouding wilt berekenen, deelt u de bronbreedte door de gecodeerde 
 
 Als de resulterende verhouding een geheel geheel getal is, betekent dit dat de video optimaal wordt geschaald. Als de resulterende verhouding geen geheel geheel getal is, is dit van invloed op de videokwaliteit doordat pixelartefacten overblijven op het scherm. Dit effect is vooral opvallend wanneer de video tekst heeft.
 
-Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden de drie gecodeerde video&#39;s de optimale coderingsinstellingen.
+Stel dat uw bronvideo bijvoorbeeld 1920 × 1080 is. In de volgende tabel bieden de drie gecodeerde video&#39;s de optimale coderingsinstellingen.
 
-| Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
+| Videotype | Breedte × Hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Source | 1920 x 1080 | 1 | 1 |
-| Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 3 |
-| Gecodeerd | 480 x 270 | 4 | 4 |
+| Source | 1920 × 1080 | 1 | 1 |
+| Gecodeerd | 960 × 540 | 2 | 2 |
+| Gecodeerd | 640 × 360 | 3 | 3 |
+| Gecodeerd | 480 × 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
 
@@ -532,7 +536,7 @@ Als u een van de drie bovengenoemde mogelijkheden inschakelt, kunnen alle mogeli
 
 | Capaciteit | Beschrijving |
 | --- | --- |
-| DASH | DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. U kunt ook kiezen voor beide opties met automatische schakelen tussen spelers als **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling van de viewer.<br> sommige zeer belangrijke voordelen van het toelaten van DASH op uw rekening omvatten het volgende:<ul><li>Pakketvideo voor aangepaste bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.</li><li>Bij voor browsers geoptimaliseerde streaming met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. Wanneer een Safari-browser wordt gebruikt, schakelt de videospeler automatisch over naar HLS.</li><li>U kunt uw voorkeursstreammethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.</li><li>Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingen gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.</li><li>Helpt de levering van video toegankelijker te maken voor uw klanten.</li><li>U kunt de URL voor streaming ook ophalen via API&#39;s.</li></ul> |
+| DASH | DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. U kunt ook kiezen voor beide opties met automatische schakelen tussen spelers als **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling van de viewer.<br> sommige zeer belangrijke voordelen van het toelaten van DASH op uw rekening omvatten het volgende:<ul><li>Pakketvideo voor aangepaste bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.</li><li>Bij voor browsers geoptimaliseerde streaming met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. De videospeler schakelt automatisch over naar HLS wanneer een Safari-browser wordt gebruikt.</li><li>U kunt uw voorkeursstreamingsmethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.</li><li>Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingen gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.</li><li>Helpt de levering van video toegankelijker te maken voor uw klanten.</li><li>U kunt de URL voor streaming ook ophalen via API&#39;s.</li></ul> |
 | Meerdere bijschriften en audiotracks | U kunt ervan profiteren dat ondersteuning voor meerdere bijschriften en audiotracks automatisch is ingeschakeld. Nadat u deze optie hebt ingeschakeld, worden alle volgende video&#39;s die u uploadt, verwerkt met een nieuwe back-endarchitectuur die ondersteuning biedt voor het toevoegen van meerdere bijschriften en audiotracks aan uw video&#39;s. |
 | Door AI gegenereerde bijschriften (beperkte beschikbaarheid) | Maak bijschriften voor uw video&#39;s die worden aangedreven door AI. Met AI wordt de transcriptie van de video gemaakt en omgezet in bijschriften. Zelfs de tijdlijn is gedefinieerd. |
 
@@ -1097,7 +1101,7 @@ U kunt lange-vormvideo&#39;s gemakkelijker bekijken en navigeren door hoofdstukm
 
 >[!NOTE]
 >
->De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
+>De gebruikte videospeler moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1224,7 +1228,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
