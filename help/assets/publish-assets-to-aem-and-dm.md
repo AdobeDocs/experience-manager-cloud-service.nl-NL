@@ -4,9 +4,9 @@ description: Met Quick Publish in Assets-weergave kunt u elementen gelijktijdig 
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Configureer deze instellingen om de publicatieopties voor AEM en Dynamic Media w
 
 ## Publish Assets tijdens uploaden {#piblish-assets-during-upload}
 
-U kunt elementen publiceren naar AEM en Dynamic Media terwijl u elementen uploadt naar een map. De publicatieopties die worden weergegeven, zijn afhankelijk van de Dynamic Media-publicatiemodus die is ingesteld voor de map waarnaar de elementen worden geüpload. De Dynamic Media-publicatiemodus kan worden ingesteld op:
+U kunt elementen publiceren naar AEM en Dynamic Media terwijl u elementen uploadt naar een map. De publicatieopties die worden weergegeven, zijn afhankelijk van de Dynamic Media-instellingen in de publicatiemodus van de map waarin de elementen worden geüpload. De Dynamic Media-publicatiemodus kan worden ingesteld op:
 
 * **op activering:** wanneer de activa aan deze omslag worden geupload, moet u de activa eerst uitdrukkelijk publiceren alvorens een verbinding URL/Embed wordt verstrekt.
 
@@ -42,7 +42,7 @@ U kunt elementen publiceren naar AEM en Dynamic Media terwijl u elementen upload
 
 ### Dynamic Media Publish-modus ingesteld op Na activering {#dynamic-media-publish-mode-set-to-upon-activation}
 
-Om activa tijdens te publiceren upload aan een omslag met de Wijze van Dynamic Media Publish die aan **wordt geplaatst op Activering**:
+Om activa te publiceren terwijl het uploaden van hen aan een omslag de waarvan Wijze van Dynamic Media Publish aan **op Activering** wordt geplaatst:
 
 1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De **opties van Publish** sectie toont de **Wijze van Publish DM** als **op Activering**.
    ![ uploadt beeld op activering ](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ Om activa tijdens te publiceren upload aan een omslag met de Wijze van Dynamic M
 
 ### Dynamic Media Publish-modus ingesteld op Direct {#dynamic-media-publish-mode-set-to-immediate}
 
-Om activa tijdens te publiceren upload aan een omslag met de Wijze van Dynamic Media Publish die aan **wordt geplaatst Onmiddellijk**:
+Om activa te publiceren terwijl het uploaden van hen aan een omslag waarvan de Wijze van Dynamic Media Publish aan **Onmiddellijk** wordt geplaatst:
 
-1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De sectie van de Opties van Publish toont de **wijze van Publish DM** als **Onmiddellijk**.
+1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De **opties van Publish** sectie toont de **Wijze van Publish DM** als **Onmiddellijk**.
    ![ dossier uploadt beeld - directe wijze ](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Aangezien de Wijze van Dynamic Media Publish **Onmiddellijk** is, worden de geuploade activa automatisch gepubliceerd aan Dynamic Media wanneer u **klikt uploadt**.
 
-2. Selecteer Publish aan **AEM om** de geüploade activa te publiceren aan AEM en te klikken uploadt.
+2. Selecteer **Publish aan AEM** om de geuploade activa aan AEM te publiceren en Upload te klikken.
 
    Als u **Publish aan AEM** selecteert, worden de activa gepubliceerd aan AEM en Dynamic Media, anders worden de activa gepubliceerd aan Dynamic Media.
 
@@ -68,7 +68,7 @@ Om activa tijdens te publiceren upload aan een omslag met de Wijze van Dynamic M
 
 Om activa tijdens te publiceren upload aan een omslag met de Wijze die van Dynamic Media Publish aan **Selectieve Publish** wordt geplaatst:
 
-1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De sectie van de Opties van Publish toont de **wijze van Publish DM** als **Selectieve Publish**.
+1. Klik **toevoegen Assets** > **doorbladert** > **doorbladert Dossiers** om aan de aangewezen omslag te navigeren om activa te uploaden. De **opties van Publish** sectie toont de **Wijze van Publish DM** als **Selectieve Publish**.
    ![ uploadt beeld-selectieve het publiceren wijze ](/help/assets/assets/upload-selective.svg)
 
 2. Selecteer **Publish aan AEM**, **Publish aan Dynamic Media**, of allebei zoals per uw vereisten en klik **uploaden**.
@@ -92,7 +92,7 @@ U kunt geen omslag publiceren die de Wijze heeft van Dynamic Media Publish die a
 
 Elementen publiceren met de pagina met zoekresultaten voor elementen:
 
-1. Geef de criteria op in de zoekbalk en klik op het pictogram Zoeken om de resultaten weer te geven.
+1. Geef de criteria op in de zoekbalk en klik op het zoekpictogram om de resultaten weer te geven.
 2. Selecteer de activa die u moet publiceren en **Publish klikken.**
 3. Selecteer AEM, Dynamic Media, of allebei volgens uw vereisten en klik **Publish.**
    ![ onderzoeksbeeld ](/help/assets/assets/search-mode.svg)
