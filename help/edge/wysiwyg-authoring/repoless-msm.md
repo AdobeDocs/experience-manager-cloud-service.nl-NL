@@ -3,13 +3,13 @@ title: Meerdeloos beheer van sites
 description: Leer beste praktijkaanbevelingen op hoe te om een project op een repoless manier met gelokaliseerde plaatsen te vestigen die hefboomwerking één enkele codebasis, elk omhoog door Edge Delivery Services worden gediend.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 0%
 
 ---
-
 
 # Meerdeloos beheer van sites {#repoless-msm}
 
@@ -140,7 +140,7 @@ In dit voorbeeld maken we de site `wknd-ch` voor de Zwitserse aanwezigheid van w
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

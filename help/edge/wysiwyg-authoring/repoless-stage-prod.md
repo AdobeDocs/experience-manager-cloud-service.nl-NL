@@ -3,13 +3,13 @@ title: Stage- en Prod-omgevingen zonder weerstand
 description: Leer hoe u afzonderlijke sites kunt instellen voor uw testomgeving en productieomgeving, waarbij u op een onophoudelijke manier één codebasis gebruikt.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 0%
 
 ---
-
 
 # Stage- en Prod-omgevingen zonder weerstand {#repoless-stage-prod}
 
@@ -73,7 +73,7 @@ Er zijn twee stappen aan het vormen van een afzonderlijke productiesite.
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
