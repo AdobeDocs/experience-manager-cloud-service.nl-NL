@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2518'
 ht-degree: 4%
 
 ---
@@ -314,6 +314,10 @@ Een fragment annoteren:
 1. Sluit de volledige-schermredacteur, de annotaties worden nog benadrukt. Als deze optie is geselecteerd, wordt een dialoogvenster geopend waarin u de annotatie verder kunt bewerken.
 
    ![ annoteren ](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>De eigenschap van Annotaties toont geen commentaren ingegaan in de nieuwe [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 ### Annotaties weergeven, bewerken, verwijderen {#viewing-editing-deleting-annotations}
 

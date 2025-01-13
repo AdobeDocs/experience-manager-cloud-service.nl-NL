@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1857'
+ht-degree: 1%
 
 ---
 
 # Een overzicht van het werken met inhoudsfragmenten {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Verschillende kenmerken van de Content Fragments en Content Fragment Models zijn beschikbaar via het Vroege Programma van de Aannemer.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Met Adobe Experience Manager (AEM) as a Cloud Service kunt u met inhoudsfragmenten paginaonafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Zij staan u toe om inhoud klaar voor gebruik in veelvoudige plaatsen, en over veelvoudige kanalen voor te bereiden, ideaal voor [ hoofdloze levering ](/help/headless/what-is-headless.md), en [ pagina authoring ](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -91,8 +97,11 @@ Deze pagina&#39;s en de volgende pagina&#39;s bevatten de taken voor het maken, 
 
 Nadat de fragmenten zijn gemaakt, kunt u:
 
-* [ gebruik de console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md) - om toegang te hebben, (aan voorproef of productie) te publiceren, en uw fragmenten van verwijzingen te voorzien
-* [ gebruik de redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) - om uit te geven, (aan voorproef of productie) te publiceren, en uw fragmenten van verwijzingen te voorzien
+* [ gebruik de console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md) - aan:
+   * toegang krijgen, publiceren (om een voorvertoning of productie weer te geven) en verwijzen naar uw fragmenten
+* [ gebruik de redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) - aan:
+   * bewerken, publiceren (voor voorvertoning of productie) en verwijzen naar uw fragmenten
+   * samenwerken met andere auteurs die opmerkingen gebruiken
 * [ analyseer ](/help/sites-cloud/administering/content-fragments/analysis.md) de structuur van uw Fragment van de Inhoud, gebruikend de redacteur
 * [ heb toegang tot uw fragmenten met GraphQL, voor hoofdloze levering aan uw toepassingen ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Of gebruik uw fragmenten voor paginaontwerp](/help/sites-cloud/authoring/fragments/content-fragments.md)

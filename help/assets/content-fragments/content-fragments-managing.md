@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1907'
+ht-degree: 4%
 
 ---
 
@@ -313,6 +313,7 @@ Naast de standaardopties, [ verstrekt de Chronologie ](/help/assets/manage-digit
 >* Opgegeven in de fragmenteditor
 >* Specifiek voor een geselecteerd tekstsegment binnen het fragment
 >
+>Noch toon de commentaren ingegaan in de nieuwe [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 Bijvoorbeeld:
 

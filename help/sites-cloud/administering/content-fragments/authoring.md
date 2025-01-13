@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2841'
 ht-degree: 0%
 
 ---
 
 # Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>Verschillende functies van de Content Fragment Editor zijn beschikbaar via het programma Vroege adopter.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Het ontwerpen van inhoudsfragmenten is zowel gericht op de levering zonder kop als op het ontwerpen van pagina&#39;s.
 
@@ -58,6 +64,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * deze verbindingen kunnen worden gebruikt om [ de structuur van het Fragment van de Inhoud te navigeren ](#navigate-structure)
 * juist paneel: stelt lusjes [ voor die de eigenschappen (meta-gegevens) en markeringen ](#view-properties-tags) tonen, informatie over de [ versiegeschiedenis ](#view-version-history), en informatie met betrekking tot om het even welke [ taalexemplaren ](#view-language-copies)
    * in het **lusje van Eigenschappen** kunt u de **Titel** en **Beschrijving** voor het fragment bijwerken, of **Variatie**
+   * In het **lusje van Commentaren** kunt u toevoegen, en lezen, commentaren helpen u met andere auteurs samenwerken
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
       * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **** instanties van het relevante gebied toevoegen
@@ -466,6 +473,25 @@ Bijvoorbeeld:
 >
 >Voor meer details over het vertalen van een Fragment van de Inhoud, en het creëren van taalexemplaren, zie [ AEM de Reis van de Vertaling zonder Titel ](/help/journey-headless/translation/overview.md).
 
+## Opmerkingen over het fragment {#commenting-on-your-fragment}
+
+Het **lusje van Commentaren** in het juiste paneel verstrekt de volgende mogelijkheden:
+
+* Een nieuwe opmerking toevoegen
+* Specifieke gebruikers in een opmerking labelen
+   * Ze ontvangen een melding met een koppeling om het fragment rechtstreeks te openen
+* Als een bestaande opmerking
+* Een opmerking beantwoorden
+* Uw opmerkingen opmaken; basisopmaak is beschikbaar
+* Een tekstzoekopdracht uitvoeren met bestaande opmerkingen
+* Een bestaande opmerking bewerken
+* Opmerkingen verwijderen
+
+![ de Redacteur van het Fragment van de Inhoud - Commentaren tabel ](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>Deze commentaren zijn niet zichtbaar als [ Annotaties in de originele redacteur ](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment), noch in de [ Chronologie van de console van Assets ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Voorvertoning van fragment weergeven {#preview-content-fragment}
 
