@@ -4,13 +4,13 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # Marketo Engage integreren met AEM Forms
 
@@ -66,24 +66,26 @@ Hieronder vindt u de eerste vereisten voor de verbinding van Marketo Engage met 
 
 ![Workflow](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 De configuratie van de Wolk verbindt uw instantie van de Experience Manager met de instantie van Adobe Marketo Engage. Voer de volgende stappen uit om een wolkenconfiguratie van het Marketo Engage tot stand te brengen:
 
 1. Ga naar **Hulpmiddelen** > **Cloud Servicen** > **Marketo Engage**.
 
    ![ Marketo Engage ](/help/forms/assets/marketo-engage.png)
 
-1. Open een omslag om de configuratie te ontvangen en **te klikken creeert**. Het **Create venster van de Configuratie van het Marketo Engage** verschijnt.
+2. Open een omslag om de configuratie te ontvangen en **te klikken creeert**. Het **Create venster van de Configuratie van het Marketo Engage** verschijnt.
 
    >[!NOTE]
    >
    > U kunt ook [ omslag voor de configuraties van de wolkendienst ](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations) vormen.
 
-1. Specificeer de **Titel** van de configuratie en de geloofsbrieven om met de dienst te verbinden. U kunt de verificatiegegevens ophalen van het Adobe Marketo Engage-dashboard:
+3. Specificeer de **Titel** van de configuratie en de geloofsbrieven om met de dienst te verbinden. U kunt de verificatiegegevens ophalen van het Adobe Marketo Engage-dashboard:
    * **identiteitskaart van de Cliënt** en **Geheime Cliënt** zijn beschikbaar in **Admin** > **Integratie** > **LaunchPoint** door de douanedienst te selecteren en **Details van de Mening te klikken**.
    * **Identiteit URL** is beschikbaar in **Admin** > **Integratie** > **Diensten van het Web** als **Identiteit** in de **REST API** sectie.
 
-1. Klik **verbinden**.  Bij een geslaagde verbinding wordt het bericht `Authentication Successful` weergegeven.
-1. Klik op **[!UICONTROL Create]** om de instellingen voor de cloudconfiguratie op te slaan.
+4. Klik **verbinden**.  Bij een geslaagde verbinding wordt het bericht `Authentication Successful` weergegeven.
+5. Klik op **[!UICONTROL Create]** om de instellingen voor de cloudconfiguratie op te slaan.
 
 ![ Configuratie van de Wolk van het Marketo Engage ](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -102,6 +104,3 @@ U hebt de configuratie van de cloudservice gemaakt om Adobe Marketo Engage te in
 ## Zie ook
 
 {{marketo-engage-see-also}}
-
-
-

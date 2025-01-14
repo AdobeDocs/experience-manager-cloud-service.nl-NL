@@ -4,13 +4,13 @@ Description: Learn how to configure the submit action of Adaptive Form to send d
 Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # De handeling Verzenden naar Marketo Engage configureren voor bestaande formulieren
 
@@ -34,13 +34,15 @@ Vereiste om de verzendhandeling naar Marketo Engage te configureren:
 
 ## Hoe te vormen verzend actie aan Marketo Engage voor bestaande vormen?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 U kunt de verzendactie van een adaptief formulier configureren om gegevens naar Adobe Marketo Engage te verzenden. Voer de volgende stappen uit om de verzendactie naar Marketo Engage te configureren:
 
 1. Open het adaptieve formulier voor bewerking.
-1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
-1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer om verzendactie te configureren wordt geopend.
-1. Open het **[!UICONTROL Submission]** lusje en selecteer voorlegt actie aangezien **aan Marketo Engage** voorlegt.
-1. Klik op **[!UICONTROL Done]**.
+2. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
+3. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer om verzendactie te configureren wordt geopend.
+4. Open het **[!UICONTROL Submission]** lusje en selecteer voorlegt actie aangezien **aan Marketo Engage** voorlegt.
+5. Klik op **[!UICONTROL Done]**.
 
 ![ Marketo legt Actie ](/help/forms/assets/marketo-engage-submit-action.png) {width=50% voor, height=50%}
 

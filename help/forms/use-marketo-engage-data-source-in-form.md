@@ -4,13 +4,13 @@ Description: Learn how to use Marketo Engage schema in Adaptive Forms.
 Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensbron van Marketo Engage configureren voor bestaande adaptieve Forms
 
@@ -36,16 +36,18 @@ Vereiste om Marketo Engage gegevensbron met vormen te gebruiken:
 
 ## Hoe te om bestaande Aangepaste Vorm voor de gegevensbron van het Marketo Engage te vormen?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 Voer de volgende stappen uit om een adaptief formulier te configureren met de gegevensbron van het Marketo Engage:
 1. Meld u aan bij de [!DNL Experience Manager Forms] Author-instantie.
 
-1. Open het adaptieve formulier voor bewerking.
-1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
-1. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend om de gegevensbron te configureren.
-1. Open het **[!UICONTROL Data Model]** lusje en selecteer een vormmodel als **Schakelaar**.
-1. Selecteer de **[!UICONTROL Connector]** in de vervolgkeuzelijst.
+2. Open het adaptieve formulier voor bewerking.
+3. Open de inhoudsstructuur en selecteer de **[!UICONTROL Guide Container]** .
+4. Klik het AanpassingsEigenschappen van de Container van de Vorm ![ AanpassingsContainer eigenschappen ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend om de gegevensbron te configureren.
+5. Open het **[!UICONTROL Data Model]** lusje en selecteer een vormmodel als **Schakelaar**.
+6. Selecteer de **[!UICONTROL Connector]** in de vervolgkeuzelijst.
 
-1. Nadat u **[!UICONTROL Connector]** hebt geselecteerd, kunt u de cloudconfiguratie selecteren.
+7. Nadat u **[!UICONTROL Connector]** hebt geselecteerd, kunt u de cloudconfiguratie selecteren.
 
    ![ Uitgezochte Verbinding van Marketo ](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ Voer de volgende stappen uit om een adaptief formulier te configureren met de ge
 
    ![ Source van Gegevens van Marketo ](/help/forms/assets/marketo-engage-data-source.png)
 
-1. Klik op **[!UICONTROL Done]**.
+8. Klik op **[!UICONTROL Done]**.
 
 U kunt ook de eigenschappen van het adaptieve formulier bewerken om de bijbehorende configuratie te wijzigen.
 
@@ -81,5 +83,3 @@ Nu, hebt u de gegevensbron van het Marketo Engage voor Adaptief Forms gevormd. D
 ## Zie ook
 
 {{marketo-engage-see-also}}
-
-
