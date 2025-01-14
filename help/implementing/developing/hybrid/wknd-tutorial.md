@@ -4,7 +4,7 @@ description: Ga in SPA ontwikkeling met dit meerdelige leerprogramma binnen dat 
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # WKND SPA Project {#wknd-spa-project}
+
+{{ue-over-spa}}
 
 Ga in SPA ontwikkeling met deze meerdelige zelfstudie die u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing leidt die verplettert om uw eigen SPA uit te voeren.
 

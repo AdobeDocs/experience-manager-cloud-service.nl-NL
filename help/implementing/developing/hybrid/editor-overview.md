@@ -4,7 +4,7 @@ description: In dit artikel wordt een uitgebreid overzicht gegeven van de SPA Ed
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 0%
@@ -16,6 +16,8 @@ ht-degree: 0%
 Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van dergelijke frameworks.
 
 De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Deze pagina geeft een overzicht van hoe SPA ondersteuning is gestructureerd in AEM, hoe de SPA Editor werkt en hoe het SPA framework en de AEM synchroon blijven.
+
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
@@ -158,7 +160,7 @@ De SPA Editor SDK ondersteunt de volgende minimale versies:
 * 16.x en hoger reageren
 * Angular 6.x en hoger
 
-Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, maar worden niet ondersteund.
+Eerdere versies van deze frameworks werken mogelijk samen met de AEM SPA Editor SDK, maar worden niet ondersteund.
 
 ### Aanvullende kaders {#additional-frameworks}
 

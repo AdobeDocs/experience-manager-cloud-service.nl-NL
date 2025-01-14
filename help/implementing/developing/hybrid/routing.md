@@ -4,7 +4,7 @@ description: Voor toepassingen van één pagina in AEM, is app verantwoordelijk 
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA{#spa-model-routing}
 
 Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verpletteren. Dit document beschrijft het verpletterende mechanisme, het contract, en beschikbare opties.
+
+{{ue-over-spa}}
 
 ## Project routeren {#project-routing}
 

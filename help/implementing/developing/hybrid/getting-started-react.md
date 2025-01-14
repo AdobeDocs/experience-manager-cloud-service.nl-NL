@@ -4,7 +4,7 @@ description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wo
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -20,6 +20,8 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 >[!NOTE]
 >
 >Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van de Angular zie [ Begonnen het worden met SPA in AEM - Angular ](getting-started-angular.md).
+
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 

@@ -1,20 +1,20 @@
 ---
 title: Optioneel - Hoe kunt u toepassingen voor één pagina maken (SPA) met Adobe Experience Manager (AEM)
-description: In deze optionele vervolg van de AEM Headless Developer Journey leert u hoe AEM koploze levering kunt combineren met traditionele full-stack CMS-functies en hoe u bewerkbare SPA kunt maken met AEM Editor-framework.
+description: In deze optionele vervolg van de AEM Headless Developer Journey leert u hoe AEM koploze levering kunt combineren met traditionele CMS-functies in volledige stapel en hoe u bewerkbare SPA kunt maken met AEM Editor-framework.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
 
 # Procedure voor het maken van toepassingen voor één pagina (SPA) met AEM {#create-spa}
 
-In deze facultatieve voortzetting van de [ AEM Headless Reis van de Ontwikkelaar ](overview.md), leert u hoe AEM koploze levering met traditionele volledig-stapelCMS eigenschappen kan combineren. U leert ook hoe u bewerkbare SPA kunt maken met behulp van AEM SPA Editor-framework en externe SPA kunt integreren, waardoor bewerkingsmogelijkheden naar wens worden ingeschakeld.
+In deze facultatieve voortzetting van de [ AEM Headless Reis van de Ontwikkelaar ](overview.md), leert u hoe AEM koploze levering met traditionele full-stack eigenschappen van CMS kan combineren. U leert ook hoe u bewerkbare SPA kunt maken met behulp van AEM SPA Editor-framework en externe SPA kunt integreren, waardoor bewerkingsmogelijkheden naar wens worden ingeschakeld.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -127,7 +127,6 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [ SPA Inleiding en Analyse ](/help/implementing/developing/hybrid/introduction.md) - een goede inleiding aan SPA in AEM.
 * [ het Ontwikkelen SPA voor AEM ](/help/implementing/developing/hybrid/developing.md) - Richtlijnen op hoe te om SPA voor AEM te ontwikkelen
 * [ SPA het Overzicht van de Redacteur ](/help/implementing/developing/hybrid/editor-overview.md) - Details van hoe de Redacteur van de SPA werkt
-* [ Server-zij het Teruggeven ](/help/implementing/developing/hybrid/ssr.md) - hoe te SSR voor AEM SPA te vormen
 * [ SPA de Documenten van de Verwijzing ](/help/implementing/developing/hybrid/reference-materials.md) - de verwijzingen van JavaScript API en verbindingen aan de open-bron AEM projecten GitHub SPA
 * [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - hoe te om de Fragmenten van de Inhoud tot stand te brengen
 * [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Geweven malplaatje dat tot een minimaal, best-practices-gebaseerd project van Adobe Experience Manager (AEM) als uitgangspunt voor uw website leidt

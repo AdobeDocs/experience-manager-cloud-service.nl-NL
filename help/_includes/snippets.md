@@ -1,7 +1,7 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -232,3 +232,11 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
    * URL van de live website. Bijvoorbeeld: `www.mydomain.com` .
    * URL van de oorspronkelijke website (`.hlx` URL).
 
+## Universele editor heeft de voorkeur boven SPA Editor {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>De SPA Editor blijft ondersteund door Adobe, maar de editors die u de koploze inhoud in AEM wilt beheren, hebben nu de voorkeur:
+>
+>* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor visueel het uitgeven van hoofdloze inhoud.
+>* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

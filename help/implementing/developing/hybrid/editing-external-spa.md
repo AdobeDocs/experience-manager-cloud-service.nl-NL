@@ -4,9 +4,9 @@ description: In dit document worden de aanbevolen stappen beschreven voor het up
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Een externe SPA bewerken in AEM {#editing-external-spa-within-aem}
 
 Wanneer het beslissen van [ welk niveau van integratie ](/help/implementing/developing/headful-headless.md) u tussen uw externe SPA en AEM zou willen hebben, overweeg dat u de SPA binnen AEM moet kunnen uitgeven en bekijken, vaak.
+
+{{ue-over-spa}}
 
 ## Overzicht {#overview}
 
@@ -35,7 +37,7 @@ Eerst, moet u de externe SPA aan uw AEM project uploaden.
 
 1. Vervang `src` in de `/ui.frontend` projectmap door de map `src` van de React-toepassing.
 1. Neem eventuele extra afhankelijkheden op in het bestand `/ui.frontend/package.json` van de app `package.json` .
-   * Zorg ervoor dat de SPAgebiedsdelen van SDK van [ geadviseerde versies ](/help/implementing/developing/hybrid/getting-started-react.md#dependencies) zijn.
+   * Zorg ervoor dat de SPA SDK gebiedsdelen van [ geadviseerde versies ](/help/implementing/developing/hybrid/getting-started-react.md#dependencies) zijn.
 1. Neem aanpassingen op in de map `/public` .
 1. Neem alle inlinescripts of stijlen op die in het `/public/index.html` -bestand zijn toegevoegd.
 
@@ -79,7 +81,7 @@ De instructie `initializationAsync` kan optioneel een `options` -object als para
 
 * `path` - Bij initialisatie wordt het model op het gedefinieerde pad opgehaald en opgeslagen in de `ModelStore` . Dit pad kan indien nodig worden gebruikt om de `rootModel` bij initialisatie op te halen.
 * `modelClient` - Hiermee kunt u een aangepaste client opgeven die het model ophaalt.
-* `model` - een `model` voorwerp dat als parameter typisch wordt overgegaan bevolkt wanneer [ gebruikend SSR ](/help/implementing/developing/hybrid/ssr.md).
+* `model` - Een `model` -object dat wordt doorgegeven als een parameter die doorgaans wordt gevuld bij gebruik van SSR.
 
 ### AEM authorable Leaf Components {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ Het volgende referentiemateriaal kan nuttig zijn om SPA in de context van AEM te
 * [Referentiematerialen SPA (API-referenties)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Bladeren en PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA](/help/implementing/developing/hybrid/routing.md)
-* [SPA en rendering op de server](/help/implementing/developing/hybrid/ssr.md)

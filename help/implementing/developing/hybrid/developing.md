@@ -4,7 +4,7 @@ description: Dit artikel stelt belangrijke vragen om te overwegen wanneer het in
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 0%
@@ -16,6 +16,8 @@ ht-degree: 0%
 Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van dergelijke frameworks.
 
 Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een SPA voor AEM te ontwikkelen en geeft een overzicht van de architectuur van AEM betreffende het opstellen van SPA op AEM.
+
+{{ue-over-spa}}
 
 ## SPA ontwikkelingsbeginselen voor AEM {#spa-development-principles-for-aem}
 
@@ -72,17 +74,17 @@ Er kunnen zich echter gevallen voordoen waarin deze functionaliteit niet volledi
    <th><strong>Nadelen</strong></th>
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als hoofdCMS zonder het <a href="/help/implementing/developing/hybrid/reference-materials.md"> kader van SDK van SPA Redacteur te gebruiken.</a></td>
+   <td>AEM wordt gebruikt als headless CMS zonder het <a href="/help/implementing/developing/hybrid/reference-materials.md"> SPA kader van SDK van de Redacteur te gebruiken.</a></td>
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td>
    <td><p>Inhoudsauteurs kunnen geen AEM gebruiken voor het schrijven van inhoud.</p> <p>De code is niet draagbaar of herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar aan de voorzijde bewerkbare sjablonen moet bijhouden via het JCR.</p> </td>
   </tr>
   <tr>
-   <td>De front-end ontwikkelaar gebruikt het SPA Editor SDK-framework, maar opent slechts enkele gebieden voor de auteur van de inhoud.</td>
+   <td>De front-end ontwikkelaar gebruikt het kader van SPA Editor SDK maar opent slechts enkele gebieden voor de auteur van de inhoud.</td>
    <td>De ontwikkelaar behoudt de controle over de app door alleen authoring in beperkte delen van de app in te schakelen.</td>
    <td><p>Inhoudsauteurs hebben slechts een beperkte AEM ervaring bij het schrijven van inhoud.</p> <p>De code riskeert niet draagbaar of herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar aan de voorzijde bewerkbare sjablonen moet bijhouden via het JCR.</p> </td>
   </tr>
   <tr>
-   <td>Het project gebruikt volledig de SPA Editor SDK en de frontend componenten worden ontwikkeld als bibliotheek en de inhoudsstructuur van de app wordt gedelegeerd aan AEM.</td>
+   <td>Het project gebruikt volledig de SPA Redacteur SDK en de frontend componenten worden ontwikkeld als bibliotheek en de inhoudsstructuur van app wordt gedelegeerd aan AEM.</td>
    <td><p>De app is herbruikbaar en draagbaar.</p> <p>De auteur van de inhoud kan de app bewerken via AEM ontwerpervaring voor inhoud.<br /> </p> <p>De SPA is compatibel met de sjablooneditor.</p> </td>
    <td><p>De ontwikkelaar heeft geen controle over de structuur van de app en het gedeelte van de inhoud dat aan AEM is gedelegeerd.</p> <p>De ontwikkelaar kan gedeelten van de app nog steeds reserveren voor de inhoud die niet is bedoeld om te worden gemaakt met AEM.</p> </td>
   </tr>

@@ -4,7 +4,7 @@ description: In dit document wordt het algemene, raamonafhankelijke contract bes
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA {#spa-blueprint}
 
 Om de auteur toe te laten om de AEM SPARedacteur te gebruiken om de inhoud van een SPA uit te geven, zijn er vereisten die de SPA moet vervullen.
+
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
@@ -51,7 +53,7 @@ Elk item in het model bevat een `:type` -veld dat een AEM-brontype weergeeft. Al
 
 #### Dynamisch model naar componenttoewijzing {#dynamic-model-to-component-mapping}
 
-Voor details over hoe het dynamische model aan componentenafbeelding in de SPA SDK van JavaScript voor AEM voorkomt zie het artikel [ Dynamische Model aan de Afbeelding van de Component voor SPA ](model-to-component-mapping.md).
+Voor details over hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor AEM voorkomt zie het artikel [ Dynamische Model aan de Afbeelding van de Component voor SPA ](model-to-component-mapping.md).
 
 ### Framework-specifieke laag {#framework-specific-layer}
 

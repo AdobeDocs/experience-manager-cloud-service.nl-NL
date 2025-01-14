@@ -4,7 +4,7 @@ description: Een overzicht van de API-referenties voor één pagina-toepassing e
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # Referentiematerialen SPA {#spa-reference-materials}
 
+{{ue-over-spa}}
+
 ## JavaScript API-referenties SPA voor NMP-modules {#api-references}
 
-Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules voor het framework van de AEM SPA Editor SDK.
+Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules voor het SDK-framework van de AEM SPA Editor.
 
 * [ Component Mapping ](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [ de ModelManager van de Pagina ](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

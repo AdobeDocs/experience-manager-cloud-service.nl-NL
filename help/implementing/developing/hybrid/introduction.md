@@ -4,7 +4,7 @@ description: Dit artikel introduceert de concepten van een SPA en loopt door het
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -16,6 +16,8 @@ ht-degree: 0%
 Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van dergelijke frameworks.
 
 De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Dit artikel doorloopt het gebruiken van een basis SPA toepassing voor creatie en toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
+
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
@@ -29,7 +31,7 @@ Het doel van deze inleiding en analyse is aan een AEM ontwikkelaar te tonen waar
 
 De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SPA Project app. Om samen met deze analyse te volgen, moet u het volgende beschikbaar hebben.
 
-* [Laatste ontwikkelings-SDK van AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Laatste ontwikkeling SDK van AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
    * Het zou als lokale ontwikkelomgeving moeten lopen.
    * U moet beheerdersrechten voor het systeem hebben.
 * [ de steekproefWKND SPA Project beschikbaar op GitHub ](https://github.com/adobe/aem-guides-wknd-spa)

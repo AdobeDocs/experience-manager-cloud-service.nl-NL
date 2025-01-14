@@ -4,7 +4,7 @@ description: Leer hoe u uw eigen samengestelde componenten maakt, componenten di
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
@@ -18,6 +18,8 @@ Samengestelde componenten gebruiken de modulaire aard van AEM componenten door m
 Wanneer samengestelde componenten correct worden geïmplementeerd in het kader van de Editor (SPA) van AEM toepassing voor één pagina, kunnen de auteurs van de inhoud deze componenten slepen en neerzetten, net als elke andere component, maar kunnen ze toch elke component die de samengestelde component vormt afzonderlijk bewerken.
 
 Dit artikel laat zien hoe u een samengestelde component kunt toevoegen aan uw toepassing voor één pagina, zodat u naadloos kunt werken met de AEM SPA Editor.
+
+{{ue-over-spa}}
 
 ## Hoofdletters gebruiken {#use-case}
 
