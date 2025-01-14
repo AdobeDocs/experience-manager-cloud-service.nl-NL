@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10401'
+source-wordcount: '10397'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,8 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
    * Maak uw eigen videocoderingsprofiel. Of, kunt u het vooraf bepaalde _Aangepaste Video Coderen_ profiel eenvoudig gebruiken dat met Dynamic Media komt.
 
-      * [ creeer een video het coderen profiel ] (/help/assets/dynamic-media/video-profielen.
-      * De maximale resolutie voor videocodering van de uitvoer is 8,192 × 4,320 of 4,320 × 8,192,md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [ creeer een video het coderen profiel ](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * De maximale resolutie voor videocodering van de uitvoer is 8,192 × 4,320 of 4,320 × 8,192,md.
       * Leer meer over [ Beste praktijken voor video het coderen ](#best-practices-for-encoding-videos).
 
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waar u de primaire bronvideo&#39;s gaat uploaden.

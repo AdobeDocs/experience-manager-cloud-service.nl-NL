@@ -5,9 +5,9 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Zie [ Vormend Uw CI-CD Pijpleiding ](/help/implementing/cloud-manager/configurin
 
 ## Codekwaliteitsregels {#understanding-code-quality-rules}
 
-Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Deze stap wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [ de kwaliteitsregels van de douanecode ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Deze stap wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels zijn gebaseerd op beste praktijken van AEM Techniek en zijn gekend als [ de kwaliteitsregels van de douanecode ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
