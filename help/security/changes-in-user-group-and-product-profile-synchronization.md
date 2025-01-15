@@ -6,9 +6,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: 605a8032430b1be4aacebfcf73cfc16ba7691349
+source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Wanneer een gebruiker zich aanmeldt bij AEM as a Cloud Service of een toegangstoken wordt gebruikt, worden Adobe Admin Console-gebruikersgroepen, productprofielen en services voor productprofielen als groepen gesynchroniseerd in de AEM repository.
 
-Op 27 januari zullen er enkele wijzigingen in het synchronisatiegedrag optreden plaatsvinden, zodat de gebruikersinterface overzichtelijker wordt en de prestaties worden geoptimaliseerd. Hierdoor zullen er minder groepen in AEM verschijnen. Twee categorieën van AEM worden verwijderd:
+Met AEM versies hoger dan 18751 (een onderhoudsrelease wordt op 27 januari uitgerold naar productieomgevingen), zullen er enkele wijzigingen in het synchronisatiegedrag optreden, waardoor er minder groepen in AEM verschijnen. Twee categorieën van AEM worden verwijderd:
 
 1. AEM groepen met achtervoegsel `GROUP_NAME_SUFFIX` . Deze groepen verschijnen niet in Adobe Developer Console, maar in het scherm van het Beheer van de Groep van de AEM, zoals hieronder getoond. In het onwaarschijnlijke geval dat uw AEM toepassing naar deze groepen verwijst, zorg ervoor om Adobe Admin Console gebruikersgroepen zonder dat achtervoegsel in plaats daarvan van verwijzingen te voorzien.
 
