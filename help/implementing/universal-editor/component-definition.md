@@ -3,13 +3,13 @@ title: Componentdefinitie
 description: Begrijp het JSON-contract tussen de componentdefinitie en de Universal Editor in detail.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Componentdefinitie {#component-definition}
 
@@ -79,7 +79,7 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 * `title` definieert de tekstuele beschrijving van de component die in de UI wordt weergegeven.
 * `id` geeft de component op unieke wijze aan.
    * Het [ componentenmodel ](/help/implementing/universal-editor/field-types.md#model-structure) van het zelfde `id` bepaalt de gebieden van de component.
-   * Omdat het uniek is kan het, bijvoorbeeld, in a [ filterdefinitie ](/help/implementing/universal-editor/customizing.md#filtering-components) worden gebruikt om te bepalen welke componenten aan een container kunnen worden toegevoegd.
+   * Omdat het uniek is kan het, bijvoorbeeld, in a [ filterdefinitie ](/help/implementing/universal-editor/filtering.md) worden gebruikt om te bepalen welke componenten aan een container kunnen worden toegevoegd.
 
 ## `plugins` {#plugins}
 

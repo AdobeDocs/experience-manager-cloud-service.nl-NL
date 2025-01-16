@@ -4,7 +4,7 @@ description: Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge D
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Voor elk blok:
    * De bloknaam wordt gebruikt om de juiste stijl en het script op te halen om het blok te versieren.
 * Kan a [ modelidentiteitskaart bepalen.](/help/implementing/universal-editor/field-types.md#model-structure)
    * De model-id is een verwijzing naar het model van de component, dat de velden definieert die beschikbaar zijn voor de auteur in het deelvenster Eigenschappen.
-* Kan a [ filteridentiteitskaart bepalen.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Kan a [ filteridentiteitskaart bepalen.](/help/implementing/universal-editor/filtering.md)
    * De filterID is een verwijzing naar het filter van de component, dat toestaat om het auteursgedrag te veranderen, bijvoorbeeld door te beperken welke kinderen aan het blok of de sectie kunnen worden toegevoegd, of welke eigenschappen RTE worden toegelaten.
 
 Al deze informatie wordt opgeslagen in AEM wanneer een blok aan een pagina wordt toegevoegd. Als het middeltype of de bloknaam ontbreken, zal het blok niet op de pagina teruggeven.
@@ -245,7 +245,7 @@ Een voorbeeld van dit is de [ sectiemetagegevens.](/help/edge/developer/markup-s
 
 Beide structuren hebben één dimensie: de lijst met eigenschappen. Met behulp van containerblokken kunnen onderliggende elementen worden toegevoegd (meestal van hetzelfde type of model) en zijn deze dus tweedimensionaal. Deze blokken ondersteunen nog steeds hun eigen eigenschappen die worden gerenderd als rijen met eerst één kolom. Maar zij staan ook toe toevoegend kinderen, waarvoor elk punt als rij en elk bezit als kolom binnen die rij wordt teruggegeven.
 
-In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogrammen als onderliggende pictogrammen, waarbij elk gekoppeld pictogram een afbeelding en een koppeling heeft. Merk [ filteridentiteitskaart ](/help/implementing/universal-editor/customizing.md#filtering-components) op die in de gegevens van het blok wordt geplaatst om de filterconfiguratie van verwijzingen te voorzien.
+In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogrammen als onderliggende pictogrammen, waarbij elk gekoppeld pictogram een afbeelding en een koppeling heeft. Merk [ filteridentiteitskaart ](/help/implementing/universal-editor/filtering.md) op die in de gegevens van het blok wordt geplaatst om de filterconfiguratie van verwijzingen te voorzien.
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ De zelfde manier een ontwikkelaar kan veelvoudige [ blokken bepalen en modellere
 
 Het inhoudsmodel van Edge Delivery Services staat opzettelijk slechts één enkel niveau van het nesten toe, dat om het even welke standaardinhoud of een blok bevat door een sectie is. Dit betekent dat, om complexere visuele componenten te hebben die andere componenten kunnen bevatten, zij als secties moeten worden gemodelleerd en samen moeten worden gecombineerd gebruikend auto-blokkerende cliëntkant. Typische voorbeelden hiervan zijn tabbladen en inklapbare secties zoals accordeons.
 
-Een sectie kan op dezelfde manier als een blok worden gedefinieerd, maar met het middeltype van `core/franklin/components/section/v1/section`. De secties kunnen een naam en a [ filteridentiteitskaart hebben, ](/help/implementing/universal-editor/customizing.md#filtering-components) die door de [ Universele Redacteur ](/help/implementing/universal-editor/introduction.md) slechts wordt gebruikt, evenals a [ modelidentiteitskaart, ](/help/implementing/universal-editor/field-types.md#model-structure) die wordt gebruikt om de sectiemetagegevens terug te geven. Het model is op deze manier het model van het blok met sectiemetagegevens, dat automatisch aan een sectie als sleutel-waardeblok zal worden toegevoegd als het niet leeg is.
+Een sectie kan op dezelfde manier als een blok worden gedefinieerd, maar met het middeltype van `core/franklin/components/section/v1/section`. De secties kunnen een naam en a [ filteridentiteitskaart hebben, ](/help/implementing/universal-editor/filtering.md) die door de [ Universele Redacteur ](/help/implementing/universal-editor/introduction.md) slechts wordt gebruikt, evenals a [ modelidentiteitskaart, ](/help/implementing/universal-editor/field-types.md#model-structure) die wordt gebruikt om de sectiemetagegevens terug te geven. Het model is op deze manier het model van het blok met sectiemetagegevens, dat automatisch aan een sectie als sleutel-waardeblok zal worden toegevoegd als het niet leeg is.
 
-[ modelidentiteitskaart ](/help/implementing/universal-editor/field-types.md#model-structure) en [ filteridentiteitskaart ](/help/implementing/universal-editor/customizing.md#filtering-components) van de standaardsectie is `section`. Deze kan worden gebruikt om het gedrag van de standaardsectie te wijzigen. In het volgende voorbeeld worden enkele stijlen en een achtergrondafbeelding toegevoegd aan het metagegevensmodel van de sectie.
+[ modelidentiteitskaart ](/help/implementing/universal-editor/field-types.md#model-structure) en [ filteridentiteitskaart ](/help/implementing/universal-editor/filtering.md) van de standaardsectie is `section`. Deze kan worden gebruikt om het gedrag van de standaardsectie te wijzigen. In het volgende voorbeeld worden enkele stijlen en een achtergrondafbeelding toegevoegd aan het metagegevensmodel van de sectie.
 
 ```json
 {
