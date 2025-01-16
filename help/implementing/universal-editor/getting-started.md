@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
+source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -119,6 +119,51 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
+
+## Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend. (Optioneel) {#content-paths}
+
+Als u een bestaand AEM project gebruikend [ de paginaredacteur hebt, ](/help/sites-cloud/authoring/page-editor/introduction.md) wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt bepalen welke editor AEM moet worden geopend op basis van de inhoudspaden of de `sling:resourceType` . Hierdoor verloopt de ervaring naadloos voor de auteurs, ongeacht de editor die nodig is voor de geselecteerde inhoud.
+
+1. Open de Manager van de Configuratie.
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. Bepaal de plaats van **Universele Dienst URL van de Redacteur** in de lijst en klik **geef de configuratiewaarden** uit.
+
+1. Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend.
+
+   * Op het **Universele gebied van de Toewijzing van de Redacteur die** opent, verstrek de wegen waarvoor de Universele Redacteur wordt geopend.
+   * In **Sling:resourceTypes die door Universeel gebied van de Redacteur** zal worden geopend, verstrek een lijst van middelen die direct door de Universele Redacteur worden geopend.
+
+1. Klik **sparen**.
+
+AEM opent de Universele Redacteur voor pagina&#39;s die op deze configuratie worden gebaseerd in de volgende orde.
+
+1. AEM controleert de toewijzingen onder `Universal Editor Opening Mapping` en als de inhoud zich onder de aldaar gedefinieerde paden bevindt, wordt de Universal Editor geopend.
+1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, AEM controleert als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
+1. Anders opent AEM de Pagina-editor.
+
+De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1} gebied van de Afbeelding te bepalen.**
+
+* `path`: Inhoudspad van de bron die moet worden geopend
+* `localhost`: ExternalAlizer-item voor `localhost` zonder schema, bijvoorbeeld `localhost:4502`
+* `author`: ExternalAlizer-item voor auteur zonder schema, bijvoorbeeld `localhost:4502`
+* `publish`: ExternalAlizer-item voor publiceren zonder schema, bijvoorbeeld `localhost:4503`
+* `preview`: ExternalAlizer-item voor voorvertoning zonder schema, bijvoorbeeld `localhost:4504`
+* `env`: `prod`, `stage` `dev` op basis van de gedefinieerde uitvoeringsmodi voor Verschuiven
+* `token`: Zoektoken vereist voor de `QueryTokenAuthenticationHandler`
+
+### Voorbeeldtoewijzingen {#example-mappings}
+
+* Open alle pagina&#39;s onder `/content/foo` op de AEM Auteur:
+
+   * `/content/foo:${author}${path}.html?login-token=${token}`
+   * Dit leidt tot het openen van `https://localhost:4502/content/foo/x.html?login-token=<token>`
+
+* Open alle pagina&#39;s onder `/content/bar` op een externe NextJS-server, waarbij alle variabelen als informatie worden opgegeven:
+
+   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+   * Dit leidt tot het openen van `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ## U bent klaar om de Universal Editor te gebruiken {#youre-ready}
 
