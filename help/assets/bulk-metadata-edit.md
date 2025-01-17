@@ -1,10 +1,10 @@
 ---
 title: Bulkmetagegevens bewerken in Assets View
-description: Leer hoe u de metagegevens van meerdere middelen die beschikbaar zijn in de Assets View tegelijk kunt bewerken.
+description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere elementen die tegelijkertijd beschikbaar zijn in de Assets View.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 55cb3bb5771c154191fe5b59e56cf9f077590169
+source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
