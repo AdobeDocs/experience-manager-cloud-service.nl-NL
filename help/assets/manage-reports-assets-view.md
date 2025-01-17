@@ -4,9 +4,9 @@ description: Open de gegevens in de sectie Rapporten van de mening van Assets om
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,11 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
 
 Krijg leveringsinzichten voor activa die met Dynamic Media worden geleverd, met de levering op activaniveau, informatie over de referentie, middelenweg in AEM Assets en unieke activa-id. Er kunnen rapporten worden gegenereerd voor alle middelen die via de Dynamic Media for AEM Assets-opslagplaats of voor een specifieke maphiërarchie in AEM Assets worden geleverd. Bovendien helpen de Dynamic Media Delivery Reports met het meten van het rendement van de geleverde middelen, het meten van de kanaalprestaties en het uitvoeren van bewuste taken voor middelenbeheer voor middelen.
 
+<!--
 >[!NOTE]
 > 
->Om vroege toegang tot het Rapport van de Levering van Dynamic Media over uw rekening van Dynamic Media te krijgen, [ creeer en verzend een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### Vereisten {#prereqs-dynamic-media-delivery-reports}
 
