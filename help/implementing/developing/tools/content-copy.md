@@ -4,9 +4,9 @@ description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruike
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -200,10 +200,3 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Het gereedschap voor het kopiëren van inhoud heeft geen versiemogelijkheid en kan niet automatisch gewijzigde inhoud of gemaakte inhoud detecteren in de bronomgeving in een inhoudenset sinds de laatste bewerking voor het kopiëren van inhoud.
    * Als u uw doelomgeving alleen wilt bijwerken met wijzigingen in de inhoud, moet u sinds de laatste bewerking voor het kopiëren van inhoud een inhoudsset maken. Geef vervolgens de paden op in de broninstantie waar wijzigingen zijn aangebracht sinds de laatste bewerking voor het kopiëren van inhoud.
 * Versiegegevens worden niet opgenomen in een inhoudskopie.
-
-## Bekende problemen {#known-issues}
-
-Ben me bewust van de volgende bekende kwestie wanneer het gebruiken van de [ functionaliteit van het inhoudsexemplaar.](/help/implementing/developing/tools/content-copy.md)
-
-* Als de naam van een bron in de bronomgeving wordt gewijzigd, kan dit ertoe leiden dat de bewerking voor het kopiëren van inhoud mislukt als gevolg van conflicterende UUID&#39;s in de doelomgeving.
-   * Om deze fout te vermijden, in plaats van het anders noemen van middelen, schrapt eerst hen en ontspant dan met de gewenste, nieuwe middelnaam.
