@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 66fd6f506aa8dddc2a948b3c7a07134b9ae3df54
+source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2298'
 ht-degree: 0%
 
 ---
 
-# Een adaptief formulier maken {#creating-an-adaptive-form-core-components}
+# Een adaptief formulier maken (kerncomponenten) {#creating-an-adaptive-form-core-components}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -35,7 +35,7 @@ Voordat u begint, moet u meer weten over het type Forms-componenten waarover u b
 
 U hebt het volgende nodig om een adaptief formulier te maken:
 
-* **laat de Aangepaste Componenten van de Kern van Forms voor uw milieu** toe: Wanneer u een programma creeert, de Aangepaste Componenten van de Kern van Forms reeds toegelaten voor uw milieu. Als u een as a Cloud Service milieu van Forms hebt dat op Archetype 39 of vroeger wordt gebaseerd, [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu ](enable-adaptive-forms-core-components.md) toe. Bij het toelaten van de Componenten van de Kern voor uw milieu, worden de **Aangepaste Forms (de Component van de Kern)** malplaatjes en de thema&#39;s toegevoegd aan uw milieu. Als uw AEMversie van SDK ouder dan 2023.02.0, [ ervoor zorgt dat u `prerelease` vlag hebt die op uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) wordt toegelaten aangezien de Adaptieve Componenten van de Kern van Forms deel van pre-huur vóór de versie 2023.02.0 vormden.
+* **laat de Aangepaste Componenten van de Kern van Forms voor uw milieu** toe: Wanneer u een programma creeert, de Aangepaste Componenten van de Kern van Forms reeds toegelaten voor uw milieu. Als u een as a Cloud Service milieu van Forms hebt dat op Archetype 39 of vroeger wordt gebaseerd, [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu ](enable-adaptive-forms-core-components.md) toe. Bij het toelaten van de Componenten van de Kern voor uw milieu, worden de **Aangepaste Forms (de Component van de Kern)** malplaatjes en de thema&#39;s toegevoegd aan uw milieu. Als uw AEM versie van SDK ouder dan 2023.02.0, [ ervoor zorgt dat u `prerelease` vlag hebt die op uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) wordt toegelaten aangezien de Adaptieve Componenten van de Kern van Forms deel van pre-prelease vóór de versie 2023.02.0 vormden.
 
 * **een Adaptief malplaatje van de Vorm**: Een malplaatje verstrekt een basisstructuur en bepaalt verschijning (lay-outs en stijlen) van een Aangepast Vorm. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. Bijvoorbeeld, verzendend de verzamelde gegevens naar een gegevensbron. De cloudservice biedt een OOTB-sjabloon met de naam blank:
 

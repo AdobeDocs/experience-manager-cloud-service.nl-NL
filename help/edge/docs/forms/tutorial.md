@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1806'
 ht-degree: 0%
 
 ---
@@ -61,27 +61,27 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
    >
    > Als u de Onderneming van GitHub met IP het filtreren gebruikt, kunt u volgende IP aan de lijst van gewenste personen toevoegen: 3.227.118.73
 
-   Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.hlx.page/` .
+   Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.aem.page/` .
 
    * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
    * `<repository>` geeft uw GitHub-opslagplaats aan.
    * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
-   Bijvoorbeeld, als de taknaam `main` is, is de bewaarplaats `wefinance`, en de eigenaar is `wkndforms`, zou de website in [ https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/) in gebruik zijn.
+   Bijvoorbeeld, als de taknaam `main` is, is de bewaarplaats `wefinance`, en de eigenaar is `wkndform`, zou de website in [ https://main-wefinance-wkndforms.aem.page/ ](https://main--wefinance--wkndform.aem.page/) in gebruik zijn
 
 
 
 ### Uw eigen inhoudsbron koppelen
 
-Uw onlangs gecreeerde bewaarplaats GitHub richt aan [ voorbeeldinhoud die in een omslag van de Aandrijving van Google ](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ) wordt opgeslagen. Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![ Inhoud van de Steekproef op de Aandrijving van Google ](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaats GitHub aan uw eigen inhoudsomslag te richten:
 
 1. Maak een nieuwe map die specifiek voor uw AEM inhoud is bestemd in Google Drive of Microsoft SharePoint. In dit document wordt een map gebruikt die op Microsoft SharePoint is gemaakt.
 
-1. Deel de map met de Adobe Experience Manager-gebruiker (helix@adobe.com).
+1. Deel de map met de Adobe Experience Manager-gebruiker (forms@adobe.com).
 
    ![ het Gebruik beheert de optie van de Toegang om omslag met AEM Gebruiker te delen - SharePoint ](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
    Zorg ervoor dat u bewerkingsrechten voor de map hebt opgegeven aan de Adobe Experience Manager-gebruiker.
 
-   ![ de omslag van het Aandeel met AEM Gebruiker, verstrekt het uitgeven rechten-SharePoint ](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![ omslag van het Aandeel met AEM Gebruiker, verstrek het uitgeven rechten-SharePoint ](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
 
-   ![ de omslag van het Aandeel met AEM Gebruiker, verstrekt het uitgeven rechten - de Aandrijving van Google ](/help/edge/assets/add-aem-user-google-folder.png)
+   ![ de omslag van het Aandeel met AEM Gebruiker, verstrekt het uitgeven rechten - de Aandrijving van Google ](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
 
-1. Kopieer de [ voorbeeldinhoud die in de omslag van de Aandrijving van Google ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) aan uw omslag wordt opgeslagen. Kopiëren:
+1. Kopieer de [ voorbeeldinhoud ](/help/edge/assets/wefinance1.zip) aan uw omslag. Kopiëren:
 
-   1. Download de bestanden samen of download afzonderlijke bestanden.
+   1. Pak de gedownloade map uit en kopieer de inhoud.
 
       ![ Inhoud van de Steekproef van de Download ](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
    1. Ga naar de bewaarplaats GitHub die u eerder gebruikend AEM Forms Boilerplate creeerde.
    1. Open de `fstab.yaml` voor bewerking.
-   1. Vervang de bestaande verwijzing door het pad naar de map die u met de AEM gebruiker hebt gedeeld (helix@adobe.com).
+   1. Vervang de bestaande verwijzing door het pad naar de map die u met de AEM gebruiker hebt gedeeld (forms@adobe.com).
 
       ![ Inhoud van de Steekproef op de Aandrijving van Google ](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ Niet-gepubliceerde inhoud voorvertonen:
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
@@ -183,11 +183,9 @@ Niet-gepubliceerde inhoud voorvertonen:
    * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
 
-   `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL.
+   `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndforms&#39; en gebruikt u de &#39;main&#39;-vertakking, is de URL:
-
-   [ https://main-wefinantie-wkndforms.hlx.page ](https://main--wefinance--wkndforms.hlx.page).
+   Bijvoorbeeld, als de bewaarplaats van uw project &quot;wefinantie&quot;wordt genoemd, wordt het gevestigd onder de rekeningseigenaar &quot;wkndform&quot;, en u gebruikt de &quot;belangrijkste&quot;tak en vormnaam als `enquiry`, URL is: [ https://main—wefinantie-wkndform.aem.live/inquiry ](https://main--wefinance--wkndform.aem.live/enquiry).
 
 ### Een formulier maken
 
@@ -195,11 +193,11 @@ De voorbeeldinhoud bestaat uit een blad &quot;vraag&quot; dat fungeert als sjabl
 
 ![ Vorm van het Onderzoek ](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Laten we beginnen met het bijwerken van een veldlabel. Open het &#39;vraag&#39;-blad om het te bewerken, wijzig het label van de verzendknop in `Let's Chat` en gebruik AEM Sidekick om het bestand voor te vertonen en te publiceren.
+Laten we beginnen met het bijwerken van een veldlabel. Open het &#39;vraag&#39;-blad om het te bewerken, wijzig het label van de verzendknop in `Let's Talk` en gebruik AEM Sidekick om het bestand voor te vertonen en te publiceren.
 
 ![ Vorm van het Onderzoek ](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Wanneer u een voorvertoning van het bestand weergeeft of het bestand publiceert, wordt een JSON-versie van het bestand op een nieuw tabblad weergegeven. Kopieer de voorvertoning (.hlx.page) of de publicatie (.hlx.live) URL van het bestand.
+Wanneer u een voorvertoning van het bestand weergeeft of het bestand publiceert, wordt een JSON-versie van het bestand op een nieuw tabblad weergegeven. Kopieer de voorvertoning (.name.page) of de publicatie (.aem.live) URL van het bestand.
 
 ![ JSON van de vormspreadsheet ](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ Ga naar de volgende URL om een voorbeeld van het bijgewerkte onderzoeksformulier
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-Het label van de verzendknop wordt bijgewerkt naar `Let's Chat` .
+Het label van de verzendknop wordt bijgewerkt naar `Let's Talk` .
 
-![ Vorm van het Onderzoek ](/help/edge/assets/updated-form.png)
+[![ Vorm van het Onderzoek ](/help/edge/assets/updated-form.png) ](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL: [ https://main—wefinance—wkndform.aem.live/inquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 Voor gedetailleerde informatie over het creëren van en het publiceren van een nieuwe vorm, hoofd over aan [ creeert een vorm ](/help/edge/docs/forms/create-forms.md) gids.
 
@@ -254,8 +255,8 @@ De map Adaptive Forms Block `blocks/form` is uw afspeelplaats voor opmaak en cod
 
 Klaar om uw creatie te presenteren? Gebruik Git om uw wijzigingen vast te leggen en door te drukken. Hiermee werkt u de voorvertoning- en productieomgevingen bij die toegankelijk zijn via deze URL&#39;s (vervang plaatsaanduidingen door uw projectdetails):
 
-Voorvertoning: `https://<branch>--<repo>--<owner>.hlx.page/`
-Productie: `https://<branch>--<repo>--<owner>.hlx.live/`
+Voorvertoning: `https://<branch>--<repo>--<owner>.aem.page/`
+Productie: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Gefeliciteerd! U hebt uw lokale ontwikkelomgeving ingesteld en uw wijzigingen geïmplementeerd.
 

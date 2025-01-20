@@ -4,9 +4,9 @@ description: Publish en Edge Delivery Services voor AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzamelin
 
 1. Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw AEM Edge Delivery-projectmap.
 
-1. Open het werkblad met het formulier. Bijvoorbeeld het werkboek `enquiry` form Microsoft Excel.
+1. Open het werkblad met het formulier. Bijvoorbeeld, het [ vraag ](/help/edge/assets/enquiry.xlsx) van het werkboek van Microsoft Excel.
 
 1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef het blad.
 
@@ -44,16 +44,16 @@ Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzamelin
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
    * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
    * `<repository>` geeft uw GitHub-opslagplaats aan.
    * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
-   Bijvoorbeeld, als de bewaarplaats van uw project &quot;portaal&quot;wordt genoemd, is het gevestigd onder de rekening &quot;wkndforms&quot;, en u gebruikt de &quot;belangrijkste&quot;tak, kijkt URL als het volgende:
+   Bijvoorbeeld, als de bewaarplaats van uw project &quot;wefinance&quot;wordt genoemd, is het gevestigd onder de rekening &quot;wkndform&quot;, en u gebruikt de &quot;belangrijkste&quot;tak en vorm als &quot;onderzoek&quot;, kijkt URL als het volgende:
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
 
 +++
 
@@ -66,15 +66,15 @@ Het formulier toevoegen aan uw webpagina:
 
 1. Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw `[AEM Edge Delivery project directory]` .
 
-1. Open een documentbestand waarin u het formulier wilt insluiten. U kunt bijvoorbeeld het `index.docx` -bestand openen of een nieuw document maken.
+1. Open een documentbestand waarin u het formulier wilt insluiten. Bijvoorbeeld, kunt u het {](/help/edge/assets/enquiry-form.docx) dossier openen 0} vraag-form.docx, of anders, tot een nieuw document leiden.[
 
 1. Bepaal de gewenste sectie in het document waar u het formulier wilt invoegen en navigeer naar de gewenste sectie.
 
-1. Voeg een blok met de naam &#39;Form&#39; toe aan het bestand, vergelijkbaar met het onderstaande voorbeeld:
+1. Voeg een blok met de naam &#39;Form&#39; toe aan het bestand. Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndform&#39; en gebruikt u de &#39;main&#39;-vertakking.
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
    ![ voeg een blok genoemd &quot;Vorm&quot;aan het dossier ](/help/edge/assets/enquiry-doc-to-embed-form.png) toe
 
@@ -85,25 +85,29 @@ Het formulier toevoegen aan uw webpagina:
    >
    > Zorg ervoor dat de URL is opgemaakt als een hyperlink en niet wordt weergegeven als onbewerkte tekst.
 
-   Gebruik de URL van de voorvertoning (.page URL) voor ontwikkelings- of testdoeleinden of de URL van de publicatie (.live) voor productiedoeleinden. Hier volgen enkele voorbeelden van URL&#39;s voor voorvertonen en publiceren:
+   Gebruik de URL van de voorvertoning (.page URL) voor ontwikkelings- of testdoeleinden of de URL van de publicatie (.live) voor productiedoeleinden.
+
+   Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndform&#39; en gebruikt u de &#39;main&#39;-vertakking.
+
+   Hier volgen enkele voorbeelden van URL&#39;s voor voorvertonen en publiceren:
 
    **Voorproef URL**
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndforms.hlx.page/inquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [ https://main—wefinance—wkndform.aem.page/inquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
    **Publish URL**
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
-1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de webpagina. Het formulier wordt nu weergegeven op de pagina. Bijvoorbeeld, hier is de vorm die op [ wordt gebaseerd onderzoeksspreadsheet ](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de webpagina. Het formulier wordt nu weergegeven op de pagina. Bijvoorbeeld, hier is de vorm die op [ wordt gebaseerd onderzoeksspreadsheet ](/help/edge/assets/enquiry.xlsx):
 
 
-   ![ de vorm van steekproefEDS van A ](/help/edge/assets/eds-form.png)
+   ![ de vorm van steekproefEDS van A ](/help/edge/assets/updated-form.png)
 
 1. Gebruik AEM Sidekick om het formulier te publiceren. Uw klanten kunnen het formulier nu invullen en verzenden.
 

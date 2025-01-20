@@ -4,9 +4,9 @@ description: De opties voor de vervolgkeuzelijst worden opgenomen in een afzonde
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,6 @@ De voordelen van het laden van een meerkeuzeoptie uit een afzonderlijk spreadshe
 
 * Vereenvoudigd beheer: houd meerkeuzeopties op een gecentraliseerde locatie voor eenvoudigere updates en toevoegingen.
 * Verbeterde efficiëntie: u hoeft lange optielijsten niet handmatig toe te voegen aan de formulierdefinitie.
-
-
-
 
 ![ drop-down opties ](/help/forms/assets/drop-down-options.png)
 
@@ -58,8 +55,8 @@ Voer uw landopties in de kolom &quot;Optie&quot; (en &quot;Waarde&quot;, indien 
 
 1. Voorproef en publiceer het `shared-country` blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Raadpleeg de URL die het `shared-country` -blad weergeeft:
-https://main—wefinance—wkndforms.hlx.live/inquiry.json?sheet=country
+   Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndform&#39; en gebruikt u de &#39;main&#39;-vertakking, de URL die het `shared-country` -blad toont:
+   [ https://main—wefinance—wkndform.aem.live/inquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -79,13 +76,14 @@ De eigenschap `Options` van een `select` -veld accepteert een URL. De URL retour
 
    ![ drop-down voor land ](/help/forms/assets/load-dropdown-options-form.png)
 
-U kunt naar [ onderzoeksspreadsheet ](/help/forms/assets/enquiry-options.xlsx) verwijzen om URL toe te voegen om drop-down lijstopties te laden.
+U kunt naar [ onderzoeksspreadsheet ](/help/edge/assets/enquiry.xlsx) verwijzen om URL toe te voegen om drop-down lijstopties te laden.
 
 Nadat u de URL in de formulierdefinitie hebt geïntegreerd om vervolgkeuzelijstopties te laden, worden de opties voor de vervolgkeuzelijst `Destination` weergegeven via de URL.
 
-Raadpleeg de onderstaande URL, die het `enquiry` -formulier weergeeft met de opties die op het afzonderlijke blad zijn opgeslagen:
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## Zie ook
 

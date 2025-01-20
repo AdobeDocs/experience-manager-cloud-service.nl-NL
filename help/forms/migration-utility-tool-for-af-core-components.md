@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,18 @@ Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere
 
 * Bij geslaagde conversies worden alle regels verwijderd die op het formulier worden toegepast. Regels worden niet automatisch gemigreerd. U moet deze regels handmatig opnieuw maken en toepassen op het geconverteerde formulier.
 * De vertaalinstellingen die in het oorspronkelijke formulier worden gebruikt, worden niet overgenomen. Vertaling voor het geconverteerde formulier opnieuw configureren.
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* Als de vorm die op de Componenten van de Stichting wordt gebouwd manuscripten of de regels van de douanefunctie bevat, moet u deze voor het omgezette vorm herschrijven die op de Componenten van de Kern wordt gebaseerd.
+* De volgende OOTB-basiscomponenten worden nog niet ondersteund in Core Components (Basiscomponenten) en worden daarom verwijderd in het geconverteerde formulier:
+   * Adobe Sign Block
+   * Diagram
+   * Lijst met bestandsbijlagen
+   * Plaatsaanduiding voetnoot
+   * Afbeeldingskeuze
+   * Volgende knop
+   * Vorige knop
+   * Krabbelhandtekening
+   * Samenvattingsstap
+   * Werkbalk
 
 ## Voorwaarden voor het gebruik AEM Moderniseren van gereedschappen
 
@@ -68,7 +79,7 @@ Voer de volgende stappen uit om AEM Moderniseer Hulpmiddelen aan uw lokale milie
 
    `java -jar aem-author-p4502.jar`
 
-1. Kloon de [ AEM Moderniseer Hulpmiddel ](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) bewaarplaats in uw lokaal systeem.
+1. Kloon de [ AEM Moderniseer Hulpmiddel ](https://github.com/adobe/forms-modernizer) bewaarplaats in uw lokaal systeem.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
