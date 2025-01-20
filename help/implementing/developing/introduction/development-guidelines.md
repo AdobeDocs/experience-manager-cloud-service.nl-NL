@@ -4,7 +4,7 @@ description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service e
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 0%
@@ -191,7 +191,7 @@ In plaats daarvan kan de Repository Browser worden gestart vanuit de AEM as a Cl
 
 Er is een set tools beschikbaar voor foutopsporing in AEM as a Cloud Service-ontwikkelomgevingen in de AEM as a Cloud Service Developer Console for RDE-, Dev-, stage- en productieomgevingen. De URL kan worden bepaald door de URL van de Auteur of Publish-service als volgt aan te passen:
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 Als sneltoets kunt u de volgende Cloud Manager CLI-opdracht gebruiken om de AEM as a Cloud Service Developer Console te starten op basis van een omgevingsparameter die hieronder wordt beschreven:
 
