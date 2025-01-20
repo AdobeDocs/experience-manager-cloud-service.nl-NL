@@ -1,13 +1,13 @@
 ---
 title: Inhoudsfragmenten ontwerpen
-description: Begrijp hoe u inhoud voor uw inhoudsfragmenten ontwerpt en maak variaties van die inhoud afhankelijk van het doel. Dit biedt extra flexibiliteit voor zowel levering zonder kop als het ontwerpen van pagina's.
+description: Begrijp hoe u inhoud voor uw inhoudsfragmenten ontwerpt en maak variaties van die inhoud afhankelijk van het doel. Inhoudsfragmenten bieden extra flexibiliteit voor zowel de levering zonder kop als het schrijven van pagina's.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2851'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,9 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
       * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **** instanties van het relevante gebied toevoegen
-   * als **de gebieden van Tijdelijke aanduiding van het Lusje** binnen het model worden bepaald worden zij hier getoond, en kunnen voor het navigeren worden gebruikt; zij zullen of horizontaal, of als drop-down lijst worden voorgesteld.
+   * als **de gebieden van Tijdelijke aanduiding van het Lusje** worden bepaald binnen het model zij hier en worden getoond:
+      * kan worden gebruikt voor navigatie
+      * wordt horizontaal weergegeven of als een vervolgkeuzelijst
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ In het linkerpaneel kunt u zien:
 
 ### Koppelingen volgen {#follow-links}
 
-In verschillende delen van de editor ziet u het koppelingspictogram. Hiermee kunt u het weergegeven item openen, bijvoorbeeld een Content Fragment Model, een Parent Reference of een fragment waarnaar wordt verwezen:
+In verschillende delen van de editor ziet u het koppelingspictogram. Dit pictogram kan worden gebruikt om het weergegeven item te openen, bijvoorbeeld een Content Fragment Model, een Parent Reference of een fragment waarnaar wordt verwezen:
 
 ![ de Redacteur van het Fragment van de Inhoud - Pictogram van de Verbinding ](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ Bijvoorbeeld:
 
 ## Opmerkingen over het fragment {#commenting-on-your-fragment}
 
-Het **lusje van Commentaren** in het juiste paneel verstrekt de volgende mogelijkheden:
+Om u toe te laten om in-product en in-context samen te werken, verstrekt het **lusje van Commentaren** in het juiste paneel de volgende mogelijkheden:
 
 * Een nieuwe opmerking toevoegen
 * Specifieke gebruikers in een opmerking labelen
