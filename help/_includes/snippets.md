@@ -1,7 +1,7 @@
 ---
-source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 0%
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
 * [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
+* [Formulierverzendservice gebruiken](/help/forms/forms-submission-service.md)
 
 
 ## Verschil tussen de Redacteur van de Regel in de Componenten van de Kern en de Redacteur van de Regel in de Componenten van de Stichting {#rule-editor-diff}

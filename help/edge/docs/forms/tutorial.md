@@ -4,7 +4,7 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
    * `<repository>` geeft uw GitHub-opslagplaats aan.
    * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
-   Bijvoorbeeld, als de taknaam `main` is, is de bewaarplaats `wefinance`, en de eigenaar is `wkndform`, zou de website in [ https://main-wefinance-wkndforms.aem.page/ ](https://main--wefinance--wkndform.aem.page/) in gebruik zijn
+   Bijvoorbeeld, als de taknaam `main` is, is de bewaarplaats `wefinance`, en de eigenaar is `wkndform`, zou de website in [ https://main-wefinance-wkndform.aem.page ](https://main--wefinance--wkndform.aem.page) in gebruik zijn
 
 
 
