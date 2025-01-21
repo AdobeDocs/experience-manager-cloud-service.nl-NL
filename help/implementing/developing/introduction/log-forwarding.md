@@ -4,9 +4,9 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
@@ -31,23 +31,21 @@ Er is een optie voor de logboeken van de AEM en van Apache/Dispatcher om door AE
 
 Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbestemming worden verzonden als deel van het I/O gebruik van het Netwerk van uw organisatie worden beschouwd.
 
-
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
 Dit artikel is als volgt geordend:
 
 * Opstelling - gemeenschappelijk voor alle registrerenbestemmingen
+* Vervoer &amp; Geavanceerde Voorzien van een netwerk - de overweging zou aan netwerkopstelling moeten worden gegeven alvorens registrerenconfiguratie te creëren
 * Logboekdoelconfiguraties - elke bestemming heeft een lichtjes verschillende indeling
 * Indelingen voor logberichten - informatie over de indelingen van logberichten
-* Geavanceerde netwerken - het verzenden van AEM en Apache/Dispatcher logboeken door een specifiek uitgang of door VPN
 * Het migreren van erfenislogboek door:sturen - hoe te zich van logboek door:sturen eerder opstelling door Adobe aan de zelf-serverbenadering te bewegen
-
 
 ## Instellen {#setup}
 
 1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ worden beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) (**soort** zou aan `LogForwarding` moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}` ) vertegenwoordigen geheime
 
 Het is mogelijk om verschillende waarden tussen CDN- logboeken en AEM (met inbegrip van Apache/Dispatcher) te plaatsen, door extra **cdn** en/of **a** blok na het **gebrek** blok te omvatten, waar de eigenschappen die in het **standaard** blok worden bepaald kunnen met voeten treden; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ Het is mogelijk om verschillende waarden tussen CDN- logboeken en AEM (met inbeg
 
 Een ander scenario moet of het door:sturen van de logboeken onbruikbaar maken CDN of AEM (met inbegrip van Apache/Dispatcher). Als u bijvoorbeeld alleen de CDN-logboeken wilt doorsturen, kunt u het volgende configureren:
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ Een ander scenario moet of het door:sturen van de logboeken onbruikbaar maken CD
          enabled: false
 ```
 
+## Vervoer en geavanceerde netwerken {#transport-advancednetworking}
+
+Sommige organisaties kiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen, anderen kunnen vereisen om havens buiten HTTPS (443) te gebruiken.  Als zo [ het Geavanceerde Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) zal moeten worden gevormd alvorens logboek het door:sturen configuratie op te stellen.
+
+Gebruik de lijst hieronder om te zien wat de vereisten voor Geavanceerde die Voorzien van een netwerk en Logging configuratie zijn op of u haven 443 of niet gebruikt, en of u uw logboeken om van een vast IP adres nodig hebt te verschijnen.
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Doelpoort</th>
+      <th>Verplichting voor Logs om van Vaste IP te verschijnen?</th>
+      <th>Geavanceerde netwerken vereist</th>
+      <th>LogForwarding.yaml Poortdefinitie vereist</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>Nee</td>
+      <td>Nee</td>
+      <td>Nee</td>
+    </tr>
+    <tr>
+      <td>Ja</td>
+      <td>Ja, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> Dedicated Egress </a></td>
+      <td>Nee</td>
+    <tr>
+    <tr>
+      <td rowspan="2">Niet-standaardpoort (bijvoorbeeld 8088)</td>
+      <td>Nee</td>
+      <td>Ja, <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress"> Flexibele uitgang </a></td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Ja</td>
+      <td>Ja, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address"> Dedicated Egress </a></td>
+      <td>Ja</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>Of uw logboeken van één enkel IP adres verschijnen wordt bepaald door uw keus van de Geavanceerde configuratie van het Voorzien van een netwerk.  Om dit mogelijk te maken, moet speciale eieren worden gebruikt.
+>
+> De geavanceerde configuratie van het Voorzien van een netwerk is a [ proces in twee stappen ](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) die enablement op programma en milieuniveau vereisen.
+
+Voor AEM logboeken (met inbegrip van Apache/Dispatcher), als u [ Geavanceerd Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) hebt gevormd, kunt u het `aem.advancedNetworking` bezit gebruiken om hen van een Dedicated IP van de Eenheid of over VPN door:sturen.
+
+In het onderstaande voorbeeld ziet u hoe u het aanmelden op een standaard HTTPS-poort met Advanced Networking configureert.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+Voor CDN- logboeken, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven Snelle documentatie - Openbare IP Lijst ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar een https server of (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van bekende IP naar hun uiteindelijke bestemming te verzenden.
+
+>[!NOTE]
+>Het is niet mogelijk voor CDN- logboeken om van het zelfde IP adres te verschijnen dat uw AEM logboeken van verschijnen, is dit omdat de logboeken direct van Fastly en niet AEM Cloud Service worden verzonden.
+
 ## Logboekdoelconfiguratie {#logging-destinations}
 
 De configuraties voor de gesteunde registrerenbestemmingen worden hieronder vermeld, samen met om het even welke specifieke overwegingen.
 
 ### Azure Blob Storage {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ Elke globaal gedistribueerde logbestandsserver produceert elke paar seconden een
 
 Zo kunt u op een bepaald tijdstip bijvoorbeeld:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 En dan 30 seconden later:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Elk bestand bevat meerdere logitems van de zoon, elk op een aparte regel. De formaten van de logboekingang worden beschreven onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md), en elke logboekingang omvat ook de extra eigenschappen die in de [ hieronder sectie van de Formaten van de Ingang van het Logboek ](#log-format) worden vermeld.
+Elk bestand bevat meerdere logitems van de zoon, elk op een aparte regel. De formaten van de logboekingang worden beschreven onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md), en elke logboekingang omvat ook de extra eigenschappen die in de [ hieronder sectie van de Formaten van de Ingang van het Logboek ](#log-formats) worden vermeld.
 
 #### Azure Blob Storage AEM logs {#azureblob-aem}
 
@@ -181,10 +256,9 @@ Onder elke map wordt één bestand gemaakt en toegevoegd. Klanten zijn verantwoo
 
 Zie de formaten van de logboekingang onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md). De logboekingangen zullen ook de extra eigenschappen omvatten die in de [ hieronder sectie van de Formaten van het Ingang van het Logboek ](#log-formats) worden vermeld.
 
-
 ### Datahond {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ Overwegingen:
 * De servicetag DataHond is ingesteld op `adobeaemcloud` , maar u kunt deze overschrijven in de sectie Tags
 * Als uw innamepijpleiding de markeringen van Datadog gebruikt om de aangewezen index voor het door:sturen van logboeken te bepalen, verifieer dat deze markeringen correct in het Logboek door:sturen YAML- dossier worden gevormd. Het ontbreken van markeringen kan succesvolle logboekopname verhinderen als de pijpleiding van hen afhangt.
 
-
-
 ### Elasticsearch en OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ Overwegingen:
 * Voor AEM logs wordt `index` ingesteld op een van `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
 * Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 #### HTTPS-AEM {#https-aem}
 
-Voor AEM logboeken (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de ](#log-format) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
+Voor AEM logboeken (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de ](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
 
 Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
@@ -292,7 +364,7 @@ Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende wa
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ Overwegingen:
   *verzoek*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
 * Als vereiste IPs is gevoegd op lijst van gewenste personen en de logboeken nog niet worden geleverd, verifieer dat er geen firewallregels die de symbolische bevestiging van de Splunk afdwingen zijn. Voert snel een eerste validatiestap uit waarbij een ongeldig token voor segmentering opzettelijk wordt verzonden. Als uw firewall wordt geplaatst om verbindingen met ongeldige tokens van de Splunk te eindigen, zal het bevestigingsproces ontbreken, verhinderend snel logboeken aan uw instantie van de Splunk te leveren.
 
-
 >[!NOTE]
 >
 > [ als het migreren ](#legacy-migration) van erfenisLogboek dat aan dit zelf-servermodel door:sturen, kunnen de `sourcetype` waarden van het gebied die naar uw Splunk index worden verzonden veranderd zijn, zo dienovereenkomstig aangepast.
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ Aangezien de logboeken van veelvoudige programma&#39;s en milieu&#39;s aan de ze
 
 De eigenschappen kunnen bijvoorbeeld de volgende waarden hebben:
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## Geavanceerde netwerken {#advanced-networking}
-
-Sommige organisaties verkiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen.
-
-Voor het logboek CDN, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven dure documentatie - Openbare IP Lijst ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar een https server of (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van bekende IP naar hun uiteindelijke bestemming te verzenden.
-
-Voor AEM logboeken (met inbegrip van Apache/Dispatcher), als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) hebt gevormd, kunt u het eigenschap advancedNetworking gebruiken om hen van een specifiek uitgangIP adres of over VPN door:sturen.
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## Migreren van verouderde logbestanden {#legacy-migration}
@@ -399,10 +444,6 @@ Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de vo
 Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelf-servercontrole zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-servermanier zijn gevormd.
 
 >[!NOTE]
->
 >De waarden van het veld `sourcetype` die naar uw verzonken index zijn verzonden, zijn mogelijk gewijzigd, dus pas de waarden dienovereenkomstig aan.
-
->[!NOTE]
 >
 >Wanneer het Door:sturen van het Logboek aan een milieu wordt opgesteld dat eerder door de steun van de Adobe wordt gevormd, kunt u dubbele logboeken tot een paar uren ontvangen. Dit zal uiteindelijk automatisch worden opgelost.
-
