@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere
 
 >[!NOTE]
 > 
-> U wordt aangeraden de AEM Moderniseren Tools op uw lokale AEM te installeren. Migreer de adaptieve Forms op basis van Foundation Components naar Core Component-formulieren. Download het formulier samen met de bijbehorende middelen. Vervolgens uploadt u het formulier en de bijbehorende elementen naar de vereiste omgeving.
+>U wordt aangeraden de AEM Moderniseren Tools op uw lokale AEM te installeren. Migreer de adaptieve Forms op basis van Foundation Components naar Core Component-formulieren. Download het formulier samen met de bijbehorende middelen. Vervolgens uploadt u het formulier en de bijbehorende elementen naar de vereiste omgeving.
 
 ## Overwegingen bij het gebruiken van de AEM Moderniseren Hulpmiddelen {#considerations}
 
@@ -39,6 +39,7 @@ Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere
 * De vertaalinstellingen die in het oorspronkelijke formulier worden gebruikt, worden niet overgenomen. Vertaling voor het geconverteerde formulier opnieuw configureren.
 * Als de vorm die op de Componenten van de Stichting wordt gebouwd manuscripten of de regels van de douanefunctie bevat, moet u deze voor het omgezette vorm herschrijven die op de Componenten van de Kern wordt gebaseerd.
 * De volgende OOTB-basiscomponenten worden nog niet ondersteund in Core Components (Basiscomponenten) en worden daarom verwijderd in het geconverteerde formulier:
+
    * Adobe Sign Block
    * Diagram
    * Lijst met bestandsbijlagen
@@ -54,10 +55,9 @@ Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere
 
 * [Lokale ontwikkelomgeving instellen voor AEM Forms](/help/forms/setup-local-development-environment.md)
 * [Schakel Adaptieve Forms Core-componenten in voor uw omgeving.](/help/forms/enable-adaptive-forms-core-components.md)
-
 * Voeg uw gebruikers toe aan de groep [!DNL forms-users] . De leden van de groep [!DNL forms-users] hebben machtigingen om een adaptief formulier te maken.
-
 * De gebruikers met de volgende rollen hebben de toestemmingen om de AEM Moderniseren Hulpmiddelen binnen een AEM milieu te installeren:
+
    * Ontwikkelingsrol
    * Beheerdersrol
 
@@ -68,7 +68,7 @@ Voor een gedetailleerde lijst van vorm-specifieke gebruikersgroepen, zie [ Groep
 Om de AEM Moderniseren Hulpmiddelen te installeren en te vormen:
 
 1. [Installeer AEM Moderniseringsgereedschappen in uw lokale AEM Forms-omgeving](#install-aem-modernize-Tools)
-2. [Gereedschappen AEM moderniseren inschakelen voor uw lokale AEM Forms-omgeving](#enable-aem-modernize-Tools)
+1. [Gereedschappen AEM moderniseren inschakelen voor uw lokale AEM Forms-omgeving](#enable-aem-modernize-Tools)
 
 ### Installeer AEM Moderniseringsgereedschappen in uw lokale AEM Forms-omgeving {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ Voer de volgende stappen uit om AEM Moderniseer Hulpmiddelen aan uw lokale milie
    ```Shell
        mvn clean install 
    ```
+
 ![ Succesvol installatiekopie ](/help/forms/assets/aem-modernize-install-steps.png)
 
 Nadat de installatie is voltooid, worden de AEM Moderniseringsgereedschappen beschikbaar voor uw omgeving.
@@ -128,10 +129,12 @@ Om de AEM Moderniseren Hulpmiddelen voor uw AEM Milieu toe te laten en te gebrui
 
 1. Geef de waarde **[!UICONTROL Job Name]** op.
 1. Op het tabblad **[!UICONTROL Form]** kunt u een van de volgende opties selecteren:
+
    * **niets**: Selecteer de optie als u geen exemplaar van de op componenten gebaseerde vormen van de Stichting wilt tot stand brengen alvorens de vormomzetting te beginnen.
    * **herstelt**: Selecteer de optie om de vorm aan de staat te herstellen het was alvorens de vormomzetting te beginnen.
    * **Exemplaar aan Doel**: Selecteer de optie om een exemplaar van de op componenten gebaseerde vormen van de Stichting tot stand te brengen alvorens de vormomzetting te beginnen.
-In ons geval, wordt het **Exemplaar aan de optie van het Doel** geselecteerd. Als het **Exemplaar aan Doel** optie wordt geselecteerd, worden de **[!UICONTROL Source Path]** en **[!UICONTROL Target Path]** opties zichtbaar.
+
+   In ons geval, wordt het **Exemplaar aan de optie van het Doel** geselecteerd. Als het **Exemplaar aan Doel** optie wordt geselecteerd, worden de **[!UICONTROL Source Path]** en **[!UICONTROL Target Path]** opties zichtbaar.
 
 1. Geef de naam `source folder` op in de map **[!UICONTROL Source Path]** .
 1. Geef de naam `target folder` op in de map **[!UICONTROL Target Path]** .
@@ -152,6 +155,7 @@ In ons geval, wordt het **Exemplaar aan de optie van het Doel** geselecteerd. Al
    ![ AEM het Succes van Hulpmiddelen moderniseren ](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. Selecteer het adaptieve formulier en selecteer > **[!UICONTROL Properties]** . De pagina Formuliereigenschappen wordt geopend.
+
    ![ AEM de Omslag van de Bestemming van Hulpmiddelen moderniseren ](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Selecteer **[!UICONTROL Save and Close]** om de eigenschappen van het geconverteerde formulier opnieuw op te slaan.
