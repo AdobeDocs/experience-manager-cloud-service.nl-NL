@@ -5,9 +5,9 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
@@ -271,10 +271,10 @@ Hiermee kunt u als [!DNL Cloud Service] een map maken in de doelmap van de [!DNL
 
 Met de optie Doelselectie kunt u het element in vier verschillende weergaven weergeven:
 
-* **![lijstmening ](assets/do-not-localize/list-view.png)[!UICONTROL List View]**: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* **![netmening ](assets/do-not-localize/grid-view.png)[!UICONTROL Grid View]**: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
-* **![galeriemening ](assets/do-not-localize/gallery-view.png)[!UICONTROL Gallery View]**: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
-* **![watervalmening ](assets/do-not-localize/waterfall-view.png)[!UICONTROL Waterfall View]**: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
+* ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**]: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
+* ](assets/do-not-localize/grid-view.png) [!UICONTROL **de Mening van het Net**] van de netmening {: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.![
+* ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**]: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Mening van de Waterval**]: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
 
 ### Info {#info}
 

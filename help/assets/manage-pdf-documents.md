@@ -4,9 +4,9 @@ description: Beheer de documenten van PDF in  [!DNL Adobe Experience Manager]  a
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ ht-degree: 0%
 Experience Manager Assets kan naadloos worden geïntegreerd met de Document Cloud PDF Viewer, waarmee u meerdere pagina&#39;s van een PDF-document kunt voorvertonen. Daarnaast kunt u ook geavanceerde viewerfuncties voor PDF gebruiken, zoals annotaties, zoektekst, navigatie in het PDF-document met bladwijzers en miniaturen, enzovoort, onder hetzelfde dak. Met Experience Manager Assets kunt u ook documenten in andere ondersteunde indelingen uploaden en deze voorvertonen in een PDF-indeling.
 
 De PDF-viewer van Document Cloud profiteert AEM Assets op de volgende manieren:
+
 * [Ondersteuning voor PDF Document Cloud Viewer-componenten](#pdf-doc-cloud)
 * [Ondersteuning voor Voorvertoning van meerdere pagina&#39;s en annotaties voor PDF-element](#multi-page)
 * [Ondersteuning voor Voorvertoning van meerdere pagina&#39;s voor documenten in andere indelingen](#multi-format)
 
-> Tip
-> Als u niet veelvoudige paginavoorproef van een eerder geupload document van de PDF kunt krijgen dan de PDF selecteren en **![](/help/assets/assets/Reprocess.svg) opnieuw verwerken Assets** klikken.
+>[!TIP]
 >
+> Als u niet veelvoudige paginavoorproef van een eerder geupload document van de PDF kunt krijgen dan de PDF selecteren en ![ ](/help/assets/assets/Reprocess.svg) **klikken herverwerkt Assets**.
 
 ## Ondersteuning voor PDF Document Cloud Viewer-componenten {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ Met Adobe Experience Manager Assets kunt u een voorvertoning weergeven van een P
 
 U kunt [ annotaties ](#pdf-annotations) op het document van de PDF in een veelvoudige paginavoorproef ook toepassen.
 
-> OPMERKING
-> De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
+>[!NOTE]
 >
+> De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ U kunt [ annotaties ](#pdf-annotations) op het document van de PDF in een veelvo
 Met Experience Manager Assets kunt u opmerkingen toevoegen aan een PDF-document. Een PDF-document kan meerdere annotaties hebben.
 
 Ga als volgt te werk om een PDF-document van een annotatie te voorzien:
+
 1. Ga naar de Assets-interface en navigeer naar het PDF-document dat u wilt annoteren. De native PDF-viewer wordt aan de rechterkant geopend en geeft een voorvertoning van het geselecteerde PDF-document weer.
 1. Klik **annoteren** van het hoogste menu.
 Hieronder vindt u de annotaties die kunnen worden toegepast op een PDF-document:
@@ -126,15 +128,16 @@ Naast de PDF-documenten kunt u ook een voorvertoning weergeven van meerdere pagi
 ![ Multi-pageVoorproef van Documenten in Andere Formaten ](/help/assets/assets/multi-page-other-formats.png)
 
 Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van andere ondersteunde documentindelingen:
+
 1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en) te uploaden.
 1. Blader naar het document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. Selecteer PDF onder het statische gedeelte in het linkerdeelvenster. In het rechterdeelvenster ziet u de voorvertoning van meerdere pagina&#39;s van een element. Selecteer een miniatuur in het linkerdeelvenster om de pagina te kiezen waarvan u een voorvertoning wilt weergeven.
 
-> OPMERKING
+>[!NOTE]
+>
 > * De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
 > * De maximale grootte van XLS- of XLSX-bestanden die u wilt voorvertonen, is 20 MB.
->
 
 **zie ook**
 

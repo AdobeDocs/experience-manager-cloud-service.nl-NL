@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -159,10 +159,10 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
-* **![lijstmening ](assets/do-not-localize/list-view.png)[!UICONTROL List View]** de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* **![netmening ](assets/do-not-localize/grid-view.png)[!UICONTROL Grid View]** de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
-* **![galeriemening ](assets/do-not-localize/gallery-view.png)[!UICONTROL Gallery View]** de de vertoningendossiers of omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
-* **![watervalmening ](assets/do-not-localize/waterfall-view.png)[!UICONTROL Waterfall View]** De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
+* ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
+* ](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.![
+* ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** ] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
 
 **Grafische van het Overzicht**
 
