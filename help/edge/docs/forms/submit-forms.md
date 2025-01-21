@@ -4,9 +4,9 @@ description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve F
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Google-bladen of Microsoft Excel-bestanden instellen om gegevens te accepteren
 
 
-Zodra u hebt [ gecreeerd en de vorm ](/help/edge/docs/forms/create-forms.md) previewde, is het tijd om het overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt de spreadsheet handmatig inschakelen voor het accepteren van gegevens of Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens.
+Zodra u [ hebt gecreeerd en de vorm ](/help/edge/docs/forms/create-forms.md) previewde, is het tijd om het overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt de spreadsheet handmatig inschakelen voor het accepteren van gegevens of Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens.
 
 ![ op document-gebaseerde het Authoring ecosysteem ](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ De spreadsheet inschakelen om gegevens te accepteren
    >
    > Als het `incoming` sheet niet aanwezig is, verzendt AEM geen gegevens naar het spreadsheet.
 
-2. Voeg op dit blad een tabel in met de naam &quot;take_form&quot;. Selecteer het aantal kolommen dat nodig is om overeen te komen met de namen van de formuliervelden. Ga vervolgens op de werkbalk naar Invoegen > Tabel en klik op OK.
+1. Voeg op dit blad een tabel in met de naam &quot;take_form&quot;. Selecteer het aantal kolommen dat nodig is om overeen te komen met de namen van de formuliervelden. Ga vervolgens op de werkbalk naar Invoegen > Tabel en klik op OK.
 
-3. Wijzig de naam van de tabel in &quot;take_form&quot;. Als u in Microsoft Excel de naam van de tabel wilt wijzigen, selecteert u de tabel en klikt u op Tabelontwerp.
+1. Wijzig de naam van de tabel in &quot;take_form&quot;. Als u in Microsoft Excel de naam van de tabel wilt wijzigen, selecteert u de tabel en klikt u op Tabelontwerp.
 
-4. Voeg vervolgens de namen van de formuliervelden toe als de tabelkoppen. Om ervoor te zorgen dat de velden exact hetzelfde zijn, kunt u deze kopiëren en plakken vanaf het standaardblad.  Selecteer en kopieer de formulier-id&#39;s onder de kolom Naam op het blad &#39;shared-default&#39;, behalve het verzendveld.
+1. Voeg vervolgens de namen van de formuliervelden toe als de tabelkoppen. Om ervoor te zorgen dat de velden exact hetzelfde zijn, kunt u deze kopiëren en plakken vanaf het &quot;shared-name&quot; blad.  Selecteer en kopieer de formulier-id&#39;s die onder de kolom &quot;Naam&quot; staan, behalve het veld Verzenden.
 
-5. Selecteer Plakken speciaal > Rijen omzetten in kolommen op het blad &#39;inkomend&#39; om de veld-id&#39;s als kolomkoppen op dit nieuwe blad te kopiëren. Alleen velden behouden waarvan de gegevens andere gegevens moeten vastleggen, kunnen worden genegeerd.
+1. Selecteer Plakken speciaal > Rijen omzetten in kolommen op het blad &#39;inkomend&#39; om de veld-id&#39;s als kolomkoppen op dit nieuwe blad te kopiëren. Alleen velden behouden waarvan de gegevens andere gegevens moeten vastleggen, kunnen worden genegeerd.
 
-   Elke waarde in de kolom `Name` van het `shared-default` -blad, met uitzondering van de verzendknop, kan fungeren als koptekst in het `incoming` -blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een &quot;vraag&quot;-formulier:
+   Elke waarde in de kolom `Name` van het `shared-aem` -blad, met uitzondering van de verzendknop, kan fungeren als koptekst in het `incoming` -blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een &quot;vraag&quot;-formulier:
 
    ![ Gebieden voor een contact-usvorm ](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. Gebruik de [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) uitbreiding aan voorproef de vormupdates. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
+1. Gebruik de [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) uitbreiding aan voorproef de vormupdates. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Zodra het blad opstelling is om gegevens te ontvangen, kunt u [ voorproef de vor
 
 >[!WARNING]
 >
->  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
+>  De bladen &quot;shared-name&quot; mogen nooit persoonlijke identificeerbare informatie of gevoelige gegevens bevatten die u niet prettig vindt om openbaar toegankelijk te zijn.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

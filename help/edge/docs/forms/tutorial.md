@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -67,9 +67,8 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
    * `<repository>` geeft uw GitHub-opslagplaats aan.
    * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
-   Bijvoorbeeld, als de taknaam `main` is, is de bewaarplaats `wefinance`, en de eigenaar is `wkndform`, zou de website in [ https://main-wefinance-wkndform.aem.page ](https://main--wefinance--wkndform.aem.page) in gebruik zijn
-
-
+   Als de naam van de vertakking bijvoorbeeld `main` is, de opslagplaats `wefinance` is en de eigenaar `wkndforms` is, wordt de website uitgevoerd op `https://main--wefinance--wkndforms.aem.page`
+&lt;!—(https://main—wefinance—wkndform.aem.page)—>
 
 ### Uw eigen inhoudsbron koppelen
 
@@ -135,8 +134,6 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
    1. Leg het bijgewerkte `fsatb.yaml` -bestand vast nadat u de verwijzing hebt bijgewerkt en alles er goed uitziet. Als u om het even welke bouwstijlkwesties ontmoet, zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
-
-
       ![ Leg bijgewerkt fsatab.yaml- dossier ](/help/edge/assets/commit-updated-fstab-yaml.png) vast
 
       Hiermee verbindt u de inhoudsmap met uw website. Na het bijwerken van de verwijzing kunnen fouten met &quot;404 Niet gevonden&quot; aanvankelijk optreden. Dit komt omdat er nog geen voorvertoning van uw inhoud is weergegeven. In de volgende sectie wordt uitgelegd hoe u begint met het ontwerpen en voorvertonen van uw inhoud.
@@ -185,7 +182,8 @@ Niet-gepubliceerde inhoud voorvertonen:
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   Bijvoorbeeld, als de bewaarplaats van uw project &quot;wefinantie&quot;wordt genoemd, wordt het gevestigd onder de rekeningseigenaar &quot;wkndform&quot;, en u gebruikt de &quot;belangrijkste&quot;tak en vormnaam als `enquiry`, URL is: [ https://main—wefinantie-wkndform.aem.live/inquiry ](https://main--wefinance--wkndform.aem.live/enquiry).
+   Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndform&#39; en gebruikt u de &#39;main&#39;-vertakking en formuliernaam als `enquiry` , is de URL: `https://main--wefinance--wkndform.aem.live/enquiry` .
+&lt;!—(https://main—wefinance—wkndform.aem.live/inquiry).—>
 
 ### Een formulier maken
 
@@ -199,7 +197,7 @@ Laten we beginnen met het bijwerken van een veldlabel. Open het &#39;vraag&#39;-
 
 Wanneer u een voorvertoning van het bestand weergeeft of het bestand publiceert, wordt een JSON-versie van het bestand op een nieuw tabblad weergegeven. Kopieer de voorvertoning (.name.page) of de publicatie (.aem.live) URL van het bestand.
 
-![ JSON van de vormspreadsheet ](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![ JSON van de vormspreadsheet ](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 Open het `enquiry` -bestand en vervang de URL in het formulierblok door de URL van het bestand dat u in de vorige stap hebt gekopieerd. Controleer of de URL een hyperlink is.
 
@@ -220,9 +218,12 @@ Ga naar de volgende URL om een voorbeeld van het bijgewerkte onderzoeksformulier
 
 Het label van de verzendknop wordt bijgewerkt naar `Let's Talk` .
 
-[![ Vorm van het Onderzoek ](/help/edge/assets/updated-form.png) ](https://main--wefinance--wkndform.aem.live/enquiry)
+![ Vorm van het Onderzoek ](/help/edge/assets/updated-form.png)
 
-URL: [ https://main—wefinance—wkndform.aem.live/inquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;!— (https://main—wefinance—wkndform.aem.live/inquiry)—>
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!— (https://main—wefinance—wkndform.aem.live/inquiry)—>
 
 
 Voor gedetailleerde informatie over het creëren van en het publiceren van een nieuwe vorm, hoofd over aan [ creeert een vorm ](/help/edge/docs/forms/create-forms.md) gids.

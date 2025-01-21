@@ -4,9 +4,9 @@ description: Publish en Edge Delivery Services voor AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,8 @@ Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzamelin
 
    Bijvoorbeeld, als de bewaarplaats van uw project &quot;wefinance&quot;wordt genoemd, is het gevestigd onder de rekening &quot;wkndform&quot;, en u gebruikt de &quot;belangrijkste&quot;tak en vorm als &quot;onderzoek&quot;, kijkt URL als het volgende:
 
-   [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;!— (https://main—wefinance—wkndform.aem.live/inquiry.json)—>
 
 +++
 
@@ -74,7 +75,7 @@ Het formulier toevoegen aan uw webpagina:
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![ voeg een blok genoemd &quot;Vorm&quot;aan het dossier ](/help/edge/assets/enquiry-doc-to-embed-form.png) toe
 
@@ -95,16 +96,16 @@ Het formulier toevoegen aan uw webpagina:
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndform.aem.page/inquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **Publish URL**
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de webpagina. Het formulier wordt nu weergegeven op de pagina. Bijvoorbeeld, hier is de vorm die op [ wordt gebaseerd onderzoeksspreadsheet ](/help/edge/assets/enquiry.xlsx):
+1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de webpagina. Het formulier wordt nu weergegeven op de pagina. Bijvoorbeeld, hier is de vorm die op [ wordt gebaseerd onderzoeksspreadsheet ](/help/edge/assets/enquiry-form.docx):
 
 
    ![ de vorm van steekproefEDS van A ](/help/edge/assets/updated-form.png)

@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ op AEM Forms Edge Delivery
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ Stap 1: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
 
 In plaats van door complexe processen te navigeren, kunt u zonder problemen een formulier maken met behulp van een spreadsheet. U kunt de rijen en kolommen definiëren die de formulierstructuur vormen. Elke rij vertegenwoordigt een individueel [ vormgebied ](/help/edge/docs/forms/form-components.md#available-components) en de kolomkopballen bepalen de overeenkomstige [ gebiedseigenschappen ](/help/edge/docs/forms/form-components.md#components-properties).
@@ -76,15 +74,15 @@ Ga als volgt te werk om het formulier te maken:
 
 1. Maak een Microsoft Excel-werkboek of Google-werkblad in de AEM Edge Delivery-projectmap. Maak bijvoorbeeld een werkblad met de naam `enquiry` in AEM Edge Delivery-projectmap op Google Drive.
 
-   ![ Inhoud van de Steekproef op de Aandrijving van Google ](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Zorg ervoor dat het blad met de aangewezen AEM gebruiker (bijvoorbeeld `forms@adobe.com`) [ zoals per de configuraties wordt gedeeld die voor uw project ](https://www.aem.live/docs/setup-customer-sharepoint) worden gespecificeerd. Hiermee geeft u de gebruiker bewerkingsmachtigingen voor het blad.
 
-1. Open het gemaakte werkblad en wijzig de naam van het standaardwerkblad in &#39;shared-default&#39;.
+1. Open het gemaakte werkblad en wijzig de naam van het standaardwerkblad in &quot;shared-name&quot;.
 
    ![ anders noem standaardblad aan &quot;gedeeld-gebrek&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;standaard-gedeelde&#39; blad in. Elke rij zou a [ vormgebied ](/help/edge/docs/forms/form-components.md#available-components), met kolomkopballen moeten vertegenwoordigen die de overeenkomstige gebied [ eigenschappen ](/help/edge/docs/forms/form-components.md#components-properties) bepalen.
+1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;shared-name&#39; blad in. Elke rij zou a [ vormgebied ](/help/edge/docs/forms/form-components.md#available-components), met kolomkopballen moeten vertegenwoordigen die de overeenkomstige gebied [ eigenschappen ](/help/edge/docs/forms/form-components.md#components-properties) bepalen.
 
 
    Voor een snel begin, overweeg het kopiëren van de inhoud van het [ Onderzoek spreadsheet ](/help/edge/assets/enquiry.xlsx) in uw spreadsheet. Sla het werkblad op nadat u de inhoud hebt gekopieerd.
@@ -109,7 +107,8 @@ Ga als volgt te werk om het formulier te maken:
 
    Bijvoorbeeld, als de bewaarplaats van uw project &quot;wefinance&quot;wordt genoemd, is het gevestigd onder de rekening &quot;wkndform&quot;, en u gebruikt de &quot;belangrijkste&quot;tak, kijkt URL als het volgende:
 
-   [ https://main—wefinance—wkndform.aem.page/inquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;!— (https://main—wefinance—wkndform.aem.page/inquiry.json)—>
 
 
 +++
@@ -131,7 +130,7 @@ Tot nu toe hebt u de structuur van het formulier voorbereid. Nu een voorbeeld va
 
    | Formulier |
    |---|
-   | [ https://main—wefinance—wkndform.aem.live/inquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![ voeg Aangepast Forms Blok aan uw webpagina toe ](/help/edge/assets/enquiry-doc-to-embed-form.png)
