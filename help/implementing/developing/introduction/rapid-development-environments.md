@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
 workflow-type: tm+mt
-source-wordcount: '4863'
+source-wordcount: '4990'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,11 @@ Voer de volgende stappen uit, zodat u Cloud Manager kunt gebruiken om een RDE vo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Klik op het programma waaraan u een RDE wilt toevoegen om de details weer te geven.
+1. Klik het programma waaraan u RDE wilt toevoegen om zijn details te tonen.
 
-   * RDEs kan aan beide [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) en [ productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) worden toegevoegd.
+   * RDEs kan aan zowel [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) als [ productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) worden toegevoegd.
 
-1. Van de **pagina van het Overzicht van het Programma**, klik **voeg Milieu** op de **kaart van Milieu** toe om een milieu toe te voegen.
+1. Van de **pagina van het Overzicht van het 0} Programma, klik** voeg Milieu **op de** kaart van Milieu **toe om een milieu toe te voegen.**
 
    ![ kaart van Milieu&#39;s ](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -114,11 +114,11 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    ```
 
    >[!NOTE]
-   > De login bevel met de `--no-open` optie zal een URL in de terminal in plaats van het openen van uw standaardbrowser uitvoeren. Als dat kunt u het met een **incognito** venster van uw browser kopiëren en openen. Op deze manier blijft uw momenteel aangemelde sessie in het normale browservenster ongewijzigd en kunt u ervoor zorgen dat u de specifieke aanmeldingsgegevens en organisatie gebruikt die nodig zijn voor uw context.
+   > De login bevel met de `--no-open` optie zal een URL in de terminal in plaats van het openen van uw standaardbrowser uitvoeren. Als dat kunt u het met een **incognito** venster van uw browser kopiëren en openen. Op deze manier blijft de sessie die momenteel is aangemeld in het normale browservenster ongewijzigd en kunt u ervoor zorgen dat u de specifieke aanmelding en organisatie gebruikt die nodig zijn voor uw context.
 
-   Met de eerste opdracht maakt u een nieuwe aanmeldingscontextconfiguratie, `mycontext` genoemd, in uw lokale `.aio` -configuratiebestand (het bestand wordt indien nodig gemaakt). Met de tweede opdracht wordt de context `mycontext` ingesteld op de &quot;huidige&quot; context, dat wil zeggen de standaardinstelling.
+   Met de eerste opdracht maakt u een nieuwe aanmeldingscontextconfiguratie met de naam `mycontext` in het lokale `.aio` -configuratiebestand (het bestand wordt indien nodig gemaakt). Met de tweede opdracht stelt u de context `mycontext` in als de &quot;huidige&quot; context, d.w.z. de standaardcontext.
 
-   Als deze configuratie op zijn plaats staat, slaat het login bevel automatisch de login tokens in de context `mycontext` op, en houdt zo het lokaal.
+   Met deze configuratie op zijn plaats, slaat het login bevel automatisch de login tokens in de context `mycontext` op, en houdt zo het lokaal.
 
    U kunt meerdere contexten beheren door lokale configuraties in meerdere mappen te bewaren. Alternatief, is het ook mogelijk om veelvoudige context binnen één enkel configuratiedossier te plaatsen, en tussen hen te schakelen door de &quot;huidige&quot;context te veranderen.
    </details>
@@ -187,15 +187,15 @@ Voor omgevingen waar geen enkele gebruiker de hierboven beschreven opstellingsop
 
    `aio config:set cloudmanager_programid 12345`
 
-1. Dan, vorm milieu-identiteitskaart dat RDE zal worden verbonden aan:
+1. Dan, vorm milieu identiteitskaart dat RDE aan in bijlage zal zijn:
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Nadat u de insteekmodule hebt geconfigureerd, meldt u zich aan door
+1. Nadat u klaar bent met het configureren van de insteekmodule, meldt u zich aan door
 
    `aio login`
 
-   Deze stappen vereisen u om een lid van de Ontwikkelaar van de Manager van de Wolk te zijn **- Cloud Service** Profiel van het Product. Zie [ de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
+   Deze stappen vereisen u om een lid van de Ontwikkelaar van Cloud Manager **te zijn - Cloud Service** Profiel van het Product. Zie [ de Leden van het Team aan de Profielen van het Product van Cloud Manager toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
 
 Voor meer informatie en demonstratie, bekijk het videoleerprogramma [ hoe te opstelling RDE (06:24) ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
@@ -235,11 +235,11 @@ Het werkschema is gelijkaardig aan het ontwikkelen van een nieuwe eigenschap. He
 
 RDE steunt één enkel project tegelijkertijd. Aangezien de code van een lokale ontwikkelomgeving aan het milieu RDE wordt gesynchroniseerd, is het het meest natuurlijk voor één ontwikkelaar om het op een bepaald ogenblik op zich te gebruiken.
 
-Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars een specifieke functie valideren of fouten in een specifiek probleem opsporen. De sleutel is dat elke ontwikkelaar hun lokale projecten synchroon houdt zodat de codeveranderingen door een bepaalde ontwikkelaar worden aangebracht door de andere ontwikkelaars worden geabsorbeerd, anders zou één ontwikkelaar onbedoeld de code van andere kunnen overschrijven. De geadviseerde strategie is voor elke ontwikkelaar om hun veranderingen in een gedeelde git tak alvorens aan RDE te synchroniseren vast te leggen, zodat de andere ontwikkelaars de veranderingen trekken alvorens hun eigen veranderingen aan te brengen.
+Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars een specifieke functie valideren of fouten in een specifiek probleem opsporen. De sleutel is dat elke ontwikkelaar hun lokale projecten synchroon houdt zodat de codeveranderingen door een bepaalde ontwikkelaar worden aangebracht door de andere ontwikkelaars worden geabsorbeerd, anders zou één ontwikkelaar onbedoeld de code van andere kunnen overschrijven. De geadviseerde strategie is voor elke ontwikkelaar om hun veranderingen in een gedeelde git tak alvorens aan RDE te synchroniseren, zodat de andere ontwikkelaars de veranderingen trekken alvorens hun eigen veranderingen te maken.
 
 ## Opdrachten voor RDE-opdrachtregelprogramma&#39;s {#rde-cli-commands}
 
-### Help/Algemene informatie {#help}
+### Help/algemene informatie {#help}
 
 * Voor een lijst met opdrachten typt u:
 
@@ -482,7 +482,7 @@ Environment: Ready
  com.adobe.granite.demo.MyServlet
 ```
 
-Als de opdracht een opmerking retourneert over het implementeren van instanties, kunt u de volgende update nog steeds uitvoeren, maar is de laatste nog niet zichtbaar voor de instantie.
+Als het bevel een nota over instanties terugkeert die opstellen, kunt u nog gaan en de volgende update uitvoeren, maar uw laatste zou nog niet op de instantie zichtbaar kunnen zijn.
 
 ### Implementatiegeschiedenis tonen {#show-deployment-history}
 
@@ -548,23 +548,23 @@ Als u de RDE opnieuw instelt, verwijdert u alle aangepaste code, configuraties e
 
 Met een reset wordt de RDE ingesteld op de laatst beschikbare AEM versie.
 
-<!-- Alexandru: hiding for now, do not delete
+Het terugstellen kan als [ Cloud Manager ](#reset-the-rde-cloud-manager) of als [ bevellijn ](#reset-the-rde-command-line) worden gedaan. Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code wordt verwijderd uit de RDE.
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[ NOTA!]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>U moet de Cloud Manager Developer-rol krijgen toegewezen om de functie reset te kunnen gebruiken. Als dat niet het geval is, leidt een herstelactie tot een fout.
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### RDE via opdrachtregel opnieuw instellen {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+U kunt RDE terugstellen en het terugkeren aan een standaardstaat door in werking te stellen:
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+Dit duurt meestal een paar minuten en ```Environment reset.``` wordt gerapporteerd wanneer dit is gelukt of ```Failed to reset the environment.``` wanneer er fouten zijn opgetreden. Zie het onderstaande hoofdstuk over ```--json``` uitvoer voor een gestructureerde uitvoer.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+Gebruik het [ statusbevel ](#checking-rde-status) om te controleren wanneer het milieu opnieuw klaar is.
+
+### De RDE in Cloud Manager opnieuw instellen {#reset-the-rde-cloud-manager}
 
 U kunt Cloud Manager gebruiken om uw RDE opnieuw in te stellen door de volgende stappen te volgen:
 
@@ -749,7 +749,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
 ### Verwijderen {#delete}
 
 <details>
-  <summary>Uitbreiden om voorbeelden verwijderen te zien</summary>
+  <summary>Uitbreiden om voorbeelden van verwijderen weer te geven</summary>
 
 ```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
 
@@ -942,7 +942,7 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
 }
 ```
 
-#### Wacht op voltooiing {#wait}
+#### Wachten op voltooien, opnieuw instellen geslaagd {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ De meeste opdrachten ondersteunen de algemene markering ```--json``` , die de ui
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### Wachten op voltooien, opnieuw instellen mislukt {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
