@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,7 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 | **unset** | reqProperty | Hiermee wordt een opgegeven parameter request (alleen eigenschap &quot;path&quot; ondersteund) of een aanvraagheader, queryparameter of cookie verwijderd naar een bepaalde waarde, die een letterlijke tekenreeks of aanvraagparameter kan zijn. |
 |         | var | Hiermee wordt een opgegeven variabele verwijderd. |
 |         | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
+|         | queryParamDoesNotMatch | Verwijdert alle queryparameters die niet overeenkomen met een opgegeven reguliere expressie. |
 | **transformatie** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie of var), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund), of verzoek header, of query parameter, cookie of variabele door een nieuwe waarde. |
 |              | op:tolower, (reqProperty of reqHeader of queryParam of reqCookie of var) | Stelt de parameter request (alleen eigenschap &quot;path&quot; ondersteund), of aanvraagheader, queryparameter, cookie of variabele in op de waarde in kleine letters. |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
