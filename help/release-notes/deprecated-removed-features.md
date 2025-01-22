@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
+source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
 workflow-type: tm+mt
-source-wordcount: '2768'
+source-wordcount: '2513'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 ## API&#39;s AEM {#aem-apis}
 
-Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwachte verwijderingsdatum. Van klanten wordt verwacht dat ze de API&#39;s verwijderen tegen de verwijderingsdatum van het doel uit hun code. Om het even welk gebruik van API voorbij de verwijderingsdatum kan fouten in het lokale milieu van SDK/Ontwikkeling en het Cloud Manager bouwstijlproces veroorzaken.
+Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwachte verwijderingsdatum. Van klanten wordt verwacht dat ze de API&#39;s verwijderen tegen de verwijderingsdatum van het doel uit hun code. Elk gebruik van de API na de verwijderingsdatum kan leiden tot fouten in de lokale SDK/Development Environment en het Cloud Manager-ontwikkelproces.
 
 <details>
   <summary>Vouw uit om de lijst met verouderde API's weer te geven.</summary>
@@ -372,7 +372,7 @@ De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieo
 
 De code van de klant kan om het even welke configuratie vormen OSGi niet vermeld.
 
-Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [ SDK van AEM as a Cloud Service moeten omvatten bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) om configuratiefouten te markeren OSGI tijdens lokale ontwikkeling SDK.
+Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [ AEM as a Cloud Service SDK moeten omvatten bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) om configuratiefouten te markeren OSGI tijdens de lokale ontwikkeling van SDK.
 
 De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats ](/help/implementing/deploying/configuring-osgi.md).
 
@@ -510,43 +510,43 @@ De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats
 
 ## Java-runtime-update naar versie 21 {#java-runtime-update-21}
 
-<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+Adobe Experience Manager as a Cloud Service gaat over naar de Java 21-runtime. Om verenigbaarheid te verzekeren, is het bijwerken van bibliotheekversies zoals die in [ runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) worden geschetst essentieel.
 
-AEM as a Cloud Service wordt verplaatst naar Java 21-runtime. Met het oog op de verenigbaarheid is het van essentieel belang de volgende aanpassingen aan te brengen:
+<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
-### Runtime-vereisten
+### Runtime Requirements
 
-Deze aanpassingen zijn vereist om compatibiliteit met de Java 21-runtime te garanderen. De bibliotheken kunnen op elk gewenst moment worden bijgewerkt, omdat ze compatibel zijn met oudere versies van Java.
+These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
 
-#### Minimale versie van org.objectweb.asm {#org.objectweb.asm}
+#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
 
-Werk het gebruik van org.objectweb.asm bij naar versie 9.5 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-#### Minimumversie van org.apache.groovy {#org.apache.groovy}
+#### Minimum version of org.apache.groovy {#org.apache.groovy}
 
-Werk het gebruik van org.apache.groovy bij naar versie 4.0.22 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
-Deze bundel kan indirect worden omvat door dergebiedsdelen zoals de AEM Groovy Console toe te voegen.
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
-### Vereisten voor runtime
+### Build-time Requirements
 
-Deze aanpassingen zijn vereist om het project te kunnen bouwen met nieuwere versies van Java, maar niet vereist voor runtimecompatibiliteit. De plug-ins Maven kunnen op elk gewenst moment worden bijgewerkt omdat ze compatibel zijn met oudere versies van Java.
+These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
 
-#### Minimale versie van de plug-in voor bnd-maven {#bnd-maven-plugin}
+#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
 
-Werk het gebruik van de ingebouwde insteekmodule naar versie 6.4.0 bij om ondersteuning voor nieuwere JVM-runtimes te garanderen. Versie 7 of hoger is niet compatibel met Java 11 of lager. Een upgrade naar die versie wordt daarom op dit moment niet aanbevolen.
+Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
 
-#### Minimumversie van de door de analysator vervaardigde insteekmodule {#aemanalyser-maven-plugin}
+#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Werk het gebruik van de aemanalyser-maven-stop in versie 1.6.6 of hoger bij om steun voor nieuwere JVM runtimes te verzekeren.
+Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
 
-#### Minimumversie van de gefabriceerde bundelinsteekmodule  {#maven-bundle-plugin}
+#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
 
-Werk het gebruik van een maven-bundle-plugin bij naar versie 5.1.5 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
+Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
 
-#### Afhankelijkheden bijwerken in een maven-scr-plug-in  {#maven-scr-plugin}
+#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-`maven-scr-plugin` is niet rechtstreeks compatibel met Java 17 en 21. Het is echter mogelijk om de descriptorbestanden te genereren door de ASM-afhankelijkheidsversie bij te werken in de plug-inconfiguratie, vergelijkbaar met het onderstaande fragment:
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
 
 ```
 [source,xml]
@@ -584,3 +584,4 @@ Werk het gebruik van een maven-bundle-plugin bij naar versie 5.1.5 of hoger om o
    ...
  </project>
 ```
+-->
