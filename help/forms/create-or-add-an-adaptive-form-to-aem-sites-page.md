@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3095'
 ht-degree: 0%
@@ -72,13 +72,11 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 Voordat u begint met het maken van een adaptief formulier, schakelt u Adaptive Forms Core Components in en voegt u Adaptive Forms Client Libraries toe aan uw AEM Sites-pagina:
 
-+++  Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving
+### Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving
 
 Zorg ervoor dat de [ Aangepaste Componenten van de Kern van Forms voor uw as a Cloud Service milieu van AEM Forms ](enable-adaptive-forms-core-components.md) worden toegelaten.
 
-+++
-
-+++  Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina of Experience Fragment
+### Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina of Experience Fragment
 
 Om volledige functionaliteit van de Adaptive Forms Container component toe te laten, voeg de Customheaderlibs en Customfooterlibs cliëntbibliotheken aan uw AEM Sites pagina toe gebruikend de plaatsingspijpleiding. De bibliotheken toevoegen:
 
@@ -123,9 +121,7 @@ Om volledige functionaliteit van de Adaptive Forms Container component toe te la
 
 1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
 
-+++
-
-+++ Adaptieve Forms-container inschakelen voor uw AEM Sites-pagina of Experience-fragment
+### Adaptieve Forms-container inschakelen voor uw AEM Sites-pagina of Experience-fragment
 
 Voer de volgende stappen uit om [!UICONTROL Adaptive Forms Container] -component in sjabloonbeleid in te schakelen:
 

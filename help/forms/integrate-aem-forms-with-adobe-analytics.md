@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Voer de volgende stappen uit om gegevenselementen te configureren:
 
 1. Selecteer **[!UICONTROL Save]** om het gegevenselement op te slaan.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### Regels configureren {#configure-rules}
 
@@ -180,7 +180,7 @@ Voer de volgende stappen uit om regels te maken op basis van de extensie **[!UIC
 
    U kunt regels maken voor alle gebeurtenistypen, zoals Verlaten, Fout, Veldbezoek, Help, Rendering, Opslaan en Verzenden.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Publish-stromen {#publish-flow}

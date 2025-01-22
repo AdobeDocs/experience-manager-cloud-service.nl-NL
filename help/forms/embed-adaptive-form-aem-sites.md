@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2938'
 ht-degree: 0%
 
 ---
@@ -75,13 +75,11 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 Alvorens u begint een nieuwe Aangepaste Vorm of een reeds bestaand Aangepast Vorm in te bedden gebruikend **[!UICONTROL Adaptive Forms – Embed(v2)]**, laat **Aangepaste Componenten van de Kern van Forms** toe en voeg **Aangepaste Bibliotheken van de Cliënt van Forms** aan uw pagina van AEM Sites toe:
 
-+++  Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving
+### Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving
 
 Zorg ervoor dat de [ Aangepaste Componenten van de Kern van Forms voor uw as a Cloud Service milieu van AEM Forms ](enable-adaptive-forms-core-components.md) worden toegelaten.
 
-+++
-
-+++  Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina of Experience Fragment
+### Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina of Experience Fragment
 
 Als de optie **[!UICONTROL When form covers entire width of a page]** is geselecteerd in het dialoogvenster **[!UICONTROL Form Containers]** configureren en als Adaptieve Forms met Core Components wordt gebruikt, moeten de clientbibliotheken op de bijbehorende sitepagina worden geplaatst.
 
@@ -130,9 +128,7 @@ Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw 
 
 1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
 
-+++
-
-+++ **[!UICONTROL Adaptive Forms – Embed(v2)]** inschakelen voor uw AEM Sites-pagina of Experience Fragment
+### Adaptieve Forms - Embed(v2) inschakelen voor uw AEM Sites-pagina of Experience Fragment
 
 Voer de volgende stappen uit om **[!UICONTROL Adaptive Forms – Embed(v2)]** -component in sjabloonbeleid in te schakelen:
 
@@ -142,8 +138,6 @@ Voer de volgende stappen uit om **[!UICONTROL Adaptive Forms – Embed(v2)]** -c
 1. Klik op **[!UICONTROL Done]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## Een adaptief formulier insluiten met de component Adaptief Forms - Embed(v2) {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
@@ -249,7 +243,7 @@ Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragm
 U kunt de geavanceerde instellingen van de component **[!UICONTROL Adaptive Form - Embed(v2)]** aanpassen. In het dialoogvenster **[!UICONTROL Edit Adaptive Forms - Embed]** kunt u het volgende opgeven:
 
 * **Weg van Activa**: doorblader en selecteer een Aangepast Vorm om in te bedden. Deze wordt automatisch ingevuld als u deze uit de Assets-browser hebt verwijderd.
-* **de Verzending van Post**: Selecteer de actie om op vormvoorlegging teweeg te brengen. U kunt ervoor kiezen om een bedankbericht of een pagina voor bedankt weer te geven.
+* **Post Verzending** : Selecteer de actie om op vormvoorlegging teweeg te brengen. U kunt ervoor kiezen om een bedankbericht of een pagina voor bedankt weer te geven.
    * **toon Dank u Bericht**: Schrijf een bericht gebruikend de rijke tekstredacteur om op vormvoorlegging te tonen. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
    * **toon Dank u Pagina**: doorblader en selecteer de pagina om op vormvoorlegging te tonen. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
    * **Redirect om u pagina** te danken: Laat de optie toe om de pagina te vervangen die de ingebedde Aangepaste Vorm met dank u pagina bevat. Anders vervangt de pagina Hartelijk dank u het Adaptieve formulier in de component **[!UICONTROL Adaptive Forms - Embed(v2)]** zonder de onderliggende sites op de pagina te vernieuwen. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
