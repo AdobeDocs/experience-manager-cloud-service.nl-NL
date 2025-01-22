@@ -3,9 +3,10 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.1.0 in Adobe Experienc
 description: Meer informatie over de release van Cloud Manager 2025.1.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -49,12 +50,12 @@ Stel bovendien de volgende variabele in om ervoor te zorgen dat de stap voor de 
 
    * **toe:laten van de Eigenschap**
       * Deze functie wordt op donderdag 13 februari 2025 voor alle klanten ingeschakeld, samen met de standaardimplementatie van de nieuwe SonarQube-versie.
-      * De klanten kunnen het ** onmiddellijk toelaten door de twee variabele configuraties te plaatsen hierboven voor de bevordering van SonarQube 9.9 versie beschrijven.
+      * De klanten kunnen het ** onmiddellijk toelaten door de twee hierboven beschreven variabele configuraties voor de bevordering van SonarQube 9.9 versie te plaatsen.
 
    * **Java 21 runtime plaatsing**
       * De Java 21-runtime wordt geïmplementeerd tijdens het bouwen met Java 17 of Java 21.
       * De geleidelijke implementatie naar alle Cloud Manager-omgevingen begint in februari voor sandboxen en ontwikkelomgevingen en loopt in april door tot productieomgevingen.
-      * De klanten die Java 21 runtime *willen goedkeuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
+      * De klanten die met Java 11 bouwen die wensen om Java 21 runtime *vroeger goed te keuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
 
 
 <!-- ## Early adoption program {#early-adoption}
