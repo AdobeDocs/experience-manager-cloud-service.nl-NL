@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
+source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Een paar voordelen van het gebruik van de Forms-verzendservice met spreadsheets 
 Hieronder staan de voorwaarden voor het gebruik van de Forms-verzendservice:
 
 * Zorg ervoor dat het meest recente adaptieve formulierblok is opgenomen in uw AEM project.
-* Zorg ervoor dat uw Git-opslagplaats aan de lijst van gewenste personen wordt toegevoegd om de Forms-verzendservice te gebruiken. Gelieve te mailto:aem-forms-ea@adobe.com met uw Naam van de Organisatie GitHub en de Naam van de Bewaarplaats om hen aan de lijst van gewenste personen voor het gebruiken van de dienst van de Verzending van Forms toe te voegen.
+* Zorg ervoor dat uw Git-opslagplaats aan de lijst van gewenste personen wordt toegevoegd om de Forms-verzendservice te gebruiken. Gelieve te [ mailto:aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met uw Naam van de Organisatie GitHub en Naam van de Bewaarplaats om hen te hebben toegevoegd aan de lijst van gewenste personen voor het gebruiken van de dienst van de Verzending van Forms.
 
 ## Forms-verzendservice configureren
 
