@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
+source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
 workflow-type: tm+mt
-source-wordcount: '4037'
+source-wordcount: '4053'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
 | **Bezit** | **Type** | **Beschrijving** |
 |---|---|---|
-| reqProperty | `string` | Request-eigenschap.<br><br> Één van:<br><ul><li>`path`: retourneert het volledige pad van een URL zonder de queryparameters. (gebruik `pathRaw` voor de niet-beschermde variant)</li><li>`url`: retourneert de volledige URL inclusief de queryparameters. (gebruik `urlRaw` voor de niet-beschermde variant)</li><li>`queryString`: retourneert het querygedeelte van een URL</li><li>`method`: retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: retourneert een van `author` , `preview` of `publish` .</li><li>`domain`: retourneert de eigenschap domain (zoals gedefinieerd in de `Host` -header) in kleine letters</li><li>`clientIp`: retourneert de client-IP.</li><li>`clientCountry`: Keert een twee brievencode ([ Regionaal indicatorsymbool ](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) terug die zich identificeert in welk land de cliënt wordt gevestigd.</li></ul> |
+| reqProperty | `string` | Request-eigenschap.<br><br> Één van:<br><ul><li>`path`: retourneert het volledige pad van een URL zonder de queryparameters. (gebruik `pathRaw` voor de niet-beschermde variant)</li><li>`url`: retourneert de volledige URL inclusief de queryparameters. (gebruik `urlRaw` voor de niet-beschermde variant)</li><li>`queryString`: retourneert het querygedeelte van een URL</li><li>`method`: retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: retourneert een van `author` , `preview` of `publish` .</li><li>`domain`: retourneert de eigenschap domain (zoals gedefinieerd in de `Host` -header) in kleine letters</li><li>`clientIp`: retourneert de client-IP.</li><li>`forwardedDomain`: retourneert het eerste domein dat in kleine letters is gedefinieerd in de `X-Forwarded-Host` -header</li><li>`forwardedIp`: retourneert het eerste IP in de `X-Forwarded-For` header.</li><li>`clientCountry`: Keert een twee brievencode ([ Regionaal indicatorsymbool ](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) terug die zich identificeert in welk land de cliënt wordt gevestigd.</li></ul> |
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
 | reqCookie | `string` | Retourneert cookie met opgegeven naam |
