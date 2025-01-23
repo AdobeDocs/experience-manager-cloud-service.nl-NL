@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
+source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms E
 
 ### AEM Forms naar Marketo Connector
 
-De [ AEM Forms aan de Schakelaar van Marketo ](/help/forms/integrate-adaptive-form-with-marketo-engage.md) overbruggt het hiaat tussen uw Webvormen (Aanpassings Forms) die met Adobe Experience Manager (AEM) en uw platform van de marketing automatisering, Marketo worden gebouwd.
+De [ AEM Forms aan de Schakelaar van Marketo ](/help/forms/integrate-form-to-marketo-engage.md) overbruggt het hiaat tussen uw Webvormen (Aanpassings Forms) die met Adobe Experience Manager (AEM) en uw platform van de marketing automatisering, Marketo worden gebouwd.
 
 Wanneer iemand een formulier verzendt op uw website die is gemaakt met AEM Adaptive Forms, zorgt de connector ervoor dat de verzonden gegevens automatisch naar Marketo worden verzonden. Hierdoor wordt de noodzaak van handmatige gegevensinvoer weggenomen en wordt het risico op fouten verminderd.
 
@@ -100,6 +100,12 @@ Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de
 
 In wezen helpt AEM Forms naar Marketo Connector u de sterke punten van beide platforms te benutten om een efficiëntere en effectievere marketingtrechter te maken.
 
+Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies voor het gebruik van de innovatie.
+
+* [Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [ integreer een Aangepast Vorm met Marketo Engage ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Marketo Engage en gegevensbron configureren voor bestaande adaptieve Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Een bestaand adaptief formulier naar Marketo Engage verzenden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Aanvullende innovaties voor vroege toegang
 
