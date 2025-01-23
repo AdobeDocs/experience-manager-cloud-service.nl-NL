@@ -4,9 +4,9 @@ description: Leer beste praktijkaanbevelingen op hoe te om een project op een re
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,10 @@ In dit voorbeeld maken we de site `wknd-ch` voor de Zwitserse aanwezigheid van w
    * De `code` -configuratie moet dezelfde zijn als u hebt gebruikt voor het maken van het project.
    * `content` > `source` > `url` moet worden aangepast aan de naam van de nieuwe site die u maakt. In dit voorbeeld is dit `wknd-ch` .
    * De naam van de site in de URL van de POST moet dus gelijk zijn aan de naam van de site in `content` > `source` > `url` .
+   * Pas het `admin` -blok aan om de gebruikers te definiëren die volledige beheertoegang tot de site moeten hebben.
+      * Het is een array met e-mailadressen.
+      * U kunt jokerteken `*` gebruiken.
+      * Zie het document [ Vormende Authentificatie voor Auteurs ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) voor meer informatie.
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ In dit voorbeeld maken we de site `wknd-ch` voor de Zwitserse aanwezigheid van w
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

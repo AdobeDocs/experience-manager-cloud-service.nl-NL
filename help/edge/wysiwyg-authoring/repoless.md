@@ -4,9 +4,9 @@ description: Als u veel vergelijkbare sites hebt die er meestal hetzelfde uitzie
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,11 @@ Als u van deze functie wilt profiteren, moet u het volgende doen.
 * Uw plaats is reeds volledig opstelling door het document [ Begonnen Gids van de Ontwikkelaar te volgen Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * U gebruikt minimaal AEM as a Cloud Service 2024.08.
 
-U zult ook Adobe moeten vragen om twee punten voor u te vormen. Neem contact op met de Adobe via uw Slack of stel een supportprobleem aan de orde om deze verzoeken in te dienen.
+U zult ook Adobe moeten vragen om de volgende punten voor u te vormen. Ga via uw Slack-kanaal uit of stel een supportprobleem aan om Adobe aan te vragen om deze wijzigingen aan te brengen:
 
-* De {](https://www.aem.live/docs/config-service-setup#prerequisites) de configuratiedienst 0} aem.live is actief voor uw milieu en u wordt gevormd als beheerder.[
-* De functie voor probleemloos afdrukken moet zijn ingeschakeld voor uw programma door Adobe.
+* Vraag om de [ aem.live configuratieservice ](https://www.aem.live/docs/config-service-setup#prerequisites) voor uw milieu te activeren en dat u als beheerder wordt gevormd.
+* Vraag om de functie voor probleemloos gebruiken voor uw programma in te schakelen door Adobe.
+* Vraag de Adobe om de org voor u te maken.
 
 ## Repoless-functie activeren {#activate}
 
@@ -64,67 +65,6 @@ Zodra u uw toegangstoken hebt, kan het in de kopbal van cURL- verzoeken in het v
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### Uw configuratieservice configureren {#config-service}
-
-Zoals vermeld in de [ eerste vereisten, ](#prerequisites) de configuratiedienst moet voor uw milieu worden toegelaten. U kunt de installatie van uw configuratieservice controleren met deze opdracht cURL.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-Als de configuratieservice correct wordt ingesteld, zal JSON gelijkend op het volgende zijn teruggekeerd.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-Bereik uit aan Adobe via uw kanaal van de Slack van het project of breng een steunkwestie aan als uw configuratieservice niet wordt toegelaten. Zodra u uw teken hebt en geverifieerd dat de configuratieservice wordt toegelaten, kunt u de configuratie voortzetten.
-
-1. Controleer of de inhoudsbron op de juiste wijze is ingesteld.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. Voeg een wegafbeelding aan de openbare configuratie toe.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-Wanneer de openbare configuratie is gemaakt, kunt u deze openen via een URL die lijkt op `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` om de openbare configuratie te controleren.
 
 ### Padtoewijzing toevoegen voor siteconfiguratie en technische account instellen {#access-control}
 
@@ -184,6 +124,11 @@ Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vorme
 
 1. Stel de technische account in uw configuratie in met een cURL-opdracht die lijkt op het volgende:
 
+   * Pas het `admin` -blok aan om de gebruikers te definiëren die volledige beheertoegang tot de site moeten hebben.
+      * Het is een array met e-mailadressen.
+      * U kunt jokerteken `*` gebruiken.
+      * Zie het document [ Vormende Authentificatie voor Auteurs ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) voor meer informatie.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vorme
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"

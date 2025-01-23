@@ -4,9 +4,9 @@ description: Leer hoe u afzonderlijke sites kunt instellen voor uw testomgeving 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ Er zijn twee stappen aan het vormen van een afzonderlijke productiesite.
    * De `code` -configuratie moet dezelfde zijn als u hebt gebruikt voor het maken van het project.
    * `content` > `source` > `url` moet worden aangepast aan de naam van de nieuwe site die u maakt. In dit voorbeeld is dit `wknd-prod` .
    * De naam van de site in de URL van de POST moet dus gelijk zijn aan de naam van de site in `content` > `source` > `url` .
+   * Pas het `admin` -blok aan om de gebruikers te definiëren die volledige beheertoegang tot de site moeten hebben.
+      * Het is een array met e-mailadressen.
+      * U kunt jokerteken `*` gebruiken.
+      * Zie het document [ Vormende Authentificatie voor Auteurs ](https://www.aem.live/docs/authentication-setup-authoring#default-roles) voor meer informatie.
 
    ```text
    curl --request POST \
@@ -71,7 +75,7 @@ Er zijn twee stappen aan het vormen van een afzonderlijke productiesite.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
