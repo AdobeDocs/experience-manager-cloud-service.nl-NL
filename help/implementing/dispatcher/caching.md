@@ -4,9 +4,9 @@ description: Meer informatie over de basisbeginselen van Caching in AEM as a Clo
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2924'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige afstemming van de paginakoptekst vereist (met een waarde die op kalenderdag is gebaseerd), omdat de paginakoptekst standaard op 0 is ingesteld. Dat gezegd, **oefening voorzichtigheid wanneer het uitzetten van gebrek caching.**
 
-* U kunt de waarde `EXPIRATION_TIME` variabele in `global.vars` definiëren met de AEM as a Cloud Service SDK Dispatcher-gereedschappen.
+* U kunt voor alle HTML-/tekstinhoud overschrijven door de variabele `EXPIRATION_TIME` in `global.vars` te definiëren met de AEM as a Cloud Service SDK Dispatcher-gereedschappen.
 * U kunt de volgende Apache `mod_headers` -instructies negeren op fijner korrelig niveau, inclusief het onafhankelijk beheren van de CDN en de cache van de browser:
 
   ```
@@ -240,12 +240,24 @@ URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die word
 Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, aan betere geheim voorgeheugenverzoeken, zal CDN gemeenschappelijke marketing verwante vraagparameters, specifiek die verwijderen die het volgende regex patroon aanpassen:
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-Verzend een ondersteuningsticket als u dit gedrag wilt uitschakelen.
+Deze functionaliteit kan worden van een knevel voorzien en van het gebruiken van a `requestTransformations` vlag in [ CDN configuratie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
-Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om het 2} bezit van de configuratie van Dispatcher te vormen `ignoreUrlParams`; zie [ Vormend Dispatcher - het Negeren van Parameters URL ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Als u bijvoorbeeld wilt ophouden met het verwijderen van marketingparams op CDN-niveau, moet u `removeMarketingParams: false` implementeren met een config die de volgende sectie bevat.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+In het geval dat `removeMarketingParams` de functionaliteit op CDN niveau wordt onbruikbaar gemaakt wordt het nog geadviseerd om het 1} bezit van de configuratie van Dispatcher te vormen {; zie [ Vormend Dispatcher - het Negeren van Parameters URL ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).`ignoreUrlParams`
 
 Er zijn twee mogelijkheden om marketingparameters te negeren. (Waar de eerste voorkeur cachebusting via queryparameters negeert):
 
@@ -518,7 +530,7 @@ Wanneer de nieuwe versies van bibliotheken worden vrijgegeven voor productie, wo
 
 Het mechanisme achter deze mogelijkheid is een geserialiseerde hash, die aan de verbinding van de cliëntbibliotheek wordt toegevoegd. Hiermee wordt een unieke, versiegekoppelde URL voor de browser gegarandeerd die de CSS/JS in cache plaatst. De geserialiseerde hash wordt alleen bijgewerkt wanneer de inhoud van de clientbibliotheek wordt gewijzigd. Dit houdt in dat als er niet-gerelateerde updates optreden (dat wil zeggen dat er geen wijzigingen zijn aangebracht in de onderliggende css/js van de clientbibliotheek) zelfs met een nieuwe implementatie, de verwijzing ongewijzigd blijft. Hierdoor wordt de browsercache minder verstoord.
 
-### Longcache-versies van Client-Side Libraries inschakelen - AEM as a Cloud Service SDK QuickStart {#enabling-longcache}
+### Longcache-versies van Client-Side Libraries inschakelen - AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
 
 De standaard clientlib omvat op een pagina van HTML kijkt als het volgende voorbeeld:
 
@@ -534,7 +546,7 @@ Wanneer strikte clientlib-versioning is ingeschakeld, wordt een lange-termijnhas
 
 Strikte clientlib-versioning is standaard ingeschakeld in alle AEM as a Cloud Service-omgeving.
 
-Ga als volgt te werk om strikte clientlib-versioning in te schakelen in de lokale SDK QuickStart:
+Ga als volgt te werk om strikte clientlib-versioning in te schakelen in de lokale SDK Quickstart:
 
 1. Ga naar de OSGi Configuration Manager `<host>/system/console/configMgr`
 1. Vind OSGi Config voor de Manager van de Bibliotheek van de HTML van de Adobe Granite:
