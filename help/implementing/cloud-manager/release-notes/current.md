@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ De volgende geplande release is donderdag 13 februari 2025.
 
 * **de kwaliteitsregels van de Code - de Verbetering van de Server SonarQube:** de stap van de Kwaliteit van de Code van Cloud Manager zal beginnen SonarQube Server 9.9 met de versie van Cloud Manager 2025.2.0 te gebruiken, die voor Donderdag, 13 februari, 2025 wordt gepland.
 
-Om voor te bereiden, zijn de bijgewerkte regels SonarQube nu beschikbaar bij [ Regels van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Om voor te bereiden, zijn de bijgewerkte regels SonarQube nu beschikbaar bij [ Regels van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-U kunt de nieuwe regels &quot;vroege controle&quot;door de volgende variabele van de pijpleidingstekst te plaatsen:
+  U kunt de nieuwe regels &quot;vroege controle&quot;door de volgende variabele van de pijpleidingstekst te plaatsen:
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Stel bovendien de volgende variabele in om ervoor te zorgen dat de stap voor de codekwaliteit wordt uitgevoerd voor dezelfde commit (wordt normaal gesproken overgeslagen voor dezelfde `commitId`):
+  Stel bovendien de volgende variabele in om ervoor te zorgen dat de stap voor de codekwaliteit wordt uitgevoerd voor dezelfde commit (wordt normaal gesproken overgeslagen voor dezelfde `commitId`):
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![ pagina van de Configuratie van Variabelen ](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ Stel bovendien de volgende variabele in om ervoor te zorgen dat de stap voor de 
       * De geleidelijke implementatie naar alle Cloud Manager-omgevingen begint in februari voor sandboxen en ontwikkelomgevingen en loopt in april door tot productieomgevingen.
       * De klanten die met Java 11 bouwen die wensen om Java 21 runtime *vroeger goed te keuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
 
-* **&quot;CDN Configurations&quot;anders genoemd aan &quot;Toewijzingen van het Domein&quot;:** als deel van gebruikersinterfaceverbeteringen in AEM Cloud Manager, wordt het etiket &quot;Configuraties CDN&quot;nu anders genoemd aan &quot;Toewijzingen van het Domein&quot;voor betere terminologiegroepering met functionaliteit. <!-- CMGR-64738 -->
+* **&quot;CDN Configurations&quot;anders genoemd aan &quot;Toewijzingen van het Domein&quot;:** als deel van gebruikersinterfaceverbeteringen in AEM Cloud Manager, wordt het etiket &quot;Configuraties CDN&quot;nu anders genoemd aan &quot;Toewijzingen van het Domein.&quot; Door deze wijziging wordt de terminologie beter afgestemd op de functionaliteit. <!-- CMGR-64738 -->
 
   ![ &quot;CDN Configurations&quot;anders genoemd aan &quot;Toewijzingen van het Domein&quot;in het gebruikersinterface ](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Voorziening een Plaats van Edge Delivery met één klik:** Cloud Manager laat nu gebruikers met de aangewezen toestemmingen en de vergunningen toe om een plaats van Edge Delivery Services van de steekproef met enkel één enkele klik tot stand te brengen. Dit gestroomlijnde proces biedt de volgende geautomatiseerde functies:
+
+   * **Integratie GitHub** - leidt automatisch tot een bewaarplaats GitHub binnen een bestaande organisatie, pre-gevormd met een boilerplate malplaatje voor Edge Delivery Services.
+   * **AEM de Installatie van de Toepassing van de Synchronisatie van de Code van de Synchronisatie van de Code** - installeert de toepassing van de Synchronisatie van de AEM op de bewaarplaats, die naadloze synchronisatie en plaatsing verzekert.
+   * **de Opstelling van Collaboration van de Inhoud** - Verbindt een aangewezen omslag van de Aandrijving van Google voor inhoudsopslag, die een samenwerkingsmilieu voor inhoudsbeheer verstrekken.
+   * **Inhoud het Publiceren** - de gebruikers kunnen inhoud voor provisioned plaatsen nu direct van het gebruikersinterface van Cloud Manager publiceren, die werkschema&#39;s vereenvoudigen en efficiency verbeteren.
+   * **Verbeterde Collaboration** - het platform staat gebruikers toe om veelvoudige medewerkers aan de omslag van de de inhoudsopslag van de Aandrijving van Google toe te voegen, die teamwerk en inhoudsbijdragen vergemakkelijkt.
+
+  Deze verbeteringen zijn bedoeld om de automatisering te verbeteren, installatieprocessen te vereenvoudigen en de samenwerking voor gebruikers van Edge Delivery Services te verbeteren. <!-- CMGR-59362 -->
+
+  ![ Levering een Plaats van Edge Delivery ](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![ de plaatsdialoog van Edge Delivery van de Levering ](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Verbeterde steun voor Edge Delivery Services plaatsen:** Cloud Manager steunt nu onboarding voor de recentste Edge Delivery Services plaatsen. Deze update omvat een uitvoerige refactoring van CDN en leveringsstapel, resulterend in betere robuustheid en onderhoudsbaarheid.
+
+* **Vroege het programmaupdate van de Goedkeuringsarts - de bevestigingssteun van PR voor Bitbucket en GitLab:** Cloud Manager steunt nu de bevestiging van het Verzoek van de Trek (PR) voor zowel Cloud als zelf-ontvangen versies van Bitbucket en GitLab. Met deze functie kunnen klanten hun codewijzigingen testen op basis van de kwaliteitsdrempels voor code van de Adobe voordat ze een PR samenvoegen. Door te zorgen voor een hogere codekwaliteit voordat de code wordt samengevoegd, verbetert deze verbetering het succespercentage van codewijzigingen in productiepijpleidingen aanzienlijk, waardoor de tijd tot aan de markt wordt verkort en de ontwikkelingsworkflows worden gestroomlijnd.
 
 
 <!-- ## Early adoption program {#early-adoption}

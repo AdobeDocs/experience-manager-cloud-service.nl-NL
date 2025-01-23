@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `cr
 >Wanneer `.cloudmanager/java-version` is ingesteld op `21` of `17` , wordt de Java 21-runtime geïmplementeerd. De Java 21-runtime wordt vanaf donderdag 13 februari 2025 gepland voor geleidelijke implementatie in alle omgevingen (niet alleen die omgevingen waarvan de code is gemaakt met Java 11). De rollout begint met sandboxen en ontwikkelomgevingen en wordt vervolgens in april 2025 in alle productieomgevingen geïmplementeerd. De klanten die Java 21 runtime *willen goedkeuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
 
 
-#### Vereisten voor de buildtijd
+#### Vereisten voor de buildtijd {#build-time-reqs}
 
 De volgende aanpassingen zijn vereist om het project te kunnen bouwen met Java 21 en Java 17. Ze kunnen al worden bijgewerkt voordat u Java 21 en Java 17 uitvoert, omdat ze compatibel zijn met oudere Java-versies.
 
