@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Doe een groeten aan een Digital Asset Management-oplossing die de uiteenlopende 
 
 ![ Mijn overzicht van Workspace ](assets/my-workspace-demo.gif)
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](my-workspace-assets-view.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Inzichten om gegevensgestuurde beslissingen te nemen {#insights-data}
 
@@ -76,7 +76,7 @@ Om gelijke tred te houden met de snelheid van de inhoud, zijn activeerbare inzic
 
 ![ Overzicht van Inzichten ](assets/insights-overview.gif)
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](manage-reports-assets-view.md#view-live-statistics)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Adobe Photoshop Express-integratie om samenwerking te versnellen {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Bekijk deze video om te zien hoe Assets de integratie van Adobe Photoshop Expres
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](edit-images-assets-view.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 De komende versies voor Assets as a Cloud Service zouden ook [ Adobe Firefly integratie via Adobe Express ](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!g!adobe%20firefly!19870733758!148140507838) omvatten.
 
@@ -96,7 +96,7 @@ Met de Assets-weergave kunt u snel een mapstructuur voor uw organisatie instelle
 
 ![ uploadt omslagen ](assets/folder-uploads.gif)
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](add-delete-assets-view.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### Eerste benadering zoeken om de efficiëntie te verbeteren {#search-first}
 
@@ -110,7 +110,7 @@ De weergave Assets biedt de mogelijkheid om de bewerkingen te controleren die wo
 
 ![ ontvang berichten ](assets/notifications.gif)
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](manage-notifications-assets-view.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### Soft delete activa om betere controle aan beheerders te verstrekken {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ In de map met prullenmand die beschikbaar is in de Assets-weergave, worden de el
 
 ![ Zachte Schrapping ](assets/soft-delete.gif)
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](navigate-assets-view.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 Naast deze functies kunt u in de Assets-weergave ook de volgende functies uitvoeren die niet beschikbaar zijn in de Admin-weergave:
 
