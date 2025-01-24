@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,17 @@ De volgende geplande release is donderdag 13 februari 2025.
 * **Verbeterde steun voor Edge Delivery Services plaatsen:** Cloud Manager steunt nu onboarding voor de recentste Edge Delivery Services plaatsen. Deze update omvat een uitvoerige refactoring van CDN en leveringsstapel, resulterend in betere robuustheid en onderhoudsbaarheid.
 
 * **Vroege het programmaupdate van de Goedkeuringsarts - de bevestigingssteun van PR voor Bitbucket en GitLab:** Cloud Manager steunt nu de bevestiging van het Verzoek van de Trek (PR) voor zowel Cloud als zelf-ontvangen versies van Bitbucket en GitLab. Met deze functie kunnen klanten hun codewijzigingen testen op basis van de kwaliteitsdrempels voor code van de Adobe voordat ze een PR samenvoegen. Door te zorgen voor een hogere codekwaliteit voordat de code wordt samengevoegd, verbetert deze verbetering het succespercentage van codewijzigingen in productiepijpleidingen aanzienlijk, waardoor de tijd tot aan de markt wordt verkort en de ontwikkelingsworkflows worden gestroomlijnd.
+
+* **Geavanceerde het filtreren opties voor pijpleidingen:** Cloud Manager kenmerkt nu geavanceerde het filtreren opties op de pagina van Pijpleidingen, die u tot relevante gegevens laat snel toegang hebben en plaatsingsefficiency verbetert. Enkele van de belangrijkste functies zijn:
+
+   * **het Filtreren van meerdere criteria:** verfijnen onderzoeksresultaten met filters zoals pijpleidingsnaam, milieu, en voeren code op.
+   * **Gestroomlijnd Onderzoek van de Pijpleiding:** bepaal gemakkelijk van specifieke pijpleidingen voor snellere navigatie en beter werkschemabeheer de plaats.
+
+  Al met al maken deze verbeteringen het beheren en implementeren van pijpleidingen efficiënter en gebruiksvriendelijker.
+
+  ![ eigenschap van de de filters van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Zelfbediening CDN Configuratie voor de Dienst van Edge Delivery:** De nieuwe adopters van de Dienst van Edge Delivery kunnen hun CDN door Cloud Manager nu onafhankelijk vormen. Deze update breidt de ondersteuning uit van `.hlx.page/live` naar de nieuwe `.aem.page/live` , waardoor gebruikers meer flexibiliteit en gestroomlijnde installatie krijgen.
 
 
 <!-- ## Early adoption program {#early-adoption}
