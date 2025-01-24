@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -73,20 +73,47 @@ OV en EV bieden deze functies bovendien via DV-certificaten in Cloud Manager.
 >
 >Als u meerdere aangepaste domeinen hebt, is het mogelijk dat u niet elke keer een certificaat wilt uploaden wanneer u een nieuw domein toevoegt. In dat geval kunt u profiteren van het verkrijgen van één certificaat dat meerdere domeinen bestrijkt.
 
->[!NOTE]
->
->Als twee certificaten betrekking hebben op hetzelfde domein, wordt het certificaat dat nauwkeuriger is, toegepast.
->
->Als uw domein bijvoorbeeld `dev.adobe.com` is en u een certificaat voor `*.adobe.com` en een ander certificaat voor `dev.adobe.com` hebt, wordt het specifiekere (`dev.adobe.com`) gebruikt.
-
 #### Vereisten voor door klanten beheerde OV/EV SSL-certificaten {#requirements}
 
 Als u ervoor kiest om uw eigen door de klant beheerde OV/EV SSL-certificaat toe te voegen, moet het aan de volgende vereisten voldoen:
 
-* AEM as a Cloud Service accepteert certificaten die voldoen aan het OV- (Organization Validation) of EV-beleid (Extended Validation).
+* Het certificaat moet voldoen aan het OV- (Organisatie Validatie) of EV-beleid (Uitgebreide Validatie).
    * Cloud Manager biedt geen ondersteuning voor het toevoegen van uw eigen DV-certificaten (Domain Validation).
+* Zelfondertekende certificaten worden niet ondersteund.
 * Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
-* Zelfondertekende certificaten worden niet geaccepteerd.
+
+#### Aanbevolen procedures voor certificaatbeheer
+
+* **vermijd overlappende certificaten:**
+
+   * Gebruik geen overlappende certificaten die overeenkomen met hetzelfde domein om een vloeiend certificaatbeheer te garanderen. Als u bijvoorbeeld een jokertekencertificaat (*.example.com) naast een specifiek certificaat (dev.example.com) hebt, kan dit leiden tot verwarring.
+   * De laag TLS geeft voorrang aan het meest specifieke en onlangs opgestelde certificaat.
+
+  Voorbeelden:
+
+   * &quot;Dev Certificate&quot; dekt `dev.example.com` en wordt geïmplementeerd als een domeintoewijzing voor `dev.example.com` .
+   * Met &quot;werkgebiedcertificaat&quot; wordt `stage.example.com` bestreken en wordt het geïmplementeerd als een domeintoewijzing voor `stage.example.com` .
+   * Als het &quot;Certificaat van het Stadium&quot;*na* &quot;Dev Certificaat wordt opgesteld/bijgewerkt,&quot;het ook verzoeken voor `dev.example.com` dient.
+
+     Om dergelijke conflicten te vermijden, zorg ervoor dat de certificaten zorgvuldig scoped aan hun voorgenomen domeinen zijn.
+
+* **Certificaten van de Vervanging:**
+
+  Jokertekens worden wel ondersteund (bijvoorbeeld `*.example.com` ), maar moeten alleen worden gebruikt als dat nodig is. In geval van overlapping krijgt het specifiekere certificaat voorrang. Het specifieke certificaat dient bijvoorbeeld `dev.example.com` in plaats van het jokerteken (`*.example.com`).
+
+* **Bevestiging en het oplossen van problemen:**
+Voordat u probeert een certificaat te installeren met Cloud Manager, raadt Adobe u aan de integriteit van het certificaat lokaal te valideren met gereedschappen zoals `openssl` . Bijvoorbeeld:
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### Indeling voor door klanten beheerde certificaten {#certificate-format}
 
@@ -112,13 +139,9 @@ De volgende `openssl` -opdrachten kunnen worden gebruikt om niet-PEM-certificate
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->Adobe raadt u aan de integriteit van uw certificaat lokaal te valideren met een hulpprogramma zoals `openssl verify -untrusted intermediate.pem certificate.pem` voordat u probeert het te installeren met Cloud Manager.
-
 ## Beperking van het aantal geïnstalleerde SSL-certificaten {#limitations}
 
-Cloud Manager staat op elk moment maximaal 50 geïnstalleerde SSL-certificaten toe. Deze certificaten kunnen aan één of meerdere milieu&#39;s over uw programma worden geassocieerd en ook om het even welke verlopen certificaten omvatten.
+Cloud Manager biedt op elk moment ondersteuning voor maximaal 50 geïnstalleerde certificaten. Deze certificaten kunnen aan één of meerdere milieu&#39;s over uw programma worden geassocieerd en ook om het even welke verlopen certificaten omvatten.
 
 Als u de limiet hebt bereikt, controleert u uw certificaten en kunt u eventueel verlopen certificaten verwijderen. U kunt ook meerdere domeinen in hetzelfde certificaat groeperen omdat een certificaat meerdere domeinen kan bestrijken (maximaal 100 SAN&#39;s).
 
