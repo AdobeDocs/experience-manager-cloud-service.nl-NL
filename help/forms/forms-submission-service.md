@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
@@ -100,7 +100,7 @@ U kunt a **POST** verzoek aan de vorm ook verzenden om het `incoming` blad met g
 > * Deel het `incoming` -werkblad met de Adobe Experience Manager `forms@adobe.com` en geef de bewerkingstoegang.
 > * Bekijk een voorvertoning van het `incoming` -werkblad en publiceer het in het zijpaneel.
 
-Om te begrijpen hoe te om het verzoek van de POST voor vestiging uw blad te formatteren, verwijs naar de [ API documentatie ](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post). U kunt het onderstaande voorbeeld bekijken:
+Om te begrijpen hoe te om het verzoek van de POST voor vestiging uw blad te formatteren, verwijs naar de [ API documentatie ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). U kunt het onderstaande voorbeeld bekijken:
 
 U kunt gereedschappen zoals curl of Postman gebruiken om dit verzoek voor POSTEN uit te voeren, zoals hieronder wordt getoond.
 
