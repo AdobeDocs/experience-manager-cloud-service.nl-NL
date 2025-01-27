@@ -1,13 +1,13 @@
 ---
 title: Edge Delivery Services voor AEM Forms - Overzicht
-description: Edge Delivery Services voor AEM Forms
+description: Edge Delivery Services voor AEM Forms zijn gebouwd voor maximale prestaties, waardoor u de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers kunt inzien.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 60998217ea7d3d9c426975510b433308b0ddea14
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Met de Universal Editor kunnen gebruikers formulierelementen gebruiken (zoals te
 
 De Universele Redacteur is specifiek gericht op Edge Delivery Services (EDS). De belangrijkste kracht van de Universal Editor is de robuuste functieset, die geavanceerde mogelijkheden voor het maken van formulieren, dynamische regelbewerking en naadloze integratie met verschillende gegevensbronnen omvat. Gebruikers kunnen snel responsieve formulieren ontwerpen met behulp van vooraf gebouwde componenten, aanpasbare sjablonen en een uitgebreide bibliotheek met formulierelementen.
 
-![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
 
 
 
@@ -43,7 +43,7 @@ De mogelijkheden van de Universal Editor zijn zorgvuldig ontworpen om lichtgewic
     <p>Ontwerpen van responsieve formulieren die naadloos worden aangepast op verschillende apparaten. Bekijk voorbeelden en test ontwerpen voor desktops, tablets en mobiele apparaten in de responsieve modus.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Handelingen verzenden">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG Interface" alt="Handelingen verzenden">
     <h3>Responsieve modus </h3>
     <p>Formulieren ontwerpen die zich naadloos aanpassen op verschillende apparaten (desktops, tablets en mobiele apparaten). Gebruik de responsieve modus om een voorbeeld van het formulier weer te geven voor verschillende schermgrootten.</p>
   </div>
@@ -68,17 +68,17 @@ De mogelijkheden van de Universal Editor zijn zorgvuldig ontworpen om lichtgewic
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Pre-fill services">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG Interface" alt="Pre-fill services">
     <h3>Pre-fill services</h3>
     <p>Pre-fill Services vult formuliervelden automatisch met relevante gebruikersgegevens uit verschillende bronnen, waardoor de handmatige invoer wordt verminderd en de gebruikerservaring wordt verbeterd.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Gegevensbinding">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG Interface" alt="Gegevensbinding">
     <h3>Gegevensbinding</h3>
     <p>Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en achterwaartse gegevensbronnen, met ondersteuning voor realtime updates en geavanceerde gegevenstoewijzing.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="WYSIWYG Interface" alt="Internationalisatie/lokalisatie">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG Interface" alt="Internationalisatie/lokalisatie">
     <h3>Publiceren/Publiceren ongedaan maken</h3>
     <p>U kunt de zichtbaarheid van uw formulieren eenvoudig beheren: publiceer of maak de publicatie ongedaan met slechts een paar klikken om de beschikbaarheid, gebruikerstoegang en updates van inhoud dynamisch te beheren.</p>
   </div>
@@ -96,7 +96,7 @@ De mogelijkheden van de Universal Editor zijn zorgvuldig ontworpen om lichtgewic
     <p>Verstuur Acties steunen achterste integratie, voorwaardelijke voorleggingslogica, veilige eindpunten, en pre-bewerkers, stroomlijnend voorleggingswerkschema's.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Taakbeheer">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG Interface" alt="Taakbeheer">
     <h3>Aangepaste componenten</h3>
     <p>Met aangepaste componenten kunnen ontwikkelaars de formuliermogelijkheden uitbreiden door unieke elementen te maken die zijn afgestemd op specifieke gevallen van organisatiegebruik.</p>
   </div>
@@ -104,17 +104,17 @@ De mogelijkheden van de Universal Editor zijn zorgvuldig ontworpen om lichtgewic
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Editor-aanpassing">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG Interface" alt="Editor-aanpassing">
     <h3>Editor-aanpassing</h3>
     <p>Ontwikkelaars kunnen de functionaliteit van de Universal Editor uitbreiden via UI-extensies, zodat op maat gesneden oplossingen kunnen worden ontwikkeld die op specifieke organisatorische behoeften zijn afgestemd.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Forms insluiten">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG Interface" alt="Forms insluiten">
     <h3>Forms insluiten</h3>
     <p>U kunt formulieren rechtstreeks insluiten in Edge Delivery Services Sites-pagina's met de ingebouwde insluitcomponent van de Universal Editor voor een naadloze gebruikerservaring.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface" alt="Aangepaste componenten">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG Interface" alt="Aangepaste componenten">
     <h3>Configuratie bedankt</h3>
     <p>Pas eenvoudig het bevestigingsbericht of de pagina aan die aan gebruikers na succesvolle vormverzending worden getoond.
     </p>
