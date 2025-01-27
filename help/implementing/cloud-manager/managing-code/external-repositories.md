@@ -4,9 +4,9 @@ description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoege
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Mana
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
+>Dit kenmerk is alleen beschikbaar via het programma voor vroegtijdige adoptie. Voor meer details en om omhoog als vroege adopter te ondertekenen, zie [ Uw Eigen Git - nu met steun voor GitLab en Bitbucket ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket) brengen.
 
 ## Een externe opslagplaats configureren
 

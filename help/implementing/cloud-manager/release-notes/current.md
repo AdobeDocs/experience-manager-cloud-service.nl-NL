@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ De volgende geplande release is donderdag 13 februari 2025.
 * **Verbeterde steun voor Edge Delivery Services plaatsen:** Cloud Manager steunt nu onboarding voor de recentste Edge Delivery Services plaatsen. Deze update omvat een uitvoerige refactoring van CDN en leveringsstapel, resulterend in betere robuustheid en onderhoudsbaarheid.
 
 * **Vroege het programmaupdate van de Goedkeuringsarts - de bevestigingssteun van PR voor Bitbucket en GitLab:** Cloud Manager steunt nu de bevestiging van het Verzoek van de Trek (PR) voor zowel Cloud als zelf-ontvangen versies van Bitbucket en GitLab. Met deze functie kunnen klanten hun codewijzigingen testen op basis van de kwaliteitsdrempels voor code van de Adobe voordat ze een PR samenvoegen. Door te zorgen voor een hogere codekwaliteit voordat de code wordt samengevoegd, verbetert deze verbetering het succespercentage van codewijzigingen in productiepijpleidingen aanzienlijk, waardoor de tijd tot aan de markt wordt verkort en de ontwikkelingsworkflows worden gestroomlijnd.
+
+Voor meer informatie over &quot;breng Uw Eigen Git&quot;- nu met steun voor GitLab en Bitbucket - en om omhoog als Vroege Inschrijver te ondertekenen, zie [ de Nota&#39;s van de Versie van Cloud Manager Oktober 2024 ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Geavanceerde het filtreren opties voor pijpleidingen:** Cloud Manager kenmerkt nu geavanceerde het filtreren opties op de pagina van Pijpleidingen, die u tot relevante gegevens laat snel toegang hebben en plaatsingsefficiency verbetert. Enkele van de belangrijkste functies zijn:
 
