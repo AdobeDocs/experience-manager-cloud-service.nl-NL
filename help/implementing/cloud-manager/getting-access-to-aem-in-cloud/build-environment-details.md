@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
+source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1489'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,12 @@ Als u wilt migreren naar gebouwen met Java 21 of Java 17, moet u eerst upgraden 
 
 Wanneer u uw toepassing naar een nieuwe Java-versie (build) en een nieuwe runtimeversie migreert, moet u deze grondig testen in ontwikkelings- en werkgebiedomgevingen voordat u de toepassing implementeert naar productie.
 
+Wij adviseren de volgende plaatsingsstrategie:
+
+1. Voer uw lokale SDK uit met Java 21, dat u kunt downloaden van https://experience.adobe.com/#/downloads, en implementeer uw toepassing in dit programma en valideer de functionaliteit ervan. Controleer de logboeken dat er geen fouten zijn, die op problemen met het klassen laden of bytecode het blazen wijzen.
+1. Configureer een vertakking in uw Cloud Manager-opslagplaats om Java 21 te gebruiken als Java-versie voor buildtime, configureer een DEV-pijpleiding om deze vertakking te gebruiken en de pijpleiding uit te voeren. Voer uw validatietests uit.
+1. Als het er goed uitziet, configureert u uw podium-/prodpijplijn zodanig dat Java 21 wordt gebruikt als buildtime Java-versie en de pijplijn wordt uitgevoerd.
+
 ##### Enkele vertaalfuncties {#translation-features}
 
 De volgende functies werken mogelijk niet correct wanneer u werkt met Java 21 of Java 17 en Adobe verwacht deze functies begin 2025 te kunnen oplossen:
@@ -93,7 +99,7 @@ De volgende functies werken mogelijk niet correct wanneer u werkt met Java 21 of
 
 #### Runtime-vereisten {#runtime-requirements}
 
-De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt geleidelijk ook toegepast op Java 11-builds (zie de opmerking hieronder). Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
+De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt geleidelijk ook toegepast op Java 11-builds (zie de opmerking hieronder). U kunt de Java 21-update alleen ontvangen als AEM versie 17098 of recenter is. Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
 
 Bibliotheekupdates kunnen altijd worden toegepast, omdat ze compatibel blijven met oudere Java-versies.
 
