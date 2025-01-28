@@ -4,9 +4,9 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Klanten met een licentie bij een logboekleverancier of die een logproduct hosten
 * HTTPS
 * Splunk
 
-Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en het op te stellen via de Pijpleiding van Cloud Manager Config aan RDE, dev, stadium, en de types van productiemilieu in productie (niet-zandbak) programma&#39;s.
+Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en kan via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
 Er is een optie voor de logboeken van de AEM en van Apache/Dispatcher om door AEM geavanceerde voorzien van een netwerkinfrastructuur, zoals specifieke uitgang IP worden verpletterd.
 

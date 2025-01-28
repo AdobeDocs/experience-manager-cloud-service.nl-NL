@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
+source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
-source-wordcount: '4053'
+source-wordcount: '4049'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De meeste van deze verkeersfilterregels zijn beschikbaar aan alle klanten van AE
 
 Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) die later in dit artikel worden beschreven.
 
-De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Het configuratiedossier kan aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijntooling.
+De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
 [ volg door een leerprogramma ](#tutorial) om concrete deskundigheid op deze eigenschap snel te bouwen.
 

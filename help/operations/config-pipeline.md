@@ -4,9 +4,9 @@ description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende con
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
+source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AE
 
 Een Cloud Manager config pijpleiding stelt configuratiedossiers (die in formaat YAML worden gecreeerd) aan een doelmilieu op. Een aantal eigenschappen in AEM as a Cloud Service kan op deze manier worden gevormd, met inbegrip van logboek het door:sturen, zuivert-verwante onderhoudstaken, en verscheidene eigenschappen CDN.
 
-Config-pijplijnen kunnen via Cloud Manager worden geïmplementeerd voor het ontwikkelen, uitvoeren en produceren van omgevingstypen in productieprogramma&#39;s (niet-sandbox). De configuratiedossiers kunnen aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend [ het hulpmiddel van de bevellijn van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Config-pijpleidingen kunnen via Cloud Manager worden geïmplementeerd om omgevingstypen te ontwikkelen, te testen en te produceren. De configuratiedossiers kunnen aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) worden opgesteld gebruikend [ het hulpmiddel van de bevellijn van de bevellijn ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 Deze volgende secties van dit document geven een overzicht van belangrijke informatie betreffende hoe config de pijpleidingen kunnen worden gebruikt en hoe de configuraties voor hen zouden moeten worden gestructureerd. Het beschrijft algemene concepten die over of allen of een ondergroep van de eigenschappen worden gedeeld die door config pijpleidingen worden gesteund.
 
