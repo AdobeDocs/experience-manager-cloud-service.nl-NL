@@ -4,7 +4,7 @@ description: AEM Forms biedt voorbeelden van adaptieve formulierthema's, sjablon
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -19,7 +19,9 @@ ht-degree: 0%
 | Adaptief formulier op basis van kerncomponenten | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Adaptief formulier op basis van elementaire componenten | Dit artikel |
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+>[!NOTE]
+>
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en FDM (Form Data Model) waarmee u snel Adaptive Forms kunt gaan maken. U kunt het [ pakket van de verwijzingsinhoud van het portaal van de softwaredistributie downloaden ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en de [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) gebruiken om het [ pakket van de verwijzingsinhoud ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) op uw productie, ontwikkeling, of lokale ontwikkelomgeving te installeren om deze verwijzingsactiva aan uw milieu te krijgen.
 
@@ -115,11 +117,11 @@ Met de standaardsjabloon kunt u snel een inschrijvingsformulier maken. U kunt de
 
 ## Referentieformuliergegevensmodel (FDM) {#reference-models}
 
-De Adaptive Forms kan vervolgens communiceren met Microsoft Dynamics 365 en Salesforce-servers om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
+De Adaptive Forms kan vervolgens communiceren met Microsoft Dynamics 365- en Salesforce-servers om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
 
-* Schrijf gegevens naar Microsoft Dynamics 365 en Salesforce bij het verzenden van adaptieve formulieren.
-* Schrijf gegevens in de Dynamica 365 van Microsoft en Salesforce door douaneentiteiten die in het Model van de Gegevens van de Vorm (FDM) worden bepaald en omgekeerd.
-* Vraag Microsoft Dynamics 365 en Salesforce-server naar gegevens en vul Adaptive Forms vooraf in.
+* Schrijf gegevens naar Microsoft Dynamics 365 en Salesforce op Aangepast formulier.
+* Schrijf gegevens in Microsoft Dynamics 365 en Salesforce via aangepaste entiteiten die zijn gedefinieerd in het Form Data Model (FDM) en omgekeerd.
+* Vraag Microsoft Dynamics 365- en Salesforce-server op voor gegevens en vul Adaptive Forms vooraf in.
 * Lees gegevens van Microsoft Dynamics 365 en Salesforce-server.
 
 U kunt het volgende Model van de Gegevens van de Vorm (FDM) krijgen door het [ inhoudspakket van de Verwijzing ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) te installeren:
@@ -127,7 +129,7 @@ U kunt het volgende Model van de Gegevens van de Vorm (FDM) krijgen door het [ i
 * Microsoft® Dynamics 365
 * Salesforce
 
-Voor informatie bij het gebruiken van deze modellen, zie [ Dynamiek 365 van Microsoft en de wolkendiensten van Salesforce vormen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Voor informatie bij het gebruiken van deze modellen, zie [ Microsoft Dynamics 365 en de wolkendiensten van Salesforce vormen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Zie ook {#see-also}

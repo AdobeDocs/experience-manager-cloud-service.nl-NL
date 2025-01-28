@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '6292'
 ht-degree: 0%
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 # Regels toevoegen aan een adaptief formulier {#adaptive-forms-rule-editor}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+>[!NOTE]
+>
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -26,13 +28,13 @@ ht-degree: 0%
 
 Met de functie voor regeleditors kunnen zakelijke gebruikers en ontwikkelaars regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de ervaring met het invullen van formulieren verder gestroomlijnd, zodat u nauwkeurige en snelle informatie krijgt.
 
-De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele belangrijke handelingen die u met behulp van regels kunt uitvoeren op adaptieve formulierobjecten:
+De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele van de belangrijkste acties die u met behulp van regels kunt uitvoeren op adaptieve formulierobjecten, zijn:
 
-* Een object tonen of verbergen
+* Een object weergeven of verbergen
 * Een object in- of uitschakelen
 * Een waarde instellen voor een object
 * De waarde van een object valideren
-* Voer functies uit om de waarde van een object te berekenen
+* Functies uitvoeren om de waarde van een object te berekenen
 * Een service van het formuliergegevensmodel aanroepen en een bewerking uitvoeren
 * Eigenschap van een object instellen
 
@@ -40,7 +42,7 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 
 Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen scripts maken en bestaande scripts bewerken. Gebruikers in de groep [!DNL forms-users] kunnen de scripts gebruiken, maar maken of bewerken geen scripts.
 
-## Verschillen tussen de regeleditor in de kerncomponenten en de Regeleditor in basiscomponenten
+## Verschil tussen Regeleditor in Kerncomponenten en Regeleditor in Foundation-componenten
 
 {{rule-editor-diff}}
 
@@ -109,11 +111,11 @@ De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebr
 
 ### [!UICONTROL When] {#whenruletype}
 
-Het **[!UICONTROL When]** type regel volgt de constructie van de **voorwaarde-actie-alternatieve handelingsregel** , of soms alleen de **voorwaarde-actieconstructie** . In dit regeltype geeft u eerst een evaluatievoorwaarde op, gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde wordt voldaan ( `True`). Tijdens het gebruik van het type Wanneer-regel kunt u meerdere OPERATORen en/of operatoren gebruiken om geneste expressies](#nestedexpressions) te maken[.
+Het **[!UICONTROL When]** regeltype volgt de **regelconstructie voorwaarde-actie-alternatieve actie** , of soms alleen de **voorwaarde-actie-constructie** . In dit regeltype geeft u eerst een voorwaarde op voor evaluatie, gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere EN- en OF-operatoren gebruiken om geneste expressies](#nestedexpressions) te maken[.
 
-Met het type Wanneer-regel kunt u een voorwaarde voor een formulierobject evalueren en handelingen uitvoeren op een of meer objecten.
+Met behulp van het regeltype When kunt u een voorwaarde op een formulierobject evalueren en acties uitvoeren op een of meer objecten.
 
-In eenvoudige woorden, een typische When-regel is als volgt gestructureerd:
+In gewone bewoordingen is een typische When-regel als volgt gestructureerd:
 
 `When on Object A:`
 
@@ -121,19 +123,19 @@ In eenvoudige woorden, een typische When-regel is als volgt gestructureerd:
 
 `Then, do the following:`
 
-Handeling 2 op object B;
+Actie 2 op object B;
 EN
-Handeling 3 voor Object C;
+Actie 3 op object C;
 
 _
 
 Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, terwijl het creëren van een regel voor die component, worden de opties automatisch teruggewonnen en ter beschikking gesteld van de regelmaker. U hoeft de optiewaarden niet nogmaals te typen.
 
-Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het maken van de regel worden de opties (keuzerondjes) automatisch opgehaald en als volgt beschikbaar gemaakt voor de maker van de regel:
+Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het maken van de regel worden de opties (keuzerondjes) automatisch opgehaald en als volgt beschikbaar gesteld aan de maker van de regel:
 
-![Multi-waarde geeft opties weer](assets/multivaluefcdisplaysoptions1.png)
+![Opties voor weergave van meerdere waarden](assets/multivaluefcdisplaysoptions1.png)
 
-Tijdens het schrijven van een Wanneer-regel kunt u de waarde van handeling wissen activeren. Waarde wissen van handeling wist de waarde van het opgegeven object. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden.
+Tijdens het schrijven van een wanneer-regel kunt u de actie Duidelijke waarde van activeren. Waarde van actie wissen wist de waarde van het opgegeven object. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden.
 
 ![ Duidelijke waarde van ](assets/clearvalueof1.png)
 
@@ -207,21 +209,21 @@ Met het **[!UICONTROL Set Value of]** -regeltype kunt u de waarde van een formul
 
 De **Vastgestelde Waarde van** regeltype is niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen. Een standaardsetwaarde van regel heeft de volgende structuur:
 
-Waarde van Object A instellen op:
+Stel de waarde van object A in op:
 
 (tekenreeks ABC) OF
-(objecteigenschap X van Object C) OF
+(objecteigenschap X van object C) OF
 (waarde van een functie) OF
 (waarde van een wiskundige uitdrukking) OF
-(uitvoerwaarde van een datamodelservice of webservice);
+(uitvoerwaarde van een gegevensmodelservice of webservice);
 
 Wanneer (optioneel):
 
-(Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
+(Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is WAAR;
 
-In het volgende voorbeeld wordt de waarde in `dependentid` het veld als invoer gebruikt en wordt de waarde van het `Relation` veld ingesteld op de uitvoer van het `Relation` argument van de `getDependent` service Form Data Model.
+In het volgende voorbeeld wordt de waarde in `dependentid` het veld als invoer gebruikt en wordt de waarde van het `Relation` veld ingesteld op de uitvoer van het `Relation` argument van de `getDependent` Form Data Model-service.
 
-![Webservice instellen](assets/set-value-web-service1.png)
+![Set-value-web-service](assets/set-value-web-service1.png)
 
 Voorbeeld van waardenregel instellen met de service Formuliergegevensmodel
 
