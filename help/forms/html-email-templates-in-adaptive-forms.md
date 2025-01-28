@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Hier volgt een kort overzicht van de betrokken stappen:
 
 ## Een HTML-sjabloon configureren voor een adaptief formulier
 
-U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt E-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een malplaatje van HTML te vormen:
+U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een malplaatje van HTML te vormen:
 
 ### Optie 1: Een bestand selecteren dat de HTML-sjabloon bevat
 
@@ -42,11 +42,14 @@ Voordat u verdergaat, moet u ervoor zorgen dat u de HTML-sjabloon hebt geüpload
 
 1. Open het adaptieve formulier voor bewerking.
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
-1. Ga naar het **lusje van de Verzending** en selecteer **verzenden E-mail** voorlegt actie.
+1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
+
+   ![ verzend e-mail verzendt actie ](/help/forms/assets/send-email-action.png)
+
 1. Laat de **externe malplaatje van het Gebruik** optie toe.
 1. Laat de **HTML malplaatje van het Gebruik** optie toe.
 1. Klik op het mappictogram voor de optie Extern sjabloonpad en blader naar de gewenste HTML-sjabloon.
-1. Klik op Gereed om de configuratie op te slaan.
+1. Klik **Gedaan** om de configuratie te bewaren.
 
 Uw HTML-sjabloon is nu geconfigureerd voor het adaptieve formulier.
 
@@ -54,15 +57,14 @@ Uw HTML-sjabloon is nu geconfigureerd voor het adaptieve formulier.
 
 1. Open het adaptieve formulier voor bewerking.
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
-1. Ga naar het **lusje van de Verzending** en selecteer **verzenden E-mail** voorlegt actie.
-1. Laat de **externe malplaatje van het Gebruik** optie toe.
+1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
 1. Laat de **HTML malplaatje van het Gebruik** optie toe.
 1. Type of deeg direct uw code van HTML in de verstrekte **E-mailMalplaatje** doos.
 
 
 ## Een sjabloon voor normale tekst configureren voor een adaptief formulier
 
-U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt E-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een onbewerkte-tekstmalplaatje te vormen:
+U kunt opstelling een Aangepast Vorm om een e-mail op voorlegging te verzenden gebruikend [**verzendt e-mail** voorlegt actie ](/help/forms/configure-submit-action-send-email.md). De actie verstrekt twee methodes om een onbewerkte-tekstmalplaatje te vormen:
 
 ### Optie 1: Een bestand selecteren dat de sjabloon bevat
 
@@ -70,7 +72,7 @@ Voordat u verdergaat, moet u ervoor zorgen dat u de HTML-sjabloon hebt geüpload
 
 1. Open het adaptieve formulier voor bewerking.
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
-1. Ga naar het **lusje van de Verzending** en selecteer **verzenden E-mail** voorlegt actie.
+1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
 1. Laat de **externe malplaatje van het Gebruik** optie toe.
 1. Klik het omslagpictogram voor de **Externe optie van de Weg van het Malplaatje** en doorblader om uw onbewerkt-tekstmalplaatje te selecteren.
 1. Klik op Gereed om de configuratie op te slaan.
@@ -81,7 +83,7 @@ Uw sjabloon is nu geconfigureerd voor het adaptieve formulier.
 
 1. Open het adaptieve formulier voor bewerking.
 1. Ga naar **Browser van de Inhoud**, selecteer de **Container van de Gids**, en tik het eigenschappen pictogram. Er wordt een dialoogvenster met de titel `Adaptive Form Container` weergegeven.
-1. Ga naar het **lusje van de Verzending** en selecteer **verzenden E-mail** voorlegt actie.
+1. Ga naar het **lusje van de Verzending** en selecteer **verzenden e-mail** voorlegt actie.
 1. Type of deeg direct uw onbewerkte-tekstmalplaatjecode in het verstrekte **E-mailvakje van het Malplaatje**.
 
 ## Formuliergegevens gebruiken in uw e-mailsjablonen
@@ -149,8 +151,6 @@ Hier volgt een voorbeeld van een sjabloon voor normale e-mail:
     Best regards,
     Your Team
 ```
-
-Vervang de placeholders ($ {name}, $ {email}, enz.) met de overeenkomstige namen van vormgebieden in uw Aangepast Vorm.
 
 ## Aanbevolen procedures voor HTML-e-mailsjablonen
 

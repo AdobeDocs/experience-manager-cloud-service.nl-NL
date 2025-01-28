@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ De mogelijkheden van de Universal Editor zijn zorgvuldig ontworpen om lichtgewic
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG Interface" alt="Internationalisatie/lokalisatie">
     <h3>Publiceren/Publiceren ongedaan maken</h3>
-    <p>U kunt eenvoudig de zichtbaarheid van uw formulieren bepalen: publiceer of publiceer de formulieren met slechts een paar klikken om de beschikbaarheid en inhoudsupdates dynamisch te beheren.</p>
+    <p>U kunt gemakkelijk de zichtbaarheid van uw formulieren bepalen door ze rechtstreeks vanuit de editor te publiceren of de publicatie ervan ongedaan te maken met slechts een paar klikken, zodat u de beschikbaarheid, gebruikerstoegang en updates van de inhoud in real-time dynamisch kunt beheren, zodat uw formulieren altijd up-to-date en toegankelijk zijn.</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ De mogelijkheden van de Universal Editor zijn zorgvuldig ontworpen om lichtgewic
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG Interface" alt="Editor-aanpassing">
     <h3>Editor-aanpassing</h3>
-    <p>Ontwikkelaars kunnen de functionaliteit van de Universal Editor uitbreiden via UI-extensies, zodat op maat gesneden oplossingen kunnen worden ontwikkeld die op specifieke organisatorische behoeften zijn afgestemd.</p>
+    <p>Ontwikkelaars kunnen de functionaliteit van de editor uitbreiden via UI-extensies, zodat op maat gesneden oplossingen kunnen worden ontwikkeld die op specifieke organisatorische behoeften zijn afgestemd.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG Interface" alt="Forms insluiten">
