@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,15 @@ Afhankelijk van de rechten van uw organisatie, kunt u [ extra opties ](#options)
 
 1. In *maak uw programma* tovenaar, op het **naam van het Programma** tekstgebied, typ de naam u voor het programma wilt.
 
-1. Onder **Doelstelling van het Programma**, uitgezochte **`Set up for production`**.
+1. Onder **Doelstelling van het Programma**, uitgezochte ![ pictogram van de Globe ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **Opstelling voor productie**.
 
    ![ Creërend programmatovenaar ](assets/create-production-program.png)
 
 1. (Optioneel) Voer in de rechterbenedenhoek van het dialoogvenster Wizard een van de volgende handelingen uit:
 
-   * Sleep en laat vallen een beelddossier op **een doel van het programmabeeld** toevoegen.
-   * Klik **voeg een programmabeeld** toe, dan selecteer een beeld van dossierbrowser.
-   * Klik op het prullenbakpictogram om een afbeelding te verwijderen die u hebt toegevoegd.
+   * Sleep en laat vallen een beelddossier op het ![ pictogram van het Beeld ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **een doel van het programmabeeld** toevoegen.
+   * Klik ![ pictogram van het Beeld ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **voeg een programmabeeld** toe, dan selecteer een beeld van een dossierbrowser.
+   * Klik ![ pictogram van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) om een beeld te verwijderen dat u toevoegde.
 
 1. Klik **verdergaan**.
 
@@ -52,13 +52,13 @@ Afhankelijk van de rechten van uw organisatie, kunt u [ extra opties ](#options)
    * Selecteer **Edge levert de Diensten** voor een volledig beheerde oplossing CDN die digitale ervaringen optimaliseert. Zie [ Ongeveer gebruikend Edge Delivery Services om uw project van Cloud Manager te leveren ](#edge-overview)
    * Als u **[selecteerde laat Verbeterde Veiligheid](#security)** optie toe, kunt u slechts zo vele oplossingen selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
 
-   ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. Klik de chevron aan de linkerzijde van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.
+   * Klik {de grootte 300 van de Chevron van 0} pictogram ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.![
 
    ![ Uitgezochte toe:voegen-ons ](assets/setup-prod-commerce.png)
 
-1. Met uw geselecteerde oplossingen en toe:voegen-ons, klik **verdergaan**.
+1. Wanneer u wordt gedaan selecterend uw oplossingen en toe:voegen-ons, klik **verdergaan**.
 
 1. Op **gaan-Levende Datum** lusje, ga de datum in die u van plan bent om uw productieprogramma te hebben Levend gaan.
 
@@ -69,7 +69,7 @@ Afhankelijk van de rechten van uw organisatie, kunt u [ extra opties ](#options)
 
 1. Klik **creëren**. Cloud Manager maakt uw programma en geeft het voor selectie weer op de bestemmingspagina.
 
-![ het beheeroverzicht van de Wolk ](assets/navigate-cm.png)
+   ![ het beheeroverzicht van de Wolk ](assets/navigate-cm.png)
 
 ## Aanvullende opties voor productieprogramma {#options}
 
@@ -98,7 +98,7 @@ Als u de noodzakelijke rechten hebt, wordt het **SLA** lusje getoond als tweede 
 
 ![ de opties van SLA ](assets/create-production-program-sla.png)
 
-AEM Sites en Forms bieden een standaard 99,9% service level agreement (SLA). De **optie van de Overeenkomst van het Niveau van de Dienst 0} 99.99% laat een minimumuptime van 99.99% voor uw productiemilieu&#39;s voor Plaatsen en/of Forms toe.**
+AEM Sites en Forms bieden standaard 99,9% service level agreement (SLA). De **99.99% Service level agreement** optie laat een minimaal uptime percentage van 99.99% voor uw productiemilieu&#39;s voor Plaatsen en/of Forms toe.
 
 99.99% SLA biedt voordelen met inbegrip van hogere beschikbaarheid en lagere latentie aan, en vereist een [ extra publiceer gebied ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) om op het productiemilieu in het programma worden toegepast.
 
