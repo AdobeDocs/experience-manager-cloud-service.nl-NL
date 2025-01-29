@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '720'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,7 @@ Er gelden verschillende beperkingen voor het gebruik van aangepaste domeinnamen 
 * Er kan slechts één domeinnaam tegelijk worden toegevoegd.
 * AEM as a Cloud Service ondersteunt geen jokertekendomeinen zoals `*.example.com` .
 * Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam (jokertekens zijn geldig) voor uw programma zijn geïnstalleerd.
+* De extra configuratiestappen worden vereist om een naam van het douanedomein met [ de Voorste-Eind eigenschap van de Pijpleiding te gebruiken.](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)
 
 ## Aan de slag {#get-started}
 

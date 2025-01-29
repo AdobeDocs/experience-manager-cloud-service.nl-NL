@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -66,3 +66,14 @@ Nu, is uw plaats klaar om de front-end pijpleiding te gebruiken. Meer over de fr
 * [Het Siterail gebruiken om uw Sitethema te beheren](site-rail.md)
 * [ Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) - Deze documentatierit geeft u en overzicht van begin tot eind van het proces om snel een plaats op te stellen gebruikend de front-end pijpleiding en het Snelle hulpmiddel van de Aanmaak van de Plaats.
 * [ CI/CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - Dit document beschrijft de front-end pijpleiding in de context van de volledig-stapel en Webrijpijpleidingen.
+
+## Pijpleiding aan de voorzijde en aangepaste domeinen {#custom-domains}
+
+Zoals beschreven in de [ Technische Details ](#technical-details) sectie, die de Voorste-Eind eigenschap van de Pijl voor een plaats activeren leidt tot a `SiteConfig` en `HtmlPageItemsConfig` hieronder knopen `/conf/<site-name>/sling:configs`.
+
+Als u wenst om [ de eigenschap van de douanedomeinen van Cloud Manager ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) voor uw plaats samen met de Voorste Pijpleiding van het Eind te gebruiken, moeten de extra eigenschappen aan deze knopen worden toegevoegd.
+
+1. Stel de eigenschap `customFrontendPrefix` in `SiteConfig` voor de site in.
+1. Hiermee wordt de `prefixPath` waarde van de `HtmlPageItemsConfig` bijgewerkt met het aangepaste domein.
+
+Pagina&#39;s voor de site verwijzen vervolgens naar themaartefacten van die bijgewerkte URL.
