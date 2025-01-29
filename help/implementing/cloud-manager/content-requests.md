@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
+source-git-commit: f57d90078b5fc0e0c8a79ca60cbc19e7b37323cd
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Zie ook [ Dashboard van de Vergunning ](/help/implementing/cloud-manager/license
 | URL voor klanten om hun programma van de Cloud Service te controleren | Uitgesloten | De Adobe adviseert dat u URL gebruikt om de beschikbaarheid of de gezondheidscontrole extern te controleren.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod Warm-up Service | Uitgesloten |
 | Agent: skyline-service-warmup/1.* |
-| Bekende zoekmachines, sociale netwerken en HTTP-bibliotheken (getagd door Snelst) | Uitgesloten | De bekende diensten die de plaats regelmatig bezoeken om hun onderzoeksindex of de dienst te verfrissen:<br><br> Voorbeelden:<br>・ AddSearchBot <br>・ AhrefsBot <br>・ Applebot <br>・ Vraag Jeeves Corporate Spider <br>・ Bingbot <br>・ BingPreview <br>・ BLEXBot <br>・ BouwtWith <br> <br>・ CrawlerKengo <br>・ Facebookexternalhit <br>・ Google AdsBot <br>・ Google AdsBot Mobile <br>・ Googlebot <br>・ Googlebot Mobile <br>・ lmspin <br>・ LucidWorks <br>・ `MJ12bot`<br> Pinterest <br>・ SembrushBot <br>・ SiteImproved <br>・ StashBot <br>・ StatusCake <br>・ YandexBot <br>・ Claudebot |
+| Bekende zoekmachines, sociale netwerken en HTTP-bibliotheken (getagd door Snelst) | Uitgesloten | De bekende diensten die de plaats regelmatig bezoeken om hun onderzoeksindex of de dienst te verfrissen:<br><br> Voorbeelden:<br>・ AddSearchBot <br>・ AhrefsBot <br>・ Applebot <br>・ Vraag Jeeves Corporate Spider <br>・ Bingbot <br>・ BingPreview <br>・ BLEXBot <br>・ BouwtWith <br> <br>・ CrawlerKengo <br>・ Facebookexternalhit <br>・ Google AdsBot <br>・ Google AdsBot Mobile <br>・ Googlebot <br>・ Googlebot Mobile <br>・ lmspin <br>・ LucidWorks <br>・ `MJ12bot`<br> Pinterest <br>・ SembrushBot <br>・ SiteImproved <br>・ StashBot <br>・ StatusCake <br>・ YandexBot <br>・ ContentKing <br>・ Claudebot |
 | Commerce integration framework-aanroepen uitsluiten | Uitgesloten | Verzoeken die zijn gemaakt voor AEM die worden doorgestuurd naar het Commerce integration framework—de URL begint met `/api/graphql`—om dubbeltellingen te voorkomen, kunnen niet worden doorberekend voor Cloud Service. |
 | Uitsluiten `manifest.json` | Uitgesloten | Manifest is geen API-oproep. Hier vindt u informatie over het installeren van websites op een desktopcomputer of mobiele telefoon. Adobe mag JSON-aanvraag niet tellen naar `/etc.clientlibs/*/manifest.json` |
 | Uitsluiten `favicon.ico` | Uitgesloten | Hoewel de teruggekeerde inhoud niet HTML of JSON zou moeten zijn, zijn bepaalde scenario&#39;s zoals de authentificatiestromen van SAML waargenomen om favicons als HTML terug te keren. Dientengevolge, worden de favicons uitdrukkelijk uitgesloten van de telling. |
