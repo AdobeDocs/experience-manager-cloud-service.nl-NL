@@ -3,9 +3,9 @@ title: Elementen in Experience Manager goedkeuren
 description: Leer hoe te om activa in  [!DNL Experience Manager] goed te keuren.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,19 @@ Voordat u een element kunt goedkeuren, moet u het toepasselijke metagegevenssche
 1. Selecteer het toepasselijke metagegevensschema en klik op **[!UICONTROL Edit]** . <br> **[!UICONTROL Metadata Schema Form Editor]** opent met het **[!UICONTROL Basic]** benadrukte lusje.
 1. Schuif omlaag en klik op **[!UICONTROL Review Status]** .
 1. Klik op de tab **[!UICONTROL Rules]** aan de rechterkant van het deelvenster.
-1. Schakel **[!UICONTROL Disable edit]** uit en klik op **[!UICONTROL Save]** .
+1. Schakel **[!UICONTROL Disable edit]** uit.
 Als u de eigenschap wilt weergeven waaraan het veld **[!UICONTROL Review Status]** is toegewezen, navigeert u naar de tab **[!UICONTROL Settings]** en bekijkt u de waarde `./jcr:content/metadata/dam:status` in het veld **[!UICONTROL Map to property]** .
+1. Sleep een **[!UICONTROL Dropdown]** -veld van de sectie **[!UICONTROL Build Form]** naar de rechterkant van de sectie Metagegevens in het formulier.
+1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
+   1. Verander **[!UICONTROL Field Label]** in _Doel van de Goedkeuring_.
+   1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:activationTarget_.
+   1. Voeg de opties toe met `contenthub` en `delivery` als optiewaarden.
+
+   >[!NOTE]
+   >
+   Wanneer u het goedkeuringsdoel selecteert als Content Hub in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie. Wanneer u goedkeuringsdoel als Levering selecteert, zijn de activa beschikbaar aan alle gebruikers.
+
+1. Klik op **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
@@ -74,6 +85,15 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
    1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:status_.
    1. Verander de Standaardwaarde in _goedgekeurd_.
 
+1. Sleep een **[!UICONTROL Dropdown]** -veld van de sectie **[!UICONTROL Build Form]** naar de rechterkant van de sectie Metagegevens in het formulier.
+1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het deelvenster **[!UICONTROL Settings]** :
+   1. Verander **[!UICONTROL Field Label]** in _Doel van de Goedkeuring_.
+   1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:activationTarget_.
+   1. Voeg de opties toe met `contenthub` en `delivery` als optiewaarden.
+
+   >[!NOTE]
+   >
+   Wanneer u het goedkeuringsdoel selecteert als Content Hub in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie. Wanneer u goedkeuringsdoel als Levering selecteert, zijn de activa beschikbaar aan alle gebruikers.
 1. Klik op **[!UICONTROL Save]**.
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** het nieuwe metagegevensprofiel.
 1. Klik op **[!UICONTROL Apply Metadata Profile to Folder(s)]** in de bovenste actiebalk.
@@ -91,6 +111,19 @@ En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt se
 1. Selecteer de elementen en klik op **[!UICONTROL Bulk Metadata Edit]** .
 
 1. Selecteer **[!UICONTROL Approved]** in het **[!UICONTROL Status]** -veld dat beschikbaar is in de sectie [!UICONTROL Properties] in het rechterdeelvenster.
+
+   Als u de status als `Approved` selecteert, en als [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) of [ Content Hub ](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
+
+   * Selecteer **[!UICONTROL Delivery]** om de middelen beschikbaar te maken voor zowel Dynamic Media met OpenAPI-mogelijkheden als Content Hub. Als u Content Hub niet hebt ingeschakeld, stelt u met deze optie de middelen alleen beschikbaar voor Dynamic Media met OpenAPI-mogelijkheden.
+   * Selecteer **[!UICONTROL Content Hub]** om de middelen beschikbaar te maken voor Content Hub.
+
+   ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
+
+   Als u niet de standaardmeta-gegevensvorm gebruikt en niet het **[!UICONTROL Approval Target]** gebied kunt bekijken, [ geef uw meta-gegevensvorm ](/help/assets/metadata-assets-view.md#metadata-forms) uit om het **[!UICONTROL Approval for]** gebied van de beschikbare componenten aan uw meta-gegevensvorm te slepen en klik **[!UICONTROL Save]**.
+
+   >[!NOTE]
+   >
+   Als u het doel voor goedkeuring als `Content Hub` selecteert met de Assets-weergave binnen een organisatie, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie.
 
 1. Klik op **[!UICONTROL Save]**.
 
