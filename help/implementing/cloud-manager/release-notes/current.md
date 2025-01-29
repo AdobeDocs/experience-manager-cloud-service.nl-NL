@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -79,10 +79,6 @@ De volgende geplande release is donderdag 13 februari 2025.
 
 * **Verbeterde steun voor Edge Delivery Services plaatsen:** Cloud Manager steunt nu onboarding voor de recentste Edge Delivery Services plaatsen. Deze update omvat een uitvoerige refactoring van CDN en leveringsstapel, resulterend in betere robuustheid en onderhoudsbaarheid.
 
-* **Vroege het programmaupdate van de Goedkeuringsarts - de bevestigingssteun van PR voor Bitbucket en GitLab:** Cloud Manager steunt nu de bevestiging van het Verzoek van de Trek (PR) voor zowel Cloud als zelf-ontvangen versies van Bitbucket en GitLab. Met deze functie kunnen klanten hun codewijzigingen testen op basis van de kwaliteitsdrempels voor code van de Adobe voordat ze een PR samenvoegen. Door te zorgen voor een hogere codekwaliteit voordat de code wordt samengevoegd, verbetert deze verbetering het succespercentage van codewijzigingen in productiepijpleidingen aanzienlijk, waardoor de tijd tot aan de markt wordt verkort en de ontwikkelingsworkflows worden gestroomlijnd.
-
-Voor meer informatie over &quot;breng Uw Eigen Git&quot;- nu met steun voor GitLab en Bitbucket - en om omhoog als Vroege Inschrijver te ondertekenen, zie [ de Nota&#39;s van de Versie van Cloud Manager Oktober 2024 ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
-
 * **Geavanceerde het filtreren opties voor pijpleidingen:** Cloud Manager kenmerkt nu geavanceerde het filtreren opties op de pagina van Pijpleidingen, die u tot relevante gegevens laat snel toegang hebben en plaatsingsefficiency verbetert. Enkele van de belangrijkste functies zijn:
 
    * **het Filtreren van meerdere criteria:** verfijnen onderzoeksresultaten met filters zoals pijpleidingsnaam, milieu, en voeren code op.
@@ -94,10 +90,19 @@ Voor meer informatie over &quot;breng Uw Eigen Git&quot;- nu met steun voor GitL
 
 * **Zelfbediening CDN Configuratie voor de Dienst van Edge Delivery:** De nieuwe adopters van de Dienst van Edge Delivery kunnen hun CDN door Cloud Manager nu onafhankelijk vormen. Deze update breidt de ondersteuning uit van `.hlx.page/live` naar de nieuwe `.aem.page/live` , waardoor gebruikers meer flexibiliteit en gestroomlijnde installatie krijgen.
 
+## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
-<!-- ## Early adoption program {#early-adoption}
+Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+* **Vroege het programmaupdate van de Goedkeuringsarts - de bevestigingssteun van PR voor Bitbucket en GitLab:** Cloud Manager steunt nu de bevestiging van het Verzoek van de Trek (PR) voor zowel Cloud als zelf-ontvangen versies van Bitbucket en GitLab. Met deze functie kunnen klanten hun codewijzigingen testen op basis van de kwaliteitsdrempels voor code van de Adobe voordat ze een PR samenvoegen. Door te zorgen voor een hogere codekwaliteit voordat de code wordt samengevoegd, verbetert deze verbetering het succespercentage van codewijzigingen in productiepijpleidingen aanzienlijk, waardoor de tijd tot aan de markt wordt verkort en de ontwikkelingsworkflows worden gestroomlijnd.
+
+Voor meer informatie over &quot;breng Uw Eigen Git&quot;- nu met steun voor GitLab en Bitbucket - en om omhoog als Vroege Inschrijver te ondertekenen, zie [ de Nota&#39;s van de Versie van Cloud Manager Oktober 2024 ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+
+* **Geavanceerde Milieu van de Test:** een doel-gebouwde oplossing die wordt ontworpen om het hiaat tussen ontwikkeling en productie te overbruggen. Deze omgeving is toegesneden op de behoeften van de onderneming en bevat productieniveau-specificaties ter ondersteuning van nauwkeurige gebruikersacceptatietests (UAT) en grondige prestatiebeoordelingen.
+
+Als u in het aansluiten van bij het Vroege programma van de Goedkeuring geinteresseerd bent, gelieve [ dit vorm ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOVMAVD L5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dcd07c78c c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CU FpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6IK1haWwiLCJXVCI6Mn0%7C0%7C%7C%7C &amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) te voltooien en ons (details te volgen) met uw `OrgID` te e-mailen.
+
+
 
 <!-- ## Bug fixes -->
 
