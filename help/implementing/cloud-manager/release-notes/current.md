@@ -4,7 +4,7 @@ description: Meer informatie over de release van Cloud Manager 2025.1.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
+source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -96,11 +96,11 @@ Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans
 
 * **Vroege het programmaupdate van de Goedkeuringsarts - de bevestigingssteun van PR voor Bitbucket en GitLab:** Cloud Manager steunt nu de bevestiging van het Verzoek van de Trek (PR) voor zowel Cloud als zelf-ontvangen versies van Bitbucket en GitLab. Met deze functie kunnen klanten hun codewijzigingen testen op basis van de kwaliteitsdrempels voor code van de Adobe voordat ze een PR samenvoegen. Door te zorgen voor een hogere codekwaliteit voordat de code wordt samengevoegd, verbetert deze verbetering het succespercentage van codewijzigingen in productiepijpleidingen aanzienlijk, waardoor de tijd tot aan de markt wordt verkort en de ontwikkelingsworkflows worden gestroomlijnd.
 
-Voor meer informatie over &quot;breng Uw Eigen Git&quot;- nu met steun voor GitLab en Bitbucket - en om omhoog als Vroege Inschrijver te ondertekenen, zie [ de Nota&#39;s van de Versie van Cloud Manager Oktober 2024 ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+  Voor meer informatie over &quot;breng Uw Eigen Git&quot;- nu met steun voor GitLab en Bitbucket - en om omhoog als Vroege Inschrijver te ondertekenen, zie [ de Nota&#39;s van de Versie van Cloud Manager Oktober 2024 ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Geavanceerde Milieu van de Test:** een doel-gebouwde oplossing die wordt ontworpen om het hiaat tussen ontwikkeling en productie te overbruggen. Deze omgeving is toegesneden op de behoeften van de onderneming en bevat productieniveau-specificaties ter ondersteuning van nauwkeurige gebruikersacceptatietests (UAT) en grondige prestatiebeoordelingen.
 
-Als u in het zich aansluiten bij het Vroege programma van de Goedkeuring geinteresseerd bent, gelieve [ deze vorm ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOVMAVD L5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dcd07c78c c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CU FpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6IK1haWwiLCJXVCI6Mn0%7C0%7C%7C%7C &amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) te voltooien en een e-mail naar [ earlyadopter_cs_advtestenvironment@adobe.com ](mailto:earlyadopter_cs_advtestenvironment@adobe.com) met uw `OrgID` te verzenden.
+  Als u in het zich aansluiten bij het Vroege programma van de Goedkeuring geinteresseerd bent, gelieve [ deze vorm ](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOVMAVD L5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dcd07c78c c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CU FpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6IK1haWwiLCJXVCI6Mn0%7C0%7C%7C%7C &amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) te voltooien en een e-mail naar [ earlyadopter_cs_advtestenvironment@adobe.com ](mailto:earlyadopter_cs_advtestenvironment@adobe.com) met uw `OrgID` te verzenden.
 
 
 
