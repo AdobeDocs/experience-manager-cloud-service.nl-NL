@@ -6,9 +6,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
+source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Wanneer een gebruiker zich aanmeldt bij AEM as a Cloud Service of een toegangstoken wordt gebruikt, worden Adobe Admin Console-gebruikersgroepen, productprofielen en services voor productprofielen als groepen gesynchroniseerd in de AEM repository.
 
-Met AEM versies hoger dan 18751 (een onderhoudsrelease wordt op 27 januari uitgerold naar productieomgevingen), zullen er enkele wijzigingen in het synchronisatiegedrag optreden, waardoor er minder groepen in AEM verschijnen. Twee categorieën van AEM worden verwijderd:
+Vanaf AEM Maintenance Release 19149 wordt het gedrag van groepssynchronisatie gewijzigd om de gebruikersinterface overzichtelijker te maken en de prestaties te optimaliseren. Specifiek, zal het lidmaatschap van de gebruikersgroep van de volgende twee categorieën van AEM groepen niet meer worden gesynchroniseerd:
 
 1. AEM groepen met achtervoegsel `GROUP_NAME_SUFFIX` . Deze groepen verschijnen niet in Adobe Developer Console, maar in het scherm van het Beheer van de Groep van de AEM, zoals hieronder getoond. In het onwaarschijnlijke geval dat uw AEM toepassing naar deze groepen verwijst, zorg ervoor om Adobe Admin Console gebruikersgroepen zonder dat achtervoegsel in plaats daarvan van verwijzingen te voorzien.
 
@@ -44,3 +44,4 @@ Hiermee navigeert u naar de Adobe Admin Console, zoals hieronder in de schermafb
 
 In het onwaarschijnlijke geval dat uw AEM toepassing verwijst naar een groep die niet meer in AEM wordt weergegeven, moet u in plaats daarvan i) een productprofiel uit de rechterAEM of ii) een Adobe Admin Console-gebruikersgroep gebruiken.
 
+De groepslidmaatschappen van de gebruiker worden gesynchroniseerd wanneer zij in het milieu registreren, en zij worden verwijderd uit groepen niet verwant met het huidige milieu. De groepen zelf blijven en bevatten gebruikers die zich niet hebben aangemeld sinds de functie is ingeschakeld.
