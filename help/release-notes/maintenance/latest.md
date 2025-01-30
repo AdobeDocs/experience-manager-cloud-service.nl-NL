@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a091dd6b1b69d77f9eeb50065e8946af0133f4f9
+source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '541'
 ht-degree: 1%
 
 ---
@@ -55,14 +55,24 @@ Geen.
 
 ### Verouderde functies en API&#39;s {#deprecated-19149}
 
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
+
+#### Wijzigingen in de synchronisatie van gebruikersgroepen en productprofielen
+
 Bij het gebruik van de Adobe Admin Console voor machtigingsbeheer MOGEN de volgende groepen NIET worden gebruikt, aangezien zij niet meer worden gesynchroniseerd met AEM:
 * AEM groepen die eindigen met _GROUP_NAME_SUFFIX.
 * Productprofielen uit andere omgevingen, programma&#39;s of producten.
 
 Voor meer details, gelieve te controleren [ Veranderingen in de Synchronisatie van de Groep van de Gebruiker en van het Profiel van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
 
+#### Vervanging van SPA Editor {#deprecate-spa-editor}
 
-Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
+[ de Redacteur van de SPA ](/help/implementing/developing/hybrid/introduction.md) is afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. De SPA Editor blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten.
+
+De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn:
+
+* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor het visuele uitgeven.
+* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven.
 
 ### Beveiligingsproblemen {#security-19149}
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -237,7 +237,7 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 
 >[!IMPORTANT]
 >
->De SPA Editor blijft ondersteund door Adobe, maar de editors die u de koploze inhoud in AEM wilt beheren, hebben nu de voorkeur:
+>De SPA Redacteur [ is afgekeurd ](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) voor nieuwe projecten. Het blijft door Adobe voor bestaande projecten gesteund, maar mag niet voor nieuwe projecten worden gebruikt. De voorkeur gaat nu uit naar editors voor het beheer van inhoud zonder kop in AEM:
 >
 >* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor visueel het uitgeven van hoofdloze inhoud.
 >* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

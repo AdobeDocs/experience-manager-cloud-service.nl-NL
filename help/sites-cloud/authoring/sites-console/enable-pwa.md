@@ -5,9 +5,9 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1926'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 >* Ondersteuning van uw ontwikkelingsteam
 >
 >Alvorens deze eigenschap te gebruiken, adviseert de Adobe dat u dit met uw ontwikkelingsteam bespreekt om de beste manier te bepalen om het voor uw project te gebruiken.
+
+>[!IMPORTANT]
+>
+>De functies voor progressieve webapps (PWA) voor AEM Sites zijn verouderd.
+>
+>Bestaande projecten die gebruikmaken van deze functie blijven ondersteund, maar nieuwe projecten moeten deze functie niet gebruiken.
 
 ## Inleiding {#introduction}
 

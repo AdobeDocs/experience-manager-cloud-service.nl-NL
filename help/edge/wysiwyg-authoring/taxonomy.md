@@ -4,12 +4,13 @@ description: Leer hoe u taxonomiegegevens beheert voor het gebruik van tags met 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
+
 
 # Taxonomiegegevens beheren {#managing-taxonomy-data}
 
@@ -155,6 +156,10 @@ Gebruik `<taxonomy-json-name>` dat u bepaalde toen [ uw taxonomie aan het `paths
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ Gebruik `<taxonomy-json-name>` dat u bepaalde toen [ uw taxonomie aan het `paths
 Deze JSON-gegevens worden automatisch bijgewerkt wanneer u de taxonomie bijwerkt en opnieuw publiceert. Uw app heeft via programmacode toegang tot deze gegevens voor uw gebruikers.
 
 [ als u markeringen in veelvoudige talen handhaaft, ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) kunt u tot die talen toegang hebben door in de ISO2 taalcode als waarde van a `sheet=` parameter over te gaan.
+
+## Extra tageigenschappen beschikbaar maken {#additional-properties}
+
+Uw taxonomie bevat standaard `tag` - en `title` -waarden zoals [ in het vorige voorbeeld.](#accessing) U kunt uw taxonomie vormen om extra markeringseigenschappen bloot te stellen. In dit voorbeeld wordt de tagbeschrijving weergegeven.
+
+1. Gebruik de console van Plaatsen om de taxonomie te selecteren u creeerde.
+1. Tik of klik het **pictogram van Eigenschappen** in de toolbar.
+1. In de **Extra sectie van Eigenschappen**, tikt of klikt **** toevoegt om een gebied toe te voegen.
+1. Voer in het nieuwe veld de naam in van de JRC-eigenschap die u wilt weergeven. Voer in dit geval `jcr:description` in voor de tagbeschrijving.
+1. Tik of klik **sparen &amp; sluit**.
+1. Met nog geselecteerde taxonomie, tik of klik **Snelle Publish** in de toolbar.
+
+Nu [ wanneer u tot uw taxonomie toegang hebt, ](#accessing) is de markeringsbeschrijving (of welk bezit u verkoos om bloot te stellen) inbegrepen in JSON.
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```
