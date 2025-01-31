@@ -4,9 +4,9 @@ description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1729'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Als u zich wilt voorbereiden op de levering van inhoud met behulp van AEM ingebo
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Inleiding tot aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Inleiding tot SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Een CDN-configuratie toevoegen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Een CDN configureren](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Beperkend verkeer**
 
@@ -136,7 +136,7 @@ Deze CDN-configuratie van de klant wordt ondersteund voor de publicatielaag, maa
 
 ### Configuratie van foutopsporing
 
-Gebruik de header `x-aem-debug` met de waarde `edge=true` om fouten op te sporen in een BYOCDN-configuratie. Bijvoorbeeld:
+Als u fouten in een BYOCDN-configuratie wilt opsporen, gebruikt u de header `x-aem-debug` met de waarde `edge=true` . Bijvoorbeeld:
 
 In Linux®:
 
@@ -150,13 +150,13 @@ In Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-Dit weerspiegelt bepaalde eigenschappen die worden gebruikt in de aanvraag in de antwoordheader van `x-aem-debug` . Bijvoorbeeld:
+Dit proces weerspiegelt bepaalde eigenschappen die in de aanvraag in de `x-aem-debug` antwoordheader worden gebruikt. Bijvoorbeeld:
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-Met behulp van deze methode kunt u bijvoorbeeld de waarden van de host controleren, of de randverificatie is geconfigureerd en de headerwaarde van de x-door:sturen-host, of een Edge-toets is ingesteld en welke sleutel wordt gebruikt (voor het geval één sleutel overeenkomt).
+Dit proces staat controle van details zoals de gastheerwaarden, de configuratie van de randauthentificatie, en de x-door:sturen-gastheer kopbalwaarde toe. Ook wordt aangegeven of een randsleutel is ingesteld en welke sleutel wordt gebruikt als er een overeenkomst bestaat.
 
 ### Voorbeeld-CDN-leveranciersconfiguraties {#sample-configurations}
 
@@ -187,8 +187,7 @@ Wanneer een verzoek een verboden antwoord van 403 ontvangt, betekent dit dat in 
 
 **Fout 421 Verkeerd opnieuw richten**
 
-Wanneer een aanvraag een fout van 421 ontvangt met een hoofdtekst rond `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` , geeft deze aan dat de HTTP `Host` -set niet overeenkomt met een host op de certificaten voor de host. Dit geeft meestal aan dat `Host` of de SNI-instelling onjuist is. Zorg ervoor dat zowel de instellingen voor `Host` als die voor SNI verwijzen naar de publicatie-p&lt;PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com host.
-
+Een fout van 421 met het bericht `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` geeft aan dat de HTTP `Host` geen hosts bevat die op het certificaat worden vermeld. Dit probleem geeft meestal aan dat `Host` of de SNI-instelling onjuist is. Zorg ervoor dat zowel `Host` als SNI montages aan publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com. richten.
 
 **teveel richt Lijn** opnieuw
 

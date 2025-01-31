@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2374'
 ht-degree: 0%
 
 ---
@@ -194,9 +194,9 @@ Als u extra hebt geactiveerd publiceer gebieden, kunt u het statuut van deze geb
 
 Alternatief kunt u tot de zelfde informatie van de **Milieu&#39;s** toegang hebben tabel.
 
-1. Voor de **pagina van het Overzicht**, selecteer de **Milieu&#39;s** tabel.
+1. Voor de **pagina van het Overzicht**, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
 
-1. Voor het **lusje van Milieu&#39;s**, selecteer het milieu u in het linkerzijmenu wilt vragen.
+1. Voor de **pagina van Milieu&#39;s**, selecteer het milieu u in het linkerzijmenu wilt vragen.
 
 1. Nadat een omgeving is geselecteerd:
 
@@ -306,7 +306,7 @@ Deze optie is ook beschikbaar bij het **Milieu** lusje van het **venster van het
 
      ![ Login plaatselijk ](assets/environ-login-locally.png)
 
-   * Van het linkerzijpaneel, klik **Milieu&#39;s**. Op de **pagina van Milieu&#39;s**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **Lokale Login**.
+   * Van het linkerzijpaneel, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**. Op de **pagina van Milieu&#39;s**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **Lokale Login**.
 
      ![ Login plaatselijk van het lusje van Milieu&#39;s ](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ In Cloud Manager for Sites worden aangepaste domeinnamen ondersteund voor zowel 
 
 Een IP-Lijst van gewenste personen wordt in Cloud Manager ondersteund voor auteur-, publicatie- en voorvertoningsservices voor Sites-programma&#39;s.
 
-Om IP Lijsten van gewenste personen te beheren, navigeer aan het **lusje van Milieu** van de **pagina van het Overzicht** van uw programma. Klik op een afzonderlijke omgeving zodat u de details ervan kunt beheren.
+Om IP Lijsten van gewenste personen te beheren, navigeer aan het ![ pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu** pagina van het **Overzicht** pagina van uw programma. Klik op een afzonderlijke omgeving zodat u de details ervan kunt beheren.
 
 ### Een IP-Lijst van gewenste personen toepassen {#apply-ip-allow-list}
 

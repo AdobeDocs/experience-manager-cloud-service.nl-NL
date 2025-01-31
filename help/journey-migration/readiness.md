@@ -4,9 +4,9 @@ description: Leer meer over de stappen die u moet ondernemen om ervoor te zorgen
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ Een typisch rapport moet deze input bevatten:
 * Documentatie met de functieset van uw specifieke AEM-installatie
 * Gegevens over uw AEM aangepaste configuraties en code
 * Dispatcher-configuraties voor productie
-* CDN-configuraties (indien aanwezig)
+* Domeintoewijzingen (CDN-configuraties) (indien aanwezig)
 
 **socialiseer het Rapport**
 
