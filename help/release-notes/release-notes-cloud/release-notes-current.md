@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -126,13 +126,21 @@ Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmat
 
 ### Nieuwe functies in AEM Forms {#forms-new-features}
 
-* **beheer Publicatie**: U kunt het &quot;Manage Publication&quot;werkschema gebruiken om vormen over milieu&#39;s, typisch van de auteursinstantie aan te publiceren en voorproefinstanties te publiceren. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
+#### Publicatie beheren
 
-* **[auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms](/help/forms/save-core-component-based-form-as-draft.md)**: De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+Met de workflow Publicatie beheren kunt u formulieren publiceren of verwijderen in verschillende omgevingen, meestal van de auteur tot de publicatie- en voorvertoningsexemplaren. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
 
-* **[de redacteursverhogingen van de Regel](/help/forms/invoke-service-enhancements-rule-editor.md)**: Voor Aangepaste Forms die op de Componenten van de Kern wordt gebaseerd, kunt u de output van de Invoke Dienst gebruiken om drop-down opties te bevolken en herhaalbare of individuele panelen te plaatsen. Bovendien kan deze uitvoer worden gebruikt om andere velden te valideren.
+#### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
 
-* **[verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
+De gebruikers kunnen nu van een [ auto-sparen eigenschap ](/help/forms/save-core-component-based-form-as-draft.md) profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch bewaart. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+
+#### Verbeteringen voor regeleditors
+
+Voor Aangepaste Forms die op de Componenten van de Kern wordt gebaseerd, kunt u de [ output van de Invoke Dienst gebruiken om drop-down opties te bevolken en herhaalbare of individuele paneel ](/help/forms/invoke-service-enhancements-rule-editor.md) te plaatsen. Bovendien kan deze uitvoer worden gebruikt om andere velden te valideren.
+
+#### De gebruikerservaring verbeteren met navigatieknoppen in deelvensterlay-outs
+
+U kunt nu navigatieknoppen toevoegen aan uw deelvensterlay-outs, zoals Horizontale tabbladen, Verticale tabbladen, Accordeons of Wizard. Deze knopen [ verbeteren de gebruikerservaring door overgangen tussen panelen te vereenvoudigen, die op het geselecteerde paneel ](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button) concentreren.
 
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### [ HTML e-mailMalplaatjes in Aangepaste Forms ](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### E-mailsjablonen HTML in Adaptieve Forms
 
-Met Adaptive Forms kunt u e-mailsjablonen voor HTML gebruiken. Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+De adaptieve Forms staat u toe gebruiken [ HTML e-mailmalplaatjes ](/help/forms/html-email-templates-in-adaptive-forms.md). Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
 ![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
 
 #### Verbeterde ondersteuning voor cloudopslag: rechtstreekse PDF uploaden naar Azure Blob Storage
 
-AEM Forms-API&#39;s voor documentgeneratie bieden nu ondersteuning voor het direct uploaden van gegenereerde PDF-documenten naar Azure Blob Storage. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
+De Generatie APIs van het Document van AEM Forms staat u nu toe om [ geproduceerde documenten van de PDF aan de opslag van Azure Blob ](/help/forms/early-access-ea-features.md#doc-generation-api) direct te uploaden. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
