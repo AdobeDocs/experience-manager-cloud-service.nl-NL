@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Naast de vereiste rechten heeft 99,99% SLA extra gebruiksvoorwaarden.
 
 ## Open uw programma {#accessing}
 
-1. Wanneer u uw programmacard op de landingspagina ziet, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg om de menuopties te bekijken beschikbaar aan u.
+1. Wanneer u uw programmakaart op de het landen pagina ziet, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) om de menuopties te bekijken beschikbaar aan u.
 
    ![ Overzicht van het Programma ](assets/program-overview.png)
 

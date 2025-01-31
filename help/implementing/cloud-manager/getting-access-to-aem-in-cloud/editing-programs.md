@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ Van het **Overzicht van het Programma**, kunnen de gebruikers met de vereiste to
 
 * Voeg Sites-oplossing toe aan een bestaand programma met Assets en omgekeerd.
 * Sites of Assets verwijderen uit een bestaand programma met zowel Sites als Assets.
-* Voeg een tweede, ongebruikte oplossingsrecht, aan of een bestaand programma of als nieuw Programma toe.
+* Voeg een ongebruikte oplossingsbevoegdheid aan een bestaand programma toe of creeer een nieuw programma.
 * Sandboxprogramma&#39;s verwijderen.
 
 ## Machtigingen {#permissions}
 
-U moet een lid van de **rol van de Bedrijfs eigenaar** zijn om programma&#39;s uit te geven of zandbakprogramma&#39;s te schrappen en tot het Dashboard van de Vergunning toegang te hebben.
+U moet de **rol van de Bedrijfs eigenaar** hebben om programma&#39;s uit te geven, zandbakprogramma&#39;s te schrappen, en tot het Dashboard van de Vergunning toegang te hebben.
 
 ## Een programma bewerken {#editing}
 
@@ -46,7 +46,7 @@ Telkens wanneer een programma wordt uitgegeven, met inbegrip van het toevoegen v
 
    ![ Algemene tabel ](assets/edit-program-prod1.png)
 
-1. De beschikbare opties voor het bewerken van het programma zijn dezelfde als die voor het maken van het programma.
+1. De opties die beschikbaar zijn voor het bewerken van het programma zijn dezelfde opties voor het maken van programma&#39;s.
    * Zie [ tot de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) leiden en [ Sandbox Programma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) voor details op de individuele opties.
    * [ de Extra opties ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kunnen voor uw productieprogramma afhankelijk van de aanspraken van uw organisatie beschikbaar zijn.
 
@@ -70,7 +70,7 @@ Als u een sandboxprogramma verwijdert, worden alle bijbehorende omgevingen en pi
 
    ![ de programmaoptie van de Schrapping ](assets/delete-sandbox1.png)
 
-Alternatief, kunt u https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
+Alternatief, kunt u ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
 
 ![ Schrap zandbak van programmakaart ](assets/delete-sandbox2.png)
 

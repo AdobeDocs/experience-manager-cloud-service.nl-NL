@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
-1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg in uiterst rechts, dan klik **Mening en Update**.
+1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts, dan klik **Mening en Update**.
 
    ![ werk een verlopen klant beheerde SSL certificatie bij ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 >[!NOTE]
 >
->Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem en dat domein wordt gedekt door één certificaat en het andere wordt bijgewerkt, wordt het laatste geïnstalleerd voor het domein.
+>Als twee of meer SAN-certificaten dezelfde SAN-domeinvermelding dekken en een van deze certificaten wordt bijgewerkt, installeert het systeem het bijgewerkte certificaat voor het domein.
 >
 >Zie [ problemen oplossen SSL van het Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) voor meer informatie.
 

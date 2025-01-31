@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Voor een nieuw gemaakt programma wordt een New Relic One-subaccount voor u gemaa
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u uw gebruikers van New Relic One wilt beheren.
 
-1. Bij de bodem van de **kaart van Milieu** op de pagina van het programmaoverzicht, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en selecteer **New Relic** activeren.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **New Relic** activeren.
 
    ![ beheert gebruikers ](assets/newrelic-activate-sub-account.png)
 
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om de gebruikers van uw New Relic One-subaccount vo
 
 1. Klik op het programma waarvoor u de New Relic One-gebruikers wilt beheren.
 
-1. Bij de bodem van de **kaart van Milieu** op de pagina van het programmaoverzicht, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en selecteer **leiden gebruikers**.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **leiden gebruikers**.
 
    ![ beheert gebruikers ](assets/newrelic-manage-users.png)
 
@@ -121,7 +121,7 @@ Zodra u [ uw rekening van New Relic ](#activate-account) hebt geactiveerd, kunt 
 
 1. Klik op het programma waartoe u New Relic One wilt openen.
 
-1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en selecteer **Open New Relic**.
+1. Bij de bodem van de **kaart van Milieu&#39;s** op de pagina van het programmaoverzicht, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteer **Open New Relic**.
 
    ![ beheert gebruikers ](assets/newrelic-access.png)
 

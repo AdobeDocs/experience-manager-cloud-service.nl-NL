@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Sluimerstand kan automatisch of handmatig plaatsvinden.
 
 Het kan een paar minuten duren voordat de slaapstand wordt geactiveerd in sandboxprogrammaomgevingen. De gegevens blijven behouden tijdens de winterslaap.
 
-### De omgeving van een sandboxprogramma handmatig moderniseren {#using-manual-hibernation}
+### Een sandboxprogrammaomgeving handmatig tuineren {#using-manual-hibernation}
 
 U kunt uw sandboxprogramma handmatig via de Developer Console herbergen. Alle gebruikers van Cloud Manager hebben toegang tot de Developer Console voor een sandboxprogramma.
 
@@ -74,7 +74,7 @@ U kunt uw sandboxprogramma handmatig via de Developer Console herbergen.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma u wilt dehibernate om zijn details te tonen.
 
-1. Op de **kaart van Milieu&#39;s**, klik https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en klik **Developer Console**.
+1. Op de **kaart van Milieu&#39;s**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en klik **Developer Console**.
 
    * Zie [ Toegang hebbend tot Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor extra details over Developer Console.
 
