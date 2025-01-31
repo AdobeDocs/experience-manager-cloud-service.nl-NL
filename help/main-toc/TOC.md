@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6006'
+source-wordcount: '6020'
 ht-degree: 2%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 2%
       + [Migreer van  [!DNL AEM 6.5 Forms]  of vroeger aan  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
+      + [Publish Adaptive Forms met Publicatie beheren](/help/forms/manage-publication.md)
    + Aan de slag {#getting-started-forms}
       + [Gebruik hoofdletters en kleine letters en ontwikkelomgeving voor instellingen](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Het aanvraagformulier voor een lening maken](/help/forms/create-adaptive-form-tutorial.md)
@@ -1022,6 +1023,8 @@ ht-degree: 2%
          + [Forms-verzendservice gebruiken](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [Overzicht - Universal Editor voor Edge Delivery Services voor Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Aan de slag](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [ voegt regels aan het gebruiken van de Redacteur van de Regel toe ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Mogelijkheden {#advanced-features-edge-delivery-services-forms}
          + [Formulierfragmenten gebruiken](/help/edge/docs/forms/form-fragments.md)
          + [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
