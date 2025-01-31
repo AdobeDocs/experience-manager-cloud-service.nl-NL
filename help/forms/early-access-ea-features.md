@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1998'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,11 @@ Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies 
 
 ## Aanvullende innovaties voor vroege toegang
 
+### E-mailsjablonen HTML in Adaptieve Forms
+
+Met Adaptive Forms kunt u e-mailsjablonen voor HTML gebruiken. Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+
+
 ### Ondersteuning voor RTL-talen (van rechts naar links)
 
 Aangepaste Forms kan nu worden weergegeven in een RTL-taal (Right-to-Left), waardoor gebruikers een inclusievere ervaring en gebruiksgemak krijgen.
@@ -170,6 +175,20 @@ Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens.
 * **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
 
 * **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
+
+### API voor documentgeneratie
+
+De API voor het genereren van documenten bevat een optionele functie waarmee gegenereerde PDF rechtstreeks kunnen worden geüpload naar Azure Blob Storage. Enkele belangrijke voordelen van het rechtstreeks uploaden van PDF naar Azure Blob Storage met de API voor het genereren van documenten zijn:
+
+* **Naadloze Integratie met de Opslag van de Wolk**:
+Door gegenereerde PDF rechtstreeks te uploaden naar Azure Blob Storage is het niet nodig om handmatig of programmatisch extra stappen te ondernemen om bestanden over te brengen, workflows te stroomlijnen en de efficiëntie te verhogen.
+
+* **Gecentraliseerd Beheer van het Document**:
+Door PDF op te slaan in Azure Blob Storage kunt u documenten centraal beheren, waardoor het eenvoudiger wordt om gegenereerde bestanden in verschillende gebruiksgevallen te organiseren, op te halen en te beheren.
+
+* **Verbeterde Veiligheid**: Door ingebouwde de veiligheidseigenschappen van Azure, zoals encryptie bij rust en op rol-gebaseerde toegangscontrole (RBAC) te leveraging, blijven de gevoelige documenten beschermd tijdens opslag.
+
+* **Aanpasbare Wegen van de Opslag**: De capaciteit om de wegen van de douanefolder te bepalen zorgt geproduceerde PDF in georganiseerde en toepassing-specifieke plaatsen worden opgeslagen, verbeterend dossierbeheer.
 
 ## Zie ook
 
