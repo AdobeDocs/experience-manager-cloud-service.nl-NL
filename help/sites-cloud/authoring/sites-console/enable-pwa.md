@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 
 >[!IMPORTANT]
 >
->De functies voor progressieve webapps (PWA) voor AEM Sites zijn verouderd.
+>De progressieve Web app (PWA) eigenschappen voor AEM Sites [ zijn afgekeurd.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
 >
 >Bestaande projecten die gebruikmaken van deze functie blijven ondersteund, maar nieuwe projecten moeten deze functie niet gebruiken.
 

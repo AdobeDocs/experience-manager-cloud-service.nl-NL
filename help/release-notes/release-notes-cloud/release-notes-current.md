@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ De voorkeur gaat nu uit naar editors voor het beheer van inhoud zonder kop in AE
 
 #### PWA-functies {#pwa-features}
 
-[ progressieve Web app (PWA) eigenschappen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor AEM Sites worden nu afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. Deze functie blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten
+[ het progressieve Web app (PWA) eigenschappen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor AEM Sites worden afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. Deze functie blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
