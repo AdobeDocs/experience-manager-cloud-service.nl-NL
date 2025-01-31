@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -150,12 +150,6 @@ Met Adaptive Forms kunt u e-mailsjablonen voor HTML gebruiken. Met e-mailsjablon
 #### Verbeterde ondersteuning voor cloudopslag: rechtstreekse PDF uploaden naar Azure Blob Storage
 
 AEM Forms-API&#39;s voor documentgeneratie bieden nu ondersteuning voor het direct uploaden van gegenereerde PDF-documenten naar Azure Blob Storage. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
-
-* **[Base64 de Gecodeerde Steun van het Koord voor de Bijlage van het Dossier ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: De component van de Bijlage van het Dossier in Aanpassende Forms die op de Componenten van de Kern wordt gebaseerd omvat nu een optie om dossiers in bijlage als Base64-Gecodeerde koorden voor te leggen.
-
->[!IMPORTANT]
->
-> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.## CIF invoegtoepassing {#cloud-services-cif}
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
