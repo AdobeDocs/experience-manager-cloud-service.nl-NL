@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
+source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 1%
+source-wordcount: '887'
+ht-degree: 0%
 
 ---
 
@@ -16,69 +16,89 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 19149 {#19149}
+## Release 19352 {#19352}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 19149 samengevat, die op 21 januari 2025 openbaar werd gemaakt. De vorige onderhoudrelease was release 18751.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 19352 samengevat, die op 5 februari 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19149.
 
-De activering van de 2025.1.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-19149}
+### Verbeteringen {#enhancements-19352}
 
-* ASSETS-45286: granulaire voortgang tonen voor downloadarchivering van async-taak.
-* ASSETS-46296: Ondersteuning voor Dynamic Media-sjablonen in Asset Selector.
-* ASSETS-44796: Fire Assets Events for DAM async assets jobs.
+* FORMS-13998: component Accordion toevoegen.
+* FORMS-17913: Kaartenvariabele toevoegen voor groep keuzerondjes.
+* FORMS-1733: HTML e-mailsjablonen inschakelen in AEM formulierverzending.
+* FORMS-17702: de PDF die zijn gegenereerd in Output Sync API&#39;s kunnen worden geüpload naar Azure Blob Storage.
+* SITES-28282: Edge Delivery met Universal Editor: voer basispad, sitenaam en org in als pagina-info voor elke pagina.
+* SITES-27055: Edge Delivery met Universal Editor: Ondersteuning voor queryparameters in reverse-proxyservlet.
+* SITES-26796: Edge Delivery met Universal Editor: ondersteuning voor aangepaste kolommen voor de spreadsheet Taxonomy.
+* SITES-26087: Edge Delivery met Universal Editor: ondersteuning voor CSV-export voor spreadsheets.
+* SITES-26265: Edge Delivery met Universal Editor: geef de TA-account weer die u wilt integreren met Edge Delivery in de configuratie-UI.
+* SITES-20372: Edge Delivery met Universal Editor: standaard-MSM-gebruiksgevallen voor spreadsheets inschakelen.
+* SITES-26681: Edge Delivery with Universal Editor: Ondersteuning voor de parameter ?sheet= voor de Taxonomy spreadsheets op de auteur.
+* SITES-26479: [ Schema ] Inhoud-Fragment Model Gepland de Status Eindpunt van de Publicatie.
+* SITES-25944: [ het Overzicht van de Leef ] voegt status &quot;levende exemplaar tot datum met beperkte overerving&quot;toe.
+* SITES-28713: [ V2 ] voegt gestructureerde gegevenssteun aan inhoudslooper toe.
+* SITES-27896: CommentsTab automatisch openen bij kennisgeving.
+* SITES-26720: De gebruiker zou niet moeten worden toegestaan om een volledige Inzameling van de activaselecteur te selecteren.
+* SITES-27875: Maak om het even welk editable binnen een container door gebrek verplaatsbaar.
+* SITES-28340: Insteekmodule van de Dienst van de Universele Redacteur van de Donkere Alley.
+* SITES-26098: Mogelijkheid om het publiceren van pagina&#39;s waarnaar wordt verwezen te vermijden bij het publiceren van een Content-Fragment.
+* SITES-27789: Ondersteuning van data attribute data-aue-component in het DOM.
+* SITES-25997: Verbeter wijzigingen om gewijzigde datum te ondersteunen.
+* SITES-28023: GraphQL-uitvoer voor verwijzingen naar externe middelen (gegevensopslagruimte + id van middelen).
+* SITES-26058: Content-Fragment Model Scheduled Publication Status Endpoint.
+* SITES-25108: Modelmigratie voor UUID-verwijzingen.
+* SITES-26630: Content-Fragment Scheduled Publication Status Endpoint for multiple content fragments.
+* SITES-23432: Vernieuwingsmogelijkheden voor verwijderen verbeteren.
+* SITES-25797: Support for external asset references - GraphQL.
+* SITES-17514: Verwijder eindpuntverbetering om Content-Fragment niet te publiceren.
+* SITES-14633: Validate Content-Fragment Model create payloads before installing - Dry Run.
 
-### Opgeloste problemen {#fixed-issues-19149}
+### Opgeloste problemen {#fixed-issues-19352}
 
-* GRANITE-55074: zorg ervoor dat de antwoordkopballen van CORS op foutenreacties worden geplaatst.
-* ASSETS-43755: Verbeteringen op het gebied van schaalbaarheid van bulkactiva hebben betrekking op.
-* ASSETS-45399: Omleiden naar Assets Console na het maken van een live kopie van het element.
-* ASSETS-45462: Problemen met het in cache plaatsen van browsers met miniaturen van aangepaste mappen.
-* ASSETS-46398: Download- en herverwerkingsacties verbergen voor DM-sjablonen.
-* ASSETS-44484: Problemen met opnieuw opslaan van Connected Assets-configuratie.
-* ASSETS-44122: Bij het kopiëren naar de huidige map wordt de naam van de doelmap niet gewijzigd wanneer de taak Kopiëren naar de huidige map wordt gesynchroniseerd.
-* ASSETS-44463: De knop CSV downloaden is niet zichtbaar bij het exporteren van metagegevens.
-* ASSETS-45134: Verplaats een taak met de titel van de bestemming en overschrijf alle maptitels.
-* ASSETS-45137: Conflicten met bulkuploads via Assets View.
-* ASSETS-45758: Asset Relations krijgt een oneindige drukke/ladende animatie na het toevoegen van een relatie.
-* ASSETS-44148: De gebeurtenis NODE_MOVED in AEM kan schadelijke NPE in logboeken veroorzaken.
-* ASSETS-28607: JS-fout bij het instellen van aangepaste videominiatuur.
-* GRANITE-55781: Verbeter groepssynchronisatie tussen Adobe Developer Console en AEM. Meer details in [ Veranderingen in de Synchronisatie van de Gebruikersgroep en van het Profiel van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
-* GRANITE-55754: zorg ervoor dat SDK-opstartscripts Java 21 ondersteunen.
-* GRANITE-54248: Kan niet door alle items in de map met grote elementen bladeren.
-* SCRNS-4597: De meningsverbeteringen van de de lijstmening van het resultaat van het onderzoek.
+* SITES-28415: Edge Delivery met Universal Editor: de knop Open Properties voor werkbladen herstellen.
+* SITES-2669: Edge Delivery met Universal Editor: verhelpt problemen bij het uploaden van CSV-bestanden die in UTF-8 zijn gecodeerd met een BOM als spreadsheet.
+* SITES-26543: Edge Delivery met Universal Editor: verbeter lege blokken zonder een model dat onjuiste opmaak rendert.
+* SITES-26857: Edge Delivery met Universal Editor: repareer het token voor sitemachtiging dat zichtbaar is in de gebruikersinterface voor configuraties op basis van bestanden.
+* SITES-2662: Edge Delivery met Universal Editor: los problemen op met hoofdlettergevoelige bulkmetagegevens.
+* SITES-28133: Publish to &quot;Preview&quot; zorgt voor de beschikbaarheid van content op Production.
+* SITES-27187: Geplande activering van pagina&#39;s/middelen inclusief referenties (experimenteel) mist om verwijzingen te publiceren.
+* SITES-27264: 2 Seleniumtests die betrekking hebben op Content-Fragment-LiveCopy-Creation mislukken consistent op de master.
+* SITES-26559: Vastzetvraag voor Content-Fragment modellen aan cqPageLucene index.
+* SITES-24469: Interactive element is not keyboard accessible.
+* SITES-24518: Naam en modelknoppen in de tabel Bovenliggende verwijzing zijn niet toegankelijk voor het toetsenbord.
+* SITES-27937: De beperkingen van UISchema worden geplaatst aan ongeldig na het bijwerken van het model.
+* SITES-27852: Model UISchema mist Categorizations.
+* SITES-27904: MetadataSchema ontbreekt in list/search Content-Fragment Models voor volledige projectie.
+* SITES-26827: Lijstfragmenten eindigen in een oneindige lus.
+* SITES-27678: [ Prestaties ] verhinderen onnodig het halen van _references.
+* SITES-27589: UUID-upgradefout voor modellen van inhoudsfragmenten met meerdere inhoud/fragmentverwijzingsvelden.
+* SITES-26679: Unpublish Content Fragments Models zou gepubliceerde verwijzingen slechts moeten bevestigen.
+* SITES-26666: referencesTree en verwijzingen eindpunt dat met verschillende resultaten terugkeert.
+* SITES-26499: Onjuiste volgorde van de waarde van het veld voor tag in GET-fragment(en) en PATCH de volgorde willekeurig maken.
+* SITES-26585: Corrigeer een kleine beschrijvingsfout in het schema.
+* SITES-26647: De schrapping eindpunt en UnpublishFragments verwijzingsbevestiging kan voor niet-admin gebruikers ontbreken.
+* SITES-26458: [ Onderzoek Content-Fragment Model ] het filtreren van de Reparatie door replicatiestatus.
+* SITES-23513: [ Content-Fragment ModelRedacteur ] de Bevestiging ontbreekt voor &quot;Verwijzing van het Fragment&quot; - &quot;Toegestaan bezit van het Model van het Fragment van de Inhoud&quot;.
+* SITES-26575: Als u de publicatie van een fragment uit de voorvertoning opheft, moet u de previewStatus bijwerken.
+* SITES-26571: Paginaverwijzingen kunnen niet worden opgeslagen wanneer FT_SITES-12435 is ingeschakeld.
+* SITES-26660: Vergelijking van de versie van het inhoudsfragment kan worden verbroken wanneer @ContentType van &quot;koordtype&quot;is.
+* SITES-26626: Missing customErrorMessage on number &amp; boolean fields.
+* SITES-26268: onjuiste statuscode die wordt geretourneerd als een verwijzing ongeldig is bij het maken van een fragment.
 
-
-### Bekende problemen {#known-issues-19149}
+### Bekende problemen {#known-issues-19352}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-19149}
+### Verouderde functies en API&#39;s {#deprecated-19352}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-#### Wijzigingen in de synchronisatie van gebruikersgroepen en productprofielen
+### Beveiligingsproblemen {#security-19352}
 
-Bij het gebruik van de Adobe Admin Console voor machtigingsbeheer MOGEN de volgende groepen NIET worden gebruikt, aangezien zij niet meer worden gesynchroniseerd met AEM:
-* AEM groepen die eindigen met _GROUP_NAME_SUFFIX.
-* Productprofielen uit andere omgevingen, programma&#39;s of producten.
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 36 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-Voor meer details, gelieve te controleren [ Veranderingen in de Synchronisatie van de Groep van de Gebruiker en van het Profiel van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
-
-#### Vervanging van SPA Editor {#deprecate-spa-editor}
-
-[ de Redacteur van de SPA ](/help/implementing/developing/hybrid/introduction.md) is afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. De SPA Editor blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten.
-
-De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn:
-
-* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor het visuele uitgeven.
-* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven.
-
-### Beveiligingsproblemen {#security-19149}
-
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 4 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
-
-### Ingesloten technologieën {#embedded-tech-19149}
+### Ingesloten technologieën {#embedded-tech-19352}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
