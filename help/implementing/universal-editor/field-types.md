@@ -4,7 +4,7 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
+source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -158,7 +158,10 @@ Een AEM inhoudcomponenttype laat een AEM inhoudkiezer toe, die kan worden gebrui
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -332,7 +335,10 @@ De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragmen
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
