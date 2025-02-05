@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
-source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
+source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
+
 
 # Interactieve communicatie
 
@@ -21,11 +21,7 @@ U kunt met ons intuïtieve gereedschap voor point-and-click grafische ontwerpen 
 
 Van financiële instellingen die rekeningoverzichten aan overheidsagentschappen produceren die voordeelberichten stroomlijnen, is de Interactieve Mededelingen het go aan hulpmiddel om kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie met gemak en efficiency tot stand te brengen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
--->
+![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
 
 ## Kernmogelijkheden
 
@@ -47,17 +43,9 @@ De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
 
 ## Onboarding
 
-1. **Toegang van het Verzoek**: E-mail [ aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) van uw officieel adres
-2. **Opstelling van de Beheerder**: De Adobe zal toegang toelaten en admin voorrechten verstrekken
-3. **Begin Creërend**: Begin met uw eerste correspondentie gebruikend onze [ intuïtieve redacteur ](https://video.tv.adobe.com/v/3444094/).
+De Interactieve Communicatie redacteur beschikbaar onder het programma van de Vroege Toegang voor de as a Cloud Service plaatsingen van Forms. Om toegang te verzoeken e-mail uw organisatie identiteitskaart, en programmadetails voor uw as a Cloud Service plaatsingen van Forms aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres. Zodra u toegang wordt verleend, begin [ creërend uw eerste correspondentie ](/help/forms/create-your-first-communication.md)
 
-## Veelgestelde vragen
 
-**Q: Kan ik bestaande XDP in de Interactieve Communicatie redacteur invoeren?**
-Ja, u kunt een bestaande XDP importeren en gebruiken als beginpunt. Niet-ondersteunde functies worden tijdens het importeren gemarkeerd.
-
-**Q: Is de Interactieve Communicatie redacteur beschikbaar voor plaatsingen op locatie?**
-Nee, de editor is alleen beschikbaar voor Forms as a Cloud Service implementaties.
 
 
 
@@ -134,8 +122,10 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## Volgende
 
-* Uw eerste correspondentie maken
+* [Uw eerste correspondentie maken](/help/forms/create-your-first-communication.md)
+* [Veelgestelde vragen](/help/forms/interactive-communications-faq.md)
 * U vertrouwd maken met terminologie en concepten
 * Analyse van interactieve communicatie-editor
 * Een fragment maken
 * Een correspondentie voorvertonen en testen
+

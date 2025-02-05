@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e5a318bf19fd63767c486e5ad0843a658130c8a9
+source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
 workflow-type: tm+mt
-source-wordcount: '6026'
+source-wordcount: '6034'
 ht-degree: 2%
 
 ---
@@ -856,6 +856,8 @@ ht-degree: 2%
       + [Een voorbeeld van een formulier bekijken](/help/forms/previewing-forms.md)
    + Interactieve communicatie {#interactive-communocation}
       + [Inleiding tot interactieve communicatie](/help/forms/introduction-to-interactive-communication.md)
+      + [Maak uw eerste interactieve communicatie](/help/forms/create-your-first-communication.md)
+      + [Veelgestelde vragen](/help/forms/interactive-communications-faq.md)
    + Forms Centric Workflows {#create-form-centric-workflows}
       + [Inleiding tot Forms-centric workflow](/help/forms/aem-forms-workflow.md)
       + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
