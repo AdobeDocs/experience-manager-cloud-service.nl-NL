@@ -855,7 +855,7 @@ ht-degree: 2%
       + [Trefwoorden voor adaptieve formulieren](/help/forms/adaptive-forms-keywords.md)
       + [Een voorbeeld van een formulier bekijken](/help/forms/previewing-forms.md)
    + Interactieve communicatie {#interactive-communocation}
-+ [ Inleiding aan interactieve mededeling ](/help/forms/introduction-to-interactive-communication.md)
+      + [Inleiding aan interactieve mededeling](/help/forms/introduction-to-interactive-communication.md)
    + Forms Centric Workflows {#create-form-centric-workflows}
       + [Inleiding tot Forms-centric workflow](/help/forms/aem-forms-workflow.md)
       + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
