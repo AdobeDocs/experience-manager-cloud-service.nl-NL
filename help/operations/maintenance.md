@@ -4,7 +4,7 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 0%
@@ -267,7 +267,7 @@ Houd er rekening mee dat de configuratie alleen geldig is als:
 * alle eigenschappen moeten worden gedefinieerd. Er zijn geen overgeërfde standaardinstellingen.
 * de typen (gehele getallen, tekenreeksen, booleans, enz.) in de onderstaande eigenschappentabellen moeten in acht worden genomen.
 
-**4** - creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+**4** - creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Versie wissen {#version-purge}
 

@@ -4,7 +4,7 @@ description: Leer meer over de gereedschappen die beschikbaar zijn om u te helpe
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -17,13 +17,13 @@ Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosite
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Toelaatbare reis van de Demo&#39;s van de Verwijzing, [ creeer Plaats, ](create-site.md) u een nieuwe demoplaats die op de malplaatjes van de Toelating van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
+In het vorige document van de AEM Toelaatbare reis van de Demo&#39;s van de Verwijzing, [ creeerde Plaats ](create-site.md), creeerde u een nieuwe demoplaats die op de malplaatjes van de Toelating van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.
 * Begrijp de grondbeginselen van het navigeren van de plaatsstructuur en het uitgeven van een pagina.
 
-Als u ook [ AEM Screens voor uw demoplaats toeliet, ](screens.md) zou u ook moeten:
+Als u ook [ AEM Screens voor uw demoplaats ](screens.md) toeliet, zou u ook moeten:
 
 * De basisbeginselen van AEM Screens kennen.
 * Begrijp de Web.Cafe demo-inhoud.
@@ -55,7 +55,7 @@ De Hulpprogramma&#39;s van de Demo van de zelfbediening verstrekken verscheidene
 
 * **de Plaatsen van de Schrapping** - selecteer de Plaats u in deze instantie van Adobe Experience Manager zou willen schrappen. Onthoud dat dit een destructieve actie is en dat deze actie niet ongedaan kan worden gemaakt als de actie eenmaal is gestart.
 * **de Malplaatjes van de Plaats van de Schrapping** - selecteer het Malplaatje van de Plaats u in deze instantie van Adobe Experience Manager zou willen schrappen. Voordat u een Sjabloon site verwijdert, moet u ervoor zorgen dat alle sites die verwijzen naar de sjabloon, ook worden verwijderd. Onthoud dat dit een destructieve actie is en dat deze actie niet ongedaan kan worden gemaakt als de actie eenmaal is gestart.
-* **het Geheime voorgeheugen van de Eerste Auteur** - dit zal verscheidene middelen binnen de instantie van Adobe Experience Manager halen, die hun ophaaltijden versnellen. Het kan enkele seconden duren.
+* **het Geheime voorgeheugen van de Auteur van Prime** - dit zal verscheidene middelen binnen de instantie van Adobe Experience Manager halen, die hun ophaaltijden versnellen. Het kan enkele seconden duren.
 * **Android App** - Hulpmiddelen om de demonstratieAndroid App te installeren en te lanceren. Creeer een plaats die op **wordt gebaseerd WKND Enige Pagina App** om deze pagina te bevolken. Gebruiken vanaf een Android-apparaat, emulator of Bluestacks.
 * **de Voorkeur van de Gebruiker** - draai van Pop-updialoogvensters van het Leerprogramma.
 * **GraphQL van de Opstelling** - opstelling snel het globale eindpunt van GraphQL.

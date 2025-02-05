@@ -4,7 +4,7 @@ description: Leer hoe u taxonomiegegevens beheert voor het gebruik van tags met 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -26,9 +26,9 @@ De Universal Editor werkt alleen met de id&#39;s van uw tags. Door een taxonomip
 
 ## Een taxonomipagina maken {#creating}
 
-Een taxonomie wordt gecreeerd als [ om het even welke andere pagina in AEM.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+Een taxonomie wordt gecreeerd als [ een andere pagina in AEM ](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
-1. Navigeer aan de [**console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigeer aan de [**console van Plaatsen** ](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Selecteer de locatie waar u de taxonomie wilt maken.
 
@@ -46,7 +46,7 @@ Een taxonomie wordt gecreeerd als [ om het even welke andere pagina in AEM.](/he
 
 1. Tik of klik **creeer**.
 
-De taxonomipagina wordt gemaakt. In het **Succes** dialoog, kunt u tikken of **klikken** dialoog om het bericht te sluiten of **Open** om de pagina in de [ Redacteur van de Pagina uit te geven.](/help/sites-cloud/authoring/page-editor/introduction.md)
+De taxonomipagina wordt gemaakt. In de **dialoog van het Succes**, kunt u tikken of **klikken Gedaan** dialoog om het bericht te sluiten of **Open** om de pagina in de [ Redacteur van de Pagina uit te geven ](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Neem nota van de resulterende paginanaam van de taxonomipagina voor gebruik in de volgende stappen.
 
@@ -54,7 +54,7 @@ Neem nota van de resulterende paginanaam van de taxonomipagina voor gebruik in d
 
 U begint een taxonomipagina te bewerken, net als elke andere pagina in AEM.
 
-1. Navigeer aan de [**console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigeer aan de [**console van Plaatsen** ](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Selecteer de taxonomie die u wilt bewerken.
 
@@ -82,7 +82,7 @@ AEM werkt automatisch de inhoud van de taxonomipagina bij wanneer u de onderligg
 
 ## Paden.json bijwerken voor publicatie Taxonomy {#paths-json}
 
-Als wanneer [ het leiden en het publiceren van tabelgegevens voor uw plaats van Edge Delivery Services, ](/help/edge/wysiwyg-authoring/tabular-data.md) u uw `paths.json` dossier van uw project moet bijwerken om publicatie van uw taxonomiegegevens toe te staan.
+Als wanneer [ het leiden en het publiceren van tabelgegevens voor uw plaats van Edge Delivery Services ](/help/edge/wysiwyg-authoring/tabular-data.md), moet u uw `paths.json` dossier van uw project bijwerken om publicatie van uw taxonomiegegevens toe te staan.
 
 1. Open de wortel van uw project in GitHub.
 
@@ -101,7 +101,7 @@ Als wanneer [ het leiden en het publiceren van tabelgegevens voor uw plaats van 
    }
    ```
 
-   * `<taxonomy-page-name>` moet de naam van de [ taxonomie pagina aanpassen u creeerde.](#creating)
+   * `<taxonomy-page-name>` moet de naam van de [ taxonomie pagina aanpassen u ](#creating) creeerde.
    * `<taxonomy-json-name>` kan elke geldige naam zijn die u kiest.
 
 1. Klik **Veranderingen vastleggen...** om de veranderingen in `main` te bewaren.
@@ -112,20 +112,20 @@ Dit proces hoeft maar één keer per taxonomipagina te worden uitgevoerd. Als u 
 
 >[!TIP]
 >
->Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services ](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Een taxonomie publiceren {#publishing}
 
 Een taxonomie is pas beschikbaar voor de Universal Editor of uw gebruikers als deze is gepubliceerd.
 
-De pagina&#39;s van de taxonomie worden gepubliceerd als een andere pagina door [ gebruikend **Snelle Publish** of **leiden de pictogrammen van de Publicatie** in de toolbar.](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+De pagina&#39;s van de taxonomie worden gepubliceerd als een andere pagina door [ gebruikend **Snelle Publish** of **leiden de pictogrammen van de Publicatie** in de toolbar ](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 U moet uw taxonomipagina telkens opnieuw publiceren:
 
 * Bewerk de taxonomipagina.
 * Bewerk de tag(s) en naamruimte(n) in de taxonomipagina of voeg deze toe.
 
-Als u een nieuwe taxonomipagina creeert moet u eerst [ een afbeelding aan het aan het `paths.json` dossier in uw project toevoegen.](#paths-json)
+Als u een nieuwe taxonomipagina creeert moet u eerst [ een afbeelding aan het aan het `paths.json` dossier in uw project ](#paths-json) toevoegen.
 
 ## Toegang tot taxonomie-informatie {#accessing}
 
@@ -135,7 +135,7 @@ U kunt tot de taxonomie als gegevens JSON bij het volgende adres toegang hebben.
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-Gebruik `<taxonomy-json-name>` dat u bepaalde toen [ uw taxonomie aan het `paths.json` dossier in uw project in kaart bracht.](#paths-json) De taxonomiegegevens worden geretourneerd als JSON-gegevens, zoals in het volgende voorbeeld.
+Gebruik `<taxonomy-json-name>` dat u bepaalde toen [ afbeelding uw taxonomie aan het `paths.json` dossier in uw project ](#paths-json). De taxonomiegegevens worden geretourneerd als JSON-gegevens, zoals in het volgende voorbeeld.
 
 ```json
 {
@@ -166,11 +166,11 @@ Gebruik `<taxonomy-json-name>` dat u bepaalde toen [ uw taxonomie aan het `paths
 
 Deze JSON-gegevens worden automatisch bijgewerkt wanneer u de taxonomie bijwerkt en opnieuw publiceert. Uw app heeft via programmacode toegang tot deze gegevens voor uw gebruikers.
 
-[ als u markeringen in veelvoudige talen handhaaft, ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) kunt u tot die talen toegang hebben door in de ISO2 taalcode als waarde van a `sheet=` parameter over te gaan.
+[ als u markeringen in veelvoudige talen ](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) handhaaft, kunt u tot die talen toegang hebben door in de ISO2 taalcode als waarde van a `sheet=` parameter over te gaan.
 
 ## Extra tageigenschappen beschikbaar maken {#additional-properties}
 
-Uw taxonomie bevat standaard `tag` - en `title` -waarden zoals [ in het vorige voorbeeld.](#accessing) U kunt uw taxonomie vormen om extra markeringseigenschappen bloot te stellen. In dit voorbeeld wordt de tagbeschrijving weergegeven.
+Door gebrek, zal uw taxonomie `tag` en `title` waarden bevatten zoals die [ in het vorige voorbeeld ](#accessing) worden gezien. U kunt uw taxonomie vormen om extra markeringseigenschappen bloot te stellen. In dit voorbeeld wordt de tagbeschrijving weergegeven.
 
 1. Gebruik de console van Plaatsen om de taxonomie te selecteren u creeerde.
 1. Tik of klik het **pictogram van Eigenschappen** in de toolbar.
@@ -179,7 +179,7 @@ Uw taxonomie bevat standaard `tag` - en `title` -waarden zoals [ in het vorige v
 1. Tik of klik **sparen &amp; sluit**.
 1. Met nog geselecteerde taxonomie, tik of klik **Snelle Publish** in de toolbar.
 
-Nu [ wanneer u tot uw taxonomie toegang hebt, ](#accessing) is de markeringsbeschrijving (of welk bezit u verkoos om bloot te stellen) inbegrepen in JSON.
+Nu [ wanneer u tot uw taxonomie ](#accessing) toegang hebt, is de markeringsbeschrijving (of welk bezit u verkoos om bloot te stellen) inbegrepen in JSON.
 
 ```json
 {

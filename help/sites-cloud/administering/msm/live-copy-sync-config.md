@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 De volgende lijst maakt een lijst van de rollout configuraties die uit-van-de-doos met AEM worden verstrekt. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie.
 
-Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [ een rollout configuratie tot stand brengen.](#creating-a-rollout-configuration)
+Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [ een rollout configuratie ](#creating-a-rollout-configuration) tot stand brengen.
 
 | Naam | Beschrijving | Trigger | [ de Acties van de Synchronisatie ](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten 
 
 De volgende lijst maakt een lijst van de synchronisatieacties die uit-van-de-doos met AEM worden verstrekt.
 
-Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [ een Nieuwe Actie van de Synchronisatie tot stand brengen.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [ een Nieuwe Actie van de Synchronisatie ](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action) tot stand brengen.
 
 | Naam van handeling | Beschrijving | Eigenschappen |
 |---|---|---|
@@ -88,7 +88,7 @@ Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [ een Nieuwe
 U kunt [ tot een rollout configuratie ](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) leiden wanneer de geïnstalleerde rollout configuraties niet aan uw toepassingsvereisten voldoen door de volgende stappen uit te voeren.
 
 1. [De rollout-configuratie maken](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [Synchronisatiehandelingen toevoegen aan de rollout-configuratie.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [ voegt synchronisatieacties aan de rollout configuratie ](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration) toe.
 
 De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het vormen rollout configuraties op een blauwdruk of een Actieve pagina van het Exemplaar.
 

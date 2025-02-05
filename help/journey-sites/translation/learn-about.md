@@ -8,7 +8,7 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Dit document helpt u bij het maken van AEM Sites-inhoud en bij het vertalen van 
 
 ## AEM Sites - Overzicht {#aem-sites}
 
-AEM Sites is een uitgebreid platform voor het creëren, beheren en leveren van digitale ervaringen. Inhoudsauteurs gebruiken eenvoudige, WYSIWYG-gereedschappen voor slepen en neerzetten om pagina&#39;s te maken in een intuïtieve editor. Hierdoor wordt de inhoud weergegeven zoals uw publiek deze zal gebruiken.
+AEM Sites is een uitgebreid platform voor het creëren, beheren en leveren van digitale ervaringen. Inhoudsauteurs gebruiken eenvoudige, WYSIWYG-gereedschappen voor slepen en neerzetten om pagina&#39;s te maken in een intuïtieve editor. Hierdoor wordt de inhoud net zo weergegeven als uw publiek er gebruik van maakt.
 
 De pagina&#39;s die uw ervaring vormen zijn gemakkelijk te beheren in de plaatsenconsole, die u een overzicht van uw inhoud in een gemakkelijk te begrijpen hiërarchie geeft, die gemakkelijke het opnieuw rangschikken, het kopiëren, en het publiceren van uw inhoud toestaat.
 
@@ -63,7 +63,7 @@ Bouw op deze kennis voort en ga uw de vertaalreis van AEM Sites door het documen
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de reis van de plaatsvertaling door het document [ te herzien begonnen wordt met de vertaling van AEM Sites, ](getting-started.md) het volgende is sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de reis van de plaatsvertaling door het document [ te herzien begonnen wordt met de vertaling van AEM Sites ](getting-started.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ Snelle Gids van het Begin aan het Authoring van Pagina&#39;s ](/help/sites-cloud/authoring/quick-start.md) - een snel overzicht van de belangrijkste concepten aan het creëren van inhoud gebruikend AEM Sites
 * [ MSM en Vertaling ](/help/sites-cloud/administering/msm-and-translation.md) - de details van AEM Meerdere-Plaats Manager en hoe het met zijn vertaalhulpmiddelen werkt

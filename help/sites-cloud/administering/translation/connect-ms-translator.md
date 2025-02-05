@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -18,7 +18,7 @@ AEM verstrekt een ingebouwde schakelaar voor [ Vertaler van Microsoft ](https://
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die door uw inhoud van AEM Sites wordt geleid gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
+>Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -29,7 +29,7 @@ AEM verstrekt een ingebouwde schakelaar voor [ Vertaler van Microsoft ](https://
 
 De volgende procedure leidt tot een configuratie van de Vertaler van Microsoft.
 
-1. In het [ navigatievenster, ](/help/sites-cloud/authoring/basic-handling.md#first-steps) uitgezochte **Hulpmiddelen** > **Cloud Servicen** > **Cloud Servicen van de Vertaling**.
+1. In het [ navigatievenster ](/help/sites-cloud/authoring/basic-handling.md#first-steps), uitgezochte **Hulpmiddelen** > **Cloud Servicen** > **Cloud Servicen van de Vertaling**.
 1. Navigeer naar de plaats waar u de configuratie wilt creëren. Normaal gesproken bevindt dit zich in de hoofdmap van de site of kan het een algemene standaardconfiguratie zijn.
 1. Selecteer **creeer** knoop.
 1. Definieer uw configuratie.

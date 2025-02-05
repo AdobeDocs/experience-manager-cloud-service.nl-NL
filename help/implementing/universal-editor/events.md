@@ -4,7 +4,7 @@ description: Leer over de verschillende gebeurtenissen die de Universele Redacte
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Alle gebeurtenissen volgen een naamgevingsconventie.
 
 `aue:content-update` en `aue:ui-select`
 
-De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, te zien gelieve de de Universele Vraag van de Redacteur van het document [.](/help/implementing/universal-editor/calls.md)
+De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [ ](/help/implementing/universal-editor/calls.md).
 
 ## Gebeurtenissen voor bijwerken van inhoud {#content-events}
 

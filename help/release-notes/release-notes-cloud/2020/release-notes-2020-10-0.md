@@ -1,10 +1,10 @@
 ---
 title: Nota's van de versie voor 2020.10.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release voor 2020.10.0."
+description: '[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 0%
@@ -26,7 +26,7 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 * **[Componenten 2.12.0 van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service profiteert van automatische updates aan de recentste versie van de Componenten van de Kern. Versie 2.12.0 bevat de meest recente verbeteringen die de gemeenschap heeft aangebracht. De verbeteringen omvatten [ een nieuwe POST vormmanager;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) de capaciteit om douane CSS, JavaScript, en meta-gegevens [ markeringen via context bewuste configuratie te omvatten;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) en a [`DataLayerBuilder` ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) nut om de integratie van de Laag van Gegevens van de Adobe in douanecomponenten te vereenvoudigen. Zie de [ lijst van veranderingen ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-* **[Archetype 24 van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: De geadviseerde stichting om een nieuw project van de Experience Manager te beginnen werd beter. Het omvat nu de nieuwe [ Gegevens van de Cliënt van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), optie om plaats in AMP te leveren, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) en nieuwe [ uitbreidingspunten om project CSS/JS toe te voegen.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)[
+* **[Archetype 24 van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: De geadviseerde stichting om een nieuw project van de Experience Manager te beginnen werd beter. Het omvat nu de nieuwe [ Gegevens van de Cliënt van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), optie om plaats in AMP [ te leveren ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html), en nieuwe [ uitbreidingspunten om project CSS/JS ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) toe te voegen.
 
 * **[Omslagen ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Mogelijkheid om publieksomslagen tot stand te brengen om, publiekssegmenten gemakkelijk te organiseren te vinden en te selecteren voor aanbieding ContextHub richtend mogelijkheden.
 

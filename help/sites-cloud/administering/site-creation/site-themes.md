@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Sites die zijn gemaakt met AEM sitesjablonen maken het eenvoudig downloaden, aan
 
 Sitethema&#39;s worden op twee verschillende manieren gebruikt:
 
-* Zij worden gebruikt als deel van een plaatsmalplaatje om het stileren te bepalen wanneer [ creërend een plaats.](create-site.md)
+* Zij worden gebruikt als deel van een plaatsmalplaatje om het stileren te bepalen wanneer [ creërend een plaats ](create-site.md).
 * Ze worden gedownload nadat een site op basis van een sitesjabloon is gemaakt, zodat een ontwikkelaar aan de voorzijde de opmaak verder kan aanpassen.
 
 >[!TIP]

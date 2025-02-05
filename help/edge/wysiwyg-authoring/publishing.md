@@ -4,7 +4,7 @@ description: Leer hoe het publiceren van inhoud met Edge Delivery Services werkt
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Met Edge Delivery Services verloopt het publiceren van inhoud naadloos, ongeacht
 
 ## Stroom publiceren vanuit AEM {#publishing-flow}
 
-Wanneer het gebruiken van de Universele Redacteur aan auteur AEM inhoud, is het publiceren zo eenvoudig zoals het klikken van de **Publish** knoop in de Universele Redacteur. Gelieve te zien het document [ het Publiceren Inhoud met de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+Wanneer het gebruiken van de Universele Redacteur aan auteur AEM inhoud, is het publiceren zo eenvoudig zoals het klikken van de **Publish** knoop in de Universele Redacteur. Gelieve te zien het document [ het Publiceren Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
 De informatiestroom bij publicatie ziet er als volgt uit. Zodra de auteur begint met de publicatie, is deze stroom automatisch en wordt deze hier ter informatie weergegeven.
 

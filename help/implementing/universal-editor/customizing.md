@@ -4,7 +4,7 @@ description: Leer over de verschillende uitbreidingspunten en andere eigenschapp
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%
@@ -45,9 +45,9 @@ U kunt de toegestane componenten per container in de Universele Redacteur beperk
 
 ### Componenten voorwaardelijk tonen en verbergen in deelvenster Eigenschappen {#conditionally-hide}
 
-Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel toe te voegen.](/help/implementing/universal-editor/field-types.md#fields)
+Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen paneel verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel ](/help/implementing/universal-editor/field-types.md#fields) toe te voegen.
 
-De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic.](https://jsonlogic.com/) Als de voorwaarde true is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
+De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jsonlogic.com/). Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic.](https://jso
 
 ### Aangepaste voorbeeld-URL&#39;s {#custom-preview-urls}
 
-U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [ top-right toolbar van de redacteur zal openen.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [ top-right toolbar van de redacteur ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) zal openen.
 
-Dit is met name nuttig voor toepassingen met specifieke voorproefvereisten, zoals die [ gebruikend Edge Delivery Services met het auteursrecht van WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Dit is met name nuttig voor toepassingen met specifieke voorproefvereisten, zoals die [ gebruikend Edge Delivery Services met het auteursrecht van WYSIWYG ](/help/edge/wysiwyg-authoring/authoring.md).
 
 Hiervoor neemt u gewoon de gewenste voorvertoning-URL op in een metatag van de van instrumenten voorziene app, zoals in het volgende voorbeeld.
 
@@ -110,6 +110,6 @@ Zie de volgende bronnen als u deze mogelijkheden wilt verkennen:
 
 >[!TIP]
 >
->Als u liever per voorbeeld wilt leren, raadpleegt u de zelfstudie over de uitbreidbaarheid van de gebruikersinterface van [AEM .](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
+>Als u het leren door voorbeeld verkiest, te zien gelieve [ AEM UI rekbaarheidsleerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
 
-[ Gebruikend Extension Manager in AEM Sites, ](https://developer.adobe.com/uix/docs/extension-manager/) u kunt uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, toegang tot de eerste partijuitbreidingen van de Adobe met inbegrip van die voor de Universele Redacteur, en veel meer.
+[ Gebruikend Extension Manager in AEM Sites ](https://developer.adobe.com/uix/docs/extension-manager/), kunt u uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, toegang tot de eerste partijuitbreidingen van de Adobe met inbegrip van die voor de Universele Redacteur, en veel meer.

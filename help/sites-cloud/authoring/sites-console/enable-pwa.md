@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 
 >[!IMPORTANT]
 >
->De progressieve Web app (PWA) eigenschappen voor AEM Sites [ zijn afgekeurd.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
+>De progressieve Web app (PWA) eigenschappen voor AEM Sites [ zijn afgekeurd ](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features).
 >
 >Bestaande projecten die gebruikmaken van deze functie blijven ondersteund, maar nieuwe projecten moeten deze functie niet gebruiken.
 
@@ -46,7 +46,7 @@ Met PWA beschikt de gebruiker over een lokale kopie van de site, zodat hij zelfs
 
 >[!NOTE]
 >
->De progressieve Web apps zijn evoluerende technologie en steun voor lokale app installatie en andere eigenschappen [ hangt van welke browser af u gebruikt.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
+>De progressieve Web apps zijn evoluerende technologie en steun voor lokale app installatie en andere eigenschappen [ hangt van welke browser af u ](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary) gebruikt.
 
 ## Vereisten {#prerequisites}
 
@@ -63,9 +63,9 @@ Core Components versie 2.15.0 en hoger ondersteunen de PWA-functies van AEM site
 
 >[!NOTE]
 >
->De Adobe adviseert niet gebruikend de eigenschappen van de PWA op douanecomponenten of componenten niet [ uitgebreid van de Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>De Adobe adviseert niet gebruikend de eigenschappen van de PWA op douanecomponenten of componenten niet [ uitgebreid van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html).
 <!--
-Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
  To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
@@ -108,7 +108,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## PWA inschakelen voor uw site {#enabling-pwa-for-your-site}
 
-Met [ voldaan aan eerste vereisten ](#prerequisites), is het voor een inhoudauteur gemakkelijk om de eigenschappen van PWA aan een plaats toe te laten. Hieronder volgt een basisoverzicht van hoe u dit kunt doen. De individuele opties zijn gedetailleerd in de sectie [ Gedetailleerde Opties.](#detailed-options)
+Met [ voldaan aan eerste vereisten ](#prerequisites), is het voor een inhoudauteur gemakkelijk om de eigenschappen van PWA aan een plaats toe te laten. Hieronder volgt een basisoverzicht van hoe u dit kunt doen. De individuele opties worden gedetailleerd in de sectie [ Gedetailleerde Opties ](#detailed-options).
 
 1. Log in AEM.
 1. Van het belangrijkste menu, uitgezochte **Navigatie** > **Plaatsen**.
@@ -134,11 +134,11 @@ Met [ voldaan aan eerste vereisten ](#prerequisites), is het voor een inhoudaute
 
 1. Selecteer **sparen &amp; Sluiten**.
 
-Uw plaats wordt nu gevormd en u kunt [ het als lokale app installeren.](#using-pwa-enabled-site)
+Uw plaats wordt nu gevormd en u kunt [ het als lokale app ](#using-pwa-enabled-site) installeren.
 
 ## Uw site waarop PWA is ingeschakeld gebruiken {#using-pwa-enabled-site}
 
-Nu u [ uw plaats hebt gevormd om PWA te steunen, ](#enabling-pwa-for-your-site) kunt u het voor zich ervaren.
+Nu u [ uw plaats hebt gevormd om PWA ](#enabling-pwa-for-your-site) te steunen, kunt u het voor zich ervaren.
 
 1. Heb toegang tot de plaats in a [ gesteunde browser ](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. Er verschijnt een nieuw pictogram op de adresbalk van de browser om aan te geven dat de site kan worden geïnstalleerd als een lokale app.
@@ -149,7 +149,7 @@ Nu u [ uw plaats hebt gevormd om PWA te steunen, ](#enabling-pwa-for-your-site) 
 
 ## Gedetailleerde opties {#detailed-options}
 
-De volgende sectie verstrekt meer detail op de beschikbare opties wanneer [ vormend uw plaats voor PWA.](#enabling-pwa-for-your-site)
+De volgende sectie verstrekt meer detail op de beschikbare opties wanneer [ vormend uw plaats voor PWA ](#enabling-pwa-for-your-site).
 
 ### Installeerbare ervaring configureren {#configure-installable-experience}
 

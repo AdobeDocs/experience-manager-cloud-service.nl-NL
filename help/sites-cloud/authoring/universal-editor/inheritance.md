@@ -4,13 +4,13 @@ description: Leer hoe de Universal Editor het overnemen van inhoud ondersteunt v
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
-
 
 # Overerving van inhoud in de Universal Editor {#inheritance}
 
@@ -42,7 +42,7 @@ Om bepaalde inhoud van de kopieën te wijzigen, breken auteurs de overerving op 
 
 Wanneer een pagina deel van MSM uitmaakt of een Lanceer en de inhoud met de Universele Redacteur wordt uitgegeven, maakt de redacteur automatisch overerving voor alle veranderingen onbruikbaar die door auteurs op die pagina worden aangebracht, die ervoor zorgen dat de gewijzigde inhoud wordt behouden wanneer de updates van de blauwdruk worden gesynchroniseerd.
 
-De auteur hoeft niet op een knop te klikken of op een andere manier andere stappen te ondernemen om overerving uit te schakelen voordat hij lokale bewerkingen uitvoert. Zodra een verandering wordt aangebracht, wordt de erfenis impliciet geannuleerd. Dit is in tegenstelling tot de [ Redacteur van de Pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
+De auteur hoeft niet op een knop te klikken of op een andere manier andere stappen te ondernemen om overerving uit te schakelen voordat hij lokale bewerkingen uitvoert. Zodra een verandering wordt aangebracht, wordt de erfenis impliciet geannuleerd. Dit werkschema is in tegenstelling tot de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 De Universal Editor heeft geen invloed op het onderliggende overervingsmechanisme. Raadpleeg de volgende documentatie voor meer informatie over hoe overerving werkt.
 
@@ -55,6 +55,6 @@ De Universal Editor heeft geen invloed op het onderliggende overervingsmechanism
    * Overerving kan alleen voor de gehele pagina worden hersteld via de opdracht
       * [ Levende Console van het Overzicht van het Exemplaar ](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [Opstartconsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Gebruikend de **knoop van het Terugstellen** op het **Levende lusje van het Exemplaar** van het [ pagina eigenschappenvenster.](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      * Gebruikend de **knoop van het Terugstellen** op het **Levende lusje van het Exemplaar** van het [ pagina eigenschappen venster ](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * Auteurs hebben geen visuele feedback om te zien welke componenten hun overerving hebben uitgeschakeld en welke nog steeds behouden zijn.
-* Deze eigenschappen zijn momenteel beperkt tot componenten in pagina&#39;s en zijn nog niet van toepassing op [ de Fragmenten van de Inhoud, ](/help/sites-cloud/administering/content-fragments/overview.md) ondanks die ook die mogelijkheden MSM hebben en lanceren.
+* Deze eigenschappen zijn momenteel beperkt tot componenten in pagina&#39;s en zijn nog niet van toepassing op [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md), ondanks die ook die mogelijkheden MSM hebben en lanceren.

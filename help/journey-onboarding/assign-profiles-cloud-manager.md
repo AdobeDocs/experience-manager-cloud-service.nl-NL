@@ -4,7 +4,7 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan Clo
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Teamleden toewijzen aan Cloud Manager-productprofielen {#assign-team-members}
 
-In dit deel van de [ onboarding reis, ](overview.md) leert u hoe te om teamleden aan de productprofielen van Cloud Manager toe te wijzen.
+In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om teamleden aan de productprofielen van Cloud Manager toe te wijzen.
 
 ## Doelstelling {#objective}
 
-In de vorige stap in deze reis, [ die tot de Admin Console toegang heeft, ](admin-console.md) u nu login aan de Admin Console leerde en uw voorrechten als systeembeheerder verifieerde. U kunt uw teamleden nu toegang geven tot Cloud Manager. U doet dit door productprofielen toe te wijzen.
+In de vorige stap in deze reis, [ die tot de Admin Console ](admin-console.md) toegang heeft, leerde u nu login aan de Admin Console en verifieert uw voorrechten als systeembeheerder. U kunt uw teamleden nu toegang geven tot Cloud Manager. U doet dit door productprofielen toe te wijzen.
 
 Wanneer het verlenen van toegang tot een oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. U gebruikt de Admin Console om productprofielen toe te wijzen.
 
@@ -177,7 +177,7 @@ In dit gedeelte van de instapreis leerde u over het toewijzen van uw teamleden a
 * Ken de drie belangrijke het productprofielen van Cloud Manager: **BedrijfsEigenaar**, **Manager van de Plaatsing**, en **Ontwikkelaar**.
 * Teamleden kunnen toewijzen aan Cloud Manager-productprofielen.
 
-U bent nu bereid om uw aan boord gaan reis door het document [ te herzien Cloud Manager van de Toegang, ](cloud-manager.md) waar u leert om tot Cloud Manager toegang te hebben en uw projectmiddelen tot stand te brengen.
+U bent nu bereid om uw aan boord gaan reis door het document [ te herzien Cloud Manager van de Toegang ](cloud-manager.md), waar u leert om tot Cloud Manager toegang te hebben en uw projectmiddelen tot stand te brengen.
 
 ## Aanvullende bronnen {#additional-resources}
 

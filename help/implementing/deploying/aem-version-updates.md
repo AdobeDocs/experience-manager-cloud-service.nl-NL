@@ -4,7 +4,7 @@ description: Leer hoe Adobe Experience Manager (AEM) as a Cloud Service ononderb
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Als u een probleem tegenkomt met betrekking tot regressie, dient u een ondersteu
 
 ## Composite Node Store {#composite-node-store}
 
-Meestal worden updates zonder downtime uitgevoerd, inclusief voor de ontwerpinstantie, die een cluster met knooppunten is. Het rollen updates zijn mogelijk toe te schrijven aan [ de samengestelde eigenschap van de knoopopslag in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Meestal worden updates zonder downtime uitgevoerd, inclusief voor de ontwerpinstantie, die een cluster met knooppunten is. Het rollen updates zijn mogelijk toe te schrijven aan [ de samengestelde eigenschap van de knoopopslag in Oak ](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html).
 
 Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In a [ het rollen plaatsing ](/help/implementing/deploying/overview.md#how-rolling-deployments-work), bevat de nieuwe AEM versie zijn eigen `/libs` (de op TarMK gebaseerde onveranderlijke bewaarplaats). Deze gegevensopslagruimte verschilt van de oudere AEM, hoewel beide verwijzen naar een gezamenlijke, op DocumentMK gebaseerde, veranderbare gegevensopslagruimte die gebieden als `/content` , `/conf` , `/etc` en andere bevat.
 

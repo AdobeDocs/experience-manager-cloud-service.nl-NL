@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -18,11 +18,11 @@ De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en a
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die door uw inhoud van AEM Sites wordt geleid gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
+>Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
 
 ## Inhoudsfragmenten en vertaalregels {#content-fragments}
 
-De vertaalregels die in dit document worden beschreven zijn op de Fragmenten van de Inhoud slechts van toepassing als **de ModelGebieden van de Inhoud voor Vertaling** optie niet op het [ niveau van de het kader van de vertaalintegratie zijn geactiveerd.](integration-framework.md#assets-configuration-properties)
+De vertaalregels die in dit document worden beschreven zijn op de Fragmenten van de Inhoud slechts van toepassing als **de ModelGebieden van de Inhoud voor Vertaling** optie niet op het [ configuratieniveau van het vertaalintegratiekader ](integration-framework.md#assets-configuration-properties) zijn geactiveerd.
 
 Als **laat de ModelGebieden van de Inhoud voor Vertaling** optie toe actief is, AEM zal het **Vertaalbare** gebied op [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) gebruiken om te bepalen als het gebied moet worden vertaald en creeert automatisch vertaalregels dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
 

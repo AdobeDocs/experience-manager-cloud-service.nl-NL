@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -108,11 +108,11 @@ Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties 
 
 ## Site {#site}
 
-De **mening van de Plaats** van het zijpaneel toont details van plaatsen [ gecreeerd gebruikend een plaatsmalplaatje.](/help/sites-cloud/administering/site-creation/create-site.md)
+De **mening van de Plaats** van het zijpaneel toont details van plaatsen [ gecreeerd gebruikend een plaatsmalplaatje ](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![ paneel van de Plaats ](assets/console-side-panel-site-paenl.png)
 
-Zie het document [ Gebruikend het Comité van de Plaats om Uw Thema van de Plaats ](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer details op te leiden hoe u het paneel kunt gebruiken om het [ thema van uw plaats te beheren.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Zie het document [ Gebruikend het Comité van de Plaats om Uw Thema van de Plaats ](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer details op te leiden hoe u het paneel kunt gebruiken om het [ thema van uw plaats ](/help/sites-cloud/administering/site-creation/site-themes.md) te beheren.
 
 Als u nog niet de front-end pijpleiding hebt opstelling om op thema-gebaseerde plaats verwezenlijking toe te laten, zal het zijpaneel die optie aanbieden.
 
@@ -120,7 +120,7 @@ Als u nog niet de front-end pijpleiding hebt opstelling om op thema-gebaseerde p
 
 >[!TIP]
 >
->Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [ Snelle Reis van de Aanmaak van de Plaats worden gevonden.](/help/journey-sites/quick-site/overview.md)
+>Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [ Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) worden gevonden.
 
 ## Filter {#filter}
 

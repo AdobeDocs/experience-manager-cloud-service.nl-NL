@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 0%
@@ -122,7 +122,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 * **creeer Levend Exemplaar** (**Plaatsen**)
 
-   * Met MSM kunt u [ een ad-hoc (eenmalige) live kopie van een afzonderlijke pagina of subvertakking van een website maken.](creating-live-copies.md#creating-a-live-copy-of-a-page) Bijvoorbeeld, het dupliceren van een subtak om informatie over een nieuwe/bijgewerkte versie van een product te verstrekken. Op deze manier een actieve kopie maken:
+   * MSM laat u [ tot een ad hoc (eenmalig) Levend Exemplaar van een individuele pagina of subtak van een website ](creating-live-copies.md#creating-a-live-copy-of-a-page) leiden. Bijvoorbeeld, het dupliceren van een subtak om informatie over een nieuwe/bijgewerkte versie van een product te verstrekken. Op deze manier een actieve kopie maken:
       * Hiermee maakt u een ad-hoc live kopie (geen configuratie voor blauwdrukken vereist).
       * Kan worden gebruikt om (direct) een actieve kopie van elke pagina of vertakking te maken.
       * Vereist **Synchroniseer** (verstrekt niet de **knoop van de Uitvoer**).
@@ -137,11 +137,11 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 * **Levend Overzicht van het Exemplaar** (**Plaatsen**)
 
-   * Deze console laat u [ bekijken en uw blauwdruk en zijn Levende KopieÃ«n beheren.](live-copy-overview.md)
+   * Deze console laat u [ bekijken en uw blauwdruk en zijn Levende Exemplaren ](live-copy-overview.md) beheren.
 
 * **Blauwdrukken** (**Hulpmiddelen** - **Plaatsen**)
 
-   * Deze console laat u [ tot stand brengen en uw configuraties van de blauwdruk leiden.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Deze console laat u [ uw configuraties van de blauwdruk ](creating-live-copies.md#creating-a-blueprint-configuration) tot stand brengen en beheren.
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan Ã
 
 ### Conflicten bij rollout {#rollout-conflicts}
 
-Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Zo is het nuttig om zich van bewust te zijn hoe AEM handvatten om het even welke [ conflicten die tijdens rollout zouden kunnen voorkomen.](rollout-conflicts.md)
+Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Zo is het nuttig om zich van bewust te zijn hoe AEM om het even welke [ conflicten behandelt die tijdens rollout ](rollout-conflicts.md) zouden kunnen voorkomen.
 
 ### Overerving en synchronisatie opschorten en annuleren {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ De volgende stappen beschrijven de standaardprocedure voor het gebruiken van MSM
 
 1. Bepaal waar u [ moet specificeren de rollout configuraties om te gebruiken ](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) en zonodig te vormen.
 1. Indien noodzakelijk, [ creeer een blauwdrukconfiguratie ](creating-live-copies.md#creating-a-blueprint-configuration) die de broninhoud van het Levende Exemplaar identificeert.
-1. [Maak een actieve kopie.](creating-live-copies.md#creating-a-live-copy)
+1. [ creeer een Levend Exemplaar ](creating-live-copies.md#creating-a-live-copy).
 1. Breng de gewenste wijzigingen aan in de broninhoud. U dient het normale proces voor het beoordelen en goedkeuren van inhoud dat uw organisatie heeft ingesteld, te gebruiken.
 1. [ Uitrol ](creating-live-copies.md#rolling-out-a-blueprint) de blauwdruk, of [ synchroniseer Levende Exemplaar ](creating-live-copies.md#synchronizing-a-live-copy) met de veranderingen.
 

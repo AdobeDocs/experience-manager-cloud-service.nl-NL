@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Uw websites en toepassingen hebben via URL-oproepen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
-U verbindt met URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Koppelen - in plaats van insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [ voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U verbindt met URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Koppelen - in plaats van insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [ voegt u de activa direct op uw pagina ](adding-dynamic-media-assets-to-pages.md) toe.
 
 Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s en toepassingen te plaatsen.
 
@@ -153,7 +153,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    Dit pad is de volledige video-URL voor een gepubliceerde video-uitvoering.
 
-## Een video-URL verkrijgen voor adaptieve bitsnelheidstreaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Een video-URL ophalen voor adaptieve bitsnelheidstreaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]** .
 1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en selecteer vervolgens **[!UICONTROL Show Configurations]** .

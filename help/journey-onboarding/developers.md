@@ -4,7 +4,7 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Taken van ontwikkelaar- en implementatiebeheer {#developer-deployment-manager}
 
-In dit facultatieve deel van de [ onboarding reis, ](overview.md) leert u hoe de ontwikkelaars en de plaatsingsmanagers tot git kunnen toegang hebben om toepassingen te ontwikkelen en pijpleidingen te gebruiken om hen op te stellen.
+In dit facultatieve deel van de [ onboarding reis ](overview.md), leert u hoe de ontwikkelaars en plaatsingsmanagers tot git kunnen toegang hebben om toepassingen te ontwikkelen en pijpleidingen te gebruiken om hen op te stellen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de onboarding reis door vestiging de noodzakelijke wolkenmiddelen en het verlenen van toegang in het document [ voltooid Toewijzend AEM Profielen van het Product.](assign-profiles-aem.md)
+Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de onboarding reis door vestiging de noodzakelijke wolkenmiddelen en het verlenen van toegang in het document [ voltooid Toewijzend AEM de Profielen van het Product ](assign-profiles-aem.md).
 
 Op dit punt kunnen uw ontwikkelaars en implementatiemanagers beginnen met het maken van uw eigen toepassingen, terwijl uw AEM gebruikers kunnen beginnen met het maken van inhoud. In die zin is uw instapweigering voltooid en nu is het tijd om uw nieuwe AEM as a Cloud Service-systeem te gebruiken, wat dit document zal illustreren.
 
@@ -136,7 +136,7 @@ Nu u dit document hebt gelezen, moet u:
 
 U hebt de grond geraakt die als ontwikkelaar of plaatsingsmanager met niet alleen werkende kennis van Cloud Manager maar ook werkende milieu&#39;s, bewaarplaatsen en pijpleidingen loopt! Maar er is meer te leren over AEM as a Cloud Service die krachtige CI/CD hulpmiddelen. Controle uit de [ Extra sectie van Middelen ](#additional-resources) voor meer details.
 
-Als u in bent geinteresseerd hoe de inhoudsauteurs toegang hebben en AEM als dienst van de Wolk gebruiken, ga op het definitieve deel van de onboarding reis voort, [ AEM de Taken van de Gebruiker.](aem-users.md)
+Als u in bent geinteresseerd hoe de inhoudsauteurs toegang hebben en AEM als dienst van de Wolk gebruiken, ga op het definitieve deel van de onboarding reis voort, [ AEM de Taken van de Gebruiker ](aem-users.md).
 
 >[!TIP]
 >

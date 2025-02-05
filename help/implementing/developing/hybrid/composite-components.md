@@ -4,7 +4,7 @@ description: Leer hoe u uw eigen samengestelde componenten maakt, componenten di
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
@@ -30,16 +30,16 @@ Dit artikel gebruikt de typische kaartcomponent als zijn geval van het voorbeeld
 De volgende modellen voor het steunen van de composietgebruiksgevallen vereisen de volgende eerste vereisten.
 
 * Uw AEM ontwikkelingsinstantie loopt plaatselijk op haven 4502 met een steekproefproject.
-* U hebt werkende externe Reactie app [ die voor het uitgeven in AEM wordt toegelaten.](editing-external-spa.md)
-* React app wordt geladen in de AEM redacteur [ gebruikend de component RemotePage.](remote-page.md)
+* U hebt werkende externe Reactie app [ die voor het uitgeven in AEM ](editing-external-spa.md) wordt toegelaten.
+* React app wordt geladen in de AEM redacteur [ gebruikend de component RemotePage ](remote-page.md).
 
 ## Samengestelde onderdelen toevoegen aan een SPA {#adding-composite-components}
 
 Er zijn drie verschillende modellen voor het uitvoeren van uw samengestelde component afhankelijk van uw SPA implementatie binnen AEM.
 
-* [De component bestaat niet in uw AEM project.](#component-does-not-exist)
-* [De component bestaat in uw AEM project maar de vereiste inhoud niet.](#content-does-not-exist)
-* [De component en zijn vereiste inhoud allebei bestaan in uw AEM project.](#both-exist)
+* [ de component bestaat niet in uw AEM project ](#component-does-not-exist).
+* [ de component bestaat in uw AEM project maar zijn vereiste inhoud niet ](#content-does-not-exist).
+* [ de component en zijn vereiste inhoud bestaan allebei in uw AEM project ](#both-exist).
 
 De volgende secties geven voorbeelden van het uitvoeren van elk geval gebruikend de kaartcomponent als voorbeeld.
 
@@ -134,7 +134,7 @@ In dit geval wordt de kaartcomponent al gemaakt in uw AEM project met titel- en 
 
 U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
 
-1. Maak hiervoor een overeenkomende component in de SPA. Zorg ervoor dat de kindcomponenten aan hun overeenkomstige AEM middeltypes binnen het SPA project in kaart worden gebracht. In dit voorbeeld gebruiken wij het zelfde `AEMText` en `AEMImage` componenten zoals gedetailleerd [ in het vorige geval.](#component-does-not-exist)
+1. Maak hiervoor een overeenkomende component in de SPA. Zorg ervoor dat de kindcomponenten aan hun overeenkomstige AEM middeltypes binnen het SPA project in kaart worden gebracht. In dit voorbeeld gebruiken wij het zelfde `AEMText` en `AEMImage` componenten zoals gedetailleerd [ in het vorige geval ](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ Als de inhoud in AEM bestaat, kan deze rechtstreeks in de SPA worden opgenomen d
 
 ![ Samengestelde weg in knoopstructuur ](assets/composite-path.png)
 
-De component `AEMCard` is het zelfde als bepaald [ in het vorige gebruiksgeval.](#content-does-not-exist) Hier wordt de inhoud die op de bovenstaande locatie in het AEM project is gedefinieerd, in de SPA opgenomen.
+De `AEMCard` component is het zelfde zoals bepaald [ in het vorige gebruiksgeval ](#content-does-not-exist). Hier is de inhoud die op de bovenstaande locatie in het AEM project is gedefinieerd, opgenomen in de SPA.

@@ -4,7 +4,7 @@ description: Inleiding tot de architectuur van Adobe Experience Manager as a Clo
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 7%
@@ -70,7 +70,7 @@ Er zijn vier soorten [ milieu ](/help/implementing/cloud-manager/manage-environm
 
 Een AEM programma kan met de [ Edge Delivery Services ](/help/edge/overview.md) eveneens worden gevormd.
 
-Zodra gevormd, kan AEM GitHub codeopslagplaatsen van verwijzingen voorzien die voor de bouw van de ervaringen met Edge Delivery Services worden gebruikt. Dientengevolge, worden de nieuwe configuratieopties beschikbaar voor de bijbehorende ervaringen. Deze omvatten vestiging Adobe-Beheerde CDN, en de toegang tot van vergunningsmetriek of SLA- rapporten.
+Zodra gevormd, kan AEM GitHub codeopslagplaatsen van verwijzingen voorzien die voor de bouw van de ervaringen met Edge Delivery Services worden gebruikt. Dientengevolge, worden de nieuwe configuratieopties beschikbaar voor de bijbehorende ervaringen. Deze omvatten vestiging Adobe-Beheerde CDN, en de toegang tot van vergunningsmetriek of de rapporten van SLA.
 
 ## Servicearchitectuur {#service-architecture}
 
@@ -87,7 +87,7 @@ Biedt een webinterface (met gekoppelde API&#39;s) voor het beheer van webinhoud.
 * De op documenten gebaseerde ontwerplaag:
 Hiermee kunt u inhoud schrijven met standaardtoepassingen, zoals:
    * Microsoft Word en Excel - via SharePoint
-   * Google Docs and Sheets - via Google Drive
+   * Google Docs en Sheets - via Google Drive
 
 Voor ervaringslevering, wanneer het gebruiken van AEM Sites of AEM Forms, zijn er ook twee belangrijkste reeksen diensten, niet wederzijds - exclusief en werkend onder een gedeelde Adobe-Beheerde CDN (het Netwerk van de Levering van de Inhoud) als verschillende oorsprong:
 
@@ -180,7 +180,7 @@ De code en de configuratie voor AEM projecten wordt opgeslagen in een codebewaar
    * Voor het opslaan van Java-code en OSGI-configuraties aan de serverzijde voor de AEM auteur en publicatielagen.
 * AEM voorzijde:
    * Voor het opslaan van client-side JS-, CSS- en HTML-code voor de AEM auteur- en publicatielagen.
-Voor meer details op clientlibs, zie [ Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Voor meer details op clientlibs, zie [ Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service ](/help/implementing/developing/introduction/clientlibs.md).
 * AEM weblaag:
    * Hiermee slaat u de configuratiebestanden van de verzender op voor de AEM publicatielijst.
 * AEM configuratie:

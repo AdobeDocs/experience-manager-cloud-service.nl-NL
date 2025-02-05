@@ -4,7 +4,7 @@ description: Leer de stappen voor het inschakelen van de volledige as a Cloud Se
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Leer de stappen die de volledige as a Cloud Service ervaring van AEM Screens op 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Toelating van de Demo&#39;s van de Verwijzing, [ creeerde de Plaats van de Demo van de Demo, ](create-site.md) u een demoplaats die op de malplaatjes van toe:voegen-op van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
+In het vorige document van de AEM Toelating van de Demo&#39;s van de Verwijzing, [ creeerde de Plaats van de Demo van de Demo ](create-site.md), u een demoplaats die op de malplaatjes van toe:voegen-op van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.
@@ -104,8 +104,8 @@ Nadat de wizard is voltooid, vindt u de inhoud die onder Sites is geïmplementee
 
 Nu we Web.Cafe-demo-inhoud hebben, hebt u een keuze over hoe u AEM Screens wilt testen:
 
-* Als u slechts de inhoud binnen de console van AEM Sites wilt onderzoeken, eenvoudig beginnen en meer in de [ Extra Bronnen ](#additional-resources) sectie te ontdekken en te ontdekken! er is geen actie meer nodig .
-* Als u de volledige dynamische eigenschappen van AEM Screens wilt ervaren, ga aan de volgende sectie, [ dynamisch de Inhoud van Screens van de Verandering.](#dynamically-change)
+* Als u slechts de inhoud binnen de console van AEM Sites wilt onderzoeken, eenvoudig beginnen en meer in de [ Extra Bronnen ](#additional-resources) sectie ontdekken; geen meer actie wordt vereist.
+* Als u de volledige dynamische eigenschappen van AEM Screens wilt ervaren, ga aan de volgende sectie verder, [ dynamisch de Inhoud van Screens van de Verandering ](#dynamically-change).
 
 ## Screens-inhoud dynamisch wijzigen {#dynamically-change}
 
@@ -390,7 +390,7 @@ Nu u dit deel van de AEM Invoegtoepassing van de Demo van de Verwijzing hebt vol
 * Begrijp de Web.Cafe demo-inhoud.
 * Weet hoe u AEM Screens for We.Cafe kunt configureren.
 
-U kunt nu de mogelijkheden van AEM Screens verkennen met uw eigen demo-sites. Ga aan de volgende sectie van de reis, [ leiden Uw Plaatsen van de Demo, ](manage.md) voort waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
+U kunt nu de mogelijkheden van AEM Screens verkennen met uw eigen demo-sites. Ga aan de volgende sectie van de reis, [ leiden Uw Plaatsen van de Demo ](manage.md) voort, waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
 
 U kunt enkele extra middelen ook controleren beschikbaar in de [ Extra sectie van Middelen ](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
 

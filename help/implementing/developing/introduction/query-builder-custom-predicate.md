@@ -4,7 +4,7 @@ description: De Bouwer van de Vraag in AEM biedt een gemakkelijke, klantgerichte
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Het groeperen van replicatiemagegevens predikt met een douane predikaat evaluato
 
 >[!TIP]
 >
->De opstelling van nieuwe AEM projecten met inbegrip van het gebruiken van maven wordt verklaard in detail door [ WKND leerprogramma.](develop-wknd-tutorial.md)
+>De opstelling van nieuwe AEM projecten met inbegrip van het gebruiken van maven wordt verklaard in detail door [ het WKND leerprogramma ](develop-wknd-tutorial.md).
 
 Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. `PredicateEvaluator` maakt deel uit van het `cq-search` -artefact, dus moet het worden toegevoegd aan het GMaven-pomabestand.
 

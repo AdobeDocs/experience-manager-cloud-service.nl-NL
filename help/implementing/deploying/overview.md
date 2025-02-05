@@ -4,7 +4,7 @@ description: Meer informatie over de basisbeginselen en de beste werkwijzen van 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
    * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [ het filevault documentatie van het Jasrabbit ](https://jackrabbit.apache.org/filevault/installhooks.html) over installeert haken. AEM CS gebruikt momenteel FileVault versie 3.4.0, die installatiekoppen beperkt tot beheerders, systeemgebruikers, en lid van de beheerdersgroep).
 
-U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details over geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details rond geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden gevonden.
 
 >[!NOTE]
 >Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. De inhoud die voor een milieu specifiek is vereist handinstallatie als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +121,7 @@ Er is ook geen mechanisme om wijzigingen in het veranderbare inhoudspakket terug
 
 Alle meegeleverde pakketten van derden moeten als compatibel met AEM as a Cloud Service worden gevalideerd, anders leidt de opname ervan tot een implementatiefout.
 
-Zoals hierboven vermeld, zouden de klanten met bestaande codebasis aan de bewaarplaats herstructureringsoefening nodig door de 6.5 veranderingen in bewaarplaats moeten in overeenstemming zijn die in [ worden beschreven AEM 6.5 documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening nodig door de 6.5 veranderingen in bewaarplaats moeten in overeenstemming zijn die in [ worden beschreven AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
 ## Opnieuw plaatsen {#repoinit}
 

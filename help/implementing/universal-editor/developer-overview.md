@@ -4,9 +4,9 @@ description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universel
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3179'
 ht-degree: 0%
 
 ---
@@ -33,17 +33,17 @@ Het doet dit door een standaardvoorbeeld te nemen dat de meeste AEM ontwikkelaar
 Om dit overzicht te volgen, hebt u het volgende beschikbaar nodig.
 
 * [ een lokale ontwikkelingsinstantie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * Uw lokale ontwikkelingsinstantie moet [ worden gevormd met HTTPS voor ontwikkelingsdoel op `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
-   * [ De WKND demoplaats moet worden geïnstalleerd.](https://github.com/adobe/aem-guides-wknd)
-* [Toegang tot de universele editor](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [ De lokale Universele dienst van de Redacteur ](/help/implementing/universal-editor/local-dev.md) die voor ontwikkelingsdoeleinden loopt
-   * Zorg ervoor om uw browser aan [ te leiden keurt de lokale diensten zelf-ondertekend certificaat goed.](/help/implementing/universal-editor/local-dev.md#editing)
+   * Uw lokale ontwikkelingsinstantie moet [ worden gevormd met HTTPS voor ontwikkelingsdoel op `localhost` ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
+   * [ De WKND demoplaats moet ](https://github.com/adobe/aem-guides-wknd) worden geïnstalleerd.
+* [ Toegang tot de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md#onboarding).
+* [ de lokale Universele dienst van de Redacteur van A ](/help/implementing/universal-editor/local-dev.md) lopend voor ontwikkelingsdoeleinden.
+   * Zorg ervoor om uw browser aan [ te leiden goedkeurt de lokale diensten zelf-ondertekend certificaat ](/help/implementing/universal-editor/local-dev.md#editing).
 
-Afgezien van de algemene kennis van webontwikkeling, gaat dit document uit van basiskennis van AEM ontwikkeling. Als u niet met AEM ontwikkeling wordt ervaren, overweeg het herzien van [ het leerprogramma WKND alvorens verder te gaan.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Afgezien van de algemene kennis van webontwikkeling, gaat dit document uit van basiskennis van AEM ontwikkeling. Als u niet met AEM ontwikkeling wordt ervaren, overweeg het herzien van [ het leerprogramma WKND alvorens ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) verder te gaan.
 
 ## AEM starten en aanmelden bij de Universal Editor {#sign-in}
 
-Als u niet reeds hebt, moet u uw lokale AEM ontwikkelingsinstantie hebben die met geïnstalleerde WKND en HTTPS loopt die als [ worden toegelaten in de eerste vereisten wordt gedetailleerd.](#prerequisites) In dit overzicht wordt ervan uitgegaan dat de instantie wordt uitgevoerd op `https://localhost:8443` .
+Als u niet reeds hebt, moet u uw lokale AEM ontwikkelingsinstantie hebben die met geïnstalleerde WKND en HTTPS loopt die als [ worden toegelaten in de eerste vereisten ](#prerequisites) wordt gedetailleerd. In dit overzicht wordt ervan uitgegaan dat de instantie wordt uitgevoerd op `https://localhost:8443` .
 
 1. Open de hoofdstramienpagina voor de WKND-Engelse taal in de AEM Editor.
 
@@ -189,7 +189,7 @@ U ziet waarschijnlijk echter dat u niet kunt communiceren met de pagina in de Un
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * De nieuwste versie van de bibliotheek wordt altijd aanbevolen. Als u een vroegere versie nodig hebt, te zien gelieve het document [ Begonnen Worden met de Universele Redacteur in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
+   * De nieuwste versie van de bibliotheek wordt altijd aanbevolen. Als u een vroegere versie nodig hebt, te zien gelieve het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#alternative).
 
 1. Voeg de vereiste metagegevens toe voor de verbinding met uw lokale Universal Editor-service aan het einde van het bestand.
 
@@ -572,21 +572,21 @@ Gefeliciteerd! Nu kunt u uw eigen AEM-apps gebruiken om met de Universal Editor 
 
 Wanneer u uw eigen app van instrumenten begint te voorzien, moet u rekening houden met de basisstappen die u in dit voorbeeld hebt uitgevoerd.
 
-1. [U stelt uw ontwikkelomgeving in.](#prerequisites)
+1. [ u opstelling uw ontwikkelomgeving ](#prerequisites).
    * AEM die lokaal wordt uitgevoerd op HTTPS terwijl WKND is geïnstalleerd
    * Universal Editor Service die lokaal wordt uitgevoerd op HTTPS
 1. U hebt AEM OSGi-instellingen bijgewerkt zodat de inhoud op afstand kan worden geladen.
    * [` org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
    * [` com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
-1. [U hebt de ](#ue-connect-remote-frame)
-1. [U hebt een verbinding gedefinieerd om de wijzigingen in het dialoogvenster ](#connection)
+1. [ u voegde de `universal-editor-embedded.js` bibliotheek aan het `customheaderlibs.html` dossier van de paginacomponent van app ](#ue-connect-remote-frame) toe.
+1. [ u bepaalde een verbinding om veranderingen in het `customheaderlibs.html` dossier van de paginacomponent van app ](#connection) voort te zetten.
    * U hebt een verbinding met de lokale AEM-ontwikkelingsinstantie gedefinieerd.
    * U hebt ook een verbinding met de lokale Universal Editor-service gedefinieerd.
-1. [U hebt de teaser-component van instrumenten voorzien.](#instrumenting-components)
-1. [U hebt de subcomponenten van het gummetje van instrumenten voorzien.](#subcomponents)
-1. [U hebt een aangepaste verificatieheader gedefinieerd zodat u wijzigingen kunt opslaan met uw lokale Universal Editor-service.](#auth-header)
-1. [U hebt de toepassing van instrumenten voorzien om het deelvenster Eigenschappen te gebruiken.](#properties-rail)
-1. [U hebt van instrumenten voorzien dat de component teaser het deelvenster Eigenschappen gebruikt.](#properties-rail-component)
+1. [ u van instrumenten de teaser component ](#instrumenting-components).
+1. [ u van instrumenten de subcomponenten van het meetapparaat ](#subcomponents).
+1. [ u bepaalde een kopbal van de douaneauthentificatie zodat kon u veranderingen bewaren gebruikend uw lokale Universele dienst van de Redacteur ](#auth-header).
+1. [ u van instrumenten de app om het eigenschappenpaneel ](#properties-rail) te gebruiken.
+1. [ u van instrumenten de lasercomponent om het eigenschappen paneel ](#properties-rail-component) te gebruiken.
 
 U kunt dezelfde stappen volgen om uw eigen app te gebruiken met de Universal Editor. Alle eigenschappen in het JCR kunnen worden weergegeven in de Universal Editor.
 

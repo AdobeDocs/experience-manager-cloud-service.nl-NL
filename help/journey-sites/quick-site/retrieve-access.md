@@ -5,7 +5,7 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen 
 
 Als u een front-end ontwikkelaar slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van hoe AEM opstelling was vereist en kan aan de [ Doelstelling ](#objective) sectie van dit document overslaan.
 
-Als u ook de rol van de beheerder van Cloud Manager of AEM en front-end ontwikkelaar dient, leerde u in het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Toegang van de Verlening tot de Voor-Eind Ontwikkelaar, ](grant-access.md) hoe te aan boord de front-end ontwikkelaar zodat hebben zij toegang tot de git bewaarplaats, en u zou nu moeten weten:
+Als u ook de rol van Cloud Manager of AEM beheerder en front-end ontwikkelaar dient, leerde u in het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Toegang van de Verlening tot de Voorste-Eind Ontwikkelaar ](grant-access.md), hoe te aan boord de front-end ontwikkelaar zodat hebben zij toegang tot de git bewaarplaats, en u zou nu moeten weten:
 
 * Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
@@ -114,10 +114,10 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Begrijp op een hoog niveau wat Cloud Manager is.
 * Uw referenties zijn opgehaald voor toegang tot de AEM, zodat u uw aanpassingen kunt doorvoeren.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken pas het Thema van de Plaats aan, ](customize-theme.md) waar u leert hoe het plaatsthema wordt gebouwd, hoe te aan te passen, en hoe te om het gebruiken van levende AEM inhoud te testen.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken aanpassen het Thema van de Plaats ](customize-theme.md) voort, waar u leert hoe het plaatsthema wordt gebouwd, hoe te, en hoe te om het gebruiken van levende AEM inhoud te testen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats, ](customize-theme.md) het volgende is sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats ](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ de Documentatie van Adobe Experience Manager Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.

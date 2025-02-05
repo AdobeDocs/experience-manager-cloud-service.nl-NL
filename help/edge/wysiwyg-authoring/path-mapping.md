@@ -4,7 +4,7 @@ description: Leer hoe u paginapaden die in de AEM ontwerpinstantie worden gebrui
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Als u WYSIWYG-inhoud wilt kunnen schrijven met AEM en publiceren naar Edge Deliv
 * Hiermee wordt een relatie toegewezen en gemaakt tussen paginapaden die worden gebruikt op uw AEM ontwerpinstantie en de openbare paginapaden die worden gebruikt op uw website.
 * Het bepaalt welke inhoud (pagina&#39;s, bladen, elementen, enz.) aan Edge Delivery Services wordt gepubliceerd.
 
-De padtoewijzing moet voor elk project afzonderlijk worden geconfigureerd en op basis van de inhoud en URL-structuur van het project. Het wordt gebruikt door AEM tijdens inhoud het publiceren en terwijl het uitgeven van inhoud in de [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+De padtoewijzing moet voor elk project afzonderlijk worden geconfigureerd en op basis van de inhoud en URL-structuur van het project. Het wordt gebruikt door AEM tijdens inhoud het publiceren en terwijl het uitgeven van inhoud in de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 ## Configuratie-indeling {#configuration-format}
 

@@ -4,7 +4,7 @@ description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientl
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Client-Side Libraries gebruiken op AEM as a Cloud Service {#using-client-side-libraries}
 
-Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [ front-end bouwt proces in het AEM archetype van het Project, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) het leiden van uw front-end code voor uw AEM project wordt eenvoudig.
+Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [ front-end bouwt proces in het AEM archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), wordt het beheren van uw front-end code voor uw AEM project eenvoudig.
 
 Tot de voordelen van het gebruik van clientlibs in AEM behoren:
 
@@ -27,7 +27,7 @@ Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript v
 
 >[!TIP]
 >
->De ontwikkelaars van het front-end die CSS en JavaScript voor AEM projecten creëren zouden zich met het [ AEM Archetype van het Project en zijn geautomatiseerd front-end bouwstijlproces ook moeten vertrouwd maken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>De ontwikkelaars van het front-end die CSS en JavaScript voor AEM projecten creëren zouden zich met het [ AEM Archetype van het Project en zijn geautomatiseerd front-end bouwstijlproces ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) ook moeten vertrouwd maken.
 
 ## Wat zijn clientbibliotheken? {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale
 
 ## Front-end ontwikkeling voor AEM as a Cloud Service {#fed-for-aemaacs}
 
-Alle JavaScript, CSS, en andere front-end activa zouden in de {[ moeten worden gehandhaafd ui.frontend module van het AEM Archetype van het Project.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Met de flexibiliteit van het archetype kunt u uw moderne webgereedschappen naar keuze gebruiken om deze bronnen te maken en te beheren.
+Alle JavaScript, CSS, en andere front-end activa zouden in de {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van de AEM. [ Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
 
 Het archetype kan de bronnen vervolgens compileren in één CSS- en JS-bestand en deze automatisch insluiten in een `cq:clientLibraryFolder` in de opslagplaats.
 
@@ -92,7 +92,7 @@ De clientbibliotheken onder `/apps` zijn alleen toegankelijk als er een proxyser
 1. Als u statische bronnen moet beheren, maakt u een submap met de naam `resources` onder de clientbibliotheekmap.
    * Als u statische bronnen ergens anders opslaat dan in de map `resources` , kan er niet naar worden verwezen op een publicatie-instantie.
 1. Bronbestanden toevoegen aan de bibliotheekmap.
-   * Dit wordt typisch gedaan door het front-end bouwstijlproces van [ AEM Archetype van het Project.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * Dit wordt typisch gedaan door het front-end bouwstijlproces van [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * U kunt bronbestanden desgewenst in submappen ordenen.
 1. Selecteer de omslag van de cliëntbibliotheek en klik **creëren > dossier** creëren.
 1. Typ in het vak Bestandsnaam een van de volgende bestandsnamen en klik op OK:
@@ -109,7 +109,7 @@ De clientbibliotheken onder `/apps` zijn alleen toegankelijk als er een proxyser
 
 ## Client-Side bibliotheken bedienen {#serving-clientlibs}
 
-Zodra uw omslag van de cliëntbibliotheek [ zoals vereist wordt gevormd, ](#creating-clientlib-folders) uw clientlibs kan via volmacht worden gevraagd. Als voorbeeld:
+Zodra uw omslag van de cliëntbibliotheek [ zoals vereist ](#creating-clientlib-folders) wordt gevormd, kunnen uw clientlibs via volmacht worden gevraagd. Als voorbeeld:
 
 * U hebt een clientlib in `/apps/myproject/clientlibs/foo`
 * U hebt een statische afbeelding in `/apps/myprojects/clientlibs/foo/resources/icon.png`
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## Client-bibliotheken op auteur versus Publish {#clientlibs-author-publish}
 
-De meeste clientlibs zijn vereist op de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs op publiceer instanties, [ front-end bouwt hulpmiddelen ](#fed-for-aemaacs) kan worden gebruikt en via [ de omslagen van de cliëntbibliotheek zoals hierboven beschreven worden opgesteld.](#creating-clientlib-folders)
+De meeste clientlibs zijn vereist op de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs op publiceer instanties, [ front-end bouwt hulpmiddelen ](#fed-for-aemaacs) kan worden gebruikt en via [ omslagen van de cliëntbibliotheek zoals hierboven beschreven ](#creating-clientlib-folders) worden opgesteld.
 
 Er zijn echter momenten waarop clientbibliotheken nodig kunnen zijn om de ontwerpervaring aan te passen. Als u bijvoorbeeld een dialoogvenster aanpast, moet u mogelijk kleine CSS- of JS-bits implementeren in de AEM ontwerpinstantie.
 

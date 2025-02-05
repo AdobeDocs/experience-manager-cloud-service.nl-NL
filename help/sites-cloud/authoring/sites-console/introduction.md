@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ Welke opties worden weergegeven, is afhankelijk van uw huidige console. Bijvoorb
 
 ![ Voorbeeld van de selecteur van het zijpaneel ](assets/sites-console-side-panel-selector.png)
 
-Voor meer informatie over het zijpaneel, te zien gelieve het document [ Zijpaneel van de Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Voor meer informatie over het zijpaneel, zie [ Zijpaneel van de Console van Plaatsen ](/help/sites-cloud/authoring/sites-console/console-side-panel.md).
 
 ### Broodkruimels {#breadcrumbs}
 
@@ -194,7 +194,7 @@ De mening van de lijst verstrekt informatie voor elk middel op het huidige nivea
 ![ mening van de Lijst ](assets/sites-console-list-view.png)
 
 * U kunt neer door de boom navigeren door te tikken/op de middelnaam en file te klikken door [ broodkruimels in de kopbal ](#the-header) te gebruiken.
-* Om alle punten in de lijst gemakkelijk te selecteren, gebruik [**Uitgezochte Al** checkbox in de toolbar.](#select-all)
+* Om alle punten in de lijst gemakkelijk te selecteren, gebruik [**Uitgezochte Al** checkbox in de toolbar ](#select-all).
 
 * Selecteer de kolommen die moeten worden getoond gebruikend **de optie van de Montages van de Mening** onder de knoop van Bekijken wordt gevestigd. De volgende kolommen zijn beschikbaar voor weergave:
 

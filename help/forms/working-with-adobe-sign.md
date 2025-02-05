@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
    * Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** . Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
 
-1. Selecteer **[!UICONTROL Create.]** Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL Adobe Sign] -velden toevoegen aan het formulier en het verzenden voor ondertekening.
+1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL Adobe Sign] -velden toevoegen aan het formulier en het verzenden voor ondertekening.
 
 #### [!DNL Adobe Sign] inschakelen voor een adaptief formulier {#editafsign}
 

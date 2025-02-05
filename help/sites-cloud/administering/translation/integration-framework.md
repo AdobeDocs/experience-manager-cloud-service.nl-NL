@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 0%
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 Het vertaalintegratiekader integreert met vertaaldiensten van derden om de vertaling van AEM inhoud te ordenen. Het gaat om drie basisstappen.
 
-1. [Maak verbinding met uw vertaalserviceprovider.](#connecting-to-a-translation-service-provider)
-1. [Creeer een configuratie van het Kader van de Integratie van de Vertaling.](#creating-a-translation-integration-configuration)
-1. [Koppel de cloudconfiguraties aan uw pagina&#39;s.](#configuring-pages-for-translation)
+1. [ verbind met uw leverancier van de vertaaldienst ](#connecting-to-a-translation-service-provider).
+1. [ creeer een configuratie van het Kader van de Integratie van de Vertaling ](#creating-a-translation-integration-configuration).
+1. [ associeer de wolkenconfiguraties met uw pagina&#39;s ](#configuring-pages-for-translation).
 
 Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](overview.md).
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die door uw inhoud van AEM Sites wordt geleid gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
+>Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ Nadat u een kader van de vertaalintegratie vormt, kunt u het [ associëren met d
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worden vertaald. Een vertaalconfiguratie maken:
 
-1. In het [ globale navigatiemenu, ](/help/sites-cloud/authoring/basic-handling.md#global-navigation) uitgezochte **Hulpmiddelen > Cloud Servicen &amp; Cloud Servicen van de Vertaling**.
+1. In het [ globale navigatiemenu ](/help/sites-cloud/authoring/basic-handling.md#global-navigation), uitgezochte **Hulpmiddelen > Cloud Servicen &amp; de Cloud Servicen van de Vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt creëren. Dit is vaak gebaseerd op een bepaalde site of kan globaal zijn.
 1. Verstrek de volgende informatie op de gebieden en selecteer dan **creëren**:
    1. Selecteer **Type van Configuratie** in drop-down.

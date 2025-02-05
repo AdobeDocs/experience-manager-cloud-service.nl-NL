@@ -5,7 +5,7 @@ exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -18,7 +18,7 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het toevoegen van tekstuele
 
 ## Lokaal bewerken {#in-place-editing}
 
-Het selecteren van een op tekst-gebaseerde component met één enkele klik om de [ componententoolbar te openbaren.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Het selecteren van een op tekst-gebaseerde component met één enkele klik om de [ componententoolbar ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) te openbaren.
 
 ![ de componententoolbar ](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

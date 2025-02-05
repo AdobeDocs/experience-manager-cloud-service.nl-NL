@@ -4,7 +4,7 @@ description: Predicate reference for the Query Builder API in AEM as a Cloud Ser
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Het ondersteunt geen facetextractie.
 
 ### hasPermission {#haspermission}
 
-Dit voorspel beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [ voorrechten JCR heeft.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Dit voorspelt beperkt het resultaat tot punten waar de huidige zitting de gespecificeerde [ voorrechten JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) heeft.
 
 Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 

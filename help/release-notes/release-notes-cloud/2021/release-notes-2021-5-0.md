@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2021.5.0 versie van  [!DNL Adobe Experien
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -35,7 +35,7 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 * [ API Verdringing ](/help/release-notes/deprecated-removed-features.md): een lijst van recentste verouderde APIs voor AEM as a Cloud Service is beschikbaar.
 
-* [ AEM as a Cloud Service SDK bouwt Analysator Maven Insteekmodule ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw beproefde projecten aan de recentste versie bij, die afgekeurde controle van Java API en andere verbeteringen omvat.
+* [ AEM as a Cloud Service SDK bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw beproefde projecten aan de recentste versie bij, die een verouderde controle van Java API en andere verbeteringen omvat.
 
 ## [!DNL Adobe Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -70,7 +70,7 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 #### Nieuwe functies in Dynamic Media {#what-is-new-dm}
 
-* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Voor meer informatie, zie [ Slimme beelden FAQs ](/help/assets/dynamic-media/imaging-faq.md) en [ optimalisering van het Beeld met volgende generatie beeldformaten WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Voor meer informatie, zie [ Slimme beelden FAQs ](/help/assets/dynamic-media/imaging-faq.md) en [ optimalisering van het Beeld met volgende generatie beeldformaten WebP en AVIF ](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Introductie van ondersteuning voor AVIF van de volgende generatie voor afbeeldingsindeling in Dynamic Media-levering (fmt URL-modifier).
 
 ## [!DNL Adobe Experience Manager Forms] als een [!DNL Cloud Service] {#forms}

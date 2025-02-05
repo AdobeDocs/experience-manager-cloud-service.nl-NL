@@ -5,7 +5,7 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Pad naar uw eerste ervaring met AEM zonder kop {#path-to-first-experience}
 
-In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) u zult de stappen begrijpen aan het uitvoeren van uw eerste headless ervaring in AEM met inbegrip van planningsoverwegingen en zult ook beste praktijken leren om uw weg zo vlot mogelijk te maken.
+In dit deel van de [ AEM Headless Reis van de Ontwikkelaar ](overview.md), zult u de stappen aan het uitvoeren van uw eerste headless ervaring in AEM met inbegrip van planningsoverwegingen begrijpen en zult ook beste praktijken leren om uw weg zo vlot mogelijk te maken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM hoofdloze reis, [ Begonnen het worden met AEM as a Cloud Service zonder hoofd ](getting-started.md) u de basistheorie van leerde wat een hoofd CMS is en u zou nu moeten:
+In het vorige document van de AEM hoofdloze reis, [ Begonnen het worden met AEM as a Cloud Service zonder hoofd ](getting-started.md) u de basistheorie van leerde wat een headless CMS is en u zou nu moeten:
 
 * Begrijp de grondbeginselen van AEM functies zonder kop.
 * Zorg dat u weet aan welke voorwaarden u moet voldoen om AEM functies zonder kop te kunnen gebruiken.
@@ -71,13 +71,13 @@ Tijdens de ontwikkelingsfase wordt u aangeraden met een ontwikkelings- en testom
 
 ### Samenwerking tussen ontwikkelaars en makers van inhoud {#cooperation}
 
-Ontwikkelaars hebben een AEM ontwikkelomgeving nodig die is ingesteld met de populaire inhoudsmodellen. De ontwikkelaar ontwikkelt de client die inhoud vanuit AEM headless zal verbruiken terwijl de makers van de inhoud de inhoud nog steeds maken. Daarom zijn de API-definities heel belangrijk. Door de AEM SDK te gebruiken, kan de ontwikkelaar een testhaak tot stand brengen zodat de cliënt en de eenheidstests kunnen worden gecreeerd om ervoor te zorgen de cliënt de inhoud behoorlijk kan teruggeven.
+Ontwikkelaars hebben een AEM ontwikkelomgeving nodig die is ingesteld met de populaire inhoudsmodellen. De ontwikkelaar ontwikkelt de client die inhoud vanuit AEM headless zal verbruiken terwijl de makers van de inhoud de inhoud nog steeds maken. Daarom zijn de API-definities heel belangrijk. Door AEM SDK te gebruiken, kan de ontwikkelaar een testhaak tot stand brengen zodat de cliënt en de eenheidstests kunnen worden gecreeerd om ervoor te zorgen de cliënt de inhoud behoorlijk kan teruggeven.
 
 Inhoudsauteurs maken inhoud op basis van de inhoudsmodellen die zijn gedefinieerd in de testomgeving. Met het ontwerpgereedschap voor inhoudsfragmenten zou de auteur een inhoudsfragment maken of een bestaand inhoudsfragment bewerken. Alvorens het te publiceren, kan de auteur voorproef hoe het in de cliënt door met de ontwikkelaar te werken om het inhoudsmodel op ontwikkeling te duwen of opstelling een ontwikkelaarmilieu enkel voor auteurs aan voorproef hoe het in de cliënt zou kijken.
 
 ## Instellen {#setup}
 
-Voordat u aan de slag gaat met headless in AEM, moet u ervoor zorgen dat alle vereiste functies zijn ingeschakeld. In deze sectie wordt beschreven wat er nodig is. De daadwerkelijke stappen om deze stappen te vervullen zijn gedetailleerd later in de [ AEM Headless Reis van de Ontwikkelaar.](#overview.md)
+Voordat u aan de slag gaat met headless in AEM, moet u ervoor zorgen dat alle vereiste functies zijn ingeschakeld. In deze sectie wordt beschreven wat er nodig is. De daadwerkelijke stappen om deze stappen te vervullen zijn gedetailleerd later in de [ AEM Zwaardeloze Reis van de Ontwikkelaar ](#overview.md).
 
 U kunt naar keuze [ extra middelen ](#additional-resources) voor meer informatie over de individuele onderwerpen ook zien.
 
@@ -85,7 +85,7 @@ U kunt naar keuze [ extra middelen ](#additional-resources) voor meer informatie
 
 1. Inhoudsfragmenten inschakelen
 1. GraphQL inschakelen
-1. De Headless SDK instellen
+1. De SDK zonder koppen instellen
 
 ## Uw eerste AEM headless-app implementeren
 
@@ -143,7 +143,7 @@ Wat uw het leren stijl ook moge zijn, de Adobe wil dat u slaagt als u aan de sla
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [ te herzien hoe te Model Uw Inhoud als Modellen van de Inhoud, ](model-your-content.md) het volgende is enkele extra, facultatieve middelen die een diepere duik op sommige die concepten uitvoeren in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [ te herzien hoe te Model Uw Inhoud als Modellen van de Inhoud AEM ](model-your-content.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * [ AEM Headless Vertaalreis ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 * [ Zwaarloze Ontwikkeling voor AEM Sites as a Cloud Service ](/help/headless/introduction.md) - een snelle inleiding om de ontwikkelaar van de Zwaarteloze AEM met de noodzakelijke eigenschappen te richten

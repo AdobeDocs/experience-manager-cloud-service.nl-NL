@@ -4,7 +4,7 @@ description: Als u veel vergelijkbare sites hebt die er meestal hetzelfde uitzie
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Standaard is AEM nauw gebonden aan uw gegevensopslagruimte, die voldoet aan de m
 
 Eerder dan het creëren van veelvoudige bewaarplaatsen GitHub en het runnen van elke plaats van een specifieke bewaarplaats GitHub terwijl het houden van hen in synchronisatie, AEM steunt het runnen van veelvoudige plaatsen van de zelfde codebase.
 
-Deze vereenvoudigde opstelling, die de behoefte aan codereplicatie elimineert is ook genoemd geworden [ &quot;repoless&quot;, ](https://www.aem.live/docs/repoless) omdat allen behalve uw eerste plaats geen bewaarplaats GitHub van hun nodig heeft.
+Deze vereenvoudigde opstelling, die de behoefte aan codereplicatie elimineert is ook genoemd geworden [ &quot;repoless&quot;](https://www.aem.live/docs/repoless), omdat al behalve uw eerste plaats geen bewaarplaats GitHub van hun nodig heeft.
 
 Als voor uw project de onherroepelijke flexibiliteit van hergebruik van code op verschillende sites nodig is, kunt u de functie activeren.
 
@@ -31,7 +31,7 @@ Ongeacht het aantal sites dat u uiteindelijk zonder problemen wilt maken, moet u
 
 Als u van deze functie wilt profiteren, moet u het volgende doen.
 
-* Uw plaats is reeds volledig opstelling door het document [ Begonnen Gids van de Ontwikkelaar te volgen Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Uw plaats is reeds volledig opstelling door de document [ Begonnen Gids van de Ontwikkelaar te volgen Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * U gebruikt minimaal AEM as a Cloud Service 2024.08.
 
 U zult ook Adobe moeten vragen om de volgende punten voor u te vormen. Ga via uw Slack-kanaal uit of stel een supportprobleem aan om Adobe aan te vragen om deze wijzigingen aan te brengen:
@@ -70,7 +70,7 @@ Zodra u uw toegangstoken hebt, kan het in de kopbal van cURL- verzoeken in het v
 
 U moet een siteconfiguratie maken en deze toevoegen aan uw padtoewijzing.
 
-1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het [**malplaatje van de Configuratie**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het **malplaatje van de Configuratie[** ](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * U kunt de configuratie leeg laten met alleen de vooraf gedefinieerde kolommen `key` en `value` . U hoeft deze alleen te maken.
 1. Creeer een afbeelding in de openbare configuratie aan de plaatsconfiguratie gebruikend een cURL bevel gelijkend op het volgende.
 

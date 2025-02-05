@@ -4,7 +4,7 @@ description: Maak een demosite in AEM op basis van een bibliotheek met vooraf ge
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Toelating van de Demos van de Verwijzing, [ creeer Programma, ](create-program.md) u de eerste configuratiestap nam om een programma voor het testen doeleinden tot stand te brengen en gebruikte een pijpleiding om de toe:voegen-op inhoud op te stellen. Nu moet u:
+In het vorige document van de AEM Toelating van de Demos van de Verwijzing, [ creeer Programma ](create-program.md), nam u de eerste configuratiestap om een programma voor het testen doeleinden tot stand te brengen en gebruikte een pijpleiding om de toe:voegen-op inhoud op te stellen. Nu moet u:
 
 * Begrijp hoe u Cloud Manager kunt gebruiken om een programma te maken.
 * Zorg dat u weet hoe u de Add-on Reference Demos voor het nieuwe programma activeert.
@@ -105,8 +105,8 @@ Nu u dit deel van de AEM Toelage van de Demo van de Verwijzing hebt voltooid zou
 
 U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw reis voort te zetten:
 
-* Als u de inhoud van AEM Screens volledig wilt demo en testen, zorg ervoor dat u een plaats hebt opgesteld die op het **wordt gebaseerd Web.Cafe Sjabloon van de Plaats** zoals eerder beschreven en [ AEM Screens voor Uw Plaats van de Demo blijft toelaten.](screens.md)
-* Als u slechts met om de inhoud van Plaatsen te demonstreren, [ Uw Plaatsen van de Demo, ](manage.md) blijft beheren waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
+* Als u de inhoud van AEM Screens volledig wilt demo en testen, zorg ervoor dat u een plaats hebt opgesteld die op het **wordt gebaseerd Web.Cafe Sjabloon van de Plaats** zoals eerder beschreven en [ AEM Screens voor Uw Plaats van de Demo ](screens.md) blijft toelaten.
+* Als u slechts met om de inhoud van Plaatsen te demonstreren, [ Uw Plaatsen van de Demo ](manage.md) blijft beheren, waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
 
 ## Aanvullende bronnen {#additional-resources}
 

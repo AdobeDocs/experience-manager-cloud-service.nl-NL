@@ -5,7 +5,7 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Ook, wanneer het ontwerpen van een taxonomie, is het belangrijk om te overwegen 
 
 ### Zoekopdrachten in componenten {#queries-in-components}
 
-Aangezien de vragen één van de meer het belasten verrichtingen op een AEM systeem kunnen zijn, is het een goed idee om hen in uw componenten te vermijden. Als u meerdere query&#39;s hebt uitgevoerd telkens wanneer een pagina wordt gerenderd, kan dit vaak de prestaties van het systeem nadelig beïnvloeden. Er zijn twee strategieën die kunnen worden gebruikt om het uitvoeren van vragen te vermijden wanneer het teruggeven van componenten: **[het oversteken van knopen](#traversing-nodes)** en **[het prefetching resultaten.](#prefetching-results)**
+Aangezien de vragen één van de meer het belasten verrichtingen op een AEM systeem kunnen zijn, is het een goed idee om hen in uw componenten te vermijden. Als u meerdere query&#39;s hebt uitgevoerd telkens wanneer een pagina wordt gerenderd, kan dit vaak de prestaties van het systeem nadelig beïnvloeden. Er zijn twee strategieën die kunnen worden gebruikt om het uitvoeren van vragen te vermijden wanneer het teruggeven van componenten: **[het oversteken van knopen](#traversing-nodes)** en **[het prefetching resultaten](#prefetching-results)**.
 
 ### Doorlopende knooppunten {#traversing-nodes}
 
@@ -62,14 +62,14 @@ Een vergelijkbare strategie kan worden gebruikt om het resultaat in een cache in
 
 ## Zoekopdrachten optimaliseren {#optimizing-queries}
 
-De documentatie van Oak verstrekt a [ overzicht op hoog niveau hoe de vragen worden uitgevoerd.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) Dit vormt de basis voor alle optimalisatieactiviteiten die in dit document worden beschreven.
+De documentatie van Oak verstrekt a [ overzicht op hoog niveau hoe de vragen ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) worden uitgevoerd. Dit vormt de basis van alle optimalisatieactiviteiten die in dit document worden beschreven.
 
 AEM as a Cloud Service verstrekt het [ Hulpmiddel van de Prestaties van de Vraag ](#query-performance-tool), dat wordt ontworpen om het uitvoeren van efficiënte vragen te steunen.
 
 * Het toont reeds uitgevoerde vragen met hun relevante prestatieskenmerken en het vraagplan.
 * Het staat het uitvoeren van ad hoc vragen op diverse niveaus toe, die van enkel het tonen van het vraagplan tot het uitvoeren van de volledige vraag beginnen.
 
-Het hulpmiddel van de Prestaties van de Vraag is bereikbaar via [ Developer Console in Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) Het AEM as a Cloud Service-hulpprogramma voor zoekprestaties biedt meer informatie over de details van de uitvoering van de query in de versie AEM 6.x.
+Het hulpmiddel van de Prestaties van de Vraag is bereikbaar via [ Developer Console in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries). Het Hulpmiddel van de Prestaties van de Vraag van AEM as a Cloud Service levert meer informatie over de details van de vraaguitvoering over de AEM 6.x versie.
 
 Dit diagram illustreert de algemene stroom om het Hulpmiddel van de Prestaties van de Vraag te gebruiken om vragen te optimaliseren.
 

@@ -4,7 +4,7 @@ description: Leer over de belangrijkste gebruiksgevallen van de Universele Redac
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -69,7 +69,7 @@ De Universal Editor werkt als volgt.
 1. De auteur van de inhoud bewerkt de pagina-inhoud in een intuïtieve WYSIWYG-interface en bewerkt deze op locatie.
 1. De Universal Editor houdt de wijzigingen automatisch opnieuw in op de gegevensbron.
 
-Als u meer over de architectuur van de Universele Redacteur zou willen leren, gelieve de document [ Universele Architectuur van de Redacteur te zien.](/help/implementing/universal-editor/architecture.md)
+Als u meer over de architectuur van de Universele Redacteur zou willen leren, te zien gelieve het document [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md).
 
 ## Universal Editor Concepts {#concepts}
 

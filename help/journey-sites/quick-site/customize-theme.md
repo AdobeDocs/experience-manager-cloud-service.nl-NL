@@ -5,7 +5,7 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe het thema van de site is opgebouwd, hoe u het kunt aanpassen en hoe u l
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Verwezenlijking van de Plaats, [ wint de Informatie van de Toegang van de Toegang van de Bewaarplaats van de it, ](retrieve-access.md) u leerde hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot informatie van de gokbewaarplaats toegang te hebben, en u zou nu moeten:
+In het vorige document van de AEM Snelle reis van de Verwezenlijking van de Plaats, [ wint de Informatie van de Toegang van de Toegang van de Bewaarplaats van de it ](retrieve-access.md) terug, leerde u hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot informatie van de gokbewaarplaats toegang te hebben, en u zou nu moeten:
 
 * Begrijp op een hoog niveau wat Cloud Manager is.
 * Uw referenties zijn opgehaald voor toegang tot de AEM, zodat u uw aanpassingen kunt doorvoeren.
@@ -111,7 +111,7 @@ U kunt doorgaan met het aanpassen van het thema op basis van de vereisten die de
 Zodra uw aanpassingen volledig zijn, kunt u hen aan de AEM git bewaarplaats begaan. Eerst moet u de repository klonen op uw lokale computer.
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de repo wilt klonen.
-1. Voer het bevel uit u [ eerder van Cloud Manager teruggewonnen.](retrieve-access.md) Deze zou vergelijkbaar moeten zijn met `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` . Gebruik de naam en het wachtwoord van de gokgebruiker die [ u in het vorige deel van deze reis terugwon.](retrieve-access.md)
+1. Voer het bevel uit u [ eerder van Cloud Manager ](retrieve-access.md) wordt teruggewonnen. Deze zou vergelijkbaar moeten zijn met `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` . Gebruik de gebruikersnaam en het wachtwoord van de git die [ u in het vorige deel van deze reis ](retrieve-access.md) terugwint.
 
    ![ Kloonrepo ](assets/clone-repo.png)
 
@@ -138,11 +138,11 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Zie hoe u themaaanpassingen kunt testen met echte AEM inhoud via lokale proxy.
 * Weet hoe u uw wijzigingen in de AEM-git-opslagplaats kunt doorvoeren.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken opstellen Uw Aangepast Thema, ](deploy-theme.md) voort waar u leert hoe te om het thema op te stellen gebruikend de front-end pijpleiding.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken opstellen Uw Aangepast Thema ](deploy-theme.md) voort, waar u leert hoe te om het thema op te stellen gebruikend de front-end pijpleiding.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien uw Aangepast Thema opstelt, ](deploy-theme.md) het volgende zijn sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien uw Aangepast Thema ](deploy-theme.md) opstelt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ AEM het Thema van de Plaats ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - dit is de bewaarplaats GitHub van het Thema van de Plaats van de AEM.
 * [ npm ](https://www.npmjs.com) - AEM thema&#39;s worden gebruikt om plaatsen snel te bouwen zijn gebaseerd op npm die.

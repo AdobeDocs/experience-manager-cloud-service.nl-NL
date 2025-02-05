@@ -4,7 +4,7 @@ description: Leer over de verschillende soorten vraag die door de Universele Red
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -150,7 +150,7 @@ Er treedt een `add` -aanroep op wanneer u een nieuwe component in uw app plaatst
 
 De lading ervan bevat een `path` -object dat de locatie bevat waar de inhoud moet worden toegevoegd.
 
-Het omvat ook een `content` voorwerp met extra voorwerpen voor eindpunt-specifieke details van de inhoud die [ voor elke stop moet worden opgeslagen.](/help/implementing/universal-editor/architecture.md) Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
+Het omvat ook een `content` voorwerp met extra voorwerpen voor eindpunt-specifieke details van de inhoud die [ voor elke stop ](/help/implementing/universal-editor/architecture.md) moet worden opgeslagen. Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
 
 >[!BEGINTABS]
 

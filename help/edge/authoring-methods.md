@@ -3,13 +3,13 @@ title: Een ontwerpmethode kiezen
 description: Leer belangrijke overwegingen wanneer het beslissen over hoe u uw inhoud in AEM creeert om u te helpen de beste beslissing voor uw inhoudsauteurs nemen.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 15eef2d3790d1c0cf5414ca55b191de5b644fed0
+exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
 
 ---
-
 
 # Een ontwerpmethode kiezen {#authoring-methods}
 
@@ -17,7 +17,7 @@ Leer belangrijke overwegingen wanneer het beslissen over hoe u uw inhoud in AEM 
 
 ## Overzicht van overwegingen {#overview}
 
-AEM flexibiliteit zorgt ervoor dat aan uw ontwerpbehoeften wordt voldaan ongeacht of u op document-gebaseerde creatie of WYSIWYG creatie kiest. Houd rekening met de volgende feiten wanneer u met uw overwegingen begint.
+AEM flexibiliteit zorgt ervoor dat aan uw ontwerpbehoeften wordt voldaan, ongeacht of u op documenten gebaseerde ontwerpfuncties of WYSIWYG-ontwerpfuncties kiest. Houd rekening met de volgende feiten wanneer u met uw overwegingen begint.
 
 * **impliceert altijd uw inhoudsauteurs in het besluit.** - Uw makers van inhoud zijn uw experts en hun inzicht is van essentieel belang.
 * **de veelvoudige auteursmethodes kunnen worden uitgevoerd.** - Hoewel de Adobe aanbeveelt eenvoudig te beginnen en zo vaak als nodig is een laag te maken op basis van complexiteit, kunnen meerdere ontwerpmethoden in één project samenwerken.
@@ -53,8 +53,8 @@ Uw eerste overweging zou moeten zijn hoe u uw inhoud wilt leveren. Edge Delivery
 
 Dit kan u helpen beslissen als u nodig hebt:
 
-* [ AEM als hoofdCMS ](/help/headless/introduction.md) gebruikend de Redacteur van het Fragment van de Inhoud en/of Universele Redacteur.
-* AEM Edge Delivery Services die [ op document-gebaseerde het uitgeven ](/help/edge/docs/authoring.md) gebruiken of [ WYSIWYG authoring met de Universele Redacteur.](/help/edge/wysiwyg-authoring/authoring.md)
+* [ AEM als koploze CMS ](/help/headless/introduction.md) gebruikend de Redacteur van het Fragment van de Inhoud en/of Universele Redacteur.
+* AEM Edge Delivery Services die [ op document-gebaseerde het uitgeven ](/help/edge/docs/authoring.md) gebruiken of [ WYSIWYG authoring met de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Voorkeuren voor Inhoud ontwerpen {#content-authoring}
 
@@ -64,8 +64,8 @@ Hierna moet u bedenken hoe u de inhoud wilt ontwerpen. De volgende beslisboom ka
 
 Dit kan u helpen beslissen als u nodig hebt:
 
-* AEM Edge Delivery Services gebruikend het [ op document-gebaseerde uitgeven.](/help/edge/docs/authoring.md)
-* [WYSIWYG-authoring met de Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services die [ op document-gebaseerde het uitgeven ](/help/edge/docs/authoring.md) gebruiken.
+* [ WYSIWYG authoring met de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Projectdoelen {#project-goals}
 
@@ -73,7 +73,7 @@ Hoe ziet het succes van authoring eruit? Hoe definieert u succes voor uw project
 
 * Misschien moet u meer mensen toestaan om inhoud te creëren, maar wilt opleiding over een nieuwe hulpmiddelreeks vermijden. (Denk aan op documenten gebaseerde authoring.)
 * Misschien moet u de hoeveelheid inhoud verhogen die u genereert. (Denk aan op documenten gebaseerde authoring.)
-* Misschien moet u zich richten op visuele inhoudslay-out, maar minimaliseert u de behoefte aan coderingskennis. (Denk aan WYSIWYG-authoring.)
+* Misschien moet u zich richten op visuele inhoudslay-out, maar minimaliseert u de behoefte aan coderingskennis. (Denk aan WYSIWYG authoring.)
 
 Duidelijk verklaarde projectdoelstellingen bij het begin van uw implementatie zullen u helpen een weloverwogen besluit over uw auteursmethode nemen.
 
@@ -83,4 +83,4 @@ Overweeg ten slotte de specifieke uitdagingen waarmee u vandaag wordt geconfront
 
 * Mogelijk wordt u geconfronteerd met dubbel werk met inhoud die buiten uw CMS is gemaakt en die vervolgens moet worden geïmporteerd of gekopieerd en geplakt. (Denk aan op documenten gebaseerde authoring.)
 * Misschien moet u de tijd verkorten die de trainingsauteurs nodig hebben om een CMS te gebruiken. (Denk aan op documenten gebaseerde authoring.)
-* Misschien moeten uw auteurs vaak de visuele lay-out van uw inhoud bewerken, waarvoor constante ondersteuning voor ontwikkelaars nodig is. (Denk aan WYSIWYG-authoring.)
+* Misschien moeten uw auteurs vaak de visuele lay-out van uw inhoud bewerken, waarvoor constante ondersteuning voor ontwikkelaars nodig is. (Denk aan WYSIWYG authoring.)

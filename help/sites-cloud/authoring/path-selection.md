@@ -5,7 +5,7 @@ exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 3%
@@ -18,7 +18,7 @@ Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbe
 
 ## Padvelden {#path-fields}
 
-Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten zie [ Componenten voor het Authoring van de Pagina.](/help/sites-cloud/authoring/page-editor/components.md)
+Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten zie [ Componenten voor de Authoring van de Pagina ](/help/sites-cloud/authoring/page-editor/components.md).
 
 De gebieden van de weg hebben auto-volledige en vooruitblik functionaliteit om het vinden van een middel gemakkelijker te maken.
 
@@ -32,7 +32,7 @@ U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden t
 
 ## Padbrowser {#path-browser}
 
-De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**console van Plaatsen**, ](/help/sites-cloud/authoring/sites-console/introduction.md) die voor meer gedetailleerde selectie van middelen toestaat.
+De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**3} console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), die voor meer gedetailleerde selectie van middelen toestaat.**
 
 ![ Browser van de Weg ](/help/sites-cloud/authoring/assets/path-browser.png)
 

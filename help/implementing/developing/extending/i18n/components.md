@@ -5,7 +5,8 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Internationaliseer uw componenten en dialogen zodat hun koorden UI in verschille
 
 Gebruik het volgende proces om uw componenten te internationaliseren en de gebruikersinterface in verschillende talen te bieden:
 
-1. [ voer uw componenten uit gebruikend code die koorden internationaliseert.](/help/implementing/developing/extending/i18n/dev.md) De code identificeert de tekenreeksen die moeten worden vertaald en selecteert de taal die moet worden weergegeven bij uitvoering.
+1. [ voert uw componenten uit gebruikend code die koorden ](/help/implementing/developing/extending/i18n/dev.md) internationaliseert. Uw code identificeert de tekenreeksen die moeten worden vertaald en selecteert de taal die bij uitvoering moet worden weergegeven.
 1. Maak woordenboeken en voeg de Engelse tekenreeksen toe die u wilt vertalen.
 1. Exporteer het woordenboek naar de XLIFF-indeling, vertaal de tekenreeksen en importeer de XLIFF-bestanden weer in AEM.
 1. Neem het woordenboek op in het releasebeheerproces van uw toepassing.

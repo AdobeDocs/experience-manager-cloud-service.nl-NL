@@ -4,9 +4,9 @@ description: Leer hoe u uw AEM as a Cloud Service-inhoud kunt herstellen vanaf e
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In beide gevallen blijven de versie van de aangepaste code en de AEM ongewijzigd
 
 >[!TIP]
 >
->Het is ook mogelijk om steunen [ te herstellen gebruikend openbare API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>Het is ook mogelijk om steunen [ te herstellen gebruikend openbare API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ In beide gevallen blijven de versie van de aangepaste code en de AEM ongewijzigd
 
 Overweeg deze opties om de inhoud eenvoudiger te herstellen voordat u de inhoud volledig herstelt.
 
-* Als een pakket voor de geschrapte weg beschikbaar is, installeer opnieuw het pakket gebruikend de [ Manager van het Pakket.](/help/implementing/developing/tools/package-manager.md)
-* Als de geschrapte weg een pagina in Plaatsen was, gebruik de [ functie van de Boom herstellen.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Als de geschrapte weg een activa omslag was en de originele dossiers beschikbaar zijn, herupload hen via [ de console van Assets.](/help/assets/add-assets.md)
-* Als de schrappingsinhoud activa was, overweeg [ terugstellend vorige versies van de activa.](/help/assets/manage-digital-assets.md)
+* Als een pakket voor de geschrapte weg beschikbaar is, installeer opnieuw het pakket gebruikend de [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md).
+* Als de geschrapte weg een pagina in Plaatsen was, gebruik [ herstellen de functie van de Boom ](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Als de geschrapte weg een activa omslag was en de originele dossiers beschikbaar zijn, herupload hen via [ de console van Assets ](/help/assets/add-assets.md).
+* Als de schrappingsinhoud activa was, overweeg [ terugstellend vorige versies van de activa ](/help/assets/manage-digital-assets.md).
 
 Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad significant is, voert u een inhoudsherstel uit zoals in de volgende secties wordt beschreven.
 
@@ -93,7 +93,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
    ![ beschikbare Steunen ](assets/backup-available.png)
 
-1. Vind de steun u wilt herstellen door het informatiepictogram te gebruiken om informatie betreffende de versie van de code en AEM versie inbegrepen in die steun te bekijken en de implicaties van te overwegen herstelt wanneer [ de steun kiest.](#choosing-the-right-backup)
+1. Vind de steun u wilt herstellen door het informatiepictogram te gebruiken om informatie betreffende de versie van de code en AEM versie inbegrepen in die steun te bekijken en de implicaties van te overwegen herstellen wanneer [ de steun ](#choosing-the-right-backup) kiest.
 
    ![ Steun info ](assets/backup-info.png)
 

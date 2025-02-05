@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebr
 
 >[!NOTE]
 >
->In dit document wordt ervan uitgegaan dat u al vertrouwd bent met de toegang tot en navigatie in de Universal Editor. Als u niet bent, te zien gelieve het document [ dat tot de Universele Redacteur toegang heeft en navigeert.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+>In dit document wordt ervan uitgegaan dat u al vertrouwd bent met de toegang tot en navigatie in de Universal Editor. Als u niet bent, zie [ Toegang tot en het Navigeren van de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 >[!TIP]
 >
->Voor een meer gedetailleerde inleiding aan de Universele Redacteur, zie het document [ Universele Inleiding van de Redacteur.](/help/implementing/universal-editor/introduction.md)
+>Voor een meer gedetailleerde inleiding aan de Universele Redacteur, zie [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md).
 
 ## Inhoud bewerken {#editing-content}
 
@@ -39,9 +39,9 @@ Inhoud bewerken is eenvoudig en intuïtief. Terwijl u de muis over de inhoud in 
 
 >[!TIP]
 >
->Door gebrek, selecteert het tikken of het klikken op inhoud het voor het uitgeven. Als u uw inhoud door verbindingen wilt navigeren, schakelaar aan [ voorproefwijze.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+>Door gebrek, selecteert het tikken of het klikken op inhoud het voor het uitgeven. Als u uw inhoud door verbindingen wilt navigeren, schakelaar aan [ voorproefwijze ](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
-Afhankelijk van de inhoud u selecteert, kunt u verschillende op zijn plaats het uitgeven opties hebben en u kunt extra informatie en opties voor de inhoud in het [ eigenschappen paneel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Afhankelijk van de inhoud u selecteert, kunt u verschillende op zijn plaats het uitgeven opties hebben en u kunt extra informatie en opties voor de inhoud in het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ### Onbewerkte tekst bewerken {#edit-plain-text}
 
@@ -51,7 +51,7 @@ U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of
 
 De dunne blauwe omtrek wordt omgezet in een zware blauwe omtrek om de selectie aan te geven en er wordt een cursor weergegeven. Breng de wijzigingen aan en druk vervolgens op Enter/Return of selecteer buiten het tekstvak om de wijzigingen op te slaan.
 
-Wanneer u selecteert om de tekstcomponent te selecteren, worden zijn details getoond in het [ eigenschappen paneel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) U kunt de tekst in het deelvenster ook bewerken.
+Wanneer u selecteert om de tekstcomponent te selecteren, worden zijn details getoond in het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). U kunt de tekst in het deelvenster ook bewerken.
 
 ![ het Uitgeven tekst in het eigenschappen paneel ](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ Tik of klik **annuleer** of **Gedaan** om de veranderingen, respectievelijk te v
 
 ### Media bewerken {#edit-media}
 
-U kunt zijn details in het [ eigenschappen paneel bekijken.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+U kunt zijn details in het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) bekijken.
 
 ![ het Uitgeven media ](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ Wijzigingen worden automatisch in de inhoud opgeslagen.
 
 ### Inhoudsfragmenten bewerken {#edit-content-fragment}
 
-Als u a [ het Fragment van de Inhoud selecteert, ](/help/sites-cloud/administering/content-fragments/overview.md) kunt u zijn details in het [ eigenschappen paneel uitgeven.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Als u a [ het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) selecteert, kunt u zijn details in het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) uitgeven.
 
 ![ Uitgevend een Fragment van de Inhoud ](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ De geselecteerde component is verwijderd.
 
 ### Componenten opnieuw ordenen in containers {#reordering-components}
 
-1. Als niet reeds op [ wijze van de inhoudsboom, ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) schakelaar aan het.
+1. Als niet reeds op [ wijze van de inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), schakelaar aan het.
 1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
 1. Selecteer het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
 1. De greeppictogrammen van de belemmering naast de componenten binnen de container tonen dat u hen kunt herschikken. Sleep de componenten om deze binnen de container opnieuw te ordenen.
@@ -182,7 +182,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren om te zien hoe de inhoud er op andere pagina&#39;s uitziet. Op [ voorproefwijze ](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) kunt u verbindingen klikken om uw inhoud te navigeren zoals een lezer. De inhoud wordt in de editor gerenderd zoals deze zou worden gepubliceerd.
 
-In de voorvertoningsmodus reageert de gebruiker op de inhoud door erop te tikken of erop te klikken, net als bij een lezer van de inhoud. Als u de inhoud voor het uitgeven wilt selecteren, knevel uit [ voorproefwijze.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+In de voorvertoningsmodus reageert de gebruiker op de inhoud door erop te tikken of erop te klikken, net als bij een lezer van de inhoud. Als u de inhoud voor het uitgeven wilt selecteren, knevel uit [ voorproefwijze ](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -204,4 +204,4 @@ Overerving is het mechanisme waarbij inhoud kan worden gekoppeld, zodat het ene 
 
 Met de Universal Editor kunt u overerving voor inhoud annuleren door de inhoud eenvoudig bij te werken. De redacteur maakt automatisch overerving voor alle veranderingen onbruikbaar die door auteurs op die pagina worden aangebracht, ervoor zorgen dat de gewijzigde inhoud wordt behouden wanneer de updates van de blauwdruk worden gesynchroniseerd.
 
-Voor meer details op hoe de overerving het gebruiken van de Universele Redacteur werkt, te zien gelieve de overerving van de document [ Inhoud in de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+Voor meer details op hoe de overerving het gebruiken van de Universele Redacteur werkt, zie [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md).

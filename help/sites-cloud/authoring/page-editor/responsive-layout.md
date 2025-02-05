@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 5%
@@ -137,7 +137,7 @@ A **de Container van de Lay-out** is een paragraafsysteem dat:
 
 >[!NOTE]
 >
->Als niet reeds beschikbaar, moet de **Container van de Lay-out** uitdrukkelijk [ voor een paragraafsysteem/pagina worden geactiveerd.](/help/sites-cloud/administering/responsive-layout.md)
+>Als niet reeds beschikbaar, moet de **Container van de Lay-out** uitdrukkelijk [ voor een paragraafsysteem/pagina ](/help/sites-cloud/administering/responsive-layout.md) worden geactiveerd.
 
 1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Van hier kunt u het aan de vereiste plaats op de pagina slepen waarna u de **Componenten van de Belemmering hier** placeholder kunt zien.
 1. Vervolgens kunt u componenten aan de lay-outcontainer toevoegen. Deze componenten bevatten de werkelijke inhoud:
@@ -184,7 +184,7 @@ Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay
 * Gebruik het [modusmenu op de werkbalk](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) en kies de modus **Lay-out**
    * Selecteer de modus **Lay-out** op dezelfde manier als wanneer u schakelt naar de modus **Bewerken** of de modus **Targeting**.
    * De modus **Lay-out** is permanent en u verlaat de modus **Lay-out** pas wanneer u een andere modus selecteert via de moduskiezer.
-* Wanneer [ het uitgeven van een individuele component.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Wanneer [ het uitgeven van een individuele component ](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Door de **optie van de Lay-out** in het snelle actiemenu van de component te gebruiken, kunt u op **Lay-out** wijze schakelen.
    * **de wijze van de Lay-out 1} blijft terwijl het uitgeven van de component en keert terug naar** geef **wijze uit zodra de nadruk in een andere component verandert.**
 

@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Het paneel Site wordt gebruikt voor het beheer van thema&#39;s en sjabloongerela
 
 ## Themabronnen downloaden {#downloading-theme-sources}
 
-Wanneer u een plaats in AEM creeert die op het malplaatje van de a [ plaats wordt gebaseerd, ](site-templates.md) kunt u uw [ plaatsthema ](site-themes.md) downloaden gebruikend het paneel van de Plaats.
+Wanneer u een plaats in AEM creeert die op het malplaatje van de a [ plaats ](site-templates.md) wordt gebaseerd, kunt u uw [ plaatsthema ](site-themes.md) downloaden gebruikend het paneel van de Plaats.
 
 Selecteer, terwijl het deelvenster Site wordt weergegeven in de siteconsole, de hoofdmap van uw site om themagegevens over de site weer te geven.
 
@@ -44,7 +44,7 @@ Selecteer **Bronnen van het Thema van de Download** om een lokaal exemplaar van 
 
 ## Sjabloonbronnen downloaden {#downloading-template-resources}
 
-{de malplaatjes van de Plaats ](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema bevatten.[](site-themes.md) Sitesjablonen kunnen bijvoorbeeld draadframe-ontwerpen of andere sitegerelateerde bestanden bevatten.
+{de malplaatjes van de Plaats ](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema ](site-themes.md) bevatten. [ Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
 
 Als uw site is gebaseerd op een sitesjabloon en het Sitepaneel in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven, inclusief extra sitemiddelen.
 
@@ -84,4 +84,4 @@ Met het paneel dat van de Plaats in de plaatsenconsole toont, selecteer de worte
 
 ![ toelatend front-end pijpleiding ](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Voor meer informatie, zie het document [ Toelatend de Voorste-Eind Pijpleiding.](enable-front-end-pipeline.md)
+Voor meer informatie, zie het document [ Toelatend de Voorste-Eind Pijpleiding ](enable-front-end-pipeline.md).

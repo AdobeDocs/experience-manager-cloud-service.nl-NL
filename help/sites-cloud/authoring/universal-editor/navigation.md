@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1613'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebr
 
 >[!TIP]
 >
->* Voor details bij het ontwerpen die de Universele Redacteur gebruiken, zie het document [ Authoring Inhoud met de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)
->* Voor een meer gedetailleerde inleiding aan de Universele Redacteur, zie het document [ Universele Inleiding van de Redacteur.](/help/implementing/universal-editor/introduction.md)
+>* Voor details bij het ontwerpen die de Universele Redacteur gebruiken, zie het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>* Voor een meer gedetailleerde inleiding aan de Universele Redacteur, zie [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md).
 
 ## De app voorbereiden {#prepare-app}
 
@@ -48,13 +48,13 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur die in dit document wordt beschreven, of de [ paginaredacteur.](/help/sites-cloud/authoring/page-editor/introduction.md)[
+>Wanneer het uitgeven van een pagina in de **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md).[**[
 
 ### Direct toegang {#accessing-directly}
 
-1. Meld u aan bij de Universal Editor. U hebt een Adobe ID nodig om binnen te ondertekenen en [ heeft toegang tot de Universele Redacteur.](/help/implementing/universal-editor/getting-started.md#request-access)
+1. Meld u aan bij de Universal Editor. U hebt een Adobe ID nodig om binnen te ondertekenen en [ heeft toegang tot de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md#request-access).
 
-1. Nadat u binnen wordt ondertekend, ga URL van de pagina in u in de [ plaatsbar wilt uitgeven.](#location-bar) zodat u inhoud kunt gaan bewerken, zoals tekstinhoud of media-inhoud.
+1. Nadat u binnen wordt ondertekend, ga URL van de pagina in u in de [ plaats bar ](#location-bar) wilt uitgeven, zodat kunt u beginnen inhoud zoals tekstinhoud of media inhoud uit te geven.
 
 ## De gebruikersinterface begrijpen {#ui}
 
@@ -75,7 +75,7 @@ De koptekst van het Experience Cloud bevindt zich altijd boven aan het scherm. H
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud bij de linkerzijde van de kopbal om aan de wortel van uw oplossing van de Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager, ](/help/onboarding/cloud-manager-introduction.md) [ Cloud Acceleration Manager, ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) en [ de Distributie van de Software toegang te hebben.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van de Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -99,7 +99,7 @@ Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbro
 
 #### Meldingen {#notifications}
 
-Dit pictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten.](/help/implementing/cloud-manager/notifications.md)
+Dit pictogram wordt getekend met het aantal momenteel toegewezen onvolledige [ berichten ](/help/implementing/cloud-manager/notifications.md).
 
 ![ Meldingen ](assets/notifications.png)
 
@@ -111,7 +111,7 @@ Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmo
 
 ### De werkbalk Universele editor {#universal-editor-toolbar}
 
-De Universal Editor-werkbalk bevindt zich altijd boven aan het scherm net onder [ de koptekst van het Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om de huidige pagina te bewerken en te publiceren.
+De Universele toolbar van de Redacteur is altijd aanwezig bij de bovenkant van het scherm enkel onder [ de kopbal van het Experience Cloud ](#experience-cloud-header). Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
 
 ![ de Universele toolbar van de Redacteur ](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Op de startpagina kunt u de URL invoeren van de site die u wilt bewerken met de 
 
 >[!NOTE]
 >
->Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur te steunen.](/help/implementing/universal-editor/getting-started.md)
+>Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md) te steunen.
 
 #### Locatiebalk {#location-bar}
 
@@ -141,11 +141,11 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 
 >[!NOTE]
 >
->Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur te steunen.](/help/implementing/universal-editor/getting-started.md)
+>Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md) te steunen.
 
 #### Instellingen voor verificatiekoptekst {#authentication-settings}
 
-Selecteer het de montagespictogram van de authentificatiekop als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden moet [ plaatsen.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden ](/help/implementing/universal-editor/developer-overview.md#auth-header) moet plaatsen.[
 
 ![ de knoop van de het hedentemenu van de Authentificatie ](assets/authentication-header-settings.png)
 
@@ -189,7 +189,7 @@ Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina d
 
 >[!TIP]
 >
->De voorproef URL voor uw app [ kan worden aangepast.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>De voorproef URL voor uw app [ kan worden aangepast ](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 #### Publish {#publish}
 
@@ -213,8 +213,8 @@ Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**P
 
 De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als er extra knoppen op de werkbalk staan, is de Universal Editor uitgebreid.
 
-* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur uitbreiden.](/help/implementing/universal-editor/customizing.md)
-* Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager te zien.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur ](/help/implementing/universal-editor/customizing.md) uitbreiden.
+* Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) te zien.
 
 ### De Editor {#editor}
 
@@ -222,7 +222,7 @@ De redacteur bezet het grootste deel van het venster en is waar de pagina die in
 
 ![ Redacteur ](assets/editor.png)
 
-Als de redacteur op [ voorproefwijze is, ](#preview-mode) zal de inhoud navigeerbaar zijn en u kunt verbindingen volgen, maar u kunt niet de inhoud uitgeven.
+Als de redacteur op [ voorproefwijze ](#preview-mode) is, zal de inhoud navigeerbaar zijn en u kunt verbindingen volgen, maar u kunt niet de inhoud uitgeven.
 
 ### Deelvenster Eigenschappen {#properties-rail}
 
@@ -280,7 +280,7 @@ Als u een containercomponent selecteert in de inhoudsstructuur of in de editor, 
 
 ![ voeg pictogram ](assets/ue-add-component-icon.png) toe
 
-Het tikken of het klikken van toevoegen knoop opent een drop-down menu van componenten die beschikbaar zijn aan [ toevoegen aan de geselecteerde container.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
+Tapping of het klikken van toevoegt knoop opent een drop-down menu van componenten die beschikbaar zijn aan [ toevoegen aan de geselecteerde container ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components).
 
 ![ voeg contextmenu ](assets/add-context-menu.png) toe
 
@@ -294,7 +294,7 @@ Als u een component binnen een containercomponent selecteert in de inhoudsstruct
 
 ![ Dupliceer pictogram ](assets/duplicate.png)
 
-Tapping of het klikken van de dubbele knoop [ dupliceert de geselecteerde component.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+Tapping of het klikken van de dubbele knoop [ dupliceert de geselecteerde component ](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### Verwijderen {#delete}
 
@@ -302,7 +302,7 @@ Als u een component binnen een containercomponent selecteert in de inhoudsstruct
 
 ![ pictogram van de Schrapping ](assets/ue-delete-component-icon.png)
 
-Tapping of het klikken van de schrappingsknoop [ schrapt de component.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+Tapping of het klikken van de schrappingsknoop [ schrapt de component ](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
 
 >[!TIP]
 >
@@ -312,9 +312,9 @@ Tapping of het klikken van de schrappingsknoop [ schrapt de component.](/help/si
 
 De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen ziet in het deelvenster Eigenschappen, is de Universal Editor uitgebreid.
 
-* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur uitbreiden.](/help/implementing/universal-editor/customizing.md)
-* Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager te zien.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur ](/help/implementing/universal-editor/customizing.md) uitbreiden.
+* Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) te zien.
 
 ## Volgende stappen {#next-steps}
 
-Nu u weet om tot de Universele Redacteur toegang te hebben en te navigeren, bent u bereid om [ auteursinhoud te gebruiken het.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Nu u weet om tot de Universele Redacteur toegang te hebben en te navigeren, bent u klaar aan [ auteursinhoud gebruikend het ](/help/sites-cloud/authoring/universal-editor/authoring.md).

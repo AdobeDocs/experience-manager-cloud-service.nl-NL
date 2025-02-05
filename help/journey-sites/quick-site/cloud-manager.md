@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Dit document helpt u begrijpen hoe het AEM Snelle hulpmiddel van de Plaats werkt
 
 Dit document richt zich op het begrijpen van deze fundamentele stukken van de Snelle oplossing van de Plaats alvorens zich aan de volgende stap van de reis te bewegen waar u configuratie begint.
 
-Hoewel het wordt geadviseerd om door deze reis stap-voor-stap te werk te gaan, als u reeds AEM Sites en Cloud Manager samen begrijpt en direct met configuratie wilt beginnen, kunt u [ aan de volgende stap van de reis overslaan.](create-site.md)
+Hoewel het wordt geadviseerd om door deze reis stap voor stap te werk te gaan, als u reeds AEM Sites en Cloud Manager samen begrijpt en direct met configuratie wilt beginnen, kunt u [ aan de volgende stap van de reis ](create-site.md) overslaan.
 
 ## Verantwoordelijke rol {#responsible-role}
 
@@ -122,11 +122,11 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om front-end ontwikkeling te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing volledig losgekoppeld is van AEM en geen AEM kennis vereist.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Verwezenlijking van de Plaats door het document te herzien [ creeer Plaats van Malplaatje, ](create-site.md) verder waar u leert hoe te om snel een nieuwe AEM plaats tot stand te brengen gebruikend een malplaatje.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Verwezenlijking van de Plaats door het document te herzien [ creeer Plaats van Malplaatje ](create-site.md) verder, waar u leert hoe te om een nieuwe AEM plaats snel tot stand te brengen gebruikend een malplaatje.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document te herzien [ creeert Plaats van Malplaatje, ](create-site.md) het volgende is sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de reis voort te zetten.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document te herzien [ creeert Plaats van Malplaatje ](create-site.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ Rol Gebaseerde Toestemmingen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft pre-gevormde rollen met aangewezen toestemmingen. Zie dit document voor details over deze rollen en hoe te om hen te beheren.

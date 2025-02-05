@@ -4,7 +4,7 @@ description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
    - Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** . Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
 
-1. Selecteer **[!UICONTROL Create.]** Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL DocuSign] -velden toevoegen aan het formulier en het verzenden voor ondertekening.
+1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL DocuSign] -velden toevoegen aan het formulier en het verzenden voor ondertekening.
 1. Open het adaptieve formulier in de bewerkingsmodus. In het **[!UICONTROL Content]** lusje, selecteer **[!UICONTROL Form Container]** en selecteer ![ vormen ](assets/configure-icon.svg).
 
 1. Selecteer **[!UICONTROL Submit with DocuSign electronic signatures]** in de vervolgkeuzelijst **[!UICONTROL Submit Action]** in de sectie **[!UICONTROL Submission]** .

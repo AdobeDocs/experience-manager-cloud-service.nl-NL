@@ -5,7 +5,7 @@ exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Als u een andere leverancier kiest, moet uw beheerder het aansluitingspakket ins
 >
 >Het gebruik van de uit-van-de-doos Microsoft Vertaler in AEM vereist geen extra opstelling en werkt zoals-is zonder extra schakelaarconfiguratie.
 >
->Als u verkiest om de Vertaalschakelaar van Microsoft voor het testen doeleinden te gebruiken, te hoeven u niet om de stappen in de volgende twee secties uit te voeren: [ Creërend een Configuratie van de Integratie van de Vertaling ](#create-config) en [ associeer de Configuratie met Uw Inhoud.](#associate) Nochtans wordt u geadviseerd om hen te lezen zodat u met de stappen vertrouwd bent voor wanneer u uw aangewezen schakelaar moet vormen.
+>Als u verkiest om de Vertaalschakelaar van Microsoft voor het testen doeleinden te gebruiken, te hoeven u niet om de stappen in de volgende twee secties uit te voeren: [ Creërend een Configuratie van de Integratie van de Vertaling ](#create-config) en [ associeer de Configuratie met Uw Inhoud ](#associate). Nochtans wordt u geadviseerd om hen te lezen zodat u met de stappen vertrouwd bent voor wanneer u uw aangewezen schakelaar moet vormen.
 >
 >De proefvergunning van de Vertaalschakelaar van Microsoft is niet voorgenomen voor productiedoeleinden en als u besluit om het vergunning te geven, moet de systeembeheerder de stappen volgen die in de [ Extra sectie van Middelen ](#additional-resources) aan het eind van dit document worden gedetailleerd zodat kunt u die vergunning vormen.
 
@@ -122,7 +122,7 @@ Navigeer hiertoe naar de hoofdtaalmap van de inhoud. Voor ons voorbeelddoel is d
 1. Ga naar de globale navigatie en ga naar **Navigatie** > **Assets** > **Dossiers**.
 1. In de activa console, selecteer de taalwortel om **Eigenschappen** te vormen en te selecteren.
 1. Selecteer de **Cloud Servicen** tabel.
-1. Onder **Configuraties van de Cloud Service** in **voeg de drop-down lijst van de Configuratie** toe, selecteer uw schakelaar. Het zou in de drop-down lijst moeten verschijnen wanneer u zijn pakket zoals [ eerder beschreven hebt geïnstalleerd.](#connect-translation-provider)
+1. Onder **Configuraties van de Cloud Service** in **voeg de drop-down lijst van de Configuratie** toe, selecteer uw schakelaar. Het zou in de drop-down lijst moeten verschijnen wanneer u zijn pakket zoals [ eerder beschreven ](#connect-translation-provider) hebt geïnstalleerd.
 1. Onder **Configuraties van de Cloud Service** in **voeg de drop-down lijst van de Configuratie** toe, ook uw configuratie.
 1. Selecteer **sparen &amp; Sluiten**.
 
@@ -135,7 +135,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
 
-Bouw op deze kennis voort en zet uw AEM hoofdloze vertaalreis door het document [ te herzien vertaalt inhoud, ](translation-rules.md) waar u leert hoe te om uw configuratie tot dusverre te gebruiken om uw inhoud eigenlijk te vertalen.
+Bouw op deze kennis voort en zet uw AEM hoofdloze vertaalreis door het document [ te herzien vertaalt inhoud ](translation-rules.md), waar u leert hoe te om uw configuratie tot dusverre te gebruiken om uw inhoud eigenlijk te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 

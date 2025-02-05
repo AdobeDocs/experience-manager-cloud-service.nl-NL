@@ -4,7 +4,7 @@ description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsf
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
    ![ creeer omslag ](../assets/assets-folder-create.png)
 1. Selecteer de map die u hebt gemaakt door op het vinkje te tikken en erop te klikken. Dan selecteer **Eigenschappen** van de toolbar (of gebruik `p` [ toetsenbordkortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
 1. In het **venster van Eigenschappen**, selecteer de **Cloud Servicen** tabel.
-1. Voor de **Configuratie van de Wolk** selecteer de [ configuratie u eerder creeerde.](create-configuration.md)
+1. Voor de **Configuratie van de Wolk** selecteer de [ configuratie u eerder ](create-configuration.md) creeerde.
    ![ vorm activa omslag ](../assets/assets-folder-configure.png)
 1. Selecteer **sparen &amp; Sluiten**.
 1. Selecteer **O.K.** in het bevestigingsvenster.

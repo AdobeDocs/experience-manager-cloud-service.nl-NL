@@ -4,7 +4,7 @@ description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lo
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lokale ontwikke
 De Universal Editor-service bindt de Universal Editor en het back-endsysteem. Als u zich lokaal voor de Universele Redacteur wilt kunnen ontwikkelen, moet u een lokaal exemplaar van de Universele Dienst van de Redacteur in werking stellen. Dit komt omdat:
 
 * De officiële Universal Editor Service van Adobe wordt wereldwijd gehost en uw lokale AEM-instantie moet worden blootgesteld aan internet.
-* Tijdens het ontwikkelen met een lokale AEM SDK is de Universal Editor Service van de Adobe niet toegankelijk via internet.
+* Tijdens de ontwikkeling met een lokale AEM SDK, heeft de Universal Editor Service van Adobe geen toegang tot internet.
 * Als uw AEM instantie IP beperkingen heeft en de Universele Dienst van de Redacteur van de Adobe niet in een bepaalde IP waaier is, kunt u het zelf ontvangen.
 
 ## Gevallen gebruiken {#use-cases}
@@ -101,7 +101,7 @@ In de volgende tabel worden deze en aanvullende waarden beschreven.
 | `UES_SPLUNK_TOKEN` | Ja | Geen | Splunk-token |
 | `UES_SPLUNK_INDEX` | Ja | Geen | Index die moet worden gebruikt voor het schrijven van logbestanden naar |
 | `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Naam van de bron in de splunklogboeken |
-| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Laat het verzenden van kopballen CORS toe om [ Privé netwerk toe te staan.](https://wicg.github.io/private-network-access/#private-network-request) Vereist voor gebruikers van Chrome versie 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Ja | `false` | Laat het verzenden van kopballen CORS toe om [ Privé netwerk ](https://wicg.github.io/private-network-access/#private-network-request) toe te staan. Vereist voor gebruikers van Chrome versie 130+ |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Als deze eenmaal is ingesteld, wordt elke aanroep van de inhoudsupdate weergegev
 
 ## Een pagina bewerken met de lokale universele editor {#editing}
 
-Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst te gebruiken, ](#using-loca-ue) kunt u de redacteur nu beginnen.
+Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst ](#using-loca-ue) te gebruiken, kunt u de redacteur nu beginnen.
 
 1. Open uw browser naar `https://localhost:8000/ping` .
-1. Verricht uw browser om [ uw zelf-ondertekend certificaat goed te keuren.](#ue-https)
+1. Verricht uw browser om [ uw zelf-ondertekend certificaat ](#ue-https) goed te keuren.
 1. Zodra het zelfondertekende certificaat wordt vertrouwd, kunt u de pagina bewerken met uw lokale Universal Editor-service.
 

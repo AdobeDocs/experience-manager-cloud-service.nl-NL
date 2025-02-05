@@ -5,7 +5,7 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Door elke kennis van ontwikkelaars voor het maken van sites te elimineren, AEM k
 
 ## Video-overzicht {#video-overview}
 
-Voor een snel overzicht van deze eigenschap in actie, [ kunt u op deze vijf minieme inleiding letten.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
+Voor een snel overzicht van deze eigenschap in actie, [ kunt u op deze vijf minieme inleiding ](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw) letten.
 
 Deze documentatietraject leidt u door alle functies in de video stap voor stap en in detail, zodat u de workflow begrijpt en het proces opnieuw kunt maken in uw eigen omgeving.
 
@@ -70,7 +70,7 @@ U bent nu klaar om aan de slag te gaan met uw Adobe voor het snel maken van site
 
 * Als u een AEM of beheerder van Cloud Manager bent, of als u zowel front-end ontwikkelaar als beheerderrollen dient, of als u eenvoudig het proces van begin tot eind in AEM wilt begrijpen, begin bij het begin van de reis met [ Cloud Manager ](cloud-manager.md) begrijpen zoals hieronder vermeld.
 * Als u slechts voor front-end ontwikkeling verantwoordelijk bent en met de AEM en beheerders van Cloud Manager zult in wisselwerking staan, kunt u direct aan [ overslaan terugwinnen de toegangsinformatie van de git bewaarplaats ](retrieve-access.md) om toegang tot de AEM git bewaarplaats te krijgen en beginnen aan het aanpassen.
-* Als u reeds AEM Sites en Cloud Manager het werk begrijpt en direct met configuratie wilt beginnen, kunt u [ direct overslaan aan het creëren van een plaats van een malplaatje.](create-site.md)
+* Als u reeds AEM Sites en Cloud Manager het werk begrijpt en direct met configuratie wilt beginnen, kunt u [ direct overslaan aan het creëren van een plaats van een malplaatje ](create-site.md).
 
 ## Aanvullende bronnen {#additional-resources}
 

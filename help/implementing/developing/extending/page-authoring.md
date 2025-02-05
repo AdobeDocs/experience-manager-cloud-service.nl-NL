@@ -4,7 +4,7 @@ description: Meer informatie over de mechanismen die AEM as a Cloud Service bied
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -54,7 +54,7 @@ U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
 Dit is een voorbeeldpakket dat toont hoe te om een laag (wijze) voor mening tot stand te brengen MSM.
 
-U kunt de code van deze pagina op [ GitHub vinden.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+U kunt de code van deze pagina op [ GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode) vinden.
 
 ## Nieuwe selectiecategorie toevoegen aan de middelenbrowser {#add-new-selection-category-to-asset-browser}
 
@@ -64,7 +64,7 @@ In de middelenbrowser worden elementen van verschillende typen/categorieën weer
 
 `aem-authoring-extension-assetfinder-flickr` is een voorbeeldpakket dat aangeeft hoe u een groep aan de elementenzoeker kunt toevoegen. Dit voorbeeld verbindt met [ de openbare stroom van Flickr ](https://www.flickr.com) en toont hen in het zijpaneel.
 
-U kunt de code van deze pagina op [ GitHub vinden.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+U kunt de code van deze pagina op [ GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr) vinden.
 
 ## Bronnen filteren {#filtering-resources}
 
@@ -75,7 +75,7 @@ Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te 
 * Implementeer de aangepaste voorspelling door de [`com.day.cq.commons.predicate.AbstractNodePredicate` ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) -interface te implementeren.
 * Geef een naam voor de voorspelling op en verwijs die naam wanneer u de voorspelling van `pathbrowser` gebruikt.
 
-Voor verder detail bij het creëren van een douane predikt, zie [ dit artikel.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+Voor verder detail bij het creëren van een douane predikt, zie [ dit artikel ](/help/implementing/developing/introduction/query-builder-custom-predicate.md).
 
 ## Nieuwe handeling toevoegen aan werkbalk Component {#add-new-action-to-a-component-toolbar}
 
@@ -85,7 +85,7 @@ Elke component heeft gewoonlijk een werkbalk die toegang biedt tot een reeks han
 
 `aem-authoring-extension-toolbar-screenshot` is een voorbeeldpakket dat aangeeft hoe u een aangepaste werkbalkactie kunt maken om componenten te renderen.
 
-U kunt de code van deze pagina op [ GitHub vinden.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+U kunt de code van deze pagina op [ GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot) vinden.
 
 ## Nieuwe plaatseditor toevoegen {#add-new-in-place-editor}
 
@@ -156,7 +156,7 @@ Om een nieuwe op zijn plaats redacteur (binnen uw clientlib) uit te voeren:
 
 `aem-authoring-extension-inplace-editor` is een voorbeeldpakket waarin wordt getoond hoe u een lokale editor in AEM kunt maken.
 
-U kunt de code van deze pagina op [ GitHub vinden.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+U kunt de code van deze pagina op [ GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor) vinden.
 
 ## Handeling Nieuwe pagina toevoegen {#add-a-new-page-action}
 
@@ -166,7 +166,7 @@ Om een nieuwe paginaactie aan de paginatoolbar toe te voegen, bijvoorbeeld, a **
 
 `aem-authoring-extension-header-backtosites` is een voorbeeldpakket waarin wordt getoond hoe u een aangepaste actie voor de koptekstbalk kunt maken om terug te gaan naar de Sites-console.
 
-U kunt de code van deze pagina op [ GitHub vinden.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+U kunt de code van deze pagina op [ GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites) vinden.
 
 ## De workflow voor het aanvragen van activering aanpassen {#customizing-the-request-for-activation-workflow}
 

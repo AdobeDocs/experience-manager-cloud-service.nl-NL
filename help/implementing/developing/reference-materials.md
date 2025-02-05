@@ -4,7 +4,7 @@ description: AEM beschikt over uitgebreide en krachtige API's die u kunt gebruik
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 1%
@@ -22,7 +22,7 @@ De volgende API&#39;s zijn essentieel voor AEM.
 | API | Beschrijving |
 |---|---|
 | [ Adobe Experience Manager as a Cloud Service ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Productabstracties zoals pagina&#39;s, middelen, workflows enzovoort. |
-| [ graniet UI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | De Open Web-stapel van de Adobe, die diverse essentiële componenten verstrekt (De 6.5 Materialen van Granite zijn op AEMaaCS van toepassing) |
+| [ graniet UI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | De Open Web-stapel van Adobe, die diverse essentiële componenten verstrekt (De 6.5 Materialen van Granite zijn op AEMaaCS van toepassing) |
 | [ Koraal UI ](https://opensource.adobe.com/coral-spectrum/documentation/) | De visuele stijl van de Adobe voor wolk UIs, die wordt ontworpen om consistentie in de gebruikerservaring te verstrekken |
 
 <!---
@@ -55,11 +55,11 @@ AEM is gebaseerd op de volgende vier primaire Java API-sets in aflopende volgord
 | 3 | [ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstracties van gegevens en inhoud, zoals knooppunten, eigenschappen en sessies. |
 | 4 | [ Apache Felix ](https://felix.apache.org/) | OSGi de abstracties van de toepassingscontainer zoals de diensten en (OSGi) componenten. |
 
-Als een API door AEM wordt verstrekt, verkies het over Sling, JCR, en OSGi. Als AEM geen API aanbiedt, kiest u Verdelen boven JCR en OSGi.
+Als een API door AEM wordt verstrekt, verkies het over Sling, JCR, en OSGi. Als AEM geen API aanbiedt, geeft u de voorkeur aan Sling boven JCR en OSGi.
 
 >[!TIP]
 >
->Voor details van deze richtlijnen, zie het document [ de Beste praktijken van Java API begrijpen.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>Voor details van deze richtlijnen, zie het document [ de Beste praktijken van Java API ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html) begrijpen.
 
 ## Services en API&#39;s voor levering en contentbeheer AEM {#delivery-apis}
 

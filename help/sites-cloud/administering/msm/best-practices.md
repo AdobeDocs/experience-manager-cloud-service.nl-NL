@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 * **het bewegen** pagina&#39;s in een blauwdruk zal **** niet in overeenkomstige pagina&#39;s resulteren die in Levende Kopieën na rollout met standaard rollout configuratie worden bewogen:
    * De reden voor dit gedrag is dat een paginabeweging impliciet een pagina-verwijdering bevat. Dit kan mogelijk leiden tot onverwacht gedrag bij het publiceren, omdat bij het verwijderen van pagina&#39;s bij de auteur de bijbehorende inhoud bij het publiceren automatisch wordt gedeactiveerd. Dit kan ook een aanvullend effect hebben op verwante items, zoals koppelingen, bladwijzers en andere.
       * Inhoudsovererving op de respectievelijke Live Copy-pagina&#39;s wordt bijgewerkt met de nieuwe locatie van de bronnen in de blauwdruk.
-      * Om volledig te realiseren een pagina zich van een blauwdruk aan Levende Exemplaren beweegt, overweeg de [ beste praktijken van de paginageverplaatsing.](#page-move)
+      * Om volledig te realiseren een paginabeweging van een blauwdruk aan Levende Exemplaren, overweeg de [ beste praktijken van de paginageverplaatsing ].(#page-move)
 
 ### Aanbevolen werkwijzen voor verplaatsen pagina {#page-move}
 

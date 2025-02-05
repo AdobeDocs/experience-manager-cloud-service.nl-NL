@@ -5,7 +5,7 @@ role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 0%
@@ -127,7 +127,7 @@ U kunt de modus Indeling uitschakelen voor formulieren met een oude responsieve 
 Voer de volgende stappen uit om de modus Lay-out uit te schakelen:
 
 1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** en open de sjabloon in het formulier in de modus **[!UICONTROL Edit]** .
-1. Selecteer de Form Container in het linkerdeelvenster en selecteer **[!UICONTROL Policy.]**
+1. Selecteer Formuliercontainer in het linkerdeelvenster en selecteer **[!UICONTROL Policy]** .
 
    ![ maak wijze van de Lay-out ](assets/policy_disable_layout_mode.png) onbruikbaar
 

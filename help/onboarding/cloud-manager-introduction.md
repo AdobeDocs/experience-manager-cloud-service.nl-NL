@@ -4,7 +4,7 @@ description: Leer hoe Cloud Manager uw AEM project ondersteunt via programma's, 
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Uw systeembeheerder is verantwoordelijk voor het instellen van uw Cloud Manager-
 
 Ga als volgt te werk om naar Cloud Manager te navigeren.
 
-1. Navigeer naar de Cloud Manager aanmeldingspagina op [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Navigeer naar de Cloud Manager-aanmeldingspagina op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) .
 
 1. Selecteer het programma van Cloud Manager **Programma&#39;s en Producten** pagina om de **pagina van het Overzicht** te lanceren.
 
@@ -67,7 +67,7 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Cloud
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 
-Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die ondersteuning bieden voor logische groepen bedrijfsinitiatieven. Deze groepen komen doorgaans overeen met een aangeschafte Service Level Agreement (SLA). Bijvoorbeeld, kan één programma de AEM middelen vertegenwoordigen om de openbare Website van een organisatie te steunen, terwijl een ander programma interne DAM vertegenwoordigt.
+Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die ondersteuning bieden voor logische groepen bedrijfsinitiatieven. Deze groepen komen meestal overeen met een aangeschafte Service level agreement (SLA). Bijvoorbeeld, kan één programma de AEM middelen vertegenwoordigen om de openbare Website van een organisatie te steunen, terwijl een ander programma interne DAM vertegenwoordigt.
 
 
 Bekijk deze [ video ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) om meer te leren bij het gebruiken van de programma&#39;s van Cloud Manager.

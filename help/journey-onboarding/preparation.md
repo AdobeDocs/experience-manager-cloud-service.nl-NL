@@ -4,7 +4,7 @@ description: Alvorens het aan boord gaan proces begint, zijn er een aantal of vo
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Voorbereiding aan boord {#onboarding-preparation}
 
-Nu u weet wat voor u in opslag in het onboarding proces door het artikel [ AEM as a Cloud Service onboarding Inleiding van de ReisInleiding van de Reis is te lezen, ](overview.md) u waarschijnlijk klaar bent binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
+Nu u weet wat voor u in opslag in het onboarding proces door het artikel [ AEM as a Cloud Service onboarding Inleiding van de Reis Inleiding van de Reis ](overview.md) is te lezen, bent u waarschijnlijk bereid binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 
 ## Doelstelling {#objective}
 

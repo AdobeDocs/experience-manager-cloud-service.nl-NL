@@ -4,7 +4,7 @@ description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in 
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de 
 
 ## Het AEM perspectief {#the-aem-perspective}
 
-In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over Perspectief, zie de [ documentatie van de Verduistering.](https://help.eclipse.org/latest/index.jsp)
+In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over Perspectief, zie de [ documentatie van de Verduistering ](https://help.eclipse.org/latest/index.jsp).
 
 _Hulpmiddelen van de Ontwikkeling van de Experience Manager voor Verduistering_ verstrekken een AEM Perspectief dat u volledige controle over uw AEM Projecten en instanties aanbiedt. Het AEM perspectief openen:
 

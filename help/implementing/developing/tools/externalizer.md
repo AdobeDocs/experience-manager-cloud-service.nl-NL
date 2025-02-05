@@ -4,7 +4,7 @@ description: ExternalAlizer is de dienst OSGi die u programmatically een middelw
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ De dienst ExternalAlizer laat u centraal het domein bepalen dat aan programmatic
 
 >[!NOTE]
 >
->Zoals wanneer het toepassen van om het even welke [ configuraties OSGi voor AEM as a Cloud Service, ](/help/implementing/deploying/overview.md#osgi-configuration) de volgende stappen op een lokale ontwikkelaarinstantie zouden moeten worden uitgevoerd en dan aan uw projectcode voor plaatsing geëngageerd.
+>Zoals wanneer het toepassen van om het even welke [ configuraties OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/overview.md#osgi-configuration), zouden de volgende stappen op een lokale ontwikkelaarinstantie moeten worden uitgevoerd en dan aan uw projectcode voor plaatsing geëngageerd.
 
 Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 

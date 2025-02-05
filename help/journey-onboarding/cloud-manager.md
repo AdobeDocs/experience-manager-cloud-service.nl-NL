@@ -4,7 +4,7 @@ description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronn
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Toegang tot Cloud Manager {#cloud-resources}
 
-In dit deel van de [ onboarding reis, ](overview.md) leert u hoe te om tot Cloud Manager toegang te hebben zodat u opstelling uw projectmiddelen kunt.
+In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om tot Cloud Manager toegang te hebben zodat u opstelling uw projectmiddelen kunt.
 
 ## Doelstelling {#objective}
 
-In het vorige artikel in dit onboarding reis, [ toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager, ](assign-profiles-cloud-manager.md) u uw team AEMaaCS de juiste rollen verleende. Leer nu hoe u toegang krijgt tot Cloud Manager, zodat u uw projectbronnen kunt instellen die uw team gebruikt.
+In het vorige artikel in dit onboarding reis, [ toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md), verleende u uw team AEMaaCS de juiste rollen. Leer nu hoe u toegang krijgt tot Cloud Manager, zodat u uw projectbronnen kunt instellen die uw team gebruikt.
 
 Aangezien u de vorige stap hebt uitgevoerd, heeft uw team toegang tot Cloud Manager. Cloud Manager wordt gebruikt om uw projectmiddelen zoals programma&#39;s en milieu&#39;s tot stand te brengen en te beheren.
 
@@ -40,7 +40,7 @@ Alvorens de teamleden die u aan de **rol van de Bedrijfs eigenaar** toewees tot 
 
 1. Zorg ervoor dat u, als systeembeheerder, de **toegewezen rol van de BedrijfsEigenaar** hebt.
 
-   * Terugkeer aan de vorige stap in deze reis, [ wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager toe, ](assign-profiles-cloud-manager.md) voor meer informatie over het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
+   * Terugkeer aan de vorige stap in deze reis, [ wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) toe, voor meer informatie over het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
 
 1. Teken in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en wordt voorgesteld van de normale het landen pagina.
 

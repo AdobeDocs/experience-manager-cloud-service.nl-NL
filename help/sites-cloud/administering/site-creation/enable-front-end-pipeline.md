@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om pla
 
 ## Overzicht {#overview}
 
-De front-end pijpleiding is een mechanisme dat enkel de front-end code van uw websites kan snel opstellen die op [ wordt gebaseerd plaatsenthema&#39;s ](site-themes.md) en [ plaatssjablonen.](site-templates.md)
+De front-end pijpleiding is een mechanisme dat enkel de front-end code van uw websites kan snel opstellen die op [ wordt gebaseerd plaatsthema&#39;s ](site-themes.md) en [ plaatssjablonen ](site-templates.md).
 
 Deze pijpleiding behandelt slechts front-end code, die het plaatsingsproces sneller dan volledig-stapel plaatsingen maakt. Met deze functie kunnen ontwikkelaars aan de voorzijde uw site eenvoudig aanpassen zonder dat ze kennis van AEM nodig hebben.
 
@@ -44,7 +44,7 @@ Wanneer u de front-end pijplijn voor een plaats activeert, AEM brengt de volgend
 
 ## Vereisten {#requirements}
 
-AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern gebruiken.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)
+AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page) gebruiken.
 
 ## Het toelaten van Voorste Pijl-Eind {#enabling}
 

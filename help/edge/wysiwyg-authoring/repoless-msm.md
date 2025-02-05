@@ -4,7 +4,7 @@ description: Leer beste praktijkaanbevelingen op hoe te om een project op een re
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Met MSM kunt u een volledige inhoudsstructuur voor uw merk maken voor verschille
 Om MSM in een repoless gebruikscase te vormen, moet u een aantal taken eerst voltooien.
 
 * Dit document veronderstelt dat u reeds een plaats voor uw project hebt gecreeerd dat op de [ Begonnen Gids van de Ontwikkelaar wordt gebaseerd die voor de Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids wordt.
-* U moet reeds [ toegelaten de repoless eigenschap voor uw project hebben.](/help/edge/wysiwyg-authoring/repoless.md)
+* U moet reeds [ de repoless eigenschap voor uw project ](/help/edge/wysiwyg-authoring/repoless.md) toegelaten hebben.
 
 ## Hoofdletters gebruiken {#use-case}
 
@@ -55,9 +55,9 @@ De inhoud in `language-masters` is de bron van Levende Exemplaren voor de geloka
 
 Er zijn verscheidene stappen aan het vormen van MSM repoless gebruiksgeval.
 
-1. [AEM siteconfiguraties bijwerken.](#update-aem-configurations)
-1. [Maak nieuwe sites met Edge Delivery Services voor uw gelokaliseerde pagina&#39;s.](#create-edge-sites)
-1. [Werk de cloudconfiguratie bij in AEM voor uw gelokaliseerde sites.](#update-cloud-configurations)
+1. [ Update AEM plaatsconfiguraties ](#update-aem-configurations).
+1. [ creeer nieuwe Edge Delivery Services plaatsen voor uw gelokaliseerde pagina&#39;s ](#create-edge-sites).
+1. [ de wolkenconfiguratie van de Update in AEM voor uw gelokaliseerde plaatsen ](#update-cloud-configurations).
 
 ### AEM siteconfiguraties bijwerken {#update-aem-configurations}
 

@@ -4,7 +4,7 @@ description: Gebruik de Content Package Maven-plug-in om AEM toepassingen te imp
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met de plug-in Adobe Content Package Maven kunt u taken voor pakketimplementatie en -beheer integreren in uw Maven-projecten.
 
-De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door het Pakket Maven van de Inhoud van de Adobe gestopt en laat de automatisering van taken toe normaal uitgevoerd gebruikend AEM [ Manager van het Pakket:](/help/implementing/developing/tools/package-manager.md)
+De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door het Pakket Maven van de Inhoud van de Adobe gestopt en laat de automatisering van taken toe normaal uitgevoerd gebruikend AEM [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md)
 
 * Nieuwe pakketten maken van bestanden in het bestandssysteem.
 * Installeer en verwijder pakketten op AEM.
@@ -23,7 +23,7 @@ De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door het P
 * Verkrijg een lijst van pakketten die op AEM geïnstalleerd zijn.
 * Een pakket uit AEM verwijderen.
 
-In dit document wordt beschreven hoe u deze taken beheert met de Maven. Nochtans is het ook belangrijk om [ te begrijpen hoe AEM projecten en hun pakketten gestructureerd zijn.](#aem-project-structure)
+In dit document wordt beschreven hoe u deze taken beheert met de Maven. Nochtans is het ook belangrijk om [ te begrijpen hoe AEM projecten en hun pakketten gestructureerd ](#aem-project-structure) zijn.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ In dit document wordt beschreven hoe u deze taken beheert met de Maven. Nochtans
 
 >[!NOTE]
 >
->De verwezenlijking van het pakket **** wordt nu bezeten door het [ Pakket Maven van het Pakket Apache Jackrabbit FileVault Pakket.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>De verwezenlijking van het pakket **** wordt nu bezeten door het [ Pakket Maven van het Pakket Apache Jackrabbit FileVault Pakket ](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
 >Dit artikel beschrijft de **plaatsing** van de geconstrueerde pakketten aan AEM zoals uitgevoerd door het Pakket Maven van de Inhoud van de Adobe.
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service houdt zich aan de nieuwste best practices voor pakketbehe
 
 ## De insteekmodule voor het inhoudspakket verkrijgen {#obtaining-the-content-package-maven-plugin}
 
-De stop is beschikbaar bij [ Gemaakt Centraal Bewaarplaats.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+De stop is beschikbaar bij [ Gemaakt Centrale Bewaarplaats ](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
 ## Doelstellingen en parameters van insteekmodule voor inhoudspakket
 

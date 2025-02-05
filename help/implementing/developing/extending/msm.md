@@ -4,7 +4,7 @@ description: Leer hoe u de functionaliteit van beheer voor meerdere sites uitbre
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Dit document helpt u begrijpen hoe te om de functionaliteit van de Multisite Man
 
 >[!TIP]
 >
->Deze pagina wordt gemakkelijker begrepen in de context van het document [ Gebruikend Inhoud opnieuw: De multi Manager van de Plaats.](/help/sites-cloud/administering/msm/overview.md)
+>Deze pagina wordt gemakkelijker begrepen in de context van het document [ die Inhoud hergebruiken: De Manager van de MultiPlaats ](/help/sites-cloud/administering/msm/overview.md).
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Voor de volgende procedure is het vereist dat u het `adobe-public` -profiel hebt
    * **`artifactName`**: `MyLiveActionFactory package`
    * **`packageGroup`**: `myPackages`
 
-1. De Verduistering van het begin en [ voeren het Geweven project in.](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
+1. De Verduistering van het begin en [ voeren het Geweven project ](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse) in.
 
 ### Afhankelijkheden toevoegen aan het POM-bestand {#add-dependencies-to-the-pom-file}
 

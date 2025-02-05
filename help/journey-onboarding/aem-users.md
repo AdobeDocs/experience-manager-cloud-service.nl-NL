@@ -4,7 +4,7 @@ description: Nadat de systeembeheerder de vereiste cloudbronnen heeft ingesteld,
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # AEM {#aem-user-tasks}
 
-In dit facultatieve deel van de [ onboarding reis, ](overview.md) leert u hoe AEM gebruikers AEM as a Cloud Service tot auteursinhoud kunnen toegang hebben.
+In dit facultatieve deel van de [ onboarding reis ](overview.md), leert u hoe AEM gebruikers tot AEM as a Cloud Service tot auteursinhoud kunnen toegang hebben.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de onboarding reis door vestiging de noodzakelijke wolkenmiddelen en het verlenen van toegang in het document [ voltooid Toewijzend AEM Profielen van het Product.](assign-profiles-aem.md)
+Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de onboarding reis door vestiging de noodzakelijke wolkenmiddelen en het verlenen van toegang in het document [ voltooid Toewijzend AEM de Profielen van het Product ](assign-profiles-aem.md).
 
 Op dit moment kunnen AEM gebruikers beginnen met het maken van inhoud. In die zin is uw instapweigering voltooid en nu is het tijd om uw nieuwe AEM as a Cloud Service-systeem te gebruiken, zoals dit document illustreert.
 
@@ -48,9 +48,9 @@ Voordat u begint met de taken die in dit document worden beschreven als een AEM 
 
 Als AEM auteur moet u zich aanmelden bij AEM om inhoud te maken.
 
-1. Navigeer naar de Cloud Manager-aanmeldingspagina op [`https://my.cloudmanager.adobe.com` . ](https://my.cloudmanager.adobe.com/)
+1. Navigeer naar de Cloud Manager-aanmeldingspagina op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) .
 
-1. Selecteer het aangewezen programma van Cloud Manager **Programma&#39;s en de pagina van Producten** om de **pagina van het Overzicht** te lanceren. Vraag uw systeembeheerder als u onzeker bent welk programma om toegang te hebben.
+1. Selecteer het aangewezen programma van Cloud Manager **Programma&#39;s en Producten** pagina om de **pagina van het Overzicht** te lanceren. Vraag uw systeembeheerder als u onzeker bent welk programma om toegang te hebben.
 
 1. Van de **pagina van het Overzicht** in Cloud Manager, klik de auteursverbinding van de **** kaart van Milieu&#39;s.
 
@@ -73,7 +73,7 @@ Nu u dit document hebt gelezen, moet u weten hoe te:
 
 Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie ](#additional-resources) sectie van Middelen 0} Extra van Middelen voor meer details over hoe te auteursinhoud in AEM en hoe te om het te beheren.[
 
-Als u in geinteresseerd bent hoe de ontwikkelaars en plaatsingsmanagers douanetoepassingen voor AEM als dienst van de Wolk tot stand brengen en beheren, op tweede facultatief deel van de onboarding reis voortzetten, [ AEM de Taken van de Ontwikkelaar.](developers.md)
+Als u in geinteresseerd bent hoe de ontwikkelaars en plaatsingsmanagers douanetoepassingen voor AEM als dienst van de Wolk tot stand brengen en beheren, op tweede facultatief deel van de onboarding reis voortzetten, [ AEM de Taken van de Ontwikkelaar ](developers.md).
 
 >[!TIP]
 >

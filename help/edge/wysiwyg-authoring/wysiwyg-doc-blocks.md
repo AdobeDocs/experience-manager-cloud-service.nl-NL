@@ -3,13 +3,13 @@ title: Blokken voor WYSIWYG en op documenten gebaseerde authoring
 description: Leer hoe u blokken kunt maken die kunnen worden gebruikt voor zowel WYSIWYG-authoring als documentgebaseerd schrijven.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Blokken voor WYSIWYG en op documenten gebaseerde authoring {#wysiwyg-and-doc-blocks}
 
@@ -17,7 +17,7 @@ Leer hoe u blokken kunt maken die kunnen worden gebruikt voor zowel WYSIWYG-auth
 
 ## Overzicht {#overview}
 
-Voor bepaalde projecten, kunt u zowel [ het auteursrecht van WYSIWYG willen steunen gebruikend de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) evenals [ op document-gebaseerd schrijven.](/help/edge/docs/authoring.md) Als u de ontwikkelingstijd wilt beperken en dezelfde ervaring met sites wilt garanderen, kunt u één set blokken maken die beide gebruiksgevallen ondersteunen.
+Voor bepaalde projecten, kunt u zowel [ het auteursrecht van WYSIWYG willen steunen gebruikend de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) evenals [ op document-gebaseerde het schrijven ](/help/edge/docs/authoring.md). Als u de ontwikkelingstijd wilt beperken en dezelfde ervaring met sites wilt garanderen, kunt u één set blokken maken die beide gebruiksgevallen ondersteunen.
 
 Hiervoor moet u dezelfde methode voor het modelleren van inhoud gebruiken voor zowel uw WYSIWYG-ontwerpinstellingen als uw op documenten gebaseerde ontwerpinstellingen.
 

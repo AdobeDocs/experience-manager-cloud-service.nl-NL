@@ -5,7 +5,7 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Meer informatie over CMS Headless Development {#learn-about}
 
-In dit deel van [ AEM de Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) leert over headless technologie en waarom u het zou gebruiken.
+In dit deel van [ AEM de Zwaardeloze Reis van de Ontwikkelaar ](overview.md), leer over headless technologie en waarom u het zou gebruiken.
 
 ## Doelstelling {#objective}
 
@@ -26,11 +26,11 @@ Met dit document krijgt u inzicht in de levering van inhoud zonder kop en waarom
 
 ## Volledige levering van inhoud {#full-stack}
 
-Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van het CMS als centraal punt voor het beheer van ervaringen heeft de efficiëntie verbeterd doordat taken in verschillende systemen niet hoeven te worden gedupliceerd.
+Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van de CMS als centraal punt voor het beheer van ervaringen heeft geleid tot een verbeterde efficiëntie doordat het niet nodig is taken in verschillende systemen te dupliceren.
 
 ![ de klassieke volledig-stapel CMS ](assets/full-stack.png)
 
-In een volledig-stapel CMS, is de functionaliteit voor het manipuleren van uw inhoud in CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
+In een CMS met volledige stapel bevindt de functionaliteit voor het manipuleren van uw inhoud zich in de CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
 
 * U hebt één systeem om te onderhouden.
 * Inhoud wordt centraal beheerd.
@@ -47,7 +47,7 @@ De complexiteit van de afhankelijkheden in de stapel wordt snel zichtbaar, aange
 
 De full-stack aanpak creëert inherent een silo waar alle landen in één systeem ervaren. Wijzigingen of toevoegingen aan één component van de silo vereisen wijzigingen in andere componenten, waardoor de tijd veel tijd kost en de kosten kostbaar zijn.
 
-Dit geldt met name voor het presentatiesysteem, dat in traditionele instellingen vaak nauw verbonden is met het CMS. Een nieuw kanaal betekent doorgaans een update van het presentatiesysteem, die van invloed kan zijn op alle andere kanalen.
+Dit geldt met name voor het presentatiesysteem, dat in traditionele instellingen vaak nauw verbonden is met de CMS. Een nieuw kanaal betekent doorgaans een update van het presentatiesysteem, die van invloed kan zijn op alle andere kanalen.
 
 ![ de Complexiteit groeit aangezien de kanalen aan een stapel ](assets/presentation-complexity.png) worden toegevoegd
 
@@ -61,13 +61,13 @@ Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meest
 
 Een server zonder kop bijvoorbeeld zit waarschijnlijk ergens in een rack in een serverruimte en heeft geen monitor aangesloten. Om tot het toegang te hebben moet u ver met het verbinden. In dit geval is de monitor de kop omdat deze zorgt voor het renderen van de uitvoer van de server. Als consument van de service geeft u uw eigen hoofd (de monitor) op wanneer u op afstand verbinding maakt.
 
-Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Nochtans, door slechts de **inhoud** op een gestandaardiseerde manier te leveren, weglaat een hoofd CMS de definitieve output die teruggeeft, verlatend de **presentatie** van de inhoud aan de verbruikende dienst.
+Als we het hebben over een CMS zonder kop, beheert de CMS de inhoud en blijft ze leveren aan de consument. Nochtans, door slechts de **inhoud** op een gestandaardiseerde manier te leveren, weglaat een headless CMS de definitieve output die teruggeeft, verlatend de **presentatie** van de inhoud aan de verbruikende dienst.
 
-![ Zwaarloze CMS ](assets/headless-cms.png)
+![ Headless CMS ](assets/headless-cms.png)
 
-De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enzovoort, nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
+De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enzovoort, nemen inhoud van de CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
-Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
+Als u de kop weglaat, wordt de CMS vereenvoudigd doordat de complexiteit wordt weggenomen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
 ## Ontkoppelen {#decoupling}
 
@@ -127,9 +127,9 @@ Bouw op deze kennis voort en ga uw AEM headless reis door het document [ opnieuw
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingsreis door het document [ te herzien Begonnen worden met AEM as a Cloud Service Zonder kop, ](getting-started.md) het volgende is wat extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingsreis door het document [ te herzien Begonnen worden met AEM as a Cloud Service zonder hoofd ](getting-started.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * [ een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service ](/help/overview/architecture.md) - begrijp de structuur van AEM as a Cloud Service
-* Een [ Inleiding aan AEM als Zwaartepunt CMS ](/help/headless/introduction.md)
+* Een [ Inleiding aan AEM als Zwaarloze CMS ](/help/headless/introduction.md)
 * Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.

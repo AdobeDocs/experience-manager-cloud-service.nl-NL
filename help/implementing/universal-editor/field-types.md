@@ -4,7 +4,7 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Dit document biedt een overzicht van een modeldefinitie en van de velden en comp
 
 >[!TIP]
 >
->Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [ Universeel Overzicht van de Redacteur voor AEM Ontwikkelaars.](/help/implementing/universal-editor/developer-overview.md)
+>Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [ Universeel Overzicht van de Redacteur voor AEM Ontwikkelaars ](/help/implementing/universal-editor/developer-overview.md).
 
 ## Modeldefinitiestructuur {#model-structure}
 
@@ -139,7 +139,7 @@ Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebrui
 
 #### Inhoud AEM {#aem-content}
 
-Een AEM inhoudcomponenttype laat een AEM inhoudkiezer toe, die kan worden gebruikt om het even welke AEM bron te selecteren. In tegenstelling tot de [ verwijzingscomponent, ](#reference) die slechts activa kan selecteren, kan de AEM inhoudscomponent om het even welke AEM inhoud van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
+Een AEM inhoudcomponenttype laat een AEM inhoudkiezer toe, die kan worden gebruikt om het even welke AEM bron te selecteren. In tegenstelling tot de [ verwijzingscomponent ](#reference), die slechts activa kan selecteren, kan de AEM inhoudscomponent om het even welke AEM inhoud van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -646,7 +646,7 @@ Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opt
 
 #### Referentie {#reference}
 
-Een type van verwijzingscomponent laat een AEM elementenkiezer toe, die kan worden gebruikt om om het even welk AEM te verwijzen. In tegenstelling tot de [ AEM inhoudscomponent, ](#aem-content) die om het even welk AEM middel kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
+Een type van verwijzingscomponent laat een AEM elementenkiezer toe, die kan worden gebruikt om om het even welk AEM te verwijzen. In tegenstelling tot de [ AEM inhoudscomponent ](#aem-content), die om het even welk AEM middel kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
 
 Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject van het huidige object mogelijk.
 

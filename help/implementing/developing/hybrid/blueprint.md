@@ -4,7 +4,7 @@ description: In dit document wordt het algemene, raamonafhankelijke contract bes
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Het paginamodel gebruikt de JSON ModelExporter, die zelf op het [ Verschuivende 
 * `:itemsOrder`: geordende lijst met de onderliggende items. Het JSON-toewijzingsobject garandeert de volgorde van de velden niet. Door zowel de kaart als de huidige array te hebben, heeft de consument van de API de voordelen van beide structuren
 * `:path`: Inhoudspad van een item (aanwezig op items die een pagina vertegenwoordigen)
 
-Zie ook [ Begonnen het Worden met de Diensten van de Inhoud AEM.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+Zie ook [ Begonnen het Worden met AEM Diensten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html).
 
 ### Framework-Specific Module {#framework-specific-module}
 

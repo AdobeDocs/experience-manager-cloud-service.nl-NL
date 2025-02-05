@@ -4,7 +4,7 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
 ht-degree: 0%
@@ -1062,7 +1062,7 @@ Om over RDE in AEM as a Cloud Service te leren, zie het videoleerprogramma dat [
 
 ### Hoe te om de recentste AEM versie voor bestaande RDE te verkrijgen {#get-latest-aem-version}
 
-Bij het maken worden RDE&#39;s ingesteld op de laatst beschikbare Adobe Experience Manager-versie (AEM). Een [ teruggestelde RDE, ](#reset-rde) die kan worden uitgevoerd gebruikend Cloud Manager of het `aio aem:rde:reset` bevel, cycli RDE en plaats het aan de onlangs-beschikbare AEM versie.
+Bij het maken worden RDE&#39;s ingesteld op de laatst beschikbare Adobe Experience Manager-versie (AEM). Een [ teruggestelde RDE ](#reset-rde), die kan worden uitgevoerd gebruikend Cloud Manager of het `aio aem:rde:reset` bevel, cycli RDE en plaats het aan de onlangs-beschikbare AEM versie.
 
 ## Problemen met de insteekmodule AIR RDE oplossen {#aio-rde-plugin-troubleshooting}
 

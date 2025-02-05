@@ -4,7 +4,7 @@ description: Leer hoe te opstelling een nieuw programma en een pijpleiding om to
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op o
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de Server van de Verwijzing van Adobe Experience Manager (AEM) de Toestemming van de Demo&#39;s van de Verwijzing toe:voegen-op reis, [ begrijpt de Invoegtoepassing van de Demo van de Verwijzing, ](installation.md) u leerde hoe het installatieproces van de Invoegtoepassing van de Demos van de Verwijzing werkt, die illustreert hoe de verschillende stukken samenwerken. Nu moet u:
+In het vorige document van de Server van de Verwijzing van Adobe Experience Manager (AEM) de Toestemming van de Demo&#39;s van de Verwijzing toe:voegen-op reis, [ begrijpt Invoegtoepassing van de Demo van de Verwijzing ](installation.md), leerde u hoe het installatieproces van de Invoegtoepassing van de Demos van de Verwijzing werkt, die illustreert hoe de verschillende stukken samenwerken. Nu moet u:
 
 * Een basisbegrip hebben van Cloud Manager.
 * Begrijp hoe de pijpleidingen inhoud en configuratie aan AEM leveren.

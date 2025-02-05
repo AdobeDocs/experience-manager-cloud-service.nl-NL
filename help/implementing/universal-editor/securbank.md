@@ -4,7 +4,7 @@ description: Leer over de Universele Redacteur met hands-on ervaring door de App
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -24,12 +24,12 @@ Leer over de Universele Redacteur met hands-on ervaring door de App te gebruiken
 
 De installatie van de app SecurBank is rechtuit, maar omdat deze veel gebieden van AEM as a Cloud Service raakt, zijn er een aantal stappen mee gemoeid. Hieronder volgt een overzicht van de belangrijkste stappen.
 
-1. [Een sandboxprogramma maken in Cloud Manager.](#create-sandbox-program)
-1. [Clone the programma&#39;s git repository and update with the SecurBank AEM project content.](#clone-and-update)
-1. [De pijpleiding in werking stellen om het project SecurBank AEM op te stellen.](#run-pipeline)
-1. [Haal Cloud Manager-referenties op voor de ontwikkeling van lokale webapps.](#retrieve-credentials)
-1. [Download en configureer de SecureBank-webapp.](#download-web-app)
-1. [Voer de SecurBank-webapp uit.](#run-web-app)
+1. [ creeer een zandbakprogramma in Cloud Manager ](#create-sandbox-program).
+1. [ kloon de git bewaarplaats van het programma en werk met het project SecurBank AEM ](#clone-and-update) bij.
+1. [ stel de pijpleiding in werking om het project op te stellen SecurBank AEM ](#run-pipeline).
+1. [ wint de geloofsbrieven van Cloud Manager voor lokale Web app ontwikkeling ](#retrieve-credentials) terug.
+1. [ Download en vorm het Web SecureBank app ](#download-web-app).
+1. [ stel het Web-app SecureBank ](#run-web-app) in werking.
 
 In de volgende secties worden de afzonderlijke vereiste taken in detail beschreven.
 
@@ -42,13 +42,13 @@ U hebt een nieuw Cloud Manager-programma nodig waarin u SecurBank kunt installer
 1. Maak een nieuw sandboxprogramma voor de SecureBank-app.
 
    * Gebruik de standaardopties wanneer het selecteren van **Oplossingen &amp; toe:voegen-ONS**.
-   * Voor details op hoe te om een zandbakprogramma tot stand te brengen, te zien gelieve het document [ Creërend Programma Sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * Voor details op hoe te om een zandbakprogramma tot stand te brengen, te zien gelieve het document [ Creërend Programma Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
 ### Clone the programma&#39;s git repository and update with the SecurBank AEM project content. {#clone-and-update}
 
 1. Zodra het programma wordt gecreeerd, open het en op het **lusje van de Bewaarplaatsen**, tik of klik de **knoop van Info van de Reparatie van de Toegang** om de **dialoog van Info van de Bewaarplaats** te openen en de geloofsbrieven noodzakelijk te bekijken om tot de git bewaarplaats voor het zandbakmilieu toegang te hebben.
 
-   * Voor details op hoe te om tot uw gegevensopslagplaats toegang te hebben, te zien gelieve het document [ Toegang hebbend tot Bewaarplaatsen.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   * Voor details op hoe te om tot uw gegevensopslagplaats toegang te hebben, te zien gelieve het document [ Toegang hebbend tot Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Gebruikend de geloofsbrieven in de **dialoog van Info van de Bewaarplaats**, kloon de bewaarplaats op uw lokale machine.
 
@@ -71,7 +71,7 @@ Met het AEM project voor SecurBank geëngageerd aan de zandbakbewaarplaats, kan 
 1. Terugkeer naar het **Overzicht** lusje van uw zandbakprogramma in Cloud Manager en stel de volledig-stapel non-production pijpleiding in werking.
 
    * Hef alle opties voor de pijpleidingslooppas op.
-   * Voor meer informatie over het runnen van pijpleidingen, zie gelieve het document [ Leiden Pijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * Voor meer informatie over het runnen van pijpleidingen, zie gelieve het document [ Leiden Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines).
 
 ### Haal Cloud Manager-referenties op voor de ontwikkeling van lokale webapps. {#retrieve-credentials}
 

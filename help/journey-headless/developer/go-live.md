@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Voor gebruikers die de beste ervaring hebben wanneer ze de toepassing zonder AEM
 * Toegang tot prestatierapporten
    * Leveringsprestaties
       * CDN (Fastly) prestaties - controleaantal vraag, geheim voorgeheugentarief, foutentarieven en ladingsverkeer
-      * De servers van de oorsprong - aantal vraag, foutentarieven, cpu laadt, loonladingsverkeer
+      * De servers van de oorsprong - aantal vraag, foutentarieven, lading CPU, ladingsverkeer
    * Auteursprestaties
       * Aantal gebruikers, aanvragen en laden controleren
 * Toepassings- en ruimtespecifieke prestatierapporten openen
@@ -129,7 +129,7 @@ U hebt uw eerste AEM Headless-project al gestart of u hebt nu alle kennis die u 
 
 De koploze winkels in AEM hoeven hier echter niet te stoppen. U zou zich in het [ Begonnen deel van de reis ](getting-started.md#integration-levels) kunnen herinneren wij kort bespraken hoe AEM niet alleen hoofdloze levering en traditionele full-stack modellen steunt, maar ook hybride modellen kunnen steunen die de voordelen van allebei combineren.
 
-Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga op het facultatieve, extra deel van de reis verder, [ hoe te om Enige Toepassingen van de Pagina (SPA) met AEM tot stand te brengen.](create-spa.md)
+Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga op het facultatieve, extra deel van de reis verder, [ hoe te om Enige Toepassingen van de Pagina (SPA) met AEM ](create-spa.md) tot stand te brengen.
 
 ## Aanvullende bronnen {#additional-resources}
 

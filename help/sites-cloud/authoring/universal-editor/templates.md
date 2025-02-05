@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Leer hoe u sjablonen maakt die u kunt gebruiken om pagina&#39;s te maken die u k
 
 >[!NOTE]
 >
->[ de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Redacteur van de Pagina editable zijn.](/help/sites-cloud/authoring/page-editor/templates.md)
+>[ de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn.
 
 ## Wat zijn paginasjablonen? {#what-are}
 
@@ -33,17 +33,17 @@ Als u sjablonen wilt gebruiken om pagina&#39;s te maken die u kunt bewerken met 
 
 Schakel eerst bewerkbare sjablonen in voor de configuratie van uw site.
 
-1. Gebruik de **console van de Plaatsen** en [ selecteer de wortel van uw plaats.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Gebruik de **console van Plaatsen** en [ selecteer de wortel van uw plaats ](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Zodra de plaatswortel wordt geselecteerd, tik of klik het [**pictogram van Eigenschappen** ](/help/sites-cloud/authoring/sites-console/page-properties.md) in de toolbar.
 1. Op het **Geavanceerde** lusje van de eigenschappendialoog neemt nota van de waarde op het **gebied van de Configuratie van de Wolk**.
 1. Van de belangrijkste navigatie, kies **Hulpmiddelen** -> **Algemeen** -> **Browser van de Configuratie**.
-1. In Browser van de Configuratie **[,](/help/implementing/developing/introduction/configurations.md)** selecteer de configuratie u in de vorige stap opnam en tikt of **Eigenschappen** in de toolbar klikt.
+1. In **[Browser van de Configuratie](/help/implementing/developing/introduction/configurations.md)**, selecteer de configuratie u in de vorige stap opnam en tikt of **Eigenschappen** in de toolbar klikt.
 1. In het **venster van de Eigenschappen van de Configuratie**, controleer de optie **Bewerkbare Malplaatjes**.
 1. Tik of klik **sparen &amp; sluit**.
 
 Nadat de configuratie is ingeschakeld, moet u sjablonen voor uw site toestaan.
 
-1. Gebruik de **console van de Plaatsen** en [ selecteer de wortel van uw plaats.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Gebruik de **console van Plaatsen** en [ selecteer de wortel van uw plaats ](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Zodra de plaatswortel wordt geselecteerd, tik of klik het [**pictogram van Eigenschappen** ](/help/sites-cloud/authoring/sites-console/page-properties.md) in de toolbar.
 1. Op het **Geavanceerde** lusje van de eigenschappendialoog onder de **sectie van de Montages van het Malplaatje**, tik of klik **toevoegen** knoop.
 1. In het nieuwe, lege gebied dat onder **Toegelaten Malplaatjes** verschijnt, voeg de weg `/conf/<site>/settings/wcm/templates/.*` toe.
@@ -67,7 +67,7 @@ Uw nieuwe pagina kan nu als sjabloon worden gebruikt bij het maken van nieuwe pa
 
 ## Een pagina maken op basis van een sjabloon {#creating-from-template}
 
-Het creëren van een pagina van een malplaatje dat met de Universele Redacteur editable is is het zelfde werkschema zoals [ creërend om het even welke andere pagina.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+Het creëren van een pagina van een malplaatje dat met de Universele Redacteur editable is is het zelfde werkschema zoals [ creërend een andere pagina ](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
 1. Gebruik de **console van Plaatsen** aan [ navigeer aan de plaats ](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) waar u wenst om de nieuwe pagina tot stand te brengen.
 
@@ -87,6 +87,6 @@ Met paginasjablonen definieert u alleen de eerste inhoud van pagina&#39;s. Pagin
 
 ## Bewerkbare sjablonen {#editable-templates}
 
-De pagina&#39;s die met de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) worden gecreeerd kunnen ook op malplaatjes worden gebaseerd. De malplaatjes die worden gebruikt om pagina&#39;s voor de Universele Redacteur en de Redacteur van de Pagina tot stand te brengen zowel hefboomwerking AEM [ editable malplaatjes.](/help/implementing/developing/components/templates.md)
+De pagina&#39;s die met de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) worden gecreeerd kunnen ook op malplaatjes worden gebaseerd. De malplaatjes die worden gebruikt om pagina&#39;s voor de Universele Redacteur en de Redacteur van de Pagina tot stand te brengen AEM [ editable malplaatjes ](/help/implementing/developing/components/templates.md).
 
 In sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Pagina-editor, worden alle functies van bewerkbare sjablonen gebruikt. Sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Universal Editor, gebruiken alleen de oorspronkelijke inhoudsfunctie.

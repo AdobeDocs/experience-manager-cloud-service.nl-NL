@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren en documenten publiceren en de publicatie ervan opheffen{#publishing-and-unpublishing-forms-and-documents}
 
@@ -122,7 +122,7 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 
 ## Publiceren en verwijderen voor Forms en documenten automatiseren {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-Met [!DNL AEM Forms] kunt u publicatie en verwijdering van middelen plannen voor Forms en Documenten. U kunt het schema opgeven in de Metagegevenseditor. Voor meer informatie over het beheren van vormmeta-gegevens, zie [ het Leiden vormmeta-gegevens.](manage-form-metadata.md)
+Met [!DNL AEM Forms] kunt u publicatie en verwijdering van middelen plannen voor Forms en Documenten. U kunt het schema opgeven in de Metagegevenseditor. Voor meer informatie over het beheren van vormmeta-gegevens, zie [ het Leiden vormmeta-gegevens ](manage-form-metadata.md).
 
 Voer de volgende stappen uit om de datum en het tijdstip van publicatie en het verwijderen van de publicatie van Forms &amp; Documents-elementen te plannen:
 

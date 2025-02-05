@@ -4,7 +4,7 @@ description: Leer hoe bewerkbare sjablonen worden gebruikt bij het maken van een
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 0%
@@ -225,7 +225,7 @@ Als u een map wilt maken, kunt u het volgende doen:
 
 >[!NOTE]
 >
->In Browser van de Configuratie [, ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerde beste praktijken niet.
+>In Browser van de Configuratie [ ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerde beste praktijken niet.
 
 ### ACLs en Groepen {#acls-and-groups}
 
@@ -467,7 +467,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 
 ### Layout {#layout}
 
-Wanneer [ het uitgeven van een malplaatje u de lay-out ](/help/sites-cloud/authoring/page-editor/templates.md) kunt bepalen, gebruikt dit [ standaard ontvankelijke lay-out, ](/help/sites-cloud/administering/responsive-layout.md) die [ op de pagina door de inhoudauteur kan worden gevormd.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+Wanneer [ het uitgeven van een malplaatje u de lay-out ](/help/sites-cloud/authoring/page-editor/templates.md) kunt bepalen, gebruikt dit [ standaard ontvankelijke lay-out ](/help/sites-cloud/administering/responsive-layout.md), die [ op de pagina door de inhoudauteur ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) kan worden gevormd.
 
 ### Inhoudsbeleid {#content-policies}
 

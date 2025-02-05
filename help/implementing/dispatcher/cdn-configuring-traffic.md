@@ -4,7 +4,7 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met in
 
 Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Leer meer over dit door [ te lezen Vormend CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
 
-Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door de Cloud Manager [ te gebruiken config pijpleiding.](/help/operations/config-pipeline.md) Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
+Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door de Cloud Manager [ te gebruiken config pijpleiding ](/help/operations/config-pipeline.md). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
 
 ## Evaluatievolgorde {#order-of-evaluation}
 

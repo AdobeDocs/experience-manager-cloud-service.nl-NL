@@ -5,7 +5,7 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ pas het Thema van de Plaats aan, ](customize-theme.md) u leerde hoe het thema wordt gebouwd, hoe te om het aan te passen, en hoe te om het te testen gebruikend levende AEM inhoud, en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ pas het Thema van de Plaats ](customize-theme.md) aan, leerde u hoe het thema wordt gebouwd, hoe te om het aan te passen, en hoe te om het te testen gebruikend levende AEM inhoud, en u zou nu moeten:
 
 * Begrijp de basisstructuur van het sitethema en hoe u dit kunt bewerken.
 * Zie hoe u themaaanpassingen kunt testen met echte AEM inhoud via lokale proxy.
@@ -78,7 +78,7 @@ U kunt de status van de pijpleiding controleren om de details van zijn vooruitga
 Zodra de pijpleiding volledig is, kunt u de beheerder informeren om de veranderingen te bevestigen. De beheerder zal dan:
 
 1. Open de AEM ontwerpomgeving.
-1. Navigeer aan [ de plaats de eerder gecreeerd beheerder.](create-site.md)
+1. Navigeer aan [ de plaats de eerder gecreeerd beheerder ](create-site.md).
 1. Bewerk een van de inhoudspagina&#39;s.
 1. Zie de toegepaste wijzigingen.
 

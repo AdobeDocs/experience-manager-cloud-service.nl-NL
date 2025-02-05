@@ -4,7 +4,7 @@ description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar v
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 0%
@@ -42,7 +42,7 @@ CRXDE Lite-gebruikersinterface bevat veel onderdelen en functies.
 
 ### Bovenste schakelbalk {#top-switcher-bar}
 
-De Bovenste Bar van de Schakelaar laat u snel tussen CRXDE Lite en [ de Manager van het Pakket schakelen.](package-manager.md)
+De hoogste bar van de Schakelaar laat u snel tussen CRXDE Lite en [ de Manager van het Pakket ](package-manager.md) schakelen.
 
 ### Knooppuntwidget {#node-path-widget}
 
@@ -183,7 +183,7 @@ Een map met CRXDE Lite maken:
 Een knooppunt maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In het [**Pane Exploderer**, ](#explorer-pane) klik de knoop met de rechtermuisknop aan waar u de nieuwe knoop wilt tot stand brengen, **creeer**, dan **creeer Knoop**.
+1. In het [**Pane Exploderer**](#explorer-pane), klik de knoop met de rechtermuisknop aan waar u de nieuwe knoop wilt tot stand brengen, **creeer**, dan **creeer Knoop**.
 1. Ga de **Naam** in en selecteer het **Type**.
 1. Klik **OK**.
 1. Klik [**sparen Al Knoop**](#save-all-button) om de veranderingen op de server te bewaren.
@@ -201,7 +201,7 @@ De validatie met betrekking tot of het gemaakte knooppunt wordt toegestaan door 
 Een eigenschap maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In het [**Deelvenster Exploderer**, ](#explorer-pane) selecteer de knoop waar u het nieuwe bezit wilt toevoegen.
+1. In het [**Deelvenster Exploderer**](#explorer-pane), selecteer de knoop waar u het nieuwe bezit wilt toevoegen.
 1. In het [**Lusje van Eigenschappen**](#properties-tab) in de bodemruit, ga de **Naam** in, het **Type**, en de **Waarde**.
 1. Klik **toevoegen**.
 1. Klik [**sparen Al Knoop**](#save-all-button) om de veranderingen op de server te bewaren.
@@ -211,10 +211,10 @@ Een eigenschap maken met CRXDE Lite:
 Een bestand maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In het [**Pane Exploderer**, ](#explorer-pane) klik de component met de rechtermuisknop aan waar u het dossier wilt tot stand brengen, **creeer**, dan **creeer Dossier**.
+1. In het [**Pane Exploderer**](#explorer-pane), klik de component met de rechtermuisknop aan waar u het dossier wilt tot stand brengen, **creeer**, dan **creeer Dossier**.
 1. Ga het dossier **Naam** met inbegrip van zijn uitbreiding in.
 1. Klik **OK**.
-1. Het nieuwe dossier opent als lusje in [**geeft Pane** uit.](#edit-pane)
+1. Het nieuwe dossier opent als lusje in [**uitgeeft Pane**](#edit-pane).
 1. Bewerk het bestand.
 1. Klik [**sparen Al Knoop**](#save-all-button) om de veranderingen te bewaren.
 

@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Pagina&#39;s ordenen {#creating-and-organizing-pages}
 
-Leer hoe u uw website kunt organiseren met AEM. Zodra u begrijpt hoe u uw pagina&#39;s moet organiseren, kunt u [ nieuwe pagina&#39;s ](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren en [ het bestaan pagina&#39;s beheren.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Leer hoe u uw website kunt organiseren met AEM. Zodra u begrijpt hoe u uw pagina&#39;s moet organiseren, kunt u [ nieuwe pagina&#39;s ](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren en [ het bestaan pagina&#39;s ](/help/sites-cloud/authoring/sites-console/managing-pages.md) beheren.
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ Het volgende toont een voorbeeld van de [ plaats van het Leerprogramma WKND ](ht
    /...
 ```
 
-Deze structuur kan van de **console van de Plaatsen[** worden bekeken, ](/help/sites-cloud/authoring/sites-console/introduction.md) waar u door de pagina&#39;s van uw website kunt navigeren en acties op de pagina&#39;s uitvoeren.
+Deze structuur kan van de **console van de Plaatsen[** worden bekeken ](/help/sites-cloud/authoring/sites-console/introduction.md), waar u door de pagina&#39;s van uw website kunt navigeren en acties op de pagina&#39;s uitvoeren.
 
 ## Naamgevingsconventies voor pagina {#page-naming-conventions}
 
@@ -130,7 +130,7 @@ AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst.
 
 ## Onderdelen {#components}
 
-[ Componenten ](/help/implementing/developing/components/overview.md) zijn de elementen die door AEM worden verstrekt zodat u specifieke soorten inhoud kunt toevoegen. AEM komt met een waaier van uit-van-de-doos componenten, genoemd [ de Componenten van de Kern, ](/help/implementing/developing/components/overview.md#core-components) die uitvoerige functionaliteit verstrekken. Enkele voorbeelden van de componenten zijn:
+[ Componenten ](/help/implementing/developing/components/overview.md) zijn de elementen die door AEM worden verstrekt zodat u specifieke soorten inhoud kunt toevoegen. AEM komt met een waaier van uit-van-de-doos componenten, genoemd [ de Componenten van de Kern ](/help/implementing/developing/components/overview.md#core-components), die uitvoerige functionaliteit verstrekken. Enkele voorbeelden van de componenten zijn:
 
 * Tekst
 * Afbeelding

@@ -4,7 +4,7 @@ description: Nadat u uw wolkenmiddelen hebt gevormd, geef uw teamtoegang tot AEM
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 >title="AEM productprofielen toewijzen"
 >abstract="Je mag Experience Manager Assets niet gebruiken. Neem contact op met de beheerder."
 
-In dit deel van de [ onboarding reis, ](overview.md) leert u hoe te om u teamtoegang tot AEM te verlenen gebruikend AEM productprofielen.
+In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om u teamtoegang tot AEM te verlenen gebruikend AEM productprofielen.
 
 ## Doelstelling {#objective}
 
-Nadat u het vorige document in deze onboarding reis hebt gelezen, [ creeer Milieu&#39;s, ](create-environments.md) en hebben uw wolkenmiddelen gevormd, verleent uw teamtoegang om zich het gebruiken van AEM productprofielen te AEM. Als systeembeheerder, doet u dit door AEM productprofielen toe te wijzen.
+Nadat u het vorige document in deze op het instappen reis hebt gelezen, [ creeer Milieu&#39;s ](create-environments.md), en hebt uw wolkenmiddelen gevormd, verleent uw teamtoegang om zich het gebruiken van AEM productprofielen te AEM. Als systeembeheerder, doet u dit door AEM productprofielen toe te wijzen.
 
 Na het lezen van dit document is het verstandig:
 
@@ -64,7 +64,7 @@ Voordat u deze sectie gaat lezen, moet u over de volgende informatie beschikken 
 
 Voer de volgende stappen uit om de AEM productprofielen van de Admin Console te bekijken.
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` .](https://adminconsole.adobe.com)
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
 
 1. Van de **pagina van het Overzicht**, uitgezochte **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
 

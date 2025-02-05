@@ -4,7 +4,7 @@ description: Voordat u zich aanmeldt bij AEMaaCS, is het handig om enkele termin
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # AEM as a Cloud Service Terminologie {#terminology}
 
-In dit deel van de [ onboarding reis, ](overview.md) leert u enkele terminologie van AEM as a Cloud Service en zijn basisstructuur.
+In dit deel van de [ onboarding reis ](overview.md), leert u enkele terminologie van AEM as a Cloud Service en zijn basisstructuur.
 
 ## Doelstelling {#objective}
 
-Nu u begrijpt wat tot het onboarding proces door het document [ onboarding Voorbereiding heeft geleid te lezen, ](preparation.md) is het nuttig om enkele terminologie van het systeem en zijn basisstructuur te begrijpen alvorens het programma te openen.
+Nu u begrijpt wat tot het onboarding proces door het document [ onboarding Voorbereiding ](preparation.md) heeft geleid te lezen, is het nuttig om enkele terminologie van het systeem en zijn basisstructuur te begrijpen alvorens het programma te openen.
 
 AEM as a Cloud Service is een krachtig en flexibel hulpmiddel en om elk hulpmiddel te gebruiken dat u zou moeten kennen met zijn organisatie en de terminologie en de taal die worden gebruikt om het te beschrijven. Dit document bevat een overzicht van enkele belangrijke termen die u moet begrijpen voordat u het systeem gaat gebruiken.
 

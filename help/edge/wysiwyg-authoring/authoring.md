@@ -4,7 +4,7 @@ description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U hebt twee opties om inhoud voor Edge Delivery Services te ontwerpen:
 
 * [ Universele Redacteur ](#universal-editor) - een moderne wat-u-ziet-is-wat-u-krijgt (WYSIWYG) UI voor auteursinhoud binnen AEM
-* [ document-Gebaseerde Authoring ](#document-based) - zoals Microsoft Word of Google Docs
+* [ op document-Gebaseerde Authoring ](#document-based) - zoals Microsoft Word of Google Docs
 
 ## Universal Editor Authoring {#universal-editor}
 
@@ -48,7 +48,7 @@ De details van de blokken kunnen dan in het paneel van Eigenschappen worden gevo
 
 ![ Vormend blokeigenschappen ](assets/block-properties.png)
 
-Voor details op hoe te om auteur te gebruiken de Universele Redacteur, te zien gelieve het document [ Authoring Inhoud met de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Voor details op hoe te om auteur te gebruiken de Universele Redacteur, te zien gelieve het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Gelieve te zien de [ Begonnen Gids van de Ontwikkelaar Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om te leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
 

@@ -4,7 +4,7 @@ description: Begrijp het JSON-contract tussen de componentdefinitie en de Univer
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -21,7 +21,7 @@ In het bestand `component-definition.json` worden de componenten gedefinieerd di
 
 >[!TIP]
 >
->Voor een overzicht van de inhoud modellerend proces, te zien gelieve het document [ Modellering van de Inhoud voor de Authoring van WYSIWYG met de Projecten van Edge Delivery Services.](/help/edge/wysiwyg-authoring/content-modeling.md)
+>Voor een overzicht van het inhoud modelleringsproces, te zien gelieve het document [ Modellering van de Inhoud voor de Authoring van WYSIWYG met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 
 ## `groups` {#groups}
 
-`groups` bepaalt de groepen componenten die de auteur in de Universele Redacteur ziet wanneer het klikken **** pictogram in het eigenschappenpaneel van de redacteur [ toevoegt een nieuwe component aan een pagina.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) Met groepen kunt u de componenten ordenen. De gemeenschappelijke groepen zouden **Algemene Componenten** en **Geavanceerde Componenten** kunnen zijn.
+`groups` bepaalt de groepen componenten die de auteur in de Universele Redacteur ziet wanneer het klikken **** pictogram in het eigenschappenpaneel van de redacteur [ toevoegt een nieuwe component aan een pagina ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Groepen helpen bij het ordenen van de componenten. De gemeenschappelijke groepen zouden **Algemene Componenten** en **Geavanceerde Componenten** kunnen zijn.
 
 * `title` definieert de tekstuele beschrijving van de groep die wordt weergegeven in de gebruikersinterface van de editor.
 * `id` geeft de groep op unieke wijze aan.
@@ -94,7 +94,7 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 Nadat `plugin` is gedefinieerd, moet u aangeven of het een pagina-gerelateerd of fragmentgerelateerd bestand is.
 
 * `page` geeft aan dat de component inhoud op de huidige pagina is.
-* `cf` wijst erop dat de component met inhoud binnen a [ het Fragment van de Inhoud verwant is.](/help/assets/content-fragments/content-fragments.md)
+* `cf` wijst erop dat de component met inhoud binnen a [ het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments.md) verwant is.
 
 ### `page` {#page}
 

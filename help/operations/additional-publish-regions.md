@@ -4,7 +4,7 @@ description: Leer hoe AEM as a Cloud Service extra publicatiegebieden ondersteun
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Organisaties kunnen maximaal drie extra publicatiegebieden licenties verlenen.
 >[!NOTE]
 >
 >* Deze functie is beschikbaar voor de Sites- en Forms-oplossingen.
->* Deze eigenschap kan niet op [ zandbakprogramma&#39;s worden toegepast.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Deze eigenschap kan niet op [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) worden toegepast.
 >* Voor deze functie moet uw programma worden bijgewerkt naar AEM versie 12142 of hoger.
 
 ## Gevallen gebruiken {#use-cases}

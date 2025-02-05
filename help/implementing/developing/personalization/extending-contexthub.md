@@ -4,7 +4,7 @@ description: Bepaal nieuwe types van opslag ContextHub en modules wanneer de ver
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In de meeste gevallen is slechts één kandidaat noodzakelijk en de prioriteit kan aan `0` worden geplaatst, maar als u geinteresseerd bent kunt u over [ meer geavanceerde registraties leren, ](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) die één van weinige opslagimplementaties toestaat om op voorwaarde javascript (`applies`) en kandidaatprioriteit worden gekozen.
+In de meeste gevallen is slechts één kandidaat noodzakelijk en de prioriteit kan aan `0` worden geplaatst, maar als u geinteresseerd bent kunt u over [ meer geavanceerde registraties ](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) leren, die één van weinige opslagimplementaties toestaat om op voorwaarde javascript (`applies`) en kandidaatprioriteit worden gekozen.
 
 ## ContextHub UI-moduletypen maken {#creating-contexthub-ui-module-types}
 

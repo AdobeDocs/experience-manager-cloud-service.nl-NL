@@ -4,7 +4,7 @@ description: Definieer de structuur van de inhoud die u wilt maken en gebruiken 
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Definieer de structuur van de inhoud die u wilt maken en gebruiken AEM functies 
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[ nu dat u een configuratie hebt gecreeerd, ](create-configuration.md) kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
+[ nu dat u een configuratie ](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u in AEM maakt en beheert. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
@@ -67,8 +67,8 @@ U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfra
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten zelf zult opslaan.](create-assets-folder.md)
+Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten zelf ](create-assets-folder.md) zult opslaan.
 
 >[!TIP]
 >
->Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).

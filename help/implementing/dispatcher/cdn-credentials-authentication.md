@@ -4,7 +4,7 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # CDN-referenties en -verificatie configureren {#cdn-credentials-authentication}
 
-Adobe-verstrekte CDN heeft verscheidene eigenschappen en de diensten, waarvan sommige op geloofsbrieven en authentificatie baseren om een aangewezen niveau van ondernemingsveiligheid te verzekeren. Door regels in een configuratiedossier te verklaren dat door de Cloud Manager [ wordt opgesteld config pijpleiding te gebruiken, ](/help/operations/config-pipeline.md) klanten kunnen, op een zelfbediening manier, het volgende vormen:
+Adobe-verstrekte CDN heeft verscheidene eigenschappen en de diensten, waarvan sommige op geloofsbrieven en authentificatie baseren om een aangewezen niveau van ondernemingsveiligheid te verzekeren. Door regels in een configuratiedossier te verklaren dat door de Cloud Manager [ wordt opgesteld config pijpleiding ](/help/operations/config-pipeline.md) te gebruiken, kunnen de klanten, op een zelfbediening manier, het volgende vormen:
 
 * De x-AEM-Edge-Zeer belangrijke HTTP- kopbalwaarde die door Adobe CDN wordt gebruikt om verzoeken te bevestigen die uit een klant-beheerde CDN komen.
 * Het API-token dat wordt gebruikt om bronnen in de CDN-cache leeg te maken.

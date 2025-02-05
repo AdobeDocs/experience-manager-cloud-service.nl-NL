@@ -2,7 +2,8 @@
 title: Digitale middelen opnieuw verwerken
 description: Meer informatie over verschillende methoden voor het opwerken van digitale elementen
 role: User, Leader, Developer
-source-git-commit: b041aa680b65ba4da0d7bf90fcb849a6388a9838
+exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%
@@ -81,7 +82,7 @@ Lees meer over [ het Opverwerken van meta-gegevensprofielen ](https://experience
 
 ### Dynamic Media-elementen in een map opnieuw verwerken {#reprocessing-dynamic-media}
 
-U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd. Voor meer informatie, bezoek [ opnieuw verwerken de activa van Dynamic Media in een omslag.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd. Voor meer informatie, bezoek [ opnieuw verwerken de activa van Dynamic Media in een omslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >

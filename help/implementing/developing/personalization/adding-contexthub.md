@@ -4,7 +4,7 @@ description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub 
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -145,7 +145,7 @@ De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt same
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 
-Er zijn verscheidene opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [ het Vormen ContextHub voor meer informatie.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+Er zijn verscheidene opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [ het Vormen ContextHub voor meer informatie ](configuring-contexthub.md#logging-debug-messages-for-contexthub).
 
 ## Zie een Overzicht van het Kader ContextHub {#see-an-overview-of-the-contexthub-framework}
 

@@ -4,7 +4,7 @@ description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen,
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud weer 
 
 1. Logboek in AEM as a Cloud Service en van het belangrijkste menu selecteert **Navigatie** > **de Fragmenten van de Inhoud**.
 
-1. Selecteer de [ omslag u eerder creeerde.](create-assets-folder.md)
+1. Selecteer de [ omslag u eerder ](create-assets-folder.md) creeerde.
 1. Selecteer **creeer**.
 1. Het maken van een inhoudsfragment wordt weergegeven als een dialoogvenster.
 Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
@@ -49,8 +49,8 @@ Inhoudsfragmenten kunnen ook verwijzen naar andere elementen in AEM. [ Deze acti
 
 ## Volgende stappen {#next-steps}
 
-Nu u een Fragment van de Inhoud hebt gecreeerd, kunt u zich op het definitieve deel van het begonnen worden gids bewegen en [ creeer API verzoeken om tot inhoudsfragmenten toegang te hebben en te leveren.](create-api-request.md)
+Nu u een Fragment van de Inhoud hebt gecreeerd, kunt u zich op het definitieve deel van het begonnen worden gids bewegen en [ creeer API verzoeken om tot inhoudsfragmenten toegang te hebben en te leveren ](create-api-request.md).
 
 >[!TIP]
 >
->Voor volledige details over het beheren van de Fragmenten van de Inhoud, zie de [ documentatie van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md)
+>Voor volledige details over het beheren van de Fragmenten van de Inhoud, zie de [ documentatie van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md).

@@ -4,13 +4,13 @@ description: Leer hoe de sjabloonconsole fungeert als de centrale locatie voor h
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
 
 ---
-
 
 # De Sjabloonconsole {#templates-console}
 
@@ -20,7 +20,7 @@ Leer hoe de sjabloonconsole fungeert als de centrale locatie voor het weergeven 
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. [ AEM bewerkbare malplaatjes ](/help/implementing/developing/components/templates.md) kan de structuur van de resulterende pagina, om het even welke aanvankelijke inhoud, en de componenten bepalen die (ontwerpeigenschappen) kunnen worden gebruikt.
 
-De auteurs van de inhoud worden voorgesteld met een selectie van beschikbare malplaatjes wanneer zij [ nieuwe pagina&#39;s in de plaatsenconsole creëren.](/help/sites-cloud/authoring/sites-console/creating-pages.md) Sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met:
+De auteurs van de inhoud worden voorgesteld met een selectie van beschikbare malplaatjes wanneer zij [ nieuwe pagina&#39;s in de plaatsenconsole ](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren. Sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met:
 
 * [ de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of
 * [De Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -73,7 +73,7 @@ Als een auteur aan een malplaatje begint dat met de malplaatjeredacteur wordt ge
 
 ## Eigenschappen {#properties}
 
-U kunt de [ eigenschappen van het malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) veel op de zelfde manier uitgeven dat u pagina eigenschappen kunt [ uitgeven.](/help/sites-cloud/authoring/sites-console/page-properties.md) Sjablooneigenschappen zijn onder andere:
+U kunt de [ eigenschappen van het malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) veel op de zelfde manier uitgeven dat u [ pagina eigenschappen ](/help/sites-cloud/authoring/sites-console/page-properties.md) kunt uitgeven.Template eigenschappen omvatten:
 
 * Sjabloontitel
 * Beschrijving
@@ -135,6 +135,6 @@ Selecteer het malplaatje en dan de Tik of klik **Schrapping** om het te schrappe
 
 ## Sjablonen maken {#create}
 
-Gebruik **creeer** knoop in de console om een nieuw malplaatje in uw huidige plaats tot stand te brengen. Voor details bij het creëren van een malplaatje, te zien gelieve het document [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina editable zijn.](/help/sites-cloud/authoring/page-editor/templates.md)
+Gebruik **creeer** knoop in de console om een nieuw malplaatje in uw huidige plaats tot stand te brengen. Voor details bij het creëren van een malplaatje, te zien gelieve het document [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/templates.md) editable zijn.
 
 **creeer** knoop wordt slechts gebruikt om malplaatjes tot stand te brengen die met de Redacteur van de Pagina editable zijn. Gelieve te zien het document [ Malplaatjes om Pagina&#39;s tot stand te brengen die met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) editable zijn om over het creëren van malplaatjes te leren die op pagina&#39;s worden gebaseerd die met de Universele Redacteur worden gemaakt.

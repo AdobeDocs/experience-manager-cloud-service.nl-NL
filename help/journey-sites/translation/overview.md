@@ -8,7 +8,7 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale erva
 
 AEM biedt even krachtige hulpmiddelen om uw inhoud te vertalen die u toestaat om het aan uw publiek in andere regio&#39;s of scènes zo snel mogelijk te leveren. Deze documentatierit introduceert u aan de auteurshulpmiddelen zodat u begrijpt hoe de inhoud in AEM wordt gecreeerd en wordt beheerd en dan duikt in wat u moet weten om uw eigen vertaalproject te beheren.
 
-Als u al bekend bent met AEM Sites en uw vertaalvereisten, hebt u wellicht al de grondkennis van deze reis. Als zo, overweeg het verwijzen naar onze technische documentatie die onder de [ extra hieronder middelensectie wordt verbonden.](#additional-resources)
+Als u al bekend bent met AEM Sites en uw vertaalvereisten, hebt u wellicht al de grondkennis van deze reis. Als zo, overweeg het verwijzen naar onze technische documentatie die onder de [ extra hieronder resourcesectie wordt verbonden ](#additional-resources).
 
 ## AEM Documentenreizen {#documentation-journeys}
 
@@ -39,7 +39,7 @@ Als u wilt weten hoe de Adobe aanbeveelt om vestigingenzaken met AEM op te losse
 
 Deze reis wordt ontworpen voor de vertaal specialistische persoon, die vaak als de Manager van het Project van de Vertaling of TPM wordt bedoeld. Deze reis beschrijft de vereisten, de stappen, en de benadering om de inhoud van AEM Sites te vertalen. De reis kan aanvullende personen definiëren waarmee de vertaalspecialist moet communiceren, maar het gezichtspunt voor de reis is dat van de vertaalspecialist.
 
-Deze reis veronderstelt de lezer ervaring die inhoud op een groot CMS systeem vertaalt, maar veronderstelt geen kennis van AEM.
+Deze reis veronderstelt de lezer ervaring vertaalend inhoud op een groot systeem van CMS heeft, maar veronderstelt geen kennis van AEM.
 
 Het volgende is de persoon die in deze reis interactie heeft.
 

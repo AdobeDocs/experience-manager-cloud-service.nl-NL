@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Maak een front-end pijplijn om de aanpassing van het thema van uw site te behere
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Aanmaak van de Plaats, [ creeer Plaats van Malplaatje, ](create-site.md) u leerde hoe te om een plaatsmalplaatje te gebruiken om snel een AEM plaats tot stand te brengen die verder kan worden aangepast gebruikend voorste hulpmiddelen en nu zou u nu moeten:
+In het vorige document van de AEM Snelle reis van de Aanmaak van de Plaats, [ creeer Plaats van Malplaatje ](create-site.md), leerde u hoe te om een plaatsmalplaatje te gebruiken om snel een AEM plaats tot stand te brengen die verder kan worden aangepast gebruikend voorste hulpmiddelen en nu zou u moeten nu:
 
 * Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
 * Leer hoe u een site maakt met een sjabloon.
@@ -114,11 +114,11 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Begrijp wat een front-end pijpleiding is.
 * Weet hoe u een front-end pijpleiding in Cloud Manager kunt opzetten.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Verwezenlijking van de Plaats door het document [ Toegang van de Verlening tot de Ontwikkelaar van het Front-End, ](grant-access.md) verder waar u aan boord de front-end ontwikkelaars in Cloud Manager zult zodat zij toegang tot uw AEM plaats en pijpleiding hebben.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ Toegang van de Verlening tot de Ontwikkelaar van het Front-Eind ](grant-access.md) opnieuw te herzien, waar u aan boord de front-end ontwikkelaars in Cloud Manager zult zodat zij toegang tot uw AEM plaats en pijpleiding hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats, ](customize-theme.md) het volgende is sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats ](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ Opslagplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - als u meer informatie over nodig hebt om git bewaarplaatsen voor uw project te vestigen en te beheren AEMaaCS, dit document zien.

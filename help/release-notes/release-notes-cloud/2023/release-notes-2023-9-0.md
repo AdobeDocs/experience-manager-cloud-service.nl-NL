@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2023.9.0 versie van  [!DNL Adobe Experien
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -58,7 +58,7 @@ U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw i
 
 ### Nieuwe functies in de beheerweergave {#admin-view-features}
 
-* **integreer AEM Assets as a Cloud Service met op document-Gebaseerde Authoring voor Edge Delivery Services**: Integreer AEM Assets met op document-Gebaseerde Authoring voor Edge Delivery Services om websiteauteurs toe te laten om [ beelden beschikbaar in de bewaarplaatsen van AEM Assets te gebruiken terwijl het ontwerpen van documenten in Microsoft Word of de Documenten van Google ](/help/edge/using.md#integrate-assets-edge).
+* **integreer AEM Assets as a Cloud Service met op document-Gebaseerde Authoring voor Edge Delivery Services**: Integreer AEM Assets met op document-Gebaseerde Authoring voor Edge Delivery Services om websiteauteurs toe te laten om [ beelden beschikbaar in de bewaarplaatsen van AEM Assets te gebruiken terwijl het ontwerpen van documenten in Microsoft Word of Google Docs ](/help/edge/using.md#integrate-assets-edge).
 
 * **Extraheer de archieven van het ZIP**: Mogelijkheid om de archieven van het ZIP te selecteren die in Experience Manager worden beheerd en [ die de dossiers direct in Experience Manager ](/help/assets/manage-digital-assets.md#extract-zip-archives) halen zonder hen te downloaden.
 
@@ -118,9 +118,9 @@ U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw i
 
 ### Nieuw gedrag CDN in cache plaatsen voor aan campagne gerelateerde URL-parameters {#cache-url-params}
 
-Voor nieuwe milieu&#39;s, zal CDN marketing verwante vraagparameters door gebrek verwijderen om de prestaties van de marketing campagne en de slagverhoudingen van het geheime voorgeheugen te verhogen. Bestaande omgevingen blijven ongewijzigd. [ leer meer.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Voor nieuwe milieu&#39;s, zal CDN marketing verwante vraagparameters door gebrek verwijderen om de prestaties van de marketing campagne en de slagverhoudingen van het geheime voorgeheugen te verhogen. Bestaande omgevingen blijven ongewijzigd. [ leer meer ](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
-### Regels voor vroege adoptie van verkeersfilters (inclusief WAF-regels) {#waf-early-adopter}
+### Programma voor vroege adoptie van verkeersfilterregels (inclusief WAF-regels) {#waf-early-adopter}
 
 Het verkeer van de filter bij CDN die op wordt gebaseerd:
 

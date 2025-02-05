@@ -5,7 +5,7 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Voor een meer gedetailleerde beschrijving van de component, kunt u het informati
 
 ![ Browser van de Component informatie ](assets/editor-side-panel-component-description.png)
 
-Voor meer gedetailleerde informatie over de componenten beschikbaar aan u ziet de [ Console van de Component.](/help/sites-cloud/authoring/components-console.md)
+Voor meer gedetailleerde informatie over de componenten beschikbaar aan u ziet de [ Console van de Component ](/help/sites-cloud/authoring/components-console.md)
 
 ## Assets Browser {#assets-browser}
 
@@ -182,4 +182,4 @@ Een pagina die deel van a [ livecopy ](/help/sites-cloud/administering/msm/overv
 
 ## Gekoppelde inhoudsbrowser {#associated-content-browser}
 
-Als uw pagina de Fragmenten van de Inhoud bevat, hebt u ook toegang tot [ browser voor Bijbehorende Inhoud.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Als uw pagina de Fragmenten van de Inhoud bevat, hebt u ook toegang tot [ browser voor Verwante Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content).

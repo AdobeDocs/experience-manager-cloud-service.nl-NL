@@ -4,7 +4,7 @@ description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschill
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
@@ -34,11 +34,11 @@ Dit document gebruikt het voorbeeld van omleidingen om te illustreren hoe u derg
 
 >[!TIP]
 >
->Voor meer informatie over hoe spreadsheets in het algemeen met Edge Delivery Services werken, zie gelieve het document [ Spreadsheets en JSON.](/help/edge/developer/spreadsheets.md)
+>Voor meer informatie over hoe spreadsheets in het algemeen met Edge Delivery Services werken, te zien gelieve het document [ Spreadsheets en JSON ](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->Spreadsheets mogen alleen worden gebruikt om tabelgegevens te onderhouden. Voor het opslaan van gestructureerde gegevens, [ controle uit AEM het installeren van headless eigenschappen.](/help/headless/introduction.md)
+>Spreadsheets mogen alleen worden gebruikt om tabelgegevens te onderhouden. Voor het opslaan van gestructureerde gegevens, [ controle uit AEM het gebruiken van headless eigenschappen ](/help/headless/introduction.md).
 
 ## Vereisten {#prerequisites}
 
@@ -150,7 +150,7 @@ Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u het `paths.json` -
 
    >[!NOTE]
    >
-   >Dit `paths.json` -item is gebaseerd op het voorbeeld van het maken van omleidingen met behulp van tabelgegevens. Zorg ervoor om de weg aangewezen aan het [ type van spreadsheet bij te werken u creeert.](#other)
+   >Dit `paths.json` -item is gebaseerd op het voorbeeld van het maken van omleidingen met behulp van tabelgegevens. Zorg ervoor om de weg aangewezen aan het [ type van spreadsheet bij te werken u ](#other) creeert.
 
 1. Klik **Veranderingen vastleggen...** om de veranderingen in `main` te bewaren.
 
@@ -174,7 +174,7 @@ Het spreadsheet voor omleiding wordt nu gepubliceerd en openbaar gemaakt.
 
 >[!TIP]
 >
->Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services ](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Andere spreadsheettypen {#other}
 
@@ -205,7 +205,7 @@ Bovendien, kunt u [ uw eigen spreadsheet ](#own-spreadsheet) met willekeurige ko
 
 ## Uw eigen spreadsheet maken {#own-spreadsheet}
 
-1. Volg de zelfde stappen in de sectie [ creëren Spreadsheet.](#spreadsheet)
+1. Volg de zelfde stappen in de sectie [ creëren Spreadsheet ](#spreadsheet).
 
 1. Wanneer het selecteren van het malplaatje, kies **Spreadsheet**.
 

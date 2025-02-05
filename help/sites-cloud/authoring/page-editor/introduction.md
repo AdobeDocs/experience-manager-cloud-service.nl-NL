@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # De AEM Pagina-editor {#editing-page-content}
 
-Zodra uw pagina in de [**console van Plaatsen** wordt gecreeerd, ](/help/sites-cloud/authoring/sites-console/introduction.md) kunt u de inhoud van de pagina uitgeven gebruikend de AEM paginaredacteur, een krachtig hulpmiddel om uw inhoud te ontwerpen.
+Zodra uw pagina in de **console van de Plaatsen[** {wordt gecreeerd, kunt u de inhoud van de pagina uitgeven gebruikend de AEM paginaredacteur, een krachtig hulpmiddel om uw inhoud te ontwerpen.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur die in dit document wordt beschreven, of [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)[
+>Wanneer het uitgeven van een pagina in de **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur openen die in dit document wordt beschreven, of [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).[**[
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ De paginaboolbar biedt toegang tot context-aangewezen functionaliteit, afhankeli
 
 #### Zijpaneel {#side-panel-button}
 
-Dit opent/sluit het [ zijpaneel, ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) dat Browser van Activa, Browser van de Component, en de Boom van de Inhoud houdt.
+Dit opent/sluit het [ zijpaneel ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), dat Browser van Activa, Browser van de Component, en de Boom van de Inhoud houdt.
 
 ![ Kneep van het Zijpaneel ](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ Dit knevels de [ mededingertoolbar ](/help/sites-cloud/authoring/page-editor/res
 
 #### ContextHub {#context-hub}
 
-Dit opent [ ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) het is slechts beschikbaar op **Voorproef** wijze.
+Dit opent [ ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md). Het is slechts beschikbaar op **1} wijze van de Voorproef {.**
 
 ![ knoop van de Hub van de Context ](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ Er zijn verschillende modi voor het bewerken van een pagina die verschillende ha
 
 #### Voorvertoning {#preview}
 
-De **knoop van de Voorproef** laat [ voorproefwijze toe.](#preview-mode) , waarbij de pagina wordt weergegeven zoals deze wordt weergegeven bij publicatie.
+De **knoop van de Voorproef** laat [ voorproefwijze ](#preview-mode) toe, tonend de pagina aangezien het zal verschijnen wanneer gepubliceerd.
 
 ![ knoop van de Voorproef ](assets/page-editor-preview.png)
 

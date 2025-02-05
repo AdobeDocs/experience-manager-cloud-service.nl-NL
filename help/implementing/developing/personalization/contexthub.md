@@ -4,7 +4,7 @@ description: ContextHub is een kader om, contextgegevens op te slaan te manipule
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Met de client-side JavaScript API hebt u toegang tot de gegevens voor het aanpas
 
 ## Presentatie {#presentation}
 
-De [ toolbar ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md) laat tellers en auteurs toe om opslaggegevens te zien en te manipuleren voor het simuleren van de gebruikerservaring wanneer het ontwerpen van pagina&#39;s. De toolbar bestaat uit groepen modules UI die toegang tot [ opslag ContextHub verlenen, ](#persistence) die gegevens ContextHub over de cliënt voortzetten.
+De [ toolbar ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md) laat tellers en auteurs toe om opslaggegevens te zien en te manipuleren voor het simuleren van de gebruikerservaring wanneer het ontwerpen van pagina&#39;s. De toolbar bestaat uit groepen modules UI die toegang tot [ opslag ContextHub ](#persistence) verlenen, die gegevens ContextHub over de cliënt voortzetten.
 
 Elke module ContextHub UI is een geval van een vooraf bepaald moduletype:
 

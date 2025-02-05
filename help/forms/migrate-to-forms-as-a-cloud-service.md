@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Voor een soepele overgang van AEM Forms 6.5 naar AEM as a Cloud Service-omgeving
 * In een Cloud Service-omgeving werkt het migratiehulpprogramma in combinatie met het Content Transfer Tool. Het migratiehulpprogramma maakt [!DNL AEM Forms] -elementen compatibel met Cloud Service en het gereedschap voor het overbrengen van inhoud migreert de inhoud van uw [!DNL AEM Forms] -omgeving naar een [!DNL AEM] as a Cloud Service omgeving. Alvorens het Nut van de Migratie te gebruiken, leer het proces van [ zich het bewegen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Voor het proces wordt het volgende gereedschap gebruikt:
    * [ het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): Het hulpmiddel van de Overdracht van de Inhoud helpt u voorbereidingen treffen en inhoud van bestaand milieu overbrengen aan een milieu van de Cloud Service. Hiermee kunnen gebruikers eenvoudig upgraden van AEM Forms naar de cloud-omgeving.
 * Accounts met beheerderrechten op [!DNL AEM Forms] as a Cloud Service en uw lokale [!DNL AEM Forms] omgeving.
-* De download en installeert Analysator van Beste praktijken, het Hulpmiddel van de Overdracht van de Inhoud, en [!DNL AEM Forms] Nut van de Migratie van [ het Portaal van de Distributie van de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* De download en installeert Analysator van Beste praktijken, het Hulpmiddel van de Overdracht van de Inhoud, en [!DNL AEM Forms] Nut van de Migratie van [ het Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 * Stel het [ hulpmiddel in werking van de Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) en verhelpt de gemelde kwestie. Voor de mogelijke kwesties met betrekking tot het migreren van Adobe Experience Manager Forms aan Adobe Experience Manager Forms as a Cloud Service, zie [ AEM de Detectie van het Patroon voor Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
 

@@ -4,7 +4,7 @@ description: De functionaliteit van de Asset Share Query Builder wordt weergegev
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -487,7 +487,7 @@ Gebruik debugger van de Bouwer van de Vraag van de AEM om een verklaarbare vraag
 >
 >De configuratie van de registreerapparaten wordt beschreven in het document [ Registreren ](/help/implementing/developing/introduction/logging.md).
 
-De logboekoutput (niveau INFO) van de implementatie van de vraagbouwer wanneer het uitvoeren van de vraag die in de vorige sectie [ wordt beschreven het Testen en het Zuiveren:](#testing-and-debugging)
+De logboekoutput (niveau INFO) van de implementatie van de vraagbouwer wanneer het uitvoeren van de vraag die in de vorige sectie [ wordt beschreven het Testen en het Zuiveren ](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

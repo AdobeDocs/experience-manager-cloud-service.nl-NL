@@ -4,9 +4,9 @@ description: Meer informatie over ondersteuning voor Content Fragments in de Ass
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1827'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Meer informatie over ondersteuning voor Content Fragments in de Assets HTTP API,
 
 >[!NOTE]
 >
->Voor de recentste informatie over Experience Manager APIs, gelieve ook [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te bezoeken.
+>Voor de recentste informatie over Experience Manager APIs, bezoek [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 [ Assets REST API ](/help/assets/mac-api-assets.md) staat ontwikkelaars voor Adobe Experience Manager as a Cloud Service toe om tot inhoud (die in AEM wordt opgeslagen) direct over HTTP API, als (Create, Lees, Update, Schrapping) verrichtingen toegang te hebben CRUD.
 

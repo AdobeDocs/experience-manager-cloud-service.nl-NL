@@ -4,7 +4,7 @@ description: Voor Adaptief Forms kunt u naast de landinstellingen uit het tekstv
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Ondersteuning voor een nieuwe landinstelling toevoegen in de Adaptive Forms-runt
 #### 1. Kloont de repository {#clone-the-repository}
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de Forms Cloud Service-opslagplaats wilt klonen.
-1. Voer het bevel uit dat u [ van Cloud Manager wordt teruggewonnen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) Deze lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` .
+1. Voer het bevel uit dat u [ van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) wordt teruggewonnen. Dit lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/` .
 1. Gebruik de gebruikersnaam en het wachtwoord van de it om de repository te klonen.
 1. Open de gekloonde opslagmap voor Forms Cloud Service in de voorkeurseditor.
 

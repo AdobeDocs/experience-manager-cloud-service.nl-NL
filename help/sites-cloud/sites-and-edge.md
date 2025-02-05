@@ -4,13 +4,13 @@ description: Begrijp hoe de Edge Delivery Services de creatie en het publiceren 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b3497f87446ca4c1c71d48f29aebcaa882feb898
+exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
 
 ---
-
 
 # AEM Sites en Edge Delivery Services {#sites-and-edge}
 
@@ -22,7 +22,7 @@ Naast al [ de macht en de eigenschappen die as a Cloud Service AEM Sites ](/help
 
 ## Wat zijn Edge Delivery Services? {#what-is-edge}
 
-Edge Delivery Services bieden buitengewone ervaringen die de betrokkenheid en conversies stimuleren door het bieden van ervaringen met hoge impact die snel bij de auteur en de ontwikkeling aankomen. Het is een samenstellbare reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Leer meer over Edge Delivery Services in het document [ Overzicht van Edge Delivery Services.](/help/edge/overview.md)
+Edge Delivery Services bieden buitengewone ervaringen die de betrokkenheid en conversies stimuleren door het bieden van ervaringen met hoge impact die snel bij de auteur en de ontwikkeling aankomen. Het is een samenstellbare reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Leer meer over Edge Delivery Services in het document [ Overzicht van Edge Delivery Services ](/help/edge/overview.md).
 
 Door Edge Delivery Services samen met AEM Sites as a Cloud Service te gebruiken, kunnen uw projecten profiteren van:
 
@@ -51,13 +51,13 @@ Edge Delivery Services verhogen ook de snelheid waarmee uw inhoud wordt gemaakt 
 
 ### De Universal Editor {#universal-editor}
 
-De Universal Editor biedt een naadloze, &#39;what-you-see-is-what-you-get&#39; (WYSIWYG)-ontwerpervaring die kan worden gebruikt om inhoud te schrijven.
+De Universal Editor biedt een naadloze, &#39;what-you-see-is-what-you-get&#39; (WYSIWYG) -ontwerpervaring die kan worden gebruikt om inhoud te schrijven.
 
 Gelieve te zien het document [ WYSIWYG Inhoud Authoring voor Edge Delivery Services ](/help/edge/wysiwyg-authoring/authoring.md) om meer over inhoud creatie met de Universele Redacteur te leren.
 
 ### Authoring op basis van documenten {#document-authoring}
 
-Dankzij op documenten gebaseerde ontwerpen kan iedereen inhoud zonder training maken door gebruik te maken van de tools die iedereen kent: Word- en Google-documenten. Met deze eenvoudige gereedschappen kunnen Edge Delivery Services direct een wijziging in een Word-document omzetten in bijgewerkte inhoud op uw livesite.
+Dankzij documentgebaseerde authoring kan iedereen inhoud maken zonder training door gebruik te maken van de tools die iedereen kent: Word en Google Docs. Met deze eenvoudige gereedschappen kunnen Edge Delivery Services direct een wijziging in een Word-document omzetten in bijgewerkte inhoud op uw livesite.
 
 Gelieve te zien het document [ Authoring en het Publiceren Inhoud ](https://www.aem.live/docs/authoring) om meer over het gebruiken van op document-gebaseerde creatie te leren.
 

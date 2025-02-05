@@ -4,7 +4,7 @@ description: Leer de grondbeginselen van AE; pakketbeheer met de Manager van het
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Wanneer u regels maakt, definieert u een reguliere expressie (ook wel regex, reg
 | include | Met Opnemen worden alle bestanden en mappen in de opgegeven map opgenomen die overeenkomen met de reguliere expressie. Omvat **zal** geen andere dossiers of omslagen van onder de gespecificeerde wortelweg omvatten. |
 | uitsluiten | Met Uitsluiten worden alle bestanden en mappen uitgesloten die overeenkomen met de reguliere expressie. |
 
-De filters van het pakket worden het vaakst bepaald wanneer u eerst [ het pakket creeert.](#creating-a-new-package) Deze kunnen echter ook later worden bewerkt. Vervolgens moet het pakket opnieuw worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
+De filters van het pakket worden het vaakst bepaald wanneer u eerst [ het pakket ](#creating-a-new-package) creeert. U kunt ze echter ook later bewerken, waarna het pakket opnieuw moet worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ Er zijn vele acties die op een pakket kunnen worden ondernomen.
 
 ### Een pakket maken {#creating-a-new-package}
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Klik **Create Pakket**.
 
@@ -266,7 +266,7 @@ Er zijn vele acties die op een pakket kunnen worden ondernomen.
 
    ![ Nieuw pakket ](assets/new-package.png)
 
-1. Klik **uitgeven** om de [ pakketinhoud te bepalen.](#package-contents) klik **sparen** nadat u wordt gebeëindigd het uitgeven van de montages.
+1. Klik **uitgeven** om de [ pakketinhoud ](#package-contents) te bepalen. Klik **sparen** nadat u wordt gebeëindigd het uitgeven van de montages.
 
 1. U kunt [ nu bouwen ](#building-a-package) uw pakket.
 
@@ -274,13 +274,13 @@ Het is niet verplicht om het pakket onmiddellijk na het maken ervan te bouwen. E
 
 >[!TIP]
 >
->Om onderbrekingen te vermijden, adviseert de Adobe [ om geen grote pakketten tot stand te brengen.](#package-size)
+>Om onderbrekingen te vermijden, adviseert de Adobe [ niet om grote pakketten ](#package-size) tot stand te brengen.
 
 ### Een pakket maken {#building-a-package}
 
 Een pakket wordt vaak gebouwd tezelfdertijd aangezien u [ het pakket ](#creating-a-new-package) creeert, maar u kunt op een recentere punt terugkeren om of het pakket te bouwen of opnieuw te bouwen. Dit kan nuttig zijn als de inhoud in de opslagplaats is gewijzigd of de pakketfilters zijn gewijzigd.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -290,13 +290,13 @@ Een pakket wordt vaak gebouwd tezelfdertijd aangezien u [ het pakket ](#creating
 
 >[!TIP]
 >
->Om onderbrekingen te vermijden, adviseert de Adobe [ om geen grote pakketten tot stand te brengen.](#package-size)
+>Om onderbrekingen te vermijden, adviseert de Adobe [ niet om grote pakketten ](#package-size) tot stand te brengen.
 
 ### Een pakket bewerken {#edit-package}
 
 Nadat een pakket is geüpload naar AEM, kunt u de instellingen wijzigen.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -310,7 +310,7 @@ U kunt het pakket ](#building-a-package) moeten herbouwen om zijn inhoud bij te 
 
 Nadat een pakket is gemaakt, kan het opnieuw worden verpakt. Wanneer u de pakketgegevens opnieuw inpakt, worden deze zonder miniatuur, beschrijving, enzovoort gewijzigd, zonder dat de pakketinhoud wordt gewijzigd.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -324,7 +324,7 @@ Nadat een pakket is gemaakt, kan het opnieuw worden verpakt. Wanneer u de pakket
 
 Omdat elke versie van een pakket in de lijst verschijnt zoals elk ander pakket, kan de Manager van het Pakket andere versies van een geselecteerd pakket vinden.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -334,7 +334,7 @@ Omdat elke versie van een pakket in de lijst verschijnt zoals elk ander pakket, 
 
 Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -348,7 +348,7 @@ Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 
 ### Pakketten naar uw bestandssysteem downloaden {#downloading-packages-to-your-file-system}
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -358,11 +358,11 @@ Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 
 >[!TIP]
 >
->Om onderbrekingen te vermijden, adviseert de Adobe [ om geen grote pakketten tot stand te brengen.](#package-size)
+>Om onderbrekingen te vermijden, adviseert de Adobe [ niet om grote pakketten ](#package-size) tot stand te brengen.
 
 ### Pakketten uploaden vanuit uw bestandssysteem {#uploading-packages-from-your-file-system}
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Selecteer de groepsmap waarin u het pakket wilt uploaden.
 
@@ -370,7 +370,7 @@ Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 
 1. Geef de benodigde informatie over het geüploade pakket.
 
-   ![ Pakket uploadt dialoog ](assets/package-upload-dialog.png)
+   ![ Pakket uploadt dialoogdoos.](assets/package-upload-dialog.png)
 
    * **Pakket** - gebruik **doorbladert..** knoop om het vereiste pakket van uw lokaal dossiersysteem te selecteren.
    * **de Kracht uploadt** - als een pakket met deze naam reeds bestaat, dwingt deze optie uploadt en het bestaande pakket beschrijft.
@@ -381,7 +381,7 @@ De pakketinhoud bestaat nu op AEM, maar om de inhoud voor gebruik beschikbaar te
 
 >[!TIP]
 >
->Om onderbrekingen te vermijden, adviseert de Adobe [ om geen grote pakketten tot stand te brengen.](#package-size)
+>Om onderbrekingen te vermijden, adviseert de Adobe [ niet om grote pakketten ](#package-size) tot stand te brengen.
 
 ### Pakketten valideren {#validating-packages}
 
@@ -471,14 +471,14 @@ Gebruikend de informatie die door de bevestiging wordt verstrekt, kunnen de beï
 
 De validatie van pakketten kan op twee verschillende manieren worden uitgevoerd:
 
-* [Via de interface van Package Manager](#via-package-manager)
-* [Via HTTP-POST request zoals with cURL](#via-post-request)
+* [ via de Manager UI van het Pakket ](#via-package-manager).
+* [ via HTTP- POST verzoek zoals met cURL ](#via-post-request).
 
 Validatie moet altijd plaatsvinden na het uploaden van het pakket, maar voordat het wordt geïnstalleerd.
 
 ##### Pakketvalidatie via pakketbeheer {#via-package-manager}
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -516,7 +516,7 @@ Bij validatie via een aanvraag voor een POST wordt het antwoord teruggestuurd al
 
 Pakketten worden gedefinieerd door hun filters. U kunt Package Manager filters van een pakket op uw bestaande opslagplaats inhoud laten toepassen om te tonen welke inhoud van de bewaarplaats door de filterdefinitie van het pakket wordt behandeld.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
@@ -534,7 +534,7 @@ Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats t
 
 Voordat u het pakket installeert, maakt Package Manager automatisch een pakket met momentopnamen dat de overschreven inhoud bevat. Deze momentopname wordt opnieuw geïnstalleerd als u uw pakket verwijdert.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open in de pakketlijst de pakketdetails van het pakket dat u wilt installeren door op de pakketnaam te klikken.
 
@@ -556,7 +556,7 @@ Zodra de installatie volledig en succesvol is, wordt de pakketlijst bijgewerkt e
 
 ### Pakketten opnieuw installeren {#reinstalling-packages}
 
-Het opnieuw installeren van pakketten voert de zelfde stappen op een reeds geïnstalleerd pakket uit dat wanneer [ eerst het pakket installeert.](#installing-packages)
+Het opnieuw installeren van pakketten voert de zelfde stappen op een reeds geïnstalleerd pakket uit dat wanneer [ eerst het pakket ](#installing-packages) installeert.
 
 ### Uploaden en installeren op basis van bestandssysteem {#file-system-based-upload-and-installation}
 
@@ -576,7 +576,7 @@ Als de instantie niet wordt uitgevoerd, worden pakketten die in de map `install`
 
 Als u het pakket verwijdert, wordt de inhoud van de opslagplaats teruggezet naar de momentopname die vóór de installatie automatisch door Package Manager is gemaakt.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails van het pakket dat u uit de pakketlijst wilt verwijderen door op de pakketnaam te klikken.
 
@@ -590,7 +590,7 @@ Als u het pakket verwijdert, wordt de inhoud van de opslagplaats teruggezet naar
 
 Als u een pakket verwijdert, worden alleen de gegevens verwijderd uit Pakketbeheer. Als dit pakket al is geïnstalleerd, wordt de geïnstalleerde inhoud niet verwijderd.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails van het pakket dat u uit de pakketlijst wilt verwijderen door op de pakketnaam te klikken.
 
@@ -602,7 +602,7 @@ Als u een pakket verwijdert, worden alleen de gegevens verwijderd uit Pakketbehe
 
 Kopieer de inhoud van een pakket en installeer het op de publicatie-instantie.
 
-1. [Access Package Manager.](#accessing)
+1. [ Manager van het Pakket van de Toegang ](#accessing).
 
 1. Open de pakketdetails van het pakket u van de pakketlijst wilt herhalen door de pakketnaam te klikken.
 
@@ -616,4 +616,4 @@ AEM pakketten kunnen worden gebruikt om inhoud te maken en te delen in AEMaaCS-o
 
 [ de Distributie van de Software ](https://downloads.experiencecloud.adobe.com) verstrekt AEM pakketten voor gebruik op de lokale ontwikkeling AEM SDK. AEM pakketten die op softwaredistributie worden geleverd, mogen niet worden geïnstalleerd in AEMaaCS-cloudomgevingen, tenzij dit uitdrukkelijk wordt goedgekeurd door ondersteuning voor Adoben.
 
-Voor meer informatie, te zien gelieve de [ documentatie van de Distributie van de Software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Voor meer informatie, zie de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).

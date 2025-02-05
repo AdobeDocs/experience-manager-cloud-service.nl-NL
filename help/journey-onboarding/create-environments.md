@@ -4,7 +4,7 @@ description: Leer hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen te 
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Omgevingen maken {#create-environments}
 
-In dit deel van de [ onboarding reis, ](overview.md) leert u hoe te om Cloud Manager te gebruiken om uw eerste milieu&#39;s tot stand te brengen.
+In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om Cloud Manager te gebruiken om uw eerste milieu&#39;s tot stand te brengen.
 
 ## Doelstelling {#objective}
 
-Na het lezen van het vorige document in dit op instapweigering reis, [ Creërend Programma&#39;s, ](create-program.md) u hebt nu uw eigen programma van Cloud Manager. Nu kunt u leren hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen voor dat programma te maken.
+Na het lezen van het vorige document in dit op instapweigering reis, [ Creërend Programma&#39;s ](create-program.md), hebt u nu uw eigen programma van Cloud Manager. Nu kunt u leren hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen voor dat programma te maken.
 
 Na het lezen van dit document zult u:
 

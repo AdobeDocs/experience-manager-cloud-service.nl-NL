@@ -4,7 +4,7 @@ description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij wer
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
 
    * De **Titel** zou beschrijvend moeten zijn.
    * De **Naam** wordt de knoopnaam in de bewaarplaats.
-      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten.](naming-conventions.md)
+      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten ](naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -200,7 +200,7 @@ Om dit te steunen heeft de configuratieraadpleging, AEM een overerving en een re
 
 Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Context-bewuste configuraties zijn configuraties die met een inhoudsmiddel of een middelboom verwant zijn zoals [ in het vorige voorbeeld ](#developer-example) werd beschreven.
 
-Voor meer details over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, zie de [ het Schipen documentatie.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Voor meer details over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, zie de [ het Schipen documentatie ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr-webconsole {#confmgr-web-console}
 

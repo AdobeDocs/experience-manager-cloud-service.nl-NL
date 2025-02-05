@@ -4,7 +4,7 @@ description: Een overzicht van de technische fundamenten van AEM, inclusief hoe 
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -17,7 +17,7 @@ AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieë
 
 >[!TIP]
 >
->Alvorens in de kerntechnologieën van AEM te duiken, adviseert de Adobe de voltooiing van [ Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma.](develop-wknd-tutorial.md)
+>Alvorens in de kerntechnologieën van AEM te duiken, adviseert de Adobe de voltooiing van [ Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma ](develop-wknd-tutorial.md).
 
 ## Grondbeginselen {#fundamentals}
 

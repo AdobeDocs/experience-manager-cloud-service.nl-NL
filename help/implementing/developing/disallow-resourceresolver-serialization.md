@@ -4,7 +4,7 @@ description: De serialisatie van ResourceResolvers via Sling Model Exporter niet
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a64c17943332782814bdacd7484e056cd445d3a9
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met de functie Sling Model Exporter kunt u Sling Model-objecten serialiseren in JSON-indeling. Deze functie wordt op grote schaal gebruikt omdat SPA (toepassingen van één pagina) gemakkelijk toegang hebben tot gegevens van AEM. Aan de implementatiezijde wordt de bibliotheek Jackson Databind gebruikt om deze objecten van een serienummer te voorzien.
 
-De rangschikking is een recursieve verrichting. Vanaf een &quot;wortelvoorwerp,&quot;herhaalt het recursief door alle in aanmerking komende voorwerpen en rangschikt hen en hun kinderen. U kunt een beschrijving vinden van welke gebieden in het artikel [ worden geserialiseerd Jackson - besluit welke Gebieden in series vervaardigd/Deserialized krijgen.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)
+De rangschikking is een recursieve verrichting. Vanaf een &quot;wortelvoorwerp,&quot;herhaalt het recursief door alle in aanmerking komende voorwerpen en rangschikt hen en hun kinderen. U kunt een beschrijving vinden van welke gebieden in het artikel [ worden in series vervaardigd Jackson - besluit welke Gebieden in series vervaardigd/Deserialized ](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) krijgen.
 
 Deze benadering serialiseert alle soorten voorwerpen in JSON. Het kan natuurlijk ook een Sling `ResourceResolver` -object serialiseren, als dit onder de serialisatieregels valt. Dit is problematisch, omdat de `ResourceResolver` -service (en dus ook het serviceobject dat deze vertegenwoordigt) mogelijk gevoelige informatie bevat, die niet openbaar moet worden gemaakt. Bijvoorbeeld:
 
@@ -49,6 +49,6 @@ Dit logbericht betekent dat tijdens het proces van het serialiseren van `/conten
 
 De Adobe verzoekt alle klanten om hun toepassingslogboeken en codebasis te controleren om te zien of worden zij beïnvloed door dit probleem, en de douanetoepassing waar nodig te veranderen, zodat dit waarschuwingsbericht niet meer in logboeken verschijnt.
 
-Er wordt aangenomen dat deze vereiste wijzigingen in de meeste gevallen rechtuit zijn. De `ResourceResolver` voorwerpen worden vereist in de output JSON helemaal niet, aangezien de informatie bevat daar normaal niet door frontend toepassingen wordt vereist, die in de meeste gevallen het zouden moeten voldoende zijn om het `ResourceResolver` voorwerp van worden uitgesloten die door Jackson (zie de [ regels worden overwogen.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not))
+Er wordt aangenomen dat deze vereiste wijzigingen in de meeste gevallen rechtuit zijn. De `ResourceResolver` voorwerpen worden vereist in de output JSON helemaal niet, aangezien de informatie bevat daar normaal niet door frontend toepassingen wordt vereist, die in de meeste gevallen het zou moeten voldoende zijn om het `ResourceResolver` voorwerp van worden uitgesloten dat (zie de [ regels ](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).)
 
 Als een Sling Model door dit probleem wordt beïnvloed maar niet veranderd, zal het expliciete onbruikbaar maken van rangschikking van het voorwerp `ResourceResolver` (zoals uitgevoerd door Adobe als tweede stap) een verandering in de output afdwingen JSON.

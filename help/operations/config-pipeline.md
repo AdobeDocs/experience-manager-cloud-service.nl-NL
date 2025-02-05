@@ -4,9 +4,9 @@ description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende con
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ De volgende lijst biedt een uitvoerige lijst van dergelijke configuraties met ve
 
 ## Config-pijplijnen maken en beheren {#creating-and-managing}
 
-Voor informatie over om pijpleidingen tot stand te brengen en te vormen, te zien gelieve het document [ CI/CD Pijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+Voor informatie over om pijpleidingen tot stand te brengen en te vormen, zie [ CI/CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Wanneer het creëren van een config pijpleiding in Cloud Manager, ben zeker om a **gerichte Plaatsing** eerder dan **Volledige Code van de Stapel** te selecteren wanneer het vormen van de pijpleiding.
 
@@ -95,7 +95,7 @@ of
     cdn.yaml
 ```
 
-De mapnamen en bestandsnamen onder `/config` zijn willekeurig. Het YAML-bestand moet echter een geldige waarde voor de eigenschap [`kind` bevatten.](#configurations)
+De mapnamen en bestandsnamen onder `/config` zijn willekeurig. Het YAML-bestand moet echter een geldige [`kind` eigenschapswaarde ](#configurations) bevatten.
 
 Configuraties worden doorgaans in alle omgevingen geïmplementeerd. Als alle bezitswaarden voor elk milieu identiek zijn, zal één enkel dossier YAML voldoende zijn. Het is echter gebruikelijk dat eigenschapswaarden verschillen tussen omgevingen, bijvoorbeeld tijdens het testen van een lagere omgeving.
 

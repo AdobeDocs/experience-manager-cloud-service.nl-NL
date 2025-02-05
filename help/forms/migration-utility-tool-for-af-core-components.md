@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -53,8 +53,8 @@ Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere
 
 ## Voorwaarden voor het gebruik AEM Moderniseren van gereedschappen
 
-* [Lokale ontwikkelomgeving instellen voor AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Schakel Adaptieve Forms Core-componenten in voor uw omgeving.](/help/forms/enable-adaptive-forms-core-components.md)
+* [ opstelling lokale ontwikkelomgeving voor AEM Forms ](/help/forms/setup-local-development-environment.md).
+* [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu ](/help/forms/enable-adaptive-forms-core-components.md) toe.
 * Voeg uw gebruikers toe aan de groep [!DNL forms-users] . De leden van de groep [!DNL forms-users] hebben machtigingen om een adaptief formulier te maken.
 * De gebruikers met de volgende rollen hebben de toestemmingen om de AEM Moderniseren Hulpmiddelen binnen een AEM milieu te installeren:
 

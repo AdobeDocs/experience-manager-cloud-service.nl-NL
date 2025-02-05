@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # De container voor lay-out en de lay-outmodus configureren {#configuring-layout-container-and-layout-mode}
 
-[ Responsieve Lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is een mechanisme om [ ontvankelijk Webontwerp te realiseren.](https://en.wikipedia.org/wiki/Responsive_web_design) Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+[ Responsieve Lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is een mechanisme om [ ontvankelijk Webontwerp ](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
 AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
 
@@ -228,4 +228,4 @@ Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als
 
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
-U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen uit te geven.](/help/sites-cloud/authoring/page-editor/templates.md)
+U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) uit te geven.

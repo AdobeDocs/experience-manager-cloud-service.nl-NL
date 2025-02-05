@@ -4,7 +4,7 @@ description: Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge D
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge Delivery Servi
 
 ## Vereisten {#prerequisites}
 
-De projecten die WYSIWYG Authoring met Edge Delivery Services gebruiken erven de meerderheid van de mechanica van een ander Edge Delivery Services-project, onafhankelijk van de inhoudsbron of [ auteursmethode.](/help/edge/wysiwyg-authoring/authoring.md)
+De projecten die WYSIWYG Authoring met Edge Delivery Services gebruiken erven de meerderheid van de mechanica van een ander Edge Delivery Services-project, onafhankelijk van de inhoudsbron of [ auteursmethode ](/help/edge/wysiwyg-authoring/authoring.md).
 
 Voordat u begint met het modelleren van inhoud voor uw project, moet u eerst de volgende documentatie lezen.
 
@@ -39,7 +39,7 @@ In AEM, wordt deze inhoud uitgevoerd als componenten met zeer eenvoudige, vooraf
 * **Beeld**: Source, beschrijving
 * **Knoop**: Tekst, titel, url, type (gebrek, primair, secundair)
 
-Het model van deze componenten maakt deel uit van [ Boilerplate voor WYSIWYG creatie met Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Het model van deze componenten maakt deel uit van [ Boilerplate voor WYSIWYG creatie met Edge Delivery Services ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blokken {#blocks}
 
@@ -111,9 +111,9 @@ Voor elk blok:
 * Moet het `core/franklin/components/block/v1/block` middeltype, de generische implementatie van de bloklogica in AEM gebruiken.
 * U moet de bloknaam definiëren. Deze wordt weergegeven in de tabelkoptekst van het blok.
    * De bloknaam wordt gebruikt om de juiste stijl en het script op te halen om het blok te versieren.
-* Kan a [ modelidentiteitskaart bepalen.](/help/implementing/universal-editor/field-types.md#model-structure)
+* Kan a [ modelidentiteitskaart ](/help/implementing/universal-editor/field-types.md#model-structure) bepalen.
    * De model-id is een verwijzing naar het model van de component, dat de velden definieert die beschikbaar zijn voor de auteur in het deelvenster Eigenschappen.
-* Kan a [ filteridentiteitskaart bepalen.](/help/implementing/universal-editor/filtering.md)
+* Kan a [ filteridentiteitskaart ](/help/implementing/universal-editor/filtering.md) bepalen.
    * De filterID is een verwijzing naar het filter van de component, dat toestaat om het auteursgedrag te veranderen, bijvoorbeeld door te beperken welke kinderen aan het blok of de sectie kunnen worden toegevoegd, of welke eigenschappen RTE worden toegelaten.
 
 Al deze informatie wordt opgeslagen in AEM wanneer een blok aan een pagina wordt toegevoegd. Als het middeltype of de bloknaam ontbreken, zal het blok niet op de pagina teruggeven.
@@ -181,7 +181,7 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 
 >[!ENDTABS]
 
-Het kan opvallen dat bepaalde typen waarden het afleiden van semantiek in de opmaak toestaan en dat eigenschappen in één cel worden gecombineerd. Dit gedrag wordt beschreven in de sectie [ Inferentie van het Type.](#type-inference)
+Het kan opvallen dat bepaalde typen waarden het afleiden van semantiek in de opmaak toestaan en dat eigenschappen in één cel worden gecombineerd. Dit gedrag wordt beschreven in de sectie [ Inferentie van het Type ](#type-inference).
 
 #### Key-Value-blok {#key-value}
 
@@ -189,7 +189,7 @@ In veel gevallen is het raadzaam de gerenderde semantische opmaakcode te decorer
 
 In andere gevallen echter, wordt het blok gelezen als sleutel-waarde paar-als configuratie.
 
-Een voorbeeld van dit is de [ sectiemetagegevens.](/help/edge/developer/markup-sections-blocks.md#sections) In dit gebruiksgeval, kan het blok worden gevormd om als sleutel-waarde paarlijst terug te geven. Gelieve te zien de sectie [ Secties en Metagegevens van de Sectie ](#sections-metadata) voor meer informatie.
+Een voorbeeld van dit is de [ sectiemetagegevens ](/help/edge/developer/markup-sections-blocks.md#sections). In dit gebruiksgeval, kan het blok worden gevormd om als sleutel-waarde paarlijst terug te geven. Gelieve te zien de sectie [ Secties en Metagegevens van de Sectie ](#sections-metadata) voor meer informatie.
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
 
 ### Semantische inhoudsmodellen maken voor blokken {#creating-content-models}
 
-Met de [ mechanica van verklaarde blokstructuur, ](#block-structure) is het mogelijk om een inhoudsmodel tot stand te brengen dat inhoud in AEM één-aan-één aan de leveringsrij voortzette in kaart brengt.
+Met de [ mechanica van verklaarde blokstructuur ](#block-structure), is het mogelijk om een inhoudsmodel tot stand te brengen dat inhoud in AEM één-aan-één aan de leveringsrij voortzette in kaart brengt.
 
-Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene begeleiding kunnen in [ het Model van David worden gevonden (neem 2).](https://www.aem.live/docs/davidsmodel) Specifieker, bevat de [ blokinzameling ](/help/edge/developer/block-collection.md) een uitgebreide reeks inhoudsmodellen voor specifieke gebruiksgevallen van gemeenschappelijke gebruikersinterfacepatronen.
+Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene begeleiding kunnen in [ het Model van David worden gevonden (neem 2) ](https://www.aem.live/docs/davidsmodel). Specifieker, bevat de [ blokinzameling ](/help/edge/developer/block-collection.md) een uitgebreide reeks inhoudsmodellen voor specifieke gebruiksgevallen van gemeenschappelijke gebruikersinterfacepatronen.
 
 Voor WYSIWYG-authoring met Edge Delivery Services roept dit de vraag op hoe een aansprekend semantisch inhoudsmodel kan worden gebruikt wanneer de informatie wordt geschreven met formulieren die uit meerdere velden bestaan, in plaats van semantische opmaak in context te bewerken, zoals RTF-tekst.
 
@@ -345,7 +345,7 @@ Voor sommige waarden kunnen we de semantische betekenis afleiden van de waarden 
 * **Beelden** - als een verwijzing naar een middel in AEM een activa met een type MIME is dat met `image/` begint, wordt de verwijzing teruggegeven als `<picture><img src="${reference}"></picture>`.
 * **Verbindingen** - als een verwijzing in AEM bestaat en geen beeld is, of als de waarde met `https?://` of `#` begint, wordt de verwijzing teruggegeven als `<a href="${reference}">${reference}</a>`.
 * **Rijke Tekst** - als een in orde gemaakte waarde met een paragraaf (`p`, `ul`, `ol`, `h1` - `h6`, enz.) begint, wordt de waarde teruggegeven als rijke tekst.
-* **Namen van de Klasse** - het `classes` bezit wordt behandeld als [ blokopties ](/help/edge/developer/markup-sections-blocks.md#block-options) en in de lijstkopbal voor [ eenvoudige blokken, ](#simple) of als waardelijst voor punten in a [ containerblok teruggegeven.](#container) Het is nuttig als u wenst om [ een blok verschillend te stileren, ](/help/edge/wysiwyg-authoring/create-block.md#block-options) maar te hoeven om geen volledig nieuw blok tot stand te brengen.
+* **Namen van de Klasse** - het `classes` bezit wordt behandeld als [ blokopties ](/help/edge/developer/markup-sections-blocks.md#block-options) en in de lijstkopbal voor [ eenvoudige blokken ](#simple) teruggegeven, of als waardelijst voor punten in a [ containerblok ](#container). Het is nuttig als u een blok ](/help/edge/wysiwyg-authoring/create-block.md#block-options) verschillend wilt [ opmaken, maar te hoeven om geen volledig nieuw blok tot stand te brengen.
 * **Lijsten van de Waarde** - als een waarde een multi-waardebezit is en de eerste waarde geen van het vorige is, worden alle waarden samengevoegd als komma-gescheiden lijst.
 
 Alle andere elementen worden weergegeven als onbewerkte tekst.
@@ -532,11 +532,11 @@ Bij elementgroepering wordt een naamgevingsconventie gebruikt, waarbij de groeps
 
 ## Secties en sectiemetagegevens {#sections-metadata}
 
-De zelfde manier een ontwikkelaar kan veelvoudige [ blokken bepalen en modelleren, ](#blocks) zij kunnen verschillende secties bepalen.
+De zelfde manier een ontwikkelaar kan veelvoudige [ blokken ](#blocks) bepalen en modelleren, kunnen zij verschillende secties bepalen.
 
 Het inhoudsmodel van Edge Delivery Services staat opzettelijk slechts één enkel niveau van het nesten toe, dat om het even welke standaardinhoud of een blok bevat door een sectie is. Dit betekent dat, om complexere visuele componenten te hebben die andere componenten kunnen bevatten, zij als secties moeten worden gemodelleerd en samen moeten worden gecombineerd gebruikend auto-blokkerende cliëntkant. Typische voorbeelden hiervan zijn tabbladen en inklapbare secties zoals accordeons.
 
-Een sectie kan op dezelfde manier als een blok worden gedefinieerd, maar met het middeltype van `core/franklin/components/section/v1/section`. De secties kunnen een naam en a [ filteridentiteitskaart hebben, ](/help/implementing/universal-editor/filtering.md) die door de [ Universele Redacteur ](/help/implementing/universal-editor/introduction.md) slechts wordt gebruikt, evenals a [ modelidentiteitskaart, ](/help/implementing/universal-editor/field-types.md#model-structure) die wordt gebruikt om de sectiemetagegevens terug te geven. Het model is op deze manier het model van het blok met sectiemetagegevens, dat automatisch aan een sectie als sleutel-waardeblok zal worden toegevoegd als het niet leeg is.
+Een sectie kan op dezelfde manier als een blok worden gedefinieerd, maar met het middeltype van `core/franklin/components/section/v1/section`. De secties kunnen een naam en a [ filteridentiteitskaart ](/help/implementing/universal-editor/filtering.md) hebben, die door de [ Universele Redacteur ](/help/implementing/universal-editor/introduction.md) slechts, evenals a [ modelidentiteitskaart ](/help/implementing/universal-editor/field-types.md#model-structure) wordt gebruikt, die wordt gebruikt om de sectiemetagegevens terug te geven. Het model is op deze manier het model van het blok met sectiemetagegevens, dat automatisch aan een sectie als sleutel-waardeblok zal worden toegevoegd als het niet leeg is.
 
 [ modelidentiteitskaart ](/help/implementing/universal-editor/field-types.md#model-structure) en [ filteridentiteitskaart ](/help/implementing/universal-editor/filtering.md) van de standaardsectie is `section`. Deze kan worden gebruikt om het gedrag van de standaardsectie te wijzigen. In het volgende voorbeeld worden enkele stijlen en een achtergrondafbeelding toegevoegd aan het metagegevensmodel van de sectie.
 
@@ -595,7 +595,7 @@ In het volgende voorbeeld wordt een tabsectie gedefinieerd die kan worden gebrui
 
 ## Metagegevens pagina {#page-metadata}
 
-Documenten kunnen een pagina [ meta-gegevensblok hebben, ](https://www.aem.live/developer/block-collection/metadata) dat wordt gebruikt om te bepalen welke `<meta>` elementen in `<head>` van een pagina worden teruggegeven. De pagina-eigenschappen van pagina&#39;s in AEM as a Cloud Service worden toegewezen aan de pagina-eigenschappen die buiten het vak beschikbaar zijn voor Edge Delivery Services, zoals `title` , `description` , `keywords` , enz.
+Documenten kunnen een pagina [ meta-gegevensblok ](https://www.aem.live/developer/block-collection/metadata) hebben, dat wordt gebruikt om te bepalen welke `<meta>` elementen in `<head>` van een pagina worden teruggegeven. De pagina-eigenschappen van pagina&#39;s in AEM as a Cloud Service worden toegewezen aan de pagina-eigenschappen die buiten het vak beschikbaar zijn voor Edge Delivery Services, zoals `title` , `description` , `keywords` , enz.
 
 Lees eerst de volgende documenten voordat u gaat onderzoeken hoe u uw eigen metagegevens kunt definiëren. Op deze manier krijgt u meer inzicht in het begrip metagegevens van pagina&#39;s.
 
@@ -645,5 +645,5 @@ Als u reeds vertrouwd met het creëren van blokken bent, te zien gelieve de docu
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
 

@@ -5,7 +5,7 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -58,13 +58,13 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 |---|---|---|
 | 0 | AEM Schrijverreis zonder kopinhoud | Dit document |
 | 1 | [ Authoring voor AEM as a Cloud Service zonder kop - Een inleiding ](introduction.md) | Een inleiding op de headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te ontwerpen. |
-| 2 | [ Grondbeginselen van de Authoring voor Zwaartepunt met AEM ](basics.md) | Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten. |
-| 3 | [ Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud ](references.md) | Leer hoe u verwijzingen in inhoudsfragmenten kunt gebruiken. Hierdoor kunt u ook meerdere structuurniveaus voor uw headless CMS maken en beheren met geneste fragmenten. |
+| 2 | [ Grondbeginselen van de Authoring voor Zwaartepunt met AEM ](basics.md) | Leer over de concepten en de mechanica van het ontwerpen van inhoud voor uw Headless CMS gebruikend Inhoudsfragmenten. |
+| 3 | [ Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud ](references.md) | Leer hoe u verwijzingen in inhoudsfragmenten kunt gebruiken. Hierdoor kunt u ook meerdere structuurniveaus voor uw CMS zonder koptekst maken en beheren met behulp van geneste fragmenten. |
 | 4 | [ Leer over het bepalen van Meta-gegevens en het Etiketteren voor de Fragmenten van de Inhoud ](metadata-tagging.md) | Meer informatie over het definiëren van metagegevens en het labelen voor inhoudsfragmenten. |
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en het artikel [ te lezen Authoring voor AEM Zwaartepunt as a Cloud Service - een Inleiding.](introduction.md)
+U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en het artikel [ te lezen Authoring voor AEM Zwaartepunt as a Cloud Service - een Inleiding ](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -85,6 +85,6 @@ Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Verschillende kun
 * [ AEM Headless Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 * [ Eis van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te modelleren.
 * [ technische documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - als u reeds een vast inzicht in AEM en zonder kop technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
-   * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+   * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 * [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ AEM Headless leerprogramma&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden voortgebouwd.

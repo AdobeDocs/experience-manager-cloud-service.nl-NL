@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 0%
@@ -75,8 +75,8 @@ De tagconsole openen:
 Er zijn verschillende stappen om tags te maken en te gebruiken om uw inhoud te ordenen.
 
 1. [ creeer een namespace voor uw markeringen ](#creating-namespaces) (of kies bestaande te hergebruiken).
-1. [Maak een nieuwe tag.](#creating-tags)
-1. [Publish the tag.](#publishing-tags)
+1. [ creeer een nieuwe markering ](#creating-tags).
+1. [ Publish de markering ](#publishing-tags).
 
 ### Naamruimten maken {#creating-namespaces}
 
@@ -96,7 +96,7 @@ Een naamruimte wordt gebruikt om andere tags te ordenen. Het kan worden beschouw
 
 De naamruimte wordt gemaakt. In de coderingsconsole bevinden de naamruimten zich op het laagste niveau (helemaal links in de console) en worden deze weergegeven door mappictogrammen, die hun aard weerspiegelen als een &#39;container&#39; of groepering van andere tags.
 
-U kunt [ nieuwe markeringen ](#creating-tags) in dit namespace nu tot stand brengen of [ bestaande markeringen beheren.](#managing-tags)
+U kunt [ nieuwe markeringen ](#creating-tags) in dit nu creëren namespace of [ bestaande markeringen ](#managing-tags) beheren.
 
 Een naamruimte hoeft geen subtags te bevatten. Omdat een naamruimte zelf een tag is, kan deze worden gebruikt om de inhoud te ordenen zoals elke andere tag. Nochtans, om een gestructureerde het etiketteren taxonomie te blijven creëren, kunt u [ subtags ](#creating-tags) binnen tot stand brengen die namespace op uw projectvereisten wordt gebaseerd.
 
@@ -104,7 +104,7 @@ Een naamruimte hoeft geen subtags te bevatten. Omdat een naamruimte zelf een tag
 
 Tags worden over het algemeen toegevoegd aan naamruimten.
 
-1. Om een markering tot stand te brengen, open de [ etiketterende console.](#tagging-console)
+1. Om een markering tot stand te brengen, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de naamruimte waar u de tag wilt maken. Of selecteer een andere tag om een subtag eronder te maken.
 
@@ -132,7 +132,7 @@ Met tags kunt u op basis van uw organisatorische behoeften uw eigen taxonomie op
 
 Net als bij het maken van andere inhoud in AEM, bestaat een tag (of naamruimte) alleen in de ontwerpomgeving nadat u een tag hebt gemaakt. De tags zijn alleen beschikbaar voor gebruikers als u deze publiceert.
 
-1. Om een markering te publiceren, open de [ etiketterende console.](#tagging-console)
+1. Om een markering te publiceren, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering of de markeringen u en in de toolbar wilt publiceren, uitgezochte **Publish**.
 
@@ -176,7 +176,7 @@ Wanneer één enkele markering, namespace of andere markering in de etiketterend
 
 U kunt meer details over de markering bekijken met inbegrip van wie het het laatst publiceerde en wanneer door de console aan de **mening van Eigenschappen** te schakelen.
 
-1. Om de eigenschappen van een markering te bekijken, open de [ etiketterende console.](#tagging-console)
+1. Om de eigenschappen van een markering te bekijken, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering de waarvan eigenschappen u en in de linkerspooruitgezochte **Eigenschappen** wilt bekijken.
 
@@ -192,7 +192,7 @@ Voor meer details bij het selecteren van het bekijken wijzen en spoorstaaf, zie 
 
 Tags en naamruimten kunnen na het maken worden bewerkt.
 
-1. Om een markering uit te geven, open de [ etiketterende console.](#tagging-console)
+1. Om een markering uit te geven, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering u wilt uitgeven en in de toolbar, uitgezocht **** uitgeven.
 
@@ -206,13 +206,13 @@ Tags en naamruimten kunnen na het maken worden bewerkt.
 
 Voor details over het toevoegen van taalvertalingen, zie de sectie over [ het Leiden Markeringen in Verschillende Talen ](#managing-tags-in-different-languages).
 
-Als de veranderingen u aanbracht aan een reeds gepubliceerde markering waren, kunt u het [ willen opnieuw publiceren.](#publishing-tags)
+Als de veranderingen u aanbracht aan een reeds gepubliceerde markering waren, kunt u het [ willen opnieuw publiceren ](#publishing-tags).
 
 ### Publicatie van labels ongedaan maken {#unpublishing-tags}
 
 Als u de tag op de instantie van de auteur wilt deactiveren en deze uit uw publicatie-instantie wilt verwijderen, kunt u de publicatie ervan ongedaan maken.
 
-1. Om een markering ongedaan te maken, open de [ etiketterende console.](#tagging-console)
+1. Om een markering ongedaan te maken, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering of de markeringen u wilt unpublish en in de toolbar, uitgezocht **unpublish**.
 
@@ -232,7 +232,7 @@ De geselecteerde tag(s) worden in de wachtrij geplaatst voor publicatie. Als de 
 
 Het kan handig zijn om te zien op welke inhoud een bepaalde tag wordt toegepast. U kunt dit doen door de **mening van Verwijzingen** in de het etiketteren console te gebruiken.
 
-1. Om de verwijzingen van een markering te bekijken, open de [ etiketterende console.](#tagging-console)
+1. Om de verwijzingen van een markering te bekijken, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering de waarvan verwijzingen u wilt bekijken en in de linkerspooruitgezochte **Verwijzingen**.
 
@@ -258,7 +258,7 @@ Het kan nodig zijn om de tagtaxonomie op een andere manier op te schonen of te r
 >
 >Het wordt aanbevolen dat alleen beheerders tags mogen verplaatsen en hernoemen.
 
-1. Om een markering te bewegen of anders te noemen, open de [ etiketterende console.](#tagging-console)
+1. Om een markering te bewegen of anders te noemen, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering die u wilt bewegen of anders noemen en **Beweging** in de toolbar selecteren.
 
@@ -281,7 +281,7 @@ De naam van de tag wordt gewijzigd en/of naar de nieuwe locatie verplaatst. Wann
 
 Als de codeertaxonomie gelijksoortige duplicaten of tags bevat, kan het handig zijn deze tags samen te voegen. Wanneer tag `A` wordt samengevoegd met tag `B` , worden alle pagina&#39;s met tag `A` gecodeerd met tag `B` en is tag `A` niet meer beschikbaar voor auteurs.
 
-1. Om twee markeringen samen te voegen, open de [ etiketterende console.](#tagging-console)
+1. Om twee markeringen samen te voegen, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering die u in een andere markering wilt samenvoegen en dan **** in de toolbar selecteren samenvoegen.
 
@@ -297,7 +297,7 @@ De tag die in de console is geselecteerd, wordt samengevoegd met de tag die in h
 
 Als de codeertaxonomie verandert en een tag of naamruimte onnodig maakt, kan deze worden verwijderd.
 
-1. Om een markering te schrappen, open de [ etiketterende console.](#tagging-console)
+1. Om een markering te schrappen, open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering die u wilt schrappen en dan **Schrapping** in de toolbar selecteren.
 
@@ -358,7 +358,7 @@ De eigenschap `title` van een tag kan in meerdere talen worden vertaald. Nadat d
 
 Laten we ervan uitgaan dat we een tag met de naam `Animals` hebben die we in het Duits en Frans willen vertalen.
 
-1. Open de [ etiketterende console.](#tagging-console)
+1. Open de [ etiketterende console ](#tagging-console).
 
 1. Selecteer de markering die u wilt vertalen en dan selecteren **uitgeven** in de toolbar.
 

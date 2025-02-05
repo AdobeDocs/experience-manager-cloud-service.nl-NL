@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Meertalige websites bieden over het algemeen inhoud in meerdere talen. De site i
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die door uw inhoud van AEM Sites wordt geleid gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
+>Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
 
 De [ plaats van het WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) omvat verscheidene taaltakken en gebruikt de volgende structuur:
 
@@ -61,7 +61,7 @@ Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 1. Ontwerp de inhoud van uw taalstramien.
 1. Maak de hoofdmap van elke taalkopie voor uw site. De Franse taalkopie van de WKND-voorbeeldsite is bijvoorbeeld `/content/wknd/language-masters/fr` .
 
-Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [ Creërend een Vertaal Project ](managing-projects.md).) Voor een overzicht van het proces van de inhoudvertaling in AEM, zie [ Vertaalend Inhoud voor Meertalige Websites ](overview.md).
+Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [ Creërend een Project van de Vertaling ](managing-projects.md).) voor een overzicht van het proces van de inhoudsomzetting in AEM, zie [ Vertaalende Inhoud voor Meertalige Websites ](overview.md).
 
 ## Een hoofdmap voor talen maken {#creating-a-language-root}
 

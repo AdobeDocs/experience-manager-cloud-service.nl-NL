@@ -4,7 +4,7 @@ description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als 
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, m
 
 ## Voorwaarden
 
-* [Schakel Adaptieve Forms Core-componenten in voor uw omgeving.](/help/forms/enable-adaptive-forms-core-components.md)
+* [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu ](/help/forms/enable-adaptive-forms-core-components.md) toe.
 
   Nadat u de nieuwste Core Components in uw omgeving hebt geïmplementeerd, zijn de Forms Portal-componenten toegankelijk in uw ontwerpomgeving.
 

@@ -8,7 +8,7 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 0%
@@ -76,7 +76,7 @@ U ontvangt een bericht dat het project werd gecreeerd.
 
 >[!NOTE]
 >
->Men veronderstelt dat de noodzakelijke taalstructuur voor de vertalingstalen reeds als deel van de [ definitie van uw inhoudsstructuur is gecreeerd.](getting-started.md#content-structure) Dit moet gebeuren in samenwerking met de inhoudarchitect.
+>Men veronderstelt dat de noodzakelijke taalstructuur voor de vertalingen talen reeds als deel van de [ definitie van uw inhoudsstructuur ](getting-started.md#content-structure) is gecreeerd. Dit moet gebeuren in samenwerking met de inhoudarchitect.
 >
 >Als de taalmappen niet van tevoren worden gemaakt, kunt u geen taalkopieën maken zoals beschreven in de vorige stappen.
 
@@ -126,7 +126,7 @@ Het project is verdeeld in meerdere kaarten.
 
 * **Samenvatting** - Deze kaart toont de basiskopbalinformatie van het project met inbegrip van de eigenaar, de taal, en de vertaalleverancier.
 * **VertaalBaan** - Deze kaart of deze kaarten tonen (tonen) een overzicht van de daadwerkelijke vertaalbaan met inbegrip van de status, het aantal activa, etc. Over het algemeen is er één taak per taal, waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
-   * Wanneer [ automatisch het creëren van vertaalbanen, ](#automatically-creating) AEM tot de banen asynchroon leidt en zij kunnen niet onmiddellijk binnen het project verschijnen.
+   * Wanneer [ automatisch het creëren van vertaalbanen ](#automatically-creating), AEM tot de banen asynchroon leidt en zij kunnen niet onmiddellijk binnen het project verschijnen.
 * **Team** - Deze kaart toont de gebruikers die aan dit vertaalproject samenwerken. Deze reis gaat niet over dit onderwerp.
 * **Taken** - de Extra taken verbonden aan het vertalen van de inhoud zoals om punten of werkschemapunten te doen. Deze reis gaat niet over dit onderwerp.
 
@@ -175,7 +175,7 @@ De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd*
 
 >[!NOTE]
 >
->Als u niet de projectoptie **schrapte Lancering na Bevordering** zoals [ in de vorige sectie werd beschreven, ](#using-translation-project) vertaalde punten zullen met de **Geschrapte** staat verschijnen. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
+>Als u niet de projectoptie **schrapte Lancering na Bevordering** zoals [ beschreven in de vorige sectie ](#using-translation-project) deactiveerde, vertaalde punten zullen met de **Geschrapte** staat verschijnen. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
 >
 >Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper op wilt duiken hoe AEM vertalingen verwerkt, zie [ extra middelen ](#additional-resources) sectie aan het eind van dit artikel.
 
@@ -213,7 +213,7 @@ Inhoud toevoegen aan een vertaaltaak:
 >
 >De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Selecteer de **Inhoud slechts/Filters** knoop om het zijpaneel van een knevel te voorzien en geavanceerde filters zoals **Gewijzigde Datum** of **Vertaalstatus** te tonen.
 >
->U kunt meer over wegbrowser in de [ extra middelensectie leren.](#additional-resources)
+>U kunt meer over wegbrowser in de [ extra middelensectie ](#additional-resources) leren.
 
 U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
 
@@ -235,13 +235,13 @@ De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd*
 
 >[!NOTE]
 >
->Als u niet de projectoptie **schrapte Lancering na Bevordering** zoals [ in de vorige sectie werd beschreven, ](#using-translation-project) vertaalde punten zullen met de **Geschrapte** staat verschijnen. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
+>Als u niet de projectoptie **schrapte Lancering na Bevordering** zoals [ beschreven in de vorige sectie ](#using-translation-project) deactiveerde, vertaalde punten zullen met de **Geschrapte** staat verschijnen. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
 >
 >Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper op wilt duiken hoe AEM vertalingen verwerkt, zie [ extra middelen ](#additional-resources) sectie aan het eind van dit artikel.
 
 ## Vertaalde inhoud controleren {#reviewing}
 
-[ zoals eerder gezien, ](#using-translation-project) machine vertaalde inhoud vloeit terug in AEM met het statuut van **Goedgekeurd** aangezien de veronderstelling is dat omdat de machinevertaling wordt gebruikt, geen menselijke interventie wordt vereist. Het is echter nog steeds mogelijk om de vertaalde inhoud te beoordelen.
+[ zoals eerder gezien ](#using-translation-project), de machine vertaalde inhoud vloeit terug in AEM met het statuut van **Goedgekeurd** aangezien de veronderstelling is dat omdat de machinevertaling wordt gebruikt, geen menselijke interventie wordt vereist. Het is echter nog steeds mogelijk om de vertaalde inhoud te beoordelen.
 
 Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tikken of checkbox te klikken. Het pictogram **Voorproef in Plaatsen** wordt getoond in de hulpmiddelbar.
 
@@ -285,7 +285,7 @@ Bouw op deze kennis voort en zet uw de vertaalreis van AEM Sites door het docume
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [ Publish vertaalde inhoud te herzien beweegt, ](publish-content.md) zijn het volgende enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document, maar zij worden niet vereist om op de reis verder te gaan doen.
+Terwijl wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [ Publish vertaalde inhoud ](publish-content.md) te herzien beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de reis voort te zetten.
 
 * [ het Leiden de Projecten van de Vertaling ](/help/sites-cloud/administering/translation/managing-projects.md) - leer de details van vertaalprojecten en extra eigenschappen zoals menselijke vertaalwerkschema&#39;s en meertalige projecten.
 * [ Authoring Milieu en Hulpmiddelen ](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM verstrekt diverse mechanismen om uw inhoud met inbegrip van robuuste wegbrowser te organiseren en uit te geven.

@@ -5,9 +5,9 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,26 @@ Leer de verschillende manieren u inhoud in AEM kunt ontwerpen, hoe zij verschill
 
 AEM as a Cloud Service biedt verschillende editors om verschillende typen inhoud te bewerken en biedt ondersteuning voor verschillende gebruiksgevallen bij het ontwerpen.
 
-* [ WYSIWYG Authoring using the Page Editor ](#page-editor) - De Page Editor is de klassieke editor voor het ontwerpen van inhoud in AEM, geprobeerd en vertrouwd op duizenden websites.
-* [ WYSIWYG Authoring using the Universal Editor ](#universal-editor) - De Universal Editor is een moderne UI die u toestaat AEM inhoud op een content-agnostische manier te schrijven en is beschikbaar voor AEM projecten die Edge Delivery Services leveraging.
-* [ op document-Gebaseerde Authoring ](#document-based) - als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of de Dokken van Google volledig buiten AEM consoles te schrijven.
+* [ het Authoring van WYSIWYG die de Redacteur van de Pagina ](#page-editor) gebruikt - de Redacteur van de Pagina is de klassieke redacteur voor auteursinhoud in AEM, geprobeerd en vertrouwd op duizenden op duizenden websites.
+* [ het Authoring van WYSIWYG die de Universele Redacteur ](#universal-editor) gebruikt - De Universele Redacteur is een moderne UI die u toestaat om inhoud AEM op een tevreden-agnostische manier te schrijven en is beschikbaar voor AEM projecten leveraging Edge Delivery Services.
+* [ op document-Gebaseerde Authoring ](#document-based) - als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs volledig buiten AEM consoles te schrijven.
 * [ AEM de Redacteur van het Fragment van de Inhoud ](#cf-editor) - dit is de redacteur van keus voor het creëren van inhoud zonder kop.
 
 Wegens de geïntegreerde en scalable aard van AEM, kunnen deze methodes uitsluitend of in combinatie met elkaar afhankelijk van de behoeften van uw project worden gebruikt.
 
 Raadpleeg uw systeembeheerder of projectmanager als u onzeker bent welke auteursopties aan u beschikbaar zijn of als u nieuwe opties voor het ontwerpen van uw inhoud wilt onderzoeken.
 
-## WYSIWYG Authoring using the Page Editor {#page-editor}
+## WYSIWYG Authoring met de paginaeditor {#page-editor}
 
 Dit is de klassieke editor voor het ontwerpen van inhoud in AEM, die duizenden keren is geprobeerd en vertrouwd op duizenden websites.
 
 ![ de AEM paginaredacteur ](assets/authoring-methods-page-editor.png)
 
-De AEM paginaredacteur stelt een geïntegreerde milieu voor voor het ontwerpen van uw inhoud gebruikend een wat-u-zien-is-wat-u-krijgt (WYSIWYG) interface. Met vooraf gedefinieerde componenten voor slepen en neerzetten kunt u de pagina samenstellen en inhoud op plaats bewerken.
+De AEM paginaredacteur presenteert een geïntegreerde milieu voor het ontwerpen van uw inhoud gebruikend wat-u-ziet-is-wat-u-krijgt (WYSIWYG) interface. Met vooraf gedefinieerde componenten voor slepen en neerzetten kunt u de pagina samenstellen en inhoud op plaats bewerken.
 
-Om meer over de AEM paginaredacteur te leren, te zien gelieve het document [ de Redacteur van de Pagina van de AEM.](/help/sites-cloud/authoring/page-editor/introduction.md)
+Om meer over de AEM paginaredacteur te leren, te zien gelieve het document [ de Redacteur van de Pagina van de AEM ](/help/sites-cloud/authoring/page-editor/introduction.md).
 
-## WYSIWYG Authoring using the Universal Editor {#universal-editor}
+## WYSIWYG Authoring met de Universal Editor {#universal-editor}
 
 De Universele Redacteur is een moderne UI die u toestaat om AEM inhoud op een tevreden-agnostische manier te schrijven en is de eerste keus voor AEM projecten die Edge Delivery Services leveraging.
 
@@ -47,17 +47,17 @@ De Universele Redacteur is een moderne UI die u toestaat om AEM inhoud op een te
 
 De Universele Redacteur wordt betreden door de console van Plaatsen binnen AEM, maar biedt de macht en inhoud-agnostische flexibiliteit aan auteur niet alleen uw AEM inhoud, maar ook behoorlijk-instrumentated externe inhoud aan.
 
-Om meer over de Universele Redacteur te leren, te zien gelieve het document [ Authoring Inhoud met de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Om meer over de Universele Redacteur te leren, te zien gelieve het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 ## Authoring op basis van documenten  {#document-based}
 
-Als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of de Dokken van Google volledig buiten de [ AEM **console van Plaatsen** te schrijven.](/help/sites-cloud/authoring/sites-console/introduction.md)
+Als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs volledig buiten de [ AEM **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md) te schrijven.**
 
 ![ het uitgeven op document-gebaseerde inhoud ](assets/authoring-methods-document.jpg)
 
 Met op documenten gebaseerde authoring kunnen auteurs de gereedschappen gebruiken die ze al kennen en profiteren nog steeds van de snelheid en prestaties van AEM Edge Delivery Services om hun inhoud te publiceren. Voor schrijven op basis van documenten is geen gebruik van de AEM-console vereist.
 
-Om meer over op document-gebaseerde creatie te leren, te zien gelieve het document [ Authoring en het Publiceren Inhoud.](/help/edge/docs/authoring.md)
+Meer over op document-gebaseerde creatie leren, zie [ Authoring en het Publiceren Inhoud ](/help/edge/docs/authoring.md).
 
 ## AEM Inhoudsfragmenteditor {#cf-editor}
 

@@ -5,7 +5,7 @@ exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door 
 
 Een reis van de Documentatie verbindt vele verschillende en complexe onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen staan in schril contrast met AEM bestaande technische documenten die zich hoofdzakelijk op één enkel kenmerk en documentatie van taken richten, veronderstellend vertrouwdheid met AEM. Door zich op de concepten te concentreren en diepgaande details aan de bestaande technische documentatie uit te stellen, geven de Reizen van de Documentatie lezers nieuw om een plaats te AEM beginnen te begrijpen hoe het platform kan worden gebruikt door beste praktijken te gebruiken om gemeenschappelijke bedrijfsbehoeften en werkschema&#39;s te richten. Om deze reden, dienen de Reizen van de Documentatie als aanvulling aan en niet als vervanging voor [ AEM bestaande technische documentatie.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+Documentatiereizen staan in schril contrast met AEM bestaande technische documenten die zich hoofdzakelijk op één enkel kenmerk en documentatie van taken richten, veronderstellend vertrouwdheid met AEM. Door zich op de concepten te concentreren en diepgaande details aan de bestaande technische documentatie uit te stellen, geven de Reizen van de Documentatie lezers nieuw om een plaats te AEM beginnen te begrijpen hoe het platform kan worden gebruikt door beste praktijken te gebruiken om gemeenschappelijke bedrijfsbehoeften en werkschema&#39;s te richten. Om deze reden, dienen de Reizen van de Documentatie als aanvulling aan en niet als vervanging voor [ AEM bestaande technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html).
 
 ### Leren op verhaal {#narrative}
 
@@ -77,7 +77,7 @@ Documentatiereizen zijn bedoeld als aanvulling op bestaande AEM technische docum
 
 | Documentatietype | Doel | Publiek | Veronderstellingen | Weglaten | Inhoudstype | Lengte |
 |---|---|---|---|---|---|---|
-| Documentatiereis | Een reis bepaalt hoe AEM een algemeen bedrijfsprobleem door een verhaal kan oplossen dat lezers door complexe, onderling verbonden processen en eigenschappen begeleidt. Het illustreert hoe de veelvoudige eigenschappen samenwerken om een bedrijfsbehoefte op een beste praktijkwijze op te lossen. | Readers die nieuw zijn voor AEM | Algemene kennis van CMS | Gedetailleerde opties en configuratie | Tekst | Ca. 1 uur |
+| Documentatiereis | Een reis bepaalt hoe AEM een algemeen bedrijfsprobleem door een verhaal kan oplossen dat lezers door complexe, onderling verbonden processen en eigenschappen begeleidt. Het illustreert hoe de veelvoudige eigenschappen samenwerken om een bedrijfsbehoefte op een beste praktijkwijze op te lossen. | Readers die nieuw zijn voor AEM | Algemene CMS-vertrouwdheid | Gedetailleerde opties en configuratie | Tekst | Ca. 1 uur |
 | Technische documenten | De technische documenten richten zich op individuele eigenschappen, die de technische werking van de eigenschap en elke optie specificeren beschikbaar aan de gebruiker. | Ervaren AEM gebruikers | AEM | Context en achtergrond | Tekst | Varieert |
 | Zelfstudie | Een leerprogramma is een diepgaande duik in een onderwerp dat een ontwikkelaar of admin toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekken, gewoonlijk gebruikend een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
 | Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |

@@ -4,13 +4,13 @@ description: Met thema's kunt u een adaptief formulier vormgeven en een visuele 
 keywords: Aangepaste formulieren met stijl Core Components. thema gebruiken in Core Components, aanpassen van vorm opmaken en thema's aanpassen
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 0%
 
 ---
-
 
 # Thema&#39;s gebruiken om de stijl van op Core Components gebaseerde Adaptive Forms te bepalen{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen, opmaken e
 
 * Verken zelf met [ vestiging een pijpleiding in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) en het hebben van basiskennis van hoe te opstelling helpt u efficiënt uw themaaanpassingen beheren en opstellen.
 * Leer hoe te [ een gebruiker met de bijdragerrol ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html) vormen. Begrijpen hoe te om een gebruiker met de bijdragerrol te vormen laat u de noodzakelijke toestemmingen voor themaaanpassing verlenen.
-* Installeer de recentste versie van [ Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is een tool voor automatisering van build dat veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
+* Installeer de recentste versie van [ Apache Maven ](https://maven.apache.org/download.cgi). Apache Maven is een tool voor automatisering van build die veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 * Installeer een teksteditor zonder opmaak. Bijvoorbeeld Microsoft® Visual Studio Code. Het gebruiken van een gewone tekstredacteur zoals de Code van Microsoft® Visual Studio verstrekt een gebruikersvriendelijk milieu voor het uitgeven en het wijzigen van themadossiers.
 
 ### Uw omgeving instellen
@@ -373,7 +373,7 @@ Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Servi
 
 ##### 5.3 Loop de frontend pijpleiding {#run-a-frontend-pipeline}
 
-Het thema wordt opgesteld gebruikend de [ front-end pijpleiding.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Voer de volgende stappen uit om thema te implementeren:
+Het thema wordt opgesteld gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Voer de volgende stappen uit om thema te implementeren:
 
 1. Meld u aan bij uw AEM Cloud Manager-opslagplaats.
 1. Klik op de knop **[!UICONTROL Add]** in de sectie **[!UICONTROL Pipelines]** .

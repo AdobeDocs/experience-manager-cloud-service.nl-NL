@@ -4,7 +4,7 @@ description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van 
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud met fr
 
 ## Wat zijn GraphQL en Assets REST API&#39;s? {#what-are-the-apis}
 
-[ nu dat u sommige inhoudsfragmenten hebt gecreeerd, ](create-content-fragment.md) kunt u AEM gebruiken APIs om hen zonder kop te leveren.
+[ nu u sommige inhoudsfragmenten ](create-content-fragment.md) hebt gecreeerd, kunt u AEM gebruiken APIs om hen zonder kop te leveren.
 
 * [ GraphQL API ](/help/headless/graphql-api/content-fragments.md) laat u verzoeken tot toegang tot en levering van de Fragmenten van de Inhoud tot stand brengen. Deze API biedt de meest robuuste set mogelijkheden voor het opvragen en gebruiken van inhoud met fragmentinhoud.
    * Om API te gebruiken, [ bepaalt en laat eindpunten in AEM ](/help/headless/graphql-api/graphql-endpoint.md) toe, en indien nodig, de [ geïnstalleerde interface GraphiQL ](/help/headless/graphql-api/graphiql-ide.md).

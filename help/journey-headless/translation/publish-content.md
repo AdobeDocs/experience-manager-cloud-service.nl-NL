@@ -5,7 +5,7 @@ exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM hoofdloze vertaalreis, [ vertaal Inhoud, ](configure-connector.md) u leerde hoe te om AEM Vertaalprojecten te gebruiken om uw inhoud zonder kop te vertalen. Nu moet u:
+In het vorige document van de AEM hoofdloze vertaalreis, [ vertaalde Inhoud ](configure-connector.md), leerde u hoe te AEM de Projecten van de Vertaling gebruiken om uw inhoud zonder kop te vertalen. Nu moet u:
 
 * Begrijp wat een vertaalproject is.
 * U kunt nieuwe vertaalprojecten maken.
@@ -119,7 +119,7 @@ U ziet dat er een nieuwe banenkaart aan het project is toegevoegd. In dit voorbe
 
 U kunt zien dat de statistieken op de nieuwe kaart (aantal activa en inhoudsfragmenten) verschillend zijn. Dit komt omdat AEM herkent wat er is veranderd sinds de laatste vertaling en alleen de inhoud bevat die moet worden vertaald. Dit omvat het opnieuw vertalen van bijgewerkte inhoud en het voor het eerst vertalen van nieuwe inhoud.
 
-Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel deed.](translate-content.md#using-translation-project)
+Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel ](translate-content.md#using-translation-project) deed.
 
 ### Een handmatig gemaakt vertaalproject bijwerken {#updating-manual-project}
 
@@ -141,15 +141,15 @@ Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw best
    ![ Uitgezochte doeltaal ](assets/select-target-language.png)
 
 1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, selecteert u de knop voor de weglatingsteken onder aan de taakkaart om de details van de taak weer te geven.
-1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Voeg inhoud aan de baan toe door te tikken of te klikken **voeg** knoop toe en gebruikend wegbrowser [ zoals u voordien toen het creëren van het vertaalproject.](translate-content.md##manually-creating)
+1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Voeg inhoud aan de baan toe door te tikken of **te klikken voeg** knoop toe en gebruikend wegbrowser [ zoals u deed alvorens toen oorspronkelijk het vertaalproject ](translate-content.md##manually-creating) creeerde.
 
 >[!TIP]
 >
 >De krachtige filters van de padbrowser kunnen ook weer nuttig zijn om alleen de inhoud te zoeken die is bijgewerkt.
 >
->U kunt meer over wegbrowser in de [ extra middelensectie leren.](#additional-resources)
+>U kunt meer over wegbrowser in de [ extra middelensectie ](#additional-resources) leren.
 
-Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel deed.](translate-content.md#using-translation-project)
+Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel ](translate-content.md#using-translation-project) deed.
 
 ## Einde van de reis? {#end-of-journey}
 

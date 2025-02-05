@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Wanneer een auteur een pagina maakt, moet hij of zij een sjabloon selecteren dat
 
 >[!NOTE]
 >
->[ de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Universele Redacteur editable zijn.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[ de Malplaatjes zijn ook beschikbaar voor het creëren van pagina&#39;s die met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md) editable zijn.
 
 Met de **Redacteur van het Malplaatje**, creërend en het handhaven van malplaatjes is geen ontwikkelaar-enige taak. Een type van macht-gebruiker, die a **malplaatjeauteur** wordt genoemd, kan malplaatjes tot stand brengen. De ontwikkelaars worden vereist om het milieu te plaatsen, cliëntbibliotheken te creëren, en de te gebruiken componenten tot stand te brengen, maar zodra deze grondbeginselen op zijn plaats zijn heeft de **malplaatjeauteur** de flexibiliteit om malplaatjes tot stand te brengen en te vormen zonder een ontwikkelaar te impliceren.
 
@@ -95,7 +95,7 @@ Bij het maken van een bewerkbare sjabloon:
 >
 >Ga nooit om het even welke informatie in die [ ](/help/implementing/developing/extending/i18n/dev.md) in een malplaatje moet worden geinternationaliseerd.
 >
->Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [ localisatieeigenschappen van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [ localisatieeigenschappen van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
 Aangezien het malplaatje van verwijzingen wordt voorzien wanneer een pagina wordt teruggegeven, moet het volledig gevormde malplaatje worden gepubliceerd zodat het op het publicatiemilieu beschikbaar is.
 
-Publish malplaatjes die de **[Console van Malplaatjes gebruiken.](/help/sites-cloud/administering/templates-console.md)**
+De malplaatjes van Publish die de **[Console van Malplaatjes gebruiken](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Sjablonen bewerken - Sjabloonauteurs {#editing-templates-template-authors}
 
@@ -305,7 +305,7 @@ Na toevoeging wordt elke component gemarkeerd met:
 
 >[!NOTE]
 >
->Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [ pagina creatie.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [ pagina creatie ](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 #### Componenthandelingen {#component-actions}
 
@@ -647,4 +647,4 @@ Houd bij het maken van sjablonen rekening met:
    >AEM geeft expliciete waarschuwingen wanneer het veranderen van de slotstatus van componenten op malplaatjes die niet meer concepten zijn.
 
 1. [ Creërend uw eigen omslagen ](#creating-a-template-folder-admin) voor uw plaats-specifieke malplaatjes.
-1. [ Publish uw malplaatjes ](#publishing-a-template-template-author) van de **[console van Malplaatjes.]** (/help/sites-cloud/administering/templates-console.md)
+1. [ Publish uw malplaatjes ](#publishing-a-template-template-author) van de **[console van Malplaatjes]** (/help/sites-cloud/administering/templates-console.md).

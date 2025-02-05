@@ -4,7 +4,7 @@ description: Meer informatie over Cloud Manager en hoe de invoegtoepassing wordt
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Nu u dit deel van de AEM Toestemmingsreis van de Demos van de Verwijzing hebt vo
 * Begrijp hoe de pijpleidingen inhoud en configuratie aan AEM leveren.
 * Bekijk hoe sjablonen met slechts een paar klikken sites kunnen maken die vooraf zijn gevuld met demo-inhoud.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door te herzien [ creeer een Programma en een Pijpleiding, ](create-program.md) waar u leert hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door te herzien [ creeer een Programma en een Pijpleiding ](create-program.md), waar u leert hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 

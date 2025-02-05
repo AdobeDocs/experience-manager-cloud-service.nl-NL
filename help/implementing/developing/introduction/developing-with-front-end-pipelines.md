@@ -4,7 +4,7 @@ description: Met de front-end pijpleiding wordt meer onafhankelijkheid gegeven a
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Sites ontwikkelen met behulp van de voorste pijplijn {#developing-site-with-front-end-pipeline}
 
-[ met de front-end pijpleiding, ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) meer onafhankelijkheid wordt gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijke snelheid bereiken. In dit document wordt beschreven hoe dit proces werkt, samen met een aantal overwegingen, zodat u optimaal kunt profiteren van dit proces.
+[ met de front-end pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), wordt meer onafhankelijkheid gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijke snelheid bereiken. In dit document wordt beschreven hoe dit proces werkt, samen met een aantal overwegingen, zodat u optimaal kunt profiteren van dit proces.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Front-end bouwcontract {#front-end-build-contract}
 
-Gelijkaardig aan [ volledig-stapel bouwt milieu, ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) de front-end pijpleiding heeft zijn eigen milieu. De ontwikkelaars hebben wat flexibiliteit gebruikend deze pijpleiding zolang het volgende front-end bouwcontract wordt waargenomen.
+Gelijkaardig aan [ volledig-stapel bouwt milieu ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), heeft de front-end pijpleiding zijn eigen milieu. De ontwikkelaars hebben wat flexibiliteit gebruikend deze pijpleiding zolang het volgende front-end bouwcontract wordt waargenomen.
 
 De front-end pijpleiding vereist het front-end project Node.js om de `build` manuscriptrichtlijn te gebruiken om de bouwstijl te produceren die het opstelt. Dit komt doordat Cloud Manager de opdracht `npm run build` gebruikt om het implementeerbare project voor de front-end build te genereren.
 

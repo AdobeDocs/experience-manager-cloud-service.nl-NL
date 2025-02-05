@@ -4,7 +4,7 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
 ht-degree: 0%
@@ -63,7 +63,7 @@ De klanten kunnen pro-actieve maatregelen nemen om de aanvallen van de toepassin
 
 Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
 
-Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen.](/help/operations/config-pipeline.md) Naast verkeersfilterregels die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
+Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen ](/help/operations/config-pipeline.md). Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
 
 ## Voorgesteld proces {#suggested-process}
 
@@ -105,11 +105,11 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 
 1. Als WAF-regels een licentie hebben, moet u de functie in Cloud Manager inschakelen, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
 
-   1. Om WAF op een nieuw programma te vormen, controleer **WAF-DDOS Beveiliging** controle-doos op het **3} lusje van de Veiligheid {wanneer u [ een productieprogramma toevoegt.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)**
+   1. Om WAF op een nieuw programma te vormen, controleer de **controle-doos van de Bescherming WAF-DDOS op het** 3} lusje van de Veiligheid [ een productieprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) toevoegen.****
 
    1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3} lusje van de Veiligheid {uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
 
-1. Creeer een config pijpleiding in Cloud Manager, zoals die in [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#managing-in-cloud-manager) de pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier verwijzen dat ergens onder wordt geplaatst, zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
+1. Creeer een config pijpleiding in Cloud Manager, zoals die in [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager). De pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier van verwijzingen voorzien dat ergens onder wordt geplaatst, zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 

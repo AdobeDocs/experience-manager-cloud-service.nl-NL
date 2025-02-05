@@ -4,7 +4,7 @@ description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Deze gids verstrekt geleidelijke instructies voor hoe te om blokken tot stand te
 
 Deze gids vereist noodzakelijkerwijs bestaande kennis van het schrijven van WYSIWYG met Edge Delivery Services projecten evenals de Universele Redacteur. Voordat u met deze handleiding begint, moet u al toegang hebben tot Edge Delivery Services en vertrouwd zijn met de basisbeginselen, zoals:
 
-* U hebt de [ zelfstudie van de Dienst van Edge Delivery voltooid.](/help/edge/developer/tutorial.md)
-* U hebt toegang tot een [ zandbak van AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* U hebt [ de Universele Redacteur op het zelfde zandbakmilieu toegelaten.](/help/implementing/universal-editor/getting-started.md)
+* U hebt de [ zelfstudie van de Dienst van Edge Delivery ](/help/edge/developer/tutorial.md) voltooid.
+* U hebt toegang tot een [ zandbak van AEM Cloud Service ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* U hebt [ de Universele Redacteur op het zelfde zandbakmilieu ](/help/implementing/universal-editor/getting-started.md) toegelaten.
 * U hebt de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG creatie met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids wordt voltooid.
 
 Deze gids bouwt op het werk voort dat in de [ Begonnen Gids van de Ontwikkelaar wordt gedaan Begonnen voor het auteursrecht van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids.
@@ -155,7 +155,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, kunt u een citaatblok aan een bestaande pagina toevoegen.
 
-1. Meld u aan bij AEM as a Cloud Service in een browser. [ Gebruikend de console van Plaatsen, ](/help/sites-cloud/authoring/basic-handling.md) navigeer aan de plaats die u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG creeert authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids en selecteer een pagina.
+1. Meld u aan bij AEM as a Cloud Service in een browser. [ Gebruikend de console van Plaatsen ](/help/sites-cloud/authoring/basic-handling.md), navigeer aan de plaats die u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids werd gecreeerd en selecteer een pagina.
 
    * In dit geval wordt `index` gebruikt voor illustratieve doeleinden.
 
@@ -281,7 +281,7 @@ Gefeliciteerd! U hebt nu een volledig werkend en gestileerd citaatblok. U kunt d
 
 ### Blokopties {#block-options}
 
-Als u een blok nodig hebt om te kijken of zich lichtjes verschillend gedraagt gebaseerd op bepaalde omstandigheden, maar niet verschillend genoeg om een nieuw blok op zich te worden, kunt u auteurs van [ blokopties laten kiezen.](content-modeling.md#type-inference)
+Als u een blok nodig hebt om te kijken of zich lichtjes verschillend gedraagt gebaseerd op bepaalde omstandigheden, maar niet verschillend genoeg om een nieuw blok op zich te worden, kunt u auteurs van [ blokopties ](content-modeling.md#type-inference) laten kiezen.
 
 Door een eigenschap `classes` aan het blok toe te voegen, wordt de eigenschap weergegeven in de tabelkop voor eenvoudige blokken of als een lijst met waarden voor items in een containerblok.
 
@@ -343,4 +343,4 @@ Gelieve te zien het document [ Modelleren van de Inhoud voor WYSIWYG authoring m
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

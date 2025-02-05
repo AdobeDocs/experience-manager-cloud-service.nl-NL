@@ -5,7 +5,7 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Uw inhoud bijwerken via AEM Assets API&#39;s {#update-your-content}
 
-In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) leert hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken.
+In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar ](overview.md), leer hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -57,7 +57,7 @@ De Assets HTTP-API omvat:
 
 De huidige implementatie van Assets HTTP API is gebaseerd op de **REST** architecturale stijl en laat u toe om tot inhoud toegang te hebben (die in AEM wordt opgeslagen) via **CRUD** verrichtingen (creeer, Gelezen, Update, Schrapping).
 
-Met deze bewerkingen kunt u met de API Adobe Experience Manager as a Cloud Service als een headless CMS (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
+Met deze bewerkingen kunt u met de API Adobe Experience Manager as a Cloud Service gebruiken als een CMS zonder kop (Content Management System) door Content Services aan te bieden aan een JavaScript front end-toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
 
 <!--
 >[!NOTE]
@@ -335,7 +335,7 @@ U zou uw AEM hoofdloze reis door het document [ moeten voortzetten te herzien ho
 * [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [ verklaarde CORS/AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [ Video - het Ontwikkelen voor CORS met AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+* [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 * [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 * Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.

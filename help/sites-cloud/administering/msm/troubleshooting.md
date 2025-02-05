@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -91,4 +91,4 @@ Als er een zelfstandige pagina wordt gevonden, kiest MSM ervoor de naam van deze
 
 Zulk een standalone pagina in Levende subtree van het Exemplaar is typisch het resultaat van a **ontkoppel** verrichting, of de vroegere Levende pagina van het Exemplaar werd manueel geschrapt door een auteur en toen opnieuw gecreeerd met de zelfde naam.
 
-Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [ dit artikel worden gevonden.](creating-live-copies.md)
+Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [ dit artikel ](creating-live-copies.md) worden gevonden.

@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -26,7 +26,7 @@ AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebrei
 
 ## Algemeen gebruik {#general-usage}
 
-De componenten zijn beschikbaar op het **lusje van Componenten** van het zijpaneel van de paginaredacteur wanneer [ het uitgeven van een pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+De componenten zijn beschikbaar op het **lusje van Componenten** van het zijpaneel van de paginaredacteur wanneer [ het uitgeven van een pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 U kunt een component selecteren en naar de gewenste locatie op de pagina slepen. U kunt het dan uitgeven gebruikend:
 
@@ -34,7 +34,7 @@ U kunt een component selecteren en naar de gewenste locatie op de pagina slepen.
 * [Inhoud bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Inhoud bewerken - Modus Volledig scherm](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-Voor meer informatie over het toevoegen van componenten aan een pagina, zie [ het Uitgeven van de Inhoud van de Pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Voor meer informatie over het toevoegen van componenten aan een pagina, zie [ het Uitgeven van de Inhoud van de Pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Overzicht van alle componenten {#overview-of-all-components}
 

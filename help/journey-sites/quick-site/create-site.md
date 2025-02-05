@@ -5,7 +5,7 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Aanmaak van de Plaats, [ begrijp Cloud Manager en het Snelle Werkschema van de Aanmaak van de Plaats, ](cloud-manager.md) u over Cloud Manager leerde en hoe het het nieuwe Snelle proces van de Aanmaak van de Plaats verbindt en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Begrijp Cloud Manager en het Snelle Werkschema van de Aanmaak van de Plaats ](cloud-manager.md), leerde u over Cloud Manager en hoe het het nieuwe Snelle proces van de Aanmaak van de Plaats verbindt en u zou nu moeten:
 
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om front-end ontwikkeling te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing volledig losgekoppeld is van AEM en geen AEM kennis vereist.
@@ -54,7 +54,7 @@ Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inho
 
 ## Sitesjabloon verkrijgen {#obtaining-template}
 
-De eenvoudigste manier om begonnen te worden is [ de recentste versie van het AEM StandaardMalplaatje van de Plaats van zijn bewaarplaats GitHub te downloaden.](https://github.com/adobe/aem-site-template-standard/releases)
+De eenvoudigste manier om begonnen te worden is [ de recentste versie van het AEM StandaardMalplaatje van de Plaats van zijn bewaarplaats GitHub ](https://github.com/adobe/aem-site-template-standard/releases) te downloaden.
 
 Nadat u het bestand hebt gedownload, kunt u het net als elk ander pakket uploaden naar de AEM. Zie de [ Extra sectie van Middelen ](#additional-resources) voor details op hoe te met pakketten werken als u meer informatie over dit onderwerp nodig hebt.
 
@@ -177,11 +177,11 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ eerst te herzien Opstelling Uw Pijpleiding, ](pipeline-setup.md) verder waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ eerst te herzien Opstelling Uw Pijpleiding ](pipeline-setup.md) voort, waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Aanmaak van de Plaats door de document [ Reeks te herzien Uw Pijpleiding beweegt, ](pipeline-setup.md) het volgende zijn sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door de document [ Reeks te herzien Uw Pijpleiding ](pipeline-setup.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ AEM het StandaardMalplaatje van de Plaats ](https://github.com/adobe/aem-site-template-standard) - dit is de bewaarplaats GitHub van het AEM Standaardmalplaatje van de Plaats.
 * [ het Organiseren van Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Deze gids specificeert hoe te om de pagina&#39;s van uw Plaats van de AEM te organiseren.

@@ -5,7 +5,7 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Deze gids leidt u door de belangrijkste hoofdloze vertaalonderwerpen zodat u na 
 
 Het doel is om u een breed begrip van technologie zonder kop te geven, hoe AEM inhoud zonder kop dient en hoe u het kunt vertalen. Als u met geen van deze onderwerpen vertrouwd bent, is dit uw ideale plaats om te beginnen.
 
-Als u al vertrouwd bent met AEM, zonder kop en vertaling, hebt u wellicht al de grondkennis van deze reis. Overweeg verwijzend naar onze technische documentatie die onder de [ extra hieronder middelensectie wordt verbonden.](#additional-resources)
+Als u al vertrouwd bent met AEM, zonder kop en vertaling, hebt u wellicht al de grondkennis van deze reis. Overweeg verwijzend naar onze technische documentatie die onder de [ extra hieronder resourcesectie wordt verbonden ](#additional-resources).
 
 ## AEM Documentenreizen {#documentation-journeys}
 
@@ -45,7 +45,7 @@ Als u wilt weten hoe de Adobe adviseert hoe te om hoofdloze zaken met AEM op te 
 
 Deze reis wordt ontworpen voor de vertaal specialistische persoon, die vaak als de Manager van het Project van de Vertaling of TPM wordt bedoeld. Deze reis beschrijft de vereisten, de stappen, en de benadering om hoofdloze inhoud in AEM te vertalen. De reis kan aanvullende personen definiëren waarmee de vertaalspecialist moet communiceren, maar het gezichtspunt voor de reis is dat van de vertaalspecialist.
 
-Deze reis veronderstelt de lezer ervaring die inhoud op een groot CMS systeem vertaalt, maar veronderstelt geen kennis van technologie zonder kop of AEM.
+Deze reis veronderstelt de lezer ervaring vertaalend inhoud op een groot systeem van CMS heeft, maar veronderstelt geen kennis van technologie zonder kop of AEM.
 
 Het volgende is de persoon die in deze reis interactie heeft.
 
@@ -87,6 +87,6 @@ Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Verschillende kun
 * [ Eis van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te modelleren.
 * [ AEM Headless Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 * [ technische documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - als u reeds een vast inzicht in AEM en zonder kop technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
-   * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+   * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 * [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ AEM Headless leerprogramma&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden voortgebouwd.

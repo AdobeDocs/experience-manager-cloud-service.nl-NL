@@ -4,7 +4,7 @@ description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 0%
@@ -483,7 +483,7 @@ Hiermee wordt de opgegeven parameter omgezet.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` breidt [ ContextHub.Store.JSONPStore ](#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [ Persistentie wijzen:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` breidt [ ContextHub.Store.JSONPStore ](#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [ Persistentiemodi ](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
@@ -1033,7 +1033,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree, key, value) {#setitem-tree-key-value}
 
-Voegt een sleutel/waardepaar aan de gegevensboom van een exemplaar van een voorwerp toe. Voor informatie over gegevensbomen, zie [ Persistence.](contexthub.md#persistence)
+Voegt een sleutel/waardepaar aan de gegevensboom van een exemplaar van een voorwerp toe. Voor informatie over gegevensbomen, zie [ Persistence ](contexthub.md#persistence).
 
 ##### Parameters {#parameters-setitem-2}
 

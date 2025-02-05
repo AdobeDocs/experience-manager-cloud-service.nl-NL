@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Inhoud kan van verschillende typen zijn, zoals pagina&#39;s, elementen en public
 
 ![ Diagram van auteur, uitgever, en verzenders ](assets/author-publish.jpg)
 
-Voor verdere details over de technische architectuur van AEM as a Cloud Service, te zien gelieve het document [ Een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Voor verdere details over de technische architectuur van AEM as a Cloud Service, gelieve te zien het document [ Een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service ](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 

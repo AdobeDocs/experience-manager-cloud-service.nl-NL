@@ -4,7 +4,7 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van
 
 >[!TIP]
 >
->Als u in een voorbeeld liever zou duiken, kunt u de [ Universele SteekproefApp van de Redacteur op GitHub herzien.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Als u in een voorbeeld zou verkiezen te duiken, kunt u de [ Universele SteekproefApp van de Redacteur op GitHub ](https://github.com/adobe/universal-editor-sample-editable-app) herzien.
 
 Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit document een AEM-app als voorbeeld gebruikt. Dit document begeleidt u door deze stappen.
 
@@ -122,7 +122,7 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 
 ## Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend. (Optioneel) {#content-paths}
 
-Als u een bestaand AEM project gebruikend [ de paginaredacteur hebt, ](/help/sites-cloud/authoring/page-editor/introduction.md) wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt bepalen welke editor AEM moet worden geopend op basis van de inhoudspaden of de `sling:resourceType` . Hierdoor verloopt de ervaring naadloos voor de auteurs, ongeacht de editor die nodig is voor de geselecteerde inhoud.
+Als u een bestaand AEM project gebruikend [ de paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md) hebt, wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt bepalen welke editor AEM moet worden geopend op basis van de inhoudspaden of de `sling:resourceType` . Hierdoor verloopt de ervaring naadloos voor de auteurs, ongeacht de editor die nodig is voor de geselecteerde inhoud.
 
 1. Open de Manager van de Configuratie.
 

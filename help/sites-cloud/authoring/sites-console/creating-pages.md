@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Leer hoe te om nieuwe pagina&#39;s voor uw website tot stand te brengen gebruike
 
 >[!TIP]
 >
->Alvorens u begint creërend nieuwe pagina&#39;s, wordt vertrouwd met [ hoe uw pagina&#39;s in AEM worden georganiseerd.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Alvorens u begint creërend nieuwe pagina&#39;s, wordt vertrouwd met [ hoe uw pagina&#39;s in AEM ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) worden georganiseerd.
 
 ## Toegangsrechten {#access-privileges}
 
@@ -31,7 +31,7 @@ Neem contact op met de systeembeheerder als u problemen ondervindt.
 
 Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Open [ de **2} console van Plaatsen {.](/help/sites-cloud/authoring/sites-console/introduction.md)**
+1. Open [ de **2} console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md).**
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
 1. Open de drop-down selecteur gebruikend **creeer** in de toolbar, dan selecteer **Pagina** van de lijst:
 
@@ -40,7 +40,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 1. Vanaf de eerste fase van de wizard kunt u:
 
    * Selecteer het malplaatje u wilt gebruiken om de nieuwe pagina tot stand te brengen, dan selecteren **daarna** te werk te gaan of **annuleert** om het proces af te breken.
-   * De malplaatjes worden gesteund voor zowel de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) als voor de [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * De malplaatjes worden gesteund voor zowel de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) als voor de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/templates.md).
 
    ![ Selecterend een malplaatje voor een nieuwe pagina ](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

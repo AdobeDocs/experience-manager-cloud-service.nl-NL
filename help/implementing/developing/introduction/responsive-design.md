@@ -4,7 +4,7 @@ description: Met responsief ontwerp kunnen dezelfde ervaringen effectief worden 
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Het [ WKND leerprogramma ](develop-wknd-tutorial.md) gebruikt deze strategie om 
 
 ### Mediaquery&#39;s gebruiken met AEM pagina&#39;s {#using-media-queries-with-aem-pages}
 
-[ het WKND steekproefproject ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruiken de [ Component van de Kern van de Pagina, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) die clientlibs via het paginabeleid omvat.
+[ het WKND steekproefproject ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruiken de [ Component van de Kern van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), die clientlibs via het paginabeleid omvat.
 
 Als uw eigen paginacomponent niet op de Component van de Kern van de Pagina wordt gebaseerd, kunt u de omslag van de cliëntbibliotheek in het manuscript van HTML of JSP van het ook omvatten. Als u dit doet, wordt het CSS-bestand gegenereerd en wordt ernaar verwezen met de mediaquery&#39;s die nodig zijn om het responsieve raster te laten werken.
 

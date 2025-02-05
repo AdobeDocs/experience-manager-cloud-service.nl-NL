@@ -4,7 +4,7 @@ description: Leer hoe u gebruikersprofielen maakt in de Admin Console voor het b
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Van tijd tot tijd, contacteert de Adobe gebruikers betreffende hun milieu&#39;s 
 * **Melding van het Ongeval** - Deze berichten worden verzonden tijdens een incident of wanneer de Adobe een potentiële beschikbaarheidskwestie met uw milieu van AEM as a Cloud Service heeft geïdentificeerd.
 * **Proactief Bericht** - Deze berichten worden verzonden wanneer een het teamlid van de steun van de Adobe begeleiding op een potentiële optimalisering of een aanbeveling wil verstrekken die uw milieu van AEM as a Cloud Service kan profiteren.
 
-De gebruikers kunnen deze berichten voor specifieke programma&#39;s ook ontvangen die op hun [ toestemmingen van de douanegroep worden gebaseerd.](/help/implementing/cloud-manager/custom-permissions.md)
+De gebruikers kunnen deze berichten voor specifieke programma&#39;s ook ontvangen die op hun [ toestemmingen van de douanegroep ](/help/implementing/cloud-manager/custom-permissions.md) worden gebaseerd.
 
 Bovendien wordt het toewijzen van groepen aan proactieve meldingen ondersteund en kunnen gebruikers en groepen rechtstreeks aan de productprofielen worden toegewezen.
 
@@ -43,7 +43,7 @@ Omdat gebruikersprofielen worden gemaakt en onderhouden in de Admin Console, moe
 
 Maak twee gebruikersprofielen om de ontvangst van meldingen correct in te stellen. Deze stappen worden slechts één keer uitgevoerd.
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` .](https://adminconsole.adobe.com)
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
 
 1. Zorg ervoor dat u zich in de juiste organisatie bevindt.
 
@@ -103,7 +103,7 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
    ![ Gebruikers ](assets/product_services.png)
 
-1. Als federated identiteitskaart voor uw teamleden nog niet opstelling is, selecteer het **Gebruikers** lusje van de hoogste navigatie, dan uitgezocht **voeg Gebruiker** toe. Anders overslaan aan de sectie [ voeg Bestaande Gebruikers aan Profielen toe.](#existing-users)
+1. Als federated identiteitskaart voor uw teamleden nog niet opstelling is, selecteer het **Gebruikers** lusje van de hoogste navigatie, dan uitgezocht **voeg Gebruiker** toe. Anders overslaan aan de sectie [ voegt Bestaande Gebruikers aan Profielen ](#existing-users) toe.
 
    ![ Gebruikers ](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Selecteer het **lusje van Gebruikers** van de hoogste navigatie.
 
-1. Als de gefedereerde identiteitskaart reeds voor het teamlid bestaat die u aan een berichtprofiel wilt toevoegen, bepaal de plaats van die gebruiker in de lijst en klik het. Anders overslaan aan de sectie [ voeg Nieuwe Gebruikers aan Profielen toe.](#add-user)
+1. Als de gefedereerde identiteitskaart reeds voor het teamlid bestaat die u aan een berichtprofiel wilt toevoegen, bepaal de plaats van die gebruiker in de lijst en klik het. Anders overslaan aan de sectie [ voegt Nieuwe Gebruikers aan Profielen ](#add-user) toe.
 
 1. In de **sectie van Producten** van het venster van gebruikersdetails, klik de elliptische knoop en selecteer dan **uitgeven**.
 

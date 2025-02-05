@@ -4,7 +4,7 @@ description: Een configuratie maken als eerste stap om in AEM as a Cloud Service
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Browser van de Configuratie verstrekt een generische configuratie API, inhoudsst
 
 In de context van het beheer van inhoud zonder kop in AEM, denk aan een configuratie als werkplaats binnen AEM waar u uw Modellen van de Inhoud kunt tot stand brengen, die de structuur van uw toekomstige inhoud en de Fragmenten van de Inhoud bepalen. U kunt veelvoudige configuraties hebben om deze modellen te scheiden.
 
-Als u met [ paginasjablonen in een volledig-stapel AEM implementatie vertrouwd bent, ](/help/sites-cloud/authoring/page-editor/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
+Als u met [ paginasjablonen in een volledig-stapel AEM implementatie ](/help/sites-cloud/authoring/page-editor/templates.md) vertrouwd bent, is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worde
 
 ## Volgende stappen {#next-steps}
 
-Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [ creeer de Modellen van het Fragment van de Inhoud.](create-content-model.md)
+Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [ creeer de Modellen van het Fragment van de Inhoud ](create-content-model.md).
 
 >[!TIP]
 >
->Voor volledige details over Browser van de Configuratie, [ zie de Browser van de Configuratie documentatie ](/help/implementing/developing/introduction/configurations.md).
+>Voor volledige details over Browser van de Configuratie, zie de [ Browser van de Configuratie documentatie ](/help/implementing/developing/introduction/configurations.md).

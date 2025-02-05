@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 4%
@@ -105,7 +105,7 @@ De teksteditor voor volledig scherm biedt de volgende mogelijkheden:
 
 De volgende acties zijn ook beschikbaar (voor alle [ formaten ](#formats)) wanneer de volledig-schermredacteur (namelijk multi-line tekst) open is:
 
-* Selecteer het [ formaat ](#formats) ([ Rijke Tekst ](#rich-text), [ Onbewerkte Tekst, ](#plain-text) [ Markdown ](#markdown))
+* Selecteer het [ formaat ](#formats) ([ Rijke Tekst ](#rich-text), [ Onbewerkte Tekst ](#plain-text), [ Markdown ](#markdown))
 
 * [Inhoud uploaden](#uploading-content)
 

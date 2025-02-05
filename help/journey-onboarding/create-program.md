@@ -4,7 +4,7 @@ description: Leer hoe u Cloud Manager kunt gebruiken om uw eerste programma te m
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Een programma maken {#create-program}
 
-In dit deel van de [ onboarding reis, ](overview.md) leert u hoe te om Cloud Manager te gebruiken om uw eerste programma tot stand te brengen.
+In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om Cloud Manager te gebruiken om uw eerste programma tot stand te brengen.
 
 ## Doelstelling {#objective}
 
-Na het herzien van het vorige document in deze onboarding reis, [ Toegang Cloud Manager, ](cloud-manager.md) u hebt verzekerd u aangewezen toegang tot Cloud Manager. Nu kunt u uw eerste programma maken.
+Na het herzien van het vorige document in deze onboarding reis, [ Toegang Cloud Manager ](cloud-manager.md), hebt u ervoor gezorgd u aangewezen toegang tot Cloud Manager hebt. Nu kunt u uw eerste programma maken.
 
 Nadat u dit document hebt gelezen, kunt u:
 
@@ -29,7 +29,7 @@ Nadat u dit document hebt gelezen, kunt u:
 
 Programma&#39;s zijn het hoogste organisatieniveau in Cloud Manager. Afhankelijk van uw licentie met Adobe, kunt u met programma&#39;s uw oplossing organiseren en toegang verlenen aan bepaalde teamleden tot die programma&#39;s.
 
-Cloud Manager-programma&#39;s vertegenwoordigen groepen Cloud Manager-omgevingen. Deze programma&#39;s steunen logische reeksen bedrijfsinitiatieven, typisch die aan een vergunning gegeven Overeenkomst van het Niveau van de Dienst (SLA) beantwoorden. Het ene programma kan bijvoorbeeld de Adobe Experience Manager-bronnen (AEM) vertegenwoordigen om een wereldwijde openbare website voor een organisatie te ondersteunen, terwijl een ander programma een interne, centrale DAM vertegenwoordigt.
+Cloud Manager-programma&#39;s vertegenwoordigen groepen Cloud Manager-omgevingen. Deze programma&#39;s ondersteunen logische reeksen bedrijfsinitiatieven, die doorgaans overeenkomen met een Service level agreement (SLA) met licentie. Het ene programma kan bijvoorbeeld de Adobe Experience Manager-bronnen (AEM) vertegenwoordigen om een wereldwijde openbare website voor een organisatie te ondersteunen, terwijl een ander programma een interne, centrale DAM vertegenwoordigt.
 
 Als u het voorbeeld van de theoretische Onderneming van het WKND Reizen en van het Avontuur herinnert, die een huurder is die zich op reis-verwante media concentreert, zouden zij twee programma&#39;s kunnen hebben. Eén AEM Sites-programma voor de afdeling WKND Magazine en één AEM Assets-programma voor de afdeling WKND Media. Verschillende teamleden zouden dan toegang hebben tot de verschillende programma&#39;s vanwege hun eigen taakverdeling.
 
@@ -68,7 +68,7 @@ Zodra het programma volledig is, kunnen de leden van uw organisatie die aan het 
 
 ## Volgende functies {#whats-next}
 
-Nu uw eerste programma is gemaakt, kunt u er omgevingen voor maken. Ga uw aan boord komende reis door het document te herzien [ voort creeer Milieu&#39;s.](create-environments.md)
+Nu uw eerste programma is gemaakt, kunt u er omgevingen voor maken. Ga uw aan boord komende reis door het document te herzien [ voort creeer Milieu ](create-environments.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -77,5 +77,5 @@ Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de in
 * [ Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - leer over de hiërarchie van Cloud Manager en hoe de verschillende soorten programma&#39;s in zijn structuur passen en hoe zij verschillen.
 * [ Creërend de Programma&#39;s van Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - leer hoe te om Cloud Manager te gebruiken om uw eigen zandbakprogramma voor opleiding, demonstratie, POC, of andere niet productiedoeleinden tot stand te brengen.
 * [ Creërend de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - leer hoe te om Cloud Manager te gebruiken om uw eigen productieprogramma tot stand te brengen om levend verkeer te ontvangen.
-* [ Gebruikend Adobe Cloud Manager - de Programma&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - de programma&#39;s van Cloud Manager vertegenwoordigen reeksen AEM milieu&#39;s ondersteunend logische reeksen bedrijfsinitiatieven, typisch die aan een gekochte Overeenkomst van het Niveau van de Dienst (SLA) beantwoorden.
+* [ Gebruikend Adobe Cloud Manager - de programma&#39;s van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - de programma&#39;s van vertegenwoordigen reeksen AEM milieu&#39;s ondersteunend logische reeksen bedrijfsinitiatieven, typisch die aan een gekochte Service level agreement (SLA) beantwoorden.
 * [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.

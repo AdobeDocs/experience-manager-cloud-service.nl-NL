@@ -5,7 +5,7 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 0%
@@ -72,7 +72,7 @@ U ontvangt een bericht dat het project werd gecreeerd.
 
 >[!NOTE]
 >
->Men veronderstelt dat de noodzakelijke taalstructuur voor de vertalingstalen reeds als deel van de [ definitie van uw inhoudsstructuur is gecreeerd.](getting-started.md#content-structure) Dit moet gebeuren in samenwerking met de inhoudarchitect.
+>Men veronderstelt dat de noodzakelijke taalstructuur voor de vertalingen talen reeds als deel van de [ definitie van uw inhoudsstructuur ](getting-started.md#content-structure) is gecreeerd. Dit moet gebeuren in samenwerking met de inhoudarchitect.
 >
 >Als de taalmappen niet van tevoren worden gemaakt, kunt u geen taalkopieën maken zoals beschreven in de vorige stappen.
 
@@ -187,7 +187,7 @@ Inhoud toevoegen aan een vertaaltaak:
 >
 >De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Selecteer de **Inhoud slechts/Filters** knoop om het zijpaneel van een knevel te voorzien en geavanceerde filters zoals **Gewijzigde Datum** of **Vertaalstatus** te tonen.
 >
->U kunt meer over wegbrowser in de [ extra middelensectie leren.](#additional-resources)
+>U kunt meer over wegbrowser in de [ extra middelensectie ](#additional-resources) leren.
 
 U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
 
@@ -205,7 +205,7 @@ De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd*
 
 ## Vertaalde inhoud controleren {#reviewing}
 
-[ zoals eerder gezien, ](#using-translation-project) machine vertaalde inhoud vloeit terug in AEM met het statuut van **Goedgekeurd** aangezien de veronderstelling is dat omdat de machinevertaling wordt gebruikt, geen menselijke interventie wordt vereist. Het is echter nog steeds mogelijk om de vertaalde inhoud te beoordelen.
+[ zoals eerder gezien ](#using-translation-project), de machine vertaalde inhoud vloeit terug in AEM met het statuut van **Goedgekeurd** aangezien de veronderstelling is dat omdat de machinevertaling wordt gebruikt, geen menselijke interventie wordt vereist. Het is echter nog steeds mogelijk om de vertaalde inhoud te beoordelen.
 
 Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tikken of checkbox te klikken. Het pictogram **openbaart in het Fragment van de Inhoud** wordt getoond in de hulpmiddelbar.
 
@@ -249,7 +249,7 @@ Bouw op deze kennis voort en zet uw AEM hoofdloze vertaalreis door het document 
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ Publish vertaalde inhoud te herzien beweegt, ](publish-content.md) is het volgende wat extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ Publish vertaalde inhoud ](publish-content.md) te herzien beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * [ het Leiden de Projecten van de Vertaling ](/help/sites-cloud/administering/translation/managing-projects.md) - leer de details van vertaalprojecten en extra eigenschappen zoals menselijke vertaalwerkschema&#39;s en meertalige projecten.
 * [ Authoring Milieu en Hulpmiddelen ](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM verstrekt diverse mechanismen om uw inhoud met inbegrip van robuuste wegbrowser te organiseren en uit te geven.

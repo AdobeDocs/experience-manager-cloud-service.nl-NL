@@ -4,7 +4,7 @@ description: Leer hoe u afzonderlijke sites kunt instellen voor uw testomgeving 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Leer hoe u afzonderlijke sites kunt instellen voor uw testomgeving en productieo
 
 ## Overzicht {#overview}
 
-U kunt desgewenst een andere site voor uw productieomgeving dan de testomgeving instellen. Het vestigen van een tweede plaats voor een afzonderlijke het opvoeren en productieconfiguratie is gelijkaardig aan de [ opstelling die voor multi plaatsbeheer wordt vereist.](/help/edge/wysiwyg-authoring/repoless-msm.md) In feite kan het indien nodig worden gecombineerd met MSM-sitestructuren.
+U kunt desgewenst een andere site voor uw productieomgeving dan de testomgeving instellen. Vestiging een tweede plaats voor een afzonderlijke het opvoeren en productieopstelling is gelijkaardig aan de [ opstelling die voor multi plaatsbeheer ](/help/edge/wysiwyg-authoring/repoless-msm.md) wordt vereist. In feite, kan het met MSM plaatsstructuren worden gecombineerd indien vereist.
 
 In dit document wordt gebruikgemaakt van het typische voorbeeld van afzonderlijke testomgevingen en productieomgevingen. U kunt voor elke gewenste omgeving aparte omgevingen maken.
 
@@ -33,8 +33,8 @@ In dit voorbeeld, veronderstellen wij dat een productiesite reeds voor het geroe
 
 Er zijn twee stappen aan het vormen van een afzonderlijke productiesite.
 
-1. [Maak nieuwe Edge Delivery Services voor uw productieomgeving.](#create-edge-site)
-1. [Werk de cloudconfiguratie bij in AEM voor uw productiesite.](#update-cloud-configuration)
+1. [ creeer nieuwe Edge Delivery Services plaatsen voor uw productiemilieu ](#create-edge-site).
+1. [ de wolkenconfiguratie van de Update in AEM voor uw productiesite ](#update-cloud-configuration).
 
 ### Nieuwe Edge Delivery Services-sites maken voor uw productieomgeving {#create-edge-site}
 

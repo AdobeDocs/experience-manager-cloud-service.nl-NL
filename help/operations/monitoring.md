@@ -4,7 +4,7 @@ description: Infrastructuur- en servicecontrole in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Met de controle van de Douane, kunnen de klanten naar keuze tot vijf verschillen
 
 >[!NOTE]
 >
-> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [ Geavanceerde Steun van de Wolk.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Als u vragen hebt, neemt u contact op met het accountteam van de Adobe.
+> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [ Geavanceerde Steun van de Wolk ](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). Neem contact op met het accountteam van de Adobe als u vragen hebt.
 
 ## Interne modulemonitoring {#module-monitoring}
 
 Terwijl de externe beschikbaarheid op eindgebruikercontrole wordt geconcentreerd, merkt de interne module controle op of de architecturale subsystemen nominaal zonder eigenschap of prestatiesdegradatie werken. Als er een probleem is, worden de alarm teweeggebracht zodat kunnen de reparaties of automatisch of door de betrokkenheid van het verrichtingenteam, met het doel worden gedaan om gecompromitteerde beschikbaarheid te verhinderen. Er zijn verschillende categorieën monitoren, die hieronder worden weergegeven, zijn enkele voorbeelden van controles:
 
-* Het CPU-wachttijdpercentage overschrijdt een bepaalde drempel niet.
+* Het wachtpercentage voor CPU overschrijdt een bepaalde drempel niet.
 * Instantieherplaatsingen overschrijden een bepaalde frequentie niet.
 * Schijfgebruik is onder een bepaalde drempel.
 * De grootte van de opslagplaats van de auteur is binnen bepaalde grenzen.

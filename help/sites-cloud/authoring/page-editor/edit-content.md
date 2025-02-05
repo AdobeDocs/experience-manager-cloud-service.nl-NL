@@ -5,7 +5,7 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 2%
@@ -44,7 +44,7 @@ De plaatsaanduiding van de component is een indicator die aangeeft waar een comp
 
   ![ Placeholder wanneer het toevoegen van een nieuwe component aan een pagina ](assets/edit-content-component-placeholder.png)
 
-* Wanneer [ het bewegen van een bestaande component, ](#movging-components) het als blauw vierkant zal verschijnen.
+* Wanneer [ het bewegen van een bestaande component ](#movging-components), zal het als blauw vierkant verschijnen.
 
   ![ Placeholder wanneer het bewegen van een bestaande component op een pagina ](assets/edit-content-move-placeholder.png)
 
@@ -54,8 +54,8 @@ In beide gevallen wordt het geselecteerde doel weergegeven als een blauwe omtrek
 
 U kunt een nieuwe component toevoegen door [ componentenbrowser ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) te gebruiken. De [ componentenplaceholder ](#component-placeholder) toont u waar u de component plaatst.
 
-1. Zorg ervoor dat de paginaredacteur op [**is geef** wijze uit.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Open [ componentenbrowser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. Zorg ervoor dat de paginaredacteur op [**is geef** wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) uit.
+1. Open [ componentenbrowser ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 1. Sleep de vereiste component aan de [ vereiste positie ](#component-placeholder) en versie.
 1. [ geeft ](#edit-content) de onlangs-geplaatste component uit.
 
@@ -67,7 +67,7 @@ U kunt een nieuwe component toevoegen door [ componentenbrowser ](/help/sites-cl
 
 U kunt een nieuwe component toevoegen door de **componenten van de Belemmering hier** placeholder van het paragraafsysteem te gebruiken:
 
-1. Zorg ervoor dat de paginaredacteur op [**is geef** wijze uit.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Zorg ervoor dat de paginaredacteur op [**is geef** wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) uit.
 1. Er zijn twee manieren om een nieuwe component in het alineasysteem te selecteren en toe te voegen:
 
    * Selecteer de **optie van de Component van het Tussenvoegsel** (+) van of de toolbar van een bestaande component of de **componenten van de Belemmering hier** doos.
@@ -87,13 +87,13 @@ U kunt een nieuwe component toevoegen door de **componenten van de Belemmering h
 
 ## Een element toevoegen {#adding-asset}
 
-U kunt een nieuwe component aan de pagina ook toevoegen door activa van [ activa browser te slepen.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) Hiermee wordt automatisch een component van het juiste type gemaakt (en die het element bevat).
+U kunt een nieuwe component aan de pagina ook toevoegen door activa van [ activa te slepen browser ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser). Hiermee wordt automatisch een component van het juiste type gemaakt (en die het element bevat).
 
 Dit gedrag kan voor uw installatie worden gevormd. Gelieve te zien de Gids van de Verwijzing van de Document [ Componenten ](/help/implementing/developing/components/reference.md#component-placeholders) voor verdere details.
 
 Een component maken door een van de bovenstaande elementtypen te slepen:
 
-1. Zorg ervoor dat uw pagina op [**is geef** wijze uit.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Zorg ervoor dat uw pagina op [**is geef** wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) uit.
 1. Open [ activa browser ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Sleep het vereiste element naar de gewenste positie. De [ componentenplaceholder ](#component-placeholder) toont u waar de component wordt geplaatst en een doel zal tonen waar het zal worden opgenomen.
 1. Laat het element los op het doel. Een component die geschikt is voor het type element, wordt gemaakt op de vereiste locatie die het geselecteerde element bevat.
@@ -133,7 +133,7 @@ De acties beschikbaar in de componententoolbar zijn aangewezen voor de geselecte
 
   ![ knoop van de Schrapping ](assets/edit-content-delete.png)
 
-* **de component van het Tussenvoegsel** opent de dialoog om [ een nieuwe component toe te voegen.](#adding-a-component-from-the-paragraph-system)
+* **de component van het Tussenvoegsel** opent de dialoog [ een nieuwe component ](#adding-a-component-from-the-paragraph-system) toe te voegen.
 
   ![ knoop van het Tussenvoegsel ](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
    ![ de knoop van de Lay-out van de componententoolbar ](assets/edit-content-layout.png)
 
-1. Zodra de actie van de Lay-out wordt geselecteerd, kunt u de lay-out van de component wijzigen aangezien u op [ lay-outwijze.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. Zodra de actie van de Lay-out wordt geselecteerd, kunt u de lay-out van de component wijzigen aangezien u op [ lay-outwijze ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode) zou.
 
    * De formaatgrepen voor de componentweergave.
    * De emulatorwerkbalk wordt boven in het scherm weergegeven.

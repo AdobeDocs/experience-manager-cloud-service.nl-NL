@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de init
 
 Het is handig om vooraf gedefinieerde structuren beschikbaar te hebben om snel een nieuwe site te implementeren op basis van een set bestaande standaarden. Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig en herbruikbaar pakket.
 
-De malplaatjes van de plaats bevatten over het algemeen inhoud en structuur van de basisplaats en plaats het stileren informatie, die als het [ plaatsthema wordt bekend, ](site-themes.md) om een nieuwe begonnen plaats snel te krijgen. De beheerders selecteren een plaatsmalplaatje waarop om de plaats [ tijdens het proces van de plaatsverwezenlijking te baseren.](create-site.md)
+De malplaatjes van de plaats bevatten over het algemeen inhoud en structuur van de basisplaats en plaats het stileren informatie, die als het [ plaatsthema ](site-themes.md) wordt bekend, om een nieuwe begonnen plaats snel te krijgen. De beheerders selecteren een plaatsmalplaatje waarop om de plaats [ tijdens het proces van de plaatsverwezenlijking ](create-site.md) te baseren.
 
 Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
 
@@ -67,7 +67,7 @@ Sitesjablonen zijn eenvoudig pakketten met een logische structuur die het doel v
 
 ## Standaardsitesjabloon {#standard-site-template}
 
-Adobe biedt een referentiesjabloon voor best practices dat u kunt gebruiken als basis voor het maken van uw eigen sjablonen. [ het StandaardMalplaatje van de Plaats is beschikbaar op GitHub.](https://github.com/adobe/aem-site-template-standard)
+Adobe biedt een referentiesjabloon voor best practices dat u kunt gebruiken als basis voor het maken van uw eigen sjablonen. [ het StandaardMalplaatje van de Plaats is beschikbaar op GitHub ](https://github.com/adobe/aem-site-template-standard).
 
 [ De recentste versie van het StandaardMalplaatje van de Plaats ](https://github.com/adobe/aem-site-template-standard/releases) kan worden gedownload en direct voor [ worden gebruikt creërend nieuwe plaatsen ](create-site.md).
 

@@ -4,7 +4,7 @@ description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Ass
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 0%
@@ -142,7 +142,7 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
 
    ![ integratie van de Firefly ](assets/firefly-integration.png)
 
-   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud te produceren.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Alternatief, kunt u [ beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer uitgeven.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer ](https://helpx.adobe.com/in/firefly/using/text-to-image.html) uitgeven.[
 
    ![ integratie van de Firefly ](assets/bugatti-type-57.png)
 

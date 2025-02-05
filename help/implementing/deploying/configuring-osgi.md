@@ -4,7 +4,7 @@ description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 0%
@@ -22,7 +22,7 @@ U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers b
 
 >[!TIP]
 >
->U kunt Cloud Manager gebruiken om omgevingsvariabelen te configureren. Voor meer informatie, raadpleeg hier de documentatie [.](/help/implementing/cloud-manager/environment-variables.md)
+>U kunt Cloud Manager gebruiken om omgevingsvariabelen te configureren. Voor meer informatie, raadpleeg hier de documentatie [ ](/help/implementing/cloud-manager/environment-variables.md).
 
 ## OSGi-configuratiebestanden {#osgi-configuration-files}
 
@@ -187,15 +187,15 @@ Namen van OSGi-configuratiefabrieksbestanden gebruiken de naamgevingsconventie `
 1. Wijzigingen opslaan in het nieuwe `.cfg.json` -bestand
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
 
-### OSGi-configuraties genereren met de AEM SDK QuickStart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### OSGi-configuraties genereren met de AEM SDK Quickstart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
-De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt componenten OSGi, en de configuraties van export OSGi als JSON. Dit is nuttig om AEM-verstrekte componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM project bepaalt.
+De AEM SDK Quickstart Jar&#39;s AEM Web Console kan worden gebruikt vormt componenten OSGi, en voert configuraties OSGi als JSON uit. Dit is nuttig om AEM-verstrekte componenten te vormen OSGi waarvan eigenschappen OSGi en hun waardeformaten niet goed kunnen worden begrepen door de ontwikkelaar die de configuraties OSGi in het AEM project bepaalt.
 
 >[!NOTE]
 >
 >De configuratie-interface van de AEM webconsole schrijft `.cfg.json` bestanden naar de opslagplaats. Daarom ben zich van dit werkschema bewust om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
 
-1. Meld u aan bij de AEM webconsole van QuickStart Jar van de AEM SDK op `https://<host>:<port>/system/console` als beheerder
+1. Meld u aan bij de AEM webconsole van AEM SDK Quickstart Jar op `https://<host>:<port>/system/console` als beheerder
 1. Ga aan **OSGi** > **Configuratie**
 1. Om te vormen, bepaal de plaats van de component OSGi en selecteer zijn te uitgeven titel
    ![ Configuratie OSGi ](./assets/configuring-osgi/configuration.png)

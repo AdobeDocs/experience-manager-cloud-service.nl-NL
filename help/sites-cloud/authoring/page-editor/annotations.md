@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -69,7 +69,7 @@ In de modus Annotatie kunt u niet alleen annotaties weergeven, maar ook annotati
    * Voer de annotatietekst in.
    * Maak een schets (lijnen en vormen) om een gebied van de component te markeren.
 
-     ![ de knoop van Sketch van de Annotatie ](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![ de knoop van de Schets van de Annotatie ](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
      De cursor verandert in een dradenkruis wanneer u een schets maakt. U kunt meerdere afzonderlijke lijnen tekenen. De schetslijn geeft de annotatiekleur weer en kan een pijl, cirkel of ovaal zijn.
 
@@ -83,7 +83,7 @@ In de modus Annotatie kunt u niet alleen annotaties weergeven, maar ook annotati
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
-   * Selecteer de tekstmarkering om de aantekening te openen. Zodra open kunt u de volledige tekst bekijken, veranderingen aanbrengen, of [ schrappen de aantekening.](#deleting-annotations)
+   * Selecteer de tekstmarkering om de aantekening te openen. Zodra open kunt u de volledige tekst bekijken, veranderingen aanbrengen, of [ schrappen de aantekening ](#deleting-annotations).
    * Verander de positie van de tekstmarkering.
    * Selecteer een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren

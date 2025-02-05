@@ -5,7 +5,7 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toega
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Opstelling Uw Pijpleiding, ](pipeline-setup.md) u leerde hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Opstelling Uw Pijpleiding ](pipeline-setup.md), leerde u hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
 
 * Begrijp wat een front-end pijpleiding is.
 * Weet hoe u een front-end pijpleiding in Cloud Manager kunt opzetten.
@@ -101,10 +101,10 @@ Nu u dit gedeelte van de AEM snelle reis van de Plaats hebt voltooid zou u moete
 * Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ te herzien verdergaat de Informatie van de Toegang van de Bewaarplaats van de Bewaarplaats van de Git, ](retrieve-access.md) die uitsluitend perspectief aan de front-end ontwikkelaar schakelt en verklaart hoe de front-end ontwikkelaargebruikers Cloud Manager om tot de informatie van de gogegevensopslagplaats toegang te hebben.
+Bouw op deze kennis voort en zet uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken Wint de Informatie van de Toegang van de Bewaarplaats van de it ](retrieve-access.md) voort, die perspectief aan de front-end ontwikkelaar exclusief schakelt en verklaart hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot de informatie van de gogegevensopslagplaats toegang te hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien verwerft de Geloofsbrieven van de Ontwikkelaar aan de voorzijde, ](retrieve-access.md) het volgende zijn sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de reis voort te zetten.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien verwerft de Geloofsbrieven van de Ontwikkelaar van het front-End ](retrieve-access.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
 * [ Onboarding Reis ](/help/journey-onboarding/overview.md) - Deze gids dient als uw uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.

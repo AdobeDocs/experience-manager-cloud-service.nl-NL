@@ -4,7 +4,7 @@ description: Taginhoud en gebruik de AEM Tags toevoegen-infrastructuur om de inh
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM ste
 
 U kunt als volgt de inhoud labelen en de AEM Tags toevoegen-infrastructuur gebruiken:
 
-* De markering moet als knoop van type [`cq:Tag`](#cq-tag-node-type) onder de [ taxonomy wortelknoop bestaan.](#taxonomy-root-node)
+* De markering moet als knoop van type [`cq:Tag`](#cq-tag-node-type) onder de [ taxonomy wortelknoop ](#taxonomy-root-node) bestaan.
 * In het knooppunt `NodeType` met gecodeerde inhoud moet de [`cq:Taggable`](#taggable-content-cq-taggable-mixin) -mix zijn opgenomen.
-* [`TagID`](#tagid) wordt toegevoegd aan de eigenschap [`cq:tags`](#cq-tags-property) van het inhoudsknooppunt en wordt omgezet in een knooppunt van het type [`cq:Tag` . ](#cq-tag-node-type)
+* [`TagID`](#tagid) wordt toegevoegd aan de eigenschap [`cq:tags`](#cq-tags-property) van het inhoudsknooppunt en wordt omgezet in een knooppunt van het type [`cq:Tag`](#cq-tag-node-type) .
 
 ## cq:Type tagknooppunt {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ Het coderingskader beperkt auteurs en sitebezoekers ook tot het gebruik van alle
 ### Tagkenmerken {#tag-characteristics}
 
 * Het knooppunttype is `cq:Tag` .
-* De knooppuntnaam is een component van [`TagID`.](#tagid)
-* [`TagID`](#tagid) omvat altijd a [ namespace.](#tag-namespace)
+* De knooppuntnaam is een component van [`TagID`](#tagid).
+* [`TagID`](#tagid) omvat altijd a [ namespace ](#tag-namespace).
 * De eigenschap `jcr:title` (de titel die in de UI moet worden weergegeven) is optioneel.
 * De eigenschap `jcr:description` is optioneel.
-* Wanneer het bevatten van kindknopen, wordt bedoeld als a [ containermarkering.](#container-tags)
-* De markering wordt opgeslagen in de bewaarplaats onder een basisweg genoemd de [ taxonomie wortelknoop.](#taxonomy-root-node)
+* Wanneer het bevatten van kindknopen, wordt bedoeld als a [ containermarkering ](#container-tags).
+* De markering wordt opgeslagen in de bewaarplaats onder een basisweg genoemd de [ taxonomie wortelknoop ](#taxonomy-root-node).
 
 ### TagID {#tagid}
 
 Een `TagID` identificeert een pad dat wordt omgezet naar een tagknooppunt in de opslagplaats.
 
-Typisch, is `TagID` een steno `TagID` die met namespace begint of het kan een absolute `TagID` zijn die van de [ taxonomy wortelknoop begint.](#taxonomy-root-node)
+Typisch, is `TagID` een steno `TagID` die met namespace begint of het kan een absolute `TagID` zijn die van de [ taxonomy wortelknoop ](#taxonomy-root-node) begint.
 
 Wanneer inhoud wordt gelabeld en nog niet bestaat, wordt de eigenschap [`cq:tags`](#cq-tags-property) toegevoegd aan het inhoudsknooppunt en wordt de eigenschap `TagID` toegevoegd aan de arraywaarde van de eigenschap `String` .
 
@@ -68,7 +68,7 @@ In AEM is het basispad `/content/cq:tags` en het basisknooppunt is van het type 
 
 Met naamruimten kunt u items groeperen. Het meest gangbare gebruik-hoofdlettergebruik is het hebben van een naamruimte per site (bijvoorbeeld public versus internal) of per grotere toepassing (bijvoorbeeld Sites of Assets), maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (dat wil zeggen tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
 
-De namespace van de markering is het eerste niveau in taxonomy subtree, die de knoop onmiddellijk onder de [ taxonomy wortelknoop is.](#taxonomy-root-node) Een naamruimte is een knooppunt van het type `cq:Tag` waarvan het bovenliggende element geen knooppunttype `cq:Tag` is.
+De namespace van de markering is het eerste niveau in taxonomy subtree, die de knoop onmiddellijk onder de [ taxonomy wortelknoop ](#taxonomy-root-node) is. Een naamruimte is een knooppunt van het type `cq:Tag` waarvan het bovenliggende element geen knooppunttype `cq:Tag` is.
 
 Alle tags hebben een naamruimte. Wanneer geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk `TagID` `default` , dat wil zeggen `/content/cq:tags/default` . In dergelijke gevallen wordt Titel standaard ingesteld op `Standard Tags` .
 
@@ -107,7 +107,7 @@ Raadpleeg de volgende secties voor meer informatie:
 
 ### Toegangsbeheer {#access-control}
 
-De markeringen bestaan als knopen in de bewaarplaats onder de [ taxonomy wortelknoop.](#taxonomy-root-node) Het toestaan of ontkennen van auteurs en sitebezoekers om tags in een bepaalde naamruimte te maken, kan worden bereikt door de juiste ACL&#39;s in de opslagplaats in te stellen.
+De markeringen bestaan als knopen in de bewaarplaats onder de [ taxonomie wortelknoop ](#taxonomy-root-node). Het toestaan of ontkennen van auteurs en plaatsbezoekers om markeringen in een bepaalde namespace tot stand te brengen kan worden bereikt door aangewezen ACLs in de bewaarplaats te plaatsen.
 
 Door het weigeren van leesmachtigingen voor bepaalde tags of naamruimten wordt de mogelijkheid ingesteld om codes toe te passen op specifieke inhoud.
 

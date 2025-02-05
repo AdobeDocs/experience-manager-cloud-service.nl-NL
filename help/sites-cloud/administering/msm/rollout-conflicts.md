@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
 Dit wordt gedaan gebruikend [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md) van **de Manager van de Uitvoer van CQ WCM van de Dag**. Plaats het van de waarde{**handvat conflict met manueel gecreeerde Pagina&#39;s** ( `rolloutmgr.conflicthandling.enabled`) aan waar als de rollout manager conflicten van een pagina zou moeten behandelen die in Levend Exemplaar met een naam wordt gecreeerd die in de blauwdruk bestaat.
 
-AEM heeft [ vooraf bepaald gedrag wanneer het conflictbeheer is gedeactiveerd.](#behavior-when-conflict-handling-deactivated)
+AEM heeft [ vooraf bepaald gedrag wanneer het conflictbeheer ](#behavior-when-conflict-handling-deactivated) is gedeactiveerd.
 
 ## Conflicthandlers {#conflict-handlers}
 
@@ -118,7 +118,7 @@ Aangepaste conflicthandlers kunnen:
 
 ### Gedrag wanneer Conflict afhandelen is gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
-Als u manueel [ conflicten behandeling deactiveert, ](#rollout-manager-and-conflict-handling) AEM neemt geen actie op om het even welke conflicterende pagina&#39;s. Niet-conflicterende pagina&#39;s worden naar behoren geïmplementeerd.
+Als u manueel [ conflicten behandeling ](#rollout-manager-and-conflict-handling) deactiveert, neemt AEM geen actie op om het even welke conflicterende pagina&#39;s. Niet-conflicterende pagina&#39;s worden naar behoren geïmplementeerd.
 
 >[!CAUTION]
 >

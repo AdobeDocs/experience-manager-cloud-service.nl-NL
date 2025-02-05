@@ -3,9 +3,9 @@ title: Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkhede
 description: Leer hoe u de levering van middelen kunt beperken met OpenAPI-mogelijkheden.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Op de auteur van AEM Cloud Service en Asset Selector wordt de IMS-token voor too
 
 >[!NOTE]
 >
-Neem contact op met de Enterprise Support voor meer informatie over hoe u IMS-verificatie kunt inschakelen voor integratie met AEM Asset Selector.
+Neem contact op met de Enterprise Support voor meer informatie over hoe u IMS-verificatie kunt inschakelen bij de integratie van AEM Asset Selector
 
 1. AEM as a Cloud Service en Dynamic Media met OpenAPI-mogelijkheden ondersteunen momenteel API-integratie aan de serverzijde en kunnen IMS-tokens voor toonder genereren. Dit geldt ook voor ervaringen die niet op Asset Selector zijn gebaseerd.
    * Volg de instructies [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) om dienst-aan-server API integratie uit te voeren die de tokens IMS van de Drager door [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) kan terugwinnen

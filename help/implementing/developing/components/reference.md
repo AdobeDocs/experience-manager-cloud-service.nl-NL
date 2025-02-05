@@ -4,7 +4,7 @@ description: Een naslaggids voor ontwikkelaars voor de details van componenten e
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Componenten vormen de kern van het opbouwen van een ervaring in AEM. De [ Compon
 
 >[!TIP]
 >
->Alvorens verwijzingen dit document, zorg ervoor u de [ Zelfstudie van WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) hebt voltooid en zo vertrouwd met de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [ AEM Archetype van het Project.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>Alvorens verwijzingen dit document, zorg ervoor u de [ Zelfstudie van WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) hebt voltooid en zo vertrouwd met de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) bent.
 
 Omdat de WKND-zelfstudie betrekking heeft op de meeste gevallen van gebruik, is dit document alleen bedoeld als aanvulling op deze bronnen. Het geeft diepgaande technische details over hoe de componenten in AEM gestructureerd en gevormd zijn en niet bedoeld als begonnen gids worden.
 
@@ -92,7 +92,7 @@ Dit is een abstractie die helpt ervoor te zorgen dat zelfs wanneer de blik en he
 
 De definitie van een component kan als volgt worden uitgesplitst:
 
-* AEM componenten zijn gebaseerd op [ Sling.](https://sling.apache.org/documentation.html)
+* AEM componenten zijn gebaseerd op [ het Schuiven ](https://sling.apache.org/documentation.html).
 * AEM componenten bevinden zich onder `/libs/core/wcm/components` .
 * Projectspecifieke componenten/site bevinden zich onder `/apps/<myApp>/components` .
 * AEM standaardcomponenten worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
@@ -105,32 +105,32 @@ De definitie van een component kan als volgt worden uitgesplitst:
 * **Knoop van de Wortel**:
    * `<mycomponent> (cq:Component)` - Hiërarchieknooppunt van de component.
 * **Belangrijke Eigenschappen**:
-   * `jcr:title` - de titel van de Component; bijvoorbeeld, gebruikt als etiket wanneer de component in [ Browser van Componenten ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) en [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md) vermeld is
-   * `jcr:description` - Beschrijving voor de component; wordt gebruikt als muis-over wenk in de Browser van Componenten en de Console van Componenten
-   * Zie het sectie [ Pictogram van de Component ](#component-icon) voor details
+   * `jcr:title` - de titel van de Component; bijvoorbeeld, gebruikt als etiket wanneer de component in [ Browser van Componenten ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) en [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md) vermeld is.
+   * `jcr:description` - Beschrijving voor de component; wordt gebruikt als muis-over wenk in de Browser van Componenten en de Console van Componenten.
+   * Zie het sectie [ Pictogram van de Component ](#component-icon) voor details.
 * **Vital de Nodes van het Kind**:
-   * `cq:editConfig (cq:EditConfig)` - Definieert de bewerkingseigenschappen van de component en schakelt de component in de Componentbrowser in
+   * `cq:editConfig (cq:EditConfig)` - Definieert de bewerkingseigenschappen van de component en schakelt de component in de Componentbrowser in.
       * Als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de browser of Sidekick Componenten, zelfs als cq:editConfig niet bestaat.
    * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de gebruikersinterface-aspecten van de auteur voor onderliggende componenten die hun eigen `cq:editConfig` niet definiëren.
    * `cq:dialog (nt:unstructured)` - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
-   * `cq:design_dialog (nt:unstructured)` - Ontwerpbewerking voor deze component
+   * `cq:design_dialog (nt:unstructured)` - Ontwerpbewerking voor deze component.
 
 #### Pictogram Component {#component-icon}
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - het bezit van het Koord dat aan een standaardpictogram in de [ Coral UI bibliotheek ](https://opensource.adobe.com/coral-spectrum/examples/#icon) richt om in componentenbrowser te tonen
+1. `cq:icon` - het bezit van het Koord dat aan een standaardpictogram in de [ Koraal UI bibliotheek ](https://opensource.adobe.com/coral-spectrum/examples/#icon) richt om in componentenbrowser te tonen.
    * Gebruik de waarde van het kenmerk HTML van het pictogram Koraal.
-1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen
+1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen.
    * De afkorting moet worden beperkt tot twee tekens.
    * Als u een lege tekenreeks opgeeft, wordt de afkorting van de eerste twee tekens van de eigenschap `jcr:title` opgebouwd.
-      * Bijvoorbeeld &quot;Im&quot; voor &quot;Image&quot;
+      * Bijvoorbeeld &#39;Im&#39; voor &#39;Afbeelding&#39;.
       * De gelokaliseerde titel wordt gebruikt om de afkorting te bouwen.
    * De afkorting wordt alleen omgezet als de component een eigenschap `abbreviation_commentI18n` heeft, die vervolgens als vertaalhint wordt gebruikt.
-1. `cq:icon.png` of `cq:icon.svg` - Pictogram voor deze component, die wordt weergegeven in de Componentbrowser
+1. `cq:icon.png` of `cq:icon.svg` - Pictogram voor deze component, die wordt weergegeven in de Componentbrowser.
    * 20 x 20 pixels is de grootte van pictogrammen van standaardcomponenten.
       * Grotere pictogrammen worden verkleind (op de client).
-   * De aanbevolen kleur is rgb(112, 112, 112) > #707070
+   * De aanbevolen kleur is rgb(112, 112, 112) > #707070.
    * De achtergrond van standaardcomponentpictogrammen is transparant.
    * Alleen `.png` - en `.svg` -bestanden worden ondersteund.
    * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-plug-in, moeten bestandsnamen bijvoorbeeld worden beschermd als `_cq_icon.png` of `_cq_icon.svg` .
@@ -172,7 +172,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 | `cq:isContainer` | `Boolean` | Dit geeft aan of de component een containercomponent is en daarom andere componenten zoals een alineasysteem kan bevatten. |
 | `cq:dialog` | `nt:unstructured` | Dit is de definitie van het dialoogvenster Bewerken voor de component. |
 | `cq:design_dialog` | `nt:unstructured` | Dit is de definitie van het ontwerpdialoogvenster voor de component. |
-| `cq:editConfig` | `cq:EditConfig` | Dit bepaalt [ geeft configuratie van de component uit.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | Dit bepaalt [ uitgeeft configuratie van de component ](#edit-behavior). |
 | `cq:htmlTag` | `nt:unstructured` | Hiermee worden extra tagkenmerken geretourneerd die aan de omringende HTML-tag worden toegevoegd. Hiermee schakelt u het toevoegen van kenmerken aan de automatisch gegenereerde div-elementen in. |
 | `cq:noDecoration` | `Boolean` | Indien waar (true), wordt de component niet gerenderd met automatisch gegenereerde div- en css-klassen. |
 | `cq:template` | `nt:unstructured` | Indien gevonden, wordt dit knooppunt gebruikt als een inhoudssjabloon wanneer de component vanuit de Componentbrowser wordt toegevoegd. |
@@ -256,7 +256,7 @@ Als u het dialoogvenster beschouwt als een eenvoudige container voor een formuli
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Specifieker verleent UI een waaier van gebiedscomponenten die voor gebruik in dialogen geschikt zijn, of meer in het algemeen sprekend in [ vormen.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+Specifieker verleent UI een waaier van gebiedscomponenten die voor gebruik in dialogen geschikt zijn, of meer in het algemeen sprekend in [ vormen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html).
 
 Zodra u uw middeltype hebt gecreeerd, kunt u uw gebied concretiseren door een nieuw knooppunt in uw dialoog toe te voegen, met het bezit `sling:resourceType` dat naar het middeltype verwijst u net hebt geïntroduceerd.
 
@@ -339,7 +339,7 @@ Het standaard HTML-script dat de bovenstaande tijdelijke aanduiding HTML rendert
 
 In het vorige voorbeeld is `isEmpty` een variabele die alleen waar is wanneer de component geen inhoud heeft en onzichtbaar is voor de auteur.
 
-Om herhaling te vermijden, adviseert de Adobe dat de uitvoerders van componenten een malplaatje HTML voor deze placeholders gebruiken, [ als verstrekt door de Componenten van de Kern.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Om herhaling te vermijden, adviseert de Adobe dat de uitvoerders van componenten een malplaatje HTML voor deze placeholders gebruiken, [ als verstrekt door de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de volgende lijn van HTML:
 
@@ -350,7 +350,7 @@ Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de v
 
 In het vorige voorbeeld is `model.text` de variabele die alleen waar is wanneer de inhoud inhoud bevat en zichtbaar is.
 
-Een voorbeeldgebruik van dit malplaatje kan in de Componenten van de Kern, [ zoals in de Component van de Titel worden gezien.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Een voorbeeldgebruik van dit malplaatje kan in de Componenten van de Kern worden gezien, [ zoals in de Component van de Titel ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Configureren met cq:Onderliggende knooppunten EditConfig {#configuring-with-cq-editconfig-child-nodes}
 

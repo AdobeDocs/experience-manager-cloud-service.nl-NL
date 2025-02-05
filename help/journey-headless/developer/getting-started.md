@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Aan de slag met AEM headless as a Cloud Service {#getting-started}
 
-In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) leert over wat wordt vereist om uw eigen project te krijgen begonnen met AEM Zwaartepunt.
+In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar ](overview.md), leer over wat wordt vereist om uw eigen project te krijgen begonnen met AEM Zwaartepunt.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM hoofdloze reis, [ Leer over CMS Hoofdloze Ontwikkeling ](learn-about.md) u de basistheorie van leerde wat een headless CMS is en u zou nu moeten:
+In het vorige document van de AEM hoofdloze reis, [ Leer over de Hoofdloze Ontwikkeling van CMS ](learn-about.md) u de basistheorie van leerde wat een headless CMS is en u zou nu moeten:
 
 * Begrijp de basisconcepten en de terminologie van de inhoud zonder kop levering
 * Begrijpen waarom en wanneer een kop zonder kop nodig is
@@ -65,7 +65,7 @@ Op het eenvoudigste niveau moeten de volgende stappen worden gezet om digitale e
 1. Wanneer deze inhoud gereed is, wordt deze gerepliceerd naar de publicatie-instantie.
 1. API&#39;s kunnen vervolgens worden aangeroepen om deze inhoud op te halen.
 
-AEM Headless bouwt van deze technische stichting door krachtige hulpmiddelen aan te bieden om hoofdloze inhoud te beheren die [ in de volgende sectie wordt beschreven.](#aem-headless-basics)
+AEM Headless bouwt van deze technische stichting door krachtige hulpmiddelen aan te bieden om hoofdloze inhoud te beheren die [ in de volgende sectie ](#aem-headless-basics) wordt beschreven.
 
 ## Grondbeginselen AEM {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ Maphiërarchie kan twee belangrijke problemen met betrekking tot inhoudsbeheer a
 * [ Vertaling ](#translation) - AEM beheert vertaling van inhoud door exemplaren van inhoud in scènespecifieke omslagen te handhaven.
 * Organisatie - Mappen worden gebruikt om een inhoudshiërarchie te bepalen die wordt vereist om vertaalbehoeften te steunen en logisch inhoudsfragmenten te beheren.
 
-AEM maakt een flexibele inhoudsstructuur mogelijk en een hiërarchie kan willekeurig groot zijn. Nochtans is het belangrijk om zich te realiseren dat om het even welke veranderingen in omslagstructuur onbedoelde gevolgen voor bestaande vragen kan hebben die [ op de inhoudspad baseren.](#developer) Daarom kan een duidelijk gedefinieerde hiërarchie die vooraf is ingesteld, nuttig zijn voor de auteurs van de inhoud.
+AEM maakt een flexibele inhoudsstructuur mogelijk en een hiërarchie kan willekeurig groot zijn. Nochtans is het belangrijk om zich te realiseren dat om het even welke veranderingen in omslagstructuur onbedoelde gevolgen voor bestaande vragen kan hebben die [ op de inhoudspad ](#developer) baseren. Daarom kan een duidelijk gedefinieerde hiërarchie die vooraf duidelijk is ingesteld, nuttig zijn voor de auteurs van de inhoud.
 
 Mappen kunnen ook worden beperkt tot bepaalde typen inhoud (op basis van modellen van inhoudsfragmenten). Het wordt aanbevolen altijd expliciet op te geven welke modellen zijn toegestaan voor alle mappen in de hiërarchie. Toegestane inhoud opgeven voor een bepaalde map:
 
@@ -241,7 +241,7 @@ De ontwikkelaars zouden een paar basisaanbevelingen in mening moeten houden aang
 * Voor beste vraagprestaties, gebruik altijd voortgeduurde vragen in AEM. Deze worden later op de reis besproken.
 * GraphQL is declaratief na het motto &quot;Vraag precies wat u nodig hebt, en krijg precies dat.&quot; Dit betekent dat u bij het maken van GraphQL-query&#39;s altijd query&#39;s van het type `select *` vermijdt die u in een relationele database kunt maken.
 
-Voor a [ typische hoofdloze implementatie gebruikend AEM, ](#level-1) vereist de ontwikkelaar geen codeerkennis van AEM.
+Voor a [ typische hoofdloze implementatie gebruikend AEM ](#level-1), vereist de ontwikkelaar geen codeerkennis van AEM.
 
 ### Prestatievereisten {#performance-requirements}
 
@@ -280,11 +280,11 @@ U zou uw AEM hoofdloze reis door het document [ Weg aan Uw Eerste Ervaring moete
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [ Weg aan Uw Eerste Ervaring te herzien Gebruikend AEM Zwaartepunt, ](path-to-first-experience.md) het volgende is enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [ Weg aan Uw Eerste Ervaring te herzien Gebruikend AEM Koploze ](path-to-first-experience.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * [ AEM Headless Vertaalreis ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 * [ een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service ](/help/overview/architecture.md) - begrijp de structuur van AEM as a Cloud Service
-* Een [ Inleiding aan AEM als Zwaartepunt CMS ](/help/headless/introduction.md)
+* Een [ Inleiding aan AEM als Zwaarloze CMS ](/help/headless/introduction.md)
 * Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
 * [ Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.

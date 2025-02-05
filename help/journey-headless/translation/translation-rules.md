@@ -5,7 +5,7 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -79,7 +79,7 @@ In de **Configuratie van de Vertaling** UI, zijn er verscheidene opties beschikb
 1. Selecteer de context u creeerde en dan selecteren **uitgeeft**. Dit opent de **Redacteur van de Regels van de Vertaling** om de eigenschappen te vormen.
    ![ redacteur van de Regels van de Vertaling ](assets/translation-rules-editor.png)
 1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam` . Schakel de optie **Overnemen van`/content/dam`** uit zodat u extra gebieden aan de configuratie kunt toevoegen.
-1. Wanneer ongecontroleerd, onder de **Algemene** sectie van de lijst, voeg de bezitsnamen van de Model(s) van het Fragment van de Inhoud toe die u [ eerder als gebieden voor vertaling identificeerde.](getting-started.md#content-models)
+1. Wanneer ongecontroleerd, onder de **Algemene** sectie van de lijst, voeg de bezitsnamen van de Model(s) van het Fragment van de Inhoud toe die u [ eerder als gebieden voor vertaling ](getting-started.md#content-models) identificeerde.
    1. Op het **Nieuwe gebied van het Bezit**, ga de bezitsnaam in. Bericht dat de opties **** vertalen en **overerven** automatisch worden gecontroleerd.
    1. Selecteer **toevoegen**.
    1. Herhaal deze stappen voor alle velden die u moet vertalen.
@@ -105,6 +105,6 @@ Bouw op deze kennis voort en zet uw AEM hoofdloze vertaalreis door het document 
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ te herzien vertaalt inhoud, ](translate-content.md) het volgende is sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ te herzien vertaalt inhoud ](translate-content.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
 * [ identificerend Inhoud om ](/help/sites-cloud/administering/translation/rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
