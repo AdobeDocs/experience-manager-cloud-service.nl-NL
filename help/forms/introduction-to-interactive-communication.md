@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
+source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie
 
@@ -45,11 +45,22 @@ De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
 | **de Integratie van de Wolk** | Documenten rechtstreeks bewerken in AEM Forms as a Cloud Service |
 
 
-## Aan de slag
+## Onboarding
 
 1. **Toegang van het Verzoek**: E-mail [ aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) van uw officieel adres
 2. **Opstelling van de Beheerder**: De Adobe zal toegang toelaten en admin voorrechten verstrekken
 3. **Begin Creërend**: Begin met uw eerste correspondentie gebruikend onze [ intuïtieve redacteur ](https://video.tv.adobe.com/v/3444094/).
+
+## Veelgestelde vragen
+
+**Q: Kan ik bestaande XDP in de Interactieve Communicatie redacteur invoeren?**
+Ja, u kunt een bestaande XDP importeren en gebruiken als beginpunt. Niet-ondersteunde functies worden tijdens het importeren gemarkeerd.
+
+**Q: Is de Interactieve Communicatie redacteur beschikbaar voor plaatsingen op locatie?**
+Nee, de editor is alleen beschikbaar voor Forms as a Cloud Service implementaties.
+
+
+
 
 
 
@@ -128,4 +139,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * Analyse van interactieve communicatie-editor
 * Een fragment maken
 * Een correspondentie voorvertonen en testen
-
