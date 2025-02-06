@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,19 @@ Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies 
 
 ### E-mailsjablonen HTML in Adaptieve Forms
 
-Met Adaptive Forms kunt u e-mailsjablonen voor HTML gebruiken. Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+
+De adaptieve Forms staat u toe gebruiken [ HTML e-mailmalplaatjes ](/help/forms/html-email-templates-in-adaptive-forms.md). Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+
+![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
+
+### RESTful Web Services Submit Handeling
+
+Adaptive Forms kan nu probleemloos vastgelegde gegevens verzenden naar geverifieerde externe REST-eindpunten met de nieuwe RESTful Web Services Submit-actie:
+
+* Ondersteunde standaarden: Swagger 2.0 en 3.0 voor eenvoudige API-integratie
+* Beveiligde verificatie: OAuth 2.0, Basic Auth, API Key en Custom Authentication
+* Flexibele gegevensindelingen: uit meerdere delen bestaande formuliergegevens, JSON- en URL-gecodeerd (sleutelwaardeparen)
+
 
 
 ### Ondersteuning voor RTL-talen (van rechts naar links)
