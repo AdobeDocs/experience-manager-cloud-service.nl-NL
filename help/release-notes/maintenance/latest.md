@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,11 @@ De activering van de 2025.2.0-functie biedt de volledige functie die is ingestel
 
 ### Opgeloste problemen {#fixed-issues-19352}
 
+* CQ-4356756: Geen ondersteuning voor gerelateerde elementen vertalen.
+* CQ-4358/2006: Herhalingsplanner werkt niet voor vertaalprojecten.
+* CQ-4358126: Kan geen submap voor configuratie selecteren in de vertaalcloud-service.
+* FORMS-18098, FORMS-17954: Adaptive Forms kan niet worden geladen in de Internet Explorer-modus van de Microsoft Edge-browser.
+* FORMS-17162: Als u een middel publiceert, worden OOTB-query&#39;s uitgevoerd die de publicatieprestaties verminderen.
 * SITES-28415: Edge Delivery met Universal Editor: de knop Open Properties voor werkbladen herstellen.
 * SITES-2669: Edge Delivery met Universal Editor: verhelpt problemen bij het uploaden van CSV-bestanden die in UTF-8 zijn gecodeerd met een BOM als spreadsheet.
 * SITES-26543: Edge Delivery met Universal Editor: verbeter lege blokken zonder een model dat onjuiste opmaak rendert.
@@ -85,8 +90,6 @@ De activering van de 2025.2.0-functie biedt de volledige functie die is ingestel
 * SITES-26660: Vergelijking van de versie van het inhoudsfragment kan worden verbroken wanneer @ContentType van &quot;koordtype&quot;is.
 * SITES-26626: Missing customErrorMessage on number &amp; boolean fields.
 * SITES-26268: onjuiste statuscode die wordt geretourneerd als een verwijzing ongeldig is bij het maken van een fragment.
-* FORMS-18098, FORMS-17954: Adaptive Forms kan niet worden geladen in de Internet Explorer-modus van de Microsoft Edge-browser.
-* FORMS-17162: Als u een middel publiceert, worden OOTB-query&#39;s uitgevoerd die de publicatieprestaties verminderen.
 
 ### Bekende problemen {#known-issues-19352}
 
