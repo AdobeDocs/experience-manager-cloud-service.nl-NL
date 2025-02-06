@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4129'
 ht-degree: 0%
 
 ---
@@ -275,6 +275,28 @@ U kunt pagina&#39;s, elementen of codes toevoegen aan de vertaaltaak van uw vert
 >[!TIP]
 >
 >Met deze methode voegt u pagina&#39;s/elementen en de onderliggende elementen ervan toe aan het project. Selecteer **Activa/Pagina (zonder kinderen)** als u slechts de ouders wilt toevoegen.
+
+### i18n-woordenboeken toevoegen aan een vertaaltaak {#adding-i-n-dictionaries-to-a-translation-job}
+
+U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vertaaltaak van uw vertaalproject. Een i18n-woordenboek toevoegen:
+
+1. Klik onder aan de tegel Vertaal taak van het vertaalproject op de ellips.
+
+   ![ de baantegel van de Vertaling ](../assets/translation-job.png)
+
+1. Klik op Toevoegen en I18N-woordenboek.
+
+   ![ voeg i18n- woordenboek ](../assets/add-i18n.png) toe
+
+1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **** toevoegen.
+
+   ![ Uitgezochte i18N Woordenboek ](../assets/select-i18n.png)
+
+Uw woordenboek staat nu in uw vertaalwerk en het vertaalproces kan dan worden gestart om de woordenboektaalexemplaren in `/content/cq:i18n` te creëren en die woordenboektaalexemplaren voor vertaling te verzenden.
+
+>[!NOTE]
+>
+>Voor meer informatie over i18n woordenboeken, lees [ Gebruikend Vertaler om Woordenboeken ](/help/implementing/developing/extending/i18n/translator.md) te beheren.
 
 ### Tags toevoegen aan een vertaaltaak {#adding-tags-to-a-translation-job}
 
