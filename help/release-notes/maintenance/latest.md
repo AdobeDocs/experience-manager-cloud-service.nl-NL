@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,8 @@ De activering van de 2025.2.0-functie biedt de volledige functie die is ingestel
 * SITES-26660: Vergelijking van de versie van het inhoudsfragment kan worden verbroken wanneer @ContentType van &quot;koordtype&quot;is.
 * SITES-26626: Missing customErrorMessage on number &amp; boolean fields.
 * SITES-26268: onjuiste statuscode die wordt geretourneerd als een verwijzing ongeldig is bij het maken van een fragment.
+* FORMS-18098, FORMS-17954: Adaptive Forms kan niet worden geladen in de Internet Explorer-modus van de Microsoft Edge-browser.
+* FORMS-17162: Als u een middel publiceert, worden OOTB-query&#39;s uitgevoerd die de publicatieprestaties verminderen.
 
 ### Bekende problemen {#known-issues-19352}
 

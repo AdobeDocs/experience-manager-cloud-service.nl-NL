@@ -3,7 +3,7 @@ title: Inleiding tot interactieve communicatie
 description: Ontwerp dynamische, gegevensgestuurde communicatie met eenvoudige interactieve AEM Forms-communicatie
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -18,12 +18,12 @@ U kunt met ons intuïtieve gereedschap voor point-and-click grafische ontwerpen 
 
 Van financiële instellingen die rekeningoverzichten aan overheidsagentschappen produceren die voordeelberichten stroomlijnen, is de Interactieve Mededelingen het go aan hulpmiddel om kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie met gemak en efficiency tot stand te brengen.
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## Kernmogelijkheden
 
 De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
