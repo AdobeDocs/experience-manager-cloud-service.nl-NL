@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 1%
 
 ---
@@ -305,11 +305,13 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt 
 
 #### Inhoudsfragment {#content-fragment}
 
-De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie en bevestiging aan.
+De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `variationName` | `string` | Naam variabele waarin de geselecteerde variatie wordt opgeslagen. Indien ongedefinieerd, wordt geen variatietekiezer weergegeven | Nee |
+
+Het biedt ook een aanvullend validatietype.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -444,11 +446,13 @@ Het biedt ook een aanvullend validatietype.
 
 #### Ervaar fragment {#experience-fragment}
 
-De plukker van het Fragment van de Ervaring kan worden gebruikt om een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie en bevestiging aan.
+De plukker van het Fragment van de Ervaring kan worden gebruikt om een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `variationName` | `string` | Naam variabele waarin de geselecteerde variatie wordt opgeslagen. Indien ongedefinieerd, wordt geen variatietekiezer weergegeven | Nee |
+
+Het biedt ook een aanvullend validatietype.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
