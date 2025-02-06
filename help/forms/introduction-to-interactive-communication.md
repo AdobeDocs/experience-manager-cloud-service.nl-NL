@@ -3,15 +3,12 @@ title: Inleiding tot interactieve communicatie
 description: Ontwerp dynamische, gegevensgestuurde communicatie met eenvoudige interactieve AEM Forms-communicatie
 feature: Release Information
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie
 
@@ -21,8 +18,12 @@ U kunt met ons intuïtieve gereedschap voor point-and-click grafische ontwerpen 
 
 Van financiële instellingen die rekeningoverzichten aan overheidsagentschappen produceren die voordeelberichten stroomlijnen, is de Interactieve Mededelingen het go aan hulpmiddel om kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie met gemak en efficiency tot stand te brengen.
 
-![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
 
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
 ## Kernmogelijkheden
 
 De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
@@ -41,14 +42,11 @@ De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
 | **de Integratie van de Wolk** | Documenten rechtstreeks bewerken in AEM Forms as a Cloud Service |
 
 
-## Onboarding
+## Aan de slag
 
-De Interactieve Communicatie redacteur beschikbaar onder het programma van de Vroege Toegang voor de as a Cloud Service plaatsingen van Forms. Om toegang te verzoeken e-mail uw organisatie identiteitskaart, en programmadetails voor uw as a Cloud Service plaatsingen van Forms aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres. Zodra u toegang wordt verleend, begin [ creërend uw eerste correspondentie ](/help/forms/create-your-first-communication.md)
-
-
-
-
-
+1. **Toegang van het Verzoek**: E-mail [ aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) van uw officieel adres
+2. **Opstelling van de Beheerder**: De Adobe zal toegang toelaten en admin voorrechten verstrekken
+3. **Begin Creërend**: Begin met uw eerste correspondentie gebruikend onze [ intuïtieve redacteur ](https://video.tv.adobe.com/v/3444094/).
 
 
 
@@ -122,10 +120,8 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## Volgende
 
-* [Uw eerste correspondentie maken](/help/forms/create-your-first-communication.md)
-* [Veelgestelde vragen](/help/forms/interactive-communications-faq.md)
+* Uw eerste correspondentie maken
 * U vertrouwd maken met terminologie en concepten
 * Analyse van interactieve communicatie-editor
 * Een fragment maken
 * Een correspondentie voorvertonen en testen
-
