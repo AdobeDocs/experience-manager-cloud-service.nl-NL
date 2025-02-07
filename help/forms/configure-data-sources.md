@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '2144'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,10 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-De RESTful Webdiensten kunnen worden beschreven gebruikend [ specificaties van de Wagger ](https://swagger.io/specification/v2/) in formaat JSON of YAML in a [!DNL Swagger] definitiedossier. Om RESTful Webdienst in [!DNL Experience Manager] as a Cloud Service te vormen, zorg ervoor dat u of het [!DNL Swagger] dossier ([ Versie 2.0 van de Tagger ](https://swagger.io/specification/v2/)) of [!DNL Swagger] dossier ([ Versie van de Wagger 3.0 ](https://swagger.io/specification/v3/)) op uw dossiersysteem of URL hebt waar het dossier wordt ontvangen.
+De RESTful Webdiensten kunnen worden beschreven gebruikend [ de specificaties van de Wagger ](https://swagger.io/specification/v2/) in formaat JSON of YAML in a [!DNL Swagger] definitiedossier of een Eindpunt van de Dienst.
+
+>[!NOTE]
+> Om RESTful Webdienst in [!DNL Experience Manager] as a Cloud Service te vormen, zorg ervoor dat u of het [!DNL Swagger] dossier ([ Versie 2.0 van de Tagger ](https://swagger.io/specification/v2/)) of [!DNL Swagger] dossier ([ Versie van de Wagger 3.0 ](https://swagger.io/specification/v3/)) op uw dossiersysteem of URL hebt waar het dossier wordt ontvangen.
 
 ### RESTful-services configureren voor Open API Specification versie 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ Sommige bewerkingen die niet worden ondersteund door RESTful-services Open API S
 * Verschillende aanvraagorganen voor verschillende MIME-typen voor één enkele bewerking
 
 Zie [ 3.0 Specificatie OpenAPI ](https://swagger.io/specification/v3/) voor gedetailleerde informatie.
+
+### Vorm de diensten RESTful gebruikend de Eindpunt van de Dienst {#configure-restful-services-service-endpoint}
+
+<span class="preview"> De service-eindpuntfunctionaliteit valt onder het programma Vroege adopter en is alleen van toepassing op kerncomponenten. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
+
+1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+
+   Zie [ omslag voor de configuraties van de wolkendienst ](configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+
+1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen.
+
+1. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL RESTful Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
+
+1. Selecteer op de volgende pagina **[!UICONTROL Service Endpoint]** in de **[!UICONTROL RESTful Service dropdown]** .
+
+   ![ Eindpunt van de Dienst ](/help/forms/assets/select-service-endpoint.png)
+
+1. Geef **[!UICONTROL Service Endpoint URL]** op.
+
+   >[!NOTE]
+   > Standaard is Type methode POST.
+1. Selecteer een van de inhoudstypen die u wilt kiezen in de vervolgkeuzelijst. Inhoudstypen zijn uit meerdere delen bestaande formuliergegevens, JSON- en URL-codering (Key-Value-paar).
+1. Nu selecteert u om het even welk van het Type van Authentificatie zoals OAuth 2.0, Basisauthentificatie, Sleutel API, de Authentificatie van de Douane, van de drop-down lijst.
+   ![ de authentificatietype van het Eindpunt van de Dienst ](/help/forms/assets/service-endpoint-authtype.png)
+1. Klik op Maken.
 
 ### De cliëntconfiguratie van HTTP van het het gegevensmodel van de vorm (FDM) om prestaties te optimaliseren {#fdm-http-client-configuration}
 
