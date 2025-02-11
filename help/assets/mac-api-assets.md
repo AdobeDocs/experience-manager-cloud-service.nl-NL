@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 | AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-## Overzicht {#overview}
+## Aan de slag met de AEM [!DNL Assets] HTTP API {#overview}
 
-Met de AEM [!DNL Assets] HTTP API zijn CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) op digitale elementen mogelijk via de REST-interface op /`api/assets` . Deze bewerkingen zijn van toepassing op metagegevens van elementen, uitvoeringen en opmerkingen. Het omvat [ steun voor de Fragmenten van de Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md).
+Met de AEM [!DNL Assets] HTTP API zijn CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) op digitale elementen mogelijk via een REST-interface die beschikbaar is op /`api/assets` . Deze bewerkingen zijn van toepassing op metagegevens van elementen, uitvoeringen en opmerkingen. Het omvat [ steun voor de Fragmenten van de Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode v
 >
 >Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van elementen of binaire bestanden in het algemeen (zoals uitvoeringen), zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service] -implementatie. Voor het uploaden van binaire getallen, gebruik [ directe binaire upload APIs ](developer-reference-material-apis.md#asset-upload) in plaats daarvan.
 
-## Inhoudsfragmenten {#content-fragments}
+## Inhoudsfragmenten beheren {#content-fragments}
 
 A [ het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments.md) is een gestructureerd middel dat tekst, aantallen, en data opslaat. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
@@ -53,7 +53,7 @@ Voor meer informatie, zie [ de steun van de Fragmenten van de Inhoud in  [!DNL E
 >
 >Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
-## Gegevensmodel {#data-model}
+## Onderzoek het gegevensmodel {#data-model}
 
 De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en standaardactiva. Het biedt ook gedetailleerde elementen voor aangepaste gegevensmodellen die in Inhoudsfragmenten worden gebruikt. Zie Gegevensmodellen van inhoudsfragmenten voor meer informatie. Zie {de gegevensmodellen van het Fragment van 0} Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor verdere informatie.[
 
@@ -61,7 +61,7 @@ De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en 
 >
 >Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
-### Mappen {#folders}
+### Mappen beheren {#folders}
 
 Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. Mappen kunnen elementen, submappen of beide bevatten. Mappen hebben de volgende componenten:
 
@@ -82,7 +82,7 @@ Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. Map
 * `parent`: een koppeling naar de bovenliggende map.
 * `thumbnail` (Optioneel): een koppeling naar een miniatuurafbeelding van een map.
 
-### Assets {#assets}
+### Elementen beheren {#assets}
 
 In [!DNL Experience Manager] bevat een element de volgende elementen:
 
@@ -103,7 +103,7 @@ In [!DNL Experience Manager] heeft een map de volgende componenten:
 * Eigenschappen.
 * Koppelingen.
 
-## Beschikbare functies {#available-features}
+## Beschikbare API-bewerkingen verkennen {#available-features}
 
 De [!DNL Assets] HTTP API bevat de volgende functies:
 
@@ -293,7 +293,7 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
+## Volg de aanbevolen werkwijzen en beperkingen van notities {#tips-limitations}
 
 * Assets en de bijbehorende uitvoeringen zijn niet meer beschikbaar via de [!DNL Assets] -webinterface en de HTTP-API wanneer [!UICONTROL Off Time] wordt bereikt. De API retourneert een fout van 404 als de [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
 
@@ -301,7 +301,7 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 * Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel wanneer ze worden bijgewerkt met behulp van API&#39;s. Het voorvoegsel `jcr` van `jcr:title` , `jcr:description` en `jcr:language` wordt vervangen door het voorvoegsel `dc` . Daarom bevatten `dc:title` en `dc:description` in de geretourneerde JSON de waarden van respectievelijk `jcr:title` en `jcr:description` .
 
-**zie ook**
+**Onderzoek verwante middelen**
 
 * [Assets vertalen](translate-assets.md)
 * [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
