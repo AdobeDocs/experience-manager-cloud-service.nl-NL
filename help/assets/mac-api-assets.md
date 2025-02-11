@@ -5,26 +5,26 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP-API {#assets-http-api}
+# Digitale middelen beheren met de [!DNL Adobe Experience Manager Assets] HTTP API{#assets-http-api}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
 
-Met de HTTP-API van [!DNL Assets] kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Inhoudsfragmenten. Deze wordt weergegeven in `/api/assets` en wordt geïmplementeerd als REST API. Het omvat [ steun voor de Fragmenten van de Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md).
+Met de AEM [!DNL Assets] HTTP API zijn CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) op digitale elementen mogelijk via de REST-interface op /`api/assets` . Deze bewerkingen zijn van toepassing op metagegevens van elementen, uitvoeringen en opmerkingen. Het omvat [ steun voor de Fragmenten van de Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode v
 
 ## Inhoudsfragmenten {#content-fragments}
 
-A [ het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments.md) is een speciaal type van activa. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
+A [ het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments.md) is een gestructureerd middel dat tekst, aantallen, en data opslaat. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
 Voor meer informatie, zie [ de steun van de Fragmenten van de Inhoud in  [!DNL Experience Manager Assets]  HTTP API ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -55,7 +55,7 @@ Voor meer informatie, zie [ de steun van de Fragmenten van de Inhoud in  [!DNL E
 
 ## Gegevensmodel {#data-model}
 
-De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien worden meer gedetailleerde elementen beschikbaar gesteld voor aangepaste gegevensmodellen die gestructureerde inhoud in Content Fragments beschrijven. Zie {de gegevensmodellen van het Fragment van 0} Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor verdere informatie.[
+De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en standaardactiva. Het biedt ook gedetailleerde elementen voor aangepaste gegevensmodellen die in Inhoudsfragmenten worden gebruikt. Zie Gegevensmodellen van inhoudsfragmenten voor meer informatie. Zie {de gegevensmodellen van het Fragment van 0} Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor verdere informatie.[
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (
 
 ### Mappen {#folders}
 
-Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. De map kan alleen elementen, alleen mappen of mappen en elementen bevatten. Mappen hebben de volgende componenten:
+Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. Mappen kunnen elementen, submappen of beide bevatten. Mappen hebben de volgende componenten:
 
 **Entiteiten**: De entiteiten van een omslag zijn zijn kindelementen, die omslagen en activa kunnen zijn.
 
 **Eigenschappen**:
 
-* `name` is de naam van de map. Dit is het zelfde als het laatste segment in de weg URL zonder de uitbreiding.
-* `title` is een optionele titel van de map die kan worden weergegeven in plaats van de naam ervan.
+* `name`: De naam van de map (het laatste segment van het URL-pad, zonder de extensie).
+* `title`: Een optionele titel die wordt weergegeven in plaats van de mapnaam.
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. De 
 
 **de Omslagen van Verbindingen** stellen drie verbindingen bloot:
 
-* `self`: Koppeling naar zichzelf.
-* `parent`: Koppeling naar de bovenliggende map.
-* `thumbnail`: (Optioneel) koppel de miniatuurafbeelding van een map.
+* `self`: Een koppeling naar de map zelf.
+* `parent`: een koppeling naar de bovenliggende map.
+* `thumbnail` (Optioneel): een koppeling naar een miniatuurafbeelding van een map.
 
 ### Assets {#assets}
 
 In [!DNL Experience Manager] bevat een element de volgende elementen:
 
-* De eigenschappen en metagegevens van het element.
-* Oorspronkelijk geüpload binair bestand van het element.
-* Meerdere uitvoeringen, zoals geconfigureerd. Dit kunnen afbeeldingen van verschillende grootten, video&#39;s van verschillende coderingen of uitgenomen pagina&#39;s uit PDF- of [!DNL Adobe InDesign] bestanden zijn.
-* Optionele opmerkingen.
+* **Eigenschappen en meta-gegevens:** Beschrijvende informatie over de activa.
+* **Binair dossier:** het oorspronkelijk geüploade dossier.
+* **Vertoningen:** Veelgevormde vertoningen (zoals, beelden in diverse grootte, verschillende videocoderingen, of gehaalde pagina&#39;s van Pdfs/Adobe InDesign dossiers).
+* **Commentaren (facultatief):** user-provided commentaren.
 
 Voor informatie over elementen in de Fragmenten van de Inhoud zie [ de Steun van de Fragmenten van de Inhoud in HTTP van Experience Manager Assets API ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -151,7 +151,7 @@ Haalt een Siren-weergave op van een bestaande map en van de onderliggende entite
 Maakt een `sling`: `OrderedFolder` op het opgegeven pad. Als `*` wordt verstrekt in plaats van een knoopnaam, gebruikt servlet de parameternaam als knooppuntnaam. In het verzoek worden de volgende twee handelingen geaccepteerd:
 
 * Een Sirene-weergave van de nieuwe map
-* Een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form` - `data` . Dit is handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken.
+* Een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form` - `data` . Deze zijn handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken.
 
 Ook kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
 
@@ -173,7 +173,7 @@ Een API-aanroep mislukt met een antwoordcode `500` als het bovenliggende knooppu
 
 ## Een element maken {#create-an-asset}
 
-Zie [ activa uploaden ](developer-reference-material-apis.md) voor informatie over hoe te om activa tot stand te brengen. U kunt geen middel tot stand brengen gebruikend HTTP API.
+Het maken van elementen wordt niet ondersteund via deze HTTP-API. Voor activa verwezenlijking, gebruik [ activa uploadt ](developer-reference-material-apis.md) API.
 
 ## Elementbinair bijwerken {#update-asset-binary}
 
@@ -181,7 +181,7 @@ Zie [ activa uploaden ](developer-reference-material-apis.md) voor informatie ov
 
 ## Metagegevens van een element bijwerken {#update-asset-metadata}
 
-Hiermee werkt u de metagegevenseigenschappen van het element bij. Als u een eigenschap in de naamruimte `dc:` bijwerkt, werkt de API dezelfde eigenschap in de naamruimte `jcr` bij. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
+Met deze bewerking worden de metagegevens van het element bijgewerkt. Wanneer u eigenschappen in de naamruimte `dc:` bijwerkt, wordt de bijbehorende eigenschap `jcr:` bijgewerkt. De API synchroniseert de eigenschappen echter niet onder de twee naamruimten.
 
 **Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ Hiermee werkt u de metagegevenseigenschappen van het element bij. Als u een eige
 
 Een uitvoering voor een element maken. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
 
-**Parameters**: De parameters zijn `name` voor naam van de vertoning en `file` als dossierverwijzing.
+**Parameters**: De parameters zijn:
+
+`name` : voor de renditienaam.
+`file`: Het binaire bestand voor de vertoning als een verwijzing.
 
 **Verzoek**
 
@@ -292,9 +295,9 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
-* Na [!UICONTROL Off Time] zijn een element en de bijbehorende uitvoeringen niet beschikbaar via de [!DNL Assets] -webinterface en via de HTTP-API. De API retourneert een foutbericht van 404 als de [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
+* Assets en de bijbehorende uitvoeringen zijn niet meer beschikbaar via de [!DNL Assets] -webinterface en de HTTP-API wanneer [!UICONTROL Off Time] wordt bereikt. De API retourneert een fout van 404 als de [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
 
-* Assets HTTP API retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het elementpad `/jcr_content/metadata.json` voor volledige metagegevens.
+* De Assets HTTP-API retourneert alleen een subset met metagegevens. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het elementpad `/jcr_content/metadata.json` voor volledige metagegevens.
 
 * Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel wanneer ze worden bijgewerkt met behulp van API&#39;s. Het voorvoegsel `jcr` van `jcr:title` , `jcr:description` en `jcr:language` wordt vervangen door het voorvoegsel `dc` . Daarom bevatten `dc:title` en `dc:description` in de geretourneerde JSON de waarden van respectievelijk `jcr:title` en `jcr:description` .
 
@@ -311,7 +314,7 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

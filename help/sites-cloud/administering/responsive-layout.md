@@ -5,18 +5,30 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
 
+
 # De container voor lay-out en de lay-outmodus configureren {#configuring-layout-container-and-layout-mode}
 
-[ Responsieve Lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is een mechanisme om [ ontvankelijk Webontwerp ](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+Leer hoe u de lay-outcontainer en de lay-outmodus configureert om responsieve lay-outs voor de auteurs van de inhoud in te schakelen.
 
-AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
+>[!TIP]
+>
+>In dit document wordt beschreven hoe een sitebeheerder de lay-outcontainer kan configureren om responsief webontwerp te ondersteunen. Er zijn aanvullende bronnen beschikbaar:
+>
+>* Voor inhoudsauteurs, zijn de details van hoe te om ontvankelijke ontwerpeigenschappen op een inhoudspagina te gebruiken beschikbaar in het document [ Responsieve Lay-out.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Voor ontwikkelaars, worden de details van de Container van de Lay-out en het ontvankelijke net beschreven in [ het Responsieve document van het Ontwerp, ](/help/implementing/developing/introduction/responsive-design.md) dat verstrekt en uiteinden voor het gebruiken van lay-outcontainers en ontvankelijk net wanneer het ontwerpen van uw plaats.
+
+## Overzicht {#overview}
+
+De responsieve Lay-out is een mechanisme om [ ontvankelijk Webontwerp ](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+
+AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
 
 * **[de Container van de Lay-out](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Deze component verstrekt een net-paragraaf systeem dat u toestaat om componenten binnen een ontvankelijk net toe te voegen en te plaatsen.
    * Het kan als standaardparsys voor uw pagina worden gebruikt en/of ter beschikking gesteld aan auteurs in componentenbrowser.
@@ -63,7 +75,7 @@ Onderbrekingspunten zijn van essentieel belang voor een responsief ontwerp en de
 * Onderbrekingspunten zijn zichtbaar als markeringen boven aan de pagina-editor wanneer u de emulator gebruikt.
 * Onderbrekingspunten worden overgeërfd van de hiërarchie van bovenliggende knooppunten en kunnen willekeurig worden overschreven.
 * Er is een standaardbreekpunt (uit-van-de-doos) dat alles boven het laatste gevormde breekpunt behandelt.
-* Onderbrekingspunten kunnen worden gedefinieerd met behulp van CRXDE Lite of XML.
+* Onderbrekingspunten kunnen worden gedefinieerd met CRXDE Lite of XML.
 
 Voor zowel nieuwe als bestaande projecten moeten onderbrekingspunten in overweging worden genomen.
 
@@ -146,7 +158,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 #### CSS voor onderbrekingspunten die MINDER gebruiken {#css-for-breakpoints-using-less}
 
-AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, moeten deze voor uw projecten worden omvat.
+AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, deze moeten voor uw projecten worden omvat.
 
 U moet de bibliotheek van de a [ cliënt ](/help/implementing/developing/introduction/clientlibs.md) tot stand brengen om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
@@ -229,3 +241,9 @@ Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
 U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) uit te geven.
+
+### Geneste responsieve rasters {#nested-responsive-grids}
+
+De aanbevolen werkwijze van Adobe is om de structuur zo vlak mogelijk te houden.
+
+Wanneer u niet kunt vermijden gebruikend genestelde ontvankelijke netten, te zien gelieve het ontwikkelaardocument [ Responsief Ontwerp.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

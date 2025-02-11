@@ -1,22 +1,32 @@
 ---
 title: Responsieve lay-out
-description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken
+description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken met behulp van de component Layout Container.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 5%
+source-wordcount: '1789'
+ht-degree: 4%
 
 ---
+
 
 # Responsieve lay-out {#responsive-layout}
 
 AEM laat u een ontvankelijke lay-out voor uw pagina&#39;s door de **component van de Container van de Lay-out te gebruiken 0} hebben.**
 
-Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **wijze van de Lay-out[** ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
+>[!TIP]
+>
+>Dit document biedt een overzicht van de functies van de container voor lay-out die beschikbaar zijn voor auteurs van inhoud. Er zijn aanvullende bronnen beschikbaar:
+>
+>* Voor plaatsbeheerders, wordt de details van hoe te om de lay-outcontainer voor uw plaatsen te vormen beschreven in [ Vormend het document van de Container van de Lay-out en van de Wijze van de Lay-out.](/help/sites-cloud/administering/responsive-layout.md)
+>* Voor ontwikkelaars, worden de details van de Container van de Lay-out en het ontvankelijke net beschreven in [ het Responsieve document van het Ontwerp, ](/help/implementing/developing/introduction/responsive-design.md) dat verstrekt en uiteinden voor het gebruiken van lay-outcontainers en ontvankelijk net wanneer het ontwerpen van uw plaats.
+
+## Overzicht {#overview}
+
+De **component van de Container van de Lay-out van 0} verstrekt een paragraafsysteem dat u componenten binnen een ontvankelijk net laat plaatsen.** Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **wijze van de Lay-out[** ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
 
 De container layout:
 
@@ -27,7 +37,7 @@ De container layout:
 
 De gebruiker kan dan zien hoe de inhoud wordt gerenderd voor specifieke apparaten met behulp van de emulator.
 
-AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
+AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
 
 * **](#adding-a-layout-container-and-its-content-edit-mode)component van de Container van 0} Lay-out[**
 
@@ -49,10 +59,6 @@ Met deze responsieve rastermechanismen kunt u:
 * Kolombesturingselement realiseren.
 
 Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagraafsysteem voor uw pagina&#39;s of als component beschikbaar kunnen worden gebruikt om aan uw pagina door componentenbrowser (of allebei) worden toegevoegd.
-
->[!TIP]
->
->Adobe verstrekt [ documentatie GitHub ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het AEM net buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische HTML mock-ups voor een toekomstige AEM plaats.
 
 >[!NOTE]
 >
