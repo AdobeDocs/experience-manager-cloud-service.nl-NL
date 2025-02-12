@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 20db0990c506aeb473b71132813cec053009275f
+source-git-commit: cdf1a62ca7c8d25b146cb7b6c1329f064e42df56
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 0%
@@ -20,11 +20,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Om een maandelijks e-mailbericht over updates over de versienota&#39;s van de Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit van de Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
+>Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -48,7 +48,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **de Redacteur van het Fragment van de Inhoud nu over het algemeen beschikbaar**
 
-Werk eenvoudig samen met collega&#39;s wanneer het ontwerpen AEM de Fragmenten van de Inhoud door de nieuwe en gemoderniseerde opmerkingsdienst in de Redacteur van het Fragment van de AEM te gebruiken.
+Werk eenvoudig samen met collega&#39;s wanneer het ontwerpen van de Fragmenten van de Inhoud van AEM door de nieuwe en gemoderniseerde opmerkingsdienst in de Redacteur van het Fragment van de Inhoud van AEM te gebruiken.
 [ las meer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
 **de Redacteur van het Fragment van de Inhoud en de Interfaces van de Gebruiker Admin, bijgewerkte de versiessteun van AEM as a Cloud Service**
@@ -61,48 +61,48 @@ De minimaal ondersteunde AEM as a Cloud Service-versie voor de nieuwe gebruikers
 
 Verbeterd [ het Fragment van de Inhoud van verwijzingen voorzien met unieke op identiteitskaart-Gebaseerde verwijzingen ](/help/headless/graphql-api/uuid-reference-upgrade.md), die helpen om de vragen van GraphQL voor individuele inhoudsfragmenten te verzekeren kan stabiel blijven zelfs als het fragment naar een andere plaats werd verplaatst. Dit is nu mogelijk met &quot;ByID&quot;-query&#39;s. Terwijl de wegen kunnen veranderen, potentieel het breken &quot;ByPath&quot;vragen, UUIDs is stabiel. De nieuwe id&#39;s kunnen ook worden geretourneerd als eigenschappen in een query of andere toepasselijke API-aanvraag. Huidige beperking (2025.1): Paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt. De beperking wordt verwijderd in de volgende release van AEM as a Cloud Service.
 
-**AEM REST OpenAPI voor levering van inhoudsfragmenten**
+**AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud**
 
 [ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is nu beschikbaar voor AEM as a Cloud Service.
 
 ### Verouderde functies {#sites-deprecated}
 
-#### SPA Editor {#spa-editor}
+#### SPA-editor {#spa-editor}
 
-[ de Redacteur van de SPA ](/help/implementing/developing/hybrid/introduction.md) is afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. De SPA Editor blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten.
+[ de Redacteur van het KUUROORD ](/help/implementing/developing/hybrid/introduction.md) is afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
 
-De voorkeur gaat nu uit naar editors voor het beheer van inhoud zonder kop in AEM:
+De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 
 * [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor het visuele uitgeven.
 * [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven.
 
 #### PWA-functies {#pwa-features}
 
-[ het progressieve Web app (PWA) eigenschappen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor AEM Sites worden afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. Deze functie blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten
+[ de progressieve Web app (PWA) eigenschappen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor AEM Sites worden afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. Deze functie blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in AEM Assets {#new-features-assets}
 
-**de malplaatjes van Dynamic Media**
+**Dynamische malplaatjes van Media**
 
-Pas de afbeelding- en tekstbanners direct aan met een gebruiksvriendelijke WYSIWYG Dynamic Media Template Editor door de URL in te sluiten in een toepassing van de eerste of derde partij, zodat u bijzonder aantrekkelijke ervaringen hebt met real-time updates van bannerinhoud.
+Pas de afbeelding- en tekstbanners direct aan met een gebruiksvriendelijke WYSIWYG Dynamic Media Template Editor door de URL in te sluiten in een toepassing van de eerste of derde partij, zodat u bijzonder aantrekkelijke ervaringen kunt opdoen met real-time updates van bannerinhoud.
 
 ![ dynamische vertoningen ](/help/assets/assets/dm-templates-smart-text-resize.png)
 
-**de leveringsrapporten van Dynamic Media**
+**Dynamische de leveringsrapporten van Media**
 
-Verkrijg leveringsinzichten voor activa die door Dynamic Media worden geleverd, met inbegrip van activa-vlakke levering tellingen, verwijzingsdetails, activa wegen in AEM Assets, en unieke activa IDs. Genereer rapporten voor alle elementen in de AEM Assets-opslagplaats of specifieke maphiërarchieën. Met deze inzichten kunt u de ROI van geleverde elementen meten, de kanaalprestaties evalueren en geïnformeerde beslissingen nemen voor middelenbeheer.
+Verkrijg leveringsinzichten voor activa die door Dynamische Media worden geleverd, met inbegrip van activa-vlakke levering tellingen, verwijzingsdetails, activa wegen in AEM Assets, en unieke activa IDs. Genereer rapporten voor alle elementen in de AEM Assets-opslagplaats of specifieke maphiërarchieën. Met deze inzichten kunt u de ROI van geleverde elementen meten, de kanaalprestaties evalueren en geïnformeerde beslissingen nemen voor middelenbeheer.
 
 ![ dynamische vertoningen ](/help/assets/assets/referrer.png)
 
-**Dynamic Media Multi-audio en titel**
+**Dynamische Multiaudio en titel van Media**
 
-[ Multi-caption en multi-audiospoorsteun voor video&#39;s in Dynamic Media ](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+[ Multi-caption en multi-audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
 **Dynamisch Aangepast Streamen over de steun van HTTP**
 
-Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
+Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media video levering (met CMAF ingeschakeld):
 
 * Adaptief streamen (DASH/HLS) zorgt voor een betere kijkervaring voor video&#39;s.
 
@@ -149,15 +149,15 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### E-mailsjablonen HTML in Adaptieve Forms
+#### HTML-e-mailsjablonen in Adaptive Forms
 
-De adaptieve Forms staat u toe gebruiken [ HTML e-mailmalplaatjes ](/help/forms/html-email-templates-in-adaptive-forms.md). Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+De adaptieve Forms staat u toe gebruiken [ de e-mailmalplaatjes van HTML ](/help/forms/html-email-templates-in-adaptive-forms.md). Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
 ![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
 
-#### Verbeterde ondersteuning voor cloudopslag: rechtstreekse PDF uploaden naar Azure Blob Storage
+#### Verbeterde ondersteuning voor cloudopslag: Direct PDF Uploaden naar Azure Blob Storage
 
-De Generatie APIs van het Document van AEM Forms staat u nu toe om [ geproduceerde documenten van de PDF aan de opslag van Azure Blob ](/help/forms/early-access-ea-features.md#doc-generation-api) direct te uploaden. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
+De Generatie APIs van het Document van AEM Forms staat u nu toe om [ geproduceerde documenten van PDF aan Azure BlobOpslag ](/help/forms/early-access-ea-features.md#doc-generation-api) direct te uploaden. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
@@ -179,7 +179,7 @@ Sandbox-programma&#39;s bieden nu ondersteuning voor configuratieleidingen, die 
 
 ### API&#39;s op basis van OpenAPI&#39;s - Vroege adopter-programma {#open-apis-earlyadopter}
 
-Ontwikkelaars kunnen AEM als functies voor Cloud Servicen diep integreren in hun eigen toepassingen en gereedschappen. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
+Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
 
 Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
 
@@ -196,13 +196,13 @@ Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen h
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
-Probeer uit gevernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
+Probeer uit een vernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
 
-Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. De Adobe verwelkomt terugkoppelt, die u aan [ aemcs-new-devconsole-ui-beta@adobe.com ](mailto:aemcs-new-devconsole-ui-beta@adobe.com) kunt e-mailen
+Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe verwelkomt terugkoppelen, die u aan [ aemcs-new-devconsole-ui-beta@adobe.com ](mailto:aemcs-new-devconsole-ui-beta@adobe.com) kunt e-mailen
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -220,6 +220,6 @@ U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/hel
 
 U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
-## Opmerkingen bij de release Experience Cloud {#experience-cloud}
+## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van het Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.

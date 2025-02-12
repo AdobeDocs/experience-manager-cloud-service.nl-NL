@@ -3,7 +3,8 @@ title: Nota's van de versie voor 2024.6.0 versie van  [!DNL Adobe Experience Man
 description: Nota's van de versie voor 2024.6.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 0%
@@ -18,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Om een maandelijks e-mailbericht over updates over de versienota&#39;s van de Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit van de Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
+>Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -50,7 +51,7 @@ De [ Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) ](/help/sit
 
 **produceer Variaties**
 
-Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
+Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met uw Adobe-accountteam voor hulp in het programma.
 
 **het doorbladeren van activa in de Console van het Fragment van de Inhoud**
 
@@ -72,11 +73,11 @@ Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Clou
 
 ![ Content Hub gebruikersinterface ](/help/release-notes/assets/content-hub-ui.png)
 
-**Dynamic Media met Mogelijkheden OpenAPI**
+**Dynamische Media met Mogelijkheden OpenAPI**
 
-Dynamic Media met OpenAPI-mogelijkheden breidt de DAM uit tussen Adobe- en externe toepassingen, waardoor toegang mogelijk is tot door een merk goedgekeurde digitale middelen in elk kanaal, via Asset Selector of OpenAPI-stack. Belangrijke elementen - geen binaire kopieën, elementen zijn geoptimaliseerd en getransformeerd aan de rand voor snelle prestaties, leveren elementen openbaar of veilig.
+Dynamic Media met OpenAPI-mogelijkheden breidt de DAM uit in Adobe- en externe toepassingen, waardoor toegang mogelijk is tot digitaal materiaal met een merk, in elk kanaal, via Asset Selector of OpenAPI-stack. Belangrijke elementen - geen binaire kopieën, elementen zijn geoptimaliseerd en getransformeerd aan de rand voor snelle prestaties, leveren elementen openbaar of veilig.
 
-![ Nieuw de gegevensstroomdiagram van Dynamic Media ](/help/assets/assets/dm-openapi-dfd.png)
+![ Nieuw Dynamisch diagram van de gegevensstroom van Media ](/help/assets/assets/dm-openapi-dfd.png)
 
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
@@ -85,11 +86,11 @@ Dynamic Media met OpenAPI-mogelijkheden breidt de DAM uit tussen Adobe- en exter
 
 Asset Count op type en grootte zijn nu beschikbaar op het Assets Insights-dashboard. Deze opties leveren realtime gegevens in uw Assets-weergaveomgeving. Ze geven een gedetailleerd overzicht van het aantal en het percentage van de elementen per grootteklasse en type element.
 
-**Updates aan ingebedde redacteur van de Adobe Express**
+**Updates aan ingebedde redacteur van Adobe Express**
 
 * Verbeterde gebruikerservaring voor het opslaan als een nieuw element in plaats van het opslaan als een nieuwe versie.
 
-* Exporteren van uit meerdere pagina&#39;s bestaande Express-documenten (voorheen werd slechts één pagina ondersteund) in zowel de PDF- als afbeeldingsindeling met meerdere pagina&#39;s. Als u afbeeldingsindelingen selecteert, wordt elke pagina opgeslagen als een afzonderlijk element in de DAM voor downstreamdistributie.
+* Exporteren van uit meerdere pagina&#39;s bestaande Express-documenten (voorheen werd slechts één pagina ondersteund) in zowel PDF- als afbeeldingsindelingen met meerdere pagina&#39;s. Als u afbeeldingsindelingen selecteert, wordt elke pagina opgeslagen als een afzonderlijk element in de DAM voor downstreamdistributie.
 
 * Ondersteuning voor het toevoegen van metagegevens in het dialoogvenster Opslaan terwijl u een element opslaat.
 
@@ -144,27 +145,27 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? De documentatie van de Adobe verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? De documentatie van Adobe verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms Service
 
-Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens naar en van een bestaand interactief PDF formulier te importeren of te exporteren en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
+Forms-service genereert een interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens te importeren of te exporteren naar en vanuit een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
 * **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Met deze functie wordt een optioneel vooraf ingevuld PDF-formulier gemaakt.
-* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
 * **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of van XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
 
 >[!IMPORTANT]
 >
-> Als u in het aansluiten van bij het Vroege Programma van de Toegang van de Adobe voor om het even welke vroege toegangsinnovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
+> Als u in het aansluiten van bij het Vroege Programma van de Toegang van Adobe voor om het even welke vroege toegangsinnovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
 ### Kennisgevingen van het Centrum voor activiteiten in verband met de gezondheid van de inhoud Vroege adopter-programma {#actions-center-notifications}
 
-[ Centrum van Acties ](/help/operations/actions-center.md) verzendt e-mailberichten wanneer de belangrijke incidenten gebeuren, of als iets over uw code of configuratie wordt opgemerkt waar u proactieve actie zou moeten nemen. Adobe heeft nu verschillende nieuwe typen berichten geïntroduceerd die zijn gekoppeld aan de status van uw inhoud. Deze functie is beschikbaar via een programma voor vroege adoptie. Neem contact op met de klantenservice van de Adobe om deel te nemen.
+[ Centrum van Acties ](/help/operations/actions-center.md) verzendt e-mailberichten wanneer de belangrijke incidenten gebeuren, of als iets over uw code of configuratie wordt opgemerkt waar u proactieve actie zou moeten nemen. Adobe heeft nu verschillende nieuwe typen berichten geïntroduceerd die zijn gekoppeld aan de status van uw inhoud. Deze functie is beschikbaar via een programma voor vroege adoptie. Neem contact op met de klantenservice van Adobe om deel te nemen.
 
 #### Pagina&#39;s bevatten veel knooppunten {#page-nodes}
 
@@ -176,7 +177,7 @@ De prestaties van de workflowengine worden beïnvloed wanneer er een groot aanta
 
 #### Gebruikers die rechtstreeks aan aangepaste groepen zijn toegevoegd {#users-customgroups}
 
-U ontvangt een proactief bericht via het Actions Center wanneer gebruikers rechtstreeks aan aangepaste groepen worden toegevoegd. Met dit proces kunt u de best practices van IMS volgen door gebruikers toe te voegen aan relevante IMS-groepen en deze IMS-groepen vervolgens als leden van AEM groepen op te nemen.
+U ontvangt een proactief bericht via het Actions Center wanneer gebruikers rechtstreeks aan aangepaste groepen worden toegevoegd. Met dit proces kunt u de best practices van IMS volgen door gebruikers toe te voegen aan relevante IMS-groepen en deze IMS-groepen vervolgens op te nemen als leden van AEM-groepen.
 
 #### Ontbrekende JCR-inhoud {#jcr-content}
 
@@ -196,7 +197,7 @@ E-mail **<aemcs-cdn-config-adopter@adobe.com>** waarin wordt aangegeven in welke
 
 #### Basisverificatie bij de CDN (programma voor vroege adopters) {#basicauth-cdn}
 
-Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden in beheerd door een configuratiedossier in git dat via de Pijpleiding van de Configuratie, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Bescherm bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord zijn vereist. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden in beheerd door een configuratiedossier in git dat via de Pijpleiding van de Configuratie, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### Inhoud op de CDN wissen met een zelfbedieningsAPI-sleutel (programma voor vroege adopters) {#purge-cdn}
 
@@ -204,7 +205,7 @@ Registreer een CDN zuivering API sleutel op een zelfbediening manier, en gebruik
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-Serve Creatie van x-AEM-Edge-Sleutel voor klant-Beheerde CDN (BYOCDN) (Vroege Programma van de Aannemer) {#byocdn-keys}
+#### Self-Serve Creation of X-AEM-Edge-Key for Customer-Managed CDN (BYOCDN) (Vroege-adopter-programma) {#byocdn-keys}
 
 Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit resultaat kan nu op een zelfbediende manier door een configuratiedossier worden verwezenlijkt dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
@@ -226,11 +227,11 @@ Net als AEM 6.5 voert Apache/dispatcher opnieuw schrijfkaarten in die op een spe
 
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
 
-De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+Adobe beheerde CDN steunt nu [ de Zijde van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl het halen van uit oorsprong die kleinere secties die hogere toegangsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -248,6 +249,6 @@ U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/hel
 
 U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
-## Opmerkingen bij de release Experience Cloud {#experience-cloud}
+## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van het Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
