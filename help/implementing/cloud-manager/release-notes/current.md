@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.2.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
+source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -28,45 +28,49 @@ De volgende geplande release is donderdag 13 maart 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-* **Update aan de regels van de codekwaliteit.**
-Vanaf donderdag 13 februari 2025 gebruikt de stap voor de kwaliteit van de Cloud Manager-code nu een bijgewerkte SonarQube-versie 9.9.5.90363.
+* **Update aan de regels van de codekwaliteit**
 
-  De bijgewerkte regels, beschikbaar voor Cloud Manager op AEM as a Cloud Service bij [ deze verbinding ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager. Deze update kan van invloed zijn op uw kwaliteitswachttijden en kan implementaties blokkeren.
+  Vanaf donderdag 13 februari 2025 gebruikt de kwaliteitsstap van de Cloud Manager-code nu SonarQube 9.9.5.90363.
 
-* **Java 17 en Java 21 bouwt steun.**
+  De bijgewerkte regels, beschikbaar voor Cloud Manager op AEM as a Cloud Service bij [ deze verbinding ](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager.
+
+* SonarQube 9.9 is nu de standaardscanengine voor codekwaliteit voor alle klanten.
+
+* **Java 17 en Java 21 bouwstijl steun**
 
   Klanten kunnen nu bouwen met Java 17 of Java 21, waardoor ze toegang krijgen tot prestatieverbeteringen en nieuwe taalfuncties. Voor configuratiestappen, met inbegrip van het bijwerken van uw Gemaakt project en bibliotheekversies, zie [ milieu bouwen ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Wanneer de versie voor samenstellen is ingesteld op Java 17 of Java 21, wordt Java 21 gebruikt voor de runtime.
 
-   * **toe:laten van de Eigenschap**
-      * Deze functie wordt op donderdag 13 februari 2025 voor alle klanten ingeschakeld, samen met de standaardimplementatie van de nieuwe SonarQube-versie.
-      * De klanten kunnen het ** onmiddellijk toelaten door de twee hierboven beschreven variabele configuraties voor de bevordering van SonarQube 9.9 versie te plaatsen.
+* **99.99% SLA uptime rapportering voor Edge Delivery Services**
 
-   * **Java 21 runtime plaatsing**
-      * De Java 21-runtime wordt geïmplementeerd tijdens het bouwen met Java 17 of Java 21.
-      * De geleidelijke implementatie naar alle Cloud Manager-omgevingen begint in februari voor sandboxen en ontwikkelomgevingen en loopt in april door tot productieomgevingen.
-      * De klanten die met Java 11 bouwen die wensen om Java 21 runtime *vroeger goed te keuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
-
-* **99.99% uptime rapportering voor Edge Delivery Services.**
-De high-availability 99.99% uptime rapportering is nu beschikbaar voor in aanmerking komende Edge Delivery Services programma&#39;s. Om deze functie in te schakelen, moeten klanten zich met succes aan boord van hun Edge Delivery Services-sites bevinden en hun 99,99% Service level agreement (SLA) toepassen in Cloud Manager.
+  De high-availability 99.99% uptime rapportering is nu beschikbaar voor in aanmerking komende Edge Delivery Services programma&#39;s. Om deze functie in te schakelen, moeten klanten zich met succes aan boord van hun Edge Delivery Services-sites bevinden en hun 99,99% Service level agreement (SLA) toepassen in Cloud Manager.
 
   Zie ook [ SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
 
-* **Verbeterde gebruikersuitnodiging voor Edge Delivery Services.**
-Er zijn verbeteringen aangebracht in de ervaring met het uitnodigen van gebruikers naar de opslagplaats voor inhoud die is gekoppeld aan Edge Delivery Services. <!-- CMGR-65331 -->
+* **Verbeterde ervaring van de gebruikersuitnodiging voor Edge Delivery Services**
 
-* **automatische verwezenlijking van profielen Admin op publiceer instanties.**
-Eerder stond Cloud Manager het handmatig maken van beheerprofielen toe op publicatieexemplaren, maar bood standaard geen ondersteuning voor automatisch maken. Met deze update worden nu automatisch beheerprofielen gemaakt voor publicatieexemplaren, waardoor de bruikbaarheid wordt verbeterd en de installatietijd voor klanten wordt verkort.
+  Er zijn verbeteringen aangebracht in de ervaring met het uitnodigen van gebruikers naar de opslagplaats voor inhoud die is gekoppeld aan Edge Delivery Services. <!-- CMGR-65331 -->
+
+* **Automatische verwezenlijking van profielen Admin op publiceer instanties**
+
+  Eerder stond Cloud Manager het handmatig maken van beheerprofielen toe op publicatieexemplaren, maar bood standaard geen ondersteuning voor automatisch maken. Met deze update worden nu automatisch beheerprofielen gemaakt voor publicatieexemplaren, waardoor de bruikbaarheid wordt verbeterd en de installatietijd voor klanten wordt verkort.
 
   Voor meer details, zie [ Toestemmingen van de Douane ](/help/implementing/cloud-manager/custom-permissions.md).
 
   ![ Activiteiten die van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png) filtreren
 
-* **Overgang aan OAuth voor milieu&#39;s van Cloud Service.**
-De nieuwe milieu&#39;s van Cloud Service gebruiken nu op OAuth-Gebaseerde dienst-aan-dienst authentificatie voor de integratieprojecten van Adobe Developer Console in plaats van de eerder gebruikte JWT authentificatiemethode. JWT-authenticatie is afgekeurd en is gepland voor einde van de levensduur in juni 2025.
+* **Overgang aan OAuth voor de milieu&#39;s van Cloud Service**
 
-* **Steun voor EC (Elliptische Kromme) PrivéSleutels (secp384r1).**
-Cloud Manager biedt nu ondersteuning voor `secp384r1` OV/EV SSL-certificaten (Elliptic Curve (EC)) met verbeterde beveiliging en compatibiliteit voor door klanten beheerde OV/EV SSL-certificaten.
+  De nieuwe milieu&#39;s van Cloud Service gebruiken nu op OAuth-Gebaseerde dienst-aan-dienst authentificatie voor de integratieprojecten van Adobe Developer Console in plaats van de eerder gebruikte JWT authentificatiemethode. JWT-authenticatie is afgekeurd en is gepland voor einde van de levensduur in juni 2025.
+
+* **Steun voor EC (Elliptische Kromme) PrivéSleutels (secp384r1)**
+
+  Cloud Manager biedt nu ondersteuning voor `secp384r1` Elliptic Curve (EC)-privésleutels, waardoor de beveiliging en compatibiliteit van door klanten beheerde OV/EV SSL-certificaten worden verbeterd.
 Voor meer details, zie [ Vereisten voor klant-geleide OV/EV SSL certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
+
+* **Gespecialiseerde het testen milieu&#39;s**
+
+  Met ingang van 27 februari 2025 zal een nieuwe ontwikkelomgeving met verbeterde middelen beschikbaar zijn voor beginnende adopters.
+
 
 <!--
 ## Early adoption program {#early-adoption}
