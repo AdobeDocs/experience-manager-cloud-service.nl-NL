@@ -4,7 +4,7 @@ description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als 
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 508265c72f458b062e1667fd42403743fa293586
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <span class="preview"> Dit artikel bevat inhoud over de **trek** eigenschap, een pre-versieeigenschap. De pre-vrijlatingseigenschap is toegankelijk slechts door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
-Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, maar later moet pauzeren en terugsturen. AEM bevat een optie `save-as-draft` waarmee de gebruiker het formulier kan opslaan als concept dat in de toekomst kan worden ingevuld. Om dit te vergemakkelijken, verstrekt AEM de **Concepten &amp; van het Portaal van het Forsm** component van het Portaal van het Forsm uit de doos, die concepten en voorlegging op de pagina&#39;s van AEM Sites toont. De component bevat formulieren die zijn opgeslagen als concepten die later kunnen worden ingevuld, en formulieren die zijn verzonden. Alleen aangemelde gebruikers kunnen hun concepten bewerken of hun verzonden formulieren weergeven. Nochtans, als een anonieme gebruiker door de lijst van vormen navigeert gebruikend de **component van het Onderzoek &amp; van het Registreren** en een vorm als ontwerp opslaat, wordt dat ontwerp niet vermeld door de **Concepten &amp; van Submissies** component. Gebruikers moeten zich bij het verzenden van het formulier hebben aangemeld om concepten en verzendingen weer te geven.
+Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, maar later moet pauzeren en terugsturen. AEM biedt een optie `save-as-draft` waarmee de gebruiker het formulier kan opslaan als concept dat later kan worden ingevuld. Om dit te vergemakkelijken, verstrekt AEM de **Concepten &amp; van de Verzending** de Poortcomponent van Forms uit de doos, die concepten en voorlegging op de pagina&#39;s van AEM Sites toont. De component bevat formulieren die zijn opgeslagen als concepten die later kunnen worden ingevuld, en formulieren die zijn verzonden. Alleen aangemelde gebruikers kunnen hun concepten bewerken of hun verzonden formulieren weergeven. Nochtans, als een anonieme gebruiker door de lijst van vormen navigeert gebruikend de **component van het Onderzoek &amp; van het Registreren** en een vorm als ontwerp opslaat, wordt dat ontwerp niet vermeld door de **Concepten &amp; van Submissies** component. Gebruikers moeten zich bij het verzenden van het formulier hebben aangemeld om concepten en verzendingen weer te geven.
 
 ![ pictogram Concepten ](assets/drafts-component.png)
 
@@ -30,7 +30,7 @@ Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, m
 
 ### Azure Storage- en Unified Storage-connector configureren voor concepten en verzendingen voor Forms Portal-component
 
-De **componenten van Concepten &amp; van Verzending** heeft een opslagopstelling voor het bewaren van en het van een lijst maken van concepten op de pagina van AEM Sites nodig. De Unified Storage-connector biedt een framework om AEM te koppelen aan externe opslag. Als u het formulier wilt opslaan als concept, zorgt u ervoor dat u een Azure-opslagaccount en een toegangstoets hebt om toegang tot het [!DNL Azure] -opslagaccount te verlenen. Eenmaal beschikt u over een Azure-opslagaccount en de toegangstoets, voert u de volgende stappen uit om een Azure-opslagconfiguratie te maken:
+De **componenten van Concepten &amp; van Verzending** heeft een opslagopstelling voor het bewaren van en het van een lijst maken van concepten op de pagina van AEM Sites nodig. De Unified Storage Connector biedt een framework om AEM te koppelen aan externe opslag. Als u het formulier wilt opslaan als concept, zorgt u ervoor dat u een Azure-opslagaccount en een toegangstoets hebt om toegang tot het [!DNL Azure] -opslagaccount te verlenen. Eenmaal beschikt u over een Azure-opslagaccount en de toegangstoets, voert u de volgende stappen uit om een Azure-opslagconfiguratie te maken:
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]** .
 
@@ -80,7 +80,7 @@ U kunt uit-van-de-doos componenten van Forms Portal gebruiken om concepten en bi
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
    ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
-1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Drafts & Submissions]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
+1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Drafts & Submissions]** checkbox onder de **[Naam van het Project van het Archetype van AEM ] - Forms en Communicatie Portaal**.
 
    ![ de Selectie van het Beleid ](/help/forms/assets/save-form-as-draft-enable-policy.png)
 

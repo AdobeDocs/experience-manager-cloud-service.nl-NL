@@ -3,13 +3,13 @@ title: Inleiding tot interactieve communicatie
 description: Ontwerp dynamische, gegevensgestuurde communicatie met eenvoudige interactieve AEM Forms-communicatie
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie
 
@@ -19,7 +19,17 @@ U kunt met ons intuïtieve gereedschap voor point-and-click grafische ontwerpen 
 
 Van financiële instellingen die rekeningoverzichten aan overheidsagentschappen produceren die voordeelberichten stroomlijnen, is de Interactieve Mededelingen het go aan hulpmiddel om kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie met gemak en efficiency tot stand te brengen.
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
+
 
 ## Kernmogelijkheden
 
@@ -41,7 +51,7 @@ De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
 
 ## Onboarding
 
-De Interactieve Communicatie redacteur beschikbaar onder het programma van de Vroege Toegang voor de as a Cloud Service plaatsingen van Forms. Om toegang te verzoeken e-mail uw organisatie identiteitskaart, en programmadetails voor uw as a Cloud Service plaatsingen van Forms aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres. Zodra u toegang wordt verleend, begin [ creërend uw eerste correspondentie ](https://video.tv.adobe.com/v/3444094/).
+De Interactieve Communicatie redacteur beschikbaar onder het programma van de Vroege Toegang voor de plaatsingen van Forms as a Cloud Service. Om toegang te verzoeken e-mail uw organisatie identiteitskaart, en programmatiedetails voor uw plaatsingen van Forms as a Cloud Service aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres. Zodra u toegang wordt verleend, begin [ creërend uw eerste correspondentie ](https://video.tv.adobe.com/v/3444094/).
 
 
 ## Volgende

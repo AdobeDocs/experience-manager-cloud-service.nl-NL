@@ -4,20 +4,20 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
 
 # Aan de slag - Zelfstudie voor ontwikkelaars
 
-In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met Edge Delivery Services voor AEM Forms (EDS) kunt u formulieren maken met vertrouwde gereedschappen, zoals Google Docs en Microsoft Office.
+In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met Edge Delivery Services for AEM Forms (EDS) kunt u formulieren maken met vertrouwde gereedschappen, zoals Google Docs en Microsoft Office.
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft SharePoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [ tot een nieuw AEM project leiden dat met het AanpassingsBlok van Forms ](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het AanpassingsBlok van Forms aan een bestaand AEM ](#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
+AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [ tot een nieuw project van AEM leiden dat met het AanpassingsBlok van Forms ](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand project van AEM ](#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
 
 Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publiceren van uw eigen aangepaste formulier met een nieuw Adobe Experience Manager (AEM) Forms-project.
 
@@ -33,11 +33,11 @@ Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publice
 
 ## Een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block
 
-Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM project dat vooraf is geconfigureerd met het Adaptive Forms Block. Het is de snelste en eenvoudigste manier om AEM best practices te volgen en meteen uw formulieren samen te stellen.
+Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM-project dat vooraf is geconfigureerd met het Adaptive Forms Block. Het is de snelste en eenvoudigste manier om de beste praktijken van AEM te volgen en meteen al uw formulieren samen te stellen.
 
 ### Aan de slag met de AEM Forms boilerplate-opslagsjabloon
 
-1. Creeer een bewaarplaats GitHub voor uw AEM Project. Opslagplaats maken:
+1. Creeer een bewaarplaats GitHub voor uw Project van AEM. Opslagplaats maken:
    1. Ga naar [ https://github.com/adobe-rnd/aem-boilerplate-forms ](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![ AEM Forms Boilerplate ](/help/edge/assets/aem-forms-boilerplate.png)
@@ -45,14 +45,14 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
 
       ![ creeer nieuwe bewaarplaats gebruikend AEM Forms Boilerplate ](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
 
-   1. Voor creeer een nieuw bewaarplaatsscherm, selecteer de **eigenaar**, en specificeer **Naam van de Bewaarplaats**. De Adobe adviseert dat de bewaarplaats aan **Openbaar** wordt geplaatst. Zo, selecteer de **openbare** optie, en klik **creeer Bewaarplaats**.
+   1. Voor creeer een nieuw bewaarplaatsscherm, selecteer de **eigenaar**, en specificeer **Naam van de Bewaarplaats**. Adobe adviseert dat de bewaarplaats aan **Openbaar** wordt geplaatst. Zo, selecteer de **openbare** optie, en klik **creeer Bewaarplaats**.
 
    ![ plaats de bewaarplaats aan openbaar ](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
 
-1. Installeer de AEM Code Sync GitHub App in uw dataopslag. Installeren:
+1. Installeer de AEM Code Sync GitHub App in uw repository. Installeren:
    1. Ga naar [ https://github.com/apps/aem-code-sync/installations/new ](https://github.com/apps/aem-code-sync/installations/new).
-   1. Voor het Install AEM scherm van de Synchronisatie van de Code, selecteer **slechts de optie van Bewaarplaatsen** en selecteer uw pas gecreëerde bewaarplaats. Klik op Opslaan.
+   1. Voor het Install scherm van de Synchronisatie van de Code van AEM, selecteer **slechts de optie van Bewaarplaatsen** en selecteer uw pas gecreëerde bewaarplaats. Klik op Opslaan.
 
    ![ plaats de bewaarplaats aan openbaar ](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
@@ -78,20 +78,20 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
 
 Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaats GitHub aan uw eigen inhoudsomslag te richten:
 
-1. Maak een nieuwe map die specifiek voor uw AEM inhoud is bestemd in Google Drive of Microsoft SharePoint. In dit document wordt een map gebruikt die op Microsoft SharePoint is gemaakt.
+1. Maak een nieuwe map die speciaal voor uw AEM-inhoud is bestemd in Google Drive of Microsoft SharePoint. In dit document wordt een map gebruikt die op Microsoft SharePoint is gemaakt.
 
 1. Deel de map met de Adobe Experience Manager-gebruiker (forms@adobe.com).
 
-   ![ het Gebruik beheert de optie van de Toegang om omslag met AEM Gebruiker te delen - SharePoint ](/help/edge/assets/share-folder-with-aem-user.png)
+   ![ het Gebruik beheert de optie van de Toegang om omslag met de Gebruiker van AEM te delen - SharePoint ](/help/edge/assets/share-folder-with-aem-user.png)
 
-   ![ het Gebruik beheert de optie van de Toegang om omslag met AEM Gebruiker te delen - de Aandrijving van Google ](/help/edge/assets/share-google-drive-folder.png)
+   ![ het Gebruik beheert de optie van de Toegang om omslag met AEM te delen Gebruiker - de Aandrijving van Google ](/help/edge/assets/share-google-drive-folder.png)
 
 
    Zorg ervoor dat u bewerkingsrechten voor de map hebt opgegeven aan de Adobe Experience Manager-gebruiker.
 
-   ![ omslag van het Aandeel met AEM Gebruiker, verstrek het uitgeven rechten-SharePoint ](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
+   ![ omslag van het Aandeel met de Gebruiker van AEM, verstrek het uitgeven rechten-SharePoint ](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
 
-   ![ de omslag van het Aandeel met AEM Gebruiker, verstrekt het uitgeven rechten - de Aandrijving van Google ](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
+   ![ de omslag van het Aandeel met de Gebruiker van AEM, verstrekt het uitgeven rechten - de Aandrijving van Google ](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
 
 1. Kopieer de [ voorbeeldinhoud ](/help/edge/assets/wefinance1.zip) aan uw omslag. Kopiëren:
 
@@ -99,7 +99,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
       ![ Inhoud van de Steekproef van de Download ](/help/edge/assets/download-sample-content.png)
 
-      De bestanden `nav` en `footer` definiëren de basislay-out van uw pagina&#39;s en veranderen zelden in een project. Ze hebben ook een specifieke structuur die afwijkt van de meeste andere inhoudsbestanden. Door deze bestanden te bekijken, krijgt u een idee hoe inhoud in AEM Projecten wordt georganiseerd.
+      De bestanden `nav` en `footer` definiëren de basislay-out van uw pagina&#39;s en veranderen zelden in een project. Ze hebben ook een specifieke structuur die afwijkt van de meeste andere inhoudsbestanden. Door deze bestanden te bekijken, krijgt u een idee hoe de inhoud in AEM Projecten wordt georganiseerd.
 
 
    1. Upload deze bestanden naar de map Microsoft SharePoint of Google Drive.
@@ -112,7 +112,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
    1. Ga naar de bewaarplaats GitHub die u eerder gebruikend AEM Forms Boilerplate creeerde.
    1. Open de `fstab.yaml` voor bewerking.
-   1. Vervang de bestaande verwijzing door het pad naar de map die u met de AEM gebruiker hebt gedeeld (forms@adobe.com).
+   1. Vervang de bestaande verwijzing door het pad naar de map die u met de AEM-gebruiker hebt gedeeld (forms@adobe.com).
 
       ![ Inhoud van de Steekproef op de Aandrijving van Google ](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -191,7 +191,7 @@ De voorbeeldinhoud bestaat uit een blad &quot;vraag&quot; dat fungeert als sjabl
 
 ![ Vorm van het Onderzoek ](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Laten we beginnen met het bijwerken van een veldlabel. Open het &#39;vraag&#39;-blad om het te bewerken, wijzig het label van de verzendknop in `Let's Talk` en gebruik AEM Sidekick om het bestand voor te vertonen en te publiceren.
+Laten we beginnen met het bijwerken van een veldlabel. Open het blad &#39;Vraag&#39; om het te bewerken, wijzig het label van de verzendknop in `Let's Talk` en gebruik AEM Sidekick om het bestand voor te vertonen en te publiceren.
 
 ![ Vorm van het Onderzoek ](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ Voor gedetailleerde informatie over het creëren van en het publiceren van een n
 
 Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
 
-1. Installeer AEM CLI: AEM CLI vereenvoudigt ontwikkelingstaken. Laten we het wereldwijd installeren met npm:
+1. Installeer de AEM CLI: de AEM CLI vereenvoudigt ontwikkelingstaken. Laten we het wereldwijd installeren met npm:
 
    ```Bash
        npm install -g @adobe/aem-cli
@@ -245,7 +245,7 @@ Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
    git clone https://github.com/<owner>/<repo>
    ```
 
-1. Start uw lokale omgeving: navigeer naar uw projectmap en vul uw lokale AEM met één opdracht in:
+1. Start uw lokale omgeving: navigeer naar uw projectmap en vul uw lokale AEM-instantie op met één opdracht:
 
    ```
    cd <repo>
@@ -268,23 +268,42 @@ Gefeliciteerd! U hebt uw lokale ontwikkelomgeving ingesteld en uw wijzigingen ge
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Als u een bestaand AEM project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren.
+Als u een bestaand AEM-project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren.
 
 >[!NOTE]
 >
 >
-> Deze stap is op projecten van toepassing die met [ worden gebouwd AEM Boilerplate ](https://github.com/adobe/aem-boilerplate). Als u uw AEM project gebruikend [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) creeerde, kunt u deze stap overslaan.
+> Deze stap is op projecten van toepassing die met [ worden gebouwd AEM Boilerplate ](https://github.com/adobe/aem-boilerplate). Als u uw project van AEM gebruikend [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) creeerde, kunt u deze stap overslaan.
 
 Om te integreren:
 
-1. Kloon de Adaptieve bewaarplaats van het Blok van Forms: [ https://github.com/adobe-rnd/aem-boilerplate-forms ](https://github.com/adobe-rnd/aem-boilerplate-forms) aan uw computer.
+1. **voegt vereiste dossiers en omslagen** toe
+   1. Kopieer en kleef de volgende omslagen en de dossiers van [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) in uw Project van AEM:
 
-1. Zoek in de gedownloade map naar de map `blocks/form` . Deze map kopiëren. Navigeer nu naar de lokale `blocks` map van uw AEM project en plak de gekopieerde formuliermap hier.
+      * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
+      * [ vorm-gemeenschappelijke ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) omslag
+      * [ vorm-componenten ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) omslag
+      * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
+      * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
 
-1. Leg deze veranderingen in uw AEM project op GitHub vast en duw.
+1. **de componentendefinities en modeldossiers van de Update**
+   1. Navigeer naar het `../models/_component-definition.json` dossier in uw Project van AEM en werk het met de veranderingen van het [ _component-definition.json- dossier in de Boilerplate van AEM Forms ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48) bij.
 
+   1. Navigeer naar het `../models/_component-models.json` dossier in uw Project van AEM en werk het met de veranderingen van het [ _component-models.json dossier in de Boilerplate van AEM Forms bij ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM project. U kunt beginnen met het maken en toevoegen van formulieren aan uw AEM.
+1. **voeg de Redacteur van de Vorm in redacteursmanuscript** toe
+   1. Navigeer aan het `../scripts/editor-support.js` dossier in uw Project van AEM en werk het met de veranderingen van het {[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106) bij
+1. **update ESLint configuratiedossier**
+   1. Navigeer naar het `../.eslintignore` -bestand in uw AEM-project en voeg de volgende coderegel toe om fouten met betrekking tot de regelengine voor formulierblokken te voorkomen:
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. Leg deze wijzigingen vast en duw deze naar uw AEM Project-opslagplaats op GitHub.
+
+Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM-project. U kunt formulieren maken en toevoegen aan uw AEM-pagina&#39;s.
 
 
 ## Het oplossen van problemen GitHub bouwt kwesties

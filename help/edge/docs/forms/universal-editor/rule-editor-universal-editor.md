@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
+exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2111'
 ht-degree: 0%
 
 ---
 
-
-# Inleiding tot de Redacteur van de Regel in Universele Redacteur
+# Inleiding tot de Redacteur van de Regel in de Authoring van WYSIWYG
 
 U kunt dynamisch formuliergedrag toevoegen met de Regeleditor, waarmee u regels kunt maken. Deze regels maken voorwaardelijke veldzichtbaarheid mogelijk, automatiseren berekeningen op basis van gebruikersinvoer en verbeteren de gebruikerservaring. Door het invullen van formulieren te stroomlijnen, zorgt de Rule Editor voor zowel nauwkeurigheid als efficiëntie.
 
@@ -41,21 +41,23 @@ Voor gedetailleerde geleidelijke instructies, zie [ een voorwaardelijke regel ](
 
 ## Hoe te om de uitbreiding van de Redacteur van de Regel toe te laten?
 
-In Universele Redacteur, wordt de Redacteur van de Regel niet toegelaten door gebrek. Om de uitbreiding van de Redacteur van de Regel voor uw milieu toe te laten, verzend een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met uw verzoek.
+In Universele Redacteur, wordt de uitbreiding van de Redacteur van de Regel niet toegelaten door gebrek. Om de uitbreiding van de Redacteur van de Regel toe te laten schrijven aan ons in [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officiële e-mailidentiteitskaart
 
 Nadat de uitbreiding van de Redacteur van de Regel voor uw milieu wordt toegelaten, ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram verschijnt in de hoger-juiste hoek van de redacteur uit.
 
 ![ Universele redacteur van de Regel van de Redacteur ](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Selecteer het vormvoorwerp waarvoor u een regel wilt schrijven, en ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram klikken. De gebruikersinterface van de Redacteur van de Regel verschijnt.
+Selecteer de vormcomponent waarvoor u een regel wilt schrijven, en ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram klikken. De gebruikersinterface van de Redacteur van de Regel verschijnt.
 
 ![ gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+In dit artikel worden `form object` en `form component` door elkaar gebruikt.
 
 Nu, kunt u beginnen regels of bedrijfslogica voor het geselecteerde vormgebied te schrijven door de [ beschikbare regeltypes in de Redacteur van de Regel ](#available-rule-types-in-rule-editor) te gebruiken.
 
 ## Werken met de gebruikersinterface van de Rule Editor
 
-De visuele redacteur van de Redacteur van de Regel opent wanneer u klikt ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit:
+De redacteur van de Redacteur van de Regel opent wanneer u ![ uitgeeft-lijnen ](/help/forms/assets/edit-rules-icon.svg) pictogram klikt:
 
 ![ het gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -68,20 +70,20 @@ De visuele redacteur van de Redacteur van de Regel opent wanneer u klikt ![ geef
   </thead>
   <tbody>
     <tr>
-      <td>1. Weergave van componentregelaars</td>
-      <td>Hiermee wordt de titel van het formulierobject weergegeven waarmee u de regeleditor hebt gestart en het regeltype dat momenteel is geselecteerd.</td>
+      <td>1. Titel</td>
+      <td>Hiermee geeft u de titel van de formuliercomponent en het geselecteerde regeltype weer. 'Voer het brutosalaris in' is bijvoorbeeld een tekstvakcomponent waarvoor het regeltype 'Wanneer' is geselecteerd. </td>
     </tr>
     <tr>
       <td>2. Formulierobjecten en -functies</td>
-      <td>Het <b> lusje van Objecten van Forms </b> toont een hiërarchische mening van alle voorwerpen bevat in de vorm. Het <b> lusje van Functies </b> omvat een reeks ingebouwde functies.</td>
+      <td>Het <b> Forms bezwaar heeft </b> lusje toont een hiërarchische mening van alle componenten in de vorm. Het <b> lusje van Functies </b> omvat een reeks ingebouwde functies in de regelredacteur.</td>
     </tr>
     <tr>
       <td>3. Schakelen tussen formulierobjecten en -functies</td>
-      <td>Met de schakelknop schakelt u, wanneer hierop wordt getikt, de formulierobjecten en het deelvenster met functies in of uit.</td>
+      <td>Met de schakelknop kunt u het deelvenster Formulierobjecten en -functies afwisselend weergeven of verbergen. </td>
     </tr>
     <tr>
       <td>4. Visuele-regeleditor</td>
-      <td>De visuele Redacteur van de Regel is het gebied op de visuele redacteurswijze van het gebruikersinterface van de Redacteur van de Regel waar u regels schrijft.</td>
+      <td>De visuele Redacteur van de Regel is de interface waar u regels voor de vormcomponenten kunt tot stand brengen.</td>
     </tr>
     <tr>
       <td>5. Gereed en annuleer knoppen</td>
@@ -90,7 +92,7 @@ De visuele redacteur van de Redacteur van de Regel opent wanneer u klikt ![ geef
   </tbody>
 </table>
 
-Bestaande regels op een formulierobject worden weergegeven wanneer u het object selecteert. U kunt de titel en een voorproef de regelsamenvatting op de visuele Redacteur van de Regel bekijken. Bovendien kunt u de volgorde van regels wijzigen, regels bewerken, regels inschakelen/uitschakelen of regels verwijderen.
+Bestaande regels voor een formuliercomponent worden weergegeven wanneer u de component selecteert. U kunt de titel en een voorproef de regelsamenvatting op de Redacteur van de Regel bekijken. Bovendien kunt u de volgorde van regels wijzigen, regels bewerken, regels inschakelen/uitschakelen of regels verwijderen.
 
 ![ toon de beschikbare regels van vormvoorwerp ](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -108,51 +110,55 @@ De Redacteur van de Regel verstrekt een reeks vooraf bepaalde regeltypes die u k
   <tbody>
     <tr>
       <td>Waarde instellen van</td>
-      <td>Hiermee wordt de waarde van een formulierobject ingesteld, afhankelijk van of aan de opgegeven voorwaarde wordt voldaan.</td>
+      <td>Hiermee wordt de waarde van een formuliercomponent ingesteld, afhankelijk van of aan de opgegeven voorwaarde wordt voldaan of niet.</td>
     </tr>
     <tr>
       <td>Waarde wissen van</td>
-      <td>Wist de waarde van het opgegeven object.</td>
+      <td>Wist de waarde van de opgegeven formuliercomponent.</td>
     </tr>
     <tr>
       <td>Verbergen/weergeven</td>
-      <td>Hiermee wordt een formulierobject verborgen of weergegeven op basis van het feit of aan een voorwaarde is voldaan.</td>
+      <td>Hiermee wordt een formuliercomponent verborgen of weergegeven op basis van het feit of aan een voorwaarde is voldaan.</td>
     </tr>
     <tr>
       <td>In-/uitschakelen</td>
-      <td>Schakelt een formulierobject in of uit op basis van het feit of aan een voorwaarde is voldaan of niet.</td>
+      <td>Schakelt een formuliercomponent in of uit op basis van het feit of aan een voorwaarde is voldaan of niet.</td>
     </tr>
     <tr>
       <td>Valideren</td>
-      <td>Valideert het formulier of een opgegeven object.</td>
+      <td>Controleert de formuliercomponent op basis van een voorwaarde en geeft een fout weer als niet aan de voorwaarde wordt voldaan. </td>
     </tr>
     <tr>
       <td>Wanneer</td>
-      <td>Volgt <i> voorwaarde-actie-afwisselende </i> de construct van de actieregel of <i> voorwaarde-actie </i> regelconstructie. Hiermee wordt een voorwaarde opgegeven voor evaluatie gevolgd door een actie die wordt geactiveerd als aan de voorwaarde is voldaan.</td>
+      <td>Hiermee wordt een voorwaarde opgegeven voor evaluatie gevolgd door een actie die wordt geactiveerd als aan de voorwaarde is voldaan. Het volgt de <i> voorwaarde-actie-afwisselende </i> constructie van de actieregel of <i> voorwaarde-actie </i> regelconstructie. </td>
     </tr>
     <tr>
       <td>Indeling</td>
-      <td>Maakt een formulierobject op basis van een functie of reguliere expressie op.</td>
+      <td> Wijzigt de weergavewaarde van de formuliercomponent met de opgegeven expressie wanneer de waarde ervan verandert.</td>
     </tr>
     <tr>
       <td>Invoke-service</td>
-      <td>Roept de dienst aan die in een model van vormgegevens (FDM) wordt gevormd.</td>
+      <td>Roept de dienst aan die gebruikend externe APIs, het Model van de Gegevens van de Vorm of de Webdiensten RESTful wordt gevormd.</td>
     </tr>
     <tr>
       <td>Eigenschap instellen</td>
-      <td>Stelt de waarde van een eigenschap van het opgegeven object in op basis van een voorwaarde.</td>
+      <td>Hiermee wordt de waarde van een eigenschap van de opgegeven formuliercomponent ingesteld op basis van een voorwaarde.</td>
     </tr>
     <tr>
       <td>Focus instellen</td>
-      <td>Hiermee wordt de focus op het opgegeven object ingesteld.</td>
+      <td>Hiermee wordt de focus op de opgegeven formuliercomponent ingesteld.</td>
     </tr>
     <tr>
       <td>Formulier opslaan</td>
-      <td>Hiermee slaat u het formulier op.</td>
+      <td>Hiermee kan de gebruiker het formulier opslaan als concept met de component Concepten en verzendingen van Forms Portal. </td>
     </tr>
     <tr>
-      <td>Formulier verzenden/opnieuw instellen</td>
-      <td>Hiermee verzendt of herstelt u het formulier.</td>
+      <td>Formulier verzenden</td>
+      <td>Hiermee verzendt u het formulier.</td>
+    </tr>
+    <tr>
+      <td>Formulier opnieuw instellen</td>
+      <td>Hiermee herstelt u het formulier.</td>
     </tr>
     <tr>
       <td>Instantie toevoegen/verwijderen</td>
@@ -208,10 +214,10 @@ Een formulier maken in de universele editor:
 1. Open een formulier in de Universal Editor om het te bewerken.
 1. Voeg de volgende formuliercomponenten toe:
    * Formulier voor belastingberekening (titel)
-   * Brutosalaris (tekstinvoer)
-   * Extra aftrek (tekstinvoer)
-   * Belastbaar inkomen (tekstinvoer)
-   * Te betalen belasting (tekstinvoer)
+   * Brutosalaris (invoer getal)
+   * Extra aftrek (invoer getal)
+   * Belastbaar inkomen (invoer van getal)
+   * Te betalen belasting (invoer aantal)
    * Verzenden (knop Verzenden)
 1. Verberg het formulierveld `Additional Deduction` door het `Properties` ervan te openen.
 
@@ -221,11 +227,10 @@ Een formulier maken in de universele editor:
 
 Nadat u het formulier hebt gemaakt, schrijft u de eerste regel om het veld `Additional Deduction` alleen weer te geven als het brutosalaris hoger is dan € 50.000. Een voorwaardelijke regel toevoegen:
 
-1. Open een formulier in de Universal Editor om het te bewerken.
-1. Selecteer de **[!UICONTROL Gross Salary]** component in de inhoudsboom en selecteer ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg).
+1. Open een vorm in Universele Redacteur voor het uitgeven en selecteer het **[!UICONTROL Gross Salary]** gebied in de inhoudsboom en selecteer ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg). U kunt het veld **[!UICONTROL Gross Salary]** ook rechtstreeks in het deelvenster **[!UICONTROL Forms Object]** selecteren.
    ![ de Redacteur example1 van de Regel ](/help/edge/docs/forms/assets/rule-editor3.png)
 De visuele interface van de Redacteur van de Regel verschijnt.
-1. Klik op **[!UICONTROL Create]** om de regeleditor te starten.
+1. Klik op **[!UICONTROL Create]** om regels te maken.
    ![ de Redacteur example2 van de Regel ](/help/edge/docs/forms/assets/rule-editor4.png)
 Standaard is het regeltype `Set Value Of` geselecteerd. U kunt het geselecteerde object niet wijzigen of wijzigen, maar u kunt de regelvervolgkeuzelijst gebruiken om een ander regeltype te selecteren.\
    ![ de Redacteur example3 van de Regel ](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,7 +263,8 @@ De regel verschijnt als volgt in de Redacteur van de Regel.
 
 Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het verschil tussen `Gross Salary` en `Additional Deduction` (indien van toepassing). Voer de volgende stappen uit om een berekeningsregel toe te voegen aan het veld **[!UICONTROL Taxable Income]** :
 
-1. Op auteurswijze, selecteer het **[!UICONTROL Taxable Income]** gebied en selecteer ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
+1. Op auteurswijze, selecteer het **[!UICONTROL Taxable Income]** gebied en selecteer ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit. U kunt het veld **[!UICONTROL Taxable Income]** ook rechtstreeks in het deelvenster **[!UICONTROL Forms Object]** selecteren.
+1. Selecteer vervolgens **[!UICONTROL Create]** om de regel te maken.
    ![ de Redacteur example13 van de Regel ](/help/edge/docs/forms/assets/rule-editor16.png)
 1. Selecteer **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]** . Er wordt een veld voor het schrijven van wiskundige expressies geopend.
    ![ de Redacteur example14 van de Regel ](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -276,7 +282,7 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
 
    Voeg nu een regel voor het veld `Tax Payable ` toe, die wordt bepaald door het belastbare inkomen te vermenigvuldigen met het belastingtarief. Veronderstel voor eenvoud een vast belastingtarief van `10%`.
 
-1. Op auteurswijze, selecteer het **[!UICONTROL Tax Payable]** gebied en selecteer ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
+1. Op auteurswijze, selecteer het **[!UICONTROL Tax Payable]** gebied en selecteer ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit. Selecteer vervolgens **[!UICONTROL Create]** om regels te maken.
    ![ de Redacteur example16 van de Regel ](/help/edge/docs/forms/assets/rule-editor19.png)
 1. Selecteer **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]** . Er wordt een veld voor het schrijven van wiskundige expressies geopend.
    ![ de Redacteur example17 van de Regel ](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -364,9 +370,15 @@ U kunt als volgt de aangepaste functie in de regeleditor gebruiken:
 
    ![ Functie van de Douane in de Redacteur van de Regel ](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Voorproef de Vorm**: Voorproef uw vorm met de onlangs uitgevoerde functie.
+1. **Voorproef de vorm**: Voorproef uw vorm met de onlangs uitgevoerde functie.
 
-## Verwante artikelen
+## Aanvullende informatie
+
+>[!NOTE]
+>
+> In de Universal Editor wordt statische en dynamische import niet ondersteund in aangepaste functiescripts. U moet de volledige code toevoegen in het `../[blocks]/form/functions.js` -bestand.
+
+Dit artikel bevat beperkte informatie over de Rule Editor die beschikbaar is in de Universal Editor. Meer over de Redacteur van de Regel en douanefuncties leren, verwijs naar de volgende artikelen:
 
 {{see-also-rule-editor}}
 
@@ -375,7 +387,7 @@ U kunt als volgt de aangepaste functie in de regeleditor gebruiken:
 * [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publish uw formulier en begin gegevens te verzamelen](/help/edge/docs/forms/publish-forms.md)
+* [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
 * [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
