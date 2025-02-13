@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1394'
 ht-degree: 0%
 
 ---
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 [![ krijgen om onze hoofd-loze CMS met 30 dagproef te kennen ](./assets/aem-headless-trial-promo.png){align="left"} ](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
-## Authoring Edge Delivery Services {#edge-delivery-authoring}
+## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
-[!BADGE  voor het ontwerpen AEM inhoud voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM inhoud voor Edge Delivery Services ontwerpen"}
+[!BADGE  voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
 
 ## Zie ook {#see-also}
 
-* [Een AEM adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
-* [Een AEM adaptief formulier toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Thema&#39;s toepassen op een AEM adaptief formulier](/help/forms/using-themes-in-core-components.md)
-* [ voegt componenten aan een AEM Aangepaste Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components) toe
-* [CAPTCHA gebruiken in een AEM adaptieve vorm](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Een PDF-versie (DoR) van een AEM adaptief formulier genereren](/help/forms/generate-document-of-record-core-components.md)
+* [Een AEM-adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
+* [Een AEM Adaptive Form toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Thema&#39;s toepassen op een AEM-adaptief formulier](/help/forms/using-themes-in-core-components.md)
+* [ voegt componenten aan een Aangepaste Vorm van AEM toe ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [CAPTCHA gebruiken in een AEM-adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Een PDF-versie (DoR) van een AEM Adaptive Form genereren](/help/forms/generate-document-of-record-core-components.md)
 * [Een AEM adaptief formulier vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Adobe Analytics inschakelen voor een adaptief formulier om het formuliergebruik bij te houden](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Aangepast formulier verbinden met Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -30,12 +30,12 @@ ht-degree: 0%
 * [Adaptief formulier aansluiten op Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Adaptief formulier aansluiten op Microsoft Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
 * [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Adobe Sign gebruiken in een AEM adaptief formulier](/help/forms/working-with-adobe-sign.md)
+* [Aanmelden bij AEM Adaptief formulier gebruiken](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
 * [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Verzend AanpassingsGegevens van de Vorm naar een eindpunt REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
-* [Adaptieve formuliergegevens naar AEM workflow verzenden](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [Forms Portal gebruiken om AEM Adaptive Forms op een AEM website weer te geven](/help/forms/configure-forms-portal.md)
+* [Adaptieve formuliergegevens verzenden naar AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Forms Portal gebruiken om AEM Adaptive Forms weer te geven op een AEM-website](/help/forms/configure-forms-portal.md)
 * [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
 * [Adaptieve Forms vergelijken](/help/forms/compare-forms.md)
 
@@ -43,7 +43,8 @@ ht-degree: 0%
 ## Handelingen voor het verzenden van adaptieve formulieren {#af-submit-action}
 
 * [E-mail verzenden](/help/forms/configure-submit-action-send-email.md)
-* [Verzenden naar SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Verzenden naar SharePoint-documentbibliotheek](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Verzenden naar SharePoint-lijst](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Verzenden met gebruik van formuliergegevensmodel](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Verzenden naar REST-eindpunt](/help/forms/configure-submit-action-restpoint.md)
@@ -52,7 +53,7 @@ ht-degree: 0%
 * [Verzenden naar Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Verzenden naar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
-* [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Een adaptief formulier verbinden met Microsoft](/help/forms/configure-msdynamics.md)
 * [Een adaptief formulier verbinden met Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Aangepaste verzendactie maken](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
@@ -61,7 +62,7 @@ ht-degree: 0%
 * [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publish uw formulier en begin gegevens te verzamelen](/help/edge/docs/forms/publish-forms.md)
+* [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
 * [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
@@ -152,8 +153,8 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 
 * [Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
 * [ vorm vormen om met Marketo Engage te integreren ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Gegevensbron van Marketo Engage configureren voor bestaande adaptieve Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [De handeling Verzenden naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Marketo Engage-gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [De verzendactie naar Marketo Engage configureren voor bestaande formulieren](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP Lijst van gewenste personen en front-end pijpleidingen {#allowlist-frontend-pipeline}
 
@@ -193,21 +194,21 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >* Laat IP Lijsten van gewenste personen niet toe.
 >* [ stel uw eigen instantie van de Universele Dienst van de Redacteur in werking ](/help/implementing/universal-editor/local-dev.md).
 
-## Werken met Dynamic Media {#work-with-dynamic-media}
+## Werken met dynamische media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->Ben je nieuw voor Dynamic Media? Voor een snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
+>Bent u nieuw aan Dynamische Media? Voor een snel, overzicht op hoog niveau van Dynamische Media, zie [ Werk met Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md).
 
-## Zie ook voor Dynamic Media {#see-also-dm}
+## Zie ook voor dynamische media {#see-also-dm}
 
 >[!NOTE]
 >
->* Ben je nieuw voor Dynamic Media? Voor een snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
+>* Bent u nieuw aan Dynamische Media? Voor een snel, overzicht op hoog niveau van Dynamische Media, zie [ Werk met Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Volg [ Beste praktijken van Dynamic Media ](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
+>* Volg [ Dynamische Beste praktijken van Media ](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
 >
->* Probeer uit de beeldmogelijkheden van Dynamic Media met het [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Probeer uit Dynamische het beeldmogelijkheden van Media met het [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
 >* Verzeker vlotte videoplayback met [ adaptieve video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
@@ -216,7 +217,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >* Automatiseer het bebouwen van [ video&#39;s met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
 >* Lever een [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Andere [ Dynamic Media middelbank ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Andere [ Dynamische middelbank van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Een ondersteuningsticket vastleggen {#support-ticket}
 
@@ -233,11 +234,11 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
    * URL van de live website. Bijvoorbeeld: `www.mydomain.com` .
    * URL van de oorspronkelijke website (`.hlx` URL).
 
-## Universele editor heeft de voorkeur boven SPA Editor {#ue-over-spa}
+## De universele Editor heeft de voorkeur boven de SPA-editor {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->De SPA Redacteur [ is afgekeurd ](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) voor nieuwe projecten. Het blijft door Adobe voor bestaande projecten gesteund, maar mag niet voor nieuwe projecten worden gebruikt. De voorkeur gaat nu uit naar editors voor het beheer van inhoud zonder kop in AEM:
+>De redacteur van het KUUROORD [ is afgekeurd ](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
 >* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor visueel het uitgeven van hoofdloze inhoud.
 >* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

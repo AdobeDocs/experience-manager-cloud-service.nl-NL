@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 2%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 2%
          + [Vorm  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Aangepast formulier aansluiten op Salesforce-toepassing met OAuth 2.0-clientreferentiestroom](/help/forms/aem-forms-salesforce-integration.md)
          + [Vorm  [!DNL Azure]  opslag](/help/forms/configure-azure-storage.md)
-         + [Vorm  [!DNL Microsoft Dynamics 365]  en  [!DNL Salesforce]  de clouddiensten](/help/forms/configure-msdynamics-salesforce.md)
+         + [Vorm  [!DNL Microsoft Dynamics 365]  wolkendiensten](/help/forms/configure-msdynamics.md)
+         + [Salesforce-cloudservices configureren](/help/forms/configure-salesforce.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 2%
             + [Handeling verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-actions-core-components.md)
             + [Een adaptief formulier verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Een adaptief formulier verzenden naar Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [Een adaptief formulier verbinden met Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [SharePoint-site configureren met beperkte toegang met behulp van machtigingsbereik](/help/forms/configure-sharepoint-site-limited-access.md)
+            + Een adaptief formulier aansluiten op Microsoft® SharePoint {#connect-to-sharepoint}
+               + [Een adaptief formulier verbinden met Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [Verzenden naar SharePoint-documentbibliotheek](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [Verzenden naar SharePoint-lijst](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [SharePoint-site configureren met beperkte toegang met behulp van machtigingsbereik](/help/forms/configure-sharepoint-site-limited-access.md)
             + [AEM Adaptief formulier integreren met AEM Workflow](/help/forms/configure-submit-action-workflow.md)
             + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)

@@ -5,7 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+hide: true
+hidefromtoc: true
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 1%
@@ -16,7 +18,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ![ gegeven-integratie ](assets/data-integeration.png)
@@ -117,7 +119,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
 ## Cloudservice configureren voor uw [!DNL Microsoft Dynamics] -service {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een OData-service in [!DNL Experience Manager] as a Cloud Service wilt configureren, moet u ervoor zorgen dat u over de servicebasis-URL voor de service beschikt en moet u het volgende doen:
+De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een OData-service wilt configureren in [!DNL Experience Manager] as a Cloud Service, moet u ervoor zorgen dat u de servicebasis-URL voor de service hebt en moet u het volgende doen:
 
 <!--The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your [!DNL Microsoft Dynamics] service, do the following.-->
 
@@ -147,7 +149,7 @@ Formuliergegevensmodel (FDM)
 
    U bent het Model van de Gegevens van de Vorm de pagina van de de dienstconfiguratie van de wolk, die een bericht toont dat de configuratie OData met succes wordt bewaard.
 
-De de wolkendienst van de Cloud Service van de Dynamica van MS (OData Service) wordt gevormd en met uw dienst van de Dynamica verbonden. Formuliergegevensmodel (FDM)
+De MS Dynamics OData Cloud Service (OData Service)-cloudservice is geconfigureerd en verbonden met uw Dynamics-service. Formuliergegevensmodel (FDM)
 
 ## Formuliergegevensmodel (FDM) maken {#create-form-data-model}
 
@@ -171,7 +173,7 @@ Vervolgens kunt u een adaptief formulier-gebaseerd formuliergegevensmodel (FDM) 
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
-U kunt [ vormen het Model van Gegevens van de Vorm verzendt Actie ](/help/forms/using-form-data-model.md) voor een AanpassingsVorm om gegevens naar de Dynamica OData van Microsoft te verzenden.
+U kunt [ vormen het Model van Gegevens van de Vorm verzendt Actie ](/help/forms/using-form-data-model.md) voor een AanpassingsVorm om gegevens naar Microsoft Dynamics OData te verzenden.
 
 Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van de Vorm (FDM) in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens ](data-integration.md).[
 
