@@ -3,7 +3,7 @@ title: Hoe te om Microsoft Dynamics 365 uit de doos gegevensmodellen van de vorm
 description: Leer hoe u Microsoft Dynamics 365 kunt integreren met Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
@@ -68,8 +68,9 @@ Creeer een rekening in het **Centrum van Admin van het Platform van de Macht** a
 
 Zodra u de hierboven vermelde voorwaarden hebt geconfigureerd, kunt u doorgaan met het integreren van Adaptive Forms met Microsoft® Dynamics 365. Voer de volgende stappen uit om gegevens naar Microsoft® Dynamics 365 te verzenden wanneer het formulier wordt verzonden:
 
-[1. Configuratie van cloudservice configureren voor Microsoft Dynamics ](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
-[ 2. Creeer het Model van de Gegevens van de Vorm (FDM) ](#2-create-form-data-model-fdm)
+[1. Configuratie van cloudservice voor Microsoft Dynamics configureren](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
+[2. Formuliergegevensmodel (FDM) maken](#2-create-form-data-model-fdm)
 
 ### 1. Configuratie van cloudservice voor Microsoft Dynamics configureren
 
