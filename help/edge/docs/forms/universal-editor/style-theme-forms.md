@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 0%
@@ -53,8 +53,7 @@ Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het
 * **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door `/blocks/form/form.css file` uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. &lt;!—Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
 
 * **CSS het Stijlen voor Forms**: Om ervoor te zorgen dat uw stijlen correct worden toegepast, verpak uw vorm-specifieke CSS binnen de `main .form form` selecteur. Zo voorkomt u dat er conflicten ontstaan met andere delen van de website en dat uw stijlen alleen zijn bedoeld voor de formulierelementen binnen het hoofdinhoudsgebied.
-
-  Voorbeeld:
+Voorbeeld:
 
   ```css
   main .form form input {
@@ -68,9 +67,8 @@ Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
-## Structuur van componenten
+  
+## Componentstructuur
 
 Het Adaptive Forms Block biedt een consistente HTML-structuur voor verschillende formulierelementen, waardoor de opmaak en het beheer worden vereenvoudigd. U kunt de componenten manipuleren met CSS voor opmaakdoeleinden.
 
