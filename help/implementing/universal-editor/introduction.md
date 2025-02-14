@@ -4,7 +4,7 @@ description: Leer hoe u met de Universal Editor het bewerken van 'what-you-see-i
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
+source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -20,9 +20,9 @@ De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adob
 
 De Universele Redacteur verstrekt een efficiënte en intuïtieve in-context auteurservaring die minimale opleiding vereist. Met deze functie kunnen auteurs hun inhoud rechtstreeks beheren in de context van de webervaring en exact aangeven hoe deze wordt weergegeven aan de bezoekers. Aangezien het een ware redacteur als dienst en over het algemeen flexibeler is, is het van plan uiteindelijk de Redacteur van de Pagina te vervangen.
 
-Auteurs profiteren van de flexibiliteit van de Universal Editor, omdat deze ondersteuning biedt voor dezelfde visuele bewerking voor alle vormen van AEM inhoud: bewerking op plaats en compositie van de layout is mogelijk op dezelfde manier voor zowel inhoudfragmenten als paginacomponenten. De twee vormen van inhoud kunnen zelfs worden uitgegeven wanneer het tonen zij aan zij in een Webervaring, zonder auteurs te moeten van context veranderen. Dit is een enorme verbetering in vergelijking met vorige editors in AEM slechts één type inhoud.
+Auteurs profiteren van de flexibiliteit van de Universal Editor, omdat deze ondersteuning biedt voor dezelfde visuele bewerking voor alle vormen van AEM-inhoud: bewerking op plaats en compositie van de layout is mogelijk op dezelfde manier voor zowel inhoudfragmenten als paginacomponenten. De twee vormen van inhoud kunnen zelfs worden uitgegeven wanneer het tonen zij aan zij in een Webervaring, zonder auteurs te moeten van context veranderen. Dit is een enorme verbetering in vergelijking met eerdere editors in AEM die slechts één type inhoud ondersteunden.
 
-Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat deze ook werkelijke ontkoppeling van de implementatie ondersteunt. Het stelt ontwikkelaars in staat om vrijwel elk kader of architectuur van hun keuze te gebruiken, zonder enige SDK of technologiebeperkingen op te leggen. Deze flexibiliteit maakt het zelfs gemakkelijk om bestaande Web-apps voor de universele redacteur zonder het moeten te moeten opnieuw opbouwen.
+Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat deze ook werkelijke ontkoppeling van de implementatie ondersteunt. Het stelt ontwikkelaars in staat om vrijwel elk kader of elke architectuur van hun keuze te gebruiken, zonder SDK- of technologiebeperkingen op te leggen. Deze flexibiliteit maakt het zelfs gemakkelijk om bestaande Web-apps voor de universele redacteur zonder het moeten te moeten opnieuw opbouwen.
 
 ## True Universal {#universal}
 
@@ -44,11 +44,11 @@ De vereisten voor een implementatie om de Universele Redacteur te gebruiken zijn
 
 ### Willekeurige inhoud {#any-content}
 
-De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als de AEM pagina-editor. Maar de Universele Redacteur staat inhoudsauteurs toe om **om het even welke** inhoud visueel en in context uit te geven en steunt:
+De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als de AEM-pagina-editor. Maar de Universele Redacteur staat inhoudsauteurs toe om **om het even welke** inhoud visueel en in context uit te geven en steunt:
 
-* **AEM de Structuren van de Pagina** - genestelde `cq:Components` van `cq:Pages`, met inbegrip van de Fragmenten van de Ervaring
-* **AEM de Fragmenten van de Inhoud** - geef inhoud van de Fragmenten van de Inhoud uit aangezien zij in-context van de ervaring verschijnen.
-* **Documenten** - het Bewijs van concepten heeft getoond dat ook Word, Excel, de Documenten van Google of de documenten van de Prijsverhoging de zelfde manier (dit is WIP) kunnen ook worden uitgegeven.
+* **de Structuren van de Pagina van AEM** - genestelde `cq:Components` van `cq:Pages`, met inbegrip van de Fragmenten van de Ervaring
+* **de Fragmenten van de Inhoud van AEM** - geef inhoud van de Fragmenten van de Inhoud uit aangezien zij in-context van de ervaring verschijnen.
+* **Documenten** - het bewijs van concepten heeft getoond dat ook Word, Excel, Google Docs of de documenten van de Prijsverhoging de zelfde manier (dit is WIP) kunnen ook worden uitgegeven.
 
 ### Willekeurig aspect {#any-aspect}
 
@@ -86,11 +86,11 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 
 Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent en de implementatie ervan in uw eigen projecten doorvoert.
 
-* Niet meer dan 25 AEM bronnen (Content Fragments, pages, Experience Fragments, Assets, enz.) moeten verwijzingen zijn als instrumentatie op één pagina.
+* Niet meer dan 25 AEM-bronnen (Content Fragments, pages, Experience Fragments, Assets, enz.) mogen als instrumentatie op één pagina worden gebruikt.
 * AEM as a Cloud Service en [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) zijn de enige gesteunde AEM achtergronden.
 * AEM as a Cloud Service-release `2023.8.13099` of hoger is vereist.
-* Inhoudsauteurs moeten hun eigen individuele Experience Cloud-accounts hebben.
-* Als onderdeel van AEM ondersteunt de Universal Editor dezelfde desktopbrowsers als AEM.
+* Inhoudsauteurs moeten een eigen Experience Cloud-account hebben.
+* Als deel van AEM, steunt de Universele Redacteur [ zelfde Desktopbrowsers zoals AEM.](/help/overview/supported-platforms.md)
    * Mobiele versies van deze browsers worden niet ondersteund.
 
 {{ue-ip-allow-lists}}

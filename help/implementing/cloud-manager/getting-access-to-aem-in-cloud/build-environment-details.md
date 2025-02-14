@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
+source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1526'
 ht-degree: 0%
 
 ---
@@ -17,18 +17,22 @@ ht-degree: 0%
 
 Meer informatie over de Cloud Manager-ontwikkelomgeving en hoe deze uw code bouwt en test.
 
+>[!TIP]
+>
+>In dit document wordt de Cloud Manager-ontwikkelomgeving besproken voor het ontwikkelen van uw AEM as a Cloud Service-project. Voor details op cliëntplatforms die door AEM as a Cloud Service voor inhoud creatie worden gesteund, te zien gelieve het document [ Gesteunde Platforms van de Cliënt.](/help/overview/supported-platforms.md)
+
 ## Omgevingsdetails samenstellen {#build-environment-details}
 
 Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmilieu.
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
-   * De Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP ](#https-maven) te gebruiken.
+   * Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP ](#https-maven) te gebruiken.
 <!-- OLD Removed 1/16/25 * The Java versions installed are Oracle JDK 11.0.22 and Oracle JDK 8u401. -->
-* De geïnstalleerde versies van Java zijn Oracle JDK 11.0.22, Oracle JDK 17.0.10, en Oracle JDK 21.0.4.
+* De geïnstalleerde Java-versies zijn Oracle JDK 11.0.22, Oracle JDK 17.0.10 en Oracle JDK 21.0.4.
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **BELANGRIJK:** Door gebrek, wordt de `JAVA_HOME` milieuvariabele geplaatst aan `/usr/lib/jvm/jdk1.8.0_401`, die Oracle JDK 8u401 bevat. ***Dit gebrek zou voor AEM Projecten van de Wolk moeten worden met voeten getreden om JDK 21 (aangewezen), 17, of 11*** te gebruiken. Zie [ Plaatsend de Geweven sectie van de Versie JDK ](#alternate-maven-jdk-version) voor meer details.
+* **BELANGRIJK:** Door gebrek, wordt de `JAVA_HOME` milieuvariabele geplaatst aan `/usr/lib/jvm/jdk1.8.0_401`, die Oracle JDK 8u401 bevat. ***Dit gebrek zou voor de Projecten van de Wolk van AEM moeten worden met voeten getreden om JDK 21 (aangewezen), 17, of 11*** te gebruiken. Zie [ Plaatsend de Geweven sectie van de Versie JDK ](#alternate-maven-jdk-version) voor meer details.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
    * `bzip2`
    * `unzip`
@@ -41,7 +45,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven wordt op systeemniveau geconfigureerd met een `settings.xml` -bestand dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met een profiel met de naam `adobe-public` . (Zie ](https://repo1.maven.org/) voor meer details van de Adobe Openbare Maven Bewaarplaats [.)
+* Maven wordt geconfigureerd op systeemniveau met een `settings.xml` -bestand. Dit bestand bevat automatisch de openbare Adobe-gegevensopslagruimte met een profiel met de naam `adobe-public` . (Zie [ Openbare Bewaarplaats van Adobe ](https://repo1.maven.org/) voor meer details).
 
 >[!NOTE]
 >
@@ -53,7 +57,7 @@ Cloud Manager [ versie 2023.10.0 ](/help/implementing/cloud-manager/release-note
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 
-Om ervoor te zorgen dat de bijgewerkte versie probleemloos wordt uitgevoerd, raadt Adobe gebruikers aan hun Geweven opslagplaatsen bij te werken om HTTPS in plaats van HTTP te gebruiken. Deze aanpassing sluit aan op de groeiende verschuiving van de industrie naar veilige communicatieprotocollen en helpt een veilig en betrouwbaar bouwproces in stand te houden.
+Voor een vlotte ervaring met de bijgewerkte versie raadt Adobe gebruikers aan hun Geweven opslagplaatsen bij te werken om HTTPS in plaats van HTTP te gebruiken. Deze aanpassing sluit aan op de groeiende verschuiving van de industrie naar veilige communicatieprotocollen en helpt een veilig en betrouwbaar bouwproces in stand te houden.
 
 <!-- OLD below Removed 1/16/25
 
@@ -71,11 +75,11 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 ### Een specifieke Java-versie gebruiken {#using-java-support}
 
-In het Cloud Manager-ontwikkelproces wordt standaard gebruikgemaakt van Oracle 8 JDK om projecten te maken, maar AEM Cloud Service-klanten moeten de JDK-versie van Maven voor uitvoering instellen op 21 (voorkeur), 17 of 11.
+In het Cloud Manager-ontwikkelproces wordt standaard gebruikgemaakt van de Oracle 8 JDK om projecten te maken, maar klanten van AEM Cloud Service moeten de JDK-versie van Maven voor uitvoering instellen op 21 (voorkeur), 17 of 11.
 
 #### De Maven JDK-versie instellen {#alternate-maven-jdk-version}
 
-Als u de Git-uitvoeringsmodus JDK wilt instellen, maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagplaats die door de pijplijn wordt gebruikt. Bewerk het bestand zodat het alleen de tekst `21` of `17` bevat. Hoewel Cloud Manager ook de waarde `8` accepteert, wordt deze versie niet meer ondersteund voor AEM Cloud Service-projecten. Eventuele andere waarden worden genegeerd. Als `21` of `17` is opgegeven, wordt Oracle Java 21 of Oracle Java 17 gebruikt.
+Als u de Git-uitvoeringsmodus JDK wilt instellen, maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagplaats die door de pijplijn wordt gebruikt. Bewerk het bestand zodat het alleen de tekst `21` of `17` bevat. Hoewel Cloud Manager ook de waarde `8` accepteert, wordt deze versie niet meer ondersteund voor AEM Cloud Service-projecten. Eventuele andere waarden worden genegeerd. Wanneer `21` of `17` wordt opgegeven, wordt Oracle Java 21 of Oracle Java 17 gebruikt.
 
 
 #### Vereisten voor migratie naar gebouwen met Java 21 of Java 17 {#prereq-for-building}
@@ -99,7 +103,7 @@ De volgende functies werken mogelijk niet correct wanneer deze worden geïmpleme
 
 #### Runtime-vereisten {#runtime-requirements}
 
-De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt geleidelijk ook toegepast op Java 11-builds (zie de opmerking hieronder). U kunt de Java 21-update alleen ontvangen als AEM versie 17098 of recenter is. Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
+De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt geleidelijk ook toegepast op Java 11-builds (zie de opmerking hieronder). Er moet een omgeving zijn in AEM versie 17098 of recenter om de Java 21-update te kunnen ontvangen. Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
 
 Bibliotheekupdates kunnen altijd worden toegepast, omdat ze compatibel blijven met oudere Java-versies.
 
@@ -109,9 +113,9 @@ Werk het gebruik van het pakket van Java `org.objectweb.asm` bij, vaak gebundeld
 * **Minimale versie van Groovy:**
 Werk het gebruik van de Java-pakketten `org.apache.groovy` of `org.codehaus.groovy` bij naar versie 4.0.22 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
 
-  Deze bundel kan indirect worden omvat door dergebiedsdelen zoals de AEM Groovy Console toe te voegen.
+  Deze bundel kan indirect worden omvat door dergebiedsdelen zoals de Console van AEM Groovy toe te voegen.
 
-De AEM Cloud Service SDK is compatibel met Java 21 en kan worden gebruikt om de compatibiliteit van uw project met Java 21 te valideren voordat een Cloud Manager-pijpleiding wordt uitgevoerd.
+De AEM Cloud Service SDK is compatibel met Java 21 en kan worden gebruikt om de compatibiliteit van uw project met Java 21 te valideren voordat een Cloud Manager-pijplijn wordt uitgevoerd.
 
 * **geef een runtime parameter uit:**
 Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `crx-quickstart/bin/start` of `crx-quickstart/bin/start.bat` ) vanwege de parameter `MaxPermSize` . Als remedie verwijdert u `-XX:MaxPermSize=256M` uit het script of definieert u de omgevingsvariabele `CQ_JVM_OPTS` en stelt u deze in op `-Xmx1024m -Djava.awt.headless=true` .
@@ -127,7 +131,7 @@ Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `cr
 
 De volgende aanpassingen zijn vereist om het project te kunnen bouwen met Java 21 en Java 17. Ze kunnen al worden bijgewerkt voordat u Java 21 en Java 17 uitvoert, omdat ze compatibel zijn met oudere Java-versies.
 
-AEM Cloud Service-klanten wordt aangeraden hun projecten zo snel mogelijk met Java 21 te maken om te profiteren van nieuwe taalfuncties.
+Klanten van AEM Cloud Service wordt aangeraden hun projecten zo snel mogelijk met Java 21 te maken om te profiteren van nieuwe taalfuncties.
 
 * **Minimale versie van `bnd-maven-plugin`:**
 Werk het gebruik van `bnd-maven-plugin` naar versie 6.4.0 bij om ondersteuning voor nieuwere JVM-runtimes te garanderen.
@@ -265,7 +269,7 @@ Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren
 
 >[!NOTE]
 >
->Als u een systeempakket op deze manier installeert, wordt dit niet geïnstalleerd in de runtimeomgeving die voor het uitvoeren van Adobe Experience Manager wordt gebruikt. Als u een systeempakket nodig hebt dat op de AEM-omgeving is geïnstalleerd, neemt u contact op met uw Adobe-vertegenwoordiger.
+>Als u een systeempakket op deze manier installeert, wordt dit niet geïnstalleerd in de runtimeomgeving die voor het uitvoeren van Adobe Experience Manager wordt gebruikt. Neem contact op met uw Adobe-vertegenwoordiger als u een systeempakket op de AEM-omgeving wilt installeren.
 
 >[!TIP]
 >
