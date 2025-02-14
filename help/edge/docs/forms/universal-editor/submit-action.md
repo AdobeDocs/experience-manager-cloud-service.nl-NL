@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -140,3 +140,8 @@ Met de optie Verzenden kunt u een bericht Actie verzenden configureren bij het v
 1. Bij klikken ziet u de volgende optie:
    * **[!UICONTROL On Submit]**: Bij Verzenden kunt u een bericht aanpassen dat wordt weergegeven wanneer een formulier wordt verzonden. Standaard wordt een aangepast bericht &quot;Bedankt voor het verzenden van het formulier&quot; weergegeven aan de gebruiker wanneer een formulier is verzonden.
 U kunt ook het Dank u bericht op vormvoorlegging aanpassen, door de optie aan **[!UICONTROL Show message]** te selecteren, en uw bericht toe te voegen/uit te geven in de Rich Text **Redacteur**.
+
+
+## Zie ook
+
+{{see-more-forms-eds}}

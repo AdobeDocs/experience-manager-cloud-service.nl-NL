@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 0%
@@ -46,6 +46,29 @@ Het begrip van [ fundamentele CSS concepten ](https://www.w3schools.com/css/css_
 * [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd.
 * Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen tot stand te brengen.
 
+## Een formulier opmaken voor Adaptief Forms-blok
+
+Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
+
+* **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door `/blocks/form/form.css file` uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. &lt;!—Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
+
+* **CSS het Stijlen voor Forms**: Om ervoor te zorgen dat uw stijlen correct worden toegepast, verpak uw vorm-specifieke CSS binnen de `main .form form` selecteur. Zo voorkomt u dat er conflicten ontstaan met andere delen van de website en dat uw stijlen alleen zijn bedoeld voor de formulierelementen binnen het hoofdinhoudsgebied.
+
+  Voorbeeld:
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## Structuur van componenten
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**Stijlend een vorm voor het AanpassingsBlok van Forms**
-
-Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
-
-* **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door `/blocks/form/form.css file` uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. &lt;!—Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
-
-* **CSS het Stijlen voor Forms**: Om ervoor te zorgen dat uw stijlen correct worden toegepast, verpak uw vorm-specifieke CSS binnen de `main .form form` selecteur. Zo voorkomt u dat er conflicten ontstaan met andere delen van de website en dat uw stijlen alleen zijn bedoeld voor de formulierelementen binnen het hoofdinhoudsgebied.
-
-  Voorbeeld:
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 
