@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
-
 
 # Handeling Adaptief verzenden van formulier
 
@@ -44,7 +44,7 @@ Om een REST eindpunt te vormen:
 1. Geef de URL van het REST-eindpunt op.
 1. U kunt **POST verzoek** ook toelaten en URL verstrekken om het verzoek te posten.
 
-{breedte=50%, hoogte=50%} ![ laat postverzoek voor adaptieve vormen ](/help/forms/assets/enable-post-request-ue.png) toe
+![ laat postverzoek voor adaptieve vormen ](/help/forms/assets/enable-post-request-ue.png) toe
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Met Actie voor verzenden van e-mail kunt u een e-mail verzenden naar een of meer
 1. Het helpt de workflow te stroomlijnen door formulierverzendingen rechtstreeks te integreren in e-mailmeldingen.
 1. Het helpt organisaties de e-mailinhoud aanpassen, zodat het geschikt wordt gemaakt voor specifieke communicatiebehoeften.
 
-{width=50%, height=50%} ![ Adaptieve eigenschappen van de Vorm in Universele Redacteur ](/help/forms/assets/submit-actions-ue.png)
+![ de Aanpassings eigenschappen van de Vorm in Universele Redacteur ](/help/forms/assets/submit-actions-ue.png)
 
 
 Een verzendactie configureren als een e-mail voor het verzenden van het formulier:
@@ -140,5 +140,3 @@ Met de optie Verzenden kunt u een bericht Actie verzenden configureren bij het v
 1. Bij klikken ziet u de volgende optie:
    * **[!UICONTROL On Submit]**: Bij Verzenden kunt u een bericht aanpassen dat wordt weergegeven wanneer een formulier wordt verzonden. Standaard wordt een aangepast bericht &quot;Bedankt voor het verzenden van het formulier&quot; weergegeven aan de gebruiker wanneer een formulier is verzonden.
 U kunt ook het Dank u bericht op vormvoorlegging aanpassen, door de optie aan **[!UICONTROL Show message]** te selecteren, en uw bericht toe te voegen/uit te geven in de Rich Text **Redacteur**.
-
-
