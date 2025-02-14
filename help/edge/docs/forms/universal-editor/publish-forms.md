@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ U kunt om het even welke **op EDS-Gebaseerde Aangepaste Vorm** aan Edge Delivery
 1. Om de van de vorm te controleren publiceer status, klik **opnieuw publiceren**.
    ![ publiceer Status ](/help/forms/assets/publish-status.png)
 
-1. **unpublish** een vorm, open uw vorm in de redacteur, klik het drie-punt menu in de hoger-juiste hoek en selecteer **unpublish**.
+1. **unpublish** een vorm, open uw vorm in de redacteur, klik het drie-punt menu in de hoger-juiste hoek en klik **unpublish**.
    ![ Unpublish ](/help/forms/assets/unpublish--form.png)
 
 ## Formulierverzending in Edge Delivery inschakelen door een referentiefilter voor AEM Publisher te configureren

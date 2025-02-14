@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Om een REST eindpunt te vormen:
 
 {breedte=50%, hoogte=50%} ![ laat postverzoek voor adaptieve vormen ](/help/forms/assets/enable-post-request-ue.png) toe
 
->
+>[!NOTE]
 >
 > * Als u gegevens naar een interne server wilt posten, geeft u het pad van de bron op. De gegevens worden naar het pad van de bron gepost. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 > * Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
