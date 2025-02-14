@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
+source-git-commit: 770cbea467128ce00465a4094efe3a07fc59eca8
 workflow-type: tm+mt
-source-wordcount: '6077'
+source-wordcount: '6071'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 2%
    + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
-         + [Opmerkingen bij de release 2024.11.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [Opmerkingen bij de release 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Opmerkingen bij de release 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [Opmerkingen bij de release 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
@@ -578,7 +577,6 @@ ht-degree: 2%
       + [Dynamic Media-nieuwsbrief archiveren door Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamische media instellen](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Werken met dynamische media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Dynamische media configureren](/help/assets/dynamic-media/config-dm.md)
       + [Optioneel - Dynamische media configureren, algemene instellingen](/help/assets/dynamic-media/dm-general-settings.md)
       + [Optioneel - Dynamische media configureren, Publicatie-instelling](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -710,7 +708,6 @@ ht-degree: 2%
       + [Migreer van  [!DNL AEM 6.5 Forms]  of vroeger aan  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
-      + [Aangepaste Forms publiceren met behulp van Publicatie beheren](/help/forms/manage-publication.md)
    + Aan de slag {#getting-started-forms}
       + [Gebruik hoofdletters en kleine letters en ontwikkelomgeving voor instellingen](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Het aanvraagformulier voor een lening maken](/help/forms/create-adaptive-form-tutorial.md)
@@ -1038,6 +1035,9 @@ ht-degree: 2%
          + [Regels toevoegen aan de Editor van regels](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [Aangepaste componenten maken](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [reCAPTCHA gebruiken in formulieren](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Handelingen verzenden](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Forms publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Opmaak van formulieren aanpassen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
       + Mogelijkheden {#advanced-features-edge-delivery-services-forms}
          + [Formulierfragmenten gebruiken](/help/edge/docs/forms/form-fragments.md)
          + [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
@@ -1211,9 +1211,9 @@ ht-degree: 2%
          + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL-certificaatfouten oplossen](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Domeintoewijzingen {#cdn-configurations}
+      + CDN-configuraties {#cdn-configurations}
          + [Een CDN-configuratie toevoegen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Domeintoewijzingen beheren](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [CDN-configuraties beheren](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP-Lijsten van gewenste personen {#ip-allow-lists}
          + [Inleiding aan IP Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
