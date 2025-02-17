@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1736'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste component maken in WYSIWYG Authoring
 
@@ -173,24 +173,25 @@ In dit voorbeeld, voegen wij de Waarde van de Stap als douanebezit aan de compon
 
 Om het de douanebezit van de Waarde van de Stap toe te voegen, voeg het componentenmodel met de volgende lijnen van code in het ` _<component>.json` dossier toe:
 
-```javascript
-    {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
-    }
-    ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+     &quot;javascript 
+     {
+     &quot;component&quot;: &quot;aantal&quot;, 
+     &quot;naam&quot;: &quot;stepValue&quot;, 
+     &quot;etiket&quot;: &quot;Step Value&quot;, 
+     &quot;valueType&quot;: &quot;aantal&quot;
+     
+    &quot;
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a ****. Hieronder volgt een uitsplitsing van elk veld:
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **component**: Specificeert het type van inputgebied dat in de dialoog van het Bezit wordt gebruikt. In dit geval geeft `number` aan dat het veld numerieke waarden accepteert.
+* **naam**: Het herkenningsteken voor het bezit, dat wordt gebruikt om het in de logica van de component van verwijzingen te voorzien. Hier vertegenwoordigt `stepValue` de step waarde die voor de waaier wordt geplaatst.
+* **etiket**: De vertoningsnaam van het bezit zoals gezien in de dialoog van het Bezit.
+* **valueType**: Bepaalt het gegevenstype dat voor het bezit wordt verwacht. `number` zorgt ervoor dat alleen numerieke invoer is toegestaan.
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+U kunt `stepValue` nu gebruiken als een aangepaste eigenschap in de JSON-eigenschappen van `range.js` en dynamisch gedrag implementeren op basis van de waarde ervan bij uitvoering.
+
+Het uiteindelijke bestand van `_range.json` ziet er daarom als volgt uit na het toevoegen van de componentdefinitie, het componentmodel en de aangepaste eigenschappen:
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 Nadat u de bovenstaande stappen hebt uitgevoerd, wordt de aangepaste component weergegeven in de lijst met componenten van het formulier in de Universal Editor. U kunt het vervolgens slepen en neerzetten in uw formuliersectie.
 
 ![ waaiercomponent ](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+In de onderstaande schermafbeelding worden de eigenschappen getoond van de component `range` die aan het componentmodel is toegevoegd, waarmee de eigenschappen worden opgegeven die de auteur van het formulier kan configureren.:
+
+![ Eigenschappen van waaiercomponent ](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 U kunt nu het runtimegedrag van uw aangepaste component definiëren door stijlen en functionaliteit toe te voegen.
 
