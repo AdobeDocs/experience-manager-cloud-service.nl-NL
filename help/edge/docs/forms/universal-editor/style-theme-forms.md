@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
+source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1844'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Het begrip van [ fundamentele CSS concepten ](https://www.w3schools.com/css/css_
 * [ Eigenschappen ](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer.
 * [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd.
 * Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen tot stand te brengen.
+
 
 ## Een formulier opmaken voor Adaptief Forms-blok
 
@@ -96,7 +97,7 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 * Invoer: het element `input` definieert het type gegevens dat moet worden ingevoerd. Bijvoorbeeld tekst, nummer, e-mail.
 * Beschrijving (optioneel): De `div` with class `field-description` biedt extra informatie of instructies voor de gebruiker.
 
-**de Structuur van HTML van het Voorbeeld**
+**Voorbeeld van de Structuur van HTML**
 
 ```HTML
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
