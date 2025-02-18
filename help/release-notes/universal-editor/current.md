@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2054.01.16
-description: Dit zijn de releaseopmerkingen voor de release 2025.01.16 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.02.17
+description: Dit zijn de releaseopmerkingen voor de release 2025.02.17 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: af04ad7e3f89247580c48c276cb371d78ac56a49
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.01.16 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.02.17 {#release-notes}
 
-Dit zijn de releaseopmerkingen voor de release van 16 januari 2025 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 17 februari 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,15 +22,14 @@ Dit zijn de releaseopmerkingen voor de release van 16 januari 2025 van de Univer
 
 ## Wat is er nieuw? {#what-is-new}
 
-* **Verdringing van de Bibliotheek CORS &lt; 3.0.0** - om toekomstige verenigbaarheid te verzekeren en veiligheid te verbeteren, steunt de Universele Redacteur nu exclusief versie 3.0.0 of hoger van
-  `@Adobe Express/universal-editor-cors` -bibliotheek.
-   * De bibliotheek wordt nu alleen geleverd via [`universal-editor-service.adobe.io/cors.js` ](http://universal-editor-service.adobe.io/cors.js) .
-   * Gebruikers krijgen een melding van een veroudering te zien wanneer ze een pagina openen die oudere versies van de CORS-bibliotheek gebruikt en hen vragen om bij te werken.
-* **Punt van de Uitbreiding voor het Bestaan van de Pagina** - [ Een nieuw uitbreidingspunt ](/help/implementing/universal-editor/customizing.md#extending) is geïntroduceerd voor uitbreidingen om in de zijspoor van de Universele het landen pagina van de Redacteur te verschijnen.
-   * Ontwikkelaars kunnen nu opgeven of extensies van toepassing zijn op de editor, de bestemmingspagina of beide, en bieden meer mogelijkheden voor aanpassen en gebruiken.
+* **publiceert aan voorproef** - wanneer het publiceren (of het unpublishing) van uw inhoud gebruikend de Universele Redacteur, kunt u nu kiezen als u aan uw voorproefmilieu naast uw publicatiemilieu wenst te publiceren
+   * Zo kunt u de inhoud vóór publicatie controleren.
+* **het Model en de filter kunnen in de componentendefinitie** worden bepaald - u kunt nu bepalen welk model en filter een component in de componentendefinitie gebruikt.
+   * Deze informatie kan centraal in de definitie worden gehandhaafd en te hoeven niet om de instrumentatie worden gespecificeerd.
+   * Op deze manier kunt u componenten over containers verplaatsen.
+* **de elementen van het Kind van containers worden impliciet beschouwd als componenten** - als een punt met a `data-aue-resource` als direct kind in een container wordt geplaatst wordt het beschouwd als een component en kan worden bewogen zonder het moeten `data-aue-behavior="component"` specificeren.
 
 ## Overige verbeteringen {#other-improvements}
 
-* **Vaste ongeldige URLs in Recente punten op de het landen pagina** - een kwesties werden opgelost waar URLs in de &quot;Recenten&quot;lijst op de het landen pagina van de Universele Redacteur werd getoond werd gebroken.
-* **Synchronisatie van het Thema in Verenigde Shell** - De Universele Redacteur synchroniseert nu dynamisch het thema met de Verenigde montages van Shell van het systeem en past automatisch tussen lichte en donkere wijzen aan.
-   * Dit zorgt voor een consistente visuele weergave aan de microvoorkanten, inclusief fragment- en assetselectoren.
+* **AEM 6.5 de Selecteur van Activa** - de 6.5 activaselecteur opent nu behoorlijk wanneer het runnen van de Universele Redacteur met AEM 6.5.
+
