@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1496'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Dit document biedt een overzicht van een modeldefinitie en van de velden en comp
 
 >[!TIP]
 >
->Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [ Universeel Overzicht van de Redacteur voor AEM Ontwikkelaars ](/help/implementing/universal-editor/developer-overview.md).
+>Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [ Universele Overzicht van de Redacteur voor de Ontwikkelaars van AEM ](/help/implementing/universal-editor/developer-overview.md).
 
 ## Modeldefinitiestructuur {#model-structure}
 
@@ -43,11 +43,41 @@ De modeldefinitie is een JSON-structuur, te beginnen met een array van modellen.
 
 Zie de **[sectie van Gebieden](#fields)** van dit document voor meer informatie over hoe te om uw `fields` serie te bepalen.
 
+U kunt een model aan een component op twee manieren verbinden: het gebruiken van de [ componentendefinitie ](#component-definition) of [ via de instrumentatie.](#instrumentation)
+
+### Koppelen met gebruik van componentdefinitie {#component-definition}
+
+Dit is de voorkeursmethode voor het koppelen van het model aan de component. Hierdoor kunt u de koppeling centraal behouden in de componentdefinitie en kunt u componenten over containers slepen.
+
+Neem de eigenschap `model` gewoon op in de aanwijzing `template` in het bestand component-definition.json.
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+Voor details, gelieve te zien de document [ Definitie van de Component.](/help/implementing/universal-editor/component-definition.md)
+
+### Koppeling met behulp van instrumentatie {#instrumentation}
+
 Als u de modeldefinitie met een component wilt gebruiken, kunt u het attribuut `data-aue-model` gebruiken.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>De Universele Redacteur controleert eerst of een model via de instrumentatie wordt verbonden en gebruikt dat alvorens de componentendefinitie te controleren. Dit betekent:
+>
+>* Projecten die de koppeling naar het model via de instrumenten hebben geïmplementeerd, zullen ongewijzigd blijven werken en hoeven niet te worden gewijzigd.
+>* Als u het model in de [ componentendefinitie ](#component-definition) evenals in de instrumentatie bepaalt, zal de instrumentatie altijd worden gebruikt.
 
 ## Modeldefinitie laden {#loading-model}
 
@@ -92,8 +122,8 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 
 | Beschrijving | Componenttype |
 |---|---|
-| [ AEM markering ](#aem-tag) | `aem-tag` |
-| [ AEM Inhoud ](#aem-content) | `aem-content` |
+| [ de Markering van AEM ](#aem-tag) | `aem-tag` |
+| [ Inhoud AEM ](#aem-content) | `aem-content` |
 | [ Van Boole ](#boolean) | `boolean` |
 | [ Checkbox Groep ](#checkbox-group) | `checkbox-group` |
 | [ Container ](#container) | `container` |
@@ -109,9 +139,9 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 | [ Lusje ](#tab) | `tab` |
 | [ Tekst ](#text) | `text` |
 
-#### AEM {#aem-tag}
+#### AEM-tag {#aem-tag}
 
-Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebruikt om tags aan de component te koppelen.
+Een AEM-tagcomponenttype maakt een AEM-tagkiezer mogelijk, die kan worden gebruikt om tags aan de component te koppelen.
 
 >[!BEGINTABS]
 
@@ -133,17 +163,17 @@ Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebrui
 
 >[!TAB  Screenshot ]
 
-![ Screenshot van AEM type van markeringscomponent ](assets/component-types/aem-tag-picker.png)
+![ Screenshot van het type van de markeringscomponent van AEM ](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
-#### Inhoud AEM {#aem-content}
+#### AEM Content {#aem-content}
 
-Een AEM inhoudcomponenttype laat een AEM inhoudkiezer toe, die kan worden gebruikt om het even welke AEM bron te selecteren. In tegenstelling tot de [ verwijzingscomponent ](#reference), die slechts activa kan selecteren, kan de AEM inhoudscomponent om het even welke AEM inhoud van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
+Een AEM-inhoudcomponenttype maakt een AEM-inhoudkiezer mogelijk, die kan worden gebruikt om een willekeurige AEM-bron te selecteren. In tegenstelling tot de [ verwijzingscomponent ](#reference), die slechts activa kan selecteren, kan de de inhoudscomponent van AEM van verwijzingen voorzien de inhoud van AEM. Het biedt een aanvullend validatietype aan.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
-| `rootPath` | `string` | Het pad dat de inhoudkiezer opent voor de gebruiker om AEM inhoud te selecteren, waarbij de selectie wordt beperkt tot die map en submappen | Nee |
+| `rootPath` | `string` | Het pad dat de inhoudkiezer opent voor de gebruiker om AEM-inhoud te selecteren, waarbij de selectie wordt beperkt tot die map en submappen | Nee |
 
 >[!BEGINTABS]
 
@@ -169,7 +199,7 @@ Een AEM inhoudcomponenttype laat een AEM inhoudkiezer toe, die kan worden gebrui
 
 >[!TAB  Screenshot ]
 
-![ Screenshot van AEM type van inhoudcomponent ](assets/component-types/aem-content-picker.png)
+![ Schermafbeelding van het type van de inhoudscomponent van AEM ](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -650,7 +680,7 @@ Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opt
 
 #### Referentie {#reference}
 
-Een type van verwijzingscomponent laat een AEM elementenkiezer toe, die kan worden gebruikt om om het even welk AEM te verwijzen. In tegenstelling tot de [ AEM inhoudscomponent ](#aem-content), die om het even welk AEM middel kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
+Een type van verwijzingscomponent laat een de activakiezer van AEM toe, die kan worden gebruikt om om het even welk element van AEM te selecteren waarnaar te verwijzen. In tegenstelling tot de [ de inhoudscomponent van AEM ](#aem-content), die om het even welk middel van AEM kan selecteren, kan de verwijzingscomponent slechts activa van verwijzingen voorzien. Het biedt een aanvullend validatietype aan.
 
 Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject van het huidige object mogelijk.
 

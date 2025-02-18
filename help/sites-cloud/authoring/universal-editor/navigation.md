@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina d
 
 #### Publiceren {#publish}
 
-Selecteer de knop Publiceren zodat u de wijzigingen in de inhoud live kunt publiceren voor gebruik door de lezers.
+Selecteer de knop Publiceren, zodat u de wijzigingen in de live inhoud kunt publiceren voor gebruik door uw lezers of voor een voorbeeldomgeving ter controle.
 
 ![ publiceer knoop ](assets/publish.png)
 

@@ -5,9 +5,9 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
+source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,46 @@ ht-degree: 0%
 
 Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 
-## Inhoud publiceren als auteur {#publishing-content}
-
-Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvoudig tikken of [ klikken publiceert **pictogram 1} in de Universele het hulpmiddelbar van de Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)**
-
-U kunt [ van de console van Plaatsen ook publiceren, ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) die nuttig kan zijn wanneer u wenst om veelvoudige pagina&#39;s van inhoud te publiceren.
-
->[!NOTE]
+>[!TIP]
 >
->De Universele Redacteur steunt [ uitbreidingen en de rekbaarheid UI ](/help/implementing/universal-editor/extending.md) om werkschema&#39;s toe te staan om uw publicatieproces te steunen.
+>Het hier beschreven publicatieproces is de standaard out-of-the-box eigenschap van de Universele Redacteur.
+>
+>De Universele Redacteur steunt ook [ uitbreidingen en de rekbaarheid UI ](/help/implementing/universal-editor/extending.md) om werkschema&#39;s toe te staan om uw publicatieproces te steunen, zodat kan uw publicatiestroom variëren.
 
-## Vergelijkbare objecten met AEM {#similarities}
+## Inhoud publiceren vanuit de Universal Editor {#publishing-content}
 
-Voor gebruikers van AEM werkt het publiceren van inhoud met de Universal Editor op de gebruikelijke wijze: bij publicatie in AEM wordt de inhoud van de auteurslaag naar de publicatielaag gerepliceerd.
+Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvoudig tikken of het **klikken publiceert** pictogram in de Universele het hulpmiddelbar van de Redacteur.
+
+![ het Publiceren pagina&#39;s ](assets/publish-menu.png)
+
+1. In de Universele Redacteur, tik of klik [ het **publiceren** pictogram in de Universele het hulpmiddelbar van de Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. Als u de voorproefdienst van a [ ](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **Voorproef** of **publiceren**.
+1. De **Punten** sectie maakt een lijst van de inhoud die in de publicatie omvat:
+   * **Nieuwe** punten die nog niet zijn gepubliceerd.
+   * **veranderde** inhoud die is gepubliceerd, maar sinds de laatste publicatie gewijzigd.
+   * **Gepubliceerde** inhoud die is gepubliceerd en niet sinds die publicatie gewijzigd.
+
+   Tik of klik op de selectievakjes naast deze items om ze naar wens in of uit te sluiten van publicatie. Tik of klik **breid** uit om individuele punten inbegrepen in de totalen voor de drie categorieën te zien en hen te kunnen in/uitsluiten individueel.
+
+   ![ publiceer punten ](assets/publish-items.png)
+
+   Tik of klik de achterpijl naast de **rubriek van Punten** om aan het overzicht terug te keren.
+
+1. Tik of klik **publiceer** om te publiceren of **annuleer** om te aborteren.
+
+## Publicatie van inhoud in de Universal Editor ongedaan maken {#unpublishing-content}
+
+Het ongedaan maken van de publicatie van inhoud werkt op vergelijkbare wijze als het publiceren van inhoud. Wanneer u als inhoudauteur bereid bent om inhoud uit publicatie te verwijderen, tik of klik het ellipsiepictogram in de Universele het hulpmiddelbar van de Redacteur en dan **unpublish**.
+
+U hebt dan de zelfde opties om inhoud ongedaan te maken zoals u toen [ publiceerde inhoud.](#publishing-content) inclusief het ongedaan maken van de publicatie van een voorvertoningsinstantie, indien beschikbaar, en van de items die u wilt opnemen in de publicatie.
+
+## Publiceren en Publiceren ongedaan maken vanuit de Sites-console {#publishing-sites-console}
+
+U kunt [ van de console van Plaatsen ook publiceren, ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) die nuttig kan zijn wanneer u wenst om veelvoudige pagina&#39;s van inhoud te publiceren of publicatie of unpublication te plannen.
+
+## Vergelijkbaar met de Pagina-editor {#similarities}
+
+Voor gebruikers van de [ Redacteur van de Pagina van AEM, ](/help/sites-cloud/authoring/page-editor/introduction.md) het proces om inhoud met de Universele Redacteur te publiceren werkt aangezien u gewend bent: bij publicatie in AEM, wordt de inhoud herhaald van de auteursrij aan publiceer rij.
 
 ## Verschillen {#differences}
 

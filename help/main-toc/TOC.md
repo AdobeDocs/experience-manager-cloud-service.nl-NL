@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
+source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6081'
 ht-degree: 2%
 
 ---
@@ -374,10 +374,10 @@ ht-degree: 2%
          + [Stijlsysteem](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Opnieuw Beperkingen ongedaan maken](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universele editor {#universal-editor}
-         + [Navigeren door de Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [Overerving van inhoud in de Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Navigatie](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Publiceren](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Overerving](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Paginasjablonen](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1287,6 +1287,7 @@ ht-degree: 2%
          + [Kenmerken en itemtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Componentdefinitie](/help/implementing/universal-editor/component-definition.md)
          + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)
+         + [Publiceren](/help/implementing/universal-editor/publishing.md)
          + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
          + [Gebeurtenissen](/help/implementing/universal-editor/events.md)
          + [Componenten filteren](/help/implementing/universal-editor/filtering.md)

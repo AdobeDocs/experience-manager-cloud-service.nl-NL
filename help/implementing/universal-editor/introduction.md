@@ -4,7 +4,7 @@ description: De Universele Redacteur is een modern visueel auteursgereedschap da
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -51,7 +51,7 @@ De Universal Editor wordt ondersteund door:
 * AEM as a Cloud Service (release `2023.8.13099` of hoger)
 * AEM 6.5 (servicepack 21 of 22 plus een functiepakket)
 
-Deze documentatie is bedoeld voor gebruik van de Universal Editor met AEM as a Cloud Service. Voor het gebruiken van de Universele Redacteur met AEM 6.5, [ gelieve te zien AEM 6.5 documentatie.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
+Deze documentatie is bedoeld voor gebruik van de Universal Editor met AEM as a Cloud Service. Voor het gebruiken van de Universele Redacteur met AEM 6.5, [ gelieve te zien AEM 6.5 documentatie.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
 ## Functies {#features}
 

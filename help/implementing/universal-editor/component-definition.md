@@ -4,9 +4,9 @@ description: Begrijp het JSON-contract tussen de componentdefinitie en de Univer
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In het bestand `component-definition.json` worden de componenten gedefinieerd di
 
 >[!TIP]
 >
->Voor een overzicht van het inhoud modelleringsproces, te zien gelieve het document [ Modellering van de Inhoud voor de Authoring van WYSIWYG met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Voor een overzicht van de inhoud modellerend proces, te zien gelieve het document [ Modellering van de Inhoud voor de Authoring van WYSIWYG met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -33,35 +33,42 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ Nadat `plugin` is gedefinieerd, moet u aangeven of het een pagina-gerelateerd of
 
 Als de component inhoud op de pagina is, kunt u de volgende informatie verstrekken.
 
-* `name` definieert een optionele naam die is opgeslagen in de JCR voor de nieuwe component.
-   * Alleen informatief en wordt gewoonlijk niet in de gebruikersinterface weergegeven als de `title` is.
 * `resourceType` bepaalt het [ Verschuiven ](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` wordt gebruikt voor het teruggeven van de component die.
-* `template` definieert optionele sleutel(waarden) die automatisch naar de nieuwe component moeten worden geschreven.
+* `template` definieert optionele sleutel/waarden die automatisch naar de nieuwe component moeten worden geschreven en definieert welk filter en/of model op de component moet worden toegepast.
    * Nuttig voor verklarende, steekproef, of placeholder tekst.
+
+#### `template` {#template}
+
+Door optionele sleutel/waardeparen op te geven, kan `template` deze automatisch naar de nieuwe component schrijven. Daarnaast kunnen ook de volgende optionele waarden worden opgegeven.
+
+* `model` bepaalt welk [ model ](/help/implementing/universal-editor/field-types.md#model-structure) met de component wordt gebruikt.
+   * Het model wordt daardoor gehandhaafd centraal in de componentendefinitie en te hoeven niet [ worden gespecificeerd de instrumentatie.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Op deze manier kunt u componenten over containers verplaatsen.
+* `filter` bepaalt welke [ filter ](/help/implementing/universal-editor/filtering.md) met de component zou moeten worden gebruikt.
 
 ### `cf` {#cf}
 
