@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 693576c9da99d3cc74b7cec8a7c7ea08120ae5bb
+source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6098'
 ht-degree: 2%
 
 ---
@@ -89,6 +89,7 @@ ht-degree: 2%
    + Opmerkingen bij de release AEMaaCS-onderhoud {#maintenance}
       + [Opmerkingen bij de release voor huidige onderhoud](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Opmerkingen bij de onderhoudsrelease voor 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [Opmerkingen bij de onderhoudsrelease voor 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
