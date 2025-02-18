@@ -5,9 +5,9 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,19 @@ ht-degree: 0%
 
 Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 
-## Gelijksoortigheid met AEM {#similarities}
+## Inhoud publiceren als auteur {#publishing-content}
 
-Voor gebruikers van AEM werkt het proces om inhoud te publiceren met de Universele Redacteur zoals u gewend bent: bij publicatie in AEM, wordt de inhoud herhaald van de auteursrij aan de publicatielaag.
+Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvoudig tikken of [ klikken publiceert **pictogram 1} in de Universele het hulpmiddelbar van de Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)**
+
+U kunt [ van de console van Plaatsen ook publiceren, ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) die nuttig kan zijn wanneer u wenst om veelvoudige pagina&#39;s van inhoud te publiceren.
+
+>[!NOTE]
+>
+>De Universele Redacteur steunt [ uitbreidingen en de rekbaarheid UI ](/help/implementing/universal-editor/extending.md) om werkschema&#39;s toe te staan om uw publicatieproces te steunen.
+
+## Vergelijkbare objecten met AEM {#similarities}
+
+Voor gebruikers van AEM werkt het publiceren van inhoud met de Universal Editor op de gebruikelijke wijze: bij publicatie in AEM wordt de inhoud van de auteurslaag naar de publicatielaag gerepliceerd.
 
 ## Verschillen {#differences}
 

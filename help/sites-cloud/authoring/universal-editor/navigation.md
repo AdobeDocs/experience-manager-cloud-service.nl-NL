@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app va
 
 >[!TIP]
 >
->Zie [ Begonnen het Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) voor een voorbeeld van hoe te om een AEM te vormen app om met de Universele Redacteur te werken.
+>Zie [ Begonnen het Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) voor een voorbeeld van hoe te om een toepassing van AEM te vormen om met de Universele Redacteur te werken.
 
 ## De universele editor openen {#accessing}
 
-Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, heeft de Universal Editor zowel binnen AEM as a Cloud Service als rechtstreeks toegang tot de AEM.
+Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, kan de Universal Editor zowel in AEM as a Cloud Service als rechtstreeks toegang krijgen tot de toepassing zonder AEM te openen.
 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
@@ -60,22 +60,22 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 
 De interface is verdeeld in deze hoofdgebieden.
 
-* [De koptekst van het Experience Cloud](#experience-cloud-header)
+* [De Experience Cloud-header](#experience-cloud-header)
 * [De werkbalk van de Universal Editor](#universal-editor-toolbar)
 * [De editor](#editor)
 * [Het deelvenster Eigenschappen](#properties-rail)
 
 ![ Universele Redacteur UI ](assets/ui.png)
 
-### De koptekst van het Experience Cloud {#experience-cloud-header}
+### De Experience Cloud-header {#experience-cloud-header}
 
-De koptekst van het Experience Cloud bevindt zich altijd boven aan het scherm. Het is een anker dat u vertelt waar u binnen Experience Cloud bent en u helpt aan andere Experience Cloud apps navigeren.
+De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker dat u vertelt waar u zich in Experience Cloud bevindt en dat u helpt naar andere Experience Cloud-toepassingen te navigeren.
 
-![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
+![ de kopbal van Experience Cloud ](assets/experience-cloud-header.png)
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van de Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -87,7 +87,7 @@ Hier wordt de organisatie weergegeven waarmee u momenteel bent aangemeld. Schake
 
 #### Oplossingen {#solutions}
 
-Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
+Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere Experience Cloud-oplossingen gaan.
 
 ![ de schakelaar van Oplossingen ](assets/solutions.png)
 
@@ -111,7 +111,7 @@ Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmo
 
 ### De werkbalk Universele editor {#universal-editor-toolbar}
 
-De Universele toolbar van de Redacteur is altijd aanwezig bij de bovenkant van het scherm enkel onder [ de kopbal van het Experience Cloud ](#experience-cloud-header). Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
+De Universele toolbar van de Redacteur is altijd aanwezig bij de bovenkant van het scherm enkel onder [ de kopbal van Experience Cloud ](#experience-cloud-header). Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
 
 ![ de Universele toolbar van de Redacteur ](assets/universal-editor-toolbar.png)
 
@@ -191,11 +191,11 @@ Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina d
 >
 >De voorproef URL voor uw app [ kan worden aangepast ](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
-#### Publish {#publish}
+#### Publiceren {#publish}
 
 Selecteer de knop Publiceren zodat u de wijzigingen in de inhoud live kunt publiceren voor gebruik door de lezers.
 
-![ knoop van Publish ](assets/publish.png)
+![ publiceer knoop ](assets/publish.png)
 
 >[!TIP]
 >
@@ -207,14 +207,14 @@ Aanvullende standaardopties zijn toegankelijk met de knop Ovaal.
 
 ![ knoop van de Ellipsis ](assets/ellipsis.png)
 
-Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**Publish** knoop ](#publish)) te publiceren toegankelijk via de ellipsieknoop.
+Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**publiceren** knoop ](#publish)) toegankelijk via de ellipsieknoop.
 
 #### Aanvullende knoppen {#additional-toolbar-buttons}
 
 De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als er extra knoppen op de werkbalk staan, is de Universal Editor uitgebreid.
 
-* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur ](/help/implementing/universal-editor/customizing.md) uitbreiden.
-* Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) te zien.
+* Voor details op uitbreidingsmogelijkheden, te zien gelieve [ Uitbreidend de Universele Redacteur ](/help/implementing/universal-editor/extending.md).
+* Voor details op hoe een individuele uitbreiding werkt, te zien gelieve de [ documentatie van Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### De Editor {#editor}
 
@@ -308,12 +308,12 @@ Tapping of het klikken van de schrappingsknoop [ schrapt de component ](/help/si
 >
 >Gebruik de sneltoets `Shift+Backspace` om een geselecteerde component uit een container te verwijderen.
 
-#### Aanvullende knoppen {#additional-properties-rail-buttons}
+## Extra functies {#additional-features}
 
-De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen ziet in het deelvenster Eigenschappen, is de Universal Editor uitgebreid.
+De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen of opties ziet in het deelvenster Eigenschappen of op de werkbalk, is de Universal Editor uitgebreid.
 
 * Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur ](/help/implementing/universal-editor/customizing.md) uitbreiden.
-* Voor details op hoe een individuele uitbreiding werkt, gelieve de [ documentatie van de Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/) te zien.
+* Voor details op hoe een individuele uitbreiding werkt, te zien gelieve de [ documentatie van Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Volgende stappen {#next-steps}
 
