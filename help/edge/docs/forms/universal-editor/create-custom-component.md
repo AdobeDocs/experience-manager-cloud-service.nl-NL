@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
+source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -173,14 +173,14 @@ In dit voorbeeld, voegen wij de Waarde van de Stap als douanebezit aan de compon
 
 Om het de douanebezit van de Waarde van de Stap toe te voegen, voeg het componentenmodel met de volgende lijnen van code in het ` _<component>.json` dossier toe:
 
-     &quot;javascript 
-     {
-     &quot;component&quot;: &quot;aantal&quot;, 
-     &quot;naam&quot;: &quot;stepValue&quot;, 
-     &quot;etiket&quot;: &quot;Step Value&quot;, 
-     &quot;valueType&quot;: &quot;aantal&quot;
-     
-    &quot;
+```javascript
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
 
 Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a ****. Hieronder volgt een uitsplitsing van elk veld:
 

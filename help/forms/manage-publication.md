@@ -1,13 +1,13 @@
 ---
 title: Hoe kan ik formulieren publiceren of verwijderen bij voorvertoningen of publicatie-exemplaren?
-description: Leer het publiceren of het unpublishing van het AEM auteursmilieu aan voorproef of publiceer instanties. Of u uw formulieren nu test op een testomgeving of ze live implementeert voor eindgebruikers, AEM beschikt over gestroomlijnde tools om dit proces efficiënt te beheren.
+description: Leer het publiceren of het ongedaan maken van het publiceren van formulieren vanuit de AEM-auteursomgeving om instanties voor te vertonen of te publiceren. Of u uw formulieren nu test op een testomgeving of ze live implementeert voor eindgebruikers, AEM biedt gestroomlijnde tools om dit proces efficiënt te beheren.
 Keywords: Manage publication, Forms Manage publication, AF Manage publication, Adaptive Forms Manage publication, Cloud Manage publication
 feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -16,35 +16,35 @@ ht-degree: 0%
 
 # &#x200B; Publicatie beheren in Experience Manager Forms
 
-Als Adobe Experience Manager (AEM) Forms-beheerder kunt u formulieren publiceren van uw auteurinstantie naar Experience Manager Forms. U kunt de publicatie van een formulier of map ook voor een latere datum of tijd plannen. Na publicatie kunnen gebruikers de formulieren openen en invullen.
+Als Adobe Experience Manager (AEM) Forms-beheerder kunt u formulieren publiceren van uw auteur naar Experience Manager Forms. U kunt de publicatie van een formulier of map ook voor een latere datum of tijd plannen. Na publicatie kunnen gebruikers de formulieren openen en invullen.
 
 In Experience Manager Forms kunt u een formulier op een van de volgende manieren publiceren:
-* [ optie van Publish ](#publish-forms-using-the-publish-option)
+* [ publiceer optie ](#publish-forms-using-the-publish-option)
 * [Publicatie beheren, optie](#publish-forms-using-the-manage-publication-option)
 
 ## Onthouden
 
 * Slechts kunnen de leden van de `forms-users` groep de **gebruiken leiden Publicatie** optie om de vormen te publiceren.
-* De veranderingen die aan vormen of omslagen in Experience Manager Forms worden aangebracht verschijnen niet in **Publish** instantie tot opnieuw gepubliceerd. Dit zorgt ervoor dat het werk-in-vooruitgang updates in de **Publish** instantie niet beschikbaar blijven. Slechts worden de veranderingen die uitdrukkelijk door een beheerder worden gepubliceerd weerspiegeld in **Publish** instantie.
+* De veranderingen die aan vormen of omslagen in Experience Manager Forms worden aangebracht verschijnen niet in **publiceren** instantie tot opnieuw gepubliceerd. Dit zorgt ervoor dat het werk-in-vooruitgang updates in **niet beschikbaar blijven publiceert** instantie. Slechts worden de veranderingen die uitdrukkelijk door een beheerder worden gepubliceerd weerspiegeld in **publiceren** instantie.
 
-## Publish-formulieren met de optie Publish
+## Formulieren publiceren met de optie Publiceren
 
-De **optie van Publish** laat u onmiddellijk een vorm publiceren. Om een Vorm van de Experience Manager te publiceren gebruikend de **Publish** knoop op de toolbar. U kunt als volgt formulieren publiceren met de optie Publish:
+De **publiceer** optie laat u onmiddellijk een vorm publiceren. Om een Vorm van Experience Manager te publiceren gebruikend **publiceer** knoop op de toolbar. U kunt als volgt formulieren publiceren met de optie Publiceren:
 
 1. Navigeer in de Experience Manager Forms-console naar de bovenliggende map en selecteer een formulier dat u wilt publiceren.
-1. Klik **Publish** optie van de toolbar, neem een blik bij alle verwijzingsactiva die met vorm zouden worden gepubliceerd.
+1. Klik **publiceren** optie van de toolbar, neem een blik bij alle verwijzingsactiva die met vorm zouden worden gepubliceerd.
 1. Klik op **[!UICONTROL Publish]**.
 
-   ![ Publish en unpublish vorm ](/help/edge/docs/forms/assets/publish-form-option.png)
+   ![ publiceer en maak vorm ](/help/edge/docs/forms/assets/publish-form-option.png) ongedaan
 
    Zodra de vorm en zijn verwante activa met succes worden gepubliceerd, verschijnt de dialoog van het Succes van a ****.
 1. Klik **dicht**.
 
-   ![ de dialoog van het Succes ](/help/forms/assets/publish-success.png)
+   ![ de dialoog van het Succes ](/help/forms/assets/publish-success1.png)
 
 ### Publicatie van het formulier ongedaan maken
 
-Na met succes het publiceren van de vorm gebruikend de **optie van Publish** en zijn verwante activa, kunt u hen zelfs unpublish gebruikend de **[!UICONTROL Unpublish]** knoop beschikbaar op de toolbar. Het publiceren van het formulier ongedaan maken:
+Na met succes het publiceren van de vorm gebruikend **publiceer** optie en zijn verwante activa, kunt u hen zelfs unpublish gebruikend de **[!UICONTROL Unpublish]** knoop beschikbaar op de toolbar. Het publiceren van het formulier ongedaan maken:
 
 1. Als u de publicatie van het formulier en de bijbehorende elementen ongedaan wilt maken, selecteert u het formulier en klikt u op **[!UICONTROL Unpublish]** op de werkbalk
 
@@ -58,7 +58,7 @@ Na met succes het publiceren van de vorm gebruikend de **optie van Publish** en 
 
    ![ unpublish succesvol ](/help/forms/assets/unpublishing-start.png)
 
-## Publish-formulieren met de optie Publicatie beheren
+## Formulieren publiceren met de optie Publicatie beheren
 
 Met Publicatie beheren kunt u inhoud publiceren naar of verwijderen uit het geselecteerde doel, inhoud vanuit de map `forms&documents` toevoegen aan de publicatielijst, verwijzingen selecteren voor publicatie en publiceren plannen naar een latere datum of tijd.  Om vormen te publiceren die **gebruiken leidt de optie van de Publicatie**:
 
@@ -75,18 +75,18 @@ Met Publicatie beheren kunt u inhoud publiceren naar of verwijderen uit het gese
 
    * **Acties**
 
-      * **Publish**: De vormen van Publish aan de geselecteerde bestemming
+      * **publiceer**: Publiceer vormen aan de geselecteerde bestemming
       * **unpublish**: Unpublish vormen van de bestemming
 
    * **Doel**
 
-      * **Publish**: De vormen van Publish aan de instantie van Experience Manager Forms (AEM) Publish.
-      * **Voorproef**: De vormen van Publish aan de instantie van de Voorproef van Experience Manager Forms (AEM).
+      * **publiceer**: Publiceer vormen aan Experience Manager Forms (AEM) publiceer instantie.
+      * **Voorproef**: Publiceer vormen aan de instantie van de Voorproef van Experience Manager Forms (AEM).
 
    * **Plannend**
 
-      * **nu**: De vormen van Publish onmiddellijk
-      * **later**: De vormen van Publish die op de **datum van de Activering** of tijd worden gebaseerd
+      * **nu**: Publiceer onmiddellijk vormen
+      * **later**: Publiceer vormen die op de **datum van de Activering** of tijd worden gebaseerd
 
 1. Klik **daarna** om verder te gaan.
 1. (Facultatief) in het **Gebied** lusje, gebruik [ voeg Inhoud ](#add-content) optie toe om meer inhoud voor het publiceren toe te voegen. U kunt bijvoorbeeld meer Forms- of Document met recordbestanden toevoegen.
@@ -143,7 +143,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         * -->
 
 
-### Publish of publiceer het formulier later
+### Een formulier later publiceren of de publicatie ervan ongedaan maken
 
 Met de optie Later publiceren of publiceren kunt u niet alleen formulieren op een latere datum en tijd publiceren, maar kunt u ook een workflow configureren. De formulieren worden gepubliceerd of gepubliceerd nadat de workflow is voltooid.
 
@@ -154,10 +154,10 @@ Een formulier plannen voor publiceren of verwijderen:
 
    ![ beheer publicatie ](/help/forms/assets/manage-publication.png)
 
-1. Klik **Publish** of **unpublish** van **[!UICONTROL Action]**.
+1. Klik **publiceren** of **unpublish** van **[!UICONTROL Action]**.
 1. Selecteer de locatie **[!UICONTROL Destination]** waar u de inhoud wilt publiceren of de publicatie ervan wilt opheffen.
    * **Voorproef**: Gebruik de **3} optie van de Voorproef {om aan een de voorproefmilieu van Experience Manager Forms te publiceren of unpublish.** De Experience Manager Forms-voorbeeldomgevingen worden gebruikt om formulieren te testen onder ontwikkelaars.
-   * **Publish**: Gebruik de optie van Experience Manager Forms **Publish** om de vorm naar Experience Manager Forms te verzenden publiceert milieu nadat de vorm klaar is om in een productiemilieu te gebruiken.
+   * **publiceer**: Gebruik Experience Manager Forms **publiceren** optie om de vorm naar Experience Manager Forms te verzenden publiceert milieu nadat de vorm klaar is om in een productiemilieu te gebruiken.
 
 1. Selecteer **[!UICONTROL Later]** van **Plannend**.
 

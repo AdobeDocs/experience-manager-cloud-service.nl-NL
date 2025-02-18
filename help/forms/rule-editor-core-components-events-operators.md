@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2096'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **is niet leeg**
 * **heeft Geselecteerd:** keert waar terug wanneer de gebruiker een bepaalde optie voor een checkbox, drop-down, radioknoop selecteert.
 * **wordt geïnitialiseerd (gebeurtenis):** keert waar terug wanneer een vormvoorwerp in browser teruggeeft.
-* **Wordt gewijzigd (gebeurtenis):** Retourneert waar wanneer de gebruiker de ingevoerde waarde of geselecteerde optie voor een formulierobject wijzigt.
+* **wordt Gewijzigd (gebeurtenis):** keert waar terug wanneer de gebruiker de ingegane waarde of de geselecteerde optie voor een vormvoorwerp verandert.
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -44,9 +44,9 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
-### Beschikbare regeltypen in de regeleditor {#available-rule-types-in-rule-editor}
+### Beschikbare regeltypen in regeleditor {#available-rule-types-in-rule-editor}
 
-De regeleditor biedt een reeks vooraf gedefinieerde regeltypen die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in de regelredacteur, zie [ regels ](/help/forms/rule-editor-core-components-user-interface.md#write-rules) schrijven.
+De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in de regelredacteur, zie [ regels ](/help/forms/rule-editor-core-components-user-interface.md#write-rules) schrijven.
 
 #### [!UICONTROL When] {#whenruletype}
 
@@ -68,24 +68,23 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Else, do the following:`
 
-`Action 2 on Object C;`
-_
+`Action 2 on Object C;`_
 
-Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, terwijl het creëren van een regel voor die component, worden de opties automatisch teruggewonnen en ter beschikking gesteld van de regelmaker. U hoeft de optiewaarden niet nogmaals te typen.
+Wanneer u een component met meerdere waarden gebruikt, zoals keuzerondjes of lijst, worden de opties tijdens het maken van een regel voor dat onderdeel automatisch opgehaald en beschikbaar gesteld aan de maker van de regel. U hoeft de optiewaarden niet nogmaals te typen.
 
 Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
 
 ![ de multi opties van waardevertoningen ](assets/multivaluefcdisplaysoptions.png)
 
-Tijdens het schrijven van een wanneer-regel kunt u de actie Duidelijke waarde van activeren. Waarde van actie wissen wist de waarde van het opgegeven object. Als u Clear Value of als optie in het When-instructie heeft, kunt u complexe voorwaarden maken met meerdere velden. U kunt de instructie Else toevoegen om meer voorwaarden toe te voegen
+Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden. U kunt het Else-statement toevoegen om verdere voorwaarden toe te voegen
 
-![ Duidelijke waarde van ](assets/clearvalueof.png)
+![Duidelijke waarde van](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> Wanneer het regeltype slechts single-level toen-else verklaringen steunt.
+> Als het regeltype alleen ondersteuning biedt voor single-level then-else statements.
 
-##### Meerdere velden toegestaan in [!UICONTROL When] {#allowed-multiple-fields}
+##### Toegestaan Meerdere velden in [!UICONTROL When] {#allowed-multiple-fields}
 
 In **wanneer** voorwaarde, hebt u de optie om andere gebieden behalve het gebied toe te voegen waarop de regel wordt toegepast.
 
@@ -99,19 +98,19 @@ EN/OF
 
 (Voorwaarde B 2)
 
-Voer vervolgens de volgende handelingen uit:
+Ga vervolgens als volgt te werk:
 
 Actie 1 op object A
 
 _
 
-![ Toegestane Meerdere gebieden binnen wanneer ](/help/forms/assets/allowed-multiple-field-when.png)
+![Toegestaan Meerdere velden in Wanneer](/help/forms/assets/allowed-multiple-field-when.png)
 
-**Overwegingen terwijl het gebruiken van Toegestane Meerdere gebieden in wanneer voorwaardelement**
+**Overwegingen bij het gebruik van Toegestaan Meerdere velden in de functie Wanneer voorwaarde**
 
-* Zorg ervoor dat het [kernonderdeel is ingesteld op versie 3.0.14 of hoger](https://github.com/adobe/aem-core-forms-components) om deze functie in de regeleditor te gebruiken.
-* Als regels worden toegepast op verschillende velden binnen de Wanneer-voorwaarde, wordt de regel geactiveerd, zelfs als slechts één van die velden wordt gewijzigd.
-
+* Zorg ervoor dat de [ kerncomponent aan versie 3.0.14 of recenter ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om deze eigenschap in de regelredacteur te gebruiken.
+* Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
+* U kunt alleen de meerdere velden toevoegen in de **voorwaarde Wanneer** voor een **EN-regel** . Het is niet mogelijk voor een **OF** regel.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -130,7 +129,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Als er problemen zijn met de toegestane meerdere velden in de functie Wanneer voorwaarde, volgt u de stappen voor probleemoplossing als volgt:
+Als er problemen optreden met de toegestane meerdere velden in de functie Wanneer-voorwaarde, volgt u de stappen voor probleemoplossing als:
 
 1. Open het formulier in de bewerkingsmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
@@ -167,10 +166,10 @@ Met het regeltype **[!UICONTROL Set Property]** kunt u de waarde van een eigensc
 * label.visible (Boolean)
 * description (String)
 * enabled (Boolean)
-* alleen-lezen (Booleaans)
-* vereist (Booleaans)
-* screenReaderText (tekenreeks)
-* geldig (Booleaans)
+* readOnly (Boolean)
+* required (Boolean)
+* screenReaderText (String)
+* valid (Boolean)
 * errorMessage (String)
 * default (Number, String, Date)
 * enumNames (Koord [])
@@ -186,17 +185,17 @@ Als u een regel wilt definiëren die is gebaseerd op een formulierobject, select
 
 Met de regel Eigenschap instellen die is gebaseerd op een objecteigenschap kunt u het tekstinvoervak zichtbaar maken in een adaptief formulier op basis van een andere objecteigenschap die is opgenomen in het adaptieve formulier.
 
-In de volgende afbeelding ziet u een voorbeeld van het dynamisch inschakelen van het selectievakje op basis van het verbergen of weergeven van een tekstvak in een adaptief formulier:
+De volgende afbeelding toont een voorbeeld van het dynamisch inschakelen van het selectievakje op basis van het verbergen of weergeven van een tekstvak in een adaptieve vorm:
 
 ![ Bezit van Objecten ](assets/object_property_set_property_new.png)
 
-**[!UICONTROL Clear Value Of]** Hiermee wist u de waarde van het opgegeven object.
+**[!UICONTROL Clear Value Of]** Wist de waarde van het opgegeven object.
 
-**[!UICONTROL Set Focus]** Hiermee stelt u de focus in op het opgegeven object.
+**[!UICONTROL Set Focus]** Hiermee wordt de focus op het opgegeven object ingesteld.
 
-**[!UICONTROL Submit Form]** Verzendt het formulier.
+**[!UICONTROL Submit Form]** verzendt het formulier.
 
-**[!UICONTROL Reset]** Hiermee stelt u het formulier of het opgegeven object opnieuw in.
+**[!UICONTROL Reset]** Hiermee wordt het formulier of het opgegeven object opnieuw ingesteld.
 
 **[!UICONTROL Validate]** Valideert het formulier of het opgegeven object.
 
@@ -206,29 +205,29 @@ In de volgende afbeelding ziet u een voorbeeld van het dynamisch inschakelen van
 
 **[!UICONTROL Function Output]** Definieert een regel op basis van vooraf gedefinieerde functies of aangepaste functies.
 
-**[!UICONTROL Navigate to]** Navigeer naar andere Adaptieve Forms, andere elementen, zoals afbeeldingen of documentfragmenten, of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigeer naar andere adaptieve formulieren, andere elementen zoals afbeeldingen of documentfragmenten, of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Dispatch Event]** Triggert de specifieke acties of gedragingen op basis van vooraf gedefinieerde voorwaarden of gebeurtenissen.
+**[!UICONTROL Dispatch Event]** Activeert de specifieke acties of gedragingen op basis van vooraf gedefinieerde voorwaarden of gebeurtenissen.
 
 #### [!UICONTROL Set Value of] {#set-value-of}
 
-Met het **[!UICONTROL Set Value of]** -regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een service Form Data Model. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
+Met het **[!UICONTROL Set Value of]** regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van of aan de opgegeven voorwaarde is voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige uitdrukking of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een Form Data Model-service. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, tekenreeks, eigenschap of waarden die zijn afgeleid van een functie of wiskundige uitdrukking.
 
-De **Vastgestelde Waarde van** regeltype is niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen. Een standaardsetwaarde van regel heeft de volgende structuur:
+Het **regeltype Waarde instellen van** is niet beschikbaar voor alle formulierobjecten, zoals deelvensters en werkbalkknoppen. Een standaardsetwaarde van regel heeft de volgende structuur:
 
 Stel de waarde van Object A in op:
 
-(Snaar ABC) OF
-(objecteigenschap X van object C) OF
-(waarde van een functie) OF
-(waarde van een wiskundige uitdrukking) OF
-(uitvoerwaarde van een gegevensmodelservice);
+(Tekenreeks ABC) OR
+(objecteigenschap X van Object C) OR
+(waarde van een functie) OR
+(waarde van een wiskundige expressie) OF
+(outputwaarde van een dienst van het gegevensmodel);
 
 Wanneer (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is WAAR;
 
-In het volgende voorbeeld wordt de waarde `Question2` as `True` geselecteerd en wordt de waarde `Result` ingesteld als `correct` .
+In het volgende voorbeeld wordt de waarde van `Question2` geselecteerd als `True` en wordt de waarde van `Result` als `correct`ingesteld.
 
 ![ reeks-waarde-web-dienst ](assets/set-value-web-service.png)
 
@@ -382,7 +381,7 @@ To define a rule based on a form data model:
 
 ## Volgende stap
 
-Laten we nu verschillende [voorbeelden begrijpen voor een regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-usecases.md).
+Laten wij nu diverse [ voorbeelden voor een Redacteur van de Regel voor een AanpassingsVorm begrijpen die op de Componenten van de Kern ](/help/forms/rule-editor-core-components-usecases.md) wordt gebaseerd.
 
 ## Zie ook
 
