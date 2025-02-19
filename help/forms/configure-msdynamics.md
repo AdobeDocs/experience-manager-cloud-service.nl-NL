@@ -3,7 +3,8 @@ title: Hoe te om Microsoft Dynamics 365 uit de doos gegevensmodellen van de vorm
 description: Leer hoe u Microsoft Dynamics 365 kunt integreren met Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
@@ -51,6 +52,7 @@ Creeer een rekening in het **Centrum van Admin van het Platform van de Macht** a
    * Microsoft Dynamics 365-toepassingen inschakelen
 
    Voer de stappen in de video uit om een account te maken in het Power Platform Admin Center. In deze video is een proefaccount gemaakt voor demonstratiedoeleinden.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Registreer een toepassing voor [!DNL Microsoft® Dynamics 365] in Azure Actieve Folder**

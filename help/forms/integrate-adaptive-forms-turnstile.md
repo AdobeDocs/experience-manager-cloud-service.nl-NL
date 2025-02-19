@@ -1,16 +1,16 @@
 ---
-title: Hoe wordt Turnstile gebruikt in een AEM adaptieve vorm?
+title: Hoe wordt Turnstile gebruikt in een AEM Adaptive Form?
 description: Verbeter de formulierbeveiliging met de Turnstile-service zonder moeite. Stap-voor-stap gids binnen!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
 
 ---
-
 
 # Turnstile CAPTCHA integreren met Adaptieve Forms
 
@@ -36,8 +36,8 @@ Om Turnstile voor AEM Forms te vormen, moet u [ Turnstile sitekey en geheime sle
 
 ### Stappen voor het configureren van Turnstile voor AEM Forms{#steps-to-configure-turnstile}
 
-1. Maak een configuratiecontainer op uw AEM Forms as a Cloud Service omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met Turnstile te verbinden:
-   1. Open je AEM Forms as a Cloud Service exemplaar.
+1. Maak een configuratiecontainer op uw AEM Forms as a Cloud Service-omgeving. Een configuratiecontainer bevat cloudconfiguraties waarmee AEM wordt verbonden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met Turnstile te verbinden:
+   1. Open uw AEM Forms as a Cloud Service-exemplaar.
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
    1. In Browser van de Configuratie, kunt u een bestaande omslag selecteren of een omslag creëren. U kunt een map maken en de optie Cloud Configurations hiervoor inschakelen of de optie Cloud Configurations inschakelen voor een bestaande map:
 
@@ -50,14 +50,14 @@ Om Turnstile voor AEM Forms te vormen, moet u [ Turnstile sitekey en geheime sle
          1. Schakel in het dialoogvenster Configuration Properties **[!UICONTROL Cloud Configurations]** in.
          1. Selecteer **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
-1. Configureer de Cloud Service:
-   1. Voor uw AEM auteursinstantie, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL Turnstile]**.
+1. De Cloud Service configureren:
+   1. Op uw de auteursinstantie van AEM, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL Turnstile]**.
       ![ Turnstile in ui ](assets/turnstile-in-ui.png)
    1. Selecteer een configuratiecontainer, gecreeerd of bijgewerkt, zoals die in de vorige sectie wordt beschreven. Selecteer **[!UICONTROL Create]** .
       ![ Turnstile van de Configuratie ](assets/config-hcaptcha.png)
    1. Specificeer **[!UICONTROL Widget Type]** zoals geleid, widgettype kan veranderen dat van de sleutel afhangt die in de voorwaarde wordt verkregen, **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de dienst van de Draai [ in voorwaarde ](#prerequisite) wordt verkregen. Selecteer **[!UICONTROL Create]** .
 
-      ![ vorm de Cloud Service om uw milieu van AEM Forms met Turnstile te verbinden ](assets/config-turntstile.png)
+      ![ vorm Cloud Service om uw milieu van AEM Forms met Turnstile te verbinden ](assets/config-turntstile.png)
 
 >[!NOTE]
 > Gebruikers hoeven de URL voor JavaScript-validatie aan de clientzijde en de URL voor validatie aan de serverzijde niet aan te passen, omdat deze al zijn voorgevuld voor Microsoft-validatie.
@@ -66,7 +66,7 @@ Zodra de Turnstile Captcha dienst wordt gevormd, is het beschikbaar voor gebruik
 
 ## Draaien in een adaptieve vorm gebruiken{#using-turnstile-foundation-components}
 
-1. Open je AEM Forms as a Cloud Service exemplaar.
+1. Open uw AEM Forms as a Cloud Service-exemplaar.
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]** .
 1. Selecteer een adaptief formulier en selecteer **[!UICONTROL Properties]** . Selecteer voor de optie **[!UICONTROL Configuration Container]** de configuratiecontainer die de Cloud Configuration bevat die AEM Forms met Turnstile verbindt, en selecteer **[!UICONTROL Save & Close]** .
 
@@ -89,8 +89,10 @@ Zodra de Turnstile Captcha dienst wordt gevormd, is het beschikbaar voor gebruik
       * Op een gebruikersactie.
    * **[!UICONTROL Captcha Service]:** selecteer uw dienst Captcha, hier selecteert u de dienst van het Draaien van de Wolk Captcha.
    * **[!UICONTROL Captcha Configuration]:** selecteer een Cloud-configuratie die voor Turnstile is geconfigureerd. bijvoorbeeld, hier selecteert u de **beheerde sleutel**.
+
      >[!NOTE]
-     >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen de dienst vermeld is, zie [ uw milieu van AEM Forms met Turnstile ](#connect-your-forms-environment-with-turnstile-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de Dienst van de Draai verbindt.
+     >
+     > U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen de dienst vermeld is, zie [ uw milieu van AEM Forms met Turnstile ](#connect-your-forms-environment-with-turnstile-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de Dienst van Turnstile verbindt.
 
    * **Bericht van de Fout:** verstrek het foutenbericht aan vertoning aan de gebruiker wanneer de voorlegging Captcha ontbreekt.
    * **Grootte Captcha:** U selecteert de vertoningsgrootte van de Turnstile uitdagingsdialoog. Met de optie **[!UICONTROL Compact]** geeft u een klein formaat weer en met de optie **[!UICONTROL Normal]** geeft u een dialoogvenster voor het weergeven van een relatief groot probleem met de optie Turnstiel weer.

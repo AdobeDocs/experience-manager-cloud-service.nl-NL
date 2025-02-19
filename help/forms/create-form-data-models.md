@@ -1,13 +1,13 @@
 ---
 title: Hoe te om het Model van de Gegevens van de Vorm (FDM) tot stand te brengen?
-description: Leer om een model van vormgegevens (FDM) tot stand te brengen, en gegevens te verzenden of terug te winnen naar een gegevensbron gebruikend een Aangepast Vorm of een Werkschema van de AEM.
+description: Leer om een model van vormgegevens (FDM) tot stand te brengen, en gegevens te verzenden of terug te winnen naar een gegevensbron gebruikend een Aangepast Vorm of een Werkschema van AEM.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -110,7 +110,7 @@ Implementatiespecifieke cloudconfiguraties inschakelen in [!UICONTROL Form Data 
 1. Integreer de cloudconfiguratie in het project Archetype van [!DNL Experience Manager] .
    1. Pak het gedownloade pakket uit.
    1. Kopieer de map `jcr_root` en plaats deze `ui.content` > `src` > `main` > `content` .
-   1. Werk `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` bij voor het filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Voor details, zie [ ui.content module van AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
+   1. Werk `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` bij voor het filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Voor details, zie [ ui.content module van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
 
 1. Maak een contextbewuste configuratie voor Apache Sling. Om de configuratie te creëren OSGi:
    1. **opstelling OSGi configuratiedossiers in [!DNL Experience Manager] project Archetype.**
@@ -123,14 +123,15 @@ OSGi-fabrieksconfiguratiebestanden maken met PID `org.apache.sling.caconfig.impl
       1. Geef onder Overschrijvingen velden op die moeten worden gewijzigd op basis van de omgeving in de syntaxis met regelafstand. Voor details, zie [ Apache die Context-Aware Configuratie - met voeten treedt ](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Bijvoorbeeld `cloudconfigs/fdm/{configName}/url="newURL"` .
 U kunt meerdere overschrijvingen toevoegen door **[!UICONTROL +]** te selecteren.
       1. Selecteer **[!UICONTROL Save]** .
-      1. Om Configuratie JSON te krijgen OSGi, volg de stappen in [ Genererend OSGi Configuraties gebruikend de Snelle start van SDK van de AEM ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Om Configuratie JSON te krijgen OSGi, volg de stappen in [ Genererend Configuraties OSGi gebruikend AEM SDK Quickstart ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. Plaats JSON in de Dossiers van de Configuratie van de Fabriek OSGi die in de vorige stap worden gecreeerd.
       1. Wijzig de waarde van `newURL` op basis van de omgeving (of de runmode).
       1. Om geheime waarde te veranderen die op runmode wordt gebaseerd, kan de geheime variabele worden gecreeerd gebruikend [ wolkenmanager API ](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en kan later in de [ Configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values) worden van verwijzingen voorzien.
 Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, zal de opheffing verschillende waarden op verschillende milieu&#39;s (of looppaswijze) verstrekken.
+
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] de gebruikers kunnen de geheime waarden coderen gebruikend crypto steun (voor details, zie [ encryptiesteun voor configuratieeigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) en plaats gecodeerde tekst in de waarde nadat [ context bewuste configuraties in de dienstpak 6.5.13.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config) beschikbaar zijn.
+      >[!DNL Adobe Managed Service] de gebruikers kunnen de geheime waarden coderen gebruikend crypto steun voor details, zie [ encryptiesteun voor configuratieeigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) en plaats gecodeerde tekst in de waarde nadat [ context bewuste configuraties in de dienstpak 6.5.13.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config) beschikbaar zijn.
 
 1. Vernieuw de gegevensbrondefinities gebruikend de optie om gegevensbrondefinities in de [ modelredacteur van Gegevens van de Vorm ](#data-sources) te verfrissen FDM geheime voorgeheugen door FDM UI en de recentste configuratie te krijgen.
 

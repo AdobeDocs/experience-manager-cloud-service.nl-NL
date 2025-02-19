@@ -1,11 +1,12 @@
 ---
-title: Hoe wordt hCaptcha&reg; in een AEM adaptieve vorm gebruikt?
+title: Hoe kan hCaptcha&reg; in een AEM Adaptive Form worden gebruikt?
 description: Verbeter de formulierbeveiliging met hCaptcha&reg; service zonder problemen. Stap-voor-stap gids binnen!
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA-uitdaging, Bot-preventie, Formulierverzendbeveiliging, Formulierspampreventie
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -38,8 +39,8 @@ Om hCaptcha® met AEM Forms te vormen, moet u [ hCaptcha® sitekey en geheime sl
 
 ## Stappen voor het configureren van hCaptcha® {#steps-to-configure-hcaptcha}
 
-1. Maak een configuratiecontainer op uw AEM Forms as a Cloud Service omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met hCaptcha® te verbinden:
-   1. Open je AEM Forms as a Cloud Service exemplaar.
+1. Maak een configuratiecontainer op uw AEM Forms as a Cloud Service-omgeving. Een configuratiecontainer bevat cloudconfiguraties waarmee AEM wordt verbonden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met hCaptcha® te verbinden:
+   1. Open uw AEM Forms as a Cloud Service-exemplaar.
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
    1. In Browser van de Configuratie, kunt u een bestaande omslag selecteren of een omslag creëren. U kunt een map maken en de optie Cloud Configurations hiervoor inschakelen of de optie Cloud Configurations inschakelen voor een bestaande map:
 
@@ -52,14 +53,14 @@ Om hCaptcha® met AEM Forms te vormen, moet u [ hCaptcha® sitekey en geheime sl
          1. Schakel in het dialoogvenster Configuration Properties **[!UICONTROL Cloud Configurations]** in.
          1. Selecteer **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
-1. Configureer de Cloud Service:
-   1. Voor uw AEM auteursinstantie, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL hCaptcha®]**.
+1. De Cloud Service configureren:
+   1. Op uw de auteursinstantie van AEM, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL hCaptcha®]**.
       ![ hCaptcha® in ui ](assets/hcaptcha-in-ui.png)
    1. Selecteer een configuratiecontainer, gecreeerd of bijgewerkt, zoals die in de vorige sectie wordt beschreven. Selecteer **[!UICONTROL Create]** .
       ![ Configuratie hCaptcha® ](assets/config-hcaptcha.png)
    1. Specificeer **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de dienst hCaptcha® [ in eerste instantie wordt verkregen die ](#prerequisite). Selecteer **[!UICONTROL Create]** .
 
-      ![ vorm de Cloud Service om uw milieu van AEM Forms met hCaptcha® ](assets/create-hcaptcha-config.png) te verbinden
+      ![ vorm Cloud Service om uw milieu van AEM Forms met hCaptcha® ](assets/create-hcaptcha-config.png) te verbinden
 
 >[!NOTE]
 > De gebruikers moeten niet [ cliënt-zijbevestiging URL van JavaScript ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) en [ server-zijbevestiging URL ](https://docs.hcaptcha.com/#verify-the-user-response-server-side) wijzigen aangezien zij reeds voor bevestiging hCaptcha® worden voorgevuld. Voor sommige landen, kunnen de eindpunten verschillen, bezoek [ hCaptcha® FAQs ](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) voor meer informatie.
@@ -68,7 +69,7 @@ Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een A
 
 ## Gebruik hCaptcha® in een AanpassingsVorm {#using-hCaptcha®-foundation-components}
 
-1. Open je AEM Forms as a Cloud Service exemplaar.
+1. Open uw AEM Forms as a Cloud Service-exemplaar.
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]** .
 1. Selecteer een adaptief formulier en selecteer **[!UICONTROL Properties]** . Selecteer voor de optie **[!UICONTROL Configuration Container]** de configuratiecontainer die de Cloud Configuration bevat die AEM Forms verbindt met hCaptcha® en selecteer **[!UICONTROL Save & Close]** .
 
@@ -91,8 +92,10 @@ Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een A
       * Op een gebruikersactie.
    * **[!UICONTROL Captcha Service]:** selecteer uw dienst Captcha, hier selecteert u de dienst hCaptcha®.
    * **[!UICONTROL Captcha Configuration]:** selecteer een Configuratie van de Wolk die voor hCaptcha® wordt gevormd.
+
      >[!NOTE]
-     >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen dienst vermeld is, zie [ uw milieu van AEM Forms met hCaptcha® ](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de dienst hCaptcha® verbindt.
+     >
+     > U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen dienst vermeld is, zie [ uw milieu van AEM Forms met hCaptcha® ](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de dienst hCaptcha® verbindt.
 
    * **Bericht van de Fout:** verstrek het foutenbericht aan vertoning aan de gebruiker wanneer de voorlegging Captcha ontbreekt.
    * **Grootte Captcha:** U selecteert de vertoningsgrootte van de de uitdagingsdialoog hCaptcha®. Gebruik de optie **[!UICONTROL Compact]** om een klein formaat weer te geven en de optie **[!UICONTROL Normal]** om een relatief groot hCaptcha®-provocatievenster weer te geven of **[!UICONTROL Invisible]** om hCaptcha® te valideren zonder de widget selectievakje expliciet in de gebruikersinterface weer te geven.

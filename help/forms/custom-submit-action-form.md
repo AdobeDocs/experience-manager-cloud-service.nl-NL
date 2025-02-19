@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1700'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
-| AEM as a Cloud Service | Dit artikel |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (Core Components) | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service (Foundation Components) | Dit artikel |
 
 Een adaptief formulier biedt meerdere OTB-acties (Verzenden buiten de box). In een handeling Verzenden worden de details opgegeven van de handelingen die moeten worden uitgevoerd op de gegevens die via het adaptieve formulier zijn verzameld. Bijvoorbeeld, verzendend gegevens over een e-mail.
 
@@ -49,7 +50,7 @@ De XML-gegevens worden naar de servlet verzonden met behulp van de aanvraagparam
 
 ### Actievelden {#action-fields}
 
-Een Submit Actie kan verborgen inputgebieden (gebruikend de HTML [ input ](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) markering) aan teruggegeven vorm HTML toevoegen. Deze verborgen velden kunnen waarden bevatten die nodig zijn tijdens de verwerking van formulierverzendingen. Bij het verzenden van het formulier worden deze veldwaarden teruggeplaatst als aanvraagparameters die de verzendactie kan gebruiken tijdens de verwerking van het formulier. De invoervelden worden actievelden genoemd.
+Een Submit Actie kan verborgen inputgebieden (gebruikend de HTML [ input ](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) markering) aan teruggegeven vormHTML toevoegen. Deze verborgen velden kunnen waarden bevatten die nodig zijn tijdens de verwerking van formulierverzendingen. Bij het verzenden van het formulier worden deze veldwaarden teruggeplaatst als aanvraagparameters die de verzendactie kan gebruiken tijdens de verwerking van het formulier. De invoervelden worden actievelden genoemd.
 
 Met een handeling Verzenden die ook de tijd vastlegt die nodig is om een formulier in te vullen, kunt u bijvoorbeeld de verborgen invoervelden `startTime` en `endTime` toevoegen.
 
@@ -73,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Als u bestanden bijvoegt bij het adaptieve formulier, valideert de server de bestandsbijlagen na het verzenden van het adaptieve formulier en wordt een foutbericht geretourneerd als:
 
-* Bestandsbijlagen bevatten een bestandsnaam die begint met (.) teken, bevat \ / : * ? &quot; &lt; > | ; % $ tekens of bevat speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen, zoals `nul` , `prn` , `con` , `lpt` of `com` .
+* Bestandsbijlagen bevatten een bestandsnaam die begint met het teken (.) en die \ / : * ? bevat &quot; &lt; > | ; % $ tekens of bevat speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen, zoals `nul` , `prn` , `con` , `lpt` of `com` .
 
 * De grootte van de bestandsbijlage is 0 bytes.
 
@@ -89,13 +90,13 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 >
 >Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [ OOTB legt Acties ](configuring-submit-actions.md) voor gebruik Redirect URL om browser van het middel om te leiden dat de voorwaartse wegverwijzingen.
 >
->U kunt een aangepaste handeling Verzenden schrijven die een aanvraag doorstuurt naar een bron of servlet. De Adobe adviseert dat het manuscript dat middelbehandeling voor de voorwaartse weg uitvoert het verzoek aan Redirect URL opnieuw richt wanneer de verwerking voltooit.
+>U kunt een aangepaste handeling Verzenden schrijven die een aanvraag doorstuurt naar een bron of servlet. Adobe raadt aan dat het script dat de verwerking van bronnen voor het voorwaartse pad uitvoert, de aanvraag omleidt naar de Redirect URL wanneer de verwerking is voltooid.
 
 ## Handeling verzenden {#submit-action}
 
 Een handeling Verzenden is een sling:map die het volgende bevat:
 
-* **addfields.jsp**: Dit manuscript verstrekt de actievelden die aan het dossier van de HTML tijdens vertoning worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die zijn vereist tijdens verzending in het script post.POST.jsp.
+* **addfields.jsp**: Dit manuscript verstrekt de actievelden die aan het dossier van HTML tijdens vertoning worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die vereist zijn tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit manuscript is gelijkaardig aan de dialoog van de Component CQ. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u Handeling verzenden selecteert.
 * **post.POST.jsp**: Submit servlet roept dit manuscript met de gegevens die u en de extra gegevens in de vorige secties voorlegt. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren bij de Adaptief Forms voor weergave in het dialoogvenster Formulier bewerken, voegt u de volgende eigenschappen toe aan de `sling:Folder` :
 
@@ -108,25 +109,29 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
+>[!NOTE]
+>
+> Leren hoe te om een douane te creëren voorlegt actie voor de Componenten van de Kern, zie [ een douane verzend actie voor Aanpassings Forms (de Componenten van de Kern) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+
 Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de afgekeurde OOTB-code voor het verzenden van Action Store-inhoud die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt AEM a [ Post ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mail te verzenden. Voordat u de e-mail-API gebruikt, configureert u de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 
    ![ Scherenshot die de verwezenlijking van een knoop met het bezit toont:Omslag ](assets/step1.png)
 
-1. **verstrek de verplichte configuratiegebieden.**
+2. **verstrek de verplichte configuratiegebieden.**
 
    Voeg de configuratie toe die de winkelactie vereist. Kopieer **cq:dialoog** knoop van de actie van de Opslag van /libs/fd/af/components/guidesubmittype/store aan de actiemap bij /apps/custom_submit_action/store_and_email.
 
    ![ Schermafbeelding die het kopiëren van de dialoogknoop aan de actiemap tonen ](assets/step2.png)
 
-1. **verstrek configuratiegebieden om de auteur voor e-mailconfiguratie te veroorzaken.**
+3. **verstrek configuratiegebieden om de auteur voor e-mailconfiguratie te veroorzaken.**
 
    Het adaptieve formulier bevat ook een e-mailactie waarmee e-mailberichten naar gebruikers worden verzonden. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knooppunten in het cq:dialog-knooppunt naar cq:dialog-knooppunt van uw verzendhandeling (/apps/custom_submit_action/store_and_email/dialog).
 
    ![ Aanpassen van de e-mailactie ](assets/step3.png)
 
-1. **maak de actie beschikbaar in de Aangepaste Vorm geeft dialoog uit.**
+4. **maak de actie beschikbaar in de Aangepaste Vorm geeft dialoog uit.**
 
    Voeg de volgende eigenschappen in de store_and_email knoop toe:
 
@@ -138,11 +143,11 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
    * **submitService** van type **Koord** en waarde **opslag en E-mail**. Voor meer informatie, zie [ de Aangepaste voorlegging van de Vorm van het Programma voor douaneacties ](#schedule-adaptive-form-submission).
 
-1. Open een adaptief formulier. Klik **uitgeven** knoop naast **Begin** om **te openen geef** dialoog van de Aangepaste container van de Vorm uit. De nieuwe actie wordt getoond in **legt Acties** Lusje voor. Het selecteren van de **Opslag en E-mailActie** toont de configuratie die in de dialoogdoos wordt toegevoegd.
+5. Open een adaptief formulier. Klik **uitgeven** knoop naast **Begin** om **te openen geef** dialoog van de Aangepaste container van de Vorm uit. De nieuwe actie wordt getoond in **legt Acties** Lusje voor. Het selecteren van de **Opslag en E-mailActie** toont de configuratie die in de dialoogdoos wordt toegevoegd.
 
    ![ voorlegt de configuratiedialoog van de Actie ](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **gebruik de actie om een taak te voltooien.**
+6. **gebruik de actie om een taak te voltooien.**
 
    Voeg het script post.POST.jsp toe aan uw handeling. (/apps/custom_submit_action/store_and_mail/).
 

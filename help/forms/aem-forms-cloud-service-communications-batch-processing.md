@@ -1,19 +1,19 @@
 ---
-title: Gemakkelijk maken van PDF, moeiteloos maken - Maak kennis met de kunst met batterijverwerking - Uw zelfhulplijn voor het genereren van miljoenen PDF-documenten!
+title: PDF maken zonder problemen - Maak kennis met de kunst met batterijverwerking - Uw zelfhulp gids voor het genereren van miljoenen PDF-documenten!
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 0%
 
 ---
 
-# AEM Forms as a Cloud Service Communicatie Batch-verwerking
+# AEM Forms as a Cloud Service Communications Batch-verwerking
 
-Via communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, voordeelberichten, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
+Via communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, voordeelberichten, maandelijkse facturen en welkomstkits. Met communicatie-API&#39;s kunt u een sjabloon (XFA of PDF) combineren met klantgegevens om documenten te genereren in de indelingen PDF, PS, PCL, DPL, IPL en ZPL.
 
 De mededelingen verstrekken APIs voor het op bestelling en geplande documentgeneratie. U kunt synchrone API&#39;s voor asynchrone API&#39;s (Asynchrone API&#39;s) voor het genereren van geplande documenten gebruiken:
 
@@ -34,17 +34,17 @@ De mededelingen verstrekken APIs voor het op bestelling en geplande documentgene
 
 Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkbaar type voor een set records met geplande intervallen worden gegenereerd. Een batchbewerking bestaat uit twee onderdelen: Configuratie (definitie) en uitvoering.
 
-* **Configuratie (definitie)**: Een partijconfiguratie slaat informatie over diverse activa en eigenschappen op om voor geproduceerde documenten te plaatsen. Bijvoorbeeld, verstrekt het details over het malplaatje XDP of PDF en de plaats van klantengegevens aan gebruik samen met het specificeren van diverse eigenschappen voor outputdocumenten.
+* **Configuratie (definitie)**: Een partijconfiguratie slaat informatie over diverse activa en eigenschappen op om voor geproduceerde documenten te plaatsen. Het bevat bijvoorbeeld details over de XDP- of PDF-sjabloon en de locatie van te gebruiken klantgegevens en het opgeven van verschillende eigenschappen voor uitvoerdocumenten.
 
 * **Uitvoering**: Om een partijverrichting te beginnen, ga de naam van de partijconfiguratie tot batch-uitvoering API over.
 
 ### Componenten van een batchbewerking {#components-of-a-batch-operations}
 
-**de configuratie van de Wolk van de Wolk van de Werking**: De configuratiehulp van de Wolk van de Ervaring helpt u een instantie van de Experience Manager aan klant bezeten Microsoft Azure Opslag. Hiermee kunt u de referenties opgeven waarmee Microsoft Azure-account bij een klant verbinding kan maken.
+**de configuratie van de Wolk van de Wolk van de Ervaring**: De configuratiehulp van de Wolk van de Ervaring helpt u een instantie van Experience Manager aan klant bezeten Microsoft Azure Opslag aan te sluiten. Hiermee kunt u de referenties opgeven waarmee Microsoft Azure-account bij een klant verbinding kan maken.
 
 **de configuratie van de Opslag van de Gegevens van de Partij (USC)**: De hulp van de de gegevensconfiguratie van de partij u vormt een specifiek geval van opslag Blob voor Partij APIs. Hiermee kunt u de invoer- en uitvoerlocaties opgeven in de Microsoft Azure Blob-opslag die eigendom is van de klant.
 
-**Partij APIs**: Laat u een partijconfiguraties creëren en de partijlooppas uitvoeren die op deze configuraties wordt gebaseerd om een PDF of malplaatje XDP met gegevens samen te voegen en output in PDF, PS, PCL, DPL, IPL en formaten te produceren ZPL. De mededelingen verstrekken partij APIs voor configuratiebeheer en partijuitvoering.
+**Partij APIs**: Laat u een partijconfiguraties tot stand brengen en de partijlooppas uitvoeren die op deze configuraties wordt gebaseerd om een PDF of een malplaatje XDP met gegevens samen te voegen en output in PDF, PS, PCL, DPL, IPL en formaten te produceren ZPL. De mededelingen verstrekken partij APIs voor configuratiebeheer en partijuitvoering.
 
 ![ gegeven-fusie-lijst ](assets/communications-batch-structure.png)
 
@@ -67,7 +67,7 @@ Voor het gebruik van de batch-API is het volgende vereist:
 * [ Microsoft Azure-opslagaccount ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 * PDF- of XDP-sjablonen
 * [Gegevens die met sjablonen moeten worden samengevoegd](#form-data)
-* Gebruikers met beheerdersrechten voor Experience Managers
+* Gebruikers met Experience Manager-beheerdersrechten
 
 ### Uw omgeving instellen {#setup-your-environment}
 
@@ -78,23 +78,24 @@ Voordat u een batchbewerking gebruikt:
 * Batchgegevensopslagconfiguratie maken
 * Sjablonen en andere elementen uploaden naar uw Experience Manager Forms Cloud Service-exemplaar
 
-### Klantgegevens (XML-bestanden) uploaden naar Azure Storage {#upload-customer-data-to-Azure-Storage}
+### Klantgegevens (XML-bestanden) uploaden naar Azure Storage
 
 Op uw Microsoft Azure Opslag, creeer [ containers ](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) en [ upload klantengegevens (XML) ](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) aan de [ omslagen ](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) binnen de containers.
+
 >[!NOTE]
 >
 >U kunt de Microsoft Azure-opslag zo configureren dat de invoermap automatisch wordt gewist of dat de inhoud van de uitvoermap op geplande intervallen naar een andere locatie wordt verplaatst. Zorg er echter voor dat de mappen niet worden gereinigd wanneer een batchbewerking die verwijst naar de mappen nog wordt uitgevoerd.
 
 ### Een Cloud-configuratie maken {#create-a-cloud-configuration}
 
-Met de cloudconfiguratie wordt uw Experience Manager-instantie verbonden met Microsoft Azure Storage. Een cloudconfiguratie maken:
+Met de Cloud-configuratie wordt uw Experience Manager-instantie verbonden met Microsoft Azure Storage. Een cloudconfiguratie maken:
 
-1. Ga naar Extra > Cloud Servicen > Azure Storage
+1. Ga naar Extra > Cloud Services > Azure Storage
 1. Open een map als host voor de configuratie en klik op Maken. U gebruikt de algemene map of maakt een map.
 1. Geef een naam op voor de configuratie en referenties waarmee u verbinding wilt maken met de service. U kunt [ deze geloofsbrieven van uw portaal van de Opslag van Microsoft Azure ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys) terugwinnen.
 1. Klik op Maken.
 
-Uw Experience Manager-instantie is nu klaar om verbinding te maken met Microsoft Azure Storage en deze te gebruiken om indien nodig inhoud op te slaan en te lezen.
+Uw Experience Manager-exemplaar is nu gereed om verbinding te maken met Microsoft Azure Storage en deze te gebruiken voor het opslaan en lezen van inhoud, indien nodig.
 
 ### Batchgegevensopslagconfiguratie maken {#create-batch-data-store-configuration}
 
@@ -110,13 +111,13 @@ De configuratie maken:
 1. Geef in de doelmap het pad op van de Azure Storage-container en -map waarin de gegenereerde documenten worden opgeslagen.
 1. Klik op Maken.
 
-Uw Experience Manager-instantie is nu verbonden met Microsoft Azure Storage en geconfigureerd voor het ophalen en verzenden van gegevens naar specifieke locaties op Microsoft Azure Storage.
+Uw Experience Manager-exemplaar is nu verbonden met Microsoft Azure Storage en geconfigureerd voor het ophalen en verzenden van gegevens naar specifieke locaties op Microsoft Azure Storage.
 
 ### Sjablonen en andere elementen uploaden naar uw Experience Manager-instantie {#upload-templates-and-other-assets-to-your-AEM-instance}
 
-Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaatje elk voor creditcardverklaringen, voordelenverklaringen, en claimtoepassingen. Upload al dergelijke XDP en PDF malplaatjes aan uw instantie van de Experience Manager. Een sjabloon uploaden:
+Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaatje elk voor creditcardverklaringen, voordelenverklaringen, en claimtoepassingen. Upload dergelijke XDP- en PDF-sjablonen naar uw Experience Manager-exemplaar. Een sjabloon uploaden:
 
-1. Open een Experience Manager-instantie.
+1. Open je Experience Manager-exemplaar.
 1. Ga naar Forms > Forms en Documenten
 1. Klik op Maken > Map en maak een map. Open de map.
 1. Klik op Maken > Bestand uploaden en upload de sjablonen.
@@ -164,7 +165,7 @@ Het antwoord op het statusverzoek bevat de statussectie. Het verstrekt details o
 
 Nadat de taak is voltooid, worden de gegenereerde documenten opgeslagen in de map `success` op de doellocatie die is opgegeven in de configuratie Batch Data Store. Als er fouten optreden, maakt de service een map `failure` . Het verstrekt informatie over het type en de reden van fouten.
 
-Laten we het met behulp van een voorbeeld begrijpen: neem aan dat er een invoergegevensbestand `record1.xml` en twee uitvoertypen zijn: `PDF` en `PCL` . Vervolgens bevat de doellocatie twee submappen `pdf` en `pcl` , één voor elk uitvoertype. Laat veronderstellen dat het genereren van PDF is gelukt, dan bevat de submap `pdf` de submap `success` die op zijn beurt het daadwerkelijk gegenereerde PDF-document `record1.pdf` bevat. Hiermee wordt aangenomen dat PCL-generatie is mislukt. De submap `pcl` bevat vervolgens een `failure` submap die op zijn beurt een foutbestand bevat `record1.error.txt` dat details van de fout bevat. Bovendien bevat de doellocatie een tijdelijke map met de naam `__tmp__` , waarin bepaalde bestanden staan die tijdens de uitvoering van de batch zijn vereist. Deze map kan worden verwijderd als er geen actieve batchbewerkingen zijn die verwijzen naar de doelmap.
+Laten we het met behulp van een voorbeeld begrijpen: neem aan dat er een invoergegevensbestand `record1.xml` en twee uitvoertypen zijn: `PDF` en `PCL` . Vervolgens bevat de doellocatie twee submappen `pdf` en `pcl` , één voor elk uitvoertype. Laten we aannemen dat het genereren van PDF is gelukt. De submap `pdf` bevat vervolgens de submap `success` die op zijn beurt het daadwerkelijk gegenereerde PDF-document bevat `record1.pdf` . Hiermee wordt aangenomen dat PCL-generatie is mislukt. De submap `pcl` bevat vervolgens een `failure` submap die op zijn beurt een foutbestand bevat `record1.error.txt` dat details van de fout bevat. Bovendien bevat de doellocatie een tijdelijke map met de naam `__tmp__` , waarin bepaalde bestanden staan die tijdens de uitvoering van de batch zijn vereist. Deze map kan worden verwijderd als er geen actieve batchbewerkingen zijn die verwijzen naar de doelmap.
 
 >[!NOTE]
 >
@@ -176,7 +177,7 @@ De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle par
 
 >[!MORELIKETHIS]
 >
->* [ Inleiding aan de as a Cloud Service Mededelingen van AEM Forms ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Inleiding aan de Mededelingen van AEM Forms as a Cloud Service ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ de Architectuur van as a Cloud Service van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
 >* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

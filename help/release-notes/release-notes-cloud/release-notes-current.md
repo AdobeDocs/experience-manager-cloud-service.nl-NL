@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmat
 
 #### Publicatie beheren
 
-Met de workflow Publicatie beheren kunt u formulieren publiceren of verwijderen in verschillende omgevingen, meestal van de auteur tot de publicatie- en voorvertoningsexemplaren. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
+U kunt [ gebruiken beheert publicatiewerkschema ](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) om vormen over milieu&#39;s, typisch van de auteursinstantie aan te publiceren en voorproefinstanties te publiceren. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
 
 #### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
 
