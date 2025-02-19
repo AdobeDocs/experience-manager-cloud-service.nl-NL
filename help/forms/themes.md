@@ -4,7 +4,7 @@ description: Gebruik thema's met een adaptief formulier om een adaptief formulie
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5421'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt thema&#39;s tot stand brengen en toepassen om een Aangepast Vorm <!-- or an interactive communication--> te stileren. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Het thema wordt beheerd onafhankelijk zonder een verwijzing naar een Aanpassings Vorm <!-- or interactive communication -->.
@@ -47,9 +47,9 @@ Er wordt een wizard gestart om een thema te maken.
 
 1. Klik op **[!UICONTROL Create]** en vervolgens op **[!UICONTROL Edit]** om het thema te openen in de Thema-editor of klik op **[!UICONTROL Done]** om terug te keren naar de themapagina.
 
-### Verschil van thema&#39;s in Experience Manager 6.5 Forms en eerdere versies {#difference-in-themes}
+### Verschil met thema&#39;s op Experience Manager 6.5 Forms en eerdere versies {#difference-in-themes}
 
-Thema&#39;s die op een instantie Cloud Service worden gemaakt:
+Thema&#39;s gemaakt op een Cloud Service-instantie:
 
 * Heeft versienummer 2.
 
@@ -59,13 +59,13 @@ Thema&#39;s die op een instantie Cloud Service worden gemaakt:
 
 * U hebt geen schrijf- en updatemachtigingen voor de locatie van /apps (Forms-gebruikersgroep heeft geen schrijf- en updatemachtiging voor de locatie van /apps).
 
-* Voordat u een thema uit [!DNL Experience Manager Forms] 6.5 of eerdere versies uploadt naar een Cloud Service-instantie, moet u controleren of de locatie van de clientbibliotheek is ingesteld op `etc/clientlibs/fd/themes` . Als de clientbibliotheek niet in de map `etc` staat, werkt u de locatie handmatig bij naar `etc/clientlibs/fd/themes` .  U kunt de wijziging doorvoeren in de instantie van uw [!DNL Experience Manager Forms] 6.5- of vorige versie. Na het plaatsen van de plaats van de cliëntbibliotheek, kan een beheerder thema&#39;s aan de instantie van de Cloud Service uploaden of het Hulpmiddel van de Overdracht van de Inhoud gebruiken om de thema&#39;s van 6.5 of vorige versieinstanties aan de instantie van de Cloud Service te migreren.
+* Voordat u een thema uit [!DNL Experience Manager Forms] 6.5 of eerdere versies uploadt naar een Cloud Service-instantie, moet u controleren of de locatie van de clientbibliotheek is ingesteld op `etc/clientlibs/fd/themes` . Als de clientbibliotheek niet in de map `etc` staat, werkt u de locatie handmatig bij naar `etc/clientlibs/fd/themes` .  U kunt de wijziging doorvoeren in de instantie van uw [!DNL Experience Manager Forms] 6.5- of vorige versie. Na het instellen van de locatie van de clientbibliotheek kan een beheerder thema&#39;s uploaden naar de Cloud Service-instantie of met het gereedschap Inhoud overbrengen de thema&#39;s migreren van versie 6.5 of lager naar de Cloud Service-instantie.
 
   Wijzig ook de naam van de categorie. Als de naam niet wordt gewijzigd, kan een fout `theme with same category name exists` optreden. Wanneer u de categorienaam wijzigt, heeft dit geen invloed op de Adaptive Forms die het thema gebruikt.
 
 ### Een thema downloaden {#downloading-a-theme}
 
-U kunt thema&#39;s exporteren als ZIP-bestand en deze thema&#39;s gebruiken in andere projecten of instanties van Experience Managers. Een thema downloaden:
+U kunt thema&#39;s exporteren als ZIP-bestand en deze thema&#39;s gebruiken in andere projecten of in Experience Manager-instanties. Een thema downloaden:
 
 1. Klik op **[!UICONTROL Adobe Experience Manager]** , klik op **[!UICONTROL Forms]** en klik vervolgens op **[!UICONTROL Themes]** .
 
@@ -149,13 +149,13 @@ Lijst met meta-eigenschappen van een thema (bevindt zich op de pagina met eigens
   </tr>
   <tr>
    <td>8.</td>
-   <td>Publish On Time</td>
+   <td>Publiceren op tijd</td>
    <td>Ja</td>
    <td>Tijd om het thema automatisch te publiceren.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Publish Off Time</td>
+   <td>Publiceren buiten tijd</td>
    <td>Ja</td>
    <td>Tijd om de publicatie van het thema automatisch ongedaan te maken.</td>
   </tr>
@@ -400,7 +400,7 @@ De opties voor het aanpassen van statusstijlen variëren voor verschillende comp
    <td><strong>Gebruiken</strong></td>
   </tr>
   <tr>
-   <td><p>Dimensionen en positie</p> </td>
+   <td><p>Afmetingen en positie</p> </td>
    <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>U kunt kiezen uit opties voor weergave, opvulling, marge, breedte, hoogte en Z-index.</p> <p>U kunt de modus Lay-out ook gebruiken om de breedte van componenten te definiëren met behulp van een eenvoudige interface voor slepen en neerzetten. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten </a> te resize.<a href="resize-using-layout-mode.md"></p> </td>
   </tr>
   <tr>
@@ -489,13 +489,13 @@ Een onderbrekingspunt vertegenwoordigt een mobiel apparaat en zijn vertoningsgro
 
 U kunt formuliercomponenten <!-- or interactive communication --> opmaken voor meerdere apparaten. Formuliercomponenten <!-- and interactive communication --> voor desktops en mobiele apparaten kunnen geheel verschillende stijlen hebben.
 
-### Webben Fonts gebruiken in een thema {#using-web-fonts-in-a-theme}
+### Web Fonts gebruiken in een thema {#using-web-fonts-in-a-theme}
 
-U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier <!-- or interactive communication --> . Uit-van-de-doos, [ Adobe Fonts ](https://fonts.adobe.com/), de dienst van de het Webdoopvont van de Adobe, is beschikbaar als configuratie. Om Adobe Fonts te gebruiken, creeer een uitrusting, voeg doopvonten in het toe, en verkrijg identiteitskaart van het Kit van [ Adobe Fonts ](https://fonts.adobe.com/).
+U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier <!-- or interactive communication --> . Uit-van-de-doos, [ Adobe Fonts ](https://fonts.adobe.com/), de dienst van het Webdoopvont van Adobe, is beschikbaar als configuratie. Om Adobe Fonts te gebruiken, creeer een uitrusting, voeg doopvonten in het toe, en verkrijg identiteitskaart van het Kit van [ Adobe Fonts ](https://fonts.adobe.com/).
 
 Voer de volgende stappen uit om Adobe Fonts in Experience Manager te configureren:
 
-1. In de auteursinstantie, klik ![ Adobe Experience Manager ](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager]**>**[!UICONTROL Tools]**![ hamer ](assets/hammer.png) >**[!UICONTROL Deployment]**>**[!UICONTROL Cloud Services]**.
+1. In de auteursinstantie, klik ![ Adobe Experience Manager ](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Navigeer op de pagina **[!UICONTROL Cloud Services]** naar de optie **[!UICONTROL Adobe Fonts]** en open deze. Open de configuratiemap en klik op **[!UICONTROL Create]** .
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een titel op voor de configuratie en klik op **[!UICONTROL Create]** .
 
@@ -606,7 +606,7 @@ Nadat u het thema hebt aangepast, past u dit toe op het formulier <!-- or intera
 
 ## Gevolgen voor andere gebruiksgevallen van adaptieve formulieren {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/unpublish een vorm:** Bij het publiceren van een vorm, wordt het thema toegepast op ook gepubliceerd (als het niet reeds wordt gepubliceerd)
+* **publiceer/unpublish een vorm:** bij het publiceren van een vorm, wordt het thema toegepast op ook gepubliceerd (als het niet reeds wordt gepubliceerd)
 * **de Invoer/de Uitvoer een vorm:** bij het invoeren of het uitvoeren van een vorm, wordt zijn bijbehorend thema ook automatisch ingevoerd of uitgevoerd.
 * **Verwijzingen van een vorm:** Verwijst sectie in vormverwijzingen bevat een extra ingang voor het thema.
 * **Laatste wijzigingstijd van een vorm:** Bijgewerkt wanneer het bijbehorende thema wordt veranderd.
