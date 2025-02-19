@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 35834ba89d20d719a40b930ca672ec242d81d376
+source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -26,109 +26,33 @@ Of u nu lichtgewicht weergave op de client beheert, compatibiliteit tussen brows
 ## Belangrijke functies van de Universal Editor voor EDS Forms
 
 
-<div>
- <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface"> 
-    <h3>WYSIWYG Interface</h3>
-    <p>De Universal Editor biedt een WYSIWYG-interface voor formulierontwerp met een vooraf gebouwde componentbibliotheek, een responsief ontwerp, een op een sjabloon gebaseerd ontwerp en realtime veldwijzigingen.</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Regeleditor">
-    <h3>Regeleditor</h3>
-    <p>Met de regeleditor kunnen gebruikers dynamische formulierinteracties maken aan de hand van gebeurtenisgestuurde regels, directe validatie en foutafhandeling via lichtgewichtJavaScript en JSON.</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Handelingen verzenden">
-    <h3>Handelingen verzenden</h3>
-    <p>Verstuur Acties steunen achterste integratie, voorwaardelijke voorleggingslogica, veilige eindpunten, en pre-bewerkers, stroomlijnend voorleggingswerkschema's.</p>
-  </div>
-</a>
-<div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Publiceren/Publiceren ongedaan maken">
-    <h3>Publiceren/Publiceren ongedaan maken</h3>
-    <p>U kunt gemakkelijk de zichtbaarheid van uw formulieren bepalen door ze rechtstreeks vanuit de editor te publiceren of de publicatie ervan ongedaan te maken met slechts een paar klikken, zodat u de beschikbaarheid en updates van de inhoud dynamisch in real-time kunt beheren.</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Responsieve modus">
-    <h3>Responsieve modus </h3>
-    <p>Formulieren ontwerpen die zich naadloos aanpassen op verschillende apparaten (desktops, tablets en mobiele apparaten). In de responsieve modus kunt u formulieren voor verschillende schermgrootten voorvertonen en testen.</p>
-  </div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Aangepaste componenten">
-    <h3>Aangepaste componenten</h3>
-    <p>Met aangepaste componenten kunnen ontwikkelaars de formuliermogelijkheden uitbreiden door unieke elementen te maken die zijn afgestemd op specifieke gevallen van organisatiegebruik.</p>
-  </div>
-</a>
-</div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Stijlen">
-    <h3>Stijlen</h3>
-    <p>Met CSS opmaken kunnen ontwikkelaars de weergave van formulierelementen aanpassen en een visueel aantrekkelijk ontwerp maken dat wordt uitgelijnd op de esthetiek van de website.</p>
-  </div>
-</a>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Pre-fill services">
-    <h3>Pre-fill services</h3>
-    <p>Pre-fill Services vult formuliervelden automatisch met relevante gebruikersgegevens uit verschillende bronnen, waardoor de handmatige invoer wordt verminderd en de gebruikerservaring wordt verbeterd.</p>
-  </div>
-  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B-tests">
-    <h3>A/B-tests</h3>
-    <p>Met A/B-tests (experimenteren) kunnen organisaties experimenteren met verschillende formulierontwerpen, indelingen en functies om de best presterende varianten te identificeren.</p>
-  </div>
-</a>
-</div>
-<div>
-  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analyse en reeksspatiëring">
-    <h3>Analyse en reeksspatiëring</h3>
-    <p>Bekijk meer inzicht in gebruikersgedrag, formulierinteracties en verzendingssnelheden met ingebouwde analyses en tracering om gegevensgestuurde optimalisatie van formulieren mogelijk te maken.</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Integratie met Adobe Workfront">
-    <h3> Taakbeheer </h3>
-    <p>Dankzij integratie met Adobe Workfront kunnen teams taken voor het maken en onderhouden van formulieren beheren, zodat gestroomlijnde workflows worden gegarandeerd.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Gegevensbinding">
-    <h3>Gegevensbinding</h3>
-    <p>Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en back-endgegevensbronnen, en ondersteunt realtime updates en geavanceerde gegevenstoewijzing voor gestructureerde opslag van klachtengegevens.</p>
-  </div>
-</div>
 
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Editor-aanpassing">
-    <h3>Editor-aanpassing</h3>
-    <p>Ontwikkelaars kunnen de functionaliteit van de editor uitbreiden via UI-extensies, zodat op maat gesneden oplossingen kunnen worden ontwikkeld die op specifieke organisatorische behoeften zijn afgestemd.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Forms insluiten">
-    <h3>Forms insluiten</h3>
-    <p>Sluit formulieren rechtstreeks in op Edge Delivery Services-sitepagina's met de ingebouwde insluitcomponent van de Universal Editor voor een naadloze gebruikerservaring.</p>
-  </div>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Configuratie bedankt">
-    <h3>Configuratie bedankt</h3>
-    <p>Pas eenvoudig het bevestigingsbericht of de pagina aan die aan gebruikers na succesvolle vormverzending worden getoond.</p>
-  </div>
-</a>
-</div>
-</div>
+Hier is de lay-out met kaarten van gelijke breedte (het gebruiken van kolommen met vaste breedte):
+
+| ![ Interface van WYSIWYG ](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ Redacteur van de Regel ](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![ legt Acties ](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) voor |
+|:-------------:|:-------------:|:-------------:|
+| [**Interface van WYSIWYG** ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**Redacteur van de Regel** ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**legt Acties** voor ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| De Universal Editor biedt een WYSIWYG-interface voor formulierontwerp met een vooraf gebouwde componentbibliotheek, een responsief ontwerp, een op een sjabloon gebaseerd ontwerp en realtime veldwijzigingen. | Met de regeleditor kunnen gebruikers dynamische formulierinteracties maken aan de hand van gebeurtenisgestuurde regels, directe validatie en foutafhandeling via lichtgewichtJavaScript en JSON. | Verstuur Acties steunen achterste integratie, voorwaardelijke voorleggingslogica, veilige eindpunten, en pre-bewerkers, stroomlijnend voorleggingswerkschema&#39;s. |
+
+| ![ het Publiceren/Unpublishing ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![ Responsieve Wijze ](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ de Componenten van de Douane ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**het Publiceren/Unpublishing** ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **Responsieve Wijze** | [**de Componenten van de Douane** ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| U kunt gemakkelijk de zichtbaarheid van uw formulieren bepalen door de formulieren te publiceren of de publicatie ervan rechtstreeks vanuit de editor ongedaan te maken met slechts een paar klikken. | Formulieren ontwerpen die zich naadloos aanpassen op verschillende apparaten (desktops, tablets en mobiele apparaten). In de responsieve modus kunt u formulieren voor verschillende schermgrootten voorvertonen en testen. | Met aangepaste componenten kunnen ontwikkelaars de formuliermogelijkheden uitbreiden door unieke elementen te maken die zijn afgestemd op specifieke gevallen van organisatiegebruik. |
+
+| ![ het Stijlen ](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![ prefill de Diensten ](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![ het Testen A/B ](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**het Stijlen** ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **prefill de Diensten** (Binnenkort komend) | [**het Testen A/B** ](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| Met CSS opmaken kunnen ontwikkelaars de weergave van formulierelementen aanpassen en een visueel aantrekkelijk ontwerp maken dat wordt uitgelijnd op de esthetiek van de website. | Pre-fill Services vult formuliervelden automatisch met relevante gebruikersgegevens uit verschillende bronnen, waardoor de handmatige invoer wordt verminderd en de gebruikerservaring wordt verbeterd. | Met A/B-tests kunnen organisaties experimenteren met verschillende formulierontwerpen, indelingen en functies om de best presterende varianten te identificeren. |
+
+| ![ Analytics &amp; het Volgen ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Het Beheer van de Taak ](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![ Gegevens die ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |
+|:-------------:|:-------------:|:-------------:|
+| [**Analytics &amp; het Volgen** ](https://www.aem.live/developer/martech-integration) | **Het Beheer van de Taak** | **Gegevens die** binden |
+| Bekijk meer inzicht in gebruikersgedrag, formulierinteracties en verzendingssnelheden met ingebouwde analyses en tracering om gegevensgestuurde optimalisatie van formulieren mogelijk te maken. | Dankzij integratie met Adobe Workfront kunnen teams taken voor het maken en onderhouden van formulieren beheren, zodat gestroomlijnde workflows worden gegarandeerd. | Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en achterwaartse gegevensbronnen, met ondersteuning voor realtime updates en geavanceerde gegevenstoewijzing. |
+
+| ![ de Aanpassing van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![ Inbeddend Forms ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![ Dank u Configuratie ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+|:-------------:|:-------------:|:-------------:|
+| **de Aanpassing van de Redacteur** | **Inbeddend Forms** | [**Dank u Configuratie** ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| Ontwikkelaars kunnen de functionaliteit van de editor uitbreiden via UI-extensies, zodat op maat gesneden oplossingen kunnen worden ontwikkeld die op specifieke organisatorische behoeften zijn afgestemd. | U kunt formulieren rechtstreeks insluiten in Edge Delivery Services-sitepagina&#39;s met de ingebouwde insluitcomponent van de Universal Editor. | Pas eenvoudig het bevestigingsbericht of de pagina aan die aan gebruikers na succesvolle vormverzending worden getoond. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
