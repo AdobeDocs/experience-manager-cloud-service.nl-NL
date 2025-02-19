@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 2%
@@ -150,7 +150,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 * **voorwerp JSON**
    * Hiermee stelt u de auteur van inhoudsfragment in staat JSON-syntaxis in te voeren in de overeenkomende elementen van een fragment.
-      * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd/gekleefd.
+      * AEM toestaan direct JSON op te slaan dat u hebt gekopieerd/geplakt van een andere service.
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
 
@@ -161,7 +161,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
      >[!NOTE]
      >
-     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
+     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het AEM GraphQL-schema.
 
 ## Eigenschappen {#properties}
 
@@ -261,6 +261,7 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 * **[Verwijzing van het Fragment](#fragment-reference-nested-fragments)** (Geneste Fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
+
      >[!NOTE]
      >
      Deze methode is van bijzonder belang samen met [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -434,9 +435,10 @@ Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te v
 1. **sparen** om het even welke veranderingen.
 
 De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
+
 * Het **Beleid** voor **Toegestane Modellen van het Fragment van de Inhoud**.
 * Als dit leeg is, kunt u het beleid bepalen met behulp van de overervingsregels.
-* Als de overervingsketen geen resultaat levert, dan bekijk de **Cloud Servicen** configuratie voor die omslag (ook eerst direct en dan via overerving).
+* Als de overervingsketen geen resultaat levert, dan bekijk de **configuratie van de Diensten van de Wolk** voor die omslag (ook eerst direct en dan via overerving).
 * Als geen van de bovenstaande resultaten worden behaald, zijn er geen modellen toegestaan voor die map.
 
 ## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
@@ -465,7 +467,7 @@ Een fragmentmodel voor inhoud publiceren:
 1. Navigeer aan **Hulpmiddelen**, **Algemene**, dan open **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
-1. Selecteer uw model, dat door **wordt gevolgd Publish** van de toolbar.
+1. Selecteer uw model, dat door **wordt gevolgd publiceert** van de toolbar.
 De gepubliceerde status wordt vermeld in de console.
 
    >[!NOTE]
@@ -510,7 +512,7 @@ Deze functie biedt beheer voor modellen van inhoudsfragmenten die zijn gepublice
 
 ### De vereisten {#the-requirements}
 
-* Gebruikers bewust maken van de risico&#39;s bij het bewerken van modellen die al worden gebruikt voor de levering van live-inhoud (met andere woorden, modellen die zijn gepubliceerd).
+* Gebruikers bewust maken van de risico&#39;s bij het bewerken van modellen die al worden gebruikt voor de levering van live-inhoud - met andere woorden, modellen die zijn gepubliceerd.
 
 * Ook, om onbedoelde veranderingen te vermijden.
 
