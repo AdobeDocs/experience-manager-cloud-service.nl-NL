@@ -4,9 +4,9 @@ description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -23,16 +23,16 @@ In de responsieve modus kunnen ontwikkelaars lay-outs ontwerpen die automatisch 
 
 ## Forms voorvertonen in responsieve modus voor verschillende apparaten
 
-De Universele Redacteur verstrekt een **pictogram van de Mededinger ![ Emulator ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {hoogte-3%, breedte=3% die bij de hoogste juiste hoek van het scherm wordt gevestigd dat u toestaat om pagina&#39;s over verschillende apparatengrootte voor te vertonen en het gedrag van uw ontvankelijk ontwerp voor een betere gebruikerservaring te testen.**
+De Universele Redacteur verstrekt een **Emulator** pictogram dat bij de hoger-juiste hoek van het scherm wordt gevestigd dat u toestaat om pagina&#39;s over verschillende apparatengrootte voor te vertonen en het gedrag van uw ontvankelijk ontwerp voor een betere gebruikerservaring te testen.
 
 Ga als volgt te werk om te zien hoe formulieren in de Universal Editor worden weergegeven op verschillende schermgrootten:
 
 1. Open het formulier in de Universal Editor om het te bewerken.
-1. Selecteer het ![ pictogram van de Mededinger ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=3%, width=3% beschikbaar op de Universele Toolbar van de Redacteur en klik het emulatorpictogram om de optie te onthullen.
+2. Selecteer het ![ pictogram van de Emulator ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%, width=2%} beschikbaar op de Universele Toolbar van de Redacteur en klik het emulatorpictogram om de optie te tonen.
 
    ![ Responsieve Wijze ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. Selecteer de optie om een mobiel apparaat te emuleren en in de Universele Editor
+3. Selecteer de optie om een mobiel apparaat te emuleren en in de Universele Editor
 
    ![ Responsieve wijze ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png) {width=40%, height=40%}
 
@@ -47,19 +47,19 @@ De Universal Editor biedt verschillende emulators om formulieren voor te vertone
     </tr>
     <tr>
         <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulator voor bureaublad"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulator voor bureaublad" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulator voor tablet"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulator voor tablet" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Mobiel</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobiele emulator" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobiele emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Aangepast apparaat</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulator voor aangepast apparaat"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulator voor aangepast apparaat" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
