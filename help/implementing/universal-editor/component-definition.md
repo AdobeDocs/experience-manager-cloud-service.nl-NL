@@ -4,7 +4,7 @@ description: Begrijp het JSON-contract tussen de componentdefinitie en de Univer
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -41,15 +41,15 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 * `id` geeft de component op unieke wijze aan.
    * Het [ componentenmodel ](/help/implementing/universal-editor/field-types.md#model-structure) van het zelfde `id` bepaalt de gebieden van de component.
    * Omdat het uniek is kan het, bijvoorbeeld, in a [ filterdefinitie ](/help/implementing/universal-editor/filtering.md) worden gebruikt om te bepalen welke componenten aan een container kunnen worden toegevoegd.
+* `model` bepaalt welk [ model ](/help/implementing/universal-editor/field-types.md#model-structure) met de component wordt gebruikt.
+   * Het model wordt daardoor gehandhaafd centraal in de componentendefinitie en te hoeven niet [ worden gespecificeerd de instrumentatie.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Op deze manier kunt u componenten over containers verplaatsen.
+* `filter` bepaalt welke [ filter ](/help/implementing/universal-editor/filtering.md) met de component zou moeten worden gebruikt.
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ Als de component inhoud op de pagina is, kunt u de volgende informatie verstrekk
 #### `template` {#template}
 
 Door optionele sleutel/waardeparen op te geven, kan `template` deze automatisch naar de nieuwe component schrijven. Daarnaast kunnen ook de volgende optionele waarden worden opgegeven.
-
-* `model` bepaalt welk [ model ](/help/implementing/universal-editor/field-types.md#model-structure) met de component wordt gebruikt.
-   * Het model wordt daardoor gehandhaafd centraal in de componentendefinitie en te hoeven niet [ worden gespecificeerd de instrumentatie.](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * Op deze manier kunt u componenten over containers verplaatsen.
-* `filter` bepaalt welke [ filter ](/help/implementing/universal-editor/filtering.md) met de component zou moeten worden gebruikt.
 
 ### `cf` {#cf}
 
