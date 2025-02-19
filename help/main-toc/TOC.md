@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
+source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
 workflow-type: tm+mt
-source-wordcount: '6081'
+source-wordcount: '6083'
 ht-degree: 2%
 
 ---
@@ -1045,6 +1045,7 @@ ht-degree: 2%
          + [Handelingen verzenden](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [Forms publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Opmaak van formulieren aanpassen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Responsieve modus](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + Mogelijkheden {#advanced-features-edge-delivery-services-forms}
          + [Formulierfragmenten gebruiken](/help/edge/docs/forms/form-fragments.md)
          + [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
