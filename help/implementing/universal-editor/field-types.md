@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1499'
 ht-degree: 1%
 
 ---
@@ -49,18 +49,7 @@ U kunt een model aan een component op twee manieren verbinden: het gebruiken van
 
 Dit is de voorkeursmethode voor het koppelen van het model aan de component. Hierdoor kunt u de koppeling centraal behouden in de componentdefinitie en kunt u componenten over containers slepen.
 
-Neem de eigenschap `model` gewoon op in de aanwijzing `template` in het bestand component-definition.json.
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+Neem gewoon de eigenschap `model` op in het componentobject in de `components` -array in het `component-definition.json` -bestand.
 
 Voor details, gelieve te zien de document [ Definitie van de Component.](/help/implementing/universal-editor/component-definition.md)
 
