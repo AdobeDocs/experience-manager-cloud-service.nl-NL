@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
+source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,9 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 
 Als u een bestaand project van AEM gebruikend [ de paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md) hebt, wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt definiëren welke editor AEM moet openen op basis van de inhoudspaden of de `sling:resourceType` . Hierdoor verloopt de ervaring naadloos voor de auteurs, ongeacht de editor die nodig is voor de geselecteerde inhoud.
 
-1. Open de Manager van de Configuratie.
+1. Als u deze configuratiefunctie wilt gebruiken, neemt u contact op met de klantenservice van Adobe om toegang tot de Universal Editor URL Service voor uw programma te activeren.
+
+1. Zodra de Zorg van de Klant toegang tot de Universele dienst van de Redacteur URL heeft geactiveerd, open de Manager van de Configuratie.
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -137,7 +139,15 @@ Als u een bestaand project van AEM gebruikend [ de paginaredacteur ](/help/sites
 
 1. Klik **sparen**.
 
-AEM opent de Universal Editor voor pagina&#39;s die op deze configuratie zijn gebaseerd, in de volgende volgorde.
+1. Controleer uw [ externalizer configuratie ](/help/implementing/developing/tools/externalizer.md) en zorg bij een minimum u de lokale, auteur, en publiceer milieu&#39;s hebt die zoals in het volgende voorbeeld worden geplaatst.
+
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+Zodra deze configuratiestappen volledig zijn, zal AEM de Universele Redacteur voor pagina&#39;s in de volgende orde openen.
 
 1. AEM controleert de toewijzingen onder `Universal Editor Opening Mapping` en als de inhoud zich onder de aldaar gedefinieerde paden bevindt, wordt de Universal Editor geopend.
 1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
