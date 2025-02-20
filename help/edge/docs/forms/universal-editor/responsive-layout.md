@@ -4,9 +4,9 @@ description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
+source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ De Universele Redacteur verstrekt een **Emulator** pictogram dat bij de hoger-ju
 Ga als volgt te werk om te zien hoe formulieren in de Universal Editor worden weergegeven op verschillende schermgrootten:
 
 1. Open het formulier in de Universal Editor om het te bewerken.
-2. Selecteer het ![ pictogram van de Emulator ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%, width=2%} beschikbaar op de Universele Toolbar van de Redacteur en klik het emulatorpictogram om de optie te tonen.
+1. Selecteer het ![ pictogram van de Emulator ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%, width=2%} beschikbaar op de Universele Toolbar van de Redacteur en klik het emulatorpictogram om de optie te tonen.
 
    ![ Responsieve Wijze ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-3. Selecteer de optie om een mobiel apparaat te emuleren en in de Universele Editor
+1. Selecteer een optie om een formulier te emuleren in de Universal Editor op een geselecteerd apparaat: Computer, Tablet, Mobiel.
 
    ![ Responsieve wijze ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png) {width=40%, height=40%}
 
@@ -42,24 +42,24 @@ De Universal Editor biedt verschillende emulators om formulieren voor te vertone
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
-        <th>Type emulator</th>
-        <th>Apparaatafbeelding</th>
+        <th style="width: 20%">Type emulator</th>
+        <th style="width: 80%">Apparaatafbeelding</th>
     </tr>
     <tr>
-        <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulator voor bureaublad" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Desktop</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulator voor bureaublad" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulator voor tablet" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Tablet</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulator voor tablet" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Mobiel</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobiele emulator" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Mobiel</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobiele emulator" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Aangepast apparaat</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulator voor aangepast apparaat" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Aangepast apparaat</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulator voor aangepast apparaat" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
