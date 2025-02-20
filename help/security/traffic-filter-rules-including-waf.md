@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4215'
 ht-degree: 0%
 
 ---
@@ -49,21 +49,21 @@ Dit artikel is onderverdeeld in de volgende secties:
 * **geadviseerde Regels van de Aanzet:** Een reeks regels om met te beginnen.
 * **Leerprogramma:** Praktische kennis over de eigenschap, met inbegrip van hoe te om dashboardtoolings te gebruiken om de juiste regels te verklaren.
 
-De Adobe nodigt u uit terugkoppelen of vragen over de regels van de verkeersfilter te stellen door **aemcs-waf-adopter@adobe.com** te e-mailen.
+Adobe nodigt u uit terugkoppelen of vragen over de regels van de verkeersfilter te stellen door **aemcs-waf-adopter@adobe.com** te e-mailen.
 
 ## Overzicht van verkeersbeveiliging {#traffic-protection-overview}
 
-In het huidige digitale landschap is kwaadwillig verkeer een steeds grotere bedreiging. De Adobe erkent de ernst van het risico en biedt verscheidene benaderingen aan om klantentoepassingen te beschermen en aanvallen te verlichten wanneer zij voorkomen.
+In het huidige digitale landschap is kwaadwillig verkeer een steeds grotere bedreiging. Adobe erkent de ernst van het risico en biedt verschillende manieren om klanttoepassingen te beschermen en aanvallen te beperken wanneer deze zich voordoen.
 
-Bij de rand, absorbeert de Adobe Beheerde CDN de aanvallen van Dos bij de netwerklaag (lagen 3 en 4), met inbegrip van vloed en bezinning/versterkingsaanvallen.
+Aan de rand absorbeert de door Adobe beheerde CDN DoS-aanvallen op de netwerklaag (lagen 3 en 4), inclusief overstroming en reflectie-/versterkingsaanvallen.
 
-Door gebrek, neemt de Adobe maatregelen om prestatiesverslechtering te verhinderen toe te schrijven aan barsten van onverwacht hoog verkeer boven een bepaalde drempel. Als er een aanval van Dos is die plaatsbeschikbaarheid beïnvloedt, worden de verrichtingenteams van de Adobe gealarmeerd en nemen stappen om te verlichten.
+Adobe neemt standaard maatregelen om te voorkomen dat de prestaties achteruitgaan als gevolg van uitbarstingen van onverwacht hoog verkeer boven een bepaalde drempel. Als er een aanval van Dos is die plaatsbeschikbaarheid beïnvloedt, worden de verrichtingenteams van Adobe gewaarschuwd en nemen stappen om te verlichten.
 
 De klanten kunnen pro-actieve maatregelen nemen om de aanvallen van de toepassingslaag (laag 7) te verlichten door regels bij diverse lagen van de stroom van de inhoudslevering te vormen.
 
 Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
 
-Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen ](/help/operations/config-pipeline.md). Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
+Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen ](/help/operations/config-pipeline.md). Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
 
 ## Voorgesteld proces {#suggested-process}
 
@@ -206,7 +206,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
 **Nota&#39;s**
 
-* De request-eigenschap `clientIp` kan alleen worden gebruikt met de volgende voorspellingen: `equals`, `doesNotEqual`, `in`, `notIn` . `clientIp` kan ook worden vergeleken met IP-bereiken wanneer `in` en `notIn` voorspellingen worden gebruikt. In het volgende voorbeeld wordt een voorwaarde geïmplementeerd om te beoordelen of een client-IP zich in het IP-bereik van 192.168.0.0/24 bevindt (dus van 192.168.0.0 tot 192.168.0.255):
+* De request-eigenschap `clientIp` kan alleen worden gebruikt met de volgende voorspellingen: `equals`, `doesNotEqual`, `in`, `notIn` . `clientIp` kan ook worden vergeleken met IP-bereiken wanneer `in` en `notIn` voorspellingen worden gebruikt. In het volgende voorbeeld wordt een voorwaarde geïmplementeerd om te bepalen of een client-IP zich binnen het IP-bereik van 192.168.0.0/24 bevindt (dus van 192.168.0.0 tot 192.168.0.255 ):
 
 ```
 when:
@@ -214,7 +214,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* De Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ Fastly verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid {](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ snelst verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid {](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Handelingsstructuur {#action-structure}
@@ -235,34 +235,51 @@ De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt
 
 De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels voor verkeersfilters, kan naar het volgende verwijzen:
 
+#### Verkeer
+
 | **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
 |---|---|---|
+| AANVALLEN | Aanvallen | Markering om verzoeken te identificeren die een of meer van de aanvalstypen bevatten die in die tabel worden vermeld |
+| AANVALLEN VANUIT BAD-IP | Aanval van slechte IP | Markering voor het identificeren van aanvragen afkomstig uit `BAD-IP` en die een of meer van de aanvalstypen bevatten die in die tabel worden vermeld |
 | SQLI | SQL-injectie | SQL de Injectie is de poging om toegang tot een toepassing te verkrijgen of bevoorrechte informatie te verkrijgen door willekeurige gegevensbestandvragen uit te voeren. |
 | BACKEUR | Achterkant | Een achterdeursignaal is een verzoek dat probeert te bepalen als een gemeenschappelijk achterdeurdossier op het systeem aanwezig is. |
 | CMDEXE | Opdracht uitvoeren | De Uitvoering van het bevel is de poging om controle te verkrijgen of een doelsysteem door willekeurige systeembevelen door middel van gebruikersinput te beschadigen. |
-| CMDEXE-NO-BIN | Opdracht uitvoeren, behalve op `/bin/` | Zorg voor hetzelfde beschermingsniveau als `CMDEXE` en schakel false-positive in `/bin` uit vanwege AEM architectuur. |
+| CMDEXE-NO-BIN | Opdracht uitvoeren, behalve op `/bin/` | Zorg voor hetzelfde beschermingsniveau als `CMDEXE` en schakel false-positive in `/bin` uit vanwege AEM-architectuur. |
 | XSS | Scripts voor meerdere sites | Met scripts die verwijzen naar andere sites wordt geprobeerd een gebruikersaccount of een webbrowsersessie te kapen via kwaadaardige JavaScript-code. |
 | TRAVERSAL | Directorytraversal | Directorytraversal is de poging om bevoorrechte omslagen door een systeem in hoop te navigeren om gevoelige informatie te verkrijgen. |
 | GEBRUIKER | Gereedschap Bijsluiten | De Tooling van de aanval is het gebruik van geautomatiseerde software om veiligheidskwetsbaarheid te identificeren of te proberen om een ontdekte kwetsbaarheid te exploiteren. |
 | LOG4J-JNDI | Log4J JNDI | De aanvallen van Log4J JNDI proberen om de [ kwetsbaarheid Log4Shell ](https://en.wikipedia.org/wiki/Log4Shell) huidig in versies Log4J vroeger dan 2.16.0 te exploiteren |
+| CVE | CVE | Markering om een CVE te identificeren. Wordt altijd gecombineerd met een markering `CVE-<CVE Number>` . Neem contact op met Adobe voor meer informatie over welke CVE&#39;s Adobe u beschermt. |
+
+#### Verdacht verkeer
+
+| **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
+|---|---|---|
+| ABNORMALPATH | Abnormaal pad | Abnormaal pad geeft aan dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (`/foo/./bar` is bijvoorbeeld genormaliseerd naar `/foo/bar`) |
+| BAD-IP | Onjuiste IP | De vlag om verzoek te identificeren dat van IPs komt identificeert zich slecht, of omdat er als kwaadwillige bronnen (`SANS`, `TORNODE`) geïdentificeerd zijn of omdat zij door WAF slecht zijn geïdentificeerd nadat zij teveel kwaadwillige verzoeken verzonden |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
 | CODEINJECTIE | Code-injectie | De Injectie van de code is de poging om controle te verkrijgen of een doelsysteem door arbitraire bevelen van de toepassingscode door gebruikersinput te beschadigen. |
-| ABNORMALPATH | Abnormaal pad | Abnormaal pad geeft aan dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (`/foo/./bar` is bijvoorbeeld genormaliseerd naar `/foo/bar`) |
-| DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
+| GECOMPRIMEERD | Compressie gedetecteerd | De POST-aanvraaginstantie is gecomprimeerd en kan niet worden gecontroleerd. Als bijvoorbeeld een aanvraagheader `Content-Encoding: gzip` is opgegeven en de hoofdtekst van de POST geen onbewerkte tekst is. |
+| RESPONSESPLIT | HTTP-antwoordsplitsing | Identificeert wanneer CRLF-tekens als invoer naar de toepassing worden verzonden om headers in de HTTP-reactie te injecteren |
 | NOTUTF8 | Ongeldige codering | Ongeldige codering kan ertoe leiden dat de server schadelijke tekens van een verzoek in een reactie omzet, wat of een ontkenning van de dienst of XSS veroorzaakt |
-| JSON-ERROR | JSON-coderingsfout | Een POST, PUT, of PATCH- verzoeklichaam dat als bevattende JSON binnen de &quot;Content-Type&quot;verzoekkopbal wordt gespecificeerd maar JSON het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
-| MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
+| MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST-, PUT- of PATCH-aanvraaginstantie die onjuist is samengesteld volgens de aanvraagheader &quot;Content-Type&quot;. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST lichaam bevat dat json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
 | SANS | Verkeer van kwaadwillige IP | [ SANS Internet Storm Center ](https://isc.sans.edu/) lijst van gemelde IP adressen die in kwaadwillige activiteit betrokken waren. |
-| NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
+| NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | A POST, PUT, or PATCH request that does not have a &quot;Content-Type&quot; request header. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
 | NOUA | Geen gebruikersagent | Geeft aan dat een aanvraag geen header &quot;User-Agent&quot; bevat of dat de headerwaarde niet is ingesteld. |
-| TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
 | NULLBYTE | Null Byte | Null-bytes worden normaal gesproken niet weergegeven in een verzoek en geven aan dat het verzoek onjuist is geformuleerd en mogelijk kwaadaardig is. |
+| OOB-DOMAIN | Buiten-banddomein | Buiten-de-banddomeinen worden over het algemeen gebruikt tijdens penetratie het testen om kwetsbaarheid te identificeren waarin de netwerktoegang wordt toegestaan. |
 | PRIVATEFIEL | Persoonlijke bestanden | Persoonlijke bestanden zijn vertrouwelijk, zoals een Apache `.htaccess` -bestand of een configuratiebestand dat vertrouwelijke informatie kan lekken |
 | SCANNER | Scanner | Identificeert populaire scanservices en -gereedschappen |
-| RESPONSESPLIT | HTTP-antwoordsplitsing | Identificeert wanneer CRLF-tekens als invoer naar de toepassing worden verzonden om headers in de HTTP-reactie te injecteren |
-| XML-ERROR | XML-coderingsfout | Een POST, PUT, of PATCH aanvraaglichaam dat als bevattende XML binnen de &quot;Inhoud-Type&quot;verzoekkopbal wordt gespecificeerd maar XML het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
-| DATACENTER | Datacenter | Identificeert de aanvraag als afkomstig van een bekende hostingprovider. Dit type van verkeer wordt niet algemeen geassocieerd met een echt eind - gebruiker. |
 
+#### Diversen verkeer
+
+| **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
+|---|---|---|
+| DATACENTER | Datacenter | Identificeert de aanvraag als afkomstig van een bekende hostingprovider. Dit type van verkeer wordt niet algemeen geassocieerd met een echt eind - gebruiker. |
+| DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
+| JSON-ERROR | JSON-coderingsfout | A POST, PUT, or PATCH request body that is specified as containing JSON within the &quot;Content-Type&quot; request header but contains JSON parsing errors. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
+| TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
+| XML-ERROR | XML-coderingsfout | A POST, PUT, or PATCH request body that is specified as containing XML within the &quot;Content-Type&quot; request header but contains XML parsing errors. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
 
 ## Overwegingen {#considerations}
 
@@ -282,7 +299,7 @@ Hier volgen enkele regelvoorbeelden. Zie de [ sectie van de tariefgrens ](#rate-
 
 **Voorbeeld 1**
 
-Deze regel blokkeert verzoeken die uit **IP 192.168.1.1** komen:
+Deze regel blokkeert aanvragen die afkomstig zijn van **IP192.168.1.1** :
 
 ```
 kind: "CDN"
@@ -322,7 +339,7 @@ data:
 
 **Voorbeeld 3**
 
-Deze regel blokkeert verzoeken op publiceren die de vraagparameter `foo` bevatten, maar staat elk verzoek toe dat uit IP 192.168.1.1 komt:
+Deze regel blokkeert verzoeken om publicatie die de vraagparameter `foo` bevatten, maar staat elke aanvraag toe die uit IP 192.168.1.1 komt:
 
 ```
 kind: "CDN"
@@ -477,11 +494,11 @@ data:
 
 ## CVE-regels {#cve-rules}
 
-Als WAF een licentie heeft, past de Adobe automatisch blokkeringsregels toe om te beschermen tegen veel bekende CVE&#39;s (Common Vulnerabilities and Exposure) en kunnen nieuwe CVE&#39;s kort na de ontdekking worden toegevoegd. Klanten moeten de CVE-regels zelf niet configureren en hoeven dat ook niet te doen.
+Als WAF een licentie heeft, past Adobe automatisch blokkeringsregels toe ter bescherming tegen veel bekende CVE&#39;s (Common Vulnerabilities and Exposure) en kunnen er snel na de ontdekking nieuwe CVE&#39;s worden toegevoegd. Klanten moeten de CVE-regels zelf niet configureren en hoeven dat ook niet te doen.
 
 Als een verkeersverzoek een CVE aanpast, zal het in de overeenkomstige CDN logboekingang verschijnen.
 
-Neem contact op met de ondersteuning van de Adobe als er vragen zijn over een bepaalde CVE of als er een bepaalde CVE-regel is die uw organisatie wil uitschakelen.
+Neem contact op met de ondersteuning van Adobe als er vragen zijn over een bepaalde CVE of als er een bepaalde CVE-regel is die uw organisatie wil uitschakelen.
 
 ## Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
 
@@ -516,7 +533,7 @@ data:
 
 Een ](/help/operations/actions-center.md) e-mailbericht van het Centrum van Acties 1} zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.[
 
-Als deze greep wordt voldaan aan, zal de Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van verkeersregels ](#tutorial-blocking-DDoS-with-rules) voor een geleide looppas-door.
+Als deze greep wordt ontmoet, zal Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van verkeersregels ](#tutorial-blocking-DDoS-with-rules) voor een geleide looppas-door.
 
 Dit alarm wordt toegelaten door gebrek, maar het kan worden onbruikbaar gemaakt gebruikend het *defaultTrafficAlerts* bezit, dat aan vals wordt geplaatst. Zodra de waarschuwing in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC).
 
@@ -532,7 +549,7 @@ data:
 
 ## CDN-logs {#cdn-logs}
 
-AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager ****, wanneer het selecteren van de dienst van de Auteur of van Publish.
+AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager ****, wanneer het selecteren van de Auteur of de Publish dienst.
 
 CDN-logbestanden kunnen maximaal vijf minuten worden vertraagd.
 
@@ -642,11 +659,11 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 
 ## Dashboard Tooling {#dashboard-tooling}
 
-Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer om CDN-logbestanden in te voeren die via Cloud Manager zijn gedownload. Met dit hulpmiddel, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF.
+Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer om CDN-logbestanden in te voegen die via Cloud Manager zijn gedownload. Met dit hulpmiddel, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF.
 
 Het tooling van het dashboard kan direct van de [ worden gekloond AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats GitHub.
 
-[ Tutorials ](#tutorial) zijn beschikbaar voor concrete instructies op hoe te om het dashboardhulpmiddel te gebruiken.
+[ Leerprogramma&#39;s ](#tutorial) zijn beschikbaar voor concrete instructies op hoe te om het dashboardhulpmiddel te gebruiken.
 
 ## Aanbevolen startregels {#recommended-starter-rules}
 
