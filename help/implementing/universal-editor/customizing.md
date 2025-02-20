@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ De **publiceer** knoop kan daarom volledig in app worden onderdrukt door de volg
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## Publiceren uitschakelen voor voorvertoning {#publish-preview}
+
+Bepaalde auteurswerkschema&#39;s zouden de publicatie aan de [ voorproefdienst ](/help/sites-cloud/authoring/sites-console/previewing-content.md) (als beschikbaar) kunnen uitsluiten.
+
+De **optie van de Voorproef** in publiceer venster kan daarom volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## Componenten filteren {#filtering-components}

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,10 @@ De interface is verdeeld in deze hoofdgebieden.
 * [Het deelvenster Eigenschappen](#properties-rail)
 
 ![ Universele Redacteur UI ](assets/ui.png)
+
+>[!TIP]
+>
+>De Universele Redacteur biedt een aantal [ aanpassingsopties ](/help/implementing/universal-editor/customizing.md) en [ uitbreidingspunten ](/help/implementing/universal-editor/extending.md) aan die kunnen wijzigen en aan de functionaliteit van de redacteur toevoegen. Daarom ziet u mogelijk andere opties dan de hier beschreven standaardopties.
 
 ### De Experience Cloud-header {#experience-cloud-header}
 
