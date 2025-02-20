@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,17 @@ ht-degree: 0%
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/configure-msdynamics.md)
 * [Een adaptief formulier verbinden met Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Aangepaste verzendactie maken](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Universele editor{#universal-editor-see-also}
+
+* [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Uw formulier publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Uw formulier verzenden](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Het uiterlijk van uw formulieren aanpassen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Regels maken voor uw formulier](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [reCAPTCHA gebruiken in uw formulier](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Een aangepaste component voor uw formulier maken](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [ vorm van de Voorproef op ontvankelijke wijze ](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## Zie ook {#see-more-forms-eds}
 
@@ -165,7 +176,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u de pijpleiding toelaat.
 >
 >**Cloud Manager IP Lijst van gewenste personen**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28,20.186.185.181, 52.254.106.240/28, 52.254.107.128/28, 52.254.105.192/28, 52.254.106.176/28, 20.186.185.227, 52.254.106.144/28, 52.254.107.64/28, 20.186.185.239, 20.22.83.112, 52.254.107.80/28, 52.254.107.144/28, 52.254.106.224/28, 20.14.241.153, 52.254.107.0/28, 52.254.107.32/28, 52.254.106.208/28, 40.70.154.136/29, 52.254.106.160/28, 52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Voeg een Lijst van gewenste personen van Cloud Manager IP en front-end pijpleidingen toe {#add-cm-allowlist-frontend-pipeline}

@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Hier is de lay-out met kaarten van gelijke breedte (het gebruiken van kolommen m
 
 | ![ het Publiceren/Unpublishing ](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![ Responsieve Wijze ](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ de Componenten van de Douane ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**het Publiceren/Unpublishing**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Responsieve Wijze**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**de Componenten van de Douane**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | U kunt gemakkelijk de zichtbaarheid van uw formulieren bepalen door de formulieren te publiceren of de publicatie ervan rechtstreeks vanuit de editor ongedaan te maken met slechts een paar klikken. | Formulieren ontwerpen die zich naadloos aanpassen op verschillende apparaten (desktops, tablets en mobiele apparaten). In de responsieve modus kunt u formulieren voor verschillende schermgrootten voorvertonen en testen. | Met aangepaste componenten kunnen ontwikkelaars de formuliermogelijkheden uitbreiden door unieke elementen te maken die zijn afgestemd op specifieke gevallen van organisatiegebruik. |
 
@@ -52,7 +51,6 @@ Hier is de lay-out met kaarten van gelijke breedte (het gebruiken van kolommen m
 
 | ![ CAPTCHA ](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![ Inbeddend Forms ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![ Dank u Configuratie ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **de Aanpassing van de Redacteur** | **Inbeddend Forms** | [**Dank u Configuratie**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Ontwikkelaars kunnen de functionaliteit van de editor uitbreiden via UI-extensies, zodat op maat gesneden oplossingen kunnen worden ontwikkeld die op specifieke organisatorische behoeften zijn afgestemd. | U kunt formulieren rechtstreeks insluiten in Edge Delivery Services-sitepagina&#39;s met de ingebouwde insluitcomponent van de Universal Editor. | Pas eenvoudig het bevestigingsbericht of de pagina aan die aan gebruikers na succesvolle vormverzending worden getoond. |
 
@@ -246,13 +244,5 @@ De Universele Redacteur omvat ingebouwde analytische en het volgen hulpmiddelen 
 
 ## Formulieren maken
 
-* [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
-* [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
-* [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
-* [ Echte Controle van het Gebruik ](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 

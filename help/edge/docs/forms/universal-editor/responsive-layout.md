@@ -4,9 +4,9 @@ description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -67,14 +67,7 @@ U kunt het **pictogram van de Omwenteling van het 1} Scherm gebruiken {om tussen
 
 ## Zie ook
 
-* [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
-* [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
-* [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
-* [ Echte Controle van het Gebruik ](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 
