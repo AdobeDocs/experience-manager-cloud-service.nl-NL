@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6091'
 ht-degree: 2%
 
 ---
@@ -1206,6 +1206,7 @@ ht-degree: 2%
       + Edge Delivery-sites {#edge-delivery-sites}
          + [Inleiding tot Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Een Edge Delivery-site toevoegen aan Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Een Edge Delivery-site maken in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Pushvalidatie instellen voor een Edge Delivery-site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Edge Delivery-sites beheren in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Domeininstellingen {#custom-domain-names}
