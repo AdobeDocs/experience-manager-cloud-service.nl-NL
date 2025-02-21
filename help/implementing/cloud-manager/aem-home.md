@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Launchpad (vroege adopter)
+title: Info AEM Launchpad&ndash; Vroege adopter
 description: Meer informatie over de Adobe Experience Manager Launchpad-pagina.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 2c9dfbd55cbeb3f5a89388b259e5a9a280a55fb9
+source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Manager Launchpad {#aem-launchpad}
+# Over AEM Launchpad - Vroege adopter {#aem-launchpad}
 
 AEM Launchpad introduceert een gecentraliseerd beginpunt voor het beheer van inhoud, elementen en sites in Adobe Experience Manager. AEM Launchpad is ontworpen om een persoonlijke ervaring te bieden en biedt u de mogelijkheid om probleemloos door het AEM-ecosysteem te navigeren op basis van uw rollen en doelen. Als gids biedt deze informatie belangrijke inzichten en aanbevolen acties om u te helpen uw doelstellingen efficiënt te verwezenlijken. Met een duidelijke, persoonlijke lay-out zorgt AEM Launchpad voor snelle toegang tot essentiële gereedschappen en ondersteunt het een gestroomlijnde en effectieve ervaring voor alle AEM-functies.
 
