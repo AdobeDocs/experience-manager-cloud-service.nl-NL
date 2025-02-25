@@ -4,19 +4,20 @@ description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-
 # Responsieve modus in WYSIWYG Authoring
 
 De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) staat u toe om voorproef Edge Delivery Services Forms met verschillende mededingers om de blik en het gevoel van de vorm tijdens creatie te zien.
 
 In de responsieve modus kunnen ontwikkelaars lay-outs ontwerpen die automatisch worden aangepast aan verschillende schermgrootten, zoals desktops, tablets en mobiele apparaten. De Universele Redacteur steunt mededingers voor Desktop, tablet, en mobiele apparaten. U kunt de hoogte en breedte instellen op basis van de schermgrootte en de volgende handelingen uitvoeren:
+
 * De richting instellen
 * De breedte en hoogte opgeven
 * De richting wijzigen
@@ -68,6 +69,3 @@ U kunt het **pictogram van de Omwenteling van het 1} Scherm gebruiken {om tussen
 ## Zie ook
 
 {{universal-editor-see-also}}
-
-
-

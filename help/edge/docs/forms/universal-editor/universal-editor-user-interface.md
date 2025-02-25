@@ -4,8 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met de Universal Edi
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
+hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 0%
@@ -42,7 +43,7 @@ De Experience Cloud-header bevindt zich boven aan de console. Deze biedt informa
 ![ Universal Editor Experience Cloud Header ](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
 
-Laten we elk onderdeel ervan begrijpen.
+Laten we elk van zijn componenten begrijpen.
 
 * **Adobe Experience Cloud**
 
@@ -85,7 +86,7 @@ Het pictogram geeft de details van de auteur van het formulier weer, samen met d
 Met de werkbalk kunt u naar andere formulieren navigeren en deze bewerken. Hiermee kunnen ze ook het formulier publiceren of de publicatie ervan ongedaan maken, de eigenschappen van het formulier bewerken en toegang krijgen tot de regeleditor.
 ![ Universele Toolbar van de Redacteur ](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-Laten we elk onderdeel ervan begrijpen.
+Laten we elk van zijn componenten begrijpen.
 
 * **Knop van het Huis**
 Met de knop Home kunt u naar de startpagina van de Universal Editor navigeren. U kunt ook rechtstreeks de URL invoeren van het formulier dat u wilt bewerken met de universele editor.
@@ -151,7 +152,7 @@ Het **Comité van Eigenschappen** wordt gevestigd op de rechterkant van de redac
 ![ gebruik-eigenschappen paneel ](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png) {width=50%,height=50%}
 
 
-Laten we elk onderdeel ervan begrijpen.
+Laten we elk van zijn componenten begrijpen.
 
 
 * **de Wijze van Eigenschappen**
