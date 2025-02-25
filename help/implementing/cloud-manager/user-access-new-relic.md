@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1806'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Meer informatie over de service voor het controleren van de prestaties van New R
 
 ## Informatie over New Relic One {#introduction}
 
-Adobe legt een grote nadruk op de controle, beschikbaarheid, en prestaties van uw toepassing. AEM as a Cloud Service biedt toegang tot New Relic One-bewaking, zodat teams als onderdeel van het standaardproduct uitgebreide zichtbaarheid krijgen in de maatstaven voor systeem- en omgevingsprestaties.
+Adobe legt de nadruk op de bewaking, beschikbaarheid en prestaties van uw toepassing. AEM as a Cloud Service biedt toegang tot New Relic One-bewaking, zodat teams als onderdeel van het standaardproduct uitgebreide zichtbaarheid krijgen in de maatstaven voor systeem- en omgevingsprestaties.
 
 In dit document wordt beschreven hoe u de toegang tot APM-functies (Application Performance Monitoring) van New Relic One in AEM as a Cloud Service-omgevingen kunt beheren. Een effectief beheer van deze functies ondersteunt optimale prestaties en maximaliseert de voordelen van AEM as a Cloud Service.
 
@@ -141,7 +141,7 @@ Als u wordt gevraagd uw e-mail te verifiëren tijdens het aanmelden bij New Reli
 
 Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de meest recente gebruikersrecord die aan uw e-mailadres is gekoppeld. Vermijd het verifiëren van uw e-mail tijdens elke login, klik **me** checkbox in het login scherm herinneren.
 
-Voor meer hulp, open een steunkaartje als [ AEM Portaal van de Steun ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp, open een steunkaartje als [ Portaal van de Steun van AEM ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Problemen met New Relic One-gebruikerstoegang oplossen {#troubleshooting}
 
@@ -179,32 +179,33 @@ Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperking
 
 >[!NOTE]
 >
->Als er gedurende 90 dagen of langer geen activiteit wordt gedetecteerd in uw New Relic One-subaccount, wordt de APM-agent gestopt.
+>Als er gedurende 30 dagen of langer geen activiteit wordt gedetecteerd in uw New Relic One-subaccount, wordt de APM-agent gestopt.
 >
 >Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 
-Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje als [ AEM Portaal van de Steun ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje als [ Portaal van de Steun van AEM ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen {#faqs}
 
-+++**wat controleert de Adobe met New Relic One?** {#adobe-monitor}
++++**wat controleert Adobe met New Relic One?** {#adobe-monitor}
 
-Adobe volgt de auteur-, publicatie- en voorvertoningsservices van AEM as a Cloud Service (indien beschikbaar) via de New Relic One Java-plug-in. Adobe maakt aangepaste New Relic One APM-telemetrie en bewaking mogelijk in niet-productie- en productie-AEM as a Cloud Service-omgevingen.
+Adobe bewaakt de auteur-, publicatie- en voorvertoningsservices van AEM as a Cloud Service (indien beschikbaar) via de New Relic One Java-plug-in. Adobe maakt aangepaste New Relic One APM telemetrie en bewaking mogelijk in niet-productie en productie-AEM as a Cloud Service-omgevingen.
 
-Uw New Relic One-account is gekoppeld aan een account met een primaire Adobe en bevat meerdere toepassingen die erin worden gerapporteerd: drie per AEM as a Cloud Service-omgeving.
+Uw New Relic One-account is gekoppeld aan een primaire Adobe-account en bevat meerdere toepassingen die erin worden gerapporteerd; drie per AEM as a Cloud Service-omgeving.
 
 * Eén toepassing voor de service Auteur per omgeving
-* Eén toepassing voor de `Publish` -service per omgeving (inclusief Golden Publish)
+* Eén toepassing voor de service `Publish` per omgeving (inclusief Gulden publicatie)
 * Eén toepassing voor de voorbeeldservice per omgeving
 
 Opmerking:
 
 * Elke toepassing gebruikt één licentiecode.
 * AEM as a Cloud Service-omgevingen rapporteren slechts aan één New Relic One-account.
-* De volledige meetgegevens en gebeurtenissen voor de bewaking van beide New Relic One worden drie maanden bewaard. &lt;!— CQDOC-22238 - Bijgewerkt van zeven dagen tot drie maanden. >
+* De volledige meetgegevens en gebeurtenissen voor de bewaking van beide New Relic One worden drie maanden bewaard.
+
 +++
 
-+++**verzendt de Adobe waakzame berichten van New Relic One?** {#alerting-new-relic}
++++**verzendt Adobe waakzame berichten van New Relic One?** {#alerting-new-relic}
 
 Adobe biedt New Relic One alleen toegang voor waarneembare doeleinden en gebruikt deze niet voor klantwaarschuwingen of interne operationele waarschuwingen. De berichten voor om het even welke incidenten worden verzonden gebruikend [ profielen van het gebruikersbericht ](/help/journey-onboarding/notification-profiles.md).
 +++
@@ -221,19 +222,19 @@ Aangepaste SSO-configuratie wordt niet ondersteund voor de New Relic One-account
 
 +++**wat als ik reeds een op-gebouw New Relic abonnement heb?** {#new-relic-subscription}
 
-New Relic One is het nieuwe platform voor waarneming vanuit New Relic en biedt ondersteuning voor Adoben en uw teams in staat om op één plaats metingen en gebeurtenissen te observeren, te controleren en weer te geven.
+New Relic One is het nieuwe platform voor waarneming vanuit New Relic en biedt Adobe-ondersteuning en uw teams de mogelijkheid om metingen en gebeurtenissen op één locatie te observeren, te controleren en weer te geven.
 
 New Relic One biedt gebruikers de mogelijkheid om te zoeken in alle accounts waar ze toegang hebben tot de gegevens van alle services en hosts in één weergave en deze zichtbaar te maken.
 
-De steun van de Adobe controleert AEM as a Cloud Service met New Relic One en andere hulpmiddelen, terwijl uw teams New Relic voor de diensten en de infrastructuur ter plaatse kunnen nog gebruiken. Ze kunnen de gegevens visualiseren van zowel de Adobe New Relic One-account als door de klant beheerde New Relic-accounts.
+Adobe-ondersteuning bewaakt AEM as a Cloud Service met New Relic One en andere tools, terwijl uw teams New Relic nog steeds kunnen gebruiken voor services en infrastructuur op locatie. Ze kunnen de gegevens visualiseren van zowel Adobe New Relic One-accounts als door klanten beheerde New Relic-accounts.
 
 >[!NOTE]
 >
->Om beide gegevensreeksen binnen New Relic One te bekijken, moet een gebruiker de juiste toestemmingen hebben en de zelfde login methodologie voor beide rekeningen (Adobe New Relic One en de klant-beheerde rekeningen van New Relic) gebruiken.
+>Om beide gegevensreeksen binnen New Relic One te bekijken, moet een gebruiker de juiste toestemmingen hebben en de zelfde login methodologie voor beide rekeningen gebruiken (Adobe New Relic One en de klant-beheerde rekeningen van New Relic).
 
 +++
 
 +++**de agent APM voor mijn rekening van New Relic One wordt tegengehouden. Wat is er gebeurd?** {#deactivated}
 
-[ de agenten van APM worden tegengehouden ](#limitations) als geen activiteit voor 90 dagen of meer wordt ontdekt. Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
+[ de agenten van APM worden tegengehouden ](#limitations) als geen activiteit voor 30 dagen of meer wordt ontdekt. Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 +++
