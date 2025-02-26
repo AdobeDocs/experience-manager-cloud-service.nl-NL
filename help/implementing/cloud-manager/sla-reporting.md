@@ -1,13 +1,13 @@
 ---
 title: SLA-rapporten
-description: Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken in verhouding tot de contractueel overeengekomen serviceniveau-overeenkomst.
+description: Leer hoe u de prestaties van uw AEM-productieomgeving kunt bekijken ten opzichte van de Service level agreement die u onder contract hebt.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: e6f5414454f79f46421593440587e81941a8f4c2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 # SLA-rapporten {#sla-reporting}
 
-Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de gecontracteerde SLA (Service Level Agreement).
+Leer hoe u de prestaties van uw productie-AEM-omgeving kunt bekijken in verhouding tot de SLA (Service level agreement) die u uitbesteedt.
 
 ## Een SLA-rapport weergeven {#introduction}
 
-SLA rapporteert gegevens over prestaties voor twee productieniveaus: Auteurniveau en Publish-niveau.
+In SLA-rapporten worden prestatiegegevens bijgehouden voor twee productieniveaus: Auteurniveau en Publicatieniveau.
 
 De lijngrafiek van een geselecteerd jaar bevat gegevenspunten voor elke maand van januari tot december. De volgende metriek worden bijgehouden.
 
 | Metrisch bijgehouden | Lijnkleur | Beschrijving |
 | --- | --- | --- |
-| Auteur-reeks werkelijk | Lichtgroen | De gemeten uptime van de productiereeks van de Auteur die door Adobe of verkopers van de Adobe wordt veroorzaakt. |
-| Tier-contract voor auteur | Donkerblauw | De SLA die is gedefinieerd in uw contract met Adobe voor de lijst met auteurs. |
-| Publish-niveau werkelijk | Oranje | De gemeten uptime van de productie Publish Tier, factoring incidenten veroorzaakt door Adobe of Adoben verkopers. |
-| Publish-tier-contract | Rood | De SLA die is gedefinieerd in uw contract met Adobe voor de Publish Tier. |
+| Auteur-reeks werkelijk | Lichtgroen | De gemeten uptime van de productiereeks van de auteur die door Adobe of Adobe verkopers wordt veroorzaakt. |
+| Tier-contract voor auteur | Donkerblauw | De SLA die in uw contract met Adobe is gedefinieerd voor de lijst met auteurs. |
+| Reële reeks publiceren | Oranje | De gemeten uptime van de productie publicatiereeks, factoring incidenten die door Adobe of Adobe worden veroorzaakt. |
+| Tier-contract publiceren | Rood | De SLA die in uw contract met Adobe is gedefinieerd voor de publicatielijst. |
 
 **om een rapport van SLA te bekijken:**
 
@@ -40,7 +40,7 @@ De lijngrafiek van een geselecteerd jaar bevat gegevenspunten voor elke maand va
 
 1. Klik **Rapporten van SLA**.
 
-   ![ grafiek van de het rapportlijn van SLA ](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+   ![ grafiek van de het rapportlijn van SLA ](/help/implementing/cloud-manager/assets/cm-sla-report2.png)
 
 1. Klik op het gewenste jaar om een lijngrafiek met SLA-gegevens weer te geven.
 
@@ -49,8 +49,6 @@ De lijngrafiek van een geselecteerd jaar bevat gegevenspunten voor elke maand va
    * Plaats de cursor op een gegevenspunt in de lijngrafiek om de specifieke waarden voor dat punt weer te geven.
    * Klik onder het jaar van de lijngrafiek op het pictogram Downloaden om een PNG-afbeeldingsbestand van de lijngrafiek op te slaan.
    * Klik een metrische naam om enkel de gegevens van dat metrisch te zien. Of druk op `Shift` op het toetsenbord terwijl u een of meer namen voor metrische gegevens selecteert of deselecteert.
-
-   ![ tonend gedetailleerde gegevens ](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Gebeurtenisanalyse {#event-analysis}
 
@@ -62,7 +60,7 @@ Elk van de incidenten heeft een tijdbereik, een oorzaak en een reeks opmerkingen
 
 ## Interval vernieuwen voor SLA-rapporten {#refresh}
 
-SLA-rapportering geeft u inzicht in de prestaties van uw AEM productieomgeving en is up-to-date, maar niet onmiddellijk. SLA-rapporten worden maandelijks gegenereerd en gegenereerd voor nieuwe programma&#39;s die zijn gemarkeerd als `Production previous month` . Het is niet onmiddellijk. Houd daarom rekening met het volgende wanneer u uw SLA-rapport bekijkt:
+SLA-rapportering geeft u inzicht in de prestaties van uw AEM-productieomgeving en is up-to-date, maar niet onmiddellijk. SLA-rapporten worden maandelijks gegenereerd en gegenereerd voor nieuwe programma&#39;s die zijn gemarkeerd als `Production previous month` . Het is niet onmiddellijk. Houd daarom rekening met het volgende wanneer u uw SLA-rapport bekijkt:
 
 * De gerapporteerde SLA is de die bestond aan het begin van de maand, zelfs als SLA in die maand veranderde.
 * Als er aan het begin van de maand geen SLA was omdat het programma niet bestond, geldt de SLA die bestond op de datum waarop het programma werd opgezet.
@@ -70,3 +68,4 @@ SLA-rapportering geeft u inzicht in de prestaties van uw AEM productieomgeving e
 ## Voorvertoningsomgevingen {#preview}
 
 De voorvertoningsomgeving is bedoeld als een hulpmiddel voor auteurs van inhoud om de uiteindelijke ervaring van de inhoud te controleren voordat deze wordt gepubliceerd. Vanwege deze functionaliteit zijn voorvertoningsomgevingen niet ontworpen met hoge beschikbaarheid en hebben ze geen bijbehorende SLA.
+
