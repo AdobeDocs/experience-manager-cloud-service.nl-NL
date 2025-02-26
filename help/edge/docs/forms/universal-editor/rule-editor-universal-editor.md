@@ -3,18 +3,19 @@ title: Hoe te om de regelredacteur te gebruiken om regels op vormgebieden toe te
 description: Met de regeleditor in de Universal Editor kunt u dynamisch gedrag toevoegen en complexe logica opnemen in formulieren zonder code of scripts.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
 
 
 # Inleiding tot de Redacteur van de Regel in de Authoring van WYSIWYG
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 U kunt dynamisch formuliergedrag toevoegen met de Regeleditor, waarmee u regels kunt maken. Deze regels maken voorwaardelijke veldzichtbaarheid mogelijk, automatiseren berekeningen op basis van gebruikersinvoer en verbeteren de gebruikerservaring. Door het invullen van formulieren te stroomlijnen, zorgt de Rule Editor voor zowel nauwkeurigheid als efficiëntie.
 
@@ -185,7 +186,7 @@ Nu, onderzoeken hoe te [ regels in de Redacteur van de Regel ](#write-rules) sch
 
 ## Regels schrijven
 
-Om te begrijpen hoe te om regels in de Visuele Redacteur van de Regel te schrijven, overwegen een eenvoudig voorbeeld van een vorm van de belastingberekening:
+Om te begrijpen hoe te om regels in de Visuele Redacteur van de Regel te schrijven, denken een eenvoudig voorbeeld van een vorm van de belastingberekening:
 
 ![ Voorbeeld van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-1.png)
 

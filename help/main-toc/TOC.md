@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
+source-wordcount: '6193'
 ht-degree: 2%
 
 ---
@@ -1024,37 +1024,36 @@ ht-degree: 2%
    + Forms samenstellen {#build-forms}
       + [Overzicht](/help/edge/docs/forms/overview.md)
       + [Hoe werkt Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + Aan de slag {#getting-started-edge-delivery-services-forms}
-         + [Aan de slag](/help/edge/docs/forms/tutorial.md)
-         + [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
-         + [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
-         + [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
-         + [Opties vanuit een URL laden naar een formulier](/help/edge/docs/forms/load-options-from-url.md)
-         + [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-         + [Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen](/help/edge/docs/forms/rules-forms.md)
-         + [Regex-expressies voor validaties](/help/edge/docs/forms/regex-forms.md)
-         + [Een aangepast bedankbericht weergeven na het verzenden van het formulier](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Forms-verzendservice gebruiken](/help/forms/forms-submission-service.md)
+      + Op documenten gebaseerd ontwerpen {#getting-started-edge-delivery-services-forms}
+         + [Uw eerste formulier maken: snel aan de slag met Google-werkbladen en Excel](/help/edge/docs/forms/tutorial.md)
+         + [Forms maken met Google Sheets of Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
+         + [Sluit uw formulier aan op Google-bladen: Instellingenhandleiding voor gegevensverzameling](/help/edge/docs/forms/submit-forms.md)
+         + [Uw formulier live maken: handleiding voor publiceren en gegevensverzameling](/help/edge/docs/forms/publish-forms.md)
+         + [Validatie formulierveld: foutcontroles toevoegen aan uw Forms](/help/edge/docs/forms/validate-forms.md)
+         + [Mooie Forms ontwerpen: handleiding voor stijlen en aanpassingen](/help/edge/docs/forms/style-theme-forms.md)
+         + [Succesberichten maken: De pagina Bedankt voor uw formulier aanpassen](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Handleiding voor het verzenden van formulieren: de Forms-verzendservice gebruiken](/help/forms/forms-submission-service.md)
+         + [Dynamische formuliervelden: opties laden van URL&#39;s](/help/edge/docs/forms/load-options-from-url.md)
+         + [Slim gedrag toevoegen: formulierregels en logische handleiding](/help/edge/docs/forms/rules-forms.md)
+         + [Geavanceerde formuliervalidatie: handleiding voor reguliere expressies](/help/edge/docs/forms/regex-forms.md)
+         + [Forms voor hergebruik maken: handleiding voor formulierfragmenten](/help/edge/docs/forms/form-fragments.md)
+         + [Dynamische Forms maken: herhalbare secties toevoegen](/help/edge/docs/forms/repeatable-forms.md)
+         + [Uw formulier globaal maken: handleiding voor formulieromzetting](/help/edge/docs/forms/translate-forms.md)
+         + [Bescherm uw Forms: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Aangepaste formuliercomponenten maken: ontwikkelaarsgids](/help/edge/docs/forms/custom-components-forms.md)
+         + [Prestaties van monitorformulieren: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Forms implementeren op Edge: publicatiegids voor Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [Overzicht - Universal Editor voor Edge Delivery Services voor Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Aan de slag](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [WYSIWYG Interface begrijpen](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Regels toevoegen aan de Editor van regels](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Aangepaste componenten maken](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [reCAPTCHA gebruiken in formulieren](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Handelingen verzenden](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Forms publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Opmaak van formulieren aanpassen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Responsieve modus](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + Mogelijkheden {#advanced-features-edge-delivery-services-forms}
-         + [Formulierfragmenten gebruiken](/help/edge/docs/forms/form-fragments.md)
-         + [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-         + [Uw formulier vertalen](/help/edge/docs/forms/translate-forms.md)
-         + [Gebruik reCAPTCHA om uw formulieren te beveiligen](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Aangepaste componenten](/help/edge/docs/forms/custom-components-forms.md)
-         + [Real Use Monitoring voor formulieren](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Forms voor Edge Delivery Services publiceren](/help/edge/docs/forms/publishing-forms.md)
+         + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Uw eerste formulier maken met de Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Universal Editor Interface Guide: uitleg over gereedschappen, functies en navigatie](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Maak uw Forms mobiel gebruiksvriendelijk: responsief ontwerp in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Mooie Forms: stijlpagina en thematiegids voor de universele editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Dynamisch gedrag aan Forms toevoegen: volledige hulplijn aan regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Handleiding voor het verzenden van formulieren: handelingen voor het verzenden van formulieren configureren en aanpassen](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Forms publiceren en implementeren: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [ bouwt de Componenten van de Vorm van de Douane: De Gids van de ontwikkelaar aan Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Verwijzingen {#forms-references}
          + [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
    + Edge Delivery-bronnen {#resources}

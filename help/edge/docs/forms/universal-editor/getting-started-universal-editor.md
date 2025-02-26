@@ -3,18 +3,19 @@ title: Aan de slag met Edge Delivery Services for AEM Forms in de Universal Edit
 description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Over tien tot twintig minuten hebt u uw eigen Edge Delivery Services Forms gemaakt in de Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
 
 
 # Aan de slag met Edge Delivery Services for AEM Forms met Universal Editor (WYSIWYG)
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 In het huidige digitale tijdperk zijn gebruikersvriendelijke formulieren essentieel voor alle organisaties. Edge Delivery Services Forms wordt gemaakt met de Universal Editor, die WYSIWYG-mogelijkheden (what-you-see-is-what-you-get) biedt. Het biedt een moderne, intuïtieve interface voor efficiënt ontwerpen van formulieren.
 

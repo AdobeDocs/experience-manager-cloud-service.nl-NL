@@ -2,18 +2,19 @@
 title: Aangepaste componenten maken voor een EDS-formulier
 description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: d5ba87ec6199522f026d572d1bdb1bfbeb9849ee
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1773'
 ht-degree: 0%
 
 ---
 
 # Aangepaste component maken in WYSIWYG Authoring
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 Edge Delivery Services Forms biedt aanpassing, waardoor ontwikkelaars aan de voorzijde op maat aangepaste formulieronderdelen kunnen maken. Deze aangepaste componenten worden naadloos geïntegreerd in de WYSIWYG-ontwerpervaring, zodat formulierauteurs ze eenvoudig kunnen toevoegen, configureren en beheren in de formuliereditor. Met aangepaste componenten kunnen auteurs de functionaliteit verbeteren en tegelijkertijd zorgen voor een vloeiend en intuïtief ontwerpproces.
 

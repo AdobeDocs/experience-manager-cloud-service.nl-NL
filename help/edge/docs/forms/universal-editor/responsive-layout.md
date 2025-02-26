@@ -3,16 +3,17 @@ title: De modus Universal Editor - responsief
 description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren kunt bekijken met verschillende emulators in de Universal Editor om hun uiterlijk tijdens het ontwerpen te visualiseren.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 # Responsieve modus in WYSIWYG Authoring
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) staat u toe om voorproef Edge Delivery Services Forms met verschillende mededingers om de blik en het gevoel van de vorm tijdens creatie te zien.
 

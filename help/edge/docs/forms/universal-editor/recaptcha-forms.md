@@ -4,18 +4,19 @@ description: Google reCAPTCHA gebruiken in een formulier voor Edge Delivery Serv
 feature: Edge Delivery Services
 keywords: reCAPTCHA in formulieren, met reCAPTCHA in Universal Editor, reCAPTCHA toevoegen in formulieren
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
 
 
 # reCAPTCHA gebruiken in WYSIWYG Authoring
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een populair hulpmiddel om websites te beschermen tegen frauduleuze activiteiten, spam en misbruik.
 

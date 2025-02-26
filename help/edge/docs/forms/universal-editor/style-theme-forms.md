@@ -3,17 +3,18 @@ title: Thema en stijl aanpassen voor een Edge Delivery Services for AEM Forms
 description: Pas het thema en de stijl voor AEM Forms die via Edge Delivery Services worden geleverd, effectief aan en zorg voor een consistente en merkbare gebruikerservaring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
 
 # Het uiterlijk van uw formulieren aanpassen
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze gegevens kunnen invoeren. Met CSS (Cascading Style Sheets) kunt u velden van een formulier opmaken, de visuele presentatie van formulieren verbeteren en de gebruikerservaring verbeteren.
 

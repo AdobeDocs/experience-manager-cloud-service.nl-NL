@@ -6,14 +6,17 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
 
+
 # Universal Editor voor Edge Delivery Services for Forms (EDS Forms Block)
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
 De Universal Editor zorgt voor een revolutie in het maken van formulieren voor Adobe Edge Delivery Services (EDS) door een eenvoudige, visuele en intuïtieve What You See Is What You Get-interface (WYSIWYG) aan te bieden. Deze indeling is ontworpen voor makers van inhoud en formulierauteurs en voorkomt de complexiteit van traditionele processen voor het maken van formulieren, waardoor deze zelfs toegankelijk is voor niet-technische gebruikers.
 
