@@ -4,7 +4,7 @@ description: De front-end pijpleiding verbetert de onafhankelijkheid van de ontw
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 248c58c51864a2fead95064d30ea9f438f655eb6
+source-git-commit: 635fd7736d26b95acc4389c519edf495694b1a94
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -94,5 +94,6 @@ De volgende stappen worden over het algemeen aanbevolen wanneer u wijzigingen aa
 
 * Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
 
-  Zie [ de Bouwer van het Thema van de Plaats van AEM ](https://github.com/adobe/aem-site-theme-builder).
+  Zie [ de Bouwer van het Thema van de Plaats van AEM ](https://github.com/adobe/aem-site-theme-builder)
+
 
