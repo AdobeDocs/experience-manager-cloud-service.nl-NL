@@ -4,9 +4,9 @@ description: Als u veel vergelijkbare sites hebt die er meestal hetzelfde uitzie
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Als u veel vergelijkbare sites hebt die er meestal hetzelfde uitzien en hetzelfd
 
 ## Eén Codebase voor meerdere sites {#one-codebase}
 
-Standaard is AEM nauw gebonden aan uw gegevensopslagruimte, die voldoet aan de meeste gebruiksgevallen. Het is echter mogelijk dat er meerdere sites zijn die het meest van elkaar verschillen in de inhoud, maar u kunt hetzelfde codebasis gebruiken.
+AEM is standaard strak gebonden aan uw code-opslagplaats, die voldoet aan de meeste gebruiksgevallen. Het is echter mogelijk dat er meerdere sites zijn die het meest van elkaar verschillen in de inhoud, maar u kunt hetzelfde codebasis gebruiken.
 
-Eerder dan het creëren van veelvoudige bewaarplaatsen GitHub en het runnen van elke plaats van een specifieke bewaarplaats GitHub terwijl het houden van hen in synchronisatie, AEM steunt het runnen van veelvoudige plaatsen van de zelfde codebase.
+In plaats van het creëren van veelvoudige bewaarplaatsen GitHub en het runnen van elke plaats van een specifieke bewaarplaats GitHub terwijl het houden van hen in synchronisatie, steunt AEM het runnen van veelvoudige plaatsen van de zelfde codebase.
 
 Deze vereenvoudigde opstelling, die de behoefte aan codereplicatie elimineert is ook genoemd geworden [ &quot;repoless&quot;](https://www.aem.live/docs/repoless), omdat al behalve uw eerste plaats geen bewaarplaats GitHub van hun nodig heeft.
 
@@ -31,14 +31,14 @@ Ongeacht het aantal sites dat u uiteindelijk zonder problemen wilt maken, moet u
 
 Als u van deze functie wilt profiteren, moet u het volgende doen.
 
-* Uw plaats is reeds volledig opstelling door de document [ Begonnen Gids van de Ontwikkelaar te volgen Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Uw plaats is reeds volledig opstelling door het document [ Begonnen Gids van de Ontwikkelaar te volgen Begonnen voor de Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * U gebruikt minimaal AEM as a Cloud Service 2024.08.
 
-U zult ook Adobe moeten vragen om de volgende punten voor u te vormen. Ga via uw Slack-kanaal uit of stel een supportprobleem aan om Adobe aan te vragen om deze wijzigingen aan te brengen:
+U moet Adobe ook vragen om de volgende items voor u te configureren. Ga via je Slack-kanaal naar of stel een supportprobleem op om Adobe te vragen deze wijzigingen aan te brengen:
 
 * Vraag om de [ aem.live configuratieservice ](https://www.aem.live/docs/config-service-setup#prerequisites) voor uw milieu te activeren en dat u als beheerder wordt gevormd.
-* Vraag om de functie voor probleemloos gebruiken voor uw programma in te schakelen door Adobe.
-* Vraag de Adobe om de org voor u te maken.
+* Vraag of Adobe de functie voor probleemloos afdrukken voor uw programma moet inschakelen.
+* Vraag Adobe om de org voor u te maken.
 
 ## Repoless-functie activeren {#activate}
 
@@ -47,7 +47,7 @@ Er zijn verschillende stappen om de functie voor probleemloos gebruik voor uw pr
 1. [Toegangstoken ophalen](#access-token)
 1. [Configuratieservice instellen](#config-service)
 1. [Siteconfiguratie en technische account toevoegen](#access-control)
-1. [AEM bijwerken](#update-aem)
+1. [AEM-configuratie bijwerken](#update-aem)
 1. [Site verifiëren](#authenticate-site)
 
 In deze stappen wordt de site `https://wknd.site` als voorbeeld gebruikt. Vervang uw eigen product op de juiste manier.
@@ -56,7 +56,7 @@ In deze stappen wordt de site `https://wknd.site` als voorbeeld gebruikt. Vervan
 
 U zult eerst een toegangstoken nodig hebben om de configuratieservice te gebruiken en het voor het repoless gebruiksgeval te vormen.
 
-1. Ga naar `https://admin.hlx.page/login` en gebruik het `login_adobe` -adres om u aan te melden bij de identiteitsprovider van de Adobe.
+1. Ga naar `https://admin.hlx.page/login` en gebruik het `login_adobe` -adres om u aan te melden bij de Adobe-identiteitsprovider.
 1. U wordt doorgestuurd naar `https://admin.hlx.page/profile` .
 1. Kopieer met behulp van de ontwikkelaarsgereedschappen van uw browser de waarde van de `x-auth-token` ofwel uit het JSON-webtoken-cookie dat de pagina van `admin.hlx.page` instelt.
 
@@ -157,12 +157,12 @@ Aangezien u nu de configuratieservice gebruikt, kunt u `fstab.yaml` en `paths.js
 
 Zodra AEM voor repoless gebruik wordt gevormd, moet u de configuratieservice gebruiken en een geldige `config.json` van de wegafbeelding voorzien.
 
-### AEM bijwerken {#update-aem}
+### AEM-configuratie bijwerken {#update-aem}
 
-Nu bent u klaar om de noodzakelijke veranderingen in uw Edge Delivery Services in AEM aan te brengen.
+Nu ben je klaar om de benodigde wijzigingen aan te brengen in je Edge Delivery Services in AEM.
 
-1. Teken in de AEM auteursinstantie en ga naar **Hulpmiddelen** -> **Cloud Servicen** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
-1. In het **venster van de Configuratie van 0} Edge Delivery Services {, verander projecttype in** aem.live met repoless config opstelling **en tik of klik** sparen &amp; dicht **.**
+1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
+1. In het **venster van de Configuratie van Edge Delivery Services**, verander projecttype in **aem.live met repoless config opstelling** en ontvang of klik **sparen &amp; dicht**.
    ![ Configuratie van Edge Delivery Services ](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Ga terug naar uw site met de Universal Editor en zorg ervoor dat deze nog steeds correct wordt weergegeven.
 1. Wijzig enkele inhoud en publiceer deze opnieuw.
@@ -176,13 +176,14 @@ Nu uw basissite is geconfigureerd voor onophoudelijk gebruik, kunt u extra sites
 
 * [Meerdeloos beheer van sites](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Stage- en Prod-omgevingen zonder weerstand](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Siteverificatie voor het ontwerpen van inhoud](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Problemen oplossen {#troubleshooting}
 
 Het meest voorkomende probleem dat u tegenkomt na het configureren van het gebruiksscenario voor onophoudelijk gebruik, is dat pagina&#39;s in de Universal Editor niet meer worden gerenderd of dat u een witte pagina of een algemeen AEM as a Cloud Service-foutbericht ontvangt. In dergelijke gevallen:
 
 * De bron van de weergegeven pagina weergeven.
-   * Is er eigenlijk iets teruggegeven (correcte HTML head met `scripts.js`, `aem.js`, en redacteurs-verwante JSON dossiers)?
+   * Is er eigenlijk iets gerenderd (correcte HTML head met `scripts.js`, `aem.js`, en redacteurs-verwante JSON dossiers)?
 * Controleer de AEM `error.log` van de auteurinstantie op uitzonderingen.
    * De meest voorkomende kwestie is dat de paginacomponent met 404 fouten ontbreekt.
    * `config.json or paths.json` kan niet worden geladen

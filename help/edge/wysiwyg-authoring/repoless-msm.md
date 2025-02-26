@@ -1,29 +1,29 @@
 ---
 title: Meerdeloos beheer van sites
-description: Leer beste praktijkaanbevelingen op hoe te om een project op een repoless manier met gelokaliseerde plaatsen te vestigen die hefboomwerking één enkele codebasis, elk omhoog door Edge Delivery Services worden gediend.
+description: Leer aanbevelingen voor beste praktijken over hoe te om een project op een repoless manier met gelokaliseerde plaatsen op te zetten die hefboomwerking één enkele codebasis, elk omhoog door Edge Delivery Services wordt gediend.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
 
 # Meerdeloos beheer van sites {#repoless-msm}
 
-Leer beste praktijkaanbevelingen op hoe te om een project op een repoless manier met gelokaliseerde plaatsen te vestigen die hefboomwerking één enkele codebasis, elk omhoog door Edge Delivery Services worden gediend.
+Leer aanbevelingen voor beste praktijken over hoe te om een project op een repoless manier met gelokaliseerde plaatsen op te zetten die hefboomwerking één enkele codebasis, elk omhoog door Edge Delivery Services wordt gediend.
 
 ## Overzicht {#overview}
 
 [ Multisite Manager (MSM) ](/help/sites-cloud/administering/msm/overview.md) en zijn Levende eigenschappen van het Exemplaar laten u toe om de zelfde plaatsinhoud in veelvoudige plaatsen te gebruiken, terwijl het toestaan voor variaties. U kunt inhoud één keer ontwerpen en Actieve kopieën maken. MSM onderhoudt levende verhoudingen tussen uw broninhoud en zijn Levende Kopieën zodat wanneer u de broninhoud verandert, de bron en Levende Kopieën kunnen worden gesynchroniseerd.
 
-Met MSM kunt u een volledige inhoudsstructuur voor uw merk maken voor verschillende landinstellingen en talen en de inhoud centraal ontwerpen. Uw gelokaliseerde sites kunnen dan elk door Edge Delivery Services worden geleverd, waarbij een centrale codebasis wordt gebruikt.
+Met MSM kunt u een volledige inhoudsstructuur voor uw merk maken voor verschillende landinstellingen en talen en de inhoud centraal ontwerpen. Vervolgens kunnen uw gelokaliseerde sites elk door Edge Delivery Services worden geleverd, waarbij een centrale codebasis wordt gebruikt.
 
 ## Vereisten {#requirements}
 
-Om MSM in een repoless gebruikscase te vormen, moet u een aantal taken eerst voltooien.
+Om MSM in een repoless gebruiksgeval te vormen, moet u de volgende taken eerst voltooien:
 
 * Dit document veronderstelt dat u reeds een plaats voor uw project hebt gecreeerd dat op de [ Begonnen Gids van de Ontwikkelaar wordt gebaseerd die voor de Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids wordt.
 * U moet reeds [ de repoless eigenschap voor uw project ](/help/edge/wysiwyg-authoring/repoless.md) toegelaten hebben.
@@ -49,19 +49,19 @@ In dit document wordt ervan uitgegaan dat u al een algemene gelokaliseerde sites
 /content/wknd/de/en
 ```
 
-De inhoud in `language-masters` is de bron van Levende Exemplaren voor de gelokaliseerde plaatsen: Duitsland (`de`) en Zwitserland (`ch`). Het doel van dit document is om plaatsen van Edge Delivery Services tot stand te brengen die allen de zelfde codebasis voor elke gelokaliseerde plaats gebruiken.
+De inhoud in `language-masters` is de bron van Levende Exemplaren voor de gelokaliseerde plaatsen: Duitsland (`de`) en Zwitserland (`ch`). Het doel van dit document is om Edge Delivery Services-sites te maken die allemaal dezelfde codebasis gebruiken voor elke gelokaliseerde site.
 
 ## Configuratie {#configuration}
 
 Er zijn verscheidene stappen aan het vormen van MSM repoless gebruiksgeval.
 
-1. [ Update AEM plaatsconfiguraties ](#update-aem-configurations).
-1. [ creeer nieuwe Edge Delivery Services plaatsen voor uw gelokaliseerde pagina&#39;s ](#create-edge-sites).
+1. [ de plaatsconfiguraties van AEM van de Update ](#update-aem-configurations).
+1. [ creeer nieuwe plaatsen van Edge Delivery Services voor uw gelokaliseerde pagina&#39;s ](#create-edge-sites).
 1. [ de wolkenconfiguratie van de Update in AEM voor uw gelokaliseerde plaatsen ](#update-cloud-configurations).
 
-### AEM siteconfiguraties bijwerken {#update-aem-configurations}
+### AEM-siteconfiguraties bijwerken {#update-aem-configurations}
 
-[ de Configuraties ](/help/implementing/developing/introduction/configurations.md) kunnen van als werkruimten worden gedacht die kunnen worden gebruikt om groepen montages en hun bijbehorende inhoud voor organisatorische doeleinden te verzamelen. Wanneer u een site in AEM maakt, wordt er automatisch een configuratie voor gemaakt.
+[ de Configuraties ](/help/implementing/developing/introduction/configurations.md) kunnen van als werkruimten worden gedacht die kunnen worden gebruikt om groepen montages en hun bijbehorende inhoud voor organisatorische doeleinden te verzamelen. Wanneer u een site maakt in AEM, wordt er automatisch een configuratie voor gemaakt.
 
 Over het algemeen wilt u bepaalde inhoud delen tussen sites, zoals:
 
@@ -78,7 +78,7 @@ U kunt aanvullende configuraties maken om dit delen mogelijk te maken. Voor het 
 
 Namelijk zult u een configuratie voor de wortel van de inhoud van het merk van het wknd (`/content/wknd`) hebben die door de blauwdrukken en een configuratie wordt gebruikt door elke gelokaliseerde plaats (Zwitserland en Duitsland).
 
-1. Meld u aan bij uw AEM ontwerpinstantie.
+1. Meld u aan bij uw AEM-ontwerpinstantie.
 1. Navigeer aan **Browser van de Configuratie** door **Hulpmiddelen** te gaan -> **Algemeen** -> **Browser van de Configuratie**.
 1. Selecteer de configuratie die automatisch voor uw project (in dit geval wint) werd gecreeerd en dan tikken of **klikken creeert** in de toolbar.
 1. In **creeer de dialoog van de Configuratie**, verstrek een beschrijvende **Naam** voor uw gelokaliseerde plaats (zoals `Switzerland`) en voor **Titel** gebruik de zelfde titel van de gelokaliseerde grootte (in dit geval `ch`).
@@ -89,7 +89,7 @@ Maak configuraties voor elke gelokaliseerde site die u nodig hebt. In het geval 
 
 Zodra de configuraties worden gecreeerd, moet u ervoor zorgen dat de gelokaliseerde plaatsen hen gebruiken.
 
-1. Meld u aan bij uw AEM ontwerpinstantie.
+1. Meld u aan bij uw AEM-ontwerpinstantie.
 1. Navigeer aan de **Console van Plaatsen** door **Navigatie** te gaan -> **Plaatsen**.
 1. Selecteer de gelokaliseerde site, bijvoorbeeld `Switzerland` .
 1. Tik of klik **Eigenschappen** in de hulpmiddelbar.
@@ -99,19 +99,19 @@ Zodra de configuraties worden gecreeerd, moet u ervoor zorgen dat de gelokalisee
 
 Wijs de respectieve configuraties aan de extra gelokaliseerde plaatsen toe. In het geval van wknd, zou u `/conf/wknd/de` configuratie aan de plaats van Duitsland ook moeten toewijzen.
 
-### Nieuwe sites voor Edge Delivery Services maken voor uw gelokaliseerde pagina&#39;s {#create-edge-sites}
+### Nieuwe Edge Delivery Services-sites maken voor uw gelokaliseerde pagina&#39;s {#create-edge-sites}
 
-Als u meer sites wilt verbinden met Edge Delivery Services voor een meertalige site-instelling met meerdere regio&#39;s, moet u een nieuwe site aem.live instellen voor elk van uw AEM MSM-sites. Er is een 1:1 verhouding tussen AEM plaatsen MSM en aem.live plaatsen met een gedeelde bewaarplaats van de Git en codebasis.
+Als u meer sites wilt verbinden met Edge Delivery Services voor een meertalige site-instelling met meerdere regio&#39;s, moet u een nieuwe site aem.live instellen voor elk van uw AEM MSM-sites. Er bestaat een 1:1-relatie tussen AEM MSM-sites en aem.live-sites met een gedeelde Git-opslagplaats en een codebasis.
 
-In dit voorbeeld maken we de site `wknd-ch` voor de Zwitserse aanwezigheid van wint, waarvan de gelokaliseerde inhoud zich onder het AEM `/content/wknd/ch` bevindt.
+In dit voorbeeld maken we de site `wknd-ch` voor Zwitserse aanwezigheid van wint, waarvan de gelokaliseerde inhoud zich onder het AEM-pad bevindt `/content/wknd/ch` .
 
 1. Haal het auteur-token en de technische account voor uw programma op.
    * Gelieve te zien het document **Hergebruikende Code over Plaatsen** voor details op hoe te [ uw toegangstoken ](/help/edge/wysiwyg-authoring/repoless.md#access-token) en de [ technische rekening ](/help/edge/wysiwyg-authoring/repoless.md#access-control) voor uw programma verkrijgen.
 1. Creeer een nieuwe plaats door de volgende vraag aan de configuratieservice te maken. Overweeg:
-   * De projectnaam in de POST-URL moet de nieuwe sitenaam zijn die u maakt. In dit voorbeeld is dit `wknd-ch` .
+   * De projectnaam in POST URL moet de nieuwe plaatsnaam zijn u creeert. In dit voorbeeld is dit `wknd-ch` .
    * De `code` -configuratie moet dezelfde zijn als u hebt gebruikt voor het maken van het project.
    * `content` > `source` > `url` moet worden aangepast aan de naam van de nieuwe site die u maakt. In dit voorbeeld is dit `wknd-ch` .
-   * De naam van de site in de URL van de POST moet dus gelijk zijn aan de naam van de site in `content` > `source` > `url` .
+   * De naam van de site in de URL POST en `content` > `source` > `url` moeten dus gelijk zijn.
    * Pas het `admin` -blok aan om de gebruikers te definiëren die volledige beheertoegang tot de site moeten hebben.
       * Het is een array met e-mailadressen.
       * U kunt jokerteken `*` gebruiken.
@@ -177,11 +177,11 @@ In dit voorbeeld maken we de site `wknd-ch` voor de Zwitserse aanwezigheid van w
 
 Herhaal de stappen om extra gelokaliseerde sites te maken. In het geval van wint, zou u een `wknd-de` plaats voor de Duitse aanwezigheid moeten tot stand brengen.
 
-### Cloudconfiguraties bijwerken in AEM voor uw gelokaliseerde pagina&#39;s {#update-cloud-configurations}
+### Cloud Configurations in AEM bijwerken voor uw gelokaliseerde pagina&#39;s {#update-cloud-configurations}
 
-Uw pagina&#39;s in AEM moeten worden geconfigureerd om de nieuwe Edge Delivery-sites te gebruiken die u in de vorige sectie hebt gemaakt voor uw gelokaliseerde aanwezigheid. In dit voorbeeld moet inhoud onder `/content/wknd/ch` weten dat u de `wknd-ch` -site die u hebt gemaakt, kunt gebruiken. Op dezelfde manier moet inhoud onder `/content/wknd/de` de `wknd-de` -site gebruiken.
+Uw pagina&#39;s in AEM moeten zo zijn geconfigureerd dat de nieuwe Edge Delivery-sites die u in de vorige sectie hebt gemaakt, worden gebruikt voor uw gelokaliseerde aanwezigheid. In dit voorbeeld moet inhoud onder `/content/wknd/ch` weten dat u de `wknd-ch` -site die u hebt gemaakt, kunt gebruiken. Op dezelfde manier moet inhoud onder `/content/wknd/de` de `wknd-de` -site gebruiken.
 
-1. Teken in de AEM auteursinstantie en ga naar **Hulpmiddelen** -> **Cloud Servicen** -> **Configuratie van Edge Delivery Services**.
+1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services**.
 1. Selecteer de configuratie die automatisch voor uw project en toen de omslag werd gecreeerd die voor de gelokaliseerde pagina werd gecreeerd. In dit geval is dat Zwitserland (`ch`).
 1. Tik of klik **creeer** > **Configuratie** in de hulpmiddelbar.
 1. In het **venster van de Configuratie van Edge Delivery Services**:
@@ -194,12 +194,12 @@ Uw pagina&#39;s in AEM moeten worden geconfigureerd om de nieuwe Edge Delivery-s
 
 Nu u alle noodzakelijke configuratieveranderingen hebt aangebracht, verifieer dat alles zoals verwacht werkt.
 
-1. Meld u aan bij uw AEM ontwerpinstantie.
+1. Meld u aan bij uw AEM-ontwerpinstantie.
 1. Navigeer aan de **Console van Plaatsen** door **Navigatie** te gaan -> **Plaatsen**.
 1. Selecteer de gelokaliseerde site, bijvoorbeeld `Switzerland` .
 1. Tik of klik **uitgeven** in de toolbar.
 1. Zorg ervoor dat de pagina correct wordt weergegeven in de Universal Editor en dat deze dezelfde code gebruikt als de hoofdmap van de site.
 1. Wijzig de pagina en publiceer deze opnieuw.
-1. Ga naar de site met nieuwe Edge Delivery Services voor die gelokaliseerde pagina op `https://main--wknd-ch--<your-github-org>.aem.page` .
+1. Ga naar de nieuwe Edge Delivery Services-site voor die gelokaliseerde pagina op `https://main--wknd-ch--<your-github-org>.aem.page` .
 
 Als u de veranderingen ziet die u aanbracht, werkt uw opstelling MSM behoorlijk.

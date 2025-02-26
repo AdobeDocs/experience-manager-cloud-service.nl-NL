@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
+source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
 workflow-type: tm+mt
-source-wordcount: '6091'
+source-wordcount: '6094'
 ht-degree: 2%
 
 ---
@@ -990,10 +990,11 @@ ht-degree: 2%
       + [Taxonomiegegevens beheren](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG en op documenten gebaseerde blokken](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [Pagina&#39;s met DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [Functies voor WIP-sites](/help/edge/wysiwyg-authoring/wip-features.md)
       + [Code op verschillende sites opnieuw gebruiken](/help/edge/wysiwyg-authoring/repoless.md)
       + [Meerdeloos beheer van sites](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [Stage- en Prod-omgevingen zonder weerstand](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Siteverificatie configureren](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [Functies voor WIP-sites](/help/edge/wysiwyg-authoring/wip-features.md)
    + Authoring op basis van documenten {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)
