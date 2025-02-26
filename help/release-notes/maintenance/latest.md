@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
+source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '189'
 ht-degree: 3%
 
 ---
@@ -16,33 +16,33 @@ ht-degree: 3%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 19586 {#19586}
+## Release 19687 {#19687}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 19586 samengevat, die op 19 februari 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19567.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 19687 samengevat, die op 26 februari 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19586.
 
 De activering van de 2025.2.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-19586}
+### Verbeteringen {#enhancements-19687}
 
 Geen.
 
-### Opgeloste problemen {#fixed-issues-19586}
+### Opgeloste problemen {#fixed-issues-19687}
 
-* SITES-29314: GraphQL endpoints kunnen InvalidSchemaException voor geldige verzoeken opheffen.
+* SKYOPS-97524: de staat van de eigenschapknevel zou onjuist kunnen zijn periodiek beïnvloedend diverse eigenschappen van AEM.
 
-### Bekende problemen {#known-issues-19586}
+### Bekende problemen {#known-issues-19687}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-19586}
+### Verouderde functies en API&#39;s {#deprecated-19687}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-19586}
+### Beveiligingsproblemen {#security-19687}
 
 Geen.
 
-### Ingesloten technologieën {#embedded-tech-19586}
+### Ingesloten technologieën {#embedded-tech-19687}
 
 | Technologie | Versie | Koppeling |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
