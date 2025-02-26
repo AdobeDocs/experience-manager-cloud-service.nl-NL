@@ -4,16 +4,16 @@ description: Meer informatie over distributie en probleemoplossing voor replicat
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # Replicatie {#replication}
 
-Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermogen van de Distributie van de Inhoud ](https://sling.apache.org/documentation/bundles/content-distribution.html) om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe Developer wordt uitgevoerd die buiten AEM runtime is.
+Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermogen van de Distributie van de Inhoud ](https://sling.apache.org/documentation/bundles/content-distribution.html) om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe Developer wordt uitgevoerd die buiten runtime van AEM is.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermoge
 >Als u om welke reden dan ook moet aanpassen, kunt u een werkstroom met deze stap teweegbrengen door bestaande Werkstroom APIs te gebruiken.
 >Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u niet probeert grote aantallen inhoud te publiceren, als dat niet nodig is. Er gelden echter geen limieten voor de hoeveelheid inhoud die u via workflows kunt verzenden met de Workflowstap voor boomactivering.
 
-### Quick Un/Publish - Gepland VN/Publish {#publish-unpublish}
+### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
 
 Met deze functie kunt u de geselecteerde pagina&#39;s direct publiceren, zonder de extra opties die mogelijk zijn via de methode Publicatie beheren.
 
@@ -44,9 +44,9 @@ Om de automatische replicatie voor deze eigenschap te realiseren, laat **AutoRep
 
 ### Publicatie beheren {#manage-publication}
 
-Publicatie beheren biedt meer opties dan Quick Publish, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om later te publiceren.
+Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om later te publiceren.
 
-Als onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de Publish-inhoudsstructuur geactiveerd, zoals in dit artikel wordt beschreven.
+Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de inhoudsstructuur publiceren geactiveerd, zoals in dit artikel wordt beschreven.
 
 U kunt meer gedetailleerde informatie over Manage Publication over de [ het Publiceren documentatie van Grondbeginselen ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) vinden.
 
@@ -98,7 +98,7 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
 
 | Naam | beschrijving |
 | ------------- | ------------------------------------------- |
-| onlyModified | Knooppunten die zijn gewijzigd sinds de laatste publicatie |
+| onlyModified | Nodes (nieuw en reeds bestaand) die zijn gewijzigd sinds de laatste publicatie |
 | onlyActivated | Knooppunten die eerder zijn gepubliceerd |
 
 
@@ -120,7 +120,7 @@ De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledi
 
 
 
-### Publish Content Tree Workflow {#publish-content-tree-workflow}
+### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
 >[!NOTE]
 >
@@ -129,9 +129,9 @@ De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledi
 <details>
 <summary>Klik hier voor meer informatie over deze vervangen functie.</summary>
 
-U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen te kiezen - Werkschema - Modellen** en het kopiëren van het **de Inhoudsboom van Publish** uit-van-de-doos werkschemamodel, zoals hieronder getoond:
+U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen te kiezen - Werkschema - Modellen** en het kopiëren van **publiceren de Boom van de Inhoud** uit-van-de-doos werkschemamodel, zoals hieronder getoond:
 
-![ de Kaart van het Werkschema van de Inhoudsboom van Publish ](/help/operations/assets/publishcontenttreeworkflow.png)
+![ de Publish Kaart van het Werkschema van de Boom van de Inhoud ](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Roep het oorspronkelijke model niet aan. Let er in plaats daarvan op dat u het model eerst kopieert en dat exemplaar aanroept.
 
@@ -180,7 +180,7 @@ Wanneer de stap van het werkschema van de boomactivering begint, registreert het
 
 Een laatste INFO-instructie wordt vastgelegd nadat alle paden door de workflowstap zijn gerepliceerd.
 
-U kunt ook het logniveau van de loggers onder `com.day.cq.wcm.workflow.process.impl` verhogen tot DEBUG/TRACE voor nog meer loginformatie.
+U kunt ook het logniveau van de loggers onder `com.day.cq.wcm.workflow.process.impl` verhogen naar DEBUG/TRACE voor nog meer loginformatie.
 
 Als er fouten zijn, eindigt de werkschemastap met a `WorkflowException`, die de onderliggende Uitzondering verpakt.
 
@@ -269,9 +269,9 @@ De grootte van de inhoud die per replicatieaanroep wordt verzonden, mag niet gro
 
 ## Problemen oplossen {#troubleshooting}
 
-Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de AEM Auteur:
+Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de Auteur van AEM:
 
-1. Van het Menu van het Begin van het AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
+1. Van het Menu van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
 1. Selecteer kaart **publiceren**
 
    ![ Status ](assets/publish-status.png " Status ")
