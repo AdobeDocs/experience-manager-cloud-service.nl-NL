@@ -4,9 +4,9 @@ description: Meer informatie over distributie en probleemoplossing voor replicat
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
+source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1711'
 ht-degree: 0%
 
 ---
@@ -96,10 +96,10 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
 
 **Filters van de Steun**
 
-| Naam | beschrijving |
+| Naam | Beschrijving |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nodes (nieuw en reeds bestaand) die zijn gewijzigd sinds de laatste publicatie |
-| onlyActivated | Knooppunten die eerder zijn gepubliceerd |
+| onlyModified | Nodes: zowel nieuwe als reeds bestaande die sinds laatste publicatie zijn gewijzigd |
+| onlyActivated | Nodes: die vóór de laatste publicatie zijn gepubliceerd |
 
 
 **Steun van het hervatten**
