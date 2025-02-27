@@ -4,16 +4,16 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
 
 # Aan de slag - Zelfstudie voor ontwikkelaars
 
-In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met Edge Delivery Services for AEM Forms (EDS) kunt u formulieren maken met vertrouwde gereedschappen, zoals Google Docs en Microsoft Office.
+In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met Edge Delivery Services for AEM Forms kunt u formulieren maken met vertrouwde gereedschappen, zoals Google Docs en Microsoft Office.
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft SharePoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 

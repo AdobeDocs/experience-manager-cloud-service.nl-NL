@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '6193'
+source-wordcount: '6195'
 ht-degree: 2%
 
 ---
@@ -1024,6 +1024,7 @@ ht-degree: 2%
    + Forms samenstellen {#build-forms}
       + [Overzicht](/help/edge/docs/forms/overview.md)
       + [Hoe werkt Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Veelgestelde vragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Op documenten gebaseerd ontwerpen {#getting-started-edge-delivery-services-forms}
          + [Uw eerste formulier maken: snel aan de slag met Google-werkbladen en Excel](/help/edge/docs/forms/tutorial.md)
          + [Forms maken met Google Sheets of Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
@@ -1043,7 +1044,7 @@ ht-degree: 2%
          + [Aangepaste formuliercomponenten maken: ontwikkelaarsgids](/help/edge/docs/forms/custom-components-forms.md)
          + [Prestaties van monitorformulieren: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
          + [Forms implementeren op Edge: publicatiegids voor Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
-      + WYSIWYG {#universal-editor}
+      + WYSIWYG Authoring {#universal-editor}
          + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Uw eerste formulier maken met de Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Universal Editor Interface Guide: uitleg over gereedschappen, functies en navigatie](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)

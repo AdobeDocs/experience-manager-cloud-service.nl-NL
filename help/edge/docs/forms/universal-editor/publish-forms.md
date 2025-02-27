@@ -4,9 +4,9 @@ description: Publiceer uw Edge Delivery Services-formulieren snel en naadloos.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Wanneer het formulier gereed en gebruiksklaar is, kunt u het publiceren zodat he
 
 ## Vereisten
 
-* Een vorm die gebruikend het **wordt gecreeerd Edge Delivery Services (EDS) malplaatje**. [ leer meer ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) over het creëren van een op EDS-Gebaseerde vorm.
+* Een vorm die gebruikend het **malplaatje van Edge Delivery Services** wordt gecreeerd. [ leer meer ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) over het creëren van een op EDS-Gebaseerde vorm.
 
 ## Uw formulier publiceren
 

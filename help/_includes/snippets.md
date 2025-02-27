@@ -1,7 +1,7 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,13 @@ ht-degree: 0%
 
 ## Universele editor{#universal-editor-see-also}
 
-* [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Uw formulier publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Uw formulier verzenden](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Het uiterlijk van uw formulieren aanpassen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Regels maken voor uw formulier](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [reCAPTCHA gebruiken in uw formulier](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [Een aangepaste component voor uw formulier maken](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [ vorm van de Voorproef op ontvankelijke wijze ](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [Uw eerste formulier maken met Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Dynamisch gedrag toevoegen aan Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Handelingen voor het verzenden van formulieren configureren en aanpassen](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Forms publiceren en implementeren](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Mooie Forms: handleiding voor stijlen en thema&#39;s](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Aangepaste formuliercomponenten maken](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Zie ook {#see-more-forms-eds}
 

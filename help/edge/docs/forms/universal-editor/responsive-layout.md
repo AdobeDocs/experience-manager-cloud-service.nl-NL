@@ -3,9 +3,10 @@ title: De modus Universal Editor - responsief
 description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren kunt bekijken met verschillende emulators in de Universal Editor om hun uiterlijk tijdens het ontwerpen te visualiseren.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -66,6 +67,54 @@ De Universal Editor biedt verschillende emulators om formulieren voor te vertone
 </table>
 
 U kunt het **pictogram van de Omwenteling van het 1} Scherm gebruiken {om tussen staande en liggende richtingen van een knevel te voorzien wanneer het voorvertonen van een vorm op verschillende apparaten.** Het helpt ontwikkelaars testen hoe het responsieve ontwerp zich aan het schermomwentelingen op diverse apparaten aanpast.
+
+De Universal Editor ondersteunt de verschillende formulierindelingen. Om de verschillende lay-out te onderzoeken, verwijs naar de [ sectie van de Mogelijkheden van de Lay-out ](#layout-capabilities).
+
+## Indelingsmogelijkheden
+
+Met de Universal Editor kunt u gebruiksvriendelijke formulieren maken die eindgebruikers een dynamische ervaring bieden. De formulierindeling bepaalt hoe items of componenten in een formulier worden weergegeven.
+
+De Universal Editor ondersteunt de volgende typen indelingen voor formulieren:
+* [Deelvensterlay-out](#panel-layout)
+* [Wizard-indeling](#wizard-layout)
+* [Accordeonlay-out](#accordion-layout)
+
+### Layout deelvenster
+
+De indeling van deelvensters is handig om verwante velden zo te ordenen dat u gemakkelijker kunt navigeren en de bijbehorende inhoud kunt vinden. In de indeling van het deelvenster worden formuliercomponenten in afzonderlijke secties of deelvensters in formulieren gerangschikt.
+
+![ Lay-out van het Comité ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+
+### Wizard Layout
+
+
+De indeling van de wizard helpt een complex formulier te vereenvoudigen door het op te splitsen in afzonderlijke stappen. Elke stap vertegenwoordigt een verschillend deel van het proces, en de gebruikers navigeren opeenvolgend door de stappen, vaak met **Volgende** en **Achter** knopen. U kunt de indeling van de wizard gebruiken om een formulier te maken dat uit meerdere secties of stappen bestaat.
+
+![ Lay-out van de Tovenaar ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+
+U kunt de [ tovenaar component ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+
+### Accordeonlay-out
+
+De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer in een adaptief formulier. Wanneer een sectie wordt uitgevouwen, geeft deze de inhoud binnen weer, terwijl andere secties worden samengevouwen. Deze indeling is ideaal voor het weergeven van grote hoeveelheden gegevens in een compacte vorm.
+
+![ Lay-out van de Accordeon ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) artikel van de component 0} accordeon {.[
+
+### Hoe te om de juiste lay-out te kiezen?
+
+Het is belangrijk om de juiste indeling te selecteren voor een optimale gebruikerservaring en functionaliteit van formulieren. De tabel geeft u inzicht in de verschillende beschikbare lay-outopties en helpt u bij het selecteren van de meest geschikte lay-out op basis van uw specifieke behoeften en gebruikssituaties:
+
+| Functie | Layout deelvenster | Wizard Layout | Accordeonlay-out |
+|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Doel** | Hiermee groepeert u gerelateerde inhoud in afzonderlijke secties | Hiermee worden gebruikers door een proces of formulier met meerdere stappen geleid | Inhoud indelen in inklapbare secties |
+| **Structuur** | Afzonderlijke secties | Opeenvolgende stappen/pagina&#39;s | Inklapbare deelvensters/secties |
+| **Navigatie** | Klik op de kopteksten van het deelvenster om te navigeren | - Voorwaarts: &quot;Volgende&quot;knoop <br> - Achteruit: &quot;Achtergrond&quot;knoop <br> - Facultatieve het overslaan stappen | Klik op kopteksten om secties uit te vouwen/samen te vouwen |
+| **Ervaring van 0} Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Compacte weergave met uitgevouwen/samengevouwen secties |
+| **Geval van het Gebruik** | Complexe formulieren met gecategoriseerde secties | Installatieprocessen, complexe formulieren | Veelgestelde vragen, instellingenmenu&#39;s, gedetailleerde inhoudssecties |
 
 ## Zie ook
 
