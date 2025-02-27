@@ -2,7 +2,7 @@
 title: Content Hub verkennen
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
