@@ -1,12 +1,12 @@
 ---
 title: Taxonomiegegevens beheren
-description: Leer hoe u taxonomiegegevens beheert voor het gebruik van tags met uw AEM bij sites met Edge Delivery Services.
+description: Leer hoe u taxonomiegegevens beheert voor het gebruik van tags bij uw AEM met Edge Delivery Services-sites.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Taxonomiegegevens beheren {#managing-taxonomy-data}
 
-Leer hoe u taxonomiegegevens beheert voor het gebruik van tags met uw AEM bij sites met Edge Delivery Services.
+Leer hoe u taxonomiegegevens beheert voor het gebruik van tags bij uw AEM met Edge Delivery Services-sites.
 
 ## Inleiding {#introduction}
 
@@ -23,6 +23,10 @@ Tags zijn een belangrijke functie waarmee u uw pagina&#39;s kunt ordenen en behe
 Deze tags zijn niet alleen handig voor u en uw auteurs bij het ordenen van uw inhoud, maar kunnen ook voor uw lezers worden gebruikt. Tags en de bijbehorende taxonomie kunnen in componenten op de pagina worden gebruikt om uw lezers te helpen door de inhoud te navigeren.
 
 De Universal Editor werkt alleen met de id&#39;s van uw tags. Door een taxonomipagina voor uw inhoud te maken, stelt u de beschrijvingen van deze labels in alle talen beschikbaar aan de Universele Redacteur zodat kan het die informatie gebruiken wanneer het teruggeven van inhoud.
+
+>[!TIP]
+>
+>Gelieve te zien het document [ ModelDefinities, Gebieden, en de Types van Component ](/help/implementing/universal-editor/field-types.md) voor meer informatie over het gebied van de Markering van AEM beschikbaar aan de Universele Redacteur, die met uw taxonomie kan werken.
 
 ## Een taxonomipagina maken {#creating}
 
@@ -118,7 +122,7 @@ Dit proces hoeft maar één keer per taxonomipagina te worden uitgevoerd. Als u 
 
 Een taxonomie is pas beschikbaar voor de Universal Editor of uw gebruikers als deze is gepubliceerd.
 
-De pagina&#39;s van de taxonomie worden gepubliceerd als een andere pagina door [ gebruikend **Snelle Publish** of **leiden de pictogrammen van de Publicatie** in de toolbar ](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+De pagina&#39;s van de taxonomie worden gepubliceerd als een andere pagina door [ gebruikend **Snelle publiceer** of **leidt de pictogrammen van de Publicatie** in de toolbar ](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 U moet uw taxonomipagina telkens opnieuw publiceren:
 
@@ -177,7 +181,7 @@ Door gebrek, zal uw taxonomie `tag` en `title` waarden bevatten zoals die [ in h
 1. In de **Extra sectie van Eigenschappen**, tikt of klikt **** toevoegt om een gebied toe te voegen.
 1. Voer in het nieuwe veld de naam in van de JRC-eigenschap die u wilt weergeven. Voer in dit geval `jcr:description` in voor de tagbeschrijving.
 1. Tik of klik **sparen &amp; sluit**.
-1. Met nog geselecteerde taxonomie, tik of klik **Snelle Publish** in de toolbar.
+1. Met nog geselecteerde taxonomie, tik of klik **Snel publiceren** in de toolbar.
 
 Nu [ wanneer u tot uw taxonomie ](#accessing) toegang hebt, is de markeringsbeschrijving (of welk bezit u verkoos om bloot te stellen) inbegrepen in JSON.
 
