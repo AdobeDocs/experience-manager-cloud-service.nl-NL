@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
+source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
@@ -175,11 +175,11 @@ Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperking
 
 * Er kunnen maximaal 30 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
 * De gebruikers die aan New Relic worden toegevoegd zijn van het type **Beperkt**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change).
-* AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
+* AEM as a Cloud Service biedt slechts de **APM van New Relic One** oplossing aan en verleent geen steun voor infrastructuurcontrole, alarmerend, registreren, of API integratie.
 
 >[!NOTE]
 >
->Als er gedurende 30 dagen of langer geen activiteit wordt gedetecteerd in uw New Relic One-subaccount, wordt de APM-agent gestopt.
+>Als geen **gebruikerslogin** activiteit in uw sub-rekening van New Relic One 30 dagen of meer wordt ontdekt, wordt de agent APM tegengehouden en de gegevens zullen niet van de Dienst van de Wolk AEM naar New Relic worden verzonden.  **Gegevens zullen niet opnieuw worden verzonden tot uw sub-account wordt opnieuw geactiveerd.**
 >
 >Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 
@@ -187,7 +187,7 @@ Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor
 
 ## Veelgestelde vragen {#faqs}
 
-+++**wat controleert Adobe met New Relic One?** {#adobe-monitor}
++++**wat controleert Adobe met New Relic One?**
 
 Adobe bewaakt de auteur-, publicatie- en voorvertoningsservices van AEM as a Cloud Service (indien beschikbaar) via de New Relic One Java-plug-in. Adobe maakt aangepaste New Relic One APM telemetrie en bewaking mogelijk in niet-productie en productie-AEM as a Cloud Service-omgevingen.
 
@@ -205,22 +205,22 @@ Opmerking:
 
 +++
 
-+++**verzendt Adobe waakzame berichten van New Relic One?** {#alerting-new-relic}
++++**verzendt Adobe waakzame berichten van New Relic One?**
 
 Adobe biedt New Relic One alleen toegang voor waarneembare doeleinden en gebruikt deze niet voor klantwaarschuwingen of interne operationele waarschuwingen. De berichten voor om het even welke incidenten worden verzonden gebruikend [ profielen van het gebruikersbericht ](/help/journey-onboarding/notification-profiles.md).
 +++
 
-+++**wie tot de gegevens van de de wolkendienst van New Relic One kan toegang hebben?** {#access-new-relic-cloud}
++++**wie tot de gegevens van de de wolkendienst van New Relic One kan toegang hebben?**
 
 Volledige leestoegang wordt verleend voor maximaal 30 leden van uw team. Leestoegang omvat alle APM-meetgegevens die door de New Relic One-agent worden verzameld.
 +++
 
-+++**wordt de configuratie van douaneSSO gesteund?** {#custom-sso}
++++**wordt de configuratie van douaneSSO gesteund?**
 
 Aangepaste SSO-configuratie wordt niet ondersteund voor de New Relic One-account die is ingericht door Adobe.
 +++
 
-+++**wat als ik reeds een op-gebouw New Relic abonnement heb?** {#new-relic-subscription}
++++**wat als ik reeds een op-gebouw New Relic abonnement heb?**
 
 New Relic One is het nieuwe platform voor waarneming vanuit New Relic en biedt Adobe-ondersteuning en uw teams de mogelijkheid om metingen en gebeurtenissen op één locatie te observeren, te controleren en weer te geven.
 
@@ -234,7 +234,7 @@ Adobe-ondersteuning bewaakt AEM as a Cloud Service met New Relic One en andere t
 
 +++
 
-+++**de agent APM voor mijn rekening van New Relic One wordt tegengehouden. Wat is er gebeurd?** {#deactivated}
++++**de agent APM voor mijn rekening van New Relic One wordt tegengehouden. Wat is er gebeurd?**
 
 [ de agenten van APM worden tegengehouden ](#limitations) als geen activiteit voor 30 dagen of meer wordt ontdekt. Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 +++
