@@ -3,12 +3,10 @@ title: Universal Editor voor Edge Delivery Services voor Forms
 description: Met Universal Editor voor Edge Delivery Services for Forms kunt u Adaptive Forms maken.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -47,14 +45,14 @@ Hier is de lay-out met kaarten van gelijke breedte (het gebruiken van kolommen m
 | [**het Stijlen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **prefill de Diensten** (Binnenkort komend) | [**het Testen A/B** ](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Met CSS opmaken kunnen ontwikkelaars de weergave van formulierelementen aanpassen en een visueel aantrekkelijk ontwerp maken dat wordt uitgelijnd op de esthetiek van de website. | Pre-fill Services vult formuliervelden automatisch met relevante gebruikersgegevens uit verschillende bronnen, waardoor de handmatige invoer wordt verminderd en de gebruikerservaring wordt verbeterd. | Met A/B-tests kunnen organisaties experimenteren met verschillende formulierontwerpen, indelingen en functies om de best presterende varianten te identificeren. |
 
-| ![ Analytics &amp; het Volgen ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Het Beheer van de Taak ](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![ Gegevens die ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |
+| ![ Analytics &amp; het Volgen ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![ Gegevens die ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics &amp; het Volgen** ](https://www.aem.live/developer/martech-integration) | **het Beheer van de Taak** (Binnenkort komend) | **Gegevens die** binden (Binnenkort komt) |
-| Bekijk meer inzicht in gebruikersgedrag, formulierinteracties en verzendingssnelheden met ingebouwde analyses en tracering om gegevensgestuurde optimalisatie van formulieren mogelijk te maken. | Dankzij integratie met Adobe Workfront kunnen teams taken voor het maken en onderhouden van formulieren beheren, zodat gestroomlijnde workflows worden gegarandeerd. | Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en achterwaartse gegevensbronnen, met ondersteuning voor realtime updates en geavanceerde gegevenstoewijzing. |
+| [**Analytics &amp; het Volgen** ](https://www.aem.live/developer/martech-integration) | **Fragmenten van de Vorm** (Binnenkort komend) | **Gegevens die** binden (Binnenkort komt) |
+| Bekijk meer inzicht in gebruikersgedrag, formulierinteracties en verzendingssnelheden met ingebouwde analyses en tracering om gegevensgestuurde optimalisatie van formulieren mogelijk te maken. | Met formulierfragmenten kunt u hergebruik mogelijk maken door veelgebruikte secties één keer te maken en opnieuw te gebruiken in meerdere formulieren. Dit zorgt voor consistentie en vermindert de onderhoudsinspanning. | Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en achterwaartse gegevensbronnen, met ondersteuning voor realtime updates en geavanceerde gegevenstoewijzing. |
 
 | ![ CAPTCHA ](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![ Inbeddend Forms ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![ Dank u Configuratie ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Inbeddend Forms** | [**Dank u Configuratie**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Inbeddend Forms** (Binnenkort komend) | [**Dank u Configuratie**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Gebruik reCAPTCHA om formulieren te beschermen tegen geautomatiseerde bots, zodat u verzekerd bent van een veilige en betrouwbare gegevensverzameling. | U kunt formulieren rechtstreeks insluiten in Edge Delivery Services-sitepagina&#39;s met de ingebouwde insluitcomponent van de Universal Editor. | Pas eenvoudig het bevestigingsbericht of de pagina aan die aan gebruikers na succesvolle vormverzending worden getoond. |
 
 
