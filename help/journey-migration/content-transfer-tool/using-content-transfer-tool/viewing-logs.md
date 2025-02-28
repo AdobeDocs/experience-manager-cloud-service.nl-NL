@@ -4,7 +4,7 @@ description: Logbestanden voor een migratieset weergeven in het gereedschap Inho
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 9%
@@ -17,11 +17,11 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
 >title="Logbestanden weergeven"
->abstract="Na voltooiing van Extractie van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de Adobe."
+>abstract="Na voltooiing van Extractie van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de ondersteuning van Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="Problemen oplossen"
 >additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contact opnemen met Adobe-ondersteuning"
 
-Controleer na elke stap (extractie en inname) de logboeken en zoek op fouten.  Fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de Adobe.
+Controleer na elke stap (extractie en inname) de logboeken en zoek op fouten.  Fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de ondersteuning van Adobe.
 
 ## Stappen voor het bekijken van logboeken {#viewing-logs}
 
@@ -33,7 +33,7 @@ Voer vervolgens de onderstaande stappen uit:
 
 1. Selecteer een migratiereeks en klik **Logboek van de Mening** van de actiebar. Dit zal de dialoog van Logs omhoog brengen. Klik **Logboek van de Uitwinning** om de logboeken in een nieuw lusje te bekijken.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    Of, klik de **EINDIGDE** status aan meningslogboeken in een nieuw lusje.
 
 1. Als u de logboeken wilt koppelen zonder de gebruikersinterface te gebruiken, past u SSH toe in uw bron AEM-omgeving op `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.

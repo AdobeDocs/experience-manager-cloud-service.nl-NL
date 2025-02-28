@@ -4,7 +4,7 @@ description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten t
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 
 >[!INFO]
 >
->Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om [ pre-exemplaar ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) in werking te stellen. De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud - vorm een dossier azcopy.config ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De doelomgeving van AEM Cloud Service moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om [ pre-exemplaar ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) in werking te stellen. De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud - vorm een dossier azcopy.config ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om een extractie en opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van de bron AEM milieu door deze stappen toe te volgen:
+Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om een extractie en opname uit te voeren. Als u deze functie wilt gebruiken, schakelt u deze in de System Console van de AEM-bronomgeving in door de volgende stappen uit te voeren:
 
 1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen te gaan - Verrichtingen - de Console van het Web** of direct aan URL in *https://serveraddress:serverport/system/console/configMgr*
 1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
@@ -31,13 +31,13 @@ Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze fun
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-Als deze instelling is ingeschakeld en de AEM Cloud Service-doelomgeving waarop een compatibele release wordt uitgevoerd, vindt migratievalidatie plaats tijdens alle volgende extractie- en innameacties.
+Als deze instelling is ingeschakeld en de AEM Cloud Service-doelomgeving een compatibele release uitvoert, vindt migratievalidatie plaats tijdens alle volgende extractie- en insluitingen.
 
 Voor meer informatie over hoe te om het Hulpmiddel van de Overdracht van de Inhoud te installeren, zie [ Begonnen het Worden met het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
 ## Hoe te om een Overdracht van de Inhoud te bevestigen {#how-to-validate-a-content-transfer}
 
-Als migratievalidatie is ingeschakeld in de AEM bronomgeving, begint u met extraheren.
+Als migratievalidatie is ingeschakeld in de AEM-bronomgeving, begint u met extraheren.
 
 Als **staging container tijdens extractie** overschrijft wordt toegelaten, worden alle knopen die met de extractie betrokken zijn geregistreerd aan de samenvatting van de extractieweg. Wanneer dit het plaatsen wordt gebruikt, is het belangrijk om **toe te laten Wipe bestaande inhoud op de instantie van de Wolk alvorens** het plaatsen in te nemen tijdens opname, anders kunnen er knopen missen van de ingestipingssamenvatting lijken. Dit zijn de knooppunten die al aanwezig zijn op het doel na eerdere inname.
 
@@ -47,7 +47,7 @@ Zie de volgende voorbeelden voor een grafische illustratie hiervan:
 
 * **Extractie (Overschrijven)**
 
-  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **Ingestie (Sluitereffect)**
 
@@ -61,7 +61,7 @@ Zie de volgende voorbeelden voor een grafische illustratie hiervan:
 
 * **Extractie**
 
-  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **Ingestie**
 

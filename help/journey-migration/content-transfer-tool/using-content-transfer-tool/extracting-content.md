@@ -1,13 +1,13 @@
 ---
 title: Inhoud uit Source extraheren
-description: Leer hoe u inhoud van een Adobe Experience Manager-broninstantie (AEM) extraheert om deze later naar een Cloud Service-AEM over te brengen.
+description: Leer hoe u inhoud van een Adobe Experience Manager-broninstantie (AEM) kunt extraheren om deze later over te brengen naar een Cloud Service AEM-instantie.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 9%
+source-wordcount: '789'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Inhoud extraheren"
->abstract="Extractie heeft betrekking op het extraheren van inhoud van de Adobe Experience Manager-instantie (AEM) van de bron naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een gebied van de wolkenopslag dat door Adobe wordt verstrekt om de overgebracht inhoud tussen de bron AEM instantie en de AEM van de Cloud Service tijdelijk op te slaan."
+>abstract="Extractie heeft betrekking op het extraheren van inhoud van het Adobe Experience Manager-bronexemplaar (AEM) naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een opslaggebied voor de cloud dat door Adobe wordt geleverd om de overgedragen inhoud tijdelijk op te slaan tussen de AEM-broninstantie en de Cloud Service AEM-instantie."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extractie naar boven"
 
 
@@ -37,11 +37,11 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
    >[!IMPORTANT]
    >
    >Zorg ervoor dat de sleutel van de Extractie geldig is en niet dichtbij zijn vervaldatum is. Als deze bijna verlopen is, kunt u de Extractietoets vernieuwen door de migratieset te selecteren en op Eigenschappen te klikken. Klik **Vernieuwen**. Dit neemt u aan Cloud Acceleration Manager waar u **Sleutel van de Extractie van het Extractie van het Exemplaar** kunt klikken. Telkens als u **Sleutel van de Extractie van het Extractie van het Exemplaar** klikt, wordt een nieuwe sleutel van de Uitwinning geproduceerd die 14 dagen van de tijd van verwezenlijking geldig is.
-   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. Hiermee wordt het dialoogvenster Extractie weergegeven. Klik **Extraheren** om de extractiefase te beginnen.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >U kunt optioneel de container overschrijven tijdens de extractiefase. Als **staging container** wordt onbruikbaar gemaakt overschrijven, kan het extracties voor verdere migraties versnellen waar de inhoudspaden of versiemontages omvatten niet zijn veranderd. Nochtans, als de inhoudspaden of versiemontages omvatten zijn veranderd, dan **zou de staging container** moeten worden toegelaten.
@@ -52,7 +52,7 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
    U kunt **Voortgang van de Mening** klikken om een korrelige mening van de aan de gang zijnde extractie te krijgen.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    U kunt de vooruitgang van de Fase van de Uitwinning van Cloud Acceleration Manager ook controleren door de pagina van de Overdracht van de Inhoud te bezoeken, en het meer in detail te zien door **te klikken..** > **de details van de Mening**.
 
@@ -68,8 +68,14 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
->Na de eerste overdracht van inhoud wordt aanbevolen regelmatig differentiële toevoegingen toe te passen om de periode waarin de inhoud wordt vastgezet voor de uiteindelijke differentiële overdracht van inhoud te verkorten voordat deze live gaat met de Cloud Service. Als u de stap voor het vooraf kopiëren hebt gebruikt voor de eerste volledige extractie, kunt u de voorkopie voor volgende aanvullende extracties overslaan (als de ingestelde grootte voor de bovenste migratie kleiner is dan 200 GB). De reden is dat het tijd kan toevoegen aan het hele proces.
+>Na de eerste overdracht van inhoud wordt aanbevolen regelmatig differentiële toevoegingen toe te passen om de periode waarin de inhoud wordt vastgezet voor de uiteindelijke differentiële overdracht van inhoud te verkorten voordat u live gaat op Cloud Service. Als u de stap voor het vooraf kopiëren hebt gebruikt voor de eerste volledige extractie, kunt u de voorkopie voor volgende aanvullende extracties overslaan (als de ingestelde grootte voor de bovenste migratie kleiner is dan 200 GB). De reden is dat het tijd kan toevoegen aan het hele proces.
 >Het is ook van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
+
+>[!NOTE]
+>Nadat inhoudspaden zijn gemigreerd naar de container voor opvulling, kunnen deze paden of eventuele subpaden in deze paden niet worden verwijderd of uitgesloten van volgende aanvullende migraties.
+>Voorbeeld: initiële migratie: content/dam/weRetail,
+>Volgende poging tot uitsluiting bovenaan: content/dam/weRetail/ab.
+>In dit scenario is het uitsluiten van inhoud/dam/weRetail/ab niet mogelijk omdat de gegevens al naar de testcontainer zijn gemigreerd.
 
 Als het extractieproces is voltooid, kunt u delta-inhoud overbrengen met behulp van de extractiemethode top-up.
 
@@ -83,7 +89,7 @@ Voer de onderstaande stappen uit:
 
    >[!IMPORTANT]
    >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
-   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## Volgende functies {#whats-next}
