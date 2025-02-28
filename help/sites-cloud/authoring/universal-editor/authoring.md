@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -177,6 +177,14 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 >[!NOTE]
 >
 >De componenten kunnen niet tussen containers worden bewogen als een verschillend [ componentenfilter ](/help/implementing/universal-editor/filtering.md) tussen de bron en doelcontainers wordt geplaatst.
+
+### Variaties maken met GenAI met Variaties genereren {#generate-variations-ai}
+
+Gebruik Generatieve variaties om generatieve AI te gebruiken om het maken van inhoud te versnellen.
+
+Open de Universele Redacteur om het ingangspunt te vinden om Variaties te produceren.
+
+Zie [ Variaties produceren - in AEM Editors ](/help/generative-ai/generate-variations-integrated-editor.md) geïntegreerd om meer te leren.
 
 ## Inhoud voorvertonen {#previewing-content}
 
