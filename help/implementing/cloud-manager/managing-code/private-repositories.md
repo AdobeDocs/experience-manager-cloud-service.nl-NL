@@ -4,9 +4,9 @@ description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarp
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,9 @@ De configuratie van een privé bewaarplaats GitHub in Cloud Manager bestaat uit 
 1. [ voeg een privé bewaarplaats GitHub ](#add-repo) aan een geselecteerd programma toe.
 1. Dan, [ bevestigt eigendom van de privé bewaarplaats GitHub ](#validate-ownership).
 
+>[!NOTE]
+>Cloud Manager biedt alleen ondersteuning voor persoonlijke opslagruimten op GitHub Cloud (github.com). <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### Een persoonlijke GitHub-opslagplaats toevoegen aan een programma {#add-repo}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
@@ -68,7 +71,6 @@ Nu, kunt u [ eigendom van de privé bewaarplaats ](#validate-ownership) bevestig
 >[!TIP]
 >
 >Voor details over het beheren van bewaarplaatsen in Cloud Manager, zie [ Bewaarplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
-
 
 
 ### Eigendom van een persoonlijke GitHub-opslagplaats valideren {#validate-ownership}
