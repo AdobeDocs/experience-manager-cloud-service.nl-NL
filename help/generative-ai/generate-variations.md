@@ -1,12 +1,12 @@
 ---
 title: Variaties genereren
-description: Meer informatie over Variaties genereren, toegankelijk vanuit AEM as a Cloud Service en de Sidekick van Edge Delivery Services
+description: Meer informatie over Variaties genereren, toegankelijk vanuit AEM as a Cloud Service en de Sidekick of Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3272'
 ht-degree: 0%
 
 ---
@@ -14,28 +14,32 @@ ht-degree: 0%
 
 # Variaties genereren {#generate-variations}
 
-Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Produceer Variaties het gebruik generatieve Intelligentie van de Kunst (AI) om inhoudvariaties tot stand te brengen die op herinneringen worden gebaseerd; deze herinneringen worden of verstrekt door Adobe of gecreeerd, en geleid, door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van [ Edge Delivery Services ](/help/edge/overview.md).](https://www.aem.live/docs/experimentation)
+Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van [ Edge Delivery Services ](/help/edge/overview.md).](https://www.aem.live/docs/experimentation)
 
 U kunt [ toegang tot produceren Variaties ](#access-generate-variations) van:
 
-* [binnen Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
-* [de Sidekick van AEM Edge Delivery Services](#access-aem-sidekick)
+* [in Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
+* [de Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
 * [in de Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
 >In alle gevallen, om te gebruiken produceert Variaties u moet ervoor zorgen dat de [ toegangseerste vereisten ](#access-prerequisites) worden vervuld.
 
+>[!NOTE]
+>
+>U kunt tot [ ook toegang hebben produceert Variaties die in de redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd.
+
 U kunt dan:
 
-* [ krijg begonnen ](#get-started) gebruikend een snel malplaatje dat de Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
+* [ worden begonnen ](#get-started) gebruikend een snel malplaatje dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
 * U kunt [ een bestaande herinnering ](#edit-the-prompt) uitgeven
 * Of [ creeer en gebruik uw eigen herinneringen ](#create-prompt):
    * [ sparen uw herinneringen ](#save-prompt) voor toekomstig gebruik
    * [ Toegang en gebruik gedeelde herinneringen ](#select-prompt) van over uw organisatie
 * Bepaal de [ publiek ](#audiences) segmenten om in de herinnering te gebruiken wanneer [ het produceren gepersonaliseerde publiek-specifieke inhoud ](#generate-copy).
 * Geef een voorvertoning van de uitvoer weer naast de prompt, voordat u wijzigingen aanbrengt en verfijnen, indien nodig.
-* Gebruik [ Adobe Express om beelden ](#generate-image) te produceren die op de exemplaarvariaties worden gebaseerd; dit gebruikt de Generatieve mogelijkheden AI van Firefly.
+* Het gebruik [ Adobe Express om beelden ](#generate-image) te produceren die op de exemplaarvariaties worden gebaseerd; dit gebruikt de Generatieve mogelijkheden van AI van Firefly.
 * Selecteer de inhoud die u op uw website of in een experiment wilt gebruiken.
 
 ## Opmerking bij wet en gebruik {#legal-usage-note}
@@ -46,7 +50,7 @@ Uw invoer voor de service moet aan een context zijn gekoppeld. Deze context kan 
 
 U moet de nauwkeurigheid van om het even welke output zoals aangewezen voor uw gebruiksgeval evalueren.
 
-Alvorens te gebruiken produceer Variaties u moet met de [ Generatieve AI Richtlijnen van de Gebruiker van de Adobe instemmen ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+Alvorens te gebruiken produceer Variaties u aan de [ Generatieve AI Richtlijnen van de Gebruiker van Adobe ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) moet akkoord gaan.
 
 [ Gebruik van produceerde Variaties ](#generative-action-usage) is gebonden aan de consumptie van generatieve acties.
 
@@ -63,7 +67,7 @@ Als u Variaties genereren opent (en het linkerdeelvenster uitvouwt), ziet u:
    * Links van **produceer Variaties**, is er de optie (broodjesmenu) om, het linkernavigatievenster uit te breiden of te verbergen.
    * **Snelle Malplaatjes**:
       * Toont verbindingen aan de diverse Herinneringen; deze kunnen herinneringen omvatten:
-         * Wordt geleverd door een Adobe die u helpt inhoud te genereren. Wordt gemarkeerd met het pictogram Adobe.
+         * Wordt geleverd door Adobe zodat u inhoud kunt genereren. Wordt gemarkeerd met het Adobe-pictogram.
          * Gemaakt door uzelf.
          * Gemaakt binnen uw IMS-organisatie; gemarkeerd met een pictogram met meerdere koppen.
       * Omvat de [ Nieuwe herinnering ](#create-prompt) verbinding voor het creëren van uw eigen herinnering.
@@ -81,14 +85,14 @@ De interface begeleidt u door het proces om inhoud te produceren. Na het openen 
 
 In het hoofdvenster kunt u het volgende selecteren:
 
-* een door de Adobe aangeleverde promptsjabloon om te beginnen met het genereren van inhoud;
+* een door Adobe aangeleverde template met vragen om inhoud te genereren;
 * de [ Nieuwe herinnering ](#create-prompt) om uw eigen herinnering tot stand te brengen,
 * een sjabloon die u alleen voor uw gebruik hebt gemaakt,
 * een sjabloon die u of iemand in uw organisatie heeft gemaakt.
 
 U kunt als volgt onderscheiden:
 
-* De door de Adobe opgegeven vragen worden gemarkeerd met het pictogram Adobe
+* De door Adobe verschafte vragen worden gemarkeerd met het Adobe-pictogram
 * De herinneringen beschikbaar door uw organisatie IMS worden gemarkeerd met een veelvoudige hoofdpictogram.
 * Uw persoonlijke herinneringen worden niet specifiek gemarkeerd.
 
@@ -111,7 +115,7 @@ Er zijn verschillende belangrijke invoervelden die worden gebruikt bij meerdere 
 * **Extra Context**
    * Voeg relevante inhoud in om Generative AI-vaartuigen een betere respons te bieden op basis van de invoer. Als u bijvoorbeeld een webbanner maakt voor een bepaalde pagina of een bepaald product, wilt u mogelijk informatie over de pagina of het product opnemen.
 * **Temperatuur**
-Gebruik om de temperatuur van generatieve AI van de Adobe te wijzigen:
+Gebruiken om de temperatuur van Adobe Generative AI te wijzigen:
    * Een hogere temperatuur leidt van de herinnering en tot meer variatie, willekeur, en creativiteit.
    * Een lagere temperatuur is deterministischer en blijft dichter bij wat in de herinnering is.
    * De temperatuur wordt standaard ingesteld op 1. U kunt experimenteren met verschillende temperaturen als de gegenereerde resultaten u niet aanspreken.
@@ -128,7 +132,7 @@ Selecteer **produceer** om reacties te zien die door generatieve AI worden gepro
 
 >[!NOTE]
 >
->De meeste vlotte malplaatjes van de Adobe omvatten een **AI Rationale** in de variatiereactie. Dit zorgt voor transparantie ten aanzien van de reden waarom generatieve AI die specifieke variatie heeft gegenereerd.
+>De meeste snelle malplaatjes van Adobe omvatten een **AI Rationale** in de variatiereactie. Dit zorgt voor transparantie ten aanzien van de reden waarom generatieve AI die specifieke variatie heeft gegenereerd.
 
 Wanneer u één variatie selecteert, zijn de volgende acties beschikbaar:
 
@@ -146,13 +150,13 @@ Boven elke reeks variaties is de herinnering die hen, samen met a **creeerde her
 
 ### Afbeelding genereren {#generate-image}
 
-Nadat u tekstvariaties hebt gegenereerd, kunt u afbeeldingen in Adobe Express genereren met de algemene AI-mogelijkheden van Firefly.
+Nadat u tekstvariaties hebt gegenereerd, kunt u afbeeldingen in Adobe Express genereren met behulp van de algemene AI-mogelijkheden van Firefly.
 
 >[!NOTE]
 >
->**produceer Beeld** is slechts beschikbaar als u een betiteling van de Adobe Express als deel van uw organisatie IMS, en toegang hebt die aan u in de Admin Console wordt verleend.
+>**produceer Beeld** is slechts beschikbaar als u een machtiging van Adobe Express als deel van uw organisatie IMS hebt, en toegang die aan u in Admin Console wordt verleend.
 
-Selecteer een variatie, die door **wordt gevolgd produceert Beeld**, **Tekst aan Beeld** in [ Adobe Express ](https://www.adobe.com/express/) direct te openen. De vraag wordt vooraf ingevuld gebaseerd op uw variantselectie, en de beelden worden automatisch geproduceerd volgens die herinnering.
+Selecteer een variatie, die door **wordt gevolgd produceert Beeld**, om **Tekst aan Beeld** in [ Adobe Express ](https://www.adobe.com/express/) direct te openen. De vraag wordt vooraf ingevuld gebaseerd op uw variantselectie, en de beelden worden automatisch geproduceerd volgens die herinnering.
 
 ![ produceer Variaties - druk beelden ](assets/generate-variations-express-images.png) uit
 
@@ -177,7 +181,7 @@ Hier kunt u de muis boven de afbeelding houden om actiepunten weer te geven voor
 
 >[!NOTE]
 >
->[ Content credentials ](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
+>[ geloofsbrieven van de Inhoud ](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
 
 ### Inhoud gebruiken {#use-content}
 
@@ -382,7 +386,7 @@ Als u bijvoorbeeld een publiek wilt toevoegen vanuit een bestand op Google Drive
 1. Maak in Google Drive een spreadsheetbestand met twee kolommen:
    1. De eerste kolom wordt weergegeven in de vervolgkeuzelijst.
    1. De tweede kolom is de beschrijving van het publiek.
-1. Publish het bestand:
+1. Bestand publiceren:
    1. Bestand -> Delen -> Publiceren naar web -> CSV
 1. Kopieer de URL naar het gepubliceerde bestand.
 1. Ga naar Variaties genereren.
@@ -403,7 +407,7 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
 * Variaties genereren
 
-  Eén generatie van een kopieervariant is gelijk aan één generatieve actie. Als klant hebt u een aantal generatieve acties die bij uw AEM licentie worden geleverd. Zodra de basisrechten zijn verbruikt, kunt u extra handelingen aanschaffen.
+  Eén generatie van een kopieervariant is gelijk aan één generatieve actie. Als klant hebt u een aantal generatieve acties die bij uw AEM-licentie worden geleverd. Zodra de basisrechten zijn verbruikt, kunt u extra handelingen aanschaffen.
 
   >[!NOTE]
   >
@@ -411,11 +415,11 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
 * Adobe Express
 
-  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van de Adobe Express en [ generatieve kredieten ](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [ generatieve kredieten ](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Toegang genereert variaties {#access-generate-variations}
 
-Nadat u aan de voorwaarden hebt voldaan, hebt u toegang tot het dialoogvenster Variaties genereren vanuit AEM as a Cloud Service of de Sidekick van de Edge Delivery Services.
+Nadat u aan de voorwaarden hebt voldaan, hebt u toegang tot Variaties genereren vanuit AEM as a Cloud Service of de Sidekick van de Edge Delivery Services.
 
 ### Toegangsvoorwaarden {#access-prerequisites}
 
@@ -425,15 +429,15 @@ Als u Variaties genereren wilt gebruiken, moet u ervoor zorgen dat aan de voorwa
 
 #### Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
-Gebruikers die toegang nodig hebben om variaties te genereren, moeten recht hebben op een as a Cloud Service omgeving van de Experience Manager met Edge Delivery Services.
+Gebruikers die toegang nodig hebben om variaties te genereren, moeten recht hebben op een Experience Manager as a Cloud Service-omgeving met Edge Delivery Services.
 
 >[!NOTE]
 >
->Als uw contract voor AEM Sites as a Cloud Service geen Edge Delivery Services bevat, moet u een nieuw contract ondertekenen om toegang te krijgen.
+>Als uw contract voor AEM Sites as a Cloud Service Edge Delivery Services niet bevat, moet u een nieuw contract ondertekenen om toegang te krijgen.
 >
 >Neem contact op met uw accountteam om te bespreken hoe u met Edge Delivery Services naar AEM Sites as a Cloud Service kunt gaan.
 
-Als u toegang wilt verlenen aan specifieke gebruikers, wijst u hun gebruikersaccount toe aan het desbetreffende productprofiel. Zie [ Toewijzend AEM Profielen van het Product voor verdere details ](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Als u toegang wilt verlenen aan specifieke gebruikers, wijst u hun gebruikersaccount toe aan het desbetreffende productprofiel. Zie [ Toewijzend de Profielen van het Product van AEM voor verdere details ](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ### Toegang tot AEM as a Cloud Service {#access-aemaacs}
 
@@ -443,11 +447,11 @@ Produceer Variaties kan van het [ Comité van de Navigatie ](/help/sites-cloud/a
 
 ### Toegang van de AEM Sidekick {#access-aem-sidekick}
 
-Één of andere configuratie is nodig alvorens u tot Generate Variaties van de Sidekick (van Edge Delivery Services) kunt toegang hebben.
+Er is enige configuratie nodig voordat u toegang krijgt tot Variaties genereren via de Sidekick (van Edge Delivery Services).
 
-1. Zie het document [ Installerend de AEM Sidekick ](https://www.aem.live/docs/sidekick-extension) voor hoe te om de Sidekick te installeren en te vormen.
+1. Zie het document [ Installerend AEM Sidekick ](https://www.aem.live/docs/sidekick-extension) voor hoe te om Sidekick te installeren en te vormen.
 
-1. Om te gebruiken produceer Variaties in de Sidekick (van Edge Delivery Services), omvat de volgende configuratie in uw projecten van Edge Delivery Services onder:
+1. Als u de functie Variaties genereren in de Sidekick (van Edge Delivery Services) wilt gebruiken, neemt u de volgende configuratie op in uw Edge Delivery Services-projecten onder:
 
    * `tools/sidekick/config.json`
 
@@ -475,7 +479,7 @@ Produceer Variaties kan van het [ Comité van de Navigatie ](/help/sites-cloud/a
 
 1. U kunt dan moeten ervoor zorgen dat de gebruikers [ Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services ](#access-to-aemaacs-with-edge-delivery-services) hebben.
 
-1. U kunt tot de eigenschap dan toegang hebben, door **te selecteren produceert Variaties** van de toolbar van de Sidekick:
+1. U kunt tot de eigenschap dan toegang hebben, door **te selecteren produceert Variaties** van de toolbar van Sidekick:
 
    ![ produceer Variaties - toegang van AEM Sidekicj ](assets/generate-variations-sidekick-toolbar.png)
 

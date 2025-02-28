@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Deze editor biedt:
 * [ In-line het uploaden van activa als inhoudsverwijzingen ](#reference-images), zonder het moeten hen aan Activa DAM eerst uploaden.
 * [ produceer Variaties ](#generate-variations-ai) om Generatieve AI te gebruiken om inhoudsverwezenlijking te versnellen die op herinneringen wordt gebaseerd.
 * [ Voorproef ](#preview-content-fragment) van de teruggegeven ervaring die door het Fragment van de Inhoud wordt geleverd.
-* Capaciteit aan [ Publish ](#publish-content-fragment) en [ unpublish ](#unpublish-content-fragment) van de redacteur.
+* Capaciteit om [ te publiceren ](#publish-content-fragment) en [ ](#unpublish-content-fragment) van de redacteur ongedaan te maken.
 * Capaciteit aan [ mening, en open, bijbehorende taalexemplaren ](#view-language-copies) in de redacteur.
 * Mogelijkheid aan [ details van de meningsversie ](#view-version-history) in de redacteur. U kunt ook terugkeren naar een geselecteerde versie.
 * Capaciteit aan [ mening, en open, ouderverwijzingen ](#view-parent-references).
@@ -51,7 +51,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * een koppeling naar de Content Fragment Console (pictogram Start)
    * informatie over het model en de map
    * verbindingen aan [ Voorproef (als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd) ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [ Publish ](#publish-content-fragment), en [ unpublish ](#unpublish-content-fragment) acties
+   * [ publiceer ](#publish-content-fragment), en [ unpublish ](#unpublish-content-fragment) acties
    * een optie om alle **Verwijzingen van de Ouder** (verbindingspictogram) te tonen
    * het fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, en laatst bewaarde informatie
    * een schakeloptie voor het overschakelen naar de oorspronkelijke (op Assets gebaseerde) editor
@@ -95,7 +95,7 @@ In het linkerpaneel kunt u zien:
 
 * de lijst van **[Variaties](#variations)** die voor dit fragment zijn gecreeerd:
    * **Hoofd** is de Variatie die aanwezig is wanneer het Fragment van de Inhoud eerst wordt gecreeerd, kunt u anderen later toevoegen
-   * u kunt gebruiken produceert Variaties (#generate-Variaties) om een snel gebaseerde malplaatje te gebruiken dat de Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
+   * u kunt gebruiken produceert Variaties (#generate-Variaties) om een op herinnering gebaseerde malplaatje te gebruiken dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
    * u kunt ook [ tot een Variatie ](#create-variation) leiden
 * de **Gebieden** binnen het fragment, en zijn variaties:
    * het pictogram wijst op het [ Type van Gegevens ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -126,13 +126,13 @@ Bij elke update die u maakt, wordt het inhoudsfragment automatisch opgeslagen. D
 
 ## Variaties {#variations}
 
-[ de Variaties ](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) zijn een significante eigenschap van het AEM van de Fragmenten van de Inhoud. Zij staan u toe om exemplaren van de **Belangrijkste** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s tot stand te brengen en uit te geven, makend koploze inhoudslevering en pagina het schrijven nog flexibeler.
+[ de Variaties ](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) zijn een significante eigenschap van de Fragmenten van de Inhoud van AEM. Zij staan u toe om exemplaren van de **Belangrijkste** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s tot stand te brengen en uit te geven, makend koploze inhoudslevering en pagina het schrijven nog flexibeler.
 
 Vanuit de editor kunt u:
 
 * [ creeer variaties ](#create-variation) van de **Belangrijkste** inhoud
 
-* [ het Gebruik produceert Variaties AI ](#generate-variations-ai) om Generatieve AI te gebruiken om een snel gebaseerd malplaatje te gebruiken dat de Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
+* [ het Gebruik produceert Variaties AI ](#generate-variations-ai) om Generatieve AI te gebruiken om een snel gebaseerd malplaatje te gebruiken dat Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
 
 * Selecteer de gewenste variatie voor het bewerken van de inhoud
 
@@ -174,40 +174,9 @@ Om a **Verandering** anders te noemen:
 
 Gebruik Generatieve variaties om generatieve AI te gebruiken om het maken van inhoud te versnellen.
 
-De generatieve variaties gebruiken in de Inhoudsfragmenteditor:
+Open de Inhoudsfragmenteditor om het ingangspunt te zoeken voor het genereren van variaties.
 
-1. Open de Inhoudsfragmenteditor. In de kopbal zult u het ingangspunt vinden om Variaties te produceren:
-
-   ![ produceer Variaties in de Redacteur van het Fragment van de Inhoud ](assets/cfm-generate-variations1.png)
-
-1. Variaties genereren wordt geopend op een nieuw tabblad. In de linkertrack ziet u de AEM Cloud-instantie en het inhoudsfragment waarvoor u inhoud maakt. Selecteer de vraag u wilt gebruiken of een nieuwe herinnering creëren.
-
-   >[!NOTE]
-   >
-   >De beschikbare sjablonen voor herinneringen voor Adoben zijn nu beperkt, maar in toekomstige versies wordt meer toegevoegd.
-
-   ![ Uitvoer om Variaties in het Fragment van de Inhoud te produceren ](assets/cfm-generate-variations2.png)
-
-1. Genereer inhoud door de vragen in te vullen. Het inhoudsmodel van het fragment wordt automatisch gebruikt om inhoud te genereren met GenAI.
-
-   >[!NOTE]
-   >
-   >Momenteel ondersteunen we alleen tekstvelden.
-
-   ![ Uitvoer om Variaties in het Fragment van de Inhoud te produceren ](assets/cfm-generate-variations3.png)
-
-1. Selecteer de variant die u wilt genereren en selecteer &quot;variatie exporteren&quot;. Bevestig de naam van de variatie van het inhoudsfragment en selecteer een van de volgende opties:
-
-   * **de Uitvoer**: de variatie van de uitvoer naar het Fragment van de Inhoud en blijft in de Generate toepassing van de Variatie.
-   * **de Uitvoer en open**: voer variatie naar het Fragment van de Inhoud uit en open een nieuw lusje dat het Fragment van de Inhoud met de nieuwe variatie van GenAI toont.
-
-     ![ Uitvoer om Variaties in het Fragment van de Inhoud te produceren ](assets/cfm-generate-variations4.png)
-
-1. Gegenereerde variaties worden weergegeven in de hoofdeditor voor contentfragmenten.
-
-   ![ Mening produceert Variaties in het Fragment van de Inhoud ](assets/cfm-generate-variations5.png)
-
-Zie [ Variaties ](/help/generative-ai/generate-variations.md) produceren om meer te leren.
+Zie [ Variaties produceren - in AEM Editors ](/help/generative-ai/generate-variations-integrated-editor.md) geïntegreerd om meer te leren.
 
 ### Een wijziging verwijderen {#delete-variation}
 
@@ -339,7 +308,7 @@ Alternatief kunt u [ selecteren **nieuw fragment** creëren om **te openen creee
 
 ### Content References {#content-references}
 
-[ Verwijzingen van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) worden gebruikt om andere AEM inhoudstypes, zoals beelden, pagina&#39;s, en de Fragmenten van de Ervaring van verwijzingen te voorzien.
+[ Verwijzingen van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) worden gebruikt om andere inhoudstypes van AEM, zoals beelden, pagina&#39;s, en de Fragmenten van de Ervaring van verwijzingen te voorzien.
 
 #### Referentieafbeeldingen {#reference-images}
 
@@ -364,7 +333,7 @@ U kunt een element toevoegen door:
 
 #### Referentiepagina&#39;s {#reference-pages}
 
-Als u verwijzingen naar AEM pagina&#39;s, Experience Fragments of andere soorten inhoud wilt toevoegen:
+Verwijzingen naar AEM-pagina&#39;s, Experience Fragments of andere soorten inhoud toevoegen:
 
 1. Selecteer **toevoegen inhoudsweg**.
 
@@ -473,7 +442,7 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->Voor meer details over het vertalen van een Fragment van de Inhoud, en het creëren van taalexemplaren, zie [ AEM de Reis van de Vertaling zonder Titel ](/help/journey-headless/translation/overview.md).
+>Voor meer details over het vertalen van een Fragment van de Inhoud, en het creëren van taalexemplaren, zie de [ Hoofdloze Vertaalreis van AEM ](/help/journey-headless/translation/overview.md).
 
 ## Opmerkingen over het fragment {#commenting-on-your-fragment}
 
@@ -506,12 +475,12 @@ Als u deze functie wilt gebruiken, moet u eerst:
 
 Wanneer URL is bepaald, is de **knoop van de Voorproef** actief. U kunt deze knop selecteren om de externe toepassing te starten (op een afzonderlijk tabblad) om het inhoudsfragment te renderen.
 
-## Publish your Fragment {#publish-content-fragment}
+## Fragment publiceren {#publish-content-fragment}
 
-U kunt **Publish** uw fragment aan of uw:
+U kunt **publiceren** uw fragment aan of uw:
 
 * Voorbeeldexemplaar
-* Publish-exemplaar
+* Instantie publiceren
 
 U kunt het fragment publiceren vanuit de editor of de console. Zie [ het Publiceren en het Voorvertonen van een Fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) voor volledige details.
 
@@ -520,7 +489,7 @@ U kunt het fragment publiceren vanuit de editor of de console. Zie [ het Publice
 U kunt **ook unpublish** uw fragment van of uw:
 
 * Voorbeeldexemplaar
-* Publish-exemplaar
+* Instantie publiceren
 
 U kunt de publicatie van het fragment ongedaan maken vanuit de editor of de console. Zie [ Unpublishing een fragment ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) voor volledige details.
 

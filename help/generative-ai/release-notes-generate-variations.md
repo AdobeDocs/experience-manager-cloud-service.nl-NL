@@ -1,19 +1,19 @@
 ---
 title: Opmerkingen bij de release voor het genereren van variaties
-description: Opmerkingen bij de release voor het genereren van variaties, toegankelijk vanuit AEM as a Cloud Service en de Sidekick van Edge Delivery Services
+description: Opmerkingen bij de release voor het genereren van variaties, toegankelijk vanuit AEM as a Cloud Service en de Sidekick of Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
 # Opmerkingen bij de release voor het genereren van variaties {#release-notes-generate-variations}
 
-Deze pagina documenteert de versienota&#39;s voor Generate Variaties, toegankelijk van AEM as a Cloud Service en de Sidekick van Edge Delivery Services.
+Op deze pagina worden de releaseopmerkingen voor Generate Variations, die toegankelijk zijn vanuit AEM as a Cloud Service en de Sidekick of Edge Delivery Services, gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,7 +21,19 @@ Deze pagina documenteert de versienota&#39;s voor Generate Variaties, toegankeli
 
 ## Hooglichten opheffen {#release-highlights}
 
-De huidige versie is versie 2.2.0.
+De huidige versie is versie 3.0.0.
+
+### 3.0.0. {#release-notes-3-0-0}
+
+U kunt [ toegang tot Variaties ](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) van de volgende redacteurs produceren ([ zodra zij ](#access-generate-variations)) zijn gevormd:
+
+* [in de Sidekick van AEM Edge Delivery Services; voor op documenten gebaseerde ontwerpen](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [in de Universal Editor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [in de Inhoudsfragmenteditor](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>De vorige versie van [ produceert Variaties kan nog direct worden betreden ](/help/generative-ai/generate-variations.md).
 
 ### 2.2.0. {#release-notes-2-2-0}
 
@@ -37,7 +49,7 @@ De huidige versie is versie 2.2.0.
    * Soorten publiek kan rechtstreeks vanuit Adobe Target worden gelezen
    * Bijgewerkte methoden voor het toevoegen van CSV-bestanden
 * Dialoogvenster met opties voor Vragen opslaan
-* Bij het genereren van afbeeldingen is de vraag naar Adobe Express vooraf ingevuld
+* Bij het genereren van afbeeldingen is de vraag in Adobe Express vooraf ingevuld
 * Vrachtkaarten (op de homepage) bevatten extra informatie en kunnen worden verwijderd
 
 ## Bekende problemen {#known-issues}

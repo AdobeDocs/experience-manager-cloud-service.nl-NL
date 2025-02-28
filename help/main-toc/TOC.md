@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bc39d7272da400ba20df4c788fc37e7d72006355
+source-git-commit: 1187cf7ada92d8afbe27181c372cdbf6952eb58a
 workflow-type: tm+mt
-source-wordcount: '6199'
+source-wordcount: '6205'
 ht-degree: 2%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 2%
          + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](/help/journey-headless/author/metadata-tagging.md)
 + Generatieve AI {#generative-ai}
    + [Variaties genereren](/help/generative-ai/generate-variations.md)
+   + [Variaties genereren - Geïntegreerd in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Assistent (beperkte Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementatie {#implementing}
    + [Toepassingen voor AEM as a Cloud Service](/help/implementing/home.md)
