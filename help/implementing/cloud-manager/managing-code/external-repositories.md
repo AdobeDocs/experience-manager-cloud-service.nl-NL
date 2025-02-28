@@ -4,9 +4,9 @@ description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoege
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | Veld | Beschrijving |
    | --- | --- |
    | **Naam van de Bewaarplaats** | Vereist. Een expressieve naam voor uw nieuwe opslagplaats. |
-   | **Repository URL** | Vereist. De URL van de gegevensopslagruimte.<br><br> Als u een door GitHub gehoste gegevensopslagruimte gebruikt, moet het pad eindigen in `.git` .<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden).<br><br> als u een externe bewaarplaats gebruikt, moet het het volgende URL wegformaat gebruiken:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> of <br>`https://self-hosted-domain/org-name/repo-name.git`<br> en past uw verkoper van het Git aan. |
-   | S **verkies het Type van Bewaarplaats** | Vereist. Selecteer het bewaarplaatstype dat u gebruikt: **GitHub**, **GitLab**, of **BitBucket**. Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
+   | **Repository URL** | Vereist. De URL van de gegevensopslagruimte.<br><br> als u een GitHub-ontvangen bewaarplaats gebruikt, moet de weg in `.git` beëindigen.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden).<br><br> als u een externe bewaarplaats gebruikt, moet het het volgende URL wegformaat gebruiken:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> of <br>`https://self-hosted-domain/org-name/repo-name.git`<br> en past uw verkoper van het Git aan. |
+   | **Uitgezochte Type van Bewaarplaats** | Vereist. Selecteer het bewaarplaatstype dat u gebruikt: **GitHub**, **GitLab**, of **BitBucket**. Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
    | **Beschrijving** | Optioneel. Een gedetailleerde beschrijving van de gegevensopslagruimte. |
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
@@ -64,7 +64,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | --- | --- |
    | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
    | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br>・ In het **Symbolische 3} tekstgebied van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `Read access to metadata` .<br>  ・ `Read and write access to code and pull requests` .<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `api`<br>  ・ `read_api`<br>  ・ `read_repository`<br>  ・ `write_repository`<br>・ op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `api`<br>  ・ `read_api`<br>  ・ `read_repository`<br>  ・ `write_repository`<br>・ op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
    |  | **type van Bewaarplaats: Bitbucket**<br>・ In het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<br>・ creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>・ Vereiste machtigingen:<br>  ・ `Read and write access to code and pull requests` . |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 
 ## Beperkingen
 
-Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
+* Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
+* De pijpleidingen met externe bewaarplaatsen (niet die op GitHub worden ontvangen) en de &quot;Op Veranderingen van de Git&quot;trekker beginnen niet automatisch. Deze kunnen alleen handmatig worden gestart.
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
