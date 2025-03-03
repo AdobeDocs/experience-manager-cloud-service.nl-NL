@@ -4,7 +4,7 @@ description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 30%
@@ -81,6 +81,8 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
 >[!NOTE]
 > Vanaf BPA versie 2.1.54 is een nieuwe functie geïntroduceerd om de Lighthouse Score te verkrijgen.
+
+
 1. Na het klikken **produceer Rapport**, zal een pop-up het verzoeken van de Openbare Plaats URL van AEM voor de Score van de Lichter verschijnen. De gebruiker moet een geldige URL invoeren in het opgegeven veld.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
