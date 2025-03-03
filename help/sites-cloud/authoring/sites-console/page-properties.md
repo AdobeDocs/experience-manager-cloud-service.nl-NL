@@ -5,9 +5,9 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2296'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * **waarde van de Overschrijving** - de tekst van de merkschuine streep die aan de paginatitel moet worden toegevoegd.
          * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
 
-* **identiteitskaart van de HTML**
+* **identiteitskaart van HTML**
 
    * **identiteitskaart** - identiteitskaart van HTML om op de component van toepassing te zijn.
 
@@ -101,13 +101,13 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Taal** - de paginataal
    * **Wortel van de Taal** - moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is
-   * **opnieuw richt** - wijst op de pagina waaraan deze pagina automatisch met een HTML `302 Found` status zou moeten opnieuw richten.
-      * **Permanent opnieuw richten** - wanneer gecontroleerd, richt de pagina aan de doelweg die samen met een HTML `301 Moved Permanently` status wordt verstrekt.
+   * **opnieuw richt** - wijst op de pagina waaraan deze pagina automatisch met een status van HTML `302 Found` zou moeten opnieuw richten.
+      * **Permanent opnieuw richten** - wanneer gecontroleerd, richt de pagina aan de doelweg die samen met een status van HTML `301 Moved Permanently` wordt verstrekt.
    * **Ontwerp** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen
    * **Alias** - specificeert een alias die met deze pagina moet worden gebruikt
       * Als u bijvoorbeeld een alias van `private` voor de pagina `/content/wknd/us/en/magazine/members-only` definieert, kunt u deze pagina ook openen via `/content/wknd/us/en/magazine/private`
       * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld. Dit heeft alleen invloed op de bron, niet op het pad naar de opslagplaats.
-      * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ de opties van Publish ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
+      * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ publiceer opties ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
       * Zie [ Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL ](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuratie**
@@ -119,6 +119,8 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 * **Montages van het Malplaatje**
 
    * **Toegestane Malplaatjes** - [ bepaalt de lijst van malplaatjes die ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) binnen deze subtak beschikbaar zijn
+   * **Pagina van het Gebruik als Malplaatje** - [ creeer een nieuw malplaatje dat op de huidige pagina wordt gebaseerd.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Dit is alleen van toepassing op pagina&#39;s die zijn gemaakt voor gebruik met Edge Delivery Services van de Universal Editor.
 
 * **Vereiste van de Authentificatie**
 
@@ -169,9 +171,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * **Uitgezochte Beeld** - selecteer een bestaand Middel om als duimnagel te gebruiken
    * **terugkeren** - deze optie wordt beschikbaar nadat u een verandering in de duimnagel hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
-### Cloud Servicen {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Configuraties van de Cloud Service** - bepaal eigenschappen voor de clouddiensten
+* **de Configuraties van Cloud Service** - bepalen eigenschappen voor de diensten van de wolk
 
 ### Personalization {#personalization}
 
@@ -236,7 +238,7 @@ Wanneer een omgeving van de Voorproef wordt toegelaten, ziet u het volgende:
 
 ### Progressieve webtoepassing {#progressive-web-app}
 
-Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) voor progressieve webtoepassingen inschakelen voor ervaringen die zijn gemaakt in AEM Sites.
+Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies voor progressieve webapps (PWA) inschakelen voor ervaringen die zijn gemaakt in AEM Sites.
 
 >[!NOTE]
 >
