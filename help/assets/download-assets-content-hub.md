@@ -3,16 +3,16 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 28424cb184d0378669498c78e571961227f6539a
+source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
 
 # Middelen downloaden van de Content Hub {#download-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
@@ -20,13 +20,15 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met de Content Hub kunt u uw middelen downloaden en delen. In de Content Hub-gebruikersinterface worden alleen goedgekeurde elementen weergegeven. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. De Content Hub verbetert de toegankelijkheid en het aanpassingsvermogen voor een effectieve verdeling van activa.
 
 Met Content Hub kunt u een of meer elementen en de beschikbare uitvoeringen downloaden.
+
+Zie [ types van vertoningen beschikbaar in Content Hub ](#types-of-renditions).
 
 ## Een middel en de bijbehorende uitvoeringen downloaden {#download-asset-renditions}
 
@@ -34,18 +36,23 @@ Voer de volgende stappen uit om een element en de bijbehorende uitvoeringen te d
 
 1. Klik op het element om de eigenschappen ervan weer te geven.
 
-1. Klik ![ download ](/help/assets/assets/download-icon.svg) om het downloadproces te beginnen. In het deelvenster Download worden alle beschikbare elementuitvoeringen weergegeven (Origineel + andere uitvoeringen).
+1. Klik ![ download ](/help/assets/assets/download-icon.svg) om het downloadproces te beginnen. In het deelvenster Download worden alle beschikbare elementuitvoeringen weergegeven.
 
    >[!NOTE]
    >
-   De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+   * De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+   * U kunt alle [ statische, dynamische, en slimme gewassenvertoningen ](#types-of-renditions) downloaden terwijl het downloaden van een activa.
 
-1. Selecteer de vertoning(en) en klik op **[!UICONTROL Download]** .
+1. Selecteer een of meer uitvoeringen en klik op **[!UICONTROL Download]** .
 
    ![ Download enige activa vertoningen ](/help/assets/assets/download-single-asset-renditions.png)
 
 
-Als u een middel met licentie downloadt, selecteert u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** en klikt u op **[!UICONTROL Download]** . U kunt ook op **[!UICONTROL terms & conditions]** klikken om de elementlicentie weer te geven. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de as a Cloud Service ontwerpomgeving van Assets. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
+Als u een middel met licentie downloadt, selecteert u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** en klikt u op **[!UICONTROL Download]** . U kunt ook op **[!UICONTROL terms & conditions]** klikken om de elementlicentie weer te geven. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd met de Assets as a Cloud Service-ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
+
+>[!NOTE]
+>
+De gebruikers met toegang tot [ Dynamische Media met Open API mogelijkheden ](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme gewassenvertoningen bekijken en downloaden.
 
 ## Meerdere elementen en de bijbehorende uitvoeringen downloaden {#download-multiple-assets-renditions}
 
@@ -55,18 +62,19 @@ Voer de volgende stappen uit om meerdere elementen en de bijbehorende uitvoering
 1. Klik op **[!UICONTROL Download]** om een keuze te maken uit de verschillende downloadopties om te beginnen met downloaden:
 
    * **Downloaden[!UICONTROL Originals]**: selecteer deze optie om de geselecteerde elementen in het oorspronkelijke formulier te downloaden.
-   * **Downloaden[!UICONTROL Renditions only]**: selecteer deze optie om alle beschikbare vertoningen van de activa behalve de originele activa te downloaden.
-   * **Downloaden[!UICONTROL Originals & All renditions]**: selecteer deze optie om zowel het origineel als de vertoningen van de geselecteerde elementen te downloaden.
+   * **Download[!UICONTROL Static Renditions only]**: selecteer deze optie om alle beschikbare statische vertoningen van activa behalve de originele activa te downloaden.
+   * **Download[!UICONTROL Originals & Static Renditions]**: selecteer deze optie om zowel originele als statische vertoningen van de geselecteerde activa te downloaden.
 
      ![ Download veelvoudige vertoningen ](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+     * De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+     * U kunt [ statische vertoningen ](#types-of-renditions) slechts downloaden terwijl het downloaden van veelvoudige activa.
 
-   Als een van de geselecteerde elementen een onder licentie geplaatst element is, klikt u op de licentie van het element in het linkerdeelvenster om de voorvertoning weer te geven. Hierin kunt u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** selecteren en vervolgens op **[!UICONTROL Download]** klikken. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de as a Cloud Service ontwerpomgeving van Assets. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
+   Als een van de geselecteerde elementen een onder licentie geplaatst element is, klikt u op de licentie van het element in het linkerdeelvenster om de voorvertoning weer te geven. Hierin kunt u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** selecteren en vervolgens op **[!UICONTROL Download]** klikken. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd met de Assets as a Cloud Service-ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
-   ![ download-veelvoudige-vergunning ](/help/assets/assets/download-multiple-license.png)
+   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -101,8 +109,27 @@ The dialog box that displays depends on whether the download list includes expir
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
+## Typen uitvoeringen {#types-of-renditions}
+
+Elementuitvoeringen zijn verschillende weergaven van het oorspronkelijke bestand van een element. Dit kunnen miniaturen, geoptimaliseerde versies voor web of mobiele apparaten, bestanden met watermerken of DRM-bescherming zijn, of zelfs dynamische elementen zoals slimme gewassen. Ze hoeven niet overeen te komen met het oorspronkelijke bestandstype, maar ze dienen om het element in verschillende gebruiksgevallen weer te geven.
+
+Leer meer over [ mening en beheer vertoningen in Experience Manager Assets ](/help/assets/renditions.md).
+
+[!DNL Experience Manager Assets] ondersteunt de volgende typen uitvoeringen:
+
+* [ Statische vertoningen ](/help/assets/renditions.md#static-renditions): De statische vertoningen zijn pre-gecreeerde versies van digitale activa, typisch geproduceerd tijdens de activaopname of de wijziging. Deze zijn geoptimaliseerd voor specifieke toepassingen en platforms, zoals webminiaturen, mobiele indelingen voor responsieve ontwerpen of bestanden met hoge resolutie voor afdrukken, zodat u over een gestroomlijnde en consistente ervaring beschikt.
+
+* [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving.
+
+* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamische media SmartCrop maakt gebruik van kunstmatige intelligentie, aangedreven door Adobe Sensei, om het aandachtspunt te volgen, zodat onze middelen er op alle schermgrootten zo goed mogelijk uitzien. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+
+  ![ de types van Uitvoeringen ](/help/assets/assets/renditions-types.png)
 
 
+>[!NOTE]
+> 
+* Om vroege toegang tot de Dynamische rekening van Media te krijgen, [ creeer en verzend een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+* Nieuw aan boord gezette klanten op [ Dynamische Media Open API diensten ](/help/assets/dynamic-media-open-apis-overview.md) moeten hun bestaande beeldvoorinstellingen voor goedkeuring herzien.
 
 
 
