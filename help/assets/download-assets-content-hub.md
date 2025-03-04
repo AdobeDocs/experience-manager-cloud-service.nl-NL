@@ -3,9 +3,9 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Leer meer over [ mening en beheer vertoningen in Experience Manager Assets ](/he
 
 >[!NOTE]
 > 
-* Om vroege toegang tot de Dynamische rekening van Media te krijgen, [ creeer en verzend een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+* De functie Dynamische en slimme uitsnijduitvoeringen bevindt zich in de eerste fase van de adopter. Om toegang tot het vermogen te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 * Nieuw aan boord gezette klanten op [ Dynamische Media Open API diensten ](/help/assets/dynamic-media-open-apis-overview.md) moeten hun bestaande beeldvoorinstellingen voor goedkeuring herzien.
 
 
