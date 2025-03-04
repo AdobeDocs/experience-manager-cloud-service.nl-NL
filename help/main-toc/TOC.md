@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 2%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 2%
          + [Bescherm uw Forms: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/recaptacha-forms.md)
          + [Aangepaste formuliercomponenten maken: ontwikkelaarsgids](/help/edge/docs/forms/custom-components-forms.md)
          + [Prestaties van monitorformulieren: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Forms implementeren op Edge: publicatiegids voor Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG Authoring {#universal-editor}
          + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Uw eerste formulier maken met de Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Authoring starten met Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Universal Editor Interface Guide: uitleg over gereedschappen, functies en navigatie](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Maak uw Forms mobiel gebruiksvriendelijk: responsief ontwerp in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Mooie Forms: stijlpagina en thematiegids voor de universele editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1841'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 0%
 In het huidige digitale tijdperk zijn gebruikersvriendelijke formulieren essentieel voor alle organisaties. Edge Delivery Services Forms wordt gemaakt met de Universal Editor, die WYSIWYG-mogelijkheden (what-you-see-is-what-you-get) biedt. Het biedt een moderne, intuïtieve interface voor efficiënt ontwerpen van formulieren.
 
 AEM Forms biedt een blok, het Adaptive Forms Block, waarmee u eenvoudig Edge Delivery Services Forms kunt maken om gegevens vast te leggen en op te slaan. U kunt [ een nieuw Project van AEM tot stand brengen dat met het AanpassingsBlok van Forms ](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand Project van AEM ](#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
+
+![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png)
 
 Deze zelfstudie begeleidt u bij het maken, voorvertonen en publiceren van uw eigen formulier met een nieuw of bestaand Adobe Experience Manager Site-project met behulp van de WYSIWYG-authoring van Universal Editor.
 
@@ -252,6 +254,10 @@ In de onderstaande schermafbeelding wordt het formulier weergegeven dat in het A
    ![ indexpagina ](/help/edge/docs/forms/assets/publish-index-page.png)
 
 U kunt Edge Delivery Services Forms opmaken door de `.css` en `.js` dossiers in het AanpassingsBlok van Forms en [ vestiging een lokale ontwikkelomgeving van AEM ](#set-up-local-aem-development-environment) uit te geven om de veranderingen in uw browser onmiddellijk te bekijken.
+
+>[!NOTE]
+>
+> U kunt [ auteur een standalone vorm in Universele Redacteur ook en het publiceren aan Edge Delivery Services ](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 ## Lokale AEM-ontwikkelomgeving instellen
 

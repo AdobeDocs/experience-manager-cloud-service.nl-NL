@@ -7,7 +7,7 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Adobe Experience Manager biedt en ondersteunt meerdere editors voor het schrijve
 
 De Universal Editor is een veelzijdige visuele editor die een &#39;what-you-see-is-what-you-get&#39;-functie (WYSIWYG) biedt en zo een intuïtieve manier van maken van formulieren verzekert. Het wordt aanbevolen de Universal Editor te gebruiken bij het maken van nieuwe formulieren, omdat deze een modern, gebruiksvriendelijk ontwerp en een handige interface voor slepen en neerzetten biedt.
 
-Als u formulieren wilt maken met de Universal Editor, worden Edge Delivery Services-sjablonen gebruikt die beschikbaar zijn in de AEM-omgeving. Deze vormen erven hun blik en voelen van de configuraties in de bewaarplaats van Edge Delivery Services GitHub. [ Een verbinding tussen uw milieu van AEM en de bewaarplaats van Edge Delivery Services GitHub ](/help/edge/docs/forms/publishing-forms.md) wordt gevestigd om het publiceren van deze vormen op Edge Delivery Services toe te laten.
+Als u formulieren wilt maken met de Universal Editor, worden Edge Delivery Services-sjablonen gebruikt die beschikbaar zijn in de AEM-omgeving. Deze vormen erven hun blik en voelen van de configuraties in de bewaarplaats van Edge Delivery Services GitHub. [ Een verbinding tussen uw milieu van AEM en de bewaarplaats van Edge Delivery Services GitHub ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) wordt gevestigd om het publiceren van deze vormen op Edge Delivery Services toe te laten.
 
 Voor gedetailleerde stappen op hoe te auteur gebruiken de Universele Redacteur, verwijs naar de [ Authoring Inhoud met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring).
 
