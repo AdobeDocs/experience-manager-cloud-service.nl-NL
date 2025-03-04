@@ -1,17 +1,17 @@
 ---
-title: Externe opslagplaatsen toevoegen in Cloud Manager (Vroege adopter)
+title: Externe opslagplaatsen toevoegen aan Cloud Manager - beperkte bèta
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
 
-# Externe opslagruimten toevoegen in Cloud Manager {#external-repositories}
+# Externe opslagplaatsen toevoegen in Cloud Manager - beperkte bèta {#external-repositories}
 
 Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
 
@@ -28,13 +28,14 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 1. Valideer eigendom van de privé bewaarplaats GitHub.
 
 
+
 ## Een externe opslagplaats toevoegen {#add-ext-repo}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma waaraan u een externe bewaarplaats wilt verbinden.
 
-1. In het zijmenu, onder **Diensten**, uitgezochte ![ pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen**.
+1. In het zijmenu, onder **Diensten**, klik ![ het overzichtspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
 
    ![ de pagina van Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
@@ -50,7 +51,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | --- | --- |
    | **Naam van de Bewaarplaats** | Vereist. Een expressieve naam voor uw nieuwe opslagplaats. |
    | **Repository URL** | Vereist. De URL van de gegevensopslagruimte.<br><br> als u een GitHub-ontvangen bewaarplaats gebruikt, moet de weg in `.git` beëindigen.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden).<br><br> als u een externe bewaarplaats gebruikt, moet het het volgende URL wegformaat gebruiken:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> of <br>`https://self-hosted-domain/org-name/repo-name.git`<br> en past uw verkoper van het Git aan. |
-   | **Uitgezochte Type van Bewaarplaats** | Vereist. Selecteer het bewaarplaatstype dat u gebruikt: **GitHub**, **GitLab**, of **BitBucket**. Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
+   | **Uitgezochte Type van Bewaarplaats** | Vereist. Selecteer het type opslagplaats dat u gebruikt:<ul><li>**GitHub** (de Server van de Onderneming van GitHub en de zelf-ontvangen versie van GitHub)</li><li>**GitLab** (zowel `gitlab.com` als de zelf-ontvangen versie van GitLab) </li><li>**Bitbucket** (zowel `bitbucket.org` als de Server van de Bitmap, en de zelf-ontvangen versie van Bitbucket)</li></ul>Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
    | **Beschrijving** | Optioneel. Een gedetailleerde beschrijving van de gegevensopslagruimte. |
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
@@ -58,14 +59,14 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
-   *Selecterend een bestaand toegangstoken voor een bewaarplaats BitBucket.*
+   *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket.*
 
    | Type token | Beschrijving |
    | --- | --- |
    | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br>・ In het **Symbolische 3} tekstgebied van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `Read access to metadata` .<br>  ・ `Read and write access to code and pull requests` .<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `api`<br>  ・ `read_api`<br>  ・ `read_repository`<br>  ・ `write_repository`<br>・ op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   |  | **type van Bewaarplaats: Bitbucket**<br>・ In het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<br>・ creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>・ Vereiste machtigingen:<br>  ・ `Read and write access to code and pull requests` . |
+   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br>・ In het **Symbolische 3} tekstgebied van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<br>・ Voor vereiste toestemmingen, zie [ nieuw KLOPJE voor GitHub ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat) creëren.<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<br>・ Voor vereiste toestemmingen, zie [ een nieuw KLOPJE voor GitLab ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat) creëren.<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   |  | **type van Bewaarplaats: Bitbucket**<br>・ In het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<br>・ creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>・ Voor vereiste toestemmingen, zie [ een nieuw KLOPJE voor Bitbucket ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat) creëren. |
 
    >[!NOTE]
    >
@@ -96,6 +97,115 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 >
 >Voor details over het beheren van bewaarplaatsen in Cloud Manager, zie [ Bewaarplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
+## Een webhaak configureren voor een externe gegevensopslagruimte {#configure-webhook}
+
+Met Cloud Manager kunt u webhaken configureren voor externe Git-opslagruimten die u hebt toegevoegd. Zie [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Met deze websites kan Cloud Manager gebeurtenissen ontvangen die gerelateerd zijn aan verschillende acties binnen uw Git-leveranciersoplossing.
+
+Met websites kan Cloud Manager bijvoorbeeld acties activeren op basis van gebeurtenissen zoals de volgende:
+
+* Creatie van het volledige verzoek (PR) - initieert de functionaliteit voor PR-validatie.
+* Push events - Start pijpleidingen wanneer de trigger &quot;On Git Commit&quot; is ingeschakeld (ingeschakeld).
+* Toekomstige op opmerkingen gebaseerde acties - Hiermee worden workflows mogelijk, zoals directe implementatie van een PR, naar een Rapid Development Environment (RDE).
+
+Webhaconfiguratie is niet vereist voor opslagruimten die op `GitHub.com` worden gehost, omdat Cloud Manager rechtstreeks via de GitHub-app integreert.
+Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals de Server van de Onderneming GitHub, GitLab, en Bitbucket worden bezet, is de webhaakconfiguratie beschikbaar en moet opstelling manueel.
+
+**om een webhaak voor een externe bewaarplaats te vormen:**
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma waaraan u een webhaak voor een externe bewaarplaats van het Git wilt vormen.
+
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren.
+
+1. In het linkerzijmenu, onder de **rubriek van het Programma**, klik ![ het overzichtspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
+
+1. Op de **pagina van Bewaarplaatsen**, die de **kolom van het Type** gebruikt om u in uw selectie te begeleiden, van de bewaarplaats de plaats bepalen u wilt, dan klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast het.
+
+   ![ de optie Webhaak van Config op drop-down menu voor een geselecteerde bewaarplaats ](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
+
+1. Van het drop-down menu, klik **Config Webhaak**.
+
+   ![ vorm de dialoogdoos van Webhaak ](/help/implementing/cloud-manager/managing-code/assets/config-webhook.png)
+
+1. In het **de dialoogvakje van WebHaak van Config**, doe het volgende:
+
+   1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
+Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
+Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
+1. Klik **dicht**.
+1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
+1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
+   1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
+
+      Als u een API-sleutel wilt genereren, moet u een integratieproject maken in Adobe Developer Console. Zie [ Creërend een Project van de Integratie API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) voor volledige details.
+
+1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
+1. Configureer de webhaak om de juiste gebeurtenissen te verzenden die Cloud Manager verwacht.
+
+   Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar bij het volgende:
+
+   * [ Web-haken van de opstelling voor de Server van de Onderneming GitHub ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat?id=webhaak-events).
+   * [ Web-haken van de opstelling voor GitLab ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat?id=webhaak-events).
+   * [ Web-haken van de opstelling voor Bitbucket ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat?id=webhaak-events).
+
+### Validatie van trekkingsverzoeken met webhaken
+
+Nadat websites correct zijn geconfigureerd, activeert Cloud Manager automatisch pijpleidinguitvoeringen of PR-validatiecontroles voor uw opslagplaats.
+
+De volgende gedragingen zijn van toepassing:
+
+* **Server van de Onderneming GitHub**
+
+  Wanneer de controle is gemaakt, lijkt deze op de onderstaande schermafbeelding. Het belangrijkste verschil van `GitHub.com` is dat `GitHub.com` een controle-looppas gebruikt, terwijl de Server van de Onderneming GitHub (die persoonlijke toegangstokens gebruikt) een begaat status produceert:
+
+  ![ verbind status om op de Server van de Onderneming van GitHub het bevestigingsproces van PR te wijzen ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+
+* **Bitbucket**
+
+  Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
+
+  ![ Status terwijl de bevestiging van de codekwaliteit ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png) loopt
+
+  Gebruikt de status commit voor het volgen van voortgang van PR-validatie. In het volgende geval, toont het het schermschot wat gebeurt wanneer een bevestiging van de codekwaliteit wegens een klantenkwestie ontbreekt. Er wordt een opmerking toegevoegd met gedetailleerde foutinformatie en er wordt een commit check gemaakt, die de fout weergeeft (rechts zichtbaar):
+
+  ![ Trek de status van de verzoekbevestiging voor Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+
+* **GitLab**
+
+  GitLab-interacties zijn uitsluitend gebaseerd op opmerkingen. Wanneer de validatie begint, wordt een opmerking toegevoegd. Wanneer de validatie is voltooid (of deze is gelukt of mislukt), wordt de eerste opmerking verwijderd en vervangen door een nieuwe opmerking met validatieresultaten of foutdetails.
+
+  Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
+
+  ![ wanneer de bevestiging van de codekwaliteit ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png) loopt
+
+  Wanneer validatie van koude kwaliteit is voltooid:
+
+  ![ wanneer de koude kwaliteitsbevestiging ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png) wordt gebeëindigd
+
+  Wanneer validatie van de codekwaliteit mislukt vanwege een fout:
+
+  ![ wanneer de bevestiging van de codekwaliteit met een fout ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png) ontbreekt
+
+  Wanneer de validatie van de codekwaliteit mislukt als gevolg van problemen met de klant:
+
+  ![ wanneer de bevestiging van de codekwaliteit wegens klantenkwesties ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png) ontbreekt
+
+
+## Problemen met webhaken oplossen
+
+* Zorg ervoor dat de Webhaak-URL een geldige API-sleutel bevat.
+* Controleer of webhaakgebeurtenissen correct zijn geconfigureerd in de instellingen van uw Git-leverancier.
+* Als de bevestiging van PR of pijpleidingstrekkers niet werken, verifieer dat het Geheime Geheime Web in zowel Cloud Manager als uw verkoper van het Git bijgewerkt is.
+
+
+
+
+
+
+
 
 ## Beperkingen
 
@@ -105,3 +215,5 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
