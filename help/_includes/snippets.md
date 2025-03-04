@@ -1,5 +1,5 @@
 ---
-source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
+source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -248,7 +248,7 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 
 >[!IMPORTANT]
 >
->De redacteur van het KUUROORD [ is afgekeurd ](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
+>De redacteur van het KUUROORD [ is afgekeurd ](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) voor nieuwe projecten. Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
 >* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor visueel het uitgeven van hoofdloze inhoud.
 >* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

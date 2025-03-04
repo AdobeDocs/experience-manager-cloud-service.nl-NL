@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2025.1.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2025.1.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: f899398182f9d0991123828ca217379653a4e397
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2025.1.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2025.1.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.2.0) is 4 maart 2025. De volgende release met functies (2025.3.0) is gepland voor 27 maart 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.1.0) is 30 januari 2025. De volgende release met functies (2025.2.0) is gepland voor 4 maart 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -38,7 +36,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -46,60 +44,72 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
+**de Redacteur van het Fragment van de Inhoud nu over het algemeen beschikbaar**
 
-### Nieuwe functies in AEM Sites {#new-features-sites}
+Werk eenvoudig samen met collega&#39;s wanneer het ontwerpen van de Fragmenten van de Inhoud van AEM door de nieuwe en gemoderniseerde opmerkingsdienst in de Redacteur van het Fragment van de Inhoud van AEM te gebruiken.
+[ las meer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
-** Automatische tags voor inhoudsfragmenten **
+**de Redacteur van het Fragment van de Inhoud en de Interfaces van de Gebruiker Admin, bijgewerkte de versiessteun van AEM as a Cloud Service**
 
-Bij het maken van inhoudsfragmenten is het nu mogelijk automatisch codes over te nemen die zijn toegewezen aan het inhoudsmodel. Dit maakt een krachtige automatische classificatie mogelijk van inhoud die is opgeslagen in inhoudsfragmenten.
+De minimaal ondersteunde AEM as a Cloud Service-versie voor de nieuwe gebruikersinterfaces van Inhoudsfragmentbeheer en Editor is nu 2023.8.13099. Eerdere versies van vóór de algemene beschikbaarheidsversie van de nieuwe gebruikersinterfaces worden niet meer gesteund
 
-** Ondersteuning voor UUID-fragmenten van inhoudsfragmenten **
+### Programma voor vroege adoptie {#sites-early-adopter}
 
-De UUID-ondersteuning voor inhoudsfragmenten is nu GA. De nieuwe capaciteit verandert niet het op weg-gebaseerde gedrag van verrichtingen binnen AEM, zoals beweging, anders noemen, rollout, waar de wegen automatisch worden aangepast, maar het kan externe consumptie van de Fragmenten van de Inhoud gemakkelijker en stabieler maken, vooral wanneer het gebruiken van de vragen van GraphQL die individuele fragmenten met vragen direct richten ByPath. Dergelijke query&#39;s kunnen worden onderbroken als een fragmentpad verandert. Wanneer het gebruiken van het nieuwe DoorId vraagtype, blijft de vraag nu stabiel aangezien UUID van een fragment niet in gevallen verandert waar de wegen dat doen.
+**Verbeterde de Fragmenten van de Inhoud**
 
-** Dynamische media met OpenAPI-ondersteuning in Inhoudsfragmenteditor en GraphQL **
+Verbeterd [ het Fragment van de Inhoud van verwijzingen voorzien met unieke op identiteitskaart-Gebaseerde verwijzingen ](/help/headless/graphql-api/uuid-reference-upgrade.md), die helpen om de vragen van GraphQL voor individuele inhoudsfragmenten te verzekeren kan stabiel blijven zelfs als het fragment naar een andere plaats werd verplaatst. Dit is nu mogelijk met &quot;ByID&quot;-query&#39;s. Terwijl de wegen kunnen veranderen, potentieel het breken &quot;ByPath&quot;vragen, UUIDs is stabiel. De nieuwe id&#39;s kunnen ook worden geretourneerd als eigenschappen in een query of andere toepasselijke API-aanvraag. Huidige beperking (2025.1): Paginaverwijzingen worden nog niet ondersteund met unieke id&#39;s. Als er in inhoudsfragmenten wordt verwezen naar pagina&#39;s, mag deze mogelijkheid niet worden gebruikt. De beperking wordt verwijderd in de volgende release van AEM as a Cloud Service.
 
-Assets die in verschillende AEM as a Cloud Service-programma&#39;s zijn opgeslagen dan Content Fragments en die zijn ingeschakeld met de nieuwe Dynamic Media met OpenAPI-mogelijkheid, kan nu worden gebruikt in Content Fragments. Met de afbeeldingskiezer in de nieuwe Content Fragment Editor kunt u nu &quot;externe&quot; opslagruimten selecteren als bron voor afbeeldingselementen waarnaar moet worden verwezen in het fragment. En bij levering van dergelijke inhoudsfragmenten met AEM GraphQL bevat het JSON-antwoord nu vereiste eigenschappen voor externe elementen (assetId, repositoryId), zodat clienttoepassingen respectievelijke dynamische media kunnen maken met OpenAPI-URL&#39;s om de afbeelding op te halen.
+**AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud**
 
-** Vertaal HTTP-API **
+[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is nu beschikbaar voor AEM as a Cloud Service.
 
-De AEM Translation HTTP REST API die al een tijdje in de eerste adoptermodus is. De documentatie kan [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) worden gevonden. Met de API kunnen de vereiste stappen in het vertaalbeheerproces voor inhoud in AEM worden geautomatiseerd.
+### Verouderde functies {#sites-deprecated}
 
+#### SPA-editor {#spa-editor}
+
+[ de Redacteur van het KUUROORD ](/help/implementing/developing/hybrid/introduction.md) is afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
+
+De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
+
+* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor het visuele uitgeven.
+* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven.
+
+#### PWA-functies {#pwa-features}
+
+[ de progressieve Web app (PWA) eigenschappen ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor AEM Sites worden nu afgekeurd voor nieuwe projecten die met versie 2025.1.0 beginnen. Deze functie blijft ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in AEM Assets {#new-features-assets}
-
-**Dynamische media nieuwe het verpakken structuur**
-
-Er is nu een vernieuwde structuur voor het verpakken van dynamische media beschikbaar die beter aansluit bij de marktverwachtingen en het bijhouden van de ondersteuning. De nieuwe verpakkingsstructuur omvat:
-
-* Dynamic Media Prime, die Dynamic Media met OpenAPI&#39;s en video bevat om de levering te verbeteren.
-
-* Dynamic Media Ultimate voegt bezorgings- en transformatiefuncties toe om aan zwaardere gebruiksvereisten te voldoen.
-
-U moet Assets as a Cloud Service Prime of Ultimate hebben om van de nieuwe verpakkingsstructuur te profiteren.
-
-**AI-Gegenereerde videotitels**
-
-Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige bijschriften te bieden. Bijschriften worden gegenereerd op basis van de originele audio, eventuele extra audiotracks of extra bijschriften worden weergegeven op het tabblad &quot;Bijschriften en audio&quot; op de pagina met video-eigenschappen. Met ondersteuning voor meer dan 60 talen kunt u bijschriften reviseren en een voorvertoning weergeven voordat u de video publiceert.
+### Nieuwe functies in de AEM Assets-weergave {#new-features-assets}
 
 **pas onderzoeksfilters** aan
 
 Met de filters Aangepast zoeken kunt u nauwkeuriger en efficiënter relevante informatie zoeken. Het staat voor meer op maat gesneden onderzoeken, het filtreren gegevens toe volgens specifieke attributen zoals merk, product, categorie, of andere zeer belangrijke herkenningstekens. Hierdoor wordt de organisatie verbeterd, de tijd die nodig is om te controleren, verminderd door irrelevante resultaten en wordt de besluitvorming sneller. Het steunt ook scalability, aangezien de grote datasets gemakkelijker worden om te navigeren en te analyseren.
 
-![ pas onderzoeksfilters ](/help/assets/assets/custom-search-filters.png) aan
+![ filters van het douaneonderzoek ](/help/assets/assets/custom-search-filters.png)
 
+### Nieuwe functies in Content Hub {#new-features-content-hub}
 
-### Functies voor vroege toegang in Content Hub {#early-access-content-hub}
+Beschrijving
 
-In Content Hub kunt u nu naast de bestaande statische uitvoeringen ook dynamische en slimme uitsnijdingen weergeven en downloaden. Als beheerder van Content Hub, kunt u de beschikbaarheid van deze vertoningen aan gebruikers ook vormen gebruikend het Gebruikersinterface van de Configuratie.
+### Functies voor vroege toegang in AEM Assets {#early-access-features-assets}
 
-![ dynamische vertoningen ](/help/assets/assets/download-single-asset-renditions-dynamic.png)
+**AI-Gegenereerde videotitels**
 
-
+Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. Bijschriften worden gegenereerd op basis van de originele audio, eventuele extra audiotracks of extra bijschriften die op het tabblad &quot;Bijschriften en audio&quot; op de pagina met video-eigenschappen staan. Met ondersteuning voor meer dan 60 talen kunt u bijschriften reviseren en een voorvertoning weergeven voordat u de video publiceert.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
+
+### Nieuwe functies in AEM Forms {#forms-new-features}
+
+* **beheert Publicatie**: U kunt [ gebruiken leidt Publicatie ](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)) werkschema om of unpublish vormen over milieu&#39;s, typisch van de auteursinstantie aan te publiceren en voorproefinstanties. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
+
+* **[auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms](/help/forms/save-core-component-based-form-as-draft.md)**: De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+
+* **[de redacteursverhogingen van de Regel](/help/forms/invoke-service-enhancements-rule-editor.md)**: Voor Aangepaste Forms die op de Componenten van de Kern wordt gebaseerd, kunt u de output van de Invoke Dienst gebruiken om drop-down opties te bevolken en herhaalbare of individuele panelen te plaatsen. Bovendien kan deze uitvoer worden gebruikt om andere velden te valideren.
+
+* **[verbeter de Ervaring van de Gebruiker met de Knopen van de Navigatie in Comité Lay-outs](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: U kunt navigatieknopen aan uw paneellay-outs, zoals Horizontale Lusjes, Verticale Lusjes, Accordeons, of Tovenaar nu toevoegen. Met deze knoppen vergroot u de gebruikerservaring door de overgangen tussen deelvensters te vereenvoudigen en de focus op het geselecteerde deelvenster te richten.
+
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -107,16 +117,15 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### HTML-e-mailsjablonen in Adaptive Forms
+#### [ HTML e-mailMalplaatjes in Aanpassings Forms ](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-De adaptieve Forms staat u toe om [ e-mailmalplaatjes van HTML ](/help/forms/html-email-templates-in-adaptive-forms.md) te gebruiken. Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+Met Adaptive Forms kunt u HTML-e-mailsjablonen gebruiken. Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
 ![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
 
 #### Verbeterde ondersteuning voor cloudopslag: Direct PDF Uploaden naar Azure Blob Storage
 
-De Generatie APIs van het Document van AEM Forms staat u nu toe om [ geproduceerde documenten van PDF ](/help/forms/early-access-ea-features.md#doc-generation-api) aan Azure BlobOpslag direct te uploaden. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
-
+AEM Forms-API&#39;s voor documentgeneratie bieden nu ondersteuning voor het direct uploaden van gegenereerde PDF-documenten naar Azure Blob Storage. Deze verbetering stroomlijnt opslag en terugwinning, verbeterend efficiency en integratie met de werkschema&#39;s van de wolk.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 

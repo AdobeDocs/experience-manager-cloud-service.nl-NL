@@ -4,7 +4,7 @@ description: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 451e8cac2c0203db9b64ee39a615f201c2436933
+source-git-commit: 80b0d8cc5288e675d39b774d1a672482c7e2c94f
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2025,1,0 |
+| Versie | 2025,2,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -25,9 +25,9 @@ ht-degree: 6%
 Met het model voor ononderbroken release in [!DNL Adobe Experience Manager] as a Cloud Service wordt de toepassing voortdurend automatisch bijgewerkt. Er zijn twee soorten updates, eigenschapversies en onderhoudsversies:
 
 * [ de versies van de Eigenschap ](/help/release-notes/release-notes-cloud/release-notes-current.md) worden gedaan met een voorspelbare maandelijkse frequentie en zijn geconcentreerd op nieuwe mogelijkheden en productinnovaties.
-* [ de versies van het Onderhoud ](/help/release-notes/maintenance/latest.md) worden gedaan vaak en op veiligheidsupdates, insectenmoeilijke situaties, en prestatiesverhogingen geconcentreerd. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service altijd up-to-date is met alle kritieke oplossingen.
+* [ de versies van het Onderhoud ](/help/release-notes/maintenance/latest.md) worden gedaan vaak en op veiligheidsupdates, insectenmoeilijke situaties, en prestatiesverhogingen geconcentreerd. Zo weet u zeker dat [!DNL Adobe Experience Manager] as a Cloud Service altijd up-to-date is met eventuele kritieke oplossingen.
 
-Naast de snelheid van de innovatie biedt [!DNL Adobe Experience Manager] as a Cloud Service ook de flexibiliteit om de komende functies een volledige maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Zo kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers lang van tevoren op te leiden en voor te bereiden. Als u een AEM toe:voegen-op, zoals vormen hebt, kunt u ervoor zorgen dat het eveneens door de oplossing in de [ programmamontages ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) te selecteren wordt bijgewerkt.
+Naast de snelheid van de innovatie biedt [!DNL Adobe Experience Manager] as a Cloud Service ook de flexibiliteit om de komende functies een hele maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Zo kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers lang van tevoren op te leiden en voor te bereiden. Als u toe:voegen-op AEM, zoals vormen hebt, kunt u ervoor zorgen dat het ook door de oplossing in de [ programmamontages ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) te selecteren wordt bijgewerkt.
 
 >[!NOTE]
 >
@@ -35,10 +35,10 @@ Naast de snelheid van de innovatie biedt [!DNL Adobe Experience Manager] as a Cl
 
 Een release voorbereiden:
 
-1. Markeer uw kalenders: De belangrijkste data van de controle voor maandelijkse versies op de [ versie van de Experience Manager roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) en merken uw kalenders om zich voor te bereiden op de belangrijkste activiteiten om voor de versie klaar te worden.
+1. Markeer uw kalenders: De belangrijkste data van de controle voor maandelijkse versies op [ Experience Manager versie roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) en merken uw kalenders om zich voor te bereiden op de belangrijkste activiteiten om klaar voor de versie te worden.
 1. Herzie de versienota&#39;s: Lees de [ huidige versienota&#39;s ](/help/release-notes/release-notes-cloud/release-notes-current.md) om met de versie en de prereleasefuncties vertrouwd te worden.
 1. De toegang en probeert nieuwe eigenschappen: Laat het [ pre-releasekanaal ](/help/release-notes/prerelease.md) in uw niet-productiemilieu&#39;s toe en begin de eigenschappen te proberen om in uw douanemilieu&#39;s te beoordelen.
-1. Leer uw gebruikers: Gebruik documentatie en Experiencen League om gebruikers aan snelheid te brengen en met de nieuwe eigenschappen goed doordrongen.
+1. Train uw gebruikers: gebruik documentatie en Experience League-bronnen om gebruikers snel en op de hoogte te brengen van de nieuwe functies.
 
 ## Informatie over sleutelrelease {#key-articles}
 
