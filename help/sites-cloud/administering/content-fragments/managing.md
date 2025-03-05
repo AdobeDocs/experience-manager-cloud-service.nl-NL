@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2629'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,18 @@ ht-degree: 0%
 
 Leer hoe te om uw **Fragmenten van de Inhoud** in Adobe Experience Manager (AEM) as a Cloud Service, van de specifieke [ console van de Fragmenten van de Inhoud ](#content-fragments-console), en [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor) te beheren. Deze inhoudsfragmenten kunnen worden gebruikt als basis voor inhoud zonder kop of voor het ontwerpen van pagina&#39;s.
 
+>[!IMPORTANT]
+>
+>Verschillende functies van de Content Fragment Console zijn beschikbaar via het programma Vroege adopter.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
->Uw projectteam kan de console en de redacteur indien nodig aanpassen. Zie [ het Aanpassen van de Console en de Redacteur van het Fragment van de Inhoud ](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor verdere details.
+>Deze pagina behandelt de sectie van de console die (slechts) de Fragments van de vertoningen van de Inhoud. Zie voor andere deelvensters:
+>
+>* [ het Leiden Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [ het Bekijken van en het Leiden Assets in de Console van Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 Na het bepalen van uw [ Modellen van het Fragment van de Inhoud ](#creating-a-content-model) kunt u deze gebruiken:
 
@@ -45,41 +54,13 @@ Na het bepalen van uw [ Modellen van het Fragment van de Inhoud ](#creating-a-co
 >
 >De Fragmenten van de inhoud worden opgeslagen als **Assets**. Zij worden hoofdzakelijk geleid van de **console van de Fragmenten van de Inhoud**, maar kunnen ook van de [ Assets ](/help/assets/content-fragments/content-fragments-managing.md) console worden geleid.
 
-## De console met inhoudsfragmenten {#content-fragments-console}
+## Basisstructuur en verwerking van inhoudsfragmenten in de console {#basic-structure-handling-content-fragments-console}
 
-De console van de Fragmenten van de Inhoud wordt gewijd aan het beheren van, het zoeken naar, en het creëren van de Fragmenten van de Inhoud. Het is geoptimaliseerd voor gebruik in een context zonder kop, maar wordt ook gebruikt bij het maken van Content Fragments voor gebruik in paginaontwerp.
+U kunt het uiterst linkerpaneel van de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) gebruiken om **Fragmenten van de Inhoud** als middeltype te selecteren om te bekijken, te doorbladeren en te leiden:
 
-De console van de Fragmenten van de Inhoud verleent directe toegang tot uw fragmenten, en verwante taken. De console kan direct van het hoogste niveau van de Globale Navigatie worden betreden.
-
-![ Globale Navigatie - de console van de Fragmenten van de Inhoud ](assets/cf-managing-global-navigation.png)
-
-Zie voor meer informatie:
-
-* [Basisstructuur en verwerking van de console voor inhoudsfragmenten](#basic-structure-handling-content-fragments-console)
-
-* [De informatie die over uw inhoudsfragmenten wordt verstrekt](#information-content-fragments)
-
-* [Handelingen voor een inhoudsfragment in de inhoudsfragmentconsole](#actions-selected-content-fragment)
-
-* [Kolommen selecteren die worden weergegeven in de console](#select-columns-console)
-
-* [Zoeken en filteren in de console voor inhoudsfragmenten](#filtering-fragments)
-
-* Een selectie van [ toetsenbordkortere weg ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) is beschikbaar voor gebruik in deze console
-
->[!NOTE]
->
->Op deze console worden alleen inhoudsfragmenten weergegeven. Andere elementtypen, zoals afbeeldingen en video&#39;s, worden niet weergegeven.
-
->[!CAUTION]
->
->Deze console is *slechts* beschikbaar in online Adobe Experience Manager (AEM) as a Cloud Service.
-
-### Basisstructuur en verwerking van de console {#basic-structure-handling-content-fragments-console}
+![ de console van Fragmenten van de Inhoud - navigatie ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 Het selecteren van **de Fragmenten van de Inhoud** opent de console in een nieuw lusje.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![ de console van Fragmenten van de Inhoud - Overzicht ](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
    * Ook uw IMS-organisatie tonen
    * Verstrekt diverse [ acties ](#actions-unselected)
 * Het linkerdeelvenster
+   * Hier kunt u koppelingen naar de deelvensters comprimeren of uitbreiden
    * Hier kunt u de mappenstructuur verbergen of weergeven
    * U kunt een specifieke vertakking van de boomstructuur selecteren
    * Dit kan worden aangepast om geneste mappen weer te geven
-   * U kunt tussen het bekijken van de Fragmenten van de Inhoud of [ Assets ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) selecteren
+   * Naast de Fragmenten van de Inhoud, kunt u [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) of [ Assets ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) bekijken; u kunt, verbindingen aan de panelen ook comprimeren of uitbreiden
 * Het hoofd-/rechterdeelvenster - vanaf hier kunt u:
    * Zie de lijst met alle inhoudsfragmenten in de geselecteerde vertakking van de structuur:
       * Inhoudsfragmenten uit de geselecteerde map en alle onderliggende mappen worden weergegeven:
@@ -105,7 +87,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
          * Informatie over verwijzingen weergeven
          * Informatie weergeven over taalversies van het fragment
       * [ Bepaalde andere gebieden van informatie ](#information-content-fragments) over een Fragment van de Inhoud kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt:
-         * Selecteer een waarde in de kolom en wordt direct toegepast als filter
+         * Selecteer een waarde in de kolom en deze wordt direct toegepast als filter
          * Het snelle filtreren wordt gesteund voor het **Model**, **Status**, **Gewijzigd door**, **Markeringen** en **Gepubliceerd door** kolommen.
       * Als u de muisaanwijzer op de kolomkoppen gebruikt, worden een vervolgkeuzelijst met handelingen en schuifregelaars voor de breedte weergegeven. Met deze opties kunt u:
          * Sorteren - selecteer de gewenste actie voor oplopend of aflopend
@@ -114,58 +96,9 @@ Hiermee wordt de hele tabel gesorteerd op basis van die kolom. Sorteren is allee
       * Selecteer één, of meer, fragmenten voor verdere [ actie ](#actions-selected-content-fragment)
    * Gebruik het [ vakje van het Onderzoek ](#searching-fragments)
    * Open het [ paneel van de Filter ](#filtering-fragments)
+   * Een selectie van [ toetsenbordkortere weg ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) is beschikbaar voor gebruik in deze console
 
-### Handelingen {#actions}
-
-Binnen de console is er een reeks acties die u kunt gebruiken, of direct, of na het selecteren van een specifiek fragment:
-
-* De diverse acties zijn direct [ beschikbaar bij de console ](#actions-unselected)
-* U kunt [ selecteren één, of meer, de Fragmenten van de Inhoud om aangewezen acties ](#actions-selected-content-fragment) te tonen
-
-#### Handelingen (niet geselecteerd) {#actions-unselected}
-
-Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfragment te selecteren:
-
-* **[creeer](#creating-a-content-fragment)** een nieuw Fragment van de Inhoud
-* [ filter ](#filtering-fragments) de Fragmenten van de Inhoud volgens een selectie van predikaten, en sparen de filter voor toekomstig gebruik
-* [ Onderzoek ](#searching-fragments) de Fragmenten van de Inhoud
-* [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-columns-console)
-* Gebruik **Open in Assets** om de huidige plaats in de **Assets** console direct te openen
-
-  >[!NOTE]
-  >
-  >De **Assets** console wordt gebruikt om tot activa, zoals beelden, video&#39;s, etc. toegang te hebben.  U hebt toegang tot deze console:
-  >
-  >* gebruikend **Open in Assets** verbinding (in de console van de Fragmenten van de Inhoud)
-  >* direct van de globale **ruit van de Navigatie**
-
-#### Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
-
-Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat fragment. U kunt ook meerdere fragmenten selecteren. De selectie van acties wordt dienovereenkomstig aangepast.
-
-<!-- CQDOC-21349: screenshot -->
-
-![ de console van Fragmenten van de Inhoud - toolbar voor een geselecteerd fragment ](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[Open in nieuwe Redacteur](#editing-the-content-of-your-fragment)**
-* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in originele redacteur)
-* **[publiceer](#publishing-and-previewing-a-fragment)** (en **[unpublish](#unpublishing-a-fragment)**)
-* **[beheert Markeringen](#manage-tags)**
-* **[Exemplaar](/help/assets/manage-digital-assets.md)**
-* **[Beweging](/help/assets/manage-digital-assets.md)**
-* **[anders noemen](/help/assets/manage-digital-assets.md)**
-* **[Schrapping](#deleting-a-fragment)**
-* **[vervangen](#find-and-replace)**
-
->[!NOTE]
->
->Gebruik **Open** om het geselecteerde fragment in de *originele* redacteur te openen.
-
->[!NOTE]
->
->Handelingen als Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen en Kopiëren activeren elk een asynchrone taak. De voortgang van die taak kan worden gecontroleerd via de gebruikersinterface van AEM Async Jobs.
-
-### De informatie die over uw inhoudsfragmenten wordt verstrekt {#information-content-fragments}
+## De informatie die over uw inhoudsfragmenten wordt verstrekt {#information-content-fragments}
 
 Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van informatie over uw Fragments van de Inhoud. Sommige punten verstrekken ook directe verbindingen aan verdere acties en/of informatie:
 
@@ -214,6 +147,53 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
      ![ de console van Fragmenten van de Inhoud - de dialoog van de Taal ](assets/cf-managing-console-languages-dialog.png)
 
+## Handelingen {#actions}
+
+Binnen de console is er een reeks acties die u kunt gebruiken, of direct, of na het selecteren van een specifiek fragment:
+
+* De diverse acties zijn direct [ beschikbaar bij de console ](#actions-unselected)
+* U kunt [ selecteren één, of meer, de Fragmenten van de Inhoud om aangewezen acties ](#actions-selected-content-fragment) te tonen
+
+### Handelingen (niet geselecteerd) {#actions-unselected}
+
+Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfragment te selecteren:
+
+* **[creeer](#creating-a-content-fragment)** een nieuw Fragment van de Inhoud
+* [ filter ](#filtering-fragments) de Fragmenten van de Inhoud volgens een selectie van predikaten, en sparen de filter voor toekomstig gebruik
+* [ Onderzoek ](#searching-fragments) de Fragmenten van de Inhoud
+* [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-columns-console)
+* Gebruik **Open in Assets** om de huidige plaats in de **Assets** console direct te openen
+
+  >[!NOTE]
+  >
+  >De **Assets** console wordt gebruikt om tot activa, zoals beelden, video&#39;s, etc. toegang te hebben.  U hebt toegang tot deze console:
+  >
+  >* gebruikend **Open in Assets** verbinding (in de console van de Fragmenten van de Inhoud)
+  >* direct van de globale **ruit van de Navigatie**
+
+### Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
+
+Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat fragment. U kunt ook meerdere fragmenten selecteren. De selectie van acties wordt dienovereenkomstig aangepast.
+
+![ de console van Fragmenten van de Inhoud - toolbar voor een geselecteerd fragment ](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[Open in nieuwe Redacteur](#editing-the-content-of-your-fragment)**
+* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in originele redacteur)
+* **[publiceer](#publishing-and-previewing-a-fragment)** (en **[unpublish](#unpublishing-a-fragment)**)
+* **[beheert Markeringen](#manage-tags)**
+* **[Exemplaar](/help/assets/manage-digital-assets.md)**
+* **[Beweging](/help/assets/manage-digital-assets.md)**
+* **[anders noemen](/help/assets/manage-digital-assets.md)**
+* **[Schrapping](#deleting-a-fragment)**
+* **[vervangen](#find-and-replace)**
+
+>[!NOTE]
+>
+>Gebruik **Open** om het geselecteerde fragment in de *originele* redacteur te openen.
+
+>[!NOTE]
+>
+>Handelingen als Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen en Kopiëren activeren elk een asynchrone taak. De voortgang van die taak kan worden gecontroleerd via de gebruikersinterface van AEM Async Jobs.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ Voordat u het inhoudsfragment maakt, moet u het onderliggende inhoudsfragmentmod
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
-[ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) moeten worden toegelaten en worden gecreeerd, voorafgaand aan het creëren van inhoudsfragmenten met gestructureerde inhoud.
+[ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) moeten worden toegelaten en worden gecreeerd, voorafgaand aan het creëren van inhoudsfragmenten met gestructureerde inhoud.
 
 ### Een inhoudsfragment maken {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ Een inhoudsfragment maken:
 
 ## Statussen van inhoudsfragmenten {#statuses-content-fragments}
 
-Tijdens zijn bestaan kan een Fragment van de Inhoud verscheidene statussen hebben, zoals aangetoond in de [ Console van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) en [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md):
+Tijdens zijn bestaan kan een Fragment van de Inhoud verscheidene statussen hebben, zoals aangetoond in de [ Console van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) en [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md):
 
 * **Nieuw** (grijs)
 Er is een nieuw inhoudsfragment gemaakt, maar het heeft geen inhoud omdat het nog nooit is bewerkt of geopend in de editor voor inhoudsfragmenten.
@@ -319,7 +299,7 @@ U kunt inhoudsfragmenten publiceren naar:
 
 >[!CAUTION]
 >
->Als uw fragment op een model gebaseerd is, dan zou u moeten ervoor zorgen dat het [ model ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model) is gepubliceerd.
+>Als uw fragment op een model gebaseerd is, dan zou u moeten ervoor zorgen dat het [ model ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model) is gepubliceerd.
 >
 >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
@@ -382,8 +362,6 @@ Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service sel
 
 ## Zoeken en vervangen {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 **vervangt** actie is beschikbaar (in de hoogste toolbar) om, gespecificeerde teksten in uw geselecteerde Fragmenten van de Inhoud te vinden en te vervangen.
 
 ![ vinden en vervangen ](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ Voordat de validatiecriteria worden vervangen, worden deze gecontroleerd en word
 >De actie Zoeken en vervangen kan alleen worden uitgevoerd op maximaal 20 geselecteerde inhoudsfragmenten (tegelijk).
 >
 >Als u meer dan 20 Fragmenten van de Inhoud selecteert, zult u het bericht **Onbekwaam zien om** te vinden en te vervangen.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![ bevestigt Vervangen ](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ Het deelvenster Filter biedt de volgende opties:
 
 Zodra geselecteerd, wordt het **Filtreren door** opties getoond (onder het vakje van het Onderzoek). Ze kunnen van daaruit worden geschrapt. Bijvoorbeeld:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![ de console van de Fragmenten van de Inhoud - het Filtreren ](assets/cf-managing-console-filter.png)
 
 ### Snel filteren {#fast-filtering}
@@ -488,13 +462,9 @@ Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspe
 
 Het zoekvak ondersteunt zoeken in volledige tekst. Voer de zoektermen in het zoekvak in:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![ de console van de Fragmenten van de Inhoud - zoekend ](assets/cf-managing-console-search-specification.png)
 
 De geselecteerde resultaten worden weergegeven:
-
-<!-- CQDOC-21349: screenshot -->
 
 ![ de console van Fragmenten van de Inhoud - de Resultaten van het Onderzoek ](assets/cf-managing-console-search-results.png)
 

@@ -1,10 +1,10 @@
 ---
 title: JSON-exportfunctie voor services voor inhoud
-description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt.
+description: AEM Content Services is ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, maar niet alleen op webpagina's. Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina's zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # JSON-exportfunctie voor services voor inhoud {#json-exporter-for-content-services}
 
-AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM buiten de focus van webpagina&#39;s te veralgemenen.
+AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, maar niet alleen via webpagina&#39;s.
 
-Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt. Deze kanalen kunnen zijn:
+Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt. Deze kanalen kunnen zijn:
 
 * Toepassingen voor één pagina
 * Systeemeigen mobiele toepassingen
 * Andere kanalen en aanraakpunten buiten AEM
 
-Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdiensten verlenen door JSON-exporter te gebruiken om de inhoud van een (y) AEM pagina in het formaat van het JSON-gegevensmodel te leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
+Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u inhoudsdiensten verlenen door de JSON-exporter te gebruiken om de inhoud van een (y) AEM-pagina in JSON-gegevensmodelindeling te leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
-Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM pagina in de indeling van het JSON-gegevensmodel leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
+Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM-pagina in JSON-indeling voor gegevensmodellen leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
-Binnen AEM wordt de levering bereikt met behulp van de extensie selector `model` en `.json` .
+In AEM wordt de levering bereikt met de extensie selector `model` en `.json` .
 
 `.model.json`
 
@@ -79,6 +79,6 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 ## Verwante documentatie {#related-documentation}
 
 * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

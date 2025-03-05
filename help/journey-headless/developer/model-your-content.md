@@ -1,11 +1,11 @@
 ---
 title: Uw inhoud modelleren
-description: In dit deel van de Adobe Experience Manager (AEM) Headless Developer Journey leert u hoe u uw inhoud kunt modelleren voor AEM levering zonder kop met behulp van Content Modeling with Content Fragment Models and Content Fragments.
+description: In dit deel van de Adobe Experience Manager (AEM) Headless Developer Journey leert u hoe u uw inhoud voor AEM Headless-levering kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 0%
@@ -14,25 +14,25 @@ ht-degree: 0%
 
 # Uw inhoud modelleren {#model-your-content}
 
-In dit deel van [ AEM de Zwaardeloze Reis van de Ontwikkelaar ](overview.md), leert u hoe te om uw inhoudsstructuur te modelleren. Dan realiseer die structuur voor Adobe Experience Manager (AEM) gebruikend de Modellen van de Fragmenten van de Inhoud en de Fragmenten van de Inhoud, voor hergebruik over kanalen.
+In dit deel van de [ Hoofdloze Reis van de Ontwikkelaar van AEM ](overview.md), leert u hoe te om uw inhoudsstructuur te modelleren. Bespreek vervolgens die structuur voor Adobe Experience Manager (AEM) met gebruik van Content Fragments Models en Content Fragments, voor hergebruik over kanalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Aan het begin, [ Leer over CMS Headless Ontwikkeling ](learn-about.md) behandelde hoofdloze inhoudslevering en waarom het wordt gebruikt. Dan [ Begonnen het Worden met AEM as a Cloud Service Titel ](getting-started.md) beschreven AEM Zwaartepunt in de context van uw eigen project.
+Aan het begin, [ Leer over Hoofdloze Ontwikkeling van CMS ](learn-about.md) behandelde hoofdloze inhoudslevering en waarom het wordt gebruikt. Dan [ Begonnen het Worden met as a Cloud Service van de Hoofdloze AEM ](getting-started.md) beschreef de Zwaartepunt van AEM in de context van uw eigen project.
 
-In het vorige document van de AEM hoofdloze reis, [ Weg aan Uw Eerste Ervaring Gebruikend AEM Koploze ](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Nadat u het document hebt gelezen, kunt u het volgende doen:
+In het vorige document van de hoofdloze reis van AEM, [ Weg aan Uw Eerste Ervaring Gebruikend AEM Headless ](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Nadat u het document hebt gelezen, kunt u het volgende doen:
 
 * Belangrijke planningsoverwegingen voor het ontwerpen van uw inhoud begrijpen en uitleggen
 * Begrijp en verklaar de stappen voor het uitvoeren van headless, afhankelijk van uw vereisten van het integratieniveau.
-* Stel de benodigde gereedschappen en AEM configuraties in.
+* Stel de benodigde gereedschappen en AEM-configuraties in.
 * Weet de beste werkwijzen zodat u uw reis zonder kop vlot kunt maken, de productie van inhoud efficiënt houdt, en ervoor zorgt dat de inhoud snel wordt geleverd.
 
-Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eigen AEM hoofdloze project voor te bereiden.
+Dit artikel bouwt verder op deze basisbeginselen zodat u begrijpt hoe u uw eigen AEM-project zonder kop kunt voorbereiden.
 
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Leer hoe te om uw inhoudsstructuur te modelleren, dan realiseer die structuur die AEM Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud gebruikt:
+* **Doelstelling**: Leer hoe te om uw inhoudsstructuur te modelleren, dan realiseer die structuur gebruikend de Modellen van het Fragment van de Inhoud van AEM en de Fragmenten van de Inhoud:
    * Introduceer concepten en terminologie met betrekking tot gegevens/inhoud modellering.
    * Ontdek waarom contentmodellering nodig is voor levering van inhoud zonder koptekst.
    * Leer hoe u deze structuur kunt realiseren met AEM Content Fragment Models (en inhoud met Content Fragments schrijven).
@@ -42,7 +42,7 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
 >
 >De Modellering van gegevens is een groot gebied, aangezien het wanneer het ontwikkelen van Relationele Gegevensbestanden wordt gebruikt. Er zijn veel boeken en online informatiebronnen beschikbaar.
 >
->Deze reis houdt slechts rekening met de aspecten die van belang zijn wanneer het modelleren van gegevens voor gebruik met AEM Headless.
+>Deze reis houdt alleen rekening met de aspecten die van belang zijn bij het modelleren van gegevens voor gebruik met AEM Headless.
 
 ## Inhoud modelleren {#content-modeling}
 
@@ -123,13 +123,13 @@ Door uw structuur te optimaliseren kunt u de prestaties verbeteren, zowel voor h
 
 Alles is een evenwichtsactie, maar het creëren van een structuur die te complex is, of teveel niveaus heeft, kan verwarrend zijn voor auteurs die de inhoud produceren. En, kan het prestaties ernstig beïnvloeden als de vraag tot veelvoudige genestelde (referenced) de Fragments van de Inhoud moet toegang hebben om de vereiste inhoud terug te winnen.
 
-## Content Modeling for AEM Headless {#content-modeling-for-aem-headless}
+## Inhoud modelleren voor AEM Headless {#content-modeling-for-aem-headless}
 
-Gegevensmodellering is een reeks gevestigde technieken, die vaak worden gebruikt wanneer ontwikkelde relatiedatabases, zodat wat betekent de Modellering van de Inhoud voor AEM Zwaartepunt?
+Gegevensmodellering is een reeks gevestigde technieken, die vaak worden gebruikt bij ontwikkelde relatiedatabases, dus wat betekent Content Modeling voor AEM Headless?
 
 ### Waarom? {#why}
 
-Om ervoor te zorgen dat uw toepassing de vereiste inhoud van AEM consistent en efficiënt kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
+Om ervoor te zorgen dat uw toepassing de vereiste inhoud consistent en efficiënt van AEM kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
 
 Dit betekent dat uw toepassing van tevoren de vorm van de reactie en daarom hoe te om het weet te verwerken. Dit is gemakkelijker dan het ontvangen van vrij-vorminhoud, die moet worden geparseerd om te bepalen wat het bevat en daarom, hoe het kan worden gebruikt.
 
@@ -144,9 +144,9 @@ De structuur van het inhoudsmodel is:
 
 >[!NOTE]
 >
->De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema&#39;s van GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in een recentere zitting worden gebruikt.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de Schema&#39;s van AEM GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in een recentere zitting worden gebruikt.
 
-Verzoeken om uw inhoud worden ingediend met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunt u (complexe) query&#39;s uitvoeren op uw inhoudsfragmenten, waarbij elke query op een specifiek modeltype is gebaseerd.
+Verzoeken om inhoud worden gedaan met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunt u (complexe) query&#39;s uitvoeren op uw inhoudsfragmenten, waarbij elke query op een specifiek modeltype is gebaseerd.
 
 De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
@@ -175,7 +175,7 @@ Bijvoorbeeld:
 
 ### Gegevenstypen {#data-types}
 
-AEM bevat de volgende gegevenstypen waarmee u uw inhoud kunt modelleren:
+AEM biedt u de volgende gegevenstypen om uw inhoud te modelleren:
 
 * Tekst met één regel
 * Tekst met meerdere regels
@@ -271,9 +271,9 @@ Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te b
 
 * [ Werkend met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) - lood-in pagina voor de Fragmenten van de Inhoud
    * [ de Fragmenten van de Inhoud in Browser van de Configuratie ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - laat de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe
-   * [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - creërend en het uitgeven de Modellen van het Fragment van de Inhoud
+   * [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - creërend en het uitgeven de Modellen van het Fragment van de Inhoud
    * [ het Leiden de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md) - creërend en creërend de Fragmenten van de Inhoud; deze pagina leidt u tot andere gedetailleerde secties
 * [ AEM GraphQL Schemas ](access-your-content.md) - hoe GraphQL modellen realiseert
 * [De structuur van het voorbeeldinhoudsfragment](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [ Begonnen het Worden met AEM Zwaartepunt ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videoles die een overzicht geven van het gebruiken van AEM eigenschappen zonder kop, met inbegrip van inhoud modelleren en GraphQL
+* [ Begonnen het Worden met de Zetel van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videoles die een overzicht geven van het gebruiken van AEM hoofdloze eigenschappen, met inbegrip van inhoud modelleren en GraphQL
    * [ Basisprincipes van de Modellering van GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Leer hoe te om de Fragmenten van de Inhoud in Adobe Experience Manager (AEM) voor gebruik met GraphQL te bepalen en te gebruiken.

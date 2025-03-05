@@ -4,7 +4,7 @@ description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij wer
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configuraties en de Configuratiebrowser {#configuration-browser}
 
-Adobe Experience Manager (AEM)-configuraties dienen voor het beheren van instellingen in AEM en dienen als werkruimten.
+Adobe Experience Manager (AEM)-configuraties dienen voor het beheer van instellingen in AEM en dienen als werkruimten.
 
 ## Wat is een Configuratie? {#what-is-a-configuration}
 
@@ -22,21 +22,21 @@ Een configuratie kan vanuit twee verschillende gezichtspunten worden overwogen.
 * [ een beheerder ](#configurations-administrator) gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
 * [ de ontwikkelaar van A ](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
 
-Samengevat: vanuit het standpunt van de beheerder, zijn de configuraties hoe u werkruimten creeert om montages in AEM te beheren, terwijl de ontwikkelaar zou moeten begrijpen hoe AEM deze configuraties binnen de bewaarplaats gebruikt en beheert.
+Samengevat: vanuit het standpunt van de beheerder zijn configuraties hoe u werkruimten maakt voor het beheer van instellingen in AEM, terwijl de ontwikkelaar moet begrijpen hoe AEM deze configuraties in de opslagplaats gebruikt en beheert.
 
-Configuraties hebben, ongeacht uw perspectief, twee hoofddoelen in AEM:
+Configuraties hebben, onafhankelijk van uw visie, twee hoofddoelen in AEM:
 
 * Configuraties bieden bepaalde functies voor bepaalde groepen gebruikers.
 * Configuraties definiëren de toegangsrechten voor deze functies.
 
 ## Configuraties als beheerder {#configurations-administrator}
 
-De AEM beheerder en auteurs kunnen configuraties als werkruimten beschouwen. Deze werkruimten kunnen worden gebruikt om groepen instellingen en de bijbehorende inhoud voor organisatorische doeleinden te verzamelen door toegangsrechten voor die functies te implementeren.
+De AEM-beheerder en -auteurs kunnen configuraties als werkruimten beschouwen. Deze werkruimten kunnen worden gebruikt om groepen instellingen en de bijbehorende inhoud voor organisatorische doeleinden te verzamelen door toegangsrechten voor die functies te implementeren.
 
 Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Bewerkbare sjablonen](/help/sites-cloud/authoring/page-editor/templates.md)
 * diverse cloudconfiguraties
 
@@ -60,7 +60,7 @@ De gelijkaardige montages zijn mogelijk niet alleen voor Bewerkbare Malplaatjes 
 
 ### De configuratiebrowser gebruiken {#using-configuration-browser}
 
-Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan configuraties in AEM gemakkelijk tot stand te brengen te beheren en te vormen.
+In de configuratiegrowser kan een beheerder eenvoudig toegangsrechten voor configuraties in AEM maken, beheren en configureren.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [Bewerkbare sjablonen](/help/sites-cloud/authoring/page-editor/templates.md)
    * diverse cloudconfiguraties
 1. Selecteer **creeer**.
@@ -120,12 +120,12 @@ Als ontwikkelaar, is het belangrijk om te weten hoe AEM as a Cloud Service met c
 
 ### Scheiding van configuratie en inhoud {#separation-of-config-and-content}
 
-Hoewel de [ beheerder en de gebruikers aan configuraties als werkplaatsen ](#configurations-administrator) kunnen denken om verschillende montages en inhoud te beheren, is het belangrijk om te begrijpen dat de configuraties en de inhoud afzonderlijk door AEM in de bewaarplaats worden opgeslagen en worden beheerd.
+Hoewel de [ beheerder en de gebruikers aan configuraties als werkplaatsen ](#configurations-administrator) kunnen denken om verschillende montages en inhoud te beheren, is het belangrijk om te begrijpen dat de configuraties en de inhoud afzonderlijk door AEM in de bewaarplaats worden opgeslagen en beheerd.
 
 * `/content` staat voor alle inhoud.
 * `/conf` is de thuisbasis van alle configuraties.
 
-De inhoud verwijst naar zijn bijbehorende configuratie door middel van een `cq:conf` bezit. AEM voert een zoekopdracht uit op basis van de inhoud en de bijbehorende contextafhankelijke eigenschap `cq:conf` om de juiste configuratie te vinden.
+De inhoud verwijst naar zijn bijbehorende configuratie door middel van een `cq:conf` bezit. AEM voert een zoekopdracht uit op basis van de inhoud en de contextafhankelijke eigenschap `cq:conf` om de juiste configuratie te vinden.
 
 ### Voorbeeld {#developer-example}
 
@@ -169,7 +169,7 @@ Tot slot ziet u de eigenschap `bgkcolor` die deze voorbeeldcode nodig heeft. De 
 
 Het basisvoorbeeld hierboven toonde één enkele configuratie. Maar er zijn veel gevallen waarin u verschillende configuraties wilt hebben, zoals een standaard globale configuratie, een andere configuratie voor elk merk en misschien een specifieke configuratie voor uw subprojecten.
 
-Om dit te steunen heeft de configuratieraadpleging, AEM een overerving en een reservemechanisme in de volgende orde van voorkeur:
+AEM heeft een overervings- en terugvalmechanisme in de volgende volgorde van voorkeur om dit te ondersteunen bij het opzoeken van de configuratie:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Specifieke config waarnaar wordt verwezen vanuit `cq:conf` ergens in `/content`
@@ -191,8 +191,8 @@ Om dit te steunen heeft de configuratieraadpleging, AEM een overerving en een re
    * Opgelost met implementatie van toepassingen
    * Alleen-lezen bij uitvoering
 1. `/libs`
-   * Standaardwaarden AEM product
-   * Alleen veranderbaar door Adobe, projecttoegang niet toegestaan
+   * Standaardinstellingen AEM-product
+   * Alleen te wijzigen door Adobe, projecttoegang niet toegestaan
    * Opgelost met implementatie van toepassingen
    * Alleen-lezen bij uitvoering
 

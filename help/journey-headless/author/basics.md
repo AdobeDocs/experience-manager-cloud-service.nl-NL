@@ -1,11 +1,11 @@
 ---
 title: Grondbeginselen van ontwerpen leren
-description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
+description: Leer over de concepten en de mechanica van het ontwerpen van inhoud voor uw Headless CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 0%
@@ -16,34 +16,34 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
-Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw AEM project zonder titel kunt ontwerpen.
+Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw AEM-project zonder titel kunt maken.
 
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Introduceer de grondbeginselen van Schrijven CMS zonder Zwaartepunt:
+* **Doelstelling**: Introduceer de grondbeginselen van de Schrijven van CMS zonder Titel:
    * Inleiding tot ontwerpen met AEMaaCS
    * Inleiding tot inhoudsfragmenten
 
 ## Basisverwerking {#basic-handling}
 
-Voordat u de stappen met inhoudsfragmenten gaat beheren, volgt een (zeer) korte inleiding op het gebruik van AEM...maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
+Voordat u de contentfragmenten gaat beheren, volgt u een (zeer) snelle inleiding op het gebruik van AEM...maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
 
-### Auteur, Voorvertoning en Publish {#author-preview-publish}
+### Auteur, Voorvertoning en Publiceren {#author-preview-publish}
 
 Een AEM-installatie bestaat meestal uit drie omgevingen:
 
 * Auteur
-* Publish
+* Publiceren
 * Voorvertoning
 
 U meldt zich aan, en gebruikt het auteursmilieu om uw inhoud te produceren. Wanneer u klaar bent, publiceert u de inhoud zodat deze algemeen beschikbaar wordt. Voor koploze gebruikers is dit voor andere toepassingen, voor webpagina&#39;s is dit voor lezers op het web.
 
 Zie Concepten ontwerpen voor meer informatie.
 
-Van de **console van de Fragmenten van de Inhoud**, kunt u aan de **Dienst van de Voorproef**, voor het testen en het voorvertonen, voorafgaand aan Publish ook publiceren. Zie Een fragment publiceren en voorvertonen.
+Van de **console van de Fragmenten van de Inhoud**, kunt u aan de **Dienst van de Voorproef**, voor het testen en het voorvertonen, voorafgaand aan publiceren ook publiceren. Zie Een fragment publiceren en voorvertonen.
 
 ### Aanmelden {#signing-in}
 
@@ -53,7 +53,7 @@ Net als bij de meeste systemen moet u zich aanmelden. Als auteur krijgt u de vol
 * Wachtwoord
 * Koppeling voor toegang tot het aanmeldingsscherm
 
-Uw account is geconfigureerd met alle rechten die u nodig hebt. Als u problemen hebt, raadt de Adobe u aan contact op te nemen met uw interne team voor projectondersteuning.
+Uw account is geconfigureerd met alle rechten die u nodig hebt. Als u problemen hebt, raadt Adobe u aan contact op te nemen met uw interne team voor projectondersteuning.
 
 ### Navigatie {#navigation}
 
@@ -70,7 +70,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 -->
 
 >[!NOTE]
->Hoewel de Fragmenten van de Inhoud een eigenschap van AEM **Plaatsen** zijn, worden zij bewaard als **Assets**. Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
+>Hoewel de Fragmenten van de Inhoud een eigenschap van de Plaatsen van AEM **zijn, worden zij bewaard als** Assets **.** Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
 
 Binnen de console kunt u mappen in het linkerdeelvenster selecteren om naar het inhoudsfragment te navigeren. U kunt ook filteren en/of zoeken.
 
@@ -92,7 +92,7 @@ Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikb
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
 * **Open**
-* **Publish** (en **unpublish**)
+* **publiceer** (en **unpublish**)
 * **Exemplaar**
 * **Beweging**
 * **anders noemen**
@@ -100,7 +100,7 @@ Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikb
 
 >[!NOTE]
 >
->Handelingen zoals Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchrone job. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
+>Handelingen zoals Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen, Kopiëren, een asynchrone taak activeren. De voortgang van die taak kan worden gecontroleerd via de gebruikersinterface van AEM Async Jobs.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -124,7 +124,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
-Dat was dus een zeer snelle inleiding op de AEM Gebruikersinterface (UI), maar hopelijk hebt u de kans gehad om het uit te proberen. Nu komen we neer op je echte interesse - Content Fragments voor Headless.
+Dat was dus een zeer snelle inleiding op de gebruikersinterface van AEM, maar hopelijk hebt u de kans gehad om het uit te proberen. Nu komen we neer op je echte interesse - Content Fragments voor Headless.
 
 We moeten de zaken van begin tot eind doorlopen, maar in uw instantie zijn mogelijk al mappen en/of fragmenten gemaakt. Deze bevinden zich mogelijk op verschillende locaties. De beginselen zijn dezelfde.
 
@@ -158,11 +158,11 @@ Na het creëren van uw omslag kunt u de omslag **Eigenschappen** openen. Hier zi
 
 Vervolgens navigeert u door deze mappen om inhoudsfragmenten te maken en te bewerken.
 
-#### Net voor het geval - Configuratie van Cloud Servicen van mappen {#cloud-services-folder}
+#### Alleen in geval - Configuratie van Mapcloudservices {#cloud-services-folder}
 
 Alleen voor het geval...
 
-U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit zal waarschijnlijk u niet interesseren, maar indien nodig kunt u de **Configuratie** in de **Cloud Servicen** van de omslag **Eigenschappen** controleren:
+U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit zal waarschijnlijk u niet interesseren, maar indien nodig kunt u de **Configuratie** in de **Diensten van de Wolk** van de omslag **Eigenschappen** controleren:
 
 ![ creeer de Eigenschappen van de Omslag - Configuratie ](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -205,7 +205,7 @@ Wanneer de redacteur eerst opent ziet u:
    * een koppeling naar de Content Fragment Console (pictogram Start)
    * informatie over het model en de map
    * koppelingen naar Voorvertoning; als het standaard URL-voorvertoningspatroon is geconfigureerd voor het model
-   * Publish- en Unpublish-handelingen
+   * Handelingen publiceren en publiceren ongedaan maken
    * een optie om alle **Verwijzingen van de Ouder** (verbindingspictogram) te tonen
    * het fragment **Status**, en laatst bewaarde informatie
    * een schakeloptie voor het overschakelen naar de oorspronkelijke (op Assets gebaseerde) editor
@@ -254,7 +254,7 @@ Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragm
 
 <!-- needs more details -->
 
-Zodra u uw fragment hebt voltooid kunt u **Publish** het zodat het aan de toepassingen zonder kop beschikbaar is.
+Zodra u uw fragment hebt voltooid kunt u **publiceren** het zodat het aan de toepassingen zonder kop beschikbaar is.
 
 De publicatieacties zijn beschikbaar in de editor:
 
@@ -300,7 +300,7 @@ Nu u de grondbeginselen hebt geleerd, moet de volgende stap [ leren hoe over Ver
 
       * Van de redacteur, of **Assets** console
 
-         * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+         * [Snel publiceren](/help/assets/manage-publication.md#quick-publish)
 
          * [ beheer Publicatie ](/help/assets/manage-publication.md#manage-publication)
 
@@ -308,19 +308,19 @@ Nu u de grondbeginselen hebt geleerd, moet de volgende stap [ leren hoe over Ver
 
          * [Een inhoudsfragment publiceren en voorvertonen](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
       * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw Assets-map](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw Assets-map](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [Inhoudsfragmenten - oorspronkelijke editor, uit de Assets-console](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Aan de slag - hulplijnen
    * [Assets-instellingen voor mapkoppen maken](/help/headless/setup/create-assets-folder.md)
 
-* Reis van architect zonder hoofdinhoud AEM
+* AEM Headless Content Architect Reis
 
-* AEM doorsnedenloze vertaalreis
+* AEM Headless Translation Reis

@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
 * bovenste werkbalk: voor belangrijke informatie en handelingen
    * een koppeling naar de Content Fragment Console (pictogram Start)
    * informatie over het model en de map
-   * verbindingen aan [ Voorproef (als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd) ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * verbindingen aan [ Voorproef (als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd) ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
    * [ publiceer ](#publish-content-fragment), en [ unpublish ](#unpublish-content-fragment) acties
    * een optie om alle **Verwijzingen van de Ouder** (verbindingspictogram) te tonen
    * het fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, en laatst bewaarde informatie
@@ -508,7 +508,7 @@ De inhoudsfragmenteditor biedt auteurs de mogelijkheid om een voorvertoning van 
 Als u deze functie wilt gebruiken, moet u eerst:
 
 * Werk met uw IT-team om de externe frontendtoepassing in te stellen die het inhoudsfragment rendert door de JSON-uitvoer te verbruiken.
-* Wanneer de externe frontend toepassing opstelling is, moet het **StandaardPatroon van de Voorproef URL** als a [ bezit van het aangewezen Model van het Fragment van de Inhoud worden bepaald ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Wanneer de externe frontend toepassing opstelling is, moet het **StandaardPatroon van de Voorproef URL** als a [ bezit van het aangewezen Model van het Fragment van de Inhoud worden bepaald ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 Wanneer URL is bepaald, is de **knoop van de Voorproef** actief. U kunt deze knop selecteren om de externe toepassing te starten (op een afzonderlijk tabblad) om het inhoudsfragment te renderen.
 

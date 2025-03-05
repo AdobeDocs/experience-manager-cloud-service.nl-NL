@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 4%
@@ -39,7 +39,7 @@ De [ Redacteur van het Fragment van de Inhoud ](#opening-the-fragment-editor) ve
 >
 >De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, hoewel zij nog van de **Assets** console kunnen worden beheerd. Deze sectie behandelt beheer van de **Assets** console.
+>Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel zij nog van de **Assets** console kunnen worden beheerd. Deze sectie behandelt beheer van de **Assets** console.
 >
 >Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).** Beide editors hebben een knevelschakelaar in de hoogste toolbar om snelle toegang tot de andere redacteur te verlenen.
 
@@ -118,7 +118,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
    * Laat u [ het fragment voor het uitgeven van inhoud ](/help/assets/content-fragments/content-fragments-variations.md) samen met zijn elementen, variaties, bijbehorende inhoud en meta-gegevens openen.
 
-* **Snelle Publish**
+* **Snel publiceren**
 * **beheer Publicatie**
 * **beheert Markeringen**
 * **aan Inzameling**
@@ -128,7 +128,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel van deze zijn [ standaardacties voor Assets ](/help/assets/manage-digital-assets.md) en/of [ AEM Desktop app ](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Veel van deze zijn [ standaardacties voor Assets ](/help/assets/manage-digital-assets.md) en/of [ Desktop app van AEM ](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -198,7 +198,7 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
    * **Gewijzigd**: oranje
    * **Gedeactiveerd**: rood
 
-* Een knoop laat u toe om **Nieuwe Redacteur** uit te proberen, door *nieuwe* [ Redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) direct te openen die via de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) toegankelijk is.
+* Een knoop laat u toe om **Nieuwe Redacteur** uit te proberen, door *nieuwe* [ Redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) direct te openen die via de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) toegankelijk is.
 
   >[!WARNING]
   >
@@ -246,7 +246,7 @@ De editor heeft verschillende opties:
 
   Zal de redacteur weggaan zonder de recentste veranderingen (dat wordt gemaakt sinds laatste **sparen**) op te slaan.
 
-Terwijl het uitgeven van uw inhoudsfragment AEM creeert automatisch versies om ervoor te zorgen dat de vroegere inhoud kan worden hersteld als u uw veranderingen annuleert (gebruikend **dicht** zonder sparen):
+Terwijl het uitgeven van uw inhoudsfragment maakt AEM automatisch versies om ervoor te zorgen dat de vroegere inhoud kan worden hersteld als u uw veranderingen annuleert (gebruikend **dicht** zonder sparen):
 
 1. Wanneer een inhoudsfragment voor het uitgeven van AEM controles op het bestaan van het op koekje-gebaseerde teken wordt geopend dat erop wijst of een *het uitgeven zitting* bestaat:
 
@@ -367,7 +367,7 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Dit gebeurt met de standaard Assets-functionaliteit:
 
-* [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+* [Snel publiceren](/help/assets/manage-publication.md#quick-publish)
 * [ beheer Publicatie ](/help/assets/manage-publication.md#manage-publication)
 
 Dit is toegankelijk:
@@ -379,7 +379,7 @@ Bovendien wanneer u [ een pagina publiceert die het fragment ](/help/sites-cloud
 
 >[!CAUTION]
 >
->Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent voor opnieuw bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 

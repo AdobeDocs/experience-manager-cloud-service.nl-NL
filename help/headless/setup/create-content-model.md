@@ -1,10 +1,10 @@
 ---
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
-description: Definieer de structuur van de inhoud die u wilt maken en gebruiken AEM functies zonder kop door Modellen van inhoudsfragmenten te gebruiken.
+description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM-functies zonder kop door gebruik te maken van Modellen van inhoudsfragmenten.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b76898409291fef85733e75405e65152424e2d41
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Modellen voor inhoudsfragmenten maken - Instellingen zonder kop {#creating-content-fragment-models}
 
-Definieer de structuur van de inhoud die u wilt maken en gebruiken AEM functies zonder kop door Modellen van inhoudsfragmenten te gebruiken.
+Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM-functies zonder kop door gebruik te maken van Modellen van inhoudsfragmenten.
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
 [ nu dat u een configuratie ](create-configuration.md) hebt gecreeerd, kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
-Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u in AEM maakt en beheert. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
+Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
 ## Een model voor een inhoudsfragment maken {#how-to-create-a-content-fragment-model}
 
@@ -71,4 +71,4 @@ Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren heb
 
 >[!TIP]
 >
->Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+>Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).

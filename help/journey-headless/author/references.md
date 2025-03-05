@@ -1,11 +1,11 @@
 ---
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
-description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
+description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechanica van geneste fragmenten voor Headless CMS Authoring.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
-U hebt de grondbeginselen van de Authoring van CMS zonder hoofd geleerd, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
+U hebt de grondbeginselen geleerd van Headless CMS Authoring, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
 
-Dit artikel bouwt op deze voort zodat begrijpt u hoe te om verwijzingen te gebruiken naar auteur uw eigen inhoud voor uw project zonder AEM.
+Dit artikel bouwt hierop voort, zodat u begrijpt hoe u verwijzingen kunt gebruiken naar auteur uw eigen inhoud voor uw AEM-project zonder kop.
 
 ## Doelstelling {#objective}
 
@@ -89,7 +89,7 @@ Het ontwerpen van de Verwijzingen van het Fragment is vrij ongecompliceerd (hoew
 De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
 * of u meerdere referenties kunt selecteren om toe te voegen
-* de modeltypen van inhoudsfragmenten die u kunt selecteren; het model van het Fragment van de Inhoud bepaalt de fragmentmodellen die voor de verwijzing worden toegestaan, zodat AEM slechts fragmenten presenteert die op die modellen worden gebaseerd.
+* de modeltypen van inhoudsfragmenten die u kunt selecteren; het model van het Fragment van de Inhoud bepaalt de fragmentmodellen die voor de verwijzing worden toegestaan, zodat presenteert AEM slechts fragmenten die op die modellen worden gebaseerd.
 
 ### Door geneste fragmenten navigeren {#navigate-nested-fragment}
 
@@ -119,7 +119,7 @@ Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd,
 
    * [Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
@@ -128,6 +128,6 @@ Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd,
 * Aan de slag - hulplijnen
    * [Assets-mappen maken - headless Setup](/help/headless/setup/create-assets-folder.md)
 
-* Reis van architect zonder hoofdinhoud AEM
+* AEM Headless Content Architect Reis
 
-* AEM doorsnedenloze vertaalreis
+* AEM Headless Translation Reis

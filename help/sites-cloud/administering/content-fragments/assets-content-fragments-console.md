@@ -1,22 +1,35 @@
 ---
 title: Assets weergeven en beheren in de inhoudsfragmentconsole
-description: Leer hoe u Assets kunt weergeven en beheren in de **Content Fragments Console** van Adobe Experience Manager as a Cloud Service.
+description: Leer hoe u Assets kunt weergeven en beheren in de Content Fragments Console van Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 0%
+source-wordcount: '277'
+ht-degree: 1%
 
 ---
 
 # Assets weergeven en beheren in de inhoudsfragmentconsole {#viewing-managing-assets-content-fragments-console}
 
-Door gebrek, stelt de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) van Adobe Experience Manager as a Cloud Service uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) voor.
+Door gebrek, stelt de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) van Adobe Experience Manager as a Cloud Service uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) voor.
 
 Nochtans, kunt u, alle andere soorten **Assets** in deze **Console van de Fragmenten van de Inhoud ook bekijken en beheren**.
+
+>[!IMPORTANT]
+>
+>Verschillende functies van de Content Fragment Console zijn beschikbaar via het programma Vroege adopter.
+>
+>Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!NOTE]
+>
+>Deze pagina bedekt de sectie van de console die (slechts) Assets toont. Zie voor andere deelvensters:
+>
+>* [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [ het Leiden Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
 >[!NOTE]
 >
@@ -42,6 +55,7 @@ Van de **Assets** mening van de console van de Fragmenten van de Inhoud kunt u:
 * [Een map maken](/help/assets/manage-digital-assets.md#creating-folders)
 * [Assets uploaden](/help/assets/add-delete-assets-view.md)
 * Configureer het weergavetype (Lijst, Raster, Galerie, Waterval) en, indien van toepassing, de kolommen zichtbaar
+* Een selectie van [ toetsenbordkortere weg ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) is beschikbaar voor gebruik in deze console
 
 U kunt ook actie ondernemen op een of meer geselecteerde Assets:
 

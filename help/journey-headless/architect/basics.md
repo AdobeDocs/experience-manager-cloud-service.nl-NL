@@ -1,24 +1,24 @@
 ---
 title: Basisbeginselen van Content Modeling
-description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
+description: Leer de basis van het modelleren van inhoud voor uw Headless CMS die Inhoudsfragmenten gebruikt.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
 
 ---
 
-# Leer de basisbeginselen van de Content Modeling voor headless met AEM {#content-modeling-headless-basics}
+# Meer informatie over de basisbeginselen van Content Modeling for Headless met AEM {#content-modeling-headless-basics}
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Architect van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
+Aan het begin van de [ Reis van de Architect van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
 
-Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project zonder AEM kunt modelleren.
+Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud kunt modelleren voor uw AEM-project zonder kop.
 
 ## Doelstelling {#objective}
 
@@ -27,11 +27,11 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project
 
 ## Inhoud modelleren met modellen van inhoudsfragmenten {#architect-content-fragment-models}
 
-De modellering van de inhoud (Gegevens) is een reeks gevestigde technieken, vaak gebruikt wanneer ontwikkelde relatiedatabases, zodat wat de Modellering van de Inhoud voor AEM Zwaartepunt betekent?
+De modellering van de inhoud (Gegevens) is een reeks gevestigde technieken, vaak gebruikt wanneer ontwikkelde relatiedatabases, zodat wat de Modellering van de Inhoud voor AEM Headless betekent?
 
 ### Waarom? {#why}
 
-Om ervoor te zorgen dat uw toepassing de vereiste inhoud van AEM consistent en efficiënt kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
+Om ervoor te zorgen dat uw toepassing de vereiste inhoud consistent en efficiënt van AEM kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
 
 Dit betekent dat uw toepassing van tevoren de vorm van de reactie en daarom hoe te om het weet te verwerken. Dit is veel gemakkelijker dan het ontvangen van vrije-vorminhoud, die moet worden geparseerd om te bepalen wat het bevat en daarom, hoe het kan worden gebruikt.
 
@@ -46,9 +46,9 @@ De structuur van het inhoudsmodel is:
 
 >[!NOTE]
 >
->De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema&#39;s van GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar worden gebruikt.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de Schema&#39;s van AEM GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar worden gebruikt.
 
-Verzoeken om uw inhoud worden ingediend met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunnen toepassingen (complexe) query&#39;s uitvoeren op uw Content Fragments, waarbij elke query op een specifiek modeltype is gebaseerd.
+Verzoeken om inhoud worden gedaan met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunnen toepassingen (complexe) query&#39;s uitvoeren op uw inhoudsfragmenten, waarbij elke query op een specifiek modeltype is gebaseerd.
 
 De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
@@ -78,7 +78,7 @@ Bijvoorbeeld:
 
 ## Gegevenstypen {#data-types}
 
-AEM bevat de volgende gegevenstypen waarmee u uw inhoud kunt modelleren:
+AEM biedt u de volgende gegevenstypen om uw inhoud te modelleren:
 
 * Tekst met één regel
 * Tekst met meerdere regels
@@ -152,7 +152,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap [ te leren over het Cr
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
    * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 

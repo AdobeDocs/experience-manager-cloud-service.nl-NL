@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # Inhoudsfragmenten {#content-fragments}
 
-De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service worden [ gecreeerd en als pagina-onafhankelijke activa ](/help/sites-cloud/administering/content-fragments/overview.md) beheerd, toestaand u om kanaal-neutrale inhoud, samen met (misschien kanaal-specifieke) variaties tot stand te brengen. U kunt deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
+De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service worden [ gecreeerd en beheerd als pagina-onafhankelijke activa ](/help/sites-cloud/administering/content-fragments/overview.md), toestaand u om kanaal-neutrale inhoud, samen met (misschien kanaal-specifieke) variaties tot stand te brengen. U kunt deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
 >[!CAUTION]
 >
->Deze pagina moet samen met [ worden gelezen het Werken met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) (en verwante pagina&#39;s) aangezien het basisterminologie en concepten, samen met informatie over het creëren van en het leiden van fragmenten introduceert, en het leveren van gestructureerde inhoudsfragmenten aan kanalen buiten AEM pagina&#39;s.
+>Deze pagina moet samen met [ worden gelezen het Werken met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) (en verwante pagina&#39;s) aangezien het basisterminologie en concepten, samen met informatie over het creëren van en het beheren van fragmenten introduceert, en het leveren van gestructureerde inhoudsfragmenten aan kanalen buiten de pagina&#39;s van AEM.
 
 >[!NOTE]
 >
 >De Fragmenten van de inhoud zijn a **eigenschap van de Plaatsen**, maar worden opgeslagen als **Assets**.
 >
->Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, hoewel zij nog van de **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console kunnen worden beheerd.
+>Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel zij nog van de **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console kunnen worden beheerd.
 >
 >Er zijn twee editors voor het ontwerpen van inhoudsfragmenten:
 >
@@ -48,7 +48,7 @@ Met de inhoudsfragmenten kunt u:
 * **Creative Pro**
    * Het bijhouden van creatieve elementen via verzamelingen die zijn gekoppeld aan inhoudsfragmenten.
 * **Schrijvers van het Exemplaar**
-   * Schrijf in de fragmenteditor voor AEM inhoud.
+   * Schrijf in de AEM-inhoudsfragmenteditor.
    * Kan inhoudvariaties maken.
    * Kan relevante inhoud aan het inhoudsfragment koppelen.
    * Kan versioning/workflow gebruiken.
@@ -111,7 +111,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
 * **identiteitskaart**
 
-   * **attribuut van identiteitskaart van 0} HTML {om op de component van toepassing te zijn.**
+   * **identiteitskaart van HTML** attributen om op de component van toepassing te zijn.
 
 ### Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
@@ -123,7 +123,7 @@ U kunt de fragmentbron voor het uitgeven (de activa) openen gebruikend **uitgeef
 
 ### Tussenliggende inhoud toevoegen {#adding-in-between-content}
 
-Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er de componenten van de a **Belemmering hier** placeholder tussen elke HTML paragraaf (en bij de bovenkant/de bodem) van het fragment.
+Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er de componenten van de a **Belemmering hier** placeholder tussen elke paragraaf van HTML (en bij de bovenkant/bodem) van het fragment.
 
 Dit laat u extra inhoud [ binnen-tussen (namelijk in-tussen inhoud) ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) toevoegen de fragmentinhoud (op om het even welke beschikbare punten), zonder het moeten het wortelfragment veranderen.
 

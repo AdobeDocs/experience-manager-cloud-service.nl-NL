@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '2010'
 ht-degree: 1%
 
 ---
@@ -39,8 +39,8 @@ Met Adobe Experience Manager (AEM) as a Cloud Service kunt u met inhoudsfragment
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
-* Elk fragment is gebaseerd op het Model van het Fragment van de a [ Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
-   * Het inhoudsfragmentmodel definieert de structuur van het resulterende fragment.
+* Elk fragment is gebaseerd op het Model van het Fragment van de a [ Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+   * Het [ Model van het Fragment van de Inhoud bepaalt de structuur ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) van het resulterende fragment.
 * Elk fragment bestaat uit:
    * **[Hoofd](#main-and-variations)** - een integraal deel van het fragment dat de kerninhoud houdt; bestaat altijd, kan niet worden geschrapt
    * **[Variaties](#main-and-variations)** - één, of meer, permutaties van de inhoud, die door de auteur wordt gecreeerd
@@ -56,7 +56,7 @@ Inhoudsfragmenten bevatten gestructureerde inhoud:
       * Met de beschikbare gegevenstypen waarnaar wordt verwezen, kunt u de inhoud nesten.
       * De neiging om voor hoofdloze levering aan uw toepassing te worden gebruikt.
 
-Inhoudsfragmenten kunnen ook in JSON-indeling worden geleverd, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM kerncomponenten. Deze leveringsvorm:
+Inhoudsfragmenten kunnen ook in JSON-indeling worden geleverd, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM-kerncomponenten. Deze leveringsvorm:
 
 * biedt u de mogelijkheid om de component te gebruiken om te beheren welke elementen van een fragment moeten worden geleverd
 * staat bulklevering toe; door de veelvoudige [ Componenten van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) op de pagina toe te voegen die voor API levering wordt gebruikt
@@ -92,7 +92,7 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengesteld om ervaringen via v
 Deze pagina&#39;s en de volgende pagina&#39;s bevatten de taken voor het maken, configureren, onderhouden en gebruiken van de inhoudsfragmenten:
 
 * [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/setup.md)
-* [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - toelatend, creërend, en bepalend uw modellen
+* [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - toelatend, creërend, en [ bepalend ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) uw modellen
 * [ creeer uw Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (gebruikend de Console van het Fragment van de Inhoud)
 
 Nadat de fragmenten zijn gemaakt, kunt u:
@@ -120,7 +120,7 @@ Nadat de fragmenten zijn gemaakt, kunt u:
 
 ## Hoofd en Variaties {#main-and-variations}
 
-Variaties zijn een belangrijk kenmerk van het AEM van inhoudsfragmenten. Zij staan u toe om exemplaren van de **Belangrijkste** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s tot stand te brengen en uit te geven, makend koploze inhoudslevering en pagina het schrijven nog flexibeler.
+Variaties zijn een belangrijk kenmerk van AEM Content Fragments. Zij staan u toe om exemplaren van de **Belangrijkste** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s tot stand te brengen en uit te geven, makend koploze inhoudslevering en pagina het schrijven nog flexibeler.
 
 * **Hoofd**
 
@@ -149,9 +149,9 @@ Variaties zijn een belangrijk kenmerk van het AEM van inhoudsfragmenten. Zij sta
 
 ## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
-AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
+AEM Content Services is ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, maar niet alleen op webpagina&#39;s.
 
-Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt. Deze kanalen kunnen zijn:
+Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt. Deze kanalen kunnen zijn:
 
 * Toepassingen voor één pagina
 * Systeemeigen mobiele toepassingen
@@ -159,9 +159,9 @@ Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web
 
 De levering wordt uitgevoerd in JSON-indeling met behulp van de JSON Exporter.
 
-AEM Inhoudsfragmenten kunnen worden gebruikt om gestructureerde inhoud te beschrijven en te beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten, zoals tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
+Met AEM Content Fragments kunt u gestructureerde inhoud beschrijven en beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten, zoals tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
 
-Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM inhoud aan andere kanalen dan AEM pagina&#39;s te leveren.
+Samen met de JSON-exportmogelijkheden van AEM-kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM-inhoud te leveren aan andere kanalen dan AEM-pagina&#39;s.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Inhoudsfragmenten zijn:
 
 * Opgeslagen als **Assets**:
 
-   * De fragmenten van de inhoud (en hun variaties) kunnen van de [ console van de Fragmenten van de Inhoud worden gecreeerd en worden gehandhaafd ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * De fragmenten van de inhoud (en hun variaties) kunnen van de [ console van de Fragmenten van de Inhoud worden gecreeerd en worden gehandhaafd ](#content-fragments-console).
    * Geautoriseerd en bewerkt in de [ Redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 * Toegankelijk voor inhoudslevering die [ AEM GraphQL API ](/help/headless/graphql-api/content-fragments.md) gebruiken.
@@ -211,7 +211,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 * **Elementen van het Fragment**
 
    * Elementen correleren met de gegevensvelden die inhoud bevatten.
-   * U gebruikt het Model van het Fragment van de a [ Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) om het fragment van de Inhoud tot stand te brengen. De elementen (velden) die in het model zijn opgegeven, definiëren de structuur van het fragment. Deze elementen (velden) kunnen van verschillende gegevenstypen zijn.
+   * U gebruikt het Model van het Fragment van de a [ Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) om het fragment van de Inhoud tot stand te brengen. De elementen (gebieden) [ die in het model worden gespecificeerd bepalen de structuur van het fragment ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md). Deze elementen (velden) kunnen van verschillende gegevenstypen zijn.
 
 * **Fragmentalinea&#39;s**
 
@@ -247,7 +247,7 @@ Voor het maken van Content Fragments hebt u nodig:
 * **Model van de Inhoud**
 
    * Zijn [ toegelaten gebruikend Browser van de Configuratie ](/help/sites-cloud/administering/content-fragments/setup.md).
-   * Wordt [ gecreeerd gebruikend Hulpmiddelen ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+   * Wordt [ gecreeerd gebruikend de Console van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
    * Vereist om [ tot een fragment ](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) te leiden.
    * Definieert de structuur van een fragment (titel, inhoudselementen, tagdefinities).
    * Definities van inhoudsfragmentmodel vereisen een titel en één gegevenselement. Alle overige elementen zijn optioneel.
@@ -258,7 +258,7 @@ Voor het maken van Content Fragments hebt u nodig:
 Als u de Content Fragments wilt gebruiken voor de levering van inhoud zonder kop, hebt u ook het volgende nodig:
 
 * a [ vraag van GraphQL ](/help/headless/graphql-api/content-fragments.md) om de vereiste inhoud te verzoeken
-* deze inhoud kan vervolgens worden gebruikt voor de ontwikkeling van uw eigen SPA voor AEM; bekijk de volgende documenten voor meer informatie:
+* deze inhoud kan dan voor de ontwikkeling van uw eigen SPAs voor AEM worden gebruikt; voor meer informatie, herzie de volgende documenten:
 
    * [SPA WKND-zelfstudie](/help/implementing/developing/hybrid/wknd-tutorial.md)
    * [Aan de slag met Reageren](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -274,6 +274,34 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Wanneer u een fragment naar een pagina sleept in de ontwerpfase, wordt de vereiste component automatisch gekoppeld.
    * Zie de [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html).
+
+## De console met inhoudsfragmenten {#content-fragments-console}
+
+De console van de Fragmenten van de Inhoud wordt gewijd aan het beheren van, het zoeken naar, en het creëren van [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md), [ Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) en [ Assets ](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). Deze functie is geoptimaliseerd voor gebruik in een context zonder koptekst, maar wordt ook gebruikt bij het maken van Content Fragments en Content Fragment Models voor gebruik in het ontwerpen van pagina&#39;s.
+
+De console kan direct van het hoogste niveau van de Globale Navigatie worden betreden.
+
+![ Globale Navigatie - de console van de Fragmenten van de Inhoud ](assets/cf-managing-global-navigation.png)
+
+U kunt het meest linkse deelvenster gebruiken om het brontype te selecteren dat u wilt weergeven, bekijken en beheren:
+
+![ de console van Fragmenten van de Inhoud - navigatie ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+Zie voor meer informatie:
+
+* [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
+* Een selectie van [ toetsenbordkortere weg ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) is beschikbaar voor gebruik in deze console
+
+>[!CAUTION]
+>
+>Deze console is *slechts* beschikbaar in online Adobe Experience Manager (AEM) as a Cloud Service.
+
+>[!NOTE]
+>
+>Uw projectteam kan de console en de redacteur indien nodig aanpassen. Zie [ het Aanpassen van de Console en de Redacteur van het Fragment van de Inhoud ](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor verdere details.
 
 ## Voorbeeldengebruik {#example-usage}
 
