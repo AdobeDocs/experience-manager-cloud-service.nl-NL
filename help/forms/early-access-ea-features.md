@@ -1,14 +1,14 @@
 ---
-title: Huidige Early eigenschappen van de Toegang van  [!DNL Adobe Experience Manager Forms]  as a Cloud Service.
-description: Huidige Early eigenschappen van de Toegang van  [!DNL Adobe Experience Manager Forms]  as a Cloud Service.
+title: De huidige Early eigenschappen van de Toegang van  [!DNL Adobe Experience Manager Forms]  as a Cloud Service.
+description: De huidige Early eigenschappen van de Toegang van  [!DNL Adobe Experience Manager Forms]  as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2155'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maak
 
 De generatieve AI-mogelijkheden die via AEM Forms AI Assistant worden aangeboden, zijn:
 
-* **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw AEM vorm-verwante vragen. Onze AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
+* **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw vorm-verwante vragen van AEM. Onze AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
 
 * **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met Generatieve Herinneringen AI. Onze generatieve AI genereert automatisch gebruikersvriendelijke formulieren die keuzemogelijkheden verkleinen en de ervaring aanpassen.
 
@@ -76,13 +76,13 @@ Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaa
 
 ### WYSIWYG Authoring voor Edge Delivery Services
 
-WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren voor Edge Delivery Services. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
+WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
 * WYSIWYG-bewerkingservaring voor het maken en visualiseren van formulieren.
 * Document met recordfunctionaliteit om tamper-proof archieven van verzonden gegevens te maken.
-* Integratie met Adobe Sign voor elektronische handtekeningen.
+* Integratie met Adobe Sign for Electronic signatures.
 * Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
 * Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
 * Mogelijkheid om te kiezen uit meerdere verzendacties voor het verwerken van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
@@ -94,7 +94,7 @@ De [ AEM Forms aan de Schakelaar van Marketo ](/help/forms/integrate-form-to-mar
 
 Wanneer iemand een formulier verzendt op uw website die is gemaakt met AEM Adaptive Forms, zorgt de connector ervoor dat de verzonden gegevens automatisch naar Marketo worden verzonden. Hierdoor wordt de noodzaak van handmatige gegevensinvoer weggenomen en wordt het risico op fouten verminderd.
 
-![ AEM Vorm - de Schakelaar van Marketo ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![ Vorm AEM - de Schakelaar van Marketo ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de omzettingspercentages van uw website verbeteren. Door loodgegevens automatisch naar Marketo te verzenden, kunt u ervoor zorgen dat gekwalificeerde leads snel worden ingevoerd in uw verpleegprogramma&#39;s.
 
@@ -104,15 +104,37 @@ Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies 
 
 * [Marketo Engage integreren met AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
 * [ integreer een Aangepast Vorm met Marketo Engage ](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Marketo Engage en gegevensbron configureren voor bestaande adaptieve Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Een bestaand adaptief formulier naar Marketo Engage verzenden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Marketo Engage en gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Een bestaand adaptief formulier verzenden naar Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### Value Realization Dashboard
+
+U kunt de prestaties van uw formulieren bijhouden en analyseren met het Dashboard voor waardetoewijzing. Met dit analyseprogramma kunt u gegevensgestuurde beslissingen maken om uw formulierstrategie te optimaliseren.
+
+![ Dashboard van de Inzichten van het Gebruik van Forms ](/help/forms/assets/forms-usage-insights.png)
+
+**Zeer belangrijke eigenschappen:**
+
+* Het verzenden van formulieren, documentuitvoeringen en metrische gegevens voor het maken/publiceren van formulieren controleren
+* Gebruik van formulierfragmenten bijhouden en opnieuw gebruiken in uw organisatie
+* Tendensen, piekperiodes en verbeteringsmogelijkheden identificeren
+
+Het dashboard biedt inzicht in twee hoofdsecties:
+
+* **Vorm &amp; de activiteit van Documenten in tijd**: De voorlegging van sporen, uitvoeringen, en vormverwezenlijking/publicatie
+* **Gebruik van het Fragment**: De goedkeuring en het hergebruik van het fragment van monitoren
+
+Voor gedetailleerde informatie:
+
+* [Het dashboard voor het realiseren van waarden](/help/forms/aem-forms-value-realization-dashboard.md)
+* [Inzichten in het gebruik van formulieren en documenten interpreteren](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## Aanvullende innovaties voor vroege toegang
 
-### E-mailsjablonen HTML in Adaptieve Forms
+### HTML-e-mailsjablonen in Adaptive Forms
 
 
-De adaptieve Forms staat u toe gebruiken [ HTML e-mailmalplaatjes ](/help/forms/html-email-templates-in-adaptive-forms.md). Met e-mailsjablonen voor HTML kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+De adaptieve Forms staat u toe gebruiken [ de e-mailmalplaatjes van HTML ](/help/forms/html-email-templates-in-adaptive-forms.md). Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
 
 ![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
 
@@ -161,52 +183,52 @@ Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? O
 ### Doc Assurance API&#39;s
 
 
-AEM Forms Doc Assurance APIs is een reeks hulpmiddelen binnen de Communicatie APIs van de Cloud Service van AEM Forms die u toestaan om de veiligheid en gebruikersinteractie van uw PDF documenten te beheren.
+AEM Forms Doc Assurance APIs is een reeks hulpmiddelen binnen de Communicatie APIs van AEM Forms Cloud Service die u toestaan om de veiligheid en gebruikersinteractie van uw documenten van PDF te beheren.
 
 Hier is een uitsplitsing van wat Doc Assurance APIs kan doen:
 
-* **codeer en decrypteer documenten**: Protect uw documenten door hun inhoud met encryptie onleesbaar te maken. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
+* **codeer en decrypteer documenten**: bescherm uw documenten door hun inhoud onleesbaar met encryptie te maken. U hebt controle over de delen van de PDF die u wilt versleutelen, inclusief het gehele document, de specifieke inhoud, metagegevens of bijlagen.
 
 * **digitaal ondertekent documenten**: Voeg digitale handtekeningen aan uw documenten voor bevestiging en knoeibestendige controle toe. Dit kan worden gebruikt voor certificeringsdoeleinden of om de integriteit van documenten te garanderen
 
-* **de Reader breidt uw documenten (pas of geef gebruiksrechten van de documenten van PDF uit)**: Laat uw organisatie toe om interactieve documenten van PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden.
+* **Reader breidt uw documenten (pas of geef gebruiksrechten van de documenten van PDF toe)**: Laat uw organisatie toe om interactieve documenten van PDF gemakkelijk te delen door de functionaliteit van de Lezer van Adobe met extra gebruiksrechten uit te breiden.
 
-  Met de API&#39;s van de Reader Extension (Gebruiksrechten) worden gebruiksrechten toegevoegd aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
+  Met de Reader Extension (gebruiksrechten)-API&#39;s worden gebruiksrechten toegevoegd aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
 
-  Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
+  Wanneer de juiste gebruiksrechten zijn toegevoegd aan PDF-documenten, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
 
 Algemeen, [ Doc Assurance APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
 
 
 ### Forms Service-API&#39;s
 
-Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Deze kan ook worden gebruikt om gegevens te importeren/exporteren naar/van een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
+Forms-service genereert een interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens te importeren/exporteren naar/vanuit een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
-* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
+* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Hiermee wordt in feite een optioneel vooraf ingevuld PDF-formulier gemaakt dat kan worden ingevuld met gegevens.
 
-* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
 
 * **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
 
 ### API voor documentgeneratie
 
-De API voor het genereren van documenten bevat een optionele functie waarmee gegenereerde PDF rechtstreeks kunnen worden geüpload naar Azure Blob Storage. Enkele belangrijke voordelen van het rechtstreeks uploaden van PDF naar Azure Blob Storage met de API voor het genereren van documenten zijn:
+De API voor het genereren van documenten bevat een optionele functie waarmee gegenereerde PDF&#39;s rechtstreeks kunnen worden geüpload naar Azure Blob Storage. De volgende belangrijke voordelen zijn mogelijk wanneer u PDF&#39;s rechtstreeks uploadt naar Azure Blob Storage met behulp van de API voor het genereren van documenten:
 
 * **Naadloze Integratie met de Opslag van de Wolk**:
-Door gegenereerde PDF rechtstreeks te uploaden naar Azure Blob Storage is het niet nodig om handmatig of programmatisch extra stappen te ondernemen om bestanden over te brengen, workflows te stroomlijnen en de efficiëntie te verhogen.
+Door gegenereerde PDF&#39;s rechtstreeks te uploaden naar Azure Blob Storage is het niet nodig om handmatig of programmatisch extra stappen te ondernemen om bestanden over te brengen, workflows te stroomlijnen en de efficiëntie te verhogen.
 
 * **Gecentraliseerd Beheer van het Document**:
-Door PDF op te slaan in Azure Blob Storage kunt u documenten centraal beheren, waardoor het eenvoudiger wordt om gegenereerde bestanden in verschillende gebruiksgevallen te organiseren, op te halen en te beheren.
+Het opslaan van PDF&#39;s in Azure Blob Storage maakt een gecentraliseerd beheer van documenten mogelijk, waardoor het eenvoudiger wordt om gegenereerde bestanden in verschillende gebruiksgevallen te organiseren, op te halen en te beheren.
 
 * **Verbeterde Veiligheid**: Door ingebouwde de veiligheidseigenschappen van Azure, zoals encryptie bij rust en op rol-gebaseerde toegangscontrole (RBAC) te leveraging, blijven de gevoelige documenten beschermd tijdens opslag.
 
-* **Aanpasbare Wegen van de Opslag**: De capaciteit om de wegen van de douanefolder te bepalen zorgt geproduceerde PDF in georganiseerde en toepassing-specifieke plaatsen worden opgeslagen, verbeterend dossierbeheer.
+* **Aanpasbare Wegen van de Opslag**: De capaciteit om de wegen van de douanefolder te bepalen zorgt geproduceerde PDFs in georganiseerde en toepassing-specifieke plaatsen worden opgeslagen, verbeterend dossierbeheer.
 
 ## Zie ook
 
 * [Nieuwste innovaties in AEM Forms](/help/forms/latest-innovations.md)
 
-* [Mogelijkheden van AEM Forms als Cloud Service](/help/forms/home.md)
+* [Mogelijkheden van AEM Forms als cloudservices](/help/forms/home.md)
 
-* [Verschil tussen AEM 6.5 Forms (AMS en on-prem) en AEM Forms als Cloud Service (AEM CS Forms)](/help/forms/notable-changes.md)
+* [Verschil tussen AEM 6.5 Forms (AMS en on-prem) en AEM Forms als Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
 

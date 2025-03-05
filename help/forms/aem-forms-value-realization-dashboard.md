@@ -5,35 +5,45 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# Werken met uw Value Realization Dashboard: optimaal gebruikmaken van uw Forms {#value-realization-dashboard}
+
+# Het dashboard voor het realiseren van waarden
+
+![ dashboard van de de realisatie van de waarde ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+
 
 <span class="preview"> Deze functie is een bètafunctie die slechts voor enkele geselecteerde klanten is ingeschakeld. </span>
 
 Welkom bij de one-stop shop voor meer inzicht in de waarde die uw formulieren bieden! Met dit dashboard beschikt u over waardevolle inzichten om uw formulieren te optimaliseren, workflows te stroomlijnen en uw doelen uiteindelijk sneller te bereiken.
 
+Dit artikel biedt een conceptueel overzicht van het Dashboard voor de realisatie van waarden en de voordelen ervan. Voor gedetailleerde gebruiksinstructies en metrieke interpretatie, zie [ het Interpreteren van de Inzichten van het Gebruik van de Vorm gebruikend het dashboard van de Rendement van de Waarde ](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+
+
+![ dashboard van de waardeverwezenlijking ](/help/forms/assets/forms-usage-insights.png)
+
 ## Wat staat er op het dashboard? {#content-of-dashboard}
 
 Dit dashboard is uw venster in de wereld van uw formuliergebruik. Hier is een uitsplitsing van de belangrijkste secties:
 
-### Formulieractiviteiten in de loop van de tijd:
+### Formulier- en documentactiviteiten in de loop van de tijd
 
 * **de Verzending van de Vorm**: Zie tendensen in hoe vaak uw vormen worden voltooid.
 * **Vertoningen van het Document**: Houd het aantal documenten bij die in tijd worden teruggegeven.
 * **Forms creeerde &amp; Gepubliceerde**: Monitor het tarief waaraan de nieuwe vormen worden gebouwd en opgesteld.
 * **de Tijden van de Aanmaak en van de Publicatie van de Vorm**: Analyseer de gemiddelde tijden voor het creëren van en het publiceren van vormen om gebieden voor verbetering te identificeren.
 
-### Fragmentgebruik:
+### Fragmentgebruik
 
 * **Aantal Fragments van de Vorm in Gebruik**: Zie hoeveel herbruikbare vormsecties momenteel in actieve vormen worden opgenomen.
-* **Aantal van het Fragment van de Vorm hergebruik**: Geld hoe vaak deze fragmenten over verschillende vormen worden gebruikt.
+* **hergebruik van het Fragment van de Vorm**: Gage hoe vaak deze fragmenten over verschillende vormen worden gebruikt.
+
+
 
 
 ## Hoe komt dit u ten goede? {#benefits-to-you}
@@ -55,10 +65,14 @@ Laten we deze bevindingen omzetten in stappen die in actie komen!
 
 Door deze trends te analyseren, kunt u betere formulieren maken, tijd besparen bij het maken en herbruikbare componenten benutten. Dit vertaalt zich naar een vloeiender werkschema, gelukkigere gebruikers, en uiteindelijk, een groter rendement op uw investering.
 
-## Aanvullende tips {#additional-tips}
+## Meer tips {#additional-tips}
 
 * **Vastgestelde Doelstellingen:** bepaal wat u met uw vormen wilt bereiken. Is het verhoogde gegevensinzameling, snellere loodgeneratie, of betere klantentevredenheid? Aan de hand van uw doelstellingen bepaalt u de analyse van het dashboard.
 * **Regelmatige Overzicht:** Plan regelmatige controle-ins met het dashboard om vooruitgang te volgen en nieuwe gebieden voor verbetering te identificeren.
 * **Experimenteer &amp; verfijnen:** ben niet bang om met verschillende vormontwerpen en fragmentgebruik te experimenteren. Met het dashboard kunt u de doeltreffendheid van de wijzigingen meten.
 
 Onthoud, dit dashboard is jouw bondgenoot! Door het effectief te gebruiken, kunt u uw formulieren van eenvoudige hulpmiddelen voor gegevensverzameling omzetten in strategische middelen die succes voor u en uw bedrijf drijven.
+
+## Zie ook
+
+* [Gebruiksinzichten interpreteren](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
