@@ -4,9 +4,9 @@ description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1972'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen
 >* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/headless/graphql-api/content-fragments.md)
 
-Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, is het nuttig om enkele praktische voorbeelden te zien.
+Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
@@ -40,7 +40,7 @@ Zie voor hulp bij dit:
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
 >title="GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s"
->abstract="Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query&#39;s te verkennen."
+>abstract="Leer hoe u GraphQL met AEM kunt gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query&#39;s te verkennen."
 
 ## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
 
@@ -1873,7 +1873,7 @@ Deze query vraagt om:
 } 
 ```
 
-## Voorbeeldquery&#39;s voor levering DAM en Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
+## Voorbeeldquery&#39;s voor levering van DAM en Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Voor voor het web geoptimaliseerde afbeeldingslevering (van DAM-middelen):
 
@@ -1881,11 +1881,15 @@ Voor voor het web geoptimaliseerde afbeeldingslevering (van DAM-middelen):
 
 * [Voorbeeldquery voor voor voor het web geoptimaliseerde afbeeldingslevering met één opgegeven parameter](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
-Voor de levering van de URL aan een Dynamic Media-element
+Voor de levering van URL aan een Dynamisch middel
 
-* Zie [ vraag van de Steekproef voor Dynamic Media activalevering door URL - de Verwijzing van het Beeld ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Zie [ vraag van de Steekproef voor Dynamische levering van Media door URL - de Verwijzing van het Beeld ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Zie [ vraag van de Steekproef voor Dynamic Media activalevering door URL - Veelvoudige Verwijzingen ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Zie [ vraag van de Steekproef voor de Dynamische levering van Media door URL - Veelvoudige Verwijzingen ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+Voor de levering van externe elementen die niet lokaal zijn voor de huidige AEM-instantie, vanuit de Inhoudsfragmenteditor.
+
+* Zie [ vraag van de Steekproef voor Dynamische Media voor OpenAPI activa steun (Verre Assets) ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 

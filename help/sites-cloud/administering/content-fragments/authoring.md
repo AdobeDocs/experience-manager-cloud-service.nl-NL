@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2847'
 ht-degree: 0%
 
 ---
@@ -312,10 +312,11 @@ Alternatief kunt u [ selecteren **nieuw fragment** creëren om **te openen creee
 
 #### Referentieafbeeldingen {#reference-images}
 
-In **de gebieden van de Verwijzing van de Inhoud** kunt u allebei:
+In **de gebieden van de Verwijzing van de Inhoud** kunt u:
 
-* referentieelementen die al in de gegevensopslagruimte bestaan
-* uploadt hen rechtstreeks aan het gebied; dit vermijdt de behoefte om de **Assets** console te gebruiken om te uploaden
+* verwijzingselementen die al in uw lokale opslagplaats bestaan
+* referentiemiddelen die zich in een externe opslagplaats bevinden
+* uploadt activa rechtstreeks aan het gebied; dit vermijdt de behoefte om de **Assets** console te gebruiken om te uploaden
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ In **de gebieden van de Verwijzing van de Inhoud** kunt u allebei:
   >* hebben a **Weg van de Weg van de Weg van de Wortel** bepaald (in het [ Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Hiermee geeft u aan waar de afbeelding wordt opgeslagen.
   >* omvat **Beeld** in de lijst van toegelaten inhoudstypes
 
-U kunt een element toevoegen door:
+##### Referentie lokale Assets {#reference-local-assets}
+
+Als u naar een lokaal element wilt verwijzen, kunt u:
 
 * belemmering en laat vallen het nieuwe activadossier direct (bijvoorbeeld, van uw dossiersysteem) in het **gebied van de Verwijzing van de Inhoud**
 * gebruik **activa** actie toevoegen, dan uitgezocht of **doorbladeren Assets** of **uploadt** om de aangewezen selecteur voor u te openen om te gebruiken:
 
   ![ de Redacteur van het Fragment van de Inhoud - voeg activaopties ](assets/cf-authoring-add-asset-options.png) toe
+
+##### Referentie externe Assets {#reference-remote-assets}
+
+Verwijzen naar externe elementen:
+
+1. Specificeer de verre **Bewaarplaats** wanneer het doorbladeren voor activa:
+
+   ![ de Redacteur van het Fragment van de Inhoud - Uitgezochte Activa van ver ](assets/cf-authoring-remote-asset-01.png)
+
+2. Na de selectie kunt u de locatie zien in de elementgegevens:
+
+   ![ de Redacteur van het Fragment van de Inhoud - Activa van verre bewaarplaats ](assets/cf-authoring-remote-asset-02.png)
+
+###### Externe Assets - Beperkingen {#remote-assets-limitations}
+
+Er zijn enkele beperkingen wanneer wordt verwezen naar externe middelen:
+
+* Slechts [ goedgekeurde ](/help/assets/approve-assets.md) activa zijn beschikbaar voor verwijzing van een verre bewaarplaats van Activa.
+
+* Als een element waarnaar wordt verwezen, wordt verwijderd uit de externe opslagplaats, resulteert dit in een verbroken Content Reference.
+
+* Alle opslagplaatsen voor leveringsmiddelen waartoe de gebruiker toegang heeft, zijn beschikbaar voor selectie. De beschikbare lijst kan niet worden beperkt.
+
+* Zowel de AEM-instantie als de externe gegevensopslagruimte moeten dezelfde versie hebben.
+
+* Er worden geen metagegevens van middelen weergegeven via de API voor beheer of de API voor levering. U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen:
+
+   * de individuele activa meta-gegevens: [ https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * krijg bulkmeta-gegevensinformatie gebruikend (experimenteel) onderzoek API: [ https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search ](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>Zie ook [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Dynamische Media voor OpenAPI activa steun (Verre Assets) ](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Referentiepagina&#39;s {#reference-pages}
 
