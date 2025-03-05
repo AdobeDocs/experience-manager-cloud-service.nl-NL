@@ -3,13 +3,13 @@ title: Site-verificatie configureren voor het schrijven van inhoud
 description: Leer hoe AEM Live tokenverificatie ondersteunt en hoe u AEM kunt configureren voor het gebruik van verificatie met WYSIWYG-authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Site-verificatie configureren voor het schrijven van inhoud {#site-authentication}
 
@@ -46,11 +46,13 @@ Deze items zijn vereist om de configuratie van siteverificatie voor uw AEM-ontwe
 Zodra de plaatsauthentificatie wordt gevormd, kunt u het in uw het auteursmilieu van AEM toelaten.
 
 1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
-1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **Authentificatie** lusje en verstrek de volgende waarden, die u nota nam toen u plaatsauthentificatie vormde.
-
-   * **Technische rekening identiteitskaart**
-   * **Token van de Authentificatie van de Plaats**
+1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **Authentificatie** lusje, verstrek het **Symbolische van de Authentificatie van de Plaats**, dat u eerder kopieerde.
 
    ![ Configuratie van Edge Delivery Services ](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Verifieer dat **technische rekeningidentiteitskaart** eerder gekopieerde aanpast.
+
+   * Dit veld is alleen-lezen en vooraf gedefinieerd.
+   * De technische account is hetzelfde voor alle sites in één AEM-auteuromgeving.
 
 1. Tik of klik **sparen &amp; sluit**.

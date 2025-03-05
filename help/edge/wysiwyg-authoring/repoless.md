@@ -4,9 +4,9 @@ description: Als u veel vergelijkbare sites hebt die er meestal hetzelfde uitzie
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -99,30 +99,14 @@ U moet een siteconfiguratie maken en deze toevoegen aan uw padtoewijzing.
 
 Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vormen door uw technische rekening te bepalen zodat heeft het voorrechten om te publiceren.
 
-1. Haal in uw browser de technische account op als antwoord op de volgende koppeling.
+1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3} lusje van de Authentificatie {en kopieer de waarde voor** Technische rekening identiteitskaart **.**
 
-1. De reactie zal gelijkaardig aan het volgende zijn.
+   * Het zal er ongeveer zo uitzien als `<tech-account-id>@techacct.adobe.com`
+   * De technische account is hetzelfde voor alle sites in één AEM-auteuromgeving.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. Stel de technische account in uw configuratie in met een cURL-opdracht die lijkt op het volgende:
+1. Stel de technische account voor de configuratie zonder opbergvak in met een cURL-opdracht vergelijkbaar met de volgende, waarbij u de technische account-id gebruikt die u hebt gekopieerd.
 
    * Pas het `admin` -blok aan om de gebruikers te definiëren die volledige beheertoegang tot de site moeten hebben.
       * Het is een array met e-mailadressen.
