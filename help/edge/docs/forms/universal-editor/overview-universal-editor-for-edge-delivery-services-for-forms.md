@@ -4,9 +4,9 @@ description: Met Universal Editor voor Edge Delivery Services for Forms kunt u A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,11 @@ Met de Universal Editor kunt u snel responsieve, interactieve formulieren ontwer
 
 Of u nu lichtgewicht weergave op de client beheert, compatibiliteit tussen browsers garandeert of voldoet aan strenge toegankelijkheidsnormen, de Universal Editor biedt een gestroomlijnde oplossing voor het maken en beheren van formulieren.
 
-![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png) {width=80%, richten-centrum} ->
+![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png) {width=80%, richten-centrum}
 
 ## Belangrijke functies van de Universal Editor voor Edge Delivery Services for Forms
 
 
-
-Hier is de lay-out met kaarten van gelijke breedte (het gebruiken van kolommen met vaste breedte):
 
 | ![ Interface van WYSIWYG ](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![ Redacteur van de Regel ](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![ legt Acties ](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) voor |
 |:-------------:|:-------------:|:-------------:|

@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2289'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ Hier is wat meer Conversational Forms brengt:
 Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaar voor gebruikerservaring.  Verhoog uw betrokkenheid, verminder het aantal gebruikers dat het formulier verlaat en maak interactie met uw website een prettiger ervaring voor iedereen.
 
 
-### WYSIWYG Authoring voor Edge Delivery Services
+### WYSIWYG Authoring (Universal Editor) voor Edge Delivery Services for Forms
 
-WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
+De Universele Redacteur verstrekt een krachtige interface van WYSIWYG om [ aanpassingsvormen aan Edge Delivery Services ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) te bouwen en te publiceren, die visuele ontwerpeenvoud met geavanceerde functionaliteit combineren. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/create-forms.md), plus een brede waaier van extra eigenschappen aan:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
@@ -86,6 +86,26 @@ WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms E
 * Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
 * Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
 * Mogelijkheid om te kiezen uit meerdere verzendacties voor het verwerken van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
+
+![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**Voordelen:**
+
+* **versnelde Tijd-aan-Waarde (TTV)**: De vormen van de lancering sneller met intuïtieve visuele creatie die complexe coderingsvereisten elimineert.
+* **Verminderde ontwikkelingskosten**: Verlaag de totale kosten van eigendom door bedrijfsgebruikers toe te staan om vormen met minimale betrokkenheid van IT tot stand te brengen en te wijzigen.
+* **Vereenvoudigde Ontwikkeling**: Creeer douanecomponenten gebruikend slechts HTML, CSS, en JavaScript-geen gespecialiseerde vereiste kaderkennis.
+* **Moderne Stapel van het Web**: Voortgebouwd op Webnormen en moderne technologieën vertrouwd aan front-end ontwikkelaars.
+* **Snelle Prototypen**: bouw en test snel vormconcepten alvorens in volledige ontwikkeling te investeren
+
+
+**Onderzoek documentatie om meer te leren:**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**Zeer belangrijke eigenschappen**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Van het Gebruik Responsieve lay-outs**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**vormen voorlegt acties**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**worden begonnen met Universele Redacteur voor Aanpassings Forms**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Stijl uw vormen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**voeg reCAPTCHA veiligheid**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) toe |
+| [**creeer uw eerste vorm**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Gebruik de regelredacteur**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**publiceer vormen**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**Begrijp het gebruikersinterface**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**creeer douanecomponenten**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms naar Marketo Connector

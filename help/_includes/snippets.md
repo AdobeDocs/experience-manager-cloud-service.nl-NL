@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -252,3 +252,25 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 >
 >* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor visueel het uitgeven van hoofdloze inhoud.
 >* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
+
+## Universele editor{#ue-see-also}
+
+* [Uw eerste formulier maken met Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Dynamisch gedrag toevoegen aan Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Handelingen voor het verzenden van formulieren configureren en aanpassen](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Forms publiceren en implementeren](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Mooie Forms: handleiding voor stijlen en thema&#39;s](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Aangepaste formuliercomponenten maken](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## Zie ook {#see-more-eds-forms}
+
+* [Aan de slag met Edge Delivery Services voor AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
+* [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
+* [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
+* [Formulierverzendservice gebruiken](/help/forms/forms-submission-service.md)

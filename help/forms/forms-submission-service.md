@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # Forms-verzendservice met Edge Delivery Services Forms
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
 
 Met de Forms-verzendservice kunt u gegevens uit de formulierverzendingen opslaan in elk spreadsheet, zoals OneDrive, SharePoint of Google Sheets, zodat u eenvoudig toegang hebt tot formuliergegevens en deze kunt beheren binnen het spreadsheetplatform van uw voorkeur.
 
@@ -30,12 +33,12 @@ Een paar voordelen van het gebruik van de Forms-verzendservice met spreadsheets 
 
 Hieronder staan de voorwaarden voor het gebruik van de Forms-verzendservice:
 
-* Zorg ervoor dat het meest recente adaptieve formulierblok is opgenomen in uw AEM project.
+* Zorg ervoor dat uw AEM-project beschikt over het nieuwste adaptieve formulierblok.
 * Zorg ervoor dat uw Git-opslagplaats aan de lijst van gewenste personen wordt toegevoegd om de Forms-verzendservice te gebruiken. Gelieve te [ mailto:aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met uw Naam van de Organisatie GitHub en Naam van de Bewaarplaats om hen te hebben toegevoegd aan de lijst van gewenste personen voor het gebruiken van de dienst van de Verzending van Forms.
 
 ## Forms-verzendservice configureren
 
-Maak een nieuw AEM project dat is geconfigureerd met het Adaptive Forms Block. Verwijs naar het [ Begonnen Worden - het artikel van het Leerprogramma van de Ontwikkelaar ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) om te leren hoe te om een nieuw AEM project tot stand te brengen. Werk het `fstab.yaml` dossier in uw project bij. Vervang de bestaande verwijzing door het pad naar de map die u met de `forms@adobe.com` hebt gedeeld.
+Maak een nieuw AEM-project dat is geconfigureerd met het Adaptive Forms Block. Verwijs naar het [ Begonnen Worden - het artikel van het Leerprogramma van de Ontwikkelaar ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) om te leren hoe te om een nieuw project van AEM tot stand te brengen. Werk het `fstab.yaml` dossier in uw project bij. Vervang de bestaande verwijzing door het pad naar de map die u met de `forms@adobe.com` hebt gedeeld.
 
 U kunt [ de Dienst van de Verzending van Forms manueel vormen ](#configuring-the-forms-submission-service-manually) of [ vormen de Dienst van de Verzending van Forms gebruikend API ](#configuring-the-forms-submission-service-using-api).
 
@@ -59,7 +62,7 @@ Nadat u het formulier hebt gemaakt en een voorbeeld hebt bekeken, schakelt u het
 
 >[!WARNING]
 >
-> Als het `incoming` -werkblad niet bestaat, verzendt AEM geen gegevens naar dit werkboek.
+> Als het `incoming` sheet niet bestaat, zou AEM geen gegevens naar dit werkboek verzenden.
 
 #### 3. Deel het werkblad en genereer een koppeling.
 
@@ -96,13 +99,13 @@ U kunt a **POST** verzoek aan de vorm ook verzenden om het `incoming` blad met g
 
 >[!NOTE]
 >
-> * Als het `incoming` -werkblad niet bestaat, verzendt AEM geen gegevens naar dit werkboek.
+> * Als het `incoming` sheet niet bestaat, zou AEM geen gegevens naar dit werkboek verzenden.
 > * Deel het `incoming` -werkblad met de Adobe Experience Manager `forms@adobe.com` en geef de bewerkingstoegang.
 > * Bekijk een voorvertoning van het `incoming` -werkblad en publiceer het in het zijpaneel.
 
-Om te begrijpen hoe te om het verzoek van de POST voor vestiging uw blad te formatteren, verwijs naar de [ API documentatie ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). U kunt het onderstaande voorbeeld bekijken:
+Om te begrijpen hoe te om het POST- verzoek voor vestiging uw blad te formatteren, verwijs naar de [ API documentatie ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). U kunt het onderstaande voorbeeld bekijken:
 
-U kunt gereedschappen zoals curl of Postman gebruiken om dit verzoek voor POSTEN uit te voeren, zoals hieronder wordt getoond.
+U kunt gereedschappen zoals curl of Postman gebruiken om dit POST-verzoek uit te voeren, zoals hieronder wordt getoond.
 
 * **Gebruikend Postman**:
 
@@ -172,7 +175,7 @@ Voer bijvoorbeeld de onderstaande opdracht uit in terminal- of opdrachtprompt na
 
      &quot;json 
     
-     krull -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/ {id}&quot;&quot;
+     krullen - X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/ {id}&quot;&quot;
      - kopbal &quot;Content-Type: application/json&quot; ^
      - kopbal &quot;x-adobe-routing: tier=live, bucket=main—[site/gegevensopslagplaats]&quot;&quot;
      - gegevens &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;202 5-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;bedrag\&quot;: \&quot;1000 000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
@@ -181,7 +184,7 @@ Voer bijvoorbeeld de onderstaande opdracht uit in terminal- of opdrachtprompt na
 
 >[!ENDTABS]
 
-Met het bovenstaande verzoek om POST wordt het `incoming` -blad bijgewerkt met het volgende antwoord:
+Met de bovenstaande POST-aanvraag wordt het `incoming` -blad bijgewerkt met het volgende antwoord:
 
 ```json
     < HTTP/1.1 201 Created

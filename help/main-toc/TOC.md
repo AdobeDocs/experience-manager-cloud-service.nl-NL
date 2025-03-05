@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6220'
 ht-degree: 2%
 
 ---
@@ -1032,9 +1032,22 @@ ht-degree: 2%
       + [Overzicht](/help/edge/docs/forms/overview.md)
       + [Hoe werkt Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Veelgestelde vragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + WYSIWYG Authoring {#universal-editor}
+         + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Authoring starten met Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Universal Editor Interface Guide: uitleg over gereedschappen, functies en navigatie](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Maak uw Forms mobiel gebruiksvriendelijk: responsief ontwerp in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Mooie Forms: stijlpagina en thematiegids voor de universele editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Dynamisch gedrag aan Forms toevoegen: volledige hulplijn aan regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Handleiding voor het verzenden van formulieren: handelingen voor het verzenden van formulieren configureren en aanpassen](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Forms publiceren en implementeren: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [ bouwt de Componenten van de Vorm van de Douane: De Gids van de ontwikkelaar aan Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Op documenten gebaseerd ontwerpen {#getting-started-edge-delivery-services-forms}
          + [Uw eerste formulier maken: snel aan de slag met Google-werkbladen en Excel](/help/edge/docs/forms/tutorial.md)
          + [Forms maken met Google Sheets of Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
+         + [Verschillende componenten van adaptief formulierblok](/help/edge/docs/forms/form-components.md)
          + [Sluit uw formulier aan op Google-bladen: Instellingenhandleiding voor gegevensverzameling](/help/edge/docs/forms/submit-forms.md)
          + [Uw formulier live maken: handleiding voor publiceren en gegevensverzameling](/help/edge/docs/forms/publish-forms.md)
          + [Validatie formulierveld: foutcontroles toevoegen aan uw Forms](/help/edge/docs/forms/validate-forms.md)
@@ -1049,21 +1062,7 @@ ht-degree: 2%
          + [Uw formulier globaal maken: handleiding voor formulieromzetting](/help/edge/docs/forms/translate-forms.md)
          + [Bescherm uw Forms: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/recaptacha-forms.md)
          + [Aangepaste formuliercomponenten maken: ontwikkelaarsgids](/help/edge/docs/forms/custom-components-forms.md)
-         + [Prestaties van monitorformulieren: Real Use Monitoring Guide](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + WYSIWYG Authoring {#universal-editor}
-         + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Authoring starten met Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Universal Editor Interface Guide: uitleg over gereedschappen, functies en navigatie](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Maak uw Forms mobiel gebruiksvriendelijk: responsief ontwerp in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Mooie Forms: stijlpagina en thematiegids voor de universele editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Dynamisch gedrag aan Forms toevoegen: volledige hulplijn aan regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Handleiding voor het verzenden van formulieren: handelingen voor het verzenden van formulieren configureren en aanpassen](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Forms publiceren en implementeren: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [ bouwt de Componenten van de Vorm van de Douane: De Gids van de ontwikkelaar aan Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + Verwijzingen {#forms-references}
-         + [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
+         + [ Prestaties van de Vorm van de Monitor: Echte Gidsen van de Controle van het Gebruik ](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery-bronnen {#resources}
       + Sidekick {#sidekick}
          + [Sidekick gebruiken](/help/edge/docs/sidekick.md)

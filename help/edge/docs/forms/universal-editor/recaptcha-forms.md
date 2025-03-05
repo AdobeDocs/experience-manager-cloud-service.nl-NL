@@ -1,231 +1,205 @@
 ---
-title: reCAPTCHA gebruiken met Edge Delivery Services voor AEM Forms as a Cloud Service
-description: Google reCAPTCHA gebruiken in een formulier voor Edge Delivery Services for AEM Forms
+title: Bescherm uw Forms met reCAPTCHA - een visuele gids
+description: Leer hoe u eenvoudig Google reCAPTCHA aan uw Edge Delivery Services-formulieren kunt toevoegen om spam en beide verzendingen te voorkomen
 feature: Edge Delivery Services
-keywords: reCAPTCHA in formulieren, met reCAPTCHA in Universal Editor, reCAPTCHA toevoegen in formulieren
-role: Admin, Architect, Developer
+keywords: reCAPTCHA in formulieren, met reCAPTCHA in de Universal Editor, voeg reCAPTCHA toe in formulieren, formulierbeveiliging, spambeveiliging
+role: Developer
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
 
 
-# reCAPTCHA gebruiken in WYSIWYG Authoring
+# Bescherm uw Forms tegen spam met Google reCAPTCHA
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam.</span>
 
 
-CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een populair hulpmiddel om websites te beschermen tegen frauduleuze activiteiten, spam en misbruik.
 
-Neem bijvoorbeeld een formulier dat de belasting berekent op basis van aanvullende aftrekkingen en het belastingtarief. In dergelijke gevallen bestaat het risico dat kwaadwillende gebruikers het formulier exploiteren voor doeleinden als het verzenden van phishinge-mails of het overlopen van het formulier met irrelevante of schadelijke inhoud met behulp van spambots. Het integreren CAPTCHA biedt extra veiligheid door te verifiëren dat de bijdragen van echte gebruikers zijn, effectief minimaliserend spamingingingangen.
+## Waarom gebruikt u reCAPTCHA in uw formulieren?
 
-![ Google recaptcha ](/help/edge/docs/forms/universal-editor/assets/google-recaptcha.png)
+| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) Ervaring van 0} Gebruiker![ |
+|:-------------:|:-------------:|:-------------:|
+| **Verbeterde Veiligheid** | **Bot &amp; Preventie Spam** | **Naadloze Ervaring van de Gebruiker** |
+| Bescherm uw formulieren tegen frauduleuze activiteiten en kwaadaardige aanvallen | Stop automatische bots om uw formulieren te overstromen met irrelevante of schadelijke inhoud | De onzichtbare reCAPTCHA werkt achter de schermen zonder legitieme gebruikers te verstoren |
 
-In Edge Delivery Services Forms, staat het Blok van de Vorm u toe [ om Google reCAPTCHA met vormen ](#connect-forms-with-recaptcha-service-by-google) te verbinden gebruikend **Captcha (Onzichtbaar)** component om tussen mensen en bots te onderscheiden. Met deze functionaliteit kunnen auteurs hun formulieren beschermen tegen spam en misbruik.
+Een formulier voor belastingberekening met gevoelige financiële informatie moet bijvoorbeeld worden beschermd tegen misbruik. reCAPTCHA controleert of de inzendingen afkomstig zijn van echte gebruikers, niet van geautomatiseerde systemen.
 
-## Forms verbinden met de reCAPTCHA-service van Google
+## Kies uw reCAPTCHA-oplossing
 
-U kunt Edge Delivery Services Forms ontwerpen om de reCAPTCHA-service van Google te implementeren. Afhankelijk van uw behoeften, kunt u één van de volgende reCAPTCHA diensten voor uw Edge Delivery Services Forms vormen:
+Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties:
 
-* [reCAPTCHA Enterprise](#configure-recaptcha-enterprise)
-* [reCAPTCHA](#configure-recaptcha)
+| ![ reCAPTCHA Onderneming ](/help/edge/docs/forms/universal-editor/assets/enterprise.svg) | ![ reCAPTCHA Standaard ](/help/edge/docs/forms/universal-editor/assets/standard.svg) |
+|:-------------:|:-------------:|
+| [**reCAPTCHA Onderneming**](#set-up-recaptcha-enterprise) | [**reCAPTCHA Standaard**](#set-up-recaptcha-standard) |
+| Prestatiegeld, fraude-detectie op bedrijfsniveau met extra functies en aanpassingen | Gratis service met op score gebaseerde detectie die onzichtbaar op de achtergrond werkt |
+| Meest geschikt voor: grote organisaties met complexe beveiligingsbehoeften | Meest geschikt voor: kleine tot middelgrote projecten met elementaire beschermingsbehoeften |
 
->[!NOTE]
+Beide opties gebruiken op score gebaseerde detectie (0,0 tot 1,0) om interactie tussen mens en bot te identificeren zonder de gebruikerservaring te verstoren.
+
+## reCAPTCHA Enterprise instellen
+
+### Stap 1: Vraag uw Google Cloud-referenties aan
+
+Voordat u reCAPTCHA Enterprise configureert, hebt u het volgende nodig:
+
+- A [ het project van de Wolk van Google ](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin) met uw [ identiteitskaart van het Project ](https://support.google.com/googleapi/answer/7014113)
+- [ reCAPTCHA Onderneming API toegelaten ](https://cloud.google.com/recaptcha/docs/prepare-environment#enable-api) voor uw project
+- Een [ API sleutel ](https://console.cloud.google.com/apis/credentials) voor authentificatie
+- A [ plaats sleutel ](https://console.cloud.google.com/security/recaptcha) voor uw domein
+
+### Stap 2: Een container voor cloudconfiguratie maken
+
+![ de geleidelijke opstelling van de wolkenconfiguratie ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+
+1. Aanmelden bij de instantie van AEM-auteur
+2. Navigeer aan **Hulpmiddelen** > **Algemeen** > **Browser van de Configuratie**
+3. Vind uw vorm en selecteer **Eigenschappen**
+4. Laat **de Configuraties van de Wolk** in de dialoog toe
+5. Uw configuratie opslaan en publiceren
+
+### Stap 3: Configure reCAPTCHA Enterprise Service
+
+![ reCAPTCHA het configuratiescherm van de Onderneming ](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+
+1. Ga naar **Hulpmiddelen** > **de Diensten van de Wolk** > **reCAPTCHA**
+2. Navigeer aan uw vorm en klik **creëren**
+3. In het dialoogvenster:
+   - Selecteer **versie van de Onderneming ReCAPTCHA**
+   - Voer een titel en naam in
+   - Voeg uw project-id, site-sleutel en API-sleutel toe
+   - Selecteer **Score-Gebaseerde plaats sleutel** als Zeer belangrijk type
+   - Een drempelscore (0-1) instellen om mensen te onderscheiden van bots
+4. Klik **creëren** en publiceer uw configuratie
+
+## RECAPTCHA-standaard instellen
+
+### Stap 1: Haal uw API-toetsen op
+
+Alvorens te beginnen, [ verkrijg een reCAPTCHA API zeer belangrijk paar ](https://www.google.com/recaptcha/admin) (de sleutel van de Plaats en de Geheime sleutel) van de Console van Google reCAPTCHA.
+
+>[!IMPORTANT]
 >
-> Voor meer informatie over hoe reCAPTCHA werkt, zie [ Google reCAPTCHA ](https://developers.google.com/recaptcha/).
+>Edge Delivery Services Forms steunt slechts **versie 0} reCAPTCHA op basis van de Score.**
 
-### reCAPTCHA Enterprise configureren
+### Stap 2: Een container voor cloudconfiguratie maken
 
-reCAPTCHA Enterprise is een eersteklas service voor fraudedetectie en -preventie op bedrijfsniveau die door Google wordt aangeboden. Het bouwt op de stichting van reCAPTCHA (op score-gebaseerd) maar verstrekt extra eigenschappen, scalability, en aanpassing om aan de complexe behoeften van ondernemingen te voldoen.
+Volg dezelfde stappen als in de versie van de Onderneming om een container van de wolkenconfiguratie tot stand te brengen en te publiceren.
 
-#### Voordat u begint
+### Stap 3: Vorm reCAPTCHA StandaardDienst
 
-Controleer of u de volgende stappen hebt uitgevoerd voordat u Google reCAPTCHA Enterprise for Edge Delivery Services Forms configureert:
+![ reCAPTCHA Standaard configuratiescherm ](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 
-1. Creeer of selecteer a [ het project van de Wolk van Google ](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin) en wint [ identiteitskaart van het Project ](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) terug.
+1. Ga naar **Hulpmiddelen** > **de Diensten van de Wolk** > **reCAPTCHA**
+2. Navigeer aan uw vorm en klik **creëren**
+3. In het dialoogvenster:
+   - Selecteer **ReCAPTCHA v2** versie
+   - Voer een titel en naam in
+   - Sitecode en geheime sleutel toevoegen
+4. Klik **creëren** en publiceer uw configuratie
 
-1. [ laat de reCAPTCHA Onderneming API ](https://cloud.google.com/recaptcha/docs/prepare-environment#enable-api) voor uw project van de Wolk van Google toe en [ creeer een API sleutel ](https://console.cloud.google.com/apis/credentials).
+## reCAPTCHA toevoegen aan uw formulier
 
-1. Creeer a [ plaats sleutel voor uw project van de Wolk van Google ](https://console.cloud.google.com/security/recaptcha) en kopieer de plaatstoets.
+Nu u reCAPTCHA hebt geconfigureerd, is het tijd om het aan uw formulier toe te voegen:
 
-Als u deze gegevens hebt, kunt u doorgaan met het configureren van reCAPTCHA Enterprise voor uw formulieren:
+![ Toevoegend de reCAPTCHA component aan een vorm ](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 
-1. [Cloud Configuration Container maken](#1-create-cloud-configuration-container)
-1. [De cloudserviceconfiguratie voor reCAPTCHA Enterprise maken](#2-create-the-cloud-service-configuration-for-recaptcha-enterprise)
+1. Uw formulier openen in Universal Editor
+2. Navigeren naar de sectie Adaptief formulier in de Inhoudsstructuur
+3. Klik **toevoegen** pictogram en selecteren **Captcha (Onzichtbaar)** van de Adaptieve lijst van Componenten van de Vorm
+   - *Alternatief, sleep en laat vallen de component in uw vorm*
+4. Klik **publiceren** om uw vorm met reCAPTCHA bescherming bij te werken
 
-#### 1. Cloud Configuration Container maken
+Uw formulier is nu beveiligd! Weergeven op:
+`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name>`
 
-Voer de volgende stappen uit om de container van de cloudconfiguratie te maken:
+![ Vorm met toegelaten reCAPTCHA bescherming ](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
 
-1. Meld u aan bij de auteur.
-1. Ga naar **[!UICONTROL Tools]** ![ hulpmiddelen-1 ](/help/forms/assets/tools-1.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
+## Uw reCAPTCHA-integratie valideren
 
-   ![ de configuratiecontainer van de Wolk ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+Nadat u reCAPTCHA aan het formulier hebt toegevoegd, is het van essentieel belang dat u controleert of het formulier correct werkt. Hieronder wordt beschreven hoe u uw implementatie kunt valideren:
 
-1. Navigeer in het **[!UICONTROL Configuration Browser]** naar het formulier en selecteer **[!UICONTROL Properties]** .
+### Visuele controle
 
-   ![ de configuratieeigenschappen van de Wolk ](/help/edge/docs/forms/universal-editor/assets/general-configuration-properties.png)
+Hoewel reCAPTCHA v2 (Score-based) onzichtbaar werkt, kunt u de aanwezigheid ervan bevestigen door:
 
-1. Schakel **[!UICONTROL Cloud Configurations]** in het dialoogvenster **[!UICONTROL Configuration Properties]** in.
+1. **inspecteer de paginabron**: Klik op uw vormpagina met de rechtermuisknop aan en selecteer &quot;de Pagina van de Mening Source&quot;
+   - Zoek naar de reCAPTCHA manuscriptopname met uw plaatstoets
+   - Voorbeeld: `<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>`
 
-1. Selecteer **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+2. **de Verzoeken van het Netwerk van de Controle**: Gebruikend browser ontwikkelaarshulpmiddelen (F12)
+   - Uw formulier verzenden en netwerkaanvragen indienen bij `google.com/recaptcha`
+   - Deze aanvragen geven aan dat reCAPTCHA actief is op uw formulier
 
-   ![ laat de configuratieeigenschappen van de Wolk ](/help/edge/docs/forms/universal-editor/assets/enable-cloud-configurations.png) toe
-`
-Publiceer de container voor de cloudconfiguratie nadat u deze hebt gemaakt.
+### Functionele tests
 
-   ![ publiceer de Configuratie van de Wolk ](/help/edge/docs/forms/universal-editor/assets/publish-cloud-configuration.png)
+Om te controleren of reCAPTCHA uw formulier daadwerkelijk beveiligt:
 
-#### 2. Maak de cloudserviceconfiguratie voor reCAPTCHA Enterprise
+1. **Normale Test van de Verzending**:
+   - Het formulier invullen met geldige gegevens
+   - Het formulier verzenden in een normale menselijke ruimte
+   - Controleren of het formulier is verzonden
 
-Voer de volgende stappen uit om de cloudserviceconfiguratie voor reCAPTCHA Enterprise te maken:
+2. **Bot-als de Test van het Gedrag**:
+   - Open uw formulier in een incognito/Private Browsing-venster
+   - Het formulier bijzonder snel invullen (automatisch vergelijkbaar gedrag)
+   - Meerdere keren snel na elkaar verzenden
+   - Als reCAPTCHA werkt, kunnen deze inzendingen worden geblokkeerd of gemarkeerd
 
-1. Meld u aan bij de auteur.
-1. Navigeer aan **[!UICONTROL Tools]** ![ hulpmiddelen-1 ](/help/forms/assets/tools-1.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL reCAPTCHA]**.
+3. **de Verslagen van de Verzending van de Vorm van de Controle**:
+   - Controleer uw formulierverzendgegevens
+   - Elke verzending moet een reCAPTCHA-score bevatten
+   - Scores dichter bij 1,0 geven waarschijnlijke menselijke gebruikers aan
+   - Scores dichter bij 0,0 geven potentiële botactiviteit aan
 
-   ![ Configuratie van de Wolk Recaptcha ](/help/edge/docs/forms/universal-editor/assets/recaptcha-cloud-configuration.png)
+### Google reCAPTCHA-beheerconsole gebruiken
 
-   De **dialoog van Configuraties** opent.
+Voor Enterprise-gebruikers biedt de Google Cloud Console gedetailleerde analyses:
 
-1. Navigeer naar het formulier en selecteer **[!UICONTROL Create]** .
+1. Ga naar de [ Console van de Wolk van Google ](https://console.cloud.google.com/)
+2. Navigeer aan **Veiligheid** > **reCAPTCHA**
+3. Sitecode selecteren
+4. Evaluatie van de evaluatiekaarten en statistieken
+5. Zoeken naar:
+   - Verkeerspatronen
+   - Score-distributies
+   - Mogelijk frauduleuze activiteiten
 
-   ![ configuratie Captcha ](/help/edge/docs/forms/universal-editor/assets/create-captcha-confguration.png)
+Voor Standaard reCAPTCHA gebruikers, zijn de basisstatistieken beschikbaar in [ reCAPTCHA Admin Console ](https://www.google.com/recaptcha/admin/).
 
-   Het dialoogvenster **[!UICONTROL Create reCAPTCHA Configuration]** wordt geopend.
+### De implementatie aanpassen
 
-   ![ reCaptcha Onderneming ](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+Gebaseerd op uw validatieresultaten:
 
-1. Selecteer versie als [!DNL ReCAPTCHA Enterprise] en geef Titel, Naam, Project-id, Sitecode en API-sleutel op.
+- Als legitieme gebruikers worden geblokkeerd, kunt u de drempelscore verlagen
+- Als u nog spam ontvangt, denk na verhogend uw drempelscore
+- Controleer voor blijvende problemen uw reCAPTCHA-configuratie en controleer of alle toetsen correct zijn ingevoerd
 
-   >[!NOTE]
-   >
-   > U kunt identiteitskaart van het Project, de Sleutel van de Plaats, en de sleutel van API van [ verkrijgen alvorens u ](#before-you-start) sectie voor reCAPTCHA Onderneming begint.
+Vergeet niet dat reCAPTCHA automatisch leren gebruikt om in de loop der tijd te verbeteren. Hierdoor kan de doeltreffendheid van het programma toenemen wanneer het de verkeerspatronen van uw site leert.
 
-1. Selecteer **[!UICONTROL Key type]** als **Score-Gebaseerde plaats sleutel**.
-1. Specificeer a [ drempelscore in waaier 0 tot 1 ](https://cloud.google.com/recaptcha/docs/interpret-assessment-website#interpret_scores). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
-1. Selecteer **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
+## Problemen oplossen en veelgestelde vragen
 
-   Na het maken van de reCAPTCHA-cloudconfiguratie, publiceert u deze.
+| ![ Vraag ](/help/edge/docs/forms/universal-editor/assets/question.svg) | ![ Antwoord ](/help/edge/docs/forms/universal-editor/assets/answer.svg) |
+|:-------------:|:-------------:|
+| **wat als ik geen configuratie reCAPTCHA creeer?** | Het systeem zal naar een configuratie in de Globale Container zoeken. Als er niets bestaat, wordt er een fout weergegeven. |
+| **wat als ik veelvoudige configuraties creeer?** | Het systeem gebruikt automatisch de eerste gemaakte configuratie. |
+| **waarom zijn mijn veranderingen niet zichtbaar op gepubliceerde URL?** | Zorg ervoor dat u het formulier opnieuw publiceert nadat u wijzigingen hebt aangebracht. |
+| **welke reCAPTCHA de diensten worden gesteund?** | Edge Delivery Services Forms ondersteunt alleen op score gebaseerde reCAPTCHA-services. |
 
-   ![ publiceer configuratie Recaptcha ](/help/edge/docs/forms/universal-editor/assets/publisg-recaptcha-configuration.png)
+## Volgende stappen
 
-U kunt nu een formulier maken of bewerken en de reCAPTCHA-component toevoegen met behulp van de op WYSIWYG gebaseerde ontwerpfunctie. Voor gedetailleerde instructies bij het integreren van Google reCAPTCHA in uw vorm, verwijs naar [ Gebruik reCAPTCHA in Uw Vorm ](#use-recaptcha-in-your-form).
+Nu u uw formulier hebt beveiligd met reCAPTCHA:
 
-## reCAPTCHA configureren
+- **bevestigt uw implementatie**: Volg de [ bevestigingsstappen ](#-validating-your-recaptcha-integration) om te verzekeren reCAPTCHA correct werkt
+- **prestaties van de Monitor**: controleer regelmatig uw Google reCAPTCHA dashboard voor verdachte activiteiten en scoreverdelingen
+- **Fijne montages**: Pas uw drempelscore aan die op uw veiligheidsbehoeften en gebruikerservaring wordt gebaseerd terugkoppelen
+- **Verblijf bijgewerkt**: Houd uw reCAPTCHA implementatie huidig met Google het recentste veiligheidsaanbevelingen
+- **wijs uw team** voor: Deel kennis over hoe reCAPTCHA werkt en hoe te om de analyses te interpreteren
+- **verzamel terugkoppelt**: De gebruikerservaring van de monitor om wettige gebruikers te verzekeren wordt niet geblokkeerd
 
-reCAPTCHA is een gratis service die door Google wordt aangeboden en die websites helpt om misbruik, zoals bots en spam, te detecteren en te voorkomen. De klasse ondersteunt een op score gebaseerde versie die op de achtergrond werkt en wijst een risicoscore (variërend van 0,0 tot 1,0) toe aan elke gebruikersinteractie. Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
+Houd er rekening mee dat effectieve formulierbescherming een doorlopend proces is dat regelmatig moet worden gecontroleerd en aangepast.
 
-#### Voordat u begint
-
-Alvorens Google reCAPTCHA voor Edge Delivery Services Forms te vormen, wint [ reCAPTCHA API zeer belangrijk paar van de Console van Google terug ](https://www.google.com/recaptcha/admin). Het paar omvat een sleutel van de Plaats en een Geheime sleutel.
-
->[!NOTE]
->
-> * Edge Delivery Services Forms steunt slechts **versie 0} reCAPTCHA op basis van de Score.**
-
-Als u het API-sleutelpaar hebt, kunt u doorgaan met het configureren van reCAPTCHA voor uw formulieren:
-
-1. [Cloud Configuration Container maken](#1-create-cloud-configuration-container-1)
-1. [De configuratie van de cloudservice voor reCAPTCHA maken](#2-create-the-cloud-service-configuration-for-recaptcha)
-
-#### 1. Cloud Configuration Container maken
-
-Voer de volgende stappen uit om de container van de cloudconfiguratie te maken:
-
-1. Meld u aan bij de auteur.
-1. Ga naar **[!UICONTROL Tools]** ![ hulpmiddelen-1 ](/help/forms/assets/tools-1.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
-
-   ![ de configuratiecontainer van de Wolk ](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
-
-1. Navigeer in het **[!UICONTROL Configuration Browser]** naar het formulier en selecteer **[!UICONTROL Properties]** .
-
-   ![ de configuratieeigenschappen van de Wolk ](/help/edge/docs/forms/universal-editor/assets/general-configuration-properties.png)
-
-1. Schakel **[!UICONTROL Cloud Configurations]** in het dialoogvenster **[!UICONTROL Configuration Properties]** in.
-
-1. Selecteer **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
-
-   ![ laat de configuratieeigenschappen van de Wolk ](/help/edge/docs/forms/universal-editor/assets/enable-cloud-configurations.png) toe
-
-   Publiceer de container voor de cloudconfiguratie nadat u deze hebt gemaakt.
-
-   ![ publiceer de Configuratie van de Wolk ](/help/edge/docs/forms/universal-editor/assets/publish-cloud-configuration.png)
-
-#### 2. Maak de cloudserviceconfiguratie voor reCAPTCHA
-
-Voer de volgende stappen uit om de cloudserviceconfiguratie voor reCAPTCHA te maken:
-
-1. Meld u aan bij de auteur.
-1. Navigeer aan **[!UICONTROL Tools]** ![ hulpmiddelen-1 ](/help/forms/assets/tools-1.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL reCAPTCHA]**.
-
-   ![ Configuratie van de Wolk Recaptcha ](/help/edge/docs/forms/universal-editor/assets/recaptcha-cloud-configuration.png)
-
-   De **dialoog van Configuraties** opent.
-
-1. Navigeer naar het formulier en selecteer **[!UICONTROL Create]** .
-
-   ![ configuratie Captcha ](/help/edge/docs/forms/universal-editor/assets/create-captcha-confguration.png)
-
-   Het dialoogvenster **[!UICONTROL Create reCAPTCHA Configuration]** wordt geopend.
-
-   ![ reCaptcha Onderneming ](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
-
-1. Selecteer versie als [!DNL ReCAPTCHA v2] en geef Titel en Naam op.
-1. Geef de sitecode en de geheime sleutel op.
-
-   >[!NOTE]
-   >
-   > U kunt de sleutel van de Plaats en de Geheime sleutel van [ verkrijgen alvorens u ](#before-you-begin) sectie voor reCAPTCHA begint.
-
-1. Selecteer **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
-
-   Na het maken van de reCAPTCHA-cloudconfiguratie, publiceert u deze.
-
-   ![ publiceer configuratie Recaptcha ](/help/edge/docs/forms/universal-editor/assets/publisg-recaptcha-configuration.png)
-
-U kunt nu een formulier maken en bewerken en de reCAPTCHA-component toevoegen met behulp van de op WYSIWYG gebaseerde ontwerpfunctie. Voor gedetailleerde instructies bij het integreren van Google reCAPTCHA in uw vorm, verwijs naar [ Gebruik reCAPTCHA in Uw Vorm ](#use-recaptcha-in-your-form).
-
-### reCAPTCHA gebruiken in uw formulier
-
-Voer de volgende stappen uit om een formulier te ontwerpen en de component reCAPTCHA (Onzichtbaar) toe te voegen:
-
-1. Open een formulier in de Universal Editor om het te bewerken.
-1. Navigeer naar de toegevoegde sectie Adaptief formulier in de Inhoudsstructuur.
-1. Klik het **[!UICONTROL Add]** pictogram en voeg de **[!UICONTROL Captcha (Invisble)]** component van de **Aangepaste lijst van de Componenten van de Vorm** toe.
-
-   ![ voeg reCaptcha component ](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png) toe
-
-   U kunt ook de vereiste Adaptieve Forms-component slepen en neerzetten, aangezien de Universal Editor een intuïtieve functie voor slepen en neerzetten biedt.
-
-1. Klik **publiceren** om de vorm na het toevoegen van de **[!UICONTROL Captcha (Invisble)]** component opnieuw te publiceren.
-
-   ![ herpubliceer vorm ](/help/edge/docs/forms/universal-editor/assets/publish-form.png)
-
-U kunt het formulier nu bekijken met de reCAPTCHA-service op de volgende URL:
-`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name`.
-
-![ Vorm met reCAPTCHA ](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
-
-## Veelgestelde vragen
-
-* **wat gebeurt als een gebruiker geen reCAPTCHA wolkenconfiguratie creeert?**
-
-  **A**: Als een gebruiker geen reCAPTCHA wolkenconfiguratie creeert, zoekt de server van AEM naar de reCAPTCHA wolkenconfiguratie in de Globale Container van de Configuratie. Als er geen configuratie in de globale configuratiecontainer bestaat, genereert de AEM-server een fout.
-
-* **wat gebeurt als een gebruiker veelvoudige reCAPTCHA wolkenconfiguraties creeert?**
-  **A**: Als een gebruiker meer dan één reCAPTCHA wolkenconfiguraties creeert, selecteert het systeem automatisch de eerste gecreeerde reCAPTCHA configuratie.
-
-* **waarom zijn de wijzigingen of de veranderingen niet zichtbaar bij gepubliceerde URL?**
-Als wijzigingen of wijzigingen niet zichtbaar zijn op de gepubliceerde URL, controleert u of het formulier opnieuw wordt gepubliceerd om de updates toe te passen.
-
-* **welke reCAPTCHA dienst steunt Edge Delivery Services Forms?**
-  **A**: Edge Delivery Services Forms steunt slechts op score-gebaseerde reCAPTCHA dienst die door Google wordt verleend.
-
-
-## Zie ook
-
-{{universal-editor-see-also}}
 
