@@ -3,9 +3,9 @@ title: Aangepaste zoekfilters
 description: Meer informatie over het aanpassen van het formulier met zoekfilters
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 8d3059f9cb92dc6c65eec33dcc69eed76b61546c
+source-git-commit: 0484b8ac158f0590d5ada7536cf8b547c71ab686
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -376,7 +376,7 @@ Elk filterelement is gekoppeld aan een set eigenschappen. De volgende eigenschap
         <ul>
         <li>Klik <b> toevoegen </b> om een nieuwe waarde toe te voegen. 
         <li>Klik op <span> ✎ </span> om het label te bewerken. 
-        <li>Klik op <img src="assets/do-not-localize/delete-icon.png"> om de waarde van de optie te verwijderen. 
+        <li>Klik <span>? </span> om de optiewaarde te schrappen. 
         <li>Klik <b> uitgeven </b> om de uit te geven opties te wijzigen. 
         <li>U kunt de volgorde van opties ook wijzigen door ze ingedrukt te houden.
         </td>
