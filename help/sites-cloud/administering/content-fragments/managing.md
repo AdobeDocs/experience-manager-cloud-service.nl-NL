@@ -1,13 +1,13 @@
 ---
 title: Inhoudsfragmenten beheren
-description: Leer hoe te om uw AEM Contentfragmenten van de console en de redacteur te beheren, om inhoud als basis van uw koploze inhoud, of voor paginaontwerp te creëren.
+description: Leer hoe u AEM Content Fragments beheert vanaf de console en editor, om inhoud te maken als basis voor uw inhoud zonder kop of voor het ontwerpen van pagina's.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Het selecteren van **de Fragmenten van de Inhoud** opent de console in een nieuw
 Hier kunt u zien dat er drie hoofdgebieden zijn:
 
 * De bovenste werkbalk
-   * Biedt standaard AEM
+   * Biedt standaard AEM-functionaliteit
    * Ook uw IMS-organisatie tonen
    * Verstrekt diverse [ acties ](#actions-unselected)
 * Het linkerdeelvenster
@@ -149,7 +149,7 @@ Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toege
 
 * **[Open in nieuwe Redacteur](#editing-the-content-of-your-fragment)**
 * **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in originele redacteur)
-* **[Publish](#publishing-and-previewing-a-fragment)** (en **[unpublish](#unpublishing-a-fragment)**)
+* **[publiceer](#publishing-and-previewing-a-fragment)** (en **[unpublish](#unpublishing-a-fragment)**)
 * **[beheert Markeringen](#manage-tags)**
 * **[Exemplaar](/help/assets/manage-digital-assets.md)**
 * **[Beweging](/help/assets/manage-digital-assets.md)**
@@ -163,7 +163,7 @@ Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toege
 
 >[!NOTE]
 >
->Handelingen als Publish, Unpublish, Delete, Move, Rename en Copy activeren elk een asynchrone taak. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
+>Handelingen als Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen en Kopiëren activeren elk een asynchrone taak. De voortgang van die taak kan worden gecontroleerd via de gebruikersinterface van AEM Async Jobs.
 
 ### De informatie die over uw inhoudsfragmenten wordt verstrekt {#information-content-fragments}
 
@@ -183,7 +183,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Voorproef**
    * Alleen informatie:
       * **in synchronisatie**: Het Fragment van de inhoud is in synchronisatie op de **Auteur** en **Voorproef** diensten.
-      * **uit synchronisatie**: Het Fragment van de inhoud is uit-van-synchronisatie op de **Auteur** en **Voorproef** diensten. U moet **Publish** aan **Voorproef** ervoor zorgen dat de twee instanties aan zijn in-synchronisatie terugkeren.
+      * **uit synchronisatie**: Het Fragment van de inhoud is uit-van-synchronisatie op de **Auteur** en **Voorproef** diensten. U moet **publiceren** aan **Voorproef** om ervoor te zorgen dat de twee instanties aan zijn in-synchronisatie terugkeren.
       * leeg: Het fragment van de Inhoud bestaat niet op de **dienst van de Voorproef**.
 * **Gewijzigd**
    * Alleen informatie.
@@ -237,6 +237,7 @@ Een inhoudsfragment maken:
 
    * **Plaats** - auto-voltooide met de huidige plaats, maar u kunt een verschillende plaats selecteren indien nodig.
    * **Model van het Fragment van de Inhoud** - selecteer het model dat als basis van het fragment van de drop-down lijst moet worden gebruikt.
+   * **Auto markering** - wanneer u deze optie selecteert, worden alle markeringen die aan het Model van het Fragment van de Inhoud worden toegewezen geërft door, en aan, het nieuwe Fragment van de Inhoud toegevoegd.
    * **Titel**
    * **Naam** - auto-voltooid gebaseerd op de **Titel**, maar u kunt het uitgeven, indien nodig.
    * **Beschrijving**
@@ -304,13 +305,13 @@ U kunt, de eigenschappen (meta-gegevens) van een fragment bekijken en uitgeven g
 
 U kunt inhoudsfragmenten publiceren naar:
 
-* De **[Dienst van Publish](/help/headless/deployment/architecture.md)** - voor volledige, openbare toegang
+* de **[Publish Dienst](/help/headless/deployment/architecture.md)** - voor volledige, openbare toegang
 
 * De **[Dienst van de Voorproef](/help/headless/deployment/architecture.md)** - om de inhoud voorafgaand aan volledige beschikbaarheid voor te vertonen
 
   >[!CAUTION]
   >
-  >Het publiceren van de Fragmenten van de Inhoud aan de **Dienst van de Voorproef** is slechts beschikbaar bij de console van de Fragmenten van de Inhoud; het gebruiken van de **Publish** actie.
+  >Het publiceren van de Fragmenten van de Inhoud aan de **Dienst van de Voorproef** is slechts beschikbaar bij de console van de Fragmenten van de Inhoud; het gebruiken van **publiceer** actie.
 
   >[!NOTE]
   >
@@ -324,7 +325,7 @@ U kunt inhoudsfragmenten publiceren naar:
 
 ### Publiceren {#publishing}
 
-U kunt uw Fragmenten van de Inhoud publiceren gebruikend de **Publish** optie van één van beiden:
+U kunt uw Fragmenten van de Inhoud publiceren gebruikend **publiceer** optie van of:
 
 * de toolbar van de [ console van de Fragmenten van de Inhoud ](#actions-selected-content-fragment)
 
@@ -332,16 +333,16 @@ U kunt uw Fragmenten van de Inhoud publiceren gebruikend de **Publish** optie va
 
 * de toolbar van de [ redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Na het selecteren van de **Publish** actie:
+Na het selecteren van **publiceer** actie:
 
 1. Selecteer een van de volgende opties om het desbetreffende dialoogvenster te openen:
 
-   * **nu** - selecteer of de **dienst van Publish**, of de **dienst van de Voorproef**; na bevestiging, zal het fragment onmiddellijk worden gepubliceerd
+   * **nu** - selecteer of de **publiceer dienst**, of de **dienst van de Voorproef**; na bevestiging, zal het fragment onmiddellijk worden gepubliceerd
    * **Programma** - naast de vereiste dienst, kunt u de datum en de tijd ook selecteren wanneer het fragment zal worden gepubliceerd
 
 1. Geef alle gegevens op in het dialoogvenster. Bijvoorbeeld voor een gepland publicatieverzoek:
 
-   ![ de dialoog van Publish ](assets/cf-managing-publish-dialog.png)
+   ![ publiceer dialoog ](assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
