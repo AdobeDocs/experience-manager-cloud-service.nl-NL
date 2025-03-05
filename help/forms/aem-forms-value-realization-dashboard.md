@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # Het dashboard voor het realiseren van waarden
 
 ![ dashboard van de de realisatie van de waarde ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Deze functie is een bètafunctie die slechts voor enkele geselecteerde klanten is ingeschakeld. </span>
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com. <span>
+
 
 Welkom bij de one-stop shop voor meer inzicht in de waarde die uw formulieren bieden! Met dit dashboard beschikt u over waardevolle inzichten om uw formulieren te optimaliseren, workflows te stroomlijnen en uw doelen uiteindelijk sneller te bereiken.
 
-Dit artikel biedt een conceptueel overzicht van het Dashboard voor de realisatie van waarden en de voordelen ervan. Voor gedetailleerde gebruiksinstructies en metrieke interpretatie, zie [ het Interpreteren van de Inzichten van het Gebruik van de Vorm gebruikend het dashboard van de Rendement van de Waarde ](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+Dit artikel biedt een conceptueel overzicht van het Dashboard voor de realisatie van waarden en de voordelen ervan. Voor gedetailleerde gebruiksinstructies en metrieke interpretatie, zie [ het Interpreteren van de Inzichten van het Gebruik van de Vorm gebruikend het dashboard van de Rendement van de Waarde ](/help/forms/using-the-value-realization-dashboard.md).
 
 
-![ dashboard van de waardeverwezenlijking ](/help/forms/assets/forms-usage-insights.png)
+
 
 ## Wat staat er op het dashboard? {#content-of-dashboard}
 
 Dit dashboard is uw venster in de wereld van uw formuliergebruik. Hier is een uitsplitsing van de belangrijkste secties:
+
 
 ### Formulier- en documentactiviteiten in de loop van de tijd
 
@@ -44,8 +46,6 @@ Dit dashboard is uw venster in de wereld van uw formuliergebruik. Hier is een ui
 * **hergebruik van het Fragment van de Vorm**: Gage hoe vaak deze fragmenten over verschillende vormen worden gebruikt.
 
 
-
-
 ## Hoe komt dit u ten goede? {#benefits-to-you}
 
 Met dit dashboard kunt u gegevensgestuurde beslissingen nemen over uw formulieren. Hieronder wordt beschreven hoe:
@@ -53,6 +53,8 @@ Met dit dashboard kunt u gegevensgestuurde beslissingen nemen over uw formuliere
 * **identificeer Populaire Forms**: De hoge voorleggingspercentages wijzen op waardevolle vormen. Analyseer deze voor beste praktijken om in anderen te herhalen.
 * **optimaliseer de Creatie van de Vorm**: Verminder schepingstijden door knelpunten te identificeren. Bekijk vooraf gebouwde sjablonen of stroomlijnende workflows.
 * **hergebruik van het Fragment van de Verhoging**: Stimuleer samenwerking en ontdekkingsbaarheid van herbruikbare fragmenten. Goed georganiseerde fragmentbibliotheken kunnen de efficiëntie aanzienlijk verbeteren.
+
+  ![ dashboard van de waardeverwezenlijking ](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Inzichten omzetten in actie {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ Onthoud, dit dashboard is jouw bondgenoot! Door het effectief te gebruiken, kunt
 
 ## Zie ook
 
-* [Gebruiksinzichten interpreteren](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Het dashboard gebruiken om trends in Forms- en documentgebruik te analyseren](/help/forms/using-the-value-realization-dashboard.md)
