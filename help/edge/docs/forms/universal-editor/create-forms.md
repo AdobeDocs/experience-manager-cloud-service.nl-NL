@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d7e59c16e90e3632140eae08dc2c25b2dd1df5a7
+exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-
 # Zelfstandige formulieren van auteurs met de Universal Editor (WYSIWYG)
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
 Dit artikel begeleidt u door het ontwerpen van de zelfstandige formulieren met de Universal Editor door een op Edge Delivery Services gebaseerde sjabloon te selecteren in de wizard Formulier maken. U kunt de geschreven formulieren ook publiceren met Universal Editor naar AEM Edge Delivery Services.
 
@@ -163,5 +163,3 @@ Problemen met het laden van uw formulier? Hier volgen enkele veelvoorkomende pro
 ## Formulieren maken
 
 {{universal-editor-see-also}}
-
-

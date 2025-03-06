@@ -4,7 +4,7 @@ description: Publiceer uw Edge Delivery Services-formulieren snel en naadloos.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adaptief formulier publiceren naar Edge Delivery Services
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
 
 Wanneer het formulier gereed en gebruiksklaar is, kunt u het publiceren zodat het voor uw klanten toegankelijk is voor gegevensverzameling en -verzending. Als u het formulier publiceert, weet u zeker dat het formulier beschikbaar is op Edge Delivery, zodat gebruikers er probleemloos mee kunnen werken. Met dit proces kunnen klanten het formulier in real-time invullen en verzenden, zodat ze gegevens op efficiënte wijze kunnen vastleggen en de verwerking kunnen stroomlijnen.

@@ -4,7 +4,7 @@ description: Met de regeleditor in de Universal Editor kunt u dynamisch gedrag t
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inleiding tot de Redacteur van de Regel in de Authoring van WYSIWYG
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
 
 U kunt dynamisch formuliergedrag toevoegen met de Regeleditor, waarmee u regels kunt maken. Deze regels maken voorwaardelijke veldzichtbaarheid mogelijk, automatiseren berekeningen op basis van gebruikersinvoer en verbeteren de gebruikerservaring. Door het invullen van formulieren te stroomlijnen, zorgt de Rule Editor voor zowel nauwkeurigheid als efficiëntie.
