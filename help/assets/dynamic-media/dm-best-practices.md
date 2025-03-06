@@ -1,6 +1,6 @@
 ---
-title: Aanbevolen procedures voor Dynamic Media
-description: Meer informatie over de beste praktijken in Dynamic Media als het gaat om het werken met beelden en video en best practices voor Dynamic Media Viewers.
+title: Best practices voor dynamische media
+description: Leer meer over de beste praktijken in Dynamische Media wanneer het over het werken met beelden en video en beste praktijken voor Dynamische Kijkers van Media.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,14 +9,14 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4071'
 ht-degree: 0%
 
 ---
 
-# Aanbevolen procedures voor Dynamic Media{#about-dm-best-practices}
+# Best practices voor dynamische media{#about-dm-best-practices}
 
 <!--**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
 
@@ -37,44 +37,44 @@ Stage Business Problem Best Practice Recommendation: This section will outline s
 
 Organisaties worden geconfronteerd met een explosie van kanalen en apparaten om contact met gebruikers te maken. De reis van de klant omvat fysieke winkels, Web, mobiel, sociale media, e-mail, en handel. Om aan deze vraag te voldoen, biedt Dynamic Media op Adobe Experience Manager (AEM) een uitgebreide oplossing. Het optimaliseert levering van activa, behandelt verpersoonlijking, en verzekert verenigbare, prestaties, en merk-gerichte ervaringen over kanalen en apparaten.
 
-Enkele van de belangrijkste elementen van Dynamic Media zijn:
+Enkele belangrijkste elementen van Dynamische Media omvatten het volgende:
 
-* **Enige dossierbenadering:** met Dynamic Media, slaat u één primair brondossier op, en alle groottevariaties en visuele gevolgen worden dynamisch gecreeerd en geoptimaliseerd op het tijdstip van levering. Deze benadering bespaart opslagkosten en elimineert werkstroomcomplexiteit.
+* **Enige dossierbenadering:** met Dynamische Media, slaat u één primair brondossier op, en alle groottevariaties en visuele gevolgen worden dynamisch gecreeerd en geoptimaliseerd op het tijdstip van levering. Deze benadering bespaart opslagkosten en elimineert werkstroomcomplexiteit.
 * **werkelijk globaal:** Slimme Beeldvorming, die tijdens inhoudslevering wordt toegepast, vermindert beduidend beeldgrootte en paginagewicht zonder visuele kwaliteit te compromitteren. Deze is geoptimaliseerd voor netwerkbandbreedte en pixelverhoudingen van apparaten.
 * **AI aangedreven:** Slim Uitsnijden, een AI-gedreven eigenschap, automatiseert beeld en videopunt-van-belang het bebouwen. Het elimineert handeninspanning en schalen efficiënt voor bedrijfsgebruik.
-* **Gemakkelijke video:** upload primaire bronvideo&#39;s in Dynamic Media en stroom hen adaptief over veelvoudige talen met beschrijvende audio.
+* **Gemakkelijke video:** upload primaire bronvideo&#39;s in Dynamische Media en stroom hen adaptief over veelvoudige talen met beschrijvende audio.
 * **de bibliotheek van de kijker van de Ervaring:** pas en merk ervaringskijkers voor beelden en video&#39;s aan. Deze viewers integreren naadloos in uw digitale ervaringen.
-* **Ontkomende formaatsteun:** Dynamic Media laat de levering van 3D en panoramische ervaringen toe.
+* **Ontkomende formaatsteun:** De Dynamische Media laat de levering van 3D en panoramische ervaringen toe.
 
-Aangezien u de [ Reis van Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1) verkent, die de geconsolideerde lijst van beste praktijken hieronder herzien kan u helpen het grootste deel van zijn mogelijkheden maken. Pas deze beste praktijken van Dynamic Media aan uw specifieke context en projectvereisten aan zodat kunt u uw ervaringen over kanalen en apparaten optimaliseren.
+Aangezien u de [ Dynamische Reis van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1) verkent, die de geconsolideerde lijst van beste praktijken hieronder herzien kan u helpen het grootste deel van zijn mogelijkheden maken. Pas deze best practices voor dynamische media aan aan uw specifieke context- en projectvereisten aan, zodat u uw ervaringen op verschillende kanalen en apparaten kunt optimaliseren.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
 >[!IMPORTANT]
 >
->De beste praktijken van Dynamic Media in dit artikel kunnen in tijd evolueren aangezien de nieuwe technologieën in Dynamic Media verschijnen. De informatie hieronder is actueel voor de nieuwste versie van Dynamic Media.
+>De best practices voor dynamische media in dit artikel kunnen in de loop der tijd evolueren naarmate nieuwe technologieën in dynamische media zich ontwikkelen. De informatie hieronder is actueel voor de recentste versie van Dynamische Media.
 
 
-## Middelen in Dynamic Media plaatsen
+## Elementen opnemen in dynamische media
 
 **Bedrijfs geval:** *beheert efficiënt grote volumes van activa en zorgt ervoor dat slechts relevante, goedgekeurde inhoud aan eind - gebruikers wordt geleverd.*
 
-Stroomlijn uw beheer van grote aantallen activa efficiënt. Zorg ervoor dat slechts de aangewezen, erkende inhoud uw eind - gebruikers door de Selectieve Synchronisatie van Dynamic Media **te gebruiken** en **Selectieve eigenschappen van Publish** bereikt.
+Stroomlijn uw beheer van grote aantallen activa efficiënt. Zorg ervoor dat slechts de aangewezen, geoorloofde inhoud uw eind - gebruikers door de Selectieve Synchronisatie van Dynamische Media **te gebruiken** en **Selectieve publiceer** eigenschappen bereikt.
 
 * **Selectieve synchronisatie:**
-Een proactieve functie waarmee u kunt kiezen welke elementen u wilt synchroniseren met Dynamic Media. U kunt bijvoorbeeld alleen die mappen synchroniseren die elementen bevatten waarvoor de definitieve goedkeuring is verleend. Deze workflow helpt u te controleren welke middelen worden voorbereid voor levering aan uw klanten.
+Een pro-actieve eigenschap die u laat kiezen welke activa aan synchronisatie met Dynamische Media. U kunt bijvoorbeeld alleen die mappen synchroniseren die elementen bevatten waarvoor de definitieve goedkeuring is verleend. Deze workflow helpt u te controleren welke middelen worden voorbereid voor levering aan uw klanten.
 
 * **Selectief publiceren:**
-Na het synchroniseren van uw middelen, geeft de Selectieve Publish u controle over welke activa aan uw klanten zichtbaar zijn. Dit betekent dat u kunt bepalen welke goedgekeurde middelen daadwerkelijk via uw kanalen worden geleverd, zodat uw klanten alleen de beste en meest relevante inhoud zien.
+Nadat u uw elementen hebt gesynchroniseerd, kunt u met Selectief publiceren bepalen welke elementen zichtbaar zijn voor uw klanten. Dit betekent dat u kunt bepalen welke goedgekeurde middelen daadwerkelijk via uw kanalen worden geleverd, zodat uw klanten alleen de beste en meest relevante inhoud zien.
 
 Deze twee beste praktijken helpen u betere controle, bestuur, en productiviteit over uw rijke-media inhoud bereiken.
 
-Meer informatie? Ga naar [ vormen Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/dynamic-media/selective-publishing.md).
+Meer informatie? Ga naar [ vormen Selectief publiceren op het omslagniveau in Dynamische Media ](/help/assets/dynamic-media/selective-publishing.md).
 
 
-## Dynamic Media Viewers
+## Dynamische mediaviewers
 
-De beste werkwijzen van de Dynamic Media Viewer zijn essentiële richtlijnen die zijn ontworpen om de prestaties, functionaliteit en gebruikerservaring van Dynamic Media-middelen op AEM te optimaliseren. Deze praktijken zorgen ervoor dat de activa behoorlijk worden gesynchroniseerd, gepubliceerd, en gevormd om de volledige mogelijkheden van Dynamic Media te gebruiken.
+De best practices van Dynamic Media Viewer zijn essentiële richtlijnen die zijn ontworpen om de prestaties, functionaliteit en gebruikerservaring van Dynamic Media-elementen op AEM te optimaliseren. Deze praktijken zorgen ervoor dat de activa behoorlijk worden gesynchroniseerd, gepubliceerd, en gevormd om de volledige mogelijkheden van Dynamische Media te gebruiken.
 
 Door deze beste praktijken te volgen, kunt u naadloze integratie, efficiënt middelenbeheer, en verbeterde kijkersinteractie bereiken. Het synchroniseren van elementen, het gebruik van slim uitsnijden en het volgen van de richtlijnen voor het opnemen van JavaScript-bestanden zijn allemaal belangrijke werkwijzen. Deze aanbevelingen helpen de integriteit en betrouwbaarheid van media levering over diverse platforms en apparaten handhaven.
 
@@ -82,21 +82,21 @@ Door deze beste praktijken te volgen, kunt u naadloze integratie, efficiënt mid
 Zorg ervoor dat alle viewerelementen zijn gesynchroniseerd met Dynamic Media voordat u de speler gebruikt.
 
    * Open de pagina met voorbeeldbeheer op `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` . Op deze pagina kunt u de elementen van een viewer opnieuw synchroniseren, inclusief pictogrammen voor een uitgeverfde viewer, CSS-bestanden en voorinstellingen.
-   * Als u om het even welke kijkerskwesties ontmoet, ga [ problemen oplossen Dynamic Media Viewers ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) artikel.
+   * Als u om het even welke viewerkwesties ontmoet, ga naar het [ los Dynamische artikel van de Kijkers van Media ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) problemen op.
 
-* **Publish Assets:**
+* **publiceer Assets:**
 Zorg ervoor dat de elementen zijn gepubliceerd voordat u deze weergeeft in de viewers voor levering.
 * **Automatisch spelende Video&#39;s Gedemd:**
 Voor automatisch afspelen in video&#39;s gebruikt u gedempte video-instellingen, omdat browsers het afspelen van video&#39;s met volume beperken.
 * **het Slimme Uitsnijden:**
 Gebruik de component Afbeelding v3 voor slim uitsnijden om de presentatie van afbeeldingselementen te verbeteren.
 * **Insluiting van het Dossier van JavaScript:**
-Neem alleen het JavaScript-bestand van de primaire viewer op uw pagina. Verwijs niet naar extra JavaScript-bestanden die de runtimelogica van de viewer kan downloaden. Koppel niet rechtstreeks vanuit het `/s7viewers` -contextpad (ook wel de geconsolideerde SDK-indeling genoemd) naar de HTML5 SDK `Utils.js` -bibliotheek. De logica van de viewer beheert de locatie van `Utils.js` of soortgelijke runtimeviewerbibliotheken, die tussen releases kunnen worden gewijzigd. Bij Adobe blijven oudere versies van de secundaire viewer-include-bestanden op de server niet behouden, zodat het rechtstreeks verwijzen naar deze versies de viewerfunctionaliteit in toekomstige updates kan onderbreken.
+Neem alleen het JavaScript-bestand van de primaire viewer op uw pagina. Verwijs niet naar extra JavaScript-bestanden die de runtimelogica van de viewer kan downloaden. Maak met name geen directe koppeling naar de HTML5 SDK `Utils.js` -bibliotheek vanuit het `/s7viewers` -contextpad (ook wel SDK-include-bestanden genoemd). De logica van de viewer beheert de locatie van `Utils.js` of soortgelijke runtimeviewerbibliotheken, die tussen releases kunnen worden gewijzigd. Adobe houdt geen oudere versies van secundaire viewer-include-bestanden op de server bij, zodat het rechtstreeks verwijzen naar deze versies de viewerfunctionaliteit in toekomstige updates kan onderbreken.
 * **Inbeddende Richtlijnen:**
 Gebruik de documentatie voor het insluiten van richtlijnen die specifiek zijn voor elke kijker.
 Meer informatie? Ga naar [ Kijkers voor AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **SDK Leerprogramma en Voorbeelden:**
-Herzie het [ leerprogramma van SDK van de Kijker ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) en [ HTML5 SDK toepassingsvoorbeelden ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
+* **Zelfstudie en Voorbeelden van SDK:**
+Herzie het [ Zelfstudie van SDK van de Kijker ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) en [ HTML5 de toepassingsvoorbeelden van SDK ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
 
 
 ## Elementen voorbereiden voor levering
@@ -114,7 +114,7 @@ Meer informatie? Ga naar [ organiseer activa in omslagen ](/help/assets/organize
 Tags toevoegen verbetert de zoekbaarheid, het maken van verzamelingen en de positie van zoekopdrachten. Adobe Sensei AI maakt gebruik van een zelfstudie-algoritme voor nauwkeurige codering, zodat elementen snel kunnen worden opgehaald. Adobe Sensei herkent en wijst ook relevante tags, waaronder aangepaste tags, toe aan bedrijfsmiddelen, waardoor het beheer van bedrijfsmiddelen wordt vereenvoudigd met automatische, beschrijvende tags.
 Meer informatie? Ga naar [ organiseer activa gebruikend markeringen ](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **organiseer activa als inzamelingen:**
-Met Dynamic Media en Experience Manager Assets kunt u op efficiënte wijze middelen verzamelen, bewerken en delen tussen gebruikers. U kunt diverse inzamelingstypes, met inbegrip van statische lijsten en dynamische, op onderzoek-gebaseerde compilaties vestigen. Deze inzamelingstypes kunnen over diverse plaatsen met klantgerichte toegang en het uitgeven rechten worden gedeeld.
+Met Dynamic Media in combinatie met Experience Manager Assets kunt u op efficiënte wijze middelen verzamelen, bewerken en delen tussen gebruikers. U kunt diverse inzamelingstypes, met inbegrip van statische lijsten en dynamische, op onderzoek-gebaseerde compilaties vestigen. Deze inzamelingstypes kunnen over diverse plaatsen met klantgerichte toegang en het uitgeven rechten worden gedeeld.
 Meer informatie? Ga naar [ organiseer activa als inzamelingen ](/help/assets/manage-collections.md).
 * **organiseer activa gebruikend profielen:**
 Een verwerkingsprofiel automatiseert de verwerking van middelen in aangewezen omslagen, die organisatie stroomlijnen. Door het standaardiseren van metagegevens, bestandsnamen en mapstructuren kunt u deze profielen consistent en nauwkeurig toepassen terwijl de verzameling van digitale elementen wordt uitgebreid.
@@ -124,25 +124,25 @@ Meer informatie? Ga naar [ organiseer activa gebruikend profielen ](/help/assets
 
 ### De kwaliteit van afbeeldingen optimaliseren
 
-**Bedrijfs geval:** *verkrijg beelden van goede kwaliteit van Dynamic Media.*
+**Bedrijfs geval:** *verkrijg goede kwaliteitsbeelden van Dynamische Media.*
 
 Om de beeldkwaliteit te verbeteren, moeten verschillende factoren zorgvuldig in overweging worden genomen. Het kan een tijdintensief proces zijn. Nochtans, zijn er sommige beproefde-en-ware praktijken die u kunnen helpen wenselijke resultaten bereiken. Tot de beste werkwijzen behoren onder andere het optimaliseren van de afbeelding, het verscherpen van afbeeldingen en de beste afbeeldingsindelingen die u kunt gebruiken.
 
 Meer informatie? Ga naar [ Beste praktijken voor het optimaliseren van de kwaliteit van uw beelden ](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
-Omdat de perceptie van beeldkwaliteit van persoon tot persoon verschilt, is soms een systematische benadering van experimenten essentieel voor het bereiken van gewenste resultaten. Adobe Experience Manager ondersteunt dit proces met meer dan 100 Dynamic Media-opdrachten voor het verbeteren van afbeeldingen.
+Omdat de perceptie van beeldkwaliteit van persoon tot persoon verschilt, is soms een systematische benadering van experimenten essentieel voor het bereiken van gewenste resultaten. Adobe Experience Manager ondersteunt dit proces met meer dan 100 opdrachten voor dynamische media voor het verbeteren van afbeeldingen.
 
-Meer informatie? Bekijk [ Momentopname van Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten, 17 seconden).
+Meer informatie? Controle [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten, 17 seconden).
 
-Als u de invloed van deze verschillende opdrachten op de afbeeldingskwaliteit wilt beoordelen, kunt u een afbeelding uploaden naar Dynamic Media, de interface van het gereedschap op de opgegeven URL gebruiken en de opdrachten toepassen die u wilt uitproberen.
+Als u de invloed van deze verschillende opdrachten op de afbeeldingskwaliteit wilt beoordelen, kunt u een afbeelding uploaden naar Dynamische media, de interface van het gereedschap gebruiken bij de opgegeven URL en de opdrachten toepassen die u wilt uitproberen.
 
-Wil je het uitproberen? De Opname van Dynamic Media van de lancering [ ](https://snapshot.scene7.com/)
+Wil je het uitproberen? De [ Dynamische Momentopname van Media van de lancering ](https://snapshot.scene7.com/)
 
 ### Standaardiseren op stijlen die op afbeeldingen zijn toegepast
 
 **Bedrijfs geval:** *normaliseert efficiënt de stijl en de transformatie die op mijn beeldactiva wordt toegepast.*
 
-In Dynamic Media kunt u regelmatig voorinstellingen voor afbeeldingen gebruiken, zodat u de afbeeldingsformaten, indelingen en eigenschappen op consistente en dynamische wijze kunt aanpassen. Beschouw een voorinstelling voor afbeeldingen als een macro: het is een benoemde set opdrachten voor vergroten/verkleinen en opmaken. Als uw site bijvoorbeeld productafbeeldingen in verschillende formaten en formaten nodig heeft, met specifieke compressie voor desktops en mobiele apparaten, wordt dit proces efficiënt geautomatiseerd met behulp van Voorinstellingen voor afbeeldingen.
+Gebruik regelmatig voorinstellingen voor afbeeldingen in dynamische media, zodat u de afbeeldingsformaten, indelingen en eigenschappen op consistente en dynamische wijze kunt aanpassen. Beschouw een voorinstelling voor afbeeldingen als een macro: het is een benoemde set opdrachten voor vergroten/verkleinen en opmaken. Als uw site bijvoorbeeld productafbeeldingen in verschillende formaten en formaten nodig heeft, met specifieke compressie voor desktops en mobiele apparaten, wordt dit proces efficiënt geautomatiseerd met behulp van Voorinstellingen voor afbeeldingen.
 
 Wil je het uitproberen? Ga naar [ Grondbeginselen van het creëren van beeld vooraf instelt om activa terug te geven ](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
 
@@ -150,15 +150,15 @@ Wil je het uitproberen? Ga naar [ Grondbeginselen van het creëren van beeld voo
 
 **Bedrijfs geval:** *zorg ervoor dat het belangrijkste punt van belang van mijn beelden of video in nadruk over apparaten blijft.*
 
-Smart Crop is een functie in Dynamic Media die gebruikmaakt van Adobe Sensei, het AI-framework van Adobe en het framework voor machinaal leren, om het bijsnijden van afbeeldingen en video&#39;s te automatiseren. Het detecteert en richt zich op intelligente wijze op het hoofdonderwerp of het belangrijkste aandachtspunt in een afbeelding of video. Deze intelligentie zorgt ervoor dat het brandpunt op verschillende schermgrootten op desktopcomputers en mobiele apparaten wordt gehandhaafd.
+Smart Crop is een functie in Dynamic Media die gebruikmaakt van Adobe Sensei, Adobe AI en het leerframework voor machines om het bijsnijden van afbeeldingen en video&#39;s te automatiseren. Het detecteert en richt zich op intelligente wijze op het hoofdonderwerp of het belangrijkste aandachtspunt in een afbeelding of video. Deze intelligentie zorgt ervoor dat het brandpunt op verschillende schermgrootten op desktopcomputers en mobiele apparaten wordt gehandhaafd.
 
 U kunt het beste een afbeeldingsprofiel maken met Slim uitsnijden. In het profiel kunt u verschillende schermgrootten definiëren en Adobe Sensei de rest laten doen, zodat uw afbeeldingen en video&#39;s altijd zijn geoptimaliseerd voor het apparaat van de viewer.
 
-Meer informatie? Controle [ Gebruikend Slimme Uitsnede met AEM Assets Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden) en [ Gebruikend de Slimme Uitsnede van Dynamic Media voor Video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuten, 22 seconden).
+Meer informatie? Controle [ Gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden) en [ Gebruikend Dynamische Slimme Uitsnede van Media voor Video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuten, 22 seconden).
 
 ### SEO-waarderingen verbeteren
 
-**Bedrijfs geval:** *vorm Dynamic Media om betere classificaties te krijgen SEO.*
+**Bedrijfs geval:** *vorm Dynamische Media om betere classificaties te krijgen SEO.*
 
 Gebruik regelmatig de volgende aanbevelingen om ervoor te zorgen dat uw afbeeldingen effectief bijdragen aan uw algemene SEO-strategie.
 
@@ -177,12 +177,12 @@ Implementeer een aangepast domein dat uw bedrijf of merknaam bevat om de herkenn
 
 * **SEO-vriendschappelijke omslagstructuur:**
 Organiseer uw afbeeldingen in een mappenstructuur die uw bedrijfsnaam of merk bevat voor een betere indexering, zoals `http://images.mycompany.com/is/image/companyname/` .
-* **de regelreeksen van Dynamic Media:**
+* **Dynamische de regelreeksen van Media:**
 Leer hoe u URL&#39;s voorwaardelijk kunt transformeren op basis van verschillende factoren, waardoor SEO en gebruikerservaring worden verbeterd.
 Meer informatie? Ga naar [ regelreeksen van het Gebruik om URLs ](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) om te zetten.
 * **Slimme Beeldvorming en Slim Gewas:**
-Gebruik de functies Slim beeld en Slim uitsnijden in Dynamic Media om geoptimaliseerde en responsieve afbeeldingen te leveren. Hierdoor worden niet alleen de laadtijden van de pagina verbeterd, maar wordt ook een positieve bijdrage geleverd aan SEO-waarderingen.
-Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md), of bekijk [ Gebruikend Slimme Uitsnede met AEM Assets Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden).
+Gebruik de functies Slim beeld en Slim uitsnijden in dynamische media voor geoptimaliseerde en responsieve afbeeldingen. Hierdoor worden niet alleen de laadtijden van de pagina verbeterd, maar wordt ook een positieve bijdrage geleverd aan SEO-waarderingen.
+Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md), of bekijk [ Gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuten, 35 seconden).
 
 Houd er rekening mee dat deze aanbevolen procedures goed overeenkomen met de SEO-tips voor Google-afbeeldingen. Dergelijke praktijken benadrukken het belang om context en helderheid aan onderzoeksmotoren door juiste noemende overeenkomsten, gestructureerde gegevens, en geoptimaliseerde beeldlevering te verstrekken.
 
@@ -192,19 +192,19 @@ Meer informatie? Ga naar [ URL structuur beste praktijken voor Google ](https://
 
 **Bedrijfs geval:** *pas rijke visuele gevolgen op beelden toe.*
 
-Dynamic Media beschikt over een aantal opdrachten waarmee u afbeeldingen kunt verbeteren en visuele effecten dynamisch kunt maken, zonder dat u meerdere statische elementen nodig hebt. Hieronder volgt een korte uitleg van een aantal van deze processen en enkele voorbeelden die u kunnen helpen:
+Dynamische media biedt een reeks opdrachten waarmee u afbeeldingen kunt verbeteren en visuele effecten dynamisch kunt maken, zonder dat u meerdere statische elementen nodig hebt. Hieronder volgt een korte uitleg van een aantal van deze processen en enkele voorbeelden die u kunnen helpen:
 
 #### Effecten in de bronafbeelding
 
 | Taak | Wat moet u doen? |
 | --- | --- |
-| **uploadt en publiceert uw originele beeld** | <ul><li> Begin door de originele afbeelding naar Dynamic Media te uploaden.</li><li> Zorg ervoor dat het via een URL is gepubliceerd en toegankelijk.</li><li> In dit voorbeeld wordt een voorraadafbeelding van een horloge met een witte achtergrond (laten we het &quot;Afbeelding X&quot; noemen) geüpload naar Dynamic Media.<br>[ https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **uploadt en publiceert uw originele beeld** | <ul><li> Begin door het originele beeld aan Dynamische Media te uploaden.</li><li> Zorg ervoor dat het via een URL is gepubliceerd en toegankelijk.</li><li> In dit voorbeeld wordt een voorraadafbeelding van een horloge met een witte achtergrond (laten we het &quot;Beeld X&quot; noemen) geüpload naar Dynamische media.<br>[ https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
 | **creeer een masker** | <ul><li> Ontwikkelen een masker dat het onderwerp (het gebied waar u effecten wilt toepassen) en de achtergrond (het gebied dat u wilt wijzigen) definieert.<br>[ https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Maskers zijn doorgaans grijswaardenafbeeldingen, waarbij wit het onderwerp vertegenwoordigt en zwart de achtergrond. U kunt maskers maken met gereedschappen zoals Adobe Photoshop.<br> wil meer leren? Ga naar [ Creërend en het uitgeven van een snel masker in Photoshop ](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Voor &quot;Beeld X,&quot;creeer een masker dat precies het onderwerp beschrijft u wilt verbeteren. Bijvoorbeeld een persoon, een object, enzovoort.</li></ul> |
-| **pas Dynamic Media URL bevelen voor gevolgen toe** | Nadat u een masker hebt, gebruikt u de URL-opdrachten om effecten toe te passen zoals een gloed buiten of wijzigt u de achtergrondkleur in &quot;Afbeelding X&quot;. Hier volgen twee voorbeelden:<ul><li> **Outer het effect van de gloed:**<br> om een buitenste gloedeffect langs de grens van het onderwerp toe te voegen, geef URL als dit uit:<br>[ https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25 ](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25) <br> In dit URL, `op_blur`, `op_grow`, en `opac` de parameters leiden tot het buitenste gloedeffect.</li><li> **Verandering van de Achtergrondkleur:**<br> om de achtergrondkleur te veranderen, gebruik URL met een verschillende waarde van de achtergrondkleur:<br>[ https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0 ](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0) <br> In dit voorbeeld, `color=255,255,0` plaatst de achtergrondkleur aan geel. Bewerk de achtergrond in een specifieke kleur voor visuele effecten.</li></ul> |
+| **pas Dynamische bevelen van Media URL voor gevolgen toe** | Nadat u een masker hebt, gebruikt u de URL-opdrachten om effecten toe te passen zoals een gloed buiten of wijzigt u de achtergrondkleur in &quot;Afbeelding X&quot;. Hier volgen twee voorbeelden:<ul><li> **Outer het effect van de gloed:**<br> om een buitenste gloedeffect langs de grens van het onderwerp toe te voegen, geef URL als dit uit:<br>[ https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25 ](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25) <br> In dit URL, `op_blur`, `op_grow`, en `opac` de parameters leiden tot het buitenste gloedeffect.</li><li> **Verandering van de Achtergrondkleur:**<br> om de achtergrondkleur te veranderen, gebruik URL met een verschillende waarde van de achtergrondkleur:<br>[ https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0 ](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0) <br> In dit voorbeeld, `color=255,255,0` plaatst de achtergrondkleur aan geel. Bewerk de achtergrond in een specifieke kleur voor visuele effecten.</li></ul> |
 
 #### Een afbeeldingsrand toevoegen
 
-Met Dynamic Media kunt u afbeeldingen rechtstreeks via URL&#39;s manipuleren. Dit is een krachtig hulpmiddel voor het maken van dynamische digitale ervaringen. Hieronder volgen enkele voorbeelden. Laten wij met het volgende originele beeld URL beginnen: [ https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel ](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
+Met Dynamische media kunt u afbeeldingen rechtstreeks via URL&#39;s bewerken. Dit is een krachtig hulpmiddel voor het maken van dynamische digitale ervaringen. Hieronder volgen enkele voorbeelden. Laten wij met het volgende originele beeld URL beginnen: [ https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel ](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
 
 | Taak | Wat moet u doen? |
 | --- | --- |
@@ -222,19 +222,19 @@ Als u een logo of pictogram op een bestaande afbeelding wilt plaatsen, biedt Dyn
 | --- | --- |
 | **uploadt en publiceert het basisbeeld** | Eerst uploadt en publiceert u de basisafbeelding waarop u het logo of pictogram wilt plaatsen. U kunt elke afbeelding als basis gebruiken.<br> bijvoorbeeld, hier is een basisbeeld:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa ](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **uploadt en publiceert het embleem of pictogrambeeld** | Vervolgens uploadt en publiceert u de afbeelding die u over de basisafbeelding wilt plaatsen. Deze afbeelding moet een transparant PNG-bestand zijn met het logo of pictogram dat u wilt bedekken.<br> hier is het transparante beeld PNG van een stervoorwerp met transparantiegevolgen die zullen worden bovenop gelegd:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorate-star ](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **pas Dynamic Media URL** toe | Maak nu een Dynamic Media-URL waarin de basisafbeelding en het logo of de pictogramafbeelding worden gecombineerd. U kunt URL-opdrachten gebruiken om dit effect te bereiken.<br> de structuur URL kijkt iets als dit:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png ](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png) <br> waar de activa<ul><li> `hotspotRetailBaseImage` is de basisafbeelding.</li><li> `starxp` is de afbeelding van het logo/pictogram.</li><li> `layer=1` geeft aan dat het logo of pictogram in een laag over de basisafbeelding moet worden geplaatst.</li><li> `scale=1.25` past de grootte van het logo/pictogram aan.</li><li> `posN=0.33,-.25` bepaalt de positie van het logo/pictogram ten opzichte van de basisafbeelding.</li><li> `fmt=png` zorgt ervoor dat de uitvoer de PNG-indeling heeft.</li></ul> |
+| **pas Dynamische Media URL** toe | Maak nu een URL voor dynamische media waarin de basisafbeelding en het logo of de pictogramafbeelding worden gecombineerd. U kunt URL-opdrachten gebruiken om dit effect te bereiken.<br> de structuur URL kijkt iets als dit:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png ](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png) <br> waar de activa<ul><li> `hotspotRetailBaseImage` is de basisafbeelding.</li><li> `starxp` is de afbeelding van het logo/pictogram.</li><li> `layer=1` geeft aan dat het logo of pictogram in een laag over de basisafbeelding moet worden geplaatst.</li><li> `scale=1.25` past de grootte van het logo/pictogram aan.</li><li> `posN=0.33,-.25` bepaalt de positie van het logo/pictogram ten opzichte van de basisafbeelding.</li><li> `fmt=png` zorgt ervoor dat de uitvoer de PNG-indeling heeft.</li></ul> |
 
-Meer informatie? Ga naar [ src ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer details op het `src` bevel en andere bevelen van Dynamic Media URL.
+Meer informatie? Ga naar [ src ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer details op het `src` bevel en andere Dynamische bevelen van Media URL.
 
 
 #### Promotietekst overschrijven
 
-Hieronder vindt u de stappen voor het bedekken van promotietekstberichten op afbeeldingen met HTML en CSS.
+Hieronder vindt u de stappen voor het bedekken van een promotietekstbericht op een afbeelding met HTML en CSS.
 
 | Stap | Wat moet u doen? |
 | --- | --- |
 | **uploadt en publiceert het basisbeeld** | Eerst uploadt en publiceert u de basisafbeelding waarop u de tekst wilt plaatsen. U kunt elke gewenste afbeelding gebruiken. Bijvoorbeeld, hier is een beeld van de steekproefbasis:<br>[ https://s7g2.scene7.com/is/image/genaibeta/leather-sofa ](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa) <br> |
-| **pas Dynamic Media tekstexploitanten** toe | Met Dynamic Media kunt u tekstoperatoren toepassen om dynamische tekst rechtstreeks op de afbeelding te bedekken. De volgende voorbeeld-URL toont deze mogelijkheid:<br>[ https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr 130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600 ](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=0 3333&amp;wid=600&amp;hei=600) |
+| **pas Dynamische de tekstexploitanten van Media toe** | Met Dynamische media kunt u tekstoperatoren toepassen om dynamische tekst rechtstreeks op de afbeelding te bedekken. De volgende voorbeeld-URL toont deze mogelijkheid:<br>[ https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr 130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600 ](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=0 3333&amp;wid=600&amp;hei=600) |
 
 #### Vergroten/verkleinen en uitsnijden voor verschillende toepassingen
 
@@ -251,7 +251,7 @@ Het wijzigen van het formaat kan van invloed zijn op de afbeeldingskwaliteit. Ve
 
 ##### Uitsnijden in plaats van vergroten/verkleinen
 
-Uitsnijden en vergroten/verkleinen zijn technieken in Dynamic Media waarmee u afbeeldingen kunt transformeren op basis van verschillende gebruikssituaties, of het nu gaat om het maken van miniaturen, afbeeldingen in de productweergave of banners.
+Uitsnijden en vergroten/verkleinen zijn technieken in dynamische media waarmee u afbeeldingen kunt transformeren op basis van verschillende gebruikssituaties, of het nu gaat om het maken van miniaturen, afbeeldingen in de productweergave of banners.
 
 * **het Uitsnijden:**
 Hierbij wordt een deel van een afbeelding verwijderd om de compositie en het kader te wijzigen. Het verandert de totale afmetingen niet, maar richt zich op een specifiek gebied.
@@ -278,19 +278,19 @@ Voortgekomen uit de oorspronkelijke afbeelding, waarbij de ruimte wordt benadruk
 Voel u vrij om deze variaties voor uw specifieke behoeften te onderzoeken.
 Wilt u meer weten over de opdrachten in een URL? Ga naar [ verwijzing van het Bevel ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
-### Afbeeldingen van GIFFEN leveren
+### GIF-afbeeldingen leveren
 
-**Bedrijfs geval:** *GIFFEN die van de Stroom Dynamic Media gebruiken*
+**Bedrijfs geval:** *GIFs van de Stroom gebruikend Dynamische Media*
 
-U kunt GIFFEN uploaden en leveren via Dynamic Media. Als u een bewegend GIF wilt renderen, vervangt u `is/image` door `is/content` in de URL. Als u bijvoorbeeld `abc.gif` hebt geüpload, gebruikt u het volgende:
+U kunt GIF&#39;s uploaden en leveren via Dynamic Media. U rendert een geanimeerde GIF door `is/image` te vervangen door `is/content` in de URL. Als u bijvoorbeeld `abc.gif` hebt geüpload, gebruikt u het volgende:
 
-* Met dit URL-pad wordt een statische weergave van het GIF weergegeven:
+* Dit URL-pad geeft een statische weergave van de GIF:
 
   ```
   https://your.domain.com/is/image/yourfolder/abc
   ```
 
-* Met dit URL-pad wordt de animatieweergave van het GIF weergegeven:
+* Met dit URL-pad wordt de animatieweergave van de GIF weergegeven:
 
   ```
   https://your.domain.com/is/content/yourfolder/abc
@@ -300,12 +300,12 @@ U kunt GIFFEN uploaden en leveren via Dynamic Media. Als u een bewegend GIF wilt
 >
 >Wanneer u `is/content` gebruikt in het URL-pad, worden opdrachten voor afbeeldingstransformatie niet toegepast op het element.
 
-### Publish a video for my website
+### Een video voor mijn website publiceren
 
 **Bedrijfs geval:** *publiceert snel een video voor een marketing plaats.*
 
 * **selecteer een videoprofiel:**
-Selecteer eerst in Dynamic Media een geschikt videoprofiel. U kunt voor het *Aangepaste Video Coderen* profiel kiezen beschikbaar in AEM Assets onder VideoProfielen. Deze vooraf gedefinieerde coderingsinstellingen zorgen ervoor dat de video is geoptimaliseerd voor afspelen op verschillende apparaten en onder verschillende bandbreedteomstandigheden. U kunt ook uw eigen adaptief videoprofiel maken.
+Selecteer eerst in Dynamische media een geschikt videoprofiel. U kunt voor het *Aangepaste Video Coderen* profiel kiezen beschikbaar in AEM Assets onder VideoProfielen. Deze vooraf gedefinieerde coderingsinstellingen zorgen ervoor dat de video is geoptimaliseerd voor afspelen op verschillende apparaten en onder verschillende bandbreedteomstandigheden. U kunt ook uw eigen adaptief videoprofiel maken.
 * **wijs het profiel toe:**
 Wijs het gekozen videoprofiel toe aan de mappen waarin de video wordt geüpload. Met deze stap zorgt u ervoor dat de juiste coderingsinstellingen worden toegepast tijdens het uploaden.
 * **upload de originele video:**
@@ -318,7 +318,7 @@ Na publicatie hebt u twee opties.
    * **Verbinding direct:**
 Gebruik de opgegeven URL om rechtstreeks te koppelen aan de video. Hyperlink het geschikt op uw marketingsite.
    * **bed de video in:**
-Kopieer de ingevoerde insluitcode en plak deze in de HTML van de webpagina waar u de video wilt weergeven. Hierdoor kan de video rechtstreeks op uw site worden afgespeeld.
+Kopieer de ingevoerde insluitcode en plak deze in de HTML van uw webpagina waar u de video wilt weergeven. Hierdoor kan de video rechtstreeks op uw site worden afgespeeld.
 
 Meer informatie? Ga naar [ Video ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -328,14 +328,14 @@ Meer informatie? Ga naar [ Video ](https://experienceleague.adobe.com/en/docs/ex
 
 Om de beste kwaliteit en betrokkenheid voor uw video&#39;s te garanderen, kunt u overwegen een combinatie van de volgende strategieën voor best practices te implementeren:
 
-* **Gebruik de ingebouwde HTML5 VideoKijker:**
-De Dynamic Media HTML5 Video Viewer-voorinstellingen zijn robuuste videospelers. U kunt deze gebruiken om algemene problemen te voorkomen die samenhangen met het afspelen van HTML5-video en mobiele apparaten.
+* **gebruik ingebouwde HTML5 VideoKijker:**
+Dynamische media HTML5 Video Viewer-voorinstellingen zijn robuuste videospelers. U kunt deze gebruiken om algemene problemen te voorkomen die samenhangen met het afspelen van HTML5-video en mobiele apparaten.
 Deze voorinstellingen bieden oplossingen voor uitdagingen zoals het leveren van adaptieve bitsnelheden bij het streamen en het beperkte bereik van de desktopbrowser.
 Meer informatie? Ga naar [ Beste praktijken: Gebruikend HTML 5 videokijker ](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
-* **de Videoprofielen van Dynamic Media van het Gebruik:**
+* **Profiles van de Video van Media van het Gebruik Dynamische:**
 Videoprofielen in Dynamic Media helpen u bij efficiënt videobeheer, consistente kwaliteit en adaptieve streaming.
-Meer informatie? Ga naar [ Dynamic Media Video Profielen ](/help/assets/dynamic-media/video-profiles.md).
+Meer informatie? Ga naar [ Dynamische VideoProfielen van Media ](/help/assets/dynamic-media/video-profiles.md).
 
 * **volg Beste praktijken voor Video Coderen:**
 Hiermee past u videocoderingsprofielen toe die de oorspronkelijke videokwaliteit behouden zonder dat er tijdens het coderen buitensporig veel downscaling plaatsvindt.
@@ -343,25 +343,20 @@ Meer informatie? Ga naar [ Beste praktijken voor het coderen van video&#39;s ](/
 
 * **keur het adaptieve stromen in plaats van progressief stromen goed:**
 Bij adaptieve streaming wordt de videokwaliteit aangepast op basis van de snelheid en mogelijkheden van de internetverbinding van de kijker.
-Er worden protocollen als HLS (Live HTTP Streaming) of DASH (`Dynamic Adaptive Streaming over HTTP`) gebruikt om een optimale afspeelkwaliteit te garanderen.
+Er worden protocollen gebruikt, zoals HLS (Live HTTP-streaming) of DASH (`Dynamic Adaptive Streaming over HTTP`), voor een optimale afspeelkwaliteit.
 In tegenstelling tot progressieve streaming, die lineaire, adaptieve streaming video levert, minimaliseert buffering en biedt een naadloze kijkervaring.
-
-* **laat DASH op uw rekening (Digitaal Aangepast Streamen over HTTP) toe:**
-DASH levert dynamisch video-inhoud via adaptieve streaming.
-Om DASH toe te laten, creeer een steunkaartje voor uw milieu.
-Meer informatie? Ga naar [ toelaten DASH op uw rekening van Dynamic Media ](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### Video&#39;s internationaliseren voor meertalig gebruik
 
 **Bedrijfs geval:** *maak video&#39;s klaar voor meertalige consumptie.*
 
-Het internationaliseren van video&#39;s voor meertalig gebruik is essentieel voor het bereiken van een wereldwijd publiek. Dynamic Media biedt functies die u kunnen helpen dit doel te bereiken.
+Het internationaliseren van video&#39;s voor meertalig gebruik is essentieel voor het bereiken van een wereldwijd publiek. Dynamische media biedt functies die u kunnen helpen dit doel te bereiken.
 
 * **upload uw video&#39;s:**
-   * Maak eerst een videocoderingsprofiel. U kunt het vooraf gedefinieerde profiel voor adaptieve videocodering dat bij Dynamic Media wordt geleverd, gebruiken of uw eigen aangepaste profiel maken.
+   * Maak eerst een videocoderingsprofiel. U kunt het vooraf gedefinieerde profiel voor adaptieve videocodering gebruiken dat bij Dynamische media wordt geleverd, of uw eigen aangepaste profiel maken.
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waarin u uw primaire bronvideo&#39;s uploadt.
-   * Upload uw primaire bronvideo&#39;s naar deze mappen. Dynamic Media codeert deze op basis van het toegewezen videoverwerkingsprofiel.
-   * Dynamic Media biedt voornamelijk ondersteuning voor korte video&#39;s (tot 30 minuten) met een minimale resolutie van meer dan 25 × 25. Videobestanden van maximaal 15 GB kunnen elk worden geüpload1.
+   * Upload uw primaire bronvideo&#39;s naar deze mappen. Dynamische media codeert deze op basis van het toegewezen videoverwerkingsprofiel.
+   * Dynamische media biedt voornamelijk ondersteuning voor korte video&#39;s (tot 30 minuten) met een minimale resolutie van meer dan 25 × 25. Videobestanden van maximaal 15 GB kunnen elk worden geüpload1.
 
 * **beheer uw video&#39;s:**
    * Organiseer, doorblader, en onderzoek videoactiva binnen AEM.
@@ -371,14 +366,14 @@ Het internationaliseren van video&#39;s voor meertalig gebruik is essentieel voo
 
 * **Localization:**
    * Maak audiotracks en ondertitels voor elke doelgeografie/taal.
-   * Voeg deze audio en ondertitelsporen aan uw video&#39;s van de AEM interface toe.
+   * Voeg deze audio- en ondertitelingstracks vanuit de AEM-interface toe aan uw video&#39;s.
    * Wanneer gebruikers de video&#39;s afspelen, kunnen ze hun voorkeurstaal voor audio en ondertitels selecteren.
 
 * **het Publiceren:**
    * Als u AEM gebruikt als WCM-systeem (Web Content Management), kunt u rechtstreeks video&#39;s toevoegen aan uw webpagina&#39;s.
    * Als u een WCM-systeem van derden gebruikt, kunt u video&#39;s op uw webpagina&#39;s koppelen of insluiten met behulp van URL&#39;s of insluitcodes.
 
-Meer informatie? Ga naar [ Ongeveer veelvoudige titel en audiospoorsteun voor video&#39;s in Dynamic Media ](/help/assets/dynamic-media/video.md#about-msma) of bekijk [ veelvoudige titels en audiosporen aan een video ](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 notulen, 41 seconden) toevoegen.
+Meer informatie? Ga naar [ Ongeveer veelvoudige titel en audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/dynamic-media/video.md#about-msma) of bekijk [ veelvoudige titels en audiosporen aan een video ](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 notulen, 41 seconden) toevoegen.
 
 
 ## Middelen leveren aan klanten
@@ -408,7 +403,7 @@ Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imag
 
 **Bedrijfs geval:** *na het publiceren van nieuwe inhoud of het beschrijven van bestaande inhoud, hoe kan het worden gewaarborgd dat de veranderingen onmiddellijk op CDN verschijnen?*
 
-CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst. Afhankelijk van uw specifieke gebruiksgeval, kunt u de montages van CDN TTL (Tijd aan Levend) dienovereenkomstig bijwerken.
+De CDN (Content Delivery Network) plaatst dynamische media-elementen in cache, zodat deze snel aan klanten kunnen worden geleverd. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd, snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst. Afhankelijk van uw specifieke gebruiksgeval, kunt u de montages van CDN TTL (Tijd aan Levend) dienovereenkomstig bijwerken.
 
-Meer informatie? Ga naar [ ongeldig maakt het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+Meer informatie? Ga naar [ ongeldig maakt het CDN geheime voorgeheugen als Dynamische Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
