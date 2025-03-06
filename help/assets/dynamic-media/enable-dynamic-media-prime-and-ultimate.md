@@ -4,7 +4,7 @@ description: Leer hoe te om  [!DNL Dynamic Media]  Prime en het dienstenaanbod v
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 3962b687a7d0d3f5551b23fbe5c2ee2c21bd1d89
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
@@ -28,9 +28,11 @@ Voer de volgende stappen uit in uw cloudserviceomgeving om [!DNL Dynamic Media] 
 1. [ vorm  [!DNL Dynamic Media]  oplossingen ](#configure-dynamic-media-solutions)
 1. [Creeer en lijst  [!DNL Dynamic Media]  bedrijven](#create-and-list-dynamic-media-companies)
 1. [ vorm douanedomein in leveringsrij ](#configure-custom-domain-in-delivery-tier)
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 Als u [!DNL Dynamic Media Prime] moet toelaten, zie snelle verbindingen die in [ worden verstrekt  [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime) toelaten.
 
 ### [!DNL Dynamic Media with OpenAPI] activeren {#activate-dynamic-media-with-openapi}

@@ -3,7 +3,7 @@ title: Dynamic Media Prime en Ultimate
 description: Meer weten over Dynamic Media Prime en Ultimate, de voordelen ervan en de verschillen tussen beide?
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 5%
@@ -28,13 +28,9 @@ Als u de Dynamische basis van Media evenals geavanceerde mogelijkheden en toegan
 Tot de andere belangrijke voordelen van Dynamic Media Prime behoren:
 
 * Gecentraliseerd beheer van digitale middelen
-
 * Updates in real time die in levering URLs worden weerspiegeld
-
 * Merkconsistentie
-
 * Voor het web geoptimaliseerde afbeeldingslevering
-
 * Adaptieve videostreaming
 
 ### Vereisten {#pre-requisites-dm-prime}
@@ -57,9 +53,7 @@ Dynamic Media Ultimate biedt naast de functies van Dynamic Media Prime, zoals de
 * [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
 
    * [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
-
    * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-
    * [ Visuele Configuratie ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Vereisten {#pre-requisites-dm-ultimate}
@@ -71,4 +65,3 @@ Dynamic Media Ultimate biedt naast de functies van Dynamic Media Prime, zoals de
 Voor meer informatie over de volledige lijst van mogelijkheden, zie [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) en [ Werkend met Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md).
 
 Voor informatie over hoe te om Dynamische Media Prime en Ultimate voor uw milieu van AEM as a Cloud Service toe te laten, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md) toelaten.
-
