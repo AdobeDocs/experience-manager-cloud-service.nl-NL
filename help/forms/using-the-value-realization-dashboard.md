@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
 
 ---
 
-
 # Het dashboard voor het realiseren van waarden gebruiken om trends in het gebruik van formulieren en documenten te analyseren
 
 <span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Als u toegang wilt aanvragen, stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com. <span>
 
-![ dashboard van de realisatie van de Waarde ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
+![ Dashboard van de Realisatie van de Waarde ](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 Door regelmatig de metriek te controleren die in het dashboard van de Inzichten van het Gebruik van Forms wordt voorgesteld, kunt u waardevolle inzichten in de prestaties van uw vormen, documenten, en vormfragmenten verkrijgen. Gebruik deze gegevens om geïnformeerde beslissingen te nemen over formulierontwerp, fragmentbeheer en algemene formulierstrategie.
 
@@ -33,7 +31,7 @@ Zo opent u het dashboard met Forms-gebruiksinzichten:
 1. Navigeer aan **Forms** > **Forms en Documenten**
 1. Klik **Dashboard van Inzichten**. Het dashboard wordt in een nieuw venster geopend.
 
-   ![ dashboard van de realisatie van de Waarde ](/help/forms/assets/forms-usage-insights.png)
+   ![ Dashboard van de Realisatie van de Waarde ](/help/forms/assets/forms-usage-insights.png)
 
 ## Overzicht
 
