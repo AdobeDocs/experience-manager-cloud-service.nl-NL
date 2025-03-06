@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
-source-wordcount: '6228'
+source-wordcount: '6239'
 ht-degree: 2%
 
 ---
@@ -586,6 +586,8 @@ ht-degree: 2%
       + [Dynamische media instellen](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Werken met dynamische media](/help/assets/dynamic-media/dynamic-media.md)
       + [Dynamische media configureren](/help/assets/dynamic-media/config-dm.md)
+      + [Dynamic Media Prime en Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [Dynamic Media Prime en Ultimate inschakelen](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [Optioneel - Dynamische media configureren, algemene instellingen](/help/assets/dynamic-media/dm-general-settings.md)
       + [Optioneel - Dynamische media configureren, Publicatie-instelling](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Problemen met dynamische media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -892,7 +894,7 @@ ht-degree: 2%
    + Transactierapporten {#using-communications}
       + [Transactierapporten Billable API&#39;s](/help/forms/transaction-reports-billable-apis.md)
       + [Een transactie opnemen voor een aangepaste implementatie](/help/forms/record-transaction-custom-implementation.md)
-   + Waarderealisatiedashboard {#vr-dashboard}
+   + Value Realization Dashboard {#vr-dashboard}
       + [Het dashboard voor het realiseren van waarden](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Het dashboard voor het realiseren van waarden gebruiken om trends in het gebruik van formulieren en documenten te analyseren](/help/forms/using-the-value-realization-dashboard.md)
    + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
