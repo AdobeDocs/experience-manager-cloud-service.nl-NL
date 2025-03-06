@@ -4,9 +4,9 @@ description: Leer over de verschillende gebeurtenissen die de Universele Redacte
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -180,29 +180,6 @@ Respons Payload
 
 ## UI-gebeurtenissen {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-De gebeurtenis `aue:ui-publish` wordt geactiveerd wanneer inhoud wordt gepubliceerd (met aanroep op `BODY` niveau).
-
-De lading is een lijst van objecten IDs en hun publicatiestatus.
-
-### aue:ui-select {#ui-select}
-
-De gebeurtenis `aue:ui-select` wordt geactiveerd wanneer een component wordt geselecteerd.
-
-De nuttige lading is punt identiteitskaart, punteigenschappen, en punttype van de geselecteerde component.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 De `aue:ui-preview` gebeurtenis wordt teweeggebracht wanneer de het uitgeven wijze van de pagina in **Voorproef** wordt veranderd.
@@ -271,10 +248,9 @@ De payload is leeg voor deze gebeurtenis.
 
 | Gebeurtenis | Gedrag |
 |---|---|
-| `aue:ui-publish` | Niets doen |
 | `aue:ui-select` | Naar het geselecteerde element schuiven |
-| `aue:ui-preview` | `class="adobe-ue-preview"` toevoegen aan tag HTML |
-| `aue:ui-edit` | `class=adobe-ue-edit"` toevoegen aan tag HTML |
+| `aue:ui-preview` | `class="adobe-ue-preview"` toevoegen aan HTML-tag |
+| `aue:ui-edit` | `class=adobe-ue-edit"` toevoegen aan HTML-tag |
 | `aue:ui-viewport-change` | Niets doen |
 | `aue:initialized` | Niets doen |
 
