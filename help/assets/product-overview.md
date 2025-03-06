@@ -1,15 +1,15 @@
 ---
-title: Content Hub verkennen
+title: Content Hub - Overzicht
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
+source-git-commit: db23c4309454c69b784405ef14b54166db7c7cf2
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
 
 ---
 
-# Content Hub verkennen {#overview-content-hub}
+# Content Hub - Overzicht {#overview-content-hub}
 
 | [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |----|-----|
