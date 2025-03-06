@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2023.4.0 versie van  [!DNL Adobe Experien
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -40,19 +40,19 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 ### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
 
 * Exporteer inhoudsfragmenten van AEM as a Cloud Service naar Adobe Target in JSON-indeling en maak overeenkomende JSON-aanbiedingen in Target.
-* Ondersteuning voor paginering en sortering van GraphQL en verbeteringen in de interne cache helpen nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets ophaalt van AEM met behulp van complexe GraphQL-query&#39;s en -filters.
+* Ondersteuning voor paginering en sortering door GraphQL en verbeteringen in de interne cache helpen u nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets van AEM ophaalt met behulp van complexe GraphQL-query&#39;s en -filters.
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
-* De Fragmenten van de inhoud en hun verwijzingen kunnen nu aan de [ AEM Dienst van de Voorproef ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) worden gepubliceerd gebruikend de [ Console van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html), toestaand gebruikers aan voorproef de definitieve ervaring op een ontkoppelde voorproeftoepassing alvorens live te gaan.
+* De Fragmenten van de inhoud en hun verwijzingen kunnen nu aan de [ Dienst van de Voorproef van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) worden gepubliceerd gebruikend de [ Console van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html), toestaand gebruikers aan voorproef de definitieve ervaring op een ontkoppelde voorproeftoepassing alvorens live te gaan.
 * Afbeeldingen kunnen nu dynamisch worden geoptimaliseerd voor weergave op het web in scenario&#39;s zonder kop met AEM GraphQL. [ de variabelen van de Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) kunnen in de vragen van GraphQL worden bepaald om ontkoppelde cliënttoepassingen toe te staan verzoek dienovereenkomstig geoptimaliseerde beelden van AEM.
-* De markeringen op [ de Variaties van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) kunnen nu output aan JSON gebruikend de AEM de inhoudslevering API van GraphQL worden.
+* De markeringen op [ de Variaties van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) kunnen nu output aan JSON gebruikend AEM GraphQL de inhoudslevering API worden.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Extra ondersteuning voor WebP-afbeeldingen om automatisch metagegevens te extraheren, miniaturen en aangepaste uitvoeringen te genereren. De functie Slimme tags wordt nu ook ondersteund voor deze bestanden. Dynamic Media-mogelijkheden worden niet ondersteund voor WebP als invoerindeling.
+* Extra ondersteuning voor WebP-afbeeldingen om automatisch metagegevens te extraheren, miniaturen en aangepaste uitvoeringen te genereren. De functie Slimme tags wordt nu ook ondersteund voor deze bestanden. Dynamische mediafuncties worden niet ondersteund voor WebP als invoerindeling.
 
 * [ de ervaringsverhogingen van het Onderzoek ](/help/assets/search-assets.md#aftersearch) - u kunt de volgende verrichtingen op de activa nu snel uitvoeren die in de onderzoeksresultaten tonen:
 
@@ -64,16 +64,15 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 * Verbeteringen in de gebruiksvriendelijkheid van Color Search facet - Invoerveld voor kleurwaarden kan nu worden bewerkt en zoekresultaten worden alleen bijgewerkt wanneer u de kleurkiezer afsluit.
 
-* Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
+* Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media video levering (met CMAF ingeschakeld):
    * Adaptief streamen (DASH/HLS) zorgt voor een betere kijkervaring voor video&#39;s
    * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
-   * Beschikbaar in alle regio&#39;s, in te schakelen via een ondersteuningsticket
 
-* Dynamic Media _Momentopname_ - Experimenteer met testbeelden of Dynamic Media URLs, om de output van verschillende beeldbepalingen te zien, en slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerkbandbreedte, en de Verhouding van het Pixel van het Apparaat te beoordelen. Zie [ Momentopname van Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* De dynamische Opname van Media _0} - Experimenteer met testbeelden of Dynamische Media URLs, om de output van verschillende beeldbepalingen te zien, en slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerkbandbreedte, en de Verhouding van het Pixel van het Apparaat te beoordelen._ Zie [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 
 ### Functie in [!DNL Assets] prerelease {#prerelease-feature-assets}
 
-* Dynamic Media - De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [ opties van het Gewas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+* Dynamische media - De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [ opties van het Gewas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -83,7 +82,7 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 ### Functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* [ Aangepaste Forms binnen AEM Redacteur van de Pagina ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu AEM Redacteur van de Pagina gebruiken om veelvoudige vormen aan uw plaatspagina&#39;s snel tot stand te brengen en toe te voegen. Met deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging op sitepagina&#39;s maken met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
+* [ Aangepaste Forms binnen de Redacteur van de Pagina van AEM ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu de Redacteur van de Pagina van AEM gebruiken om veelvoudige vormen aan uw plaatspagina&#39;s snel tot stand te brengen en toe te voegen. Met deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging op sitepagina&#39;s maken met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
 
    * Maak een adaptief formulier door formuliercomponenten te slepen en neer te zetten op Adaptive Forms Container Component in AEM Sites Editor of Experience Fragments.
    * Met de wizard Adaptive Forms in de AEM Sites-editor kunt u onafhankelijk van elke sitepagina formulieren maken die u de vrijheid geven dergelijke formulieren op meerdere pagina&#39;s opnieuw te gebruiken.
@@ -93,7 +92,7 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 * [ Adobe Acrobat Sign Solutions voor Regering ](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms integreert nu met Adobe Acrobat Sign Solutions voor Regering. Deze integratie biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptief formulier-inzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
 
-  Dankzij de integratie met Adobe Acrobat Sign for Government kunnen partners en klanten van de Adobe in Adaptive Forms elektronische handtekeningen gebruiken voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die de klanten van de overheid van de Adobe van mening voorziet.
+  Dankzij de integratie met Adobe Acrobat Sign for Government kunnen Adobe-partners en overheidsklanten in Adaptive Forms elektronische handtekeningen gebruiken voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die de klanten van de overheid van Adobe van mening voorzien.
 
 * Verbeterde foutafhandeling met aangepaste fouthandlers in de regeleditor: u kunt nu een aangepaste functie aanroepen (met behulp van de clientbibliotheek) als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
@@ -114,7 +113,7 @@ U kunt een e-mail naar `aem-forms-headless@adobe.com` verzenden vanuit uw offici
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Extra Publish-regio&#39;s: klanten van sites kunnen maximaal drie publicatiegebieden in licentie geven, in aanvulling op het primaire gebied. Het verkeer wordt verpletterd aan extra te publiceren landbouwbedrijven, die in verminderde latentie voor bepaalde verzoeken, en verhoogde veerkracht tegen regionale stroomonderbrekingen resulteren. Contacteer uw Manager van de Rekening van de Adobe voor informatie over het verlenen van vergunningen [ Extra Gebieden van Publish ](/help/operations/additional-publish-regions.md) voor uw programma&#39;s.
+* Extra publicatieregio&#39;s: klanten van sites kunnen maximaal drie publicatiegebieden in licentie geven, naast het primaire gebied. Het verkeer wordt verpletterd aan extra te publiceren landbouwbedrijven, die in verminderde latentie voor bepaalde verzoeken, en verhoogde veerkracht tegen regionale stroomonderbrekingen resulteren. Contacteer uw Manager van de Rekening van Adobe voor informatie over het verlenen van vergunningen [ Extra publiceer Gebieden ](/help/operations/additional-publish-regions.md) voor uw programma&#39;s.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 

@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2023.2.0 versie van  [!DNL Adobe Experien
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2021, 2022, enzovoort.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -39,17 +39,16 @@ Bekijk de video Overzicht van de release van februari 2023 voor een overzicht va
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
 
-* Exporteer inhoudsfragmenten van AEM als cloudservice naar het doel van de Adobe dat JSON biedt.
-* Ondersteuning voor paginering en sortering van GraphQL en verbeteringen in de interne cache helpen nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets ophaalt van AEM met behulp van complexe GraphQL-query&#39;s en -filters.
+* Exporteer inhoudsfragmenten van AEM als een cloudservice naar Adobe-doel, zoals JSON biedt.
+* Ondersteuning voor paginering en sortering door GraphQL en verbeteringen in de interne cache helpen u nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets van AEM ophaalt met behulp van complexe GraphQL-query&#39;s en -filters.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Ondersteuning voor het nieuwe protocol (DASH - Dynamic Adaptive Streaming via HTTP) dat is gestart voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
+* Ondersteuning voor het nieuwe protocol (DASH - Dynamic Adaptive Streaming via HTTP) dat is gestart voor Adaptive streaming in Dynamic Media video delivery (met CMAF ingeschakeld):
    * Adaptief streamen (DASH/HLS) zorgt voor een betere kijkervaring voor video&#39;s
    * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
-   * Beschikbaar in NA, beschikbaar via een ondersteuningsticket, binnenkort verkrijgbaar in APAC, EMEA
 
 * Extra ondersteuning voor WebP-afbeeldingen om automatisch metagegevens te extraheren, miniaturen en aangepaste uitvoeringen te genereren. De mogelijkheden Slimme tags en Slim uitsnijden worden nu ook ondersteund voor deze bestanden.
 
@@ -67,7 +66,7 @@ Bekijk de video Overzicht van de release van februari 2023 voor een overzicht va
 
 * **[efficiënte vorm-bouw met sparen een Aangepast Vorm als malplaatjeeigenschap](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Versnelde en normaliseer vormontwikkeling door bestaande merk goedgekeurde vormen als vormmalplaatjes voor snel hergebruik op te slaan.
 
-* **[verbind AEM Forms met JDBC-Gesteunde gegevensbestanden](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: verbind rechtstreeks met ondernemingsgegevensbestanden van AEM de dienst van de Wolk gebruikend protocol JDBC, zonder de behoefte om hen over REST API bloot te stellen.
+* **[verbind AEM Forms met JDBC-Gesteunde gegevensbestanden](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Verbind met ondernemingsgegevensbestanden direct van de Dienst van de Wolk van AEM gebruikend protocol JDBC, zonder de behoefte om hen over REST API bloot te stellen.
 
 * **[integreert met de Eindpunten van REST die Open API 3.0 gebruiken](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Naadloos integreren in systemen van verslag die Open API 3.0 steunen om gegevens op te slaan en te halen gebruikend de modellen van vormgegevens.
 
