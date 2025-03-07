@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Dit artikel bevat gedetailleerde gebruiksinstructies en metrische interpretatie 
 Zo opent u het dashboard met Forms-gebruiksinzichten:
 
 1. Navigeer aan **Forms** > **Forms en Documenten**
-1. Klik **Dashboard van Inzichten**. Het dashboard wordt in een nieuw venster geopend.
+1. Klik **Dashboard InProduct**. Het dashboard wordt in een nieuw venster geopend.
 
    ![ Dashboard van de Realisatie van de Waarde ](/help/forms/assets/forms-usage-insights.png)
 

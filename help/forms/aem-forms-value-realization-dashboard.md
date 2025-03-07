@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Dit dashboard is uw venster in de wereld van uw formuliergebruik. Hier is een ui
 * **de Verzending van de Vorm**: Zie tendensen in hoe vaak uw vormen worden voltooid.
 * **Vertoningen van het Document**: Houd het aantal documenten bij die in tijd worden teruggegeven.
 * **Forms creeerde &amp; Gepubliceerde**: Monitor het tarief waaraan de nieuwe vormen worden gebouwd en opgesteld.
-* **de Tijden van de Aanmaak en van de Publicatie van de Vorm**: Analyseer de gemiddelde tijden voor het creëren van en het publiceren van vormen om gebieden voor verbetering te identificeren.
 
 ### Fragmentgebruik
 
