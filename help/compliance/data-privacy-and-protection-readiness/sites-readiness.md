@@ -1,17 +1,17 @@
 ---
-title: Regels voor gegevensbescherming en gegevensbescherming - gereedheid voor Adobe Experience Manager as a Cloud Service-sites
-description: Leer over de steun van de Plaatsen van Adobe Experience Manager as a Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de Algemene Verordening van de EU van de Bescherming van Gegevens (GDPR), de Wet van de Consumentenprivacy van Californië en hoe te om te voldoen wanneer het uitvoeren van een nieuw project van AEM as a Cloud Service.
+title: Regels voor gegevensbescherming en gegevensbescherming - AEM Sites-gereedheid
+description: Meer informatie over Experience Manager as a Cloud Service Sites-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations, waaronder de EU General Data Protection Regulation (GDPR), de California Consumer Privacy Act en hoe u aan deze regels moet voldoen bij de implementatie van een nieuw AEM as a Cloud Service-project.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service Site Readiness for Data Protection and Data Privacy Regulations {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Experience Manager Sites-gereedheid voor gegevensbeveiliging en regelgeving inzake gegevensbescherming {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat dit voor u als Adobe klant betekent, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0} {.[
+>Voor meer informatie over de reactie van Adobe op privacykwesties, en wat dit voor u als klant van Adobe betekent, zie [ het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
 
 Adobe Experience Manager as a Cloud Service Sites is klaar om klanten te helpen bij hun verplichtingen inzake privacy en bescherming van gegevens. Deze pagina begeleidt klanten door de procedures om dergelijke verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Voor meer informatie, zie het [ Centrum van de Privacy van de Adobe ](https://www.adobe.com/privacy.html).
+Voor meer informatie, zie het [ Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ Voor meer informatie, zie het [ Centrum van de Privacy van de Adobe ](https://ww
 
 ## AEM-auteurlaag {#aem-author-tier}
 
-De rekeningen van de gebruiker en de inhoud UGC op de auteurserver zijn behandeld in de [ documentatie van de Stichting AEM ](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
+De rekeningen van de gebruiker en de inhoud UGC op de auteurserver worden behandeld in de [ documentatie van de Stichting van AEM ](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## AEM-publicatielaag {#aem-publish-tier}
 
-De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [ documentatie van de Stichting AEM ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
+De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [ documentatie van de Stichting van AEM ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
@@ -52,9 +52,9 @@ Adobe Experience Manager is onderworpen aan een cookie-uitschakelservice die wor
 Naar Weigeren:
 
 1. Navigeren naar:
-   [ het Centrum van de Privacy van de Adobe - Opt-uit ](https://www.adobe.com/privacy/opt-out.html)
+   [ het Centrum van de Privacy van Adobe - Opt-uit ](https://www.adobe.com/privacy/opt-out.html)
 
-1. De rol neer aan **Diensten** - **gegevens van het de dienstgebruik van de Experience Cloud**.
+1. De rol neer aan **Diensten** - **gegevens van het de dienstgebruik van Experience Cloud**.
 
 1. Selecteer de referenced verbinding; momenteel genoemd **hier**.
 
@@ -72,7 +72,7 @@ Naar Weigeren:
 
    >[!NOTE]
    >
-   > Er is een verdere beschrijving in **2. Privacy.** sectie van de [ Algemene Voorwaarden van de Adobe van Gebruik ](https://www.adobe.com/legal/terms.html).
+   > Er is een verdere beschrijving in **2. Privacy.** sectie van de [ Algemene Voorwaarden van Adobe van Gebruik ](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
@@ -94,7 +94,7 @@ AEM provides an optional data layer with [ContextHub](/help/sites-developing/con
 
 AEM verstrekt een facultatieve gegevenslaag met ContextHub. Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
 
-Door gebrek, wordt dit bezoeker-gegeven niet opgeslagen in AEM; AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
+Deze bezoeker-gegevens worden standaard niet opgeslagen in AEM. AEM stuurt regels naar de gegevenslaag om personalisatiebeslissingen in de browser te nemen.
 
 ### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
 
