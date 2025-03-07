@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 0%
@@ -46,25 +46,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
-
 ### Nieuwe functies in AEM Sites {#new-features-sites}
 
-** Automatische tags voor inhoudsfragmenten **
+**het Fragment van de Inhoud auto-Tags**
 
 Bij het maken van inhoudsfragmenten is het nu mogelijk automatisch codes over te nemen die zijn toegewezen aan het inhoudsmodel. Dit maakt een krachtige automatische classificatie mogelijk van inhoud die is opgeslagen in inhoudsfragmenten.
 
-** Ondersteuning voor UUID-fragmenten van inhoudsfragmenten **
+**Steun van UUID van het Fragment van de Inhoud**
 
 De UUID-ondersteuning voor inhoudsfragmenten is nu GA. De nieuwe capaciteit verandert niet het op weg-gebaseerde gedrag van verrichtingen binnen AEM, zoals beweging, anders noemen, rollout, waar de wegen automatisch worden aangepast, maar het kan externe consumptie van de Fragmenten van de Inhoud gemakkelijker en stabieler maken, vooral wanneer het gebruiken van de vragen van GraphQL die individuele fragmenten met vragen direct richten ByPath. Dergelijke query&#39;s kunnen worden onderbroken als een fragmentpad verandert. Wanneer het gebruiken van het nieuwe DoorId vraagtype, blijft de vraag nu stabiel aangezien UUID van een fragment niet in gevallen verandert waar de wegen dat doen.
 
-** Dynamische media met OpenAPI-ondersteuning in Inhoudsfragmenteditor en GraphQL **
+**Dynamische Media met steun OpenAPI in de Redacteur van het Fragment van de Inhoud en GraphQL**
 
 Assets die in verschillende AEM as a Cloud Service-programma&#39;s zijn opgeslagen dan Content Fragments en die zijn ingeschakeld met de nieuwe Dynamic Media met OpenAPI-mogelijkheid, kan nu worden gebruikt in Content Fragments. Met de afbeeldingskiezer in de nieuwe Content Fragment Editor kunt u nu &quot;externe&quot; opslagruimten selecteren als bron voor afbeeldingselementen waarnaar moet worden verwezen in het fragment. En bij levering van dergelijke inhoudsfragmenten met AEM GraphQL bevat het JSON-antwoord nu vereiste eigenschappen voor externe elementen (assetId, repositoryId), zodat clienttoepassingen respectievelijke dynamische media kunnen maken met OpenAPI-URL&#39;s om de afbeelding op te halen.
 
-** Vertaal HTTP-API **
+**Vertaling HTTP API**
 
 De AEM Translation HTTP REST API die al een tijdje in de eerste adoptermodus is. De documentatie kan [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) worden gevonden. Met de API kunnen de vereiste stappen in het vertaalbeheerproces voor inhoud in AEM worden geautomatiseerd.
-
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
