@@ -4,7 +4,7 @@ description: Leer hoe te om  [!DNL Dynamic Media]  Prime en het dienstenaanbod v
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
+source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Zorg ervoor dat u aan de volgende vereisten voldoet voordat u het activeringspro
 
 1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [ Uw programma omvat  [!DNL Dynamic Media]  oplossingen ](#configure-dynamic-media-solutions).
-1. Uw organisatie heeft [!DNL Dynamic Media] met OpenAPI-credits.
+1. U hebt een [!DNL Dynamic Media] Prime- of Ultimate-licentie.
 
 #### [!DNL Dynamic Media with OpenAPI] mogelijkheden inschakelen in uw Cloud Service-omgeving {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -97,7 +97,7 @@ Vorm [!UICONTROL Dynamic Media] oplossingen om de basis en geavanceerde mogelijk
 Zorg ervoor dat u de volgende functies hebt om [!UICONTROL Dynamic Media] -oplossingen te configureren:
 
 1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. Uw organisatie heeft [!DNL Dynamic Media with OpenAPI] credits.
+1. U hebt [!DNL Dynamic Media] Ultimate-licentie.
 
 #### [!DNL Dynamic Media] -oplossingen configureren voor de levering van bedrijfsmiddelen {#configure-dynamic-media-solutions-for-asset-delivery}
 
