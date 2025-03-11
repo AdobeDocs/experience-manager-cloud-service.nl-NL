@@ -4,16 +4,26 @@ description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarp
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
 
-# Een persoonlijke GitHub-opslagplaats toevoegen in Cloud Manager {#private-repositories}
+# Een persoonlijke GitHub Cloud-opslagplaats toevoegen in Cloud Manager {#private-repositories}
 
-Door vestiging Cloud Manager om met uw privé bewaarplaatsen te integreren GitHub, kunt u uw code direct binnen GitHub bevestigen gebruikend Cloud Manager. Deze configuratie verwijdert de vereiste om uw code regelmatig te synchroniseren met de Adobe-opslagplaats.
+Door Cloud Manager in te stellen om te integreren met uw persoonlijke GitHub Cloud (repositories die worden gehost op `github.com` ), kunt u uw code direct binnen GitHub valideren met behulp van Cloud Manager. Deze configuratie verwijdert de vereiste om uw code regelmatig te synchroniseren met de Adobe-opslagplaats.
+
+>[!NOTE]
+>
+>U kunt ook de volgende typen opslagplaatsen toevoegen met webhaken:
+>
+>* GitHub Enterprise Server (zelfgehoste versie van GitHub)-opslagruimten
+>* GitLab-opslagruimten (zowel `gitlab.com` als zelfgehoste versies van GitLab)
+>* Bitbucket (zowel `bitbucket.org` als Bitbucket Server, de zelfgehoste versie van BitBucket) repositories
+>
+>Zie [ Externe Bewaarplaatsen in Cloud Manager toevoegen - Beperkte bèta ](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -25,23 +35,22 @@ Door vestiging Cloud Manager om met uw privé bewaarplaatsen te integreren GitHu
 
 * **CI/CD Pipelines**: Teams can still benefit from Adobe Cloud Manager's automated build, test, and deployment processes, as the integration allows the CI/CD pipelines to pull code from the organization's own GitHub repository.
 
-In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager. -->
+In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager.
 
 >[!NOTE]
 >
->Deze eigenschap is exclusief aan openbare GitHub. De steun voor zelf-ontvangen GitHub is niet beschikbaar.
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available. -->
 
 ## Configuratie {#configuration}
 
-De configuratie van een privé bewaarplaats GitHub in Cloud Manager bestaat uit twee stappen:
+De configuratie van een persoonlijke GitHub Cloud-opslagplaats in Cloud Manager bestaat uit twee stappen:
 
-1. [ voeg een privé bewaarplaats GitHub ](#add-repo) aan een geselecteerd programma toe.
-1. Dan, [ bevestigt eigendom van de privé bewaarplaats GitHub ](#validate-ownership).
+1. [ voeg een privé bewaarplaats van de Wolk GitHub ](#add-repo) aan een geselecteerd programma toe.
+1. Dan, [ bevestigt eigendom van de privé bewaarplaats van de Wolk GitHub ](#validate-ownership).
 
->[!NOTE]
->Cloud Manager biedt alleen ondersteuning voor persoonlijke opslagruimten op GitHub Cloud (github.com). <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
 
-### Een persoonlijke GitHub-opslagplaats toevoegen aan een programma {#add-repo}
+
+### Een persoonlijke GitHub Cloud-opslagplaats toevoegen aan een programma {#add-repo}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
@@ -110,11 +119,11 @@ Als u aan de bewaarplaats moet terugkeren later om de bevestiging, op de **pagin
 
 
 
-## Persoonlijke GitHub-opslagruimten gebruiken met Cloud Manager {#using}
+## Gebruik persoonlijke GitHub Cloud-opslagruimten met Cloud Manager {#using}
 
 Nadat de bewaarplaats GitHub in Cloud Manager wordt bevestigd, is de integratie volledig. U kunt de repository gebruiken met Cloud Manager.
 
-**om privé bewaarplaatsen met Cloud Manager te gebruiken:**
+**om privé GitHub Cloud bewaarplaatsen met Cloud Manager te gebruiken:**
 
 1. Wanneer u een trekkingsverzoek creeert, begint een controle GitHub automatisch.
 
@@ -138,7 +147,7 @@ Wanneer het trekkingsverzoek wordt samengevoegd of gesloten, wordt de volledige 
 
 
 
-## Particuliere opslagplaatsen koppelen aan pijpleidingen {#pipelines}
+## Private GitHub Cloud-opslagruimten koppelen aan pijpleidingen {#pipelines}
 
 Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) worden geassocieerd.
 
@@ -146,12 +155,12 @@ Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijp
 
 ## Beperkingen {#limitations}
 
-Bij het gebruik van persoonlijke opslagruimten met Cloud Manager gelden bepaalde beperkingen.
+Bepaalde beperkingen zijn van toepassing wanneer persoonlijke GitHub Cloud-opslagruimten met Cloud Manager worden gebruikt.
 
 * De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen.
 * Er wordt geen tag Git gemaakt en geduwd wanneer u privéopslagruimten gebruikt bij de productie van volledige stapelleidingen.
 * Als Adobe GitHub app wordt verwijderd uit uw organisatie GitHub, verwijdert het de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen.
-* De pijpleidingen die privé bewaarplaatsen gebruiken en de &quot;on-commit&quot;bouwstijltrekker zijn niet automatisch begonnen wanneer nieuw verbindt in de geselecteerde tak wordt geduwd.
+* De pijpleidingen die privé GitHub Cloud-bewaarplaatsen gebruiken en &quot;on-commit&quot;bouwen trekker zijn niet automatisch begonnen wanneer nieuw begaan in de geselecteerde tak wordt geduwd.
 * [ functionaliteit van het Hergebruik van Artefact ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) is niet op privé bewaarplaatsen van toepassing.
 * U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van Cloud Manager.
 Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, probeert Cloud Manager altijd om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.

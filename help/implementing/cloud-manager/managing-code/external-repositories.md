@@ -1,19 +1,19 @@
 ---
 title: Externe opslagplaatsen toevoegen aan Cloud Manager - beperkte bèta
-description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
+description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise Server-, GitLab- en Bitbucket-opslagruimten.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
 
 # Externe opslagplaatsen toevoegen in Cloud Manager - beperkte bèta {#external-repositories}
 
-Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
+Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise Server-, GitLab- en Bitbucket-opslagruimten.
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | Type token | Beschrijving |
    | --- | --- |
    | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br>・ In het **Symbolische 3} tekstgebied van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<br>・ Voor vereiste toestemmingen, zie [ nieuw KLOPJE voor GitHub ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat) creëren.<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<br>・ Voor vereiste toestemmingen, zie [ een nieuw KLOPJE voor GitLab ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat) creëren.<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   |  | **type van Bewaarplaats: Bitbucket**<br>・ In het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<br>・ creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>・ Voor vereiste toestemmingen, zie [ een nieuw KLOPJE voor Bitbucket ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat) creëren. |
+   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br>・ In het **Symbolische 3} tekstgebied van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<br>・ Voor vereiste toestemmingen, zie de volgende informatie: ![ creeer nieuw KLOPJE voor GitHub ](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>・ In het **Symbolische van de Toegang** gebied, kleef het teken u enkel creeerde. |
+   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<br>・ Voor vereiste toestemmingen, zie de volgende informatie: ![ creeer een nieuw KLOPJE voor GitLab ](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>・ In het **Symbolische van de Toegang** gebied, kleef het teken u enkel creeerde. |
+   |  | **type van Bewaarplaats: Bitbucket**<br>・ In het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<br>・ creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>・ Voor vereiste toestemmingen, zie de volgende informatie ![ een nieuw KLOPJE voor Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png) creëren. |
 
    >[!NOTE]
    >
