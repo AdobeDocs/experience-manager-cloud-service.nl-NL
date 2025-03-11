@@ -4,9 +4,9 @@ description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoege
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -136,6 +136,9 @@ Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voo
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
+
+   Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Zie de tabel onder stap 8.
+
 1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
@@ -145,11 +148,6 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
 1. Configureer de webhaak om de juiste gebeurtenissen te verzenden die Cloud Manager verwacht.
 
-   Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar bij het volgende:
-
-   * [ Web-haken van de opstelling voor de Server van de Onderneming GitHub ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-pat?id=webhaak-events).
-   * [ Web-haken van de opstelling voor GitLab ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-pat?id=webhaak-events).
-   * [ Web-haken van de opstelling voor Bitbucket ](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-pat?id=webhaak-events).
 
 ### Validatie van trekkingsverzoeken met webhaken
 
