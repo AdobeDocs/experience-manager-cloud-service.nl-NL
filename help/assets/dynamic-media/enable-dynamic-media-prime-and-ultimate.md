@@ -4,7 +4,7 @@ description: Leer hoe te om  [!DNL Dynamic Media]  Prime en het dienstenaanbod v
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
+source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Voer de volgende stappen uit om [!DNL Dynamic Media with OpenAPI] in te schakele
    1. **[!UICONTROL Environment stage]**: **[!UICONTROL Running]**
    1. ![ DM geactiveerd ](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**:**[!UICONTROL OpenAPI capabilities are activated]**
 
-      ![ activering succesvol ](/help/assets/assets/activation-successful.png){width="700" align="center"}
+      ![ activering succesvol ](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### Opnieuw activeren {#retry-activation}
 
@@ -74,7 +74,7 @@ Als activering mislukt, geeft de Cloud Manager de volgende statusupdates weer:
 * **[!UICONTROL Environment stage]**: **[!UICONTROL DM with OpenAPI Failed]**
 * ![ DM geactiveerd ](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**:**[!UICONTROL OpenAPI capabilities failed to activate]**
 
-  ![ herprobeer activering ](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+  ![ herprobeer activering ](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 Selecteer **[!UICONTROL Click to retry]** om activering opnieuw te starten.
 
@@ -109,7 +109,7 @@ Voer de volgende stappen uit:
 
 1. Selecteer **[!UICONTROL Dynamic Media]** oplossing en klik op **[!UICONTROL Continue]** om **[!UICONTROL Dynamic Media]** oplossing aan uw programma toe te voegen. Met deze actie start u alle bestaande omgevingen in uw programma opnieuw op en voegt u de [!DNL Dynamic Media] -oplossing eraan toe. Bovendien wordt elke nieuwe omgeving die u onder uw programma maakt, automatisch [!DNL Dynamic Media] opgehaald.
 
-   ![ opstelling voor productie ](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![ opstelling voor productie ](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 Zie [ activeren  [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) beginnen de mogelijkheden van [!DNL Dynamic Media] met mogelijkheden OpenAPI in uw milieu te gebruiken.
 
@@ -123,7 +123,7 @@ Als u de bestaande bedrijven (accounts) wilt zien of een nieuw [!DNL Dynamic Med
 
 1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [!DNL Dynamic Media with OpenAPI] credits in uw organisatie.
+1. U hebt [!DNL Dynamic Media] Ultimate-licentie.
 
 #### [!DNL Dynamic Media] Bedrijven in uw IMS-organisatie maken en weergeven {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
@@ -135,7 +135,7 @@ Voer de volgende stappen uit om een nieuw [!DNL Dynamic Media] -bedrijf (account
 
 1. Geef een unieke bedrijfsnaam van [!DNL Dynamic Media] op, selecteer een bedrijfsgebied en voeg een lijst met e-mailadressen van bedrijfsbeheerders toe, gescheiden door komma&#39;s.
 
-   ![ creeer Dynamisch bedrijf van Media ](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+   ![ creeer Dynamisch bedrijf van Media ](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
 1. Klik op **[!UICONTROL Create]** om uw bedrijf te maken. Met deze actie voegt u een nieuwe rij toe aan de **[!UICONTROL [!DNL Dynamic Media] companies]** -sectie en geeft u **[!UICONTROL Setting up]** weer als de **[!UICONTROL STATUS]** -sectie van het bedrijf.
 
@@ -155,11 +155,11 @@ Als het aanmaken van [!DNL Dynamic Media] bedrijven mislukt, voert u de volgende
 
 1. Als **[!UICONTROL Status]** in behandeling is, stelt u het probleem ter oplossing voor aan het klantenondersteuningsteam.
 
-   ![ hangende status ](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+   ![ hangende status ](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
 1. Als **[!UICONTROL Status]** is mislukt, probeert u het opnieuw op basis van de oorzaak van de fout.
 
-   ![ ontbroken status ](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+   ![ ontbroken status ](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### Optioneel: aangepaste domein in leveringslaag configureren {#configure-custom-domain-in-delivery-tier}
 
@@ -196,7 +196,7 @@ Voer de volgende stappen in Cloud Manager uit om een aangepast domein in de leve
 
 1. Voer de **[!UICONTROL Configure CNAME]** stappen uit om [ cdn.adobeaemcloud.com ](http://cdn.adobeaemcloud.com/) (het verslag van CNAME) in het DNS verslag van de DNS dienstverlener in kaart te brengen. Deze afbeelding zorgt ervoor dat de verzoeken die bij het douanedomein worden ontvangen aan Adobe CDN opnieuw worden gericht.
 
-   ![ ga levende gereedheidsdialoogdoos ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+   ![ ga levende gereedheidsdialoogdoos ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
 1. Klik op **[!UICONTROL Ok]** en **[!UICONTROL STATUS]** werkt het bestand bij met **[!UICONTROL Verified]** . Het aangepaste domein kan worden gebruikt in de URL van de levering.
 
@@ -267,7 +267,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
-TBD: Wiki in progress.
+TBD: Wiki in progress..
 -->
 
 ## [!DNL Dynamic Media] Prime inschakelen {#enable-dynamic-media-prime}
