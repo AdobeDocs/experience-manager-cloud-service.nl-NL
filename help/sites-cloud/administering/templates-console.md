@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer hoe de sjabloonconsole fungeert als de centrale locatie voor het weergeven 
 
 ## Overzicht {#overview}
 
-Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. [ AEM bewerkbare malplaatjes ](/help/implementing/developing/components/templates.md) kan de structuur van de resulterende pagina, om het even welke aanvankelijke inhoud, en de componenten bepalen die (ontwerpeigenschappen) kunnen worden gebruikt.
+Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. [ AEM die editable malplaatjes ](/help/implementing/developing/components/templates.md)  kan de structuur van de resulterende pagina, om het even welke aanvankelijke inhoud, en de componenten bepalen die (ontwerpeigenschappen) kunnen worden gebruikt.
 
 De auteurs van de inhoud worden voorgesteld met een selectie van beschikbare malplaatjes wanneer zij [ nieuwe pagina&#39;s in de plaatsenconsole ](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren. Sjablonen kunnen worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met:
 
@@ -49,7 +49,7 @@ Selecteer een sjabloon om de beschikbare opties op de werkbalk weer te geven.
 * [Bewerken](#edit-edit)
 * [Eigenschappen](#properties)
 * [Uitschakelen/inschakelen](#enable-disable)
-* [Publish](#publish)
+* [Publiceren](#publish)
 * [Kopiëren](#copy)
 * [Verwijderen](#delete)
 
@@ -95,12 +95,12 @@ Wanneer een malplaatje wordt gecreeerd, is het door gebrek of in a **Ontwerp** s
 
 Een sjabloon moet zijn ingeschakeld voordat het door inhoudsauteurs kan worden gebruikt om pagina&#39;s te maken. Als een sjabloon niet meer nodig is, kan deze worden uitgeschakeld zodat deze niet meer wordt weergegeven in de wizard Pagina maken.
 
-* Selecteer het malplaatje en klik of tik **onbruikbaar maken** om het malplaatje onbruikbaar te maken.
-* Selecteer het malplaatje en klik of tik **toelaten** om het malplaatje toe te laten.
+* Selecteer het malplaatje en klik **onbruikbaar maken** om het malplaatje onbruikbaar te maken.
+* Selecteer het malplaatje en klik **toelaten** om het malplaatje toe te laten.
 
 ## Publiceren {#publish}
 
-Een sjabloon die met de sjablooneditor is gemaakt, kan alleen worden gebruikt nadat het is gepubliceerd. Selecteer het malplaatje en klik of tik **Publish** om te publiceren.
+Een sjabloon die met de sjablooneditor is gemaakt, kan alleen worden gebruikt nadat het is gepubliceerd. Selecteer het malplaatje en klik **publiceren** om te publiceren.
 
 Sjablonen die zijn gemaakt met de universele editor hoeven niet te worden gepubliceerd om te worden gebruikt.
 
@@ -117,7 +117,7 @@ Na het plakken kunt u:
 * [ geef het malplaatje ](#edit) uit om het zonodig aan te passen.
 * [ gebruik het eigenschappenvenster ](#properties) om de malplaatjetitel bij te werken.
 * [ laat het malplaatje ](#enable-disable) toe zodat kan het worden gebruikt om pagina tot stand te brengen.
-* [ Publish het malplaatje ](#publish) indien vereist.
+* [ publiceer het malplaatje ](#publish) indien vereist.
 
 >[!TIP]
 >
