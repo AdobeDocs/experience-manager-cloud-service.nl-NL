@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6247'
 ht-degree: 2%
 
 ---
@@ -320,6 +320,7 @@ ht-degree: 2%
          + [Een migratieset verwijderen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Belangrijkste functies beheren na migratie](/help/journey-migration/managing-principals-after-migration.md)
+         + [Bulk uploaden van Principals naar IMS na migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [Problemen met het gereedschap Inhoud overbrengen oplossen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Het Verouderde Hulpmiddel van de Toewijzing van de Gebruiker (Verouderd) {#legacy-user-mapping-tool}
             + [Overzicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)

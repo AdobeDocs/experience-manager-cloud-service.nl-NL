@@ -4,9 +4,9 @@ description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten t
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -145,13 +145,14 @@ Ga naar Cloud Acceleration Manager om deze gegevens te bekijken. Klik op de proj
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Klik het **rapport van de Download** knoop om het volledige komma-gescheiden (CSV) rapport te downloaden.  Merk ook op dat aan het eind van dit rapport het Rapport van de Gebruiker is, dat voor post-migratie gebruikersbeheer kan worden gebruikt.
+Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Om het volledige komma-gescheiden (CSV) Belangrijkste Rapport van de Migratie te downloaden **Belangrijkste Rapport van de Migratie** van de drop-down lijst onder **Download een dossier...** en klik de **Download** knoop. Merk ook op dat aan het eind van dit rapport het Rapport van de Gebruiker is, dat voor post-migratie gebruikersbeheer kan worden gebruikt.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 In het rapport &quot;Belangrijkste migratie&quot; wordt het volgende vermeld:
 
 * Elke groep is gemigreerd en het eerste inhoudspad dat ertoe heeft geleid dat die groep is gemigreerd. De groep kan zich ook op andere paden bevinden, maar alleen het eerste pad dat voor een bepaalde groep is gevonden, wordt gerapporteerd. Het meldt ook of het in ACL of een beleid van de CUG werd gevonden.
+* Elke groep die als een lokale groep is gemigreerd, krijgt het woord &quot;lokaal&quot; dat op de regel van de groep wordt aangegeven.
 * Elke groep is niet gemigreerd en de reden waarom deze niet is gemigreerd.  Doorgaans is dit een van de volgende redenen:
    * Het is een ingebouwde groep
    * Het bevindt zich al op het doelsysteem
