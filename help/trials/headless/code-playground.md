@@ -28,12 +28,12 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="In deze module, leerde u hoe te om de Cliënt zonder AEM voor JavaScript te gebruiken om JSON- gegevens van uw proefmilieu te halen gebruikend GraphQL persisted vragen.<br><br> nu begrijpt u hoe u deze cliënt kunt gebruiken om gegevens van binnen uw eigen Webtoepassing te verbruiken."
+>title="In deze module hebt u geleerd hoe u de AEM Headless-client voor JavaScript kunt gebruiken om JSON-gegevens op te halen uit uw testomgeving met GraphQL persisted query&#39;s.<br><br> nu begrijpt u hoe u deze cliënt kunt gebruiken om gegevens van binnen uw eigen Webtoepassing te verbruiken."
 >abstract=""
 
 ## CodePen {#codepen}
 
-CodePen is een online code-editor en afspeellocatie voor webontwikkeling aan de voorkant. Hiermee kunt u HTML-, CSS- en JavaScript-code in uw browser schrijven en de resultaten van uw werk vrijwel direct bekijken. U kunt uw werk ook opslaan en met anderen delen. De Adobe heeft tot een app in CodePen geleid die u kunt gebruiken om JSON- gegevens van uw proefmilieu te halen gebruikend de [ AEM Cliënt zonder Titel voor JavaScript ](https://github.com/adobe/aem-headless-client-js). U kunt deze app ongewijzigd gebruiken of deze in uw eigen CodePen-account opnemen om deze verder aan te passen.
+CodePen is een online code-editor en afspeellocatie voor webontwikkeling aan de voorkant. Hiermee kunt u HTML-, CSS- en JavaScript-code in uw browser schrijven en de resultaten van uw werk vrijwel direct bekijken. U kunt uw werk ook opslaan en met anderen delen. Adobe heeft een app in CodePen gecreeerd die u kunt gebruiken om JSON- gegevens van uw proefmilieu te halen gebruikend de [ Hoofdloze Cliënt van AEM voor JavaScript ](https://github.com/adobe/aem-headless-client-js). U kunt deze app ongewijzigd gebruiken of deze in uw eigen CodePen-account opnemen om deze verder aan te passen.
 
 Het klikken van de **Lancering app van de steekproefCodePen** knoop van de proef neemt u aan app in CodePen. De app dient als minimaal voorbeeld voor het ophalen van JSON-gegevens met JavaScript. De voorbeeld-app is ontworpen om JSON-inhoud te renderen die wordt geretourneerd, ongeacht de structuur van het onderliggende model van inhoudsfragment. De app haalt gegevens op uit een `aem-demo-assets` aanhoudend query dat in uw testomgeving is opgenomen. U dient een JSON-respons te zien die vergelijkbaar is met het volgende:
 
@@ -55,15 +55,15 @@ Nu u een beetje over CodePen kent, zult u dan app vormen om gegevens van de voor
 
 ## JavaScript Code Walkthrough {#code-walkthrough}
 
-De **JS** ruit aan het recht in CodePen bevat JavaScript van voorbeeldapp. Vanaf regel 2 importeert u de AEM Headless Client voor JavaScript vanuit de Skypack CDN. Skypack wordt gebruikt om ontwikkeling zonder een bouwstijlstap te vergemakkelijken, maar u kunt de Zwaarloze Cliënt van de AEM met NPM of van de Garde in uw eigen projecten ook gebruiken. Controle uit de gebruiksinstructies in [ README ](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) voor verder detail.
+De **JS** ruit aan het recht in CodePen bevat JavaScript van voorbeeldapp. Vanaf regel 2 importeert u de AEM Headless Client voor JavaScript vanuit de Skypack CDN. Skypack wordt gebruikt om ontwikkeling zonder bouwstijlstap te vergemakkelijken, maar u kunt de Zwaardeloze Cliënt van AEM met NPM of Gararn in uw eigen projecten ook gebruiken. Controle uit de gebruiksinstructies in [ README ](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) voor verder detail.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-Op regel 6 zijn de gegevens van de publicatiehost gelezen uit de parameter `publishHost` query. Deze parameter is de gastheer waarvan de Zwaardeloze Cliënt van de AEM gegevens haalt. Deze functionaliteit zou typisch in uw app worden gecodeerd, maar u gebruikt een vraagparameter om het voor de app CodePen gemakkelijker te maken om met verschillende milieu&#39;s te werken.
+Op regel 6 zijn de gegevens van de publicatiehost gelezen uit de parameter `publishHost` query. Deze parameter is de host van waaruit de AEM Headless-client gegevens ophaalt. Deze functionaliteit zou typisch in uw app worden gecodeerd, maar u gebruikt een vraagparameter om het voor de app CodePen gemakkelijker te maken om met verschillende milieu&#39;s te werken.
 
-U vormt de Zwaarloze Cliënt van de AEM op lijn 12:
+U configureert de AEM Headless-client op regel 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -79,7 +79,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 >
 >**serviceURL** wordt geplaatst om een functie van volmachtAdobe I/O Runtime te gebruiken om kwesties te vermijden CORS. Deze proxy is niet vereist voor uw eigen projecten, maar is vereist voor de CodePen-app voor uw testomgeving. De volmachtsfunctie wordt gevormd om de **te gebruiken publishHost** waarde die in de vraagparameter werd verstrekt.
 
-Tot slot wordt de functie `fetchJsonFromGraphQL()` gebruikt om het ophaalverzoek uit te voeren gebruikend de Cliënt AEM Headless. Het wordt geroepen telkens als de code wordt veranderd, of kan worden teweeggebracht door **te klikken herstelt** verbinding. De daadwerkelijke `aemHeadlessClient.runPersistedQuery(..)` vraag komt op lijn 34 voor. Een beetje later wijzigt u de manier waarop deze JSON-gegevens worden gerenderd, maar drukt u deze nu af naar het `#output` div-element met behulp van de functie `resultToPreTag(queryResult)` .
+Ten slotte wordt de functie `fetchJsonFromGraphQL()` gebruikt om de aanvraag voor het ophalen uit te voeren met de AEM Headless-client. Het wordt geroepen telkens als de code wordt veranderd, of kan worden teweeggebracht door **te klikken herstelt** verbinding. De daadwerkelijke `aemHeadlessClient.runPersistedQuery(..)` vraag komt op lijn 34 voor. Een beetje later wijzigt u de manier waarop deze JSON-gegevens worden gerenderd, maar drukt u deze nu af naar het `#output` div-element met behulp van de functie `resultToPreTag(queryResult)` .
 
 ## Gegevens ophalen van uw permanente query {#use-persisted-query}
 

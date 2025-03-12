@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -27,7 +27,7 @@ AEM Forms biedt verschillende API&#39;s voor het verzenden van formulieren, proc
 * Een dynamisch PDF-document afvlakken
 * Een document met records genereren (met Forms Service of Output Service)
 * Een interactief PDF-document samenvoegen met een ander PDF-document
-* De stappen voor taakstap toewijzen en communicatie-API van AEM Workflows gebruiken
+* De stappen voor taakstappen toewijzen en communicatie-API van AEM Workflows gebruiken
 
 Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van een document of formulier of de uiteindelijke indeling van het gerenderde document. In een transactierapport worden de transacties in twee categorieën verdeeld: Forms verzonden en gerenderde documenten.
 
@@ -53,7 +53,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Gepubliceerd Forms-beheer"
->abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van AEM Forms Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Nota:** de grafiek verstrekt gegevens specifiek voor huidige AEM Forms publiceren instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -69,12 +69,12 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Forms-fragmentbeheer"
->abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van AEM Forms Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Nota:** de grafiek verstrekt gegevens specifiek voor huidige AEM Forms publiceren instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Tijdbeheer van formulierfragment Gemiddelde"
->abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van AEM Forms Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Nota:** de grafiek verstrekt gegevens specifiek voor huidige AEM Forms publiceren instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 
 <!-- 
@@ -206,7 +206,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePrintedOutput/post" target="_blank">exportPDF</a></td>
-   <td>Hiermee converteert u XDP-bestand of PDF-document naar ondersteunde bestandstypen.</td>
+   <td>Hiermee converteert u XDP- of PDF-documenten naar ondersteunde bestandstypen.</td>
    <td>Verwerkte documenten</td>
    <td> </td>
   </tr>
@@ -448,7 +448,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/DDX-execution/operation/InvokeDDX" target="_blank">oproepen</a></td>
    <td>Hiermee wordt de DDX uitgevoerd op de opgegeven invoerdocumenten en wordt een object met de resultaatdocumenten geretourneerd</td>
    <td>Verwerkte documenten</td>
-   <td>Alle invoerbestandsindelingen die door PDF Generator-, Forms- en Output-services worden ondersteund, worden door de Assembler-service ondersteund voor al die indelingen als uitvoerbestandsindelingen. </td>
+   <td>Alle invoerbestandsindelingen die door PDF Generator, Forms en Output Services worden ondersteund, worden door de Assembler-service ondersteund voor al die indelingen als uitvoerbestandsindelingen. </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA">toPDFA</a></td>
@@ -462,14 +462,14 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u een of meer van de volgende bewerkingen uitvoert:
 
 1. Conversie van niet-PDF-indelingen naar PDF-indelingen. <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
-1. Omzetten van PDF-indeling naar PDF/A-indeling.
-1. Conversie van PDF-indeling naar niet-PDF-indeling. Voorbeelden hiervan zijn de transformatie van de indeling PDF naar Afbeelding of de conversie van de indeling PDF naar tekst.
+1. Conversie van PDF-indeling naar PDF/A-indeling.
+1. Conversie van PDF-indeling naar niet-PDF-indeling. Voorbeelden hiervan zijn de transformatie van de PDF naar de afbeeldingsindeling of de conversie van de PDF naar de Text-indeling.
 
 
 >[!NOTE]
 >
 >* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De aanroepAPI kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
->* Eén enkel PDF-document dat met de assembleerservice wordt gemaakt, kan worden beschouwd als geen, enkele of meerdere transacties. Het aantal getelde transacties is afhankelijk van de opgegeven code.
+>* Eén PDF-document dat met de assembleerservice wordt gemaakt, kan worden beschouwd als geen, enkele of meerdere transacties. Het aantal getelde transacties is afhankelijk van de opgegeven code.
 >
 
 <!--
@@ -495,7 +495,7 @@ Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u 
 
 ## Billable Data Capture API&#39;s {#billable-data-capture-apis}
 
-Alle verzendingen van adaptieve formulieren worden administratief verwerkt als transacties. Door gebrek, wordt de voorlegging van een Vorm van de PDF niet administratief verwerkt als transactie. Gebruik verstrekte [ transactierecorder API ](record-transaction-custom-implementation.md) om een voorlegging van PDF forms als transactie te registreren.
+Alle verzendingen van adaptieve formulieren worden administratief verwerkt als transacties. Een PDF-formulier wordt standaard niet als een transactie verwerkt. Gebruik verstrekte [ transactierecorder API ](record-transaction-custom-implementation.md) om een voorlegging van PDF forms als transactie te registreren.
 
 ### Adaptieve Forms {#adaptive-forms}
 
@@ -513,7 +513,7 @@ Alle verzendingen van adaptieve formulieren worden administratief verwerkt als t
    <td>Forms verzonden</td>
    <td>
     <ul>
-     <li>Een of twee transacties worden verwerkt met geslaagde verzendingen. Het aantal transacties dat wordt meegeteld, is afhankelijk van het type verzendactie dat wordt gebruikt voor verzending. Bijvoorbeeld, verzendend PDF door e-mail verzend actierekeningen voor twee tellingen van transacties. Eén transactie voor het verzenden van formulieren en een andere voor PDF die is gegenereerd met de service Document of Record (DOR). </li>
+     <li>Een of twee transacties worden verwerkt met geslaagde verzendingen. Het aantal transacties dat wordt meegeteld, is afhankelijk van het type verzendactie dat wordt gebruikt voor verzending. Als u bijvoorbeeld PDF via e-mail verzendt, worden actierekeningen voor twee tellingen van transacties verzonden. Een transactie voor het verzenden van formulieren en een andere transactie voor PDF die is gegenereerd met de service Document of Record (DOR). </li>
      <li>Met het adaptieve formulier in een adaptief formulier (adaptief formulierformaat) wordt slechts één transactie verwerkt. U kunt een willekeurig aantal adaptieve formulieren in een adaptief formulier gebruiken.</li>
     </ul> </td>
   </tr>
@@ -568,7 +568,7 @@ Alle verzendingen van adaptieve formulieren worden administratief verwerkt als t
 
 ## Billable Form-centric AEM Workflows {#billable--form-centric-aem-workflows}
 
-Taken en documentservicestappen toewijzen van Form-centric AEM Workflows worden als transacties geboekt. Als een workflowstap een transactie verwerkt en de workflow niet wordt voltooid, wordt het aantal transacties niet teruggedraaid.
+Taken en documentservicestappen toewijzen aan Form-centric AEM Workflows wordt als transacties beschouwd. Als een workflowstap een transactie verwerkt en de workflow niet wordt voltooid, wordt het aantal transacties niet teruggedraaid.
 
 <!--
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
@@ -621,7 +621,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 -->
 
-### Formuliergerichte AEM Workflows {#form-centric-aem-workflows}
+### Form-centric AEM Workflows {#form-centric-aem-workflows}
 
 <table>
  <tbody>
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## Infactureerbare API&#39;s opnemen als transacties voor aangepaste code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de om een voorvertoning van een interactieve communicatie weer te geven, met behulp van niet-standaardformulierverzending, en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt API van uw douaneimplementaties roepen om [ een transactie ](/help/forms/record-transaction-custom-implementation.md) te registreren.
+Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de Agent voor het weergeven van een interactieve communicatie, het gebruik van niet-standaardformulierverzending en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt API van uw douaneimplementaties roepen om [ een transactie ](/help/forms/record-transaction-custom-implementation.md) te registreren.
 
 ## Verwante artikelen {#related-articles}
 

@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service-ontwikkelingsrichtsnoeren
-description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM op gebouwen en AEM in AMS.
+description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
@@ -16,10 +16,10 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service-ontwikkelingsrichtsnoeren"
->abstract="Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM op gebouwen en AEM in AMS."
+>abstract="Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo van pakketstructuur"
 
-Dit document bevat richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
+In dit document worden richtsnoeren gegeven voor de ontwikkeling van AEM as a Cloud Service en voor belangrijke verschillen tussen AEM in vestigingen en AEM in AMS.
 
 ## Code moet clustervriendelijk zijn {#cluster-aware}
 
@@ -37,7 +37,7 @@ De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortgeduurd.
 
 Gebruik het bestandssysteem van de instantie niet in AEM as a Cloud Service. De schijf is ephemraal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
-Als voorbeeld waar het gebruik van het bestandssysteem niet wordt ondersteund, moet de Publish-laag ervoor zorgen dat alle gegevens die moeten worden geduurd, worden verzonden naar een externe service voor opslag op langere termijn.
+Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou de Publish rij ervoor moeten zorgen dat om het even welke gegevens die moeten worden voortgeduurd naar een externe dienst voor opslag op langere termijn wordt verscheept.
 
 ## Waarneming {#observation}
 
@@ -51,19 +51,19 @@ Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen
 
 Gebruik de Sling Commons Planner niet voor het plannen aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het gepland is.
 
-Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet worden gewaarborgd om worden uitgevoerd en daarom moet met voorzichtigheid worden gebruikt. Dit geldt al voor AEM implementaties in het heden.
+Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet worden gewaarborgd om worden uitgevoerd en daarom moet met voorzichtigheid worden gebruikt. Dit geldt al voor AEM-implementaties in het heden.
 
 ## Uitgaande HTTP-verbindingen {#outgoing-http-connections}
 
 Het wordt sterk aanbevolen dat uitgaande HTTP-verbindingen redelijke time-outs voor verbinding en lezen instellen. De voorgestelde waarden zijn 1 seconde voor de time-out van de verbinding en 5 seconden voor de time-out bij lezen. De nauwkeurige aantallen moeten worden bepaald gebaseerd op de prestaties van het backend systeem die deze verzoeken behandelen.
 
-Voor code die deze time-outs niet toepast, AEM instanties die op AEM as a Cloud Service worden uitgevoerd, zorgen voor een algemene time-out. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen.
+Voor code die deze time-outs niet toepast, dwingen AEM-instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-outs af. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen.
 
-De Adobe adviseert het gebruik van de verstrekte [ Cliënt 4.x van HttpComponents van Apache {](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van de verbindingen van HTTP.
+Adobe adviseert het gebruik van de verstrekte [ Cliënt 4.x van HttpComponents van Apache {](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van de verbindingen van HTTP.
 
 Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid zelf nodig kan zijn, zijn:
 
-* [ java.net.URL ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) en/of [ java.net.URLConnection ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Door AEM verstrekt)
+* [ java.net.URL ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) en/of [ java.net.URLConnection ](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (die door AEM wordt verstrekt)
 * [ Apache Commons HttpClient 3.x ](https://hc.apache.org/httpclient-3.x/) (niet geadviseerd aangezien het verouderd is en door versie 4.x wordt vervangen)
 * [ OK Http ](https://square.github.io/okhttp/) (Niet verstrekt door AEM)
 
@@ -71,7 +71,7 @@ Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van derg
 
 ## Aanvraagsnelheidslimieten afhandelen {#rate-limit-handling}
 
-Wanneer het tarief van inkomende verzoeken aan AEM gezonde niveaus overschrijdt, AEM aan nieuwe verzoeken met de foutencode van HTTP 429 beantwoordt. Toepassingen die programmatische vraag aan AEM maken kunnen defensief coderen overwegen, die na een paar seconden met een exponentiële backoff strategie opnieuw proberen. Vóór medio augustus 2023 reageerde AEM op dezelfde voorwaarde met HTTP-foutcode 503.
+Wanneer het tarief van inkomende verzoeken aan AEM gezonde niveaus overschrijdt, antwoordt AEM aan nieuwe verzoeken met de foutencode van HTTP 429. Toepassingen die programmatische vraag aan AEM maken kunnen defensief coderen overwegen, die na een paar seconden met een exponentiële backoff strategie opnieuw proberen. Vóór medio augustus 2023 reageerde AEM op dezelfde voorwaarde met HTTP-foutcode 503.
 
 ## Geen Klassieke UI-aanpassingen {#no-classic-ui-customizations}
 
@@ -85,17 +85,17 @@ Bovendien mag de code niet proberen native binaire bestanden of native Java-exte
 
 ## Geen streamingbinaire getallen via AEM as a Cloud Service {#no-streaming-binaries}
 
-De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kern AEM diensten zal dienen.
+De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de diensten van kernAEM zal dienen.
 
-Gebruik bijvoorbeeld niet `asset.getOriginal().getStream()` , dat het downloaden van een binair getal naar de vaste schijf van de AEM service activeert.
+Gebruik bijvoorbeeld niet `asset.getOriginal().getStream()` , dat het downloaden van een binair getal naar de vaste schijf van de AEM-service activeert.
 
 ## Geen reverse Replication-agents {#no-reverse-replication-agents}
 
-Reverse Replication from Publish to Author wordt niet ondersteund in AEM as a Cloud Service. Als een dergelijke strategie nodig is, kunt u een externe persistentieopslag gebruiken die onder het landbouwbedrijf van de instanties van Publish en potentieel de cluster van de Auteur wordt gedeeld.
+De omgekeerde replicatie van Publiceren naar Auteur wordt niet ondersteund in AEM as a Cloud Service. Als een dergelijke strategie nodig is, kunt u een externe persistentieopslag gebruiken die onder het landbouwbedrijf van Publish instanties en potentieel de cluster van de Auteur wordt gedeeld.
 
 ## De voorwaartse Medewerkers van de Replicatie zouden kunnen moeten worden gesteund {#forward-replication-agents}
 
-Inhoud wordt via een submechanisme van Auteur naar Publish gerepliceerd. Aangepaste replicatiemiddelen worden niet ondersteund.
+Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Aangepaste replicatiemiddelen worden niet ondersteund.
 
 ## Geen overbelastende ontwikkelomgevingen {#overloading-dev-envs}
 
@@ -142,7 +142,7 @@ Stel `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.con
 
 Laat het logbestand op het niveau van het DEBUG-logbestand niet langer dan nodig is, omdat dit veel items genereert.
 
-De discrete logboekniveaus kunnen voor de verschillende AEM milieu&#39;s worden geplaatst gebruikend runtime op wijze-gebaseerde configuratie OSGi die als het wenselijk is om altijd bij `DEBUG` tijdens ontwikkeling te registreren. Bijvoorbeeld:
+De afzonderlijke logboekniveaus kunnen voor de verschillende milieu&#39;s van AEM worden geplaatst gebruikend loopwijze-gebaseerde configuratie OSGi die als het wenselijk is om altijd bij `DEBUG` tijdens ontwikkeling te registreren. Bijvoorbeeld:
 
 | Omgeving | OSGi-configuratielocatie per uitvoeringsmodus | `org.apache.sling.commons.log.level` eigenschapswaarde |
 | - | - | - |
@@ -166,13 +166,13 @@ De logniveaus zijn als volgt:
 
 ### Thread Dumps {#thread-dumps}
 
-Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, AEM de steun van het contact als de draaddumps voor het zuiveren van een kwestie nodig zijn, die het nauwkeurige tijdvenster specificeren.
+Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, contacteer de steun van AEM als de draaddumps voor het zuiveren van een kwestie nodig zijn, die het nauwkeurige tijdvenster specificeren.
 
 ## CRX/DE Lite en AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### Lokale ontwikkeling {#local-development}
 
-Voor lokale ontwikkeling, hebben de Ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de Console van het AEM Web (`/system/console`).
+Voor lokale ontwikkeling, hebben de Ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de Console van het Web van AEM (`/system/console`).
 
 Bij lokale ontwikkeling (met behulp van de SDK) kunnen `/apps` en `/libs` rechtstreeks worden geschreven naar een andere omgeving dan de cloud waar deze mappen op hoofdniveau onveranderlijk zijn.
 
@@ -189,7 +189,7 @@ Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur,
 
 In plaats daarvan kan de Repository Browser worden gestart vanuit de AEM as a Cloud Service Developer Console, waarmee een alleen-lezen weergave in de opslagplaats wordt geboden voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Voor meer informatie zie [ Browser van de Bewaarplaats ](/help/implementing/developing/tools/repository-browser.md).
 
-Er is een set tools beschikbaar voor foutopsporing in AEM as a Cloud Service-ontwikkelomgevingen in de AEM as a Cloud Service Developer Console for RDE-, Dev-, stage- en productieomgevingen. De URL kan worden bepaald door de URL van de Auteur of Publish-service als volgt aan te passen:
+Er is een set tools beschikbaar voor foutopsporing in AEM as a Cloud Service-ontwikkelomgevingen in de AEM as a Cloud Service Developer Console for RDE-, Dev-, stage- en productieomgevingen. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,11 +215,11 @@ Ook nuttig voor het zuiveren, heeft AEM as a Cloud Service Developer Console een
 
 ![ Dev Console 4 ](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor productieprogramma&#39;s wordt de toegang tot de AEM as a Cloud Service Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Adobe Admin Console, terwijl voor sandboxprogramma&#39;s de AEM as a Cloud Service Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; nodig voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te bekijken. Voor meer informatie over vestiging gebruikerstoestemmingen, zie [ Documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor productieprogramma&#39;s wordt de toegang tot de AEM as a Cloud Service Developer Console gedefinieerd door de &quot;Cloud Manager - Developer Role&quot; in de Adobe Admin Console, terwijl voor sandboxprogramma&#39;s de AEM as a Cloud Service Developer Console beschikbaar is voor gebruikers met een productprofiel dat hen toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM Users of AEM-beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te bekijken. Voor meer informatie over vestiging gebruikerstoestemmingen, zie [ Documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Prestatiebewaking {#performance-monitoring}
 
-De Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kan de metrieke toepassing niet worden nageleefd.
+Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kan de metrieke toepassing niet worden nageleefd.
 
 ## E-mail verzenden {#sending-email}
 
@@ -307,4 +307,4 @@ Zie de [ documentatie van Apache Oak ](https://jackrabbit.apache.org/oak/docs/do
 
 ## [!DNL Assets] Richtlijnen voor ontwikkeling en gebruik {#use-cases-assets}
 
-Om over de gevallen van het ontwikkelingsgebruik, aanbevelingen, en verwijzingsmaterialen voor Assets as a Cloud Service te leren, zie [ verwijzingen van de Ontwikkelaar voor Assets ](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Om over de gevallen, de aanbevelingen, en de verwijzingsmaterialen van het ontwikkelingsgebruik voor Assets as a Cloud Service te leren, zie [ verwijzingen van de Ontwikkelaar voor Assets ](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

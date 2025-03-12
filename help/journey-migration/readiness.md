@@ -1,6 +1,6 @@
 ---
 title: Gereedheidsfase
-description: Leer meer over de stappen die u moet ondernemen om ervoor te zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst.
+description: Leer meer over de stappen die u moet nemen om ervoor te zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
@@ -16,7 +16,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="Overgang plannen"
->abstract="Voordat u begint met de overgang naar de Cloud Service, moet u zich vertrouwd maken met AEM as a Cloud Service. Bekijk de opmerkelijke wijzigingen die erin zijn aangebracht en de functies die zijn vervangen of vervangen."
+>abstract="Voordat u begint met uw overgang naar Cloud Service, moet u zich vertrouwd maken met AEM as a Cloud Service. Bekijk de opmerkelijke wijzigingen die erin zijn aangebracht en de functies die zijn vervangen of vervangen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analysator van best practices"
 
 In deze fase van de AEM as a Cloud Service Migration Journey weet u uzelf bekend met AEM as a Cloud Service. U kunt de belangrijkste wijzigingen die zijn geïntroduceerd bekijken en begrijpen wat nodig is om een geslaagde migratie naar de cloud te plannen.
@@ -27,16 +27,16 @@ Het vorige document, [ Begonnen Worden met Beweging aan AEM as a Cloud Service ]
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen welke factoren u moet overwegen zodat u ervoor kunt zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst:
+Dit document helpt u te begrijpen welke factoren u in overweging moet nemen zodat u ervoor kunt zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst:
 
 * Meer informatie over opmerkelijke wijzigingen en verouderde functies
 * Begrijp hoe u de migratie naar AEM as a Cloud Service wilt plannen
 
 ## Bekijk de opmerkelijke wijzigingen in de AEM as a Cloud Service-architectuur {#notable-changes-in-aem-cloud-service-architecture}
 
-AEM as a Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM.
+AEM as a Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten.
 
-Samen met deze verbeteringen zijn er verschillende verschillen ontstaan tussen installaties op locatie van AEM en Adobe Managed Services, in vergelijking met AEM as a Cloud Service.
+Samen met deze verbeteringen zijn er verschillende verschillen ontstaan tussen installaties op locatie in AEM en Adobe Managed Services, in vergelijking met AEM as a Cloud Service.
 
 De lijst met items in de onderstaande tabel is de subset van de wijzigingen die het meest relevant zijn voor een migratie naar AEM as a Cloud Service. U kunt de volledige lijst van [ Notable Veranderingen in Adobe Experience Manager as a Cloud Service ](/help/release-notes/aem-cloud-changes.md) raadplegen.
 
@@ -51,7 +51,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
 <tbody>
   <tr>
     <td>Meerdere en onveranderbare filters scheiden in overeenkomende pakketten</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html"> Notable Veranderingen van AEM as a Cloud Service </a><br> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable"> AEM de Structuur van het Project voor AEM as a Cloud Service </a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html"> Notable Veranderingen van AEM as a Cloud Service </a><br> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable"> de Structuur van het Project van AEM voor AEM as a Cloud Service </a></td>
     <td>Een enkel pakket dat in AEM as a Cloud Service kan worden geïmplementeerd, kan subpakketten bevatten, voornamelijk om muteerbare en onveranderlijke inhoud te bevatten die in hun eigen pakketten is gescheiden.</td>
   </tr>
   <tr>
@@ -82,12 +82,12 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Ingebouwd CDN en krijgt uw eigen CDN</td>
     <td></td>
-    <td>AEM as a Cloud Service omvat CDN voor alle milieu's die voor de meeste gebruiksgevallen wordt geoptimaliseerd.<br> als u opstelling uw eigen CDN wilt, moet u een verzoek aan de Steun van de Adobe voor het voorleggen om worden goedgekeurd.<br> als het wordt goedgekeurd, richt CDN aan Vast en niet aan AEM instanties in om het even welke milieu's.</td>
+    <td>AEM as a Cloud Service omvat CDN voor alle milieu's die voor de meeste gebruiksgevallen wordt geoptimaliseerd.<br> als u opstelling uw eigen CDN wilt, moet u een verzoek aan de Steun van Adobe voor het voorleggen om worden goedgekeurd.<br> als het wordt goedgekeurd, richt CDN aan snel en niet aan de instanties van AEM in om het even welke milieu's.</td>
   </tr>
   <tr>
     <td>Lange banen</td>
     <td></td>
-    <td>Vermijd lange lopende Banen zoals het Verschuiven van Planners of de banen van het Gewas, aangezien de AEM instanties die in de containers lopen op om het even welk punt kunnen komen en gaan.<br> herdenk deze functionaliteit zodat kunt u hen aan Adobe Developer offloaden.</td>
+    <td>Vermijd langdurige taken, zoals Sling Schedulers of Cron-taken, aangezien de AEM-instanties die in de containers worden uitgevoerd, op elk gewenst moment kunnen komen en gaan.<br> herdenk deze functionaliteit zodat kunt u hen aan Adobe Developer offloaden.</td>
   </tr>
   <tr>
     <td>Overschakelen naar asynchrone bewerkingen</td>
@@ -97,7 +97,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Tokengebaseerde verificatie- en integratiestrategieën</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow"> producerend de Tokens van de Toegang voor server-kant APIs </a><br> <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication"> Symbolisch-Gebaseerde Zelfstudie van de Authentificatie </a></td>
-    <td>Het is gebruikelijk dat systemen buiten de AEM HTTP-bewerkingen binnen AEM uitvoeren.<br> de geadviseerde benadering is de strategieën uit te voeren die hier eerder dan het baseren op het creëren van lokale gebruikersnamen met wachtwoorden in AEM worden geschetst.</td>
+    <td>Het is gebruikelijk dat systemen buiten AEM HTTP-bewerkingen in AEM proberen uit te voeren.<br> de geadviseerde benadering is de strategieën uit te voeren die hier eerder dan het baseren op het creëren van lokale gebruikersnamen met wachtwoorden in AEM worden geschetst.</td>
   </tr>
   <tr>
     <td>Bestands-IO/schijfgebruik</td>
@@ -106,8 +106,8 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   </tr>
   <tr>
     <td>DAM Update Asset Workflow</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Asset compute</a></td>
-    <td>De stappen voor mediaverwerking die deel uitmaken van de DAM Update Asset-workflow worden nu vervangen door de Asset compute Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Asset Compute Service</a></td>
+    <td>De stappen voor mediaverwerking die onderdeel zijn van de DAM Update Asset-workflow worden nu vervangen door de Asset Compute Service</td>
   </tr>
   <tr>
     <td>Methoden voor het uploaden van middelen en ondersteunde stappen voor workflowproces in AEM as a Cloud Service</td>
@@ -135,9 +135,9 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
     <td>U kunt alleen bepaalde onderhoudstaken configureren met AEM as a Cloud Service.</td>
   </tr>
   <tr>
-    <td>Wijzigingen in Publish-opslagplaats</td>
+    <td>Wijzigingen in de publicatieopslagplaats</td>
     <td></td>
-    <td>Directe wijzigingen in de Publish-opslagplaats zijn niet toegestaan, behalve wijzigingen onder /home. Het wordt altijd aanbevolen om eventuele wijzigingen die zijn aangebracht op de auteur, te verspreiden. Alle code en configuratieveranderingen moeten door de overeenkomstige pijpleiding van Cloud Manager worden opgesteld.</td>
+    <td>Directe wijzigingen in de publicatieopslagplaats zijn niet toegestaan, behalve wijzigingen onder /home. Het wordt altijd aanbevolen om eventuele wijzigingen die zijn aangebracht op de auteur, te verspreiden. Alle code en configuratieveranderingen moeten door de overeenkomstige pijpleiding van Cloud Manager worden opgesteld.</td>
   </tr>
   <tr>
     <td>Dispatcher Configurations en Caching</td>
@@ -152,7 +152,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Wijzigingen in verificatie</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">IMS-ondersteuning voor AEM as a Cloud Service</td>
-    <td>Als u eerder SAML 2.0-integratie gebruikte op zowel auteur als publicatie voordat u naar de Cloud Service ging, is de belangrijkste wijziging dat AEM as a Cloud Service Author alleen integreert met Adobe IMS. De AEM as a Cloud Service Publish-laag kan echter nog steeds gebruikmaken van SAML of andere verificatie-integratie. AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor auteur-, Admin- en Dev-gebruikers. De IMS-verificatie biedt geen ondersteuning voor externe eindgebruikers van klantsites zoals sitebezoekers.</td>
+    <td>Als u eerder SAML 2.0-integratie gebruikte op zowel auteur als publicatie voordat u naar Cloud Service ging, is de belangrijkste wijziging dat AEM as a Cloud Service Author alleen integreert met Adobe IMS. AEM as a Cloud Service Publish tier kan echter nog steeds SAML of andere verificatieintegraties gebruiken. AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor auteur-, Admin- en Dev-gebruikers. De IMS-verificatie biedt geen ondersteuning voor externe eindgebruikers van klantsites zoals sitebezoekers.</td>
   </tr>
 </tbody>
 </table>
@@ -161,9 +161,9 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
 
-De Adobe adviseert dat u [ Vervangen Eigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html#deprecated-features) raadpleegt om zich met de eigenschappen en de mogelijkheden vertrouwd te maken die zoals afgekeurd in Experience Manager as a Cloud Service zijn. Bekijk wat de impact is op uw AEM implementatie.
+Adobe adviseert dat u [ Vervangen Eigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html#deprecated-features) raadpleegt om zich met de eigenschappen en de mogelijkheden vertrouwd te maken die zoals afgekeurd in Experience Manager as a Cloud Service worden gemerkt. Bekijk wat de impact is op uw AEM-implementatie.
 
-## Plan voor een Herziening van uw AEM Installatie {#review-planning}
+## Plan voor een overzicht van uw installatie van AEM {#review-planning}
 
 Nadat u zich met de veranderingen vertrouwd hebt gemaakt die met AEM as a Cloud Service worden geïntroduceerd, is het tijd om te beginnen met het plannen voor een overzicht van uw bestaande installatie. Op deze manier kunt u het niveau van de vereiste wijzigingen voor het verplaatsen naar de cloud meten.
 
@@ -173,17 +173,17 @@ In de volgende afbeelding ziet u de belangrijkste stappen die tijdens de beoorde
 
 Hierna gaat u na wat elk van deze stappen in detail betekent.
 
-### Gereedheid van Cloud Service beoordelen {#assess-cloud-readiness}
+### Gereedheid van Cloud Service evalueren {#assess-cloud-readiness}
 
-De eerste stap is uw bereidheid te beoordelen om zich van uw bestaande AEM aan Cloud Service te bewegen en gebieden te bepalen die refactoring vereisen om met AEM as a Cloud Service compatibel te zijn.
+De eerste stap bestaat uit het beoordelen van uw bereidheid om van uw bestaande versie van AEM naar Cloud Service over te gaan en gebieden te bepalen die het refactoring vereisen om met AEM as a Cloud Service compatibel te zijn.
 
-Voer een uitgebreide beoordeling van uw huidige AEM broncode uit tegen de opmerkelijke veranderingen en verouderde eigenschappen om het niveau van inspanning te bepalen die in de overgangsreis wordt verwacht.
+Voer een uitgebreide beoordeling van uw huidige AEM-broncode uit tegen de opmerkelijke wijzigingen en vervangen functies om het inspanningsniveau te bepalen dat tijdens de transitiereis wordt verwacht.
 
-Het aantal bevindingen kan rechtstreeks van invloed zijn op de tijdlijnen en het algehele succes van het project. Daarom adviseert de Adobe dat u zoveel mogelijk ontdekt zodat u de levering kunt plannen. U kunt ook gesprekken starten zodat u aanpassingen opnieuw kunt ontwerpen die nodig zijn om aan te sluiten bij de beste praktijken van AEM as a Cloud Service.
+Het aantal bevindingen kan rechtstreeks van invloed zijn op de tijdlijnen en het algehele succes van het project. Daarom raadt Adobe u aan zoveel mogelijk gegevens op te sporen, zodat u de levering kunt plannen. U kunt ook gesprekken starten zodat u aanpassingen opnieuw kunt ontwerpen die nodig zijn om aan te sluiten bij de beste praktijken van AEM as a Cloud Service.
 
 **Analysator van de Beste praktijken 1}**
 
-U kunt de beoordeling versnellen door de Analysator van Beste praktijken tegen uw huidige AEM in werking te stellen. Een goed begrip van hoe het werkt is essentieel om uw evaluatie planning te versnellen.
+U kunt de beoordeling versnellen door de Analysator van Beste praktijken tegen uw huidige versie van AEM in werking te stellen. Een goed begrip van hoe het werkt is essentieel om uw evaluatie planning te versnellen.
 
 U kunt omhoog lezen op hoe het door de [ documentatie van de Analysator van Beste praktijken te raadplegen ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) werkt.
 
@@ -194,7 +194,7 @@ De volgende stap is het opstellen van een verslag op basis van alle tot nu toe v
 Een typisch rapport moet deze input bevatten:
 
 * Documentatie met de functieset van uw specifieke AEM-installatie
-* Gegevens over uw AEM aangepaste configuraties en code
+* Gegevens over aangepaste AEM-configuraties en -code
 * Dispatcher-configuraties voor productie
 * Domeintoewijzingen (CDN-configuraties) (indien aanwezig)
 
@@ -208,7 +208,7 @@ Zodra u het niveau van inspanning hebt geschat dat wordt vereist om zich aan Clo
 
 ### KPI&#39;s instellen {#establish-kpis}
 
-Als u geen Belangrijkste Indicatoren van Prestaties (KPIs) eerder hebt gevestigd, wordt het geadviseerd om KPIs voor uw AEM implementatie te vestigen om uw team te helpen zich concentreren op wat het belangrijkst is.
+Als u geen Belangrijkste Indicatoren van Prestaties (KPIs) eerder hebt gevestigd, wordt het geadviseerd om KPIs voor uw implementatie van AEM te vestigen om uw team te helpen zich concentreren op wat het belangrijkst is.
 
 Zie [ het Ontwikkelen KPIs ](https://experienceleague.adobe.com/welcome/aem/part6.html) zodat kunt u leren hoe te om juiste KPIs voor uw bedrijfsdoelstellingen te kiezen.
 
@@ -220,6 +220,6 @@ Zodra u het werkingsgebied van de veranderingen begrijpt die worden vereist om z
 
 * [ Begonnen het worden met Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - een uitvoerige gids op hoe te om Cloud Acceleration Manager te gebruiken om uw beweging aan de wolk te versnellen.
 * [ AEM as a Cloud Service: Inleiding, Architectuur, en anders Dinking ](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
-* [ AEM een Huis van de Cloud Service ](/help/overview/introduction.md) - voor een overzicht van de as a Cloud Service documentatie van de Experience Manager, begin hier.
+* [ AEM een Huis van Cloud Service ](/help/overview/introduction.md) - voor een overzicht van de documentatie van Experience Manager as a Cloud Service, begin hier.
 * [ het Overzicht van AEM as a Cloud Service ](/help/overview/introduction.md) - Deze gids verstrekt een overzicht van Experience Manager als de dienst van de Wolk, met inbegrip van een inleiding, een terminologie, en een architectuur.
 * [ Onboarding Reis ](/help/journey-onboarding/overview.md) - Deze gids verstrekt een samenvatting van hoe te beginnen met Experience Manager as a Cloud Service, met inbegrip van hoe te om toegang en opstelling uw team te krijgen.

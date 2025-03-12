@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Afbeeldingen bewerken in [!DNL Assets view] {#edit-images-in-assets-view}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-De interface van de Assets-weergave maakt basisbewerkingen van afbeeldingen mogelijk die worden aangedreven door Adobe Express en die zijn geïntegreerd in de gebruikersinterface. Deze bewerking omvat het wijzigen van het formaat, het verwijderen van de achtergrond, het uitsnijden en het omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk via de interface Adobe Express ingesloten in de interface van de Assets-weergave.
+De gebruikersinterface van de Assets-weergave maakt basisbewerkingen van afbeeldingen mogelijk die door Adobe Express worden ondersteund en die zijn geïntegreerd in de gebruikersinterface. Deze bewerking omvat het wijzigen van het formaat, het verwijderen van de achtergrond, het bijsnijden, en het omzetten tussen JPEG en PNG formaten. Bovendien is geavanceerde bewerking mogelijk via de Adobe Express-interface die is ingesloten in de interface van de Assets-weergave.
 
 Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Om een beeld uit te geven, [ open zijn voorproef ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik **geef Beeld** uit.
 
@@ -36,15 +36,15 @@ Voor om het even welke extra verwijzingsinformatie verwijs - [ begonnen worden g
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Afbeelding bewerken in Assets-weergave met Adobe Express {#edit-image-on-assets-view-using-adobe-express}
+### Afbeelding bewerken in de Assets-weergave met Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Na het navigeren aan de Mening van Assets, klik **Assets**, selecteer een beeld, en klik dan **uitgeven** van de hoogste spoorstaaf. In het nieuwe scherm worden de beschikbare bewerkingsopties weergegeven die worden aangedreven door Adobe Express. Deze opties omvatten formaatwijziging, verwijdering van de achtergrond, bijsnijden en converteren tussen de JPEG- en PNG-indeling.
+Na het navigeren aan de Mening van Assets, klik **Assets**, selecteer een beeld, en klik dan **uitgeven** van de hoogste spoorstaaf. In het nieuwe scherm worden de beschikbare bewerkingsopties weergegeven die door Adobe Express worden aangedreven. Deze opties omvatten formaatwijziging, verwijdering van de achtergrond, bijsnijden en converteren tussen de JPEG- en PNG-indeling.
 
 #### Grootte afbeelding wijzigen {#resize-image-using-express}
 
 Een afbeelding vergroten of verkleinen tot een bepaalde grootte is een veelgebruikte optie. Met de Assets-weergave kunt u snel de grootte van afbeeldingen aanpassen aan de gangbare fotoformaten door vooraf berekende nieuwe resoluties voor specifieke fotoformaten te bieden. Voer de onderstaande stappen uit als u het formaat van de afbeelding wilt wijzigen met Assets View:
 
-1. Klik **Resize Beeld** van de linkerruit. In een dialoogvenster ziet u de mogelijkheden voor het wijzigen van de grootte van afbeeldingen op basis van Adobe Express.
+1. Klik **Resize Beeld** van de linkerruit. In een dialoogvenster ziet u de mogelijkheden van Adobe Express om de afbeelding groter of kleiner te maken.
 1. Selecteer het juiste sociale-mediaplatform in de vervolgkeuzelijst Formaat wijzigen en selecteer de afbeeldingsgrootte in de weergegeven opties.
 1. Schaal het beeld, indien vereist, gebruikend het **gebied van de Schaal van het Beeld**.
 1. Klik op **[!UICONTROL Apply]** om de wijzigingen toe te passen.
@@ -73,9 +73,9 @@ U kunt een afbeelding eenvoudig transformeren tot een perfecte grootte met inges
    ![ sparen beeld met Adobe Express ](assets/adobe-express-crop-image.png)
 De uitgesneden afbeelding kan worden gedownload. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
 
-#### JPEG omzetten in PNG {#convert-image-types-using-express}
+#### JPEG converteren naar PNG {#convert-image-types-using-express}
 
-U kunt met Adobe Express snel JPEG- en PNG-afbeeldingsindelingen omzetten. Voer de volgende stappen uit:
+U kunt afbeeldingen in JPEG- en PNG-indeling snel omzetten met Adobe Express. Voer de volgende stappen uit:
 
 1. Klik **JPEG aan PNG** of **PNG aan JPEG** van de linkerruit.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
@@ -88,7 +88,7 @@ U kunt met Adobe Express snel JPEG- en PNG-afbeeldingsindelingen omzetten. Voer 
 
 ### Afbeeldingen bewerken in ingesloten Adobe Express-editor {#edit-images-in-adobe-express-embedded-editor}
 
-Gebruikers met Express-machtiging kunnen de ingesloten Express-editor vanuit de Assets-weergave gebruiken om inhoud eenvoudig te bewerken en nieuwe inhoud te maken met GenAI vanaf de Adobe Firefly. Deze functie verbetert het hergebruik van inhoud en versnelt de snelheid van de inhoud. U kunt ook vooraf gedefinieerde elementen gebruiken om uw elementen er verbluffend uit te laten zien of snelle acties uitvoeren om uw afbeelding met slechts een paar klikken te bewerken.
+Gebruikers met Express-machtiging kunnen de ingesloten Express-editor vanuit de Assets-weergave gebruiken om inhoud eenvoudig te bewerken en nieuwe inhoud te maken met GenAI uit Adobe Firefly. Deze functie verbetert het hergebruik van inhoud en versnelt de snelheid van de inhoud. U kunt ook vooraf gedefinieerde elementen gebruiken om uw elementen er verbluffend uit te laten zien of snelle acties uitvoeren om uw afbeelding met slechts een paar klikken te bewerken.
 
 ![ uitdrukken in essentiële UI ](/help/assets/assets/express-in-essentials-ui.jpg)
 Voer de onderstaande stappen uit als u afbeeldingen wilt bewerken met de ingesloten editor van [!DNL Adobe Express] :
@@ -124,7 +124,7 @@ Voer de onderstaande stappen uit als u afbeeldingen wilt bewerken met de ingeslo
 
 Met [!DNL Assets view] kunt u een geheel nieuwe sjabloon maken met de ingesloten editor van [!DNL Adobe Express] . Voer de volgende stappen uit om een nieuw element te maken met [!DNL Adobe Express] :
 
-1. Navigeer naar **[!UICONTROL My Workspace]** en klik **[!UICONTROL Create]** in de Adobe Express-banner die boven aan het scherm wordt weergegeven. [!DNL Adobe Express] wordt een leeg canvas weergegeven in de gebruikersinterface van [!DNL Assets view] .
+1. Navigeer naar **[!UICONTROL My Workspace]** en klik op **[!UICONTROL Create]** in de Adobe Express-banner die boven aan het scherm wordt weergegeven. [!DNL Adobe Express] wordt een leeg canvas weergegeven in de gebruikersinterface van [!DNL Assets view] .
 1. Creeer uw inhoud gebruikend [ Malplaatjes ](https://helpx.adobe.com/in/express/using/work-with-templates.html). Navigeer anders naar **[!UICONTROL Your Stuff]** om bestaande inhoud te wijzigen.
 1. Klik op **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 1. Geef het doelpad voor het gemaakte element op en klik op **[!UICONTROL Save as new asset]** .

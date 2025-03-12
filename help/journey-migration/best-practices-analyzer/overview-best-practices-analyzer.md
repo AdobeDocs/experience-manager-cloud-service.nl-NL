@@ -1,6 +1,6 @@
 ---
 title: Overzicht aan Analysator van Beste praktijken
-description: Leer hoe te om de Analysator van Beste praktijken te gebruiken om de gehechtheid van uw AEM implementatie aan de geadviseerde beste praktijken te beoordelen
+description: Leer hoe u de Analysator voor aanbevolen procedures gebruikt om te beoordelen of uw AEM-implementatie aan de aanbevolen aanbevolen aanbevolen aanbevolen aanbevolen procedures voldoet
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 feature: Migration
 role: Admin
@@ -16,9 +16,9 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Overzicht van best practices-analyse"
->abstract="Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige AEM implementatie door op gebieden te wijzen die niet AEM beste praktijken volgen. Het biedt ook richtsnoeren voor de volgende stappen om AEM beste praktijken aan te nemen. Bovendien helpt het de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van Adobe Experience Manager (AEM) aan AEM as a Cloud Service over te gaan."
+>abstract="Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige implementatie van AEM door op gebieden te wijzen die de beste praktijken van AEM niet volgen. Het biedt ook richtlijnen voor de volgende stappen om beste praktijken van AEM over te nemen. Bovendien helpt het de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van Adobe Experience Manager (AEM) aan AEM as a Cloud Service over te gaan."
 
-Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige AEM implementatie door op gebieden te wijzen die niet AEM beste praktijken volgen. Het biedt ook richtsnoeren voor de volgende stappen om AEM beste praktijken aan te nemen. Bovendien helpt het de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van Adobe Experience Manager (AEM) aan AEM as a Cloud Service over te gaan.
+Analyzer van Beste praktijken verstrekt een beoordeling van uw huidige implementatie van AEM door op gebieden te wijzen die de beste praktijken van AEM niet volgen. Het biedt ook richtlijnen voor de volgende stappen om beste praktijken van AEM over te nemen. Bovendien helpt het de processen te versnellen om bereidheid te beoordelen om van een bestaande plaatsing van Adobe Experience Manager (AEM) aan AEM as a Cloud Service over te gaan.
 
 Deze tool produceert een rapport waarin aspecten voor mogelijke herstructurering worden geïdentificeerd. Dit is de eerste stap in het overgangstraject naar AEM as a Cloud Service.
 
@@ -39,4 +39,4 @@ Aanvullende informatie over de categorieën en mogelijke implicaties en oplossin
 >[!NOTE]
 >Het Rapport van de Analysator van Beste praktijken versnelt het proces om de tijd en de kosten te schatten die aan overgang aan AEM as a Cloud Service worden vereist door informatie te verstrekken die anders manueel zou moeten worden verzameld en worden geëvalueerd.
 
-U kunt het rapport van de Analysator van Beste praktijken van uw AEM instantie ook downloaden. Zie [ het Bekijken van het Rapport van de Analysator van Beste praktijken ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) voor meer details.
+U kunt het rapport Best Practices Analyzer ook downloaden van uw AEM-exemplaar. Zie [ het Bekijken van het Rapport van de Analysator van Beste praktijken ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) voor meer details.

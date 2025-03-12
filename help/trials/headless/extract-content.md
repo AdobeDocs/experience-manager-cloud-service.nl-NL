@@ -24,7 +24,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="GraphQL Explorer starten"
->abstract="GraphQL biedt een API op basis van query&#39;s waarmee externe clienttoepassingen AEM kunnen zoeken voor alleen de inhoud die het nodig heeft, met behulp van één API-aanroep. Volg deze module om te leren hoe te om twee verschillende types van vragen in werking te stellen. Leer vervolgens hoe u de inhoud ophaalt uit het inhoudsfragment dat u in de vorige module hebt gemaakt.<br><br> lanceer deze module in een nieuw lusje door hieronder te klikken."
+>abstract="GraphQL biedt een API op basis van query&#39;s waarmee externe clienttoepassingen AEM alleen kunnen vragen voor de inhoud die het nodig heeft, met behulp van één API-aanroep. Volg deze module om te leren hoe te om twee verschillende types van vragen in werking te stellen. Leer vervolgens hoe u de inhoud ophaalt uit het inhoudsfragment dat u in de vorige module hebt gemaakt.<br><br> lanceer deze module in een nieuw lusje door hieronder te klikken."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samenstellen en valideren op basis van uw inhoud zonder kop voordat u deze gebruikt om de inhoud van uw app of website van stroom te voorzien.
 
-1. Uw AEM proefversie zonder kop wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat het **AEM eindpunt van de Demo Assets** in het **Eindpunt** drop-down menu bij de hoogste juiste hoek van de redacteur wordt geselecteerd.
+1. De proefversie zonder kop van AEM wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat het **eindpunt van de Demo Assets van 0} AEM {in het** Eindpunt **drop-down menu bij de hoogste juiste hoek van de redacteur wordt geselecteerd.**
 
-1. Kopieer het volgende codefragment voor een lijstvraag van het vooraf geladen **AEM 1} eindpunt van Assets van de Demo.** Een lijstvraag keert een lijst van alle inhoud terug die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
+1. Kopieer het volgende codefragment voor een lijstvraag van het vooraf geladen **AEM demo Assets** eindpunt. Een lijstvraag keert een lijst van alle inhoud terug die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
 
    ```text
    {
@@ -68,13 +68,13 @@ U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samens
 
    ![ vraag van de Lijst ](assets/do-not-localize/list-query-1-3-4-5.png)
 
-U hebt zojuist een lijstquery voor een volledige lijst met alle inhoudsfragmenten gevalideerd. Dit proces helpt ervoor te zorgen dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud zullen ophalen.
+U hebt zojuist een lijstquery voor een volledige lijst met alle inhoudsfragmenten gevalideerd. Dit proces zorgt ervoor dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud ophalen.
 
 ## Query voor een specifiek deel van de voorbeeldinhoud {#bypath-query}
 
 Als u een query op basis van pad uitvoert, kunt u inhoud voor een bepaald inhoudsfragment ophalen. Productdetailpagina&#39;s en pagina&#39;s die zich op een specifieke set inhoud richten, vereisen doorgaans dit type query.
 
-1. Kopieer het volgende codefragment voor a byPath vraag van het vooraf geladen **AEM 1} eindpunt van Assets van de Demo.**
+1. Kopieer het volgende codefragment voor a byPath vraag van het vooraf geladen **AEM demo Assets** eindpunt.
 
    ```text
     {
@@ -113,7 +113,7 @@ U hebt zojuist een bytepadquery gevalideerd om een specifiek inhoudsfragment op 
 
 Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om uw eigen inhoud te vragen.
 
-1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van de **AEM omslag van Assets van de Demo** in de **Uw omslag van het Project**.
+1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van de **omslag van Assets van de Demo van 0} AEM {in de** Uw omslag van het Project **.**
 
 1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens accolade openen `{` en druk op Ctrl+Space of Option+Space voor een lijst met automatisch aangevulde modellen die in het eindpunt zijn gedefinieerd. Selecteer in de opties het model dat u hebt gemaakt en dat eindigt in `List` . Als u de voorbeelden in de vorige modules volgt, zou u `adventureList` in de auto-volledige lijst moeten vinden.
 
@@ -133,7 +133,7 @@ Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen.
 
 ## Blijvende query&#39;s {#persisted-queries}
 
-Blijvende query&#39;s zijn het voorkeursmechanisme voor het toegankelijk maken van de GraphQL API voor clienttoepassingen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht voor snelle herwinning.
+Blijvende query&#39;s zijn het voorkeursmechanisme voor het toegankelijk maken van de GraphQL API voor clienttoepassingen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van GET en in het voorgeheugen ondergebracht voor snelle terugwinning.
 
 U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing wilt gebruiken.
 
@@ -185,7 +185,7 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
 1. De vraag wordt voortgeduurd zoals bevestigd door een bannerbericht bij de bodem van het scherm. De query wordt nu ook weergegeven in het linkerdeelvenster met doorlopende query&#39;s in het venster.
 
-1. Voor de persisted vraag om openbaar beschikbaar te zijn, moet het worden gepubliceerd, veel als hoe uw Fragments van de Inhoud moeten worden gepubliceerd. Klik **Publish** bij het hoogste recht van de vraagredacteur om de vraag te publiceren.
+1. Voor de persisted vraag om openbaar beschikbaar te zijn, moet het worden gepubliceerd, veel als hoe uw Fragments van de Inhoud moeten worden gepubliceerd. Klik **publiceren** bij het hoogste recht van de vraagredacteur om de vraag te publiceren.
 
 1. De publicatie wordt bevestigd door een bannerkennisgeving.
 

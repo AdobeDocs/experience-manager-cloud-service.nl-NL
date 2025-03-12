@@ -16,10 +16,10 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
 >title="Voordelen van het gebruik van Cloud Acceleration Manager"
->abstract="Cloud Acceleration Manager (CAM) stelt uw teams uit met een geleide ervaring met door de Adobe aanbevolen best practices en methodologie om uw teams te helpen bij het plannen, implementeren en, Go Live met vertrouwen."
+>abstract="Cloud Acceleration Manager (CAM) stelt uw teams uit met een geleide ervaring met door Adobe aanbevolen best practices en methodologie om uw teams te helpen bij het plannen, implementeren en, Go Live met vertrouwen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Aan de slag met Cloud Acceleration Manager"
 
-Met een groot aantal bedrijfsvereisten en aanpassingen kan het overstappen naar cloud een betrokken project zijn. Cloud Acceleration Manager (CAM) stelt uw teams uit met een geleide ervaring met door de Adobe aanbevolen best practices en methodologie om uw teams te helpen bij het plannen, implementeren en, Go Live met vertrouwen.
+Met een groot aantal bedrijfsvereisten en aanpassingen kan het overstappen naar cloud een betrokken project zijn. Cloud Acceleration Manager (CAM) stelt uw teams uit met een geleide ervaring met door Adobe aanbevolen best practices en methodologie om uw teams te helpen bij het plannen, implementeren en, Go Live met vertrouwen.
 
 De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 
@@ -37,7 +37,7 @@ De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 
 1. Optimaliseren van de inspanningen:
 
-   Toegang tot aanbevolen best practices en automatiseringsgereedschappen voor Adobe om de migratie te versnellen en toegang te krijgen tot tools om de migratietijd te minimaliseren.
+   Toegang tot door Adobe aanbevolen best practices en automatiseringstools om de migratie te versnellen en toegang tot tools om de migratietijd te minimaliseren.
 
 ## Volgende functies {#whats-next}
 

@@ -1,6 +1,6 @@
 ---
 title: Indexeren na migreren van inhoud
-description: Leer hoe het migratieproces de opgenomen inhoud op de Cloud Service-instantie van de bestemming zal indexeren.
+description: Leer hoe het migratieproces de opgenomen inhoud op de Cloud Service-doelinstantie indexeert.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
 feature: Migration
 role: Admin
@@ -18,9 +18,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Indexering van inhoud"
->abstract="AEM Indexering verwijst naar het indexeren van de inhoud op de instantie Cloud Service na het migreren van inhoud naar de instantie. Indexering is vereist om het zoeken naar inhoud voor die instantie te ondersteunen."
+>abstract="AEM Indexing verwijst naar het indexeren van de inhoud op het Cloud Service-exemplaar na het migreren van inhoud naar het. Indexering is vereist om het zoeken naar inhoud voor die instantie te ondersteunen."
 
-Zodra de Cloud Acceleration Manager de inhoud in uw Cloud Service-instantie heeft opgenomen, is deze klaar om te worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht. Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
+Zodra de Cloud Acceleration Manager de inhoud in uw Cloud Service-exemplaar heeft ingevoerd, is deze klaar om te worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht. Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
 
 > Voor informatie over hoe te om een opname te beginnen, zie [ Ingesterend Inhoud in Cloud Service ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
@@ -40,7 +40,7 @@ Dit is hoe de rij van de opnametaak zal verschijnen wanneer de opname loopt, alv
 
 ### Wordt uitgevoerd
 
-Wanneer de opname slaagt, wordt de indexerende baan in werking gesteld automatisch. De rij van de innametaak zal een vooruitgangspictogram voor de AEM indexerende status tonen. U kunt het dialoogvenster Duur openen om de voortgang van de taak te bekijken.
+Wanneer de opname slaagt, wordt de indexerende baan in werking gesteld automatisch. In de tekstrij wordt een voortgangspictogram weergegeven voor de AEM-indexstatus. U kunt het dialoogvenster Duur openen om de voortgang van de taak te bekijken.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-indexing/running.png)
 
@@ -52,7 +52,7 @@ Wanneer de indexeertaak succesvol is, is de instantie gereed om te worden gebrui
 
 ### Fouten
 
-Het indexeren van de instantie van de bestemmings Cloud Service zal zeer waarschijnlijk slagen. In sommige gevallen kan dit mislukken en wordt de rij met ingevulde taken als volgt weergegeven. In alle gevallen, kunt u sommige details van de mislukking ontdekken door over de mislukkingsstatus te hangen, en het kan meer informatie verstrekken om u te helpen volgende stappen bepalen. Op dit punt, zijn de indexerende baanlogboeken beschikbaar aan mening of download helpen de bron van de mislukking ontdekken. Als de volgende stap niet duidelijk is, contacteer de Steun van de Adobe met details van de opname en het indexerende logboek.
+Het indexeren van de bestemmingsCloud Service instantie zal zeer waarschijnlijk slagen. In sommige gevallen kan dit mislukken en wordt de rij met ingevulde taken als volgt weergegeven. In alle gevallen, kunt u sommige details van de mislukking ontdekken door over de mislukkingsstatus te hangen, en het kan meer informatie verstrekken om u te helpen volgende stappen bepalen. Op dit punt, zijn de indexerende baanlogboeken beschikbaar aan mening of download helpen de bron van de mislukking ontdekken. Als de volgende stap niet duidelijk is, contacteer de Steun van Adobe met details van de opname en het indexerende logboek.
 
 >[!TIP]
 >

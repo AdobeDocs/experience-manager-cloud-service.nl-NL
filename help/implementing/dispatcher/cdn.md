@@ -1,6 +1,6 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen CDN aan AEM-beheerde CDN te richten.
+description: Leer hoe te om AEM-Geleide CDN te gebruiken en hoe te om uw eigen CDN aan AEM-Geleide CDN te richten.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
@@ -17,22 +17,22 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
->abstract="AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het belangrijkste doel is het verminderen van latentie door content te leveren die in de cache kan worden opgeslagen en die komt van de CDN-knooppunten aan de rand van de omgeving, dicht in de buurt van de browser. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties."
+>abstract="AEM als Cloud Service wordt geleverd met een ingebouwde CDN. Het belangrijkste doel is het verminderen van latentie door content te leveren die in de cache kan worden opgeslagen en die komt van de CDN-knooppunten aan de rand van de omgeving, dicht in de buurt van de browser. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties."
 
-AEM as a Cloud Service wordt geleverd met een geïntegreerde CDN, die is ontworpen om latentie te verminderen door cacheable inhoud te leveren van randknooppunten dicht bij de browser van de gebruiker. Dit volledig beheerde CDN wordt geoptimaliseerd voor AEM toepassingsprestaties.
+AEM as a Cloud Service wordt geleverd met een geïntegreerde CDN, die is ontworpen om latentie te verminderen door cacheable inhoud te leveren van randknooppunten dicht bij de browser van de gebruiker. Deze volledig beheerde CDN is geoptimaliseerd voor AEM-toepassingsprestaties.
 
-AEM-beheerde CDN voldoet aan de prestaties en de veiligheidsbehoeften van de meeste klanten. Voor publiceer rij, kunnen de klanten verkiezen om verkeer door hun eigen CDN te leiden, die zij moeten leiden. Deze optie is beschikbaar per geval, vooral wanneer de klanten bestaande erfenisintegratie met een leverancier hebben CDN die moeilijk zijn te vervangen.
+De door AEM beheerde CDN voldoet aan de prestatie- en beveiligingsbehoeften van de meeste klanten. Voor publiceer rij, kunnen de klanten verkiezen om verkeer door hun eigen CDN te leiden, die zij moeten leiden. Deze optie is beschikbaar per geval, vooral wanneer de klanten bestaande erfenisintegratie met een leverancier hebben CDN die moeilijk zijn te vervangen.
 
-De klanten die aan de Edge Delivery Services rij willen publiceren kunnen uit beheerde CDN van de Adobe voordeel halen. Zie [ Beheerde Adobe CDN ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Klanten die naar de Edge Delivery Services-laag willen publiceren, kunnen profiteren van door Adobe beheerde CDN. Zie [ Adobe Beheerde CDN ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe beheerde CDN {#aem-managed-cdn}
+## Door Adobe beheerde CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
-Als u zich wilt voorbereiden op de levering van inhoud met behulp van AEM ingebouwde CDN via de zelfbedieningsinterface van Cloud Manager, kunt u gebruikmaken van de beheerde CDN-functies van de Adobe. Met deze functionaliteit kunt u CDN-beheer met zelfbediening afhandelen, inclusief het configureren en installeren van SSL-certificaten, zoals DV- (Domain Validation) of EV/OV-certificaten (Extended/Organization Validation). Raadpleeg de volgende bronnen voor meer informatie over deze methoden:
+Als u zich wilt voorbereiden op de levering van inhoud met gebruik van de ingebouwde AEM CDN via de zelfbedieningsinterface van Cloud Manager, kunt u gebruikmaken van de door Adobe beheerde CDN-functies. Met deze functionaliteit kunt u CDN-beheer met zelfbediening afhandelen, inclusief het configureren en installeren van SSL-certificaten, zoals DV- (Domain Validation) of EV/OV-certificaten (Extended/Organization Validation). Raadpleeg de volgende bronnen voor meer informatie over deze methoden:
 
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Inleiding tot aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -41,13 +41,13 @@ Als u zich wilt voorbereiden op de levering van inhoud met behulp van AEM ingebo
 
 **Beperkend verkeer**
 
-Door gebrek, voor een AEM-beheerde opstelling CDN, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet productie (ontwikkeling en stadium) milieu&#39;s maken. U kunt verkeer tot de publicatiedienst voor een bepaald milieu beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) als gebruikersinterface van Cloud Manager.
+Door gebrek, voor een AEM-Beheerde CDN opstelling, kan al openbaar verkeer zijn weg aan de publicatiedienst, voor zowel productie als niet-productie (ontwikkeling en stadium) milieu&#39;s maken. U kunt verkeer tot de publicatiedienst voor een bepaald milieu beperken (bijvoorbeeld, beperkt het opvoeren door een waaier van IP adressen) als gebruikersinterface van Cloud Manager.
 
 Zie [ het Leiden IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) om meer te leren.
 
 >[!CAUTION]
 >
->AEM beheerde CDN dient verzoeken slechts van toegestane IPs. Als u uw eigen CDN aan AEM-beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de IP Lijst van gewenste personen inbegrepen is.
+>AEM beheerde CDN dient verzoeken slechts van toegestane IPs. Als u uw eigen CDN aan AEM-Beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de IP Lijst van gewenste personen inbegrepen is.
 
 ### Het verkeer op de CDN configureren {#cdn-configuring-cloud}
 
@@ -56,7 +56,7 @@ U kunt verkeer bij CDN op diverse manieren vormen, die omvatten:
 * het blokkeren van kwaadwillig verkeer met [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md) (met inbegrip van naar keuze licentiable geavanceerde regels van WAF)
 * het wijzigen van de aard van het [ verzoek en de reactie ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * het toepassen van 301/302 [ cliënt-zijredirects ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
-* het verklaren van [ oorsprongselectors ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) om volmacht een verzoek aan niet-AEM backends om te keren
+* het verklaren van [ oorsprongselectors ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) om volmacht een verzoek aan niet-AEM achtergronden om te keren
 
 Gebruik YAML-bestanden in Git om deze functies te configureren. En, gebruik Cloud Manager [ Config Pipeline ](/help/implementing/dispatcher/cdn-configuring-traffic.md) om hen op te stellen.
 
@@ -74,14 +74,14 @@ Lees over [ vormend een zuiveringsAPI teken ](/help/implementing/dispatcher/cdn-
 
 Voor lichte gebruikersverificatiegevallen, waaronder die van zakelijke belanghebbenden die inhoud controleren, moet u de inhoud beschermen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord vereist zijn. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## Door de klant beheerde CDN verwijst naar AEM beheerde CDN {#point-to-point-CDN}
+## Door de klant beheerde CDN verwijst naar door AEM beheerde CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="CDN van de klant wijst naar AEM Beheerde CDN"
->abstract="AEM als Cloud Service biedt klanten een optie om zijn bestaande CDN te gebruiken. Voor de publicatielaag kunnen klanten optioneel naar de laag verwijzen vanuit hun eigen CDN, die ze moeten beheren. Dit scenario wordt toegestaan op een geval-voor-geval basis, gebaseerd op het voldoen van bepaalde voorwaarden met inbegrip van, maar niet beperkt tot, de klant die een erfenisintegratie met hun leverancier CDN heeft die moeilijk is te verlaten."
+>title="CDN van klant wijst naar door AEM beheerde CDN"
+>abstract="AEM als Cloud Service biedt klanten de mogelijkheid om de bestaande CDN te gebruiken. Voor de publicatielaag kunnen klanten optioneel naar de laag verwijzen vanuit hun eigen CDN, die ze moeten beheren. Dit scenario wordt toegestaan op een geval-voor-geval basis, gebaseerd op het voldoen van bepaalde voorwaarden met inbegrip van, maar niet beperkt tot, de klant die een erfenisintegratie met hun leverancier CDN heeft die moeilijk is te verlaten."
 
-Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het richten aan AEM-beheerde CDN, op voorwaarde dat het volgende wordt voldaan:
+Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het richten aan AEM-geleide CDN, op voorwaarde dat het volgende wordt voldaan:
 
 * De klant moet een bestaande CDN hebben die moeilijk te vervangen zou zijn.
 * De klant moet het beheren.
@@ -91,18 +91,18 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 
 Configuratieinstructies:
 
-1. Wijs de CDN toe aan de ingangen van de Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` .
+1. Wijs de CDN toe aan de ingangen van de Adobe CDN als het oorspronkelijke domein. Bijvoorbeeld `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` .
 1. Stel SNI in op de invoer van de Adobe CDN.
 1. Stel de Hostkop in op het oorspronkelijke domein. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` .
-1. Stel de header `X-Forwarded-Host` in met de domeinnaam, zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com` .
+1. Stel de header `X-Forwarded-Host` in met de domeinnaam zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com` .
 1. Stel `X-AEM-Edge-Key` in. De waarde zou moeten worden gevormd gebruikend een Cloud Manager config pijpleiding, zoals die in [ wordt beschreven dit artikel ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en `X-Forwarded-*` kopballen tot de AEM toepassing kan overgaan. Bijvoorbeeld, `X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (namelijk de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` kopballen te verzekeren (zie de nota hieronder).
-   * De toegang tot de ingangen van de Adobe CDN kan optioneel worden geblokkeerd wanneer er geen `X-AEM-Edge-Key` aanwezig is. Informeer Adobe als u directe toegang tot de ingangen van CDN van de Adobe (moet worden geblokkeerd) nodig hebt.
+   * Nodig zodat de Adobe CDN de bron van de aanvragen kan valideren en de `X-Forwarded-*` -headers kan doorgeven aan de AEM-toepassing. Bijvoorbeeld, `X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (namelijk de klant beheerde CDN) om de juistheid van de `X-Forwarded-*` kopballen te verzekeren (zie de nota hieronder).
+   * De toegang tot de ingangen van de Adobe CDN kan optioneel worden geblokkeerd wanneer er geen `X-AEM-Edge-Key` aanwezig is. Informeer Adobe als u directe toegang tot de ingangen van Adobe CDN nodig hebt (moet worden geblokkeerd).
 
 Zie de [ sectie van de de verkopersconfiguraties van de Steekproef CDN ](#sample-configurations) voor configuratievoorbeelden van belangrijke verkopers CDN.
 
-Alvorens levend verkeer goed te keuren, zou u met klantensteun van de Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
+Alvorens levend verkeer goed te keuren, zou u met de klantensteun van Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
 
 Nadat u `X-AEM-Edge-Key` hebt ingesteld, kunt u testen of de aanvraag correct is gerouteerd. Dit wordt als volgt weergegeven.
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Wanneer u uw eigen CDN gebruikt, hoeft u geen domeinen en certificaten in Cloud Manager te installeren. Het verpletteren in Adobe CDN wordt gedaan door het standaarddomein `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` te gebruiken, dat in het verzoek `Host` kopbal zou moeten worden verzonden. Als u de aanvraagheader `Host` overschrijft met een aangepaste domeinnaam, wordt de aanvraag mogelijk onjuist doorgestuurd via de Adobe-CDN of worden er 421 fouten gegenereerd.
+>Wanneer u uw eigen CDN gebruikt, hoeft u geen domeinen en certificaten in Cloud Manager te installeren. Het verpletteren in Adobe CDN wordt gedaan door het standaarddomein `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` te gebruiken, dat in het verzoek `Host` kopbal zou moeten worden verzonden. Als u de aanvraagheader `Host` overschrijft met een aangepaste domeinnaam, wordt de aanvraag mogelijk onjuist door de Adobe CDN geleid. Dit resulteert in 421 fouten.
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ Om dit probleem op te lossen, evalueert uw SSL omleidingsstrategie, CDN regels, 
 
 ## Geolocatiekoppen {#geo-headers}
 
-De AEM beheerde CDN voegt kopballen aan elk verzoek met toe:
+De door AEM beheerde CDN voegt kopteksten aan elk verzoek met toe:
 
 * landcode: `x-aem-client-country`
 * continentale code: `x-aem-client-continent`

@@ -19,21 +19,21 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Inhoud aanpassen in een voorbeeld van een React-app"
->abstract="Uw proefversie zonder AEM is geïntegreerd met een voorbeeld van een React-app die u kunt aanpassen."
+>abstract="Uw proefversie van AEM zonder kop is geïntegreerd met een voorbeeld van een React-app die u kunt aanpassen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="De editor voor inhoudsfragmenten starten"
->abstract="Laten we nu eens bekijken hoe creatie van inhoud zonder kop werkt. Uw proefversie zonder AEM is geïntegreerd met een voorbeeldtoepassing React, zodat u kunt zien hoe eenvoudig het voor iedereen is om inhoud onafhankelijk te beheren zonder ontwikkelingstijd.<br><br> lanceer deze module in een nieuw lusje door hieronder te klikken, dan deze gids te volgen."
+>abstract="Laten we nu eens bekijken hoe creatie van inhoud zonder kop werkt. Uw proefversie zonder kop van AEM is geïntegreerd met een voorbeeld van een React-app, zodat u kunt zien hoe eenvoudig het voor iedereen is om inhoud onafhankelijk te beheren zonder ontwikkelingstijd.<br><br> lanceer deze module in een nieuw lusje door hieronder te klikken, dan deze gids te volgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="In deze module hebt u geleerd hoe u een voorbeeld van een React-app kunt aanpassen.<br><br> Tijd aan markt: Versneld!<br> de cycli van de Ontwikkeling: Verminderde!<br><br> nu begrijpt u hoe gemakkelijk het beheren van hoofdloze inhoud voor websites en apps is die door AEM hoofdloze mogelijkheden worden aangedreven."
+>title="In deze module hebt u geleerd hoe u een voorbeeld van een React-app kunt aanpassen.<br><br> Tijd aan markt: Versneld!<br> de cycli van de Ontwikkeling: Verminderde!<br><br> nu begrijpt u hoe gemakkelijk het beheren van hoofdloze inhoud voor websites en apps is die door de koploze mogelijkheden van AEM worden aangedreven."
 >abstract=""
 
 ## Voorvertoning van de app weergeven {#preview}
 
-U start in de editor voor inhoudsfragmenten met de voorbeeldtoepassing die bij de proefversie zonder AEM is geleverd, al geladen. De voorbeeld-app wordt aangedreven door Content Fragments die via GraphQL worden geleverd. Gebruik de editor voor inhoudsfragmenten om de editor te leren kennen door een voorbeeld van de voorbeeld-app te bekijken.
+U start in de Content Fragment Editor met de voorbeeldtoepassing die bij de proefversie zonder kop van AEM wordt geleverd, al geladen. De voorbeeld-app wordt aangedreven door Content Fragments die via GraphQL worden geleverd. Gebruik de editor voor inhoudsfragmenten om de editor te leren kennen door een voorbeeld van de voorbeeld-app te bekijken.
 
 1. Selecteer de **knoop van de Voorproef** bij het top-right van het redacteursscherm.
 
@@ -63,7 +63,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
    ![ demo app voorproef ](assets/do-not-localize/edit-header-5-6.png)
 
-Zo eenvoudig is het om inhoud bij te werken in een React-app wanneer deze is geïntegreerd in AEM CMS zonder kop.
+Zo eenvoudig is het om inhoud bij te werken in een React-app wanneer deze is geïntegreerd in AEM headless CMS.
 
 ## Een afbeelding wisselen in de app {#change-image}
 
@@ -91,7 +91,7 @@ Nu u een kopregel in de app hebt gewijzigd, kunt u proberen een afbeelding te wi
 
 1. Selecteer **Voorproef** bij het hoogste recht van het venster om uw veranderingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend. Klik op Vernieuwen in de browser en u ziet de nieuwe fietsafbeelding met gele korte tekst in de app.
 
-Het is zo eenvoudig om afbeeldingen en middelen in uw apps bij te werken met AEM CMS zonder kop.
+Het is zo eenvoudig om afbeeldingen en middelen in uw apps bij te werken met AEM zonder kop CMS.
 
 ## Een verwijzing toevoegen aan een nieuw inhoudsfragment in de app {#create-moment}
 

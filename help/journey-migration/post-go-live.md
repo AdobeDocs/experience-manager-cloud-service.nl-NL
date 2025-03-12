@@ -15,8 +15,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="AEM voor probleemoplossing"
->abstract="Beste praktijken voor de ononderbroken ontwikkeling en het beheer van logboeken evalueren. Meer informatie over tools zoals Developer Console en CRXDE Lite om problemen met AEM op te lossen."
+>title="Problemen met AEM oplossen"
+>abstract="Beste praktijken voor de ononderbroken ontwikkeling en het beheer van logboeken evalueren. Meer informatie over tools zoals Developer Console en CRXDE Lite voor hulp bij het oplossen van problemen met AEM."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Logbestanden openen en beheren"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service-ontwikkelingstools"
 
@@ -42,12 +42,12 @@ Zie [ het Uitvoeren voor AEM as a Cloud Service ](/help/implementing/developing/
 
 ## CRXDE Lite {#crxde-lite}
 
-Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet tot het werkgebied of de productie.
+Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet in het stadium of de productie.
 
 >[!IMPORTANT]
 >Het schrijven naar onveranderlijke opslagruimten, zoals `/libs` en `/apps` bij uitvoering, resulteert in fouten. Bovendien hebt u geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.
 
-Zie [ Ontwikkelen met CRXDE Lite ](/help/implementing/developing/tools/crxde.md) voor meer informatie over hoe te om uw AEM toepassing te ontwikkelen gebruikend CRXDE Lite.
+Zie [ Ontwikkelen met CRXDE Lite ](/help/implementing/developing/tools/crxde.md) voor meer informatie over hoe te om uw toepassing van AEM te ontwikkelen gebruikend CRXDE Lite.
 
 ## Logbestanden beheren {#managing-logs}
 
@@ -60,10 +60,10 @@ Zie [ Toegang tot en het Leiden Logboeken ](/help/implementing/cloud-manager/man
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Help en ondersteuning"
->abstract="Neem contact op met AEM ondersteuningsteam van de Adobe voor meer informatie of om eventuele problemen op te lossen."
+>abstract="Neem contact op met het ondersteuningsteam van Adobe dat AEM ondersteunt voor meer informatie of om eventuele problemen op te lossen."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
 
-Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van de Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer details.
+Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer details.
 
 ## Documentlessen {#document-learnings}
 
@@ -71,7 +71,7 @@ Als de migratie is voltooid, documenteert u de tijdens dit proces verworven kenn
 
 * Wat werkte goed en wat niet?
 * Wat waren de belangrijkste pijnpunten?
-* Recommendations als er een toekomstige migratie is.
+* Aanbevelingen voor toekomstige migratie.
 
 Deze cursussen na de migratie delen met belanghebbenden en teams binnen uw organisatie.
 

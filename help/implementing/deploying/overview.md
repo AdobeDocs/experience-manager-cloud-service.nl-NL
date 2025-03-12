@@ -17,7 +17,7 @@ ht-degree: 0%
 
 De grondbeginselen van codeontwikkeling zijn in AEM as a Cloud Service vergelijkbaar met de oplossingen AEM On Premise en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe omgevingen op AEM as a Cloud Service. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit leveringshulpmiddel is nu het enige mechanisme voor het opstellen van code aan AEM as a Cloud Service dev, stadium, en productiemilieu&#39;s. Voor snelle eigenschapbevestiging en het zuiveren alvorens die eerder vermelde milieu&#39;s op te stellen, kan de code van een lokaal milieu aan a [ Snelle Milieu van de Ontwikkeling ](/help/implementing/developing/introduction/rapid-development-environments.md) worden gesynchroniseerd.
 
-De update van [ AEM versie ](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke plaatsingsgebeurtenis van het duwen van [ douanecode ](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is omdat dat is wat het op de bovenkant wordt opgesteld. AEM versie-updates die daarna plaatsvinden (die vaak voorkomen en automatisch worden toegepast), zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantencode.
+De update van de [ versie van AEM ](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke plaatsingsgebeurtenis van het duwen van [ douanecode ](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de versie van AEM moeten worden getest die op productie is omdat dat is wat het bovenop wordt opgesteld. AEM-versies die later worden bijgewerkt (vaak en automatisch worden toegepast), moeten compatibel zijn met de reeds geïmplementeerde klantcode.
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun praktijken moeten aanpassen zodat ze zowel met de updates van de AEM as a Cloud Service-versie als met de updates van de klant werken.
 
@@ -28,11 +28,11 @@ In de rest van dit document wordt beschreven hoe ontwikkelaars hun praktijken mo
 
 ## Klantenreleases {#customer-releases}
 
-### Codering op basis van de juiste AEM versie {#coding-against-the-right-aem-version}
+### Codering tegen de juiste AEM-versie {#coding-against-the-right-aem-version}
 
-Voor vorige AEM oplossingen, veranderde de huidigste AEM versie niet vaak (ruwweg jaarlijks met driemaandelijkse de dienstpakken) en de klanten zouden de productieinstanties aan de recentste snelstartversie op hun eigen tijd bijwerken, verwijzend naar API Jar. Toepassingen op AEM as a Cloud Service worden echter vaker automatisch bijgewerkt naar de nieuwste versie van AEM, zodat aangepaste code voor interne releases moet worden gebaseerd op de nieuwste AEM.
+Voor eerdere AEM-oplossingen is de meest recente AEM-versie niet vaak gewijzigd (ongeveer jaarlijks met driemaandelijkse servicepakketten) en klanten zouden de productie-instanties op hun eigen tijd bijwerken naar de recentste snelstartversie, waarbij naar de API Jar wordt verwezen. Toepassingen op AEM as a Cloud Service worden echter vaker automatisch bijgewerkt naar de nieuwste versie van AEM, zodat aangepaste code voor interne releases moet worden gebaseerd op de nieuwste versie van AEM.
 
-Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikkeling ondersteund op basis van een specifieke QuickStart en wordt verwacht dat deze ontwikkeling het meest geschikte middel is voor foutopsporing.
+Net als bij bestaande niet-cloud AEM-versies, wordt een lokale, offline ontwikkeling ondersteund op basis van een specifieke QuickStart. Deze ontwikkeling is naar verwachting het meest geschikte instrument voor foutopsporing.
 
 >[!NOTE]
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van de Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
@@ -67,11 +67,11 @@ De rest van deze sectie beschrijft de samenstelling en implicaties van onverande
 
 ### Onveranderbare inhoudspakketten {#immutabe-content-packages}
 
-Alle inhoud en code die in de onveranderlijke gegevensopslagplaats voortkomen moeten in git worden gecontroleerd en door Cloud Manager worden opgesteld. Met andere woorden, in tegenstelling tot huidige AEM oplossingen, wordt de code nooit direct opgesteld aan een lopende AEM instantie. Deze workflow zorgt ervoor dat de code die voor een bepaalde release in een Cloud-omgeving wordt uitgevoerd, identiek is, waardoor het risico van onbedoelde codevariatie tijdens de productie wordt uitgesloten. Als voorbeeld, zou de configuratie OSGI aan broncontrole eerder dan beheerd bij runtime door middel van de de configuratiemanager van de AEM Webconsole moeten worden geëngageerd.
+Alle inhoud en code die in de onveranderlijke gegevensopslagplaats voortkomen moeten in git worden gecontroleerd en door Cloud Manager worden opgesteld. Met andere woorden, in tegenstelling tot de huidige AEM-oplossingen, wordt code nooit rechtstreeks geïmplementeerd op een actieve AEM-instantie. Deze workflow zorgt ervoor dat de code die voor een bepaalde release in een Cloud-omgeving wordt uitgevoerd, identiek is, waardoor het risico van onbedoelde codevariatie tijdens de productie wordt uitgesloten. Als voorbeeld, zou de configuratie OSGI aan broncontrole eerder dan beheerd bij runtime door middel van de configuratiemanager van de Webconsole van AEM moeten worden geëngageerd.
 
 Aangezien de toepassingsveranderingen toe te schrijven aan het plaatsingspatroon door een schakelaar worden toegelaten, kunnen zij niet van veranderingen in de veranderbare bewaarplaats behalve de dienstgebruikers, hun ACLs, nodetypes, en de veranderingen van de indexdefinitie afhangen.
 
-Voor klanten met bestaande codebases is het van essentieel belang dat de in AEM documentatie beschreven herstructureringsoefening in de opslagplaats wordt doorlopen om ervoor te zorgen dat inhoud die voorheen onder de /etc. viel, naar de juiste locatie wordt verplaatst.
+Voor klanten met bestaande codebases is het van essentieel belang dat de in AEM-documentatie beschreven herstructureringsoefening in de repository wordt doorlopen om ervoor te zorgen dat inhoud die voorheen onder de /etc. viel, naar de juiste locatie wordt verplaatst.
 
 Sommige extra beperkingen zijn van toepassing voor deze codepakketten, bijvoorbeeld, [ installeert haken ](https://jackrabbit.apache.org/filevault/installhooks.html) niet worden gesteund.
 
@@ -79,8 +79,8 @@ Sommige extra beperkingen zijn van toepassing voor deze codepakketten, bijvoorbe
 
 Zoals hierboven vermeld, zou de configuratie OSGI aan broncontrole eerder dan door de Webconsole moeten worden geëngageerd. Te dien einde zijn onder meer de volgende technieken van toepassing:
 
-* De noodzakelijke wijzigingen aanbrengen in de lokale AEM van de ontwikkelaar met de configuratiemanager van de AEM webconsole en de resultaten vervolgens exporteren naar het AEM-project op het lokale bestandssysteem
-* Creërend manueel de configuratie OSGI in het AEM project op het lokale dossiersysteem, het van verwijzingen voorzien van de configuratiemanager van de AEM console voor de bezitsnamen.
+* De benodigde wijzigingen aanbrengen in de lokale AEM-omgeving van de ontwikkelaar met de configuratiemanager van de AEM-webconsole en de resultaten vervolgens exporteren naar het AEM-project op het lokale bestandssysteem
+* Creërend manueel de configuratie OSGI in het project van AEM op het lokale dossiersysteem, het van verwijzingen voorzien van de configuratiemanager van de console van AEM voor de bezitsnamen.
 
 Lees meer over configuratie OSGI bij [ het Vormen OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md).
 
@@ -92,7 +92,7 @@ Er zijn twee strategieën om de inhoud te beschrijven die door Cloud Manager wor
 
 ### Tabelinhoudspakketten {#mutable-content-packages}
 
-De inhoud zoals de hiërarchieën van de omslagweg, de dienstgebruikers, en toegangscontroles (ACLs) worden typisch toegewijd in een bepaald archetype-Gebaseerd AEM project. De technieken omvatten het uitvoeren van AEM of het schrijven direct als XML. Tijdens het ontwikkelings- en implementatieproces verpakt Cloud Manager het resulterende veranderbare inhoudspakket. De veranderlijke inhoud wordt geïnstalleerd bij drie verschillende tijden tijdens de opstellen fase in de pijpleiding:
+Inhoud zoals de hiërarchieën van de omslagweg, de dienstgebruikers, en toegangscontroles (ACLs) worden typisch toegewijd in een bepaald archetype-Gebaseerd AEM project. Tot de technieken behoren exporteren vanuit AEM of rechtstreeks schrijven als XML. Tijdens het ontwikkelings- en implementatieproces verpakt Cloud Manager het resulterende veranderbare inhoudspakket. De veranderlijke inhoud wordt geïnstalleerd bij drie verschillende tijden tijdens de opstellen fase in de pijpleiding:
 
 Voor het opstarten van een nieuwe versie van de toepassing:
 
@@ -110,9 +110,9 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Mappen (toevoegen, wijzigen, verwijderen)
    * Bewerkbare sjablonen (toevoegen, wijzigen, verwijderen)
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
-   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [ het filevault documentatie van het Jasrabbit ](https://jackrabbit.apache.org/filevault/installhooks.html) over installeert haken. AEM CS gebruikt momenteel FileVault versie 3.4.0, die installatiekoppen beperkt tot beheerders, systeemgebruikers, en lid van de beheerdersgroep).
+   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [ het filevault documentatie van het Jasrabbit ](https://jackrabbit.apache.org/filevault/installhooks.html) over installeert haken. AEM CS gebruikt momenteel FileVault versie 3.4.0, die installatiekoppen beperkt tot beheergebruikers, systeemgebruikers en leden van de beheerdersgroep).
 
-U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details rond geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden gevonden.
+U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details over geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden gevonden.
 
 >[!NOTE]
 >Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. De inhoud die voor een milieu specifiek is vereist handinstallatie als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +121,7 @@ Er is ook geen mechanisme om wijzigingen in het veranderbare inhoudspakket terug
 
 Alle meegeleverde pakketten van derden moeten als compatibel met AEM as a Cloud Service worden gevalideerd, anders leidt de opname ervan tot een implementatiefout.
 
-Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening nodig door de 6.5 veranderingen in bewaarplaats moeten in overeenstemming zijn die in [ worden beschreven AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
+Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening moeten in overeenstemming zijn nodig door de veranderingen van de 6.5 bewaarplaats die in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden beschreven.
 
 ## Opnieuw plaatsen {#repoinit}
 
@@ -176,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
->abstract="Verken het gebruik van Package Manager voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;one off&#39;. De installatie omvat het invoeren van specifieke inhoud van productie aan het opvoeren om een productieprobleem te zuiveren, het overbrengen van klein inhoudspakket van het milieu op-gebouw aan AEM milieu&#39;s van de Wolk, en meer."
+>abstract="Verken het gebruik van Package Manager voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;one off&#39;. De installatie omvat het importeren van specifieke inhoud van de productie naar het opbouwen om een productieprobleem op te lossen, het overbrengen van een pakket met kleine inhoud van een on-premise omgeving naar AEM Cloud-omgevingen en nog veel meer."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Inhoud overbrengen"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld, het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s, [ de Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) kan in milieu&#39;s op AEM as a Cloud Service worden gebruikt.
@@ -187,7 +187,7 @@ Aangezien Package Manager een runtimeconcept is, is het niet mogelijk om inhoud 
 >
 >Het gebruikersinterface van de Manager van het Pakket zou een **niet gedefiniëerd** foutenmelding kunnen terugkeren als een pakket langer dan tien minuten om duurt te installeren.
 >
->Deze tijd is niet het gevolg van een fout met de installatie, maar van een time-out die de Cloud Service heeft voor alle aanvragen.
+>Deze keer is niet het gevolg van een fout tijdens de installatie, maar van een time-out die Cloud Service heeft voor alle aanvragen.
 >
 >Probeer de installatie niet opnieuw als er een dergelijke fout optreedt. De installatie verloopt op de juiste wijze op de achtergrond. Als u de installatie opnieuw start, kunnen er conflicten optreden tijdens meerdere importprocessen tegelijk.
 
@@ -195,7 +195,7 @@ Alle inhoudspakketten die in Cloud Manager (zowel mutabel als onveranderbaar) zi
 
 ### Inclusief pakketten van derden {#including-third-party}
 
-Het is gebruikelijk voor klanten om vooraf gebouwde pakketten van derdebronnen zoals softwareverkopers zoals de vertaalpartners van de Adobe te omvatten. Het wordt aanbevolen deze pakketten te hosten in een externe opslagruimte en ernaar te verwijzen in de `pom.xml` . Deze methode is mogelijk voor openbare bewaarplaatsen en ook voor privé bewaarplaatsen met wachtwoordbescherming, zoals die in [ wordt beschreven wachtwoord beschermde gemandateerde bewaarplaatsen ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+Het is gebruikelijk dat klanten vooraf gebouwde pakketten van bronnen van derden, zoals softwareleveranciers zoals Adobe-vertaalpartners, opnemen. Het wordt aanbevolen deze pakketten te hosten in een externe opslagruimte en ernaar te verwijzen in de `pom.xml` . Deze methode is mogelijk voor openbare bewaarplaatsen en ook voor privé bewaarplaatsen met wachtwoordbescherming, zoals die in [ wordt beschreven wachtwoord beschermde gemandateerde bewaarplaatsen ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Als het opslaan van het pakket in een externe opslagplaats niet mogelijk is, kunnen klanten in een lokale, op bestandssysteem gebaseerde Maven-opslagplaats plaatsen, die als onderdeel van het project aan SCM is toegewezen. Er wordt naar verwezen door wat er van afhangt. De gegevensopslagruimte wordt gedeclareerd in de projectpom, zoals hieronder wordt geïllustreerd:
 
@@ -241,7 +241,7 @@ Het volgende Geweven `POM.xml` fragment toont hoe de derdepakketten in het &quot
 
 ## Hoe de Rolling Inzet werkt {#how-rolling-deployments-work}
 
-Als AEM updates, worden de klantenversies opgesteld gebruikend een het rollen plaatsingsstrategie om de onderbreking van de auteurcluster in de juiste omstandigheden te elimineren. De algemene volgorde van gebeurtenissen wordt hieronder beschreven, waarbij knooppunten met zowel de oude als de nieuwe versie van de klantcode dezelfde versie van AEM code uitvoeren.
+Net als bij AEM-updates worden klantreleases geïmplementeerd met behulp van een implementatiestrategie om clusterdowntime van de auteur onder de juiste omstandigheden te voorkomen. De algemene volgorde van gebeurtenissen wordt hieronder beschreven, waarbij knooppunten met zowel de oude als de nieuwe versie van de klantcode dezelfde versie van de AEM-code uitvoeren.
 
 * De knopen met de oude versie zijn actief en een versiekandidaat voor de nieuwe versie wordt gebouwd en beschikbaar gesteld.
 * Als er nieuwe of bijgewerkte indexdefinities zijn, worden de overeenkomstige indexen verwerkt. Knooppunten met de oude versie gebruiken altijd de oude indexen, terwijl knooppunten met de nieuwe versie altijd de nieuwe indexen gebruiken.
@@ -263,19 +263,19 @@ AEM as a Cloud Service werkt momenteel niet met indexbeheerprogramma&#39;s zoals
 
 ## Replicatie {#replication}
 
-Het publicatiemechanisme is achterwaarts compatibel met [ AEM Replicatie Java™ APIs ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
+Het publicatiemechanisme is achterwaarts compatibel met [ de Replicatie Java™ APIs van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
-Voor het ontwikkelen en testen van replicatie met de cloud gereed AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish-installatie. Als het ingangspunt voor de gebruikersinterface van AEM auteur is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
+Voor het ontwikkelen en testen van replicatie met de AEM QuickStart die klaar is voor de cloud, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Author/Publish-instelling. Als het ingangspunt voor de gebruikersinterface van AEM Author voor de wolk wordt verwijderd, gaan de gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
 
 ## Achterwaarts Compatibele Code voor het Draaien Plaatsingen {#backwards-compatible-code-for-rolling-deployments}
 
-Zoals hierboven beschreven, impliceert de het rollen van AEM as a Cloud Service plaatsingsstrategie dat zowel de oude als nieuwe versies tezelfdertijd kunnen werken. Wees daarom voorzichtig met codewijzigingen die niet achterwaarts compatibel zijn met de oude AEM versie die nog steeds wordt uitgevoerd.
+Zoals hierboven beschreven, impliceert de het rollen van AEM as a Cloud Service plaatsingsstrategie dat zowel de oude als nieuwe versies tezelfdertijd kunnen werken. Wees daarom voorzichtig met wijzigingen in de code die niet achterwaarts compatibel zijn met de oude AEM-versie die nog wordt uitgevoerd.
 
 Bovendien moet de oude versie worden getest op compatibiliteit met eventuele nieuwe, door de nieuwe versie toegepaste structuren voor veranderbare inhoud als er sprake is van terugdraaiing, omdat gemuteerde inhoud niet wordt verwijderd.
 
 ### De Gebruikers van de dienst en ACL Veranderingen {#service-users-and-acl-changes}
 
-Het veranderen van de dienstgebruikers, of ACLs die tot inhoud of code toegang hebben, kon tot fouten in de oudere AEM versies leiden resulterend in toegang tot die inhoud of code met verouderde de dienstgebruikers. Om dit gedrag aan te pakken, wordt aanbevolen wijzigingen door ten minste twee releases te laten doorlopen, waarbij de eerste release als een koppeling fungeert voordat deze wordt opgeschoond in de volgende release.
+Het veranderen van de dienstgebruikers, of ACLs die tot inhoud of code toegang hebben, kon tot fouten in de oudere versies van AEM leiden resulterend in toegang tot die inhoud of code met verouderde de dienstgebruikers. Om dit gedrag aan te pakken, wordt aanbevolen wijzigingen door ten minste twee releases te laten doorlopen, waarbij de eerste release als een koppeling fungeert voordat deze wordt opgeschoond in de volgende release.
 
 ### Indexwijzigingen {#index-changes}
 
@@ -293,32 +293,32 @@ In tegenstelling tot gewone dev milieu&#39;s, die code als pijpleiding van Cloud
 
 ## Modi uitvoeren {#runmodes}
 
-In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De wijzen van de looppas die typisch worden bepaald omvatten de *dienst* (auteur en publiceer) en het milieu (rde, dev, stadium, prod).
+In bestaande AEM-oplossingen kunnen klanten instanties uitvoeren met willekeurige uitvoeringsmodi en OSGI-configuratie toepassen of OSGI-bundels installeren op die specifieke instanties. De wijzen van de looppas die typisch worden bepaald omvatten de *dienst* (auteur en publiceer) en het milieu (rde, dev, stadium, prod).
 
 AEM as a Cloud Service daarentegen is meer overtuigd over welke uitvoeringsmodi beschikbaar zijn en hoe de OSGI-bundels en de OSGI-configuratie aan hen kunnen worden toegewezen:
 
 * De de configuratieloopwijzen van OSGI moeten RDE, ontwikkeling, stadium, productie voor het milieu of auteur, publiceren voor de dienst van verwijzingen voorzien. Een combinatie van `<service>.<environment_type>` wordt ondersteund, terwijl deze omgevingen in deze specifieke volgorde moeten worden gebruikt (bijvoorbeeld `author.dev` of `publish.prod` ). Er moet rechtstreeks vanuit code naar de OSGI-tokens worden verwezen in plaats van de methode `getRunModes` , die niet langer de `environment_type` bij uitvoering bevat. Voor meer informatie, zie [ Vormend OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md).
 * De de bundelloopwijzen van OSGI zijn beperkt tot de dienst (auteur, publiceer). OSGI-bundels per-run-modus moeten worden geïnstalleerd in het inhoudspakket onder `install.author` of `install.publish` .
 
-AEM as a Cloud Service staat het gebruik van uitvoeringsmodi niet toe om inhoud voor specifieke omgevingen of services te installeren. Als een ontwikkelomgeving moet worden voorzien van gegevens of HTML die zich niet in de het opvoeren of productie milieu&#39;s bevinden, kan de Manager van het Pakket worden gebruikt.
+AEM as a Cloud Service staat het gebruik van uitvoeringsmodi niet toe om inhoud voor specifieke omgevingen of services te installeren. Als een ontwikkelomgeving moet worden voorzien van gegevens of HTML die zich niet in de opvoeromgeving of productieomgeving bevindt, kan Package Manager worden gebruikt.
 
 De ondersteunde configuraties in de uitvoeringsmodus zijn:
 
-* **config** (*het gebrek, is op alle AEM diensten* van toepassing)
-* **config.author** (*is op alle AEM dienst van de Auteur* van toepassing)
-* **config.author.dev** (*is op AEM Dev de dienst van de Auteur* van toepassing)
+* **config** (*het gebrek, is op alle diensten van AEM* van toepassing)
+* **config.signer** (*is op alle dienst van de Auteur van AEM* van toepassing)
+* **config.author.dev** (*is op de dienst van de Auteur van AEM Dev* van toepassing)
 * **config.author.rde** (*is op de dienst van de Auteur van AEM RDE* van toepassing)
-* **config.author.stage** (*is op de dienst van de Auteur van AEM het Staging* van toepassing)
-* **config.author.prod** (*is op de dienst van de Auteur van de AEM van de Productie van toepassing*)
-* **config.publish** (*is van toepassing op de dienst van AEM Publish*)
-* **config.publish.dev** (*is van toepassing op AEM Dev de dienst van Publish*)
-* **config.publish.rde** (*is op de dienst van RDE Publish van toepassing AEM*)
-* **config.publish.stage** (*is op de dienst van Publish van AEM het Staging* van toepassing)
-* **config.publish.prod** (*is op de dienst van Publish van de Productie van toepassing AEM*)
-* **config.dev** (*is van toepassing op AEM Dev diensten*)
+* **config.author.stage** (*is op de dienst van de Auteur van het Staging van AEM van toepassing*)
+* **config.author.prod** (*is op de dienst van de Auteur van de Productie van AEM van toepassing*)
+* **config.publish** (*is op de publicatiedienst van AEM van toepassing*)
+* **config.publish.dev** (*is op de Dev van AEM van toepassing publiceer dienst*)
+* **config.publish.rde** (*van toepassing is op AEM RDE publicatiedienst*)
+* **config.publish.stage** (*is op de Staging van AEM van toepassing publicatiedienst*)
+* **config.publish.prod** (*is op de dienst van de Publicatie van de Productie van AEM van toepassing*)
+* **config.dev** (*is op de diensten van AEM Dev* van toepassing)
 * **config.rde** (*is op de diensten van RDE* van toepassing)
-* **config.stage** (*is van toepassing op AEM het Opvoeren van de diensten*)
-* **config.prod** (*is op de diensten van de Productie van toepassing AEM*)
+* **config.stage** (*is op de Staging van AEM de diensten* van toepassing)
+* **config.prod** (*is op de diensten van de Productie van AEM* van toepassing)
 
 De configuratie OSGI die de meest passende looppaswijzen heeft wordt gebruikt.
 

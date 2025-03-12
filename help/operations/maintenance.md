@@ -17,17 +17,17 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Onderhoudstaken"
->abstract="Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service is de noodzaak voor klanten om de operationele eigenschappen van onderhoudstaken te configureren minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe."
+>abstract="Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service is de noodzaak voor klanten om de operationele eigenschappen van onderhoudstaken te configureren minimaal. Klanten kunnen hun bronnen richten op problemen op toepassingsniveau en de infrastructuurbewerkingen overlaten aan Adobe."
 
-Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service is de noodzaak voor klanten om de operationele eigenschappen van onderhoudstaken te configureren minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe.
+Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service is de noodzaak voor klanten om de operationele eigenschappen van onderhoudstaken te configureren minimaal. Klanten kunnen hun bronnen richten op problemen op toepassingsniveau en de infrastructuurbewerkingen overlaten aan Adobe.
 
 ## Onderhoudstaken configureren {#maintenance-tasks-configuring}
 
-In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service is de onderhoudskaart niet meer beschikbaar, dus configuraties moeten worden toegewezen aan broncontrole en worden geïmplementeerd met de Cloud Manager. De Adobe beheert die onderhoudstaken die montages hebben die niet door klanten (bijvoorbeeld, de Inzameling van de Schrapping van de Datastore) configureerbaar zijn. Andere onderhoudstaken kunnen door klanten worden geconfigureerd, zoals in de onderstaande tabel wordt beschreven.
+In eerdere versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service is de onderhoudskaart niet meer beschikbaar, dus configuraties moeten worden toegewezen aan broncontrole en worden geïmplementeerd met de Cloud Manager. Adobe beheert die onderhoudstaken die montages hebben die niet door klanten (bijvoorbeeld, de Inzameling van de Schrapping van de Datastore) configureerbaar zijn. Andere onderhoudstaken kunnen door klanten worden geconfigureerd, zoals in de onderstaande tabel wordt beschreven.
 
 >[!CAUTION]
 >
->Adobe behoudt zich het recht voor om de configuratie-instellingen voor onderhoudstaken van een klant te negeren om problemen zoals prestatievermindering te beperken.
+>Adobe behoudt zich het recht voor om de configuratie-instellingen voor onderhoudstaak van een klant te negeren om problemen zoals prestatievermindering te beperken.
 
 De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
 
@@ -41,7 +41,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
   <tr>
     <td>Afvalverzameling datastore</td>
     <td>Adobe</td>
-    <td>N.v.t. volledig eigendom van de Adobe</td>
+    <td>N.v.t. volledig eigendom van Adobe</td>
   </td> 
   </tr>
   <tr>
@@ -61,7 +61,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
   <tr>
     <td>Lucene Binaries Cleanup</td>
     <td>Adobe</td>
-    <td>Ongebruikt en daarom door Adobe gehandicapt.</td>
+    <td>Ongebruikt en daarom door Adobe uitgeschakeld.</td>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van de Adobe </b>.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van Adobe </b>.</p>
   </td>
   </tr>
   </tbody>

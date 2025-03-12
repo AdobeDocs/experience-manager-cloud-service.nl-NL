@@ -1,6 +1,6 @@
 ---
 title: Overzicht van de tool Content Transfer
-description: Leer hoe u met het gereedschap Inhoud overbrengen inhoud van een on-premise AEM-instantie kunt overbrengen naar AEM as a Cloud Service
+description: Leer hoe u inhoud van een AEM-exemplaar op locatie naar AEM as a Cloud Service kunt overbrengen met het gereedschap Inhoud overbrengen
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -17,10 +17,10 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Overzicht"
->abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen. Met dit gereedschap worden ook groepen automatisch overgedragen."
+>abstract="Content Transfer Tool is een door Adobe ontwikkeld programma dat kan worden gebruikt om de migratie van bestaande inhoud van een AEM-broninstantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie te starten. Met dit gereedschap worden ook groepen automatisch overgedragen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en beste praktijken"
 
-Het hulpmiddel van de Overdracht van de Inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen.
+Het gereedschap Inhoud overbrengen is een door Adobe ontwikkeld programma dat kan worden gebruikt om de migratie van bestaande inhoud van een AEM-broninstantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie te starten.
 
 Met dit gereedschap worden ook groepen automatisch overgedragen.  Zie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0} voor meer informatie.[
 
@@ -79,4 +79,4 @@ Het verstrijken van een migratieset kan op de rij van de Plaats van de Migratie 
 
 ## Volgende functies {#whats-next}
 
-Zodra u over het Hulpmiddel van de Overdracht van de Inhoud en zijn overzicht hebt geleerd dat dit hulpmiddel kan worden gebruikt om bestaande inhoud over van een bron AEM instantie (op-gebouw of AMS) aan de instantie van doelAEM Cloud Service te bewegen, moet u [ Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) herzien.
+Zodra u over het Hulpmiddel van de Overdracht van de Inhoud en zijn overzicht hebt geleerd dat dit hulpmiddel kan worden gebruikt om bestaande inhoud over van een bronAEM instantie (op-gebouw of AMS) aan de instantie van de Dienst van de Kloud van doelAEM te bewegen, moet u [ Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) herzien.
