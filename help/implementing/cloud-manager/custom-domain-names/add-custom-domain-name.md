@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
 
 
-# Een aangepaste domeinnaam toevoegen {#adding-cdn}
+# Een aangepaste domeinnaam toevoegen {#adding-custom-domain-name}
 
 Leer hoe te om een naam van het douanedomein toe te voegen gebruikend **Montages van het Domein** in Cloud Manager.
 
@@ -27,9 +27,9 @@ Voldoe aan deze vereisten voordat u een aangepaste domeinnaam in Cloud Manager t
 
 >[!IMPORTANT]
 >
->Als u een Adobe beheerde CDN gebruikt, moet u nog uw domein aan Cloud Manager toevoegen.
+>Als u een door Adobe beheerde CDN gebruikt, moet u nog steeds uw domein aan Cloud Manager toevoegen.
 
-## Waar kunt u aangepaste domeinnamen toevoegen {#where-to-add-cdn}
+## Waar kunt u aangepaste domeinnamen toevoegen {#where-to-add-custom-domain-name}
 
 U kunt een naam van het douanedomein van de [ pagina van de Montages van het Domein ](#adding-cdn-settings) in Cloud Manager toevoegen.
 
@@ -37,7 +37,7 @@ Wanneer u een aangepaste domeinnaam toevoegt, wordt het domein gediend met het m
 
 De stappen voor beide methoden die in dit document worden beschreven, zijn gebaseerd op Snelheid. Als u een verschillende CDN (het Netwerk van de Levering van de Inhoud) gebruikte, vorm uw domein met CDN u om hebt gekozen te gebruiken.
 
-## Een aangepaste domeinnaam toevoegen {#adding-cdn-settings}
+## Een aangepaste domeinnaam toevoegen {#adding-custom-domain-name-settings}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
@@ -63,24 +63,24 @@ Neem bij het invoeren van de domeinnaam geen `http://` , `https://` of spaties o
 
    | Certificaattype, optie | Beschrijving |
    | --- | --- |
-   | SSL-certificaat (met DV-beheer) voor Adobe | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
+   | Adobe managed (DV) SSL-certificaat | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
    | Door de klant beheerd SSL-certificaat (OV/EV) | Selecteer dit certificaattype als u een EV/OV SSL-certificaat wilt gebruiken om het domein te beveiligen. Deze optie biedt uitgebreide beveiliging met OV (Organisation Validation) of EV (Extended Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
 
 1. In **verifieer domein** dialoogdoos, die op het certificaattype wordt gebaseerd u selecteerde, doe één van het volgende:
 
    | Als u het certificaattype hebt geselecteerd | Beschrijving |
    | --- | ---  |
-   | Door Adobe beheerd certificaat | a. Voltooi de [ Adobe beheerde certificaatstappen ](#adobe-managed-cert-steps) hieronder. Wanneer u de stappen voltooit, in **verifieer domein** dialoogdoos, **verifieert**.<ul><li>DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.</li><li>Cloud Manager verifieert uiteindelijk het bezit van de domeinnaam en werkt de status in de **lijst van de Montages van het Domein** bij. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li>![ verifieer domeinstatus ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. U bent nu klaar om [ een beheerde Adobe (DV) toe te voegen SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Door Adobe beheerd certificaat | a. Voltooi de [ Adobe beheerde certificaatstappen ](#adobe-managed-cert-steps) hieronder. Wanneer u de stappen voltooit, in **verifieer domein** dialoogdoos, **verifieert**.<ul><li>DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.</li><li>Cloud Manager verifieert uiteindelijk het bezit van de domeinnaam en werkt de status in de **lijst van de Montages van het Domein** bij. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li>![ verifieer domeinstatus ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. U bent nu klaar om [ een Adobe geleid (DV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert) toe te voegen.</li></ul> |
    | Door de klant beheerd certificaat | a. Klik **OK**.<br> b. U bent nu klaar om [ een klant beheerde (OV/EV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) toe te voegen.<br> nadat u het certificaat toevoegt, wordt uw domeinnaam duidelijk zoals geverifieerd in de **2} lijst van de Montages van het Domein {.** Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li></ul><br>![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >Als u uw eigen klant beheerde (OV/EV of DV) SSL certificaat gebruikt, en van plan bent om een klant beheerde CDN ***leverancier te gebruiken***, kunt u overslaan toevoegend een SSL certificaat. In plaats daarvan, ga direct aan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+   >Als u uw eigen door de klant beheerde SSL-certificaat (OV/EV of DV) gebruikt, hoeft u geen SSL-certificaat toe te voegen. Deze regel is ook van toepassing als u van plan bent om een klant-geleide CDN (het Netwerk van de Levering van de Inhoud) ***leverancier*** te gebruiken. In plaats daarvan, ga direct aan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
 
 
 ### Door Adobe beheerde certificaatstappen {#adobe-managed-cert-steps}
 
-Als u het certificaattype *beheerde Adobe* selecteerde, voltooi de volgende stap in **verifieer domein** dialoogdoos.
+Als u het certificaattype *Adobe beheerde certificaat* selecteerde, voltooi de volgende stap in **verifieer domein** dialoogdoos.
 
 ![ Adobe beheerde certificaatstappen ](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
@@ -92,7 +92,7 @@ Als u deze instellingen wilt configureren, moet u bepalen of een `CNAME` - of ap
 
 >[!NOTE]
 >
->Voor Adobe-geleide CDNs, wanneer het gebruiken van (de Bevestiging van het Domein) certificaten DV, slechts plaatsen met de bevestiging van ACME worden toegelaten.
+>Voor door Adobe beheerde CDN&#39;s zijn bij het gebruik van DV-certificaten (Domain Validation) alleen sites met ACME-validatie toegestaan.
 
 #### Vereisten {#adobe-managed-cert-dv-requirements}
 
@@ -200,4 +200,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 

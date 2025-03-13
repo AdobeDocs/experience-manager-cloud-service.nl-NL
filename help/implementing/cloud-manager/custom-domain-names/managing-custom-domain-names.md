@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -19,9 +19,9 @@ Met Cloud Manager kunt u aangepaste domeinnamen bewerken, bijwerken, vervangen, 
 
 ## Een aangepaste domeinnaamconfiguratie bewerken {#view-and-update}
 
-In Adobe Cloud Manager, zou u een configuratie van de douanedomeinnaam om de volgende redenen kunnen willen uitgeven:
+In Adobe Cloud Manager kunt u om de volgende redenen een aangepaste domeinnaamconfiguratie bewerken:
 
-* **Omschakelende milieu&#39;s**: Om de correcte configuratie toe te passen afhankelijk van of u inhoud aan eind - gebruikers (Publish) of interne gebruikers (Auteur) dient.
+* **Omschakelende milieu&#39;s**: Om de correcte configuratie toe te passen afhankelijk van of u inhoud aan eind - gebruikers (publiceren) of interne gebruikers (Auteur) dient.
 * **de updates van de Veiligheid**: Om aan een nieuwer SSL certificaat voor verbeterde veiligheid of nalevingsdoeleinden te bevorderen.
 * **Veranderende plaatsingsstrategie**: Om ervoor te zorgen dat het correcte SSL certificaat op een specifiek milieu voor juiste encryptie en plaatstoegang wordt toegepast.
 
@@ -39,9 +39,9 @@ In Adobe Cloud Manager, zou u een configuratie van de douanedomeinnaam om de vol
 
 1. Klik **uitgeven**.
 
-1. In **geef CDN configuratie** dialoogdoos uit, doe het volgende:
+1. In **geef de configuratiedoos van het Domein** uit, doe het volgende:
 
-   * In de **drop-down lijst 0} Rij, selecteer de rij (Publish of Voorproef) u wilt gebruiken.**
+   * In de **lijst van de Rij** drop-down lijst, selecteer de rij (publiceer of Voorproef) u wilt gebruiken.
    * In de **SSL certificaat** drop-down lijst, selecteer het SSL certificaat dat u wilt gebruiken.
 
 1. Klik **Update**.
@@ -74,14 +74,14 @@ Zie ook [ een naam van het douanedomein ](/help/implementing/cloud-manager/custo
 
    | Certificaattype, optie | Beschrijving |
    | --- | --- |
-   | SSL-certificaat (met DV-beheer) voor Adobe | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
+   | Adobe managed (DV) SSL-certificaat | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
    | Door de klant beheerd SSL-certificaat (OV/EV) | Selecteer dit certificaattype als u een EV/OV SSL-certificaat wilt gebruiken om het domein te beveiligen. Deze optie biedt uitgebreide beveiliging met OV (Organisation Validation) of EV (Extended Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
 
 1. In **verifieer domein** dialoogdoos, die op het certificaattype wordt gebaseerd u selecteerde, doe één van het volgende:
 
    | Als u het certificaattype hebt geselecteerd | Beschrijving |
    | --- | ---  |
-   | Door Adobe beheerd certificaat | a. Voltooi de [ Adobe beheerde certificaatstappen ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Wanneer u de stappen in **voltooit verifieer domein** dialoogdoos, **verifieert**.<ul><li>DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.</li><li>Cloud Manager verifieert uiteindelijk het bezit van de domeinnaam en werkt de status in de **lijst van de Montages van het Domein** bij. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li>![ verifieer domeinstatus ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. U bent nu klaar om [ een beheerde Adobe (DV) toe te voegen SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Door Adobe beheerd certificaat | a. Voltooi de [ Adobe beheerde certificaatstappen ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Wanneer u de stappen in **voltooit verifieer domein** dialoogdoos, **verifieert**.<ul><li>DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.</li><li>Cloud Manager verifieert uiteindelijk het bezit van de domeinnaam en werkt de status in de **lijst van de Montages van het Domein** bij. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li>![ verifieer domeinstatus ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. U bent nu klaar om [ een Adobe geleid (DV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert) toe te voegen.</li></ul> |
    | Door de klant beheerd certificaat | a. Klik **OK**.<br> b. U bent nu klaar om [ een klant beheerde (OV/EV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) toe te voegen.<br> nadat u het certificaat toevoegt, wordt uw domeinnaam duidelijk zoals geverifieerd in de **2} lijst van de Montages van het Domein {.** Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li></ul><br>![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
@@ -112,7 +112,7 @@ Een gebruiker met de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsi
 
 1. Van de **pagina van Milieu&#39;s**, navigeer aan een detailsscherm van het milieu van belang.
 
-1. Identificeer in de tabel met domeinnamen de rij van de aangepaste domeinnaam die u wilt verwijderen.
+1. Van de lijst van Toewijzingen van het Domein, identificeer de rij van de naam van het douanedomein u wilt schrappen.
 
 1. Klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij het uiterst juiste eind van de rij.
 
