@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ De UUID-ondersteuning voor inhoudsfragmenten is nu GA. De nieuwe capaciteit vera
 **Dynamische Media met steun OpenAPI in de Redacteur van het Fragment van de Inhoud en GraphQL**
 
 Assets die in verschillende AEM as a Cloud Service-programma&#39;s zijn opgeslagen dan Content Fragments en die zijn ingeschakeld met de nieuwe Dynamic Media met OpenAPI-mogelijkheid, kan nu worden gebruikt in Content Fragments. Met de afbeeldingskiezer in de nieuwe Content Fragment Editor kunt u nu &quot;externe&quot; opslagruimten selecteren als bron voor afbeeldingselementen waarnaar moet worden verwezen in het fragment. En bij levering van dergelijke inhoudsfragmenten met AEM GraphQL bevat het JSON-antwoord nu vereiste eigenschappen voor externe elementen (assetId, repositoryId), zodat clienttoepassingen respectievelijke dynamische media kunnen maken met OpenAPI-URL&#39;s om de afbeelding op te halen.
+
+**Uitvoer van de Redacteur van het Fragment van de Inhoud**
+
+We blijven de nieuwe op Spectrum UI gebaseerde Content Fragment Editor inschakelen in AEM as a Cloud Service. Nadat deze standaard is geworden voor alle Cloud Service Developer-omgevingen in november 2024, wordt deze standaard ingesteld voor alle Stage-omgevingen op 1 april 2025 en voor alle Production-omgevingen op 1 mei 2025. In alle gevallen hebben gebruikers nog steeds de mogelijkheid om terug te keren naar de traditionele Content Fragment Editor in AEM Touch UI.
 
 **Vertaling HTTP API**
 
