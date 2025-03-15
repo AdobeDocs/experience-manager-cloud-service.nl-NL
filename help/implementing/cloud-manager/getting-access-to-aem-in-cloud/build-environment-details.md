@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
+source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1569'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 >[!NOTE]
 >
->Hoewel Cloud Manager geen specifieke versie van de `jacoco-maven-plugin` definieert, moet de gebruikte versie ten minste `0.7.5.201505241946` zijn.
+>Cloud Manager geeft geen specifieke versie van de `jacoco-maven-plugin` op, maar de vereiste versie is afhankelijk van de Java-versie van het project. Voor Java 8 moet de versie van de insteekmodule minstens `0.7.5.201505241946` zijn, terwijl voor nieuwere Java-versies mogelijk een recentere versie nodig is.
 
 ## Door HTTPS aangebrachte opslagruimten {#https-maven}
 
@@ -88,11 +88,11 @@ Als u wilt migreren naar gebouwen met Java 21 of Java 17, moet u eerst upgraden 
 
 Wanneer u uw toepassing naar een nieuwe Java-versie (build) en een nieuwe runtimeversie migreert, moet u deze grondig testen in ontwikkelings- en werkgebiedomgevingen voordat u de toepassing implementeert naar productie.
 
-Wij adviseren de volgende plaatsingsstrategie:
+Adobe beveelt de volgende implementatiestrategie aan:
 
-1. Voer uw lokale SDK uit met Java 21, dat u kunt downloaden van https://experience.adobe.com/#/downloads, en implementeer uw toepassing in dit programma en valideer de functionaliteit ervan. Controleer de logboeken dat er geen fouten zijn, die op problemen met het klassen laden of bytecode het blazen wijzen.
-1. Configureer een vertakking in uw Cloud Manager-opslagplaats om Java 21 te gebruiken als Java-versie voor buildtime, configureer een DEV-pijpleiding om deze vertakking te gebruiken en de pijpleiding uit te voeren. Voer uw validatietests uit.
-1. Als het er goed uitziet, configureert u uw podium-/prodpijplijn zodanig dat Java 21 wordt gebruikt als buildtime Java-versie en de pijplijn wordt uitgevoerd.
+1. Voer uw lokale SDK uit met Java 21, dat u kunt downloaden van https://experience.adobe.com/#/downloads, en implementeer uw toepassing in dit programma en valideer de functionaliteit ervan. Controleer de logboeken dat er geen fouten zijn, die op problemen met het laden van klassen of bytecode het weven wijzen.
+1. Configureer een vertakking in uw Cloud Manager-opslagplaats om Java 21 te gebruiken als Java-versie voor de ontwikkelingstijd, configureer een DEV-pijpleiding om deze vertakking te gebruiken en de pijpleiding uit te voeren. Voer uw validatietests uit.
+1. Als het goed kijkt, vorm uw stadium/staafpijpleiding om Java 21 als versie van bouwstijltijdJava te gebruiken en de pijpleiding in werking te stellen.
 
 ##### Enkele vertaalfuncties {#translation-features}
 
@@ -118,7 +118,7 @@ Werk het gebruik van de Java-pakketten `org.apache.groovy` of `org.codehaus.groo
 * **Minimale versie van Aries SPIFly:**
 Werk het gebruik van het Java-pakket `org.apache.aries.spifly.dynamic.bundle` bij naar versie 1.3.6 of hoger om ondersteuning voor nieuwere JVM-runtimes te garanderen.
 
-De AEM Cloud Service SDK is compatibel met Java 21 en kan worden gebruikt om de compatibiliteit van uw project met Java 21 te valideren voordat een Cloud Manager-pijplijn wordt uitgevoerd.
+De AEM Cloud Service SDK ondersteunt Java 21 en biedt u de mogelijkheid om de compatibiliteit van uw project met Java 21 te controleren voordat u een Cloud Manager-pijpleiding uitvoert.
 
 * **geef een runtime parameter uit:**
 Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `crx-quickstart/bin/start` of `crx-quickstart/bin/start.bat` ) vanwege de parameter `MaxPermSize` . Als remedie verwijdert u `-XX:MaxPermSize=256M` uit het script of definieert u de omgevingsvariabele `CQ_JVM_OPTS` en stelt u deze in op `-Xmx1024m -Djava.awt.headless=true` .
@@ -127,7 +127,7 @@ Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `cr
 
 >[!IMPORTANT]
 >
->Wanneer `.cloudmanager/java-version` is ingesteld op `21` of `17` , wordt de Java 21-runtime geïmplementeerd. Java 21 runtime is gepland voor geleidelijke implementatie aan alle milieu&#39;s (niet alleen die milieu&#39;s waarvan code met Java 11 wordt gebouwd) die dinsdag, 4 Februari, 2025 beginnen. De rollout begint met sandboxen en ontwikkelomgevingen en wordt vervolgens in april 2025 in alle productieomgevingen geïmplementeerd. De klanten die Java 21 runtime *willen goedkeuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
+>Wanneer `.cloudmanager/java-version` is ingesteld op `21` of `17` , wordt de Java 21-runtime geïmplementeerd. Java 21 runtime is gepland voor geleidelijke implementatie aan alle milieu&#39;s (niet alleen die milieu&#39;s waarvan code met Java 11 wordt gebouwd) die dinsdag, 4 Februari, 2025 beginnen. De rollouts beginnen met sandboxen en ontwikkelomgevingen, gevolgd door alle productieomgevingen in april 2025. De klanten die Java 21 runtime *willen goedkeuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
 
 
 #### Vereisten voor de buildtijd {#build-time-reqs}
