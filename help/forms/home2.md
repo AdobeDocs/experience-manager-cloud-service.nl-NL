@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: 2c41fae87821a28af1fd00701780e9fc52b5577d
+source-git-commit: 4b4bc6f754c6336136d409cf49617c7fafd4f4c3
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -39,12 +39,12 @@ De dienst is altijd huidig, altijd beschikbaar, en altijd het leren. Organisatie
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte oplossing die elke stap van de reis van de klant ondersteunt:
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Adaptieve Forms</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Responsieve, dynamische formulieren maken die worden aangepast aan gebruikersinvoer en apparaattype:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> creeer Aangepaste Forms </a> - bouw vormen die automatisch aan verschillende het schermgrootte en gebruikersinput aanpassen</li>
@@ -60,11 +60,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Communicatie-API's</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Documenten programmatisch genereren, bewerken en beveiligen:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation"> produceer Gepersonaliseerde Mededelingen </a> - creeer aangepaste documenten die op malplaatjes en gegevens worden gebaseerd</li>
@@ -81,11 +81,26 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
+      <h3>Edge Delivery Services voor Forms</h3>
+    </div>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <p>Formulieren maken en leveren met Edge Delivery Services:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview"> Edge Delivery Forms Overzicht </a> - Leer over vormen met Edge Delivery Services</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor"> Universele Redacteur voor Forms </a> - creeer vormen gebruikend de Universele Redacteur van WYSIWYG</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial"> op document-gebaseerde Authoring </a> - creeer formulieren gebruikend Microsoft Word of Google Docs</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms"> Edge Delivery Forms van de Stijl 1} - pas douanestijlen op uw vormen toe</a></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Headless Forms</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Formulierervaringen leveren voor elk kanaal of frontend framework:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview"> Inleiding aan Headless Forms </a> - leer over de headless benadering van vormen</li>
@@ -97,26 +112,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
-      <h3>Edge Delivery Services voor Forms</h3>
-    </div>
-    <div class="card-body">
-      <p>Formulieren maken en leveren met Edge Delivery Services:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview"> Edge Delivery Forms Overzicht </a> - Leer over vormen met Edge Delivery Services</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor"> Universele Redacteur voor Forms </a> - creeer vormen gebruikend de Universele Redacteur van WYSIWYG</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial"> op document-gebaseerde Authoring </a> - creeer formulieren gebruikend Microsoft Word of Google Docs</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms"> Edge Delivery Forms van de Stijl 1} - pas douanestijlen op uw vormen toe</a></li>
-      </ul>
-    </div>
-  </div>
-
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Workflowautomatisering</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Automatiseer bedrijfsprocessen met formulieren en documenten:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step"> creeer bedrijfsprocessen </a> - de vormen van de Route voor goedkeuring of terugkoppelen, post-voorleggingswerkschema's, of achterste werkschema's om inschrijvingsprocessen te beheren</li>
@@ -126,11 +126,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>E-handtekeningen</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Voeg juridisch bindende elektronische handtekeningen aan uw formulieren en documenten toe:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms"> de Integratie van het Onderteken van Adobe </a> - laat e-handtekeningen in Aanpassings Forms toe</li>
@@ -140,11 +140,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Analyse en inzichten</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Meer inzicht in formuliergebruik en prestaties:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation"> laat Adobe Analytics </a> toe - het vormgebruik en prestaties van het spoor</li>
@@ -154,11 +154,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Gegevensintegratie</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Sluit formulieren aan op bestaande gegevensbronnen en systemen:</p>
       <h4>Adobe Ecosysteem</h4>
       <ul>
@@ -192,42 +192,42 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
 
 ## Aan de slag met AEM Forms as a Cloud Service
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Voor zakelijke gebruikers</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong> begrijp de grondbeginselen </strong>: Leer over <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> Aanpassings Forms </a> en hoe zij uw bedrijfsprocessen kunnen helpen digitaliseren.</li>
-        <li><strong> onderzoek malplaatjes </strong>: Doorblader de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components"> pre-gebouwde malplaatjes en de thema's </a> om een hoofdbegin op uw vormprojecten te krijgen.</li>
-        <li><strong> leer vorm creatie </strong>: Volg de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring"> gids van de vorm creatie </a> om uw eerste vorm tot stand te brengen.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong> begrijp de grondbeginselen </strong>: Leer over <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components"> Aanpassings Forms </a> en hoe zij uw bedrijfsprocessen kunnen helpen digitaliseren.</li>
+        <li style="margin-bottom: 8px;"><strong> onderzoek malplaatjes </strong>: Doorblader de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components"> pre-gebouwde malplaatjes en de thema's </a> om een hoofdbegin op uw vormprojecten te krijgen.</li>
+        <li style="margin-bottom: 8px;"><strong> leer vorm creatie </strong>: Volg de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring"> gids van de vorm creatie </a> om uw eerste vorm tot stand te brengen.</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Voor ontwikkelaars</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong> Opstelling uw milieu </strong>: Vorm uw <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment"> lokale ontwikkelomgeving </a> voor AEM Forms.</li>
-        <li><strong> leer de architectuur </strong>: Begrijp de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture"> architectuur van AEM Forms as a Cloud Service </a>.</li>
-        <li><strong> verken APIs </strong>: Verken zich met <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> beschikbare APIs </a> en SDKs voor het uitbreiden van en het integreren van Forms.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong> Opstelling uw milieu </strong>: Vorm uw <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment"> lokale ontwikkelomgeving </a> voor AEM Forms.</li>
+        <li style="margin-bottom: 8px;"><strong> leer de architectuur </strong>: Begrijp de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture"> architectuur van AEM Forms as a Cloud Service </a>.</li>
+        <li style="margin-bottom: 8px;"><strong> verken APIs </strong>: Verken zich met <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> beschikbare APIs </a> en SDKs voor het uitbreiden van en het integreren van Forms.</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Voor beheerders</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong> Onboard aan Cloud Service </strong>: Volg <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service"> onboarding gids </a> aan opstelling AEM Forms as a Cloud Service.</li>
-        <li><strong> vormt de diensten </strong>: Opstelling <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation"> integratie met andere diensten van Adobe </a> zoals Adobe Analytics.</li>
-        <li><strong> Migreer van AEM 6.5 </strong>: Als u uit AEM 6.5 komt, volg de <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html"> migratiegids </a> om naar Cloud Service te bewegen.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong> Onboard aan Cloud Service </strong>: Volg <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service"> onboarding gids </a> aan opstelling AEM Forms as a Cloud Service.</li>
+        <li style="margin-bottom: 8px;"><strong> vormt de diensten </strong>: Opstelling <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation"> integratie met andere diensten van Adobe </a> zoals Adobe Analytics.</li>
+        <li style="margin-bottom: 8px;"><strong> Migreer van AEM 6.5 </strong>: Als u uit AEM 6.5 komt, volg de <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html"> migratiegids </a> om naar Cloud Service te bewegen.</li>
       </ol>
     </div>
   </div>
@@ -235,98 +235,24 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
 
 ## Functies voor vroege adoptie
 
-<div class="card">
-  <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; margin-bottom: 30px;">
+  <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
     <h3>AEM Forms-programma voor vroege toegang</h3>
   </div>
-  <div class="card-body">
+  <div class="card-body" style="padding: 20px; background-color: #ffffff;">
     <p>Het <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features"> Vroege Programma van de Toegang van AEM Forms </a> biedt exclusieve toegang tot speerpunteigenschappen alvorens zij algemeen beschikbaar zijn, met inbegrip van:</p>
-    <ul>
-      <li><strong> de Medewerker van AEM Forms AI (Gen AI) </strong> - creeer sneller formulieren met AI-Verwerkende suggesties</li>
-      <li><strong> AEM Forms Workfront Fusion Connector </strong> - Automatisewerkstromen die door vormbijdragen worden teweeggebracht</li>
-      <li><strong> Conversational Forms </strong> - creeer praatje-stijl vormervaringen op om het even welke pagina van AEM Sites</li>
-      <li><strong> WYSIWYG Authoring for Edge Delivery </strong> - Bouw formulieren met de Universele Redacteur voor Edge Delivery Services</li>
-      <li><strong> AEM Forms aan de Schakelaar van Marketo </strong> - integreer vormbijdragen met Marketo Engage</li>
+    <ul style="margin-top: 10px; padding-left: 25px;">
+      <li style="margin-bottom: 8px;"><strong> de Medewerker van AEM Forms AI (Gen AI) </strong> - creeer sneller formulieren met AI-Verwerkende suggesties</li>
+      <li style="margin-bottom: 8px;"><strong> AEM Forms Workfront Fusion Connector </strong> - Automatisewerkstromen die door vormbijdragen worden teweeggebracht</li>
+      <li style="margin-bottom: 8px;"><strong> Conversational Forms </strong> - creeer praatje-stijl vormervaringen op om het even welke pagina van AEM Sites</li>
+      <li style="margin-bottom: 8px;"><strong> WYSIWYG Authoring for Edge Delivery </strong> - Bouw formulieren met de Universele Redacteur voor Edge Delivery Services</li>
+      <li style="margin-bottom: 8px;"><strong> AEM Forms aan de Schakelaar van Marketo </strong> - integreer vormbijdragen met Marketo Engage</li>
     </ul>
     <p>Voor een volledige lijst van vroege toegangsinnovaties en gedetailleerde documentatie, bezoek de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features"> pagina van het Programma van de Vroege Toegang van AEM Forms </a>.</p>
   </div>
 </div>
 
-<div class="cta-card">
-  <h3>Klaar om aan de slag te gaan?</h3>
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service"> Aan boord aan AEM Forms as a Cloud Service </a> vandaag en transformeer de digitale vormenervaring van uw organisatie.</p>
+<div style="background-color: #f0f7ff; border-left: 4px solid #1473e6; padding: 20px; margin: 30px 0; border-radius: 4px;">
+  <h3 style="margin-top: 0; color: #1473e6;">Klaar om aan de slag te gaan?</h3>
+  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;"> Aan boord aan AEM Forms as a Cloud Service </a> vandaag en transformeer de digitale vormenervaring van uw organisatie.</p>
 </div>
-
-<style>
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.card {
-  flex: 1 1 calc(50% - 20px);
-  min-width: 300px;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: #f5f5f5;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.card-header h3 {
-  margin: 0;
-  color: #2c2c2c;
-  font-size: 1.25rem;
-}
-
-.card-body {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.card-body ul, .card-body ol {
-  margin-top: 10px;
-  padding-left: 25px;
-}
-
-.card-body li {
-  margin-bottom: 8px;
-}
-
-.cta-card {
-  background-color: #f0f7ff;
-  border-left: 4px solid #1473e6;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 4px;
-}
-
-.cta-card h3 {
-  margin-top: 0;
-  color: #1473e6;
-}
-
-.cta-card a {
-  font-weight: bold;
-  color: #1473e6;
-}
-
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-</style>
