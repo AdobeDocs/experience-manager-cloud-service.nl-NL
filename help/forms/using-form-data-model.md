@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -34,7 +34,7 @@ Een formuliergegevensmodel (FDM) is een uitbreiding van het JSON-schema waarmee 
 * [ creeer Aangepaste Forms en fragmenten ](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Voorvertonen met voorbeeldgegevens](#preview-ic)
-* [met de service Formuliergegevensmodel](#prefill)
+* [De service Formuliergegevensmodel gebruiken](#prefill)
 * [Verzonden adaptieve formuliergegevens terugschrijven naar gegevensbronnen](#write-af)
 * [Services aanroepen met behulp van adaptieve formulierregels](#invoke-services)
 
@@ -165,7 +165,7 @@ Bovendien kunt u de `guidelib.dataIntegrationUtils.executeOperation` API gebruik
 
 U kunt [ een model van vormgegevens van regelredacteur aanhalen gebruikend douanefuncties ](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Om het model van vormgegevens (FDM) aan te halen voeg een model van vormgegevens aan de lijst van gewenste personen toe. Een formuliergegevensmodel toevoegen aan een toegestane lijst:
 
-1. Ga naar de webconsole van de Experience Manager op `https://server:host/system/console/configMgr` .
+1. Ga naar Experience Manager-webconsole op `https://server:host/system/console/configMgr` .
 1. Zoek **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** .
 1. Klik ![ plus pictogram ](/help/forms/assets/Smock_Add_18_N.svg) pictogram om de configuratie toe te voegen.
 1. Voeg **[!UICONTROL Content path pattern]** toe om de locatie van uw Adaptieve Forms op te geven.  Standaard is de waarde `/content/forms/af/(.*)` , die alle adaptieve Forms bevat. U kunt ook het pad opgeven voor een specifiek adaptief formulier.

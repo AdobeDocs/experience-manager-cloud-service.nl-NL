@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6d6b857bf36771b92b8f11db5ce6608023d1fac0
+source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6082'
 ht-degree: 2%
 
 ---
@@ -1037,7 +1037,7 @@ ht-degree: 2%
       + WYSIWYG Authoring {#universal-editor}
          + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Authoring starten met Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Uw eerste formulier maken met de Universal Editor - stapsgewijze zelfstudie](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Universal Editor Interface Guide: uitleg over gereedschappen, functies en navigatie](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Maak uw Forms mobiel gebruiksvriendelijk: responsief ontwerp in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Mooie Forms: stijlpagina en thematiegids voor de universele editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1046,6 +1046,7 @@ ht-degree: 2%
          + [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Forms publiceren en implementeren: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [ bouwt de Componenten van de Vorm van de Douane: De Gids van de ontwikkelaar aan Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [ ModelIntegratie van de Gegevens van de Vorm: Het integreren Forms met het Model van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + Op documenten gebaseerd ontwerpen {#getting-started-edge-delivery-services-forms}
          + [Uw eerste formulier maken: snel aan de slag met Google-werkbladen en Excel](/help/edge/docs/forms/tutorial.md)
          + [Forms maken met Google Sheets of Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)

@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,13 @@ Voer de volgende stappen uit als u een zelfstandig adaptief formulier wilt ontwe
 
       ![ creeer EDS Forms ](/help/edge/assets/create-eds-forms.png)
 
+
+      Wanneer u een op Edge Delivery Services gebaseerde sjabloon selecteert, wordt de knop **[!UICONTROL Create]** ingeschakeld.
+   1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
+   1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een publicatiedatum of een publicatiedatum opgeven voor een adaptief formulier.
+
    1. Klik **[!UICONTROL Create]** en de **creeer 2} tovenaar van de Vorm {verschijnt.**
+   1. Specificeer de **Naam** en **Titel**.
    1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
       `https://github.com/wkndforms/edsforms`
    1. Klik op **[!UICONTROL Create]**.

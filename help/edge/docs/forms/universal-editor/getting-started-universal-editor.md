@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1853'
 ht-degree: 0%
 
 ---
@@ -14,14 +14,19 @@ ht-degree: 0%
 
 # Aan de slag met Edge Delivery Services for AEM Forms met Universal Editor (WYSIWYG)
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| Universal Editor-gebaseerde authoring | Dit artikel |
+| Authoring op basis van documenten | [ klik hier ](/help/edge/docs/forms/tutorial.md) |
 
+
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
 In het huidige digitale tijdperk zijn gebruikersvriendelijke formulieren essentieel voor alle organisaties. Edge Delivery Services Forms wordt gemaakt met de Universal Editor, die WYSIWYG-mogelijkheden (what-you-see-is-what-you-get) biedt. Het biedt een moderne, intuïtieve interface voor efficiënt ontwerpen van formulieren.
 
 AEM Forms biedt een blok, het Adaptive Forms Block, waarmee u eenvoudig Edge Delivery Services Forms kunt maken om gegevens vast te leggen en op te slaan. U kunt [ een nieuw Project van AEM tot stand brengen dat met het AanpassingsBlok van Forms ](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand Project van AEM ](#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
 
-![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png)
+![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 Deze zelfstudie begeleidt u bij het maken, voorvertonen en publiceren van uw eigen formulier met een nieuw of bestaand Adobe Experience Manager Site-project met behulp van de WYSIWYG-authoring van Universal Editor.
 

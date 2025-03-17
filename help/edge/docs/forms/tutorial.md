@@ -1,12 +1,12 @@
 ---
 title: Aan de slag met Edge Delivery Services voor AEM Forms - Zelfstudie voor ontwikkelaars
-description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Binnen tien tot twintig minuten hebt u uw eigen formulieren gemaakt.
+description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Over tien tot twintig minuten hebt u uw eigen formulieren gemaakt.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
@@ -138,8 +138,6 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
       Hiermee verbindt u de inhoudsmap met uw website. Na het bijwerken van de verwijzing kunnen fouten met &quot;404 Niet gevonden&quot; aanvankelijk optreden. Dit komt omdat er nog geen voorvertoning van uw inhoud is weergegeven. In de volgende sectie wordt uitgelegd hoe u begint met het ontwerpen en voorvertonen van uw inhoud.
 
-
-
 ### Inhoud voorvertonen en publiceren
 
 Nadat u de laatste stap hebt uitgevoerd, is de nieuwe inhoudsbron niet leeg, maar is deze pas zichtbaar op uw website als deze wordt gepromoot naar de voorvertoning of de live stadia. Op dit moment kan dit 404 fouten veroorzaken.
@@ -261,49 +259,47 @@ Productie: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Gefeliciteerd! U hebt uw lokale ontwikkelomgeving ingesteld en uw wijzigingen geïmplementeerd.
 
+## Aangepast Forms-blok toevoegen aan uw bestaande AEM-project
 
 <!--
-## Add Adaptive Forms Block to your existing AEM project
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3427789)
-
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
+Als u een bestaand AEM-project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren.
 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> Deze stap is op projecten van toepassing die met [ worden gebouwd AEM Boilerplate ](https://github.com/adobe/aem-boilerplate). Als u uw project van AEM gebruikend [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) creeerde, kunt u deze stap overslaan.
 
-To Integrate:
+Om te integreren:
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. **voegt vereiste dossiers en omslagen** toe
+   1. Kopieer en kleef de volgende omslagen en de dossiers van [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) in uw Project van AEM:
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+      * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
+      * [ vorm-gemeenschappelijke ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) omslag
+      * [ vorm-componenten ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) omslag
+      * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
+      * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+1. **de componentendefinities en modeldossiers van de Update**
+   1. Navigeer naar het `../models/_component-definition.json` dossier in uw Project van AEM en werk het met de veranderingen van het [ _component-definition.json- dossier in de Boilerplate van AEM Forms ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48) bij.
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+   1. Navigeer naar het `../models/_component-models.json` dossier in uw Project van AEM en werk het met de veranderingen van het [ _component-models.json dossier in de Boilerplate van AEM Forms bij ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-1. Commit and push these changes to your AEM Project repository on GitHub.
+1. **voeg de Redacteur van de Vorm in redacteursmanuscript** toe
+   1. Navigeer aan het `../scripts/editor-support.js` dossier in uw Project van AEM en werk het met de veranderingen van het {[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106) bij
+1. **update ESLint configuratiedossier**
+   1. Navigeer naar het `../.eslintignore` -bestand in uw AEM-project en voeg de volgende coderegel toe om fouten met betrekking tot de regelengine voor formulierblokken te voorkomen:
 
-That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
--->
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. Leg deze wijzigingen vast en duw deze naar uw AEM Project-opslagplaats op GitHub.
+
+Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM-project. U kunt formulieren maken en toevoegen aan uw AEM-pagina&#39;s.
 
 ## Het oplossen van problemen GitHub bouwt kwesties
 
