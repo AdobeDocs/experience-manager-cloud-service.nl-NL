@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,23 @@ U kunt ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/wor
 U kunt de details van de looppas zien door ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) opnieuw te klikken en **[details van de Mening](#view-details)** te klikken.
 
 Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door ![ Ellipse te klikken - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) opnieuw en **te klikken annuleert**.
+
+## Meerdere pijpleidingen uitvoeren {#run-multiple-pipelines}
+
+Met Cloud Manager kunt u meerdere pijpleidingen tegelijk uitvoeren, waardoor de implementatie efficiënter wordt voor AEM as a Cloud Service-klanten. De **Looppas geselecteerde** eigenschap laat u veelvoudige pijpleidingen selecteren en hen teweegbrengen om meteen te lopen. Het vermindert de handmatige inspanning van het moeten pijpleidingen individueel in werking stellen en optimaliseert bouw en plaatsingswerkschema&#39;s.
+
+**om veelvoudige pijpleidingen in werking te stellen:**
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Van het linkerzijmenu, klik ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pijpleidingen**.
+1. In de lijst op de **pagina van de Pijpleiding**, selecteer checkboxes naast de pijpleidingen u wilt lopen.
+Indien noodzakelijk, klik ![ pictogram van de Filter, trechter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** aan soortpijpleidingen door naam, of milieu, of opgesteld codetype, of een combinatie van alle drie.
+1. Dichtbij de hoger-juiste hoek van de pagina, klik **Geselecteerde Looppas (x)**.
+1. In de **Looppas geselecteerde pijpleidingen (x)** dialoogdoos, klik **Looppas (x)**.
+
+   De **looppas** knoop wijst op het aantal pijpleidingen die kunnen te werk gaan. U hebt bijvoorbeeld vier pijpleidingen geselecteerd, maar er is al een pijpleiding actief. Of een omgeving die is gekoppeld aan een geselecteerde pijpleiding bestaat niet meer. In dergelijke gevallen wordt het systeem dienovereenkomstig aangepast. De knop wordt bijgewerkt naar &quot;Uitvoeren (3)&quot; om aan te geven dat drie pijpleidingen kunnen doorgaan.
+
+1. De pijpleidingen beginnen lopend, en hun status wordt bijgewerkt in de **lijst van Pijpleidingen**.
 
 ## Een pijplijn bewerken {#editing-pipelines}
 
