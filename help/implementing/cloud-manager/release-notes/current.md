@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.3.0 in AEM a
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,8 @@ De volgende geplande release is donderdag 10 april 2025.
   De mogelijkheid om meerdere pijpleidingen tegelijk uit te voeren is geïntroduceerd op de pagina Pijpleidingen. De gebruikers moeten minstens één pijpleiding maar niet meer dan tien selecteren. Dichtbij de hoger-juiste hoek op de pagina van Pijpleidingen, klik **Geselecteerde Looppas (x)**. Er wordt een modaal dialoogvenster weergegeven met daarin alle pijpleidingen die niet kunnen worden gestart. Klik **Looppas** om alle geldige pijpleidingen in werking te stellen.
 
   ![ Looppas geselecteerde de dialoogdoos van pijpleidingen ](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  Zie ook [ veelvoudige pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines) in werking stellen
 
 * **Steun die tot versies Node.js wordt uitgebreid**
 
