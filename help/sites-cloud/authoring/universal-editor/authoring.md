@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ De geselecteerde component is verwijderd.
 >
 >Gebruik de sneltoets `Shift+Backspace` om de geselecteerde component uit de container te verwijderen.
 
-### Componenten opnieuw ordenen in containers {#reordering-components}
+### Componenten opnieuw ordenen {#reordering-components}
 
 1. Als niet reeds op [ wijze van de inhoudsboom ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), schakelaar aan het.
 1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
@@ -176,7 +176,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen niet tussen containers worden bewogen als een verschillend [ componentenfilter ](/help/implementing/universal-editor/filtering.md) tussen de bron en doelcontainers wordt geplaatst.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ### Variaties maken met GenAI met Variaties genereren {#generate-variations-ai}
 
