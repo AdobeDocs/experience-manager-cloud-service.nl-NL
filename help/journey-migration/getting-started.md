@@ -4,7 +4,7 @@ description: De migratiejourney starten door u vertrouwd te maken met de basis v
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 6%
@@ -56,7 +56,7 @@ U kunt ook het onderstaande diagram raadplegen voor een gedetailleerdere, gedeta
 
 Naast de stappen die in deze reis worden beschreven, biedt Adobe Cloud Acceleration Manager, een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan op Cloud Service. Stel uw teams in voor een geslaagde migratie met door Adobe aanbevolen tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service.
 
-U kunt de [ documentatie van Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) raadplegen of op een [ inleidende video ](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) letten om uw migratiereis te beginnen.
+U kunt de [ documentatie van Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) raadplegen of op een [ inleidende video ](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning) letten om uw migratiereis te beginnen.
 
 ## Volgende functies {#what-is-next}
 
