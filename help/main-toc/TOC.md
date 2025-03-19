@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6098'
 ht-degree: 2%
 
 ---
@@ -1047,7 +1047,8 @@ ht-degree: 2%
          + [Bescherm uw Forms tegen spam: reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Forms publiceren en implementeren: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [ bouwt de Componenten van de Vorm van de Douane: De Gids van de ontwikkelaar aan Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [ ModelIntegratie van de Gegevens van de Vorm: Het integreren Forms met het Model van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Integratie van formuliergegevensmodellen: Forms integreren met het formuliergegevensmodel](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [ Herbruikbare, modulaire, en standalone segmenten: Creërend en gebruikend de Fragmenten van de Vorm in vormen ](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + Op documenten gebaseerd ontwerpen {#getting-started-edge-delivery-services-forms}
          + [Uw eerste formulier maken: snel aan de slag met Google-werkbladen en Excel](/help/edge/docs/forms/tutorial.md)
          + [Forms maken met Google Sheets of Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)

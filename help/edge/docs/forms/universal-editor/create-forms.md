@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,9 @@ Voer de volgende stappen uit als u een zelfstandig adaptief formulier wilt ontwe
 
 1. **creeer een Adaptief Vorm op de auteursinstantie van AEM Forms**
 
-   1. Open de AEM Forms as a Cloud Service-auteurinstantie.
-   1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard wordt geopend.
+   1. Meld u aan bij uw AEM Forms as a Cloud Service-auteur-exemplaar.
+   1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+   1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard wordt geopend.
    1. In het **Source** lusje, selecteer een op Edge Delivery Services gebaseerd vormmalplaatje:
 
       ![ creeer EDS Forms ](/help/edge/assets/create-eds-forms.png)
@@ -150,6 +151,63 @@ Hieronder wordt beschreven hoe u het formulier opent op Edge Delivery Services:
 De URL-structuur blijft hetzelfde voor zowel gefaseerde als actieve versies. De inhoud die u ziet, verschilt echter op basis van de context:
 
 ![ Mening gepubliceerde vorm ](/help/edge/assets/eds-view-publish-form.png)
+
+## Formulieren beheren
+
+U kunt verschillende bewerkingen op formulieren uitvoeren in de gebruikersinterface van AEM Forms.
+
+1. Meld u aan bij uw AEM Forms as a Cloud Service-auteur-exemplaar.
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+
+1. Selecteer een formulier en op de werkbalk worden de volgende bewerkingen weergegeven die u op het geselecteerde formulier kunt uitvoeren.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Bewerking</strong></p> </td>
+   <td><p><strong>Beschrijving</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Bewerken</p> </td>
+   <td><p>Hiermee opent u het formulier in de bewerkingsmodus. <br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Eigenschappen</p> </td>
+   <td><p>Hier vindt u opties waarmee u de eigenschappen van het formulier kunt wijzigen. <br /> <br /> </p> </td>
+  </tr>
+  <td><p>Kopiëren</p> </td>
+   <td><p> Hier vindt u opties waarmee u het formulier kunt kopiëren en op de gewenste locatie kunt plakken. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Voorvertoning</p> </td>
+   <td><p>Hiermee kunt u een voorbeeld van het formulier weergeven als HTML of een aangepaste voorbeeldweergave uitvoeren door gegevens uit een XML-bestand samen te voegen met het formulier. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Downloaden</p> </td>
+   <td><p>Hiermee downloadt u het geselecteerde formulier. <br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Revisie starten/Revisie beheren</p> </td>
+   <td><p>Hiermee kunt u een revisie van het geselecteerde formulier starten en beheren. <br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Publiceren/Publiceren ongedaan maken</p> </td>
+   <td><p>Hiermee publiceert u het geselecteerde formulier of maakt u de publicatie ervan ongedaan. <br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Verwijderen</p> </td>
+   <td><p>Hiermee verwijdert u het geselecteerde formulier. <br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Ververgelijken</p> </td>
+   <td><p>Vergelijkt twee verschillende formulieren voor voorvertoningen. <br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table>
 
 ## Problemen oplossen
 

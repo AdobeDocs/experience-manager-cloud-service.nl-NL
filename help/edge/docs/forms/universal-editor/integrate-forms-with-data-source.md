@@ -1,17 +1,17 @@
 ---
-title: Hoe te om het Model van de Gegevens van de Vorm (FDM) voor een vorm in Universele Redacteur tot stand te brengen?
+title: Hoe te om het Model van de Gegevens van de Vorm (FDM) voor een vorm in Universele Redacteur te integreren?
 description: Leer formulieren te maken op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren integreren met formuliergegevensmodel in de universele editor
 
@@ -128,7 +128,7 @@ Wanneer u een formulier maakt dat niet op een schema is gebaseerd, wordt er geen
 
    ![ bouwt vorm ](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   U kunt gegevens ook manueel toevoegen die aan een vormelement binden door het in de **Bind eigenschappen van de Verwijzing** van het vormelement te specificeren.
+   U moet gegevens manueel toevoegen die aan een vormelement binden door het in de **Bind eigenschappen van de Verwijzing** van het vormelement te specificeren.
 Bijvoorbeeld, voeg een gegevensbindende verwijzing naar het **vakje van de Naam van het Huisdier** toe dat reeds in de vorm aanwezig is:
 
    ![ voeg manueel gegevens het dineren voor een vormgebied ](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png) toe

@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1852'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Integreren:
 
 Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM-project. U kunt [ beginnen tot stand te brengen en vormen toe te voegen aan uw Project van AEM ](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## AEM Forms autoriseren met WYSIWYG
+## Forms autoriseren met WYSIWYG
 
 U kunt uw AEM-project openen in de Universal Editor voor WYSIWYG-ontwerpen. Hierin kunt u het project bewerken en de sectie Adaptief formulier toevoegen om Edge Delivery Services-formulieren op AEM Project-pagina&#39;s toe te voegen.
 
