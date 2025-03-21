@@ -1,55 +1,58 @@
 ---
-title: Uitbreidbaarheid gebruikersinterface AEM Assets View
-description: Meer informatie over de UI-uitbreidingsmogelijkheden van AEM Assets View. Met de gebruikersinterface van de AEM Assets View kunt u aangepaste UI-componenten toevoegen om aan specifieke bedrijfsbehoeften te voldoen.
+title: UI-uitbreidbaarheid inschakelen in  [!DNL AEM Assets View]
+description: Leer over het vermogen van de Uitbreidbaarheid UI van  [!DNL AEM Assets View]. [!DNL AEM Assets View]  UI toelaat het toevoegen van componenten van douaneUI om aan specifieke bedrijfsbehoeften te voldoen.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
+source-git-commit: e32cd7b7822a983840377f7e69ac3ed0ceb86e16
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
 
-# Uitbreidbaarheid gebruikersinterface AEM Assets View{#AEM-Assets-View-UI-Extensibility}
+# UI-uitbreidbaarheid inschakelen in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-AEM Assets View heeft UI-uitbreidingsmogelijkheden. Met deze functie kunnen gebruikers aangepaste UI-componenten toevoegen aan de gebruikersinterface van de Assets View om tegemoet te komen aan specifieke bedrijfsbehoeften waaraan de functies van de AEM Assets View niet voldoen. Deze uitbreidbaarheidsfunctie verbetert de flexibiliteit van AEM Assets View die organisaties in staat stelt de interface voor specifieke workflows en vereisten aan te passen.
-U kunt uw extensies toevoegen aan het niveau voor middelen, mappen en verzamelingen. De toegevoegde extensie wordt weergegeven in een speciaal deelvenster op de pagina Middelen, Verzameling of Mapdetails.
+[!DNL AEM Assets View] ondersteunt de uitbreidbaarheid van de gebruikersinterface, zodat u aangepaste UI-componenten aan uw [!DNL Assets View] -gebruikersinterface kunt toevoegen voor specifieke workflows en bedrijfsvereisten waaraan de out-of-the-box-mogelijkheden van [!DNL AEM Assets View] niet voldoen. Deze UI-uitbreidingsmogelijkheid van [!DNL AEM Assets View] verbetert de flexibiliteit, waardoor organisaties de interface voor specifieke workflows en vereisten kunnen aanpassen.
+
+Schakel de uitbreidbaarheid van de gebruikersinterface in uw [!DNL AEM Assets View] in om aangepaste UI-componenten toe te voegen aan uw [!DNL Assets View] -gebruikersinterface die voldoen aan specifieke bedrijfsvereisten waaraan de out-of-the-box-mogelijkheden van [!DNL AEM Assets View] niet voldoen.\
+U kunt uw uitbreidingen aan **Activa** toevoegen, **Omslag** en **het niveau van de Inzameling**. De toegevoegde uitbreidingsvertoningen op een specifiek paneel op de **Activa**, **Inzameling**, of **omslag** **[!UICONTROL Details]** pagina.
 
 >[!IMPORTANT]
 >
-> * De Uitbreidbaarheid UI van de Mening van AEM Assets is beschikbaar met [ Assets Ultimate ](/help/assets/assets-ultimate-overview.md).
-> * Om toegang tot de uitbreidbaarheid van de meningUI van Assets te krijgen, [ creeer en verzend een geval van de Steun van de Klant van de Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-> * U kunt feedback geven in de documentatie door de opties voor Gedetailleerde feedback uit te vouwen en op Een probleem melden te klikken.
+> * [!DNL AEM Assets View] De uitbreidbaarheid van de gebruikersinterface is beschikbaar in [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md) .
+> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> * U kunt documentfeedback opgeven door **[!UICONTROL Detailed Feedback options]** uit te vouwen en op **[!UICONTROL Report an issue]** te klikken.
 
-## <a id="1"></a> Toegang tot Assets View
+## <a id="1"></a> Toegang tot de Assets-weergave{#add-UI-Extensibility-in-AEM-Assets-View}
 
-U kunt de Assets-weergave op de volgende manieren openen:
+Voer de stappen in de onderstaande afbeelding uit om het dialoogvenster [!DNL Assets View] te openen:
 ![ toegang-activa-mening-ui ](/help/assets/assets/access-assets-view.jpg)
 
-## Waar worden UI-extensies weergegeven op de gebruikersinterface van de Assets-weergave? {#ui-extensibility-panel-assets-view}
+## UI-extensies weergeven in [!DNL Assets View] {#ui-extensibility-panel-assets-view}
 
-Navigeer in de weergave Assets naar de pagina Details van een element, map of verzameling. Deze pagina Details bevat een speciaal deelvenster waarin de toegevoegde UI-extensie wordt weergegeven.
+Navigeer in [!DNL Assets View] naar de pagina **[!UICONTROL Details]** van een element, map of verzameling. Op de pagina **[!UICONTROL Details]** wordt de toegevoegde UI-extensie weergegeven in een speciaal deelvenster.
 ![ mijn werkruimte ](/help/assets/assets/my-workspace-assets-view3.png)
 
+## Vereisten voor het toevoegen van de uitbreidbaarheidscomponent{#assets-view-ui-extensibility}
 
-## Vereisten voor het toevoegen van de component Uitbreidbaarheid
+Voldoe aan de volgende vereisten om de uitbreidbaarheidscomponent aan uw [!DNL Assets View UI] toe te voegen:
 
-* [ Toegang tot de Mening van Assets ](#1).
-* Toegang tot de [ Adobe app builder ](https://developer.adobe.com/app-builder/docs/overview/).
-* Toelating tot de Ontwikkelaar van de rol van Systeembeheerder binnen de Organisatie. Zie [ dit ](https://developer.adobe.com/uix/docs/guides/get-access/) voor meer informatie.
-* Het hulpmiddel van de bevellijn van de Adobe IO (AIO CLI) moet op uw lokale machines worden geïnstalleerd. Dit hulpmiddel is essentieel voor het creëren van en het opstellen van uitbreidingsprojecten. Zie [ dit ](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) voor meer informatie.
-* Goed inzicht in JavaScript, Node.js, en React technologieën.
+* [ Toegang tot  [!DNL Assets View]](#1).
+* Toegang tot [[!DNL Adobe app builder] ](https://developer.adobe.com/app-builder/docs/overview/).
+* Recht op de ontwikkelaar van de rol van systeembeheerder binnen de organisatie. Zie [ deze documentatie ](https://developer.adobe.com/uix/docs/guides/get-access/) voor meer informatie.
+* [!DNL Adobe IO command line tool (AIO CLI)] is geïnstalleerd op uw lokale computers. Dit hulpmiddel is essentieel voor het creëren van en het opstellen van uitbreidingsprojecten. Zie [ deze documentatie ](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) voor meer informatie.
+* Goed inzicht in [!DNL JavaScript] -, [!DNL Node.js] - en [!DNL React] -technologieën.
 
-## UI-uitbreidingscomponent toevoegen op gebruikersinterface van Assets View{#Adding-UI-Extensibility-Component-on-Assets-View}
+## De UI-uitbreidingscomponent toevoegen aan [!DNL Assets View] {#ui-extensibility-in-assets-view}
 
-1. Zie [ Begonnen het Worden ](https://developer.adobe.com/uix/docs/getting-started/) voor essentiële informatie over Uitbreidingen UI en het kader van Adobe App Builder. Leer hoe de Uitbreidbaarheid UI integratie van douanelogica en UI binnen de diensten van Adobe Experience Cloud toelaat en de architectuur en het werkschema voor het uitvoeren van Uitbreidingen UI begrijpt.
+1. Zie [ Begonnen het Krijgen ](https://developer.adobe.com/uix/docs/getting-started/) voor essentiële informatie over Uitbreidingen UI en het [!DNL Adobe App Builder] kader. Leer hoe de Uitbreidbaarheid UI integratie van douanelogica en UI binnen [!DNL Adobe Experience Cloud services] toelaat en de architectuur en het werkschema voor het uitvoeren van Uitbreidingen UI begrijpt.
 1. Zie [ Gidsen ](https://developer.adobe.com/uix/docs/guides/) voor algemene informatie betreffende Uitbreidbaarheid UI, met inbegrip van lokale milieu opstelling, lokale voorproef, het publiceren, en beheer.
-1. Zie [ Gemeenschappelijke Concepten in het Creëren van Uitbreidingen ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/) om de grondbeginselen te begrijpen die worden vereist om een uitbreiding UI voor de Mening van AEM Assets te ontwikkelen.
-1. Voeg aangepaste zijpanelen toe aan de interface van de Mening van Assets. De hosttoepassing (Assets View) beheert deze deelvensters om interacties in de gebruikersinterface, zoals schakelen en deep linking, af te handelen. Extensies gebruiken het extensiepunt `aem/assets/details/1` om aangepaste deelvensters te integreren die eigenschappen opgeven, zoals deelvenster-id, titel en inhoud-URL. Ontwikkelaars registreren aangepaste deelvensters met de methode `getPanels()` en bouwen routes om aangepaste inhoud weer te geven. Voor gedetailleerde implementatie, met inbegrip van API verwijzingen en codevoorbeelden, zie [ Mening van Details ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
-1. Stel uw lokale omgeving in en ervaar het proces voor het ontwikkelen van UI-extensies in de Assets-weergave zelf door uw eerste UI-extensie te maken. Zie [ geleidelijke de Ontwikkeling van de Uitbreiding van de Uitbreiding van de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) voor meer details.
-1. Stel uw app in met de AIO CLI om de basisextensiestructuur en de vereiste code te genereren. Zie [ de Generatie van de Code voor de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) voor gedetailleerde informatie.
-1. Test uw extensies lokaal om te controleren of ze werken zoals u had verwacht vóór de implementatie. Voer uw extensie uit in een volledig geïsoleerde omgeving of met een gedeeltelijke isolatie en sluit uw extensie aan op de productie-AEM Assets View voor tests. Zie [ het Oplossen van problemen - de Uitbreidbaarheid van de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) voor gedetailleerde informatie.
+1. Zie [ Gemeenschappelijke concepten in het creëren van uitbreidingen ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/) om de grondbeginselen te begrijpen die worden vereist om een uitbreiding UI voor [!DNL AEM Assets View] te ontwikkelen.
+1. Voeg aangepaste zijpanelen aan de [!DNL Assets View] interface toe. De gastheertoepassing ([!DNL Assets View]) beheert deze panelen om interactie UI zoals het schakelen en diep verbinden te behandelen. Extensies gebruiken het extensiepunt `aem/assets/details/1` om aangepaste deelvensters te integreren die eigenschappen opgeven, zoals deelvenster-id, titel en inhoud-URL. Ontwikkelaars registreren aangepaste deelvensters met de methode `getPanels()` en bouwen routes om aangepaste inhoud weer te geven. Voor gedetailleerde implementatie, met inbegrip van API verwijzingen en codevoorbeelden, zie [ Mening van Details ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
+1. Stel uw lokale omgeving in en maak uw eerste UI-extensie zodat u een eerste ervaring hebt met het ontwikkelen van UI-extensies in [!DNL Assets View] . Zie [ geleidelijke de Ontwikkeling van de Uitbreiding van de Uitbreiding van de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) voor meer details.
+1. Stel uw toepassing in met behulp van de AIO CLI om de basisextensiestructuur en de vereiste code te genereren. Zie [ codegeneratie voor  [!DNL AEM Assets View] ](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) voor gedetailleerde informatie.
+1. Test uw extensies lokaal om te controleren of ze werken zoals u had verwacht vóór de implementatie. Voer de extensie uit in een volledig geïsoleerde omgeving of met gedeeltelijke isolatie en sluit de extensie aan op de productie [!DNL AEM Assets View] voor testdoeleinden. Zie [ het Oplossen van problemen -  [!DNL AEM Assets View]  rekbaarheid ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) voor gedetailleerde informatie.
