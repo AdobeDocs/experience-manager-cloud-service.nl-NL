@@ -3,9 +3,9 @@ title: Aangepaste zoekfilters
 description: Meer informatie over het aanpassen van het formulier met zoekfilters
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 0484b8ac158f0590d5ada7536cf8b547c71ab686
+source-git-commit: 859254142976f15f92df400f6d62cc0d89eaabb8
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1268'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 Met zoekfilters kunt u de zoekresultaten verfijnen op basis van verschillende parameters, zoals datum, bestandstype, tags en relevantie. Hierdoor wordt de zoekopdracht nauwkeuriger. Door filters toe te passen, kunt u snel de meest relevante resultaten efficiënt overslaan. Dit bespaart niet alleen tijd, maar verbetert ook de algemene zoekervaring door de resultaten af te stemmen op specifieke voorkeuren en behoeften.
 Zie meer over [ onderzoek ](search-assets-view.md).
 
-Aangepaste zoekfilters kunnen alleen worden toegewezen aan items in de index van doorzoekbare eigenschappen. Zorg ervoor dat alle aangepaste metagegevens zijn opgenomen voordat u uw aangepaste filterervaring configureert. Met [!DNL Assets view] kunt u zoekfilters aanpassen om het zoekproces te stroomlijnen. Voer de volgende stappen uit om de sjabloon van zoekfilters aan te passen:
+Aangepaste zoekfilters AEM Assets kan alleen worden toegewezen aan items in de index van doorzoekbare eigenschappen. Zorg ervoor dat alle aangepaste metagegevens zijn opgenomen voordat u uw aangepaste filterervaring configureert. Met [!DNL Assets view] kunt u zoekfilters aanpassen om het zoekproces te stroomlijnen. Voer de volgende stappen uit om de aangepaste zoekfilters van AEM Assets aan te passen:
 
 1. Ga naar **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 1. Ga naar de tab **[!UICONTROL Search]** . Klik op **[!UICONTROL Customize]** om het zoekformulier te configureren.
@@ -39,7 +39,7 @@ De weergave van Assets biedt de volgende aangepaste filters die opnieuw kunnen w
 
 ### Elementen filteren {#filter-elements}
 
-U kunt een verzameling filterelementen op het canvas met aangepaste zoekfilters gebruiken. Deze elementen kunnen opnieuw worden geconfigureerd op basis van de bruikbaarheid van kenmerken van zoekeigenschappen. Nochtans, kunt u de [ filtereigenschappen ](#filter-properties) zoals per uw vereisten aanpassen. De volgende filterelementen zijn beschikbaar in [!DNL Assets view] :
+Met Aangepaste filters kunt u in AEM Assets een verzameling filterelementen gebruiken op het canvas van uw aangepaste zoekfilters. Deze elementen kunnen opnieuw worden geconfigureerd op basis van de bruikbaarheid van kenmerken van zoekeigenschappen. Nochtans, kunt u de [ filtereigenschappen ](#filter-properties) zoals per uw vereisten aanpassen. De volgende filterelementen zijn beschikbaar in [!DNL Assets view] :
 
 <table>
     <tr>
@@ -328,7 +328,7 @@ De vooraf geconfigureerde filters zijn vooraf ingestelde instellingen waarmee u 
 
 #### Filtereigenschappen {#filter-properties}
 
-Elk filterelement is gekoppeld aan een set eigenschappen. De volgende eigenschappen worden gebruikt in het filter en vooraf geconfigureerde elementen:
+Elk filterelement is gekoppeld aan een set eigenschappen. AEM Assets past zoekfilters aan met gebruik van de volgende eigenschappen in het filter en vooraf geconfigureerde elementen:
 
 <table>
     <tr>
