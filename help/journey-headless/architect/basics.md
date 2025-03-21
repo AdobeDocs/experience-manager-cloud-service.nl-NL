@@ -5,9 +5,9 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Aan het begin van de [ Reis van de Architect van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
 
-Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud kunt modelleren voor uw AEM-project zonder kop.
+Dit artikel bouwt verder op deze principes, zodat u begrijpt hoe u uw inhoud voor uw AEM-project zonder kop kunt modelleren.
 
 ## Doelstelling {#objective}
 
@@ -87,9 +87,12 @@ AEM biedt u de volgende gegevenstypen om uw inhoud te modelleren:
 * Datum en tijd
 * Opsomming
 * Tags
-* Content Reference
 * Fragmentverwijzing
+* Fragmentverwijzing (UUID)
+* Content Reference
+* Content Reference (UUID)
 * JSON-object
+* Tijdelijke aanduiding voor tab
 
 >[!NOTE]
 >
@@ -99,11 +102,11 @@ AEM biedt u de volgende gegevenstypen om uw inhoud te modelleren:
 
 Twee gegevenstypen bevatten verwijzingen naar inhoud buiten een specifiek fragment:
 
-* **Verwijzing van de Inhoud**
+* **Verwijzing van de Inhoud**/**Verwijzing van de Inhoud (UUID)**
 Dit verstrekt een eenvoudige verwijzing naar andere inhoud van om het even welk type.
 U kunt bijvoorbeeld naar een afbeelding op een bepaalde locatie verwijzen.
 
-* **Verwijzing van het Fragment**
+* **Verwijzing van het fragment**/ **de Verwijzing van het Fragment (UUID)**
 Hier vindt u verwijzingen naar andere inhoudsfragmenten.
 Dit type verwijzing wordt gebruikt om geneste inhoud te creëren, introducerend de verhoudingen nodig om uw inhoud te modelleren.
 Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
@@ -113,6 +116,10 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 >[!NOTE]
 >
 >U kunt ook geïmproviseerde verwijzingen maken met behulp van koppelingen in tekstblokken.
+
+>[!NOTE]
+>
+>In de redacteur specificeren de verwijzingen UUID de weg aan het referenced middel; intern worden dergelijke verwijzingen gehouden als universeel unieke IDs (UUID) die de middelen van verwijzingen voorzien.
 
 ## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 

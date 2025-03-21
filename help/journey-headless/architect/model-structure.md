@@ -5,9 +5,9 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Grondbeginselen van de Modellering van de Inhoud voor Zwaartepunt met AEM ](basics.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
-Dit artikel bouwt hierop verder zodat u begrijpt hoe u uw eigen modellen van het Fragment van de Inhoud voor uw project zonder titel van AEM kunt tot stand brengen.
+Dit artikel bouwt verder op deze principes zodat u begrijpt hoe u uw eigen modellen van het Fragment van de Inhoud voor uw project zonder titel van AEM creeert.
 
 ## Doelstelling {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan onder **Hulpmiddelen** worden gedaan > **Algemeen** > **Modellen van het Fragment van de Inhoud**.
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren.
 
-![ Modellen van het Fragment van de Inhoud in Hulpmiddelen ](assets/cfm-tools.png)
+1. Selecteer in de inhoudsfragmentconsole het deelvenster Modellen van inhoudsfragmenten.
 
-Na het selecteren van dit navigeert u aan de plaats voor uw model en selecteert **creeert**. Hier kunt u verschillende belangrijke details invoeren.
+1. Navigeer naar de map die geschikt is voor uw configuratie of subconfiguratie.
 
-De optie **laat model** toe wordt geactiveerd door gebrek. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in of uit te schakelen.
+1. Het gebruik **leidt** tot om de **Nieuwe dialoog van het Fragmentmodel van de Inhoud** te openen.
 
-![ creeer het Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![ Titel en beschrijving ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-Bevestig met **creeer** en u kunt **dan** uw model openen {beginnen de structuur te bepalen.
+1. De details invullen
+
+1. Het gebruik **creeert** om het lege model te bewaren, of **creeert en opent**.
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
@@ -66,7 +82,7 @@ U kunt instanties van de **Types van Gegevens** op de linkerruimte slepen - u be
 
 ![ die gebieden ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) bepalen
 
-Nadat u een gegevenstype toevoegt wordt u vereist om de **Eigenschappen** voor dat gebied te bepalen. Deze hangen van het type af dat wordt gebruikt. Bijvoorbeeld:
+Nadat u een gegevenstype toevoegt wordt u vereist om de **Eigenschappen** voor dat gebied te bepalen. Deze eigenschappen zijn afhankelijk van het type dat wordt gebruikt. Bijvoorbeeld:
 
 ![ Eigenschappen van Gegevens ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ De auteurs van de inhoud zien de gegevenstypen en eigenschappen die u hebt gebru
 Het beheren van uw modellen van het Fragment van de Inhoud impliceert:
 
 * Het toelaten (of het onbruikbaar maken) hen - dit maakt hen voor auteurs beschikbaar wanneer het creëren van de Fragmenten van de Inhoud.
-* Verwijderen - verwijdering is altijd nodig, maar u moet er rekening mee houden dat u een model verwijdert dat al wordt gebruikt voor inhoudsfragmenten, met name fragmenten die al zijn gepubliceerd.
+* Verwijderen - verwijdering is altijd nodig, maar u moet wel weten dat u een model verwijdert dat al wordt gebruikt voor inhoudsfragmenten, met name fragmenten die al zijn gepubliceerd.
 
 ## Publiceren {#publishing}
 
