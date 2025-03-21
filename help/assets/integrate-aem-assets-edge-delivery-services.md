@@ -2,14 +2,48 @@
 title: Integreer  [!DNL AEM Assets]  terwijl het ontwerpen van inhoud voor  [!DNL Edge Delivery Services]
 description: Leer hoe te om  [!DNL AEM Assets]  met  [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  met  [!DNL Microsoft Word]  te integreren en  [!DNL Google Docs], integrate [!DNL AEM Assets]  met  [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities]  met  [!DNL Universal Editor]  en  [!DNL Dynamic Media with OpenAPI capabilities]  met  [!DNL Microsoft Word]  en  [!DNL Google Docs] te integreren.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 491ba10214c704a4e0004df36142e270a49f65e0
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
 
 # [!DNL AEM Assets] integreren tijdens het ontwerpen van inhoud voor [!DNL Edge Delivery Services] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+         <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 ![ de activa van AEM met UE ](/help/assets/assets/EDS2.png)
 
@@ -24,7 +58,7 @@ Nadat u de inhoud hebt bewerkt, kunt u deze publiceren naar Edge Delivery Servic
 
 ## [!DNL AEM Assets] integreren met authoringstromen op basis van documenten voor [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
 
-Wanneer [!DNL AEM Assets] is geïntegreerd met de ontwerpgereedschappen op basis van documenten, zoals [!DNL Microsoft Word] of [!DNL Google Docs] , bevat het programma een kiezer voor elementen in de editor. Gebruik deze middelenkiezer om toegang te krijgen tot [!DNL AEM Assets] en om goedgekeurde elementen in uw document in te voegen.
+Wanneer [!DNL AEM Assets] integreert met uw op documenten gebaseerde ontwerpgereedschappen, zoals [!DNL Microsoft Word] of [!DNL Google Docs] , beschikt het over een elementenkiezer in het ontwerpgereedschap. Gebruik deze elementkiezer om [!DNL AEM Assets] te openen en de goedgekeurde elementen in uw inhoud in te voegen.
 Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Assets]  insteekmodule ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentatie leren hoe te om [!DNL AEM Assets] met uw bestaand [!DNL AEM] project te integreren.
 Volg de volgende [ Vereisten ](#integrate-aem-assets-with-microsoft-word-and-google-docs) en [ Integrerend  [!DNL AEM Assets]  met document-Gebaseerde het Authoring milieu ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) secties als u geen [!DNL Edge Delivery Services] website hebt om uw [!DNL AEM Assets] inclusieve inhoud te publiceren die in document gebaseerde auteurshulpmiddelen wordt geschreven.
 
@@ -60,7 +94,7 @@ Als u een elementverwijzing wilt gebruiken, moet u beschikken over:
 
 * Machtigingen tot een Assets Cloud Service-omgeving waarin [!DNL Dynamic Media with Open API capabilities] is ingeschakeld.
 * Een [!DNL Dynamic Media] -licentie.
-* De [!DNL AEM Assets sidekick plugin] wordt ingeschakeld met de kopieerverwijzing voor afbeeldingselementen ingeschakeld. Voor meer details, zie [ dit ](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) voor Op document-Gebaseerd Authoring en zie [ dit ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) voor Universele Redacteur gebaseerd auteursrecht.
+* De [!DNL AEM Assets sidekick plugin] wordt ingeschakeld met de kopieerverwijzing voor afbeeldingselementen ingeschakeld. Voor meer details, zie [ deze documentatie ](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) voor Op document-Gebaseerd Authoring en zie [ deze documentatie ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) voor Universele Redacteur gebaseerd auteursrecht.
 * Assets die zijn goedgekeurd. Goedgekeurde middelen zijn `dam:status=Approved` via de Assets Cloud Services-back-end- of UI-acties.
 
 ### Elementen gebruiken die zijn geleverd met [!DNL Dynamic Media with OpenAPI capabilities]{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
