@@ -2,9 +2,9 @@
 title: AEM Assets integreren tijdens het ontwerpen van inhoud voor Edge Delivery Services
 description: Leer hoe u de AEM Assets kunt integreren met Edge Delivery Services. Dankzij deze integratie kunt u AEM Assets integreren met Microsoft Word en Google Docs, AEM Assets integreren met Universal Editor, Dynamic Media integreren met OpenAPI-mogelijkheden met Universal Editor en Dynamic Media integreren met OpenAPI-mogelijkheden met Microsoft Word en Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 0%
 U kunt inhoud bewerken in:
 
 * [Microsoft Word of Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-* [Universele editor](#integrate-aem-assets-with-universal-editor)
+* [Universele editor](#integrate-aem-assets-with-UE-universal-editor)
 
 Nadat u de inhoud hebt bewerkt, kunt u deze publiceren naar Edge Delivery Services.
 
 ## AEM Assets integreren met authoringstromen op basis van documenten voor Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
-De integratie van AEM Assets met de op document-Gebaseerde Authoring hulpmiddelen, zoals Microsoft Word of Google Docs, verstrekt een activa selecteur in uw redacteur direct. Gebruik deze middelenkiezer om toegang te krijgen tot de AEM Assets en voeg goedgekeurde elementen in uw document in.
-
-Als u reeds een website van Edge Delivery Services hebt, zie [ insteekmodule van AEM Assets ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) om AEM Assets met uw bestaand project van AEM te integreren. Als u geen website van Edge Delivery Services ziet, [ Vereisten ](#integrate-aem-assets-with-microsoft-word-and-google-docs) en [ Integrating AEM Assets met document-Gebaseerde het Authoring milieu ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) hieronder secties.
+Als AEM Assets is geïntegreerd met de ontwerpgereedschappen voor documenten, zoals Microsoft Word of Google Docs, is het programma voorzien van een kiezer voor middelen in uw editor. Gebruik deze middelenkiezer om toegang te krijgen tot de AEM Assets en voeg goedgekeurde elementen in uw document in.
+Als u reeds een website van Edge Delivery Services hebt, zie [ insteekmodule van AEM Assets ](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) document leren hoe te om AEM Assets met uw bestaand project van AEM te integreren.
+Volg de volgende [ Vereisten ](#integrate-aem-assets-with-microsoft-word-and-google-docs) en [ Integrating AEM Assets met document-Gebaseerde het Authoring milieu ](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) secties als u geen website van Edge Delivery Services hebt om uw inclusieve inhoud te publiceren AEM Assets die in document gebaseerde auteurshulpmiddelen wordt geschreven.
 
 ### Vereisten{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 Voordat u begint, moet u ervoor zorgen dat de ontwerpomgeving op basis van documenten gereed is:
 
-* Integreer AEM met een ontwerpgereedschap op basis van documenten om de ontwerpomgeving in te stellen. Zie [ Begonnen het Worden - het Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial) aan opstelling het auteursmilieu.
+* Integreer AEM met een ontwerpgereedschap op basis van documenten om de ontwerpomgeving in te stellen. Zie [ Begonnen het Krijgen - het Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial) leren hoe te opstelling het auteursmilieu.
 
 ### AEM Assets integreren met een op documenten gebaseerde ontwerpomgeving{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
@@ -65,23 +65,23 @@ Als u een elementverwijzing wilt gebruiken, moet u beschikken over:
 
 ### Elementen gebruiken die worden geleverd met Dynamic Media met OpenAPI-mogelijkheden{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-Ga als volgt te werk als u elementen die via Dynamic Media met OpenAPI-mogelijkheden worden geleverd, wilt gebruiken tijdens het ontwerpen van inhoud:
+Selecteer de volgende koppelingen voor informatie over het gebruik van Dynamic Media met OpenAPI-mogelijkheden om afbeeldingen, video&#39;s en andere typen elementen in uw inhoud te leveren:
 
-* [ Gebruikend beeldverwijzingen ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [ Gebruikend videoverwijzingen ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [ Gebruikend activa verwijzingen voor niet-beeld en videoactiva zoals PDF, ip dossiers en meer ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [ voeg beelden aan uw inhoud ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content) toe
+* [ voeg video&#39;s aan uw inhoud toe ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [ voeg niet-beeld en videoactiva zoals PDF toe, ip dossiers en meer aan uw inhoud ](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-Bekijk deze video voor informatie over hoe u middelen kunt leveren met Dynamic Media met OpenAPI-mogelijkheden.
+Bekijk deze video voor informatie over hoe u elementen in uw inhoud kunt leveren met gebruik van Dynamic Media met OpenAPI-mogelijkheden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## Voorbeeld van Edge Delivery Services-site{#example-of-an-Edge-Delivery-Services-site}
 
-Zie [ WKND Reizen ](http://bit.ly/3DExLnf). Deze site wordt gemaakt met behulp van de Document-Based Authoring-mogelijkheden van Edge Delivery Services. De inhoud van de plaats wordt authored in [ Google Docs ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), gebruikend Dynamische Media met mogelijkheden OpenAPI voor activalevering. Nadat de inhoud is gemaakt, wordt deze rechtstreeks vanuit het document gepubliceerd. Voor deze op document-Gebaseerde Opstelling van de Authoring, worden alle essentiële dossiers, omslagen, configuraties, het stileren van de website en functionaliteit codes opgeslagen in deze [ bewaarplaats van de Git ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+Zie [ WKND Reizen ](http://bit.ly/3DExLnf), een plaats die gebruikend op document-Gebaseerde Authoring mogelijkheden van Edge Delivery Services wordt gebouwd. De inhoud van de plaats wordt authored in [ Google Docs ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) en de Dynamische Media met mogelijkheden OpenAPI wordt gebruikt om activa in de inhoud te leveren. Na het ontwerpen wordt de inhoud rechtstreeks vanuit het document gepubliceerd. Onderzoek deze [ bewaarplaats van de Git ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) om over alle essentiële dossiers, omslagen, configuraties, het stileren van de website en functionaliteitcodes te weten te komen die worden gebruikt om de op document-Gebaseerde Authoring opstelling voor deze plaats van Edge Delivery Services (EDS) tot stand te brengen.
 
-## AEM Assets integreren met op Universal Editor gebaseerde ontwerpflows voor Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
+## AEM Assets integreren met op Universal Editor gebaseerde ontwerpflows voor Edge Delivery Services {#integrate-aem-assets-with-UE-universal-editor}
 
 Stel de Universal Editor in om deze te integreren met AEM Assets. Dankzij deze integratie kunt u Dynamic Media met OpenAPI-mogelijkheden gebruiken om middelen te leveren.
 
-* Zie [ Configuratie in de Plaats van Edge Delivery ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) om een functie van de plukker van douanemiddelen in Universele Redacteur toe te voegen. Met de aangepaste elementkiezer kunt u elementen rechtstreeks in uw Universal Editor-inhoud invoegen.
+* Zie [ Configuratie in de Plaats van Edge Delivery ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) leren hoe te om een functie van de plukker van de douaneactiva in Universele Redacteur toe te voegen. Met de aangepaste elementkiezer kunt u elementen rechtstreeks in uw Universal Editor-inhoud invoegen.
 * Zie [ Overzicht van de Uitbreiding ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) leren hoe te om tot AEM Assets toegang te hebben en de activa op te nemen terwijl het ontwerpen in Universele Redacteur.
