@@ -1,34 +1,68 @@
 ---
-title: Hoe te om activa in AEM te vertalen?
+title: Hoe vertalen we middelen in AEM?
 description: Leer hoe u workflows automatiseert voor het vertalen van middelen in AEM, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2514'
 ht-degree: 12%
 
 ---
 
 # Elementen vertalen in AEM {#multilingual-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager Assets kunt u workflows automatiseren voor het vertalen van middelen (inclusief binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
-Om AEM middelenvertaling te automatiseren, integreert u de leveranciers van vertaaldiensten met Experience Manager en creeert projecten voor het vertalen van activa in veelvoudige talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
+Om het vertalen van AEM-middelen te automatiseren, integreert u vertaalserviceproviders met Experience Manager en maakt u projecten voor het vertalen van middelen in meerdere talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
 
-Vertaling van menselijke activa in AEM: De vertaalde activa worden teruggegeven en in Experience Manager ingevoerd. Wanneer uw vertaalbureau met Experience Manager wordt geïntegreerd, worden de activa automatisch verzonden tussen Experience Manager en de vertaalleverancier.
+Vertaling van menselijke activa in AEM: de vertaalde activa worden geretourneerd en geïmporteerd in Experience Manager. Wanneer uw vertaalprovider is geïntegreerd met Experience Manager, worden middelen automatisch verzonden tussen Experience Manager en de vertaalprovider.
 
-Vertalen van computermiddelen in AEM: De vertaalservice zet de metagegevens en tags voor elementen direct om.
+Vertalen van computermiddelen in AEM: de vertaalservice zet de metagegevens en tags voor elementen direct om.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -217,7 +251,7 @@ U voert deze workflow uit om een extra groep elementen te vertalen en deze op te
 
 >[!NOTE]
 >
->Als u een vertaalworkflow start voor complexe elementen, zoals PDF-bestanden en Adobe InDesign-bestanden, worden de bijbehorende subelementen of vertoningen (indien aanwezig) niet verzonden voor vertaling.
+>Als u een vertaalworkflow start voor complexe elementen, zoals PDF-bestanden en Adobe InDesign-bestanden, worden de bijbehorende submiddelen of vertoningen (indien aanwezig) niet verzonden voor vertaling.
 
 ### Workflow maken en vertalen {#create-and-translate-workflow}
 
@@ -255,7 +289,7 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
    ![ chlimage_1-215 ](assets/chlimage_1-215.png)
 
 1. Ga naar het tabblad **[!UICONTROL Cloud Services]**.
-1. Kies in de lijst Configuraties van Cloud Servicen de gewenste vertaalprovider. Kies bijvoorbeeld **[!UICONTROL Microsoft Translator]** als u vertaalservices wilt gebruiken vanuit Microsoft.
+1. Kies in de lijst Cloud Service Configurations de gewenste vertaalprovider. Kies bijvoorbeeld **[!UICONTROL Microsoft Translator]** als u vertaalservices wilt gebruiken vanuit Microsoft.
 
    ![ chlimage_1-216 ](assets/chlimage_1-216.png)
 
@@ -270,7 +304,7 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
 Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt gebruiken in vertaalworkflows. Om een douaneschakelaar toe te passen, installeer eerst de schakelaar van [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md). Vervolgens configureert u de connector vanaf de Cloud Services-console. Nadat u de connector hebt geconfigureerd, is deze beschikbaar in de lijst met connectors op het tabblad Cloud Services die wordt beschreven in [De vertaalservices toepassen](#applying-the-translation-services). Nadat u de aangepaste connector hebt toegepast en vertaalworkflows hebt uitgevoerd, geeft de tegel **[!UICONTROL Translation Summary]** van het vertaalproject de connectordetails weer onder de koppen **[!UICONTROL Provider]** en **[!UICONTROL Method]**.
 
 1. Installeer de schakelaar van [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md).
-1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]** .
+1. Selecteer het Experience Manager-logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]** .
 1. Zoek de connector die u onder de pagina **[!UICONTROL Third Party Services]** in de **[!UICONTROL Cloud Services]** hebt geïnstalleerd.
 
    ![ chlimage_1-218 ](assets/chlimage_1-218.png)
@@ -297,4 +331,4 @@ Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

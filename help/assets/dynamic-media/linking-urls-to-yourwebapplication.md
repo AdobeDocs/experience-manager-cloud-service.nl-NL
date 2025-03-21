@@ -1,28 +1,65 @@
 ---
 title: URL's koppelen aan uw webtoepassing
-description: Leer hoe u URL's koppelt aan uw webtoepassing in Dynamic Media.
+description: Leer hoe u URL's aan uw webtoepassing koppelt in Dynamic Media.
 contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1263'
 ht-degree: 3%
 
 ---
 
 # URL&#39;s koppelen aan uw webtoepassing {#linking-urls-to-your-web-application}
 
-Uw websites en toepassingen hebben via URL-oproepen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
+Via URL-aanroepen hebben uw websites en toepassingen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
 U verbindt met URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Koppelen - in plaats van insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [ voegt u de activa direct op uw pagina ](adding-dynamic-media-assets-to-pages.md) toe.
 
-Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s en toepassingen te plaatsen.
+Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen, kopieert u ze van Dynamic Media.
 
 >[!NOTE]
 >
->URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de Dynamic Media-server. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
+>URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Deze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de Dynamic Media-server. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
 Zie ook [ bed de video of beeldkijker op een Web-pagina ](embed-code.md) in.
 
@@ -40,11 +77,11 @@ U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelli
 >
 >De URL is pas beschikbaar voor kopiëren nadat u het geselecteerde element hebt gepubliceerd. Daarnaast moet u ook de voorinstelling van de viewer of de voorinstelling van de afbeelding publiceren.
 >
->Zie [ Publish Assets ](publishing-dynamicmedia-assets.md).
+>Zie [ publiceren Assets ](publishing-dynamicmedia-assets.md).
 >
->Zie [ de Kijker van Publish stelt ](managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
+>Zie [ Publish Kijker vooraf instelt ](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Zie [ het Beeld van Publish vooraf instelt ](managing-image-presets.md#publishing-image-presets).
+>Zie [ publiceren Beeld vooraf instelt ](managing-image-presets.md#publishing-image-presets).
 
 Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In de onderstaande stappen ziet u echter slechts één methode die u kunt gebruiken.
 
@@ -54,11 +91,11 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie [ Publish Assets ](publishing-dynamicmedia-assets.md).
+   Zie [ publiceren Assets ](publishing-dynamicmedia-assets.md).
 
-   Zie [ de Kijker van Publish stelt ](managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
+   Zie [ Publish Kijker vooraf instelt ](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Zie [ het Beeld van Publish vooraf instelt ](managing-image-presets.md#publishing-image-presets).
+   Zie [ publiceren Beeld vooraf instelt ](managing-image-presets.md#publishing-image-presets).
 
 1. Voer op basis van het element dat u hebt geselecteerd een van de volgende handelingen uit:
 
@@ -84,10 +121,10 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
 ## Een URL verkrijgen voor een statisch element {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere elementen dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
+Dynamische media ondersteunt de levering van statische elementen. Dit zijn andere elementen dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
 
 * 3D-bestanden
-* Geanimeerd GIF
+* GIF met animatie
 * Audiobestanden
 * CSS
 * JavaScript (wanneer uw bedrijf met zijn eigen domein wordt gevormd)
@@ -134,7 +171,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany` was, zou de naam van de klant `MyCompany` zijn.
 
-1. Selecteer **[!UICONTROL Cloud Services]** in de linkerbovenhoek van de pagina, selecteer vervolgens het Experience Manager-pictogram en ga naar **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
+1. Selecteer **[!UICONTROL Cloud Services]** in de linkerbovenhoek van de pagina, selecteer vervolgens het Experience Manager-pictogram en navigeer naar **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
 1. Kopieer het volledige pad voor video-uitvoering van de JCR (Java™ Content Repository) naar beneden.
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -189,7 +226,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
     </tbody>
    </table>
 
-1. Kopieer het volledige pad naar video-elementen in Experience Manager, zoals verwerkt door Dynamic Media. U hebt dit gekopieerde pad voor video-elementen later in deze stappen nodig.
+1. Kopieer het volledige pad naar video-elementen in Experience Manager, zoals dit wordt verwerkt door Dynamic Media. U hebt dit gekopieerde pad voor video-elementen later in deze stappen nodig.
 
    Bijvoorbeeld:
 
@@ -207,8 +244,8 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Gebruik HTTP/2 om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
+## HTTP/2 gebruiken om uw dynamische media-elementen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [ HTTP2 Levering van Inhoud ](http2faq.md) voor volledige details bij het worden begonnen HTTP/2 met uw rekening van Dynamic Media te gebruiken.
+Zie [ HTTP2 Levering van Inhoud ](http2faq.md) voor volledige details bij het worden begonnen HTTP/2 met uw Dynamische rekening van Media te gebruiken.

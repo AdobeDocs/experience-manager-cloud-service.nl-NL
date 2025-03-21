@@ -1,27 +1,62 @@
 ---
 title: Assets Ultimate inschakelen
-description: Leer hoe je Assets Ultimate kunt inschakelen voor nieuwe en bestaande klanten.
+description: Leer hoe u Assets Ultimate kunt inschakelen voor nieuwe en bestaande klanten.
 feature: Asset Management
 role: User, Admin
-source-git-commit: 16ce83409044ad54140754112eb4d35b97883b44
+exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
 
 # [!DNL Assets] as a Cloud Service Ultimate inschakelen {#enable-assets-cloud-service-ultimate}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-![ Verbetering aan de Ultieme Cloud Service van Activa ](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
+![ Verbetering aan Activa Cloud Service Ultimate ](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Assets as a Cloud Service Ultimate stelt u in staat verschillende belangrijke DAM-mogelijkheden uit te voeren, zoals assetbeheer en bibliotheekservices, beveiliging en rechtenbeheer, Creative- en Experience Cloud-verbindingen, uitbreidbaarheid van de gebruikersinterface, API-gestuurde automatisering, integraties met Adobe- en niet-Adobe-toepassingen, aangepaste code-implementatie en nog veel meer. Zie [ as a Cloud Service Ultimate Overzicht van Activa ](/help/assets/assets-ultimate-overview.md) voor de volledige lijst.
+Met Assets as a Cloud Service Ultimate kunt u verschillende belangrijke DAM-mogelijkheden uitvoeren, zoals beheer van bedrijfsmiddelen en bibliotheekservices, beheer van beveiliging en rechten, Creative- en Experience Cloud-verbindingen, uitbreidbaarheid van de gebruikersinterface, API-gestuurde automatisering, integratie met Adobe- en niet-Adobe-toepassingen, aangepaste code-implementatie en nog veel meer. Zie [ Assets as a Cloud Service Ultimate Overzicht ](/help/assets/assets-ultimate-overview.md) voor de volledige lijst.
 
 ## Assets Ultimate inschakelen {#enable-assets-ultimate}
 
-Nieuwe Assets as a Cloud Service klanten moeten Assets Ultimate eerst inschakelen door een nieuw programma te maken met Cloud Manager.
+Nieuwe Assets as a Cloud Service-klanten moeten Assets Ultimate eerst inschakelen door een nieuw programma te maken met Cloud Manager.
 
 Voer de volgende stappen uit:
 
@@ -29,23 +64,23 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u aan het juiste Cloud Manager-productprofiel wordt toegevoegd om een nieuw programma toe te voegen. Voor meer informatie, zie [ Rol Gebaseerde Toestemmingen in de Manager van de Wolk ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
+   >Voeg een nieuw programma toe aan het juiste Cloud Manager-productprofiel. Voor meer informatie, zie [ Rol Gebaseerde Toestemmingen in Cloud Manager ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 1. [ creeer een nieuw programma ](/help/journey-onboarding/create-program.md) en [ voeg milieu&#39;s ](/help/journey-onboarding//create-environments.md) aan het toe.
 
-   Selecteer **[!UICONTROL Assets Ultimate]** op het tabblad **[!UICONTROL Solutions & Add-ons]** tijdens het maken van het nieuwe programma. U kunt **[!UICONTROL Assets Ultimate]** ook uitbreiden en selecteren **[!UICONTROL Content Hub]** om [ de Hub van de Inhoud ](/help/assets/product-overview.md) voor activadistributie toe te laten.
+   Selecteer **[!UICONTROL Assets Ultimate]** op het tabblad **[!UICONTROL Solutions & Add-ons]** tijdens het maken van het nieuwe programma. U kunt **[!UICONTROL Assets Ultimate]** ook uitbreiden en selecteren **[!UICONTROL Content Hub]** om [ Content Hub ](/help/assets/product-overview.md) voor activadistributie toe te laten.
 
    ![ AEM Assets Ultimate ](assets/aem-assets-ultimate-solutions.png)
 
 1. Klik op **[!UICONTROL Create]** om het programma te maken. Assets Ultimate is nu ingeschakeld voor Experience Manager Assets as a Cloud Service.
 
-De systeembeheerder is automatisch gemachtigd als AEM beheerder op Assets Ultimate en ontvangt een e-mail om naar de Admin Console te navigeren om de beschikbare productprofielen te beheren.
+De systeembeheerder heeft automatisch de bevoegdheid als AEM-beheerder op Assets Ultimate en ontvangt een e-mail om naar Admin Console te navigeren om de beschikbare productprofielen te beheren.
 
 Uw AEM as a Cloud Service-exemplaar op Admin Console bestaat uit de volgende productprofielen:
 
-* AEM
+* AEM-beheerders
 
-* AEM
+* AEM-gebruikers
 
 * [AEM Assets Collaborator-gebruikers](#onboard-collaborator-users)
 
@@ -53,7 +88,7 @@ Uw AEM as a Cloud Service-exemplaar op Admin Console bestaat uit de volgende pro
 
   ![ Profielen van het Product van AEM Assets ](assets/aem-assets-product-profiles.png)
 
-Als u Content Hub for Assets as a Cloud Service hebt ingeschakeld, wordt een nieuwe instantie gemaakt in AEM Assets as a Cloud Service on Admin Console met `delivery` als achtervoegsel:
+Als u Content Hub for Assets as a Cloud Service hebt ingeschakeld, wordt in AEM Assets as a Cloud Service op Admin Console een nieuwe instantie gemaakt met `delivery` als achtervoegsel:
 
 ![ Nieuwe instantie voor Content Hub ](assets/new-instance-content-hub.png)
 
@@ -75,7 +110,7 @@ U kunt gebruikers of gebruikersgroepen aan dit productprofiel toevoegen om hen t
 
 ## Assets Ultimate inschakelen voor bestaande klanten {#enable-assets-ultimate-existing-customers}
 
-Bestaande Assets as a Cloud Service klanten kunnen een upgrade uitvoeren naar Assets Ultimate door twee eenvoudige stappen uit te voeren. U kunt naar het as a Cloud Service programma van Assets in Cloud Manager navigeren en verbeteringsstatus op de kaart zien van het Programma die op de beschikbaarheid van Assets Ultimate credits wordt gebaseerd. Als er voldoende credits beschikbaar zijn voor upgrade naar Assets Ultimate, kunt u de status `Assets license upgrade required` zien, zoals weergegeven in de volgende afbeelding:
+Bestaande Assets as a Cloud Service-klanten kunnen een upgrade uitvoeren naar Assets Ultimate door twee eenvoudige stappen uit te voeren. U kunt naar het Assets as a Cloud Service-programma in Cloud Manager navigeren en de status van de upgrade bekijken op de Program Card op basis van de beschikbaarheid van Assets Ultimate-credits. Als er voldoende credits beschikbaar zijn voor een upgrade naar Assets Ultimate, kunt u de status `Assets license upgrade required` zien, zoals in de volgende afbeelding wordt getoond:
 
 ![ de verbetering van AEM Assets aan Assets Ultimate ](assets/aem-assets-upgrade-status-ultimate.png)
 
@@ -83,13 +118,13 @@ Als een bestaande klant een nieuwe licentie aanschaft voor Assets Ultimate, word
 
 ### Vereisten voor upgrade {#prerequisites-assets-upgrade}
 
-Alle omgevingen moeten worden geüpgraded naar de nieuwste AEM as a Cloud Service-releaseversie of minimaal een `2024.10.18175` releaseversie. Als u niet aan de minimumvereisten voldoet, neemt u contact op met uw Adobe-vertegenwoordiger om over te schakelen naar de vereiste versie AEM.
+Alle omgevingen moeten worden geüpgraded naar de nieuwste AEM as a Cloud Service-releaseversie of minimaal een `2024.10.18175` releaseversie. Als u niet aan de minimumvereisten voldoet, neemt u contact op met uw Adobe-vertegenwoordiger om over te schakelen naar de vereiste AEM-releaseversie.
 
-### Upgrade naar Assets Ultimate {#upgrade-assets-ultimate}
+### Upgrade uitvoeren naar Assets Ultimate {#upgrade-assets-ultimate}
 
 Voer de volgende stappen uit:
 
-1. Klik op de naam van het programma nadat u bent overgeschakeld naar de minimale vereisten voor de AEM versie. Een upgradekaart wordt net boven **[!UICONTROL Environments]** weergegeven, zoals in de volgende afbeelding wordt getoond:
+1. Klik op de naam van het programma nadat u hebt overgeschakeld naar de minimale vereisten voor de AEM-releaseversie. Een upgradekaart wordt net boven **[!UICONTROL Environments]** -sectie weergegeven, zoals in de volgende afbeelding wordt getoond:
 
    ![ de verbetering van AEM Assets aan Assets Ultimate ](assets/aem-assets-upgrade-card.png)
 
@@ -119,11 +154,11 @@ Voer de volgende stappen uit:
 
    ![ status van het Programma na verbetering ](assets/program-status-post-upgrade.png)
 
-Uw AEM als Cloud Service-instantie op Admin Console omvat nu de volgende productprofielen:
+Het AEM as a Cloud Service-exemplaar op Admin Console bevat nu de volgende productprofielen:
 
-* AEM
+* AEM-beheerders
 
-* AEM
+* AEM-gebruikers
 
 * [AEM Assets Collaborator-gebruikers](#onboard-collaborator-users)
 
@@ -131,7 +166,7 @@ Uw AEM als Cloud Service-instantie op Admin Console omvat nu de volgende product
 
 ![ Profielen van het Product van AEM Assets ](assets/aem-assets-product-profiles.png)
 
-Als Content Hub ingeschakeld moet zijn, klikt u op het pictogram Meer opties (...) op de naam van het programma in Cloud Manager en selecteert u **[!UICONTROL Edit Program]** . Vouw **[!UICONTROL Assets Ultimate]** uit en klik op **[!UICONTROL Content Hub]** . Deze stap laat de Hub van de Inhoud voor Elementen Ultimate toe. Er wordt een nieuwe instantie gemaakt in AEM Assets as a Cloud Service Admin Console met `delivery` als achtervoegsel:
+Als Content Hub ingeschakeld moet zijn, klikt u op het pictogram Meer opties (...) op de naam van het programma in Cloud Manager en selecteert u **[!UICONTROL Edit Program]** . Vouw **[!UICONTROL Assets Ultimate]** uit en klik op **[!UICONTROL Content Hub]** . Met deze stap wordt de Content Hub for Assets Ultimate ingeschakeld. Er is een nieuwe instantie gemaakt in AEM Assets as a Cloud Service op Admin Console met `delivery` als achtervoegsel:
 
 ![ Nieuwe instantie voor Content Hub ](assets/new-instance-content-hub.png)
 
@@ -143,21 +178,21 @@ De instantienaam voor Content Hub bevat geen `author` of `publish` .
 
 Klik op de instantienaam om het `AEM Assets Limited Users` Content Hub-productprofiel te bekijken.
 
-![ het productprofiel van de Hub van de Inhoud ](assets/content-hub-product-profile.png)
+![ het productprofiel van Content Hub ](assets/content-hub-product-profile.png)
 
-U kunt beginnen gebruikers of gebruikersgroepen aan dit productprofiel toe te voegen om hen toegang tot de Hub van de Inhoud te verlenen.
+U kunt gebruikers of gebruikersgroepen aan dit productprofiel toevoegen om hen toegang tot Content Hub te verlenen.
 
 >[!NOTE]
 >
->Als u vóór 14 augustus 2024 de Content Hub hebt ingericht, heeft het profiel van de Content Hub product `contenthub` vermeld na `Limited Users` in plaats van `delivery` .
+>Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt het Content Hub-productprofiel `contenthub` vermeld na `Limited Users` in plaats van `delivery` .
 
-## Onboargebruikers van AEM Assets Collaborator {#onboard-collaborator-users}
+## On-board AEM Assets Collaborator-gebruikers {#onboard-collaborator-users}
 
-AEM Assets Collaborator-gebruikers kunnen werken met assets van Experience Manager via integraties van assets die beschikbaar zijn voor je organisatie in andere producten van de Adobe en applicaties die geen Adobe zijn, assets maken en bewerken met ingebouwde Adobe Express en Firefly die gebruik maken van professioneel ontworpen sjablonen, merkpakketten, Adobe Stock-assets, enzovoort, en goedgekeurde assets van je organisatie benaderen en benutten via AEM Assets Content Hub Portal.
+Gebruikers van AEM Assets Collaborator kunnen samenwerken met middelen van Experience Manager via integratie van Assets die beschikbaar is voor uw organisatie in andere Adobe-producten en niet-Adobe-toepassingen, middelen maken en bewerken met ingebouwde Adobe Express en Firefly die gebruikmaken van professioneel ontworpen sjablonen, merkpakketten, Adobe Stock-middelen enzovoort, en goedgekeurde middelen van uw organisatie benaderen en benutten via AEM Assets Content Hub Portal.
 
 Aan boord van Collaborator-gebruikers:
 
-1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op de Admin Console te klikken.
+1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op Admin Console te klikken.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
    ![ de profielen van het Product voor AEM as a Cloud Service ](assets/aem-cloud-service-instances.png)
@@ -180,11 +215,11 @@ U kunt ook toegang krijgen tot de services die zijn toegewezen aan gebruikers va
 
 ## Ingebouwde AEM Assets Power-gebruikers {#onboard-power-users}
 
-AEM Assets Power-gebruikers hebben toegang tot alle AEM Assets-mogelijkheden, waaronder het beheer van middelen, machtigingen, metagegevens en het algemene beheer en de automatisering rond digitale middelen, werken met middelen van Experience Manager via de integratie van Assets die beschikbaar is voor uw organisatie in andere toepassingen voor Adobe en niet-Adobe, maken en bewerken van middelen met behulp van ingebouwde Adobe Express en Firefly die gebruikmaken van professioneel ontworpen sjablonen, merkkits, Adobe Stock-middelen, enzovoort, en maken en gebruiken goedgekeurde middelen van uw organisatie via AEM Assets Portal via de Content Hub-portal.
+AEM Assets Power-gebruikers hebben toegang tot alle AEM Assets-mogelijkheden, waaronder het beheer van middelen, machtigingen, metagegevens en het algemene beheer en de automatisering rond digitale middelen, werken met middelen van Experience Manager via de integratie van Assets die beschikbaar is voor uw organisatie in andere Adobe- en niet-Adobe-toepassingen, maken en bewerken van middelen met behulp van ingebouwde Adobe Express en Firefly, waarbij gebruik wordt gemaakt van professioneel ontworpen sjablonen, merkkits, Adobe Stock-middelen enzovoort, en toegang krijgen tot en gebruik maken van goedgekeurde middelen van uw organisatie via AEM Assets vanuit uw organisatie via de portal voor Content Hub.
 
 Aan boord van stroomgebruikers:
 
-1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op de Admin Console te klikken.
+1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op Admin Console te klikken.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
    ![ de profielen van het Product voor AEM as a Cloud Service ](assets/aem-cloud-service-instances.png)

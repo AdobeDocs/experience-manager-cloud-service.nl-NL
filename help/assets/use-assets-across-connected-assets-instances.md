@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3802'
 ht-degree: 12%
 
 ---
@@ -16,19 +16,53 @@ ht-degree: 12%
 
 # Connected Assets gebruiken om DAM-middelen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen overnames zijn die leiden tot heterogene infrastructuren, waaronder verschillende [!DNL Experience Manager] -versies, die het moederbedrijf samen wil gebruiken.
 
 >[!NOTE]
 >
->Adobe raadt u aan Dynamic Media te gebruiken met OpenAPI-mogelijkheden om AEM Assets as a Cloud Service en AEM Sites aan te sluiten. Zie [ verre AEM Assets met AEM Sites ](/help/assets/integrate-remote-approved-assets-with-sites.md) integreren.
+>Adobe raadt u aan Dynamic Media te gebruiken met OpenAPI-mogelijkheden om AEM Assets as a Cloud Service en AEM Sites te verbinden. Zie [ verre AEM Assets met AEM Sites ](/help/assets/integrate-remote-approved-assets-with-sites.md) integreren.
 
 De Connected Assets-functionaliteit ondersteunt de bovenstaande gebruiksscenario&#39;s door [!DNL Experience Manager Sites] en [!DNL Experience Manager Assets] te integreren. Gebruikers kunnen in [!DNL Sites] webpagina&#39;s maken die de digitale elementen van afzonderlijke [!DNL Assets] -implementaties gebruiken.
 
@@ -38,7 +72,7 @@ De Connected Assets-functionaliteit ondersteunt de bovenstaande gebruiksscenario
 
 ## Overzicht van Connected Assets {#overview-of-connected-assets}
 
-Wanneer de auteurs pagina&#39;s in [!UICONTROL Page Editor] als doeldoel bewerken, kunnen ze elementen van een andere [!DNL Assets] -implementatie die als bron van elementen fungeert, naadloos zoeken, doorbladeren en insluiten. De beheerders maken een eenmalige integratie van een implementatie van [!DNL Experience Manager] met [!DNL Sites] mogelijkheden met een andere implementatie van [!DNL Experience Manager] met [!DNL Assets] mogelijkheden. U kunt ook Dynamic Media-afbeeldingen op de webpagina&#39;s van uw site gebruiken via Connected Assets en de Dynamic Media-functies gebruiken, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
+Wanneer de auteurs pagina&#39;s in [!UICONTROL Page Editor] als doeldoel bewerken, kunnen ze elementen van een andere [!DNL Assets] -implementatie die als bron van elementen fungeert, naadloos zoeken, doorbladeren en insluiten. De beheerders maken een eenmalige integratie van een implementatie van [!DNL Experience Manager] met [!DNL Sites] mogelijkheden met een andere implementatie van [!DNL Experience Manager] met [!DNL Assets] mogelijkheden. U kunt ook Dynamic Media-afbeeldingen op de webpagina&#39;s van uw site gebruiken via Connected Assets en de functionaliteit Dynamische media gebruiken, zoals voorinstellingen voor slim uitsnijden en afbeeldingen.
 
 Voor de [!DNL Sites] -auteurs zijn de externe elementen beschikbaar als alleen-lezen lokale elementen. De functionaliteit ondersteunt naadloze zoekopdrachten en toegang tot externe middelen in de Site-editor. Als u andere gebruiksgevallen wilt gebruiken waarvoor het volledige assetcorpus op Sites beschikbaar moet zijn, kunt u overwegen de middelen in bulk te migreren in plaats van Connected Assets te gebruiken.
 
@@ -80,7 +114,7 @@ De diverse rollen die betrokken zijn om te vormen en het vermogen en hun overeen
 
 Met Experience Manager kunt u een externe DAM-implementatie als bron aansluiten op meerdere Experience Manager [!DNL Sites] -implementaties. U kunt echter een [!DNL Sites] -implementatie verbinden met slechts één externe DAM-implementatie.
 
-Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. De Adobe adviseert om instanties van Plaatsen aan de plaatsing en test incrementeel aan te sluiten dat er geen prestatieseffect bij verre DAM is, aangezien elke verbonden instantie van Plaatsen aan het gegevensverkeer op verre DAM bijdraagt.
+Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. Adobe raadt aan Sites-instanties incrementeel te verbinden met de implementatie en te testen of er geen invloed is op de prestaties op de externe DAM, aangezien elke instantie van verbonden sites bijdraagt aan het gegevensverkeer op de externe DAM.
 
 De volgende diagrammen illustreren de gesteunde scenario&#39;s:
 
@@ -148,16 +182,16 @@ U kunt de connectiviteit tussen de geconfigureerde [!DNL Sites] implementaties e
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## Dynamic Media-middelen gebruiken {#dynamic-media-assets}
+## Dynamische media-elementen gebruiken {#dynamic-media-assets}
 
 
-Met Connected Assets kunt u afbeeldingselementen gebruiken die door [!DNL Dynamic Media] zijn verwerkt vanaf de externe DAM-implementatie op sitepagina&#39;s, en Dynamic Media-functies gebruiken, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
+Met Connected Assets kunt u afbeeldingselementen gebruiken die door [!DNL Dynamic Media] zijn verwerkt vanaf de externe DAM-implementatie op sitepagina&#39;s en gebruik maken van dynamische mediafuncties, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
 
 Als u [!DNL Dynamic Media] wilt gebruiken met Connected Assets:
 
 1. Configureer [!DNL Dynamic Media] op externe DAM-implementatie met de synchronisatiemodus ingeschakeld.
 1. Vorm [ Verbonden Assets ](#configure-a-connection-between-sites-and-assets-deployments).
-1. Configureer [!DNL Dynamic Media] op de Sites-instantie met dezelfde bedrijfsnaam als die is geconfigureerd op de externe DAM. De plaatsing van Plaatsen moet read-only toegang tot de rekening van Dynamic Media hebben om met verbonden activa te werken. Zorg er daarom voor dat u de synchronisatiemodus in Dynamic Media-configuratie op de Sites-instantie uitschakelt.
+1. Configureer [!DNL Dynamic Media] op de Sites-instantie met dezelfde bedrijfsnaam als die is geconfigureerd op de externe DAM. De plaatsing van Plaatsen moet read-only toegang tot de Dynamische rekening van Media hebben om met verbonden activa te werken. Zorg er daarom voor dat u de synchronisatiemodus uitschakelt in de configuratie Dynamische media op de instantie Sites.
 
 >[!CAUTION]
 >
@@ -253,9 +287,9 @@ Terwijl het bewegen van een activa van één plaats aan een andere, zorg ervoor 
 
 U kunt ook de eigenschappen van metagegevens bijwerken voor een element op externe DAM en de wijzigingen zijn beschikbaar voor de lokale implementatie van Sites.
 
-De auteurs van Plaatsen kunnen de beschikbare updates op de plaatsing van Plaatsen voorproef en dan de veranderingen opnieuw publiceren om hen op AEM te maken publiceren instantie.
+De auteurs van Plaatsen kunnen de beschikbare updates op de plaatsing van Plaatsen voorproef en dan de veranderingen opnieuw publiceren om hen op de AEM te maken publiceren instantie.
 
-Experience Manager geeft een `expired` status visuele indicator weer op elementen in de Finder voor externe Assets-inhoud om te voorkomen dat siteauteurs het element op een sitepagina gebruiken. Als u een element met een `expired` -status op een sitepagina gebruikt, wordt het element niet weergegeven op de publicatieinstantie van de Experience Manager.
+Experience Manager geeft een `expired` status visuele indicator weer op elementen in Remote Assets Content Finder om te voorkomen dat siteauteurs het element op een sitepagina gebruiken. Als u een element met de status `expired` gebruikt op een sitepagina, wordt het element niet weergegeven op de Experience Manager-publicatie-instantie.
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
@@ -283,9 +317,9 @@ Nadat u Connected Assets hebt geconfigureerd, kunt u één externe DAM-implement
 
 +++
 
-+++**kunt u de activa van Dynamic Media van uw [!DNL Sites] plaatsing na het vormen Verbonden Assets gebruiken?**
++++**kunt u Dynamische activa van Media van uw [!DNL Sites] plaatsing gebruiken na het vormen van Verbonden Assets?**
 
-Nadat u Connected Assets hebt geconfigureerd, zijn [!DNL Dynamic Media] -elementen beschikbaar voor [!DNL Sites] -implementatie in de modus Alleen-lezen. Het gevolg is dat u [!DNL Dynamic Media] niet kunt gebruiken om elementen in de [!DNL Sites] -implementatie te verwerken. Voor meer informatie, zie [ een verbinding tussen Plaatsen en de plaatsingen van Dynamic Media ](#dynamic-media-assets) vormen.
+Nadat u Connected Assets hebt geconfigureerd, zijn [!DNL Dynamic Media] -elementen beschikbaar voor [!DNL Sites] -implementatie in de modus Alleen-lezen. Het gevolg is dat u [!DNL Dynamic Media] niet kunt gebruiken om elementen in de [!DNL Sites] -implementatie te verwerken. Voor meer informatie, zie [ een verbinding tussen Plaatsen en Dynamische plaatsingen van Media ](#dynamic-media-assets) vormen.
 
 +++
 
@@ -301,9 +335,9 @@ Nee, u kunt na het configureren van Connected Assets geen inhoudsfragmenten en v
 
 +++
 
-+++**kunt u de activa van Dynamic Media van de verre plaatsing DAM op de [!DNL Sites] plaatsing gebruiken na het vormen van Verbonden Assets?**
++++**kunt u de Dynamische activa van Media van de verre plaatsing DAM op de [!DNL Sites] plaatsing gebruiken na het vormen van Verbonden Assets?**
 
-Ja, u kunt Dynamic Media image assets configureren en gebruiken vanaf de externe DAM-implementatie op de [!DNL Sites] -implementatie nadat u Connected Assets hebt geconfigureerd. Voor meer informatie, zie [ een verbinding tussen Plaatsen en de plaatsingen van Dynamic Media ](#dynamic-media-assets) vormen.
+Ja, u kunt Dynamic Media-imagemiddelen configureren en gebruiken vanaf de externe DAM-implementatie op de [!DNL Sites] -implementatie nadat u Connected Assets hebt geconfigureerd. Voor meer informatie, zie [ een verbinding tussen Plaatsen en Dynamische plaatsingen van Media ](#dynamic-media-assets) vormen.
 
 +++
 
@@ -384,4 +418,4 @@ Ga als volgt te werk om algemene fouten op te lossen:
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

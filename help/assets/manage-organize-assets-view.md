@@ -5,17 +5,51 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1622'
 ht-degree: 0%
 
 ---
 
 # Elementen beheren {#manage-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 U kunt verschillende DAM-taken (Digital Asset Management) eenvoudig uitvoeren met de gebruikersvriendelijke interface van [!DNL Assets view] . Nadat u de elementen hebt toegevoegd, kunt u uw elementen zoeken, downloaden, verplaatsen, kopiëren, hernoemen, verwijderen, bijwerken en bewerken.
 
@@ -37,7 +71,7 @@ Gebruik [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voere
 
 * ![ Vastzet activa pictogram ](assets/do-not-localize/pin-quick-access.svg) Vastzetten activa voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette punten tonen in de **Snelle toegang** sectie van Mijn Workspace.
 
-* ![ geef in uitdrukkelijke pictogram uit ](assets/do-not-localize/edit-e.svg) geef een beeld in de geïntegreerde Adobe Express binnen Adobe Experience Manager Assets uit.
+* ![ geef in uitdrukkelijk pictogram uit ](assets/do-not-localize/edit-e.svg) geef een beeld in geïntegreerde Adobe Express binnen Adobe Experience Manager Assets uit.
 
 * ![ geef activapictogram uit ](assets/do-not-localize/edit-e.svg) geef het beeld uit gebruikend Adobe Express.
 
@@ -72,7 +106,7 @@ In [!DNL Assets view] worden alleen de relevante opties op de werkbalk weergegev
 
 ![ de opties van de Toolbar wanneer u activa ](assets/toolbar-pdf-selected.png) selecteert
 
-*Cijfer: De opties beschikbaar in de toolbar voor een geselecteerd dossier van de PDF.*
+*Cijfer: De opties beschikbaar in de toolbar voor een geselecteerd dossier van PDF.*
 
 ## Elementen downloaden en distribueren {#download}
 
@@ -134,7 +168,7 @@ De elementstatus instellen:
 1. Selecteer het element en klik op **[!UICONTROL Details]** op de werkbalk.
 
 1. Selecteer op het tabblad **[!UICONTROL Basic]** de elementstatus in de vervolgkeuzelijst **[!UICONTROL Status]** . Mogelijke waarden zijn Goedgekeurd, Afgewezen en Geen status (standaardwaarde).
-Als u Dynamic Media met OpenAPI-mogelijkheden hebt ingericht voor uw omgeving, genereert Experience Manager Assets een openbare URL zodra u het element markeert als `Approved` .
+Als u over Dynamic Media beschikt met OpenAPI-mogelijkheden die zijn ingericht voor uw omgeving, genereert Experience Manager Assets een openbare URL zodra u het element markeert als `Approved` .
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
@@ -142,7 +176,7 @@ Als u Dynamic Media met OpenAPI-mogelijkheden hebt ingericht voor uw omgeving, g
 
 ### Goedkeuringsdoel instellen {#set-approval-target}
 
-De mening van Assets laat u toe om goedgekeurde activa aan Dynamic Media met mogelijkheden OpenAPI, Content Hub, of allebei te publiceren die op de waarde worden gebaseerd die u op het **gebied van het Doel van de Goedkeuring** beschikbaar op de pagina van de Details van Activa plaatst.
+De mening van Assets laat u toe om goedgekeurde activa aan Dynamische Media met mogelijkheden OpenAPI, Content Hub, of allebei te publiceren die op de waarde worden gebaseerd die u op het **gebied van het Doel van de Goedkeuring** beschikbaar op de pagina van de Details van Activa plaatst.
 
 Goedkeuringsdoel instellen:
 
@@ -152,7 +186,7 @@ Goedkeuringsdoel instellen:
 
 1. Als u **Goedgekeurd** in stap 2 selecteert, selecteer een goedkeuringsdoel. Mogelijke waarden zijn Delivery en Content Hub.
 
-   * **Levering** is de standaardoptie die in het drop-down menu wordt geselecteerd en het publiceert de activa aan zowel [ Dynamic Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) en [ Content Hub ](/help/assets/product-overview.md), als allebei voor Experience Manager Assets worden toegelaten.
+   * **Levering** is de standaardoptie die in het drop-down menu wordt geselecteerd en het publiceert de activa aan zowel [ Dynamische Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) en [ Content Hub ](/help/assets/product-overview.md), als allebei voor Experience Manager Assets worden toegelaten.
 
    * Het selecteren van **Content Hub** publiceert enkel de activa aan Content Hub. Content Hub wordt alleen weergegeven als een optie als deze is ingeschakeld voor Experience Manager Assets.
 
@@ -163,7 +197,7 @@ Goedkeuringsdoel instellen:
 
    >[!NOTE]
    >
-   >Het instellen van een goedkeuringsdoel is een beperkte beschikbaarheidsfunctie. U kunt het toegelaten krijgen of onbruikbaar maken door een steunkaartje te creëren. Als u Dynamic Media met OpenAPI hebt ingeschakeld, is deze standaard ingeschakeld.
+   >Het instellen van een goedkeuringsdoel is een beperkte beschikbaarheidsfunctie. U kunt het toegelaten krijgen of onbruikbaar maken door een steunkaartje te creëren. Als u Dynamische media met OpenAPI hebt ingeschakeld, is deze standaard ingeschakeld.
 
    ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
 
@@ -179,11 +213,11 @@ Enkele extra punten die u wilt noteren zijn:
 
 In de volgende tabel worden de voorwaarden weergegeven voor de weergave van de vervolgkeuzelijst `Approval Target` en het standaard goedkeuringsdoel op basis van de activering van DM met OpenAPI en Content Hub in uw AEM as a Cloud Service-omgeving:
 
-| Dynamic Media met OpenAPI | Content Hub | De vervolgkeuzelijst Goedkeuringsdoel wordt weergegeven? | Standaardgoedkeuringsdoel voor goedgekeurde elementen | Publish-bestemming |
+| Dynamische media met OpenAPI | Content Hub | De vervolgkeuzelijst Goedkeuringsdoel wordt weergegeven? | Standaardgoedkeuringsdoel voor goedgekeurde elementen | Doel publiceren |
 | --- | --- | --- | --- |---|
-| Ingeschakeld | Ingeschakeld | Ja | Aflevering | Dynamic Media met OpenAPI en Content Hub |
+| Ingeschakeld | Ingeschakeld | Ja | Aflevering | Dynamische media met OpenAPI en Content Hub |
 | Niet ingeschakeld | Ingeschakeld | Ja | Content Hub | Content Hub |
-| Ingeschakeld | Niet ingeschakeld | Ja | Aflevering | Dynamic Media met OpenAPI |
+| Ingeschakeld | Niet ingeschakeld | Ja | Aflevering | Dynamische media met OpenAPI |
 | Niet ingeschakeld | Niet ingeschakeld | Nee | NVT | NVT |
 
 ### Vervaldatum van element instellen {#set-asset-expiration-date}

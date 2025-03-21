@@ -5,21 +5,55 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 78%
+source-wordcount: '1200'
+ht-degree: 77%
 
 ---
 
-# Publish-middelen naar Brand Portal {#publish-assets-to-brand-portal}
+# Elementen publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als beheerder van AEM Assets (Adobe Experience Manager) kunt u assets, mappen en verzamelingen publiceren naar de AEM Assets Brand Portal-instantie. Bovendien kunt u de publicatieworkflow van een asset of map op een latere datum of tijd plannen. Na publicatie krijgen de Brand Portal-gebruikers toegang tot de assets, mappen en verzamelingen en kunnen ze deze naar andere gebruikers distribueren.
@@ -28,9 +62,9 @@ U moet echter eerst AEM Assets configureren met Brand Portal. Zie [AEM Assets co
 
 Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzameling in AEM Assets, worden de wijzigingen pas doorgevoerd in Brand Portal als u opnieuw publiceert vanaf AEM Assets. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-* [Publish-middelen naar Brand Portal](#publish-assets-to-bp)
-* [Publish-mappen naar Brand Portal](#publish-folders-to-brand-portal)
-* [Publish-collecties naar Brand Portal](#publish-collections-to-brand-portal)
+* [Elementen publiceren naar Brand Portal](#publish-assets-to-bp)
+* [Mappen publiceren naar Brand Portal](#publish-folders-to-brand-portal)
+* [Verzamelingen publiceren naar Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -38,7 +72,7 @@ Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzame
 >Assets moet in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
 > Voor [!DNL Experience Manager Assets] als a [!DNL Cloud Service], is de overdrachtsnelheid die onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
 
-## Publish-middelen naar Brand Portal {#publish-assets-to-bp}
+## Elementen publiceren naar Brand Portal {#publish-assets-to-bp}
 
 Hier volgen de stappen voor het publiceren van assets van AEM Assets naar Brand Portal:
 
@@ -50,7 +84,7 @@ Hier volgen de stappen voor het publiceren van assets van AEM Assets naar Brand 
    * [Nu publiceren](#publish-to-bp-now) (assets onmiddellijk publiceren)
    * [Later publiceren](#publish-to-bp-later) (het publiceren van assets plannen)
 
-### Publish-middelen nu {#publish-to-bp-now}
+### Elementen nu publiceren {#publish-to-bp-now}
 
 Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand Portal te publiceren:
 
@@ -68,7 +102,7 @@ Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand P
 
 Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken.
 
-### Publish Assets later {#publish-to-bp-later}
+### Elementen later publiceren {#publish-to-bp-later}
 
 Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 
@@ -103,11 +137,11 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Publish-mappen naar Brand Portal {#publish-folders-to-brand-portal}
+## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
 U kunt mappen met assets direct publiceren of verwijderen of op een latere datum of tijd plannen.
 
-### Publish-mappen naar Brand Portal {#publish-folders-to-bp}
+### Mappen publiceren naar Brand Portal {#publish-folders-to-bp}
 
 1. Selecteer in de Assets-console de mappen die u wilt publiceren en klik op de optie **[!UICONTROL Quick Publish]** op de werkbalk.
 
@@ -133,7 +167,7 @@ U kunt mappen met assets direct publiceren of verwijderen of op een latere datum
 
    Er verschijnt een bericht waarin wordt aangegeven dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde map te bekijken.
 
-1. **de omslagen van Publish later**
+1. **publiceer omslagen later**
 U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
    1. Selecteer de mappen die u wilt plannen voor publicatie en selecteer **[!UICONTROL Manage Publication]** in de werkbalk bovenaan.
@@ -213,7 +247,7 @@ De publicatie van mappen met assets op Brand Portal ongedaan maken:
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Publish-collecties naar Brand Portal {#publish-collections-to-brand-portal}
+## Verzamelingen publiceren naar Brand Portal {#publish-collections-to-brand-portal}
 
 U kunt verzamelingen publiceren of de publicatie ervan ongedaan maken vanuit uw AEM Assets-cloudinstantie.
 
@@ -223,7 +257,7 @@ U kunt verzamelingen publiceren of de publicatie ervan ongedaan maken vanuit uw 
 >
 >Als verzamelingen met contentfragmenten van AEM Assets naar Brand Portal worden gepubliceerd, wordt alle content van de map behalve contentfragmenten gerepliceerd naar de Brand Portal-interface.
 
-### Publish-verzamelingen {#publish-collections}
+### Verzamelingen publiceren {#publish-collections}
 
 Hier volgen de stappen voor het publiceren van verzamelingen van AEM Assets naar Brand Portal:
 
@@ -294,4 +328,4 @@ Raadpleeg de [Brand Portal-documentatie](https://experienceleague.adobe.com/docs
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

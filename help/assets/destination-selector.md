@@ -1,21 +1,55 @@
 ---
 title: Doelkiezer voor AEM as a Cloud Service
-description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
+description: Met de AEM-doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
 
 # Micro-front-bestemmingskiezer {#Overview}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Micro-Frontend de Selector van de Bestemming verstrekt een gebruikersinterface binnen uw toepassing die gemakkelijk met de [!DNL Experience Manager Assets as a Cloud Service] bewaarplaats integreert. U kunt zoeken naar of bladeren naar de juiste map in de [!DNL Experience Manager Assets as a Cloud Service] -opslagplaats en elementen van uw toepassing uploaden.
 
@@ -25,7 +59,7 @@ De gebruikersinterface Micro-Frontend wordt beschikbaar gesteld in uw toepassing
 
 De Selector van de bestemming verstrekt vele voordelen, zoals:
 
-* Eenvoudige integratie met alle Adobe- of niet-Adobe toepassingen die gebruikmaken van de Vanilla JavaScript-bibliotheek.
+* Eenvoudige integratie met alle Adobe- of niet-Adobe-toepassingen met Vanilla JavaScript-bibliotheek.
 * Eenvoudig te handhaven aangezien de updates aan het pakket van de Selecteur van de Bestemming automatisch worden opgesteld aan de Selecteur van de Bestemming beschikbaar voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
 * Gemak van aanpassing aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van de Bestemming binnen uw toepassing controleren.
 * In volledige tekst zoeken om snel naar mappen te navigeren om elementen vanuit uw toepassing te uploaden.
@@ -41,12 +75,12 @@ Voer de volgende taken uit om de doelkiezer te integreren en te gebruiken in uw 
 
 ## Doelkiezer integreren met Vanilla JS {#integration-with-vanilla-js}
 
-U kunt elke [!DNL Adobe] -toepassing of niet-Adobe-toepassing integreren met [!DNL Experience Manager Assets] als een [!DNL Cloud Service] -opslagplaats en elementen selecteren vanuit de toepassing.
+U kunt elke [!DNL Adobe] - of niet-Adobe-toepassing integreren met [!DNL Experience Manager Assets] als een [!DNL Cloud Service] -opslagplaats en elementen selecteren vanuit de toepassing.
 
-De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in te voeren en met de as a Cloud Service van Assets te verbinden gebruikend de bibliotheek van Vanilla JavaScript. U moet een `index.html` of een geschikt bestand in uw toepassing bewerken op -
+De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in te voeren en met Assets as a Cloud Service te verbinden gebruikend de bibliotheek van Vanilla JavaScript. U moet een `index.html` of een geschikt bestand in uw toepassing bewerken op -
 
 * De verificatiedetails definiëren
-* Toegang krijgen tot de Assets as a Cloud Service dataopslag
+* Toegang krijgen tot de Assets as a Cloud Service-opslagplaats
 * De weergave-eigenschappen voor de doelkiezer configureren
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
@@ -193,12 +227,12 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |---|---|---|---|---|
-| *imsOrg* | string | Ja | | Adobe Identity Management System (IMS) ID die tijdens de provisioning [!DNL Adobe Experience Manager] is toegewezen als een [!DNL Cloud Service] voor uw organisatie. De `imsOrg` -toets is vereist om te verifiëren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
+| *imsOrg* | string | Ja | | Adobe Identity Management System (IMS)-id die tijdens de provisioning [!DNL Adobe Experience Manager] is toegewezen als een [!DNL Cloud Service] voor uw organisatie. De `imsOrg` -toets is vereist om te verifiëren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
 | *imsToken* | string | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is niet vereist als u de SUSI-stroom gebruikt. Dit is echter vereist als u de niet-SUSI-flow gebruikt. |
-| *apiKey* | string | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is niet vereist als u de SUSI-stroom gebruikt. Dit is echter vereist in niet-SUSI-stromen. |
+| *apiKey* | string | Nee | | API-sleutel voor toegang tot de AEM Discovery-service. `apiKey` is niet vereist als u de SUSI-stroom gebruikt. Dit is echter vereist in niet-SUSI-stromen. |
 | *rootPath* | string | Nee | /content/dam/ | Het pad naar de map waarin de doelkiezer uw elementen weergeeft. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Op basis van het volgende pad, `/content/dam/marketing/subfolder/` , kunt u met Doelselectie bijvoorbeeld niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen. |
 | *hasMore* | boolean | Nee | | Wanneer de toepassing meer inhoud heeft om weer te geven, kunt u deze eigenschap gebruiken om een lader toe te voegen die de inhoud laadt om deze zichtbaar te maken in de toepassing. Het is een indicator die aangeeft dat inhoud wordt geladen. |
-| *orgName* | boolean | Nee | | Het is de naam van org (waarschijnlijk orgID) verbonden aan AEM |
+| *orgName* | boolean | Nee | | Het is de naam van org (waarschijnlijk orgID) geassocieerd met AEM |
 | *initRepoID* | string | Nee | | Het is het pad van de gegevensopslagruimte die u wilt gebruiken in een standaardbeginweergave |
 | *onCreateFolder* | string | Nee | | Met de eigenschap `onCreateFolder` kunt u een pictogram toevoegen waarmee een nieuwe map in de toepassing wordt toegevoegd. |
 | *onConfirm* | string | Nee | | Dit is een callback wanneer u op de knop Bevestigen klikt. |
@@ -257,7 +291,7 @@ U kunt elementen in de doelkiezer sorteren op naam, dimensie of grootte van een 
 
 ### Assets-opslagplaats {#assets-repo}
 
-Met de doelkiezer kunt u ook gegevens bekijken in de opslagruimte die u in de AEM-toepassing hebt gekozen. Met de eigenschap `repositoryID` kunt u het pad van de doelmap initialiseren dat u in de eerste instantie van de doelkiezer wilt weergeven.
+Met de optie Doelselectie kunt u ook naar keuze in de AEM-toepassing beschikbare gegevens in de opslagplaats bekijken. Met de eigenschap `repositoryID` kunt u het pad van de doelmap initialiseren dat u in de eerste instantie van de doelkiezer wilt weergeven.
 
 ### Achtervoegsel of voorvoegsel toevoegen {#add-suffix-or-prefix}
 

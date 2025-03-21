@@ -2,14 +2,51 @@
 title: Bulkmetagegevens bewerken in Assets View
 description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere elementen die tegelijkertijd beschikbaar zijn in de Assets View.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
 # Bulkmetagegevens bewerken in Assets View{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 De **Bulk Meta-gegevens geeft** eigenschap binnen de Mening van Assets uit staat gebruikers toe om een vooraf bepaalde reeks standaardmeta-gegevensgebieden voor veelvoudige activa gelijktijdig uit te geven dossiers. Selecteer meerdere elementen en bulksgewijs werk de vooraf gedefinieerde set standaardmetagegevens tegelijk bij in plaats van deze standaardmetagegevens voor elk element afzonderlijk bij te werken. Deze functie verbetert de efficiëntie, consistentie en nauwkeurigheid van standaardeigenschappen voor metagegevens in een grote set elementen, waardoor de zoekbaarheid en organisatie van middelen wordt verbeterd.
 

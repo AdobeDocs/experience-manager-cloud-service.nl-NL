@@ -5,21 +5,55 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
 
 # Elementen downloaden van [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit [!DNL Adobe Experience Manager Assets] verzenden. Gedownloade elementen worden opgenomen in een ZIP-bestand. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -32,18 +66,18 @@ U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt 
 
 De volgende elementtypen kunnen niet worden gedownload: Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets.
 
-U kunt elementen van Experience Manager downloaden met de volgende methoden:
+U kunt elementen op de volgende manieren downloaden van Experience Manager:
 
 <!-- * [Link Share](#link-share-download) -->
 
-* [Gebruikersinterface Experience Manager](#download-assets)
+* [Experience Manager-gebruikersinterface](#download-assets)
 * [ Commons van het Aandeel van Activa ](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [ Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Elementen downloaden via de interface [!DNL Experience Manager] {#download-assets}
 
-Experience Manager optimaliseert de downloadervaring op basis van de hoeveelheid en de grootte van het element. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] downloadt direct enkele elementaanvragen voor het oorspronkelijke bestand in plaats van afzonderlijke elementen in een ZIP-archief te omsluiten, zodat sneller kan worden gedownload. Experience Manager ondersteunt grote downloads met asynchrone verzoeken. Downloadaanvragen die groter zijn dan 100 GB worden gesplitst in meerdere ZIP-archieven met een maximale grootte van 100 MB elk.
+Experience Manager optimaliseert de downloadervaring op basis van het aantal en de grootte van de middelen. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] downloadt direct enkele elementaanvragen voor het oorspronkelijke bestand in plaats van afzonderlijke elementen in een ZIP-archief te omsluiten, zodat sneller kan worden gedownload. Experience Manager ondersteunt grote downloads met asynchrone verzoeken. Downloadaanvragen die groter zijn dan 100 GB worden gesplitst in meerdere ZIP-archieven met een maximale grootte van 100 MB elk.
 
 Door gebrek, [!DNL Experience Manager] brengt een bericht in [[!DNL Experience Manager]  in werking Inbox ](/help/sites-cloud/authoring/inbox.md) op generatie van een downloadarchief.
 
@@ -58,9 +92,9 @@ Asynchrone downloads worden in een van de volgende gevallen geactiveerd:
 * Als de downloadgrootte groter is dan 100 MB
 * Als het downloaden meer dan 30 seconden duurt om voor te bereiden
 
-Terwijl de asynchrone download achteraan loopt, kan de gebruiker blijven onderzoeken en verder in Experience Manager werken. Naast de meldingen in het Postvak IN van de Experience Manager kan Experience Manager e-mails verzenden om de gebruiker op de hoogte te stellen wanneer het downloadproces is voltooid. Om deze eigenschap toe te laten, kunnen de beheerders e-maildienst vormen door [ een SMTP serververbinding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) te vormen.
+Terwijl de asynchrone download achteraan loopt, kan de gebruiker verder onderzoeken en verder werken in Experience Manager. Naast de inbox-berichten van Experience Manager, kan Experience Manager e-mails verzenden om de gebruiker op de hoogte te stellen wanneer het downloadproces is voltooid. Om deze eigenschap toe te laten, kunnen de beheerders e-maildienst vormen door [ een SMTP serververbinding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) te vormen.
 
-Nadat de e-mailservice is geconfigureerd, kunnen beheerders en gebruikers e-mailmeldingen inschakelen via de interface Experience Manager.
+Als de e-mailservice eenmaal is geconfigureerd, kunnen beheerders en gebruikers e-mailmeldingen inschakelen via de Experience Manager-interface.
 
 E-mailmeldingen inschakelen:
 
@@ -113,7 +147,7 @@ In [!UICONTROL Download Inbox] wordt de verwerkingsstatus van elk archief weerge
 
 Met de standaardservlet in [!DNL Experience Manager] kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven om ZIP-bestanden met elementen te maken. De downloadvoorbereiding kan prestatiesimplicaties hebben of kan zelfs de server en het netwerk overbelasten. Om dergelijke potentiële DoS-achtige risico&#39;s te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` de component OSGi is gehandicapt voor publicatie instanties. Schakel het servlet-bestand bij de auteur uit als u de downloadfunctie niet nodig hebt voor instanties van de auteur.
 
-Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de dagelijkse downloadvereisten. Een hoge waarde kan de prestaties beïnvloeden.
+Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de vereisten voor het dagelijks downloaden. Een hoge waarde kan de prestaties beïnvloeden.
 
 1. Maak een map met een naamgevingsconventie die zich richt op de publicatieroutmodus, namelijk `config.publish` :
 
@@ -161,10 +195,10 @@ Voor meer details bij het toevoegen van een lege configuratie OSGi, zie deze [ g
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [ Download DRM beschermde activa ](drm.md)
->* [ de activa van de Download gebruikend Desktop app van de Experience Manager op de Desktop van Win of van Mac ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [ de activa van de Download gebruikend de Verbinding van Assets van de Adobe van binnen gesteunde Adobe Creative Cloud apps ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [ de activa van de Download gebruikend Desktop app van Experience Manager op de Desktop van Win of van Mac ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [ de activa van de Download gebruikend de Verbinding van Adobe Assets van binnen gesteunde apps van Adobe Creative Cloud ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)

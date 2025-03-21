@@ -4,23 +4,57 @@ description: Voeg uw digitale activa aan  [!DNL Adobe Experience Manager]  als a
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3089'
+source-wordcount: '3117'
 ht-degree: 0%
 
 ---
 
 # Digitale elementen toevoegen aan [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] accepteert veel typen digitale elementen van vele bronnen. Het slaat de binaire getallen en gemaakte uitvoeringen op, kan de verwerking van elementen uitvoeren met behulp van verschillende werkstromen en [!DNL Adobe Sensei] -services, waardoor distributie via vele kanalen over vele oppervlakken mogelijk is.
 
 [!DNL Adobe Experience Manager] verrijkt de binaire inhoud van de geüploade digitale bestanden met rijke metagegevens, slimme tags, uitvoeringen en andere DAM-services (Digital Asset Management). U kunt verschillende bestandstypen uploaden van uw lokale map of een netwerkstation naar [!DNL Experience Manager Assets], zoals afbeeldingen, documenten en Raw-afbeeldingsbestanden.
 
-Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om elementen aan de [!DNL Experience Manager] -opslagplaats toe te voegen. Tot deze andere methoden behoren bureaubladclients, zoals Adobe Asset Link of de [!DNL Experience Manager] desktop-app, het uploaden en opnemen van scripts die klanten zouden maken, en geautomatiseerde integratie van indelingen die als [!DNL Experience Manager] -extensies worden toegevoegd.
+Naast het meest gebruikte uploaden naar de browser bestaan er andere methoden om elementen aan de [!DNL Experience Manager] -opslagplaats toe te voegen. Tot deze andere methoden behoren desktopclients, zoals Adobe Asset Link of de [!DNL Experience Manager] desktop-app, het uploaden en insluiten van scripts die klanten zouden maken, en geautomatiseerde innamesintegraties die als [!DNL Experience Manager] -extensies worden toegevoegd.
 
 Hoewel u elk binair bestand in [!DNL Experience Manager] kunt uploaden en beheren, bieden de meest gebruikte bestandsindelingen ondersteuning voor aanvullende services, zoals het ophalen van metagegevens of het genereren van voorvertoningen. Zie [ gesteunde dossierformaten ](file-format-support.md) voor details.
 
@@ -33,7 +67,7 @@ Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade 
 | [ de gebruikersinterface van de Console van Assets ](#upload-assets) | Soms uploaden, indrukken en slepen, zoeken naar uploaden. Gebruik deze optie niet om veel elementen te uploaden. | Alle gebruikers |
 | [ uploadt API ](#upload-using-apis) | Voor dynamische beslissingen tijdens het uploaden. | Developer |
 | [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Lage hoeveelheden asset opnemen, maar niet voor migratie. | Beheerder, Marketer |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Dit is handig wanneer creatieve en marketingmedewerkers hun middelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud] -bureaubladapps. | Creatief, Marketer |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Dit is handig wanneer creatieve en marketingmedewerkers hun middelen gebruiken vanuit de ondersteunde [!DNL Creative Cloud] -bureaubladapps. | Creative, Marketer |
 | [ bulkingestor van Activa ](#asset-bulk-ingestor) | Aanbevolen voor grootschalige migraties en incidentele bulkopname. Alleen voor ondersteunde datastores. | Beheerder, ontwikkelaar |
 
 ## Elementen uploaden {#upload-assets}
@@ -65,9 +99,9 @@ Als u een bestand (of meerdere bestanden) wilt uploaden, kunt u de bestanden op 
 
 >[!IMPORTANT]
 >
->Assets dat u uploadt naar Experience Manager met een bestandsnaam die groter is dan 100 tekens, heeft een verkorte naam wanneer deze worden gebruikt in Dynamic Media.
+>Assets dat u uploadt naar Experience Manager en een bestandsnaam van meer dan 100 tekens heeft een verkorte naam wanneer deze worden gebruikt in Dynamic Media.
 >
->De eerste 100 tekens in de bestandsnaam worden als volgt gebruikt. De resterende tekens worden vervangen door een alfanumerieke tekenreeks. Deze methode voor het wijzigen van de naam garandeert een unieke naam wanneer het element in Dynamic Media wordt gebruikt. Het is ook bedoeld om rekening te houden met de maximale lengte voor elementbestanden die in Dynamic Media is toegestaan.
+>De eerste 100 tekens in de bestandsnaam worden als volgt gebruikt. De resterende tekens worden vervangen door een alfanumerieke tekenreeks. Deze methode voor het wijzigen van de naam zorgt voor een unieke naam wanneer het element wordt gebruikt in Dynamic Media. Het is ook bedoeld om de maximale lengte van elementbestanden die is toegestaan in Dynamic Media, te gebruiken.
 
 
 1. Navigeer in de gebruikersinterface van [!DNL Assets] naar de locatie waar u digitale elementen wilt toevoegen.
@@ -153,7 +187,7 @@ Het hulpmiddel wordt verstrekt slechts aan de groep van beheerders voor grootsch
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-De volgende afbeelding illustreert de verschillende fasen wanneer u elementen vanuit een gegevensopslagruimte in een Experience Manager invoert:
+De volgende afbeelding illustreert de verschillende fasen wanneer u elementen vanuit een gegevensopslagruimte in Experience Manager invoert:
 
 ![ Bulk het Hulpmiddel van de Opname ](assets/bulk-ingestion.png)
 
@@ -206,7 +240,7 @@ Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
 
 ### De configuratie van het gereedschap Bulkimport beheren {#manage-bulk-import-configuration}
 
-Na het creëren van het Bulk het hulpmiddelconfiguratie van de Invoer, kunt u taken uitvoeren om de configuratie vóór bulk te evalueren het opnemen van activa aan uw instantie van de Experience Manager. Als u de beschikbare opties voor het beheer van de configuratie van het gereedschap Bulk importeren wilt weergeven, selecteert u de configuratie die beschikbaar is op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** .
+Nadat u de configuratie van het gereedschap Bulk importeren hebt gemaakt, kunt u taken uitvoeren om de configuratie te evalueren voordat elementen in bulk worden toegevoegd aan uw Experience Manager-instantie. Als u de beschikbare opties voor het beheer van de configuratie van het gereedschap Bulk importeren wilt weergeven, selecteert u de configuratie die beschikbaar is op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** .
 
 ### De configuratie bewerken {#edit-configuration}
 
@@ -218,7 +252,7 @@ Selecteer de configuratie en klik op **[!UICONTROL Delete]** om de configuratie 
 
 ### Verbinding met gegevensbron valideren {#validate-connection}
 
-Als u de verbinding met de gegevensbron wilt valideren, selecteert u de configuratie en klikt u op **[!UICONTROL check]** . Als de verbinding succesvol is, toont de Experience Manager het volgende bericht:
+Als u de verbinding met de gegevensbron wilt valideren, selecteert u de configuratie en klikt u op **[!UICONTROL check]** . Als de verbinding tot stand is gebracht, geeft Experience Manager het volgende bericht weer:
 
 ![ Bulk het bericht van het Succes van de Invoer ](assets/bulk-import-success-message.png)
 
@@ -335,7 +369,7 @@ Na [ het vormen van het Bulk hulpmiddel van de Invoer ](#configure-bulk-ingestor
 
 Om het Bulk proces van de Invoer te beginnen, navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**, selecteer de [ Bulk configuratie van de Invoer ](#configure-bulk-ingestor-tool), en klik dan **[!UICONTROL Run]**. Klik nogmaals op **[!UICONTROL Run]** om te bevestigen.
 
-De Experience Manager werkt het statuut van de baan aan **Verwerking** bij en aan **succesvol** op succesvolle voltooiing van de baan. Om de ingevoerde activa in Experience Manager te bekijken, klik **Mening Assets**.
+Experience Manager werkt het statuut van de baan aan **Verwerking** bij en aan **succesvol** op succesvolle voltooiing van de baan. Om de ingevoerde activa in Experience Manager te bekijken, klik **Mening Assets**.
 
 Wanneer de baan lopend is, kunt u de configuratie ook selecteren en **Einde** klikken om het bulksgewijs innameproces tegen te houden. Klik **Looppas** opnieuw om het proces te hervatten. U kunt **de Looppas van de Droog** ook klikken om de details van de activa te kennen die nog invoeren in afwachting zijn.
 
@@ -354,7 +388,7 @@ Experience Manager geeft de taakgeschiedenis weer. Op de Bulk de pagina van de d
 
 Naast de gebruikersinterface van de webbrowser ondersteunt [!DNL Experience Manager] ook andere clients op het bureaublad. Ze bieden ook uploadervaring zonder dat u naar de webbrowser hoeft te gaan.
 
-* [[!DNL Adobe Asset Link] ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface van Asset Link Adoben naar [!DNL Experience Manager] uploaden vanuit deze bureaubladtoepassingen.
+* [[!DNL Adobe Asset Link] ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) biedt toegang tot elementen van [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- en Adobe InDesign-bureaubladtoepassingen. U kunt het momenteel geopende document rechtstreeks vanuit de gebruikersinterface van Adobe Asset Link uploaden naar [!DNL Experience Manager] vanuit deze bureaubladtoepassingen.
 * [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereenvoudigt het werken met activa op Desktop, onafhankelijk op hun dossiertype of inheemse toepassing die hen behandelt. Het is handig om bestanden in geneste maphiërarchieën vanuit uw lokale bestandssysteem te uploaden, omdat het uploaden van de browser alleen het uploaden van platte bestandslijsten ondersteunt.
 
 ## Elementen verwerken bij het uploaden {#process-when-uploaded}
@@ -381,7 +415,7 @@ Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam w
 
 ## Elementen uploaden of toevoegen met API&#39;s {#upload-using-apis}
 
-De technische details van uploaden APIs en het protocol, en de verbindingen met open-bron SDK en steekproefcliënten worden verstrekt in [ activa uploadt ](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
+De technische details van uploaden APIs en het protocol, en de verbindingen met open-source SDK en steekproefcliënten worden verstrekt in [ activa uploadt ](developer-reference-material-apis.md#asset-upload) sectie van de ontwikkelaarsverwijzing.
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
@@ -415,7 +449,7 @@ De technische details van uploaden APIs en het protocol, en de verbindingen met 
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

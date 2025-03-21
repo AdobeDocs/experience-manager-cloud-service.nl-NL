@@ -1,27 +1,61 @@
 ---
-title: Hoe bevalt Assets in AEM voordeel?
-description: Meer weten over de belangrijkste voordelen van de Assets-weergave in AEM? Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring.
+title: Hoe profiteert Assets in AEM van jou?
+description: Meer weten over de belangrijkste voordelen van de Assets-weergave in AEM? Adobe maakt gebruik van zijn expertise op het gebied van het verbeteren van marketing en creatieve professionals en introduceert een game-veranderende nieuwe gebruikerservaring.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
 
 # De Assets-weergave introduceren {#assets-view}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-![ stel Assets Essentials ](assets/banner-image.jpg) op
+![ stelt de Hoofdzaak van Activa ](assets/banner-image.jpg) op
 
-In het snelle digitale-eerste landschap van vandaag, waar het creëren en leveren van inhoud in real time essentieel zijn, is een Ervaring van het Beheer van Digitale Middelen (DAM) die voor stroomafwaartse marketing snelheid wordt ontworpen van het grootste belang. Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring. Deze workfloweerste aanpak zorgt voor een revolutie in de manier waarop bedrijven omgaan met hun dynamische digitale middelen, waardoor marketers de mogelijkheid krijgen om efficiënter te zoeken, samen te werken, te personaliseren en middelen te leveren. Deze gestroomlijnde workflows versnellen de snelheid van de inhoud en brengen uw marketinginspanningen naar nieuwe hoogten.
+In het snelle digitale-eerste landschap van vandaag, waar het creëren en leveren van inhoud in real time essentieel zijn, is een Ervaring van het Beheer van Digitale Middelen (DAM) die voor stroomafwaartse marketing snelheid wordt ontworpen van het grootste belang. Adobe maakt gebruik van zijn expertise op het gebied van het verbeteren van marketing en creatieve professionals en introduceert een game-veranderende nieuwe gebruikerservaring. Deze workfloweerste aanpak zorgt voor een revolutie in de manier waarop bedrijven omgaan met hun dynamische digitale middelen, waardoor marketers de mogelijkheid krijgen om efficiënter te zoeken, samen te werken, te personaliseren en middelen te leveren. Deze gestroomlijnde workflows versnellen de snelheid van de inhoud en brengen uw marketinginspanningen naar nieuwe hoogten.
 
-Om meer over de beschikbare op persona-Gebaseerde ervaringen voor Assets as a Cloud Service te weten, zie [ Introducerend Assets as a Cloud Service ](/help/assets/overview.md#persona-based-experiences).
+Meer over de beschikbare op persona-Gebaseerde ervaringen voor Assets as a Cloud Service, zie [ Introducerend Assets as a Cloud Service ](/help/assets/overview.md#persona-based-experiences).
 
 ## Hoe kan ik Assets-weergave openen? {#access-assets-view}
 
@@ -88,7 +122,7 @@ Bekijk deze video om te zien hoe Assets de integratie van Adobe Photoshop Expres
 
 [![ zie de Gids ](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-De komende versies voor Assets as a Cloud Service zouden ook [ Adobe Firefly integratie via Adobe Express ](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!g!adobe%20firefly!19870733758!148140507838) omvatten.
+De aanstaande versies voor Assets as a Cloud Service zouden ook [ integratie van Adobe Firefly via Adobe Express ](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!g!adobe%20firefly!19870733758!148140507838) omvatten.
 
 ### De omslag uploadt aan opstelling hiërarchische structuur voor uw organisatie {#folder-uploads}
 

@@ -1,18 +1,55 @@
 ---
 title: Werken met kiezers
-description: In deze video ziet u methoden waarmee u elementen kunt selecteren voor interactieve afbeeldingen, interactieve video's en carrouselbanners in Dynamic Media.
+description: Leer meer over de methoden die u kunt gebruiken om elementen te selecteren voor interactieve afbeeldingen, interactieve video's en carrouselbanners in Dynamic Media.
 contentOwner: Rick Brough
 feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-# Werken met kiezers in Dynamic Media {#working-with-selectors}
+# Werken met kiezers in dynamische media {#working-with-selectors}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Wanneer u werkt met een interactieve afbeelding, interactieve video of carrouselbanner, selecteert u elementen en selecteert u sites en producten voor hotspots en afbeeldingen met hyperlinks waarnaar u wilt koppelen. Wanneer u werkt met Afbeeldingssets, Draaisets en Multimediasets, selecteert u ook elementen met de Asset Selector.
 
@@ -26,7 +63,7 @@ In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotsp
 
 Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De site-kiezer werkt alleen als u een [!DNL Adobe Experience Manager Sites] -klant bent. Voor de productkiezer is ook [!DNL Experience Manager Commerce] vereist.
 
-## Producten selecteren in Dynamic Media {#selecting-products}
+## Producten selecteren in dynamische media {#selecting-products}
 
 Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbeelding met hyperlinks wilt gebruiken om een snelle weergave van een specifiek product in uw productcatalogus te maken.
 
@@ -64,7 +101,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![ chlimage_1-528 ](assets/chlimage_1-528.png)
 
-## Sites selecteren in Dynamic Media {#selecting-sites}
+## Sites selecteren in dynamische media {#selecting-sites}
 
 Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen [!DNL Experience Manager] -sites.
 
@@ -84,7 +121,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
 1. Als u in de modus **[!UICONTROL Preview]** de hotspot of de afbeelding met hyperlinks selecteert, navigeert u naar de [!DNL Experience Manager] -sitepagina die u hebt opgegeven.
 
-## Elementen selecteren in Dynamic Media {#selecting-assets}
+## Elementen selecteren in dynamische media {#selecting-assets}
 
 Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** selecteert op het tabblad **[!UICONTROL Content]** . In Carousel-sets is de elementenkiezer beschikbaar wanneer u een dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Rotatie, is de activaselecteur beschikbaar wanneer u een Reeks van het Beeld, Gemengde Geplaatste Media, of Reeks van de Rotatie creeert.
 

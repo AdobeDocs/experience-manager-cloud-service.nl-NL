@@ -1,21 +1,55 @@
 ---
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
-description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
+description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
 
-# Integratie voor Dynamic Media met OpenAPI-mogelijkheden {#integrate-asset-selector-dynamic-media-open-apis}
+# Integratie voor dynamische media met OpenAPI-mogelijkheden {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-Met Asset Selector kunt u de verschillende toepassingen voor Adobe integreren, zodat deze naadloos kunnen samenwerken.
+Met de functie Asset Selector kunt u verschillende Adobe-toepassingen integreren, zodat deze naadloos kunnen samenwerken.
 
 
 ## Vereisten {#prereqs-polaris}
@@ -28,9 +62,9 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Medi
    * AEM Dynamic Media.
 * Slechts [ goedgekeurde activa ](/help/assets/approve-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
 
-## Integratie voor Dynamic Media met OpenAPI-mogelijkheden {#adobe-app-integration-polaris}
+## Integratie voor dynamische media met OpenAPI-mogelijkheden {#adobe-app-integration-polaris}
 
-De integratie van Asset Selector met het Dynamic Media OpenAPI-proces omvat verschillende stappen, zoals het maken van een aangepaste dynamische media-URL of het kiezen van de URL voor dynamische media, enz.
+De integratie van Asset Selector met Dynamic Media OpenAPI-proces omvat verschillende stappen, zoals het maken van een aangepaste dynamische media-URL of het kiezen van de URL voor dynamische media, enz.
 
 ### Asset Selector voor Dynamic Media integreren met OpenAPI-mogelijkheden {#integrate-dynamic-media}
 
@@ -108,7 +142,7 @@ Hieronder ziet u de twee manieren waarop u het JSON-object kunt doorlopen:
 ![ Dynamische levering url ](assets/dynamic-delivery-url.png)
 
 * **Duimnagel:** de duimnagels kunnen beelden zijn en de activa zijn PDF, video, beelden, etc. Hoewel u de hoogte- en breedtekenmerken van de miniatuur van een element kunt gebruiken als de dynamische uitvoering van het element.
-De volgende set uitvoeringen kan worden gebruikt voor de elementen van het type PDF:
+De volgende set uitvoeringen kan worden gebruikt voor de PDF-elementen:
 Als er eenmaal een PDF is geselecteerd in sidekick, wordt in de selectiecontext de onderstaande informatie weergegeven. Hieronder ziet u de manier waarop u het JSON-object kunt doorlopen:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -124,7 +158,7 @@ Als er eenmaal een PDF is geselecteerd in sidekick, wordt in de selectiecontext 
   } 
   ```
 
-In het bovenstaande scherm moet de bezorgings-URL van de oorspronkelijke uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijke PDF-uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **Video:** u videospeler URL voor de videotypeactiva kunt gebruiken die ingebedde iFrame gebruiken. U kunt de volgende arrayuitvoeringen gebruiken in de doelervaring:
   <!--![Video dynamic delivery url](image.png)-->
@@ -146,7 +180,7 @@ In het bovenstaande scherm moet de bezorgings-URL van de oorspronkelijke uitvoer
 
 ### Aangepaste filters configureren {#configure-custom-filters-dynamic-media-open-api}
 
-Met Asset Selector for Dynamic Media met OpenAPI-mogelijkheden kunt u aangepaste eigenschappen en de daarop gebaseerde filters configureren. De eigenschap `filterSchema` wordt gebruikt om dergelijke eigenschappen te configureren. De aanpassing kan worden weergegeven als `metadata.<metadata bucket>.<property name>.` waartegen de filters kunnen worden geconfigureerd, waarbij:
+Met Asset Selector for Dynamic Media met OpenAPI-mogelijkheden kunt u aangepaste eigenschappen en de filters configureren op basis van deze eigenschappen. De eigenschap `filterSchema` wordt gebruikt om dergelijke eigenschappen te configureren. De aanpassing kan worden weergegeven als `metadata.<metadata bucket>.<property name>.` waartegen de filters kunnen worden geconfigureerd, waarbij:
 
 * `metadata` is de informatie van een element
 * `embedded` de statische parameter is die voor configuratie wordt gebruikt, en
@@ -160,9 +194,9 @@ Voor het ophalen van de naam moet een eenmalige activiteit worden uitgevoerd. Ma
 
 ### Gebruikersinterface voor Asset Selector voor Dynamic Media met OpenAPI-mogelijkheden {#interface-dynamic-media-open-api}
 
-Na integratie met de Micro-Frontend Asset Selector van de Adobe, kunt u de activa slechts structuur van alle goedgekeurde activa zien beschikbaar in de opslagplaats van activa van de Experience Manager.
+Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur van alle goedgekeurde middelen alleen zien in de gegevensopslagruimte van Experience Manager.
 
-![ Dynamic Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
+![ Dynamische Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
 
 * **A**: [ verberg/toon paneel ](#hide-show-panel)
 * **B**: [ Assets ](#repository)

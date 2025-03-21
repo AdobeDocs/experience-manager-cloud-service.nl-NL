@@ -1,21 +1,55 @@
 ---
 title: Referenties voor ontwikkelaars voor  [!DNL Assets]
-description: "[!DNL Assets] APIs en de inhoud van de ontwikkelaarsverwijzing laat u activa, met inbegrip van binaire dossiers, meta-gegevens, vertoningen, commentaren, en  [!DNL Content Fragments] beheren."
+description: '[!DNL Assets] Met API''s en inhoud voor ontwikkelaarsverwijzing kunt u elementen beheren, zoals binaire bestanden, metagegevens, uitvoeringen, opmerkingen en  [!DNL Content Fragments] .'
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] Gebruiksscenario&#39;s voor ontwikkelaars, API&#39;s en referentiemateriaal {#assets-cloud-service-apis}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkelaars van [!DNL Assets] als [!DNL Cloud Service] . Het omvat nieuwe module voor het uploaden van middelen, API-referentie en informatie over de ondersteuning die wordt geboden in workflows na verwerking.
 
@@ -33,7 +67,7 @@ Het artikel bevat aanbevelingen, referentiematerialen en bronnen voor ontwikkela
 | × | Niet ondersteund. Niet gebruiken. |
 | - | Niet beschikbaar |
 
-| Hoofdletters gebruiken | [ aem-upload ](https://github.com/adobe/aem-upload) | [ Experience Manager/het Sling/JCR ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java APIs | [ de dienst van de Asset compute ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets]  HTTP API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Het zwerven [ GET ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [ POST ](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [ GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| Hoofdletters gebruiken | [ aem-upload ](https://github.com/adobe/aem-upload) | [ Experience Manager/Sling/JCR ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java APIs | [ Activa verwerken de dienst ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets]  HTTP API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Het verkopen [ GET ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [ POST ](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [ GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Origineel binair binair** |  |  |  |  |  |  |
 | Origineel maken | ✓ | × | - | × | × | - |
@@ -92,11 +126,11 @@ Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrij
 >
 >[!IMPORTANT]
 >
->In bepaalde omstandigheden kunnen wijzigingen zich niet volledig verspreiden tussen verzoeken om Experience Manager vanwege uiteindelijk consistente aard van de opslag in Cloud Service. Dit leidt tot 404 reacties om uploadvraag in werking te stellen of te voltooien toe te schrijven aan de vereiste omslagverwezenlijking die niet wordt verspreid. Clients moeten 404 reacties verwachten en deze afhandelen door een nieuwe strategie uit te voeren.
+>In bepaalde omstandigheden kunnen wijzigingen zich niet volledig verspreiden tussen verzoeken aan Experience Manager vanwege de uiteindelijke consistente aard van de opslag in Cloud Service. Dit leidt tot 404 reacties om uploadvraag in werking te stellen of te voltooien toe te schrijven aan de vereiste omslagverwezenlijking die niet wordt verspreid. Clients moeten 404 reacties verwachten en deze afhandelen door een nieuwe strategie uit te voeren.
 
 ### Uploaden starten {#initiate-upload}
 
-Verzend een HTTP-POST-aanvraag naar de gewenste map. Assets wordt gemaakt of bijgewerkt in deze map. Neem de kiezer `.initiateUpload.json` op om aan te geven dat de aanvraag het uploaden van een binair bestand moet starten. Het pad naar de map waar het element moet worden gemaakt, is bijvoorbeeld `/assets/folder` . De POST request is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json` .
+Verzend een HTTP POST-aanvraag naar de gewenste map. Assets wordt gemaakt of bijgewerkt in deze map. Neem de kiezer `.initiateUpload.json` op om aan te geven dat de aanvraag het uploaden van een binair bestand moet starten. Het pad naar de map waar het element moet worden gemaakt, is bijvoorbeeld `/assets/folder` . De POST-aanvraag is `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json` .
 
 Het inhoudstype van de aanvraaginstantie moet `application/x-www-form-urlencoded` formuliergegevens zijn, die de volgende velden bevatten:
 
@@ -136,7 +170,7 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 
 ### Binair bestand uploaden {#upload-binary}
 
-De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meerdere URI&#39;s zijn opgegeven, kan de client de binaire code splitsen in onderdelen en PUT-aanvragen van elk onderdeel naar de opgegeven URI&#39;s voor uploaden in volgorde indienen. Houd u aan de volgende richtlijnen wanneer u ervoor kiest om het binaire getal in delen te splitsen:
+De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meerdere URI&#39;s zijn opgegeven, kan de client de binaire code splitsen in onderdelen en PUT-aanvragen van elk onderdeel naar de opgegeven URI&#39;s voor uploaden indienen, op volgorde. Houd u aan de volgende richtlijnen wanneer u ervoor kiest om het binaire getal in delen te splitsen:
 
 * Elk onderdeel, met uitzondering van het laatste onderdeel, moet groter zijn dan of gelijk zijn aan `minPartSize` .
 * Elk onderdeel moet een grootte hebben die kleiner is dan of gelijk is aan `maxPartSize` .
@@ -166,7 +200,7 @@ Als het uploaden is voltooid, reageert de server op elke aanvraag met een `201` 
 
 ### Uploaden voltooien {#complete-upload}
 
-Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de POST van HTTP aan volledige URI voor die door de initiatiegegevens wordt verstrekt. Het inhoudstype van de aanvraaginstantie moet `application/x-www-form-urlencoded` formuliergegevens zijn, die de volgende velden bevatten.
+Nadat alle delen van een binair bestand zijn geüpload, verzendt u een HTTP POST-aanvraag naar de volledige URI die door de initiatiegegevens wordt verschaft. Het inhoudstype van de aanvraaginstantie moet `application/x-www-form-urlencoded` formuliergegevens zijn, die de volgende velden bevatten.
 
 | Velden | Type | Vereist of niet | Beschrijving |
 |---|---|---|---|
@@ -427,7 +461,7 @@ echo "File upload completed successfully."
 
 ### Uploadbibliotheek met open bron {#open-source-upload-library}
 
-Voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -gereedschappen te maken, biedt Adobe opensource-bibliotheken en -gereedschappen:
+Adobe biedt opensource-bibliotheken en -gereedschappen voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -gereedschappen te maken:
 
 * [ open-bron a-upload bibliotheek ](https://github.com/adobe/aem-upload).
 * [ open-bron bevel-lijn hulpmiddel ](https://github.com/adobe/aio-cli-plugin-aem).
@@ -551,7 +585,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

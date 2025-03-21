@@ -1,25 +1,59 @@
 ---
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
-description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
+description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
-# Integratie met een toepassing zonder Adobe {#integrate-asset-selector-non-adobe-app}
+# Integratie met een niet-Adobe-toepassing {#integrate-asset-selector-non-adobe-app}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-Met Asset Selector kunt u toepassingen van andere leveranciers of leveranciers integreren, zodat deze naadloos kunnen samenwerken.
+Met Asset Selector kunt u toepassingen van andere leveranciers dan Adobe of derden integreren, zodat deze naadloos kunnen samenwerken.
 
 ## Vereisten {#prereqs-non-adobe-app}
 
-Gebruik de volgende voorwaarden als u Asset Selector integreert met een toepassing zonder Adobe:
+Gebruik de volgende voorwaarden als u Asset Selector integreert met een niet-Adobe-toepassing:
 
 * [Communicatiemethoden](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
@@ -28,15 +62,15 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met een toepassi
 * imsOrg
 * apikey
 
-Asset Selector ondersteunt verificatie naar de [!DNL Experience Manager Assets] repository met behulp van Identity Management System (IMS)-eigenschappen zoals `imsScope` of `imsClientID` wanneer u deze integreert met een niet-Adobe toepassing.
+Asset Selector ondersteunt verificatie naar de [!DNL Experience Manager Assets] repository met behulp van Identity Management System (IMS)-eigenschappen zoals `imsScope` of `imsClientID` wanneer u deze integreert met een niet-Adobe-toepassing.
 
-## Asset Selector configureren voor een toepassing zonder Adobe {#configure-non-adobe-app}
+## Asset Selector configureren voor een niet-Adobe-toepassing {#configure-non-adobe-app}
 
-Om de Selecteur van Activa voor een niet-Adobe toepassing te vormen, moet u eerst een steunkaartje voor levering registreren die door de integratiestappen wordt gevolgd.
+Als u Asset Selector wilt configureren voor een niet-Adobe-toepassing, moet u eerst een ondersteuningsticket voor provisioning registreren, gevolgd door de integratiestappen.
 
 ### Een ondersteuningsticket registreren {#log-a-support-ticket}
 
-Stappen om een steunkaartje via de Admin Console te registreren:
+Stappen om een steunkaartje via Admin Console te registreren:
 
 1. Voeg **de Selecteur van Activa met AEM Assets** in de titel van het kaartje toe.
 
@@ -47,7 +81,7 @@ Stappen om een steunkaartje via de Admin Console te registreren:
 
 ## Integratiestappen {#non-adobe-app-integration-steps}
 
-Gebruik dit voorbeeldbestand `index.html` voor verificatie terwijl Asset Selector wordt geïntegreerd met een toepassing zonder Adobe.
+Gebruik dit voorbeeldbestand `index.html` voor verificatie terwijl Asset Selector wordt geïntegreerd met een niet-Adobe-toepassing.
 
 Heb toegang tot het pakket van de Selecteur van Activa gebruikend de `Script` Markering, zoals aangetoond in *lijn 9* aan *lijn 11* van het voorbeeld `index.html` dossier.
 
@@ -55,7 +89,7 @@ Heb toegang tot het pakket van de Selecteur van Activa gebruikend de `Script` Ma
 
 Aangezien u geen `imsToken` hebt geproduceerd, gebruik de `registerAssetsSelectorsAuthService` en `renderAssetSelectorWithAuthFlow` functies, zoals aangetoond in lijn 40 tot lijn 50 van het voorbeeld `index.html` dossier. Gebruik de functie `registerAssetsSelectorsAuthService` voor `renderAssetSelectorWithAuthFlow` om de `imsToken` bij de functie Asset Selector te registreren. [!DNL Adobe] raadt aan `registerAssetsSelectorsAuthService` aan te roepen wanneer u de component instantieert.
 
-Bepaal de authentificatie en andere as a Cloud Service toegang-verwante eigenschappen van Assets in de `const props` sectie, zoals aangetoond in *lijn 54* aan *lijn 60* van het voorbeeld `index.html` dossier.
+Bepaal de authentificatie en andere Assets as a Cloud Service op toegang betrekking hebbende eigenschappen in de `const props` sectie, zoals aangetoond in *lijn 54* aan *lijn 60* van het voorbeeld `index.html` dossier.
 
 De `PureJSSelectors` globale variabele, die in *wordt vermeld lijn 65*, wordt gebruikt om de Selecteur van Activa in Webbrowser terug te geven.
 
@@ -148,5 +182,5 @@ De Selecteur van activa wordt teruggegeven op het `<div>` containerelement, zoal
 >
 >* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
 >* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ integreer de Selector van Activa met Dynamic Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)

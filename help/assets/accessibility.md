@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,42 @@ Possible topics to cover in this article are below.
 
 # Toegankelijkheidsfuncties in [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Met [!DNL Adobe Experience Manager] kunnen makers van inhoud en uitgevers op internet geweldige ervaringen bieden. Adobe streeft ernaar de makers met een handicap op te nemen door de toegankelijkheid van [!DNL Experience Manager] te verbeteren. De software wordt voortdurend uitgebreid om te voldoen aan de behoeften van alle soorten gebruikers en voldoet aan de wereldwijde standaarden, waaronder personen met een visuele, auditieve, mobiliteitsfunctie of andere handicap.
 
@@ -44,7 +78,7 @@ Met [!DNL Adobe Experience Manager] kunnen makers van inhoud en uitgevers op int
 * [ Initiatief van de Toegankelijkheid - Toegankelijke Rijke Toepassingen van Internet (WAI-ARIA) door W3C ](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [ EN 301 549 ](https://en.wikipedia.org/wiki/EN_301_549).
 
-Om een rapport met details van het niveau van naleving te lezen, zie [ het rapport van de conformiteit van de Toegankelijkheid ](https://www.adobe.com/accessibility/compliance.html) (ACR) pagina.
+Om een rapport met details van het niveau van naleving te lezen, zie [ het rapport van de Overeenstemming van de Toegankelijkheid ](https://www.adobe.com/accessibility/compliance.html) (ACR) pagina.
 
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
@@ -213,7 +247,7 @@ Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
 
 ## Toegankelijke documentatie {#accessible-docs}
 
-[!DNL Experience Manager] biedt toegankelijke documentatie voor gebruik door mensen met een handicap. Met de volgende opties kunt u de inhoud die nu wordt aangeboden toegankelijk maken, terwijl de Adobe de sjabloon en de inhoud blijft verbeteren:
+[!DNL Experience Manager] biedt toegankelijke documentatie voor gebruik door mensen met een handicap. Met de volgende instructies kunt u de inhoud die nu wordt aangeboden, toegankelijk maken, terwijl Adobe de sjabloon en de inhoud blijft verbeteren:
 
 * Schermlezers kunnen de tekst lezen.
 * Afbeeldingen en illustraties hebben alternatieve tekst.
@@ -234,7 +268,7 @@ Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 ## Feedback geven {#a11y-feedback}
 
@@ -247,4 +281,4 @@ Gebruik de volgende methoden om feedback te geven, vragen te stellen en productv
 >
 >* [ nota&#39;s van de Versie van verhogingen die in elke versie ](/help/release-notes/release-notes-cloud/release-notes-current.md) worden gedaan.
 >* [[!DNL Adobe Experience Manager]  toegankelijkheidsbegeleiding ](/help/compliance/accessibility/web-accessibility.md).
->* [ de rapporten van de Overeenstemming (ACR) en VPAT lijst voor de oplossingen van de Adobe ](https://www.adobe.com/accessibility/compliance.html).
+>* [ de rapporten van de Overeenstemming (ACR) en VPAT lijst voor de oplossingen van Adobe ](https://www.adobe.com/accessibility/compliance.html).

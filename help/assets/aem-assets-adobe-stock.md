@@ -5,21 +5,55 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2351'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Stock] -elementen gebruiken in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
@@ -38,7 +72,7 @@ De integratie vereist:
 
 * Een [!DNL Experience Manager Assets] up and running als een [!DNL Cloud Service] -instantie
 * Een [ ondernemings  [!DNL Adobe Stock]  plan ](https://stockenterprise.adobe.com/)
-* Een gebruiker met machtigingen in Admin Console naar het standaardprofiel voor het product Stock
+* Een gebruiker met Admin Console-machtigingen voor het standaardprofiel voor het voorraadproduct
 * Een gebruiker met machtigingen voor het Developer Access-profiel voor het maken van integratie in Adobe Developer Console
 
 An enterprise [!DNL Adobe Stock] plan,
@@ -280,7 +314,7 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 
 **om toegang tot een gebruiker van [!DNL User Admin Console] te verlenen:**
 
-1. Open de Admin Console Gebruiker van [!DNL Experience Manager] . De standaard-URL is `http://localhost:4502/userdamin` .
+1. Open de [!DNL Experience Manager] User Admin Console. De standaard-URL is `http://localhost:4502/userdamin` .
 
 1. Zoek in het linkerdeelvenster naar de gebruiker door de waarde `user_id` of `name` in te voeren. Dubbelklik om de gebruikerseigenschappen te openen.
 
@@ -384,7 +418,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 * **niet-admin gebruikers moeten manueel de [!DNL Adobe Stock] wolkenconfiguratie** activeren: in het **[!UICONTROL User Preferences]** venster, toont **[!UICONTROL Stock Configuration]** de [!DNL Adobe Stock] wolkenconfiguratie zoals toegelaten maar het werkt niet voor een niet-admin gebruiker. De gebruiker moet op de knop **[!UICONTROL Accept]** klikken om de voorraadconfiguratie te activeren. Als deze stap ontbreekt, geeft het systeem een foutbericht weer over de toegang tot **[!UICONTROL Assets]** .
 
-* **de redactionele beeldwaarschuwing wordt niet getoond**: Wanneer het verlenen van een vergunning van een beeld, kunnen de gebruikers niet controleren of een beeld Uitgeeflente slechts van het Gebruik is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitzetten.
+* **de redactionele beeldwaarschuwing wordt niet getoond**: Wanneer het verlenen van een vergunning van een beeld, kunnen de gebruikers niet controleren of een beeld Uitgeeflente slechts van het Gebruik is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele middelen van de Admin Console uitschakelen.
 
 * **Verkeerd licentietype wordt getoond**: Het is mogelijk dat een onjuist licentietype in [!DNL Experience Manager] voor een element wordt getoond. Gebruikers kunnen zich aanmelden bij de [!DNL Adobe Stock] -website om het type licentie te zien.
 
@@ -474,7 +508,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -1,20 +1,57 @@
 ---
-title: Werken met Dynamic Media
-description: Meer informatie over wat Dynamic Media is en Dynamic Media kunt u gebruiken om middelen te leveren die u kunt gebruiken op internet, mobiele apparaten en sociale sites.
+title: Werken met dynamische media
+description: Leer wat Dynamic Media is en u kunt Dynamic Media gebruiken om middelen te leveren die u kunt gebruiken op internet, mobiele en sociale sites.
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
 
-# Werken met Dynamic Media {#working-with-dynamic-media}
+# Werken met dynamische media {#working-with-dynamic-media}
 
-[ Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
+[ de Dynamische hulp van Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360° draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
@@ -24,17 +61,17 @@ Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360° draaien en 
 
 ## Wat is Dynamic Media?
 
-Dynamic Media in Adobe Experience Manager (AEM) as a Cloud Service is een krachtige oplossing die u helpt bij het beheren, leveren en optimaliseren van veelzijdige media-elementen, zoals afbeeldingen en video&#39;s op verschillende digitale platforms. Het transformeert statische media in dynamische, boeiende ervaringen door aanpassingen in real time toe te staan, zoals het resizing, het bebouwen, en het aanpassen van kwaliteit gebaseerd op het apparaat of het schermgrootte van de gebruiker. Met Dynamic Media worden uw middelen automatisch aangepast voor de beste visuele ervaring, of gebruikers nu op een desktop, mobiel of tablet staan.
+Dynamic Media in Adobe Experience Manager (AEM) as a Cloud Service is een krachtige oplossing die u helpt bij het beheren, leveren en optimaliseren van veelzijdige media-elementen, zoals afbeeldingen en video&#39;s op verschillende digitale platforms. Het transformeert statische media in dynamische, boeiende ervaringen door aanpassingen in real time toe te staan, zoals het resizing, het bebouwen, en het aanpassen van kwaliteit gebaseerd op het apparaat of het schermgrootte van de gebruiker. Met Dynamische media worden uw middelen automatisch aangepast voor de beste visuele ervaring, of gebruikers zich op een desktop, mobiel of tablet bevinden.
 
-Een groot voordeel van Dynamic Media is het stroomlijnen van het mediabeheer. U hoeft niet meerdere versies van afbeeldingen of video&#39;s te maken. Dynamic Media verwerkt dit alles door de meest geschikte indeling voor elke situatie te bieden. E-commercebedrijven kunnen bijvoorbeeld profiteren van productweergaven van 360 graden of zoombare afbeeldingen om interactieve ervaringen te creëren, terwijl websites met veel inhoud snelle videostreaming van hoge kwaliteit kunnen garanderen. Dit resulteert in snellere ladingstijden en boeiende gebruikerservaring, die uiteindelijk tot hogere klantentevredenheid en betere omzettingspercentages leidt.
+Een groot voordeel van Dynamic Media is de mogelijkheid om mediabeheer te stroomlijnen. U te hoeven om veelvoudige versies van beelden of video-Dynamische Media niet te creëren behandelt het allen door het meest aangewezen formaat voor elke situatie te leveren. E-commercebedrijven kunnen bijvoorbeeld profiteren van productweergaven van 360 graden of zoombare afbeeldingen om interactieve ervaringen te creëren, terwijl websites met veel inhoud snelle videostreaming van hoge kwaliteit kunnen garanderen. Dit resulteert in snellere ladingstijden en boeiende gebruikerservaring, die uiteindelijk tot hogere klantentevredenheid en betere omzettingspercentages leidt.
 
-Dynamic Media kan naadloos worden geïntegreerd met uw DAM-systeem (Digital Asset Management) in AEM, zodat u één platform hebt voor het opslaan, organiseren en implementeren van uw media. Deze gecentraliseerde aanpak vereenvoudigt samenwerking tussen verschillende teams en biedt realtime inzicht in de prestaties van bedrijfsmiddelen. Of u nu uw aandacht richt op het aanbieden van fascinerende beelden of het verbeteren van media-gedreven gebruikersinteractie, helpt Dynamic Media uw inhoud voor om het even welk kanaal te optimaliseren, die het een essentieel hulpmiddel voor ondernemingen maken die hun digitale aanwezigheid willen verhogen.
+Dynamic Media integreert naadloos met uw DAM-systeem (Digital Asset Management) in AEM, zodat u één platform hebt voor het opslaan, organiseren en implementeren van uw media. Deze gecentraliseerde aanpak vereenvoudigt samenwerking tussen verschillende teams en biedt realtime inzicht in de prestaties van bedrijfsmiddelen. Of u nu uw aandacht richt op het aanbieden van fascinerende beelden of het verbeteren van media-gedreven gebruikersinteractie, de hulp van de Media helpt uw inhoud voor om het even welk kanaal optimaliseren, die het een essentieel hulpmiddel voor ondernemingen maken die hun digitale aanwezigheid willen verhogen.
 
-## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
+## Wat u met Dynamische Media kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [ Werkend met Digitale Assets ](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
+Met Dynamische media kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [ Werkend met Digitale Assets ](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
 
-Alleen Dynamic Media biedt de volgende functies:
+De dynamische Media-enige eigenschappen omvatten het volgende:
 
 * [Carousel Banners](carousel-banners.md)
 * [Afbeeldingssets](image-sets.md)
@@ -44,11 +81,11 @@ Alleen Dynamic Media biedt de volgende functies:
 * [Panoramische afbeeldingen](panoramic-images.md)
 * [Sets draaien](spin-sets.md)
 * [Video](video.md)
-* [Dynamic Media Assets leveren](delivering-dynamic-media-assets.md)
+* [Dynamische media Assets leveren](delivering-dynamic-media-assets.md)
 * [Assets beheren](managing-assets.md)
 * [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](custom-pop-ups.md)
 
-Zie ook [ Opstelling Dynamic Media ](administering-dynamic-media.md).
+Zie ook [ Opstelling Dynamische Media ](administering-dynamic-media.md).
 
 <!-- 
 
@@ -59,40 +96,40 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Dynamic Media ingeschakeld en Dynamic Media uitgeschakeld {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamische media ingeschakeld en Dynamische media uitgeschakeld {#dynamic-media-on-versus-dynamic-media-off}
 
-U kunt zien of Dynamic Media is ingeschakeld (ingeschakeld) door de volgende kenmerken:
+U kunt zien of Dynamische media is ingeschakeld (ingeschakeld) door de volgende kenmerken:
 
 * Dynamische uitvoeringen zijn beschikbaar wanneer u elementen downloadt of een voorvertoning weergeeft.
 * Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar.
 * PTIFF-uitvoeringen worden gemaakt.
 
-Wanneer u op een afbeeldingselement klikt, is de weergave van het element anders en is Dynamic Media ingeschakeld. Dynamic Media gebruikt de HTML5-viewers op aanvraag.
+Wanneer u op een afbeeldingselement klikt, is de weergave van het element anders en Dynamische media ingeschakeld. Dynamic Media gebruikt de HTML5-viewers op aanvraag.
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 
-Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]** ) zijn beschikbaar wanneer Dynamic Media is ingeschakeld.
+Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]** ) zijn beschikbaar wanneer Dynamische media is ingeschakeld.
 
 ![ chlimage_1-358 ](assets/chlimage_1-358.png)
 
-### Dynamic Media-afbeeldingensets, spins-sets, gemengde mediasets {#image-sets-spins-sets-mixed-media-sets}
+### Dynamische mediafobeeldingssets, spelersets, gemengde mediasets {#image-sets-spins-sets-mixed-media-sets}
 
-Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamic Media is ingeschakeld.
+Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamische media is ingeschakeld.
 
 ![ chlimage_1-359 ](assets/chlimage_1-359.png)
 
-### PTIFF-uitvoeringen voor Dynamic Media {#ptiff-renditions}
+### Dynamische PTIFF-uitvoeringen waarvoor media is ingeschakeld {#ptiff-renditions}
 
-Tot de elementen die geschikt zijn voor Dynamic Media behoren `pyramid.tiffs` .
+Dynamische media-ingeschakelde elementen omvatten `pyramid.tiffs`.
 
 ![ chlimage_1-360 ](assets/chlimage_1-360.png)
 
-### Weergave van Dynamic Media-elementen wijzigen {#asset-views-change}
+### Weergave van dynamische media-elementen wijzigen {#asset-views-change}
 
-Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook selecteren om in bepaalde gebieden in te zoomen. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
+Als Dynamische media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook selecteren om in bepaalde gebieden in te zoomen. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamische media ingeschakeld wordt als volgt weergegeven:
 
 ![ chlimage_1-361 ](assets/chlimage_1-361.png)
 
-Met Dynamic Media uitgeschakeld kunt u in- en uitzoomen en terugkeren naar de oorspronkelijke grootte:
+Als Dynamische media is uitgeschakeld, kunt u in- en uitzoomen en terugkeren naar de oorspronkelijke grootte:
 
 ![ chlimage_1-362 ](assets/chlimage_1-362.png)

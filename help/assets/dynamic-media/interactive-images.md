@@ -1,18 +1,55 @@
 ---
 title: Interactieve afbeeldingen
-description: Leer hoe u met interactieve afbeeldingen werkt in Dynamic Media.
+description: Leer hoe u met interactieve afbeeldingen werkt in dynamische media.
 contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4085'
 ht-degree: 0%
 
 ---
 
 # Interactieve afbeeldingen{#interactive-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 U kunt statische afbeeldingen eenvoudig verrijken en aantrekkelijke ervaringen voor klanten creëren door &#39;onoverzichtelijke&#39; hotspots naar een afbeelding te slepen. Slepbare hotspots combineren aanvullende informatie over een product of service met een directe, verkooppuntfunctie &#39;Toevoegen aan winkelwagentje&#39; of &#39;Kopen&#39;. Klanten kunnen deze hotspots selecteren die rechtstreeks aan het product of de service zijn gekoppeld, deze aan een winkelwagentje toevoegen of aan een webpagina zijn gekoppeld. Directe ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies op uw website.
 
@@ -38,8 +75,8 @@ De zelfstudie helpt u de stappen te illustreren voor het integreren van interact
 
 Stappen voor interactieve afbeeldingen:
 
-1. **(Optioneel) Identificeer hotspot-variabelen** . Als u Adobe Experience Manager Assets en Dynamic Media standalone gebruikt, identificeer dynamische variabelen die in uw bestaande implementatie van de QuickView worden gebruikt. Zo weet u zeker dat u hotspotgegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [ (Optioneel) Hotspot-variabelen identificeren ](#optional-identifying-hotspot-variables) .
-Nochtans, als u Experience Manager Sites, of Experience Manager eCommerce, of allebei gebruikt, dan is deze stap niet noodzakelijk.
+1. **(Optioneel) Identificeer hotspot-variabelen** . Als u Adobe Experience Manager Assets en Dynamic Media standalone gebruikt, moet u dynamische variabelen identificeren die worden gebruikt in uw bestaande QuickView-implementatie. Zo weet u zeker dat u hotspotgegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [ (Optioneel) Hotspot-variabelen identificeren ](#optional-identifying-hotspot-variables) .
+Als u echter Experience Manager Sites of Experience Manager eCommerce gebruikt, of beide, is deze stap niet nodig.
 
 1. **(Optioneel) Maak een voorinstelling voor een interactieve afbeeldingsviewer.** Pas de grafische afbeelding aan die wordt gebruikt om hotspots te vertegenwoordigen. U hoeft geen eigen voorinstelling voor de interactieve afbeeldingsviewer te maken als u in plaats daarvan de voorinstelling voor de externe interactieve afbeeldingsviewer met de naam `Shoppable_Banner` wilt gebruiken.
 Zie [ (Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken ](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) .
@@ -52,8 +89,8 @@ Zie [ Toevoegend hotspots aan een beeldbanner ](#adding-hotspots-to-an-image-ban
 Zie [ het Voorproeven van interactieve beelden ](#optional-previewing-interactive-images) - Facultatief. U kunt desgewenst een representatie van de verscherpte banner bekijken en de interactiviteit ervan testen.
 Zie [ het Publiceren Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve beeldactiva te publiceren.
 
-1. **voeg een interactief beeld aan uw website of aan uw website in Experience Manager** toe. Als u Sites of eCommerce gebruikt, of beide, kunt u interactieve beelden direct aan een Web-pagina in Experience Manager toevoegen. Sleep de component Interactieve media naar de pagina. Zie [ Toevoegend Dynamic Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
-Als u Experience ManagerAssets en Dynamic Media op zichzelf gebruikt, kopieert u de insluitcode naar uw website. Dan, integreer het met uw bestaande Snelle mening. Zie [ Integrerend een interactief beeld met uw website ](#integrating-an-interactive-image-with-your-website).
+1. **voeg een interactief beeld aan uw website of aan uw website in Experience Manager** toe. Als u Sites of eCommerce gebruikt, of beide, kunt u interactieve afbeeldingen rechtstreeks toevoegen aan een webpagina in Experience Manager. Sleep de component Interactieve media naar de pagina. Zie [ Toevoegend Dynamische Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Als u Experience ManagerAssets en Dynamic Media zelfstandig gebruikt, kopieert u de insluitcode naar uw website. Dan, integreer het met uw bestaande Snelle mening. Zie [ Integrerend een interactief beeld met uw website ](#integrating-an-interactive-image-with-your-website).
 Als u WCM (Web Content Manager) van derden gebruikt, integreert u de nieuwe interactieve video met de bestaande Snelle weergave die op uw website wordt gebruikt. Zie [ Integrerend een interactief beeld met een bestaande QuickView ](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (Optioneel) Hotspotvariabelen identificeren {#optional-identifying-hotspot-variables}
@@ -63,9 +100,9 @@ Als u WCM (Web Content Manager) van derden gebruikt, integreert u de nieuwe inte
 >Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
 >
 >* U wilt interactiviteit aan uw beeld toevoegen door aan Snelle meningen te teweegbrengen.
->* Uw implementatie van Experience Manager gebruikt ** geen eCommerce integratiekader om productgegevens in Experience Manager van om het even welke oplossing van de eCommerce te trekken. Tot deze oplossingen behoren IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop.
+>* Uw implementatie van Experience Manager gebruikt *niet* een eCommerce integratiekader om productgegevens in Experience Manager van om het even welke oplossing van de eCommerce te trekken. Tot deze oplossingen behoren IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop.
 >
->Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
+>Als uw implementatie van Experience Manager gebruikmaakt van eCommerce, kunt u deze taak overslaan en doorgaan naar de volgende taak.
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u hotspot gegevens kunt ingaan om het interactieve beeld tot stand te brengen.
 
@@ -196,7 +233,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 
    Zorg ervoor dat u de nieuwe viewervoorinstelling publiceert.
 
-   Zie [ de Kijker van Publish stelt ](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
+   Zie [ Publish Kijker vooraf instelt ](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
    U kunt nu een afbeeldingsbanner uploaden.
 
@@ -294,9 +331,9 @@ Zie [ Fragmenten van de Ervaring ](/help/sites-cloud/authoring/fragments/content
         >De gereedschappen voor het delen van sociale media in interactieve afbeeldingen worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Gebruik of maak in plaats daarvan viewervoorinstellingen die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 1. Selecteer **[!UICONTROL Save]** om uw werk op te slaan en terug te keren naar de pagina Bladeren.
-1. Publish the interactive image. Publiceren zorgt voor de banner via de cloud en genereert ook insluitcode waarmee u kunt integreren met een website van derden.
+1. Publiceer de interactieve afbeelding. Publiceren zorgt voor de banner via de cloud en genereert ook insluitcode waarmee u kunt integreren met een website van derden.
 
-   Zie [ de activa van Publish ](/help/assets/manage-digital-assets.md#publish-assets).
+   Zie [ activa ](/help/assets/manage-digital-assets.md#publish-assets) publiceren.
 
    Nadat u hotspots hebt toegevoegd en de interactieve afbeelding hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande website.
 
@@ -313,7 +350,7 @@ Met Voorvertoning kunt u zien hoe uw interactieve afbeelding er uitziet voor kla
 Als u tevreden bent met de interactieve afbeelding, kunt u deze publiceren.
 Zie [ de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/dynamic-media/embed-code.md) inbedden.
 Zie [ Verbinding URLs aan uw Webtoepassing ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
-Zie [ Dynamic Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
+Zie [ Dynamische Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
 
 **aan voorproef interactieve beelden:**
 
@@ -322,15 +359,15 @@ Zie [ Dynamic Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-
 1. Selecteer **[!UICONTROL Shoppable_Banner]** in de lijst Viewers of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
 1. Selecteer hotspots in de afbeelding om de bijbehorende acties van hotspots te testen.
 
-## Interactieve Publish-afbeeldingselementen {#publishing-interactive-image-assets}
+## Interactieve afbeeldingselementen publiceren {#publishing-interactive-image-assets}
 
-Zie [ Publish Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve beeldactiva te publiceren.
+Zie [ publiceren Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve beeldactiva te publiceren.
 
 ## Een interactieve afbeelding met uw website integreren {#integrating-an-interactive-image-with-your-website}
 
 Nadat u een bannerafbeelding hebt geüpload, hotspots hebt toegevoegd en de interactieve afbeelding hebt gepubliceerd, kunt u deze toevoegen aan uw websitepagina.
 
-Als u een Experience Manager Sites-klant bent, kunt u de interactieve afbeelding toevoegen door de component Interactieve media naar de pagina te slepen. Zie [ Dynamic Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
+Als u een Experience Manager Sites-klant bent, kunt u de interactieve afbeelding toevoegen door de component Interactieve media naar de pagina te slepen. Zie [ Dynamische Media Assets aan Pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) toevoegen.
 
 Als u een zelfstandige Experience Manager Assets-klant bent, kunt u de interactieve afbeelding handmatig aan uw website toevoegen, zoals in deze sectie wordt beschreven.
 
@@ -378,7 +415,7 @@ De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een 
 1. De achterste logica keert de overeenkomstige gegevens of inhoud van de Snelle mening terug naar de front-end code.
 1. De front-end code laadt de gegevens of de inhoud van de Snelle mening.
 1. Naar keuze, zet de front-end code de geladen gegevens van de Snelle mening in een vertegenwoordiging van HTML om.
-1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm voor de gebruiker weer.
+1. Met de front-end code wordt een modaal dialoogvenster of deelvenster weergegeven en wordt de HTML-inhoud op het scherm voor de gebruiker weergegeven.
 
 Deze vraag vertegenwoordigt niet noodzakelijk onafhankelijke openbare API vraag die door de Web-pagina logica van een willekeurige stap wordt geroepen. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 

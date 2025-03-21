@@ -3,27 +3,61 @@ title: Zoeken in Assets API
 description: Leer hoe u de zoek-Assets API gebruikt.
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
 # Zoeken in Assets API {#search-assets-api}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Alle [ goedgekeurde activa ](approve-assets.md) beschikbaar in de gegevensopslagplaats van de Experience Manager kunnen worden gezocht en dan aan geïntegreerde stroomafwaartse toepassingen worden geleverd gebruikend een Levering URL.
+Alle [ goedgekeurde activa ](approve-assets.md) beschikbaar in de activa van Experience Manager bewaarplaats kan worden gezocht en dan aan geïntegreerde stroomafwaartse toepassingen worden geleverd gebruikend een Levering URL.
 
-Het zoeken naar de juiste goedgekeurde middelen van de opslagplaats van de Experience Manager is de eerste stap naar het leveren van middelen met behulp van de leverings-URL. Het antwoord op het zoekverzoek bestaat uit een array van JSON-documenten die overeenkomen met de elementen die aan de zoekcriteria voldoen. Elk JSON-document wordt geïdentificeerd met behulp van een `id` -veld, dat wordt gebruikt om de aanvraag voor het leveren van elementen samen te stellen.
+Het zoeken naar de juiste goedgekeurde middelen van de Experience Manager-opslagplaats is de eerste stap naar het leveren van middelen via de bezorgings-URL. Het antwoord op het zoekverzoek bestaat uit een array van JSON-documenten die overeenkomen met de elementen die aan de zoekcriteria voldoen. Elk JSON-document wordt geïdentificeerd met behulp van een `id` -veld, dat wordt gebruikt om de aanvraag voor het leveren van elementen samen te stellen.
 
 ![ Overzicht van direct binair upload protocol ](assets/search-assets-api-overview.png)
 
@@ -42,7 +76,7 @@ U kunt eigenschappen definiëren in de aanvraag Zoeken in Assets API om de volge
 Het eindpunt in een API-aanvraag voor zoekmiddelen moet de volgende indeling hebben:
 `https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/search`
 
-Het leveringsdomein is gelijkaardig in structuur aan het domein van de de auteur van de Experience Manager. Het enige verschil is het vervangen van de term `author` door `delivery` .
+Het leveringsdomein is qua structuur vergelijkbaar met het domein van de Experience Manager-auteuromgeving. Het enige verschil is het vervangen van de term `author` door `delivery` .
 
 `pXXXX` verwijst naar de programma-id
 

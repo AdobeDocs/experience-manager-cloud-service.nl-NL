@@ -1,18 +1,55 @@
 ---
 title: Afbeeldingssets
-description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
+description: Leer hoe u met afbeeldingssets werkt in Dynamische media.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2124'
 ht-degree: 3%
 
 ---
 
 # Afbeeldingssets {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
@@ -30,14 +67,14 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 >
 >Voor informatie over het gebruikersinterface van Assets, zie [ activa met Aanraakinterface beheren ](/help/assets/manage-digital-assets.md).
 
-Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste praktijken aan en handhaaft de volgende grenzen:
+Als u een Afbeeldingsset maakt, raadt Adobe de volgende aanbevolen procedures aan en past het de volgende limieten toe:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Aantal dubbele elementen per set | Geen duplicaten | 20 |
 | Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limitations.md).[
+Zie ook [ Dynamische beperkingen van Media ](/help/assets/dynamic-media/limitations.md).
 
 ## Snel starten: Afbeeldingssets {#quick-start-image-sets}
 
@@ -55,7 +92,7 @@ Zo kunt u snel aan de slag:
 
    Upload de afbeeldingen voor uw afbeeldingssets. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor de afbeeldingsset. Kies uw afbeeldingen daarom zorgvuldig. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
 
-   Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van het Beeld worden gesteund.
+   Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van het Beeld worden gesteund.
 
 1. [ creeer de Reeksen van het Beeld ](#creating-image-sets).
 
@@ -78,7 +115,7 @@ Zo kunt u snel aan de slag:
 
    Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Selecteer de miniatuurpictogrammen om de Afbeeldingsset in de geselecteerde viewer te bekijken. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** , dat beschikbaar is in de vervolgkeuzelijst voor de linkertrack.
 
-1. [ de Reeksen van het Beeld van Publish ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [ publiceer de Reeksen van het Beeld ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Als u een Afbeeldingsset publiceert, wordt de URL- en insluitreeks geactiveerd. Bovendien moet u [ publiceren om het even welke vooraf ingestelde douaneviewer ](/help/assets/dynamic-media/managing-viewer-presets.md) die u hebt gecreeerd. Voorinstellingen voor viewers buiten de box zijn al gepubliceerd.
 
@@ -92,15 +129,15 @@ Zo kunt u snel aan de slag:
 
 Om de Reeksen van het Beeld uit te geven, zie [ het uitgeven de Reeksen van het Beeld ](#editing-image-sets). Bovendien kunt u [ Vastgestelde eigenschappen van het Beeld bekijken en uitgeven ](/help/assets/manage-digital-assets.md#editing-properties).
 
-Als u kwesties hebt die reeksen creëren, zie Beelden en Reeksen in [ problemen oplossen Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+Als u kwesties hebt die reeksen creëren, zie Beelden en Reeksen in [ problemen oplossen Dynamische Media ](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Elementen uploaden voor afbeeldingssets {#uploading-assets-in-image-sets}
 
-Begin door de beeldactiva voor uw Reeksen van het Beeld te uploaden. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor de afbeeldingsset. Kies uw afbeeldingen daarom zorgvuldig. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn voor optimale zoomdetails. Dynamic Media kan afbeeldingen renderen tot 25 megapixels per pixel. U kunt bijvoorbeeld een afbeelding van 5000 x 5000 megapixel of een andere formaatcombinatie van maximaal 25 megapixels gebruiken.
+Begin door de beeldactiva voor uw Reeksen van het Beeld te uploaden. Vergeet niet dat gebruikers op afbeeldingen kunnen inzoomen in de viewer voor de afbeeldingsset. Kies uw afbeeldingen daarom zorgvuldig. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn voor optimale zoomdetails. Met dynamische media kunnen afbeeldingen tot 25 megapixels worden gerenderd. U kunt bijvoorbeeld een afbeelding van 5000 x 5000 megapixel of een andere formaatcombinatie van maximaal 25 megapixels gebruiken.
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van het Beeld worden gesteund.
+Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van het Beeld worden gesteund.
 
 U kunt beelden voor de Reeksen van het Beeld zoals u [ om het even welke andere activa in Assets ](/help/assets/manage-digital-assets.md#uploading-assets) uploadt.
 
@@ -136,18 +173,18 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 >
 >Afbeeldingssets worden niet ondersteund voor elementen met &quot;,&quot; (komma) in de bestandsnaam.
 
-Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste praktijken aan en handhaaft de volgende grenzen:
+Als u een Afbeeldingsset maakt, raadt Adobe de volgende aanbevolen procedures aan en past het de volgende limieten toe:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Aantal dubbele elementen per set | Geen duplicaten | 20 |
 | Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limitations.md).[
+Zie ook [ Dynamische beperkingen van Media ](/help/assets/dynamic-media/limitations.md).
 
 **om de Reeksen van het Beeld tot stand te brengen:**
 
-1. Selecteer in Adobe Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
+1. Selecteer in Adobe Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole.
 1. Selecteer **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** . Navigeer naar de plaats waar u een afbeeldingsset wilt maken en ga vervolgens naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina Editor afbeeldingsset te openen.
 
    U kunt de set ook maken vanuit een map die uw elementen bevat.
@@ -188,7 +225,7 @@ Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limita
 
    >[!NOTE]
    >
-   >Wanneer u de afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen. Of u kunt Experience Managers de miniatuur automatisch laten selecteren op basis van de elementen in de afbeeldingsset. Als u een miniatuur wilt selecteren, selecteert u **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset. Selecteer vervolgens een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd, kiest u **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]** en wilt u dat Experience Manager een miniatuur genereert op basis van de set afbeeldingen.
+   >Wanneer u de afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen. Of u kunt Experience Manager de miniatuur automatisch laten selecteren op basis van de elementen in de afbeeldingsset. Als u een miniatuur wilt selecteren, selecteert u **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset. Selecteer vervolgens een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd, kiest u **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]** en wilt u dat Experience Manager een miniatuur genereert op basis van de set afbeeldingen.
 
 1. Klik op **[!UICONTROL Save]**. De gemaakte afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
@@ -212,7 +249,7 @@ Nochtans, verschijnen de reeksen die gebruikend partij worden gecreeerd vooraf i
 
 * Vanuit de zoekopdracht kunt u **[!UICONTROL Filter]** selecteren, vervolgens **[!UICONTROL Dynamic Media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
 
-  De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen wordt de zoekquery uitgevoerd met &quot;Begint met&quot;. Deze zoekcriteria verschillen van Experience Manager die is gebaseerd op het gebruik van Bevat. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
+  De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen wordt de zoekquery uitgevoerd met &quot;Begint met&quot;. Deze zoekcriteria verschillen van Experience Manager, dat is gebaseerd op het gebruik van Bevat. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
 
   ![ chlimage_1-134 ](assets/chlimage_1-134.png)
 
@@ -245,7 +282,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op **[!UICONTROL Add Asset]** . Navigeer naar een element, selecteer het en selecteer vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
      >[!NOTE]
      >
-     >Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
+     >Als u de afbeelding verwijdert die Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
    * Als u een element wilt verwijderen, selecteert u het en selecteert u **[!UICONTROL Delete Asset]** .
    * Als u een voorinstelling wilt toepassen, selecteert u **[!UICONTROL Preset]** in de rechterbovenhoek van de pagina en selecteert u vervolgens een voorinstelling voor de viewer.
    * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe staalelement, selecteer het en selecteer vervolgens **[!UICONTROL Select]** .
@@ -263,4 +300,4 @@ Zie [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md)
 
 ## Afbeeldingssets publiceren {#publishing-image-sets}
 
-Zie [ Publish Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Zie [ publiceren Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

@@ -1,28 +1,65 @@
 ---
-title: De cache van het Content Delivery Network ongeldig maken via Dynamic Media
+title: De cache van het netwerk voor inhoudslevering ongeldig maken via Dynamic Media
 description: Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network) ongeldig maakt, zodat u snel elementen kunt bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
 
 # De CDN-cache ongeldig maken via Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
-Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery Network) voor snelle levering aan uw klanten. Wanneer u echter updates van deze elementen uitvoert, wilt u dat deze wijzigingen onmiddellijk op uw website van kracht worden. Door de CDN-cache te wissen of ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd. U hoeft niet meer te wachten tot de cache verloopt met een TTL-waarde (Time To Live) (de standaardwaarde is tien uur). In plaats daarvan kunt u een aanvraag vanuit de Dynamic Media-gebruikersinterface verzenden om de cache binnen enkele minuten te laten verlopen.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
+De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN (het Netwerk van de Levering van de Inhoud) voor snelle levering aan uw klanten. Wanneer u echter updates van deze elementen uitvoert, wilt u dat deze wijzigingen onmiddellijk op uw website van kracht worden. Door de CDN-cache te wissen of ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd. U hoeft niet meer te wachten tot de cache verloopt met een TTL-waarde (Time To Live) (de standaardwaarde is tien uur). In plaats daarvan kunt u een aanvraag vanuit de gebruikersinterface van Dynamic Media verzenden om de cache binnen enkele minuten te laten verlopen.
 
 >[!NOTE]
 >
->Deze functie vereist dat u de CDN met Adobe-bundled gebruikt die bij Adobe Experience Manager Dynamic Media wordt geleverd. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
+>Deze functie vereist dat u de door Adobe gebundelde CDN gebruikt die wordt geleverd bij Adobe Experience Manager Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
-Als u [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md) op uw rekening hebt toegelaten en u Adobe-gebundelde CDN gebruikt, kunt u alle URLs met verschillende vraagkoorden zuiveren door enige basis URL te zuiveren.
+Als u [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md) op uw rekening hebt toegelaten en u Adobe-Gebundelde CDN gebruikt, kunt u alle URLs met verschillende vraagkoorden zuiveren door enige basis URL te zuiveren.
 
 Als u bijvoorbeeld `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image` ongeldig maakt, worden ook de volgende URL&#39;s ongeldig:
 
@@ -33,7 +70,7 @@ Als u bijvoorbeeld `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/imag
 
 Deze validatie is echter niet het geval voor algemene domeinen die Smart Imaging niet ondersteunen, zoals `s7d1.scene7.com` . Dergelijke domeinen hebben nog steeds de volledige URL nodig om validatiewerkzaamheden met succes uit te voeren.
 
-**om het CDN geheime voorgeheugen als Dynamic Media ongeldig te maken:**
+**om het CDN geheime voorgeheugen als Dynamische Media ongeldig te maken:**
 
 *Deel 1 van 2: Creërend een malplaatje van de Invalidatie CDN*
 
@@ -46,7 +83,7 @@ Deze validatie is echter niet het geval voor algemene domeinen die Smart Imaging
    | Scenario | Optie |
    | --- | --- |
    | Ik heb in het verleden al een CDN-validatiesjabloon gemaakt met Dynamic Media Classic. | Het tekstveld **[!UICONTROL Create Template]** wordt vooraf gevuld met uw sjabloongegevens. In dat geval kunt u de sjabloon bewerken of doorgaan met de volgende stap. |
-   | Ik moet een sjabloon maken. Wat ga ik binnen? | Op het **[!UICONTROL Create Template]** tekstgebied, ga een beeld URL (met inbegrip van beeldvoorinstellingen of bepalingen) die `<ID>` van verwijzingen voorzien, in plaats van een specifieke beeldidentiteitskaart zoals in het volgende voorbeeld:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br> als het malplaatje enkel `<ID>` bevat, dan vult Dynamic Media `https://<publishserver_name>/is/image/<company_name>/<ID>` in waar `<publishserver_name>` de naam van uw Server van Publish is die in Algemene Montages in Dynamic Media Classic wordt bepaald. `<company_name>` is de naam van de hoofdmap van uw bedrijf die aan deze Experience Manager-instantie is gekoppeld en `<ID>` is de via de elementenkiezer geselecteerde elementen die ongeldig moeten worden gemaakt.<br> Om het even welke vooraf instelt/bepalingen na `<ID>` worden gekopieerd aangezien-is in de definitie URL.<br> slechts beelden-dat is, `/is/image` - kan worden auto gevormd gebaseerd op het malplaatje.<br> voor `/is/content/`, produceert het toevoegen van activa zoals video&#39;s of PDF gebruikend de activa plukker niet automatisch URLs. In plaats daarvan, moet u dergelijke activa of in het malplaatje van de Invalidatie CDN specificeren, of u kunt URL aan dergelijke activa in *Deel 2 van 2 manueel toevoegen: Het plaatsen van CDN de opties van de Invalidatie*.<br>**Voorbeelden:**<br> In dit eerste voorbeeld, bevat het ongeldigingsmalplaatje `<ID>` samen met activa URL die `/is/content` hebben. Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>` . Dynamic Media vormt de URL op basis van dit pad, waarbij `<ID>` de elementen is die zijn geselecteerd via de elementkiezer die u ongeldig wilt maken.<br> In dit tweede voorbeeld, bevat het validatiesjabloon de volledige URL van het element dat in uw wegeigenschappen met `/is/content` wordt gebruikt (niet afhankelijk van de elementenkiezer). Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` , waarbij rugzak de element-id is.<br> formaten van Activa die in Dynamic Media worden gesteund zijn verkiesbaar voor ongeldigverklaring. De dossiertypes van activa die *niet* voor CDN ongeldig worden gesteund omvatten PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word, en Rich Text Format.<br><br>・ Als u de sjabloon maakt, maar let er wel op dat u de syntaxis en typos zorgvuldig in acht neemt; Dynamic Media voert geen sjabloonvalidatie uit.<br>・ Met de CDN-validatiesjabloon kunt u maximaal 2500 tekens opslaan.<br>・ Specificeer URLs voor beeld slimme gewassen of in dit malplaatje van de Invalidatie CDN, of in het **[!UICONTROL Add URL]** tekstgebied in *Deel 2: Plaatsende opties van de Invalidatie CDN.*<br>・ Elk item in een CDN-validatiesjabloon moet op een aparte regel staan.<br>・ Het volgende voorbeeld van de CDN-validatiesjabloon is alleen bedoeld als demonstratie. |
+   | Ik moet een sjabloon maken. Wat ga ik binnen? | Op het **[!UICONTROL Create Template]** tekstgebied, ga een beeld URL (met inbegrip van beeldvoorinstellingen of bepalingen) die `<ID>` van verwijzingen voorzien, in plaats van een specifieke beeldidentiteitskaart zoals in het volgende voorbeeld:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br> als het malplaatje enkel `<ID>` bevat, dan vult de Dynamische Media `https://<publishserver_name>/is/image/<company_name>/<ID>` in waar `<publishserver_name>` de naam van uw Publish Server is die in Algemene Montages in Dynamic Media Classic wordt bepaald. `<company_name>` is de naam van de hoofdmap van uw bedrijf die aan deze Experience Manager-instantie is gekoppeld. `<ID>` is de geselecteerde elementen via de elementenkiezer die ongeldig moeten worden gemaakt.<br> Om het even welke vooraf instelt/bepalingen na `<ID>` worden gekopieerd aangezien-is in de definitie URL.<br> slechts beelden-dat is, `/is/image` - kan worden auto gevormd gebaseerd op het malplaatje.<br> Voor `/is/content/`, produceert het toevoegen van activa zoals video&#39;s of PDFs gebruikend de activa plukker geen automatisch URLs. In plaats daarvan, moet u dergelijke activa of in het malplaatje van de Invalidatie CDN specificeren, of u kunt URL aan dergelijke activa in *Deel 2 van 2 manueel toevoegen: Het plaatsen van CDN de opties van de Invalidatie*.<br>**Voorbeelden:**<br> In dit eerste voorbeeld, bevat het ongeldigingsmalplaatje `<ID>` samen met activa URL die `/is/content` hebben. Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>` . Dynamische media vormen de URL op basis van dit pad, waarbij `<ID>` de elementen is die zijn geselecteerd via de elementenkiezer die u ongeldig wilt maken.<br> In dit tweede voorbeeld, bevat het validatiesjabloon de volledige URL van het element dat in uw wegeigenschappen met `/is/content` wordt gebruikt (niet afhankelijk van de elementenkiezer). Bijvoorbeeld `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` , waarbij rugzak de element-id is.<br> formaten van Activa die in Dynamische Media worden gesteund zijn geschikt voor ongeldigverklaring. De dossiertypes van activa die *niet* voor CDN ongeldig worden gesteund omvatten PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word, en Rich Text Format.<br><br>・ Wanneer u de sjabloon maakt, maar zorg ervoor dat u de syntaxis en typos goed in de gaten houdt. Dynamische media voert geen sjabloonvalidatie uit.<br>・ Met de CDN-validatiesjabloon kunt u maximaal 2500 tekens opslaan.<br>・ Specificeer URLs voor beeld slimme gewassen of in dit malplaatje van de Invalidatie CDN, of in het **[!UICONTROL Add URL]** tekstgebied in *Deel 2: Plaatsende opties van de Invalidatie CDN.*<br>・ Elk item in een CDN-validatiesjabloon moet op een aparte regel staan.<br>・ Het volgende voorbeeld van de CDN-validatiesjabloon is alleen bedoeld als demonstratie. |
 
    ![ CDN Sjabloon voor validatie - creeer ](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -76,7 +113,7 @@ Deze validatie is echter niet het geval voor algemene domeinen die Smart Imaging
    | **[!UICONTROL Invalidate asset associated image presets in CDN]** | (Optioneel) Wanneer u deze optie inschakelt, worden geselecteerde elementen en alle bijbehorende URL&#39;s met voorinstellingen voor afbeeldingen automatisch samengesteld voor cachevalidatie.<br> Assets en hun bijbehorende vooraf bepaalde vooraf bepaalde URLs worden auto gevormd voor ongeldigverklaring. Deze optie werkt alleen voor afbeeldingselementen. |
    | **[!UICONTROL Invalidation based on template]** | (Optioneel) Schakel deze optie in als u alleen de gedefinieerde sjabloon voor URL-formatie wilt gebruiken. |
    | **[!UICONTROL Add Assets]** | Gebruik de elementkiezer om elementen te selecteren die u ongeldig wilt maken. U kunt gepubliceerde of niet-gepubliceerde elementen selecteren.<br> Caching bij CDN is op URL-Gebaseerd, niet op activa-gebaseerd. Daarom is het noodzakelijk dat u op de hoogte bent van de volledige URL&#39;s die op uw website staan. Nadat u deze URL&#39;s hebt bepaald, kunt u ze aan de sjabloon toevoegen. Vervolgens kunt u deze elementen selecteren en toevoegen en de URL&#39;s in één stap ongeldig maken. <br> Gebruik deze optie met **[!UICONTROL Invalidate asset associated image presets in CDN]**, of **[!UICONTROL Invalidation based on template]**, of allebei. |
-   | **[!UICONTROL Add URL]** | Voeg handmatig volledige URL-paden toe of plak deze naar Dynamic Media-elementen waarvan u de CDN-cache wilt ongeldig maken. Gebruik deze optie als u geen Malplaatje van de Invalidatie CDN in ***Deel 1 van 2 creeerde: Creërend een malplaatje van de Invalidatie CDN***, en slechts een paar activa hebben om ongeldig te maken.<br>**Belangrijk:** Elke URL die u toevoegt moet op zijn eigen lijn zijn.<br> u kunt tot 1000 URLs in een bepaalde tijd ongeldig maken. Als het aantal URL&#39;s in het tekstveld **[!UICONTROL Add URL]** groter is dan 1000, kunt u **[!UICONTROL Next]** niet selecteren. In dergelijke gevallen moet u **[!UICONTROL X]** rechts van een geselecteerd element selecteren of een handmatig toegevoegde URL selecteren om het element uit de lijst met validaties te verwijderen.<br> specificeer URLs voor beeld slimme gewassen of in het malplaatje van de Invalidatie CDN, of in dit **[!UICONTROL Add URL]** tekstgebied. |
+   | **[!UICONTROL Add URL]** | Voeg handmatig volledige URL-paden toe aan dynamische media-elementen waarvan u de CDN-cache wilt ongeldig maken. Gebruik deze optie als u geen Malplaatje van de Invalidatie CDN in ***Deel 1 van 2 creeerde: Creërend een malplaatje van de Invalidatie CDN***, en slechts een paar activa hebben om ongeldig te maken.<br>**Belangrijk:** Elke URL die u toevoegt moet op zijn eigen lijn zijn.<br> u kunt tot 1000 URLs in een bepaalde tijd ongeldig maken. Als het aantal URL&#39;s in het tekstveld **[!UICONTROL Add URL]** groter is dan 1000, kunt u **[!UICONTROL Next]** niet selecteren. In dergelijke gevallen moet u **[!UICONTROL X]** rechts van een geselecteerd element selecteren of een handmatig toegevoegde URL selecteren om het element uit de lijst met validaties te verwijderen.<br> specificeer URLs voor beeld slimme gewassen of in het malplaatje van de Invalidatie CDN, of in dit **[!UICONTROL Add URL]** tekstgebied. |
 
 1. Selecteer **[!UICONTROL Next]** in de rechterbovenhoek van de pagina.
 1. Op de pagina **[!UICONTROL CDN Invalidation]** - **[!UICONTROL Confirm]** ziet u in de keuzelijst **[!UICONTROL URLs]** een lijst met een of meer URL&#39;s die zijn gegenereerd op basis van de eerder gemaakte CDN-validatiesjabloon en de elementen die u zojuist hebt toegevoegd.
@@ -95,7 +132,7 @@ In alle gevallen wordt de gehele batch voor ongeldigmaking verwerkt of is de hel
 
 | Fout | Toelichting |
 | --- | --- |
-| *Slaagde er niet in om URLs voor geselecteerde activa terug te winnen.* | Komt voor als om het even welke volgende scenario&#39;s worden voldaan:<br> - een configuratie van Dynamic Media wordt niet gevonden.<br> - Er is een uitzondering bij het ophalen van een servicegebruiker via welke de Dynamic Media-configuratie wordt gelezen.<br>- De publicatieserver of de hoofdmap van het bedrijf die wordt gebruikt om de URL&#39;s te maken, ontbreekt in de Dynamic Media-configuratie. |
+| *Slaagde er niet in om URLs voor geselecteerde activa terug te winnen.* | Komt voor als om het even welke volgende scenario&#39;s worden voldaan:<br> - een Dynamische configuratie van Media wordt niet gevonden.<br> - Er is een uitzondering bij het ophalen van een servicegebruiker via welke de configuratie Dynamische media wordt gelezen.<br>- De publicatieserver of de hoofdmap van het bedrijf die wordt gebruikt om de URL&#39;s te maken, ontbreekt in de dynamische mediaconfiguratie. |
 | *sommige URLs wordt niet correct bepaald. Juist en opnieuw verzenden.* | Vindt plaats als de API voor invalidatie van het IPS CDN-cachegeheugen een fout retourneert. De fout wijst erop dat URL naar een verschillend bedrijf verwijst of URL is niet geldig zoals door de bevestiging door IPS cdnCacheInvalidation API wordt gedaan. |
 | *Slaagde er niet in om CDN geheime voorgeheugen ongeldig te maken.* | Komt voor als het CDN verzoek van de geheim voorgeheugenongeldigverklaring om een andere reden ontbreekt. |
 | *Geen URLs inging om ongeldig te worden gemaakt.* | Vindt plaats als de pagina **[!UICONTROL CDN Invalidation]** - **[!UICONTROL Confirm]** geen URL&#39;s bevat en u **[!UICONTROL Submit]** selecteert. |

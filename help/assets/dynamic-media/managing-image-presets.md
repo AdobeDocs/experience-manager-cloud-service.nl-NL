@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: baffc15d482ad3b57337c1ee5fe3e622253ae8cb
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3420'
-ht-degree: 5%
+source-wordcount: '3466'
+ht-degree: 4%
 
 ---
 
 # Voorinstellingen afbeelding beheren{#managing-image-presets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
 Met Voorinstellingen voor afbeeldingen kan Adobe Experience Manager Assets afbeeldingen dynamisch leveren in verschillende formaten, in verschillende indelingen of met andere afbeeldingseigenschappen die dynamisch worden gegenereerd. Elke voorinstelling voor afbeeldingen vertegenwoordigt een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van afbeeldingen. Wanneer u een voorinstelling voor afbeeldingen maakt, kiest u een grootte voor het leveren van de afbeelding. U kiest ook opmaakopdrachten, zodat de weergave van de afbeelding wordt geoptimaliseerd wanneer de afbeelding wordt geleverd voor weergave.
 
 Beheerders kunnen voorinstellingen maken voor het exporteren van elementen. Gebruikers kunnen bij het exporteren van afbeeldingen een voorinstelling kiezen die de afbeeldingen opnieuw opmaakt volgens de specificaties die de beheerder heeft opgegeven.
 
-U kunt ook voorinstellingen voor afbeeldingen maken die reageren. Als u een voorinstelling voor een responsieve afbeelding toepast op uw elementen, worden deze afhankelijk van het apparaat of de schermgrootte waarop ze worden weergegeven. U kunt Voorinstellingen afbeelding configureren om naast RGB of Grijs ook CMYK in de kleurruimte te gebruiken.
+U kunt ook voorinstellingen voor afbeeldingen maken die reageren. Als u een voorinstelling voor een responsieve afbeelding toepast op uw elementen, worden deze afhankelijk van het apparaat of de schermgrootte waarop ze worden weergegeven. U kunt Voorinstellingen voor afbeeldingen zodanig configureren dat naast RGB of Grijs ook CMYK in de kleurruimte wordt gebruikt.
 
 In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, wijzigt en over het algemeen beheert. U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen. Zie [ Beeld toepassen vooraf instelt ](/help/assets/dynamic-media/image-presets.md).
 
@@ -30,7 +67,7 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, 
 
 Net als bij een macro is een voorinstelling voor afbeeldingen een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van de grootte die onder een naam zijn opgeslagen. Als u wilt weten hoe Voorinstellingen afbeelding werken, veronderstelt u dat elke productafbeelding op uw website moet worden weergegeven in verschillende formaten, formaten en compressiesnelheden voor levering op het bureaublad en in mobiele apparaten.
 
-U kunt twee voorinstellingen voor afbeeldingen maken: 500 x 500 pixels voor het bureaublad en 150 x 150 pixels voor mobiele apparaten. U maakt twee voorinstellingen voor afbeeldingen, een voorinstelling die `Enlarge` wordt genoemd, om afbeeldingen met 500 x 500 pixels weer te geven en een voorinstelling die `Thumbnail` wordt aangeroepen om afbeeldingen met 150 x 150 pixels weer te geven. Als u afbeeldingen op `Enlarge` - en `Thumbnail` -grootte wilt afleveren, zoekt Experience Manager de definitie van de `Enlarge Image Preset` en `Thumbnail Image Preset` -afbeelding. Vervolgens genereert Experience Manager dynamisch een afbeelding met de grootte en opmaakspecificaties van elke voorinstelling voor afbeeldingen.
+U kunt twee voorinstellingen voor afbeeldingen maken: 500 x 500 pixels voor het bureaublad en 150 x 150 pixels voor mobiele apparaten. U maakt twee voorinstellingen voor afbeeldingen, een voorinstelling die `Enlarge` wordt genoemd, om afbeeldingen met 500 x 500 pixels weer te geven en een voorinstelling die `Thumbnail` wordt aangeroepen om afbeeldingen met 150 x 150 pixels weer te geven. Experience Manager zoekt naar de definitie van `Enlarge Image Preset` en `Thumbnail Image Preset` om afbeeldingen op `Enlarge` - en `Thumbnail` -grootte te leveren. Vervolgens genereert Experience Manager dynamisch een afbeelding met de grootte en opmaakspecificaties van elke voorinstelling voor afbeeldingen.
 
 Afbeeldingen die bij dynamische levering kleiner worden gemaakt, kunnen scherper en gedetailleerder worden. Daarom bevat elke voorinstelling voor afbeeldingen opmaakbesturingselementen waarmee u een afbeelding kunt optimaliseren wanneer deze met een bepaalde grootte wordt geleverd. Met deze besturingselementen zorgt u ervoor dat uw afbeeldingen scherp en duidelijk zijn wanneer ze aan uw website of toepassing worden geleverd.
 
@@ -38,7 +75,7 @@ Beheerders kunnen voorinstellingen voor afbeeldingen maken. Als u een voorinstel
 
 ## Voorinstellingen afbeelding beheren {#managing-image-presets-1}
 
-U beheert uw Voorinstellingen afbeelding in Experience Manager door het logo van de Experience Manager te selecteren voor toegang tot de algemene navigatieconsole en vervolgens het pictogram Extra te selecteren en naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** te navigeren.
+U beheert uw Voorinstellingen voor afbeeldingen in Experience Manager door het Experience Manager-logo te selecteren voor toegang tot de algemene navigatieconsole en vervolgens het pictogram Extra te selecteren en naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** te navigeren.
 
 ![ 6_5_tools-assets-imagepresets ](assets/6_5_tools-assets-imagepresets.png)
 
@@ -48,20 +85,20 @@ U beheert uw Voorinstellingen afbeelding in Experience Manager door het logo van
 >
 >U *niet* te hoeven om Beeld te publiceren vooraf instelt aangezien het Beeld automatisch wordt gepubliceerd.
 >
->Zie [ het Beeld van Publish vooraf instelt ](#publishing-image-presets).
+>Zie [ publiceren Beeld vooraf instelt ](#publishing-image-presets).
 
 >[!NOTE]
 >
 >Het systeem geeft verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert in de Gedetailleerde weergave van een element. U kunt het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, verhogen of verlagen. Zie [ Verhoog het aantal beeld vooraf instelt die ](#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond.
 
-### Adobe Illustrator- (AI), PostScript®- (EPS) en PDF-bestandsindelingen {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Bestandsindelingen Adobe Illustrator (AI), PostScript® (EPS) en PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-Als u de opname van AI-, EPS- en PDF-bestanden wilt ondersteunen, zodat u dynamische uitvoeringen van deze bestandsindelingen kunt genereren, controleert u de volgende informatie voordat u Voorinstellingen afbeelding maakt.
+Als u de opname van AI-, EPS- en PDF-bestanden wilt ondersteunen, zodat u dynamische uitvoeringen van deze bestandsindelingen kunt genereren, bekijkt u de volgende informatie voordat u Voorinstellingen voor afbeeldingen maakt.
 
 Adobe Illustrator-bestandsindeling is een variant van PDF. De belangrijkste verschillen in de context van Experience Manager Assets zijn:
 
 * Adobe Illustrator-documenten bestaan uit één pagina met meerdere lagen. Elke laag wordt geëxtraheerd als een PNG-subelement onder het Illustrator-hoofdelement.
-* PDF-documenten bestaan uit een of meer pagina&#39;s. Elke pagina wordt geëxtraheerd als een PDF-subelement van één pagina onder het PDF-hoofddocument met meerdere pagina&#39;s.
+* PDF-documenten bestaan uit een of meer pagina&#39;s. Elke pagina wordt uitgepakt als een PDF-subelement van één pagina onder het PDF-hoofddocument met meerdere pagina&#39;s.
 
 De component `Create Sub Asset process` maakt de subelementen binnen de algemene `DAM Update Asset` -workflow. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]** om deze procescomponent weer te geven in de workflow.
 
@@ -79,7 +116,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 >
 >In de workflow Asset-updates van DAM worden miniaturen voor EPS-bestanden gegenereerd in de stap **[!UICONTROL EPS thumbnails]**.
 
-#### Eigenschappen van PDF/AI/EPS-metagegevens {#pdf-ai-eps-asset-metadata-properties}
+#### Eigenschappen van metagegevens van PDF/AI/EPS-elementen {#pdf-ai-eps-asset-metadata-properties}
 
 | **bezit van Meta-gegevens** | **Beschrijving** |
 |---|---|
@@ -90,15 +127,15 @@ Via de `DAM Update Asset` -workflow hebt u toegang tot de opties voor procescomp
 
 Selecteer Adobe Experience Manager linksboven en klik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** . Selecteer op de pagina Workflowmodellen **[!UICONTROL DAM Update Asset]** en selecteer vervolgens op de werkbalk **[!UICONTROL Edit]** . Dubbelselecteer op de pagina met DAM-updategegevens de procescomponent `Rasterize PDF/AI Image Preview Rendition` om het dialoogvenster Step Properties te openen.
 
-#### Opties van PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Opties PDF/AI Voorvertoning afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![ Argumenten om PDF of AI werkschema te rasteren ](assets/rasterize_pdf_ai_image_preview.png)
+![ Argumenten om het werkschema van PDF of AI ](assets/rasterize_pdf_ai_image_preview.png) om te zetten in pixels
 
 Argumenten voor het rasteren van PDF- of AI-workflow
 
 | Procesargument | Standaardinstelling | Beschrijving |
 |---|---|---|
-| MIME-typen | application/pdf <br> toepassing/postscript <br> toepassing/illustrator | Lijst met documentmime-typen die worden beschouwd als PDF- of Illustrator-documenten. |
+| MIME-typen | application/pdf <br> toepassing/postscript <br> toepassing/illustrator | Lijst met documenttypen die worden beschouwd als PDF- of Illustrator-documenten. |
 | Max. breedte | 2048 | Maximale breedte van de gegenereerde voorvertoning, in pixels. |
 | Max. hoogte | 2048 | Maximumhoogte van de gegenereerde voorvertoning, in pixels. |
 | Resolutie | 72 | Resolutie voor het rasteren van de eerste pagina, in ppi (pixels per inch). |
@@ -113,24 +150,24 @@ In de procescomponent `Rasterize PDF/AI Image Preview Rendition` is een maximum 
 
 Als u de opname van INDD-bestanden wilt ondersteunen, zodat u dynamische uitvoering van deze bestandsindeling kunt genereren, controleert u de volgende informatie voordat u Voorinstellingen afbeelding maakt.
 
-Voor bestanden met InDesigns worden subelementen alleen geëxtraheerd als de Adobe InDesign Server is geïntegreerd met Experience Manager. Elementen waarnaar wordt verwezen, zijn gekoppeld op basis van hun metagegevens. InDesign Server is niet vereist voor koppelen. De middelen waarnaar wordt verwezen, moeten echter aanwezig zijn in de Experience Manager voordat de bestanden met InDesigns worden verwerkt, zodat de koppelingen tussen de bestanden met InDesigns en de elementen waarnaar wordt verwezen, worden gemaakt.
+Voor InDesign-bestanden worden subelementen alleen geëxtraheerd als de Adobe InDesign Server is geïntegreerd met Experience Manager. Elementen waarnaar wordt verwezen, zijn gekoppeld op basis van hun metagegevens. InDesign Server is niet vereist voor koppelingen. De middelen waarnaar wordt verwezen, moeten echter aanwezig zijn in Experience Manager voordat de InDesign-bestanden worden verwerkt, zodat de koppelingen tussen de InDesign-bestanden en de middelen waarnaar wordt verwezen, kunnen worden gemaakt.
 
 <!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
-De het procescomponent van het Proces van Media Extractie in het `DAM Update Asset` werkschema stelt verscheidene vooraf gevormde Uitbreiden Manuscripten in werking om InDesign dossiers te verwerken.
+Met de component Media Extraction Process in de `DAM Update Asset` -workflow worden verschillende vooraf geconfigureerde Extend Scripts uitgevoerd voor het verwerken van InDesign-bestanden.
 
-![ de wegen van ExtendScript in de argumenten van het proces van de Extractie van Media ](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![ de wegen ExtendScript in de argumenten van het proces van de Extractie van Media ](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-De ExtendScript-paden in de argumenten van de Media Extraction Process-component in de DAM Update Asset-workflow.
+De ExtendScript-paden in de argumenten van de procescomponent Media Extraction in de DAM Update Asset-workflow.
 
-De volgende scripts worden door Dynamic Media-integratie gebruikt:
+De volgende scripts worden gebruikt door Dynamic Media-integratie:
 
 
 | ExtendScript-naam | Standaard | Beschrijving |
 |---|---|---|
 | ThumbnailExport.jsx | Ja | Genereert een 300 PPI `thumbnail.jpg` -uitvoering die is geoptimaliseerd en door `Dynamic Media Process Image Assets` -procescomponent is omgezet in een PTIFF-uitvoering. |
-| JPEGPagesExport.jsx | Ja | Genereert een subelement van 300 ppi JPEG voor elke pagina. Het JPEG-submiddel is een echt middel dat is opgeslagen onder het InDesign-element. De `DAM Update Asset` -workflow wordt geoptimaliseerd en omgezet in een PTIFF-bestand. |
-| PDFPagesExport.jsx | Nee | Hiermee genereert u een PDF-subelement voor elke pagina. Het PDF-subelement wordt verwerkt zoals eerder beschreven. Omdat de PDF slechts één pagina bevat, worden geen subelementen gegenereerd. |
+| JPEGPagesExport.jsx | Ja | Genereert een 300 PPI JPEG-subelement voor elke pagina. Het JPEG-submiddel is een echt middel dat is opgeslagen onder het InDesign-element. De `DAM Update Asset` -workflow wordt geoptimaliseerd en omgezet in een PTIFF-bestand. |
+| PDFPagesExport.jsx | Nee | Genereert een PDF-subelement voor elke pagina. Het PDF-subelement wordt verwerkt zoals eerder beschreven. Omdat de PDF slechts één pagina bevat, worden geen subelementen gegenereerd. |
 
 ### De miniatuurgrootte van de afbeelding configureren {#configuring-image-thumbnail-size}
 
@@ -164,7 +201,7 @@ Miniatuurgrootte wordt als volgt gedefinieerd: **[!UICONTROL width:height:center
 
 ### Het aantal weergegeven voorinstellingen voor afbeeldingen vergroten of verkleinen {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoeringen wanneer u een voorvertoning van elementen weergeeft. In Experience Manager worden verschillende dynamische uitvoeringen weergegeven wanneer u elementen weergeeft vanuit **[!UICONTROL Detail View > Renditions]** . U kunt de limiet van weergegeven uitvoeringen verhogen of verlagen.
+Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoeringen wanneer u een voorvertoning van elementen weergeeft. Experience Manager geeft verschillende dynamische uitvoeringen weer wanneer een element wordt weergegeven vanuit **[!UICONTROL Detail View > Renditions]** . U kunt de limiet van weergegeven uitvoeringen verhogen of verlagen.
 
 **om het aantal beeld te verhogen of te verminderen stelt die worden getoond:**
 
@@ -189,9 +226,9 @@ Maak voorinstellingen voor afbeeldingen, zodat u instellingen consistent kunt to
 >
 >Als u Internet Explorer 9 gebruikt, wordt het maken van een voorinstelling niet meteen na het opslaan weergegeven in de lijst met voorinstellingen. U kunt dit probleem omzeilen door de cache voor IE9 uit te schakelen.
 
-Als u de opname van AI-, PDF- en EPS-bestanden wilt ondersteunen, zodat u een dynamische uitvoering van deze bestandsindelingen kunt genereren, controleert u de volgende informatie voordat u Voorinstellingen voor afbeeldingen maakt.
+Als u de opname van AI-, PDF- en EPS-bestanden wilt ondersteunen, zodat u een dynamische uitvoering van deze bestandsindelingen kunt genereren, bekijkt u de volgende informatie voordat u Voorinstellingen voor afbeeldingen maakt.
 
-Zie [ Adobe Illustrator (AI), PostScript® (EPS), en het dossierformaten van PDF ](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+Zie [ Adobe Illustrator (AI), PostScript® (EPS), en de dossierformaten van PDF ](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Als u de opname van INDD-bestanden wilt ondersteunen, zodat u dynamische uitvoering van deze bestandsindeling kunt genereren, controleert u de volgende informatie voordat u Voorinstellingen afbeelding maakt.
 
@@ -199,7 +236,7 @@ Zie [ InDesign (INDD) dossierformaat ](#indesign-indd-file-format).
 
 **om beeld tot stand te brengen vooraf instelt:**
 
-1. Selecteer in Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** .
+1. Selecteer in Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole en ga vervolgens naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** .
 1. Selecteer **[!UICONTROL Create]** .
 
    ![ chlimage_1-496 ](assets/chlimage_1-496.png)
@@ -218,7 +255,7 @@ Zie [ InDesign (INDD) dossierformaat ](#indesign-indd-file-format).
 
 Om een ontvankelijke Vooraf ingesteld Beeld tot stand te brengen, voer de stappen in [ tot beeld uit vooraf instelt ](#creating-image-presets). Wanneer u de hoogte en breedte in het **[!UICONTROL Edit Image Preset]** -venster invoert, wist u de waarden en laat u deze leeg.
 
-Als u deze leeg laat, krijgt de Experience Manager de melding dat deze voorinstelling reageert. U kunt de andere waarden desgewenst aanpassen.
+Als u deze leeg laat, weet Experience Manager dat op deze voorinstelling kan worden gereageerd. U kunt de andere waarden desgewenst aanpassen.
 
 >[!NOTE]
 >
@@ -230,7 +267,7 @@ Als u deze leeg laat, krijgt de Experience Manager de melding dat deze voorinste
 
 ### Voorinstellingsopties voor afbeelding {#image-preset-options}
 
-Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties in deze sectie beschreven. Daarnaast raadt de Adobe aan om de volgende opties voor best practices te kiezen:
+Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties in deze sectie beschreven. Daarnaast raadt Adobe aan om de volgende opties voor best practices te kiezen:
 
 * **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Selecteer **[!UICONTROL JPEG]** of een andere indeling die aan uw vereisten voldoet. Alle webbrowsers ondersteunen de JPEG-afbeeldingsindeling. Deze biedt een goede balans tussen kleine bestandsgrootten en afbeeldingskwaliteit. JPEG-afbeeldingen gebruiken echter een compressieschema met dataverlies dat ongewenste afbeeldingsartefacten kan veroorzaken als de compressie-instelling te laag is. Daarom raadt Adobe aan de compressiekwaliteit in te stellen op 75. Deze instelling biedt een goede balans tussen afbeeldingskwaliteit en kleine bestandsgrootte.
 
@@ -244,7 +281,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 | --- | --- |
 | **Naam** | Voer een beschrijvende naam in zonder spaties. Als u gebruikers wilt helpen deze voorinstelling voor afbeeldingen te identificeren, neemt u de specificatie voor de afbeeldingsgrootte op in de naam. |
 | **Breedte en Hoogte** | Voer in pixels de grootte in waarmee de afbeelding wordt geleverd. De breedte en hoogte moeten groter zijn dan 0 pixels. Als een van deze waarden 0 is, wordt geen voorinstelling gemaakt. Als beide waarden leeg zijn, wordt een responsieve voorinstelling voor afbeeldingen gemaakt. |
-| **Formaat** | Kies een indeling in het menu.<br> het kiezen van **JPEG** biedt de volgende andere opties aan:<br>・ **Kwaliteit** - de de kwaliteitsschaal van JPEG is 1-100. De schaal is zichtbaar wanneer u de schuifregelaar versleept.<br>・ **laat JPG Downsampling van de Chrominantie van de toe** - omdat het oog minder gevoelig aan high-frequency kleureninformatie dan high-frequency luminantie is, verdelen de beelden van JPEG beeldinformatie in helderheid en kleurencomponenten. Wanneer een JPEG-afbeelding wordt gecomprimeerd, blijft de luminantiecomponent op volledige resolutie staan, terwijl de kleurcomponenten worden gedownsampled door het gemiddelde te nemen van pixelgroepen. Met downsampling verlaagt u het gegevensvolume tot een halve of een derde, met minimale gevolgen voor de waargenomen kwaliteit. Downsampling is niet van toepassing op grijswaardenafbeeldingen. Met deze techniek vermindert u de hoeveelheid compressie die handig is voor afbeeldingen met veel contrast (bijvoorbeeld afbeeldingen met overlappende tekst).<br><br> het kiezen van **GIF** of **GIF met alpha** verstrekt deze extra **Kwantiseringsopties van de Kleur van het GIF**:<br>・ **Type** - Uitgezochte **(gebrek),** Web **, of** Macintosh **.** Als u **GIF met Alpha** selecteert, is de optie van Macintosh niet beschikbaar.<br>・ **Dithering** - selecteer **Onscherp** of **weg**.<br>・ **Aantal Kleuren** - ga een aantal 2 in - 256.<br>・ **Lijst van de Kleur** - ga een komma-gescheiden lijst in. Voer bijvoorbeeld voor wit, grijs en zwart `000000,888888,ffffff` in.<br><br> het kiezen van **PDF**, **TIFF**, of **TIFF met alpha** verstrekt deze extra optie:<br>・ **Compressie** - selecteer een compressiealgoritme. De opties van het algoritme voor PDF zijn **niets**, **Zip**, en **Jpeg**; voor TIFF zijn zij **niets**, **LZW**, **Jpeg**, en **Zip**; en voor TIFF met Alpha zijn **** niets , **LZW**, en **Zip**.<br><br> het kiezen van **PNG**, **PNG met Alpha**, of **EPS** verstrekt geen extra opties. |
+| **Formaat** | Kies een indeling in het menu.<br> het kiezen van **JPEG** biedt de volgende andere opties aan:<br>・ **Kwaliteit** - de de kwaliteitsschaal van JPEG is 1-100. De schaal is zichtbaar wanneer u de schuifregelaar versleept.<br>・ **laat de Downsampling van de Chrominantie van JPG** toe - omdat het oog minder gevoelig aan high-frequency kleureninformatie dan high-frequency luminantie is, verdelen de beelden van JPEG beeldinformatie in helderheid en kleurencomponenten. Wanneer een JPEG-afbeelding wordt gecomprimeerd, blijft de luminantiecomponent op volledige resolutie staan, terwijl de kleurcomponenten worden gedownsampled door het gemiddelde te nemen van groepen pixels. Met downsampling verlaagt u het gegevensvolume tot een halve of een derde, met minimale gevolgen voor de waargenomen kwaliteit. Downsampling is niet van toepassing op grijswaardenafbeeldingen. Met deze techniek vermindert u de hoeveelheid compressie die handig is voor afbeeldingen met veel contrast (bijvoorbeeld afbeeldingen met overlappende tekst).<br><br> het kiezen van **GIF** of **GIF met alpha** verstrekt deze extra **Kwantiserings van de Kleur van GIF** opties:<br>・ **Type** - Uitgezocht **Aangepast** (gebrek), **Web**, of **Macintosh**. Als u **GIF met Alpha** selecteert, is de optie van Macintosh niet beschikbaar.<br>・ **Dithering** - selecteer **Onscherp** of **weg**.<br>・ **Aantal Kleuren** - ga een aantal 2 in - 256.<br>・ **Lijst van de Kleur** - ga een komma-gescheiden lijst in. Voer bijvoorbeeld voor wit, grijs en zwart `000000,888888,ffffff` in.<br><br> het kiezen van **PDF**, **TIFF**, of **TIFF met alpha** verstrekt deze extra optie:<br>・ **Compressie** - selecteer een compressiealgoritme. De opties van het algoritme voor PDF zijn **niets**, **Zip**, en **Jpeg**; voor TIFF zijn zij **niets**, **LZW**, **Jpeg**, en **Zip**; en voor TIFF met Alpha zijn **niets. 5},** LZW **, en** Zip **.**<br><br> het kiezen van **PNG**, **PNG met Alpha**, of **EPS** verstrekt geen extra opties. |
 | **Verscherpen** | Selecteer **toelaten Eenvoudig het Verscherpen** om een basis het scherpen filter op het beeld toe te passen nadat al het schrapen plaatsvindt. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. |
 
 #### Opties op het tabblad Geavanceerd {#advanced-tab-options}
@@ -297,7 +334,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </ul>
     <div>
       Verscherpen wordt beschreven in
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media"> Gebruikend Beeld dat met Experience Manager Dynamic Media </a> video verscherpt, in <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files"> het verscherpen van een beeld </a> online Help onderwerp, en in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf"> Beste praktijken voor het verscherpen van beelden in Dynamic Media Classic </a> downloadbare PDF.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media"> Gebruikend Beeld dat met Experience Manager Dynamische Media </a> video verscherpt, in <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files"> het verscherpen van een beeld </a> online Help onderwerp, en in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf"> Beste praktijken voor het verscherpen van beelden in Dynamic Media Classic </a> downloadbare PDF.
     </div> </td>
   </tr>
   <tr>
@@ -317,7 +354,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
   </tr>
   <tr>
    <td><strong>Afbeelding wijzigen</strong></td>
-   <td><p>Buiten de gemeenschappelijke beeldmontages beschikbaar in UI, steunt Dynamic Media talrijke geavanceerde beeldwijzigingen die u in het <strong> Gewijzigde gebied van het Beeld </strong> kunt specificeren. Deze parameters worden bepaald in de <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview"> het bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: de volgende functionaliteit die in de API wordt vermeld, wordt niet ondersteund:</p>
+   <td><p>Buiten de gemeenschappelijke beeldmontages beschikbaar in UI, steunt de Dynamische Media talrijke geavanceerde beeldwijzigingen die u in het <strong> gebied van de Modifiers van het Beeld </strong> kunt specificeren. Deze parameters worden bepaald in de <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview"> het bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: de volgende functionaliteit die in de API wordt vermeld, wordt niet ondersteund:</p>
     <ul>
      <li>Standaardopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li>
      <li>Localisatie-opdrachten: <code>locale=</code> en <code>req=xlate</code></li>
@@ -326,7 +363,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Niet-core Dynamic Media services: SVG, Afbeeldingen renderen en Web-to-Print</li>
+     <li>Niet-core Dynamic Media-services: SVG, Afbeeldingen renderen en Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -334,7 +371,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 ### Voorinstellingsopties voor afbeeldingen definiëren met afbeeldingsopties {#defining-image-preset-options-with-image-modifiers}
 
-Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook afbeeldingsopties definiëren waarmee u meer opties hebt bij het definiëren van voorinstellingen voor afbeeldingen. Het beeld dat op het Beeld teruggeeft van Dynamic Media baseert die API teruggeeft en in detail in de [ Verwijzing van het Protocol van HTTP ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) bepaald.
+Naast de opties op de tabbladen Standaard en Geavanceerd kunt u ook afbeeldingsopties definiëren waarmee u meer opties hebt bij het definiëren van voorinstellingen voor afbeeldingen. Het beeld dat op het Dynamische Beeld teruggeeft van Media baseert API en in detail in de [ Verwijzing van het Protocol van HTTP ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) wordt bepaald.
 
 Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoetsen voor afbeeldingen.
 
@@ -384,19 +421,19 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
 ### Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
 
-1. Selecteer in Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** .
+1. Selecteer in Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole en ga vervolgens naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** .
 
    ![ 6_5_imagepreset-editpreset ](assets/6_5_imagepreset-editpreset.png)
 
 1. Selecteer een voorinstelling en selecteer vervolgens **[!UICONTROL Edit]** . Het venster **[!UICONTROL Edit Image Preset]** wordt geopend.
 1. Breng de wijzigingen aan en selecteer **[!UICONTROL Save]** om de wijzigingen op te slaan of **[!UICONTROL Cancel]** om de wijzigingen te annuleren.
 
-### Publish-voorinstellingen voor afbeeldingen {#publishing-image-presets}
+### Voorinstellingen voor afbeeldingen publiceren {#publishing-image-presets}
 
 Voorinstellingen voor afbeeldingen worden automatisch voor u gepubliceerd.
 
 ### Afbeeldingsvoorinstellingen verwijderen {#deleting-image-presets}
 
-1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben en het pictogram van Hulpmiddelen te selecteren.
+1. Selecteer in Experience Manager het Experience Manager-logo voor toegang tot de algemene navigatieconsole en selecteer het pictogram Extra.
 1. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Selecteer een voorinstelling en selecteer vervolgens **[!UICONTROL Delete]** . Dynamic Media bevestigt dat je het wilt verwijderen. Selecteer **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te selecteren om terug te keren naar Voorinstellingen afbeelding.
+1. Selecteer een voorinstelling en selecteer vervolgens **[!UICONTROL Delete]** . Dynamische media bevestigen dat u deze wilt verwijderen. Selecteer **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te selecteren om terug te keren naar Voorinstellingen afbeelding.

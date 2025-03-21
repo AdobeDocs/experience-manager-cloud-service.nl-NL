@@ -1,40 +1,74 @@
 ---
-title: Metagegevens XMP
-description: Leer meer over de metagegevensstandaard van het XMP (Extensible Metadata Platform) voor metagegevensbeheer. Deze wordt door de Experience Manager gebruikt als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
+title: XMP-metagegevens
+description: Meer informatie over de metagegevensstandaard van XMP (Extensible Metadata Platform) voor metagegevensbeheer. Experience Manager gebruikt deze als een gestandaardiseerde indeling voor het maken, verwerken en uitwisselen van metagegevens.
 contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1057'
 ht-degree: 12%
 
 ---
 
-# Metagegevens XMP {#xmp-metadata}
+# XMP-metagegevens {#xmp-metadata}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die Experience Manager Assets gebruikt voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [ inhoudsmodel ](#xmp-core-concepts) en [ gesteund door Adobe ](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
+Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [ inhoudsmodel ](#xmp-core-concepts) en wordt [ gesteund door Adobe ](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
 
-## XMP overzicht en ecosysteem {#xmp-ecosystem}
+## Overzicht en ecosysteem van XMP {#xmp-ecosystem}
 
-[!DNL Assets] biedt native ondersteuning voor de standaard voor XMP metagegevens. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP wordt ontworpen om de gemeenschappelijke norm te zijn die veelvoudige toepassingen toestaat om effectief met meta-gegevens te werken.
+[!DNL Assets] biedt native ondersteuning voor de XMP-metagegevensstandaard. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale middelen. XMP is ontworpen als de algemene standaard waarmee meerdere toepassingen effectief kunnen werken met metagegevens.
 
-Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP binnen de toepassingen van de Adobe om informatie door te geven over meerdere bestandsindelingen. De [!DNL Assets] -opslagplaats extraheert de XMP metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
+Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP-ondersteuning in Adobe-toepassingen om informatie door te geven in meerdere bestandsindelingen. De [!DNL Assets] -opslagplaats extraheert de XMP-metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
 
-XMP standaardiseren hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
+XMP normaliseert hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
-Alle verouderde meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
+Alle oudere metagegevens van EXIF, ID3 of Microsoft Office worden automatisch vertaald naar XMP. Deze gegevens kunnen worden uitgebreid ter ondersteuning van klantspecifiek metagegevensschema, zoals productcatalogi.
 
 Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een specifieke entiteit die als middel wordt bedoeld; namelijk zijn de eigenschappen &quot;over&quot;de middel. In het geval van XMP is de bron altijd het middel.
 
@@ -44,44 +78,44 @@ XMP wordt doorgaans geserialiseerd en opgeslagen met behulp van een subset van h
 
 ### Voordelen van XMP {#advantages-of-xmp}
 
-XMP heeft de volgende voordelen ten opzichte van andere coderingsnormen en -schema&#39;s:
+XMP heeft de volgende voordelen ten opzichte van andere coderingsstandaarden en -schema&#39;s:
 
 * Op XMP gebaseerde metagegevens zijn zeer krachtig en fijnkorrelig.
-* Met XMP kunt u meerdere waarden voor één eigenschap hebben.
+* Met XMP kunt u meerdere waarden voor één eigenschap gebruiken.
 * XMP heeft gestandaardiseerde codering, waarmee u metagegevens eenvoudig kunt uitwisselen.
 * XMP is uitbreidbaar. U kunt aanvullende informatie aan uw elementen toevoegen.
 
-De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste typen metagegevens kunt toevoegen aan de XMP. EXIF heeft daarentegen geen vaste lijst met eigenschappen die niet kunnen worden uitgebreid.
+De XMP-standaard is uitbreidbaar, zodat u aangepaste typen metagegevens kunt toevoegen aan de XMP-gegevens. EXIF heeft daarentegen geen vaste lijst met eigenschappen die niet kunnen worden uitgebreid.
 
 >[!NOTE]
 >
->XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens wilt meenemen in XMP, bijvoorbeeld miniatuurafbeeldingen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64` .
+>In XMP kunnen binaire gegevenstypen doorgaans niet worden ingesloten. Als u binaire gegevens wilt meenemen in XMP, bijvoorbeeld miniatuurafbeeldingen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64` .
 
-### XMP kernbegrippen {#xmp-core-concepts}
+### Basisbegrippen van XMP {#xmp-core-concepts}
 
 **Namespaces en schema&#39;s**
 
-Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die
-het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
+Een XMP-schema is een set eigenschapnamen in een algemene XML-naamruimte die
+het gegevenstype en de beschrijvende informatie. Een XMP-schema wordt aangeduid met de XML-naamruimte-URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
 Bijvoorbeeld, zou het **bezit van de Maker** in twee onafhankelijk ontworpen schema&#39;s de persoon kunnen betekenen die tot de activa leidde of het de toepassing kon betekenen die tot de activa (bijvoorbeeld, Adobe Photoshop) leidde.
 
-**XMP eigenschappen en waarden**
+**eigenschappen en waarden van XMP**
 
-XMP kunnen eigenschappen van een of meer schema&#39;s omvatten. Een standaardsubset die bijvoorbeeld door veel Adobe-toepassingen wordt gebruikt, kan het volgende zijn:
+XMP kan eigenschappen van een of meer schema&#39;s bevatten. Een standaardsubset die door veel Adobe-toepassingen wordt gebruikt, kan bijvoorbeeld het volgende zijn:
 
 * Dublin-kernschema: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
-* XMP basisschema: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
-* Schema voor XMP rechtenbeheer: `xmpRights:WebStatement`, `xmpRights:Marked`
-* Schema voor mediabeheer XMP: `xmpMM:DocumentID`
+* XMP-basisschema: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* XMP-schema voor rechtenbeheer: `xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP-schema voor mediabeheer: `xmpMM:DocumentID`
 
 **de alternatieven van de Taal**
 
 XMP biedt u de mogelijkheid om een eigenschap `xml:lang` aan teksteigenschappen toe te voegen om de taal van de tekst op te geven.
 
-## Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
+## Terugschrijven naar XMP-uitvoeringen {#xmp-writeback-to-renditions}
 
-Met deze XMP in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd.
+Met deze XMP-schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd.
 Wanneer u de metagegevens van een element wijzigt vanuit [!DNL Assets] of wanneer u het element uploadt, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie. Met de functie Terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De functie schrijft alleen die metagegevenseigenschappen terug die `jcr` naamruimte gebruiken. Een eigenschap met de naam `dc:title` wordt teruggeschreven, maar een eigenschap met de naam `mytitle` niet.
 
 Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element met de naam `Classic Leather` to `Nylon` wijzigt.
@@ -96,7 +130,7 @@ In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL T
 >
 >De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets] . Zie hoe te [ meta-gegevensschrijver ](#enable-xmp-writeback) toelaten. MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
-### Terugschrijven XMP inschakelen {#enable-xmp-writeback}
+### Terugschrijven naar XMP inschakelen {#enable-xmp-writeback}
 
 [!UICONTROL DAM Metadata Writeback] wordt gebruikt om de metagegevens van een element te schrijven. Voer een van de volgende drie methoden uit om terugschrijven in te schakelen:
 
@@ -163,4 +197,4 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

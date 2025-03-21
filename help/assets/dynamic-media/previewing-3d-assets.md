@@ -1,22 +1,59 @@
 ---
 title: 3D-elementen voorvertonen
-description: Leer hoe u een voorvertoning van 3D-elementen in Experience Manager kunt weergeven.
+description: Leer hoe u een voorvertoning van 3D-middelen in Experience Manager kunt bekijken.
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
 # 3D-elementen voorvertonen in Adobe Experience Manager{#previewing-3d-assets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Experience Manager Assets ondersteunt het opnemen, beheren, voorvertonen en leveren van 3D-elementen.
@@ -68,7 +105,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer - zoals een werkstation, l
 
 **aan voorproef 3D activa in Experience Manager:**
 
-1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
+1. Zorg ervoor dat u 3D-elementen hebt geüpload naar Experience Manager.
 Zie [ Gesteunde formaten voor 3D voorproef ](#supported-3d-previewing-assets) en [ activa ](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
 1. Ga vanuit Experience Manager op de pagina **[!UICONTROL Navigation]** naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** .
 

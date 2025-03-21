@@ -5,23 +5,57 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '763'
 ht-degree: 4%
 
 ---
 
 # Metagegevens van elementen in bulk importeren en exporteren {#import-and-export-asset-metadata-in-bulk}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Met Adobe Experience Manager Assets kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
 ## Metagegevens importeren {#import-metadata}
 
-De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege de activiteit voor het terugschrijven van metagegevens met behulp van de asset microservices. De Adobe adviseert dat u om het even welke bulkverrichtingen tijdens slank servergebruik plant zodat de prestaties voor andere gebruikers niet worden beïnvloed.
+De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege de activiteit voor het terugschrijven van metagegevens met behulp van de asset microservices. Adobe raadt u aan om bulkbewerkingen tijdens het gebruik van een slanke server te plannen, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
 >[!NOTE]
 >
@@ -36,7 +70,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | Batchgrootte | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | Veldscheider | De standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
    | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|` . |
-   | Workflows starten | Standaard false. Als deze eigenschap is ingesteld op `true` en de standaardinstellingen zijn van kracht voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
+   | Workflows starten | Standaard false. Wanneer deze eigenschap is ingesteld op `true` en de standaardinstellingen zijn van kracht voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP-gegevens schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Selecteer **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
@@ -55,7 +89,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 
 ## Metagegevens exporteren {#export-metadata}
 
-U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt Experience Manager de eigenschappen van het knooppunt asset `jcr:content/metadata` en de onderliggende knooppunten en exporteert de metagegevenseigenschappen in een CSV-bestand.
+U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt Experience Manager de eigenschappen van het knooppunt asset `jcr:content/metadata` en de onderliggende knooppunten en exporteert het de eigenschappen van metagegevens in een CSV-bestand.
 
 Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs exporteren:
 
@@ -97,7 +131,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 * [Metagegevens beheren](manage-metadata.md)
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

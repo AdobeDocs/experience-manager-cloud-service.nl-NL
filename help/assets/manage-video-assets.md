@@ -5,21 +5,55 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4661'
+source-wordcount: '4689'
 ht-degree: 4%
 
 ---
 
 # Video-elementen beheren {#manage-video-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
@@ -57,19 +91,19 @@ Voor bestaande video-elementen in [!DNL Experience Manager Assets] moet u **[!UI
 * In MXF-bestanden worden geen videovoorvertoningen weergegeven, ook al wordt de vertoning gegenereerd.
 * WebM-bestanden genereren geen voorvertoningsuitvoeringen omdat deze native door webbrowsers kunnen worden afgespeeld.
 
-## Publish-video-elementen {#publish-video-assets}
+## Video-elementen publiceren {#publish-video-assets}
 
 Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Voor details, zie [  [!DNL Dynamic Media]  activa ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.
 
-## Publish-video&#39;s naar YouTube {#publishing-videos-to-youtube}
+## Video&#39;s publiceren naar YouTube {#publishing-videos-to-youtube}
 
 U kunt video-elementen die in Experience Manager Assets worden beheerd, rechtstreeks publiceren naar een YouTube-kanaal dat u eerder hebt gemaakt.
 
-Als u video-elementen naar YouTube wilt publiceren, kunt u tags toewijzen aan video-elementen in Experience Manager Assets. U koppelt deze tags aan een YouTube-kanaal. Als de tag van een video-element overeenkomt met de tag van een YouTube-kanaal, wordt de video gepubliceerd naar YouTube. Publish naar YouTube treedt op samen met een normale publicatie van de video zolang een bijbehorende tag wordt gebruikt.
+Als u video-elementen naar YouTube wilt publiceren, kunt u tags toewijzen aan video-elementen in Experience Manager Assets. U koppelt deze tags aan een YouTube-kanaal. Als de tag van een video-element overeenkomt met de tag van een YouTube-kanaal, wordt de video gepubliceerd naar YouTube. Publiceren naar YouTube vindt plaats samen met een normale publicatie van de video zolang een bijbehorende tag wordt gebruikt.
 
-YouTube voert zijn eigen codering uit. Als zodanig wordt het oorspronkelijke videobestand dat naar de Experience Manager is geüpload, gepubliceerd naar YouTube in plaats van elke video-uitvoering die door de codering van Dynamic Media is gemaakt. Hoewel het niet nodig is om video&#39;s te verwerken met Dynamic Media, wordt verwacht dat dit gebeurt voor het geval dat een viewer-voorinstelling nodig is voor het afspelen.
+YouTube voert zijn eigen codering uit. Als zodanig wordt het oorspronkelijke videobestand dat naar Experience Manager is geüpload, gepubliceerd naar YouTube in plaats van elke video-uitvoering die door Dynamic Media is gemaakt. Hoewel het niet nodig is om video&#39;s te verwerken met behulp van dynamische media, wordt verwacht dat dit gebeurt voor het geval dat een viewervoorinstelling nodig is voor het afspelen.
 
-Wanneer u het videoverwerkingsprofiel overslaat en rechtstreeks naar YouTube publiceert, betekent dit gewoon dat uw video-element in Experience Manager Asset geen zichtbare miniatuur krijgt. Het betekent ook dat video&#39;s die niet zijn gecodeerd, niet werken met Dynamic Media-middelen.
+Wanneer u het videoverwerkingsprofiel overslaat en rechtstreeks naar YouTube publiceert, betekent dit gewoon dat uw video-element in Experience Manager Asset geen zichtbare miniatuur krijgt. Het betekent ook dat video&#39;s die niet zijn gecodeerd, niet werken met de elementtypen Dynamische media.
 
 Bij het publiceren van video-elementen naar YouTube-servers moeten de volgende taken worden uitgevoerd om een veilige en veilige server-naar-server verificatie met YouTube te garanderen:
 
@@ -78,7 +112,7 @@ Bij het publiceren van video-elementen naar YouTube-servers moeten de volgende t
 1. [Codes toevoegen voor publicatie](#adding-tags-for-publishing)
 1. [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem)
 1. [(Optioneel) Automatiseer de standaardeigenschappen van YouTube voor uw geüploade video&#39;s](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publish-video&#39;s naar uw YouTube-kanaal](#publishing-videos-to-your-youtube-channel)
+1. [Video&#39;s publiceren naar uw YouTube-kanaal](#publishing-videos-to-your-youtube-channel)
 1. [(Optioneel) Controleer de gepubliceerde video op YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [YouTube-URL&#39;s koppelen aan uw webtoepassing](#linking-youtube-urls-to-your-web-application)
 
@@ -200,13 +234,13 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
 ### Codes toevoegen voor publicatie {#adding-tags-for-publishing}
 
-Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Om markeringen voor het publiceren toe te voegen, zie [ Markeringen beheren ](/help/sites-cloud/authoring/sites-console/tags.md).
+Experience Manager koppelt tags aan een of meer YouTube-kanalen om uw video&#39;s naar YouTube te publiceren. Om markeringen voor het publiceren toe te voegen, zie [ Markeringen beheren ](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Of, als u van plan bent om de standaardmarkeringen in Experience Manager te gebruiken, kunt u deze taak overslaan en naar [ Opstelling YouTube in Experience Manager ](#setting-up-youtube-in-aem) gaan.
 
 >[!NOTE]
 >
->Nadat de Cloud Service wordt gevormd, wordt andere configuratie niet vereist om de YouTube Publish replicatieagent op dit punt toe te laten. De reden is omdat het werd toegelaten toen de configuratie van de Cloud Service werd bewaard.
+>Nadat de Cloud Service is geconfigureerd, is er geen andere configuratie vereist om de YouTube Publish Replication-agent op dit moment in te schakelen. De reden hiervoor is dat de toepassing was ingeschakeld toen de Cloud Service-configuratie werd opgeslagen.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -220,15 +254,15 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### YouTube instellen in Experience Manager {#setting-up-youtube-in-aem}
 
-Vanaf Experience Manager 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd om YouTube-publicaties in Experience Manager in te stellen. Op basis van de geïnstalleerde Experience Manager die u gebruikt, voert u een van de volgende handelingen uit:
+Vanaf Experience Manager 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd om YouTube-publicaties in Experience Manager in te stellen. Voer een van de volgende handelingen uit op basis van de geïnstalleerde versie van Experience Manager die u gebruikt:
 
 * Om YouTube in Experience Manager vóór 6.4 te vormen, zie [ Opstelling YouTube in Experience Manager vóór 6.4 ](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
 * Om YouTube in Experience Manager 6.4 of recenter te vormen, zie [ Opstelling YouTube in Experience Manager 6.4 en later ](#setting-up-youtube-in-aem-and-later).
 
 #### YouTube instellen in Experience Manager 6.4 en hoger {#setting-up-youtube-in-aem-and-later}
 
-1. Meld u als beheerder aan bij uw exemplaar van Dynamic Media.
-1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkertrack naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]** .
+1. Zorg ervoor dat u zich als beheerder aanmeldt bij de instantie van Dynamic Media.
+1. In de linkerbovenhoek van Experience Manager selecteert u het Experience Manager-logo en navigeert u in de linkerrails naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]** .
 1. Selecteer **[!UICONTROL global]** (niet selecteren).
 
 1. Selecteer **[!UICONTROL Create]** in de rechterbovenhoek van de algemene pagina.
@@ -262,8 +296,8 @@ Laat de pagina YouTube-configuratie maken open. U keert er zo meteen naar terug.
 
    Stel nu labels in voor publicatie.
 
-1. **[!UICONTROL Setting up tags for publishing]** - Selecteer op de pagina Cloud Servicen > YouTube het potloodpictogram om de lijst met tags die u wilt gebruiken te bewerken.
-1. Als u de lijst met beschikbare labels in de Experience Manager wilt weergeven, selecteert u het vervolgkeuzelijstpictogram (ondersteboven ingedrukt caret).
+1. **[!UICONTROL Setting up tags for publishing]** - Selecteer op de pagina Cloud Services > YouTube het potloodpictogram om de lijst met tags die u wilt gebruiken te bewerken.
+1. Als u de lijst met beschikbare labels in Experience Manager wilt weergeven, selecteert u het vervolgkeuzelijstpictogram (ondersteboven ingedrukt caret).
 1. Selecteer een of meer tags om deze toe te voegen.
 
    Als u een toegevoegde tag wilt verwijderen, selecteert u de tag en selecteert u **[!UICONTROL X]** .
@@ -274,9 +308,9 @@ Laat de pagina YouTube-configuratie maken open. U keert er zo meteen naar terug.
 
 #### YouTube instellen in Experience Manager vóór 6.4 {#setting-up-youtube-in-aem-before}
 
-1. Meld u als beheerder aan bij uw exemplaar van Dynamic Media.
+1. Zorg ervoor dat u zich als beheerder aanmeldt bij de instantie van Dynamic Media.
 
-1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkertrack naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]** .
+1. Selecteer in de linkerbovenhoek van Experience Manager het Experience Manager-logo en navigeer vervolgens in de linkerrails naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]** .
 1. Selecteer onder YouTube onder de kop Services van derden de optie **[!UICONTROL Configure now]** .
 1. Voer in het dialoogvenster Configuratie maken een titel (verplicht) en een naam (optioneel) in de desbetreffende velden in.
 1. Selecteer **[!UICONTROL Create]** .
@@ -308,8 +342,8 @@ Laat het dialoogvenster YouTube-accountinstellingen open. U keert er zo meteen n
 
    Stel nu labels in voor publicatie.
 
-1. **[!UICONTROL Setting up tags for publishing]** - Selecteer op de pagina Cloud Servicen > YouTube het potloodpictogram om de lijst met tags die u wilt gebruiken te bewerken.
-1. Als u de lijst met beschikbare labels in de Experience Manager wilt weergeven, selecteert u het vervolgkeuzelijstpictogram (ondersteboven ingedrukt caret).
+1. **[!UICONTROL Setting up tags for publishing]** - Selecteer op de pagina Cloud Services > YouTube het potloodpictogram om de lijst met tags die u wilt gebruiken te bewerken.
+1. Als u de lijst met beschikbare labels in Experience Manager wilt weergeven, selecteert u het vervolgkeuzelijstpictogram (ondersteboven ingedrukt caret).
 1. Selecteer een of meer tags om deze toe te voegen.
 
    Om een markering te schrappen die u hebt toegevoegd, selecteer de markering, en selecteer **X**.
@@ -320,13 +354,13 @@ Laat het dialoogvenster YouTube-accountinstellingen open. U keert er zo meteen n
 
 ### (Optioneel) Automatiseer de standaardeigenschappen van YouTube voor uw geüploade video&#39;s {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-U kunt desgewenst de instelling van YouTube-eigenschappen automatiseren bij het uploaden van uw video&#39;s. Maak een verwerkingsprofiel voor metagegevens in de Experience Manager.
+U kunt desgewenst de instelling van YouTube-eigenschappen automatiseren bij het uploaden van uw video&#39;s. Maak een verwerkingsprofiel voor metagegevens in Experience Manager.
 
 Als u het verwerkingsprofiel voor metadata wilt maken, kopieert u eerst waarden uit de velden **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]** en **[!UICONTROL Choices]** die te vinden zijn in de metadataschema&#39;s voor video. Vervolgens kunt u het verwerkingsprofiel voor YouTube-videometagegevens samenstellen door deze waarden eraan toe te voegen.
 
 **om het plaatsen van standaardYouTube eigenschappen voor uw geupload video&#39;s te automatiseren:**
 
-1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkertrack naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** .
+1. Selecteer in de linkerbovenhoek van Experience Manager het Experience Manager-logo en navigeer vervolgens in de linkerrails naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** .
 1. Selecteer **[!UICONTROL default]**. (Voeg geen vinkje toe aan het selectievak links van &quot;standaard&quot;.)
 1. Schakel op de pagina **[!UICONTROL default]** het vakje links van **[!UICONTROL video]** in en selecteer vervolgens **[!UICONTROL Edit]** .
 1. Selecteer het tabblad **[!UICONTROL Advanced]** op de pagina van de Editor van het metagegevensschema.
@@ -349,7 +383,7 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
 Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later nodig wanneer u uw verwerkingsprofiel voor metagegevens maakt. Laat de teksteditor geopend.
 
 1. Selecteer **[!UICONTROL Cancel]** in de rechterbovenhoek van de pagina van de Editor van het metagegevensschema.
-1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer vervolgens in de linkertrack **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** .
+1. Selecteer in de linkerbovenhoek van Experience Manager het Experience Manager-logo en selecteer vervolgens in de linkertrack **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** .
 
 1. Selecteer **[!UICONTROL Create]** in de rechterbovenhoek van de pagina Metagegevensprofielen.
 1. Voer in het tekstveld **[!UICONTROL Profile title]** in het dialoogvenster Metagegevensprofiel toevoegen de naam `YouTube Video` in en selecteer **[!UICONTROL Create]** .
@@ -381,19 +415,19 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
 
    Zie [Metadataprofielen](/help/assets/metadata-profiles.md) en [Videoprofielen](/help/assets/dynamic-media/video-profiles.md).
 
-### Publish-video&#39;s naar uw YouTube-kanaal {#publishing-videos-to-your-youtube-channel}
+### Video&#39;s publiceren naar uw YouTube-kanaal {#publishing-videos-to-your-youtube-channel}
 
-Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proces stelt de Experience Manager in kennis van de elementen die naar uw YouTube-kanaal moeten worden gepubliceerd.
-
->[!NOTE]
->
->Publish publiceert niet automatisch naar YouTube. Wanneer Dynamische media is ingesteld, zijn er twee publicatieopties waaruit u kunt kiezen: **[!UICONTROL Immediately]** of **[!UICONTROL Upon Activation]**.
->
->**[!UICONTROL Publish Immediately]** betekent dat het geüploade element-nadat het met IPS-wordt gesynchroniseerd automatisch aan het leveringssysteem wordt gepubliceerd. Dat geldt voor Dynamic Media, maar dat geldt niet voor YouTube. Als u wilt publiceren naar YouTube, moet u publiceren als Experience Manager Auteur.
+Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proces stelt Experience Manager in kennis van welke middelen u naar uw YouTube-kanaal wilt publiceren.
 
 >[!NOTE]
 >
->Voor het publiceren van inhoud vanuit YouTube gebruikt Experience Manager de **[!UICONTROL Publish to YouTube]** -workflow. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
+>Publiceren wordt niet automatisch naar YouTube gepubliceerd. Wanneer Dynamische media is ingesteld, zijn er twee publicatieopties waaruit u kunt kiezen: **[!UICONTROL Immediately]** of **[!UICONTROL Upon Activation]**.
+>
+>**[!UICONTROL Publish Immediately]** betekent dat het geüploade element-nadat het met IPS-wordt gesynchroniseerd automatisch aan het leveringssysteem wordt gepubliceerd. Dit geldt weliswaar voor Dynamic Media, maar niet voor YouTube. Als u wilt publiceren naar YouTube, moet u publiceren via Experience Manager Author.
+
+>[!NOTE]
+>
+>Als u inhoud uit YouTube wilt publiceren, gebruikt Experience Manager de **[!UICONTROL Publish to YouTube]** -workflow. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
 >
 >Zie [ video het coderen van de Monitor en YouTube het publiceren vooruitgang ](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
@@ -429,7 +463,7 @@ Als er na acht uur nog steeds een statusbericht met de tekst **[!UICONTROL Uploa
 
 ### YouTube-URL&#39;s koppelen aan uw webtoepassing {#linking-youtube-urls-to-your-web-application}
 
-U kunt een YouTube URL-tekenreeks verkrijgen die door Dynamic Media wordt gegenereerd nadat u de video hebt gepubliceerd. Wanneer u de YouTube-URL kopieert, wordt deze op het Klembord gedownload, zodat u deze indien nodig kunt plakken naar pagina&#39;s in uw website of toepassing.
+U kunt een YouTube URL-tekenreeks verkrijgen die wordt gegenereerd door Dynamic Media nadat u de video hebt gepubliceerd. Wanneer u de YouTube-URL kopieert, wordt deze op het Klembord gedownload, zodat u deze indien nodig kunt plakken naar pagina&#39;s in uw website of toepassing.
 
 >[!NOTE]
 >
@@ -451,11 +485,11 @@ Wanneer u de publicatie van een video-element in Experience Manager ongedaan maa
 
 >[!CAUTION]
 >
->Als u een video rechtstreeks uit YouTube verwijdert, is de Experience Manager zich hiervan niet bewust en gedragen deze zich alsof de video nog steeds naar YouTube wordt gepubliceerd. Publiceer de publicatie van een video-element vanuit YouTube altijd ongedaan als Experience Manager.
+>Als u een video rechtstreeks uit YouTube verwijdert, is Experience Manager zich hiervan niet bewust en gedraagt het zich alsof de video nog steeds naar YouTube wordt gepubliceerd. Publiceer de publicatie van een video-element vanuit YouTube altijd ongedaan door Experience Manager.
 
 >[!NOTE]
 >
->Als u inhoud uit YouTube wilt verwijderen, gebruikt Experience Manager de **[!UICONTROL Unpublish from YouTube]** -workflow. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
+>Experience Manager gebruikt de **[!UICONTROL Unpublish from YouTube]** -workflow om inhoud uit YouTube te verwijderen. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
 >
 >Zie [ video het coderen van de Monitor en YouTube het publiceren vooruitgang ](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -501,7 +535,7 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
    >Het kan lange tijd voor mislukking/foutenmeldingen duren om definitief te worden geregistreerd toe te schrijven aan veelvoudige werkschemeconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
    >* Configuratie Apache Sling-taakwachtrij
-   >* Adobe Granite Workflow External Process Handler
+   >* Adobe Granite Workflow External Process Job Handler
    >* Tijdelijke wachtrij voor Granite Workflow
    >
    >U kunt de eigenschappen **[!UICONTROL retries]** , **[!UICONTROL retry delay]** en **[!UICONTROL timeout]** in deze configuraties aanpassen.
@@ -533,7 +567,7 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
    >Het kan lange tijd voor het foutenbericht duren om definitief te worden geregistreerd toe te schrijven aan veelvoudige werkschemeconfiguraties op **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
    >* Configuratie Apache Sling-taakwachtrij
-   >* Adobe Granite Workflow External Process Handler
+   >* Adobe Granite Workflow External Process Job Handler
    >* Tijdelijke wachtrij voor Granite Workflow
    >
    >U kunt de eigenschappen **[!UICONTROL retries]** , **[!UICONTROL retry delay]** en **[!UICONTROL timeout]** in deze configuraties aanpassen.
@@ -649,9 +683,9 @@ U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
->* [ de videodocumentatie van Dynamic Media ](/help/assets/dynamic-media/video.md).
+>* [ Dynamische de videodocumentatie van Media ](/help/assets/dynamic-media/video.md).
 >* [ ken meer over gebruik, types, en configuratie van verwerkingsprofielen ](/help/assets/asset-microservices-configure-and-use.md).

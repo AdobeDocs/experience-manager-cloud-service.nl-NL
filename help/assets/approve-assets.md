@@ -1,25 +1,59 @@
 ---
-title: Elementen in Experience Manager goedkeuren
+title: Elementen goedkeuren in Experience Manager
 description: Leer hoe te om activa in  [!DNL Experience Manager] goed te keuren.
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
 
 # Elementen goedkeuren in [!DNL Experience Manager]
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamic Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Merkbeheerders en marketeers houden strikte controle over merkmiddelen. Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
 
@@ -27,7 +61,7 @@ U kunt in AEM Assets middelen goedkeuren om het beheer van bedrijfsmiddelen te s
 
 ## Voordat u begint {#pre-requisites}
 
-U moet toegang hebben tot AEM Assets as a Cloud Service en machtigingen om de eigenschap **[!UICONTROL Review Status]** voor een element te kunnen bewerken.
+U moet toegang hebben tot AEM Assets as a Cloud Service en machtigingen hebben om de eigenschap **[!UICONTROL Review Status]** voor een element te bewerken.
 
 ## Configuratie
 
@@ -74,7 +108,7 @@ Voer de volgende stappen uit om elementen in [!DNL Experience Manager Admin view
 Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U kunt in bulk goedgekeurde activa goedkeuren om het goedkeuringsproces te versnellen, tijd te besparen en productiviteit te verbeteren.
 <br> volg deze stappen om bulkactiva in [!DNL Experience Manager Admin view] goed te keuren:
 
-1. Maak een map in de ontwerpomgeving (https://author-pXXX-eYYY.adobeaemcloud.com). Vervang _XXX_ met uw programma identiteitskaart en _JJJ_ met milieu identiteitskaart van de Experience Manager.
+1. Maak een map in de ontwerpomgeving (https://author-pXXX-eYYY.adobeaemcloud.com). Vervang _XXX_ met uw programmaidentiteitskaart en _JJJ_ met milieuidentiteitskaart van Experience Manager.
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** .
 1. Klik op **[!UICONTROL Create]** rechtsboven op de pagina.
 1. Voeg een profieltitel toe en klik op **[!UICONTROL Create]** . Het metagegevensprofiel is gemaakt.
@@ -112,9 +146,9 @@ En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt se
 
 1. Selecteer **[!UICONTROL Approved]** in het **[!UICONTROL Status]** -veld dat beschikbaar is in de sectie [!UICONTROL Properties] in het rechterdeelvenster.
 
-   Als u de status als `Approved` selecteert, en als [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) of [ Content Hub ](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
+   Als u de status als `Approved` selecteert, en als [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) of [ Content Hub ](/help/assets/product-overview.md), of allebei voor uw Experience Manager Assets worden toegelaten, kunt u `Delivery` bekijken en `Content Hub` opties beschikbaar op het **[!UICONTROL Approval Target]** gebied.
 
-   * Selecteer **[!UICONTROL Delivery]** om de middelen beschikbaar te maken voor zowel Dynamic Media met OpenAPI-mogelijkheden als Content Hub. Als u Content Hub niet hebt ingeschakeld, stelt u met deze optie de middelen alleen beschikbaar voor Dynamic Media met OpenAPI-mogelijkheden.
+   * Selecteer **[!UICONTROL Delivery]** om de middelen beschikbaar te maken voor zowel Dynamic Media met OpenAPI-mogelijkheden als Content Hub. Als Content Hub niet is ingeschakeld, maakt u met deze optie de middelen alleen beschikbaar voor Dynamic Media met OpenAPI-mogelijkheden.
    * Selecteer **[!UICONTROL Content Hub]** om de middelen beschikbaar te maken voor Content Hub.
 
    ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
@@ -135,7 +169,7 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
 
 1. Selecteer het element en klik op **[!UICONTROL Details]** .
 
-1. Klik op het Dynamic Media-pictogram in het rechterdeelvenster.
+1. Klik op het pictogram Dynamische media in het rechterdeelvenster.
 
 1. Selecteer **[!UICONTROL Dynamic Media with OpenAPI]** beschikbaar in het deelvenster **[!UICONTROL Dynamic Media]** .
 
@@ -146,4 +180,4 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
    >
    De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
 
-Voor informatie over andere vertoningen die binnen het paneel van Dynamic Media tonen, zie [ Mening en download de vertoningen van Dynamic Media ](/help/assets/renditions.md#view-download-dm-renditions).
+Voor informatie over andere vertoningen die binnen het Dynamische paneel van Media tonen, zie [ Mening en download Dynamische vertoningen van Media ](/help/assets/renditions.md#view-download-dm-renditions).

@@ -5,18 +5,55 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1938'
 ht-degree: 7%
 
 ---
 
 # Sets draaien{#spin-sets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek ophalen.
 
-Een centrifugeerset simuleert een kijkervaring van 360°. Dynamic Media biedt centrifugesets met één as waarin gebruikers een item kunnen roteren. Bovendien kunnen gebruikers met een paar eenvoudige muisklikken in- en uitzoomen op een vrije vorm en een willekeurige weergave pannen. Op deze manier kunnen gebruikers een item vanuit een bepaald gezichtspunt nader onderzoeken.
+Een centrifugeerset simuleert een kijkervaring van 360°. Dynamische media biedt centrifugesets met één as waarin gebruikers een item kunnen roteren. Bovendien kunnen gebruikers met een paar eenvoudige muisklikken in- en uitzoomen op een vrije vorm en een willekeurige weergave pannen. Op deze manier kunnen gebruikers een item vanuit een bepaald gezichtspunt nader onderzoeken.
 
 De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UICONTROL SPINSET]**. Als de Spin-set is gepubliceerd, staat bovendien de publicatiedatum (aangegeven door het pictogram **[!UICONTROL World]** ) op de banner samen met de laatste wijzigingsdatum die wordt aangegeven door het pictogram **[!UICONTROL Pencil]** .
 
@@ -26,13 +63,13 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 >
 >Voor informatie over het gebruikersinterface van Assets, zie [ Leidend activa met Aanraakinterface ](/help/assets/manage-digital-assets.md) en pas het op een nieuwe omslag toe waar uw beeldreeks activa worden geupload.
 
-Wanneer u een reeks van de Rotatie creeert, adviseert de Adobe de volgende beste praktijken en handhaaft de volgende grens:
+Als u een Spin-set maakt, raadt Adobe de volgende aanbevolen procedures aan en past het de volgende limiet toe:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limitations.md).[
+Zie ook [ Dynamische beperkingen van Media ](/help/assets/dynamic-media/limitations.md).
 
 ## Snel starten: centrifuges {#quick-start-spin-sets}
 
@@ -50,7 +87,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
-   Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
+   Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
 
 1. [ creeer de Reeksen van de Rotatie ](#creating-spin-sets).
 
@@ -72,7 +109,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** , dat beschikbaar is in het keuzemenu voor de linkertrack.
 
-1. [ de Reeksen van de Rotatie van Publish ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [ publiceer de Reeksen van de Rotatie ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Als u een centrifugeerset publiceert, worden de URL- en insluitreeks geactiveerd. Bovendien moet u [ de vooraf ingestelde kijker ](/help/assets/dynamic-media/managing-viewer-presets.md) publiceren.
 
@@ -90,7 +127,7 @@ Indien nodig, kunt u [ uitgeven de Reeksen van de Rotatie ](#editing-spin-sets).
 
 U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
-Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
+Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
 
 U kunt beelden voor de Reeksen van de Rotatie zoals u [ om het even welke andere activa in Experience Manager Assets ](/help/assets/manage-digital-assets.md) uploaden.
 
@@ -99,7 +136,7 @@ U kunt beelden voor de Reeksen van de Rotatie zoals u [ om het even welke andere
 Hieronder vindt u een aantal aanbevolen procedures voor het uitvoeren van gecentreerde afbeeldingen. Over het algemeen geldt dat hoe meer afbeeldingen u in een centrifugeset hebt, hoe beter het effect van het draaien van de afbeelding is. Als u echter veel afbeeldingen in de set opneemt, neemt de laadtijd van de afbeeldingen toe. Experience Manager raadt de volgende richtlijnen aan voor het maken van foto&#39;s voor gebruik in centrifuges:
 
 * Gebruik minimaal 8-12 afbeeldingen in een eendimensionale centrifuge en 16-24 afbeeldingen in een tweedimensionale centrifugeset. U hebt minimaal 8 afbeeldingen nodig om 360 graden te kunnen draaien. Eendimensionale centrifuges komen vaker voor omdat het maken van tweedimensionale centrifuges arbeidsintensief is.
-* Gebruik een indeling zonder verlies. U wordt aangeraden TIFF en PNG te gebruiken.
+* Gebruik een indeling zonder verlies. TIFF en PNG worden aanbevolen.
 * Masker alle afbeeldingen zodat het item op een zuiver witte of andere achtergrond met veel contrast wordt weergegeven. Voeg desgewenst schaduwen toe.
 * Zorg ervoor dat de productdetails goed verlicht en in nadruk zijn.
 * Neem spin beelden voor modekleding met een mannequin of een model. Vaak wordt de mannequin gemaskeerd (met behulp van een glazen mannequin) of wordt in de afbeelding een gestileerde mannequin/dressform weergegeven. U kunt een op-model spin-reeks tot stand brengen door het aantal hoeken te bepalen. Markeer elke hoek met band op de vloer zodat u het model kunt begeleiden en in de richting van elke opname kunt kijken.
@@ -112,19 +149,19 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 >
 >U kunt ook automatisch spinsets maken via [voorinstellingen voor batchsets](/help/assets/dynamic-media/config-dm.md). **Belangrijk:** Batchsets worden gecreëerd door IPS (Image Production System) als onderdeel van assetopname.
 >
->Zie &quot;Creërend partij vastgestelde vooraf instelt om de Reeksen van het Beeld en Reeksen van de Draai&quot;in [ te produceren vormen Dynamic Media ](/help/assets/dynamic-media/config-dm.md).
+>Zie &quot;Creërend partij vastgestelde vooraf instelt om de Reeksen van het Beeld en de Reeksen van de Draai&quot;in [ Dynamische Media ](/help/assets/dynamic-media/config-dm.md) te produceren.
 
 >[!NOTE]
 >
 >De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo bestelt dat de centrifuge een vloeiende weergave van 360° heeft.
 
-Wanneer u een reeks van de Rotatie creeert, adviseert de Adobe de volgende beste praktijken en handhaaft de volgende grens:
+Als u een Spin-set maakt, raadt Adobe de volgende aanbevolen procedures aan en past het de volgende limiet toe:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limitations.md).[
+Zie ook [ Dynamische beperkingen van Media ](/help/assets/dynamic-media/limitations.md).
 
 **om de Reeksen van de Rotatie tot stand te brengen:**
 
@@ -190,7 +227,7 @@ U kunt spin reeksen of in het gebruikersinterface of het gebruiken van [ partij 
 
 1. Vanuit de zoekopdracht kunt u **[!UICONTROL Filters]** selecteren, **[!UICONTROL Dynamic Media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
 
-   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor automatische sets wordt de zoekquery uitgevoerd met behulp van `Starts with` zoekcriteria die verschillen van de zoekopdracht in Experience Managers die is gebaseerd op het gebruik van `Contains` -zoekcriteria. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
+   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor automatische sets wordt de zoekquery uitgevoerd met behulp van `Starts with` zoekcriteria die verschillen van Experience Manager-zoekopdrachten die zijn gebaseerd op het gebruik van `Contains` -zoekcriteria. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
 
    ![ chlimage_1-158 ](assets/chlimage_1-386.png)
 
@@ -218,7 +255,7 @@ U kunt verschillende bewerkingstaken uitvoeren op centrifuges, zoals:
    * Als u de volgorde van afbeeldingen wilt wijzigen, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor herschikken om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, selecteert u de kolomkop.
    * Selecteer **[!UICONTROL Add Asset]** als u een element wilt toevoegen of een bestaand element wilt bijwerken. Navigeer naar een element, selecteer het en selecteer vervolgens **[!UICONTROL Select]** in de rechterbovenhoek.
-Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
+Als u de afbeelding verwijdert die Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
    * Als u een element wilt verwijderen, selecteert u het en selecteert u **[!UICONTROL Delete Asset]** .
    * Als u een voorinstelling wilt toepassen, selecteert u het pictogram Voorinstelling en selecteert u een voorinstelling.
    * Als u een volledige centrifugeset wilt verwijderen, navigeert u naar de centrifugeset, selecteert u deze en selecteert u **[!UICONTROL Delete]**
@@ -232,6 +269,6 @@ Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebru
 
 Zie [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publish-centrifuges {#publishing-spin-sets}
+## Rotatiesets publiceren {#publishing-spin-sets}
 
-Zie [ de activa van Publish ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Zie [ activa ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) publiceren.

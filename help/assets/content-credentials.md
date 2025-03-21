@@ -1,21 +1,55 @@
 ---
-title: Integratie van content credentials
-description: Content credentials, die in AEM Assets zijn geïntegreerd en in de Assets View zijn opgenomen, kunnen context bieden in de geschiedenis van een middel, zoals hoe het is gemaakt en wie er bij het maken betrokken was. Net als een voedingswaarde-label voor digitale inhoud kunnen Content credentials de transparantie vergroten en vertrouwen opbouwen met het publiek.
+title: Content Credentials-integratie
+description: Content Credentials, dat in AEM Assets is geïntegreerd en in de Assets View is opgenomen, kan context bieden in de geschiedenis van een middel, zoals hoe het is gemaakt en wie er bij het maken betrokken was. Net als een voedingswaarde-label voor digitale inhoud kan Content Credentials helpen de transparantie te vergroten en vertrouwen te kweken bij het publiek.
 role: User
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-# Content credentials {#content-credentials}
+# Content Credentials {#content-credentials}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-Merken maken zich meer dan ooit zorgen over inhoudstransparantie, AI-openbaarmaking en het voorkomen van het knoeien met activa. Het Initiatief van de Authenticiteit van de Inhoud (CAI) bij Adobe bouwt hulpmiddelen volgzaam met de [ Coalitie voor de Technische norm van de Levering van de Inhoud en van Authenticiteit ](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA). Content credentials, die een nieuw soort gecodeerde, onvervalsbare metagegevens zijn, kunnen gebruikers helpen de inhoud te begrijpen en de integriteit van merkelementen te garanderen. Ze kunnen een breed scala aan herkomstgegevens bevatten die inzicht bieden in de geschiedenis van een digitaal middel.
+Merken maken zich meer dan ooit zorgen over inhoudstransparantie, AI-openbaarmaking en het voorkomen van het knoeien met activa. Het Initiatief van de Authenticiteit van de Inhoud (CAI) bij Adobe bouwt hulpmiddelen volgzaam met de [ Coalitie voor de Technische norm van de Levering van de Inhoud en van Authenticiteit ](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA). Content Credentials, een nieuw type gecodeerde, aanvervalsbare metagegevens, kan de kijkers helpen de inhoud te begrijpen en de integriteit van merkelementen te garanderen. Ze kunnen een breed scala aan herkomstgegevens bevatten die inzicht bieden in de geschiedenis van een digitaal middel.
 
 Deze informatie kan omvatten:
 
@@ -29,19 +63,19 @@ Deze informatie kan omvatten:
 
 Voor een volledige mening, [ verifieer ](https://contentcredentials.org/verify) een uitvoeriger inzicht in activageschiedenis kan aanbieden.
 
-Adobe Experience Manager Assets biedt nu ondersteuning voor Content credentials, zodat gebruikers Content credentials rechtstreeks kunnen zien in de Assets-weergave van AEM. Wanneer u de elementdetails bekijkt, worden in elke afbeelding met Content credentials (zoals de afbeeldingen die met GenAI-services zijn gemaakt) de manifeste details weergegeven in een speciaal deelvenster. Als het element wordt gedownload, gepubliceerd of gedeeld, blijven de Content credentials intact met het element.
+Adobe Experience Manager Assets biedt nu ondersteuning voor Content Credentials, zodat gebruikers Content Credentials rechtstreeks kunnen bekijken in de Assets-weergave van AEM. Wanneer u de elementdetails bekijkt, worden in elke afbeelding met Content Credentials (zoals de afbeeldingen die met GenAI-services zijn gemaakt) de manifeste details weergegeven in een speciaal deelvenster. Als het element wordt gedownload, gepubliceerd of gedeeld, blijft de Content Credentials intact bij het element.
 
 ![ activa ](/help/assets/assets/content-credentials.png)
 
-## Toegang tot Content credentials {#access-content-credentials}
+## Toegang tot Content Credentials {#access-content-credentials}
 
 1. Ga naar de Mening UI van Assets, en klik **Assets** van de linkerruit.
 1. Navigeer naar een map en selecteer het gewenste element.
-1. Klik **Details** en selecteer `Cr pin` van de meest rechtse ruit. Op het tabblad Content credentials wordt de volgende informatie over het element weergegeven.
-   1. **Gegenereerd Beeld:** Datum en tijd waarin de Content credentials werden toegepast.
+1. Klik **Details** en selecteer `Cr pin` van de meest rechtse ruit. Op het tabblad Content Credentials wordt de volgende informatie over het element weergegeven.
+   1. **Gegenereerd Beeld:** Datum en tijd waarin Content Credentials werd toegepast.
    1. **Samenvatting van de Inhoud:** wijst erop of de activa gedeeltelijk of volledig door AI worden geproduceerd, of hoe het werd uitgegeven.
-      ![ content credentials ](/help/assets/assets/content-credentials1.png)
+      ![ inhoudsgeloofsbrieven ](/help/assets/assets/content-credentials1.png)
    1. **Proces:** Details de toepassing, het apparaat, en het hulpmiddel van AI (zoals Adobe Firefly) dat wordt gebruikt om de activa te produceren, evenals veranderingen die daarna worden aangebracht.
       ![ proces ](/help/assets/assets/CR-Process.png)
-   1. **Ongeveer deze Content credentials:** Naam van de uitgever samen met de datum en de tijd van uitgifte.
+   1. **Ongeveer dit Content Credentials:** Naam van de uitgever samen met de datum en de tijd van uitgifte.
       ![ uitgever ](/help/assets/assets/CR-issuer.png)

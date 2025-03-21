@@ -1,41 +1,75 @@
 ---
 title: Publicatie beheren
-description: Publish of publiceer elementen naar Experience Manager Assets, Dynamic Media en Brand Portal
+description: Elementen publiceren naar of verwijderen uit Experience Manager Assets, Dynamic Media en Brand Portal
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
 
 # Publicaties beheren in Experience Manager Assets {#manage-publication-in-aem}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Als [!DNL Adobe Experience Manager Assets] -beheerder kunt u elementen en mappen publiceren die elementen bevatten van de auteurinstantie naar [!DNL Experience Manager Assets] , [!DNL Dynamic Media] en [!DNL Brand Portal] . Ook kunt u plannen om een middel of een omslag op een recentere datum of een tijd te publiceren. Na publicatie kunnen de gebruikers de elementen openen en verder verspreiden onder andere gebruikers. Standaard kunt u elementen en mappen publiceren naar [!DNL Experience Manager Assets] . Nochtans, kunt u [!DNL Experience Manager Assets] vormen om het publiceren toe te laten aan [[!DNL Dynamic Media] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) en [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 U kunt elementen publiceren of de publicatie ervan ongedaan maken op het niveau van elementen of mappen met de optie **[!UICONTROL Quick Publish]** of **[!UICONTROL Manage Publication]** die beschikbaar is in de interface [!DNL Experience Manager Assets] . Als u in [!DNL Experience Manager Assets] de wijzigingen die u in het oorspronkelijke element of de oorspronkelijke map hebt aangebracht, daarna aanbrengt, worden deze wijzigingen pas in het publicatieexemplaar doorgevoerd als u het bestand of de oorspronkelijke map opnieuw publiceert. [!DNL Experience Manager Assets] Hiermee zorgt u ervoor dat wijzigingen die in uitvoering zijn, niet beschikbaar zijn in het publicatieexemplaar. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in de publicatie-instantie.
 
-* [Publish-middelen met Quick Publish](#quick-publish)
-* [ de activa van Publish die gebruiken leiden Publicatie ](#manage-publication)
-* [Publish Assets later](#publish-assets-later)
-* [Publish-middelen naar Dynamic Media](#publish-assets-to-dynamic-media)
-* [Publish-middelen naar Brand Portal](#publish-assets-to-brand-portal)
+* [Elementen publiceren met Snel publiceren](#quick-publish)
+* [ publiceer activa gebruikend Manage Publicatie ](#manage-publication)
+* [Elementen later publiceren](#publish-assets-later)
+* [Elementen publiceren naar dynamische media](#publish-assets-to-dynamic-media)
+* [Elementen publiceren naar Brand Portal](#publish-assets-to-brand-portal)
 * [Aanvraag voor publicatie](#request-publication)
 * [Beperkingen en tips](#limitations-and-tips)
 
-## Publish-middelen met Quick Publish {#quick-publish}
+## Elementen publiceren met Snel publiceren {#quick-publish}
 
 Met Snel publiceren kunt u inhoud direct naar het geselecteerde doel publiceren. Navigeer in de [!DNL Experience Manager Assets] -console naar de bovenliggende map en selecteer alle elementen of mappen die u wilt publiceren. Klik op de optie **[!UICONTROL Quick Publish]** op de werkbalk en selecteer het doel in de vervolgkeuzelijst waar u de elementen wilt publiceren.
 
-![ Snelle Publish ](assets/quick-publish-to-aem.png)
+![ Snel publiceren ](assets/quick-publish-to-aem.png)
 
-## Publish-middelen met Publicatie beheren {#manage-publication}
+## Elementen publiceren met Publicatie beheren {#manage-publication}
 
 Beheer publicatie laat u publiceren of unpublish inhoud aan en van de geselecteerde bestemming, [ toevoegen inhoud ](#add-content) aan de het publiceren lijst van over de bewaarplaats DAM, [ omvatten omslagmontages ](#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [ planning het publiceren ](#publish-assets-later) aan een recentere datum of een tijd.
 
@@ -46,17 +80,17 @@ Navigeer in de [!DNL Experience Manager Assets] -console naar de bovenliggende m
 De volgende opties zijn beschikbaar in de interface [!UICONTROL Manage Publication] :
 
 * [!UICONTROL Actions]
-   * `Publish`: Publish-elementen en -mappen naar het geselecteerde doel
+   * `Publish`: elementen en mappen naar het geselecteerde doel publiceren
    * `Unpublish`: Verwijder de publicatie van elementen en mappen vanaf het doel
 
 * [!UICONTROL Destination]
-   * `Publish`: Publish-elementen en -mappen naar [!DNL Experience Manager Assets] (`AEM`)
-   * `Dynamic Media`: Publish-elementen naar [!DNL Dynamic Media]
-   * `Brand Portal`: Publish-elementen en -mappen naar [!DNL Brand Portal]
+   * `Publish`: elementen en mappen publiceren naar [!DNL Experience Manager Assets] (`AEM`)
+   * `Dynamic Media`: elementen publiceren naar [!DNL Dynamic Media]
+   * `Brand Portal`: elementen en mappen publiceren naar [!DNL Brand Portal]
 
 * [!UICONTROL Scheduling]
-   * `Now`: Publish-elementen direct
-   * `Later`: Publish-elementen op basis van de `Activation` datum of tijd
+   * `Now`: elementen direct publiceren
+   * `Later`: Elementen publiceren op basis van de `Activation` datum of tijd
 
 Klik op **[!UICONTROL Next]** om door te gaan. Op basis van de selectie weerspiegelt de tab **[!UICONTROL Scope]** verschillende opties. De opties **[!UICONTROL Add Content]** en **[!UICONTROL Include Folder Settings]** zijn alleen beschikbaar voor het publiceren van de elementen en mappen naar [!DNL Experience Manager Assets] (`Destination: Publish`).
 
@@ -95,7 +129,7 @@ Only the selected folder content and references are published.
 
 Nadat u de filters hebt toegepast, klikt u op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Publish]** . Als u op de knop Publiceren klikt, verschijnt er een bevestigingsbericht `Resource(s) have been scheduled for publication` . En de geselecteerde activa en (of) omslagen worden gepubliceerd aan de bepaalde bestemming die op de planner (`Now` of `Later` wordt gebaseerd). Meld u aan bij uw publicatieexemplaar om te controleren of de middelen en (of) mappen zijn gepubliceerd.
 
-![ Publish aan AEM ](assets/manage-publication-publish-aem.png)
+![ publiceer aan AEM ](assets/manage-publication-publish-aem.png)
 
 In de bovenstaande afbeelding kunt u verschillende waarden voor het kenmerk **[!UICONTROL Publish Target]** zien. Laten we niet vergeten dat u ervoor hebt gekozen om te publiceren naar [!DNL Experience Manager Assets] (`Destination: Publish`). Waarom geeft het dan aan dat alleen een map en een middel worden gepubliceerd naar `AEM` en de andere twee elementen worden gepubliceerd naar zowel `AEM` als `Dynamic Media` ?
 
@@ -105,12 +139,12 @@ In de volgende tabel wordt uitgelegd hoe de publicatie plaatsvindt afhankelijk v
 
 | [!UICONTROL Destination] | [!UICONTROL Dynamic Media Publish mode] | [!UICONTROL Publish Target] | Toegestane inhoud |
 | --- | --- | --- | --- |
-| Publish | Selectieve Publish | `AEM` | Assets en (of) mappen |
-| Publish | Meteen | `AEM` en `Dynamic Media` | Assets en (of) mappen |
-| Publish | Bij activering | `AEM` en `Dynamic Media` | Assets en (of) mappen |
-| Dynamic Media | Selectieve Publish | `Dynamic Media` | Assets |
-| Dynamic Media | Meteen | `None` | Kan de elementen niet publiceren |
-| Dynamic Media | Bij activering | `None` | Kan de elementen niet publiceren |
+| Publiceren | Selectieve publicatie | `AEM` | Assets en (of) mappen |
+| Publiceren | Meteen | `AEM` en `Dynamic Media` | Assets en (of) mappen |
+| Publiceren | Bij activering | `AEM` en `Dynamic Media` | Assets en (of) mappen |
+| Dynamische media | Selectieve publicatie | `Dynamic Media` | Assets |
+| Dynamische media | Meteen | `None` | Kan de elementen niet publiceren |
+| Dynamische media | Bij activering | `None` | Kan de elementen niet publiceren |
 
 >[!NOTE]
 >
@@ -123,7 +157,7 @@ In de volgende tabel wordt uitgelegd hoe de publicatie plaatsvindt afhankelijk v
 
 Laten we nu het gebruik van **[!UICONTROL Destination]** in het bovenstaande hoofdlettergebruik wijzigen in **[!UICONTROL Dynamic Media]** en de resultaten controleren. Op deze manier wordt alleen het element van de map `Selective Publish` gepubliceerd naar [!DNL Dynamic Media] . De elementen van de mappen `Immediate` en `Upon Activation` worden niet gepubliceerd en weerspiegelen `None` .
 
-![ Publish aan Dynamic Media ](assets/manage-publication-dynamic-media.png)
+![ publiceer aan Dynamische Media ](assets/manage-publication-dynamic-media.png)
 
 >[!NOTE]
 >
@@ -137,7 +171,7 @@ Laten we nu het gebruik van **[!UICONTROL Destination]** in het bovenstaande hoo
 >
 >U kunt de bestaande aanpassing echter verwijderen om de nieuwe [!DNL Manager Publication] -functies te gebruiken.
 
-## Publish Assets later {#publish-assets-later}
+## Elementen later publiceren {#publish-assets-later}
 
 De publicatieworkflow van elementen op een latere datum of tijd plannen:
 
@@ -156,7 +190,7 @@ De publicatieworkflow van elementen op een latere datum of tijd plannen:
 
    Meld u aan bij de doelinstantie om de gepubliceerde elementen te controleren (afhankelijk van de geplande datum of tijd).
 
-## Publish-middelen naar Dynamic Media {#publish-assets-to-dynamic-media}
+## Elementen publiceren naar dynamische media {#publish-assets-to-dynamic-media}
 
 Alleen elementen worden gepubliceerd naar [!DNL Dynamic Media] . Het publicatiegedrag verschilt echter op basis van de mapeigenschappen. In een map kan **[!UICONTROL Dynamic Media Publish mode]** zijn geconfigureerd voor selectief publiceren. Dit kan een van de volgende zijn:
 
@@ -164,14 +198,14 @@ Alleen elementen worden gepubliceerd naar [!DNL Dynamic Media] . Het publicatieg
 * `Immediate`
 * `Upon Activation`
 
-Het publicatieproces voor de modi **[!UICONTROL Immediate]** en **[!UICONTROL Upon Activation]** is echter consistent, anders voor **[!UICONTROL Selective Publish]** . Zie [ selectieve vormen publiceren op omslagniveau in Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volgend doen:
+Het publicatieproces voor de modi **[!UICONTROL Immediate]** en **[!UICONTROL Upon Activation]** is echter consistent, anders voor **[!UICONTROL Selective Publish]** . Zie [ selectieve vormen publiceren op omslagniveau in Dynamische Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html). Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volgend doen:
 
-* [ publiceert selectief activa aan Dynamic Media of Experience Manager gebruikend Manage Publication ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [ unpublish selectief activa van Dynamic Media of Experience Manager gebruikend Manage Publication ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [ de activa van Publish aan Dynamic Media of Experience Manager die Snelle Publish gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
+* [ publiceer selectief activa aan Dynamische Media of Experience Manager gebruikend leidt Publicatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
+* [ unpublish selectief activa van Dynamische Media of Experience Manager gebruikend leidt Publicatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
+* [ publiceer activa aan Dynamische Media of Experience Manager gebruikend Snel publiceren ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
 * [ publiceert of maakt selectief activa als onderzoeksresultaten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results) ongedaan
 
-## Publish-middelen naar Brand Portal {#publish-assets-to-brand-portal}
+## Elementen publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
 U kunt elementen, mappen en verzamelingen naar de instantie [!DNL Experience Manager Assets Brand Portal] publiceren.
 

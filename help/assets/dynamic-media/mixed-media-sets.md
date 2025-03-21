@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 11%
+source-wordcount: '1478'
+ht-degree: 10%
 
 ---
 
 # Gemengde mediasets{#mixed-media-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Met gemengde mediasets kunt u afbeeldingen, afbeeldingssets, centrifuges en video&#39;s in één presentatie laten overvloeien.
 
@@ -32,7 +69,7 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](/help/assets/dynamic-media/image-sets.md) en [spinsets](/help/assets/dynamic-media/spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, moet u er rekening mee houden dat u kunt zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
 
-   Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
+   Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
 
 1. [ creeer Gemengde Reeksen van Media ](#creating-mixed-media-sets).
 
@@ -52,7 +89,7 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Selecteer de gemengde Mediaset en u kunt er een voorvertoning van weergeven. Als u de gemengde mediaset in de geselecteerde viewer wilt bekijken, selecteert u de miniatuurpictogrammen. U kunt verschillende Viewers kiezen in het **[!UICONTROL Viewers]** -menu, dat beschikbaar is in het linkervervolgkeuzemenu.
 
-1. [ Publish Gemengde Plaatsen van Media ](#publishing-mixed-media-sets).
+1. [ publiceer Gemengde Plaatsen van Media ](#publishing-mixed-media-sets).
 
    Wanneer u een gemengde mediaset publiceert, worden de URL en de insluitreeks geactiveerd. Bovendien moet u [ de vooraf ingestelde kijker ](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets) publiceren.
 
@@ -68,7 +105,7 @@ Indien noodzakelijk, kunt u [ Gemengde Reeksen van Media ](#editing-mixed-media-
 
 >[!NOTE]
 >
->Als u kwesties hebt die reeksen creëren, zie [ problemen oplossen Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md).
+>Als u kwesties hebt die reeksen creëren, zie [ Problemen met Dynamische Media ](/help/assets/dynamic-media/troubleshoot-dm.md) oplossen.
 
 ## Elementen uploaden {#uploading-assets}
 
@@ -76,7 +113,7 @@ Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden
 
 Als u bovendien centrifuges of afbeeldingssets wilt toevoegen aan de gemengde mediaset, maakt u deze ook.
 
-Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
+Zie [ Dynamische Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/file-format-support.md#image-support-dynamic-media) voor een lijst van formaten die door Gemengde Reeksen van Media worden gesteund.
 
 ## Gemengde mediasets maken {#creating-mixed-media-sets}
 
@@ -158,7 +195,7 @@ U kunt diverse het uitgeven taken aan activa in Gemengde Reeksen van Media direc
 
    >[!NOTE]
    >
-   >* Als u de elementen in een gemengde mediaset wilt bewerken, navigeert u naar de gemengde mediaset. Selecteer de set (niet selecteren), zodat u deze kunt openen op de pagina Voorvertoning Experience Manager instellen. Selecteer in de linkertrack het inlasteken omlaag om de vervolgkeuzelijst te openen en selecteer vervolgens **[!UICONTROL Set Members]** . Houd de muisaanwijzer op een element op de pagina Leden instellen en selecteer **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
+   >* Als u de elementen in een gemengde mediaset wilt bewerken, navigeert u naar de gemengde mediaset. Selecteer de set (niet selecteren), zodat u deze kunt openen op de pagina Voorvertoning Experience Manager-set. Selecteer in de linkertrack het inlasteken omlaag om de vervolgkeuzelijst te openen en selecteer vervolgens **[!UICONTROL Set Members]** . Houd de muisaanwijzer op een element op de pagina Leden instellen en selecteer **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
    >
    >* Als u een volledige gemengde mediaset wilt verwijderen, gaat u vanuit elke weergavemodus (zoals de Kaart- of kolomweergave) naar de gemengde mediaset. Houd de muisaanwijzer boven de set en selecteer vervolgens **[!UICONTROL Select]** (vinkje). Druk op **[!UICONTROL Backspace]** op het toetsenbord of selecteer **[!UICONTROL More]** (rij van drie stippen) en selecteer vervolgens **[!UICONTROL Delete]** .
 
@@ -166,9 +203,9 @@ U kunt diverse het uitgeven taken aan activa in Gemengde Reeksen van Media direc
 
 Zie [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md) voor details op hoe te voorproef Gemengde Reeksen van Media.
 
-## Gemengde Publish-mediasets {#publishing-mixed-media-sets}
+## Gemengde mediasets publiceren {#publishing-mixed-media-sets}
 
-Zie {de activa van 0} Publish ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om Gemengde Reeksen van Media te publiceren.[
+Zie [ activa ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op publiceren de Gemengde Reeksen van Media.
 
 >[!NOTE]
 >

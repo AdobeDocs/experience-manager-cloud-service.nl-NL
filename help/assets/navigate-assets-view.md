@@ -4,17 +4,51 @@ description: Begrijp gebruikersinterface van en navigatie in  [!DNL Assets view]
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
 
 # Naar bestanden en mappen navigeren en elementen weergeven {#view-assets-and-details}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -79,7 +113,7 @@ Om activa voor te vertonen, het te selecteren en [!UICONTROL Details] ![ details
 
 ![ Voorproef een activa ](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G** : De taken van de mening met betrekking tot de geselecteerde Activa **H**: Bekijk en beheer versies **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De vertoningen van Dynamic Media van de mening met Slimme Uitsnede en Dynamic Media met OpenAPI mogelijkheden. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
+**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G** : De taken van de mening met betrekking tot de geselecteerde Activa **H**: Mening en beheer versies **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De vertoningen van de Media van de mening Dynamische met Slimme Uitsnede en Dynamische Media met OpenAPI mogelijkheden. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 

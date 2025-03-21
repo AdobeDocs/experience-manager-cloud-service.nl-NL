@@ -6,21 +6,55 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4147'
-ht-degree: 8%
+source-wordcount: '4175'
+ht-degree: 7%
 
 ---
 
 # Elementen beheren {#manage-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 In dit artikel wordt beschreven hoe u elementen in [!DNL Adobe Experience Manager Assets] kunt beheren en bewerken. Zie [[!DNL Content Fragments]](content-fragments/content-fragments.md) elementen voor informatie over het beheren van [!DNL Content Fragments] .
@@ -32,7 +66,7 @@ Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature` -afbeeldi
 >[!NOTE]
 >
 >* Het delen van een Assets-map van het type `sling:OrderedFolder` wordt niet ondersteund bij het delen naar Experience Cloud. Als u een map wilt delen, selecteert u [!UICONTROL Ordered] niet wanneer u een map maakt.
->* Experience Manager staat het gebruik van `subassets` woord als naam voor een map niet toe. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
+>* Experience Manager staat het gebruik van `subassets` word als naam voor een map niet toe. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een map wilt maken. Klik in het menu op **[!UICONTROL Create]** . Selecteer **[!UICONTROL New Folder]** .
 1. Geef in het veld **[!UICONTROL Title]** een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
@@ -49,7 +83,7 @@ Zie [ digitale activa aan Experience Manager ](add-assets.md) toevoegen.
 
 ## ZIP-archieven extraheren {#extract-zip-archives}
 
-Selecteer ZIP-archieven die in Experience Manager worden beheerd en extraheer de bestanden rechtstreeks naar de Experience Manager zonder ze te downloaden.
+Selecteer ZIP-archieven die in Experience Manager worden beheerd en extraheer de bestanden rechtstreeks naar Experience Manager zonder ze te downloaden.
 
 Voer de volgende stappen uit om de ZIP-bestanden te extraheren:
 
@@ -237,7 +271,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, geeft Assets de vertoning weer met de exacte of dichtstbijzijnde afmetingen.
 
-   U kunt geen uitvoeringen maken met de volgende voorvoegsels, omdat deze intern zijn voor Adobe:
+   U kunt geen uitvoeringen maken met de volgende voorvoegsels, omdat deze intern zijn in Adobe:
 
    * cq5
 
@@ -255,7 +289,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Videoannotaties worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund. De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
+   >Videoaantekeningen worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund. De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
 
 ## Elementen verwijderen {#delete-assets}
 
@@ -287,7 +321,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 Zie [ downloadactiva van  [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publish of publiceer elementen {#publish-assets}
+## Elementen publiceren of publiceren ongedaan maken {#publish-assets}
 
 1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
@@ -296,7 +330,7 @@ Zie [ downloadactiva van  [!DNL Experience Manager]](/help/assets/download-asset
 1. Selecteer de optie **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
    ![ unpublish actie ](assets/unpublish_action.png)
-   *Cijfer: Publish en unpublish opties en de het plannen optie.*
+   *Cijfer: Publiceer en unpublish opties en de het plannen optie.*
 
 1. Selecteer **[!UICONTROL Now]** om direct op het element te reageren of selecteer **[!UICONTROL Later]** om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** kiest. Klik op **[!UICONTROL Next]**.
 
@@ -330,7 +364,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
    >
    >Als u het pad naar een aanmeldingspagina niet opgeeft, geeft [!DNL Experience Manager] de standaardaanmeldingspagina weer in de publicatie-instantie.
 
-1. Publish de map en probeer deze te openen vanuit het publicatieexemplaar. Er wordt een aanmeldingsscherm weergegeven.
+1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
 1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat [!DNL Experience Manager] u heeft geverifieerd.
 
 ## Zoeken in middelen {#search-assets}
@@ -546,9 +580,9 @@ Als u de annotaties en de revisiestatus wilt afdrukken, selecteert u het pictogr
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Voor informatie rond het veranderen van de doopvontkleur van annotaties, zie [ het Annoteren ](/help/assets/manage-digital-assets.md#annotating).
+   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Voor informatie rond het veranderen van de doopvontkleur van annotaties, zie [ het Annoteren ](/help/assets/manage-digital-assets.md#annotating).
 
-   Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF geeft de wijzigingen weer die u hebt aangebracht.
+   Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
 ## Asset versioning {#asset-versioning}
 
@@ -644,9 +678,9 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om element
 
 Om details van het beheer van de Inzameling te kennen, zie [ Inzamelingen ](/help/assets/manage-collections.md) beheren.
 
-## Verlopen elementen verbergen bij weergave van elementen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Verlopen middelen verbergen bij weergave van middelen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
-Met de bureaubladtoepassing [!DNL Experience Manager] hebt u toegang tot de DAM-opslagruimte vanaf een desktopcomputer van Windows of Mac. Met Adobe Asset Link hebt u toegang tot elementen vanuit de ondersteunde [!DNL Creative Cloud] -bureaubladtoepassingen.
+Met de bureaubladtoepassing [!DNL Experience Manager] hebt u toegang tot de DAM-opslagruimte vanaf een desktopcomputer van Windows of Mac. Met Adobe Asset Link hebt u toegang tot middelen vanuit de ondersteunde [!DNL Creative Cloud] -bureaubladtoepassingen.
 
 Wanneer u elementen bladert vanuit de gebruikersinterface van [!DNL Experience Manager] , worden de verlopen elementen niet weergegeven. Beheerders kunnen de volgende configuratie uitvoeren om te voorkomen dat verlopen middelen worden weergegeven, gezocht en opgehaald wanneer ze middelen zoeken vanuit de bureaubladtoepassing en de Asset Link. De configuratie werkt voor alle gebruikers, ongeacht beheerderrechten.
 
@@ -662,7 +696,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [ hoe te om de Verbinding van Activa van de Adobe te gebruiken ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [ hoe te om de Verbinding van Activa van Adobe te gebruiken ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **zie ook**
 
@@ -678,4 +712,4 @@ Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

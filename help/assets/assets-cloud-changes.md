@@ -4,19 +4,53 @@ description: Notable veranderingen in  [!DNL Adobe Experience Manager Assets]  i
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
 
 # Notable changes to [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Adobe Experience Manager] als [!DNL Cloud Service] brengt vele nieuwe eigenschappen en mogelijkheden om uw projecten van de Experience Manager te beheren. Er zijn veel verschillen tussen [!DNL Experience Manager Assets] on-premise of hosted als Adobe Managed Service in vergelijking met [!DNL Experience Manager] as a [!DNL Cloud Service] . In dit artikel worden de belangrijke verschillen voor [!DNL Assets] -mogelijkheden belicht.
+[!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt veel nieuwe functies en mogelijkheden om uw Experience Manager-projecten te beheren. Er zijn veel verschillen tussen [!DNL Experience Manager Assets] on-premise of hosted als Adobe Managed Service en [!DNL Experience Manager] as a [!DNL Cloud Service] . In dit artikel worden de belangrijke verschillen voor [!DNL Assets] -mogelijkheden belicht.
 
 De belangrijkste verschillen ten opzichte van [!DNL Experience Manager] 6.5 zijn op de volgende gebieden:
 
@@ -36,13 +70,13 @@ Het uploaden van middelen is geoptimaliseerd voor efficiëntie door betere schal
    * Zie [ activa microservices ](/help/assets/asset-microservices-configure-and-use.md) vormen en gebruiken
    * Om aangepaste werkschemastappen in de verwerking te hebben, [ post-verwerkende werkschema&#39;s ](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) kunnen worden gebruikt.
 
-* De websitecomponenten die een binair bestand leveren zonder transformatie kunnen rechtstreeks downloaden. Het Sling GET servlet wordt bijgewerkt om deze functionaliteit door gebrek toe te laten. De websitecomponenten die een binair getal met een transformatie leveren (bijvoorbeeld de grootte ervan wijzigen via een servlet) kunnen ongewijzigd blijven werken.
+* De websitecomponenten die een binair bestand leveren zonder transformatie kunnen rechtstreeks downloaden. De Sling GET servlet wordt bijgewerkt om deze functionaliteit door gebrek toe te laten. De websitecomponenten die een binair getal met een transformatie leveren (bijvoorbeeld de grootte ervan wijzigen via een servlet) kunnen ongewijzigd blijven werken.
 
 De standaardvertoningen die met asset microservices worden gegenereerd, worden achterwaarts compatibel opgeslagen in de knooppunten van de opslagplaats van middelen met dezelfde naamgevingsconventies.
 
 ## Middelen-microservices ontwikkelen en testen {#asset-microservices}
 
-Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. Asset microservices helpen te voorkomen dat er van derden weergavegereedschappen en -methoden nodig zijn (zoals [!DNL ImageMagick] ) en vereenvoudigen configuraties, terwijl ze ook functionaliteit bieden die buiten de box valt voor algemene bestandstypen. U kunt a [ brede waaier van dossiertypes ](/help/assets/file-format-support.md) nu verwerken die meer formaten uit-van-de-doos behandelen dan wat met vorige versies van Experience Manager mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden waren vereist, zoals [!DNL ImageMagick] . U kunt de complexe configuraties van [!DNL ImageMagick] niet gebruiken voor de [!UICONTROL Processing Profiles] -configuratie. Gebruik [!DNL Dynamic Media] voor geavanceerde transcodering MPEG van video&#39;s en gebruiksverwerkingsprofielen voor [ basistranscodering van MP4 video&#39;s ](/help/assets/manage-video-assets.md#transcode-video).
+Asset microservices bieden een schaalbare en veerkrachtige verwerking van middelen met behulp van cloudservices. Adobe beheert de cloudservices voor een optimale afhandeling van verschillende typen bedrijfsmiddelen en verwerkingsopties. Asset microservices helpen te voorkomen dat er van derden weergavegereedschappen en -methoden nodig zijn (zoals [!DNL ImageMagick] ) en vereenvoudigen configuraties, terwijl ze ook functionaliteit bieden die buiten de box valt voor algemene bestandstypen. U kunt a [ brede waaier van dossiertypes ](/help/assets/file-format-support.md) nu verwerken die meer formaten uit-van-de-doos dan wat met vorige versies van Experience Manager mogelijk is. Zo is het nu mogelijk miniatuurextractie van PSD- en PSB-indelingen uit te voeren waarvoor eerder oplossingen van derden waren vereist, zoals [!DNL ImageMagick] . U kunt de complexe configuraties van [!DNL ImageMagick] niet gebruiken voor de [!UICONTROL Processing Profiles] -configuratie. Gebruik [!DNL Dynamic Media] voor geavanceerde transcodering MPEG van video&#39;s en gebruiksverwerkingsprofielen voor [ basistranscodering van MP4 video&#39;s ](/help/assets/manage-video-assets.md#transcode-video).
 
 Asset microservices is een service in de cloud die automatisch wordt ingericht en via [!DNL Experience Manager] wordt verzonden in programma&#39;s en omgevingen van klanten die in Cloud Manager worden beheerd. Om [!DNL Experience Manager] uit te breiden of aan te passen, kunnen ontwikkelaars bestaande inhoud of activa met vertoningen gebruiken die in een wolkenmilieu worden geproduceerd. Hierdoor kunnen ze hun code testen en valideren door elementen te gebruiken, weer te geven of te downloaden.
 
@@ -64,7 +98,7 @@ Om een bevestiging van begin tot eind van de code en het proces met inbegrip van
 | Homepage | Niet ondersteund | Zie {de ervaring van de Pagina van 0} Huis in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page)[[!DNL Assets]  |
 | Elementen extraheren uit ZIP-archief | Niet ondersteund | Zie {de extractie van 0} ZIP in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip).[ |
 | Assets-ratings | Niet ondersteund | De beoordelingswidget in de schema-editor voor metagegevens wordt niet ondersteund. |
-| Inhoudsverwijderingsfilter | Niet ondersteund | Een veelgebruikte manier van werken in `ContentDispositionFilter` is om beheerders [!DNL Experience Manager] zodanig te configureren dat deze bestanden HTML-bestanden kunnen leveren en PDF-bestanden inline kunnen openen in plaats van ze te downloaden. Bij de publicatie-instanties kunt u de indeling beheren met behulp van de Dispatcher-configuratie. In de ontwerpinstanties wordt door Adobe geen wijziging in de header voor het verplaatsen van inhoud aanbevolen. Zie {het filter van de Verplaatsing van 0} Inhoud in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter).[ |
+| Inhoudsverwijderingsfilter | Niet ondersteund | Een veelgebruikte optie van `ContentDispositionFilter` is om beheerders [!DNL Experience Manager] te laten configureren om HTML-bestanden te bedienen en PDF-bestanden inline te openen in plaats van deze te downloaden. Bij de publicatie-instanties kunt u de indeling beheren met behulp van de Dispatcher-configuratie. In de ontwerpinstanties beveelt Adobe geen wijziging aan in de header Content Disposition. Zie {het filter van de Verplaatsing van 0} Inhoud in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter).[ |
 | Fotosjabloon voor product | Niet ondersteund | Zie [ malplaatje van de productfotoshoot in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
 | Slimme omzetting | Niet ondersteund | Slimme vertaling wordt niet ondersteund in [!DNL Experience Manager] als een [!DNL Cloud Service] . |
 | WebDAV | Niet ondersteund | Voor alternatieven, zie [[!DNL Creative Cloud]  integratie ](/help/assets/aem-cc-integration-best-practices.md) of [ het verwijzingsmateriaal van de Ontwikkelaar ](/help/assets/developer-reference-material-apis.md). |
@@ -84,7 +118,7 @@ Om een bevestiging van begin tot eind van de code en het proces met inbegrip van
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -1,24 +1,61 @@
 ---
-title: Dynamic Media-afbeeldingsprofielen
-description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellingen voor onscherp masker en slim uitsnijden, slim staal of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen.
+title: Dynamische mediaafbeeldingsprofielen
+description: Leer hoe u dynamische mediaafbeeldingsprofielen maakt die instellingen voor onscherp masker en slimme uitsnijdingen, slimme stalen of beide bevatten. Pas het profiel vervolgens toe op een map met afbeeldingselementen.
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 0ad506fc72cb73d3a6a8cdd9eee50f213b52665e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3372'
+source-wordcount: '3418'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media-afbeeldingsprofielen {#image-profiles}
+# Dynamische mediaafbeeldingsprofielen {#image-profiles}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automatisch uitsnijden door een afbeeldingsprofiel toe te passen op de map.
 
 >[!IMPORTANT]
 >
->Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIFFEN- of INDD-bestanden (Adobe InDesign).
+>Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIF- of INDD-bestanden (Adobe InDesign).
 
 ## Onscherp masker, optie {#unsharp-mask}
 
@@ -55,22 +92,22 @@ Verscherpen wordt beschreven in [ het Verscherpen Beelden ](/help/assets/dynamic
 
 ## Opties voor uitsnijden {#crop-options}
 
-Wanneer u SmartCrop op afbeeldingen implementeert, raadt de Adobe de volgende aanbevolen procedures aan en past de volgende limiet toe:
+Als u SmartCrop op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en past het de volgende limiet toe:
 
 | Element - Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | **Beeld** - Aantal Slimme Gewas per beeld | 5 | 100 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limitations.md).[
+Zie ook [ Dynamische beperkingen van Media ](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-De coördinaten voor slimme uitsnijdingen zijn afhankelijk van de hoogte-breedteverhouding. Als voor de instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel hetzelfde is, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
+De coördinaten voor slimme uitsnijdingen zijn afhankelijk van de hoogte-breedteverhouding. Als voor de instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel hetzelfde is, wordt dezelfde hoogte-breedteverhouding naar dynamische media verzonden. Adobe raadt u aan hetzelfde uitsnijdgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
 
-Voor elke slimme uitsnijdgeneratie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf hoogte-breedteverhoudingen voor slimme uitsnijden toevoegt, kan dit leiden tot een trage inname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat slim uitsnijden kan worden toegepast op mapniveau, wordt het door de Adobe aanbevolen om het alleen te gebruiken voor mappen waar dat nodig is.
+Voor elke slimme uitsnijdgeneratie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf hoogte-breedteverhoudingen voor slimme uitsnijden toevoegt, kan dit leiden tot een trage inname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Aangezien slim uitsnijden kan worden toegepast op mapniveau, raadt Adobe aan het alleen te gebruiken voor mappen waar dat nodig is.
 
 **Richtlijnen voor het bepalen van Slimme Uitsnede in een Profiel van het Beeld**
-Om het gebruik van SmartCrop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren, beveelt de Adobe de volgende richtlijnen en tips aan:
+Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
 
 * Op afbeeldingselementen waarop een slimme uitsnijding wordt toegepast, moet minimaal 50 x 50 pixels of groter zijn.
 * In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
@@ -84,7 +121,7 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: p
 
 >[!IMPORTANT]
 >
->De Adobe raadt u aan de gegenereerde gewassen en stalen te herzien om ervoor te zorgen dat deze geschikt en relevant zijn voor uw merk en waarden.
+>Adobe raadt u aan de gegenereerde gewassen en stalen te controleren om na te gaan of deze geschikt en relevant zijn voor uw merk en waarden.
 
 | Optie | Wanneer gebruiken | Beschrijving |
 | --- | --- | --- |
@@ -106,7 +143,7 @@ De maximale resolutie voor ondersteunde invoerbestanden is 16 kB.
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
 | CMYK | | | | | Ja |
 | EPS | | | | | Nee |
-| GIF | `.gif` | image/gif | sRGB | 15 GB | Ja; het eerste frame van het geanimeerde GIF wordt gebruikt voor de vertoning. U kunt het eerste frame niet configureren of wijzigen. |
+| GIF | `.gif` | image/gif | sRGB | 15 GB | Ja; het eerste frame van de geanimeerde GIF wordt gebruikt voor de vertoning. U kunt het eerste frame niet configureren of wijzigen. |
 | JPEG | `.jpg` en `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
 | PNG | `.png` | image/png | sRGB | 15 GB | Ja |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB <br> CMYK | 2 GB | Ja |
@@ -114,15 +151,15 @@ De maximale resolutie voor ondersteunde invoerbestanden is 16 kB.
 | TIFF | `.tif` en `.tiff` | image/tiff | sRGB <br> CMYK | 4 GB | Ja |
 | WebP/Geanimeerde WebP | | | | | Nee |
 
-## Dynamic Media-afbeeldingsprofielen maken {#creating-image-profiles}
+## Dynamische mediaafbeeldingsprofielen maken {#creating-image-profiles}
 
 Om geavanceerde verwerkingsparameters voor andere activa te bepalen types, zie [ Vormend de Verwerking van Activa ](config-dm.md#configuring-asset-processing).
 
-Zie [ Ongeveer de Profielen van het Beeld van Dynamic Media en Videoprofielen ](/help/assets/dynamic-media/about-image-video-profiles.md).
+Zie [ Ongeveer Dynamische Profielen van het Beeld van Media en Videoprofielen ](/help/assets/dynamic-media/about-image-video-profiles.md).
 
 Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het gebruiken van Profielen van de Verwerking ](/help/assets/organize-assets.md).
 
-**om de Profielen van het Beeld van Dynamic Media tot stand te brengen:**
+**om Dynamische Profielen van het Beeld van Media tot stand te brengen:**
 
 1. Selecteer het Adobe Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
 1. Selecteer **[!UICONTROL Create]** als u een afbeeldingsprofiel wilt toevoegen.
@@ -138,16 +175,16 @@ Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het 
 
 1. Selecteer **[!UICONTROL Save]**. Het gemaakte profiel wordt weergegeven in de lijst met beschikbare profielen.
 
-## Dynamic Media-afbeeldingsprofielen bewerken of verwijderen {#editing-or-deleting-image-profiles}
+## Dynamische afbeeldingsprofielen van media bewerken of verwijderen {#editing-or-deleting-image-profiles}
 
-1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
+1. Selecteer het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
 1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Edit Image Processing Profile]** als u het bestand wilt bewerken. Selecteer **[!UICONTROL Delete Image Processing Profile]** als u het wilt verwijderen.
 
    ![ chlimage_1-254 ](assets/chlimage_1-254.png)
 
 1. Sla de wijzigingen op als u het bestand bewerkt. Bevestig bij verwijderen dat u het profiel wilt verwijderen.
 
-## Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
+## Een dynamisch afbeeldingsprofiel voor media toepassen op mappen {#applying-an-image-profile-to-folders}
 
 Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Als zodanig kunt u slechts één afbeeldingsprofiel aan een map toewijzen. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -161,7 +198,7 @@ U kunt afbeeldingsprofielen toepassen op specifieke mappen of op alle elementen.
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand afbeeldingsprofiel heeft dat u later hebt gewijzigd. Zie [ activa in een omslag opnieuw verwerken nadat u zijn verwerkingsprofiel ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) hebt uitgegeven.
 
-### Dynamic Media-afbeeldingsprofielen toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
+### Dynamische mediaafbeeldingsprofielen toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
 
 U kunt vanuit het menu **[!UICONTROL Tools]** of vanuit **[!UICONTROL Properties]** een afbeeldingsprofiel toepassen op een map.
 
@@ -169,18 +206,18 @@ Mappen met een toegewezen profiel geven de naam van het profiel direct onder de 
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [ activa in een omslag opnieuw verwerken nadat u zijn verwerkingsprofiel ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) hebt uitgegeven.
 
-#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Dynamische mediaafbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
+1. Selecteer het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
 1. Selecteer het afbeeldingsprofiel dat u wilt toepassen op een of meerdere mappen.
 
    ![ chlimage_1-255 ](assets/chlimage_1-255.png)
 
 1. Selecteer **[!UICONTROL Apply Processing Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]** . Mappen met een toegewezen profiel geven de naam van het profiel direct onder de mapnaam weer.
 
-#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamische mediaafbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** .
+1. Selecteer het Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** .
 1. Navigeer aan a *omslag* (niet een activa) waarop u een Profiel van het Beeld wilt toepassen.
 1. Voer afhankelijk van de weergave waarin u zich bevindt een van de volgende handelingen uit:
    * Houd de aanwijzer in de kaartweergave boven op de map en selecteer het vinkje om het te selecteren.
@@ -192,13 +229,13 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
    ![ chlimage_1-256 ](assets/chlimage_1-256.png)
 
-### Een Dynamic Media-afbeeldingsprofiel wereldwijd toepassen {#applying-an-image-profile-globally}
+### Een dynamisch afbeeldingsprofiel voor media algemeen toepassen {#applying-an-image-profile-globally}
 
 Naast het toepassen van een profiel op een omslag, kunt u ook globaal toepassen. Voor inhoud die in een map naar Experience Manager Assets wordt geüpload, wordt het geselecteerde profiel toegepast.
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [ activa in een omslag opnieuw verwerken nadat u zijn verwerkingsprofiel ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) hebt uitgegeven.
 
-**om een Profiel van het Beeld van Dynamic Media globaal toe te passen:**
+**om een Dynamisch Profiel van het Beeld van Media globaal toe te passen:**
 
 1. Voer een van de volgende handelingen uit:
 
@@ -216,7 +253,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan om gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
+>Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
 
 Als u het brandpunt van een afbeelding wilt verfijnen, kunt u de uitlijning handmatig aanpassen of het formaat van het venster voor slimme uitsnijden aanpassen.
 
@@ -225,7 +262,7 @@ Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorg
 >[!IMPORTANT]
 >
 >Wanneer u het venster voor slim uitsnijden van een element handmatig aanpast, worden de wijzigingen opgeslagen. Deze bewerkingen blijven intact, zelfs als u het element later opnieuw verwerkt. Als u de breedte, hoogte of beide in het gedeelte **[!UICONTROL Responsive Image Crop]** van het afbeeldingsprofiel bewerkt, wordt het element opnieuw verwerkt.
->Zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
+>Zie [ Dynamische activa van Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
 
 Herhaal de slimme uitsnijding om de extra uitsnijdingen indien nodig opnieuw te genereren.
 
@@ -233,7 +270,7 @@ Zie ook [ uitgeven het slimme gewas of het slimme monster van veelvoudige beelde
 
 **om het slimme gewas of slim monster van één enkel beeld uit te geven:**
 
-1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Selecteer het Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 1. Selecteer de map om de inhoud ervan te openen.
 1. Selecteer de afbeelding waarvan u de slimme uitsnijding of het slimme staal wilt aanpassen.
 1. Selecteer **[!UICONTROL Smart Crop]** in de werkbalk.
@@ -256,7 +293,7 @@ Zie ook [ uitgeven het slimme gewas of het slimme monster van veelvoudige beelde
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan om gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
+>Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
 
 Nadat u een afbeeldingsprofiel (met slimme uitsnijding) hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Indien nodig kunt u de uitlijning handmatig aanpassen of het venster voor slimme uitsnijden op meerdere afbeeldingen vergroten of verkleinen om de brandpunten verder te perfectioneren.
 
@@ -265,13 +302,13 @@ Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorg
 >[!IMPORTANT]
 >
 >Wanneer u het venster voor slimme uitsnijdingen van meerdere elementen handmatig aanpast, worden de wijzigingen opgeslagen. Deze bewerkingen blijven intact, zelfs als u de elementen later opnieuw verwerkt. Als u de breedte, hoogte of beide in het gedeelte **[!UICONTROL Responsive Image Crop]** van het afbeeldingsprofiel bewerkt, worden deze elementen opnieuw verwerkt.
->Zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
+>Zie [ Dynamische activa van Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
 
 Herhaal de slimme uitsnijding om de extra uitsnijdingen indien nodig opnieuw te genereren.
 
 **om het slimme gewas of slim monster van veelvoudige beelden uit te geven:**
 
-1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Selecteer het Experience Manager-logo en navigeer naar **[!UICONTROL Assets]** en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 1. Selecteer in de map het pictogram **[!UICONTROL More Actions]** (...) en selecteer vervolgens **[!UICONTROL Smart Crop]** .
 
 1. Voer op de pagina **[!UICONTROL Edit Smart Crops]** een van de volgende handelingen uit:
@@ -316,17 +353,17 @@ Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submapp
 
 U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of vanuit **[!UICONTROL Properties]** als u in de map bent.
 
-### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Dynamische mediaafbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
+1. Selecteer het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]** .
 1. Selecteer het afbeeldingsprofiel dat u uit een of meerdere mappen wilt verwijderen.
 1. Selecteer **[!UICONTROL Remove Processing Profile from Folders]** en selecteer de map of meerdere mappen waaruit u het profiel wilt verwijderen en selecteer **[!UICONTROL Remove]** .
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Eigenschappen Dynamic Media-afbeeldingsprofielen uit mappen verwijderen {#removing-image-profiles-from-folders-via-properties}
+### Dynamische mediaafbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
-1. Selecteer het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waarvan u een afbeeldingsprofiel wilt verwijderen.
+1. Selecteer het Experience Manager-logo en navigeer **[!UICONTROL Assets]** naar de map waarvan u een afbeeldingsprofiel wilt verwijderen.
 1. Selecteer in de map het vinkje om het te selecteren en selecteer vervolgens **[!UICONTROL Properties]** .
 1. Selecteer de tab **[!UICONTROL Image Profiles]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Profile Name]** eerst **[!UICONTROL None]** en vervolgens **[!UICONTROL Save & Close]** .

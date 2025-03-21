@@ -5,21 +5,55 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2543'
 ht-degree: 5%
 
 ---
 
 # Metagegevensschema&#39;s {#metadata-schemas}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik, de interoperabiliteit, enzovoort van middelen verbetert. Correcte toepassing van metagegevens is onaantastbaar om workflows met metagegevens en processen te behouden. Om aan organisatie-brede meta-gegevensstrategie en normen te houden, kunt u meta-gegevensschema&#39;s gebruiken die gebruikers DAM helpen zich te richten. Met [!DNL Adobe Experience Manager] kunt u gemakkelijk en flexibel metagegevensschema&#39;s maken, onderhouden en toepassen.
@@ -48,14 +82,14 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de i
 |---|---|---|
 | [!UICONTROL default] | | Het basisschema voor metagegevens voor elementen. |
 | | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] -formulier over: | |
-| | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema voor Dynamic Media-video&#39;s. |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Schemaformulier voor Dynamic Media-video&#39;s. |
 | | <ul><li>[!UICONTROL image]</li></ul> | Schema voor afbeeldingen van het MIME-type, zoals `image/jpeg` en `image/png` . <br> Het [!UICONTROL image] -formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: schema voor elementen met subtype [!UICONTROL jpeg] .</li> <li>[!UICONTROL tiff]: schema voor de elementen met subtype TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type, zoals `application/pdf` en `application/zip` . <br>[!UICONTROL pdf]: Schema voor elementen met subtype PDF. |
 | | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor video-elementen van het type MIME, zoals `video/avi` en `video/mp4` . |
 | [!UICONTROL collection] | | Schema voor verzamelingen. |
 | [!UICONTROL contentfragment] | | Schemaformulier voor inhoudsfragmenten. |
 | [!UICONTROL forms] | | Dit schema-formulier heeft betrekking op [!DNL Adobe Experience Manager Forms] . |
-| [!UICONTROL ugc_contentfragment] | | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in de Experience Manager zijn geïntegreerd. |
+| [!UICONTROL ugc_contentfragment] | | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in Experience Manager zijn geïntegreerd. |
 
 >[!NOTE]
 >
@@ -123,7 +157,7 @@ Hier volgen voorbeelden van geldige waarden voor een eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
-* `./jcr:created`: slaat de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, wordt u aangeraden deze te markeren als Uitschakelen en bewerken. Anders treedt de fout &quot;Wijzigen van asset(s)&quot; op wanneer u de eigenschappen van de asset opslaat.
+* `./jcr:created`: slaat de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, wordt u aangeraden deze als Uitschakelen-bewerking te markeren. Anders treedt de fout &quot;Wijzigen van asset(s)&quot; op wanneer u de eigenschappen van de asset opslaat.
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
@@ -243,16 +277,16 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 >[!NOTE]
 >
->Een metagegevensveld kan op basis van de waarde van een ander veld als verplicht worden gedefinieerd. In de weergave Kaarten wordt het waarschuwingsbericht over ontbrekende metagegevens voor dergelijke verplichte metagegevensvelden niet weergegeven door de Experience Manager.
+>Een metagegevensveld kan op basis van de waarde van een ander veld als verplicht worden gedefinieerd. In de weergave Kaarten geeft Experience Manager geen waarschuwingsbericht weer over ontbrekende metagegevens voor dergelijke verplichte metagegevensvelden.
 
-1. Klik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** . De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
+1. Klik op het Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** . De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
 1. Sla het standaardmetagegevensformulier op als een aangepast formulier. Sla het bestand bijvoorbeeld op als `my_default` .
 1. Bewerk het aangepaste formulier. Voeg een verplicht veld toe. Voeg bijvoorbeeld een veld **[!UICONTROL Category]** toe en maak het veld verplicht.
 1. Klik op **[!UICONTROL Save]**. Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** . Selecteer het formulier en selecteer vervolgens **[!UICONTROL Apply to Folders]** op de werkbalk om de aangepaste metagegevens toe te passen op een map.
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. Er wordt een bericht voor de ontbrekende metagegevens van het verplichte veld weergegeven in de kaartweergave van het element.
-1. (Optioneel) Toegang `https://[server]:[port]/system/console/components/` . Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` in die standaard is uitgeschakeld. Stel een frequentie in waarmee de Experience Manager controleert of metagegevens over de elementen geldig zijn.
+1. (Optioneel) Toegang `https://[server]:[port]/system/console/components/` . Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` in die standaard is uitgeschakeld. Stel een frequentie in waarmee Experience Manager controleert of metagegevens over de elementen geldig zijn.
 
-   Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan `jcr:content` elementen. Met deze eigenschap kan Experience Manager de resultaten in een zoekopdracht filteren.
+   Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan `jcr:content` elementen. Met deze eigenschap kan Experience Manager resultaten in een zoekopdracht filteren.
 
    >[!NOTE]
    >
@@ -275,4 +309,4 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

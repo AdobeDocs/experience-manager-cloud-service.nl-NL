@@ -1,13 +1,13 @@
 ---
 title: Hoe kunt u slimme tags toevoegen aan elementen in AEM?
-description: Voeg slimme tags toe aan elementen in AEM met een kunstmatige intelligente service die contextafhankelijke en beschrijvende bedrijfstags toepast.
+description: Voeg slimme tags toe aan elementen in AEM met een kunstmatig intelligente service die contextuele en beschrijvende bedrijfstags toepast.
 contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2454'
 ht-degree: 3%
 
 ---
@@ -15,19 +15,53 @@ ht-degree: 3%
 
 # Slimme tags toevoegen aan elementen in AEM {#smart-tags-assets-aem}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
-In de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader van [ Adobe Sensei ](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijftaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. AEM past automatisch slimme tags toe op geüploade elementen.
+In de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader van [ Adobe Sensei ](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) om zijn algoritme van de beelderkenning op uw markeringsstructuur en bedrijftaxonomie te trainen. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. AEM past standaard automatisch slimme tags toe op geüploade elementen.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -37,7 +71,7 @@ In de achtergrond, gebruikt de functionaliteit het kunstmatig intelligente kader
 
 U kunt de volgende typen elementen labelen:
 
-* **Beelden**: De beelden in vele formaten worden geëtiketteerd gebruikend de de slimme inhoudsdiensten van Adobe Sensei. U [ creeert een opleidingsmodel ](#train-model) en dan worden de geuploade beelden automatisch geëtiketteerd. Slimme tags worden toegepast op de ondersteunde bestandstypen die uitvoeringen genereren in JPG-indeling en PNG-indeling.
+* **Beelden**: De beelden in vele formaten worden geëtiketteerd gebruikend de de slimme inhoudsdiensten van Adobe Sensei. U [ creeert een opleidingsmodel ](#train-model) en dan worden de geuploade beelden automatisch geëtiketteerd. Slimme tags worden toegepast op de ondersteunde bestandstypen die uitvoeringen genereren in de JPG- en PNG-indeling.
 * **Op tekst gebaseerde activa**: [!DNL Experience Manager Assets] auto-markeringen de gesteunde op tekst-gebaseerde activa wanneer geupload.
 * **Video activa**: Het video etiketteren wordt toegelaten door gebrek in [!DNL Adobe Experience Manager] als [!DNL Cloud Service]. [ de Video&#39;s zijn auto-geëtiketteerd ](/help/assets/smart-tags-video-assets.md) wanneer u nieuwe video&#39;s uploadt of bestaande degenen opnieuw verwerkt.
 
@@ -62,7 +96,7 @@ U kunt de volgende typen elementen labelen:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-AEM voegt de slimme tags standaard toe aan de tekstelementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
+AEM voegt de slimme tags standaard toe aan de op tekst gebaseerde elementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
 
 * [ begrijp markeringsmodellen en richtlijnen ](#understand-tag-models-guidelines).
 * [ Trein het model ](#train-model).
@@ -97,11 +131,11 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 
 ![ Illustratieve beelden om de richtlijnen voor opleiding ](assets/do-not-localize/completeness.png) te illustreren
 
-**Aantal markeringen**: de Adobe adviseert dat u een model gebruikend minstens twee verschillende markeringen en minstens tien verschillende beelden voor elke markering opleidt. Voeg in één tagmodel niet meer dan 50 tags toe.
+**Aantal markeringen**: Adobe adviseert dat u een model gebruikend minstens twee verschillende markeringen en minstens tien verschillende beelden voor elke markering opleidt. Voeg in één tagmodel niet meer dan 50 tags toe.
 
-**Aantal voorbeelden**: Voor elke markering, voeg minstens tien voorbeelden toe. De Adobe beveelt echter ongeveer 30 voorbeelden aan. Er worden maximaal 50 voorbeelden per tag ondersteund.
+**Aantal voorbeelden**: Voor elke markering, voeg minstens tien voorbeelden toe. Adobe beveelt echter ongeveer 30 voorbeelden aan. Er worden maximaal 50 voorbeelden per tag ondersteund.
 
-**verhindert valse positieven en conflicten**: de Adobe adviseert het creëren van één enkel markeringsmodel voor één enkel visueel aspect. Structuur de labelmodellen zodanig dat overlappende codes tussen de modellen worden voorkomen. Gebruik bijvoorbeeld geen gemeenschappelijke tags, zoals `sneakers` , in twee verschillende modelnamen voor tags `shoes` en `footwear` . Het trainingsproces overschrijft het ene getrainde tagmodel met het andere voor een algemeen trefwoord.
+**verhindert valse positieven en conflicten**: Adobe adviseert het creëren van één enkel markeringsmodel voor één enkel visueel aspect. Structuur de labelmodellen zodanig dat overlappende codes tussen de modellen worden voorkomen. Gebruik bijvoorbeeld geen gemeenschappelijke tags, zoals `sneakers` , in twee verschillende modelnamen voor tags `shoes` en `footwear` . Het trainingsproces overschrijft het ene getrainde tagmodel met het andere voor een algemeen trefwoord.
 
 **Voorbeelden**: Sommige meer voorbeelden voor begeleiding zijn:
 
@@ -259,7 +293,7 @@ Als u bestanden met slimme tags wilt zoeken (normaal of uitgebreid), gebruikt u 
 >[!NOTE]
 >
 >Of u met slimme tags op uw tags kunt trainen en deze kunt toepassen op andere afbeeldingen, is afhankelijk van de kwaliteit van de afbeeldingen die u gebruikt voor training.
->Voor de beste resultaten raadt Adobe u aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
+>Voor de beste resultaten raadt Adobe aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
 
 **zie ook**
 
@@ -275,7 +309,7 @@ Als u bestanden met slimme tags wilt zoeken (normaal of uitgebreid), gebruikt u 
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
 
 # [!DNL Assets] ondersteunde bestandsindelingen {#supported-file-formats}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt ondersteuning voor elementaire mogelijkheden voor inhoudsbeheer, zoals online opslag, beheer van metagegevens, versioning, uploaden en downloaden, enzovoort, voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
@@ -23,7 +57,7 @@ Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor 
 
 De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
-* De zeer belangrijke [ formaten van het dossier van de Adobe ](#adobe-formats) die door de toepassingen en de diensten van de Adobe, met inbegrip van [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF worden geproduceerd.
+* Zeer belangrijke [ Adobe dossierformaten ](#adobe-formats) die door de toepassingen en de diensten van Adobe, met inbegrip van [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF worden geproduceerd.
 * Belangrijke [ beeldende dossierformaten ](#image-formats).
 * [ Camera Raw dossierformaten ](#camera-raw-formats) voor een brede waaier van camera&#39;s, met inbegrip van Canon, Nikon, Fujifilm, Olympus, en andere fabrikanten (aangedreven door Adobe Camera Raw).
 * Gemeenschappelijke [ documentformaten ](#document-formats), met inbegrip van Microsoft® Office en Open formaten van het Document.
@@ -76,9 +110,9 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
 De volgende 3D-indelingen worden ondersteund.
 
-Zie ook [ Werk met 3D activa in Dynamic Media ](/help/assets/dynamic-media/assets-3d.md).
+Zie ook [ Werk met 3D activa in Dynamische Media ](/help/assets/dynamic-media/assets-3d.md).
 
-| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamische media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -178,7 +212,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Audio-indelingen {#audio-formats}
 
-[!DNL Assets] als [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+[!DNL Assets] als [!DNL Cloud Service] biedt ondersteuning voor het ophalen van XMP-metagegevens voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
 
 ## Ondersteunde indelingen voor audio- en video-transcriptie {#audio-video-transcription-formats}
 
@@ -197,7 +231,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 * De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 
-## Dynamic Media - Ondersteunde invoervideo-indelingen voor transcodering {#video-dynamic-media-transcoding}
+## Dynamische media - Ondersteunde invoervideo-indelingen voor transcodering {#video-dynamic-media-transcoding}
 
 | Videobestandsextensie | Container | Aanbevolen videocodecs | Niet-ondersteunde video-codecs |
 | --- | --- | --- | --- |
@@ -213,21 +247,21 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
-‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
+‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in dynamische media of voor gebruik met annotatie in Experience Manager Assets.
 
-## Dynamic Media - Ondersteunde documentindelingen {#document-support-dynamic-media}
+## Dynamische media - Ondersteunde documentindelingen {#document-support-dynamic-media}
 
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF (Zie onderstaande opmerking) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF (zie onderstaande opmerking) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->Voor beveiligde PDF wordt alleen Uploaden ondersteund.
+>Voor beveiligde PDF&#39;s wordt alleen Uploaden ondersteund.
 
-## Dynamic Media - Ondersteunde rasterafbeeldingsindelingen {#image-support-dynamic-media}
+## Dynamische media - Ondersteunde rasterafbeeldingsindelingen {#image-support-dynamic-media}
 
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
@@ -247,7 +281,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en die wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
-## Dynamic Media - Niet-ondersteunde rasterafbeeldingsindelingen {#unsupported-raster-image-formats-dm}
+## Dynamische media - Niet-ondersteunde rasterafbeeldingsindelingen {#unsupported-raster-image-formats-dm}
 
 De volgende subtypes van het dossierformaten van het roosterbeeld die *niet* in [!DNL Dynamic Media] worden gesteund:
 
@@ -258,7 +292,7 @@ De volgende subtypes van het dossierformaten van het roosterbeeld die *niet* in 
 * TIFF-bestanden met zwevende-kommagegevens.
 * TIFF-bestanden met Lab-kleurruimte.
 
-## Dynamic Media - Ondersteunde 3D-bestandsindelingen {#support-3d-formats-dynamic-media}
+## Dynamische media - Ondersteunde 3D-bestandsindelingen {#support-3d-formats-dynamic-media}
 
 Zie ook [ 3D gesteunde formaten ](/help/assets/file-format-support.md#support-3d-formats)
 
@@ -282,7 +316,7 @@ Zie ook [ 3D gesteunde formaten ](/help/assets/file-format-support.md#support-3d
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

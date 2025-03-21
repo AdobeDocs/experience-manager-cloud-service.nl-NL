@@ -1,35 +1,72 @@
 ---
-title: Rapportering in Dynamic Media
-description: Leer hoe u een foutrapport opvraagt voor Dynamic Media die URL's levert die mislukken.
+title: Rapportage in dynamische media
+description: Leer hoe te om een foutenrapport voor Dynamische Media te verzoeken levert URLs die ontbreken.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
-# Een foutrapport aanvragen voor URL&#39;s die niet zijn geleverd door Dynamic Media
+# Vraag een foutenrapport voor Dynamische levering URLs van Media die ontbreken
 
-U kunt om een foutenrapport verzoeken dat Dynamic Media URLs identificeert die op leveringstijd ontbrak. Het rapport is een aggregatie van gegevens tot vijf dagen en is beschikbaar in CSV-indeling. Het foutenrapport bevat de volgende informatie:
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-* Leverings-URL voor Dynamic Media is mislukt - Een mislukte URL is een door Dynamic Media gegenereerde URL die geen inhoud kan produceren op het moment van levering.
+U kunt om een foutenrapport verzoeken dat Dynamische Media URLs identificeert die in leveringstijd ontbrak. Het rapport is een aggregatie van gegevens tot vijf dagen en is beschikbaar in CSV-indeling. Het foutenrapport bevat de volgende informatie:
+
+* Dynamische URL voor levering van media is mislukt - Een mislukte URL is een door dynamische media gegenereerde URL die geen inhoud kan produceren op het moment van levering.
 * Referrer-URL - De referentie-URL waarvan de mislukte leverings-URL wordt aangeroepen.
 * Aantal mislukkingen - Het aantal keren dat de leverings-URL is geladen en dat tot een fout heeft geleid.
 
-Wanneer u om het foutenrapport verzoekt, e-mailt het team van Adobe Dynamic Media het rapport aan u, in Csv formaat. Het heeft betrekking op een periode van vijf dagen vanaf de dag waarop uw verzoek is ingediend.
+Wanneer u om het foutenrapport verzoekt, e-mailt het team van de Media van Adobe het rapport aan u, in Csv formaat. Het heeft betrekking op een periode van vijf dagen vanaf de dag waarop uw verzoek is ingediend.
 
 U kunt een foutenrapport eens per maand, voor een bepaald bedrijf aanvragen.
 
-**om een foutenrapport voor levering URLs van Dynamic Media te verzoeken die ontbreken:**
+**om een foutenrapport voor Dynamische levering URLs van Media te verzoeken die ontbreken:**
 
-1. [ verzend een e-mail naar reports-dynamic-media@adobe.com ](mailto:reports-dynamic-media@adobe.com) met de bedrijfsnaam die met uw rekening van Dynamic Media wordt geassocieerd.
+1. [ verzend een e-mail naar reports-dynamic-media@adobe.com ](mailto:reports-dynamic-media@adobe.com) met de bedrijfsnaam die met uw Dynamische rekening van Media wordt geassocieerd.
 
-   Als u niet de bedrijfsnaam kent, zie de ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) pagina van de Configuratie 0} Dynamic Media {in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. [ Voor Browser van de Configuratie van Dynamic Media pagina, klik **[!UICONTROL global]**, selecteer *[Dynamic_Media_folder_icon]* checkbox, dan uitgezochte **[!UICONTROL Edit]**. U hebt beheerdersrechten nodig AEM u toegang wilt krijgen tot de Dynamic Media Configuration-pagina.
+   Als u niet de bedrijfsnaam kent, zie de [ Dynamische pagina van de Configuratie van Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. Voor de Dynamische Browser van de Configuratie van Media pagina, klik **[!UICONTROL global]**, selecteer *[Dynamic_Media_folder_icon]* checkbox, dan uitgezochte **[!UICONTROL Edit]**. U moet beheerdersrechten in AEM hebben om toegang te krijgen tot de pagina Dynamic Media Configuration.
 
-   ![ die tot de pagina van de Configuratie van Dynamic Media toegang hebben.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
+   ![ die tot de Dynamische pagina van de Configuratie van Media toegang hebben.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

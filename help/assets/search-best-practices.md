@@ -5,25 +5,56 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen werkwijzen voor zoeken in AEM Assets
 
-| [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het zoeken naar elementen waarmee u een hogere snelheid van de inhoud kunt bereiken. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden. Zoekmiddelen in [!DNL Adobe Experience Manager Assets] zijn dan ook van cruciaal belang voor het gebruik van een digitaal assetmanagementsysteem - of het nu gaat om verder gebruik door creatieve klanten, voor een robuust beheer van bedrijfsmiddelen door zakelijke gebruikers en marketers of voor beheer door DAM-beheerders.
 
-Dit Help-document bevat AEM best practices voor zoeken met behulp van verschillende scenario&#39;s om AEM gebruikers te helpen bij het uitvoeren van basiszoekopdrachten op een geavanceerd niveau.
+Dit Help-document bevat best practices voor AEM-zoekopdrachten met behulp van verschillende scenario&#39;s om AEM-gebruikers te helpen basiszoekopdrachten op een geavanceerd niveau uit te voeren.
 
-## Zoeken naar Experience Managers openen {#access-experience-manager-search}
+## Experience Manager-zoekopdracht openen {#access-experience-manager-search}
 
-Hieronder volgen de basisstappen die u in Experience Manager moet uitvoeren voordat u begint met zoeken:
+De volgende basisstappen worden uitgevoerd in Experience Manager voordat u begint met zoeken:
 
 * In de **mening Admin**, ga naar Assets > Dossiers in Experience Manager en klik het onderzoekspictogram op de hoogste bar. U kunt ook een slash (/) gebruiken om het veld Universeel zoeken te openen.
 In de **mening van Assets**, is de onderzoeksbar zichtbaar op de bovenkant en kan direct worden betreden.
@@ -41,7 +72,7 @@ De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden wor
 2. Komt overeen met `Classic Car` in slimme tags.
 3. Komt overeen met `Classic` of `Car` in slimme tags.
 
-Geef `classic car` op als zoektrefwoord en klik op Zoeken. U kunt de zoeksuggesties in een vervolgkeuzelijst bekijken terwijl u het trefwoord typt. De onderzoekssuggesties zijn gebaseerd op de inhoud van de onderzoeksindex op uw plaatsing van de Experience Manager. Als u de juiste elementen niet kunt weergeven in het keuzemenu, drukt u op Enter om de lijst met resultaten weer te geven. De resultaten worden gesorteerd op relevantie, beginnend bij de dichtstbijzijnde overeenkomsten.
+Geef `classic car` op als zoektrefwoord en klik op Zoeken. U kunt de zoeksuggesties in een vervolgkeuzelijst bekijken terwijl u het trefwoord typt. De zoeksuggesties zijn gebaseerd op de inhoud van de zoekindex bij uw Experience Manager-implementatie. Als u de juiste elementen niet kunt weergeven in het keuzemenu, drukt u op Enter om de lijst met resultaten weer te geven. De resultaten worden gesorteerd op relevantie, beginnend bij de dichtstbijzijnde overeenkomsten.
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
@@ -94,7 +125,7 @@ Als u specifiek wilt zijn voor de zoekresultaten en een optie wilt opnemen in de
 
 ### NOT, operator {#not-operator}
 
-Wanneer u resultaten wilt terugwinnen exclusief sommige sleutelwoorden, kunt u de NOT exploitant gebruiken. De operator NOT gebruikt het afbreekstreepje (-) om AEM zoekopdracht te sturen naar wat van de zoekresultaten moet worden uitgesloten. De zoekquery van `car - classic` die bijvoorbeeld metagegevens opgeeft die `car` bevatten maar `classic` niet.
+Wanneer u resultaten wilt terugwinnen exclusief sommige sleutelwoorden, kunt u de NOT exploitant gebruiken. De operator NOT gebruikt het koppelteken (-) om AEM te laten zoeken wat van de zoekresultaten moet worden uitgesloten. De zoekquery van `car - classic` die bijvoorbeeld metagegevens opgeeft die `car` bevatten maar `classic` niet.
 
 ![ Onderzoek gebruikend NIET exploitant ](assets/not-operator.png)
 
@@ -110,7 +141,7 @@ Jokertekens worden gebruikt om een of meer tekens in de zoekopdracht te vervange
 
 ### Vraagteken (?) {#question-mark}
 
-Het symbool van het vraagteken kan als voorwaardelijke exploitant worden gebruikt om uw onderzoek in Experience Manager te verlichten.
+Het symbool van het vraagteken kan als voorwaardelijke operator worden gebruikt om uw zoekopdracht in Experience Manager te vergemakkelijken.
 
 * `car?` -query komt overeen met het woord met één teken na de auto. Bijvoorbeeld de winkelwagen.
 * `?car` -query komt overeen met het woord met één teken vóór de auto. Bijvoorbeeld, litteken.
@@ -160,7 +191,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Scenario 4: Onderzoek naar unpublished het dossiertype van PDF documenten met het `classic car` sleutelwoord in het.**
+**Scenario 4: Onderzoek naar ongepubliceerde het dossiertype van PDF documenten met het `classic car` sleutelwoord in het.**
 
 Voer de volgende stappen uit in **[!UICONTROL Admin view]** :
 
@@ -196,9 +227,9 @@ Voer de volgende stappen uit om elementen te zoeken met behulp van het vermelde 
 
 ## Geavanceerd zoeken {#advanced-search}
 
-AEM zoekopdracht stelt u in staat complexe zoekopdrachten met minder moeite te maken. Hieronder volgen de verschillende voorbeelden die u helpen bij het maken van complexe zoekopdrachten:
+Met AEM-zoekopdrachten kunt u complexe zoekopdrachten met minder moeite uitvoeren. Hieronder volgen de verschillende voorbeelden die u helpen bij het maken van complexe zoekopdrachten:
 
-**Scenario 6: Onderzoek naar alle documenten in de bewaarplaats van de Experience Manager met `classic car` in hun meta-gegevens. De inhoud van het document moet daarin `classic car` trefwoord bevatten.**
+**Scenario 6: Onderzoek naar alle documenten in de bewaarplaats van Experience Manager met `classic car` in hun meta-gegevens. De inhoud van het document moet daarin `classic car` trefwoord bevatten.**
 
 Met Adobe Experience Manager kunt u meerdere criteria aan uw zoekopdracht toevoegen. U kunt een combinatie van trefwoorden, operator(s) en filter(s) gebruiken om de zoekresultaten te beperken.
 
@@ -212,7 +243,7 @@ Een zoekopdracht naar scenario 6 uitvoeren:
 
 Scenario 6 kan niet worden uitgevoerd in **[!UICONTROL Assets view]** omdat het het gebruik van jokertekens niet ondersteunt.
 
-**Scenario 7: Onderzoek naar alle documenten in de bewaarplaats van de Experience Manager waarin de inhoud van het document `car` moet omvatten maar `classic` uitsluiten. De zelfde voorwaarde is op meta-gegevens van een activa van toepassing.**
+**Scenario 7: Onderzoek naar alle documenten in de bewaarplaats van Experience Manager waarin de inhoud van het document `car` moet omvatten maar `classic` uitsluiten. De zelfde voorwaarde is op meta-gegevens van een activa van toepassing.**
 
 Een zoekopdracht uitvoeren naar scenario 7:
 
@@ -293,7 +324,7 @@ U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoeko
 2. Geef in het vak Zoeken bevorderen een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik vervolgens op [!UICONTROL Add] . U kunt meerdere trefwoorden op dezelfde manier opgeven.
 3. Klik op [!UICONTROL Save & Close]. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
 
-## Noteerbare dingen bij het uitvoeren van een zoekopdracht in Experience Manager {#notable-things}
+## Opmerkelijke dingen tijdens het uitvoeren van een zoekopdracht in Experience Manager {#notable-things}
 
 * Geef metagegevens van het middel op om het middel voor te bereiden waarop kan worden gezocht met het universeel zoekalgoritme. Controleer of de metagegevens van het element zijn bijgewerkt.
 * Gebruik dubbele aanhalingstekens (&quot; &quot;) om de zoekopdracht precies en op het punt te plaatsen.
@@ -360,13 +391,13 @@ The newly added assets are not indexed.
         <td> 
             Ondersteunde opties zijn:
             <ul>
-            <li> Publish
+            <li> Publiceren
             <li> Gepubliceerde datum
             <li> Laatst gepubliceerd door
             <li> Goedkeuring 
             <li> Afhandeling
             <li> Vervaldatum
-            <li> Dynamic Media
+            <li> Dynamische media
             </ul>
         </td>
         <td>

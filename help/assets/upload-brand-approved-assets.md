@@ -3,9 +3,9 @@ title: Upload uw door uw merk goedgekeurde middelen naar  [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -17,18 +17,52 @@ ht-degree: 0%
 >title="Door een merk goedgekeurde middelen uploaden naar Content Hub"
 >abstract="Voeg goedgekeurde middelen toe aan Content Hub via een lokaal bestandssysteem of importeer elementen van OneDrive- of Dropbox-gegevensbronnen. Alle middelen worden op het hoogste niveau in Content Hub weergegeven, ongeacht de mapstructuur, om de zoekmogelijkheden te verbeteren."
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->Content Hub-gids is nu beschikbaar in de PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
+>Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de PDF van de Gids van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of de gegevensbronnen van de Dropbox toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
+[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
-De elementen die zijn gemarkeerd als `Approved` in Assets as a Cloud Service, zijn automatisch beschikbaar in Content Hub. Voor meer informatie, zie [ activa voor Content Hub ](/help/assets/approve-assets-content-hub.md) goedkeuren.
+De elementen die in Assets as a Cloud Service als `Approved` zijn gemarkeerd, zijn automatisch beschikbaar in Content Hub. Voor meer informatie, zie [ activa voor Content Hub ](/help/assets/approve-assets-content-hub.md) goedkeuren.
 
 Content Hub biedt u de volgende mogelijkheden om uw assetzoekopdracht verder te verbeteren:
 
@@ -63,7 +97,7 @@ Voer de volgende stappen uit om elementen aan Content Hub toe te voegen:
 
 1. Definieer de naam voor het uploaden met behulp van het veld **[!UICONTROL Campaign name]** . U kunt een bestaande naam gebruiken of een nieuwe naam maken. De Content Hub biedt u meer opties terwijl u de naam typt. <!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
-   Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest gebieden evenals het leidt tot een verbeterde onderzoekservaring voor uw geupload activa.
+   Het wordt aanbevolen om bij voorkeur waarden in de overige velden op te geven en een verbeterde zoekervaring voor uw geüploade elementen te maken.
 
 1. Definieer ook waarden voor de velden **[!UICONTROL Keywords]** , **[!UICONTROL Channels]** , **[!UICONTROL Timeframe]** en **[!UICONTROL Region]** . Tags toevoegen en elementen groeperen op trefwoorden, kanalen en locatie stelt iedereen die uw goedgekeurde bedrijfsinhoud gebruikt in staat deze elementen te vinden en te organiseren.
 
@@ -76,11 +110,11 @@ Beheerders kunnen ook de verplichte en optionele velden configureren die worden 
 
 ## Middelen aan Content Hub toevoegen vanuit OneDrive- of Dropbox-gegevensbronnen {#add-assets-onedrive-dropbox}
 
-Middelen toevoegen aan Content Hub vanaf OneDrive- of Dropbox-gegevensbronnen:
+Middelen toevoegen aan Content Hub vanaf OneDrive of Dropbox-gegevensbronnen:
 
 1. Klik op **[!UICONTROL Add Assets]** om het dialoogvenster **[!UICONTROL Add your approved assets]** weer te geven waarin u elementen kunt importeren van OneDrive of Dropbox.
 
-1. Klik op **[!UICONTROL OneDrive]** of **[!UICONTROL Dropbox]** om het importproces te starten. Content Hub vraagt u zich aan te melden bij uw OneDrive- of Dropbox-account en vervolgens de mapstructuur OneDrive of Dropbox in het linkerdeelvenster weer te geven.
+1. Klik op **[!UICONTROL OneDrive]** of **[!UICONTROL Dropbox]** om het importproces te starten. Content Hub vraagt u zich aan te melden bij uw OneDrive- of Dropbox-account en vervolgens de mapstructuur van OneDrive of Dropbox weer te geven in het linkerdeelvenster.
 
 1. Klik op het plus-pictogram naast het bestand of de mapnaam om het item in de lijst met geselecteerde items weer te geven. Na het selecteren van alle dossiers die u aan het portaal van Content Hub moet toevoegen, herhaal stap 3 tot 6 van [ activa aan Content Hub van het lokale dossiersysteem ](#add-assets-local-file-system) toevoegen om het uploadproces te voltooien.
 
@@ -90,12 +124,12 @@ Beheerders kunnen ook de verplichte en optionele velden configureren die worden 
 
 ## Middelen beheren die met Content Hub zijn geüpload {#manage-assets-uploaded-using-content-hub}
 
-[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of de gegevensbronnen van de Dropbox toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
+[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of Dropbox gegevensbronnen toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of OneDrive- en Dropbox-gegevensbronnen om de zoekmogelijkheden te verbeteren.
 
 De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [ de auto-goedkeuringsknevel ](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
 
 * Als de schakeloptie **[!UICONTROL Auto-approval]** is ingeschakeld, zijn de elementen die u uploadt met Content Hub automatisch beschikbaar.
 
-* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de `hydrated-assets` map van uw as a Cloud Service omgeving van Assets. Navigeer aan de omslag en [ bulkgeef ](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
+* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de map `hydrated-assets` van uw Assets as a Cloud Service-omgeving. Navigeer aan de omslag en [ bulkgeef ](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
 
 ![ Content Hub goedkeuringsproces ](/help/assets/assets/content-hub-approval.png)

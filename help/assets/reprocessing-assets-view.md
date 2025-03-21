@@ -3,14 +3,51 @@ title: Digitale middelen opnieuw verwerken
 description: Meer informatie over verschillende methoden voor het opwerken van digitale elementen
 role: User, Leader, Developer
 exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
 # Digitale middelen opnieuw verwerken {#reprocessing-digital-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Als u de zojuist bewerkte voorinstelling opnieuw wilt toepassen op de bestaande elementen in de map, moet u de map opnieuw verwerken. U kunt zoveel elementen opnieuw verwerken als u nodig hebt.
 
@@ -72,7 +109,7 @@ Lees meer over [ opnieuw verwerkings kleurenmarkeringen voor bestaande beelden i
 
 ### Slim uitsnijden {#reprocessing-smart-crop}
 
-Lees meer over [ het slimme gewas van Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) dat u specifieke het bebouwen (**[!UICONTROL Smart Cropping]** en pixel het bebouwen) en het scherpen configuratie op de geuploade activa laat toepassen.
+Lees meer over [ Dynamische Slimme gewas van Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) die u specifieke het bebouwen (**[!UICONTROL Smart Cropping]** en pixel het bebouwen) en het scherpen configuratie op de geuploade activa laat toepassen.
 
 ### Metagegevens {#reprocessing-metadata}
 
@@ -80,13 +117,13 @@ Lees meer over [ het slimme gewas van Dynamic Media ](https://experienceleague.a
 
 Lees meer over [ het Opverwerken van meta-gegevensprofielen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
 
-### Dynamic Media-elementen in een map opnieuw verwerken {#reprocessing-dynamic-media}
+### Dynamische media-elementen in een map opnieuw verwerken {#reprocessing-dynamic-media}
 
-U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd. Voor meer informatie, bezoek [ opnieuw verwerken de activa van Dynamic Media in een omslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
+U kunt middelen in een omslag opnieuw verwerken die reeds een bestaand Dynamisch Profiel van het Beeld van Media of een Dynamisch Profiel van Media Video heeft dat u later veranderde. Voor meer informatie, bezoek [ opnieuw verwerken de Dynamische activa van Media in een omslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >
->U moet [!DNL Dynamic Media] in de omgeving configureren om het dialoogvenster Dynamic Media in te schakelen.
+>U moet [!DNL Dynamic Media] in de omgeving configureren om het dialoogvenster Dynamische media in te schakelen.
 >
 
 ### Workflows

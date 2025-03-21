@@ -1,18 +1,55 @@
 ---
-title: Voorinstellingen Dynamic Media-afbeelding toepassen
-description: Leer hoe u voorinstellingen voor afbeeldingen toepast in Dynamic Media.
+title: Dynamische voorinstellingen voor mediaafbeeldingen toepassen
+description: Leer hoe u voorinstellingen voor afbeeldingen kunt toepassen in Dynamische media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
 
-# Voorinstellingen Dynamic Media-afbeelding toepassen {#applying-image-presets}
+# Dynamische voorinstellingen voor mediaafbeeldingen toepassen {#applying-image-presets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Met Voorinstellingen voor afbeeldingen kunnen elementen dynamisch afbeeldingen van verschillende grootten, indelingen of andere afbeeldingseigenschappen leveren. U kunt een voorinstelling kiezen wanneer u afbeeldingen exporteert om deze opnieuw op te maken volgens de specificaties die de beheerder heeft aangegeven.
 
@@ -26,7 +63,7 @@ Daarnaast kunt u een voorinstelling voor een afbeelding kiezen die reageert (aan
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
-**om het Beeld van Dynamic Media toe te passen stelt vooraf in:**
+**om het Dynamische Beeld van Media toe te passen vooraf instelt:**
 
 1. Open het element en selecteer in de linkertrack de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL Renditions]** .
 

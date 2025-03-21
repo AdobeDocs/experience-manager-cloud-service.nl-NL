@@ -4,21 +4,55 @@ description: Verdeel uw digitale activa gebruikend methodes zoals aandeel als ve
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1817'
 ht-degree: 0%
 
 ---
 
 # Elementen delen en distribueren die worden beheerd in [!DNL Experience Manager] {#share-assets-from-aem}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] te delen als een [!DNL Cloud Service] :
@@ -115,7 +149,7 @@ Een goed ontworpen sjabloon biedt professionaliteit en bekwaamheid, waardoor uw 
 
 #### Opmaak van een aangepaste e-mailsjabloon {#format-of-custom-email-template}
 
-De e-mailsjabloon kan worden aangepast met platte tekst of met HTML. De standaard bewerkbare sjabloonkoppeling vindt u op `/libs/settings/dam/adhocassetshare/en.txt` . U kunt de sjabloon overschrijven door het bestand `/apps/settings/dam/adhocassetshare/en.txt` te maken. U kunt de e-mailsjabloon zo vaak als nodig is wijzigen.
+De e-mailsjabloon kan worden aangepast met platte tekst of HTML. De standaard bewerkbare sjabloonkoppeling vindt u op `/libs/settings/dam/adhocassetshare/en.txt` . U kunt de sjabloon overschrijven door het bestand `/apps/settings/dam/adhocassetshare/en.txt` te maken. U kunt de e-mailsjabloon zo vaak als nodig is wijzigen.
 
 | Plaatsaanduidingen | Beschrijving |
 |---|-----|
@@ -250,9 +284,9 @@ Gebruikers kunnen de vereiste elementen downloaden en deze buiten [!DNL Experien
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Desktop app van de Experience Manager**: App werkt op Vensters en Mac. Zie [ Desktop app overzicht ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [ doorbladeren, doorzoeken, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [ activa uploaden gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Desktop app van Experience Manager**: App werkt op Vensters en Mac. Zie [ Desktop app overzicht ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [ doorbladeren, doorzoeken, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [ activa uploaden gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **de Verbinding van Activa van de Adobe**: De creatieve beroeps kunnen activa van binnen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop] direct zoeken en gebruiken.
+* **de Verbinding van Activa van Adobe**: De creatieve beroeps kunnen activa van binnen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop] direct zoeken en gebruiken.
 
 ## Elementen delen configureren {#configure-sharing}
 
@@ -312,7 +346,7 @@ Zie [ hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te
 ## Aanbevolen werkwijzen en problemen oplossen {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om de downloadlimieten. De standaardwaarde is 100 MB.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de Experience Manager-beheerder om welke downloadlimieten het gaat. De standaardwaarde is 100 MB.
 * Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als er voor de video een statische video-uitvoering beschikbaar is op de locatie `/jcr:content/renditions` in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media] -uitvoering.
 * Wanneer u een video-element downloadt via gedeelde koppelingen, worden de [!DNL Dynamic Media] -vertoningen niet opgenomen in het gedownloade archief.
 
@@ -338,5 +372,5 @@ Zie [ hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

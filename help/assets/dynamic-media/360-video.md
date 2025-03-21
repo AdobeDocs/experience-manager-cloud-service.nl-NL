@@ -1,18 +1,55 @@
 ---
 title: 360/VR-video
-description: Leer hoe u met 360 en VR-video (Virtual Reality) werkt in Dynamic Media.
+description: Leer hoe u werkt met 360 en VR-video (Virtual Reality) in dynamische media.
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
 # 360/VR-video {#vr-video}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 In video&#39;s van 360° wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; bij het afspelen op mobiele apparaten worden doorgaans de ingebouwde gyroscopische besturingselementen toegepast.
 
@@ -22,7 +59,7 @@ Met de 360/VR-videoviewer kunt u rechthoekige video renderen. Het resultaat is e
 
 Ruimtelijke audio wordt momenteel niet ondersteund. Als audio in stereo wordt gemengd, verandert de balans (L/R) niet omdat de klant de kijkhoek van de camera wijzigt.
 
-Zie [ Gebruikend Dynamic Media 360 Video&#39;s en de Videominiatuur van de Douane met AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+Zie [ Gebruikend Dynamische Media 360 Video&#39;s en de Videominiatuur van de Douane met AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Zie ook [ het Leiden Kijker stelt ](/help/assets/dynamic-media/managing-viewer-presets.md) vooraf in.
 
@@ -53,7 +90,7 @@ Zie [ video 360/VR ](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-vid
 
    Bij het renderen van 360-video-inhoud worden hogere eisen gesteld aan de resolutie van de bronvideo en aan de resolutie van gecodeerde vertoningen dan aan de standaard niet-360-video-inhoud.
 
-   U kunt het adaptieve videoprofiel gebruiken dat al bij Dynamic Media wordt geleverd. De kwaliteit van 360-video is echter merkbaar lager dan bij niet-360-video die is gecodeerd met dezelfde instellingen die zijn gerenderd met een niet-360-videoviewer. Ga daarom als volgt te werk als u hoogwaardige 360 video nodig hebt:
+   U kunt het uit-van-de-doos Aangepast Videoprofiel gebruiken dat reeds met Dynamische Media wordt geleverd. De kwaliteit van 360-video is echter merkbaar lager dan bij niet-360-video die is gecodeerd met dezelfde instellingen die zijn gerenderd met een niet-360-videoviewer. Ga daarom als volgt te werk als u hoogwaardige 360 video nodig hebt:
 
    * In het ideale geval heeft uw oorspronkelijke 360-video-inhoud een van de volgende resoluties:
 
@@ -68,7 +105,7 @@ Zie [ video 360/VR ](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-vid
 
    * Verwerk 360-video-inhoud in een map die exclusief is bestemd voor 360 video-elementen.
 
-   Deze benadering plaatst grotere eisen op het netwerk en cpu van de gebruiker.
+   Deze benadering plaatst grotere eisen op het netwerk en CPU van de gebruiker.
 
 1. [ uploadt uw video aan de omslag ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -103,7 +140,7 @@ Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
 Zie [ Inbeddend de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/dynamic-media/embed-code.md).
 Zie [ Koppelend URLs aan uw Webtoepassing ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met [!DNL Experience Manager Sites] pagina&#39;s heeft.
-Zie [ Toevoegend Dynamic Media Assets aan pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Zie [ Toevoegend Dynamische Media Assets aan pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **aan voorproef 360 Video&#39;s:**
 
@@ -135,9 +172,9 @@ Zie [ Toevoegend Dynamic Media Assets aan pagina&#39;s ](/help/assets/dynamic-me
 
 ## 360-video publiceren {#publishing-video}
 
-Als u 360-video wilt gebruiken, moet u deze publiceren. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
+Als u 360-video wilt gebruiken, moet u deze publiceren. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de Dynamische wolk van Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
-Zie [ het Publiceren Dynamic Media Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om 360 Video te publiceren.
+Zie [ het Publiceren van Dynamische Media Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details op hoe te om 360 Video te publiceren.
 Zie ook [ Inbeddend de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/dynamic-media/embed-code.md).
 Zie ook [ het Verbinden URLs aan uw Webtoepassing ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met [!DNL Experience Manager Sites] pagina&#39;s heeft.
-Zie ook [ Toevoegend Dynamic Media Assets aan pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Zie ook [ Toevoegend Dynamische Media Assets aan pagina&#39;s ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).

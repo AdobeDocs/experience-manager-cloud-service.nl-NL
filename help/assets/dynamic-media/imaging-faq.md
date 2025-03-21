@@ -6,14 +6,51 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3252'
 ht-degree: 0%
 
 ---
 
 # Slimme afbeeldingen {#smart-imaging}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmerken van elke gebruiker toepast om de juiste afbeeldingen te leveren die automatisch zijn geoptimaliseerd voor hun ervaring, wat resulteert in betere prestaties en betrokkenheid.
 
@@ -26,13 +63,13 @@ En nu een betere Google Core Web Vital score voor LCP (Grootste Inhoudelijke Ver
 
 >[!IMPORTANT]
 >
->Voor Smart Imaging moet u de CDN (Content Delivery Network) gebruiken die buiten de box valt en die is meegeleverd bij Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
+>Voor Smart Imaging moet u de CDN (Content Delivery Network) gebruiken die buiten de box valt en die wordt meegeleverd bij Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
 >[!TIP]
 >
->Probeer uit en ontdek de voordelen van de beeldbepalingen van Dynamic Media en Slimme Beeldvorming, gebruikend de Momentopname van Dynamic Media [__ ](https://snapshot.scene7.com/).
+>Probeer uit en ontdek de voordelen van Dynamische het beeldbepalingen van Media en Slim Beeld, gebruikend Dynamische Momentopname van Media [__ ](https://snapshot.scene7.com/).
 >
->Momentopname is een visueel demonstratieprogramma dat is ontworpen om de kracht van Dynamic Media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om de uitvoer van verschillende Dynamic Media-afbeeldingsmodifiers visueel te bekijken en optimalisaties voor Smart Imaging voor het volgende:
+>Momentopname is een visueel demonstratieprogramma dat is ontworpen om de kracht van dynamische media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testafbeeldingen of dynamische media-URL&#39;s om de uitvoer van verschillende dynamische media-afbeeldingsmodifiers visueel te bekijken en optimalisaties voor Smart Imaging voor het volgende:
 >
 >* Bestandsgrootte (met WebP en AVIF levering)
 >* Netwerkbandbreedte
@@ -40,7 +77,7 @@ En nu een betere Google Core Web Vital score voor LCP (Grootste Inhoudelijke Ver
 >
 >Om te leren hoe gemakkelijk het Momentopname moet gebruiken, speel de [ video van de de opleidingsopleiding van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten en 17 seconden).
 
-De slimme Beeldvorming profiteert van de extra prestatiesverhoging van volledig met de best-in-klasse van de Adobe dienst CDN (het Netwerk van de Levering van de Inhoud) wordt geïntegreerd. Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
+Smart Imaging profiteert van de extra prestatieverhoging door volledig te zijn geïntegreerd met de eersteklas CDN-service (Content Delivery Network) van Adobe. Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
 
 De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisatie van Smart Imaging aan:
 
@@ -51,7 +88,7 @@ De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisa
 | [ Beeld 3 ](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![ picture3 ](/help/assets/assets-dm/picture3.png) | 221 kB | 189 kB | 87,1 kB | 14,47% | 60,58% |
 | [ Beeld 4 ](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![ picture4 ](/help/assets/assets-dm/picture4.png) | 594 kB | 545 kB | 286 kB | 8,25% | 51,85% |
 
-Net als in het bovenstaande heeft Adobe ook een test uitgevoerd met een grotere set monsters. Het formaat AVIF verstrekte 20% extra groottevermindering boven WebP, die 27% vermindering boven JPEG verstrekte. Allemaal met dezelfde visuele kwaliteit. In totaal kan AVIF tot 41% gemiddelde grootte verkleinen in vergelijking met JPEG.
+Evenals in het bovenstaande voerde Adobe ook een test uit met een grotere set monsters. De indeling AVIF gaf een extra reductie van 20% ten opzichte van WebP, wat een reductie van 27% ten opzichte van JPEG mogelijk maakte. Allemaal met dezelfde visuele kwaliteit. In totaal biedt AVIF in vergelijking met JPEG een gemiddelde reductie van 41%.
 
 Vergelijk WebP en AVIF met PNG, kunt u een 84% groottevermindering met WebP en 87% met AVIF zien. En omdat zowel WebP- als AVIF-indelingen transparantie en meerdere afbeeldingsanimaties ondersteunen, is dit een goede vervanging voor transparante PNG- en GIF-bestanden.
 
@@ -82,11 +119,11 @@ De nieuwste belangrijkste voordelen van de nieuwste Smart Imaging zijn onder and
 
 ### Omzetting in browserindeling {#bfc}
 
-Als u Omzetting browserformaat inschakelt door `bfc=on` aan de URL van de afbeelding toe te voegen, worden JPEG en PNG voor verschillende browsers automatisch omgezet in een wegwerpversie met verlies in AVIF, WebP met verlies, JPEGXR met verlies en JPEG2000 met verlies. Voor browsers die deze indelingen niet ondersteunen, blijft Smart Imaging de JPEG of PNG gebruiken. Met Slimme afbeeldingen wordt de kwaliteit van de nieuwe indeling samen met de indelingswijziging opnieuw berekend.
+Als u Omzetting browserformaat inschakelt door `bfc=on` aan de URL van de afbeelding toe te voegen, worden JPEG en PNG voor verschillende browsers automatisch omgezet in AVIF, WebP met verlies, JPEGXR met verlies en JPEG2000 met verlies. Voor browsers die deze indelingen niet ondersteunen, blijft Smart Imaging de JPEG of PNG gebruiken. Met Slimme afbeeldingen wordt de kwaliteit van de nieuwe indeling samen met de indelingswijziging opnieuw berekend.
 
 U kunt Smart Imaging uitschakelen door `bfc=off` aan de URL van de afbeelding toe te voegen.
 
-Zie ook [ bfc ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in het Beeld van Dynamic Media die en API teruggeven.
+Zie ook [ bfc ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in het Dynamische Beeld van Media die en API teruggeven dienen.
 
 ### Optimalisatie van apparaatpixelverhoudingen {#dpr}
 
@@ -104,7 +141,7 @@ Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-head
 >[!NOTE]
 >
 >* U kunt `dpr=on,dprValue` ook gebruiken als de DPR-instelling op bedrijfsniveau is uitgeschakeld.
->* Als de resulterende afbeelding door DPR-optimalisatie groter is dan de Dynamic Media-instelling MaxPix, wordt de breedte van MaxPix altijd herkend door de hoogte-breedteverhouding van de afbeelding te behouden. —>
+>* Als de resulterende afbeelding door DPR-optimalisatie groter is dan de instelling MaxPix Dynamic Media, wordt de breedte van MaxPix altijd herkend door de hoogte-breedteverhouding van de afbeelding te behouden. —>
 
 | Aangevraagde afbeeldingsgrootte | Waarde van pixelverhouding van apparaat (dpr) | Afgeleverde afbeeldingsgrootte |
 |---|---|---|
@@ -161,9 +198,9 @@ De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
 * JPEG
 * PNG
 
-Met Slimme afbeeldingen wordt de kwaliteit voor afbeeldingsbestandsindelingen van JPEG opnieuw berekend bij de conversie naar een nieuwe indeling.
+Met Slimme afbeeldingen wordt de kwaliteit van JPEG-afbeeldingsbestandsindelingen opnieuw berekend wanneer deze worden geconverteerd naar een nieuwe indeling.
 
-Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, kunt u Smart Imaging configureren om AVIF en WebP met verlies te leveren. Voor de omzetting van de verliesindeling wordt bij Smart Imaging de kwaliteit gebruikt die wordt vermeld in de URL van de afbeelding, of anders de kwaliteit die is geconfigureerd in het Dynamic Media-bedrijfsaccount.
+Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, kunt u Smart Imaging configureren om AVIF en WebP met verlies te leveren. Voor het omzetten van indelingen met verlies gebruikt Smart Imaging de kwaliteit die wordt vermeld in de URL van de afbeelding, of anders de kwaliteit die is geconfigureerd in het bedrijf Dynamic Media.
 
 ## Ondersteuning van de opdracht Beeldserving in Smart Imaging{#imaging-serving-command-support}
 
@@ -173,7 +210,7 @@ De opdrachten Afbeeldingsserver `fmt` en `qlt` worden niet ondersteund. Alle res
 
 +++**zijn er vergunningskosten verbonden aan Slimme Beeldvorming?**
 
-Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en as a Cloud Service Experience Manager).
+Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en Experience Manager as a Cloud Service).
 
 >[!IMPORTANT]
 >
@@ -207,7 +244,7 @@ Slimme afbeeldingen worden naadloos geïntegreerd met uw bestaande voorinstellin
 
 De enige aanpassingen hebben betrekking op de afbeeldingsindeling, de kwaliteit of beide. Tijdens het omzetten van indelingen behoudt Smart Imaging de volledige visuele getrouwheid op basis van de vooraf ingestelde instellingen, maar het bestand wordt kleiner. U kunt deze functie alleen inschakelen door `bfc=on` , `dpr=on,dprValue` , `network=on` of alle drie parameterinstellingen toe te voegen aan uw bestaande URL&#39;s of voorinstellingen.
 
-Een voorinstelling voor een afbeelding geeft bijvoorbeeld een JPEG-indeling op van 500 × 500 pixels, met `quality=85` en `unsharp mask=0.1,1,5` . Smart Imaging detecteert of de gebruiker zich in een Chrome-browser bevindt. Vervolgens wordt de afbeelding omgezet in een webpagina met dezelfde afmetingen (500 × 500) en een onscherp masker dat overeenkomt met de instellingen van de JPEG. Het systeem vergelijkt dan de dossiergrootte van WebP en de versies van JPEG en dient kleinere aan de gebruiker.
+Een voorinstelling voor afbeeldingen geeft bijvoorbeeld een JPEG-indeling op van 500 × 500 pixels, met `quality=85` en `unsharp mask=0.1,1,5` . Smart Imaging detecteert of de gebruiker zich in een Chrome-browser bevindt. Vervolgens wordt de afbeelding omgezet in een webpagina met dezelfde afmetingen (500 × 500) en een onscherp masker dat overeenkomt met de JPEG-instellingen. Het systeem vergelijkt dan de dossiergrootte van WebP en de versies van JPEG en dient kleinere aan de gebruiker.
 
 +++
 
@@ -241,7 +278,7 @@ Ja, op beide vragen. Slimme afbeeldingen werken met afbeeldingen die via HTTP of
 
 Smart Imaging is klaar om direct voor alle klanten te worden gebruikt. Als u van de voordelen ervan wilt genieten, voegt u `bfc=on` of `dpr=on,dprValue` , of `network=on` , of alle drie parameterinstellingen toe aan uw bestaande URL&#39;s of voorinstellingen.
 
-Als u Smart Imaging wilt activeren, moet de Dynamic Media Classic of Dynamic Media van uw bedrijf voor een Experience Manager-account de Adobe gebundelde CDN (Content Delivery Network) als onderdeel van uw licentie opnemen.
+Als u Smart Imaging wilt activeren, moet de Dynamic Media Classic- of Dynamic Media-account van uw bedrijf de Adobe-gebundelde CDN (Content Delivery Network) opnemen in uw licentie.
 
 +++
 
@@ -260,7 +297,7 @@ Geef bij het maken van de draagtas op welke functies voor Smart Imaging u op uw 
 
 **om een steungeval tot stand te brengen om Slimme Beeldvorming op uw rekening toe te laten:**
 
-1. [ gebruik de Admin Console om de verwezenlijking van een nieuw steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te beginnen.
+1. [ Gebruik Admin Console om de verwezenlijking van een nieuw steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te beginnen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * **Primaire contactdetails:**
@@ -283,20 +320,20 @@ Geef bij het maken van de draagtas op welke functies voor Smart Imaging u op uw 
 
          1. Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** .
          1. Zoek het veld **[!UICONTROL Published Server Name]** om uw domein te bevestigen.
-         1. Verifieer dat u CDN van de Adobe eerder dan één gebruikt die door een andere leverancier wordt beheerd.
+         1. Controleer of u de Adobe CDN gebruikt in plaats van een CDN die door een andere provider wordt beheerd.
 
    * **wijs HTTP/2 steun aan:**
 
       * Geef op of u Smart Imaging nodig hebt om te werken via HTTP/2.
 
-1. De Klantenondersteuning van de Adobe biedt standaard de vereiste functies voor Smart Imaging, waardoor het niet nodig is om handmatig parameters aan URL&#39;s toe te voegen.
-1. Adobe raadt aan de tijd in te stellen op ten minste 24 uur om de prestaties te maximaliseren door caching.
+1. Adobe Klantenondersteuning biedt standaard de vereiste functies voor Smart Imaging, zodat het niet nodig is om handmatig parameters aan URL&#39;s toe te voegen.
+1. Adobe raadt u aan om de tijd voor live (TTL) in te stellen op ten minste 24 uur om de prestaties te maximaliseren door caching.
 De TTL aanpassen:
 
    1. **voor Dynamic Media Classic:**
       1. Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]** .
       1. Stel de waarde van **[!UICONTROL Default Client Cache Time To Live]** in op 24 uur of meer.
-   1. **voor Dynamic Media op Adobe Experience Manager:**
+   1. **voor Dynamische Media op Adobe Experience Manager:**
       1. Volg [ deze instructies ](/help/assets/dynamic-media/config-dm.md).
       1. Stel de waarde **[!UICONTROL Expiration]** in op 24 uur of langer.
 
@@ -308,7 +345,7 @@ De processen van de Steun van de klant verzoeken in de orde dat zij hen, na de L
 
 >[!NOTE]
 >
->Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe vereist voor het wissen van de cache. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
+>Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging inhoudt dat Adobe de cache wist. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
 +++
 
@@ -316,7 +353,7 @@ De processen van de Steun van de klant verzoeken in de orde dat zij hen, na de L
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de CDN-cache echter wel gewist. Bij deze bewerking gaat u naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media op Experience Manager.
 
-Tijdens de eerste overgang raken de oorspronkelijke servers van de Adobe rechtstreeks door de niet-cacheafbeeldingen totdat het cachegeheugen opnieuw wordt opgebouwd. Als dusdanig, is de Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van de oorsprong. Voor de meeste klanten, wordt het geheime voorgeheugen volledig opnieuw opgebouwd bij CDN binnen ongeveer één tot twee dagen.
+Tijdens de eerste overgang raakten de niet-in cache opgeslagen afbeeldingen rechtstreeks op de oorspronkelijke Adobe-servers totdat het cachegeheugen opnieuw wordt opgebouwd. Als zodanig is Adobe van plan om enkele klantovergangen tegelijk af te handelen, zodat acceptabele prestaties behouden blijven wanneer verzoeken van de oorsprong worden opgehaald. Voor de meeste klanten, wordt het geheime voorgeheugen volledig opnieuw opgebouwd bij CDN binnen ongeveer één tot twee dagen.
 
 +++
 
@@ -324,7 +361,7 @@ Tijdens de eerste overgang raken de oorspronkelijke servers van de Adobe rechtst
 
 Ja. U kunt het volgende doen:
 
-1. Wanneer uw account is geconfigureerd met Smart Imaging, laadt u een Dynamic Media Classic- of Adobe Experience Manager - Dynamic Media-afbeeldings-URL in de browser.
+1. Wanneer uw account is geconfigureerd met Smart Imaging, laadt u een URL voor een Dynamic Media Classic- of Adobe Experience Manager-afbeelding - Dynamic Media in de browser.
 1. Open het Chrome-ontwikkelaarsvenster door in de browser naar **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** te gaan. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
@@ -337,7 +374,7 @@ Ja. U kunt het volgende doen:
 
 >[!NOTE]
 >
->Niet alle afbeeldingen worden omgezet. Smart Imaging bepaalt of de conversie de prestaties kan verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling geen JPEG of PNG is.
+>Niet alle afbeeldingen worden omgezet. Smart Imaging bepaalt of de conversie de prestaties kan verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling niet JPEG of PNG is.
 
 ![ image2017-11-14_15398 ](assets/image2017-11-14_15398.png)
 
@@ -376,7 +413,7 @@ Ja. Als u terug naar het dienen WebP door gebrek wilt schakelen, creeer een steu
 
 +++**waarom mijn verzoek ontbreekt wanneer ik een URL met fmt=tif op Webbrowser van Chrome heb?**
 
-Deze fout treedt niet op als Smart Imaging niet is ingeschakeld voor uw account. Slimme afbeeldingen werken alleen in de indeling JPEG of PNG.
+Deze fout treedt niet op als Smart Imaging niet is ingeschakeld voor uw account. Slimme afbeeldingen werken alleen in JPEG- of PNG-indeling.
 
 U kunt deze fout voorkomen door:
 
@@ -386,7 +423,7 @@ U kunt deze fout voorkomen door:
 
 +++
 
-+++**kan ik een beeld van TIFF van URL van een beeld downloaden?**
++++**Kan ik een beeld van TIFF van URL van een beeld downloaden?**
 
 Ja. Voeg `fmt=tif` en `bfc=off` toe aan het URL-pad van de afbeelding.
 
@@ -406,11 +443,11 @@ Nee. Op dit moment bestaat een dergelijke voorziening niet.
 
 +++**past Slimme Beeldvorming de percenten kwaliteitsuitvoer aan die plaatsen?**
 
-Ja. Met Slimme afbeeldingen wordt het kwaliteitspercentage automatisch aangepast. Deze kwaliteit wordt bepaald met behulp van een machinaal leeralgoritme dat door Adobe wordt ontwikkeld. Dit percentage is niet bereikspecifiek.
+Ja. Met Slimme afbeeldingen wordt het kwaliteitspercentage automatisch aangepast. Deze kwaliteit wordt bepaald met behulp van een computerleeralgoritme dat door Adobe is ontwikkeld. Dit percentage is niet bereikspecifiek.
 
 +++
 
-+++**zijn slechts JPEG en PNG vervangen door Slimme Beeldvorming?**
++++**worden slechts JPEG en PNG vervangen door Slimme Beeldvorming?**
 
 Ja. Deze functionaliteit werkt alleen voor JPEG en PNG.
 

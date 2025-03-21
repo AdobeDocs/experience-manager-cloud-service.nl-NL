@@ -1,32 +1,69 @@
 ---
 title: Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen
-description: Leer de beste praktijken die u helpen de kwaliteit van uw beeldactiva te optimaliseren gebruikend Dynamic Media.
+description: Leer de beste praktijken die u helpen de kwaliteit van uw beeldactiva optimaliseren gebruikend Dynamische Media.
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen {#best-practices-for-optimizing-the-quality-of-your-images}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
 Het optimaliseren van de beeldkwaliteit kan een tijdrovend proces zijn omdat veel factoren bijdragen tot het renderen van acceptabele resultaten. Het resultaat is deels subjectief omdat individuen de beeldkwaliteit anders waarnemen. Gestructureerde experimenten zijn essentieel.
 
-Adobe Experience Manager bevat meer dan 100 Dynamic Media-opdrachten voor het leveren van afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
+Adobe Experience Manager bevat meer dan 100 opdrachten voor het leveren van dynamische media-afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
-## Smart Imaging inschakelen in Dynamic Media {#bp-enable-smart-imaging}
+## Smart Imaging inschakelen in dynamische media {#bp-enable-smart-imaging}
 
 **Slimme beeldvorming:**
 
-* Als u Smart Imaging inschakelt in Dynamic Media, kunt u de afbeeldingsindeling, grootte en kwaliteit automatisch optimaliseren op basis van de mogelijkheden van de clientbrowser.
+* Als u Smart Imaging inschakelt in Dynamic Media, kunt u de indeling, grootte en kwaliteit van afbeeldingen automatisch optimaliseren op basis van de mogelijkheden van de clientbrowser.
 Meer informatie? Ga naar [ Slimme Beeldvorming ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Hierdoor worden de prestaties van de afbeeldingslevering verbeterd doordat deze parameters dynamisch worden aangepast.
 * U kunt Slimme Beeldvorming evalueren gebruikend het zelfevaluatiehulpmiddel [ Momentopname ](https://snapshot.scene7.com/).
@@ -38,7 +75,7 @@ Meer informatie? Ga naar [ Slimme Beeldvorming ](https://experienceleague.adobe.
 
 **Standaardgedrag:**
 
-* Als er geen indelingsopdracht is opgegeven in de URL en Smart Imaging niet is ingeschakeld, wordt Dynamic Media-afbeeldingen standaard geleverd in de JPEG-indeling.
+* Als er geen indelingsopdracht is opgegeven in de URL en Smart Imaging niet is ingeschakeld, wordt bij de levering van dynamische media-afbeeldingen standaard de JPEG-indeling gebruikt.
 
 Door geïnformeerde keuzes te maken over afbeeldingsindelingen en Smart Imaging in te schakelen, kunt u de prestaties en gebruikerservaring aanzienlijk beïnvloeden.
 
@@ -50,7 +87,7 @@ Door geïnformeerde keuzes te maken over afbeeldingsindelingen en Smart Imaging 
 Essentiële overwegingen bij het werken met bronafbeeldingen:
 
 * **het beeldformaat van Source:**
-   * Als u lossless indelingen gebruikt, zoals PNG, TIFF of PSD, blijft de afbeeldingskwaliteit hoog zonder compressiefacten.
+   * Als u bestandsindelingen zonder verlies gebruikt, zoals .png, .TIFF of .PSD, blijft de afbeeldingskwaliteit hoog zonder compressieartefacten.
    * Met deze indelingen blijven alle oorspronkelijke gegevens behouden, waardoor ze ideaal zijn voor bewerking en verdere verwerking.
 * **de beeldgrootte van Source:**
    * Vanaf een afbeelding met een hoge resolutie biedt deze meer details en flexibiliteit.
@@ -83,11 +120,11 @@ U kunt het beste `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resM
 
 ## Aanbevolen procedures voor verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
-Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
+Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te weten te komen over hoe verscherpen en onscherp maskeren werken in Experience Manager door naar de volgende nuttige bronnen te verwijzen:
 
 * Het Witboek van beste praktijken [ de Kwaliteit van het Beeld van Adobe Dynamic Media Classic en het Verscherpen Beste praktijken ](/help/assets/dynamic-media/assets/sharpening_images.pdf) is eveneens op Experience Manager van toepassing.
 
-* Controle [ het Beeld van het Gebruik dat met Experience Manager verscherpt - Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Controle [ het Beeld van het Gebruik dat met Experience Manager verscherpt - Dynamische Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Met Experience Manager kunt u afbeeldingen verscherpen bij inname, bij levering of beide. Meestal is het echter het beste om afbeeldingen te verscherpen met slechts één methode of een andere methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
 
@@ -111,7 +148,7 @@ Er zijn twee methoden voor het verscherpen van afbeeldingen die u kunt gebruiken
 
       * Het Witboek van beste praktijken [ de Kwaliteit van het Beeld van Adobe Dynamic Media Classic en het Verscherpen Beste praktijken ](/help/assets/dynamic-media/assets/sharpening_images.pdf) is eveneens op Experience Manager van toepassing.
 
-      * Controle [ het Beeld van het Gebruik dat met Experience Manager verscherpt - Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Controle [ het Beeld van het Gebruik dat met Experience Manager verscherpt - Dynamische Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Met Experience Manager kunt u ook een vierde parameter instellen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
@@ -128,7 +165,7 @@ Laat de monochrome parameter-instelling op 0 staan.
 
 ### Aanbevolen werkwijzen voor JPEF-compressie (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
-* Deze parameter bepaalt JPG coderingskwaliteit. Een hogere waarde betekent een afbeelding van hogere kwaliteit, maar een groot bestand. Een lagere waarde betekent een afbeelding van lagere kwaliteit, maar een kleiner bestand. Het bereik voor deze parameter is 0-100.
+* Deze parameter bepaalt de coderingskwaliteit van JPG. Een hogere waarde betekent een afbeelding van hogere kwaliteit, maar een groot bestand. Een lagere waarde betekent een afbeelding van lagere kwaliteit, maar een kleiner bestand. Het bereik voor deze parameter is 0-100.
 * Stel de parameterwaarde niet in op 100 om te optimaliseren voor kwaliteit. Het verschil tussen een instelling van 90 of 95 en 100 is bijna onwaarneembaar. En toch wordt met 100 het afbeeldingsbestand onnodig groter. Stel de `qlt= value` daarom in op 90 of 95 om de kwaliteit te optimaliseren, maar te voorkomen dat afbeeldingsbestanden te groot worden.
 * Als u wilt optimaliseren voor een kleine bestandsgrootte van de afbeelding, maar de afbeeldingskwaliteit op een acceptabel niveau wilt houden, stelt u de waarde `qlt= value` in op 80. Waarden lager dan 70 tot 75 resulteren in een aanzienlijke verslechtering van de beeldkwaliteit.
 * Als beste manier om in het midden te blijven stelt u de `qlt= value` in op 85 om in het midden te blijven.
@@ -137,16 +174,16 @@ Laat de monochrome parameter-instelling op 0 staan.
    * De parameter `qlt=` heeft een tweede instelling waarmee u het downsamplen van RGB-kleuren kunt inschakelen met de waarde `,1` of uitschakelen met de waarde `,0` .
    * Om het eenvoudig te houden, begin met RGB het chromaticiteitdownsampling uitgezet (`,0`). Deze instelling resulteert doorgaans in een betere beeldkwaliteit, vooral bij synthetische afbeeldingen met veel scherpe randen en contrast.
 
-U kunt het beste `&qlt=85,0` gebruiken als JPG compressie.
+U kunt het beste `&qlt=85,0` gebruiken voor JPG-compressie.
 
-## Aanbevolen werkwijzen voor JPEG vergroten/verkleinen (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Aanbevolen procedures voor JPEG-grootten (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 De parameter `jpegSize` is handig als u wilt garanderen dat een afbeelding een bepaalde grootte niet overschrijdt voor levering aan apparaten met een beperkt geheugen.
 
 * Deze parameter wordt geplaatst in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Hiermee wordt de maximaal toegestane grootte voor het leveren van de afbeelding gedefinieerd.
-* `&jpegSize=` communiceert met de JPG compressieparameter `&qlt=` . Als de JPG reactie met de opgegeven JPG compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` zoals gedefinieerd. Anders wordt `&qlt=` geleidelijk verkleind totdat de afbeelding past in de maximaal toegestane grootte. Of, totdat het systeem bepaalt dat het niet past en een fout retourneert.
+* `&jpegSize=` heeft invloed op de JPG-compressieparameter `&qlt=` . Als de JPG-respons met de opgegeven JPG-compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` zoals gedefinieerd. Anders wordt `&qlt=` geleidelijk verkleind totdat de afbeelding past in de maximaal toegestane grootte. Of, totdat het systeem bepaalt dat het niet past en een fout retourneert.
 
-U kunt het beste `&jpegSize=` instellen en de parameter `&qlt=` toevoegen als u JPG afbeeldingen afgeeft aan apparaten met beperkt geheugen.
+U kunt het beste `&jpegSize=` instellen en de parameter `&qlt=` toevoegen als u JPG-afbeeldingen levert aan apparaten met beperkt geheugen.
 
 ## Overzicht van best practices {#best-practices-summary}
 
@@ -163,5 +200,5 @@ Als de verscherpingsresultaten nog steeds niet bevredigend zijn, vergroot u de s
 Tijdens het experimenteren zijn de volgende algemene suggesties nuttig om uw workflow te optimaliseren:
 
 * Probeer de verschillende parameters in real-time uit en test ze rechtstreeks op een URL.
-* U kunt het beste de opdrachten Dynamic Media Image Serving groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$` . De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
-* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Om het teruggeven resultaten te stemmen en te optimaliseren, ](https://business.adobe.com/customers/consulting-services/main.html) kan de raadplegende diensten van de Adobe u met aangepast inzicht en beste praktijken helpen.[
+* Houd er rekening mee dat u de opdrachten Dynamische mediabeeldverwerking in een voorinstelling kunt groeperen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$` . De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
+* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Om het teruggeven resultaten te stemmen en te optimaliseren, [ Adobe raadplegende diensten ](https://business.adobe.com/customers/consulting-services/main.html) kan u met aangepast inzicht en beste praktijken helpen.

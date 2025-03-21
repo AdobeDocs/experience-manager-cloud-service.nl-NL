@@ -5,14 +5,51 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5318'
+source-wordcount: '5364'
 ht-degree: 0%
 
 ---
 
 # Micro-Frontend element selecteren {#Overview}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Micro-Frontend Asset Selector biedt een gebruikersinterface die eenvoudig kan worden geïntegreerd met de [!DNL Experience Manager Assets] -opslagplaats, zodat u door de beschikbare digitale middelen in de opslagplaats kunt bladeren of deze kunt zoeken en deze kunt gebruiken in uw ontwerpervaring.
 
@@ -54,7 +91,7 @@ Gebruik de bovenstaande voorwaarden als u een IMS-verificatieworkflow van de Ass
 
 >[!IMPORTANT]
 >
-> Deze opslagplaats is bedoeld als aanvullende documentatie waarin de beschikbare API&#39;s en gebruiksvoorbeelden voor de integratie van Asset Selector worden beschreven. Voordat u de functie Asset Selector gaat installeren of gebruiken, moet u controleren of uw organisatie beschikt over de toegang tot Asset Selector als onderdeel van het Experience Manager Assets as a Cloud Service-profiel. Als u niet provisioned bent, kunt u deze componenten niet integreren of gebruiken. Om levering te verzoeken, zou uw programma admin een steunkaartje moeten opheffen duidelijk als P2 van Admin Console en de volgende informatie omvatten:
+> Deze opslagplaats is bedoeld als aanvullende documentatie waarin de beschikbare API&#39;s en gebruiksvoorbeelden voor de integratie van Asset Selector worden beschreven. Voordat u de functie Asset Selector gaat installeren of gebruiken, moet u controleren of uw organisatie de toegang tot Asset Selector heeft ingericht als onderdeel van het Experience Manager Assets as a Cloud Service-profiel. Als u niet provisioned bent, kunt u deze componenten niet integreren of gebruiken. Om levering aan te vragen, zou uw programma admin een steunkaartje moeten opheffen duidelijk als P2 van Admin Console en de volgende informatie omvatten:
 >
 >* Domeinnamen waarbij de integrerende toepassing wordt gehost.
 >* Na provisioning ontvangt uw organisatie `imsClientId` , `imsScope` en een `redirectUrl` die overeenkomen met de gevraagde omgevingen die essentieel zijn voor de configuratie van Asset Selector. Zonder deze geldige eigenschappen kunt u de installatiestappen niet uitvoeren.
@@ -89,12 +126,12 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Asset Selector integreren met Vanilla JS {#integration-using-vanilla-js}
 
-U kunt elke toepassing van het type [!DNL Adobe] of niet-Adobe integreren met de [!DNL Experience Manager Assets] -opslagplaats en elementen selecteren vanuit de toepassing. Zie [ de Integratie van de Selecteur van Activa met diverse toepassingen ](#asset-selector-integration-with-apps).
+U kunt elke [!DNL Adobe] -toepassing of niet-Adobe-toepassing integreren in de [!DNL Experience Manager Assets] -opslagplaats en elementen selecteren vanuit de toepassing. Zie [ de Integratie van de Selecteur van Activa met diverse toepassingen ](#asset-selector-integration-with-apps).
 
-De integratie gebeurt door het pakket Asset Selector te importeren en verbinding te maken met de Assets-as a Cloud Service met behulp van de Vanilla JavaScript-bibliotheek. Bewerk een `index.html` of een ander geschikt bestand in uw toepassing om:
+De integratie gebeurt door het pakket Asset Selector te importeren en verbinding te maken met de Assets as a Cloud Service via de Vanilla JavaScript-bibliotheek. Bewerk een `index.html` of een ander geschikt bestand in uw toepassing om:
 
 * De verificatiedetails definiëren
-* Toegang krijgen tot de Assets as a Cloud Service dataopslag
+* Toegang krijgen tot de Assets as a Cloud Service-opslagplaats
 * De weergave-eigenschappen voor de middelenkiezer configureren
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
@@ -107,14 +144,14 @@ U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als
 U kunt Asset Selector integreren met verschillende toepassingen, zoals:
 
 * [Integreer de Selecteur van Activa met een  [!DNL Adobe]  toepassing](#adobe-app-integration-vanilla)
-* [Asset Selector integreren met een toepassing zonder Adobe](#adobe-non-app-integration)
-* [Integratie voor Dynamic Media met OpenAPI-mogelijkheden](#adobe-app-integration-polaris)
+* [Asset Selector integreren met een niet-Adobe-toepassing](#adobe-non-app-integration)
+* [Integratie voor dynamische media met OpenAPI-mogelijkheden](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
 <!--Integration with an Adobe application content starts here-->
 
->[!TAB  Integratie met een toepassing van de Adobe ]
+>[!TAB  Integratie met een toepassing van Adobe ]
 
 ### Vereisten{#prereqs-adobe-app}
 
@@ -129,7 +166,7 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met een [!DNL Ad
 
 In het volgende voorbeeld wordt het gebruik van Asset Selector getoond wanneer u een [!DNL Adobe] -toepassing uitvoert onder Unified Shell of wanneer u `imsToken` al hebt gegenereerd voor verificatie.
 
-Omvat het pakket van de Selecteur van Activa in uw code gebruikend de `script` markering, zoals aangetoond in _lijnen 6-15_ van het hieronder voorbeeld. Wanneer het script is geladen, is de algemene variabele `PureJSSelectors` beschikbaar voor gebruik. Bepaal de Eigenschappen van de Selecteur van Activa [ ](#asset-selector-properties) zoals aangetoond in _lijnen 16-23_. De eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in een Adobe toepassing. De eigenschap `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Kiezer van Activa terug te geven, roep de `renderAssetSelector` functie zoals vermeld in _lijn 17_. De selecteur van Activa wordt getoond in het `<div>` containerelement, zoals aangetoond in _lijnen 21 en 22_.
+Omvat het pakket van de Selecteur van Activa in uw code gebruikend de `script` markering, zoals aangetoond in _lijnen 6-15_ van het hieronder voorbeeld. Wanneer het script is geladen, is de algemene variabele `PureJSSelectors` beschikbaar voor gebruik. Bepaal de Eigenschappen van de Selecteur van Activa [ ](#asset-selector-properties) zoals aangetoond in _lijnen 16-23_. De eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in een Adobe-toepassing. De eigenschap `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Kiezer van Activa terug te geven, roep de `renderAssetSelector` functie zoals vermeld in _lijn 17_. De selecteur van Activa wordt getoond in het `<div>` containerelement, zoals aangetoond in _lijnen 21 en 22_.
 
 Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met uw [!DNL Adobe] -toepassing.
 
@@ -169,7 +206,7 @@ De `ImsAuthProps` -eigenschappen definiëren de verificatiegegevens en de stroom
 
 | Eigenschapnaam | Beschrijving |
 |---|---|
-| `imsClientId` | Een tekenreekswaarde die de IMS client-id vertegenwoordigt die voor verificatiedoeleinden wordt gebruikt. Deze waarde wordt verstrekt door Adobe en is specifiek voor uw Adobe AEM organisatie CS. |
+| `imsClientId` | Een tekenreekswaarde die de IMS client-id vertegenwoordigt die voor verificatiedoeleinden wordt gebruikt. Deze waarde wordt geleverd door Adobe en is specifiek voor uw Adobe AEM CS-organisatie. |
 | `imsScope` | Beschrijft het werkingsgebied dat in authentificatie wordt gebruikt. Het werkingsgebied bepaalt het niveau van toegang dat de toepassing aan uw organisatiemiddelen heeft. Meerdere bereiken kunnen worden gescheiden door komma&#39;s. |
 | `redirectUrl` | Geeft de URL aan waar de gebruiker na verificatie opnieuw wordt omgeleid. Deze waarde wordt doorgaans ingesteld op de huidige URL van de toepassing. Als een `redirectUrl` niet wordt opgegeven, gebruikt `ImsAuthService` de redirectUrl die wordt gebruikt om de `imsClientId` te registreren |
 | `modalMode` | Een Booleaanse waarde die aangeeft of de verificatiestroom al dan niet moet worden weergegeven in een modaal (pop-upmenu). Indien ingesteld op `true` , wordt de verificatiestroom weergegeven in een pop-up. Indien ingesteld op `false` , wordt de verificatiestroom weergegeven in een volledige pagina die opnieuw wordt geladen. _Nota:_ voor betere UX, kunt u deze waarde dynamisch controleren als de gebruiker browser pop-up gehandicapten heeft. |
@@ -263,7 +300,7 @@ onErrorReceived: (type, msg) => {
 
 ### Vereisten {#prereqs-non-adobe-app}
 
-Gebruik de volgende voorwaarden als u Asset Selector integreert met een toepassing zonder Adobe:
+Gebruik de volgende voorwaarden als u Asset Selector integreert met een niet-Adobe-toepassing:
 
 * [Communicatiemethoden](#prereqs)
 * imsClientId
@@ -272,13 +309,13 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met een toepassi
 * imsOrg
 * apikey
 
-Asset Selector ondersteunt verificatie naar de [!DNL Experience Manager Assets] repository met behulp van Identity Management System (IMS)-eigenschappen zoals `imsScope` of `imsClientID` wanneer u deze integreert met een niet-Adobe toepassing.
+Asset Selector ondersteunt verificatie naar de [!DNL Experience Manager Assets] repository met behulp van Identity Management System (IMS)-eigenschappen zoals `imsScope` of `imsClientID` wanneer u deze integreert met een niet-Adobe-toepassing.
 
 +++**vorm de Selector van Activa voor een toepassing niet-Adobe**
-Om de Selecteur van Activa voor een niet-Adobe toepassing te vormen, moet u eerst een steunkaartje voor levering registreren die door de integratiestappen wordt gevolgd.
+Als u Asset Selector wilt configureren voor een niet-Adobe-toepassing, moet u eerst een ondersteuningsticket voor provisioning registreren, gevolgd door de integratiestappen.
 
 **Logging een steunkaartje**
-Stappen om een steunkaartje via de Admin Console te registreren:
+Stappen om een steunkaartje via Admin Console te registreren:
 
 1. Voeg **de Selecteur van Activa met AEM Assets** in de titel van het kaartje toe.
 
@@ -289,7 +326,7 @@ Stappen om een steunkaartje via de Admin Console te registreren:
 +++
 
 +++**de stappen van de Integratie**
-Gebruik dit voorbeeldbestand `index.html` voor verificatie terwijl Asset Selector wordt geïntegreerd met een toepassing zonder Adobe.
+Gebruik dit voorbeeldbestand `index.html` voor verificatie terwijl Asset Selector wordt geïntegreerd met een niet-Adobe-toepassing.
 
 Heb toegang tot het pakket van de Selecteur van Activa gebruikend de `Script` Markering, zoals aangetoond in *lijn 9* aan *lijn 11* van het voorbeeld `index.html` dossier.
 
@@ -297,7 +334,7 @@ Heb toegang tot het pakket van de Selecteur van Activa gebruikend de `Script` Ma
 
 Aangezien u geen `imsToken` hebt geproduceerd, gebruik de `registerAssetsSelectorsAuthService` en `renderAssetSelectorWithAuthFlow` functies, zoals aangetoond in lijn 40 tot lijn 50 van het voorbeeld `index.html` dossier. Gebruik de functie `registerAssetsSelectorsAuthService` voor `renderAssetSelectorWithAuthFlow` om de `imsToken` bij de functie Asset Selector te registreren. [!DNL Adobe] raadt aan `registerAssetsSelectorsAuthService` aan te roepen wanneer u de component instantieert.
 
-Bepaal de authentificatie en andere as a Cloud Service toegang-verwante eigenschappen van Assets in de `const props` sectie, zoals aangetoond in *lijn 54* aan *lijn 60* van het voorbeeld `index.html` dossier.
+Bepaal de authentificatie en andere Assets as a Cloud Service op toegang betrekking hebbende eigenschappen in de `const props` sectie, zoals aangetoond in *lijn 54* aan *lijn 60* van het voorbeeld `index.html` dossier.
 
 De `PureJSSelectors` globale variabele, die in *wordt vermeld lijn 65*, wordt gebruikt om de Selecteur van Activa in Webbrowser terug te geven.
 
@@ -392,7 +429,7 @@ De Selecteur van activa wordt teruggegeven op het `<div>` containerelement, zoal
 
 <!--Integration with Polaris application content starts here-->
 
->[!TAB  Integratie voor Dynamic Media met mogelijkheden OpenAPI ]
+>[!TAB  Integratie voor Dynamische Media met mogelijkheden OpenAPI ]
 
 ### Vereisten {#prereqs-polaris}
 
@@ -404,11 +441,11 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Medi
    * AEM Dynamic Media.
 * Slechts [ goedgekeurde activa ](#approved-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
 
-### Integratie voor Dynamic Media met OpenAPI-mogelijkheden{#adobe-app-integration-polaris}
+### Integratie voor dynamische media met OpenAPI-mogelijkheden{#adobe-app-integration-polaris}
 
-De integratie van Asset Selector met het Dynamic Media OpenAPI-proces omvat verschillende stappen, zoals het maken van een aangepaste dynamische media-URL of het kiezen van de URL voor dynamische media, enz.
+De integratie van Asset Selector met Dynamic Media OpenAPI-proces omvat verschillende stappen, zoals het maken van een aangepaste dynamische media-URL of het kiezen van de URL voor dynamische media, enz.
 
-+++**integreer de Selector van Activa voor Dynamic Media met mogelijkheden OpenAPI**
++++**integreer de Selector van Activa voor Dynamische Media met mogelijkheden OpenAPI**
 
 De eigenschappen `rootPath` en `path` mogen geen deel uitmaken van de Dynamic Media met OpenAPI-mogelijkheden. In plaats daarvan kunt u de eigenschap `aemTierType` configureren. Hier volgt de syntaxis van de configuratie:
 
@@ -485,7 +522,7 @@ Hieronder ziet u de twee manieren waarop u het JSON-object kunt doorlopen:
 ![ Dynamische levering url ](assets/dynamic-delivery-url.png)
 
 * **Duimnagel:** de duimnagels kunnen beelden zijn en de activa zijn PDF, video, beelden, etc. Hoewel u de hoogte- en breedtekenmerken van de miniatuur van een element kunt gebruiken als de dynamische uitvoering van het element.
-De volgende set uitvoeringen kan worden gebruikt voor de elementen van het type PDF:
+De volgende set uitvoeringen kan worden gebruikt voor de PDF-elementen:
 Als er eenmaal een PDF is geselecteerd in sidekick, wordt in de selectiecontext de onderstaande informatie weergegeven. Hieronder ziet u de manier waarop u het JSON-object kunt doorlopen:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -501,7 +538,7 @@ Als er eenmaal een PDF is geselecteerd in sidekick, wordt in de selectiecontext 
   } 
   ```
 
-In het bovenstaande scherm moet de bezorgings-URL van de oorspronkelijke uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijke PDF-uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **Video:** u videospeler URL voor de videotypeactiva kunt gebruiken die ingebedde iFrame gebruiken. U kunt de volgende arrayuitvoeringen gebruiken in de doelervaring:
   <!--![Video dynamic delivery url](image.png)-->
@@ -521,11 +558,11 @@ In het bovenstaande scherm moet de bezorgings-URL van de oorspronkelijke uitvoer
 
   In het bovenstaande voorbeeld is de URL van de videospeler `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
-+++**de gebruikersinterface van de Selecteur van Activa voor Dynamic Media met mogelijkheden OpenAPI**
++++**de gebruikersinterface van de Selecteur van Activa voor Dynamische Media met mogelijkheden OpenAPI**
 
-Na integratie met de Micro-Frontend Asset Selector van de Adobe, kunt u de activa slechts structuur van alle goedgekeurde activa zien beschikbaar in de opslagplaats van activa van de Experience Manager.
+Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur van alle goedgekeurde middelen alleen zien in de gegevensopslagruimte van Experience Manager.
 
-![ Dynamic Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
+![ Dynamische Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
 
 * **A**: [ verberg/toon paneel ](#hide-show-panel)
 * **B**: [ Assets ](#repository)
@@ -539,7 +576,7 @@ Na integratie met de Micro-Frontend Asset Selector van de Adobe, kunt u de activ
 +++
 
 +++**vorm douanefilters**
-Met Asset Selector for Dynamic Media met OpenAPI-mogelijkheden kunt u aangepaste eigenschappen en de daarop gebaseerde filters configureren. De eigenschap `filterSchema` wordt gebruikt om dergelijke eigenschappen te configureren. De aanpassing kan worden weergegeven als `metadata.<metadata bucket>.<property name>.` waartegen de filters kunnen worden geconfigureerd, waarbij:
+Met Asset Selector for Dynamic Media met OpenAPI-mogelijkheden kunt u aangepaste eigenschappen en de filters configureren op basis van deze eigenschappen. De eigenschap `filterSchema` wordt gebruikt om dergelijke eigenschappen te configureren. De aanpassing kan worden weergegeven als `metadata.<metadata bucket>.<property name>.` waartegen de filters kunnen worden geconfigureerd, waarbij:
 
 * `metadata` is de informatie van een element
 * `embedded` de statische parameter is die voor configuratie wordt gebruikt, en
@@ -562,9 +599,9 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |---|---|---|---|---|
 | *spoorstaaf* | Boolean | Nee | Onwaar | Indien gemarkeerd `true` , wordt Asset Selector weergegeven in een linkerspoorweergave. Als deze is gemarkeerd met `false` , wordt de Asset Selector weergegeven in de modale weergave. |
-| *imsOrg* | String | Ja | | Adobe Identity Management System (IMS) ID die tijdens de provisioning [!DNL Adobe Experience Manager] is toegewezen als een [!DNL Cloud Service] voor uw organisatie. De `imsOrg` -toets is vereist om te verifiëren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
+| *imsOrg* | String | Ja | | Adobe Identity Management System (IMS)-id die tijdens de provisioning [!DNL Adobe Experience Manager] is toegewezen als een [!DNL Cloud Service] voor uw organisatie. De `imsOrg` -toets is vereist om te verifiëren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
 | *imsToken* | String | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u een [!DNL Adobe] -toepassing voor de integratie gebruikt. |
-| *apiKey* | String | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u een [!DNL Adobe] -toepassingsintegratie gebruikt. |
+| *apiKey* | String | Nee | | API-sleutel voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u een [!DNL Adobe] -toepassingsintegratie gebruikt. |
 | *filterSchema* | Array | Nee | | Model dat wordt gebruikt om filtereigenschappen te vormen. Dit is handig wanneer u bepaalde filteropties in de Asset Selector wilt beperken. |
 | *filterFormProps* | Object | Nee | | Geef de filtereigenschappen op die u nodig hebt om de zoekopdracht te verfijnen. Voor! Voorbeeld: MIME-type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nee |                 | Geef de geselecteerde Assets op wanneer de Asset Selector wordt weergegeven. Een array van objecten is vereist die een id-eigenschap van de elementen bevat. `[{id: 'urn:234}, {id: 'urn:555'}]` Een element moet bijvoorbeeld beschikbaar zijn in de huidige map. Als u een andere map moet gebruiken, geeft u ook een waarde op voor de eigenschap `path` . |
@@ -572,7 +609,7 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling. Om de opheffing uit te voeren, moet u een geldig ](https://formatjs.io/docs/react-intl/api/#message-descriptor) voorwerp van de Beschrijver van het Bericht [ tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
 | *intl* | Object | Nee | | Asset Selector biedt standaard OTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [ ISO 639 - Codes ](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 | *repositoryId* | String | Nee | &#39;&#39; | Opslagplaats waar de inhoud wordt geladen door de Asset Selector. |
-| *additionalAemSolutions* | `Array<string>` | Nee | [ ] | Hiermee kunt u een lijst met extra AEM opslagplaatsen toevoegen. Als deze eigenschap geen informatie bevat, worden alleen mediawisselaars of AEM Assets-opslagruimten in aanmerking genomen. |
+| *additionalAemSolutions* | `Array<string>` | Nee | [ ] | Hiermee kunt u een lijst met extra AEM-opslagplaatsen toevoegen. Als deze eigenschap geen informatie bevat, worden alleen mediawisselaars of AEM Assets-opslagruimten in aanmerking genomen. |
 | *hideTreeNav* | Boolean | Nee |  | Hiermee geeft u op of de zijbalk met boomnavigatie met elementen moet worden weergegeven of verborgen. Het wordt alleen in modale zin gebruikt en daarom heeft dit onroerend goed geen effect in de spoorwegen. |
 | *onDrop* | Functie | Nee | | Met de eigenschap kan een element worden neergezet. |
 | *dropOptions* | `{allowList?: Object}` | Nee | | Vormt dalingsopties gebruikend &quot;lijst van gewenste personen&quot;. |
@@ -588,7 +625,7 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *noWrap* | Boolean | Nee | | Het *noWrap* bezit helpt teruggevend de Selecteur van Activa in het paneel van de zijspoorstaaf. Als dit bezit niet wordt vermeld, geeft het de *mening van de Dialoog* door gebrek terug. |
 | *dialogSize* | overnemen op klein, middelgroot, groot, volledig scherm of volledig scherm | String | Optioneel | U kunt de lay-out bepalen door zijn grootte te specificeren gebruikend de bepaalde opties. |
 | *colorScheme* | Licht of donker | Nee | | Deze eigenschap wordt gebruikt om het thema van een toepassing Asset Selector in te stellen. U kunt kiezen tussen licht of donker thema. |
-| *filterRepoList* | Functie | Nee |  | U kunt de callback-functie `filterRepoList` gebruiken die de gegevensopslagruimte van de Experience Manager aanroept en een gefilterde lijst met opslagruimten retourneert. |
+| *filterRepoList* | Functie | Nee |  | U kunt de callback-functie `filterRepoList` gebruiken die een Experience Manager-opslagplaats aanroept en een gefilterde lijst met opslagplaatsen retourneert. |
 | *endOptions* | Functie | | | U kunt tussen de volgende twee eigenschappen gebruiken: **getExpiryStatus** die status van een verlopen activa verstrekt. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [ verlopen activa ](#customize-expired-assets) aanpassen. Bovendien, kunt u **allowSelectionAndDrag** gebruiken waarin de waarde van de functie of `true` of `false` kan zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
 | *showToast* | | Nee | | Hierdoor kan de Asset Selector een aangepast pop-upbericht weergeven voor het verlopen element. |
 

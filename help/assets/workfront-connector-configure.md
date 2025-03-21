@@ -4,34 +4,68 @@ description: Configureren  [!DNL Workfront for Experience Manager enhanced conne
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1697'
 ht-degree: 0%
 
 ---
 
 # Configureren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] vormt de verbeterde schakelaar na het installeren van het. Voor instructies om te installeren, zie [ de schakelaar ](/help/assets/workfront-integrations.md) installeren.
 
 >[!IMPORTANT]
 >
-> Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) om Workfront aan te sluiten op AEM Assets as a Cloud Service wordt geblokkeerd.
+> Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor de verbinding van Workfront met AEM Assets as a Cloud Service wordt geblokkeerd.
 
 >[!IMPORTANT]
 >
->* Voor Adobe is implementatie en configuratie van de [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services] vereist. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt het niet gesteund door Adobe.
+>* Adobe vereist implementatie en configuratie van de [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services] . Indien geïmplementeerd en geconfigureerd zonder een gecertificeerde partner of [!DNL Adobe Professional Services] , wordt dit niet ondersteund door Adobe.
 >
->* Adobe kan updates aan [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] vrijgeven die deze schakelaar overtollig maken; als dit voorkomt, kunnen klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] vrijgeven die deze connector redundant maken. Als dit gebeurt, kunnen klanten worden gevraagd over te stappen van het gebruik van deze connector.
 >
 >* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, zie stap 5 (a) van [ verbeterde instructies van de schakelaarinstallatie ](workfront-connector-install.md).
 >
@@ -42,12 +76,12 @@ Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL
 Gebeurtenisabonnementen worden gebruikt om AEM op de hoogte te brengen van gebeurtenissen die plaatsvinden in [!DNL Adobe Workfront] . Er zijn drie [!DNL Workfront for Experience Manager enhanced connector] -functies die gebeurtenisabonnementen nodig hebben om te werken:
 
 * Automatisch maken van aan een project gekoppelde mappen.
-* Synchronisatie van wijzigingen in Workfront-document aangepaste formulierwaarden naar metagegevens van AEM element.
+* Synchronisatie van wijzigingen in Workfront-documentaangepaste formulierwaarden naar metagegevens van AEM-elementen.
 * Automatische bekendmaking van activa aan Brand Portal na voltooiing van het project.
 
 Schakel gebeurtenisabonnementen in als u deze functies wilt gebruiken.
 
-* Bewerk de configuratie met [!UICONTROL Workfront Tools] Cloud Servicen die u in stap 5 hebt gemaakt en selecteer de tab [!UICONTROL Event Subscriptions] .
+* Bewerk de configuratie van [!UICONTROL Workfront Tools] Cloud Services die u in stap 5 hebt gemaakt en selecteer het tabblad [!UICONTROL Event Subscriptions] .
 * Selecteer de [!UICONTROL Workfront Custom Integration] die u in sectie 6 hebt gemaakt.
 * Klik op [!UICONTROL Enable Workfront Event Subscriptions].
 
@@ -65,12 +99,12 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 
 1. Ga naar het tabblad Gekoppelde projectmappen in de cloudservices.
 1. Bovenliggend pad van gekoppelde map: selecteer een map in de DAM waar u de gekoppelde mappen wilt maken. Als het verlaten leeg blijft, zal het aan /content/dam in gebreke blijven. Controleer of het metagegevensschema voor Workfront Tools en het metagegevensschema voor de map Workfront Linked Folder zijn toegepast op de geselecteerde map.
-1. Gekoppelde mapstructuur: voer door komma&#39;s gescheiden waarden in. Elke waarde moet `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name of een letterlijke tekenreekswaarde zijn (deze laatste met aanhalingstekens). Deze is momenteel ingesteld op Portfolio,Programma,Jaar,DE:Projecttype,Naam.
+1. Gekoppelde mapstructuur: voer door komma&#39;s gescheiden waarden in. Elke waarde moet `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name of een letterlijke tekenreekswaarde zijn (deze laatste met aanhalingstekens). Deze is momenteel ingesteld op Portfolio,Program,Year,DE:Projecttype,Naam.
 1. Machtigingen configureren: voeg `jcr:all permissions` machtigingen toe aan de groep `/conf/workfront-tools/settings/cloudconfigs` for `wf-workfront-users` .
 1. De functie voor het maken van gekoppelde mappen in Workfront met het selectievakje voor mapstructuurnamen moet zijn ingeschakeld als de titel van de map in Workfront alle mappen in de structuur moet bevatten. Anders is dit de titel van de laatste map.
 1. Met submappen met meerdere velden kunt u een lijst opgeven met mappen die moeten worden gemaakt als een onderliggende map van de gekoppelde map.
 1. Projectstatus: selecteer de status waarvoor het project moet worden ingesteld om de gekoppelde map te maken.
-1. Maak een gekoppelde map in projecten met een portfolio: lijst met Portfolio&#39;s waartoe het project moet behoren, zodat u de gekoppelde map kunt maken. Laat deze lijst leeg om de gekoppelde map voor alle projectportfolio te maken.
+1. Maak een gekoppelde map in projecten met een portfolio: lijst met portfolio&#39;s waartoe het project moet behoren, zodat u de gekoppelde map kunt maken. Laat deze lijst leeg om de gekoppelde map voor alle projectportfolio te maken.
 1. Maak een gekoppelde map in projecten met een aangepast formulierveld: aangepast formulierveld en de bijbehorende waarde die het project moet hebben om de gekoppelde map te kunnen maken. Deze configuratie wordt genegeerd als deze leeg wordt gelaten. Selecteer `CUSTOM FORMS: Create DAM Linked Folder` voor het veld en voer `Yes` voor de waarde in.
 1. Configureer machtiging: configureer deze machtigingen `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` voor de `wf-workfront-users group` .
 1. Klik op Automatisch maken van gekoppelde mappen inschakelen. Als u teruggaat naar het tabblad Gebeurtenisabonnementen, ziet u dat er nu een gebeurtenis create is.
@@ -81,7 +115,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 
 ### Mapmetagegevenstoewijzing configureren {#folder-metadata-mapping}
 
-Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefinieerd in AEM schema&#39;s met metagegevens van mappen. Metagegevensschema&#39;s voor mappen moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt een automatisch aangevulde vervolgkeuzelijst toe aan het tabblad Settings-configuratie van elk formulierveld voor het schema van metagegevens van de map. In dit keuzemenu voor automatisch aanvullen kunt u opgeven aan welk Workfront-veld elke AEM mapeigenschap moet worden toegewezen.
+Metagegevenstoewijzing tussen Workfront Projecten en de Omslagen van AEM wordt bepaald binnen de Schema&#39;s van Meta-gegevens van de Omslag van AEM. Metagegevensschema&#39;s voor mappen moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt een automatisch aangevulde vervolgkeuzelijst toe aan het tabblad Settings-configuratie van elk formulierveld voor het schema van metagegevens van de map. Met dit keuzemenu voor automatisch aanvullen kunt u opgeven aan welk Workfront-veld elke AEM-mapeigenschap moet worden toegewezen.
 
 Voer de volgende stappen uit om de toewijzingen te configureren:
 
@@ -92,13 +126,13 @@ Voer de volgende stappen uit om de toewijzingen te configureren:
 1. Selecteer in het veld [!UICONTROL Mapped from Workfront Field] de naam van het Workfront-veld dat u wilt toewijzen aan de geselecteerde AEM-mapeigenschap. Beschikbare opties zijn:
 
    * Aangepaste formuliervelden project
-   * De gebieden van het Overzicht van het project (identiteitskaart, Naam, Beschrijving, Referentienummer, Geplande Voltooiingsdatum, Eigenaar van het Project, Sponsor van het Project, Portfolio of Programma)
+   * De gebieden van het Overzicht van het project (identiteitskaart, Naam, Beschrijving, Referentienummer, Geplande Voltooiingsdatum, de Eigenaar van het Project, Sponsor van het Project, Portfolio of Programma)
 
 ![ meta-gegevens in kaart brengend config ](/help/assets/assets/wf-metadata-mapping-config2.png)
 
 ### Toewijzing van metagegevens van elementen configureren {#asset-metadata-mapping}
 
-Metagegevenstoewijzing tussen Adobe Workfront-documenten en Assets wordt gedefinieerd binnen AEM metagegevensschema&#39;s. Metagegevensschema&#39;s moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt configuratieopties toe aan het tabblad Instellingen van elk formulierveld voor het metagegevensschema. Met deze opties kunt u opgeven aan welk Workfront-veld elke AEM eigenschap moet worden toegewezen.
+Metagegevenstoewijzing tussen Adobe Workfront-documenten en Assets wordt gedefinieerd in AEM-metagegevensschema&#39;s. Metagegevensschema&#39;s moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt configuratieopties toe aan het tabblad Instellingen van elk formulierveld voor het metagegevensschema. Met deze opties kunt u opgeven aan welk Workfront-veld elke AEM-eigenschap moet worden toegewezen.
 
 Voer de volgende stappen uit om de toewijzingen te configureren:
 
@@ -125,7 +159,7 @@ Met deze workflowstap kan een gebruiker een eigenschap toewijzen aan een [!DNL W
 
 **Bezit van identiteitskaart**: Dit gebied laat u de weg aan identiteitskaart van het voorwerp van Workfront specificeren dat de eigenschappen zouden moeten worden in kaart gebracht aan. Het pad dat in dit veld wordt opgegeven, moet relatief zijn ten opzichte van de lading van de workflow.
 
-**Toewijzingen van het Bezit**: Dit multifield laat u de afbeeldingen tussen AEM eigenschappen en de gebieden van Workfront specificeren. Elk item in het meerdere veld geeft één toewijzing op. Elke toewijzing moet de indeling `<workfront-field>=<aem-mapped-property>` hebben.
+**Toewijzingen van het Bezit**: Dit multifield laat u de afbeeldingen tussen de eigenschappen van AEM en de gebieden van Workfront specificeren. Elk item in het meerdere veld geeft één toewijzing op. Elke toewijzing moet de indeling `<workfront-field>=<aem-mapped-property>` hebben.
 
 * De `workfront-field` kan
 
@@ -135,7 +169,7 @@ Met deze workflowstap kan een gebruiker een eigenschap toewijzen aan een [!DNL W
 * De `aem-mapped-property` kan zijn:
 
    * Een letterlijke waarde. Deze moeten door aanhalingstekens worden omringd.
-   * Een AEM-eigenschap. Deze verwijzing moet relatief zijn ten opzichte van de lading van de workflow.
+   * An AEM property. Deze verwijzing moet relatief zijn ten opzichte van de lading van de workflow.
    * Een benoemde waarde. Deze moeten tussen haakjes staan.
    * Een samenvoeging van de bovenstaande drie items. Geef dit op met `{+}` .
    * Een wijziging van de bovenstaande 3 items door de waarde met `{replace(<value>,"old-char","new-char")}` te omringen.
@@ -171,13 +205,13 @@ Voer de volgende stappen uit om de synchronisatie van opmerkingen van Workfront 
 
    ![ verlaten commentaar in Workfront ](/help/assets/assets/comments-sync2.png)
 
-1. Navigeer in AEM naar hetzelfde gekoppelde document, selecteer het document en open de optie [!UICONTROL Timeline] in de linkernavigatie en selecteer [!UICONTROL Comments] . Op de linkerzijbalk worden de opmerkingen weergegeven die vanuit [!DNL Workfront] zijn gesynchroniseerd.
+1. Navigeer naar hetzelfde gekoppelde document in AEM, selecteer het document, open de optie [!UICONTROL Timeline] in de linkernavigatie en selecteer [!UICONTROL Comments] . Op de linkerzijbalk worden de opmerkingen weergegeven die vanuit [!DNL Workfront] zijn gesynchroniseerd.
 
 ## Elementen {#asset-versions}
 
 Om versiegeschiedenis van activa in AEM te handhaven, vorm activa versioning in AEM.
 
-1. Open in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]** en open de tab **[!UICONTROL Advanced]** .
+1. Open in Experience Manager de tab **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]** en open de tab **[!UICONTROL Advanced]** .
 
 1. Selecteer optie **[!UICONTROL Store assets with the same name as versions of the existing asset]**. Als deze optie is ingeschakeld, kunnen elementen die met dezelfde naam en naar dezelfde locatie zijn geüpload als de versie van het bestaande element worden opgeslagen. Als deze optie is uitgeschakeld, wordt een nieuw element gemaakt met een andere naam (bijvoorbeeld `asset-name.pdf` en `asset-name-1.pdf` ).
 
@@ -199,9 +233,9 @@ Bewerk de eigenschappen van de workflowstap [!UICONTROL Workfront - Attach custo
 
 ## Elementen automatisch publiceren {#auto-publish-assets}
 
-1. Open in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]** en open de tab **[!UICONTROL Advanced]** .
+1. Open in Experience Manager de tab **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]** en open de tab **[!UICONTROL Advanced]** .
 
-1. Selecteer **[!UICONTROL Automatically publish assets when sent from Workfront]**. Met deze optie wordt het automatisch publiceren van elementen ingeschakeld wanneer deze van Workfront naar AEM worden verzonden. Deze functie kan voorwaardelijk worden ingeschakeld door een aangepast Workfront-formulierveld op te geven en de waarde op te geven waarop dit moet worden ingesteld. Wanneer een document naar AEM wordt verzonden, als het aan de voorwaarde voldoet, dan wordt het element automatisch gepubliceerd.
+1. Selecteer **[!UICONTROL Automatically publish assets when sent from Workfront]**. Met deze optie wordt het automatisch publiceren van elementen ingeschakeld wanneer deze van Workfront naar AEM worden verzonden. Deze functie kan voorwaardelijk worden ingeschakeld door een aangepast Workfront-formulierveld op te geven en de waarde op te geven waarop dit moet worden ingesteld. Telkens wanneer een document naar AEM wordt verzonden, als het aan de voorwaarde voldoet, dan wordt het element automatisch gepubliceerd.
 
 1. Selecteer **[!UICONTROL Publish all project assets to Brand Portal upon project completion]**. Met deze optie schakelt u het automatisch publiceren van elementen in op [!DNL Brand Portal] wanneer de status van het Workfront-project waartoe deze behoren, wordt gewijzigd in `Complete` .
 

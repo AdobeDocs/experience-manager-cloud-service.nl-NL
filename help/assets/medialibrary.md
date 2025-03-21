@@ -1,13 +1,13 @@
 ---
-title: Media Library gebruiken voor elementair beheer van digitale middelen
-description: "[!DNL Experience Manager Assets] en Media Library for asset management."
+title: Mediabibliotheek gebruiken voor elementair beheer van digitale elementen
+description: '[!DNL Experience Manager Assets] en Mediabibliotheek voor middelenbeheer.'
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Architect, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -21,37 +21,71 @@ Define what is not included
 
 -->
 
-# Media Library gebruiken voor elementair middelenbeheer {#manage-assets-using-media-library}
+# Mediabibliotheek gebruiken voor elementair middelenbeheer {#manage-assets-using-media-library}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-[!DNL Adobe Experience Manager] biedt verschillende mogelijkheden om elementen te beheren. Met Media Library kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken voor middelenbeheer uitvoeren op de middelen.
+[!DNL Adobe Experience Manager] biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
 
-Media Library is een lichte DAM-oplossing (Digital Asset Management) die gratis wordt geleverd met [!DNL Adobe Experience Manager Sites] -licentie. [!DNL Sites] is een WCM-service (Web Content Management). Media Library werkt met alle mogelijkheden van Experience Manager.
+Mediabibliotheek is een lichte DAM-oplossing (Digital Asset Management) die gratis wordt geleverd met [!DNL Adobe Experience Manager Sites] -licentie. [!DNL Sites] is een WCM-service (Web Content Management). Mediabibliotheek werkt met alle mogelijkheden van Experience Manager.
 
-[!DNL Adobe Experience Manager Assets] -licentie is apart verkrijgbaar. [!DNL Experience Manager Assets] biedt een robuuste verwerking van bedrijfsmiddelen via praktijkgevallen, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface en vele andere functies die verder gaan dan Media Library biedt.
+[!DNL Adobe Experience Manager Assets] -licentie is apart verkrijgbaar. [!DNL Experience Manager Assets] biedt een robuuste verwerking van bedrijfsmiddelen via praktijkgevallen, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface, en vele andere mogelijkheden die verder gaan dan wat de mediabibliotheek biedt.
 
 ## Vergunningsvereisten {#avail-media-library-license}
 
-Klanten met een [!DNL Sites] -licentie hebben het recht om Media Library te gebruiken. Het werkt met alle componenten van [!DNL Experience Manager].
+Klanten met een [!DNL Sites] -licentie hebben het recht om de Media Library te gebruiken. Het werkt met alle componenten van [!DNL Experience Manager].
 
-Media Library wordt geïnstalleerd als onderdeel van Sites. Naast de licentie en installatie van Sites is geen extra licentie of pakket vereist.
+Mediabibliotheek wordt geïnstalleerd als onderdeel van sites. Naast de licentie en installatie van Sites is geen extra licentie of pakket vereist.
 
-## [!DNL Assets] versus Media Library {#assets-and-media-library}
+## [!DNL Assets] versus mediabibliotheek {#assets-and-media-library}
 
-Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Assets-functionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen Assets-licentie hebben aangeschaft, mogen de geavanceerde DAM-functies echter niet gebruiken. Zonder de vergunning van Assets, slechts zijn de [ eigenschappen van Media Library ](#use-media-library) beschikbaar.
+Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Assets-functionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen Assets-licentie hebben aangeschaft, mogen de geavanceerde DAM-functies echter niet gebruiken. Zonder de vergunning van Assets, slechts zijn de [ eigenschappen van de Bibliotheek van Media ](#use-media-library) beschikbaar.
 
 Als u wilt voorkomen dat [!DNL Assets] -functies waarvoor u geen licentie hebt, onbedoeld worden gebruikt, verwijdert u alle [!DNL Assets] -specifieke workflows, componenten, taxonomieën, opties en de [!DNL Assets] -beheerder uit [!DNL Experience Manager] . Zo voorkomt u dat uw gebruikers per ongeluk [!DNL Assets] -functies gebruiken waarvoor u geen licentie hebt verleend.
 
-## Media Library gebruiken {#use-media-library}
+## Mediabibliotheek gebruiken {#use-media-library}
 
-Media Library bestrijkt in grote lijnen de volgende gebruiksgevallen:
+De mediabibliotheek omvat in grote lijnen de volgende gebruiksgevallen:
 
 * Basisfuncties voor DAM bieden voor webpagina&#39;s die zijn gemaakt met [!DNL Adobe Experience Manager Sites] .
 * Adaptieve formulieren en communicatie die zijn gemaakt met [!DNL Adobe Experience Manager Forms] .
@@ -64,11 +98,11 @@ Media Library bestrijkt in grote lijnen de volgende gebruiksgevallen:
 
 -->
 
-Als u de Media Library-functionaliteit wilt gebruiken, kunt u de standaardgebruikersinterface van [!DNL Experience Manager] gebruiken. Media Library maakt deel uit van de installatie van [!DNL Experience Manager Sites] en er is geen aparte interface of invoegtoepassing vereist. Met behulp van de bestaande interface kunnen Media Library-gebruikers de volgende taken uitvoeren:
+Als u de functionaliteit van de mediabibliotheek wilt gebruiken, kunt u de standaardgebruikersinterface van [!DNL Experience Manager] gebruiken. De mediabibliotheek maakt deel uit van de installatie van [!DNL Experience Manager Sites] en er is geen aparte interface of invoegtoepassing vereist. Met behulp van de bestaande interface hebben de gebruikers van de Mediabibliotheek het recht om de volgende taken uit te voeren:
 
 * Maak mappen om elementen te ordenen.
 * Elementen uploaden.
-* Publish assets.
+* Elementen publiceren.
 * Elementen bewerken, verplaatsen en kopiëren.
 * Blader naar de elementen die u wilt gebruiken, filter en zoek (inclusief zoeken op basis van gelijkenis).
 * Voeg waarden toe aan en bewerk de waarden in de metagegevensvelden, behalve het veld Slimme tags, die standaard beschikbaar zijn op het tabblad [!UICONTROL Basic] van de pagina [!UICONTROL Properties] van een element.
@@ -80,7 +114,7 @@ Als u de Media Library-functionaliteit wilt gebruiken, kunt u de standaardgebrui
 * Voeg elementen aan [!DNL Sites] pagina&#39;s toe via de Inhoudszoeker.
 * Gebruik [!DNL Content Fragments] .
 * Gebruik HTTP REST- en GraphQL-API&#39;s voor [!DNL Content Fragments] en media-elementen waarnaar wordt verwezen, onder Sites-licentie.
-* integratie van de Marketing Cloud.
+* Marketing Cloud-integratie.
 * Gebruikersinterface voor middelenbeheer aanpassen en uitbreiden.
 * Heb toegang tot de Bouwer van de Vraag (API) om de onderzoeksfunctionaliteit uit te breiden.
 * Statische tags maken.
@@ -95,9 +129,9 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!IMPORTANT]
 >
->Vele geavanceerde gevallen van gebruik door DAM worden vervuld door [!DNL Experience Manager Assets]. Met Media Library-licentie kunt u alleen de vermelde gebruiksgevallen met Media Library afhandelen. Als een gebruiksgeval niet wordt vermeld, gebruik het niet met de vergunning van Media Library. Neem contact op met Customer Support als je vragen hebt.
+>Vele geavanceerde gevallen van gebruik door DAM worden vervuld door [!DNL Experience Manager Assets]. Met de mediawisselaarlicentie kunt u alleen de vermelde gebruiksgevallen afhandelen via de mediawisselaar. Als een gebruiksgeval niet vermeld is, gebruik het niet met de vergunning van de Bibliotheek van Media. Neem contact op met Customer Support als je vragen hebt.
 
-U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulktags toepassen, workflows van elementen wijzigen of de standaard [!DNL Adobe Experience Manager] gebruikersinterface gebruiken om Media Library te openen zonder [!DNL Assets] licentie.
+U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulksgewijs labelen, workflows van elementen wijzigen of de standaard [!DNL Adobe Experience Manager] gebruikersinterface gebruiken voor toegang tot de mediabibliotheek zonder [!DNL Assets] licentie.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
@@ -115,7 +149,7 @@ U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulktags t
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

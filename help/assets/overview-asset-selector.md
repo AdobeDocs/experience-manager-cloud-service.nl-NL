@@ -3,17 +3,51 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
 
 # Micro-Frontend element selecteren {#Overview}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Micro-Frontend Asset Selector biedt een gebruikersinterface die eenvoudig kan worden geïntegreerd met de [!DNL Experience Manager Assets] -opslagplaats, zodat u door de beschikbare digitale middelen in de opslagplaats kunt bladeren of deze kunt zoeken en deze kunt gebruiken in uw ontwerpervaring.
 
@@ -56,13 +90,13 @@ Gebruik de bovenstaande voorwaarden als u de IMS-verificatieworkflow van de Asse
 **zie meer**
 
 * [Asset Selector integreren met een Adobe-app](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Asset Selector integreren met een app die geen Adobe is](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Asset Selector integreren met een niet-Adobe-app](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Dynamische API&#39;s voor het openen van media voor middelenselectie integreren](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
 >
-> Deze opslagplaats is bedoeld als aanvullende documentatie waarin de beschikbare API&#39;s en gebruiksvoorbeelden voor de integratie van Asset Selector worden beschreven. Voordat u de functie Asset Selector gaat installeren of gebruiken, moet u controleren of uw organisatie beschikt over de toegang tot Asset Selector als onderdeel van het Experience Manager Assets as a Cloud Service-profiel. Als u niet provisioned bent, kunt u deze componenten niet integreren of gebruiken. Om levering te verzoeken, zou uw programma admin een steunkaartje moeten opheffen dat als P2 van de Admin Console wordt gemerkt en de volgende informatie omvatten:
+> Deze opslagplaats is bedoeld als aanvullende documentatie waarin de beschikbare API&#39;s en gebruiksvoorbeelden voor de integratie van Asset Selector worden beschreven. Voordat u de functie Asset Selector gaat installeren of gebruiken, moet u controleren of uw organisatie de toegang tot Asset Selector heeft ingericht als onderdeel van het Experience Manager Assets as a Cloud Service-profiel. Als u niet provisioned bent, kunt u deze componenten niet integreren of gebruiken. Om levering te verzoeken, zou uw programma admin een steunkaartje moeten opheffen dat als P2 van Admin Console wordt gemerkt en de volgende informatie omvatten:
 >
 >* Domeinnamen waarbij de integrerende toepassing wordt gehost.
 >* Na provisioning ontvangt uw organisatie `imsClientId` , `imsScope` en een `redirectUrl` die overeenkomen met de gevraagde omgevingen die essentieel zijn voor de configuratie van Asset Selector. Zonder deze geldige eigenschappen kunt u de installatiestappen niet uitvoeren.
@@ -179,24 +213,24 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
         </p>
      </td>
     <td>
-        <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Asset Selector integreren met grafische Adobe voor toepassingen"><br/>
-        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met de toepassingen van de Adobe </a>
+        <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Asset Selector integreren met grafische Adobe-toepassingen"><br/>
+        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met de toepassingen van Adobe </a>
         <p>
-        <em> ontdekt hoe te om de Selecteur van Activa met diverse toepassingen van de Adobe te integreren.</em>
+        <em> ontdekt hoe te om de Selecteur van Activa met diverse toepassingen van Adobe te integreren.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Afbeelding voor middelenkiezer integreren"><br/>
         <a href="integrate-asset-selector.md"> integreer de Selector van Activa met derdetoepassingen </a>
         <p>
-        <em> dig omhoog de mogelijkheden om de Selector van Activa met niet-Adobe toepassingen te integreren.</em>
+        <em> dig omhoog de mogelijkheden om de Selector van Activa met toepassingen te integreren niet-Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Afbeelding voor middelenkiezer integreren"><br/>
-        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met Dynamic Media Open APIs </a>
+        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met Dynamische Media Open APIs </a>
         <p>
-        <em> Begrijp hoe te om de Selecteur van Activa met Dynamic Media te integreren Open APIs.</em>
+        <em> Begrijp hoe te om de Selector van Activa met Dynamische Media te integreren Open APIs.</em>
         </p>
      </td>
      <td>
@@ -233,7 +267,7 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Verzamelingen voor middelenkiezer, afbeelding"><br/>
         <a href="asset-selector-collections.md"> Verzamelingen van de Selecteur van Activa </a>
         <p>
-        <em> Leer hoe te om inzamelingen binnen de Selector van Activa te gebruiken gebruikend de bewaarplaats van de Experience Manager. </em>
+        <em> Leer hoe te om inzamelingen binnen de Selector van Activa te gebruiken gebruikend de bewaarplaats van Experience Manager. </em>
         </p>
     </td>
     <td>
@@ -246,4 +280,4 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 >* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
 >* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
 >* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ integreer de Selector van Activa met Dynamic Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

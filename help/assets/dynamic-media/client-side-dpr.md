@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
 # Informatie over Smart Imaging met de pixelverhouding van het client-side apparaat (DPR) {#client-side-dpr}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 De huidige oplossing voor Smart Imaging gebruikt userAgent-tekenreeksen om het type apparaat (bureaublad, tablet, mobiel, enzovoort) te bepalen dat wordt gebruikt.
 
@@ -26,15 +63,15 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
 
 **server-kant teruggegeven apps**
 
-1. Laad de init van de de dienstarbeider (`srvinit.js`) door het volgende manuscript in de kopbalsectie van uw pagina van de HTML te omvatten:
+1. Laad de init van de de dienstarbeider (`srvinit.js`) door het volgende manuscript in de kopbalsectie van uw HTML pagina op te nemen:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   De Adobe adviseert dat u dit manuscript _vóór_ om het even welke andere manuscripten laadt zodat de de dienstarbeider onmiddellijk initialisatie begint.
+   Adobe adviseert dat u dit manuscript _vóór_ om het even welke andere manuscripten laadt zodat de de dienstarbeider onmiddellijk initialisatie begint.
 
-1. Neem de volgende DPR-code voor afbeeldingstag op boven aan de hoofdsectie van de pagina HTML:
+1. Neem de volgende DPR-code voor afbeeldingstag op boven aan de hoofdsectie van de HTML-pagina:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -45,11 +82,11 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Het is verplicht dat u dit DPR beeld markeringscode _vóór_ alle statische beelden in uw pagina van de HTML omvat.
+   Het is verplicht dat u deze DPR code van de beeldmarkering _vóór_ alle statische beelden in uw pagina van HTML omvat.
 
 **Client-kant teruggegeven apps**
 
-1. Neem de volgende DPR-scripts op in de koptekstsectie van de pagina HTML:
+1. Neem de volgende DPR-scripts op in de koptekstsectie van uw HTML-pagina:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -58,12 +95,12 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
 
    U kunt beide DPR manuscripten in één combineren om veelvoudige netwerkverzoeken te vermijden.
 
-   De Adobe adviseert dat u deze manuscripten _vóór_ om het even welke andere manuscripten in de pagina van de HTML laadt.
-Adobe raadt u ook aan uw toepassing onder de tag diff HTML te Bootstrappen in plaats van onder een body-element. De reden hiervoor is dat `dprImageInjection.js` de afbeeldingstag dynamisch boven aan de hoofdsectie op de pagina HTML injecteert.
+   Adobe adviseert dat u deze manuscripten _vóór_ om het even welke andere manuscripten in de pagina van HTML laadt.
+Adobe raadt u ook aan uw app onder de diff HTML-tag te Bootstrap in plaats van onder een body-element. De reden hiervoor is dat `dprImageInjection.js` de afbeeldingstag dynamisch boven aan de hoofdsectie van de HTML-pagina injecteert.
 
 ## JavaScript-bestanden downloaden {#client-side-dpr-script}
 
-De volgende JavaScript-bestanden in de download worden alleen ter referentie aan u verstrekt. Als u deze bestanden wilt gebruiken op HTML-pagina&#39;s, moet u de code van elk bestand bewerken zodat deze aan uw eigen vereisten voldoet.
+De volgende JavaScript-bestanden in de download worden alleen ter referentie aan u verstrekt. Als u deze bestanden op HTML-pagina&#39;s wilt gebruiken, moet u de code van elk bestand bewerken zodat deze aan uw eigen vereisten voldoet.
 
 * `dprImageInjection.js`
 * `srvinit.js`

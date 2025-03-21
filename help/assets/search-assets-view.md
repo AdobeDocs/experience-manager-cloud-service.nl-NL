@@ -4,17 +4,51 @@ description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Ass
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
 
 # Middelen zoeken in [!DNL Assets view] {#search-assets}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 >[!CONTEXTUALHELP]
 >id="assets_search"
@@ -140,11 +174,11 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
 
 1. Typ de naam van het element in de zoekbalk. U kunt bijvoorbeeld een element zoeken met het trefwoord `Bugatti Type 57` . Bij het zoeken naar het element worden geen resultaten gevonden, omdat het element in geen van de elementmappen aanwezig is. Klik op **[!UICONTROL Generate with Firefly]** als u elementen wilt genereren met AI. Het scherm [!DNL Adobe Firefly] wordt weergegeven.
 
-   ![ integratie van de Firefly ](assets/firefly-integration.png)
+   ![ de integratie van Firefly ](assets/firefly-integration.png)
 
    De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer ](https://helpx.adobe.com/in/firefly/using/text-to-image.html) uitgeven.[
 
-   ![ integratie van de Firefly ](assets/bugatti-type-57.png)
+   ![ de integratie van Firefly ](assets/bugatti-type-57.png)
 
 1. Selecteer een afbeelding die u wilt opslaan. Klik op **[!UICONTROL Save]** om de elementen in de voorkeursmap op te slaan, zodat u ze gemakkelijk kunt openen.
 
@@ -154,7 +188,7 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
    * Selecteer een doelmap.
    * Voer details in, zoals de naam van een project of campagne, Trefwoorden, kanalen, het tijdframe en het gebied.
 
-   ![ integratie van de Firefly ](assets/save-generated-asset.png)
+   ![ de integratie van Firefly ](assets/save-generated-asset.png)
 
 1. Klik **sparen als nieuwe activa** om de activa te bewaren.
 
@@ -201,7 +235,7 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **Vastzetten aan Snelle Toegang**: [ Vastzetten activa ](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette punten tonen in de **Snelle toegang** sectie van Mijn Workspace.
 
-* **Open in Adobe Express**: geef een beeld in de geïntegreerde Adobe Express van het scherm van Experience Manager Assets uit.
+* **Open in Adobe Express**: Bewerk een beeld in geïntegreerde Adobe Express van het scherm van Experience Manager Assets.
 
 * **geef** uit: geef het beeld uit gebruikend Adobe Express.
 

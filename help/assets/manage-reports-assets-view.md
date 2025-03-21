@@ -4,23 +4,57 @@ description: Open de gegevens in de sectie Rapporten van de mening van Assets om
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1553'
 ht-degree: 0%
 
 ---
 
 # Rapporten beheren {#manage-reports}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Asset Reporting geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets View-omgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers kunnen tot het dashboard van Inzichten toegang hebben en degenen die aan het het productprofiel van Beheerders worden toegewezen kunnen user-defined rapporten tot stand brengen.
 
 ## Toegangsrapporten {#access-reports}
 
-Alle gebruikers die zijn toegewezen aan het productprofiel AEM Beheerders, hebben toegang tot het dashboard Inzichten of kunnen door de gebruiker gedefinieerde rapporten maken in de Assets-weergave.
+Alle gebruikers die zijn toegewezen aan het productprofiel van AEM-beheerders hebben toegang tot het dashboard Inzichten of kunnen door gebruikers gedefinieerde rapporten maken in de Assets-weergave.
 
 Navigeer naar **[!UICONTROL Reports]** onder **[!UICONTROL Settings]** om rapporten te openen.
 
@@ -48,7 +82,7 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
 
    **In het lusje van de Configuratie:**
 
-   1. **type van Rapport:** Uitgezocht onder [!UICONTROL upload], [!UICONTROL download], of [ het type van het Rapport van de Levering van Dynamic Media ](#dynamic-media-delivery-reports).
+   1. **type van Rapport:** Uitgezocht onder [!UICONTROL upload], [!UICONTROL download], of [ Dynamische het Rapport van de Levering van Media ](#dynamic-media-delivery-reports) type.
    1. **Titel:** voeg een titel aan het rapport toe.
    1. **Beschrijving:** voeg een facultatieve beschrijving aan het rapport toe.
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om het rapport van geupload en gedownloade activa binnen die specifieke omslag te produceren. Als u bijvoorbeeld het rapport met middelen nodig hebt die naar een map zijn geüpload, geeft u het pad naar die map op.
@@ -76,7 +110,7 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
      <tr>
       <td>Pad</td>
       <td>Het mappad waar het element beschikbaar is in de Assets-weergave.</td>
-      <td>Uploaden, downloaden en Dynamic Media-levering</td>
+      <td>Upload, download en Dynamic Media Delivery</td>
      </tr>
      <tr>
       <td>MIME-type</td>
@@ -126,19 +160,19 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
      <tr>
       <td>Referenter</td>
       <td>De URL waar het element wordt geleverd of opgenomen</td>
-      <td>Dynamic Media-levering</td>
+      <td>Dynamische levering van media</td>
      </tr>  
      <tr>
       <td>Hits</td>
       <td>Het aantal keren dat het element wordt geleverd (aantal leveringen)</td>
-      <td>Dynamic Media-levering</td>
+      <td>Dynamische levering van media</td>
      </tr>          
     </tbody>
    </table>
 
-## Dynamic Media-leveringsrapporten {#dynamic-media-delivery-reports}
+## Dynamische rapporten voor mediafunctie {#dynamic-media-delivery-reports}
 
-Krijg leveringsinzichten voor activa die met Dynamic Media worden geleverd, met de levering op activaniveau, informatie over de referentie, middelenweg in AEM Assets en unieke activa-id. Er kunnen rapporten worden gegenereerd voor alle middelen die via de Dynamic Media for AEM Assets-opslagplaats of voor een specifieke maphiërarchie in AEM Assets worden geleverd. Bovendien helpen de Dynamic Media Delivery Reports met het meten van het rendement van de geleverde middelen, het meten van de kanaalprestaties en het uitvoeren van bewuste taken voor middelenbeheer voor middelen.
+Krijg leveringsinzichten voor activa die met Dynamische Media worden geleverd, met de telling van de levering op activaniveau, verwijzende informatie, activaweg in AEM Assets en unieke activa ID. Er kunnen rapporten worden gegenereerd voor alle elementen die via de gegevensopslagruimte Dynamic Media voor AEM Assets worden geleverd of voor een specifieke maphiërarchie in AEM Assets. Bovendien helpen de Dynamic Media Delivery-rapporten het rendement van de geleverde middelen te meten, de kanaalprestaties te meten en met kennis van zaken taken voor middelenbeheer voor elementen te vervullen.
 
 <!--
 >[!NOTE]
@@ -148,21 +182,21 @@ Krijg leveringsinzichten voor activa die met Dynamic Media worden geleverd, met 
 
 ### Vereisten {#prereqs-dynamic-media-delivery-reports}
 
-U hebt een Dynamic Media-licentie nodig om dit rapport te maken en te gebruiken.
+U moet een Dynamic Media-licentie hebben om dit rapport te maken en te gebruiken.
 
 >[!IMPORTANT]
 > 
->* Er worden rapporten verstrekt voor via Dynamic Media geleverde activa.
+>* Er worden rapporten geleverd voor elementen die via Dynamic Media worden geleverd.
 >* Er worden rapporten gegenereerd voor de eerste 1 miljoen rijen. Als u alle bestanden binnen deze limiet wilt vastleggen, kunt u overwegen de verwijzingskolom voor kleinere mappen op te nemen.
 >* Rapporten kunnen alleen gedurende de afgelopen drie maanden worden gegenereerd.
 
-### Een Dynamic Media-leveringsrapport maken{#create-dynamic-media-delivery-report}
+### Een dynamisch rapport voor mediaweergave maken{#create-dynamic-media-delivery-report}
 
-1. Creeer een Rapport van de Levering van Dynamic Media, gebruikend de stappen in [ worden vermeld creeer een rapport ](#create-report).
+1. Creeer een Dynamisch Rapport van de Levering van Media, gebruikend de stappen in [ worden vermeld creeer een rapport ](#create-report).
 
 1. Selecteer **[!UICONTROL Dynamic Media Delivery]** in de vervolgkeuzelijst **[!UICONTROL Report type]** .
 
-   ![ de drop-down van het Rapport van de Levering van Dynamic Media ](assets/dynamic-media-delivery-report-option.png)
+   ![ Dynamische drop-down het Rapport van de Levering van Media ](assets/dynamic-media-delivery-report-option.png)
 
 
 1. Op het tabblad **[!UICONTROL Columns]** kunt u de kolom **[!UICONTROL Referrer]** selecteren en opnemen in uw rapport.
@@ -171,7 +205,7 @@ U hebt een Dynamic Media-licentie nodig om dit rapport te maken en te gebruiken.
 
    Alle kolommen van het gedownloade rapport zijn read-only, behalve de **kolom van de Referateur**, die u kunt wijzigen om van het rapport te omvatten of uit te sluiten. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
-### Handelingen uitgevoerd op Dynamic Media-leveringsrapport {#actions-performed-dynamic-media-delivery-reports}
+### Handelingen die zijn uitgevoerd op het rapport Dynamische media-levering {#actions-performed-dynamic-media-delivery-reports}
 
 Nadat u het rapport hebt gemaakt, kunt u de volgende handelingen uitvoeren:
 
@@ -181,9 +215,9 @@ Nadat u het rapport hebt gemaakt, kunt u de volgende handelingen uitvoeren:
 
    * **Hits** maakt een lijst van het aantal tijden de activa (leveringstelling) wordt geleverd.
 
-Om het Rapport van de Levering van Dynamic Media als CSV te schrappen of te downloaden, zie [ Mening en download bestaand rapport ](#View-and-download-existing-report).
+Om het Dynamische Rapport van de Levering van Media als CSV te schrappen of te downloaden, zie [ Mening en download bestaand rapport ](#View-and-download-existing-report).
 
-![ Gedownloade CSV op het Rapport van de Levering van Dynamic Media ](assets/csv-dynamic-media-delivery-report.png)
+![ Gedownloade CSV op het Dynamische Rapport van de Levering van Media ](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## Bestaand rapport weergeven en downloaden {#View-and-download-existing-report}
@@ -207,7 +241,7 @@ Volg onderstaande stappen om een rapport te plannen:
    1. Wissel **rapport van het Programma:** Wissel om het rapport voor een recentere tijd of voor zijn herhaalde voorkomen te plannen.
       ![ planningsrapport ](/help/assets/assets/schedule-reports1.svg)
 
-   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde activiteitstype in de AEM. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1} gebied van het datuminterval {.**
+   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde type activiteit in de AEM-omgeving. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1} gebied van het datuminterval {.**
 
    >[!NOTE]
    >

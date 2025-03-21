@@ -1,31 +1,65 @@
 ---
-title: Hoe te om activa in AEM te zoeken?
-description: Leer hoe u elementen in AEM kunt zoeken met het deelvenster Filters en hoe u de resultaten kunt gebruiken die worden weergegeven bij het zoeken naar elementen.
+title: Hoe kan ik middelen zoeken in AEM?
+description: Leer hoe u elementen in AEM kunt zoeken met het deelvenster Filters en hoe u de resultaten gebruikt die worden weergegeven bij het zoeken naar middelen.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5455'
+source-wordcount: '5483'
 ht-degree: 3%
 
 ---
 
 # Middelen zoeken in AEM {#search-assets-in-aem}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | Dit artikel |
-
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het zoeken naar elementen waarmee u een hogere snelheid van de inhoud kunt bereiken. Uw teams kunnen tijd aan markt met naadloze, intelligente ervaring van middelenonderzoek verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. De mogelijkheid van zoekmiddelen staat centraal in het gebruik van een systeem voor het beheer van digitale middelen — of het nu gaat om verder gebruik door klanten, voor een robuust beheer van bedrijfsmiddelen door zakelijke gebruikers en marketeers of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de gebruikersinterface van [!DNL Assets] of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
 
-Het zoeken van middelen in AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
+Het zoeken naar middelen in AEM ondersteunt de volgende gebruiksgevallen en in dit artikel worden het gebruik, de concepten, configuraties, beperkingen en probleemoplossing voor deze gebruiksgevallen beschreven.
 
 | Zoeken in middelen | Zoekfuncties configureren en beheren | Werken met resultaten voor middelenzoekopdrachten |
 |---|---|---|
@@ -35,7 +69,7 @@ Het zoeken van middelen in AEM steunt de volgende gebruiksgevallen en dit artike
 | [ begrijp onderzoeksresultaten en gedrag ](#searchbehavior) | [ wijzig onderzoeksfacetten ](#searchfacets) | [ Bulk meta-gegevensupdates ](#metadata-updates) |
 | [ rang van het Onderzoek en het opvoeren ](#searchrank) | [ de Voorspelden van de Douane ](#custompredicates) | [ Slimme inzamelingen ](#collections) |
 | [ Geavanceerd onderzoek: het filtreren en werkingsgebied van onderzoek ](#scope) | | [ begrijp en los onverwachte resultaten ](#unexpected-results) problemen op |
-| [ Onderzoek van andere oplossingen en apps ](#search-assets-other-surfaces):<ul><li>[ de Verbinding van Activa van de Adobe ](#aal)</li><li>[ Brand Portal ](#brand-portal)</li><li>[ Desktop app van de Experience Manager ](#desktop-app)</li><li>[ de beelden van Adobe Stock ](#adobe-stock)</li><li>[ de activa van Dynamic Media ](#search-dynamic-media-assets)</li></ul> | | |
+| [ Onderzoek van andere oplossingen en apps ](#search-assets-other-surfaces):<ul><li>[ de Verbinding van Activa van Adobe ](#aal)</li><li>[ Brand Portal ](#brand-portal)</li><li>[ Experience Manager Desktop app ](#desktop-app)</li><li>[ de beelden van Adobe Stock ](#adobe-stock)</li><li>[ Dynamische activa van Media ](#search-dynamic-media-assets)</li></ul> | | |
 | [ selecteur van Activa ](#asset-picker) | | |
 | [ Beperkingen ](#limitations) en [ Uiteinden ](#tips) | | |
 | [ Afgedrukte voorbeelden ](#samples) | | |
@@ -88,13 +122,13 @@ Vanaf augustus 2023 bevat Experience Manager Assets een nieuwe versie 9 van de i
 
 `damAssetLucene-9` wijzigt het gedrag van het tellen van de facet van de Vraag van Oak om toegangsbeheer op de facettellingen niet meer te evalueren die door de onderliggende onderzoeksindex zijn teruggekeerd, wat in de snellere tijden van de onderzoeksreactie resulteert. Dit heeft tot gevolg dat gebruikers mogelijk waarden voor het aantal facetten krijgen, waaronder elementen waartoe ze geen toegang hebben. Deze gebruikers hebben geen toegang tot, kunnen geen gegevens downloaden van of lezen over deze elementen, inclusief de paden, of kunnen geen verdere informatie over deze elementen krijgen.
 
-Als u op het vorige gedrag (`statistical` wijze) moet schakelen, zie [ Inhoud Onderzoek en het Indexeren ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) om een douaneversie van de `damAssetLucene-9` index tot stand te brengen. Adobe adviseert niet overschakelen op de `secure` wijze wegens het effect op de tijden van de onderzoeksreactie met grote resultaatreeksen.
+Als u op het vorige gedrag (`statistical` wijze) moet schakelen, zie [ Inhoud Onderzoek en het Indexeren ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) om een douaneversie van de `damAssetLucene-9` index tot stand te brengen. Adobe raadt u niet aan over te schakelen op de modus `secure` vanwege de invloed op de responstijden van zoekopdrachten met grote resultaatsets.
 
 Voor meer informatie over Oak facetmogelijkheden, met inbegrip van een gedetailleerde beschrijving van deze wijzen, zie [ Facets - de Documentatie van Oak - de Index van Lucene ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggesties zoeken terwijl u typt {#searchsuggestions}
 
-Wanneer u een sleutelwoord begint te typen, stelt de Experience Manager de mogelijke onderzoekstrefwoorden of uitdrukkingen voor. De suggesties zijn gebaseerd op de middelen in Experience Manager. Experience Manager indexeert alle metagegevensvelden om te helpen bij het zoeken. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
+Wanneer u een trefwoord begint te typen, stelt Experience Manager de mogelijke zoektrefwoorden of trefwoorden voor. De suggesties zijn gebaseerd op de middelen in Experience Manager. Experience Manager indexeert alle metagegevensvelden om te helpen met zoeken. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
 
 * Elementlabels. (afbeeldingen `jcr:content/metadata/cq:tags` )
 * Titel van element. (afbeeldingen `jcr:content/metadata/dc:title` )
@@ -196,7 +230,7 @@ Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker gesel
 
 Van binnen het [!DNL Experience Manager] gebruikersinterface, kunnen de gebruikers [ activa van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) zoeken en de vereiste activa vergunning geven. Voeg `Location: Adobe Stock` toe in de balk Zoeken. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
-### Dynamic Media-middelen {#dmassets}
+### Dynamische media-elementen {#dmassets}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen.
 
@@ -220,7 +254,7 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Uit-tijd | offtime:YYYY-MM-DDTHH |
 | Tijdsbereik (verloopt dateontime, offtime) | facet field : lowerbound..bovenaan |
 | Pad | /content/dam/&lt;naam map> |
-| PDF-titel | pdftitle:&quot;Document Adoben&quot; |
+| PDF-titel | pdftitle:&quot;Adobe-document&quot; |
 | Onderwerp | onderwerp: &quot;Opleiding&quot; |
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
@@ -243,15 +277,15 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 * Elementen weergeven waarvan de eigenschapswaarden beginnen met een specifieke tekenreeks (bijvoorbeeld: title is Scott Reynolds): `title:Scott*`
 * Elementen met eigenschapswaarden die eindigen met een specifieke tekenreeks (bijvoorbeeld: title is Scott Reynolds) weergeven: `title:*Reynolds`
 * Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: title = Basel Meeting Room): `title:*Meeting*`
-* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar Adobe van tekenreeks in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
+* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar tekenreeks Adobe in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
 
 ## Middelen zoeken vanuit andere [!DNL Experience Manager] aanbiedingen of interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] maakt een verbinding tussen DAM-opslagplaats en verschillende andere [!DNL Experience Manager] -oplossingen om sneller toegang te krijgen tot digitale middelen en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige zoekmethoden veranderen als het doelpubliek, de gebruiksgevallen en de gebruikersinterface voor de [!DNL Experience Manager] -oplossingen. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
 
-### Middelen zoeken vanuit het deelvenster Adobe-elementkoppeling {#aal}
+### Middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de apps: [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] . [!DNL Adobe Creative Cloud] Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [ onderzoek en doorblader activa ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van Activa van de Adobe.
+Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de apps: [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] . [!DNL Adobe Creative Cloud] Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [ onderzoek en doorblader activa ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van Activa van Adobe.
 
 ### Middelen zoeken in de [!DNL Experience Manager] bureaubladtoepassing {#desktop-app}
 
@@ -441,7 +475,7 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 | MIME-typen | Afbeeldingen, Documenten, Multimedia, Archieven of Overige. |
 | Laatst gewijzigd | Uur, Dag, Week, Maand of Jaar. |
 | Bestandsgrootte | Klein, Medium of Groot |
-| Publish-status | Gepubliceerd of Niet gepubliceerd. |
+| Status publiceren | Gepubliceerd of Niet gepubliceerd. |
 | Goedgekeurde status | Goedgekeurd of geweigerd. |
 | Afdrukstand | Horizontaal, Verticaal of Vierkant. |
 | Stijl | Kleur, of Zwart-wit. |
@@ -471,7 +505,7 @@ U kunt de volgende handelingen uitvoeren met de elementen die u hebt gezocht in 
 
 U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten alleen sorteren in de lijstweergave en als u **[[!UICONTROL Files]](#searchui)** in het deelvenster **[!UICONTROL Filters]** selecteert. [!DNL Assets] gebruikt sorteren op de server om snel alle elementen (hoe talrijk ook) in een map of resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensionen, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
 Voor beperkingen van soortfunctionaliteit, zie [ beperkingen ](#limitations).
 
@@ -554,7 +588,7 @@ Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weerg
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

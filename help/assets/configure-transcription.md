@@ -9,22 +9,56 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
 
 # Abonnement configureren in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 Transcriptie is het proces waarbij de audio van een audio- of videobestand in tekst (spraak naar tekst) wordt omgezet met behulp van de spraakherkenningstechnologie.
 [!DNL Adobe Experience Manager Assets] is geconfigureerd met [!DNL Azure Media Services] , dat automatisch teksttranscriptie van de gesproken taal genereert in een ondersteund audio- of videobestand in de WebVTT-indeling (.vtt). Wanneer een audio- of video-element wordt verwerkt in [!DNL Experience Manager Assets] , genereert de transcriptieservice automatisch de tekstranscriptie-uitvoering van het audio- of videoelement en slaat deze op dezelfde locatie op in de Assets-opslagplaats waar het oorspronkelijke element zich bevindt. Met de transcriptieservice van [!DNL Experience Manager Assets] kunnen marketers hun audio- en video-inhoud effectief beheren, waarbij de tekstinhoud extra kan worden gedetecteerd en de ROI van deze elementen kan worden verhoogd door toegankelijkheid en lokalisatie te ondersteunen.
 
-Transcripties zijn tekstversies van gesproken inhoud. Een voorbeeld hiervan is een film die u bekijkt op elk OTT-platform dat vaak bijschriften bevat om de toegankelijkheid te verbeteren of de inhoud in andere talen te consumeren. Of een audio- of videobestand dat wordt gebruikt voor marketing, training of entertainmentdoeleinden. Deze ervaringen beginnen met een transcriptie die vervolgens wordt opgemaakt of waar nodig wordt vertaald. Het transcripten van audio of video is een tijdsintensief en foutgevoelig proces wanneer manueel uitgevoerd. Het is ook een uitdaging om het handmatige proces te schalen, gezien de steeds toenemende behoefte aan audio-video-inhoud. [!DNL Experience Manager Assets] gebruikt de op AI gebaseerde transcriptie van Azure die het op grote schaal verwerken van de audio- en video-elementen toestaat en de tekstranscripties (.vtt-bestanden) samen met de tijdstempeldetails genereert. Samen met Assets wordt de transcriptie-functie ook ondersteund in Dynamic Media.
+Transcripties zijn tekstversies van gesproken inhoud. Een voorbeeld hiervan is een film die u bekijkt op elk OTT-platform dat vaak bijschriften bevat om de toegankelijkheid te verbeteren of de inhoud in andere talen te consumeren. Of een audio- of videobestand dat wordt gebruikt voor marketing, training of entertainmentdoeleinden. Deze ervaringen beginnen met een transcriptie die vervolgens wordt opgemaakt of waar nodig wordt vertaald. Het transcripten van audio of video is een tijdsintensief en foutgevoelig proces wanneer manueel uitgevoerd. Het is ook een uitdaging om het handmatige proces te schalen, gezien de steeds toenemende behoefte aan audio-video-inhoud. [!DNL Experience Manager Assets] gebruikt de op AI gebaseerde transcriptie van Azure die het op grote schaal verwerken van de audio- en video-elementen toestaat en de tekstranscripties (.vtt-bestanden) samen met de tijdstempeldetails genereert. Samen met Assets wordt de transcriptie functie ook ondersteund met Dynamic Media.
 
 De transcriptie functie is zonder kosten beschikbaar in [!DNL Experience Manager Assets] . De beheerders hebben echter de Azure-referenties van de gebruiker nodig om de transcriptieservice in [!DNL Experience Manager Assets] te configureren. U kunt ook [ de proefgeloofsbrieven ](https://azure.microsoft.com/en-us/pricing/details/media-services/) direct van Microsoft® krijgen om de audio of videobeschrijvingseigenschap in Assets te ervaren.
 
@@ -102,7 +136,7 @@ Als het verwerkingsprofiel is geconfigureerd voor het transcripten van audio- en
 >
 >Een verwerkingsprofiel dat is toegepast op een map, werkt voor de gehele structuur. Een ander profiel kan echter worden overschreven wanneer een submap wordt toegepast.
 >
->Wanneer middelen aan een omslag worden geupload, communiceert de Experience Manager met de bevattende eigenschappen van de omslag om het verwerkingsprofiel te identificeren. Als er geen toepassing is, wordt gecontroleerd of er een verwerkingsprofiel van toepassing is in een bovenliggende map in de hiërarchie.
+>Wanneer elementen naar een map worden geüpload, communiceert Experience Manager met de eigenschappen van de bovenliggende map om het verwerkingsprofiel te identificeren. Als er geen toepassing is, wordt gecontroleerd of er een verwerkingsprofiel van toepassing is in een bovenliggende map in de hiërarchie.
 
 
 ## Abonnement op audio- of video-elementen genereren {#generate-transcription}
@@ -117,18 +151,18 @@ U kunt de transcriptie-uitvoering ook zien door de uitvoeringen van het oorspron
 
 U kunt de transcriptie (vtt-tekstbestand) rechtstreeks vanuit de map downloaden als een aparte elementuitvoering, of vanuit het deelvenster **[!UICONTROL Renditions]** van het oorspronkelijke element door alle uitvoeringen van het element te downloaden.
 
-Experience Manager biedt momenteel geen ondersteuning voor het native voorvertonen van volledige tekst of het bewerken van VTT-bestanden. U kunt de transcriptie echter downloaden en een teksteditor gebruiken om de transcriptie te bewerken of te verifiëren. De transcriptie weerspiegelt de gesproken taal als tekst op het opgegeven tijdstempel in de video met de betrouwbaarheidsscore (nauwkeurigheid) van de transcriptie.
+Experience Manager biedt momenteel geen ondersteuning voor native voorvertoningen van volledige tekst of het bewerken van VTT-bestanden. U kunt de transcriptie echter downloaden en een teksteditor gebruiken om de transcriptie te bewerken of te verifiëren. De transcriptie weerspiegelt de gesproken taal als tekst op het opgegeven tijdstempel in de video met de betrouwbaarheidsscore (nauwkeurigheid) van de transcriptie.
 
 ![ vorm-transcriptie-dienst ](assets/transcript-text.png)
 
-## Transcriptie gebruiken in Dynamic Media {#using-transcription-in-dynamic-media}
+## Transcriptie gebruiken in dynamische media {#using-transcription-in-dynamic-media}
 
-Als u [ gevormd Dynamic Media ](/help/assets/dynamic-media/config-dm.md) in uw instantie van Experience Manager Assets hebt, kunt u activa (audio of videodossier) en zijn transcriptie (vtdossier) aan Dynamic Media publiceren. Op deze manier worden het oorspronkelijke element (audio- of videobestand) en de transcriptie (vtt-bestand) in dezelfde map gepubliceerd naar Dynamic Media. De beheerder van Dynamic Media kan [ CC Gesloten ervaring van de Titel ](/help/assets/dynamic-media/video.md#adding-captions-to-video) voor het audio of videodossier toelaten gebruikend de transcriptie vertoning (.vtt- dossier).
+Als u [ gevormde Dynamische Media ](/help/assets/dynamic-media/config-dm.md) in uw instantie van Experience Manager Assets hebt, kunt u activa (audio of videodossier) en zijn transcriptie (.vtt- dossier) aan Dynamische Media publiceren. Hierdoor worden het oorspronkelijke element (audio- of videobestand) en de transcriptie (vtt-bestand) in dezelfde map gepubliceerd naar Dynamic Media. De dynamische beheerder van Media kan [ CC Gesloten ervaring van de Titel ](/help/assets/dynamic-media/video.md#adding-captions-to-video) voor het audio of videodossier toelaten gebruikend de transcriptie vertoning (.vtt- dossier).
 
 Zie ook:
 
-* [ Videozelfstudie op hoe te om CC Gesloten Bijschrift aan de video van Dynamic Media toe te voegen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
-* [Publish Dynamic Media-video&#39;s naar YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
+* [ Videozelfstudie op hoe te om CC Gesloten Bijschrift aan Dynamische video van Media toe te voegen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
+* [Dynamische media-video&#39;s publiceren naar YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 In de volgende afbeelding geeft de URL het bijschriftgedeelte weer dat naar de transcriptie (.vtt-bestand) verwijst. De video weerspiegelt de gesproken taal (getranscripte tekst) als een **[!UICONTROL Closed Caption]** op het opgegeven tijdstempel in de video. De gebruiker kan het bijschrift in- of uitschakelen met de knop **[!UICONTROL CC]** .
 
@@ -182,4 +216,4 @@ Meld u aan bij uw [!DNL Azure Media Services] -account met dezelfde referenties 
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

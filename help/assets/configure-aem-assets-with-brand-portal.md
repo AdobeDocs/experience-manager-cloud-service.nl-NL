@@ -1,25 +1,59 @@
 ---
 title: Vorm AEM Assets als a [!DNL Cloud Service]  met Brand Portal
-description: Leer hoe u AEM Assets kunt configureren met Brand Portal. Met de configuratie kunt u goedgekeurde merkmiddelen van een AEM naar Brand Portal publiceren en deze aan de Brand Portal-gebruikers distribueren.
+description: Leer hoe u AEM Assets kunt configureren met Brand Portal. Met de configuratie kunt u goedgekeurde merkmiddelen van een AEM-exemplaar naar Brand Portal publiceren en deze aan de Brand Portal-gebruikers distribueren.
 contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1753'
 ht-degree: 7%
 
 ---
 
 # Experience Manager Assets configureren met Brand Portal {#configure-aem-assets-with-brand-portal}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets publiceren als een [!DNL Cloud Service] -exemplaar naar Brand Portal en deze verspreiden onder de Brand Portal-gebruikers.
@@ -72,14 +106,14 @@ U kunt Brand Portal activeren terwijl u de productieomgevingen voor uw Experienc
 
 **zie ook**:
 
-* [ voegt gebruikers en rollen in as a Cloud Service Experience Manager Assets toe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [ voeg gebruikers en rollen in Experience Manager Assets as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) toe
 
 * [ beheert milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **Login aan uw huurder van Brand Portal**:
 
-Nadat u de Brand Portal-huurder in Cloud Manager hebt geactiveerd, kunt u zich vanuit de Admin Console aanmelden bij Brand Portal of rechtstreeks de URL van de huurder gebruiken.
+Nadat u de Brand Portal-huurder in Cloud Manager hebt geactiveerd, kunt u zich vanuit Admin Console aanmelden bij Brand Portal of rechtstreeks de URL van de huurder gebruiken.
 
 De standaard-URL van de Brand Portal-gebruiker is: `https://<tenant-id>.brand-portal.adobe.com/` .
 
@@ -141,10 +175,10 @@ Als u de verbinding tussen uw Experience Manager Assets als een [!DNL Cloud Serv
 
 U kunt nu het volgende doen:
 
-* [Publish-middelen van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md)
-* [Publish-mappen van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Publish-collecties van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [ de activa van Publish van Brand Portal aan Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - De Middelen van Activa in Brand Portal
+* [Elementen publiceren van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md)
+* [Mappen publiceren van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Verzamelingen van Experience Manager Assets naar Brand Portal publiceren](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [ publiceer activa van Brand Portal aan Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - De Middelen van Activa in Brand Portal
 * [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -199,7 +233,7 @@ Naast de automatiseringsworkflow om Brand Portal op Experience Manager Assets al
 
 In de volgende sectie wordt beschreven hoe u Experience Manager Assets handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal met Adobe Developer Console.
 
-Eerder, werd Experience Manager Assets als [!DNL Cloud Service] manueel gevormd met Brand Portal via Adobe Developer Console, die een de rekeningsteken van Identity Management van de Adobe (IMS) voor vergunning van de huurder van Brand Portal koopt. Er zijn configuraties voor nodig, zowel in Experience Manager Assets als in Adobe Developer Console.
+Eerder werd Experience Manager Assets als een [!DNL Cloud Service] handmatig geconfigureerd met Brand Portal via Adobe Developer Console, dat een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder. Er zijn configuraties voor nodig, zowel in Experience Manager Assets als in Adobe Developer Console.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
 <!--1. Under the project, configure an API using the public key to create a service account connection.
@@ -430,14 +464,14 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 U kunt de configuratie nu testen door de distributieagent te controleren en elementen naar Brand Portal te publiceren.
 
 **Lijst van gewenste personen Eind IPs in SPS als veilige voorproef toegelaten**
-Als het gebruiken van Dynamic Media-Scene7 met [ veilige voorproef ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) voor een bedrijf werd toegelaten, dan wordt het geadviseerd dat de bedrijfbeheerder van Scene7 [ lijst van gewenste personen openbaar uitgang IPs ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) voor respectieve gebieden gebruikend SPS (het Uitgeven van Scene7 Systeem) flits UI.
+Als het gebruiken van Dynamische media-Scene7 met [ veilige voorproef ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) voor een bedrijf wordt toegelaten, dan wordt het geadviseerd dat de beheerder van het bedrijf Scene7 [ de openbare uitgang IPs ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) voor respectieve gebieden voegt op lijst van gewenste personen gebruikend SPS (Scene7 het Publiceren Systeem) flits UI.
 De IP&#39;s van de uitgang zijn als volgt:
 
 | **Gebied** | **IP van de Eis** |
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.2 48.244.210, 130.248.244.211, 13.248.244.212 |
-| APAC | 63 140 44 54 |
+| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}
@@ -570,4 +604,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Assets publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

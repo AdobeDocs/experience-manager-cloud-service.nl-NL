@@ -4,19 +4,53 @@ description: Bewerk video's gebruikend  [!DNL Adobe Express]  aangedreven opties
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 # Video&#39;s bewerken in [!DNL Assets view] {#edit-videos}
 
-| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
 
-Assets-gebruikers kunnen gemakkelijk variaties in video-inhoud maken met de ingesloten snelle handelingen voor video in [!DNL Adobe Express] . Snelle acties in [!DNL Assets view] , aangedreven door [!DNL Adobe Express] , bieden gebruikersvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video&#39;s, het vergroten of verkleinen van video, het bijsnijden van video en het omzetten van video in GIF.
+Assets-gebruikers kunnen gemakkelijk variaties in video-inhoud maken met de ingesloten snelle handelingen voor video in [!DNL Adobe Express] . Snelle acties in [!DNL Assets view] , aangedreven door [!DNL Adobe Express] , bieden gebruikersvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video&#39;s, het vergroten of verkleinen van video&#39;s, het bijsnijden van video en het omzetten van video&#39;s naar GIF.
 
 Als u een video wilt bewerken, gaat u naar de details van de video en klikt u op [!UICONTROL Edit Video] . Alternatief, selecteer de activa en klik details dan klik ![ schaar ](assets/do-not-localize/cut.svg) pictogram beschikbaar in de juiste ruit. Nadat u een video hebt bewerkt, kunt u de nieuwe video opslaan als een nieuwe versie of als een nieuw element.
 
@@ -71,7 +105,7 @@ Uw bijgesneden video kan worden gedownload. U kunt het bewerkte element opslaan 
 
 ### Video converteren naar GIF {#convert-mp4-to-gif-using-express}
 
-U kunt een MP4-video snel met Adobe Express omzetten in een GIF-indeling. Voer de volgende stappen uit:
+Met Adobe Express kunt u een MP4-video snel omzetten in een GIF-indeling. Voer de volgende stappen uit:
 
 1. Selecteer een video en klik op **[!UICONTROL Edit]** .
 2. Klik op **[!UICONTROL Convert to GIF]** in de snelhandelingen die beschikbaar zijn in het linkerdeelvenster.
@@ -81,7 +115,7 @@ U kunt een MP4-video snel met Adobe Express omzetten in een GIF-indeling. Voer d
 
    ![ zet video in GIF met Adobe Express om ](assets/adobe-express-convert-video-to-gif.png)
 
-Uw video is beschikbaar in GIF-indeling voor downloaden. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
+Uw video is beschikbaar in GIF-indeling en kan worden gedownload. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
 
 ## Beperkingen {#limitations-video-adobe-express}
 
