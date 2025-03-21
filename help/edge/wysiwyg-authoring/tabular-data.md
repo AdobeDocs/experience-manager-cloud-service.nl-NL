@@ -1,12 +1,12 @@
 ---
 title: Werkbladen gebruiken om tabelgegevens te beheren
-description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden, zoals metagegevens en omleidingen voor uw AEM naar de site Edge Delivery Services.
+description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden, zoals metagegevens en omleidingen voor uw AEM met de Edge Delivery Services-site.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Werkbladen gebruiken om tabelgegevens te beheren {#tabular-data}
 
-Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden, zoals metagegevens en omleidingen voor uw AEM naar de site Edge Delivery Services.
+Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden, zoals metagegevens en omleidingen voor uw AEM met de Edge Delivery Services-site.
 
 ## Gevallen gebruiken {#use-cases}
 
-Voor om het even welke AEM met de plaats van Edge Delivery Services, is er een behoefte om lijsten van tabelgegevens zoals voor sleutel-waarde afbeeldingen te handhaven. Dit kunnen lijsten van vele verschillende waarden zoals meta-gegevens en omleiding zijn. Met Edge Deliver Services kunt u dergelijke tabellijsten bijhouden met behulp van een intuïtief hulpprogramma: de spreadsheet. AEM zet deze spreadsheets om in JSON-bestanden die eenvoudig door uw website of webtoepassing kunnen worden gebruikt.
+Voor elke AEM met Edge Delivery Services-site moeten lijsten met tabelgegevens worden bijgehouden, zoals voor toetstoewijzingen. Dit kunnen lijsten van vele verschillende waarden zoals meta-gegevens en omleiding zijn. Met Edge Deliver Services kunt u dergelijke tabellijsten bijhouden met behulp van een intuïtief hulpprogramma: de spreadsheet. AEM zet deze spreadsheets om in JSON-bestanden die eenvoudig door uw website of webtoepassing kunnen worden gebruikt.
 
 Vaak voorkomende gevallen van gebruik zijn:
 
@@ -38,17 +38,17 @@ Dit document gebruikt het voorbeeld van omleidingen om te illustreren hoe u derg
 
 >[!TIP]
 >
->Spreadsheets mogen alleen worden gebruikt om tabelgegevens te onderhouden. Voor het opslaan van gestructureerde gegevens, [ controle uit AEM het gebruiken van headless eigenschappen ](/help/headless/introduction.md).
+>Spreadsheets mogen alleen worden gebruikt om tabelgegevens te onderhouden. Voor het opslaan van gestructureerde gegevens, [ controle uit de hoofdloze eigenschappen van AEM ](/help/headless/introduction.md).
 
 ## Vereisten {#prerequisites}
 
-Als u toewijzingen wilt maken met behulp van spreadsheets in uw AEM met Edge Delivery Services-project, moet u uw site hebben gemaakt met de nieuwste sitesjabloon.
+Als u toewijzingen wilt maken met spreadsheets in uw AEM met Edge Delivery Services-project, moet u uw site hebben gemaakt met de nieuwste sitesjabloon.
 
 Gelieve te zien de document [ Begonnen Gids van de Ontwikkelaar Begonnen voor het schrijven van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.
 
 ## Een werkblad maken {#spreadsheet}
 
-In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor uw AEM met de site Edge Delivery Services. De zelfde stappen zijn op [ andere spreadsheettypes ](#other) van toepassing die u wenst te creëren.
+In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor uw AEM met de Edge Delivery Services-site. De zelfde stappen zijn op [ andere spreadsheettypes ](#other) van toepassing die u wenst te creëren.
 
 1. Teken binnen aan uw het auteursinstantie van AEM as a Cloud Service, ga naar de **console van Plaatsen**, en navigeer aan de wortel van de plaats die een spreadsheet vereist. Tik of klik **creeer** -> **Pagina**.
 
@@ -83,7 +83,7 @@ In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor u
 
 ## Werkbladgegevens importeren {#importing}
 
-Naast het bewerken van spreadsheets in de AEM Pagina-editor kunt u ook gegevens uit een CSV-bestand importeren.
+Naast het bewerken van werkbladen in de AEM Page Editor kunt u ook gegevens importeren uit een CSV-bestand.
 
 1. Wanneer het uitgeven van uw spreadsheet in AEM, tik of klik **uploadt** knoop bij top-left van het scherm.
 1. Selecteer in de vervolgkeuzelijst hoe u de gegevens wilt importeren.
@@ -97,7 +97,7 @@ Er wordt een dialoogvenster geopend wanneer het importeren wordt verwerkt. Wanne
 >
 >* De koppen in het CSV-bestand moeten exact overeenkomen met de kolommen in het werkblad.
 >* Als u de volledige CSV importeert, worden de kolomkoppen niet gewijzigd, alleen de inhoudsrijen.
->* Als u de kolommen moet bijwerken, moet u dat doen in de AEM Pagina-editor voordat u de CSV-bestanden kunt importeren.
+>* Als u de kolommen moet bijwerken, moet u dat doen in de AEM Page Editor voordat u de CSV-bestanden kunt importeren.
 >* Een CSV-bestand kan niet groter zijn dan 10 MB voor importeren.
 
 Afhankelijk van de selectie van `mode` kunt u ook `create` , `replace` of `append` naar spreadsheets gaan met een opdracht CSV en cURL, vergelijkbaar met de volgende.
@@ -129,7 +129,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 ## Een spreadsheetpad.json publiceren {#paths-json}
 
-Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u het `paths.json` -bestand van uw project bovendien bijwerken.
+Als AEM de gegevens in uw spreadsheet wil publiceren, moet u bovendien het `paths.json` -bestand van uw project bijwerken.
 
 1. Open de wortel van uw project in GitHub.
 
@@ -158,11 +158,11 @@ Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u het `paths.json` -
 
 1. Wanneer u klaar bent het bepalen van uw omleidingen en u de wegafbeelding bijwerkte, terugkeer aan de **Sites** console.
 
-1. Tik of klik om het opnieuw richt spreadsheet te selecteren dat u in de console creeerde en dan **Snelle Publish** in de actiebar tikt of klikt om spreadsheet te publiceren.
+1. Tik of klik om het opnieuw richt spreadsheet te selecteren dat u in de console creeerde en dan tikt of klikt **Snel publiceert** in de actiebar om spreadsheet te publiceren.
 
    ![ selecteer spreadsheet in de console van Plaatsen ](assets/tabular-data/tabular-data-select-publish.png)
 
-1. In de **dialoog van 30} Snelle Publish {, tik of klik** Publish **.**
+1. In het **Snelle publiceer** dialoog, tikt of klikt **publiceer**.
 
    ![ bevestigt publiceren ](assets/tabular-data/tabular-data-quick-publish.png)
 
@@ -180,10 +180,10 @@ Het spreadsheet voor omleiding wordt nu gepubliceerd en openbaar gemaakt.
 
 Nu u weet hoe u een spreadsheet voor omleidingen kunt maken, kunt u elk ander standaardspreadsheettype maken:
 
-* Plaatsaanduidingen
-* Metagegevens
-* Kopteksten
-* Configuratie
+* [ Plaatsaanduidingen ](https://www.aem.live/docs/placeholders)
+* [ Metagegevens ](https://www.aem.live/docs/bulk-metadata)
+* [ Kopballen ](https://www.aem.live/docs/custom-headers)
+* [ Configuratie ](https://www.aem.live/docs/configuration) - zoals voor [ geheim voorgeheugenongeldigverklaring ](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Volg eenvoudig de zelfde stappen in de secties [ creëren Spreadsheet ](#spreadsheet) en [ Update paths.json ](#paths-json) en kies het aangewezen malplaatje en werk het `paths.json` dossier dienovereenkomstig bij.
@@ -199,7 +199,7 @@ Bovendien, kunt u [ uw eigen spreadsheet ](#own-spreadsheet) met willekeurige ko
 
 >[!NOTE]
 >
->U hoeft geen spreadsheet te maken om indexering voor AEM as a Cloud Service met projecten van Edge Delivery Services te beheren.
+>U hoeft geen spreadsheet te maken om indexering voor AEM as a Cloud Service met Edge Delivery Services-projecten te beheren.
 >
 >Als u wenst om uw eigen indexen tot stand te brengen, [ te volgen gelieve deze documentatie ](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) om uw eigen `helix-query.yaml` dossier tot stand te brengen.
 
