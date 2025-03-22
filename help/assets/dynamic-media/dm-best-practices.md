@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 0%
 
 ---
@@ -355,7 +355,7 @@ Na publicatie hebt u twee opties.
    * **Verbinding direct:**
 Gebruik de opgegeven URL om rechtstreeks te koppelen aan de video. Hyperlink het geschikt op uw marketingsite.
    * **bed de video in:**
-Kopieer de ingevoerde insluitcode en plak deze in de HTML van uw webpagina waar u de video wilt weergeven. Hierdoor kan de video rechtstreeks op uw site worden afgespeeld.
+Kopieer de ingesloten code en plak deze in de HTML van de webpagina waar u de video wilt weergeven. Hierdoor kan de video rechtstreeks op uw site worden afgespeeld.
 
 Meer informatie? Ga naar [ Video ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -399,7 +399,7 @@ Het internationaliseren van video&#39;s voor meertalig gebruik is essentieel voo
    * Organiseer, doorblader, en onderzoek videoactiva binnen AEM.
    * Video-elementen voorvertonen en publiceren.
    * Bekijk de bronvideo en de bijbehorende gecodeerde vertoningen samen met de bijbehorende miniaturen.
-   * Video-eigenschappen bewerken, zoals titel, beschrijving en tags2.
+   * Bewerk video-eigenschappen, zoals titel, beschrijving en tags2.
 
 * **Localization:**
    * Maak audiotracks en ondertitels voor elke doelgeografie/taal.
@@ -410,7 +410,7 @@ Het internationaliseren van video&#39;s voor meertalig gebruik is essentieel voo
    * Als u AEM gebruikt als WCM-systeem (Web Content Management), kunt u rechtstreeks video&#39;s toevoegen aan uw webpagina&#39;s.
    * Als u een WCM-systeem van derden gebruikt, kunt u video&#39;s op uw webpagina&#39;s koppelen of insluiten met behulp van URL&#39;s of insluitcodes.
 
-Meer informatie? Ga naar [ Ongeveer veelvoudige titel en audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/dynamic-media/video.md#about-msma) of bekijk [ veelvoudige titels en audiosporen aan een video ](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 notulen, 41 seconden) toevoegen.
+Meer informatie? Ga naar [ Ongeveer veelvoudige titel en audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Middelen leveren aan klanten
