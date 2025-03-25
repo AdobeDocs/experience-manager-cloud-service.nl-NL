@@ -1,15 +1,15 @@
 ---
-title: Bulkmetagegevens bewerken in Assets View
-description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere elementen die tegelijkertijd beschikbaar zijn in de Assets View.
+title: Bulkmetagegevens bewerken in [DNL! Assets View]
+description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere middelen die beschikbaar zijn op de [DNL!] Assets View] tegelijkertijd.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9b5191bd05bfb06fb4eb1a9b710b98cc132ffeda
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
-# Bulkmetagegevens bewerken in Assets View{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+# Bulkmetagegevens bewerken in [!DNL Assets View]{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
 <table>
     <tr>
@@ -48,31 +48,31 @@ ht-degree: 0%
     </tr>
 </table>
 
-De **Bulk Meta-gegevens geeft** eigenschap binnen de Mening van Assets uit staat gebruikers toe om een vooraf bepaalde reeks standaardmeta-gegevensgebieden voor veelvoudige activa gelijktijdig uit te geven dossiers. Selecteer meerdere elementen en bulksgewijs werk de vooraf gedefinieerde set standaardmetagegevens tegelijk bij in plaats van deze standaardmetagegevens voor elk element afzonderlijk bij te werken. Deze functie verbetert de efficiëntie, consistentie en nauwkeurigheid van standaardeigenschappen voor metagegevens in een grote set elementen, waardoor de zoekbaarheid en organisatie van middelen wordt verbeterd.
+Met de **[!DNL Bulk Metadata Edit]** mogelijkheid van [!DNL Assets View] kunt u een vooraf gedefinieerde set standaardmetagegevensvelden voor meerdere elementbestanden tegelijk bewerken. Selecteer meerdere elementen en bulksgewijs werk de vooraf gedefinieerde set standaardmetagegevens tegelijk bij in plaats van deze standaardmetagegevens voor elk element afzonderlijk bij te werken. Deze mogelijkheid om de standaardset metagegevenseigenschappen voor meerdere elementen in één keer in bulk te bewerken, zorgt voor een efficiëntere, consistentere en nauwkeurigere werking van deze standaardeigenschappen voor metagegevens over de grote reeks elementen, waardoor de doorzoekbaarheid en organisatie van deze elementen worden verbeterd.
 
 ## Metagegevens van elementen in blokvorm bewerken {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
 Voer de volgende stappen uit om de metagegevens van meerdere elementen tegelijk in bulk te bewerken:
 
-1. Voor de Mening van Assets, klik **Assets**.
+1. Ga naar **[!DNL Assets View]** en klik op **[!UICONTROL Assets]** .
 1. Blader naar specifieke elementen of doorzoek deze met behulp van trefwoorden op de zoekbalk.
-1. Selecteer de activa en klik **Bulk Meta-gegevens uitgeven** van het hoogste menu.
+1. Selecteer de elementen en klik op **[!UICONTROL Bulk Metadata Edit]** in het bovenste menu.
    ![ bulk-meta-gegeven-geef uit ](/help/assets/assets/bulk-metadata-edit1.png)
-1. Op de Edit meta-gegevenspagina, geef de volgende gebieden in het **paneel van Eigenschappen** uit:
-   * **Status:** selecteer een status voor de geselecteerde activa.
-   * **Vervaldatum:** plaats een datum waarna de activa ongeldig of nodig zijn.
-   * **Auteur:** specificeer de naam van de auteur.
-   * **Sleutelwoorden:** voeg specifieke termijnen of tekstkoorden toe die een informatie op hoog niveau over de activa verstrekken om hun ontdekkingsbaarheid te verbeteren. Voeg een trefwoord toe en druk op Enter of Return om nog een trefwoord aan de lijst toe te voegen.
-   * **Markeringen:** klik ![ etikettenpictogram ](/help/assets/assets/tags-icon.svg) om markeringen van de beschikbare opties te selecteren. Tags bieden specifiekere informatie over de elementen en verbeteren de ontdekkingsmogelijkheden ervan. De markeringen die reeds op de geselecteerde activa worden toegepast tonen in het **paneel van Eigenschappen**. Als u de relevante tags niet kunt vinden, maakt u deze en wijst u ze toe aan de geselecteerde elementen. Zie [ markeringen in de mening van Assets beheren ](/help/assets/tagging-management-assets-view.md) voor details bij het creëren van en het toewijzen van markeringen aan activa.
-   * Klik **sparen** om de bovengenoemde meta-gegevensupdates op de geselecteerde activa toe te passen. Nadat trefwoorden en tags zijn opgeslagen, worden deze toegevoegd terwijl de bijgewerkte gegevens voor Status, Vervaldatum en Auteur de bestaande gegevens overschrijven.
+1. Bewerk in het [!UICONTROL Edit metadata page] de volgende velden in het deelvenster **[!UICONTROL Properties]** :
+   * **[!UICONTROL Status]:** selecteer een status voor de geselecteerde elementen.
+   * **[!UICONTROL Expiration date]:** Stel een datum in waarna de elementen niet meer geldig of nodig zijn.
+   * **[!UICONTROL Author]:** specificeer de naam van de auteur.
+   * **[!UICONTROL Keywords]:** voeg specifieke termijnen of tekstkoorden toe die een informatie op hoog niveau over de activa verstrekken om hun ontdekkingsbaarheid te verbeteren. Voeg een sleutelwoord toe en druk **ga** of **terugkeer** in om een ander sleutelwoord aan de lijst toe te voegen.
+   * **[!UICONTROL Tags]:** klik ![ bulkmeta-gegevens uitgeven ](/help/assets/assets/tags-icon.svg) om markeringen van de beschikbare opties te selecteren. Tags bieden specifiekere informatie over de elementen en verbeteren de ontdekkingsmogelijkheden ervan. Labels die al zijn toegepast op de geselecteerde elementen, worden weergegeven in het deelvenster **[!UICONTROL Properties]** . Als u de relevante tags niet kunt vinden, maakt u deze en wijst u deze toe aan de geselecteerde elementen. Zie [ markeringen binnen beheren  [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) voor details bij het creëren van en het toewijzen van markeringen aan activa.
+   * Klik op **[!UICONTROL Save]** om de bovenstaande updates van metagegevens toe te passen op de geselecteerde elementen. Als de gegevens voor **[!UICONTROL Status]** , **[!UICONTROL Expiration date]** en **[!UICONTROL Author]** eenmaal zijn opgeslagen, worden **[!UICONTROL Keywords]** en **[!UICONTROL Tags]** toegevoegd en worden de bestaande gegevens door de bijgewerkte details voor  ,  en  genegeerd.
      ![ sparen-bulk-meta-gegeven-geef-eigenschappen uit ](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
      >
      >U kunt de metagegevens van 100 elementen tegelijk bewerken.
 
-Om de toegepaste meta-gegevensupdates aan een activa te zien, navigeer aan de pagina van activadetails (uitgezochte activa, en klik **Details**) en klik ![](/help/assets/assets/info-icon-solid-black.svg) om de meta-gegevens van de activa in het **paneel van de Informatie** te zien.
+Om de toegepaste meta-gegevensupdates aan een activa te zien, navigeer aan [!DNL asset details page] (uitgezochte activa, en klik **[!UICONTROL Details]**) en klik ![ bulkmeta-gegevens uitgeven ](/help/assets/assets/info-icon-solid-black.svg) om de meta-gegevens van de activa in het **[!UICONTROL Information]** paneel te zien.
 
 >[!NOTE]
 >
->**Status**, **Vervaldatum**, **Auteur**, **Trefwoorden** en **Markeringen** zijn standaardmeta-gegevenseigenschappen beschikbaar voor bulkmeta-gegevens het uitgeven, ongeacht omslag-specifieke meta-gegevens. Deze eigenschappen van metagegevens worden alleen weergegeven op de pagina met elementdetails als ze zijn opgenomen in het metagegevensformulier dat is toegepast op de map van het element. Als u deze standaardeigenschappen voor metagegevens niet kunt vinden op de pagina met elementdetails, bewerkt u het metagegevensformulier van de map met middelen om deze op te nemen. Zie [ Meta-gegevens in de Mening van Assets ](/help/assets/metadata-assets-view.md) leren om een meta-gegevensvorm tot stand te brengen of uit te geven en het op een omslag toe te passen.
+>**[!UICONTROL Status]** , **[!UICONTROL Expiration date]** , **[!UICONTROL Author]** , **[!UICONTROL Keywords]** en **[!UICONTROL Tags]** zijn standaardeigenschappen voor metagegevens die in bulk kunnen worden bewerkt, ongeacht de mapspecifieke metagegevens. Deze eigenschappen van metagegevens worden alleen weergegeven op de [!UICONTROL asset details page] als ze zijn opgenomen in het metagegevensformulier dat is toegepast op de map van het element. Als u deze standaardeigenschappen voor metagegevens niet kunt vinden op de [!UICONTROL asset details page] , bewerkt u het metagegevensformulier van de elementmap om deze op te nemen. Zie [ Meta-gegevens in  [!DNL Assets View]](/help/assets/metadata-assets-view.md) leren om een meta-gegevensvorm tot stand te brengen of uit te geven en het op een omslag toe te passen.
