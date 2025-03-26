@@ -3,9 +3,10 @@ title: Nota's van de versie voor 2025.1.0 versie van  [!DNL Adobe Experience Man
 description: Nota's van de versie voor 2025.1.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -80,17 +81,33 @@ De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in de AEM Assets-weergave {#new-features-assets}
+### Nieuwe functies in AEM Assets {#new-features-assets}
 
-**pas onderzoeksfilters** aan
+**Dynamische de leveringsrapporten van Media**
 
-Met de filters Aangepast zoeken kunt u nauwkeuriger en efficiënter relevante informatie zoeken. Het staat voor meer op maat gesneden onderzoeken, het filtreren gegevens toe volgens specifieke attributen zoals merk, product, categorie, of andere zeer belangrijke herkenningstekens. Hierdoor wordt de organisatie verbeterd, de tijd die nodig is om te controleren, verminderd door irrelevante resultaten en wordt de besluitvorming sneller. Het steunt ook scalability, aangezien de grote datasets gemakkelijker worden om te navigeren en te analyseren.
+Verkrijg leveringsinzichten voor activa die door Dynamische Media worden geleverd, met inbegrip van activa-vlakke levering tellingen, verwijzingsdetails, activa wegen in AEM Assets, en unieke activa IDs. Genereer rapporten voor alle elementen in de AEM Assets-opslagplaats of specifieke maphiërarchieën. Met deze inzichten kunt u de ROI van geleverde elementen meten, de kanaalprestaties evalueren en geïnformeerde beslissingen nemen voor middelenbeheer.
 
-![ filters van het douaneonderzoek ](/help/assets/assets/custom-search-filters.png)
+![ dynamische vertoningen ](/help/assets/assets/referrer.png)
 
-### Nieuwe functies in Content Hub {#new-features-content-hub}
+**Dynamische Multiaudio en titel van Media**
 
-Beschrijving
+[ Multi-caption en multi-audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/dynamic-media/video.md#about-msma) - u kunt veelvoudige titels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+
+**Dynamisch Aangepast Streamen over de steun van HTTP**
+
+Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media video levering (met CMAF ingeschakeld):
+
+* Adaptief streamen (DASH/HLS) zorgt voor een betere kijkervaring voor video&#39;s.
+
+* DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
+
+**Betrekkingen van Activa**
+
+De Assets-weergave biedt nu ondersteuning voor het weergeven en bewerken van relaties met middelen in een vereenvoudigd deelvenster met gegevens over elementen. Voeg eenvoudig relaties zoals Source en Derivative toe aan inhoud, zodat gebruikers op een effectievere manier relevante hoofdinhoud kunnen vinden.
+
+**opnieuw verwerken activa**
+
+De Assets-weergave ondersteunt nu het opwerken van middelen die beschikbaar zijn in een map. U kunt selecteren om of de **Volledige optie van het Proces** te gebruiken of geavanceerde opties, zoals, standaardvoorproefvertoningen, meta-gegevens, post-verwerkingswerkschema, en verwerkingsprofiel te gebruiken.
 
 ### Functies voor vroege toegang in AEM Assets {#early-access-features-assets}
 
