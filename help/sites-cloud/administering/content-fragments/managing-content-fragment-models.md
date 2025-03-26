@@ -4,9 +4,10 @@ description: Leer hoe u Modellen van inhoudsfragmenten beheert. Deze fungeren al
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 0%
 
 ---
@@ -49,7 +50,7 @@ Als een zeer snel overzicht, om met de Modellen van het Fragment van de Inhoud t
 
 U kunt het uiterst linkerpaneel van de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) gebruiken om **Modellen van het Fragment van de Inhoud te selecteren** als middeltype aan mening, doorbladeren en leiden:
 
-![ de console van Fragmenten van de Inhoud - navigatie ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![ de console van Fragmenten van de Inhoud - navigatie ](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Hiermee wordt de weergave voor Modellen van inhoudsfragmenten geopend:
 
@@ -62,7 +63,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
    * Ook uw IMS-organisatie tonen
    * Verstrekt diverse [ acties ](#actions-unselected)
 * Het linkerdeelvenster
-   * Toont alle [ configuraties ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) die als omslagen worden vermeld
+   * Toont de [ wegen aan alle configuraties ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) die als omslagen worden vermeld
    * Hier kunt u de mappenstructuur verbergen of weergeven
    * U kunt een specifieke map van de boomstructuur selecteren
    * Dit kan worden aangepast om geneste mappen (subconfiguraties) weer te geven
@@ -75,7 +76,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
          * [U kunt selecteren welke kolommen u wilt weergeven](#select-columns-console)
       * [ de Diverse gebieden van informatie ](#information-content-fragment-models) over een Model van het Fragment van de Inhoud verstrekken verbindingen; afhankelijk van het gebied, kunnen deze:
          * Open het juiste model in de editor
-         * Informatie weergeven over de configuratie
+         * Informatie weergeven over het pad naar de configuratie
          * Informatie weergeven over de status van het model
       * [ Bepaalde andere gebieden van informatie ](#information-content-fragments) over een Model van het Fragment van de Inhoud kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt:
          * Selecteer een waarde in de kolom en deze wordt direct toegepast als filter
@@ -96,8 +97,8 @@ Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van in
    * Verstrekt een verbinding om het model in de redacteur te openen.
 * Vergrendeld
    * Wanneer het model is vergrendeld, wordt dit aangegeven met een hangslotpictogram.
-* **Configuratie**
-   * Verstrekt een verbinding om de configuratie in de console te openen.
+* **Weg**
+   * Verstrekt de weg als verbinding om de configuratie in de console te openen.
 Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Status**
    * Alleen informatie.
@@ -123,7 +124,7 @@ Wanneer u een specifiek model selecteert, worden de eigenschappen van dat model 
 
 ![ de console van Fragmenten van de Inhoud - Informatie voor een geselecteerd Model van het Fragment van de Inhoud ](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Configuratie](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Weg](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
 * **Titel**
 * **Markeringen**
@@ -233,7 +234,7 @@ Bijvoorbeeld, selecteer **Toegelaten** in de **3} kolom van de Status {.** Wanne
    >* Als het [ gebruik van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/setup.md) is toegelaten
    >* als u de map hebt geselecteerd waarin u het model wilt maken.
 
-1. Selecteer de **Configuratie** en specificeer de **Naam**.
+1. Selecteer het **Weg** aan de configuratie en specificeer de **Naam**.
 
    >[!NOTE]
    >
