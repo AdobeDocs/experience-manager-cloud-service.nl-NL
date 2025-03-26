@@ -6,12 +6,13 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
 workflow-type: tm+mt
-source-wordcount: '5483'
+source-wordcount: '5862'
 ht-degree: 3%
 
 ---
+
 
 # Middelen zoeken in AEM {#search-assets-in-aem}
 
@@ -313,7 +314,7 @@ De zoekfunctie van [!DNL Experience Manager] ondersteunt het zoeken naar verzame
 
 ## Elementkiezer {#asset-picker}
 
-Met de functie Asset Selector (de functie voor middelenkiezer in eerdere versies van [!DNL Adobe Experience Manager] ) kunt u op een speciale manier zoeken naar de DAM-elementen en deze filteren en doorbladeren. Asset Selector is beschikbaar via `https://[aem_server]:[port]/aem/assetpicker.html` . U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
+[ de Selecteur van Activa van AEM ](/help/assets/overview-asset-selector.md) (genoemd activa plukker in vroegere versies van [!DNL Adobe Experience Manager]) laat u zoeken, filteren, en doorbladeren de activa DAM op een speciale manier. Asset Selector is beschikbaar via `https://[aem_server]:[port]/aem/assetpicker.html` . U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
 
 De elementenkiezer gebruikt het HTML5 `Window.postMessage` -bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. Deze functie werkt alleen in de modus Bladeren en alleen met de resultatenpagina van Omnsearch.
 
@@ -370,6 +371,8 @@ De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#
 
 * **het Indexeren**: Slechts worden de geïndexeerde meta-gegevens en de activa teruggekeerd in de onderzoeksresultaten. Voor betere dekking en betere prestaties, zorg behoorlijk indexeren en volg de beste praktijken. Zie [ indexerend ](#searchindex).
 
+Zie meer [ beste praktijken van het Onderzoek ](search-best-practices.md).
+
 ## Enkele voorbeelden ter illustratie van zoekopdrachten {#samples}
 
 Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen die de exacte woordgroep bevatten in de exacte volgorde die de gebruiker heeft opgegeven.
@@ -407,62 +410,56 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 *Cijfer: Gebruik van streepje aan onderzoek naar activa die geen uitgesloten sleutelwoord bevatten.*
 
-<!--
-## Configuration and administration tasks related to search functionality {#configadmin}
+## Configuratie- en beheertaken met betrekking tot zoekfunctionaliteit {#configadmin}
 
-### Search index configurations {#searchindex}
+### Indexconfiguraties zoeken {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
--->
+Asset Discovery is afhankelijk van indexering van de DAM-inhoud, inclusief de metagegevens. Snellere en nauwkeurige detectie van bedrijfsmiddelen is afhankelijk van geoptimaliseerde indexering en geschikte configuraties. Zie [ indexerend ](/help/operations/indexing.md).
 
-<!--
-### Visual or similarity search {#configvisualsearch}
+### Zoeken op visuele of gelijkenis {#configvisualsearch}
 
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
+Bij visueel zoeken worden slimme tags gebruikt. Voer de volgende stappen uit nadat u de functionaliteit voor slimme tags hebt geconfigureerd.
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. Voeg in [!DNL Experience Manager] CRXDE in `/oak:index/lucene` -knooppunt de volgende eigenschappen en waarden toe en sla de wijzigingen op.
 
-    * `costPerEntry` property of type `Double` with the value `10`.
+   * `costPerEntry` eigenschap van het type `Double` met de waarde `10` .
 
-    * `costPerExecution` property of type `Double` with the value `2`.
+   * `costPerExecution` eigenschap van het type `Double` met de waarde `2` .
 
-    * `refresh` property of type `Boolean` with the value `true`.
+   * `refresh` eigenschap van het type `Boolean` met de waarde `true` .
 
-   This configuration allows searches from the appropriate index.
+   Deze configuratie staat onderzoeken van de aangewezen index toe.
 
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
+1. Als u een Lucene-index wilt maken, maakt u in CRXDE op `/oak:index/damAssetLucene/indexRules/dam:Asset/properties` een knooppunt met de naam `imageFeatures` van type `nt-unstructured` . In `imageFeatures` node,
 
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
+   * Voeg de eigenschap `name` van het type `String` toe met de waarde `jcr:content/metadata/imageFeatures/haystack0` .
 
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
+   * Voeg `nodeScopeIndex` eigenschap van het type `Boolean` toe met de waarde van `true` .
 
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
+   * Voeg `propertyIndex` eigenschap van het type `Boolean` toe met de waarde van `true` .
 
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
+   * Voeg de eigenschap `useInSimilarity` van het type `Boolean` toe met de waarde `true` .
 
-   Save the changes.
+   Sla de wijzigingen op.
 
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
+1. Open `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voeg `similarityTags` eigenschap van het type `Boolean` toe met de waarde van `true` .
+1. Pas slimme tags toe op de elementen in de [!DNL Experience Manager] -opslagplaats. Zie [ hoe te om slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring) te vormen.
+1. In CRXDE stelt u in het knooppunt `/oak-index/damAssetLucene` de eigenschap `reindex` in op `true` . Sla de wijzigingen op.
+1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het knooppunt `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items` . Sla de wijzigingen op.
 
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
--->
+Voor verwante informatie, zie [ slimme markeringen in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) begrijpen en [ hoe te om slimme markeringen ](/help/assets/smart-tags.md) te beheren.
 
-<!--
-### Mandatory metadata {#mandatorymetadata}
+### Verplichte metagegevens {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+Zakelijke gebruikers, beheerders of DAM-bibliotheken kunnen bepaalde metagegevens definiëren als verplichte metagegevens die nodig zijn om de bedrijfsprocessen te laten werken. Om verschillende redenen ontbreken deze metagegevens mogelijk bij sommige elementen, zoals oudere elementen of elementen die in bulk zijn gemigreerd. Assets met ontbrekende of ongeldige metagegevens wordt gedetecteerd en gerapporteerd op basis van de eigenschap voor geïndexeerde metagegevens. Om het te vormen, zie [ verplichte meta-gegevens ](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
 
-### Modify search facets {#searchfacets}
+### Zoekfacetten wijzigen {#searchfacets}
 
-To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+[!DNL Experience Manager Assets] biedt zoekfacetten waarmee u de zoekresultaten kunt filteren, zodat de zoekresultaten sneller worden gevonden. Het deelvenster Filters bevat standaard enkele standaardfacetten. Beheerders kunnen het deelvenster Filters aanpassen om de standaardfacetten te wijzigen met behulp van de ingebouwde voorspelling. [!DNL Experience Manager] biedt een goede verzameling ingebouwde voorspellingen en een editor om de facetten aan te passen. Zie [ onderzoeksfacetten ](/help/assets/search-facets.md).
 
-### Extract text when uploading assets {#extracttextupload}
+### Tekst extraheren tijdens het uploaden van elementen {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
--->
+U kunt [!DNL Experience Manager] zo configureren dat de tekst uit de elementen wordt gehaald wanneer gebruikers elementen uploaden, zoals PSD- of PDF-bestanden. [!DNL Experience Manager] indexeert de geëxtraheerde tekst en helpt gebruikers deze elementen te doorzoeken op basis van de geëxtraheerde tekst. Zie [ activa ](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
 
 ### Aangepaste voorspelling van filterzoekresultaten {#custompredicates}
 
@@ -507,7 +504,7 @@ U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kun
 
 In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
-Voor beperkingen van soortfunctionaliteit, zie [ beperkingen ](#limitations).
+<!--For limitations of sort functionality, see [limitations](#limitations).-->
 
 ### Gedetailleerde informatie over een element controleren {#checkinfo}
 
@@ -523,13 +520,13 @@ Als u de opmerkingen over een asset of de versiegeschiedenis van een asset wilt 
 
 ### Gezochte middelen downloaden {#download}
 
-U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u regelmatige activa van omslagen downloadt. Selecteer een of meer elementen in de zoekresultaten en klik op **[!UICONTROL Download]** op de werkbalk.
+U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u regelmatige activa van omslagen downloadt. Selecteer een of meer elementen in de zoekresultaten en klik op **[!UICONTROL Download]** op de werkbalk. Zie [ downloadactiva ](/help/assets/download-assets-from-aem.md)
 
 ### Eigenschappen van metagegevens voor bulkupdates {#metadata-updates}
 
 Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden van meerdere elementen. Selecteer een of meer elementen in de zoekresultaten. Klik op **[!UICONTROL Properties]** op de werkbalk en werk de metagegevens naar wens bij. Klik op **[!UICONTROL Save and Close]** als u klaar bent. De eerder bestaande metagegevens in de bijgewerkte velden worden overschreven.
 
-Voor de activa die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om [ de meta-gegevens in bulk ](/help/assets/manage-metadata.md#manage-assets-metadata) bij te werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
+Voor de activa die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om [ de meta-gegevens in bulk ](/help/assets/bulk-metadata-edit.md) bij te werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
 
 ### Slimme verzamelingen {#smart-collections}
 
@@ -578,7 +575,6 @@ Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weerg
 
 * [ beste praktijken van het Onderzoek ](search-best-practices.md)
 * [Assets vertalen](translate-assets.md)
-* [ASSETS HTTP API](mac-api-assets.md)
 * [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
