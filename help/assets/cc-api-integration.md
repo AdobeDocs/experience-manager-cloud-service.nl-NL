@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -137,6 +137,8 @@ Als u de bestaande elementen wilt verwerken, selecteert u de elementen, selectee
 
 * [!DNL Experience Manager] beperkt de verwerking van middelen tot 300 verzoeken per minuut per milieu en 700 verzoeken per minuut per organisatie.
 * De bestandsgrootte is beperkt tot 4 GB voor API-bewerkingen van [!DNL Adobe Photoshop] en 1 GB voor [!DNL Adobe Lightroom] -bewerkingen.
+* PDF-uitvoeringen van Microsoft Office-documenten (&quot;.docx&quot;, &quot;.doc&quot;, &quot;.ppt&quot;, &quot;.pptx&quot;, &quot;.xls&quot;, &quot;.xlsx&quot;) zijn beperkt tot bestanden van 100 MB of minder.
+* Videotranscodering is beperkt tot invoerbestanden van 15 GB of minder.
 
 **zie ook**
 
