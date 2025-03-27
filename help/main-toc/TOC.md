@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
+source-git-commit: fc5983b42ee60971ace54a8fb54fdef29de5374d
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6108'
 ht-degree: 2%
 
 ---
@@ -1429,7 +1429,8 @@ ht-degree: 2%
    + [Asynchrone taken](/help/operations/asynchronous-jobs.md)
    + [Config Pipelines gebruiken](/help/operations/config-pipeline.md)
    + [Verwijdering van de generieke index van de lucene](/help/operations/removal-generic-lucene-index.md)
-   + [ Vraag en het Indexeren Beste Praktijken ](/help/operations/query-and-indexing-best-practices.md)
+   + [Aanbevolen werkwijzen voor query en indexering](/help/operations/query-and-indexing-best-practices.md)
+   + [ Controle van de Verbinding ](/help/operations/link-checker.md)
 + Compatibiliteit {#compliance}
    + [Naleving in AEM as a Cloud Service](/help/compliance/home.md)
    + Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}
