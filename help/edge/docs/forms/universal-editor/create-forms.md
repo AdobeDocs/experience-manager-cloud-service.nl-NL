@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
+source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dit artikel begeleidt u door het maken en ontwerpen van de zelfstandige formulie
 
 AEM Forms biedt een blok, het Adaptive Forms Block, waarmee u eenvoudig Edge Delivery Services Forms kunt maken om gegevens vast te leggen en op te slaan. U kunt [ een nieuw Project van AEM tot stand brengen dat met het AanpassingsBlok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand Project van de Plaats van AEM ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
 
-![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png)
+![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png) {width=50%}
 
 ## Voorwaarden
 
