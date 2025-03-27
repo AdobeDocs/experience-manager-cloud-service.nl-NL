@@ -3,9 +3,9 @@ title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -75,11 +75,7 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 | [ de container van de Speler voor de videoactiva ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Retourneert de spelercontainer voor het video-element. U kunt de speler insluiten in een iFrame HTML-element en de video afspelen. |
 | [ manifests van de Playback in het geselecteerde outputformaat ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Retourneert het afspeelmanifestbestand voor het opgegeven video-element in de geselecteerde uitvoerindeling. U moet een aangepaste speler maken die het afspeelmanifestbestand kan ophalen en de video kan afspelen door middel van HLS- of DASH-protocollen. |
 
-
->[!NOTE]
->
-* [ vooraf instelt van het Beeld, slimme beeldvorming, en extra beeldbepalingen ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/), zijn beschikbaar aan u als beperkte beschikbaarheidseigenschap. Om toegang te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-* Het slimme Gewas is niet beschikbaar met [ Assets Prime ](/help/assets/assets-ultimate-overview.md).
+Voor informatie over het beschikbare Dynamische dienstenaanbod van Media en hun mogelijkheden, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 ## Eindpunten van bezorgings-API&#39;s {#delivery-apis-endpoint}
 

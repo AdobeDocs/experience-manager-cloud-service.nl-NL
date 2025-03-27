@@ -2,9 +2,9 @@
 title: AEM Assets op afstand integreren met AEM Sites
 description: Leer hoe u AEM-sites kunt configureren en verbinden met Goedgekeurde AEM Assets.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -178,4 +178,4 @@ U wordt gevraagd u aan te melden.
 
 ### Externe middelen openen in Edge Delivery Services {#access-assets-eds}
 
-U kunt ook externe middelen openen in Edge Delivery Services. Voor meer informatie, zie [ Gebruikend activa van Assets as a Cloud Service die gebruikend Dynamische Media met mogelijkheden OpenAPI ](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi) wordt geleverd.
+U hebt toegang tot externe middelen tijdens het ontwerpen van inhoud in Microsoft Word, Google Docs of Universal Editor en publiceert de inhoud vervolgens naar Edge Delivery Services. U kunt Dynamic Media met OpenAPI ook gebruiken om door uw merk goedgekeurde middelen te leveren en vele andere voordelen van de toepassing te benutten. Voor meer informatie, zie [ AEM Assets terwijl het ontwerpen van inhoud voor Edge Delivery Services ](/help/assets/integrate-aem-assets-edge-delivery-services.md) integreren.
