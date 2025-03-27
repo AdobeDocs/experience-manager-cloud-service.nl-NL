@@ -4,9 +4,9 @@ description: Leer hoe u afzonderlijke sites kunt instellen voor uw testomgeving 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -141,3 +141,9 @@ Nu u alle noodzakelijke configuratieveranderingen hebt aangebracht, verifieer da
 1. Ga naar de nieuwe Edge Delivery Services-site voor die pagina op `https://main--wknd-prod--<your-github-org>.aem.page` .
 
 Als u de aangebrachte wijzigingen ziet, werkt de afzonderlijke installatie van de productiesite correct.
+
+## Gebruik {#usage}
+
+Zodra u uw project met repoless het opvoeren en productiemilieu&#39;s hebt gevormd, kunt u code voor hen onafhankelijk beheren. Het volgende diagram illustreert de verhouding van de inhoud in uw diverse milieu&#39;s in AEM, de plaatsen van Edge Delivery Services, en uw bewaarplaatsen GitHub.
+
+![ Illustratie van de milieu&#39;s van AEM en repoless prod/stadium milieu&#39;s ](assets/repoless/aem-edge-github.png)
