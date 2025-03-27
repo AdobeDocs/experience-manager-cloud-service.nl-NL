@@ -5,9 +5,9 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1320'
 ht-degree: 0%
 
 ---
@@ -132,19 +132,21 @@ Deze modellen van inhoudsfragmenten:
 
 ### Fragmentverwijzingen {#fragment-references}
 
-De **Verwijzing van het Fragment**:
+**Verwijzing van het fragment** en **Verwijzing UUID van het Fragment**:
 
-* Is een specifiek gegevenstype beschikbaar wanneer het bepalen van een Model van het Fragment van de Inhoud.
+* Zijn specifieke gegevenstypen beschikbaar wanneer u een inhoudsfragmentmodel definieert.
 * Verwijst naar een ander fragment, afhankelijk van een specifiek inhoudsfragmentmodel.
 * Hiermee kunt u gestructureerde gegevens maken en ophalen.
 
    * Wanneer bepaald als a **multifeed**, kunnen de veelvoudige sub-fragmenten (teruggewonnen) door het eerste fragment van verwijzingen worden voorzien.
 
-### JSON-voorvertoning {#json-preview}
+<!--
+### JSON Preview {#json-preview}
 
-Om u te helpen bij het ontwerpen en ontwikkelen van modellen van inhoudsfragmenten, kunt u een voorbeeld van JSON-uitvoer weergeven in de Content Fragment Editor.
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-](assets/cfm-model-json-preview.png " Voorproef JSON ")![
+![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}

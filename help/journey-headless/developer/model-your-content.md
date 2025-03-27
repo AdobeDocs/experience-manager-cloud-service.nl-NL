@@ -5,9 +5,9 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -184,9 +184,10 @@ AEM biedt u de volgende gegevenstypen om uw inhoud te modelleren:
 * Datum en tijd
 * Opsomming
 * Tags
-* Content Reference
-* Fragmentverwijzing
+* UUID fragmentverwijzing/fragmentverwijzing
+* Content Reference / Content Reference UUID
 * JSON-object
+* Tijdelijke aanduiding voor tab
 
 ### Verwijzingen en geneste inhoud {#references-nested-content}
 
@@ -213,7 +214,9 @@ Aan het begin moet u Modellen van inhoudsfragmenten voor uw site inschakelen. Di
 >
 >Zie Extra Middelen - de Fragmenten van de Inhoud in Browser van de Configuratie
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan onder **Hulpmiddelen** worden gedaan > **Algemeen** > **Modellen van het Fragment van de Inhoud**. Bijvoorbeeld:
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan allemaal worden gedaan in de Content Fragment Console. Van de console selecteer het paneel voor de Modellen van het Fragment van de Inhoud, navigeer aan de aangewezen omslag, dan gebruik **creeer** om de **Nieuwe dialoog van het Fragmentmodel van de Inhoud** te openen.
+
+Nadat u het model hebt gemaakt, kunt u het bewerken. Bijvoorbeeld:
 
 ![ Model van het Fragment van de Inhoud ](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ Inhoudsfragmenten zijn altijd gebaseerd op een inhoudsfragmentmodel. Het model b
 
 ### Het juiste model selecteren {#select-model}
 
-De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit doet u door Maken > Inhoudsfragment te kiezen in de gewenste map onder Assets > Bestanden. De wizard begeleidt u door de stappen.
-
-Een inhoudsfragment is gebaseerd op een specifiek inhoudsfragmentmodel dat u selecteert als de eerste stap van het ontwerpproces.
+De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit wordt gedaan gebruikend **creeer** van het **lusje van de Fragmenten van de Inhoud** van de Console van Fragmenten van de Inhoud.
 
 ### Gestructureerde inhoud maken en bewerken {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ Nadat u het fragment hebt gemaakt, kunt u het openen in de Inhoudsfragmenteditor
 
 Nadat u het juiste model hebt geselecteerd, wordt een inhoudsfragment geopend voor bewerking in de Inhoudsfragmenteditor:
 
-![ de Redacteur van het Fragment van de Inhoud ](assets/cfm-editor.png)
+![ de Redacteur van het Fragment van de Inhoud - Overzicht ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
