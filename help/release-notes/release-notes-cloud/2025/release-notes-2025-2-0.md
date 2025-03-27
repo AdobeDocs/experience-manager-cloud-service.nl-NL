@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2025.2.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2025.2.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 1964d4a40d1272baf661473641381ace900407d1
+source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2025.2.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2025.2.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.3.0) is 27 maart 2025. De volgende release met functies (2025.4.0) is gepland voor 24 april 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.2.0) is 4 maart 2025. De volgende release met functies (2025.3.0) is gepland voor 27 maart 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -44,20 +42,59 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
+
+### Nieuwe functies in AEM Sites {#new-features-sites}
+
+**het Fragment van de Inhoud auto-Tags**
+
+Bij het maken van inhoudsfragmenten is het nu mogelijk automatisch codes over te nemen die zijn toegewezen aan het inhoudsmodel. Dit maakt een krachtige automatische classificatie mogelijk van inhoud die is opgeslagen in inhoudsfragmenten.
+
+**Steun van UUID van het Fragment van de Inhoud**
+
+De UUID-ondersteuning voor inhoudsfragmenten is nu GA. De nieuwe capaciteit verandert niet het op weg-gebaseerde gedrag van verrichtingen binnen AEM, zoals beweging, anders noemen, rollout, waar de wegen automatisch worden aangepast, maar het kan externe consumptie van de Fragmenten van de Inhoud gemakkelijker en stabieler maken, vooral wanneer het gebruiken van de vragen van GraphQL die individuele fragmenten met vragen direct richten ByPath. Dergelijke query&#39;s kunnen worden onderbroken als een fragmentpad verandert. Wanneer het gebruiken van het nieuwe DoorId vraagtype, blijft de vraag nu stabiel aangezien UUID van een fragment niet in gevallen verandert waar de wegen dat doen.
+
+**Dynamische Media met steun OpenAPI in de Redacteur van het Fragment van de Inhoud en GraphQL**
+
+Assets die in verschillende AEM as a Cloud Service-programma&#39;s zijn opgeslagen dan Content Fragments en die zijn ingeschakeld met de nieuwe Dynamic Media met OpenAPI-mogelijkheid, kan nu worden gebruikt in Content Fragments. Met de afbeeldingskiezer in de nieuwe Content Fragment Editor kunt u nu &quot;externe&quot; opslagruimten selecteren als bron voor afbeeldingselementen waarnaar moet worden verwezen in het fragment. En bij levering van dergelijke inhoudsfragmenten met AEM GraphQL bevat het JSON-antwoord nu vereiste eigenschappen voor externe elementen (assetId, repositoryId), zodat clienttoepassingen respectievelijke dynamische media kunnen maken met OpenAPI-URL&#39;s om de afbeelding op te halen.
+
+**Uitvoer van de Redacteur van het Fragment van de Inhoud**
+
+We blijven de nieuwe op Spectrum UI gebaseerde Content Fragment Editor inschakelen in AEM as a Cloud Service. Nadat deze standaard is geworden voor alle Cloud Service Developer-omgevingen in november 2024, wordt deze standaard ingesteld voor alle Stage-omgevingen op 1 april 2025 en voor alle Production-omgevingen op 1 mei 2025. In alle gevallen hebben gebruikers nog steeds de mogelijkheid om terug te keren naar de traditionele Content Fragment Editor in AEM Touch UI.
+
+**Vertaling HTTP API**
+
+De AEM Translation HTTP REST API die al een tijdje in de eerste adoptermodus is. De documentatie kan [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) worden gevonden. Met de API kunnen de vereiste stappen in het vertaalbeheerproces voor inhoud in AEM worden geautomatiseerd.
+
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in dynamische media {#new-features-dynamic-media}
+### Nieuwe functies in AEM Assets {#new-features-assets}
 
-**Lange vormsteun voor video&#39;s die gebruikend Dynamische Media met Open API** worden geleverd
+**Dynamische media nieuwe het verpakken structuur**
 
-Dynamische media met OpenAPI ondersteunt nu lange formuliervideo&#39;s. De lange formuliervideo&#39;s kunnen ondersteuning bieden voor maximaal 50 GB en 2 uur.
+Er is nu een vernieuwde structuur voor het verpakken van dynamische media beschikbaar die beter aansluit bij de marktverwachtingen en het bijhouden van de ondersteuning. De nieuwe verpakkingsstructuur omvat:
 
-### Nieuwe functies in de Assets-weergave {#new-features-assets-view}
+* Dynamic Media Prime, die Dynamic Media met OpenAPI&#39;s en video bevat om de levering te verbeteren.
 
+* Dynamic Media Ultimate voegt bezorgings- en transformatiefuncties toe om aan zwaardere gebruiksvereisten te voldoen.
 
-**Steun voor wortelmarkeringen**
+U moet Assets as a Cloud Service Prime of Ultimate hebben om van de nieuwe verpakkingsstructuur te profiteren.
 
-AEM Assets ondersteunt nu het toewijzen van een tag-eigenschap in een metagegevensformulier aan aangepaste metagegevens. Als beheerder kunt u bovendien de beschikbaarheid van tags beperken tot gebruikers door de toegang te beperken tot een specifieke hoofdtag en de tags die onder de hoofdtag staan.
+**AI-Gegenereerde videotitels**
+
+Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige bijschriften te bieden. Bijschriften worden gegenereerd op basis van de originele audio, eventuele extra audiotracks of extra bijschriften worden weergegeven op het tabblad &quot;Bijschriften en audio&quot; op de pagina met video-eigenschappen. Met ondersteuning voor meer dan 60 talen kunt u bijschriften reviseren en een voorvertoning weergeven voordat u de video publiceert.
+
+**pas onderzoeksfilters** aan
+
+Met de filters Aangepast zoeken kunt u nauwkeuriger en efficiënter relevante informatie zoeken. Het staat voor meer op maat gesneden onderzoeken, het filtreren gegevens toe volgens specifieke attributen zoals merk, product, categorie, of andere zeer belangrijke herkenningstekens. Hierdoor wordt de organisatie verbeterd, de tijd die nodig is om te controleren, verminderd door irrelevante resultaten en wordt de besluitvorming sneller. Het steunt ook scalability, aangezien de grote datasets gemakkelijker worden om te navigeren en te analyseren.
+
+![ pas onderzoeksfilters ](/help/assets/assets/custom-search-filters.png) aan
+
+### Functies voor vroege toegang in Content Hub {#early-access-content-hub}
+
+In Content Hub kunt u nu naast de bestaande statische uitvoeringen ook dynamische en slimme uitsnijdingen weergeven en downloaden. Als beheerder van Content Hub, kunt u de beschikbaarheid van deze vertoningen aan gebruikers ook vormen gebruikend het Gebruikersinterface van de Configuratie.
+
+![ dynamische vertoningen ](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -87,15 +124,7 @@ Krachtigere Java 21 **runtime** zal automatisch worden opgesteld wanneer Java 17
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime** werd opgesteld aan uw ontwikkelings/RDE milieu&#39;s in Februari; het zal op uw stadium/productiemilieu&#39;s op **28e en 29e april** worden toegepast. Merk op dat **bouwend code** met Java 21 (of Java 17) onafhankelijk van Java 21 runtime is — u moet stappen uitdrukkelijk nemen om code met Java 21 (of Java 17) te bouwen.
-
-### AEM Log Forwarding to more destination - Beta Program {#log-forwarding-earlyadopter}
-
-In bèta kunt u nu AEM-logboeken doorsturen naar New Relic (met behulp van HTTPS), Amazon S3 en Sumo Logic. AEM-logbestanden (inclusief Apache/Dispatcher) worden wel ondersteund, maar geen CDN-logbestanden. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
-
-Hoewel de logboeken van Cloud Manager kunnen worden gedownload, vinden vele organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming te stromen. AEM biedt al ondersteuning voor het doorsturen van AEM- en CDN-logbestanden naar Azure Blob Storage, Datadog, HTTPS, Elasticsearch (en OpenSearch) en Splunk. Deze eigenschap wordt gevormd op een zelf-servermanier, en opgesteld gebruikend de Pijpleiding Config.
-
-Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/developing/introduction/log-forwarding.md).
+> In februari, werd Java 21 **runtime** opgesteld aan ontwikkelings/RDE milieu&#39;s (behalve die reeds gebouwd met Java 17 of 21, die reeds runtime Java 21 hebben). Java 21 wordt in april toegepast op stadium-/productieomgevingen.
 
 ### Edge Computing - Verzoek om feedback! {#edge-computing-feedback}
 
