@@ -5,9 +5,9 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,13 @@ Sommige verwijzingen hebben specifieke gegevenstypen (bijvoorbeeld Content Refer
 
 Content Reference do just that - they allow you to reference any other content. Hiermee wordt een browser geopend waarin u het inhoudsitem kunt selecteren.
 
+Er zijn twee typen:
+
+* **Verwijzing van de Inhoud**
+   * Geeft het pad naar de resource waarnaar wordt verwezen aan
+* **Verwijzing van de Inhoud (UUID)**
+   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
+
 ## Verwijzingen naar element/media {#assets-media-references}
 
 Assets (bijvoorbeeld, beelden of media) kan binnen een blok van de Tekst van verwijzingen worden voorzien door de **activa van het Tussenvoegsel** optie te gebruiken. Hiermee opent u een browser waarin u het element kunt selecteren.
@@ -75,6 +82,13 @@ Dat is alleen maar voor starters. Afhankelijk van de complexiteit kan een prijs 
 U kunt deze relaties vertegenwoordigen met fragmentverwijzingen, omdat deze worden begrepen door zowel u (de auteur) als de toepassingen zonder kop.
 
 Als auteur bent u niet verantwoordelijk voor het definiëren van deze relaties (dat wordt gedaan door de Content Architect bij het maken van het Content Fragment Model), maar u moet weten hoe u de verwijzingen herkent en bewerkt.
+
+Er zijn twee soorten:
+
+* **Verwijzing van het Fragment**
+   * Geeft het pad naar de resource waarnaar wordt verwezen aan
+* **Verwijzing van het Fragment (UUID)**
+   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
