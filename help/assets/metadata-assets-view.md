@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
@@ -217,6 +217,39 @@ Voer de onderstaande stappen uit om de koppelingscomponent te gebruiken in het m
    * Klik ![ exemplaarpictogram ](assets/do-not-localize/copy.svg) om URL te kopiëren.
    * Klik ![ uitgeven pictogram ](assets/do-not-localize/edit.svg) om URL uit te geven.
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
+
+
+### Werken met de component Tags in het metagegevensformulier {#tag-component-metadata-form}
+
+Het hoofdelement vertegenwoordigt de boomstructuur van de markeringen die u met de activa kunt associëren, die helpen om activa te identificeren die op de markering worden gebaseerd die aan het wordt toegewezen. Bovendien kunt u de toegang tot een specifieke taxonomie beperken terwijl het vormen van de meta-gegevensvorm in meta-gegevensredacteur.
+
+#### Configuratie van de component Tags {#tags-component-configuration}
+
+Configureer de tagcomponent door de volgende stappen uit te voeren:
+
+1. Ga naar de metagegevenseditor en navigeer naar **[!UICONTROL Tags]** en plaats deze op het canvas.
+1. Wijzig de naam van de component op het canvas. Hiervoor gaat u naar **[!UICONTROL Label]** onder [!UICONTROL Metadata property] in het deelvenster Instellingen en voegt u de tekst toe ter identificatie.
+1. Zoek onder [!UICONTROL Metadata property] in het deelvenster Instellingen naar de eigenschap metadata die u aan de component wilt toewijzen.
+1. Klik op **[!UICONTROL Restrict to specific taxonomy]** om het hoofdpad van de taxonomie te beperken. Blader hiertoe door de labels en kies de taxonomie naar het desbetreffende pad.
+1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
+
+   ![ configuratie van de markeringen van de Wortel ](assets/root-tag-config.png)
+
+1. [ wijs meta-gegevensvorm aan omslagen ](#assign-metadata-form-folder) toe.
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+Als u de geconfigureerde hoofdcodes wilt weergeven, gaat u naar de detailpagina van het element waar de koppeling tussen het metagegevensformulier en de basiscodes wordt uitgevoerd.
 
 ## Volgende stappen {#next-steps}
 
