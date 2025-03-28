@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -28,7 +28,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.4.0) is 24 april 2025. De volgende release met functies (2025.5.0) is gepland voor 29 mei 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.3.0) is 27 maart 2025. De volgende release met functies (2025.4.0) is gepland voor 24 april 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
