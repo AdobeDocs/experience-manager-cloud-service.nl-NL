@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 67b9a5f73f1f8c599e902a0ac0d8efbc614c7f75
+source-git-commit: 23ebeb259e5955bd51431844fd67db9b363034ea
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -16,61 +16,47 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release X {#X}
+## Release 19823 {#19823}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease X samengevat, die op 1 april 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19823.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 19823 samengevat, die op 4 maart 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19687.
 
-De activering van de 2025.4.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.3.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-X}
+### Verbeteringen {#enhancements-19823}
 
-FORMS-19068: Toegevoegde ondersteuning voor AEP Connector verzendt acties in Forms Manager APIs om de mogelijkheden van de de integratie van vormgegevens te verbeteren.
+* ASSETS-46491: OSGI-gebeurtenishandler voor statuswijziging van activaverwerking.
+* ASSETS-45613: Verzend unpublish-gebeurtenissen wanneer elementen worden verwijderd of verplaatst.
+* ASSETS-45131: Ondersteuning voor aangepaste tags in Content Hub.
 
-FORMS-18513: Implemented data tree transformation support in AEP Connector voor verbeterde wizardfunctionaliteit en mogelijkheden voor gegevensverwerking.
+### Opgeloste problemen {#fixed-issues-19823}
 
-FORMS-18432: Geïmplementeerde vorm-specifieke (op regex-Gebaseerde) cliënt-zijconfiguratie om selectieve prefill functionaliteit zonder op OSGI-niveau veranderingen toe te laten.
+* ASSETS-20433: Problemen met het opnemen van dynamische media met PDF&#39;s die met een wachtwoord zijn beveiligd.
+* ASSETS-24675: Afbeeldingsverwerkingsopties worden niet weergegeven voor afbeeldingsprofielen met alleen stalen.
+* ASSETS-41257: Vergelijking van de versie van middelen zorgt voor een onjuiste hoogte-breedteverhouding. Elementversies worden in onjuiste volgorde in de tijdlijn weergegeven.
+* ASSETS-44894: bladwijzers in de Assets-weergave kunnen mogelijk niet worden aangeklikt.
+* ASSETS-45015: Breedte en hoogte van slim uitsnijden ingesteld op nul als greep van slim uitsnijdmiddel niet wordt gevonden.
+* ASSETS-45192: Verlaag de pulsaanvraagfrequentie.
+* ASSETS-45724: Controleer of het uploaden naar de DM opnieuw wordt geprobeerd als de uploadtaak niet is toegewezen.
+* ASSETS-46425: Problemen met Adobe Stock-integratiezoekopdrachten.
+* ASSETS-27400: de generator van de de voorproef van de omslag zou kunnen proberen origineel te openen.
+* CQ-4358722: Andere landinstellingscodes verwerken in Java 11 en Java 17.
+* SITES-29369: Pagina gepubliceerd/Niet-gepubliceerde gebeurtenissen geactiveerd bij activering/deactivering van bedrijfsmiddelen.
+* SITES-24074: Verbeter toetsenbordtoegankelijkheid onder één shell.
+* SITES-28058: Assets-maptitel wordt niet overgedragen naar live kopie.
 
-FORMS-17551: ondersteuning voor Document of Record (DoR) toegevoegd voor integratie van SharePoint-lijsten.
-
-### Opgeloste problemen {#fixed-issues-X}
-
-FORMS-19028: vooraf ingevulde functionaliteit op de client verbreekt de afhandeling van gebeurtenissen, zodat Value commit en DOMContentLoaded gebeurtenissen niet correct worden uitgevoerd tijdens het laden van het formulier.
-
-FORMS-18360: Verbeterd SharePoint-lijstbereikbeheer voor teamsites in Forms Document Management om de gegevensorganisatie en toegangscontrole te verbeteren.
-
-FORMS-18325: Adobe Experience Platform (AEP) Cloud-configuratie toegevoegd om de integratie en verwerkingsmogelijkheden van formuliergegevens te verbeteren.
-
-FORMS-18213: Geïmplementeerde functionaliteit om uitgeschakelde velden te verbergen/uit te sluiten van Document of Record (DoR) om de documenthelderheid en gebruikerservaring te verbeteren.
-
-FORMS-18189: Gewijzigde afhandeling van aangepaste functies om foutregistratie voor lege clientbibliotheken te voorkomen en de weergave van fouten in de gebruikersinterface te verbeteren.
-
-FORMS-18426: De opzoekfunctionaliteit van de SharePoint-lijst mislukt wanneer lijstnamen speciale tekens bevatten (bijvoorbeeld &#39;-&#39;), wat van invloed is op de formulierintegratie met SharePoint-lijsten.
-
-FORMS-18375: Op basis van stichtingscomponenten gebaseerde formulieren selecteren ten onrechte recaptcha-configuraties in de map `conf/global` als er geen specifieke configuratiecontainer is geselecteerd.
-
-FORMS-18304: PDF/A-1b-documenten die validatie doorgeven in Acrobat en LiveCycle ES4, worden in AEM 6.5 Forms onjuist gemarkeerd als niet-compatibel vanwege apparaatafhankelijke kleurfouten.
-
-FORMS-18271: In de Forms Thema Editor worden niet-gelokaliseerde foutberichten weergegeven die van invloed zijn op de gebruikerservaring in de formulierconfiguratie en de aanpassing van thema&#39;s.
-
-FORMS-18068: Vette problemen met het renderen van tekst in Document of Record (DoR) voor groepen keuzerondjes en selectievakjes die RTF-velden gebruiken.
-
-FORMS-7016: De volgorde van toetsenbordfocus in de formuliereditor volgt de logische navigatie niet.
-
-FORMS-6950: Toegevoegde vereiste ARIA-rollen en -kenmerken aan de controlecomponenten van het dossiersysteem navigator om de toegankelijkheid van de schermlezer te verbeteren en te voldoen aan WCAG 4.1.2 Naam, Rol, Waarde (Niveau A) norm.
-
-### Bekende problemen {#known-issues-X}
+### Bekende problemen {#known-issues-19823}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-X}
+### Verouderde functies en API&#39;s {#deprecated-19823}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-X}
+### Beveiligingsproblemen {#security-19823}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt geïdentificeerde kwetsbaarheden van X en versterkt onze inzet voor robuuste systeembescherming.
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt zes geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-X}
+### Ingesloten technologieën {#embedded-tech-19823}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
