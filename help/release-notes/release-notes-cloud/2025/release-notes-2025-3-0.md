@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2025.3.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2025.3.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 4d7f72813a1806c7f20d5699f42170b9b49dbb3c
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2025.3.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2025.3.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.4.0) is 24 april 2025. De volgende release met functies (2025.5.0) is gepland voor 29 mei 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.3.0) is 27 maart 2025. De volgende release met functies (2025.4.0) is gepland voor 24 april 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
