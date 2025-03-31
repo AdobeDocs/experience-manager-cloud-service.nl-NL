@@ -2,9 +2,9 @@
 title: Groepsmigratie
 description: Overzicht van groepsmigratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De meeste gemigreerde groepen zijn geconfigureerd om te worden beheerd door IMS.
 
 Merk op dat gemigreerde groepen niet langer als &quot;lokale groepen&quot; van AEM worden beschouwd; het zijn groepen die klaar zijn voor IMS in AEM, hoewel zij misschien nog niet in IMS bestaan.  Ze moeten afzonderlijk opnieuw worden gemaakt in IMS, zodat ze kunnen worden gesynchroniseerd tussen AEM en IMS.  Groepen kunnen in IMS worden gemaakt via onder andere Admin Console, afzonderlijk of bulksgewijs.  Zie [ gebruikersgroepen ](https://helpx.adobe.com/enterprise/using/user-groups.html) voor details over het creëren van groepen individueel of in bulk op Admin Console leiden.
 
-De uitzondering op deze IMS-configuratie geldt voor groepen die zijn gemaakt met Assets Collections. Wanneer een inzameling op AEM wordt gecreeerd, worden de groepen gecreeerd voor toegang tot die inzameling; dergelijke groepen worden gemigreerd naar het wolkensysteem, maar zij worden niet gevormd om door IMS te worden beheerd.  Als u IMS-gebruikers aan deze groepen wilt toevoegen, moeten ze op de pagina Groepseigenschappen in de Assets-gebruikersinterface worden toegevoegd, afzonderlijk of gezamenlijk als onderdeel van een andere IMS-groep.
+De uitzondering op deze configuratie IMS is met groepen die door de Inzamelingen van Assets en PrivéOmslagen worden gecreeerd. Wanneer op AEM een verzameling of een privémap wordt gemaakt, worden groepen gemaakt voor toegang tot die inhoud. Dergelijke groepen worden naar het cloudsysteem gemigreerd, maar ze zijn niet geconfigureerd voor beheer door IMS.  Als u IMS-gebruikers aan deze groepen wilt toevoegen, moeten ze op de pagina Groepseigenschappen in de Assets-gebruikersinterface worden toegevoegd, afzonderlijk of gezamenlijk als onderdeel van een andere IMS-groep.
 
 
 ## Migratie buiten groep uitschakelen {#group-migration-option}
