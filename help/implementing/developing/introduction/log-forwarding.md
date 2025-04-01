@@ -4,9 +4,9 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM-logboeken (inclusief Apache/Dispatcher) en CDN-logbestanden doorsturen naar de bijbehorende logbestemming. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
-* Amazon S3 (persoonlijke bètaversie, zie [^1 ])
+* Amazon S3 (private bèta, zie onderstaande opmerking)
 * Azure Blob Storage
 * Datahond
 * Elasticsearch of OpenSearch
 * HTTPS
 * Splunk
-* Sumo Logic (persoonlijke bèta, zie [^1 ])
+* Sumo Logic (persoonlijke bèta, zie onderstaande opmerking)
 
 Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en kan via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
@@ -33,7 +33,9 @@ De AEM- en Apache-/Dispatcher-logboeken kunnen worden gerouteerd via de AEM-infr
 
 Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbestemming worden verzonden als deel van het I/O gebruik van het Netwerk van uw organisatie worden beschouwd.
 
-[^1 ] Amazon S3 en Sumo Logic zijn in Private Beta en ondersteunen alleen AEM-logbestanden (inclusief Apache/Dispatcher).  New Relic via HTTPS wordt ook in persoonlijke bèta uitgevoerd. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
+>[!NOTE]
+>
+>Amazon S3 en Sumo Logic bevinden zich in Private Beta en ondersteunen alleen AEM logs (inclusief Apache/Dispatcher).  New Relic via HTTPS wordt ook in persoonlijke bèta uitgevoerd. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
@@ -192,6 +194,7 @@ De configuraties voor de gesteunde registrerenbestemmingen worden hieronder verm
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >Logboeken die periodiek aan S3, om de 10 minuten voor elk type van logboekdossier worden geschreven.  Dit kan resulteren in een aanvankelijke vertraging voor logboeken die aan S3 worden geschreven zodra de eigenschap wordt van een knevel voorzien.  Meer informatie over waarom dit gedrag bestaat kan [ hier ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs) worden gevonden.
 
@@ -384,7 +387,7 @@ Overwegingen:
 
 E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
->
+>[!NOTE]
 >New Relic biedt regiospecifieke eindpunten op basis van waar uw New Relic-account is ingericht.  Zie [ hier ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) voor de documentatie van New Relic.
 
 #### HTTPS CDN-logbestanden {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > U hebt een abonnement op Sumo Logic Enterprise nodig om de functionaliteit van het veld &quot;index&quot; te kunnen gebruiken.  Bij niet-Enterprise-abonnementen worden hun logbestanden standaard naar de `sumologic_default` -partitie gerouteerd.  Zie de [ Documentatie van de Partitionering van de Logica Sumo ](https://help.sumologic.com/docs/search/optimize-search-partitions/) voor meer informatie.
 
 ## Indelingen voor logbestandvermelding {#log-formats}
