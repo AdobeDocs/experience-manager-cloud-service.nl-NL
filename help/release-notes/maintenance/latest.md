@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 23ebeb259e5955bd51431844fd67db9b363034ea
+source-git-commit: cd19612597d8f1841062bbc8de253ee7271adce3
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 1%
+source-wordcount: '1468'
+ht-degree: 0%
 
 ---
 
@@ -16,51 +16,136 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 19823 {#19823}
+## Release 2013 {#20133}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 19823 samengevat, die op 4 maart 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19687.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 2013 samengevat, die op 1 april 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 19823.
 
-De activering van de 2025.3.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.4.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-19823}
+### Verbeteringen {#enhancements-20133}
 
-* ASSETS-46491: OSGI-gebeurtenishandler voor statuswijziging van activaverwerking.
-* ASSETS-45613: Verzend unpublish-gebeurtenissen wanneer elementen worden verwijderd of verplaatst.
-* ASSETS-45131: Ondersteuning voor aangepaste tags in Content Hub.
+* ASSETS-47850: Beperk het toevoegen van configuraties Scene7 als AEM CS ES wordt toegelaten.
+* CQ-4359547: Volledige verwijdering van Guava uit https://git.corp.adobe.com/target-sdk/tsdk-core-opslagplaats.
+* FORMS-17551: ondersteuning voor Document of Record (DoR) toegevoegd voor integratie van SharePoint-lijsten.
+* FORMS-18432: Geïmplementeerde vorm-specifieke (op regex-Gebaseerde) cliënt-zijconfiguratie om selectieve prefill functionaliteit zonder op OSGI-niveau veranderingen toe te laten.
+* FORMS-18513: Implemented data tree transformation support in AEP Connector voor verbeterde wizardfunctionaliteit en mogelijkheden voor gegevensverwerking.
+* FORMS-19068: Toegevoegde ondersteuning voor AEP Connector verzendt acties in Forms Manager APIs om de mogelijkheden van de de integratie van vormgegevens te verbeteren.
+* GRANITE-57717: Update client bundle in AEM.
+* SITES-10469: AdapterFactory zou altijd de zelfde instantie moeten terugkeren PageManager.
+* SITES-25130: Release Core Components 2.28.0.
+* SITES-25433: Ondersteuning voor volledige paginerendering bij vergelijking van oude versies.
+* SITES-25923: LinkInfoStorageImpl kan blokkeren wanneer geen urls meer worden opgeslagen.
+* SITES-26208: Als u een inhoudsfragment via de workflow verwijdert, kan nu de optie voor het bijwerken van bronnen die naar bronnen verwijzen, worden aangepast door het zojuist verwijderde fragment te verwijderen.
+* SITES-26400: Lagere barrière om de Dienst van Edge Delivery door te verbeteren, te vereenvoudigen, en te verharden Crosswalk
+* SITES-26500: De optie voor het verplaatsen van inhoudsfragmenten via workflow toevoegen `move-fragments` .
+* SITES-26711: Uitroltrigger - Koppelingen worden niet bijgewerkt.
+* SITES-27583: Ervaar Fragments die de Geschiedenis van de Versie na wordt bewogen verliezen.
+* SITES-27618: Het zoeken van verwijzingen naar een fragment op pagina&#39;s retourneert niet alle resultaten.
+* SITES-27781: Implemented model-level bevestiging voor verwijzingen van het Fragment van de Inhoud, die bevestiging van referenced fragmenten tegen hun modelbeperkingen en vereiste markering toestaat.
+* SITES-27782: Bouw specifieke Uitgever &amp; de Agent van de Abonnee van Crosswalk.
+* SITES-27784: Werk SQL query generation bij om PATH functie te gebruiken in plaats van `jcr:path`.
+* SITES-28040: Adobe Target ExperienceFragmentsReplicationListener is verbroken.
+* SITES-28051: Krijg de toestemmingen van de huidige gebruiker op een Fragment van de Inhoud: GET /cf/fragments/{fragmentId}/toestemmingen.
+* SITES-28190: Opstelling voor de Test van de Integratie van de Voorproef.
+* SITES-28227: Bij het toevoegen van elementen als verwijzingen naar een fragment, wordt gecontroleerd of het element bestaat.
+* SITES-28248: De Gebeurtenissen van de Plaatsen van de knevel die op de config OSGI worden gebaseerd.
+* SITES-28255: Volledige naam ontbreekt in alle drie de controle-eigenschappen: gemaakt, gewijzigd, gepubliceerd.
+* SITES-28390: PageImpl: Optimize hasContent().
+* SITES-28404: Het schrappen van pagina&#39;s op auteur zou hen van de Dienst van de Voorproef moeten unpublish.
+* SITES-28446: Twee nieuwe velden toegevoegd die niet zichtbaar waren in de reactie - de plaatsaanduiding in NumberModelField en toegestane modellen van LongTextModelField.
+* SITES-28536: `RENAME` -eindpunt maken voor Content Fragments.
+* SITES-28537: De optie voor het wijzigen van de naam van inhoudsfragmenten via workflow toevoegen - `rename-fragments` .
+* SITES-28538: verwijzingen moeten opnieuw worden gepubliceerd om geldige inhoud op auteur en publicatie te behouden.
+* SITES-28549: Maak `/cf/domains` aan om de domein-id te retourneren op basis van de AEM-laag.
+* SITES-29026: Er is een optionele parameter toegevoegd waarmee de landinstelling van het inhoudsfragment wordt opgegeven met een taal- en landcode.
+* SITES-29031: Verbeterde logica voor PATCH-ing-fragmenten, waardoor u betere prestaties krijgt.
+* SITES-29169: Alle gepubliceerde bronnen (ongeacht of ze zich in de status GEPUBLICEERD of GEWIJZIGD bevinden) worden opnieuw gepubliceerd als ze verwijzen naar een bron die is verplaatst, hernoemd of verwijderd.
+* SITES-29376: Add Code toggle to validation of published resource delete.
+* SITES-29417: Werk /libs/cq/Page/proxy.jsp bij om een verzoek door te sturen naar jcr:content node in plaats van inclusief.
+* SITES-2947: Creëer/wijzig kibana visualisatie om te vergelijken publiceren rasp.
+* SITES-29733: Verbeterde zoekprestaties van het model door tags van inhoudsfragmenten.
+* SITES-8316: Content Policies: Cache the ContentPolicyManager.
 
-### Opgeloste problemen {#fixed-issues-19823}
+### Opgeloste problemen {#fixed-issues-20133}
 
-* ASSETS-20433: Problemen met het opnemen van dynamische media met PDF&#39;s die met een wachtwoord zijn beveiligd.
-* ASSETS-24675: Afbeeldingsverwerkingsopties worden niet weergegeven voor afbeeldingsprofielen met alleen stalen.
-* ASSETS-41257: Vergelijking van de versie van middelen zorgt voor een onjuiste hoogte-breedteverhouding. Elementversies worden in onjuiste volgorde in de tijdlijn weergegeven.
-* ASSETS-44894: bladwijzers in de Assets-weergave kunnen mogelijk niet worden aangeklikt.
-* ASSETS-45015: Breedte en hoogte van slim uitsnijden ingesteld op nul als greep van slim uitsnijdmiddel niet wordt gevonden.
-* ASSETS-45192: Verlaag de pulsaanvraagfrequentie.
-* ASSETS-45724: Controleer of het uploaden naar de DM opnieuw wordt geprobeerd als de uploadtaak niet is toegewezen.
-* ASSETS-46425: Problemen met Adobe Stock-integratiezoekopdrachten.
-* ASSETS-27400: de generator van de de voorproef van de omslag zou kunnen proberen origineel te openen.
-* CQ-4358722: Andere landinstellingscodes verwerken in Java 11 en Java 17.
-* SITES-29369: Pagina gepubliceerd/Niet-gepubliceerde gebeurtenissen geactiveerd bij activering/deactivering van bedrijfsmiddelen.
-* SITES-24074: Verbeter toetsenbordtoegankelijkheid onder één shell.
-* SITES-28058: Assets-maptitel wordt niet overgedragen naar live kopie.
+* CQ-4358378: Vergunningsfouten afhandelen in de uitvoering van de vertaling.
+* CQ-4359263: Geen Bericht die in dialoog wordt getoond wanneer de Baan wordt voltooid.
+* CQ-4359386: Kan i18n-woordenboek niet toevoegen aan vertaalproject in AEMaaCS.
+* FORMS-18068: Vette problemen met het renderen van tekst in Document of Record (DoR) voor groepen keuzerondjes en selectievakjes die RTF-velden gebruiken.
+* FORMS-18189: Gewijzigde afhandeling van aangepaste functies om foutregistratie voor lege clientbibliotheken te voorkomen en de weergave van fouten in de gebruikersinterface te verbeteren.
+* FORMS-18213: Geïmplementeerde functionaliteit om uitgeschakelde velden te verbergen/uit te sluiten van Document of Record (DoR) om de documenthelderheid en gebruikerservaring te verbeteren.
+* FORMS-18271: In de Forms Thema Editor worden niet-gelokaliseerde foutberichten weergegeven die van invloed zijn op de gebruikerservaring in de formulierconfiguratie en de aanpassing van thema&#39;s.
+* FORMS-18304: PDF/A-1b-documenten die validatie doorgeven in Acrobat en LiveCycle ES4, worden in AEM 6.5 Forms onjuist gemarkeerd als niet-compatibel vanwege apparaatafhankelijke kleurfouten.
+* FORMS-18325: Adobe Experience Platform (AEP) Cloud-configuratie toegevoegd om de integratie en verwerkingsmogelijkheden van formuliergegevens te verbeteren.
+* FORMS-18360: Verbeterd SharePoint-lijstbereikbeheer voor teamsites in Forms Document Management om de gegevensorganisatie en toegangscontrole te verbeteren.
+* FORMS-18375: Op basis van stichtingscomponenten gebaseerde formulieren selecteren ten onrechte recaptcha-configuraties in de map `conf/global` als er geen specifieke configuratiecontainer is geselecteerd.
+* FORMS-18426: De opzoekfunctionaliteit van de SharePoint-lijst mislukt wanneer lijstnamen speciale tekens bevatten (bijvoorbeeld &#39;-&#39;), wat van invloed is op de formulierintegratie met SharePoint-lijsten.
+* FORMS-19028: vooraf ingevulde functionaliteit op de client verbreekt de afhandeling van gebeurtenissen, zodat Value commit en DOMContentLoaded gebeurtenissen niet correct worden uitgevoerd tijdens het laden van het formulier.
+* FORMS-6950: Toegevoegde vereiste ARIA-rollen en -kenmerken aan de controlecomponenten van het dossiersysteem navigator om de toegankelijkheid van de schermlezer te verbeteren en te voldoen aan WCAG 4.1.2 Naam, Rol, Waarde (Niveau A) norm.
+* FORMS-7016: De volgorde van toetsenbordfocus in de formuliereditor volgt de logische navigatie niet.
+* SITES-1960: Verbeterde prestaties van JSON-voorvertoningsbewerking van Content Fragment Editor.
+* SITES-24308: De horizontale schuifbalk wordt weergegeven wanneer het formaat van de inhoud wordt gewijzigd in 400%.
+* SITES-24493: Interactief element heeft niet de vereiste rol.
+* SITES-24669: Verwijzingen naar Rail Window Splitter zijn niet toegankelijk via het toetsenbord.
+* SITES-26881: AEMaaCS Accessibility Bug - Onjuiste rol is opgegeven voor het pictogram Drie punten die naast het invoerveld voor opmerkingen staan.
+* SITES-26956: Follow-up op SITES-24920 Kan pagina niet verplaatsen in productieomgeving.
+* SITES-27707: De lijst met middelen van de Finder mislukt vanwege problemen met elementnamen (6.5 SP22-regressie).
+* SITES-27757: Het pictogram herschrijft geen nauwkeurige met helix-html-pijpleiding.
+* SITES-27780: Onverwachte &lt;br>-tag wordt weergegeven in RTE met StandaardPasteMode met normale tekst op SP22.
+* SITES-27958: Linkchecker meldt &#39;Deze sessie is afgesloten&#39; fouten.
+* SITES-28149: Custom ExperienceFragmentLinkRewriterProvider not Trigdered during XF Export to Target.
+* SITES-28449: Bug met interface voor werkstroomwidget - Inclusief kinderen die niet alle onderliggende pagina&#39;s in AEM weergeven.
+* SITES-28456: Ontbrekend bericht op UI in geval van het bewaren van onjuiste voortgeduurde vraag in GrahiQL Ontdekkingsreiziger (follow up-SITES-28313).
+* SITES-28464: Werk fragmentquery bij om opgemaakte datums met milliseconden te gebruiken.
+* SITES-28486: Inplace editing in de nieuwe Inhoudsfragmenteditor leidt niet om naar de oude editor.
+* SITES-28570: Metagegevens over ontbrekende elementen worden op de juiste wijze verwerkt door de GraphQL van Content Fragment.
+* SITES-28580: Klassieke Finder van afbeeldingsmiddelen verbroken na SP22-upgrade.
+* SITES-28600: Launches - Content duplicate.
+* SITES-28668: Kan Starten met LaunchPromotionParameters niet bevorderen.
+* SITES-28820: Start twee keer voorvoegsel toegevoegd binnen nieuwe variatie die is gemaakt op rebase.
+* SITES-28877: UE URL Service die Exception werpt wanneer het lokale externalizer-eindpunt niet is gedefinieerd.
+* SITES-28956: Tijdens het verwijderen van tags wordt een waarschuwing weergegeven als de tag wordt aangeduid door Content Fragments.
+* SITES-29208: verwijzingen en variaties worden correct geretourneerd in situaties waarin een verwijzingsveld een ongeldig pad bevat.
+* SITES-29363: De knop Live kopie herstellen werkt niet voor een geneste inhoudshiërarchie voor live kopieën.
+* SITES-29369: Assets Event Issue in AIO | Onjuist Triggerende Pagina gepubliceerde/niet-gepubliceerde gebeurtenissen.
+* SITES-29972: De acties van de Schrapping en van de Naam veranderen veroorzaken soms onwaar werkschemacommentaar.
 
-### Bekende problemen {#known-issues-19823}
+### Bekende problemen {#known-issues-20133}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-19823}
+### Verouderde functies en API&#39;s {#deprecated-20133}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-19823}
+#### Wijzigingen in de synchronisatie van gebruikersgroepen en productprofielen {#changes-user-groups}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt zes geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+Bij het gebruik van de Adobe Admin Console voor machtigingsbeheer MOGEN de volgende groepen NIET worden gebruikt, aangezien zij niet meer worden gesynchroniseerd met AEM:
+* AEM-groepen die eindigen met _GROUP_NAME_SUFFIX.
+* Productprofielen uit andere omgevingen, programma&#39;s of producten.
 
-### Ingesloten technologieën {#embedded-tech-19823}
+Voor meer details, gelieve te controleren [ Veranderingen in de Synchronisatie van de Groep van de Gebruiker en van het Profiel van het Product ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+
+#### Verdringing van de Redacteur van het KUUROORD {#deprecate-spa-editor}
+
+[ de Redacteur van het KUUROORD ](/help/implementing/developing/hybrid/introduction.md) is afgekeurd voor nieuwe projecten die met versie 2025.4.0 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
+
+De belangrijkste editors voor het beheer van inhoud zonder kop in AEM hebben de volgende voorkeur:
+
+* [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor het visuele uitgeven.
+* [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven.
+
+De verdere details op deze afschrijving kunnen in het document [ worden gevonden de Afschrijving van de Redacteur van het KUUROORD.](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
+
+### Beveiligingsproblemen {#security-20133}
+
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 34 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+
+### Ingesloten technologieën {#embedded-tech-20133}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
 | AEM Oak | 1 76,0 | [ Oak API 1.76.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.76.0/index.html) |
 | AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTML | 1.4.26-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
-| AEM-kerncomponenten | 2 27,0 | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-kerncomponenten | 2.28.0. | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
