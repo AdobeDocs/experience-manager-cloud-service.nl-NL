@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
          * Informatie weergeven over de status van het model
       * [ Bepaalde andere gebieden van informatie ](#information-content-fragments) over een Model van het Fragment van de Inhoud kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt:
          * Selecteer een waarde in de kolom en deze wordt direct toegepast als filter
-         * Het snelle filtreren wordt gesteund voor **Gewijzigd door**, **Gepubliceerd door** en **Status** column.s
+         * Het snelle filtreren wordt gesteund voor **Gewijzigd door**, **Gepubliceerd door** en **Status** kolommen.
       * Als u de muisaanwijzer op de kolomkoppen gebruikt, worden een vervolgkeuzelijst met handelingen en schuifregelaars voor de breedte weergegeven. Met deze opties kunt u:
          * Sorteren - selecteer de gewenste actie voor oplopend of aflopend
 Hiermee wordt de hele tabel gesorteerd op basis van die kolom. Sorteren is alleen beschikbaar voor de desbetreffende kolommen.
@@ -95,7 +95,7 @@ Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van in
 
 * **Naam**
    * Verstrekt een verbinding om het model in de redacteur te openen.
-* Vergrendeld
+* **Vergrendeld** (het pictogram van het Padlock)
    * Wanneer het model is vergrendeld, wordt dit aangegeven met een hangslotpictogram.
 * **Weg**
    * Verstrekt de weg als verbinding om de configuratie in de console te openen.
