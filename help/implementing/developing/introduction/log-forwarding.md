@@ -4,9 +4,9 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
@@ -15,21 +15,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het door:sturen van het logboek wordt nu gevormd op zelfbediende manier, verschillend van de erfenismethode, die het voorleggen van een kaartje van de Steun van de Adobe vereiste. Zie [ het Migreren ](#legacy-migration) sectie als uw logboek het door:sturen opstelling door Adobe was.
+>Logboek doorsturen is nu geconfigureerd op zelfstandige wijze, anders dan de oudere methode, waarvoor een Adobe-ondersteuningsticket moest worden ingediend. Zie [ het Migreren ](#legacy-migration) sectie als uw logboek het door:sturen opstelling door Adobe was.
 
-Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM logboeken (inclusief Apache/Dispatcher) en CDN-logboeken hebben die naar de gekoppelde logbestemming worden doorgestuurd. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
+Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM-logboeken (inclusief Apache/Dispatcher) en CDN-logbestanden doorsturen naar de bijbehorende logbestemming. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
+* Amazon S3 (persoonlijke bètaversie, zie [^1 ])
 * Azure Blob Storage
 * Datahond
 * Elasticsearch of OpenSearch
 * HTTPS
 * Splunk
+* Sumo Logic (persoonlijke bèta, zie [^1 ])
 
 Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en kan via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
-Er is een optie voor de logboeken van de AEM en van Apache/Dispatcher om door AEM geavanceerde voorzien van een netwerkinfrastructuur, zoals specifieke uitgang IP worden verpletterd.
+De AEM- en Apache-/Dispatcher-logboeken kunnen worden gerouteerd via de AEM-infrastructuur voor geavanceerde netwerken, zoals speciale IP-adressen.
 
 Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbestemming worden verzonden als deel van het I/O gebruik van het Netwerk van uw organisatie worden beschouwd.
+
+[^1 ] Amazon S3 en Sumo Logic zijn in Private Beta en ondersteunen alleen AEM-logbestanden (inclusief Apache/Dispatcher).  New Relic via HTTPS wordt ook in persoonlijke bèta uitgevoerd. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
@@ -39,7 +43,7 @@ Dit artikel is als volgt geordend:
 * Vervoer &amp; Geavanceerde Voorzien van een netwerk - de overweging zou aan netwerkopstelling moeten worden gegeven alvorens registrerenconfiguratie te creëren
 * Logboekdoelconfiguraties - elke bestemming heeft een lichtjes verschillende indeling
 * Indelingen voor logberichten - informatie over de indelingen van logberichten
-* Het migreren van erfenislogboek door:sturen - hoe te zich van logboek door:sturen eerder opstelling door Adobe aan de zelf-serverbenadering te bewegen
+* Het migreren van erfenislogboek door:sturen - hoe te zich van logboek door:sturen eerder opstelling door Adobe aan de zelfserverbenadering
 
 ## Instellen {#setup}
 
@@ -67,7 +71,7 @@ Dit artikel is als volgt geordend:
 
 Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}` ) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan, verklaar hen als de Variabelen van het Milieu van Cloud Manager [ Geheime ](/help/operations/config-pipeline.md#secret-env-vars). Zorg ervoor om **allen** als dropdown waarde voor de Dienst Toegepaste gebied te selecteren, zodat kunnen de logboeken aan auteur door:sturen, publiceren, en voorproefrijen.
 
-Het is mogelijk om verschillende waarden tussen CDN- logboeken en AEM (met inbegrip van Apache/Dispatcher) te plaatsen, door extra **cdn** en/of **a** blok na het **gebrek** blok te omvatten, waar de eigenschappen die in het **standaard** blok worden bepaald kunnen met voeten treden; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
+Het is mogelijk om verschillende waarden tussen de logboeken van CDN en van AEM (met inbegrip van Apache/Dispatcher) te plaatsen, door extra **cdn** en/of **a** blok na het **gebrek** blok te omvatten, waar de eigenschappen die in het **standaard** blok worden bepaald kunnen met voeten treden; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
 
 ```yaml
    kind: "LogForwarding"
@@ -87,7 +91,7 @@ Het is mogelijk om verschillende waarden tussen CDN- logboeken en AEM (met inbeg
          index: "AEMaaCS_CDN"   
 ```
 
-Een ander scenario moet of het door:sturen van de logboeken onbruikbaar maken CDN of AEM (met inbegrip van Apache/Dispatcher). Als u bijvoorbeeld alleen de CDN-logboeken wilt doorsturen, kunt u het volgende configureren:
+Een ander scenario is of het door:sturen van de logboeken CDN of AEM (met inbegrip van Apache/Dispatcher) onbruikbaar te maken. Als u bijvoorbeeld alleen de CDN-logboeken wilt doorsturen, kunt u het volgende configureren:
 
 ```yaml
    kind: "LogForwarding"
@@ -156,7 +160,7 @@ table, th, td {
 >
 > De geavanceerde configuratie van het Voorzien van een netwerk is a [ proces in twee stappen ](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) die enablement op programma en milieuniveau vereisen.
 
-Voor AEM logboeken (met inbegrip van Apache/Dispatcher), als u [ Geavanceerd Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) hebt gevormd, kunt u het `aem.advancedNetworking` bezit gebruiken om hen van een Dedicated IP van de Eenheid of over VPN door:sturen.
+Voor de logboeken van AEM (met inbegrip van Apache/Dispatcher), als u [ Geavanceerd Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) hebt gevormd, kunt u het `aem.advancedNetworking` bezit gebruiken om hen van een Dedicated IP van de Eis adres of over VPN door:sturen.
 
 In het onderstaande voorbeeld ziet u hoe u het aanmelden op een standaard HTTPS-poort met Advanced Networking configureert.
 
@@ -180,11 +184,48 @@ data:
 Voor CDN- logboeken, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven Snelle documentatie - Openbare IP Lijst ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar een https server of (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van bekende IP naar hun uiteindelijke bestemming te verzenden.
 
 >[!NOTE]
->Het is niet mogelijk voor CDN- logboeken om van het zelfde IP adres te verschijnen dat uw AEM logboeken van verschijnen, is dit omdat de logboeken direct van Fastly en niet AEM Cloud Service worden verzonden.
+>Het is niet mogelijk voor CDN- logboeken om van het zelfde IP adres te verschijnen dat uw AEM logboeken van verschijnen, is dit omdat de logboeken direct van de Snelle en niet de Dienst van de Wolk van AEM worden verzonden.
 
 ## Logboekdoelconfiguratie {#logging-destinations}
 
 De configuraties voor de gesteunde registrerenbestemmingen worden hieronder vermeld, samen met om het even welke specifieke overwegingen.
+
+### Amazon S3 {#amazons3}
+
+>
+>Logboeken die periodiek aan S3, om de 10 minuten voor elk type van logboekdossier worden geschreven.  Dit kan resulteren in een aanvankelijke vertraging voor logboeken die aan S3 worden geschreven zodra de eigenschap wordt van een knevel voorzien.  Meer informatie over waarom dit gedrag bestaat kan [ hier ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs) worden gevonden.
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+Als u de S3 Log Forwarder wilt gebruiken, moet u een AWS IAM-gebruiker vooraf configureren met het juiste beleid voor toegang tot uw S3 emmertje.  Zie [ hier ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) voor hoe te om IAM gebruikersgeloofsbrieven tot stand te brengen.
+
+Met het IAM-beleid kan de gebruiker `s3:putObject` gebruiken.  Bijvoorbeeld:
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+Zie [ hier ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) voor meer informatie over de implementatie van het Beleid van het Emmertje van AWS.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -241,9 +282,9 @@ aemcdn/
 
 Elk bestand bevat meerdere logitems van de zoon, elk op een aparte regel. De formaten van de logboekingang worden beschreven onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md), en elke logboekingang omvat ook de extra eigenschappen die in de [ hieronder sectie van de Formaten van de Ingang van het Logboek ](#log-formats) worden vermeld.
 
-#### Azure Blob Storage AEM logs {#azureblob-aem}
+#### Azure Blob Storage AEM-logbestanden {#azureblob-aem}
 
-AEM logbestanden (inclusief Apache/Dispatcher) worden weergegeven onder een map met de volgende naamgevingsconventie:
+AEM-logbestanden (inclusief Apache/Dispatcher) worden weergegeven onder een map met de volgende naamgevingsconventie:
 
 * amusement
 * aemfout
@@ -279,7 +320,7 @@ Overwegingen:
 
 * Maak een API-sleutel zonder integratie met een specifieke cloud provider.
 * De eigenschap tags is optioneel
-* Voor AEM logs wordt de gegevenshondenbrontag ingesteld op `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
+* Voor AEM-logs wordt de gegevenshondenbrontag ingesteld op `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
 * Voor CDN-logs wordt de gegevenshondenbrontag ingesteld op `aemcdn`
 * De servicetag DataHond is ingesteld op `adobeaemcloud` , maar u kunt deze overschrijven in de sectie Tags
 * Als uw innamepijpleiding de markeringen van Datadog gebruikt om de aangewezen index voor het door:sturen van logboeken te bepalen, verifieer dat deze markeringen correct in het Logboek door:sturen YAML- dossier worden gevormd. Het ontbreken van markeringen kan succesvolle logboekopname verhinderen als de pijpleiding van hen afhangt.
@@ -308,8 +349,8 @@ Overwegingen:
 
 ![ Elastische plaatsingsgeloofsbrieven ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* Voor AEM logs wordt `index` ingesteld op een van `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
-* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
+* Voor AEM-logbestanden wordt `index` ingesteld op een van `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
+* Het facultatieve pijpleidingsbezit zou aan de naam van Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
 
 ```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -339,6 +380,13 @@ Overwegingen:
 * Het url koord moet **https://** omvatten of de bevestiging zal ontbreken.
 * De URL kan een poort bevatten. Bijvoorbeeld `https://example.com:8443/aem_logs/aem` . Als er geen poort is opgenomen in de URL-tekenreeks, wordt poort 443 (de standaard-HTTPS-poort) gebruikt.
 
+#### New Relic Log API {#newrelic-https}
+
+E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
+
+>
+>New Relic biedt regiospecifieke eindpunten op basis van waar uw New Relic-account is ingericht.  Zie [ hier ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) voor de documentatie van New Relic.
+
 #### HTTPS CDN-logbestanden {#https-cdn}
 
 De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de ](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
@@ -349,9 +397,9 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 >
 > Voordat de eerste CDN-logbestandvermelding wordt verzonden, moet uw HTTP-server een eenmalige controle uitvoeren: een aanvraag die naar het pad ``/.well-known/fastly/logging/challenge`` wordt verzonden, moet reageren met een asterisk ``*`` in de hoofdtekst en de statuscode van 200.
 
-#### HTTPS-AEM {#https-aem}
+#### HTTPS AEM-logbestanden {#https-aem}
 
-Voor AEM logboeken (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de ](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
+Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de ](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
 
 Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
@@ -389,28 +437,34 @@ Overwegingen:
 >
 > [ als het migreren ](#legacy-migration) van erfenisLogboek dat aan dit zelf-servermodel door:sturen, kunnen de `sourcetype` waarden van het gebied die naar uw Splunk index worden verzonden veranderd zijn, zo dienovereenkomstig aangepast.
 
-<!--
 ### Sumo Logic {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+Wanneer u Sumo Logic configureert voor gegevensinvoer, krijgt u een &quot;HTTP Source-adres&quot; dat de host, ontvangerURI en de persoonlijke sleutel in één tekenreeks levert.  Bijvoorbeeld:
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+U zult de laatste sectie van URL (zonder het voorafgaande `/`) moeten kopiëren en dat toevoegen als a [ CloudManager de Geheime Variabele van het Milieu ](/help/operations/config-pipeline.md#secret-env-vars) zoals hierboven beschreven in de [ Opstelling ](#setup) sectie, dan verwijzing die variabele in uw configuratie.  Hieronder vindt u een voorbeeld.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> U hebt een abonnement op Sumo Logic Enterprise nodig om de functionaliteit van het veld &quot;index&quot; te kunnen gebruiken.  Bij niet-Enterprise-abonnementen worden hun logbestanden standaard naar de `sumologic_default` -partitie gerouteerd.  Zie de [ Documentatie van de Partitionering van de Logica Sumo ](https://help.sumologic.com/docs/search/optimize-search-partitions/) voor meer informatie.
 
 ## Indelingen voor logbestandvermelding {#log-formats}
 
-Zie [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) voor het formaat van elk respectieve logboektype (CDN logboeken, en AEM logboeken met inbegrip van Apache/Dispatcher).
+Zie [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) voor het formaat van elk respectieve logboektype (CDN- logboeken, en de logboeken van AEM met inbegrip van Apache/Dispatcher).
 
 Aangezien de logboeken van veelvoudige programma&#39;s en milieu&#39;s aan de zelfde registrerenbestemming kunnen door:sturen, naast de output die in het registrerenartikel wordt beschreven, zullen de volgende eigenschappen in elke logboekingang worden omvat:
 
@@ -432,11 +486,11 @@ aem_tier: author
 
 Voordat de configuratie Log Forwarding via een zelfservermodel werd bereikt, werd klanten gevraagd om supporttickets te openen, waar Adobe de integratie zou starten.
 
-Klanten die op die manier door Adobe waren opgezet, zijn welkom om zich aan het model van het zelfdienen op hun gemak aan te passen. Er zijn verschillende redenen om deze overgang te maken:
+Klanten die op die manier door Adobe waren opgezet, zijn welkom om zich op hun gemak aan te passen aan het model voor zelfbediening. Er zijn verschillende redenen om deze overgang te maken:
 
 * Er is een nieuwe omgeving (bijvoorbeeld een nieuwe dev-server of RDE) ingericht.
 * Veranderingen in uw bestaand eindpunt of geloofsbrieven van de Splunk.
-* De Adobe had opstelling uw logboek door:sturen alvorens de logboeken CDN beschikbaar waren en u zou CDN logboeken willen ontvangen.
+* Adobe had opstelling uw logboek door:sturen alvorens de logboeken CDN beschikbaar waren en u zou CDN logboeken willen ontvangen.
 * Een bewust besluit om zich proactief aan het zelf-servermodel aan te passen zodat heeft uw organisatie de kennis zelfs alvorens een tijdgevoelige verandering noodzakelijk is.
 
 Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de Cloud Manager config pijpleiding om aan elk van de milieu&#39;s op te stellen waar de configuratie zou moeten worden toegepast.
@@ -446,4 +500,4 @@ Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#
 >[!NOTE]
 >De waarden van het veld `sourcetype` die naar uw verzonken index zijn verzonden, zijn mogelijk gewijzigd, dus pas de waarden dienovereenkomstig aan.
 >
->Wanneer het Door:sturen van het Logboek aan een milieu wordt opgesteld dat eerder door de steun van de Adobe wordt gevormd, kunt u dubbele logboeken tot een paar uren ontvangen. Dit zal uiteindelijk automatisch worden opgelost.
+>Wanneer Log Forwarding wordt opgesteld aan een milieu dat eerder door de steun van Adobe wordt gevormd, kunt u dubbele logboeken tot een paar uren ontvangen. Dit zal uiteindelijk automatisch worden opgelost.
