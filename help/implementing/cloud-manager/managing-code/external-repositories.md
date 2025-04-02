@@ -1,19 +1,19 @@
 ---
 title: Externe opslagplaatsen toevoegen aan Cloud Manager - beperkte bèta
-description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise Server-, GitLab- en Bitbucket-opslagruimten.
+description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: e18368b1f16033790c91038d746c96d04a05ba21
+source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1890'
 ht-degree: 0%
 
 ---
 
 # Externe opslagplaatsen toevoegen in Cloud Manager - beperkte bèta {#external-repositories}
 
-Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise Server-, GitLab- en Bitbucket-opslagruimten.
+Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 
 >[!NOTE]
 >
@@ -26,6 +26,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 1. [ voeg een externe bewaarplaats ](#add-external-repo) aan een geselecteerd programma toe.
 1. Geef een toegangstoken aan de externe opslagplaats.
 1. Valideer eigendom van de privé bewaarplaats GitHub.
+1. [ vorm een webhaak ](#configure-webhook) aan een externe bewaarplaats.
 
 
 
@@ -51,7 +52,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | --- | --- |
    | **Naam van de Bewaarplaats** | Vereist. Een expressieve naam voor uw nieuwe opslagplaats. |
    | **Repository URL** | Vereist. De URL van de gegevensopslagruimte.<br><br> als u een GitHub-ontvangen bewaarplaats gebruikt, moet de weg in `.git` beëindigen.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden).<br><br> als u een externe bewaarplaats gebruikt, moet het het volgende URL wegformaat gebruiken:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> of <br>`https://self-hosted-domain/org-name/repo-name.git`<br> en past uw verkoper van het Git aan. |
-   | **Uitgezochte Type van Bewaarplaats** | Vereist. Selecteer het type opslagplaats dat u gebruikt:<ul><li>**GitHub** (de Server van de Onderneming van GitHub en de zelf-ontvangen versie van GitHub)</li><li>**GitLab** (zowel `gitlab.com` als de zelf-ontvangen versie van GitLab) </li><li>**Bitbucket** (zowel `bitbucket.org` als de Server van de Bitmap, en de zelf-ontvangen versie van Bitbucket)</li></ul>Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
+   | **Uitgezochte Type van Bewaarplaats** | Vereist. Selecteer het type opslagplaats dat u gebruikt:<ul><li>**GitHub** (Onderneming GitHub en de zelf-ontvangen versie van GitHub)</li><li>**GitLab** (zowel `gitlab.com` als de zelf-ontvangen versie van GitLab) </li><li>**Bitbucket** (zowel `bitbucket.org` als de server van de Bitmap, en de zelf-ontvangen versie van Bitbucket)</li></ul>Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
    | **Beschrijving** | Optioneel. Een gedetailleerde beschrijving van de gegevensopslagruimte. |
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
@@ -64,9 +65,9 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | Type token | Beschrijving |
    | --- | --- |
    | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br><ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>Stel het volgende in voor de vereiste machtigingen:<ul><li>**Vereiste toestemmingen voor het Token van de Toegang van GitHub Persoonlijke (KLOPJE)**<br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheert.<br> in GitHub, wanneer u het persoonlijke toegangstoken (KLOPJE) produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul><li>**Vereiste WebHaakgebeurtenissen (voor GitHub-Gehoste bewaarplaatsen)**<br> Deze gebeurtenissen staan Cloud Manager toe om aan activiteit te antwoorden GitHub, zoals trekverzoekbevestiging, op duw-gebaseerde trekkers voor pijpleidingen, of de codesynchronisatie van Edge Delivery Services.<br> wanneer u een Webhaak GitHub manueel vormt, zorg ervoor dat webhaak opstelling is om op de volgende vereiste webhgebeurtenissen teweeg te brengen:<ul><li>Pull-aanvragen<li>Penselen<li>Opmerkingen bij problemen</li></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   | | **type van Bewaarplaats: GitLab**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Stel het volgende in voor de vereiste machtigingen:<ul><li>**Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE)**<br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en Web-haintegratie toegang te hebben.<br> wanneer het creëren van het persoonlijke toegangstoken in GitLab, zorg ervoor het de volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul><li>**Vereiste WebHaakgebeurtenissen (voor GitLab-Gehoste bewaarplaatsen)**<br> Deze webhgebeurtenissen staan Cloud Manager toe om pijpleidingen teweeg te brengen wanneer de code wordt geduwd of een fusieverzoek wordt voorgelegd. Zij volgen ook commentaren met betrekking tot trekverzoekbevestiging (door nota gebeurtenissen).<br> wanneer u een webhaak in GitLab manueel vormt, zorg ervoor om de volgende vereiste WebHaakgebeurtenissen te omvatten:<ul><li>Push-gebeurtenissen<li>Aanvraaggebeurtenissen samenvoegen<li>Notitie, gebeurtenissen</li></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   | | **type van Bewaarplaats: Bitbucket**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Stel het volgende in voor de vereiste machtigingen:<ul><li>**Vereiste toestemmingen voor het Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE)**<br> Deze toestemmingen staan Cloud Manager toe om tot bewaarplaats inhoud toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op webhaakgebeurtenissen te reageren.<br> wanneer het creëren van het toepassingswachtwoord in Bitbucket, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul><li>**Vereiste WebHaakgebeurtenissen (voor Bitbucket-ontvangen bewaarplaatsen)**<br> Deze gebeurtenissen zorgen ervoor dat Cloud Manager trekverzoeken kan bevestigen, op codeduwen, antwoorden en met commentaren voor pijpleidingscoördinatie in wisselwerking staan.<br> als vestiging de webhaak manueel in Bitbucket, het vormt om op de volgende vereiste WebHaakgebeurtenissen teweeg te brengen:<ul><li>Volledige aanvraag: gemaakt<li>Verzoek tot uittrekken: Bijgewerkt<li>Pull-verzoeken: Samengevoegd<li>Volledige aanvraag: opmerking<li>Repository: Push</li></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: Onderneming GitHub**<br><ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>De vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE) <br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheren.<br> wanneer u het KLOPJE in de Onderneming GitHub produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   | | **type van Bewaarplaats: GitLab**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE) <br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en WebHaakintegratie toegang te hebben.<br> wanneer u het KLOPJE in GitLab produceert, zorg ervoor het het volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   | | **type van Bewaarplaats: Bitbucket**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
    >[!NOTE]
    >
@@ -108,7 +109,8 @@ Met websites kan Cloud Manager bijvoorbeeld acties activeren op basis van gebeur
 * Toekomstige op opmerkingen gebaseerde acties - Hiermee worden workflows mogelijk, zoals directe implementatie van een PR, naar een Rapid Development Environment (RDE).
 
 Webhaconfiguratie is niet vereist voor opslagruimten die op `GitHub.com` worden gehost, omdat Cloud Manager rechtstreeks via de GitHub-app integreert.
-Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals de Server van de Onderneming GitHub, GitLab, en Bitbucket worden bezet, is de webhaakconfiguratie beschikbaar en moet opstelling manueel.
+
+Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderneming GitHub, GitLab, en Bitbucket worden bezet, is de webhaakconfiguratie beschikbaar en moet opstelling manueel.
 
 **om een webhaak voor een externe bewaarplaats te vormen:**
 
@@ -146,8 +148,13 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
       Als u een API-sleutel wilt genereren, moet u een integratieproject maken in Adobe Developer Console. Zie [ Creërend een Project van de Integratie API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) voor volledige details.
 
 1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
-1. Configureer de webhaak om de juiste gebeurtenissen te verzenden die Cloud Manager verwacht.
+1. Configureer de webhaak om de vereiste gebeurtenissen te verzenden die Cloud Manager verwacht.
 
+   | Bewaarplaats | Vereiste gebeurtenissen van de webhaak |
+   | --- | --- |
+   | GitHub Enterprise | Deze gebeurtenissen staan Cloud Manager toe om aan activiteit te antwoorden GitHub, zoals trekverzoekbevestiging, op duw-gebaseerde trekkers voor pijpleidingen, of de codesynchronisatie van Edge Delivery Services.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHaakgebeurtenissen teweeg te brengen:<ul><li>Pull-aanvragen<li>Penselen<li>Opmerkingen bij problemen</li></li></li></ul></ul></ul> |
+   | GitLab | Met deze webhaakgebeurtenissen kan Cloud Manager pijpleidingen activeren wanneer code wordt geduwd of een samenvoegaanvraag wordt ingediend. Zij volgen ook commentaren met betrekking tot trekverzoekbevestiging (door nota gebeurtenissen).<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Push-gebeurtenissen<li>Aanvraaggebeurtenissen samenvoegen<li>Notitie, gebeurtenissen</li></li></li></ul></ul></ul> |
+   | Bitmap | Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Volledige aanvraag: gemaakt<li>Verzoek tot uittrekken: Bijgewerkt<li>Pull-verzoeken: Samengevoegd<li>Volledige aanvraag: opmerking<li>Repository: Push</li></li></li></ul></ul></ul> |
 
 ### Validatie van trekkingsverzoeken met webhaken
 
@@ -155,11 +162,11 @@ Nadat websites correct zijn geconfigureerd, activeert Cloud Manager automatisch 
 
 De volgende gedragingen zijn van toepassing:
 
-* **Server van de Onderneming GitHub**
+* **Onderneming GitHub**
 
-  Wanneer de controle is gemaakt, lijkt deze op de onderstaande schermafbeelding. Het belangrijkste verschil van `GitHub.com` is dat `GitHub.com` een controle-looppas gebruikt, terwijl de Server van de Onderneming GitHub (die persoonlijke toegangstokens gebruikt) een begaat status produceert:
+  Wanneer de controle is gemaakt, lijkt deze op de onderstaande schermafbeelding. Het belangrijkste verschil van `GitHub.com` is dat `GitHub.com` controle-looppas gebruikt, terwijl de Onderneming GitHub (die persoonlijke toegangstokens gebruikt) een begaat status produceert:
 
-  ![ verbind status om op de Server van de Onderneming van GitHub het bevestigingsproces van PR te wijzen ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+  ![ verbindt status toe om PR validatieproces op Onderneming GitHub ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png) te wijzen
 
 * **Bitbucket**
 

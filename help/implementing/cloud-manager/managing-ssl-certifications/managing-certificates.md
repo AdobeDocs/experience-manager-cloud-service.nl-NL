@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,10 @@ Wanneer een door klant beheerd certificaat verloopt, werken domeinen die in gebr
 
 Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Manager van de Plaatsing** om deze taak te voltooien.
 
+>[!IMPORTANT]
+>
+>Neem het nieuwe certificaat niet op in de certificaatketen wanneer u een SSL-certificaat toevoegt of bijwerkt. Als u deze code opneemt, kan het uploaden niet worden voltooid.
+
 **om een verlopen klant beheerde SSL certificaat bij te werken:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
@@ -70,7 +74,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 Volg de zelfde stappen die in [ worden beschreven Werk een verlopen SSL certificaat ](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
 
-## De naam van een door Adobe beheerd SSL-certificaat wijzigen (#rename-an-ssl-certificate)
+## De naam wijzigen van een door Adobe beheerd SSL-certificaat (#rename-an-ssl-certificate)
 
 Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wijzigen:
 
@@ -78,7 +82,7 @@ Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wi
 * **vermijdend verwarring**: Als u veelvoudige certificaten beheert, kan een duidelijke, beschrijvende naam helpen fouten verhinderen, als het toepassen van het verkeerde certificaat op het verkeerde domein.
 * **Naleving en controle**: De behoorlijk genoemde certificaten kunnen gemakkelijker zijn om voor veiligheid en controledoeleinden te volgen.
 
-**om een Adobe te hernoemen beheerde SSL certificaat:**
+**om een Adobe beheerde SSL certificaat anders te noemen:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 
@@ -88,7 +92,7 @@ Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wi
 
 1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 
-1. Op de **SSL Certificaten** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan **Adobe beheerde** SSL certificaat u wilt anders noemen.
+1. Op de **SSL Certificaten** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan **Adobe** SSL certificaat beheerde u wilt anders noemen.
 
 1. In het drop-down menu, klik **anders noemen**.
 
@@ -99,11 +103,11 @@ Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wi
 
 ## Een SSL-certificaat verwijderen {#deleting-an-ssl-certificate}
 
-Het verwijderen van door de Adobe beheerde of door de klant beheerde SSL-certificaten uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. De beste manier is om SSL-bestanden lokaal op te slaan voordat u ze verwijdert in Cloud Manager.
+Het verwijderen van door Adobe beheerde of door de klant beheerde SSL-certificaten uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. Het wordt aanbevolen SSL-bestanden lokaal op te slaan voordat u ze verwijdert in Cloud Manager.
 
 >[!NOTE]
 >
->U kunt geen Adobe geleid SSL certificaat schrappen dat één of meerdere actieve domeinen verbonden aan het heeft. Alle gekoppelde actieve domeinen moeten worden verwijderd voordat het SSL-certificaat wordt verwijderd. Zie [ de namen van het douanedomein beheren ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren.
+>U kunt geen door Adobe beheerd SSL-certificaat verwijderen waaraan een of meer actieve domeinen zijn gekoppeld. Alle gekoppelde actieve domeinen moeten worden verwijderd voordat het SSL-certificaat wordt verwijderd. Zie [ de namen van het douanedomein beheren ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren.
 
 Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Manager van de Plaatsing** om deze taak te voltooien.
 
