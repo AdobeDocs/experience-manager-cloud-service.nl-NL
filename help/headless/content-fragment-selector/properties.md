@@ -2,13 +2,13 @@
 title: Eigenschappen van Micro-Frontend-inhoudsfragmentkiezer voor Adobe Experience Manager as a Cloud Service
 description: Eigenschappen om de Micro-Front Content Fragment Selector te configureren voor het zoeken, zoeken en ophalen van inhoudsfragmenten van uw toepassing.
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
-
 
 # Content Fragment Selector - Gerelateerde eigenschappen {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ U kunt de volgende eigenschappen gebruiken om aan te passen hoe de Content Fragm
 | `filters` | FragmentFilter | Nee | | Filters die moeten worden toegepast voor de lijst met inhoudsfragmenten. Fragmenten onder `/content/dam` worden standaard weergegeven. Standaardwaarde: `{ folder: "/content/dam" }` |
 | `isOpen` | boolean | Ja | `false` | Markering om het openen of sluiten van de kiezer te activeren. |
 | `onDismiss` | () => void | Ja | | Functie die moet worden geroepen wanneer **Ontkenning** wordt geselecteerd. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]` , domainNames: `string[]` }) => void | Functie die moet worden geroepen wanneer **Uitgezocht** na het selecteren van één of meerdere Fragments van de Inhoud wordt gebruikt. <br><br> de functie zal ontvangen:<br><ul><li> de geselecteerde inhoudsfragmenten met `id` - en `path` -velden</li><li>en domeinnamen die gerelateerd zijn aan de programma-id van de repository en de omgeving-id, die de status `ready` en `tier` Publish hebben</li></ul><br> als er geen domeinnamen zijn zal het de Publish instantie als reserve domein gebruiken. |
-| `theme` | &quot;licht&quot; | &quot;donker&quot; | Nee | | Thema van de kiezer voor inhoudsfragmenten. Het standaardthema wordt geplaatst aan het thema van het milieu UnifiedShell. |
-| `selectionType` | &quot;single&quot; | &quot;multiple&quot; | Nee | `single` | Selectietype dat kan worden gebruikt om de selectie voor de FragmentSelector te beperken. |
-| `dialogSize` | &quot;fullscreen&quot; | &quot;fullscreenTakOP&quot; | Nee | `fullscreen` | Optionele eigenschap om de grootte van het dialoogvenster te bepalen. |
+| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]` , domainNames: `string[]` }) => void | Ja | | Functie die moet worden geroepen wanneer **Uitgezocht** na het selecteren van één of meerdere Fragments van de Inhoud wordt gebruikt. <br><br> de functie zal ontvangen:<br><ul><li> de geselecteerde inhoudsfragmenten met `id` - en `path` -velden</li><li>en domeinnamen die gerelateerd zijn aan de programma-id van de repository en de omgeving-id, die de status `ready` en `tier` Publish hebben</li></ul><br> als er geen domeinnamen zijn zal het de Publish instantie als reserve domein gebruiken. |
+| `theme` | &quot;licht&quot; of &quot;donker&quot; | Nee | | Thema van de kiezer voor inhoudsfragmenten. Het standaardthema wordt geplaatst aan het thema van het milieu UnifiedShell. |
+| `selectionType` | &quot;single&quot; of &quot;multiple&quot; | Nee | `single` | Selectietype dat kan worden gebruikt om de selectie voor de FragmentSelector te beperken. |
+| `dialogSize` | &quot;fullscreen&quot; of &quot;fullscreenTakOP&quot; | Nee | `fullscreen` | Optionele eigenschap om de grootte van het dialoogvenster te bepalen. |
 | `waitForImsToken` | boolean | Nee | `false` | Geeft aan of de Content Fragment Selector wordt gerenderd in de context van SUSI flow en moet wachten tot `imsToken` gereed is. |
 | `imsAuthInfo` | ImsAuthInfo | Nee | | Object met de IMS-verificatiegegevens van de aangemelde gebruiker. |
 | `runningInUnifiedShell` | boolean | Nee | | Wijst erop of de Selector van het Fragment van de Inhoud onder UnifiedShell of standalone loopt. |
