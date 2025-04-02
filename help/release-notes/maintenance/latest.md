@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: cd19612597d8f1841062bbc8de253ee7271adce3
+source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,11 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 * SITES-25433: Ondersteuning voor volledige paginerendering bij vergelijking van oude versies.
 * SITES-25923: LinkInfoStorageImpl kan blokkeren wanneer geen urls meer worden opgeslagen.
 * SITES-26208: Als u een inhoudsfragment via de workflow verwijdert, kan nu de optie voor het bijwerken van bronnen die naar bronnen verwijzen, worden aangepast door het zojuist verwijderde fragment te verwijderen.
-* SITES-26400: Lagere barrière om de Dienst van Edge Delivery door te verbeteren, te vereenvoudigen, en te verharden Crosswalk
 * SITES-26500: De optie voor het verplaatsen van inhoudsfragmenten via workflow toevoegen `move-fragments` .
 * SITES-26711: Uitroltrigger - Koppelingen worden niet bijgewerkt.
 * SITES-27583: Ervaar Fragments die de Geschiedenis van de Versie na wordt bewogen verliezen.
 * SITES-27618: Het zoeken van verwijzingen naar een fragment op pagina&#39;s retourneert niet alle resultaten.
 * SITES-27781: Implemented model-level bevestiging voor verwijzingen van het Fragment van de Inhoud, die bevestiging van referenced fragmenten tegen hun modelbeperkingen en vereiste markering toestaat.
-* SITES-27782: Bouw specifieke Uitgever &amp; de Agent van de Abonnee van Crosswalk.
 * SITES-27784: Werk SQL query generation bij om PATH functie te gebruiken in plaats van `jcr:path`.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener is verbroken.
 * SITES-28051: Krijg de toestemmingen van de huidige gebruiker op een Fragment van de Inhoud: GET /cf/fragments/{fragmentId}/toestemmingen.
@@ -65,6 +63,10 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 * SITES-2947: Creëer/wijzig kibana visualisatie om te vergelijken publiceren rasp.
 * SITES-29733: Verbeterde zoekprestaties van het model door tags van inhoudsfragmenten.
 * SITES-8316: Content Policies: Cache the ContentPolicyManager.
+* SITES-24906: Edge Delivery met Universal Editor: ondersteuning voor door auteur gemaakte spreadsheets zonder toewijzing (vroege toegang)
+* SITES-24907: Edge Delivery met Universal Editor: ondersteuning voor het publiceren van Assets naar meerdere sites voor MSM-gebruiksgevallen (vroege toegang)
+* SITES-27956: Edge Delivery met Universal Editor: Verbeterde publicatiedoorvoer (vroege toegang)
+* SITES-27956: Edge Delivery met Universal Editor: Verbeter de foutafhandeling voor publicatie naar Edge Delivery Services (vroege toegang)
 
 ### Opgeloste problemen {#fixed-issues-20133}
 
@@ -90,7 +92,7 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 * SITES-26881: AEMaaCS Accessibility Bug - Onjuiste rol is opgegeven voor het pictogram Drie punten die naast het invoerveld voor opmerkingen staan.
 * SITES-26956: Follow-up op SITES-24920 Kan pagina niet verplaatsen in productieomgeving.
 * SITES-27707: De lijst met middelen van de Finder mislukt vanwege problemen met elementnamen (6.5 SP22-regressie).
-* SITES-27757: Het pictogram herschrijft geen nauwkeurige met helix-html-pijpleiding.
+* SITES-27757: Edge Delivery met Universal Editor: herschrijf pictogrammen volgens de semantiek van de helix-html-pijplijn.
 * SITES-27780: Onverwachte &lt;br>-tag wordt weergegeven in RTE met StandaardPasteMode met normale tekst op SP22.
 * SITES-27958: Linkchecker meldt &#39;Deze sessie is afgesloten&#39; fouten.
 * SITES-28149: Custom ExperienceFragmentLinkRewriterProvider not Trigdered during XF Export to Target.
