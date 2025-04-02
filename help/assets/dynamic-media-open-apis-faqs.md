@@ -3,9 +3,9 @@ title: Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen
 description: Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1584'
 ht-degree: 0%
 
 ---
@@ -136,6 +136,12 @@ Voor meer informatie, zie [ Toegang tot activa in Experience Manager ](restrict-
 +++**Hoe kunt u toestemmingen krijgen om de goedkeuringsstatus van een activa uit te geven?**
 
 Als gebruiker DAM, zou u geen toestemmingen kunnen hebben om [ activa ](approve-assets.md#approve-assets) goed te keuren. Als u machtigingen wilt verkrijgen om de goedkeuringsstatus van een element te bewerken, kunnen de beheerders de standaardinstelling of elk ander metagegevensschema dat op de elementenmap wordt toegepast, bewerken en machtigingen voor het **[!UICONTROL Review Status]** -veld opgeven. Voor meer informatie, zie [ hoe te om uit te schakelen uitgeeft voor het gebied van de Status van het Overzicht ](approve-assets.md#configuration).
+
++++
+
++++**wat is de gesteunde dossiergrootte voor video&#39;s?**
+
+Dynamische media met OpenAPI-mogelijkheden ondersteunen lange formuliervideo&#39;s. De video&#39;s kunnen tot 50 GB en 2 uur steunen.
 
 +++
 

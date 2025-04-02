@@ -3,9 +3,9 @@ title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,8 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 | [ meta-gegevens van Activa ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Retourneert de eigenschappen die aan een element zijn gekoppeld, zoals titel, beschrijving, CreateDate, ModifyDate enzovoort. |
 | [ de container van de Speler voor de videoactiva ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Retourneert de spelercontainer voor het video-element. U kunt de speler insluiten in een iFrame HTML-element en de video afspelen. |
 | [ manifests van de Playback in het geselecteerde outputformaat ](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Retourneert het afspeelmanifestbestand voor het opgegeven video-element in de geselecteerde uitvoerindeling. U moet een aangepaste speler maken die het afspeelmanifestbestand kan ophalen en de video kan afspelen door middel van HLS- of DASH-protocollen. |
+
+Dynamische media met OpenAPI-mogelijkheden ondersteunen ook lange formuliervideo&#39;s. De video&#39;s kunnen tot 50 GB en 2 uur steunen.
 
 Voor informatie over het beschikbare Dynamische dienstenaanbod van Media en hun mogelijkheden, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
 

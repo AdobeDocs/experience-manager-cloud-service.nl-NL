@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  Prime en het dienstenaanbod v
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Dit artikel biedt de end-to-end workflow om het [!DNL Dynamic Media] Prime- en U
 
 ## [!DNL Dynamic Media] Ultimate inschakelen {#enable-dynamic-media-ultimate}
 
-Voer de volgende stappen uit in uw cloudserviceomgeving om [!DNL Dynamic Media] Ultimate in te schakelen:
+[!DNL Dynamic Media] Ultimate inschakelen:
 
 1. [ activeer  [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [ vorm  [!DNL Dynamic Media]  oplossingen ](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ Als het aanmaken van [!DNL Dynamic Media] bedrijven mislukt, voert u de volgende
 
 1. Als **[!UICONTROL Status]** in behandeling is, stelt u het probleem ter oplossing voor aan het klantenondersteuningsteam.
 
-   ![ hangende status ](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![ hangende status ](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. Als **[!UICONTROL Status]** is mislukt, probeert u het opnieuw op basis van de oorzaak van de fout.
 
-   ![ ontbroken status ](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![ ontbroken status ](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Optioneel: aangepaste domein in leveringslaag configureren {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## [!DNL Dynamic Media] Prime inschakelen {#enable-dynamic-media-prime}
 
-Voer de volgende stappen uit in uw cloudserviceomgeving om [!DNL Dynamic Media] Prime in te schakelen:
+[!DNL Dynamic Media] Prime inschakelen:
 
 1. [ activeer Dynamische Media met OpenAPI ](#activate-dynamic-media-with-openapi)
 1. [ Facultatief: Vorm douanedomein in leveringsrij ](#configure-custom-domain-in-delivery-tier)
