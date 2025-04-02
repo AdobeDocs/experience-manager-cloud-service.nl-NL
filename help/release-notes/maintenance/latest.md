@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 ### Verbeteringen {#enhancements-20133}
 
 * ASSETS-47850: Beperk het toevoegen van configuraties Scene7 als AEM CS ES wordt toegelaten.
-* CQ-4359547: Volledige verwijdering van Guava uit https://git.corp.adobe.com/target-sdk/tsdk-core-opslagplaats.
+* CQ-4359547: Volledige verwijdering van Guava uit de opslagplaats voor it.
 * FORMS-17551: ondersteuning voor Document of Record (DoR) toegevoegd voor integratie van SharePoint-lijsten.
 * FORMS-18432: Geïmplementeerde vorm-specifieke (op regex-Gebaseerde) cliënt-zijconfiguratie om selectieve prefill functionaliteit zonder op OSGI-niveau veranderingen toe te laten.
 * FORMS-18513: Implemented data tree transformation support in AEP Connector voor verbeterde wizardfunctionaliteit en mogelijkheden voor gegevensverwerking.
@@ -57,16 +57,16 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 * SITES-28549: Maak `/cf/domains` aan om de domein-id te retourneren op basis van de AEM-laag.
 * SITES-29026: Er is een optionele parameter toegevoegd waarmee de landinstelling van het inhoudsfragment wordt opgegeven met een taal- en landcode.
 * SITES-29031: Verbeterde logica voor PATCH-ing-fragmenten, waardoor u betere prestaties krijgt.
-* SITES-29169: Alle gepubliceerde bronnen (ongeacht of ze zich in de status GEPUBLICEERD of GEWIJZIGD bevinden) worden opnieuw gepubliceerd als ze verwijzen naar een bron die is verplaatst, hernoemd of verwijderd.
+* SITES-29169: De middelen in status GEPUBLICEERD zullen worden opnieuw gepubliceerd als zij van een middel van verwijzingen voorzien dat werd bewogen, anders genoemd of geschrapt.
 * SITES-29376: Add Code toggle to validation of published resource delete.
-* SITES-29417: Werk /libs/cq/Page/proxy.jsp bij om een verzoek door te sturen naar jcr:content node in plaats van inclusief.
+* SITES-29417: Update `/libs/cq/Page/proxy.jsp` om een aanvraag door te sturen naar jcr:content node in plaats van inclusief.
 * SITES-2947: Creëer/wijzig kibana visualisatie om te vergelijken publiceren rasp.
 * SITES-29733: Verbeterde zoekprestaties van het model door tags van inhoudsfragmenten.
 * SITES-8316: Content Policies: Cache the ContentPolicyManager.
-* SITES-24906: Edge Delivery met Universal Editor: ondersteuning voor door auteur gemaakte spreadsheets zonder toewijzing (vroege toegang)
-* SITES-24907: Edge Delivery met Universal Editor: ondersteuning voor het publiceren van Assets naar meerdere sites voor MSM-gebruiksgevallen (vroege toegang)
-* SITES-27956: Edge Delivery met Universal Editor: Verbeterde publicatiedoorvoer (vroege toegang)
-* SITES-27956: Edge Delivery met Universal Editor: Verbeter de foutafhandeling voor publicatie naar Edge Delivery Services (vroege toegang)
+* SITES-24906: Edge Delivery met Universal Editor: ondersteuning voor door auteur gemaakte spreadsheets zonder toewijzing (vroege toegang).
+* SITES-24907: Edge Delivery met Universal Editor: ondersteuning voor het publiceren van Assets naar meerdere sites voor MSM-gebruiksgevallen (vroege toegang).
+* SITES-27956: Edge Delivery met Universal Editor: Verbeter de publicatiedoorvoer (vroege toegang).
+* SITES-27956: Edge Delivery met Universal Editor: verbeter de foutafhandeling voor publiceren naar Edge Delivery Services (vroege toegang).
 
 ### Opgeloste problemen {#fixed-issues-20133}
 
