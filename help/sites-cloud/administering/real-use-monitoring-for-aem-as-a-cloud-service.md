@@ -4,9 +4,9 @@ description: Leer over de Controle van het Echte Gebruik (RUM), een geautomatise
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,7 @@ De RUM-service (Real Use Monitoring) is een prestatiebewakingstechnologie die he
 
 ## Wie kan van de Echte dienst van de Controle van het Gebruik profiteren? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring helpt klanten en Adobe te begrijpen hoe eindgebruikers met AEM-sites werken. Real Use Monitoring diagnosticeert prestatieproblemen en meet de effectiviteit van experimenten. Met Real Use Monitoring blijft de privacy van bezoekers behouden door middel van steekproeven - slechts een klein deel van alle paginaweergaven wordt gecontroleerd - en er wordt geen persoonlijk identificeerbare informatie (PII) verzameld.
-
-## Real Use Monitoring Service en privacy {#rum-service-and-privacy}
-
-De Echte dienst van de Controle van het Gebruik in AEM bewaart bezoekersprivacy en minimaliseert gegevensinzameling. Als bezoeker betekent dit dat de site die u bezoekt of beschikbaar stelt aan Adobe, geen persoonlijke gegevens verzamelt.
-
-Als plaatsexploitant, wordt geen extra opt-in vereist om controle door deze eigenschap toe te laten. Er is geen extra pop-up of toestemmingsvorm voor de eindgebruikers om voor het toelaten RUM goed te keuren.
+Real Use Monitoring helpt klanten en Adobe te begrijpen hoe eindgebruikers met AEM-sites werken. Met Real Use Monitoring blijft de privacy van bezoekers behouden door beperkte gegevensverzameling en -sampling. Slechts een klein deel van alle paginaweergaven wordt gecontroleerd.
 
 ## Bemonstering van gegevens van de bewakingsservice &quot;Real Use Monitoring&quot; {#rum-service-data-sampling}
 
@@ -43,7 +37,7 @@ Als u besluit of de gegevens worden verzameld, wordt deze per pagina weergegeven
 
 ## Welke gegevens worden verzameld? {#what-data-is-being-collected}
 
-De Echte dienst van de Controle van het Gebruik wordt ontworpen om de inzameling van persoonlijk identificeerbare informatie te verhinderen. De volledige door het RUM verzamelde informatie wordt hieronder weergegeven:
+De Echte dienst van de Controle van het Gebruik wordt ontworpen om gegevensinzameling te minimaliseren. De volledige door het RUM verzamelde informatie wordt hieronder weergegeven:
 
 * De hostnaam van de site die wordt bezocht, bijvoorbeeld: `experienceleague.adobe.com`
 * Het brede type gebruikersagent en besturingssysteem dat wordt gebruikt om de pagina weer te geven, zoals: `desktop:windows` of `mobile:ios`
@@ -105,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    De bibliotheek RUM en de inzameling RUM tellen niet als inhoudsverzoeken en verhogen niet het gemelde aantal paginameningen of API vraag. Bovendien, voor klanten die uit-van-de-doos CDN met AEM as a Cloud Service gebruiken, [ server-kant inzameling ](#serverside-collection) is de basis voor inhoudverzoeken.
 
-1. **Hoe kan ik opteren?**
+1. **hoe kan ik RUM onbruikbaar maken?**
 
    Adobe raadt aan om de Real Use Monitoring (RUM) te gebruiken vanwege de aanzienlijke voordelen ervan en om Adobe in staat te stellen uw digitale ervaringen te optimaliseren door de prestaties van websites te verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
 
