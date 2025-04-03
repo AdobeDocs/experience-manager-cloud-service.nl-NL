@@ -4,9 +4,9 @@ description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoege
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -206,16 +206,9 @@ De volgende gedragingen zijn van toepassing:
 * Als de bevestiging van PR of pijpleidingstrekkers niet werken, verifieer dat het Geheime Geheime Web in zowel Cloud Manager als uw verkoper van het Git bijgewerkt is.
 
 
-
-
-
-
-
-
-## Beperkingen
+## Beperking
 
 * Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
-* De pijpleidingen met externe bewaarplaatsen (niet die op GitHub worden ontvangen) en de &quot;Op Veranderingen van de Git&quot;trekker beginnen niet automatisch. Deze kunnen alleen handmatig worden gestart.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
