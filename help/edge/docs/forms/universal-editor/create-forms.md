@@ -6,22 +6,24 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
 
-# Stapsgewijze handleiding voor het maken van zelfstandige formulieren in de Universal Editor
+# Adaptieve Forms maken met Universal Editor
 
 <span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
-Dit artikel begeleidt u door het maken en ontwerpen van de zelfstandige formulieren met de Universal Editor door een op Edge Delivery Services gebaseerde sjabloon te selecteren in de wizard Formulier maken. U kunt de geschreven formulieren ook publiceren met Universal Editor naar AEM Edge Delivery Services.
+De Universal Editor is een veelzijdige visuele editor die een WYSIWYG-ervaring (what-you-see-is-what-you-get) biedt voor het bewerken van formulieren. Het vereenvoudigt het maken van responsieve en gebruikersvriendelijke formulieren met een functie voor slepen en neerzetten, waarbij gebruik wordt gemaakt van beschikbare Adaptieve Forms-componenten zoals tekstvakken, keuzerondjes en selectievakjes.
 
-AEM Forms biedt een blok, het Adaptive Forms Block, waarmee u eenvoudig Edge Delivery Services Forms kunt maken om gegevens vast te leggen en op te slaan. U kunt [ een nieuw Project van AEM tot stand brengen dat met het AanpassingsBlok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand Project van de Plaats van AEM ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
+AEM biedt een blok, het zogenaamde Adaptive Forms Block, waarmee u eenvoudig Edge Delivery Services Forms kunt maken om gegevens vast te leggen en op te slaan met de Universal Editor. U kunt [ een nieuw Project van AEM tot stand brengen dat met het AanpassingsBlok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand Project van de Plaats van AEM ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
 
-![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png) {width=50%}
+![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png)
+
+Dit artikel begeleidt u door het maken en ontwerpen van de zelfstandige formulieren met de Universal Editor door een op Edge Delivery Services gebaseerde sjabloon te selecteren in de wizard Formulier maken.
 
 ## Voorwaarden
 
@@ -32,7 +34,7 @@ AEM Forms biedt een blok, het Adaptive Forms Block, waarmee u eenvoudig Edge Del
 
 ## Werken met formulieren in de Universal Editor
 
-Met de Universal Editor kunt u gemakkelijk responsieve en interactieve zelfstandige formulieren maken met kant-en-klare componenten, zoals tekstvelden, selectievakjes en keuzerondjes. Het biedt krachtige functies, zoals dynamische regels, vloeiende gegevensintegratie en aanpassingsopties, waarmee u formulieren volgens uw vereisten kunt maken. U kunt de formulieren ook publiceren naar AEM Edge Delivery Services. U kunt de volgende handelingen uitvoeren op formulieren in de Universal Editor:
+Met de Universal Editor kunt u gemakkelijk responsieve en interactieve zelfstandige formulieren maken. U kunt de volgende handelingen uitvoeren op formulieren in de Universal Editor:
 * [Een formulier maken](#create-a-form)
 * [Auteur van een formulier](#author-a-form)
 * [Een formulier publiceren](#publish-a-form)
@@ -93,7 +95,7 @@ Met de Universal Editor kunt u gemakkelijk responsieve en interactieve zelfstand
 
    ![ contacteer ons vorm ](/help/edge/assets/contact-us.png)
 
-   Nu kunt u [ vormen en Vorm aanpassen voorleggen Acties ](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Nu kunt u [ vormen en aanpassen voorlegt acties voor vormen ](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
