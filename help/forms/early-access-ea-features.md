@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ Hier is wat meer Conversational Forms brengt:
 Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaar voor gebruikerservaring.  Verhoog uw betrokkenheid, verminder het aantal gebruikers dat het formulier verlaat en maak interactie met uw website een prettiger ervaring voor iedereen.
 
 
-### WYSIWYG Authoring (Universal Editor) voor Edge Delivery Services for Forms
+### WYSIWYG Authoring voor Edge Delivery Services
 
-De Universele Redacteur verstrekt een krachtige interface van WYSIWYG om [ aanpassingsvormen aan Edge Delivery Services ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) te bouwen en te publiceren, die visuele ontwerpeenvoud met geavanceerde functionaliteit combineren. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/create-forms.md), plus een brede waaier van extra eigenschappen aan:
+WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
@@ -86,26 +86,6 @@ De Universele Redacteur verstrekt een krachtige interface van WYSIWYG om [ aanpa
 * Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
 * Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
 * Mogelijkheid om te kiezen uit meerdere verzendacties voor het verwerken van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
-
-![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**Voordelen:**
-
-* **versnelde Tijd-aan-Waarde (TTV)**: De vormen van de lancering sneller met intuïtieve visuele creatie die complexe coderingsvereisten elimineert.
-* **Verminderde ontwikkelingskosten**: Verlaag de totale kosten van eigendom door bedrijfsgebruikers toe te staan om vormen met minimale betrokkenheid van IT tot stand te brengen en te wijzigen.
-* **Vereenvoudigde Ontwikkeling**: Creeer douanecomponenten gebruikend slechts HTML, CSS, en JavaScript-geen gespecialiseerde vereiste kaderkennis.
-* **Moderne Stapel van het Web**: Voortgebouwd op Webnormen en moderne technologieën vertrouwd aan front-end ontwikkelaars.
-* **Snelle Prototypen**: bouw en test snel vormconcepten alvorens in volledige ontwikkeling te investeren
-
-
-**Onderzoek documentatie om meer te leren:**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**Zeer belangrijke eigenschappen**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Van het Gebruik Responsieve lay-outs**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**vormen voorlegt acties**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**worden begonnen met Universele Redacteur voor Aanpassings Forms**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Stijl uw vormen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**voeg reCAPTCHA veiligheid**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) toe |
-| [**creeer uw eerste vorm**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Gebruik de regelredacteur**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**publiceer vormen**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**Begrijp het gebruikersinterface**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**creeer douanecomponenten**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms naar Marketo Connector
@@ -127,27 +107,38 @@ Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies 
 * [Marketo Engage en gegevensbron configureren voor bestaande Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Een bestaand adaptief formulier verzenden naar Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### Value Realization Dashboard
+### Interactieve communicatie over de cloud
 
-U kunt de prestaties van uw formulieren bijhouden en analyseren met het Dashboard voor waardetoewijzing. Met dit analyseprogramma kunt u gegevensgestuurde beslissingen maken om uw formulierstrategie te optimaliseren.
+Interactieve communicatie over Cloud is een krachtige oplossing voor het maken, beheren en leveren van interactieve correspondentie met behulp van gegevens, zoals zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits.
 
-![ Dashboard van de Inzichten van het Gebruik van Forms ](/help/forms/assets/forms-usage-insights.png)
+![ Interactieve Communicatie Redacteur ](/help/forms/assets/ic-editor.png)
 
-**Zeer belangrijke eigenschappen:**
+#### Belangrijkste kenmerken:
 
-* Het verzenden van formulieren, documentuitvoeringen en metrische gegevens voor het maken/publiceren van formulieren controleren
-* Gebruik van formulierfragmenten bijhouden en opnieuw gebruiken in uw organisatie
-* Tendensen, piekperiodes en verbeteringsmogelijkheden identificeren
+* **op wolk-Gebaseerde Redacteur**: In tegenstelling tot de Desktop Designer van AEM Forms die slechts op de machines van Vensters kan worden geïnstalleerd, de Interactieve Communicatie redacteurslooppas in om het even welke moderne browser zonder vereiste installatie. Met deze cloudgebaseerde aanpak worden installatieproblemen voorkomen, wordt toegankelijkheid tussen verschillende platforms mogelijk gemaakt en kan vanaf elke locatie worden samengewerkt met internettoegang.
 
-Het dashboard biedt inzicht in twee hoofdsecties:
+* **gebruiker-vriendelijk Ontwerp**: Intuïtieve punt-en-klik interface die minimale technische kennis vereist.
 
-* **Vorm &amp; de activiteit van Documenten in tijd**: De voorlegging van sporen, uitvoeringen, en vormverwezenlijking/publicatie
-* **Gebruik van het Fragment**: De goedkeuring en het hergebruik van het fragment van monitoren
+* **Integratie van Gegevens**: Verbind met schema&#39;s, gegevensbestanden, en de Webdiensten voor dynamische inhoudsgeneratie.
 
-Voor gedetailleerde informatie:
+* **Rijke Media**: Neem tekst, beelden, en interactieve elementen naadloos op.
 
-* [Het dashboard voor het realiseren van waarden](/help/forms/aem-forms-value-realization-dashboard.md)
-* [Inzichten in het gebruik van formulieren en documenten interpreteren](/help/forms/using-the-value-realization-dashboard.md)
+* **Fragments van het Document**: Hergebruik modulaire inhoudsblokken over veelvoudige documenten voor consistentie en efficiency.
+
+* **Uitvoer van meerdere kanalen**: Creeer verenigde ervaringen over druk en digitale formaten met regelgevende naleving.
+
+* **Dynamische Inhoud**: produceer gepersonaliseerde inhoud gebruikend bedrijfslogica en gegevensband.
+
+* **Flexibiliteit van het Formaat**: Output aan PDF, HTML, PCL, PostScript®, en formaten ZPL.
+
+#### Gevallen gebruiken:
+
+* Financiële instellingen die rekeningen opstellen
+* Overheidsinstanties stroomlijnen kennisgeving van voordelen
+* Het creëren van kwalitatief hoogstaande, veilige, en wettelijk conforme correspondentie
+* Het leiden van de verwezenlijking, de assemblage, en de levering van gegeven-gedreven interactieve correspondentie
+
+Klaar om te beginnen? De Interactive Communications-editor is beschikbaar in het kader van het programma Vroege toegang voor Forms as a Cloud Service-implementaties. Om toegang te verzoeken, e-mail uw organisatie identiteitskaart en programmadetails aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) van uw officieel adres.
 
 ## Aanvullende innovaties voor vroege toegang
 
