@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service-team en productprofielen
-description: Leer hoe AEM as a Cloud Service-teams en productprofielen toegang tot uw bekabelde Adobe-oplossingen kunnen verlenen en beperken.
+description: Leer hoe AEM as a Cloud Service-team en productprofielen toegang tot uw Adobe-oplossingen met licentie kunnen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
+source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2062'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # AEM as a Cloud Service-team en productprofielen {#product-profiles}
 
-Leer hoe AEM as a Cloud Service-teams en productprofielen toegang tot uw bekabelde Adobe-oplossingen kunnen verlenen en beperken.
+Leer hoe AEM as a Cloud Service-team en productprofielen toegang tot uw Adobe-oplossingen met licentie kunnen verlenen en beperken.
 
 ## Productprofielen {#profiles}
 
-Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. Deze zijn beschikbaar en toegankelijk via de [ Admin Console ](/help/journey-onboarding/admin-console.md).
+Wanneer u een gebruiker toegang geeft tot een specifieke Adobe-oplossing, wilt u deze niet altijd volledige toegang geven. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. Deze zijn beschikbaar en toegankelijk via [ Admin Console ](/help/journey-onboarding/admin-console.md).
 
 De Adobe Admin Console heeft een gestructureerde hiërarchie van product, productinstanties, en productprofielen waar de interne gebruikers van een organisatie kunnen worden toegewezen lidmaatschap, die hen toegang tot de oplossingen en de eigenschappen geven die zijn vergunning gegeven.
 
@@ -34,17 +34,17 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 ## AEM as a Cloud Service-productprofielen {#aem-product-profiles}
 
-AEM as a Cloud Service is een volledig eigen cloudaanbod dat AEM als service biedt. Het levert AEM op een wolkeninheemse manier, met nieuwe attributen zoals altijd, altijd huidig, altijd veilig, en altijd op schaal. Tezelfdertijd behoudt het het belangrijkste waardevoorstel dat AEM als klantgericht platform aan klanten verstrekt en ondernemingscoreteams toestaat om in hun ontwikkeling en leveringsprocedure te integreren. Zie [ Inleiding aan Adobe Experience Manager as a Cloud Service ](/help/overview/introduction.md) om meer over AEM as a Cloud Service te leren.
+AEM as a Cloud Service is een volledig &#39;cloud-native&#39; aanbod dat AEM als service biedt. Het biedt AEM op een native manier in de cloud, met nieuwe kenmerken zoals altijd ingeschakeld, altijd actueel, altijd veilig en altijd op schaal. Tegelijkertijd behoudt het de belangrijkste waardestelling die AEM biedt als aanpasbaar platform voor klanten en stelt het teams op bedrijfsniveau in staat in hun ontwikkelings- en leveringsprocedure te integreren. Zie [ Inleiding aan Adobe Experience Manager as a Cloud Service ](/help/overview/introduction.md) om meer over AEM as a Cloud Service te leren.
 
 ### Productinstanties op organisatieniveau {#org-level-product-instances}
 
 >[!NOTE]
 >
-> Sommige productinstanties en productprofielen die in dit artikel worden beschreven, worden mogelijk alleen weergegeven voor nieuwe omgevingen. Met een toekomstig mechanisme kunnen bestaande omgevingen ook worden bijgewerkt.
+> Sommige productinstanties en productprofielen die in dit artikel worden beschreven, worden mogelijk alleen weergegeven voor nieuwe omgevingen. Zie [ Toevoegend de Profielen van het Product voor Bestaande sectie van Milieu ](#adding-product-profiles-for-existing-environments) voor hoe te om uw milieu&#39;s te moderniseren.
 
-Wanneer de Adobe het verlenen van vergunningen van een AEM oplossing voor het eerst verwerkt, zullen twee Instanties van het Product in Adobe Admin Console, onder het Product van Adobe Experience Manager as a Cloud Service verschijnen:
+Als Adobe voor het eerst licenties voor een AEM-oplossing verwerkt, verschijnen er twee Product Instances in Adobe Admin Console, onder het Adobe Experience Manager as a Cloud Service-product:
 
-* **AEM op één niveau** - bevat één of meerdere Profiel van het Product dat toegang tot eigenschappen vertegenwoordigt die aan alle AEM milieu&#39;s, eerder dan enkel aan één enkel zijn
+* **AEM op één of ander niveau** - bevat één of meerdere Profiel van het Product dat toegang tot eigenschappen vertegenwoordigt die aan alle milieu&#39;s van AEM, eerder dan enkel aan één enkel zijn
 * **Cloud Manager** - bevat de Profielen van het Product die aan verschillende niveaus van toegang tot de eigenschappen van Cloud Manager beantwoorden.
 
 <!--
@@ -55,7 +55,7 @@ Wanneer de Adobe het verlenen van vergunningen van een AEM oplossing voor het ee
 
 ![ of de Instanties van het Product van het Niveau ](/help/onboarding/assets/orglevel.png)
 
-Binnen de AEM Org-Vlakke Instantie van het Product is een Profiel genoemd AEM Org-Vlakke Verslaggevers, die op dit ogenblik niet wordt gebruikt, maar in de toekomst kan zijn om toegang tot het terugwinnen van informatie over AEM productvergunningen te vertegenwoordigen.
+In de AEM Org-Level Product Instance bevindt zich een productprofiel met de naam AEM Org-Level Reporters, dat momenteel niet wordt gebruikt, maar in de toekomst wel toegang kan vertegenwoordigen tot het ophalen van informatie over AEM-productlicenties.
 
 Wanneer een Forms Communication Solution een licentie heeft, wordt een overeenkomstig productprofiel ook weergegeven onder de AEM Org-Level Product Instance.
 
@@ -63,7 +63,7 @@ Wanneer een Forms Communication Solution een licentie heeft, wordt een overeenko
 
 ### Product-instanties op milieuniveau en op niveau van niveaus {#environment-and-tier-level-product-instances}
 
-Nadat u nieuwe programma&#39;s hebt voorzien in een of meer AEM omgevingen, worden per omgeving twee productexemplaren weergegeven die productprofielen bevatten voor auteur en publiceren.
+Nadat u nieuwe programma&#39;s hebt voorzien in een of meer AEM-omgevingen, worden per omgeving twee Product-instanties weergegeven die productprofielen bevatten voor auteur en publiceren.
 
 ![ Instanties van het Product van het Milieu ](/help/onboarding/assets/env-productinstances.png)
 
@@ -81,15 +81,15 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <th>Beschrijving</th>
     </tr>
     <tr>
-        <td>AEM auteur</td>
+        <td>AEM-auteur</td>
         <td>AEM Sites Content Managers - auteur - Program <code>id</code> - Environment <code>id</code></td>
         <td>AEM Sites Content Managers</td>
         <td>
             <ul>
-                <li>Bedoeld voor gecontroleerde toegang tot AEM Sites-ontwerpfuncties in deze omgeving. Gebruikers in dit productprofiel zijn lid van de groep AEM AEM Sites-inhoud die automatisch in AEM wordt gemaakt. De AEM groepstoestemmingen zouden in AEM met het gewenste toegangsniveau moeten worden gevormd.</li><br>
+                <li>Bedoeld voor gecontroleerde toegang tot AEM Sites-ontwerpfuncties in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM Sites-groep die de inhoud heeft gemaakt en die automatisch in AEM wordt gemaakt. De AEM-groepsmachtigingen moeten in AEM worden geconfigureerd met het gewenste toegangsniveau.</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Sites Content Managers - Service".</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Sites Content Managers - Service".</li>
                       <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
                         <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
                     </ul>
@@ -99,14 +99,14 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
     </tr>
     <tr>
         <td></td>
-        <td>AEM Beheerders - auteur - Programma <code>id</code> - Omgeving <code>id</code></td>
-        <td>AEM</td>
+        <td>AEM-beheerders - auteur - Programma <code>id</code> - Omgeving <code>id</code></td>
+        <td>AEM-beheerders</td>
         <td>
             <ul>
-                <li>Bedoeld voor onbeperkte toegang tot functies van AEM auteur- en publicatieomgeving. De gebruikers in dit productprofiel zullen lid van de AEM van de auteur AEM groep van Beheerders zijn automatisch gecreeerd in AEM.</li><br>
+                <li>Bedoeld voor onbeperkte toegang tot AEM-functies voor auteur en publicatie van omgeving. Gebruikers in dit productprofiel zijn lid van de AEM Administrator's auteurgroep van AEM die automatisch in AEM wordt gemaakt.</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Beheerders - Service"</li>
+                        <li>gebruikers in dit productprofiel zullen ook lid zijn van de AEM-groep "AEM Administrators - Service"</li>
                     </ul>
                 </li>
             </ul>
@@ -114,14 +114,14 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
     </tr>
     <tr>
         <td></td>
-        <td>AEM Gebruikers - auteur - Programma <code>id</code> - Omgeving <code>id</code></td>
-        <td>AEM</td>
+        <td>AEM Users - auteur - Program <code>id</code> - Environment <code>id</code></td>
+        <td>AEM-gebruikers</td>
         <td>
             <ul>
-                <li>Bedoeld voor zeer beperkte toegang tot AEM functies voor de auteursomgeving. Gebruikers in dit productprofiel zijn lid van de AEM "Medewerkers" die automatisch in AEM worden gemaakt</li><br>
+                <li>Bedoeld voor zeer beperkte toegang tot de milieueigenschappen van de AEM-auteur. Gebruikers in dit productprofiel zijn lid van de AEM-groep "Medewerkers" die automatisch in AEM wordt gemaakt</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Users - Service"</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Users - Service"</li>
                     </ul>
                 </li>
             </ul>
@@ -129,8 +129,8 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
     </tr>
     <tr>
         <td></td>
-        <td>AEM Verslaggevers - auteur - Program <code>id</code> - Omgeving <code>id</code></td>
-        <td>AEM Verslaggevers</td>
+        <td>AEM Reporters - auteur - Program <code>id</code> - Environment <code>id</code></td>
+        <td>AEM Reporters</td>
         <td>
             <ul>
                 <li>Momenteel niet gebruikt, maar in de toekomst kan toegang tot rapporteringsinformatie over de auteursrij voor dit milieu verlenen.</li>
@@ -143,10 +143,10 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Assets Collaborator-gebruikers</td>
         <td>
         <ul>
-                <li>Bedoeld voor alleen-lezen toegang tot de DAM. Gebruikers in dit productprofiel zijn lid van de AEM "Medewerkers" die automatisch in AEM worden gemaakt.
+                <li>Bedoeld voor alleen-lezen toegang tot de DAM. Gebruikers in dit productprofiel zijn lid van de AEM-groep "Medewerkers" die automatisch in AEM wordt gemaakt.
                 </li>
                 <li>
-                Bovendien worden hiermee de rechten van de Adobe Express op het creëren van variaties in activa vastgelegd.
+                Bovendien biedt het de Adobe Express-rechten om assetvariaties te maken.
                 </li>
           <ul>
     </tr>
@@ -156,10 +156,10 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Assets Power Users</td>
 <td>
         <ul>
-                <li>Bedoeld voor alleen-lezen toegang tot de DAM. Gebruikers in dit productprofiel zijn lid van de AEM "Medewerkers" die automatisch in AEM worden gemaakt.
+                <li>Bedoeld voor alleen-lezen toegang tot de DAM. Gebruikers in dit productprofiel zijn lid van de AEM-groep "Medewerkers" die automatisch in AEM wordt gemaakt.
                 </li>
                 <li>
-                Bovendien worden hiermee de rechten van de Adobe Express op het creëren van variaties in activa vastgelegd.
+                Bovendien biedt het de Adobe Express-rechten om assetvariaties te maken.
                 </li>
           <ul>
 </td>
@@ -170,10 +170,10 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Forms Content Managers</td>
         <td>
             <ul>
-                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms-ontwerpfuncties in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM AEM Forms-gebruikers, die automatisch in AEM wordt gemaakt.</li><br>
+                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms-ontwerpfuncties in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM-groep voor AEM Forms-formulieren en gebruikers, die automatisch in AEM wordt gemaakt.</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Forms Content Managers - Service".</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Forms Content Managers - Service".</li>
                     </ul>
                 </li>
             </ul>
@@ -185,10 +185,10 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Forms Developers</td>
         <td>
             <ul>
-                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms-ontwerpfuncties in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM AEM Forms-groep voor gebruikers in de formuliervoeding, die automatisch wordt gemaakt in AEM. Deze gebruikers hebben het recht om XDP's en de auteur Modellen van de Gegevens van de Vorm ook naast normale vormauteurstaken te uploaden.</li><br>
+                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms-ontwerpfuncties in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM-groep voor gebruikers die gebruikmaken van AEM Forms-formulieren, die automatisch wordt gemaakt in AEM. Deze gebruikers hebben het recht om XDP's en de auteur Modellen van de Gegevens van de Vorm ook naast normale vormauteurstaken te uploaden.</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Forms Developers - Service".</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Forms Developers - Service".</li>
                     </ul>
                 </li>
             </ul>
@@ -200,25 +200,25 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Forms Communications Service-gebruikers</td>
         <td>
             <ul>
-                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms Communications Services-functies in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM AEM Forms-gebruikers, die automatisch in AEM wordt gemaakt.</li><br>
+                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms Communications Services-functies in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM-groep voor AEM Forms-formulieren en gebruikers, die automatisch in AEM wordt gemaakt.</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Forms Communications Service Users - Service".</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Forms Communications Service Users - Service".</li>
                     </ul>
                 </li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>AEM Publish</td>
-        <td>AEM - Publiceren - Programma <code>id</code> - Omgeving <code>id</code></td>
-        <td>AEM</td>
+        <td>AEM Publiceren</td>
+        <td>AEM Users - publish - Program <code>id</code> - Environment <code>id</code></td>
+        <td>AEM-gebruikers</td>
         <td>
             <ul>
-                <li>Bedoeld voor zeer beperkte toegang tot AEM functies voor de auteursomgeving. Gebruikers in dit productprofiel zijn lid van de AEM "contrib" die automatisch worden gemaakt in AEM</li><br>
+                <li>Bedoeld voor zeer beperkte toegang tot de milieueigenschappen van de AEM-auteur. Gebruikers in dit productprofiel zijn lid van de AEM-groep "Contribute" die automatisch in AEM wordt gemaakt</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Users - Service".</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Users - Service".</li>
                     </ul>
                 </li>
             </ul>
@@ -226,8 +226,8 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
     </tr>
     <tr>
         <td></td>
-        <td>AEM Verslaggevers - Publiceren - Programma <code>id</code> - Milieu <code>id</code></td>
-        <td>AEM Verslaggevers</td>
+        <td>AEM-verslaggevers - publiceren - Programma <code>id</code> - Omgeving <code>id</code></td>
+        <td>AEM Reporters</td>
         <td>
             <ul>
                 <li>Momenteel niet gebruikt, maar in de toekomst kan dit voor deze omgeving toegang bieden tot rapportage-informatie over de publicatielaag.</li>
@@ -240,10 +240,10 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Forms Communications Service-gebruikers</td>
         <td>
             <ul>
-                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms Communications Services-functies in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM AEM Forms-gebruikers, die automatisch in AEM wordt gemaakt.</li><br>
+                <li>Bedoeld voor gecontroleerde toegang tot AEM Forms Communications Services-functies in deze omgeving. Gebruikers in dit productprofiel zijn lid van de AEM-groep voor AEM Forms-formulieren en gebruikers, die automatisch in AEM wordt gemaakt.</li><br>
                 <li>Als de standaardservice geselecteerd blijft
                     <ul>
-                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM "AEM Forms Communications Service Users - Service".</li>
+                        <li>gebruikers in dit productprofiel zijn ook lid van de AEM-groep "AEM Forms Communications Service Users - Service".</li>
                     </ul>
                 </li>
             </ul>
@@ -251,36 +251,36 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
     </tr>
 </table>
 
-Merk op dat elk Profiel van het Product een bijbehorende Dienst van het Profiel van het Product heeft die door gebrek wordt toegelaten. Tenzij u complexe toegangsvereisten hebt, wordt het geadviseerd om enkel de StandaardDienst geselecteerd te houden. Een overeenkomstige AEM groep zal in AEM met de noemende overeenkomst `<Product Profile Prefix> - Service` worden gecreeerd (bijvoorbeeld, **de Inhoud van AEM Sites Managers - Dienst**), en de gebruikers in de profielen van het ouderproduct zullen automatisch leden van die overeenkomstige AEM groep worden.
+Merk op dat elk Profiel van het Product een bijbehorende Dienst van het Profiel van het Product heeft die door gebrek wordt toegelaten. Tenzij u complexe toegangsvereisten hebt, wordt het geadviseerd om enkel de StandaardDienst geselecteerd te houden. Een overeenkomstige groep van AEM zal in AEM met de noemende overeenkomst `<Product Profile Prefix> - Service` (bijvoorbeeld, **de Inhoud van AEM Sites Managers - de Dienst**) worden gecreeerd, en de gebruikers in de profielen van het ouderproduct zullen automatisch lid van die overeenkomstige groep van AEM worden.
 
-De AEM groep in AEM verbonden aan de dienst zal de samengevoegde reeks gebruikers hebben die in alle bijbehorende Profielen van het Product van die dienst voor die milieu-rij combinatie bestaan.
+De AEM-groep in AEM die aan de service is gekoppeld, heeft de geaggregeerde set gebruikers die in alle bijbehorende productprofielen van die service voor die combinatie op milieuniveau bestaan.
 
 ![ de Diensten ](/help/onboarding/assets/services.png)
 
-De volgende afbeelding vertegenwoordigt de AEM groepen die overeenkomen met het productprofiel en de service van de auteur van AEM Sites Content Managers.
+In de volgende afbeelding ziet u de AEM-groepen die overeenkomen met de productprofiel en service van de auteur van AEM Sites Content Managers.
 
-![ AEM Groep aan de afbeelding van de Dienst ](/help/onboarding/assets/profile-to-service-mapping.png)
+![ Groep van AEM aan de afbeelding van de Dienst ](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >
 >Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **** rol van de Gebruiker van Cloud Manager.
 >
->De gebruikers met slechts de **rol van de Gebruiker 0} Cloud Manager kunnen in Cloud Manager registreren en aan de AEM auteursmilieu&#39;s (als zij bestaan) navigeren door de** Programma&#39;s **menuopties te gebruiken.** De **rol van de Gebruiker van 0} Cloud Manager {is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
+>De gebruikers met slechts de **rol van de Gebruiker 0} Cloud Manager kunnen in Cloud Manager registreren en aan de de auteursmilieu&#39;s van AEM navigeren (als zij) bestaan door de** Programma&#39;s **menuopties te gebruiken.** De **rol van de Gebruiker van 0} Cloud Manager {is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
 
 >[!WARNING]
 >
->De **AEM Beheerders** naam van het productprofiel moet niet worden veranderd. Het veranderen van de naam van het **AEM Beheerders** productprofiel zal beheerderrechten uit alle gebruikers verwijderen die aan dat profiel worden toegewezen.
+>De **Beheerders van AEM** productprofielnaam moet niet worden veranderd. Het veranderen van de naam van het **productprofiel van de Beheerders van AEM** {zal beheerderrechten uit alle gebruikers verwijderen die aan dat profiel worden toegewezen.
 
 >[!TIP]
 >
->* Meer over AEM productprofielen leren, zie [ Toewijzend AEM Profielen van het Product ](/help/journey-onboarding/assign-profiles-aem.md).
+>* Meer over het productprofielen van AEM leren, zie [ Toewijzend de Profielen van het Product van AEM ](/help/journey-onboarding/assign-profiles-aem.md).
 >* Voor meer informatie over het onboarding proces, zie [ onboarding reis ](/help/journey-onboarding/overview.md).
 
 ### Productprofielen toevoegen voor bestaande omgevingen {#adding-product-profiles-for-existing-environments}
 
-In omgevingen die vóór begin november 2024 zijn gemaakt, ontbreekt mogelijk de in bovenstaande secties beschreven productinstantie op Org-niveau en bepaalde productprofielen. Bestaande productprofielen zullen ook de de dienstknevels missen. U wordt aangeraden deze productprofielen bij te werken. Dit is een eerste vereiste voor toegang tot bepaalde toekomstige API&#39;s.
+In omgevingen die vóór begin april 2024 zijn gemaakt, ontbreken mogelijk de in bovenstaande secties beschreven productinstantie op Org-niveau en bepaalde productprofielen. Bestaande productprofielen zullen ook de de dienstknevels missen. U wordt aangeraden deze productprofielen bij te werken. Dit is een eerste vereiste voor toegang tot bepaalde toekomstige API&#39;s.
 
-Als voor een of meer omgevingen in een programma de productprofielen moeten worden bijgewerkt, geeft Cloud Manager de onderstaande kennisgeving weer. Merk op dat een milieu op de recentste AEM versie moet zijn alvorens zijn productprofielen kunnen worden bijgewerkt.
+Als voor een of meer omgevingen in een programma de productprofielen moeten worden bijgewerkt, geeft Cloud Manager de onderstaande kennisgeving weer. Merk op dat een milieu op de recentste versie van AEM moet zijn alvorens zijn productprofielen kunnen worden bijgewerkt.
 
 ![ Moderniseer de Profielen van het Product ](/help/onboarding/assets/modernize-product-profiles.png)
 
@@ -308,10 +308,10 @@ Cloud Manager beschikt over vooraf geconfigureerde productprofielen die kunnen w
 Aan elk van de productprofielen zijn specifieke machtigingen gekoppeld.
 
 * **BedrijfsEigenaar**
-   * In deze rol hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, code in AEM milieu op te stellen, of de controles van de codekwaliteit uit te voeren.
+   * In deze rol hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, code in het milieu van AEM op te stellen, of de controles van de codekwaliteit uit te voeren.
    * Deze gebruiker is verantwoordelijk voor het definiëren van KPI&#39;s, het goedkeuren van productieimplementaties en het overschrijven van belangrijke 3-tivelige fouten indien nodig.
 * **Manager van de Plaatsing**
-   * In deze rol, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code op te stellen aan AEM milieu, of de controles van de codekwaliteit uit te voeren.
+   * In deze rol, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code in het milieu van AEM op te stellen, of de controles van de codekwaliteit uit te voeren.
    * Deze gebruiker beheert implementatiebewerkingen en gebruikt Cloud Manager om staging-/productieimplementaties uit te voeren, CI-/CD-pijpleidingen te bewerken, belangrijke 3-tielfouten indien nodig goed te keuren en toegang te krijgen tot de git-opslagruimte.
 * **Ontwikkelaar**
    * In deze rol, hebt u de toestemming om persoonlijke toegangstokens te produceren om tot git toegang te hebben.
