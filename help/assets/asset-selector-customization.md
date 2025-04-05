@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik functies om de kiezer van het element in uw toepassing aan te passen.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -57,12 +57,13 @@ Met Asset Selector kunt u verschillende componenten aanpassen op basis van voork
 * [Selectie van Assets](#selection-of-assets)
 * [Verlopen elementen aanpassen](#customize-expired-assets)
 * [Contextafhankelijke aanroepfilter](#contextual-invocation-filter)
+* [dragOptions, eigenschap](#drag-options-property)
 
-U moet de eerste vereisten in het {**dossier 0} index.html of een gelijkaardig dossier binnen uw toepassingsimplementatie bepalen om de authentificatiedetails te bepalen om tot de [!DNL Experience Manager Assets] bewaarplaats toegang te hebben.** Als u klaar bent, kunt u naar wens codefragmenten toevoegen.
+U moet de eerste vereisten in het {**dossier 0} index.html of een gelijkaardig dossier binnen uw toepassingsimplementatie bepalen om de authentificatiedetails te bepalen om tot de [!DNL Experience Manager Assets] bewaarplaats toegang te hebben.** Als u klaar bent, kunt u codefragmenten toevoegen volgens uw vereisten.
 
-## Deelvenster Filter aanpassen {#customize-filter-panel}
+## Filterpaneel aanpassen {#customize-filter-panel}
 
-U kunt het volgende codefragment toevoegen in het object `assetSelectorProps` om het filterdeelvenster aan te passen:
+U kunt het volgende codefragment toevoegen aan `assetSelectorProps` het object om het filterpaneel aan te passen:
 
 ```
 filterSchema: [
@@ -211,18 +212,18 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 | *repo:assetClass* | string | De classificatie van het element (bijvoorbeeld afbeelding, video, document). |
 | *repo:name* | string | De naam van het element, inclusief de bestandsextensie. |
 | *repo:grootte* | getal | De grootte van het element in bytes. |
-| *repo:weg* | string | De locatie van het middel in de opslagplaats. |
+| *repo:pad* | snaar | De locatie van het item in de opslagplaats. |
 | *repo:voorouders* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
 | *repo:staat* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
 | *repo:createdBy* | string | De gebruiker of het systeem dat het element heeft gemaakt. |
 | *reactie:createDate* | string | De datum en tijd waarop het element is gemaakt. |
 | *repo:modifiedBy* | string | De gebruiker of het systeem dat het element als laatste heeft gewijzigd. |
-| *reactie:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
+| *repo:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
 | *dc:formaat* | string | De indeling van het element, zoals het bestandstype (bijvoorbeeld JPEG, PNG, enzovoort). |
-| *tiff:imageWidth* | getal | De breedte van een element. |
+| *tiff:imageWidth* | getal | The width of an asset. |
 | *tiff:imageLength* | getal | De hoogte van een element. |
-| *computedMetadata* | `Record<string, any>` | Een object dat een emmertje vertegenwoordigt voor alle soorten metagegevens van het element (gegevensopslagruimte, toepassing of ingesloten metagegevens). |
-| *_links* | `Record<string, any>` | Hypermediakoppelingen voor het bijbehorende element. Bevat koppelingen voor bronnen zoals metagegevens en uitvoeringen. |
+| *computedMetadata* | `Record<string, any>` | Een object dat een bucket vertegenwoordigt voor alle soorten metagegevens van het item (repository, toepassing of ingesloten metagegevens). |
+| *_Verwijzigingen* | `Record<string, any>` | Hypermediakoppelingen voor het bijbehorende item. Bevat koppelingen voor bronnen zoals metagegevens en uitvoeringen. |
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | string | De URI naar de vertoning. |
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | string | Het MIME-type van de vertoning. |
@@ -230,15 +231,15 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | getal | De breedte van de vertoning. |
 | *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | getal | De hoogte van de vertoning. |
 
-### Selectie van Assets afhandelen met behulp van objectschema {#handling-selection}
+### Verwerking van selectie van activa met behulp van objectschema {#handling-selection}
 
-De eigenschap `handleSelection` wordt gebruikt om één of meerdere selecties van Assets in Assets Selector af te handelen. In het onderstaande voorbeeld wordt de gebruikssyntaxis van `handleSelection` weergegeven.
+De `handleSelection` eigenschap wordt gebruikt om enkele of meerdere selecties van activa in de activakiezer te verwerken. Het onderstaande voorbeeld geeft de syntaxis van het gebruik van `handleSelection`.
 
-![ handvat-selectie ](assets/handling-selection.png)
+![Selectie van handvat](assets/handling-selection.png)
 
-### Selectie van Assets uitschakelen {#disable-selection}
+### Selectie van activa uitschakelen {#disable-selection}
 
-Selectie uitschakelen wordt gebruikt om te verbergen of uit te schakelen dat de elementen of mappen kunnen worden geselecteerd. Het selectiekader van de kaart of het element dat u selecteert, wordt verborgen. Hierdoor wordt het selectievakje niet ingeschakeld. Als u deze functie wilt gebruiken, kunt u de positie opgeven van een element of map die u in een array wilt uitschakelen. Als u bijvoorbeeld de selectie van een map op de eerste positie wilt uitschakelen, kunt u de volgende code toevoegen:
+Selectie uitschakelen wordt gebruikt om de items of mappen te verbergen of uit te schakelen. Het verbergt het selectievakje van de kaart of het activum, waardoor het niet kan worden geselecteerd. Als u deze functie wilt gebruiken, kunt u de positie opgeven van een element of map die u in een array wilt uitschakelen. Als u bijvoorbeeld de selectie van een map op de eerste positie wilt uitschakelen, kunt u de volgende code toevoegen:
 `disableSelection: [0]:folder`
 
 U kunt een lijst met MIME-typen (zoals afbeeldingen, mappen, bestanden of andere MIME-typen, bijvoorbeeld afbeeldingen/jpeg) opgeven die u wilt uitschakelen. De mime-typen die u declareert, worden toegewezen aan `data-card-type` - en `data-card-mimetype` -kenmerken van een element.
@@ -282,9 +283,9 @@ expiryOptions: {
 }
 ```
 
-### Selectie van een verlopen element {#selection-of-expired-asset}
+### Selectie van een verlopen activum {#selection-of-expired-asset}
 
-U kunt het gebruik van een verlopen element aanpassen om het selecteerbaar of niet-selecteerbaar te maken. U kunt aanpassen of u het slepen en neerzetten van een verlopen element op het canvas Asset Selector wilt toestaan of niet. Hiervoor gebruikt u de volgende parameters om een element op het canvas niet-selecteerbaar te maken:
+U kunt het gebruik van een verlopen asset aanpassen om het selecteerbaar of niet-selecteerbaar te maken. U kunt aanpassen of u het slepen en neerzetten van een verlopen item op het canvas van de Asset Selector wilt toestaan of niet. Hiervoor gebruikt u de volgende parameters om een element op het canvas niet-selecteerbaar te maken:
 
 ```
 expiryOptions:{
@@ -390,11 +391,11 @@ Gebruik het volgende codefragment om pop-upbericht voor het gebruik van een verl
 
 ## Contextafhankelijke aanroepfilter{#contextual-invocation-filter}
 
-Met Asset Selector kunt u een tagkiezerfilter toevoegen. De tag wordt ondersteund door een taggroep waarin alle relevante tags worden gecombineerd met een bepaalde taggroep. Bovendien kunt u extra tags selecteren die overeenkomen met het element dat u zoekt. Bovendien kunt u de standaardtaggroepen onder het contextafhankelijke aanroepingsfilter die meestal door u worden gebruikt, ook instellen zodat ze onderweg toegankelijk zijn voor u.
+Met Asset Selector kunt u een tagkiezerfilter toevoegen. De tag wordt ondersteund door een taggroep waarin alle relevante tags worden gecombineerd met een bepaalde taggroep. Bovendien kunt u extra tags selecteren die overeenkomen met het element dat u zoekt. Moreover, you can also set the default tag groups under the contextual invocation filter that are mostly used by you so that they are accessible to you on the go.
 
 >
 >
-> * U moet een codefragment voor contextafhankelijke aanroepcode toevoegen om een tagfilter in de zoekopdracht in te schakelen.
+> * You need to add contextual invocation code snippet to enable tagging filter in the search.
 > * Het is verplicht de eigenschap name te gebruiken die overeenkomt met het type taggroep `(property=xcm:keywords.id=)` .
 
 Syntaxis:
@@ -440,7 +441,7 @@ const filterSchema = useMemo ((); => {
 }, [selectedTags]);
 ```
 
-![ filter van de markeringsgroep ](assets/tag-group.gif)
+![tag group filter](assets/tag-group.gif)
 
 ## Uploaden in Asset Selector {#upload-in-asset-selector}
 
@@ -449,9 +450,9 @@ U kunt bestanden of mappen vanuit uw lokale bestandssysteem uploaden naar Asset 
 * [Eenvoudig formuliercodefragment uploaden](#basic-upload)
 * [Uploaden met metagegevens](#upload-with-metadata)
 * [Aangepaste upload](#customized-upload)
-* [Uploaden met bronnen van derden](#upload-using-third-party-source)
+* [Uploaden met behulp van bronnen van derden](#upload-using-third-party-source)
 
-### Basisupload formulier {#basic-upload}
+### Basis upload formulier {#basic-upload}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -486,7 +487,7 @@ export const UploadExample = () => {
 }
 ```
 
-### Uploaden met metagegevens {#upload-with-metadata}
+### Uploaden met metadata {#upload-with-metadata}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -641,6 +642,18 @@ const ControlledUploadExample = () => {
         </Flex>
     )
 }
+```
+
+### dragOptions, eigenschap {#drag-options-property}
+
+```
+dragOptions: {
+            allowList: {
+                '*': true,          // allow all types to be dragged
+                'folder': false,    // except those explicitly set to disallow
+                'image/jpeg': false // or those with specific mimeTypes
+            },
+         }
 ```
 
 >[!MORELIKETHIS]

@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nieuwe</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime en Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
@@ -53,10 +53,10 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |---|---|---|---|---|
-| *spoorstaaf* | Boolean | Nee | Onwaar | Indien gemarkeerd `true` , wordt Asset Selector weergegeven in een linkerspoorweergave. Als deze is gemarkeerd met `false` , wordt de Asset Selector weergegeven in de modale weergave. |
+| *spoorstaaf* | Boolean | Nee | Vals | Indien gemarkeerd `true` , wordt Asset Selector weergegeven in een linkerspoorweergave. Als deze is gemarkeerd met `false` , wordt de Asset Selector weergegeven in de modale weergave. |
 | *imsOrg* | String | Ja | | Adobe Identity Management System (IMS)-id die tijdens de provisioning [!DNL Adobe Experience Manager] is toegewezen als een [!DNL Cloud Service] voor uw organisatie. De `imsOrg` -toets is vereist om te verifiëren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
-| *imsToken* | String | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u een [!DNL Adobe] -toepassing voor de integratie gebruikt. |
-| *apiKey* | String | Nee | | API-sleutel voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u een [!DNL Adobe] -toepassingsintegratie gebruikt. |
+| *imsToken* | Snaar | Nee | | IMS-bearer-token gebruikt voor authenticatie. `imsToken` is vereist als u een [!DNL Adobe] applicatie gebruikt voor de integratie. |
+| *apiKey* | Snaar | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u een [!DNL Adobe] applicatie-integratie gebruikt. |
 | *filterSchema* | Array | Nee | | Model dat wordt gebruikt om filtereigenschappen te vormen. Dit is handig wanneer u bepaalde filteropties in de Asset Selector wilt beperken. |
 | *filterFormProps* | Object | Nee | | Geef de filtereigenschappen op die u nodig hebt om de zoekopdracht te verfijnen. Voor! Voorbeeld: MIME-type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nee |                 | Geef de geselecteerde Assets op wanneer de Asset Selector wordt weergegeven. Een array van objecten is vereist die een id-eigenschap van de elementen bevat. `[{id: 'urn:234}, {id: 'urn:555'}]` Een element moet bijvoorbeeld beschikbaar zijn in de huidige map. Als u een andere map moet gebruiken, geeft u ook een waarde op voor de eigenschap `path` . |
@@ -66,20 +66,20 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *repositoryId* | String | Nee | &#39;&#39; | Opslagplaats waar de inhoud wordt geladen door de Asset Selector. |
 | *additionalAemSolutions* | `Array<string>` | Nee | [ ] | Hiermee kunt u een lijst met extra AEM-opslagplaatsen toevoegen. Als deze eigenschap geen informatie bevat, worden alleen mediawisselaars of AEM Assets-opslagruimten in aanmerking genomen. |
 | *hideTreeNav* | Boolean | Nee |  | Hiermee geeft u op of de zijbalk met boomnavigatie met elementen moet worden weergegeven of verborgen. Het wordt alleen in modale zin gebruikt en daarom heeft dit onroerend goed geen effect in de spoorwegen. |
-| *onDrop* | Functie | Nee | | Met de eigenschap kan een element worden neergezet. |
+| *onDrop* | Functie | Nee | | De eigenschap maakt de drop-functionaliteit van een asset mogelijk. |
 | *dropOptions* | `{allowList?: Object}` | Nee | | Vormt dalingsopties gebruikend &quot;lijst van gewenste personen&quot;. |
-| *colorScheme* | String | Nee | | Configureer het thema (`light` of `dark` ) voor de Asset Selector. |
-| *Thema* | String | Nee | Standaard | Pas thema toe op de toepassing Asset Selector tussen `default` en `express` . Deze ondersteunt ook `@react-spectrum/theme-express` . |
+| *colorScheme* | String | Nee | | Configureer thema (`light` of `dark`) voor de itemkiezer. |
+| *Thema* | Snaar | Nee | Verstek | Thema toepassen op de Asset Selector-toepassing tussen `default` en `express`. Deze ondersteunt ook `@react-spectrum/theme-express` . |
 | *handleSelection* | Functie | Nee | | Wordt aangeroepen met een array van elementen wanneer elementen worden geselecteerd en op de knop `Select` op het modale object wordt geklikt. Deze functie wordt alleen aangeroepen in de modale weergave. Gebruik voor de rasterweergave de functies `handleAssetSelection` of `onDrop` . Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {..}</pre> Zie [ selectie van activa ](/help/assets/asset-selector-customization.md#selection-of-assets) voor details. |
 | *handleAssetSelection* | Functie | Nee | | Wordt aangeroepen met een array van items wanneer de elementen worden geselecteerd of niet geselecteerd. Dit is handig wanneer u naar elementen wilt luisteren terwijl de gebruiker deze selecteert. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {..}</pre> Zie [ selectie van activa ](/help/assets/asset-selector-customization.md#selection-of-assets) voor details. |
 | *onClose* | Functie | Nee | | Wordt aangeroepen wanneer op de knop `Close` in de modale weergave wordt gedrukt. Dit wordt alleen aangeroepen in de `modal` -weergave en wordt in `rail` -weergave genegeerd. |
 | *onFilterSubmit* | Functie | Nee | | Wordt aangeroepen met filteritems wanneer de gebruiker andere filtercriteria wijzigt. |
 | *selectionType* | String | Nee | Enkel | Configuratie voor `single` of `multiple` selectie van elementen tegelijk. |
-| *dragOptions.lijst van gewenste personen* | boolean | Nee | | De eigenschap wordt gebruikt om het slepen van elementen die niet kunnen worden geselecteerd toe te staan of te weigeren. |
+| *dragOptions.lijst van gewenste personen* | boolean | Nee | | De eigenschap wordt gebruikt om het slepen van elementen die niet kunnen worden geselecteerd toe te staan of te weigeren. Zie [ dragOptions Bezit ](/help/assets/asset-selector-customization.md#drag-options-property) |
 | *nameTierType* | String | Nee |  | Hiermee kunt u selecteren of u elementen uit de leveringslaag, de auteurslaag of beide wilt weergeven. <br><br> Syntaxis: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Als bijvoorbeeld beide `["author","delivery"]` worden gebruikt, worden opties voor zowel auteur als levering weergegeven door de repository switch. |
 | *handleNavigateToAsset* | Functie | Nee | | Het is een callback functie om selectie van activa te behandelen. |
 | *noWrap* | Boolean | Nee | | Het *noWrap* bezit helpt teruggevend de Selecteur van Activa in het paneel van de zijspoorstaaf. Als dit bezit niet wordt vermeld, geeft het de *mening van de Dialoog* door gebrek terug. |
-| *dialogSize* | overnemen op klein, middelgroot, groot, volledig scherm of volledig scherm | String | Optioneel | U kunt de lay-out bepalen door zijn grootte te specificeren gebruikend de bepaalde opties. |
+| *dialoogvensterGrootte* | Overname klein, middelgroot, groot, volledig scherm of volledig scherm | String | Optioneel | U kunt de lay-out bepalen door zijn grootte te specificeren gebruikend de bepaalde opties. |
 | *colorScheme* | Licht of donker | Nee | | Deze eigenschap wordt gebruikt om het thema van een toepassing Asset Selector in te stellen. U kunt kiezen tussen licht of donker thema. |
 | *filterRepoList* | Functie | Nee |  | U kunt de callback-functie `filterRepoList` gebruiken die een Experience Manager-opslagplaats aanroept en een gefilterde lijst met opslagplaatsen retourneert. |
 | *endOptions* | Functie | | | U kunt tussen de volgende twee eigenschappen gebruiken: **getExpiryStatus** die status van een verlopen activa verstrekt. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [ verlopen activa ](/help/assets/asset-selector-customization.md#customize-expired-assets) aanpassen. Bovendien, kunt u **allowSelectionAndDrag** gebruiken waarin de waarde van de functie of `true` of `false` kan zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
