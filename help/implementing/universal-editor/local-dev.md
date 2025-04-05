@@ -4,9 +4,9 @@ description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lo
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -16,36 +16,40 @@ ht-degree: 0%
 
 Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lokale ontwikkeling of als onderdeel van uw eigen infrastructuur.
 
+>[!NOTE]
+>
+>De lokale Universele Diensten van de Redacteur worden niet vereist of gesteund voor projecten die AEM authoring met Edge Delivery Services gebruiken.
+
 ## Overzicht {#overview}
 
 De Universal Editor-service bindt de Universal Editor en het back-endsysteem. Als u zich lokaal voor de Universele Redacteur wilt kunnen ontwikkelen, moet u een lokaal exemplaar van de Universele Dienst van de Redacteur in werking stellen. Dit komt omdat:
 
-* De officiële Universal Editor Service van Adobe wordt wereldwijd gehost en uw lokale AEM-instantie moet worden blootgesteld aan internet.
-* Tijdens de ontwikkeling met een lokale AEM SDK, heeft de Universal Editor Service van Adobe geen toegang tot internet.
-* Als uw AEM instantie IP beperkingen heeft en de Universele Dienst van de Redacteur van de Adobe niet in een bepaalde IP waaier is, kunt u het zelf ontvangen.
+* De officiële Universal Editor-service van Adobe wordt wereldwijd gehost en uw lokale AEM-exemplaar moet beschikbaar zijn voor internet.
+* Tijdens het ontwikkelen met een lokale AEM SDK, heeft Adobe Universal Editor Service geen toegang tot internet.
+* Als uw instantie van AEM IP beperkingen heeft en de Universele Dienst van de Redacteur van Adobe niet in een bepaalde IP waaier is, kunt u het zelf ontvangen.
 
 ## Gevallen gebruiken {#use-cases}
 
 Uw eigen exemplaar van de Universal Editor-service is handig als u het volgende wilt doen:
 
-* Lokaal ontwikkelen op AEM voor gebruik met de Universele Redacteur.
-* Voer uw eigen Universal Editor Service uit als onderdeel van uw eigen infrastructuur, onafhankelijk van de Universal Editor Service van Adobe.
+* Lokaal ontwikkelen op AEM voor gebruik met de Universal Editor.
+* Voer uw eigen Universal Editor Service uit als onderdeel van uw eigen infrastructuur, onafhankelijk van de Adobe Universal Editor Service.
 
-Beide gebruiksgevallen worden ondersteund. In dit document wordt uitgelegd hoe u AEM uitvoert in HTTPS naast een lokale kopie van de Universal Editor-service.
+Beide gebruiksgevallen worden ondersteund. In dit document wordt uitgelegd hoe u AEM in HTTPS kunt uitvoeren naast een lokale kopie van de Universal Editor Service.
 
 Als u uw eigen Universal Editor-service wilt uitvoeren als onderdeel van uw eigen infrastructuur, voert u dezelfde stappen uit als in het lokale ontwikkelingsvoorbeeld.
 
-## AEM instellen voor uitvoering op HTTPS {#aem-https}
+## AEM instellen om op HTTPS te worden uitgevoerd {#aem-https}
 
 Binnen een buitenframe dat is beveiligd met HTTPS, kan een onbeveiligd HTTP-frame niet worden geladen. De Universal Editor Service wordt uitgevoerd op HTTPS en daarom moet AEM of een andere externe pagina ook worden uitgevoerd op HTTPS.
 
-Hiervoor moet u AEM instellen voor uitvoering op HTTPS. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
+Hiervoor moet u AEM instellen om op HTTPS te kunnen worden uitgevoerd. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
 
-[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) op hoe te opstelling AEM lopend op HTTPS met inbegrip van een zelf-ondertekend certificaat u kunt gebruiken.
+[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
 
 ## De Universal Editor-service installeren {#install-ue-service}
 
-De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universele Redacteur, maar slechts een ondergroep van zijn eigenschappen om ervoor te zorgen dat de vraag van uw lokale AEM milieu niet over Internet wordt verpletterd, maar van een bepaald eindpunt u controleert.
+De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universele Redacteur, maar slechts een ondergroep van zijn eigenschappen om ervoor te zorgen dat de vraag van uw lokale milieu van AEM niet over Internet wordt verpletterd, maar van een bepaald eindpunt u controleert.
 
 [ versie NodeJS 20 ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
 
@@ -148,7 +152,7 @@ Als deze eenmaal is ingesteld, wordt elke aanroep van de inhoudsupdate weergegev
 
 >[!TIP]
 >
->Voor meer details op hoe de pagina&#39;s van instrumenten worden voorzien om de Globale Universele Dienst van de Redacteur te gebruiken, zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#instrument-page)
+>Voor meer details op hoe de pagina&#39;s van instrumenten worden voorzien om de Globale Universele Dienst van de Redacteur te gebruiken, zie het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#instrument-page)
 
 ## Een pagina bewerken met de lokale universele editor {#editing}
 

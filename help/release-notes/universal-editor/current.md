@@ -4,10 +4,10 @@ description: Dit zijn de releaseopmerkingen voor de release 2025.03.10 van de Un
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b3c98f5e41dbc5e1714d0ed418a317199c735b73
+source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 1%
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,15 @@ Dit zijn de opmerkingen bij de release van 10 maart 2025 van de Universal Editor
 * **Bewegende Componenten:** [ Bewegende componenten tussen containers ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) neemt nu de componentenfilter van de doelcontainer waar.
    * Er is niet meer een vereiste om de zelfde [ filterdefinitie ](/help/implementing/universal-editor/filtering.md) op zijn plaats voor zowel doel als bestemmingscontainers te hebben om de component tussen de containers te bewegen.
 * **Vergrendelde Pagina&#39;s:** De Universele Dienst van de Redacteur neemt de [ vergrendelingsstatus van een pagina ](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) waar en schrijft slechts aan pagina&#39;s die niet worden gesloten of door de gebruiker worden gesloten.
+
+## Nieuwe extensies voor de universele editor {#extensions}
+
+Een aantal nieuwe uitbreidingen zijn vrijgegeven op [ Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/) voor de Universele Redacteur, die de auteurservaring verbetert.
+
+* **uitbreiding MSM**: U kunt erfenis van componenten/blokken nu breken en opnieuw concretiseren gebruikend deze uitbreiding.
+* **Uitbreiding van de Eigenschappen van de Pagina**: Heb toegang tot het pagina eigenschappenvenster van de pagina direct van de Universele Redacteur gebruikend deze uitbreiding.
+* **Uitbreiding van het Werkschema**: De werkschema&#39;s van het gebruik op pagina&#39;s en de Fragmenten van de Inhoud die op de pagina van instrumenten gebruikend deze uitbreiding zijn.
+* **Uitbreiding van het Slot van de Pagina**: Gebruik deze uitbreiding om een pagina van de Universele Redacteur te sluiten en te ontgrendelen.
 
 ## Overige verbeteringen {#other-improvements}
 
