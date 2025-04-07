@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
+source-git-commit: 33ab5edf6531d56158f3887fbd61c76c69d05bdf
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -68,16 +68,16 @@ Organisaties kunnen hun [!DNL Adobe Stock] Enterprise-plan integreren met [!DNL 
 
 Voldoe aan de volgende vereisten om deze integratie toe te laten:
 
-* Een [!DNL Experience Manager Assets] up and running als een [!DNL Cloud Service] -instantie
-* Een [ ondernemings  [!DNL Adobe Stock]  plan ](https://stockenterprise.adobe.com/)
-* Een gebruiker met machtigingen in [!DNL Admin Console] voor het standaardprofiel voor Stock-producten
-* Een gebruiker met machtigingen voor de [!DNL Developer Access profile] voor het maken van integratie in [!DNL Adobe Developer Console]
+* Een up-to-run [!DNL Experience Manager Assets] als een [!DNL Cloud Service] -instantie.
+* An enterprise [!DNL Adobe Stock] plan.
+* Een gebruiker met machtigingen in [!DNL Admin Console] voor het standaardproductprofiel Stock.
+* Een gebruiker met machtigingen voor de [!DNL Developer Access profile] voor het maken van integratie in [!DNL Adobe Developer Console] .
 
 An enterprise [!DNL Adobe Stock] plan,
 
-* Biedt productmachtigingen voor [!DNL Adobe Stock] (voorraden die zijn verbonden met Experience Manager)
-* Crediteringen die zijn aangeschaft in de [!DNL Adobe Admin Console] voor uw aandelenrechten
-* Hiermee kunt u de credits en licenties globaal beheren vanuit [!DNL Adobe Admin Console]
+* Biedt productrechten voor [!DNL Adobe Stock] (Voorraden die zijn verbonden met Experience Manager).
+* Crediteringen die zijn aangeschaft in de [!DNL Adobe Admin Console] voor uw aandelenrechten.
+* Hiermee kunt u de credits en licenties globaal beheren vanuit [!DNL Adobe Admin Console] .
 
 Binnen de machtiging bestaat er een standaardproductprofiel voor [!DNL Adobe Stock] in [!DNL Admin Console] . Er kunnen meerdere profielen worden gemaakt en deze profielen bepalen wie een licentie voor de activa van Stock kan verkrijgen. Een gebruiker die een directe toegang tot het productprofiel heeft kan tot [ https://stock.adobe.com/ ](https://stock.adobe.com/) toegang hebben en de activa van de Beeld van de vergunning. Terwijl er een andere methode is om de Toegang van de Ontwikkelaar te gebruiken om een integratie (API) tot stand te brengen. Deze integratie verifieert de communicatie tussen [!DNL Experience Manager Assets] en [!DNL Adobe Stock].
 
@@ -268,10 +268,13 @@ Voer de volgende stappen uit om een nieuwe [!DNL Adobe Stock IMS configuration] 
    * **[!UICONTROL Cloud Solution]**: Selecteer **[!UICONTROL Adobe Stock]** .
    * **[!UICONTROL Title]**: geef een naam op voor deze integratie.
    * **[!UICONTROL Authorization Server]**: voeg [ https://ims-na1.adobelogin.com/ ](https://ims-na1.adobelogin.com/) als vergunningsserver toe.
-   * **[!UICONTROL Client ID]**: Navigeer aan de **[!UICONTROL OAuth Server-to-Server credential details]** pagina van uw project en kopieer **[!UICONTROL Client ID]** en kleef het hier (zie stap 7 in [ Opstelling een programma in Developer Console ](#set-up-a-program-in-developer-console) sectie).
-   * **[!UICONTROL Client Secret]**: Navigeer aan de **[!UICONTROL OAuth Server-to-Server credential details]** pagina van uw project en klik **[!UICONTROL Retrieve Client Secret]**, kopieer **[!UICONTROL client secret]** en kleef het hier (zie stap 7 in [ Opstelling een programma in Developer Console ](#set-up-a-program-in-developer-console) sectie).
-   * **[!UICONTROL Scope]**: Navigeer aan de **[!UICONTROL OAuth Server-to-Server credential details]** pagina van uw project, kopieer **[!UICONTROL Scope]** en kleef het hier (zie stap 7 in [ Opstelling een programma in Developer Console ](#set-up-a-program-in-developer-console) sectie).
-   * **[!UICONTROL Org ID]**: Navigeer aan de **[!UICONTROL OAuth Server-to-Server credential details]** pagina van uw project, kopieer **[!UICONTROL Organization ID]** en kleef het hier (zie stap 7 in [ Opstelling een programma in Developer Console ](#set-up-a-program-in-developer-console) sectie).
+   * **[!UICONTROL Client ID]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Client ID]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Client Secret]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, klik **[!UICONTROL Retrieve Client Secret]**, kopieer **[!UICONTROL client secret]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Scope]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Scope]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Org ID]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Organization ID]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
      ![ aem activa en de voorraad van de adobe ](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Klik op **[!UICONTROL Create]** , de pagina **[!UICONTROL Adobe IMS Configurations]** wordt geopend en de integratie van [!DNL Adobe Stock] die u hebt gemaakt, wordt weergegeven.
 
@@ -283,9 +286,9 @@ Voer de volgende stappen uit om de wolkenconfiguratie toe te voegen om met [!DNL
 1. Klik ![ noem activa en de voorraad van de adobe ](/help/assets/assets/Hammer.svg), selecteer **[!UICONTROL Cloud Services]**, doorblader en selecteer **[!UICONTROL Adobe Stock]**.
    ![ gebruikend adobe stock met aem ](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
 1. Klik op **[!UICONTROL Create]** en op de pagina **[!UICONTROL Adobe Stock Configuration]** worden meerdere velden weergegeven. Volg deze instructies om de details in deze gebieden te specificeren:
-   * **[!UICONTROL Title]**: Specificeer de zelfde titelnaam die in de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina wordt gebruikt wanneer [ vestiging de configuratie van Adobe Stock IMS in uw de auteursinstantie van AEM ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance).
+   * **[!UICONTROL Title]**: Navigeer aan de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina (zie [ stap 3 ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), kopieer de titel en kleef het hier.
    * **[!UICONTROL Associated Adobe IMS Configuration]**: selecteer de [!DNL Adobe Stock] -integratie die u hebt gemaakt.
-   * **[!UICONTROL Locale]**: Selecteer **[!UICONTROL  English (United States)]** .
+   * **[!UICONTROL Locale]**: Selecteer **[!UICONTROL English (United States)]** .
 1. Klik op **[!UICONTROL Save & Close]**.
    ![ gebruikend adobe stock met aem ](/help/assets/assets/adobe-stock-config-page.png)
 
