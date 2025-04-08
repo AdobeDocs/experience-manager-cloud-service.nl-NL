@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Alvorens een douanedomein verkeer kan dienen, moet u DNS configuratie met uw DNS
    | Optie | Stappen |
    | --- | --- |
    | EEN RECORD configureren | Aanbevolen voor hoofddomeinen zoals `example.com`<br><ol><li>Meld u aan bij het portal van uw DNS-serviceprovider.<li>Ga naar de DNS sectie van Verslagen.<li>Creeer een verslag van A om aan alle vermelde IP adressen te richten.</li></ol> |
-   | CNAME configureren | Aanbevolen voor aangepaste domeinen zoals `www.example.com`<br><ol><li>Meld u aan bij het portal van uw DMS-serviceprovider.<li>Ga naar de DNS sectie van Verslagen.<li>Kaart [ cdn.adobeaemcloud.com ](https://cdn.adobeaemcloud.com/) (het verslag van CNAME) in het DNS verslag van de DNS dienstverlener (uw douanedomein). Deze afbeelding zorgt ervoor dat de verzoeken die bij het douanedomein worden ontvangen aan Adobe CDN opnieuw worden gericht.</li></ol> |
+   | CNAME configureren | Aanbevolen voor aangepaste domeinen zoals `www.example.com`<br><ol><li>Meld u aan bij het portal van uw DMS-serviceprovider.<li>Ga naar de DNS sectie van Verslagen.<li>Wijs `cdn.adobeaemcloud.com` (CNAME-record) toe aan de DNS-record van de DNS-serviceprovider (uw aangepaste domein). Deze afbeelding zorgt ervoor dat de verzoeken die bij het douanedomein worden ontvangen aan Adobe CDN opnieuw worden gericht.</li></ol> |
 
 1. In **ga levende gereedheid** dialoogdoos, klik **O.K.** om het verslag te bewaren.
 
