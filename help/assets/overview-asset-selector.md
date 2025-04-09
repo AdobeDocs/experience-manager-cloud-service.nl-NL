@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ Asset Selector biedt vele voordelen, zoals:
 
 * Versnelling van integratie met om het even welke [ Adobe ](/help/assets/integrate-asset-selector-adobe-app.md) of [ niet-Adobe ](/help/assets/integrate-asset-selector-non-adobe-app.md) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
 * Eenvoudig te onderhouden, aangezien updates van het Assets Selector-pakket automatisch worden geïmplementeerd op de Asset Selector die beschikbaar is voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
-* Gemakkelijk aan te passen omdat er eigenschappen beschikbaar zijn die de Asset Selector-weergave binnen uw toepassing regelen.
-* Zoeken in volledige tekst, kant-en-klare en aangepaste filters om snel naar assets te navigeren voor gebruik binnen de ontwerpervaring.
-* Mogelijkheid om binnen een IMS-organisatie tussen opslagplaatsen te schakelen voor activaselectie.
+* Gemakkelijk aanpassen aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van Activa binnen uw toepassing controleren.
+* In de volledige tekst doorzoeken, uit-van-de-doos, en aangepaste filters om snel aan activa voor gebruik binnen de auteurservaring te navigeren.
+* Mogelijkheid om binnen een IMS-organisatie te schakelen tussen opslagruimten voor het selecteren van bedrijfsmiddelen.
 * De mogelijkheid om elementen te sorteren op naam, afmetingen en grootte en ze weer te geven in de weergave Lijst, Raster, Galerie of Waterval.
 
 <!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
@@ -83,18 +83,19 @@ U moet de volgende communicatiemethoden gebruiken:
 
 * De hosttoepassing wordt uitgevoerd op HTTPS.
 * U kunt de toepassing niet uitvoeren op `localhost` . Als u de Asset Selector op uw lokale computer wilt integreren, moet u een aangepast domein maken, bijvoorbeeld `[https://<your_campany>.localhost.com:<port_number>]` , en dit aangepaste domein toevoegen in de `redirectUrl list` .
-* U kunt `ADOBE_PROVIDED_CLIENT_ID` configureren en toevoegen aan de omgevingsvariabele van AEM Cloud Service met de respectievelijke `imsClientId` .
-  {het milieu van identiteitskaart van de Cliënt IMS van de Selecteur van activa 0} ](assets/asset-selector-ims-client-id-env.png)![
+* You can configure and add clientID into the AEM Cloud Service environment variable with the respective `imsClientId`.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * De lijst van het werkingsgebied IMS moet in de omgevingsconfiguratie worden bepaald.
 * De URL van de toepassing bevindt zich in de lijst van gewenste personen van de IMS-client voor het doorsturen van URL&#39;s.
 * De IMS-aanmeldstroom wordt geconfigureerd en weergegeven met een pop-up in de webbrowser. Daarom moeten pop-ups worden ingeschakeld of toegestaan in de doelbrowser.
 
-Gebruik de bovenstaande vereisten als u de IMS-verificatiewerkstroom van Asset Selector vereist. Als u al bent geverifieerd met de IMS-werkstroom, kunt u in plaats daarvan de IMS-gegevens toevoegen.
+Gebruik de bovenstaande voorwaarden als u de IMS-verificatieworkflow van de Asset Selector nodig hebt. Als u al bent geverifieerd met de IMS-workflow, kunt u in plaats daarvan de IMS-informatie toevoegen.
 
-**Lees meer**
+**zie meer**
 
 * [Asset Selector integreren met een Adobe-app](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Asset Selector integreren met een app die niet van Adobe is](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Asset Selector integreren met een niet-Adobe-app](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Dynamische API&#39;s voor het openen van media integreren in Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -135,13 +136,13 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Elementkiezer gebruiken {#using-asset-selector}
 
-Zodra de Asset Selector is ingesteld en u bent geverifieerd om Asset Selector te gebruiken met uw [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] toepassing, kunt u activa selecteren of verschillende andere bewerkingen uitvoeren om naar uw activa in de opslagplaats te zoeken.
+Nadat de Asset Selector is ingesteld en u bent gemachtigd om Asset Selector te gebruiken in uw [!DNL Adobe Experience Manager] -toepassing als [!DNL Cloud Service] -toepassing, kunt u elementen selecteren of verschillende andere bewerkingen uitvoeren om te zoeken naar uw elementen in de opslagplaats.
 
-![gebruikmakende-activa-selector](assets/using-asset-selector.png)
+![ gebruiken-activa-selecteur ](assets/using-asset-selector.png)
 
-* **A**: [Paneel Verbergen/Tonen](#hide-show-panel)
-* **B**: [Wissel voor opslagplaats](#repository-switcher)
-* **C**: [Activa](#repository)
+* **A**: [ verberg/toon paneel ](#hide-show-panel)
+* **B**: [ de schakelaar van de Bewaarplaats ](#repository-switcher)
+* **C**: [ Assets ](#repository)
 * **D**: [ Filters ](#filters)
 * **E**: [ bar van het Onderzoek ](#search-bar)
 * **F**: [ Sorterend ](#sorting)
@@ -173,11 +174,11 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
   > Als u elementen wilt weergeven of filteren op basis van de vervaldatum in de toekomst, geeft u het datumbereik voor de toekomst op in het veld `[!UICONTROL Expiration Duration]` . Het toont de activa met **die spoedig** badge op hen verlopen.
 
 * **[!UICONTROL MIME type]:** includes `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
-* **[!UICONTROL Image Size]:** inclusief minimale/maximale breedte, minimale/maximale hoogte van de afbeelding.
+* **[!UICONTROL Image Size]:** omvat minimum/maximumbreedte, minimum/maximumhoogte van beeld.
 
-  ![spoor-weergave-voorbeeld](assets/filters-asset-selector.png)
+  ![ spoorstaaf-mening-voorbeeld ](assets/filters-asset-selector.png)
 
-### Aangepast zoeken
+### Aangepaste zoekopdracht
 
 Met Asset Selector kunt u naast de zoekopdracht in volledige tekst ook elementen in bestanden zoeken met behulp van een aangepaste zoekopdracht. U kunt aangepaste zoekfilters gebruiken in zowel de modusweergave als de spoorweergave.
 
@@ -197,17 +198,17 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
-* ![lijstweergave](assets/do-not-localize/list-view.png) [!UICONTROL **Lijstweergave**] In de lijstweergave worden schuifbare bestanden en mappen in één kolom weergegeven.
+* ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
 * ](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.![
-* ![galerijweergave](assets/do-not-localize/gallery-view.png) [!UICONTROL **Galerijweergave**] In de galerijweergave worden bestanden of mappen weergegeven in een centraal vergrendelde horizontale lijst.
-* ![watervalweergave](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Watervalweergave]** In de watervalweergave worden bestanden of mappen weergegeven in de vorm van een brug.
+* ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** ] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
 
-## Meer informatie over de belangrijkste mogelijkheden {#key-capabilities-asset-selector}
+## Meer informatie over sleutelmogelijkheden {#key-capabilities-asset-selector}
 
 <table>
 <tr>
     <td>
-        <img src="assets/integrate-asset-selector.gif" width="70px" height="70px" alt="Afbeelding van Asset Selector integreren"><br/>
+        <img src="assets/integrate-asset-selector.gif" width="70px" height="70px" alt="Afbeelding voor middelenkiezer integreren"><br/>
         <a href="integrate-asset-selector.md"> integreer de Kiezer van Activa </a>
         <p>
         <em> Leer diverse mogelijkheden om de Selecteur van Activa met veelvoudige toepassingen te integreren.
@@ -235,16 +236,16 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Afbeelding met eigenschappen van de activakiezer"><br/>
-        <a href="asset-selector-customization.md">Eigenschappen van activakiezer</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Eigenschappen van Asset Selector, afbeelding"><br/>
+        <a href="asset-selector-customization.md"> Eigenschappen van de Selecteur van Activa </a>
         <p>
-        <em>Leer de basisprincipes van het aanpassen van verschillende onderdelen van Asset Selector, zoals filters, selectie van activa, verlopen items en nog veel meer. </em>
+        <em> Leer de grondbeginselen van het aanpassen van diverse componenten van de Selector van Activa, zoals filters, selectie van activa, verlopen activa, en veel meer. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Afbeelding met voorbeelden van Asset Selector"><br/>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Voorbeelden van Asset Selector"><br/>
         <a href="asset-selector-customization.md"> Voorbeelden van de Selecteur van Activa </a>
         <p>
         <em> begrijp het gebruik van eigenschappen op een praktische manier. </em>
