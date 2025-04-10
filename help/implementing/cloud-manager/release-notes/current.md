@@ -1,68 +1,92 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service
-description: Meer informatie over de release van Cloud Manager 2025.3.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service
+description: Meer informatie over de release van Cloud Manager 2025.4.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
+source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 1%
+source-wordcount: '814'
+ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager 2025.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Meer informatie over de release van Cloud Manager 2025.3.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Meer informatie over de release van Cloud Manager 2025.4.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 
 Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Releasedatums {#release-date}
 
-De releasedatum voor Cloud Manager 2025.3.0 in AEM as a Cloud Service is donderdag 13 maart 2025.
+De releasedatum voor Cloud Manager 2025.4.0 in AEM as a Cloud Service is donderdag 10 april 2025.
 
-De volgende geplande release is donderdag 10 april 2025.
+De volgende geplande release is donderdag 8 mei 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-* **Looppas veelvoudige pijpleidingen**
+* **(UI) Verbeterde zichtbaarheid van de implementatie**
 
-  De mogelijkheid om meerdere pijpleidingen tegelijk uit te voeren is geïntroduceerd op de pagina Pijpleidingen. De gebruikers moeten minstens één pijpleiding maar niet meer dan tien selecteren. Dichtbij de hoger-juiste hoek op de pagina van Pijpleidingen, klik **Geselecteerde Looppas (x)**. Er wordt een modaal dialoogvenster weergegeven met daarin alle pijpleidingen die niet kunnen worden gestart. Klik **Looppas** om alle geldige pijpleidingen in werking te stellen.
+  De pagina van de details van de pijpleidingsuitvoering in Cloud Manager toont nu een statusbericht (&quot;*Wachten - andere lopende update*&quot;) wanneer een plaatsing op een andere plaatsing wacht te beëindigen. Deze workflow maakt het eenvoudiger om de volgorde tijdens de implementatie van de omgeving te begrijpen.  <!-- CMGR-66890 -->
 
-  ![ Looppas geselecteerde de dialoogdoos van pijpleidingen ](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+  ![ de dialoogdoos van de plaatsing van de Ontwikkeling die details en verdeling toont ](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-  Zie ook [ veelvoudige pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines) in werking stellen
+* **(UI) Verbeterde domeinvalidatie**
 
-* **Steun die tot versies Node.js wordt uitgebreid**
+  Wanneer het toevoegen van een domein, toont Cloud Manager nu een fout als het domein reeds in een Fastly rekening geïnstalleerd is: &quot;*het domein is reeds geïnstalleerd in een Fastly rekening. Gelieve te verwijderen eerst van daar alvorens aan Cloud Service toe te voegen.*&quot;
 
-  De front-end build-omgeving ondersteunt nu de volgende `Node.js` versies:
+## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
-   * 23
-   * 22
-   * 20
+Neem deel aan het Cloud Manager-programma voor vroegtijdige adoptie om exclusieve toegang te krijgen tot de volgende functies voordat ze algemeen worden uitgebracht.
 
-  Zie ook [ Ontwikkelt Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions). <!-- CMGR-65307 -->
+Momenteel zijn de volgende mogelijkheden voor vroegtijdige adoptie beschikbaar:
 
-<!--
-## Early adoption program {#early-adoption}
+### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+<!-- BOTH CS & AMS -->
+
+**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen, zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de bewaarplaats van Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+
+De pijpleidingen die externe bewaarplaatsen gebruiken (exclusief GitHub-ontvangen degenen) en de **Trekker van de Plaatsing** aan **wordt geplaatst op de Veranderingen van het Git** beginnen nu automatisch.
+
+Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toevoegen.
+
+![ voeg de dialoogdoos van de Bewaarplaats ](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png) toe
+
+>[!NOTE]
+>
+>Momenteel, zijn de uit-van-de-doos controles van de trekkingsverzoekcodekwaliteit exclusief aan GitHub-ontvangen bewaarplaatsen, maar een update om deze functionaliteit tot andere verkopers van het Git uit te breiden is in de werken.
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:Grp-CloudManager_BYOG@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+
+### AEM Home {#aem-home}
+
+AEM Home introduceert een gecentraliseerd startpunt voor het beheer van inhoud, middelen en sites in Adobe Experience Manager. AEM Home is ontworpen om een persoonlijke beleving te bieden en kunt u naadloos navigeren in het AEM-ecosysteem op basis van uw rollen en doelen. Als gids biedt deze informatie belangrijke inzichten en aanbevolen acties om u te helpen uw doelstellingen efficiënt te verwezenlijken. Met een duidelijke, persoonlijke lay-out zorgt AEM Home voor snelle toegang tot essentiële hulpmiddelen, waardoor een gestroomlijnde en effectieve ervaring in alle AEM-functies wordt ondersteund.
+
+AEM Home is beschikbaar voor vroege gebruikers en biedt een geoptimaliseerde ervaring die gericht is op het verbeteren van workflows, het prioriteren van doelen en het behalen van resultaten. Door in te schakelen kunt u de ontwikkeling van AEM Home beïnvloeden door feedback te geven die helpt de toekomst te bepalen en de waarde ervan voor de hele AEM-gemeenschap verbetert.
+
+Als u in het testen van dit nieuwe vermogen en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-AemHome@adobe.com ](mailto:Grp-AemHome@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u de volgende informatie opneemt:
+
+* De rol die het beste bij uw profiel past: auteur van inhoud, ontwikkelaar, eigenaar van bedrijf, beheerder of andere (geef een beschrijving op).
+* Uw primaire AEM-toegangsoppervlak: AEM Sites, AEM Assets, AEM Forms, Cloud Manager of Overige (geef een beschrijving op).
 
 
 ## Bugfixes
 
-* **(UI) Oplossing voor &#39;Advanced Network Configuration&#39;-updates in Cloud Manager**
+* **Uitgave met certificaten ontbrekende het gebied van de Gemeenschappelijke Naam (CN)**
 
-  Een zeldzame kwestie die updates aan de **Geavanceerde Configuratie van het Netwerk** verhinderde toen een &quot;Update beschikbaar&quot;bericht aanwezig was is opgelost. Eerder vergrendelde Cloud Manager configuratiewijzigingen, waaronder geavanceerde netwerkinstellingen, om conflicten tijdens een update te voorkomen. Klanten kunnen de update die in behandeling is, nu handmatig activeren om de benodigde wijzigingen zonder beperkingen toe te passen. <!-- CMGR-65913 and CMGR-65788 -->
+  Cloud Manager genereert niet langer een NullPointerException (NPE) en 500 HTTP- reactie wanneer het verwerken van EV/OV- certificaten die geen Gemeenschappelijke Naam (CN) op het Onderwerpgebied omvatten. Moderne certificaten laten vaak CN weg en gebruiken in plaats daarvan de Alternatieve Naam Onderwerp (San). Deze correctie zorgt ervoor dat het ontbreken van CN niet langer een fout veroorzaakt tijdens het configuratieproces wanneer SAN aanwezig is. <!-- CMGR-67548 -->
 
-* **(UI) Repareren voor IP lijst van gewenste personen updates die in &quot;het Bijwerken&quot;staat worden geplakt**
+* **de verificatiekwestie van het Domein met onjuiste certificaat aanpassing**
 
-  Een zeldzaam probleem waar IP de updates van de lijst van gewenste personen in Cloud Manager in de &quot;het Bijwerken&quot;staat wegens dubbele actieve domeinconfiguratie voor een milieu bleven is opgelost. Eerder, ervoeren de klanten onbepaalde verwerkingstijd wanneer het bijwerken van IP lijsten van gewenste personen, die noodzakelijke aanpassingen van de netwerktoegang verhinderen. Deze moeilijke situatie zorgt ervoor dat IP de updates van de lijst van gewenste personen met succes kunnen nu voltooien zonder vast te komen. <!-- CMGR-65786 -->
+  Cloud Manager verifieert domeinen niet meer verkeerd gebruikend de verkeerde certificaten. Eerder gebruikte de bevestigingslogica patroon-gebaseerde aanpassing in plaats van nauwkeurige aanpassing, die domeinen zoals `should-not-be-verified.example.com` ertoe bracht om te verschijnen zoals geverifieerd toe te schrijven aan overlapping met geldige certificaten voor `example.com`. Met deze correctie zorgt u ervoor dat domeinvalidatie nu controleert op exacte overeenkomsten en onjuiste certificaatkoppelingen voorkomt. <!-- CMGR-67225 -->
 
+* **gedwongen uniciteit voor Geavanceerde de voorwaardennamen van de haven van het Voorzien van een netwerk**
 
+  Cloud Manager dwingt nu unieke naamgeving af voor Advanced Networking-poort. Eerder waren dubbele namen toegestaan, wat tot conflicten kon leiden. Deze moeilijke situatie zorgt ervoor dat elke haven voorwaartse ingang een verschillende naam heeft, die op beste praktijken voor de integriteit van de netwerkconfiguratie richt. <!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
