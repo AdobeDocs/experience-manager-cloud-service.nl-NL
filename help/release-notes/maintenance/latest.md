@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1589'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,10 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 * SITES-24907: Edge Delivery met Universal Editor: ondersteuning voor het publiceren van Assets naar meerdere sites voor MSM-gebruiksgevallen (vroege toegang).
 * SITES-27956: Edge Delivery met Universal Editor: Verbeter de publicatiedoorvoer (vroege toegang).
 * SITES-27956: Edge Delivery met Universal Editor: verbeter de foutafhandeling voor publiceren naar Edge Delivery Services (vroege toegang).
+* SITES-29602: CIF: het gebruik van Guava wordt verwijderd in core-cif-components-core.
+* SITES-25785: CIF: selectie van productvarianten toevoegen voor CIF-productreferentietype.
+* SITES-26392: CIF [ Experimental ]: JSON+LD in de Componenten van de Kern van CIF in PDPs.
+* SITES-21278: CIF [ Experimental ]: De capaciteit van CIF om geheime voorgeheugen te ontruimen.
 
 ### Opgeloste problemen {#fixed-issues-20133}
 
@@ -111,10 +115,13 @@ De activering van de 2025.4.0-functie biedt de volledige functie die is ingestel
 * SITES-29363: De knop Live kopie herstellen werkt niet voor een geneste inhoudshiërarchie voor live kopieën.
 * SITES-29369: Assets Event Issue in AIO | Onjuist Triggerende Pagina gepubliceerde/niet-gepubliceerde gebeurtenissen.
 * SITES-29972: De acties van de Schrapping en van de Naam veranderen veroorzaken soms onwaar werkschemacommentaar.
+* SITES-24631: CIF: Search issue on product field.
+* SITES-24902: CIF: Product-URL-indeling werkt niet zoals verwacht voor #variant_sku.
+* SITES-29191: CIF: kan niet meer dan 20 SKU&#39;s toevoegen aan de component Productlijst.
 
 ### Bekende problemen {#known-issues-20133}
 
-Geen.
+* SITES-30727: slepen en neerzetten kan mislukken voor subcomponenten in de AEM-editor.
 
 ### Verouderde functies en API&#39;s {#deprecated-20133}
 
