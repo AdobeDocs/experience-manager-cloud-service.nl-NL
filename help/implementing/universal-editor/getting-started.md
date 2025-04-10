@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
+source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -124,9 +124,7 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 
 Als u een bestaand project van AEM gebruikend [ de paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md) hebt, wanneer de inhoudsauteurs pagina&#39;s uitgeven, worden de pagina&#39;s automatisch geopend met de paginaredacteur. U kunt definiëren welke editor AEM moet openen op basis van de inhoudspaden of de `sling:resourceType` . Hierdoor verloopt de ervaring naadloos voor de auteurs, ongeacht de editor die nodig is voor de geselecteerde inhoud.
 
-1. Als u deze configuratiefunctie wilt gebruiken, neemt u contact op met de klantenservice van Adobe om toegang tot de Universal Editor URL Service voor uw programma te activeren.
-
-1. Zodra de Zorg van de Klant toegang tot de Universele dienst van de Redacteur URL heeft geactiveerd, open de Manager van de Configuratie.
+1. Open de Manager van de Configuratie.
 
    `http://<host>:<port>/system/console/configMgr`
 
