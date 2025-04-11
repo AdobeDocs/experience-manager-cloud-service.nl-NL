@@ -1,12 +1,12 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service
-description: Meer informatie over de release van Cloud Manager 2025.4.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2025.4.0
+description: Meer informatie over de release van Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6dc92a0f824ca9bc3726b48581ace232302691e5
+source-git-commit: 6d6e3e452b7910148e22d95a222c1a3b674ea83b
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '809'
 ht-degree: 0%
 
 ---
