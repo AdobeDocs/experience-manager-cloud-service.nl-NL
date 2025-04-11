@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
+source-git-commit: 3323da83584c4511b15145c0106031df4597891c
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -174,8 +174,8 @@ Ga als volgt te werk als je geen e-mail van New Relic ontvangt:
 Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperkingen:
 
 * Er kunnen maximaal 30 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
-* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Beperkt**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change).
-* AEM as a Cloud Service biedt slechts de **APM van New Relic One** oplossing aan en verleent geen steun voor infrastructuurcontrole, alarmerend, registreren, of API integratie.
+* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Basis**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
 
 >[!NOTE]
 >
