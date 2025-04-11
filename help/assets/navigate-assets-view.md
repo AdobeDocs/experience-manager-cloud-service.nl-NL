@@ -4,7 +4,7 @@ description: Begrijp gebruikersinterface van en navigatie in  [!DNL Assets view]
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Om activa voor te vertonen, het te selecteren en [!UICONTROL Details] ![ details
 
 ![ Voorproef een activa ](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G** : De taken van de mening met betrekking tot de geselecteerde Activa **H**: Mening en beheer versies **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De vertoningen van de Media van de mening Dynamische met Slimme Uitsnede en Dynamische Media met OpenAPI mogelijkheden. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
+**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**}: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 

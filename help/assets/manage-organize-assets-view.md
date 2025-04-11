@@ -5,9 +5,9 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1695'
 ht-degree: 0%
 
 ---
@@ -135,17 +135,37 @@ De elementen worden door [!DNL Assets view] bijgewerkt wanneer de elementen opni
 
   ![ Optie om een nieuwe versie van een activa van de versiegeschiedenis te uploaden ](assets/view-asset-versions2.png)
 
-### Versies van een element weergeven {#view-versions}
+### Versies van elementen weergeven en vergelijken {#view-and-compare-versions}
 
-Wanneer u een gedupliceerde kopie of een gewijzigde kopie van een element uploadt, kunt u de versies ervan maken. Met Versioning kunt u historische elementen controleren en desgewenst terugkeren naar een vorige versie.
+Upload een gedupliceerde kopie of een gewijzigde kopie van een element om de versies te maken. Met Versioning kunt u de wijzigingen in een element in de loop der tijd bijhouden en zo nodig terugkeren naar een vorige versie.
 
-Om versies te bekijken, open de voorproef van activa en klik **[!UICONTROL Versions]** {het pictogram van Versies 1} ](assets/do-not-localize/versions-clock-icon.png) van de juiste zijbalk. ![ Als u een voorvertoning van een specifieke versie wilt weergeven, selecteert u deze. Klik op **[!UICONTROL Make Latest]** om terug te keren naar de hyperlink.
+Versies weergeven en vergelijken:
 
-U kunt ook versies maken van de tijdlijn van de versie. Selecteer de meest recente versie, klik op **[!UICONTROL New Version]** en upload een nieuwe kopie van het element vanuit uw lokale bestandssysteem.
+1. Navigeer naar de detailpagina van het element.
+1. Klik ![ Versies ](/help/assets/assets/Clock.svg) in de juiste ruit om het **[!UICONTROL Versions]** paneel te tonen. De miniaturen van het oorspronkelijke element en de geüploade versies worden in dit deelvenster weergegeven.
+1. Selecteer een versie in het deelvenster om een voorvertoning weer te geven in het voorvertoningsgebied.
+1. Selecteer een andere versie dan de meest recente versie en klik op **[!UICONTROL Make Latest]** om deze in te stellen als de meest recente versie.
+1. Sleep de schuifregelaar in de voorvertoning naar links en rechts om snel de geselecteerde versie van een afbeelding en de meest recente versie in één voorvertoning weer te geven. Hierdoor kunt u de geselecteerde versie van de afbeelding snel vergelijken met de meest recente versie.
 
-![ de versies van de Mening van activa ](assets/view-asset-versions1.png)
+   >[!NOTE]
+   >
+   > Vergelijken van versies is alleen ingeschakeld voor afbeeldingselementen.
 
-*Cijfer: De versies van de mening van activa, keren aan een vorige versie terug, of uploaden een andere nieuwe versie.*
+   ![ vergelijk versies van activa ](/help/assets/assets/version-compare2.png)
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+Selecteer de meest recente versie en klik op **[!UICONTROL New Version]** om een nieuwe kopie van het element vanuit uw lokale bestandssysteem te uploaden en een elementversie te maken.
+
+<!-- old content
+You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
+
+![View versions of an asset](assets/view-asset-versions1.png)
+
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## De elementstatus beheren {#manage-asset-status}
 
