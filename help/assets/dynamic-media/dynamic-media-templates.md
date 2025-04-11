@@ -4,7 +4,7 @@ description: Leer hoe u Dynamic Media-sjablonen maakt met een WYSIWYG-sjablooned
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '2930'
 ht-degree: 0%
@@ -313,13 +313,15 @@ Zet om het even welke beeld of tekstlaag van uw malplaatje van Dynamische Media 
 1. Navigeer aan uw malplaatjeplaats, selecteer het malplaatje en klik ![ uitgeven ](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Edit Template]**. De sjabloon wordt weergegeven op het canvas.
 1. Selecteer de malplaatjelaag en [ navigeer aan zijn eigenschappen paneel ](#edit-or-delete-a-layer) om een verbinding van CTA aan het toe te voegen.
 1. Selecteer **[!UICONTROL Add CTA]** in het deelvenster Eigenschappen, geef de doel-URL op in het veld **[!UICONTROL URL]** en klik op **[!UICONTROL Save]** .
-   ![ voeg CTA ](/help/assets/assets/add-cta.png){width="300" align="center"} toe
+
+![ voeg CTA ](/help/assets/assets/add-cta.png) toe
+
 1. Klik op **[!UICONTROL Preview]** om een voorvertoning van de sjabloon weer te geven en de gedefinieerde parameters te bekijken.
 1. Klik op **[!UICONTROL Publish]** en selecteer **[!UICONTROL Yes]** om de sjabloon te publiceren als deze niet eerder is gepubliceerd.
 1. Navigeer aan de omslag waar dit malplaatje wordt bewaard, selecteer dit malplaatje en klik ![ detailspagina ](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Klik op **[!UICONTROL Copy Options]** en selecteer **[!UICONTROL Copy Embed Code]** .
 
-   ![ exemplaar bedt code ](/help/assets/assets/copy-options1.png){width="300" align="center"} in
+   ![ exemplaar bedt code ](/help/assets/assets/copy-options1.png) in
 
    Hieronder ziet u een voorbeeld van de insluitcode:
 
