@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-sjablonen maakt met een WYSIWYG-sjablooned
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2930'
 ht-degree: 0%
 
 ---
@@ -305,6 +305,41 @@ Voer de volgende stappen uit om de sjabloon te bewerken:
 2. Navigeer naar de sjabloonlocatie.
 3. Selecteer de sjabloon.
 4. Klik op **[!UICONTROL Edit Template]**. Op het sjablooncanvas worden de sjabloon en de lijst met alle lagen in het deelvenster Lagen weergegeven. Begin uw sjabloon naar wens te bewerken.
+
+## Voeg Vraag aan de verbinding van de Actie aan uw malplaatjelaag toe{#add-CTA-in-dynamic-media-templates}
+
+Zet om het even welke beeld of tekstlaag van uw malplaatje van Dynamische Media in een hyperlink door een verbinding van CTA aan het toe te voegen die gebruikers aan een doelpagina richt. Voer de volgende stappen uit om een CTA-koppeling aan een laag toe te voegen:
+
+1. Navigeer aan uw malplaatjeplaats, selecteer het malplaatje en klik ![ uitgeven ](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Edit Template]**. De sjabloon wordt weergegeven op het canvas.
+1. Selecteer de malplaatjelaag en [ navigeer aan zijn eigenschappen paneel ](#edit-or-delete-a-layer) om een verbinding van CTA aan het toe te voegen.
+1. Selecteer **[!UICONTROL Add CTA]** in het deelvenster Eigenschappen, geef de doel-URL op in het veld **[!UICONTROL URL]** en klik op **[!UICONTROL Save]** .
+   ![ voeg CTA ](/help/assets/assets/add-cta.png){width="300" align="center"} toe
+1. Klik op **[!UICONTROL Preview]** om een voorvertoning van de sjabloon weer te geven en de gedefinieerde parameters te bekijken.
+1. Klik op **[!UICONTROL Publish]** en selecteer **[!UICONTROL Yes]** om de sjabloon te publiceren als deze niet eerder is gepubliceerd.
+1. Navigeer aan de omslag waar dit malplaatje wordt bewaard, selecteer dit malplaatje en klik ![ detailspagina ](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
+1. Klik op **[!UICONTROL Copy Options]** en selecteer **[!UICONTROL Copy Embed Code]** .
+
+   ![ exemplaar bedt code ](/help/assets/assets/copy-options1.png){width="300" align="center"} in
+
+   Hieronder ziet u een voorbeeld van de insluitcode:
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. Voeg de gekopieerde insluitcode toe aan het HTML-bestand van uw site en voer deze code uit in uw browser om de sjabloon weer te geven.
+
+Klik op het CTA-element op de sjabloon om naar de doelpagina te navigeren.
+
+Bekijk deze stapsgewijze video om te leren hoe u een CTA-koppeling aan een sjabloonlaag kunt toevoegen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## Belangrijke opmerkingen {#important-points-to-note}
 
