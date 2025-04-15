@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-sjablonen maakt met een WYSIWYG-sjablooned
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
+source-git-commit: c9b007626fc9ed8518ae6be054fc147be88c6a3c
 workflow-type: tm+mt
-source-wordcount: '2951'
+source-wordcount: '2952'
 ht-degree: 0%
 
 ---
@@ -283,7 +283,7 @@ U kunt als volgt de URL van de gepubliceerde sjabloon kopiëren die in de voorve
 1. Gebruik deze URL voor snelle verkoop van uw producten of services. U kunt deze URL delen met uw klanten of deze integreren in uw website of een andere downstreamtoepassing van derden om de banner weer te geven en er realtime updates voor uit te voeren die de lopende aanbiedingen weerspiegelen.
 
 Leer hoe u in deze video stap voor stap een sjabloon voor dynamische media maakt.
->[!VIDEO](https://video.tv.adobe.com/v/3457616)
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Updates in real time van de sjabloon maken via de URL{#update-the-template-from-the-url}
 
@@ -307,7 +307,7 @@ Voer de volgende stappen uit om de sjabloon te bewerken:
 3. Selecteer de sjabloon.
 4. Klik op **[!UICONTROL Edit Template]**. Op het sjablooncanvas worden de sjabloon en de lijst met alle lagen in het deelvenster Lagen weergegeven. Begin uw sjabloon naar wens te bewerken.
 
-## Voeg Vraag aan de verbinding van de Actie aan uw malplaatjelaag toe{#add-CTA-in-dynamic-media-templates}
+## Vraag aan Actie toevoegen (CTA) verbinding aan uw malplaatjelaag{#add-CTA-in-dynamic-media-templates}
 
 Zet om het even welke beeld of tekstlaag van uw malplaatje van Dynamische Media in een hyperlink door een verbinding van CTA aan het toe te voegen die gebruikers aan een doelpagina richt. Voer de volgende stappen uit om een CTA-koppeling aan een laag toe te voegen:
 
@@ -342,7 +342,7 @@ Klik op het CTA-element op de sjabloon om naar de doelpagina te navigeren.
 
 Bekijk deze stapsgewijze video om te leren hoe u een CTA-koppeling aan een sjabloonlaag kunt toevoegen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Belangrijke opmerkingen {#important-points-to-note}
 
