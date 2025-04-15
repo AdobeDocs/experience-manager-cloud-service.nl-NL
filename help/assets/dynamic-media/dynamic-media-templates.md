@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-sjablonen maakt met een WYSIWYG-sjablooned
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '2930'
+source-wordcount: '2951'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,7 @@ Als u een sjabloon voor dynamische media wilt maken, moet u beschikken over:
 
 Ga als volgt te werk om een DM-sjabloon te maken:
 
+1. Navigeer aan uw [!DNL AEM Assets] homepage en [ upload en publiceer uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken voor het creëren van het malplaatje.
 1. [Een leeg canvas maken](#create-a-canvas)
 1. [Afbeeldingen toevoegen aan het canvas](#add-images-to-the-canvas)
 1. [Tekstlagen toevoegen aan het canvas](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ U kunt als volgt de URL van de gepubliceerde sjabloon kopiëren die in de voorve
 1. Gebruik deze URL voor snelle verkoop van uw producten of services. U kunt deze URL delen met uw klanten of deze integreren in uw website of een andere downstreamtoepassing van derden om de banner weer te geven en er realtime updates voor uit te voeren die de lopende aanbiedingen weerspiegelen.
 
 Leer hoe u in deze video stap voor stap een sjabloon voor dynamische media maakt.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Updates in real time van de sjabloon maken via de URL{#update-the-template-from-the-url}
 
