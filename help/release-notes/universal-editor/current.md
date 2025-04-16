@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.03.10
-description: Dit zijn de releaseopmerkingen voor de release 2025.03.10 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.04.04
+description: Dit zijn de release notes voor de release 2025.04.04 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
+source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 0%
+source-wordcount: '101'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.03.10 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.04.04 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 10 maart 2025 van de Universal Editor.
+Dit zijn de releaseopmerkingen voor de release van 4 april 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,26 +22,10 @@ Dit zijn de opmerkingen bij de release van 10 maart 2025 van de Universal Editor
 
 ## Wat is er nieuw? {#what-is-new}
 
-* **Bewegende Componenten:** [ Bewegende componenten tussen containers ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) neemt nu de componentenfilter van de doelcontainer waar.
-   * Er is niet meer een vereiste om de zelfde [ filterdefinitie ](/help/implementing/universal-editor/filtering.md) op zijn plaats voor zowel doel als bestemmingscontainers te hebben om de component tussen de containers te bewegen.
-* **Vergrendelde Pagina&#39;s:** De Universele Dienst van de Redacteur neemt de [ vergrendelingsstatus van een pagina ](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) waar en schrijft slechts aan pagina&#39;s die niet worden gesloten of door de gebruiker worden gesloten.
-
-## Nieuwe extensies voor de universele editor {#extensions}
-
-Een aantal nieuwe uitbreidingen zijn vrijgegeven op [ Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/) voor de Universele Redacteur, die de auteurservaring verbetert.
-
-* **uitbreiding MSM**: U kunt erfenis van componenten/blokken nu breken en opnieuw concretiseren gebruikend deze uitbreiding.
-* **Uitbreiding van de Eigenschappen van de Pagina**: Heb toegang tot het pagina eigenschappenvenster van de pagina direct van de Universele Redacteur gebruikend deze uitbreiding.
-* **Uitbreiding van het Werkschema**: De werkschema&#39;s van het gebruik op pagina&#39;s en de Fragmenten van de Inhoud die op de pagina van instrumenten gebruikend deze uitbreiding zijn.
-* **Uitbreiding van het Slot van de Pagina**: Gebruik deze uitbreiding om een pagina van de Universele Redacteur te sluiten en te ontgrendelen.
+* **Dynamische Media met steun OpenAPI** - [ de activaselecteur ](/help/assets/overview-asset-selector.md#repository-switcher) in de Universele Redacteur steunt nu [ Dynamische Media met OpenAPI en verre activa ](/help/assets/integrate-remote-approved-assets-with-sites.md)
 
 ## Overige verbeteringen {#other-improvements}
 
-* Correcties zijn aangebracht voor validatie voor canvas zonder kop.
-
-## Deprectie {#deprecation}
-
-* De `universal-editor-cors` -bibliotheek die via npm of `https://unviersal-editor-service.experiencecloud.live/corslib/*` wordt geleverd, mag niet langer worden gebruikt.
-   * In plaats daarvan moet een scripttag die `https://universal-editor-service.adobe.io/cors.js` aanwijst, worden gebruikt.
-   * Zie het [ Universele Overzicht van de Redacteur voor de Ontwikkelaars van AEM ](/help/implementing/universal-editor/developer-overview.md) voor details op hoe te om uw pagina voor gebruik met de Universele Redacteur behoorlijk van een instrument te voorzien.
-   * Gebruikers zien één keer per dag een afgekeurd bericht als de verkeerde methode wordt gebruikt.
+* Layoutcontext verwijderen is opgelost.
+* Er zijn verbeteringen aangebracht in e2e-tests.
+* Afhankelijkheidsupdates en het opschonen van code zijn uitgevoerd.
