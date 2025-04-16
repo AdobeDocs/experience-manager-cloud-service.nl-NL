@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,3 @@ Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager
 Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze Lijst van gewenste personen van Cloud Manager IP wordt toegevoegd. Dan, pas de lijst op het milieu van de Auteur *toe alvorens* u de pijpleiding toelaat.
 
 Zie [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen en [ eerst-eind pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) voor meer informatie toelaten.
-
-### Universal Editor en IP-Lijsten van gewenste personen {#universal-editor}
-
-{{ip-allow-lists-ue}}

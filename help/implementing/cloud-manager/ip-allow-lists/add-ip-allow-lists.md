@@ -5,7 +5,7 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -20,8 +20,6 @@ Leer hoe u uw eigen IP-Lijst van gewenste personen toevoegt met Cloud Manager.
 Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** kan deze stappen volgen om een IP Lijst van gewenste personen toe te voegen.
 
 {{add-cm-allowlist-frontend-pipeline}}
-
-{{ip-allow-lists-ue}}
 
 **om een IP Lijst van gewenste personen toe te voegen:**
 

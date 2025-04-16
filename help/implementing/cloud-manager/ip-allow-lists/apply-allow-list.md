@@ -5,9 +5,9 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 Wanneer het toepassen van IP Lijsten van gewenste personen, worden alle IP waaiers inbegrepen in de definitie van de lijst geassocieerd met een auteur of de publicatiedienst binnen een milieu. Het ongedaan maken van een lijst is het omgekeerde aan dit proces.
 
 {{add-cm-allowlist-frontend-pipeline}}
-
-{{ip-allow-lists-ue}}
 
 ## IP-Lijsten van gewenste personen toepassen {#applying}
 
@@ -33,7 +31,7 @@ Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsin
 1. Van de **pagina van het Overzicht**, navigeer aan het **milieu&#39;s** scherm.
 1. Voor het **scherm van Milieu&#39;s**, navigeer aan de specifieke pagina van milieudetails.
 1. Navigeer aan de **IP Lijst van gewenste personen** lijst.
-1. Gebruik de invoervelden boven aan de tabel, zodat u de IP-Lijst van gewenste personen en de service Auteur, Publish of Voorvertoning kunt selecteren waarop u deze wilt toepassen.
+1. Gebruik de invoervelden boven aan de tabel, zodat u de IP-Lijst van gewenste personen en de service Auteur, Publiceren of Voorvertoning kunt selecteren waarop u deze wilt toepassen.
 De IP Lijst van gewenste personen moet reeds in Cloud Manager bestaan om het toe te passen. Zie [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toevoegen.
 1. Klik ![ toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **** toepassen en uw voorlegging bevestigen.
 

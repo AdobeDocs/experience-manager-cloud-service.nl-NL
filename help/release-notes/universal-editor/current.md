@@ -4,9 +4,9 @@ description: Dit zijn de release notes voor de release 2025.04.04 van de Univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+source-git-commit: a016213f4bfb7826113317b2a5c7ac9ef92474c1
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,7 @@ Dit zijn de releaseopmerkingen voor de release van 4 april 2025 van de Universal
 ## Wat is er nieuw? {#what-is-new}
 
 * **Dynamische Media met steun OpenAPI** - [ de activaselecteur ](/help/assets/overview-asset-selector.md#repository-switcher) in de Universele Redacteur steunt nu [ Dynamische Media met OpenAPI en verre activa ](/help/assets/integrate-remote-approved-assets-with-sites.md)
+* **IP staat het Lijst** toe - de Universele Redacteur steunt nu [ IP lijsten van gewenste personen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) U kunt IPs van de Universele Dienst van de Redacteur controleren gebruikend [ dit eindpunt.](http://universal-editor-service.adobe.io/ip-ranges)
 
 ## Overige verbeteringen {#other-improvements}
 
