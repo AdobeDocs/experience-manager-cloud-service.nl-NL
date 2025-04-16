@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2025.1.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Verbeterd [ het Fragment van de Inhoud van verwijzingen voorzien met unieke op i
 
 **AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud**
 
-[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) is nu beschikbaar voor AEM as a Cloud Service.
+[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-content-fragment-delivery-with-openapi.md) is nu beschikbaar voor AEM as a Cloud Service.
 
 ### Verouderde functies {#sites-deprecated}
 

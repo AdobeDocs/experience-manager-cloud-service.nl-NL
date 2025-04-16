@@ -5,9 +5,9 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d8e4fdc4f79e40a43a6845ab083dc231444b9c99
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe u uw best
 
 Adobe Experience Manager (AEM) as a Cloud Service biedt meerdere API&#39;s voor zowel gestructureerde inhoudslevering vanuit Content Fragments als contentfragmentbeheer. Zie de afzonderlijke pagina&#39;s voor meer informatie over de specifieke API&#39;s.
 
-* AEM REST OpenAPI voor levering van inhoudsfragmenten
+* AEM Content Fragment Delivery with OpenAPI
    * Deze API maakt JSON-reacties voor het leveren van gestructureerde inhoud van Content Fragments in AEM.
    * Er wordt een pad naar een inhoudsfragment gebruikt als eindpunt.
    * Deze API is gebaseerd op REST.
@@ -67,7 +67,7 @@ U zou uw reis zonder kop van AEM door het document [ moeten voortzetten te herzi
 
 * [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [AEM API&#39;s voor gestructureerde levering en beheer van inhoud](/help/headless/apis-headless-and-content-fragments.md)
-* [AEM REST OpenAPI voor levering van inhoudsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
 * [AEM GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
 * [Ondersteuning voor inhoudsfragmenten in de AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)

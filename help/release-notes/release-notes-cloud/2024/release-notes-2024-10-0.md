@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2024.10.0 versie van  [!DNL Adobe Experie
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/
 
 **AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud**
 
-[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is nu beschikbaar voor AEM as a Cloud Service.
+[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-content-fragment-delivery-with-openapi.md), is nu beschikbaar voor AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 

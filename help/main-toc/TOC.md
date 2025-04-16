@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 1%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 1%
       + [Inhoudsfragmenten voor UUID-verwijzingen bijwerken](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Voorbeeld van GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL-query&#39;s oplossen](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [AEM REST OpenAPI voor levering van inhoudsfragmenten](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
    + [ de steun van de Fragmenten van de Inhoud in HTTP API van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + Beveiliging {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 1%
       + Universele editor {#universal-editor}
          + [Inleiding](/help/implementing/universal-editor/introduction.md)
          + [Gevallen gebruiken](/help/implementing/universal-editor/use-cases.md)
+         + [De Universal Editor en de Sites Editor](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Kenmerken en itemtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Componentdefinitie](/help/implementing/universal-editor/component-definition.md)
          + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)

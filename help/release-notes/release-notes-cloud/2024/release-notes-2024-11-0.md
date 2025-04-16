@@ -4,14 +4,14 @@ description: Nota's van de versie voor 2024.11.0 versie van  [!DNL Adobe Experie
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release 2024.11.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2024.11.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2024.11.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
@@ -57,11 +57,11 @@ Verbeterd [ het Fragment van de Inhoud die met unieke op identiteitskaart-Gebase
 
 **AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud**
 
-[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-rest-openapi-content-fragment-delivery.md), is nu beschikbaar voor AEM as a Cloud Service.
+[ AEM REST OpenAPI voor de Levering van het Fragment van de Inhoud ](/help/headless/aem-content-fragment-delivery-with-openapi.md), is nu beschikbaar voor AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Functies voor vroege toegang in dynamische media {#dm-early-access}
+### Early access features in Dynamic Media {#dm-early-access}
 
 **AI-Gegenereerde videotitels**
 
@@ -91,9 +91,9 @@ In de Assets-weergave hebt u nu toegang tot Dynamic Media en Dynamic Media met O
 
 * **[Asynchrone functiesteun voor Adaptieve Forms](/help/forms/using-async-funct-in-rule-editor.md)**: Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
 
-### Functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
+### Pre-release features in AEM Forms {#forms-new-prerelease-features}
 
-* **beheer Publicatie**: U kunt het Manage werkschema van de Publicatie gebruiken om formulieren over milieu&#39;s, typisch van de auteursinstantie aan te publiceren en voorproef instantie(s) te publiceren of unpublish. Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
+* **Manage Publication**: You can use the Manage Publication workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instance(s). Gebruikers kunnen de publicatie van inhoud op een gestroomlijnde manier publiceren, ongedaan maken of plannen.
 
 * **[auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms](/help/forms/save-core-component-based-form-as-draft.md)**: De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
@@ -116,7 +116,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 * **[creeer Aangepast Forms dat op bestaand malplaatje XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)** wordt gebaseerd: U kunt tot de Component-Gebaseerde Aangepaste Forms van de Kern nu leiden gebruikend XFA vormmalplaatjes (*.XDP dossiers). Dankzij deze mogelijkheid kunnen AEM Forms On-Premise klanten met bestaande investeringen in XFA-technologie AEM Forms as a Cloud Service aannemen.
 
-* **HTML5 Forms (op XFA-Gebaseerde Vormen van het Web)**: Nu, kunnen de klanten die van AEM Forms op locatie XFA technologie gebruiken moeiteloos overgang naar AEM Forms as a Cloud Service terwijl het bewaren van hun bestaande gebruikerservaring met HTML5 Forms (op XFA-Gebaseerde Vormen van het Web). Met deze functie wordt de weergave van XFA-formuliersjablonen in HTML5-indeling mogelijk, waardoor formulieren toegankelijk worden gemaakt voor apparaten die geen XFA-gebaseerde PDF forms ondersteunen.
+* **HTML5 Forms (op XFA-Gebaseerde Vormen van het Web)**: Nu, kunnen de klanten die van AEM Forms op locatie XFA technologie gebruiken moeiteloos overgang naar AEM Forms as a Cloud Service terwijl het bewaren van hun bestaande gebruikerservaring met HTML5 Forms (op XFA-Gebaseerde Vormen van het Web). This capability enables the rendering of XFA form templates in HTML5 format, making forms accessible on devices that do not support XFA-based PDF forms.
 
   ![ HTML Forms (op XFA-Gebaseerde Vormen van het Web) ](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
@@ -135,7 +135,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 * **[handtekening API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: Een nieuwe RESTful API in Communicatie APIs laat gemakkelijk beheer van de handtekeningen van PDF toe. Deze ondersteunt bewerkingen zoals:
    * Handtekening wissen: verwijdert een handtekening uit een opgegeven veld.
-   * Handtekeningveld verwijderen: hiermee wordt een opgegeven handtekeningveld verwijderd.
+   * Remove Signature Field: Deletes a specified signature field.
 
 <!-- 
 * **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
@@ -168,7 +168,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### API&#39;s op basis van OpenAPI&#39;s - Vroege adopter-programma {#open-apis-earlyadopter}
 
-Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen zullen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
+Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. Credentials for endpoints requiring authentication will be generated by creating Adobe Developer Console projects.
 
 Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
 
