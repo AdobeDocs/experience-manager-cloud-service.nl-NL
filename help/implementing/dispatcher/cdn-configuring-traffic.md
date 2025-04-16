@@ -4,7 +4,7 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service biedt een inzameling van eigenschappen aan configureerbaar bij de [ Adobe-geleide CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigt. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
+AEM as a Cloud Service biedt een inzameling van eigenschappen aan configureerbaar bij de [ Adobe-Beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigen. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
 
 * [ de transformaties van het Verzoek ](#request-transformations) - wijzig aspecten van inkomende verzoeken, met inbegrip van kopballen, wegen en parameters.
 * [ transformaties van de Reactie ](#response-transformations) - wijzig kopballen die op de manier terug naar de cliënt (bijvoorbeeld, Webbrowser) zijn.
-* [ cliënt-kant richt ](#client-side-redirectors) opnieuw - teweegbrengt browser omleiding.
+* [ server-kant richt ](#server-side-redirectors) opnieuw - teweegbrengt browser omleiding.
 * [ de selecteurs van de Oorsprong ](#origin-selectors) - volmacht aan een verschillende oorsprong achterkant.
 
 Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze eigenschap wordt reeds vrijgegeven en u kunt meer over het in de [ Regels van de Filter van het Verkeer leren met inbegrip van WAF regels ](/help/security/traffic-filter-rules-including-waf.md) pagina.
@@ -359,10 +359,10 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 
 ### Proxeren naar Edge Delivery Services {#proxying-to-edge-delivery}
 
-Er zijn scenario&#39;s waar de oorsprongsselecteurs zouden moeten worden gebruikt om verkeer door AEM Publish aan AEM Edge Delivery Services te leiden:
+Er zijn scenario&#39;s waar de oorsprongsselecteurs zouden moeten worden gebruikt om verkeer door AEM te leiden publiceer aan AEM Edge Delivery Services:
 
 * Sommige inhoud wordt geleverd door een domein dat wordt beheerd door AEM Publish, terwijl andere inhoud van hetzelfde domein door Edge Delivery Services wordt geleverd
-* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via config pijpleiding, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties worden opgesteld
+* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via config pijpleiding worden opgesteld, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties
 
 Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u dit kunt bereiken:
 
@@ -390,10 +390,10 @@ data:
 ```
 
 >[!NOTE]
-> Aangezien de Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigheid op **beheerde** wijze te vormen, door de Edge Delivery Services [ te volgen duw van de Opstelling de documentatie van de ongeldigverklaring ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Aangezien Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigheid op **beheerde** wijze te vormen, door de de duw van de Opstelling van Edge Delivery Services [ documentatie van de ongeldigverklaring ](https://www.aem.live/docs/byo-dns#setup-push-invalidation) te volgen.
 
 
-## Omleiding op de client {#client-side-redirectors}
+## Server-side omleidingen {#server-side-redirectors}
 
 U kunt de omleidingsregels aan de clientzijde gebruiken voor 301, 302 en vergelijkbare omleidingen aan de clientzijde. Als een regel overeenkomt, reageert de CDN met een statusregel die de statuscode en het bericht bevat (bijvoorbeeld HTTP/1.1 301 Permanent verplaatst) en met de locatiekoptekenset.
 

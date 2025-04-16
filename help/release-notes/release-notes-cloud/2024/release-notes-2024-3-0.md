@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2024.3.0 versie van  [!DNL Adobe Experien
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 0%
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.3.0) is 11 april 2024. De volgende release met functies (2024.4.0) is gepland voor 25 april 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.3.0) is April 11, 2024. The next feature release (2024.4.0) is planned for April 25, 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -43,19 +43,19 @@ Bekijk de video Overzicht van de release van maart 2024 voor een overzicht van d
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
 
-**AEM Authoring voor Edge Delivery Services**
+**Authoring van AEM voor Edge Delivery Services**
 
-AEM Sites kan nu worden gebruikt als inhoudsbron voor Edge Delivery Services. Auteurs beheren hun websites in AEM met de nieuwe Universal Editor met in-context ontwerpen. Hierdoor kunnen bedrijven snelle, krachtige webpagina&#39;s met Edge Delivery Services maken en tegelijkertijd gebruikmaken van AEM krachtige mogelijkheden voor inhoudsbeheer.
+AEM Sites kan nu worden gebruikt als inhoudsbron voor Edge Delivery Services. Auteurs beheren hun websites in AEM met de nieuwe Universal Editor met in-context ontwerpen. Hierdoor kunnen bedrijven met Edge Delivery Services snelle, krachtige webpagina&#39;s maken en tegelijk gebruikmaken van de krachtige AEM-mogelijkheden voor contentbeheer.
 
 ![ AEM Authoring ](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Voor meer informatie, zie de [ documentatie ](/help/edge/overview.md) en bekijk [ AEM Gems - die met AEM Authoring en Edge Delivery Services ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905) worden begonnen
+Voor meer informatie, zie de [ documentatie ](/help/edge/overview.md) en bekijk [ AEM Gems - die met de Authoring van AEM en Edge Delivery Services ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905) worden begonnen
 
 **Universele Redacteur voor Hoofdloze Implementaties**
 
 Met de Universal Editor kunnen ook ontkoppelde webtoepassingen dezelfde intuïtieve in-context WYSIWYG-authoring gebruiken die voorheen exclusief was voor traditionele sites. Inhoudsmakers kunnen nu lay-outs visueel samenstellen met gebruik van Content Fragments met dezelfde snelheid als componenten binnen pagina&#39;s.
 
-Wat de Universele Redacteur onderscheidt is zijn aanpassingsvermogen aan diverse Webarchitecturen, die zowel server-als cliënt-zijteruggeven aanpassen, die kader-agnostiek blijven, en de noodzaak voor AEM het ontvangen elimineren. Het is eenvoudig om bestaande webtoepassingen te integreren met de Universal Editor voor het bewerken van inhoud, waarbij ontwikkelaars vooral specifieke gegevenskenmerken moeten opnemen in hun opmaak.
+Wat de Universal Editor onderscheidt, is het aanpassingsvermogen aan verschillende webarchitecturen, waarbij zowel server- als client-side rendering wordt aangepast, het framework-agnostisch blijft en AEM-hosting overbodig wordt. Het is eenvoudig om bestaande webtoepassingen te integreren met de Universal Editor voor het bewerken van inhoud, waarbij ontwikkelaars vooral specifieke gegevenskenmerken moeten opnemen in hun opmaak.
 
 Met dat, verzekert de Universele Redacteur een verenigbare het uitgeven ervaring, ongeacht inhoudsstructuur of onderliggende technologiestapel. Voor meer informatie, zie de [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md).
 
@@ -75,7 +75,7 @@ Met de nieuwe Content Fragment Editor kunnen auteurs van inhoud nu verschillen t
 
 **produceer Variaties**
 
-Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
+Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met uw Adobe-accountteam voor hulp in het programma.
 
 **het doorbladeren van activa in de Console van het Fragment van de Inhoud**
 
@@ -91,7 +91,7 @@ Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headle
 
 **Inheemse integratie met Adobe Express**
 
-AEM Assets integreert native met Adobe Express, waardoor u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang hebt tot de elementen die in AEM Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Express-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in een AEM Assets-opslagplaats.
+AEM Assets kan op een native manier worden geïntegreerd met Adobe Express, waardoor u rechtstreeks vanuit de Adobe Express-gebruikersinterface toegang hebt tot de elementen die in AEM Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Express-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in een AEM Assets-opslagplaats.
 
 ![ omvat activa van Assets toe:voegen-op ](/help/assets/assets/adobe-express-native-integration.png)
 
@@ -103,7 +103,7 @@ Experience Manager Assets genereert nu standaard voorvertoningsuitvoeringen van 
 
 **beheert toestemmingen voor inzamelingen**
 
-Met Assets Essentials kunnen beheerders toegangsniveaus beheren voor privéverzamelingen die beschikbaar zijn in de opslagplaats. Als beheerder, kunt u gebruikersgroepen tot stand brengen en toestemmingen aan die groepen toewijzen om toegangsniveaus te beheren. U kunt ook de bevoegdheden voor machtigingsbeheer delegeren aan gebruikersgroepen.
+De Hoofdzaak van activa staat de beheerders toe om toegangsniveaus voor privé inzamelingen te beheren beschikbaar in de bewaarplaats. Als beheerder, kunt u gebruikersgroepen tot stand brengen en toestemmingen aan die groepen toewijzen om toegangsniveaus te beheren. U kunt ook de bevoegdheden voor machtigingsbeheer delegeren aan gebruikersgroepen.
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
@@ -116,7 +116,7 @@ Met Assets Essentials kunnen beheerders toegangsniveaus beheren voor privéverza
 
 ### Nieuwe functies voor AEM Forms {#forms-new-features}
 
-* **[de Edge Delivery Services van Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: Edge Delivery Services voor AEM Forms is een composable reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs, nieuwe vormen kunnen bijwerken publiceren en snel lanceren. Deze services bieden buitengewone en zeer belangrijke vormen van ervaring die de betrokkenheid en conversies stimuleren. Deze formulieren zijn gemakkelijk te ontwerpen en te ontwikkelen.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: Edge Delivery Services voor AEM Forms is een composable reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs, nieuwe vormen kunnen bijwerken publiceren en snel lanceren. Deze services bieden buitengewone en zeer belangrijke vormen van ervaring die de betrokkenheid en conversies stimuleren. Deze formulieren zijn gemakkelijk te ontwerpen en te ontwikkelen.
 
   ![ EDS Forms Eigenschappen ](/help/edge/assets/eds-forms-features.png)
 
@@ -124,7 +124,7 @@ Met deze services kunt u:
 
 * Werk met meerdere inhoudsbronnen op dezelfde formuliersite en gebruik de gewenste ontwerpgereedschappen, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
 * Lever de Digitale Inschrijving Ervaringen die snel en onophoudelijk uw vormprestaties laden en teruggeven door echt gebruik controle (RUM).
-* Gebruik normale HTML, moderne CSS en vanilla JavaScript om uitzonderlijke ervaringen te creëren, waarbij de steile leercurve van een specifiek framework wordt vermeden.
+* Gebruik gewoon HTML, modern CSS en vanilla JavaScript om uitzonderlijke ervaringen te creëren, waarbij de steile leercurve van een specifiek framework wordt vermeden.
 
 
 ### Nieuwe functies in Prerelease voor AEM Forms {#forms-pre-release}
@@ -135,12 +135,12 @@ Met deze services kunt u:
 
    * Nieuwe annotaties gebruiken om duidelijkere functiedefinities te bieden.
    * Het gebruik van mechanismen voor het in cache plaatsen van aangepaste functies, wat leidt tot snellere formulierprestaties.
-   * Naadloos werken met globale objecten binnen aangepaste functies.
-   * Optionele parameters definiëren en gebruiken binnen aangepaste functies.
+   * Seamlessly working with global objects within custom functions.
+   * Defining and utilizing optional parameters within custom functions.
 
   Deze update brengt ook de volgende verhogingen aan de functionaliteit van de regelredacteur. U kunt:
 
-   * Implementeer krachtige logica &#39;when-then-else&#39; voor voorwaardelijke uitvoering.
+   * Implement powerful &quot;when-then-else&quot; logic for conditional execution.
    * Maak gebruik van moderne JavaScript-functies, zoals &#39;let and arrow&#39;-functies (ES10-ondersteuning).
    * Valideer of stel niet alleen gebieden, maar ook volledige panelen en vormen terug, die controle over gebruikersinteractie uitbreiden.
 
@@ -167,27 +167,27 @@ Met deze services kunt u:
    * Het verbeterde contrast zorgt ervoor dat alle besturingselementen binnen de krabbelhandtekening gemakkelijk te onderscheiden zijn.
    * De knop OK/vinkje geeft nu visueel aan wanneer deze inactief is.
 
-  **de Terugkoppeling van de Handtekening voor de Readers van het Scherm:**
+  **de Terugkoppeling van de Handtekening voor de Lezers van het Scherm:**
    * Wanneer een handtekening wordt getypt, kunnen gebruikers van schermlezers de tekst horen die wordt gebruikt om de handtekening te maken.
 
 Deze update zorgt voor een inclusievere ervaring voor gebruikers met een handicap door navigatie, helderheid en feedback voor de component Krabbelhandtekening te verbeteren.
 
 ### Programma voor vroege adoptie {#forms-early-adopter}
 
-* **[leg een Aangepast Vorm aan het Scenario van de Fusie van Adobe Workfront voor](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service biedt een uit-van-de-doosoptie aan om een Aangepast Vorm met Adobe Workfront moeiteloos aan te sluiten. Dit vereenvoudigt het proces om een Adaptief Formulier aan een scenario van Adobe Workfront voor te leggen, toelatend u een scenario van de Fusie van Workfront op voorlegging van een Aangepast Vorm teweegbrengt.
+* **[voorlegt een Aangepast Vorm aan het Scenario van de Fusie van Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service biedt een uit-van-de-doosoptie aan om een Aangepast Vorm met Adobe Workfront moeiteloos aan te sluiten. Dit vereenvoudigt het proces om een Adaptief Formulier aan een scenario van Adobe Workfront voor te leggen, toelatend u een scenario van de Fusie van Workfront op voorlegging van een Aangepast Vorm teweegbrengt.
 
   <br/> ![ Adobe Workfront ](/help/forms/assets/adobe-workfront.png) <br/> Gebruikend de Schakelaar van de Fusie van Adobe Workfront, kunt u werkschema&#39;s ontwerpen die automatisch op voorlegging van een Aangepast Vorm worden teweeggebracht. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en zorgt voor een nieuw niveau van automatisering van uw workflowprocessen.|
 
-* **de Dienst van de Uitbreiding van de Reader**: De Communicatie APIs van AEM Forms heeft de Dienst van de Uitbreiding van de Reader gebracht om u toe te staan om functionaliteit zoals vormvulling en commentaren aan regelmatige PDF toe te voegen, die hen voor gebruikers met vrije Adobe Reader interactief maken.
+* **de Dienst van de Uitbreiding van Reader**: De Communicatie van AEM Forms APIs heeft de Dienst van de Uitbreiding van Reader gebracht om u toe te staan om functionaliteit zoals het invullen van en het becommentariëren aan regelmatige PDFs toe te voegen, die hen voor gebruikers met de vrije Lezer van Adobe interactief maken.
 
 * [ Recht aan linkertaalsteun ](/help/forms/supporting-new-language-localization-core-components.md): De adaptieve Forms die op de Componenten van de Kern wordt gebouwd kan nu in een (RTL) taal zoals Arabisch, Perzisch, en Urdu worden voorgesteld. De RTL-talen worden wereldwijd gesproken door meer dan 2 miljard mensen. Door een formulier in RTL-taal te gebruiken, kunt u het bereik van uw adaptieve formulieren uitbreiden naar deze verschillende doelgroepen en selecteren in RTL-markten. In bepaalde regio&#39;s is het ook een wettelijk mandaat om formulieren in de lokale taal te verstrekken. Door lokale talen aan te passen, opent u niet alleen deuren voor een breder publiek, maar zorgt u ook voor naleving van relevante wetten en regels.
 
-* **[Protect uw documenten met DocAssurance APIs (Deel van Communicatie APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance APIs machtigt u om gevoelige informatie te beschermen door de documenten te ondertekenen en te coderen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
+* **[bescherm uw documenten met DocAssurance APIs (Deel van Communicatie APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance APIs machtigt u om gevoelige informatie te beschermen door de documenten te ondertekenen en te coderen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
   U kunt vanuit uw officiële e-mailid naar `aem-forms-ea@adobe.com` schrijven om deel te nemen aan het programma voor vroegtijdige adoptie en toegang tot deze functie aanvragen.
 
 * **[u kunt hefboomwerking de Echte Dienst van Gegevens van de Controle van het Gebruik (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om cliënt-zijinzameling voor AEM as a Cloud Service toe te laten.
-De gegevensservice Real Use Monitoring (RUM) biedt een preciezere weergave van gebruikersinteracties, waardoor een betrouwbare mate van betrokkenheid van websites wordt gegarandeerd. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
+De gegevensservice Real Use Monitoring (RUM) biedt een preciezere weergave van gebruikersinteracties, waardoor een betrouwbare mate van betrokkenheid van websites wordt gegarandeerd. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-Geleide CDN of niet-Adobe-Beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt weggenomen om het even welk verkeersrapport met Adobe te delen.
 
   Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw feedback, stuurt u een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u RUM wilt inschakelen via uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) voor u toelaten.
 
@@ -205,19 +205,19 @@ Nu kunt u **<aemcs-cdn-config-adopter@adobe.com>** per e-mail verzenden om deel 
 
 Naast onlangs vrijgegeven [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md) en sluit zich aan bij het vroege adopterprogramma door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om toegang te krijgen tot:
 
-* 301/302 omleidingen op de client
-* verzoeken aan de rand van willekeurige oorsprong opnieuw exporteren (zoals niet-AEM toepassingen)
+* 301/302 serveromleidingen
+* verzoeken aan de rand van willekeurige oorsprong proxying (zoals niet-AEM-toepassingen)
 * URL-transformaties
 * verzoek- of antwoordheaders instellen of wijzigen
 * aangepaste foutpagina&#39;s wanneer de CDN AEM niet kan bereiken
 
 #### Apache/Dispatcher Runtime Ingestie van herschrijfkaarten (programma voor vroege adopters) {#apache-rewritemaps-early-adopter}
 
-Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart. Neem contact op met **<aemcs-cdn-config-adopter@adobe.com>** voor meer informatie.
+Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten in die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst en laadt deze kaarten, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart. Neem contact op met **<aemcs-cdn-config-adopter@adobe.com>** voor meer informatie.
 
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
 
-De Adobe Beheerde CDN ondersteunt nu Edge Side Includes (ESI), een opmaaktaal voor dynamische webinhoud-assemblage op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. Neem contact op met **<aemcs-cdn-config-adopter@adobe.com>** voor meer informatie.
+De door Adobe beheerde CDN biedt nu ondersteuning voor ESI (Edge Side Includes), een opmaaktaal voor dynamische webinhoud-assemblage op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl het halen van uit oorsprong die kleinere secties die hogere toegangsupdates (lagere TTLs) vereisen. Neem contact op met **<aemcs-cdn-config-adopter@adobe.com>** voor meer informatie.
 
 #### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitemasjablonen (programma voor vroege adopters) {#rde-frontend-early-adopter}
 

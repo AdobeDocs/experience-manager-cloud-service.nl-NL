@@ -4,7 +4,7 @@ description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende con
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -38,15 +38,15 @@ De volgende lijst biedt een uitvoerige lijst van dergelijke configuraties met ve
 | [ Regels van de Filter van het Verkeer, met inbegrip van WAF ](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declareer regels om kwaadwillig verkeer te blokkeren |
 | [ Transformaties van het Verzoek ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Declareer regels om de vorm van het verkeersverzoek om te zetten |
 | [ Transformaties van de Reactie ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Declareer regels om de vorm van de reactie voor een bepaald verzoek om te zetten |
-| [ Cliënt-kant richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Declareer 301/302-stijl cliënt-zijomleidingen |
-| [ de Selecteurs van de Oorsprong ](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Verklaar regels om verkeer aan verschillende achtergronden, met inbegrip van niet Adobe toepassingen te leiden |
-| [ CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Overschrijf de standaardfoutenpagina als AEM oorsprong niet kan worden bereikt, verwijzend de plaats van zelf-ontvangen statische inhoud in het configuratiedossier |
+| [ Server-kant richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) opnieuw | `CDN` | Declareer serveromleidingen van 301/302 stijl |
+| [ de Selecteurs van de Oorsprong ](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Declareer regels om verkeer aan verschillende achtergronden, met inbegrip van toepassingen te leiden niet Adobe |
+| [ CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Overschrijf de standaardfoutpagina als de AEM-oorsprong niet kan worden bereikt. Hierbij wordt verwezen naar de locatie van zelfgehoste statische inhoud in het configuratiebestand |
 | [ CDN zuiveren ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declareer de Leegmaken API-sleutels die worden gebruikt om de CDN op te lossen |
-| [ Klantbeheerd het teken van HTTP CDN ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Declareer de waarde van x-AEM-Edge-Sleutel nodig om de Adobe CDN van een Klant CDN te roepen |
+| [ Klantbeheerd het teken van HTTP CDN ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Declareer de waarde van de x-AEM-Edge-Sleutel nodig om Adobe CDN van een CDN van de Klant te roepen |
 | [ Basisauthentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declareer de gebruikersnamen en de wachtwoorden voor een basisautwiedialoog die bepaalde URLs beschermen. |
-| [ Taak van het Onderhoud van de Opruiming van de Versie ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer de AEM opslagplaats door regels te declareren rond het tijdstip waarop versies van inhoud moeten worden gewist |
-| [ Taak van het Onderhoud van de Aanzuivering van het Logboek van de Controle ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer het AEM controlelogboek voor verhoogde prestaties door regels rond te verklaren wanneer de logboeken zouden moeten worden gezuiverd |
-| [ Logboek door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Vorm de eindpunten en de geloofsbrieven voor het door:sturen van logboeken aan diverse bestemmingen, met inbegrip van de Opslag van Stem Azure, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [ Taak van het Onderhoud van de Opruiming van de Versie ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer de AEM-opslagplaats door regels te declareren over het tijdstip waarop versies van inhoud moeten worden gewist |
+| [ Taak van het Onderhoud van de Aanzuivering van het Logboek van de Controle ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer het AEM controlelogboek voor verhoogde prestaties door regels rond te verklaren wanneer het logboek zou moeten worden gezuiverd |
+| [ Logboek door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Vorm de eindpunten en de geloofsbrieven voor het door:sturen van logboeken aan diverse bestemmingen, met inbegrip van Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
 
 ## Config-pijplijnen maken en beheren {#creating-and-managing}
 

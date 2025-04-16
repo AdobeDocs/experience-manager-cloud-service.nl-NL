@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2024.9.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Bekijk de video Overzicht van de release van september 2024 voor een overzicht v
 
 #### Vertaalbeheer {#translation-management}
 
-De vertaalworkflows en API-acties van AEM activeren nu gebeurtenissen om inzicht te krijgen in wijzigingen in de status van vertaaltaken. Gebruikers kunnen zich op deze gebeurtenissen abonneren via de Adobe Developer Console. Zie [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) voor meer informatie over AEM Vertaalbeheer API.
+AEM-workflows voor vertaling en API-acties activeren nu gebeurtenissen om insight informatie te verschaffen over wijzigingen in de status van vertaaltaken. Gebruikers kunnen zich op deze gebeurtenissen abonneren via de Adobe Developer Console. Zie [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) voor meer informatie over AEM Vertaalbeheer API.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -60,9 +60,9 @@ Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/
 
 **AI-Gegenereerde videotitels**
 
-Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. De AI analyseert de audiotrack van de video om spraak te transcriperen en bijschriften te maken, die kunnen worden bewerkt voor nauwkeurigheid of aanpassing. Deze bijschriften helpen te voldoen aan toegankelijkheidsvereisten en verbeteren de videobetrokkenheid van gebruikers die op tekst gebaseerde videoondersteuning gebruiken of verkiezen.
+Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmatige intelligentie om automatisch bijschriften te genereren voor video-inhoud. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. De AI analyseert de audiotrack van de video om spraak te transcriperen en bijschriften te maken, die kunnen worden bewerkt voor nauwkeurigheid of aanpassing. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
 
-Om vroege toegang tot AI-Gegenereerde titelsteun op uw Dynamische rekening van Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
+To get early access to AI-generated captions support on your Dynamic Media account, [create and submit an Adobe Customer Support case](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nieuwe functies in Asset Selector {#asset-selector-new-features}
 
@@ -71,15 +71,15 @@ Asset Selector biedt nu ondersteuning voor het bladeren in verzamelingen naar he
 
 ### Nieuwe functies in Content Hub {#content-hub-new-features}
 
-Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
+Administrators can now control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
-![ Verlopen activa op Content Hub ](/help/assets/assets/view-download-expired-assets.png)
+![Expired assets on Content Hub](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
+### New Pre-release features in AEM Forms {#forms-new-prerelease-features}
 
-#### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
+#### Auto-save a draft for Core Components based Adaptive Forms
 
 Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
@@ -92,7 +92,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 #### AEM Forms AI Assistant
 
-Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. Hierdoor kunt u sneller dan ooit betere formulieren maken.
+Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. It allows you to build better forms faster than ever before.
 
 ![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
 
@@ -100,11 +100,11 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 * **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw vorm-verwante vragen van AEM. De AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
 
-* **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met generatieve herinneringen AI. Adobe generatieve AI genereert automatisch gebruikersvriendelijke formulieren die drop-outs verkleinen en de ervaring aanpassen.
+* **Adaptive Form Generation**: Effortlessly create full-fledged forms with generative AI prompts. Adobe&#39;s generative AI automatically generates user-friendly forms that reduce drop-offs and personalize the experience.
 
-* **de Generatie van het Comité voor Forms**: produceer vormsecties die aan specifieke behoeften van de gegevensinzameling worden aangepast. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
+* **Panel Generation for Forms**: Generate form sections tailored to specific data collection needs. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
 
-* **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend generatieve herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik generatieve AI-aanwijzingen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
+* **Changing Form Layouts**: Experiment with different layouts and designs using generative AI prompts. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Use generative AI prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
 
 * **vormt Voorlegt Actie**: De generatieve herinneringen van AI van het gebruik om een voorlegt actie voor uw vorm te vormen. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw ontwikkelingsteam.
 
@@ -136,19 +136,19 @@ Adobe beheerde CDN steunt nu [ de Zijde van Edge omvat (ESI) ](/help/implementin
 
 Bescherm bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord zijn vereist. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden wordt beheerd door een configuratiedossier in Git dat via Pijpleiding Config, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### Omleiding op de client {#client-side-redirects}
+### Server-kant omleidingen {#server-side-redirects}
 
-Declareer [ browser richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in een Git van het configuratiedossier opnieuw die aan en geëvalueerd bij CDN worden opgesteld. Dit kan handig zijn voor scenario&#39;s zoals het verwijderen van pagina&#39;s, gewijzigde sitestructuur en SEO-optimalisatie.
+Declareer [ browser richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) in een Git van het configuratiedossier opnieuw die aan en geëvalueerd bij CDN worden opgesteld. Dit kan handig zijn voor scenario&#39;s zoals het verwijderen van pagina&#39;s, gewijzigde sitestructuur en SEO-optimalisatie.
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
 Probeer uit een vernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
 
-Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe verwelkomt feedback, die u via e-mail kunt verzenden naar **<aemcs-new-devconsole-ui-beta@adobe.com>** .
+Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe welcomes feedback, which you can email to **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
-![ het Scherm van Bundles OSGi in AEM Developer Console ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+![OSGi Bundles Screen in AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
-### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
+### Business Users Can Declare Redirects Outside of Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
 Net als in AEM 6.5 worden door Apache/dispatcher opnieuw toegewezen die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en worden deze kaarten geladen zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Deze benadering laat bedrijfsgebruikers redirects verklaren gebruikend een spreadsheet of een UI, zoals ACS Commons Redirect de Manager van de Kaart of een douanetoepassing. U kunt deelnemen aan het programma voor vroege adoptie door een e-mail te verzenden **<aemcs-cdn-config-adopter@adobe.com>** .
 

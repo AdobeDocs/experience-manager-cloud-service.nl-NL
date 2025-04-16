@@ -4,7 +4,7 @@ description: Leer hoe u 301 of 302 omleidingen declareert zonder toegang tot Git
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -21,7 +21,7 @@ De scenario&#39;s omvatten:
 * De naam van een HTML-pagina is gewijzigd.
 * SEO-optimalisatie.
 
-AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) aan om cliënt-zij omleidingen uit te voeren, maar de strategie die in dit artikel wordt beschreven, zonder pijpleiding is omleiding, is een goede keus wanneer:
+AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) aan om server-zij omleidingen uit te voeren, maar de strategie die in dit artikel wordt beschreven, zonder pijpleiding is omleiding, is een goede keus wanneer:
 
 * De mensen die redirects handhaven zijn bedrijfsgebruikers, die niet de noodzakelijke toegang hebben om dossierveranderingen in broncontrole of de mogelijkheid vast te leggen om een Cloud Manager web-tier configuratiepijplijn uit te voeren.
 * Het aantal omleidingen varieert van een paar tot tienduizenden.

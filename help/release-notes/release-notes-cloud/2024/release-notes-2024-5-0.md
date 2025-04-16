@@ -3,7 +3,8 @@ title: Nota's van de versie voor 2024.5.0 versie van  [!DNL Adobe Experience Man
 description: Nota's van de versie voor 2024.5.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 0%
@@ -18,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -42,7 +43,7 @@ Bekijk de video Overzicht van de release van mei 2024 voor een overzicht van de 
 
 ### Nieuwe functies in sites {#sites-new-features}
 
-#### AEM vertaalintegratie {#translation-integration}
+#### AEM-vertaalintegratie {#translation-integration}
 
 Handelingen en workflows voor het vertalen van inhoud activeren nu gebeurtenissen om relevante processtappen en statussen van externe toepassingen te kunnen volgen. De volgende gebeurtenissen worden gegenereerd. Gebruikers kunnen zich abonneren op gebeurtenissen met de Adobe Developer Console.
 
@@ -71,7 +72,7 @@ Verbeterde stabiliteit en diverse verbeteringen voor een betere ontwerpervaring.
 
 **produceer Variaties**
 
-Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
+Hefboomgaard GenAI door de nieuwe eigenschap van AEM, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met uw Adobe-accountteam voor hulp in het programma.
 
 **het doorbladeren van activa in de Console van het Fragment van de Inhoud**
 
@@ -90,9 +91,9 @@ Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headle
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
-**de activa van Publish aan AEM en Dynamic Media**
+**publiceer activa aan AEM en Dynamische Media**
 
-Experience Manager Assets laat u nu toe om snel [ activa aan Experience Manager en Dynamic Media ](/help/assets/publish-assets-to-aem-and-dm.md) te publiceren gebruikend de mening van Assets zonder aan de mening te schakelen Admin. U kunt elementen publiceren tijdens het uploaden, bladeren en zoeken in elementen.
+Experience Manager Assets laat u nu toe om snel [ activa aan Experience Manager en Dynamische Media ](/help/assets/publish-assets-to-aem-and-dm.md) te publiceren gebruikend de mening van Assets zonder aan de mening te schakelen Admin. U kunt elementen publiceren tijdens het uploaden, bladeren en zoeken in elementen.
 
 ![ controle publiceert status1 ](/help/assets/assets/check-publish-status1.png)
 
@@ -141,10 +142,10 @@ Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? O
 
 ### Forms Service
 
-Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens naar en van een bestaand interactief PDF formulier te importeren of te exporteren en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
+Forms-service genereert een interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens te importeren of te exporteren naar en vanuit een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
-* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
-* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Hiermee wordt in feite een optioneel vooraf ingevuld PDF-formulier gemaakt dat kan worden ingevuld met gegevens.
+* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
 * **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of van XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
 
 >[!IMPORTANT]
@@ -154,11 +155,11 @@ Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### OAuth Server-aan-Server geloofsbrieven steun voor AEM integratie met andere oplossingen van de Adobe {#S2S-OAuth-credentials}
+### OAuth Server-to-Server aanmeldingsondersteuning voor AEM-integratie met andere Adobe-oplossingen {#S2S-OAuth-credentials}
 
-Adobe Developer Console wordt gebruikt om referenties te genereren voor toegang tot verschillende API&#39;s. Een van die referentietypen, de referenties van de Servicerekening (JWT), is vervangen door OAuth Server-to-Server-referenties, die AEM Cloud Service nu ondersteunt voor integratie met andere Adobe-oplossingen zoals Adobe Analytics en Adobe Target.
+Adobe Developer Console wordt gebruikt om referenties te genereren voor toegang tot verschillende API&#39;s. Een van die referentietypen, de referenties van de serviceaccount (JWT), is vervangen door OAuth Server-to-Server-referenties, die nu door AEM Cloud Service worden ondersteund voor integratie met andere Adobe-oplossingen zoals Adobe Analytics en Adobe Target.
 
-[ leest over de verval ](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) en [ hoe te om de AEM auteur UI ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) te gebruiken om integratie met andere oplossingen van de Adobe te vormen.
+[ leest over de verval ](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) en [ hoe te om de auteur UI van AEM te gebruiken ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) om integratie met andere oplossingen van Adobe te vormen.
 
 ### Verkeerspiek bij waarschuwingen over oorsprong {#traffic-spike-origin}
 
@@ -166,7 +167,7 @@ Adobe Developer Console wordt gebruikt om referenties te genereren voor toegang 
 
 ### Nieuwe Eigenschappen voor RDEs {#RDE-new-features}
 
-{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) ](/help/implementing/developing/introduction/rapid-development-environments.md) laten ontwikkelaars snel opstellen, herzien, en testveranderingen in de Wolk. [ In de maand juni worden verschillende nieuwe functies geïntroduceerd. Wij nodigen u ook uit om rechtstreeks met Adobe techniek bij het [ kanaal van de Opmaak van RDE ](https://discord.com/channels/1131492224371277874/1245304281184079872) in dienst te nemen.
+{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) ](/help/implementing/developing/introduction/rapid-development-environments.md) laten ontwikkelaars snel opstellen, herzien, en testveranderingen in de Wolk. [ In de maand juni worden verschillende nieuwe functies geïntroduceerd. Wij nodigen u ook uit om rechtstreeks met de techniek van Adobe bij het [ kanaal van de Opmaak van RDE ](https://discord.com/channels/1131492224371277874/1245304281184079872) in dienst te nemen.
 
 
 #### RDE-ondersteuning voor front-end code met gebruik van Sitethema&#39;s en Sitesjablonen {#rde-frontend}
@@ -213,29 +214,29 @@ Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor 
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Client-side omleidingen (Early-adopter-programma) {#client-side-redirects-early-adopter}
+#### Server-side omleidingen (Early-adopter-programma) {#server-side-redirects-early-adopter}
 
-Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Merk op dat er verscheidene andere eigenschappen reeds beschikbaar met betrekking tot [ CDN configuratie ](/help/implementing/dispatcher/cdn-configuring-traffic.md) zijn, met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
+Vorm 301/302 server-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Merk op dat er verscheidene andere eigenschappen reeds beschikbaar met betrekking tot [ CDN configuratie ](/help/implementing/dispatcher/cdn-configuring-traffic.md) zijn, met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web omvatten (WAF), laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
 #### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (programma voor vroege adoptie) {#apache-rewritemaps-early-adopter}
 
-Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend of een spreadsheet of UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart of die als deel van een klantentoepassing wordt gecreeerd. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten in die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst en laadt deze kaarten, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend of een spreadsheet of UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart of die als deel van een klantentoepassing wordt gecreeerd. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
 
-De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+Adobe beheerde CDN steunt nu [ de Zijde van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl het halen van uit oorsprong die kleinere secties die hogere toegangsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-* **Publish een onderwerp of zijn elementen aan een Fragment van de Ervaring**
+* **publiceer een onderwerp of zijn elementen aan een Fragment van de Ervaring**
 Nu, staat Experience Manager Guides u toe om een onderwerp of zijn elementen aan een Fragment van de Ervaring te publiceren. Een ervaringsfragment is een modulaire inhoudseenheid waarin zowel de inhoud als de lay-out worden geïntegreerd.  De Fragmenten van de ervaring zijn nuttig en kunnen u helpen verenigbare en het in dienst nemen ervaringen tot stand brengen.
-* **Capaciteit om de meta-gegevens van de onderwerpactiva tot Inheemse output van PDF over te gaan**
+* **Mogelijkheid om de meta-gegevens van de onderwerpactiva tot de Inheemse output van PDF over te gaan**
 U kunt de meta-gegevens van de onderwerpactiva toevoegen terwijl het produceren van de Eigen output van PDF. Deze eigenschap helpt u specifieke meta-gegevens voor verschillende onderwerpen, zoals de onderwerptitel en de auteur, aan de kopballen en footers van de onderwerppagina toevoegen.
 
 Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
@@ -248,7 +249,7 @@ U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier 
 
 U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.
 
-## Opmerkingen bij de release Experience Cloud {#experience-cloud}
+## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van het Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
-Om een maandelijks e-mailbericht over updates over de versienota&#39;s van de Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit van de Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).

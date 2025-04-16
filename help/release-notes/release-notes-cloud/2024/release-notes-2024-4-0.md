@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2024.4.0 versie van  [!DNL Adobe Experien
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 0%
@@ -186,9 +186,9 @@ In het onwaarschijnlijke geval dat CDN geen verkeer aan de oorsprong van AEM kan
 
 ### Programma&#39;s voor vroege adoptie {#foundation-early-adopter}
 
-#### Client-side omleidingen (Early-adopter-programma) {#client-side-redirects-early-adopter}
+#### Server-side omleidingen (Early-adopter-programma) {#server-side-redirects-early-adopter}
 
-Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) en sluit zich aan bij het vroege adopterprogramma door te e-mailen **<aemcs-cdn-config-adopter@adobe.com>**.
+Vorm 301/302 server-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) en sluit zich aan bij het vroege adopterprogramma door te e-mailen **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
