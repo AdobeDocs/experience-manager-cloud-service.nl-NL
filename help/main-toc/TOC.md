@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
 workflow-type: tm+mt
 source-wordcount: '6152'
 ht-degree: 1%
@@ -1193,7 +1193,7 @@ ht-degree: 1%
          + [Opslagplaatsen in Cloud Manager beheren](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Een Adobe-opslagplaats toevoegen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Een privéopslagplaats toevoegen](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Een externe opslagplaats toevoegen (beperkte Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Een externe opslagplaats toevoegen (vroege adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Ondersteuning voor Git-submodule](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Git gebruiken met Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1817'
 ht-degree: 0%
 
 ---
@@ -169,9 +169,7 @@ Ga als volgt te werk als je geen e-mail van New Relic ontvangt:
 * Indien van toepassing, [ voeg New Relic aan uw e-maillijst van gewenste personen ](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist) toe.
 * Als geen van beide suggesties helpt, geef terugkoppelen op het steunkaartje.
 
-## Beperkingen {#limitations}
-
-Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperkingen:
+## Gebruiksnotities {#usage-notes}
 
 * Er kunnen maximaal 30 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
 * De gebruikers die aan New Relic worden toegevoegd zijn van het type **Basis**. Zie de [ documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
@@ -179,7 +177,7 @@ Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperking
 
 >[!NOTE]
 >
->Als geen **gebruikerslogin** activiteit in uw sub-rekening van New Relic One 30 dagen of meer wordt ontdekt, wordt de agent APM tegengehouden en de gegevens zullen niet van de Dienst van de Wolk AEM naar New Relic worden verzonden.  **Gegevens zullen niet opnieuw worden verzonden tot uw sub-account wordt opnieuw geactiveerd.**
+>Als geen **gebruikerslogin** activiteit in uw sub-rekening van New Relic One 30 dagen of meer wordt ontdekt, wordt de agent APM tegengehouden. Er worden geen gegevens verzonden van AEM Cloud Service naar New Relic. *Gegevens wordt niet opnieuw verzonden tot uw sub-account wordt opnieuw geactiveerd.*
 >
 >Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 

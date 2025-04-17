@@ -4,9 +4,9 @@ description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarp
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -153,9 +153,7 @@ Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijp
 
 
 
-## Beperkingen {#limitations}
-
-Bepaalde beperkingen zijn van toepassing wanneer persoonlijke GitHub Cloud-opslagruimten met Cloud Manager worden gebruikt.
+## Gebruiksnotities {#usage-notes}
 
 * De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen.
 * Er wordt geen tag Git gemaakt en geduwd wanneer u privéopslagruimten gebruikt bij de productie van volledige stapelleidingen.

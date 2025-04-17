@@ -1,23 +1,23 @@
 ---
-title: Externe opslagplaatsen toevoegen aan Cloud Manager - Beperkte Beta
+title: Externe opslagplaatsen toevoegen in Cloud Manager - Vroege adopter
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
+source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
 
-# Externe opslagplaatsen toevoegen in Cloud Manager - beperkte bèta {#external-repositories}
+# Externe opslagplaatsen toevoegen in Cloud Manager - Vroege adopter {#external-repositories}
 
 Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 
 >[!NOTE]
 >
->Dit kenmerk is alleen beschikbaar via het programma voor vroegtijdige adoptie. Voor meer details en om omhoog als vroege adopter te ondertekenen, zie [ Uw Eigen Git - nu met steun voor GitLab en Bitbucket ](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket) brengen.
+>De in dit artikel beschreven kenmerken zijn alleen beschikbaar via het programma voor vroegtijdige goedkeuring. Voor meer details en om omhoog als vroege adopter te ondertekenen, zie [ Uw Eigen Git ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) brengen.
 
 ## Een externe opslagplaats configureren
 
@@ -31,6 +31,14 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 
 ## Een externe opslagplaats toevoegen {#add-ext-repo}
+
+>[!NOTE]
+>
+>Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
@@ -206,12 +214,88 @@ De volgende gedragingen zijn van toepassing:
 * Als de bevestiging van PR of pijpleidingstrekkers niet werken, verifieer dat het Geheime Geheime Web in zowel Cloud Manager als uw verkoper van het Git bijgewerkt is.
 
 
-## Beperking
+## Implementeer vanuit externe Git-providers naar een snelle ontwikkelomgeving {#deploy-to-rde}
 
-* Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
+>[!NOTE]
+>
+>Deze functie is beschikbaar via het programma Vroege adopter. Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ CloudManager_BYOG@adobe.com ](mailto:cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+
+Cloud Manager steunt het opstellen van code aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) direct van externe Git leveranciers wanneer het gebruiken van [ uw eigen configuratie van het Git (BYOG) ](/help/implementing/cloud-manager/managing-code/external-repositories.md) brengen.
+
+Voor het implementeren van RDE&#39;s vanuit een externe Git-opslagplaats is het volgende vereist:
+
+* Het gebruik van een externe Git-opslagplaats die is geïntegreerd met Cloud Manager (BYOG-instelling).
+* Uw project moet een of meer RDE-omgevingen hebben ingericht.
+* Als u `github.com` gebruikt, moet u de bijgewerkte app installatie van GitHub herzien en goedkeuren om de vereiste nieuwe toestemmingen te verlenen.
+
+**Nota&#39;s van het Gebruik**
+
+* Implementatie naar RDE wordt momenteel alleen ondersteund voor AEM-inhoud en Dispatcher-pakketten.
+* De implementatie van andere pakkettypen (bijvoorbeeld volledige AEM-toepassingspakketten) wordt nog niet ondersteund.
+* Momenteel wordt het opnieuw instellen van een RDE-omgeving met behulp van een opmerking niet ondersteund. De klanten moeten de bestaande bevelen AIO CLI gebruiken, zoals [ hier wordt beschreven ](/help/implementing/developing/introduction/rapid-development-environments.md).
+
+**hoe het** werkt
+
+1. **bericht van de kwaliteitsbevestiging van de Code.**
+
+   Wanneer een trekkingsverzoek (PR) een pijpleiding van de codekwaliteit teweegbrengt, wijzen de bevestigingsresultaten erop of de plaatsing aan een milieu van RDE kan te werk gaan.
+
+   Hoe het op Onderneming GitHub kijkt:
+   ![ de kwaliteitsbevestiging van de Code bericht op Onderneming GitHub ](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+   Hoe het er uitziet op GitLab:
+   ![ bericht van de kwaliteitsbevestiging van de Code op GitLab ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+   Hoe het er op Bitbucket uitziet:
+   ![ bericht van de kwaliteitsbevestiging van de Code op Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **de plaatsing die van de trekker een commentaar gebruikt.**
+
+   Als u de implementatie wilt starten, voegt u een opmerking toe aan de PR in de volgende indeling: `deploy on rde-environment-<envName>`
+
+   ![ plaatsing van de Trekker gebruikend een commentaar ](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+   `<envName>` moet de naam van een bestaande milieu van RDE aanpassen. Als de naam niet wordt gevonden, wordt een opmerking geretourneerd die aangeeft dat de omgeving ongeldig is.
+
+   Als de milieustatus niet klaar is, krijgt u de volgende opmerking:
+
+   ![ Milieu niet klaar om op te stellen ](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **controle van het Milieu en artefactplaatsing.**
+
+   Als de RDE klaar is, post Cloud Manager een nieuwe controle aan PR.
+
+   Hoe het op Onderneming GitHub kijkt:
+
+   ![ Status van het milieu op GitHub ](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
+
+   Hoe het er uitziet op GitLab:
+
+   ![ Status van het milieu op GitLab ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+   Hoe het er op Bitbucket uitziet:
+
+   ![ Status van het milieu op Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **Succesvol plaatsingsbericht.**
+
+   Wanneer de implementatie is voltooid, wordt in Cloud Manager een succesbericht geplaatst met een overzicht van de artefacten die in de doelomgeving zijn geïmplementeerd.
+
+   Hoe het op Onderneming GitHub kijkt:
+
+   ![ status van de Plaatsing van het milieu op GitHub ](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+   Hoe het er uitziet op GitLab:
+
+   ![ status van de Plaatsing van milieu op GitLab ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+   Hoe het er op Bitbucket uitziet:
+
+   ![ status van de Plaatsing van milieu op Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 

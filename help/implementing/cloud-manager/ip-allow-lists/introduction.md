@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,7 @@ Na het toevoegen, [ IP kunnen de Lijsten van gewenste personen worden toegepast 
 >
 >Als geen IP Lijst van gewenste personen wordt toegepast, door gebrek worden alle IP adressen toegestaan. Wanneer een IP Lijst van gewenste personen wordt toegepast, worden geen IP adressen toegestaan behalve adressen op de IP Lijst van gewenste personen.
 
-## Beperkingen {#limitations}
-
-Alvorens IP Lijsten van gewenste personen te gebruiken, begrijp de volgende beperkingen in hun functionaliteit, gebruik, en effect op andere eigenschappen.
-
-### Algemene Beperkingen van IP Lijsten van gewenste personen {#general}
+## Gebruiksnotities {#usage-notes}
 
 * Er kunnen maximaal 50 IP-Lijsten van gewenste personen aan uw programma worden toegevoegd.
 * Een maximum van 50 IP/CIDR adressen kan aan elke IP Lijst van gewenste personen worden toegevoegd.

@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -38,14 +38,14 @@ U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of or
 
 ## Aangepaste domeinnamen en breng uw eigen CDN&#39;s {#byo-cdn}
 
-AEM as a Cloud Service biedt de ingebouwde dienst CDN (Content Delivery Network) aan, maar laat u ook BYO (breng Uw Eigen) CDN aan gebruik met AEM. Aangepaste domeinen kunnen worden geïnstalleerd in de CDN met AEM beheer of in een CDN die u beheert.
+AEM as a Cloud Service biedt een ingebouwde CDN-service (Content Delivery Network), maar biedt u ook de mogelijkheid om CDN (Thuis brengen) voor gebruik met AEM te gebruiken. Aangepaste domeinen kunnen worden geïnstalleerd in de door AEM beheerde CDN of in een CDN die u beheert.
 
-* Cloud Manager beheert de namen van douanedomeinen en certificaten die in AEM-beheerde CDN worden geïnstalleerd.
+* Cloud Manager beheert aangepaste domeinnamen en certificaten die in de door AEM beheerde CDN zijn geïnstalleerd.
 * De domeinnamen en de certificaten van de douane die in een BYO CDN worden geïnstalleerd worden beheerd direct binnen die CDN.
 
 **Domeinen die in uw eigen CDN worden beheerd vereisen geen installatie door Cloud Manager** - zij worden ter beschikking gesteld aan AEM als x-Door:sturen-Gastheer en passen de gastheren aan die in Dispatcher worden bepaald. Zie de [ CDN documentatie ](/help/implementing/dispatcher/cdn.md).
 
-In één milieu, kunt u beide domeinen hebben die in AEM-beheerde CDN worden geïnstalleerd en in een CDN BYO worden geïnstalleerd.
+In één milieu, kunt u beide domeinen hebben die in AEM-Beheerde CDN worden geïnstalleerd en in een CDN BYO worden geïnstalleerd.
 
 ## Workflow {#workflow}
 
@@ -63,9 +63,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 >
 >Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Soms kunnen echter problemen met domeindelegatie optreden die 1 tot 2 werkdagen in beslag kunnen nemen om op te lossen. Daarom wordt aangeraden de domeinen ruim vóór hun live datum te installeren. Zie het document [ status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie.
 
-## Beperkingen {#limitations}
-
-Er gelden verschillende beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
+## Gebruiksnotities {#usage-notes}
 
 * Aangepaste domeinnamen worden in Cloud Manager alleen ondersteund voor publicatie- en voorvertoningsservices voor Sites-programma&#39;s.
    * Aangepaste domeinen voor auteursservices worden niet ondersteund.

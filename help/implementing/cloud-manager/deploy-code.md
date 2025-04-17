@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ _slechts steunt het Volledige pijpleidingstype van de Code van de Stapel coderin
 
 ## Implementatieproces {#deployment-process}
 
-Alle plaatsingen van de Cloud Service volgen een het rollen proces om nul onderbreking te verzekeren. Zie [ hoe het Rollen het Werk van Plaatsingen ](/help/implementing/deploying/overview.md#how-rolling-deployments-work) om meer te leren.
+Alle Cloud Service-implementaties volgen een schuifproces om ervoor te zorgen dat er geen downtime optreedt. Zie [ hoe het Rollen het Werk van Plaatsingen ](/help/implementing/deploying/overview.md#how-rolling-deployments-work) om meer te leren.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Zodra u [ uw productiePijpleiding ](/help/implementing/cloud-manager/configuring
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u code wilt opstellen.
 
-1. Op de **pagina van het Overzicht**, op het vraag-aan-actie gebied, klikt **opstellen**.
+1. Op de **pagina van het Overzicht**, in het gebied van call-to-action, klik **opstellen**.
 
    ![ CTA ](assets/deploy-code1.png)
 
@@ -83,22 +83,22 @@ De **testende 1} fase van het Stadium {impliceert de volgende stappen:**
 | Functioneel testen van producten | De pijpleiding van Cloud Manager voert tests uit die tegen het werkgebiedmilieu lopen.<br> zie ook [ Functionele het Testen van het Product ](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Aangepaste functionele tests | Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Als de build geen test JAR produceert, slaagt de test automatisch.<br> zie ook [ het Functionele Testen van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Aangepaste UI-tests | Een optionele functie waarmee automatisch UI-tests worden uitgevoerd die voor aangepaste toepassingen zijn gemaakt.<br> de tests UI zijn op selenium-Gebaseerd en verpakt in een beeld van het Docker om flexibiliteit in taal en kaders aan te bieden. Met deze methode kunt u Java en Maven, Node en WebDriver.io of een op Selenium gebaseerd framework of technologie gebruiken.<br> zie ook [ het Testen UI van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Experience Audit | Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles in werking stelt.<ul><li>De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.</li><li>De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.</li><li>Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing wordt geïntroduceerd.</li></ul>Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Experience Audit | Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles in werking stelt.<ul><li>De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.</li><li>De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.</li><li>Deze insight is nuttig om te bepalen of er een regressie is die met de huidige plaatsing wordt geïntroduceerd.</li></ul>Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
 
 ![ het Testen van het Stadium ](assets/stage-testing.png)
 
 ### Implementatiefase productie {#production-deployment}
 
-Het proces voor het opstellen aan productietopologieën verschilt lichtjes om het effect op bezoekers aan een AEM plaats te minimaliseren.
+Het implementatieproces voor productietopologieën verschilt enigszins om de impact op bezoekers van een AEM-site tot een minimum te beperken.
 
 Productieimplementaties volgen doorgaans dezelfde stappen als eerder beschreven, maar op een voortschrijdende manier. Deze stappen omvatten het volgende:
 
-1. Implementeer AEM pakketten naar de auteur.
+1. Implementeer AEM-pakketten naar auteur.
 1. Koppel `dispatcher1` los van het taakverdelingsmechanisme.
-1. Implementeer AEM pakketten op `publish1` en gebruik het Dispatcher-pakket op `dispatcher1` , verwijder de Dispatcher-cache.
+1. Gebruik AEM-pakketten in `publish1` en Dispatcher-pakketten in `dispatcher1` om de Dispatcher-cache te leegmaken.
 1. Plaats `dispatcher1` weer in het taakverdelingsmechanisme.
 1. Koppel `dispatcher2` los van het taakverdelingsmechanisme wanneer `dispatcher1` weer in service is.
-1. Implementeer AEM pakketten op `publish2` en gebruik het Dispatcher-pakket op `dispatcher2` , verwijder de Dispatcher-cache.
+1. Gebruik AEM-pakketten in `publish2` en Dispatcher-pakketten in `dispatcher2` om de Dispatcher-cache te leegmaken.
 1. Plaats `dispatcher2` weer in het taakverdelingsmechanisme.
 
 Dit proces gaat verder tot de plaatsing alle uitgevers en Dispatchers in de topologie heeft bereikt.
@@ -134,7 +134,7 @@ In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pa
 >
 >In een heruitvoering, wordt de bouwstijlstap geëtiketteerd in UI om erop te wijzen dat het artefacten kopieert, niet re-bouwt.
 
-### Beperkingen {#limitations}
+### Gebruiksnotities {#usage-notes}
 
 * Het opnieuw uitvoeren van de stap van de productieplaatsing is slechts beschikbaar voor de laatste uitvoering.
 * Heruitvoering is niet beschikbaar voor het uitvoeren van push-updates. Als de laatste uitvoering een uitvoering van een push-update is, is het niet mogelijk deze opnieuw uit te voeren.
@@ -146,7 +146,7 @@ Naast het zijn beschikbaar in UI, kunt u [ Cloud Manager API ](https://developer
 
 #### Een nieuwe uitvoering activeren {#reexecute-deployment-api}
 
-Om een re-uitvoering teweeg te brengen, doe een verzoek van de PUT aan de Verbinding van de HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` op de productie opstelt stapstaat.
+Om een re-uitvoering teweeg te brengen, doe een verzoek van PUT aan de Verbinding van de HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` op de productie stapstaat opstelt.
 
 * Als deze koppeling aanwezig is, kan de uitvoering vanaf die stap opnieuw worden gestart.
 * Als dit niet het geval is, kan de uitvoering niet vanaf die stap opnieuw worden gestart.
@@ -190,7 +190,7 @@ Deze verbinding is slechts beschikbaar voor de productie stelt stap op.
 
 De syntaxis van de href-waarde van de HAL-koppeling is slechts een voorbeeld. De werkelijke waarde moet altijd worden gelezen van de HAL-koppeling en niet worden gegenereerd.
 
-Het voorleggen van een verzoek van de PUT aan dit eindpunt resulteert in een 201 reactie als succesvol, en het antwoordlichaam is de vertegenwoordiging van de nieuwe uitvoering. Deze workflow lijkt op het starten van een normale uitvoering via de API.
+Het voorleggen van een verzoek van PUT aan dit eindpunt resulteert in een 201 reactie als succesvol, en het antwoordlichaam is de vertegenwoordiging van de nieuwe uitvoering. Deze workflow lijkt op het starten van een normale uitvoering via de API.
 
 #### Identificeer een wederuitvoeringsuitvoering {#identify-reexecution}
 

@@ -4,14 +4,14 @@ description: Leer hoe u Git-submodules kunt gebruiken om de inhoud van meerdere 
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# Ondersteuning voor Git-submodule voor opslagruimten voor Adoben {#git-submodule-support}
+# Ondersteuning voor Git-submodule voor Adobe-opslagruimten {#git-submodule-support}
 
 Git-submodules kunnen worden gebruikt om de inhoud van meerdere vertakkingen tijdens het samenstellen samen te voegen via Git-opslagruimten.
 
@@ -68,14 +68,12 @@ Het resultaat is een `.gitmodules` -bestand dat lijkt op het volgende:
 
 Zie ook het [ Handboek van de Verwijzing van de Git ](https://git-scm.com/book/en/v2/Git-Tools-Submodules) voor meer informatie over submodules van het Git.
 
-## Beperkingen en aanbevelingen {#limitations-recommendations}
-
-Houd rekening met de volgende beperkingen wanneer u Git-submodules gebruikt met opslagruimten die door Adobe worden beheerd.
+## Gebruiksnotities {#usage-notes}
 
 * De URL voor de it moet exact de syntaxis hebben die in de vorige sectie is beschreven.
 * Alleen submodules in de hoofdmap van de vertakking worden ondersteund.
 * Sluit om beveiligingsredenen geen referenties in Git-URL&#39;s in.
-* Tenzij anders nodig, adviseert de Adobe dat u oppervlakkige submodules door het volgende in werking te stellen gebruikt:
+* Tenzij anders nodig, adviseert Adobe dat u oppervlakkige submodules door het volgende in werking te stellen gebruikt:
   `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule.
 * De verwijzingen van de submodule van de Git worden opgeslagen aan specifieke Git begaat. Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, begaat referenced moet worden bijgewerkt.
 Bijvoorbeeld door het volgende te gebruiken:
@@ -84,7 +82,7 @@ Bijvoorbeeld door het volgende te gebruiken:
 
 ## Ondersteuning voor Git-submodule voor privéopslagruimten {#private-repositories}
 
-De steun voor submodules van het Git in [ privé bewaarplaatsen ](private-repositories.md) is over het algemeen gelijkaardig aan hun gebruik met Adobe bewaarplaatsen.
+De steun voor submodules van het Git in [ privé bewaarplaatsen ](private-repositories.md) is over het algemeen gelijkaardig aan hun gebruik met de bewaarplaatsen van Adobe.
 
 Nadat u het `pom.xml` -bestand hebt geconfigureerd en de `git submodule` -opdrachten hebt uitgevoerd, moet u echter een `.gitmodules` -bestand aan de hoofdmap van de aggregatoropslagplaats toevoegen, zodat Cloud Manager de configuratie van de submodule herkent.
 
@@ -92,10 +90,8 @@ Nadat u het `pom.xml` -bestand hebt geconfigureerd en de `git submodule` -opdrac
 
 ![ Agregator ](assets/aggregator.png)
 
-### Beperkingen en aanbevelingen {#limitations-recommendations-private-repos}
+### Gebruiksnotities {#usage-notes-recommendations-private-repos}
 
-Houd rekening met de volgende beperkingen wanneer u Git-submodules gebruikt met persoonlijke opslagruimten:
-
-* URL&#39;s voor Git voor submodules kunnen de HTTPS- of SSH-indeling hebben, maar moeten verwijzen naar een GitHub.com-opslagplaats. Het toevoegen van een submodule van de opslagplaats van de Adobe aan een aggregatorbewaarplaats GitHub of het omgekeerde wordt niet gesteund.
+* URL&#39;s voor Git voor submodules kunnen de HTTPS- of SSH-indeling hebben, maar moeten verwijzen naar een GitHub.com-opslagplaats. Het toevoegen van een Adobe-opslagsubmodule aan een GitHub-aggregatoropslagplaats of het omgekeerde wordt niet ondersteund.
 * GitHub-submodules moeten toegankelijk zijn voor de Adobe GitHub App.
-* [ de beperkingen van het gebruiken van submodules van het Git met Adobe-beheerde bewaarplaatsen ](#limitations-recommendations) zijn ook van toepassing.
+* [ de beperkingen van het gebruiken van submodules van het Git met Adobe-Beheerde bewaarplaatsen ](#limitations-recommendations) zijn ook van toepassing.
