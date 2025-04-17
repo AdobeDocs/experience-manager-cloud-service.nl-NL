@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2962'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
     </tr>
 </table>
 
-Maak aanpasbare sjablonen in real time voor uw banners en vliegers met gebruik van [!DNL Dynamic Media] sjablonen, een WYSIWYG-sjablooneditor. Gebruik de [!DNL Dynamic Media] -sjabloon in downstreamtoepassingen. Een [!DNL Dynamic Media] -sjabloon bevat afbeeldings- en tekstlagen. Voeg parameters aan het beeld en tekstlagen van het malplaatje toe en gebruik [[!DNL Dynamic Media]  URLs ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) om de laag te verplaatsen en resize en zijn inhoud in real time bij te werken.
+Maak aanpasbare sjablonen in real time voor uw banners en vliegers met gebruik van [!DNL Dynamic Media] sjablonen, een WYSIWYG-sjablooneditor. Publiceer de [!DNL Dynamic Media] -sjabloon en gebruik deze in downstreamtoepassingen. Een [!DNL Dynamic Media] -sjabloon bevat afbeeldings- en tekstlagen. Voeg parameters aan het beeld en tekstlagen van het malplaatje toe en gebruik [[!DNL Dynamic Media]  URLs ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) om de laag te verplaatsen en resize en zijn inhoud in real time bij te werken.
 
 Enkele van de belangrijkste functies zijn:
 
@@ -88,7 +88,7 @@ Als u een [!DNL Dynamic Media] -sjabloon wilt maken, moet u beschikken over:
 Voer de volgende stappen uit om een [!DNL Dynamic Media] -sjabloon te maken:
 
 1. Navigeer aan uw [!DNL Assets View] en [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. De omslagboom in ![ Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** duikt in **[!UICONTROL Dynamic Media Assets]**. Sla de [!DNL Dynamic Media] -sjabloon op in deze [!UICONTROL Dynamic Media Assets] -map.
-1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken voor het creëren van het malplaatje.
+1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken voor het creëren van het malplaatje. Het publiceren van beelden wordt vereist om de levering URL van het malplaatje te produceren, dat in stroomafwaartse toepassingen kan worden gebruikt.
 1. [Een leeg canvas maken](#create-a-canvas)
 1. [Afbeeldingen toevoegen aan het canvas](#add-images-to-the-canvas)
 1. [Tekstlagen toevoegen aan het canvas](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ Voer de volgende stappen uit om een leeg canvas te maken:
    >[!NOTE]
    >
    >  De sjabloon wordt opgeslagen op de locatie waar u de sjabloon maakt. Selecteer op de startpagina van [!DNL Assets View] de optie **[!UICONTROL Dynamic Media Assets]** en klik **[!UICONTROL Create Template]** om de sjabloon op te slaan in de hoofdmap van **[!UICONTROL Dynamic Media Assets]** .
+
 1. Geef een sjabloonnaam op, definieer de canvasbreedte en -hoogte en klik op **[!UICONTROL Create]** . Er wordt een leeg canvas weergegeven met menuopties aan beide zijden voor het maken van de sjabloon. Houd de muisaanwijzer boven de menuopties om de knopinfo weer te geven.
    ![ in real time aanpasbaar malplaatje ](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ Voer de volgende stappen uit om een leeg canvas te maken:
 * ![ aanpasbare malplaatjes ](/help/assets/assets/add-text.svg): Klik om teksten aan het canvas toe te voegen.
 * ![ aanpasbare malplaatjes ](/help/assets/assets/show-layers-list.svg): Klik om de lijst van alle lagen (beeld en tekst) op het canvas te zien. Elke afbeelding en tekst die aan het canvas wordt toegevoegd, wordt weergegeven als een afzonderlijke laag.
 
-**opties van het Menu op de linkerruit:** Gebruik deze opties voor gemeenschappelijke redacteursacties zoals hieronder vermeld.
+**opties van het Menu op de linkerruit:** Gebruik deze opties voor de volgende gemeenschappelijke redacteursacties.
 
-* ![ DM Malplaatjes ](/help/assets/assets/layer-selector.svg): Selecteer een laag.
-* ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen: Klik om een geselecteerde laag vooruit te brengen of **CTRL** + **te drukken]** (Vensters) of **Cmd** + **]** (Mac).
-* ![ hoe te om een malplaatje tot stand te brengen dat gemakkelijk kan worden aangepast ](/help/assets/assets/send-backward.svg): Klik om een geselecteerde laag achterwaarts te verzenden of **CTRL** + **te drukken (** (Vensters) of **Cmd** + **(**) (Mac).
-* ![ creeer een malplaatje dat onmiddellijk ](/help/assets/assets/undo.svg) kan worden aangepast: klik om de laatste actie ongedaan te maken of **CTRL** + **te drukken Z** (Vensters) of **Cmd** + **Z** (Mac).
-* ![ malplaatje om banners snel ](/help/assets/assets/redo.svg) tot stand te brengen: Klik om de laatste actie opnieuw uit te voeren of **CTRL** + **Y** (Vensters) of **Cmd** + **Y** (Mac) te drukken.
-* ![ malplaatje om snel flyers ](/help/assets/assets/zoom-in.svg) tot stand te brengen: Klik om binnen het canvas te zoemen of **CTRL** + **+** (Vensters) of Cmd + **+** (Mac) te drukken.
-* ![ malplaatje om banners snel ](/help/assets/assets/Zoom-out.svg) tot stand te brengen: Klik om uit het canvas te zoemen of **CTRL** + **te drukken -** (Vensters) of **Cmd** + **-** (Mac).
+* ![ DM Malplaatjes ](/help/assets/assets/layer-selector.svg): Selecteer ![ Malplaatjes DM ](/help/assets/assets/layer-selector.svg) en klik een laag op het canvas om het te selecteren.
+* ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen: Klik ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen of toetsenbordkortere weg gebruiken, **CTRL** + **]** (Vensters) of **Cmd** + **]** (Mac) om een geselecteerde laag vooruit te brengen.
+* ![ hoe te om een malplaatje tot stand te brengen dat gemakkelijk kan worden aangepast ](/help/assets/assets/send-backward.svg): Klik ![ hoe te om een malplaatje tot stand te brengen dat gemakkelijk ](/help/assets/assets/send-backward.svg) kan worden aangepast of toetsenbordkortere weg, **CTRL** + **()** (Vensters) of **Cmd** + **(** (Mac) gebruiken om een geselecteerde laag achterwaarts te verzenden.
+* ![ creeer een malplaatje dat onmiddellijk ](/help/assets/assets/undo.svg) kan worden aangepast: Klik ![ creeer een malplaatje dat onmiddellijk ](/help/assets/assets/undo.svg) of gebruikstoetsenbordkortere weg kan worden aangepast, **CTRL** + **Z** (Vensters) of **Cmd** + **Z** (Mac) om de laatste actie ongedaan te maken.
+* ![ malplaatje om banners snel ](/help/assets/assets/redo.svg) tot stand te brengen: Klik ![ malplaatje om banners snel ](/help/assets/assets/redo.svg) tot stand te brengen of toetsenbordkortere weg te gebruiken, **CTRL** + **Y** (Vensters) of **Cmd** + **Y** (Mac) om de laatste actie opnieuw uit te voeren.
+* ![ malplaatje om snel vliegers ](/help/assets/assets/zoom-in.svg) tot stand te brengen: Klik ![ malplaatje om snel vliegers ](/help/assets/assets/zoom-in.svg) tot stand te brengen of toetsenbordkortere weg te gebruiken, **CTRL** + **+** (Vensters) of **Cmd** + **+** (Mac) om binnen het canvas te zoemen.
+* ![ malplaatje om banners snel ](/help/assets/assets/Zoom-out.svg) tot stand te brengen: Klik ![ malplaatje om banners snel ](/help/assets/assets/Zoom-out.svg) tot stand te brengen of toetsenbordkortere weg te gebruiken, **CTRL** + **-** (Vensters) of **Cmd** + **-** (Mac) om uit het canvas te zoemen.
 * Pers **Backspace** of **schrapt** om de geselecteerde laag te schrappen als geen tekst of het bezit wordt uitgegeven.
 
-Klik ![ malplaatje om snel flyers ](/help/assets/assets/show-layers-list.svg) **>** meer opties (![](/help/assets/assets/three-dots.svg)) op de laag van het Canvas te creëren om de canvasdimensies op elk ogenblik uit te geven terwijl het creëren van het malplaatje.
+Klik ![ malplaatje om snel flyers ](/help/assets/assets/show-layers-list.svg) tot stand te brengen en meer opties (![](/help/assets/assets/three-dots.svg)) op de laag van het Canvas te selecteren om de canvasdimensies op elk ogenblik uit te geven terwijl het creëren van het malplaatje.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ Klik ![ malplaatje om snel flyers ](/help/assets/assets/show-layers-list.svg) **
 
 Voer de volgende stappen uit om afbeeldingen aan het canvas toe te voegen:
 
-1. Klik ![ creeer een banner in geen tijd ](/help/assets/assets/add-image.svg) om het [ paneel van de Selecteur van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) te tonen. In het deelvenster worden de afbeeldingen weergegeven die in uw AEM Assets-instantie zijn gesynchroniseerd met [!DNL Dynamic Media] .
+1. Klik ![ creeer een banner in geen tijd ](/help/assets/assets/add-image.svg) om het [ paneel van de Selecteur van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) te openen. In het deelvenster worden de afbeeldingen weergegeven die in uw AEM Assets-instantie zijn gesynchroniseerd met [!DNL Dynamic Media] .
 1. Blader in het deelvenster of gebruik trefwoorden in de zoekbalk om een specifieke afbeelding te zoeken.
 1. Sleep een afbeelding naar het canvas om deze te gebruiken. Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) voor het wijzigen van het formaat of het verplaatsen van een laag op het canvas.
    ![ creeer een banner binnen seconden ](/help/assets/assets/add-image-to-canvas.png)
