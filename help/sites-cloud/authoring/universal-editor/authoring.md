@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
+source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stan
 
 ## Inleiding {#introduction}
 
-Met de Universal Editor kunt u elk aspect van elke inhoud in een implementatie bewerken, zodat u uitzonderlijke ervaringen kunt bieden, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
+Met de Universal Editor kunt u alle aspecten van inhoud in elke implementatie bewerken, zodat u uitzonderlijke ervaringen kunt opdoen en de snelheid van de inhoud kunt verhogen.
 
 Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebruikersinterface die minimale training vereist om eenvoudig in de inhoud te kunnen springen en beginnen met het bewerken ervan. In dit document wordt de auteurservaring van de Universal Editor beschreven.
 
@@ -200,7 +200,7 @@ Raadpleeg dit document voor meer informatie over het publiceren van inhoud met d
 
 Zie deze ontwikkelaarsdocumenten voor meer informatie over de technische details van de Universal Editor.
 
-* [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md) - Leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een ervaring van de allernieuwste ontwikkelaar verstrekken.
+* [ Universele Inleiding van de Redacteur ](/help/implementing/universal-editor/introduction.md) - leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren en inhoudssnelheid verhogen.
 * [ Begonnen het Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md) - leer hoe te om toegang tot de Universele Redacteur te krijgen en hoe te beginnen van instrumenten voorzien uw eerste AEM app om het te gebruiken.
 * [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [ Attributen en Types ](/help/implementing/universal-editor/attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
