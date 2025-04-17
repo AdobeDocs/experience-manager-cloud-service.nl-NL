@@ -4,13 +4,13 @@ description: Asynchrone functievraag in Visuele regeleditor
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
-
 
 # Asynchrone functies gebruiken in een adaptief formulier op basis van kerncomponenten
 
@@ -28,7 +28,7 @@ Neem bijvoorbeeld een scenario waarin een gebruiker een afbeelding uploadt, het 
 
 Met een asynchrone aanpak kunnen gebruikers daarentegen afbeeldingen uploaden op de achtergrond en tegelijkertijd de rest van het formulier naadloos invullen. De interface blijft reageren, zodat updates in real time mogelijk zijn en direct feedback wanneer het uploaden vordert. Het verbetert de betrokkenheid van gebruikers en zorgt voor een vloeiende ervaring zonder onderbrekingen.
 
-![ Asynchrone en synchrone functies ](/help/forms/assets/sync-async.png) {align=center}
+![ Asynchrone en synchrone functies ](/help/forms/assets/sync-async.png){align=center}
 
 ## Asynchrone functies implementeren voor Adaptive Forms
 
@@ -38,8 +38,6 @@ U kunt de asynchrone functies voor Aangepast Forms uitvoeren gebruikend de volge
 * [Functie-uitvoer](#how-to-use-function-output-rule-type)
 
 ## Hoe te om het de regeltype van de Vraag van de Functie te gebruiken Async?
-
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 U kunt de [ douanefuncties ](/help/forms/custom-function-core-component-create-function.md) voor asynchrone verrichtingen schrijven en de asynchrone functies vormen gebruikend het **[!UICONTROL Async Function Call]** regeltype in de regelredacteur.
 
@@ -53,7 +51,7 @@ In een registratieformulier, wanneer de gebruiker **klikt bevestigt** knoop, wor
 
 In de volgende afbeelding ziet u hoe u het regeltype **[!UICONTROL Async Function Call]** gebruikt om asynchrone functies voor Adaptive Forms aan te roepen:
 
-![ Werkschema om asynchrone functies ](/help/forms/assets/workflow-to-add-async-func.png) toe te voegen {width=50%, align=center}
+![ Werkschema om asynchrone functies toe te voegen ](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
 ### 1. Schrijf een aangepaste functie voor de asynchrone bewerking in het JS-bestand
 
@@ -149,7 +147,7 @@ Laten we een regel maken om het deelvenster `userdetails` weer te geven als de O
 1. Selecteer **[!UICONTROL Hide]** van de **Uitgezochte drop-down lijst van de Actie**. Verberg bijvoorbeeld het tekstvak `error message` .
 1. Klik op **[!UICONTROL Done]**.
 
-![ de vraag van het Succes ](/help/forms/assets/rule-editor-success-callback.png) {width=50%, height=50%}
+![ vraag van het Succes ](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
 Raadpleeg de onderstaande schermafbeelding, waarin de gebruiker de OTP invoert als `111` . Het deelvenster `User Details` verschijnt wanneer op de knop `Confirm` wordt geklikt.
 
@@ -170,7 +168,7 @@ Laten we een regel maken om een foutbericht weer te geven als de OTP niet overee
 1. Selecteer **[!UICONTROL Hide]** van de **Uitgezochte drop-down lijst van de Actie**. Verberg bijvoorbeeld het deelvenster `userdetails` .
 1. Klik op **[!UICONTROL Done]**.
 
-![ de callback methode van de Mislukking ](/help/forms/assets/rule-editor-failure-callback.png) {width=50%, height=50%}
+![ callback methode van de Mislukking ](/help/forms/assets/rule-editor-failure-callback.png){width=50%, height=50%}
 
 Raadpleeg de onderstaande schermafbeelding, waarin de gebruiker de OTP invoert als `123` . De foutmelding verschijnt wanneer op de knop `Confirm` wordt geklikt.
 
@@ -215,9 +213,9 @@ In het bovenstaande voorbeeld is de functie asyncFunction een `asynchronous func
 
 Om zijn het werken te zien, voegen een knoop toe en creëren een regel voor de knoop die de asynchrone functie na een knoop klikt.
 
-![ creërend regel voor async functie ](/help/forms/assets/rule-for-async-funct.png) {width=50%}
+![ creërend regel voor async functie ](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-Raadpleeg de schermafbeelding van het consolevenster hieronder om aan te tonen dat wanneer de gebruiker op de knop `Fetch` klikt, de aangepaste functie `callAsyncFunction` wordt aangeroepen, die op zijn beurt een asynchrone functie `asyncFunction` aanroept. Inspect het consolevenster om de reactie op de knoop te bekijken klik:
+Raadpleeg de schermafbeelding van het consolevenster hieronder om aan te tonen dat wanneer de gebruiker op de knop `Fetch` klikt, de aangepaste functie `callAsyncFunction` wordt aangeroepen, die op zijn beurt een asynchrone functie `asyncFunction` aanroept. Inspecteer het consolevenster om de reactie op de knoop te bekijken klik:
 
 ![ venster van de Console ](/help/forms/assets/async-custom-funct-console.png)
 

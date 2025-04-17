@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: Roep de dienstverhogingen in VRE aan, bevolkend drop-down opties gebruikend de aanroepdienst, Reeks herhaalbaar paneel gebruikend output van de aanroepdienst, Reeks paneel gebruikend output van de aanroepdienst, de outputparameter van het Gebruik van de aanroepdienst om ander gebied te bevestigen.
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
 
-
 # Het gebruiken roept Dienst in de Visuele Redacteur van de Regel voor vormen aan die op de Componenten van de Kern worden gebaseerd
-
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 De visuele Redacteur van de Regel in een AanpassingsVorm steunt de **Invoke eigenschap van de Dienst**, die u toestaat om de dienst van de lijst van de Modellen van de Gegevens van de Vorm (FDM) te selecteren die voor uw instantie wordt gevormd. U kunt formuliervelden rechtstreeks toewijzen aan de invoerparameters van de service. Als u formuliervelden wilt toewijzen aan uitvoerparameters, gebruikt u de optie voor gebeurtenislading voor de opgegeven service Formuliergegevensmodel. Bovendien, staat de Visuele regelredacteur u toe om regels voor succes en mislukkingsmanagers voor **tot stand te brengen de verrichtingen van de Dienst** aanhalen die op zijn outputreacties worden gebaseerd. De managers van het succes beheren de succesvolle uitvoering van **roepen de verrichting van de Dienst** aan, terwijl de mislukkingsmanagers om het even welke fouten richten die voorkomen.
 
@@ -47,7 +45,7 @@ Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTRO
 
 U kunt veelvoudige regels toevoegen om succesvolle reacties voor de **te behandelen roept de verrichting van de Dienst** aan:
 
-![ Veelvoudige succesmanager ](/help/forms/assets/invoke-service-multiple-success-handlers.png) {width=50%, height=50%}
+![ Veelvoudige succesmanager ](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 Op dezelfde manier kunt u regels toevoegen om **te behandelen roept de uitvoerreactie van de Dienst** aan wanneer de verrichting niet succesvol is. In de onderstaande afbeelding wordt de regeleditor van **[!UICONTROL Invoke Service Failure Handler]** weergegeven:
 
@@ -242,4 +240,3 @@ Ga `102` in het `Pet ID` tekstvakje in, en **voorleggen** knoop is verborgen.
 ## Aanvullende bronnen
 
 {{see-also-rule-editor}}
-

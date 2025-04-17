@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,6 @@ ht-degree: 0%
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
-
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 
 Aangepaste componenten van Form Core bieden functionaliteit waarmee auteurs van formulieren versioning, opmerkingen en annotaties kunnen opnemen in formulieren. Deze functies zijn bedoeld om het formulierontwikkelingsproces te stroomlijnen door gebruikers toe te staan meerdere versies van een formulier te maken en te beheren, door middel van opmerkingen aan samenwerkingsbesprekingen deel te nemen en annotaties toe te voegen aan specifieke formuliercomponenten, waardoor de algehele ervaring met het maken van formulieren wordt vergroot.
 
