@@ -1,19 +1,19 @@
 ---
 title: Config Pipelines gebruiken
-description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AEM as a Cloud Service zoals logboek op te stellen door:sturen montages, zuivert-verwante onderhoudstaken, en diverse configuraties CDN.
+description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties in AEM as a Cloud Service zoals logboek op te stellen door:sturen montages, zuivert-verwante onderhoudstaken, en diverse configuraties CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
 
 # Config Pipelines gebruiken {#config-pipelines}
 
-Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AEM as a Cloud Service zoals logboek op te stellen door:sturen montages, zuivert-verwante onderhoudstaken, en diverse configuraties CDN.
+Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties in AEM as a Cloud Service zoals logboek op te stellen door:sturen montages, zuivert-verwante onderhoudstaken, en diverse configuraties CDN.
 
 ## Overzicht {#overview}
 
@@ -46,7 +46,8 @@ De volgende lijst biedt een uitvoerige lijst van dergelijke configuraties met ve
 | [ Basisauthentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declareer de gebruikersnamen en de wachtwoorden voor een basisautwiedialoog die bepaalde URLs beschermen. |
 | [ Taak van het Onderhoud van de Opruiming van de Versie ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer de AEM-opslagplaats door regels te declareren over het tijdstip waarop versies van inhoud moeten worden gewist |
 | [ Taak van het Onderhoud van de Aanzuivering van het Logboek van de Controle ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimaliseer het AEM controlelogboek voor verhoogde prestaties door regels rond te verklaren wanneer het logboek zou moeten worden gezuiverd |
-| [ Logboek door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Vorm de eindpunten en de geloofsbrieven voor het door:sturen van logboeken aan diverse bestemmingen, met inbegrip van Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [ Logboek door:sturen ](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Vorm de eindpunten en de geloofsbrieven voor het door:sturen van logboeken aan diverse bestemmingen, met inbegrip van Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
+| [ registrerend een identiteitskaart van de Cliënt ](/help/implementing/developing/open-api-based-apis.md) | `API` | Bereik Adobe Developer Console API-projecten voor een specifieke AEM-omgeving door de client-id te registreren. Dit is nodig voor gebruik van op OpenAPI gebaseerde API&#39;s die verificatie vereisen |
 
 ## Config-pijplijnen maken en beheren {#creating-and-managing}
 
