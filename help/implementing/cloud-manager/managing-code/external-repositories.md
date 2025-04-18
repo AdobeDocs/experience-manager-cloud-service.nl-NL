@@ -4,9 +4,9 @@ description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoege
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 1. Geef een toegangstoken aan de externe opslagplaats.
 1. Valideer eigendom van de privé bewaarplaats GitHub.
 1. [ vorm een webhaak ](#configure-webhook) aan een externe bewaarplaats.
-
 
 
 ## Een externe opslagplaats toevoegen {#add-ext-repo}
@@ -212,90 +211,5 @@ De volgende gedragingen zijn van toepassing:
 * Zorg ervoor dat de Webhaak-URL een geldige API-sleutel bevat.
 * Controleer of webhaakgebeurtenissen correct zijn geconfigureerd in de instellingen van uw Git-leverancier.
 * Als de bevestiging van PR of pijpleidingstrekkers niet werken, verifieer dat het Geheime Geheime Web in zowel Cloud Manager als uw verkoper van het Git bijgewerkt is.
-
-
-## Implementeer vanuit externe Git-providers naar een snelle ontwikkelomgeving {#deploy-to-rde}
-
->[!NOTE]
->
->Deze functie is beschikbaar via het programma Vroege adopter. Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ CloudManager_BYOG@adobe.com ](mailto:cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
-
-Cloud Manager steunt het opstellen van code aan Snelle Milieu&#39;s van de Ontwikkeling (RDEs) direct van externe Git leveranciers wanneer het gebruiken van [ uw eigen configuratie van het Git (BYOG) ](/help/implementing/cloud-manager/managing-code/external-repositories.md) brengen.
-
-Voor het implementeren van RDE&#39;s vanuit een externe Git-opslagplaats is het volgende vereist:
-
-* Het gebruik van een externe Git-opslagplaats die is geïntegreerd met Cloud Manager (BYOG-instelling).
-* Uw project moet een of meer RDE-omgevingen hebben ingericht.
-* Als u `github.com` gebruikt, moet u de bijgewerkte app installatie van GitHub herzien en goedkeuren om de vereiste nieuwe toestemmingen te verlenen.
-
-**Nota&#39;s van het Gebruik**
-
-* Implementatie naar RDE wordt momenteel alleen ondersteund voor AEM-inhoud en Dispatcher-pakketten.
-* De implementatie van andere pakkettypen (bijvoorbeeld volledige AEM-toepassingspakketten) wordt nog niet ondersteund.
-* Momenteel wordt het opnieuw instellen van een RDE-omgeving met behulp van een opmerking niet ondersteund. De klanten moeten de bestaande bevelen AIO CLI gebruiken, zoals [ hier wordt beschreven ](/help/implementing/developing/introduction/rapid-development-environments.md).
-
-**hoe het** werkt
-
-1. **bericht van de kwaliteitsbevestiging van de Code.**
-
-   Wanneer een trekkingsverzoek (PR) een pijpleiding van de codekwaliteit teweegbrengt, wijzen de bevestigingsresultaten erop of de plaatsing aan een milieu van RDE kan te werk gaan.
-
-   Hoe het op Onderneming GitHub kijkt:
-   ![ de kwaliteitsbevestiging van de Code bericht op Onderneming GitHub ](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   Hoe het er uitziet op GitLab:
-   ![ bericht van de kwaliteitsbevestiging van de Code op GitLab ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   Hoe het er op Bitbucket uitziet:
-   ![ bericht van de kwaliteitsbevestiging van de Code op Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
-
-1. **de plaatsing die van de trekker een commentaar gebruikt.**
-
-   Als u de implementatie wilt starten, voegt u een opmerking toe aan de PR in de volgende indeling: `deploy on rde-environment-<envName>`
-
-   ![ plaatsing van de Trekker gebruikend een commentaar ](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   `<envName>` moet de naam van een bestaande milieu van RDE aanpassen. Als de naam niet wordt gevonden, wordt een opmerking geretourneerd die aangeeft dat de omgeving ongeldig is.
-
-   Als de milieustatus niet klaar is, krijgt u de volgende opmerking:
-
-   ![ Milieu niet klaar om op te stellen ](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **controle van het Milieu en artefactplaatsing.**
-
-   Als de RDE klaar is, post Cloud Manager een nieuwe controle aan PR.
-
-   Hoe het op Onderneming GitHub kijkt:
-
-   ![ Status van het milieu op GitHub ](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   Hoe het er uitziet op GitLab:
-
-   ![ Status van het milieu op GitLab ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   Hoe het er op Bitbucket uitziet:
-
-   ![ Status van het milieu op Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **Succesvol plaatsingsbericht.**
-
-   Wanneer de implementatie is voltooid, wordt in Cloud Manager een succesbericht geplaatst met een overzicht van de artefacten die in de doelomgeving zijn geïmplementeerd.
-
-   Hoe het op Onderneming GitHub kijkt:
-
-   ![ status van de Plaatsing van het milieu op GitHub ](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   Hoe het er uitziet op GitLab:
-
-   ![ status van de Plaatsing van milieu op GitLab ](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   Hoe het er op Bitbucket uitziet:
-
-   ![ status van de Plaatsing van milieu op Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 

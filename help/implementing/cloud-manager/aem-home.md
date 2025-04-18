@@ -1,5 +1,5 @@
 ---
-title: Info AEM Launchpad&ndash; Vroege adopter
+title: AEM Launchpad
 description: Meer informatie over de Adobe Experience Manager Launchpad-pagina.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,18 +7,19 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
+source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-# Over AEM Launchpad - Vroege adopter {#aem-launchpad}
+# AEM Launchpad {#aem-launchpad}
 
 AEM Launchpad introduceert een gecentraliseerd beginpunt voor het beheer van inhoud, elementen en sites in Adobe Experience Manager. AEM Launchpad is ontworpen om een persoonlijke ervaring te bieden en biedt u de mogelijkheid om probleemloos door het AEM-ecosysteem te navigeren op basis van uw rollen en doelen. Als gids biedt deze informatie belangrijke inzichten en aanbevolen acties om u te helpen uw doelstellingen efficiënt te verwezenlijken. Met een duidelijke, persoonlijke lay-out zorgt AEM Launchpad voor snelle toegang tot essentiële gereedschappen en ondersteunt het een gestroomlijnde en effectieve ervaring voor alle AEM-functies.
 
-AEM Launchpad is beschikbaar voor gebruikers die dit systeem vroegtijdig kunnen gebruiken en biedt een geoptimaliseerde ervaring die gericht is op het verbeteren van workflows, het prioriteren van doelen en het behalen van resultaten. Door in te schakelen kunt u de ontwikkeling van AEM Launchpad beïnvloeden door feedback te geven die de toekomst van helpt bepalen en de waarde ervan voor de hele AEM-gemeenschap verbetert.
+<!--
+Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## AEM Launchpad omhoog sluiten {#aem-launchpad-about}
 
