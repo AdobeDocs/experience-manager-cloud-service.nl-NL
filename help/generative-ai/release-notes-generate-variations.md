@@ -4,9 +4,9 @@ description: Opmerkingen bij de release voor het genereren van variaties, toegan
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ U kunt [ toegang tot Variaties ](/help/generative-ai/generate-variations-integra
 
 >[!NOTE]
 >
->De vorige versie van [ produceert Variaties kan nog direct worden betreden ](/help/generative-ai/generate-variations.md).
+>Het wordt geadviseerd dat u versie 3.0.0 gebruikt, aangezien hoewel de vorige versie van [ Variaties nog kan direct worden betreden ](/help/generative-ai/generate-variations.md), het in de toekomst zal worden afgekeurd.
 
 ### 2.2.0. {#release-notes-2-2-0}
 

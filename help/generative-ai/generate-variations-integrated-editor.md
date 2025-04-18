@@ -3,13 +3,13 @@ title: Variaties genereren
 description: Meer informatie over Variaties genereren, toegankelijk via verschillende editors in AEM as a Cloud Service
 feature: Generate Variations
 role: Admin, Architect, Developer, User
-source-git-commit: 257fcd8df8bf216deec1fe96e64dd38e52f3ebe1
+exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
-
 
 # Variaties genereren - Geïntegreerd in AEM Editors {#generate-variations-integrated-in-aem-editors}
 
@@ -35,7 +35,7 @@ U kunt [ toegang tot Variaties ](#access-generate-variations) van de volgende re
 
 >[!NOTE]
 >
->De standalone versie van [ produceert Variaties kan nog direct worden betreden ](/help/generative-ai/generate-variations.md).
+>Het wordt geadviseerd dat u deze versie gebruikt, aangezien hoewel de standalone versie van [ Variaties nog kan direct worden betreden ](/help/generative-ai/generate-variations.md), het in de toekomst zal worden afgekeurd.
 
 U kunt dan:
 
