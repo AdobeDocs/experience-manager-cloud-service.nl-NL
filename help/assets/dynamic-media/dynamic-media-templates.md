@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
+source-git-commit: c9a4a361561cb03b17e0b931b8946116791c62e1
 workflow-type: tm+mt
-source-wordcount: '2962'
+source-wordcount: '3026'
 ht-degree: 0%
 
 ---
@@ -83,12 +83,13 @@ Als u een [!DNL Dynamic Media] -sjabloon wilt maken, moet u beschikken over:
    * Op het tabblad **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]** wordt **[!UICONTROL [!DNL Dynamic Media] sync mode]** dat is ingesteld op **[!UICONTROL Disabled by default]** , niet toegepast op alle AEM-mappen (**[!UICONTROL Sync all content]** is uitgeschakeld). Zie [ vormend Dynamische Media Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
    * **[!UICONTROL [!DNL Dynamic Media] sync mode]** wordt ingesteld op **[!UICONTROL Enable for subfolders]** voor de doelmap of -submap waarin u de sjabloon na het maken wilt opslaan. Zie [ het vormen  [!DNL Dynamic Media]  Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
 
-## [!DNL Dynamic Media] WYSIWYG-sjabloon maken{#how-to-create-dynamic-media-wysiwyg-template}
+## [!DNL Dynamic Media] -sjabloon maken{#how-to-create-dynamic-media-template}
 
 Voer de volgende stappen uit om een [!DNL Dynamic Media] -sjabloon te maken:
 
 1. Navigeer aan uw [!DNL Assets View] en [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. De omslagboom in ![ Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** duikt in **[!UICONTROL Dynamic Media Assets]**. Sla de [!DNL Dynamic Media] -sjabloon op in deze [!UICONTROL Dynamic Media Assets] -map.
-1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken voor het creëren van het malplaatje. Het publiceren van beelden wordt vereist om de levering URL van het malplaatje te produceren, dat in stroomafwaartse toepassingen kan worden gebruikt.
+1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken in het creëren van het malplaatje. Het publiceren van beelden wordt vereist om de levering URL van het malplaatje te produceren, na het creëren van het malplaatje, dat in stroomafwaartse toepassingen kan worden gebruikt.
+1. [ voert de activa uit uploadend en het publiceren stappen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) om uw doopvontdossier aan AEM en Dynamische Media gelijktijdig te uploaden en te publiceren om een doopvont buiten de standaardAdobe Sans F2 doopvontfamilie in de tekstlaag te gebruiken. [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Verzeker om ](/help/assets/reprocessing-assets-view.md) de oudere doopvonten (op [!DNL Assets View] homepage opnieuw te verwerken, ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**te klikken, aan de plaats van het doopvontdossier te navigeren, het doopvontdossier één voor één te selecteren en ![ te klikken herverwerken](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**) om hen in het creëren van het malplaatje te gebruiken. [ Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) om meer over doopvonten te weten te komen.
 1. [Een leeg canvas maken](#create-a-canvas)
 1. [Afbeeldingen toevoegen aan het canvas](#add-images-to-the-canvas)
 1. [Tekstlagen toevoegen aan het canvas](#add-text-to-the-canvas)
@@ -158,11 +159,7 @@ Voer de volgende stappen uit om tekstlagen aan het canvas toe te voegen:
 1. Selecteer **[!UICONTROL Smart Text Resize]** in het deelvenster Eigenschappen om de tekstlengte en tekengrootte automatisch aan te passen aan de optimale grootte in het desbetreffende gebied.
    ![ best klantgerichte banners ](/help/assets/assets/add-text-layer.png)
 
-Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster.
-
->[!NOTE]
->
-> Om een doopvont buiten de standaardAdobe Sans F2 doopvontfamilie te gebruiken, moet u het doopvontdossier aan [!AEM  Assets ] en [!DNL Dynamic Media] uploaden en publiceren. Als u sommige oude doopvonten in uw instantie hebt, verzeker [ opnieuw verwerken ](/help/assets/reprocessing-assets-view.md) om hen in de redacteur van het Malplaatje te bekijken.
+Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. Zie [ stap 3 in creeer  [!DNL Dynamic Media]  malplaatje ](#how-to-create-dynamic-media-template) sectie voor doopvontverwante informatie.
 
 ### Een laag bewerken of verwijderen {#edit-or-delete-a-layer}
 
@@ -361,3 +358,5 @@ Bekijk deze stapsgewijze video om te leren hoe u een CTA-koppeling aan een sjabl
 
 1. Onderzoek [[!DNL Dynamic Media]  en zijn mogelijkheden ](/help/assets/dynamic-media/dynamic-media.md)
 1. Onderzoek [[!DNL Dynamic Media]  met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md)
+
+
