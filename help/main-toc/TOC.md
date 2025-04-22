@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 1%
 
 ---
@@ -1078,14 +1078,9 @@ ht-degree: 1%
       + Sidekick {#sidekick}
          + [Sidekick gebruiken](/help/edge/docs/sidekick.md)
          + [Extensie installeren](/help/edge/docs/sidekick-extension.md)
-         + [ Configurator van het Project ](https://www.aem.live/tools/sidekick/)
          + [Sidekick Library](/help/edge/docs/sidekick-library.md)
       + [Veelgestelde vragen](/help/edge/docs/faq.md)
-      + [ Admin API ](https://www.aem.live/docs/admin.html)
-      + [ Status van AEM ](https://status.adobe.com)
       + Gereedschappen {#tools}
-         + [ de Uitbreiding van AEM Sidekick Chrome ](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [ Github Bot ](https://github.com/apps/aem-code-sync)
          + [Controlelogboek](/help/edge/docs/auditlog.md)
 + Koploos {#headless}
    + [Wat is een Headless CMS?](/help/headless/what-is-headless.md)
