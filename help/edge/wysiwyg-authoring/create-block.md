@@ -1,10 +1,13 @@
 ---
 title: Blokken maken met een instrument voor gebruik met de universele editor
-description: Leer hoe u blokken maakt die van instrumenten worden voorzien voor gebruik met de Universal Editor in WYSIWYG-ontwerptoepassingen voor Edge Delivery Services.
+description: Leer hoe u blokken maakt die van instrumenten zijn voorzien voor gebruik met de Universal Editor in WYSIWYG-ontwerptoepassingen met Edge Delivery Services-projecten.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -14,20 +17,20 @@ ht-degree: 0%
 
 # Blokken maken met een instrument voor gebruik met de universele editor {#create-block}
 
-Leer hoe u blokken maakt die van instrumenten worden voorzien voor gebruik met de Universal Editor in WYSIWYG-ontwerptoepassingen voor Edge Delivery Services.
+Leer hoe u blokken maakt die van instrumenten zijn voorzien voor gebruik met de Universal Editor in WYSIWYG-ontwerptoepassingen met Edge Delivery Services-projecten.
 
 ## Vereisten {#prerequisites}
 
-Deze gids verstrekt geleidelijke instructies voor hoe te om blokken tot stand te brengen van instrumenten voor de Universele Redacteur in het auteursrecht van WYSIWYG met Edge Delivery Services projecten. Het omvat het toevoegen van componenten, het laden van componentendefinities in de Universele Redacteur, het publiceren pagina&#39;s, het uitvoeren van blokdecoratie en stijlen, het brengen van de veranderingen in productie, en het verifiëren van hen. Op de voltooiing van deze gids, kunt u een nieuw blok voor uw eigen project tot stand brengen en opstellen.
+Deze handleiding bevat stapsgewijze instructies voor het maken van blokken die van instrumenten zijn voorzien voor de Universal Editor in WYSIWYG-ontwerptoepassingen met Edge Delivery Services-projecten. Het omvat het toevoegen van componenten, het laden van componentendefinities in de Universele Redacteur, het publiceren pagina&#39;s, het uitvoeren van blokdecoratie en stijlen, het brengen van de veranderingen in productie, en het verifiëren van hen. Op de voltooiing van deze gids, kunt u een nieuw blok voor uw eigen project tot stand brengen en opstellen.
 
-Deze gids vereist noodzakelijkerwijs bestaande kennis van het schrijven van WYSIWYG met Edge Delivery Services projecten evenals de Universele Redacteur. Voordat u met deze handleiding begint, moet u al toegang hebben tot Edge Delivery Services en vertrouwd zijn met de basisbeginselen, zoals:
+Deze handleiding vereist noodzakelijkerwijs bestaande kennis van WYSIWYG-authoring met Edge Delivery Services-projecten en de Universal Editor. Voordat u met deze handleiding begint, moet u al toegang hebben tot Edge Delivery Services en vertrouwd zijn met de basisbeginselen, zoals:
 
 * U hebt de [ zelfstudie van de Dienst van Edge Delivery ](/help/edge/developer/tutorial.md) voltooid.
-* U hebt toegang tot een [ zandbak van AEM Cloud Service ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* U hebt toegang tot een [ zandbak van de Dienst van de Wolk AEM ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * U hebt [ de Universele Redacteur op het zelfde zandbakmilieu ](/help/implementing/universal-editor/getting-started.md) toegelaten.
-* U hebt de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG creatie met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids wordt voltooid.
+* U hebt de [ Begonnen Gids van de Ontwikkelaar die voor het schrijven van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids wordt voltooid.
 
-Deze gids bouwt op het werk voort dat in de [ Begonnen Gids van de Ontwikkelaar wordt gedaan Begonnen voor het auteursrecht van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids.
+Deze gids bouwt op het werk voort dat in de [ Begonnen Gids van de Ontwikkelaar wordt gedaan Begonnen voor het schrijven van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids.
 
 ## Een nieuw blok toevoegen aan uw project {#add-block}
 
@@ -35,7 +38,7 @@ In deze handleiding gaat u een blok maken om een gedenkwaardig citaat op uw pagi
 
 Om dit voorbeeld te vereenvoudigen, worden alle wijzigingen aangebracht in de `main` -vertakking van de projectopslagplaats. Natuurlijk voor uw daadwerkelijke project, [ zou u ontwikkeling beste praktijken ](https://www.aem.live/docs/dev-collab-and-good-practices) moeten volgen door zich op een verschillende tak te ontwikkelen en alle veranderingen te herzien via trekkingsverzoek alvorens aan `main` samen te voegen.
 
-De Adobe beveelt aan dat u blokken in een driefasenaanpak ontwikkelt:
+Adobe raadt u aan blokken te ontwikkelen in drie fasen:
 
 1. Maak de definitie en het model voor het blok, herzie het, en breng het aan productie.
 1. Maak inhoud met het nieuwe blok.
@@ -45,7 +48,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 ### Blokdefinitie en -model maken {#create-block-model}
 
-1\. Kloon het project GitHub plaatselijk dat u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids en open het in een redacteur van uw keus creeerde.
+1\. Kloon het project GitHub plaatselijk dat u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG creeerde creeerde te schrijven met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids en het te openen in een redacteur van uw keus.
 
 * Microsoft-code wordt hier gebruikt ter illustratie.
 
@@ -85,7 +88,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 3 Bewerk het `component-models.json` dossier bij de wortel van het project en voeg de volgende [ modeldefinitie ](/help/implementing/universal-editor/field-types.md#model-structure) voor uw nieuw citaatblok toe en bewaar het dossier.
 
-* Gelieve te zien de document [ Modellering van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md) voor meer informatie over wat belangrijk is om te overwegen wanneer het creëren van inhoudsmodellen.
+* Gelieve te zien de document [ Modellering van de Inhoud voor WYSIWYG creatie met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md) voor meer informatie over wat belangrijk is om te overwegen wanneer het creëren van inhoudsmodellen.
 
 >[!BEGINTABS]
 
@@ -155,7 +158,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, kunt u een citaatblok aan een bestaande pagina toevoegen.
 
-1. Meld u aan bij AEM as a Cloud Service in een browser. [ Gebruikend de console van Plaatsen ](/help/sites-cloud/authoring/basic-handling.md), navigeer aan de plaats die u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids werd gecreeerd en selecteer een pagina.
+1. Meld u aan bij AEM as a Cloud Service in een browser. [ Gebruikend de console van Plaatsen ](/help/sites-cloud/authoring/basic-handling.md), navigeer aan de plaats die u in de [ Begonnen Gids van de Ontwikkelaar die voor WYSIWYG creeert creeerde met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) gids en selecteer een pagina.
 
    * In dit geval wordt `index` gebruikt voor illustratieve doeleinden.
 
@@ -180,7 +183,7 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
    ![ de pagina met het nieuwe citaatblok in de geselecteerde sectie ](assets/create-block/quote-added.png)
 
-1. Zodra u met de inhoud van uw citaat wordt tevredengesteld, kunt u de pagina publiceren door te tikken of de **knoop van Publish** in de toolbar van de Universele Redacteur te klikken.
+1. Zodra u met de inhoud van uw citaat wordt tevredengesteld, kunt u de pagina publiceren door te tikken of de **te klikken publiceert** knoop in de toolbar van de Universele Redacteur.
 
 1. Controleer of de inhoud is gepubliceerd door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
 
@@ -339,8 +342,8 @@ Gelieve te zien het document [ Blokken voor WYSIWYG en op document-Gebaseerde Au
 
 Nu u weet hoe u blokken kunt maken, is het van essentieel belang dat u begrijpt hoe u inhoud op semantische wijze modelleert om een slanke ontwikkelaarservaring te bereiken.
 
-Gelieve te zien het document [ Modelleren van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md) om te leren hoe de inhoud modellering voor WYSIWYG creatie met Edge Delivery Services projecten werkt.
+Gelieve te zien het document [ Modellering van de Inhoud voor WYSIWYG creatie met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md) om te leren hoe de inhoud modellering voor WYSIWYG creatie met de projecten van Edge Delivery Services werkt.
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit webinar van AEM GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

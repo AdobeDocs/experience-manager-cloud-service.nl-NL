@@ -1,10 +1,13 @@
 ---
-description: "**NOTE**: voor projecten die gebruik maken van het Sharepoint van Adobe (&lt;https://adobe.sharepoint.com&gt;) gelieve hier verder te gaan."
+description: '**NOTE**: voor projecten die gebruikmaken van het SharePoint-bestand van Adobe (&lt;https://adobe.sharepoint.com&gt;) gaat u hier verder.'
 title: Hoe te om SharePoint te gebruiken
 feature: Edge Delivery Services
 exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '20'
 ht-degree: 0%
