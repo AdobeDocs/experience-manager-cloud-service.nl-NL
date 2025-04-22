@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3040'
+source-wordcount: '3068'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,8 @@ Als u een [!DNL Dynamic Media] -sjabloon wilt maken, moet u beschikken over:
 Voer de volgende stappen uit om een [!DNL Dynamic Media] -sjabloon te maken:
 
 1. Navigeer aan uw [!DNL Assets View] en [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. De omslagboom in ![ Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** duikt in **[!UICONTROL Dynamic Media Assets]**. Sla de [!DNL Dynamic Media] -sjabloon op in deze [!UICONTROL Dynamic Media Assets] -map.
-1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken in het creëren van het malplaatje. Het publiceren van beelden wordt vereist om de levering URL van het malplaatje te produceren, na het creëren van het malplaatje, dat in stroomafwaartse toepassingen kan worden gebruikt.
-1. [ voer deze activa uit uploadend en het publiceren stappen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) om een doopvontdossier aan AEM en Dynamische Media gelijktijdig te uploaden en te publiceren om het te gebruiken in het creëren van het malplaatje. [!UICONTROL Adobe Sans F2] is het enige standaardlettertype dat beschikbaar is in de tekstlaag. [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Verzeker [ ](/help/assets/reprocessing-assets-view.md) opnieuw verwerken de bestaande doopvonten om hen te gebruiken in het creëren van het malplaatje (op [!DNL Assets View] homepage, klik ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigeer aan de plaats van het doopvontdossier, selecteer het doopvontdossier één voor één en klik ![ opnieuw verwerken](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) om meer over doopvonten te weten te komen.
+1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken in het creëren van het malplaatje. Het publiceren van beelden wordt vereist om de levering URL van het malplaatje te produceren, na het creëren van het malplaatje. De leverings-URL kan worden gebruikt in downstreamtoepassingen.
+1. [ voer deze activa uit uploadend en het publiceren stappen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) om een doopvontdossier aan AEM en Dynamische Media gelijktijdig te uploaden en te publiceren om het in het creëren van het malplaatje te gebruiken. [!UICONTROL Adobe Sans F2] is het enige standaardlettertype dat beschikbaar is in de tekstlaag. [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Verzeker [ ](/help/assets/reprocessing-assets-view.md) opnieuw verwerken de bestaande doopvonten om hen te gebruiken in het creëren van het malplaatje (op [!DNL Assets View] homepage, klik ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigeer aan de plaats van het doopvontdossier, selecteer het doopvontdossier één voor één en klik ![ opnieuw verwerken](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) om meer over doopvonten te weten te komen.
 1. [Een leeg canvas maken](#create-a-canvas)
 1. [Afbeeldingen toevoegen aan het canvas](#add-images-to-the-canvas)
 1. [Tekstlagen toevoegen aan het canvas](#add-text-to-the-canvas)
@@ -159,7 +159,7 @@ Voer de volgende stappen uit om tekstlagen aan het canvas toe te voegen:
 1. Selecteer **[!UICONTROL Smart Text Resize]** in het deelvenster Eigenschappen om de tekstlengte en tekengrootte automatisch aan te passen aan de optimale grootte in het desbetreffende gebied.
    ![ best klantgerichte banners ](/help/assets/assets/add-text-layer.png)
 
-Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. In het veld **[!UICONTROL Font Family]** worden de opnieuw verwerkte bestaande lettertypen en de nieuw geüploade en gepubliceerde lettertypen weergegeven. Zie [ stap 3 in creeer  [!DNL Dynamic Media]  malplaatje ](#how-to-create-dynamic-media-template) sectie hierboven voor meer informatie.
+Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. In het veld **[!UICONTROL Font Family]** wordt het standaardlettertype van [!UICONTROL Adobe Sans F2] weergegeven, evenals de opnieuw verwerkte bestaande lettertypen en de nieuw geüploade en gepubliceerde lettertypen. Zie [ stap 3 in creeer  [!DNL Dynamic Media]  malplaatje ](#how-to-create-dynamic-media-template) sectie hierboven voor meer informatie.
 
 ### Een laag bewerken of verwijderen {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ Voer de volgende stappen uit om de sjabloon voor te vertonen en te publiceren en
    ![ creërend inhoud op de vlucht ](/help/assets/assets/dm-templates-publish-status.png)
 U kunt **[!UICONTROL Include all parameters]** ook schakelen om alle weergegeven parameterwaarden te bewerken en de updates in de sjabloonvoorvertoning te bekijken.
    <br>
-1. Als u de sjabloon op de voorvertoningspagina wilt publiceren, klikt u op **[!UICONTROL Publish]** en bevestigt u dat u de sjabloon wilt publiceren. **[!UICONTROL Publish Complete]** wordt weergegeven en de publicatiestatus wordt bijgewerkt naar **[!UICONTROL Published]** .
+1. Als u de sjabloon vanaf de voorvertoningspagina wilt publiceren, klikt u op **[!UICONTROL Publish]** en bevestigt u dat u de sjabloon wilt publiceren. Er wordt een **[!UICONTROL Publish Complete]** -bericht weergegeven en de publicatiestatus wordt bijgewerkt naar **[!UICONTROL Published]** .
 
->[!NOTE]
->
->Als u de sjabloon publiceert, moeten de sjabloonafbeeldingen eerst worden gepubliceerd.
+   >[!NOTE]
+   >
+   >Als u de sjabloon publiceert, moeten de sjabloonafbeeldingen eerst worden gepubliceerd.
 
 ### De leverings-URL kopiëren
 
 De geselecteerde parameters op de pagina **[!UICONTROL Preview]** worden de URL-parameters in de sjabloon-URL.
 
-U kunt als volgt de URL van de gepubliceerde sjabloon kopiëren die in de voorvertoning wordt weergegeven:
+Zorg ervoor dat de afbeeldingen in de sjabloon naar AEM en Dynamic Media worden gepubliceerd om een leverings-URL van de gepubliceerde sjabloon te genereren.
+
+Voer de volgende stappen uit om de leverings-URL van de sjabloon te kopiëren:
 
 1. Klik op **[!UICONTROL Copy URL]**. Het dialoogvenster **[!UICONTROL Copy URL]** wordt weergegeven. Selecteer en kopieer de weergegeven URL. De eerste parameter in URL begint na een vraagteken **([!UICONTROL ?])** en een zeer belangrijk-waardepaar begint met **[!UICONTROL $]** en beëindigt met **[!UICONTROL &]**. De sleutel en de waarde worden gescheiden door een gelijkteken **([!UICONTROL =])**, met de sleutel op de linkerzijde en de waarde op het recht.
 1. Plak deze URL in het browsertabblad en bekijk de live sjabloon. Pas het malplaatje in real time aan door de vereiste waarde van de parameter (de waarde van Sleutel) in URL direct bij te werken zoals aangetoond in [ stap 2 ](#preview-and-publish-template-and-copy-template-deliver-url) van **Voorproef en publiceer** sectie.
