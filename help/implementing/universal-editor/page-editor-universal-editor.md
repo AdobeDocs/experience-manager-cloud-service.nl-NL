@@ -1,19 +1,19 @@
 ---
 title: Pagina-editor en Universal Editor
-description: De Pagina-editor wordt nog steeds ondersteund door Adobe, maar de Universal Editor biedt bestaande mogelijkheden voor uw nieuwe projecten.
+description: De Pagina-editor wordt nog steeds ondersteund door Adobe, maar de Universal Editor biedt geweldige mogelijkheden voor uw nieuwe projecten.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
 
 ---
 
-
 # Pagina-editor en Universal Editor {#page-editor-universal-editor}
 
-De Pagina-editor wordt nog steeds ondersteund door Adobe, maar de Universal Editor biedt bestaande mogelijkheden voor uw nieuwe projecten.
+De Pagina-editor wordt nog steeds ondersteund door Adobe, maar de Universal Editor biedt geweldige mogelijkheden voor uw nieuwe projecten.
 
 ## Achtergrond {#background}
 
@@ -34,7 +34,7 @@ Als vuistregel geldt:
 
 ## Functievergelijking {#feature-comparison}
 
-Omdat de functiekloof tussen de twee editors voortdurend kleiner wordt, moet u de [release notes van de Universal Editor](/help/release-notes/universal-editor/current.md) raadplegen voor de laatste ontwikkelingen.
+Omdat het eigenschaphiaat tussen de twee redacteurs constant krimpt, ben zeker om de [ versienota&#39;s van de Universele Redacteur ](/help/release-notes/universal-editor/current.md) voor de recentste ontwikkelingen te raadplegen.
 
 ### Aflevering {#delivery}
 
@@ -46,17 +46,17 @@ Omdat de functiekloof tussen de twee editors voortdurend kleiner wordt, moet u d
 
 ### Persistentie {#persistence}
 
-|  | Pagina-editor | Opmerking | Universele editor | Notities |
+|  | Pagina-editor | Notities | Universele editor | Notities |
 |---|---|---|---|---|
 | Paginacomponenten bewerken | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} |  |
 | Het uitgeven [ de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) | [!BADGE  niet beschikbaar ]{type=Negative} |  | [!BADGE  Beschikbaar ]{type=Positive} | Inclusief het invoegen van nieuwe fragmenten en het opnieuw ordenen van fragmenten |
 
 ### Mogelijkheden {#capabilities}
 
-|  | Pagina-editor | Opmerking | Universele editor | Notities |
+|  | Pagina-editor | Notities | Universele editor | Notities |
 |---|---|---|---|---|
 | Paginasjablonen | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} | De Universal Editor is niet op de hoogte van het gebruikte sjabloonsysteem. Nochtans, begunstigt het typische implementatiepatroon ontwikkelaar-bepaalde malplaatjes, aangezien het moderne frontend tooling het voor ontwikkelaars veel gemakkelijker maakt om malplaatjelogica direct in code te bepalen en te handhaven. |
-| WYSIWYG Editing | [!BADGE  Beschikbaar ]{type=Positive} Beperkt tot Pagina&#39;s |  | [!BADGE  Beschikbaar ]{type=Positive} | Pagina&#39;s en inhoudsfragmenten ondersteunen |
+| WYSIWYG Editing | [!BADGE  Beschikbaar ]{type=Positive} | Beperkt tot pagina&#39;s | [!BADGE  Beschikbaar ]{type=Positive} | Pagina&#39;s en inhoudsfragmenten ondersteunen |
 | [ produceer Variaties ](/help/generative-ai/generate-variations.md) | [!BADGE  niet beschikbaar ]{type=Negative} |  | [!BADGE  Beschikbaar ]{type=Positive} | [ Beschikbaar als uitbreiding ](/help/implementing/universal-editor/extending.md) |
 | Nieuw blok invoegen | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} |  |
 | Blok opnieuw ordenen | [!BADGE  Beschikbaar ]{type=Positive} | Mogelijkheid met slepen en neerzetten in context, maar niet in het zijpaneel van de boomweergave | [!BADGE  Beschikbaar ]{type=Positive} | Mogelijk via slepen en neerzetten in het zijpaneel van de &quot;boomweergave&quot;, maar nog niet in context (gepland) |
@@ -75,7 +75,7 @@ Omdat de functiekloof tussen de twee editors voortdurend kleiner wordt, moet u d
 | [ het sluiten van de Pagina ](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} | Hiermee wordt de vergrendelingsstatus van Sites-console gerespecteerd, met een extensie die beschikbaar is om pagina&#39;s van de editor te vergrendelen/ontgrendelen |
 | [ de eigenschappen van de Pagina ](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} | Beschikbaar bij Sitebeheerder, met uitbreiding om tot de eigenschappen van pagina&#39;s van de redacteur ook toegang te hebben |
 | Eigenschappen voor meerdere velden | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  niet beschikbaar ]{type=Negative} | Geplant |
-| [DAM op afstand](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} |  |
+| [ Verre DAM ](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} |  |
 | [ Pagina het versioning ](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} |  |
 | [ TimeWarp ](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) en [ Diff Mening ](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  niet beschikbaar ]{type=Negative} | Geplant |
 | Weergeven in beheerder | [!BADGE  Beschikbaar ]{type=Positive} |  | [!BADGE  Beschikbaar ]{type=Positive} | Beschikbaar als extensie voor pagina&#39;s |
