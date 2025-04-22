@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -77,3 +77,13 @@ Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager
 Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze Lijst van gewenste personen van Cloud Manager IP wordt toegevoegd. Dan, pas de lijst op het milieu van de Auteur *toe alvorens* u de pijpleiding toelaat.
 
 Zie [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen en [ eerst-eind pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) voor meer informatie toelaten.
+
+### De Universal Editor en IP-Lijsten van gewenste personen {#universal-editor}
+
+Als u van plan bent om de Universele Redacteur aan auteur uw inhoud te gebruiken, moet u de IP adressen toevoegen die de Universele Dienst van de Redacteur aan een Lijst van gewenste personen gebruikt en het toepassen.
+
+1. Haal de IP-adressen die door de Universal Editor Service worden gebruikt, op van het volgende API-eindpunt: `http://universal-editor-service.adobe.io/ip-ranges` .
+1. Maak een lijst van gewenste personen met die IP-adressen en noem deze `Universal Editor Service` of vergelijkbaar.
+1. Pas de lijst van gewenste personen `Universal Editor Service` toe.
+
+De lijst van IP adressen die door de Universele Dienst van de Redacteur worden gebruikt is onderhevig aan verandering en u moet uw lijst van gewenste personen dienovereenkomstig bijwerken.
