@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
+source-git-commit: c237f53f771431cc15584b392106645b7eacaa30
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3018'
 ht-degree: 0%
 
 ---
@@ -75,10 +75,13 @@ Enkele belangrijke voordelen van [!DNL Dynamic Media] sjablonen zijn:
 
 ## Voordat u begint{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-Als u een [!DNL Dynamic Media] -sjabloon wilt maken, moet u beschikken over:
+Voer de volgende vereisten in om een [!DNL Dynamic Media] -sjabloon te maken en de URL voor levering te genereren:
 
 1. Toegang tot [!DNL Dynamic Media] .
-1. [ synchroniseerde de beelden beschikbaar in uw  [!DNL AEM Assets]  instantie met  [!DNL Dynamic Media]  om hen te gebruiken voor het creëren van het malplaatje ](/help/assets/dynamic-media/config-dm.md).
+1. Op de startpagina van [!DNL Assets View] hebt u een map in **[!UICONTROL Dynamic Media Assets]** om uw sjabloon op te slaan. [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**om die omslag in **[!UICONTROL Dynamic Media Assets]**te herhalen.
+1. [ Synchroniseer de beelden beschikbaar in uw  [!DNL AEM Assets]  instantie met  [!DNL Dynamic Media]  om hen te gebruiken voor het creëren van het malplaatje ](/help/assets/dynamic-media/config-dm.md).
+1. Publiceer de afbeeldingen die u wilt gebruiken bij het maken van de sjabloon om de URL van de levering van de sjabloon te genereren nadat u deze hebt gemaakt. De leverings-URL kan worden gebruikt in downstreamtoepassingen.
+1. Om een doopvont buiten het gebrek [!UICONTROL Adobe Sans F2] doopvont in de de tekstlaag van het malplaatje te gebruiken, [ upload en publiceer gelijktijdig het doopvontdossier aan AEM en Dynamische Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). Verzeker om [ ](/help/assets/reprocessing-assets-view.md) de bestaande doopvonten opnieuw te verwerken om hen te gebruiken in het creëren van het malplaatje <!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->. Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) om meer over doopvonten te weten te komen.
 1. Controleer het volgende in de aanraakinterface:
    * Op het tabblad **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]** wordt **[!UICONTROL [!DNL Dynamic Media] sync mode]** dat is ingesteld op **[!UICONTROL Disabled by default]** , niet toegepast op alle AEM-mappen (**[!UICONTROL Sync all content]** is uitgeschakeld). Zie [ vormend Dynamische Media Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
    * **[!UICONTROL [!DNL Dynamic Media] sync mode]** wordt ingesteld op **[!UICONTROL Enable for subfolders]** voor de doelmap of -submap waarin u de sjabloon na het maken wilt opslaan. Zie [ het vormen  [!DNL Dynamic Media]  Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
@@ -86,10 +89,11 @@ Als u een [!DNL Dynamic Media] -sjabloon wilt maken, moet u beschikken over:
 ## [!DNL Dynamic Media] -sjabloon maken{#how-to-create-dynamic-media-template}
 
 Voer de volgende stappen uit om een [!DNL Dynamic Media] -sjabloon te maken:
-
-1. Navigeer aan uw [!DNL Assets View] en [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. De omslagboom in ![ Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** duikt in **[!UICONTROL Dynamic Media Assets]**. Sla de [!DNL Dynamic Media] -sjabloon op in deze [!UICONTROL Dynamic Media Assets] -map.
-1. Selecteer ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**en [ uploaden en publiceren uw beelden aan  [!DNL AEM]  en  [!DNL Dynamic Media]  gelijktijdig ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) om hen te gebruiken in het creëren van het malplaatje. Het publiceren van beelden wordt vereist om de levering URL van het malplaatje te produceren, na het creëren van het malplaatje. De leverings-URL kan worden gebruikt in downstreamtoepassingen.
-1. [ voer deze activa uit uploadend en het publiceren stappen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) om een doopvontdossier aan AEM en Dynamische Media gelijktijdig te uploaden en te publiceren om het in het creëren van het malplaatje te gebruiken. [!UICONTROL Adobe Sans F2] is het enige standaardlettertype dat beschikbaar is in de tekstlaag. [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Verzeker [ ](/help/assets/reprocessing-assets-view.md) opnieuw verwerken de bestaande doopvonten om hen te gebruiken in het creëren van het malplaatje (op [!DNL Assets View] homepage, klik ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigeer aan de plaats van het doopvontdossier, selecteer het doopvontdossier één voor één en klik ![ opnieuw verwerken](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) om meer over doopvonten te weten te komen.
+<!--
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+-->
 1. [Een leeg canvas maken](#create-a-canvas)
 1. [Afbeeldingen toevoegen aan het canvas](#add-images-to-the-canvas)
 1. [Tekstlagen toevoegen aan het canvas](#add-text-to-the-canvas)
@@ -159,7 +163,7 @@ Voer de volgende stappen uit om tekstlagen aan het canvas toe te voegen:
 1. Selecteer **[!UICONTROL Smart Text Resize]** in het deelvenster Eigenschappen om de tekstlengte en tekengrootte automatisch aan te passen aan de optimale grootte in het desbetreffende gebied.
    ![ best klantgerichte banners ](/help/assets/assets/add-text-layer.png)
 
-Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. In het veld **[!UICONTROL Font Family]** wordt het standaardlettertype van [!UICONTROL Adobe Sans F2] weergegeven, evenals de opnieuw verwerkte bestaande lettertypen en de nieuw geüploade en gepubliceerde lettertypen. Zie [ stap 3 in creeer  [!DNL Dynamic Media]  malplaatje ](#how-to-create-dynamic-media-template) sectie hierboven voor meer informatie.
+Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. In het veld **[!UICONTROL Font Family]** wordt het standaardlettertype van [!UICONTROL Adobe Sans F2] weergegeven, evenals de opnieuw verwerkte bestaande lettertypen en de nieuw geüploade en gepubliceerde lettertypen. Zie punt 5 in [ alvorens u ](#prerequisites-for-dynamic-media-wysiwyg-template) sectie hierboven voor meer informatie begint.
 
 ### Een laag bewerken of verwijderen {#edit-or-delete-a-layer}
 
@@ -269,15 +273,11 @@ U kunt **[!UICONTROL Include all parameters]** ook schakelen om alle weergegeven
    <br>
 1. Als u de sjabloon vanaf de voorvertoningspagina wilt publiceren, klikt u op **[!UICONTROL Publish]** en bevestigt u dat u de sjabloon wilt publiceren. Er wordt een **[!UICONTROL Publish Complete]** -bericht weergegeven en de publicatiestatus wordt bijgewerkt naar **[!UICONTROL Published]** .
 
-   >[!NOTE]
-   >
-   >Als u de sjabloon publiceert, moeten de sjabloonafbeeldingen eerst worden gepubliceerd.
-
 ### De leverings-URL kopiëren
 
 De geselecteerde parameters op de pagina **[!UICONTROL Preview]** worden de URL-parameters in de sjabloon-URL.
 
-Zorg ervoor dat de afbeeldingen in de sjabloon naar AEM en Dynamic Media worden gepubliceerd om een leverings-URL van de gepubliceerde sjabloon te genereren.
+Zorg ervoor dat de afbeeldingen in de sjabloon al zijn gepubliceerd naar AEM en Dynamic Media om de leverings-URL van de sjabloon te genereren.
 
 Voer de volgende stappen uit om de leverings-URL van de sjabloon te kopiëren:
 
@@ -312,7 +312,9 @@ Voer de volgende stappen uit om de sjabloon te bewerken:
 
 ## Vraag aan Actie toevoegen (CTA) verbinding aan uw malplaatjelaag{#add-CTA-in-dynamic-media-templates}
 
-Zet een afbeeldings- of tekstlaag van de [!DNL Dynamic Media] -sjabloon om in een hyperlink door er een CTA-koppeling aan toe te voegen die gebruikers naar een doelpagina stuurt. Voer de volgende stappen uit om een CTA-koppeling aan een laag toe te voegen:
+Zet een afbeeldings- of tekstlaag van de [!DNL Dynamic Media] -sjabloon om in een hyperlink door er een CTA-koppeling aan toe te voegen die gebruikers naar een doelpagina stuurt.
+
+Voer de volgende stappen uit om een CTA-koppeling aan een laag toe te voegen:
 
 1. Navigeer aan uw malplaatjeplaats, selecteer het malplaatje en klik ![ uitgeven ](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Edit Template]**. De sjabloon wordt weergegeven op het canvas.
 1. Selecteer de malplaatjelaag en [ navigeer aan zijn eigenschappen paneel ](#edit-or-delete-a-layer) om een verbinding van CTA aan het toe te voegen.
@@ -323,7 +325,7 @@ Zet een afbeeldings- of tekstlaag van de [!DNL Dynamic Media] -sjabloon om in ee
 1. Klik op **[!UICONTROL Preview]** om een voorvertoning van de sjabloon weer te geven en de gedefinieerde parameters te bekijken.
 1. Klik op **[!UICONTROL Publish]** en selecteer **[!UICONTROL Yes]** om de sjabloon te publiceren als deze niet eerder is gepubliceerd.
 1. Navigeer aan de omslag waar dit malplaatje wordt bewaard, selecteer dit malplaatje en klik ![ detailspagina ](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
-1. Klik op **[!UICONTROL Copy Options]** en selecteer **[!UICONTROL Copy Embed Code]** .
+1. Klik op **[!UICONTROL Copy Options]** en selecteer **[!UICONTROL Copy Embed Code]** . Publiceer de sjabloonafbeeldingen naar [!DNL AEM and Dynamic Media] om de insluitcode te kopiëren.
 
    ![ exemplaar bedt code ](/help/assets/assets/copy-options1.png) in
 
@@ -360,5 +362,3 @@ Bekijk deze stapsgewijze video om te leren hoe u een CTA-koppeling aan een sjabl
 
 1. Onderzoek [[!DNL Dynamic Media]  en zijn mogelijkheden ](/help/assets/dynamic-media/dynamic-media.md)
 1. Onderzoek [[!DNL Dynamic Media]  met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md)
-
-
