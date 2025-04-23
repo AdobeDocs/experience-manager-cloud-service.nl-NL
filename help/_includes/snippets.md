@@ -1,7 +1,7 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -187,7 +187,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 
 >[!IMPORTANT]
 >
->Als u [ de Universele Redacteur voor inhoud creatie gebruikt, ](/help/implementing/universal-editor/introduction.md) moet u ook [ een lijst van gewenste personen met de IP adressen van de Universele Dienst van de Redacteur toevoegen en toepassen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Als u [ de Universele Redacteur voor inhoud creatie gebruikt, ](/help/implementing/universal-editor/introduction.md) en wenst om [ IP lijsten van gewenste personen ook te gebruiken, ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) u moet [ een lijst van gewenste personen met de IP adressen van de Universele Dienst van de Redacteur ook toevoegen en toepassen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Werken met dynamische media {#work-with-dynamic-media}
 
