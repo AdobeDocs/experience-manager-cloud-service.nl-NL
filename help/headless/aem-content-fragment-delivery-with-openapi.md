@@ -3,20 +3,15 @@ title: AEM Content Fragment Delivery with OpenAPI
 description: Meer informatie over de levering van tAEM-inhoudsfragmenten met OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+exl-id: b298db37-1033-4849-bc12-7db29fb77777
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # AEM Content Fragment Delivery with OpenAPI {#aem-content-fragment-delivery-with-openapi}
-
->[!IMPORTANT]
->
->Deze API is beschikbaar via het programma voor vroege adoptie.
->
->Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 In Adobe Experience Manager (AEM) as a Cloud Service wordt de AEM OpenAPI voor het leveren van inhoudsfragmenten:
 
@@ -33,7 +28,7 @@ Deze API:
 
 * is een alternatief van HTTP REST aan [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/headless/graphql-api/content-fragments.md)
 
-Voor volledige documentatie zie [ AEM Sites API Schemas - de Levering API van de Fragmenten van de Inhoud (2024.07-experimenteel) ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/).
+Voor volledige documentatie zie [ de Levering van het Fragment van de Inhoud van AEM met OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
 
 >[!NOTE]
 >

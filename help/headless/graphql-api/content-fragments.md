@@ -4,21 +4,15 @@ description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) as a
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 0%
 
 ---
 
 
 # AEM GraphQL API voor gebruik met inhoudsfragmenten {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->Verschillende functies van de GraphQL API voor gebruik met inhoudsfragmenten zijn beschikbaar via het programma Vroege adopter.
->
->Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Leer hoe u Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 
@@ -1187,7 +1181,7 @@ De huidige beperkingen zijn:
 * Als een element waarnaar wordt verwezen, wordt verwijderd uit de externe opslagplaats, resulteert dit in een verbroken verwijzing naar Content Fragment Asset.
 * Alle opslagplaatsen voor leveringsmiddelen waartoe de gebruiker toegang heeft, zijn beschikbaar voor selectie. De beschikbare lijst kan niet worden beperkt.
 * Zowel de AEM-instantie als de Remote Asset Repository-instanties moeten dezelfde versie hebben.
-* Geen Metagegevens van Activa worden blootgesteld via [ Beheer API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) en [ Levering API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen.
+* Geen Metagegevens van Activa worden blootgesteld via [ de Plaatsen API van het Beheer ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) en de [ Levering van het Fragment van de Inhoud van AEM met OpenAPI ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen.
 
 ## GraphQL for AEM - Overzicht van extensies {#graphql-extensions}
 
