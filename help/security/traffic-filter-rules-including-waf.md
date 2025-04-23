@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
+source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4278'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
 | **Bezit** | **Type** | **Beschrijving** |
 |---|---|---|
-| reqProperty | `string` | Request-eigenschap.<br><br> Één van:<br><ul><li>`path`: retourneert het volledige pad van een URL zonder de queryparameters. (gebruik `pathRaw` voor de niet-beschermde variant)</li><li>`url`: retourneert de volledige URL inclusief de queryparameters. (gebruik `urlRaw` voor de niet-beschermde variant)</li><li>`queryString`: retourneert het querygedeelte van een URL</li><li>`method`: retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: retourneert een van `author` , `preview` of `publish` .</li><li>`domain`: retourneert de eigenschap domain (zoals gedefinieerd in de `Host` -header) in kleine letters</li><li>`clientIp`: retourneert de client-IP.</li><li>`forwardedDomain`: retourneert het eerste domein dat in kleine letters is gedefinieerd in de `X-Forwarded-Host` -header</li><li>`forwardedIp`: retourneert het eerste IP in de `X-Forwarded-For` header.</li><li>`clientCountry`: Keert een twee brievencode ([ Regionaal indicatorsymbool ](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) terug die zich identificeert in welk land de cliënt wordt gevestigd.</li></ul> |
+| reqProperty | `string` | Request-eigenschap.<br><br> Één van:<br><ul><li>`path`: retourneert het volledige pad van een URL zonder de queryparameters. (gebruik `pathRaw` voor de niet-beschermde variant)</li><li>`url`: retourneert de volledige URL inclusief de queryparameters. (gebruik `urlRaw` voor de niet-beschermde variant)</li><li>`queryString`: retourneert het querygedeelte van een URL</li><li>`method`: retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: retourneert een van `author` , `preview` of `publish` .</li><li>`domain`: retourneert de eigenschap domain (zoals gedefinieerd in de `Host` -header) in kleine letters</li><li>`clientIp`: retourneert de client-IP.</li><li>`forwardedDomain`: retourneert het eerste domein dat in kleine letters is gedefinieerd in de `X-Forwarded-Host` -header</li><li>`forwardedIp`: retourneert het eerste IP in de `X-Forwarded-For` header.</li><li>`clientRegion`: Keert de code van de landonderverdeling terug die identificeert waarin het gebied de cliënt zoals die in [ wordt beschreven ISO 3166-2 ](https://en.wikipedia.org/wiki/ISO_3166-2) wordt gevestigd.</li><li>`clientCountry`: Keert een twee brievencode ([ Regionaal indicatorsymbool ](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) terug die zich identificeert in welk land de cliënt wordt gevestigd.</li><li>`clientContinent`: Geeft een tweelettercode (AF, AN, AS, EU, NA, OC, SA) die aangeeft op welk continent de client zich bevindt.</li><li>`clientAsNumber`: Keert het [ Autonoom aantal van het Systeem ](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) verbonden aan de cliëntIP terug.</li><li>`clientAsName`: retourneert de naam die is gekoppeld aan het autonome systeemnummer.</li></ul> |
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
 | reqCookie | `string` | Retourneert cookie met opgegeven naam |
@@ -569,7 +569,7 @@ De regels gedragen zich als volgt:
 
 * De door de klant gedeclareerde regelnaam van overeenkomende regels wordt vermeld in het kenmerk `match` .
 * Het attribuut `action` bepaalt of de regels blokkeren, toestaan, of logboek.
-* Als de WAF een licentie heeft en is ingeschakeld, geeft het kenmerk `waf` alle eventuele WAF-markeringen weer (bijvoorbeeld SQLI) die zijn gedetecteerd. Dit geldt ongeacht of de WAF-vlaggen in enige regelgeving zijn vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
+* Als de WAF een licentie heeft en is ingeschakeld, geeft het kenmerk `waf` alle eventuele WAF-markeringen weer (bijvoorbeeld SQLI) die zijn gedetecteerd. Dit geldt ongeacht of de WAF-vlaggen in enige regelgeving zijn vermeld. Dit moet insight in staat stellen nieuwe regels op te stellen.
 * Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, is de eigenschap `rules` leeg.
 
 Zoals eerder vermeld, verschijnen de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.
