@@ -4,9 +4,9 @@ description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 2%
 
 ---
@@ -95,11 +95,13 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Het overzicht [ Vastgestelde Verval van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
 
+   Tijdens het maken van de migratieset kunt u het geografische gebied kiezen waarin de tijdelijke migratiegegevens worden opgeslagen.  U wordt aangeraden het gebied te kiezen dat het dichtst bij uw doelcloud-omgeving ligt om optimale prestaties tijdens inname te garanderen.  U kunt de regio niet wijzigen nadat u de migratieset hebt gemaakt. Als u een ander gebied wilt gebruiken, moet u een nieuwe migratieset maken.
+
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >De naam moet voldoen aan dezelfde conventies van een AEM-knooppunt, zodat deze geen van de volgende tekens kan bevatten: . / : [ ] | *
+   >De naam moet dezelfde conventies hebben als een AEM-knooppunt, zodat deze geen van de volgende tekens kan bevatten: `. / : [ ] | * &lt; > ^ ? { } % # &quot;noch ongebruikelijke symbolen of emojis.
 
 1. De migratielijst wordt nu weergegeven in de lijstweergave. Selecteer het drie puntensymbool (**...**) om drop-down te openen en **de sleutel van de Extractie van het Extractie van het Exemplaar te selecteren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
 
