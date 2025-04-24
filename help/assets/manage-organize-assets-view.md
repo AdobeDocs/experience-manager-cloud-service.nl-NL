@@ -5,9 +5,9 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1661'
 ht-degree: 0%
 
 ---
@@ -214,10 +214,6 @@ Goedkeuringsdoel instellen:
 
 
    Voor meer informatie over de beschikbare opties, zie [ StandaardDoel van de Goedkeuring en publiceer bestemmingen voor goedgekeurde activa ](#default-approval-target-options-publish-destinations).
-
-   >[!NOTE]
-   >
-   >Het instellen van een goedkeuringsdoel is een beperkte beschikbaarheidsfunctie. U kunt het toegelaten krijgen of onbruikbaar maken door een steunkaartje te creëren. Als u Dynamische media met OpenAPI hebt ingeschakeld, is deze standaard ingeschakeld.
 
    ![ de status van de Goedkeuring ](/help/assets/assets/approval-status-delivery.png)
 
