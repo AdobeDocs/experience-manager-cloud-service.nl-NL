@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -322,8 +322,7 @@ Voer de volgende stappen uit om een CTA-koppeling aan een laag toe te voegen:
 
    ![ voeg CTA ](/help/assets/assets/add-cta.png) toe
 
-1. Klik op **[!UICONTROL Preview]** om een voorvertoning van de sjabloon weer te geven en de gedefinieerde parameters te bekijken.
-1. Klik op **[!UICONTROL Publish]** en selecteer **[!UICONTROL Yes]** om de sjabloon te publiceren als deze niet eerder is gepubliceerd.
+1. Klik op **[!UICONTROL Preview]** en selecteer **[!UICONTROL Publish]** om de sjabloon te publiceren als deze niet eerder is gepubliceerd.
 1. Navigeer aan de omslag waar dit malplaatje wordt bewaard, selecteer dit malplaatje en klik ![ detailspagina ](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Klik op **[!UICONTROL Copy Options]** en selecteer **[!UICONTROL Copy Embed Code]** . Publiceer de sjabloonafbeeldingen naar [!DNL AEM and Dynamic Media] om de insluitcode te kopiëren.
 
