@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **Acties**
@@ -153,12 +156,20 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
-| **plaats** | (reqProperty of reqHeader of queryParam of reqCookie), value | Stelt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie in op een bepaalde waarde, die een letterlijke tekenreeks of aanvraagparameter kan zijn. |
-|     | var, value | Stelt een opgegeven aanvraag-eigenschap in op een bepaalde waarde. |
-| **unset** | reqProperty | Hiermee wordt een opgegeven parameter request (alleen eigenschap &quot;path&quot; ondersteund) of een aanvraagheader, queryparameter of cookie verwijderd naar een bepaalde waarde, die een letterlijke tekenreeks of aanvraagparameter kan zijn. |
-|         | var | Hiermee wordt een opgegeven variabele verwijderd. |
-|         | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
-|         | queryParamDoesNotMatch | Verwijdert alle queryparameters die niet overeenkomen met een opgegeven reguliere expressie. |
+| **plaats** | reqProperty, value | Hiermee wordt een opgegeven parameter request ingesteld (alleen eigenschap &quot;path&quot; wordt ondersteund) |
+|     | reqHeader, waarde | Stelt een opgegeven aanvraagheader in op een bepaalde waarde. |
+|     | queryParam, waarde | Stelt een opgegeven queryparameter in op een bepaalde waarde. |
+|     | reqCookie, waarde | Stelt een opgegeven aanvraagcookie in op een bepaalde waarde. |
+|     | logProperty, value | Stelt een opgegeven CDN-logeigenschap in op een bepaalde waarde. |
+|     | var, value | Stelt een opgegeven variabele in op een bepaalde waarde. |
+| **unset** | reqProperty | Hiermee wordt een opgegeven parameter request verwijderd (alleen eigenschap &quot;path&quot; wordt ondersteund) |
+|     | reqHeader, waarde | Hiermee wordt een opgegeven aanvraagheader verwijderd. |
+|     | queryParam, waarde | Hiermee wordt een opgegeven queryparameter verwijderd. |
+|     | reqCookie, waarde | Hiermee wordt een opgegeven cookie verwijderd. |
+|     | logProperty, value | Hiermee wordt een opgegeven CDN-logeigenschap verwijderd. |
+|     | var | Hiermee wordt een opgegeven variabele verwijderd. |
+|     | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
+|     | queryParamDoesNotMatch | Verwijdert alle queryparameters die niet overeenkomen met een opgegeven reguliere expressie. |
 | **transformatie** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie of var), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund), of verzoek header, of query parameter, cookie of variabele door een nieuwe waarde. |
 |              | op:tolower, (reqProperty of reqHeader of queryParam of reqCookie of var) | Stelt de parameter request (alleen eigenschap &quot;path&quot; ondersteund), of aanvraagheader, queryparameter, cookie of variabele in op de waarde in kleine letters. |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### Log, eigenschap {#logproperty}
+
+U kunt uw eigen logboekeigenschappen in uw CDN- logboeken toevoegen gebruikend verzoek en reactietransformaties.
+
+Voorbeeld van configuratie:
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+Logboekvoorbeeld:
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## Responstransformaties {#response-transformations}
 
-De de transformatieregels van de Reactie staan u toe om kopballen van de uitgaande reacties van CDN te plaatsen en unset. Zie ook het bovenstaande voorbeeld voor het verwijzen naar een variabele die eerder is ingesteld in een aanvraagtransformatieregel. De statuscode van de reactie kan ook worden ingesteld.
+Met de regels voor het transformeren van reacties kunt u kop- en cookies en de status van de uitgaande reacties van de CDN instellen en ongedaan maken. Zie ook het bovenstaande voorbeeld voor het verwijzen naar een variabele die eerder is ingesteld in een aanvraagtransformatieregel.
 
 Voorbeeld van configuratie:
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **Acties**
@@ -300,9 +376,15 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
-| **plaats** | reqHeader, waarde | Stelt een opgegeven header in op een bepaalde waarde in de reactie. |
-|          | respProperty, value | Hiermee wordt een eigenschap response ingesteld. Ondersteunt alleen de eigenschap &quot;status&quot; om de statuscode in te stellen. |
+| **plaats** | respProperty, value | Hiermee wordt een eigenschap response ingesteld. Ondersteunt alleen de eigenschap &quot;status&quot; om de statuscode in te stellen. |
+|     | respHeader, waarde | Hiermee wordt een opgegeven antwoordheader ingesteld op een bepaalde waarde. |
+|     | respCookie, kenmerken (verloopt, domein, weg, veilig, httpOnly, extension), waarde | Stelt een opgegeven aanvraagcookie met specifieke kenmerken in op een bepaalde waarde. |
+|     | logProperty, value | Stelt een opgegeven CDN-logeigenschap in op een bepaalde waarde. |
+|     | var, value | Stelt een opgegeven variabele in op een bepaalde waarde. |
 | **unset** | respHeader | Hiermee verwijdert u een opgegeven koptekst uit het antwoord. |
+|     | respCookie, waarde | Hiermee wordt een opgegeven cookie verwijderd. |
+|     | logProperty, value | Hiermee wordt een opgegeven CDN-logeigenschap verwijderd. |
+|     | var | Hiermee wordt een opgegeven variabele verwijderd. |
 
 ## Oorspronkelijke kiezers {#origin-selectors}
 

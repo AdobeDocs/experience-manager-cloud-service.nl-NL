@@ -4,9 +4,9 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 
 ## Logboekregistratie AEM HTTP-aanvraag {#aem-http-request-logging}
 
-AEM as a Cloud Service biedt inzicht in HTTP-aanvraaglogboekregistratie in de HTTP-aanvragen die aan AEM zijn gedaan en in de HTTP-antwoorden op de juiste wijze. Dit logbestand is handig voor een goed begrip van de HTTP-verzoeken aan AEM en de volgorde waarin ze worden verwerkt en waarop ze worden gereageerd.
+AEM as a Cloud Service biedt insight in de volgorde waarin ze de HTTP-aanvragen hebben ontvangen en hun HTTP-antwoorden op tijd. Dit logbestand is handig voor een goed begrip van de HTTP-verzoeken aan AEM en de volgorde waarin ze worden verwerkt en waarop ze worden gereageerd.
 
 De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- verzoek en antwoordparen door hun IDs, die door de numerieke waarde in de steunen wordt aangegeven. Vaak hebben verzoeken en hun overeenkomstige reacties andere HTTP- verzoeken en reacties tussen hen in het logboek worden geworpen.
 
@@ -411,7 +411,7 @@ Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende vo
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende vo
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ De logboeken CDN zijn verschillend van de andere logboeken in die dat het aan ee
 | *pop* | Datacenter van de CDN-cacheserver. |
 | *regels* | De namen van om het even welke passende [ regels van de verkeersfilter ](/help/security/traffic-filter-rules-including-waf.md) en de vlaggen van WAF, die ook erop wijzen als de gelijke in een blok resulteerde. Leeg als geen regels overeenkomen. |
 
+De logboeken CDN kunnen met uw eigen eigenschappen worden uitgebreid gebruikend [ verzoek/reactietransformaties ](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## Hoe te om Logs toegang te hebben {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ AEM-logbestanden bevinden zich in de map `crx-quickstart/logs` , waar de volgend
 * AEM HTTP-aanvraaglogboek: `request.log`
 * AEM HTTP Access-logboek: `access.log`
 
-Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [ documentatie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) voor informatie over hoe te om Dispatcher te beginnen.
+Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-container die de Dispatcher bevat. Zie de [ documentatie van Dispatcher ](/help/implementing/dispatcher/disp-overview.md) voor informatie over hoe te om Dispatcher te beginnen.
 
 De logbestanden ophalen:
 
