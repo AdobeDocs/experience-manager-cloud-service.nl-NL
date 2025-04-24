@@ -1,13 +1,13 @@
 ---
 title: Werken met paginaversies
-description: Leer hoe u versies van uw pagina's in AEM maakt, vergelijkt en terugzet.
+description: Leer hoe u in AEM versies van uw pagina's maakt, vergelijkt en terugzet.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1574'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,13 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
 * Vergelijk de huidige versie van een pagina met een vorige versie.
    * Verschillen in de tekst en afbeeldingen worden gemarkeerd.
 * Timewarp gebruikt de paginaversies om de staat van het publicatiemilieu te bepalen.
+
+>[!NOTE]
+>
+>Alleen inhoud wordt versioned in de AEM-opslagplaats. Dynamische bronnen zoals code, CSS en JavaScript hebben geen versiebeheer.
+>
+>* Wanneer u versies weergeeft, wordt de inhoud weergegeven met de huidige code, CSS en JavaScript van de opslagplaats.
+>* Bij het herstellen van versies wordt alleen de inhoud hersteld en worden de huidige code, CSS en JavaScript van de opslagplaats erop toegepast.
 
 ## Een nieuwe versie maken {#creating-a-new-version}
 
