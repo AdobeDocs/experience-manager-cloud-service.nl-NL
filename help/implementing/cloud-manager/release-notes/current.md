@@ -4,7 +4,7 @@ description: Meer informatie over de release van Cloud Manager 2025.4.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
+source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -42,7 +42,7 @@ De volgende geplande release is donderdag 8 mei 2025.
 
 Neem deel aan het Cloud Manager-programma voor vroegtijdige adoptie om exclusieve toegang te krijgen tot de volgende functies voordat ze algemeen worden uitgebracht.
 
-Momenteel zijn de volgende mogelijkheden voor vroegtijdige adoptie beschikbaar:
+De volgende mogelijkheid om in een vroeg stadium aan te nemen is momenteel beschikbaar:
 
 ### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
 
