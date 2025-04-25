@@ -3,9 +3,9 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Voer de volgende stappen uit om een element en de bijbehorende uitvoeringen te d
 
    >[!NOTE]
    >
-   * De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
-   * U kunt alle [ statische, dynamische, en slimme gewassenvertoningen ](#types-of-renditions) downloaden terwijl het downloaden van een activa.
+   >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+   >* U kunt alle [ statische, dynamische, en slimme gewassenvertoningen ](#types-of-renditions) downloaden terwijl het downloaden van een activa.
 
 1. Selecteer een of meer uitvoeringen en klik op **[!UICONTROL Download]** .
 
@@ -86,7 +86,7 @@ Als u een middel met licentie downloadt, selecteert u **[!UICONTROL I have read 
 
 >[!NOTE]
 >
-De gebruikers met toegang tot [ Dynamische Media met Open API mogelijkheden ](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme gewassenvertoningen bekijken en downloaden.
+> De gebruikers met toegang tot [ Dynamische Media met Open API mogelijkheden ](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme gewassenvertoningen bekijken en downloaden.
 
 ## Meerdere elementen en de bijbehorende uitvoeringen downloaden {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Voer de volgende stappen uit om meerdere elementen en de bijbehorende uitvoering
 
      >[!NOTE]
      >
-     * De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
-     * U kunt [ statische vertoningen ](#types-of-renditions) slechts downloaden terwijl het downloaden van veelvoudige activa.
+     >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) wordt toegelaten.
+     >* U kunt [ statische vertoningen ](#types-of-renditions) slechts downloaden terwijl het downloaden van veelvoudige activa.
 
    Als een van de geselecteerde elementen een onder licentie geplaatst element is, klikt u op de licentie van het element in het linkerdeelvenster om de voorvertoning weer te geven. Hierin kunt u **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** selecteren en vervolgens op **[!UICONTROL Download]** klikken. De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd met de Assets as a Cloud Service-ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
@@ -153,17 +153,35 @@ Leer meer over [ mening en beheer vertoningen in Experience Manager Assets ](/he
 
 * [ Statische vertoningen ](/help/assets/renditions.md#static-renditions): De statische vertoningen zijn pre-gecreeerde versies van digitale activa, typisch geproduceerd tijdens de activaopname of de wijziging. Deze zijn geoptimaliseerd voor specifieke toepassingen en platforms, zoals webminiaturen, mobiele indelingen voor responsieve ontwerpen of bestanden met hoge resolutie voor afdrukken, zodat u over een gestroomlijnde en consistente ervaring beschikt.
 
-* [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving.
+* [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [ Dynamische vertoningen ](#enable-dynamic-media-renditions) toelaten.
 
 * [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamische media SmartCrop maakt gebruik van kunstmatige intelligentie, aangedreven door Adobe Sensei, om het aandachtspunt te volgen, zodat onze middelen er op alle schermgrootten zo goed mogelijk uitzien. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+  De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
+
   ![ de types van Uitvoeringen ](/help/assets/assets/renditions-types.png)
 
+### Dynamische uitvoeringen inschakelen {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* De functie Dynamische en slimme uitsnijduitvoeringen bevindt zich in de eerste fase van de adopter. Om toegang tot het vermogen te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-* Nieuw aan boord gezette klanten op [ Dynamische Media Open API diensten ](/help/assets/dynamic-media-open-apis-overview.md) moeten hun bestaande beeldvoorinstellingen voor goedkeuring herzien.
+Dynamische uitvoeringen inschakelen:
+
+1. Zorg ervoor dat u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt.
+
+   Zodra u toegang hebt tot Dynamic Media met OpenAPI-mogelijkheden, zijn alle als `Approved` gemarkeerde middelen beschikbaar voor openbare levering met behulp van Dynamic Media.
+
+1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
+
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3} Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+
+1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
+
+   Als u de bestaande voorinstellingen voor afbeeldingen opnieuw wilt opslaan, navigeert u naar de beheerdersweergave en selecteert u **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]** . Selecteer een voorinstelling, klik op **[!UICONTROL Edit]** en klik op **[!UICONTROL Save]** .
+
+
+
+   >[!NOTE]
+   > 
+   > Dynamische uitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
 
 
 
