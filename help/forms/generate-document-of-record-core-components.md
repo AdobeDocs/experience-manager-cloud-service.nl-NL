@@ -4,9 +4,9 @@ description: Leer een sjabloon te genereren voor een Document of Record (DoR) vo
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3044'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Deze record wordt een Document of Record (DoR) genoemd. Het is een afdrukvriendelijke kopie van het ingediende formulier. U kunt ook het document met records raadplegen voor de gegevens die klanten op een latere datum hebben ingevuld, of het document met records gebruiken om formulieren en inhoud samen te archiveren in de indeling PDF.
+Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Deze record wordt een Document of Record (DoR) genoemd. Het is een afdrukvriendelijke kopie van het ingediende formulier. U kunt ook het document met records raadplegen voor de gegevens die klanten op een latere datum hebben ingevuld of het document met records gebruiken om formulieren en inhoud samen te archiveren in PDF-indeling.
 
 ![ Document van Verslag ](assets/document-of-record.png)
 
@@ -24,7 +24,7 @@ Als u een document met records wilt maken, wordt een op XFA of Acroform gebaseer
 U kunt:
 
 * [Een op XFA gebaseerd document met records genereren](#generate-an-XFA-based-document-of-record)
-* [Een op acroform gebaseerd (Acrobat Form PDF) document met records genereren](#generate-an-Acroform-based-document-of-record)
+* [Een op Acrobat gebaseerd (Acrobat Form PDF) document met records genereren](#generate-an-Acroform-based-document-of-record)
 * [Automatisch een document met records genereren](#auto-generate-a-document-of-record)
 
 ## Voordat u begint {#components-to-automatically-generate-a-document-of-record}
@@ -39,7 +39,7 @@ Voordat u leert welke elementen nodig zijn voor een Document of Record:
 
 Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie. Voer de volgende stappen uit om een adaptief formulier te configureren voor het gebruik van XFA-sjabloon (XDP-bestand) als sjabloon voor Document of Record:
 
-1. Klik in de auteur-instantie van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
+1. Klik in de Experience Manager-auteurinstantie op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier of maak een adaptief formulier en klik op **[!UICONTROL Properties]** .
 1. Selecteer **[!UICONTROL Form Model]** in het venster Eigenschappen.
 1. Selecteer op het tabblad **[!UICONTROL Form Model]** in de vervolgkeuzelijst **[!UICONTROL Select From]** de optie **[!UICONTROL Form Data Model]** , **[!UICONTROL Schema]** of **[!UICONTROL None]** . U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
@@ -50,13 +50,13 @@ Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestan
 
 ## Een op acroform gebaseerd document met records genereren {#generate-an-Acroform-based-document-of-record}
 
-Upload uw Adobe Acrobat PDF (Acroform) naar uw AEM Forms-exemplaar. Voer de volgende stappen uit om een adaptief formulier zo te configureren dat Adobe Acrobat PDF (Acroform) wordt gebruikt als sjabloon voor Document of Record:
+Upload uw Adobe Acrobat PDF (Acrobat) naar uw AEM Forms-exemplaar. Voer de volgende stappen uit om een adaptief formulier zo te configureren dat Adobe Acrobat PDF (Acrobat) wordt gebruikt als sjabloon voor Document of Record:
 
-1. Klik in de auteur-instantie van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
+1. Klik in de Experience Manager-auteurinstantie op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier of **[!UICONTROL Create an Adaptive Form]** en klik op **[!UICONTROL Properties]** .
 1. Selecteer **[!UICONTROL Form Model]** in het venster Eigenschappen.
 1. Selecteer op het tabblad **[!UICONTROL Form Model]** in de vervolgkeuzelijst **[!UICONTROL Select From]** de optie **[!UICONTROL Form Data Model]** , **[!UICONTROL Schema]** of **[!UICONTROL None]** . U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
-1. In het Document van de sectie van de Configuratie van het Malplaatje van het Verslag van het Model van de Vorm, uitgezochte **Vennoot het Malplaatje van de Vorm als Document van het Malplaatje van het Verslag**. Als u deze optie selecteert, worden alle Acrobat-PDF (Acroform) die op uw computer beschikbaar zijn, weergegeven. Selecteer het formulier dat u wilt gebruiken.
+1. In het Document van de sectie van de Configuratie van het Malplaatje van het Verslag van het Model van de Vorm, uitgezochte **Vennoot het Malplaatje van de Vorm als Document van het Malplaatje van het Verslag**. Als u deze optie selecteert, worden alle Acrobat PDF (Acroform) die op uw computer beschikbaar zijn, weergegeven. Selecteer het formulier dat u wilt gebruiken.
 1. Klikken **[!UICONTROL Done]**
 
 Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor het document met records. De volgende stap moet [ de Aangepaste componenten van de Vorm met overeenkomstige malplaatjegebieden ](#bind-adaptive-form-components-with-template-fields) binden.
@@ -73,7 +73,7 @@ Als een adaptief formulier is geconfigureerd om automatisch een Document of Reco
 
 Voer de volgende stappen uit om een adaptief formulier te configureren zodat automatisch een Document of Record wordt gegenereerd:
 
-1. Klik in de auteur-instantie van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
+1. Klik in de Experience Manager-auteurinstantie op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier of maak een adaptief formulier en klik op **[!UICONTROL Properties]** .
 1. Selecteer **[!UICONTROL Form Model]** in het venster Eigenschappen.
 1. Selecteer op het tabblad **[!UICONTROL Form Model]** in de vervolgkeuzelijst **[!UICONTROL Select From]** de optie **[!UICONTROL Form Data Model]** , **[!UICONTROL Schema]** of **[!UICONTROL None]** . U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
@@ -99,10 +99,13 @@ Adaptief-formuliervelden binden met sjabloonvelden om vastgelegde formuliergegev
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-U kunt verzendacties zoals &quot;verzenden E-mail&quot;, &quot;aanhalen een AEM werkschema&quot;, &quot;aanhalen een Macht automatisch stroom&quot;, en andere [ verzenden Acties ](configuring-submit-actions.md) om een Document van Verslag te ontvangen.
+U kunt verzendacties zoals &quot;verzenden E-mail&quot;, &quot;aanhalen een werkschema van AEM&quot;gebruiken, &quot;aanhalen een Macht automatisch stroom&quot;, en andere [ verzendt Acties ](configuring-submit-actions.md) om een Document van Verslag te ontvangen.
 ![ Beeld legt Acties ](/help/forms/assets/submit-actions-img.png) voor
 
 
+>[!NOTE]
+>
+> U kunt de eigenschap **[!UICONTROL Document of Record Bind Reference field]** gebruiken om het document met records voor elk formuliergegevensmodel op te slaan.
 
 ## Incrementele updates van de sjabloon Document of Record {#document-of-record-template-incremental-updates}
 
@@ -327,7 +330,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
    1. **BasisEigenschappen**:
       * **Malplaatje**: Als u een douanemalplaatje wilt selecteren, doorblader en selecteer XDP op uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die niet beschikbaar is op uw [!DNL AEM Forms] -server, moet u de XDP eerst uploaden naar uw [!DNL AEM Forms] -server.
       * **Accentkleur**: De kleur waarin de kopbaltekst en de separatorlijnen in het document van verslag PDF worden teruggegeven.
-      * **Familie van de Doopvont**: De familie van de doopvont van de tekst in het Document van PDF van het Verslag.
+      * **Familie van de Doopvont**: Familie van de doopvont van de tekst in het Document van Verslag PDF.
 
         >[!NOTE]
         >

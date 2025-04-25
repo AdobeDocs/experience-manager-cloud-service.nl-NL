@@ -4,9 +4,9 @@ description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een h
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3725'
+source-wordcount: '3753'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Foundation Components) | Dit artikel |
 
-**is op** van toepassing: ✔️ de Aangepaste Componenten van de Stichting van de Vorm. ❌ [ Aangepaste Componenten van de Kern van de Vorm ](/help/forms/configure-submit-actions-core-components.md). De Adobe beveelt het gebruiken van de Componenten van de Kern aan [ om Aangepaste Forms aan een Pagina van AEM Sites ](create-or-add-an-adaptive-form-to-aem-sites-page.md) toe te voegen of [ standalone Aangepaste Forms ](creating-adaptive-form-core-components.md) tot stand te brengen.
+**is op** van toepassing: ✔️ de Aangepaste Componenten van de Stichting van de Vorm. ❌ [ Aangepaste Componenten van de Kern van de Vorm ](/help/forms/configure-submit-actions-core-components.md). Adobe adviseert het gebruiken van de Componenten van de Kern om [ Aangepaste Forms aan een Pagina van AEM Sites ](create-or-add-an-adaptive-form-to-aem-sites-page.md) toe te voegen of [ standalone Aangepaste Forms ](creating-adaptive-form-core-components.md) tot stand te brengen.
 
 Een handeling Verzenden wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** klikt op een adaptief formulier. Forms as a Cloud Service geeft de volgende verzendhandelingen weer.
 
@@ -67,7 +67,7 @@ Gebruik de handeling **[!UICONTROL Submit to REST Endpoint]** om de verzonden ge
 
 Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld /content/restEndPoint. Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 
-Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het verzoek van de POST anoniem te behandelen.
+Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
 
 ![ Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina ](assets/post-enabled-actionconfig.png)
 
@@ -84,7 +84,7 @@ U gebruikt deze twee parameters in uw script bijvoorbeeld om gegevens te parsere
 
 In dit voorbeeld slaat `data` de XML-gegevens op en slaat `att` de gegevens in de bijlage op.
 
-Met de handeling **[!UICONTROL Submit to REST endpoint]** Verzenden worden de gegevens die in het formulier zijn ingevuld, als onderdeel van de HTTP-aanvraag verzonden naar een geconfigureerde bevestigingspagina. U kunt de naam toevoegen van de velden die u wilt aanvragen. De indeling van het verzoek is:
+Met de handeling **[!UICONTROL Submit to REST endpoint]** Verzenden worden de gegevens die in het formulier zijn ingevuld, verzonden naar een geconfigureerde bevestigingspagina als onderdeel van de HTTP GET-aanvraag. U kunt de naam toevoegen van de velden die u wilt aanvragen. De indeling van het verzoek is:
 
 `{fieldName}={request parameter name}`
 
@@ -92,7 +92,7 @@ Zoals aangetoond in het beeld hieronder, `param1` en `param2` worden overgegaan 
 
 ![ Vormend Rest Eindpunt legt Actie ](assets/action-config.png) voor
 
-U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om de aanvraag te verzenden. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om de aanvraag te verzenden. Als u gegevens wilt verzenden naar de AEM-server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM-server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Een AEM-workflow aanroepen {#invoke-an-aem-workflow}
 
-**[!UICONTROL Invoke an AEM Workflow]** legt Actie associeert een Aangepaste Vorm met een [ AEM Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt het gegevensbestand, de gehechtheid, en Document van Verslag aan de ladingsplaats van het werkschema of aan een variabele opslaan. Als de workflow is gemarkeerd voor externe gegevensopslag en geconfigureerd voor externe gegevensopslag, is alleen de optie Variabele beschikbaar. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
+**[!UICONTROL Invoke an AEM Workflow]** legt Actie associeert een Aangepaste Vorm met een [ Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt het gegevensbestand, de gehechtheid, en Document van Verslag aan de ladingsplaats van het werkschema of aan een variabele opslaan. Als de workflow is gemarkeerd voor externe gegevensopslag en geconfigureerd voor externe gegevensopslag, is alleen de optie Variabele beschikbaar. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
 
 Met de handeling Verzenden wordt het volgende geplaatst op de laadlocatie van de werkstroom, of de variabele als de werkstroom is gemarkeerd voor externe gegevensopslag:
 
@@ -167,7 +167,7 @@ Met de handeling Verzenden wordt het volgende geplaatst op de laadlocatie van de
 
 Voordat u **[!UICONTROL Invoke an AEM Workflow]** Handeling verzenden gebruikt, configureert u het volgende voor de **[!UICONTROL AEM DS settings service]** -configuratie:
 
-* **[!UICONTROL Processing Server URL]**: De Verwerkingsserver is de server waarop de Forms- of AEM-workflow wordt geactiveerd. Dit kan gelijk zijn aan de URL van de AEM auteurinstantie of een andere server.
+* **[!UICONTROL Processing Server URL]**: De Verwerkingsserver is de server waarop de Forms- of AEM-workflow wordt geactiveerd. Dit kan gelijk zijn aan de URL van de AEM-auteurinstantie of een andere server.
 
 * **[!UICONTROL Processing Server User Name]**: Gebruikersnaam van workflowgebruiker
 
@@ -232,12 +232,17 @@ U kunt de gemaakte SharePoint Document Library-configuratie in een adaptief form
    > * Als er geen [!UICONTROL Configuration Container] is geselecteerd, worden de algemene [!UICONTROL Storage Configuration] -mappen weergegeven in het eigenschappenvenster Handeling verzenden.
 
 1. Selecteer **voorleggen Actie** als **[!UICONTROL Submit to SharePoint]**.
-   ![ GIF SharePoint ](/help/forms/assets/sharedrive-video.gif)
+   ![ SharePoint GIF ](/help/forms/assets/sharedrive-video.gif)
 1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
 1. Klik op **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint Document Library Storage.
 De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data` .
+
+>[!NOTE]
+>
+> Bijlagen worden ook opgeslagen in de map `/folder_name/form_name/year/month/date/submission_id/data` . Nochtans, als u **sparen Bijlagen met Oorspronkelijke Naam** selecteert, worden de gehechtheid opgeslagen in de omslag gebruikend hun originele filenames.
+> ![image](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
 ### Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst {#connect-af-sharepoint-list}
 
@@ -274,7 +279,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 
 U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint List-opslagconfiguratie in een adaptief formulier te gebruiken als:
 
-1. [Een formuliergegevensmodel (FDM) maken met de configuratie Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Een formuliergegevensmodel (FDM) maken met Microsoft](/help/forms/create-form-data-models.md)
 1. [Vorm het Model van de Gegevens van de Vorm (FDM) om gegevens terug te winnen en te verzenden](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
 1. [Verzendactie configureren met een FDM (Form Data Model)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -392,7 +397,7 @@ U kunt de gemaakte Azure Storage Container-configuratie in een Adaptief formulie
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven configuratie van de Azure Storage Container.
 De mapstructuur voor het opslaan van gegevens is `/configuration_container/form_name/year/month/date/submission_id/data` .
 
-Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van de Cloud Service op.
+Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
 
 
 ## Verzenden naar Power Automate {#microsoft-power-automate}
@@ -404,7 +409,7 @@ U kunt een adaptief formulier configureren om een Microsoft® Power Automate Clo
 * Complexe berekeningen uitvoeren op vastgelegde gegevens
 * Adaptieve Forms-gegevens opslaan naar opslagsystemen volgens een vooraf bepaald schema
 
-De adaptieve redacteur van Forms verstrekt **roept een stroom van de Macht Microsoft®** automatisch verzendt actie om adaptieve vormgegevens, gehechtheid, en Document van Verslag te verzenden worden verzonden naar de Stroom van de Wolk van de Macht van de Macht van de Automatisering. Om de Submit actie te gebruiken om gevangen gegevens naar Microsoft® Power Automate te verzenden, [ verbind uw as a Cloud Service instantie van Forms met Microsoft® Macht ](forms-microsoft-power-automate-integration.md)
+De adaptieve redacteur van Forms verstrekt **roept een stroom van de Macht Microsoft®** automatisch verzendt actie om adaptieve vormgegevens, gehechtheid, en Document van Verslag te verzenden worden verzonden naar de Stroom van de Wolk van de Macht van de Macht van de Automatisering. Om de Submit actie te gebruiken om gevangen gegevens naar Microsoft® Power Automate te verzenden, [ verbind uw Forms as a Cloud Service instantie met Microsoft® Macht ](forms-microsoft-power-automate-integration.md)
 
 Na een succesvolle configuratie, gebruik [ aanhaalt een Macht Microsoft® stroom ](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) verzendt actie om gegevens naar een Macht te verzenden automatisch Stroom.
 
@@ -450,11 +455,11 @@ Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt
 
 >[!NOTE]
 >
->Servervalidatie valideert het formuliermodel. U wordt aangeraden een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM-bewerking in dezelfde clientbibliotheek.
+>Servervalidatie valideert het formuliermodel. U wordt aangeraden een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM manipulation in dezelfde clientbibliotheek.
 
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}
 
-Soms, als er **complexe bevestigingsregels** zijn, verblijft het nauwkeurige bevestigingsmanuscript in douanefuncties en de auteur roept deze douanefuncties van de uitdrukking van de gebiedsbevestiging. Om deze aangepaste functiebibliotheek bekend te maken en beschikbaar te maken tijdens het uitvoeren van servervalidaties, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder het tabblad **[!UICONTROL Basic]** van de adaptieve eigenschappen van de formuliercontainer, zoals hieronder wordt weergegeven.
+Soms, als er **complexe bevestigingsregels** zijn, verblijft het nauwkeurige bevestigingsmanuscript in douanefuncties en de auteur roept deze douanefuncties van de uitdrukking van de gebiedsbevestiging. Als u deze aangepaste functiebibliotheek bekend en beschikbaar wilt maken tijdens het uitvoeren van validaties op de server, kan de auteur van het formulier de naam van de AEM-clientbibliotheek configureren onder het tabblad **[!UICONTROL Basic]** Adaptief formuliercontainereigenschappen, zoals hieronder wordt weergegeven.
 
 ![ ondersteunend de functies van de Douane in Uitdrukkingen van de Bevestiging ](assets/clientlib-cat.png)
 
@@ -464,7 +469,7 @@ Auteurs kunnen de aangepaste JavaScript-bibliotheek configureren per adaptief fo
 
 ## Foutafhandeling bij verzenden van handeling {#error-handling-on-submit-action}
 
-Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de knoop van Publish worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
+Als onderdeel van de beveiligingsrichtlijnen en de richtlijnen voor het verharden van AEM, configureert u aangepaste foutpagina&#39;s zoals 400.jsp, 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
 
 Als u een FDM-formulier (Form Data Model) of een op schema gebaseerd adaptief formulier met XML- of JSON-gegevensklacht vooraf instelt op een schema dat bestaat uit gegevens die geen `<afData>` -, `<afBoundData>` - en `</afUnboundData>` -tags bevatten, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel (FDM) zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de eigenschap `bindref` .
 

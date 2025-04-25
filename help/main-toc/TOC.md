@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
+source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
-source-wordcount: '6135'
+source-wordcount: '6134'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 1%
    + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [ Nota&#39;s van de Versie voor 2025.3.0 ](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
          + [ Nota&#39;s van de Versie voor 2025.2.0 ](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
          + [Opmerkingen bij de release 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + 2024 {#2024}
@@ -1039,7 +1040,6 @@ ht-degree: 1%
       + [Omleiding](/help/edge/docs/redirects.md)
    + Forms samenstellen {#build-forms}
       + [Overzicht](/help/edge/docs/forms/overview.md)
-      + [Hoe werkt Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Veelgestelde vragen](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG Authoring {#universal-editor}
          + [Inleiding tot Forms Universal Editor voor Edge Delivery Services - Volledige handleiding](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)

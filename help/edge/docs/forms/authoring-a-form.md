@@ -1,67 +1,109 @@
 ---
-Title: Authoring a Form
-Description: This article provides information on various form authoring platforms, including the Universal Editor, document-based authoring, and Adaptive Forms editors (Core Components and Foundation Components).
-Keywords: Universal Editor for WYSIWYG authoring, document-based authoring, Adaptive Forms editors, Adaptive Forms editors for Core Components authoring, Adaptive Forms editors for Foundation Components authoring
-feature: Edge Delivery Services
-Role: User, Developer
+title: Hoe kan ik formulieren ontwerpen in AEM?
+description: Leer meer over de verschillende formulierontwerpplatforms die beschikbaar zijn in Adobe Experience Manager (AEM) en hoe u de juiste kunt kiezen op basis van uw vereisten.
+feature: Edge Delivery Services, Adaptive Forms, Core Components
+role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: bdc0e51a8b16df432f1f1aeabed11135fb8c8e0c
+source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
 
 
-# Een formulier ontwerpen
+# Hoe moet Forms in Adobe Experience Manager (AEM) worden geautoriseerd?
 
-Adobe Experience Manager biedt en ondersteunt meerdere editors voor het schrijven van een formulier. U kunt het volgende gebruiken:
-* Universal Editor (voor WYSIWYG-authoring)
-* Microsoft Excel- of Google-bladen (ook wel op document gebaseerde authoring genoemd)
-* Adaptieve Forms-editors (voor op Core Components of stichting gebaseerde ontwerpfuncties)
+Adobe Experience Manager (AEM) biedt een flexibel platform voor het maken van aantrekkelijke, responsieve, dynamische en adaptieve formulieren. Het biedt een intuïtieve gebruikersinterface en een rijke reeks out-of-the-box componenten voor de bouw van en het beheer van Aangepast Forms. Forms kan naar wens worden ontworpen met of zonder een formuliermodel of -schema.
 
-**[toe te voegen beeld]**
+## Belangrijke overwegingen bij het kiezen van een ontwerpplatform
 
-## Universal Editor (voor WYSIWYG-authoring)
+AEM biedt meerdere opties voor het schrijven van formulieren om interactieve en aantrekkelijke formulieren te maken. Houd bij het selecteren van een formulierontwerpomgeving rekening met de volgende factoren:
 
-De Universal Editor is een veelzijdige visuele editor die een &#39;what-you-see-is-what-you-get&#39;-functie (WYSIWYG) biedt en zo een intuïtieve manier van maken van formulieren verzekert. Het wordt aanbevolen de Universal Editor te gebruiken bij het maken van nieuwe formulieren, omdat deze een modern, gebruiksvriendelijk ontwerp en een handige interface voor slepen en neerzetten biedt.
+| ?? **Overweging** | ?? **wat te vragen** |
+|----------------------|--------------------|
+| **Expertise van de Gebruiker** | Wie gaat de formulieren ontwerpen, ontwikkelaars, zakelijke gebruikers of auteurs van inhoud? |
+| **Complexiteit van de Vorm** | Heeft het formulier geavanceerde regels, dynamische secties of integraties nodig? |
+| **Herbruikbaarheidsbehoeften** | Worden delen van het formulier opnieuw gebruikt in verschillende formulieren of projecten? |
+| **Flexibiliteit van het Ontwerp** | Hebt u volledige controle nodig over lay-out, thema&#39;s en stijlen? |
+| **Vereisten van de Integratie** | Moet het formulier verbinding maken met gegevensmodellen, workflows of externe systemen? |
+| **Versnelling van Gebruik** | Is het platform intuïtief voor het technische vaardigheidsniveau van uw team? |
+| **Prestaties &amp; Scalability** | Zal het formulier op schaal of in een omgeving met veel verkeer worden gebruikt? |
+| **Omnichannel Levering** | Wordt het formulier gebruikt op websites, mobiele apps, kiosken of meerdere kanalen? |
+| **het Publiceren Flexibiliteit** | Waar worden de formulieren gepubliceerd op AEM, Edge Delivery of aangepaste apps? |
 
-Als u formulieren wilt maken met de Universal Editor, worden sjablonen voor Edge Delivery Services gebruikt die beschikbaar zijn in de AEM-omgeving. Deze vormen erven hun blik en voelen van de configuraties in de bewaarplaats van GitHub van Edge Delivery Services. [ Een verbinding tussen uw AEM milieu en de bewaarplaats van Edge Delivery Services GitHub ](/help/edge/docs/forms/publishing-forms.md) wordt gevestigd om het publiceren van deze vormen op Edge Delivery Services toe te laten.
+## Overzicht van formulierontwerpmethoden in AEM
 
-Voor gedetailleerde stappen op hoe te auteur gebruiken de Universele Redacteur, verwijs naar de [ Authoring Inhoud met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring).
+AEM steunt veelvoudige auteursmethodes, elk geschikt voor verschillende gebruikersbehoeften, technische vaardigheidsniveaus, en het publiceren bestemmingen.
 
-## Microsoft Excel- of Google-bladen (ook wel op document gebaseerde authoring genoemd)
+* [ Componenten van de Stichting ](/help/forms/create-adaptive-form-tutorial.md): De Componenten van de Stichting van het gebruik om traditionele, interactieve vormen te bouwen. Deze indeling is het meest geschikt voor formulieren die integreren met verouderde systemen of die vertrouwen op langdurige workflows. Forms die is ontworpen met Foundation Components, kan alleen op AEM worden gepubliceerd en is niet compatibel met Edge Delivery Services.
 
-U kunt de formulieren ontwerpen door ze op documenten te baseren met Microsoft Excel- of Google Sheets-bestanden, zodat u de robuuste ecosystemen en API&#39;s van Google Sheets, Microsoft Excel en Microsoft SharePoint kunt benutten. Deze aanpak is vooral handig voor het maken van eenvoudige formulieren zonder geavanceerde verzendservices.
+* [ Componenten van de Kern ](/help/forms/creating-adaptive-form-core-components.md): De Componenten van de Kern van het gebruik om moderne, ontvankelijke, en scalable vormen tot stand te brengen. Ze ondersteunen herbruikbaarheid, toegankelijkheid en betere prestaties. Forms die is ontworpen met Core Components, kan zowel op AEM als op Edge Delivery Services worden gepubliceerd en biedt flexibiliteit op verschillende platforms.
 
-Beginnen creërend een vorm gebruikend Microsoft Excel of de Bladen van Google, [ opstelling een AEM project gebruikend AEM Forms boilerplate ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) en kloon de overeenkomstige bewaarplaats GitHub aan uw lokale machine. AEM Forms Edge Delivery biedt de functie Adaptive Forms Block, waarmee het maken van formulieren voor het vastleggen en opslaan van gegevens wordt vereenvoudigd. Leren om vormen tot stand te brengen en te publiceren gebruikend het AanpassingsBlok van Forms op Edge Delivery Services, verwijs naar [ creeer een Vorm ](/help/edge/docs/forms/create-forms.md).
+* [ Edge Delivery Services Forms ](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms transformeert de manier de vormen worden authored, uitgevoerd, en verwerkt. Door gebruik te maken van Edge Delivery Services kunnen organisaties snelle, veilige en hoogst beschikbare digitale formulieren maken, waardoor de gebruikerservaring en de operationele efficiëntie worden verbeterd in een snelle ontwikkelomgeving. U kunt de Edge Delivery Services Forms op twee manieren ontwerpen:
+   * [ het Authoring van WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Gebruik de Universele Redacteur voor visuele, belemmering-en-dalings vormverwezenlijking ideaal voor inhoudsauteurs met beperkte technische kennis. Forms die is geschreven met Universal Editor, wordt geleverd met Edge Delivery Services voor snelle, lichtgewichtrendering.
+   * [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/tutorial.md): De hulpmiddelen van het gebruik zoals de Bladen van Microsoft Excel of van Google om vormstructuur en inhoud te bepalen. Deze methode is handig voor zakelijke gebruikers die de voorkeur geven aan spreadsheetinvoer. Deze formulieren worden doorgaans via Edge Delivery Services gepubliceerd en zijn geschikt voor eenvoudige, grote gebruiksgevallen.
+* [ Koploze Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Gebruik APIs om formulieren als JSON voor om het even welk front, bijvoorbeeld, React, Angular, mobiele apps, of kiosken, zonder afhankelijk van AEM terug te geven. Momenteel ondersteunen alleen Core Components de levering zonder kop. Zwaarloze formulieren zijn ideaal voor omnichannel gebruiksgevallen en worden gebruikt onafhankelijk van de AEM-rendering van pagina&#39;s, waardoor ze flexibel zijn voor aangepaste front-end implementaties.
 
-## Adaptieve Forms-editors (voor op Core Components of stichting gebaseerde ontwerpfuncties)
+### Vergelijkende analyse van AEM-methoden voor formulierontwerp
 
-U kunt aantrekkelijke, responsieve en dynamische formulieren maken. De Adaptive Form Editor biedt een gebruiksvriendelijke wizard waarmee u snel Adaptive Forms kunt maken. De formulierwizard biedt eenvoudige tabnavigatie, waarmee u vooraf geconfigureerde sjablonen kunt selecteren voor basis- of kerncomponenten, thema&#39;s, gegevensmodellen en verzendopties om op efficiënte wijze een formulier te maken.
+&#x200B; In de volgende tabel vindt u een beknopte vergelijking van de verschillende methoden voor het schrijven van AEM-formulieren, waarbij de nadruk wordt gelegd op de benaderingen, functies, publicatieopties en ideale gebruikstoepassingen om u te helpen de meest geschikte methode te kiezen die u nodig hebt.
 
-[ Authoring vormen met de Componenten van de Kern ](/help/forms/creating-adaptive-form-core-components.md) staat u toe om gestandaardiseerde gegevens te gebruiken vangen componenten die kunnen worden aangepast, die ontwikkelingstijd verminderen en onderhoudskosten voor digitale inschrijvingservaringen verminderen. Deze formulieren kunnen worden gepubliceerd met het Adaptive Forms Block op Edge Delivery Services of via het AEM Publish-exemplaar.
+| **Overweging** | **Componenten van de Stichting** | **Componenten van de Kern** | **Universele Redacteur (WYSIWYG)** | **op document-gebaseerde Authoring** | **Headless Authoring** |
+|--------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **ideaal voor** | Oudere formulieren en workflows onderhouden in AEM | Schaalbare, moderne formulieren met complexe workflows en integratie | Formulieren maken voor Edge Delivery Service-sites met complexe vereisten | Snel prototypen maken of basisformulieren zonder geavanceerde verzendservices | Omnichannel-ervaringen op verschillende platforms (web, mobiel, kiosken, enz.) |
+| **Expertise van de Gebruiker** | Ontwikkelaars, makers van inhoud | Ontwikkelaars, gevorderde auteurs | Zakelijke gebruikers, makers van inhoud | Zakelijke gebruikers | Ontwikkelaars |
+| **Complexiteit van de Vorm** | Basisformulieren | Complexe formulieren met dynamische secties | Complexe formulieren met aangepaste handelingen | Eenvoudige formulieren | Zeer complexe, API-gestuurde formulieren |
+| **Flexibiliteit van het Ontwerp** | Beperkt | Hoog (CSS/JS-aanpassing) | Modern (op basis van sjablonen) | Beperkt | High (frontend framework control) |
+| **de Mogelijkheid van de Integratie** | Basic AEM-workflows | Geavanceerd (gegevensmodellen, workflows) | Geïntegreerd met externe systemen | Standaard (Google Sheets, Excel) | Volledige besturing via API&#39;s |
+| **het Publiceren Methode** | Alleen AEM | AEM en Edge Delivery Services | Edge Delivery Services | Edge Delivery Services | Elke frontend via API&#39;s |
+| **Prestaties &amp; SEO** | Standaard | Verbeterd voor Foundation Components | Hoge Google Lighthouders scores voor snellere rendering en betere SEO | Hoge Google Lighthouders scores voor snellere rendering en betere SEO | Afhankelijk van implementatie |
+| **Omnichannel Levering** | Beperkt | Gemiddeld | Gemiddeld | Beperkt | Hoog |
 
-[ Authoring vormen met de Componenten van de Stichting ](/help/forms/create-an-adaptive-form.md) gebruikt klassieke gegevens vangen componenten. Deze formulieren kunnen alleen worden gepubliceerd met behulp van het AEM Publish-exemplaar.
+<!--
+| **Form authoring methods** | **Key Approach** | **Features** | **Publishing Method** | **Use Cases** |
+|-----------------------------|------------------|--------------|-----------------------|---------------|
+| **Foundation Components** | Classic AEM authoring interface designed for standard web pages. | Includes basic components like text, images, tables, and charts. Limited reuse capabilities and primarily web-based. | Published on AEM only. | Best for maintaining legacy forms and workflows within AEM. |
+| **Core Components** | Provides a modern, flexible approach with high customization capabilities. | Component-based authoring within AEM, offering high customization with CSS and JS. Built around accessibility guidelines and integrated with AEM Sites. | Published on AEM and Edge Delivery Services. | Suitable for scalable, modern forms with complex workflows and integrations. |
+| **Universal Editor (WYSIWYG)** | Offers a WYSIWYG interface for intuitive form creation. | Forms are designed using an intuitive drag-and-drop interface. These forms inherit look and feel from the configured Edge Delivery Services GitHub repository for the corresponding form. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for creating forms for Edge Delivery Service sites and pages, especially scenarios involving complex forms, workflows, custom actions, or integrations with external systems. |
+| **Document-based Authoring** | Uses familiar tools like Google Docs and Microsoft Office for form creation. | Forms are designed using spreadsheets, with data directly submitted to Google Sheets or Microsoft Excel. These forms are faster to create and deploy. No prior knowledge of AEM is required to develop custom components and styles for these forms. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for quick prototyping or basic forms where advanced submission services are not needed. Well-suited for surveys, registration, or feedback forms requiring data storage in spreadsheets. |
+| **Headless Authoring** | Enables API-driven content creation for omnichannel delivery. | Full control via frontend frameworks, allowing content delivery across various platforms through APIs. | Can be integrated with any frontend via APIs. | Ideal for omnichannel experiences across platforms, suitable for web, mobile, kiosks, and more. |-->
 
-U kunt vormen ook publiceren die gebruikend de AanpassingsRedacteurs van Forms op Edge Delivery Services worden gecreeerd door [ verbinding tussen uw AEM milieu en de bewaarplaats van GitHub van Edge Delivery Services te vestigen ](/help/edge/docs/forms/publishing-forms.md).
+### Functievergelijking van ontwerpmethoden voor AEM-formulieren
 
-## Hoe te om tussen diverse types vorm creatie te kiezen?
+In de volgende tabel vindt u een gedetailleerde vergelijking van de belangrijkste functies van de verschillende AEM-methoden voor het schrijven van formulieren. Zo kunt u de meest geschikte aanpak voor uw vereisten kiezen. &#x200B;
 
-In de volgende tabel worden de functies en gebruiksscenario&#39;s voor elke ontwerpeditor beschreven, zodat u op basis van uw vereisten en vereisten voor het verzenden van formulieren de juiste keuze kunt maken.
+| **Capability** | **Componenten van de Stichting** | **Componenten van de Kern** | **Universele Redacteur (WYSIWYG)** | **op document-gebaseerde Authoring** | **Headless Authoring** |
+|-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
+| **Verenigde Samenstelling met Plaatsen** | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **Inbedend de Steun van de Vorm** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Regels (Dynamisch Gedrag)** | Geavanceerde regeleditor met aangepaste functies | Geavanceerde regeleditor met aangepaste functies | Geavanceerde regeleditor met aangepaste functies | Beperkt: tonen/verbergen, waarde berekenen, aangepaste functies | Beperkt: vereist aangepaste implementatie |
+| **Steun van de Bijlage** | ✅ | ✅ | ✅ | ℹ️ (Vroege toegang) | ❌ |
+| **steun CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Vereist aangepaste integratie |
+| **Eigenschappen van de Verzending** | REST-eindpunt, e-mail, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST-eindpunt, e-mail, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST-eindpunt, e-mail, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Alleen werkblad | Aangepaste API-eindpunten |
+| **Schema van Gegevens** | FDM, aangepast | FDM, aangepast | FDM, aangepast | Aangepast | Aangepast |
+| **pre-fill** | ✅ | ✅ | ?? (via wizard) | ✅ | Aangepaste implementatie |
+| **Fragments** | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **Visuele Redacteur van de Regel** | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Localization** | ✅ | ✅ | ?? (via sites) | ℹ️ (Excel - handleiding, functie Google Sheets) | Aangepaste implementatie |
+| **Schema van Gegevens (de Boom van Gegevens)** | ✅ | ✅ | ?? (via UI-extensie) | ❌ | Aangepaste implementatie |
+| **de Steun van het Malplaatje** | ✅ | ✅ | Alleen oorspronkelijke inhoud, geen beleid | ❌ | Aangepaste implementatie |
+| **Portaal** | ✅ | ✅ | ❌ | ❌ | ❌ |
+| **Authoring DoR** | ✅ | ✅ | ?? via Derlina) | ❌ | ❌ |
+| **Productie DoR** | ✅ | ✅ | ?? (FORMS-2475 Nieuw) | ❌ | ❌ |
+| **Thema** | ✅ | ✅ | ℹ️ (op projectniveau) | ℹ️ (op projectniveau) | Aangepaste implementatie |
+| **Component van de Douane** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **OOTB &amp; de Functies van de Douane** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Verwijzing van het Fragment** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Integratie van het Teken** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Steun RTL** | ❌ | ✅ | ?? | ?? | Aangepaste implementatie |
+| **Experimentatie** | ❌ | ❌ | ✅ | ✅ | Aangepaste implementatie |
+| **Het Beheer van de Taak via Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Uitbreiding van Personalization** | ❌ | ❌ | ?? | ❌ | Aangepaste implementatie |
+| **de Aanpassing van de Redacteur** | ❌ | ❌ | ✅ (via UI-extensie) | ❌ | Aangepaste implementatie |
+| **legt Actie** voor | ✅ | ✅ | ✅ | Alleen werkblad | Aangepaste implementatie |
 
-| **de Schrijver van de Vorm** | **Zeer belangrijke Benadering** | **Eigenschappen** | **het Publiceren Methode** | **Gevallen van het Gebruik** |
-|--------|-----------|-------|-------|------------------------------------------------|
-| **op document-gebaseerde Authoring** | Gebruikt vertrouwde tools zoals Google Docs en Microsoft Office voor het maken van formulieren. | Forms is ontworpen met behulp van spreadsheets, met gegevens die rechtstreeks worden verzonden naar Google Sheets of Microsoft Excel-werkbladen. </br> </br> Deze formulieren zijn sneller te maken en te implementeren. U hebt geen voorafgaande kennis van AEM nodig om aangepaste componenten en stijlen voor deze formulieren te ontwikkelen. | Deze formulieren worden gepubliceerd op Edge Delivery Services en hebben een zeer hoge Google Lighthouse score. </br> </br> De hoge score resulteert in snellere rendering en betere SEO. | Deze formulieren zijn ideaal voor snelle prototypen of basisformulieren waarbij geavanceerde verzendservices niet nodig zijn. </br> </br> Deze zijn zeer geschikt voor enquêtes, registratieformulieren of feedbackformulieren die gegevensopslag in spreadsheets vereisen. Deze formulieren worden gepubliceerd op Edge Delivery-services |
-| **Universele Redacteur** </br> </br> Als u een nieuw formulier maakt, gebruikt u de Universal Editor om formulieren te maken. | Biedt een WYSIWYG-interface voor het maken van intuïtieve formulieren. | Forms is ontworpen met een intuïtieve interface voor slepen en neerzetten. </br> </br> Deze vormen lenen blik en voelen van gevormde bewaarplaats GitHub van Edge Delivery Services voor de overeenkomstige vorm. | Deze formulieren worden gepubliceerd op Edge Delivery Services en hebben een zeer hoge Google Lighthouse score. </br> </br> De hoge score resulteert in snellere rendering en betere SEO. | Deze formulieren zijn ideaal om formulieren te maken voor Edge Delivery Service-sites en -pagina&#39;s. Deze formulierscenario&#39;s omvatten complexe formulieren, complexe workflows, aangepaste acties of integratie met externe systemen |
-| **AanpassingsForms redacteurs** | Biedt een wizardgestuurde aanpak voor het snel starten van het ontwerpen van formulieren met behulp van sjablonen, opmaak en vooraf gedefinieerde velden. | Gebruik deze redacteurs om de op componenten gebaseerde vormen van de Kern te creëren of van de Stichting Componenten gebaseerde vormen. | Deze formulieren kunnen op Edge Delivery Services of via AEM Publish-exemplaren worden gepubliceerd. | Gebruik deze redacteurs om de op componenten gebaseerde vormen van de Kern te creëren of van de Stichting Componenten gebaseerde vormen. Ideaal voor scenario&#39;s met complexe formulieren, complexe workflows, aangepaste acties of integratie met externe systemen. |
-
-
->[!NOTE]
->
->
-> Als er functies ontbreken in de Universal Editor die voorheen beschikbaar waren in de Adaptive Forms Editor, kunt u deze aanvragen via e-mail naar mailto:aem-forms-ea@adobe.com via uw officiële e-mailadres.
 
 ## Verwant artikel
 
@@ -69,7 +111,3 @@ In de volgende tabel worden de functies en gebruiksscenario&#39;s voor elke ontw
 * [ Universele Redacteur voor het auteursrecht van WYSIWYG ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 * [Een adaptief formulier maken (basiscomponenten)](/help/forms/creating-adaptive-form.md)
 * [Een adaptief formulier maken (kerncomponenten)](/help/forms/create-an-adaptive-form.md)
-
-## Zie ook
-
-{{see-more-forms-eds}}

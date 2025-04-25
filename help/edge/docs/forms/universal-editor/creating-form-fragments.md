@@ -3,17 +3,19 @@ title: Formulierfragmenten maken voor op WYSIWYG gebaseerde authoring
 description: Leer hoe u formulierfragmenten maakt in de Universal Editor en deze toevoegt aan formulieren.
 feature: Edge Delivery Services
 role: Admin, User, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 62c58ceb2d2d659bad591b3eba1bfd924f2a848b
+exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
+source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
 
+# Formulierfragmenten maken in Universal Editor
 
-# Edge Delivery Services-formulierfragmenten maken en gebruiken in Universal Editor
+<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Forms bevat vaak algemene secties zoals contactgegevens, identificatiegegevens of toestemmingsovereenkomsten. De formulierontwikkelaars maken deze secties telkens wanneer ze een nieuw formulier maken. Dit is een herhalend en tijdrovend formulier.
 Om deze dubbele inspanning te elimineren, verstrekt de Universele Redacteur een manier om herbruikbare vormsegmenten, zoals panelen of groepen gebieden, slechts eenmaal tot stand te brengen en hen over diverse vormen opnieuw te gebruiken. Deze herbruikbare, modulaire en standalone segmenten worden formulierfragmenten genoemd. Hetzelfde fragment voor noodcontact kan bijvoorbeeld worden gebruikt in verschillende secties van een formulier, zoals voor de contactgegevens van de werknemer en de toezichthouder.
@@ -23,7 +25,11 @@ Aan het einde van het artikel leert u hoe u fragmenten kunt maken en gebruiken i
 ## Functies van Edge Delivery Services-formulierfragmenten
 
 * **Behoud consistentie met vormfragmenten**
-U kunt fragmenten in verschillende formulieren integreren, zodat u consistente indelingen en gestandaardiseerde inhoud kunt behouden. Met de methode &quot;Eenmaal wijzigen, Overal spiegelen&quot; wordt elke update die in een fragment wordt uitgevoerd, automatisch toegepast op alle formulieren.
+U kunt fragmenten in verschillende formulieren integreren, zodat u consistente indelingen en gestandaardiseerde inhoud kunt behouden.
+
+  >[!NOTE]
+  >
+  > Met de aanpak &#39;Eenmaal wijzigen, Overal spiegelen&#39; wordt elke update die in een fragment wordt uitgevoerd, automatisch toegepast op alle formulieren in de voorbeeldmodus. In de modus Publiceren moet u het fragment echter publiceren of het formulier opnieuw publiceren om de wijzigingen door te voeren.
 
 * **Toevoegend vormfragmenten veelvoudige tijden binnen vorm**
 U kunt een formulierfragment meerdere keren toevoegen in een formulier en de eigenschappen voor de gegevensbinding ervan configureren voor gegevensbronnen of schema&#39;s.
@@ -38,13 +44,13 @@ U kunt geneste formulierfragmenten maken, wat betekent dat u een fragment kunt t
 ## Overwegingen bij het gebruik van Edge Delivery Services-formulierfragmenten
 
 * U moet dezelfde GitHub-URL toevoegen in zowel het fragment als het formulier waar u het fragment wilt gebruiken.
-* U kunt een formulierfragment dat via verwijzing wordt ingevoegd, niet vanuit een formulier bewerken. Wijzig het zelfstandige formulierfragment om het te bewerken.
+* U kunt een formulierfragment niet bewerken in een formulier. Als u wijzigingen wilt aanbrengen, wijzigt u het zelfstandige formulierfragment.
 
-## Vereisten voor het maken van Edge Delivery Services-formulierfragmenten
+## Vereisten
 
 * [ opstelling uw bewaarplaats GitHub ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) om een verbinding tussen uw milieu van AEM en de bewaarplaats te vestigen GitHub.
 * Als u reeds Edge Delivery Services gebruikt, voeg de recentste versie van het [ Aangepaste blok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) aan uw bewaarplaats GitHub toe.
-* De AEM Forms Author-instantie bevat een sjabloon op basis van Edge Delivery Services. Verzeker de [ recentste versie van de Componenten van de Kern ](https://github.com/adobe/aem-core-forms-components) in uw milieu geïnstalleerd is.
+* De AEM Forms Author-instantie bevat een sjabloon op basis van Edge Delivery Services.
 * Houd de URL van uw AEM Forms as a Cloud Service-auteurinstantie en uw GitHub Repository handig.
 
 ## Werken met Edge Delivery Services-formulierfragmenten
@@ -108,7 +114,7 @@ Voer de volgende stappen uit om een formulierfragment te maken in de Universal E
 
 ### Formulierfragmenten toevoegen aan een formulier
 
-Laten we een eenvoudig `Employee Details` -formulier maken dat zowel werknemers- als supervisorinformatie bevat. U kunt het fragment `Contact Details` gebruiken in zowel de deelvensters Medewerker als Supervisor. Voer de volgende stappen uit om het formulierfragment in het formulier te gebruiken:
+Laten we een eenvoudig `Employee Details` formulier maken dat zowel werknemers- als supervisorinformatie bevat. U kunt het fragment `Contact Details` gebruiken in zowel de deelvensters Medewerker als Supervisor. Voer de volgende stappen uit om het formulierfragment in het formulier te gebruiken:
 
 1. Open het formulier in de bewerkingsmodus.
 1. Voeg de component Formulierfragment toe aan het formulier.
@@ -132,7 +138,7 @@ Laten we een eenvoudig `Employee Details` -formulier maken dat zowel werknemers-
 
 1. Klik op **[!UICONTROL Select]**.
 
-   Het formulierfragment wordt toegevoegd ten opzichte van het formulier en blijft gesynchroniseerd met het zelfstandige formulierfragment. Dit betekent dat alle wijzigingen die in het fragment worden aangebracht, worden gespiegeld in alle gevallen waarin het fragment in formulieren is opgenomen.
+   Het formulierfragment wordt toegevoegd ten opzichte van het formulier en blijft gesynchroniseerd met het zelfstandige formulierfragment.
 
    ![ Fragment in vorm ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,21 @@ ht-degree: 0%
 Het artikel verstrekt gedetailleerde voorbeelden van een Redacteur van de Regel voor een Adaptief Vorm die op kerncomponenten wordt gebaseerd, die inzichten in zijn juiste implementatie voor verschillende scenario&#39;s verstrekken. Met de regeleditor kunnen ontwikkelaars de logica voor het beheren van het gedrag van formulieren definiëren en beheren.
 Nu, laten wij de verschillende implementaties voor een regelredacteur bespreken.
 
+## Stel focus in op een ander deelvenster wanneer u op een knop klikt als het eerste deelvenster geldig is
+
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+Met de regeleditor kunt u de lay-outs van een deelvenster valideren, zoals Horizontale tabbladen, Verticale tabbladen, Accordeons of Wizard wanneer u op een knop klikt en de focus instelt op een formulierobject in een ander deelvenster. U kunt deze functionaliteit gebruiken om de navigatie en gebruikerservaring van formulieren te verbeteren.
+
+Stel u een toepassingsformulier met meerdere stappen voor met een wizardindeling. U moet het deelvenster `Personal Information` voltooien voordat u naar `Employment Details` gaat. Wanneer u op de knop `Next` klikt, valideert de regeleditor het deelvenster `Personal Information` . Als alle vereiste velden correct zijn ingevuld, verschuift het formulier automatisch de focus naar het deelvenster `Employment Details` . Anders wordt een foutbericht weergegeven waarin gebruikers wordt gevraagd de ontbrekende velden te voltooien.
+
+U kunt een regel maken op de knop `Next` om het eerste deelvenster te valideren:
+
+![ Regel voor Volgende knoop ](/help/forms/assets/next-rule.png){width=50%}
+
+Wanneer u de **Volgende** knoop klikt, wordt het **Persoonlijke paneel van de Informatie** bevestigd. Als de ingevoerde details correct zijn, verschuift de nadruk naar het **paneel van de Veiligheid van de Rekening**; anders, veroorzaakt een foutenmelding u om de ontbrekende details in te vullen.
+
+<!--![Video]()-->
 
 ## Navigeren tussen deelvensters met een knop
 
@@ -28,7 +43,7 @@ Elk deelvenster bevat relevante velden en opties voor het bijwerken van specifie
 
 Met de regel `Navigate among the panels` kunt u navigatieregels maken voor knoppen waarmee tussen verschillende deelvensters kan worden geschakeld.  Selecteer het kenmerk `Shift focus to the next item` om de focus naar het volgende deelvenster in de layout te verplaatsen.
 
-![ Volgende paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-next.png) {width=50%}
+![ Volgende paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
 Wanneer op de knop `Next` wordt geklikt, gaat de focus naar het volgende deelvenster in de layout.
 
@@ -36,7 +51,7 @@ Wanneer op de knop `Next` wordt geklikt, gaat de focus naar het volgende deelven
 
 Op dezelfde manier kunt u een regel maken voor de knop `Previous` om de focus naar het vorige deelvenster te verplaatsen.
 
-![ Vorige paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png) {width=50%}
+![ Vorige paneelregel ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Complexe berekeningen stroomlijnen in herhaalbare deelvensters met functies
 

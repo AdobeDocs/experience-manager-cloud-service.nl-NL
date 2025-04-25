@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Een verbinding maken met een SharePoint-documentbibliotheek voor een adaptief formulier, Verzenden naar SharePoint, Een SharePoint-documentbibliotheekconfiguratie maken, De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier, AEM Forms Data Model SharePoint Document Library, Forms Data Model SharePoint Document Library, Forms Data Model integreren in de SharePoint Document Library
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier aansluiten op de Microsoft® SharePoint-documentbibliotheek {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ U kunt de gemaakte SharePoint Document Library-configuratie in een adaptief form
 1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
 1. Klik op **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
-Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint Document Library Storage.
-De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data` .
+>[!NOTE]
+>
+> Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint Document Library Storage. De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data` .
+
+>[!NOTE]
+>
+> Bijlagen worden ook opgeslagen in de map `/folder_name/form_name/year/month/date/submission_id/data` . Nochtans, als u **sparen Bijlagen met Oorspronkelijke Naam** selecteert, worden de gehechtheid opgeslagen in de omslag gebruikend hun originele filenames.
+> ![image](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## Verwante artikelen
 

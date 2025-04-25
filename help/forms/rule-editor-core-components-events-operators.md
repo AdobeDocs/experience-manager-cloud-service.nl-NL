@@ -1,13 +1,13 @@
 ---
-title: Wat zijn de verschillende operatortypes en de gebeurtenissen beschikbaar in regel redacteur van een adaptieve vorm die op kerncomponenten wordt gebaseerd?
-description: De adaptieve Forms-regeleditor ondersteunt verschillende typen operatoren en gebeurtenissen.
+title: Wat zijn de verschillende typen operators en gebeurtenissen die beschikbaar zijn in de regeleditor van een adaptief formulier op basis van kerncomponenten?
+description: De regeleditor voor adaptieve formulieren ondersteunt verschillende typen operators en gebeurtenissen.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2258'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In AEM Forms als Cloud bevat de regeleditor verschillende typen operatoren en ge
 
 De operatortypen die beschikbaar zijn in de regeleditor van een adaptief formulier bieden een robuust kader voor het samenstellen van nauwkeurige voorwaarden. Hiermee kunt u gegevens manipuleren, berekeningen uitvoeren en meerdere voorwaarden op een logische en coherente manier combineren. Of u nu waarden vergelijkt, rekenkundige bewerkingen uitvoert of tekenreeksen manipuleert, deze operatoren zorgen ervoor dat uw regels zowel flexibel als krachtig zijn.
 
-De gebeurtenissen in de regelredacteur dienen als trekkers die uw regels activeren. Zij bepalen de specifieke acties die voorkomen wanneer aan bepaalde voorwaarden wordt voldaan. Door verschillende typen gebeurtenissen te gebruiken, kunt u reacties op een groot aantal scenario&#39;s automatiseren, bijvoorbeeld gebruikersinteractie, geplande tijden, veranderingen in gegevens, en systeemstaten. Met de capaciteit om deze trekkers te specificeren, kunt u dynamische en ontvankelijke regels tot stand brengen die aan uw specifieke vereisten voldoen.
+De gebeurtenissen in de regelredacteur dienen als trekkers die uw regels activeren. Ze definiëren de specifieke acties die optreden wanneer aan bepaalde voorwaarden wordt voldaan. Door gebruik te maken van verschillende soorten gebeurtenissen, kunt u reacties op een breed scala aan scenario&#39;s automatiseren, bijvoorbeeld gebruikersinteracties, geplande tijden, wijzigingen in gegevens en systeemstatussen. Met de mogelijkheid om deze triggers te specificeren, kunt u dynamische en responsieve regels maken die voldoen aan uw specifieke vereisten.
 
 Door de beschikbare exploitanttypes en de gebeurtenissen te begrijpen en te gebruiken, kunt u het volledige potentieel van de regelredacteur ontgrendelen, die u toelaat om efficiënte, en efficiënte regels tot stand te brengen die aan uw unieke behoeften voldoen en algemene systeemfunctionaliteit te verbeteren.
 
@@ -26,17 +26,21 @@ Door de beschikbare exploitanttypes en de gebeurtenissen te begrijpen en te gebr
 
 De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u regels kunt maken.
 
-* **is gelijk aan**
-* **is niet gelijk aan**
-* **begint met**
-* **eindigt met**
-* **bevat**
-* **bevat niet**
-* **is Leeg**
-* **is niet leeg**
-* **heeft Geselecteerd:** keert waar terug wanneer de gebruiker een bepaalde optie voor een checkbox, drop-down, radioknoop selecteert.
-* **wordt geïnitialiseerd (gebeurtenis):** keert waar terug wanneer een vormvoorwerp in browser teruggeeft.
-* **wordt Gewijzigd (gebeurtenis):** keert waar terug wanneer de gebruiker de ingegane waarde of de geselecteerde optie voor een vormvoorwerp verandert.
+* **is Gelijk aan** - Controleert als een vormvoorwerp een gespecificeerde waarde aanpast.
+* **is niet Gelijk aan** - Controleert als een vormvoorwerp geen gespecificeerde waarde aanpast.
+* **begint met** - Controleert als een vormvoorwerp met een gespecificeerd koord begint.
+* **eindigt met** - Controleert als een vormvoorwerp met een gespecificeerd koord beëindigt.
+* **bevat** - controleert als een vormvoorwerp een gespecificeerd substring omvat.
+* **bevat niet** - controleert als een vormvoorwerp geen gespecificeerd substring omvat.
+* **is Leeg** - Controleert als een vormvoorwerp leeg is of niet verstrekt.
+* **is niet Leeg** - Controleert als een vormvoorwerp aanwezig en niet leeg is.
+* **heeft Geselecteerd** - Keert waar terug wanneer een gebruiker een specifieke checkbox, drop-down, of radioknoopoptie selecteert.
+* **wordt geïnitialiseerd (gebeurtenis)** - keert waar terug wanneer een vormvoorwerp in browser wordt teruggegeven.
+* **wordt Veranderd (gebeurtenis)** - Keert waar terug wanneer een gebruiker de waarde of de selectie van een vormvoorwerp wijzigt.
+* **wordt geklikt (gebeurtenis)** - Keert waar terug wanneer een gebruiker een vormvoorwerp, bijvoorbeeld, een knoop klikt. Een gebruiker kan [ veelvoudige voorwaarden aan de knoop toevoegen klikt ](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **is Geldig** - Controleert als een vormvoorwerp aan bevestigingscriteria voldoet.
+* **is niet Geldig** - Controleert als een vormvoorwerp bevestigingscriteria ontbreekt.
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -68,15 +72,16 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Else, do the following:`
 
-`Action 2 on Object C;`_
+`Action 2 on Object C;`
+_
 
-Wanneer u een component met meerdere waarden gebruikt, zoals keuzerondjes of lijst, worden de opties tijdens het maken van een regel voor dat onderdeel automatisch opgehaald en beschikbaar gesteld aan de maker van de regel. U hoeft de optiewaarden niet nogmaals te typen.
+Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, terwijl het creëren van een regel voor die component, worden de opties automatisch teruggewonnen en ter beschikking gesteld van de regelmaker. U hoeft de optiewaarden niet nogmaals te typen.
 
 Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
 
 ![ de multi opties van waardevertoningen ](assets/multivaluefcdisplaysoptions.png)
 
-Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden. U kunt het Else-statement toevoegen om verdere voorwaarden toe te voegen
+Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden. U kunt de instructie Else toevoegen om meer voorwaarden toe te voegen
 
 ![Duidelijke waarde van](assets/clearvalueof.png)
 
@@ -86,7 +91,7 @@ Tijdens het schrijven van een When-regel kunt u de Clear Value of action activer
 
 ##### Toegestaan Meerdere velden in [!UICONTROL When] {#allowed-multiple-fields}
 
-In **wanneer** voorwaarde, hebt u de optie om andere gebieden behalve het gebied toe te voegen waarop de regel wordt toegepast.
+In de **voorwaarde Wanneer** hebt u de mogelijkheid om andere velden toe te voegen dan het veld waarop de regel wordt toegepast.
 
 Met het regeltype Wanneer kunt u bijvoorbeeld een voorwaarde evalueren voor verschillende formulierobjecten en de handeling uitvoeren:
 
@@ -98,19 +103,23 @@ EN/OF
 
 (Voorwaarde B 2)
 
-Ga vervolgens als volgt te werk:
+Voer vervolgens de volgende handelingen uit:
 
 Actie 1 op object A
 
 _
 
-![Toegestaan Meerdere velden in Wanneer](/help/forms/assets/allowed-multiple-field-when.png)
+![ Toegestane Meerdere gebieden binnen wanneer ](/help/forms/assets/allowed-multiple-field-when.png)
 
-**Overwegingen bij het gebruik van Toegestaan Meerdere velden in de functie Wanneer voorwaarde**
+**Overwegingen terwijl het gebruiken van Toegestane Meerdere gebieden in wanneer voorwaardelement**
 
 * Zorg ervoor dat de [ kerncomponent aan versie 3.0.14 of recenter ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om deze eigenschap in de regelredacteur te gebruiken.
 * Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
-* U kunt alleen de meerdere velden toevoegen in de **voorwaarde Wanneer** voor een **EN-regel** . Het is niet mogelijk voor een **OF** regel.
+* U kunt alleen de meerdere velden toevoegen in de **voorwaarde Wanneer** voor een **EN-regel** . Het is niet mogelijk voor een **OF-regel** .
+
+>[!NOTE]
+>
+> Als u meerdere voorwaarden wilt toevoegen die een klik op een knop bevatten, moet u ervoor zorgen dat de gebeurtenis &#39;Klikken op knop&#39; als eerste voorwaarde is geplaatst. Is `When button is clicked AND text input equals '5'` bijvoorbeeld geldig, terwijl `When text input equals '5' AND button is clicked` wordt niet ondersteund.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -138,9 +147,9 @@ Als er problemen optreden met de toegestane meerdere velden in de functie Wannee
 
 **[!UICONTROL Hide]** Verbergt het opgegeven object.
 
-**[!UICONTROL Show]** Hiermee wordt het opgegeven object weergegeven.
+**[!UICONTROL Show]** Toont het opgegeven object.
 
-**[!UICONTROL Enable]** Schakelt het opgegeven object in.
+**[!UICONTROL Enable]** Hiermee schakelt u het opgegeven object in.
 
 **[!UICONTROL Disable]** Schakelt het opgegeven object uit.
 
@@ -205,23 +214,23 @@ De volgende afbeelding toont een voorbeeld van het dynamisch inschakelen van het
 
 **[!UICONTROL Function Output]** Definieert een regel op basis van vooraf gedefinieerde functies of aangepaste functies.
 
-**[!UICONTROL Navigate to]** Navigeer naar andere adaptieve formulieren, andere elementen zoals afbeeldingen of documentfragmenten, of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigeer naar andere Adaptieve Forms, andere elementen, zoals afbeeldingen of documentfragmenten, of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Dispatch Event]** Activeert de specifieke acties of gedragingen op basis van vooraf gedefinieerde voorwaarden of gebeurtenissen.
+**[!UICONTROL Dispatch Event]** Triggert de specifieke acties of gedragingen op basis van vooraf gedefinieerde voorwaarden of gebeurtenissen.
 
 #### [!UICONTROL Set Value of] {#set-value-of}
 
-Met het **[!UICONTROL Set Value of]** regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van of aan de opgegeven voorwaarde is voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige uitdrukking of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een Form Data Model-service. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, tekenreeks, eigenschap of waarden die zijn afgeleid van een functie of wiskundige uitdrukking.
+Met het **[!UICONTROL Set Value of]** -regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een service Form Data Model. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
 
-Het **regeltype Waarde instellen van** is niet beschikbaar voor alle formulierobjecten, zoals deelvensters en werkbalkknoppen. Een standaardsetwaarde van regel heeft de volgende structuur:
+De **Vastgestelde Waarde van** regeltype is niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen. Een standaardsetwaarde van regel heeft de volgende structuur:
 
-Stel de waarde van Object A in op:
+Stel de waarde van object A in op:
 
-(Tekenreeks ABC) OR
-(objecteigenschap X van Object C) OR
-(waarde van een functie) OR
-(waarde van een wiskundige expressie) OF
-(outputwaarde van een dienst van het gegevensmodel);
+(Snaar ABC) OF
+(object eigenschap X van Object C) OF
+(waarde van een functie) OF
+(waarde van een wiskundige uitdrukking) OF
+(outputwaarde van een datamodelservice);
 
 Wanneer (optioneel):
 
@@ -237,7 +246,7 @@ Voorbeeld van waardeceregel instellen met de service Formuliergegevensmodel.
 
 Met het regeltype **[!UICONTROL Show]** kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of als `False` wordt geretourneerd.
 
-Een typische Show regel is gestructureerd als volgt:
+Een typische Show-regel is als volgt gestructureerd:
 
 `Show Object A;`
 
@@ -251,7 +260,7 @@ Een typische Show regel is gestructureerd als volgt:
 
 #### [!UICONTROL Hide] {#hide}
 
-Net als bij het regeltype Weergeven kunt u het regeltype **[!UICONTROL Hide]** gebruiken om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de handeling Tonen voor het geval dat niet aan de voorwaarde wordt voldaan of dat `False` wordt geretourneerd.
+Net als bij het regeltype Weergeven kunt u het **[!UICONTROL Hide]** regeltype gebruiken om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de actie Weergeven voor het geval niet aan de voorwaarde wordt voldaan of terugkeert `False`.
 
 Een typische regel van de Huid is gestructureerd als volgt:
 

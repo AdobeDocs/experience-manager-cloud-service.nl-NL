@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
+source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.3.0) is 27 maart 2025. De volgende release met functies (2025.4.0) is gepland voor 24 april 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.4.0) is 24 april 2025. De volgende release met functies (2025.5.0) is gepland voor 29 mei 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -44,31 +44,62 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
+
+### Nieuwe functies in Experience Manager Sites {#enhancements-sites}
+
+**Nieuwe ModelAdmin UI van het Fragmentmodel van het Inhoud**
+
+Als u de lijst met nieuwe gebruikersinterfaces aan de clientzijde verder invult wanneer u werkt met AEM Content Fragments, is er nu een nieuwe beheerinterface beschikbaar voor modellen van inhoudsfragmenten. De nieuwe UI verstrekt een schone en moderne lijstmening die het zoeken van modellen met filters toestaat, en die modelmarkeringen toont en welke inhoudsfragmenten bestaan die op een bepaald model gebaseerd zijn. De documentatie kan [ hier ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) worden gevonden.
+
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in Dynamic Media {#new-features-dynamic-media}
+### Dynamische media (Scene7) {#dynamic-media-scene7}
 
-**Lange vormsteun voor video&#39;s die gebruikend Dynamische Media met Open API** worden geleverd
+**Dynamische Media (Scene7) niet gesteund in de Verbeterde milieu&#39;s van de Veiligheid**
 
-Dynamische media met OpenAPI ondersteunt nu lange formuliervideo&#39;s. De lange formuliervideo&#39;s bieden ondersteuning voor maximaal 50 GB en 2 uur.
+Dynamic Media (Scene7) op AEM as a Cloud Service is niet geschikt voor HIPAA en kan niet worden gebruikt in AEM-omgevingen waar uitgebreide beveiliging is ingeschakeld.
 
-### Dynamic Media Classic {#dmc}
+Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1} kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
 
-<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn dat de Dynamische stapel van Media (Scene7) niet HIPAA-klaar is.
 
-Het tabblad Bandbreedte in het rapportagedashboard van Dynamic Media Classic wordt vanaf april 2025 niet meer ondersteund.
+### Dynamic Media Classic {#dynamic-media-classic}
 
-Zie [Bandbreedte en opslag, Typen rapporten](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+**Meldend**
+
+Het tabblad Bandbreedte in het Dynamic Media Classic-rapportagedashboard wordt niet meer ondersteund vanaf april 2025.
+
+Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
-## Nieuwe functies in de weergave Activa {#new-features-assets-view}
+## Nieuwe functies in Assets View {#new-features-assets-view}
 
+**Betrekkingen van Activa**
 
-**Ondersteuning voor root-tags**
+De Assets-weergave biedt nu ondersteuning voor het weergeven en bewerken van relaties met middelen in een vereenvoudigd deelvenster met gegevens over elementen. Voeg eenvoudig relaties zoals Source en Derivative toe aan inhoud, zodat gebruikers op een effectievere manier relevante hoofdinhoud kunnen vinden.
 
-AEM Assets ondersteunt nu het toewijzen van een tag-eigenschap in een metagegevensvorm aan aangepaste metagegevens. Daarnaast kunt u als beheerder de beschikbaarheid van tags voor gebruikers beperken door de toegang tot een specifieke roottag en de tags die onder de roottag bestaan, te beperken.
+![ Assets relatievoorbeeld ](/help/assets/assets/asset-relations-example.png)
+
+**vergelijkt versies van een activa**
+
+Met de Assets-weergave kunt u nu snel elke versie van een element selecteren en vergelijken met de meest recente versie.
+
+![ vergelijk versies van activa ](/help/assets/assets/version-compare2.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
+
+### Functies vóór de release
+
+* [ Universele Redacteur - de Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): De Universele Redacteur staat u nu toe om de Fragmenten van de Vorm voor Adaptieve Forms tot stand te brengen en opnieuw te gebruiken. Deze fragmenten zijn herbruikbare formuliersecties (bijvoorbeeld contactgegevens, toestemmingsvelden) die één keer kunnen worden gemaakt en op meerdere formulieren kunnen worden toegepast. Met deze functie stroomlijnt u het maken van formulieren, zorgt u voor consistentie en verbetert u de efficiëntie van het ontwerpen.
+
+* [ de Bibliotheek van het Document van SharePoint - sparen Bijlagen met Oorspronkelijke Filenames ](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): U hebt nu de optie om vormgehechtheid te bewaren gebruikend hun originele filenames wanneer het opslaan van hen in een Bibliotheek van het Document van SharePoint. Deze verbetering vereenvoudigt de identificatie en het beheer van geüploade bestanden.
+
+* **Redacteur van de Regel**:
+   * [ Binaire Voorwaarde met de Gebeurtenis van de Klik in &quot;wanneer&quot;Clausule ](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): De Redacteur van de Regel staat nu toe combinerend een gebeurtenis van de knoopklik (_wordt geklikt_) met andere voorwaarden binnen de &quot;wanneer&quot;clausule. Dit laat nauwkeurigere controle over regeluitvoering toe die op gebruikersinteractie en andere factoren wordt gebaseerd. Opmerking: wanneer u meerdere voorwaarden gebruikt, moet de gebeurtenis click de eerste weergegeven voorwaarde zijn.
+   * [ de Voorwaarden van de Bevestiging voor Gebieden en Comités ](/help/forms/rule-editor-core-components-usecases.md): De Redacteur van de Regel omvat nu _IsValid_ en _IsNotValid_ voorwaarden. Hiermee kunt u de validatiestatus controleren van specifieke velden of volledige deelvensters (zoals lay-outs zoals Horizontale tabbladen, Verticale tabbladen, Accordeons en Wizards), waardoor de navigatie en gebruikerservaring van formulieren op basis van validatieresultaten wordt verbeterd.
+* **Verbeterd Beheer van het Toepassingsgebied voor de Lijsten van SharePoint**: De plaatsen van SharePoint steunen nu alle beheerde wegen, bijvoorbeeld, /sites en /teams. Deze verbetering maakt een bredere integratie mogelijk in verschillende SharePoint-sitestructuren, waardoor u flexibeler kunt werken met organisatorische inhoud.
+* **Steun voor het Opslaan van Document van Verslag aan de Lijst van SharePoint**: Forms die gebruikend een op lijst-Gebaseerd Model van de Gegevens van de Vorm van SharePoint (FDM) wordt gecreeerd kan het Document van Verslag (DoR) aan de Lijsten van SharePoint nu opslaan door het Document van het het gebiedsbezit van de Verwijzing van de Bind van het Verslag te vormen. Dankzij deze verbetering kunnen ondersteunde formuliergegevens en -documenten naadloos worden geïntegreerd met SharePoint-opslag.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -76,29 +107,63 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### HTML-e-mailsjablonen in Adaptive Forms
+#### Adobe Experience Platform (AEP) Integratie met Forms
 
-De adaptieve Forms staat u toe om [ e-mailmalplaatjes van HTML ](/help/forms/html-email-templates-in-adaptive-forms.md) te gebruiken. Met HTML-e-mailsjablonen kunt u rijke, persoonlijke en visueel aantrekkelijke e-mails verzenden wanneer een formulier wordt verzonden. Deze e-mailberichten kunnen worden aangepast met formuliergegevens en uitgebreid met behulp van verschillende e-mailtags, zoals afbeeldingen en koppelingen. Met Adaptief Forms kunt u een bestand uploaden dat een HTML-sjabloon bevat of een normale teksteditor gebruiken om deze sjablonen te maken.
+De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnende gebruikers.
 
-![ HTML e-mailmalplaatjes ](/help/forms/assets/html-email.png)
+## CIF-invoegtoepassing {#cloud-services-cif}
 
-#### Verbeterde ondersteuning voor cloudopslag: Direct PDF Uploaden naar Azure Blob Storage
+### Verbeteringen {#enhancements-cif}
 
-De Generatie APIs van het Document van AEM Forms laat u [ geproduceerde documenten van PDF ](/help/forms/early-access-ea-features.md#doc-generation-api) aan Azure BlobOpslag direct uploaden. Deze verbetering stroomlijnt de opslag en opvraging, waardoor de efficiëntie en integratie met cloudworkflows worden verbeterd.
+* Selectie van productvarianten toevoegen voor referentietype van CIF-product
+* [ Experimental ]: JSON+LD in de Componenten van de Kern van CIF in PDPs
+* [ Experimental ]: De capaciteit van CIF om geheim voorgeheugen te ontruimen
+
+### Bugfixes {#bug-fixes-cif}
+
+* Zoekprobleem in productveld verhelpen
+* De URL-indeling van het product werkt niet zoals u had verwacht voor #variant_sku
+* Kan niet meer dan 20 SKU&#39;s toevoegen aan de component Productlijst
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
+
+### Op OpenAPI gebaseerde API&#39;s {#open-apis}
+
+Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console tot stand te brengen en steun OAuth server-aan-Server, Web App, en Enige Pagina App (SPA).
+
+[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
+
+Bekijk deze video om te leren hoe u een geverifieerde API voor later gebruik kunt configureren:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+### Verbeteringen op gebied van CDN-configuratie {#cdn-enhancements}
+
+Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#configurations). Hier volgen enkele recente functies:
+
+#### Aanvullende eigenschappen opnemen in CDN-logbestanden {#props-in-cdnlogs}
+
+Nuttig voor scenario&#39;s met inbegrip van het zuiveren en gegevensanalyse, kunt u meer informatie in uw CDN- logboeken voorbij de standaardeigenschappen omvatten door de `logProperty` actie in [ verzoek en reactietransformaties ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) te plaatsen.
+
+#### Gebied, Continent en Organisatie-eigenschappen als overeenkomende voorwaarden {#matching-conditions}
+
+CDN-regels kunnen nu op basis van regio, continent en organisatie overeenkomen voor gebruik, waaronder het blokkeren van verkeer en omleiding. `clientRegion` en `clientContinent` vergroten de reeds ondersteunde `clientCountry` overeenkomsten op basis van geografie, terwijl `clientAsName` en `clientAsNumber` overeenkomen met Autonomous Systems om grote ISP&#39;s, bedrijven of cloudproviders te identificeren. Leer meer over deze [ onlangs blootgestelde verzoekeigenschappen ](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+
+#### Cookie-waarde instellen {#cookie-attributes}
+
+U kunt koekjesattributen in [ reactietransformaties ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) plaatsen.
 
 ### Java 21-ondersteuning {#java21}
 
 Vanaf de release van januari kunt u code maken met Java 21 en Java 17. U krijgt toegang tot nieuwe functies zoals patroonaanpassing, verzegelde klassen en verschillende prestatieverbeteringen. Voor configuratiestappen, met inbegrip van het bijwerken van uw Gemaakt project en bibliotheekversies, zie het [ Milieu van de Bouwstijl ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) artikel.
 
-Krachtigere Java 21 **runtime** wordt automatisch opgesteld wanneer Java 17 of 21 bouwt wordt ontdekt. Adobe raadt echter ook aan om voor de Java 21-runtime te kiezen voor omgevingen die zijn gebouwd met Java 11, door aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) te e-mailen[. Leer over [ Java 21 runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Krachtigere Java 21 **runtime** wordt automatisch opgesteld wanneer Java 17 of 21 bouwt wordt ontdekt. Nochtans, beveelt Adobe ook het kiezen in Java 21 runtime voor milieu&#39;s aan die met Java 11 worden gebouwd, door [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) te e-mailen. Leer over [ Java 21 runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
 > Java 21 **runtime** werd opgesteld aan uw milieu&#39;s dev/RDE in februari; het zal op uw stadium/productiemilieu&#39;s op **28 april en 29** worden toegepast. Merk op dat **bouwend code** met Java 21 (of Java 17) onafhankelijk van Java 21 runtime is — u moet stappen uitdrukkelijk nemen om code met Java 21 (of Java 17) te bouwen.
 
-### AEM Log Forwarding to more destination - Beta Program {#log-forwarding-earlyadopter}
+### AEM Log Forwarding to More Destination - Beta Program {#log-forwarding-earlyadopter}
 
 In bèta kunt u nu AEM-logboeken doorsturen naar New Relic (met behulp van HTTPS), Amazon S3 en Sumo Logic. AEM-logbestanden (inclusief Apache/Dispatcher) worden wel ondersteund, maar geen CDN-logbestanden. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
 
@@ -108,44 +173,22 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ### Edge Computing - Verzoek om feedback! {#edge-computing-feedback}
 
-Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen heeft, zoals minder latentie. Adobe wil graag weten of deze technologie nuttig is voor AEM Publish Delivery- en Edge Delivery Services-projecten. Laat ons bovendien weten waarvoor u het voor ogen heeft als input voor de productroadmap.
+Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen heeft, zoals minder latentie. Adobe wil graag weten of deze technologie nuttig is voor AEM Publish Delivery- en Edge Delivery Services-projecten. Bovendien, laat ons weten wat u van plan bent om het als input in de product roadmap te gebruiken.
 
-Enkele mogelijke gebruiksscenario&#39;s:
+Sommige gebruiksgevallen:
 
 * Verificatie met een IdP om toegang tot inhoud te verkrijgen
-* Dynamische (gepersonaliseerde, gelokaliseerde) inhoud renderen op basis van geolocatie, apparaattype, gebruikerskenmerken, enz.
+* Personalization door dynamische inhoud te renderen op basis van geolocatie, apparaattype, gebruikerskenmerken, enz.
 * Geavanceerde beeldmanipulatie
 * Middleware tussen CDN en een oorsprong
-* Een laag tussen de browser en een API van derden, misschien om de API-respons opnieuw in te delen
-* Gegevens van meerdere oorsprong samenvoegen om het voor de clientbrowser gemakkelijker te maken om deze weer te geven
+* Een laag tussen de browser en een externe API, bijvoorbeeld om de API-reactie opnieuw op te maken
+* Gegevens van meerdere origines samenvoegen om het voor de clientbrowser eenvoudiger te maken om deze te renderen
 
-Mail [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) met vragen en opmerkingen!
-
-### OpenAPI-gebaseerde API&#39;s - Early Adopter-programma {#open-apis-earlyadopter}
-
-Ontwikkelaars kunnen AEM as Cloud Service-functies diep integreren in hun eigen toepassingen en hulpprogramma&#39;s. Nieuwe AEM as a Cloud Service-API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruiksvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
-
-Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) die configuratie en gebruik illustreren.
-
-Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
-
-* [ de Fragmenten APIs van de Inhoud van Plaatsen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [ Assets APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [ Plaatsen en de Omslagen APIs van Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
-* [ Communicatie APIs van Forms ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### Nieuwe AEM Developer Console (openbare bèta) {#aem-developer-console-beta}
-
-Probeer uit een vernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
-
-Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe verwelkomt terugkoppelen, die u aan [ aemcs-new-devconsole-ui-beta@adobe.com ](mailto:aemcs-new-devconsole-ui-beta@adobe.com) kunt e-mailen
+E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met vragen en commentaren!
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0) vinden.
-
-<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
-(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -157,12 +200,12 @@ U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hie
 
 ## Universele editor {#universal-editor}
 
-Je kunt hier](/help/release-notes/universal-editor/current.md) een volledige lijst van Universal Editor-releases [vinden.
+U kunt een volledige lijst van Universele versies van de Redacteur [ hier ](/help/release-notes/universal-editor/current.md) vinden.
 
 ## Variaties genereren {#generate-variations}
 
-U kunt hier](/help/generative-ai/release-notes-generate-variations.md) een volledige lijst van Generate Variations releases [vinden.
+U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/generative-ai/release-notes-generate-variations.md) vinden.
 
-## Release-opmerkingen voor Experience Cloud {#experience-cloud}
+## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
 U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
