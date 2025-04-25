@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -162,6 +162,20 @@ Krachtigere Java 21 **runtime** wordt automatisch opgesteld wanneer Java 17 of 2
 >[!IMPORTANT]
 >
 > Java 21 **runtime** werd opgesteld aan uw milieu&#39;s dev/RDE in februari; het zal op uw stadium/productiemilieu&#39;s op **28 april en 29** worden toegepast. Merk op dat **bouwend code** met Java 21 (of Java 17) onafhankelijk van Java 21 runtime is — u moet stappen uitdrukkelijk nemen om code met Java 21 (of Java 17) te bouwen.
+
+### Handhaving van het configuratiebeleid voor AEM Logging {#logconfig-policy}
+
+AEM Java-logboeken moeten een consistente indeling hebben en mogen niet worden overschreven door aangepaste configuraties, zodat de omgeving van de klant effectief wordt gecontroleerd. De output van het logboek moet aan de standaarddossiers worden geleid. Voor AEM-productcode moeten de standaardlogniveaus worden behouden. Nochtans, is het aanvaardbaar om logboekniveaus voor klant-ontwikkelde code aan te passen.
+
+Daartoe moeten de volgende OSGi-eigenschappen niet worden gewijzigd:
+* **Apache Sling Logconfiguratie** (PID: `org.apache.sling.commons.log.LogManager`) — *alle eigenschappen*
+* **Apache Sling Logging Logger Configuratie** (PID van de Fabriek: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+Medio mei zal AEM een beleid afdwingen waarbij eventuele aangepaste wijzigingen in deze eigenschappen worden genegeerd. Controleer uw downstreamprocessen en pas deze aan. Bijvoorbeeld, als u het logboek door:sturen eigenschap gebruikt:
+* Als uw registrerenbestemming een douane (niet-gebrek) logboekformaat verwacht, kunt u uw spelingsregels moeten bijwerken.
+* Als de veranderingen in logboekniveaus verminderde logboekbreedtegraad, zich ervan bewust zijn dat de standaardlogboekniveaus in een significante verhoging van logboekvolume kunnen resulteren.
 
 ### AEM Log Forwarding to More Destination - Beta Program {#log-forwarding-earlyadopter}
 
