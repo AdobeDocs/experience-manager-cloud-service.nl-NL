@@ -4,7 +4,7 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3016'
 ht-degree: 0%
@@ -72,6 +72,9 @@ Enkele belangrijke voordelen van [!DNL Dynamic Media] sjablonen zijn:
 >[!NOTE]
 >
 >Klanten met een abonnement op de uitgebreide beveiligingsSKU kunnen geen gebruik maken van [!DNL Dynamic Media] -mogelijkheden, waaronder [!DNL Dynamic Media] Templates, voor dat Cloud Services-programma.
+
+Leer hoe u in deze video stap voor stap een [!DNL Dynamic Media] -sjabloon maakt.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Voordat u begint{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ Voer de volgende stappen uit om de leverings-URL van de sjabloon te kopiëren:
 1. Klik op **[!UICONTROL Copy URL]**. Het dialoogvenster **[!UICONTROL Copy URL]** wordt weergegeven. Selecteer en kopieer de weergegeven URL. De eerste parameter in URL begint na een vraagteken **([!UICONTROL ?])** en een zeer belangrijk-waardepaar begint met **[!UICONTROL $]** en beëindigt met **[!UICONTROL &]**. De sleutel en de waarde worden gescheiden door een gelijkteken **([!UICONTROL =])**, met de sleutel op de linkerzijde en de waarde op het recht.
 1. Plak deze URL in het browsertabblad en bekijk de live sjabloon. Pas het malplaatje in real time aan door de vereiste waarde van de parameter (de waarde van Sleutel) in URL direct bij te werken zoals aangetoond in [ stap 2 ](#preview-and-publish-template-and-copy-template-deliver-url) van **Voorproef en publiceer** sectie.
 1. Gebruik deze URL voor snelle verkoop van uw producten of services. U kunt deze URL delen met uw klanten of deze integreren in uw website of een andere downstreamtoepassing van derden om de banner weer te geven en er realtime updates voor uit te voeren die de lopende aanbiedingen weerspiegelen.
-
-Leer hoe u in deze video stap voor stap een [!DNL Dynamic Media] -sjabloon maakt.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Updates in real time van de sjabloon maken via de URL{#update-the-template-from-the-url}
 
