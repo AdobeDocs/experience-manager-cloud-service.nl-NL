@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -703,12 +703,7 @@ Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject 
 
 #### RTF {#rich-text}
 
-RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd. Er zijn aanvullende validatietypen.
-
-| Validatietype | Type waarde | Beschrijving | Vereist |
-|---|---|---|---|
-| `maxSize` | `number` | Maximum aantal toegestane tekens | Nee |
-| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `maxSize` wordt overschreden | Nee |
+RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd. Er zijn aanvu
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB  Steekproef 2 ]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
