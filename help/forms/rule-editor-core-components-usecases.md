@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1550'
 ht-degree: 0%
@@ -31,7 +31,8 @@ U kunt een regel maken op de knop `Next` om het eerste deelvenster te valideren:
 
 Wanneer u de **Volgende** knoop klikt, wordt het **Persoonlijke paneel van de Informatie** bevestigd. Als de ingevoerde details correct zijn, verschuift de nadruk naar het **paneel van de Veiligheid van de Rekening**; anders, veroorzaakt een foutenmelding u om de ontbrekende details in te vullen.
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## Navigeren tussen deelvensters met een knop
 
