@@ -3,20 +3,15 @@ title: Upgrade uw inhoudsfragmenten voor UUID-verwijzingen
 description: Leer hoe u de inhoudsfragmenten kunt upgraden voor geoptimaliseerde UUID-verwijzingen in Adobe Experience Manager as a Cloud Service voor het leveren van inhoud zonder kop.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
 
 # Upgrade uw inhoudsfragmenten voor UUID-verwijzingen {#upgrade-content-fragments-for-UUID-references}
-
->[!IMPORTANT]
->
->Verschillende functies van de GraphQL API voor gebruik met inhoudsfragmenten zijn beschikbaar via het programma Vroege adopter.
->
->Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Om de stabiliteit van uw filters van GraphQL te optimaliseren, kunt u de inhoud en fragmentverwijzingen in uw Inhoudsfragmenten bevorderen zodat zij universeel unieke herkenningstekens (UUID) gebruiken.
 
@@ -122,12 +117,12 @@ De inhoudsupgrade kan worden beheerd met behulp van het eindpunt: `/libs/dam/cfm
 | action | `start` | |
 | serviceTypeId | `uuidUpgradeService` | De service type-id (vooraf gedefinieerde, vaste waarde). |
 |  segmentSize | `1000` | Het aantal Inhoudsfragmenten of -modellen dat in één segment (batch) wordt bijgewerkt. |
-| basePath | `/conf` | Geef een van de volgende instellingen op:<ul><li>de basis `/conf` om alle AEM configuraties te upgraden</li><li>een geselecteerd AEM configuratiepad. waarvoor de inhoudsupgrade wordt uitgevoerd <br> Bijvoorbeeld: `/conf/wknd-shared` bevordert slechts één enkele huurder `wknd-shared`</li></ul> |
+| basePath | `/conf` | Geef een van de volgende instellingen op:<ul><li>de basis `/conf` om alle AEM-configuraties te upgraden</li><li>een geselecteerd AEM-configuratiepad. waarvoor de inhoudsupgrade wordt uitgevoerd <br> Bijvoorbeeld: `/conf/wknd-shared` bevordert slechts één enkele huurder `wknd-shared`</li></ul> |
 | interval | `10` | Interval in seconden, waarna het volgende segment van Inhoudsfragmenten, of modellen wordt bevorderd. |
-| mode | `replicate`, `noReplicate` | <ul><li>`replicate`: dezelfde taak wordt op alle AEM Publish-instanties uitgevoerd</li><li>`noReplicate`: voert de taak alleen uit op AEM auteur-instanties</li></ul> |
+| mode | `replicate`, `noReplicate` | <ul><li>`replicate`: dezelfde taak wordt op alle publicatie-instanties van AEM overgenomen</li><li>`noReplicate`: voert de taak alleen uit op instanties van AEM Author</li></ul> |
 | dryRun |  `true`, `false` | <ul><li>`false`: de upgrade van de inhoud simuleren, zonder wijzigingen in de inhoud op te slaan</li><li>`true`: voer de upgrade van de inhoud uit en sla wijzigingen in de inhoud op</li></ul> |
 | **Details van de Reactie** | **Waarde** | |
-| jobId | `UUID` |  De id van de taak die de upgrade van de inhoud uitvoert.<ul><li>Deze identiteitskaart wordt vereist in om het even welke verdere vraag met betrekking tot deze uitvoering.</li><li>Als de `mode` -waarde is ingesteld op `replicate` , moet de uitvoering op AEM Publish-instanties zich ook onder dezelfde `jobId` bevinden.</li></ul> |
+| jobId | `UUID` |  De id van de taak die de upgrade van de inhoud uitvoert.<ul><li>Deze identiteitskaart wordt vereist in om het even welke verdere vraag met betrekking tot deze uitvoering.</li><li>Als de `mode` -waarde is ingesteld op `replicate` , moet de uitvoering in AEM Publish-instanties ook onder dezelfde `jobId` staan.</li></ul> |
 | parameters | De parameters voor het upgraden van de inhoud | Deze omvatten de aanvankelijke parameters die worden verstrekt om de inhoudsupgrade te beginnen, en sommige interne gebreken. |
 
 
@@ -267,7 +262,7 @@ Content-Length: 1116
 
 +++Voorbeeld van logbestanden
 
-Naast het statuut van een lopende inhoudsupgrade die van het eindpunt van HTTP wordt verkregen, verstrekken AEM logboeken gedetailleerde informatie over de vooruitgang op het inhoudsniveau. Bijvoorbeeld:
+Naast de status van een actieve inhoudsupgrade die wordt verkregen van het HTTP-eindpunt, bieden AEM-logboeken gedetailleerde informatie over de voortgang op het inhoudsniveau. Bijvoorbeeld:
 
 ```xml
 #Successful model upgrade

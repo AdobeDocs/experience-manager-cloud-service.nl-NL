@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,6 @@ ht-degree: 1%
 Door gebrek, stelt de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) van Adobe Experience Manager as a Cloud Service uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) voor.
 
 Nochtans, kunt u, alle andere soorten **Assets** in deze **Console van de Fragmenten van de Inhoud ook bekijken en beheren**.
-
->[!IMPORTANT]
->
->Verschillende functies van de Content Fragment Console zijn beschikbaar via het programma Vroege adopter.
->
->Om de status te zien, en hoe te om toe te passen als u geinteresseerd bent, controleer de [ Nota&#39;s van de Versie ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
