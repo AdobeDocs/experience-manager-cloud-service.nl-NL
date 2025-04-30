@@ -4,9 +4,9 @@ description: In dit artikel wordt uitgelegd hoe u Adaptive Forms kunt maken door
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard wordt geopend.
 1. In het **Source** lusje, selecteer a **Gebaseerde malplaatje van de Component van de Kern** en a **thema**, wordt de **[!UICONTROL Create]** knoop toegelaten.:
 
-![ Gebaseerde malplaatje van de Component van de Kern ](/help/forms/assets/core-component-based-template.png)
+   ![ Gebaseerde malplaatje van de Component van de Kern ](/help/forms/assets/core-component-based-template.png)
 
 1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
 1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
 1. Klik **[!UICONTROL Create]** en de **Create 2} tovenaar van de Vorm {verschijnt voor:**
    1. Specificeer de **Naam** en **Titel**.
-   2. Specificeer de plaats in het **gebied van de Weg** waar de Aangepaste Vorm moet worden bewaard.
+   1. Specificeer de plaats in het **gebied van de Weg** waar de Aangepaste Vorm moet worden bewaard.
 
    ![ creeer de Tovenaar van de Vorm ](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Om een AanpassingsVorm op Edge Delivery Services te publiceren, moet u [ een Con
 Voer de volgende stappen uit om de Edge Delivery Services-configuratie te maken:
 
 >[!BEGINTABS]
->[!TAB  voor gecreeerde vormen gebruikend het op Edge Delivery Services-Gebaseerde malplaatje ]
+>[!TAB  op Edge Delivery Services-Gebaseerde malplaatje ]
 
 
 De Edge Delivery Services-configuratie voor formulieren op basis van de Edge Delivery Services-sjabloon wordt automatisch gemaakt in de configuratiecontainer van het formulier.
 
 ![ Configuratie van Edge Delivery Services ](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB  voor vormen die gebruikend het op component-Gebaseerde malplaatje van de Kern worden gecreeerd ]
+>[!TAB  Component-based malplaatje van de Kern ]
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Edge Delivery Services Configuration]** op de AEM Forms as a Cloud Service-auteurinstantie.
 
    ![ Uitgezochte Configuratie van Edge Delivery Services ](/help/edge/assets/select-eds-conf.png)
 
-1. Selecteer de map met de naam van het formulier. Als het formulier bijvoorbeeld `enrollment-form` heet, kiest u de map `forms/enrollment-form` en klikt u op **[!UICONTROL Create]** > **[!UICONTROL Configuration]** :
+2. Selecteer de map met de naam van het formulier. Als het formulier bijvoorbeeld `enrollment-form` heet, kiest u de map `forms/enrollment-form` en klikt u op **[!UICONTROL Create]** > **[!UICONTROL Configuration]** :
 
    ![ Configuratie van Edge Delivery Services ](/help/forms/assets/create-eds-conf.png)
 
-1. Klik op **[!UICONTROL Edge Delivery Services Configuration]** en klik op **[!UICONTROL Properties]** om de eigenschappen te openen:
+3. Klik op **[!UICONTROL Edge Delivery Services Configuration]** en klik op **[!UICONTROL Properties]** om de eigenschappen te openen:
 
    ![ creeerde automatisch configuratie ](/help/forms/assets/eds-conf.png)
 
    De Edge Delivery Services-configuratie wordt weergegeven.
 
-1. Geef het volgende op in de Edge Delivery Services-configuratie:
+4. Geef het volgende op in de Edge Delivery Services-configuratie:
 
    * **Organisatie**: Specificeer uw GitHub organisatienaam.
 
@@ -206,7 +206,7 @@ De Edge Delivery Services-configuratie voor formulieren op basis van de Edge Del
    * **(Optioneel) Edge-host** : laat de optie Edge-host ongewijzigd. Het formulier wordt gepubliceerd naar zowel een voorbeeldomgeving (.page) als een live-omgeving (.live).
    * **(Facultatief) Token van de Authentificatie van de Plaats**: Gebruik het Token van de Authentificatie van de Plaats om verzoeken tussen uw AEM instantie en Edge Delivery Services veilig voor authentiek te verklaren.
 
-1. Klik op **[!UICONTROL Save and Close]**. De configuratie wordt gemaakt.
+5. Klik op **[!UICONTROL Save and Close]**. De configuratie wordt gemaakt.
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Als u het formulier wilt openen op Edge Delivery Services, moet u het formulier 
 In de onderstaande schermafbeeldingen worden URL&#39;s van gefaseerde en live formulieren vergeleken met visuele voorvertoningen voor formulieren die zijn gemaakt met op Edge Delivery Services gebaseerde en op Core Component gebaseerde sjablonen:
 
 >[!BEGINTABS]
->[!TAB  Toegang hebbend tot vormen die gebruikend op Edge Delivery Services-Gebaseerd Malplaatje ] worden gecreeerd
+>[!TAB  op Edge Delivery Services-Gebaseerde Malplaatje ]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ In de onderstaande schermafbeeldingen worden URL&#39;s van gefaseerde en live fo
     </tbody>
   </table>
 
->[!TAB  Toegang hebbend tot tot vormen die gebruikend Op componenten-Gebaseerd Malplaatje van de Kern worden gecreeerd ]
+>[!TAB  Component-based Malplaatje van de Kern ]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
