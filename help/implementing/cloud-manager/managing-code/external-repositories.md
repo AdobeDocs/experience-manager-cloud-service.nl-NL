@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Vroege adoptie" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Mana
 
 ## Een externe opslagplaats configureren
 
-De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie stappen:
+De configuratie van een externe opslagplaats in Cloud Manager bestaat uit de volgende stappen:
 
 1. [ voeg een externe bewaarplaats ](#add-external-repo) aan een geselecteerd programma toe.
 1. Geef een toegangstoken aan de externe opslagplaats.
