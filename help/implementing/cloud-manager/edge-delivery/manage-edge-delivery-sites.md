@@ -4,9 +4,9 @@ description: Leer hoe u een CDN-configuratie toevoegt aan een Edge Delivery-site
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: f8135fea6cb1e43ec27a250d4664b12fa577ed4b
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Zie [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations
 
 ## De naam van een Edge Delivery-site wijzigen (#rename-edge-delivery-site)
 
-In Adobe Cloud Manager kunt u de naam van een Edge Delivery-site op verschillende manieren wijzigen:
+In Adobe Cloud Manager wilt u de naam van een Edge Delivery-site mogelijk wijzigen om verschillende redenen:
 
 * **Duidelijkheid en organisatie**: Om het doel van de plaats of zijn bijbehorende milieu (bijvoorbeeld, productie, het opvoeren) beter te beschrijven.
 * **vermijdend verwarring**: Als de veelvoudige plaatsen in gebruik zijn, kan het anders noemen helpen tussen hen gemakkelijk onderscheiden, die de kans verminderen om configuraties of updates op de verkeerde plaats toe te passen.
@@ -44,7 +44,7 @@ In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectru
 
 ## Een Edge Delivery-site verwijderen {#delete-edge-delivery-site}
 
-Als u een plaats van Edge Delivery Services schrapt, worden om het even welke bijbehorende configuraties CDN ook verwijderd. Met deze actie wordt de verbinding tussen aangepaste domeinen en de site verbroken. Zie CDN-configuraties voor meer informatie. <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
+Als u een Edge Delivery Services-site verwijdert, worden alle gekoppelde CDN-configuraties ook verwijderd. Met deze actie wordt de verbinding tussen aangepaste domeinen en de site verbroken. Zie CDN-configuraties voor meer informatie. <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
 
 **om een plaats van Edge Delivery te schrappen:**
 
@@ -61,6 +61,109 @@ Klik ![ het plaatspictogram van Edge Delivery van de Schrapping ](https://spectr
 In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt verwijderen. Klik ![ het plaatspictogram van Edge Delivery van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
 
      ![ voeg de Plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+## Een Edge Delivery-site beheren tussen Helix 4 en Helix 5
+
+Gebruik het API-eindpunt van `/program/{programId}/site/{siteId}` om een Edge Delivery-site tussen Helix 4 en Helix 5 te migreren.
+
+CDN-configuraties voor Helix 4-websites kunnen niet automatisch worden gemigreerd naar Helix 5. Deze beperking bestaat omdat de plaatsen van de klantenproductie op Helix 4 nog kunnen lopen, terwijl hun Helix 5 versies nog in ontwikkeling zijn.
+
+**Eerste vereisten**
+
+* De instructie `sitename` moet al bestaan.
+* Weet de juiste waarden voor `branchName` , Helix `version` en `repo` .
+* Migratie wijzigt alleen `branchName`, Helix `version` en `repo` . Het veld Eigenaar kan niet worden gewijzigd.
+
+**API formaat**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**de lichaamsparameters van het Verzoek**
+Maakt een overschrijving voor een Edge Delivery-site om de oorsprong af te dwingen die is opgegeven in de aanvraaginstantie.
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### Voorbeeld 1: Migreren naar Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**Resultaat van Oorsprong URL**
+Retourneert een Edge Delivery-site met de volgende oorspronkelijke URL:
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### Voorbeeld 2: Migreren naar Helix 4
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**Resultaat van Oorsprong URL**
+Retourneert een Edge Delivery-site met de volgende oorspronkelijke URL:
+
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### Voorbeeld 3: Opnieuw te plaatsen site migreren naar Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**Resultaat van Oorsprong URL**
+Retourneert een Edge Delivery-site met de volgende oorspronkelijke URL:
+
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
