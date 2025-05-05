@@ -101,7 +101,7 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
    * **Model van de Vorm**: Afhankelijk van het vormmodel voor de Aangepaste Vorm, toont dit gebied het **Schema van XML**, **Malplaatje van de Vorm**, of **niets**. Het is een niet-bewerkbaar veld.
 
    * **Basis van het Model van het Fragment**: Verschijnt slechts in op XSD-Gebaseerde Aangepaste Forms. Hiermee geeft u de basis voor het fragmentmodel op. U kunt **kiezen/** of het complexe type XSD van drop-down. U kunt het fragment alleen opnieuw gebruiken in een ander adaptief formulier als u het complexe type selecteert als hoofdknooppunt van het fragmentmodel.
-Als u **** als hoofdmap van het fragmentmodel kiest, is de volledige XSD-structuur van het basismodel zichtbaar op het tabblad Adaptief gegevensmodel van formulier. Voor een complexe hoofdmap van een fragmentmodel zijn alleen de onderliggende elementen van het geselecteerde complexe type zichtbaar op het tabblad Adaptief formuliergegevensmodel.
+Als u **&#x200B;**&#x200B;als hoofdmap van het fragmentmodel kiest, is de volledige XSD-structuur van het basismodel zichtbaar op het tabblad Adaptief gegevensmodel van formulier. Voor een complexe hoofdmap van een fragmentmodel zijn alleen de onderliggende elementen van het geselecteerde complexe type zichtbaar op het tabblad Adaptief formuliergegevensmodel.
 
    * **XSD Ref**: Verschijnt slechts in op XSD-Gebaseerde Aanpassings Forms. De locatie van het XML-schema wordt weergegeven.
 

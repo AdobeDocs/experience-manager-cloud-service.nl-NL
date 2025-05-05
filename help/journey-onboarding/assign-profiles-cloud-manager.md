@@ -91,7 +91,7 @@ U bent nu bereid om gebruikers toe te voegen en hen toe te wijzen aan het **Bedr
 
 1. Identificeer de gebruikers die Cloud Manager-programma&#39;s moeten beheren. Dit zijn uw **Bedrijfseigenaars**.
 
-1. Logon aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2} pagina van het Overzicht {, uitgezocht** Adobe Experience Manager as a Cloud Service **product van** Producten en de diensten **kaart.**
+1. Logon aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2&rbrace; pagina van het Overzicht &lbrace;, uitgezocht** Adobe Experience Manager as a Cloud Service **product van** Producten en de diensten **kaart.**
 
    ![ Producten en de diensten ](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -122,7 +122,7 @@ Uw **BedrijfsEigenaar** is toegewezen en kan tot Cloud Manager nu toegang hebben
 
 1. Identificeer de gebruiker(s) die code moet opstellen.
 
-1. Login aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2} pagina van het Overzicht {uitgezocht 3} Adobe Experience Manager as a Cloud Service** product van de **Producten en de diensten** kaart.****
+1. Login aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2&rbrace; pagina van het Overzicht {uitgezocht 3} Adobe Experience Manager as a Cloud Service** product van de **Producten en de diensten** kaart.**&#x200B;**
 
    ![ Producten en de diensten ](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -140,13 +140,13 @@ Uw **BedrijfsEigenaar** is toegewezen en kan tot Cloud Manager nu toegang hebben
 
    ![ wijs profiel ](/help/journey-onboarding/assets/assign-team6.png) toe
 
-Uw **Manager van de Plaatsing** is toegewezen en kan tot Cloud Manager nu toegang hebben. Afhankelijk van uw toekomstige verantwoordelijkheden, kunt u of kan niet nodig ook om zich als systeembeheerder aan het **profiel van de Manager van de Plaatsing toe te wijzen 0}.**
+Uw **Manager van de Plaatsing** is toegewezen en kan tot Cloud Manager nu toegang hebben. Afhankelijk van uw toekomstige verantwoordelijkheden, kunt u of kan niet nodig ook om zich als systeembeheerder aan het **profiel van de Manager van de Plaatsing toe te wijzen 0&rbrace;.**
 
 ## Het productprofiel voor ontwikkelaars toewijzen {#assign-developer}
 
 1. Identificeer de gebruiker(s) die AEM toepassingen moet ontwikkelen en code moet beheren.
 
-1. Login aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2} pagina van het Overzicht {uitgezocht 3} Adobe Experience Manager as a Cloud Service** product van de **Producten en de diensten** kaart.****
+1. Login aan de Admin Console bij `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **2&rbrace; pagina van het Overzicht {uitgezocht 3} Adobe Experience Manager as a Cloud Service** product van de **Producten en de diensten** kaart.**&#x200B;**
 
    ![ Producten en de diensten ](/help/journey-onboarding/assets/assign-team1.png)
 

@@ -67,7 +67,7 @@ Het formulier toevoegen aan uw webpagina:
 
 1. Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw `[AEM Edge Delivery project directory]` .
 
-1. Open een documentbestand waarin u het formulier wilt insluiten. Bijvoorbeeld, kunt u het {](/help/edge/assets/enquiry-form.docx) dossier openen 0} vraag-form.docx, of anders, tot een nieuw document leiden.[
+1. Open een documentbestand waarin u het formulier wilt insluiten. Bijvoorbeeld, kunt u het {[&#128279;](/help/edge/assets/enquiry-form.docx) dossier openen 0} vraag-form.docx, of anders, tot een nieuw document leiden.
 
 1. Bepaal de gewenste sectie in het document waar u het formulier wilt invoegen en navigeer naar de gewenste sectie.
 

@@ -104,7 +104,7 @@ Voeg indien nodig codes toe.
 >
 >Daarom is de geadviseerde optie het Fragmenten van de Ervaring te gebruiken, niet deze optie.
 
-Voor klanten met reeds bestaande erfenisaanbiedingen, zijn de **opties van het Malplaatje van de Aanbieding van het 0} Gebruik zichtbaar wanneer het richten van componenten die** niet **de Fragmenten van de Ervaring zijn:**
+Voor klanten met reeds bestaande erfenisaanbiedingen, zijn de **opties van het Malplaatje van de Aanbieding van het 0&rbrace; Gebruik zichtbaar wanneer het richten van componenten die** niet **de Fragmenten van de Ervaring zijn:**
 
 ![ Bekeerling in de dialoog van de Variatie van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
@@ -116,7 +116,7 @@ Voor klanten met reeds bestaande erfenisaanbiedingen, zijn de **opties van het M
 >
 >Je hebt wat tijd om je voor te bereiden. Zie hoe te [ uw bestaande erfenisaanbiedingen in een aanbieding van het ervaringsfragment omzetten ](#convert-legacy-offer-to-experience-fragment).
 
-Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen ](/help/sites-cloud/authoring/personalization/targeted-content.md) kunt [ gebruiken. Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
+Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen [&#128279;](/help/sites-cloud/authoring/personalization/targeted-content.md) kunt  gebruiken. Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
 
 * Maak het aanbod eenmaal in de bibliotheek en gebruik het in meerdere ervaringen met uw merkactiviteiten.
 * Wijzig de aanbieding in de bibliotheek en de wijziging is van invloed op alle ervaringen die er gebruik van maken.
@@ -165,7 +165,7 @@ Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 
    ![ Creërend aanbiedingsomslag ](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Selecteer het **malplaatje van de Pagina van 0} Aanbieding {en selecteer dan** daarna **.**
+1. Selecteer het **malplaatje van de Pagina van 0&rbrace; Aanbieding &lbrace;en selecteer dan** daarna **.**
 1. Typ een titel voor de aanbieding en selecteer of typ naar keuze één of meerdere markeringen aan vennoot met de aanbieding, dan uitgezocht **creeer**.
 1. In de bevestigingsdialoogdoos, om de aanbieding voor het uitgeven te openen uitgezochte **Open Pagina**.
 
@@ -192,7 +192,7 @@ U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibli
 1. Als de aanbieding in een of meer ervaringen wordt gebruikt, verschijnt er een dialoogvenster waarin wordt aangegeven dat naar de aanbieding wordt verwezen:
 
    * Om de aanbieding te schrappen en het uit de ervaringen te verwijderen, uitgezochte **Schrapping** dwingen.
-   * Om de aanbieding te houden, annuleert de uitgezochte ****.
+   * Om de aanbieding te houden, annuleert de uitgezochte **&#x200B;**.
 
 ### Zoeken naar voorstellen {#searching-for-offers}
 

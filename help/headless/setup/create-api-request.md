@@ -39,7 +39,7 @@ Voordat de GraphQL API&#39;s kunnen worden gebruikt, moet een GraphQL-eindpunt w
    * **Naam**: naam van het eindpunt; u kunt om het even welke tekst ingaan.
    * **schema van GraphQL van het Gebruik door** wordt verstrekt: gebruik de drop-down lijst om de vereiste configuratie te selecteren die.
 1. Bevestig met **creeer**.
-1. In de console, wordt de Weg van a **** getoond gebaseerd op de eerder gemaakte configuratie. Dit pad wordt gebruikt om GraphQL-query&#39;s uit te voeren.
+1. In de console, wordt de Weg van a **&#x200B;**&#x200B;getoond gebaseerd op de eerder gemaakte configuratie. Dit pad wordt gebruikt om GraphQL-query&#39;s uit te voeren.
 
    ```
    /content/cq:graphql/<configuration-name>/endpoint

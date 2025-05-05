@@ -55,8 +55,10 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
 
 1. De Cloud Service configureren:
    1. Op uw de auteursinstantie van AEM, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en klik **[!UICONTROL Turnstile]**.
+
       ![ Turnstile in ui ](assets/turnstile-in-ui.png)
    1. Selecteer een configuratiecontainer, gecreeerd of bijgewerkt, zoals die in de vorige sectie wordt beschreven. Selecteer **[!UICONTROL Create]** .
+
       ![ Turnstile van de Configuratie ](assets/config-hcaptcha.png)
    1. Geef **[!UICONTROL Widget Type]** op als beheerd, niet-interactief of onzichtbaar. Meer over het Type van Widget, bezoek [ Veranderlijke Widget ](https://developers.cloudflare.com/turnstile/concepts/widget/).
    1. Specificeer **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de dienst van de Draai [ in de voorwaarde wordt verkregen die ](#prerequisite).

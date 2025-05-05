@@ -53,7 +53,7 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-features}
 
-* **Bulk de invoeractiva van Gegevensbron OneDrive**: De beheerders hebben nu de capaciteit om groot aantal activa van OneDrive in AEM Assets ](/help/assets/bulk-import-assets-view.md#onedrive-developer-application) in te voeren. [ Tot de bijgewerkte lijst voor de ondersteunde gegevensbronnen voor bulkimport behoren Azure, AWS, Google Cloud, Dropbox en OneDrive.
+* **Bulk de invoeractiva van Gegevensbron OneDrive**: De beheerders hebben nu de capaciteit om groot aantal activa van OneDrive in AEM Assets [&#128279;](/help/assets/bulk-import-assets-view.md#onedrive-developer-application) in te voeren.  Tot de bijgewerkte lijst voor de ondersteunde gegevensbronnen voor bulkimport behoren Azure, AWS, Google Cloud, Dropbox en OneDrive.
 
   ![ wijs meta-gegevensvorm aan een omslag ](/help/assets/assets/bulk-import-source-details-onedrive.png) toe
 

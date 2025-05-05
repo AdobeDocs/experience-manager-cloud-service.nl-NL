@@ -109,7 +109,7 @@ De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer 
 
 **Responsief gedrag:** het werk van Accordeons in het bijzonder goed op mobiele apparaten aangezien zij natuurlijk verticale ruimte door slechts de uitgebreide inhoudssectie te tonen besparen, die hen ideaal maken voor kleinere schermen.
 
-U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) artikel van de component 0} accordeon {.[
+U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) artikel van de component 0&rbrace; accordeon &lbrace;.
 
 ### Hoe te om de juiste lay-out te kiezen?
 
@@ -120,7 +120,7 @@ Het is belangrijk om de juiste indeling te selecteren voor een optimale gebruike
 | **Doel** | Hiermee groepeert u gerelateerde inhoud in afzonderlijke secties | Hiermee worden gebruikers door een proces of formulier met meerdere stappen geleid | Inhoud indelen in inklapbare secties |
 | **Structuur** | Afzonderlijke secties | Opeenvolgende stappen/pagina&#39;s | Inklapbare deelvensters/secties |
 | **Navigatie** | Klik op de kopteksten van het deelvenster om te navigeren | - Voorwaarts: &quot;Volgende&quot;knoop <br> - Achteruit: &quot;Achtergrond&quot;knoop <br> - Facultatieve het overslaan stappen | Klik op kopteksten om secties uit te vouwen/samen te vouwen |
-| **Ervaring van 0} Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Compacte weergave met uitgevouwen/samengevouwen secties |
+| **Ervaring van 0&rbrace; Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Compacte weergave met uitgevouwen/samengevouwen secties |
 | **Geval van het Gebruik** | Complexe formulieren met gecategoriseerde secties | Installatieprocessen, complexe formulieren | Veelgestelde vragen, instellingenmenu&#39;s, gedetailleerde inhoudssecties |
 | **Best voor mobiel** | Modern - panelen worden verticaal gestapeld | Goed - alleen de huidige stap wordt actief | Uitstekend - ruimte met inklapbare gedeelten behouden |
 

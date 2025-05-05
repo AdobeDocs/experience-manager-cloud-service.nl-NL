@@ -71,7 +71,7 @@ Als de Content Fragment Selector is ingesteld en geverifieerd voor gebruik van d
 
 ![ de Selector van het Fragment van de Inhoud ](/help/headless/assets/content-fragment-selector-using.png)
 
-* Met de **1} selecteur van de Bewaarplaats {bij het hoogste recht, kunt u de bewaarplaats selecteren u wilt gebruiken**
+* Met de **1&rbrace; selecteur van de Bewaarplaats &lbrace;bij het hoogste recht, kunt u de bewaarplaats selecteren u wilt gebruiken**
 * In het linkerdeelvenster kunt u:
    * Mappen verbergen of weergeven in de geselecteerde opslagplaats
    * Selecteer een specifieke map om inhoudsfragmenten in die map weer te geven

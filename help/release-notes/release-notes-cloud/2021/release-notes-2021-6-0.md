@@ -68,7 +68,7 @@ De volgende release is gepland voor 15 juli 2021.
 
   ![ de milieu&#39;s van Dispatcher ](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Zie {de Indexen van Oak van het Activa van 10} Douane DAM ](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) voor meer details.[
+* Er is een nieuwe code kwaliteitsregel toegevoegd om de structuur van `damAssetLucene` indexen te valideren. Zie {de Indexen van Oak van het Activa van 10} Douane DAM [&#128279;](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) voor meer details.
 
 * De pagina met omgevingsdetails geeft nu meerdere domeinnamen weer voor Publish en de voorvertoningsservices (indien van toepassing). Zie [ Details van het Milieu ](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) aan meer details.
 
@@ -155,7 +155,7 @@ De Releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 ### Wat is er nieuw? {#what-is-new-screens-june}
 
 >[!NOTE]
->Zie {de as a Cloud Service 1} Gids van 0} AEM Screens voor stitionele kennis die voor met succes wordt vereist het installeren, het vormen, en het runnen van as a Cloud Service verbinding van Screens uit aan gedetailleerde concepten technische documentatie.[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)
+>Zie {de as a Cloud Service 1} Gids van 0&rbrace; AEM Screens voor stitionele kennis die voor met succes wordt vereist het installeren, het vormen, en het runnen van as a Cloud Service verbinding van Screens uit aan gedetailleerde concepten technische documentatie.[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)
 
 * Bulk Device Registration Management betekent dat het provisioning van enorme hoeveelheden spelerapparaten sneller en efficiënter verloopt.
 

@@ -32,7 +32,7 @@ U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden t
 
 ## Padbrowser {#path-browser}
 
-De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**3} console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), die voor meer gedetailleerde selectie van middelen toestaat.**
+De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**3&rbrace; console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), die voor meer gedetailleerde selectie van middelen toestaat.**
 
 ![ Browser van de Weg ](/help/sites-cloud/authoring/assets/path-browser.png)
 

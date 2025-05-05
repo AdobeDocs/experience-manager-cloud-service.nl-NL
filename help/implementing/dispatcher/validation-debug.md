@@ -324,7 +324,7 @@ Uw ingeschakelde landbouwbedrijven zouden in bovengenoemde subfolder moeten zijn
 
 **inbegrepen Dossier (...) moet worden genoemd: ...**
 
-Er zijn twee secties in uw landbouwbedrijfconfiguratie die **** moet omvatten
+Er zijn twee secties in uw landbouwbedrijfconfiguratie die **&#x200B;**&#x200B;moet omvatten
 specifiek bestand: `/renders` en `/allowedClients` in de sectie `/cache` . Die
 de secties moeten er als volgt uitzien:
 

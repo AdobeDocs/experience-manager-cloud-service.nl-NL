@@ -23,7 +23,7 @@ Begin hier voor een snelle, high-level gids om u te krijgen begonnen inhoud te o
 
 ## Het begint allemaal in de console van Plaatsen. {#sites-console}
 
-Of u nieuwe inhoud wilt creëren of uw bestaande inhoud bekijken en beheren, is het centrale overzicht voor u de **console van de Plaatsen** {.
+Of u nieuwe inhoud wilt creëren of uw bestaande inhoud bekijken en beheren, is het centrale overzicht voor u de **console van de Plaatsen** &lbrace;.
 
 Wanneer u zich voor het eerst aanmeldt bij AEM, arriveert u op het algemene navigatiescherm. Tik of klik eenvoudig **Plaatsen** om de **console van Plaatsen** te openen.
 
@@ -37,7 +37,7 @@ Zodra in de **console van Plaatsen**, is uw inhoud eenvoudig te navigeren en in 
 
 ## Weergaven {#views}
 
-Door gebrek opent de **console van de Plaatsen** {in **Kolom** mening. Elk hiërarchisch niveau wordt weergegeven als een kolom, die zichzelf goed leent voor op het web gebaseerde, hiërarchisch geordende inhoud.
+Door gebrek opent de **console van de Plaatsen** &lbrace;in **Kolom** mening. Elk hiërarchisch niveau wordt weergegeven als een kolom, die zichzelf goed leent voor op het web gebaseerde, hiërarchisch geordende inhoud.
 
 ![ mening van Kolommen ](assets/getting-started-column-view.png)
 

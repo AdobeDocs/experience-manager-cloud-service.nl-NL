@@ -22,7 +22,7 @@ De console van Activiteiten laat u toe om, de marketing [ activiteiten ](/help/s
 
 >[!TIP]
 >
->Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten ](#viewing-performance-and-converting-winning-experiences-a-b-test) ook [ bekijken. Als u A/B het testen gebruikt, kunt u [ winnaars ](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
+>Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten [&#128279;](#viewing-performance-and-converting-winning-experiences-a-b-test) ook  bekijken. Als u A/B het testen gebruikt, kunt u [ winnaars ](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
 
 Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om uw activiteiten te structureren. U navigeert aan de console van Activiteiten door **Personalization** te tikken of te klikken en **Activiteiten** te tikken/te klikken.
 
@@ -65,7 +65,7 @@ Wanneer u een merk gebruikend de console van Activiteiten creeert, verschijnt he
 
    ![ het navigeren aan activiteiten ](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. In de console van Activiteiten, creeer de uitgezochte **** toen **merk** creëren.
+1. In de console van Activiteiten, creeer de uitgezochte **&#x200B;**&#x200B;toen **merk** creëren.
 1. Selecteer het merkmalplaatje en selecteer **daarna**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles Activiteiten en Aanbiedingen. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
 1. Selecteer **Maken**. Uw merk wordt weergegeven in de Activiteitenconsole.

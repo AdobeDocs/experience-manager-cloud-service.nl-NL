@@ -64,7 +64,7 @@ U ziet een nieuwe zandbakprogrammakaart op de landingspagina met een statusindic
 
 ![ zandbak verwezenlijking van overzichtspagina ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-Zodra het programma volledig is, kunnen de leden van uw organisatie die aan het **productprofiel van de 1} ontwikkelaar** wordt toegewezen zich bij Cloud Manager aanmelden en de bewaarplaatsen van de it van Cloud Manager beheren.
+Zodra het programma volledig is, kunnen de leden van uw organisatie die aan het **productprofiel van de 1&rbrace; ontwikkelaar** wordt toegewezen zich bij Cloud Manager aanmelden en de bewaarplaatsen van de it van Cloud Manager beheren.
 
 ## Wat nu? {#whats-next}
 

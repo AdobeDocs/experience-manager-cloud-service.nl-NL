@@ -54,7 +54,7 @@ U kunt [ toegang tot Variaties ](/help/generative-ai/generate-variations-integra
 
 ## Bekende problemen {#known-issues}
 
-* Voor kwesties met douaneherinneringen wanneer het bewegen van een vroegere versie zie {de herinneringen van de Douane in v2.0.0 ](/help/generative-ai/generate-variations.md#custom-prompts-v200)[
+* Voor kwesties met douaneherinneringen wanneer het bewegen van een vroegere versie zie &lbrace;de herinneringen van de Douane in v2.0.0 [&#128279;](/help/generative-ai/generate-variations.md#custom-prompts-v200)
 
 ## Eerdere releases {#previous-releases}
 

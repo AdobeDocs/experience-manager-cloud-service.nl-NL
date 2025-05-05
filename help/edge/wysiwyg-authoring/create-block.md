@@ -172,7 +172,7 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
    * Het **voegt** pictogram toe is een plus symbool.
    * U weet dat u een sectie hebt geselecteerd als het blauwe overzicht van het geselecteerde voorwerp een lusje genoemd **Sectie** heeft.
-   * In dit voorbeeld, selecteert het tikken of het klikken lichtjes boven de **rubriek 0} Lorem Ipsum een sectie die de rubriek en lorem ipsum tekst bevat.**
+   * In dit voorbeeld, selecteert het tikken of het klikken lichtjes boven de **rubriek 0&rbrace; Lorem Ipsum een sectie die de rubriek en lorem ipsum tekst bevat.**
 
    ![ selecteer een sectie in de Universele Redacteur ](assets/create-block/add-quote-block.png)
 
@@ -276,7 +276,7 @@ export default function decorate(block) {
 
 ![ het gestileerde citaatblok in de Universele Redacteur ](assets/create-block/quote-styled.png)
 
-8. Controleer of de wijzigingen naar de productie zijn verplaatst door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
+&#x200B;8. Controleer of de wijzigingen naar de productie zijn verplaatst door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.aem.page`
 
 ![ het gepubliceerde en gestileerde citaatblok ](assets/create-block/quote-styled-published.png)
 

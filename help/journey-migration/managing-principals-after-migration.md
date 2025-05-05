@@ -36,7 +36,7 @@ Wanneer de inhoud naar de AEM as a Cloud Service-omgeving is gemigreerd, kan de 
 
 ### Migrerende groepen
 
-Tijdens de innamefase van de migratie, worden de groepen gemigreerd als zij worden vereist om aan ACLs of het beleid van de CUG op de gemigreerde inhoud te voldoen.  Zie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0} voor meer details.[
+Tijdens de innamefase van de migratie, worden de groepen gemigreerd als zij worden vereist om aan ACLs of het beleid van de CUG op de gemigreerde inhoud te voldoen.  Zie [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0&rbrace; voor meer details.
 
 Gemigreerde groepen (die niet door de Inzameling van Assets of de verwezenlijking van de Privé Omslag worden gecreeerd — zie hieronder Inzamelingen en PrivéOmslagen) worden gevormd als groepen IMS.  Dit betekent dat elke groep met dezelfde naam die in IMS wordt gemaakt (bijvoorbeeld via de Admin Console) wordt gekoppeld aan de groep in AEM en dat gebruikers die lid zijn van de IMS-groep ook lid worden van de groep in AEM.  Om deze koppeling tot stand te brengen, moet de groep ook eerst in IMS worden gecreeerd.  Gebruik Admin Console om groepen, individueel of in bulk, in uw instantie van AEM tot stand te brengen, zoals die in [ wordt beschreven het Leiden Belangrijkste in IMS met Admin Console ](/help/journey-migration/managing-principals.md).
 

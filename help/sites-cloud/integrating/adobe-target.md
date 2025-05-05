@@ -27,7 +27,7 @@ Integreer uw AEM met Adobe Target zodat u de inhoud van uw pagina&#39;s kunt aan
 
 Voer de volgende taken uit om met Doel te integreren:
 
-* [ voer in eerste instantie vereiste taken ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html) uit: Register met Adobe Target en vorm bepaalde aspecten van de AEM auteursinstantie. Uw rekening van Adobe Target moet **het niveautoestemmingen van de goedkeuraar {op een minimum hebben.** Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
+* [ voer in eerste instantie vereiste taken ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html) uit: Register met Adobe Target en vorm bepaalde aspecten van de AEM auteursinstantie. Uw rekening van Adobe Target moet **het niveautoestemmingen van de goedkeuraar &lbrace;op een minimum hebben.** Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
 
 * Launch by Adobe is het defacto hulpmiddel om een AEM plaats met de mogelijkheden van het Doel (bibliotheken JS) van instrumenten te voorzien. Daarom gaat de integratie van AEM as a Cloud Service met Launch en Adobe Target hand in hand (zie de koppelingen hieronder).
 
@@ -47,7 +47,7 @@ Voer de volgende taken uit om met Doel te integreren:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service is de replicatieagent die aanbiedingen en activiteiten synchroniseert van AEM naar Adobe Target standaard uitgeschakeld. Contacteer het ](https://experienceleague.adobe.com/?support-solution=General#support) team van de Steun van de Adobe 0} {als u de replicatieagent moet opnieuw toelaten.[
+>In AEM as a Cloud Service is de replicatieagent die aanbiedingen en activiteiten synchroniseert van AEM naar Adobe Target standaard uitgeschakeld. Contacteer het [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support) team van de Steun van de Adobe 0&rbrace; &lbrace;als u de replicatieagent moet opnieuw toelaten.
 
 >[!NOTE]
 >

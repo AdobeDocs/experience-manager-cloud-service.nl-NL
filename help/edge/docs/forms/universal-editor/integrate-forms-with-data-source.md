@@ -64,7 +64,7 @@ Wanneer u een op een schema gebaseerd formulier maakt, wordt het automatisch gec
 
      Standaard worden alle velden van het bijbehorende JSON-schema of het formuliergegevensmodel (FDM) automatisch geselecteerd en geconverteerd naar de overeenkomstige formuliercomponenten, waardoor het ontwerpproces wordt vereenvoudigd. Met de wizard kunt u ook selectief kiezen welke velden u in het formulier wilt opnemen met selectievakjes.
 
-5. Klik **[!UICONTROL Create]** en de **creeer 2} tovenaar van de Vorm {verschijnt.**
+5. Klik **[!UICONTROL Create]** en de **creeer 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt.**
 6. Specificeer de **Naam** en **Titel**.
 7. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
    `https://github.com/wkndforms/edsforms`

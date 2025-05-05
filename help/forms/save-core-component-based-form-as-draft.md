@@ -111,7 +111,7 @@ U kunt de eigenschappen van de **Concepten &amp; Verzendingen** vormen:
    * **Uitgezochte Type**: Om op de vormlijst als ontwerp of voorgelegde vormen te wijzen. Als u **Ontwerp Forms** kiest, worden de vormen bewaard als concepten getoond. Alternatief, die **voorgelegde Forms** selecteren toont de vormen die door het programma geopende gebruikers worden voorgelegd.
    * **Lay-out**: Om de vormen van het lijstontwerp of voorgelegde vormen in het kaart of lijstformaat te tonen.
 
-   ](/help/forms/assets/save-form-as-draft-dns-properties.png) eigenschappen van het Ontwerp en van de Component van de Verzending ![
+   ![&#128279;](/help/forms/assets/save-form-as-draft-dns-properties.png) eigenschappen van het Ontwerp en van de Component van de Verzending 
 
 ## Formulieren configureren om op te slaan als concepten
 
@@ -128,7 +128,7 @@ U kunt Adaptive Forms op de volgende twee manieren configureren om deze als conc
 Om een vorm als Ontwerp te bewaren, creeer a **sparen de regel van de Vorm** op een vormcomponent, zoals een knoop. Wanneer op de knop wordt geklikt, wordt de regel geactiveerd en wordt het formulier opgeslagen als concept. Voer de volgende stappen uit om a **sparen de regel van de Vorm** op een knoopcomponent tot stand te brengen:
 
 1. Open een adaptief formulier in de bewerkingsmodus.
-1. Selecteer het **[!UICONTROL Edit Rules]** pictogram om de Redacteur van de Regel voor de **2} component van de Knoop {te openen.**
+1. Selecteer het **[!UICONTROL Edit Rules]** pictogram om de Redacteur van de Regel voor de **2&rbrace; component van de Knoop &lbrace;te openen.**
 1. Selecteer **[!UICONTROL Create]** om de regel voor knoop te vormen en tot stand te brengen.
 1. In de **[!UICONTROL When]** sectie, wordt de uitgezochte **geklikt** en in de **[!UICONTROL Then]** sectie, selecteert **sparen Vorm** optie.
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.

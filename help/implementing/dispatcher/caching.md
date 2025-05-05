@@ -26,8 +26,8 @@ Deze geheim voorgeheugenkopballen worden typisch geplaatst in de gastheerconfigu
 
 De geheim voorgeheugensleutel voor middelen CDN bevat het volledige verzoek url, met inbegrip van vraagparameters, zodat zal elke verschillende vraagparameter een verschillende geheim voorgeheugeningang veroorzaken. Overweeg het verwijderen van ongewenste vraagparameters; [ zie hieronder ](#marketing-parameters) voor het verbeteren van de verhouding van de geheim voorgeheugenhit.
 
-Oorspronkelijke reacties die `private`, `no-cache` of `no-store` in `Cache-Control` bevatten, worden niet in de cache geplaatst door de CDN van de AEM as a Cloud Service (zie [ CDN-caching uitschakelen
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) voor meer informatie).  Reacties die cookies instellen, d.w.z. een `Set-Cookie` reactie header hebben, worden niet in cache geplaatst door de CDN.
+Oorspronkelijke reacties die `private`, `no-cache` of `no-store` in `Cache-Control` bevatten, worden niet in de cache geplaatst door de CDN van de AEM as a Cloud Service (zie [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) CDN-caching uitschakelen
+ voor meer informatie).  Reacties die cookies instellen, d.w.z. een `Set-Cookie` reactie header hebben, worden niet in cache geplaatst door de CDN.
 
 ### HTML/Tekst {#html-text}
 
@@ -238,7 +238,7 @@ Nu, kunnen de beelden in blob opslag die duidelijk privé zijn niet in het voorg
 
 ### Analyse van de CDN-cachehitratio {#analyze-chr}
 
-Zie de tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) over de analyse van de [cachehitratio voor informatie over het downloaden van CDN-logboeken en het analyseren van de cache-hitratio&#39;s van uw site, met behulp van een dashboard.
+Zie de tutorial[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) over de analyse van de cachehitratio voor informatie over het downloaden van CDN-logboeken en het analyseren van de cache-hitratio&#39;s van uw site, met behulp van een dashboard.
 
 ### Gedrag van HEAD-aanvragen {#request-behavior}
 
@@ -409,7 +409,7 @@ Als u het Dispatcher-cachegeheugen wilt invalideren, kunt u het beste de handeli
 
 Bij gebruik van de SCD-actie van Auteur ziet het implementatiepatroon er als volgt uit:
 
-1. [](https://sling.apache.org/documentation/bundles/content-distribution.html)
+1. [&#128279;](https://sling.apache.org/documentation/bundles/content-distribution.html)
 
 ```
 @Reference

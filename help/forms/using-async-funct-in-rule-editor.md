@@ -57,7 +57,7 @@ In de volgende afbeelding ziet u hoe u het regeltype **[!UICONTROL Async Functio
 
 >[!NOTE]
 >
-> * De regelredacteur van een vorm toont slechts functies met een terugkeertype van `Promise` wanneer u het **Async 2} regeltype van de Vraag van de Functie {selecteert.**
+> * De regelredacteur van een vorm toont slechts functies met een terugkeertype van `Promise` wanneer u het **Async 2&rbrace; regeltype van de Vraag van de Functie &lbrace;selecteert.**
 > * Leren hoe te om een douanefunctie tot stand te brengen, verwijs naar het artikel genoemd [ creeer een Functie van de Douane voor een Aangepaste Vorm die op de Componenten van de Kern ](/help/forms/custom-function-core-component-create-function.md) wordt gebaseerd.
 
 De functie `matchOTP()` wordt geïmplementeerd als een aangepaste functie. De onderstaande code wordt toegevoegd aan het JS-bestand van de aangepaste functie:

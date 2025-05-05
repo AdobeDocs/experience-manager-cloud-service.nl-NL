@@ -45,7 +45,7 @@ De [ Redacteur van het Fragment van de Inhoud ](#opening-the-fragment-editor) ve
 >
 >In deze sectie wordt de oorspronkelijke editor beschreven.
 >
->De standaardeditor voor [ Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md) is de nieuwe redacteur, die van zowel de **3} console van de Fragmenten van de Inhoud** als de **Assets** console wordt betreden. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur.
+>De standaardeditor voor [ Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md) is de nieuwe redacteur, die van zowel de **3&rbrace; console van de Fragmenten van de Inhoud** als de **Assets** console wordt betreden. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur.
 >
 >Om de [ originele redacteur ](/help/assets/content-fragments/content-fragments-variations.md) te gebruiken, open eerst de nieuwe redacteur en deactiveer dan de **Nieuwe redacteur** schakelaar.
 >
@@ -188,7 +188,7 @@ Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
 
 Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
-{de acties van 0} Toolbar beschikbaar in diverse wijzen ](assets/cfm-managing-top-toolbar.png)![
+{de acties van 0} Toolbar beschikbaar in diverse wijzen ![&#128279;](assets/cfm-managing-top-toolbar.png)
 
 * Er wordt een bericht weergegeven wanneer er al naar het fragment wordt verwezen op een inhoudspagina. U kunt **sluiten** het bericht.
 
@@ -271,7 +271,7 @@ Terwijl het uitgeven van uw inhoudsfragment maakt AEM automatisch versies om erv
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
 3. Als de gebruiker de bewerking annuleert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
-4. Als de gebruiker **** selecteert sparen uitgeeft, blijven de bijgewerkte elementen/de variaties voortbestaan en het teken wordt verwijderd om de het uitgeven zitting te beëindigen.
+4. Als de gebruiker **&#x200B;**&#x200B;selecteert sparen uitgeeft, blijven de bijgewerkte elementen/de variaties voortbestaan en het teken wordt verwijderd om de het uitgeven zitting te beëindigen.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
@@ -363,7 +363,7 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
   Selecteer de vereiste versie, dan terugkeren **aan deze** actie van Versie.
 
-* Terwijl [ het vergelijken van een versie aan de huidige versie ](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **** aan de geselecteerde versie kunt terugkeren.
+* Terwijl [ het vergelijken van een versie aan de huidige versie ](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **&#x200B;**&#x200B;aan de geselecteerde versie kunt terugkeren.
 
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 

@@ -142,7 +142,7 @@ Net als bij het maken van andere inhoud in AEM, bestaat een tag (of naamruimte) 
 
    ![ de bevestiging van de Publish markering modaal ](assets/publish-tag.png)
 
-1. De publicatieactie wordt bevestigd met de dialoog van het Succes van a ****.
+1. De publicatieactie wordt bevestigd met de dialoog van het Succes van a **&#x200B;**.
 
    ![ de dialoog van het markeringssucces van Publish ](assets/publish-tag-success.png)
 
@@ -194,7 +194,7 @@ Tags en naamruimten kunnen na het maken worden bewerkt.
 
 1. Om een markering uit te geven, open de [ etiketterende console ](#tagging-console).
 
-1. Selecteer de markering u wilt uitgeven en in de toolbar, uitgezocht **** uitgeven.
+1. Selecteer de markering u wilt uitgeven en in de toolbar, uitgezocht **&#x200B;**&#x200B;uitgeven.
 
 1. Breng de gewenste wijzigingen aan. Het is mogelijk de volgende wijzigingen aan te brengen:
 
@@ -222,7 +222,7 @@ Als u de tag op de instantie van de auteur wilt deactiveren en deze uit uw publi
 
    ![ de bevestiging van de Publish markering modaal ](assets/unpublish-tag.png)
 
-1. De unpublish actie wordt bevestigd met de dialoog van het Succes van a ****.
+1. De unpublish actie wordt bevestigd met de dialoog van het Succes van a **&#x200B;**.
 
    ![ de dialoog van het markeringssucces van Publish ](assets/unpublish-tag-success.png)
 
@@ -283,7 +283,7 @@ Als de codeertaxonomie gelijksoortige duplicaten of tags bevat, kan het handig z
 
 1. Om twee markeringen samen te voegen, open de [ etiketterende console ](#tagging-console).
 
-1. Selecteer de markering die u in een andere markering wilt samenvoegen en dan **** in de toolbar selecteren samenvoegen.
+1. Selecteer de markering die u in een andere markering wilt samenvoegen en dan **&#x200B;**&#x200B;in de toolbar selecteren samenvoegen.
 
 1. In de **dialoog van de Markering van de Fusie**, selecteer **doorbladert** pictogram van de **Fusie in** gebied om te specificeren waarin de markering u de geselecteerde markering wilt samenvoegen.
 
@@ -362,7 +362,7 @@ Laten we ervan uitgaan dat we een tag met de naam `Animals` hebben die we in het
 
 1. Selecteer de markering die u wilt vertalen en dan selecteren **uitgeven** in de toolbar.
 
-1. In **geef de dialoog van de Markering** uit, in de **3} kolom van de Localisatie {, selecteer de doeltaal, bijvoorbeeld, Duits.**
+1. In **geef de dialoog van de Markering** uit, in de **3&rbrace; kolom van de Localisatie &lbrace;, selecteer de doeltaal, bijvoorbeeld, Duits.**
 
 1. Op het **Duitse** gebied dat verschijnt, verstrek de vertaalde titel.
 

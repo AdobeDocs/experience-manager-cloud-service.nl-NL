@@ -836,7 +836,7 @@ Om compatibel te zijn met het implementatiemodel van Cloud Servicen, moeten afzo
 >
 >De regel [ Pakketten van de Klant zouden geen knopen onder libs ](#oakpal-customer-package) moeten creëren of wijzigen altijd van toepassing zijn.
 
-Zie ](/help/implementing/developing/introduction/aem-project-content-package-structure.md) de Structuur van het Project van de Experience Manager 0} {voor meer details.[
+Zie [&#128279;](/help/implementing/developing/introduction/aem-project-content-package-structure.md) de Structuur van het Project van de Experience Manager 0&rbrace; &lbrace;voor meer details.
 
 ### Gebruik geen reverse-replicatiemiddelen {#oakpal-reverse-replication}
 

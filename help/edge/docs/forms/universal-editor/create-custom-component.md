@@ -184,7 +184,7 @@ Om het de douanebezit van de Waarde van de Stap toe te voegen, voeg het componen
       }
 ```
 
-Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a ****. Hieronder volgt een uitsplitsing van elk veld:
+Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a **&#x200B;**. Hieronder volgt een uitsplitsing van elk veld:
 
 * **component**: Specificeert het type van inputgebied dat in de dialoog van het Bezit wordt gebruikt. In dit geval geeft `number` aan dat het veld numerieke waarden accepteert.
 * **naam**: Het herkenningsteken voor het bezit, dat wordt gebruikt om het in de logica van de component van verwijzingen te voorzien. Hier vertegenwoordigt `stepValue` de step waarde die voor de waaier wordt geplaatst.
@@ -392,6 +392,7 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    float: right;
    }
    ```
+
    Met de code kunt u de opmaak en visuele weergave van de aangepaste component definiëren.
 
 1. Als u de functionaliteit wilt toevoegen, navigeert u naar het `/blocks/form/components/range/range.js` -bestand en voegt u de volgende coderegel toe:

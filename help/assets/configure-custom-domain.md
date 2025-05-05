@@ -52,7 +52,7 @@ ht-degree: 0%
 >
 >De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In Adobe Cloud Manager kunt u uw website laten opvallen door een aangepast domein toe te voegen. Als AEM as a Cloud Service wordt geleverd met een standaarddomein, kunt u dit naar wens aanpassen.
 
@@ -79,4 +79,4 @@ DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen v
 
 >[!NOTE]
 >
-Voeg het aangepaste domein toe aan de lijst met toegestane omleidings-URL&#39;s. De lijst bevindt zich in de IMS-client voor de elementenkiezer.<br> coördinaat met het respectieve team van Adobe om deze taak uit te voeren door het koord van het douanedomein te verstrekken.
+>Voeg het aangepaste domein toe aan de lijst met toegestane omleidings-URL&#39;s. De lijst bevindt zich in de IMS-client voor de elementenkiezer.<br> coördinaat met het respectieve team van Adobe om deze taak uit te voeren door het koord van het douanedomein te verstrekken.

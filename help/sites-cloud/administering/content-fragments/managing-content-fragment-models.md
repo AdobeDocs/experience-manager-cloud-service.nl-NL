@@ -35,7 +35,7 @@ Als een zeer snel overzicht, om met de Modellen van het Fragment van de Inhoud t
 
 1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/setup.md)
 1. [ creeer ](#creating-a-content-fragment-model) uw Model van het Fragment van de Inhoud.
-   * Op dit punt kunt u **** het model (voor gebruik ook toelaten wanneer het creëren van de Fragmenten van de Inhoud).
+   * Op dit punt kunt u **&#x200B;**&#x200B;het model (voor gebruik ook toelaten wanneer het creëren van de Fragmenten van de Inhoud).
 1. [ bepaal ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) de structuur van uw model.
 1. [ laat uw Model van het Fragment van de Inhoud ](#enabling-a-content-fragment-model) toe, als nog niet gedaan.
 1. [ sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets ](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
@@ -125,7 +125,7 @@ Wanneer u een specifiek model selecteert, worden de eigenschappen van dat model 
 * **Beschrijving**
 * **het patroon van URL van de Voorproef**
 
-  De Modellen van het Fragment van de inhoud staan auteurs toe om **** hun inhoud in een externe frontend toepassing voor te vertonen. Zodra de **Dienst van de Voorproef** wordt gevormd, voeg URL voor de frontend toepassing toe.
+  De Modellen van het Fragment van de inhoud staan auteurs toe om **&#x200B;**&#x200B;hun inhoud in een externe frontend toepassing voor te vertonen. Zodra de **Dienst van de Voorproef** wordt gevormd, voeg URL voor de frontend toepassing toe.
 
   De voorbeeld-URL moet dit patroon volgen:
     `https://<preview_url>?param=${expression}`
@@ -171,7 +171,7 @@ Als u een specifiek model selecteert, wordt een werkbalk geopend die is toegespi
 * **[geeft](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)** uit om uw Model van het Fragment van de Inhoud te bepalen.
 * **publiceer** aan of [ publiceer ](/help/implementing/cloud-manager/manage-environments.md#environment-types) of [ Voorproef ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) rijen.
 * **Slot**/**ontgrendelt** om te controleren of een gebruiker wordt toegestaan om het Model te wijzigen.
-* **[laat](#enabling-a-content-fragment-model)** toe/**[](#disabling-a-content-fragment-model)** onbruikbaar maken om te controleren of een gebruiker wordt toegestaan om tot Inhoudsfragmenten te leiden die op dit model worden gebaseerd.
+* **[laat](#enabling-a-content-fragment-model)** toe/**[&#128279;](#disabling-a-content-fragment-model)** onbruikbaar maken om te controleren of een gebruiker wordt toegestaan om tot Inhoudsfragmenten te leiden die op dit model worden gebaseerd.
 
 Het selecteren van één enkel model toont ook de [ modeleigenschappen ](#properties) in het juiste paneel.
 
@@ -206,7 +206,7 @@ Zodra geselecteerd, wordt het **Filtreren door** opties getoond (bij de bovenkan
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, selecteer **Toegelaten** in de **3} kolom van de Status {.** Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd.
+Bijvoorbeeld, selecteer **Toegelaten** in de **3&rbrace; kolom van de Status &lbrace;.** Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd.
 
 >[!NOTE]
 >
@@ -259,11 +259,11 @@ Nadat een model is gemaakt, moet het zijn ingeschakeld zodat het:
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
 * Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
 
-U kunt **** een model toelaten:
+U kunt **&#x200B;**&#x200B;een model toelaten:
 
 * Bij het maken van een nieuw model
    * Er wordt een optie weergegeven in het dialoogvenster.
-* Wanneer een model **** specifiek is onbruikbaar gemaakt
+* Wanneer een model **&#x200B;**&#x200B;specifiek is onbruikbaar gemaakt
    * Wanneer het vereiste Model wordt geselecteerd, **laat** actie toe is beschikbaar in de hoogste toolbar.
 
 ### Een inhoudsfragmentmodel uitschakelen {#disabling-a-content-fragment-model}
@@ -410,7 +410,7 @@ U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
 
    * U kunt **een model ontgrendelen** om uitgeeft toe te laten.
 
-     Als u **** selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen.
+     Als u **&#x200B;**&#x200B;selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen.
 
      Vervolgens kunt u het model openen en bewerken.
 

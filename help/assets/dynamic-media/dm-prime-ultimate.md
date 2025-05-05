@@ -42,7 +42,7 @@ De dynamische Media Ultimate is de activeringsdienst voor Experience Manager Ass
 
 Dynamic Media Ultimate biedt naast de functies van Dynamic Media Prime, zoals de integratie van AEM Assets met Adobe- of niet-Adobe-toepassingen, transformatie (roteren, uitsnijden, spiegelen, formaat, voorkeur, hoogte, breedte, kwaliteit) en geoptimaliseerde levering ook:
 
-* [ Dynamische Media met 1} mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
+* [ Dynamische Media met 1&rbrace; mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
 
    * Veilige levering van activa,
    * [ het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) vooraf in.

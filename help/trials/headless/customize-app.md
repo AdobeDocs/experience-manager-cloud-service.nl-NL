@@ -47,7 +47,7 @@ U start in de Content Fragment Editor met de voorbeeldtoepassing die bij de proe
 
 In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven als een pagina-inhoudsfragment. De **Comités** vertegenwoordigen verschillende pagina&#39;s van app, elk waarvan zijn eigen Fragment van de Inhoud is. Door deze fragmenten te wijzigen, kunt u de inhoud van de app wijzigen.
 
-1. Selecteer **Biker Mtn in Canyon** in de **3} sectie van Comités {.**
+1. Selecteer **Biker Mtn in Canyon** in de **3&rbrace; sectie van Comités &lbrace;.**
 
    ![ Uitgezochte tekstpaneel ](assets/do-not-localize/edit-header-1.png)
 
@@ -111,7 +111,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
    ![ voeg een shoppable ogenblik ](assets/do-not-localize/add-reference-1-5.png) toe
 
-1. U moet eerst een model kiezen waarop u het nieuwe inhoudsfragment wilt baseren. Selecteer het **model van het Punt van de Moment 0} Vervormbaar {van het** model van het Fragment van de Inhoud **drop-down.**
+1. U moet eerst een model kiezen waarop u het nieuwe inhoudsfragment wilt baseren. Selecteer het **model van het Punt van de Moment 0&rbrace; Vervormbaar &lbrace;van het** model van het Fragment van de Inhoud **drop-down.**
 
 1. Geef het inhoudsfragment een naam. Bijvoorbeeld, ga `Shorts` in het **gebied van de Naam** in.
 
@@ -121,7 +121,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. De editor wordt geopend voor het nieuwe inhoudsfragment.
 
-1. Geef het shoppable moment een naam op het **1} gebied van de Tekst {zoals `Yellow shorts`.**
+1. Geef het shoppable moment een naam op het **1&rbrace; gebied van de Tekst &lbrace;zoals `Yellow shorts`.**
 
 1. Plaats waarden voor **X** en **Y**. Dit is waar deze callout op het paneel zou moeten worden geregeld. Wijzigingen in het fragment worden automatisch opgeslagen door de editor
 

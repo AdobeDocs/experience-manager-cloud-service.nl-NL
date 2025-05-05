@@ -91,7 +91,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klantgerichte op
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview"> Edge Delivery Forms Overzicht </a> - Leer over vormen met Edge Delivery Services</li>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor"> Universele Redacteur voor Forms </a> - creeer vormen gebruikend de Universele Redacteur van WYSIWYG</li>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial"> op document-gebaseerde Authoring </a> - creeer formulieren gebruikend Microsoft Word of Google Docs</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms"> Edge Delivery Forms van de Stijl 1} - pas douanestijlen op uw vormen toe</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms"> Edge Delivery Forms van de Stijl 1&rbrace; - pas douanestijlen op uw vormen toe</a></li>
       </ul>
     </div>
   </div>

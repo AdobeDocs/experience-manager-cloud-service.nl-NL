@@ -121,7 +121,7 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
    Zodra componenten zijn overeengekomen en het JSON-model is geïmplementeerd, kan de front-end ontwikkelaar de SPA vrij ontwikkelen en eenvoudig toegang krijgen tot het JSON-model via `this.props.cqModel` .
 
-1. `render()` methode van de component van 0} uitvoeren ****
+1. `render()` methode van de component van 0&rbrace; uitvoeren **&#x200B;**
 
    De front-end ontwikkelaar implementeert de `render()` -methode naar eigen inzicht en kan de velden van de `cqModel` -eigenschap gebruiken. Deze methode geeft het DOM en de HTML-fragmenten uit die in de pagina worden ingevoegd. Deze methode is ook de standaardmanier om een app te maken in React.
 

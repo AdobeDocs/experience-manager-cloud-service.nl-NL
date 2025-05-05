@@ -42,7 +42,7 @@ U kunt de sjablooneditor openen via het menu Gereedschappen door te navigeren na
 >
 > U kunt de op de kerncomponent gebaseerde bewerkbare sjablonen vinden in de kernmappen voor componenten.
 
-Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).[
+Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ## Een sjabloon maken {#create-template}
 
@@ -213,7 +213,7 @@ Aangepaste eigenschappen worden toegevoegd aan de kerndeelvelden van het Adaptie
 
 1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** .
 1. Selecteer de sjabloon op basis van kerncomponenten en open deze in de bewerkingsmodus.
-1. Klik het **[!UICONTROL Policy]** ![ 2} pictogram van het Beleid {van een Adaptief gebied van de Component van de Kern van de Vorm waarop de douaneeigenschappen moeten worden bepaald. ](/help/forms/assets/Smock_FeedManagement_18_N.svg) Het dialoogvenster **[!UICONTROL Adaptive Form Field]** wordt weergegeven.
+1. Klik het **[!UICONTROL Policy]** ![ 2&rbrace; pictogram van het Beleid &lbrace;van een Adaptief gebied van de Component van de Kern van de Vorm waarop de douaneeigenschappen moeten worden bepaald. ](/help/forms/assets/Smock_FeedManagement_18_N.svg) Het dialoogvenster **[!UICONTROL Adaptive Form Field]** wordt weergegeven.
 1. Selecteer de tab **[!UICONTROL Custom Properties]** .
 1. Geef de waarde **[!UICONTROL Policy Title]** op onder de sectie **[!UICONTROL Policy]** .
 1. Geef het **[!UICONTROL Group name]** op en voeg sleutelwaardepaar toe dat aan een specifieke groep is gekoppeld. De groepsnaam is zichtbaar voor formulierauteurs in het dialoogvenster Bewerken van een component. Als u de groepsnaam selecteert, is elk bijbehorend sleutel-waardepaar van toepassing op een component.

@@ -30,12 +30,12 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 | Verzoek starten | x |  |
 | Openingspagina aanvragen | x |  |
 | E-mail aanvragen | x | |
-| DAM Create Language Copy&amp;ast; |  | x |
+| DAM Create Language Copy&ast; |  | x |
 | DAM &amp;Create and Translate Language Copy;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets ](/help/sites-cloud/administering/translation/managing-projects.md).
+>&ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets ](/help/sites-cloud/administering/translation/managing-projects.md).
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -58,7 +58,7 @@ In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een geb
 
    ![ Goedkeuring van het Verzoek ](/help/sites-cloud/authoring/assets/projects-approval.png)
 
-1. Klik **creëren**. De workflow wordt gestart. De taak verschijnt in de **tegel van 0} Taken {.**
+1. Klik **creëren**. De workflow wordt gestart. De taak verschijnt in de **tegel van 0&rbrace; Taken &lbrace;.**
 
 ## Verzoek indienen om workflow te starten {#request-launch-workflow}
 
@@ -69,8 +69,8 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
    ![ de lancering van het Verzoek ](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Klik **creëren**. De workflow wordt gestart. Het werkschema verschijnt in de **lijst van Werkschema&#39;s** (klik ellipsen **..** op de **** tegel van Werkschema&#39;s om tot deze lijst toegang te hebben).
+1. Klik **creëren**. De workflow wordt gestart. Het werkschema verschijnt in de **lijst van Werkschema&#39;s** (klik ellipsen **..** op de **&#x200B;**&#x200B;tegel van Werkschema&#39;s om tot deze lijst toegang te hebben).
 
 ## Workflow voor taalkopieën maken (en vertalen) voor Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-**creeer het Exemplaar van de Taal** en **creeer en vertaalde 3} werkschema&#39;s van het Exemplaar van de Taal {zijn in detail behandeld in [ creërend taalexemplaren voor activa ](/help/assets/translate-assets.md).**
+**creeer het Exemplaar van de Taal** en **creeer en vertaalde 3&rbrace; werkschema&#39;s van het Exemplaar van de Taal &lbrace;zijn in detail behandeld in [ creërend taalexemplaren voor activa ](/help/assets/translate-assets.md).**

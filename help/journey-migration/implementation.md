@@ -138,7 +138,7 @@ Wanneer u het bronsysteem op migratie voorbereidt, zijn er taken op systeem- en 
 
 De toegang van het de beheerderniveau van het systeem wordt vereist om [ AZCopy ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) te installeren en te vormen
 
-U wordt ook aangeraden ongebruikte Assets, Pagina&#39;s, AEM Projecten, Gebruikers en Groepen te controleren om tijd te besparen bij de migratie. Zie de ](#repository-health) sectie van de Gezondheid van de Bewaarplaats van de Inhoud [.
+U wordt ook aangeraden ongebruikte Assets, Pagina&#39;s, AEM Projecten, Gebruikers en Groepen te controleren om tijd te besparen bij de migratie. Zie de [&#128279;](#repository-health) sectie van de Gezondheid van de Bewaarplaats van de Inhoud .
 
 ### Gezondheid opslagplaats voor inhoud {#repository-health}
 
@@ -232,7 +232,7 @@ In de volgende sectie worden de belangrijke stappen en bijbehorende taken weerge
    * Slimme tags toepassen
    * Zoeken op gelijkenis
    * Zoeken naar tekst in woord- en PDF-documenten
-* Verzamel het rapport van de Analysator van Beste praktijken [ ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+* Verzamel het rapport van de Analysator van Beste praktijken [&#128279;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
 * De invoer in [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
    * Bekijk de aanbeveling voor zelfanalyse om ervoor te zorgen dat AEM as a Cloud Service de opslagvereisten kan verwerken.
 * Maak een ondersteuningsticket voor de Adobe voor eventuele verduidelijkingen voordat u doorgaat met het migratieplan.

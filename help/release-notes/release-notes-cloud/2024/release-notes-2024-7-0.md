@@ -108,11 +108,11 @@ Aangepaste auteurs van formulieren kunnen herhaalbare formuliervelden en functie
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt. Het programma biedt toegang tot meerdere innovaties.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
 
 #### Aangepaste formulieren maken met Universal Editor
 
-Hefboomwerking de Universele Redacteur van Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) om adaptieve vormen tot stand te brengen gebruikend de belemmering-dalingsauteursrecht van WYSIWYG, voor zowel hoofd als krachtige inschrijvingservaringen, die via de Dienst van Edge Delivery worden geleverd. [ Auteurs van adaptieve formulieren kunnen eenvoudig experimenten maken en starten voor variaties van de formulieren op de webpagina&#39;s. Hierdoor kunnen ze de best presterende ervaringen voor eindgebruikers bepalen.
+Hefboomwerking de Universele Redacteur van Adobe Experience Manager [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) om adaptieve vormen tot stand te brengen gebruikend de belemmering-dalingsauteursrecht van WYSIWYG, voor zowel hoofd als krachtige inschrijvingservaringen, die via de Dienst van Edge Delivery worden geleverd.  Auteurs van adaptieve formulieren kunnen eenvoudig experimenten maken en starten voor variaties van de formulieren op de webpagina&#39;s. Hierdoor kunnen ze de best presterende ervaringen voor eindgebruikers bepalen.
 
 >[!IMPORTANT]
 >

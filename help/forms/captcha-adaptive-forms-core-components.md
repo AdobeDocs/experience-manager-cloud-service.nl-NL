@@ -122,7 +122,7 @@ ReCAPTCHA gebruiken in Adaptive Forms:
    * **[!UICONTROL Name]:** u kunt een formuliercomponent gemakkelijk identificeren met zijn unieke naam in zowel het formulier als de regeleditor, maar de naam mag geen spaties of speciale tekens bevatten.
    * **[!UICONTROL Title]:** Geef een titel op voor de CAPTCHA-widget. De standaardwaarde is **Captcha**. Selecteer **titel van de Verbergen** als u geen titel wilt verschijnen. Selecteer **Verrijkte Tekst voor Titel** toestaan om uw titel in rijk tekstformaat uit te geven. U kunt uw titel als **Ongebonden Element van de Vorm** ook merken.
    * **[!UICONTROL CAPTCHA Configuration]:** selecteer een configuratie van de drop-down Montages voor **reCAPTCHA Onderneming** of **reCAPTCHA v2** om de dialoog van Google reCAPTCHA voor de vorm voor te stellen:
-      1. Als u **versie 0} reCAPTCHA van de Onderneming {selecteert, kan het zeer belangrijke type van** checkbox **of** gebaseerde score **zijn, is het gebaseerd op uw selectie wanneer u [ plaats sleutel voor websites ](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key) vormt:**
+      1. Als u **versie 0&rbrace; reCAPTCHA van de Onderneming &lbrace;selecteert, kan het zeer belangrijke type van** checkbox **of** gebaseerde score **zijn, is het gebaseerd op uw selectie wanneer u [ plaats sleutel voor websites ](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key) vormt:**
 
          >[!NOTE]
          >

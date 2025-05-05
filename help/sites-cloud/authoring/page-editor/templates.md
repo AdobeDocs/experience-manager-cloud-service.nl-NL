@@ -93,7 +93,7 @@ Bij het maken van een bewerkbare sjabloon:
 
 >[!TIP]
 >
->Ga nooit om het even welke informatie in die [ ](/help/implementing/developing/extending/i18n/dev.md) in een malplaatje moet worden geinternationaliseerd.
+>Ga nooit om het even welke informatie in die [&#128279;](/help/implementing/developing/extending/i18n/dev.md) in een malplaatje moet worden geinternationaliseerd.
 >
 >Voor malplaatjeelementen zoals kopballen en footers die moeten worden gelokaliseerd, gebruik de [ localisatieeigenschappen van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
@@ -489,17 +489,17 @@ Als de structuur na het maken van op de sjabloon gebaseerde pagina&#39;s wordt b
 
 ### Een sjabloon bewerken - Eerste inhoud - Auteur {#editing-a-template-initial-content-author}
 
-**de wijze van de 1} Eerste Inhoud van 0} wordt gebruikt aan bepaalde inhoud die zal verschijnen wanneer een pagina eerst gebaseerd op het malplaatje wordt gecreeerd.** De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
+**de wijze van de 1&rbrace; Eerste Inhoud van 0&rbrace; wordt gebruikt aan bepaalde inhoud die zal verschijnen wanneer een pagina eerst gebaseerd op het malplaatje wordt gecreeerd.** De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
 
 Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **Initiële content**, kunnen alleen de ontgrendelde componenten worden geselecteerd en bewerkt.
 
 >[!NOTE]
 >
->**de wijze van de 1} Eerste Inhoud** kan van uitgeeft wijze voor pagina&#39;s worden gedacht die met dat malplaatje worden gecreeerd. Daarom wordt het beleid niet bepaald op **Aanvankelijke wijze van de Inhoud** maar eerder op [**3} wijze van de Structuur ](#editing-a-template-structure-template-author).**
+>**de wijze van de 1&rbrace; Eerste Inhoud** kan van uitgeeft wijze voor pagina&#39;s worden gedacht die met dat malplaatje worden gecreeerd. Daarom wordt het beleid niet bepaald op **Aanvankelijke wijze van de Inhoud** maar eerder op [**3&rbrace; wijze van de Structuur ](#editing-a-template-structure-template-author).**
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
-  ](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png) de Eerste wijze van de Inhoud 0}![
+  ![&#128279;](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png) de Eerste wijze van de Inhoud 0&rbrace;
 
 * Ontgrendelde componenten beschikken over een werkbalk waarmee u de inhoud kunt bewerken en configureren:
 
@@ -537,7 +537,7 @@ Het paginabeleid, inclusief de vereiste clientbibliotheken, blijft behouden onde
 Om tot de **dialoog van het Beleid van de Pagina** toegang te hebben:
 
 1. Van de **Redacteur van het Malplaatje**, selecteer **Informatie van de Pagina** van de toolbar, toen **Beleid van de Pagina** om de dialoog te openen.
-1. Het **dialoogvenster van het Beleid van de 1} Pagina opent en is verdeeld in twee secties:**
+1. Het **dialoogvenster van het Beleid van de 1&rbrace; Pagina opent en is verdeeld in twee secties:**
 
    * De linkerhelft bepaalt het [ paginabeleid ](#page-policies)
    * De rechterhelft bepaalt de [ paginaeigenschappen ](#page-properties)

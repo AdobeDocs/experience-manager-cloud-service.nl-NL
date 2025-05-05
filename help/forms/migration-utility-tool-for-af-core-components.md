@@ -19,7 +19,7 @@ ht-degree: 0%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-Het Nut van de Omzetting van Forms, deel van de [ AEM 1} reeks van het Hulpmiddel van de Modernisering, helpt u Aanpassings Forms gemakkelijk omzetten die met erfenisComponenten van de Stichting aan vormen wordt gebouwd die hefboomwerking de moderne, gesteunde mogelijkheden van de Componenten van de Kern.](https://opensource.adobe.com/aem-modernize-tools/)
+Het Nut van de Omzetting van Forms, deel van de [ AEM 1&rbrace; reeks van het Hulpmiddel van de Modernisering, helpt u Aanpassings Forms gemakkelijk omzetten die met erfenisComponenten van de Stichting aan vormen wordt gebouwd die hefboomwerking de moderne, gesteunde mogelijkheden van de Componenten van de Kern.](https://opensource.adobe.com/aem-modernize-tools/)
 
 ## Wat is AEM moderniseringsgereedschappen?
 
@@ -165,5 +165,5 @@ U kunt nu zien dat de Adaptieve Vorm die op de Componenten van de Stichting word
 
 ## Aanbevolen procedures {#best-practices}
 
-* Verzeker uw op componenten gebaseerde vormen van de Stichting, gebruik slechts die componenten die een gelijkwaardige ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) beschikbare Componenten van de Kern hebben 0}. [ In gevallen waar u de Componenten van de Stichting gebruikt die geen gelijkwaardige Component van de Kern hebben, wordt de Component van de Stichting niet omgezet. Hierdoor werkt het niet correct tijdens het ontwerpen van een formulier
+* Verzeker uw op componenten gebaseerde vormen van de Stichting, gebruik slechts die componenten die een gelijkwaardige [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) beschikbare Componenten van de Kern hebben 0&rbrace;.  In gevallen waar u de Componenten van de Stichting gebruikt die geen gelijkwaardige Component van de Kern hebben, wordt de Component van de Stichting niet omgezet. Hierdoor werkt het niet correct tijdens het ontwerpen van een formulier
 * Zorg ervoor dat de regels om de Componenten van de Stichting aan de Componenten van de Kern te behandelen in XML worden geformatteerd.

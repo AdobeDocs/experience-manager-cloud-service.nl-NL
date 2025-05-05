@@ -89,7 +89,7 @@ Er zijn twee typen AEM versie-updates:
 
 >[!TIP]
 >
->Voor meer details, zie {de Updates van de Versie 0} AEM ](/help/implementing/deploying/aem-version-updates.md).[
+>Voor meer details, zie {de Updates van de Versie 0} AEM [&#128279;](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 

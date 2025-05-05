@@ -102,12 +102,12 @@ U kunt een actieve kopie van elke pagina maken:
 
 Het enige verschil is dat de beschikbaarheid van het **bevel van de Uitvoer** op de bron/de blauwdruk pagina&#39;s afhankelijk is van of de bron door een blauwdrukconfiguratie van verwijzingen wordt voorzien:
 
-* Als u het Levende Exemplaar van een bronpagina creeert die **** in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan is het bevel van de Uitvoer beschikbaar op de bron/blauwdruk pagina(s).
+* Als u het Levende Exemplaar van een bronpagina creeert die **&#x200B;**&#x200B;in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan is het bevel van de Uitvoer beschikbaar op de bron/blauwdruk pagina(s).
 * Als u het Levende Exemplaar van een bronpagina creeert die **niet** in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan zal het bevel van de Uitvoer niet beschikbaar op de bron/blauwdruk pagina(s) zijn.
 
 Een actieve kopie maken:
 
-1. In de **console 1} uitgezochte** van Plaatsen **, dan** Levende Exemplaar **.**
+1. In de **console 1&rbrace; uitgezochte** van Plaatsen **, dan** Levende Exemplaar **.**
 
    ![ creeer Levend Exemplaar ](../assets/create-live-copy.png)
 
@@ -202,7 +202,7 @@ De eigenschappen van een pagina van Actieve kopie tonen de volgende informatie o
 De eigenschappen weergeven:
 
 1. In de **console van Plaatsen**, selecteer de Levende pagina van het Exemplaar en open de eigenschappen.
-1. Selecteer het **Levende 1} lusje van het Exemplaar {.**
+1. Selecteer het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 
    Bijvoorbeeld:
 
@@ -305,7 +305,7 @@ Synchroniseer een actieve kopie om wijzigingen van de bron naar de actieve kopie
 >Het synchroniseren voert de rollout configuraties uit die [ op de trekker van de Uitvoer ](live-copy-sync-config.md#rollout-triggers) gebruiken.
 
 1. In de **console van Plaatsen**, selecteer de Levende pagina van het Exemplaar en open de eigenschappen.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Selecteer **synchroniseren**.
 
    ![ synchroniseer knoop ](../assets/synchronize.png)
@@ -352,7 +352,7 @@ Wanneer de pagina Live kopie is gesynchroniseerd met de bronpagina, blijven de t
 
 >[!TIP]
 >
->Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie ](best-practices.md#components-and-container-synchronization) Beste praktijken MSM [ voor meer informatie.
+>Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie [&#128279;](best-practices.md#components-and-container-synchronization) Beste praktijken MSM  voor meer informatie.
 
 ### Overerving voor een pagina onderbreken {#suspending-inheritance-for-a-page}
 
@@ -369,7 +369,7 @@ U kunt de overerving van Live kopie voor een pagina van Live kopie onderbreken, 
 Overerving op een pagina opschorten:
 
 1. Open de eigenschappen van de Levende pagina van het Exemplaar of gebruikend het **bevel van de Eigenschappen van de Mening** van de **console van Plaatsen** of het gebruiken van **Informatie van de Pagina** op de paginakoolbar.
-1. Selecteer het **Levende 1} lusje van het Exemplaar {.**
+1. Selecteer het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Selecteer **Onderbreking** van de toolbar. U kunt vervolgens een van de volgende opties selecteren:
 
    * **Uitstel**: om huidige slechts pagina op te schorten.
@@ -414,7 +414,7 @@ Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchro
 
 #### Overerving van pagina-eigenschappen hervatten {#resuming-inheritance-from-page-properties}
 
-Zodra [ ](#suspending-inheritance-from-page-properties) opgeschort **hervat** actie in de toolbar van de paginaeigenschappen wordt:
+Zodra [&#128279;](#suspending-inheritance-from-page-properties) opgeschort **hervat** actie in de toolbar van de paginaeigenschappen wordt:
 
 ![ knoop van het Hervatten ](../assets/resume.png)
 
@@ -452,7 +452,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, dat wil ze
 U kunt als volgt de diepte opgeven of wijzigen:
 
 1. Open de eigenschappen van de Levende pagina van het Exemplaar of gebruikend het **bevel van de Eigenschappen van de Mening** van de **console van Plaatsen** of het gebruiken van **Informatie van de Pagina** op de paginakoolbar.
-1. Selecteer het **Levende 1} lusje van het Exemplaar {.**
+1. Selecteer het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. In de **sectie van de Configuratie**, plaats of ontruim de **Levende optie van de Overerving van het Exemplaar** afhankelijk van of de kindpagina&#39;s inbegrepen zijn:
 
    * Ingeschakeld - een diepe, actieve kopie (de onderliggende pagina&#39;s worden opgenomen)
@@ -555,7 +555,7 @@ Het opnieuw instellen beïnvloedt de wijzigingen die u hebt aangebracht in pagin
 #### Een actieve pagina voor kopiëren herstellen vanuit de pagina-eigenschappen {#reset-a-live-copy-page-from-the-page-properties}
 
 1. In de **console van Plaatsen**, selecteer de Levende pagina van het Exemplaar en selecteer **Eigenschappen van de Mening**.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Selecteer **Terugstellen** van de toolbar.
 
    ![ knoop van het Terugstellen ](../assets/reset.png)
@@ -568,7 +568,7 @@ Het opnieuw instellen beïnvloedt de wijzigingen die u hebt aangebracht in pagin
 
 1. Open het [ Levende Overzicht van het Exemplaar ](live-copy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar.
 1. Selecteer **Terugstellen** van de toolbar.
-1. Bevestig de **1} actie van het Terugstellen {in de** Levende dialoog van het Exemplaar van het Terugstellen **:**
+1. Bevestig de **1&rbrace; actie van het Terugstellen &lbrace;in de** Levende dialoog van het Exemplaar van het Terugstellen **:**
 
    ![ Bevestig Levende teruggestelde van het Exemplaar ](../assets/reset-live-copy.png)
 
@@ -630,14 +630,14 @@ Er zijn implicaties op waar binnen de boom die u **gebruikt losmaken**:
 
   >[!NOTE]
   >
-  >Zie {de Conflicten van de Uitvoer MSM ](rollout-conflicts.md) voor details van dergelijke situaties.[
+  >Zie &lbrace;de Conflicten van de Uitvoer MSM [&#128279;](rollout-conflicts.md) voor details van dergelijke situaties.
 
 ### Een actieve pagina voor kopiëren loskoppelen van de pagina-eigenschappen {#detach-a-live-copy-page-from-the-page-properties}
 
 Een actieve kopie loskoppelen:
 
 1. In de **console van Plaatsen**, selecteer de Levende pagina van het Exemplaar en selecteer **Eigenschappen van de Mening**.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Voor de toolbar, uitgezochte **maak** los.
 
    ![ losmaken knoop ](../assets/detach-button.png)

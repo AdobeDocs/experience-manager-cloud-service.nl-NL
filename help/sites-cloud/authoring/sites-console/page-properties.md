@@ -24,7 +24,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Titel &amp; Markeringen**
 
-   * **Titel** - de titel van de pagina wordt getoond in diverse plaatsen. Bijvoorbeeld, de **het tablijst van Websites** en de **3} kaart/lijstmeningen van Plaatsen {.**
+   * **Titel** - de titel van de pagina wordt getoond in diverse plaatsen. Bijvoorbeeld, de **het tablijst van Websites** en de **3&rbrace; kaart/lijstmeningen van Plaatsen &lbrace;.**
       * Dit is een verplicht veld.
    * **Markeringen** - hier kunt u markeringen toevoegen, of verwijderen uit de pagina door de lijst in de selectievak bij te werken.
       * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.

@@ -55,7 +55,7 @@ Extra controles worden toegevoegd aan omgevingen die zijn ingericht voor Forms. 
 
 ## Waarmerking van de klant {#customer-observability}
 
-De klanten kunnen de ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) reeks van de Controle van de Prestaties van de Toepassing van 0} New Relic gebruiken die prestatiegegevens in real time die en voor analyse en het oplossen van problemen worden verzameld en in kaart gebracht verstrekt. [ Met behulp van de monitoringsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: JVM-prestatiemetriek, transactietijd voor Java™, externe achtergrondaanroepen en databaseaanroepen.
+De klanten kunnen de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) reeks van de Controle van de Prestaties van de Toepassing van 0&rbrace; New Relic gebruiken die prestatiegegevens in real time die en voor analyse en het oplossen van problemen worden verzameld en in kaart gebracht verstrekt.  Met behulp van de monitoringsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: JVM-prestatiemetriek, transactietijd voor Java™, externe achtergrondaanroepen en databaseaanroepen.
 
 ## Aanvullende bronnen {#resources}
 

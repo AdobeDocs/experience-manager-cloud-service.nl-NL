@@ -70,7 +70,7 @@ Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-he
 
   ![ de inzichten van het opslaggebruik ](/help/assets/assets/storage-usage-insights.png)
 
-* **de eerste homepageconfiguratie van het 0} Onderzoek {: Experience Manager Assets laat u nu toe om de homepage ervaring voor uw organisatie te vormen.** Als u eerst zoeken selecteert als startpagina, kunt u de uitlijning van de zoekbalk, de achtergrondafbeelding en het logo voor uw organisatie configureren.
+* **de eerste homepageconfiguratie van het 0&rbrace; Onderzoek &lbrace;: Experience Manager Assets laat u nu toe om de homepage ervaring voor uw organisatie te vormen.** Als u eerst zoeken selecteert als startpagina, kunt u de uitlijning van de zoekbalk, de achtergrondafbeelding en het logo voor uw organisatie configureren.
 
   ![ onderzoek eerste configuratie ](/help/assets/assets/search-first-configuration.png)
 

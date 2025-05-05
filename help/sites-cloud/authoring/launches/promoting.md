@@ -85,7 +85,7 @@ U kunt lanceringen van of de **console van Plaatsen** of de **console van Lancer
 
 ## Starten van pagina&#39;s tijdens bewerken bevorderen {#promoting-launch-pages-when-editing}
 
-Wanneer u een lanceringspagina uitgeeft, **bevordert de 1} actie van de Lancering {ook beschikbaar bij** Informatie van de Pagina **.** Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
+Wanneer u een lanceringspagina uitgeeft, **bevordert de 1&rbrace; actie van de Lancering &lbrace;ook beschikbaar bij** Informatie van de Pagina **.** Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
 
 ![ Bevorder lancering van plaatsinfo ](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

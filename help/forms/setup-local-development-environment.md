@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Lokale ontwikkelomgeving instellen voor AEM Forms {#overview}
 
-Wanneer u een [!DNL  Adobe Experience Manager Forms] als een [!DNL  Cloud Service] -omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in in de cloud. Daarnaast kunt u ook een lokale ontwikkelomgeving instellen en configureren.
+Wanneer u een [!DNL &#x200B; Adobe Experience Manager Forms] als een [!DNL &#x200B; Cloud Service] -omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in in de cloud. Daarnaast kunt u ook een lokale ontwikkelomgeving instellen en configureren.
 
 U kunt de lokale ontwikkelomgeving gebruiken om de volgende acties uit te voeren zonder u aan te melden bij de ontwikkelomgeving van de cloud:
 
@@ -435,7 +435,7 @@ Maak een back-up van uw Adaptieve Forms, sjablonen, FDM (Form Data Model), thema
 
 Importeer Adaptief Forms, sjablonen, formuliergegevensmodel, thema, configuraties en aangepaste code naar uw nieuwe omgeving. U kunt de volgende actie uitvoeren om een back-up te importeren:
 
-1. ](import-export-forms-templates.md#manage-forms-and-related-assets) Aangepaste Forms, thema&#39;s, en PDF forms van de invoer van 0} {aan nieuwe milieu&#39;s SDK.[
+1. [&#128279;](import-export-forms-templates.md#manage-forms-and-related-assets) Aangepaste Forms, thema&#39;s, en PDF forms van de invoer van 0&rbrace; &lbrace;aan nieuwe milieu&#39;s SDK.
 1. Importeer Aangepaste formuliersjablonen naar de nieuwe SDK-omgeving.
 
 1. Upload modellen van formuliergegevens naar de nieuwe SDK-omgeving.

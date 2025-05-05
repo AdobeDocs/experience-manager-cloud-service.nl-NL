@@ -39,9 +39,9 @@ Als u AEM wilt gebruiken, moeten uw teamleden worden toegewezen aan ten minste Ã
 
 >[!NOTE]
 >
->Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **** rol van de Gebruiker van Cloud Manager.
+>Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **&#x200B;**&#x200B;rol van de Gebruiker van Cloud Manager.
 >
->De gebruikers met de **rol van de Gebruiker van Cloud Manager** kunnen slechts in Cloud Manager registreren en aan de auteursmilieu&#39;s van AEM navigeren (als zij bestaan) door de het menuopties van Programma&#39;s te gebruiken. De **rol van de Gebruiker van 0} Cloud Manager {is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
+>De gebruikers met de **rol van de Gebruiker van Cloud Manager** kunnen slechts in Cloud Manager registreren en aan de auteursmilieu&#39;s van AEM navigeren (als zij bestaan) door de het menuopties van Programma&#39;s te gebruiken. De **rol van de Gebruiker van 0&rbrace; Cloud Manager &lbrace;is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
 >Zie de [ Extra sectie van Middelen hieronder ](#additional-resources) voor meer informatie over de gebruikersrollen van Cloud Manager.
 
 >[!CAUTION]

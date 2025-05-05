@@ -181,7 +181,7 @@ Door gebrek, zal uw taxonomie `tag` en `title` waarden bevatten zoals die [ in h
 
 1. Gebruik de console van Plaatsen om de taxonomie te selecteren u creeerde.
 1. Tik of klik het **pictogram van Eigenschappen** in de toolbar.
-1. In de **Extra sectie van Eigenschappen**, tikt of klikt **** toevoegt om een gebied toe te voegen.
+1. In de **Extra sectie van Eigenschappen**, tikt of klikt **&#x200B;**&#x200B;toevoegt om een gebied toe te voegen.
 1. Voer in het nieuwe veld de naam in van de JRC-eigenschap die u wilt weergeven. Voer in dit geval `jcr:description` in voor de tagbeschrijving.
 1. Tik of klik **sparen &amp; sluit**.
 1. Met nog geselecteerde taxonomie, tik of klik **Snel publiceren** in de toolbar.

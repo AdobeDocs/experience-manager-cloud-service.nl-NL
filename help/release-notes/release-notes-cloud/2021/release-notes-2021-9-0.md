@@ -30,7 +30,7 @@ De volgende release (2021.10.0) is op 4 november 2021.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de ](https://video.tv.adobe.com/v/337381) video van het Overzicht van de Versie 0} September 2021 {voor een samenvatting van de toegevoegde eigenschappen.[
+Heb een blik bij de [&#128279;](https://video.tv.adobe.com/v/337381) video van het Overzicht van de Versie 0&rbrace; September 2021 &lbrace;voor een samenvatting van de toegevoegde eigenschappen.
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 

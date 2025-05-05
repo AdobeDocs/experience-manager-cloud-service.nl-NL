@@ -43,7 +43,7 @@ Configureer de contexthub.base UI-module met behulp van een JavaScript-object in
 * **pictogram:** de naam van het pictogram van a [ Koraal UI ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) klasse. Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
 * **titel:** een titel voor de module UI. De titel wordt weergegeven wanneer de aanwijzer op het pictogram van de gebruikersinterface wordt gepauzeerd.
 * **volledig scherm:** een booleaanse waarde die erop wijst of de module UI volledig-schermwijze steunt. Gebruik `true` om het volledige scherm te ondersteunen en `false` om de modus Volledig scherm te voorkomen.
-* **malplaatje:** A [ 3} malplaatje Handlebars {dat de inhoud specificeert in de toolbar ContextHub terug te geven. ](https://handlebarsjs.com/) Gebruik maximaal twee `<p>` -tags.
+* **malplaatje:** A [ 3&rbrace; malplaatje Handlebars &lbrace;dat de inhoud specificeert in de toolbar ContextHub terug te geven. ](https://handlebarsjs.com/) Gebruik maximaal twee `<p>` -tags.
 * **storeMapping:** een sleutel/opslagafbeelding. Gebruik de sleutel in malplaatjes Handlebar om tot de bijbehorende ContextHub opslaggegevens toegang te hebben.
 * **lijst:** een serie van punten om als lijst in popover te tonen wanneer de module UI wordt geklikt. Als u dit item opneemt, neemt u geen popoverTemplate op. De waarde is een array van objecten met de volgende toetsen:
    * titel: De tekst die voor dit item moet worden weergegeven
@@ -75,7 +75,7 @@ Het volgende voorbeeld vormt een c `ontexthub.base` module UI aan vertoningsinfo
 
 ## Type van module contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-De gebruikersinterface van `contexthub.browserinfo` bevat informatie over de webbrowser en het besturingssysteem van de client. De informatie wordt verkregen van de surferinfo opslag, die op de {](sample-stores.md#contexthub-surferinfo-sample-store-candidate) opslagkandidaat 0} wordt gebaseerd contexthub.surferinfo.[
+De gebruikersinterface van `contexthub.browserinfo` bevat informatie over de webbrowser en het besturingssysteem van de client. De informatie wordt verkregen van de surferinfo opslag, die op de {[&#128279;](sample-stores.md#contexthub-surferinfo-sample-store-candidate) opslagkandidaat 0} wordt gebaseerd contexthub.surferinfo.
 
 ![ contexthub.browserinfo module ](assets/browserinfo-module.png)
 
@@ -121,7 +121,7 @@ Voor instanties van de module Contextthub.datetime UI is geen waarde vereist voo
 
 ## Contextthub.location UI Module Type {#contexthub-location-ui-module-type}
 
-In de UI-module `contexthub.location` worden de lengte en breedte van de client weergegeven. De module biedt een pop-up die een Google-kaart weergeeft waarop u kunt klikken om de huidige locatie te wijzigen. De module verkrijgt informatie van een opslag ContextHub genoemd geolocation die op de {](sample-stores.md#contexthub-geolocation-sample-store-candidate) opslagkandidaat 0} contexthub.geolocation gebaseerd is.[
+In de UI-module `contexthub.location` worden de lengte en breedte van de client weergegeven. De module biedt een pop-up die een Google-kaart weergeeft waarop u kunt klikken om de huidige locatie te wijzigen. De module verkrijgt informatie van een opslag ContextHub genoemd geolocation die op de {[&#128279;](sample-stores.md#contexthub-geolocation-sample-store-candidate) opslagkandidaat 0} contexthub.geolocation gebaseerd is.
 
 ![ contexthub.location module ](assets/location-module.png)
 
@@ -212,7 +212,7 @@ Voor instanties van de gebruikersinterface-module `contexthub.tagcloud` is geen 
 
 ## Type module granite.profile {#granite-profile-ui-module-type}
 
-De `granite.profile` module ContextHub UI toont de vertoningsnaam van de huidige gebruiker. In het pop-upvenster wordt de aanmeldnaam van de gebruiker weergegeven en kunt u de waarde van de weergavenaam wijzigen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op de {](sample-stores.md#granite-profile-sample-store-candidate) opslagkandidaat 0} granite.profile gebaseerd is.[
+De `granite.profile` module ContextHub UI toont de vertoningsnaam van de huidige gebruiker. In het pop-upvenster wordt de aanmeldnaam van de gebruiker weergegeven en kunt u de waarde van de weergavenaam wijzigen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op de {[&#128279;](sample-stores.md#granite-profile-sample-store-candidate) opslagkandidaat 0} granite.profile gebaseerd is.
 
 ![ granite.profile module ](assets/profile-module.png)
 

@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor [!DNL the Content Hub] -gebruikers. Met deze functionaliteit kunnen geautoriseerde gebruikers de elementen die met hen worden gedeeld, openen en downloaden. Wanneer u elementen downloadt van een gedeelde koppeling, gebruikt [!DNL the Content Hub] een asynchrone service waarmee u bestanden sneller en zonder onderbreking kunt downloaden.
 

@@ -91,7 +91,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.11.0 is 12 nov
 
 ### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Een nieuwe menuoptie **Lokale Login** is nu beschikbaar aan gebruikers van de opties van het milieumenu op de **3} kaart van Milieu&#39;s {en** summiere pagina&#39;s van Milieu **.**
+* Een nieuwe menuoptie **Lokale Login** is nu beschikbaar aan gebruikers van de opties van het milieumenu op de **3&rbrace; kaart van Milieu&#39;s &lbrace;en** summiere pagina&#39;s van Milieu **.**
 Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md#login-locally) voor meer details.
 
 * Het **Leer** lusje in Cloud Manager is verfrist met nieuwe beelden in UI.
@@ -107,7 +107,7 @@ Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.m
 
 ### Workflows {#workflows}
 
-* Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie {de Instanties van het Werkschema van 0} Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).[
+* Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie {de Instanties van het Werkschema van 0} Onderzoek [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ### Synchronisatie van gebruikersgegevens op Publish-niveau {#user-sync}
 
@@ -115,7 +115,7 @@ Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.m
 
 ### SDK Build Analyzers {#analyzers}
 
-De AEM as a Cloud Service SDK Build Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling te ontdekken, ruim voordat ze met Cloud Manager naar Cloud-omgevingen implementeren. Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) en [ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
+De AEM as a Cloud Service SDK Build Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling te ontdekken, ruim voordat ze met Cloud Manager naar Cloud-omgevingen implementeren. Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) en [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### Overige {#others-foundation}
 

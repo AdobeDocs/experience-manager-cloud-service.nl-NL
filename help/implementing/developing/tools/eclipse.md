@@ -31,7 +31,7 @@ Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 
 Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming {](https://www.eclipse.org/downloads/packages/).
+* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming &lbrace;](https://www.eclipse.org/downloads/packages/).
 * Vorm uw eclipse installatie om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier te uitgeven zoals die in [ wordt beschreven Veelgestelde Veelgestelde vragen van de Verduistering ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse) hebt.
 
 >[!NOTE]
@@ -222,7 +222,7 @@ Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informati
 * De [ sectie van het Oplossen van problemen ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * De [ Bekende lijst van kwesties ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende officiële ](https://www.eclipse.org/) documentatie van de Verduistering [ kan helpen aan opstelling uw milieu:
+De volgende officiële [&#128279;](https://www.eclipse.org/) documentatie van de Verduistering  kan helpen aan opstelling uw milieu:
 
 * [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
 * [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)

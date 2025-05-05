@@ -33,7 +33,7 @@ Toegankelijk van [ AEM as a Cloud Service Developer Console ](/help/implementing
 
 Aan de volgende voorwaarden moet zijn voldaan om toegang te krijgen tot de AEM as a Cloud Service Developer Console of de browser van de gegevensopslagruimte
 
-Om tot AEM as a Cloud Service Developer Console toegang te hebben, zie {de toegang van 0} Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).[
+Om tot AEM as a Cloud Service Developer Console toegang te hebben, zie {de toegang van 0} Developer Console [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Voor toegang tot de gegevensopslagbrowser gelden dezelfde voorwaarden als voor de AEM as a Cloud Service Developer Console (zie hierboven). U kunt als volgt de inhoud van de Repository Browser voor een bepaalde instantie weergeven:
 
@@ -51,7 +51,7 @@ De browser van de repository kan worden gestart door de onderstaande stappen te 
 
    ![ repobrowser1 ](/help/implementing/developing/tools/assets/repobrowser1.png)
 
-1. Daarna, klik Browser van de Bewaarplaats **lusje van 0}**
+1. Daarna, klik Browser van de Bewaarplaats **lusje van 0&rbrace;**
 1. Kies om het even welke peul die aan auteur, publiceert, of voorproef door de **Peul** drop-down lijst te klikken.
 
    ![ repobrowser2 ](/help/implementing/developing/tools/assets/repobrowser2.png)

@@ -20,11 +20,11 @@ ht-degree: 6%
 
 name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
-De *Dynamische 1} uitbreiding van de Kijkers van Media voor de Markeringen van Experience Platform werkt met Dynamische Kijkers van Media 5.13. Zo kunnen klanten van Adobe Analytics- en Experience Platform-tags de gebeurtenissen en gegevens van Dynamic Media Viewers gebruiken in hun tagconfiguraties.*
+De *Dynamische 1&rbrace; uitbreiding van de Kijkers van Media voor de Markeringen van Experience Platform werkt met Dynamische Kijkers van Media 5.13. Zo kunnen klanten van Adobe Analytics- en Experience Platform-tags de gebeurtenissen en gegevens van Dynamic Media Viewers gebruiken in hun tagconfiguraties.*
 
 Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers worden weergegeven, met een andere extensie Experience Platform Tags die afkomstig is van Adobe of een derde.
 
-Meer over de uitbreidingen van Adobe of derdeuitbreidingen leren, zie {de uitbreidingen van Adobe van 0} ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/overview) in de Gids van de Gebruiker van de Markeringen van Experience Platform.[
+Meer over de uitbreidingen van Adobe of derdeuitbreidingen leren, zie {de uitbreidingen van Adobe van 0} [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/overview) in de Gids van de Gebruiker van de Markeringen van Experience Platform.
 
 **Dit onderwerp is voorgenomen voor het volgende:** de beheerders van de Plaats, Ontwikkelaars op het programma van Adobe Experience Manager, en mensen in Verrichtingen.
 
@@ -34,7 +34,7 @@ Meer over de uitbreidingen van Adobe of derdeuitbreidingen leren, zie {de uitbre
 * De integratie van Experience Platform-tags voor dynamische mediasviewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
 * Integratie van Experience Platform-tags kan niet gelijktijdig worden gebruikt met de integratie van verouderde viewers Analytics (via de parameter `config2=` ).
 * De steun voor video het volgen is beperkt tot kern playback die slechts, zoals die in [ wordt beschreven het Volgen Overzicht ](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events) volgt. Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten worden niet gesteund.
-* De configuratie van de Duur van de opslag voor de Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens gebruikend de *uitbreiding van de Kijkers van de Media 0} Dynamische.* Opslagduur moet zijn ingesteld op **[!UICONTROL None]** .
+* De configuratie van de Duur van de opslag voor de Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens gebruikend de *uitbreiding van de Kijkers van de Media 0&rbrace; Dynamische.* Opslagduur moet zijn ingesteld op **[!UICONTROL None]** .
 
 ### Gebruik de integratiegevallen {#use-cases-for-the-integration}
 
@@ -198,7 +198,7 @@ Als deze optie is geselecteerd, maakt de Data Element-editor een formulier met t
 
 Zie de [ Dynamische de verwijzingsgids van de Kijkers van Media ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) voor de lijst van gesteunde gebeurtenissen door elk kijkerstype; ga naar de specifieke kijkerssectie, dan de Steun voor het volgen van Adobe Analytics subsection selecteren. Op dit moment worden in de naslaggids voor dynamische media-viewers geen gebeurtenisargumenten vastgelegd.
 
-Laten wij nu de levenscyclus van het Dynamische Element van Gegevens van Media van de Kijkers ** overwegen. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende dynamische mediaviewer-gebeurtenis op de pagina plaatsvindt. Stel dat het gegevenselement verwijst naar de gebeurtenis **[!UICONTROL LOAD]** en het argument &#39;asset&#39; ervan. De waarde van een dergelijk gegevenselement ontvangt geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis **[!UICONTROL ZOOM]** en het bijbehorende argument &quot;scale&quot; verwijst, blijft de waarde van een dergelijk gegevenselement leeg totdat de viewer een **[!UICONTROL ZOOM]** -gebeurtenis voor het eerst verzendt.
+Laten wij nu de levenscyclus van het Dynamische Element van Gegevens van Media van de Kijkers **&#x200B; overwegen. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende dynamische mediaviewer-gebeurtenis op de pagina plaatsvindt. Stel dat het gegevenselement verwijst naar de gebeurtenis &#x200B;** [!UICONTROL LOAD] **&#x200B; en het argument &#39;asset&#39; ervan. De waarde van een dergelijk gegevenselement ontvangt geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis &#x200B;** [!UICONTROL ZOOM] **&#x200B; en het bijbehorende argument &quot;scale&quot; verwijst, blijft de waarde van een dergelijk gegevenselement leeg totdat de viewer een &#x200B;** [!UICONTROL ZOOM]** -gebeurtenis voor het eerst verzendt.
 
 Op dezelfde manier worden de waarden van data-elementen automatisch bijgewerkt wanneer de viewer een overeenkomstige gebeurtenis op de pagina verzendt. De waarde-update gebeurt zelfs als de specifieke gebeurtenis niet in de regelconfiguratie is opgegeven. Stel dat het gegevenselement **[!UICONTROL ZoomScale]** is gedefinieerd voor de parameter &quot;scale&quot; van de ZOOM-gebeurtenis. De gebeurtenis **[!UICONTROL LOAD]** is echter de enige trigger in de regelconfiguratie. De waarde van **[!UICONTROL ZoomScale]** wordt nog steeds bijgewerkt wanneer een gebruiker inzoomt in de viewer.
 
@@ -232,7 +232,7 @@ Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor he
 
 In elk geval worden waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. In plaats daarvan worden ze alleen bewaard in de Experience Platform-tagbibliotheek aan de clientzijde. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
-Over het algemeen, steunt de redacteur van het Element van Gegevens {de selectie van de 0} opslagduur ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element). [ Gegevenselementen die de extensie Dynamische mediumviewers gebruiken, ondersteunen echter alleen de optie voor de opslagduur van **[!UICONTROL None]** . Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer behoudt tijdens de volledige levenscyclus van de viewer.
+Over het algemeen, steunt de redacteur van het Element van Gegevens {de selectie van de 0} opslagduur [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element).  Gegevenselementen die de extensie Dynamische mediumviewers gebruiken, ondersteunen echter alleen de optie voor de opslagduur van **[!UICONTROL None]** . Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer behoudt tijdens de volledige levenscyclus van de viewer.
 
 ### Over Regels in de extensie Dynamische mediasviewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -428,7 +428,7 @@ Nadat u Adobe Analytics hebt geconfigureerd, wordt de integratie ingesteld voor:
 * De Variabelen van de Analyse zijn beschikbaar om het volgen gegevens te ontvangen.
 * Er zijn rapporten beschikbaar om gegevens te bekijken die zijn verzameld in Adobe Analytics.
 
-Zie ook {de Gids van de Implementatie van 0} Analytics ](https://experienceleague.adobe.com/en/docs/analytics/implementation/home).[
+Zie ook {de Gids van de Implementatie van 0} Analytics [&#128279;](https://experienceleague.adobe.com/en/docs/analytics/implementation/home).
 
 **om Adobe Analytics voor de integratie te vormen:**
 
@@ -530,7 +530,7 @@ Klik op **[!UICONTROL Install]** om een extensie te installeren. Voer zo nodig e
 
 Waar nodig moeten de volgende extensies worden geïnstalleerd en geconfigureerd:
 
-* (Vereist) *uitbreiding van de Dienst van 0} identiteitskaart van Experience Cloud*
+* (Vereist) *uitbreiding van de Dienst van 0&rbrace; identiteitskaart van Experience Cloud*
 
 Er is geen aanvullende configuratie nodig, behalve voor voorgestelde waarden. Als u klaar bent, klikt u op **[!UICONTROL Save]** .
 
@@ -554,7 +554,7 @@ Vouw op de pagina **[!UICONTROL Install Extension]** **[!UICONTROL General]** ui
 
 Selecteer **[!UICONTROL Save]** .
 
-Zie {de Uitbreiding van 0} Adobe Analytics ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview).[
+Zie {de Uitbreiding van 0} Adobe Analytics [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview).
 
 * (Optioneel. Vereist slechts als het video volgen nodig is) *Analytics van de Media van Adobe voor Audio en Video* uitbreiding
 
@@ -568,7 +568,7 @@ Zie [ Analytics van de Media van Adobe voor Audio en Video uitbreiding ](https:/
 
 Schakel **[!UICONTROL enable Adobe Analytics for Video]** in om het bijhouden van videorecorders in te schakelen.
 
-Vanaf dit het schrijven, is de *uitbreiding van de Kijkers van de Media 0} Dynamische slechts beschikbaar als het Bezit van de Markeringen van Experience Platform voor ontwikkeling wordt gecreeerd.*
+Vanaf dit het schrijven, is de *uitbreiding van de Kijkers van de Media 0&rbrace; Dynamische slechts beschikbaar als het Bezit van de Markeringen van Experience Platform voor ontwikkeling wordt gecreeerd.*
 
 Zie [ een bezit in de Markeringen van Experience Platform ](#creating-a-property-in-adobe-launch) creëren.
 

@@ -31,7 +31,7 @@ Neem contact op met de systeembeheerder als u problemen ondervindt.
 
 Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Open [ de **2} console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md).**
+1. Open [ de **2&rbrace; console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md).**
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
 1. Open de drop-down selecteur gebruikend **creeer** in de toolbar, dan selecteer **Pagina** van de lijst:
 
@@ -70,7 +70,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
    ![ Verstrekkend paginatitel ](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Tik of klik **creeer** om het proces te voltooien en uw nieuwe pagina tot stand te brengen. De bevestigingsdialoog vraagt of u **** de pagina onmiddellijk wilt openen of aan de console terugkeren (**Gedaan**). Selecteer een optie om het maken van de pagina te beëindigen.
+1. Tik of klik **creeer** om het proces te voltooien en uw nieuwe pagina tot stand te brengen. De bevestigingsdialoog vraagt of u **&#x200B;**&#x200B;de pagina onmiddellijk wilt openen of aan de console terugkeren (**Gedaan**). Selecteer een optie om het maken van de pagina te beëindigen.
 
    ![ de aanmaaksucces van de pagina ](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 

@@ -223,15 +223,15 @@ URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_
 
 Zoals vermeld voordat u een van de beschikbare standaardindelingen selecteert of zelfs een aangepaste indeling implementeert, is de toepassing in hoge mate afhankelijk van de behoeften en vereisten van een winkel. De volgende suggesties kunnen helpen een goed opgeleid besluit te nemen.
 
-_**gebruik een formaat van productpagina URL dat SKU bevat.**_
+_&#x200B;**gebruik een formaat van productpagina URL dat SKU bevat.**&#x200B;_
 
 De CIF Core-componenten gebruiken de SKU als primaire id in alle componenten. Als de URL-indeling van de productpagina niet de SKU bevat, is een GraphQL-query nodig om deze op te lossen. Deze resolutie kan van invloed zijn op de tijd-aan-eerste-byte. Ook, kan het gewenst zijn, dat de kopers producten door SKU kunnen vinden gebruikend onderzoeksmotoren.
 
-_**gebruik een formaat van productpagina URL dat de categoriecontext bevat.**_
+_&#x200B;**gebruik een formaat van productpagina URL dat de categoriecontext bevat.**&#x200B;_
 
 Sommige functies van de CIF URL Provider zijn alleen beschikbaar wanneer u product-URL-indelingen gebruikt die de categoriecontext coderen, zoals de categorie `url_key` of de categorie `url_path` . Zelfs als deze functies niet vereist zijn voor een nieuwe winkel, helpt het gebruik van een van deze URL-indelingen in het begin de migratie-inspanningen in de toekomst te verminderen.
 
-_**Saldo tussen URL lengte en gecodeerde informatie.**_
+_&#x200B;**Saldo tussen URL lengte en gecodeerde informatie.**&#x200B;_
 
 Afhankelijk van de grootte van de catalogus, met name de grootte en diepte van de categoriestructuur, is het wellicht niet verstandig om de volledige `url_path` categorieën in de URL te coderen. In dat geval kan de lengte van de URL worden verminderd door alleen de categorie `url_key` in plaats daarvan op te nemen. Deze methode ondersteunt de meeste functies die beschikbaar zijn wanneer u de categorie `url_path` gebruikt.
 
@@ -247,7 +247,7 @@ Eén manier om dat mogelijk te doen, is een werkgebiedomgeving verbinden met de 
 
 ## Voorbeeld {#example}
 
-Het ](https://github.com/adobe/aem-cif-guides-venia) project van de opslag van de Verwijzing van 0} Venia {omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen. [ Met deze configuratie kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
+Het [&#128279;](https://github.com/adobe/aem-cif-guides-venia) project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen.  Met deze configuratie kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Een combinatie van CIF `UrlProvider` en Sling Mappings zoals hierboven beschreven wordt gebruikt.
 
 >[!NOTE]
 >

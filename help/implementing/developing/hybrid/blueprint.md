@@ -203,7 +203,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens eigenlijk in de [ opslag van de Afbeelding van de Component 1} wordt geregistreerd. ](#componentmapping) Dit gebeurt door de [`ComponentMapping`](#componentmapping) -bibliotheek in te kapselen en uit te breiden en de ondersteuning van het `EditConfig` -configuratieobject te introduceren:
+In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens eigenlijk in de [ opslag van de Afbeelding van de Component 1&rbrace; wordt geregistreerd. ](#componentmapping) Dit gebeurt door de [`ComponentMapping`](#componentmapping) -bibliotheek in te kapselen en uit te breiden en de ondersteuning van het `EditConfig` -configuratieobject te introduceren:
 
 ```javascript
 /**

@@ -111,7 +111,7 @@ De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebr
 
 ### [!UICONTROL When] {#whenruletype}
 
-Het **[!UICONTROL When]** regeltype volgt de **regelconstructie voorwaarde-actie-alternatieve actie** , of soms alleen de **voorwaarde-actie-constructie** . In dit regeltype geeft u eerst een voorwaarde op voor evaluatie, gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere EN- en OF-operatoren gebruiken om geneste expressies](#nestedexpressions) te maken[.
+Het **[!UICONTROL When]** regeltype volgt de **regelconstructie voorwaarde-actie-alternatieve actie** , of soms alleen de **voorwaarde-actie-constructie** . In dit regeltype geeft u eerst een voorwaarde op voor evaluatie, gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere EN- en OF-operatoren gebruiken om geneste expressies[&#128279;](#nestedexpressions) te maken.
 
 Met behulp van het regeltype When kunt u een voorwaarde op een formulierobject evalueren en acties uitvoeren op een of meer objecten.
 
@@ -151,11 +151,11 @@ Tijdens het schrijven van een wanneer-regel kunt u de actie Duidelijke waarde va
 
 Naast de service Formuliergegevensmodel kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Nochtans, heeft de modeldienst van de Gegevens van het Vorm vele voordelen en de geadviseerde benadering om de dienst aan te halen.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens ](data-integration.md).[[!DNL Experience Manager Forms] 
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).[!DNL Experience Manager Forms] 
 
 **[!UICONTROL Set value of]** Berekent en stelt de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde service Formuliergegevensmodel. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in het gehele FDM-formuliergegevensmodel zijn geconfigureerd op uw [!DNL Experience Manager] -instantie. Als u een service Formuliergegevensmodel kiest, worden meer velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens ](data-integration.md).[[!DNL Experience Manager Forms] 
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).[!DNL Experience Manager Forms] 
 
 Met het regeltype **[!UICONTROL Set Property]** kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie. U kunt eigenschap instellen op een van de volgende opties:
 * visible (Boolean)

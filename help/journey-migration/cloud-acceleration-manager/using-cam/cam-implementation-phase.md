@@ -80,7 +80,7 @@ AEM as a Cloud Service Deployment-kaart biedt alle relevante inhoud die u helpt 
 
 Volg deze sectie zodat kunt u de activiteitenkaart van AEM as a Cloud Service Deployment Card bekijken:
 
-1. Klik **Mening** van de **3} activiteitenkaart van de Plaatsing van AEM as a Cloud Service.**
+1. Klik **Mening** van de **3&rbrace; activiteitenkaart van de Plaatsing van AEM as a Cloud Service.**
 
    ![ Plaatsing AEM as a Cloud Service - kaart ](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 

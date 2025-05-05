@@ -138,7 +138,7 @@ Een project inactief (of actief) maken:
 
    >[!NOTE]
    >
-   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [ Toevoegend Tegels ](#adding-items-to-a-tile).
+   >Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [ Toevoegend Tegels ](#adding-items-to-a-tile).
 
 1. Selecteer **uitgeven**.
 1. Verander de selecteur van **Actieve** in **Inactieve** (of omgekeerd).

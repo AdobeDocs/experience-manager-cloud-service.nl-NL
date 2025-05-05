@@ -27,7 +27,7 @@ U kunt de gewenste structuur eenvoudig ontwerpen met de Content Fragment Model E
 
 ## PWA Studio instellen {#setup-pwa}
 
-Volg de documentatie van de PWA Studio van Adobe Commerce [ ](https://developer.adobe.com/commerce/pwa-studio/tutorials/) aan opstelling uw PWA Studio app.
+Volg de documentatie van de PWA Studio van Adobe Commerce [&#128279;](https://developer.adobe.com/commerce/pwa-studio/tutorials/) aan opstelling uw PWA Studio app.
 
 Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u de [ AEM Uitbreiding voor PWA Studio ](https://github.com/adobe/aem-pwa-studio-extensions) gebruiken.
 

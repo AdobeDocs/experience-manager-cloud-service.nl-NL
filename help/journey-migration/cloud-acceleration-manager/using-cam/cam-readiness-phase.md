@@ -102,7 +102,7 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
 >[!NOTE]
 >Wanneer u meer dan één verschillend BPA- rapport in een Project uploadt, ziet u **...** pictogram. Rapporten worden als hetzelfde (niet als verschillend) beschouwd als de host en de aanmaaktijd gelijk zijn.
 
-1. Navigeer aan uw project en klik **Overzicht** van de **3} kaart van de Analyse van Beste praktijken in de** Readiness **fase.**
+1. Navigeer aan uw project en klik **Overzicht** van de **3&rbrace; kaart van de Analyse van Beste praktijken in de** Readiness **fase.**
 
    ![ Analyse van Beste praktijken - Overzicht ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
@@ -148,7 +148,7 @@ De **kaart van de Eigenschappen van het Rapport** verstrekt informatie over rapp
 
 #### Overzicht van rapporten {#report-overview}
 
-Dit **kaart van het Overzicht van 0} Rapport verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich naar AEM as a Cloud Service te bewegen, zoals aangetoond in het hieronder cijfer van toepassing zijn.**
+Dit **kaart van het Overzicht van 0&rbrace; Rapport verstrekt de rapportbevindingen en de strengheidsniveaus die wanneer het beoordelen van de bereidheid om zich naar AEM as a Cloud Service te bewegen, zoals aangetoond in het hieronder cijfer van toepassing zijn.**
 
 ![ Overzicht van het Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -200,7 +200,7 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 >[!IMPORTANT]
 >Een rapport kan slechts worden geschrapt wanneer meer dan één rapport in een project is geupload.
 
-1. Navigeer aan uw project en klik **Overzicht** van de **3} kaart van de Analyse van Beste praktijken in de** Readiness **fase.**
+1. Navigeer aan uw project en klik **Overzicht** van de **3&rbrace; kaart van de Analyse van Beste praktijken in de** Readiness **fase.**
 
    ![ Analyse van Beste praktijken - Overzicht ](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 

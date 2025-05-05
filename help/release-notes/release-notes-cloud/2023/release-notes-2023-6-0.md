@@ -104,7 +104,7 @@ De mening van Assets steunt nu [ het bekijken van hoogste gezochte termijnen bin
 
 **de vormverhogingen van meta-gegevens**
 
-De mening van Assets laat u nu toe om multi-waardetekst en drop-down de componenten van het lijstbezit ](/help/assets/metadata-assets-view.md#property-components) aan de meta-gegevensvormen toe te voegen.[
+De mening van Assets laat u nu toe om multi-waardetekst en drop-down de componenten van het lijstbezit [&#128279;](/help/assets/metadata-assets-view.md#property-components) aan de meta-gegevensvormen toe te voegen.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 

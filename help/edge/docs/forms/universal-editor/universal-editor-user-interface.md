@@ -139,7 +139,7 @@ Dit is wat elke component aanbiedt:
 
   ![ Responsieve wijze ](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-- **Modus van de Voorproef 0}**
+- **Modus van de Voorproef 0&rbrace;**
 
   **de Wijze van de Voorproef** toont precies uw vorm aangezien het zal verschijnen wanneer gepubliceerd. Op deze manier kunt u op dezelfde manier met het formulier werken door op koppelingen en knoppen te klikken als uw gebruikers. Dit is een essentiële stap voordat u publiceert om te controleren of alles naar behoren werkt. Schakelen tussen bewerkings- en voorvertoningsmodi met de sneltoets `p` .
 
@@ -153,13 +153,13 @@ Dit is wat elke component aanbiedt:
 
 - **publiceer**
 
-  Zodra uw vorm voor gebruikers klaar is, publiceert **** knoop het live en beschikbaar aan uw publiek. Dit is de laatste stap in de workflow voor het maken van formulieren.
+  Zodra uw vorm voor gebruikers klaar is, publiceert **&#x200B;**&#x200B;knoop het live en beschikbaar aan uw publiek. Dit is de laatste stap in de workflow voor het maken van formulieren.
 
   ![ publiceer ](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 - **Menu van de Ellipsis**
 
-  Het klikken van de ellips (...) onthult extra opties, met inbegrip van de capaciteit om **** een vorm ongedaan te maken die momenteel levend is. Dit is handig wanneer u een formulier tijdelijk uit openbare toegang moet verwijderen of het moet vervangen door een bijgewerkte versie.
+  Het klikken van de ellips (...) onthult extra opties, met inbegrip van de capaciteit om **&#x200B;**&#x200B;een vorm ongedaan te maken die momenteel levend is. Dit is handig wanneer u een formulier tijdelijk uit openbare toegang moet verwijderen of het moet vervangen door een bijgewerkte versie.
 
   ![ Ellipsis ](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
 
@@ -213,7 +213,7 @@ Laten we de belangrijkste onderdelen ervan onderzoeken:
 
 - **Het Beheer van de Taak**
 
-  De **eigenschap van het Beheer van de Taak 0} stroomlijnt samenwerking door uw team te helpen, taken organiseren volgen en voltooien met betrekking tot vormverwezenlijking en optimalisering.** Dit zorgt ervoor dat projecten efficiënt worden voortgezet met duidelijke verantwoordingsplicht.
+  De **eigenschap van het Beheer van de Taak 0&rbrace; stroomlijnt samenwerking door uw team te helpen, taken organiseren volgen en voltooien met betrekking tot vormverwezenlijking en optimalisering.** Dit zorgt ervoor dat projecten efficiënt worden voortgezet met duidelijke verantwoordingsplicht.
 
   ![ Het Beheer van de Taak ](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
 

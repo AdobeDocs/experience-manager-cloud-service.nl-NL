@@ -71,7 +71,7 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. Verstrek a **Prijs** voor uw fragment door binnen binnen te gaan `$700`.
 
-1. Verstrek een **Beeld** dat van de reis door te tikken of te klikken **activa** op het **Beeld** gebied {toevoegen.
+1. Verstrek een **Beeld** dat van de reis door te tikken of te klikken **activa** op het **Beeld** gebied &lbrace;toevoegen.
 
 1. In de activa pop-up, uitgezochte **doorbladert Assets** om van een bestaand middel in de activa bibliotheek te selecteren.
 

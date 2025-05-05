@@ -95,7 +95,7 @@ Een activiteit toevoegen:
 
    >[!NOTE]
    >
-   >Het wordt geadviseerd om merken door de activiteitenconsole ](/help/sites-cloud/authoring/personalization/activities.md#creating-a-brand-using-the-activities-console) tot stand te brengen [.
+   >Het wordt geadviseerd om merken door de activiteitenconsole [&#128279;](/help/sites-cloud/authoring/personalization/activities.md#creating-a-brand-using-the-activities-console) tot stand te brengen .
    >
    >
    >Als u een merk op een andere manier maakt, moet u controleren of het knooppunt `/campaigns/<brand>/master` bestaat of dat een fout optreedt wanneer u een activiteit wilt maken.
@@ -484,7 +484,7 @@ Gebruik de geavanceerde montages om te bepalen wat **gebeurt nadat** een gebruik
 | Aantal stappen, Gebruiker vrijgeven en Opnieuw invoeren toestaan | Selecteer de ervaring die de bezoeker ziet als hij of zij de activiteit opnieuw betreedt: Zelfde ervaring, Willekeurige ervaring, Onzichtbare ervaring |
 | Aantal verhogende, Gebruiker van de Versie en de Heringang van de Bar | Bepaal wat de gebruiker ziet in plaats van de inhoud van de activiteit: Zelfde ervaring, zonder het volgen, Standaard inhoud of andere activiteiteninhoud |
 
-Zie {de documentatie van 0} Adobe Target ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.[
+Zie {de documentatie van 0} Adobe Target [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.
 
 ### Instellingen configureren (AEM gericht) {#configuring-settings-aem-targeting}
 

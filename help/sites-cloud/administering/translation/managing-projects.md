@@ -18,7 +18,7 @@ Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproj
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.[
+>Als u aan het vertalen van inhoud nieuw bent, zie [&#128279;](/help/journey-sites/translation/overview.md) de Vertaalreis van 0&rbrace; Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen, ideaal voor die zonder AEM of vertaalervaring.
 
 Wanneer middelen aan een vertaalproject worden toegevoegd, wordt een vertaalbaan gecreeerd voor hen. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
 
@@ -244,7 +244,7 @@ Wanneer u manueel een vertaalproject creeert, moet u waarden voor de volgende op
    * Als er meerdere talen zijn geselecteerd, wordt er een taak gemaakt voor elke taal in het project.
 * **Vertaalmethode:** Uitgezochte **Menselijke Vertaling** om erop te wijzen dat de vertaling manueel moet worden uitgevoerd.
 
-1. Voor de toolbar van de projectenconsole, creeert de uitgezochte ****.
+1. Voor de toolbar van de projectenconsole, creeert de uitgezochte **&#x200B;**.
 1. Selecteer het **malplaatje van het Project van de Vertaling** en selecteer dan **daarna**.
 1. Ga waarden voor de **Basis** eigenschappen tabel in.
 1. Selecteer **Geavanceerd** en verstrek waarden voor de op vertaling betrekking hebbende eigenschappen.
@@ -288,7 +288,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
    ![ voeg i18n- woordenboek ](../assets/add-i18n.png) toe
 
-1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **** toevoegen.
+1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **&#x200B;**&#x200B;toevoegen.
 
    ![ Uitgezochte i18N Woordenboek ](../assets/select-i18n.png)
 
@@ -462,7 +462,7 @@ U kunt als volgt de taalkopieën vergelijken met de hoofdtaal:
 1. In de plaatsenconsole, navigeer aan het taalexemplaar u wilt vergelijken.
 1. Open het [ spoor van Verwijzingen ](/help/sites-cloud/authoring/basic-handling.md#references).
 1. Onder de **koppen** kopbal selecteren **de Kopieën van de Taal.**
-1. Selecteer uw specifiek taalexemplaar en dan kunt u of **** vergelijken of **vergelijken met Vorige** indien van toepassing.
+1. Selecteer uw specifiek taalexemplaar en dan kunt u of **&#x200B;**&#x200B;vergelijken of **vergelijken met Vorige** indien van toepassing.
 
    ![ vergelijk taalexemplaren ](../assets/language-copy-compare.png)
 

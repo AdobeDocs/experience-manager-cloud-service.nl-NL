@@ -74,7 +74,7 @@ Om ervoor te zorgen dat uw gegevens veilig blijven, moet u ervoor zorgen dat:
 
    * Bijvoorbeeld, zijn alle [ schema&#39;s van GraphQL ](/help/headless/graphql-api/content-fragments.md#schema-generation):
 
-      * afgeleid uit de Modellen van het Fragment van de Inhoud die **** zijn toegelaten
+      * afgeleid uit de Modellen van het Fragment van de Inhoud die **&#x200B;**&#x200B;zijn toegelaten
 
      **en**
 

@@ -97,7 +97,7 @@ De volledige details van alle toegestane karakters kunnen in [ worden gevonden d
 
 Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, AEM leidt de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
-Het gebied van de Titel van A **** dat ongeldige karakters bevat wordt goedgekeurd, maar de afgeleide naam heeft de ongeldige karakters vervangen. Bijvoorbeeld:
+Het gebied van de Titel van A **&#x200B;**&#x200B;dat ongeldige karakters bevat wordt goedgekeurd, maar de afgeleide naam heeft de ongeldige karakters vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|

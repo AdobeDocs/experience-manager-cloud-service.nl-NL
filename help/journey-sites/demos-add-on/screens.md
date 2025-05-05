@@ -155,7 +155,7 @@ Als u de uitwisseling van Google Sheets-gegevens met behulp van uw API-sleutel w
 
    ![ API bibliotheekonderzoek ](assets/api-library-search.png)
 
-1. In het **Google Bladen API** venster, klik **** TOESTAAN.
+1. In het **Google Bladen API** venster, klik **&#x200B;**&#x200B;TOESTAAN.
 
    ![ Google bladen API ](assets/sheets-api.png)
 

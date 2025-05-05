@@ -37,7 +37,7 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
 
 1. Klik **leiden Publicatie** van de actiebar.
 
-1. Selecteer de **Actie** als **Publish** en **plannend** als **** van **leiden de tovenaar van de Publicatie** en klik **daarna**.
+1. Selecteer de **Actie** als **Publish** en **plannend** als **&#x200B;**&#x200B;van **leiden de tovenaar van de Publicatie** en klik **daarna**.
 
    ![ Uitgezochte Actie van Publish ](/help/screens-cloud/assets/create-content/managepub-2.png)
 

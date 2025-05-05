@@ -26,7 +26,7 @@ ht-degree: 0%
 | AEM as a Cloud Service | Dit artikel |
 
 
-U kunt de **component van de Ondertekening van 0} Krabbelen gebruiken {om (Krabbelen) handtekening op een Aangepaste Vorm te trekken. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->**
+U kunt de **component van de Ondertekening van 0&rbrace; Krabbelen gebruiken &lbrace;om (Krabbelen) handtekening op een Aangepaste Vorm te trekken. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->**
 
 ![ Scripttekendialoog ](assets/scribble-signature.png)
 
@@ -58,7 +58,7 @@ U kunt **selecteren vormt** ![ pictogram ](assets/configure.png) om de aspectver
 ## Een adaptief formulier configureren voor het gebruik van een scripthandtekening {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Open een adaptief formulier in de bewerkingsmodus.
-1. De belemmering-en-daling de **component van de Handtekening van 0} Krabbelen {van componentenbrowser aan de Aangepaste Vorm.**
+1. De belemmering-en-daling de **component van de Handtekening van 0&rbrace; Krabbelen &lbrace;van componentenbrowser aan de Aangepaste Vorm.**
 1. Selecteer **vormen** ![ ](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. [ vormt eigenschappen van Krabbelhandtekening ](#properties-of-scribble-signature-component) zoals die in de volgende sectie wordt besproken.
 
    ![ Krabbelen Handtekening ](/help/forms/assets/scribblesig.png)
@@ -80,7 +80,7 @@ Met het dialoogvenster Configureren kunt u de component Scripthandtekening eenvo
 * **staat RTF voor Titel** toe - Deze eigenschappen laat gebruikers toe om gewone teksttitels te formatteren, die eigenschappen zoals vette, cursieve, onderstreepte tekst, diverse doopvonten, doopvontgrootte, kleuren, en extra optie opnemen om visuele presentatie en aanpassing te verbeteren. Deze functie biedt meer flexibiliteit en creatieve controle bij het opvallen van titels in documenten, websites of toepassingen.\
   Op het selecteren van checkbox voor **staat RTF-tekst voor Titel** toe, wordt het formatteren opties zichtbaar om de titel van de component te stileren. Om tot alle beschikbare het formatteren opties toegang te hebben, kunt u op het ![ pictogram Volledig scherm ](/help/forms/assets/fullscreen-icon.png) tabel klikken.
 
-  ](/help/forms/assets/richtext-support-title.png) de rijke tekststeun van 0}![
+  ![&#128279;](/help/forms/assets/richtext-support-title.png) de rijke tekststeun van 0&rbrace;
 
 * **Verberg Titel** - selecteer de optie om de Titel van de component te verbergen.
 * **Vereist Gebied** - selecteer de optie om het gebied verplicht te maken.
@@ -108,7 +108,7 @@ Met het dialoogvenster Configureren kunt u de component Scripthandtekening eenvo
 
 Op het **lusje van de Toegankelijkheid**, worden de waarden geplaatst voor [ toegankelijkheid ARIA ](https://www.w3.org/WAI/standards-guidelines/aria/) etiketten voor de component. Er zijn verschillende opties beschikbaar voor het gebruik van de tekst voor schermlezers:
 
-* **de Voorrang van de Reader van het 1} Scherm** - de Voorrang van de Reader van het Scherm verwijst naar extra tekst die specifiek bedoeld is om door ondersteunende technologieën, zoals het schermlezers te worden gelezen, die door visueel gehandicapte individuen wordt gebruikt. Deze tekst bevat een audiobeschrijving van het doel van het formulierveld en kan informatie bevatten over de titel, beschrijving, naam en relevante berichten (aangepaste tekst) van het veld. Met de schermlezertekst kunt u ervoor zorgen dat het formulier toegankelijk is voor alle gebruikers, inclusief gebruikers met een visuele handicap, en krijgt deze een volledig inzicht in het formulierveld en de vereisten ervan.
+* **de Voorrang van de Reader van het 1&rbrace; Scherm** - de Voorrang van de Reader van het Scherm verwijst naar extra tekst die specifiek bedoeld is om door ondersteunende technologieën, zoals het schermlezers te worden gelezen, die door visueel gehandicapte individuen wordt gebruikt. Deze tekst bevat een audiobeschrijving van het doel van het formulierveld en kan informatie bevatten over de titel, beschrijving, naam en relevante berichten (aangepaste tekst) van het veld. Met de schermlezertekst kunt u ervoor zorgen dat het formulier toegankelijk is voor alle gebruikers, inclusief gebruikers met een visuele handicap, en krijgt deze een volledig inzicht in het formulierveld en de vereisten ervan.
 
    * **Tekst van de Douane**: Selecteer deze optie om de douanetekst voor de toegankelijkheidslabels van ARIA te gebruiken. Als u deze optie selecteert, wordt het dialoogvenster Aangepaste tekst weergegeven. U kunt relevante informatie toevoegen in het dialoogvenster Aangepaste tekst.
    * **Korte Beschrijving**: Selecteer deze optie om de beschrijving voor de toegankelijkheidslabels van ARIA te gebruiken.

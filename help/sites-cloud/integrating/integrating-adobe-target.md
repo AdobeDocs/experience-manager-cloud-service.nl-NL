@@ -122,7 +122,7 @@ Een eigenschap is een container die is gevuld met extensies, regels en gegevense
 
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
 2. Selecteer **Adobe Target** at.js en klik op de Install optie.
-   ](assets/search_ext1.png " Onderzoek van het 1} Doel van het 0} Doel ")![
+   ![&#128279;](assets/search_ext1.png " Onderzoek van het 1&rbrace; Doel van het 0&rbrace; Doel ")
 3. Selecteer **vormen** knoop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
 4. Selecteer **sparen** om de uitbreiding van het Doel aan uw bezit van de Lancering toe te voegen. U zou de uitbreiding van het Doel moeten kunnen zien onder de **Geïnstalleerde lijst van Uitbreidingen** wordt vermeld die.
    ![ sparen Uitbreiding ](assets/configure_extension1.png " sparen Uitbreiding ")

@@ -225,7 +225,7 @@ Als u een map wilt maken, kunt u het volgende doen:
 
 >[!NOTE]
 >
->In Browser van de Configuratie [ ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerde beste praktijken niet.
+>In Browser van de Configuratie [&#128279;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen, nochtans wordt dit geadviseerde beste praktijken niet.
 
 ### ACLs en Groepen {#acls-and-groups}
 
@@ -501,6 +501,7 @@ Het beleid van de pagina staat u toe om het [ inhoudsbeleid ](#content-policies)
    * Setting the status property on the `jcr:content` node.
 
       * Bijvoorbeeld op:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieer de eigenschap:
@@ -513,6 +514,7 @@ Het beleid van de pagina staat u toe om het [ inhoudsbeleid ](#content-policies)
 
    * [ bepaalt de Toegestane weg(en) van het Malplaatje op de **Eigenschappen van de Pagina**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) van de aangewezen pagina of wortelpagina van een subtak.
    * Stel de eigenschap in:
+
      `cq:allowedTemplates`
 Op het `jcr:content` -knooppunt van de vereiste vertakking.
 

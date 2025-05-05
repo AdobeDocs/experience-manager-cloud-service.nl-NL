@@ -266,7 +266,7 @@ Zie [ (Optioneel) Een voorvertoning weergeven van interactieve afbeeldingen ](#o
 
    * Selecteer **[!UICONTROL Quickview]** .
 
-      * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product u wilt gebruiken, dan selecteren **** Uitgezocht in de hoger-juiste hoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product u wilt gebruiken, dan selecteren **&#x200B;**&#x200B;Uitgezocht in de hoger-juiste hoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
       * Als u *niet* een klant van Experience Manager Sites of eCommerce bent
 
          * Zie [ identificerend hotspot variabelen ](#optional-identifying-hotspot-variables); u moet deze variabelen bepalen.
@@ -426,27 +426,27 @@ Met behulp van de vorige URL-voorbeelden van Quickview kunt u in de volgende voo
  <tbody>
   <tr>
    <td><p>Enige SKU, die in het vraagkoord wordt gevonden</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>Enkele SKU, gevonden in het pad URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU en categorie-id in de queryreeks</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

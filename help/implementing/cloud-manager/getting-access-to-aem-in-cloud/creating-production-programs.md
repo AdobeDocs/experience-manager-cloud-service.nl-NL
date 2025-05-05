@@ -55,7 +55,7 @@ Zie [ Extra opties van het productieprogramma ](#options).
 
      ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-   * Klik {de grootte 300 van de Chevron van 0} pictogram ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.![
+   * Klik {de grootte 300 van de Chevron van 0} pictogram ![&#128279;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.
 
    ![ Uitgezochte toe:voegen-ons ](assets/setup-prod-commerce.png)
 
@@ -66,7 +66,7 @@ Zie [ Extra opties van het productieprogramma ](#options).
    ![ bepalen geplande go-live datum ](assets/set-up-go-live.png)
 
    * U kunt deze datum op elk gewenst moment bewerken.
-   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.[** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
+   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma [&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
 
 1. Klik **creëren**. Cloud Manager maakt uw programma en geeft het voor selectie weer op de bestemmingspagina.
 

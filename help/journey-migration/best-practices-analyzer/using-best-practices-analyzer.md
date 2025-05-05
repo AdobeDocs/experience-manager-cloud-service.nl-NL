@@ -23,7 +23,7 @@ ht-degree: 30%
 
 Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de Analysator van Beste praktijken (BPA) te begrijpen:
 
-* Het BPA- rapport wordt gebouwd gebruikend de output van de Detector van het Patroon van Adobe Experience Manager (AEM) [ ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). De versie van de Detector van het Patroon die door BPA wordt gebruikt is inbegrepen in het BPA installatiepakket.
+* Het BPA- rapport wordt gebouwd gebruikend de output van de Detector van het Patroon van Adobe Experience Manager (AEM) [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). De versie van de Detector van het Patroon die door BPA wordt gebruikt is inbegrepen in het BPA installatiepakket.
 
 * BPA kan slechts door de **admin** gebruiker of een gebruiker in de **beheerders** groep worden in werking gesteld.
 
@@ -184,7 +184,7 @@ Het rapport is als volgt ingedeeld:
 Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie.
 
 >[!NOTE]
->Meer over elke het Vinden Categorie leren, zie {de Categorieën van de Detector van 0} Patroon ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).[
+>Meer over elke het Vinden Categorie leren, zie {de Categorieën van de Detector van 0} Patroon [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 

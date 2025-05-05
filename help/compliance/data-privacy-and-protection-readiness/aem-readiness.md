@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Voor meer informatie over de antwoorden van de Adobe op privacykwesties, en wat deze reacties voor u als Adobe klant betekenen, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0} {.[
+>Voor meer informatie over de antwoorden van de Adobe op privacykwesties, en wat deze reacties voor u als Adobe klant betekenen, zie [&#128279;](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0&rbrace; &lbrace;.
 
 Om de klanten van de Adobe te helpen volgzaam met deze verordeningen zijn, verstrekt de Adobe documentatie en procedures (met APIs wanneer beschikbaar) voor de beheerders van de klantenprivacy en AEM beheerders:
 
@@ -34,7 +34,7 @@ Om de klanten van de Adobe te helpen volgzaam met deze verordeningen zijn, verst
 >
 >Gegevens van een andere Adobe On-demand-dienst, samen met eventuele gerelateerde privacyverzoeken, vereisen dat op die dienst maatregelen worden genomen.
 >
->Voor meer informatie, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0}.[
+>Voor meer informatie, zie [&#128279;](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0&rbrace;.
 
 ## Inleiding {#introduction}
 

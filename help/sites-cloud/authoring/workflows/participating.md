@@ -269,5 +269,5 @@ Om de lading, en middelen, van de werkschemainstantie te bekijken:
 1. Open **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteer **Payload van de Mening** van de toolbar om de dialoog te openen.
-   * Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **component van de Definitie van het Middel 0} {om nieuwe ingangen toe te voegen.**
+   * Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **component van de Definitie van het Middel 0&rbrace; &lbrace;om nieuwe ingangen toe te voegen.**
 1. U kunt de koppelingen gebruiken om de afzonderlijke pagina&#39;s te openen.

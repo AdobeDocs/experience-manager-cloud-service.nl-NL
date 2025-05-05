@@ -25,7 +25,7 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om een extractie en opname uit te voeren. Als u deze functie wilt gebruiken, schakelt u deze in de System Console van de AEM-bronomgeving in door de volgende stappen uit te voeren:
 
 1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen te gaan - Verrichtingen - de Console van het Web** of direct aan URL in *https://serveraddress:serverport/system/console/configMgr*
-1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
+1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud **&#x200B;**
 1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
 1. Laat **toe de Bevestiging van de Migratie tijdens extractie** plaatsen, dan druk **sparen**:
 
@@ -130,14 +130,14 @@ Migration validation took 0 minutes
 
 Het bovenstaande mislukkingsvoorbeeld werd bereikt door een opname in werking te stellen, en dan opnieuw de zelfde inname opnieuw in werking te stellen met Wipe gehandicapt, zodat geen knopen tijdens inname betrokken waren — alles was reeds aanwezig op het doel.
 
-Naast wordt inbegrepen in het innamelogboek, kan het bevestigingsrapport ook van het **1} gebruikersinterface van de Banen van de Ingestie {in Cloud Acceleration Manager worden betreden.** Om dit te doen, klik de drie punten (**..**) dan **het rapport van de Bevestiging** in drop-down om het bevestigingsrapport te bekijken.
+Naast wordt inbegrepen in het innamelogboek, kan het bevestigingsrapport ook van het **1&rbrace; gebruikersinterface van de Banen van de Ingestie &lbrace;in Cloud Acceleration Manager worden betreden.** Om dit te doen, klik de drie punten (**..**) dan **het rapport van de Bevestiging** in drop-down om het bevestigingsrapport te bekijken.
 
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## Hoe te om de Belangrijkste Migratie te bevestigen {#how-to-validate-group-migration}
 
-Zie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) de Migratie van de Groep van 0} om de belangrijkste migratiedetails te lezen en waarom het noodzakelijk is.[
+Zie [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) de Migratie van de Groep van 0&rbrace; om de belangrijkste migratiedetails te lezen en waarom het noodzakelijk is.
 
 Nadat de extractie en inname met succes zijn voltooid, is een samenvatting en rapport van de belangrijkste migratie beschikbaar. Deze informatie kan worden gebruikt om te valideren welke groepen succesvol zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
 

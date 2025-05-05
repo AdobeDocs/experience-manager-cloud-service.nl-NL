@@ -29,7 +29,7 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 >
 >* [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md)
 >* [ Zwaardeloze Reis van de Architect van de Inhoud ](/help/journey-headless/architect/overview.md)
->* ](/help/journey-headless/author/overview.md) Reis van de Auteur van de Inhoud zonder hoofd [
+>* [&#128279;](/help/journey-headless/author/overview.md) Reis van de Auteur van de Inhoud zonder hoofd 
 >* [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md).
 
 ## Publiek {#audience}

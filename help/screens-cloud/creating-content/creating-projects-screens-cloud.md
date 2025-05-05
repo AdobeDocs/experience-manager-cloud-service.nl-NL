@@ -37,7 +37,7 @@ Voer de onderstaande stappen uit om een project te maken in Screens as a Cloud S
    ![ creeer-schermen-project2 ](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >Het **gebied van de Naam** wordt bevolkt automatisch in **creeer het 3} dialoogvakje van het Project van Screens {dat op de titel wordt gebaseerd u kiest.**
+   >Het **gebied van de Naam** wordt bevolkt automatisch in **creeer het 3&rbrace; dialoogvakje van het Project van Screens &lbrace;dat op de titel wordt gebaseerd u kiest.**
 
 1. Klik **sparen**. U ziet uw project van Screens, dat als *FirstDigitalExperience* in de Leverancier van de Inhoud van Screens wordt genoemd. U ziet ook uw project in de Leverancier van de Inhoud van Screens, met twee genoemde omslagen, **Plaatsen** en **Kanalen**.
 

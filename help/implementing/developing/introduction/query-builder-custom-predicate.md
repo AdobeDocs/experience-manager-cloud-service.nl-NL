@@ -32,7 +32,7 @@ Een aangepaste predikaat kan ook andere dingen uitvoeren die niet direct mogelij
 
 >[!TIP]
 >
->U kunt voorbeelden van vragen in het ](query-builder-api.md) document vinden van de Bouwer van de Vraag 0} {.[
+>U kunt voorbeelden van vragen in het [&#128279;](query-builder-api.md) document vinden van de Bouwer van de Vraag 0&rbrace; &lbrace;.
 
 >[!TIP]
 >

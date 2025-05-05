@@ -206,6 +206,7 @@ Stijl toevoegen voor een component in het CSS-bestand:
    float: right;
    }
    ```
+
 1. Sla de wijzigingen op.
 
 ### De bestanden implementeren en het project bouwen

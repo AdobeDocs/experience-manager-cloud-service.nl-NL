@@ -50,7 +50,7 @@ ht-degree: 0%
 >
 >De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In de snelle digitale wereld van vandaag, is het ontsluiten van het volledige potentieel van de digitale activa van uw merk cruciaal om voor de concurrentie te blijven. Een holistische DAM-oplossing (Digital Assets Management) vereenvoudigt het beheer van bedrijfsmiddelen, bevordert de consistentie van merken en versnelt de levering van inhoud, waarbij de integriteit van merken en uitzonderlijke ervaringen met klanten worden gegarandeerd.
 
@@ -60,7 +60,7 @@ Dynamische media met OpenAPI-mogelijkheden zetten DAM tot de kern van een flexib
 
 Dynamische media met OpenAPI-mogelijkheden bieden de volgende belangrijke voordelen:
 
-* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen ](/help/assets/integrate-dynamic-media-open-apis.md) gemakkelijk [ te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
+* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen [&#128279;](/help/assets/integrate-dynamic-media-open-apis.md) gemakkelijk  te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
 
 * **Gecentraliseerd beheer van digitale activa**: DAM is de enige bron van waarheid voor alle digitale activa. Uw digitale middelen worden centraal beheerd in AEM Assets en worden aan verbruikende toepassingen geleverd door verwijzing gebruikend levering URLs, zonder activa te kopiëren binaries.
 
@@ -102,7 +102,7 @@ Als u Dynamic Media met OpenAPI-mogelijkheden op AEM as a Cloud Service wilt ins
 
   >[!NOTE]
   >
-  Als u wilt integreren met een niet-Adobe-toepassing, moet u domeinnamen opgeven voor de lijst van gewenste personen waar de toepassing wordt gehost.
+  >Als u wilt integreren met een niet-Adobe-toepassing, moet u domeinnamen opgeven voor de lijst van gewenste personen waar de toepassing wordt gehost.
 
 * Details van zeer belangrijke klantencontacten betrokken bij integratieproject.
 
@@ -112,7 +112,7 @@ Nadat u het ondersteuningsticket hebt verzonden, schakelt Adobe Dynamic Media me
 
 >[!NOTE]
 >
-Sluit `/conf/global/settings/dam/assets-configurations/assetdelivery` uit van een inhoudspakket om deactivering van dynamische media met OpenAPI-mogelijkheden te voorkomen.
+>Sluit `/conf/global/settings/dam/assets-configurations/assetdelivery` uit van een inhoudspakket om deactivering van dynamische media met OpenAPI-mogelijkheden te voorkomen.
 
 ## Dien meer in zeer belangrijke mogelijkheden {#learn-more-key-capabilities}
 

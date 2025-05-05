@@ -399,7 +399,7 @@ Als u de geüploade elementen extra wilt verwerken, kunt u verwerkingsprofielen 
 
 De volgende tabbladen zijn beschikbaar:
 
-* {de profielen van Meta-gegevens 0} ](metadata-profiles.md) laten u standaardmeta-gegevenseigenschappen op activa toepassen die in die omslag worden geupload.[
+* {de profielen van Meta-gegevens 0} [&#128279;](metadata-profiles.md) laten u standaardmeta-gegevenseigenschappen op activa toepassen die in die omslag worden geupload.
 * [ de profielen van de Verwerking ](asset-microservices-configure-and-use.md) laten u meer vertoningen produceren dan door gebrek mogelijk zijn.
 
 Als [!DNL Dynamic Media] is ingeschakeld op uw implementatie, zijn ook de volgende tabbladen beschikbaar:

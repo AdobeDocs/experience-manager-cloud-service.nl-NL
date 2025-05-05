@@ -45,7 +45,7 @@ Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgestel
 
    ![ plaatsen van de Toegang ](assets/access-sites.png)
 
-1. Van de plaatsenconsole, creeert de uitgezochte **** bij het hoogste recht van het scherm en selecteert **Plaats van malplaatje** in drop-down.
+1. Van de plaatsenconsole, creeert de uitgezochte **&#x200B;**&#x200B;bij het hoogste recht van het scherm en selecteert **Plaats van malplaatje** in drop-down.
 
    ![ creeer plaats van malplaatje ](assets/create-site-from-template.png)
 

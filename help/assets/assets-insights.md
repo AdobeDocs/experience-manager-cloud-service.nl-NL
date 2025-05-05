@@ -155,7 +155,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Klik op **[!UICONTROL Done]** nadat [!DNL Experience Manager] de rapportsuite heeft ingesteld.
 
-Voor meer informatie, zie {de Diensten van het Web van 0} Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).[
+Voor meer informatie, zie {de Diensten van het Web van 0} Adobe Analytics [&#128279;](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Paginanummer {#page-tracker}
 

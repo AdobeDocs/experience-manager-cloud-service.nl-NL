@@ -22,7 +22,7 @@ Met de scheidingscomponent kunt u deelvensters van een formulier visueel van elk
 
 * **Gealigneerde stijlen:** met [!DNL AEM Forms], kunt u gealigneerde CSS stijlen nu toepassen op individuele Aangepaste componenten van de Vorm en voorproef de veranderingen in real time.
 
-U kunt de modus Lay-out gebruiken om het aantal kolommen te definiëren waaraan de scheidingscomponent zich uitstrekt. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten ](resize-using-layout-mode.md) te resize.[
+U kunt de modus Lay-out gebruiken om het aantal kolommen te definiëren waaraan de scheidingscomponent zich uitstrekt. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten [&#128279;](resize-using-layout-mode.md) te resize.
 
 De eigenschappen van een scheidingscomponent opgeven:
 

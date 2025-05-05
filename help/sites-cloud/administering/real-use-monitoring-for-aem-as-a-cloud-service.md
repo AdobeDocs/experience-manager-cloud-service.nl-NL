@@ -49,7 +49,7 @@ De Echte dienst van de Controle van het Gebruik wordt ontworpen om gegevensinzam
 * Het controlepunt, of de naam, van een bepaalde gebeurtenis in de volgorde waarin de pagina wordt geladen. Of, interactie met het als bezoeker
 * De bron, of id, van het DOM-element waarmee de gebruiker werkt voor het hierboven vermelde controlepunt. Het kan bijvoorbeeld een afbeelding zijn
 * Het doel, of verbinding met een externe pagina of een middel dat de gebruiker met voor het hierboven vermelde controlepunt in wisselwerking staat. Bijvoorbeeld: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* De {(CWV) ](https://web.dev/articles/lcp) prestatiesmetriek 1} van het Web van de Kern [ Grootste Voorwaardelijke Verf (LCP) ](https://web.dev/articles/lcp), [ Interactie aan Volgende Verf (INP) ](https://web.dev/articles/inp) en [ Cumulatieve Verschuiving van de Lay-out (CLS) ](https://web.dev/articles/cls) die de kwaliteit van de bezoeker van ervaring beschrijven.[
+* De {(CWV) [&#128279;](https://web.dev/articles/lcp) prestatiesmetriek 1} van het Web van de Kern [ Grootste Voorwaardelijke Verf (LCP) ](https://web.dev/articles/lcp), [ Interactie aan Volgende Verf (INP) ](https://web.dev/articles/inp) en [ Cumulatieve Verschuiving van de Lay-out (CLS) ](https://web.dev/articles/cls) die de kwaliteit van de bezoeker van ervaring beschrijven.
 
 ## Hoe de Echte Controle van het Gebruik voor een klant werkt {#how-rum-works-for-a-customer}
 

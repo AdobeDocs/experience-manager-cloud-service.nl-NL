@@ -255,14 +255,14 @@ Na het uploaden zijn er verschillende manieren om een voorvertoning van de uitvo
 ![ Previewing een vertoning van een activa die op het Grote beeld wordt gebaseerd vooraf ingesteld ](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _previewing een vertoning van een activa die op geselecteerde &quot;Grote&quot;beeldvooraf ingesteld wordt gebaseerd. Er is op de URL-knop geklikt. Het resulterende URL-pad bevat de naam voor de voorinstelling &quot;Groot&quot; en kan worden gebruikt in een webpagina._
 
-Bovenstaande URL is live! [ probeer het ](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$) {target="_blank"}.
+Bovenstaande URL is live! [ probeer het ](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"} .
 
 Een andere methode aan voorproef een activa is de beeldactiva te selecteren en dan a _vooraf ingestelde Kijkers_ te selecteren zoals die in het volgende wordt gezien.
 
 ![ Previewing activa die op de Verticale die kijker van het Licht van het Gezoem wordt gebaseerd ](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _previewing activa die op geselecteerde &quot;ZoomVertical_light&quot;kijker wordt gebaseerd vooraf ingesteld. De muisaanwijzer (`+`) is over het horloge verplaatst om in te zoomen. Merk op URL en bed knopen in._
 
-De bovenstaande vertoning is live! [ probeer het ](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light) {target="_blank"}.
+De bovenstaande vertoning is live! [ probeer het ](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"} .
 
 ## Optioneel - Meer informatie
 

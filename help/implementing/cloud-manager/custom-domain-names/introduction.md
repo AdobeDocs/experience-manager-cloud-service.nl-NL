@@ -77,5 +77,5 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 
 ## Aan de slag {#get-started}
 
-* Krijg begonnen een nieuwe naam van het douanedomein voor uw project te vormen door een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe te voegen.[
+* Krijg begonnen een nieuwe naam van het douanedomein voor uw project te vormen door een SSL certificaat [&#128279;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe te voegen.
 * Beheer uw bestaande domeinnamen door het document [ te herzien beheert de namen van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).

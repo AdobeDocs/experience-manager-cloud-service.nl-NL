@@ -175,7 +175,7 @@ De volgende release is gepland voor 12 augustus 2021.
 
 * Het foutbericht dat wordt weergegeven wanneer het maximumaantal SSL-certificaten is bereikt, is niet nuttig.
 
-* In sommige omstandigheden, zou er een discrepantie in de versieversie kunnen zijn die in de pijpleidingskaart op de **1} pagina van het Overzicht {wordt getoond.**
+* In sommige omstandigheden, zou er een discrepantie in de versieversie kunnen zijn die in de pijpleidingskaart op de **1&rbrace; pagina van het Overzicht &lbrace;wordt getoond.**
 
 * De wizard Programma toevoegen heeft onjuist aangegeven dat de naam na het maken niet meer kan worden gewijzigd.
 

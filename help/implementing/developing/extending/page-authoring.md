@@ -44,7 +44,7 @@ Wanneer u een pagina uitgeeft, zijn er diverse [ beschikbare wijzen ](/help/site
 
 Een standaard AEM instantie verstrekt de laag MSM. Dit heeft toegang tot gegevens met betrekking tot [ multisite beheer ](/help/sites-cloud/administering/msm/overview.md) en benadrukt het in de laag.
 
-Om het in actie te zien, kunt u om het even welk taalexemplaar in de [ WKND steekproefinhoud ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) uitgeven en de **Levende 3} wijze van de Status van het Exemplaar selecteren.**
+Om het in actie te zien, kunt u om het even welk taalexemplaar in de [ WKND steekproefinhoud ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) uitgeven en de **Levende 3&rbrace; wijze van de Status van het Exemplaar selecteren.**
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -172,13 +172,13 @@ U kunt de code van deze pagina op [ GitHub ](https://github.com/Adobe-Marketing-
 
 Het uit-van-de-dooswerkschema, **Verzoek om Activering**:
 
-* Zal automatisch op het aangewezen menu verschijnen wanneer een inhoudsauteur **** niet de aangewezen replicatierechten heeft, maar **heeft** lidmaatschap van DAM-Gebruikers en Auteurs.
+* Zal automatisch op het aangewezen menu verschijnen wanneer een inhoudsauteur **&#x200B;**&#x200B;niet de aangewezen replicatierechten heeft, maar **heeft** lidmaatschap van DAM-Gebruikers en Auteurs.
 
 * Anders wordt er niets weergegeven, omdat de replicatierechten zijn verwijderd.
 
 Om aangepast gedrag op dergelijke activering te hebben, kunt u het **Verzoek om het werkschema van de Activering** bedekken:
 
-1. In `/apps` bedekking de **2} tovenaar van Plaatsen `/libs/wcm/core/content/common/managepublicationwizard`**
+1. In `/apps` bedekking de **2&rbrace; tovenaar van Plaatsen `/libs/wcm/core/content/common/managepublicationwizard`**
 
    * Op deze manier wordt de algemene instantie van `/libs/cq/gui/content/common/managepublicationwizard` genegeerd.
 

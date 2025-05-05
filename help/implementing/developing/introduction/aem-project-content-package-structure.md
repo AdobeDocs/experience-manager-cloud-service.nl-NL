@@ -235,7 +235,7 @@ Deze mapstructuur indelen:
 
   >[!WARNING]
   >
-  >Standaard krijgen ingesloten mappen in subpakketten een naam met het achtervoegsel `-packages` . Dit het noemen zorgt ervoor dat de plaatsingscode en de inhoudspakketten **** niet de doelomslagen van om het even welk subpackage `/apps/<app-name>/...` worden opgesteld die in destructief en cyclisch installatiegedrag resulteren.
+  >Standaard krijgen ingesloten mappen in subpakketten een naam met het achtervoegsel `-packages` . Dit het noemen zorgt ervoor dat de plaatsingscode en de inhoudspakketten **&#x200B;**&#x200B;niet de doelomslagen van om het even welk subpackage `/apps/<app-name>/...` worden opgesteld die in destructief en cyclisch installatiegedrag resulteren.
 
 + De map op het derde niveau moet ofwel
   `application` , `content` of `container`
@@ -277,11 +277,11 @@ Alle pakketten moeten via de [ openbare Geweven bewaarplaats van het Artefact va
 
 Als de derdepakketten in **openbare Maven artefactbewaarplaats van de Adobe** zijn, is geen verdere configuratie nodig voor Adobe Cloud Manager om de artefacten op te lossen.
 
-Als de derdepakketten in a **openbare derde Geleide artefactbewaarplaats** zijn, moet deze bewaarplaats in het project `pom.xml` en ingebed na de hierboven geschetste methode [ ](#embeddeds) worden geregistreerd.
+Als de derdepakketten in a **openbare derde Geleide artefactbewaarplaats** zijn, moet deze bewaarplaats in het project `pom.xml` en ingebed na de hierboven geschetste methode [&#128279;](#embeddeds) worden geregistreerd.
 
 De toepassing/de schakelaars van de derde zouden moeten worden ingebed gebruikend zijn `all` pakket als container in de container van uw project (`all`) pakket.
 
-Toevoegend Geweven gebiedsdelen volgen standaard Geweven praktijken, en het inbedden van derdeartefacten (code en inhoudspakketten) worden hierboven geschetst [ ](#embedding-3rd-party-packages).
+Toevoegend Geweven gebiedsdelen volgen standaard Geweven praktijken, en het inbedden van derdeartefacten (code en inhoudspakketten) worden hierboven geschetst [&#128279;](#embedding-3rd-party-packages).
 
 >[!TIP]
 >

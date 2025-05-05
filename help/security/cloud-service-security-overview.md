@@ -18,4 +18,4 @@ ht-degree: 13%
 
 De pro-actieve benadering van AEM as a Cloud Service van veiligheid en strenge procedures helpen de veiligheid van de oplossing van AEM as a Cloud Service en klant vertrouwelijke gegevens beschermen. De veiligheid van digitale ervaring wordt voortdurend gecontroleerd om voor kwaadwillige activiteiten te blijven en de hulp verzekert de veiligheid van de gegevens van de klant.
 
-Zie ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) Witboek van de Veiligheid van de Cloud Service van 0} Adobe Experience Manager voor een diepgaand overzicht van de Veiligheid van AEM as a Cloud Service.[
+Zie [&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) Witboek van de Veiligheid van de Cloud Service van 0&rbrace; Adobe Experience Manager voor een diepgaand overzicht van de Veiligheid van AEM as a Cloud Service.

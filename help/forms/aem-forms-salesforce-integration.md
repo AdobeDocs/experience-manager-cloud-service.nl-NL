@@ -76,7 +76,7 @@ Voer de volgende stappen uit om Adaptief formulier te verbinden met de Salesforc
 
 Nadat u de Salesforce-toepassing hebt geconfigureerd, kunt u de configuratie gebruiken tijdens het maken van een FDM (Form Data Model). Voor meer informatie, zie [ het model van vormgegevens (FDM) ](create-form-data-models.md) creëren. [ vorm het Model van Gegevens van de Vorm verzendt Actie ](/help/forms/using-form-data-model.md) voor een Aangepaste Vorm om gegevens naar toepassingen te verzenden Salesforce.
 
-Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van de Vorm (FDM) in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens ](data-integration.md).[
+Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van de Vorm (FDM) in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).
 
 ## Verwante artikelen
 

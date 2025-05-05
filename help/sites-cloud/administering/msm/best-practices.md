@@ -96,7 +96,7 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 * **Creërend** nieuwe pagina&#39;s in een blauwdruk zullen in overeenkomstige pagina&#39;s resulteren die in Levende Kopieën na rollout met de standaardrollout configuratie worden gecreeerd.
 * **het Schrappen van** pagina&#39;s in een blauwdruk zal in overeenkomstige pagina&#39;s resulteren die van Levende Kopieën na rollout met standaard rollout configuratie worden geschrapt.
-* **het bewegen** pagina&#39;s in een blauwdruk zal **** niet in overeenkomstige pagina&#39;s resulteren die in Levende Kopieën na rollout met standaard rollout configuratie worden bewogen:
+* **het bewegen** pagina&#39;s in een blauwdruk zal **&#x200B;**&#x200B;niet in overeenkomstige pagina&#39;s resulteren die in Levende Kopieën na rollout met standaard rollout configuratie worden bewogen:
    * De reden voor dit gedrag is dat een paginabeweging impliciet een pagina-verwijdering bevat. Dit kan mogelijk leiden tot onverwacht gedrag bij het publiceren, omdat bij het verwijderen van pagina&#39;s bij de auteur de bijbehorende inhoud bij het publiceren automatisch wordt gedeactiveerd. Dit kan ook een aanvullend effect hebben op verwante items, zoals koppelingen, bladwijzers en andere.
       * Inhoudsovererving op de respectievelijke Live Copy-pagina&#39;s wordt bijgewerkt met de nieuwe locatie van de bronnen in de blauwdruk.
       * Om volledig te realiseren een paginabeweging van een blauwdruk aan Levende Exemplaren, overweeg de [ beste praktijken van de paginageverplaatsing ].(#page-move)

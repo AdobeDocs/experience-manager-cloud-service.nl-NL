@@ -270,7 +270,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom AEM, gebruikt de ](https://felix.apache.org/documentation/index.html) implementatie van de Felix van 0} Apache {van OSGi. [ Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom AEM, gebruikt de [&#128279;](https://felix.apache.org/documentation/index.html) implementatie van de Felix van 0&rbrace; Apache &lbrace;van OSGi.  Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Met deze functionaliteit kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 

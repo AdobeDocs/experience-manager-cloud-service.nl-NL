@@ -72,7 +72,7 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 
 ## `groups` {#groups}
 
-`groups` bepaalt de groepen componenten die de auteur in de Universele Redacteur ziet wanneer het klikken **** pictogram in het eigenschappenpaneel van de redacteur [ toevoegt een nieuwe component aan een pagina ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Groepen helpen bij het ordenen van de componenten. De gemeenschappelijke groepen zouden **Algemene Componenten** en **Geavanceerde Componenten** kunnen zijn.
+`groups` bepaalt de groepen componenten die de auteur in de Universele Redacteur ziet wanneer het klikken **&#x200B;**&#x200B;pictogram in het eigenschappenpaneel van de redacteur [ toevoegt een nieuwe component aan een pagina ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Groepen helpen bij het ordenen van de componenten. De gemeenschappelijke groepen zouden **Algemene Componenten** en **Geavanceerde Componenten** kunnen zijn.
 
 * `title` definieert de tekstuele beschrijving van de groep die wordt weergegeven in de gebruikersinterface van de editor.
 * `id` geeft de groep op unieke wijze aan.
@@ -123,7 +123,7 @@ Als de component verwant is aan inhoud binnen een inhoudsfragment, kunt u de vol
 
 * `name` definieert een optionele naam die is opgeslagen in de JCR voor de nieuwe component.
    * Alleen informatief en wordt gewoonlijk niet in de gebruikersinterface weergegeven als de `title` is.
-* `cfModel` bepaalt het [ 2} model van het Fragment van de Inhoud {voor de onlangs-gecreeerde component.](/help/assets/content-fragments/content-fragments-models.md)
+* `cfModel` bepaalt het [ 2&rbrace; model van het Fragment van de Inhoud &lbrace;voor de onlangs-gecreeerde component.](/help/assets/content-fragments/content-fragments-models.md)
 * `cfFolder` definieert in welke map het inhoudsfragment moet worden gemaakt.
 * `title` definieert de titel van het nieuwe inhoudsfragment.
 * `description` definieert een beschrijving van het nieuwe inhoudsfragment.
@@ -132,7 +132,7 @@ Als de component verwant is aan inhoud binnen een inhoudsfragment, kunt u de vol
 
 ### `cf` Kan worden geïmporteerd {#cf-implied}
 
-Als de pagina [ ](/help/implementing/universal-editor/getting-started.md#instrument-page) van instrumenten wordt voorzien om aan een verwijzingsgebied te richten, zal `cf` worden verondersteld.
+Als de pagina [&#128279;](/help/implementing/universal-editor/getting-started.md#instrument-page) van instrumenten wordt voorzien om aan een verwijzingsgebied te richten, zal `cf` worden verondersteld.
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container" data-aue-prop="field"></div>

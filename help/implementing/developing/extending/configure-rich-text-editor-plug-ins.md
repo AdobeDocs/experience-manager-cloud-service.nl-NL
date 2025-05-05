@@ -394,7 +394,7 @@ Alinea-indelingen worden beschikbaar gesteld voor selectie door:
 
 >[!CAUTION]
 >
-Als u aangepaste indelingen definieert, worden de standaardindelingen ( `<p>` , `<h1>` , `<h2>` en `<h3>` ) verwijderd. Maak de `<p>` -indeling opnieuw omdat dit de standaardindeling is.
+>Als u aangepaste indelingen definieert, worden de standaardindelingen ( `<p>` , `<h1>` , `<h2>` en `<h3>` ) verwijderd. Maak de `<p>` -indeling opnieuw omdat dit de standaardindeling is.
 
 ## Speciale tekens configureren {#spchar}
 
@@ -404,7 +404,7 @@ U kunt RTE vormen om uw selectie van karakters beschikbaar te maken; of door ver
 
 >[!CAUTION]
 >
-Als u speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer indien nodig deze tekens in de selectie opnieuw.
+>Als u speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer indien nodig deze tekens in de selectie opnieuw.
 
 ### Eén teken definiëren {#definesinglechar}
 
@@ -455,10 +455,12 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 1. Voeg onder dit knooppunt (benoemd op basis van uw speciale tekenbereik) de volgende twee eigenschappen toe:
 
    * **Naam** `rangeStart`
+
      **Type** `Long`
      **Waarde** de [ vertegenwoordiging van Unicode ](https://unicode.org/) (decimaal) van het eerste karakter in de waaier
 
    * **Naam** `rangeEnd`
+
      **Type** `Long`
      **Waarde** de [ vertegenwoordiging van Unicode ](https://unicode.org/) (decimaal) van het laatste karakter in de waaier
 
@@ -478,11 +480,11 @@ Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook
 
 >[!NOTE]
 >
-U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
+>U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
 
 >[!NOTE]
 >
-Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
+>Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table` . Maak de knooppunten als de knooppunten niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
 1. Maak de eigenschap `features` op het knooppunt `table` :
@@ -493,13 +495,13 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
 
    >[!NOTE]
    >
-   Als u niet alle tabelfuncties wilt inschakelen, kunt u de eigenschap `features` als volgt maken:
+   >Als u niet alle tabelfuncties wilt inschakelen, kunt u de eigenschap `features` als volgt maken:
    >
-   * **Type** `String[]`
+   >* **Type** `String[]`
    >
-   * **Waarde** (s) één, of allebei, van het volgende, zoals vereist:
-   * `table` om het bewerken van tabeleigenschappen mogelijk te maken, inclusief de stijlen.
-   * `cellprops` gebruiken om celeigenschappen, waaronder de stijlen, te kunnen bewerken.
+   >* **Waarde** (s) één, of allebei, van het volgende, zoals vereist:
+   >* `table` om het bewerken van tabeleigenschappen mogelijk te maken, inclusief de stijlen.
+   >* `cellprops` gebruiken om celeigenschappen, waaronder de stijlen, te kunnen bewerken.
 
 1. Definieer de locatie van CSS-stijlpagina&#39;s om deze te verwijzen. Zie [ het specificeren van de plaats van uw stijlblad ](#locationofstylesheet) aangezien dit het zelfde als wanneer het bepalen van [ stijlen voor tekst ](#textstyles) is. De locatie kan worden gedefinieerd als u andere stijlen hebt gedefinieerd.
 1. Maak onder het knooppunt `table` de volgende knooppunten naar wens:
@@ -561,7 +563,7 @@ Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE w
 
 >[!NOTE]
 >
-Het bericht &quot;Spellingcontrole mislukt.&quot; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
+>Het bericht &quot;Spellingcontrole mislukt.&quot; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
 
 Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 
@@ -570,7 +572,7 @@ Een standaardinstallatie van de Experience Manager bevat de woordenboeken voor:
 
 >[!NOTE]
 >
-De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries` , samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
+>De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries` , samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
 Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 
@@ -579,18 +581,18 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 
    >[!CAUTION]
    >
-   Alleen woordenboeken in de `MySpell` -indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
+   >Alleen woordenboeken in de `MySpell` -indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
 
 1. Zoek de bestanden .aff en .dic. Bestandsnaam in kleine letters behouden. Bijvoorbeeld `de_de.aff` en `de_de.dic` .
 1. Laad de .aff- en .dic-bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries` .
 
 >[!NOTE]
 >
-De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
+>De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
 >
-Selecteer de knop Spellingcontrole op de werkbalk om de spellingcontrole uit te voeren. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
+>Selecteer de knop Spellingcontrole op de werkbalk om de spellingcontrole uit te voeren. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
 >
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Selecteer nogmaals Spellingcontrole om de spellingcontrole uit te voeren.
+>Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Selecteer nogmaals Spellingcontrole om de spellingcontrole uit te voeren.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
@@ -626,7 +628,7 @@ Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspri
 
 >[!NOTE]
 >
-Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst), maar heeft geen invloed op de inspringing van feitelijke lijsten.
+>Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst), maar heeft geen invloed op de inspringing van feitelijke lijsten.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/lists` . Maak deze knooppunten als deze niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
 1. Maak op het knooppunt `lists` de parameter `identSize` :
@@ -659,13 +661,13 @@ Wanneer u koppelingen toevoegt in [!DNL Experience Manager] , kunt u de CSS-stij
 
    >[!NOTE]
    >
-   Het knooppunt `../items/text` heeft de eigenschap:
+   >Het knooppunt `../items/text` heeft de eigenschap:
    >
-   * **Naam** `xtype`
-   * **Type** `String`
-   * **Waarde** `richtext`
+   >* **Naam** `xtype`
+   >* **Type** `String`
+   >* **Waarde** `richtext`
    >
-   De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text` .
+   >De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text` .
 
 1. Maak onder `htmlRules` een knooppunt.
 

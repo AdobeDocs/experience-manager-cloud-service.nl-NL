@@ -26,7 +26,7 @@ In de volgende sectie wordt beschreven hoe u een vertakking voor uw programma ku
 
 1. Navigeer naar Cloud Manager en selecteer het pictogram zodat u naar de overzichtspagina van Cloud Manager kunt gaan.
 
-1. Om uw tak en project tot stand te brengen, creeer ****.
+1. Om uw tak en project tot stand te brengen, creeer **&#x200B;**.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/create-branch1.png)
 

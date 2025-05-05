@@ -99,7 +99,7 @@ Heb een blik bij de [ Maart 2022 het Overzicht van de Versie ](https://video.tv.
 
 * De referenties die worden gebruikt voor het verifiëren van API-aanroepen van server naar server (bijvoorbeeld voor GraphQL API-aanvragen) kunnen nu worden vernieuwd voordat ze verlopen op een zelfstandige manier vanuit de Developer Console. Zie de [ documentatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) voor meer info.
 
-* De het zuiveren van de versie en de taken van het de zuiveringslogboek van de controle, die niet eerder waren toegelaten, worden nu toegelaten voor nieuwe milieu&#39;s. Zie de bijbehorende waarden in het ](/help/operations/maintenance.md) artikel van de Taak van 0} Onderhoud {.[
+* De het zuiveren van de versie en de taken van het de zuiveringslogboek van de controle, die niet eerder waren toegelaten, worden nu toegelaten voor nieuwe milieu&#39;s. Zie de bijbehorende waarden in het [&#128279;](/help/operations/maintenance.md) artikel van de Taak van 0&rbrace; Onderhoud &lbrace;.
 
 * AEM as a Cloud Service SDK Dispatcher Tools biedt nu ondersteuning voor Mac-computers met de M1-chip
 

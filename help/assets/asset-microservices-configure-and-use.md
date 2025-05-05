@@ -146,7 +146,7 @@ Het kan beeld, video, document, en andere dossierformaten in verschillende verto
 
 De ontwikkelaars kunnen [!DNL Asset Compute Service] gebruiken [ om douanetoepassingen ](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application) voor de gesteunde gebruiksgevallen tot stand te brengen. [!DNL Experience Manager] kan deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] biedt ondersteuning voor de volgende gevallen waarin externe services worden aangeroepen:
 
-* Gebruik [ ImageCutout API van 0} ](https://developer.adobe.com/photoshop/photoshop-api-docs/) en bewaar het resultaat als vertoning.[!DNL Adobe Photoshop]
+* Gebruik [ ImageCutout API van 0&rbrace; ](https://developer.adobe.com/photoshop/photoshop-api-docs/) en bewaar het resultaat als vertoning.[!DNL Adobe Photoshop]
 * Vraag derdesystemen om veranderingen, bijvoorbeeld, een PIM systeem aan te brengen.
 * Met de API van [!DNL Photoshop] kunt u diverse uitvoeringen genereren op basis van de Photoshop-sjabloon.
 * Gebruik [ Adobe Lightroom API ](https://developer.adobe.com/photoshop/photoshop-api-docs/) om de opgenomen activa te optimaliseren en hen te bewaren als vertoningen.
@@ -282,8 +282,8 @@ Wanneer post-verwerking niet nodig is, creeer en gebruik een &quot;leeg&quot;Mod
 1. Het gemaakte workflowmodel selecteren en bewerken
 1. In de redacteur van het werkschemamodel, klik **Stap 1** van de modeldefinitie en schrap het.
 1. Van het zijpaneel, klik **Stappen**.
-1. Sleep de **voltooide 1} stap van het Gegevenswerkschema van de Update DAM in de modeldefinitie.**
-1. Klik **de Informatie van de Pagina 0} (naast** zijComité **knevel), en klik** Open Eigenschappen **.**
+1. Sleep de **voltooide 1&rbrace; stap van het Gegevenswerkschema van de Update DAM in de modeldefinitie.**
+1. Klik **de Informatie van de Pagina 0&rbrace; (naast** zijComité **knevel), en klik** Open Eigenschappen **.**
 1. Onder het Basis lusje, klik **Voorbijgaande Werkschema**.
 1. Van de hoogste actiebar, klik **sparen en sluit**.
 1. Van de hoogste actiebar, klik **Synchronisatie**.

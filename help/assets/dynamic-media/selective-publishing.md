@@ -29,7 +29,7 @@ Met selectief publiceren kunt u bijvoorbeeld werken aan elementen voor producten
 
 >[!NOTE]
 >
->*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u ** activa aan en van omslagen verplaatst het waarvan omslagbezit aan **[!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
+>*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u **&#x200B; activa aan en van omslagen verplaatst het waarvan omslagbezit aan &#x200B;** [!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
 
 Als u later besluit de **[!UICONTROL Selective Publish]** -instellingen in een map te wijzigen, hebben deze wijzigingen alleen invloed op nieuwe elementen die u vanaf dat punt uploadt naar die map. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit **[!UICONTROL Quick Publish]** of het dialoogvenster **[!UICONTROL Manage Publication]** .
 
@@ -97,7 +97,7 @@ Zie [ tot een Dynamische configuratie van Media ](#configuring-dynamic-media-clo
 
 >[!NOTE]
 >
->*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u ** activa aan en van omslagen verplaatst het waarvan omslagbezit aan **[!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
+>*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u **&#x200B; activa aan en van omslagen verplaatst het waarvan omslagbezit aan &#x200B;** [!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
 
 **om activa aan Dynamische Media of Experience Manager as a Cloud Service selectief te publiceren gebruikend Manage Publication:**
 
@@ -267,6 +267,7 @@ U kunt **[!UICONTROL Timeline]** met **[!UICONTROL Card view]** , **[!UICONTROL 
 Wanneer u **[!UICONTROL List View]** gebruikt, wordt een extra kolom voor de publicatiestatus **[!UICONTROL Dynamic Media]** weergegeven.
    * In een map die is geconfigureerd voor synchronisatie met Dynamic Media, wordt standaard de kolom **[!UICONTROL Dynamic Media]** weergegeven.
    * Een omslag die *niet* wordt gevormd om aan Dynamische Media te synchroniseren toont niet de Dynamische kolom van Media.
+
      ![ de Mening van de Lijst en Chronologie ](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Problemen met selectief publiceren oplossen {#selective-publish-troubleshoot}

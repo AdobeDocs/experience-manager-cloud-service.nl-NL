@@ -54,7 +54,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met Content Hub kunt u nieuwe inhoud maken met Adobe Express. U kunt bestaande inhoud bewerken met gebruiksvriendelijke gereedschappen, onmerkvariaties maken met sjablonen en merkelementen en nieuwe inhoud maken met de nieuwste GenAI-mogelijkheden van Adobe Firefly.
 
@@ -64,7 +64,7 @@ De rechten om tot Adobe Express en [ gebruikers van Content Hub met rechten toeg
 
 >[!NOTE]
 >
-U kunt afbeeldingen van PNG- en JPG/JPEG-bestandstypen bewerken met [!DNL Adobe Express] .
+>U kunt afbeeldingen van PNG- en JPG/JPEG-bestandstypen bewerken met [!DNL Adobe Express] .
 
 ## Afbeeldingen bewerken met [!DNL Adobe Express] {#edit-images-using-content-hub}
 

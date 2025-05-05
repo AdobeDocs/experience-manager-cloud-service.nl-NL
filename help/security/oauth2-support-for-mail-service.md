@@ -24,7 +24,7 @@ Voor meer informatie over de Dienst van de Post van AEM as a Cloud Service, zie 
 
 1. Ga naar [ https://portal.azure.com/ ](https://portal.azure.com/) en login.
 1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [ https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
-1. Klik **>** Nieuwe Registratie **van de Toepassing van 0} {.**
+1. Klik **>** Nieuwe Registratie **van de Toepassing van 0&rbrace; &lbrace;.**
 
    ![ App registratieproces van het Begin ](assets/oauth-outlook1.png)
 

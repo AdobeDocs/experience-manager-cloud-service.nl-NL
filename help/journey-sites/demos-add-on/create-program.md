@@ -58,7 +58,7 @@ Nadat u zich hebt aangemeld bij Cloud Manager, kunt u een sandboxprogramma voor 
 
    ![ creeer programmadialoog ](assets/create-program.png)
 
-1. In de **Opstelling uw zandbak** dialoog in de **Oplossingen &amp; toe:voegen-ons** lijst, breidt de **5} ingang van Plaatsen {in de lijst uit door het in kaart te brengen of te klikken en dan de Demo&#39;s van de Verwijzing** te controleren **.**
+1. In de **Opstelling uw zandbak** dialoog in de **Oplossingen &amp; toe:voegen-ons** lijst, breidt de **5&rbrace; ingang van Plaatsen &lbrace;in de lijst uit door het in kaart te brengen of te klikken en dan de Demo&#39;s van de Verwijzing** te controleren **.**
 
    * Als u ook demo&#39;s voor AEM Screens wilt tot stand brengen, controleer de **optie van Screens** in de lijst. Selecteer **Update**.
 
@@ -71,7 +71,7 @@ Nadat u zich hebt aangemeld bij Cloud Manager, kunt u een sandboxprogramma voor 
 
    ![ volledige de verwezenlijking van het Programma ](assets/ready.png)
 
-1. Uw omgeving is gereed en de invoegtoepassing is nu ingeschakeld als optie, maar de inhoud van de demo moet worden geïmplementeerd om beschikbaar te AEM. Om dit te doen, selecteer de ellipsknoop naast Deploy aan Dev pijpleiding in de **1} kaart van Pijpleidingen {en selecteer** Looppas **.**
+1. Uw omgeving is gereed en de invoegtoepassing is nu ingeschakeld als optie, maar de inhoud van de demo moet worden geïmplementeerd om beschikbaar te AEM. Om dit te doen, selecteer de ellipsknoop naast Deploy aan Dev pijpleiding in de **1&rbrace; kaart van Pijpleidingen &lbrace;en selecteer** Looppas **.**
 
    ![ Begin ](assets/run.png)
 

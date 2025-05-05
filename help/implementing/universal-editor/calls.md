@@ -27,7 +27,7 @@ Voor de ontwikkelaar, echter, kan het begrip van deze vraag en wat zij doen waar
 * De **nuttige lading** van de vraag bevat details van wat door de redacteur met inbegrip van het identificeren van wat wordt bijgewerkt en hoe te om het bij te werken.
 * De **Reactie** omvat details van wat precies door de redacteursdienst werd bijgewerkt. Hiermee kunt u het vernieuwen van de inhoud in de editor vereenvoudigen. In bepaalde gevallen, zoals bij een `move` -aanroep, moet de gehele pagina worden vernieuwd.
 
-Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Gelieve te zien de de gebeurtenissen van de Universele Redacteur van het document [ ](/help/implementing/universal-editor/events.md) voor meer details.
+Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Gelieve te zien de de gebeurtenissen van de Universele Redacteur van het document [&#128279;](/help/implementing/universal-editor/events.md) voor meer details.
 
 Hieronder volgt een lijst met de typen aanroepen die de Universal Editor naar uw app uitvoert, samen met voorbeeldladingen en reacties.
 

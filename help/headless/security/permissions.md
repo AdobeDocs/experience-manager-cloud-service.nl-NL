@@ -45,7 +45,7 @@ Om toestemmingen van groepen in AEM te beheren, navigeer aan **Hulpmiddelen** > 
 
 ### DAM-gebruikers
 
-&quot;DAM&quot; staat in dit verband voor Digital Asset Management. De **Gebruikers DAM** is een uit de doosgroep in AEM die voor &quot;alledaagse&quot;gebruikers kan worden gebruikt die digitale activa en de Fragmenten van de Inhoud beheren. Deze groep verstrekt toestemmingen aan **mening**, **** toevoegen, **update**, **schrapt**, en **publiceert** de Fragmenten van de Inhoud en alle andere dossiers in AEM Assets.
+&quot;DAM&quot; staat in dit verband voor Digital Asset Management. De **Gebruikers DAM** is een uit de doosgroep in AEM die voor &quot;alledaagse&quot;gebruikers kan worden gebruikt die digitale activa en de Fragmenten van de Inhoud beheren. Deze groep verstrekt toestemmingen aan **mening**, **&#x200B;**&#x200B;toevoegen, **update**, **schrapt**, en **publiceert** de Fragmenten van de Inhoud en alle andere dossiers in AEM Assets.
 
 Als het gebruiken van IMS voor groepslidmaatschap, voeg de aangewezen groepen IMS als leden van de **DAM Gebruikers** groep toe. Leden van de IMS-groep nemen de machtigingen van de groep DAM-gebruikers over wanneer ze zich aanmelden bij de AEM.
 

@@ -80,10 +80,11 @@ In de **Configuratie van de Vertaling** UI, zijn er verscheidene opties beschikb
    ![ redacteur van de Regels van de Vertaling ](assets/translation-rules-editor.png)
 1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam` . Schakel de optie **Overnemen van`/content/dam`** uit zodat u extra gebieden aan de configuratie kunt toevoegen.
 1. Wanneer ongecontroleerd, onder de **Algemene** sectie van de lijst, voeg de bezitsnamen van de Model(s) van het Fragment van de Inhoud toe die u [ eerder als gebieden voor vertaling ](getting-started.md#content-models) identificeerde.
-   1. Op het **Nieuwe gebied van het Bezit**, ga de bezitsnaam in. Bericht dat de opties **** vertalen en **overerven** automatisch worden gecontroleerd.
+   1. Op het **Nieuwe gebied van het Bezit**, ga de bezitsnaam in. Bericht dat de opties **&#x200B;**&#x200B;vertalen en **overerven** automatisch worden gecontroleerd.
    1. Selecteer **toevoegen**.
    1. Herhaal deze stappen voor alle velden die u moet vertalen.
    1. Selecteer **sparen**.
+
       ![ voeg bezit ](assets/add-property.png) toe
 
 U hebt nu uw vertaalregels geconfigureerd.

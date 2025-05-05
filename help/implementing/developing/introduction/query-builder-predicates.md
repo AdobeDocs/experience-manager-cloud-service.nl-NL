@@ -27,7 +27,7 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag; het is impliciet.
 * **`p.limit`** - getal dat het paginaformaat aangeeft.
 * **`p.guessTotal`** - aanbevolen: u kunt het volledige resultaattotaal niet berekenen, wat kostbaar kan zijn. Of een aantal die op het maximumtotaal om te tellen tot (bijvoorbeeld, 1000, een aantal wijst dat gebruikers genoeg terugkoppelt op de ruwe grootte en nauwkeurige aantallen voor kleinere resultaten). Of `true` om alleen tot het minimaal vereiste aantal `p.offset` + `p.limit` te tellen.
 * **`p.excerpt`** - als de waarde is ingesteld op `true` , neemt u het volledige tekstfragment op in het resultaat.
-* **`p.indexTag`** - als de reeks een optie van de indexmarkering in de vraag zal omvatten (zie {de Markering van de Index van de Optie van de 1} Vraag ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).[
+* **`p.indexTag`** - als de reeks een optie van de indexmarkering in de vraag zal omvatten (zie {de Markering van de Index van de Optie van de 1} Vraag [&#128279;](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
 * **`p.facetStrategy`** - als reeks aan `oak`, zal de Bouwer van de Vraag facetextractie aan Oak (zie [ Facetten ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)) afvaardigen.
 * **`p.hits`** - (alleen voor het JSON-servlet) selecteer de manier waarop de treffers als JSON worden geschreven, met deze standaardresultaten (uitbreidbaar via de service ResultHitWriter).
    * **`simple`** - minimale items zoals `path` , `title` , `lastmodified` en `excerpt` (indien ingesteld).

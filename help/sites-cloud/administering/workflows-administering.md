@@ -33,17 +33,21 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. **Lopende werkschema&#39;s** toont het aantal lopende werkschema&#39;s, en hun status. bijvoorbeeld, in de bepaalde getoonde beelden, zijn het aantal **Lopende werkschema&#39;s** en de **Status** van AEM instantie:
 
    * **Status: Gezonde**
+
      ![ status-gezond ](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: Ongezond**
+
      ![ status-ongezond ](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Voor **de details van de Status** van werkschemainstanties, klik **Details**, om het **aantal lopende werkstroominstanties**, **voltooide werkschemainstanties**, **geaborteerde werkschemainstanties**, **ontbroken werkschemainstanties** te tonen, etc. bijvoorbeeld, hieronder zijn de bepaalde beelden die **details van de Status** met tonen:
 
    * **de details van de Status: Gezonde**
+
      ![ status-details-gezond ](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **de details van de Status: Ongezond**
+
      ![ status-details-ongezond ](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -112,7 +116,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 Wanneer een werkschema ontbreekt, AEM verstrekt de **console van Mislukt** om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
 * **Details van de Mislukking**
-Opent een venster om het **Bericht van de Mislukking**, **Stap, en **Stapel van de Mislukking** te tonen.
+Opent een venster om het **Bericht van de Mislukking**, **Stap, en &#x200B;** Stapel van de Mislukking** te tonen.
 
 * **Open Geschiedenis**
 Geeft details van de workflowgeschiedenis weer.
@@ -134,7 +138,7 @@ Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, 
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-Vorm **de Configuratie van de Wrijving van het Werkschema van 0} Adobe granite om werkschemainstanties volgens hun leeftijd en status te zuiveren.** U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
+Vorm **de Configuratie van de Wrijving van het Werkschema van 0&rbrace; Adobe granite om werkschemainstanties volgens hun leeftijd en status te zuiveren.** U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na enkele dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 

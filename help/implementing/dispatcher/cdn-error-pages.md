@@ -47,6 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de gegevensknoop. De waarde van het typebezit zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
 
 

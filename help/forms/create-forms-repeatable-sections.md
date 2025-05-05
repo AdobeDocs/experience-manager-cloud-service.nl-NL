@@ -34,7 +34,7 @@ Aan het einde van dit artikel leert u:
 U kunt het [ Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken, [ Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ Horizontale Lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [ Verticale Lusjes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) of [ Tovenaar ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componenten om secties van een AanpassingsVorm herhaalbaar te maken. U kunt onderliggende componenten aan deze componenten toevoegen om een herhaalbare sectie in een formulier te maken.
 
 
-De voorbeelden in dit document zijn gebaseerd op de [ 1} component van het Comité {. ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) U kunt de identieke stappen uitvoeren om het [ Comité ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [ Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ Horizontale Lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [ Verticale Lusjes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) of [ de componenten van de Tovenaar ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) herhaalbaar te maken.
+De voorbeelden in dit document zijn gebaseerd op de [ 1&rbrace; component van het Comité &lbrace;. ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) U kunt de identieke stappen uitvoeren om het [ Comité ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [ Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ Horizontale Lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [ Verticale Lusjes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) of [ de componenten van de Tovenaar ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) herhaalbaar te maken.
 
 ## Herhaalbare secties in een formulier toevoegen of verwijderen {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -65,7 +65,7 @@ Voer de volgende stappen uit om een deelvenster herhaalbaar te maken:
 Het bovenliggende element van het deelvenster dat moet worden herhaald, moet een knop voor het toevoegen van knoppen bevatten om herhalende instanties van het deelvenster te beheren. Voer de volgende stappen uit om knoppen in te voegen in het bovenliggende element en om scripts in de knoppen in te schakelen:
 
 1. Voeg a **knoopcomponent** aan de ouder van het paneel toe. In de voorbeeldvideo hieronder, voegt een knoopcomponent met de etiketnaam **toe** en gebiedsnaam **AddPanel**, wordt gebruikt. Selecteer de component en selecteer ![ uitgeven-regels ](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
-1. In het venster van de Redacteur van de Regel, leidt de klik **** tot.
+1. In het venster van de Redacteur van de Regel, leidt de klik **&#x200B;**&#x200B;tot.
 
    Selecteer **Visuele Redacteur** in de rij van Objecten en van Functies van de Vorm.
 
@@ -85,8 +85,8 @@ Het bovenliggende element van het deelvenster dat moet worden herhaald, moet een
 
 Het bovenliggende element van het deelvenster moet een verwijderknop bevatten om een exemplaar van de herhaalbare deelvensters te verwijderen. Voer de volgende stappen uit om knopen aan de ouder op te nemen en manuscripten op de knopen toe te laten om herhaalbare panelen te schrappen:
 
-1. Voeg a **knoopcomponent** aan de ouder van het paneel, in de video hieronder toe, schrapt een knoopcomponent met de etiketnaam **** en gebiedsnaam **DeletePanel** wordt gebruikt. Selecteer de component en selecteer ![ uitgeven-regels ](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
-1. In het venster van de Redacteur van de Regel, leidt de klik **** tot.
+1. Voeg a **knoopcomponent** aan de ouder van het paneel, in de video hieronder toe, schrapt een knoopcomponent met de etiketnaam **&#x200B;**&#x200B;en gebiedsnaam **DeletePanel** wordt gebruikt. Selecteer de component en selecteer ![ uitgeven-regels ](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
+1. In het venster van de Redacteur van de Regel, leidt de klik **&#x200B;**&#x200B;tot.
 
    Selecteer **Visuele Redacteur** in de rij van Objecten en van Functies van de Vorm.
 

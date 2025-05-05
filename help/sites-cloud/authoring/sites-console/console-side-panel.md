@@ -20,7 +20,7 @@ Leer hoe te om het zijpaneel in de AEM **console van Plaatsen** te gebruiken om 
 
 Het zijpaneel is door gebrek gesloten wanneer u de **console van Plaatsen** ingaat. Op deze manier wordt het scherm volledig aan uw inhoud gewijd.
 
-Tik of klik het **Zijpaneel** pictogram in de **3} consoletoolbar van Plaatsen {om het zijpaneel te activeren en uw mening van de inhoud te kiezen.**
+Tik of klik het **Zijpaneel** pictogram in de **3&rbrace; consoletoolbar van Plaatsen &lbrace;om het zijpaneel te activeren en uw mening van de inhoud te kiezen.**
 
 * [Alleen inhoud](#content-only)
 * [Inhoudsstructuur](#content-tree)
@@ -79,7 +79,7 @@ Het **paneel van de Chronologie** zijpaneel laat u diverse gebeurtenissen met be
 
 Bovendien kunt u commentaren over het geselecteerde punt toevoegen/bekijken door de **doos van de Commentaar** te gebruiken die bij de bodem van de lijst van gebeurtenissen wordt getoond. Als u een opmerking typt die wordt gevolgd door `Return` , wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
-In de **console van Plaatsen** kunt u tot extra eigenschappen via de ellipsis knoop naast het **3} gebied van de Commentaar {ook toegang hebben.**
+In de **console van Plaatsen** kunt u tot extra eigenschappen via de ellipsis knoop naast het **3&rbrace; gebied van de Commentaar &lbrace;ook toegang hebben.**
 
 * [Een versie opslaan](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Een workflow starten](/help/sites-cloud/authoring/workflows/applying.md)

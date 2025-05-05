@@ -36,7 +36,7 @@ U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de 
 
 U kunt een lancering van of Sites of de console van Lanceringen tot stand brengen:
 
-1. Open de **Sites** of **3} console van Lanceringen {.**
+1. Open de **Sites** of **3&rbrace; console van Lanceringen &lbrace;.**
 
    >[!NOTE]
    >
@@ -93,8 +93,8 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    Als u de console terugkeert (met **Gedaan**) kunt u (en toegang) uw lancering van één van beiden zien:
 
-   * De **console van 0} Lanceringen ](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)[**
-   * De [**Verwijzingen** in de **3} console van Plaatsen ](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)**
+   * De **console van 0&rbrace; Lanceringen [&#128279;](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)**
+   * De [**Verwijzingen** in de **3&rbrace; console van Plaatsen ](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)**
 
 ### Starten met nieuwe sjabloon maken {#create-launch-with-new-template}
 
@@ -131,7 +131,7 @@ Door een geneste opstart te maken (opstart binnen een opstart) kunt u een opstar
 
 Creërend een genestelde lancering van de **console van Lanceringen** is fundamenteel het zelfde als het creëren van een andere vorm van lancering, met de uitzondering die u aan de lanceringstak `/content/launches` moet navigeren:
 
-1. In de **console van 1} Lanceringen** selecteert creeer **.**
+1. In de **console van 1&rbrace; Lanceringen** selecteert creeer **.**
 1. Selecteer **Pagina&#39;s** toevoegen, dan navigeer aan de lanceringstak door `/content/launches` in het **spoor van Filters** te specificeren. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
    ![ Creërend een genestelde lancering ](/help/sites-cloud/authoring/assets/launches-create-nested.png)

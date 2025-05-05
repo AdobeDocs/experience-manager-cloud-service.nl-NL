@@ -35,7 +35,7 @@ ht-degree: 0%
 
 U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samenstellen en valideren op basis van uw inhoud zonder kop voordat u deze gebruikt om de inhoud van uw app of website van stroom te voorzien.
 
-1. De proefversie zonder kop van AEM wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat het **eindpunt van de Demo Assets van 0} AEM {in het** Eindpunt **drop-down menu bij de hoogste juiste hoek van de redacteur wordt geselecteerd.**
+1. De proefversie zonder kop van AEM wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat het **eindpunt van de Demo Assets van 0&rbrace; AEM &lbrace;in het** Eindpunt **drop-down menu bij de hoogste juiste hoek van de redacteur wordt geselecteerd.**
 
 1. Kopieer het volgende codefragment voor een lijstvraag van het vooraf geladen **AEM demo Assets** eindpunt. Een lijstvraag keert een lijst van alle inhoud terug die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
 
@@ -113,7 +113,7 @@ U hebt zojuist een bytepadquery gevalideerd om een specifiek inhoudsfragment op 
 
 Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om uw eigen inhoud te vragen.
 
-1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van de **omslag van Assets van de Demo van 0} AEM {in de** Uw omslag van het Project **.**
+1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van de **omslag van Assets van de Demo van 0&rbrace; AEM &lbrace;in de** Uw omslag van het Project **.**
 
 1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens accolade openen `{` en druk op Ctrl+Space of Option+Space voor een lijst met automatisch aangevulde modellen die in het eindpunt zijn gedefinieerd. Selecteer in de opties het model dat u hebt gemaakt en dat eindigt in `List` . Als u de voorbeelden in de vorige modules volgt, zou u `adventureList` in de auto-volledige lijst moeten vinden.
 

@@ -141,7 +141,7 @@ Er zijn een aantal beschikbare hulpmiddelen en een paar manieren om tot het toeg
    * Navigeer dit overzicht aangezien u het [ overzicht van de productnavigatie ](#product-navigation) wanneer eerst de toegang tot van om het even welke console.
    * Van het [**menu van de Informatie van de Pagina** kunt u **Hulp**](#accessing-help) selecteren om dit op elk ogenblik opnieuw te tonen.
 
-* **Console van Hulpmiddelen** - van de **3} console van Hulpmiddelen {kunt u tot de externe** Middelen **ook toegang hebben:**
+* **Console van Hulpmiddelen** - van de **3&rbrace; console van Hulpmiddelen &lbrace;kunt u tot de externe** Middelen **ook toegang hebben:**
 
    * **Documentatie** - bekijk de documentatie van het Beheer van de Ervaring van het Web
    * **Middelen van de Ontwikkelaar** - de middelen en de downloads van de Ontwikkelaar

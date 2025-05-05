@@ -25,7 +25,7 @@ U kunt als volgt de **[!UICONTROL Submit to SharePoint Document Library]** Hande
 
 AEM Forms verbinden met uw Microsoft® SharePoint Document Library-opslagruimte:
 
-1. Ga naar uw **1} instantie van de Auteur van AEM Forms >**[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**>**[!UICONTROL Microsoft® SharePoint]**.**
+1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >**&#x200B;[!UICONTROL Tools]&#x200B;**>**&#x200B;[!UICONTROL Cloud Services]&#x200B;**>**&#x200B;[!UICONTROL Microsoft® SharePoint]&#x200B;**.**
 1. Nadat u de **[!UICONTROL Microsoft® SharePoint]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL SharePoint Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
@@ -39,7 +39,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint Document Library-opslagruimte:
 
      >[!NOTE]
      >
-     > U kunt de Plaatsen van SharePoint met beperkte toegang ](/help/forms/configure-sharepoint-site-limited-access.md) ook vormen door het `Sites.Selected` toestemmingswerkingsgebied in de Grafiek API van Microsoft te gebruiken. [ `Sites.Selected` is een machtigingsbereik in de Microsoft Graph API die gedetailleerdere en beperkte toegang tot SharePoint-sites toestaat.
+     > U kunt de Plaatsen van SharePoint met beperkte toegang [&#128279;](/help/forms/configure-sharepoint-site-limited-access.md) ook vormen door het `Sites.Selected` toestemmingswerkingsgebied in de Grafiek API van Microsoft te gebruiken.  `Sites.Selected` is een machtigingsbereik in de Microsoft Graph API die gedetailleerdere en beperkte toegang tot SharePoint-sites toestaat.
 
    * Gebruik OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervang `<tenant-id>` door `tenant-id` van uw app via de Microsoft® Azure-portal.
 

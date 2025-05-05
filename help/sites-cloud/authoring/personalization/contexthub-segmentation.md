@@ -18,13 +18,13 @@ Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [
 
 Afhankelijk van de informatie u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, bepaal de segmenten en de strategieën nodig voor uw gerichte inhoud.
 
-Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. {de activiteiten van 0} die ](activities.md) hier worden bepaald kunnen op om het even welke pagina worden omvat en bepalen welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.[
+Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. {de activiteiten van 0} die [&#128279;](activities.md) hier worden bepaald kunnen op om het even welke pagina worden omvat en bepalen welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
 Met AEM kunt u de ervaringen van uw gebruikers eenvoudig aanpassen. Het laat u ook de resultaten van uw segmentdefinities verifiëren.
 
 ## Segmenten openen {#accessing-segments}
 
-De ](audiences.md) console van 0} Soorten publiek {wordt gebruikt om segmenten voor ContextHub en publiek voor uw rekening van Adobe Target te beheren. [ Deze documentatie behandelt het beheren van segmenten voor ContextHub.
+De [&#128279;](audiences.md) console van 0&rbrace; Soorten publiek &lbrace;wordt gebruikt om segmenten voor ContextHub en publiek voor uw rekening van Adobe Target te beheren.  Deze documentatie behandelt het beheren van segmenten voor ContextHub.
 
 Om tot uw segmenten toegang te hebben, in globale navigatie selecteren **Navigatie > Personalization > Soorten publiek**. Selecteer uw configuratie (bijvoorbeeld, Plaats WKND) om uw segmenten te zien:
 
@@ -110,7 +110,7 @@ Het nieuwe segment definiëren:
 
    ![ het Testen voor mensen in Bazel ](../assets/contexthub-comparing-property-value.png)
 
-   Plaats altijd het Type van Gegevens van a **** indien mogelijk om ervoor te zorgen dat uw vergelijkingen behoorlijk worden geëvalueerd. Zie [ Vergelijkingen ](#comparisons) voor meer informatie.
+   Plaats altijd het Type van Gegevens van a **&#x200B;**&#x200B;indien mogelijk om ervoor te zorgen dat uw vergelijkingen behoorlijk worden geëvalueerd. Zie [ Vergelijkingen ](#comparisons) voor meer informatie.
 
 1. Klik **Gedaan** om uw definitie te bewaren:
 1. Voeg desgewenst meer componenten toe. U kunt booleaanse uitdrukkingen formuleren gebruikend de containercomponenten voor EN en OF vergelijkingen (zie [ Gebruikend EN en of Containers ](#using-and-and-or-containers) hieronder). Met de segmentredacteur kunt u componenten schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
@@ -187,7 +187,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Naar een script verwijzen {#referencing-a-script}
 
 1. Creeer segment ContextHub.
-1. Voeg **component van de Verwijzing van 0} Manuscript {in de gewenste plaats van het segment toe.**
+1. Voeg **component van de Verwijzing van 0&rbrace; Manuscript &lbrace;in de gewenste plaats van het segment toe.**
 1. Open uitgeven dialoog van de **component van de Verwijzing van het Manuscript**. Als [ behoorlijk gevormd ](#defining-a-script-to-reference), het manuscript in de **naam van het Manuscript** drop-down zou moeten beschikbaar zijn.
 
 ## Segmenten ordenen {#organizing-segments}
@@ -215,6 +215,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 1. De map wordt weergegeven in de lijst met segmenten.
    * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map verschijnt.
    * U kunt de kolomkoppen selecteren om de sortering aan te passen.
+
      ![ De nieuwe omslag ](../assets/contexthub-folder.png)
 
 ### Bestaande mappen wijzigen {#modify-folders}

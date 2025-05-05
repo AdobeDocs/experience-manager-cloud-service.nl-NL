@@ -62,7 +62,7 @@ Het bouwstijlproces stelt uw code door de volgende drie bevolen fasen op:
 
 ### Implementatiefase van fase {#stage-deployment}
 
-De **fase van de Plaatsing van het 0} Stadium impliceert de volgende stappen:**
+De **fase van de Plaatsing van het 0&rbrace; Stadium impliceert de volgende stappen:**
 
 | Implementatiestap van werkgebied | Beschrijving |
 | --- | --- |
@@ -76,7 +76,7 @@ De **fase van de Plaatsing van het 0} Stadium impliceert de volgende stappen:**
 
 ### Fase van de testfase {#stage-testing}
 
-De **testende 1} fase van het Stadium {impliceert de volgende stappen:**
+De **testende 1&rbrace; fase van het Stadium &lbrace;impliceert de volgende stappen:**
 
 | Teststap werkgebied | Beschrijving |
 | --- | --- |

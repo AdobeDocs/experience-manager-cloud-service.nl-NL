@@ -47,11 +47,11 @@ De **pagina van Pijpleidingen** toont een volledige lijst van alle pijpleidingen
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, klik ![ het lusje van de Pijpleiding - het pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)** Pijpleidingen **tabel.**
+1. Van de **pagina van het Overzicht van het 0&rbrace; Programma, klik ![ het lusje van de Pijpleiding - het pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)** Pijpleidingen **tabel.**
 
 1. Op de **pagina van Pijpleidingen**, kunt u een lijst van alle pijpleidingen voor het programma zien en pijpleiding beginnen en ophouden uitvoeren zoals u in de **Kaart van Pijpleidingen** zou doen.
 
-Als een pijpleiding uitvoert, klik ![ Info - middelgroot pictogram ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in de **3} kolom van de Status {om een pop-up met details over de uitvoering te tonen.** Binnen pop-up, klik **details van de Mening** om de [ details van de pijpleidingsuitvoering ](#view-details) te zien.
+Als een pijpleiding uitvoert, klik ![ Info - middelgroot pictogram ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in de **3&rbrace; kolom van de Status &lbrace;om een pop-up met details over de uitvoering te tonen.** Binnen pop-up, klik **details van de Mening** om de [ details van de pijpleidingsuitvoering ](#view-details) te zien.
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
@@ -70,7 +70,7 @@ De **pagina van de Activiteit** toont een volledige lijst van alle pijpleidingen
 
 1. In de **pagina van de Activiteit**, kunt u een lijst van alle pijpleidingsuitvoeringen voor het programma, met inbegrip van huidige en historische uitvoeringen zien.
 
-Als een pijpleiding uitvoert, kunt u ![ Info - middelgroot pictogram ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in de **3} kolom van de Status {klikken om een pop-up te tonen die u informatie over de uitvoering toont.**
+Als een pijpleiding uitvoert, kunt u ![ Info - middelgroot pictogram ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in de **3&rbrace; kolom van de Status &lbrace;klikken om een pop-up te tonen die u informatie over de uitvoering toont.**
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
@@ -123,7 +123,7 @@ U kunt een pijpleiding uitgeven als het niet loopt.
 
 1. Klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de pijpleiding die u wilt uitgeven.
 
-1. Van het drop-down menu, geeft de klik **** uit.
+1. Van het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
 
 1. In **geef de Pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogdoos uit, geef de zelfde details uit die u toen het creëren van de pijpleiding inging.
 
@@ -182,7 +182,7 @@ U kunt de details van een pijpleiding controleren om de status en de logboeken v
 
    ![ de kwaliteitskwesties van de Code ](assets/managing-pipelines-code-quality-issues.png)
 
-   Het CSV- dossier omvat de kolom van de Plaats van het Dossier van het a ****, die de weg aan de problematische code met betrekking tot het project toont. In tegenstelling, wijst de **kolom van de Plaats van het 0} Dossier op de Gegenereerde weg.**
+   Het CSV- dossier omvat de kolom van de Plaats van het Dossier van het a **&#x200B;**, die de weg aan de problematische code met betrekking tot het project toont. In tegenstelling, wijst de **kolom van de Plaats van het 0&rbrace; Dossier op de Gegenereerde weg.**
 
    ![ van het de aftasten van de code van het Project details ](assets/managing-pipelines-code-quality-details.png)
 

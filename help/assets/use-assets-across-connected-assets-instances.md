@@ -356,7 +356,7 @@ U kunt elementen toevoegen aan de [!DNL Sites] -implementatie, maar deze element
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
-* Om inzicht over activagebruik te krijgen, vorm de ](/help/assets/assets-insights.md) functionaliteit van het Inzicht van 0} Assets {op de [!DNL Sites] instantie.[
+* Om inzicht over activagebruik te krijgen, vorm de [&#128279;](/help/assets/assets-insights.md) functionaliteit van het Inzicht van 0&rbrace; Assets &lbrace;op de [!DNL Sites] instantie.
 * Het gebruik van padbrowser in ontwerpcomponenten wordt niet ondersteund in verbonden elementen.
 
 * U kunt niet de verre activa op de [ Component van het Beeld slepen vormt dialoog ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). U kunt het externe element echter rechtstreeks naar de afbeeldingscomponent op de pagina Sites slepen zonder op **[!UICONTROL Configure]** te klikken.

@@ -39,7 +39,7 @@ Voer de volgende stappen uit als OneDrive wordt geconfigureerd voor AEM Forms-ve
 
 AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
-1. Ga naar uw **1} instantie van de Auteur van AEM Forms >**[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**>**[!UICONTROL Microsoft® OneDrive]**.**
+1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >**&#x200B;[!UICONTROL Tools]&#x200B;**>**&#x200B;[!UICONTROL Cloud Services]&#x200B;**>**&#x200B;[!UICONTROL Microsoft® OneDrive]&#x200B;**.**
 1. Nadat u de **[!UICONTROL Microsoft® OneDrive]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL OneDrive Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De OneDrive-configuratietovenaar wordt weergegeven.

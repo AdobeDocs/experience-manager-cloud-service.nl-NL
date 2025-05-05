@@ -75,10 +75,11 @@ Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
    Wanneer u een **op Edge Delivery Services-Gebaseerde malplaatje** selecteert, wordt de **[!UICONTROL Create]** knoop toegelaten.
 1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
 1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
-1. Klik **[!UICONTROL Create]** en de **Create 2} tovenaar van de Vorm {verschijnt:**
+1. Klik **[!UICONTROL Create]** en de **Create 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt:**
 
    1. Specificeer de **Naam** en **Titel**.
    1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
+
       `https://github.com/wkndforms/edsforms`
 
    ![ creeer de tovenaar van de Vorm ](/help/edge/assets/create-form-wizard.png)
@@ -101,7 +102,7 @@ Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
 
 1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
 1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
-1. Klik **[!UICONTROL Create]** en de **Create 2} tovenaar van de Vorm {verschijnt voor:**
+1. Klik **[!UICONTROL Create]** en de **Create 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt voor:**
    1. Specificeer de **Naam** en **Titel**.
    1. Specificeer de plaats in het **gebied van de Weg** waar de Aangepaste Vorm moet worden bewaard.
 
@@ -167,7 +168,7 @@ Nu kunt u [ vormen voorlegt acties voor vormen ](/help/forms/configure-submit-ac
 
 ### Het formulier publiceren
 
-Om een AanpassingsVorm op Edge Delivery Services te publiceren, moet u [ een Configuratie van Edge Delivery Services op een 1} instantie van AEM tot stand brengen.](#create-an-edge-delivery-services-configuration)
+Om een AanpassingsVorm op Edge Delivery Services te publiceren, moet u [ een Configuratie van Edge Delivery Services op een 1&rbrace; instantie van AEM tot stand brengen.](#create-an-edge-delivery-services-configuration)
 
 #### Een Edge Delivery Services-configuratie maken
 

@@ -52,7 +52,7 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | 2 | [ Begonnen het worden met AEM CIF creatieve grondbeginselen ](getting-started.md) | Leer hoe u productgegevens kunt openen en gebruiken voor uw gebruiksscenario&#39;s. |
 | 3 | [ beheer productcataloguspagina&#39;s en malplaatje ](catalog-templates.md) | Leer hoe u een typische ervaring met productcatalogi maakt. |
 | 4 | [ beheer gestagte ervaringen van de productcatalogus ](staged-catalog.md) | Leer hoe u een toekomstige productcataloguservaring kunt maken met gefaseerde gegevens en AEM. |
-| 5 | {de Ervaringen van het Product van 0} Bouwen ](product-experience-management.md)[ | Krijg om te weten hoe te om productgegevens met overweldigende inhoud in AEM te verhogen. |
+| 5 | {de Ervaringen van het Product van 0} Bouwen [&#128279;](product-experience-management.md) | Krijg om te weten hoe te om productgegevens met overweldigende inhoud in AEM te verhogen. |
 
 ## Volgende functies {#what-is-next}
 

@@ -413,7 +413,7 @@ Het knooppunt `cq:listeners` (knooppunttype `cq:EditListenersConfig` ) definieer
 
 >[!NOTE]
 >
->In het geval van geneste componenten gelden er bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het knooppunt `cq:listeners` . Voor genestelde componenten, moeten de waarden van de volgende eigenschappen **** zijn `REFRESH_PAGE`:
+>In het geval van geneste componenten gelden er bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het knooppunt `cq:listeners` . Voor genestelde componenten, moeten de waarden van de volgende eigenschappen **&#x200B;**&#x200B;zijn `REFRESH_PAGE`:
 >
 >* `aftermove`
 >* `aftercopy`
@@ -451,7 +451,7 @@ Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of 
 
 ## Werking voorvertoning {#preview-behavior}
 
-Het ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM wordt geplaatst wanneer het schakelen naar de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.[
+Het [&#128279;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje van de Wijze WCM wordt geplaatst wanneer het schakelen naar de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 

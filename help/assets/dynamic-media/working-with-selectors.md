@@ -88,7 +88,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
 Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** selecteert op het tabblad **[!UICONTROL Content]** . In Carousel-sets is de elementenkiezer beschikbaar wanneer u een dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Rotatie, is de activaselecteur beschikbaar wanneer u een Reeks van het Beeld, Gemengde Geplaatste Media, of Reeks van de Rotatie creeert.
 
-Zie ook ](/help/assets/search-assets.md#asset-selector) van de Plukker van 0} Activa voor meer informatie.[
+Zie ook [&#128279;](/help/assets/search-assets.md#asset-selector) van de Plukker van 0&rbrace; Activa voor meer informatie.
 
 1. Navigeer naar de Carousel-set en maak een dia. Of navigeer naar de Interactieve video, ga het **[!UICONTROL Content]** lusje, dan uitgezochte activa. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
 1. Selecteer het pictogram **[!UICONTROL Asset Selector]** (map met vergrootglas) en navigeer naar een element.

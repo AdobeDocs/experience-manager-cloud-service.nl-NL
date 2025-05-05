@@ -57,7 +57,7 @@ In de volgende secties wordt een voorbeeld van een nieuwe pagina `b` gebruikt, d
 
 Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
-Dit wordt gedaan gebruikend [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md) van **de Manager van de Uitvoer van CQ WCM van de Dag**. Plaats het van de waarde{**handvat conflict met manueel gecreeerde Pagina&#39;s** ( `rolloutmgr.conflicthandling.enabled`) aan waar als de rollout manager conflicten van een pagina zou moeten behandelen die in Levend Exemplaar met een naam wordt gecreeerd die in de blauwdruk bestaat.
+Dit wordt gedaan gebruikend [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md) van **de Manager van de Uitvoer van CQ WCM van de Dag**. Plaats het van de waarde&lbrace;**handvat conflict met manueel gecreeerde Pagina&#39;s** ( `rolloutmgr.conflicthandling.enabled`) aan waar als de rollout manager conflicten van een pagina zou moeten behandelen die in Levend Exemplaar met een naam wordt gecreeerd die in de blauwdruk bestaat.
 
 AEM heeft [ vooraf bepaald gedrag wanneer het conflictbeheer ](#behavior-when-conflict-handling-deactivated) is gedeactiveerd.
 

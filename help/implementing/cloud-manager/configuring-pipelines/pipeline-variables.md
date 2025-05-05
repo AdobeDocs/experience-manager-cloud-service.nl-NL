@@ -67,9 +67,9 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
    ![ Mening/geef pijpleidingsvariabelen ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png) uit
 
-1. In het **de dialoogvakje van de Configuratie van Variabelen 0} {, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele die u wilt veranderen.**
+1. In het **de dialoogvakje van de Configuratie van Variabelen 0&rbrace; &lbrace;, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele die u wilt veranderen.**
 
-1. In het drop-down menu, geeft de klik **** uit.
+1. In het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
 
    ![ geef veranderlijke ](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png) uit
 
@@ -93,7 +93,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
    ![ Mening/geef pijpleidingsvariabelen ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png) uit
 
-1. In het **de dialoogvakje van de Configuratie van Variabelen 0} {, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele u wilt verwijderen, dan** Schrapping **klikken.**
+1. In het **de dialoogvakje van de Configuratie van Variabelen 0&rbrace; &lbrace;, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele u wilt verwijderen, dan** Schrapping **klikken.**
 
 ## De pijpleidingsvariabelen van de reeks gebruikend Cloud Manager CLI {#cli}
 

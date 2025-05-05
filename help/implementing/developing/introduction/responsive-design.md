@@ -70,7 +70,7 @@ De typische AEM-toepassingsstructuur ondersteunt alle responsieve ontwerpimpleme
 
 Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. Met de AEM-ontwikkelingsprogramma&#39;s en -functies kunt u mediaquery&#39;s effectief en efficiënt implementeren in uw toepassingen.
 
-De W3C groep verstrekt de ](https://www.w3.org/TR/css3-mediaqueries/) aanbeveling van de Vragen van Media 0} {die deze CSS3 eigenschap en de syntaxis beschrijft.[
+De W3C groep verstrekt de [&#128279;](https://www.w3.org/TR/css3-mediaqueries/) aanbeveling van de Vragen van Media 0&rbrace; &lbrace;die deze CSS3 eigenschap en de syntaxis beschrijft.
 
 ### Het CSS-bestand maken {#creating-the-css-file}
 
@@ -205,4 +205,5 @@ container
   </div>
 </div>
 ```
+
 >[!ENDTABS]

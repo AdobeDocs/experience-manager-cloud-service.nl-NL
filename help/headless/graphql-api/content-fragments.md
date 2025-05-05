@@ -177,7 +177,7 @@ Voor Inhoudsfragmenten, zijn de schema&#39;s van GraphQL (structuur en types) ge
 
 >[!CAUTION]
 >
->Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die ****) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
+>Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **&#x200B;**) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
 >
 >Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden uitgelekt; dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
 
@@ -743,7 +743,7 @@ query {
 
 Met webgeoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken:
 
-* Vraag een URL aan een element DAM beeld (die door de Verwijzing van de Inhoud van a **** wordt van verwijzingen voorzien)
+* Vraag een URL aan een element DAM beeld (die door de Verwijzing van de Inhoud van a **&#x200B;**&#x200B;wordt van verwijzingen voorzien)
 
 * Geef parameters door met de query, zodat er automatisch een specifieke uitvoering van de afbeelding wordt gegenereerd en geretourneerd
 
@@ -951,7 +951,7 @@ De volgende beperkingen bestaan:
 
 ## Dynamische levering van media-elementen via URL in GraphQL-query&#39;s{#dynamic-media-asset-delivery-by-url}
 
-GraphQL voor de Fragmenten van de Inhoud van AEM staat u toe om een URL aan een activa van AEM te verzoeken Dynamische Media (Scene7) (die door de Verwijzing van de Inhoud van a **** worden van verwijzingen voorzien).
+GraphQL voor de Fragmenten van de Inhoud van AEM staat u toe om een URL aan een activa van AEM te verzoeken Dynamische Media (Scene7) (die door de Verwijzing van de Inhoud van a **&#x200B;**&#x200B;worden van verwijzingen voorzien).
 
 Met de oplossing in GraphQL kunt u:
 

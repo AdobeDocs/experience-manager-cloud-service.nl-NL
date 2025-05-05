@@ -53,7 +53,7 @@ ht-degree: 0%
 >
 >De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Merkbeheerders en marketeers houden strikte controle over merkmiddelen. Alleen goedgekeurde en nieuwste versie van het middel is beschikbaar voor gebruik, zodat alle kanalen en toepassingen consistent blijven.
 
@@ -81,13 +81,13 @@ Als u de eigenschap wilt weergeven waaraan het veld **[!UICONTROL Review Status]
 
    >[!NOTE]
    >
-   Wanneer u het goedkeuringsdoel selecteert als Content Hub in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie. Wanneer u goedkeuringsdoel als Levering selecteert, zijn de activa beschikbaar aan alle gebruikers.
+   >Wanneer u het goedkeuringsdoel selecteert als Content Hub in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie. Wanneer u goedkeuringsdoel als Levering selecteert, zijn de activa beschikbaar aan alle gebruikers.
 
 1. Klik op **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
-Als uw elementen of mappen een ander standaardschema hebben, moet u deze update uitvoeren in dat specifieke schema.
+>Als uw elementen of mappen een ander standaardschema hebben, moet u deze update uitvoeren in dat specifieke schema.
 
 ## Elementen goedkeuren {#approve-assets}
 
@@ -127,7 +127,7 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
 
    >[!NOTE]
    >
-   Wanneer u het goedkeuringsdoel selecteert als Content Hub in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie. Wanneer u goedkeuringsdoel als Levering selecteert, zijn de activa beschikbaar aan alle gebruikers.
+   >Wanneer u het goedkeuringsdoel selecteert als Content Hub in de Assets-weergave, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie. Wanneer u goedkeuringsdoel als Levering selecteert, zijn de activa beschikbaar aan alle gebruikers.
 1. Klik op **[!UICONTROL Save]**.
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** het nieuwe metagegevensprofiel.
 1. Klik op **[!UICONTROL Apply Metadata Profile to Folder(s)]** in de bovenste actiebalk.
@@ -138,7 +138,7 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
 
 >[!NOTE]
 > 
-Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren. <br> U kunt ook de optie **[!UICONTROL Reprocess]** gebruiken om de wijzigingen van het metagegevensprofiel toe te passen op oudere elementen.
+>Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren. <br> U kunt ook de optie **[!UICONTROL Reprocess]** gebruiken om de wijzigingen van het metagegevensprofiel toe te passen op oudere elementen.
 
 En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt selecteren, gaat u als volgt te werk:
 
@@ -157,7 +157,7 @@ En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt se
 
    >[!NOTE]
    >
-   Als u het doel voor goedkeuring als `Content Hub` selecteert met de Assets-weergave binnen een organisatie, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie.
+   >Als u het doel voor goedkeuring als `Content Hub` selecteert met de Assets-weergave binnen een organisatie, worden de elementen in Content Hub beschikbaar gesteld voor de gebruikers die deel uitmaken van dezelfde organisatie.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -178,6 +178,6 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
 
    >[!NOTE]
    >
-   De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
+   >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
 
 Voor informatie over andere vertoningen die binnen het Dynamische paneel van Media tonen, zie [ Mening en download Dynamische vertoningen van Media ](/help/assets/renditions.md#view-download-dm-renditions).

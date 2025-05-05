@@ -112,7 +112,7 @@ De JSON wordt &#39;as-is&#39; weergegeven in een `pre` -tag, die niet te creatie
    resultToDom(queryResult);
    ```
 
-1. Deze functie geeft alle afbeeldingen die in het JSON-antwoord zijn opgenomen, weer als een `img` -tag. Als de **1} de inhoudsfragmenten van het Avontuur {u creeerde geen beelden omvatten, kunt u omschakeling proberen om de `aem-demo-assets/adventures-all` voortgeduurde vraag te gebruiken door lijn 25 te wijzigen:**
+1. Deze functie geeft alle afbeeldingen die in het JSON-antwoord zijn opgenomen, weer als een `img` -tag. Als de **1&rbrace; de inhoudsfragmenten van het Avontuur &lbrace;u creeerde geen beelden omvatten, kunt u omschakeling proberen om de `aem-demo-assets/adventures-all` voortgeduurde vraag te gebruiken door lijn 25 te wijzigen:**
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';

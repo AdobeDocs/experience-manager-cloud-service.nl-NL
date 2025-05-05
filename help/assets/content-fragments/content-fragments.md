@@ -41,7 +41,7 @@ Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik w
 >
 >De Fragmenten van de inhoud en de Modellen van het Fragment van de Inhoud worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel de Fragmenten van de Inhoud nog van de **Assets** console kunnen worden beheerd, en de Modellen van het Fragment van de Inhoud van de **Hulpmiddelen** console. Deze sectie behandelt beheer van **Assets** en **de consoles van Hulpmiddelen**.
 >
->Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).** Beide editors hebben een knevelschakelaar in de hoogste toolbar om snelle toegang tot de andere redacteur te verlenen.
+>Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3&rbrace; console van de Fragmenten van de Inhoud &lbrace;).** Beide editors hebben een knevelschakelaar in de hoogste toolbar om snelle toegang tot de andere redacteur te verlenen.
 
 Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren, onderhouden en gebruiken van uw inhoudsfragmenten:
 
@@ -129,7 +129,7 @@ Inhoudsfragmenten zijn:
 
 * Gebruikt in de [ paginaredacteur door de component van het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) (van verwijzingen voorzien component):
 
-   * De **component van het Fragment van 0} Inhoud {is beschikbaar aan paginaauteurs.** Hiermee kunnen ze naar het vereiste inhoudsfragment in HTML- of JSON-indeling verwijzen en dit leveren.
+   * De **component van het Fragment van 0&rbrace; Inhoud &lbrace;is beschikbaar aan paginaauteurs.** Hiermee kunnen ze naar het vereiste inhoudsfragment in HTML- of JSON-indeling verwijzen en dit leveren.
 
 * Toegankelijk gebruikend [ AEM GraphQL API ](/help/headless/graphql-api/content-fragments.md).
 
@@ -171,7 +171,7 @@ Assets kan op verschillende manieren worden gebruikt met een inhoudsfragment. El
    * Heeft enige flexibiliteit voor positionering.
    * Bevat niet het concept dat voor een specifiek fragment wordt goedgekeurd.
 
-  Zie {Browser van 0} Assets ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) voor meer informatie.[
+  Zie {Browser van 0} Assets [&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) voor meer informatie.
 
 ### Delen van een inhoudsfragment maken {#constituent-parts-of-a-content-fragment}
 
@@ -249,7 +249,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Wordt gecreeerd als exemplaren van **Hoofd**, maar kan dan zoals vereist worden uitgegeven. Er is inhoudsoverlap tussen de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * De variaties kunnen [ ](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met Hoofd worden gesynchroniseerd als de Hoofdinhoud is bijgewerkt.
+   * De variaties kunnen [&#128279;](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met Hoofd worden gesynchroniseerd als de Hoofdinhoud is bijgewerkt.
    * Kan [ worden samengevat ](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst aan een vooraf bepaalde lengte snel te beknotten.
    * Beschikbaar onder het [ lusje van Variaties ](/help/assets/content-fragments/content-fragments-variations.md) van de fragmentredacteur.
 

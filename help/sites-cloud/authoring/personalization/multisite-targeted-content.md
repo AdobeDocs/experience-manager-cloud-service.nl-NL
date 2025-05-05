@@ -218,7 +218,7 @@ Een site koppelen aan een gebied:
 
    ![ het Verbinden plaatsen ](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0} Gebied en selecteer** sparen **.**
+1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0&rbrace; Gebied en selecteer** sparen **.**
 
    ![ Verwijzing van het Gebied ](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 

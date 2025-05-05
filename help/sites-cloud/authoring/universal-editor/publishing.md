@@ -30,7 +30,7 @@ Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvou
 ![ het Publiceren pagina&#39;s ](assets/publish-menu.png)
 
 1. In de Universele Redacteur, tik of klik [ het **publiceren** pictogram in de Universele het hulpmiddelbar van de Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. Als u de voorproefdienst van a [ ](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **Voorproef** of **publiceren**.
+1. Als u de voorproefdienst van a [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **Voorproef** of **publiceren**.
 1. De **Punten** sectie maakt een lijst van de inhoud die in de publicatie omvat:
    * **Nieuwe** punten die nog niet zijn gepubliceerd.
    * **veranderde** inhoud die is gepubliceerd, maar sinds de laatste publicatie gewijzigd.

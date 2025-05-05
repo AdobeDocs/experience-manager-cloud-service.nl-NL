@@ -84,11 +84,11 @@ Met de inhoudsfragmenten kunt u:
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
-Open de dialoog van de Configuratie van het fragment **** om het fragment voor gebruik op de huidige pagina te vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
+Open de dialoog van de Configuratie van het fragment **&#x200B;**&#x200B;om het fragment voor gebruik op de huidige pagina te vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
 >[!NOTE]
 >
->Zie ook {de Componenten van 0} Kern, de Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)[
+>Zie ook {de Componenten van 0} Kern, de Component van het Fragment van de Inhoud [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
 

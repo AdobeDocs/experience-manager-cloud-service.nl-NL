@@ -85,7 +85,7 @@ Namelijk zult u een configuratie voor de wortel van de inhoud van het merk van h
 1. Navigeer aan **Browser van de Configuratie** door **Hulpmiddelen** te gaan -> **Algemeen** -> **Browser van de Configuratie**.
 1. Selecteer de configuratie die automatisch voor uw project (in dit geval wint) werd gecreeerd en dan tikken of **klikken creeert** in de toolbar.
 1. In **creeer de dialoog van de Configuratie**, verstrek een beschrijvende **Naam** voor uw gelokaliseerde plaats (zoals `Switzerland`) en voor **Titel** gebruik de zelfde titel van de gelokaliseerde grootte (in dit geval `ch`).
-1. Selecteer de **eigenschap van de Configuratie van de Wolk 0} {en om het even welke extra eigenschappen u voor uw project zoals** Bewerkbare Malplaatjes **kunt nodig hebben.**
+1. Selecteer de **eigenschap van de Configuratie van de Wolk 0&rbrace; &lbrace;en om het even welke extra eigenschappen u voor uw project zoals** Bewerkbare Malplaatjes **kunt nodig hebben.**
 1. Tik of klik **creeer**.
 
 Maak configuraties voor elke gelokaliseerde site die u nodig hebt. In het geval van wint, zou u een configuratie voor `de` evenals naast de `ch` configuratie moeten tot stand brengen.

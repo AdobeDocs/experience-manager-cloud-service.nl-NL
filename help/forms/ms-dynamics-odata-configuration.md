@@ -36,7 +36,7 @@ ht-degree: 1%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is beschikbaar in alle uitvoermodi. Voor meer informatie bij het vormen looppas wijzen voor een [!DNL Experience Manager] instantie, zie [ Wijzen van de Looppas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is beschikbaar in alle uitvoermodi. Voor meer informatie bij het vormen looppas wijzen voor een [!DNL Experience Manager] instantie, zie [ Wijzen van de Looppas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
 
 AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
 
@@ -105,6 +105,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    * `Client-ID` is een cliëntID u het gebruiken van om het even welke generator kunt produceren GUID.
    * `redirect-uri` is de URL naar de [!DNL Microsoft Dynamics] OData-cloudservice op [!DNL Experience Manager Forms] . De standaardcloudservice die met de [!DNL Experience Manager Forms] wordt geïnstalleerd, wordt geïmplementeerd op de volgende URL:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Voer de volgende opdracht uit om toegang te verlenen op de AD FS-computer:
@@ -175,7 +176,7 @@ Vervolgens kunt u een adaptief formulier-gebaseerd formuliergegevensmodel (FDM) 
 
 U kunt [ vormen het Model van Gegevens van de Vorm verzendt Actie ](/help/forms/using-form-data-model.md) voor een AanpassingsVorm om gegevens naar Microsoft Dynamics OData te verzenden.
 
-Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van de Vorm (FDM) in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens ](data-integration.md).[
+Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van de Vorm (FDM) in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).
 
 ## Verwante artikelen
 

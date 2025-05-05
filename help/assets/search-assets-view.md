@@ -176,7 +176,7 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
 
    ![ de integratie van Firefly ](assets/firefly-integration.png)
 
-   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer ](https://helpx.adobe.com/in/firefly/using/text-to-image.html) uitgeven.[
+   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer [&#128279;](https://helpx.adobe.com/in/firefly/using/text-to-image.html) uitgeven.
 
    ![ de integratie van Firefly ](assets/bugatti-type-57.png)
 
@@ -380,6 +380,6 @@ Als u moet verstrekken terugkoppelt op de Contextuele eigenschap van het Onderzo
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
 
 

@@ -49,7 +49,7 @@ De AEM-broninstantie wordt mogelijk achter een firewall uitgevoerd, waarbij deze
 Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen wilt oplossen tijdens een extractieproces, kunt u SSL-registratie inschakelen via de System Console van de AEM-bronomgeving door de volgende stappen uit te voeren:
 
 1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen > Verrichtingen > de Console van het Web** of direct aan URL in *https://serveraddress:serverport/system/console/configMgr* te gaan
-1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
+1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud **&#x200B;**
 1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
 1. Laat **toe het registreren ssl voor extractie** plaatsen, dan druk **sparen**:
 
@@ -81,7 +81,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
 1. Meld u aan bij Cloud Acceleration Manager (CAM) en klik op het CAM-project dat u eerder hebt gemaakt om te beoordelen of u klaar bent om naar AEM as a Cloud Service te gaan. Als u geen CAM project hebt gecreeerd, verwijs naar het Creëren van en het Leiden van een Project in CAM.
 
-1. Klik de **kaart van de Overdracht van de Inhoud 0} {om de Vastgestelde mening van de Lijst van de Migratie te openen.**
+1. Klik de **kaart van de Overdracht van de Inhoud 0&rbrace; &lbrace;om de Vastgestelde mening van de Lijst van de Migratie te openen.**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -101,7 +101,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    >[!NOTE]
    >
-   >De naam moet dezelfde conventies hebben als een AEM-knooppunt, zodat deze geen van de volgende tekens kan bevatten: `. / : [ ] | * &lt; > ^ ? { } % # &quot;noch ongebruikelijke symbolen of emojis.
+   >De naam moet dezelfde conventies hebben als een AEM-knooppunt, zodat deze geen van de volgende tekens kan bevatten: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;noch ongebruikelijke symbolen of emojis.
 
 1. De migratielijst wordt nu weergegeven in de lijstweergave. Selecteer het drie puntensymbool (**...**) om drop-down te openen en **de sleutel van de Extractie van het Extractie van het Exemplaar te selecteren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
 
@@ -148,6 +148,7 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
       >Vanaf CTT-versie (3.0.24) zijn er nieuwe functies toegevoegd aan het gereedschap Inhoud overbrengen, waardoor het proces voor het opnemen en uitsluiten van paden is verbeterd. Eerder moesten paden een voor een worden geselecteerd, wat vervelend en tijdrovend was. Gebruikers kunnen nu paden rechtstreeks vanuit de gebruikersinterface opnemen of een CSV-bestand uploaden, afhankelijk van hun voorkeur.
 
    1. **Wegen om** te omvatten: De wegbrowser van het gebruik om wegen te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren. Gebruikers kunnen slechts één optie selecteren om paden op te nemen: in de gebruikersinterface of door een CSV-bestand te uploaden.
+
       >[!IMPORTANT]
       >Voor de volgende paden gelden beperkingen bij het maken van een migratieset:
       >* `/apps`
@@ -177,7 +178,7 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
 
       ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
-1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3} detailsscherm van de Plaats van de Migratie**.
+1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3&rbrace; detailsscherm van de Plaats van de Migratie**.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 

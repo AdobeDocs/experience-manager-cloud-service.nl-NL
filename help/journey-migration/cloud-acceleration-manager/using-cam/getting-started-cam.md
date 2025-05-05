@@ -32,7 +32,7 @@ Ga als volgt te werk om naar Cloud Acceleration Manager (CAM) te navigeren:
 
 1. Logon aan [ Adobe Experience Cloud ](https://experience.adobe.com).
 
-1. Klik **kaart van de Experience Manager 0} {.**
+1. Klik **kaart van de Experience Manager 0&rbrace; &lbrace;.**
 
 1. Klik **Lancering** van de **Cloud Acceleration Manager** kaart zodat kunt u de het landen pagina openen.
 

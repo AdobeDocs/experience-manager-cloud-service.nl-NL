@@ -47,7 +47,7 @@ Gebruik het gegevenstype ArrayList om variabele verzamelingen te maken. U kunt e
 
 Een variabele maken:
 
-1. Voor een AEM instantie, navigeer aan het Pictogram van de Hammer van Hulpmiddelen ](assets/hammer-icon.svg) > Werkschema > Modellen.![
+1. Voor een AEM instantie, navigeer aan het Pictogram van de Hammer van Hulpmiddelen ![&#128279;](assets/hammer-icon.svg) > Werkschema > Modellen.
 1. Selecteer **[!UICONTROL Create]** en geef de titel en een optionele naam voor het workflowmodel op. Selecteer het model en selecteer **[!UICONTROL Edit]** .
 1. Selecteer het Variabelepictogram dat beschikbaar is in de assistent van het workflowmodel en selecteer **[!UICONTROL Add Variable]** .
 

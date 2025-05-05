@@ -38,7 +38,7 @@ De **publiceer** optie laat u onmiddellijk een vorm publiceren. Om een Vorm van 
 
    ![ publiceer en maak vorm ](/help/edge/docs/forms/assets/publish-form-option.png) ongedaan
 
-   Zodra de vorm en zijn verwante activa met succes worden gepubliceerd, verschijnt de dialoog van het Succes van a ****.
+   Zodra de vorm en zijn verwante activa met succes worden gepubliceerd, verschijnt de dialoog van het Succes van a **&#x200B;**.
 1. Klik **dicht**.
 
    ![ de dialoog van het Succes ](/help/forms/assets/publish-success1.png)
@@ -54,7 +54,7 @@ Na met succes het publiceren van de vorm gebruikend **publiceer** optie en zijn 
 
    ![ Unplish dialoog ](/help/forms/assets/unpublish-asset.png)
 
-   Zodra de vorm en zijn verwante activa met succes unpublished zijn, verschijnt de dialoog van het Succes van a ****.
+   Zodra de vorm en zijn verwante activa met succes unpublished zijn, verschijnt de dialoog van het Succes van a **&#x200B;**.
 1. Klik **dicht**.
 
    ![ unpublish succesvol ](/help/forms/assets/unpublishing-start.png)
@@ -104,7 +104,7 @@ Meer formulieren toevoegen voor publicatie:
 
    ![ voeg inhoud ](/help/forms/assets/add-content.png) toe
 
-2. Selecteer de vorm van het **Uitgezochte 1} scherm van de Weg.**
+2. Selecteer de vorm van het **Uitgezochte 1&rbrace; scherm van de Weg.**
 
    ![ voeg inhoud ](/help/forms/assets/add-assets.png) toe
 
@@ -157,7 +157,7 @@ Een formulier plannen voor publiceren of verwijderen:
 
 1. Klik **publiceren** of **unpublish** van **[!UICONTROL Action]**.
 1. Selecteer de locatie **[!UICONTROL Destination]** waar u de inhoud wilt publiceren of de publicatie ervan wilt opheffen.
-   * **Voorproef**: Gebruik de **3} optie van de Voorproef {om aan een de voorproefmilieu van Experience Manager Forms te publiceren of unpublish.** De Experience Manager Forms-voorbeeldomgevingen worden gebruikt om formulieren te testen onder ontwikkelaars.
+   * **Voorproef**: Gebruik de **3&rbrace; optie van de Voorproef &lbrace;om aan een de voorproefmilieu van Experience Manager Forms te publiceren of unpublish.** De Experience Manager Forms-voorbeeldomgevingen worden gebruikt om formulieren te testen onder ontwikkelaars.
    * **publiceer**: Gebruik Experience Manager Forms **publiceren** optie om de vorm naar Experience Manager Forms te verzenden publiceert milieu nadat de vorm klaar is om in een productiemilieu te gebruiken.
 
 1. Selecteer **[!UICONTROL Later]** van **Plannend**.

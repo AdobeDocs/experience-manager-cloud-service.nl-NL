@@ -28,6 +28,7 @@ U kunt door de structuur van uw lancering navigeren van:
 * De Pagina-editor:
 
    * Selecteer **navigeer** om de structuur van de Lancering in de console te openen:
+
      ![ navigeren lancering van de Redacteur van de Pagina ](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

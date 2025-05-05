@@ -79,7 +79,7 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
 1. [ voeg toe:voegen-op van AEM Forms ](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users) toe: Download en installeer toe:voegen-op aanpassing van AEM Forms aan de versie van uw AEM SDK van het [ Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads).
    ![ install-name-forms-add-on ](/help/forms/assets/install-aem-forms-add-on.png)
 
-   ++ + AEM Forms-invoegtoepassing installeren:
+   +++ AEM Forms-invoegtoepassing installeren:
 
    AEM Forms-invoegtoepassing installeren:
 
@@ -87,7 +87,7 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
    1. Voeg het add-on (.far)-bestand van AEM Forms toe aan de map `AEM SDK/crx-quickstart/install` ,
    1. Start AEM SDK opnieuw.
 
-+++
+   +++
 
 1. [ vorm gebruikerstoestemmingen ](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Creeer gebruikers met ontwikkeling, auteursrecht, en andere toestemmingen en voeg deze gebruikers aan vooraf bepaalde vormgroepen toe.
 
@@ -116,7 +116,7 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
 
    Nadat u het AEM project hebt geïmplementeerd, kunt u Adaptieve Forms-sjablonen in uw omgeving zien.
 
-+++
+   +++
 
 
 Voor gedetailleerde instructies en geleidelijke gids bij vestiging uw lokale de ontwikkelomgeving van AEM Forms, verwijs het [ opstelling lokale ontwikkelomgeving voor AEM Forms ](/help/forms/setup-local-development-environment.md) artikel.

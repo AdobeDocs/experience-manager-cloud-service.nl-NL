@@ -21,7 +21,7 @@ In Dynamische media kunt u twee typen profielen maken, die in detail worden besp
 * [Dynamische afbeeldingsprofielen van media](/help/assets/dynamic-media/image-profiles.md)
 * [Dynamische mediavideoprofielen](/help/assets/dynamic-media/video-profiles.md)
 
-Zie ook {de profielen van 0} Meta-gegevens ](/help/assets/metadata-profiles.md).[
+Zie ook {de profielen van 0} Meta-gegevens [&#128279;](/help/assets/metadata-profiles.md).
 
 U moet beheerdersrechten hebben om dynamische profielen voor mediageluurafbeeldingen of dynamische profielen voor mediagelocaties te maken, bewerken en verwijderen.
 
@@ -40,11 +40,11 @@ Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het 
 
 U kunt middelen in een omslag opnieuw verwerken die reeds een bestaand Dynamisch Profiel van het Beeld van Media of een Dynamisch Profiel van Media Video heeft dat u later veranderde.
 
-Stel dat u een dynamisch mediaafbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu, in plaats van het moeten de activa aan de omslag selecteren en opnieuw uploaden over, stelt u eenvoudig het *Dynamische 1} werkschema van Media in werking opnieuw verwerken.*
+Stel dat u een dynamisch mediaafbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu, in plaats van het moeten de activa aan de omslag selecteren en opnieuw uploaden over, stelt u eenvoudig het *Dynamische 1&rbrace; werkschema van Media in werking opnieuw verwerken.*
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen afbeeldingsprofiel of videoprofiel hebt bewerkt of als u al een afbeeldingsprofiel of videoprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met elementen altijd uitvoeren.
 
-U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u het _Dynamische 1} werkschema van Media van het Herverwerken {op een omslag in werking stelt, worden de activa gegroepeerd in partijen, dan verzonden naar de Dynamische server van Media voor verwerking._ Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager] . Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel roundtrips op de Dynamic Media-server.
+U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u het _Dynamische 1&rbrace; werkschema van Media van het Herverwerken &lbrace;op een omslag in werking stelt, worden de activa gegroepeerd in partijen, dan verzonden naar de Dynamische server van Media voor verwerking._ Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager] . Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel roundtrips op de Dynamic Media-server.
 
 Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 
@@ -62,7 +62,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 **om Dynamische activa van Media in een omslag opnieuw te verwerken:**
 
-1. In [!DNL Experience Manager], van de pagina van Assets, navigeer aan een activa omslag die een Profiel van het Beeld of een VideoProfiel heeft dat aan het wordt toegewezen en waarvoor u het **Dynamische 2} werkschema van Media wilt toepassen Reprocess {.**
+1. In [!DNL Experience Manager], van de pagina van Assets, navigeer aan een activa omslag die een Profiel van het Beeld of een VideoProfiel heeft dat aan het wordt toegewezen en waarvoor u het **Dynamische 2&rbrace; werkschema van Media wilt toepassen Reprocess &lbrace;.**
 
    Mappen waaraan een afbeeldingsprofiel of videoprofiel is toegewezen, krijgen de naam van het profiel direct onder de mapnaam in de Kaartweergave.
 

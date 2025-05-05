@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Leer hoe u niet-productiepijpleidingen configureert om de kwaliteit van uw code te testen voordat u deze implementeert in productieomgevingen.
 
-Een gebruiker moet de ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0} om niet-productiepijpleidingen te vormen.**[
+Een gebruiker moet de [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0&rbrace; om niet-productiepijpleidingen te vormen.**
 
 ## Niet-productiepijpleidingen {#non-production-pipelines}
 
@@ -109,11 +109,11 @@ Om de configuratie van de full-stack code non-production pijpleiding te beëindi
 
 1. Klik **sparen**.
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.[
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#128279;](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.
 
 ### Gerichte implementatie {#targeted-deployment}
 
-Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing kunt u verkiezen om **** één van de volgende soorten code te omvatten:
+Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing kunt u verkiezen om **&#x200B;**&#x200B;één van de volgende soorten code te omvatten:
 
 * **Config** - vorm montages voor diverse eigenschappen op uw AEM milieu.
    * Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvat, en om hen in uw bewaarplaats te beheren zodat zij behoorlijk worden opgesteld.
@@ -156,14 +156,14 @@ De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpl
 
    ![ Config pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Als u de Controle van de Ervaring toeliet, ga **** **lusje van de Controle van de Ervaring verder {waar u de wegen kunt bepalen die altijd in de Controle van de Ervaring zouden moeten worden omvat.**
+1. Als u de Controle van de Ervaring toeliet, ga **&#x200B;**&#x200B;**lusje van de Controle van de Ervaring verder &lbrace;waar u de wegen kunt bepalen die altijd in de Controle van de Ervaring zouden moeten worden omvat.**
 
-   * Als u **de Controle van de Ervaring** toeliet, zie de controle van de de 2} Ervaring van het document ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor details op hoe te vormen.[
+   * Als u **de Controle van de Ervaring** toeliet, zie de controle van de de 2&rbrace; Ervaring van het document [&#128279;](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor details op hoe te vormen.
    * Als u dit niet hebt gedaan, slaat u deze stap over.
 
 1. Klik **sparen** om de pijpleiding te bewaren.
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.[
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#128279;](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.
 
 ## Dispatcher-pakketten overslaan {#skip-dispatcher-packages}
 

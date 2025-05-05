@@ -440,7 +440,7 @@ Zie [ Speciale overwegingen voor het creëren van een vooraf ingestelde Kijker v
 
 1. (Optioneel) Selecteer boven aan de pagina Voorinstelling viewer bewerken **[!UICONTROL Desktop]** , **[!UICONTROL Tablet]** of **[!UICONTROL Phone]** om visuele stijlen op unieke wijze te definiëren voor verschillende apparaat- en schermtypen.
 1. Selecteer op de pagina Viewer Preset Editor de tab **[!UICONTROL Behavior]** . U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
-Bijvoorbeeld, voor het *type 0} VideoPlayer, onder **[!UICONTROL Modifiers]**>**[!UICONTROL Playback]**, kunt u uit één van drie adaptieve bitrate het stromen opties selecteren:*
+Bijvoorbeeld, voor het *type 0&rbrace; VideoPlayer, onder **[!UICONTROL Modifiers]**>**[!UICONTROL Playback]**, kunt u uit één van drie adaptieve bitrate het stromen opties selecteren:*
 
    * **[!UICONTROL dash]** - Video&#39;s worden alleen als DASH gestreamd. Op Safari/iOS-apparaten moet u echter **[!UICONTROL hls]** als het type selecteren.
    * **[!UICONTROL hls]** - Video&#39;s worden alleen als HLS gestreamd.

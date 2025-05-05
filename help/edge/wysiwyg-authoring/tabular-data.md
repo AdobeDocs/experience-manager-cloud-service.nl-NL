@@ -31,7 +31,7 @@ Vaak voorkomende gevallen van gebruik zijn:
 * [Omleiding](/help/edge/docs/redirects.md)
 * [ Configuraties ](/help/edge/docs/setup-byo-cdn-push-invalidation.md) zoals voor montages CND
 
-Bovendien kunt u uw spreadsheets ](#own-spreadsheet) van om het even welke structuur tot stand brengen om afbeeldingen voor uw eigen doeleinden op te slaan.[
+Bovendien kunt u uw spreadsheets [&#128279;](#own-spreadsheet) van om het even welke structuur tot stand brengen om afbeeldingen voor uw eigen doeleinden op te slaan.
 
 Dit document gebruikt het voorbeeld van omleidingen om te illustreren hoe u dergelijke spreadsheets kunt maken. Zie de eerder-verbonden onderwerpen in de documentatie van Edge Delivery Services voor details van elk gebruiksgeval.
 
@@ -82,7 +82,7 @@ In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor u
    * De **bestemming** kan of volledig - gekwalificeerde URL zijn als u aan een verschillende website opnieuw richt, of het kan een relatieve weg zijn als u binnen uw eigen website opnieuw richt.
    * Gebruik de Tab-toets om de focus naar de volgende cel te verplaatsen.
    * De redacteur voegt nieuwe rijen aan spreadsheet toe zonodig.
-   * Om een rij te schrappen of te bewegen, gebruik het **1} pictogram van de Schrapping aan het eind van elke rij en de belemmeringshandvatten aan het begin van elke rij, respectievelijk.**
+   * Om een rij te schrappen of te bewegen, gebruik het **1&rbrace; pictogram van de Schrapping aan het eind van elke rij en de belemmeringshandvatten aan het begin van elke rij, respectievelijk.**
 
 ## Werkbladgegevens importeren {#importing}
 
@@ -124,7 +124,7 @@ De aanroep retourneert een HTML-pagina met informatie over de taak-id.
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[ u kunt de **2} console van Banen ](/help/operations/asynchronous-jobs.md) gebruiken om het statuut van de baan te bekijken of identiteitskaart te gebruiken die aan vraag het is teruggekeerd.**
+[ u kunt de **2&rbrace; console van Banen ](/help/operations/asynchronous-jobs.md) gebruiken om het statuut van de baan te bekijken of identiteitskaart te gebruiken die aan vraag het is teruggekeerd.**
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
@@ -216,7 +216,7 @@ Bovendien, kunt u [ uw eigen spreadsheet ](#own-spreadsheet) met willekeurige ko
 
    ![ voeg uw eigen kolommen ](assets/tabular-data/tabular-data-own-spreadsheet.png) toe
 
-   * In de **sectie van Kolommen**, onttikt of klikt **** toevoegt om een nieuwe kolom toe te voegen.
+   * In de **sectie van Kolommen**, onttikt of klikt **&#x200B;**&#x200B;toevoegt om een nieuwe kolom toe te voegen.
    * Geef een naam op voor de kolom.
    * Verwijder of reorganiseer de kolommen gebruikend **Schrapping** en belemmering handvatpictogrammen, respectievelijk.
 

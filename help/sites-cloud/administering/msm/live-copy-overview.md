@@ -31,7 +31,7 @@ U kunt het Live Copy-overzicht openen via het volgende:
 
 ### Verwijzingen naar een vervagingspagina {#references-to-a-blueprint-page}
 
-Het **Levende Overzicht van het Exemplaar** kan van het **3} zijpaneel van Verwijzingen van de** Sites **console worden geopend:**
+Het **Levende Overzicht van het Exemplaar** kan van het **3&rbrace; zijpaneel van Verwijzingen van de** Sites **console worden geopend:**
 
 1. In de **console van Plaatsen**, [ navigeer aan uw blauwdruk pagina en selecteer het ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open het **[spoor van Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references)** en selecteer **Levende Exemplaren**.

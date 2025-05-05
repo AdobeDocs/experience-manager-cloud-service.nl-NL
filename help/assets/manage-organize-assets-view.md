@@ -79,9 +79,9 @@ Gebruik [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voere
 
 * ![ schrappingspictogram ](assets/do-not-localize/delete-icon.png) schrapt de geselecteerde activa of de omslag.
 
-* ](assets/do-not-localize/copy-icon.png) Kopieer het pictogram van 0} exemplaar het geselecteerde dossier of de omslag.![
+* ![&#128279;](assets/do-not-localize/copy-icon.png) Kopieer het pictogram van 0&rbrace; exemplaar het geselecteerde dossier of de omslag.
 
-* ](assets/do-not-localize/move-icon.png) Beweeg het pictogram van de beweging 0} {het geselecteerde activa of de omslag naar een verschillende plaats in de bewaarplaatshiërarchie.![
+* ![&#128279;](assets/do-not-localize/move-icon.png) Beweeg het pictogram van de beweging 0&rbrace; &lbrace;het geselecteerde activa of de omslag naar een verschillende plaats in de bewaarplaatshiërarchie.
 
 * ![ anders noem pictogram ](assets/do-not-localize/rename-icon.png) noem het geselecteerde activa of de omslag anders. Gebruik een unieke naam anders ontbreekt het anders noemen met een waarschuwing. U kunt het opnieuw proberen met een nieuwe naam.
 Bovendien kunt u op de titel van een element of map klikken om de naam ervan te wijzigen. Vermelding de nieuwe tekst in **anders noemt Activa** textbox en klikt **sparen**. Deze mogelijkheid is beschikbaar in de raster-, galerie-, waterval- en lijstweergaven.
@@ -110,7 +110,7 @@ In [!DNL Assets view] worden alleen de relevante opties op de werkbalk weergegev
 
 ## Elementen downloaden en distribueren {#download}
 
-U kunt een of meer elementen of mappen of een combinatie van beide selecteren en de selectie naar uw lokale bestandssysteem downloaden. U kunt de elementen bewerken en opnieuw uploaden of de elementen buiten [!DNL Assets view] verspreiden. Ook, kunt u de vertoningen ](/help/assets/add-delete-assets-view.md#renditions) van een activa [ downloaden.
+U kunt een of meer elementen of mappen of een combinatie van beide selecteren en de selectie naar uw lokale bestandssysteem downloaden. U kunt de elementen bewerken en opnieuw uploaden of de elementen buiten [!DNL Assets view] verspreiden. Ook, kunt u de vertoningen [&#128279;](/help/assets/add-delete-assets-view.md#renditions) van een activa  downloaden.
 
 ## Asset versioning {#versions-of-assets}
 
@@ -274,5 +274,5 @@ Als u het metagegevensveld Vervaldatum aan het formulier wilt toevoegen, sleept 
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
 

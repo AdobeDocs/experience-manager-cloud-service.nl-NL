@@ -54,7 +54,7 @@ Kopieer een adaptief formulier op een van de volgende manieren:
 
 ## Een adaptief formulier plakken {#paste-an-adaptive-form}
 
-Het klikken van de exemplaaractie verlaat automatisch de selectiewijze en maakt het deeg ](assets/Smock_Paste_18_N.svg) pictogram van het Deeg ![ {zichtbaar. Ga nu naar de gewenste omslagweg en klik het deeg ![ ](assets/Smock_Paste_18_N.svg) pictogram van het Deeg {om de gekopieerde Aangepaste Vorm te kleven.
+Het klikken van de exemplaaractie verlaat automatisch de selectiewijze en maakt het deeg ![&#128279;](assets/Smock_Paste_18_N.svg) pictogram van het Deeg  &lbrace;zichtbaar. Ga nu naar de gewenste omslagweg en klik het deeg ![ ](assets/Smock_Paste_18_N.svg) pictogram van het Deeg &lbrace;om de gekopieerde Aangepaste Vorm te kleven.
 
 Als u plakt in dezelfde map of een ander bestand met dezelfde knooppuntnaam (waarmee het bestand is opgeslagen in de CRX-opslagplaats) bestaat in deze doelmap, wordt 1 toegevoegd aan het achtervoegsel (myaf wordt bijvoorbeeld myaf1 en als myaf1 op dezelfde locatie bestaat, wordt myaf myaf2. Alle andere eigenschappen blijven hetzelfde als het oorspronkelijke adaptieve formulier.
 

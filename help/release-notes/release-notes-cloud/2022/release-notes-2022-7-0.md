@@ -103,7 +103,7 @@ U kunt Adobe Experience Manager Assets nu vormen om [ het type van activa te bep
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Browser van de Bewaarplaats [ ](/help/implementing/developing/tools/repository-browser.md) heeft nu een gebied van de weginput, makend het mogelijk om rechtstreeks aan een specifieke omslag in de bewaarplaatshiërarchie te springen
+* Browser van de Bewaarplaats [&#128279;](/help/implementing/developing/tools/repository-browser.md) heeft nu een gebied van de weginput, makend het mogelijk om rechtstreeks aan een specifieke omslag in de bewaarplaatshiërarchie te springen
 * SCD (Sling Content Distribution) ondersteunt nu een expliciete &#39;invalidatie&#39;-actie om inhoud ongeldig te maken zonder dat die inhoud wordt gepubliceerd. Zie [ Caching in AEM as a Cloud Service ](/help/implementing/dispatcher/caching.md#explicit-invalidation) pagina voor verdere details.
 * mod_macro is nu beschikbaar in AEM as a Cloud Service. Zie [ deze lijst ](/help/implementing/dispatcher/disp-overview.md) voor een lijst van gesteunde modules Apache.
 

@@ -44,7 +44,7 @@ Selecteer **Bronnen van het Thema van de Download** om een lokaal exemplaar van 
 
 ## Sjabloonbronnen downloaden {#downloading-template-resources}
 
-{de malplaatjes van de Plaats ](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema ](site-themes.md) bevatten. [ Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
+&lbrace;de malplaatjes van de Plaats [&#128279;](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema ](site-themes.md) bevatten.  Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
 
 Als uw site is gebaseerd op een sitesjabloon en het Sitepaneel in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven, inclusief extra sitemiddelen.
 
@@ -66,7 +66,7 @@ Selecteer **Uitgezochte Versie** om vorige versies van het thema te bekijken.
 
 ![ Uitgezochte themaversie ](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Selecteer de versie u wilt veranderen en dan selecteren **** toepassen om de verandering aan te brengen.
+Selecteer de versie u wilt veranderen en dan selecteren **&#x200B;**&#x200B;toepassen om de verandering aan te brengen.
 
 Als AEM ontdekt dat een nieuwere versie van het thema via de front-end pijpleiding is opgesteld maar niet op uw plaats is toegepast, zal een berichtpictogram tonen.
 

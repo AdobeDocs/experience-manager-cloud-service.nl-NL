@@ -176,7 +176,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ### Variaties maken met GenAI met Variaties genereren {#generate-variations-ai}
 

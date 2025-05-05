@@ -24,7 +24,7 @@ Voer de volgende stappen uit om een AEM toepassingsproject te maken in Cloud Man
 
    ![ vraag-aan-actie zorg voor de tovenaar ](assets/create-wizard1.png)
 
-1. Klik **creëren** om de tovenaar te beginnen en de Titel van uw project **** en **Nieuwe Naam van de Tak** in **te bevestigen creeer een Tak en het venster van het Project**.
+1. Klik **creëren** om de tovenaar te beginnen en de Titel van uw project **&#x200B;**&#x200B;en **Nieuwe Naam van de Tak** in **te bevestigen creeer een Tak en het venster van het Project**.
 
    ![ creeer een tak en project ](assets/create-wizard2.png)
 
@@ -35,7 +35,7 @@ Voer de volgende stappen uit om een AEM toepassingsproject te maken in Cloud Man
 1. Klik **creëren** om het proces van de projectverwezenlijking te beginnen.
 
 
-A **kaart van de Verwezenlijking van het 0} Project vervangt nu de** Tak &amp; van het Project **vraag-aan-actie kaart als bovenkant van het** Overzicht van het Programma **scherm.**
+A **kaart van de Verwezenlijking van het 0&rbrace; Project vervangt nu de** Tak &amp; van het Project **vraag-aan-actie kaart als bovenkant van het** Overzicht van het Programma **scherm.**
 
 ![ de verwezenlijking van het project lopend ](assets/create-wizard3.png)
 

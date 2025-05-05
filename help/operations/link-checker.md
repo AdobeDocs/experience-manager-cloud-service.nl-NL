@@ -109,7 +109,7 @@ Alle andere pictogrammen in het venster Externe koppelingencontrole zijn inactie
 
 De koppelingencontrole is automatisch uit-de-doos beschikbaar in AEM. Nochtans, zijn er verscheidene configuraties OSGi die kunnen worden gewijzigd om zijn gedrag te veranderen:
 
-* **de Opslagdienst van de Opslag van de Info van de Verbinding van 0} Dag CQ - Deze dienst bepaalt de grootte van het geheime voorgeheugen van de Controleur van de Verbinding in de bewaarplaats.**
+* **de Opslagdienst van de Opslag van de Info van de Verbinding van 0&rbrace; Dag CQ - Deze dienst bepaalt de grootte van het geheime voorgeheugen van de Controleur van de Verbinding in de bewaarplaats.**
 * {de Dienst van de Controle van de Verbinding van 0} Dag CQ **- Deze dienst voert asynchrone controle van de syntaxis van externe verbindingen uit.**
    * U kunt de controleperiode bepalen en welke typen koppelingen door de controleur onder andere worden overgeslagen.
 * **CQ van de Verbinding van de Dag CQ Taak** - Deze dienst voert de bevestiging van GET van externe verbindingen uit.

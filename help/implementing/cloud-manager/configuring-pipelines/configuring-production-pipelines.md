@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu&#39;s te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan het werkgebiedmilieu op. Bij goedkeuring, stelt het de zelfde code aan het productiemilieu op.
 
-Een gebruiker moet de ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0} om productiepijpleidingen te vormen.**[
+Een gebruiker moet de [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0&rbrace; om productiepijpleidingen te vormen.**
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ Voer de eerste paar tekens van de naam van de vertakking in en met de functie vo
 
 Wanneer de pijpleidingslooppas, de wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd en op prestaties, toegankelijkheid, SEO, beste praktijken, en de tests van PWA worden gebaseerd geëvalueerd. Voor meer details, zie [ Begrijpingsresultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.[
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#128279;](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.
 
 ### Vorm een gerichte plaatsingspijpleiding {#targeted-deployment}
 
-Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing, kunt u verkiezen om **** één van de volgende soorten code te omvatten:
+Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing, kunt u verkiezen om **&#x200B;**&#x200B;één van de volgende soorten code te omvatten:
 
 * **Config** - vorm montages voor diverse eigenschappen in uw AEM milieu.
    * Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvat, en om hen in uw bewaarplaats te beheren zodat zij behoorlijk worden opgesteld.
@@ -162,7 +162,7 @@ Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM to
 
 1. Klik **sparen**.
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.[
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#128279;](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.
 
 ## Dispatcher-pakketten overslaan {#skip-dispatcher-packages}
 

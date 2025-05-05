@@ -44,7 +44,7 @@ De `aio-cli-plugin-aem-cloud-service-migration` -plug-in bestaat uit twee hoofdo
 
 ## Beschikbaarheid {#availability}
 
-Zie {het Middel van 0} Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) waar u over gebruik kunt leren en hoe u aan deze insteekcode kunt bijdragen die in GitHub open-sourced is.[
+Zie {het Middel van 0} Git: ao-cli-stop-aem-wolk-dienst-migratie [&#128279;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) waar u over gebruik kunt leren en hoe u aan deze insteekcode kunt bijdragen die in GitHub open-sourced is.
 
 >[!NOTE]
 >De insteekmodule is momenteel geïntegreerd met AEM Dispatcher Converter en Repository Modernizer.

@@ -1,5 +1,5 @@
 ---
-description: Maak automatisch gegenereerde sitemapbestanden waarnaar vanuit uw ` robots.txt' moet worden verwezen. Dit helpt bij SEO en de ontdekking van nieuwe inhoud.
+description: Maak automatisch gegenereerde sitemapbestanden waarnaar vanuit uw &grave; robots.txt' moet worden verwezen. Dit helpt bij SEO en de ontdekking van nieuwe inhoud.
 title: Sitemaps
 feature: Edge Delivery Services
 exl-id: cdc12747-6003-4744-819e-d17e010901e7

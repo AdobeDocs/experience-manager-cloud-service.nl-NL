@@ -138,7 +138,7 @@ U kunt dit doen door een reeks omslagen binnen **te creëren Dossiers** sectie v
 
 ![ creeer de optie van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Een dialoog opent waar u de details kunt ingaan, dan bevestig met **** creëren:
+Een dialoog opent waar u de details kunt ingaan, dan bevestig met **&#x200B;**&#x200B;creëren:
 
 ![ creeer de dialoog van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 

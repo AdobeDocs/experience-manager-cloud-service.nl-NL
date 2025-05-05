@@ -53,7 +53,7 @@ De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het ka
    * Voeg een nieuwe [ niet-productiepijplijn ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) toe, als u de controle op een front-end of ontwikkelings volledig-stapelpijpleiding wilt toelaten.
    * Of, kunt u [ een bestaande pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) uitgeven, en de bestaande opties bijwerken.
 
-1. Om de Controle van de Ervaring te gebruiken wanneer het toevoegen van of het uitgeven van een niet productiepijplijn, selecteer het **checkbox van de Controle van de Ervaring 0}.** U kunt deze optie op het **Code van Source** lusje vinden.
+1. Om de Controle van de Ervaring te gebruiken wanneer het toevoegen van of het uitgeven van een niet productiepijplijn, selecteer het **checkbox van de Controle van de Ervaring 0&rbrace;.** U kunt deze optie op het **Code van Source** lusje vinden.
 
    ![ toelatend de Controle van de Ervaring ](assets/experience-audit-enable.jpg)
 
@@ -97,7 +97,7 @@ U kunt tot de volledige controleresultaten toegang hebben door het **lusje van R
 >
 >In de volgende secties wordt beschreven hoe u de resultaten van de Experience Audit kunt bekijken.
 >
->* Om meer details op te leren hoe de controlewerken, zie {de Details van de Evaluatie van de Controle van 0} Ervaring ](#details).[
+>* Om meer details op te leren hoe de controlewerken, zie {de Details van de Evaluatie van de Controle van 0} Ervaring [&#128279;](#details).
 >* Om te weten hoe te om een Controle van de Ervaring op bestelling in werking te stellen, zie [ Rapporten van de Controle op bestelling ](#on-demand).
 >* Als u kwesties met de controle ervaart, zie [ de Uitdagingen van de Controle van de Ervaring ](#issues).
 
@@ -182,7 +182,7 @@ De aftasten op bestelling brengen een Controle van de Ervaring voor de recentste
 
 Op voltooiing, wordt de scores grafiek automatisch bijgewerkt, en u kunt de resultaten precies zoals voor een aftasten van de pijpleidingsuitvoering inspecteren.
 
-U kunt het scoregrafiek filtreren dat op het trekkertype door de **selecteur te gebruiken 0} Trigger {wordt gebaseerd.**
+U kunt het scoregrafiek filtreren dat op het trekkertype door de **selecteur te gebruiken 0&rbrace; Trigger &lbrace;wordt gebaseerd.**
 
 ![ de filter van de Trekker ](assets/experience-audit-on-demand-trigger.png)
 

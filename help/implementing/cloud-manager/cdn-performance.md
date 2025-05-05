@@ -32,7 +32,7 @@ Het CDN-dashboard is beschikbaar op de overzichtspagina van elk programma.
 
    ![ Mijn programmapagina ](assets/my-programs.png)
 
-1. Op de **pagina van het Overzicht van het 0} Programma van uw programma, scrol neer onder de** Milieu **en** Pijpleidingen **kaarten om de** kaart van Prestaties **te zien.**
+1. Op de **pagina van het Overzicht van het 0&rbrace; Programma van uw programma, scrol neer onder de** Milieu **en** Pijpleidingen **kaarten om de** kaart van Prestaties **te zien.**
 
    ![ Prestaties ](assets/cdn-performance-overview.png)
 

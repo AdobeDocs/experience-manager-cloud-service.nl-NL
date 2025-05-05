@@ -264,7 +264,7 @@ Initialiseert de winkel.
 * **`name`:** De naam van de opslag.
 * **`config`:** Een object dat configuratie-eigenschappen bevat:
    * `eventDeferring`: de standaardwaarde is 32.
-   * `eventing`: Het {](#contexthub-utils-eventing) voorwerp 1} ContextHub.Utils.Event voor deze opslag. [ De standaardwaarde is die van het object `ContextHub.eventing` .
+   * `eventing`: Het {[&#128279;](#contexthub-utils-eventing) voorwerp 1} ContextHub.Utils.Event voor deze opslag.  De standaardwaarde is die van het object `ContextHub.eventing` .
    * `persistence`: Het `ContextHub.Utils.Persistence` -object voor deze winkel. De standaardwaarde is het `ContextHub.persistence` -object.
 
 #### isEventPaused() {#iseventingpaused}
@@ -385,7 +385,7 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
 
 * **`serviceConfig`:** Een object dat de volgende eigenschappen bevat:
    * `host`: (String) De servernaam of het IP-adres.
-   * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Wanneer waar, {callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
+   * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Wanneer waar, &lbrace;callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
    * `params`: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
    * `path`: (Koord) de weg aan de dienst.
    * `port`: (Number) Het poortnummer van de service.
@@ -412,7 +412,7 @@ Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opge
 Een object met de volgende eigenschappen:
 
 * **`host`:** (Koord) de servernaam of IP adres.
-* **`jsonp`:** (Van Boole) de waarde van waar wijst erop dat de dienst een dienst JSONP is, anders vals. Wanneer waar, {callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
+* **`jsonp`:** (Van Boole) de waarde van waar wijst erop dat de dienst een dienst JSONP is, anders vals. Wanneer waar, &lbrace;callback: &quot;ContextHub.Callbacks.*Object.name* wordt voorwerp toegevoegd aan het service.params voorwerp.
 * **`params`:** (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
 * **`path`:** (Koord) de weg aan de dienst.
 * **`port`:** (Aantal) het havenaantal van de dienst.

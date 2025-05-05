@@ -68,7 +68,7 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
    * Adaptief streamen (DASH/HLS) zorgt voor een betere kijkervaring voor video&#39;s
    * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
 
-* De dynamische Opname van Media _0} - Experimenteer met testbeelden of Dynamische Media URLs, om de output van verschillende beeldbepalingen te zien, en slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerkbandbreedte, en de Verhouding van het Pixel van het Apparaat te beoordelen._ Zie [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* De dynamische Opname van Media _0&rbrace; - Experimenteer met testbeelden of Dynamische Media URLs, om de output van verschillende beeldbepalingen te zien, en slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerkbandbreedte, en de Verhouding van het Pixel van het Apparaat te beoordelen._ Zie [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 
 ### Functie in [!DNL Assets] prerelease {#prerelease-feature-assets}
 

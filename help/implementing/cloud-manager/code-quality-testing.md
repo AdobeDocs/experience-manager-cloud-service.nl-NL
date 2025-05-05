@@ -70,7 +70,7 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 
 >[!NOTE]
 >
->Zie {de Metrische Definities van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) voor meer gedetailleerde definities.[
+>Zie {de Metrische Definities van 0} SonarQube [&#128279;](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) voor meer gedetailleerde definities.
 
 >[!NOTE]
 >

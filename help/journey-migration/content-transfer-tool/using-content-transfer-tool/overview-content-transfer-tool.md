@@ -22,7 +22,7 @@ ht-degree: 29%
 
 Het gereedschap Inhoud overbrengen is een door Adobe ontwikkeld programma dat kan worden gebruikt om de migratie van bestaande inhoud van een AEM-broninstantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie te starten.
 
-Met dit gereedschap worden ook groepen automatisch overgedragen.  Zie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0} voor meer informatie.[
+Met dit gereedschap worden ook groepen automatisch overgedragen.  Zie [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0&rbrace; voor meer informatie.
 
 Met het gereedschap Inhoud overbrengen wordt het proces voor inhoudsoverdracht geïntegreerd met Cloud Acceleration Manager. Hierdoor krijgt de gebruiker alle voordelen die het biedt:
 

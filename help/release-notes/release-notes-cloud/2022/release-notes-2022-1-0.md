@@ -106,7 +106,7 @@ De releasedatum voor Cloud Manager is 20 januari 2022.01.0 in AEM as a Cloud Ser
 ### Wat is er nieuw? {#what-is-new-cm}
 
 * Cloud Manager zal [ vermijden herbouwend de codebasis wanneer het ontdekt dat het zelfde gat ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingsuitvoeringen wordt gebruikt.
-* De toegang tot van het AEM milieulogboek vereist nu het **productprofiel van de Manager van de Plaatsing 0}.** Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
+* De toegang tot van het AEM milieulogboek vereist nu het **productprofiel van de Manager van de Plaatsing 0&rbrace;.** Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
 * UI zal niet front-end pijpleidingsconfiguratie voor een programma toestaan waar de Plaatsen niet als oplossing wordt toegelaten.
 * Bij het genereren van een wachtwoord voor een kit wordt de vervaldatum weergegeven.
 

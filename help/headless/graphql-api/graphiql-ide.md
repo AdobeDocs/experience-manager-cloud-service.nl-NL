@@ -112,11 +112,11 @@ Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vor
 
 1. De **Kopballen** optie is toegankelijk via de drie verticale punten rechts van de voortgeduurde vraagnaam (ver linkerpaneel):
 
-   ![ de Verblijfsde Kopballen van het Geheime voorgeheugen van HTTP van de Vraag 1} de Verblijfsde Kopballen van HTTP van de Vraag ")](assets/cfm-graphqlapi-headers-01.png "
+   ![ de Verblijfsde Kopballen van het Geheime voorgeheugen van HTTP van de Vraag 1&rbrace; de Verblijfsde Kopballen van HTTP van de Vraag ")] (assets/cfm-graphqlapi-headers-01.png "
 
 1. Het selecteren van dit opent de **dialoogdoos van de Configuratie van het Geheime voorgeheugen**:
 
-   ![ de Verblijfsde Montages van de Kopbal van HTTP- Geheime voorgeheugen van de Vraag 1} de Verblijfsde Montages van de Kopbal van HTTP van de Vraag ")](assets/cfm-graphqlapi-headers-02.png "
+   ![ de Verblijfsde Montages van de Kopbal van HTTP- Geheime voorgeheugen van de Vraag 1&rbrace; de Verblijfsde Montages van de Kopbal van HTTP van de Vraag ")] (assets/cfm-graphqlapi-headers-02.png "
 
 1. Selecteer de gewenste parameter en pas vervolgens de gewenste waarde aan:
 

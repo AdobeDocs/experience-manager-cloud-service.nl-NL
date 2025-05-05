@@ -131,7 +131,7 @@ Voer de onderstaande stappen uit als u afbeeldingen wilt bewerken met de ingeslo
 1. Klik **Assets**, ga een omslag in, en selecteer een beeld.
 1. Klik **Open in Adobe Express**. De afbeelding wordt geopend op een express canvas.
 1. Breng de gewenste wijzigingen in de afbeelding aan.
-1. Als uw project u vereist om meer pagina&#39;s toe te voegen, **** klikt, selecteert activa, gaat een omslag in, selecteert een beeld om op de canvaspagina te brengen, en voert dan de vereiste uitgeeft aan het beeld uit.
+1. Als uw project u vereist om meer pagina&#39;s toe te voegen, **&#x200B;**&#x200B;klikt, selecteert activa, gaat een omslag in, selecteert een beeld om op de canvaspagina te brengen, en voert dan de vereiste uitgeeft aan het beeld uit.
 1. Om één of meerdere activa te bewaren, klik **sparen**. In het dialoogvenster Opslaan worden de opslagopties weergegeven. Als u een keuze wilt maken tussen de opslagopties, volgt u een van de onderstaande instructies die op uw vereiste is afgestemd:
    1. Om één enkele pagina te bewaren, klik **sparen als Versie** om het beeld als nieuwe versie (het behouden van het originele formaat) uit te voeren, en het te bewaren in de zelfde omslag.
 
@@ -233,7 +233,7 @@ TBD: Insert a video of the available social media options.
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

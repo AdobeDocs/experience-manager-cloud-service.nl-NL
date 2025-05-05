@@ -64,7 +64,7 @@ Aan uw project kunnen de volgende tegels zijn gekoppeld. Elk wordt beschreven in
 
 ### Assets {#assets}
 
-In de **tegel van 0} Assets {, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.**
+In de **tegel van 0&rbrace; Assets &lbrace;, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.**
 
 ![ de tegel van Assets ](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
@@ -82,7 +82,7 @@ Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juis
 
 ### Ervaringen {#experiences}
 
-De **tegel van de Ervaring 0} laat u een Mobiele app, een website, of een publicatie aan het project toevoegen.**
+De **tegel van de Ervaring 0&rbrace; laat u een Mobiele app, een website, of een publicatie aan het project toevoegen.**
 
 ![ Ervaringen ](/help/sites-cloud/authoring/assets/project-experiences.png)
 

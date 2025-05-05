@@ -199,7 +199,7 @@ Er zijn meerdere validatiepatronen beschikbaar voor een veld. Om een validatiepa
 
 ### Validatie-expressies {#validation-expressions}
 
-De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3} lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
+De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
 
 ## Aanvullende informatie {#additional-information}
 
@@ -219,7 +219,7 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 * Als u formuliervelden opnieuw wilt instellen, kunt u de `guideBridge.reset()` API activeren op de klikexpressie van een knop. Er is ook een verzend API die als klikuitdrukking `guideBridge.submit()`**kan worden geroepen.**
 
-* U kunt de API van `setFocus()` gebruiken om de focus in te stellen op verschillende velden of deelvensters (voor de vensterfocus wordt automatisch ingesteld op het eerste veld). `setFocus()` verstrekt een brede waaier van opties om te navigeren zoals navigatie over panelen, vorige/volgende traversal, plaatsend nadruk aan een bepaald gebied, en vele meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: ` guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
+* U kunt de API van `setFocus()` gebruiken om de focus in te stellen op verschillende velden of deelvensters (voor de vensterfocus wordt automatisch ingesteld op het eerste veld). `setFocus()` verstrekt een brede waaier van opties om te navigeren zoals navigatie over panelen, vorige/volgende traversal, plaatsend nadruk aan een bepaald gebied, en vele meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: &grave; guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
 
 * Gebruik `guideBridge.validate(errorList, somExpression).` om een adaptief formulier of de specifieke deelvensters te valideren
 

@@ -25,7 +25,7 @@ Deze twee eigenschappen kunnen worden gecombineerd om voor websites te behandele
 
 >[!TIP]
 >
->Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen. [ Het is een geleid pad door uw AEM Sites-inhoud te vertalen met behulp van AEM krachtige vertaalhulpmiddelen. Ideaal als u geen AEM of vertaalervaring hebt.
+>Als u aan het vertalen van inhoud nieuw bent, zie [&#128279;](/help/journey-sites/translation/overview.md) de Vertaalreis van 0&rbrace; Plaatsen.  Het is een geleid pad door uw AEM Sites-inhoud te vertalen met behulp van AEM krachtige vertaalhulpmiddelen. Ideaal als u geen AEM of vertaalervaring hebt.
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 

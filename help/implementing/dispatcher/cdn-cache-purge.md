@@ -44,7 +44,7 @@ curl
 -H 'X-AEM-Purge: soft'
 ```
 
-Zoals aangetoond in het voorbeeld hierboven, kunt u **** naar keuze specificeren als CDN a **hard** (gebrek) of a **zachte** zuivering op de caching voorwerpen zou moeten uitvoeren.
+Zoals aangetoond in het voorbeeld hierboven, kunt u **&#x200B;**&#x200B;naar keuze specificeren als CDN a **hard** (gebrek) of a **zachte** zuivering op de caching voorwerpen zou moeten uitvoeren.
 
 De standaard harde purge maakt de inhoud onmiddellijk ontoegankelijk voor nieuwe verzoeken tot de inhoud van de oorsprong wordt teruggewonnen. Met de optie Zacht leegmaken wordt de inhoud als verouderd gemarkeerd, maar blijft deze aan de klanten toekomen, zodat ze niet hoeven te wachten totdat de inhoud uit de oorsprong wordt opgehaald.
 

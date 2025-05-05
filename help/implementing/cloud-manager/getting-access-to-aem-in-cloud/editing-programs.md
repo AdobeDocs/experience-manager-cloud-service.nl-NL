@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Programma&#39;s bewerken {#editing-programs}
 
-Om programma&#39;s te beheren en uit te geven, begin bij [**Mijn Programma&#39;s** console ](/help/implementing/cloud-manager/navigation.md). De **Mijn pagina van Programma&#39;s** verstrekt een overzicht van alle programma&#39;s waartot u toegang hebt. Wanneer het selecteren van een individueel programma, verstrekt de **pagina van het Overzicht van het 0} Programma details van het programma in een blik.**
+Om programma&#39;s te beheren en uit te geven, begin bij [**Mijn Programma&#39;s** console ](/help/implementing/cloud-manager/navigation.md). De **Mijn pagina van Programma&#39;s** verstrekt een overzicht van alle programma&#39;s waartot u toegang hebt. Wanneer het selecteren van een individueel programma, verstrekt de **pagina van het Overzicht van het 0&rbrace; Programma details van het programma in een blik.**
 
 Van het **Overzicht van het Programma**, kunnen de gebruikers met de vereiste toestemmingen [ productieprogramma&#39;s uitgeven die in uw organisatie ](creating-production-programs.md) worden gecreeerd en [ zandbakprogramma&#39;s die in uw organisatie ](creating-sandbox-programs.md) worden gecreeerd. Door een programma te bewerken kunt u:
 

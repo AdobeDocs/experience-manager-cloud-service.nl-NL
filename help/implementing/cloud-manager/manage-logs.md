@@ -45,7 +45,7 @@ Ga als volgt te werk om logbestanden te downloaden:
 
 1. Nadat u de service hebt geselecteerd, klikt u op het downloadpictogram naast het logbestand dat u wilt ophalen.
 
-U kunt tot uw logboeken van de **pagina van Milieu {ook toegang hebben.**
+U kunt tot uw logboeken van de **pagina van Milieu &lbrace;ook toegang hebben.**
 
 ![ Logs van het scherm van Milieu&#39;s ](assets/download-logs.png)
 

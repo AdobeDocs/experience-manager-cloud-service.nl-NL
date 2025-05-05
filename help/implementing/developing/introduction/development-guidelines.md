@@ -59,7 +59,7 @@ Het wordt sterk aanbevolen dat uitgaande HTTP-verbindingen redelijke time-outs v
 
 Voor code die deze time-outs niet toepast, dwingen AEM-instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-outs af. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen.
 
-Adobe adviseert het gebruik van de verstrekte [ Cliënt 4.x van HttpComponents van Apache {](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van de verbindingen van HTTP.
+Adobe adviseert het gebruik van de verstrekte [ Cliënt 4.x van HttpComponents van Apache &lbrace;](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van de verbindingen van HTTP.
 
 Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid zelf nodig kan zijn, zijn:
 

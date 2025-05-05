@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [ ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) creeert uw Fragmenten van de Inhoud u [ Multiline tekstgebieden ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunt hebben die met het **StandaardType** van **wordt bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
+Wanneer u [&#128279;](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) creeert uw Fragmenten van de Inhoud u [ Multiline tekstgebieden ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunt hebben die met het **StandaardType** van **wordt bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
 
 ![ de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur ](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -130,7 +130,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
+Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &ast; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 

@@ -263,13 +263,13 @@ In de volgende afbeelding ziet u de AEM-groepen die overeenkomen met de productp
 
 >[!NOTE]
 >
->Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **** rol van de Gebruiker van Cloud Manager.
+>Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **&#x200B;**&#x200B;rol van de Gebruiker van Cloud Manager.
 >
->De gebruikers met slechts de **rol van de Gebruiker 0} Cloud Manager kunnen in Cloud Manager registreren en aan de de auteursmilieu&#39;s van AEM navigeren (als zij) bestaan door de** Programma&#39;s **menuopties te gebruiken.** De **rol van de Gebruiker van 0} Cloud Manager {is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
+>De gebruikers met slechts de **rol van de Gebruiker 0&rbrace; Cloud Manager kunnen in Cloud Manager registreren en aan de de auteursmilieu&#39;s van AEM navigeren (als zij) bestaan door de** Programma&#39;s **menuopties te gebruiken.** De **rol van de Gebruiker van 0&rbrace; Cloud Manager &lbrace;is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
 
 >[!WARNING]
 >
->De **Beheerders van AEM** productprofielnaam moet niet worden veranderd. Het veranderen van de naam van het **productprofiel van de Beheerders van AEM** {zal beheerderrechten uit alle gebruikers verwijderen die aan dat profiel worden toegewezen.
+>De **Beheerders van AEM** productprofielnaam moet niet worden veranderd. Het veranderen van de naam van het **productprofiel van de Beheerders van AEM** &lbrace;zal beheerderrechten uit alle gebruikers verwijderen die aan dat profiel worden toegewezen.
 
 >[!TIP]
 >

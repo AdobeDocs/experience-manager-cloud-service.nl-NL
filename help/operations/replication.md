@@ -66,7 +66,7 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
    ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
-1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
+1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
 
    ![ Treeactivation ](/help/operations/assets/new-treeactivationstep.png)
 
@@ -148,7 +148,7 @@ U kunt ook een workflowmodel maken waarin de processtap `Publish Content Tree` w
    ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
-1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
+1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
 
    ![ Treeactivation ](/help/operations/assets/newstep.png)
 
@@ -193,6 +193,7 @@ Hieronder volgen voorbeelden van logboeken die worden gegenereerd tijdens een wo
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### Replicatie-API {#replication-api}

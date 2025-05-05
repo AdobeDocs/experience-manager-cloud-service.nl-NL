@@ -105,7 +105,7 @@ Voer de volgende stappen uit om de configuratie van de cloudservice van [!DNL Mi
 
 1. Selecteer **[!UICONTROL Authentication Type]** als **OAuth2.0**.
 1. Specificeer **identiteitskaart van de Cliënt** (die als identiteitskaart van de Toepassing wordt bedoeld) en **Geheime Cliënt** voor de verbonden toepassing.
-U kunt **identiteitskaart van de Cliënt 1} terugwinnen en** Geheime Cliënt **van de Azure Actieve Toepassing van de Folder.**
+U kunt **identiteitskaart van de Cliënt 1&rbrace; terugwinnen en** Geheime Cliënt **van de Azure Actieve Toepassing van de Folder.**
 
    ![ identiteitskaart van de Cliënt en Geheime Cliënt ](/help/forms/assets/dynamics-azure-app-resgistration.png)
 
@@ -140,7 +140,7 @@ U kunt het FDM (Form Data Model) maken met de gemaakte cloudconfiguratie van [!D
 1. Selecteer de gecreeerde wolkenconfiguratie van **Uitgezochte Gegevensbron** tabel.
    ![ Uitgezochte de Configuratie van de Wolk ](/help/forms/assets/dynamics-select-cloud-config.png)
 
-1. Klik uitgeven ![ ](assets/edit.png) pictogram uitgeven {om het Model van de Gegevens van de Vorm (FDM) te bekijken en te vormen.
+1. Klik uitgeven ![ ](assets/edit.png) pictogram uitgeven &lbrace;om het Model van de Gegevens van de Vorm (FDM) te bekijken en te vormen.
 
 Daarna, kunt u [ het Model van de Gegevens van de Vorm (FDM) vormen ](/help/forms/work-with-form-data-model.md#configure-services) en het gebruiken in diverse Aanpassings het gebruiksgevallen van de Vorm, zoals:
 

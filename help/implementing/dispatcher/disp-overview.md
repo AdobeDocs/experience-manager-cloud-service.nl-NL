@@ -32,7 +32,7 @@ De Dispatcher Tools maakt deel uit van de algemene AEM as a Cloud Service SDK en
 
 ## De gereedschappen downloaden en uitpakken {#extracting-the-sdk}
 
-De Hulpmiddelen van Dispatcher, een deel van [ AEM as a Cloud Service SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kunnen van een zip dossier bij het [ 3} portaal van de Distributie van de Software worden gedownload. ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt voor implementatie in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
+De Hulpmiddelen van Dispatcher, een deel van [ AEM as a Cloud Service SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kunnen van een zip dossier bij het [ 3&rbrace; portaal van de Distributie van de Software worden gedownload. ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt voor implementatie in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
 Pak de SDK uit, die Dispatcher Tools voor macOS, Linux® en Windows bundelt.
 

@@ -168,6 +168,7 @@ U kunt een aangepaste functie maken met of zonder jsdoc-opmerkingen.
             // code to be executed
         }
 ```
+
 Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt deze door de functienaam in de regeleditor weergegeven. Het wordt echter aanbevolen JavaScript-annotaties op te nemen om de leesbaarheid van de aangepaste functies te verbeteren.
 
 ### Pijlfunctie met verplichte JavaScript-annotaties of -opmerkingen

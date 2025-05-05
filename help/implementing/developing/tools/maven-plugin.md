@@ -31,7 +31,7 @@ In dit document wordt beschreven hoe u deze taken beheert met de Maven. Nochtans
 
 >[!NOTE]
 >
->De verwezenlijking van het pakket **** wordt nu bezeten door het [ Pakket Maven van het Pakket Apache Jackrabbit FileVault Pakket ](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
+>De verwezenlijking van het pakket **&#x200B;**&#x200B;wordt nu bezeten door het [ Pakket Maven van het Pakket Apache Jackrabbit FileVault Pakket ](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
 >Dit artikel beschrijft de **plaatsing** van de geconstrueerde pakketten aan AEM zoals uitgevoerd door het Pakket Maven van de Inhoud van de Adobe.
 
@@ -90,7 +90,7 @@ De doelstellingen die volmachten voor AEM gebruiken de eerste geldige volmachtsc
 
 ### Algemene parameters {#common-parameters}
 
-De parameters in de volgende lijst zijn gemeenschappelijk aan alle doelstellingen behalve wanneer genoteerd in de **1} kolom van Doelen {.**
+De parameters in de volgende lijst zijn gemeenschappelijk aan alle doelstellingen behalve wanneer genoteerd in de **1&rbrace; kolom van Doelen &lbrace;.**
 
 | Naam | Type | Vereist | Standaardwaarde | Beschrijving | Doelen |
 |---|---|---|---|---|---|

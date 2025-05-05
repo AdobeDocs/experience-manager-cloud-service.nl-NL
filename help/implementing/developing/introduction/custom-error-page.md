@@ -25,7 +25,7 @@ AEM biedt een `404.jsp` -script onder `/libs/sling/servlet/errorhandler` om op f
 
 >[!NOTE]
 >
->Op een auteursinstantie, ](/help/implementing/deploying/configuring-osgi.md) wordt de Debug Filter van 0} CQ WCM toegelaten door gebrek. [ Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, [&#128279;](/help/implementing/deploying/configuring-osgi.md) wordt de Debug Filter van 0&rbrace; CQ WCM toegelaten door gebrek.  Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
 >Op publiceer instantie, is CQ WCM zuivert Filter **altijd** gehandicapt (zelfs als gevormd zoals toegelaten).
 
@@ -77,7 +77,7 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 
 >[!CAUTION]
 >
->Op een auteursinstantie, ](/help/implementing/deploying/configuring-osgi.md) wordt de Debug Filter van 0} CQ WCM toegelaten door gebrek. [ Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, [&#128279;](/help/implementing/deploying/configuring-osgi.md) wordt de Debug Filter van 0&rbrace; CQ WCM toegelaten door gebrek.  Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
 >Voor een douane fout-manager, zijn de reacties met code 500 nodig - zodat moet de [ CQ WCM zuivert Filter ](/help/implementing/deploying/configuring-osgi.md) worden onbruikbaar gemaakt. Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >

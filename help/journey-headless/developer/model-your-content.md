@@ -48,7 +48,7 @@ Dit artikel bouwt verder op deze basisbeginselen zodat u begrijpt hoe u uw eigen
 
 *het is een grote, slechte wereld daar*.
 
-Misschien, maar misschien niet. Het is zeker gecompliceerde a ****** wereld daar en de gegevens modellering wordt gebruikt om een vereenvoudigde vertegenwoordiging van een zeer (zeer) kleine onderafdeling te bepalen, gebruikend de specifieke informatie die voor een bepaald doel nodig is.
+Misschien, maar misschien niet. Het is zeker gecompliceerde a **&#x200B;**&#x200B;** wereld daar en de gegevens modellering wordt gebruikt om een vereenvoudigde vertegenwoordiging van een zeer (zeer) kleine onderafdeling te bepalen, gebruikend de specifieke informatie die voor een bepaald doel nodig is.
 
 >[!NOTE]
 >

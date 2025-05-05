@@ -56,5 +56,5 @@ Om beide gebruiksgevallen te steunen, moet de a [ configuratie ](/help/implement
    * Dit wordt automatisch gemaakt wanneer u uw site maakt in de indeling `/conf/<site-name>` .
 1. Tik of klik **annuleer** in het eigenschappenvenster en navigeer aan **Assets** -> **Dossiers** en selecteer uw omslag DAM.
 1. Tik of klik **Eigenschappen** in de hulpmiddelbar.
-1. Op het **lusje van de Diensten van de Wolk 1} van het eigenschappenvenster, op het** gebied van de Configuratie van de Wolk **, selecteer de zelfde configuratie zoals u eerder noteerde.**
+1. Op het **lusje van de Diensten van de Wolk 1&rbrace; van het eigenschappenvenster, op het** gebied van de Configuratie van de Wolk **, selecteer de zelfde configuratie zoals u eerder noteerde.**
 1. Tik of klik **sparen &amp; sluit**.

@@ -37,7 +37,7 @@ AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale
 
 ## Front-end ontwikkeling voor AEM as a Cloud Service {#fed-for-aemaacs}
 
-Alle JavaScript, CSS, en andere front-end activa zouden in de {](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van de AEM. [ Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
+Alle JavaScript, CSS, en andere front-end activa zouden in de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van de AEM.  Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
 
 Het archetype kan de bronnen vervolgens compileren in één CSS- en JS-bestand en deze automatisch insluiten in een `cq:clientLibraryFolder` in de opslagplaats.
 
@@ -299,7 +299,7 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 U kunt kiezen om de configuratie van preprocessoren per clientbibliotheek of systeembreed te configureren.
 
 * De eigenschappen multivalue `cssProcessor` en `jsProcessor` toevoegen aan het clientbibliotheekknooppunt
-* Of bepaal de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek 0} HTML**
+* Of bepaal de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek 0&rbrace; HTML**
 
 Een preprocessorconfiguratie op de clientlib knoop neemt belangrijkheid over de configuratie OSGI.
 
@@ -341,7 +341,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Voor meer details op opties GCC, zie {de documentatie van 0} GCC ](https://developers.google.com/closure/compiler/docs/compilation_levels).[
+Voor meer details op opties GCC, zie {de documentatie van 0} GCC [&#128279;](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Systeemstandaardminiatuur instellen {#set-system-default-minifier}
 
@@ -349,7 +349,7 @@ YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit o
 
 1. Ga naar Apache Felix Config Manager op (`http://<host>:<port/system/console/configMgr`)
 1. Vind en geef de **Manager van de Bibliotheek van de HTML van de Adobe Granite** uit.
-1. Laat **toe** optie {indien niet reeds toegelaten).
+1. Laat **toe** optie &lbrace;indien niet reeds toegelaten).
 1. Plaats het Standaard van de Bewerker van waarde **JS vormt** aan `min:gcc`.
    * Opties kunnen worden doorgegeven als deze worden gescheiden met een puntkomma, bijvoorbeeld `min:gcc;obfuscate=true` .
 1. Klik **sparen** om de veranderingen te bewaren.

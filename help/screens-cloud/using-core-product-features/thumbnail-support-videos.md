@@ -42,7 +42,7 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
    >[!NOTE]
    >Leren hoe te om een kanaal tot stand te brengen en inhoud aan een kanaal toe te voegen, zie [ Creërend en het Leiden een Kanaal in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
-1. Selecteer het kanaal. Voor de actiebar, geeft de klik **** uit om de redacteur te openen.
+1. Selecteer het kanaal. Voor de actiebar, geeft de klik **&#x200B;**&#x200B;uit om de redacteur te openen.
 
 
    ![ geef knoop op actiebar ](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png) uit.
@@ -57,11 +57,11 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
    ![ Geselecteerde beeld van videoactiva met pijl die aan het Configure pictogram richten, geportretteerd als moersleutel. op de toolbar ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
-1. Het **Video** dialoogvakje opent waar u de **3} dalingsstreek van de Duimnagel {kunt bekijken.**
+1. Het **Video** dialoogvakje opent waar u de **3&rbrace; dalingsstreek van de Duimnagel &lbrace;kunt bekijken.**
 
    ![ de dialoogdoos die van de Video beeld van videoactiva en de duimnageldoos toont ](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
-1. De belemmering en laat vallen een beeld van de activa plukker aan de **1} dalingsstreek van de Duimnagel {en klikt** Gedaan **.**
+1. De belemmering en laat vallen een beeld van de activa plukker aan de **1&rbrace; dalingsstreek van de Duimnagel &lbrace;en klikt** Gedaan **.**
 
    ![ de beeldplukker van Activa die achter de Videodialoogdoos met beeldactiva wordt getoond in de de dalingsdoos van de Duimnagel ](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 

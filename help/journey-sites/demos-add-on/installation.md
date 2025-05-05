@@ -57,13 +57,13 @@ Cloud Manager wordt gebruikt voor het beheer van de cloudbronnen die uw AEM Proj
 
 >[!TIP]
 >
->Als u over Cloud Manager in detail wilt leren, zie ](#additional-resources) sectie van de Middelen van 0} Extra van Middelen {voor verbindingen aan meer informatie.[
+>Als u over Cloud Manager in detail wilt leren, zie [&#128279;](#additional-resources) sectie van de Middelen van 0&rbrace; Extra van Middelen &lbrace;voor verbindingen aan meer informatie.
 
 ### Programma&#39;s {#programs}
 
 Wanneer u in Cloud Manager ondertekent, hebt u toegang tot één of meerdere **programma&#39;s**. Een programma kan op verschillende manieren worden gedefinieerd, maar het is het eenvoudigst om eraan te denken dat het verband houdt met de sites en ervaringen die verband houden met één merkidentiteit.
 
-Als u in Cloud Manager ondertekent die **WKND Reizen en de Onderneming van het Avontuur vertegenwoordigt**, zou u a **WKND 3} programma en a** WKND achtertuinProjecten **programma kunnen tot stand brengen.** Beide programma&#39;s zouden AEM omgevingen hebben voor het beheer van de bijbehorende sites.
+Als u in Cloud Manager ondertekent die **WKND Reizen en de Onderneming van het Avontuur vertegenwoordigt**, zou u a **WKND 3&rbrace; programma en a** WKND achtertuinProjecten **programma kunnen tot stand brengen.** Beide programma&#39;s zouden AEM omgevingen hebben voor het beheer van de bijbehorende sites.
 
 ### Sandboxen {#sandboxes}
 

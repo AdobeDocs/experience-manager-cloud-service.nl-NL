@@ -183,14 +183,17 @@ Een rollout-configuratie maken:
 1. Voeg de volgende eigenschappen toe aan dit knooppunt:
 
    * **Naam**: `jcr:title`
+
      **Type**: `String`
      **Waarde**: Een identificerende titel die in UI zal verschijnen
 
    * **Naam**: `jcr:description`
+
      **Type**: `String`
      **Waarde**: Een facultatieve beschrijving.
 
    * **Naam**: `cq:trigger`
+
      **Type**: `String`
      **Waarde**: De [ Trigger van de Uitvoer ](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) om worden gebruikt
       * `rollout`
@@ -206,7 +209,7 @@ De configuraties van de rollout worden opgeslagen onder de [ knoop van de rollou
 
 Voeg onderliggende knooppunten van het type `cq:LiveSyncAction` toe om synchronisatiehandelingen toe te voegen aan de rollout-configuratie. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
 
-1. In CRXDE Lite, selecteer uw ](#create-the-rollout-configuration) knoop van de Configuratie van de Output 0} {, bijvoorbeeld, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.[
+1. In CRXDE Lite, selecteer uw [&#128279;](#create-the-rollout-configuration) knoop van de Configuratie van de Output 0&rbrace; &lbrace;, bijvoorbeeld, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Maak een knooppunt met de volgende knoopeigenschappen:
 
@@ -598,7 +601,7 @@ De talen wijzigen:
 1. Klik **Hulpmiddelen**, **Verrichtingen** toen **Console van het Web**. Van deze console klik **OSGi**, toen **Configuratie**.
 1. Bepaal de plaats en klik {de Manager van de Taal van 0} Dag CQ WCM **, en verander de waarde van** Lijst van de Taal **aan `/apps/wcm/core/resources/languages`, dan klik** sparen **.**
 
-   {de Manager van de Taal van 0} Dag CQ WCM ](assets/msm-language-manager.png)![
+   {de Manager van de Taal van 0} Dag CQ WCM ![&#128279;](assets/msm-language-manager.png)
 
 ## MSM-vergrendelingen configureren in pagina-eigenschappen {#configuring-msm-locks-on-page-properties}
 
@@ -636,6 +639,7 @@ Of een pagina-eigenschap moet worden geïmplementeerd en, afhankelijk van het an
       * **Type**: `String`
       * **Waarde**: Houdt de naam van het bezit in overweging en is vergelijkbaar met de waarde van het bezit `name`
          * Zie bijvoorbeeld
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wanneer `cq-msm-lockable` is gedefinieerd, wordt de interactie tussen het verbreken en sluiten van de keten en MSM als volgt uitgevoerd:

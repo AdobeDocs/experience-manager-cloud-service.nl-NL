@@ -193,7 +193,7 @@ Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de al
      >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
    * Selecteer de vorm en klik het **[!UICONTROL Properties]** ![ Eigenschappen ](assets/Smock_Info_18_N.svg) pictogram dat in de toolbar verschijnt.
-   * Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het ](assets/Smock_Info_18_N.svg) oogpictogram van Eigenschappen 0} {op het hogere recht, en klik dan Eigenschappen in de lijst onder het.![
+   * Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het ![&#128279;](assets/Smock_Info_18_N.svg) oogpictogram van Eigenschappen 0&rbrace; &lbrace;op het hogere recht, en klik dan Eigenschappen in de lijst onder het.
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
 

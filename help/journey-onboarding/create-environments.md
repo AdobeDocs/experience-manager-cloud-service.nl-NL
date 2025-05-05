@@ -45,7 +45,7 @@ In het kader van deze instapreis creëert u een ontwikkelomgeving die u kunt geb
 
 1. Selecteer het programma waaraan u een omgeving wilt toevoegen.
 
-1. Om een milieu toe te voegen, van de **pagina van het Overzicht van het 0} Programma, op de** Milieu **kaart, uitgezocht** voeg Milieu **toe.**
+1. Om een milieu toe te voegen, van de **pagina van het Overzicht van het 0&rbrace; Programma, op de** Milieu **kaart, uitgezocht** voeg Milieu **toe.**
 
    ![ kaart van Milieu&#39;s ](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -67,7 +67,7 @@ In het kader van deze instapreis creëert u een ontwikkelomgeving die u kunt geb
 
 1. Klik **sparen** om het gespecificeerde milieu toe te voegen.
 
-Zodra het milieu beschikbaar is, kunnen de leden van uw organisatie die aan het **productprofiel van de 1} ontwikkelaar** wordt toegewezen zich bij Cloud Manager aanmelden en Cloud Manager git bewaarplaatsen beheren.
+Zodra het milieu beschikbaar is, kunnen de leden van uw organisatie die aan het **productprofiel van de 1&rbrace; ontwikkelaar** wordt toegewezen zich bij Cloud Manager aanmelden en Cloud Manager git bewaarplaatsen beheren.
 
 ## Volgende functies {#whats-next}
 

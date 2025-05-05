@@ -52,7 +52,7 @@ ht-degree: 0%
 >
 >De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Het effectief beheren van digitale middelen is van cruciaal belang voor het aanbieden van aantrekkelijke en consistente merkervaringen op verschillende online platforms. Dynamic Media met OpenAPI-mogelijkheden verbetert het beheer van digitale middelen door naadloze integratie tussen AEM Sites en AEM Assets as a Cloud Service mogelijk te maken. Met deze vernieuwende functie kunt u eenvoudig verschillende typen goedgekeurde digitale middelen delen en beheren in meerdere AEM-omgevingen, waardoor workflows voor siteauteurs en inhoudseditors worden gestroomlijnd.
 
@@ -77,6 +77,7 @@ Ondersteuning voor externe middelen die gebruik maken van Dynamic Media met Open
 * Opstelling de volgende [ milieuvariabelen ](/help/implementing/cloud-manager/environment-variables.md#add-variables) voor AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` verwijst naar de programma-id <br>
      `eYYYY` verwijst naar de milieu-id
 
@@ -133,7 +134,7 @@ Met Dynamic Media met OpenAPI-mogelijkheden hebt u toegang tot de middelen die b
 Voer de onderstaande stappen uit om externe middelen te gebruiken in de AEM Page Editor op uw AEM Sites-exemplaar. U kunt deze integratie uitvoeren in AEM as a Cloud Service en AEM 6.5.
 
 1. Ga naar **[!UICONTROL Sites]** > _uw website_ waar AEM **[!UICONTROL Page]** aanwezig is waarin u het verre activa moet toevoegen.
-1. Selecteer de pagina en klik **[!UICONTROL Edit (_e _)]**. De AEM **[!UICONTROL Page Editor]**wordt geopend.
+1. Selecteer de pagina en klik **[!UICONTROL Edit (_e _)]**. De AEM **[!UICONTROL Page Editor]**&#x200B;wordt geopend.
 1. Klik op de container voor lay-out en voeg een component **[!UICONTROL Image]** toe.
 1. Klik de **[!UICONTROL Image]** component en klik ![ montagespictogram ](/help/assets/assets/do-not-localize/settings-icon.svg) pictogram.
 1. Schakel de optie **[!UICONTROL Inherit featured image from page]** uit.
@@ -161,7 +162,7 @@ Voer de onderstaande stappen uit om Externe elementen te gebruiken in AEM Conten
 
    >[!NOTE]
    >
-   Als u geen model van het Fragment van de Inhoud van AEM hebt, kunt u [ moeten tot één ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) leiden.
+   >Als u geen model van het Fragment van de Inhoud van AEM hebt, kunt u [ moeten tot één ](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en) leiden.
 
 1. Klik het ![ controlemerkpictogram ](/help/assets/assets/do-not-localize/checkmark-icon.svg) pictogram naast de tekstcomponent.
 1. Selecteer **[!UICONTROL Remote]** om het element op te halen van de externe DAM. <br>

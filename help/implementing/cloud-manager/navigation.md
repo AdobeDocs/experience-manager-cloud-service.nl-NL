@@ -63,7 +63,7 @@ De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Mana
 1. Klik de organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
 1. Klik ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (de schakelaar van Oplossingen) om snel aan andere oplossingen van het Experience Cloud te springen.
 1. Klik ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) om u snelle toegang tot het leren en steunmiddelen te geven.
-1. Klik het pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([ Meldingen ](/help/implementing/cloud-manager/notifications.md)) om berichten en aankondigingen, onder andere te zien.![
+1. Klik het pictogram van de Bell ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([ Meldingen ](/help/implementing/cloud-manager/notifications.md)) om berichten en aankondigingen, onder andere te zien.
 1. Klik op het pictogram voor gebruikerstoegang tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 #### Programmawerkbalk {#program-toolbar}
@@ -81,14 +81,14 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 De statistiek en de vraag-aan-actie sectie verstrekt gezamenlijke gegevens voor uw organisatie, bijvoorbeeld, als u met succes uw programma&#39;s hebt opgezet, zouden de statistieken van uw activiteiten in de afgelopen 90 dagen kunnen tonen, die omvatten:
 
 * Aantal [ plaatsingen ](/help/implementing/cloud-manager/deploy-code.md)
-* Aantal ](/help/implementing/cloud-manager/code-quality-testing.md) geïdentificeerde kwesties van de 0} codekwaliteit[
+* Aantal [&#128279;](/help/implementing/cloud-manager/code-quality-testing.md) geïdentificeerde kwesties van de 0&rbrace; codekwaliteit
 * Aantal builds
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.
 
 ### Sectie Mijn programma&#39;s {#my-programs-section}
 
-De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3} sectie van Programma&#39;s.**
+De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3&rbrace; sectie van Programma&#39;s.**
 
 De **Mijn van Programma&#39;s** sectie maakt een lijst van kaarten die elk programma vertegenwoordigen. Klik een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
@@ -215,7 +215,7 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties e
 * ![ het pictogram van de Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [ Plaatsen van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - beheert de plaatsen van Edge Delivery
 * ![ pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ Montages van het Domein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de namen van het douanedomein voor het programma
 * ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - beheer SSL certificaten voor het programma
-* ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ Toewijzingen van het Domein 1} Sociale netwerkpictogram ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de Toewijzingen van het Domein![
+* ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ Toewijzingen van het Domein 1&rbrace; Sociale netwerkpictogram ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de Toewijzingen van het Domein
 * ![ het lijstpictogram van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepalen lijsten van gewenste personen voor bepaalde IP adressen
 * ![ het pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [ Reeksen van de Inhoud ](/help/implementing/developing/tools/content-copy.md) - Reeksen inhoud die voor exemplaardoeleinden wordt gecreeerd
 * ![ pictogram van de Geschiedenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [ de Activiteit van de Inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md) - de activiteiten van het Inhoudsexemplaar
@@ -243,7 +243,7 @@ Voor een levend programma, de status van uw laatste plaatsing met verbindingen v
 
 De **kaart van Milieu** geeft u een overzicht van uw milieu&#39;s en verbindingen voor snelle acties.
 
-De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik {het pictogram van het 0} Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen** om alle milieu&#39;s van het programma te zien.![
+De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik {het pictogram van het 0} Werkschema ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen** om alle milieu&#39;s van het programma te zien.
 
 Zie ook [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) beheren.
 
@@ -251,7 +251,7 @@ Zie ook [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) behe
 
 De **Pijpleidingen** kaart geeft u een overzicht van uw pijpleidingen en verbindingen voor snelle acties.
 
-De **Pijpleidingen** kaart maakt slechts van drie pijpleidingen een lijst. Klik {het pictogram van het 0} Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen** om alle pijpleidingen van het programma te zien.![
+De **Pijpleidingen** kaart maakt slechts van drie pijpleidingen een lijst. Klik {het pictogram van het 0} Werkschema ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen** om alle pijpleidingen van het programma te zien.
 
 Zie ook [ leiden Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) voor details op hoe te om uw pijpleidingen te beheren.
 
@@ -263,4 +263,4 @@ De **kaart van Prestaties** geeft een overzicht van het **[CDN Dashboard](/help/
 
 ### Nuttige bronnen {#useful-resources}
 
-De **Nuttige 1} sectie van Middelen {verstrekt verbindingen aan extra het leren middelen voor Cloud Manager.**
+De **Nuttige 1&rbrace; sectie van Middelen &lbrace;verstrekt verbindingen aan extra het leren middelen voor Cloud Manager.**

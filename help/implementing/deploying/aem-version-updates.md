@@ -85,7 +85,7 @@ En als een geautomatiseerde update van een ontwikkelomgeving mislukt, worden de 
    * Versnelt leversnelheid/frequentie voor mislukte productiepijplijnen. Identificeer kwesties in niet-prod pijpleidingen door het Functionele Testen van het Product, het Aangepast Functioneren Testen, en het Testen van de UI van de Douane toe te laten.
 
 * **Exemplaar van de Inhoud**
-   * Het Exemplaar van de Inhoud van het gebruik ](/help/implementing/developing/tools/content-copy.md) om gelijkaardige inhoudssets aan een niet-prod milieu te bewegen.[
+   * Het Exemplaar van de Inhoud van het gebruik [&#128279;](/help/implementing/developing/tools/content-copy.md) om gelijkaardige inhoudssets aan een niet-prod milieu te bewegen.
 
 * **Geautomatiseerd Functioneel het Testen**
    * Neem de automatische test op in de pijplijn, zodat u kritieke functionaliteit kunt testen.

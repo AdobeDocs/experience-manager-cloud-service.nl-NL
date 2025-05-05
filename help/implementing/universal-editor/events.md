@@ -27,7 +27,7 @@ Alle gebeurtenissen volgen een naamgevingsconventie.
 
 `aue:content-update` en `aue:ui-select`
 
-De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [ ](/help/implementing/universal-editor/calls.md).
+De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, gelieve te zien de de Universele Vraag van de Redacteur van het document [&#128279;](/help/implementing/universal-editor/calls.md).
 
 ## Gebeurtenissen voor bijwerken van inhoud {#content-events}
 

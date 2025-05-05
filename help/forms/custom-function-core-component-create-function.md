@@ -109,6 +109,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
          #base=js
        function.js
    ```
+
 1. Voeg in de map `js` het javascript-bestand toe als `function.js` dat de aangepaste functies bevat:
 
    ```javascript
@@ -133,6 +134,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
     return age;
     }
    ```
+
 1. Sla de bestanden op.
 
 ![ de omslagstructuur van de douanefunctie ](/help/forms/assets/custom-function-added-files.png)
@@ -146,7 +148,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 1. Sla het bestand op.
 
-![ de filter xml van de douanefunctie {](/help/forms/assets/custom-function-filterxml.png)
+![ de filter xml van de douanefunctie &lbrace;](/help/forms/assets/custom-function-filterxml.png)
 
 **stel de pas gecreëerde de bibliotheekomslag van de Cliënt aan uw AEM milieu** op
 

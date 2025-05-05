@@ -33,7 +33,7 @@ Voordat u begint met het maken van uw eerste aangepaste verzendactie voor Adapti
 
 In het onderstaande diagram worden de stappen beschreven voor het maken van een aangepaste verzendactie voor een adaptieve vorm:
 
-![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) {width=50%, hoogte-50%)
+![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) &lbrace;width=50%, hoogte-50%)
 
 ### Clone AEM as a Cloud Service Git-gegevensopslagruimte.
 
@@ -44,6 +44,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **waar om deze informatie te vinden?**
 
    Voor geleidelijke instructies bij het bepalen van de plaats van deze details, verwijs naar het artikel van Adobe Experience League &quot;[ tot Toegang hebbend Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
@@ -67,6 +68,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **Belangrijk**: Vervang `<app-id>` met uw daadwerkelijke toepassingsidentiteitskaart
 
 1. Maak een nieuwe map voor uw aangepaste verzendactie en geef deze een door u gewenste naam. Geef de map bijvoorbeeld de naam `customsubmitaction` .
@@ -79,7 +81,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: vervangen <app-id> met uw werkelijke toepassings-id.
+   `Important`: vervangen &lt;app-id> met uw werkelijke toepassings-id.
 
 1. Nieuw configuratiebestand maken.
 Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml` .
@@ -117,6 +119,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    Voeg bijvoorbeeld de volgende coderegel toe om de map `customsubmitaction` toe te voegen in het `filter.xml` -bestand:
 
    ```
@@ -131,7 +134,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
 1. Navigeer naar de volgende map in de `[AEMaaCS project directory]` :
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: vervangen <app-id> met uw werkelijke toepassings-id.
+   `Important`: vervangen &lt;app-id> met uw werkelijke toepassings-id.
 1. Maak een nieuw Java-bestand om de service voor de toegevoegde verzendactie te implementeren. Voeg bijvoorbeeld het nieuwe Java-bestand toe als `CustomSubmitService.java` .
 
    ![ Douane legt de Omslag van de Actie ](/help/forms/assets/custom-submit-action-custom-submit-folder.png) voor
@@ -198,6 +201,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![ Lokale Plaatsing ](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **stel de code voor het milieu van de Cloud Service** op

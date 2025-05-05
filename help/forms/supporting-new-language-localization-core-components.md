@@ -71,7 +71,7 @@ Voordat u een nieuwe landinstelling gaat toevoegen voor uw Adaptive Forms, moet 
 
 **Software:**
 
-* De gewone Redacteur van de Tekst (winde): Terwijl om het even welke gewone tekstredacteur kan werken, biedt een Geïntegreerde Milieu van de Ontwikkeling (winde) zoals ](https://code.visualstudio.com/download) de Code van Microsoft Visual Studio van 0} geavanceerde eigenschappen voor het gemakkelijker uitgeven aan.[
+* De gewone Redacteur van de Tekst (winde): Terwijl om het even welke gewone tekstredacteur kan werken, biedt een Geïntegreerde Milieu van de Ontwikkeling (winde) zoals [&#128279;](https://code.visualstudio.com/download) de Code van Microsoft Visual Studio van 0&rbrace; geavanceerde eigenschappen voor het gemakkelijker uitgeven aan.
 
 * Git: Dit versiebeheersysteem is vereist voor het beheren van codewijzigingen. Als u het geïnstalleerd niet hebt, download het van [ https://git-scm.com ](https://git-scm.com).
 

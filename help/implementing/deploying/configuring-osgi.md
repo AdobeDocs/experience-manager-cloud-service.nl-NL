@@ -22,7 +22,7 @@ U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers b
 
 >[!TIP]
 >
->U kunt Cloud Manager gebruiken om omgevingsvariabelen te configureren. Voor meer informatie, raadpleeg hier de documentatie [ ](/help/implementing/cloud-manager/environment-variables.md).
+>U kunt Cloud Manager gebruiken om omgevingsvariabelen te configureren. Voor meer informatie, raadpleeg hier de documentatie [&#128279;](/help/implementing/cloud-manager/environment-variables.md).
 
 ## OSGi-configuratiebestanden {#osgi-configuration-files}
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service-runmodi zijn goed gedefinieerd op basis van het omgevings
 
 De OSGi-configuratiewaarden die door de runmode worden gespecificeerd, kunnen worden geverifieerd door:
 
-1. Het openen van de AEM als Developer Console van het milieu van Cloud Servicen [ ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. Het openen van de AEM als Developer Console van het milieu van Cloud Servicen [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
 1. Selecterend de de dienstrij(en) om te inspecteren, gebruikend de __Peul__ drop-down lijst
 1. Het selecteren van het __lusje van de Status__
 1. Het selecteren van __Configuraties__ van de __drop-down lijst van de Status Dump__
@@ -322,6 +322,7 @@ Als een bezit OSGi verschillende waarden voor auteur tegenover publiceert vereis
 * Afzonderlijke `config.author` en `config.publish` OSGi omslagen moeten worden gebruikt, zoals die in de [ wordt beschreven Runmode sectie van de Resolutie ](#runmode-resolution).
 * Er zijn twee opties om de onafhankelijke variabelennamen te maken die moeten worden gebruikt:
    * de eerste optie, die wordt aanbevolen: in alle OSGi-mappen (zoals `config.author` en `config.publish` ) die zijn gedeclareerd om verschillende waarden te definiëren, gebruikt u dezelfde variabelenaam. Bijvoorbeeld
+
      `$[env:ENV_VAR_NAME;default=<value>]` , waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer het plaatsen van de milieuvariabele via [ Cloud Manager API ](#cloud-manager-api-format-for-setting-properties) of via een cliënt, onderscheid tussen de rijen gebruikend de &quot;dienst&quot;parameter zoals die in de [ Cloud Manager API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) wordt beschreven. De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
    * de tweede optie, namelijk het declareren van verschillende variabelen met een voorvoegsel zoals `author_<samevariablename>` en `publish_<samevariablename>`
 
@@ -348,11 +349,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +363,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +392,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +406,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +420,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +449,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +463,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +490,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +504,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>

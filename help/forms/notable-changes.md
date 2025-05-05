@@ -37,7 +37,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * Voordat u uw klantbundels kunt gebruiken met Forms as a Cloud Service, moet u uw aangepaste code opnieuw compileren met de nieuwste versie van adobe-aemfd-docmanager.
 
-* Het nut van de as a Cloud Service migratie van AEM Forms van het gebruik ](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Aangepaste Forms, thema&#39;s, malplaatjes, en wolkenconfiguraties van <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service voor te bereiden en te migreren. [ Gebruik de [ bewaarplaats van de Git van uw programma ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) om bestaande Aangepaste malplaatjes van de Vorm in te voeren.
+* Het nut van de as a Cloud Service migratie van AEM Forms van het gebruik &rbrack;(/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Aangepaste Forms, thema&#39;s, malplaatjes, en wolkenconfiguraties van <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service voor te bereiden en te migreren. &lbrack; Gebruik de [ bewaarplaats van de Git van uw programma ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) om bestaande Aangepaste malplaatjes van de Vorm in te voeren.
 
 * E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten.
 
@@ -58,7 +58,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * **Prefill de Dienst:** Prefill haalt de dienst gegevens van de server en voegt samen om uw Aangepaste Forms op de cliëntkant vooraf in te vullen. Met deze functie kunt u de tijd verbeteren die nodig is om een adaptief formulier in te vullen. U kunt de [ prefill dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) altijd vormen om de fusieactie op de Server van Adobe Experience Manager Forms in werking te stellen.
 
-* **legt acties voor:** E-mail **** voorlegt actie verstrekt opties om gehechtheid te verzenden en Document van Verslag (DoR) met e-mail vast te maken. U kunt het in plaats van **E-mail als PDF** actie gebruiken beschikbaar in AEM 6.5 Forms.
+* **legt acties voor:** E-mail **&#x200B;**&#x200B;voorlegt actie verstrekt opties om gehechtheid te verzenden en Document van Verslag (DoR) met e-mail vast te maken. U kunt het in plaats van **E-mail als PDF** actie gebruiken beschikbaar in AEM 6.5 Forms.
 
 * **Dienst van de Automatede form conversion**: De dienst verstrekt geen meta-model voor de Dienst van de Automatede form conversion. U kunt [ het van de documentatie van de Dienst van de Automatede form conversion ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model) downloaden.
 
@@ -82,7 +82,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
    * De bewerkingen die afhankelijk zijn van documentservices of -toepassingen zijn niet beschikbaar. Microsoft® Word naar PDF, Microsoft® Excel naar PDF en HTML naar PDF, PostScript (PS) naar PDF, XDP naar PDF forms worden bijvoorbeeld niet ondersteund. Deze bewerkingen zijn respectievelijk afhankelijk van Microsoft® Office, Adobe Acrobat, Adobe Distiller en Forms Document Service.
 
-   * Converteer documenten die een andere indeling dan PDF hebben naar een PDF-indeling voordat u de documenten gebruikt met API&#39;s voor documentanimatie voor communicatie. Als uw documenten bijvoorbeeld de indeling Microsoft® Office, HTML, PostScript (PS) of XDP hebben, zet u deze documenten om in de indeling PDF voordat u de documenten met PDF-documenten gebruikt. U kunt de {](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) dienst 0} gebruiken ConvertPDF voor dergelijke omzettingen.[
+   * Converteer documenten die een andere indeling dan PDF hebben naar een PDF-indeling voordat u de documenten gebruikt met API&#39;s voor documentanimatie voor communicatie. Als uw documenten bijvoorbeeld de indeling Microsoft® Office, HTML, PostScript (PS) of XDP hebben, zet u deze documenten om in de indeling PDF voordat u de documenten met PDF-documenten gebruikt. U kunt de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) dienst 0} gebruiken ConvertPDF voor dergelijke omzettingen.
 
    * U kunt een AEM 6.5 Forms-omgeving gebruiken voor Digital Signature, Encryption, Reader Extension, Send to Printer, Convert PDF en Barcoded Forms-service.
 

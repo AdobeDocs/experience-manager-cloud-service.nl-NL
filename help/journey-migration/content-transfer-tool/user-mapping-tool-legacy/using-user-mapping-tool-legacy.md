@@ -46,7 +46,7 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
-1. Klik de **kaart van de Toewijzing van 0} Gebruiker.**
+1. Klik de **kaart van de Toewijzing van 0&rbrace; Gebruiker.**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
@@ -116,7 +116,7 @@ Voer de onderstaande stappen uit om het proces voor het toewijzen van gebruikers
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Klik **knoop van de Toewijzing van de Gebruiker van het 0} Begin opnieuw om van waar het weg verliet te hervatten.**
+1. Klik **knoop van de Toewijzing van de Gebruiker van het 0&rbrace; Begin opnieuw om van waar het weg verliet te hervatten.**
 
    >[!NOTE]
    >Zorg ervoor alvorens opnieuw te beginnen dat het toegangstoken nog geldig is of is verfrist.

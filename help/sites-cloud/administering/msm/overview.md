@@ -225,7 +225,7 @@ De veranderingen kunnen [ worden gesynchroniseerd ](creating-live-copies.md#sync
 Wanneer u een live kopie maakt in AEM, kunt u de vertakking Live kopie zien en door de vertakking Live kopie navigeren en de normale AEM gebruiken in de vertakking Live kopie. Dit betekent dat u (of een proces) nieuwe bronnen (pagina&#39;s en/of alinea&#39;s) kunt maken in Live Copy. Bijvoorbeeld een product voor een bepaald gebied of land.
 
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
-* De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in de vertakkingen van de bron/blauwdruk en Live kopie. Voor dergelijke situaties zie {de Conflicten van de Uitvoer MSM ](rollout-conflicts.md) voor meer informatie.[
+* De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in de vertakkingen van de bron/blauwdruk en Live kopie. Voor dergelijke situaties zie &lbrace;de Conflicten van de Uitvoer MSM [&#128279;](rollout-conflicts.md) voor meer informatie.
 
 ![ Levend Exemplaar met niet-Levende pagina&#39;s van het Exemplaar ](../assets/live-copy-with-non-live-copy-pages.png)
 

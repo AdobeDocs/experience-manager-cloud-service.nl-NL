@@ -21,7 +21,7 @@ In dit document worden antwoorden gegeven op de meest gestelde vragen over Cloud
 
 Ja. Voeg de `maven-toolchains-plugin` toe met de juiste instellingen voor Java™ 11.
 
-Het proces wordt gedocumenteerd - zie {de Tovenaar van de Aanmaak van het 0} Project ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).[
+Het proces wordt gedocumenteerd - zie {de Tovenaar van de Aanmaak van het 0} Project [&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
 Bijvoorbeeld, zie de [ code van het de projectsteekproef van de projectsteekproef van het Web ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 

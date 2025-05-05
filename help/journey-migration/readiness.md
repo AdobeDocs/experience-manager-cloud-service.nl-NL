@@ -181,7 +181,7 @@ Voer een uitgebreide beoordeling van uw huidige AEM-broncode uit tegen de opmerk
 
 Het aantal bevindingen kan rechtstreeks van invloed zijn op de tijdlijnen en het algehele succes van het project. Daarom raadt Adobe u aan zoveel mogelijk gegevens op te sporen, zodat u de levering kunt plannen. U kunt ook gesprekken starten zodat u aanpassingen opnieuw kunt ontwerpen die nodig zijn om aan te sluiten bij de beste praktijken van AEM as a Cloud Service.
 
-**Analysator van de Beste praktijken 1}**
+**Analysator van de Beste praktijken 1&rbrace;**
 
 U kunt de beoordeling versnellen door de Analysator van Beste praktijken tegen uw huidige versie van AEM in werking te stellen. Een goed begrip van hoe het werkt is essentieel om uw evaluatie planning te versnellen.
 

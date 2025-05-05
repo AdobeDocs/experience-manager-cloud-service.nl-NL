@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Waarom gebruikt u reCAPTCHA in uw formulieren?
 
-| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) Ervaring van 0} Gebruiker![ |
+| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![&#128279;](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) Ervaring van 0&rbrace; Gebruiker |
 |:-------------:|:-------------:|:-------------:|
 | **Verbeterde Veiligheid** | **Bot &amp; Preventie Spam** | **Naadloze Ervaring van de Gebruiker** |
 | Bescherm uw formulieren tegen frauduleuze activiteiten en kwaadaardige aanvallen | Stop automatische bots om uw formulieren te overstromen met irrelevante of schadelijke inhoud | De onzichtbare reCAPTCHA werkt achter de schermen zonder legitieme gebruikers te verstoren |
@@ -83,7 +83,7 @@ Alvorens te beginnen, [ verkrijg een reCAPTCHA API zeer belangrijk paar ](https:
 
 >[!IMPORTANT]
 >
->Edge Delivery Services Forms steunt slechts **versie 0} reCAPTCHA op basis van de Score.**
+>Edge Delivery Services Forms steunt slechts **versie 0&rbrace; reCAPTCHA op basis van de Score.**
 
 ### Stap 2: Een container voor cloudconfiguratie maken
 

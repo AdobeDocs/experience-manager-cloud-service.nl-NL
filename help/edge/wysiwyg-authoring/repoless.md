@@ -73,7 +73,7 @@ Zodra u uw toegangstoken hebt, kan het in de kopbal van cURL- verzoeken in het v
 
 U moet een siteconfiguratie maken en deze toevoegen aan uw padtoewijzing.
 
-1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het **malplaatje van de Configuratie[** ](/help/edge/wysiwyg-authoring/tabular-data.md#other).
+1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het **malplaatje van de Configuratie[*&#128279;*](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * U kunt de configuratie leeg laten met alleen de vooraf gedefinieerde kolommen `key` en `value` . U hoeft deze alleen te maken.
 1. Creeer een afbeelding in de openbare configuratie aan de plaatsconfiguratie gebruikend een cURL bevel gelijkend op het volgende.
 
@@ -94,6 +94,7 @@ U moet een siteconfiguratie maken en deze toevoegen aan uw padtoewijzing.
        }
    }'
    ```
+
 1. Valideer dat de openbare configuratie is geplaatst en beschikbaar met een cURL bevel gelijkend op het volgende is.
 
    ```text
@@ -104,7 +105,7 @@ Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vorme
 
 1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
 
-1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3} lusje van de Authentificatie {en kopieer de waarde voor** Technische rekening identiteitskaart **.**
+1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3&rbrace; lusje van de Authentificatie &lbrace;en kopieer de waarde voor** Technische rekening identiteitskaart **.**
 
    * Het zal er ongeveer zo uitzien als `<tech-account-id>@techacct.adobe.com`
    * De technische account is hetzelfde voor alle sites in één AEM-auteuromgeving.

@@ -96,7 +96,7 @@ Experience Manager Assets gebruikt de mogelijkheden van Adobe Sensei AI aan nu [
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Zoals vermeld in Mei (2022.5.0) versienota&#39;s, werd de &quot;Add boom&quot;optie onder het scherm van de replicatieagent admin **verdeelt** tabel verwijderd. De pakketten met een boomhiërarchie van inhoud zouden in plaats daarvan moeten worden herhaald gebruikend [ Publicatie ](/help/operations/replication.md#manage-publication) of het [ 3} werkschema van de Inhoudsboom van Publish beheren.](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)
+* Zoals vermeld in Mei (2022.5.0) versienota&#39;s, werd de &quot;Add boom&quot;optie onder het scherm van de replicatieagent admin **verdeelt** tabel verwijderd. De pakketten met een boomhiërarchie van inhoud zouden in plaats daarvan moeten worden herhaald gebruikend [ Publicatie ](/help/operations/replication.md#manage-publication) of het [ 3&rbrace; werkschema van de Inhoudsboom van Publish beheren.](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)
 
 ## Cloud Manager {#cloud-manager}
 

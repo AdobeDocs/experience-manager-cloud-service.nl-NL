@@ -62,7 +62,7 @@ Wanneer u zich aanmeldt bij [!DNL Assets view] , ziet u de volgende interface.
 
 ![[!DNL Assets view] gebruikersinterface ](assets/assets-view-interface.png)
 
-**A**: De linkerzijbalk om bewaarplaats te doorbladeren en toegang tot een paar andere opties **B** verleent: Vertoning of doet ineenstorten de linkerzijbalk om activa-bekijkend gebied **C** te verhogen: De onderzoeksresultaten van de filter **D**: Selecteer alle inhoud van de geselecteerde omslag **E**: Opties om activa **F** te sorteren: De doos van het Onderzoek **2} G**: Upload of sleep en laat vallen dossiers gebruikend `Add Assets` knoop **H**: Creeer een nieuwe omslag **I**: Schakelaar tussen verschillende meningen
+**A**: De linkerzijbalk om bewaarplaats te doorbladeren en toegang tot een paar andere opties **B** verleent: Vertoning of doet ineenstorten de linkerzijbalk om activa-bekijkend gebied **C** te verhogen: De onderzoeksresultaten van de filter **D**: Selecteer alle inhoud van de geselecteerde omslag **E**: Opties om activa **F** te sorteren: De doos van het Onderzoek **2&rbrace; G**: Upload of sleep en laat vallen dossiers gebruikend `Add Assets` knoop **H**: Creeer een nieuwe omslag **I**: Schakelaar tussen verschillende meningen
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -113,7 +113,7 @@ Om activa voor te vertonen, het te selecteren en [!UICONTROL Details] ![ details
 
 ![ Voorproef een activa ](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**}: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
+**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**&rbrace;: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 
@@ -133,7 +133,7 @@ Other use cases after previewing.
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

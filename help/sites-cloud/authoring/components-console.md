@@ -22,7 +22,7 @@ Het kan van **Hulpmiddelen worden betreden >** **Algemeen >** **Componenten**. O
 
 >[!NOTE]
 >
->In de Componentenconsole worden alle componenten in het systeem weergegeven. Browser van de Component ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode ( `.`) beginnen.[
+>In de Componentenconsole worden alle componenten in het systeem weergegeven. Browser van de Component [&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode ( `.`) beginnen.
 
 ## Zoeken {#search-field}
 

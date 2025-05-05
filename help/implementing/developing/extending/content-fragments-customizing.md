@@ -63,6 +63,7 @@ Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan 
 * Alle inhoud wordt opgeslagen onder het knooppunt `jcr:content/data` van het element:
 
    * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
+
      `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:

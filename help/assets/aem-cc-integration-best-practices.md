@@ -118,7 +118,7 @@ Houd rekening met de volgende opties ter ondersteuning van het gebruik van geval
 
 * [ Experience Manager Assets Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor een configureerbare toe:voegen-op aan Assets om activa te publiceren.
 
-* De oplossingen van de douane worden gecreeerd gebaseerd op ](https://opensource.adobe.com/asset-share-commons/) de codebasis van het Aandeel van activa 0}.[
+* De oplossingen van de douane worden gecreeerd gebaseerd op [&#128279;](https://opensource.adobe.com/asset-share-commons/) de codebasis van het Aandeel van activa 0&rbrace;.
 * Experience Manager [ verbindingsaandeel ](/help/assets/share-assets.md) om activa te delen op bestelling gebruikend verbindingen.
 * [ het Webinterface van Assets ](/help/assets/manage-digital-assets.md) met gebieden voor externe partijen die door de opstelling van het Toegangsbeheer van Experience Manager en met noodzakelijke aanpassingen van IT/netwerkconfiguratie worden beveiligd, die deze externe gebruikers toegang tot Experience Manager geven.
 

@@ -108,7 +108,7 @@ Alle configuraties van de cloudservice in [!DNL Experience Manager] worden gecon
 De map configureren voor configuraties van cloudservices:
 
 1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
-   * Zie Browser van de Configuratie ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) documentatie 0} {voor meer informatie.[
+   * Zie Browser van de Configuratie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) documentatie 0&rbrace; &lbrace;voor meer informatie.
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer in **[!UICONTROL Configuration Browser]** de map `global` en selecteer **[!UICONTROL Properties]** .
@@ -137,8 +137,8 @@ De RESTful Webdiensten kunnen worden beschreven gebruikend [ de specificaties va
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL RESTful Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de RESTful dienst:
 
-   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger URL] aan het [!DNL  Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
-   * Gebaseerd op de [!DNL  Swagger] input van Source., zijn de volgende gebieden pre-bevolkt met waarden:
+   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger URL] aan het [!DNL &#x200B; Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
+   * Gebaseerd op de [!DNL &#x200B; Swagger] input van Source., zijn de volgende gebieden pre-bevolkt met waarden:
 
       * Schema: de overdrachtprotocollen die door de REST API worden gebruikt. Het aantal schematypen dat in de drop-down lijst wordt getoond hangt van de regelingen af die in de [!DNL Swagger] bron worden bepaald.
       * Host: de domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
@@ -162,8 +162,8 @@ De RESTful Webdiensten kunnen worden beschreven gebruikend [ de specificaties va
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL RESTful Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de RESTful dienst:
 
-   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger 3.0 URL] aan het [!DNL  Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
-   * Gebaseerd op de [!DNL  Swagger] input van Source, wordt de verbindingsinformatie met de doelserver getoond.
+   * Selecteer een URL of een Dossier van [!UICONTROL Swagger Source] drop-down, en specificeer dienovereenkomstig [!DNL Swagger 3.0 URL] aan het [!DNL &#x200B; Swagger] definitiedossier of upload het [!DNL Swagger] dossier van uw lokaal dossiersysteem.
+   * Gebaseerd op de [!DNL &#x200B; Swagger] input van Source, wordt de verbindingsinformatie met de doelserver getoond.
    * Selecteer het authentificatietype — niets, OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
 
    Als u **[!UICONTROL API Key]** selecteert als verificatietype, geeft u de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in de vervolgkeuzelijst **[!UICONTROL Location]** en geef de naam van de header of de queryparameter dienovereenkomstig op in het veld **[!UICONTROL Parameter Name]** .
@@ -252,7 +252,7 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
 ## Webservices configureren SOAP {#configure-soap-web-services}
 
-Op SOAP gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) ](https://www.w3.org/TR/wsdl). [ [!DNL Experience Manager Forms] biedt geen ondersteuning voor het WSDL-model in RPC-stijl.
+Op SOAP gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) [&#128279;](https://www.w3.org/TR/wsdl).  [!DNL Experience Manager Forms] biedt geen ondersteuning voor het WSDL-model in RPC-stijl.
 
 Als u in [!DNL Experience Manager] as a Cloud Service op SOAP gebaseerde webservice wilt configureren, controleert u of u de WSDL-URL voor de webservice hebt en voert u de volgende handelingen uit:
 

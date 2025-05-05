@@ -76,7 +76,7 @@ De systeemeigen PDF Doc Cloud-viewer heeft de volgende componenten in AEM Assets
 
 * **Uitzoomen/Gezoem binnen** Uitzoomen van het Gebruik ![ Uitzoomen ](/help/assets/assets/Zoom-out.svg) of Gezoem binnen ![ Gezoem binnen ](/help/assets/assets/zoom-in.svg) om het document te stromen.
 
-* **Breedte of hoogtedimensies van het Gebruik van het Passen van 0} Pagina {om het document volgens uw het schermgrootte te passen.**
+* **Breedte of hoogtedimensies van het Gebruik van het Passen van 0&rbrace; Pagina &lbrace;om het document volgens uw het schermgrootte te passen.**
 
 * **Dock/undock PDF** u kunt de componenten van de inheemse kijker van PDF dokken of losmaken gebruikend deze optie.
 

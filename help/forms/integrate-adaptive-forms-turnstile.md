@@ -52,8 +52,10 @@ Om Turnstile voor AEM Forms te vormen, moet u [ Turnstile sitekey en geheime sle
 
 1. De Cloud Service configureren:
    1. Op uw de auteursinstantie van AEM, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteer **[!UICONTROL Turnstile]**.
+
       ![ Turnstile in ui ](assets/turnstile-in-ui.png)
    1. Selecteer een configuratiecontainer, gecreeerd of bijgewerkt, zoals die in de vorige sectie wordt beschreven. Selecteer **[!UICONTROL Create]** .
+
       ![ Turnstile van de Configuratie ](assets/config-hcaptcha.png)
    1. Specificeer **[!UICONTROL Widget Type]** zoals geleid, widgettype kan veranderen dat van de sleutel afhangt die in de voorwaarde wordt verkregen, **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de dienst van de Draai [ in voorwaarde ](#prerequisite) wordt verkregen. Selecteer **[!UICONTROL Create]** .
 

@@ -93,7 +93,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    ![ werkschema-redacteur ](assets/workflow-editor.png)
 
-   Configureer voor het voorbeeld van de hypotheektoepassing de taakstap voor toewijzen om een alleen-lezen adaptief formulier te gebruiken en PDF Document weer te geven zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Op het **lusje van Acties**, maak **** optie voor voorleggen onbruikbaar. Creeer een **actiontaken** variabele van het gegevenstype van het Koord en specificeer de variabele als **Variabele van de Route**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
+   Configureer voor het voorbeeld van de hypotheektoepassing de taakstap voor toewijzen om een alleen-lezen adaptief formulier te gebruiken en PDF Document weer te geven zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Op het **lusje van Acties**, maak **&#x200B;**&#x200B;optie voor voorleggen onbruikbaar. Creeer een **actiontaken** variabele van het gegevenstype van het Koord en specificeer de variabele als **Variabele van de Route**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
 
    U kunt het voorbeeldpakket importeren, dat u kunt downloaden vanaf het begin van de sectie, voor de volledige set waarden van alle velden van de taakstap toewijzen die is geconfigureerd, bijvoorbeeld hypotheektoepassing.
 
@@ -136,7 +136,7 @@ De toepassing is het adaptieve formulier dat aan de workflow is gekoppeld. Wanne
 >U moet lid van de fd-beheerder groep zijn om werkschematoepassingen te kunnen tot stand brengen en beheren.
 
 1. Op uw AEM auteursinstantie, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** en tikken **[!UICONTROL Create]**.
-1. In het Create venster van de Toepassing van het Werkschema, verstrek input voor de volgende gebieden, en tikt **** creëren. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
+1. In het Create venster van de Toepassing van het Werkschema, verstrek input voor de volgende gebieden, en tikt **&#x200B;**&#x200B;creëren. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
 
 <table>
  <tbody>

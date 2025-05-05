@@ -38,7 +38,7 @@ Volg de onderstaande sectie om de belangrijke overwegingen te begrijpen voordat 
 
 * U hebt toegang nodig om [ AzCopy ](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) op de instantie (of VM) te installeren die de bron AEM instantie in werking stellen.
 
-* De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande zeven dagen op de bron in werking gesteld. Voor meer details, zie {de inzameling van het huisvuil van de 0} opslag van Gegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).[
+* De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande zeven dagen op de bron in werking gesteld. Voor meer details, zie {de inzameling van het huisvuil van de 0} opslag van Gegevens [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
 ### Extra overwegingen als de bron AEM instantie wordt gevormd om een opslag van de Gegevens van de Opslag van de Opslag van Amazon S3 of van Azure te gebruiken {#additional-considerations-amazons3-azure}
 

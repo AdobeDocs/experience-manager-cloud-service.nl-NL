@@ -140,7 +140,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL DocuSi
    1. Voeg in het vak **[!UICONTROL Redirect URI]** de URL toe die u in de vorige stap hebt gekopieerd en klik op **[!UICONTROL Save]** .
    1. Noteer de integratietoetsen en de geheime toetsen.
 
-   Voor geleidelijke informatie om montages OAuth voor een [!DNL DocuSign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys)
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL DocuSign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2&rbrace; de ontwikkelaarsdocumentatie van de toepassing &lbrace;vormen.](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys)
 
 1. Ga terug naar de **[!UICONTROL Create DocuSign Configuration]** pagina. Op het tabblad **[!UICONTROL Settings]** vermeldt het veld **[!UICONTROL OAuth URL]** de volgende standaard-URL:
 

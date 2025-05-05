@@ -103,7 +103,7 @@ Als een specifieke orde van het resultaat wordt gevraagd, zijn er twee manieren 
 
 De teruggewonnen grootte van het vraagresultaat is een belangrijke factor in vraagprestaties. Aangezien het resultaat op een luie manier wordt gehaald, is er een verschil in enkel het halen van de eerste 20 resultaten in vergelijking met het halen van 10.000 resultaten, zowel in runtime als geheugengebruik.
 
-Dit betekent ook dat de grootte van de resultaatset alleen correct kan worden bepaald als alle resultaten worden opgehaald. Om deze reden, zou de gehaalde resultaatreeks altijd moeten worden beperkt, of door de vraag (zie de ](#jcr-query-cheatsheet) sectie van de Vraag 0} te verhogen JCR van dit document voor details) of door de gelezen resultaten van de resultaten te beperken.[
+Dit betekent ook dat de grootte van de resultaatset alleen correct kan worden bepaald als alle resultaten worden opgehaald. Om deze reden, zou de gehaalde resultaatreeks altijd moeten worden beperkt, of door de vraag (zie de [&#128279;](#jcr-query-cheatsheet) sectie van de Vraag 0&rbrace; te verhogen JCR van dit document voor details) of door de gelezen resultaten van de resultaten te beperken.
 
 Zulk een grens verhindert ook de vraagmotor de **doorlopende grens** van 100.000 knopen te raken, die tot een gedwongen einde van de vraag leidt.
 
@@ -203,7 +203,7 @@ In dit deel van het plan staat: -
 * De volgorde wordt afgehandeld door de index
    * omdat `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]` wordt weergegeven in de Lucene-query.
 
-Zulk een vraag zal waarschijnlijk goed presteren, aangezien de resultaten die van de indexvraag zijn teruggekeerd niet verder in de vraagmotor (behalve het filtreren van de Controle van de Toegang) zullen worden gefiltreerd. Nochtans, is het nog mogelijk voor zulk een vraag om langzaam uit te voeren als de beste praktijken niet worden gevolgd - zie ](#index-traversal) hieronder Traversal van de Index van 0}.[
+Zulk een vraag zal waarschijnlijk goed presteren, aangezien de resultaten die van de indexvraag zijn teruggekeerd niet verder in de vraagmotor (behalve het filtreren van de Controle van de Toegang) zullen worden gefiltreerd. Nochtans, is het nog mogelijk voor zulk een vraag om langzaam uit te voeren als de beste praktijken niet worden gevolgd - zie [&#128279;](#index-traversal) hieronder Traversal van de Index van 0&rbrace;.
 
 Een andere query overwegen -
 
@@ -276,7 +276,7 @@ Hieronder volgen enkele aanbevolen procedures voor het definiëren of uitbreiden
 
 >[!NOTE]
 >
->Voor meer informatie, zie {de documentatie van de Index van 0} Oak Lucene ](https://jackrabbit.apache.org/oak/docs/query/lucene.html).[
+>Voor meer informatie, zie {de documentatie van de Index van 0} Oak Lucene [&#128279;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 De geautomatiseerde Cloud Manager pijpleidingscontroles zullen enkele hierboven beschreven beste praktijken afdwingen.
 

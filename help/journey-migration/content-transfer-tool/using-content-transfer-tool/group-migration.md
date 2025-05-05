@@ -56,7 +56,7 @@ De uitzondering op deze configuratie IMS is met groepen die door de Inzamelingen
 CTT versie 3.0.20 en hoger bevat een optie om de migratie van groepen uit te schakelen.  Dit wordt gevormd in de console OSGI als volgt:
 
 * De configuratie van OSGI openen `(http://<server>/system/console/configMgr)`
-* Klik op de configuratie genoemd {de Configuratie van de Dienst van de Uitwinning van het Hulpmiddel van de Overdracht van 0} Inhoud ****
+* Klik op de configuratie genoemd {de Configuratie van de Dienst van de Uitwinning van het Hulpmiddel van de Overdracht van 0} Inhoud **&#x200B;**
 * Uncheck **omvat Groepen in migratie** om groepsmigraties onbruikbaar te maken
 * Klik **sparen** om de configuratie te verzekeren wordt bewaard en op de server actief
 

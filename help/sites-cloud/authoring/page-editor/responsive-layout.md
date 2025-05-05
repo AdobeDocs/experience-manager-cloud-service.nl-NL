@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Responsieve lay-out {#responsive-layout}
 
-AEM laat u een ontvankelijke lay-out voor uw pagina&#39;s door de **component van de Container van de Lay-out te gebruiken 0} hebben.**
+AEM laat u een ontvankelijke lay-out voor uw pagina&#39;s door de **component van de Container van de Lay-out te gebruiken 0&rbrace; hebben.**
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ AEM laat u een ontvankelijke lay-out voor uw pagina&#39;s door de **component va
 
 ## Overzicht {#overview}
 
-De **component van de Container van de Lay-out van 0} verstrekt een paragraafsysteem dat u componenten binnen een ontvankelijk net laat plaatsen.** Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **wijze van de Lay-out[** ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
+De **component van de Container van de Lay-out van 0&rbrace; verstrekt een paragraafsysteem dat u componenten binnen een ontvankelijk net laat plaatsen.** Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **wijze van de Lay-out[*&#128279;*](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
 
 De container layout:
 
@@ -39,7 +39,7 @@ De gebruiker kan dan zien hoe de inhoud wordt gerenderd voor specifieke apparate
 
 AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
 
-* **](#adding-a-layout-container-and-its-content-edit-mode)component van de Container van 0} Lay-out[**
+* **[&#128279;](#adding-a-layout-container-and-its-content-edit-mode)component van de Container van 0&rbrace; Lay-out**
 
   Deze component is beschikbaar in [ componentenbrowser ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) en verstrekt een net-paragraaf systeem om u toe te staan om componenten binnen een ontvankelijk net toe te voegen en te plaatsen. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
 
@@ -192,7 +192,7 @@ Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay
    * De modus **Lay-out** is permanent en u verlaat de modus **Lay-out** pas wanneer u een andere modus selecteert via de moduskiezer.
 * Wanneer [ het uitgeven van een individuele component ](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Door de **optie van de Lay-out** in het snelle actiemenu van de component te gebruiken, kunt u op **Lay-out** wijze schakelen.
-   * **de wijze van de Lay-out 1} blijft terwijl het uitgeven van de component en keert terug naar** geef **wijze uit zodra de nadruk in een andere component verandert.**
+   * **de wijze van de Lay-out 1&rbrace; blijft terwijl het uitgeven van de component en keert terug naar** geef **wijze uit zodra de nadruk in een andere component verandert.**
 
 In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 

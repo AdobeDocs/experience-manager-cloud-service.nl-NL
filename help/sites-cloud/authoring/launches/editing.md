@@ -36,7 +36,7 @@ Wanneer het uitgeven van de pagina, kunt u een aanwijzing in de hoogste toolbar 
 Als uw lancering op a [ Levend Exemplaar ](/help/sites-cloud/administering/msm/overview.md) gebaseerd is dan zult u:
 
 * Zie slotsymbolen (kleine hanglocks) wanneer u een component (inhoud en/of eigenschappen) uitgeeft.
-* Zie **Levende 1} lusje van het Exemplaar {in** Eigenschappen van de Pagina ****
+* Zie **Levende 1&rbrace; lusje van het Exemplaar &lbrace;in** Eigenschappen van de Pagina **&#x200B;**
 
 Een livekopie wordt gebruikt om content te synchroniseren *van* de bronvertakking *naar* de startvertakking (om uw lancering up-to-date te houden als er veranderingen in de bron worden aangebracht).
 

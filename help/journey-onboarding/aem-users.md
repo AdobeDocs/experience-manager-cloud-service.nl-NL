@@ -52,7 +52,7 @@ Als AEM auteur moet u zich aanmelden bij AEM om inhoud te maken.
 
 1. Selecteer het aangewezen programma van Cloud Manager **Programma&#39;s en Producten** pagina om de **pagina van het Overzicht** te lanceren. Vraag uw systeembeheerder als u onzeker bent welk programma om toegang te hebben.
 
-1. Van de **pagina van het Overzicht** in Cloud Manager, klik de auteursverbinding van de **** kaart van Milieu&#39;s.
+1. Van de **pagina van het Overzicht** in Cloud Manager, klik de auteursverbinding van de **&#x200B;**&#x200B;kaart van Milieu&#39;s.
 
    ![ kaart van het Milieu ](/help/journey-onboarding/assets/author-environ.png)
 
@@ -71,7 +71,7 @@ Nu u dit document hebt gelezen, moet u weten hoe te:
 * Toegang tot Cloud Manager.
 * Meld u aan bij een AEM as a Cloud Service-instantie.
 
-Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie ](#additional-resources) sectie van Middelen 0} Extra van Middelen voor meer details over hoe te auteursinhoud in AEM en hoe te om het te beheren.[
+Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie [&#128279;](#additional-resources) sectie van Middelen 0&rbrace; Extra van Middelen voor meer details over hoe te auteursinhoud in AEM en hoe te om het te beheren.
 
 Als u in geinteresseerd bent hoe de ontwikkelaars en plaatsingsmanagers douanetoepassingen voor AEM als dienst van de Wolk tot stand brengen en beheren, op tweede facultatief deel van de onboarding reis voortzetten, [ AEM de Taken van de Ontwikkelaar ](developers.md).
 
@@ -84,4 +84,4 @@ Als u in geinteresseerd bent hoe de ontwikkelaars en plaatsingsmanagers douaneto
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 [ Snelle Gids van het Begin aan Authoring Pagina&#39;s ](/help/sites-cloud/authoring/quick-start.md) - Begin hier voor een snel overzicht van auteursgrondbeginselen in AEM.
-](/help/journey-headless/author/overview.md) de Reis van de Auteur zonder hoofd [ - als u inhoud zonder kop wilt ontwerpen, volg deze geleide inleiding.
+[&#128279;](/help/journey-headless/author/overview.md) de Reis van de Auteur zonder hoofd  - als u inhoud zonder kop wilt ontwerpen, volg deze geleide inleiding.

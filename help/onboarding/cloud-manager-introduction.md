@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert als één toegangspunt voor uw team. De speciaal gebouwde CI/CD-pijpleidingen zijn uitgerust om grondig te testen en de hoogste codekwaliteit te verzekeren om uitzonderlijke ervaringen te bieden. Om ervoor te zorgen dat klanten snel met hun projecten kunnen beginnen, biedt Cloud Manager alles wat nodig is op een zelfbediening manier, zoals de mogelijkheid om cloudbronnen en -omgevingen te maken en toegang te krijgen tot uw git-opslagruimten. Deze functies ondersteunen instellingen voor bedrijfsontwikkeling, zodat teams regelmatig wijzigingen kunnen doorvoeren, snel uitzonderlijke digitale ervaringen kunnen opdoen en tijd-naar-waarde kunnen versnellen.
 
-Uw systeembeheerder is verantwoordelijk voor het instellen van uw Cloud Manager-team, dat personen zal omvatten die uw cloudbronnen en -ontwikkelaars zullen maken. Voor meer informatie over hoe te opstelling en schaal uw team van de ondernemingsontwikkeling en zie hoe AEM as a Cloud Service uw ontwikkelingsproces kan steunen, zie {de Opstelling van de Ontwikkeling van het Team van 0} Onderneming voor AEM as a Cloud Service ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).[
+Uw systeembeheerder is verantwoordelijk voor het instellen van uw Cloud Manager-team, dat personen zal omvatten die uw cloudbronnen en -ontwikkelaars zullen maken. Voor meer informatie over hoe te opstelling en schaal uw team van de ondernemingsontwikkeling en zie hoe AEM as a Cloud Service uw ontwikkelingsproces kan steunen, zie {de Opstelling van de Ontwikkeling van het Team van 0} Onderneming voor AEM as a Cloud Service [&#128279;](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Navigeren naar overzichtspagina van Cloud Manager {#navigate-cloud-manager}
 
@@ -63,7 +63,7 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Cloud
 
 >[!TIP]
 >
->Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Gelieve te zien de toestemmingen van de Douane van het document [ ](/help/implementing/cloud-manager/custom-permissions.md) voor meer details.
+>Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Gelieve te zien de toestemmingen van de Douane van het document [&#128279;](/help/implementing/cloud-manager/custom-permissions.md) voor meer details.
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 

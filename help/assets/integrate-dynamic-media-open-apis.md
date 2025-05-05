@@ -53,7 +53,7 @@ ht-degree: 0%
 >
 >De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Alle [ goedgekeurde activa ](/help/assets/approve-assets.md) beschikbaar in de activa van Experience Manager bewaarplaats zijn beschikbaar voor levering aan stroomafwaartse toepassingen.
 
@@ -67,6 +67,6 @@ De Adobe Micro-Frontend Asset Selector biedt een gebruikersinterface die eenvoud
 
 >[!MORELIKETHIS]
 >
-* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
-* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
-* [ de aanpassing van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
+>* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
+>* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
+>* [ de aanpassing van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)

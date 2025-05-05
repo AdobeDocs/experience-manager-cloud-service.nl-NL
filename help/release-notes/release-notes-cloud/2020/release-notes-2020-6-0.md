@@ -60,17 +60,17 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
-* Een gebruiker in de *rol van 0} BedrijfsEigenaar {in Cloud Manager kan nu een Programma Sandbox van de landende pagina (via snelle actieknoop op de kaart van het Programma) of van binnen het programma schrappen.*
+* Een gebruiker in de *rol van 0&rbrace; BedrijfsEigenaar &lbrace;in Cloud Manager kan nu een Programma Sandbox van de landende pagina (via snelle actieknoop op de kaart van het Programma) of van binnen het programma schrappen.*
 
   Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
 
-* Een gebruiker van het Programma van Sandbox in *BedrijfsEigenaar* of *de rol van de Manager van de Plaatsing* in Cloud Manager kan nu hun Productie en milieu schrappen van het Stadium dat via Cloud Manager UI wordt geplaatst. De schrappingsoptie is nu beschikbaar van zowel de kaart van het Milieu op de **pagina van het Overzicht van Programma&#39;s 0} als de** pagina van Milieu **.** Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
+* Een gebruiker van het Programma van Sandbox in *BedrijfsEigenaar* of *de rol van de Manager van de Plaatsing* in Cloud Manager kan nu hun Productie en milieu schrappen van het Stadium dat via Cloud Manager UI wordt geplaatst. De schrappingsoptie is nu beschikbaar van zowel de kaart van het Milieu op de **pagina van het Overzicht van Programma&#39;s 0&rbrace; als de** pagina van Milieu **.** Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
 
   Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
-* De tekens van de cokes op de **pagina van het Overzicht van het 0} Programma om de gebruiker over basisnavigatie binnen Cloud Manager te informeren en te instrueren om hen te krijgen begonnen.**
+* De tekens van de cokes op de **pagina van het Overzicht van het 0&rbrace; Programma om de gebruiker over basisnavigatie binnen Cloud Manager te informeren en te instrueren om hen te krijgen begonnen.**
 
 * A **LEARN** pagina is nu beschikbaar in Cloud Manager, toegankelijk via de hoogste navigatie. Deze pagina bevat bronnen die gebruikers helpen bij het leren van de meestgebruikte workflows die relevant zijn voor hun rollen die in Cloud Manager zijn toegewezen.
 
@@ -78,7 +78,7 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 
 * Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan Cloud Manager kunnen worden beheerd. A **beheert de knoop van de Toegang** is nu beschikbaar op de het landen pagina naast **voeg Programma** knoop toe.
 
-  Zie {de Taken SysAdmin ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer details.[
+  Zie &lbrace;de Taken SysAdmin [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer details.
 
 * Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
 

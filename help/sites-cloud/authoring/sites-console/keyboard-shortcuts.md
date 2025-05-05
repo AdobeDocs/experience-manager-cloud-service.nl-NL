@@ -37,7 +37,7 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, 
 |  | `Backspace` | Verwijderen |
 | Eigenschappenpagina&#39;s | `Ctrl+s` | Opslaan |
 
-De belangrijkste combinaties zijn vermeld met de 20} bepalingssleutels van Vensters ](#os-specific-modifier-keys).[
+De belangrijkste combinaties zijn vermeld met de 20&rbrace; bepalingssleutels van Vensters [&#128279;](#os-specific-modifier-keys).
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 

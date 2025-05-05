@@ -34,7 +34,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 1. In het linkerzijmenu, onder **Diensten**, klik ![ het netwerkpictogram van de Sociale Zaken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
 1. In de **lijst van Toewijzingen van het Domein**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan configuratie CDN u wilt bijwerken.
 
-1. Van het drop-down menu, geeft de klik **** uit.
+1. Van het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
 
 1. In **geef CDN configuratie** dialoogdoos uit, plaats één of meerdere opties in de respectieve drop-down lijst.
 
@@ -59,7 +59,7 @@ De stappen voor het uitgeven van een configuratie CDN van de **pagina van Milieu
 
 1. Voor de pagina van milieudetails, in de Mappingen van het Domein groeperen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie beantwoordt CDN u wilt uitgeven.
 
-1. In pop-up menu, geeft de klik **** uit.
+1. In pop-up menu, geeft de klik **&#x200B;**&#x200B;uit.
 
 1. In **geef CDN de dialoogdoos van de Configuratie** uit, plaats één of meerdere opties in de respectieve drop-down lijst.
 

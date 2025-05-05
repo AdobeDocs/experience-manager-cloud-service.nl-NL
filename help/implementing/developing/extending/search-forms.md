@@ -55,13 +55,13 @@ De standaardconfiguraties (alfabetisch weergegeven) zijn:
 * **Redacteur van de Pagina (het onderzoek van het Product)**
 * **Redacteur van de Pagina (het onderzoek van Scene7)**
 * **de Redacteur van de Pagina (Video onderzoek)**
-* **Rail van het Onderzoek van Admin van het Project {**
+* **Rail van het Onderzoek van Admin van het Project &lbrace;**
 * **Rail van het Onderzoek van de Vertaling van het Project**
 * **Rail van het Onderzoek van Plaatsen Admin**
 * **Fragmenten Admin Rail van het Onderzoek van Admin**
 * **Rail van het Onderzoek van Admin van het Beeld**
 * **Modellen van het Fragment van de Inhoud van het Onderzoek Rail**
-* **Rail van het Onderzoek van Admin van het Project {**
+* **Rail van het Onderzoek van Admin van het Project &lbrace;**
 * **Rail van het Onderzoek van de Vertaling van het Project**
 
 >[!NOTE]
@@ -320,7 +320,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <td>
     <ul>
      <li>Naam eigenschap ("path")</li>
-     <li>Waarde van het onroerend goed (`/content/dam')</li>
+     <li>Waarde van het onroerend goed (&grave;/content/dam')</li>
     </ul> 
    </td>
   </tr>
@@ -544,7 +544,7 @@ Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes 
 * **Publish en de Levende Naam van het Bezit van het Exemplaar**
 De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifieke predikaat van Plaatsen.
 
-* &amp;ast; op de gebiedslabels op het **lusje van Montages** betekent de gebieden verplicht zijn en als verlaten leeg een foutenmelding zal verschijnen.
+* &ast; op de gebiedslabels op het **lusje van Montages** betekent de gebieden verplicht zijn en als verlaten leeg een foutenmelding zal verschijnen.
 
 ## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 

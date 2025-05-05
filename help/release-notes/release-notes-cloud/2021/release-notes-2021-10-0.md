@@ -30,7 +30,7 @@ De volgende release (2021.11.0) is op 2 december 2021.
 
 ## Video vrijgeven {#release-video}
 
-Heb een blik bij de ](https://video.tv.adobe.com/v/338253) video van het Overzicht van de Versie van 0} Oktober 2021 {voor een samenvatting van de toegevoegde eigenschappen.[
+Heb een blik bij de [&#128279;](https://video.tv.adobe.com/v/338253) video van het Overzicht van de Versie van 0&rbrace; Oktober 2021 &lbrace;voor een samenvatting van de toegevoegde eigenschappen.
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -146,7 +146,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 
 ### Wat is er nieuw? {#what-is-new-cm-oct}
 
-* In voorbereiding op sommige aanstaande veranderingen, zullen de bestaande plaatsingspijpleidingen nu van verwijzingen worden voorzien en geëtiketteerd in het gebruikersinterface als **Volledige 1} pijpleidingen van de Stapel {.**
+* In voorbereiding op sommige aanstaande veranderingen, zullen de bestaande plaatsingspijpleidingen nu van verwijzingen worden voorzien en geëtiketteerd in het gebruikersinterface als **Volledige 1&rbrace; pijpleidingen van de Stapel &lbrace;.**
 
 * De kaart van de pijpleiding is verfrist om één enkel, geïntegreerd gezicht te tonen dat zowel productie als niet productiepijpleidingen toont, en de gebruiker kan Looppas/pauze direct selecteren/hervat van het actiemenu verbonden aan elke pijpleiding.
 

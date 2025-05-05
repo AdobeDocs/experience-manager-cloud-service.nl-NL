@@ -39,7 +39,7 @@ U kunt de referentiedocumentatie voor Java™ API downloaden van [!DNL Maven Cen
    1. Open het bestand index.html om de API-naslagdocumentatie te bekijken.
 
 * **Waar kan ik [!DNL JavaScript™] API verwijzing voor Adaptive Forms krijgen?**
-U kunt de [!DNL JavaScript™] API-naslagdocumentatie downloaden van [!DNL  Maven Central Repository] . Downloaden:
+U kunt de [!DNL JavaScript™] API-naslagdocumentatie downloaden van [!DNL &#x200B; Maven Central Repository] . Downloaden:
    1. Openen [[!DNL Maven Central Repository] ](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api) .
    1. Zoek en open de pagina met de nieuwste versie van [!DNL Experience Manager Forms] SDK.
    1. Klik op Alles weergeven om alle bestanden weer te geven.

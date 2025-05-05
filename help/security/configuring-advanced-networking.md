@@ -570,7 +570,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td></td>
-    <td>Als IP niet in de <i> 1} waaier van het gatewayadres van VPN {valt en de cliënt verbindt met <code>AEM_PROXY_HOST</code> env variabele gebruikend <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API parameter</i></td>
+    <td>Als IP niet in de <i> 1&rbrace; waaier van het gatewayadres van VPN &lbrace;valt en de cliënt verbindt met <code>AEM_PROXY_HOST</code> env variabele gebruikend <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API parameter</i></td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
@@ -639,7 +639,7 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, navigeer aan het** milieu **lusje en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder de** milieu&#39;s **rubriek in het linkerpaneel wilt toelaten.** Dan selecteer het **Geavanceerde lusje van de netwerkconfiguratie** van het geselecteerde milieu en klik **netwerkinfrastructuur** toelaten.
+1. Van de **pagina van het Overzicht van het 0&rbrace; Programma, navigeer aan het** milieu **lusje en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder de** milieu&#39;s **rubriek in het linkerpaneel wilt toelaten.** Dan selecteer het **Geavanceerde lusje van de netwerkconfiguratie** van het geselecteerde milieu en klik **netwerkinfrastructuur** toelaten.
 
    ![ Selecterend milieu zodat kunt u geavanceerde voorzien van een netwerk ](assets/advanced-networking-ui-enable-environments.png) toelaten
 
@@ -698,14 +698,14 @@ Na [ toelatend geavanceerde voorzien van een netwerkconfiguraties aan milieu&#39
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, navigeer aan het** milieu **lusje en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder de** milieu&#39;s **rubriek in het linkerpaneel wilt toelaten.** Dan selecteer het **Geavanceerde lusje van de netwerkconfiguratie** van het geselecteerde milieu en klik de ellipsis knoop.
+1. Van de **pagina van het Overzicht van het 0&rbrace; Programma, navigeer aan het** milieu **lusje en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder de** milieu&#39;s **rubriek in het linkerpaneel wilt toelaten.** Dan selecteer het **Geavanceerde lusje van de netwerkconfiguratie** van het geselecteerde milieu en klik de ellipsis knoop.
 
    ![ Selecterend geef uit of schrap van geavanceerd voorzien van een netwerk op het programmaniveau ](assets/advanced-networking-ui-edit-delete.png)
 
 1. In het elliptische menu, uitgezocht of **geef** uit of **schrap**.
 
    * Als u **kiest geef** uit, werk de informatie per de stappen bij die in de vorige sectie worden beschreven, [ toelatend het Gebruiken van UI ](#enabling-ui), en klik **sparen**.
-   * Als u **Schrapping** kiest, bevestig de schrapping in het **3} de dialoogvakje van de het netwerkconfiguratie van de Schrapping {met** Schrapping **of aborteer met** annuleert **.**
+   * Als u **Schrapping** kiest, bevestig de schrapping in het **3&rbrace; de dialoogvakje van de het netwerkconfiguratie van de Schrapping &lbrace;met** Schrapping **of aborteer met** annuleert **.**
 
 De veranderingen worden weerspiegeld op het **Milieu** lusje.
 
@@ -746,9 +746,9 @@ Zodra de netwerkinfrastructuur voor een programma wordt gecreeerd, slechts kunne
 
 1. Voer een van de volgende handelingen uit:
 
-   * Als u **verkoos geef** uit, **geeft de** tovenaar van de netwerkinfrastructuur {opent. Bewerk de vereiste bewerkingen volgens de stappen die worden beschreven bij het maken van de infrastructuur.
+   * Als u **verkoos geef** uit, **geeft de** tovenaar van de netwerkinfrastructuur &lbrace;opent. Bewerk de vereiste bewerkingen volgens de stappen die worden beschreven bij het maken van de infrastructuur.
 
-   * Als u **Schrapping** koos, bevestig de schrapping in het **3} de dialoogvakje van de het netwerkconfiguratie van de Schrapping {met** Schrapping **of abort met** annuleert **.**
+   * Als u **Schrapping** koos, bevestig de schrapping in het **3&rbrace; de dialoogvakje van de het netwerkconfiguratie van de Schrapping &lbrace;met** Schrapping **of abort met** annuleert **.**
 
 De veranderingen worden weerspiegeld op het **Milieu** lusje.
 

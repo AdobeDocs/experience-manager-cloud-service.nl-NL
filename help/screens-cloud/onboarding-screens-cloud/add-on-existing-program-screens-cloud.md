@@ -38,7 +38,7 @@ Ga als volgt te werk om Screens toe te voegen aan een bestaand programma:
    >[!NOTE]
    >De **geeft de pagina van het Programma** uit toont twee lusjes **Algemeen** en **Oplossingen &amp; toe:voegen-ons**.
 
-1. De **Oplossingen &amp; toe:voegen-ons** opties van lusjevertoningen, zoals Plaatsen, Assets, en Screens. Selecteer **toe:voegen-op optie 0} Screens {, zoals aangetoond in het hieronder cijfer.**
+1. De **Oplossingen &amp; toe:voegen-ons** opties van lusjevertoningen, zoals Plaatsen, Assets, en Screens. Selecteer **toe:voegen-op optie 0&rbrace; Screens &lbrace;, zoals aangetoond in het hieronder cijfer.**
 
    ![ Screens toe:voegen-op optie ](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 

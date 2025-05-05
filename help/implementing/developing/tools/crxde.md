@@ -64,7 +64,7 @@ Met het structuurnavigatiefilter (het binoculars-pictogram) kunt u de knooppunte
 
 **geeft Pane** uit laat u de inhoud van het momenteel-geselecteerde dossier in de bewaarplaats bekijken. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
 
-Het **lusje van het Huis** {laat u inhoud en/of documentatie en toegangsontwikkelaardocumentatie en Adobe steun zoeken.
+Het **lusje van het Huis** &lbrace;laat u inhoud en/of documentatie en toegangsontwikkelaardocumentatie en Adobe steun zoeken.
 
 Dubbelklik een dossier in de **Ruit van de Ontdekkingsreiziger** om zijn inhoud in **te tonen geef Pane** uit. U kunt het dan wijzigen en de veranderingen bewaren.
 
@@ -91,7 +91,7 @@ De machtigingen zijn onderverdeeld in de volgende categorieën.
 
 >[!NOTE]
 >
-Om toegangsbeheerinformatie te kunnen zien, moet de gebruiker het programma opent aan CRXDE Lite rechten hebben om ACL ingangen te lezen.
+>Om toegangsbeheerinformatie te kunnen zien, moet de gebruiker het programma opent aan CRXDE Lite rechten hebben om ACL ingangen te lezen.
 
 ### Tabblad Replicatie {#replication-tab}
 
@@ -192,9 +192,9 @@ U kunt het knooppunt nu aan uw behoeften aanpassen door eigenschappen te wijzige
 
 >[!NOTE]
 >
-De meeste uitgeven verrichtingen, met inbegrip van **leiden Knoop**, houdt alle veranderingen in geheugen, en slaat hen slechts op in de bewaarplaats op (het gebruiken van [**sparen Alle Knoop**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
+>De meeste uitgeven verrichtingen, met inbegrip van **leiden Knoop**, houdt alle veranderingen in geheugen, en slaat hen slechts op in de bewaarplaats op (het gebruiken van [**sparen Alle Knoop**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
 >
-De validatie met betrekking tot of het gemaakte knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` -knooppunt maken als onderliggend knooppunt van `nt:folder` -knooppunt).
+>De validatie met betrekking tot of het gemaakte knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` -knooppunt maken als onderliggend knooppunt van `nt:folder` -knooppunt).
 
 ## Een eigenschap maken {#creating-a-property}
 

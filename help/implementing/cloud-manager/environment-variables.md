@@ -39,7 +39,7 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 
 Als u veelvoudige variabelen wilt toevoegen, adviseert de Adobe dat u de eerste variabele toevoegt, dan gebruik ![ pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **toevoegen** in de **dialoog van de Configuratie van het Milieu** om de extra variabelen toe te voegen. Deze methode betekent dat u ze met één update aan de omgeving kunt toevoegen.
 
-Om milieu variabelen toe te voegen, bij te werken of te schrappen, moet u een lid van de **rol ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) zijn van de Manager van de Plaatsing 0}.[**
+Om milieu variabelen toe te voegen, bij te werken of te schrappen, moet u een lid van de **rol [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) zijn van de Manager van de Plaatsing 0&rbrace;.**
 
 **om een omgevingsvariabele toe te voegen:**
 
@@ -64,7 +64,7 @@ Als u een milieuvariabele voor het eerst toevoegt, klik **voeg Configuratie** in
 
    ![ Toevoegend een variabele ](assets/add-variable.png)
 
-1. Klik ![ toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **** toevoegen.
+1. Klik ![ toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **&#x200B;**&#x200B;toevoegen.
 
    Voeg zo nodig extra variabelen toe.
 
@@ -76,7 +76,7 @@ Als u een milieuvariabele voor het eerst toevoegt, klik **voeg Configuratie** in
 
 ## Een omgevingsvariabele bijwerken {#update-variables}
 
-Nadat u milieuvariabelen hebt gecreeerd, kunt u hen bijwerken gebruikend ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **** bijwerken om het **de dialoogvakje van de Configuratie van het Milieu** te openen.
+Nadat u milieuvariabelen hebt gecreeerd, kunt u hen bijwerken gebruikend ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **&#x200B;**&#x200B;bijwerken om het **de dialoogvakje van de Configuratie van het Milieu** te openen.
 
 Als u veelvoudige variabelen wilt bijwerken, adviseert de Adobe dat u het **dialoogvakje van de Configuratie van het Milieu** gebruikt om alle noodzakelijke variabelen onmiddellijk bij te werken alvorens **te klikken sparen**. Op deze manier kunt u ze met één update toevoegen aan de omgeving.
 
@@ -88,8 +88,8 @@ Als u veelvoudige variabelen wilt bijwerken, adviseert de Adobe dat u het **dial
 1. Voor de **pagina van Milieu&#39;s**, selecteer een rij in de lijst die het milieu heeft waarvoor u een variabele wilt bijwerken.
 1. Voor de detailpagina van het milieu, klik de **Configuratie** tabel.
 1. Klik ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
-1. In het **de dialoogvakje van de Configuratie van het Milieu 1}, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
-1. In het drop-down menu, geeft de klik **** uit.
+1. In het **de dialoogvakje van de Configuratie van het Milieu 1&rbrace;, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
+1. In het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
 
    ![ geef of schrap veranderlijke ](assets/edit-delete-variable.png) uit
 
@@ -115,7 +115,7 @@ Als u een geheim bewerkt, kan de waarde alleen worden bijgewerkt en niet worden 
 1. Voor de **pagina van Milieu&#39;s**, selecteer een rij in de lijst die het milieu heeft waarvoor u een variabele wilt bijwerken.
 1. Voor de detailpagina van het milieu, klik de **Configuratie** tabel.
 1. Klik ![ toevoegen/bijwerken - voeg cirkelpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **toevoegen/bijwerken**.
-1. In het **de dialoogvakje van de Configuratie van het Milieu 1}, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
+1. In het **de dialoogvakje van de Configuratie van het Milieu 1&rbrace;, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de laatste kolom van de rij van de variabele u wilt veranderen.**
 1. In het drop-down menu, klik **Schrapping** om de variabele onmiddellijk te verwijderen.
 1. Klik **sparen**.
 
