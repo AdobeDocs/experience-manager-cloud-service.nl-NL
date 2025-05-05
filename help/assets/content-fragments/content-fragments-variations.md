@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2530'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,11 @@ ht-degree: 4%
 >
 >De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).**
+>Er zijn twee redacteurs voor het ontwerpen van de Fragmenten van de Inhoud - de nieuwe redacteur en de originele redacteur. De nieuwe redacteur is het gebrek. Hoewel de basisfunctionaliteit hetzelfde is, zijn er enkele verschillen.
+>
+>In deze sectie wordt de oorspronkelijke editor beschreven. Dit wordt [ geopend via de nieuwe redacteur ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor volledige details van de nieuwe redacteur.
 
 Van het **lusje van Variaties** kunt u het volgende doen:
 
@@ -43,11 +47,11 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt bewe
 
 >[!CAUTION]
 >
->Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, wordt AEM een waarschuwing weergegeven wanneer een auteur het fragment opent voor opnieuw bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent voor opnieuw bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Inhoud ontwerpen {#authoring-your-content}
 
-Wanneer u uw inhoudsfragment voor het uitgeven opent, is het **lusje van Variaties** open door gebrek. Hier kunt u de inhoud ontwerpen, voor stramien of variaties die u hebt. Het gestructureerde fragment bevat velden van diverse gegevenstypen die in het inhoudsmodel zijn gedefinieerd.
+Wanneer u uw inhoudsfragment voor het uitgeven in de originele redacteur opent, is het **lusje van Variaties** open door gebrek. Hier kunt u de inhoud ontwerpen, voor stramien of variaties die u hebt. Het gestructureerde fragment bevat velden van diverse gegevenstypen die in het inhoudsmodel zijn gedefinieerd.
 
 Bijvoorbeeld:
 

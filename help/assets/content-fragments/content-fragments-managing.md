@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1925'
 ht-degree: 4%
 
 ---
@@ -37,11 +37,19 @@ De [ Redacteur van het Fragment van de Inhoud ](#opening-the-fragment-editor) ve
 
 >[!NOTE]
 >
->De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
+>De Fragmenten van de inhoud zijn a **eigenschap van de Plaatsen**, maar worden opgeslagen als **Assets**.
 >
->Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel zij nog van de **Assets** console kunnen worden beheerd. Deze sectie behandelt beheer van de **Assets** console.
+>Zij worden hoofdzakelijk geleid met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel zij nog van de **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console kunnen worden beheerd.
 >
->Er zijn twee editors voor het ontwerpen van Content Fragments; hoewel de basisfunctionaliteit het zelfde is, zijn er sommige verschillen. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).** Beide editors hebben een knevelschakelaar in de hoogste toolbar om snelle toegang tot de andere redacteur te verlenen.
+>Er zijn twee redacteurs voor het ontwerpen van de Fragmenten van de Inhoud - de nieuwe redacteur en de originele redacteur. De nieuwe redacteur is het gebrek. Hoewel de basisfunctionaliteit hetzelfde is, zijn er enkele verschillen.
+>
+>In deze sectie wordt de oorspronkelijke editor beschreven.
+>
+>De standaardeditor voor [ Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md) is de nieuwe redacteur, die van zowel de **3} console van de Fragmenten van de Inhoud** als de **Assets** console wordt betreden. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur.
+>
+>Om de [ originele redacteur ](/help/assets/content-fragments/content-fragments-variations.md) te gebruiken, open eerst de nieuwe redacteur en deactiveer dan de **Nieuwe redacteur** schakelaar.
+>
+>Beide editors hebben een knevelschakelaar in de hoogste toolbar om snelle toegang tot de andere redacteur te verlenen.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
-Uw fragment openen voor bewerken:
+U opent als volgt het fragment voor bewerking in de oorspronkelijke editor:
 
 >[!CAUTION]
 >
 >Om een inhoudsfragment uit te geven hebt u [ de aangewezen toestemmingen ](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
-1. Gebruik de **Assets** console om aan de plaats van uw inhoudsfragment te navigeren.
-1. Open het fragment voor bewerking door:
+1. Ga naar de locatie van het inhoudsfragment.
 
-   * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
-   * Het selecteren van het fragment, dan **geeft** van de toolbar uit.
+1. Open het fragment om het te bewerken.
 
-1. De fragmenteditor wordt geopend. Breng de gewenste wijzigingen aan:
+1. Het fragment wordt geopend in de nieuwe editor. Deactiveer de **Nieuwe schakelaar van de Redacteur** (hoogste recht) om de originele redacteur te openen:
 
    ![ de redacteur van het Fragment ](assets/cfm-managing-03.png)
 
-1. Na het aanbrengen van veranderingen, gebruik **sparen**, **sparen en sluit** of **dicht** zoals vereist.
+1. Breng de gewenste wijzigingen aan.
+
+1. Wanneer klaar, gebruik **sparen**, **sparen en sluit** of **dicht** zoals vereist.
 
    >[!NOTE]
    >

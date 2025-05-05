@@ -5,9 +5,9 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,11 @@ De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service
 >
 >De Fragmenten van de inhoud zijn a **eigenschap van de Plaatsen**, maar worden opgeslagen als **Assets**.
 >
->Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel zij nog van de **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console kunnen worden beheerd.
+>Zij worden hoofdzakelijk geleid met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel zij nog van de **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console kunnen worden beheerd.
 >
->Er zijn twee editors voor het ontwerpen van inhoudsfragmenten:
+>De standaardeditor voor [ Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md) is de nieuwe redacteur; betreden van zowel de **console van de Fragmenten van de Inhoud** als de **Assets** console.
 >
->* De nieuwe redacteur voor [ Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), wordt hoofdzakelijk betreden van de **console van de Fragmenten van de Inhoud**.
->* De [ originele redacteur ](/help/assets/content-fragments/content-fragments-variations.md) wordt hoofdzakelijk betreden van de **Assets** console.
+>Om de [ originele redacteur ](/help/assets/content-fragments/content-fragments-variations.md) te gebruiken, open eerst de nieuwe redacteur en deactiveer dan de **Nieuwe redacteur** schakelaar.
 
 >[!NOTE]
 >
