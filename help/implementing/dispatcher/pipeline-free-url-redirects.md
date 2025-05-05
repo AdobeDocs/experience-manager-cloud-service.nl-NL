@@ -21,7 +21,7 @@ De scenario&#39;s omvatten:
 * De naam van een HTML-pagina is gewijzigd.
 * SEO-optimalisatie.
 
-AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) aan om server-zij omleidingen uit te voeren, maar de strategie die in dit artikel wordt beschreven, zonder pijpleiding is omleiding, is een goede keus wanneer:
+AEM as a Cloud Service biedt [ verscheidene benaderingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/url-redirection) aan om server-zij omleidingen uit te voeren, maar de strategie die in dit artikel wordt beschreven, zonder pijpleiding is omleiding, is een goede keus wanneer:
 
 * De mensen die redirects handhaven zijn bedrijfsgebruikers, die niet de noodzakelijke toegang hebben om dossierveranderingen in broncontrole of de mogelijkheid vast te leggen om een Cloud Manager web-tier configuratiepijplijn uit te voeren.
 * Het aantal omleidingen varieert van een paar tot tienduizenden.
@@ -40,7 +40,7 @@ De kern van deze functie is de mogelijkheid voor AEM Apache/Dispatcher om een of
 >[!NOTE]
 > Het gebruik van deze eigenschap van de Manager van de Kaart van Redirect vereist ACS versie van Commons **6.7.0 of hoger** terwijl het gebruik van Redirect Manager versie **6.10.0 of hoger** vereist.
 
-Voor een gedetailleerde stap-voor-stap implementatiegids, zie het [ Uitvoeren pijpleiding-vrije URL herleidt ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) leerprogramma.
+Voor een gedetailleerde stap-voor-stap implementatiegids, zie het [ Uitvoeren pijpleiding-vrije URL herleidt ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) leerprogramma.
 
 ## De kaart voor herschrijven {#rewrite-map}
 
@@ -87,5 +87,5 @@ Houd rekening met het volgende:
 
 ## Tutorials {#tutorials}
 
-1. [ Uitvoerend pijpleiding-vrije URL richt zich opnieuw ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [ opnieuw richt URL ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [ Uitvoerend pijpleiding-vrije URL richt zich opnieuw ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [ opnieuw richt URL ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/administration/url-redirection)

@@ -239,4 +239,4 @@ De nieuwste architectuur voor AEM as a Cloud Service introduceert enkele fundame
 * Edge Delivery Services:
    * [AEM as a Cloud Service - Overzicht - met Edge Delivery Services](/help/edge/overview.md)
    * [Edge Delivery Services gebruiken](/help/edge/using.md)
-   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=nl-NL)

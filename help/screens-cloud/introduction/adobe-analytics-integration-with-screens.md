@@ -63,4 +63,4 @@ Dit scenario haalt Analytics API door de vraag van het HART van een analysediens
 Analytische gebeurtenissen worden offline opgeslagen in geïndexeerdeDB en later afgekapt en naar de cloud verzonden.
 
 >[!NOTE]
->Meer over het Opeenvolgen en het Standaard Model van Gegevens voor Gebeurtenissen leren, zie [ Vormend Adobe Analytics voor AEM Screens ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) voor details.
+>Meer over het Opeenvolgen en het Standaard Model van Gegevens voor Gebeurtenissen leren, zie [ Vormend Adobe Analytics voor AEM Screens ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=nl-NL) voor details.

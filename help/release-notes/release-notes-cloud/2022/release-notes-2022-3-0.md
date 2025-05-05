@@ -21,7 +21,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -115,7 +115,7 @@ De releasedatum voor Content Transfer Tool v1.9.0 is 28 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in de submap `crx-quickstart` voordat ze de map extraheren, en 2) de grootte van de migratieset schatten en controleren of deze wordt ondersteund. Als één of allebei van deze controles worden geschonden, zien de gebruikers waarschuwingen in CTT UI. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van de Adobe. Zie [ het Bepalen van migratie vastgestelde grootte en schijfruimte ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) voor meer details.
+* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in de submap `crx-quickstart` voordat ze de map extraheren, en 2) de grootte van de migratieset schatten en controleren of deze wordt ondersteund. Als één of allebei van deze controles worden geschonden, zien de gebruikers waarschuwingen in CTT UI. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van de Adobe. Zie [ het Bepalen van migratie vastgestelde grootte en schijfruimte ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=nl-NL#migration-set-size) voor meer details.
 
 ## Analysator van best practices {#bpa-release}
 

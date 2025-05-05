@@ -19,7 +19,7 @@ Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en
 
 ## Zelfstudie {#tutorial}
 
-Om te begrijpen hoe te om uw SPA met Adobe Experience Platform Launch te integreren, zie dit [ artikel en leerprogramma van de kennisbasis ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). Het kan u door de opstelling begeleiden van de Lancering en het uitvoeren van Experience Cloud dat met Angular of React wordt gebouwd.
+Om te begrijpen hoe te om uw SPA met Adobe Experience Platform Launch te integreren, zie dit [ artikel en leerprogramma van de kennisbasis ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL). Het kan u door de opstelling begeleiden van de Lancering en het uitvoeren van Experience Cloud dat met Angular of React wordt gebouwd.
 
 >[!NOTE]
 >

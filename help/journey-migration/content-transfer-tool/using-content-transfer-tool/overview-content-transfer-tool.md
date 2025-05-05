@@ -18,7 +18,7 @@ ht-degree: 29%
 >id="aemcloud_ctt_overview"
 >title="Overzicht"
 >abstract="Content Transfer Tool is een door Adobe ontwikkeld programma dat kan worden gebruikt om de migratie van bestaande inhoud van een AEM-broninstantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie te starten. Met dit gereedschap worden ook groepen automatisch overgedragen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en beste praktijken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=nl-NL" text="Richtlijnen en beste praktijken"
 
 Het gereedschap Inhoud overbrengen is een door Adobe ontwikkeld programma dat kan worden gebruikt om de migratie van bestaande inhoud van een AEM-broninstantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie te starten.
 

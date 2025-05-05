@@ -16,7 +16,7 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
 >[!NOTE]
->Zie [ het Leiden Milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) om te leren hoe de gebruiker een milieu kan creëren.
+>Zie [ het Leiden Milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) om te leren hoe de gebruiker een milieu kan creëren.
 
 ## Doelstelling {#objective}
 

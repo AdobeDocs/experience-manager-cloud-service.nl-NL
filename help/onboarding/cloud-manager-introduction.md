@@ -70,7 +70,7 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Cloud
 Cloud Manager-programma&#39;s zijn een reeks Cloud Manager-omgevingen die ondersteuning bieden voor logische groepen bedrijfsinitiatieven. Deze groepen komen meestal overeen met een aangeschafte Service level agreement (SLA). Bijvoorbeeld, kan één programma de AEM middelen vertegenwoordigen om de openbare Website van een organisatie te steunen, terwijl een ander programma interne DAM vertegenwoordigt.
 
 
-Bekijk deze [ video ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) om meer te leren bij het gebruiken van de programma&#39;s van Cloud Manager.
+Bekijk deze [ video ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=nl-NL) om meer te leren bij het gebruiken van de programma&#39;s van Cloud Manager.
 
 Een gebruiker kan a **zandbak** of a **productie** programma tot stand brengen.
 
@@ -92,7 +92,7 @@ Uw cloudomgevingen worden gemaakt, geopend en weergegeven via Cloud Manager. Dez
 
 >[!TIP]
 >
-> Zie de video [ Gebruikend de Milieu&#39;s van Cloud Manager van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) een overzicht van de beschikbare milieu&#39;s.
+> Zie de video [ Gebruikend de Milieu&#39;s van Cloud Manager van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=nl-NL) een overzicht van de beschikbare milieu&#39;s.
 >
 >Zie [ Milieu&#39;s ](/help/implementing/cloud-manager/manage-environments.md) beheren om meer over types van milieu te leren een gebruiker kan creëren en hoe de gebruiker een milieu kan creëren.
 

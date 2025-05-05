@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -196,7 +196,7 @@ Gebruik het verzoekattribuut om de bijbehorende eigenschappen van de gegevensbro
 
 1. Selecteer **[!UICONTROL Request Attribute]** in de vervolgkeuzelijst **[!UICONTROL Binding To]** en voer in het veld **[!UICONTROL Binding Value]** de naam van het kenmerk in.
 
-1. Creeer een [ bekleding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing) voor head.jsp. Als u de overlay wilt maken, opent u CRX DE en kopieert u het bestand `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` naar `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Creeer een [ bekleding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=nl-NL#developing) voor head.jsp. Als u de overlay wilt maken, opent u CRX DE en kopieert u het bestand `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` naar `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >

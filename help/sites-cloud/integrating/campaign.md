@@ -21,7 +21,7 @@ Meer informatie over AEM as a Cloud Service-ondersteuning voor integratie met Ad
 >
 >In dit document wordt beschreven hoe Adobe Campaign kan worden geïntegreerd met AEM as a Cloud Service, de AEM-oplossing in de cloud.
 >
->Voor details bij het integreren van Adobe Campaign met AEM 6.5, op gebouw of AMS-ontvangen oplossing van AEM, [ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
+>Voor details bij het integreren van Adobe Campaign met AEM 6.5, op gebouw of AMS-ontvangen oplossing van AEM, [ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=nl-NL).
 
 ## Integreren met Adobe Campaign v7/v8 {#acc}
 
@@ -29,10 +29,10 @@ De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van d
 
 | Campagneversie | Integratie met AEMaaCS |
 |---|---|
-| [ Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic.html) | Niet ondersteund |
-| [ Campagne v8 (cliëntconsole) ](https://experienceleague.adobe.com/docs/campaign-v8.html) | Niet ondersteund |
-| Campaign Web User Interface | Ondersteund. [ Leer meer ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
+| [ Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=nl-NL) | Niet ondersteund |
+| [ Campagne v8 (cliëntconsole) ](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=nl-NL) | Niet ondersteund |
+| Campaign Web User Interface | Ondersteund. [ Leer meer ](https://experienceleague.adobe.com/nl/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Integreren met Adobe Campaign Standard {#acs}
 
-AEM as a Cloud Service steunt geen integratie met [ Adobe Campaign Standard ](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS).
+AEM as a Cloud Service steunt geen integratie met [ Adobe Campaign Standard ](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl-NL) (ACS).

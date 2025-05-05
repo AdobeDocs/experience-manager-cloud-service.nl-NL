@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -43,8 +43,8 @@ Bekijk de video Overzicht van de release van juni 2023 voor een overzicht van de
 
 ![ Voorproef in de Console van het Fragment van de Inhoud ](/help/assets/content-fragments-console-preview.png)
 
-* Afbeeldingen kunnen nu dynamisch worden geoptimaliseerd voor weergave op het web in scenario&#39;s zonder kop met AEM GraphQL. [ de variabelen van de Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) kunnen in de vragen van GraphQL worden bepaald om ontkoppelde cliënttoepassingen toe te staan verzoek dienovereenkomstig geoptimaliseerde beelden van AEM.
-* De markeringen op [ de Variaties van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) kunnen nu output aan JSON gebruikend de AEM de inhoudslevering API van GraphQL worden.
+* Afbeeldingen kunnen nu dynamisch worden geoptimaliseerd voor weergave op het web in scenario&#39;s zonder kop met AEM GraphQL. [ de variabelen van de Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=nl-NL#query-variables) kunnen in de vragen van GraphQL worden bepaald om ontkoppelde cliënttoepassingen toe te staan verzoek dienovereenkomstig geoptimaliseerde beelden van AEM.
+* De markeringen op [ de Variaties van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=nl-NL) kunnen nu output aan JSON gebruikend de AEM de inhoudslevering API van GraphQL worden.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -70,7 +70,7 @@ Met Experience Manager Assets kunt u nu meer doen vanuit de gebruikersinterface 
 
 **Dynamic Media: Bijgewerkte Slimme op uitsnijden betrekking hebbende gebieden in het profiel van het Beeld**
 
-De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [ opties van het Gewas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [ opties van het Gewas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=nl-NL#crop-options).
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-features}
 
@@ -128,7 +128,7 @@ De mening van Assets laat u nu toe om multi-waardetekst en drop-down de componen
 
 * [ Verbeterde authentificatiemethodes voor het Model van de Gegevens van de Vorm ](/help/forms/configure-data-sources.md): Ervaring verhoogde veiligheid met de introductie van de Gebaseerde authentificatie van de Referentie van de Cliënt voor het verbinden van AEM Forms met compatibele gegevensbronnen. Deze verbetering elimineert de behoefte aan imitatie of gebruikerslogin, die de bescherming van uw gegevens verstevigt.
 
-* [ Aangepaste Forms met herhaalbare secties ](/help/forms/create-forms-repeatable-sections.md): U kunt [ Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ Tovenaar ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [ Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), en [ Horizontale componenten van Lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) in een op componenten gebaseerde Aangepaste Vorm van de Kern nu maken om herhaalbare secties tot stand te brengen.
+* [ Aangepaste Forms met herhaalbare secties ](/help/forms/create-forms-repeatable-sections.md): U kunt [ Accordeon ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=nl-NL), [ Tovenaar ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=nl-NL), [ Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), en [ Horizontale componenten van Lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=nl-NL) in een op componenten gebaseerde Aangepaste Vorm van de Kern nu maken om herhaalbare secties tot stand te brengen.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
@@ -138,7 +138,7 @@ De mening van Assets laat u nu toe om multi-waardetekst en drop-down de componen
 
 ### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
-Het gebruik [ Zwaardeloze Aanpassings Forms ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking getreden. Met behulp van hoofdloze adaptieve formulieren kunt u:
+Het gebruik [ Zwaardeloze Aanpassings Forms ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=nl-NL) om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking getreden. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen

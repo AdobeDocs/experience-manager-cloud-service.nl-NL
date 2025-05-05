@@ -17,11 +17,11 @@ Nieuwere AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie en bied
 
 >[!NOTE]
 >
-> Een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) is een geadviseerd middel om te leren hoe te om op OpenAPI-Gebaseerde AEM APIs te vormen en aan te halen.
+> Een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) is een geadviseerd middel om te leren hoe te om op OpenAPI-Gebaseerde AEM APIs te vormen en aan te halen.
 
 Voor eindpunten die authentificatie vereisen, verschilt de authentificatiebenadering gebaseerd op het eindpunt, maar kan Server-aan-Server, App van het Web OAuth, of App van één pagina OAuth (SPA) gebruiken. De geloofsbrieven worden gevormd door projecten in [ Adobe Developer Console ](https://developer.adobe.com/developer-console/).
 
-Veelvoorkomende gevallen van API-gebruik betreffen integratie met systemen zoals een CRM of PIM, waarbij AEM API&#39;s worden aangeroepen om gegevens op te halen of te behouden. Als deel van de integratieimplementatie, kunnen de toepassingen aan [ AEM-emitting gebeurtenissen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview) intekenen, die bedrijfslogica in Adobe App Builder of andere infrastructuur kunnen teweegbrengen.
+Veelvoorkomende gevallen van API-gebruik betreffen integratie met systemen zoals een CRM of PIM, waarbij AEM API&#39;s worden aangeroepen om gegevens op te halen of te behouden. Als deel van de integratieimplementatie, kunnen de toepassingen aan [ AEM-emitting gebeurtenissen ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-eventing/overview) intekenen, die bedrijfslogica in Adobe App Builder of andere infrastructuur kunnen teweegbrengen.
 
 Dit document fungeert als een overzicht, maar op de volgende pagina&#39;s is meer gedetailleerde documentatie beschikbaar:
 
@@ -29,11 +29,11 @@ Dit document fungeert als een overzicht, maar op de volgende pagina&#39;s is mee
 
 * Informatieve [ Gidsen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), met inbegrip van [ API concepten en syntaxis ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
 
-* Een top-level leerprogramma beschrijvend [ authentificatiemethodes ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) en andere concepten.
+* Een top-level leerprogramma beschrijvend [ authentificatiemethodes ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) en andere concepten.
 
-* Een leerprogramma met video concentreerde zich op [ hoe te om op OpenAPIs ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup) te vormen.
+* Een leerprogramma met video concentreerde zich op [ hoe te om op OpenAPIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup) te vormen.
 
-* [ een leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) over het vormen van en het aanhalen van OpenAPIs met de server-aan-server authentificatiestrategie. Soortgelijke zelfstudies kunt u ook vinden voor webtoepassingen en toepassingen met één pagina.
+* [ een leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) over het vormen van en het aanhalen van OpenAPIs met de server-aan-server authentificatiestrategie. Soortgelijke zelfstudies kunt u ook vinden voor webtoepassingen en toepassingen met één pagina.
 
 ## API-toegang configureren {#configuring-api-access}
 
@@ -45,7 +45,7 @@ Sommige op OpenAPI-Gebaseerde AEM APIs vereisen authentificatie, die geloofsbrie
 1. Vorm het Project ADC. Dit produceert geloofsbrieven die later zullen worden gebruikt om voor een dragertoken te ruilen wanneer het aanhalen van API.
 1. Vorm de instantie van AEM om de mededeling van het Project van ADC toe te laten. Dit impliceert het registreren van cliëntidentiteitskaart met het milieu door een dossier te vormen en op te stellen YAML, zoals die in [ wordt beschreven het Registreren van een identiteitskaart van de Cliënt ](#registering-a-client-id) hieronder sectie.
 
-Voor gedetailleerde geleidelijke instructies, zie de [ opstelling op openAPI-Gebaseerde leerprogramma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+Voor gedetailleerde geleidelijke instructies, zie de [ opstelling op openAPI-Gebaseerde leerprogramma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ### Client-id registreren {#registering-a-client-id}
 

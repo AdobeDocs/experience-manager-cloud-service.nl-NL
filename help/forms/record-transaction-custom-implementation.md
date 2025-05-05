@@ -15,14 +15,14 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
 | AEM as a Cloud Service | Dit artikel |
 
 Gebruik de TransactieRecorder API om acties te registreren die niet automatisch als transacties worden rekenschap gegeven.
 
 U kunt aangepaste code gebruiken om een PDF-formulier te verzenden. U kunt ook een formulier verzenden met aangepaste methoden in plaats van verzendmethoden te gebruiken die bij AEM Forms worden geleverd. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms verstrekt API, [ TransactionRecorder ](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke acties zoals transacties te registreren.
 
-Om een transactie te registreren, schrijf het [ standaard sling servlet ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) en vraag servlet van een cliënt om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
+Om een transactie te registreren, schrijf het [ standaard sling servlet ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=nl-NL) en vraag servlet van een cliënt om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
 
 ## Voorbeeld van servercode {#sample-server-sided-code}
 

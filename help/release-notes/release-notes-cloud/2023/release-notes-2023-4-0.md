@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -44,9 +44,9 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
-* De Fragmenten van de inhoud en hun verwijzingen kunnen nu aan de [ Dienst van de Voorproef van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) worden gepubliceerd gebruikend de [ Console van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html), toestaand gebruikers aan voorproef de definitieve ervaring op een ontkoppelde voorproeftoepassing alvorens live te gaan.
-* Afbeeldingen kunnen nu dynamisch worden geoptimaliseerd voor weergave op het web in scenario&#39;s zonder kop met AEM GraphQL. [ de variabelen van de Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) kunnen in de vragen van GraphQL worden bepaald om ontkoppelde cliënttoepassingen toe te staan verzoek dienovereenkomstig geoptimaliseerde beelden van AEM.
-* De markeringen op [ de Variaties van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) kunnen nu output aan JSON gebruikend AEM GraphQL de inhoudslevering API worden.
+* De Fragmenten van de inhoud en hun verwijzingen kunnen nu aan de [ Dienst van de Voorproef van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL#access-preview-service) worden gepubliceerd gebruikend de [ Console van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=nl-NL), toestaand gebruikers aan voorproef de definitieve ervaring op een ontkoppelde voorproeftoepassing alvorens live te gaan.
+* Afbeeldingen kunnen nu dynamisch worden geoptimaliseerd voor weergave op het web in scenario&#39;s zonder kop met AEM GraphQL. [ de variabelen van de Vraag ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=nl-NL#query-variables) kunnen in de vragen van GraphQL worden bepaald om ontkoppelde cliënttoepassingen toe te staan verzoek dienovereenkomstig geoptimaliseerde beelden van AEM.
+* De markeringen op [ de Variaties van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=nl-NL) kunnen nu output aan JSON gebruikend AEM GraphQL de inhoudslevering API worden.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -68,11 +68,11 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
    * Adaptief streamen (DASH/HLS) zorgt voor een betere kijkervaring voor video&#39;s
    * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
 
-* De dynamische Opname van Media _0&rbrace; - Experimenteer met testbeelden of Dynamische Media URLs, om de output van verschillende beeldbepalingen te zien, en slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerkbandbreedte, en de Verhouding van het Pixel van het Apparaat te beoordelen._ Zie [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* De dynamische Opname van Media _0&rbrace; - Experimenteer met testbeelden of Dynamische Media URLs, om de output van verschillende beeldbepalingen te zien, en slimme optimalisaties van het Beeld voor dossiergrootte (met levering WebP en AVIF), netwerkbandbreedte, en de Verhouding van het Pixel van het Apparaat te beoordelen._ Zie [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=nl-NL).
 
 ### Functie in [!DNL Assets] prerelease {#prerelease-feature-assets}
 
-* Dynamische media - De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [ opties van het Gewas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+* Dynamische media - De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [ opties van het Gewas ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=nl-NL#crop-options).
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 

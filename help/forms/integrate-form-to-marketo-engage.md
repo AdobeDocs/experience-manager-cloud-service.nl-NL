@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-Het integreren AEM Forms met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/en/docs/marketo/using/home) laat gebruikers toe om de mogelijkheden van Marketo Engage te gebruiken om bedrijfslogica van gevangen gegevens tot stand te brengen en werkschema&#39;s, met inbegrip van slimme campagnes en e-mailautomatisering te automatiseren. Het geconfigureerde formulier kan vastgelegde gegevens naar het Marketo Engage verzenden voor verwerking.
+Het integreren AEM Forms met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/nl/docs/marketo/using/home) laat gebruikers toe om de mogelijkheden van Marketo Engage te gebruiken om bedrijfslogica van gevangen gegevens tot stand te brengen en werkschema&#39;s, met inbegrip van slimme campagnes en e-mailautomatisering te automatiseren. Het geconfigureerde formulier kan vastgelegde gegevens naar het Marketo Engage verzenden voor verwerking.
 
 ## Voordelen van de integratie van Marketo Engage met formulieren
 
@@ -52,7 +52,7 @@ In de onderstaande tabel worden de weinige redenen beschreven waarom u AEM Forms
 Enkele overwegingen bij de integratie van Marketo Engage met AEM Forms:
 
 * AEM ondersteunt alleen de People(Leads)-database tussen de verschillende Marketo-databases.
-* Marketo staat de [ verwezenlijking van 10 douanevoorwerpen ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) als user-defined voorwerpen toe om gespecialiseerde gegevens voorbij de standaardgebieden in Leads op te slaan, ondersteunend unieke bedrijfsbehoeften.
+* Marketo staat de [ verwezenlijking van 10 douanevoorwerpen ](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) als user-defined voorwerpen toe om gespecialiseerde gegevens voorbij de standaardgebieden in Leads op te slaan, ondersteunend unieke bedrijfsbehoeften.
 * AEM hebben alleen toegang tot aangepaste objecten als deze zijn gekoppeld aan de Lead-database
 
 ## Vereisten voor de integratie van Marketo Engage met formulieren
@@ -60,7 +60,7 @@ Enkele overwegingen bij de integratie van Marketo Engage met AEM Forms:
 Hieronder vindt u de eerste vereisten voor de verbinding van Marketo Engage met AEM Forms:
 
 * Een geldige Adobe Marketo Engage-licentie
-* Een werkende instantie van Marketo Engage om [ identiteitskaart van de Cliënt en Geheime Cliënt ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) terug te winnen om een wolkenconfiguratie tot stand te brengen.
+* Een werkende instantie van Marketo Engage om [ identiteitskaart van de Cliënt en Geheime Cliënt ](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) terug te winnen om een wolkenconfiguratie tot stand te brengen.
 
 ## Cloudserviceconfiguratie maken om AEM Forms (Adaptive Forms) te verbinden met Marketo Engage
 

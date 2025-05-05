@@ -37,7 +37,7 @@ Hieronder staan de voorwaarden voor het gebruik van de Forms-verzendservice:
 
 ## Forms-verzendservice configureren
 
-Maak een nieuw AEM-project dat is geconfigureerd met het Adaptive Forms Block. Verwijs naar het [ Begonnen Worden - het artikel van het Leerprogramma van de Ontwikkelaar ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) om te leren hoe te om een nieuw project van AEM tot stand te brengen. Werk het `fstab.yaml` dossier in uw project bij. Vervang de bestaande verwijzing door het pad naar de map die u met de `forms@adobe.com` hebt gedeeld.
+Maak een nieuw AEM-project dat is geconfigureerd met het Adaptive Forms Block. Verwijs naar het [ Begonnen Worden - het artikel van het Leerprogramma van de Ontwikkelaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) om te leren hoe te om een nieuw project van AEM tot stand te brengen. Werk het `fstab.yaml` dossier in uw project bij. Vervang de bestaande verwijzing door het pad naar de map die u met de `forms@adobe.com` hebt gedeeld.
 
 U kunt [ de Dienst van de Verzending van Forms manueel vormen ](#configuring-the-forms-submission-service-manually) of [ vormen de Dienst van de Verzending van Forms gebruikend API ](#configuring-the-forms-submission-service-using-api).
 
@@ -47,7 +47,7 @@ U kunt [ de Dienst van de Verzending van Forms manueel vormen ](#configuring-the
 
 #### 1. Een formulier maken met behulp van een formulierdefinitie
 
-Maak een formulier met Google Sheets of Microsoft Excel. Leren hoe te om een vorm tot stand te brengen gebruikend een vormdefinitie in Microsoft Excel of de Bladen van Google, [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Maak een formulier met Google Sheets of Microsoft Excel. Leren hoe te om een vorm tot stand te brengen gebruikend een vormdefinitie in Microsoft Excel of de Bladen van Google, [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 In de onderstaande schermafbeelding wordt de formulierdefinitie weergegeven die wordt gebruikt om het formulier te maken:
 
@@ -55,7 +55,7 @@ In de onderstaande schermafbeelding wordt de formulierdefinitie weergegeven die 
 
 #### 2. Schakel het werkblad in om gegevens te accepteren.
 
-Nadat u het formulier hebt gemaakt en een voorbeeld hebt bekeken, schakelt u het bijbehorende werkblad in om gegevens te ontvangen. voeg een nieuw blad toe als `incoming` . U kunt [ manueel toelaten spreadsheet om gegevens ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) goed te keuren.
+Nadat u het formulier hebt gemaakt en een voorbeeld hebt bekeken, schakelt u het bijbehorende werkblad in om gegevens te ontvangen. voeg een nieuw blad toe als `incoming` . U kunt [ manueel toelaten spreadsheet om gegevens ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) goed te keuren.
 
 ![ Binnenkomend blad ](/help/forms/assets/form-submission-incoming-sheet.png)
 

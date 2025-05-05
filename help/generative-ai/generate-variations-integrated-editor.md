@@ -172,7 +172,7 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 ## Toegang genereert variaties {#access-generate-variations}
 

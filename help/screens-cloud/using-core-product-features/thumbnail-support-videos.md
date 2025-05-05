@@ -40,7 +40,7 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 1. Navigeer naar een bestaand Screens-kanaal of maak een kanaal.
 
    >[!NOTE]
-   >Leren hoe te om een kanaal tot stand te brengen en inhoud aan een kanaal toe te voegen, zie [ Creërend en het Leiden een Kanaal in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >Leren hoe te om een kanaal tot stand te brengen en inhoud aan een kanaal toe te voegen, zie [ Creërend en het Leiden een Kanaal in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=nl-NL).
 
 1. Selecteer het kanaal. Voor de actiebar, geeft de klik **&#x200B;**&#x200B;uit om de redacteur te openen.
 

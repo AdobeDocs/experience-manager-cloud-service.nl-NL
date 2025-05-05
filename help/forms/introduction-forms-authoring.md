@@ -18,11 +18,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -161,7 +161,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
-   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong> Nota: </strong> de component van de Bijlage van het Dossier steunt een vooraf bepaalde reeks dossierformaten in Aangepast Forms die voor Adobe Sign wordt toegelaten. Voor meer informatie, zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text"> Gesteunde dossierformaten </a>.</p> </td>
+   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong> Nota: </strong> de component van de Bijlage van het Dossier steunt een vooraf bepaalde reeks dossierformaten in Aangepast Forms die voor Adobe Sign wordt toegelaten. Voor meer informatie, zie <a href="https://helpx.adobe.com/nl/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text"> Gesteunde dossierformaten </a>.</p> </td>
   </tr>
   <tr>
    <td>Lijst met bestandsbijlagen</td>

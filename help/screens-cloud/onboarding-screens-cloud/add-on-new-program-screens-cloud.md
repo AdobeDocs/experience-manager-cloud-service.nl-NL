@@ -16,7 +16,7 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u Screens kunt toevoegen als een invoegtoepassing aan een nieuw programma in Cloud Manager.
 
 >[!NOTE]
->Zie [ Begrijpend Programma&#39;s en de Types van Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) om meer over de programma&#39;s van Cloud Manager te leren.
+>Zie [ Begrijpend Programma&#39;s en de Types van Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=nl-NL) om meer over de programma&#39;s van Cloud Manager te leren.
 
 ## Doelstelling {#objective}
 
@@ -29,7 +29,7 @@ Voer de onderstaande stappen uit om Screens toe te voegen aan een nieuw programm
 1. Navigeer aan [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Zie [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) om over Cloud Manager te leren.
+   >Zie [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=nl-NL) om over Cloud Manager te leren.
 
 1. Klik **toevoegen Programma** van de Cloud Manager het landen pagina.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 Als onderdeel van de Adobe Experience Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service zijn:
 
 * via de aanraakinterface een doelconfiguratie in AEM as a Cloud Service (vereiste IMS-configuratie) maken.
-* het toevoegen van en het vormen van Adobe Target als uitbreiding in [ Lancering van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* het toevoegen van en het vormen van Adobe Target als uitbreiding in [ Lancering van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=nl-NL).
 
 Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
 
@@ -39,7 +39,7 @@ Voor de uitvoer van de Fragmenten van de Ervaring en/of de Fragmenten van de Inh
 
 ### IMS-configuratie {#ims-configuration}
 
-Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De IMS-configuratie van het doel moet worden gemaakt (nadat het doel is ingericht). Zie [ Instelling IMS Integraties voor AEM as a Cloud Service ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) en de video [ Integrerend Experience Platform Launch en AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) leren hoe te om de configuratie van Doel te creëren IMS.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De IMS-configuratie van het doel moet worden gemaakt (nadat het doel is ingericht). Zie [ Instelling IMS Integraties voor AEM as a Cloud Service ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) en de video [ Integrerend Experience Platform Launch en AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=nl-NL) leren hoe te om de configuratie van Doel te creëren IMS.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ In **Regel**, bepaalt het en geeft opdracht tot een opeenvolging van acties, die
 
 ### Build and Publish {#build-publish}
 
-Leren hoe te om te bouwen en te publiceren, zie [ pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Leren hoe te om te bouwen en te publiceren, zie [ pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=nl-NL).
 
 ## Wijzigingen in de inhoudsstructuur tussen Klassieke en Touch UI-configuraties {#changes-content-structure}
 

@@ -31,7 +31,7 @@ Alle variaties van de purge delen het volgende:
 >[!CAUTION]
 >Het leegmaken van het CDN geheime voorgeheugen, vooral met de harde vlag, zal verkeer bij de oorsprong verhogen en tot een stroomonderbreking leiden wanneer niet behoorlijk uitgevoerd.
 
-U kunt [ een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
+U kunt [ een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
 
 ## Eén URL leegmaken {#single-purge}
 

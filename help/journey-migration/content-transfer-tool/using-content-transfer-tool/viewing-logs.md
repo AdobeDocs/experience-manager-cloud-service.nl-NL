@@ -18,7 +18,7 @@ ht-degree: 9%
 >id="aemcloud_ctt_logs"
 >title="Logbestanden weergeven"
 >abstract="Na voltooiing van Extractie van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de ondersteuning van Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="Problemen oplossen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=nl-NL#troubleshooting" text="Problemen oplossen"
 >additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contact opnemen met Adobe-ondersteuning"
 
 Controleer na elke stap (extractie en inname) de logboeken en zoek op fouten.  Fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de ondersteuning van Adobe.

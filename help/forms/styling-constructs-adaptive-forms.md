@@ -19,7 +19,7 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze het stileren constructs om stijlen (het gebruiken van CSS of Minder) tot stand te brengen slechts wanneer u componenten niet kunt stileren gebruikend [ themaredacteur ](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze het stileren constructs om stijlen (het gebruiken van CSS of Minder) tot stand te brengen slechts wanneer u componenten niet kunt stileren gebruikend [ themaredacteur ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/themes.html).
 
 ## Stijlen aanpassen in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 

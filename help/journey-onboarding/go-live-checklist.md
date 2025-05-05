@@ -26,7 +26,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat Go-Live probleeml
 * Voer de laatste top-up van de inhoud uit.
 * Dispatcher-configuraties valideren.
    * Gebruik een lokale Dispatcher-validator waarmee u de Dispatcher lokaal kunt configureren, valideren en simuleren
-      * [ opstelling de lokale hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
+      * [ opstelling de lokale hulpmiddelen van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
    * Herzie zorgvuldig de virtuele gastheerconfiguratie.
       * De eenvoudigste (en standaard)oplossing is om `ServerAlias *` op te nemen in het virtuele hostbestand in `/dispatcher/src/conf.d/available_vhostsfolder` . Hierdoor kunnen de aliassen van de host die worden gebruikt door product functionele tests, Dispatcher cache-validatie en klonen functioneren.
       * Als `ServerAlias *` echter niet acceptabel is, moeten in aanvulling op uw aangepaste domeinen ten minste de volgende `ServerAlias` -items zijn toegestaan:

@@ -52,7 +52,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
    >[!NOTE]
    >
-   > Om werkschemainstantie gezond te handhaven, volg beste praktijken bij [ regelmatig het zuiveren van werkschemainstanties ](#regular-purging-of-workflow-instances) of [ werkschemabeste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Om werkschemainstantie gezond te handhaven, volg beste praktijken bij [ regelmatig het zuiveren van werkschemainstanties ](#regular-purging-of-workflow-instances) of [ werkschemabeste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=nl-NL).
 
 ## Workflowinstanties zoeken {#search-workflow-instances}
 

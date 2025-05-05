@@ -20,7 +20,7 @@ Na ondertekening van het contract start de Adobe Managed Services (AMS) de klant
 
 ## Gebruikers toevoegen aan Adobe Admin Console {#admin-console}
 
-Zodra u met een identiteitskaart van de Organisatie van het Systeem van Identity Management van de Adobe (IMS) bent voorzien, kunt u tot [ Adobe Admin Console ](https://adminconsole.adobe.com/) nu toegang hebben. Zie [ gebruikers van Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) om meer over het toevoegen van gebruikers aan de Admin Console te leren.
+Zodra u met een identiteitskaart van de Organisatie van het Systeem van Identity Management van de Adobe (IMS) bent voorzien, kunt u tot [ Adobe Admin Console ](https://adminconsole.adobe.com/) nu toegang hebben. Zie [ gebruikers van Adobe Admin Console ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/users.ug.html) om meer over het toevoegen van gebruikers aan de Admin Console te leren.
 
 >[!NOTE]
 >Gebruikers hebben toegang tot het AEM Cloud Service-productprofiel, zodat ze zich kunnen aanmelden om te AEM met Adobe ID of Federated ID.

@@ -21,7 +21,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -41,7 +41,7 @@ Bekijk de video Overzicht van de release van juli 2022 voor een overzicht van de
 
 * De [ Console van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) steunt nu [ toetsenbordkortere weg ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM als Cloud Service [ Web-geoptimaliseerde beeldlevering ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [ Component van het Beeld van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) laten u deze dienst gebruiken en beelden leveren als WebP door de klik van een optie in het beleid van de beeldcomponent.
+* AEM als Cloud Service [ Web-geoptimaliseerde beeldlevering ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=nl-NL) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [ Component van het Beeld van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL) laten u deze dienst gebruiken en beelden leveren als WebP door de klik van een optie in het beleid van de beeldcomponent.
 
 * AEM personaliseringsactiviteiten kunnen nu gebruikmaken van ervaringsfragmenten in plaats van onze verouderde aanbiedingen. Deze functie:
    * biedt een migratiepad waarin AEM inhoud ervaringsfragmentaanbiedingen zou bevorderen in plaats van oudere bibliotheekaanbiedingen, zodat op de juiste wijze gevormde inhoud wordt geleverd die zich op de volgende schaaldatum aan de personalisatie aanpast.
@@ -118,7 +118,7 @@ U kunt Adobe Experience Manager Assets nu vormen om [ het type van activa te bep
 
 ## Adobe Learning Manager-connectors {#learn-manage}
 
-* De nieuwe Adobe Learning Manager heeft connectors naar Adobe Experience Manager Sites, Marketo Engage en Adobe Commerce. Meer leren zie: [ de Gids van de Gebruiker van Adobe Learning Manager ](https://helpx.adobe.com/learning-manager/user-guide.html).
+* De nieuwe Adobe Learning Manager heeft connectors naar Adobe Experience Manager Sites, Marketo Engage en Adobe Commerce. Meer leren zie: [ de Gids van de Gebruiker van Adobe Learning Manager ](https://helpx.adobe.com/nl/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

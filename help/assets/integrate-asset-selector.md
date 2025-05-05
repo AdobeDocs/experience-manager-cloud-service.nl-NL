@@ -59,7 +59,7 @@ De integratie gebeurt door het pakket Asset Selector te importeren en verbinding
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
 * Er is al een IMS-token gegenereerd voor verificatie.
 
 ## Asset Selector integreren met verschillende toepassingen {#asset-selector-integration-with-apps}

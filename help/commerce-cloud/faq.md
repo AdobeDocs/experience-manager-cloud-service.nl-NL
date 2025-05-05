@@ -49,7 +49,7 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 ## 9. Hoe werkt cachevalidatie voor AEM Dispatcher met AEM en handel?
 
-Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan de gegevensclient-kant weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [ Optimizing het geheime voorgeheugen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) en [ optimalisering van Prestaties AEM ](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan de gegevensclient-kant weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [ Optimizing het geheime voorgeheugen van Dispatcher ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=nl-NL) en [ optimalisering van Prestaties AEM ](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Is er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 

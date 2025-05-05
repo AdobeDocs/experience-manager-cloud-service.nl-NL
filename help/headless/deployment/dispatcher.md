@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Dispatcher - Eindpuntconfiguratie met AEM headless
 
-[ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is een caching en veiligheidslaag voor de milieu&#39;s van Adobe Experience Manager Publish. Verschillende configuraties zijn standaard inbegrepen bij het openen van GraphQL-eindpunten voor toepassingen zonder kop.
+[ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) is een caching en veiligheidslaag voor de milieu&#39;s van Adobe Experience Manager Publish. Verschillende configuraties zijn standaard inbegrepen bij het openen van GraphQL-eindpunten voor toepassingen zonder kop.
 
 >[!NOTE]
 >
->Voor gedetailleerde documentatie over Dispatcher, zie de [ Gids van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+>Voor gedetailleerde documentatie over Dispatcher, zie de [ Gids van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL).
 
-Als deel van een AEM Project is een module van Dispatcher inbegrepen die configuraties voor Dispatcher bevat. Nieuw geproduceerde projecten van het [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) omvatten automatisch [ filters ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter) die eindpunten van GraphQL toelaten.
+Als deel van een AEM Project is een module van Dispatcher inbegrepen die configuraties voor Dispatcher bevat. Nieuw geproduceerde projecten van het [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) omvatten automatisch [ filters ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL&#defining-a-filter) die eindpunten van GraphQL toelaten.
 
 ## GraphQL-eindpunten
 

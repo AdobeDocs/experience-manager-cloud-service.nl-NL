@@ -36,7 +36,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 * **Bulk activaopname**: Verstrek klanten van de scalable, wolk-inheemse dienst die [!DNL Experience Manager] as a Cloud Service architectuur met inbegrip van activa microservices gebruikt. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [ activa bulkingestor hulpmiddel ](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Voor kleinere opnemingstaken, gebruik [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) of [ uploadt gebruikend Assets gebruikersinterface ](/help/assets/add-assets.md#upload-assets).
+  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Voor kleinere opnemingstaken, gebruik [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL) of [ uploadt gebruikend Assets gebruikersinterface ](/help/assets/add-assets.md#upload-assets).
 
   ![ Configuratie van bulkimporteur ](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -107,7 +107,7 @@ Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.m
 
 ### Workflows {#workflows}
 
-* Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie {de Instanties van het Werkschema van 0} Onderzoek [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie {de Instanties van het Werkschema van 0} Onderzoek [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=nl-NL).
 
 ### Synchronisatie van gebruikersgegevens op Publish-niveau {#user-sync}
 
@@ -115,7 +115,7 @@ Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.m
 
 ### SDK Build Analyzers {#analyzers}
 
-De AEM as a Cloud Service SDK Build Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling te ontdekken, ruim voordat ze met Cloud Manager naar Cloud-omgevingen implementeren. Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) en [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
+De AEM as a Cloud Service SDK Build Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling te ontdekken, ruim voordat ze met Cloud Manager naar Cloud-omgevingen implementeren. Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) en [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL#building-for-the-sdk).
 
 ### Overige {#others-foundation}
 
@@ -123,7 +123,7 @@ De nieuwe [ &quot;httpd -t&quot;syntaxis ](/help/implementing/dispatcher/disp-ov
 
 ## Inhoud overbrengen {#content-transfer-tool}
 
-Volg deze sectie om over te leren wat nieuw en de updates voor [ het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versie v1.1.12 is.
+Volg deze sectie om over te leren wat nieuw en de updates voor [ het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL) Versie v1.1.12 is.
 
 ### Nieuwe functies {#what-is-new-ctt}
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/rule-editor.md) |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=nl-NL) |
 
 In een Adaptief formulier dat is gebaseerd op Core Components, biedt de functie voor de regeleditor zowel zakelijke gebruikers als ontwikkelaars de mogelijkheid om regels voor adaptieve formulierobjecten te schrijven. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Deze functie helpt de ervaring bij het invullen van formulieren verder te stroomlijnen, zodat u zowel nauwkeurigheid als snelheid hebt.
 

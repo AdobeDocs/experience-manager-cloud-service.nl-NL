@@ -23,13 +23,13 @@ De releasedatum voor [!DNL Experience Manager] as a Cloud Service 2020.4.0 is 9 
 
 Meer informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DNL Experience Manager Assets] en [!DNL Dynamic Media] in de huidige release.
 
-* [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) steunt de het gebruiksgevallen van de activadistributie voor Experience Manager Assets. [!DNL Brand Portal] helpt organisaties om aan hun marketingbehoeften te voldoen door goedgekeurde merk- en productmiddelen veilig te distribueren aan externe agentschappen, partners, interne teams en wederverkopers voor downloaden.
-   * [!DNL Brand Portal] -configuratie is voltooid via [!DNL Adobe I/O] -console. Zie [ vormen Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
+* [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=nl-NL) steunt de het gebruiksgevallen van de activadistributie voor Experience Manager Assets. [!DNL Brand Portal] helpt organisaties om aan hun marketingbehoeften te voldoen door goedgekeurde merk- en productmiddelen veilig te distribueren aan externe agentschappen, partners, interne teams en wederverkopers voor downloaden.
+   * [!DNL Brand Portal] -configuratie is voltooid via [!DNL Adobe I/O] -console. Zie [ vormen Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=nl-NL).
    * Asset sourcing in [!DNL Brand Portal] wordt nog niet ondersteund bij [!DNL Experience Manager] as a Cloud Service.
 
-* [&#128279;](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) v2.0 van de Verbinding van Activa van de Adobe 0&rbrace; werkt met [!DNL Experience Manager] as a Cloud Service.  [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door [!DNL Experience Manager Assets] te verbinden met [!DNL Creative Cloud] bureaubladapps [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] via het deelvenster in-app [!DNL Asset Link] .
-   * [!DNL Experience Manager] wordt pre-gevormd voor [!DNL Adobe Asset Link], wat in [ gemakkelijke configuratie ](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) en snellere uitrol aan creatieve beroeps resulteert.
-   * [!DNL Asset Link] steunt nu een [ omgevingsschakelaar van de Experience Manager ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) die creatieve gebruikers toestaat om met een verschillend [!DNL Experience Manager] milieu gemakkelijk te verbinden. Een voorbeeld waar deze functionaliteit nuttig is, is voor ontwerpers van agentschappen die met meerdere clients werken die verschillende [!DNL Experience Manager Assets] -implementaties gebruiken.
+* [&#128279;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html) v2.0 van de Verbinding van Activa van de Adobe 0&rbrace; werkt met [!DNL Experience Manager] as a Cloud Service.  [!DNL Adobe Asset Link] stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud door [!DNL Experience Manager Assets] te verbinden met [!DNL Creative Cloud] bureaubladapps [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] via het deelvenster in-app [!DNL Asset Link] .
+   * [!DNL Experience Manager] wordt pre-gevormd voor [!DNL Adobe Asset Link], wat in [ gemakkelijke configuratie ](https://helpx.adobe.com/nl/enterprise/using/configure-aem-assets-for-asset-link.html) en snellere uitrol aan creatieve beroeps resulteert.
+   * [!DNL Asset Link] steunt nu een [ omgevingsschakelaar van de Experience Manager ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) die creatieve gebruikers toestaat om met een verschillend [!DNL Experience Manager] milieu gemakkelijk te verbinden. Een voorbeeld waar deze functionaliteit nuttig is, is voor ontwerpers van agentschappen die met meerdere clients werken die verschillende [!DNL Experience Manager Assets] -implementaties gebruiken.
 
 * De gebruikers kunnen [ post-verwerkings werkschema&#39;s ](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) vormen aan auto-begin in het omslag [!UICONTROL Properties] gebruikersinterface voor de specifieke omslaghiërarchieën.
    * De gebruikersinterface van de map [!UICONTROL Properties] wordt vereenvoudigd, waarbij het nieuwe tabblad [!UICONTROL Asset Processing] het metagegevensprofiel, het verwerkingsprofiel en de nieuwe workflowconfiguratie voor automatisch opstarten bevat.
@@ -50,9 +50,9 @@ Meer informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DN
 >[!MORELIKETHIS]
 >
 >* [ Ongeveer de Verbinding van Activa van de Adobe ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [ vorm Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [ vorm Experience Manager om met de Verbinding van Activa te werken ](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [ creeer werkschema in Experience Manager gebruikend activa microservices ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [ vorm Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=nl-NL)
+>* [ vorm Experience Manager om met de Verbinding van Activa te werken ](https://helpx.adobe.com/nl/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [ creeer werkschema in Experience Manager gebruikend activa microservices ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=nl-NL#post-processing-workflows)
 
 ## Nieuwe functies in Cloud Manager {#whats-new-cloud-manager}
 

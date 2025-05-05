@@ -616,4 +616,4 @@ AEM pakketten kunnen worden gebruikt om inhoud te maken en te delen in AEMaaCS-o
 
 [ de Distributie van de Software ](https://downloads.experiencecloud.adobe.com) verstrekt AEM pakketten voor gebruik op de lokale ontwikkeling AEM SDK. AEM pakketten die op softwaredistributie worden geleverd, mogen niet worden geïnstalleerd in AEMaaCS-cloudomgevingen, tenzij dit uitdrukkelijk wordt goedgekeurd door ondersteuning voor Adoben.
 
-Voor meer informatie, zie de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Voor meer informatie, zie de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL).

@@ -97,7 +97,7 @@ Op dezelfde manier maakt Experience Manager Assets een onderscheid tussen de sta
 
 +++**Hoe kunt u de gebruiker of groepsidentiteitskaart van Adobe IMS (Adobe Identity Management Services) worden gebruikt om de rollen op activa in de mening van Admin van Experience Manager te plaatsen, voor het beveiligen van levering en onderzoekservaring?**
 
-Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
+Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=nl-NL).
 
 +++
 

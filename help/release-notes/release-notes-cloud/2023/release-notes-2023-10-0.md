@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -88,7 +88,7 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 [ verkeer van de Filter bij de Adobe Beheerde CDN ](/help/security/traffic-filter-rules-including-waf.md) door regels te verklaren die websiteverkeer door eigenschappen met inbegrip van url, IP adres, en gebruikersagent aanpassen - of de grenzen van het douaneverkeer plaatsen om tegen aanvallen van Dos te beschermen. Klanten kunnen ook een licentie verlenen voor een set geavanceerde WAF-regels (Web Application Firewall) voor extra bescherming tegen geavanceerde websitebedreigingen.
 
-Wij moedigen u aan om vertrouwd te worden met de regels van de verkeersfilter door [ het proberen van een leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Het begeleidt u door vestiging een nieuwe Pijpleiding van de Configuratie van Cloud Manager, verklarende regels in een configuratiedossier, en het analyseren van CDN- logboeken voor kwaadwillig verkeer.
+Wij moedigen u aan om vertrouwd te worden met de regels van de verkeersfilter door [ het proberen van een leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=nl-NL)! Het begeleidt u door vestiging een nieuwe Pijpleiding van de Configuratie van Cloud Manager, verklarende regels in een configuratiedossier, en het analyseren van CDN- logboeken voor kwaadwillig verkeer.
 
 De filterregels van het verkeer zijn nu beschikbaar op ontwikkelomgevingen, met een geleidelijke uitrol aan stadium en prod milieu&#39;s in November. U kunt vroegere toegang op stadium en prod verzoeken door **aemcs-waf-adopter@adobe.com** te e-mailen.
 

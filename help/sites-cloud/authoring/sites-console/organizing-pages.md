@@ -30,7 +30,7 @@ U kunt [ omslagen ](#creating-a-new-folder) ook gebruiken helpen uw inhoud organ
 
 De structuur van een website kan worden beschouwd als een structuur die uw inhoudspagina&#39;s bevat. De namen van deze inhoudspagina&#39;s worden gebruikt om URLs te vormen, terwijl de titels worden getoond wanneer de paginainhoud wordt bekeken.
 
-Het volgende toont een voorbeeld van de [ plaats van het Leerprogramma WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), waar een artikel over skateparks (`la-skateparks`) wordt betreden:
+Het volgende toont een voorbeeld van de [ plaats van het Leerprogramma WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL), waar een artikel over skateparks (`la-skateparks`) wordt betreden:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 

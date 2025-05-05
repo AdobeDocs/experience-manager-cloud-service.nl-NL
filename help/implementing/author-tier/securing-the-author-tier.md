@@ -13,7 +13,7 @@ ht-degree: 30%
 
 # Beveiliging van de auteurlaag {#securing-the-author-tier}
 
-Wanneer u een omgeving maakt met AEM as a Cloud Service, is de resulterende auteurslaag standaard toegankelijk via internet. Het is mogelijk om het netwerkbeleid verder te vormen om de toegang tot uw auteursrij te beveiligen. Zie [ Toepassend een IP Lijst van gewenste personen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html) voor meer details. De procedure is gebaseerd op het autoriseren van IP-bereiken waaraan netwerktoegang tot de auteurlaag moet worden verleend.
+Wanneer u een omgeving maakt met AEM as a Cloud Service, is de resulterende auteurslaag standaard toegankelijk via internet. Het is mogelijk om het netwerkbeleid verder te vormen om de toegang tot uw auteursrij te beveiligen. Zie [ Toepassend een IP Lijst van gewenste personen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=nl-NL) voor meer details. De procedure is gebaseerd op het autoriseren van IP-bereiken waaraan netwerktoegang tot de auteurlaag moet worden verleend.
 
 Om deze regels op zijn plaats te zetten, dossier een kaartje van de Steun, van [ Adobe Admin Console ](https://adminconsole.adobe.com/) met de gevraagde informatie:
 

@@ -52,16 +52,16 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] te delen als een [!DNL Cloud Service] :
 
 * [ Aandeel als verbinding ](#sharelink).
 * [ de activa van de Download ](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
-* Deel gebruikend [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* Deel gebruikend [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL).
 * Delen met [[!DNL Adobe Asset Link] ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) .
-* Delen met [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html) .
+* Delen met [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=nl-NL) .
 
 ## Vereisten {#prerequisites}
 
@@ -87,7 +87,7 @@ In [!DNL Experience Manager Assets] kunt u de standaardinstellingen voor het del
 1. **[!UICONTROL Link share]** in de actiebalk:
    * Alle gebruikers met `jcr:modifyAccessControl` -machtigingen kunnen de optie [!UICONTROL Link share] weergeven. Het is standaard zichtbaar voor alle beheerders. De knop [!UICONTROL Link share] is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteer `Allow only for groups` als u wilt dat bepaalde groepen de optie `Share Link` kunnen weergeven. Selecteer `Deny from groups` om de optie `Share Link` van specifieke groepen te weigeren. Nadat u een van deze opties hebt geselecteerd, geeft u de groepnamen op met het veld `Select Groups` om de groepnamen toe te voegen die u wilt toestaan of weigeren.
 
-Voor de verwante montages van de Configuratie E-mail, bezoek [ Documentatie van de Dienst E-mail ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Voor de verwante montages van de Configuratie E-mail, bezoek [ Documentatie van de Dienst E-mail ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=nl-NL)
 
 ![ vorm E-maildienst ](/help/assets/assets/config-email-service.png)
 
@@ -284,7 +284,7 @@ Gebruikers kunnen de vereiste elementen downloaden en deze buiten [!DNL Experien
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Desktop app van Experience Manager**: App werkt op Vensters en Mac. Zie [ Desktop app overzicht ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [ doorbladeren, doorzoeken, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [ activa uploaden gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Desktop app van Experience Manager**: App werkt op Vensters en Mac. Zie [ Desktop app overzicht ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=nl-NL). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [ doorbladeren, doorzoeken, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager-gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [ activa uploaden gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#upload-and-add-new-assets-to-aem).
 
 * **de Verbinding van Activa van Adobe**: De creatieve beroeps kunnen activa van binnen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop] direct zoeken en gebruiken.
 
@@ -333,7 +333,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de gebruikersinterface van [!DNL Assets] in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [ Desktopacties in  [!DNL Assets]  Webinterface ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) toelaten.
+Vanuit de gebruikersinterface van [!DNL Assets] in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [ Desktopacties in  [!DNL Assets]  Webinterface ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2) toelaten.
 
 ![ laat Desktopacties toe om als kortere weg te gebruiken wanneer het werken met Desktop app ](assets/enable_desktop_actions.png)
 
@@ -341,7 +341,7 @@ Vanuit de gebruikersinterface van [!DNL Assets] in een browser kunt u de middele
 
 Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. [!DNL Adobe Experience Manager Assets] wordt verbonden met [!DNL Creative Cloud] bureaubladapps [!DNL Adobe InDesign] , [!DNL Adobe Photoshop] en [!DNL Adobe Illustrator] . In het deelvenster [!DNL Adobe Asset Link] hebben creatieve toepassingen toegang tot inhoud die is opgeslagen in [!DNL Assets] en kunnen ze deze inhoud wijzigen zonder de meest bekende creatieve toepassingen te verlaten.
 
-Zie [ hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te gebruiken ](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Zie [ hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te gebruiken ](https://helpx.adobe.com/nl/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Aanbevolen werkwijzen en problemen oplossen {#bestpractices}
 

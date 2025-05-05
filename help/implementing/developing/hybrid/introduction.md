@@ -46,7 +46,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 >[!TIP]
 >
->Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
+>Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 

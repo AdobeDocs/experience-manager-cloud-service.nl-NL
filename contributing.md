@@ -58,4 +58,4 @@ Het documentatieteam is blij met elke bijdrage en zal uw bijdrage beoordelen als
 
 ## Aanvullende informatie
 
-Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.
+Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.

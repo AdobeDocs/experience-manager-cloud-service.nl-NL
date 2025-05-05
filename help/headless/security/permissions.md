@@ -23,7 +23,7 @@ In de service Auteur kunnen interne gebruikers inhoud maken, beheren en publicer
 
 Als beste praktijken, zouden de toestemmingen op Groepen in AEM moeten worden geplaatst. Deze groepen, die ook als lokale groepen worden bekend, kunnen binnen het AEM auteursmilieu worden beheerd.
 
-De gemakkelijkste manier om groepslidmaatschap te beheren is de groepen van het Systeem van Identity Management van de Adobe (IMS) te gebruiken en [ groepen IMS aan lokale AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem) toe te wijzen.
+De gemakkelijkste manier om groepslidmaatschap te beheren is de groepen van het Systeem van Identity Management van de Adobe (IMS) te gebruiken en [ groepen IMS aan lokale AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=nl-NL#managing-permissions-in-aem) toe te wijzen.
 
 ![ stroom van de de consoletoestemming Admin ](assets/admin-console-aem-group-permissions.png)
 
@@ -37,7 +37,7 @@ Op hoog niveau is het proces:
 
 >[!TIP]
 >
->Voor een gedetailleerde videoanalyse van het beheren van IMS en AEM gebruikers en groepen zie [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+>Voor een gedetailleerde videoanalyse van het beheren van IMS en AEM gebruikers en groepen zie [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=nl-NL).
 
 Om **groepen** in AEM te beheren, navigeer aan **Hulpmiddelen** > **Veiligheid** > **Groepen**.
 
@@ -80,7 +80,7 @@ Standaard is inhoud die via de GraphQL-eindpunten van AEM Publish-service wordt 
 
 ### Machtigingen voor inhoud
 
-Inhoud die via AEM GraphQL APIs wordt blootgesteld kan worden beperkt gebruikend [ Gesloten Groepen van de Gebruiker (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) geplaatst op activa omslagen, die specificeren welke AEM Gebruikersgroepen (en hun leden) tot de inhoud van de omslagen van Assets kunnen toegang hebben.
+Inhoud die via AEM GraphQL APIs wordt blootgesteld kan worden beperkt gebruikend [ Gesloten Groepen van de Gebruiker (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) geplaatst op activa omslagen, die specificeren welke AEM Gebruikersgroepen (en hun leden) tot de inhoud van de omslagen van Assets kunnen toegang hebben.
 
 Assets CUG&#39;s werken door:
 

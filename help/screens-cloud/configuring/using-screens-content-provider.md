@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## Doelstelling {#objective}
 
-De volgende sectie beschrijft hoe te om kanalen in de Leverancier van de Inhoud van Screens tot stand te brengen, zodra u opstelling [ de Dienstverlener van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) hebt.
+De volgende sectie beschrijft hoe te om kanalen in de Leverancier van de Inhoud van Screens tot stand te brengen, zodra u opstelling [ de Dienstverlener van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL) hebt.
 
 ## Screens Content Provider gebruiken {#screens-content-provider}
 
 >[!NOTE]
 >**Vereiste**
->Alvorens u begint deze sectie te lezen, zie [ Vestiging Screens Services Provider ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) om te leren hoe te aan dit gebruikersinterface van de Leverancier van de Diensten van Screens navigeren.
+>Alvorens u begint deze sectie te lezen, zie [ Vestiging Screens Services Provider ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=nl-NL) om te leren hoe te aan dit gebruikersinterface van de Leverancier van de Diensten van Screens navigeren.
 
 Voer de onderstaande stappen uit om u aan te melden bij de Screens Content Provider:
 
@@ -42,7 +42,7 @@ Voer de onderstaande stappen uit om u aan te melden bij de Screens Content Provi
    ![ Pictogram voor de pagina van het Overzicht van Cloud Manager wordt getoond op uiterst links van een toolbar.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >Als u geen programma hebt gecreeerd, zie [ Eerste Login van de Tijd aan Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). Het onderwerp begeleidt u door het toevoegen van een programma voor Screens as a Cloud Service, in Cloud Manager.
+   >Als u geen programma hebt gecreeerd, zie [ Eerste Login van de Tijd aan Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=nl-NL). Het onderwerp begeleidt u door het toevoegen van een programma voor Screens as a Cloud Service, in Cloud Manager.
 
 1. Selecteer de verbinding van de **kaart van Milieu&#39;s** zodat kunt u tot de Leverancier van de Inhoud van Screens toegang hebben.
 
@@ -58,4 +58,4 @@ Voer de onderstaande stappen uit om u aan te melden bij de Screens Content Provi
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd hoe te om aan de Leverancier van de Inhoud van Screens te navigeren, uw as a Cloud Service reis van Screens door het document te herzien, [ Creërend en Lerend een Project in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).
+Nu u hebt geleerd hoe te om aan de Leverancier van de Inhoud van Screens te navigeren, uw as a Cloud Service reis van Screens door het document te herzien, [ Creërend en Lerend een Project in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=nl-NL).

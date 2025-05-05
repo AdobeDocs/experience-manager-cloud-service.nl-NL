@@ -42,9 +42,9 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [ meta-gegevens van de Douane gebruikend verwerkingsprofiel ](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [ overzicht van de downloadervaring ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [ overzicht van de downloadervaring ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL#download-configurations).
 
-* PDF-documentvoorvertoningen met een native en hoge getrouwheid zijn nu beschikbaar in Brand Portal. Zie [ overzicht van de documentkijker ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* PDF-documentvoorvertoningen met een native en hoge getrouwheid zijn nu beschikbaar in Brand Portal. Zie [ overzicht van de documentkijker ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL#doc-viewer).
 
 * U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM as a Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic] ). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [ het Invalideren van het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 

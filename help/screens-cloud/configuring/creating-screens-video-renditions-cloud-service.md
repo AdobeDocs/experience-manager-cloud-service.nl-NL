@@ -27,7 +27,7 @@ Ga als volgt te werk om video-uitvoeringen te maken in Screens as a Cloud Servic
 1. Navigeer naar uw kanaal in de Screens Content Provider.
 
    >[!NOTE]
-   >Zie [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) voor meer details.
+   >Zie [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL#screens-content-provider) voor meer details.
 
 1. Klik de sectie van Hulpmiddelen van de linkernavigatiebar en klik **Assets** en klik dan **Profielen van de Verwerking**.
 

@@ -61,7 +61,7 @@ Adobe neemt standaard maatregelen om te voorkomen dat de prestaties achteruitgaa
 
 De klanten kunnen pro-actieve maatregelen nemen om de aanvallen van de toepassingslaag (laag 7) te verlichten door regels bij diverse lagen van de stroom van de inhoudslevering te vormen.
 
-Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
+Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
 
 Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen ](/help/operations/config-pipeline.md). Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
 
@@ -752,7 +752,7 @@ Er zijn twee zelfstudies beschikbaar.
 
 ### Websites beschermen met verkeersfilterregels (inclusief WAF-regels) {#tutorial-protecting-websites}
 
-[ het Werk door een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om algemene, praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van WAF te bereiken.
+[ het Werk door een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om algemene, praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van WAF te bereiken.
 
 De zelfstudie begeleidt u door:
 
@@ -764,7 +764,7 @@ De zelfstudie begeleidt u door:
 
 ### Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter {#tutorial-blocking-DDoS-with-rules}
 
-[ diepte-duik op hoe te om ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ontkenning van de Dienst (Dos) en Verspreid Ontkenning van de aanvallen van de Dienst (DDoS) te blokkeren gebruikend de regels van de het verkeersfilter van de snelheidsbeperking en andere strategieën.
+[ diepte-duik op hoe te om ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ontkenning van de Dienst (Dos) en Verspreid Ontkenning van de aanvallen van de Dienst (DDoS) te blokkeren gebruikend de regels van de het verkeersfilter van de snelheidsbeperking en andere strategieën.
 
 De zelfstudie begeleidt u door:
 

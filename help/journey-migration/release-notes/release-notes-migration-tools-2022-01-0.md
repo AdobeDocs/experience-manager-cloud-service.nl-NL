@@ -23,7 +23,7 @@ De releasedatum voor Content Transfer Tool v1.7.18 is 18 januari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Wissel dat aan de extractiefase in het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd om gebruikers toe te staan om [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) tijdens extractie onbruikbaar te maken. Voor optimale extractiesnelheden moet het vooraf kopiëren tijdens de extractie worden uitgeschakeld voor kleine migratiesets of als er sinds de laatste extractie slechts een paar lobs zijn toegevoegd.
+* Wissel dat aan de extractiefase in het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd om gebruikers toe te staan om [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL) tijdens extractie onbruikbaar te maken. Voor optimale extractiesnelheden moet het vooraf kopiëren tijdens de extractie worden uitgeschakeld voor kleine migratiesets of als er sinds de laatste extractie slechts een paar lobs zijn toegevoegd.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 

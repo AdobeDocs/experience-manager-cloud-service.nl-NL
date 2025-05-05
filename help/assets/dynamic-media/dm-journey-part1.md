@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Dynamische zelfstudies van Media_
 
-* [ Dynamische Media van het Gebruik met Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [ de inhoudsbibliotheek van Adobe Experience Manager ](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (onderzoek op _Dynamische Media_)
+* [ Dynamische Media van het Gebruik met Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=nl-NL)
+* [ de inhoudsbibliotheek van Adobe Experience Manager ](https://experienceleague.adobe.com/nl?lang=en#recommended/solutions/experience-manager) (onderzoek op _Dynamische Media_)
 
 _Dynamische kijkers van Media_
 

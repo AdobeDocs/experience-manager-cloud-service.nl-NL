@@ -46,7 +46,7 @@ Door uw aandacht toe te spitsen op de waarde voor uw auteurs, kan uw Edge Delive
 
 ## Flexibele ontwerpgereedschappen voor uw makers van inhoud {#overview}
 
-Edge Delivery Services is een samenstellbare set services die u in staat stelt om op zeer flexibele wijze inhoud op uw website te schrijven. U kunt zowel [ AEM inhoudsbeheer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish) en het auteursrecht van WYSIWYG gebruiken gebruikend de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) evenals [ op document-gebaseerde creatie ](https://www.aem.live/docs/authoring).
+Edge Delivery Services is een samenstellbare set services die u in staat stelt om op zeer flexibele wijze inhoud op uw website te schrijven. U kunt zowel [ AEM inhoudsbeheer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/sites/authoring/author-publish) en het auteursrecht van WYSIWYG gebruiken gebruikend de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) evenals [ op document-gebaseerde creatie ](https://www.aem.live/docs/authoring).
 
 In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten gebaseerd schrijven) kunt bewerken en naar Edge Delivery Services kunt publiceren. Ook wordt de WYSIWYG-bewerking weergegeven met de Universal Editor.
 
@@ -104,7 +104,7 @@ Edge Delivery Services maken deel uit van Adobe Experience Manager. Als zodanig 
 
 Zie de [ Begonnen Gids van de Ontwikkelaar Begonnen voor WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om te leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
 
-U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration), [ Echte Controle van het Gebruik (RUM) ](https://www.aem.live/developer/rum) ook gebruiken om gebruik en prestaties van uw plaatsen te diagnostiseren, en [ Lancering ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home).
+U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration), [ Echte Controle van het Gebruik (RUM) ](https://www.aem.live/developer/rum) ook gebruiken om gebruik en prestaties van uw plaatsen te diagnostiseren, en [ Lancering ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home).
 
 ## Aan de slag met Edge Delivery Services {#getting-started}
 

@@ -60,7 +60,7 @@ Met gebruikersgroepen kunt u verschillende sets revisoren aan verschillende Adap
 Alvorens u de volgende stappen uitvoert, zie [ Vereiste ](adding-reviewers-form.md#prerequisite).
 
 Om een groep tot stand te brengen en leden aan het toe te voegen, navigeer aan **Hulpmiddelen** > **Verrichtingen** > **Veiligheid** > **Groepen**.
-Voor meer informatie, zie [ Beleid van de Gebruiker en de Diensten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+Voor meer informatie, zie [ Beleid van de Gebruiker en de Diensten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL).
 Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersgroep creeert: **vorm-voorlegging-recensenten**. Deze gebruikersgroep wordt geleverd met [!DNL AEM Forms] en zorgt ervoor dat gebruikers worden toegevoegd als revisoren voor verzending.
 
 Gebruikersgroepen koppelen aan een adaptief formulier:

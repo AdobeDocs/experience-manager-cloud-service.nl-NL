@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 <!-- >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. -->
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. -->
 
 Dynamische media-URL&#39;s en insluitcode van viewer bevatten uw accountnaam van het bedrijf. Deze accountnaam is gemaakt op het moment dat Dynamic Media wordt ingericht. Er kunnen scenario&#39;s zijn waar uw zaken een verwerving, of een herbranding hebben ondergaan, of u eenvoudig een meer memorabele naam wilt gebruiken. In dergelijke gevallen is het niet eenvoudig om de naam van uw bedrijfsaccount handmatig bij te werken in alle URL&#39;s en de insluitcode van de viewer die uit het vak komt. Bovendien is het mogelijk dat u invloed hebt op uw bestaande Dynamic Media-opslagplaats of op live-inhoud. Om dit probleem op te lossen, kunt u een Dynamic Media Company aliasaccount configureren.
 
@@ -42,7 +42,7 @@ Zie ook [ een Dynamische Configuratie van Media in de Diensten van de Wolk creë
 
 U begint het vormen van een Dynamische het bedrijf aliasrekening van Media door eerst een geval van de Steun voor te leggen. Deze stap is vereist.
 
-1. [ Gebruik Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
+1. [ Gebruik Admin Console om een steungeval ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * De aliasnaam van het Dynamic Media-bedrijf die u wilt gebruiken. De naam moet *slechts* brieven bevatten (het gemengde toe te staan casing), aantallen, koppeltekens, en onderstrepingstekens.

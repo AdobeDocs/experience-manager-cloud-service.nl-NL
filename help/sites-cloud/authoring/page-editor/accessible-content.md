@@ -70,11 +70,11 @@ Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstue
 
 #### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode kan op het **Alternatieve gebied van de Tekst** worden gedaan. Bijvoorbeeld, zie het Beeld van de Component van de Kern **[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**.
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode kan op het **Alternatieve gebied van de Tekst** worden gedaan. Bijvoorbeeld, zie het Beeld van de Component van de Kern **[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL)**.
 
 >[!NOTE]
 >
->Sommige uit-van-de-doos Componenten van de Kern - zoals **[Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)** - verstrekken geen **Alternatief gebied van de Tekst** om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er het **6&rbrace; gebied van het Etiket**&#x200B;[ (](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab) **tabel) voor de volledige component is.**
+>Sommige uit-van-de-doos Componenten van de Kern - zoals **[Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=nl-NL)** - verstrekken geen **Alternatief gebied van de Tekst** om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er het **6&rbrace; gebied van het Etiket**&#x200B;[ (](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=nl-NL#accessibility-tab) **tabel) voor de volledige component is.**
 >
 >Wanneer het uitvoeren van versies van deze voor uw AEM instantie, moet uw ontwikkelingsteam dergelijke componenten vormen om het `alt` attribuut te steunen. Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)) kunnen toevoegen.
 

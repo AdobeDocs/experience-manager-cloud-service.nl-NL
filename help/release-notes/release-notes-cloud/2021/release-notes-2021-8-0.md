@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -62,11 +62,11 @@ Heb een blik bij de [ Augustus 2021 video van het Overzicht van de Versie ](http
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* De dienst van de automatede form conversion kan [ PDF forms in het Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in Aanpassings Forms omzetten.
+* De dienst van de automatede form conversion kan [ PDF forms in het Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=nl-NL&#language-specific-meta-model) in Aanpassings Forms omzetten.
 
-* **op acroform-Gebaseerd Document van Verslag**: De as a Cloud Service steunen van AEM Forms die [ de Vorm van Adobe Acrobat PDF (Acroform PDF) gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje.
+* **op acroform-Gebaseerd Document van Verslag**: De as a Cloud Service steunen van AEM Forms die [ de Vorm van Adobe Acrobat PDF (Acroform PDF) gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje.
 
-* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
+* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=nl-NL) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms}
 
@@ -98,7 +98,7 @@ De volgende release is gepland voor 9 september 2021.
 ### Wat is er nieuw? {#what-is-new-aug}
 
 * Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar komen.
-Zie [ SLA die ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html) meldt.
+Zie [ SLA die ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=nl-NL) meldt.
 
 * Het type en de ernst van de IndexType- en `IndexDamAssetLucene` kwaliteitsregels zijn gewijzigd. Dit zijn nu beide Bugs van Blocker *strengheid*.
 

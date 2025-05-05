@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -256,7 +256,7 @@ Geniet van voordelen zoals snellere toegang tot relevante bestanden en een intu�
 
 *gebruik de snelle filters om naar DITA en niet-DITA dossiers te zoeken.*
 
-Leer meer over de **eigenschap van het Onderzoek van de Filter** in de [ Linkerpaneel ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sectie.
+Leer meer over de **eigenschap van het Onderzoek van de Filter** in de [ Linkerpaneel ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sectie.
 
 ### Verbeteringen in de Data Source Connectors
 
@@ -284,9 +284,9 @@ Met deze functie kunt u de gegevens die in uw JSON-bestanden zijn opgeslagen, ge
 #### Vorm Meerdere Middel URLs voor een Schakelaar om Inhoud Fragmenten of Onderwerpen tot stand te brengen
 
 Als beheerder, kunt u veelvoudige middel URLs voor sommige schakelaars zoals de Generische Cliënt van de REST, Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) vormen.
-Dan, als auteur, verbind met de gegevensbronnen om inhoudsfragmenten of onderwerpen tot stand te brengen gebruikend de generators. Deze functie is handig omdat u geen gegevensbron hoeft te maken voor elke URL. Het helpt u om gegevens van om het even welke middelen voor een bepaalde gegevensbron in één enkel inhoudsfragment of onderwerp snel te halen. Bekijk meer details over de gegevensbronschakelaars en hoe te [ een gegevensbronschakelaar van het gebruikersinterface ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools) vormen. Leer hoe te [ gegevens van uw gegevensbron ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet) gebruiken.
+Dan, als auteur, verbind met de gegevensbronnen om inhoudsfragmenten of onderwerpen tot stand te brengen gebruikend de generators. Deze functie is handig omdat u geen gegevensbron hoeft te maken voor elke URL. Het helpt u om gegevens van om het even welke middelen voor een bepaalde gegevensbron in één enkel inhoudsfragment of onderwerp snel te halen. Bekijk meer details over de gegevensbronschakelaars en hoe te [ een gegevensbronschakelaar van het gebruikersinterface ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools) vormen. Leer hoe te [ gegevens van uw gegevensbron ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet) gebruiken.
 
-Voor meer informatie over de nieuwe eigenschappen en de verhogingen, geeft de mening [ Experience Manager Guides informatie ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vrij.
+Voor meer informatie over de nieuwe eigenschappen en de verhogingen, geeft de mening [ Experience Manager Guides informatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vrij.
 
 ## Cloud Manager {#cloud-manager}
 

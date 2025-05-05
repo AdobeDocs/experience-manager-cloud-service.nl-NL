@@ -55,7 +55,7 @@ Er zijn twee typen AEM versie-updates:
 
 >[!NOTE]
 >
-> De belangrijkste data van de controle voor maandelijkse versies op de [ versies van de Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) en merken uw kalenders om zich voor te bereiden op de belangrijkste activiteiten om voor de versie klaar te worden.
+> De belangrijkste data van de controle voor maandelijkse versies op de [ versies van de Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service) en merken uw kalenders om zich voor te bereiden op de belangrijkste activiteiten om voor de versie klaar te worden.
 
 ## Update mislukt {#update-failure}
 

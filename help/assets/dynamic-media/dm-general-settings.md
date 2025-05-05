@@ -89,7 +89,7 @@ Bij het maken van accounts biedt Adobe Dynamic Media automatisch de toegewezen s
 
   Hiermee regelt u het behoud van bestaande handmatige snijddefinities.
 
-  Zie ook `preserveCrop` in [ UploadPostJob ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) en [ ReprocessAssetsJob ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
+  Zie ook `preserveCrop` in [ UploadPostJob ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) en [ ReprocessAssetsJob ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), zowel in de Dynamische Gids van de Verwijzing van de Kijkers van Media.
 
 ## Standaardopties voor uploaden {#default-upload-options}
 
@@ -106,7 +106,7 @@ Voor het effect Onscherp masker worden dezelfde opties gebruikt als voor het fil
 | **[!UICONTROL Threshold]** | Vereist.<br> de Drempel is een waaier van contrast die wordt genegeerd wanneer de filter Onscherp Masker wordt toegepast. Dit effect is belangrijk, zodat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is `0` - `255` . Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. `0`=zwart, `128`=50% grijs en `255`=wit.<br> de drempelwaarde van A van `12` negeert lichte variaties is de helderheid van de huidskleur om het toevoegen van lawaai te vermijden, maar nog toevoegt randcontrast aan contrasterende gebieden zoals waar de wimpers huid ontmoeten.<br> als u een foto van iemands gezicht hebt, beïnvloedt het Onscherp Masker de contrasterende delen van het beeld. Bijvoorbeeld, waar wimpers en huid samenkomen om een duidelijk gebied van contrast tot stand te brengen, en de vlotte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele wijzigingen in de pixels van de skin. Er wordt op zijn beurt een lawaai en ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> om deze kwestie te vermijden, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixel te negeren die contrast, zoals vlotte huid niet dramatisch veranderen.<br> in zipper grafisch vroeger getoond, merk de textuur naast de ritppers op. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
 | **[!UICONTROL Monochrome]** | Selecteer deze optie om de helderheid (intensiteit) van een afbeelding zonder scherp masker te wijzigen.<br> schrap aan unshark-masker elke kleurencomponent afzonderlijk. |
 
-Zie ook [ scherp beelden in de Dynamische Media van Adobe en op de Server van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en).
+Zie ook [ scherp beelden in de Dynamische Media van Adobe en op de Server van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=nl-NL).
 
 ### Het tabblad PostScript {#postscript-tab}
 

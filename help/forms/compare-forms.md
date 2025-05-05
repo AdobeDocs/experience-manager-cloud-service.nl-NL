@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Adaptieve Forms vergelijken {#compare-two-forms}
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 Wanneer formulierauteurs twee verschillende formulieren moeten vergelijken op basis van de velden, inhoud en formuliercomponenten, vergelijken ze de twee formulieren. De auteur van het formulier moet ervoor zorgen dat de twee formulieren zich in dezelfde map of map bevinden om ze te kunnen vergelijken. Voer de volgende stappen uit om twee verschillende adaptieve formulieren te vergelijken:
 

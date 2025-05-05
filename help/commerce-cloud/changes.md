@@ -40,12 +40,12 @@ Het eindpunt wordt gevormd en bijgewerkt of via Cloud Manager UI of zijn CLI.
 
 ## Invoering van CIF Venia-project
 
-Project beschikbaar in [ de Bewaarplaats van het Git van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) en plaatsing die via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html) wordt gedaan
+Project beschikbaar in [ de Bewaarplaats van het Git van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=nl-NL) en plaatsing die via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=nl-NL) wordt gedaan
 
 **Vorige CIF versies**
 
 * CIF Classic: als AEM pakket installeren
-* CIF Open-source: Via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF Open-source: Via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
 
 ## Productcatalogusgegevens
 

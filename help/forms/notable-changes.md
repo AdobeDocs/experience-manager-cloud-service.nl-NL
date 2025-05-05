@@ -29,17 +29,17 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * De dienst verstrekt SDK om douanecode in een lokale milieu (lokale machine) te ontwikkelen en te testen alvorens de code aan een Cloud Service op te stellen. Ontwikkelaars ontwikkelen en testen aangepaste componenten, thema&#39;s, workflowtoepassingen, configuraties, sjablonen en meer met de SDK op hun lokale computers. Na het testen van de douanecode in hun lokale ontwikkelomgeving, voeren zij de douanecode aan het milieu van a [ Forms CS of het werkgebiedmilieu ](/help/implementing/cloud-manager/deploy-code.md) voor het verdere testen op alvorens het aan een productiemilieu te bevorderen.
 
-* De ontwikkelaars handhaven code voor Cloud Service en lokale ontwikkelomgeving in een gemeenschappelijke [ git bewaarplaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Een git-opslagplaats, gebaseerd op AEM Archetype, wordt automatisch gemaakt bij het maken van een AEM as a Cloud Service-programma.
+* De ontwikkelaars handhaven code voor Cloud Service en lokale ontwikkelomgeving in een gemeenschappelijke [ git bewaarplaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=nl-NL). Een git-opslagplaats, gebaseerd op AEM Archetype, wordt automatisch gemaakt bij het maken van een AEM as a Cloud Service-programma.
 
   ![ autoverwezenlijking van git bewaarplaats op AEM als programma van de wolkendienst ](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
-* De stroom van de ontwikkeling voor Forms as a Cloud Service richt zich op AEM Archetype voor AEM Cloud Service. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van inhoud en code in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Gebruik het [ hulpmiddel van de Modernizer van de Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) om bestaande projectpakketten te herstructureren door inhoud en code in discrete pakketten te scheiden om met de projectstructuur compatibel te zijn die voor Adobe Experience Manager as a Cloud Service wordt bepaald.
+* De stroom van de ontwikkeling voor Forms as a Cloud Service richt zich op AEM Archetype voor AEM Cloud Service. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van inhoud en code in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Gebruik het [ hulpmiddel van de Modernizer van de Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=nl-NL) om bestaande projectpakketten te herstructureren door inhoud en code in discrete pakketten te scheiden om met de projectstructuur compatibel te zijn die voor Adobe Experience Manager as a Cloud Service wordt bepaald.
 
 * Voordat u uw klantbundels kunt gebruiken met Forms as a Cloud Service, moet u uw aangepaste code opnieuw compileren met de nieuwste versie van adobe-aemfd-docmanager.
 
 * Het nut van de as a Cloud Service migratie van AEM Forms van het gebruik &rbrack;(/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Aangepaste Forms, thema&#39;s, malplaatjes, en wolkenconfiguraties van <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service voor te bereiden en te migreren. &lbrack; Gebruik de [ bewaarplaats van de Git van uw programma ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) om bestaande Aangepaste malplaatjes van de Vorm in te voeren.
 
-* E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten.
+* E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten.
 
 ## Lokalisatie
 
@@ -56,11 +56,11 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **Prefill de Dienst:** Prefill haalt de dienst gegevens van de server en voegt samen om uw Aangepaste Forms op de cliëntkant vooraf in te vullen. Met deze functie kunt u de tijd verbeteren die nodig is om een adaptief formulier in te vullen. U kunt de [ prefill dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) altijd vormen om de fusieactie op de Server van Adobe Experience Manager Forms in werking te stellen.
+* **Prefill de Dienst:** Prefill haalt de dienst gegevens van de server en voegt samen om uw Aangepaste Forms op de cliëntkant vooraf in te vullen. Met deze functie kunt u de tijd verbeteren die nodig is om een adaptief formulier in te vullen. U kunt de [ prefill dienst ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=nl-NL) altijd vormen om de fusieactie op de Server van Adobe Experience Manager Forms in werking te stellen.
 
 * **legt acties voor:** E-mail **&#x200B;**&#x200B;voorlegt actie verstrekt opties om gehechtheid te verzenden en Document van Verslag (DoR) met e-mail vast te maken. U kunt het in plaats van **E-mail als PDF** actie gebruiken beschikbaar in AEM 6.5 Forms.
 
-* **Dienst van de Automatede form conversion**: De dienst verstrekt geen meta-model voor de Dienst van de Automatede form conversion. U kunt [ het van de documentatie van de Dienst van de Automatede form conversion ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model) downloaden.
+* **Dienst van de Automatede form conversion**: De dienst verstrekt geen meta-model voor de Dienst van de Automatede form conversion. U kunt [ het van de documentatie van de Dienst van de Automatede form conversion ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=nl-NL#default-meta-model) downloaden.
 
 * **op XSD-Gebaseerde Adaptieve Forms:** u kunt XDP-malplaatje gebruiken om een malplaatje voor Document voor Verslag te ontwerpen. De service biedt geen ondersteuning voor adaptieve Forms op basis van XFA
 
@@ -82,7 +82,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
    * De bewerkingen die afhankelijk zijn van documentservices of -toepassingen zijn niet beschikbaar. Microsoft® Word naar PDF, Microsoft® Excel naar PDF en HTML naar PDF, PostScript (PS) naar PDF, XDP naar PDF forms worden bijvoorbeeld niet ondersteund. Deze bewerkingen zijn respectievelijk afhankelijk van Microsoft® Office, Adobe Acrobat, Adobe Distiller en Forms Document Service.
 
-   * Converteer documenten die een andere indeling dan PDF hebben naar een PDF-indeling voordat u de documenten gebruikt met API&#39;s voor documentanimatie voor communicatie. Als uw documenten bijvoorbeeld de indeling Microsoft® Office, HTML, PostScript (PS) of XDP hebben, zet u deze documenten om in de indeling PDF voordat u de documenten met PDF-documenten gebruikt. U kunt de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) dienst 0} gebruiken ConvertPDF voor dergelijke omzettingen.
+   * Converteer documenten die een andere indeling dan PDF hebben naar een PDF-indeling voordat u de documenten gebruikt met API&#39;s voor documentanimatie voor communicatie. Als uw documenten bijvoorbeeld de indeling Microsoft® Office, HTML, PostScript (PS) of XDP hebben, zet u deze documenten om in de indeling PDF voordat u de documenten met PDF-documenten gebruikt. U kunt de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html?lang=nl-NL) dienst 0} gebruiken ConvertPDF voor dergelijke omzettingen.
 
    * U kunt een AEM 6.5 Forms-omgeving gebruiken voor Digital Signature, Encryption, Reader Extension, Send to Printer, Convert PDF en Barcoded Forms-service.
 
@@ -111,7 +111,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
    * formulieren op basis van XDP weergeven als HTML5 Forms. De service biedt geen ondersteuning voor HTML5 Forms.
 
-   * gevangen off-line gegevens en synchroniseer het de volgende tijd u online met [ AEM Forms Workspace ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app terugkeert.
+   * gevangen off-line gegevens en synchroniseer het de volgende tijd u online met [ AEM Forms Workspace ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=nl-NL) app terugkeert.
 
 ## Interactieve communicatie
 

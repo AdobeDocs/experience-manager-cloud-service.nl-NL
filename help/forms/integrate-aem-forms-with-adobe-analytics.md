@@ -16,12 +16,12 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 <span class="preview"> In dit document wordt de handmatige procedure beschreven voor het inschakelen van Adobe Analytics op een adaptief formulier. Nochtans, adviseert de Adobe om [ te gebruiken laat Adobe Analytics voor een Aangepast Vorm toe gebruikend de Automatisering van de Opstelling van het Experience Cloud ](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md). </span>
 
-AEM Forms integreert met [ Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) om u toe te staan om prestatiesmetriek voor uw gepubliceerde vormen te vangen en te volgen. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt het gedrag vastleggen en volgen van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms.
+AEM Forms integreert met [ Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=nl-NL) om u toe te staan om prestatiesmetriek voor uw gepubliceerde vormen te vangen en te volgen. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt het gedrag vastleggen en volgen van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms.
 
 Nadat u de in dit artikel vermelde handelingen hebt uitgevoerd, kunt u rapporten configureren en weergeven in [!DNL Adobe Analytics] , zoals wordt geïllustreerd in de volgende video:
 
@@ -54,12 +54,12 @@ In de volgende afbeelding ziet u de handelingen die u moet uitvoeren voordat u r
 Maak voordat u [!DNL Adobe Analytics] configureert:
 
 * Een Adobe ID aan login aan [ Adobe Experience Cloud ](https://experience.adobe.com/#/home).
-* A [ rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* A [ rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=nl-NL).
 
 
 ### AEM Forms- en [!DNL Adobe Analytics] extensies installeren {#install-extensions}
 
-Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) uitbreidingen te vormen:
+Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL) uitbreidingen te vormen:
 
 1. Meld u aan bij Adobe Experience Cloud en selecteer de gewenste naam voor het bedrijf.
 
@@ -203,7 +203,7 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 ## 2. AEM Forms configureren {#configure-aem-forms}
 
-Alvorens een configuratie van de Lancering van de Adobe tot stand te brengen, creeer de Configuratie van Adobe IMS die [ AdobeLancering gebruiken als Oplossing van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Alvorens een configuratie van de Lancering van de Adobe tot stand te brengen, creeer de Configuratie van Adobe IMS die [ AdobeLancering gebruiken als Oplossing van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
 
 ### Configuratie van Adobe starten maken {#create-adobe-launch-configuration}
 
@@ -215,7 +215,7 @@ Voer de volgende stappen uit om een configuratie van de Lancering van de Adobe t
 
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 
-1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
 
 1. Selecteer de naam van het gebruikte bedrijf terwijl [ het vormen Adobe Analytics ](#Configure-adobe-analytics).
 
@@ -235,7 +235,7 @@ De [!DNL Adobe Launch] -configuratie gebruiken in een bestaand adaptief formulie
 1. Selecteer **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics] .
 1. Publish het formulier.
 
-Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
+Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=nl-NL#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
 
 ### Regels maken om aangepaste gebeurtenissen vast te leggen (optioneel) {#capture-custom-events}
 

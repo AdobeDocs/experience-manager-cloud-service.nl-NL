@@ -20,7 +20,7 @@ Klik uw projectkaart om het project te openen die pagina landen en aan **gaan Le
 ![ gaan Levend ](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Zie [ Creërend en het Leiden een Project in Cloud Acceleration Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project) om meer te leren.
+>Zie [ Creërend en het Leiden een Project in Cloud Acceleration Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=nl-NL#create-project) om meer te leren.
 
 
 ## De Go Live Activity Card gebruiken {#go-live}

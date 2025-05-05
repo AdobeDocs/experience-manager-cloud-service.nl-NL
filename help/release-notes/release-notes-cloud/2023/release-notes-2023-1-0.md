@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2021, 2022, enzovoort.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -66,7 +66,7 @@ Bekijk de video Overzicht van de release van januari 2023 voor een overzicht van
 
 ### Nieuwe functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* **[Gegevens van het Gebruik vangen kerncomponenten om Aangepaste Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) te bouwen**: [ de Aangepaste redacteur van Forms van het Gebruik ](/help/forms/creating-adaptive-form-core-components.md) om vormen tot stand te brengen die op gestandaardiseerde gegevens worden gebaseerd vangen componenten (de Componenten van de Kern). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
+* **[Gegevens van het Gebruik vangen kerncomponenten om Aangepaste Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) te bouwen**: [ de Aangepaste redacteur van Forms van het Gebruik ](/help/forms/creating-adaptive-form-core-components.md) om vormen tot stand te brengen die op gestandaardiseerde gegevens worden gebaseerd vangen componenten (de Componenten van de Kern). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
 * **[Frontend pijpleidingssteun voor het stileren van kerncomponent gebaseerde Aangepaste Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik gemakkelijk aanpasbare op BEM-Gebaseerde thema&#39;s voor op kern-Componenten-Gebaseerde Aangepaste Forms door hen met de pijpleiding van de Plaatsing van het Front op te stellen om de blik en het gevoel van uw vormen te verbeteren.
 * **[produceer Document van Verslag voor kerncomponent gebaseerde Adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Creeer een verslag voor kerncomponent gebaseerd Aangepast Vorm op voorlegging voor langetermijnarchivering, in druk of in het documentformaat.
 

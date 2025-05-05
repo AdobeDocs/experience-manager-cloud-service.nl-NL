@@ -17,7 +17,7 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=nl-NL) |
 
 Met de Experience Cloud Setup Automation kunt u Adobe Analytics verbinden met Adaptive Forms. Dit biedt een snelle analyse van de interactie van gebruikers met uw formulieren en inzicht in de interactie en betrokkenheid van bezoekers. De Automatisering van de Opstelling van het Experience Cloud helpt ook vormprestaties controleren die metriek zoals voltooiingstijden en drop-off punten impliceren. Deze analyse helpt formulieren te optimaliseren voor een betere gebruikerservaring en maakt onderscheid tussen gebruikersgedrag op basis van bijvoorbeeld de aanmeldingsstatus van anonieme gebruikers, om algemene trends en patronen te identificeren.
 
@@ -71,7 +71,7 @@ Om bovengenoemde te verifiëren zijn beschikbaar voor uw as a Cloud Service mili
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=nl-NL)
 -->
 
 ## Adobe Analytics configureren {#configure-adobe-analytics}
@@ -149,7 +149,7 @@ Als u verbinding wilt maken met en analyses wilt inschakelen in Adaptive Forms f
 
 Als u Adaptief formulier wilt verbinden met een AEM Sites-pagina om Analytics voor een snelle-trackanalyse in te schakelen, neemt u de `customfooterlibs` -clientbibliotheek op naar de AEM Sites-pagina met behulp van de AEM Archetype/Git Repository and Deployment-pijplijn.
 
-1. Open uw [ Archetype van AEM Forms of het gekloonde project van de Bewaarplaats van de it ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in een tekstredacteur. Bijvoorbeeld, de Code van Visual Studio.
+1. Open uw [ Archetype van AEM Forms of het gekloonde project van de Bewaarplaats van de it ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) in een tekstredacteur. Bijvoorbeeld, de Code van Visual Studio.
 
 1. Navigeer naar de pagina van uw sites waar uw adaptieve formulier aanwezig is, bijvoorbeeld In dit demoproject hebben we `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml` .
 
@@ -172,7 +172,7 @@ Als u Adaptief formulier wilt verbinden met een AEM Sites-pagina om Analytics vo
 
    `customfooterlibs.html` wordt gebruikt voor JavaScript.
 
-1. [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de veranderingen op te stellen.
+1. [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=nl-NL) in werking om de veranderingen op te stellen.
 
 ### Regels voor formulieranalyse op Forms in sites inschakelen {#bind-forms-analytics-rules-to-forms-in-sites}
 

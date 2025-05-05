@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!TIP]
 >
->Verken me met basis [ AEM het Gebruik van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), en [ Geweven Insteekmodule van de Inhoud FileVault ](/help/implementing/developing/tools/maven-plugin.md) aangezien dit artikel op deze lessen en concepten voortbouwt.
+>Verken me met basis [ AEM het Gebruik van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL), en [ Geweven Insteekmodule van de Inhoud FileVault ](/help/implementing/developing/tools/maven-plugin.md) aangezien dit artikel op deze lessen en concepten voortbouwt.
 
 In dit artikel worden de wijzigingen beschreven die nodig zijn om Adobe Experience Manager Maven-projecten compatibel te maken met AEM as a Cloud Service, door ervoor te zorgen dat ze de opsplitsing van muteerbare en onveranderlijke inhoud respecteren. Ook, worden de gebiedsdelen gevestigd om niet-strijdige, deterministische plaatsingen tot stand te brengen, en zij worden verpakt in een plaatsbare structuur.
 
@@ -62,7 +62,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 + Het Jar-bestand van de bundel OSGi wordt gegenereerd en rechtstreeks ingesloten in het hele project.
 
 + Het `ui.apps` -pakket bevat alle code die moet worden geïmplementeerd en wordt alleen geïmplementeerd op `/apps` . Veelvoorkomende elementen van het `ui.apps` -pakket zijn onder andere:
-   + [ de definities van de Component en HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) manuscripten
+   + [ de definities van de Component en HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) manuscripten
       + `/apps/my-app/components`
    + JavaScript en CSS (via [ Bibliotheken van de Cliënt ](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
       + `/apps/settings`
    + ACLs (toestemmingen)
       + Alle `rep:policy` voor paden onder `/apps`
-   + [ vooraf gecompileerde gebundelde manuscripten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [ vooraf gecompileerde gebundelde manuscripten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=nl-NL)
 
 >[!NOTE]
 >

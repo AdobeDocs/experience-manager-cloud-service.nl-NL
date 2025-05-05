@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Revisies maken en beheren voor een adaptief formulier {#review-step-forms-aem-sites-page}
 
-Gebruikend [ wijs stap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) van het AEM werkschema toe, herziet de recensent de voorgelegde vorm en voert actie op het uit. Voer de volgende stappen uit om het verzonden formulier te bekijken met de taakstap Toewijzen:
+Gebruikend [ wijs stap ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=nl-NL#assign-task-step) van het AEM werkschema toe, herziet de recensent de voorgelegde vorm en voert actie op het uit. Voer de volgende stappen uit om het verzonden formulier te bekijken met de taakstap Toewijzen:
 
 1. [Een AEM maken](#create-an-aem-workflow)
 1. [De verzendactie van de container van het adaptieve formulier configureren](#configure-submit-action)
@@ -46,7 +46,7 @@ Configureer nu de handeling Verzenden van een component Adaptive Form Container 
 
 1. Ga naar de pagina van de Site.
 1. Selecteer ![ settings_icon ](assets/settings_icon.png) van een Adaptieve container van de Vorm. Het dialoogvenster **[!UICONTROL Adaptive Form Container]** wordt geopend.
-1. Open het **[!UICONTROL Submission]** lusje en specificeer **[!UICONTROL Submit Action]** om [ te roepen een AEM werkschema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. Open het **[!UICONTROL Submission]** lusje en specificeer **[!UICONTROL Submit Action]** om [ te roepen een AEM werkschema ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=nl-NL#invoke-an-aem-workflow)
 
 1. Klik [ Gedaan ] om de montages te bewaren.
 

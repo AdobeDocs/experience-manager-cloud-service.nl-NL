@@ -48,7 +48,7 @@ Het patroon moet `/graphql/execute.json/thePath` zijn.
 
 In een dergelijk geval retourneert de query de foutcode `405` .
 
-Een dergelijke fout is niet specifiek voor GraphQL. Zie KB artikel [ 405 Fout niet toegestaan ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
+Een dergelijke fout is niet specifiek voor GraphQL. Zie KB artikel [ 405 Fout niet toegestaan ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Geblokkeerd door verzender {#blocked-dispatcher}
 

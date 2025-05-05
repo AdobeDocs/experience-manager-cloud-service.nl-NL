@@ -48,7 +48,7 @@ in de volgende `cfg.json` OSGi-configuratie-indeling.
 
 >[!NOTE]
 >
->De OSGi-configuraties worden niet opgeslagen onder /apps, zoals AEM instanties in de cloud die ze op een externe locatie opslaan. Controle in Cloud Manager [ Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) om OSGi te bekijken vormt.
+>De OSGi-configuraties worden niet opgeslagen onder /apps, zoals AEM instanties in de cloud die ze op een externe locatie opslaan. Controle in Cloud Manager [ Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) om OSGi te bekijken vormt.
 
 ## Resolutie van de uitvoermodus {#runmode-resolution}
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service-runmodi zijn goed gedefinieerd op basis van het omgevings
 
 De OSGi-configuratiewaarden die door de runmode worden gespecificeerd, kunnen worden geverifieerd door:
 
-1. Het openen van de AEM als Developer Console van het milieu van Cloud Servicen [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. Het openen van de AEM als Developer Console van het milieu van Cloud Servicen [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=nl-NL)
 1. Selecterend de de dienstrij(en) om te inspecteren, gebruikend de __Peul__ drop-down lijst
 1. Het selecteren van het __lusje van de Status__
 1. Het selecteren van __Configuraties__ van de __drop-down lijst van de Status Dump__

@@ -99,6 +99,6 @@ Zie [ Readiness van AEM Sites voor de Regels van de Bescherming van Gegevens en 
 Integraties van Adobe Experience Manager as a Cloud Service met Adobe Target en Adobe Analytics worden geïmplementeerd met services die geschikt zijn voor gegevensbescherming en privacy (bijvoorbeeld GDPR). Er worden geen persoonsgegevens van Adobe Target of Adobe Analytics in AEM opgeslagen met betrekking tot de integratie.
 Zie voor meer informatie:
 
-* [ Adobe Target - het Overzicht van de Privacy ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [ Adobe Target - het Overzicht van de Privacy ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=nl-NL)
 
-* [ Workflow van de Privacy van Gegevens van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [ Workflow van de Privacy van Gegevens van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=nl-NL)

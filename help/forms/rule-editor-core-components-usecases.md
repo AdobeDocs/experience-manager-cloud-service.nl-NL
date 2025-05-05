@@ -19,7 +19,7 @@ Nu, laten wij de verschillende implementaties voor een regelredacteur bespreken.
 
 ## Stel focus in op een ander deelvenster wanneer u op een knop klikt als het eerste deelvenster geldig is
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 Met de regeleditor kunt u de lay-outs van een deelvenster valideren, zoals Horizontale tabbladen, Verticale tabbladen, Accordeons of Wizard wanneer u op een knop klikt en de focus instelt op een formulierobject in een ander deelvenster. U kunt deze functionaliteit gebruiken om de navigatie en gebruikerservaring van formulieren te verbeteren.
 

@@ -44,7 +44,7 @@ Ga als volgt te werk om naar Cloud Acceleration Manager (CAM) te navigeren:
 >id="aemcloud_cam_gettingstarted"
 >title="Aan de slag met Cloud Acceleration Manager"
 >abstract="Maak uw project en start uw reis naar AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html" text="Voordelen van het gebruik van Cloud Acceleration Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=nl-NL" text="Voordelen van het gebruik van Cloud Acceleration Manager"
 
 Met de openingspagina van de Cloud Acceleration Manager (CAM) kunt u meerdere projecten maken en bewerken.
 
@@ -103,4 +103,4 @@ Voer de onderstaande stappen uit om uw project te verwijderen:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe te om in Cloud Acceleration Manager te registreren en hoe te om een project tot stand te brengen, bent u bereid om de volgende stap in de [ Fase van de Bereidheid ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html) te herzien.
+Nadat u hebt geleerd hoe te om in Cloud Acceleration Manager te registreren en hoe te om een project tot stand te brengen, bent u bereid om de volgende stap in de [ Fase van de Bereidheid ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=nl-NL) te herzien.

@@ -19,7 +19,7 @@ In dit onderwerp wordt beschreven hoe u een AEM CIF gebruikt om de widget [!DNL 
 
 ## Vereisten {#prerequisites}
 
-Dit onderwerp veronderstelt u een lokale [ AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) opstelling hebt.
+Dit onderwerp veronderstelt u een lokale [ AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL) opstelling hebt.
 
 De component PLP vereist de [[!DNL Live Search]  Popover CIF component ](live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
 

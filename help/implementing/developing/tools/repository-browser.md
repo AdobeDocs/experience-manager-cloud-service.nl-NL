@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->U kunt [ deze klem ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) voor een snelle videoinleiding ook letten op hoe te om Browser van de Bewaarplaats te gebruiken om AEM as a Cloud Service te zuiveren.
+>U kunt [ deze klem ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=nl-NL) voor een snelle videoinleiding ook letten op hoe te om Browser van de Bewaarplaats te gebruiken om AEM as a Cloud Service te zuiveren.
 
 ## Inleiding {#introduction}
 
@@ -33,7 +33,7 @@ Toegankelijk van [ AEM as a Cloud Service Developer Console ](/help/implementing
 
 Aan de volgende voorwaarden moet zijn voldaan om toegang te krijgen tot de AEM as a Cloud Service Developer Console of de browser van de gegevensopslagruimte
 
-Om tot AEM as a Cloud Service Developer Console toegang te hebben, zie {de toegang van 0} Developer Console [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Om tot AEM as a Cloud Service Developer Console toegang te hebben, zie {de toegang van 0} Developer Console [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Voor toegang tot de gegevensopslagbrowser gelden dezelfde voorwaarden als voor de AEM as a Cloud Service Developer Console (zie hierboven). U kunt als volgt de inhoud van de Repository Browser voor een bepaalde instantie weergeven:
 
@@ -41,7 +41,7 @@ Voor toegang tot de gegevensopslagbrowser gelden dezelfde voorwaarden als voor d
 
 * Publish instanties: De gebruikers met het Profiel van het Product van de AEM Gebruikers voor de **instantie van Publish** kunnen bewaarplaats browser met minimale leestoegang bekijken. Zonder deze productprofielset navigeert de gebruiker als een anonieme gebruiker en worden sommige paden niet weergegeven vanwege beperkte machtigingen.
 
-Voor meer informatie over vestiging gebruikerstoestemmingen, zie de [ Documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
+Voor meer informatie over vestiging gebruikerstoestemmingen, zie de [ Documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=nl-NL).
 
 ### De gegevensopslagbrowser starten {#launching-the-repository-browser}
 

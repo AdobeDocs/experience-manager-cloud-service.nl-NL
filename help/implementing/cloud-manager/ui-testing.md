@@ -26,7 +26,7 @@ Het testen UI van de douane is een facultatieve eigenschap die u toelaat om test
 
 AEM verstrekt een geïntegreerde reeks van [ de kwaliteitsgates van Cloud Manager ](/help/implementing/cloud-manager/custom-code-quality-rules.md) om vlotte updates aan douanetoepassingen te verzekeren. Met name ondersteunen IT-testpoorten al het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
 
-De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress, Selenium, Java en Maven, en JavaScript) toe te staan. Ook, kan een UI testproject gemakkelijk worden geproduceerd door [ het Archieftype van het Project van de AEM te gebruiken ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress, Selenium, Java en Maven, en JavaScript) toe te staan. Ook, kan een UI testproject gemakkelijk worden geproduceerd door [ het Archieftype van het Project van de AEM te gebruiken ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 Adobe stimuleert het gebruik van Cypress, omdat deze in real time opnieuw laden en automatisch wachten biedt, wat tijd bespaart en de productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor mensen die nog niet aan tests hebben gewerkt.
 

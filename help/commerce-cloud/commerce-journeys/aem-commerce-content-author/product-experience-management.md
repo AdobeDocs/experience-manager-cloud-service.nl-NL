@@ -117,4 +117,4 @@ U bent nu klaar om productervaringen te beheren met AEM Content en Commerce. Voo
 
 * [Commerce Ervaringen ontwerpen](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-* [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)

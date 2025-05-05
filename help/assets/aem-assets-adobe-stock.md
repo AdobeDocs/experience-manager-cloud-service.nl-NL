@@ -53,7 +53,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
@@ -562,6 +562,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [ Videozelfstudie bij het gebruiken van de activa van Adobe Stock met Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [ de hulp van het ondernemingsplan van Adobe Stock ](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [ Veelgestelde vragen van Adobe Stock ](https://helpx.adobe.com/stock/faq.html)
+>* [ Videozelfstudie bij het gebruiken van de activa van Adobe Stock met Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=nl-NL)
+>* [ de hulp van het ondernemingsplan van Adobe Stock ](https://helpx.adobe.com/nl/enterprise/using/adobe-stock-enterprise.html)
+>* [ Veelgestelde vragen van Adobe Stock ](https://helpx.adobe.com/nl/stock/faq.html)

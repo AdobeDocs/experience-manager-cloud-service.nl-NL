@@ -85,7 +85,7 @@ De indeling van deelvensters is handig om verwante velden zo te ordenen dat u ge
 
 **Reactiegedrag:** op kleinere schermen, stapelen de panelen typisch verticaal, die hun verschillende groeperingen handhaven terwijl het aanpassen aan de lagere breedte.
 
-U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Wizard Layout
 
@@ -97,7 +97,7 @@ De indeling van de wizard helpt een complex formulier te vereenvoudigen door het
 
 **Responsief gedrag:** op mobiele apparaten, handhaaft de tovenaar zijn geleidelijke benadering maar past de inhoud binnen elke stap aan om het smallere scherm te passen, vaak stapelend elementen die zij aan zij op grotere schermen zouden verschijnen.
 
-U kunt de [ tovenaar component ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+U kunt de [ tovenaar component ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Accordeonlay-out
 
@@ -109,7 +109,7 @@ De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer 
 
 **Responsief gedrag:** het werk van Accordeons in het bijzonder goed op mobiele apparaten aangezien zij natuurlijk verticale ruimte door slechts de uitgebreide inhoudssectie te tonen besparen, die hen ideaal maken voor kleinere schermen.
 
-U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) artikel van de component 0&rbrace; accordeon &lbrace;.
+U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) artikel van de component 0&rbrace; accordeon &lbrace;.
 
 ### Hoe te om de juiste lay-out te kiezen?
 

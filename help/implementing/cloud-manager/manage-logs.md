@@ -101,5 +101,5 @@ Zie de volgende aanvullende bronnen voor meer informatie over de Cloud Manager A
 
 Zie de volgende aanvullende bronnen voor meer informatie over logbestanden in AEM as a Cloud Service:
 
-* [ Wolk 5 AEM Logdossiers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
-* [ het Zuiveren AEM as a Cloud Service gebruikend logboeken ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
+* [ Wolk 5 AEM Logdossiers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=nl-NL)
+* [ het Zuiveren AEM as a Cloud Service gebruikend logboeken ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=nl-NL)

@@ -47,14 +47,14 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
   <tr>
     <td>Versie wissen</td>
     <td>Klant</td>
-    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle van de Aanzuivering </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
+    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle van de Aanzuivering </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Klant</td>
-    <td>Het logboek van de controle zuivert wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
+    <td>Het logboek van de controle zuivert wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
    </td>
    </td>
   </tr>
@@ -77,7 +77,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_WorkflowPurgeTask</code> ) met de juiste eigenschappen. Vorm de eigenschappen OSGI zie <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances"> AEM 6.5 documentatie van de Taak van het Onderhoud </a>.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_WorkflowPurgeTask</code> ) met de juiste eigenschappen. Vorm de eigenschappen OSGI zie <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=nl-NL#regular-purging-of-workflow-instances"> AEM 6.5 documentatie van de Taak van het Onderhoud </a>.</p>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van Adobe </b>.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van Adobe </b>.</p>
   </td>
   </tr>
   </tbody>

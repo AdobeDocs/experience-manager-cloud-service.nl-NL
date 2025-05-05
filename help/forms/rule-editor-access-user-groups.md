@@ -54,5 +54,5 @@ Met [!DNL Experience Manager Forms] kunt u de toegang van regeleditors beperken 
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [ Beleid van de Gebruiker en Veiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [ Beleid van de Gebruiker en Veiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL).
 

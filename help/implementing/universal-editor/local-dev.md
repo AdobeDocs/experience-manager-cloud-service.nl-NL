@@ -45,7 +45,7 @@ Binnen een buitenframe dat is beveiligd met HTTPS, kan een onbeveiligd HTTP-fram
 
 Hiervoor moet u AEM instellen om op HTTPS te kunnen worden uitgevoerd. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
 
-[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
+[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=nl-NL) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
 
 ## De Universal Editor-service installeren {#install-ue-service}
 
@@ -53,7 +53,7 @@ De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universe
 
 [ versie NodeJS 20 ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
 
-De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) voor details op hoe te om tot het toegang te hebben.
+De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) voor details op hoe te om tot het toegang te hebben.
 
 Sla het `universal-editor-service.cjs` -bestand op van Softwaredistributie naar uw lokale ontwikkelomgeving.
 

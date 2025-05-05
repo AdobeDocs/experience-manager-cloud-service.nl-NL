@@ -19,7 +19,7 @@ Gefeliciteerd met het kiezen van AEM as a Cloud Service! Dit document is het uit
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** is de recentste innovatie in Adobe Experience Manager die extreme inhoudssnelheid toelaat en uitzonderlijke ervaringen levert. Leer hoe te beginnen met Edge Delivery Services, door [ Overzicht van Edge Delivery Services te raadplegen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview). Om te begrijpen hoe te om Edge Delivery Services te gebruiken, zie de [&#128279;](https://www.aem.live/developer/tutorial) pagina van het Leerprogramma van de 1&rbrace; Ontwikkelaar.
+Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** is de recentste innovatie in Adobe Experience Manager die extreme inhoudssnelheid toelaat en uitzonderlijke ervaringen levert. Leer hoe te beginnen met Edge Delivery Services, door [ Overzicht van Edge Delivery Services te raadplegen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview). Om te begrijpen hoe te om Edge Delivery Services te gebruiken, zie de [&#128279;](https://www.aem.live/developer/tutorial) pagina van het Leerprogramma van de 1&rbrace; Ontwikkelaar.
 
 Onboarding is het proces waarbij een aangewezen systeembeheerder AEM as a Cloud Service voor uw organisatie instelt. Dit proces omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid zich aanmelden en tot hun middel op AEM as a Cloud Service toegang hebben.
 
@@ -105,4 +105,4 @@ Als u wilt weten welke Adobe u adviseert om uw team op uw nieuwe toepassing van 
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [ Op het instappen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - Deze korte video geeft een overzicht van de Cloud Service op het instappen proces voor AEM.
+* [ Op het instappen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - Deze korte video geeft een overzicht van de Cloud Service op het instappen proces voor AEM.

@@ -17,8 +17,8 @@ ht-degree: 0%
 >id="aemcloud_chooseteam"
 >title="Kies het juiste team"
 >abstract="De juiste mensen in de juiste banen zetten om uw Adobe Experience Manager-implementatie tot een succes te maken."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI&#39;s uitlijnen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="KPI&#39;s evalueren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=nl-NL" text="KPI&#39;s uitlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=nl-NL" text="KPI&#39;s evalueren"
 
 Het is mogelijk dat in uw organisatie verschillende afdelingen verschillende aspecten van de digitale ervaring hebben. Zonder governance is het stadium van eindeloze discussie, strijd en verwarring.
 
@@ -51,7 +51,7 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 ![ rollen van het Overzicht voor implementatie ](assets/team_involvement.png)
 
-**herzie deze lijst met uw implementatieteam** en zorg ervoor u mensen met relevante kwalificaties in elke rol hebt. De leden van het team die minder vertrouwd met Adobe Experience Cloud zijn kunnen [ Experience League ](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) het leren middelen gebruiken om verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html) te worden.
+**herzie deze lijst met uw implementatieteam** en zorg ervoor u mensen met relevante kwalificaties in elke rol hebt. De leden van het team die minder vertrouwd met Adobe Experience Cloud zijn kunnen [ Experience League ](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager) het leren middelen gebruiken om verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html) te worden.
 
 ## **Zeer belangrijke Rollen voor AEM Experience Manager Assets**
 
@@ -80,4 +80,4 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 >[!TIP]
 >
-> Leer meer over Adobe Experience Cloud en gebruiksmiddelen op [ Experience League ](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) en wordt verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html).
+> Leer meer over Adobe Experience Cloud en gebruiksmiddelen op [ Experience League ](https://experienceleague.adobe.com/nl#recommended/solutions/experience-manager) en wordt verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html).

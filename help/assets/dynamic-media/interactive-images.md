@@ -20,7 +20,7 @@ Hier volgt een blaasbare banner met een pop-upvenster van QuickView. Een gebruik
 
 ![ chlimage_1-152 ](assets/chlimage_1-368.png)
 
-Zie [ interactieve beelden in actie ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) op de Web-pagina hierboven wordt afgebeeld.
+Zie [ interactieve beelden in actie ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=nl-NL) op de Web-pagina hierboven wordt afgebeeld.
 
 ## Controleren hoe interactieve afbeeldingsbanners worden gemaakt {#watch-how-interactive-image-banners-are-created}
 
@@ -30,7 +30,7 @@ Bekijk een analyse op [ hoe de interactieve beeldbanners ](https://s7d5.scene7.c
 
 De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met interactieve afbeeldingen in Adobe Experience Manager Assets.
 
-Zoek de **rubriek van het Voorbeeld** binnen sommige van de Snelle taken van het Begin. Het bevat een korte zelfstudie die op a [ Web-pagina voorbeeld gebaseerd is dat nog geen Interactieve Beelden heeft die aan het ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html) worden toegevoegd.
+Zoek de **rubriek van het Voorbeeld** binnen sommige van de Snelle taken van het Begin. Het bevat een korte zelfstudie die op a [ Web-pagina voorbeeld gebaseerd is dat nog geen Interactieve Beelden heeft die aan het ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=nl-NL) worden toegevoegd.
 
 
 
@@ -146,7 +146,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de resulterende ho
 
 **Voorbeeld**
 
-U kunt de zelfde benadering toepassen die in de drie bovenstaande voorbeelden op de [ demo Web-pagina ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html) wordt gebruikt.
+U kunt de zelfde benadering toepassen die in de drie bovenstaande voorbeelden op de [ demo Web-pagina ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=nl-NL) wordt gebruikt.
 
 De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Selecteer elke knop terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd en noteer de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier de product Snelle meningen activeert beschikbaar op de pagina, hebt u de volgende lijst van de verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
@@ -342,13 +342,13 @@ De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat 
 
 **Voorbeeld**
 
-Gebruikend de [ demowebsite als voorbeeld ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), merk op dat het beeld van de drie individuen een statische `IMG` markering is:
+Gebruikend de [ demowebsite als voorbeeld ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=nl-NL), merk op dat het beeld van de drie individuen een statische `IMG` markering is:
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Integratie is net zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen door de gekopieerde insluitcode uit Experience Manager Assets. U kunt zien dat het resultaat [ het shoppable interactieve beeld op de pagina met drie cirkelhotspots ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html) toont.
+Integratie is net zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen door de gekopieerde insluitcode uit Experience Manager Assets. U kunt zien dat het resultaat [ het shoppable interactieve beeld op de pagina met drie cirkelhotspots ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=nl-NL) toont.
 
 >[!NOTE]
 >
@@ -356,9 +356,9 @@ Integratie is net zo eenvoudig als het verwijderen van de tag `IMG` en het verva
 
 Als u een &#39;uitsnijding&#39; wilt toepassen op een verwisselbare interactieve afbeelding voor een responsieve omgeving, neemt u het configuratiekenmerk Interactive Image `ZoomView.iscommand` op in het pad. In dit geval wordt de component `ZoomView` aangeroepen en is `iscommand` de opdracht &quot;uitsnijden&quot; voor het bedienen van afbeeldingen die u toepast.
 
-Zie [ ZoomView.iscommand ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuratieattributen.
+Zie [ ZoomView.iscommand ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=nl-NL) configuratieattributen.
 
-Zie [ gewas ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) beeld het dienen bevel.
+Zie [ gewas ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=nl-NL) beeld het dienen bevel.
 
 U bent nu klaar om de interactieve afbeelding te integreren met een bestaande QuickView op uw website.
 
@@ -495,7 +495,7 @@ Hier volgt de volledige broncode:
  s7interactiveimageviewer.init();
 ```
 
-De [ definitieve demowebsite met het volledig geïntegreerde interactieve beeld ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
+De [ definitieve demowebsite met het volledig geïntegreerde interactieve beeld ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=nl-NL).
 
 ## Aangepaste pop-ups maken met Snelle weergave {#using-quickviews-to-create-custom-pop-ups}
 

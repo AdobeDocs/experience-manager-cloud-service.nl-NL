@@ -110,7 +110,7 @@ U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ creeer Plaats ](/help/sites-cloud/administering/site-creation/create-site.md) - leer hoe te om AEM te gebruiken om een plaats tot stand te brengen gebruikend plaatssjablonen om de stijl en de structuur van uw plaats te bepalen.
 * [ AEM pagina noemende overeenkomsten ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
 * [ AEM Basisbehandeling ](/help/sites-cloud/authoring/basic-handling.md) - onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.

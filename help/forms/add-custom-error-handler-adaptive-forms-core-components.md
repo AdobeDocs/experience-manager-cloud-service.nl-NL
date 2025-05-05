@@ -20,7 +20,7 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html?lang=nl-NL) |
 
 AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden van formulieren. Het biedt ook functie om functies van fouthandlers aan te passen. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een externe dienst gebruikend APIs wordt aangehaald, worden de gegevens overgebracht naar de server voor bevestiging, die een antwoord op de cliënt met informatie over het succes of de foutengebeurtenis voor de voorlegging terugkeert. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren. Met een fouthandler kunt u fouten of validatieproblemen die zijn opgetreden, beheren en weergeven.
 
@@ -172,12 +172,12 @@ Alvorens u een foutenmanager gebruikend de Invoke dienst van de Redacteur van de
 
 * [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu van AEM Cloud Service ](enable-adaptive-forms-core-components.md) toe.
 
-* Leer hoe te om [ douanefuncties ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules) tot stand te brengen.
+* Leer hoe te om [ douanefuncties ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=nl-NL#write-rules) tot stand te brengen.
 
 
 ## Fouthandler toevoegen met gebruik van de Regel-editor {#add-error-handler-using-rule-editor}
 
-Gebruikend de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html#invoke) actie van de Dienst van de Redacteur van de Regel van 0&rbrace; Invoke, bepaalt u de bevestigingscriteria die op de gegevensbron worden gebaseerd die u met de Aangepaste Vorm gebruikt.  Als u RESTful-webservices als gegevensbron gebruikt, kunt u de validatiecriteria definiëren in een bestand met definities van de Swagger. Door de functies van de foutenmanager en de Redacteur van de Regel in Aangepast Forms te gebruiken, kunt u fout behandeling effectief beheren en aanpassen. U bepaalt de voorwaarden gebruikend de Redacteur van de Regel en vormt de gewenste acties die moeten worden uitgevoerd wanneer de regel wordt teweeggebracht. Met Aangepast formulier worden de invoer die u invoert in velden gevalideerd op basis van vooraf ingestelde validatiecriteria. Als de invoerwaarden niet voldoen aan de validatiecriteria, worden de foutberichten in een adaptief formulier weergegeven op veldniveau.
+Gebruikend de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=nl-NL#invoke) actie van de Dienst van de Redacteur van de Regel van 0&rbrace; Invoke, bepaalt u de bevestigingscriteria die op de gegevensbron worden gebaseerd die u met de Aangepaste Vorm gebruikt.  Als u RESTful-webservices als gegevensbron gebruikt, kunt u de validatiecriteria definiëren in een bestand met definities van de Swagger. Door de functies van de foutenmanager en de Redacteur van de Regel in Aangepast Forms te gebruiken, kunt u fout behandeling effectief beheren en aanpassen. U bepaalt de voorwaarden gebruikend de Redacteur van de Regel en vormt de gewenste acties die moeten worden uitgevoerd wanneer de regel wordt teweeggebracht. Met Aangepast formulier worden de invoer die u invoert in velden gevalideerd op basis van vooraf ingestelde validatiecriteria. Als de invoerwaarden niet voldoen aan de validatiecriteria, worden de foutberichten in een adaptief formulier weergegeven op veldniveau.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Gebruikend de Redacteur van de Regel, kunt u:
 ### Standaardfouthandlerfunctie toevoegen {#add-default-errror-handler}
 
 Een standaardfouthandler wordt ondersteund voor het weergeven van foutberichten in velden als de foutreactie in het standaardschema of bij een validatiefout op de server staat.
-Om te begrijpen hoe te om een standaardfoutenmanager te gebruiken die de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#invoke) actie van de Dienst van de Regel van 0&rbrace; aanhaalt van de Regel {, een voorbeeld van een eenvoudige AanpassingsVorm met twee gebieden, **Huididentiteitskaart** en **Naam van Huisdier** gebruikt en een standaardfoutenmanager bij het **Huisdieridentiteitskaart** gebied gebruiken om diverse fouten te controleren die door het REST eindpunt worden gevormd om een externe dienst aan te halen, bijvoorbeeld, 8}, `404 - Not Found`, `400 - Bad Request`. `200 - OK` Om een standaardfoutenmanager toe te voegen gebruikend de Actie van de Dienst van de Redacteur van de Regel Invoke, voer de volgende stappen uit:
+Om te begrijpen hoe te om een standaardfoutenmanager te gebruiken die de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=nl-NL#invoke) actie van de Dienst van de Regel van 0&rbrace; aanhaalt van de Regel {, een voorbeeld van een eenvoudige AanpassingsVorm met twee gebieden, **Huididentiteitskaart** en **Naam van Huisdier** gebruikt en een standaardfoutenmanager bij het **Huisdieridentiteitskaart** gebied gebruiken om diverse fouten te controleren die door het REST eindpunt worden gevormd om een externe dienst aan te halen, bijvoorbeeld, 8}, `404 - Not Found`, `400 - Bad Request`. `200 - OK` Om een standaardfoutenmanager toe te voegen gebruikend de Actie van de Dienst van de Redacteur van de Regel Invoke, voer de volgende stappen uit:
 
 1. Open een adaptief formulier in de ontwerpmodus, selecteer een formuliercomponent en selecteer **[!UICONTROL Rule Editor]** om de regeleditor te openen.
 1. Selecteer **[!UICONTROL Create]** .
@@ -220,7 +220,7 @@ U kunt een aangepaste fouthandlerfunctie toevoegen om een aantal van de volgende
 Naast de vermelde acties, kunnen de managers van de douanefout worden gebruikt om aangepaste functies uit te voeren die aan specifieke gebruikersvereisten voldoen.
 
 De manager van de douanefout is een functie (de Bibliotheek van de Cliënt) die wordt ontworpen om aan fouten te antwoorden die door de externe dienst zijn teruggekeerd en een aangepaste reactie aan eind te leveren - gebruikers. Elke clientbibliotheek met annotatie `@errorHandler` wordt beschouwd als een aangepaste fouthandlerfunctie. Deze aantekening helpt de functie van de foutenmanager te identificeren die in het `.js` dossier wordt gespecificeerd.
-Om te begrijpen hoe te om een manager van de douanefout tot stand te brengen en te gebruiken die de [ Invoke dienst van de Redacteur van de Regel gebruikt ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#invoke) actie, neem een voorbeeld van AanpassingsVorm met twee gebieden, **Huididentiteitskaart** en **Naam van Huisdier** en gebruik een manager van de douanefout bij het **Huisdier ID** gebied om diverse fouten te controleren die door het eindpunt van REST wordt teruggegeven dat wordt gevormd om een externe dienst aan te halen; voorbeeld, `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
+Om te begrijpen hoe te om een manager van de douanefout tot stand te brengen en te gebruiken die de [ Invoke dienst van de Redacteur van de Regel gebruikt ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=nl-NL#invoke) actie, neem een voorbeeld van AanpassingsVorm met twee gebieden, **Huididentiteitskaart** en **Naam van Huisdier** en gebruik een manager van de douanefout bij het **Huisdier ID** gebied om diverse fouten te controleren die door het eindpunt van REST wordt teruggegeven dat wordt gevormd om een externe dienst aan te halen; voorbeeld, `200 - OK`, `404 - Not Found`, `400 - Bad Request`.
 
 Voer de volgende stappen uit om een aangepaste fouthandler toe te voegen en te gebruiken in een adaptief formulier:
 1. [ creeer een manager van de douanefout ](#create-custom-error-message)
@@ -232,7 +232,7 @@ Voer de volgende stappen uit om een aangepaste foutfunctie te maken:
 
 Voer de volgende stappen uit om een aangepaste foutfunctie te maken:
 
-1. [ kloon uw as a Cloud Service Bewaarplaats van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. [ kloon uw as a Cloud Service Bewaarplaats van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git).
 1. Maak een map onder de map `[AEM Forms as a Cloud Service repository folder]/apps/` . Maak bijvoorbeeld een map met de naam `experience-league`
 1. Navigeer naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en maak een `ClientLibraryFolder` as `clientlibs` .
 1. Maak een map met de naam `js` .
@@ -280,7 +280,7 @@ Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopbal
 
    >[!NOTE]
    >
-   > Meer over leren hoe te om douanefuncties tot stand te brengen, klik [ douanefuncties in de Redacteur van de Regel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
+   > Meer over leren hoe te om douanefuncties tot stand te brengen, klik [ douanefuncties in de Redacteur van de Regel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=nl-NL#write-rules).
 
 
 1. U kunt de wijzigingen in de opslagplaats toevoegen, vastleggen en doorvoeren met behulp van de onderstaande opdrachten:
@@ -291,7 +291,7 @@ Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopbal
        git push
    ```
 
-1. [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) in werking.
+1. [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline) in werking.
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de manager van de douanefout beschikbaar in uw Adaptieve redacteur van de Regel van de Vorm. Nu, begrijpen hoe te om een manager van de douanefout te vormen en te gebruiken gebruikend de Invoke van de Redacteur van de Regel dienst in AEM Forms.
 

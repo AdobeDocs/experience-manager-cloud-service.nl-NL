@@ -18,7 +18,7 @@ Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande fu
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service levert nieuwe eigenschappen op een regelmatige kast, volgens de [ versie van de Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service).
+Adobe Experience Manager as a Cloud Service levert nieuwe eigenschappen op een regelmatige kast, volgens de [ versie van de Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service).
 
 Als u vertrouwd wilt raken met de functies die gepland zijn om live te gaan met de volgende functieversie, kunt u zich abonneren op het pre-releasekanaal. Dit kanaal is toegankelijk door uw ontwikkelomgevingen of elke sandboxomgeving te configureren. U kunt een voorvertoning weergeven van wijzigingen die toegankelijk zijn via de AEM-gebruikersinterface en code maken op basis van nieuwe prerelease-API&#39;s.
 
@@ -50,7 +50,7 @@ Voor het effectief benutten van de voordelen van het prereleasekanaal zijn vier 
 
 ## Uw kalenders markeren {#mark-calendars}
 
-De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [ Adobe Experience League ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service).
+De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [ Adobe Experience League ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service).
 
 Neem nota van de versiedata zodat kunt u tijd plannen om de aanstaande eigenschappen te herzien en te testen.
 
@@ -187,7 +187,7 @@ JavaDocs wordt gepubliceerd aan Centrale Maven.
 > 
 > De `aem-prerelease-sdk-api` artifactId mag nooit worden gebruikt bij de implementatie naar het werkgebied of de productie. Gebruikt altijd `aem-sdk-api` wanneer het opstellen via de productiepijplijn. Ook de code die verwijzingen prerelease APIs niet via de productiepijplijn zou moeten worden opgesteld.
 
-De [ AEM CS SDK bouwt Analysator in v1.0 en hoger wordt gemaakt ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) zal ontdekken als prerelease API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het pre-versie SDK API gebruiken om het project te analyseren.
+De [ AEM CS SDK bouwt Analysator in v1.0 en hoger wordt gemaakt ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) zal ontdekken als prerelease API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het pre-versie SDK API gebruiken om het project te analyseren.
 
 ## Uw gebruikers trainen {#train-users}
 
@@ -195,8 +195,8 @@ Nadat u de nieuwe functies in het prereleasekanaal hebt getest en u hebt beslote
 
 Adobe Experience League biedt veel bronnen om AEMaaCS te leren.
 
-* [ de documentatie AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [ Tutorials ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [ de documentatie AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL)
+* [ Tutorials ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=nl-NL)
 * [ de maandversie overzichtsvideo ](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) in de versienota&#39;s
 
 ## Overwegingen {#considerations}

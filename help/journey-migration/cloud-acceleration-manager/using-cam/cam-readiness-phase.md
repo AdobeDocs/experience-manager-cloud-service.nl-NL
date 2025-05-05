@@ -39,7 +39,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 >id="aemcloud_cam_bpa"
 >title="Analyserapport voor best practices"
 >abstract="Het BPA-rapport kan naar CAM worden geüpload om een analyse daarvan te kunnen maken met betrekking tot de migratie naar AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Analysator van best practices gebruiken"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Analysator van best practices gebruiken"
 
 1. Klik **Overzicht** van de **kaart van de Analyse van Beste praktijken**.
 
@@ -53,7 +53,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
    1. Navigeer aan het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) en download de Analysator van Beste praktijken als zip dossier.
 
       >[!NOTE]
-      >Het overzicht [ Gebruikend Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) leren hoe te om BPA in werking te stellen.
+      >Het overzicht [ Gebruikend Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=nl-NL#imp-considerations) leren hoe te om BPA in werking te stellen.
 
 1. In CAM, krijgt de klik **uploadt sleutel**, zodat kunt u de sleutel krijgen die wordt gebruikt om uw systeem te vormen om BPA- rapporten direct aan CAM automatisch te uploaden.
 
@@ -161,7 +161,7 @@ U kunt het rapport filtreren dat op belangrijkheid, subtype, of telling wordt ge
 ![ de filters van het Rapport ](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Zie [ Interpreting het Rapport van de Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) over vondsten categorieën en belangrijkheidsniveaus leren.
+>Zie [ Interpreting het Rapport van de Analysator van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=nl-NL) over vondsten categorieën en belangrijkheidsniveaus leren.
 
 #### Evaluatie van best practices {#best-practices-assessment}
 
@@ -222,4 +222,4 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
 ## Volgende functies {#whats-next}
 
-Zodra u hebt geleerd hoe te om in Cloud Acceleration Manager te registreren en hoe te om een project tot stand te brengen, bent u nu bereid om zich op het herzien van de volgende stap in de [ Fase van de Implementatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html) te bewegen.
+Zodra u hebt geleerd hoe te om in Cloud Acceleration Manager te registreren en hoe te om een project tot stand te brengen, bent u nu bereid om zich op het herzien van de volgende stap in de [ Fase van de Implementatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=nl-NL) te bewegen.

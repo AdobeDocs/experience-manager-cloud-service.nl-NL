@@ -31,7 +31,7 @@ Sandboxprogramma&#39;s maken automatisch ontwerp mogelijk. Wanneer u [ een zandb
 
   ![ Uitgezochte oplossingen en toe:voegen-ons voor een zandbak ](assets/sandbox-solutions-add-ons.png)
 
-* Plaatst omhoog een opslagplaats van de projectgit met een steekproefproject dat op [ wordt gebaseerd Archetype van het Project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Plaatst omhoog een opslagplaats van de projectgit met een steekproefproject dat op [ wordt gebaseerd Archetype van het Project van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Maakt een ontwikkelomgeving.
 * Creeert een niet-productiepijpleiding die aan de ontwikkelomgeving opstelt.
 

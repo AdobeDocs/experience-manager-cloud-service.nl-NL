@@ -15,10 +15,10 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt [ groepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) tot stand brengen en beleid en [ gebruikers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aan de groepen toewijzen. Dit beleid controleert toestemmingen van de gebruikers die deel van de groep uitmaken.
+U kunt [ groepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) tot stand brengen en beleid en [ gebruikers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) aan de groepen toewijzen. Dit beleid controleert toestemmingen van de gebruikers die deel van de groep uitmaken.
 
 Nadat u [!DNL AEM Forms] as a Cloud Service hebt ingesteld, zijn de groepen in de onderstaande tabel, zoals [!DNL forms-users] en gebruikers die het formulierbeheer gebruiken, automatisch beschikbaar voor toewijzing:
 

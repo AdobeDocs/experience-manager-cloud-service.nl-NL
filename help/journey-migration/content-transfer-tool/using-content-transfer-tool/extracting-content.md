@@ -19,7 +19,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_extraction"
 >title="Inhoud extraheren"
 >abstract="Extractie heeft betrekking op het extraheren van inhoud van het Adobe Experience Manager-bronexemplaar (AEM) naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een opslaggebied voor de cloud dat door Adobe wordt geleverd om de overgedragen inhoud tijdelijk op te slaan tussen de AEM-broninstantie en de Cloud Service AEM-instantie."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extractie naar boven"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=nl-NL#top-up-extraction-process" text="Extractie naar boven"
 
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:

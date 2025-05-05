@@ -59,7 +59,7 @@ data:
 
 Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan `1` moeten worden geplaatst.
 
-Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
+Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
 
 Tot de aanvullende eigenschappen behoren:
 
@@ -158,7 +158,7 @@ Tot de aanvullende eigenschappen behoren:
 >[!NOTE]
 >De zuiveringssleutel moet als a [ geheime typeVariabele van het Milieu van Cloud Manager ](/help/operations/config-pipeline.md#secret-env-vars) worden gevormd, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld. Het wordt aanbevolen een unieke willekeurige sleutel van minimaal 32 bytes te gebruiken. De cryptografische bibliotheek van Open SSL kan bijvoorbeeld een willekeurige sleutel genereren door de opdracht rand -hex 32 te openen.
 
-U kunt [ een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
+U kunt [ een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
 
 ## Basisverificatie {#basic-auth}
 

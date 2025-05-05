@@ -135,4 +135,4 @@ Alle mapbewerkingen zijn toegankelijk via de selectieactiebalk in de overzichtsw
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u hebt geleerd hoe te om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw as a Cloud Service reis van Screens door het document [ opnieuw te bekijken Toewijzend Kanaal aan een Vertoning in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html) moeten voortzetten.
+Nu, dat u hebt geleerd hoe te om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw as a Cloud Service reis van Screens door het document [ opnieuw te bekijken Toewijzend Kanaal aan een Vertoning in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=nl-NL) moeten voortzetten.

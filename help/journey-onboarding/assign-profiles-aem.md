@@ -115,5 +115,5 @@ Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de in
 
 * [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
 * [ het Leiden Producten en de Toegang van de Gebruiker in Admin Console ](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - leer hoe te om Admin Console te gebruiken om gebruikstoegang te beheren.
-* [ het Vormen toegang tot AEM lopen-door ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Check uit dit verkorte looppas-hoewel om over het vormen van gebruikers IMS van Adobe, gebruikersgroepen, en productprofielen in Admin Console te leren.
+* [ het Vormen toegang tot AEM lopen-door ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=nl-NL) - Check uit dit verkorte looppas-hoewel om over het vormen van gebruikers IMS van Adobe, gebruikersgroepen, en productprofielen in Admin Console te leren.
 

@@ -150,7 +150,7 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
    * `email`
    * `profile`
 1. Een OSGI-eigenschappenbestand maken `called com.day.cq.mailer.DefaultMailService.cfg.json`
-onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [ e-mailleerprogramma van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
+onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [ e-mailleerprogramma van de Dienst ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
 
    ```
    {

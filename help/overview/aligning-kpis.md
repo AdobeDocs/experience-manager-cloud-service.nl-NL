@@ -17,8 +17,8 @@ ht-degree: 0%
 >id="aemcloud_alignkpis"
 >title="KPI&#39;s uitlijnen"
 >abstract="In een digitale wereld kun je bijna alles meten. Het kiezen van juiste KPIs voor uw implementatie van Adobe Experience Manager helpt uw team zich op te concentreren wat het belangrijkst is."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="KPI&#39;s evalueren"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="Het juiste team kiezen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=nl-NL" text="KPI&#39;s evalueren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=nl-NL" text="Het juiste team kiezen"
 
 In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor uw Adobe Experience Manager-implementatie, helpt u uw team zich te richten op wat het belangrijkst is.
 
@@ -42,4 +42,4 @@ In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor
 
 >[!TIP]
 >
->[**Download het malplaatje van Methodologie KPI** ](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**Download het malplaatje van Methodologie KPI** ](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=nl-NL)

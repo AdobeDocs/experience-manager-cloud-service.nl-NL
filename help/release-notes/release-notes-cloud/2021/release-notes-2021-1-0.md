@@ -76,7 +76,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.1.0 is 14 janu
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en ondersteunt ook een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) om meer over deze stop te leren.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en ondersteunt ook een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=nl-NL#benefits) om meer over deze stop te leren.
 
 * Indexconverter is een hulpprogramma waarmee de aangepaste OAK-indexdefinities van een klant kunnen worden getransformeerd naar OAK-compatibele indexdefinities. Zie [ Omzetter van de Index ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
 
@@ -90,7 +90,7 @@ De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.1.0 is 14 janu
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Server-aan-server voor authentiek verklaarde API vraag - produceer de aangewezen toegangstokens om voor authentiek verklaarde server-aan-server API vraag tussen uw externe toepassingen en milieu&#39;s van AEM as a Cloud Service te maken. Leer meer door [ de documentatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) te lezen of door het [ leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) te raadplegen.
+* Server-aan-server voor authentiek verklaarde API vraag - produceer de aangewezen toegangstokens om voor authentiek verklaarde server-aan-server API vraag tussen uw externe toepassingen en milieu&#39;s van AEM as a Cloud Service te maken. Leer meer door [ de documentatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) te lezen of door het [ leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=nl-NL#authentication) te raadplegen.
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
@@ -101,7 +101,7 @@ Voor deze afgifte zijn twee nieuwe analysatoren toegevoegd:
 * herpuntanalyse
 * bundle-nativecode
 
-Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing).
+Voor meer informatie, zie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing).
 
 ## Gereedschappen voor cloudovergang {#code-transition-tools}
 
@@ -111,6 +111,6 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
 ### Nieuwe functies in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System IDs als deel van de activiteit van de inhoudsmigratie. Zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer details.
+* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System IDs als deel van de activiteit van de inhoudsmigratie. Zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=nl-NL) voor meer details.
 * Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
 * Gebruikers mogen bepaalde paden onder `/etc` selecteren bij het maken van migratiesets.

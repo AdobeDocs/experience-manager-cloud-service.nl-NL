@@ -16,12 +16,12 @@ ht-degree: 0%
 
 | Van toepassing op | Artikelkoppeling |
 | -------- | ---------------------------- |
-| Adaptief formulier op basis van kerncomponenten | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| Adaptief formulier op basis van kerncomponenten | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL) |
 | Adaptief formulier op basis van elementaire componenten | Dit artikel |
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en FDM (Form Data Model) waarmee u snel Adaptive Forms kunt gaan maken. U kunt het [ pakket van de verwijzingsinhoud van het portaal van de softwaredistributie downloaden ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en de [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) gebruiken om het [ pakket van de verwijzingsinhoud ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) op uw productie, ontwikkeling, of lokale ontwikkelomgeving te installeren om deze verwijzingsactiva aan uw milieu te krijgen.
 
@@ -129,7 +129,7 @@ U kunt het volgende Model van de Gegevens van de Vorm (FDM) krijgen door het [ i
 * Microsoft® Dynamics 365
 * Salesforce
 
-Voor informatie bij het gebruiken van deze modellen, zie [ Microsoft Dynamics 365 en de wolkendiensten van Salesforce vormen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Voor informatie bij het gebruiken van deze modellen, zie [ Microsoft Dynamics 365 en de wolkendiensten van Salesforce vormen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=nl-NL#configure-dynamics-cloud-service)
 
 
 ## Zie ook {#see-also}

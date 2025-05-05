@@ -105,9 +105,9 @@ U bent nu klaar om de mogelijkheden van AEM te onderzoeken gebruikend uw eigen d
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ creeer Plaats ](/help/sites-cloud/administering/site-creation/create-site.md) - leer hoe te om AEM te gebruiken om een plaats tot stand te brengen gebruikend plaatssjablonen om de stijl en de structuur van uw plaats te bepalen.
 * [ AEM pagina noemende overeenkomsten ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
 * [ AEM Basisbehandeling ](/help/sites-cloud/authoring/basic-handling.md) - onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.
-* [ AEM as a Cloud Service technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - als u reeds een vast begrip van AEM hebt, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ AEM as a Cloud Service technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) - als u reeds een vast begrip van AEM hebt, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ Malplaatjes van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md) - als u meer over de structuur van plaatssjablonen zou willen weten en hoe zij worden gebruikt om plaatsen tot stand te brengen, verwijs naar dit document.

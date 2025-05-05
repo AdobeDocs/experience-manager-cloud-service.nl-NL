@@ -43,7 +43,7 @@ De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is he
 
 Verschil van de AEM SDK, AEM **Koploze SDK** wordt geplaatst van bibliotheken die door cliënten kunnen worden gebruikt om met AEM Koploze APIs over HTTP snel en gemakkelijk in wisselwerking te staan.
 
-Voor meer informatie zie [ AEM Koploze SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+Voor meer informatie zie [ AEM Koploze SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=nl-NL).
 
 ## Aanvullende ontwikkelingsinstrumenten {#additional-development-tools}
 
@@ -113,10 +113,10 @@ Ga uw AEM headless reis door het document [ te herzien hoe te met Uw Zwaarloze T
 ## Aanvullende bronnen {#additional-resources}
 
 * [De SDK van AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [ opstelling een Lokale AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [ opstelling een Lokale AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL)
 * [ AEM Koploze SDK voor cliënt-zijbrowsers (JavaScript) ](https://github.com/adobe/aem-headless-client-js)
 * [ AEM Headless SDK voor server-side/Node.js (JavaScript) ](https://github.com/adobe/aem-headless-client-nodejs)
 * [ AEM Headless SDK voor Java™ ](https://github.com/adobe/aem-headless-client-java)
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
-* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

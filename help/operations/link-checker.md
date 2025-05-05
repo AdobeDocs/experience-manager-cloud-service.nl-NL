@@ -36,7 +36,7 @@ De controleur van de Verbinding bevestigt zowel [ interne verbindingen ](#intern
 Interne koppelingen zijn koppelingen naar andere inhoud in uw AEM-opslagplaats. Interne koppelingen kunnen worden toegevoegd met de padkiezer, de teksteditor met tekstopmaak of met een aangepaste component. Bijvoorbeeld:
 
 * U maakt de pagina `/content/wknd/us/en/adventures/ski-touring`
-* Die pagina bevat een verbinding aan `/content/wknd/us/en/adventures/extreme-ironing` in de Component van de Tekst van a [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* Die pagina bevat een verbinding aan `/content/wknd/us/en/adventures/extreme-ironing` in de Component van de Tekst van a [.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/text)
 
 Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een dergelijke koppeling aan een pagina toevoegt. Als de koppeling ongeldig wordt:
 
@@ -52,7 +52,7 @@ Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een dergeli
 Externe koppelingen zijn koppelingen naar inhoud buiten uw AEM-opslagplaats. Externe koppelingen kunnen worden toegevoegd met de teksteditor met opmaak of met een aangepaste component. Bijvoorbeeld:
 
 * U maakt de pagina `/content/wknd/us/en/adventures/ski-touring`
-* Die pagina bevat een verbinding aan `https://bunwarmerthermalunderwear.com` in de Component van de Tekst van a [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* Die pagina bevat een verbinding aan `https://bunwarmerthermalunderwear.com` in de Component van de Tekst van a [.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/text)
 
 Externe koppelingen worden gevalideerd voor syntaxis en door de beschikbaarheid ervan te controleren. Deze controle wordt asynchroon gedaan bij een configureerbaar interval. Als de koppelingencontrole een externe koppeling ongeldig vindt:
 

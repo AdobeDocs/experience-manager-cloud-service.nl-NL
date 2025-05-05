@@ -21,8 +21,8 @@ Leer hoe IP de Lijsten van gewenste personen kunnen beperken waarvan de adressen
 >id="aemcloud_golive_ipallowlist"
 >title="IP-Lijsten van gewenste personen beheren"
 >abstract="AEM as a Cloud Service is via internet toegankelijk en wordt beveiligd door gebruikersverificatie en autorisatie. De Lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts vertrouwde op IP adressen te beperken en te controleren. Cloud Manager-gebruikers met de juiste machtigingen kunnen lijsten van gewenste personen met vertrouwde IP-adressen maken, waarmee de gebruikers van hun site toegang hebben tot hun AEM-domeinen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Een IP-Lijst van gewenste personen toevoegen"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="Een IP-Lijst van gewenste personen weergeven en bijwerken"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Een IP-Lijst van gewenste personen toevoegen"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="Een IP-Lijst van gewenste personen weergeven en bijwerken"
 
 ## Overzicht {#overview}
 

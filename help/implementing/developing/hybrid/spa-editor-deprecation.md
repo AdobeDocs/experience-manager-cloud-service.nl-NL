@@ -50,7 +50,7 @@ De meest geschikte vervanging voor de Redacteur van het KUUROORD hangt van uw pr
 
 * **[de Universele Redacteur](/help/edge/wysiwyg-authoring/authoring.md)** is de beste directe vervanging voor de Redacteur van het KUUROORD.
    * De Universele Redacteur is ook een visuele redacteur en werd ontworpen specifiek voor losgemaakte implementaties, die alle ervaring van Adobe van de Redacteur van het KUUROORD opnemen.
-   * De Universele Redacteur is ook [ vrijgegeven voor AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (met versie 2024.11.05 van AEM 6.5) en steunt daarom AMS en op-prem gebruiksgevallen naast de Diensten van de Wolk.
+   * De Universele Redacteur is ook [ vrijgegeven voor AEM 6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (met versie 2024.11.05 van AEM 6.5) en steunt daarom AMS en op-prem gebruiksgevallen naast de Diensten van de Wolk.
 * **[de Redacteur van het Fragment van de Inhoud](/help/assets/content-fragments/content-fragments-managing.md)** is een alternatief voor hen die een op vorm-gebaseerde redacteur verkiezen.
    * De Inhoudsfragmenteditor is het meest geschikt wanneer de inhoud is gestructureerd als Inhoudsfragmenten en niet als pagina&#39;s.
 

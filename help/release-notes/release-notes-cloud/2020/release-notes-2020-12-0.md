@@ -32,7 +32,7 @@ De volgende release (2021.1.0) is 28 januari 2021.
 
 * De mogelijkheden van [!DNL Dynamic Media] zijn nu toegankelijk via AEM [!DNL Sites] op afbeeldingen gebaseerde Core Components. Auteurs kunnen snel componenten configureren voor het gebruik van Voorinstellingen voor afbeeldingen, SmartCrop en Image Modifiers bij het maken van webpagina&#39;s. Zie {de versie van de Componenten 2.13.0 van de Kern van 0} [&#128279;](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [ activa toevoegen gebruikend Desktop app ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
+* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [ activa toevoegen gebruikend Desktop app ](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -66,7 +66,7 @@ De Releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) waar u meer over deze elektrisch toestel kunt leren.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) waar u meer over deze elektrisch toestel kunt leren.
 
 * Indexconverter is een hulpprogramma waarmee de aangepaste Oak-indexdefinities van een klant kunnen worden getransformeerd naar Oak-compatibele indexdefinities. Zie [ Omzetter van de Index ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
 

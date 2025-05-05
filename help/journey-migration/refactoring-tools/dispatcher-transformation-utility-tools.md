@@ -27,13 +27,13 @@ Dispatcher is een Adobe Experience Manager-programma voor caching, ofwel taakver
 >[!NOTE]
 >Dispatcher wordt vooral gebruikt om de respons van een **AEM Publish-instantie** in de cache op te slaan, zodat u sneller kunt reageren en uw gepubliceerde, naar buiten gerichte website beter kunt beveiligen.
 
-Zie [ het Overzicht van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) leren hoe Dispatcher caching uitvoert, documenten terugkeert en het in evenwicht brengen van de Lading uitvoert.
+Zie [ het Overzicht van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) leren hoe Dispatcher caching uitvoert, documenten terugkeert en het in evenwicht brengen van de Lading uitvoert.
 
 ### Configuratie en tests voor Apache en Dispatcher {#dispatcher-configurations-cloud}
 
 Leer hoe u de AEM as a Cloud Service Apache- en Dispatcher-configuraties kunt structureren en hoe u deze lokaal kunt valideren en uitvoeren voordat u ze implementeert in een cloud-omgeving.
 
-Zie [ Dispatcher in de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) voor meer informatie.
+Zie [ Dispatcher in de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=nl-NL) voor meer informatie.
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 

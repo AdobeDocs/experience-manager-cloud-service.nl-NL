@@ -20,9 +20,9 @@ ht-degree: 2%
 
 Voor de ontwikkeling van AEM Commerce-projecten op basis van Commerce integration framework (CIF) voor AEM as a Cloud Service gelden dezelfde regels en beste praktijken als voor andere AEM-projecten op AEM as a Cloud Service. Lees eerst het volgende:
 
-- [AEM-projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
+- [AEM-projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL)
+- [Ontwikkelingsrichtlijnen voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL)
 
 ## Lokale ontwikkeling met AEM as a Cloud Service SDK {#local}
 
@@ -32,13 +32,13 @@ Een lokale ontwikkelomgeving wordt aanbevolen voor het werken met CIF-projecten.
 
 De CIF Add-On wordt geleverd als een archief met verkoopfuncties. Het ZIP-bestand dat beschikbaar is op de portal Softwaredistributie bevat twee Sling Feature-archiefbestanden: een voor AEM-auteur en een voor AEM-publicatie-exemplaren.
 
-**Nieuw aan AEM as a Cloud Service?** Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw aan AEM as a Cloud Service?** Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL).
 
 ### Vereiste software
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#download-the-aem-as-a-cloud-service-sdk)
 - [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
 - [ Node.js v10+ ](https://nodejs.org/en)
@@ -85,7 +85,7 @@ Ga als volgt te werk voor lokale ontwikkeling van de invoegtoepassing CIF met AE
 
    Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien bevat de invoegtoepassing CIF een lokale reverse-proxy waarmee het Commerce GraphQL-eindpunt lokaal beschikbaar wordt gemaakt. Deze proxy wordt gebruikt door de CIF-ontwerpgereedschappen (productconsole en kiezers) en voor de CIF-clientcomponenten die directe GraphQL-aanroepen uitvoeren.
 
-   Deze variabele moet ook voor de AEM as a Cloud Service-omgeving worden ingesteld. Voor meer informatie over variabelen, zie [ het Vormen OSGi voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Deze variabele moet ook voor de AEM as a Cloud Service-omgeving worden ingesteld. Voor meer informatie over variabelen, zie [ het Vormen OSGi voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#local-development).
 
 1. (Optioneel) Als u niet-actieve catalogusfuncties wilt inschakelen, moet u een integratietoken maken voor uw Adobe Commerce-instantie. Volg de stappen bij [ Begonnen het worden ](./getting-started.md#staging) om het teken tot stand te brengen.
 
@@ -95,7 +95,7 @@ Ga als volgt te werk voor lokale ontwikkeling van de invoegtoepassing CIF met AE
    Authorization: Bearer <Access Token>
    ```
 
-   Voor meer informatie over geheimen, zie [ Vormend OSGi voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Voor meer informatie over geheimen, zie [ Vormend OSGi voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=nl-NL#local-development).
 
 1. AEM as a Cloud Service SDK starten
 

@@ -21,7 +21,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -47,7 +47,7 @@ Bekijk de video Overzicht van de release van mei 2022 voor een overzicht van de 
 
 * [ de Slimme Beeldvorming van Dynamic Media ](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) steunt nu AVIF dossierformaat - verbetert verder de Vital van de Kern van Google (de Grootste Inhoudelijke Verf), met AVIF die 20% extra groottevermindering over WebP verstrekken. In totaal kan AVIF tot 41% reductie van gemiddelde grootte bieden in vergelijking met JPEG (in sommige afbeeldingen zelfs tot 76%).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] voert nu elke 12 uur automatische taken uit om alle Brand Portal-elementen te verwijderen die naar AEM worden gepubliceerd. U hoeft daarom de middelen in de map Contribution niet handmatig te verwijderen om de mapgrootte onder de drempelwaarde te houden. Zie [ wat in Experience Manager Assets Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html) nieuw is.
+* [!UICONTROL Experience Manager Assets Brand Portal] voert nu elke 12 uur automatische taken uit om alle Brand Portal-elementen te verwijderen die naar AEM worden gepubliceerd. U hoeft daarom de middelen in de map Contribution niet handmatig te verwijderen om de mapgrootte onder de drempelwaarde te houden. Zie [ wat in Experience Manager Assets Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL) nieuw is.
 
 ### Nieuwe functies beschikbaar in [!DNL Assets] prereleasekanaal {#prerelease-features-assets}
 

@@ -20,7 +20,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -35,7 +35,7 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 * [ API Verdringing ](/help/release-notes/deprecated-removed-features.md): een lijst van recentste verouderde APIs voor AEM as a Cloud Service is beschikbaar.
 
-* [ AEM as a Cloud Service SDK bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw beproefde projecten aan de recentste versie bij, die een verouderde controle van Java API en andere verbeteringen omvat.
+* [ AEM as a Cloud Service SDK bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL): Werk uw beproefde projecten aan de recentste versie bij, die een verouderde controle van Java API en andere verbeteringen omvat.
 
 ## [!DNL Adobe Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 

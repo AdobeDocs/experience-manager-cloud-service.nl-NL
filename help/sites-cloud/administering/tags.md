@@ -36,7 +36,7 @@ Tags bieden robuuste functies voor het ordenen en beheren van inhoud.
    * Deze taxonomieën zijn wereldwijd in AEM.
 * Tags kunnen door auteurs worden toegepast en door sitebezoekers worden gebruikt.
 * Ongeacht de maker van de tags worden alle typen tags beschikbaar gemaakt voor selectie, zowel bij het toewijzen aan een pagina als bij het zoeken.
-* De markeringen worden gebruikt door de [ Component van de Lijst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) om dynamische lijsten te produceren die op de geselecteerde markeringen worden gebaseerd.
+* De markeringen worden gebruikt door de [ Component van de Lijst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=nl-NL) om dynamische lijsten te produceren die op de geselecteerde markeringen worden gebaseerd.
 
 ## Tagvereisten {#requirements}
 

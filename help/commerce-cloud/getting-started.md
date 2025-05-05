@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aan de slag met AEM Commerce as a Cloud Service {#start}
 
-Als u aan de slag wilt met Adobe Experience Manager (AEM) Commerce as a Cloud Service, moet uw Experience Manager Cloud Service zijn ingericht met de invoegtoepassing Commerce integration framework (CIF). CIF toe:voegen-op is een extra module bovenop [ as a Cloud Service van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Als u aan de slag wilt met Adobe Experience Manager (AEM) Commerce as a Cloud Service, moet uw Experience Manager Cloud Service zijn ingericht met de invoegtoepassing Commerce integration framework (CIF). CIF toe:voegen-op is een extra module bovenop [ as a Cloud Service van AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=nl-NL).
 
 ## Onboarding {#onboarding}
 
@@ -29,7 +29,7 @@ De instapprocedure voor AEM Commerce as a Cloud Service bestaat uit twee stappen
 
 De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
-Nadat u de invoegtoepassing CIF hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Voor meer details, zie [ Opstelling uw Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Nadat u de invoegtoepassing CIF hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Voor meer details, zie [ Opstelling uw Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=nl-NL).
 
 De tweede stap is zelfbediening voor elke AEM as a Cloud Service-omgeving. Er zijn enkele aanvullende configuraties die u moet uitvoeren na de eerste provisioning van de CIF-invoegtoepassing.
 
@@ -70,7 +70,7 @@ Ga als volgt te werk als u AEM via Adobe I/O CLI wilt verbinden met een handelso
 
 1. De Adobe I/O CLI wordt geleverd met de Cloud Manager-insteekmodule
 
-   Controleer de [ documentatie van Cloud Manager van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) op hoe te om, opstelling te downloaden, en [ CLI van Adobe I/O ](https://github.com/adobe/aio-cli) met de [ stop van Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager) te gebruiken.
+   Controleer de [ documentatie van Cloud Manager van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL) op hoe te om, opstelling te downloaden, en [ CLI van Adobe I/O ](https://github.com/adobe/aio-cli) met de [ stop van Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager) te gebruiken.
 
 2. De Adobe I/O CLI verifiëren met het AEM as a Cloud Service-programma
 

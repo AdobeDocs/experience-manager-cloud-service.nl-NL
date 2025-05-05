@@ -24,7 +24,7 @@ In deze video wordt uitgelegd hoe een AEM site is geïntegreerd met Experience P
 
 ## Vereisten
 
-De automatiseringsopstelling wordt ontworpen om uit de doos met een AEMPlaats te werken die gebruikend [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) met de [ toegelaten Gegevens van de Cliënt van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) wordt gebouwd. U kunt een nieuwe plaats produceren die deze eigenschappen heeft die automatisch gebruikend het [ AEM Archieftype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) worden toegelaten of door een plaats te creëren gebruikend a [ malplaatje van de Plaats ](/help/journey-sites/quick-site/create-site.md).
+De automatiseringsopstelling wordt ontworpen om uit de doos met een AEMPlaats te werken die gebruikend [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) met de [ toegelaten Gegevens van de Cliënt van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL) wordt gebouwd. U kunt een nieuwe plaats produceren die deze eigenschappen heeft die automatisch gebruikend het [ AEM Archieftype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) worden toegelaten of door een plaats te creëren gebruikend a [ malplaatje van de Plaats ](/help/journey-sites/quick-site/create-site.md).
 
 ## Vereisten {#prerequisites}
 
@@ -51,7 +51,7 @@ De omgeving moet nu gereed zijn voor Experience Cloud Setup Automation.
 1. Selecteer **integreren Analytics** knoop.
 1. In de resulterende dialoog, verstrek een naam voor **identiteitskaart van de Reeks van het Rapport**.
 
-   Dit koord wordt gebruikt om identiteitskaart van de Reeks van het a [ Rapport ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) in Adobe Analytics als gegevensopslag voor de analysegegevens voor de geselecteerde plaats van de AEM te creëren. De opgegeven tekenreeks wordt toegevoegd met omgeving- en tier-id&#39;s om ervoor te zorgen dat deze uniek zijn.
+   Dit koord wordt gebruikt om identiteitskaart van de Reeks van het a [ Rapport ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=nl-NL) in Adobe Analytics als gegevensopslag voor de analysegegevens voor de geselecteerde plaats van de AEM te creëren. De opgegeven tekenreeks wordt toegevoegd met omgeving- en tier-id&#39;s om ervoor te zorgen dat deze uniek zijn.
 
 1. Vernieuw de pagina en het paneel en selecteer **de Status van de Integratie van de Controle** om de status van de automatisering te controleren.
 

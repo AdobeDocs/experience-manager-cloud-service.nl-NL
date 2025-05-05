@@ -23,7 +23,7 @@ ht-degree: 30%
 
 Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de Analysator van Beste praktijken (BPA) te begrijpen:
 
-* Het BPA- rapport wordt gebouwd gebruikend de output van de Detector van het Patroon van Adobe Experience Manager (AEM) [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). De versie van de Detector van het Patroon die door BPA wordt gebruikt is inbegrepen in het BPA installatiepakket.
+* Het BPA- rapport wordt gebouwd gebruikend de output van de Detector van het Patroon van Adobe Experience Manager (AEM) [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=nl-NL). De versie van de Detector van het Patroon die door BPA wordt gebruikt is inbegrepen in het BPA installatiepakket.
 
 * BPA kan slechts door de **admin** gebruiker of een gebruiker in de **beheerders** groep worden in werking gesteld.
 
@@ -166,8 +166,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Het rapport met de analyse van best practices interpreteren"
 >abstract="Er zijn twee opties om BPA- rapportoutput te bekijken: UI en CSV. Wanneer het hulpmiddel van de Analysator van Beste praktijken in de instantie van AEM in werking wordt gesteld, wordt het rapport UI getoond als resultaten in het hulpmiddelvenster. De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de uitvoer van de patroondetector, gesorteerd en ingedeeld op categorietype, subtype en belangrijkheidsniveau."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Rapport Analyse van beste praktijken"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="De categorieën van het Rapport van de Analyse van Beste praktijken begrijpen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=nl-NL#analysis-report" text="Rapport Analyse van beste praktijken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=nl-NL" text="De categorieën van het Rapport van de Analyse van Beste praktijken begrijpen"
 
 Wanneer het hulpmiddel van de Analysator van Beste praktijken in de instantie van AEM in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
 
@@ -184,7 +184,7 @@ Het rapport is als volgt ingedeeld:
 Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie.
 
 >[!NOTE]
->Meer over elke het Vinden Categorie leren, zie {de Categorieën van de Detector van 0} Patroon [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Meer over elke het Vinden Categorie leren, zie {de Categorieën van de Detector van 0} Patroon [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=nl-NL).
 
 Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 
@@ -286,8 +286,8 @@ De waarde van deze eigenschap is de levensduur van de cache in seconden. Een beh
 
 BPA gebruikt een gebruikersaccount voor systeemservices met de naam `repository-reader-service` om de Patroondetector uit te voeren. Dit account is beschikbaar op AEM 6.2 en hoger. Op AEM 6.1, moet deze rekening *voorafgaand aan* installatie van BPA worden gecreeerd door de volgende stappen te nemen:
 
-1. Volg de instructies bij het [Nieuwe servicegebruiker maken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) om een gebruiker te maken. Stel de UserID in op `repository-reader-service` en laat het tussenpad leeg en klik op het groene vinkje.
+1. Volg de instructies bij het [Nieuwe servicegebruiker maken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=nl-NL#creating-a-new-service-user) om een gebruiker te maken. Stel de UserID in op `repository-reader-service` en laat het tussenpad leeg en klik op het groene vinkje.
 
-2. Volg de instructies bij [Gebruikers en groepen beheren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), met name de instructies voor het toevoegen van gebruikers aan een groep om de `repository-reader-service`-gebruiker aan de groep `administrators` toe te voegen.
+2. Volg de instructies bij [Gebruikers en groepen beheren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL#managing-users-and-groups), met name de instructies voor het toevoegen van gebruikers aan een groep om de `repository-reader-service`-gebruiker aan de groep `administrators` toe te voegen.
 
 3. Installeer het BPA-pakket via Package Manager op uw AEM-bronexemplaar. (Dit zal de noodzakelijke configuratiewijziging toevoegen aan de ServiceUserMapper-configuratie voor de gebruiker van de `repository-reader-service`-systeemservicegebruiker.)

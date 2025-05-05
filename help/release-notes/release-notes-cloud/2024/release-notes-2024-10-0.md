@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Cont
 
 * [ auto-sparen een ontwerp voor de Componenten van de Kern baseerde Adaptieve Forms ](/help/forms/save-core-component-based-form-as-draft.md): De gebruikers kunnen nu van een auto-sparen eigenschap profiteren die een gedeeltelijk voltooide vorm als ontwerp automatisch opslaat. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
-* [ het werkingsgebied van het Ondertekenen van Adobe van de Update gemakkelijk ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): U kunt het werkingsgebied van een configuratie van het Ondertekenen van Adobe direct van de pagina van de Configuraties van de Wolk van AEM wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
+* [ het werkingsgebied van het Ondertekenen van Adobe van de Update gemakkelijk ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): U kunt het werkingsgebied van een configuratie van het Ondertekenen van Adobe direct van de pagina van de Configuraties van de Wolk van AEM wijzigen, makend het sneller en gemakkelijker om bestaande configuraties bij te werken.
 
 * [ Asynchrone functiesteun voor Adaptieve Forms ](/help/forms/using-async-funct-in-rule-editor.md): Wanneer uw Aanpassings Vorm asynchrone verrichtingen, zoals het wachten op externe processen of gegevensherwinning vereist, kunt u deze verrichtingen met douanefuncties uitvoeren en hen vormen in de Redacteur van de Regel.
 
@@ -120,7 +120,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 #### AEM Forms AI Assistant
 
-[ Generatieve AI voor Aanpassings Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) brengt een geheel nieuw niveau van macht en gemak aan uw processen van de vormontwikkeling. Hierdoor kunt u sneller dan ooit betere formulieren maken.
+[ Generatieve AI voor Aanpassings Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) brengt een geheel nieuw niveau van macht en gemak aan uw processen van de vormontwikkeling. Hierdoor kunt u sneller dan ooit betere formulieren maken.
 
 ![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
 
@@ -194,7 +194,7 @@ Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Co
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -214,4 +214,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.

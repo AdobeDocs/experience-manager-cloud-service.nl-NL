@@ -41,7 +41,7 @@ AEM as a Cloud Service houdt zich aan de nieuwste best practices voor pakketbehe
 
 >[!TIP]
 >
->Zie het [ AEM artikel van de Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de documentatie van AEM as a Cloud Service en de [ AEM documentatie van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Beide worden volledig ondersteund voor AEM 6.5.
+>Zie het [ AEM artikel van de Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) in de documentatie van AEM as a Cloud Service en de [ AEM documentatie van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL). Beide worden volledig ondersteund voor AEM 6.5.
 
 ## De insteekmodule voor het inhoudspakket verkrijgen {#obtaining-the-content-package-maven-plugin}
 
@@ -215,4 +215,4 @@ De nieuwste AEM Project Archetype implementeert de pakketstructuur met best prac
 
 >[!TIP]
 >
->Zie het [ AEM artikel van de Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de documentatie van AEM as a Cloud Service en de [ AEM documentatie van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Beide worden volledig ondersteund voor AEM 6.5.
+>Zie het [ AEM artikel van de Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) in de documentatie van AEM as a Cloud Service en de [ AEM documentatie van het Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL). Beide worden volledig ondersteund voor AEM 6.5.

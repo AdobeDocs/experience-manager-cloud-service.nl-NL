@@ -75,7 +75,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Dynamische mediaconfiguratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. In Experience Manager as a Cloud Service selecteert u het Experience Manager as a Cloud Service-logo voor toegang tot de algemene navigatieconsole.
 1. Selecteer links van de console het pictogram Gereedschappen en ga naar **[!UICONTROL Cloud Services > Dynamic Media Configuration]** .
@@ -133,7 +133,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Voor een veilige voorvertoning van dynamische media-inhoud voordat deze wordt gepubliceerd, gebruikt Experience Manager as a Cloud Service een op token gebaseerde validatie en daarom geeft Experience Manager Author standaard een voorvertoning weer van dynamische media-inhoud. Nochtans, kunt u *meer IPs lijsten van gewenste personen* gebruikers toegang tot voorproefinhoud veilig verlenen. Aan opstelling deze actie in Experience Manager as a Cloud Service, zie [ Dynamische Media vormen publiceren Opstelling voor de Server van het Beeld - het lusje van de Veiligheid ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -244,7 +244,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 Met de Dynamic Media Classic-gebruikersinterface kunt u de instellingen voor dynamische media wijzigen.
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), then sign in to your account. -->
 
 De taken van de opstelling en van de configuratie omvatten het volgende:
 
@@ -275,7 +275,7 @@ Zie [ Beeld vormen vooraf instelt ](/help/assets/dynamic-media/managing-image-pr
 
 De standaardkleureigenschappen configureren voor het inschakelen van kleurcorrectie bij het aanvragen van afbeeldingen:
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), dan login aan uw rekening gebruikend geloofsbrieven die tijdens levering worden verstrekt.
+1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), dan login aan uw rekening gebruikend geloofsbrieven die tijdens levering worden verstrekt.
 1. Ga naar **[!UICONTROL Setup > Application Setup]** .
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u moet wijzigen, bijvoorbeeld een eigenschap in het gebied **[!UICONTROL Color Management Attributes]** .

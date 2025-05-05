@@ -64,7 +64,7 @@ De schakelaars zouden aan deze verpakkingsrichtlijnen moeten houden, die onder [
 
 Daarnaast moet alleen Adobe code schrijven naar `/libs` , met klanten en partners die schrijven naar `/apps` .
 
-Het kan ook zijn dat bestaande connectors opnieuw moeten worden bekeken om een configuratie te verplaatsen die ooit `/etc` in andere mappen op het hoogste niveau is geplaatst, zoals `/conf` . Deze herstructurering werd gedaan als deel van AEM 6.5 en wordt beschreven in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/repository-restructuring).
+Het kan ook zijn dat bestaande connectors opnieuw moeten worden bekeken om een configuratie te verplaatsen die ooit `/etc` in andere mappen op het hoogste niveau is geplaatst, zoals `/conf` . Deze herstructurering werd gedaan als deel van AEM 6.5 en wordt beschreven in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/restructuring/repository-restructuring).
 
 Adobe raadt u aan de meeste connectorcode onder `/apps/connectors/<vendor>` te plaatsen om een schone opslagplaats te behouden, vooral voor klanten die meerdere connectors gebruiken.
 

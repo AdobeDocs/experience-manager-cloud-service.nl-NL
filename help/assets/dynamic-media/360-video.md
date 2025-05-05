@@ -22,7 +22,7 @@ Met de 360/VR-videoviewer kunt u rechthoekige video renderen. Het resultaat is e
 
 Ruimtelijke audio wordt momenteel niet ondersteund. Als audio in stereo wordt gemengd, verandert de balans (L/R) niet omdat de klant de kijkhoek van de camera wijzigt.
 
-Zie [ Gebruikend Dynamische Media 360 Video&#39;s en de Videominiatuur van de Douane met AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+Zie [ Gebruikend Dynamische Media 360 Video&#39;s en de Videominiatuur van de Douane met AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=nl-NL#dynamic-media).
 
 Zie ook [ het Leiden Kijker stelt ](/help/assets/dynamic-media/managing-viewer-presets.md) vooraf in.
 
@@ -37,7 +37,7 @@ Selecteer [ Post 360 van de Ruimte ](https://s7d1.scene7.com/s7viewers/html5/Vid
 
 Met Adobe Premier Pro kunt u 360/VR-beeldmateriaal weergeven en bewerken. U kunt bijvoorbeeld logo&#39;s en tekst op de juiste wijze in een scène plaatsen en effecten en overgangen toepassen die specifiek zijn ontworpen voor rechthoekige media.
 
-Zie [ video 360/VR ](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html) uitgeven.
+Zie [ video 360/VR ](https://helpx.adobe.com/nl/premiere-pro/how-to/edit-360-vr-video.html) uitgeven.
 
 ## Elementen uploaden voor gebruik met de 360-videoviewer {#uploading-assets-for-use-with-the-video-viewer}
 

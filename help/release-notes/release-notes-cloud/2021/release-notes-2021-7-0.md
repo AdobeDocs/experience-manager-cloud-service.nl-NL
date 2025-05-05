@@ -21,7 +21,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -85,21 +85,21 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* U kunt de dienst van de Automatede form conversion aan [ nu gebruiken zet PDF forms in het Frans, Duits, en Spaans taal ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in aanpassingsvormen om.
+* U kunt de dienst van de Automatede form conversion aan [ nu gebruiken zet PDF forms in het Frans, Duits, en Spaans taal ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=nl-NL&#language-specific-meta-model) in aanpassingsvormen om.
 * Er is een apart deelvenster toegevoegd aan de sjablooneditor om fouten weer te geven met betrekking tot adaptieve formuliercomponenten. Hiermee kunt u alle adaptieve formulierfouten op één locatie consolideren en de resolutietijd verminderen.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) hulp u XDP malplaatjes en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=nl-NL) hulp u XDP malplaatjes en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
 
 * **Variabele die Extern van Gegevens**: U kunt gegevens van AEM variabelen van het Werkschema op een extern opslagsysteem bewaren door uw organisatie wordt geleid.
 
-* **op acroform-Gebaseerd Document van Verslag**: U kunt ook [ de Vorm van Adobe Acrobat PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje gebruiken.
+* **op acroform-Gebaseerd Document van Verslag**: U kunt ook [ de Vorm van Adobe Acrobat PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje gebruiken.
 
-* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
+* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=nl-NL) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
 
 ## CIF invoegtoepassing {#cloud-services-cif}
 
@@ -191,7 +191,7 @@ De releasedatum voor Cloud Acceleration Manager is 15 juli 2021.
 
 ### Nieuwe functies {#what-is-new-cam}
 
-Cloud Acceleration Manager is een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan van de Cloud Service. Stel uw team in voor een geslaagde migratie met aanbevolen Adobe procedures, tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service. Leer meer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan van de Cloud Service. Stel uw team in voor een geslaagde migratie met aanbevolen Adobe procedures, tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service. Leer meer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=nl-NL).
 
 >[!NOTE]
 >

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Wizard Project maken {#project-creation-wizard}
 
-Nadat u uw productieprogramma creeert, biedt de Manager van de Wolk een tovenaar aan om een minimaal AEM project tot stand te brengen dat op [ wordt gebaseerd AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om uw begonnen snel te krijgen.
+Nadat u uw productieprogramma creeert, biedt de Manager van de Wolk een tovenaar aan om een minimaal AEM project tot stand te brengen dat op [ wordt gebaseerd AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) om uw begonnen snel te krijgen.
 
 Voer de volgende stappen uit om een AEM toepassingsproject te maken in Cloud Manager met de wizard.
 

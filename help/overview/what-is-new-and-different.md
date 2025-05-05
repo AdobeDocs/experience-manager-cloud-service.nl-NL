@@ -38,7 +38,7 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Voor meer details op de Versies van de Dienst Op locatie en Beheerde, zie [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html).
+>Voor meer details op de Versies van de Dienst Op locatie en Beheerde, zie [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL).
 
 ## Architectuur {#architecture}
 
@@ -272,7 +272,7 @@ Zie voor meer informatie:
 * [Opvallende wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Opvallende wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introductie van AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=nl-NL)
 
 >[!TIP]
 >

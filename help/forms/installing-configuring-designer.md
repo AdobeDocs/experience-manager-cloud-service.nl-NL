@@ -17,7 +17,7 @@ ht-degree: 1%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=nl-NL) |
 
 Designer is een toepassing waarmee u eenvoudig grafische formulieren kunt ontwerpen en waarmee u eenvoudig XDP- en PDF-formuliersjablonen kunt maken. U kunt een formuliersjabloon ontwerpen, de logica ervan definiëren en aan strikte wettelijke vereisten voldoen. Een XDP- en PDF-formulier fungeren als een Document of Record-sjabloon in een adaptief formulier. Deze vormenmalplaatjes zijn verschillend van [ Aangepaste malplaatjes van de Vorm ](template-editor.md).
 

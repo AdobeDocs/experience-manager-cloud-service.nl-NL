@@ -484,7 +484,7 @@ Gebruik de geavanceerde montages om te bepalen wat **gebeurt nadat** een gebruik
 | Aantal stappen, Gebruiker vrijgeven en Opnieuw invoeren toestaan | Selecteer de ervaring die de bezoeker ziet als hij of zij de activiteit opnieuw betreedt: Zelfde ervaring, Willekeurige ervaring, Onzichtbare ervaring |
 | Aantal verhogende, Gebruiker van de Versie en de Heringang van de Bar | Bepaal wat de gebruiker ziet in plaats van de inhoud van de activiteit: Zelfde ervaring, zonder het volgen, Standaard inhoud of andere activiteiteninhoud |
 
-Zie {de documentatie van 0} Adobe Target [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.
+Zie {de documentatie van 0} Adobe Target [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL) voor meer informatie over succesmetriek.
 
 ### Instellingen configureren (AEM gericht) {#configuring-settings-aem-targeting}
 
@@ -523,13 +523,13 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
    ![ Meldende bron ](../assets/targeted-reporting-source.png)
 
-1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) over metrische data voor succes.
+1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL) over metrische data voor succes.
 
    U kunt de naam van het doel wijzigen door op de drie stippen in de rechterbovenhoek te klikken en **Naam wijzigen** te selecteren.
 
    Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u **Alle velden wissen**.
 
-   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde Montages** om tot die toegang te hebben. Zie definitie van hoe de succesmetriek in vorige lijst worden geteld en [ documentatie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) zien.
+   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde Montages** om tot die toegang te hebben. Zie definitie van hoe de succesmetriek in vorige lijst worden geteld en [ documentatie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL) zien.
 
    >[!NOTE]
    >

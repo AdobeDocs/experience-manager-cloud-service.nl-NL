@@ -54,7 +54,7 @@ Voor het instappen van een nieuw project moet in het projectbestand Maven van de
 
 ![ diagram van het Werkschema ](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-De bewaarplaats van het Git voor elk wordt opstelling gebruikend [ AEM Archetype van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) en volgt zo de beste praktijken voor vestiging AEM Projecten. De enige uitzondering hierop is de Dispatcher-configuratie, die wordt uitgevoerd in de gedeelde Git-opslagplaats, zoals hierboven beschreven.
+De bewaarplaats van het Git voor elk wordt opstelling gebruikend [ AEM Archetype van het Project ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview) en volgt zo de beste praktijken voor vestiging AEM Projecten. De enige uitzondering hierop is de Dispatcher-configuratie, die wordt uitgevoerd in de gedeelde Git-opslagplaats, zoals hierboven beschreven.
 
 Elk team gebruikt een vereenvoudigde Git-workflow met twee vertakkingen + N, volgens het Git-flowmodel:
 
@@ -93,7 +93,7 @@ Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoe
 
 >[!TIP]
 >
->Zie [ het Werk met de Veelvoudige Opslagplaatsen van de Plaats van de it van Source ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) om meer over deze opstelling te leren.
+>Zie [ het Werk met de Veelvoudige Opslagplaatsen van de Plaats van de it van Source ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) om meer over deze opstelling te leren.
 
 ### Overwegingen bij de installatie van meerdere teams {#considerations}
 

@@ -22,11 +22,11 @@ Op deze pagina wordt ook beschreven hoe de Dispatcher-cache ongeldig wordt gemaa
 
 Het in cache plaatsen van HTTP-reacties in de CDN van AEM as a Cloud Service wordt bestuurd door de volgende HTTP-responsheaders vanaf de oorsprong: `Cache-Control`, `Surrogate-Control` of `Expires` .
 
-Deze geheim voorgeheugenkopballen worden typisch geplaatst in de gastheerconfiguraties van AEM Dispatcher gebruikend mod_headers, maar kunnen ook in douaneJava™ code worden geplaatst die in AEM loopt publiceren zelf (zie [ hoe te CDN caching ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching) toelaten).
+Deze geheim voorgeheugenkopballen worden typisch geplaatst in de gastheerconfiguraties van AEM Dispatcher gebruikend mod_headers, maar kunnen ook in douaneJava™ code worden geplaatst die in AEM loopt publiceren zelf (zie [ hoe te CDN caching ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching) toelaten).
 
 De geheim voorgeheugensleutel voor middelen CDN bevat het volledige verzoek url, met inbegrip van vraagparameters, zodat zal elke verschillende vraagparameter een verschillende geheim voorgeheugeningang veroorzaken. Overweeg het verwijderen van ongewenste vraagparameters; [ zie hieronder ](#marketing-parameters) voor het verbeteren van de verhouding van de geheim voorgeheugenhit.
 
-Oorspronkelijke reacties die `private`, `no-cache` of `no-store` in `Cache-Control` bevatten, worden niet in de cache geplaatst door de CDN van de AEM as a Cloud Service (zie [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) CDN-caching uitschakelen
+Oorspronkelijke reacties die `private`, `no-cache` of `no-store` in `Cache-Control` bevatten, worden niet in de cache geplaatst door de CDN van de AEM as a Cloud Service (zie [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) CDN-caching uitschakelen
  voor meer informatie).  Reacties die cookies instellen, d.w.z. een `Set-Cookie` reactie header hebben, worden niet in cache geplaatst door de CDN.
 
 ### HTML/Tekst {#html-text}
@@ -54,7 +54,7 @@ Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige af
   ```
 
   >[!NOTE]
-  >De header Surrogate-Control is van toepassing op de door Adobe beheerde CDN. Als het gebruiken van a [ klant-geleide CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw CDN leverancier worden vereist.
+  >De header Surrogate-Control is van toepassing op de door Adobe beheerde CDN. Als het gebruiken van a [ klant-geleide CDN ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=nl-NL#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw CDN leverancier worden vereist.
 
   Wees voorzichtig bij het instellen van algemene cachebeheerkoppen of vergelijkbare cachekoppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé moet houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dat gezegd, verwijdert AEM as a Cloud Service de geheim voorgeheugenkopbal als het ontdekt dat het is toegepast op wat het ontdekt om uncacheable te zijn door Dispatcher, zoals die in de documentatie van Dispatcher wordt beschreven. Als u AEM wilt dwingen om altijd de headers in de cache toe te passen, kunt u de optie **`always`** als volgt toevoegen:
 
@@ -84,13 +84,13 @@ Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige af
     </LocationMatch>
   ```
 
-* Hoewel HTML-inhoud die is ingesteld op privé, niet in de cache wordt opgeslagen op het CDN, kan deze wel in de cache worden opgeslagen bij de Dispatcher als [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is geconfigureerd, zodat alleen geautoriseerde gebruikers de inhoud kunnen krijgen.
+* Hoewel HTML-inhoud die is ingesteld op privé, niet in de cache wordt opgeslagen op het CDN, kan deze wel in de cache worden opgeslagen bij de Dispatcher als [Permission Sensitive Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL) is geconfigureerd, zodat alleen geautoriseerde gebruikers de inhoud kunnen krijgen.
 
   >[!NOTE]
   >De andere methoden, waaronder het [Dispatcher-ttl AEM ACS Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), kunnen waarden niet overschrijven.
 
   >[!NOTE]
-  >De Dispatcher kan nog steeds inhoud cachen volgens zijn eigen [caching-regels](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Als u de inhoud echt privé wilt maken, moet u ervoor zorgen dat deze niet in de cache wordt opgeslagen door de Dispatcher.
+  >De Dispatcher kan nog steeds inhoud cachen volgens zijn eigen [caching-regels](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=nl-NL). Als u de inhoud echt privé wilt maken, moet u ervoor zorgen dat deze niet in de cache wordt opgeslagen door de Dispatcher.
 
 ### Bibliotheken aan de clientzijde (js,css) {#client-side-libraries}
 
@@ -158,7 +158,7 @@ In de AEM-laag wordt blob-inhoud niet standaard in de cache opgeslagen.
 >[!NOTE]
 >Wijzig het oudere standaardgedrag om consistent te zijn met het nieuwe gedrag (programma-id&#39;s die hoger zijn dan 65000) door de Cloud Manager-omgevingsvariabele AEM_BLOB_ENABLE_CACHING_HEADERS in te stellen op true. Als het programma al actief is, controleert u of de inhoud zich na de wijzigingen gedraagt zoals u verwacht.
 
-Nu, kunnen de beelden in blob opslag die duidelijk privé zijn niet in het voorgeheugen ondergebracht bij Dispatcher gebruikend [ Gevoelige Caching van de Toestemming ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). De afbeelding wordt altijd opgevraagd bij de AEM-oorsprong en wordt weergegeven als de gebruiker geautoriseerd is.
+Nu, kunnen de beelden in blob opslag die duidelijk privé zijn niet in het voorgeheugen ondergebracht bij Dispatcher gebruikend [ Gevoelige Caching van de Toestemming ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL). De afbeelding wordt altijd opgevraagd bij de AEM-oorsprong en wordt weergegeven als de gebruiker geautoriseerd is.
 
 >[!NOTE]
 >De andere methodes, met inbegrip van het [ verzender-ttl AEM ACS- Commons project ](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), met succes treden niet de waarden met voeten.
@@ -238,7 +238,7 @@ Nu, kunnen de beelden in blob opslag die duidelijk privé zijn niet in het voorg
 
 ### Analyse van de CDN-cachehitratio {#analyze-chr}
 
-Zie de tutorial[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) over de analyse van de cachehitratio voor informatie over het downloaden van CDN-logboeken en het analyseren van de cache-hitratio&#39;s van uw site, met behulp van een dashboard.
+Zie de tutorial[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=nl-NL) over de analyse van de cachehitratio voor informatie over het downloaden van CDN-logboeken en het analyseren van de cache-hitratio&#39;s van uw site, met behulp van een dashboard.
 
 ### Gedrag van HEAD-aanvragen {#request-behavior}
 
@@ -254,7 +254,7 @@ Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, aan betere g
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-Deze functionaliteit kan worden van een knevel voorzien en van het gebruiken van a `requestTransformations` vlag in [ CDN configuratie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+Deze functionaliteit kan worden van een knevel voorzien en van het gebruiken van a `requestTransformations` vlag in [ CDN configuratie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
 Als u bijvoorbeeld wilt ophouden met het verwijderen van marketingparams op CDN-niveau, moet u `removeMarketingParams: false` implementeren met een config die de volgende sectie bevat.
 
@@ -268,7 +268,7 @@ data:
     removeMarketingParams: false
 ```
 
-Als `removeMarketingParams`-functionaliteit op CDN-niveau is uitgeschakeld, wordt het nog steeds aanbevolen om de eigenschap `ignoreUrlParams` van de Dispatcher-configuratie te configureren; zie [Dispatcher configureren - URL-parameters negeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Als `removeMarketingParams`-functionaliteit op CDN-niveau is uitgeschakeld, wordt het nog steeds aanbevolen om de eigenschap `ignoreUrlParams` van de Dispatcher-configuratie te configureren; zie [Dispatcher configureren - URL-parameters negeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#ignoring-url-parameters).
 
 There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
 
@@ -304,7 +304,7 @@ Like previous versions of AEM, publishing or unpublishing pages clears the conte
 >[!NOTE]
 >Voor een correcte Dispatcher-validatie moet u ervoor zorgen dat aanvragen van &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; en &quot;\*.adobeaemcloud.net&quot; allemaal overeenkomen en worden afgehandeld door een hostconfiguratie zodat de aanvraag kan worden uitgevoerd. U kunt deze taak door globale aanpassing &quot;*&quot;in een catch-all gastheerconfiguratie na het patroon in het referentie [ AEM archetype ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) doen. U kunt er ook voor zorgen dat de eerder vermelde lijst wordt afgevangen door een van de hosts.
 
-Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de Dispatcher ongeldig te maken. De bijgewerkte weg wordt verwijderd uit het geheime voorgeheugen van Dispatcher, samen met zijn ouders, tot een niveau (u kunt dit niveau met [ statfileslevel ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level) vormen).
+Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de Dispatcher ongeldig te maken. De bijgewerkte weg wordt verwijderd uit het geheime voorgeheugen van Dispatcher, samen met zijn ouders, tot een niveau (u kunt dit niveau met [ statfileslevel ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#invalidating-files-by-folder-level) vormen).
 
 ## Expliciete ongeldigmaking van de Dispatcher-cache {#explicit-invalidation}
 
@@ -515,7 +515,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -527,9 +527,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/nl/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/nl/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Client-Side bibliotheken en consistentie van versies {#content-consistency}
 

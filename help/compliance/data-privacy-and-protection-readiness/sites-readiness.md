@@ -78,13 +78,13 @@ Naar Weigeren:
 
 AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Voor meer informatie bij het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Analytics zie [ Adobe Analytics en de Privacy van Gegevens ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+Voor meer informatie bij het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Analytics zie [ Adobe Analytics en de Privacy van Gegevens ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=nl-NL).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites bevat een optionele integratie met Personalization Foundation by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Voor informatie over het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Target zie [ Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Voor informatie over het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Target zie [ Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=nl-NL).
 
 ## ContextHub {#contexthub}
 

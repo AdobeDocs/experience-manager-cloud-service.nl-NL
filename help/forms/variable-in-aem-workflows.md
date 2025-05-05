@@ -15,7 +15,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype. U kunt de naam van de variabele in om het even welke werkschemastap gebruiken om de waarde terug te winnen die in de variabele wordt opgeslagen. U kunt veranderlijke namen ook gebruiken om uitdrukkingen te bepalen voor het nemen van verpletterende besluiten.
@@ -37,7 +37,7 @@ De variabelen zijn een uitbreiding van de bestaande [ MetaDataMap ](https://help
 U maakt variabelen aan de hand van de sectie Variabelen die beschikbaar is in de assistent van het workflowmodel. AEM workflowvariabelen ondersteunen de volgende gegevenstypen:
 
 * **Primitieve gegevenstypes**: Lang, Dubbel, Van Boole, Datum, en Koord
-* **Complexe gegevenstypes**: [ Document ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [ XML ](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [ JSON ](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), en de Modelinstantie van Gegevens van de Vorm.
+* **Complexe gegevenstypes**: [ Document ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [ XML ](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [ JSON ](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), en de Modelinstantie van Gegevens van de Vorm.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ Met de indeling OR wordt een splitsing in de workflow gemaakt, waarna slechts é
 
 U kunt het verpletteren van uitdrukking voor een tak bepalen gebruikend een regeldefinitie, manuscript ECMA, of een extern manuscript.
 
-U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor OF Gesplitste stap, zie [ OF stap Splitsen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#or-split).
+U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor OF Gesplitste stap, zie [ OF stap Splitsen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#or-split).
 
 In dit voorbeeld, alvorens de verpletterende uitdrukking te bepalen, gebruik [ voorbeeld 2 ](variable-in-aem-workflows.md#example2) om de waarde voor de **totalvalue** variabele te plaatsen. Tak 1 is actief als de waarde van de **totalvalue** variabele groter is dan 50000. Op dezelfde manier kunt u een regel bepalen om Tak 2 actief te maken als de waarde van de **totalvalue** variabele minder dan 50000 is.
 
@@ -173,13 +173,13 @@ De **Goto Stap** laat u de volgende stap in het werkschemamodel specificeren uit
 
 Gelijkaardig aan OF de Gesplitste stap, kunt u het verpletteren van uitdrukking voor stap bepalen gebruikend een regeldefinitie, manuscript ECMA, of een extern manuscript.
 
-U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor de stap Ga, zie [ Ga ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#goto-step).
+U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor de stap Ga, zie [ Ga ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#goto-step).
 
 ![ ga naar Regel ](assets/variables_goto_rule1_new.png)
 
 In dit voorbeeld, specificeert de stap van het Ga de Toepassing van de Kaart van het Overzicht als volgende stap als de waarde voor de **genomen actie** variabele gelijk is aan **behoefte meer info**.
 
-Voor meer voorbeelden bij het gebruiken van regeldefinitie in de Goto stap, zie [ Simulerend a voor lijn ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#simulateforloop).
+Voor meer voorbeelden bij het gebruiken van regeldefinitie in de Goto stap, zie [ Simulerend a voor lijn ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=nl-NL#extending-aem?lang=nl-NL#simulateforloop).
 
 #### Forms-centric workflowstappen {#forms-workflow-centric-workflow-steps}
 

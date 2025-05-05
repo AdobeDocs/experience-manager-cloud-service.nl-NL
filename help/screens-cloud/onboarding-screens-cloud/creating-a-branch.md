@@ -16,7 +16,7 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u een vertakking voor uw programma maakt in Cloud Manager.
 
 >[!NOTE]
->Zie [ Gebruikend de Tovenaar in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) leren hoe te om een AEM toepassingsproject in Cloud Manager tot stand te brengen gebruikend de tovenaar.
+>Zie [ Gebruikend de Tovenaar in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=nl-NL) leren hoe te om een AEM toepassingsproject in Cloud Manager tot stand te brengen gebruikend de tovenaar.
 
 ## Doelstelling {#objective}
 

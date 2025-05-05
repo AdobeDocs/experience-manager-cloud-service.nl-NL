@@ -97,7 +97,7 @@ De add-on voor automatisering van inhoud inschakelen voor AEM as a Cloud Service
 1. Klik op **[!UICONTROL Continue]**.
 1. Vouw **[!UICONTROL Assets]** uit en selecteer **[!UICONTROL Content Automation]** .
 1. Klik op **[!UICONTROL Create]**.
-1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
 
 Als u de add-on voor automatisering van inhoud wilt toevoegen aan een bestaand AEM as a Cloud Service-programma in Cloud Manager:
 
@@ -107,7 +107,7 @@ Als u de add-on voor automatisering van inhoud wilt toevoegen aan een bestaand A
 
 1. Vouw **[!UICONTROL Assets]** uit en selecteer **[!UICONTROL Content Automation]** .
 1. Klik op **[!UICONTROL Update]**.
-1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
 
 ## Een verwerkingsprofiel gebruiken om uw creatieve middelen bulksgewijs te bewerken {#process-assets}
 

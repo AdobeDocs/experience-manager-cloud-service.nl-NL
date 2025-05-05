@@ -52,7 +52,7 @@ De Universal Editor wordt ondersteund door:
 * AEM 6.5 (servicepack 21 of 22 plus een functiepakket)
    * Zowel on-premisse als AMS hosting worden gesteund.
 
-Deze documentatie is bedoeld voor gebruik van de Universal Editor met AEM as a Cloud Service. Voor het gebruiken van de Universele Redacteur met AEM 6.5, [ gelieve te zien AEM 6.5 documentatie.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+Deze documentatie is bedoeld voor gebruik van de Universal Editor met AEM as a Cloud Service. Voor het gebruiken van de Universele Redacteur met AEM 6.5, [ gelieve te zien AEM 6.5 documentatie.](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
 ## Functies {#features}
 
@@ -102,7 +102,7 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent en de implementatie ervan in uw eigen projecten doorvoert.
 
 * Niet meer dan 25 AEM-bronnen (Content Fragments, pages, Experience Fragments, Assets, enz.) mogen als instrumentatie op één pagina worden gebruikt.
-* AEM as a Cloud Service en [ AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) zijn de enige gesteunde AEM achtergronden.
+* AEM as a Cloud Service en [ AEM 6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) zijn de enige gesteunde AEM achtergronden.
 * Release `2023.8.13099` of hoger is vereist voor AEM as a Cloud Service.
 * Inhoudsauteurs moeten een eigen Experience Cloud-account hebben.
 * Als deel van AEM, steunt de Universele Redacteur [ zelfde Desktopbrowsers zoals AEM.](/help/overview/supported-platforms.md)

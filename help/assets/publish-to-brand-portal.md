@@ -53,7 +53,7 @@ ht-degree: 77%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als beheerder van AEM Assets (Adobe Experience Manager) kunt u assets, mappen en verzamelingen publiceren naar de AEM Assets Brand Portal-instantie. Bovendien kunt u de publicatieworkflow van een asset of map op een latere datum of tijd plannen. Na publicatie krijgen de Brand Portal-gebruikers toegang tot de assets, mappen en verzamelingen en kunnen ze deze naar andere gebruikers distribueren.
@@ -197,7 +197,7 @@ U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
 1. De schakelaar aan de mening van de Lijst ![ mening van de Lijst ](assets/list-view.svg) om de huidige te zien publiceert status van de activa.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![ geproduceerde rapportstatus ](assets/report-status.JPG)
 
@@ -295,11 +295,11 @@ Hier volgen de stappen voor het ongedaan maken van de publicatie van een verzame
 
 Naast het bovenstaande kunt u ook schema&#39;s voor metadata, voorinstellingen voor afbeeldingen, zoekfacetten en tags van AEM Assets naar Brand Portal publiceren.
 
-* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=nl-NL)
+* [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=nl-NL)
 
 
-Raadpleeg de [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor meer informatie.
+Raadpleeg de [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=nl-NL) voor meer informatie.
 
 
 <!--

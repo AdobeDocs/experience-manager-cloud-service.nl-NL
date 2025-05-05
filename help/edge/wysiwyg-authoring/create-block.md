@@ -346,4 +346,4 @@ Gelieve te zien het document [ Modellering van de Inhoud voor WYSIWYG creatie me
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit webinar van AEM GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit webinar van AEM GEMs ](https://experienceleague.adobe.com/nl/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

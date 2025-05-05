@@ -32,8 +32,8 @@ Het doet dit door een standaardvoorbeeld te nemen dat de meeste AEM ontwikkelaar
 
 Om dit overzicht te volgen, hebt u het volgende beschikbaar nodig.
 
-* [ een lokale ontwikkelingsinstantie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * Uw lokale ontwikkelingsinstantie moet [ worden gevormd met HTTPS voor ontwikkelingsdoel op `localhost` ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
+* [ een lokale ontwikkelingsinstantie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL)
+   * Uw lokale ontwikkelingsinstantie moet [ worden gevormd met HTTPS voor ontwikkelingsdoel op `localhost` ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=nl-NL).
    * [ De WKND demoplaats moet ](https://github.com/adobe/aem-guides-wknd) worden geïnstalleerd.
 * [ Toegang tot de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md#onboarding).
 * [ de lokale Universele dienst van de Redacteur van A ](/help/implementing/universal-editor/local-dev.md) lopend voor ontwikkelingsdoeleinden.

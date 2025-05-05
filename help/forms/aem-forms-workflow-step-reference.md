@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
-U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse AEM stappen van het Werkschema in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) te bereiken.
+U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse AEM stappen van het Werkschema in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) te bereiken.
 
 ## Forms-centric stappen {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
     -->
 
 * **[!UICONTROL Assignee]** > **[!UICONTROL Assign options]** : geef de methode op die u aan een gebruiker wilt toewijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM gebruiker of groep.
-* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van de douane Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van de douane Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&amp;CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participants]**: Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het veld **[!UICONTROL Participant Chooser]** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
@@ -189,7 +189,7 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 Met de stap E-mail kunt u bijvoorbeeld een e-mail verzenden met een document of record, een koppeling naar een adaptief formulier <!-- , link of an interactive communication--> of een bijgevoegd PDF-document. Verzend E-mailstap steunt [ HTML e-mail ](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de vormgeving, het kleurenschema en het gedrag van de e-mail definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
 
 De e-mailstap heeft de volgende eigenschappen:
 

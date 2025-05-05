@@ -185,5 +185,5 @@ U wordt aangeraden de instapreis voort te zetten zoals eerder beschreven. Dit zi
 
 * [ Inleiding van Cloud Manager ](/help/onboarding/cloud-manager-introduction.md) - Leer over Cloud Manager, de programma&#39;s van Cloud Manager, en milieu&#39;s.
 * [ de Profielen van het Product van Cloud Manager ](/help/onboarding/aem-cs-team-product-profiles.md) - Leer over het team van AEM as a Cloud Service en productprofielen.
-* [ de types van Identiteit op Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - de hulp van het het identiteitsbeheersysteem van de Adobe leidt tot en beheert gebruikerstoegang tot toepassingen en de diensten. Met Adobe kunt u deze typen identiteiten of accounts verifiëren en autoriseren.
+* [ de types van Identiteit op Adobe Admin Console ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - de hulp van het het identiteitsbeheersysteem van de Adobe leidt tot en beheert gebruikerstoegang tot toepassingen en de diensten. Met Adobe kunt u deze typen identiteiten of accounts verifiëren en autoriseren.
 

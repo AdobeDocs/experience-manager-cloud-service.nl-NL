@@ -30,7 +30,7 @@ De optie **[!UICONTROL Forms]** inschakelen:
 1. Selecteer de optie **[!UICONTROL Forms]** en klik op **[!UICONTROL Save]** .
 
    ![ selecteer de optie van Forms ](assets/installation-configuration-select-forms-option.png)
-1. [ creeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) en [ stel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) zowel productie als niet-productie pijpleidingen in werking.
+1. [ creeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=nl-NL#how-to-use) en [ stel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=nl-NL) zowel productie als niet-productie pijpleidingen in werking.
 
 Nadat de pijpleiding wordt gebouwd en opgesteld, de **[!UICONTROL Forms]** optie op de **[!UICONTROL Navigation]** pagina.
 

@@ -37,7 +37,7 @@ Met de controle van de Douane, kunnen de klanten naar keuze tot vijf verschillen
 
 >[!NOTE]
 >
-> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [ Geavanceerde Steun van de Wolk ](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). Neem contact op met het accountteam van de Adobe als u vragen hebt.
+> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [ Geavanceerde Steun van de Wolk ](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=nl-NL#support-add-ons). Neem contact op met het accountteam van de Adobe als u vragen hebt.
 
 ## Interne modulemonitoring {#module-monitoring}
 
@@ -55,10 +55,10 @@ Extra controles worden toegevoegd aan omgevingen die zijn ingericht voor Forms. 
 
 ## Waarmerking van de klant {#customer-observability}
 
-De klanten kunnen de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) reeks van de Controle van de Prestaties van de Toepassing van 0&rbrace; New Relic gebruiken die prestatiegegevens in real time die en voor analyse en het oplossen van problemen worden verzameld en in kaart gebracht verstrekt.  Met behulp van de monitoringsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: JVM-prestatiemetriek, transactietijd voor Java™, externe achtergrondaanroepen en databaseaanroepen.
+De klanten kunnen de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=nl-NL) reeks van de Controle van de Prestaties van de Toepassing van 0&rbrace; New Relic gebruiken die prestatiegegevens in real time die en voor analyse en het oplossen van problemen worden verzameld en in kaart gebracht verstrekt.  Met behulp van de monitoringsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: JVM-prestatiemetriek, transactietijd voor Java™, externe achtergrondaanroepen en databaseaanroepen.
 
 ## Aanvullende bronnen {#resources}
 
-* [ de Controle van de Prestaties van de Toepassing van New Relic ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [ het Registreren voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [ de Milieu&#39;s van de Controle ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [ de Controle van de Prestaties van de Toepassing van New Relic ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=nl-NL)
+* [ het Registreren voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=nl-NL)
+* [ de Milieu&#39;s van de Controle ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=nl-NL)

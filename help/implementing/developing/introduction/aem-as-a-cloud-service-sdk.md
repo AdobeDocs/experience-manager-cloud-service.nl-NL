@@ -31,7 +31,7 @@ Bovendien gebruiken sommige klanten die eerder werden geïmplementeerd met AEM 6
 
 ## Het gebouw voor de SDK {#building-for-the-sdk}
 
-De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en implementeren. Zie de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using). Op een hoog niveau worden de volgende stappen uitgevoerd:
+De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en implementeren. Zie de [ documentatie van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using). Op een hoog niveau worden de volgende stappen uitgevoerd:
 
 * **compileert code** - de code van Source wordt gecompileerd, die de resulterende inhoudspakketten produceert.
 * **bouwt artefacten** - De artefacten worden gebouwd tijdens dit proces.

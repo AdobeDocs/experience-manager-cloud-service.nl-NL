@@ -35,7 +35,7 @@ Naast de snelheid van de innovatie biedt [!DNL Adobe Experience Manager] as a Cl
 
 Een release voorbereiden:
 
-1. Markeer uw kalenders: De belangrijkste data van de controle voor maandelijkse versies op [ Experience Manager versie roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) en merken uw kalenders om zich voor te bereiden op de belangrijkste activiteiten om klaar voor de versie te worden.
+1. Markeer uw kalenders: De belangrijkste data van de controle voor maandelijkse versies op [ Experience Manager versie roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) en merken uw kalenders om zich voor te bereiden op de belangrijkste activiteiten om klaar voor de versie te worden.
 1. Herzie de versienota&#39;s: Lees de [ huidige versienota&#39;s ](/help/release-notes/release-notes-cloud/release-notes-current.md) om met de versie en de prereleasefuncties vertrouwd te worden.
 1. De toegang en probeert nieuwe eigenschappen: Laat het [ pre-releasekanaal ](/help/release-notes/prerelease.md) in uw niet-productiemilieu&#39;s toe en begin de eigenschappen te proberen om in uw douanemilieu&#39;s te beoordelen.
 1. Train uw gebruikers: gebruik documentatie en Experience League-bronnen om gebruikers snel en op de hoogte te brengen van de nieuwe functies.

@@ -25,13 +25,13 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 >[!NOTE]
 >
->De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de AEM JCR door de JCR API te gebruiken vanuit een OSGi-bundel. Voor informatie, zie [ het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+>De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de AEM JCR door de JCR API te gebruiken vanuit een OSGi-bundel. Voor informatie, zie [ het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=nl-NL).
 
 ## Gem-sessie {#gem-session}
 
-[ AEM Gems ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van de Adobe worden geleverd.
+[ AEM Gems ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=nl-NL) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van de Adobe worden geleverd.
 
-U kunt [ de zitting herzien die aan de vraagbouwer ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) voor een overzicht en gebruik van het hulpmiddel wordt gewijd.
+U kunt [ de zitting herzien die aan de vraagbouwer ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=nl-NL) voor een overzicht en gebruik van het hulpmiddel wordt gewijd.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 

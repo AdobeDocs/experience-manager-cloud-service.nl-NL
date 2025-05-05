@@ -54,7 +54,7 @@ Met deze responsieve rastermechanismen kunt u:
 
 ## De emulator inschakelen {#enabling-emulator}
 
-Het [ Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) en [ StandaardMalplaatje van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) worden reeds toegelaten om de mededinger te gebruiken. Als u uw eigen inhoud hebt ontwikkeld die niet op de Componenten van de Kern of archetype wordt gebaseerd, te zien gelieve het document [ Responsieve Ontwerp ](/help/implementing/developing/introduction/responsive-design.md) voor details op hoe te om uw componenten te ontwikkelen terwijl het leveraging van deze eigenschappen.
+Het [ Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) en [ StandaardMalplaatje van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) worden reeds toegelaten om de mededinger te gebruiken. Als u uw eigen inhoud hebt ontwikkeld die niet op de Componenten van de Kern of archetype wordt gebaseerd, te zien gelieve het document [ Responsieve Ontwerp ](/help/implementing/developing/introduction/responsive-design.md) voor details op hoe te om uw componenten te ontwikkelen terwijl het leveraging van deze eigenschappen.
 
 ## Lay-outmodus voor uw site activeren {#activate-layout-mode-for-your-site}
 

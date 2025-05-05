@@ -73,8 +73,8 @@ Eerst, bekijk de documentatie detailleert het basistooling, en begin het refacto
 
 
 * Tijdens planning, is het een goed idee om een lijst van gebieden te hebben die moeten worden bewaakt om met AEM as a Cloud Service compatibel te zijn. U kunt [ Richtlijnen van de Ontwikkeling ](/help/implementing/developing/introduction/development-guidelines.md) voor meer details over herzien en code voor Cloud Service optimaliseren.
-* Lees omhoog op hoe te [ te leiden Configuraties ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
-* Leer hoe te opstelling een Lokale Milieu van de Ontwikkeling door [ SDK van AEM as a Cloud Service te downloaden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
+* Lees omhoog op hoe te [ te leiden Configuraties ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=nl-NL#what-is-a-configuration) in AEM as a Cloud Service.
+* Leer hoe te opstelling een Lokale Milieu van de Ontwikkeling door [ SDK van AEM as a Cloud Service te downloaden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=nl-NL)
 * Tot slot vertrouwd maken met [ AEM as a Cloud Service Java API ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Ook kunt u het volgende doen:
@@ -106,8 +106,8 @@ De Adobe verstrekt verscheidene hulpmiddelen helpen sommige van uw code refactor
 
 * [ Migratie van het Werkschema van Activa ](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), een hulpmiddel dat wordt gebruikt om de werkschema&#39;s van de activaverwerking automatisch te migreren
 * [ de Convertor van Dispatcher ](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), een hulpmiddel dat uw bestaande configuraties van Dispatcher in een formaat omzet dat voor AEM as a Cloud Service klaar is.
-* [ Modernizer van de Bewaarplaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), een hulpmiddel dat een AEM Multimode project als input neemt en het in AEM as a Cloud Service één omzet
-* [ Omzetter van de Index ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), een hulpmiddel dat indexen in een vorm compatibel met AEM as a Cloud Service omzet
+* [ Modernizer van de Bewaarplaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=nl-NL), een hulpmiddel dat een AEM Multimode project als input neemt en het in AEM as a Cloud Service één omzet
+* [ Omzetter van de Index ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=nl-NL), een hulpmiddel dat indexen in een vorm compatibel met AEM as a Cloud Service omzet
 * [ Moderniseringshulpmiddelen ](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), een reeks nut die kan worden gebruikt om erfenis AEM eigenschappen in de moderne en gesteunde mogelijkheden van AEM as a Cloud Service om te zetten.
 
 Zodra u opstelling het lokale ontwikkelmilieu hebt, wordt vertrouwd met AEM as a Cloud Service SDK door de [ documentatie ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) te raadplegen.
@@ -132,9 +132,9 @@ Volg de aanbevolen procedures in de onderstaande documenten met betrekking tot h
 
 ## Voorbereiden op Go-Live {#preparing-for-go-live}
 
-Wanneer u het bronsysteem op migratie voorbereidt, zijn er taken op systeem- en AEM-beheerdersniveau nodig. U kunt beginnen door te verifiëren dat de inhoudsbewaarplaats in een goed onderhouden staat is door de [ revisie schoonmaakbeurt ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en de [ status van de de huisvuilinzameling ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) taak van de gegevensopslag te controleren. Als u AEM versie 6.3 uitvoert (aangezien het Hulpmiddel van de Overdracht van de Inhoud vanaf versie 6.3 compatibel is), adviseert men om off-line compensatie uit te voeren, die door de inzameling van het huisvuil van de Opslag van Gegevens wordt gevolgd.
+Wanneer u het bronsysteem op migratie voorbereidt, zijn er taken op systeem- en AEM-beheerdersniveau nodig. U kunt beginnen door te verifiëren dat de inhoudsbewaarplaats in een goed onderhouden staat is door de [ revisie schoonmaakbeurt ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=nl-NL) en de [ status van de de huisvuilinzameling ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=nl-NL) taak van de gegevensopslag te controleren. Als u AEM versie 6.3 uitvoert (aangezien het Hulpmiddel van de Overdracht van de Inhoud vanaf versie 6.3 compatibel is), adviseert men om off-line compensatie uit te voeren, die door de inzameling van het huisvuil van de Opslag van Gegevens wordt gevolgd.
 
-[ de consistentiecontrole van Gegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) wordt geadviseerd over alle AEM versies om ervoor te zorgen dat de inhoudsbewaarplaats in een goede staat om migratieactiviteiten in werking te stellen.
+[ de consistentiecontrole van Gegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=nl-NL) wordt geadviseerd over alle AEM versies om ervoor te zorgen dat de inhoudsbewaarplaats in een goede staat om migratieactiviteiten in werking te stellen.
 
 De toegang van het de beheerderniveau van het systeem wordt vereist om [ AZCopy ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) te installeren en te vormen
 

@@ -30,12 +30,12 @@ U hebt het volgende nodig om deze zelfstudie te voltooien:
 
 1. Lokale ontwikkelomgeving
 
-De stappen en de schermafbeeldingen van het leerprogramma worden uitgevoerd gebruikend **CRXDE Lite**. IDEs kan ook worden gebruikt om het leerprogramma te voltooien. Meer informatie bij het gebruiken van winde om [ met AEM te ontwikkelen kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) worden gevonden.
+De stappen en de schermafbeeldingen van het leerprogramma worden uitgevoerd gebruikend **CRXDE Lite**. IDEs kan ook worden gebruikt om het leerprogramma te voltooien. Meer informatie bij het gebruiken van winde om [ met AEM te ontwikkelen kan hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=nl-NL) worden gevonden.
 
 
 ## Projectinstelling {#project-setup}
 
-De broncode van een Screens-project wordt doorgaans beheerd als een Maven-project met meerdere modules. Om het leerprogramma te versnellen, werd een project pre-geproduceerd gebruikend [ AEM Archetype 13 van het Project ](https://github.com/adobe/aem-project-archetype). Zie [ Opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) voor meer details bij het creëren van een project met Maven AEM Archetype van het Project.
+De broncode van een Screens-project wordt doorgaans beheerd als een Maven-project met meerdere modules. Om het leerprogramma te versnellen, werd een project pre-geproduceerd gebruikend [ AEM Archetype 13 van het Project ](https://github.com/adobe/aem-project-archetype). Zie [ Opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=nl-NL) voor meer details bij het creëren van een project met Maven AEM Archetype van het Project.
 
 1. Download en installeer de volgende pakketten gebruikend [ Manager van het Pakket van CRX ](http://localhost:4502/crx/packmgr/index.jsp):
 
@@ -131,7 +131,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   De componenten van Screens vereisen twee verschillende teruggaven afhankelijk van welke [ auteurswijze ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) wordt gebruikt:
+   De componenten van Screens vereisen twee verschillende teruggaven afhankelijk van welke [ auteurswijze ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=nl-NL#page-modes) wordt gebruikt:
 
    1. **Productie**: Voorproef of de wijze van Publish (wcmmode=disabled)
    1. **geeft** uit: gebruikt voor alle andere auteurswijzen, namelijk uitgeven, ontwerp, steigers, ontwikkelaar...
@@ -378,7 +378,7 @@ Een derde clientbibliotheekcategorie: `cq.screens.components.edit` kan worden ge
 
 ## Een ontwerppagina maken {#design-page}
 
-AEM Screens gebruikt [ statische Malplaatjes van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) en [ configuraties van het Ontwerp ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) voor globale veranderingen. De configuraties van het ontwerp worden vaak gebruikt om toegestane componenten voor Parsys op een kanaal te vormen. U kunt deze configuraties het beste op een toepassingsspecifieke manier opslaan.
+AEM Screens gebruikt [ statische Malplaatjes van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=nl-NL) en [ configuraties van het Ontwerp ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=nl-NL) voor globale veranderingen. De configuraties van het ontwerp worden vaak gebruikt om toegestane componenten voor Parsys op een kanaal te vormen. U kunt deze configuraties het beste op een toepassingsspecifieke manier opslaan.
 
 Een Web.Retail pagina van het Ontwerp van de Looppas wordt gecreeerd hieronder die alle configuraties specifiek voor het Web.Retail project van de Looppas opslaat.
 

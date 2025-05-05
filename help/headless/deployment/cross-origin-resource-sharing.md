@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [ het Delen van het Middel van de Cross-Origin begrijpen (CORS) ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
+>Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM zie [ het Delen van het Middel van de Cross-Origin begrijpen (CORS) ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL#understand-cross-origin-resource-sharing-(cors)).
 
 Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat [ aan AEM via Cloud Manager ](/help/implementing/cloud-manager/deploy-code.md) wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen. U kunt meerdere CORS-configuraties maken en implementeren in verschillende omgevingen. De voorbeelden kunnen in de [ plaats van de Verwijzing WKND ](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig) worden gevonden
 

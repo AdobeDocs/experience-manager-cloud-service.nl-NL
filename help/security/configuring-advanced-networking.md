@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Dit artikel introduceert de geavanceerde netwerkfuncties die beschikbaar zijn in AEM as a Cloud Service. Deze eigenschappen omvatten zelfbediening en API levering van VPN, niet-standaardhavens, en specifieke uitgangIP adressen.
 
-Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties te lopen. Zie [ Geavanceerde voorzien van een netwerk ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties te lopen. Zie [ Geavanceerde voorzien van een netwerk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
 >U kunt geavanceerde netwerken configureren in AEM as a Cloud Service via de gebruikersinterface van Cloud Manager of met de Cloud Manager-API (bijvoorbeeld cURL).
 >
->Dit artikel richt zich op het gebruiken van de methode UI. Als u verkiezen configuratie door API te automatiseren, zie het [ Virtuele privé netwerk (VPN) leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Dit artikel richt zich op het gebruiken van de methode UI. Als u verkiezen configuratie door API te automatiseren, zie het [ Virtuele privé netwerk (VPN) leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**het Automatiseren van geavanceerd voorzien van een netwerk met API**
 >Om geavanceerde voorzien van een netwerkopstelling (zoals de verwezenlijking van VPN) te automatiseren, kunt u Cloud Manager API gebruiken:
@@ -44,7 +44,7 @@ Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontw
 >   }'
 >```
 >
->Zie het volledige leerprogramma en meer API voorbeelden in het [ Virtuele privé netwerk (VPN) leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Zie het volledige leerprogramma en meer API voorbeelden in het [ Virtuele privé netwerk (VPN) leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Overzicht {#overview}
@@ -59,7 +59,7 @@ In dit artikel worden deze opties gedetailleerd beschreven en wordt uitgelegd wa
 
 >[!CAUTION]
 >
->Als u reeds provisioned met erfenis specifieke toegangstechnologie bent en één van deze geavanceerde voorzien van een netwerkopties wilt vormen, [ contacteer de Zorg van de Cliënt van Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home).
+>Als u reeds provisioned met erfenis specifieke toegangstechnologie bent en één van deze geavanceerde voorzien van een netwerkopties wilt vormen, [ contacteer de Zorg van de Cliënt van Adobe ](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#home).
 >
 >Het proberen om geavanceerd voorzien van een netwerk met erfenisegress technologie te vormen kan plaatsconnectiviteit beïnvloeden.
 

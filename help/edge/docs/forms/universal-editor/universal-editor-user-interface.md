@@ -191,7 +191,7 @@ Laten we de belangrijkste onderdelen ervan onderzoeken:
 
   >[!NOTE]
   >
-  > Voor gedetailleerde instructies bij het gebruiken produceer Variaties voor vormen, verwijs naar [ produceer artikel van Variaties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+  > Voor gedetailleerde instructies bij het gebruiken produceer Variaties voor vormen, verwijs naar [ produceer artikel van Variaties ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
 
 - **Experimentatie**
 

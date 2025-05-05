@@ -36,7 +36,7 @@ De releasedatum voor [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
    * Selectieve Publish - Een marketingteam kan nu toegang krijgen tot [!DNL Dynamic Media] Smart crop images en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media] , zodat ze promotiematerialen kunnen maken zonder dat ze deze middelen naar [!DNL Dynamic Media] hoeven te publiceren voor levering wereldwijd. [!DNL Experience Manager] en [!DNL Dynamic Media] publishing is ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [ selectief publiceren ](/help/assets/dynamic-media/selective-publishing.md).
    * Beheerders kunnen nu het wachtwoord voor de Cloud Service van [!DNL Dynamic Media] opnieuw instellen dat bij provisioning wordt ontvangen. U kunt de instellingen opnieuw instellen in de gebruikersinterface van [!DNL Experience Manager] zonder dat u de bureaubladtoepassing van [!DNL Dynamic Media Classic] hoeft te gebruiken.
 
-* Om over de volgende verhogingen te weten, zie [ wat in Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html) nieuw is.
+* Om over de volgende verhogingen te weten, zie [ wat in Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL) nieuw is.
 
    * Verbeterde PDF-voorvertoning dankzij de integratie met Adobe Document Cloud View SDK.
    * Downloadfunctionaliteit met één klik.

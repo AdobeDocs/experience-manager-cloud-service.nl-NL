@@ -29,7 +29,7 @@ De eerder beschikbare CIF kan niet meer worden geïnstalleerd. Code die op deze 
 
 ## Projectstructuur
 
-Leer de [ AEM Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en de kenmerken van AEM as a Cloud Service. Pas de projectinstelling aan op de AEM as a Cloud Service-lay-out.
+Leer de [ AEM Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) en de kenmerken van AEM as a Cloud Service. Pas de projectinstelling aan op de AEM as a Cloud Service-lay-out.
 Vergeleken met AEM 6.5-implementaties zijn er hier twee grote verschillen:
 
 * De de cliëntbundel OSGI van GraphQL **moet niet** in het AEM project meer worden omvat, wordt het opgesteld via CIF toe:voegen-aan

@@ -22,7 +22,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Foundation Components) | Dit artikel |
 | AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=nl-NL) |
 
 Hoewel elk formulier is ontworpen voor een specifiek doel, zijn er in de meeste vormen enkele algemene segmenten, zoals het verstrekken van persoonlijke gegevens zoals naam en adres, familiegegevens, inkomensgegevens, enzovoort. Formulierontwikkelaars moeten deze gemeenschappelijke segmenten telkens maken wanneer een nieuw formulier wordt gemaakt. Adaptieve formulieren biedt een handig mechanisme om formuliersegmenten zoals een deelvenster of een groep velden slechts eenmaal te maken en deze opnieuw te gebruiken in verschillende adaptieve formulieren. Deze herbruikbare en zelfstandige segmenten worden Adaptieve formulierfragmenten genoemd.
 

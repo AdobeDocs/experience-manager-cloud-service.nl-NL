@@ -17,8 +17,8 @@ ht-degree: 0%
 >id="aemcloud_assesskpis"
 >title="KPI&#39;s evalueren"
 >abstract="Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI&#39;s uitlijnen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Het juiste team kiezen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=nl-NL" text="KPI&#39;s uitlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=nl-NL" text="Het juiste team kiezen"
 
 Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen.
 

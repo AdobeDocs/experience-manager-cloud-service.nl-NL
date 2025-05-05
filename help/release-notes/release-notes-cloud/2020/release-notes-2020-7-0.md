@@ -27,7 +27,7 @@ De releasedatum voor [!DNL Experience Manager] as a Cloud Service 2020.7.0 is 30
 
 * Een nieuwe die implementatie van het gebruikersinterface vervangt de implementatie op Klassieke UI wordt gebaseerd.
 
-* Vereenvoudigde dialoogvensters voor gebruikersinterfaces, waarbij het maken van frameworks voor variabele mapping en andere configuraties overblijven op [!DNL Adobe Launch] . Zie [ Integrerend Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) en [ Integrerend Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
+* Vereenvoudigde dialoogvensters voor gebruikersinterfaces, waarbij het maken van frameworks voor variabele mapping en andere configuraties overblijven op [!DNL Adobe Launch] . Zie [ Integrerend Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=nl-NL) en [ Integrerend Adobe Target ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=nl-NL).
 
 * Configuraties worden nu opgeslagen in `/conf` in plaats van `/etc/cloudsettings` in de opslagplaats voor Experience Managers.
 
@@ -57,20 +57,20 @@ De releasedatum voor [!DNL Experience Manager] as a Cloud Service 2020.7.0 is 30
 
 AEM Commerce is nu beschikbaar op de Cloud Service.
 
-Zie [ Begonnen het worden met AEM as a Cloud Service van Commerce ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) voor meer details.
+Zie [ Begonnen het worden met AEM as a Cloud Service van Commerce ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=nl-NL) voor meer details.
 
 ## Kernonderdelen {#core-components}
 
 ### Wat is er nieuw? {#what-is-new-core-components}
 
-Versie 2.11.0 van [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als deel van AEM Sites met inbegrip van:
+Versie 2.11.0 van [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) is nu beschikbaar als deel van AEM Sites met inbegrip van:
 
 * Inleiding van een nieuwe [ Component van de Kijker van de PDF ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Ondersteuning voor versnelde mobiele pagina&#39;s (AMP) van kerncomponenten is nu beschikbaar. Het helpt klanten sneller ervaringen op te doen door de paginaovergang onmiddellijk te maken wanneer ze de site betreden vanuit een mobiel zoekresultaat van Google, wat de betrokkenheid van gebruikers en SEO verbetert.
-Zie [ Steun van AMP voor de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) voor meer details.
+Zie [ Steun van AMP voor de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=nl-NL) voor meer details.
 
-* Verenigbaarheid met versie 1.0.2 van de [ Laag van de Gegevens van de Cliënt van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
+* Verenigbaarheid met versie 1.0.2 van de [ Laag van de Gegevens van de Cliënt van de Adobe ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=nl-NL).
 
 * Bugfixes en verbeteringen van de codekwaliteit.
 
@@ -139,7 +139,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 * Eerdere versie van de CRA kan niet worden uitgevoerd op Adobe Experience Manager (AEM) 6.1. Er is expliciete ondersteuning toegevoegd om gebruikers in de beheerdersgroep toe te staan.
 
-  Zie [ Installerend CRA op AEM 6.1 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) voor meer details.
+  Zie [ Installerend CRA op AEM 6.1 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=nl-NL#installing-on-aem61) voor meer details.
 
 * De tijdstempel voor verlopen die in het samenvattingsrapport wordt weergegeven, is onjuist.
 

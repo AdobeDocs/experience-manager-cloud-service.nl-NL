@@ -21,7 +21,7 @@ ht-degree: 25%
 
 >[!TIP]
 >
->Zie [ Toegang tot AEM voor Beheerders ](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding vormen aan hoe de gebruikers het gebruiken van IMS van Adobe aan AEM as a Cloud Service voor authentiek verklaren. Leer ook hoe Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen worden gebruikt om de toegang tot AEM en de functies en functies ervan te beheren. Adobe ID vereist.
+>Zie [ Toegang tot AEM voor Beheerders ](https://experienceleague.adobe.com/?lang=nl&recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding vormen aan hoe de gebruikers het gebruiken van IMS van Adobe aan AEM as a Cloud Service voor authentiek verklaren. Leer ook hoe Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen worden gebruikt om de toegang tot AEM en de functies en functies ervan te beheren. Adobe ID vereist.
 
 ## Belangrijkste hooglichten {#key-highlights}
 
@@ -62,7 +62,7 @@ Nadat een klant als IMS Organisatie bestaat, moeten zij hun systeem vormen zoals
 
 De grondbeginselen van Identity Management van de Adobe met inbegrip van configuratie IDP zijn behandeld onder [ Identiteit van de Opstelling en Enige Sign-On ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 
-Het gebruik van het Beleid van de onderneming en van de Admin Console zijn behandeld onder [ Onthaal aan de onderneming en de teamadmin gids ](https://helpx.adobe.com/enterprise/admin-guide.html).
+Het gebruik van het Beleid van de onderneming en van de Admin Console zijn behandeld onder [ Onthaal aan de onderneming en de teamadmin gids ](https://helpx.adobe.com/nl/enterprise/admin-guide.html).
 
 ### Gebruikers aan boord in Admin Console {#onboarding-users-in-admin-console}
 
@@ -217,7 +217,7 @@ Als u toegang wilt tot Cloud Manager of tot omgevingen op AEM as a Cloud Service
 Zie Roldefinities als u meer wilt weten over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
 
 >[!NOTE]
->Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, zie [ Op rol-Gebaseerde Toestemmingen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
+>Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, zie [ Op rol-Gebaseerde Toestemmingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
 
 **Stappen voor het toevoegen van een gebruiker**
 

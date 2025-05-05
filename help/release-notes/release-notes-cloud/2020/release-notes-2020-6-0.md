@@ -25,7 +25,7 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor AEM S
 
 ### Nieuwe functies {#whats-new-2020.6.0}
 
-Versie 2.9.0 van de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als deel van AEM Sites met inbegrip van:
+Versie 2.9.0 van de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) is nu beschikbaar als deel van AEM Sites met inbegrip van:
 
 * De integratie tussen [ Laag van de Gegevens van de Cliënt van de Adobe ](https://github.com/adobe/adobe-client-data-layer) en de Componenten van de Kern
 * Configureerbare HTML ID-kenmerken voor alle componenten
@@ -62,11 +62,11 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 
 * Een gebruiker in de *rol van 0&rbrace; BedrijfsEigenaar &lbrace;in Cloud Manager kan nu een Programma Sandbox van de landende pagina (via snelle actieknoop op de kaart van het Programma) of van binnen het programma schrappen.*
 
-  Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
+  Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=nl-NL) voor meer details.
 
 * Een gebruiker van het Programma van Sandbox in *BedrijfsEigenaar* of *de rol van de Manager van de Plaatsing* in Cloud Manager kan nu hun Productie en milieu schrappen van het Stadium dat via Cloud Manager UI wordt geplaatst. De schrappingsoptie is nu beschikbaar van zowel de kaart van het Milieu op de **pagina van het Overzicht van Programma&#39;s 0&rbrace; als de** pagina van Milieu **.** Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
 
-  Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer details.
+  Zie [ het Schrappen van een Programma Sandbox ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=nl-NL) voor meer details.
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
@@ -78,11 +78,11 @@ Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud
 
 * Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan Cloud Manager kunnen worden beheerd. A **beheert de knoop van de Toegang** is nu beschikbaar op de het landen pagina naast **voeg Programma** knoop toe.
 
-  Zie &lbrace;de Taken SysAdmin [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer details.
+  Zie &lbrace;de Taken SysAdmin [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=nl-NL#sysadmin-tasks) voor meer details.
 
 * Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
 
-  Zie [ het Leiden Toegang tot de Instantie van de Auteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer details.
+  Zie [ het Leiden Toegang tot de Instantie van de Auteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=nl-NL#manage-access-aem) voor meer details.
 
 * Het logbestand Build bevat nu een lijst met ontdekte artefacten, waaronder overgeslagen inhoudspakketten.
 
@@ -119,7 +119,7 @@ Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebru
 
 **de steun van de Verbinding van Activa van de Adobe voor Adobe XD**
 
-Met de nieuwste versie ondersteunt [!DNL Experience Manager Assets] een nieuwe [!DNL Adobe Asset Link] -plug-in die wordt losgelaten met [!DNL Adobe XD] v29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen van [!DNL Experience Manager] in hun ontwerpen en kunnen ze deze gebruiken zonder dat ze [!DNL Adobe XD] hoeven te verlaten. Zie [ Verbinding van Activa van de Adobe voor de documentatie van Adobe XD ](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+Met de nieuwste versie ondersteunt [!DNL Experience Manager Assets] een nieuwe [!DNL Adobe Asset Link] -plug-in die wordt losgelaten met [!DNL Adobe XD] v29.3. Dankzij de integratie hebben ontwerpers toegang tot elementen van [!DNL Experience Manager] in hun ontwerpen en kunnen ze deze gebruiken zonder dat ze [!DNL Adobe XD] hoeven te verlaten. Zie [ Verbinding van Activa van de Adobe voor de documentatie van Adobe XD ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link-for-xd.html).
 
 Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] via [!DNL Adobe Asset Link] in een reeks bureaubladtoepassingen voor Creatives Cloud, zoals [!DNL Adobe XD] , [!DNL Photoshop] , [!DNL Illustrator] en [!DNL InDesign] .
 

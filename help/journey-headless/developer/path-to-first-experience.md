@@ -139,7 +139,7 @@ We willen dat u op deze basiskennis voortbouwt om volledig inzicht te krijgen in
 Hoe je ook leert, Adobe wil dat je slaagt als je aan de slag gaat met je AEM Headless-project.
 
 * Als u verkiest om **over headless concepten en AEM te blijven leren zonder kop technologieën**, zou u uw reis zonder kop van AEM moeten voortzetten door het document [ te herzien hoe te Uw Inhoud als Modellen van de Inhoud van AEM te modelleren ](model-your-content.md) waar u leert hoe te om uw inhoudsstructuur in AEM te modelleren.
-* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen het Worden met AEM Headless hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) waar u direct in de Zwaarloze ontwikkeling van AEM zult springen door een eenvoudig project uit te voeren om de inhoud van AEM zonder kop bloot te stellen.
+* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen het Worden met AEM Headless hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) waar u direct in de Zwaarloze ontwikkeling van AEM zult springen door een eenvoudig project uit te voeren om de inhoud van AEM zonder kop bloot te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -147,9 +147,9 @@ Terwijl wordt geadviseerd dat u zich op het volgende deel van de headless ontwik
 
 * [&#128279;](/help/journey-headless/translation/overview.md) de Vertaalreis van 0&rbrace; AEM Headless  - Deze documentatietraject geeft u een breed inzicht in headless technologie, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 * [ Hoofdloze Ontwikkeling voor AEM Sites as a Cloud Service ](/help/headless/introduction.md) - een snelle inleiding om de Ontwikkelaar van AEM Headless met de noodzakelijke eigenschappen te richten
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Hoofdloze Leerprogramma&#39;s van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
-* [ het Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
+* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ Hoofdloze Leerprogramma&#39;s van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
+* [ het Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/nl?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
 * [ AEM Guides WKND - GraphQL ](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
 * [ Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service ](/help/overview/architecture.md) - een volledig overzicht van de architectuur van AEM
 * [ Hoofdloze Opstelling ](/help/headless/introduction.md#getting-started) - een snelle inleiding aan de hoofdloze eigenschappen van AEM voor gebruikers reeds wetend van AEM.

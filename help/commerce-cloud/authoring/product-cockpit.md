@@ -25,9 +25,9 @@ De gefaseerde productgegevens omvatten om het even welke mutatie in de toekomst 
 
 ## Configuratie {#configuration}
 
-Productcatalogi moeten in AEM worden geconfigureerd. Zie [ het vormen opslag en catalogi ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) voor meer informatie.
+Productcatalogi moeten in AEM worden geconfigureerd. Zie [ het vormen opslag en catalogi ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=nl-NL#catalog) voor meer informatie.
 
-Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) voor meer informatie.
+Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=nl-NL) voor meer informatie.
 
 >[!NOTE]
 >

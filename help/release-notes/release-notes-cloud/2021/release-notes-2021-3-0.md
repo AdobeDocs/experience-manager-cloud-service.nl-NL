@@ -20,7 +20,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -64,7 +64,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms heeft veel organisaties geholpen om in de loop der jaren geweldige ervaring op het gebied van instapweigering en inschrijving te bieden. Deze ervaringen hebben organisaties geholpen bij het omzetten van leads naar verkoop, het verwerken van vastgelegde klantgegevens, het leveren van responsieve ervaringen op basis van het profiel van het publiek en nog veel meer. AEM Forms is nu beschikbaar als cloudservice.
 
-U kunt [ as a Cloud Service van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) gebruiken om digitale vormen tot stand te brengen, vormen met bestaande gegevensbronnen te verbinden, vormen met Adobe Sign te integreren om e-handtekeningen aan vormen toe te voegen, Document van Verslag te produceren (DoR) om ingediende vormen als PDF dossiers te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud.
+U kunt [ as a Cloud Service van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=nl-NL) gebruiken om digitale vormen tot stand te brengen, vormen met bestaande gegevensbronnen te verbinden, vormen met Adobe Sign te integreren om e-handtekeningen aan vormen toe te voegen, Document van Verslag te produceren (DoR) om ingediende vormen als PDF dossiers te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud.
 
 U kunt een demo indienen bij uw Adobe of u aanmelden voor de service.
 
@@ -149,7 +149,7 @@ De releasedatum voor Content Transfer Tool v1.3.0 is 4 maart 2021.
 ### Nieuw in gereedschap voor inhoudsoverdracht {#what-is-new-ctt-march}
 
 * CTT wordt nu geïnstalleerd op `/apps` in plaats van `/libs` Bladwijzers in de browser naar bepaalde pagina&#39;s zijn mogelijk niet meer geldig.
-* Wanneer CTT wordt geïnstalleerd, zal de gebruiker een extra niveau moeten navigeren om aan de pagina van de Overdracht van de Inhoud te krijgen. Zie [ Gebruikend het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) voor meer details.
+* Wanneer CTT wordt geïnstalleerd, zal de gebruiker een extra niveau moeten navigeren om aan de pagina van de Overdracht van de Inhoud te krijgen. Zie [ Gebruikend het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=nl-NL) voor meer details.
 
 ### Opgeloste problemen {#bug-fixes-ctt-march}
 

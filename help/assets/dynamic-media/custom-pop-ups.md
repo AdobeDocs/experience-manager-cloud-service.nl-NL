@@ -102,8 +102,8 @@ Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte vo
 
    Ga als volgt te werk voor meer informatie over de methode `setHandlers()` :
 
-   * De interactieve kijker van het Beeld - [ zenders ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * De interactieve Videokijker - [ zethandlers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * De interactieve kijker van het Beeld - [ zenders ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=nl-NL)
+   * De interactieve Videokijker - [ zethandlers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=nl-NL)
 
 1. Configureer nu de handler `quickViewActivate` .
 
@@ -134,9 +134,9 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 
    Ga als volgt te werk voor meer informatie over de methode `quickViewActivate` :
 
-   * De interactieve kijker van het Beeld - [ callbacks van de Gebeurtenis ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * De interactieve Videokijker - [ callbacks van de Gebeurtenis ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Interactieve gegevenssteun in Interactieve Videokijker - [ Interactieve gegevenssteun ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * De interactieve kijker van het Beeld - [ callbacks van de Gebeurtenis ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=nl-NL)
+   * De interactieve Videokijker - [ callbacks van de Gebeurtenis ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=nl-NL)
+   * Interactieve gegevenssteun in Interactieve Videokijker - [ Interactieve gegevenssteun ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=nl-NL)
 
 1. Ga als volgt te werk:
 
@@ -211,8 +211,8 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 
    Ga als volgt te werk voor meer informatie over de methode `init()` :
 
-   * De interactieve kijker van het Beeld - [ init ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * De interactieve Videoviewer - [ init ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * De interactieve kijker van het Beeld - [ init ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=nl-NL)
+   * De interactieve Videoviewer - [ init ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=nl-NL)
 
 1. Gebruik de volgende code om het pop-up-beschreven in de vorige stappen-aan de kijker vast te maken:
 

@@ -54,9 +54,9 @@ U kunt Experience Fragments exporteren naar de standaardwerkruimte in Adobe Targ
 >Raadpleeg de volgende secties voor meer informatie:
 >
 >* [ de ontwikkeling van Adobe Target ](https://developers.adobetarget.com/)
->* [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
->* [ Adobe Target - hoe gebruik ik de Fragmenten van de de Ervaring van Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
->* [ AEM 6.5 - Vormend manueel de Integratie met Adobe Target - Creërend een Configuratie van de Wolk van het Doel ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
+>* [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+>* [ Adobe Target - hoe gebruik ik de Fragmenten van de de Ervaring van Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=nl-NL)
+>* [ AEM 6.5 - Vormend manueel de Integratie met Adobe Target - Creërend een Configuratie van de Wolk van het Doel ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=nl-NL#creating-a-target-cloud-configuration)
 
 ## Vereisten {#prerequisites}
 
@@ -98,7 +98,7 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >De JSON-indeling van een Experience Fragment-aanbieding kan worden aangepast. Hiervoor definieert u een component van het fragment van de klantenervaring en annoteert u hoe u de eigenschappen van de component in het Sling-model kunt exporteren.
    >
-   >Zie de kerncomponent: [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >Zie de kerncomponent: [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=nl-NL)
 
 1. Onder **Adobe Target** uitgezocht:
 
@@ -198,7 +198,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
      >[!NOTE]
      >
-     >Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
+     >Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=nl-NL), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
      >
      >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
      >
@@ -270,7 +270,7 @@ Uw framework is gemaakt. Om het kader aan te herhalen publiceer instantie, gebru
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=nl-NL).
 
 >[!NOTE]
 >

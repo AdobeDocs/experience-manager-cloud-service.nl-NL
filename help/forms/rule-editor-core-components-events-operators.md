@@ -352,7 +352,7 @@ Voor meer details op hoe te om een regel tot stand te brengen om in een paneel t
 
 #### [!UICONTROL Async Function call]
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 Met het **[!UICONTROL Async Function call]** -regeltype kunt u asynchrone functies uitvoeren. Het laat u toe om een functievraag in werking te stellen die onafhankelijk van de belangrijkste uitvoeringsdraad werkt, toestaand andere processen blijven lopend zonder het wachten op de asynchrone functie te voltooien.
 

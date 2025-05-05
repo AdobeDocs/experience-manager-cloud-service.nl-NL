@@ -97,7 +97,7 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
 
    >[!IMPORTANT]
    >
-   >* Nadat de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klik **Overdracht van de Inhoud** zodat kunt u een migratie tot stand brengen die wordt geplaatst om extractie in werking te stellen. Zie [ Lopend het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) voor meer details.
+   >* Nadat de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klik **Overdracht van de Inhoud** zodat kunt u een migratie tot stand brengen die wordt geplaatst om extractie in werking te stellen. Zie [ Lopend het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=nl-NL#running-tool) voor meer details.
 
 ### De gebruikerstoewijzingsprocedure hervatten {#resume-user-mapping-process}
 

@@ -19,7 +19,7 @@ Met de handeling **[!UICONTROL Invoke an AEM Workflow]** Verzenden wordt een ada
 
 >[!NOTE]
 >
->  Leer hoe te [ een werkschemamodel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
+>  Leer hoe te [ een werkschemamodel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 
 AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
 
@@ -44,7 +44,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 ## Integreer AEM workflow met Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
-Aan opstelling geautomatiseerd proces met [ AEM Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een AanpassingsVorm, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [ AEM Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een AanpassingsVorm, voer de volgende stappen uit:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
 1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.

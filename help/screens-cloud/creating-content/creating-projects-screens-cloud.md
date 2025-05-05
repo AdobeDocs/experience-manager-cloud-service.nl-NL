@@ -26,7 +26,7 @@ Voer de onderstaande stappen uit om een project te maken in Screens as a Cloud S
 1. Navigeer naar de Screens Content Provider.
 
    >[!NOTE]
-   >Zie [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) leren hoe te om tot de Leverancier van de Inhoud van Screens voor het creëren van uw project toegang te hebben.
+   >Zie [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=nl-NL) leren hoe te om tot de Leverancier van de Inhoud van Screens voor het creëren van uw project toegang te hebben.
 
 1. Vlak de hoger-juiste hoek van de actiebar, klik **creëren het Project van Screens**.
 

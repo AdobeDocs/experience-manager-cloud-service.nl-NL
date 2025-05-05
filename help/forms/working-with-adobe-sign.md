@@ -17,12 +17,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -136,7 +136,7 @@ U voegt als volgt velden toe aan een adaptief formulier en past verschillende op
 
 1. Selecteer het **[!UICONTROL Adobe Sign]** pictogram van het Gebied ![ Adobe Sign ](assets/adobesign.png). Er worden opties weergegeven voor het selecteren en toevoegen van [!DNL Adobe Sign] -velden.
 
-   Vouw het **[!UICONTROL Type]** drop-down gebied uit om een [!DNL Adobe Sign] gebied te selecteren en Gedaan ![ te selecteren sparen ](assets/save_icon.svg) pictogram om het geselecteerde gebied aan [!DNL Adobe Sign] blok toe te voegen. Het vervolgkeuzeveld **[!UICONTROL Type]** bevat de typen Handtekening, Ontvangerinfo en Gegevensveld. [!DNL Adobe Sign] integratie met AEM [!DNL Forms] -ondersteuningsvelden die alleen in de vervolgkeuzelijst [!UICONTROL Type] worden weergegeven. Voor gedetailleerde informatie over [!DNL Adobe Sign] gebieden, zie [ documentatie van Adobe Sign ](https://helpx.adobe.com/sign/help/field-types.html).
+   Vouw het **[!UICONTROL Type]** drop-down gebied uit om een [!DNL Adobe Sign] gebied te selecteren en Gedaan ![ te selecteren sparen ](assets/save_icon.svg) pictogram om het geselecteerde gebied aan [!DNL Adobe Sign] blok toe te voegen. Het vervolgkeuzeveld **[!UICONTROL Type]** bevat de typen Handtekening, Ontvangerinfo en Gegevensveld. [!DNL Adobe Sign] integratie met AEM [!DNL Forms] -ondersteuningsvelden die alleen in de vervolgkeuzelijst [!UICONTROL Type] worden weergegeven. Voor gedetailleerde informatie over [!DNL Adobe Sign] gebieden, zie [ documentatie van Adobe Sign ](https://helpx.adobe.com/nl/sign/help/field-types.html).
 
    ![ adobe-sign-block-fields-options ](assets/adobe-sign-block-fields-options.png)
 
@@ -144,7 +144,7 @@ U voegt als volgt velden toe aan een adaptief formulier en past verschillende op
 
    Als u **[!UICONTROL Digital Signature]** selecteert in de vervolgkeuzelijst, kunt u digitale handtekeningen toepassen op het adaptieve formulier:
 
-   * Online gebruikend wolkenhandtekeningen om met a [ digitale identiteitskaart ](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) te ondertekenen die door een vertrouwde dienstverlener wordt ontvangen.
+   * Online gebruikend wolkenhandtekeningen om met a [ digitale identiteitskaart ](https://helpx.adobe.com/nl/sign/kb/digital-certificate-providers.html) te ondertekenen die door een vertrouwde dienstverlener wordt ontvangen.
    * Lokaal door het document te downloaden met Adobe Acrobat of Reader met een smartcard, USB-token of een op een bestand gebaseerde digitale id.
 
 ### [!DNL Adobe Sign] inschakelen voor een adaptief formulier {#enableadobsignforanadaptiveform}
@@ -205,7 +205,7 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
 
    * **[!UICONTROL Is the recipient and the person filling the form same?]:** Selecteer **[!UICONTROL Yes]** als de invuller van het formulier en de eerste ontvanger dezelfde persoon zijn. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
-   * **[!UICONTROL Recipient Role]:** selecteer de rol van een ontvanger. Adobe Sign voor zaken en ondernemingsde dienstniveaus hebben de optie om de [ rollen voor overeenkomstontvangers ](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html), voorbij enkel de **Ondertekenaar** uit te breiden, om hun werkschemavereisten beter aan te passen.
+   * **[!UICONTROL Recipient Role]:** selecteer de rol van een ontvanger. Adobe Sign voor zaken en ondernemingsde dienstniveaus hebben de optie om de [ rollen voor overeenkomstontvangers ](https://helpx.adobe.com/nl/sign/using/set-up-signer-approver-roles.html), voorbij enkel de **Ondertekenaar** uit te breiden, om hun werkschemavereisten beter aan te passen.
 
    * **[!UICONTROL Recipient Email Address]:** Geef het e-mailadres van de ontvanger op. De ontvanger ontvangt de Adobe Sign-overeenkomst over het opgegeven e-mailadres. U kunt ervoor kiezen een e-mailadres te gebruiken dat wordt opgegeven in een formulierveld, in het gebruikersprofiel voor Experience Managers van de aangemelde gebruiker of handmatig een e-mailadres in te voeren. Het is een verplichte stap.
 
@@ -213,7 +213,7 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
      >
      >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet gelijk is aan [!DNL Adobe Sign] -account dat wordt gebruikt om AEM Cloud Servicen te configureren.
 
-   * **[!UICONTROL Recipient Authentication Method]:** geef de methode op om een ontvanger te verifiëren voordat u de Adobe Sign-overeenkomst opent. U kunt tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [ identiteitskaart van de Regering ](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) voor [!DNL Adobe Acrobat Sign] kiezen. Voor [!DNL Adobe Acrobat Sign for Government] kunt u kiezen tussen verificatie via telefoon en verificatie op basis van kennis.
+   * **[!UICONTROL Recipient Authentication Method]:** geef de methode op om een ontvanger te verifiëren voordat u de Adobe Sign-overeenkomst opent. U kunt tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [ identiteitskaart van de Regering ](https://helpx.adobe.com/nl/sign/using/adobesign-authentication-government-id.html) voor [!DNL Adobe Acrobat Sign] kiezen. Voor [!DNL Adobe Acrobat Sign for Government] kunt u kiezen tussen verificatie via telefoon en verificatie op basis van kennis.
 
    >[!NOTE]
    >
@@ -327,7 +327,7 @@ Na [ het uitgeven de Adaptieve eigenschappen van de Vorm voor Adobe Sign ](worki
 
    Digitale handtekeningen toepassen op het adaptieve formulier met:
 
-   * De handtekeningen van de wolk: Teken met a [ digitale identiteitskaart ](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) die door een vertrouwde dienstverlener wordt ontvangen.
+   * De handtekeningen van de wolk: Teken met a [ digitale identiteitskaart ](https://helpx.adobe.com/nl/sign/kb/digital-certificate-providers.html) die door een vertrouwde dienstverlener wordt ontvangen.
    * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of digitale id op basis van een bestand.
 
      >[!NOTE]
@@ -354,7 +354,7 @@ De component **[!UICONTROL Summary Step]** verzendt automatisch het formulier, v
 **Ans:** het Aangepaste die Vorm wordt gecreeerd gebruikend het geavanceerde malplaatje wordt gevormd om [!DNL Adobe Sign] te gebruiken. Als u de fout wilt verhelpen, maakt en selecteert u een [!DNL Adobe Sign] -cloudconfiguratie en configureert u een [!DNL Adobe Sign] -ontvanger voor het adaptieve formulier.
 
 **Q:** Kan ik [!DNL Adobe Sign] tekstmarkeringen in een statische tekstcomponent van een Aangepast Vorm gebruiken?
-**Ans:** ja, kunt u tekstmarkeringen in een tekstcomponent gebruiken om [!DNL Adobe Sign] gebieden aan een Document van Verslag toe te voegen (Auto-generated Document van de optie van het Verslag slechts) toegelaten Aangepaste Vorm. Om over de procedure en de regels te leren om een tekstmarkering tot stand te brengen, zie [ Documentatie van Adobe Sign ](https://helpx.adobe.com/sign/using/text-tag.html). Let ook op: Adaptive Forms biedt beperkte ondersteuning voor tekstcodes. U kunt de tekstmarkeringen gebruiken om slechts die gebieden tot stand te brengen die [ het Blok van Adobe Sign ](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) steunt.
+**Ans:** ja, kunt u tekstmarkeringen in een tekstcomponent gebruiken om [!DNL Adobe Sign] gebieden aan een Document van Verslag toe te voegen (Auto-generated Document van de optie van het Verslag slechts) toegelaten Aangepaste Vorm. Om over de procedure en de regels te leren om een tekstmarkering tot stand te brengen, zie [ Documentatie van Adobe Sign ](https://helpx.adobe.com/nl/sign/using/text-tag.html). Let ook op: Adaptive Forms biedt beperkte ondersteuning voor tekstcodes. U kunt de tekstmarkeringen gebruiken om slechts die gebieden tot stand te brengen die [ het Blok van Adobe Sign ](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) steunt.
 
 ## Problemen oplossen {#troubleshoot}
 

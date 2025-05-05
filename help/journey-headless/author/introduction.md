@@ -80,13 +80,13 @@ Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de gr
 
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
 
 * AEM Headless Developer Journey
    * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
    * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
 
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
 
 * [AEM Headless Content Architect Reis](/help/journey-headless/architect/overview.md)
 

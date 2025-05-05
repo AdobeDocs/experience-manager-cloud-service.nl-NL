@@ -51,7 +51,7 @@ Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan 
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL#content-fragments).
 
 >[!NOTE]
 >

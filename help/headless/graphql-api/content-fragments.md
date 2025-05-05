@@ -755,7 +755,7 @@ Met webgeoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken
 
 Met AEM kunt u:
 
-* Geef [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) in de vragen van GraphQL door.
+* Geef [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=nl-NL) in de vragen van GraphQL door.
 
 Dit betekent dat de opdrachten worden toegepast tijdens de uitvoering van de query, op dezelfde manier als URL-parameters bij GET-aanvragen voor die afbeeldingen.
 
@@ -1383,4 +1383,4 @@ AEM is van plan om in de AEM GraphQL API te investeren.*&quot;
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met de Zwaartepunt van AEM en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een headless scenario van CMS.
+Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met de Zwaartepunt van AEM en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een headless scenario van CMS.
