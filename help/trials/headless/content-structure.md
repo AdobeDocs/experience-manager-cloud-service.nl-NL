@@ -38,14 +38,14 @@ De console van het model van het Fragmentmodel van de Inhoud opent in een nieuw 
 
 Bijvoorbeeld, creeert u een model dat de gegevensstructuur van een reis vertegenwoordigt die op een reiswebsite wordt voorzien. Een reis die dit model gebruikt wordt bedoeld als **avontuur**.
 
-1. In de hoger-juiste hoek van het scherm, creeert de klik **** beginnen creërend een model van het Fragment van de Inhoud.
+1. In de hoger-juiste hoek van het scherm, creeert de klik **&#x200B;**&#x200B;beginnen creërend een model van het Fragment van de Inhoud.
 
 1. De wizard Model maken begeleidt u bij het maken van uw model. Geef de verplichte informatie op.
 
    * **ModelTitel** - een kort etiket van het model en wijst gewoonlijk op het doel van het model. U kunt het nieuwe model `Adventure` roepen.
    * **laat model** toe - deze optie wordt gecontroleerd door gebrek en moet worden gecontroleerd om tot Inhoudsfragmenten te kunnen leiden die op dit model worden gebaseerd.
 
-1. Nadat de verplichte gebieden worden bevolkt, leidt de klik **** tot bij het hoogste recht om het model tot stand te brengen.
+1. Nadat de verplichte gebieden worden bevolkt, leidt de klik **&#x200B;**&#x200B;tot bij het hoogste recht om het model tot stand te brengen.
 
 1. Het **de dialoogvakje van het Succes** bevestigt dat het model werd gecreeerd. Klik **Open** in de dialoogdoos zodat kunt u uw nieuw Model van het Fragment van de Inhoud in de redacteur in een nieuw lusje openen. Ga vervolgens verder met de volgende stap om gegevensvelden aan uw model toe te voegen.
 
@@ -63,7 +63,7 @@ In de editor van het inhoudsfragmentmodel configureert u de gegevenstypen en eig
 
 1. Sleep a **Enige lijntekst** van het **paneel van de Types van Gegevens** rechts van de redacteur en laat vallen het op uw model van het Fragment van de Inhoud.
 
-1. Zodra een gegevenstype wordt geplaatst, wordt de **kolom van de Types van Gegevens 0} automatisch veranderd in** Eigenschappen **tabel, waar u de details van het gegevenstype kunt bepalen u plaatste.** Voor dit eerste gebied, wilt u de titel van de reis of het avontuur opslaan. Voer de volgende eigenschappen in.
+1. Zodra een gegevenstype wordt geplaatst, wordt de **kolom van de Types van Gegevens 0&rbrace; automatisch veranderd in** Eigenschappen **tabel, waar u de details van het gegevenstype kunt bepalen u plaatste.** Voor dit eerste gebied, wilt u de titel van de reis of het avontuur opslaan. Voer de volgende eigenschappen in.
 
    * **geeft terug als:** **Gebied van de Tekst** - wanneer u een avontuur creeert, slaat dit gebied de titel van het avontuur op.
    * **Etiket van het Gebied:** `Title` - het etiket dat voor dit gebied wanneer het creëren van een avontuur wordt getoond.
@@ -82,7 +82,7 @@ U hebt al een veld voor de titel van het avontuur. Nu moet u velden toevoegen om
 
 >[!TIP]
 >
->Het **1} model van het Avontuur is gebaseerd op de WKND steekproefplaats voor AEM.** U kunt [ de plaats van WKND hier bezoeken ](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **3} model van het Avontuur {gebruikt.**
+>Het **1&rbrace; model van het Avontuur is gebaseerd op de WKND steekproefplaats voor AEM.** U kunt [ de plaats van WKND hier bezoeken ](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **3&rbrace; model van het Avontuur &lbrace;gebruikt.**
 
 Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het enige verschil is de eigenschappen die u moet instellen.
 
