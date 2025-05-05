@@ -33,7 +33,7 @@ De volgende release (2022.8.0) is gepland voor 1 september 2022.
 
 Bekijk de video Overzicht van de release van juli 2022 voor een overzicht van de functies die in de release van 2022.7.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3454202/?quality=12&captions=dut)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 

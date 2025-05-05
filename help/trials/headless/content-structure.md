@@ -25,7 +25,7 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="De modelconsole starten"
 >abstract="Laten we onderzoeken hoe u een herbruikbaar schema, een zogenaamd Content Fragment-model, kunt maken voor uw inhoud in Adobe Experience Manager as a Cloud Service. Bekijk de video zodat u begrijpt waarom deze stap belangrijk is. <br><br> in deze het leren module, gebruikt u een reisplaats als voorbeeld en loopt door het creëren van een model dat een reis vertegenwoordigt.<br><br> Lancering deze module in een nieuw lusje door de hieronder knoop te klikken en dan deze gids te volgen."
->additional-url="https://video.tv.adobe.com/v/3413261" text="Video over intro-inhoud"
+>additional-url="https://video.tv.adobe.com/v/3436546?captions=dut" text="Video over intro-inhoud"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"

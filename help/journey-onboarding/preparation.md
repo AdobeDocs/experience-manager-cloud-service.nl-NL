@@ -32,7 +32,7 @@ Maak u geen zorgen als u niet vertrouwd bent met alle termen die op deze pagina 
 
 Deze video geeft een overzicht van het instapproces dat in deze reis wordt beschreven en is bedoeld als een optieoverzicht. Alle onderwerpen in de video worden in detail gepresenteerd binnen de reis.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431500/?quality=12&learn=on&captions=dut)
 
 ## Uw contract {#contract}
 
