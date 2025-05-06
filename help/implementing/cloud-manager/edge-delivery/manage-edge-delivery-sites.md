@@ -4,7 +4,7 @@ description: Leer hoe u een CDN-configuratie toevoegt aan een Edge Delivery-site
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Klik **anders noemen**.
    * In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren. Onder de **rubriek van de Diensten**, klik ![ het pictogram van Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
 In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats wilt anders noemen. Klik **anders noemen**.
 
-1. In **geef de dialoogdoos van de Plaats van Edge Delivery** uit, op het **3&rbrace; tekstgebied van de Naam van de Plaats &lbrace;, ga de nieuwe naam van de plaats in.**
+1. In **geef de dialoogdoos van de Plaats van Edge Delivery** uit, op het **3} tekstgebied van de Naam van de Plaats {, ga de nieuwe naam van de plaats in.**
 
 1. Klik **uitgeven**.
 
@@ -66,7 +66,9 @@ In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectru
 
 Gebruik het API-eindpunt van `/program/{programId}/site/{siteId}` om een Edge Delivery-site tussen Helix 4 en Helix 5 te migreren.
 
-CDN-configuraties voor Helix 4-websites kunnen niet automatisch worden gemigreerd naar Helix 5. Deze beperking bestaat omdat de plaatsen van de klantenproductie op Helix 4 nog kunnen lopen, terwijl hun Helix 5 versies nog in ontwikkeling zijn.
+>[!IMPORTANT]
+>
+>CDN-configuraties voor Helix 4-websites kunnen niet automatisch worden gemigreerd naar Helix 5. Deze beperking bestaat omdat de plaatsen van de klantenproductie op Helix 4 nog kunnen lopen, terwijl hun Helix 5 versies nog in ontwikkeling zijn.
 
 **Eerste vereisten**
 
