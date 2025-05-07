@@ -5,7 +5,7 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-produ
 
 >[!IMPORTANT]
 >
->Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
+>Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
 >
 >Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -52,7 +52,7 @@ Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruik
    * Een machtiging wordt alleen als gebruikt beschouwd wanneer een productieomgeving wordt gecreëerd. Of, als één bestaat, als een updatepijpleiding op het is in werking gesteld.
    * Slechts een beperkt aantal programma&#39;s wordt afzonderlijk vermeld in de kolom, de rest wordt vertegenwoordigd door een `+x` -item.
    * Houd de muisaanwijzer boven de `+x` -vermelding om een pop-up met gegevens over alle programma&#39;s weer te geven.
-* De **kolom van het Gebruik** &lbrace;toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
+* De **kolom van het Gebruik** {toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
 
 >[!TIP]
 >
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Veelgestelde vragen {#faq}
 
-+++**wat is een inhoudsverzoek?**{#what-is-a-content-request}
+### Wat is een inhoudsverzoek?{#what-is-a-content-request}
 
 Een inhoudsverzoek is elke aanvraag die is gericht aan AEM Sites of een door de klant beschikbaar cachesysteem, zoals een netwerk voor de levering van inhoud. Inhoud of gegevens worden opgehaald in HTML-indeling voor paginaweergaven. Of in JSON-indeling voor API-aanroepen.
 
@@ -109,29 +109,25 @@ Een inhoudsverzoek is elke aanvraag die is gericht aan AEM Sites of een door de 
 Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe worden geïnitieerd met als enig doel het aanbieden van producten en diensten. Ook het door Adobe geïdentificeerde verkeer van gebruikersagenten van bots, krawlers, en spinnen met betrekking tot gemeenschappelijke onderzoeksmotoren en sociale media wordt uitgesloten.
 
 Zie ook [ de inhoudsverzoeken van Cloud Service ](/help/implementing/cloud-manager/content-requests.md) begrijpen.
-+++
 
-+++**hoe meet Adobe Experience Manager inhoudsverzoeken?**{#how-are-content-requests-measured}
+### Hoe meet Adobe Experience Manager verzoeken om inhoud?{#how-are-content-requests-measured}
 
 Aanvragen voor inhoud worden bijgehouden op AEM as a Cloud Service Edge-servers. Het verkeer van de oorsprong telt niet op inhoudverzoeken. De CDN die in AEM as a Cloud Service is ingebouwd, houdt geldige HTML- en JSON-aanvragen bij.
 
 AEM beschikt ook over regels om bekende bots uit te sluiten, waaronder bekende diensten die regelmatig de site bezoeken om hun zoekindex of service te vernieuwen.
 
 Zie ook [ Begrip van de Verzoeken van de Inhoud van Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**waarom toont mijn rapport Analytics verschillende resultaten dan de de inhoudsverzoeken van AEM?**{#why-are-reports-different}
+### Waarom geeft mijn Analytics-rapport andere resultaten dan de AEM-inhoudaanvragen?{#why-are-reports-different}
 
 Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Voor meer informatie, zie [ Begrijpend de Verzoeken van de Inhoud van Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**wat als ik meer over mijn volume van het inhoudsverzoek zou willen leren?**{#current-request-volumes}
+### Wat als ik meer over mijn volume van de inhoudshulp zou willen leren?{#current-request-volumes}
 
 Als u meer inzichten in het volume van de inhoudsaanvraag wilt hebben dat wordt weergegeven in het licentiedashboard, kan uw Adobe-team een rapport weergeven met de stuurprogramma&#39;s voor het hoogste volume van de inhoudsaanvragen. Neem contact op met uw Adobe-team of met de klantenondersteuning van Adobe om een rapport met het hoogste verbruik aan te vragen.
-+++
 
-+++**wat als ik mijn eigen CDN gebruik?**{#using-own-cdn}
+### Wat als ik mijn eigen CDN gebruik?{#using-own-cdn}
 
 Het licentiedashboard bevat alleen gegevens die worden bijgehouden door de Cloud Service CDN. Als u ervoor kiest om uw eigen CDN (BYOCDN) op te halen, rapporteert u het volume van de inhoudsaanvraag jaarlijks terug naar Adobe, zoals in uw contract wordt vermeld.
-+++
+
 
