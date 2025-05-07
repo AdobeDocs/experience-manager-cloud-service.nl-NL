@@ -4,9 +4,9 @@ description: Leer hoe AEM as a Cloud Service-team en productprofielen toegang to
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -143,11 +143,10 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Assets Collaborator-gebruikers</td>
         <td>
         <ul>
-                <li>Bedoeld voor alleen-lezen toegang tot de DAM. Gebruikers in dit productprofiel zijn lid van de AEM-groep "Medewerkers" die automatisch in AEM wordt gemaakt.
+                <li>Werken met middelen van Experience Manager via integratie van Assets die beschikbaar is voor uw organisatie in andere Adobe-producten en niet-Adobe-toepassingen.
                 </li>
-                <li>
-                Bovendien biedt het de Adobe Express-rechten om assetvariaties te maken.
-                </li>
+                <li>Elementen maken en bewerken met behulp van ingebouwde Adobe Express en Firefly, waarbij gebruik wordt gemaakt van professioneel ontworpen sjablonen, merkpakketten, Adobe Stock-middelen enzovoort.</li>
+                <li>Gebruik AEM Assets Content Hub Portal voor toegang tot en gebruik goedgekeurde middelen van uw organisatie.</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ In de volgende tabel vindt u een lijst met mogelijke productprofielen onder een 
         <td>AEM Assets Power Users</td>
 <td>
         <ul>
-                <li>Bedoeld voor alleen-lezen toegang tot de DAM. Gebruikers in dit productprofiel zijn lid van de AEM-groep "Medewerkers" die automatisch in AEM wordt gemaakt.
+                <li>Open alle AEM Assets-mogelijkheden, inclusief het beheer van middelen, metagegevens en het algemene beheer en de automatisering van digitale middelen.</li>
+                <li>Werken met middelen van Experience Manager via integratie van Assets die beschikbaar is voor uw organisatie in andere Adobe-producten en niet-Adobe-toepassingen.
                 </li>
-                <li>
-                Bovendien biedt het de Adobe Express-rechten om assetvariaties te maken.
-                </li>
+                <li>Elementen maken en bewerken met behulp van ingebouwde Adobe Express en Firefly, waarbij gebruik wordt gemaakt van professioneel ontworpen sjablonen, merkpakketten, Adobe Stock-middelen enzovoort.</li>
+                <li>Gebruik AEM Assets Content Hub Portal voor toegang tot en gebruik goedgekeurde middelen van uw organisatie.</li>
           <ul>
 </td>
     </tr>
@@ -263,13 +262,13 @@ In de volgende afbeelding ziet u de AEM-groepen die overeenkomen met de productp
 
 >[!NOTE]
 >
->Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **&#x200B;**&#x200B;rol van de Gebruiker van Cloud Manager.
+>Elke gebruiker die aan een het productprofiel van AEM as a Cloud Service wordt toegewezen heeft read-only toegang tot Cloud Manager via de **** rol van de Gebruiker van Cloud Manager.
 >
->De gebruikers met slechts de **rol van de Gebruiker 0&rbrace; Cloud Manager kunnen in Cloud Manager registreren en aan de de auteursmilieu&#39;s van AEM navigeren (als zij) bestaan door de** Programma&#39;s **menuopties te gebruiken.** De **rol van de Gebruiker van 0&rbrace; Cloud Manager &lbrace;is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
+>De gebruikers met slechts de **rol van de Gebruiker 0} Cloud Manager kunnen in Cloud Manager registreren en aan de de auteursmilieu&#39;s van AEM navigeren (als zij) bestaan door de** Programma&#39;s **menuopties te gebruiken.** De **rol van de Gebruiker van 0} Cloud Manager {is niet voldoende om tot programmadetails toegang te hebben.** Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
 
 >[!WARNING]
 >
->De **Beheerders van AEM** productprofielnaam moet niet worden veranderd. Het veranderen van de naam van het **productprofiel van de Beheerders van AEM** &lbrace;zal beheerderrechten uit alle gebruikers verwijderen die aan dat profiel worden toegewezen.
+>De **Beheerders van AEM** productprofielnaam moet niet worden veranderd. Het veranderen van de naam van het **productprofiel van de Beheerders van AEM** {zal beheerderrechten uit alle gebruikers verwijderen die aan dat profiel worden toegewezen.
 
 >[!TIP]
 >
