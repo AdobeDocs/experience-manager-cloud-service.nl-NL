@@ -172,7 +172,7 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 ## Toegang genereert variaties {#access-generate-variations}
 
@@ -328,9 +328,9 @@ Voor meer informatie kunt u ook lezen:
 
 * [ GenAI produceert Variaties op GitHub ](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [ de Experimentatie van Edge Delivery Services ](https://www.aem.live/docs/experimentation)
-* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai)
 
-   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai#aem)
 
 ## Releasegeschiedenis {#release-history}
 
