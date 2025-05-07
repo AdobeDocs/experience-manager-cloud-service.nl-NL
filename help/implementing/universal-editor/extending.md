@@ -48,7 +48,7 @@ Zie de volgende bronnen voor informatie over de mogelijkheden om uw eigen extens
 
 >[!TIP]
 >
->Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
+>Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
 
 [ Gebruikend Extension Manager in AEM Sites ](https://developer.adobe.com/uix/docs/extension-manager/), kunt u uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, tot Adobe toegang hebben eerste-partijuitbreidingen met inbegrip van die voor de Universele Redacteur, en veel meer.
 
