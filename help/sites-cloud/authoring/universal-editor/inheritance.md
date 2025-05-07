@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Leer hoe de Universal Editor het overnemen van inhoud ondersteunt voor beheer va
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar voor inhoud die is opgeslagen in de AEM opslagplaats.
+>Deze functie is alleen beschikbaar voor inhoud die is opgeslagen in de AEM-opslagplaats.
 
 ## Hoofdletters gebruiken {#use-case}
 
-Voor veel gebruikers van AEM is het maken van een pagina slechts het begin. Als u inhoud effectief wilt schalen, worden de volgende stappen doorgaans doorlopen nadat u de pagina hebt gemaakt:
+Voor veel gebruikers van AEM is het maken van een pagina nog maar het begin. Als u inhoud effectief wilt schalen, worden de volgende stappen doorgaans doorlopen nadat u de pagina hebt gemaakt:
 
 1. **vertaal de pagina** door taalexemplaren en vertaalwerkschema&#39;s te gebruiken.
 1. **lokaliseer de pagina** door het Beheer van de MultiPlaats te gebruiken om de vertaalde pagina aan verschillende markten uit te rollen.
@@ -44,17 +44,25 @@ Wanneer een pagina deel van MSM uitmaakt of een Lanceer en de inhoud met de Univ
 
 De auteur hoeft niet op een knop te klikken of op een andere manier andere stappen te ondernemen om overerving uit te schakelen voordat hij lokale bewerkingen uitvoert. Zodra een verandering wordt aangebracht, wordt de erfenis impliciet geannuleerd. Dit werkschema is in tegenstelling tot de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+Overerving kan voor de gehele pagina worden hersteld via:
+
+* [ Levende Console van het Overzicht van het Exemplaar ](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [Opstartconsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* Gebruikend de **knoop van het Terugstellen** op het **Levende lusje van het Exemplaar** van het [ pagina eigenschappen venster ](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 De Universal Editor heeft geen invloed op het onderliggende overervingsmechanisme. Raadpleeg de volgende documentatie voor meer informatie over hoe overerving werkt.
 
 * [Beheer van meerdere sites (MSM)](/help/sites-cloud/administering/msm/overview.md)
-* [ Lanceringen ](/help/sites-cloud/authoring/launches/overview.md)
+* [Lanceringen](/help/sites-cloud/authoring/launches/overview.md)
+
+### MSM-extensie (AEM Multi-Site Management) {#msm-extension}
+
+Indien geïnstalleerd, toont de **multi-plaats-beheer van AEM (MSM) Uitbreiding** zowel de huidige overervingsstatus van de geselecteerde component evenals staat u toe om overerving op het componentenniveau te breken of opnieuw op te nemen.
+
+Gelieve te zien [ auteursdocumentatie voor meer informatie.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
 
 ## Beperkingen {#limitations}
 
-* Auteurs kunnen de overerving voor afzonderlijke componenten niet herstellen.
-   * Overerving kan alleen voor de gehele pagina worden hersteld via de opdracht
-      * [ Levende Console van het Overzicht van het Exemplaar ](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [Opstartconsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Gebruikend de **knoop van het Terugstellen** op het **Levende lusje van het Exemplaar** van het [ pagina eigenschappen venster ](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Auteurs hebben geen visuele feedback om te zien welke componenten hun overerving hebben uitgeschakeld en welke nog steeds behouden zijn.
+* Om overerving voor enige componenten terug te keren, moet de **multi-plaats-beheer van AEM (MSM) Uitbreiding** worden toegelaten.
+* Voor visueel terugkoppel om te zien welke componenten hun gehandicapte erving hebben en die het nog hebben behouden, moet de **uitbreiding van het Beheer van AEM multi-Plaats-Beheer (MSM)** worden toegelaten.
 * Deze eigenschappen zijn momenteel beperkt tot componenten in pagina&#39;s en zijn nog niet van toepassing op [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md), ondanks die ook die mogelijkheden MSM hebben en lanceren.

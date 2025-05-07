@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '2133'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ### Variaties maken met GenAI met Variaties genereren {#generate-variations-ai}
 
@@ -192,6 +192,122 @@ Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren 
 
 In de voorvertoningsmodus reageert de gebruiker op de inhoud door erop te tikken of erop te klikken, net als bij een lezer van de inhoud. Als u de inhoud voor het uitgeven wilt selecteren, knevel uit [ voorproefwijze ](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
+## Componentovererving bewerken {#inheritance}
+
+Overerving is het mechanisme waarbij inhoud kan worden gekoppeld, zodat het ene element automatisch het andere verandert.
+
+Met de Universal Editor kunt u overerving voor inhoud annuleren door de inhoud eenvoudig bij te werken. De redacteur maakt automatisch overerving voor alle veranderingen onbruikbaar die door auteurs op die pagina worden aangebracht, ervoor zorgen dat de gewijzigde inhoud wordt behouden wanneer de updates van de blauwdruk worden gesynchroniseerd.
+
+Als de {**Uitbreiding van 0} AEM Multi-Site-Management (MSM) voor uw programma wordt toegelaten, hebt u [ extra toolbaropties ](#inheritance-extension) om de overervingsstatus van een individuele component binnen de Universele Redacteur te bekijken en te veranderen.**
+
+Voor meer details op hoe de overerving het gebruiken van de Universele Redacteur werkt, zie [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+
+
+## Optionele werkbalkopties{#toolbar-options}
+
+Aanvullende functies zijn beschikbaar als extensies voor de Universal Editor waarmee u pagina&#39;s en inhoud verder kunt beheren. [ Deze uitbreidingen moeten in uw programma door een beheerder ](/help/implementing/universal-editor/extending.md) worden toegelaten alvorens zij aan u als inhoudauteur in [ de Universele toolbar van de Redacteur zichtbaar zijn.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### Overerving {#inheritance-extension}
+
+De **multi-plaats-beheer van AEM (MSM) Uitbreiding** toont de huidige overervingsstatus van de geselecteerde component en staat u toe [ om overerving te breken of opnieuw op te nemen.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+Het **Geïnstalleerde Overerving** pictogram in de Universele toolbar van de Redacteur toont aan dat de overerving nog voor de geselecteerde component actief is.
+
+![ Overerving geïnstalleerd pictogram ](assets/inheritance-installed-icon.png)
+
+Tik op het pictogram of klik op het pictogram om de overerving voor de geselecteerde component te verbreken. Overerving wordt automatisch verbroken als u de component bewerkt.
+
+Het **Gebroken** pictogram van de Overerving van de Overerving toont aan dat de overerving voor de geselecteerde component is gebroken.
+
+![ gebroken pictogram van Overerving ](assets/inheritance-broken-icon.png)
+
+Tik op het pictogram of klik op het pictogram om de overerving voor de geselecteerde component te herstellen. U moet de pagina opnieuw laden om de inhoud te vernieuwen om de overgeërfde inhoud weer te geven.
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>De **Geïnstalleerde Overerving** en **Verbroken** pictogrammen van de Overerving slechts tonen wanneer een component is geselecteerd en de pagina is gebaseerd op een blauwdruk.
+
+>[!NOTE]
+>
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+
+### Pagina-eigenschappen openen {#page-properties}
+
+De **Uitbreiding van de Eigenschappen van de Pagina van AEM** staat snelle toegang tot het [ venster van de Eigenschappen van de Pagina ](/help/sites-cloud/authoring/sites-console/page-properties.md) voor de pagina toe die momenteel wordt uitgegeven.
+
+![ pictogram van de eigenschappen van de Pagina ](assets/page-properties-icon.png)
+
+Tik of klik het **pictogram van de Eigenschappen van de Pagina** in de Universele toolbar van de Redacteur om de paginaeigenschappen voor de pagina in een nieuwe browser tabel te openen.
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>De **Uitbreiding van de Eigenschappen van de Pagina van AEM** werkt slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud.
+
+### Siteconsole openen {#sites-console}
+
+De **Uitbreiding van Admin van de Plaats van AEM** staat snelle toegang tot de pagina toe die binnen de [ Console van Plaatsen van AEM wordt uitgegeven, ](/help/sites-cloud/authoring/sites-console/introduction.md) toestaand u om de plaatsboom te navigeren of pagina-vlakke acties in de console uit te voeren.
+
+![ Open in het pictogram van plaats admin ](assets/open-in-site-admin-icon.png)
+
+Tik op het pictogram of klik op het pictogram om de Sites-console te openen in een nieuw browsertabblad, dat naar de pagina gaat die momenteel in de editor staat.
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Pagina&#39;s vergrendelen en ontgrendelen {#locking-pages}
+
+De **Uitbreiding van het Slot van de Pagina van AEM** toont het huidige slotstatuut van de pagina in de redacteur en staat u toe om [ de pagina te sluiten of te ontgrendelen.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+Het **Ontgrendelde** pictogram in de Universele toolbar van de Redacteur toont aan dat de pagina momenteel in de redacteur niet wordt gesloten.
+
+![ Ontgrendeld pictogram ](assets/unlocked-icon.png)
+
+Tik of klik op het pictogram om de pagina te vergrendelen.
+
+Het **Vergrendelde** pictogram in de Universele toolbar van de Redacteur toont aan dat de pagina momenteel in de redacteur wordt gesloten. Houd de muis boven het pictogram voor knopinfo die aangeeft welke gebruiker de pagina heeft vergrendeld.
+
+![ Vergrendeld pictogram ](assets/locked-icon.png)
+
+Tik of klik op het pictogram om de pagina te ontgrendelen als u de gebruiker bent die de pagina heeft vergrendeld.
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>De **Uitbreiding van het Slot van de Pagina van AEM** werkt slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud.
+
+### Workflows {#workflows}
+
+De **Uitbreiding van de Werkschema&#39;s van AEM** staat u toe om [ een werkschema ](/help/sites-cloud/authoring/workflows/overview.md) op de pagina momenteel in de redacteur te beginnen.
+
+![ pictogram van Werkschema&#39;s ](assets/workflows-icon.png)
+
+Tik of klik het **pictogram van de Werkschema&#39;s** in de Universele toolbar van de Redacteur om het **Begin een werkschema** modaal te openen. In het venster wordt de mogelijke inhoud weergegeven waarop u een workflow kunt toepassen.
+
+![ Begin een werkschema modaal ](assets/start-a-workflow.png)
+
+1. In het **Model van het Werkschema** drop down, selecteer het werkschema om toe te passen.
+1. Verstrek een beschrijving voor het werkschema op het **gebied van de Naam**.
+1. In de **Inhoud om in werkschema** lijst te omvatten, gebruik checkboxes om te bepalen welke inhoud in het werkschema te omvatten.
+1. Tik of klik **Werkschema van het Begin** om het werkschema te beginnen of **dicht** om te aborteren.
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Aanmelden bij ontwikkelaar {#developer-login}
+
+De **Universele Uitbreiding van de Login van de Redacteur van AEM Dev** is nuttig voor ontwikkelaars die plaatselijk ontwikkelen, toelatend een geschikte manier om aan lokale AEM SDK voor het testen voor authentiek te verklaren.
+
+![ login van de Ontwikkelaar pictogram ](assets/developer-login-icon.png)
+
+Tik of klik het **pictogram van de Logon van de Ontwikkelaar** in de Universele toolbar van de Redacteur om uw lokale login geloofsbrieven te verstrekken om in uw lokale AEM SDK te ondertekenen.
+
+![ login van de Ontwikkelaar modaal ](assets/developer-login.png)
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## Aanvullende bronnen {#additional-resources}
 
 Raadpleeg dit document voor meer informatie over het publiceren van inhoud met de universele editor.
@@ -205,11 +321,3 @@ Zie deze ontwikkelaarsdocumenten voor meer informatie over de technische details
 * [ Universele Architectuur van de Redacteur ](/help/implementing/universal-editor/architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [ Attributen en Types ](/help/implementing/universal-editor/attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
 * [ Universele Authentificatie van de Redacteur ](/help/implementing/universal-editor/authentication.md) - leer hoe de Universele Redacteur voor authentiek verklaart.
-
-## Componentovererving bewerken {#inheritance}
-
-Overerving is het mechanisme waarbij inhoud kan worden gekoppeld, zodat het ene element automatisch het andere verandert.
-
-Met de Universal Editor kunt u overerving voor inhoud annuleren door de inhoud eenvoudig bij te werken. De redacteur maakt automatisch overerving voor alle veranderingen onbruikbaar die door auteurs op die pagina worden aangebracht, ervoor zorgen dat de gewijzigde inhoud wordt behouden wanneer de updates van de blauwdruk worden gesynchroniseerd.
-
-Voor meer details op hoe de overerving het gebruiken van de Universele Redacteur werkt, zie [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md).
