@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1595'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Als u de Git-uitvoeringsmodus JDK wilt instellen, maakt u een bestand met de naa
 
 #### Vereisten voor migratie naar gebouwen met Java 21 of Java 17 {#prereq-for-building}
 
-Als u wilt migreren naar gebouwen met Java 21 of Java 17, moet u eerst upgraden naar de nieuwste SonarQube-versie. Voor details, zie de [ Nota&#39;s van de Versie voor Cloud Manager 2025.1.0 ](/help/implementing/cloud-manager/release-notes/current.md#what-is-new).
+Cloud Manager gebruikt nu SonarQube 9.9 om te bouwen met Java 21 of Java 17. Dit is compatibel met deze Java-versies. Deze wijziging is geïntroduceerd in Cloud Manager release 2025.1.0. Er is geen actie van de klant vereist om SonarQube te upgraden. Voor meer details en om de verandering te begrijpen, zie de [ Nota&#39;s van de Versie voor Cloud Manager 2025.1.0 ](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 Wanneer u uw toepassing naar een nieuwe Java-versie (build) en een nieuwe runtimeversie migreert, moet u deze grondig testen in ontwikkelings- en werkgebiedomgevingen voordat u de toepassing implementeert naar productie.
 
@@ -103,7 +103,7 @@ De volgende functies werken mogelijk niet correct wanneer deze worden geïmpleme
 
 #### Runtime-vereisten {#runtime-requirements}
 
-De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt geleidelijk ook toegepast op Java 11-builds (zie de opmerking hieronder). Er moet een omgeving zijn in AEM versie 17098 of recenter om de Java 21-update te kunnen ontvangen. Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
+De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt ook geleidelijk toegepast op Java 11-builds (zie de opmerking hieronder). Er moet een omgeving zijn in AEM versie 17098 of recenter om de Java 21-update te kunnen ontvangen. Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
 
 Bibliotheekupdates kunnen altijd worden toegepast, omdat ze compatibel blijven met oudere Java-versies.
 
