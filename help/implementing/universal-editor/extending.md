@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de mogelijkheden van Universel
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Als Adobe Experience Cloud-service kan de gebruikersinterface van de Universal E
 * **[Uitbreiding van het Slot van de Pagina van AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Bekijk en verander de status van het paginaslot van de Universele Redacteur
 * **[de Uitbreiding van de Werkschema&#39;s van AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: De werkschema&#39;s van het begin op de pagina en paginainhoud van de Universele Redacteur
 * **[de Universele Uitbreiding van de Login van de Redacteur van AEM Dev](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Gemakkelijk voor authentiek verklaart aan uw lokale SDK van AEM wanneer het ontwikkelen plaatselijk
+* **[produceer Variaties](/help/generative-ai/generate-variations-integrated-editor.md)**: De generatieve kunstmatige intelligentie van het gebruik (AI) om variaties voor uw inhoud direct in het eigenschappenpaneel tot stand te brengen.
 * **[de Plukker van het Product van AEM voor Universele Redacteur ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integreer de gegevens van Adobe Commerce door productgegevens te selecteren of te verwijderen uit de redacteur.
 * **[Universele de Inhoudsconcepten van de Redacteur ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Creeer, geef, en beheer veelvoudige concepten van inhoud uit.
 * **[Configureerbare de Plukker van Activa ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: laat activaselectie van bewaarplaatsen buiten toe die door de uitgegeven pagina wordt gebruikt.
@@ -48,7 +49,7 @@ Zie de volgende bronnen voor informatie over de mogelijkheden om uw eigen extens
 
 >[!TIP]
 >
->Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
+>Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
 
 [ Gebruikend Extension Manager in AEM Sites ](https://developer.adobe.com/uix/docs/extension-manager/), kunt u uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, tot Adobe toegang hebben eerste-partijuitbreidingen met inbegrip van die voor de Universele Redacteur, en veel meer.
 

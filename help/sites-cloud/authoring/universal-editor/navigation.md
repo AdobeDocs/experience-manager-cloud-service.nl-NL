@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1729'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
 1. Meld u aan bij uw AEM as a Cloud Service-ontwerpinstantie.
-1. Gebruik de **console van 1&rbrace; Plaatsen [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md) om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.**
+1. Gebruik de **console van 1} Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md) om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.[**
 1. Bewerk de pagina.
 1. De Universal Editor wordt geopend om de geselecteerde pagina te bewerken.
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van Plaatsen [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina [&#128279;](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md).**
+>Wanneer het uitgeven van een pagina in de **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md).[**[
 
 ### Direct toegang {#accessing-directly}
 
@@ -79,7 +79,7 @@ De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker d
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -151,7 +151,7 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 
 #### Instellingen voor verificatiekoptekst {#authentication-settings}
 
-Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [&#128279;](/help/implementing/universal-editor/developer-overview.md#auth-header) moet plaatsen.
+Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden ](/help/implementing/universal-editor/developer-overview.md#auth-header) moet plaatsen.[
 
 ![ de knoop van de het hedentemenu van de Authentificatie ](assets/authentication-header-settings.png)
 
@@ -219,9 +219,9 @@ Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**p
 
 De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als er extra knoppen op de werkbalk staan, is de Universal Editor uitgebreid.
 
-* Voor details op hoe een individuele uitbreiding werkt, [ gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* Voor details op uitbreidingsmogelijkheden, te zien gelieve [ Uitbreidend de Universele Redacteur ](/help/implementing/universal-editor/extending.md).
-* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [ documentatie van Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Voor details op hoe een individuele uitbreiding werkt, [ gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
+* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [ documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### De Editor {#editor}
 
@@ -236,6 +236,8 @@ Als de redacteur op [ voorproefwijze ](#preview-mode) is, zal de inhoud navigeer
 Het deelvenster Eigenschappen is altijd aanwezig aan de rechterkant van de editor. Afhankelijk van de modus, kunnen er details worden weergegeven voor een component die is geselecteerd in de inhoud of de hiërarchie van de pagina-inhoud.
 
 ![ het eigenschappen paneel ](assets/properties-rail.png)
+
+Afhankelijk van de configuratie van uw programma, kan het [ extra eigenschappen ook voorstellen die als uitbreidingen door uw beheerder zijn toegelaten.](#additional-properties-panel-buttons)
 
 #### Eigenschappenmodus {#properties-mode}
 
@@ -315,12 +317,13 @@ Tapping of het klikken van de schrappingsknoop [ schrapt de component ](/help/si
 >
 >Gebruik de sneltoets `Shift+Backspace` om een geselecteerde component uit een container te verwijderen.
 
-## Extra functies {#additional-features}
+#### Aanvullende knoppen {#additional-properties-panel-buttons}
 
-De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen of opties ziet in het deelvenster Eigenschappen of op de werkbalk, is de Universal Editor uitgebreid.
+De Universal Editor biedt een aanpasbare en uitbreidbare ontwerpervaring. Als u extra knoppen ziet in het deelvenster Eigenschappen, is de Universal Editor uitgebreid.
 
-* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Aanpassen en de Universele Redacteur ](/help/implementing/universal-editor/customizing.md) uitbreiden.
-* Voor details op hoe een individuele uitbreiding werkt, te zien gelieve de [ documentatie van Extension Manager ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Voor details op hoe een individuele uitbreiding werkt, [ gelieve te zien de Universele het auteursdocumentatie van de Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* Voor details op uitbreidingsmogelijkheden, gelieve te zien [ Uitbreidend de Universele Redacteur.](/help/implementing/universal-editor/extending.md)
+* Voor details op hoe te om een individuele uitbreiding te installeren, te zien gelieve de [ documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Volgende stappen {#next-steps}
 

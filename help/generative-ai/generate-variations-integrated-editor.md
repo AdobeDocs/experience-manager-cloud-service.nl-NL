@@ -4,9 +4,9 @@ description: Meer informatie over Variaties genereren, toegankelijk via verschil
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u de functie Variaties genereren gebruiken die zijn geïntegreerd in de AEM-editors.
 
-Bij het genereren van variaties wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudvariaties te maken op basis van uw invoer. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [&#128279;](https://www.aem.live/docs/experimentation) 1&rbrace; functionaliteit van de Experimentatie &lbrace;van [ Edge Delivery Services ](/help/edge/overview.md).
+Bij het genereren van variaties wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudvariaties te maken op basis van uw invoer. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van [ Edge Delivery Services ](/help/edge/overview.md).](https://www.aem.live/docs/experimentation)
 
 Dit helpt de snelheid van de inhoud te versnellen door binnen enkele minuten snel inhoud op het merk te maken. Hierdoor wordt de conversie met nieuwe kopieervarianten verbeterd.
 
@@ -80,7 +80,7 @@ Wanneer u Genereren-variaties opent die zijn geïntegreerd in een editor, ziet u
       * Toont de [ inhoud u ](#select-the-content) hebt geselecteerd.
       * Verstrekt steekproef **Suggesties** voor veranderingen.
       * Staat u toe om [ te beschrijven de veranderingen u ](#describe-the-changes-you-want) wilt.
-      * Staat u toe om [&#128279;](#generate-copy) nieuwe variaties te produceren.
+      * Staat u toe om [ ](#generate-copy) nieuwe variaties te produceren.
       * Geeft de gegenereerde variaties weer. <!--, together with their [brand score](#the-brand-score).-->
       * [ neem verdere acties op een variatie ](#take-further-action-on-a-variation).
       * [ Gebruik een geproduceerde variatie ](#use-a-generated-variation).
@@ -111,7 +111,7 @@ Werk een `.docx` -bestand bij met gegevens over de inhoudsopgave (10 MB of minde
 
 ### Kopie genereren {#generate-copy}
 
-Nadat u de veranderingen hebt beschreven u wilt, uitgezochte **&#x200B;**&#x200B;produceren om reacties van generatieve AI te zien.
+Nadat u de veranderingen hebt beschreven u wilt, uitgezochte **** produceren om reacties van generatieve AI te zien.
 
 ![ produceer Variaties - gebaseerd document produceert exemplaar ](assets/generate-variations-doc-based-generate-copy.png)
 
@@ -172,7 +172,7 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 ## Toegang genereert variaties {#access-generate-variations}
 
@@ -313,7 +313,10 @@ Als u de functie Variaties genereren in de Sidekick (van Edge Delivery Services)
 
 ### Toegang tot de AEM Universal Editor {#access-aem-universal-editor}
 
-De toegang van de [ Universele Redacteur van AEM ](/help/sites-cloud/authoring/universal-editor/authoring.md) wordt uitgevoerd als uitbreiding. Zie [ Extension Manager in AEM Experience Manager ](https://developer.adobe.com/uix/docs/extension-manager/) voor verdere details.
+De toegang van de [ Universele Redacteur van AEM ](/help/sites-cloud/authoring/universal-editor/authoring.md) wordt uitgevoerd als uitbreiding.
+
+* Voor details op hoe te om tot toegang te hebben produceren Variaties van de Universele Redacteur, gelieve het document [ Authoring Inhoud met de Universele Redacteur te zien.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* Voor details op hoe te om de uitbreiding toe te laten, te zien gelieve het document [ Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Toegang vanuit de AEM Content Fragment Editor {#access-aem-content-fragment-editor}
 
@@ -325,9 +328,9 @@ Voor meer informatie kunt u ook lezen:
 
 * [ GenAI produceert Variaties op GitHub ](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [ de Experimentatie van Edge Delivery Services ](https://www.aem.live/docs/experimentation)
-* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai)
+* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai#aem)
+   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## Releasegeschiedenis {#release-history}
 

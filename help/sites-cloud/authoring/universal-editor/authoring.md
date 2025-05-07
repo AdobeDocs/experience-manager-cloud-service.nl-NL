@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
+source-wordcount: '2222'
 ht-degree: 0%
 
 ---
@@ -176,15 +176,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
-
-### Variaties maken met GenAI met Variaties genereren {#generate-variations-ai}
-
-Gebruik Generatieve variaties om generatieve AI te gebruiken om het maken van inhoud te versnellen.
-
-Open de Universele Redacteur om het ingangspunt te vinden om Variaties te produceren.
-
-Zie [ Variaties produceren - in AEM Editors ](/help/generative-ai/generate-variations-integrated-editor.md) geïntegreerd om meer te leren.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ## Inhoud voorvertonen {#previewing-content}
 
@@ -202,8 +194,7 @@ Als de {**Uitbreiding van 0} AEM Multi-Site-Management (MSM) voor uw programma w
 
 Voor meer details op hoe de overerving het gebruiken van de Universele Redacteur werkt, zie [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
-
-## Optionele werkbalkopties{#toolbar-options}
+## Optionele werkbalkfuncties {#toolbar-options}
 
 Aanvullende functies zijn beschikbaar als extensies voor de Universal Editor waarmee u pagina&#39;s en inhoud verder kunt beheren. [ Deze uitbreidingen moeten in uw programma door een beheerder ](/help/implementing/universal-editor/extending.md) worden toegelaten alvorens zij aan u als inhoudauteur in [ de Universele toolbar van de Redacteur zichtbaar zijn.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
@@ -231,7 +222,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 
@@ -305,6 +296,20 @@ De **Universele Uitbreiding van de Login van de Redacteur van AEM Dev** is nutti
 Tik of klik het **pictogram van de Logon van de Ontwikkelaar** in de Universele toolbar van de Redacteur om uw lokale login geloofsbrieven te verstrekken om in uw lokale AEM SDK te ondertekenen.
 
 ![ login van de Ontwikkelaar modaal ](assets/developer-login.png)
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## Functies in het deelvenster Optionele eigenschappen {#properties-panel-options}
+
+Aanvullende functies zijn beschikbaar als extensies voor de Universal Editor waarmee u de pagina-inhoud verder kunt beheren. [ Deze uitbreidingen moeten in uw programma door een beheerder ](/help/implementing/universal-editor/extending.md) worden toegelaten alvorens zij aan u als inhoudauteur in [ het Universele paneel van de Eigenschappen van de Redacteur zichtbaar zijn.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+### Variaties genereren {#generate-variations}
+
+**produceer de uitbreiding van Variaties** staat u toe om generatieve kunstmatige intelligentie (AI) te gebruiken om variaties voor uw inhoud direct in het eigenschappen paneel tot stand te brengen.
+
+![ produceer variatiepictogram ](assets/generate-variations-icon.png)
+
+Tik of klik **produceer het** pictogram van Variaties in het Universele paneel van de Eigenschappen van de Redacteur om aanbevelingen te ontvangen en variaties tot stand te brengen. Gelieve te zien het document [ Variaties produceren - in de Redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) voor meer details over hoe het produceren van variaties werkt.
 
 Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
