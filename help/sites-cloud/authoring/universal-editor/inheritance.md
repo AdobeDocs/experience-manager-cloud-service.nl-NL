@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,9 @@ De Universal Editor heeft geen invloed op het onderliggende overervingsmechanism
 
 Indien geïnstalleerd, toont de **multi-plaats-beheer van AEM (MSM) Uitbreiding** zowel de huidige overervingsstatus van de geselecteerde component evenals staat u toe om overerving op het componentenniveau te breken of opnieuw op te nemen.
 
-Gelieve te zien [ auteursdocumentatie voor meer informatie.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+Gelieve te zien [ auteursdocumentatie voor meer informatie over hoe te om deze uitbreiding te gebruiken.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Beperkingen {#limitations}
 

@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 0%
@@ -176,7 +176,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ## Inhoud voorvertonen {#previewing-content}
 
@@ -214,7 +214,7 @@ Het **Gebroken** pictogram van de Overerving van de Overerving toont aan dat de 
 
 Tik op het pictogram of klik op het pictogram om de overerving voor de geselecteerde component te herstellen. U moet de pagina opnieuw laden om de inhoud te vernieuwen om de overgeërfde inhoud weer te geven.
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -222,7 +222,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 
@@ -232,7 +232,7 @@ De **Uitbreiding van de Eigenschappen van de Pagina van AEM** staat snelle toega
 
 Tik of klik het **pictogram van de Eigenschappen van de Pagina** in de Universele toolbar van de Redacteur om de paginaeigenschappen voor de pagina in een nieuwe browser tabel te openen.
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ De **Uitbreiding van Admin van de Plaats van AEM** staat snelle toegang tot de p
 
 Tik op het pictogram of klik op het pictogram om de Sites-console te openen in een nieuw browsertabblad, dat naar de pagina gaat die momenteel in de editor staat.
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Pagina&#39;s vergrendelen en ontgrendelen {#locking-pages}
 
@@ -264,7 +264,7 @@ Het **Vergrendelde** pictogram in de Universele toolbar van de Redacteur toont a
 
 Tik of klik op het pictogram om de pagina te ontgrendelen als u de gebruiker bent die de pagina heeft vergrendeld.
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Tik of klik het **pictogram van de Werkschema&#39;s** in de Universele toolbar v
 1. In de **Inhoud om in werkschema** lijst te omvatten, gebruik checkboxes om te bepalen welke inhoud in het werkschema te omvatten.
 1. Tik of klik **Werkschema van het Begin** om het werkschema te beginnen of **dicht** om te aborteren.
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Aanmelden bij ontwikkelaar {#developer-login}
 
@@ -297,7 +297,7 @@ Tik of klik het **pictogram van de Logon van de Ontwikkelaar** in de Universele 
 
 ![ login van de Ontwikkelaar modaal ](assets/developer-login.png)
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Functies in het deelvenster Optionele eigenschappen {#properties-panel-options}
 
@@ -311,7 +311,7 @@ Aanvullende functies zijn beschikbaar als extensies voor de Universal Editor waa
 
 Tik of klik **produceer het** pictogram van Variaties in het Universele paneel van de Eigenschappen van de Redacteur om aanbevelingen te ontvangen en variaties tot stand te brengen. Gelieve te zien het document [ Variaties produceren - in de Redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) voor meer details over hoe het produceren van variaties werkt.
 
-Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Aanvullende bronnen {#additional-resources}
 

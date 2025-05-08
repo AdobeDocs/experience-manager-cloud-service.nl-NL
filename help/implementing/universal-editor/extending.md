@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de mogelijkheden van Universel
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Leer over de verschillende opties om de mogelijkheden van Universele Redacteur u
 
 ## Extensies {#extensions}
 
-Als Adobe Experience Cloud-service kan de gebruikersinterface van de Universal Editor worden uitgebreid met de App Builder en Experience Manager. Adobe biedt veel kant-en-klare extensies die u voor uw project kunt gebruiken.
+Als Adobe Experience Cloud-service kan de gebruikersinterface van de Universal Editor worden uitgebreid met de App Builder en Experience Manager. Adobe biedt vele kant-en-klare uitbreidingen beschikbaar door [ Extension Manager ](https://experience.adobe.com/aem/extension-manager) aan die u voor uw project kunt gebruiken.
 
 * **[de multi-plaats-Beheer van AEM (MSM) Uitbreiding](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Breek of herstelt overerving op het componentenniveau
 * **[Uitbreiding van de Eigenschappen van de Pagina van AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: Heb toegang tot het pagina tot eigenschappen venster van de pagina in de Universele Redacteur
@@ -37,6 +37,8 @@ Als Adobe Experience Cloud-service kan de gebruikersinterface van de Universal E
 * **[de Fragmenten van de Inhoud van de Uitvoer naar Adobe Target ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: De Fragmenten van de Inhoud van de uitvoer, die in Adobe Experience Manager as a Cloud Service aan Adobe Target worden gecreeerd om als aanbiedingen in de activiteiten van het Doel worden gebruikt, om ervaringen bij schaal te testen en te personaliseren.
 * **[de Werkschema&#39;s van het Fragment van de Inhoud ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: Initieer een werkschema van AEM voor geselecteerde inhoudsfragmenten.
 
+Voor informatie over hoe te om deze uitbreidingen toe te laten, [ te zien gelieve de documentatie van Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## De gebruikersinterface uitbreiden {#extending-ui}
 
 De UI-extensies van de Universal Editor zijn JavaScript-toepassingen die zijn gemaakt met Adobe App Builder. Met dezelfde gereedschappen kunt u ook uw eigen knoppen en handelingen toevoegen aan het koptekstmenu en het deelvenster Eigenschappen en kunt u uw eigen gebeurtenissen voor de Universal Editor maken.
@@ -49,7 +51,7 @@ Zie de volgende bronnen voor informatie over de mogelijkheden om uw eigen extens
 
 >[!TIP]
 >
->Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
+>Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
 
 [ Gebruikend Extension Manager in AEM Sites ](https://developer.adobe.com/uix/docs/extension-manager/), kunt u uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, tot Adobe toegang hebben eerste-partijuitbreidingen met inbegrip van die voor de Universele Redacteur, en veel meer.
 
