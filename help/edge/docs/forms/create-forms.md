@@ -1,11 +1,12 @@
 ---
-title: Aan de slag met Edge Delivery Services for AEM Forms. Maak een formulier.
-description: Creëer snelle perfecte formulieren! ⚡ op AEM Forms Edge Delivery gebaseerde authoring = razendsnelheid en SEO-vriendelijke formulieren voor gelukkige gebruikers en zoekmachines.
+title: Een formulier maken met een adaptief Forms-blok
+description: Ga aan de slag met Edge Delivery Services voor AEM Forms. Creëer snelle perfecte formulieren! AEM Forms Edge Delivery-authoring op documentbasis = ultrahoge snelheid en SEO-vriendelijke formulieren voor gelukkigere gebruikers en zoekmachines.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 04fb65b4ec2d8bf6f54e1927469cda4bf94cbec8
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
