@@ -4,7 +4,7 @@ description: Leer over de belangrijkste gebruiksgevallen van de Universele Redac
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -55,6 +55,8 @@ Als dit uw gebruikscase is, raadpleegt u het volgende document voor een voorbeel
 * [SecurBank Sample App voor de Universal Editor](/help/implementing/universal-editor/securbank.md)
 
 Nadat u dat document hebt gelezen, kunt u terugkeren naar deze pagina voor meer informatie over de WYSIWYG-authoringuse case en over de algemene werking van de Universal Editor.
+
+{{ue-headless-auth}}
 
 ## De werking van de universele editor {#how-ue-works}
 

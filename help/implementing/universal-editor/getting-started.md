@@ -4,7 +4,7 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -151,7 +151,7 @@ Zodra deze configuratiestappen volledig zijn, zal AEM de Universele Redacteur vo
 1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
 1. Anders opent AEM de Pagina-editor.
 
-De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1&rbrace; gebied van de Afbeelding te bepalen.**
+De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1} gebied van de Afbeelding te bepalen.**
 
 * `path`: Inhoudspad van de bron die moet worden geopend
 * `localhost`: ExternalAlizer-item voor `localhost` zonder schema, bijvoorbeeld `localhost:4502`
@@ -178,6 +178,8 @@ De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele h
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
 
 Zie [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) om te leren hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
+
+{{ue-headless-auth}}
 
 ## Aanvullende bronnen {#additional-resources}
 

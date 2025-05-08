@@ -1,7 +1,7 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
-[!BADGE &#x200B; voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
+[!BADGE  voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
 
 ## Zie ook {#see-also}
 
 * [Een AEM-adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een AEM Adaptive Form toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Thema&#39;s toepassen op een AEM-adaptief formulier](/help/forms/using-themes-in-core-components.md)
-* [ voegt componenten aan een Aangepaste Vorm van AEM toe ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [ voegt componenten aan een Aangepaste Vorm van AEM toe ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [CAPTCHA gebruiken in een AEM-adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Een PDF-versie (DoR) van een AEM Adaptive Form genereren](/help/forms/generate-document-of-record-core-components.md)
 * [Een AEM adaptief formulier vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
 * [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Aanmelden bij AEM Adaptief formulier gebruiken](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
-* [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Verzend AanpassingsGegevens van de Vorm naar een eindpunt REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Adaptieve formuliergegevens verzenden naar AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms Portal gebruiken om AEM Adaptive Forms weer te geven op een AEM-website](/help/forms/configure-forms-portal.md)
@@ -120,7 +120,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    <tr>
    <td>Service-uitvoereigenschap</td>
    <td> Het de outputbezit van de Dienst wordt gesteund in de <b> Vastgestelde Waarde van </b> optie van de Redacteur van de Regel. </td>
-   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3&rbrace; bezit van de output van de Dienst &lbrace;voor het aanhalen van APIs in de Redacteur van de Regel.</b>
+   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3} bezit van de output van de Dienst {voor het aanhalen van APIs in de Redacteur van de Regel.</b>
    </td>
    </tr>
    <tr>
@@ -203,16 +203,16 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >* Volg [ Dynamische Beste praktijken van Media ](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
 >
->* Probeer uit Dynamische het beeldmogelijkheden van Media met het [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Probeer uit Dynamische het beeldmogelijkheden van Media met het [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Verzeker vlotte videoplayback met [ adaptieve video ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Verzeker vlotte videoplayback met [ adaptieve video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Automatiseer het bebouwen van [ beelden met het Slimme Gewas ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Automatiseer het bebouwen van [ beelden met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatiseer het bebouwen van [ video&#39;s met het Slimme Gewas ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Automatiseer het bebouwen van [ video&#39;s met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Lever een [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Andere [ Dynamische middelbank van Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Lever een [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Andere [ Dynamische middelbank van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Een ondersteuningsticket vastleggen {#support-ticket}
 
@@ -222,7 +222,7 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 
 **om een steunkaartje te registreren:**
 
-1. [ volg het standaardsteunproces ](https://experienceleague.adobe.com/nl?support-tab=home#support) en creeer een kaartje.
+1. [ volg het standaardsteunproces ](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
 1. Voeg **Edge Delivery** in de titel van het kaartje toe.
 1. Geef in de beschrijving naast de beschrijving van het probleem ook de volgende gegevens op:
 
@@ -259,3 +259,9 @@ Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-sit
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
 * [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
 * [Formulierverzendservice gebruiken](/help/forms/forms-submission-service.md)
+
+## Universal Editor Headless-verificatie {#ue-headless-auth}
+
+>[!NOTE]
+>
+>Als u de Universele Redacteur in een hoofdloze gebruikscenario gebruikt, moet uw toepassing zonder kop zijn eigen authentificatie beheren.

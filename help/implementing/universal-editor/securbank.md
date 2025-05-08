@@ -4,7 +4,7 @@ description: Leer over de Universele Redacteur met hands-on ervaring door de App
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Leer over de Universele Redacteur met hands-on ervaring door de App te gebruiken
 
 ## Vereisten {#prerequisites}
 
-* U moet aan **worden toegewezen AEM Beheerder** [ productprofiel ](/help/journey-onboarding/assign-profiles-aem.md) om app SecurBank te installeren.
+* U moet aan de **Beheerder van AEM** [ productprofiel ](/help/journey-onboarding/assign-profiles-aem.md) worden toegewezen om app te installeren SecurBank.
 * U moet [ Node.js ](https://nodejs.org) versie 20 hebben of hoger geïnstalleerd voor lokale ontwikkeling.
 
 ## SecurBank installeren {#installation}
@@ -25,8 +25,8 @@ Leer over de Universele Redacteur met hands-on ervaring door de App te gebruiken
 De installatie van de app SecurBank is rechtuit, maar omdat deze veel gebieden van AEM as a Cloud Service raakt, zijn er een aantal stappen mee gemoeid. Hieronder volgt een overzicht van de belangrijkste stappen.
 
 1. [ creeer een zandbakprogramma in Cloud Manager ](#create-sandbox-program).
-1. [ kloon de git bewaarplaats van het programma en werk met het project SecurBank AEM ](#clone-and-update) bij.
-1. [ stel de pijpleiding in werking om het project op te stellen SecurBank AEM ](#run-pipeline).
+1. [ kloon de git bewaarplaats van het programma en werk met het SecurBank AEM- projectinhoud ](#clone-and-update) bij.
+1. [ stel de pijpleiding in werking om het project SecurBank AEM ](#run-pipeline) op te stellen.
 1. [ wint de geloofsbrieven van Cloud Manager voor lokale Web app ontwikkeling ](#retrieve-credentials) terug.
 1. [ Download en vorm het Web SecureBank app ](#download-web-app).
 1. [ stel het Web-app SecureBank ](#run-web-app) in werking.
@@ -54,7 +54,7 @@ U hebt een nieuw Cloud Manager-programma nodig waarin u SecurBank kunt installer
 
 1. Zoek de map van de lokale kloon, open deze en verwijder alle inhoud, behalve de verborgen bestanden en puntbestanden.
 
-1. Haal de recentste AEM SecurBank van GitHub in [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank` ](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) terug door **Code** en dan **Download ZIP** in dropdown te klikken.
+1. Haal de recentste het projectcode van SecureBank AEM van GitHub bij [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank` terug ](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) door **Code** en dan **Download ZIP** in dropdown te klikken.
 
 1. Decomprimeer de inhoud van het ZIP-bestand op uw lokale bestandssysteem en verplaats het naar de nu lege map van de lokale kloon van het sandboxprogramma.
 
@@ -64,9 +64,9 @@ U hebt een nieuw Cloud Manager-programma nodig waarin u SecurBank kunt installer
    1. `git commit -m "Adding SecurBank app code"`
    1. `git push`
 
-### De pijpleiding in werking stellen om het project SecurBank AEM op te stellen. {#run-pipeline}
+### Voer de pijpleiding uit om het project SecurBank AEM te implementeren. {#run-pipeline}
 
-Met het AEM project voor SecurBank geëngageerd aan de zandbakbewaarplaats, kan het met een pijpleiding worden opgesteld.
+Als het AEM-project voor SecurBank is vastgelegd in de sandboxopslagplaats, kan het worden geïmplementeerd met een pijplijn.
 
 1. Terugkeer naar het **Overzicht** lusje van uw zandbakprogramma in Cloud Manager en stel de volledig-stapel non-production pijpleiding in werking.
 
@@ -137,3 +137,6 @@ Gefeliciteerd! De SecureBank-app wordt nu uitgevoerd in uw browser.
 Als de inhoud nog niet verschijnt, zorg ervoor dat **aan Dev** pijpleiding opstelt die u met succes voltooide.
 
 ![ SecureBank app in browser ](assets/securbank.png)
+
+{{ue-headless-auth}}
+
