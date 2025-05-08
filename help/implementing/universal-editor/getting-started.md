@@ -151,7 +151,7 @@ Zodra deze configuratiestappen volledig zijn, zal AEM de Universele Redacteur vo
 1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
 1. Anders opent AEM de Pagina-editor.
 
-De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1} gebied van de Afbeelding te bepalen.**
+De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1&rbrace; gebied van de Afbeelding te bepalen.**
 
 * `path`: Inhoudspad van de bron die moet worden geopend
 * `localhost`: ExternalAlizer-item voor `localhost` zonder schema, bijvoorbeeld `localhost:4502`
