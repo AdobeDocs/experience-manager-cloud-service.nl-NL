@@ -176,7 +176,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ## Inhoud voorvertonen {#previewing-content}
 
@@ -222,7 +222,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 
