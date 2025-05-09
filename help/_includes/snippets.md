@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
-[!BADGE  voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
+[!BADGE &#x200B; voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
 
 ## Zie ook {#see-also}
 
@@ -120,7 +120,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    <tr>
    <td>Service-uitvoereigenschap</td>
    <td> Het de outputbezit van de Dienst wordt gesteund in de <b> Vastgestelde Waarde van </b> optie van de Redacteur van de Regel. </td>
-   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3} bezit van de output van de Dienst {voor het aanhalen van APIs in de Redacteur van de Regel.</b>
+   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3&rbrace; bezit van de output van de Dienst &lbrace;voor het aanhalen van APIs in de Redacteur van de Regel.</b>
    </td>
    </tr>
    <tr>
