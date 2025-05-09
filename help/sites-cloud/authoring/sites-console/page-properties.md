@@ -5,9 +5,9 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2454'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Titel &amp; Markeringen**
 
-   * **Titel** - de titel van de pagina wordt getoond in diverse plaatsen. Bijvoorbeeld, de **het tablijst van Websites** en de **3&rbrace; kaart/lijstmeningen van Plaatsen &lbrace;.**
+   * **Titel** - de titel van de pagina wordt getoond in diverse plaatsen. Bijvoorbeeld, de **het tablijst van Websites** en de **3} kaart/lijstmeningen van Plaatsen {.**
       * Dit is een verplicht veld.
    * **Markeringen** - hier kunt u markeringen toevoegen, of verwijderen uit de pagina door de lijst in de selectievak bij te werken.
       * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
@@ -38,7 +38,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Branding**
 
-  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
+  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
    * **Merk Slug**
 
@@ -242,7 +242,9 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies voor p
 
 >[!NOTE]
 >
->Zie [ toelatend de Progressieve Eigenschappen van de App van het Web ](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Zie [ toelatend de Progressieve Eigenschappen van de App van het Web ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor meer details.
+
+{{pwa-deprecation}}
 
 * **vorm installeerbare ervaring**
 
@@ -337,3 +339,35 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
       * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed** selecteert.
       * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
    * Velden die veel voorkomen, maar die verschillende waarden hebben op de verschillende pagina&#39;s, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>` .
+
+## Overerving van eigenschappen {#inheritance}
+
+Als de pagina op een blauwdruk gebaseerd is of anders inhoud van een andere pagina erft, wordt de overerving weerspiegeld in het **venster van de Eigenschappen van de 1} pagina** voor het individuele gebied.
+
+![ Overgenomen eigenschappen ](assets/property-inhertiance.png)
+
+Overerfde eigenschappen kunnen niet worden bewerkt. Tik of klik **annuleer overerving** pictogram naast een bepaald gebied om zijn overerving te breken.
+
+![ annuleert overerving ](assets/cancel-inheritance.png)
+
+Bevestig de annulering in **annuleert overerving** modaal.
+
+![ annuleert overervingsbevestiging modaal ](assets/cancel-inheriance-confirmation.png)
+
+Nadat de overerving voor een veld is geannuleerd, wordt het veld bewerkbaar.
+
+![ Geannuleerde overerving ](assets/property-inheritance-broken.png)
+
+Om overerving opnieuw op te nemen, ontweek of klik **terugkeren overerving** pictogram naast het gebied.
+
+![ keert overerving ](assets/revert-inheritance.png) terug
+
+Bevestig de terugkeer in **terugkeren overerving** modaal.
+
+![ keert overervingsbevestiging modaal terug ](assets/revert-inhertiance-confirmation.png)
+
+Selecteer **Synchronize Pagina na het terugkeren van overerving** om het gebied met de recentste waarden in de blauwdruk bij te werken. Als u dat niet doet, worden de waarden bijgewerkt wanneer LiveCopy opnieuw wordt gesynchroniseerd.
+
+>[!TIP]
+>
+>Voor meer informatie over overerving, gelieve te zien het document [ Meerdere Manager van de Plaats en Vertaling ](/help/sites-cloud/administering/msm-and-translation.md)

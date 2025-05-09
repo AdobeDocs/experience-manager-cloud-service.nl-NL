@@ -5,9 +5,9 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1896'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies voor p
 >
 >Voordat u deze functie gebruikt, raadt Adobe u aan dit met uw ontwikkelingsteam te bespreken om de beste manier te definiëren om deze voor uw project te gebruiken.
 
->[!IMPORTANT]
->
->De progressieve Web app (PWA) eigenschappen voor AEM Sites [ is afgekeurd ](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
->
->Bestaande projecten die gebruikmaken van deze functie blijven ondersteund, maar nieuwe projecten moeten deze functie niet gebruiken.
+{{pwa-deprecation}}
 
 ## Inleiding {#introduction}
 
@@ -63,7 +59,7 @@ Core Components versie 2.15.0 en hoger biedt volledige ondersteuning voor de PWA
 
 >[!NOTE]
 >
->Adobe adviseert niet gebruikend de eigenschappen van PWA op douanecomponenten of componenten niet [ uitgebreid van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=nl-NL).
+>Adobe adviseert niet gebruikend de eigenschappen van PWA op douanecomponenten of componenten niet [ uitgebreid van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html).
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -226,7 +222,7 @@ Clientbibliotheken worden geleverd met de toevoeging van een cacheselectiekader,
 
 De afbeeldingscomponent van de AEM Core-componenten bepaalt de voorkant van de beste uitvoering die u wilt ophalen. Dit mechanisme bevat ook een tijdstempel die overeenkomt met de laatste gewijzigde tijd van die bron. Dit mechanisme compliceert de configuratie van de PWA pre-cache.
 
-Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker van alle wegvariaties een lijst maken die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. U wordt geadviseerd het aantal van deze variaties te verminderen tot maximaal drie - klein, middelgroot, groot. U kunt dat als inhoud-beleid dialoogdoos van de [ Component van het Beeld doen ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL).
+Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker van alle wegvariaties een lijst maken die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. U wordt geadviseerd het aantal van deze variaties te verminderen tot maximaal drie - klein, middelgroot, groot. U kunt dat als inhoud-beleid dialoogdoos van de [ Component van het Beeld doen ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html).
 
 Als het niet zorgvuldig wordt geconfigureerd, kan het geheugen- en netwerkgebruik de prestaties van uw PWA ernstig beïnvloeden. Als u bijvoorbeeld 50 afbeeldingen wilt vooraf instellen en drie breedten per afbeelding wilt hebben, moet de gebruiker die de site beheert, een lijst bijhouden met maximaal 150 items in de PWA-sectie voor het vooraf opslaan in cache van de pagina-eigenschappen.
 
