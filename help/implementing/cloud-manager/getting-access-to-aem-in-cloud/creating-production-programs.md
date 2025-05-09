@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 0%
@@ -50,12 +50,12 @@ Zie [ Extra opties van het productieprogramma ](#options).
 
    * Als u niet zeker weet of u een of meerdere programma&#39;s nodig hebt voor de verschillende beschikbare oplossingen, selecteert u de meest interessante oplossing. U kunt extra oplossingen activeren door [ het programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later uit te geven. Zie de [ Inleiding aan het document van de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer aanbevelingen van de programmaopstelling.
    * Er is minstens één oplossing vereist voor het maken van programma&#39;s.
-   * Selecteer **Edge levert de Diensten** voor een volledig beheerde oplossing CDN die digitale ervaringen optimaliseert. Zie [ Ongeveer gebruikend Edge Delivery Services om uw project van Cloud Manager te leveren ](#edge-overview)
+   * Selecteer **Edge Delivery Services** voor een volledig beheerde oplossing CDN die digitale ervaringen optimaliseert. Zie [ Ongeveer gebruikend Edge Delivery Services om uw project van Cloud Manager te leveren ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * Als u **[selecteerde laat Verbeterde Veiligheid](#security)** optie toe, kunt u slechts zo vele oplossingen selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
 
      ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-   * Klik {de grootte 300 van de Chevron van 0} pictogram ![&#128279;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.
+   * Klik {de grootte 300 van de Chevron van 0} pictogram ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.![
 
    ![ Uitgezochte toe:voegen-ons ](assets/setup-prod-commerce.png)
 
@@ -66,7 +66,7 @@ Zie [ Extra opties van het productieprogramma ](#options).
    ![ bepalen geplande go-live datum ](assets/set-up-go-live.png)
 
    * U kunt deze datum op elk gewenst moment bewerken.
-   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma [&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
+   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.[** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
 
 1. Klik **creëren**. Cloud Manager maakt uw programma en geeft het voor selectie weer op de bestemmingspagina.
 
@@ -128,7 +128,7 @@ Naast de vereiste toeslagrechten worden met de 99,99% SLA for Sites- of Forms-pr
 
 1. Selecteer **Overzicht van het Programma** om aan de Cloud Manager **pagina van het Overzicht** te navigeren.
 
-1. De belangrijkste vraag-aan-actie kaart op de overzichtspagina begeleidt u door het creëren van een milieu, een niet productiepijpleiding, en tenslotte een productiepijpleiding.
+1. De belangrijkste kaart van call-to-action op de overzichtspagina begeleidt u door het creëren van een milieu, een niet productiepijpleiding, en tenslotte een productiepijpleiding.
 
    ![ Overzicht van het Programma ](assets/set-up-prod5.png)
 

@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Leer meer over programmatypes in het document [ Begrijpend Programma en de Types
 1. In de **Oplossingen &amp; toe:voegen-ons** lijstdoos, selecteer één of meerdere oplossingen om in het programma te omvatten.
 
    * Klik op het chevron links van de naam van een oplossing om eventuele optionele invoegtoepassingen die u wilt opnemen in een geselecteerde oplossing, weer te geven.
-   * De **Plaatsen**, **Assets**, en **Edge leveren de oplossingen van de Diensten** altijd worden geselecteerd door gebrek wanneer u een zandbakprogramma creeert. U kunt de selectie niet opheffen.
+   * De **Plaatsen**, **Assets**, en **Edge Delivery Services** oplossingen worden altijd geselecteerd door gebrek wanneer u een zandbakprogramma creeert. U kunt de selectie niet opheffen.
 
    ![ Uitgezochte oplossingen en toe:voegen-ons voor een zandbak ](assets/sandbox-solutions-add-ons.png)
 
@@ -67,11 +67,11 @@ Nadat een nieuw sandboxprogramma is gemaakt, kunt u de details van de sandboxins
    >
    >Meer leren over de toegang tot van en het beheren van uw bewaarplaats van het Git, zie [ Toegang hebbend tot Git ](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Nadat het ontwikkelmilieu wordt gecreeerd, kunt u **AEM van de Toegang** klikken en in AEM ondertekenen.
+1. Nadat het ontwikkelmilieu wordt gecreeerd, kunt u **Toegang AEM** klikken en in AEM ondertekenen.
 
-   ![ Toegang AEM verbinding ](assets/create-program5.png)
+   ![ verbinding van AEM van de Toegang ](assets/create-program5.png)
 
-1. Wanneer de niet productiepijplijn die aan ontwikkeling opstelt volledig is, leidt de tovenaar in vraag-aan-actie u om of tot de AEM ontwikkelomgeving toegang te hebben of code aan het ontwikkelmilieu op te stellen.
+1. Wanneer de niet-productiepijpleiding die aan ontwikkeling wordt opgesteld volledig is, gidst de tovenaar in call-to-action u om of tot de ontwikkelomgeving van AEM toegang te hebben of code aan de ontwikkelomgeving op te stellen.
 
    ![ die zandbak ](assets/create-program-setup-deploy.png) opstelt
 
