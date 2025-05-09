@@ -4,9 +4,9 @@ description: Meer informatie over belangrijke aspecten van Assets Ultimate, zoal
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: ccd2334528ed7309c271d069209adec333de356c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -138,6 +138,6 @@ De volgende tabel geeft een overzicht van de beschikbare AEM Assets-gebruikersty
 | AEM > Production Author instance > AEM Administrators | - | - | - | ✓ |
 | **Meer informatie** | Zie [ Content Hub ](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) toelaten | Zie [ Gebruikers van de Medewerker On-board ](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Zie [ De Gebruikers van de Macht aan boord ](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Voor informatie over hoe te beginnen met Assets Ultimate, zie [ AEM Assets Ultimate ](/help/assets/enable-assets-ultimate.md) toelaten.
+Voor informatie over hoe te beginnen met Assets Ultimate, zie [ AEM Assets Ultimate ](/help/assets/enable-assets-ultimate.md) toelaten. Als bestaande AEM Assets-gebruikers vragen hebben over wanneer u een upgrade naar Assets Ultimate kunt uitvoeren, neemt u contact op met uw Adobe-accountvertegenwoordiger. U kunt [ ook zien toelaten Assets Ultimate voor bestaande klanten ](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) voor meer informatie.
 
 AEM Assets biedt ook een lichtere DAM voor klanten die niet beschikken over geavanceerde vereisten zoals UI-uitbreidbaarheid, API-gestuurde automatisering en aangepaste code-implementatie. Voor meer informatie, zie [ AEM Assets Prime ](/help/assets/assets-prime.md).
