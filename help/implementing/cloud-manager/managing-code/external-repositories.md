@@ -5,7 +5,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Vroege adoptie" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: a0eac2f3f513b9fecd595a86bb2110083fa0b80f
+source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 0%
@@ -70,7 +70,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit de vol
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
    *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket.*
@@ -96,15 +96,16 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 1. Een pijplijn toevoegen of bewerken:
    * [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
    * [Een niet-productiepijplijn toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   <!-- * [Add an Edge Delivery Pipeline]() -->
    * [Een pijplijn bewerken](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#editing-pipelines)
 
-   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ![&#128279;](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
+   <!-- Add an Edge Delivery Pipeline -->
+
+   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)![
    *voeg de dialoogdoos van de Pijpleiding van de Niet-Productie met geselecteerde bewaarplaats en de tak van het Git toe,*
 
 1. Wanneer het toevoegen van of het uitgeven van een pijpleiding, om de **plaats van de Code van Source** voor uw nieuwe of bestaande pijpleiding te specificeren, verkies de externe bewaarplaats u van de **drop-down lijst van de Bewaarplaats** wilt gebruiken.
 
-1. In de **drop-down lijst van de Tak van 0&rbrace; Git, selecteer de tak als bron voor de pijpleiding.**
+1. In de **drop-down lijst van de Tak van 0} Git, selecteer de tak als bron voor de pijpleiding.**
 
 1. Klik **sparen**.
 
@@ -149,14 +150,14 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderne
 
    1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
-   1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
 
    Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Zie de tabel onder stap 8.
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 

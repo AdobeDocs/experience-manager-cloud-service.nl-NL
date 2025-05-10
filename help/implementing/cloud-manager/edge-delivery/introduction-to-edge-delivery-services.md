@@ -4,7 +4,7 @@ description: Leer hoe je Cloud Manager-projecten kunt leveren met Edge Delivery 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Met Cloud Manager in AEM as a Cloud Service kunt u Edge Delivery Service inschak
 
 ## Over Edge Delivery Services in Cloud Manager {#edge-in-cloud-manager}
 
-Als u Edge Delivery Services als deel van Adobe Experience Manager Sites vergunning hebt gegeven, kunt u aan boord uw plaats met Edge Delivery Services direct in Cloud Manager en gaan levend [ gebruikend een geleide, zelfbediening ervaring ](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+Als u Edge Delivery Services als deel van Adobe Experience Manager Sites vergunning hebt gegeven, kunt u aan boord uw plaats met Edge Delivery Services direct in Cloud Manager en gaan levend [ gebruikend een geleide, zelfbediening ervaring ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 Daarnaast hebt u toegang tot één ervaring voor het beheer van al uw AEM-eigenschappen, terwijl u zorgt voor consistentie tussen belangrijke workflows. Deze workflows omvatten domeinnaambeheer, SSL-certificaatbeheer en CDN-toewijzingen.
 
@@ -83,7 +83,7 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | 7 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Zie [ gaan-Levende checklist ](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441567?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 

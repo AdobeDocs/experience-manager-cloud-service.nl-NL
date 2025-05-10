@@ -4,20 +4,18 @@ description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramm
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # Een Edge Delivery-site toevoegen aan Cloud Manager {#adding}
 
-Nadat u een Edge Delivery-site aan uw productieprogramma hebt toegevoegd, wordt er een licentie voor Edge Delivery Services op toegepast.
-
-Het toevoegen van een plaats van Edge Delivery aan Cloud Manager wordt vereist om [ een steunkaartje voor uw project van Edge Delivery ](/help/edge/overview.md##support-ticket) te registreren.
-
-Zie ook [ Inleiding aan Edge Delivery Services in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
+>[!IMPORTANT]
+>
+>Leer waarom u zich aan boord van uw Edge Deliver Services-site bij Cloud Manager moet bevinden. Zie [ Voordelen om de Adobe geadviseerde weg voor Edge Delivery Services ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) te gebruiken.
 
 **om een plaats van Edge Delivery aan Cloud Manager toe te voegen:**
 
@@ -42,7 +40,7 @@ Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
    | URL opslagplaats | Voer de Git-opslagplaats in waar de code van uw website is opgeslagen.<br> Dit gebied staat Cloud Manager toe om de code van die bewaarplaats tijdens het plaatsingsproces te trekken. |
    | Sitebeschrijving (optioneel) | Voer een korte beschrijving in van de Edge Delivery-site die u toevoegt.<br> de beschrijvingshulp van A om de plaats te identificeren en te onderscheiden, die het gemakkelijker maken om onder andere plaatsen te beheren en te erkennen u hebt toegevoegd. |
 
-1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **&#x200B;**&#x200B;toe.
+1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **** toe.
 
 1. In **verifieer het bezit van de bewaarplaats** dialoogdoos, verifieer de eigendom van uw bewaarplaats door de volgende stappen te doen:
 
