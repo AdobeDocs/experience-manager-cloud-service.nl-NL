@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u een omgeving maakt in Cloud M
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
 >[!NOTE]
->Zie [ het Leiden Milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=nl-NL) om te leren hoe de gebruiker een milieu kan creëren.
+>Zie [ het Leiden Milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) om te leren hoe de gebruiker een milieu kan creëren.
 
 ## Doelstelling {#objective}
 
 In de volgende sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
-## Stappen om een omgeving te maken voor uw Screens-project in Cloud Manager {#steps-branch-creation}
+## Stappen om een milieu voor uw project in Cloud Manager te creëren {#steps-branch-creation}
 
-Nadat de projectverwezenlijking met succes wordt voltooid, kunt u de vraag-aan-actie kaartupdate in de pagina van het Overzicht van de Cloud Manager zien.
+Nadat het project is gemaakt, kunt u de call-to-action-kaartupdate bekijken op de pagina Overzicht van Cloud Manager.
 
 1. Navigeer aan Cloud Manager en selecteer het pictogram zodat kunt u aan Cloud Manager **krijgen overzicht** pagina.
 
@@ -36,7 +36,7 @@ Nadat de projectverwezenlijking met succes wordt voltooid, kunt u de vraag-aan-a
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. Nadat het toevoegen van een milieu volledig is, de vraag-aan-actie kaartupdates, zoals aangetoond in het hieronder cijfer.
+1. Nadat een omgeving is toegevoegd, wordt de call-to-action-kaart bijgewerkt, zoals in de onderstaande afbeelding wordt getoond.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
