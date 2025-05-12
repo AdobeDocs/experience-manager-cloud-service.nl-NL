@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ De configuratie van de inhoudsbron verschilt op de volgende manier tussen Helix 
 
 Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-instructies voor beide versies.
 
-B **alvorens u** begint
+**alvorens u** begint
 
 Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. Volg de instructies van Helix 5 en gebruik de meegeleverde versie van Helix 4 YAML als fallback.
 
@@ -131,7 +131,7 @@ Gebruik de configuratieservice-API.
 1. Verifieer door een API sleutel of toegangstoken.
 1. Stel de volgende `PUT` API-aanroep in:
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
