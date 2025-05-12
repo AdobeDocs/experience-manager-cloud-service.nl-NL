@@ -1,93 +1,209 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2025.4.0
-description: Meer informatie over de release van Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2025.5.0
+description: Meer informatie over de release van Cloud Manager 2025.5.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
+source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager 2025.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2025.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Meer informatie over de release van Cloud Manager 2025.4.0 in AEM (Adobe Experience Manager) as a Cloud Service.
-
+Meer informatie over de release van Cloud Manager 2025.5.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Releasedatums {#release-date}
 
-De releasedatum voor Cloud Manager 2025.4.0 in AEM as a Cloud Service is donderdag 10 april 2025.
+De releasedatum voor Cloud Manager 2025.5.0 in AEM as a Cloud Service is donderdag 8 mei 2025.
 
-De volgende geplande release is donderdag 8 mei 2025.
+De volgende geplande release is donderdag 5 juni 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-* **(UI) Verbeterde zichtbaarheid van de implementatie**
+### De inhoudsbron met één klik wijzigen voor Edge Delivery Services
 
-  De pagina van de details van de pijpleidingsuitvoering in Cloud Manager toont nu een statusbericht (&quot;*Wachten - andere lopende update*&quot;) wanneer een plaatsing op een andere plaatsing wacht te beëindigen. Deze workflow maakt het eenvoudiger om de volgorde tijdens de implementatie van de omgeving te begrijpen.  <!-- CMGR-66890 -->
+Adobe Experience Manager (AEM) Edge Delivery Services staat de levering van inhoud van veelvoudige bronnen zoals Google Drive, SharePoint, of AEM zelf toe, gebruikend een snel, globaal gedistribueerd randnetwerk.
 
-  ![ de dialoogdoos van de plaatsing van de Ontwikkeling die details en verdeling toont ](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+De configuratie van de inhoudsbron verschilt op de volgende manier tussen Helix 4 en Helix 5:
 
-* **(UI) Verbeterde domeinvalidatie**
+| Versie | Configuratiemethode |
+| --- | --- |
+| Helix 4 | YAML-bestand (`fstab.yaml`) |
+| Helix 5 | De Dienst API van de configuratie (*nr`fstab.yaml`*) |
 
-  Wanneer het toevoegen van een domein, toont Cloud Manager nu een fout als het domein reeds in een Fastly rekening geïnstalleerd is: &quot;*het domein is reeds geïnstalleerd in een Fastly rekening. Gelieve te verwijderen eerst van daar alvorens aan Cloud Service toe te voegen.*&quot;
+Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-instructies voor beide versies.
 
-## Programma voor vroegtijdige goedkeuring {#early-adoption}
+B **alvorens u** begint
 
-Neem deel aan het Cloud Manager-programma voor vroegtijdige adoptie om exclusieve toegang te krijgen tot de volgende functies voordat ze algemeen worden uitgebracht.
+Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. Volg de instructies van Helix 5 en gebruik de meegeleverde versie van Helix 4 YAML als fallback.
 
-De volgende mogelijkheid om in een vroeg stadium aan te nemen is momenteel beschikbaar:
+**Bepaal uw versie van de Helix**
 
-### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
+* Helix 4 - Uw project bevat een `fstab.yaml` -bestand.
+* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door Edge Delivery Services UI of API.
+
+Bevestig de gegevens in de gegevensopslagruimte of raadpleeg uw beheerder als u nog niet zeker weet.
+
+#### De inhoudsbron configureren (Helix 4)
+
+In Helix 4, wordt de inhoudsbron bepaald in een YAML configuratiedossier genoemd `fstab.yaml` dat bij de wortel van uw bewaarplaats GitHub wordt gevestigd.
+
+##### YAML-bestandsindeling
+
+Het bestand `fstab.yaml` definieert bevestigingspunten (URL-padvoorvoegsels die zijn toegewezen aan URL&#39;s van inhoudsbronnen), vergelijkbaar met het volgende voorbeeld (alleen ter illustratie):
+
+```yaml
+mountpoints:
+  /: https://drive.google.com/drive/folders/your-folder-id
+```
+
+##### De inhoudsbron wijzigen
+
+De stappen variëren door het bronsysteem dat u gebruikt.
+
+* **de Aandrijving van Google**
+
+   1. Maak een map voor Google Drive.
+   1. Deel de map met `helix@adobe.com` .
+   1. Hiermee wordt de koppeling voor de deelbare map opgehaald.
+   1. Werk uw `fstab.yaml` bij zoals in het volgende voorbeeld wordt getoond:
+
+      ```yaml
+      mountpoints: 
+          /: https://drive.google.com/drive/folders/<folder-id>
+      ```
+
+   1. Leg en duw veranderingen in GitHub vast.
+
+* **SharePoint**
+
+   1. Maak een SharePoint-map of -documentbibliotheek.
+   1. Deel toegang met `helix@adobe.com` .
+   1. Haal de URL van de map op.
+   1. Werk uw `fstab.yaml` bij zoals in het volgende voorbeeld wordt getoond:
+
+      ```yaml
+      mountpoints:
+        /: https://<tenant>.sharepoint.com/sites/<site>/Shared%20Documents/<folder>
+      ```
+
+   1. Leg en duw veranderingen in GitHub vast.
+
+* **AEM**
+
+   1. Identificeer uw AEM-inhoudspad.
+   1. Gebruik de URL voor het exporteren van AEM-inhoud, zoals in het volgende voorbeeld wordt getoond:
+
+      ```yaml
+      mountpoints:
+        /: https://author.<your-aem-instance>.com/bin/franklin.delivery/<org>/<repo>/main
+      ```
+
+   1. Leg en duw veranderingen in GitHub vast.
+
+##### Validatie
+
+* Gebruikend de Uitbreiding van AEM Sidekick Chrome, klik **Voorproef** > **publiceren** > **Test de levende plaats**.
+* URL valideren: `https://main--<repo>--<org>.hlx.page/`
+
+#### Inhoudsbron configureren (Helix 5)
+
+Helix 5 is zonder voorwerp, gebruikt `fstab.yaml` niet en steunt veelvoudige plaatsen die de zelfde folder delen. De configuratie wordt beheerd door de API van de Dienst van de Configuratie of de UI van Edge Delivery Services. De configuratie is plaats-niveau (niet bewaarplaats-niveau).
+
+##### Conceptuele verschillen
+
+| Verhouding | Helix 4 | Helix 5 |
+| --- | --- | --- |
+| Configuratiebestand | `fstab.yaml` | API- of UI-configuratie |
+| Bergpunten | YAML-definitie | Niet vereist (impliciete basis) |
+
+##### De inhoudsbron wijzigen
+
+Gebruik de configuratieservice-API.
+
+1. Verifieer door een API sleutel of toegangstoken.
+1. Stel de volgende `PUT` API-aanroep in:
+
+   ```bash
+   PUT /api/{program}/{programId}/site/{siteId}
+   Content-Type: application/json
+   
+   {
+     "sitename": "my-site",
+     "branchName": "main",
+     "version": "v5",
+     "repo": "my-content-repo-link"
+   }
+   ```
+
+1. Reactie valideren (wordt verwacht: HTTP 200 OK).
+
+##### Validatie
+
+* Gebruikend de Uitbreiding van AEM Sidekick Chrome, klik **Voorproef** > **publiceren** > **Test de levende plaats**.
+* URL valideren: `https://main--<repo>--<org>.aem.page/`
+* (Optioneel) Controleer de huidige configuratie via de volgende API-aanroep van `GET` :
+
+  ```bash
+  GET /api/{program}/{programId}/site/{siteId}
+  ```
+
+<!--
+* **AI-powered build summaries now available for internal use**
+
+    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
+
+    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
+-->
+
+
+## Programma voor vroegtijdige adoptie {#early-adoption}
+
+Neem deel aan het Cloud Manager-programma voor vroege adoptie om exclusieve toegang te krijgen tot de volgende functies voordat ze algemeen worden uitgebracht.
+
+Momenteel zijn de volgende mogelijkheden voor vroege adoptie beschikbaar:
+
+### Edge Delivery Pipet toevoegen {#add-eds-pipeline}
+
+**Pijpleidingen** worden nu gesteund voor plaatsen die met Edge Delivery Services worden gebouwd, die dit vermogen voorbij enkel de milieu&#39;s van Cloud Service uitbreiden. U kunt **Pijpleidingen** gebruiken om montages zoals verkeer het filtreren regels en de configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
+
+<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ grp-aemeds-config-pipeline-adopter@adobe.com ](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
+
+### Kies voor uw eigen git - nu met ondersteuning voor Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen, zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de bewaarplaats van Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+Klanten kunnen nu hun Azure DevOps Git-opslagruimten in Cloud Manager aan boord nemen, met ondersteuning voor zowel moderne Azure DevOps- als oudere VSTS-opslagruimten (Visual Studio Team Services).
 
-De pijpleidingen die externe bewaarplaatsen gebruiken (exclusief GitHub-ontvangen degenen) en de **Trekker van de Plaatsing** aan **wordt geplaatst op de Veranderingen van het Git** beginnen nu automatisch.
+* Voor Edge Delivery Services-gebruikers kan de ingebouwde opslagplaats worden gebruikt voor het synchroniseren en implementeren van sitecode.
+* Voor AEM as a Cloud Service- en Adobe Managed Services-gebruikers (AMS) kan de opslagplaats worden gekoppeld aan zowel full-stack als frontend pijpleidingen.
+
+De steun voor extra pijpleidingstypes en trekverzoekbevestiging door pijpleidingen van de codekwaliteit komt binnenkort.
 
 Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toevoegen.
 
-![ voeg de dialoogdoos van de Bewaarplaats ](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png) toe
-
->[!NOTE]
->
->Momenteel, zijn de uit-van-de-doos controles van de trekkingsverzoekcodekwaliteit exclusief aan GitHub-ontvangen bewaarplaatsen, maar een update om deze functionaliteit tot andere verkopers van het Git uit te breiden is in de werken.
+![ voeg de dialoogdoos van de Bewaarplaats ](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png) toe
 
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
 
 <!--
-### AEM Home {#aem-home}
+## Bug fixes
 
-AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+* Issue
 
-Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+* Issue
 
-If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
-
-* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
-* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
-
-## Bugfixes
-
-* **Uitgave met certificaten ontbrekende het gebied van de Gemeenschappelijke Naam (CN)**
-
-  Cloud Manager genereert niet langer een NullPointerException (NPE) en 500 HTTP- reactie wanneer het verwerken van EV/OV- certificaten die geen Gemeenschappelijke Naam (CN) op het Onderwerpgebied omvatten. Moderne certificaten laten vaak CN weg en gebruiken in plaats daarvan de Alternatieve Naam Onderwerp (San). Deze correctie zorgt ervoor dat het ontbreken van CN niet langer een fout veroorzaakt tijdens het configuratieproces wanneer SAN aanwezig is. <!-- CMGR-67548 -->
-
-* **de verificatiekwestie van het Domein met onjuiste certificaat aanpassing**
-
-  Cloud Manager verifieert domeinen niet meer verkeerd gebruikend de verkeerde certificaten. Eerder gebruikte de bevestigingslogica patroon-gebaseerde aanpassing in plaats van nauwkeurige aanpassing, die domeinen zoals `should-not-be-verified.example.com` ertoe bracht om te verschijnen zoals geverifieerd toe te schrijven aan overlapping met geldige certificaten voor `example.com`. Met deze correctie zorgt u ervoor dat domeinvalidatie nu controleert op exacte overeenkomsten en onjuiste certificaatkoppelingen voorkomt. <!-- CMGR-67225 -->
-
-* **gedwongen uniciteit voor Geavanceerde de voorwaardennamen van de haven van het Voorzien van een netwerk**
-
-  Cloud Manager dwingt nu unieke naamgeving af voor Advanced Networking-poort. Eerder waren dubbele namen toegestaan, wat tot conflicten kon leiden. Deze moeilijke situatie zorgt ervoor dat elke haven voorwaartse ingang een verschillende naam heeft, die op beste praktijken voor de integriteit van de netwerkconfiguratie richt. <!-- CMGR-67082 -->
-
+* Issue
+-->
 
 <!-- ## Known issues {#known-issues} -->
 
