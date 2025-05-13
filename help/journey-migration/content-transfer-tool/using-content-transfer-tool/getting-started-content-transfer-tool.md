@@ -64,7 +64,7 @@ Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optred
 >id="aemcloud_ctt_demo"
 >title="Gereedschap Inhoud overbrengen uitvoeren"
 >abstract="Leer hoe u Content Transfer Tool gebruikt om de inhoud te migreren naar AEM as a Cloud Service (auteur/publiceren)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Zie demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=nl-NL#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inhoud overbrengen. Ga als volgt te werk om te leren hoe u inhoud kunt migreren naar AEM as a Cloud Service met het gereedschap Inhoud overbrengen:
