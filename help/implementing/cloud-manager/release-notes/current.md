@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
+source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ De volgende geplande release is donderdag 5 juni 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-### De inhoudsbron met één klik wijzigen voor Edge Delivery Services
+### De inhoudsbron configureren in één klik voor Edge Delivery Services
 
 Adobe Experience Manager (AEM) Edge Delivery Services staat de levering van inhoud van veelvoudige bronnen zoals Google Drive, SharePoint, of AEM zelf toe, gebruikend een snel, globaal gedistribueerd randnetwerk.
 
 De configuratie van de inhoudsbron verschilt op de volgende manier tussen Helix 4 en Helix 5:
 
-| Versie | Configuratiemethode |
+| Versie | Methode voor inhoudsbronconfiguratie |
 | --- | --- |
 | Helix 4 | YAML-bestand (`fstab.yaml`) |
 | Helix 5 | De Dienst API van de configuratie (*nr`fstab.yaml`*) |
@@ -42,7 +42,7 @@ Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-inst
 
 **alvorens u** begint
 
-Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. Volg de instructies van Helix 5 en gebruik de meegeleverde versie van Helix 4 YAML als fallback.
+Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. Volg de instructies van Helix 5 en gebruik de meegeleverde Helix 4 YAML versie van instructies als fallback.
 
 **Bepaal uw versie van de Helix**
 
@@ -51,20 +51,18 @@ Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/
 
 Bevestig de gegevens in de gegevensopslagruimte of raadpleeg uw beheerder als u nog niet zeker weet.
 
-#### De inhoudsbron configureren (Helix 4)
+#### De inhoudsbron voor Helix 4 configureren
 
-In Helix 4, wordt de inhoudsbron bepaald in een YAML configuratiedossier genoemd `fstab.yaml` dat bij de wortel van uw bewaarplaats GitHub wordt gevestigd.
-
-##### YAML-bestandsindeling
-
-Het bestand `fstab.yaml` definieert bevestigingspunten (URL-padvoorvoegsels die zijn toegewezen aan URL&#39;s van inhoudsbronnen), vergelijkbaar met het volgende voorbeeld (alleen ter illustratie):
+In Helix 4 definieert het bestand fstab.yaml de inhoudsbron voor uw site. Dit bestand wijst URL-padvoorvoegsels (zogenaamde bergpunten) toe aan externe inhoudsbronnen die zich in de hoofdmap van uw GitHub-opslagplaats bevinden. Een typisch voorbeeld ziet er als volgt uit:
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-##### De inhoudsbron wijzigen
+Dit voorbeeld is alleen ter illustratie. De werkelijke URL moet verwijzen naar de inhoudsbron, zoals een specifieke Google Drive-map, SharePoint-map of AEM-pad.
+
+**om de inhoudsbron voor Helix 4 te vormen:**
 
 De stappen variëren door het bronsysteem dat u gebruikt.
 
@@ -113,22 +111,20 @@ De stappen variëren door het bronsysteem dat u gebruikt.
 * Gebruikend de Uitbreiding van AEM Sidekick Chrome, klik **Voorproef** > **publiceren** > **Test de levende plaats**.
 * URL valideren: `https://main--<repo>--<org>.hlx.page/`
 
-#### Inhoudsbron configureren (Helix 5)
+#### De inhoudsbron voor Helix 5 configureren
 
-Helix 5 is zonder voorwerp, gebruikt `fstab.yaml` niet en steunt veelvoudige plaatsen die de zelfde folder delen. De configuratie wordt beheerd door de API van de Dienst van de Configuratie of de UI van Edge Delivery Services. De configuratie is plaats-niveau (niet bewaarplaats-niveau).
+Helix 5 is zonder voorwerp, gebruikt `fstab.yaml` niet, en steunt veelvoudige plaatsen die de zelfde folder delen. De configuratie wordt beheerd door de API van de Dienst van de Configuratie of de UI van Edge Delivery Services. De configuratie is plaats-niveau (niet bewaarplaats-niveau).
 
-##### Conceptuele verschillen
+Conceptuele verschillen zijn de volgende:
 
 | Verhouding | Helix 4 | Helix 5 |
 | --- | --- | --- |
-| Configuratiebestand | `fstab.yaml` | API- of UI-configuratie |
-| Bergpunten | YAML-definitie | Niet vereist (impliciete basis) |
+| Configuratie | Gereed tot en met `fstab.yaml` | Gereed via de API of UI in plaats van via YAML. |
+| Bergpunten | Gedefinieerd in `fstab.yaml` . | Niet vereist. De wortel wordt impliciet begrepen. |
 
-##### De inhoudsbron wijzigen
+**om de inhoudsbron voor Helix 5 te vormen:**
 
-Gebruik de configuratieservice-API.
-
-1. Verifieer door een API sleutel of toegangstoken.
+1. Gebruikend de Dienst API van de Configuratie, verifieer door een API sleutel of toegangstoken.
 1. Stel de volgende `PUT` API-aanroep in:
 
    ```bash {.line-numbering}
