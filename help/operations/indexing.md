@@ -4,9 +4,9 @@ description: Meer informatie over zoeken en indexeren van inhoud in AEM as a Clo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 Beperkingen:
 
-* Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene` .
-* Alleen standaardanalysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
+* Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene` . Dit betekent dat alle indexaanpassingen van het type `lucene` moeten zijn. De eigenschap `async` mag slechts een van de volgende eigenschappen zijn: `[async]` , `[async,nrt]` of `[fulltext-async]` .
 * Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Zoekopdrachten die bijvoorbeeld tegen de `damAssetLucene` -index zijn geschreven, kunnen op Skyline worden uitgevoerd tegen een Elasticsearch-versie van deze index. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar bepaalde gereedschappen, zoals de functie `explain` , rapporteren een andere index. Voor verschillen tussen de indexen van Lucene en Elastische indexen, zie [ de Elastische documentatie in Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
+* Alleen standaardanalysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
 * Zoeken op vergelijkbare eigenschapvectoren (`useInSimilarity = true`) wordt niet ondersteund.
 
 >[!TIP]
@@ -78,6 +78,9 @@ Voor aanpassingen van een OOTB-index bereidt u een nieuw pakket voor dat de feit
 Voor een volledig aangepaste index maakt u een nieuw indexdefinitiepakket dat de indexdefinitie bevat die volgt op dit naamgevingspatroon:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
+
+Zoals vermeld in de limietsecties, moet de `type` van de aangepaste indexdefinitie altijd worden ingesteld op `lucene` , zelfs als de geëxtraheerde indexdefinitie met Package Manager van een ander type is (bijvoorbeeld `elasticsearch` ).
+De eigenschap `async` moet ook worden gewijzigd als de definitie van de geëxtraheerde index is ingesteld op `elastic-async` . De eigenschap `async` moet op een van de volgende waarden worden ingesteld: `[async]` , `[async,nrt]` of `[fulltext-async]` voor de aangepaste indexdefinitie.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
