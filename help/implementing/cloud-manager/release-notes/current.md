@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
+source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-inst
 
 **alvorens u** begint
 
-Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. Volg de instructies van Helix 5 en gebruik de meegeleverde Helix 4 YAML versie van instructies als fallback.
+Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. Volg de instructies van Helix 5 en gebruik de meegeleverde versie van Helix 4 YAML van de instructies als fallback.
 
 **Bepaal uw versie van de Helix**
 
@@ -60,7 +60,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-Dit voorbeeld is alleen ter illustratie. De werkelijke URL moet verwijzen naar de inhoudsbron, zoals een specifieke Google Drive-map, SharePoint-map of AEM-pad.
+Dit voorbeeld is alleen ter illustratie. De werkelijke URL moet verwijzen naar de inhoudsbron, zoals een Google Drive-map, een SharePoint-map of een AEM-pad.
 
 **om de inhoudsbron voor Helix 4 te vormen:**
 
@@ -190,6 +190,16 @@ Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager
 ![ voeg de dialoogdoos van de Bewaarplaats ](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png) toe
 
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+
+#### Veelgestelde vragen over Je eigen gang maken
+
+| Vraag | Antwoord |
+|---|---|
+| *hoe kan een projectschakelaar terug naar de Adobe-Beheerde bewaarplaats van het Git indien nodig?* | Het is eenvoudig om terug te schakelen. [ werk de pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) bij om aan de bewaarplaats van Adobe te richten en de externe bewaarplaats te verwijderen als het niet meer vereist is. |
+| *is het mogelijk om verschillende bewaarplaatsen voor verschillende milieu&#39;s (bijvoorbeeld, niet-productie tegenover productie) te vormen om het testen in niet productie eerst toe te staan?* | Ja, verschillende opslagruimten kunnen worden geconfigureerd voor afzonderlijke omgevingen. De ontwikkelings- of codekwaliteitspijplijn kan bijvoorbeeld naar een externe opslagplaats verwijzen terwijl de productiepijplijn verbonden blijft met de Adobe-opslagplaats. Zorg ervoor dat de synchronisatietaak tussen de twee opslagruimten actief blijft tijdens deze configuratie. |
+| *blijven de bestaande montages zoals IP lijsten van gewenste personen werken?* | Ja, blijven de bestaande IP lijsten van gewenste personen zoals gebruikelijk werken. Nochtans, als de externe bewaarplaats van het Git door een firewall wordt beschermd, moeten de noodzakelijke [ adressen van Adobe IP aan de lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) worden toegevoegd. |
+| *Werken al bewaarplaats GitLab URLs? De repository URL in gebruik volgt de notatie `https://gitlab_dedicated_url.com/path/repo-name.git` , die afwijkt van het voorbeeld in de documentatie.* | Ja, om het even welke bewaarplaats GitLab die API V3 of V4 steunt wordt gesteund, met inbegrip van zelf-ontvangen GitLab URLs als die in [ wordt beschreven voeg externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toe (`https://git-vendor-name.com/org-name/repo-name.git`). |
+
 
 <!--
 ## Bug fixes
