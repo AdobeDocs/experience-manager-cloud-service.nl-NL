@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20783 samengevat, die op 13 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-20783}
 
@@ -33,9 +33,8 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * SITES-2775: Geoptimaliseerde zoekopdracht naar verwijzingen tijdens de publicatie.
 * SITES-30885: Geoptimaliseerde verwerking JSON in persisted query.
 * SITES-25433: Edge Delivery met Universal Editor: ondersteuning voor rendering van volledige pagina&#39;s bij vergelijking van oude versies.
-* SITES-27792: Edge Delivery met Universal Editor: verplaats EDS-configuratie volledig naar CA Config.
+* SITES-27792: Edge Delivery met Universal Editor: specifieke sjabloon toevoegen voor Edge Delivery Service-configuraties
 * SITES-19754: Edge Delivery met Universal Editor: aansprekend foutbericht wanneer de installatie wordt verbroken.
-* SITES-30267: Edge Delivery met Universal Editor: Datablad V2 (Vroege toegang).
 * SITES-30328: Edge Delivery met Universal Editor: voorvertoning van Sidekick-ondersteuning.
 * SITES-23499: Edge Delivery met Universal Editor: toestaan dat meerdere velden worden gebruikt voor blokopties.
 * SITES-29987: Voeg mogelijkheden toe om `previewUrlPattern` in te stellen bij het maken van modellen voor inhoudsfragmenten.
