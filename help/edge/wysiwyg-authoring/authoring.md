@@ -7,7 +7,7 @@ role: User
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -59,4 +59,4 @@ Gelieve te zien de [ Begonnen Gids van de Ontwikkelaar Begonnen voor de Authorin
 
 WYSIWYG-authoring is een krachtig en intuïtief hulpmiddel voor inhoudsauteurs. Er zijn echter veel verschillende gebruiksgevallen bij het ontwerpen, en daarom biedt AEM aanvullende oplossingen bij het ontwerpen.
 
-Gelieve te zien het document [ Kiezen een Authoring Methode ](/help/edge/authoring-methods.md) om meer over de auteursoplossingen te leren AEM aanbiedingen met inbegrip van document-gebaseerde creatie en zonder kop.
+Gelieve te zien het document [ Overzicht van Edge Delivery Services ](/help/edge/overview.md#authoring-method) om meer over de auteursoplossingen te leren AEM aanbiedingen met inbegrip van op document-gebaseerde creatie en zonder kop aanbiedt.

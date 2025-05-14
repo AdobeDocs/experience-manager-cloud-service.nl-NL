@@ -1,10 +1,13 @@
 ---
 title: Een ontwerpmethode kiezen
-description: Leer belangrijke overwegingen wanneer het beslissen over hoe u uw inhoud in AEM creeert om u te helpen de beste beslissing voor uw inhoudsauteurs nemen.
+description: Leer belangrijke overwegingen wanneer u beslist hoe u uw inhoud in AEM creeert om u te helpen de beste beslissing voor uw inhoudsauteurs nemen.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -13,18 +16,18 @@ ht-degree: 0%
 
 # Een ontwerpmethode kiezen {#authoring-methods}
 
-Leer belangrijke overwegingen wanneer het beslissen over hoe u uw inhoud in AEM creeert om u te helpen de beste beslissing voor uw inhoudsauteurs nemen.
+Leer belangrijke overwegingen wanneer u beslist hoe u uw inhoud in AEM creeert om u te helpen de beste beslissing voor uw inhoudsauteurs nemen.
 
 ## Overzicht van overwegingen {#overview}
 
-AEM flexibiliteit zorgt ervoor dat aan uw ontwerpbehoeften wordt voldaan, ongeacht of u op documenten gebaseerde ontwerpfuncties of WYSIWYG-ontwerpfuncties kiest. Houd rekening met de volgende feiten wanneer u met uw overwegingen begint.
+De flexibiliteit van AEM zorgt ervoor dat aan uw ontwerpbehoeften wordt voldaan ongeacht als u op document-gebaseerd creatie of het auteursrecht van WYSIWYG kiest. Houd rekening met de volgende feiten wanneer u met uw overwegingen begint.
 
-* **impliceert altijd uw inhoudsauteurs in het besluit.** - Uw makers van inhoud zijn uw experts en hun inzicht is van essentieel belang.
-* **de veelvoudige auteursmethodes kunnen worden uitgevoerd.** - Hoewel de Adobe aanbeveelt eenvoudig te beginnen en zo vaak als nodig is een laag te maken op basis van complexiteit, kunnen meerdere ontwerpmethoden in één project samenwerken.
-* **u kunt uw auteursmethode na-het-feit altijd veranderen.** - Wat u ook beslist, u bent niet vergrendeld. De overgang van de ene methode naar de andere is rechttoe mogelijk met behulp van de geautomatiseerde migratiehulpmiddelen van de Adobe.
+* **impliceert altijd uw inhoudsauteurs in het besluit.** - Uw makers van inhoud zijn uw experts en hun insight is van essentieel belang.
+* **de veelvoudige auteursmethodes kunnen worden uitgevoerd.** - Hoewel Adobe aanbeveelt eenvoudig te beginnen en naar complexiteit te gaan wanneer dat nodig is, kunnen meerdere ontwerpmethoden in één project samenwerken.
+* **u kunt uw auteursmethode na-het-feit altijd veranderen.** - Wat u ook beslist, u bent niet vergrendeld. De overgang van de ene naar de andere methode gaat direct door met behulp van de geautomatiseerde migratiehulpmiddelen van Adobe.
 * **u moet niet besluiten vóór de implementatie, maar eerder als deel van de implementatie.** - AEM is één enkel product, zodat moet dit belangrijke besluit geen deel van contractonderhandelingen uitmaken. Als je AEM koopt, krijg je ze allemaal. Dit is eerder een besluit tijdens de uitvoering.
 
-Adobe kan u helpen bepalen welke methode (of methodes) beste uw vereisten als deel van de implementatie passen.
+Adobe kan u helpen bepalen welke methode (of methoden) het beste bij uw vereisten passen als onderdeel van de implementatie.
 
 ## Eén grootte past niet alles {#one-size}
 
@@ -36,7 +39,7 @@ Verschillende projecten kunnen verschillende (en meerdere) gebruiksgevallen hebb
 
 ![ Gevallen van het Gebruik ](assets/use-cases.png)
 
-Adobe begrijpt dit en biedt daarom geen uniforme aanpak. AEM is uw enige oplossing die verschillende benaderingen biedt voor het leveren van inhoud en het creëren van inhoud om aan uw behoeften het best te passen.
+Adobe begrijpt dit en biedt daarom geen uniforme aanpak. AEM is uw enige oplossing die verschillende benaderingen biedt voor de levering van inhoud en voor het creëren van inhoud die het beste aansluit bij uw behoeften.
 
 Om de beste benadering te bepalen, moet u vier punten overwegen.
 
@@ -47,13 +50,13 @@ Om de beste benadering te bepalen, moet u vier punten overwegen.
 
 ## Voorkeuren voor levering van inhoud {#content-delivery}
 
-Uw eerste overweging zou moeten zijn hoe u uw inhoud wilt leveren. Edge Delivery Services bieden bliksemsnelle sites, maar misschien richt u zich op headless delivery. De volgende beslisboom kan u helpen uw opties overwegen.
+Uw eerste overweging zou moeten zijn hoe u uw inhoud wilt leveren. Edge Delivery Services biedt bliksemsnelle sites, maar misschien richt u zich op headless delivery. De volgende beslisboom kan u helpen uw opties overwegen.
 
 ![ de beslissingsboom van de levering van de inhoud ](assets/content-delivery-decision-tree.png)
 
 Dit kan u helpen beslissen als u nodig hebt:
 
-* [ AEM als koploze CMS ](/help/headless/introduction.md) gebruikend de Redacteur van het Fragment van de Inhoud en/of Universele Redacteur.
+* [ AEM als hoofdCMS ](/help/headless/introduction.md) gebruikend de Redacteur van het Fragment van de Inhoud en/of Universele Redacteur.
 * AEM Edge Delivery Services die [ op document-gebaseerde het uitgeven ](/help/edge/docs/authoring.md) gebruiken of [ WYSIWYG authoring met de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Voorkeuren voor Inhoud ontwerpen {#content-authoring}

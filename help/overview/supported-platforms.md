@@ -5,13 +5,13 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteunde clientplatforms {#supported-platforms}
 
@@ -35,7 +35,7 @@ Adobe definieert de volgende ondersteuningsniveaus voor AEM-clientplatforms.
 
 De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen in laptops, desktopcomputers en tablets (zoals Apple iPad of Microsoft Surface). De telefoonvormfactor wordt niet gesteund voor om het even welk auteursgeval.
 
-Het gebruikersinterface van Adobe Experience Manager werkt met de volgende cliëntplatforms afhankelijk van [ auteursmethode.](/help/edge/authoring-methods.md)
+Het gebruikersinterface van Adobe Experience Manager werkt met de volgende cliëntplatforms afhankelijk van [ auteursmethode.](/help/edge/overview.md#authoring-method)
 
 * [Universele editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md)
