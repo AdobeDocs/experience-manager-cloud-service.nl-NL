@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
+source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20783 samengevat, die op 13 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-20783}
 
@@ -30,6 +30,7 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * FORMS-19125: De editor voor adaptieve formulieren voor kerncomponenten is verbeterd en biedt nu ondersteuning voor automatische toewijzing van beschikbare fragmenten van adaptieve formulieren wanneer een corresponderende sectie uit de gegevensbronstructuur naar het formuliercanvas wordt neergezet. Dit brengt een zeer belangrijke productiviteitseigenschap van de stichtingsredacteur aan kerncomponenten.
 * FORMS-17887: AEM Forms biedt nu de mogelijkheid om documenten te genereren in de AFP-indeling (Advanced Function Presentation) via de uitvoerservice. Deze verbetering komt tegemoet aan de behoeften van klanten aan supersnelle, hoogwaardige afdrukomgevingen die doorgaans AFP gebruiken.
 * FORMS-15089: AEM Forms heeft de mogelijkheid geïntroduceerd om een formulier bij publicatie zodanig te versieren dat alle samenstellende fragmenten in die specifieke gepubliceerde versie worden ingebouwd (ingesloten). Dit zorgt voor een exacte, op zichzelf staande weergave van het formulier zoals het op het moment van publicatie werd weergegeven. Dit kan van essentieel belang zijn voor archiveringsdoeleinden, juridische aspecten of nalevingsdoeleinden.
+* FORMS-17107: AEM Forms biedt nu verbeterde parsering van aangepaste functies aan de clientzijde. Dit omvat ondersteuning voor moderne JavaScript-functies (ECMAScript ES10+), zoals optionele ketting, en introduceert de mogelijkheid om statische importbewerkingen te gebruiken in aangepaste functiescripts. Op deze manier kunnen ontwikkelaars code beter ordenen, ESM-modules gebruiken en eerdere beperkingen die ze hebben ondervonden met aangepaste functies in Adaptive Forms v2 en Edge Delivery Services verwijderen, met name voor gebruikers die eerder hiervoor tijdelijke oplossingen nodig hadden.
 * SITES-2775: Geoptimaliseerde zoekopdracht naar verwijzingen tijdens de publicatie.
 * SITES-30885: Geoptimaliseerde verwerking JSON in persisted query.
 * SITES-25433: Edge Delivery met Universal Editor: ondersteuning voor rendering van volledige pagina&#39;s bij vergelijking van oude versies.
@@ -70,6 +71,8 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * FORMS-19629: De JSON schema parser veroorzaakt ongeldige resultaten of onjuist interpreterend bepaalde klant-verstrekte JSON schema&#39;s. Dit probleem kan negatieve gevolgen hebben voor functies die afhankelijk zijn van correcte schemapparsering, zoals de automatische toewijzing van fragmenten.
 * FORMS-19380: De introductie van versioning-ondersteuning voor Core Component Adaptive Forms heeft onbedoeld versiemogelijkheden ingeschakeld voor verschillende andere typen middelen (bijvoorbeeld Foundation Forms, PDF-bestanden, Thema&#39;s, FDM) zonder dat er een specifiek ontwerp of tests voor deze elementtypen nodig zijn. Deze onbedoelde bijwerking wordt onderzocht.
 * FORMS-17707: De AEP (Adobe Experience Platform)-connector werkt niet correct wanneer deze is geconfigureerd om verbinding te maken met &#39;stage&#39;-omgevingen van het AEP-platform.
+FORMS-18526: Wanneer het kopiëren van een regel die voorwaarden heeft die op veelvoudige gebieden worden gebaseerd, een gebied dat binnen de voorwaarden of de acties van de regel van verwijzingen wordt voorzien (dat is niet het primaire gebied dat de regel teweegbrengt) niet bijwerken om correct naar het nieuwe gebied te verwijzen waarnaar de regel wordt gekopieerd. In plaats daarvan blijft het naar het oorspronkelijke bronveld verwijzen vanwaar de regel is gekopieerd.
+FORMS-18474: Een regel die is ontworpen om focus in te stellen op een specifiek deelvenster of een specifieke component wanneer de waarde van een bepaald veld wordt gewijzigd (bijvoorbeeld veld A), wordt ten onrechte geactiveerd door een wijziging in een veld op het formulier. Als veld B bijvoorbeeld wordt gewijzigd, wordt de focus nog steeds ingesteld op het aangewezen deelvenster, ook al was de regel alleen geconfigureerd voor wijzigingen in veld A.
 * GRANITE-58276: De cycli van de afhankelijkheid OSGi verhinderen de fabriek van de HTML manuscriptmotor correct te werken.
 * OAK-11673: Oak-segment-azure v12 CPU verhoging veroorzaakt door refreshLease.
 * SITES-30752: Gebruik `If-modified-since` niet/ `last-modified` kopballen wanneer het produceren van voortgezette vraagreactie.
@@ -90,7 +93,7 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * SITES-30728: OnTime/OffTime publiceert/UnPublish niet zoals verwacht wanneer gevormd op activa eigenschappen.
 * SITES-29789: Component Link Change on Copied Root Pages in AEM.
 * SITES-29191: Kan niet meer dan 20 SKU&#39;s toevoegen aan de component Productlijst.
-* SITES-30372: Smart Crop werkt niet op de kerncomponent Image(V2) van AEM.
+* SITES-30372: Slim uitsnijden werkt niet op de kerncomponent AEM Image(V2).
 * SITES-28693: De component van de laser geeft gebroken HTML terug wanneer de titel leeg is.
 * SITES-28668: Kan Starten met LaunchPromotionParameters niet bevorderen.
 * SITES-31005: Verbeter de UI van de Taak van de Uitvoer om de klant de vooruitgang te tonen.
