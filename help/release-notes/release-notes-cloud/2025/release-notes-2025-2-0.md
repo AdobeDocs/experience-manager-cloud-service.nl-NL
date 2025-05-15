@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2025.2.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
+source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 0%
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ We blijven de nieuwe op Spectrum UI gebaseerde Content Fragment Editor inschakel
 
 **Vertaling HTTP API**
 
-De AEM Translation HTTP REST API die al een tijdje in de eerste adoptermodus is. De documentatie kan [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) worden gevonden. Met de API kunnen de vereiste stappen in het vertaalbeheerproces voor inhoud in AEM worden geautomatiseerd.
+De AEM Translation HTTP REST API die al een tijdje in de eerste adoptermodus is. Documentatie kan [ hier worden gevonden.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) Met de API kunnen de vereiste stappen in het vertaalbeheerproces voor inhoud in AEM worden geautomatiseerd.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -99,7 +99,7 @@ In Content Hub kunt u nu naast de bestaande statische uitvoeringen ook dynamisch
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### HTML-e-mailsjablonen in Adaptive Forms
 
@@ -141,7 +141,7 @@ E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedbac
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
 
-Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
+Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
 
 Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
 
@@ -178,4 +178,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
