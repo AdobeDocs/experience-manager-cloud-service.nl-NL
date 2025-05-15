@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -87,6 +87,6 @@ Met paginasjablonen definieert u alleen de eerste inhoud van pagina&#39;s. Pagin
 
 ## Bewerkbare sjablonen {#editable-templates}
 
-De pagina&#39;s die met de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) worden gecreeerd kunnen ook op malplaatjes worden gebaseerd. De malplaatjes die worden gebruikt om pagina&#39;s voor de Universele Redacteur en de Redacteur van de Pagina tot stand te brengen AEM [ editable malplaatjes ](/help/implementing/developing/components/templates.md).
+De pagina&#39;s die met de [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) worden gecreeerd kunnen ook op malplaatjes worden gebaseerd. De malplaatjes die worden gebruikt om pagina&#39;s voor de Universele Redacteur en de Redacteur van de Pagina tot stand te brengen zowel hefboomwerking AEM [ editable malplaatjes ](/help/implementing/developing/components/templates.md).
 
-In sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Pagina-editor, worden alle functies van bewerkbare sjablonen gebruikt. Sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Universal Editor, gebruiken alleen de oorspronkelijke inhoudsfunctie.
+In sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de Pagina-editor, worden alle functies van bewerkbare sjablonen gebruikt. Sjablonen die worden gebruikt om pagina&#39;s te maken die kunnen worden bewerkt met de universele editor, gebruiken alleen de oorspronkelijke inhoudsfunctie.
