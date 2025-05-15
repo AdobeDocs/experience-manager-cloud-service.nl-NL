@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1899'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM-projec
 1. Creeer een bewaarplaats GitHub voor uw Project van AEM. Opslagplaats maken:
    1. Ga naar [ https://github.com/adobe-rnd/aem-boilerplate-forms ](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-      ![ AEM Forms Boilerplate ](/help/edge/assets/aem-forms-boilerplate.png)
+      ![ AEM Forms Boilerplate ](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
    1. Klik het **Gebruik deze malplaatje** optie en selecteer **creeer een nieuwe bewaarplaats** optie. Het scherm van de nieuwe repository wordt geopend.
 
-      ![ creeer nieuwe bewaarplaats gebruikend AEM Forms Boilerplate ](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![ creeer nieuwe bewaarplaats gebruikend AEM Forms Boilerplate ](/help/edge/docs/forms/assets/use-eds-form-template.png)
 
    1. Voor creeer een nieuw bewaarplaatsscherm, selecteer de **eigenaar**, en specificeer **Naam van de Bewaarplaats**. Adobe adviseert dat de bewaarplaats aan **Openbaar** wordt geplaatst. Zo, selecteer de **openbare** optie, en klik **creeer Bewaarplaats**.
 
@@ -89,9 +89,9 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
    Zorg ervoor dat u bewerkingsrechten voor de map hebt opgegeven aan de Adobe Experience Manager-gebruiker.
 
-   ![ omslag van het Aandeel met de Gebruiker van AEM, verstrek het uitgeven rechten-SharePoint ](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
+   ![ omslag van het Aandeel met de Gebruiker van AEM, verstrek het uitgeven rechten-SharePoint ](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![ de omslag van het Aandeel met de Gebruiker van AEM, verstrekt het uitgeven rechten - de Aandrijving van Google ](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
+   ![ de omslag van het Aandeel met de Gebruiker van AEM, verstrekt het uitgeven rechten - de Aandrijving van Google ](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
 1. Kopieer de [ voorbeeldinhoud ](/help/edge/assets/wefinance1.zip) aan uw omslag. Kopiëren:
 
@@ -237,7 +237,7 @@ Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
        npm install -g @adobe/aem-cli
    ```
 
-1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt &lt;owner> met de eigenaar van de opslagplaats en &lt;repo> met de naam van de opslagplaats:
+1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt <owner> met de eigenaar van de opslagplaats en <repo> met de naam van de opslagplaats:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -269,33 +269,87 @@ Als u een bestaand AEM-project hebt, kunt u het Adaptive Forms Block integreren 
 >[!NOTE]
 >
 >
-> Deze stap is op projecten van toepassing die met [ worden gebouwd AEM Boilerplate ](https://github.com/adobe/aem-boilerplate). Als u uw project van AEM gebruikend [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) creeerde, kunt u deze stap overslaan.
+> Deze stap is op projecten van toepassing die met [ AEM Boilerplate XWalk ](https://github.com/adobe/aem-boilerplate) worden gebouwd. Als u uw project van AEM gebruikend [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) creeerde, kunt u deze stap overslaan.
 
-Om te integreren:
+Integreren:
 
-1. **voegt vereiste dossiers en omslagen** toe
-   1. Kopieer en kleef de volgende omslagen en de dossiers van [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) in uw Project van AEM:
+1. Navigeer naar de map AEM Project repository op uw lokale systeem.
 
-      * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
-      * [ vorm-gemeenschappelijke ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) omslag
-      * [ vorm-componenten ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) omslag
-      * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
-      * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
+1. Kopieer en kleef de volgende omslagen en de dossiers van [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) in uw Project van AEM:
 
-1. **de componentendefinities en modeldossiers van de Update**
-   1. Navigeer naar het `../models/_component-definition.json` dossier in uw Project van AEM en werk het met de veranderingen van het [ _component-definition.json- dossier in de Boilerplate van AEM Forms ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48) bij.
+   * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
+   * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
+   * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
+1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het {[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
+1. Navigeer naar `/models/_section.json` in uw AEM-project en voeg &quot;form&quot; en &quot;embed-adaptive-form&quot; toe aan de componentarray van het `filters` -object:
 
-   1. Navigeer naar het `../models/_component-models.json` dossier in uw Project van AEM en werk het met de veranderingen van het [ _component-models.json dossier in de Boilerplate van AEM Forms bij ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   ```
+       "filters": [
+       {
+     "id": "section",
+     "components": [
+       .
+       .
+       .
+       "form",
+       "embed-adaptive-form"
+     ]
+    }]
+   ```
 
-1. **voeg de Redacteur van de Vorm in redacteursmanuscript** toe
-   1. Navigeer aan het `../scripts/editor-support.js` dossier in uw Project van AEM en werk het met de veranderingen van het &lbrace;[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106) bij
-1. **update ESLint configuratiedossier**
-   1. Navigeer naar het `../.eslintignore` -bestand in uw AEM-project en voeg de volgende coderegel toe om fouten met betrekking tot de regelengine voor formulierblokken te voorkomen:
+1. (Optioneel) Navigeer naar `/.eslintignore` in uw AEM-project en voeg onderliggende coderegels toe:
 
-      ```
-          blocks/form/rules/formula/*
-          blocks/form/rules/model/*
-      ```
+   ```
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
+   ```
+
+1. (Optioneel) Navigeer naar `/.eslintrc.js` in uw AEM-project en voeg onderliggende coderegels toe in het `rules` -object:
+
+   ```
+   'xwalk/max-cells': ['error', {
+     '*': 4, // default limit for all models
+     form: 15,
+     wizard: 12,
+     'form-button': 7,
+     'checkbox-group': 20,
+     checkbox: 19,
+     'date-input': 21,
+     'drop-down': 19,
+     email: 22,
+     'file-input': 20,
+     'form-fragment': 15,
+     'form-image': 7,
+     'multiline-input': 23,
+     'number-input': 22,
+     panel: 17,
+     'radio-group': 20,
+     'form-reset-button': 7,
+     'form-submit-button': 7,
+     'telephone-input': 20,
+     'text-input': 23,
+     accordion: 14,
+     modal: 11,
+     rating: 18,
+     password: 20,
+     tnc: 12,
+   }],
+   'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
+   ```
+
+1. Open de terminal en voer de onderstaande opdrachten uit:
+
+   ```
+   npm i
+   npm run build:json
+   ```
+
+   >[!NOTE]
+   >
+   > Voordat u de wijzigingen in de AEM Project-opslagplaats op GitHub aanbrengt, moet u ervoor zorgen dat de bestanden `component-definition.json` , `component-models.json` en `component-filters.json` op het hoofdniveau van het AEM-project worden bijgewerkt met de formuliergerelateerde objecten.
 
 1. Leg deze wijzigingen vast en duw deze naar uw AEM Project-opslagplaats op GitHub.
 
@@ -306,10 +360,10 @@ Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM-project. U kun
 Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
 
 * **los de Fout van de Weg van de Module op:**
-Als u de fout &quot;Onbekwaam ontmoet om weg aan module &quot;&quot;../../scripts/lib-franklin.js&quot;op te lossen, navigeer aan het [ EDS Project ] /blocks/forms/form.js- dossier. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
+Als u de fout &quot;Onbekwaam ontmoet om weg aan module &quot;&quot;/scripts/lib-franklin.js&quot;op te lossen, navigeer aan het [ EDS Project ] /blocks/forms/form.js- dossier. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
 
 * **handvat het Leiden Fouten:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het &rbrack; /package.json dossier van het Project van 0&rbrace; EDS &lbrace;en wijzig het &quot;plusteken&quot;manuscript van `"lint": "npm run lint:js && npm run lint:css"` aan `"lint": "echo 'skipping linting for now'"`. &lbrack; Sparen het dossier en begaat de veranderingen in uw project GitHub.
+Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het ] /package.json dossier van het Project van 0} EDS {en wijzig het &quot;plusteken&quot;manuscript van `"lint": "npm run lint:js && npm run lint:css"` aan `"lint": "echo 'skipping linting for now'"`. [ Sparen het dossier en begaat de veranderingen in uw project GitHub.
 
 
 ## Zie ook
