@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
+source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,12 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20783 samengevat, die op 13 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-20783}
 
-* FORMS-18455: De AEM Forms Core Component Adaptive Form Editor is verbeterd en beschikt nu over visuele indicatoren (punten) voor gegevensobjecten die al in het formulier worden gebruikt of toegewezen in de gegevensbronstructuur. Met deze functie kunnen auteurs eenvoudig gebruikte gegevenselementen herkennen.
-* FORMS-18450: het product wordt verbeterd door de reCaptcha V2-domeinlogica naar de `AdaptiveFormConfigurationServiceImpl` te migreren. Deze wijziging is bedoeld om de configuratie te centraliseren en kan worden uitgelijnd met het toevoegen van ondersteuning voor onzichtbare reCaptcha V2 in Core Components.
-* FORMS-19630: De AEM 6.5 quickstart uber-jar wordt bijgewerkt met het nieuwste Adaptive Forms Core Components-pakket, zodat de quickstart-omgeving de meest actuele Adaptive Forms-functionaliteit weerspiegelt en de oudere code vervangt.
 * FORMS-19125: De editor voor adaptieve formulieren voor kerncomponenten is verbeterd en biedt nu ondersteuning voor automatische toewijzing van beschikbare fragmenten van adaptieve formulieren wanneer een corresponderende sectie uit de gegevensbronstructuur naar het formuliercanvas wordt neergezet. Dit brengt een zeer belangrijke productiviteitseigenschap van de stichtingsredacteur aan kerncomponenten.
-* FORMS-17887: AEM Forms biedt nu de mogelijkheid om documenten te genereren in de AFP-indeling (Advanced Function Presentation) via de uitvoerservice. Deze verbetering komt tegemoet aan de behoeften van klanten aan supersnelle, hoogwaardige afdrukomgevingen die doorgaans AFP gebruiken.
-* FORMS-15089: AEM Forms heeft de mogelijkheid geïntroduceerd om een formulier bij publicatie zodanig te versieren dat alle samenstellende fragmenten in die specifieke gepubliceerde versie worden ingebouwd (ingesloten). Dit zorgt voor een exacte, op zichzelf staande weergave van het formulier zoals het op het moment van publicatie werd weergegeven. Dit kan van essentieel belang zijn voor archiveringsdoeleinden, juridische aspecten of nalevingsdoeleinden.
-* FORMS-17107: AEM Forms biedt nu verbeterde parsering van aangepaste functies aan de clientzijde. Dit omvat ondersteuning voor moderne JavaScript-functies (ECMAScript ES10+), zoals optionele ketting, en introduceert de mogelijkheid om statische importbewerkingen te gebruiken in aangepaste functiescripts. Op deze manier kunnen ontwikkelaars code beter ordenen, ESM-modules gebruiken en eerdere beperkingen die ze hebben ondervonden met aangepaste functies in Adaptive Forms v2 en Edge Delivery Services verwijderen, met name voor gebruikers die eerder hiervoor tijdelijke oplossingen nodig hadden.
+* FORMS-17107: AEM Forms biedt nu verbeterde parsering van aangepaste functies aan de clientzijde. Dit omvat ondersteuning voor moderne JavaScript-functies (ECMAScript ES10+), zoals optionele ketting, en introduceert de mogelijkheid om statische importbewerkingen te gebruiken in aangepaste functiescripts. Op deze manier kunnen ontwikkelaars code beter ordenen, ESM-modules gebruiken en eerdere beperkingen die ze hebben ondervonden met aangepaste functies in Adaptive Forms op basis van Core Components en Edge Delivery Services, verwijderen, met name voor gebruikers die eerder hiervoor tijdelijke oplossingen nodig hadden.
 * SITES-2775: Geoptimaliseerde zoekopdracht naar verwijzingen tijdens de publicatie.
 * SITES-30885: Geoptimaliseerde verwerking JSON in persisted query.
 * SITES-25433: Edge Delivery met Universal Editor: ondersteuning voor rendering van volledige pagina&#39;s bij vergelijking van oude versies.
@@ -65,14 +60,11 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * FORMS-18526: Wanneer een regel die meerdere velden in de bijbehorende omstandigheden bevat, van het ene veld naar het andere wordt gekopieerd, behoudt een vaste veldverwijzing in deze omstandigheden ten onrechte zijn verwijzing naar het oorspronkelijke bronveld in plaats van bij te werken naar het nieuwe veld waar de regel wordt gekopieerd.
 * FORMS-19047: Nadat een adaptief formulier is gewijzigd en opnieuw is gepubliceerd op AEM Forms (met name 6.5.22.0 ), ontbreken mogelijk vertalingen voor bepaalde formulierelementen, met name tekstvakken.
 * FORMS-19234: De tijdlijnfunctie voor PDF&#39;s in AEM Forms, waarmee gebruikers details kunnen bekijken over het maken en versieren van een PDF, werkt niet meer nadat een PDF is geüpload onder de sectie &#39;Forms and Documents&#39;.
-* FORMS-19373: Replicatiefouten worden onjuist gerapporteerd tijdens een &#39;gouden publicatieproces&#39; in omgevingen waarin geen replicatiemiddelen zijn geconfigureerd.
 * FORMS-18196: De HTTP-API voor `generatePrintedOutput` (of `generatePdfOutput` ) synchroniseren retourneert onjuist een antwoordcode voor 200 (Succesvol) in plaats van de verwachte foutcode voor 400 (Ongeldig verzoek) wanneer de optionele veldgegevens die door de XDP-sjabloon worden vereist, leeg blijven in de aanvraag.
 * FORMS-1936: In de Adaptieve Form Editor (AF2-editor) van de Core-component werkt de zoekfunctionaliteit in de Source-structuur voor gegevens niet correct of naar behoren, waardoor gebruikers niet gemakkelijk specifieke gegevenselementen kunnen vinden.
-* FORMS-19629: De JSON schema parser veroorzaakt ongeldige resultaten of onjuist interpreterend bepaalde klant-verstrekte JSON schema&#39;s. Dit probleem kan negatieve gevolgen hebben voor functies die afhankelijk zijn van correcte schemapparsering, zoals de automatische toewijzing van fragmenten.
-* FORMS-19380: De introductie van versioning-ondersteuning voor Core Component Adaptive Forms heeft onbedoeld versiemogelijkheden ingeschakeld voor verschillende andere typen middelen (bijvoorbeeld Foundation Forms, PDF-bestanden, Thema&#39;s, FDM) zonder dat er een specifiek ontwerp of tests voor deze elementtypen nodig zijn. Deze onbedoelde bijwerking wordt onderzocht.
 * FORMS-17707: De AEP (Adobe Experience Platform)-connector werkt niet correct wanneer deze is geconfigureerd om verbinding te maken met &#39;stage&#39;-omgevingen van het AEP-platform.
-FORMS-18526: Wanneer het kopiëren van een regel die voorwaarden heeft die op veelvoudige gebieden worden gebaseerd, een gebied dat binnen de voorwaarden of de acties van de regel van verwijzingen wordt voorzien (dat is niet het primaire gebied dat de regel teweegbrengt) niet bijwerken om correct naar het nieuwe gebied te verwijzen waarnaar de regel wordt gekopieerd. In plaats daarvan blijft het naar het oorspronkelijke bronveld verwijzen vanwaar de regel is gekopieerd.
-FORMS-18474: Een regel die is ontworpen om focus in te stellen op een specifiek deelvenster of een specifieke component wanneer de waarde van een bepaald veld wordt gewijzigd (bijvoorbeeld veld A), wordt ten onrechte geactiveerd door een wijziging in een veld op het formulier. Als veld B bijvoorbeeld wordt gewijzigd, wordt de focus nog steeds ingesteld op het aangewezen deelvenster, ook al was de regel alleen geconfigureerd voor wijzigingen in veld A.
+* FORMS-18526: Wanneer het kopiëren van een regel die voorwaarden heeft die op veelvoudige gebieden worden gebaseerd, een gebied dat binnen de voorwaarden of de acties van de regel van verwijzingen wordt voorzien (dat is niet het primaire gebied dat de regel teweegbrengt) niet bijwerken om correct naar het nieuwe gebied te verwijzen waarnaar de regel wordt gekopieerd. In plaats daarvan blijft het naar het oorspronkelijke bronveld verwijzen vanwaar de regel is gekopieerd.
+* FORMS-18474: Een regel die is ontworpen om focus in te stellen op een specifiek deelvenster of een specifieke component wanneer de waarde van een bepaald veld wordt gewijzigd (bijvoorbeeld veld A), wordt ten onrechte geactiveerd door een wijziging in een veld op het formulier. Als veld B bijvoorbeeld wordt gewijzigd, wordt de focus nog steeds ingesteld op het aangewezen deelvenster, ook al was de regel alleen geconfigureerd voor wijzigingen in veld A.
 * GRANITE-58276: De cycli van de afhankelijkheid OSGi verhinderen de fabriek van de HTML manuscriptmotor correct te werken.
 * OAK-11673: Oak-segment-azure v12 CPU verhoging veroorzaakt door refreshLease.
 * SITES-30752: Gebruik `If-modified-since` niet/ `last-modified` kopballen wanneer het produceren van voortgezette vraagreactie.
