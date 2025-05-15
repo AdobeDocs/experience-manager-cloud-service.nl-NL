@@ -21,7 +21,7 @@ Door formulieren te integreren met een formuliergegevensmodel (FDM) in de Univer
 
   ![ uitbreidingsmanager ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  Verwijs naar het ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.[
+  Verwijs naar het [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.
 
 * De prefill-service voor formulieren in de Universal Editor wordt momenteel niet ondersteund.
 
@@ -69,7 +69,7 @@ Wanneer u een op een schema gebaseerd formulier maakt, wordt het automatisch gec
 
      Standaard worden alle velden van het bijbehorende JSON-schema of het formuliergegevensmodel (FDM) automatisch geselecteerd en geconverteerd naar de overeenkomstige formuliercomponenten, waardoor het ontwerpproces wordt vereenvoudigd. Met de wizard kunt u ook selectief kiezen welke velden u in het formulier wilt opnemen met selectievakjes.
 
-1. Klik **[!UICONTROL Create]** en de **creeer 2} tovenaar van de Vorm {verschijnt.**
+1. Klik **[!UICONTROL Create]** en de **creeer 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt.**
 1. Specificeer de **Naam** en **Titel**.
 1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
    `https://github.com/wkndforms/edsforms`
