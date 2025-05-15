@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.5.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -166,11 +166,11 @@ Neem deel aan het Cloud Manager-programma voor vroege adoptie om exclusieve toeg
 
 Momenteel zijn de volgende mogelijkheden voor vroege adoptie beschikbaar:
 
-### Edge Delivery Pipet toevoegen {#add-eds-pipeline}
+### Edge Delivery Config Pipet toevoegen {#add-eds-pipeline}
 
-**Pijpleidingen** worden nu gesteund voor plaatsen die met Edge Delivery Services worden gebouwd, die dit vermogen voorbij enkel de milieu&#39;s van Cloud Service uitbreiden. U kunt **Pijpleidingen** gebruiken om montages zoals verkeer het filtreren regels en de configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
+Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services zijn gebouwd en deze mogelijkheid uitbreiden tot buiten de Cloud Service-omgevingen. U kunt **Pijpleidingen Config** gebruiken om montages zoals verkeer het filtreren regels en configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding toe ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ grp-aemeds-config-pipeline-adopter@adobe.com ](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
 
