@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
 * **Taal**: wijs om het even welke [ Taal ](#language-copies-fragment) exemplaren aan
 
-   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1&rbrace; exemplaren van de Taal &lbrace;verbonden aan het inhoudsfragment.](#language-copies-fragment)
+   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1} exemplaren van de Taal {verbonden aan het inhoudsfragment.](#language-copies-fragment)
 
      ![ de console van Fragmenten van de Inhoud - de indicator van de Taal ](assets/cf-managing-console-language-indicator.png)
 
@@ -166,14 +166,14 @@ Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toege
 ![ de console van Fragmenten van de Inhoud - toolbar voor een geselecteerd fragment ](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in nieuwe Redacteur](#editing-the-content-of-your-fragment)**
-* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in originele redacteur)
 * **[publiceer](#publishing-and-previewing-a-fragment)** (en **[unpublish](#unpublishing-a-fragment)**)
 * **[beheert Markeringen](#manage-tags)**
-* **[Exemplaar](/help/assets/manage-digital-assets.md)**
-* **[Beweging](/help/assets/manage-digital-assets.md)**
-* **[anders noemen](/help/assets/manage-digital-assets.md)**
-* **[Schrapping](#deleting-a-fragment)**
+* **Exemplaar**
 * **[vervangen](#find-and-replace)**
+* **Beweging**
+* **anders noemen**
+* **[Schrapping](#deleting-a-fragment)** (slechts beschikbaar voor niet gepubliceerde fragmenten)
+
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ U kunt de publicatie van inhoudsfragmenten ongedaan maken:
 
 * de toolbar van de [ redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **&#x200B;**&#x200B;of **wordt gevolgd Gepland**.
+In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **** of **wordt gevolgd Gepland**.
 
 Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service selecteren:
 
@@ -434,7 +434,7 @@ Zodra geselecteerd, wordt het **Filtreren door** opties getoond (onder het vakje
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3&rbrace; kolom van de Status &lbrace;:**
+Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3} kolom van de Status {:**
 
 >[!NOTE]
 >
