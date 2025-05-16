@@ -4,7 +4,7 @@ description: Leer hoe u een CDN-configuratie toevoegt aan een Edge Delivery-site
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Leer hoe u Edge Delivery-sites in Cloud Manager beheert door een CDN-configuratie toe te voegen aan een bestaande site. Of verwijder een Edge Delivery-site.
 
-## Een CDN-configuratie toevoegen aan een bestaande Edge Delivery-site {#add-cdn-to-edge-delivery-site}
+## Een domeintoewijzing toevoegen aan een bestaande Edge Delivery-site {#add-cdn-to-edge-delivery-site}
 
-Zie [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen.
+Zie [ een Toewijzing van het Domein ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) toevoegen.
 
 ## De naam van een Edge Delivery-site wijzigen (#rename-edge-delivery-site)
 
@@ -38,7 +38,7 @@ Klik **anders noemen**.
    * In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren. Onder de **rubriek van de Diensten**, klik ![ het pictogram van Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
 In de de plaatslijst van Edge Delivery, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats wilt anders noemen. Klik **anders noemen**.
 
-1. In **geef de dialoogdoos van de Plaats van Edge Delivery** uit, op het **3&rbrace; tekstgebied van de Naam van de Plaats &lbrace;, ga de nieuwe naam van de plaats in.**
+1. In **geef de dialoogdoos van de Plaats van Edge Delivery** uit, op het **3} tekstgebied van de Naam van de Plaats {, ga de nieuwe naam van de plaats in.**
 
 1. Klik **uitgeven**.
 

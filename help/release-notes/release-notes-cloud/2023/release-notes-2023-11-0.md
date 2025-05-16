@@ -4,7 +4,7 @@ description: Nota's van de versie voor 2023.11.0 versie van  [!DNL Adobe Experie
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 0%
@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -53,7 +53,7 @@ Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-he
 
 ### Nieuwe functies in Assets View {#assets-view-features}
 
-* **Ingebedde redacteur van de Adobe Express in AEM Assets**: De gebruikers met toegang om uit te drukken hebben nu beeld het uitgeven en creatie hulpmiddelen van Adobe Express en Adobe Firefly beschikbaar direct binnen AEM Assets om inhoudshergebruik te verbeteren en inhoudssnelheid te versnellen.
+* **Ingebedde redacteur van Adobe Express in AEM Assets**: De gebruikers met toegang tot Uitdrukkelijke hebben nu beeld het uitgeven en creatie hulpmiddelen van Adobe Express en Adobe Firefly beschikbaar direct binnen AEM Assets om inhoudshergebruik te verbeteren en inhoudssnelheid te versnellen.
 
   ![ wijs meta-gegevensvorm aan een omslag ](/help/assets/assets/adobe-express-aem-assets.png) toe
 
@@ -70,7 +70,7 @@ Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-he
 
   ![ de inzichten van het opslaggebruik ](/help/assets/assets/storage-usage-insights.png)
 
-* **de eerste homepageconfiguratie van het 0&rbrace; Onderzoek &lbrace;: Experience Manager Assets laat u nu toe om de homepage ervaring voor uw organisatie te vormen.** Als u eerst zoeken selecteert als startpagina, kunt u de uitlijning van de zoekbalk, de achtergrondafbeelding en het logo voor uw organisatie configureren.
+* **de eerste homepageconfiguratie van het 0} Onderzoek {: Experience Manager Assets laat u nu toe om de homepage ervaring voor uw organisatie te vormen.** Als u eerst zoeken selecteert als startpagina, kunt u de uitlijning van de zoekbalk, de achtergrondafbeelding en het logo voor uw organisatie configureren.
 
   ![ onderzoek eerste configuratie ](/help/assets/assets/search-first-configuration.png)
 
@@ -82,13 +82,13 @@ Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-he
 
 ### Nieuwe functies in [!DNL Experience Manager Forms] {#forms-features}
 
-* **[CheckBox component ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=nl-NL)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een checkbox component omvatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
+* **[CheckBox component ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een checkbox component omvatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
 
-* **[de component van de Bepalingen en van de Voorwaarden ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=nl-NL)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een component van de Voorwaarden en van de Voorwaarden omvatten. Hiermee kunnen auteurs van formulieren een specifieke sectie in het formulier invoeren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
+* **[de component van de Bepalingen en van de Voorwaarden ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een component van de Voorwaarden en van de Voorwaarden omvatten. Hiermee kunnen auteurs van formulieren een specifieke sectie in het formulier invoeren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
 
   ![ Checkbox, Termen en Voorwaarden, en Verticale lusjecomponenten ](/help/forms/assets/forms-components.png)
 
-* **[Verticale de component van lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=nl-NL)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan vorminhoud in een verticale lijst van lusjes nu organiseren, die een gestructureerde en navigeerbare lay-out verstrekken. Het gebruik van verticale tabbladen in een formulier kan de algehele gebruikerservaring verbeteren door de navigatie te vereenvoudigen en de organisatie van formulierinhoud te verbeteren, met name in situaties waarin een formulier meerdere secties of complexe informatie bevat.
+* **[Verticale de component van lusjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan vorminhoud in een verticale lijst van lusjes nu organiseren, die een gestructureerde en navigeerbare lay-out verstrekken. Het gebruik van verticale tabbladen in een formulier kan de algehele gebruikerservaring verbeteren door de navigatie te vereenvoudigen en de organisatie van formulierinhoud te verbeteren, met name in situaties waarin een formulier meerdere secties of complexe informatie bevat.
 
 
 
@@ -104,27 +104,27 @@ Wilt u de functie proberen en feedback delen? Verzend een e-mail naar **aemcs-he
 
 ### Programma voor vroege adoptie {#forms-early-adopter}
 
-* **leg een Aangepast Vorm aan het Scenario van de Fusie van Adobe Workfront voor**: Forms as a Cloud Service biedt een uit-van-de-doosopties aan om een Aangepast Vorm met Adobe Workfront moeiteloos aan te sluiten. Dit vereenvoudigt het proces om een Adaptief Formulier aan een scenario van Adobe Workfront voor te leggen, toelatend u een scenario van de Fusie van Workfront op voorlegging van een Aangepast Vorm teweegbrengt.
+* **voorlegt een Aangepast Vorm aan het Scenario van de Fusie van Adobe Workfront**: Forms as a Cloud Service biedt een uit-van-de-doosopties aan om een Aangepast Vorm met Adobe Workfront moeiteloos aan te sluiten. Dit vereenvoudigt het proces om een Adaptief Formulier aan een scenario van Adobe Workfront voor te leggen, toelatend u een scenario van de Fusie van Workfront op voorlegging van een Aangepast Vorm teweegbrengt.
 
 * **Recht aan linkertaalsteun**: De adaptieve Forms die op de Componenten van de Kern wordt gebouwd kan nu in een (RTL) taal zoals Arabisch, Perzisch, en Urdu worden voorgesteld. De RTL-talen worden wereldwijd gesproken door meer dan 2 miljard mensen. Door een formulier in RTL-taal te gebruiken, kunt u het bereik van uw adaptieve formulieren uitbreiden naar deze verschillende doelgroepen en op RTL-markten tikken. In bepaalde regio&#39;s is het ook een wettelijk mandaat om formulieren in de lokale taal te verstrekken. Door lokale talen aan te passen, opent u niet alleen deuren voor een breder publiek, maar zorgt u ook voor naleving van relevante wetten en regels.
 
   ![ Recht aan linkertaalsteun ](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect uw documenten met DocAssurance APIs (Deel van Communicatie APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance APIs machtigt u om gevoelige informatie te beschermen door de documenten te ondertekenen en te coderen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
+* **[bescherm uw documenten met DocAssurance APIs (Deel van Communicatie APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance APIs machtigt u om gevoelige informatie te beschermen door de documenten te ondertekenen en te coderen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
   U kunt vanuit uw officiële e-mailid naar `aem-forms-ea@adobe.com` schrijven om deel te nemen aan het programma voor vroegtijdige adoptie en toegang tot deze functie aanvragen.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### WAF-filterregels kunnen nu worden gelicentieerd {#cdn-waf-license}
+### WAF Traffic Filter Rules can now be licensed {#cdn-waf-license}
 
-De Regels van de Filter van het verkeer werden vrijgegeven in Oktober, en omvatten een nota dat de speciale categorie van de regels van de Firewall van de Toepassing van het Web (WAF) later dit jaar beschikbaar zou zijn om de regels aan te vullen die reeds beschikbaar aan Sites en klanten van Forms zijn. Als update kan het WAF-DDoS Protection-aanbod nu een licentie krijgen.
+De Regels van de Filter van het verkeer werden vrijgegeven in Oktober, en omvatten een nota dat de speciale categorie van de regels van de Firewall van de Toepassing van het Web (WAF) later dit jaar beschikbaar zou zijn om de regels aan te vullen die reeds beschikbaar aan Plaatsen en klanten van Forms zijn. Voor de WAF-DDoS Protection-aanbieding kan nu een licentie worden verleend.
 
 Zodra vergunning gegeven, kunnen deze geavanceerde regels van WAF aan CDN worden opgesteld gebruikend de Pijpleiding van de Configuratie van Cloud Manager om een extra laag van bescherming tegen Webaanvallen toe te voegen.
 
-Lees over [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), met inbegrip van WAF. Neem contact op met uw AEM accountteam over het verlenen van licenties voor WAF-DDoS-beveiliging of uitgebreide beveiliging.
+Lees over [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), met inbegrip van WAF. Bespreek een licentie voor WAF-DDoS-beveiliging of Enhanced Security met uw AEM-accountteam.
 
-### Programma voor vroege adopter van CDN-configuratie {#cdn-config-early-adopter}
+### Programma voor vroege adoptie van domeintoewijzing {#cdn-config-early-adopter}
 
 Naast onlangs vrijgegeven [ Regels van de Filter van het Verkeer (met inbegrip van WAF) ](/help/security/traffic-filter-rules-including-waf.md), is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. We zouden graag iets over uw gebruiksgevallen horen, zoals:
 * 301/302 omleidingen op de client
@@ -149,4 +149,4 @@ U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hie
 
 * Kan Adaptieve Forms niet verzenden op basis van Core Components. Dit probleem doet zich voor bij Adaptive Forms die is gebouwd met Core Components versies 2.0.38 - 2.0.60.
 
-  U lost dit probleem op. u kunt overschakelen naar Adaptive Form Core Components versie 2.0.62 of hoger. Om een versie van de Adaptieve Componenten van de Kern van Forms voor uw milieu te plaatsen, [ vastgestelde versies van core.forms.components.version, core.forms.components.af.version, en core.wcm.components.version component ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) gebiedsdelen in uw as a Cloud Service plaats van Forms of AEM op Archetype gebaseerd project en [ stelt de veranderingen in uw as a Cloud Service milieu van Forms ](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment) op. U kunt de recentste versie van de Adaptieve Verdedigingen van de Componenten van de Kern van Forms van de Kern bij [ Aangepaste bewaarplaats van het Git van de Componenten van de Forms vinden ](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  U lost dit probleem op. u kunt overschakelen naar Adaptive Form Core Components versie 2.0.62 of hoger. Om een versie van de Adaptieve Componenten van de Kern van Forms voor uw milieu te plaatsen, [ vastgestelde versies van core.forms.components.version, core.forms.components.af.version, en core.wcm.components.version component ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) gebiedsdelen in uw op archieftype gebaseerde Forms as a Cloud Service of AEM project en [ stelt de veranderingen in uw milieu van Forms as a Cloud Service ](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment) op. U kunt de recentste versie van de Adaptieve Verdedigingen van de Componenten van de Kern van Forms van de Kern bij [ Aangepaste bewaarplaats van het Git van de Componenten van de Forms vinden ](https://github.com/adobe/aem-core-forms-components#system-requirements).

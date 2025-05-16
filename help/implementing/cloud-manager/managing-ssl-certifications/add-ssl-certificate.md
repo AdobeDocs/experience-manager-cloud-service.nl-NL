@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Leer hoe u uw eigen SSL-certificaat of door Adobe beheerd DV-certificaat (Domain
 
 >[!NOTE]
 >
->Als u een klant beheerde (OV/EV) SSL certificaat en een klant beheerde leverancier CDN gebruikt, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+>Als u een klant beheerde (OV/EV) SSL certificaat en een klant beheerde leverancier CDN gebruikt, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een Afbeelding van het Domein toevoegen ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) wanneer klaar.
 
 Het indienen van een certificaat kan enkele dagen in beslag nemen. Daarom raadt Adobe u aan om uw eigen certificaat ruim vóór een deadline of doorloopdatum in te voeren om vertragingen te voorkomen.
 
@@ -85,7 +85,7 @@ Hebt u hulp nodig bij het kiezen of u een door Adobe beheerd SSL-certificaat (aa
 
 U hebt nu een werkend door Adobe beheerd DV SSL-certificaat toegevoegd voor uw project. Deze stap is vaak de eerste die een aangepaste domeinnaam instelt.
 
-U bent nu klaar om de configuratie van a [ CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toe te voegen.
+U bent nu klaar om de configuratie van a [ CDN ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) toe te voegen.
 
 ## Een door de klant beheerd (OV/ED) SSL-certificaat toevoegen {#add-customer-managed-ssl-cert}
 
@@ -132,7 +132,7 @@ Dit veld is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk na
 
 U hebt nu een werkend SSL-certificaat toegevoegd voor uw project. Deze stap is vaak de eerste die een aangepaste domeinnaam instelt.
 
-U bent nu klaar om de configuratie van a [ CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toe te voegen.
+U bent nu klaar om de configuratie van a [ CDN ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) toe te voegen.
 
 
 
