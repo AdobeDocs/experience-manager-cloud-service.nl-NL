@@ -127,7 +127,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
 * **Taal**: wijs om het even welke [ Taal ](#language-copies-fragment) exemplaren aan
 
-   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1} exemplaren van de Taal {verbonden aan het inhoudsfragment.](#language-copies-fragment)
+   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1&rbrace; exemplaren van de Taal &lbrace;verbonden aan het inhoudsfragment.](#language-copies-fragment)
 
      ![ de console van Fragmenten van de Inhoud - de indicator van de Taal ](assets/cf-managing-console-language-indicator.png)
 
@@ -334,7 +334,7 @@ U kunt de publicatie van inhoudsfragmenten ongedaan maken:
 
 * de toolbar van de [ redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **** of **wordt gevolgd Gepland**.
+In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **&#x200B;**&#x200B;of **wordt gevolgd Gepland**.
 
 Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service selecteren:
 
@@ -434,7 +434,7 @@ Zodra geselecteerd, wordt het **Filtreren door** opties getoond (onder het vakje
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3} kolom van de Status {:**
+Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3&rbrace; kolom van de Status &lbrace;:**
 
 >[!NOTE]
 >
