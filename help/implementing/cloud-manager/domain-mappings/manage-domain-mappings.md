@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
+source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Leer hoe u met Cloud Manager CDN-configuraties voor een Edge Delivery-site of een Cloud Manager-omgeving kunt bewerken of verwijderen.
 
-## Een CDN-configuratie bewerken via de pagina Domeintoewijzingen {#edit-cdn}
+## Een CDN-configuratie bewerken via de pagina Domeintoewijzingen {#edit-domain-mapping}
 
 In Adobe Cloud Manager kunt u om verschillende redenen een CDN-configuratie (Content Delivery Network) bewerken, inclusief de milieulaag (Publiceren of Voorvertoning) en het SSL-certificaat.
 
@@ -34,7 +34,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 1. In het linkerzijmenu, onder **Diensten**, klik ![ het netwerkpictogram van de Sociale Zaken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.
 1. In de **lijst van Toewijzingen van het Domein**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan configuratie CDN u wilt bijwerken.
 
-1. Van het drop-down menu, geeft de klik **&#x200B;**&#x200B;uit.
+1. Van het drop-down menu, geeft de klik **** uit.
 
 1. In **geef CDN configuratie** dialoogdoos uit, plaats één of meerdere opties in de respectieve drop-down lijst.
 
@@ -59,7 +59,7 @@ De stappen voor het uitgeven van een configuratie CDN van de **pagina van Milieu
 
 1. Voor de pagina van milieudetails, in de Mappingen van het Domein groeperen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dat aan de configuratie beantwoordt CDN u wilt uitgeven.
 
-1. In pop-up menu, geeft de klik **&#x200B;**&#x200B;uit.
+1. In pop-up menu, geeft de klik **** uit.
 
 1. In **geef de dialoogdoos van de Toewijzing van het Domein uit**, plaats één of meerdere opties in de respectieve drop-down lijst.
 
