@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20936 samengevat, die op 19 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 >[!NOTE]
 >
