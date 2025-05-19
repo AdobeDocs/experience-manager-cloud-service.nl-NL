@@ -4,9 +4,9 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2540'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,6 @@ Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-conf
 |---|---|
 | `org.apache.sling.commons.log.names` | De Java-pakketten waarvoor loginstructies moeten worden verzameld. |
 | `org.apache.sling.commons.log.level` | Het logniveau waarop de Java-pakketten moeten worden geregistreerd, opgegeven door `org.apache.sling.commons.log.names` |
-| `org.apache.sling.commons.log.file` | Geef het doel voor de uitvoer op: `logs/error.log` |
 
 Het veranderen van andere Logmanager OSGi configuratieeigenschappen kan in beschikbaarheidskwesties in AEM as a Cloud Service resulteren.
 
