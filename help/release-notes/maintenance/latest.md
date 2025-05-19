@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 20783 {#20783}
+## Release 20936 {#20936}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20783 samengevat, die op 13 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20936 samengevat, die op 19 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-20783}
+>[!NOTE]
+>
+>Release 20783 is op 19 mei privé gemaakt en is vervangen door release 20936.
+
+### Verbeteringen {#enhancements-20936}
 
 * FORMS-19125: De editor voor adaptieve formulieren voor kerncomponenten is verbeterd en biedt nu ondersteuning voor automatische toewijzing van beschikbare fragmenten van adaptieve formulieren wanneer een corresponderende sectie uit de gegevensbronstructuur naar het formuliercanvas wordt neergezet. Dit brengt een zeer belangrijke productiviteitseigenschap van de stichtingsredacteur aan kerncomponenten.
 * FORMS-17107: AEM Forms biedt nu verbeterde parsering van aangepaste functies aan de clientzijde. Dit omvat ondersteuning voor moderne JavaScript-functies (ECMAScript ES10+), zoals optionele ketting, en introduceert de mogelijkheid om statische importbewerkingen te gebruiken in aangepaste functiescripts. Op deze manier kunnen ontwikkelaars code beter ordenen, ESM-modules gebruiken en eerdere beperkingen die ze hebben ondervonden met aangepaste functies in Adaptive Forms op basis van Core Components en Edge Delivery Services, verwijderen, met name voor gebruikers die eerder hiervoor tijdelijke oplossingen nodig hadden.
@@ -46,7 +50,7 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * SITES-26711: Koppelingen voor RTE-tekstvelden worden niet bijgewerkt om naar de live kopie op MSM-rollout te verwijzen.
 * SITES-25976: Koppelingen binnen ervaringsfragmenten die zich niet aanpassen na MSM-implementatie.
 
-### Opgeloste problemen {#fixed-issues-20783}
+### Opgeloste problemen {#fixed-issues-20936}
 
 * ASSETS-50994: Binnenkomend verkeer geblokkeerd bij AemRequestEventFilter.
 * CQ-4358591: Ontbrekende projecten voor weinig talen wanneer taalkopieën worden gemaakt in het referentiepaneel van sites met de optie &quot;Vertaalprojecten(en) maken&quot;.
@@ -92,21 +96,22 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * SITES-31020: Verbeter Create Live Copy Job UI om de klant de voortgang te laten zien.
 * SITES-29816: Fout &quot;Resource Not Found&quot; tijdens het maken van een live kopie van ervaringsfragment.
 * SITES-29363: De knop Live kopie herstellen werkt niet voor een geneste inhoudshiërarchie voor live kopieën.
+* SITES-31467: JS-fouten van `contexthub.authoring-hook.js` in de pagina-editor.
 * SKYOPS-106509: Voeg extra toe:voegen-opent vlaggen toe om GSON weerspiegelende toegang op Java 21 te steunen.
 
-### Bekende problemen {#known-issues-20783}
+### Bekende problemen {#known-issues-20936}
 
-Geen.
+* SITES-28030: De optie Begindoel ontbreekt bij het selecteren van een doeloptie.
 
-### Verouderde functies en API&#39;s {#deprecated-20783}
+### Verouderde functies en API&#39;s {#deprecated-20936}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-20783}
+### Beveiligingsproblemen {#security-20936}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 19 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-20783}
+### Ingesloten technologieën {#embedded-tech-20936}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
