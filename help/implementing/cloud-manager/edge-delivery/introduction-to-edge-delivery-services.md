@@ -4,9 +4,9 @@ description: Leer hoe je Cloud Manager-projecten kunt leveren met Edge Delivery 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 9d866df00c25a827d351fcaf21a8c63ab04e6e41
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,8 @@ Maximaliseer uw voordelen van Adobe door uw Edge Delivery Services-licentie te o
 * [ Toegang SLA die ](/help/implementing/cloud-manager/sla-reporting.md) meldt (*binnenkort komt*)
 * [ de toegang van de winst tot de steun van Adobe ](/help/edge/overview.md#support-ticket) voor uw geregistreerde productieprogramma&#39;s.
 
-Bovendien het gebruiken van Cloud Manager laat u [ Adobe beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) voor uw plaats van Edge Delivery gebruiken en uit zeer belangrijke voordelen zoals zelfbediening CDN beheer, met inbegrip van de configuratie en de toevoeging van DV certificaten voordeel halen. Bovendien vernieuwt Adobe het DV-certificaat na het maken ervan automatisch elke drie maanden, tenzij het wordt verwijderd. Als u geen Edge Delivery Services-licentie voor Adobe hebt en besluit deze voordelen te omzeilen, kunt u alleen uw eigen CDN gebruiken. Deze opstelling moet op het [`aem.live` platform ](https://www.aem.live/docs/go-live-checklist#cdn-configuration) zijn.
+Bovendien het gebruiken van Cloud Manager laat u [ Adobe beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) voor uw plaats van Edge Delivery gebruiken en uit zeer belangrijke voordelen zoals zelfbediening CDN beheer, met inbegrip van de configuratie en de toevoeging van DV certificaten voordeel halen. Bovendien vernieuwt Adobe het DV-certificaat na het maken ervan automatisch elke drie maanden, tenzij het wordt verwijderd. Als u geen Edge Delivery Services vergunning met Adobe hebt en verkiest om uw zelf-geleide CDN te gebruiken, moet die opstelling op het [`aem.live` platform ](https://www.aem.live/docs/go-live-checklist#cdn-configuration) lopen.
+
 
 ## Informatie over het toevoegen van Edge Delivery Services aan een productieprogramma of sandboxprogramma
 
@@ -83,7 +84,7 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | 7 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Zie [ gaan-Levende checklist ](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441567?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
