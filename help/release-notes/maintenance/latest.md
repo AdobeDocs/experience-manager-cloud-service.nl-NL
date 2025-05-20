@@ -24,7 +24,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 20626 samengevat, die op 29 april 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20476.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-20626}
 
@@ -63,7 +63,7 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * GUIDEN-25969: Als het `scope=external` attribuut van externe verbindingen in een DITA onderwerp mist, ontbreekt het publiceren HTML5 zonder op de dossiers te wijzen waar dit attribuut in de foutenlogboeken mist, vooral wanneer de microservice wordt toegelaten.
 * GUIDES-27288: Kan de eigenschappen van metagegevens niet doorgeven om bestemmingspagina&#39;s die zijn gegenereerd met behulp van nieuwe AEM Sites-publicaties toe te wijzen.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekende problemen {#known-issues-20626}
 
