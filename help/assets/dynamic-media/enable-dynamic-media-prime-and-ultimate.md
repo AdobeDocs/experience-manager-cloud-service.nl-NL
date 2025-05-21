@@ -216,7 +216,7 @@ Voer de volgende stappen in Cloud Manager uit om een aangepast domein in de leve
 
 1. [ voeg een naam van het douanedomein ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings) toe.
 
-1. Navigeer aan de pagina van milieudetails en [ voeg een configuratie CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping) toe. Selecteer tijdens het toevoegen van de configuratie **[!UICONTROL Delivery]** in het veld **[!UICONTROL Tier]** in het dialoogvenster **[!UICONTROL Configure CDN]** .
+1. Navigeer aan de pagina van milieudetails en [ voeg een configuratie CDN ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping) toe. Selecteer tijdens het toevoegen van de configuratie **[!UICONTROL Delivery]** in het veld **[!UICONTROL Tier]** in het dialoogvenster **[!UICONTROL Configure CDN]** .
 
    ![ vorm CDN ](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
