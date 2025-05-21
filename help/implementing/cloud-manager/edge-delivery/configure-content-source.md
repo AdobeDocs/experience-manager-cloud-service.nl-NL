@@ -1,11 +1,12 @@
 ---
 title: Source voor inhoud configureren
-description: Leer hoe u de inhoudsbron voor uw Edge Delivery-site configureert met fstab.yaml in Helix 4 of de Edge Delivery Services UI (of Configuration Service API) in Helix 5.
+description: Leer hoe u de inhoudsbron voor uw Edge Delivery-site configureert met fstab.yaml in Helix 4 of met de wizard met instructies in Cloud Manager (of de Configuratie-service-API) in Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
+source-git-commit: 56ab7a402a2fa7bdcf30bd66045b04e9314bed64
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/
 **Bepaal uw versie van de Helix**
 
 * Helix 4 - Uw project bevat een `fstab.yaml` -bestand.
-* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door [ Edge Delivery Services UI ](#config-helix5) of API.
+* Helix 5 - Uw project *gebruikt* niet `fstab.yaml` en werd opstelling door [ Cloud Manager gebruikend de geleide tovenaar ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) of API.
 
 Bevestig de gegevens in de gegevensopslagruimte of raadpleeg uw beheerder als u nog niet zeker weet.
 
