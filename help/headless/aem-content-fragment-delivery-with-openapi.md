@@ -4,9 +4,9 @@ description: Meer informatie over de levering van tAEM-inhoudsfragmenten met Ope
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In Adobe Experience Manager (AEM) as a Cloud Service wordt de AEM OpenAPI voor het leveren van inhoudsfragmenten:
 
-* is een VERTONING API van HTTP op [ AEM Edge Delivery Services ](/help/edge/overview.md), die wordt ontworpen om gestructureerde inhoud van de Fragmenten van de Inhoud in formaat te leveren JSON
+* is een OpenAPI die is geoptimaliseerd voor live levering van AEM Content Fragments in JSON-indeling
 * biedt een moderne CDN-integratie die het mogelijk maakt actieve inhoud te valideren
 * richt zich op de levering van inhoud (prestaties, scalability, integratie CDN, geoptimaliseerde controle JSON en output)
 * bevat de mogelijkheid om JSON te hydrateren voor fragmenten en elementen waarnaar wordt verwezen
