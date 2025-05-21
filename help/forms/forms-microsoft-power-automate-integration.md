@@ -1,19 +1,21 @@
 ---
-title: Hoe kan ik een adaptief formulier integreren met Microsoft® Power Automate?
-description: Een adaptief formulier integreren met Microsoft® Power Automate.
+title: Hoe kan ik een adaptief formulier integreren met Microsoft&reg; Power Automate?
+description: Een adaptief formulier integreren met Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-keywords: Sluit AEM formules aan op automatisering, automatisering van Power Automate AEM Forms, integreer stroom automatisch op Adaptive Forms, verzend gegevens van Adaptive Forms naar Power Automate
+keywords: AEM-formaten aansluiten op automatisering, automatisering van Power Automate AEM Forms, stroomautomatisering integreren in Adaptive Forms, gegevens verzenden van Adaptive Forms naar Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
+source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
 
 
 # Een adaptief formulier aansluiten met Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+
+<span class="preview"> Als u op GovCloud bent en verbinding moet maken met een GCC-huurder (Government Cloud Computing), stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com om toegang aan te vragen via het programma voor vroege adoptie. </span>
 
 U kunt een adaptief formulier configureren om een Microsoft® Power Automate Cloud Flow uit te voeren bij verzending. Met het geconfigureerde adaptieve formulier worden vastgelegde gegevens, bijlagen en het document met records naar Power Automate Cloud Flow verzonden voor verwerking. Het helpt u om een aangepaste ervaring op het gebied van gegevensvastlegging op te bouwen en tegelijk de kracht van Microsoft® Power Automate te benutten om bedrijfslogics rond vastgelegde gegevens te bouwen en de workflows van klanten te automatiseren.
 
@@ -37,17 +39,17 @@ U hebt het volgende nodig om een adaptief formulier te verbinden met Microsoft®
 
 * Microsoft® Power Automate Premium-licentie.
 * Microsoft® [ Macht Automate stroom ](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) met de `When an HTTP request is received` trekker om de Aangepaste Vorm goed te keuren voorlegt gegevens.
-* Een gebruiker van de Experience Manager met [ Auteur van Forms ](/help/forms/forms-groups-privileges-tasks.md) en [ Admin van Forms ](/help/forms/forms-groups-privileges-tasks.md) voorrechten
+* Een gebruiker van Experience Manager met [ Forms Auteur ](/help/forms/forms-groups-privileges-tasks.md) en [ Forms Admin ](/help/forms/forms-groups-privileges-tasks.md) voorrechten
 * Account dat wordt gebruikt om verbinding te maken met Microsoft® Power Automate is eigenaar van de Power Automate-flow die is geconfigureerd om gegevens van het adaptieve formulier te ontvangen
 
-## Sluit uw Forms as a Cloud Service instantie aan met Microsoft® Power Automate {#connect-forms-server-with-power-automate}
+## Sluit uw Forms as a Cloud Service-exemplaar aan met Microsoft® Power Automate {#connect-forms-server-with-power-automate}
 
-Voer de volgende handelingen uit om uw Forms as a Cloud Service instantie te verbinden met Microsoft® Power Automate:
+Voer de volgende handelingen uit om uw Forms as a Cloud Service-exemplaar te verbinden met Microsoft® Power Automate:
 
 1. [Een Microsoft maken](#ms-power-automate-application)
 1. [Microsoft maken](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [Microsoft maken](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Microsoft publiceren](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Microsoft® Azure Active Directory-toepassing maken {#ms-power-automate-application}
 
@@ -87,7 +89,7 @@ Klik op `Add permissions` om de machtigingen op te slaan.
 
 1. Op de auteursinstantie van AEM Forms, navigeer aan **[!UICONTROL Tools]** ![ hammer ](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
 1. Selecteer op de pagina **[!UICONTROL Configuration Browser]** de optie **[!UICONTROL Create]** .
-1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een **[!UICONTROL Title]** voor de configuratie op, schakel **[!UICONTROL Cloud Configurations]** in en selecteer **[!UICONTROL Create]** . Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
+1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een **[!UICONTROL Title]** voor de configuratie op, schakel **[!UICONTROL Cloud Configurations]** in en selecteer **[!UICONTROL Create]** . Er wordt een configuratiecontainer gemaakt voor de opslag van Cloud Services. Zorg ervoor dat de mapnaam geen ruimte bevat.
 1. Navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** en open de configuratiecontainer u in de vorige stap creeerde.
 
 
@@ -126,17 +128,17 @@ Klik op `Add permissions` om de machtigingen op te slaan.
 
 1. Selecteer **[!UICONTROL Connect]**. Meld u desgevraagd aan bij uw Microsoft® Azure-account. Selecteer **[!UICONTROL Save]** .
 
-### Publish zowel de Microsoft® Power Automate Data verse als de Microsoft® Power Automate Flow Service Cloud Configurations {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Publiceer zowel de Microsoft® Power Automate Data verse als de Microsoft® Power Automate Flow Service Cloud Configurations {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** en open de configuratiecontainer u in de vorige [ creeerde Macht Microsoft® Macht Automate Dataverse Cloud van de Configuratie ](#microsoft-power-automate-dataverse-cloud-configuration) sectie.
 1. Selecteer de `dataverse` -configuratie en selecteer **[!UICONTROL Publish]** .
-1. Selecteer **[!UICONTROL All Configurations]** op de Publish-pagina en selecteer **[!UICONTROL Publish]** . Publish: zowel Power Automate Data verse als Power Automate Flow Service Cloud Configurations.
+1. Selecteer **[!UICONTROL All Configurations]** op de pagina Publiceren en selecteer **[!UICONTROL Publish]** . Publiceer zowel Power Automate Data verse als Power Automate Flow Service Cloud Configurations.
 
-Uw Forms as a Cloud Service-instantie is nu verbonden met Microsoft® Power Automate. U kunt nu Adaptive Forms-gegevens naar een Power Automate-flow verzenden.
+Uw Forms as a Cloud Service-exemplaar is nu verbonden met Microsoft® Power Automate. U kunt nu Adaptive Forms-gegevens naar een Power Automate-flow verzenden.
 
 ## Gebruik de Invoke a Microsoft® Power Automate flow submit action to send data to a Power Automate Flow {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-Nadat u [ uw as a Cloud Service instantie van Forms met Microsoft® Macht ](#connect-forms-server-with-power-automate) verbindt, voer de volgende actie uit om uw adaptieve vorm te vormen om gevangen gegevens naar een stroom te verzenden Microsoft® bij vormvoorlegging.
+Nadat u [ uw instantie van Forms as a Cloud Service met Microsoft® Macht ](#connect-forms-server-with-power-automate) verbindt, voer de volgende actie uit om uw adaptieve vorm te vormen om gevangen gegevens naar een stroom te verzenden Microsoft® bij vormvoorlegging.
 
 1. Meld u aan bij de instantie van de auteur, selecteer het adaptieve formulier en klik op **[!UICONTROL Properties]** .
 1. In de Container van de Configuratie, doorblader en selecteer de container die in sectie [ wordt gecreeerd de Macht Microsoft® Automate Configuratie van de Wolk Dataverse ](#microsoft-power-automate-dataverse-cloud-configuration), en selecteer **[!UICONTROL Save and Close]**.
@@ -215,7 +217,7 @@ Nadat u [ uw as a Cloud Service instantie van Forms met Microsoft® Macht ](#con
 * [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 * [Configure a Submit Action](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Connect Adaptive Form to Microsoft&reg; Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 -->
 
 
