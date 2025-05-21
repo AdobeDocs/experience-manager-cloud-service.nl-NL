@@ -43,7 +43,7 @@ Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
    | URL opslagplaats | Voer de Git-opslagplaats in waar de code van uw website is opgeslagen.<br> Dit gebied staat Cloud Manager toe om de code van die bewaarplaats tijdens het plaatsingsproces te trekken. |
    | Sitebeschrijving (optioneel) | Voer een korte beschrijving in van de Edge Delivery-site die u toevoegt.<br> de beschrijvingshulp van A om de plaats te identificeren en te onderscheiden, die het gemakkelijker maken om onder andere plaatsen te beheren en te erkennen u hebt toegevoegd. |
 
-1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **** toe.
+1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **&#x200B;**&#x200B;toe.
 
 1. In **verifieer het bezit van de bewaarplaats** dialoogdoos, verifieer de eigendom van uw bewaarplaats door de volgende stappen te doen:
 
