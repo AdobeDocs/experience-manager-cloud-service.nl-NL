@@ -4,9 +4,9 @@ description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramm
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Leer waarom u zich aan boord van uw Edge Deliver Services-site bij Cloud Manager moet bevinden. Zie [ Voordelen om de Adobe geadviseerde weg voor Edge Delivery Services ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) te gebruiken.
+>Ontdek waarom je op je Edge Delivery Services-site naar Cloud Manager moet gaan.
+>Zie [ Voordelen om de Adobe geadviseerde weg voor Edge Delivery Services ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) te gebruiken.
 
 **om een plaats van Edge Delivery aan Cloud Manager toe te voegen:**
 
+1. Zorg ervoor dat u uw programma eerst hebt gemaakt met een Edge Delivery Services-licentie voordat u zich aan boord van een Edge Delivery-site in Cloud Manager bevindt.
+Zie [ een productieprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) creëren.
 1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) en selecteer het gewenste programma.
 1. Voer een van de volgende handelingen uit:
 
@@ -40,7 +43,7 @@ Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
    | URL opslagplaats | Voer de Git-opslagplaats in waar de code van uw website is opgeslagen.<br> Dit gebied staat Cloud Manager toe om de code van die bewaarplaats tijdens het plaatsingsproces te trekken. |
    | Sitebeschrijving (optioneel) | Voer een korte beschrijving in van de Edge Delivery-site die u toevoegt.<br> de beschrijvingshulp van A om de plaats te identificeren en te onderscheiden, die het gemakkelijker maken om onder andere plaatsen te beheren en te erkennen u hebt toegevoegd. |
 
-1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **&#x200B;**&#x200B;toe.
+1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **** toe.
 
 1. In **verifieer het bezit van de bewaarplaats** dialoogdoos, verifieer de eigendom van uw bewaarplaats door de volgende stappen te doen:
 
