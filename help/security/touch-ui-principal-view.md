@@ -149,7 +149,7 @@ De toestemmingenmening kan ook via [ Browser van de Bewaarplaats ](/help/impleme
 
 U hebt toegang tot dit bestand door:
 
-1. Het openen van de console van de Ontwikkelaar, klikkend op Browser van de Bewaarplaats **tabel, en dan op** open Browser van de Bewaarplaats ****
+1. Het openen van de console van de Ontwikkelaar, klikkend op Browser van de Bewaarplaats **tabel, en dan op** open Browser van de Bewaarplaats **&#x200B;**
 
    ![ Begin Browser van de Bewaarplaats ](assets/image-2025-2-5_15-38-47.png)
 
@@ -157,7 +157,7 @@ U hebt toegang tot dit bestand door:
 
    ![ Toestemmingen tabel ](assets/image-2025-2-5_15-29-33.png)
 
-**Nota**: Om de toestemmingen te bekijken, worden de beheerderrechten vereist. Volg de hier vermelde stappen [ ](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) om tot de toestemmingen toegang te hebben.
+**Nota**: Om de toestemmingen te bekijken, worden de beheerderrechten vereist. Volg de hier vermelde stappen [&#128279;](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) om tot de toestemmingen toegang te hebben.
 
 ## Klassieke UI Privilege-combinaties {#classic-ui-privilege-combinations}
 
