@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -49,13 +49,18 @@ Zie [ Extra opties van het productieprogramma ](#options).
 1. In de **Oplossingen &amp; toe:voegen-ons** lijstdoos, selecteer één of meerdere oplossingen om in het programma te omvatten.
 
    * Als u niet zeker weet of u een of meerdere programma&#39;s nodig hebt voor de verschillende beschikbare oplossingen, selecteert u de meest interessante oplossing. U kunt extra oplossingen activeren door [ het programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later uit te geven. Zie de [ Inleiding aan het document van de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer aanbevelingen van de programmaopstelling.
-   * Er is minstens één oplossing vereist voor het maken van programma&#39;s.
-   * Selecteer **Edge Delivery Services** voor een volledig beheerde oplossing CDN die digitale ervaringen optimaliseert. Zie [ Ongeveer gebruikend Edge Delivery Services om uw project van Cloud Manager te leveren ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-   * Als u **[selecteerde laat Verbeterde Veiligheid](#security)** optie toe, kunt u slechts zo vele oplossingen selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
+   * U moet ten minste één oplossing selecteren voor het maken van programma&#39;s. Bijvoorbeeld, kunt u verkiezen om **Edge Delivery Services** voor een volledig beheerde oplossing te selecteren CDN die digitale ervaringen optimaliseert. Zie [ Ongeveer gebruikend Edge Delivery Services om uw project van Cloud Manager te leveren ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-     ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * Klik {de grootte 300 van de Chevron van 0} pictogram ![&#128279;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+
+
+   * Klik ![ Grootte 300 van de Chevron ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) aan de linkerzijde van een oplossingsnaam om het even welke facultatieve toe:voegen-ons te openbaren. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![ Uitgezochte toe:voegen-ons ](assets/setup-prod-commerce.png)
 
@@ -66,7 +71,7 @@ Zie [ Extra opties van het productieprogramma ](#options).
    ![ bepalen geplande go-live datum ](assets/set-up-go-live.png)
 
    * U kunt deze datum op elk gewenst moment bewerken.
-   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma [&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
+   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.[** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
 
 1. Klik **creëren**. Cloud Manager maakt uw programma en geeft het voor selectie weer op de bestemmingspagina.
 
