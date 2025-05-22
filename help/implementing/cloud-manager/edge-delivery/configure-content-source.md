@@ -1,21 +1,25 @@
 ---
 title: Source voor inhoud configureren
-description: Leer hoe u de inhoudsbron voor uw Edge Delivery-site configureert met fstab.yaml in Helix 4 of met de wizard met instructies in Cloud Manager (of de Configuratie-service-API) in Helix 5.
+description: Leer hoe u de inhoudsbron voor uw Edge Delivery-site configureert. Gebruik "fstab.yaml"met de architectuur van Helix 4, of gebruik de geleide tovenaar in Cloud Manager (of de Dienst API van de Configuratie) met de architectuur van Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 56ab7a402a2fa7bdcf30bd66045b04e9314bed64
+source-git-commit: 71618a5603328990603db2ee7554048c9020a883
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
 
 # De inhoudsbron configureren in één klik voor Edge Delivery Services {#config-content-source}
 
+>[!IMPORTANT]
+>
+>*Helix* is de interne naam voor de onderliggende architectuur aandrijvend AEM Sites met op document-gebaseerde creatie. Het is geen functie of productnaam. In dit artikel, *Helix* verwijst naar de architectuurversie die door uw Plaatsen van Edge Delivery wordt gebruikt. Helix 5 is de huidige versie van de onderliggende architectuur; Helix 4 is de vorige versie.
+
 Adobe Experience Manager (AEM) Edge Delivery Services staat de levering van inhoud van veelvoudige bronnen zoals Google Drive, SharePoint, of AEM zelf toe, gebruikend een snel, globaal gedistribueerd randnetwerk.
 
-De configuratie van de inhoudsbron verschilt op de volgende manier tussen Helix 4 en Helix 5:
+De inhoudsbronconfiguratie verschilt op de volgende manier tussen de twee architectuurversies:
 
 | Versie | Methode voor inhoudsbronconfiguratie |
 | --- | --- |
@@ -26,7 +30,7 @@ Dit artikel biedt uitgebreide configuratiestappen, voorbeelden en validatie-inst
 
 **alvorens u** begint
 
-Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), is uw plaats Helix 5 met één enkele bewaarplaats. [ volg Helix 5 instructies ](#config-helix5) en gebruik de verstrekte versie van Helix 4 YAML van de instructies als reserve.
+Als u [ gebruikt één klik Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), gebruikt uw plaats Helix 5 met één enkele bewaarplaats. [ volg Helix 5 instructies ](#config-helix5) en gebruik de verstrekte versie van Helix 4 YAML van de instructies als reserve.
 
 **Bepaal uw versie van de Helix**
 
@@ -37,14 +41,14 @@ Bevestig de gegevens in de gegevensopslagruimte of raadpleeg uw beheerder als u 
 
 ## De inhoudsbron voor Helix 4 configureren
 
-In Helix 4 definieert het bestand fstab.yaml de inhoudsbron voor uw site. Dit bestand wijst URL-padvoorvoegsels (zogenaamde bergpunten) toe aan externe inhoudsbronnen die zich in de hoofdmap van uw GitHub-opslagplaats bevinden. Een typisch voorbeeld ziet er als volgt uit:
+In Helix 4 definieert het `fstab.yaml` -bestand de inhoudsbron voor uw site. Dit bestand wijst URL-padvoorvoegsels (zogenaamde bergpunten) toe aan externe inhoudsbronnen die zich in de hoofdmap van uw GitHub-opslagplaats bevinden. Een typisch voorbeeld ziet er als volgt uit:
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-Dit voorbeeld is alleen ter illustratie. De werkelijke URL moet verwijzen naar de inhoudsbron, zoals een Google Drive-map, een SharePoint-map of een AEM-pad.
+Het bovenstaande voorbeeld is alleen ter illustratie. De werkelijke URL moet verwijzen naar de inhoudsbron, zoals een Google Drive-map, een SharePoint-map of een AEM-pad.
 
 **om de inhoudsbron voor Helix 4 te vormen:**
 
@@ -97,7 +101,7 @@ De stappen variëren door het bronsysteem dat u gebruikt.
 
 ## De inhoudsbron voor Helix 5 configureren {#config-helix5}
 
-Helix 5 is zonder voorwerp, gebruikt `fstab.yaml` niet, en steunt veelvoudige plaatsen die de zelfde folder delen. De configuratie wordt beheerd door de API van de Dienst van de Configuratie of de UI van Edge Delivery Services. De configuratie is plaats-niveau (niet bewaarplaats-niveau).
+Helix 5 is zonder voorwerp, gebruikt `fstab.yaml` niet, en steunt veelvoudige plaatsen die de zelfde folder delen. De configuratie wordt beheerd door de API van de Dienst van de Configuratie of de gebruikersinterface van de Plaatsen van Edge Delivery. De configuratie is plaats-niveau (niet bewaarplaats-niveau).
 
 Conceptuele verschillen zijn de volgende:
 
