@@ -4,9 +4,9 @@ description: Meer informatie over Variaties genereren, toegankelijk vanuit AEM a
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3294'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Het wordt geadviseerd dat u tot [ toegang hebt produceert Variaties die in de redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de versie die op deze pagina wordt beschreven in de toekomst zal worden afgekeurd.
 
-Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [&#128279;](https://www.aem.live/docs/experimentation) 1&rbrace; functionaliteit van de Experimentatie &lbrace;van [ Edge Delivery Services ](/help/edge/overview.md).
+Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van [ Edge Delivery Services ](/help/edge/overview.md).](https://www.aem.live/docs/experimentation)
 
 U kunt [ toegang tot produceren Variaties ](#access-generate-variations) van:
 
@@ -110,7 +110,7 @@ Er zijn verschillende belangrijke invoervelden die worden gebruikt bij meerdere 
 * **Telling van**/**Aantal van**
    * U kunt selecteren hoeveel inhoudvariaties u in één generatie wilt worden gecreeerd.
    * Afhankelijk van de vraag, zou dit één van diverse etiketten kunnen hebben; bijvoorbeeld Telling, Aantal Variaties, Aantal Ideeën, en anderen.
-* **/** het Doelpubliek van Source van het 0&rbrace; publiek **&#x200B;**
+* **/** het Doelpubliek van Source van het 0} publiek ****
    * Hiermee kunt u persoonlijke inhoud genereren voor een bepaald publiek.
    * Adobe verstrekt standaardpubliek; of u kunt extra publiek specificeren; zie [ Soorten van publiek ](#audiences).
 * **Extra Context**
@@ -163,7 +163,7 @@ Selecteer een variatie, die door **wordt gevolgd produceert Beeld**, om **Tekst 
 
 U kunt verdere wijzigingen aanbrengen:
 
-* [ schrijft uw eigen herinnering in Adobe Express ](https://helpx.adobe.com/nl/firefly/using/tips-and-tricks.html) door te beschrijven wat u zou willen zien,
+* [ schrijft uw eigen herinnering in Adobe Express ](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) door te beschrijven wat u zou willen zien,
 * Pas de **Tekst aan beeld** opties aan,
 * dan **verfrist zich** de geproduceerde beelden.
 
@@ -182,7 +182,7 @@ Hier kunt u de muis boven de afbeelding houden om actiepunten weer te geven voor
 
 >[!NOTE]
 >
->[ geloofsbrieven van de Inhoud ](https://helpx.adobe.com/nl/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
+>[ geloofsbrieven van de Inhoud ](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) worden niet voortgeduurd wanneer gebruikt in op document-gebaseerd schrijven.
 
 ### Inhoud gebruiken {#use-content}
 
@@ -206,7 +206,7 @@ Zodra bewaard worden zij getoond onder **Favorieten** in de linkernavigatie. De 
 
 ## Recenten {#recents}
 
-Deze sectie bevat koppelingen naar uw recente activiteiten. A **Recente** ingang wordt toegevoegd nadat u **&#x200B;**&#x200B;selecteert. De naam van de vraag en een tijdstempel. Als u een koppeling selecteert, wordt de vraag geladen, worden de invoervelden ingevuld en worden de gegenereerde variaties weergegeven.
+Deze sectie bevat koppelingen naar uw recente activiteiten. A **Recente** ingang wordt toegevoegd nadat u **** selecteert. De naam van de vraag en een tijdstempel. Als u een koppeling selecteert, wordt de vraag geladen, worden de invoervelden ingevuld en worden de gegenereerde variaties weergegeven.
 
 ## De vraag bewerken {#edit-the-prompt}
 
@@ -280,7 +280,7 @@ To create an input field Page Type providing a dropdown selection:
 
 ## Een prompt maken {#create-prompt}
 
-Wanneer u **Nieuwe herinnering** van **Snelle Malplaatjes** selecteert, zal een nieuw paneel u toestaan om een nieuwe herinnering in te voeren. U kunt deze, samen met de **Temperatuur** dan specificeren, **&#x200B;**&#x200B;inhoud produceren.
+Wanneer u **Nieuwe herinnering** van **Snelle Malplaatjes** selecteert, zal een nieuw paneel u toestaan om een nieuwe herinnering in te voeren. U kunt deze, samen met de **Temperatuur** dan specificeren, **** inhoud produceren.
 
 Zie [ Bevel Herinnering ](#save-prompt) voor details om de herinnering voor toekomst te bewaren.
 
@@ -355,13 +355,13 @@ Het selecteren van een **Adobe Target** publiek in de herinnering staat voor de 
 
    >[!NOTE]
    >
-   >Om een **Adobe Target** publiek te gebruiken moet het beschrijvingsgebied worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Om een beschrijving toe te voegen, ga naar Doel en [ voeg een publieksbeschrijving ](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/audiences/create-audiences) toe.
+   >Om een **Adobe Target** publiek te gebruiken moet het beschrijvingsgebied worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Om een beschrijving toe te voegen, ga naar Doel en [ voeg een publieksbeschrijving ](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) toe.
 
    ![ produceer Variaties - publieksbron - Adobe Target ](assets/generate-variations-audiences-adobe-target.png)
 
 #### Adobe Target-publiek toevoegen {#add-adobe-target-audience}
 
-Zie [ publiek ](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/audiences/create-audiences) creëren om een publiek in Adobe Target tot stand te brengen.
+Zie [ publiek ](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) creëren om een publiek in Adobe Target tot stand te brengen.
 
 ### Publiek - CSV-bestand {#audience-csv-file}
 
@@ -412,11 +412,11 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 * Adobe Express
 
-  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [ generatieve kredieten ](https://helpx.adobe.com/nl/firefly/using/generative-credits-faq.html).
+  Het gebruik van de de generatie van het beeld wordt behandeld door de aanspraken van Adobe Express en [ generatieve kredieten ](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Toegang genereert variaties {#access-generate-variations}
 
@@ -490,6 +490,7 @@ Voor meer informatie kunt u ook lezen:
 
 * [ GenAI produceert Variaties op GitHub ](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [ de Experimentatie van Edge Delivery Services ](https://www.aem.live/docs/experimentation)
+* [Generatief in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## Veelgestelde vragen {#faqs}
 
