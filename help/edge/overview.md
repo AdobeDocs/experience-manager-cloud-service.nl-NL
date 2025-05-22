@@ -4,9 +4,9 @@ description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1282'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenhei
 
 Met Edge Delivery Services kunt u:
 
-* Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via de bewaking voor echt gebruik (RUM).
+* Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via Operationele Telemetrie.
 * Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. In het vak kunt u zowel AEM-authoring gebruiken met de Universal Editor als documentgebaseerde authoring. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
 * Gebruik een ingebouwd raamwerk voor experimenteren dat het mogelijk maakt snel tests te maken, uit te voeren zonder invloed op de prestaties en snel vrij te maken voor de productie van een testwinnaar.
 
@@ -102,7 +102,7 @@ Edge Delivery Services maakt deel uit van Adobe Experience Manager. Op die manie
 
 Zie het document [ Begonnen worden - Universele Zelfstudie van de Ontwikkelaar van de Redacteur ](https://www.aem.live/developer/ue-tutorial) in de aem.live documentatie leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
 
-U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration), [ Echte Controle van het Gebruik (RUM) ](https://www.aem.live/developer/rum) ook gebruiken om gebruik en prestaties van uw plaatsen te diagnostiseren, en [ Lancering.](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home)
+U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration), [ Operationele Telemetrie ](https://www.aem.live/developer/rum) ook gebruiken om gebruik en prestaties van uw plaatsen te diagnostiseren, en [ Lancering.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Help van Adobe opvragen {#getting-help}
 

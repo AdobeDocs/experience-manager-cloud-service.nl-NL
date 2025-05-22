@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2024.3.0 versie van  [!DNL Adobe Experien
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Bekijk de video Overzicht van de release van maart 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450365?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -123,7 +123,7 @@ De Hoofdzaak van activa staat de beheerders toe om toegangsniveaus voor privé i
 Met deze services kunt u:
 
 * Werk met meerdere inhoudsbronnen op dezelfde formuliersite en gebruik de gewenste ontwerpgereedschappen, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
-* Lever de Digitale Inschrijving Ervaringen die snel en onophoudelijk uw vormprestaties laden en teruggeven door echt gebruik controle (RUM).
+* Lever de Digitale Inschrijving ervaringen die snel en onophoudelijk uw vormprestaties door Operationele Telemetrie laden en teruggeven controleren.
 * Gebruik gewoon HTML, modern CSS en vanilla JavaScript om uitzonderlijke ervaringen te creëren, waarbij de steile leercurve van een specifiek framework wordt vermeden.
 
 
@@ -186,10 +186,10 @@ Deze update zorgt voor een inclusievere ervaring voor gebruikers met een handica
 
   U kunt vanuit uw officiële e-mailid naar `aem-forms-ea@adobe.com` schrijven om deel te nemen aan het programma voor vroegtijdige adoptie en toegang tot deze functie aanvragen.
 
-* **[u kunt hefboomwerking de Echte Dienst van Gegevens van de Controle van het Gebruik (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om cliënt-zijinzameling voor AEM as a Cloud Service toe te laten.
-De gegevensservice Real Use Monitoring (RUM) biedt een preciezere weergave van gebruikersinteracties, waardoor een betrouwbare mate van betrokkenheid van websites wordt gegarandeerd. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-Geleide CDN of niet-Adobe-Beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt weggenomen om het even welk verkeersrapport met Adobe te delen.
+* **[u kunt hefboomwerking de Operationele Dienst van Telemetrie](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om cliënt-zijinzameling voor AEM as a Cloud Service toe te laten.
+De operationele telemetrieservice biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt gegarandeerd. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-Geleide CDN of niet-Adobe-Beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt weggenomen om het even welk verkeersrapport met Adobe te delen.
 
-  Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw feedback, stuurt u een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u RUM wilt inschakelen via uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) voor u toelaten.
+  Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw feedback, stuurt u een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u Operationele telemetrie wilt inschakelen via uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Operationele Dienst van de Telemetrie voor u toelaten.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
@@ -197,7 +197,7 @@ De gegevensservice Real Use Monitoring (RUM) biedt een preciezere weergave van g
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven &lbrace;de Regels van de Filter van het Verkeer [&#128279;](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Nu kunt u **<aemcs-cdn-config-adopter@adobe.com>** per e-mail verzenden om deel te nemen aan het vroege adoptieprogramma zodat kunt u worden gewaarschuwd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
@@ -221,7 +221,7 @@ De door Adobe beheerde CDN biedt nu ondersteuning voor ESI (Edge Side Includes),
 
 #### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitemasjablonen (programma voor vroege adopters) {#rde-frontend-early-adopter}
 
-{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) [&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md) steunen nu front-end code die op [ plaatsthema&#39;s ](/help/sites-cloud/administering/site-creation/site-themes.md) en [ plaatsmalplaatjes ](/help/sites-cloud/administering/site-creation/site-templates.md) wordt gebaseerd, voor vroege adopters.  Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan a [ front-end pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
+{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) ](/help/implementing/developing/introduction/rapid-development-environments.md) steunen nu front-end code die op [ plaatsthema&#39;s ](/help/sites-cloud/administering/site-creation/site-themes.md) en [ plaatsmalplaatjes ](/help/sites-cloud/administering/site-creation/site-templates.md) wordt gebaseerd, voor vroege adopters. [ Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan a [ front-end pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
 
 #### Verbeterde logboekregistratie voor RDE&#39;s (Early Introducter Program) {#rde-logging-early-adopter}
 

@@ -4,10 +4,10 @@ description: Inleiding tot de architectuur van Adobe Experience Manager as a Clo
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 7%
+source-wordcount: '2712'
+ht-degree: 8%
 
 ---
 
@@ -138,7 +138,7 @@ Er zijn andere aangrenzende services:
 * De gegevensservice:
    * Is verantwoordelijk voor het blootstellen van klantgegevens zoals licentiemetriek (bijvoorbeeld inhoudsverzoeken, opslag, gebruikers) of gebruiksrapporten (zoals het aantal uploads, downloads).
    * De klantgegevens kunnen via API&#39;s en binnen gebruikersinterfaces van het product (zoals de Cloud Manager) worden weergegeven.
-* De Real-User Metric (RUM) dienst:
+* De operationele telemetrieservice:
    * Is verantwoordelijk voor het verzamelen van zeer belangrijke metriek van een klantenervaring (zoals paginameningen, kernWeb vitals, omzettingsgebeurtenissen), en het antwoorden aan bijbehorende vragen (bijvoorbeeld, hoogste paginameningen voor een bepaald domein in de laatste 7 dagen).
 * De Assets Compute-service:
    * is verantwoordelijk voor het verwerken van geüploade afbeeldingen, video&#39;s en documenten, bijvoorbeeld PDF- en Adobe Photoshop-bestanden. Bij verwerking kunt u Adobe Sensei gebruiken om metagegevens van afbeeldingen en video te extraheren (zoals beschrijvende tags of primaire kleurtonen) en vervolgens uitvoeringen genereren (zoals verschillende formaten of formaten), met toegang tot API&#39;s zoals de Adobe Photoshop- en Adobe Lightroom-API&#39;s.
@@ -239,4 +239,4 @@ De nieuwste architectuur voor AEM as a Cloud Service introduceert enkele fundame
 * Edge Delivery Services:
    * [AEM as a Cloud Service - Overzicht - met Edge Delivery Services](/help/edge/overview.md)
    * [Edge Delivery Services gebruiken](/help/edge/using.md)
-   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=nl-NL)
+   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

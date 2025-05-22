@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2024.5.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1943'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Bekijk de video Overzicht van de release van mei 2024 voor een overzicht van de functies die in de release van 2024.5.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448068?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ Handelingen en workflows voor het vertalen van inhoud activeren nu gebeurtenisse
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
+#### Operationele telemetrieservice {#real-use-monitoring}
 
-* **[de Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** toelatend cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
+* **[de Operationele Dienst van Telemetrie is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** toelatend cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
 De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
 
 #### AEM Authoring voor Edge Delivery Services {#edge-enhancements}
@@ -117,7 +117,7 @@ Deze versie brengt een significante verbetering aan de visuele regelredacteur vo
 
 * Een vormauteur kan douanefuncties op [ preprocess gegevens vóór voorlegging ](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server) nu toepassen.
 
-* Gebruik [**sparen als 1&rbrace; functionaliteit van het Ontwerp &lbrace;om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
+* Gebruik [**sparen als 1} functionaliteit van het Ontwerp {om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
 
 
 
@@ -125,7 +125,7 @@ Deze versie brengt een significante verbetering aan de visuele regelredacteur vo
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt. Het programma biedt toegang tot meerdere innovaties.
 
-Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### Verbeterde methoden voor botbeveiliging
 
@@ -137,7 +137,7 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms Service
@@ -167,7 +167,7 @@ Adobe Developer Console wordt gebruikt om referenties te genereren voor toegang 
 
 ### Nieuwe Eigenschappen voor RDEs {#RDE-new-features}
 
-{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) [&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md) laten ontwikkelaars snel opstellen, herzien, en testveranderingen in de Wolk.  In de maand juni worden verschillende nieuwe functies geïntroduceerd. Wij nodigen u ook uit om rechtstreeks met de techniek van Adobe bij het [ kanaal van de Opmaak van RDE ](https://discord.com/channels/1131492224371277874/1245304281184079872) in dienst te nemen.
+{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) ](/help/implementing/developing/introduction/rapid-development-environments.md) laten ontwikkelaars snel opstellen, herzien, en testveranderingen in de Wolk. [ In de maand juni worden verschillende nieuwe functies geïntroduceerd. Wij nodigen u ook uit om rechtstreeks met de techniek van Adobe bij het [ kanaal van de Opmaak van RDE ](https://discord.com/channels/1131492224371277874/1245304281184079872) in dienst te nemen.
 
 
 #### RDE-ondersteuning voor front-end code met gebruik van Sitethema&#39;s en Sitesjablonen {#rde-frontend}
@@ -220,7 +220,7 @@ Vorm 301/302 server-zij richt in broncontrole, en stel aan CDN op. [ leer meer ]
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven &lbrace;de Regels van de Filter van het Verkeer [&#128279;](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
@@ -239,7 +239,7 @@ Nu, staat Experience Manager Guides u toe om een onderwerp of zijn elementen aan
 * **Mogelijkheid om de meta-gegevens van de onderwerpactiva tot de Inheemse output van PDF over te gaan**
 U kunt de meta-gegevens van de onderwerpactiva toevoegen terwijl het produceren van de Eigen output van PDF. Deze eigenschap helpt u specifieke meta-gegevens voor verschillende onderwerpen, zoals de onderwerptitel en de auteur, aan de kopballen en footers van de onderwerppagina toevoegen.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -251,5 +251,5 @@ U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hie
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
 Om een maandelijks e-mailbericht over updates aan de versienota&#39;s van Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit Adobe ](https://www.adobe.com/subscription/priority-product-update.html).

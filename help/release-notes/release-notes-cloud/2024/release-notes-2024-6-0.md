@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2024.6.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -43,9 +43,9 @@ Bekijk de video Overzicht van de release van juni 2024 voor een overzicht van de
 
 ### Nieuwe functie in Experience Manager Sites {#new-feature-sites}
 
-**Echte Dienst van Gegevens van de Controle van het Gebruik (RUM)** {#real-use-monitoring}
+**Operationele Dienst van Gegevens van Telemetrie** {#real-use-monitoring}
 
-De [ Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) ](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) is nu algemeen beschikbaar, toelatend cliënt-zijgegevensinzameling voor AEM as a Cloud Service. Deze service biedt een nauwkeurigere weergave van gebruikersinteracties en zorgt voor een betrouwbare maatstaf voor de betrokkenheid van websites. Het biedt klanten geavanceerde inzichten in hun paginaverkeer en prestaties aan, die een waardevolle kans bieden om paginaprestaties te begrijpen en te verbeteren.
+De [ Operationele Dienst van Telemetrie ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) is nu algemeen beschikbaar, toelatend cliënt-zijgegevensinzameling voor AEM as a Cloud Service. Deze service biedt een nauwkeurigere weergave van gebruikersinteracties en zorgt voor een betrouwbare maatstaf voor de betrokkenheid van websites. Het biedt klanten geavanceerde inzichten in hun paginaverkeer en prestaties aan, die een waardevolle kans bieden om paginaprestaties te begrijpen en te verbeteren.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -127,13 +127,13 @@ Deze versie brengt een significante verbetering aan de Visuele Redacteur van de 
 
 * Een vormauteur kan douanefuncties op [ preprocess gegevens vóór voorlegging ](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server) nu toepassen.
 
-* Gebruik [**sparen als 1&rbrace; functionaliteit van het Ontwerp &lbrace;om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Deze functionaliteit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
+* Gebruik [**sparen als 1} functionaliteit van het Ontwerp {om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Deze functionaliteit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt. Het programma biedt toegang tot meerdere innovaties.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### Verbeterde methoden voor botbeveiliging
 
@@ -145,7 +145,7 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? De documentatie van Adobe verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? De documentatie van Adobe verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms Service
@@ -217,7 +217,7 @@ Vorm 301/302 server-zij richt in broncontrole, en stel aan CDN op. [ leer meer ]
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven &lbrace;de Regels van de Filter van het Verkeer [&#128279;](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
 
@@ -231,7 +231,7 @@ Adobe beheerde CDN steunt nu [ de Zijde van Edge omvat (ESI) ](/help/implementin
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -251,4 +251,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.

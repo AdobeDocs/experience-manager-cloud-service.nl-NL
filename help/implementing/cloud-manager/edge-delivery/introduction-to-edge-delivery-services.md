@@ -4,9 +4,9 @@ description: Leer hoe je Cloud Manager-projecten kunt leveren met Edge Delivery 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e79e7f3e4d4b1cc0413fa9e599b181d23ced635
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '798'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 Edge Delivery Services is een set services die u kunt samenstellen en waarmee u een hoge mate van flexibiliteit hebt bij het schrijven van inhoud op uw website. Op deze manier kunt u het volgende doen:
 
 * Maak snelle sites met een perfecte Lighthouse Score.
-* Bewaking van de prestaties voortdurend via RUM (Real Use Monitoring).
+* De prestaties continu bewaken via Operationele Telemetrie.
 * Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen.
 
 U kunt zowel AEM-inhoudsbeheer als WYSIWYG-authoring gebruiken met behulp van de Universal Editor en documentgebaseerde authoring.
@@ -86,7 +86,7 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | 7 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Zie [ gaan-Levende checklist ](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441567?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
