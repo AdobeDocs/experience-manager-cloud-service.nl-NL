@@ -1,15 +1,15 @@
 ---
 title: Adaptieve Forms-analyserapporten weergeven en begrijpen
 description: Adaptieve Forms kan naadloos worden geïntegreerd met Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren en documenten vast te leggen en bij te houden.
-keywords: Adaptive Forms-analyserapporten bekijken en begrijpen, analyserapport over Adobe, Forms Analytics-rapport
+keywords: Adaptive Forms-analyserapporten weergeven en begrijpen, Adobe-analyserapport, Forms Analytics-rapport
 topic-tags: develop
 feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 In het zich snel ontwikkelende landschap van digitale analysemogelijkheden is het absoluut noodzakelijk om de aandacht te houden aan mondiale trends om geïnformeerde beslissingen te nemen en de digitale ervaringen te optimaliseren. Om dit te verhelpen, integreert Adaptive Forms naadloos met Adobe Analytics om prestatiesmetriek voor uw gepubliceerde formulieren en documenten te vangen en te volgen. Het doel van de analyse van deze meetgegevens is gegevensgestuurde beslissingen te nemen, waarbij gebruik wordt gemaakt van meetgegevens en analyses om de bruikbaarheid en doeltreffendheid van de formulieren te verbeteren.
 
@@ -27,11 +27,16 @@ Door belangrijke prestatie-indicatoren vast te leggen en te volgen, kunnen bedri
 
 ## Adobe Analytics instellen op Adaptive Forms {#setup-adobe-analytics-to-aem-forms}
 
-Voor het rapport AEM Forms Analytics integreert u eerst Adobe Analytics met AEM Forms via de Automatisering van de Opstelling van het Experience Cloud. Voor Experience Cloud Setup Automation in Adaptive Forms is een Adobe Analytics-licentie, Data Collection (voorheen Adobe Launch) vereist voor het beheer van trackingscripts en integratie met de Experience Platform Launch-API voor gestroomlijnde gegevensaggregatie en het genereren van inzichten. Bezoek [ laat Adobe Analytics voor een AanpassingsVorm toe gebruikend de Automatisering van de Opstelling van het Experience Cloud ](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) voor een volledige opstellingsinformatie.
+Voor het AEM Forms Analytics-rapport integreert u eerst Adobe Analytics naar AEM Forms via Experience Cloud Setup Automation. Experience Cloud Setup Automation in Adaptive Forms vereist een Adobe Analytics-licentie, gegevensverzameling (voorheen Adobe Launch) voor het beheer van trackingscripts en integratie met de Experience Platform Launch-API voor gestroomlijnde gegevensaggregatie en het genereren van inzichten. Bezoek [ laat Adobe Analytics voor een AanpassingsVorm toe gebruikend de Automatisering van de Opstelling van Experience Cloud ](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) voor een volledige opstellingsinformatie.
+
+>[!CAUTION]
+>
+>De Experience Cloud Setup Automation-functionaliteit is verouderd.
+
 
 ## Adaptief Forms Adobe Analytics-rapport weergeven {#view-adobe-analytics-report}
 
-1. Ga in uw AEM naar **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]** .
+1. Ga in uw AEM-instantie naar **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]** .
 1. Selecteer uw formulier. Adobe Analytics wordt geïntegreerd zoals links in het scherm wordt weergegeven, terwijl de Forms wordt geactiveerd voor Adobe Analytics.
 
    ![ Rapport van de Mening ](assets/activ-aa.png){width="100%"}
@@ -52,7 +57,7 @@ Het heeft de metrieke Uitvoeringen van de Vorm, de Voor verzending bestemde Vorm
 
 * **de fouten van de Bevestiging**: De fout van de Bevestiging toont het totale aantal op bevestiging betrekking hebbende fouten die op de gebieden van de vormen voorkwamen.
 
-* **Unieke bezoekers**: De unieke bezoekers vertegenwoordigen het aantal tijden de vorm door een bezoeker wordt teruggegeven. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bezoeken, en het gedrag van de Klant ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
+* **Unieke bezoekers**: De unieke bezoekers vertegenwoordigen het aantal tijden de vorm door een bezoeker wordt teruggegeven. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bezoeken, en het gedrag van de Klant ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
   ![ Prestaties van Forms ](assets/forms-performance.png){width="100%"}
 
@@ -60,8 +65,8 @@ Het heeft de metrieke Uitvoeringen van de Vorm, de Voor verzending bestemde Vorm
 
 Zo krijgt u waardevolle inzichten in bezoekersactiviteiten op uw formulieren:
 
-* **bezoeken &amp; voorlegging**: Het beschrijft de frequentie van bezoeken aan uw vormen in een datumwaaier en het overeenkomstige aantal vormvoorlegging, voor meer informatie over dit klik [ Bezoeken ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
-* **Unieke bezoekers &amp; hun totale bezoeken**: Het maakt onderscheid tussen de nieuwe en terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [ Unieke bezoekers ](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=nl-NL) voor een gedetailleerde informatie.
+* **bezoeken &amp; voorlegging**: Het beschrijft de frequentie van bezoeken aan uw vormen in een datumwaaier en het overeenkomstige aantal vormvoorlegging, voor meer informatie over dit klik [ Bezoeken ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Unieke bezoekers &amp; hun totale bezoeken**: Het maakt onderscheid tussen de nieuwe en terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [ Unieke bezoekers ](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) voor een gedetailleerde informatie.
 
   ![ Bezoekers van Forms ](assets/forms-visitors.png){width="100%"}
 
@@ -103,12 +108,12 @@ Metrische gegevens zoals Help-weergaven, validatiefouten en veldbezoeken laten z
 
 ### **het laatste vormgebied dat de bezoekers bekeken alvorens zij de vorm** verlieten {#last-form-field-that-visitors-viewed}
 
-Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. Bijvoorbeeld, in het hieronder gegeven beeld, van 5 verlaten vormen, 2 verlaten op het gebied **Volledige Naam**, 2 verlaten op het gebied **Aantal van de Telefoon**, en 1 verlaten op de Invoer van de Tekst van het Gebied **&#x200B;**.
+Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. Bijvoorbeeld, in het hieronder gegeven beeld, van 5 verlaten vormen, 2 verlaten op het gebied **Volledige Naam**, 2 verlaten op het gebied **Aantal van de Telefoon**, en 1 verlaten op de Invoer van de Tekst van het Gebied ****.
 
 ![ de bezoekers van het Gebied ](assets/field-visitors.png){width="100%"}
 
 ## Zie ook {#see-also}
 
-* [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Adobe Analytics inschakelen voor een adaptief formulier met Experience Cloud Setup Automation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM Forms integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
