@@ -117,7 +117,7 @@ Deze versie brengt een significante verbetering aan de visuele regelredacteur vo
 
 * Een vormauteur kan douanefuncties op [ preprocess gegevens vóór voorlegging ](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server) nu toepassen.
 
-* Gebruik [**sparen als 1} functionaliteit van het Ontwerp {om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
+* Gebruik [**sparen als 1&rbrace; functionaliteit van het Ontwerp &lbrace;om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
 
 
 
@@ -125,7 +125,7 @@ Deze versie brengt een significante verbetering aan de visuele regelredacteur vo
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt. Het programma biedt toegang tot meerdere innovaties.
 
-Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
+Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
 
 #### Verbeterde methoden voor botbeveiliging
 
@@ -167,7 +167,7 @@ Adobe Developer Console wordt gebruikt om referenties te genereren voor toegang 
 
 ### Nieuwe Eigenschappen voor RDEs {#RDE-new-features}
 
-{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) ](/help/implementing/developing/introduction/rapid-development-environments.md) laten ontwikkelaars snel opstellen, herzien, en testveranderingen in de Wolk. [ In de maand juni worden verschillende nieuwe functies geïntroduceerd. Wij nodigen u ook uit om rechtstreeks met de techniek van Adobe bij het [ kanaal van de Opmaak van RDE ](https://discord.com/channels/1131492224371277874/1245304281184079872) in dienst te nemen.
+{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) [&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md) laten ontwikkelaars snel opstellen, herzien, en testveranderingen in de Wolk.  In de maand juni worden verschillende nieuwe functies geïntroduceerd. Wij nodigen u ook uit om rechtstreeks met de techniek van Adobe bij het [ kanaal van de Opmaak van RDE ](https://discord.com/channels/1131492224371277874/1245304281184079872) in dienst te nemen.
 
 
 #### RDE-ondersteuning voor front-end code met gebruik van Sitethema&#39;s en Sitesjablonen {#rde-frontend}
@@ -220,7 +220,7 @@ Vorm 301/302 server-zij richt in broncontrole, en stel aan CDN op. [ leer meer ]
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
+Onlangs vrijgegeven &lbrace;de Regels van de Filter van het Verkeer [&#128279;](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
 
 Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
