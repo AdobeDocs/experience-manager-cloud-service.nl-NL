@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Het wordt geadviseerd dat u tot [ toegang hebt produceert Variaties die in de redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de versie die op deze pagina wordt beschreven in de toekomst zal worden afgekeurd.
 
-Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van [ Edge Delivery Services ](/help/edge/overview.md).](https://www.aem.live/docs/experimentation)
+Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u Variaties genereren gebruiken. Bij Variaties genereren wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudsvariaties te maken op basis van aanwijzingen. Deze aanwijzingen worden geleverd door Adobe of gemaakt en beheerd door gebruikers. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [&#128279;](https://www.aem.live/docs/experimentation) 1&rbrace; functionaliteit van de Experimentatie &lbrace;van [ Edge Delivery Services ](/help/edge/overview.md).
 
 U kunt [ toegang tot produceren Variaties ](#access-generate-variations) van:
 
@@ -110,7 +110,7 @@ Er zijn verschillende belangrijke invoervelden die worden gebruikt bij meerdere 
 * **Telling van**/**Aantal van**
    * U kunt selecteren hoeveel inhoudvariaties u in één generatie wilt worden gecreeerd.
    * Afhankelijk van de vraag, zou dit één van diverse etiketten kunnen hebben; bijvoorbeeld Telling, Aantal Variaties, Aantal Ideeën, en anderen.
-* **/** het Doelpubliek van Source van het 0} publiek ****
+* **/** het Doelpubliek van Source van het 0&rbrace; publiek **&#x200B;**
    * Hiermee kunt u persoonlijke inhoud genereren voor een bepaald publiek.
    * Adobe verstrekt standaardpubliek; of u kunt extra publiek specificeren; zie [ Soorten van publiek ](#audiences).
 * **Extra Context**
@@ -206,7 +206,7 @@ Zodra bewaard worden zij getoond onder **Favorieten** in de linkernavigatie. De 
 
 ## Recenten {#recents}
 
-Deze sectie bevat koppelingen naar uw recente activiteiten. A **Recente** ingang wordt toegevoegd nadat u **** selecteert. De naam van de vraag en een tijdstempel. Als u een koppeling selecteert, wordt de vraag geladen, worden de invoervelden ingevuld en worden de gegenereerde variaties weergegeven.
+Deze sectie bevat koppelingen naar uw recente activiteiten. A **Recente** ingang wordt toegevoegd nadat u **&#x200B;**&#x200B;selecteert. De naam van de vraag en een tijdstempel. Als u een koppeling selecteert, wordt de vraag geladen, worden de invoervelden ingevuld en worden de gegenereerde variaties weergegeven.
 
 ## De vraag bewerken {#edit-the-prompt}
 
@@ -280,7 +280,7 @@ To create an input field Page Type providing a dropdown selection:
 
 ## Een prompt maken {#create-prompt}
 
-Wanneer u **Nieuwe herinnering** van **Snelle Malplaatjes** selecteert, zal een nieuw paneel u toestaan om een nieuwe herinnering in te voeren. U kunt deze, samen met de **Temperatuur** dan specificeren, **** inhoud produceren.
+Wanneer u **Nieuwe herinnering** van **Snelle Malplaatjes** selecteert, zal een nieuw paneel u toestaan om een nieuwe herinnering in te voeren. U kunt deze, samen met de **Temperatuur** dan specificeren, **&#x200B;**&#x200B;inhoud produceren.
 
 Zie [ Bevel Herinnering ](#save-prompt) voor details om de herinnering voor toekomst te bewaren.
 
