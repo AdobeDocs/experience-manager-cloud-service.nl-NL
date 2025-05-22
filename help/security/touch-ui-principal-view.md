@@ -63,7 +63,7 @@ U kunt rechten toevoegen door te zoeken in het tekstveld en vervolgens te select
 
 >[!NOTE]
 >
->Voor een volledige lijst van voorrechten en beschrijvingen, zie [ Gebruiker, Groep, en het Beleid van de Rechten van de Toegang ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
+>Voor een volledige lijst van voorrechten en beschrijvingen, zie [ Gebruiker, Groep, en het Beleid van de Rechten van de Toegang ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
 ![ toestemming van het Onderzoek voor een bepaalde weg.](assets/image2019-3-21_0-5-47.png) ![ voeg Nieuwe Ingang voor &quot;dam-gebruikers&quot;zoals aangetoond door een weg toe die in verticale kolommen wordt geselecteerd.](assets/image2019-3-21_0-6-53.png)
 
