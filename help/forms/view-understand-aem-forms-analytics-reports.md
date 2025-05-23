@@ -103,7 +103,7 @@ Metrische gegevens zoals Help-weergaven, validatiefouten en veldbezoeken laten z
 
 ### **het laatste vormgebied dat de bezoekers bekeken alvorens zij de vorm** verlieten {#last-form-field-that-visitors-viewed}
 
-Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. Bijvoorbeeld, in het hieronder gegeven beeld, van 5 verlaten vormen, 2 verlaten op het gebied **Volledige Naam**, 2 verlaten op het gebied **Aantal van de Telefoon**, en 1 verlaten op de Invoer van de Tekst van het Gebied ****.
+Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. Bijvoorbeeld, in het hieronder gegeven beeld, van 5 verlaten vormen, 2 verlaten op het gebied **Volledige Naam**, 2 verlaten op het gebied **Aantal van de Telefoon**, en 1 verlaten op de Invoer van de Tekst van het Gebied **&#x200B;**.
 
 ![ de bezoekers van het Gebied ](assets/field-visitors.png){width="100%"}
 
