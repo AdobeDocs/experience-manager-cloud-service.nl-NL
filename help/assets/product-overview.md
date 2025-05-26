@@ -2,7 +2,7 @@
 title: Content Hub - Overzicht
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 89c565a28cabe50ac539defd29ce9054c231297f
+source-git-commit: f728e29110808b6b5a8181120086ab82349c9835
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Cloud Service voor het democratiseren van de toegang tot online-inhoud voor organisaties en hun zakelijke partners. Het richt zich op het distribueren van middelen voor activering op schaal en het creëren van varianten van on-brand-inhoud met het oog op verbeterde marketingflexibiliteit.
 
@@ -77,7 +77,7 @@ Met Content Hub kunt u nieuwe inhoud maken met Adobe Express (als u Adobe Expres
 
 ## Content Hub demo {#content-hub-demo}
 
->[!VIDEO](https://video.tv.adobe.com/v/3459544)
+>[!VIDEO](https://video.tv.adobe.com/v/3459547)
 
 ## Vereisten {#prerequisites-content-hub}
 
