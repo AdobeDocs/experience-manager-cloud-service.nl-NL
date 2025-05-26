@@ -6,30 +6,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
+source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Setup van door klanten beheerde sleutels voor AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service slaat de klantgegevens momenteel op in Azure Blob Storage en MongoDB, waarbij standaard door de leverancier beheerde coderingssleutels worden gebruikt om gegevens te beveiligen. Terwijl deze opstelling aan de veiligheidsbehoeften van vele organisaties voldoet, kunnen de ondernemingen in gereglementeerde industrieën of die die verbeterde gegevenssoevereiniteit vereisen grotere controle over hun encryptiepraktijken zoeken. Voor organisaties die prioriteit geven aan gegevensbeveiliging, compatibiliteit en de mogelijkheid om hun coderingssleutels te beheren, biedt de CMK-oplossing (Customer Managed Keys) een essentiële verbetering.
+AEM as a Cloud Service slaat de klantgegevens momenteel op in Azure Blob Storage en MongoDB, waarbij standaard door de leverancier beheerde coderingssleutels worden gebruikt om gegevens te beveiligen. Terwijl deze opstelling aan de veiligheidsbehoeften van vele organisaties voldoet, kunnen de ondernemingen in gereglementeerde industrieën of die die verbeterde gegevensveiligheid vereisen grotere controle over hun encryptiepraktijken zoeken. Voor organisaties die prioriteit geven aan gegevensbeveiliging, compatibiliteit en de mogelijkheid om hun coderingssleutels te beheren, biedt de CMK-oplossing (Customer Managed Keys) een essentiële verbetering.
 
 ## Het probleem dat wordt opgelost {#the-problem-being-solved}
 
-Door de provider beheerde sleutels kunnen bedrijven zorgen baren in sectoren zoals financiën, gezondheidszorg en overheid, waar strenge regels uitgebreide controle over gegevensbeveiliging vereisen. Zonder controle over zeer belangrijk beheer, staan de organisaties voor uitdagingen bij het voldoen aan nalevingsvereisten, het uitvoeren van het beleid van de douaneveiligheid, en het verzekeren van volledige gegevenssoevereiniteit.
+Door de provider beheerde sleutels kunnen zorgen veroorzaken voor bedrijven die extra privacy en integriteit nodig hebben. Zonder controle over zeer belangrijk beheer, staan de organisaties voor uitdagingen in het voldoen aan nalevingsvereisten, het uitvoeren van het beleid van de douaneveiligheid, en het verzekeren van volledige gegevensveiligheid.
 
-De introductie van door de klant beheerde sleutels (CMK) lost deze problemen op door AEM klanten volledige controle over hun coderingssleutels te geven. Door te verifiëren via Microsoft Entra ID (voorheen Azure Active Directory) maakt AEM CS veilig verbinding met de Azure Key Vault van de klant, zodat deze de levenscyclus van de coderingssleutels kan beheren, waaronder het maken, roteren en intrekken van sleutels.
+De introductie van Customer Managed Keys (CMK) lost deze problemen op door AEM-klanten volledige controle te geven over hun coderingssleutels. Door verificatie via de Microsoft Entra ID (voorheen Azure Active Directory) maakt AEM CS veilig verbinding met de Azure Key Vault van de klant, zodat deze de levenscyclus van de coderingssleutels kan beheren, waaronder het maken, roteren en intrekken van sleutels.
 
 CMK biedt verschillende voordelen:
 
-* **Verbeterde Veiligheid:** de klanten kunnen hun encryptiepraktijken verzekeren voldoen aan specifieke veiligheidsvereisten, die hen vrede van mening over gegevensbescherming geven.
-* **Flexibiliteit van de Naleving:** Met volledige controle over de belangrijkste levenscyclus, kunnen de ondernemingen zich gemakkelijk aanpassen aan veranderende regelgevende normen zoals GDPR, HIPAA, of CCPA, die hun nalevingstellinghouding verzekeren sterk blijft.
-* **Naadloze Integratie:** de oplossing CMK integreert direct met de opslag van Azure Blob en MongoDB in AEM CS, die geen verstoring aan opslagverrichtingen of bruikbaarheid verzekert terwijl het voorzien van klanten van krachtige encryptiecapaciteiten.
+* **Gegevens van de Controle en de Encryptie van de Toepassing:** verhoog veiligheid met direct beheer van uw toepassing van AEM en gegevens cryptografische sleutels.
+* **verhoogt Vertrouwelijkheid en Integriteit:** Verminder de waarschijnlijkheid van onopzettelijke toegang en onthulling van gevoelige of merkgebonden gegevens met volledig encryptiebeheer.
+* **Azure Key Vault Support:** Met het gebruik van Azure Key Vault kunt u belangrijke opslag, bewerkingen met betrekking tot geheimen verwerken en belangrijke rotaties uitvoeren.
 
-Door CMK aan te nemen, kunnen klanten de controle over hun gegevensbeveiliging en encryptiepraktijken verhogen, naleving verbeteren en risico&#39;s verlichten, terwijl het blijven genieten van de scalability en de flexibiliteit van AEM CS.
+Door CMK aan te nemen, kunnen klanten de controle over hun gegevensbeveiliging en encryptiepraktijken verhogen, de veiligheid verbeteren en risico&#39;s verlichten, terwijl zij van de scalability en de flexibiliteit van AEM CS blijven genieten.
 
 Met AEM as a Cloud Service kunt u uw eigen coderingssleutels gebruiken om gegevens in rust te coderen. Deze handleiding bevat stappen voor het instellen van een door de klant beheerde sleutel (CMK) in Azure Key Vault voor AEM as a Cloud Service.
 
@@ -40,17 +40,17 @@ Met AEM as a Cloud Service kunt u uw eigen coderingssleutels gebruiken om gegeve
 U zult ook door de volgende stappen voor het creëren van en het vormen van de vereiste infrastructuur worden geleid:
 
 1. Uw omgeving instellen
-1. Een toepassings-id verkrijgen via Adobe
+1. Een toepassings-id verkrijgen van Adobe
 1. Een nieuwe bronnengroep maken
 1. Een sleutelhanger maken
-1. Toegang van de Adobe tot de sleutelkault verlenen
+1. Adobe toegang verlenen tot de sleutelkault
 1. Een coderingssleutel maken
 
-U moet de URL van de sleutelkluis, de naam van de coderingssleutel en informatie over de sleutelvault met Adobe delen.
+U moet de URL van de sleutelkluis, de naam van de coderingssleutel en informatie over de sleutelvault delen met Adobe.
 
 ## Uw omgeving instellen {#setup-your-environment}
 
-De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [&#128279;](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [ ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
 Meld uw CLI aan met `az login` voordat u verder gaat met de rest van deze handleiding.
 
@@ -58,9 +58,9 @@ Meld uw CLI aan met `az login` voordat u verder gaat met de rest van deze handle
 >
 >Terwijl deze gids Azure CLI gebruikt, is het mogelijk om de zelfde verrichtingen via de Azure console uit te voeren. Als u liever de Azure-console gebruikt, gebruikt u de onderstaande opdrachten als referentie.
 
-## Een toepassings-id verkrijgen via Adobe {#obtain-an-application-id-from-adobe}
+## Een toepassings-id verkrijgen van Adobe {#obtain-an-application-id-from-adobe}
 
-De Adobe zal u van een toepassings identiteitskaart van Entra voorzien die u in de rest van deze gids zult nodig hebben. Als u nog geen toepassings-id hebt, neemt u contact op met de Adobe om een id te verkrijgen.
+Adobe geeft u een Entra-toepassings-id die u in de rest van deze handleiding nodig hebt. Als u nog geen toepassings-id hebt, neemt u contact op met Adobe om een id te verkrijgen.
 
 ## Een nieuwe bronnengroep maken {#create-a-new-resource-group}
 
@@ -79,7 +79,7 @@ Als u al een middelgroep hebt, voel vrij om het in plaats daarvan te gebruiken. 
 
 ## Een belangrijke vault maken {#create-a-key-vault}
 
-U moet een sleutelkluis maken voor de coderingssleutel. De sleutelvault moet ontruimingsbescherming hebben toegelaten. De zuiveringsbescherming is noodzakelijk voor het coderen van gegevens in rust van andere Azure diensten. De openbare netwerktoegang moet, ook worden toegelaten, om ervoor te zorgen dat de huurder van de Adobe tot de belangrijkste kluis kan toegang hebben.
+U moet een sleutelkluis maken voor de coderingssleutel. De sleutelvault moet ontruimingsbescherming hebben toegelaten. De zuiveringsbescherming is noodzakelijk voor het coderen van gegevens in rust van andere Azure diensten. Openbare netwerktoegang moet ook worden toegelaten, om ervoor te zorgen dat de huurder van Adobe tot de belangrijkste kluis kan toegang hebben.
 
 >[!IMPORTANT]
 >Het maken van de Key Vault met Public Network Access is uitgeschakeld. Hiermee wordt afgedwongen dat alle belangrijke vaultbewerkingen, zoals het maken van sleutels of het roteren, moeten worden uitgevoerd vanuit een omgeving die toegang heeft tot het netwerk van KeyVault, bijvoorbeeld een VM die toegang heeft tot de KeyVault.
@@ -103,11 +103,11 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## Toegang voor Adoben verlenen tot de Key Vault {#grant-adone-access-to-the-key-vault}
+## Adobe Access verlenen voor de Key Vault {#grant-adobe-access-to-the-key-vault}
 
-In deze stap geeft u Adobe via een Entra-toepassing toegang tot de keyvault. De id van de Entra-toepassing had al door de Adobe moeten worden verstrekt.
+In deze stap geeft u Adobe via een Entra-toepassing toegang tot de keyvault. De id van de Entra-toepassing had al door Adobe moeten worden verstrekt.
 
-Eerst, moet u een de diensthoofd tot stand brengen in bijlage aan de toepassing Entra en aan het toewijzen de **Zeer belangrijke Reader van de Vault** en **Zeer belangrijke CryptoGebruiker** rollen. De rollen zijn beperkt tot de sleutelkluis die in deze gids wordt gecreeerd.
+Eerst, moet u een de diensthoofd tot stand brengen in bijlage aan de Entra toepassing en aan het toewijzen de **Zeer belangrijke Uitvault Reader** en **Zeer belangrijke Server van Crypto Gebruiker** rollen. De rollen zijn beperkt tot de sleutelkluis die in deze gids wordt gecreeerd.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -147,7 +147,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## De belangrijkste vaultgegevens delen {#share-the-key-vault-information}
 
-U bent nu allemaal ingesteld. U hoeft slechts enkele vereiste informatie te delen met de Adobe, die ervoor zal zorgen dat uw omgeving voor u wordt geconfigureerd.
+U bent nu allemaal ingesteld. U hoeft slechts enkele vereiste informatie te delen met Adobe, die ervoor zal zorgen dat uw omgeving voor u wordt geconfigureerd.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -198,6 +198,6 @@ Notify the Adobe Engineer once this process is complete and the Private Endpoint
 
 ## Door klanten beheerde toetsen in Private Beta {#customer-managed-keys-in-private-beta}
 
-Het team van de Techniek bij Adobe werkt momenteel aan een verbeterde implementatie van CMK leveraging Azure&#39;s Private Link. Met de nieuwe implementatie kunt u uw sleutel delen via de Azure-backbone dankzij een directe Private Link-verbinding tussen de huurder van de Adobe en uw Key Vault.
+Het Engineering-team van Adobe werkt momenteel aan een verbeterde implementatie van CMK met gebruikmaking van Azure&#39;s Private Link. Met de nieuwe implementatie kunt u uw sleutel delen via de Azure-backbone dankzij een directe Private Link-verbinding tussen de Adobe-gebruiker en uw Key Vault.
 
-Deze verbeterde implementatie is momenteel in Private Beta en kan worden ingeschakeld voor geselecteerde klanten die zich aansluiten bij het Private Beta-programma en nauw samenwerken met Adobe Engineering. Als u interesse hebt in de Private Beta for CMK met gebruik van Private Link, neemt u contact op met de Adobe voor meer informatie.
+Deze verbeterde implementatie is momenteel in Private Beta en kan worden ingeschakeld voor geselecteerde klanten die zich aansluiten bij het Private Beta-programma en nauw samenwerken met Adobe Engineering. Neem voor meer informatie contact op met Adobe als u interesse hebt in de Private Beta for CMK via Private Link.
