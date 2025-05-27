@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ In deze video ziet u hoe u SSL-certificaten (Secure Socket Layer) installeert en
 >id="aemcloud_golive_sslcert"
 >title="SSL-certificaten beheren"
 >abstract="Leer hoe Cloud Manager functies voor zelfbediening heeft om SSL-certificaten te installeren en te beheren om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Status van een SSL-certificaat controleren"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Status van een SSL-certificaat controleren"
 
 ## Wat zijn SSL-certificaten? {#overview}
 
@@ -40,7 +40,7 @@ Cloud Manager biedt zelfbedieningstools voor het installeren en beheren van SSL-
 
 | | Model | Beschrijving |
 | --- | --- | --- |
-| A | **[Adobe-geleide SSL certificaat (DV)](#adobe-managed)** | Met Cloud Manager kunnen gebruikers DV-certificaten (Domain Validation) configureren die via Adobe worden geleverd voor snelle domeininstallatie. |
+| A | **[Adobe-Beheerde SSL certificaat (DV)](#adobe-managed)** | Met Cloud Manager kunnen gebruikers DV-certificaten (Domain Validation) configureren die door Adobe worden geleverd voor snelle domeininstallatie. |
 | B | **[Klantgeleid SSL certificaat (OV/EV)](#customer-managed)** | Cloud Manager biedt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) aan om u te laten OV en EV SSL certificaten beheren die u en privé sleutels van de Autoriteiten van het Certificaat van de derde bezit, zoals *laat versleutelen*. |
 
 Beide modellen bieden de volgende algemene functies voor het beheer van uw certificaten:
@@ -57,11 +57,15 @@ Beide modellen bieden de volgende algemene functies voor het beheer van uw certi
 
 DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productieprogramma&#39;s als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
-Nadat het DV-certificaat is gemaakt, wordt dit door de Adobe automatisch elke drie maanden vernieuwd, tenzij het wordt verwijderd.
+Nadat het DV-certificaat is gemaakt, wordt dit door Adobe automatisch elke drie maanden vernieuwd, tenzij het wordt verwijderd.
+
+>[!IMPORTANT]
+>
+>Als uw milieu (DV) SSL certificaten met een op CNAME-Gebaseerde bevestiging gebruikt, me ervan bewust ben dat het verwijderen van het CNAME- verslag voorafgaand aan automatische certificaatvernieuwing de vernieuwing kan veroorzaken om te ontbreken. De verwijdering kan leiden tot een vervaldatum van het certificaat en onderbreking van de service. Om deze kwestie te vermijden, zorg ervoor dat het CNAME- verslag door het volledige vernieuwingsproces op zijn plaats blijft. Het vernieuwingsproces baseert zich op de aanwezigheid van het verslag CNAME voor domeineigendomsbevestiging.
 
 ### Door de klant beheerde SSL-certificaten (OV/EV) {#customer-managed}
 
-OV- en EV-certificaten bieden voor CA gevalideerde informatie. Met deze informatie kunnen gebruikers beoordelen of de eigenaar van de website, de e-mailafzender of de digitale handtekening van code- of PDF-documenten kan worden vertrouwd. DV-certificaten staan een dergelijke eigendomsverificatie niet toe.
+OV- en EV-certificaten bieden voor CA gevalideerde informatie. Met deze informatie kunnen gebruikers beoordelen of de eigenaar van de website, de e-mailafzender of de digitale handtekening van code of PDF-documenten kan worden vertrouwd. DV-certificaten staan een dergelijke eigendomsverificatie niet toe.
 
 OV en EV bieden deze functies bovendien via DV-certificaten in Cloud Manager.
 
