@@ -4,9 +4,9 @@ description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
+source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1654'
 ht-degree: 2%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 2%
 >id="aemcloud_ctt_download"
 >title="Downloaden"
 >abstract="Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw Adobe Experience Manager-bronexemplaar (AEM). Download de nieuwste versie."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL" text="Release-opmerkingen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [ de Nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [ de Nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
@@ -49,7 +49,7 @@ De AEM-broninstantie wordt mogelijk achter een firewall uitgevoerd, waarbij deze
 Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen wilt oplossen tijdens een extractieproces, kunt u SSL-registratie inschakelen via de System Console van de AEM-bronomgeving door de volgende stappen uit te voeren:
 
 1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen > Verrichtingen > de Console van het Web** of direct aan URL in *https://serveraddress:serverport/system/console/configMgr* te gaan
-1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud **&#x200B;**
+1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
 1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
 1. Laat **toe het registreren ssl voor extractie** plaatsen, dan druk **sparen**:
 
@@ -64,8 +64,8 @@ Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optred
 >id="aemcloud_ctt_demo"
 >title="Gereedschap Inhoud overbrengen uitvoeren"
 >abstract="Leer hoe u Content Transfer Tool gebruikt om de inhoud te migreren naar AEM as a Cloud Service (auteur/publiceren)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Zie demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=nl-NL#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inhoud overbrengen. Ga als volgt te werk om te leren hoe u inhoud kunt migreren naar AEM as a Cloud Service met het gereedschap Inhoud overbrengen:
 
@@ -75,13 +75,13 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >id="aemcloud_ctt_extraction_setup"
 >title="Installatiefase voor extractie"
 >abstract="Leer hoe u een migratieset maakt en beheert en hoe u de extractiesleutel kopieert."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=nl-NL#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
 1. Meld u aan bij Cloud Acceleration Manager (CAM) en klik op het CAM-project dat u eerder hebt gemaakt om te beoordelen of u klaar bent om naar AEM as a Cloud Service te gaan. Als u geen CAM project hebt gecreeerd, verwijs naar het Creëren van en het Leiden van een Project in CAM.
 
-1. Klik de **kaart van de Overdracht van de Inhoud 0&rbrace; &lbrace;om de Vastgestelde mening van de Lijst van de Migratie te openen.**
+1. Klik de **kaart van de Overdracht van de Inhoud 0} {om de Vastgestelde mening van de Lijst van de Migratie te openen.**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -101,7 +101,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    >[!NOTE]
    >
-   >De naam moet dezelfde conventies hebben als een AEM-knooppunt, zodat deze geen van de volgende tekens kan bevatten: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;noch ongebruikelijke symbolen of emojis.
+   >De naam moet dezelfde conventies hebben als een AEM-knooppunt, zodat deze geen van de volgende tekens kan bevatten: `. / : [ ] | * &lt; > ^ ? { } % # &quot;noch ongebruikelijke symbolen of emojis.
 
 1. De migratielijst wordt nu weergegeven in de lijstweergave. Selecteer het drie puntensymbool (**...**) om drop-down te openen en **de sleutel van de Extractie van het Extractie van het Exemplaar te selecteren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
 
@@ -117,7 +117,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >id="aemcloud_ctt_populate_migrationset"
 >title="Migratieset vullen"
 >abstract="Nadat u een migratieset hebt gemaakt, moet deze zijn gevuld met de inhoud van de broninstantie die naar de AEM as a Cloud Service-omgeving moet worden verplaatst. Hiervoor moet het gereedschap Inhoud overbrengen op de broninstantie zijn geïnstalleerd."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=nl-NL" text="Inhoud uitnemen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Inhoud uitnemen"
 
 Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt vullen, installeert u de nieuwste versie van het Content Transfer Tool op uw Adobe Experience Manager-bronexemplaar (AEM). Volg deze sectie voor informatie over het vullen van de migratieset.
 
@@ -145,10 +145,9 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
       >Als u van plan bent versies op te nemen als onderdeel van een migratieset en aanvullende versies uitvoert met `wipe=false` , moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true` .
 
       >[!NOTE]
-      >Vanaf CTT-versie (3.0.24) zijn er nieuwe functies toegevoegd aan het gereedschap Inhoud overbrengen, waardoor het proces voor het opnemen en uitsluiten van paden is verbeterd. Eerder moesten paden een voor een worden geselecteerd, wat vervelend en tijdrovend was. Gebruikers kunnen nu paden rechtstreeks vanuit de gebruikersinterface opnemen of een CSV-bestand uploaden, afhankelijk van hun voorkeur.
+      >Vanaf CTT-versie (3.0.24) zijn er nieuwe functies toegevoegd aan het gereedschap Inhoud overbrengen, waardoor het proces voor het opnemen en uitsluiten van paden is verbeterd. Eerder moesten paden een voor een worden geselecteerd, wat vervelend en tijdrovend was. Gebruikers kunnen nu paden rechtstreeks vanuit de gebruikersinterface opnemen of een CSV-bestand uploaden, afhankelijk van hun voorkeur.  Het CSV-bestand moet één pad per regel hebben en geen komma.
 
    1. **Wegen om** te omvatten: De wegbrowser van het gebruik om wegen te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren. Gebruikers kunnen slechts één optie selecteren om paden op te nemen: in de gebruikersinterface of door een CSV-bestand te uploaden.
-
       >[!IMPORTANT]
       >Voor de volgende paden gelden beperkingen bij het maken van een migratieset:
       >* `/apps`
@@ -178,7 +177,7 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
 
       ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
-1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3&rbrace; detailsscherm van de Plaats van de Migratie**.
+1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3} detailsscherm van de Plaats van de Migratie**.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
