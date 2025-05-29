@@ -19,7 +19,7 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Dit artikel |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=nl-NL) |
 
 In het zich snel ontwikkelende landschap van digitale analysemogelijkheden is het absoluut noodzakelijk om de aandacht te houden aan mondiale trends om geïnformeerde beslissingen te nemen en de digitale ervaringen te optimaliseren. Om dit te verhelpen, integreert Adaptive Forms naadloos met Adobe Analytics om prestatiesmetriek voor uw gepubliceerde formulieren en documenten te vangen en te volgen. Het doel van de analyse van deze meetgegevens is gegevensgestuurde beslissingen te nemen, waarbij gebruik wordt gemaakt van meetgegevens en analyses om de bruikbaarheid en doeltreffendheid van de formulieren te verbeteren.
 
@@ -56,7 +56,7 @@ Het heeft de metrieke Uitvoeringen van de Vorm, de Voor verzending bestemde Vorm
 
 * **de fouten van de Bevestiging**: De fout van de Bevestiging toont het totale aantal op bevestiging betrekking hebbende fouten die op de gebieden van de vormen voorkwamen.
 
-* **Unieke bezoekers**: De unieke bezoekers vertegenwoordigen het aantal tijden de vorm door een bezoeker wordt teruggegeven. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bezoeken, en het gedrag van de Klant ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Unieke bezoekers**: De unieke bezoekers vertegenwoordigen het aantal tijden de vorm door een bezoeker wordt teruggegeven. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bezoeken, en het gedrag van de Klant ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
 
   ![ Prestaties van Forms ](assets/forms-performance.png){width="100%"}
 
@@ -64,8 +64,8 @@ Het heeft de metrieke Uitvoeringen van de Vorm, de Voor verzending bestemde Vorm
 
 Zo krijgt u waardevolle inzichten in bezoekersactiviteiten op uw formulieren:
 
-* **bezoeken &amp; voorlegging**: Het beschrijft de frequentie van bezoeken aan uw vormen in een datumwaaier en het overeenkomstige aantal vormvoorlegging, voor meer informatie over dit klik [ Bezoeken ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
-* **Unieke bezoekers &amp; hun totale bezoeken**: Het maakt onderscheid tussen de nieuwe en terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [ Unieke bezoekers ](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) voor een gedetailleerde informatie.
+* **bezoeken &amp; voorlegging**: Het beschrijft de frequentie van bezoeken aan uw vormen in een datumwaaier en het overeenkomstige aantal vormvoorlegging, voor meer informatie over dit klik [ Bezoeken ](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=nl-NL).
+* **Unieke bezoekers &amp; hun totale bezoeken**: Het maakt onderscheid tussen de nieuwe en terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [ Unieke bezoekers ](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=nl-NL) voor een gedetailleerde informatie.
 
   ![ Bezoekers van Forms ](assets/forms-visitors.png){width="100%"}
 
