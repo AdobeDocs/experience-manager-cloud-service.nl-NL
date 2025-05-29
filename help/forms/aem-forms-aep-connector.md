@@ -5,13 +5,13 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 052f8425c3c7bc2c12882af4f7b88d559ea34fb3
+exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
+source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-integratie met Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
 
@@ -56,21 +56,21 @@ De onderstaande video bevat een stapsgewijze handleiding over de vereisten (zoal
 Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volgende in Adobe Experience Platform is voltooid:
 
 1. Schema instellen
-   * [ creeer een schema XDM ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [ laat schema voor het profileren ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile) toe
-   * [ bepaalt identiteitsgebied ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [ creeer een schema XDM ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [ laat schema voor het profileren ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile) toe
+   * [ bepaalt identiteitsgebied ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Gegevensconfiguratie
-   * [ creeer een dataset ](https://experienceleague.adobe.com/nl/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [ opstelling die verbinding ](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/tutorials/create-streaming-connection) stromen (u hebt het stromen eindpunt URL later nodig, zo maak een nota van het nu.)
+   * [ creeer een dataset ](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [ opstelling die verbinding ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) stromen (u hebt het stromen eindpunt URL later nodig, zo maak een nota van het nu.)
 
 3. Verificatie
-   * [ produceer API geloofsbrieven ](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identiteitskaart van de Cliënt en Geheime cliënt) van Adobe Developer Console
+   * [ produceer API geloofsbrieven ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identiteitskaart van de Cliënt en Geheime cliënt) van Adobe Developer Console
 
 
 ## Implementatiestappen
 
-### 1. AEP Cloud-configuratie maken
+### &#x200B;1. AEP Cloud-configuratie maken
 
 1. Navigeer aan uw **instantie van Adobe Experience Manager** > **Hulpmiddelen** > **de Diensten van de Wolk** > **Adobe Experience Platform**.
 1. Selecteer de Container van de a **Configuratie** om de configuratie op te slaan.
@@ -81,12 +81,14 @@ Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volge
    * Clientgeheim (verkregen van ontwikkelaarsconsole)
    * OAuth URL (Er is een standaard-URL maar deze kan ook worden verkregen via de ontwikkelaarsconsole)
 
+   ![ Configuratie van de Wolk van AEP ](/help/forms/assets/aep-cloud-configuration.png)
+
 1. Klik **verbinden** om de verbinding te vestigen. Nadat u de verbinding tot stand hebt gebracht, configureert u de volgende aanvullende instellingen:
    * Basis-URL: platform.adobe.io (dit is een standaard-URL en kan ook worden verkregen via de ontwikkelaarsconsole. De URL&#39;s van het oauth- en platform worden standaard ingesteld op URL&#39;s van het pod-object. Als u verbinding moet maken met het werkgebied, moet u URL&#39;s van het werkgebied gebruiken.)
    * Organisatie-id (deze wordt samen met de client-id/geheim opgehaald uit de ontwikkelaarsconsole)
    * Sandboxnaam (vereist voor ontwikkelings- en productieomgevingen)
 
-### 2. Formulier maken met XDM-schemaintegratie {#form-creation}
+### &#x200B;2. Formulier maken met XDM-schemaintegratie {#form-creation}
 
 1. De wizard Formulier maken openen:
    * Navigeer aan uw **instantie van Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
@@ -94,13 +96,18 @@ Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volge
 1. In het **bron** lusje, selecteer een malplaatje
 1. In het **lusje van Gegevens**, selecteer de **Adobe Experience Platform** optie.
 
-1. Selecteer uw cloudconfiguratie in het deelvenster Eigenschappen. Het systeem laadt alle beschikbare schema&#39;s van Adobe Experience Platform
+1. Selecteer uw cloudconfiguratie in het deelvenster Eigenschappen.
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   Het systeem laadt alle beschikbare schema&#39;s van Adobe Experience Platform
 
    >[!NOTE]
    >
    >
    > * Alleen schema&#39;s waarvoor een profiel is ingeschakeld en schema&#39;s die niet door het systeem worden gegenereerd, worden opgehaald.
    > * Het laden van het eerste schema kan enige tijd in beslag nemen bij de eerste setup.
+
 1. Selecteer de juiste/verplichte velden van het schema. (Zie video voor gedetailleerde stappen)
 1. Op het tabblad Verzending:
    * Selecteer **voorleggen aan Adobe Experience Platform** voorlegt actie
@@ -156,7 +163,7 @@ A: Deze connector werkt met zowel Adaptive Forms Core Components als Adaptive Fo
 A: Op dit moment kan elk formulier slechts naar één gegevensset verzenden.
 
 **Q: Is er een grens aan hoeveel vormvoorlegging kan worden verwerkt?**
-A: De voorlegging van de vorm is onderworpen aan uw AEP die inname [ quota en tariefgrenzen ](https://experienceleague.adobe.com/nl/docs/experience-platform/data-lifecycle/api/quota) stromen.
+A: De voorlegging van de vorm is onderworpen aan uw AEP die inname [ quota en tariefgrenzen ](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota) stromen.
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -193,11 +200,11 @@ Aan de slag met deze integratie:
 
 ## Gerelateerde bronnen {#related-resources}
 
-* [ de documentatie van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL)
-* [ documentatie van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
-* [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl-NL)
-* [ Streaming opname in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=nl-NL)
-* [ overzicht van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl-NL)
+* [ de documentatie van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+* [ documentatie van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [ Streaming opname in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [ overzicht van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [AEM Forms-functies voor vroege toegang](/help/forms/early-access-ea-features.md)
 * [Adaptieve Forms maken met kerncomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Formuliergegevensmodellen gebruiken in AEM Forms](/help/forms/using-form-data-model.md)
@@ -230,5 +237,3 @@ Schema markup for technical documentation
   "keywords": "AEM Forms, Adobe Experience Platform, XDM schema, data integration, form submission, customer profiles, personalization"
 }
 -->
-
-
