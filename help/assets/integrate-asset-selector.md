@@ -1,11 +1,11 @@
 ---
-title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
+title: Asset Selector integreren met Vanilla JS
 description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De integratie gebeurt door het pakket Asset Selector te importeren en verbinding
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
+* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
 * Er is al een IMS-token gegenereerd voor verificatie.
 
 ## Asset Selector integreren met verschillende toepassingen {#asset-selector-integration-with-apps}

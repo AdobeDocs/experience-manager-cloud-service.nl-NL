@@ -4,7 +4,7 @@ description: Leer hoe AEM Assets en Dynamic Media effectief imagebeheer vereenvo
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimal
    * [Voorinstellingen voor afbeeldingen](/help/assets/dynamic-media/managing-image-presets.md)
 
   U kunt [ schakelaar de mening ](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later aan voorproef dynamische vertoningen in de mening van Assets.
-* Publiceer elementen naar Dynamic Media om dynamische media-uitvoeringen beschikbaar te maken in de Assets-weergave. Voor meer informatie, zie [ publiceren Assets aan AEM en Dynamische Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publiceer elementen naar Dynamic Media om dynamische media-uitvoeringen beschikbaar te maken in de Assets-weergave. Voor meer informatie, zie [ publiceren Assets aan AEM en Dynamische Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Dynamische media-uitvoeringen weergeven en downloaden {#view-download-dm-renditions}
@@ -115,7 +115,7 @@ Voer de volgende stappen uit om dynamische uitvoeringen van afbeeldingen in Expe
 
 ## Dynamische media met OpenAPI Capabilities-uitvoeringen {#dm-with-openapi-renditions}
 
-### Voordat u begint
+### Voordat u begint {#prereqs-dm-with-openapi-renditions}
 
 * U moet een AEM Dynamic Media-gebruiker met licentie zijn.
 * Assets moet zijn goedgekeurd voor weergave van Dynamic Media met OpenAPI-mogelijkheden. Voor meer informatie, zie [ activa in Experience Manager goedkeuren ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)

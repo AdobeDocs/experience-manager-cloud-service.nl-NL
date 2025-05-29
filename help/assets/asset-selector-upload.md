@@ -1,11 +1,11 @@
 ---
-title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
-description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
+title: Elementen uploaden in Asset Selector
+description: Elementen uploaden in MFE van Asset Selector MFE met behulp van uploadfunctie
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---

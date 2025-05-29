@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1584'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ U moet de volgende communicatiemethoden gebruiken:
 
 * De hosttoepassing wordt uitgevoerd op HTTPS.
 * U kunt de toepassing niet uitvoeren op `localhost` . Als u de Asset Selector op uw lokale computer wilt integreren, moet u een aangepast domein maken, bijvoorbeeld `[https://<your_campany>.localhost.com:<port_number>]` , en dit aangepaste domein toevoegen in de `redirectUrl list` .
-* You can configure and add clientID into the AEM Cloud Service environment variable with the respective `imsClientId`.
+* U kunt clientID configureren en toevoegen aan de omgevingsvariabele van de AEM Cloud-service met de respectievelijke `imsClientId` .
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * De lijst van het werkingsgebied IMS moet in de omgevingsconfiguratie worden bepaald.
@@ -199,9 +199,49 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
 * ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* ![&#128279;](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
+* ](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.![
 * ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
-* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** &#x200B;] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** ] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
+
+### Gegevens en metagegevens van middelen {#asset-details-and-metadata}
+
+De pagina Asset Details biedt een uitgebreide weergave van een specifiek element, waarbij alle belangrijke informatie op één plaats wordt geconsolideerd. Het bevat een overzicht met de naam, de bestandsindeling, de status en een korte beschrijving, samen met een voorvertoning of miniatuur voor eenvoudige visuele identificatie. Het bevat ook metagegevens van een element, zoals de aanmaakdatum, de auteur, de grootte, het kleurenschema, enzovoort. Deze attributen helpen efficiënt onderzoek, het filtreren, en classificatie van activa. Het deelvenster Elementdetails is beschikbaar in zowel de spoorweergave als de modale weergave van de Asset Selector. In de spoormening, is het vereist om `onDrop` bezit toe te laten en te vormen om activa terug te keren. In de modale weergave retourneert de eigenschap `handleSelection` ook een element. Zie [ Eigenschappen van de Selecteur van Activa ](asset-selector-properties.md).
+
+Voer de onderstaande stappen uit om details van een element en metagegevens weer te geven:
+
+1. Open Asset Selector MFE en navigeer naar een element.
+1. Beweeg de activa en klik ![ infopictogram ](/help/assets/assets/info-icon-solid-black.svg).
+1. Ga naar het tabblad **[!UICONTROL Info]** om de details van het element weer te geven. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+Om het paneel van de detailmening van een activa aan te passen, zie [ informatie in modale mening ](asset-selector-customization.md#customize-info-in-modal-view) aanpassen.
+
+![ de details van Activa ](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
 
 ## Meer informatie over sleutelmogelijkheden {#key-capabilities-asset-selector}
 
@@ -216,39 +256,39 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Asset Selector integreren met grafische Adobe-toepassingen"><br/>
-        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met de toepassingen van Adobe </a>
+        <a href="integrate-asset-selector-adobe-app.md"> integreer de Selector van Activa met de toepassingen van Adobe </a>
         <p>
         <em> ontdekt hoe te om de Selecteur van Activa met diverse toepassingen van Adobe te integreren.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Afbeelding voor middelenkiezer integreren"><br/>
-        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met derdetoepassingen </a>
+        <a href="integrate-asset-selector-non-adobe-app.md"> integreer de Selector van Activa met derdetoepassingen </a>
         <p>
         <em> dig omhoog de mogelijkheden om de Selector van Activa met toepassingen te integreren niet-Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Afbeelding voor middelenkiezer integreren"><br/>
-        <a href="integrate-asset-selector.md"> integreer de Selector van Activa met Dynamische Media Open APIs </a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md"> integreer de Selector van Activa met Dynamische Media Open APIs </a>
         <p>
         <em> Begrijp hoe te om de Selector van Activa met Dynamische Media te integreren Open APIs.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Eigenschappen van Asset Selector, afbeelding"><br/>
-        <a href="asset-selector-customization.md"> Eigenschappen van de Selecteur van Activa </a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Voorbeelden van Asset Selector"><br/>
+        <a href="asset-selector-properties.md"> Eigenschappen van de Selecteur van Activa </a>
         <p>
-        <em> Leer de grondbeginselen van het aanpassen van diverse componenten van de Selector van Activa, zoals filters, selectie van activa, verlopen activa, en veel meer. </em>
+        <em> begrijp het gebruik van eigenschappen op een praktische manier. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Voorbeelden van Asset Selector"><br/>
-        <a href="asset-selector-customization.md"> Voorbeelden van de Selecteur van Activa </a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Eigenschappen van Asset Selector, afbeelding"><br/>
+        <a href="asset-selector-examples.md"> Voorbeelden van de Selecteur van Activa </a>
         <p>
-        <em> begrijp het gebruik van eigenschappen op een praktische manier. </em>
+        <em> Leer de grondbeginselen van het aanpassen van diverse componenten van de Selector van Activa, zoals filters, selectie van activa, verlopen activa, en veel meer. </em>
         </p>
     </td>
     <td>
