@@ -118,7 +118,7 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 >[!NOTE]
 >
 >U kunt dezelfde afbeeldingen gebruiken om verschillende tagmodellen te trainen. Koppel een afbeelding echter niet aan meerdere tags in een labelmodel. U kunt dezelfde afbeelding labelen met verschillende tags die bij verschillende labelmodellen horen.
->>U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlijnen kunt u goede afbeeldingen kiezen om te trainen.
+>&#x200B;>U kunt de training niet ongedaan maken. Aan de hand van de bovenstaande richtlijnen kunt u goede afbeeldingen kiezen om te trainen.
 
 ## Het model trainen voor uw douanetags {#train-model}
 
@@ -161,7 +161,7 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 >[!NOTE]
 >
 >Wat gebeurt er als ik de training Slimme tags van de ene instantie naar de andere wil overbrengen via een exportbewerking?
->>U hoeft de training Slimme tags niet te exporteren als de omgeving tot dezelfde IMS org behoort. Deze wordt automatisch gedeeld. Als de omgeving zich in verschillende IMS-organisaties bevindt, is het niet mogelijk om training voor slimme tags te delen of te exporteren.
+>&#x200B;>U hoeft de training Slimme tags niet te exporteren als de omgeving tot dezelfde IMS org behoort. Deze wordt automatisch gedeeld. Als de omgeving zich in verschillende IMS-organisaties bevindt, is het niet mogelijk om training voor slimme tags te delen of te exporteren.
 
 ## Beperkingen en aanbevolen procedures met betrekking tot slimme tags {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 >[!NOTE]
 >
 >Of u met slimme tags op uw tags kunt trainen en deze kunt toepassen op andere afbeeldingen, is afhankelijk van de kwaliteit van de afbeeldingen die u gebruikt voor training.
->>Voor de beste resultaten raadt Adobe aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
+>&#x200B;>Voor de beste resultaten raadt Adobe aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
