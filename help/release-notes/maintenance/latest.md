@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
+source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21005 samengevat, die op 27 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-21005}
 
@@ -47,7 +47,7 @@ De activering van de 2025.5.0-functie biedt de volledige functie die is ingestel
 * GUIDES-26434: Native PDF-publicatie gaat eindeloos door als de DITA-inhoud een webkoppeling heeft zonder bereik als `external` .
 * GUIDEN-26516: Het publiceren van inheemse PDFs en de plaatsen van AEM stallen en wordt een rij gevormd, wanneer er fouten in de inhoud zijn.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekende problemen {#known-issues-21005}
 
@@ -58,7 +58,8 @@ Geen.
 * GRANITE-54164: Verwijderd `org.apache.jackrabbit.oak.plugins.blob` uit openbare API.
 * GRANITE-54280: Verwijderd `org.apache.jackrabbit.oak.cache` uit openbare API.
 * GRANITE-58332: Vervangen `org.apache.jackrabbit.oak.plugins.memory` in openbare API.
-* De [&#128279;](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionaliteit van de Automatisering van de Opstelling van 0&rbrace; Experience Cloud is afgekeurd.
+* YUI-compressor voor javascript is vervangen.
+* De ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionaliteit van de Automatisering van de Opstelling van 0} Experience Cloud is afgekeurd.[
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
