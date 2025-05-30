@@ -59,7 +59,7 @@ Geen.
 * GRANITE-54280: Verwijderd `org.apache.jackrabbit.oak.cache` uit openbare API.
 * GRANITE-58332: Vervangen `org.apache.jackrabbit.oak.plugins.memory` in openbare API.
 * YUI-compressor voor javascript is vervangen.
-* De ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionaliteit van de Automatisering van de Opstelling van 0} Experience Cloud is afgekeurd.[
+* De [&#128279;](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionaliteit van de Automatisering van de Opstelling van 0&rbrace; Experience Cloud is afgekeurd.
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
