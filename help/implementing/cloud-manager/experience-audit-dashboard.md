@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,20 @@ ht-degree: 0%
 
 # Experience Audit-dashboard {#experience-audit-dashboard}
 
-Ontdek hoe de Controle van de Ervaring uw plaatsingsproces bevestigt, die ervoor zorgt dat de veranderingen basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen. Het verstrekt een duidelijke en informatieve dashboardinterface om deze metriek te volgen.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+Ontdek hoe de Controle van de Ervaring uw plaatsingsproces bevestigt, die ervoor zorgt dat de veranderingen basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO (de Optimalisering van de Motor van het Onderzoek) voldoen. Het verstrekt een duidelijke en informatieve dashboardinterface om deze metriek te volgen.
 
 ## Overzicht {#overview}
 
 De Controle van de ervaring bevestigt het plaatsingsproces en de hulp zorgt ervoor dat de veranderingen worden opgesteld:
 
-1. Voldoe aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO (de Optimalisering van de Motor van het Onderzoek).
-
+1. Voldoet aan basislijnstandaarden voor prestaties, toegankelijkheid, aanbevolen procedures en SEO.
 1. Breng geen regressies aan.
 
 De controle van de ervaring in Cloud Manager zorgt ervoor dat de ervaring van de gebruiker op de plaats van de hoogste normen is.
 
-De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing werd geïntroduceerd.
+De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Deze insight is waardevol om te bepalen of er een regressie is die met de huidige plaatsing werd geïntroduceerd.
 
 De Controle van de ervaring wordt aangedreven door [ Lighthouse van Google ](https://developer.chrome.com/docs/lighthouse/overview/), een open bronhulpmiddel van Google, en in alle de productiepijpleidingen van Cloud Manager toegelaten.
 
@@ -35,9 +36,9 @@ De Controle van de ervaring wordt aangedreven door [ Lighthouse van Google ](htt
 
 Er is een Experience Audit beschikbaar voor Cloud Manager:
 
-* (Standaard) Sites-productiepijpleidingen
-* (Optioneel) Ontwikkeling van pijpleidingen in volle stapel
-* (Facultatief) Ontwikkeling van voorpijpleidingen
+* (Standaard) Sites-productiepijpleidingen.
+* (Optioneel) Ontwikkeling van pijpleidingen met volledige stapelcapaciteit.
+* (Optioneel) Ontwikkeling van voorpijpleidingen.
 
 Zie de [ sectie van de Configuratie ](#configuration) voor meer informatie over hoe te om de controle voor de facultatieve milieu&#39;s te vormen.
 
@@ -49,11 +50,11 @@ De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het ka
 
 1. Afhankelijk van het type van pijpleiding u wilt vormen, doe één van het volgende:
 
-   * Voeg een nieuwe [ productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) toe om de wegen te bepalen u de controle wilt evalueren.
-   * Voeg een nieuwe [ niet-productiepijplijn ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) toe, als u de controle op een front-end of ontwikkelings volledig-stapelpijpleiding wilt toelaten.
-   * Of, kunt u [ een bestaande pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) uitgeven, en de bestaande opties bijwerken.
+   * [ voeg een productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) toe om de wegen te bepalen u de controle wilt evalueren.
+   * [ voeg een niet productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) toe, als u de controle op een front-end of ontwikkelings volledig-stapelpijpleiding wilt toelaten.
+   * [ geef een bestaande pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) uit, en werk de bestaande opties bij.
 
-1. Om de Controle van de Ervaring te gebruiken wanneer het toevoegen van of het uitgeven van een niet productiepijplijn, selecteer het **checkbox van de Controle van de Ervaring 0&rbrace;.** U kunt deze optie op het **Code van Source** lusje vinden.
+1. Om de Controle van de Ervaring te gebruiken wanneer het toevoegen van of het uitgeven van een niet productiepijplijn, selecteer het **checkbox van de Controle van de Ervaring 0}.** U kunt deze optie op het **Code van Source** lusje vinden.
 
    ![ toelatend de Controle van de Ervaring ](assets/experience-audit-enable.jpg)
 
@@ -80,7 +81,7 @@ De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het ka
 
 ## Resultaten van controle door ervaring {#results}
 
-De resultaten van de Controle van de Ervaring worden voorgesteld in de **testende fase van het Stadium** van de productiepijpleiding via de [ pagina van de de uitvoeringspijplijn van de productiepijplijn ](/help/implementing/cloud-manager/deploy-code.md).
+De resultaten van de Controle van de Ervaring worden voorgesteld in de **testende fase van het Stadium** van de productiepijplijn door de [ pagina van de de uitvoeringspijplijn van de productiepijplijn ](/help/implementing/cloud-manager/deploy-code.md).
 
 ![ Dashboard in de pijpleiding ](assets/experience-audit-dashboard.png)
 
@@ -97,7 +98,7 @@ U kunt tot de volledige controleresultaten toegang hebben door het **lusje van R
 >
 >In de volgende secties wordt beschreven hoe u de resultaten van de Experience Audit kunt bekijken.
 >
->* Om meer details op te leren hoe de controlewerken, zie {de Details van de Evaluatie van de Controle van 0} Ervaring [&#128279;](#details).
+>* Om meer details op te leren hoe de controlewerken, zie {de Details van de Evaluatie van de Controle van 0} Ervaring ](#details).[
 >* Om te weten hoe te om een Controle van de Ervaring op bestelling in werking te stellen, zie [ Rapporten van de Controle op bestelling ](#on-demand).
 >* Als u kwesties met de controle ervaart, zie [ de Uitdagingen van de Controle van de Ervaring ](#issues).
 
@@ -182,7 +183,7 @@ De aftasten op bestelling brengen een Controle van de Ervaring voor de recentste
 
 Op voltooiing, wordt de scores grafiek automatisch bijgewerkt, en u kunt de resultaten precies zoals voor een aftasten van de pijpleidingsuitvoering inspecteren.
 
-U kunt het scoregrafiek filtreren dat op het trekkertype door de **selecteur te gebruiken 0&rbrace; Trigger &lbrace;wordt gebaseerd.**
+U kunt het scoregrafiek filtreren dat op het trekkertype door de **selecteur te gebruiken 0} Trigger {wordt gebaseerd.**
 
 ![ de filter van de Trekker ](assets/experience-audit-on-demand-trigger.png)
 
