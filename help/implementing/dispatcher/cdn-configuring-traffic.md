@@ -60,11 +60,11 @@ De regeltypen in de onderstaande secties hebben dezelfde syntaxis.
 
 Een regel wordt van verwijzingen voorzien door een naam, een voorwaardelijk &quot;wanneer clausule&quot;, en acties.
 
-De clausule &quot;wanneer&quot;bepaalt of een regel, gebaseerd op eigenschappen met inbegrip van domein, weg, vraagkoorden, kopballen, en koekjes zal worden geëvalueerd. De syntaxis is het zelfde over regeltypes; voor details, zie de ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.[
+De clausule &quot;wanneer&quot;bepaalt of een regel, gebaseerd op eigenschappen met inbegrip van domein, weg, vraagkoorden, kopballen, en koekjes zal worden geëvalueerd. De syntaxis is het zelfde over regeltypes; voor details, zie de [&#128279;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.
 
 De details van het actieknooppunt verschillen per regeltype en worden in de afzonderlijke secties hieronder beschreven.
 
-In de configuratieregels, kunt u geheimen van verwijzingen voorzien die als milieuvariabelen worden bepaald (zie {de Secreten van 0} Configuratie ](/help/implementing/dispatcher/cdn-credentials-authentication.md)).[
+In de configuratieregels, kunt u geheimen van verwijzingen voorzien die als milieuvariabelen worden bepaald (zie {de Secreten van 0} Configuratie [&#128279;](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
 
 ## Transformaties aanvragen {#request-transformations}
 
