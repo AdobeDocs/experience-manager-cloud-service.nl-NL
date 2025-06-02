@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 >[!NOTE]
 >
->Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **&#x200B;**&#x200B;in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **** in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Als u op het gebruiken van a **beheerde klant (OV/EV) SSL certificaat** van plan bent, wordt uw domein geverifieerd *nadat* u [ het OV/EV SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
 
@@ -62,7 +62,13 @@ Hier volgen enkele algemene fouten bij de verificatie van domeinnamen en de bijb
 
 ### Fout domein niet geïnstalleerd {#domain-not-installed}
 
-Deze fout kan optreden tijdens de domeinvalidatie van het EV/OV-certificaat, zelfs nadat u hebt gecontroleerd dat het certificaat op de juiste wijze is bijgewerkt.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+Als u een domeintoewijzing toevoegt in Cloud Manager, wordt mogelijk het volgende foutbericht weergegeven:
+
+*het domein is reeds geïnstalleerd in een Fastly rekening. Verwijder het bestand eerst uit het bestand voordat u het aan Cloud Service toevoegt.*
+
+Dit bericht wijst erop dat het domein momenteel met een verschillende Fastly rekening-typisch buiten de controle van Adobe wordt geassocieerd. Als u wilt doorgaan, moet het domein van de andere account worden losgekoppeld voordat het kan worden toegevoegd aan de door Adobe beheerde Cloud Service. Dit probleem doet zich doorgaans voor wanneer hetzelfde domein al is toegewezen aan een andere oorsprong in een configuratie die niet snel door Adobe wordt uitgevoerd.
 
 #### Foutoorzaak {#cause}
 
@@ -88,7 +94,7 @@ De fout is als volgt gecorrigeerd:
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0&rbrace; Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
+Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0} Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
 
 Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
