@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 >[!NOTE]
 >
->Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **&#x200B;**&#x200B;in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **** in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Als u op het gebruiken van a **beheerde klant (OV/EV) SSL certificaat** van plan bent, wordt uw domein geverifieerd *nadat* u [ het OV/EV SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
 
@@ -56,9 +56,9 @@ Cloud Manager verifieert domeineigendom via het SSL-certificaat (OV/EV) dat door
 | Verwijderen is mislukt | Het verwijderen van een aangepaste domeinnaam is mislukt en moet opnieuw worden geprobeerd.<br> zie [ de namen van het douanedomein beheren ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren. |
 
 
-## Fouten in domeinnaam {#domain-error}
+## Fout in domeinnaam {#domain-error}
 
-Hier volgen enkele algemene fouten bij de verificatie van domeinnamen en de bijbehorende resoluties.
+Hier volgt een algemene fout bij de verificatie van domeinnamen en de gebruikelijke resolutie.
 
 ### Fout domein niet geïnstalleerd {#domain-not-installed}
 
@@ -92,7 +92,7 @@ De fout is als volgt gecorrigeerd:
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0&rbrace; Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
+Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0} Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
 
 Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
