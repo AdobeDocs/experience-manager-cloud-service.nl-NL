@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
+source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 >[!NOTE]
 >
->Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **&#x200B;**&#x200B;in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **** in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Als u op het gebruiken van a **beheerde klant (OV/EV) SSL certificaat** van plan bent, wordt uw domein geverifieerd *nadat* u [ het OV/EV SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
 
@@ -64,23 +64,21 @@ Hier volgen enkele algemene fouten bij de verificatie van domeinnamen en de bijb
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-Als u een domeintoewijzing toevoegt in Cloud Manager, wordt mogelijk het volgende foutbericht weergegeven:
+Wanneer u probeert een domeinafbeelding toe te voegen in Cloud Manager, wordt mogelijk het volgende foutbericht weergegeven:
 
 *het domein is reeds geïnstalleerd in een Fastly rekening. Verwijder het bestand eerst uit het bestand voordat u het aan Cloud Service toevoegt.*
 
-Dit bericht wijst erop dat het domein momenteel met een verschillende Fastly rekening-typisch buiten de controle van Adobe wordt geassocieerd. Als u wilt doorgaan, moet het domein van de andere account worden losgekoppeld voordat het kan worden toegevoegd aan de door Adobe beheerde Cloud Service. Dit probleem doet zich doorgaans voor wanneer hetzelfde domein al is toegewezen aan een andere oorsprong in een configuratie die niet snel door Adobe wordt uitgevoerd.
+<!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
-#### Foutoorzaak {#cause}
-
+**de oorzaak van de Fout**
 Met Fastly wordt een domein vergrendeld op de account die het eerst registreert en met andere accounts moet toestemming worden gevraagd om een subdomein te registreren. Bovendien kunt u met Snelheid alleen een apex-domein en bijbehorende subdomeinen toewijzen aan één Fastly-service en -account. Als u een bestaande Fastly-account hebt die dezelfde map en subdomeinen koppelt die worden gebruikt voor uw AEM Cloud Service-domeinen, ziet u deze fout.
 
-#### Foutresolutie {#resolution}
-
+**resolutie van de Fout**
 De fout is als volgt gecorrigeerd:
 
 * Verwijder de apex- en subdomeinen van de bestaande account voordat u het domein in Cloud Manager installeert.
 
-* Gebruik deze optie om het apex-domein en alle subdomeinen te koppelen aan de AEM as a Cloud Service Fastly-account. Zie [ Werkend met Domeinen in de Fastly documentatie ](https://docs.fastly.com/en/guides/working-with-domains) voor extra details.
+* Gebruik deze optie om het apex-domein en alle subdomeinen te koppelen aan de AEM as a Cloud Service Fastly-account. Zie [ Werkend met domeinen ](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/) in de Snelle documentatie voor extra details.
 
 * Als uw apex-domein meerdere subdomeinen heeft voor AEM as a Cloud Service- en niet-AEM-sites die een koppeling moeten maken naar verschillende snelaccounts, probeert u het domein te installeren in Cloud Manager. Met dit proces kunt u subdomeinverbindingen beheren voor verschillende snelaccounts. Als de installatie van het domein mislukt, maakt u snel een Customer Support-ticket, zodat Adobe in uw naam snel een vervolg kan geven.
 
@@ -94,7 +92,7 @@ De fout is als volgt gecorrigeerd:
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0&rbrace; Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
+Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0} Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
 
 Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
