@@ -37,7 +37,7 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 >[!NOTE]
 >
->Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **** in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Als u een *Adobe beheerde (DV) SSL certificaat* met het domein gebruikt, brengt Cloud Manager automatisch verificatie teweeg wanneer u **&#x200B;**&#x200B;in de Verify doos van de domeindialoog klikt wanneer [ toevoegend een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Als u op het gebruiken van a **beheerde klant (OV/EV) SSL certificaat** van plan bent, wordt uw domein geverifieerd *nadat* u [ het OV/EV SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
 
@@ -94,7 +94,7 @@ De fout is als volgt gecorrigeerd:
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0} Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
+Als u reeds een CDN (het Netwerk van de Levering van de Inhoud) configuratie voor uw namen van het douanedomein hebt, verschijnt een informatief bericht op de **en** milieu **pagina&#39;s van de Namen van het Domein van 0&rbrace; Douane.** Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij binnen Cloud Manager kunnen worden beheerd en worden bekeken.
 
 Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
