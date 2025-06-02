@@ -4,9 +4,9 @@ description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruike
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 
 Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtigingen vereist in zowel de bronomgeving als de doelomgeving.
 
-| Functie Inhoud kopiëren | Beheerdersgroep AEM | Implementatiebeheerfunctie |
+| Functie Inhoud kopiëren | AEM-beheergroep | Implementatiebeheerfunctie |
 |---|---|---|
 | Creeer en wijzig [ inhoudssets ](#create-content-set) | Niet vereist | Vereist |
 | Begin of annuleer het [ proces van het inhoudsexemplaar ](#copy-content) | Vereist | Vereist |
@@ -175,7 +175,7 @@ Om dit, op de **pagina van de Activiteit van de Inhoud van het Exemplaar** te do
 >
 >Wanneer u een bewerking voor het kopiëren van inhoud annuleert, kan dit resulteren in een gedeeltelijke kopie van de inhoud in de doelomgeving. Deze situatie kan het bestemmingsmilieu in een onbruikbaar geval verlaten.
 >
->Als uw omgeving zich in een dergelijke toestand bevindt als gevolg van annulering, neemt u contact op met de klantenservice van de Adobe voor hulp.
+>Als uw omgeving zich in een dergelijke toestand bevindt als gevolg van annulering, neemt u contact op met de klantenservice van Adobe voor hulp.
 
 ### Logbestanden openen {#accessing-logs}
 
@@ -200,3 +200,4 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Het gereedschap voor het kopiëren van inhoud heeft geen versiemogelijkheid en kan niet automatisch gewijzigde inhoud of gemaakte inhoud detecteren in de bronomgeving in een inhoudenset sinds de laatste bewerking voor het kopiëren van inhoud.
    * Als u uw doelomgeving alleen wilt bijwerken met wijzigingen in de inhoud, moet u sinds de laatste bewerking voor het kopiëren van inhoud een inhoudsset maken. Geef vervolgens de paden op in de broninstantie waar wijzigingen zijn aangebracht sinds de laatste bewerking voor het kopiëren van inhoud.
 * Versiegegevens worden niet opgenomen in een inhoudskopie.
+* [ de Modellen van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunnen verwijzingsgebieden specificeren die op universeel unieke IDs (UUID) worden gebaseerd. Dergelijke UUIDs is opslagplaats-specifiek, zodat zal het hulpmiddel van de inhoudkopie deze UUIDs in het doelmilieu opnieuw berekenen wanneer het kopiëren van Inhoudsfragmenten.
