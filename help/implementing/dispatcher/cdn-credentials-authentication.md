@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # CDN-referenties en -verificatie configureren {#cdn-credentials-authentication}
 
-Adobe-verstrekte CDN heeft verscheidene eigenschappen en de diensten, waarvan sommige op geloofsbrieven en authentificatie baseren om een aangewezen niveau van ondernemingsveiligheid te verzekeren. Door regels in een configuratiedossier te verklaren dat door de Cloud Manager [ wordt opgesteld config pijpleiding ](/help/operations/config-pipeline.md) te gebruiken, kunnen de klanten, op een zelfbediening manier, het volgende vormen:
+Adobe-Geleide CDN heeft verscheidene eigenschappen en de diensten, waarvan sommige op geloofsbrieven en authentificatie baseren om een aangewezen niveau van ondernemingsveiligheid te verzekeren. Door regels in een configuratiedossier te verklaren dat door de Cloud Manager [ wordt opgesteld config pijpleiding ](/help/operations/config-pipeline.md) te gebruiken, kunnen de klanten, op een zelfbediening manier, het volgende vormen:
 
-* De x-AEM-Edge-Zeer belangrijke HTTP- kopbalwaarde die door Adobe CDN wordt gebruikt om verzoeken te bevestigen die uit een klant-beheerde CDN komen.
+* De x-AEM-Edge-Zeer belangrijke HTTP- kopbalwaarde die door Adobe CDN wordt gebruikt om verzoeken te bevestigen die van een Klantgeleid CDN komen.
 * Het API-token dat wordt gebruikt om bronnen in de CDN-cache leeg te maken.
 * Een lijst met combinaties van gebruikersnaam en wachtwoord waarmee toegang kan worden verkregen tot beperkte inhoud door het verzenden van een Basic Authentication-formulier.
 
@@ -24,11 +24,17 @@ Elk van deze, met inbegrip van de configuratiesyntaxis, wordt beschreven in zijn
 
 Er is een sectie op hoe te [ te roteren sleutels ](#rotating-secrets), die goede veiligheidspraktijk is.
 
+>[!NOTE]
+> Als omgevingsvariabelen gedefinieerde geheimen moeten als onveranderlijk worden beschouwd. In plaats van hun waarde te veranderen, zou u een nieuw geheim met een nieuwe naam en verwijzing moeten tot stand brengen dat geheim in de configuratie. Als u dit niet doet, zal dit leiden tot een onbetrouwbare bijwerking van geheimen.
+
+>[!WARNING]
+>Verwijder niet de milieuvariabelen die in uw configuratie CDN van verwijzingen worden voorzien. Doing die mislukkingen in het bijwerken van uw configuratie CDN (bijvoorbeeld, het bijwerken van regels of douanedomeinen en certificaten) zou kunnen veroorzaken.
+
 ## Door de klant beheerde CDN HTTP-headerwaarde {#CDN-HTTP-value}
 
 Zoals die in [ CDN in AEM as a Cloud Service ](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) pagina wordt beschreven, kunnen de klanten verkiezen om verkeer door hun eigen CDN te leiden, die als Klant CDN (ook genoemd ook BYOCDN) wordt bedoeld.
 
-Als deel van de opstelling, moeten CDN van de Adobe en CDN van de Klant over een waarde van de `X-AEM-Edge-Key` Kopbal van HTTP akkoord gaan. Deze waarde wordt geplaatst op elk verzoek bij Klant CDN, alvorens het aan Adobe CDN wordt verpletterd, die dan bevestigt dat de waarde zoals verwacht is, zodat kan het andere kopballen van HTTP vertrouwen, met inbegrip van die die helpen het verzoek aan de aangewezen AEM oorsprong leiden.
+Als onderdeel van de setup moeten de Adobe CDN en de Customer CDN akkoord gaan met een waarde van de `X-AEM-Edge-Key` HTTP Header. Deze waarde wordt geplaatst op elk verzoek bij Klant CDN, alvorens het aan Adobe CDN wordt verpletterd, die dan bevestigt dat de waarde zoals verwacht is, zodat kan het andere kopballen van HTTP vertrouwen, met inbegrip van die die helpen het verzoek aan de aangewezen oorsprong van AEM leiden.
 
 De *x-AEM-Edge-Zeer belangrijke* waarde wordt van verwijzingen voorzien door `edgeKey1` en `edgeKey2` eigenschappen in een dossier genoemd `cdn.yaml` of gelijkaardig, ergens onder een top-level `config` omslag. Lees [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure) voor details over de omslagstructuur en hoe te om de configuratie op te stellen.  De syntaxis wordt beschreven in het onderstaande voorbeeld.
 
@@ -59,7 +65,7 @@ data:
 
 Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan `1` moeten worden geplaatst.
 
-Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
+Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
 
 Tot de aanvullende eigenschappen behoren:
 
@@ -68,7 +74,7 @@ Tot de aanvullende eigenschappen behoren:
 * Authenticatoren: hiermee kunt u een type token of referentie declareren. Dit is in dit geval een Edge-sleutel. Het bevat de volgende eigenschappen:
    * name - a descriptive string.
    * type - moet `edge` zijn.
-   * edgeKey1 - de waarde van *x-AEM-Edge-Zeer belangrijk*, die a [ Cloud Manager moet verwijzen geheim-type milieuvariabele ](/help/operations/config-pipeline.md#secret-env-vars). Selecteer Alle voor het veld Toegepaste service. Men adviseert dat de waarde (bijvoorbeeld, `${{CDN_EDGEKEY_052824}}`) op de dag wijst het werd toegevoegd.
+   * edgeKey1 - de waarde van *x-AEM-Edge-Sleutel*, die a [ Cloud Manager moet verwijzen geheim-type milieuvariabele ](/help/operations/config-pipeline.md#secret-env-vars). Selecteer Alle voor het veld Toegepaste service. Men adviseert dat de waarde (bijvoorbeeld, `${{CDN_EDGEKEY_052824}}`) op de dag wijst het werd toegevoegd.
    * edgeKey2 - die voor de omwenteling van geheimen wordt gebruikt, die in [ wordt beschreven het roteren geheimen sectie ](#rotating-secrets) hieronder. Definieer het op dezelfde manier als edgeKey1. Minstens een van `edgeKey1` en `edgeKey2` moet worden gedeclareerd.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Regels: hiermee kunt u aangeven welke van de authenticatoren moeten worden gebruikt en of dit voor de publicatie- en/of voorvertoningslaag is.  Het omvat:
@@ -158,11 +164,11 @@ Tot de aanvullende eigenschappen behoren:
 >[!NOTE]
 >De zuiveringssleutel moet als a [ geheime typeVariabele van het Milieu van Cloud Manager ](/help/operations/config-pipeline.md#secret-env-vars) worden gevormd, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld. Het wordt aanbevolen een unieke willekeurige sleutel van minimaal 32 bytes te gebruiken. De cryptografische bibliotheek van Open SSL kan bijvoorbeeld een willekeurige sleutel genereren door de opdracht rand -hex 32 te openen.
 
-U kunt [ een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
+U kunt [ een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
 
 ## Basisverificatie {#basic-auth}
 
-Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze functie is vooral bedoeld voor eenvoudige gevallen van verificatiegebruik, zoals het beoordelen van inhoud door belanghebbenden uit het bedrijfsleven, in plaats van als een volledige oplossing voor toegangsrechten voor eindgebruikers.
+Bescherm bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord zijn vereist. Deze functie is vooral bedoeld voor eenvoudige gevallen van verificatiegebruik, zoals het beoordelen van inhoud door belanghebbenden uit het bedrijfsleven, in plaats van als een volledige oplossing voor toegangsrechten voor eindgebruikers.
 
 De eindgebruiker zal een basisauthandboek als het volgende ervaren:
 
@@ -216,7 +222,9 @@ Daarnaast bevat de syntaxis:
 
 ## Geheimen roteren {#rotating-secrets}
 
-1. Het is een goede veiligheidspraktijk om af en toe geloofsbrieven te veranderen. Dit kan worden verwezenlijkt zoals hieronder wordt geïllustreerd, gebruikend het voorbeeld van een randsleutel, hoewel de zelfde strategie voor purge sleutels wordt gebruikt.
+Het is een goede veiligheidspraktijk om geloofsbrieven regelmatig te veranderen. Herinner dat de milieuvariabelen niet direct zouden moeten worden veranderd, maar in plaats daarvan tot een nieuw geheim leiden en de nieuwe naam in de configuratie van verwijzingen voorzien.
+
+Dit gebruiksgeval wordt hieronder geïllustreerd door het voorbeeld van een randsleutel te gebruiken, hoewel de zelfde strategie ook voor zuiveringssleutels kan worden gebruikt.
 
 1. Aanvankelijk is alleen `edgeKey1` gedefinieerd, in dit geval wordt `${{CDN_EDGEKEY_052824}}` genoemd. Dit wordt aanbevolen voor de datum waarop het is gemaakt.
 
@@ -227,7 +235,6 @@ Daarnaast bevat de syntaxis:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. Wanneer het tijd is om de sleutel te roteren, creeer een nieuw geheim van Cloud Manager, bijvoorbeeld `${{CDN_EDGEKEY_041425}}`.
 1. Verwijs er in de configuratie naar vanuit `edgeKey2` en implementeer deze.
 
@@ -249,7 +256,6 @@ Daarnaast bevat de syntaxis:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Verwijder de oude geheime verwijzing (`${{CDN_EDGEKEY_052824}}`) uit Cloud Manager en implementeer deze.
 
 1. Wanneer u gereed bent voor de volgende rotatie, volgt u dezelfde procedure, maar deze keer voegt u `edgeKey1` toe aan de configuratie en verwijst u naar een nieuw Cloud Manager-omgevingsgeheim met de naam `${{CDN_EDGEKEY_031426}}` .
@@ -262,3 +268,47 @@ Daarnaast bevat de syntaxis:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+Wanneer het roteren van geheimen die in verzoekkopballen, bijvoorbeeld voor het voor authentiek verklaren tegen een achtergrond worden geplaatst, wordt geadviseerd om de omwenteling in twee stappen te doen om de kopbalwaarde te waarborgen wordt geschakeld zonder tijdelijke hiaten.
+
+1. Eerste configuratie vóór de rotatie. In deze status wordt de oude sleutel naar de achtergrond verzonden.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. Introduceer de nieuwe sleutel `API_KEY_2` door dezelfde kopbal tweemaal te plaatsen (de nieuwe sleutel zou na de oude sleutel moeten worden geplaatst). Na het opstellen van dit zult u de nieuwe sleutel in het achterste eind zien.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. Verwijder de oude sleutel `API_KEY_1` uit de configuratie. Na het opstellen van dit zult u de nieuwe sleutel in het achterste eind zien en het is veilig om de het omgevingsvariabele van de oude sleutel te verwijderen.
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+
