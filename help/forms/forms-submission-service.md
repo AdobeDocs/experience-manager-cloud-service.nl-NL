@@ -5,9 +5,9 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Hieronder staan de voorwaarden voor het gebruik van de Forms-verzendservice:
 
 ## Forms-verzendservice configureren
 
-Maak een nieuw AEM-project dat is geconfigureerd met het Adaptive Forms Block. Verwijs naar het [ Begonnen Worden - het artikel van het Leerprogramma van de Ontwikkelaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) om te leren hoe te om een nieuw project van AEM tot stand te brengen. Werk het `fstab.yaml` dossier in uw project bij. Vervang de bestaande verwijzing door het pad naar de map die u met de `forms@adobe.com` hebt gedeeld.
+Maak een nieuw AEM-project dat is geconfigureerd met het Adaptive Forms Block. Verwijs naar het [ Begonnen Worden - het artikel van het Leerprogramma van de Ontwikkelaar ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) om te leren hoe te om een nieuw project van AEM tot stand te brengen. Werk het `fstab.yaml` dossier in uw project bij. Vervang de bestaande verwijzing door het pad naar de map die u met de `forms@adobe.com` hebt gedeeld.
 
 U kunt [ de Dienst van de Verzending van Forms manueel vormen ](#configuring-the-forms-submission-service-manually) of [ vormen de Dienst van de Verzending van Forms gebruikend API ](#configuring-the-forms-submission-service-using-api).
 
@@ -45,17 +45,21 @@ U kunt [ de Dienst van de Verzending van Forms manueel vormen ](#configuring-the
 
 ![ Werkschema voor de dienst van de vormenvoorlegging ](/help/forms/assets/forms-submission-service-workflow.png)
 
-#### 1. Een formulier maken met behulp van een formulierdefinitie
+#### &#x200B;1. Een formulier maken met behulp van een formulierdefinitie
 
-Maak een formulier met Google Sheets of Microsoft Excel. Leren hoe te om een vorm tot stand te brengen gebruikend een vormdefinitie in Microsoft Excel of de Bladen van Google, [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Maak een formulier met Google Sheets of Microsoft Excel. Leren hoe te om een vorm tot stand te brengen gebruikend een vormdefinitie in Microsoft Excel of de Bladen van Google, [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 In de onderstaande schermafbeelding wordt de formulierdefinitie weergegeven die wordt gebruikt om het formulier te maken:
 
 ![ de Definitie van de Vorm ](/help/forms/assets/form-submission-definition.png)
 
-#### 2. Schakel het werkblad in om gegevens te accepteren.
+>[!IMPORTANT]
+>
+>**het blad waar de vorm wordt authored heeft beperkingen op wat het kan worden genoemd. Alleen `helix-default` en `shared-aem` kunnen als bladnamen worden gebruikt.**
 
-Nadat u het formulier hebt gemaakt en een voorbeeld hebt bekeken, schakelt u het bijbehorende werkblad in om gegevens te ontvangen. voeg een nieuw blad toe als `incoming` . U kunt [ manueel toelaten spreadsheet om gegevens ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) goed te keuren.
+#### &#x200B;2. Schakel het werkblad in om gegevens te accepteren.
+
+Nadat u het formulier hebt gemaakt en een voorbeeld hebt bekeken, schakelt u het bijbehorende werkblad in om gegevens te ontvangen. voeg een nieuw blad toe als `incoming` . U kunt [ manueel toelaten spreadsheet om gegevens ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) goed te keuren.
 
 ![ Binnenkomend blad ](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -63,7 +67,7 @@ Nadat u het formulier hebt gemaakt en een voorbeeld hebt bekeken, schakelt u het
 >
 > Als het `incoming` sheet niet bestaat, zou AEM geen gegevens naar dit werkboek verzenden.
 
-#### 3. Deel het werkblad en genereer een koppeling.
+#### &#x200B;3. Deel het werkblad en genereer een koppeling.
 
 Voer de volgende stappen uit om het werkblad te delen met de `forms@adobe.com` -account en een koppeling te genereren:
 
@@ -77,12 +81,12 @@ Klik het oogpictogram, uitgezocht **geef** toegang uit, en klik **verzend**.
 
    ![ verbinding van het Exemplaar van inkomend blad ](/help/forms/assets/form-submission-copy-link.png)
 
-#### 4. Koppel het werkblad aan de formulierdefinitie
+#### &#x200B;4. Koppel het werkblad aan de formulierdefinitie
 
 Voer de volgende stappen uit om de Forms-verzendservice te configureren met de Google Sheets of Microsoft Excel:
 
 1. Open het werkblad met de formulierdefinitie.
-1. In de rij die aan het **beantwoordt leg** gebied voor, kleef de gekopieerde spreadsheetverbinding in de **3&rbrace; kolom van de Actie &lbrace;.**
+1. In de rij die aan het **beantwoordt leg** gebied voor, kleef de gekopieerde spreadsheetverbinding in de **3} kolom van de Actie {.**
 
    ![ Verbinding een spreadsheet ](/help/forms/assets/form-submission-sheet-linking.png)
 
@@ -151,9 +155,9 @@ Voer bijvoorbeeld de onderstaande opdracht uit in terminal- of opdrachtprompt na
 
      &quot;json 
      krullen - X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/ {id}&quot; \ 
-     &#x200B;- kopbal &quot;Content-Type: application/json&quot; \ 
-     &#x200B;- kopbal &quot;x-adobe-routing: tier=live, bucket=main—[plaats/bewaarplaats]&quot; \ 
-     &#x200B;- gegevens &quot;
+     - kopbal &quot;Content-Type: application/json&quot; \ 
+     - kopbal &quot;x-adobe-routing: tier=live, bucket=main—[plaats/bewaarplaats]&quot; \ 
+     - gegevens &quot;
      &quot;data&quot;: 
      &quot;startDate&quot;: &quot;20 25-01-10&quot;, 
      &quot;endDate&quot;: &quot;2025-01-25&quot;, 
@@ -175,9 +179,9 @@ Voer bijvoorbeeld de onderstaande opdracht uit in terminal- of opdrachtprompt na
      &quot;json 
     
      krullen - X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/ {id}&quot;&quot;
-     &#x200B;- kopbal &quot;Content-Type: application/json&quot; ^
-     &#x200B;- kopbal &quot;x-adobe-routing: tier=live, bucket=main—[site/gegevensopslagplaats]&quot;&quot;
-     &#x200B;- gegevens &quot;&lbrace;\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;202 5-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;bedrag\&quot;: \&quot;1000 000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+     - kopbal &quot;Content-Type: application/json&quot; ^
+     - kopbal &quot;x-adobe-routing: tier=live, bucket=main—[site/gegevensopslagplaats]&quot;&quot;
+     - gegevens &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;202 5-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;bedrag\&quot;: \&quot;1000 000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 

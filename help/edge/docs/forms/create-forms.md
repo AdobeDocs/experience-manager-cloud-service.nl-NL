@@ -4,9 +4,9 @@ description: Ga aan de slag met Edge Delivery Services voor AEM Forms. Creëer s
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,10 @@ Ga als volgt te werk om het formulier te maken:
 1. Open het gemaakte werkblad en wijzig de naam van het standaardwerkblad in &quot;shared-name&quot;.
 
    ![ anders noem standaardblad aan &quot;gedeeld-gebrek&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**het blad waar de vorm wordt authored heeft beperkingen op wat het kan worden genoemd. Alleen `helix-default` en `shared-aem` kunnen als bladnamen worden gebruikt.**
 
 1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;shared-name&#39; blad in. Elke rij zou a [ vormgebied ](/help/edge/docs/forms/form-components.md#available-components), met kolomkopballen moeten vertegenwoordigen die de overeenkomstige gebied [ eigenschappen ](/help/edge/docs/forms/form-components.md#components-properties) bepalen.
 
