@@ -86,7 +86,7 @@ Klik het oogpictogram, uitgezocht **geef** toegang uit, en klik **verzend**.
 Voer de volgende stappen uit om de Forms-verzendservice te configureren met de Google Sheets of Microsoft Excel:
 
 1. Open het werkblad met de formulierdefinitie.
-1. In de rij die aan het **beantwoordt leg** gebied voor, kleef de gekopieerde spreadsheetverbinding in de **3} kolom van de Actie {.**
+1. In de rij die aan het **beantwoordt leg** gebied voor, kleef de gekopieerde spreadsheetverbinding in de **3&rbrace; kolom van de Actie &lbrace;.**
 
    ![ Verbinding een spreadsheet ](/help/forms/assets/form-submission-sheet-linking.png)
 
@@ -155,9 +155,9 @@ Voer bijvoorbeeld de onderstaande opdracht uit in terminal- of opdrachtprompt na
 
      &quot;json 
      krullen - X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/ {id}&quot; \ 
-     - kopbal &quot;Content-Type: application/json&quot; \ 
-     - kopbal &quot;x-adobe-routing: tier=live, bucket=main—[plaats/bewaarplaats]&quot; \ 
-     - gegevens &quot;
+     &#x200B;- kopbal &quot;Content-Type: application/json&quot; \ 
+     &#x200B;- kopbal &quot;x-adobe-routing: tier=live, bucket=main—[plaats/bewaarplaats]&quot; \ 
+     &#x200B;- gegevens &quot;
      &quot;data&quot;: 
      &quot;startDate&quot;: &quot;20 25-01-10&quot;, 
      &quot;endDate&quot;: &quot;2025-01-25&quot;, 
@@ -179,9 +179,9 @@ Voer bijvoorbeeld de onderstaande opdracht uit in terminal- of opdrachtprompt na
      &quot;json 
     
      krullen - X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/ {id}&quot;&quot;
-     - kopbal &quot;Content-Type: application/json&quot; ^
-     - kopbal &quot;x-adobe-routing: tier=live, bucket=main—[site/gegevensopslagplaats]&quot;&quot;
-     - gegevens &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;202 5-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;bedrag\&quot;: \&quot;1000 000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+     &#x200B;- kopbal &quot;Content-Type: application/json&quot; ^
+     &#x200B;- kopbal &quot;x-adobe-routing: tier=live, bucket=main—[site/gegevensopslagplaats]&quot;&quot;
+     &#x200B;- gegevens &quot;&lbrace;\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;202 5-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;bedrag\&quot;: \&quot;1000 000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 
