@@ -35,7 +35,7 @@ Gebruik het gereedschap Refactoring om uw code te migreren voor compatibiliteit 
 
    ![afbeelding](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
----
+&#x200B;---
 
 ## Source-code uploaden {#uploading}
 
@@ -72,7 +72,7 @@ Wanneer de klanten eerst tot **Refactoring Hulpmiddelen** toegang hebben, worden
 >[!NOTE]
 >Refactoring-taken kunnen alleen worden uitgevoerd als het uploaden van de broncode is gelukt.
 
----
+&#x200B;---
 
 ## Refactoring {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ Wanneer u het **RefactoringBaan** lusje klikt, zult u een lijst van bestaande ba
 >[!NOTE]
 >U kunt individuele refactoring banen teweegbrengen of alle beschikbare hulpmiddelen in één gaan gebruiken **Alle Hulpmiddelen samen** optie.
 
----
+&#x200B;---
 
 ### &#x200B;2. Taakstatus
 
