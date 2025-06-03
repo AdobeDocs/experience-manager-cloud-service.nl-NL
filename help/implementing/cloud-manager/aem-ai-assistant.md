@@ -55,7 +55,7 @@ Naast algemene AI Medewerker voor productkennis, biedt AEM een gespecialiseerde 
 
 De AI Assistant voor AEM Forms biedt:
 
-* **Van de 10} Vorm creatie: Creeer nieuwe vormen van kras gebruikend natuurlijke taalbeschrijvingen**
+* **Van de 10&rbrace; Vorm creatie: Creeer nieuwe vormen van kras gebruikend natuurlijke taalbeschrijvingen**
 * **Invoer van het Ontwerp**: Zet bestaande ontwerpen (PDF, Figma, beelden) in de functionele vormen van AEM om
 * **Configuratie van de Vorm**: Voeg gebieden, panelen, bevestigingsregels, en voorwaardelijke logica toe
 * **het Beheer van de Lay-out**: Organiseer vormstructuur en optimaliseer voor verschillende apparaten
