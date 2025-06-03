@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
@@ -103,9 +103,7 @@ De volgende functies werken mogelijk niet correct wanneer deze worden geïmpleme
 
 #### Runtime-vereisten {#runtime-requirements}
 
-De Java 21-runtime wordt gebruikt voor builds met Java 21 en Java 17 en wordt ook geleidelijk toegepast op Java 11-builds (zie de opmerking hieronder). Er moet een omgeving zijn in AEM versie 17098 of recenter om de Java 21-update te kunnen ontvangen. Om de compatibiliteit te garanderen, zijn de volgende aanpassingen vereist.
-
-Bibliotheekupdates kunnen altijd worden toegepast, omdat ze compatibel blijven met oudere Java-versies.
+De Java 21-runtime is toegepast op alle in aanmerking komende omgevingen, omgevingen in AEM versie 17098 of hoger die aan de onderstaande criteria voldoen. Als een omgeving niet aan de criteria voldoet, is het belangrijk om aanpassingen aan te brengen om prestaties, beschikbaarheid, en veiligheid te verzekeren.
 
 * **Minimale versie van ASM:**
 Werk het gebruik van het pakket van Java `org.objectweb.asm` bij, vaak gebundeld in `org.ow2.asm.*` artefacten, aan versie 9.5 of hoger om steun voor nieuwere JVM runtimes te verzekeren.
@@ -127,8 +125,7 @@ Wanneer AEM lokaal wordt uitgevoerd met Java 21, mislukken de beginscripts ( `cr
 
 >[!IMPORTANT]
 >
->Wanneer `.cloudmanager/java-version` is ingesteld op `21` of `17` , wordt de Java 21-runtime geïmplementeerd. Java 21 runtime is gepland voor geleidelijke implementatie aan alle milieu&#39;s (niet alleen die milieu&#39;s waarvan code met Java 11 wordt gebouwd) die dinsdag, 4 Februari, 2025 beginnen. De rollouts beginnen met sandboxen en ontwikkelomgevingen, gevolgd door alle productieomgevingen in april 2025. De klanten die Java 21 runtime *willen goedkeuren* kunnen Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) contacteren.
-
+>Als een omgeving nog niet automatisch is bijgewerkt naar de Java 21-runtime, kunt u deze activeren door te bouwen met Java 17 of 21. Dit doet u door `.cloudmanager/java-version` in te stellen op `21` of `17` . Contact Adobe in [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) als u vragen hebt.
 
 #### Vereisten voor de buildtijd {#build-time-reqs}
 
