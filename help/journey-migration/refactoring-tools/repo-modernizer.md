@@ -4,7 +4,7 @@ description: Leer hoe u bestaande projectpakketten kunt herstructureren en compa
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6920651420da9b427510518b7add0637479adef5
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -17,9 +17,9 @@ Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projec
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [ AEM de Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) voor meer details over de nieuwe AEM projectstructuur voor Cloud Service.
+Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM-projecten. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om compatibel te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [ de Structuur van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) voor meer details over de nieuwe het projectstructuur van AEM voor Cloud Service.
 
-Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructuur gemaakt door de volgende implementatiestructuur te maken:
+Met de Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructuur gemaakt door de volgende implementatiestructuur te maken:
 
 * `ui.apps` -pakket wordt geïmplementeerd in `/apps` en bevat alle code
 
@@ -28,6 +28,7 @@ Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructu
 * `all` is een containerpakket dat de subpakketten `ui.apps` en `ui.content` bevat.
 
 >[!NOTE]
+>
 >De structuur van het Project is gebaseerd op *Archetype 24* voor pakketten en hun `pom.xml/filter.xml files`. Zie [ Archetype 24 ](https://github.com/adobe/aem-project-archetype) voor meer details.
 
 ## De Repository Modernizer gebruiken {#using-repo-modernizer}
