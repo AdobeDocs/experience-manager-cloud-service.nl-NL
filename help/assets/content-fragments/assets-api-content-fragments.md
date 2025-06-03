@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De Steun van het Fragment van de inhoud in HTTP API van Assets is nu verouderd [ ](/help/release-notes/deprecated-removed-features.md).
+>De Steun van het Fragment van de inhoud in HTTP API van Assets is nu verouderd [&#128279;](/help/release-notes/deprecated-removed-features.md).
 >
 >Het is vervangen door [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md).
 
@@ -89,8 +89,8 @@ Als u bijvoorbeeld toegang wilt krijgen tot `/content/dam/wknd/en/adventures/cyc
 >[!NOTE]
 >Toegang over:
 >
->* `/api/assets` **** nodig niet het gebruik van `.model` selecteur.
->* `/content/path/to/page` **** vereist het gebruik van `.model` selecteur.
+>* `/api/assets` **&#x200B;**&#x200B;nodig niet het gebruik van `.model` selecteur.
+>* `/content/path/to/page` **&#x200B;**&#x200B;vereist het gebruik van `.model` selecteur.
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
 
