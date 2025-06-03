@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service biedt meerdere API&#39;s voor 
 
 >[!NOTE]
 >
->[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [ ](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ de Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud het Beheer OpenAPIs ](/help/headless/content-fragment-openapis.md).
+>[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [&#128279;](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ de Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud het Beheer OpenAPIs ](/help/headless/content-fragment-openapis.md).
 
 ## Volgende functies {#whats-next}
 
