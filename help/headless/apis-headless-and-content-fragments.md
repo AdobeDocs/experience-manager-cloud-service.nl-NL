@@ -4,12 +4,13 @@ description: Meer informatie over de API's die beschikbaar zijn voor Gestructure
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
 
 ---
+
 
 # AEM API&#39;s voor gestructureerde levering en beheer van inhoud {#aem-apis-structured-content-delivery-and-management}
 
@@ -30,7 +31,7 @@ Adobe Experience Manager (AEM) as a Cloud Service biedt meerdere API&#39;s voor 
 
 >[!NOTE]
 >
->[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [&#128279;](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md).
+>[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [ ](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md).
 
 ## REST vs GraphQL {#rest-vs-graphql}
 
