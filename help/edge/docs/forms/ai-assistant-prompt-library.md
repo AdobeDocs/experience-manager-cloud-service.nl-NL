@@ -940,4 +940,4 @@ In Universal Editor, create a **responsive contact form** for the company websit
 6. **de acceptatietests van de Gebruiker** - hebben echte gebruikers de vorm vóór plaatsing testen
 
 
-*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en nieuwe AI Medewerkingsmogelijkheden. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).*
+*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en nieuwe AI Medewerkingsmogelijkheden. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).*
