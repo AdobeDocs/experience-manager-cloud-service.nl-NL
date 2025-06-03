@@ -14,7 +14,7 @@ ht-degree: 0%
 >id="aemcloud_rs_overview"
 >title="Overzicht"
 >abstract="Refactoring Tools is een oplossing die door Adobe is ontwikkeld om bestaande AEM-projecten te helpen refactoreren voor compatibiliteit met AEM as a Cloud Service. De hulpmiddelen worden uitgevoerd via Cloud Acceleration Manager (CAM) en automatiseren zeer belangrijke moderniseringstaken."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=nl-NL" text="Richtlijnen en beste praktijken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en beste praktijken"
 
 # Aan de slag met Refactoring Tools {#getting-started-refactoring-tools}
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Eerder beschikbaar slechts als nut CLI, verstrekken de Hulpmiddelen van het Refactoring nu een verenigde interface met eigenschappen zoals geautomatiseerde inspectie, configuratiegeneratie, en baanuitvoering - verminderend handleiding overheadkosten en verbeterend zicht.
 
-&#x200B;---
+---
 
 ## Inspectiewerkstroom {#inspection-workflow}
 
@@ -34,7 +34,7 @@ Het **Werkschema van de Inspectie** vereenvoudigt het voorbereidingsproces voor 
 * **Generatie van de Configuratie** - de hulpmiddelen inspecteren de geuploade broncode en produceren de noodzakelijke configuraties.
 * **Verzending van de Payload** - Deze configuraties worden overgegaan direct tot de geselecteerde hulpmiddelen voor uitvoering.
 
-&#x200B;---
+---
 
 ## Beschikbare Refactoring-gereedschappen
 
@@ -46,7 +46,7 @@ De **Modernizer van de Bewaarplaats van de Bewaarplaats** herstructureert de de 
 
 De **Transformator van de Code** gebruikt intelligente patroonerkenning en AI-gedreven analyse om codesegmenten te ontdekken en bij te werken die onverenigbaar met AEMaaCS zijn. Dit hulpmiddel vereenvoudigt de migratie-inspanning en vermindert handcodeveranderingen.
 
-&#x200B;---
+---
 
 ## Refactoring Workflowfasen {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ De Refactoring-gereedschappen volgen een gestructureerd tweefaseproces:
 >[!NOTE]
 >Tijdens het inspectieproces is het niet toegestaan een ander project te uploaden.
 
-&#x200B;---
+---
 
 ### Fase 2: Een Refactoring-taak activeren
 
