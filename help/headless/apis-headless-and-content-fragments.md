@@ -4,9 +4,9 @@ description: Meer informatie over de API's die beschikbaar zijn voor Gestructure
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,10 @@ Adobe Experience Manager (AEM) as a Cloud Service biedt meerdere API&#39;s voor 
    * Deze API&#39;s zijn bedoeld voor gestructureerd inhoudsbeheer.
    * De respectievelijke GET-operatoren zijn niet geoptimaliseerd voor de levering van inhoud.
    * Deze API is gebaseerd op REST.
-* [Ondersteuning voor inhoudsfragmenten in de AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * De oorspronkelijke API voor de JSON-uitvoer voor gestructureerde levering van inhoud in AEM.
-      * Terwijl robuust en bewezen, levert dit API *volledig gehydrateerde* output JSON niet. Verwijzingen worden alleen uitgevoerd als paden, waarvoor secundaire API-aanvragen nodig zijn om verdere inhoud op te halen.
-   * De Assets HTTP-API kan ook worden gebruikt voor het beheer van Content Fragments en Content Fragment Models (CRUD).
-   * Deze API is gebaseerd op REST.
-   * Ondersteuning voor inhoudsfragmenten in Assets HTTP API wordt in de toekomst vervangen, omdat dit wordt opgevolgd door de Edge Delivery Services JSON REST API. Het tijdschema is nog niet vastgesteld.
+
+>[!NOTE]
+>
+>[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [ ](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md).
 
 ## REST vs GraphQL {#rest-vs-graphql}
 

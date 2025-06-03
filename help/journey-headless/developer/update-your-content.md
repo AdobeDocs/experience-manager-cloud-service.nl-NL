@@ -5,9 +5,9 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -47,12 +47,10 @@ Adobe Experience Manager (AEM) as a Cloud Service biedt meerdere API&#39;s voor 
    * Deze API&#39;s zijn bedoeld voor gestructureerd inhoudsbeheer.
    * De respectievelijke GET-operatoren zijn niet geoptimaliseerd voor de levering van inhoud.
    * Deze API is gebaseerd op REST.
-* Ondersteuning voor inhoudsfragmenten in de AEM Assets HTTP API
-   * De oorspronkelijke API voor de JSON-uitvoer voor gestructureerde levering van inhoud in AEM.
-      * Terwijl robuust en bewezen, levert dit API *volledig gehydrateerde* output JSON niet. Verwijzingen worden alleen uitgevoerd als paden, waarvoor secundaire API-aanvragen nodig zijn om verdere inhoud op te halen.
-   * De Assets HTTP-API kan ook worden gebruikt voor het beheer van Content Fragments en Content Fragment Models (CRUD).
-   * Deze API is gebaseerd op REST.
-   * Ondersteuning voor inhoudsfragmenten in Assets HTTP API wordt in de toekomst vervangen, omdat dit wordt opgevolgd door de Edge Delivery Services JSON REST API. Het tijdschema is nog niet vastgesteld.
+
+>[!NOTE]
+>
+>[ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) is nu afgekeurd [ ](/help/release-notes/deprecated-removed-features.md). Het is vervangen door [ de Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md) samen met [ Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud het Beheer OpenAPIs ](/help/headless/content-fragment-openapis.md).
 
 ## Volgende functies {#whats-next}
 
@@ -72,9 +70,9 @@ U zou uw reis zonder kop van AEM door het document [ moeten voortzetten te herzi
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
 * [Ondersteuning voor inhoudsfragmenten in de AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-* [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [ CORS/AEM verklaarde ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [ Video - het Ontwikkelen voor CORS met AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
+* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
