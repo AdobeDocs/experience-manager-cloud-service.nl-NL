@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -50,10 +50,9 @@ Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 | Mozilla Firefox (evergroen) | A: Ondersteund | A: Ondersteund | Z: Niet ondersteund |
 | Mozilla Firefox recentste ESR [ 1 ] | A: Ondersteund | A: Ondersteund | Z: Niet ondersteund |
 | Safari op macOS (evergreen) | A: Ondersteund | A: Ondersteund | Z: Niet ondersteund |
-| Safari op iOS (evergreen) [  ] | Z: Niet ondersteund | A: Ondersteund | Z: Niet ondersteund |
+| Safari op iPadOS (groen) | Z: Niet ondersteund | A: Ondersteund | Z: Niet ondersteund |
 
 1. Uitgebreide Versie van de Steun van Firefox ([ leert meer op mozilla.org ](https://www.mozilla.org/en-US/firefox/enterprise/))
-1. Alleen ondersteuning voor Apple iPad
 
 >[!NOTE]
 >
