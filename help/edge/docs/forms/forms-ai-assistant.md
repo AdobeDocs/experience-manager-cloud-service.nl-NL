@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 0%
 
 ---
@@ -232,6 +232,69 @@ Uw input is van onschatbare waarde voor de voortdurende verbetering van AI Medew
 - **verstrek Terugkoppeling:** gebruik het ingebouwde **&quot;verstrekken Terugkoppeling&quot;bevel of knoop** binnen de AI Hulp interface om uw ervaringen te delen, kwesties te melden, of verhogingen voor te stellen. (U kunt bijvoorbeeld `/feedback` typen of op een feedbackpictogram zoeken).
 - **Officiële Steun:** voor kritieke kwesties of verdere hulp, te bereiken gelieve door de officiële de steunkanalen van Adobe of de aangewezen steuncontacten van uw organisatie te bereiken.
 
+
+
+## Werken met bijlagen
+
+De AI-assistent ondersteunt bestandsbijlagen om het maken en configureren van formulieren te verbeteren. U kunt verschillende bestandstypen koppelen voor visuele context, ontwerpverwijzingen of bestaande formulieren die u wilt converteren.
+
+### Ondersteunde typen bijlagen
+
+| Bestandstype | Gevallen gebruiken | Opdrachten die bijlagen ondersteunen | Voorbeelden |
+|-----------|-----------|-----------------------------------|----------|
+| **Beelden** (PNG, JPG, JPEG, GIF) | Referenties formulierindeling, UI-modellen, scannen van papieren formulieren | /create-form, /add-form, /create-panel, /add-panel, /update-field | Een schermafbeelding van de gewenste layout uploaden |
+| **de Dossiers van PDF** | Bestaande formulieren die moeten worden geconverteerd, ontwerpspecificaties | /create-form, /add-form, /create-panel, /add-panel | PDF-toepassingsformulieren converteren |
+| **Dossiers van Figma** | Systeemreferenties ontwerpen, UI-prototypen | /create-form, /add-form, /create-panel | Figuurontwerpframes importeren |
+| **Dossiers van het Ontwerp** (Schets, de uitvoer van Adobe XD) | Visuele ontwerpverwijzingen | /create-form, /add-form, /create-panel | Referentie-ontwerpsysteemonderdelen |
+
+### Bijlagen gebruiken
+
+1. **maak vóór of met Uw Bevel vast:**
+
+   - Klik op het bevestigingspictogram in de AI Assistant-interface
+   - Selecteer uw bestand(en) op uw apparaat
+   - Typ uw opdracht die verwijst naar het bijgevoegde bestand
+
+2. **Bijlagen van de Verwijzing in Bevelen:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Veelvoudige Gehechtheid:**
+
+   - U kunt meerdere bestanden toevoegen ter vergelijking of ter referentie
+   - Geef op welke bijlage moet worden gebruikt: &quot;de eerste bijgevoegde afbeelding gebruiken&quot; of &quot;op basis van het PDF-bestand&quot;
+
+### Aanbevolen werkwijzen voor bijlagen
+
+- **Duidelijke, Hoogwaardige Beelden:** verzeker geuploade beelden duidelijk en leesbaar voor betere analyse AI zijn
+- **Relevante Namen van het Dossier:** Gebruik beschrijvende dossiernamen om AI te helpen context begrijpen
+- **Enige Nadruk:** elke gehechtheid zou op één specifiek aspect (lay-out, gebiedsontwerp, enz.) moeten concentreren
+- **Gesteunde Formaten:** Stick aan gemeenschappelijke formaten (PNG, JPG, PDF) voor beste verenigbaarheid
+- **Grootte van het Dossier:** houd gehechtheid onder 10MB voor optimale verwerkingssnelheid
+
+### Workflows voor voorbeeldbijlagen
+
+**die een Vorm van het Papier omzetten:**
+
+1. Scan of fotografeer het papieren formulier duidelijk
+2. Het afbeeldingsbestand uploaden
+3. Opdracht gebruiken: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**het Aanpassen van een Systeem van het Ontwerp:**
+
+1. relevante ontwerpcomponenten exporteren of screenen
+2. De ontwerpverwijzing bijvoegen
+3. Opdracht gebruiken: `/create-panel following the visual style and layout shown in the attached design`
+
+**het Stijlen van het Gebied Verwijzing:**
+
+1. Screenshot van gewenste veldweergave koppelen
+2. Opdracht gebruiken: `/update-field @email to match the styling and layout shown in the attached image`
 
 ## Gerelateerde inhoud
 

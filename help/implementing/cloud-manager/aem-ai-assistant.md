@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 0%
@@ -49,13 +49,13 @@ Het huidige bereik van de AI Assistant is gericht op het aanpakken van productke
 
 ## AI Assistant voor AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-Naast algemene AI Medewerker voor productkennis, biedt AEM een gespecialiseerde **AI Medewerker voor AEM Forms (de Bouwer van de Ervaring van Forms)** aan. Deze uitgebreide assistent kan u actief helpen bij het maken en configureren van formulieren via herinneringen voor natuurlijke talen en het beantwoorden van vragen die specifiek zijn voor formulieren.
+Naast algemene AI Medewerker voor productkennis, biedt AEM een gespecialiseerde **[AI Medewerker voor AEM Forms (de Bouwer van de Ervaring van Forms)](/help/edge/docs/forms/forms-ai-assistant.md)** aan. Deze uitgebreide assistent kan u actief helpen bij het maken en configureren van formulieren via herinneringen voor natuurlijke talen en het beantwoorden van vragen die specifiek zijn voor formulieren.
 
 ### Belangrijkste mogelijkheden
 
 De AI Assistant voor AEM Forms biedt:
 
-* **Van de 10&rbrace; Vorm creatie: Creeer nieuwe vormen van kras gebruikend natuurlijke taalbeschrijvingen**
+* **Van de 10} Vorm creatie: Creeer nieuwe vormen van kras gebruikend natuurlijke taalbeschrijvingen**
 * **Invoer van het Ontwerp**: Zet bestaande ontwerpen (PDF, Figma, beelden) in de functionele vormen van AEM om
 * **Configuratie van de Vorm**: Voeg gebieden, panelen, bevestigingsregels, en voorwaardelijke logica toe
 * **het Beheer van de Lay-out**: Organiseer vormstructuur en optimaliseer voor verschillende apparaten
@@ -76,7 +76,7 @@ De AI Assistant voor AEM Forms is beschikbaar in:
 >
 > De AI Assistant voor AEM Forms (Forms Experience Builder) is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw het werkadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken.
 
-Raadpleeg de AI Assistant voor AEM Forms voor meer informatie over het gebruik van de AI Assistant voor AEM Forms, inclusief gedetailleerde voorbeelden en tips en trucs.
+Meer over het gebruiken van de Medewerker AI voor AEM Forms, met inbegrip van gedetailleerde voorbeelden en beste praktijken leren, zie de [ Medewerker AI voor de documentatie van AEM Forms ](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Voorbeelden van gevallen
 
