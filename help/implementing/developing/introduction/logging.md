@@ -4,9 +4,9 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2556'
 ht-degree: 0%
 
 ---
@@ -158,8 +158,8 @@ Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-conf
 Het veranderen van andere Logmanager OSGi configuratieeigenschappen kan in beschikbaarheidskwesties in AEM as a Cloud Service resulteren.
 
 Zoals vermeld in een vorige sectie, om efficiënte controle van klantenmilieu&#39;s te verzekeren:
-* Java-logboeken voor AEM-productcode moeten het standaardlogniveau INFO behouden en mogen niet worden overschreven door aangepaste configuraties.
-* Het is aanvaardbaar om de logboekniveaus aan DEBUG voor productcode te plaatsen, maar gebruik het spaarzaam om prestatiesdegradatie te verhinderen en aan INFO terug te herstellen wanneer het niet meer nodig is.
+* Het logniveau van de standaardlogboekconfiguratie van AEM (Apache Sling Logging Configuration) mag niet worden gewijzigd ten opzichte van de standaardwaarde van &quot;INFO&quot;.
+* Het is aanvaardbaar om de logboekniveaus aan DEBUG voor individuele pakketten van productcode (gebruikend instanties van de &quot;Apache Sling Logging Logger van de Logger van de Logger van de Logboekconfiguratie&quot;OSGi configuratiemotor) te plaatsen, maar het te gebruiken spaarzaam om prestatiesdegradatie te verhinderen en terug naar INFO te herstellen wanneer het niet meer nodig is.
 * Het is aanvaardbaar om logboekniveaus voor klant-ontwikkelde code aan te passen.
 * Alle logboeken — voor zowel AEM-productcode als door de klant ontwikkelde code — moeten de standaard logboekindeling behouden.
 * De output van het logboek moet aan het standaarddossier &quot;logs/error.log&quot;worden geleid.
