@@ -1,28 +1,29 @@
 ---
-title: Aan de slag met Refactoring Tools
+title: Overzicht van Refactoring-gereedschappen
 description: Leer hoe u aan de slag kunt met de AEM Refactoring Tools
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="Overzicht"
->abstract="Refactoring Tools is een oplossing die door Adobe is ontwikkeld om bestaande AEM-projecten te helpen refactoreren voor compatibiliteit met AEM as a Cloud Service. De hulpmiddelen worden uitgevoerd via Cloud Acceleration Manager (CAM) en automatiseren zeer belangrijke moderniseringstaken."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=nl-NL" text="Richtlijnen en beste praktijken"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# Aan de slag met Refactoring Tools {#getting-started-refactoring-tools}
+-->
+
+# Overzicht van Refactoring-gereedschappen {#refactoring-tools-overview}
 
 **Refactoring Hulpmiddelen** stroomlijnt het proces om bestaande projecten van AEM bij te werken om compatibel te zijn met **AEM as a Cloud Service (AEMaaCS)**. Deze hulpmiddelen automatiseren gemeenschappelijke refactoring en moderniseringstaken en zijn geïntegreerd met **Cloud Acceleration Manager (CAM)** voor een naadloze ervaring.
 
 Eerder beschikbaar slechts als nut CLI, verstrekken de Hulpmiddelen van het Refactoring nu een verenigde interface met eigenschappen zoals geautomatiseerde inspectie, configuratiegeneratie, en baanuitvoering - verminderend handleiding overheadkosten en verbeterend zicht.
-
-&#x200B;---
 
 ## Inspectiewerkstroom {#inspection-workflow}
 
@@ -34,8 +35,6 @@ Het **Werkschema van de Inspectie** vereenvoudigt het voorbereidingsproces voor 
 * **Generatie van de Configuratie** - de hulpmiddelen inspecteren de geuploade broncode en produceren de noodzakelijke configuraties.
 * **Verzending van de Payload** - Deze configuraties worden overgegaan direct tot de geselecteerde hulpmiddelen voor uitvoering.
 
-&#x200B;---
-
 ## Beschikbare Refactoring-gereedschappen
 
 ### Repository Modernizer {#repo-modernizer}
@@ -45,8 +44,6 @@ De **Modernizer van de Bewaarplaats van de Bewaarplaats** herstructureert de de 
 ### Codetransformator {#code-transformer}
 
 De **Transformator van de Code** gebruikt intelligente patroonerkenning en AI-gedreven analyse om codesegmenten te ontdekken en bij te werken die onverenigbaar met AEMaaCS zijn. Dit hulpmiddel vereenvoudigt de migratie-inspanning en vermindert handcodeveranderingen.
-
-&#x200B;---
 
 ## Refactoring Workflowfasen {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ De Refactoring-gereedschappen volgen een gestructureerd tweefaseproces:
 
 >[!NOTE]
 >Tijdens het inspectieproces is het niet toegestaan een ander project te uploaden.
-
-&#x200B;---
 
 ### Fase 2: Een Refactoring-taak activeren
 
