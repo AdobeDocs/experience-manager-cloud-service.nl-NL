@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+exl-id: a8d64082-a23f-4919-ad66-042faad77d29
+source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '1141'
 ht-degree: 0%
 
 ---
-
 
 # AI Assistant voor AEM Forms (Forms Experience Builder)
 
@@ -24,11 +24,17 @@ ht-degree: 0%
 >
 > **Documentatie onderworpen aan Verandering**: Deze documentatie wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De eigenschappen, de bevelen, en de voorbeelden kunnen veranderen aangezien AI Medewerker voor AEM Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
-De AI Assistant voor AEM Forms (Forms Experience Builder) verbetert uw ontwerpervaring door veelvoorkomende taken voor het maken van formulieren te stroomlijnen met instructies voor natuurlijke talen. Met Forms Management UI, de Adaptive Forms Editor en de Universal Editor kunt u slimmer en sneller bouwen door zowel ontwerp- als configuratiehandelingen te ondersteunen. Deze handleiding helpt u aan de slag te gaan en optimaal gebruik te maken van de mogelijkheden die deze biedt.
+De AI Assistant voor AEM Forms transformeert hoe u formulieren maakt. Hierin wordt beschreven wat u nodig hebt in de natuurlijke taal en hoe uw formulieren tot leven komen. Beschikbaar in Forms Management UI, de Adaptive Forms Editor en de Universal Editor, begrijpt het uw intentie en bouwt precies wat u zoekt.
 
-## Aan de slag
+## Aan de slag: gewoon erover praten
 
-Alvorens u diep duikt, behandelen wij de grondbeginselen van de toegang tot van en het in wisselwerking staan met de Medewerker AI.
+De AI Assistant werkt als een gesprek met een goed geïnformeerde collega. In plaats van complexe menu&#39;s en instellingen te leren, beschrijft u gewoon wat u wilt maken.
+
+### Snel starten
+
+Ga snel aan de slag door onze inleidende video te bekijken:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
 ### De AI-assistent openen
 
@@ -39,14 +45,14 @@ U hebt toegang tot de AI Assistant vanaf drie verschillende locaties in AEM Form
    - Zoeken naar het AI-assistent-pictogram links van de interface
    - Klik op het pictogram om het deelvenster AI Assistant te openen
 
-   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/forms-manager.gif)
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
 2. **de AanpassingsRedacteur van Forms**
    - Ga naar: Adobe Experience Manager > Forms > Forms &amp; Documents
    - Een formulier selecteren en openen om te bewerken
    - Klik op het pictogram AI Assistant in de editor-interface
 
-   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif)
+   ![ AI Hulp pictogram* ](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **Universele Redacteur**
 
@@ -54,70 +60,230 @@ U hebt toegang tot de AI Assistant vanaf drie verschillende locaties in AEM Form
    - Zoeken naar het AI-assistent-pictogram links van de interface
    - Klik op het pictogram AI Assistant in de editor-interface
 
-De AI Assistant past zijn functionaliteit aan op basis van uw huidige locatie en taak en biedt relevante ondersteuning voor elke context.
+### Hoe te om te beginnen: Eenvoudige gesprekken
 
-### Hoe reageert u op:
+De beste manier om met de AI Medewerker te beginnen is door natuurlijke taal. Hieronder wordt beschreven hoe:
 
-- Typ gewoon uw verzoek in de natuurlijke taal.
-- Gebruik `/` om een lijst met beschikbare opdrachten of snelle handelingen weer te geven.
-- Verwijs naar specifieke formuliervelden met `@fieldName` (bijvoorbeeld `@firstName` , `@emailAddress` ) als u wilt dat de assistent dat veld configureert of bijwerkt.
-- U kunt afbeeldingen, PDF&#39;s, Figma-bestanden of andere ontwerpelementen uploaden om de AI-assistent te helpen uw vereisten beter te begrijpen.
+**beschrijft enkel wat u nodig hebt:**
 
+- &quot;Een contactformulier voor mijn website maken&quot;
+- &quot;Ik heb een feedbackformulier voor klanten nodig met ratingschalen.&quot;
+- &quot;Een registratieformulier maken voor mijn aanstaande gebeurtenis&quot;
+- &quot;Maak een eenvoudig onderzoek over producttevredenheid&quot;
 
-### Snel starten
+**voegt details toe aangezien u gaat:**
 
-Ga snel aan de slag door onze inleidende video te bekijken:
+- &quot;Een contactformulier maken met naam-, e-mail-, telefoon- en berichtvelden&quot;
+- &quot;Ik heb een uit meerdere stappen bestaand registratieformulier voor een conferentie nodig&quot;
+- &quot;Maak een feedbackformulier voor klanten met 5 sterren beoordelingen en commentaarsecties&quot;
 
->[!VIDEO](https://video.tv.adobe.com/v/3463164/)
+**Verwijzing uw bestaande gebieden:**
 
+- &quot;Maak het e-mailveld vereist&quot; (voor @email)
+- &quot;Voeg bevestiging aan het gebied van het telefoonaantal&quot;toe (voor @phoneNumber)
+- &quot;Alleen de informatie over de echtgenoot weergeven als getrouwd is geselecteerd&quot; (voor @spouseInfo en @maritalStatus)
 
-Deze video behandelt het lanceren van de medewerker in alle milieu&#39;s, basisinteractie, en een overzicht van zijn mogelijkheden.
+### Wat u ook kunt doen
 
-## Referentie AI-assistent-opdracht
+Naast de natuurlijke taal biedt de AI Assistant extra manieren om te werken:
 
-| Opdracht | Beschrijving | Doel | Gebruikscontext | Voorbeelden | Belangrijkste kenmerken |
-|---------|-------------|---------|---------------|----------|--------------|
-| /create-form | Een nieuw formulier starten in de gebruikersinterface van Forms Management of de Forms Editor | Hiermee wordt het maken van een geheel nieuw formulier gestart | Forms Management UI, Adaptive Forms Editor | /create-form klant feedback survey gebaseerd op bijgevoegde PDF | Hier vindt u opties voor de formulierstructuur en het maken van het formulier. **Steunt gehechtheid** voor ontwerpverwijzingen |
-| /add-form | Een nieuw formulier toevoegen in de Universal Editor | Hiermee wordt een nieuw formulierblok of een nieuwe formuliercomponent toegevoegd in de universele editor | Universele editor voor Edge Delivery Services | /add-form contactformulier met naam en e-mail | Hiermee voegt u formulierblokken in, werkt u met blokbewerking. **steunt gehechtheid** voor lay-outbegeleiding |
-| /update-layout | De indeling van een formulier wijzigen in accordeon, op tabbladen gebaseerd, wizards of een responsief ontwerp voor één pagina | Hiermee wijzigt u de algemene structuurindeling en het navigatiepatroon | Alle bewerkingsomgevingen | /update-layout, wizard met 3 stappen | Accordeon, tabbladen, wizard, responsieve opties voor één pagina |
-| /update-field | Eigenschappen en configuratie van bestaande formuliervelden wijzigen | Hiermee wijzigt u veldkenmerken zoals labels, validatie, opmaak, gedrag | Alle bewerkingsomgevingen | /update-field @email vereist voor validatie | Labels, validatieregels, veldtypen, standaardwaarden, zichtbaarheid. **Steunt gehechtheid** voor de voorbeelden van het gebiedsontwerp |
-| /create-rule | Dynamisch gedrag en voorwaardelijke logica voor formulieren maken | Implementeert bedrijfslogica, berekeningen, voorwaardelijke interactie | Alle bewerkingsomgevingen | /create-rule show @spouseName if @maritalStatus equals &quot;Gehuwd&quot; | Voorwaardelijke zichtbaarheid, berekeningen, validatie, waarde instellen |
-| /create-panel | Een nieuw deelvenster maken (container voor het groeperen van gerelateerde velden) | Hiermee voegt u structurele containers toe om formuliervelden logisch te ordenen | Alle bewerkingsomgevingen | /create-panel Persoonlijke Informatie met naam, e-mail, telefoon | Veldgroepering, titels, layoutopties, inklapbare secties. **Steunt gehechtheid** voor de verwijzingen van de paneellay-out |
-| /add-panel | Een afbeelding converteren naar een formuliervenster in de Universal Editor | Gebruikt AI om geüploade afbeeldingen te analyseren en om te zetten in gestructureerde formulierdeelvensters | Universele editor | /add-panel van geüploade formulierafbeelding | Afbeeldingsherkenning, visueel-naar-functionele conversie, behoud van layout. **vereist gehechtheid** voor beeldanalyse |
-| /configure-submit | Formulierverzendacties en gegevensverwerking instellen | Hiermee definieert u wat er gebeurt wanneer gebruikers het ingevulde formulier verzenden | Alle bewerkingsomgevingen | /configure-submit om e-mail naar te verzenden `support@company.com` | E-mail, REST API, workflows, spreadsheets, databases, Power Automated |
-| /help | Toegang tot bijstand en documentatie binnen de AI Assistant | Biedt contextuele hulp, begeleiding en antwoorden over AEM Forms | Alle bewerkingsomgevingen | /help hoe maak ik formulieren die uit meerdere stappen bestaan? | Functieuitleg, handleidingen, aanbevolen procedures, problemen oplossen |
+- **uploadt dossiers**: Verbind beelden, PDFs, of de ontwerpen van Figma om AI te tonen wat u plaatst.
+- **Snelle bevelen van het Gebruik**: Type `/` om beschikbare kortere weg voor gemeenschappelijke acties te zien
+- **Verwijzing specifieke gebieden**: Gebruik `@fieldName` om bestaande vormgebieden (b.v., `@firstName`, `@emailAddress`) te wijzigen
 
-### Opdrachtcategorieën
+## Wat u kunt maken: voorbeelden die werken
 
-| Categorie | Opdrachten | Primaire gebruikskwesties |
-|----------|----------|-------------------|
-| Formulier maken | /create-form, /add-form | Nieuwe formulieren starten, formulierblokken toevoegen |
-| Structuur en lay-out | /update-layout, /create-panel, /add-panel | Formulierstructuur ordenen, visueel ontwerp |
-| Veldbeheer | /update-field | Afzonderlijke formulierelementen configureren |
-| Logica en regels | /create-rule | Dynamisch gedrag en validatie toevoegen |
-| Indiening | /configure-submit | Gegevensverwerking en workflows instellen |
-| Ondersteuning | /help | Hulp en documentatie opvragen |
+Hier zijn echte voorbeelden van wat u met eenvoudige, natuurlijke taal kunt verwezenlijken:
 
-### Syntaxisrichtlijnen
+### Een nieuw formulier starten
 
-| Element | Indeling | Voorbeeld | Notities |
-|---------|--------|---------|-------|
-| Opdrachten | /command-name | /create-form | Altijd beginnen met slash |
-| Veldverwijzingen | @fieldName | @email, @firstName | @-symbool gebruiken voor bestaande velden |
-| Natuurlijke taal | Command + beschrijving | /create-rule show field if condition | Opdrachten combineren met beschrijvende tekst |
-| Meerdere handelingen | Afzonderlijke opdrachten | /create-panel then /update-layout | Eén opdracht tegelijk toepassen |
+**Eenvoudige benadering:**
 
+```
+"Create a contact form"
+```
 
-### Omgevingsspecifieke kenmerken
+**meer gedetailleerde benadering:**
 
-| Omgeving | Beschikbare opdrachten | Speciale functies |
-|-------------|-------------------|------------------|
-| Gebruikersinterface Forms Management | /create-form, /help | Creatie en beheer op formulierniveau |
-| Adaptieve Forms Editor en Universal Editor | Alle opdrachten | Volledige functieset, gedetailleerde configuratie |
+```
+"Create a professional contact form for a law firm with fields for name, email, phone, case type, and message. Make it mobile-friendly."
+```
 
+**met ontwerpverwijzing:**
 
+```
+"Create a contact form based on the attached design mockup. Include all the fields shown in the layout."
+```
 
-### Veldverwijzingssyntaxis (contextuele elementen)
+### Formulierelementen toevoegen
+
+**Basistoevoegingen:**
+
+```
+"Add a section for personal information"
+"Include a file upload for resume"
+"Add a dropdown for country selection"
+```
+
+**Gedetailleerde specificaties:**
+
+```
+"Add a personal information panel with fields for full name, date of birth, phone number, and email address"
+"Include a secure file upload component for documents, limited to PDF files under 5MB"
+"Add a country dropdown with options for USA, Canada, UK, and Germany"
+```
+
+### Dynamisch gedrag maken
+
+**Eenvoudige logica:**
+
+```
+"Show additional fields when 'Other' is selected"
+"Make the email field required"
+"Calculate the total automatically"
+```
+
+**Complexe bedrijfsregels:**
+
+```
+"Show the spouse information fields only when marital status is set to 'Married'"
+"Calculate the total cost by multiplying quantity and price, then add 10% tax"
+"Enable the submit button only when all required fields are completed and terms are accepted"
+```
+
+### Formulierindeling en -ontwerp
+
+**de veranderingen van de Lay-out:**
+
+```
+"Make this a multi-step form"
+"Organize fields in two columns"
+"Convert to an accordion layout"
+```
+
+**de verbeteringen van het Ontwerp:**
+
+```
+"Create a wizard-style form with 3 steps: personal info, preferences, and review"
+"Arrange the address fields in a compact two-column layout"
+"Update the layout to match the attached wireframe"
+```
+
+### Indiening en integratie
+
+**Basisvoorlegging:**
+
+```
+"Send form data to our email"
+"Save responses to a spreadsheet"
+"Redirect to a thank you page"
+```
+
+**Geavanceerde integratie:**
+
+```
+"Send form submissions to hr@company.com and create a case in our CRM system"
+"Submit data to our REST API endpoint and trigger the new customer workflow"
+"Email responses to the sales team and add the lead to our marketing automation platform"
+```
+
+## Werken met bijlagen
+
+Upload bestanden om AI te helpen precies te begrijpen wat u zoekt:
+
+### Ondersteunde bestandstypen
+
+| Bestandstype | Best voor | Voorbeeld |
+|-----------|----------|-------------|
+| **Beelden** (PNG, JPG, GIF) | Formulierindelingen, UI-modellen, scannen op papieren formulieren | &quot;Een formulier maken dat overeenkomt met deze indeling&quot; |
+| **de Dossiers van PDF** | Bestaande formulieren die moeten worden geconverteerd, specificaties | &quot;Dit PDF-formulier converteren naar digitaal&quot; |
+| **Dossiers van Figma** | Ontwerpprototypen, richtlijnen voor merken | &quot;Dit formulier maken op basis van mijn figuurontwerp&quot; |
+| **Dossiers van het Ontwerp** | Visuele referenties, stijlhulplijnen | &quot;De stijl in dit ontwerp afstemmen&quot; |
+
+### Bijlagen gebruiken
+
+1. **klik het gehechtheidspictogram** in de AI Hulp interface
+2. **selecteer uw dossier** van uw apparaat
+3. **beschrijf wat u** van het in bijlage dossier van verwijzingen voorziet:
+   - &quot;Een formulier maken op basis van deze bijgevoegde PDF&quot;
+   - &quot;Een contactformulier maken dat overeenkomt met de indeling in deze afbeelding&quot;
+   - &quot;Dit papieren formulier converteren naar een digitale versie&quot;
+
+### Aanbevolen werkwijzen met bijlagen
+
+- **Gebruik duidelijke, kwalitatief hoogstaande beelden** voor betere analyse AI
+- **nadruk op één concept per gehechtheid** (lay-out, het stileren, enz.)
+- **beschrijf wat u** samen met de gehechtheid wilt
+- **houd dossiers onder 10MB** voor optimale verwerking
+
+## Tips voor beste resultaten
+
+### Eenvoudig starten, opbouwen
+
+- Begin met basisverzoeken: &quot;Een contactformulier maken&quot;
+- Voeg geleidelijk details toe: &quot;Voeg bevestiging aan het e-mailgebied toe&quot;
+- Testen en verfijnen: &quot;Maak het telefoonveld optioneel&quot;
+
+### Indien nodig specifiek zijn
+
+- In plaats van: &quot;Laat het er goed uitzien&quot;
+- Probeer: &quot;Gebruik professionele kleuren en schone typografie&quot;
+
+### Natuurlijke taal gebruiken
+
+- In plaats van: &quot;Voeg tekstinvoercomponent toe&quot;
+- Probeer: &#39;&#39;Een veld toevoegen voor voornaam&#39;&#39;
+
+### Verwijzing naar bestaande elementen
+
+- Gebruik `@fieldName` voor bestaande velden: &quot;Maak @email vereist&quot;
+- Wees specifiek over veldnamen: &quot;Werk het veld @phoneNumber bij&quot;
+
+### Complexe verzoeken onderbreken
+
+- Probeer in plaats van één grote aanvraag meerdere kleinere aanvragen
+- Uw formulier stap voor stap samenstellen
+- Elke wijziging testen voordat naar de volgende wijziging wordt gegaan
+
+## Help en training voor producten
+
+De AI Assistant kan u ook leren over AEM Forms-functies:
+
+### Stel vragen zoals:
+
+- &quot;Hoe maak ik een formulier met meerdere stappen?&quot;
+- &quot;Wat is het verschil tussen deelvensters en secties?&quot;
+- &quot;Hoe kan ik e-mailmeldingen instellen?&quot;
+- &quot;Wat zijn de beste praktijken voor mobiele vriendschappelijke vormen?&quot;
+- &quot;Hoe kan ik thema&#39;s toepassen op mijn formulieren?&quot;
+
+### Hulp vragen bij:
+
+- Concepten en terminologie van AEM Forms
+- Stapsgewijze instructies voor complexe functies
+- Aanbevolen werkwijzen en aanbevelingen
+- Problemen met algemene problemen oplossen
+
+## Verwijzing naar geavanceerde functies
+
+Voor gebruikers die geavanceerde mogelijkheden willen verkennen:
+
+### Snelle opdrachten
+
+Typ `/` om de beschikbare sneltoetsen weer te geven:
+
+| Opdracht | Doel | Voorbeeld |
+|---------|---------|---------|
+| `/create-form` | Een nieuw formulier starten | `/create-form customer survey` |
+| `/add-form` | Formulier toevoegen in Universal Editor | `/add-form contact form` |
+| `/update-layout` | De formulierstructuur wijzigen | `/update-layout wizard with 3 steps` |
+| `/update-field` | Veldeigenschappen wijzigen | `/update-field @email to be required` |
+| `/create-rule` | Dynamisch gedrag toevoegen | `/create-rule show @spouse if married` |
+| `/create-panel` | Veldcontainers toevoegen | `/create-panel Personal Information` |
+| `/configure-submit` | Formulierverzending instellen | `/configure-submit to email support` |
+| `/help` | Hulp vragen | `/help multi-step forms` |
+
+### Veldverwijzingssyntaxis
 
 Gebruik `@fieldName` om te verwijzen naar bestaande velden:
 
@@ -128,7 +294,7 @@ Gebruik `@fieldName` om te verwijzen naar bestaande velden:
 
 ### Componenttypen
 
-In deze lijst worden algemene componenttypen besproken. De AI kan variaties of meer gespecialiseerde typen herkennen, maar het gebruik van deze precieze termen levert de beste resultaten op:
+Gebruik deze termen voor de beste resultaten:
 
 - `text input` - Tekstveld met één regel
 - `text area` - Tekstveld met meerdere regels
@@ -140,224 +306,42 @@ In deze lijst worden algemene componenttypen besproken. De AI kan variaties of m
 - `file upload` - Bestandsbijlage
 - `panel` - Container voor het groeperen van velden
 
+## Problemen oplossen
 
-## Kernmogelijkheden en uitgebreide snelle voorbeelden
+### Veelvoorkomende problemen en oplossingen
 
-De AI-assistent begrijpt een breed scala aan opdrachten. Hier zijn een paar voorbeelden om zijn macht te illustreren. Denk eraan exacte termen te gebruiken voor componenten zoals &#39;deelvenster&#39;, &#39;tekstinvoer&#39;, &#39;selectievakje&#39; enzovoort.
+**Medewerker AI antwoordt niet:**
 
-| Functiecategorie | Beschrijving | Voorbeeld vragen |
-| ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **de Making van de Vorm** | Start een nieuw formulier helemaal opnieuw of op basis van een beschrijving. | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
-| **het Ontwerp van de Invoer** | Zet een bestaand ontwerp (image, Figma, PDF) om in een AEM-formulier. | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
-| **Toevoegend Componenten &amp; Comités** | Voeg diverse formuliervelden en structuurcontainers (deelvensters) toe. | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
-| **Aanpassingen van de Lay-out** | De structuur en weergave van de indeling van het formulier wijzigen. | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
-| **de Creatie van de Regel &amp; Logica** | Voer dynamisch gedrag, berekeningen, en voorwaardelijk zicht uit. | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **Update van de Eigenschappen van het Gebied** | Kenmerken van specifieke formuliervelden wijzigen, zoals labels, plaatsaanduidingen, enz. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
-| **legt Acties** voor | Bepaal wat er gebeurt wanneer een gebruiker het formulier verzendt. | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.` |
-| **Thema** | Bestaande AEM Forms-thema&#39;s toepassen om uw formulier op te maken. | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
-| **Navigatie &amp; Structuur** | Navigatie-elementen toevoegen of delen van het formulier opnieuw ordenen. | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.` |
-| **Bevestiging** | Stel specifieke validatieregels in voor velden. | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.` |
-| **Plan van het Overzicht** (Universele Redacteur) | Bekijk de voorgestelde wijzigingen van de assistent voor de uitvoering. | `Add a contact form with fields for name, email, subject, and message.` (De assistent geeft een plan weer met componenten en eigenschappen die het zal maken, en vervolgens klikt u op Toepassen). <br> `Create a form based on the attached design file.` (De assistent analyseert de bijlage en geeft een gedetailleerd plan weer vóór de implementatie). |
+- Controleer uw internetverbinding
+- Zorg ervoor dat u zich in een ondersteunde omgeving bevindt
+- Het deelvenster AI-assistent sluiten en opnieuw openen
 
-## Beste praktijken voor Optimale Resultaten
+**Onverwachte Resultaten:**
 
-Houd rekening met de volgende tips als u de AI Assistant optimaal wilt benutten:
+- Probeer uw verzoek specifieker te herformuleren
+- Complexe aanvragen onderverdelen in kleinere stappen
+- Standaardterminologie voor AEM Forms gebruiken
 
-- **Eenvoudig Begin, bouwt Stapsgewijs:** Begin met kleinere, specifieke bevelen (bijvoorbeeld, &quot;voeg een tekstinput voor &quot;Voornaam&quot;toe&quot;) eerder dan overdreven complexe multi-step verzoeken aanvankelijk.
-- **de Terminologie van AEM Forms van het Gebruik:** zet termijnen zoals &quot;paneel,&quot;het gebied van de tekstinput,&quot;checkbox groep,&quot;actie,&quot;regel,&quot;enz. in werking, voor beter begrip door de medewerker.
-- **De Gebieden van de Verwijzing duidelijk:** wanneer het vormen van bestaande gebieden, gebruik de `@fieldName` aantekening (b.v., `Make @firstName mandatory`).
-- **Plan van het Overzicht** herzien altijd zorgvuldig plannen voor veranderingen die door de medewerker in de Universele Redacteur worden voorgesteld alvorens &quot;van toepassing te klikken.&quot;
-- **bevestigt manueel:** nadat de medewerker veranderingen aanbrengt, voorproef en test altijd uw vorm om ervoor te zorgen het zich gedraagt en kijkt zoals verwacht. AI is een krachtig hulpmiddel, maar de uiteindelijke validatie is van wezenlijk belang.
-- **herhaalt en verfijnen:** als de eerste herinnering niet het nauwkeurige resultaat oplevert, probeer het rephrasing of het breken van het verzoek in kleinere stappen.
-- **verstrek Terugkoppeling:** gebruik ingebouwde terugkoppel mechanisme om de medewerker te helpen leren en verbeteren (zie &quot;Terugkoppeling &amp; de sectie van de Steun&quot;).
+**het Werken van de Verwijzingen van het Gebied niet:**
 
-## Help bij het product met de AI Assistant
+- Veldnamen controleren zijn precies zo gespeld als ze worden weergegeven
+- `@fieldName` syntaxis gebruiken voor bestaande velden
+- Controleer of het veld bestaat voordat u ernaar verwijst
 
-De AI-assistent voor AEM Forms is niet alleen bedoeld voor gebouwen, maar kan u ook helpen bij het leren, begrijpen en gebruiken van verschillende functies van AEM Forms.
+**de Invoer van het Ontwerp Kwesties:**
 
-### Ondersteunde Help-onderwerpen
-
-U kunt de hulpvragen als stellen:
-
-- &quot;Hoe maak ik een geheel nieuw adaptief formulier?&quot;
-- &quot;Wat is een panel in Adaptive Forms en hoe wordt het gebruikt?&quot;
-- &quot;Uitleggen hoe u een thema op een formulier kunt toepassen.&quot;
-- &quot;Welke indelingstypen worden ondersteund voor formulieren en deelvensters?&quot;
-- &quot;Hoe kan ik verschillende verzendhandelingen configureren, zoals het verzenden van een e-mail?&quot;
-- &quot;Kunt u mij begeleiden bij het gebruik van een Figma-ontwerp om een formulier te maken?&quot;
-- &quot;Wat is de beste manier om een formulier met meerdere stappen te maken?&quot;
-
-### Hoe om hulp te vragen:
-
-1. Open de AI-assistent in de Forms Management UI of de Adaptive Forms Editor.
-2. Typ uw vraag in natuurlijke taal (bijvoorbeeld &quot;Hoe voeg ik een herhaalbaar paneel toe?&quot;).
-3. De assistent reageert met:
-   - Stapsgewijze instructies.
-   - Uitleg van AEM Forms-concepten.
-   - Koppelingen naar relevante documentatie van Adobe Experience League, indien van toepassing.
-
-### Tips voor betere Help:
-
-- **ben specifiek:** stel één duidelijke vraag tegelijkertijd.
-- **Trefwoorden van het Gebruik:** omvat sleutelwoorden relevant voor de eigenschappen van AEM Forms of elementen UI (b.v., &quot;adaptieve vormredacteur,&quot;regelredacteur,&quot;thema&quot;).
-- **herhaal indien nodig:** als de medewerker niet de gewenste informatie begrijpt of verstrekt, probeer vereenvoudigend uw vraag of gebruikend verschillende termijnen.
-
-
-## Veelvoorkomende problemen oplossen
-
-- **Medewerker antwoordt niet:**
-   - Zorg ervoor dat u actief werkt binnen een ondersteunde omgeving (Forms Management UI, Adaptive Forms Editor of Universal Editor).
-   - Controleer uw internetverbinding.
-   - Sluit het deelvenster AI-assistent en open het opnieuw.
-
-- **Onnauwkeurige of Onverwachte Reacties:**
-   - Herhaal uw verzoek om specifieker of eenvoudiger te zijn.
-   - Verdeel een complex verzoek in kleinere, individuele bevelen.
-   - Zorg ervoor dat u de standaardterminologie van AEM Forms gebruikt.
-
-- **de Kwesties van de Invoer van het Ontwerp (PDF/Figma/Beeld):**
-   - Controleer of het ontwerpbestand duidelijk, goed gestructureerd en leesbaar is.
-   - Zorg ervoor dat de bestandsindeling wordt ondersteund (PDF, Figma-koppeling, gangbare afbeeldingstypen, zoals PNG, JPG).
-   - Voor Figma, zorg ervoor het kader u zich richt duidelijk wordt bepaald en toegankelijk is.
-
-- **Gebied `@fieldName` niet erkend:**
-   - Controleer de exacte naam van het veld in het formulier. Veldnamen zijn hoofdlettergevoelig en moeten exact overeenkomen.
-   - Zorg ervoor dat het veld al bestaat als u probeert het te wijzigen.
-
+- Controleren of bestanden duidelijk en goed gestructureerd zijn
+- Ondersteunde indelingen gebruiken (PDF, PNG, JPG, Figma)
+- Zorg ervoor dat de bestandsgrootte kleiner is dan 10 MB
 
 ## Feedback en ondersteuning
 
-Uw input is van onschatbare waarde voor de voortdurende verbetering van AI Medewerker.
+Help ons de AI-assistent te verbeteren:
 
-- **verstrek Terugkoppeling:** gebruik het ingebouwde **&quot;verstrekken Terugkoppeling&quot;bevel of knoop** binnen de AI Hulp interface om uw ervaringen te delen, kwesties te melden, of verhogingen voor te stellen. (U kunt bijvoorbeeld `/feedback` typen of op een feedbackpictogram zoeken).
-- **Officiële Steun:** voor kritieke kwesties of verdere hulp, te bereiken gelieve door de officiële de steunkanalen van Adobe of de aangewezen steuncontacten van uw organisatie te bereiken.
+- **verstrekken Terugkoppeling**: Gebruik terugkoppelen knoop in de AI Hulp interface
+- **Kwesties van het Rapport**: De steun van Adobe van het contact door officiële kanalen
+- **Ervaringen van het Aandeel**: Uw inputhulp maakt de medewerker beter voor iedereen
 
-
-
-## Werken met bijlagen
-
-De AI-assistent ondersteunt bestandsbijlagen om het maken en configureren van formulieren te verbeteren. U kunt verschillende bestandstypen koppelen voor visuele context, ontwerpverwijzingen of bestaande formulieren die u wilt converteren.
-
-### Ondersteunde typen bijlagen
-
-| Bestandstype | Gevallen gebruiken | Opdrachten die bijlagen ondersteunen | Voorbeelden |
-|-----------|-----------|-----------------------------------|----------|
-| **Beelden** (PNG, JPG, JPEG, GIF) | Referenties formulierindeling, UI-modellen, scannen van papieren formulieren | /create-form, /add-form, /create-panel, /add-panel, /update-field | Een schermafbeelding van de gewenste layout uploaden |
-| **de Dossiers van PDF** | Bestaande formulieren die moeten worden geconverteerd, ontwerpspecificaties | /create-form, /add-form, /create-panel, /add-panel | PDF-toepassingsformulieren converteren |
-| **Dossiers van Figma** | Systeemreferenties ontwerpen, UI-prototypen | /create-form, /add-form, /create-panel | Figuurontwerpframes importeren |
-| **Dossiers van het Ontwerp** (Schets, de uitvoer van Adobe XD) | Visuele ontwerpverwijzingen | /create-form, /add-form, /create-panel | Referentie-ontwerpsysteemonderdelen |
-
-### Bijlagen gebruiken
-
-1. **maak vóór of met Uw Bevel vast:**
-
-   - Klik op het bevestigingspictogram in de AI Assistant-interface
-   - Selecteer uw bestand(en) op uw apparaat
-   - Typ uw opdracht die verwijst naar het bijgevoegde bestand
-
-2. **Bijlagen van de Verwijzing in Bevelen:**
-
-   ```
-   /create-form based on the attached PDF application form
-   /add-panel using the layout shown in the uploaded image
-   /create-panel following the design in the attached Figma file
-   /update-field @email to match the style in the attached screenshot
-   ```
-
-3. **Veelvoudige Gehechtheid:**
-
-   - U kunt meerdere bestanden toevoegen ter vergelijking of ter referentie
-   - Geef op welke bijlage moet worden gebruikt: &quot;de eerste bijgevoegde afbeelding gebruiken&quot; of &quot;op basis van het PDF-bestand&quot;
-
-### Aanbevolen werkwijzen voor bijlagen
-
-- **Duidelijke, Hoogwaardige Beelden:** verzeker geuploade beelden duidelijk en leesbaar voor betere analyse AI zijn
-- **Relevante Namen van het Dossier:** Gebruik beschrijvende dossiernamen om AI te helpen context begrijpen
-- **Enige Nadruk:** elke gehechtheid zou op één specifiek aspect (lay-out, gebiedsontwerp, enz.) moeten concentreren
-- **Gesteunde Formaten:** Stick aan gemeenschappelijke formaten (PNG, JPG, PDF) voor beste verenigbaarheid
-- **Grootte van het Dossier:** houd gehechtheid onder 10MB voor optimale verwerkingssnelheid
-
-### Workflows voor voorbeeldbijlagen
-
-**die een Vorm van het Papier omzetten:**
-
-1. Scan of fotografeer het papieren formulier duidelijk
-2. Het afbeeldingsbestand uploaden
-3. Opdracht gebruiken: `/create-form based on the attached form image, converting all fields to digital equivalents`
-
-**het Aanpassen van een Systeem van het Ontwerp:**
-
-1. relevante ontwerpcomponenten exporteren of screenen
-2. De ontwerpverwijzing bijvoegen
-3. Opdracht gebruiken: `/create-panel following the visual style and layout shown in the attached design`
-
-**het Stijlen van het Gebied Verwijzing:**
-
-1. Screenshot van gewenste veldweergave koppelen
-2. Opdracht gebruiken: `/update-field @email to match the styling and layout shown in the attached image`
-
-## Gerelateerde inhoud
+## Gerelateerde bronnen
 
 [AEM Forms AI Assistant - Promptbibliotheek](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-
-## Werken met bijlagen
-
-De AI-assistent ondersteunt bestandsbijlagen om het maken en configureren van formulieren te verbeteren. U kunt verschillende bestandstypen koppelen voor visuele context, ontwerpverwijzingen of bestaande formulieren die u wilt converteren.
-
-### Ondersteunde typen bijlagen
-
-| Bestandstype | Gevallen gebruiken | Opdrachten die bijlagen ondersteunen | Voorbeelden |
-|-----------|-----------|-----------------------------------|----------|
-| **Beelden** (PNG, JPG, JPEG, GIF) | Referenties formulierindeling, UI-modellen, scannen van papieren formulieren | /create-form, /add-form, /create-panel, /add-panel, /update-field | Een schermafbeelding van de gewenste layout uploaden |
-| **de Dossiers van PDF** | Bestaande formulieren die moeten worden geconverteerd, ontwerpspecificaties | /create-form, /add-form, /create-panel, /add-panel | PDF-toepassingsformulieren converteren |
-| **Dossiers van Figma** | Systeemreferenties ontwerpen, UI-prototypen | /create-form, /add-form, /create-panel | Figuurontwerpframes importeren |
-| **Dossiers van het Ontwerp** (Schets, de uitvoer van Adobe XD) | Visuele ontwerpverwijzingen | /create-form, /add-form, /create-panel | Referentie-ontwerpsysteemonderdelen |
-
-### Bijlagen gebruiken
-
-1. **maak vóór of met Uw Bevel vast:**
-
-   - Klik op het bevestigingspictogram in de AI Assistant-interface
-   - Selecteer uw bestand(en) op uw apparaat
-   - Typ uw opdracht die verwijst naar het bijgevoegde bestand
-
-2. **Bijlagen van de Verwijzing in Bevelen:**
-
-   ```
-   /create-form based on the attached PDF application form
-   /add-panel using the layout shown in the uploaded image
-   /create-panel following the design in the attached Figma file
-   /update-field @email to match the style in the attached screenshot
-   ```
-
-3. **Veelvoudige Gehechtheid:**
-
-   - U kunt meerdere bestanden toevoegen ter vergelijking of ter referentie
-   - Geef op welke bijlage moet worden gebruikt: &quot;de eerste bijgevoegde afbeelding gebruiken&quot; of &quot;op basis van het PDF-bestand&quot;
-
-### Aanbevolen werkwijzen voor bijlagen
-
-- **Duidelijke, Hoogwaardige Beelden:** verzeker geuploade beelden duidelijk en leesbaar voor betere analyse AI zijn
-- **Relevante Namen van het Dossier:** Gebruik beschrijvende dossiernamen om AI te helpen context begrijpen
-- **Enige Nadruk:** elke gehechtheid zou op één specifiek aspect (lay-out, gebiedsontwerp, enz.) moeten concentreren
-- **Gesteunde Formaten:** Stick aan gemeenschappelijke formaten (PNG, JPG, PDF) voor beste verenigbaarheid
-- **Grootte van het Dossier:** houd gehechtheid onder 10MB voor optimale verwerkingssnelheid
-
-### Workflows voor voorbeeldbijlagen
-
-**die een Vorm van het Papier omzetten:**
-
-1. Scan of fotografeer het papieren formulier duidelijk
-2. Het afbeeldingsbestand uploaden
-3. Opdracht gebruiken: `/create-form based on the attached form image, converting all fields to digital equivalents`
-
-**het Aanpassen van een Systeem van het Ontwerp:**
-
-1. relevante ontwerpcomponenten exporteren of screenen
-2. De ontwerpverwijzing bijvoegen
-3. Opdracht gebruiken: `/create-panel following the visual style and layout shown in the attached design`
-
-**het Stijlen van het Gebied Verwijzing:**
-
-1. Screenshot van gewenste veldweergave koppelen
-2. Opdracht gebruiken: `/update-field @email to match the styling and layout shown in the attached image`
