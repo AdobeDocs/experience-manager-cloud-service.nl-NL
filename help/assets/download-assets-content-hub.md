@@ -56,7 +56,7 @@ ht-degree: 0%
 >
 > [!DNL Content Hub] -hulplijn is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met [!DNL Content Hub] kunt u uw elementen downloaden en delen. In de gebruikersinterface van [!DNL Content Hub] worden alleen goedgekeurde elementen weergegeven. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. Met [!DNL Content Hub] verbetert u de toegankelijkheid en het aanpassingsvermogen voor een effectieve middelendistributie.
 
@@ -82,8 +82,8 @@ Als in het dialoogvenster **[!UICONTROL Download assets]** licenties voor elemen
 
    >[!NOTE]
    >
-   >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) Gebruikersinterface wordt toegelaten.
-   >* Gebruikers met toegang tot [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme uitsnijduitvoeringen weergeven en downloaden.
+   >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) Gebruikersinterface wordt toegelaten.
+   >* Gebruikers met toegang tot [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme uitsnijduitvoeringen weergeven en downloaden.
    >* De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de [!DNL Assets as a Cloud Service] -ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
 <!--
@@ -195,7 +195,7 @@ Dynamische uitvoeringen inschakelen:
 
 1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
 
-1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3} Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
 
 1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
 
