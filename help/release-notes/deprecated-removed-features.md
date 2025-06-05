@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
+source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
-source-wordcount: '3028'
+source-wordcount: '3039'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De functionaliteit in de onderstaande tabel is aangekondigd als afgekeurd, maar 
 | Sites | [ de Steun van het Fragment van de Inhoud in HTTP API van Assets ](/help/assets/content-fragments/assets-api-content-fragments.md) | [ Levering van het Fragment van de Inhoud met OpenAPI ](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br> samen met <br> [ de Fragmenten van de Inhoud en Modellen van het Fragment van de Inhoud Management OpenAPIs ](/help/headless/content-fragment-openapis.md) |
 | Sites | [ Eigenschappen van PWA ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Geen |
 | Sites | [ Redacteur van het KUUROORD ](/help/implementing/developing/hybrid/introduction.md) | De aangewezen redacteurs voor het beheren van hoofdloze inhoud in AEM zijn:<br> - [ de Universele Redacteur ](/help/edge/wysiwyg-authoring/authoring.md) voor het visuele uitgeven.<br> - [ de Redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) voor op vorm-gebaseerde het uitgeven. |
-| [!DNL Sites] | [ Gebruik API van JavaScript ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [ Gebruik API van Java ](https://experienceleague.adobe.com/nl/docs/experience-manager-htl/content/java-use-api) |
+| [!DNL Sites] | [ Gebruik API van JavaScript ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [ Gebruik API van Java ](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | De eigenschappen van Fragmenten van de ervaring voor **Sociale Status van Media**. | De functie wordt binnenkort verwijderd. |
 | Sites | [ de Automatisering van de Opstelling van Experience Cloud ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Geen |
 | [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [ Model-Gebaseerde gestructureerde inhoudsfragmenten ](/help/assets/content-fragments/content-fragments-models.md) nu. |
@@ -47,8 +47,8 @@ De functionaliteit in de onderstaande tabel is aangekondigd als afgekeurd, maar 
 | [!DNL Assets] | MPEG-transcodering van video&#39;s. | Voor de duimnagelgeneratie van MPEG, gebruik [ microservices van Activa ](/help/assets/asset-microservices-overview.md). Voor transcodering MPEG, gebruik [ Dynamische Media ](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | De replicatie UI van de boom onder de replicatieagenten &quot;verdelen&quot;tabel (verwijdering na 30 September, 2021) | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) benaderingen. |
 | [!DNL Foundation] | Het tabblad Distribueren van het scherm van de replicatieagent en de API voor replicatie kunnen geen inhoudspakketten repliceren die groter zijn dan 10 MB. | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ Stap van het Werkschema van de Activering van de Boom ](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning voor JWT-referenties (Service Account). Vanaf 1 mei 2024 kunnen geen JWT-referenties (New Service Account) meer worden gemaakt in Adobe Developer Console. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) blijven bruikbaar voor gevormde integratie tot 1 Januari, 2025, waarna zij ophouden werkend, die klanten vereisen om aan Server-aan-Server geloofsbrieven van OAuth te migreren. [ leer meer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [ migreer ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) aan OAuth server-aan-Server geloofsbrieven. |
-| [!DNL Foundation] | De workflow van de inhoudsstructuur publiceren en de gerelateerde workflowstap voor de publicatiestructuur, die werd gebruikt voor replicaties van hiërarchieën van inhoud. | De Stap van het Werkschema van de Activering van de Boom van het gebruik [&#128279;](/help/operations/replication.md#tree-activation), die uitvoeriger is. |
+| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning voor JWT-referenties (Service Account). Vanaf 1 mei 2024 kunnen geen JWT-referenties (New Service Account) meer worden gemaakt in Adobe Developer Console. De bestaande geloofsbrieven van de Rekening van de Dienst (JWT) blijven bruikbaar voor gevormde integratie tot 1 Januari, 2025, waarna zij ophouden werkend, die klanten vereisen om aan Server-aan-Server geloofsbrieven van OAuth te migreren. [ leer meer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [ migreer ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) aan OAuth server-aan-Server geloofsbrieven. |
+| [!DNL Foundation] | De workflow van de inhoudsstructuur publiceren en de gerelateerde workflowstap voor de publicatiestructuur, die werd gebruikt voor replicaties van hiërarchieën van inhoud. | De Stap van het Werkschema van de Activering van de Boom van het gebruik [ ](/help/operations/replication.md#tree-activation), die uitvoeriger is. |
 | [!DNL Foundation] | Met YUI JavaScript-clientbibliotheken comprimeren/miniaturen maken. Adobe is niet van plan de YUI-bibliotheek verder bij te werken. | Adobe raadt klanten aan over te schakelen op de Google Closure Compiler (GCC) voor hun implementatie. |
 
 ## Verwijderde functionaliteit {#removed-features}
@@ -58,10 +58,10 @@ Deze sectie bevat een lijst met functies die zijn verwijderd.
 | Gebied | Functie | Vervanging | Datum van verwijderen doel |
 | ------------ | ------------------ | ----------- | ------------------- |
 | Gebruikersinterface | Klassieke UI wordt verwijderd uit het product gebruikersinterface. Er zijn enkele klassieke UI-dialoogvensters beschikbaar voor een paar geselecteerde mogelijkheden, zoals Koppelingencontrole, Versiegroepering en sommige Cloud Service-configuraties. De komende [ productupdates ](/help/release-notes/home.md) kunnen Klassieke beschikbaarheid verder verwijderen UI. | Standaardinterface | Verwijderd |
-| [!DNL Dynamic Media] | De vorige integraties met [ Dynamic Media Classic ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) en [ Dynamische Hybride wijze van Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) zijn niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Het gebruik [ Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md) van [!DNL Experience Manager] als a [!DNL Cloud Service] wordt voorzien die. | Verwijderd |
+| [!DNL Dynamic Media] | De vorige integraties met [ Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) en [ Dynamische Hybride wijze van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) zijn niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Het gebruik [ Dynamische Media ](/help/assets/dynamic-media/dynamic-media.md) van [!DNL Experience Manager] als a [!DNL Cloud Service] wordt voorzien die. | Verwijderd |
 | [!DNL Sites] | Portal Director en Portlet-component | Deze functies zijn vervangen in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager] . | Verwijderd |
 | [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd omdat onveranderlijke gedeelten van de [!DNL Experience Manager] -opslagplaats niet toegankelijk zijn tijdens runtime. | Verwijderd |
-| [!DNL Assets] | [!DNL Assets] Delen met Assets Core Service en Creative Cloud-services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [ de Verbinding van Activa van Adobe ](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html). | Verwijderd |
+| [!DNL Assets] | [!DNL Assets] Delen met Assets Core Service en Creative Cloud-services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [ de Verbinding van Activa van Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard | maart 2022 |
@@ -424,45 +424,69 @@ De secties hieronder wijzen op de AEM as a Cloud Service OSGi configuratieopperv
 
 De code van de klant kan om het even welke configuratie vormen OSGi niet vermeld.
 
-Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [ AEM as a Cloud Service SDK moeten omvatten bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) om configuratiefouten te markeren OSGI tijdens de lokale ontwikkeling van SDK.
+Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [ AEM as a Cloud Service SDK moeten omvatten bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) om configuratiefouten te markeren OSGI tijdens de lokale ontwikkeling van SDK.
 
 De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats ](/help/implementing/deploying/configuring-osgi.md).
 
-### Vervangen OSGi-eigenschappen (eigenschappen die niet meer kunnen worden gewijzigd) {#deprecated-osgi-properties}
+### Vervangen OSGi-eigenschappen (binnenkort niet te wijzigen) {#deprecated-unmodifiable-osgi-properties}
 
-Sommige eigenschappen voor de volgende PID&#39;s van de OSGi-component kunnen niet meer worden gewijzigd. Dit wordt afgedwongen binnen de hieronder beschreven termijn.
+Eigenschappen voor de volgende PIDs van de component OSGi zijn afgekeurd en het gebruik zou tegen de handhavingsdatum moeten ophouden.
 
 | **componentID OSGI** | **Onwijzigbare Eigenschappen** | **Verdringing** | **Handhaving** |
 |---|---|---|---|
 | **`org.apache.sling.commons.log.LogManager`** | alles | 24-04-25 | 31-08-25 (config genegeerd in juni) |
 | **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 24-04-25 | 31-08-25 (config genegeerd in juni) |
-| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | alles | 2024 | 31-08-25 |
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | alles | 2024 |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | alles | 2024 | 31-08-25 |
-| **`org.apache.felix.http (Factory)`** | alles | 2024 | 31-08-25 |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | alles | 2024 | 31-08-25 |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | alles | 03-06-25 | 31-08-25 |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | alles | 03-06-25 | 31-08-25 |
-| **`org.apache.sling.feature.apiregions.impl`** | alles | 03-06-25 | 31-08-25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | alles | 03-06-25 | 31-08-25 |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | alles | 03-06-25 | 31-08-25 |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | alles | 03-06-25 | 31-08-25 |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | alles | 03-06-25 | 31-08-25 |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | alles | 03-06-25 | 31-08-25 |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | alles | 03-06-25 | 31-08-25 |
 | **`org.apache.http.proxyconfigurator`** | alles | 03-06-25 | 31-08-25 |
-| **`org.apache.sling.feature.apiregions.factory`** | alles | 03-06-25 | 31-08-25 |
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | alles | 03-06-25 | 31-08-25 |
 
-<!--
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### Onaanpasbare OSGi-eigenschappen {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
--->
+Eigenschappen voor de volgende PID&#39;s van de OSGi-component kunnen niet worden gewijzigd, zoals hieronder wordt beschreven.
+
+| **componentID OSGI** | **Onwijzigbare Eigenschappen** |
+|---|---|
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | alles |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | alles |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | alles |
+| **`org.apache.sling.feature.apiregions.impl`** | alles |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | alles |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | alles |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | alles |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | alles |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | alles |
+| **`org.apache.sling.feature.apiregions.factory`** | alles |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | alles |
+
+
+### Toekomstige afgedwongen OSGi-eigendomsrechten {#future-restrictions-osgi-properties}
+
+In de toekomst zal Adobe de volgende OSGi-eigenschappenbeperkingen afdwingen, zodat het gebruik moet stoppen.
+
+| OSGi component PID |   | Vereist | Type | Beperking (indien van toepassing) |
+|---|---|---|---|---|
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | string |   |
+|   | `smtp.port` | Ja | integer | &quot;465&quot;, &quot;587&quot; of &quot;25&quot; |
+|   | `smtp.user` |   | string |   |
+|   | `smtp.password` |   | string |   |
+|   | `from.address` |   | string |   |
+|   | `smtp.ssl` |   | string |   |
+|   | `smtp.starttls` |   | boolean |   |
+|   | `smtp.requiretls` |   | boolean |   |
+|   | `debug.email` |   | boolean |   |
+|   | `oauth.flow` |   | boolean |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Ja | string | &quot;INFO&quot;, &quot;DEBUG&quot; of &quot;TRACE&quot; |
+|   | `org.apache.sling.commons.log.names` |   | array van tekenreeksen |   |
+|   | `org.apache.sling.commons.log.additiv` |   | boolean |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | Nee | string[] |   |
+|   | `externalizer.encodedpath` | Nee | boolean |   |
+|   | `externalizer.host` | Nee | string |   |
+|   | `externalizer.contextpath` | Nee | string |   |
 
 ### Beperkingen van OSGi-eigenschappen {#restrictions-osgi-properties}
 
-De waarden van sommige eigenschappen OSGi zijn beperkt tot de hieronder beschreven regels.
+De waarden van deze OSGi-eigenschappen zijn beperkt tot de hieronder beschreven regels.
 
 | OSGi component PID |   | Vereist | Type | Beperking (indien van toepassing) |
 |---|---|---|---|---|
@@ -504,19 +528,6 @@ De waarden van sommige eigenschappen OSGi zijn beperkt tot de hieronder beschrev
 |   | `org.apache.felix.http.session.uniqueid` |   | boolean |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | Ja | integer | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | Ja | array van tekenreeksen | moet &quot;js&quot; bevatten |
-| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | string |   |
-|   | `smtp.port` | Ja | integer | &quot;465&quot;, &quot;587&quot; of &quot;25&quot; |
-|   | `smtp.user` |   | string |   |
-|   | `smtp.password` |   | string |   |
-|   | `from.address` |   | string |   |
-|   | `smtp.ssl` |   | string |   |
-|   | `smtp.starttls` |   | boolean |   |
-|   | `smtp.requiretls` |   | boolean |   |
-|   | `debug.email` |   | boolean |   |
-|   | `oauth.flow` |   | boolean |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Ja | string | &quot;INFO&quot;, &quot;DEBUG&quot; of &quot;TRACE&quot; |
-|   | `org.apache.sling.commons.log.names` |   | array van tekenreeksen |   |
-|   | `org.apache.sling.commons.log.additiv` |   | boolean |   |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | Nee | string |   |
 |   | `request.log.outputtype` | Nee | string |   |
 |   | `request.log.entry.format` | Nee | string |   |
@@ -531,10 +542,6 @@ De waarden van sommige eigenschappen OSGi zijn beperkt tot de hieronder beschrev
 |   | `servletresolver.defaultExtensions` | Nee | string |   |
 |   | `servletresolver.mountProviders` | Nee | boolean |   |
 |   | `servletresolver.scriptUser` | Nee | string | vervangen, niet gebruiken |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | Nee | string[] |   |
-|   | `externalizer.encodedpath` | Nee | boolean |   |
-|   | `externalizer.host` | Nee | string |   |
-|   | `externalizer.contextpath` | Nee | string |   |
 
 ## Java-runtime-update naar versie 21 {#java-runtime-update-21}
 
