@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Maak een koppeling naar geselecteerde elementen zodat u deze gemakkelijk met anderen kunt delen. Als geautoriseerde gebruiker van [!DNL Content Hub] selecteert u een of meer middelen die beschikbaar zijn in uw [!DNL Content Hub] -omgeving, genereert u een koppeling en stuurt u deze naar andere gebruikers van het type private of public.
 

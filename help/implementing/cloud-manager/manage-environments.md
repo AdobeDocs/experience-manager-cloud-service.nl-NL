@@ -57,11 +57,11 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
    Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen zijn.
 
-   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](assets/no-environments.png)
 
-   * Op het linkerzijpaneel, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0} {, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.![
+   * Op het linkerzijpaneel, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0&rbrace; &lbrace;, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.
 
      ![ Milieu&#39;s tabel ](assets/environments-tab.png)
 
@@ -77,7 +77,7 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. Klik **sparen**.
 
-De **pagina van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
+De **pagina van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
 
 ## Meerdere publicatiegebieden {#multiple-regions}
 
@@ -191,9 +191,9 @@ Als deze optie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservice
 
 Als u extra hebt geactiveerd publiceer gebieden, kunt u het statuut van deze gebieden van de **kaart van Milieu** controleren.
 
-1. Voor de **pagina van het Overzicht**, bepaal de plaats van de **** kaart van Milieu&#39;s.
+1. Voor de **pagina van het Overzicht**, bepaal de plaats van de **&#x200B;**&#x200B;kaart van Milieu&#39;s.
 
-1. Op de **kaart van Milieu&#39;s**, wijst de **3} kolom van de Status {op als er om het even welke kwesties met gevormd extra zijn publiceer gebieden.** Klik het **pictogram van Info** voor details van de gebieden.
+1. Op de **kaart van Milieu&#39;s**, wijst de **3&rbrace; kolom van de Status &lbrace;op als er om het even welke kwesties met gevormd extra zijn publiceer gebieden.** Klik het **pictogram van Info** voor details van de gebieden.
 
    ![ extra publiceer gebiedsstatusinformatie over de kaart van Milieu ](assets/additional-publish-region-status-environments-card.png)
 
@@ -220,7 +220,7 @@ Ongeacht, [ verkeer wordt altijd verpletterd aan het dichtste gebied dat online 
 
 Als cloudservice beheert Adobe automatisch updates voor uw ontwikkelings-, staging- en productieomgeving in productieprogramma&#39;s.
 
-Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer zulk een milieu niet de recentste openbaar beschikbare versie van AEM in werking stelt, toont de status op de **1} kaart van Milieu&#39;s {op het** 3} scherm van het Overzicht **Beschikbare Update**.****
+Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer zulk een milieu niet de recentste openbaar beschikbare versie van AEM in werking stelt, toont de status op de **1&rbrace; kaart van Milieu&#39;s {op het** 3} scherm van het Overzicht **Beschikbare Update**.**&#x200B;**
 
 ![ de updatestatus van het Milieu ](assets/environ-update.png)
 
@@ -266,7 +266,7 @@ Het **gedrag van de Update** optie varieert afhankelijk van de configuratie en d
 
 Een gebruiker met de **Manager van de Plaatsing** of **BedrijfsEigenaar** rol kan een ontwikkelomgeving schrappen.
 
-Van het **scherm van het Overzicht** van het programma op de **3} kaart van Milieu&#39;s {, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het ontwikkelmilieu u wilt schrappen.**
+Van het **scherm van het Overzicht** van het programma op de **3&rbrace; kaart van Milieu&#39;s &lbrace;, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het ontwikkelmilieu u wilt schrappen.**
 
 ![ de optie van de Schrapping ](assets/environ-delete.png)
 

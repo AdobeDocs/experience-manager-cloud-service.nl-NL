@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Leer hoe u Edge Delivery-pijpleidingen configureert voor het maken en implementeren van uw code in productieomgevingen. Een productiepijpleiding stelt code eerst aan het werkgebiedmilieu op. Bij goedkeuring, stelt het de zelfde code aan het productiemilieu op.
 
-Een gebruiker moet de ](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0} om productiepijpleidingen te vormen.**[
+Een gebruiker moet de [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0&rbrace; om productiepijpleidingen te vormen.**
 
 >[!NOTE]
 >
