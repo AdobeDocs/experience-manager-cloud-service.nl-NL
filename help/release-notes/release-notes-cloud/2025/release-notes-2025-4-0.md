@@ -18,7 +18,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn
 
 Het tabblad Bandbreedte in het Dynamic Media Classic-rapportagedashboard wordt niet meer ondersteund vanaf april 2025.
 
-Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 ## Nieuwe functies in Assets View {#new-features-assets-view}
 
@@ -128,7 +128,7 @@ De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnen
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console tot stand te brengen en steun OAuth server-aan-Server, Web App, en Enige Pagina App (SPA).
 
-[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
+[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
 
 Bekijk deze video om te leren hoe u een geverifieerde API voor later gebruik kunt configureren:
 
@@ -199,7 +199,7 @@ E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedbac
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -219,4 +219,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
