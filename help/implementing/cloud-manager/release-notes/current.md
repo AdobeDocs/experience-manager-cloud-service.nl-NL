@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.6.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De volgende geplande release is donderdag 10 juli 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-* **(UI) Het licentiedashboard bevat nu een Edge Delivery Services-licentie**
+* **dashboard van de Vergunning omvat nu de vergunning van Edge Delivery Services**
 
   Het gebruik van Edge Delivery Services-licenties wordt nu weergegeven op het licentiedashboard, zodat u uw rechten en status duidelijker kunt zien. <!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ De volgende geplande release is donderdag 10 juli 2025.
 
   Zie [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md).
 
-* **(UI) Edge Delivery-siteconfiguratie bijgewerkt**
+* **bijgewerkte de plaatsconfiguratie van Edge Delivery**
 
   Vereenvoudigde de stroom voor het toevoegen van een plaats van Edge Delivery door om de **Oorsprong van Edge Delivery** in plaats van **Repository URL** te verzoeken, makend aan boord gaan en opstelling sneller en intuïtiever <!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ De volgende geplande release is donderdag 10 juli 2025.
 
   Zie [ een Plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) toevoegen.
 
-* **(UI) De favorieten van de Pijpleiding**
+* **de favorieten van de Pijpleiding**
 
   In deze versie, introduceert Cloud Manager de capaciteit om favoriete pijpleidingen vast te zetten, toestaand u om specifieke pijpleidingen als favorieten te merken zodat verschijnen zij bij de bovenkant van de lijst op de **pagina van de Pijpleidingen**. Deze verbetering maakt vaak betreden pijpleidingen gemakkelijker te vinden en te lopen. <!-- CMGR-68293 -->
 
@@ -111,7 +111,7 @@ Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt 
 
 Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services zijn gebouwd en deze mogelijkheid uitbreiden tot buiten de Cloud Service-omgevingen. U kunt **Pijpleidingen Config** gebruiken om montages zoals verkeer het filtreren regels en configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 
