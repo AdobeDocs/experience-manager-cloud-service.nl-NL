@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2430'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,13 @@ Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen 
 | **Productie + Stadium** | De productie- en testomgevingen zijn als een paar beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt. Prestatie- en beveiligingstests uitvoeren op de werkgebiedomgeving. Het is even groot als de productie. |
 | **Ontwikkeling** | Een ontwikkelomgeving kan worden gecreëerd voor ontwikkelings- en testdoeleinden en kan alleen worden geassocieerd met niet-productiepijpleidingen. Ontwikkelomgevingen hebben niet dezelfde grootte als stadium en productie en mogen niet worden gebruikt om prestatie- en veiligheidstests uit te voeren. |
 | **Snelle Ontwikkeling** | Met een RDE (Rapid Development Environment) kunnen ontwikkelaars snel wijzigingen implementeren en evalueren. Hierdoor wordt de tijd die nodig is om functies te testen die al zijn gevalideerd in een lokale ontwikkelomgeving, verkort. Zie [ de snelle documentatie van het ontwikkelomgeving ](/help/implementing/developing/introduction/rapid-development-environments.md) voor details over hoe te om RDE te gebruiken. |
+| **Gespecialiseerde het Testen Milieu** | Gespecialiseerde testomgevingen bieden een specifieke ruimte voor het valideren van functies onder bijna-productieomstandigheden, ideaal voor stresstests en geavanceerde controles voorafgaand aan de implementatie. Zie [ een Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/specialized-test-environment.md) toevoegen |
 
-De mogelijkheden van individuele milieu&#39;s hangen van de oplossingen af die in het [ programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) van het milieu werden toegelaten.
+>[!NOTE]
+>
+>De **Gespecialiseerde het Testen eigenschap van het Milieu** is momenteel beschikbaar slechts door het vroege adoptieprogramma. Om omhoog als vroege adopter te ondertekenen, zie [ Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+
+De mogelijkheden van individuele milieu&#39;s hangen van de oplossingen af die in het [ programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) van het milieu worden toegelaten.
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -52,11 +57,11 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
    Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen zijn.
 
-   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](assets/no-environments.png)
 
-   * Op het linkerzijpaneel, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0&rbrace; &lbrace;, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.
+   * Op het linkerzijpaneel, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0} {, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.![
 
      ![ Milieu&#39;s tabel ](assets/environments-tab.png)
 
@@ -72,11 +77,11 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. Klik **sparen**.
 
-De **pagina van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
+De **pagina van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
 
 ## Meerdere publicatiegebieden {#multiple-regions}
 
-Een gebruiker met de **rol van de BedrijfsEigenaar** kan productie en het opvoeren milieu&#39;s vormen om tot drie extra te omvatten publiceren gebieden naast het primaire gebied. Aanvullende publicatiegebieden kunnen de beschikbaarheid verbeteren. Zie de [ Extra documentatie van de Gebieden van Publish ](/help/operations/additional-publish-regions.md) voor meer details.
+Een gebruiker met de **rol van de BedrijfsEigenaar** kan productie en het opvoeren milieu&#39;s vormen om tot drie extra te omvatten publiceren gebieden naast het primaire gebied. Aanvullende publicatiegebieden kunnen de beschikbaarheid verbeteren. Zie de [ Extra documentatie van Gebieden publiceren ](/help/operations/additional-publish-regions.md) voor meer details.
 
 >[!TIP]
 >
@@ -105,7 +110,7 @@ Als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanc
 
 ### Meerdere publicatiegebieden bewerken {#edit-regions}
 
-Als u in eerste instantie geen extra gebieden hebt opgegeven, kunt u dat doen nadat de omgevingen zijn gemaakt als u over de benodigde rechten beschikt.
+Als u in eerste instantie geen extra gebieden hebt opgegeven, kunt u dat doen nadat het milieu is gecreëerd en u over de benodigde rechten beschikt.
 
 U kunt ook extra publicatiegebieden verwijderen. U kunt echter slechts gebieden in één transactie toevoegen of verwijderen. Als u één gebied moet toevoegen en één gebied wilt verwijderen, voegt u eerst de wijziging toe, slaat u de wijziging op en verwijdert u vervolgens (of omgekeerd).
 
@@ -176,19 +181,19 @@ Een gebruiker met de vereiste machtigingen moet de volgende stappen uitvoeren vo
 
 Nadat de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram vóór de naam van de voorvertoningsservice niet meer weergegeven.
 
-Nadat de voorvertoningsservice is geactiveerd, kunt u inhoud publiceren via de gebruikersinterface van **`Manage Publication`** in AEM. Zie [ inhoud van de Voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor meer details.
+Als deze optie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservice via de gebruikersinterface van **`Manage Publication`** in AEM. Zie [ inhoud van de Voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor meer details.
 
 >[!NOTE]
 >
->Uw omgeving moet AEM versie `2021.05.5368.20210529T101701Z` of hoger zijn om de voorvertoningsservice te kunnen gebruiken. Zorg ervoor dat een updatepijpleiding op uw milieu met succes heeft gelopen zodat kunt u de voorproefdienst gebruiken.
+>Uw omgeving moet AEM-versie `2021.05.5368.20210529T101701Z` of hoger zijn om de voorvertoningsservice te kunnen gebruiken. Zorg ervoor dat een updatepijpleiding op uw milieu met succes heeft gelopen zodat kunt u de voorproefdienst gebruiken.
 
 ### Status van aanvullende publicatiegebieden {#additional-region-status}
 
 Als u extra hebt geactiveerd publiceer gebieden, kunt u het statuut van deze gebieden van de **kaart van Milieu** controleren.
 
-1. Voor de **pagina van het Overzicht**, bepaal de plaats van de **&#x200B;**&#x200B;kaart van Milieu&#39;s.
+1. Voor de **pagina van het Overzicht**, bepaal de plaats van de **** kaart van Milieu&#39;s.
 
-1. Op de **kaart van Milieu&#39;s**, wijst de **3&rbrace; kolom van de Status &lbrace;op als er om het even welke kwesties met gevormd extra zijn publiceer gebieden.** Klik het **pictogram van Info** voor details van de gebieden.
+1. Op de **kaart van Milieu&#39;s**, wijst de **3} kolom van de Status {op als er om het even welke kwesties met gevormd extra zijn publiceer gebieden.** Klik het **pictogram van Info** voor details van de gebieden.
 
    ![ extra publiceer gebiedsstatusinformatie over de kaart van Milieu ](assets/additional-publish-region-status-environments-card.png)
 
@@ -209,26 +214,26 @@ Als er problemen zijn gemeld met extra publicatieregio&#39;s, moet u de patiënt
 
 Hoe lang u wacht tot het systeem op zich terugkrijgt alvorens extra actie te ondernemen hangt van de invloed af het mislukken van dat gebied op uw systemen heeft.
 
-Ongeacht, [ verkeer wordt altijd verpletterd aan het dichtste gebied dat online ](/help/operations/additional-publish-regions.md) is. Neem contact op met de klantenservice van de Adobe als de problemen zich blijven voordoen.
+Ongeacht, [ verkeer wordt altijd verpletterd aan het dichtste gebied dat online ](/help/operations/additional-publish-regions.md) is. Neem contact op met de klantenservice van Adobe als de problemen zich blijven voordoen.
 
 ## Omgevingen bijwerken {#updating-dev-environment}
 
 Als cloudservice beheert Adobe automatisch updates voor uw ontwikkelings-, staging- en productieomgeving in productieprogramma&#39;s.
 
-Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer zulk een milieu niet de recentste openbaar beschikbare AEM versie in werking stelt, toont de status op de **1&rbrace; kaart van Milieu&#39;s {op het** 3} scherm van het Overzicht **Beschikbare Update**.**&#x200B;**
+Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer zulk een milieu niet de recentste openbaar beschikbare versie van AEM in werking stelt, toont de status op de **1} kaart van Milieu&#39;s {op het** 3} scherm van het Overzicht **Beschikbare Update**.****
 
 ![ de updatestatus van het Milieu ](assets/environ-update.png)
 
 ### Updates en pijpleidingen {#updates-pipelines}
 
-De pijpleidingen zijn de enige manier om [ code aan de milieu&#39;s van AEM as a Cloud Service ](deploy-code.md) op te stellen. Daarom wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
+De pijpleidingen zijn de enige manier om [ code aan de milieu&#39;s van AEM as a Cloud Service ](deploy-code.md) op te stellen. Om deze reden, wordt elke pijpleiding geassocieerd met een bepaalde versie van AEM.
 
-Wanneer Cloud Manager een nieuwere versie van AEM ontdekt dan laatste opgesteld met de pijpleiding, toont het de **Beschikbare** status van de Update voor het milieu.
+Wanneer Cloud Manager een nieuwere versie van AEM ontdekt dan laatste die met de pijpleiding wordt opgesteld, toont het de **Beschikbare** status van de Update voor het milieu.
 
 Het proces van actualisering bestaat daarom uit twee stappen:
 
-1. De pijpleiding bijwerken met de recentste AEM versie
-1. De pijpleiding in werking stellen om de nieuwe versie van AEM aan een milieu op te stellen
+1. De pijpleiding bijwerken met de recentste versie van AEM
+1. De pijplijn uitvoeren om de nieuwe versie van AEM in een omgeving te implementeren
 
 ### Werk uw omgevingen bij {#updating-your-environments}
 
@@ -243,9 +248,9 @@ Deze optie is ook beschikbaar door het **lusje van Milieu&#39;s** van het progra
 
 ![ optie van de Update van het lusje van Milieu&#39;s ](assets/environ-update3.png)
 
-Een gebruiker met de **Manager van de Plaatsing** of **BedrijfsEigenaar** rol kan deze optie gebruiken om de pijpleiding bij te werken verbonden aan dit milieu aan de recentste AEM versie.
+Een gebruiker met de **Manager van de Plaatsing** of **BedrijfsEigenaar** rol kan deze optie gebruiken om de pijpleiding bij te werken verbonden aan dit milieu aan de recentste versie van AEM.
 
-Zodra de pijpleidingsversie aan de recentste openbaar beschikbare AEM versie wordt bijgewerkt, wordt de gebruiker ertoe aangezet om de bijbehorende pijpleiding in werking te stellen om de recentste versie aan het milieu op te stellen.
+Zodra de pijpleidingsversie aan de recentste openbaar beschikbare versie van AEM wordt bijgewerkt, wordt de gebruiker ertoe aangezet om de bijbehorende pijpleiding in werking te stellen om de recentste versie aan het milieu op te stellen.
 
 ![ Voorbeeld van de herinnering om de pijpleiding in werking te stellen om het milieu ](assets/update-run-pipeline.png) bij te werken
 
@@ -261,7 +266,7 @@ Het **gedrag van de Update** optie varieert afhankelijk van de configuratie en d
 
 Een gebruiker met de **Manager van de Plaatsing** of **BedrijfsEigenaar** rol kan een ontwikkelomgeving schrappen.
 
-Van het **scherm van het Overzicht** van het programma op de **3&rbrace; kaart van Milieu&#39;s &lbrace;, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het ontwikkelmilieu u wilt schrappen.**
+Van het **scherm van het Overzicht** van het programma op de **3} kaart van Milieu&#39;s {, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het ontwikkelmilieu u wilt schrappen.**
 
 ![ de optie van de Schrapping ](assets/environ-delete.png)
 
@@ -282,7 +287,7 @@ Selecteer **beheert Toegang** van het ellipsmenu van het milieu op de **kaart va
 
 >[!TIP]
 >
->Zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) om te leren hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.
+>Zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) om te leren hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
 
 ## Toegang tot de console van de Ontwikkelaar {#accessing-developer-console}
 
@@ -294,7 +299,7 @@ Een nieuw lusje wordt geopend in uw browser met de openings van een sessiepagina
 
 Slechts heeft een gebruiker met de **rol van de Ontwikkelaar** toegang tot **Developer Console**. Nochtans, voor zandbakprogramma&#39;s, heeft om het even welke gebruiker met toegang tot het zandbakprogramma toegang tot **Developer Console**.
 
-Zie [ Sluimerende en Sluiting van Sandbox Milieu&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) voor meer details.
+Zie [ Sluimerende en Sluiting van Sandbox Milieu&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) voor meer details.
 
 Deze optie is ook beschikbaar bij het **Milieu** lusje van het **venster van het Overzicht** wanneer het klikken van ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van een individueel milieu.
 

@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Licentiedashboard {#license-dashboard}
 
-Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-productrechten die beschikbaar zijn voor uw organisatie of huurder.
+Cloud Manager biedt een dashboard waarmee u eenvoudig de productrechten van Adobe Experience Manager as a Cloud Service (AEMaaCS) kunt bekijken die beschikbaar zijn voor uw organisatie of huurder.
 
 >[!IMPORTANT]
 >
->Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
+>Het licentiedashboard is alleen van toepassing op de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het dashboard van de Vergunning.
 >
 >Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -41,7 +41,10 @@ Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrec
 
 Het dashboard bestaat uit drie gedeelten die u laten zien:
 
-* **Oplossingen** - welke oplossingen die u vergunning hebt gegeven.
+* **Oplossingen** - welke oplossingen die u vergunning hebt gegeven. Bijvoorbeeld Sites, Edge Delivery Services en Assets.
+
+  ![ lijst van Oplossingen ](assets/solutions.png)
+
 * **toe:voegen-ons** - welke toe:voegen-ons aan uw vergunning gegeven oplossingen die u beschikbaar hebt.
 * **Andere Entitlements** - welke zandbak en dev milieu en andere rechten die binnen uw huurder kunnen worden verbruikt.
 
@@ -52,7 +55,7 @@ Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruik
    * Een machtiging wordt alleen als gebruikt beschouwd wanneer een productieomgeving wordt gecreëerd. Of, als één bestaat, als een updatepijpleiding op het is in werking gesteld.
    * Slechts een beperkt aantal programma&#39;s wordt afzonderlijk vermeld in de kolom, de rest wordt vertegenwoordigd door een `+x` -item.
    * Houd de muisaanwijzer boven de `+x` -vermelding om een pop-up met gegevens over alle programma&#39;s weer te geven.
-* De **kolom van het Gebruik** &lbrace;toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
+* De **kolom van het Gebruik** {toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
 
 >[!TIP]
 >

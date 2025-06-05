@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Vroege adoptie" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,11 @@ Klanten kunnen nu ook hun Azure DevOps Git-opslagplaatsen in Cloud Manager aan b
 
 * Voor Edge Delivery Services-gebruikers kan de ingebouwde opslagplaats worden gebruikt voor het synchroniseren en implementeren van sitecode.
 * Voor AEM as a Cloud Service- en Adobe Managed Services-gebruikers (AMS) kan de opslagplaats worden gekoppeld aan zowel full-stack als frontend pijpleidingen.
-&#39;
+
 >[!NOTE]
 >
 >De in dit artikel beschreven kenmerken zijn alleen beschikbaar via het programma voor vroegtijdige goedkeuring. Voor meer details en om omhoog als vroege adopter te ondertekenen, zie [ Uw Eigen Git ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) brengen.
+
 
 ## Een externe opslagplaats configureren
 
@@ -70,7 +71,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit de vol
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
    *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket.*
@@ -83,13 +84,16 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit de vol
    | | **type van Bewaarplaats: Bitbucket**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
    | | **type van Bewaarplaats: Azure DevOps**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ Azure documentatie DevOps ](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows).<li>Vereiste toestemmingen voor het Azure DevOps Persoonlijke Token van de Toegang (PAT).<br> Deze toestemmingen staan Cloud Manager toe om tot bewaarplaatsinhoud toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op WebHaakgebeurtenissen te reageren.<br> wanneer u het app wachtwoord in Azure DevOps creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)</li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
+   Zie ook [ de Tokens van de Toegang beheren ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
    >[!IMPORTANT]
    >
    >De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de Vroege fase van de Goedkeuring. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
 
 1. Klik **Valideren**.
 
-Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
+   Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
+
 
 ## Koppel een gevalideerde externe opslagruimte aan een pijpleiding {#validate-ext-repo}
 
@@ -100,12 +104,12 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 
    <!-- Add an Edge Delivery Pipeline -->
 
-   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ![&#128279;](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
+   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)![
    *voeg de dialoogdoos van de Pijpleiding van de Niet-Productie met geselecteerde bewaarplaats en de tak van het Git toe,*
 
 1. Wanneer het toevoegen van of het uitgeven van een pijpleiding, om de **plaats van de Code van Source** voor uw nieuwe of bestaande pijpleiding te specificeren, verkies de externe bewaarplaats u van de **drop-down lijst van de Bewaarplaats** wilt gebruiken.
 
-1. In de **drop-down lijst van de Tak van 0&rbrace; Git, selecteer de tak als bron voor de pijpleiding.**
+1. In de **drop-down lijst van de Tak van 0} Git, selecteer de tak als bron voor de pijpleiding.**
 
 1. Klik **sparen**.
 
@@ -113,6 +117,7 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 >[!TIP]
 >
 >Voor details over het beheren van bewaarplaatsen in Cloud Manager, zie [ Bewaarplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+
 
 ## Een webhaak configureren voor een externe gegevensopslagruimte {#configure-webhook}
 
@@ -150,14 +155,14 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderne
 
    1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
-   1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
 
    Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Zie de tabel onder stap 8.
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -172,6 +177,7 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
    | GitLab | Met deze webhaakgebeurtenissen kan Cloud Manager pijpleidingen activeren wanneer code wordt geduwd of een samenvoegaanvraag wordt ingediend. Zij volgen ook commentaren met betrekking tot trekverzoekbevestiging (door nota gebeurtenissen).<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Push-gebeurtenissen<li>Aanvraaggebeurtenissen samenvoegen<li>Notitie, gebeurtenissen</li></li></li></ul></ul></ul> |
    | Bitmap | Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Volledige aanvraag: gemaakt<li>Verzoek tot uittrekken: Bijgewerkt<li>Pull-verzoeken: Samengevoegd<li>Volledige aanvraag: opmerking<li>Repository: Push</li></li></li></ul></ul></ul> |
    | Azure DevOps | Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Repository: Push</li></li></ul></ul></ul> |
+
 
 ### Validatie van trekkingsverzoeken met webhaken
 
