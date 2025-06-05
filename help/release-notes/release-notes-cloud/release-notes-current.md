@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '2067'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -28,7 +28,8 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.4.0) is 24 april 2025. De volgende release met functies (2025.5.0) is gepland voor 5 juni 2025.
+
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.5.0) is 5 juni 2025. De volgende release met functies (2025.6.0) is gepland voor 26 juni 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -40,52 +41,80 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
-
-### Nieuwe functies in Experience Manager Sites {#enhancements-sites}
-
-**Nieuwe ModelAdmin UI van het Fragmentmodel van het Inhoud**
-
-Als u de lijst met nieuwe gebruikersinterfaces aan de clientzijde verder invult wanneer u werkt met AEM Content Fragments, is er nu een nieuwe beheerinterface beschikbaar voor modellen van inhoudsfragmenten. De nieuwe UI verstrekt een schone en moderne lijstmening die het zoeken van modellen met filters toestaat, en die modelmarkeringen toont en welke inhoudsfragmenten bestaan die op een bepaald model gebaseerd zijn. De documentatie kan [ hier ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) worden gevonden.
-
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Dynamische media (Scene7) {#dynamic-media-scene7}
+**AI-Gegenereerde meta-gegevens**
 
-**Dynamische Media (Scene7) niet gesteund in de Verbeterde milieu&#39;s van de Veiligheid**
+AEM Assets gebruikt nu [ AI om meta-gegevens, met inbegrip van Titel, Beschrijving, en Sleutelwoorden ](/help/assets/metadata-assets-view.md#ai-smart-tags) automatisch te produceren. Deze door AI gegenereerde velden verbeteren de nauwkeurigheid van metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, ingedeeld en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud.
 
-Dynamic Media (Scene7) op AEM as a Cloud Service is niet geschikt voor HIPAA en kan niet worden gebruikt in AEM-omgevingen waar uitgebreide beveiliging is ingeschakeld.
+![ AI geproduceerde meta-gegevens ](/help/assets/assets/enhanced-smart-tags.png)
 
-Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1&rbrace; kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
+**Integratie met Figma**
 
-Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn dat de Dynamische stapel van Media (Scene7) niet HIPAA-klaar is.
+AEM Assets integreert native met Figma, waardoor ontwerpers rechtstreeks vanuit de gebruikersinterface van Figma toegang hebben tot de elementen die in AEM Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, in het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in de AEM Assets-opslagruimte.
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**Meldend**
-
-Het tabblad Bandbreedte in het Dynamic Media Classic-rapportagedashboard wordt niet meer ondersteund vanaf april 2025.
-
-Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+![ Integratie met Figma ](/help/assets/assets/figma-integration.png)
 
 
-## Nieuwe functies in Assets View {#new-features-assets-view}
+### Nieuwe functies in Content Hub {#new-features-content-hub}
 
-**Betrekkingen van Activa**
+**Op attributen-Gebaseerd Toegangsbeheer (ABAC)**
 
-De Assets-weergave biedt nu ondersteuning voor het weergeven en bewerken van relaties met middelen in een vereenvoudigd deelvenster met gegevens over elementen. Voeg eenvoudig relaties zoals Source en Derivative toe aan inhoud, zodat gebruikers op een effectievere manier relevante hoofdinhoud kunnen vinden.
+Met Content Hub kunt u nu op regels gebaseerde beperkingen toepassen op toegang tot elementen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
 
-![ Assets relatievoorbeeld ](/help/assets/assets/asset-relations-example.png)
+De regels voor het beperken van elementen zijn gebaseerd op metagegevens en als de voorwaarden die in de regel zijn gedefinieerd overeenkomen met de metagegevens van het element, wordt het element weergegeven aan de gebruikersgroepen.
 
-**vergelijkt versies van een activa**
+Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
-Met de Assets-weergave kunt u nu snel elke versie van een element selecteren en vergelijken met de meest recente versie.
+* Elimineert de afhankelijkheid van de mapstructuur voor machtigingen
 
-![ vergelijk versies van activa ](/help/assets/assets/version-compare2.png)
+* Staat beheerders toe om activa te uploaden en toestemmingsstructuren met terugwerkende kracht te bepalen
+
+* Vermindert het aantal duplicaten - verbetert de integriteit van elementen. Er zijn dubbele machtigingen nodig in op mappen gebaseerde machtigingen wanneer dezelfde elementen met verschillende groepen worden gedeeld.
+
+**het Brandmerken UI**
+
+In Content Hub kunnen beheerders nu de gebruikersinterface aanpassen met merkspecifieke elementen, zoals bannerafbeeldingen, bannertitels en platte tekst, en met primaire en secundaire kleuren. Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
+
+![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
+
+**Openbare verbinding delend**
+
+Content Hub ondersteunt nu het genereren van deelbare koppelingen, zodat externe gebruikers zonder toegang tot de toepassing metagegevens van middelen kunnen bekijken of elementen kunnen downloaden.
+
+![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
+
+**het bestuur van Inzamelingen**
+
+Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren, zodat alleen geautoriseerde gebruikers gegroepeerde elementen kunnen weergeven of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
+
+![ het bestuur van Inzamelingen ](/help/assets/assets/collection-permissions.png)
+
+>[!NOTE]
+>
+>Beheer van verzamelingen is een beperkte beschikbaarheid. U kunt het toegelaten krijgen door een steunkaartje te creëren.
+
+**Download veelvoudige activa als ZIP**
+
+Met Content Hub kunt u nu ook de geselecteerde elementen en de bijbehorende uitvoeringen downloaden in een ZIP-bestand en niet als afzonderlijke bestanden die het bestandsbeheer voor u vereenvoudigen.
+
+**Dynamische vertoningen van Media in Content Hub**
+
+Open al uw dynamische vooraf ingestelde vertoningen van Media en slimme gewassen voor download, direct van binnen de Gebruikersinterface van Content Hub.
+
+&#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Nieuwe functies in dynamische media {#new-features-dynamic-media}
+
+**Dynamische integratie van Media inheemse met de &#x200B; van AJO B2C**
+
+Native integratie van Experience Manager (AEM) Dynamic Media met Journey Optimizer (AJO) B2C, waardoor marketers AEM Dynamic Media-elementen (uitvoering en DM-sjabloon) gemakkelijk kunnen insluiten in AJO-inhoud en real-time updates en hyperpersoonlijke ervaringen via kanalen kunnen bieden.
+
+&#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -105,104 +134,136 @@ Met de Assets-weergave kunt u nu snel elke versie van een element selecteren en 
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
 De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnende gebruikers.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
-
-### Verbeteringen {#enhancements-cif}
-
-* Selectie van productvarianten toevoegen voor referentietype van CIF-product
-* [ Experimental ]: JSON+LD in de Componenten van de Kern van CIF in PDPs
-* [ Experimental ]: De capaciteit van CIF om geheim voorgeheugen te ontruimen
-
-### Bugfixes {#bug-fixes-cif}
-
-* Zoekprobleem in productveld verhelpen
-* De URL-indeling van het product werkt niet zoals u had verwacht voor #variant_sku
-* Kan niet meer dan 20 SKU&#39;s toevoegen aan de component Productlijst
-
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### Op OpenAPI gebaseerde API&#39;s {#open-apis}
+### Bijgewerkt implementatieproces {#updated-deprecation-process}
 
-Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console tot stand te brengen en steun OAuth server-aan-Server, Web App, en Enige Pagina App (SPA).
+Adobe controleert regelmatig functies, bibliotheken, API&#39;s en configuraties om ervoor te zorgen dat deze voldoen aan de standaarden voor prestaties, beveiliging en waarde. Wanneer de mogelijkheden niet meer aan deze normen voldoen, zijn zij duidelijk voor verval en het gebruik moet tegen een gespecificeerde verwijderingsdatum ophouden. Adobe leidt tot deze datum en herinnert klanten aan e-mailmeldingen en acties die in Cloud Manager moeten worden uitgevoerd voordat ze nieuwe builds gaan gebruiken of implementeren. Als u de vereiste actie niet uitvoert, kan dit ertoe leiden dat u niet kunt upgraden naar nieuwe versies van AEM. Dit kan gevolgen hebben voor de beveiliging, prestaties, betrouwbaarheid en beschikbaarheid.
 
-[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
+Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md) voor verdere informatie.
 
-Bekijk deze video om te leren hoe u een geverifieerde API voor later gebruik kunt configureren:
+#### Verouderde Java API&#39;s en OSGi-configuratie die verwijderingsdatums naderen {#deprecated-near-removals}
 
->[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+Vouw de onderstaande lijst uit om de verouderde API&#39;s en OSGi-configuraties weer te geven die niet meer moeten worden gebruikt. Raadpleeg het artikel over veroudering voor volledige informatie, inclusief de tijdlijn voor verwijderen.
 
-### Verbeteringen in verband met domeintoewijzing {#cdn-enhancements}
+<details>
+  <summary>Uitvouwen om de afwaarderingen weer te geven</summary>
 
-Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#configurations). Hier volgen enkele recente functies:
+Java API&#39;s:
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
-#### Aanvullende eigenschappen opnemen in CDN-logbestanden {#props-in-cdnlogs}
+OSGi-eigenschappen:
 
-Nuttig voor scenario&#39;s met inbegrip van het zuiveren en gegevensanalyse, kunt u meer informatie in uw CDN- logboeken voorbij de standaardeigenschappen omvatten door de `logProperty` actie in [ verzoek en reactietransformaties ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) te plaatsen.
+* `org.apache.sling.commons.log.LogManager` (alle eigenschappen)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file` , `org.apache.sling.commons.log.pattern`)
 
-#### Gebied, Continent en Organisatie-eigenschappen als overeenkomende voorwaarden {#matching-conditions}
+</details>
 
-CDN-regels kunnen nu op basis van regio, continent en organisatie overeenkomen voor gebruik, waaronder het blokkeren van verkeer en omleiding. `clientRegion` en `clientContinent` vergroten de reeds ondersteunde `clientCountry` overeenkomsten op basis van geografie, terwijl `clientAsName` en `clientAsNumber` overeenkomen met Autonomous Systems om grote ISP&#39;s, bedrijven of cloudproviders te identificeren. Leer meer over deze [ onlangs blootgestelde verzoekeigenschappen ](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-#### Cookie-waarde instellen {#cookie-attributes}
+**Java 11 runtime** is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
 
-U kunt koekjesattributen in [ reactietransformaties ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) plaatsen.
+Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
 
-### Java 21-ondersteuning {#java21}
+Opmerking: de runtimeversie staat los van de build-versie van uw code. We raden u aan om samen te werken met Java 21, maar Java 11-builds worden voorlopig nog wel ondersteund. In de toekomst wordt een afzonderlijke aankondiging voor het vervangen van Java 11-builds gedeeld.
 
-Vanaf de release van januari kunt u code maken met Java 21 en Java 17. U krijgt toegang tot nieuwe functies zoals patroonaanpassing, verzegelde klassen en verschillende prestatieverbeteringen. Voor configuratiestappen, met inbegrip van het bijwerken van uw Gemaakt project en bibliotheekversies, zie het [ Milieu van de Bouwstijl ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) artikel.
+### Handhaving van het configuratiebeleid van AEM Java Logs {#logconfig-policy}
 
-Krachtigere Java 21 **runtime** wordt automatisch opgesteld wanneer Java 17 of 21 bouwt wordt ontdekt. Nochtans, beveelt Adobe ook het kiezen in Java 21 runtime voor milieu&#39;s aan die met Java 11 worden gebouwd, door [ aemcs-java-adopter@adobe.com ](mailto:aemcs-java-adopter@adobe.com) te e-mailen. Leer over [ Java 21 runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
->[!IMPORTANT]
->
-> Java 21 **runtime** werd opgesteld aan uw milieu&#39;s dev/RDE in februari; het zal op uw stadium/productiemilieu&#39;s op **28 april en 29** worden toegepast. Merk op dat **bouwend code** met Java 21 (of Java 17) onafhankelijk van Java 21 runtime is — u moet stappen uitdrukkelijk nemen om code met Java 21 (of Java 17) te bouwen.
+Beginnend in **eind Augustus**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Gebaseerd op onze analyse, zullen de meeste klanten niet beïnvloed worden en Adobe zal direct om het even welke klanten contacteren waarvan huidige configuratie kan worden beïnvloed.
 
-### Handhaving van het configuratiebeleid voor AEM Logging {#logconfig-policy}
+Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen die zich op het gedrag van het douaneregistreren baseren. Bijvoorbeeld:
 
-AEM Java-logboeken moeten een consistente indeling hebben en mogen niet worden overschreven door aangepaste configuraties, zodat de omgeving van de klant effectief wordt gecontroleerd. De output van het logboek moet aan de standaarddossiers worden geleid. Voor AEM-productcode moeten de standaardlogniveaus worden behouden. Nochtans, is het aanvaardbaar om logboekniveaus voor klant-ontwikkelde code aan te passen.
+* Als uw logboek het door:sturen systeem een formaat van het douanelogboek verwacht, kunt u uw innameregels moeten aanpassen.
+* Als u eerder logboekbreedheid hebt verminderd door logboekniveaus te veranderen, gelieve te merken dat het terugkeren aan standaardniveaus logboekvolume kan verhogen.
 
-Daartoe moeten de volgende OSGi-eigenschappen niet worden gewijzigd:
-* **Apache Sling Logconfiguratie** (PID: `org.apache.sling.commons.log.LogManager`) — *alle eigenschappen*
-* **Apache Sling Logging Logger Configuratie** (PID van de Fabriek: `org.apache.sling.commons.log.LogManager.factory.config`):
-   * `org.apache.sling.commons.log.file`
-   * `org.apache.sling.commons.log.pattern`
+### Standaard leegmaken van oudere versies en controlelogboeken {#mt-defaults}
 
-Medio mei zal AEM een beleid afdwingen waarbij eventuele aangepaste wijzigingen in deze eigenschappen worden genegeerd. Controleer uw downstreamprocessen en pas deze aan. Bijvoorbeeld, als u het logboek door:sturen eigenschap gebruikt:
-* Als uw registrerenbestemming een douane (niet-gebrek) logboekformaat verwacht, kunt u uw spelingsregels moeten bijwerken.
-* Als de veranderingen in logboekniveaus verminderde logboekbreedtegraad, zich ervan bewust zijn dat de standaardlogboekniveaus in een significante verhoging van logboekvolume kunnen resulteren.
+Momenteel, hebben de inhoudsversies en de controlelogboeken hun bijbehorende *taken van het zuiveringsonderhoud* gehandicapt door gebrek en zo wordt geen gegeven verwijderd tenzij uitdrukkelijk gevormd via hun respectieve eigenschappen OSGi.
 
-### AEM Log Forwarding to More Destination - Beta Program {#log-forwarding-earlyadopter}
+Nochtans, om bewaarplaatsprestaties te optimaliseren, die in **eind juni 2025** beginnen, zal het zuiveren door gebrek worden toegelaten, die deze richtlijnen volgen:
 
-In bèta kunt u nu AEM-logboeken doorsturen naar New Relic (met behulp van HTTPS), Amazon S3 en Sumo Logic. AEM-logbestanden (inclusief Apache/Dispatcher) worden wel ondersteund, maar geen CDN-logbestanden. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
+#### Inhoudversies {#mt-content}
+
+* **Nieuwe milieu&#39;s** (gecreeerd na een aanstaande datum (die later worden meegedeeld)
+   * Versies ouder dan **30 dagen** zullen periodiek worden geschrapt.
+   * De meest recente vijf versies in de afgelopen 30 dagen blijven behouden, samen met de meest recente versie en de huidige versie, ongeacht hun leeftijd.
+
+* **Bestaande milieu&#39;s** (gecreeerd vóór deze aanstaande datum):
+   * Versies ouder dan **7 jaar** zullen periodiek worden geschrapt.
+   * Alle versies in de afgelopen 7 jaar blijven behouden.
+   * Deze hoge standaarddrempel voorkomt dat recente gegevens onbedoeld worden verwijderd. Het wordt echter aanbevolen lagere waarden te configureren om de prestaties van de opslagplaats te optimaliseren.
+
+* U kunt deze gebreken door OSGi configuratieoverschrijvingen wijzigen.
+
+#### Controlelogboek {#mt-auditlogs}
+
+* **Nieuwe milieu&#39;s** (gecreeerd na een aanstaande datum, die afzonderlijk zal worden meegedeeld):
+   * De replicatie, DAM, en de logboeken van de paginacontrole ouder dan **7 dagen** zullen periodiek worden geschrapt.
+   * Alle gebeurtenissen worden standaard geregistreerd.
+
+* **Bestaande milieu&#39;s** (gecreeerd vóór deze aanstaande datum):
+   * De replicatie, DAM, en de logboeken van de paginacontrole ouder dan **7 jaar** zullen periodiek worden geschrapt.
+   * Alle gebeurtenissen worden standaard geregistreerd.
+   * Deze hoge standaarddrempel voorkomt dat recente gegevens onbedoeld worden verwijderd. Het wordt echter aanbevolen lagere waarden te configureren om de prestaties van de opslagplaats te optimaliseren.
+
+* U kunt deze gebreken door OSGi configuratieoverschrijvingen wijzigen.
+
+Voor meer details, zie het [ artikel van de Taken van het Onderhoud ](/help/operations/maintenance.md#default).
+
+### Edge Computing (Alpha-programma) {#edge-computing}
+
+Met Edge Computing kunt u JavaScript uitvoeren op de CDN-laag, waardoor de gegevensverwerking dichter bij de eindgebruiker komt te staan. Dit vermindert latentie en maakt responsieve, dynamische ervaringen aan de rand mogelijk.
+
+Vaak voorkomende gevallen van gebruik zijn:
+
+* Gebruikers verifiëren met een identiteitsprovider voordat toegang tot inhoud wordt verleend
+* Inhoud aanpassen op basis van geolocatie, apparaattype of gebruikerskenmerken
+* Handelend als middleware tussen CDN en uw oorsprong
+* Reacties van externe API&#39;s (en wellicht meerdere API&#39;s) opnieuw opmaken voordat deze naar de browser worden verzonden
+* Door de server gerenderde HTML aan de rand samenstellen en bedienen met inhoud die vanuit verschillende achtergronden is geplaatst
+
+We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge Delivery Services-projecten voor live productiesites. Als u in het deelnemen geinteresseerd bent of meer wilt leren, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval te e-mailen.
+
+### CDN-configuratie voor Edge Delivery Services (Beta-programma) {#cdn-eds-beta}
+
+Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#configurations).
+
+Nu in een bèta, stel een config pijpleiding voor eigenschappen met inbegrip van CDN oorsprongselectors, reactie en verzoektransformaties, en meer op. Gelieve te bereiken uit aan [ aemcs-cdn-config-adopter@adobe.com ](mailto:aemcs-cdn-config-adopter@adobe.com) met de details van uw gebruiksgeval.
+
+### AEM Log-Forwarding aan Meer Doelen (het Programma van Beta) {#log-forwarding-beta}
 
 Hoewel de logboeken van Cloud Manager kunnen worden gedownload, vinden vele organisaties het nuttig om die logboeken aan een aangewezen registrerenbestemming te stromen. AEM biedt al ondersteuning voor het doorsturen van AEM- en CDN-logbestanden naar Azure Blob Storage, Datadog, HTTPS, Elasticsearch (en OpenSearch) en Splunk. Deze eigenschap wordt gevormd op een zelf-servermanier, en opgesteld gebruikend de Pijpleiding Config.
 
+Nu in bèta kunt u AEM-logs doorsturen naar Amazon S3, Sumo Logic en uw eigen New Relic-account (niet naar het door Adobe verschafte account). Merk op dat de logboeken van AEM (met inbegrip van Apache/Dispatcher) voor deze registrerenbestemmingen, maar niet CDN- logboeken worden gesteund. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) voor toegang.
+
 Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Edge Computing - Verzoek om feedback! {#edge-computing-feedback}
-
-Edge Computing brengt gegevensverwerking dichter bij de browser, wat voordelen heeft, zoals minder latentie. Adobe wil graag weten of deze technologie nuttig is voor AEM Publish Delivery- en Edge Delivery Services-projecten. Bovendien, laat ons weten wat u van plan bent om het als input in de product roadmap te gebruiken.
-
-Sommige gebruiksgevallen:
-
-* Verificatie met een IdP om toegang tot inhoud te verkrijgen
-* Personalization door dynamische inhoud te renderen op basis van geolocatie, apparaattype, gebruikerskenmerken, enz.
-* Geavanceerde beeldmanipulatie
-* Middleware tussen CDN en een oorsprong
-* Een laag tussen de browser en een externe API, bijvoorbeeld om de API-reactie opnieuw op te maken
-* Gegevens van meerdere origines samenvoegen om het voor de clientbrowser eenvoudiger te maken om deze te renderen
-
-E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met vragen en commentaren!
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -222,4 +283,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
