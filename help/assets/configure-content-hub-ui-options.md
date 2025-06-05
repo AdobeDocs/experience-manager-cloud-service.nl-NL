@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1878'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met Experience Manager Assets kunnen beheerders de opties configureren die beschikbaar zijn in de Content Hub-gebruikersinterface. Op basis van de configuratieopties die door de beheerders zijn geselecteerd, kunnen de Content Hub-gebruikers velden weergeven op Content Hub. De configuratieopties omvatten:
 
@@ -156,7 +156,7 @@ Met Content Hub kunnen beheerders filters configureren die worden weergegeven te
 
    >[!NOTE]
    >
-   >Het nieuwe filter wordt alleen op de zoekpagina weergegeven als er in de opslagplaats ten minste één element aanwezig is dat aan de filtercriteria voldoet.
+   >Het nieuwe filter wordt alleen op de zoekpagina weergegeven als er ten minste één element in de opslagplaats aanwezig is dat voldoet aan de filtercriteria.
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elke beschikbare filter, om de etiketten uit te geven of het schrappingspictogram te klikken om het even welk bestaand filter te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
 
@@ -213,25 +213,37 @@ Beheerders kunnen de metagegevensvelden definiëren die worden doorzocht wanneer
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen, zodat de nieuwe eigenschap metadata wordt weergegeven in de lijst met metagegevensvelden.
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elk beschikbaar meta-gegevensbezit, om het bezit uit te geven of het schrappingspictogram te klikken om het even welk bestaand bezit te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
-
 ![ Onderzoek UI van de Configuratie op Content Hub ](assets/configuration-ui-metadata-search.png)
-
 
 ### Branding {#configure-branding-content-hub}
 
-Beheerders kunnen de titel en de tekst van de tekst op de banner van het Content Hub-portaal ook aanpassen aan uw vereisten voor branding. Voer daartoe de volgende stappen uit:
+Als beheerder past u uw [!DNL Content Hub] -portal aan uw vereisten voor branding aan. Voor ![ het Branding ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** paginanummer gebruikt **[!UICONTROL Banner]**, **[!UICONTROL Colors]** en **[!UICONTROL Banner image]** secties om de volgende aanpassingen uit te voeren:
 
-1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Branding]**.
+1. [De bannerafbeelding wijzigen vanuit de sectie [!UICONTROL Banner image]](#Change-the-banner-image)
+1. [Werk de titel en de platte tekst op de banner bij en wijzig de tekstkleur vanuit de sectie [!UICONTROL Banner] .](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [ verander de primaire en secundaire kleur van de [!UICONTROL Colors] sectie om een kleurenregeling toe te passen die zich op het thema van uw merk ](#Change-the-primary-and-secondary-color) richt
 
-1. Geef tekst op in **[!UICONTROL Title text on banner]** - en **[!UICONTROL Body text on banner]** -velden.
+Selecteer de optie **[!UICONTROL Reset Defaults]** om uw wijzigingen terug te draaien en het standaardthema te herstellen.
 
-1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
+#### De bannerafbeelding wijzigen{#Change-the-banner-image}
 
-![ het brandmerken van de Configuratie UI op Content Hub ](assets/configuration-ui-branding.png)
+Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** pagina, voer de volgende stappen uit om het bannerbeeld van uw [!DNL Content Hub] plaatsing te veranderen:
 
-De brandingsupdates die op de vertoning van het Gebruikersinterface van de Configuratie op de portaalbanner van Content Hub worden toegelaten:
+1. Klik ![ uitgezochte beeld ](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** om een bannerbeeld te selecteren gebruikend de doos van de activaselecteur. De elementenkiezer geeft alleen goedgekeurde afbeeldingen weer.
+1. Selecteer de afbeelding, klik op **[!UICONTROL Select]** en klik vervolgens op **[!UICONTROL Save]** om deze weer te geven als de bannerafbeelding van uw [!DNL Content Hub] -implementatie.
 
-![ het brandmerken van de Configuratie UI op Content Hub ](assets/configuration-ui-branding-updates.png)
+#### Voeg titel en lichaamstekst aan uw banner toe en verander de tekstkleur{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** pagina, gebruik de respectieve gebieden in de **[!UICONTROL Banner]** sectie om titel en lichaamsteksten aan uw banner toe te voegen.
+Klik op het vakje naast de **[!UICONTROL Banner text color]** om een tekstkleur te selecteren in de kleurkiezer voor de bannertekst of geef de hexadecimale code van de kleur op in het veld naast het vak van de kleurkiezer.
+
+#### De primaire en secundaire kleur wijzigen{#Change-the-primary-and-secondary-color}
+
+Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** pagina, gebruik de **[!UICONTROL Colors]** sectie om primaire en secundaire kleuren te plaatsen door of hen te selecteren gebruikend kleurenplukker of het bepalen van de hexadecimale code van de kleur. Met deze kleuren worden de achtergrond-, tekst- en pictogramkleuren van UI-elementen zo ingesteld dat de gebruikersinterface van [!DNL Content Hub] wordt uitgelijnd op het thema van uw merk.
+
+**[!UICONTROL Primary color]:** Het primaire kleurenschema is van toepassing op selectiehandelingen, interactieve elementen zoals selectievakjes, zoekbalken en schakelbare schakelopties [!DNL Content Hub] inclusief [!DNL Content Hub] startpagina en [!UICONTROL Configuration] pagina. De klasse is ook van toepassing op actieopties die beschikbaar zijn op primaire [!DNL Content Hub] -interfaces, zoals opties die beschikbaar zijn op **[!UICONTROL All Assets]** - en **[!UICONTROL Collections]** -pagina&#39;s.
+
+**[!UICONTROL Secondary color]:** Op de [!DNL Content Hub] startpagina is het secundaire kleurenschema van toepassing op UI-opties en invoervelden die beschikbaar zijn in dialoogvensters. Deze is van toepassing op alle opties in configuratiemenu die beschikbaar zijn op de pagina van [!UICONTROL Configuration] , met uitzondering van selectiehandelingen, selectievakjes, zoekbalken en schakelopties.
 
 ### Verlopen activa{#expired-assets-content-hub}
 
@@ -261,7 +273,7 @@ Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hu
 
 ### Uitvoeringen {#renditions-content-hub}
 
-Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Voer daartoe de volgende stappen uit:
 
