@@ -3,23 +3,27 @@ title: JSON-LD-metagegevens
 description: Leer hoe u de functie JSON+LD in AEM CIF kunt inschakelen en controleren.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 5fef97e5c0963529aac6d210cb17326864e6d248
+exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
+source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '451'
 ht-degree: 1%
 
 ---
-
 
 # JSON-LD-metagegevens {#json-ld}
 
 In deze handleiding wordt uitgelegd hoe u de functie JSON+LD in AEM CIF kunt inschakelen en controleren.
 
+>[!NOTE]
+>
+> Dit is een experimentele functie.
+
 ## JSON+LD inschakelen in CIF-configuratie {#enabling}
 
 Door gebrek, **laat JSON+LD** checkbox toe is niet zichtbaar in de configuratie van CIF. Om deze eigenschap toe te laten, moet het project de noodzakelijke configuratie OSGi omvatten, die checkbox om toestaat worden getoond. Met deze configuratie kunnen gebruikers JSON+LD-scriptondersteuning op productpagina&#39;s in- en uitschakelen.
-Om **toe te laten JSON+LD** checkbox beschikbaar in de configuratie van CIF, voeg de volgende configuratie OSGi aan uw project toe: &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+Om **toe te laten JSON+LD** checkbox beschikbaar in de configuratie van CIF, voeg de volgende configuratie OSGi aan uw project toe: `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 Voor verdere details bij het toevoegen van deze configuratie, verwijs naar [ toevoegt configuratie voor json-Ld ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) in de openbare aem-cif-guides-venia bewaarplaats.
 
 Zodra deze configuratie wordt toegevoegd en opgesteld, wordt checkbox zichtbaar in de de configuratiemontages van CIF en hier zijn de stappen om **JSON+LD** toe te laten:
