@@ -4,7 +4,8 @@ description: Leer hoe gespecialiseerde testomgevingen in Cloud Manager speciale 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Vroege adoptie" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: 408e472470244c619e09ef58691b1cff7cdd0188
+exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->&#x200B;>De in dit artikel beschreven functie is alleen beschikbaar via het programma voor vroegtijdige goedkeuring. Om omhoog als vroege adopter te ondertekenen, zie [ Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>De in dit artikel beschreven functie is alleen beschikbaar via het programma voor vroegtijdige goedkeuring. Om omhoog als vroege adopter te ondertekenen, zie [ Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 De gespecialiseerde testomgeving (DevXL) is een nieuw type Cloud Manager-omgeving dat u kunt maken. Het is ontworpen om geavanceerde gebruiksgevallen zoals het Testen van de Erkenning van de Gebruiker (UAT) en prestatiesbevestiging te steunen. In tegenstelling tot traditionele Ontwikkeling, Snelle Ontwikkeling, of het Opvoeren van milieu&#39;s, werken de milieu&#39;s DevXL buiten de pijpleiding van de productieplaatsing. Als zodanig bieden ze u meer flexibiliteit terwijl u strikte isolatie behoudt om interferentie met productieworkflows te voorkomen.
 
@@ -53,17 +54,17 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
    Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen zijn.
 
-   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](assets/no-environments.png)
 
-   * Op het linkerzijpaneel, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0&rbrace; &lbrace;, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.
+   * Op het linkerzijpaneel, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0} {, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.![
 
      ![ Milieu&#39;s tabel ](assets/environments-tab.png)
 
 1. In **voeg milieu** dialoogdoos toe, doe het volgende:
 
-   * Klik [**Gespecialiseerde Milieu van de Test**](#environment-types).
+   * Klik **Gespecialiseerde het Testen Milieu**.
    * Verstrek een milieu **Naam**. De naam van de omgeving kan niet worden gewijzigd nadat de omgeving is gemaakt.
    * (Facultatief) verstrek a **Beschrijving** voor het milieu.
    * Selecteer a **Primair gebied** van de drop-down lijst. Zodra gecreeerd, is het primaire gebied van het milieu DevXL (bijvoorbeeld, *Verenigde Staten (Westen US)*) gesloten en kan niet worden veranderd.
@@ -72,5 +73,4 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. Klik **sparen**.
 
-   De **pagina van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
-
+   De **pagina van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.

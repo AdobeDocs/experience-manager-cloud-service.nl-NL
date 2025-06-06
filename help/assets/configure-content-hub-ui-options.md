@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met Experience Manager Assets kunnen beheerders de opties configureren die beschikbaar zijn in de Content Hub-gebruikersinterface. Op basis van de configuratieopties die door de beheerders zijn geselecteerd, kunnen de Content Hub-gebruikers velden weergeven op Content Hub. De configuratieopties omvatten:
 
@@ -113,9 +113,7 @@ Als beheerder, beheer de volgende configuratieopties voor uw gebruikers:
 
 * [Aangepaste koppelingen](#configure-custom-links-content-hub)
 
-* [Beheer van verzamelingen](#configure-collections-content-hub)
-
-* [Delen van openbare koppelingen inschakelen](#enable-public-link-sharing)
+* [Verzamelingen en delen](#configure-collections-sharing-content-hub)
 
 ### Importeren {#configure-import-options-content-hub}
 
@@ -277,7 +275,7 @@ Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hu
 
 ### Uitvoeringen {#renditions-content-hub}
 
-Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Voer daartoe de volgende stappen uit:
 
@@ -313,9 +311,9 @@ De aangepaste koppeling wordt weergegeven als een nieuw tabblad naast het tabbla
 
 ![ UI van de Configuratie de lusjes van de Verbindingen van de Douane op Content Hub ](assets/configuration-ui-custom-link-tab.png)
 
-### Beheer van verzamelingen {#configure-collections-content-hub}
+### Verzamelingen en delen {#configure-collections-sharing-content-hub}
 
-Beheerders kunnen gebruikersmachtigingen definiëren wanneer ze verzamelingen maken. Voer de volgende stappen uit om deze instellingen in te schakelen:
+Beheerders kunnen gebruikersmachtigingen definiëren tijdens het maken van verzamelingen en Content Hub-gebruikers toestaan een openbare koppeling te maken. Voer de volgende stappen uit om deze instellingen in te schakelen:
 
 1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Collections and sharing]**.
 
@@ -323,18 +321,11 @@ Beheerders kunnen gebruikersmachtigingen definiëren wanneer ze verzamelingen ma
 
 1. Schakel de schakeloptie **[!UICONTROL Public Collections]** in om verzamelingen toe te staan die voor iedereen toegankelijk en bewerkbaar zijn.
 
+1. Schakel de schakeloptie **[!UICONTROL Enable Public Link]** in om Content Hub-gebruikers een openbare koppeling te laten genereren.
+
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
-   ![ het lusje van de Inzamelingen van de Configuratie op Content Hub ](assets/configuration-collections-tab.png)
+   ![ het lusje van de Inzamelingen van de Configuratie op Content Hub ](assets/collections-link-sharing.png)
 
-### Delen van openbare koppelingen inschakelen {#enable-public-link-sharing}
 
-Schakel de volgende instelling in de gebruikersinterface van Configurations in zodat Content Hub-gebruikers een openbare koppeling kunnen genereren:
-
-1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Collections and Sharing]**.
-
-1. Schakel de schakeloptie **[!UICONTROL Enable Public Link]** in en klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
-
-   ![ laat openbare verbinding toe delend in Content Hub ](assets/enable-public-link-sharing-tab.png)
-
-Leer meer over [ delend activa in  [!DNL Content Hub]](share-assets-content-hub.md).
+   Voor meer informatie over inzamelingen en het delen van activa, zie [ inzamelingen in Content Hub ](/help/assets/collections-content-hub.md) beheren en [ delend activa in  [!DNL Content Hub]](share-assets-content-hub.md).
