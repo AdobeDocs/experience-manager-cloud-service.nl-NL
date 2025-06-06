@@ -4,7 +4,7 @@ description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramm
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
+source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Ontdek waarom je op je Edge Delivery Services-site naar Cloud Manager moet gaan.
->&#x200B;>Zie [ Voordelen om de Adobe geadviseerde weg voor Edge Delivery Services ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) te gebruiken.
+>>Zie [ Voordelen om de Adobe geadviseerde weg voor Edge Delivery Services ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds) te gebruiken.
 
 **om een plaats van Edge Delivery aan Cloud Manager toe te voegen:**
 
@@ -40,10 +40,10 @@ Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
    | Tekstveld | Beschrijving |
    | - | --- |
    | Sitenaam | Voer de naam in van de Edge Delivery-site die u toevoegt.<br> de naam dient als uniek herkenningsteken voor de plaats binnen Cloud Manager. |
-   | Oorsprong Edge Delivery | Deze waarde geeft het URL-pad aan naar de inhoudsbron voor uw site in Edge Delivery Services. Cloud Manager wordt ook gekoppeld aan uw livesite.<br> URL omvat typisch de *tak*, *project*, en *huurder*, zoals in het volgende voorbeeld (voor illustratiedoeleinden slechts):<br>`https://main--projectname--tenant.aem.live` |
+   | Edge Delivery-oorsprong | Deze waarde geeft het URL-pad aan naar de inhoudsbron voor uw site in Edge Delivery Services. Cloud Manager wordt ook gekoppeld aan uw livesite.<br> URL omvat typisch de *tak*, *project*, en *huurder*, zoals in het volgende voorbeeld (voor illustratiedoeleinden slechts):<br>`https://main--{site}--{org}.aem.live` |
    | Sitebeschrijving (optioneel) | Voer een korte beschrijving in van de Edge Delivery-site die u toevoegt.<br> de beschrijvingshulp van A om de plaats te identificeren en te onderscheiden, die het gemakkelijker maken om onder andere plaatsen te beheren en te erkennen u hebt toegevoegd. |
 
-1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **&#x200B;**&#x200B;toe.
+1. In de laag-juiste hoek van de dialoogdoos, voegt de klik **** toe.
 
 1. In **verifieer het bezit van de bewaarplaats** dialoogdoos, verifieer de eigendom van uw bewaarplaats door de volgende stappen te doen:
 
