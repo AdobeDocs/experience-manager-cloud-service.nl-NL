@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.6.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -59,15 +59,6 @@ Neem deel aan het Cloud Manager-programma voor vroege adoptie om exclusieve toeg
 Momenteel zijn de volgende mogelijkheden voor vroege adoptie beschikbaar:
 
 
-### Toegangstokens beheren{#manage-access-tokens}
-
-Het gebruik **beheert de Tokens van de Toegang** in Cloud Manager aan mening, hernoemt, en schrapt toegangstokens verbonden aan extern breng Uw Eigen bewaarplaatsen van het Git, zoals Onderneming GitHub, GitLab, Bitbucket, en Azure DevOps.
-
-Zie [ Toegangstokens beheren ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-
-Als je geïnteresseerd bent in het testen van deze nieuwe functie en het delen van je feedback, stuur je een e-mail naar van je e-mailadres dat bij je Adobe ID hoort.
-
-
 ### Speciale testomgeving {#specialized-test-environment}
 
 Cloud Manager steunt nu de toevoeging van een nieuw milieutype genoemd **Gespecialiseerde het Testen Milieu**. De omgeving is ontworpen om teams te helpen functies onder bijna-productieomstandigheden te valideren voordat ze live gaan. Dit omgevingstype is verschillend van *Productie + Stadium*, *Ontwikkeling*, of *Snelle Ontwikkeling* milieu&#39;s en biedt een geconcentreerde ruimte voor het runnen van geavanceerde bevestigingsscenario&#39;s aan.
@@ -79,7 +70,7 @@ Zie [ een Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ grp-earlyadopter_cs_advtestenvironment@adobe.com ](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
 
 
-### Kies voor uw eigen git - nu met ondersteuning voor Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Kies voor uw eigen git (BYOG) - nu met ondersteuning voor Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -97,7 +88,7 @@ Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
 
 
-#### Veelgestelde vragen over Je eigen gang maken
+**vaak gestelde vragen over BYOG**
 
 | Vraag | Antwoord |
 |---|---|
@@ -107,11 +98,20 @@ Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt 
 | *Werken al bewaarplaats GitLab URLs? De repository URL in gebruik volgt de notatie `https://gitlab_dedicated_url.com/path/repo-name.git` , die afwijkt van het voorbeeld in de documentatie.* | Ja, om het even welke bewaarplaats GitLab die API V3 of V4 steunt wordt gesteund, met inbegrip van zelf-ontvangen GitLab URLs als die in [ wordt beschreven voeg externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toe (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
+#### Toegangstokens beheren{#manage-access-tokens}
+
+Het gebruik **beheert de Tokens van de Toegang** in Cloud Manager aan mening, hernoemt, en schrapt toegangstokens verbonden aan externe bewaarplaatsen BYOG, zoals Onderneming GitHub, GitLab, Bitbucket, en Azure DevOps.
+
+Zie [ de Tokens van de Toegang beheren ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
+
+
 ### Edge Delivery Config Pipet toevoegen {#add-eds-pipeline}
 
 Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services zijn gebouwd en deze mogelijkheid uitbreiden tot buiten de Cloud Service-omgevingen. U kunt **Pijpleidingen Config** gebruiken om montages zoals verkeer het filtreren regels en configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 
