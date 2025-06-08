@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2062'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets integreert native met Figma, waardoor ontwerpers rechtstreeks vanuit 
 
 **Op attributen-Gebaseerd Toegangsbeheer (ABAC)**
 
-Met Content Hub kunt u nu op regels gebaseerde beperkingen toepassen op toegang tot elementen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
+[ Content Hub staat nu u toe om op regel-gebaseerde beperkingen op toegangsactiva ](/help/assets/attribute-based-access-control.md) toe te passen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
 
 De regels voor het beperken van elementen zijn gebaseerd op metagegevens en als de voorwaarden die in de regel zijn gedefinieerd overeenkomen met de metagegevens van het element, wordt het element weergegeven aan de gebruikersgroepen.
 
@@ -78,21 +78,21 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 **het Brandmerken UI**
 
-In Content Hub kunnen beheerders nu de gebruikersinterface aanpassen met merkspecifieke elementen, zoals bannerafbeeldingen, bannertitels en platte tekst, en met primaire en secundaire kleuren. Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
+Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen. [ Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
 
 ![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
 
 **Openbare verbinding delend**
 
-Content Hub ondersteunt nu het genereren van deelbare koppelingen, zodat externe gebruikers zonder toegang tot de toepassing metagegevens van middelen kunnen bekijken of elementen kunnen downloaden.
+Content Hub steunt nu [ het produceren van shareable verbindingen om externe gebruikers ](/help/assets/share-assets-content-hub.md##share-assets), zonder toepassingstoegang toe te staan, om activa meta-gegevens of downloadactiva te bekijken.
 
 ![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
 
 **het bestuur van Inzamelingen**
 
-Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren, zodat alleen geautoriseerde gebruikers gegroepeerde elementen kunnen weergeven of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
+Content Hub laat u [ nu toegang tot inzamelingen tijdens verwezenlijking controleren, die slechts erkende gebruikers verzekeren kan gegroepeerde activa ](/help/assets/collections-content-hub.md##create-collections) bekijken of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
 
-![ het bestuur van Inzamelingen ](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren
 
 **Download veelvoudige activa als ZIP**
 
-Met Content Hub kunt u nu ook de geselecteerde elementen en de bijbehorende uitvoeringen downloaden in een ZIP-bestand en niet als afzonderlijke bestanden die het bestandsbeheer voor u vereenvoudigen.
+Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT ](/help/assets/download-assets-content-hub.md#download-asset-renditions) en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.[
 
 **Dynamische vertoningen van Media in Content Hub**
 
-Open al uw dynamische vooraf ingestelde vertoningen van Media en slimme gewassen voor download, direct van binnen de Gebruikersinterface van Content Hub.
+Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en slim-gewassen voor download, direct van binnen het Gebruikersinterface van Content Hub ](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
 &#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Open al uw dynamische vooraf ingestelde vertoningen van Media en slimme gewassen
 
 **Dynamische integratie van Media inheemse met de &#x200B; van AJO B2C**
 
-Native integratie van Experience Manager (AEM) Dynamic Media met Journey Optimizer (AJO) B2C, waardoor marketers AEM Dynamic Media-elementen (uitvoering en DM-sjabloon) gemakkelijk kunnen insluiten in AJO-inhoud en real-time updates en hyperpersoonlijke ervaringen via kanalen kunnen bieden.
+[ Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
 
-&#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -134,7 +134,7 @@ Native integratie van Experience Manager (AEM) Dynamic Media met Journey Optimiz
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
@@ -263,7 +263,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -283,4 +283,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
