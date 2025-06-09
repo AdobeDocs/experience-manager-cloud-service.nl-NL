@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
+source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
 workflow-type: tm+mt
-source-wordcount: '9687'
+source-wordcount: '9905'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,6 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
    * Video-elementen voorvertonen en publiceren
 
       * Bekijk de bronvideo en de gecodeerde vertoningen van de video samen met de bijbehorende miniaturen:
-
         [ de video&#39;s van de Voorproef ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) of [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md)
         [ beheer videovertoningen ](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
    * Werken met videometagegevens
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
-
         [ geef videoeigenschappen ](/help/assets/manage-digital-assets.md#editing-properties) uit
 
       * [Metagegevens voor digitale elementen beheren](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
    * Als u een WCM-systeem van derden gebruikt, kunt u video&#39;s aan uw webpagina&#39;s koppelen of insluiten.
 
       * Video integreren met URL:
-
         [ Verbinding URLs aan uw Webtoepassing ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Video integreren met behulp van ingesloten code op een webpagina:
-
         [ bedt de videokijker op een Web-pagina ](/help/assets/dynamic-media/embed-code.md) in.
 
    * [ produceer videorapporten ](#viewing-video-reports).
@@ -135,7 +131,7 @@ Bij het beheren van enkelvoudige video en Adaptieve videosets wordt het volgende
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web en desktops, tablets en mobiele apparaten.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie {de Gids van de Verwijzing van de Kijkers van 0} Dynamische Media [&#128279;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie {de Gids van de Verwijzing van de Kijkers van 0} Dynamische Media ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).[
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor Experience Manager Assets slechts ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in de [ Dynamische Gids van de Verwijzing van de Kijkers van Media ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources).
+Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor Experience Manager Assets slechts ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in de [ Dynamische Gids van de Verwijzing van de Kijkers van Media ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Tips en trucs: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de br
 
 U kunt de mogelijkheid om afspeelcomponenten te ontwerpen met HTML5 en CSS combineren tot één speler. Het kan het afspelen ingesloten hebben en adaptief en progressief streamen gebruiken, afhankelijk van de mogelijkheden van de browser. Al deze functionaliteit betekent dat u het bereik van uw rijke media-inhoud kunt uitbreiden naar zowel gebruikers op het bureaublad als mobiele gebruikers en een gestroomlijnde videobeleving kunt garanderen.
 
-Zie ook [ Kijkers voor Experience Manager Assets slechts ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in de [ Dynamische Gids van de Verwijzing van de Kijkers van Media ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources).
+Zie ook [ Kijkers voor Experience Manager Assets slechts ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in de [ Dynamische Gids van de Verwijzing van de Kijkers van Media ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH is de internationale standaard en HLS is een Apple-standaard. Beide worden 
 
 Progressieve video wordt geleverd door de video lokaal te downloaden en op het desktopsysteem of mobiele apparaat van de gebruiker op te slaan.
 
-De volgende lijst beschrijft het apparaat, browser, en playbackmethode van video&#39;s op Desktopcomputers en mobiele apparaten gebruikend de [ Dynamische Media HTML5 VideoKijker ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+De volgende lijst beschrijft het apparaat, browser, en playbackmethode van video&#39;s op Desktopcomputers en mobiele apparaten gebruikend de [ Dynamische Media HTML5 VideoKijker ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=nl-NL).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -540,7 +536,7 @@ Een aantal van de gebruiksscenario&#39;s die u moet overwegen om meerdere bijsch
 |  | Commentaartracks |
 |  | Beschrijvende audio |
 
-Alle [ video formaten die in Dynamische Media ](/help/assets/file-format-support.md) worden gesteund en alle Dynamische videokijkers van Media - behalve de Dynamische 2&rbrace; Video_360 *kijker van Media - worden gesteund voor gebruik met veelvoudige titels en audiosporen.*
+Alle [ video formaten die in Dynamische Media ](/help/assets/file-format-support.md) worden gesteund en alle Dynamische videokijkers van Media - behalve de Dynamische 2} Video_360 *kijker van Media - worden gesteund voor gebruik met veelvoudige titels en audiosporen.*
 
 ### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
 
@@ -560,12 +556,12 @@ Toegevoegde bijschriften worden ondersteund door de indelingen WebVTT en Adobe V
 1. [ uploadt uw primaire video aan een omslag ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) die reeds een videoprofiel heeft dat aan het wordt toegewezen.
 1. Navigeer naar het geüploade video-element waaraan u meerdere bijschriften en audiotracks wilt toevoegen.
 1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
-1. Voor de toolbar, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0&rbrace;.
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
    ![ Geselecteerde videoactiva met controleteken over videoduimnagelbeeld en Eigenschappen van de Mening die op de toolbar worden benadrukt.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerde videoactiva in de Mening van de Kaart.*
-1. Selecteer de tab **[!UICONTROL Captions & Audio Tracks]** op de pagina Eigenschappen van video.
+1. Selecteer de tab **[!UICONTROL Captions & Audio tracks]** op de pagina Eigenschappen van video.
 
    >[!TIP]
-   >Als u het tabblad **[!UICONTROL Captions & Audio Tracks]** niet ziet, betekent dit een van de volgende twee dingen:
+   >Als u het tabblad **[!UICONTROL Captions & Audio tracks]** niet ziet, betekent dit een van de volgende twee dingen:
    >
    >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In welk geval, zie [ een videoprofiel op de omslag ](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders) toepassen
    >* Of dynamische media moeten de video opnieuw verwerken. In welk geval, zie [ Dynamische activa van Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
@@ -609,7 +605,7 @@ Toegevoegde bijschriften worden ondersteund door de indelingen WebVTT en Adobe V
 
    1. Klik rechtsboven op de pagina op **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]** .
    1. Navigeer naar en selecteer een of meer van uw bestaande `.vtt` -bestanden en open deze.
-   1. Voor titels om op de media speler zichtbaar te zijn, moet u **&#x200B; de vereiste details over *toevoegen elk* titeldossier dat u uploadt. Klik ![ trekken pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts van een naam van het titeldossier. In &#x200B;** geef de dialoogdoos van de Titel** uit, ga de volgende vereiste details over het dossier in:
+   1. Voor titels om op de media speler zichtbaar te zijn, moet u ** de vereiste details over *toevoegen elk* titeldossier dat u uploadt. Klik ![ trekken pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) rechts van een naam van het titeldossier. In **geef de dialoogdoos van de Titel** uit, ga de volgende vereiste details over het dossier in:
 
       | Metagegevens bijschrift | Beschrijving |
       |--- |--- |
@@ -642,7 +638,7 @@ Toegevoegde bijschriften worden ondersteund door de indelingen WebVTT en Adobe V
 
       | Optie | Beschrijving |
       |--- |--- |
-      | Om te zetten audiotrack | Klik op het pictogram Omlaag controleren ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) en kies vervolgens het geüploade audiotrackbestand waaruit u bijschriften wilt genereren met behulp van AI. |
+      | Om te zetten audiotrack | Klik op het pictogram Omlaag controleren ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) en kies vervolgens het geüploade audiotrackbestand waaruit u bijschriften wilt genereren met behulp van AI.![ |
       | Uitvoertalen | Klik ![ onderaan pictogram van de Verduistering ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), dan selecteer één of meerdere talen waarin u het titeldossier wilt verschijnen.<br> om een geselecteerde taal te verwijderen, klik ![ dicht pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br> tijdens videoplayback, verschijnt de lijst van talen in de media speler in de orde dat u hen hier selecteert. |
 
    1. Klik op **[!UICONTROL Done]**.
@@ -676,7 +672,7 @@ Toegevoegde bijschriften worden ondersteund door de indelingen WebVTT en Adobe V
 
       | Optie | Beschrijving |
       |--- |--- |
-      | Te vertalen bijschrift | Klik op het pictogram Omlaag controleren ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) en kies vervolgens een bijschriftbestand waaruit u de bijschriften wilt genereren met behulp van AI. |
+      | Te vertalen bijschrift | Klik op het pictogram Omlaag controleren ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) en kies vervolgens een bijschriftbestand waaruit u de bijschriften wilt genereren met behulp van AI.![ |
       | Uitvoertalen | Klik ![ onderaan pictogram van de Verduistering ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), dan selecteer één of meerdere talen waarin u het titeldossier wilt verschijnen.<br> om een geselecteerde taal te verwijderen, klik ![ dicht pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br> tijdens videoplayback, verschijnt de lijst van talen in de media speler in de orde dat u hen hier selecteert. |
 
    1. Klik op **[!UICONTROL Done]**.
@@ -717,7 +713,7 @@ In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publicere
 
 >[!CAUTION]
 >
->Wanneer u titeldossiers of audiodossiers aan een video uploadt die of gepubliceerd of unpublished is, worden de dossiers geschrapt als u [*&#128279;*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) de video opnieuw verwerkt. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de bijschriftbestanden en audiotrackbestanden opnieuw uploaden naar de video.
+>Wanneer u titeldossiers of audiodossiers aan een video uploadt die of gepubliceerd of unpublished is, worden de dossiers geschrapt als u [**](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) de video opnieuw verwerkt. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de bijschriftbestanden en audiotrackbestanden opnieuw uploaden naar de video.
 
 #### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
 
@@ -732,6 +728,35 @@ Meerdere bijschriftwijzigingen hebben voorrang op een bijschrift dat is toegevoe
 1. Publiceer de video op de gebruikelijke wijze.
 De bestaande URL met de optie caption kan nu meerdere bijschriften laden.
 
+
+### Ondertiteling van video bewerken
+
+U kunt ondertitels (bijschriften) voor video-elementen rechtstreeks bewerken in de gebruikersinterface van Dynamische media. Met deze functie kunt u naadloos ondertitelingsbestanden, voorvertoningsupdates en publicatiewijzigingen van `.vtt` bewerken.
+
+* Wanneer ondertitels worden gepubliceerd, worden alle wijzigingen automatisch gesynchroniseerd en gepubliceerd.
+* Als bewerkingsfouten optreden en u de ondertitels opnieuw moet genereren:
+   * Verwijder het bestaande ondertitelingsbestand.
+   * Optie 2 van het gebruik (de Sporen van de Audio van de Bekeerling) in stap 7 van [ voegt veelvoudige titels en audiosporen aan uw video ](#add-msma) toe.
+   * Klik **sparen** of **sparen &amp; sluit** om een nieuw ondertiteldossier te produceren.
+* De voorvertoning van de ondertitel in de editor is alleen bedoeld voor bewerking en geeft niet aan hoe de ondertitels in de uiteindelijke gebruikersinterface voor het afspelen van video worden weergegeven.
+
+**om videoondertitels uit te geven:**
+
+1. Navigeer naar het video-element waarvan u de ondertitels wilt bewerken.
+1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
+1. Selecteer op de pagina Eigenschappen de tab **[!UICONTROL Captions & Audio tracks]** .
+1. Onder de **rubriek van Bijschriften**, klik ![ pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) rechts van een naam van het titeldossier.
+
+   ![ het Edit pictogram van de Ondertitel onder de rubriek van Bijschriften ](/help/assets/dynamic-media/assets/msma-editcaption.png)
+
+1. In **geef de dialoogdoos van de Ondertitel** uit, geef de tekst in het WebVTT dossier zonodig uit.
+
+   ![ geef de dialoogdoos van de Ondertitel uit ](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+
+1. In de laag-juiste hoek van de dialoogdoos, klik **sparen**.
+
+
 ### De levenscyclusstatus van geüploade bijschriften en audiotrackbestanden weergeven {#lifecycle-status-video}
 
 U kunt de levenscyclusstatus bekijken van elk bijschrift of audiotrackbestand dat naar uw primaire video is geüpload. U kunt dit van **Bijschriften &amp; Audiosporen** lusje van **Eigenschappen** doen.
@@ -740,8 +765,8 @@ U kunt de levenscyclusstatus bekijken van elk bijschrift of audiotrackbestand da
 
 1. Navigeer naar het video-element waarvan u de levenscyclusstatus wilt weergeven.
 1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
-1. Voor de toolbar, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0&rbrace;.
-1. Voor de **pagina van Eigenschappen**, selecteer het **[!UICONTROL Captions & Audio Tracks]** lusje.
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
+1. Voor de **pagina van Eigenschappen**, selecteer het **[!UICONTROL Captions & Audio tracks]** lusje.
 1. Noteer in de kolom **[!UICONTROL Status]** de status van elk bijschrift of audiobestand.
 
 | Status van bijschriften en audiotracks | Beschrijving |
@@ -757,7 +782,7 @@ U kunt de levenscyclusstatus bekijken van elk bijschrift of audiotrackbestand da
 
 Standaard wordt de oorspronkelijke audio van een video ingesteld als de standaardaudio die moet worden afgespeeld.
 
-Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardaudio die moet worden afgespeeld nadat een video in de viewer is geladen. In het gebruikersinterface van Eigenschappen, onder het **Bijschriften &amp; Audiosporen** lusje, wordt het `Default` etiket toegepast rechts van het audiospoordossier voor videoplayback.
+Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardaudio die moet worden afgespeeld nadat een video in de viewer is geladen. In het gebruikersinterface van Eigenschappen, onder het **Captions &amp; Audio sporen** lusje, wordt het `Default` etiket toegepast rechts van het audiospoordossier voor videoplayback.
 
 >[!NOTE]
 >
@@ -770,8 +795,8 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
-1. Voor de toolbar, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0&rbrace;.
-1. Selecteer op de pagina Eigenschappen de tab **[!UICONTROL Captions & Audio Tracks]** .
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
+1. Selecteer op de pagina Eigenschappen de tab **[!UICONTROL Captions & Audio tracks]** .
 1. Onder de **Audiosporen** rubriek, selecteer het audiospoordossier dat u als gebrek van de video wilt plaatsen.
 1. Klik ![ Audiopictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Set as default]**.
 1. In de **Reeks als standaard** dialoogdoos, klik **[!UICONTROL Replace]**.
@@ -785,7 +810,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 
 Nadat bijschriftbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u met de Dynamic Media-videoviewer een voorvertoning van alle verschillende tracks weergeven. Zo kunt u zien hoe de video er uitziet en hoe de video er voor de klant uitziet en zorgt u ervoor dat de video zich naar behoren gedraagt.
 
-Wanneer u met de video wordt tevreden, kunt u het [&#128279;](publishing-dynamicmedia-assets.md) publiceren gebruikend om het even welke volgende methodes.
+Wanneer u met de video wordt tevreden, kunt u het ](publishing-dynamicmedia-assets.md) publiceren gebruikend om het even welke volgende methodes.[
 
 Zie [ de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/dynamic-media/embed-code.md) inbedden.
 Zie [ Verbinding URLs aan uw Webtoepassing ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
@@ -803,7 +828,7 @@ Zie [ Dynamische Media Assets aan pagina&#39;s ](/help/assets/dynamic-media/addi
 
    ![ drop-down lijst die de optie van Kijkers toont.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. Vlak de upper-left hoek van de pagina, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) het Linkerpictogram van 0&rbrace; Spoorstaaf ![ Bekijken onderaan pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), dan selecteer een kijker die u voor de videovoorproef wilt gebruiken.
+1. Vlak de upper-left hoek van de pagina, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) het Linkerpictogram van 0} Spoorstaaf ![ Bekijken onderaan pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), dan selecteer een kijker die u voor de videovoorproef wilt gebruiken.![
 
 1. Klik in de rechterbenedenhoek van de pagina op het pictogram met de spraakballon en selecteer vervolgens de audio of ondertitel/bijschrift die u wilt horen, of zien, of beide.
 
@@ -824,8 +849,8 @@ De oorspronkelijke audiotrack die uit een primaire video is geëxtraheerd, kan n
 
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
-1. Voor de toolbar, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0&rbrace;.
-1. Selecteer op de pagina Eigenschappen de tab **[!UICONTROL Captions & Audio Tracks]** .
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
+1. Selecteer op de pagina Eigenschappen de tab **[!UICONTROL Captions & Audio tracks]** .
 1. Voer een van de volgende handelingen uit:
 
    * De titels - onder de **rubriek van de Bijschriften**, selecteren één of meerdere titeldossiers die u van de video wilt schrappen, dan klikken ![ pictogram van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Delete]**.
@@ -846,8 +871,8 @@ De oorspronkelijke audiotrack die uit een primair videobestand is gehaald, kan n
 
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
-1. Voor de toolbar, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0&rbrace;.
-1. Voor de **pagina van Eigenschappen**, selecteer het **[!UICONTROL Captions & Audio Tracks]** lusje.
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
+1. Voor de **pagina van Eigenschappen**, selecteer het **[!UICONTROL Captions & Audio tracks]** lusje.
 1. Voer een van de volgende handelingen uit:
 
    * Bijschriften - onder de **rubriek van de Bijschriften**, selecteer één of meerdere titeldossiers die u van de video wilt downloaden, dan klik ![ pictogram van de Download ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
@@ -891,7 +916,7 @@ Zie ook [ Toegankelijkheid in Dynamische Media ](/help/assets/dynamic-media/acce
 
 Met dynamische media kunnen bijschriftbestanden worden omgezet in de JSON-indeling (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud dan verkennen of indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
-Zie [ Servend statische (niet beeld) inhoud ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) voor meer informatie over het gebruiken van de functie JSON in een URL.
+Zie [ Servend statische (niet beeld) inhoud ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) voor meer informatie over het gebruiken van de functie JSON in een URL.
 
 **om titels aan een video toe te voegen:**
 
@@ -1033,7 +1058,7 @@ De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat 
 
 1. Navigeer naar een geüpload video-element waarvan u de miniatuurafbeelding wilt wijzigen.
 1. Op de wijze van de activaselectie, of van ![ het kaartpictogram van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (de Mening van de Kaart) of ![ het pictogram van de Lijst van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (de Mening van de Lijst), selecteer de videoactiva.
-1. Voor de toolbar, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0&rbrace;.
+1. Voor de toolbar, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschappen van het pictogram van Info 0}.![
 1. Klik op **[!UICONTROL Change Thumbnail]** op de pagina Eigenschappen van video.
 1. Voer een van de volgende handelingen uit in het dialoogvenster Miniatuur wijzigen:
 
@@ -1510,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1572,11 +1597,11 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
    ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 
 
    >[!TIP]
-   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >If you do not see the [!UICONTROL Captions & Audio tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
