@@ -4,9 +4,9 @@ description: Leer over het vermogen van de Uitbreidbaarheid UI van  [!DNL AEM As
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,10 @@ U kunt uw uitbreidingen aan **Activa** toevoegen, **Omslag** en **het niveau van
 >[!IMPORTANT]
 >
 > * [!DNL AEM Assets View] De uitbreidbaarheid van de gebruikersinterface is beschikbaar in [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md) .
-> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * U kunt documentfeedback opgeven door **[!UICONTROL Detailed Feedback options]** uit te vouwen en op **[!UICONTROL Report an issue]** te klikken.
 
-## <a id="1"></a> Toegang tot de Assets-weergave{#add-UI-Extensibility-in-AEM-Assets-View}
+## <a id="1"></a> Toegang tot de weergave Assets {#add-UI-Extensibility-in-AEM-Assets-View}
 
 Voer de stappen in de onderstaande afbeelding uit om het dialoogvenster [!DNL Assets View] te openen:
 ![ toegang-activa-mening-ui ](/help/assets/assets/access-assets-view.jpg)
@@ -85,3 +85,11 @@ Voldoe aan de volgende vereisten om de uitbreidbaarheidscomponent aan uw [!DNL A
 1. Stel uw lokale omgeving in en maak uw eerste UI-extensie zodat u een eerste ervaring hebt met het ontwikkelen van UI-extensies in [!DNL Assets View] . Zie [ geleidelijke de Ontwikkeling van de Uitbreiding van de Uitbreiding van de Mening van AEM Assets ](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) voor meer details.
 1. Stel uw toepassing in met behulp van de AIO CLI om de basisextensiestructuur en de vereiste code te genereren. Zie [ codegeneratie voor  [!DNL AEM Assets View] ](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) voor gedetailleerde informatie.
 1. Test uw extensies lokaal om te controleren of ze werken zoals u had verwacht vóór de implementatie. Voer de extensie uit in een volledig geïsoleerde omgeving of met gedeeltelijke isolatie en sluit de extensie aan op de productie [!DNL AEM Assets View] voor testdoeleinden. Zie [ het Oplossen van problemen -  [!DNL AEM Assets View]  rekbaarheid ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) voor gedetailleerde informatie.
+
+## Snelle handelingen en actiebalk aanpassen in de Assets-weergave {#customize-quick-actions-and-actions-bar}
+
+U kunt de acties aanpassen die worden weergegeven wanneer u een of meer elementen (actiebalk) selecteert in de weergave Assets. In de weergave Assets kunt u ook de acties aanpassen die worden weergegeven wanneer u op Meer opties (...) op de kaart klikt. Voor meer informatie, zie [ Bladeren Mening ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Aangepaste dialoogvensters openen in de Assets-weergave {#open-custom-dialogs-assets-view}
+
+In de Assets-weergave kunt u ook aangepaste dialoogvensters openen met tekst naar keuze. U kunt ook koppelingen naar de tekst toevoegen. Voor meer informatie, zie [ Modal API ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
