@@ -3,7 +3,7 @@ title: Dynamic Media Prime en Ultimate
 description: Meer weten over Dynamic Media Prime en Ultimate, de voordelen ervan en de verschillen tussen beide?
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 6%
@@ -42,16 +42,16 @@ De dynamische Media Ultimate is de activeringsdienst voor Experience Manager Ass
 
 Dynamic Media Ultimate biedt naast de functies van Dynamic Media Prime, zoals de integratie van AEM Assets met Adobe- of niet-Adobe-toepassingen, transformatie (roteren, uitsnijden, spiegelen, formaat, voorkeur, hoogte, breedte, kwaliteit) en geoptimaliseerde levering ook:
 
-* [ Dynamische Media met 1&rbrace; mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
+* [ Dynamische Media met 1} mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
 
    * Veilige levering van activa,
-   * [ het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) vooraf in.
+   * [ het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) vooraf in.
 
 * [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
 
    * [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [ Visuele Configuratie ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [ Visuele Configuratie ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Vereisten {#pre-requisites-dm-ultimate}
 

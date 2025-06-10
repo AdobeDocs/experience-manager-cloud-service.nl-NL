@@ -3,9 +3,9 @@ title: Asset Selector integreren met de open API voor dynamische media
 description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -206,6 +206,10 @@ Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur 
 * **F**: [ Sorterend in het stijgen of dalende orde ](#sorting)
 * **G**: Cancel Selectie
 * **H**: Selecteer enige of veelvoudige activa
+
+>[!NOTE]
+>
+>Mappen worden alleen ondersteund wanneer verbinding wordt gemaakt met de opbergplaats voor auteurs en niet met Dynamic Media met de OpenAPI-opslagruimte.
 
 >[!MORELIKETHIS]
 >
