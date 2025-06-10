@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
+source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
@@ -16,82 +16,45 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 21005 {#21005}
+## Release 21193 {#21193}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21005 samengevat, die op 27 mei 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd uitgebracht in 20626.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21193 samengevat, die op 10 juni 2025 openbaar werd gemaakt. De vorige onderhoudrelease werd in 2005 gepubliceerd.
 
-De activering van de 2025.5.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.6.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-21005}
+### Verbeteringen {#enhancements-21193}
 
-* GRANITE-58927: Verbeteringen in de schakeloptie Semantische zoekopdracht.
-* GRANITE-58800: Update of Apache Commons Collections to version 4.5.0.
-* GRANITE-58866: Bijwerking van Oak tot 1.80.0.
-* SKYOPS-106509: Verbeterde GSON-compatibiliteit via reflectieve toegang in Java 21.
-* SKYOPS-107761: Update of Sling Models Jackson Exporter to 1.1.6.
-* SKYOPS-107813: Update aan Sling ResourceResolver 1.12.8.
+* ASSETS-51245: betere prestaties voor grote mappenlijsten in de Touch-gebruikersinterface.
+* ASSETS-51686: Verbeteringen aan bulkbewerkingstaak, met inbegrip van gemakkelijkere baanannulering, verbeterde logboekregistratie, controledownloads voor grote resultaten.
+* CQ-4360131: Verbeterde foutreactie voor OpenAPI-eindpunten waardoor API-clients correcte gestructureerde foutinformatie kunnen ontvangen.
 
-### Opgeloste problemen {#fixed-issues-21005}
+### Opgeloste problemen {#fixed-issues-21193}
 
-* CNTBF-443: Fixed SearchSlingJob `EVENT_JOB_TOPIC` -eigenschap.
-* GRANITE-57853: Opgeloste problemen met uitlijning van vervolgkeuzelijsten in UI.
-* GRANITE-58107: Vaste 404 fouten op Publish door op gebruiker-gebaseerde podaffiniteit in manager uit te schakelen OAuth.
-* GRANITE-58276, SLING-12755: Vaste OSGi gebiedscycli die de fabriek van de Motor van het Manuscript van HTML konden verhinderen correct te beginnen, veroorzakend periodiek server-zijteruggevende fouten.
-* SKYOPS-105151: Vaste NPE bij de toegang tot van bundellijst.
-* SKYOPS-83910, SKYOPS-82371 - Vaste JSP-compilatieproblemen.
+* ASSETS-41007: Verwijderde middelen kunnen zichtbaar blijven in Content Hub.
+* ASSETS-50994: AemRequestEventFilter veroorzaakt excessieve Jetty-thread-geschil.
+* ASSETS-50155: Er worden dubbele gebeurteniswijzigingsgebeurtenissen voor metagegevens geactiveerd.
+* ASSETS-50716: Sorteren op titel in de lijstweergave van Assets werkt niet zoals verwacht.
+* ASSETS-50820: Zorg ervoor dat ongeldige aanvragen voor de API voor elementrelaties correct worden afgewezen met een fout van 400.
+* ASSETS-50562: De API voor het uploaden van middelen moet standaard een versie maken bij naamconflicten.
+* ASSETS-50992: Assets API startUpload.json eindpunt zou inhoudstype &quot;application/json&quot;moeten terugkeren.
+* ASSETS-51322: Automatische verwijdering en vervaldatum van async barricades die oneindig blijven bestaan na een mislukte taak.
+* ASSETS-51809: In de CSV-editor zijn onlangs opgeslagen wijzigingen als gevolg van het in cache plaatsen van de browser niet weergegeven.
+* SITES-31678: De Fragmenten van de ervaring (XF) met context-bewuste verwijzingen verwierpen niet de correcte taalwortel in het Publiceren API XF.
 
-#### AEM Guides {#guides}
 
-* GUIDEN-26919: Wanneer het openen van een kaart DITA met verenigde toegelaten shell, verandert de redacteur af en toe.
-* GUIDEN-26282: Het niet sluiten van JCR zittingsverbindingen terwijl het bijwerken van of het creëren van onderwerpen in geheugenlekken en de dienstonderbreking resulteren.
-* GUIDES-26434: Native PDF-publicatie gaat eindeloos door als de DITA-inhoud een webkoppeling heeft zonder bereik als `external` .
-* GUIDEN-26516: Het publiceren van inheemse PDFs en de plaatsen van AEM stallen en wordt een rij gevormd, wanneer er fouten in de inhoud zijn.
-
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Bekende problemen {#known-issues-21005}
+### Bekende problemen {#known-issues-21193}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-21005}
-
-* GRANITE-54164: Verwijderd `org.apache.jackrabbit.oak.plugins.blob` uit openbare API.
-* GRANITE-54280: Verwijderd `org.apache.jackrabbit.oak.cache` uit openbare API.
-* GRANITE-58332: Vervangen `org.apache.jackrabbit.oak.plugins.memory` in openbare API.
-* YUI-compressor voor javascript is vervangen.
-* De [&#128279;](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionaliteit van de Automatisering van de Opstelling van 0&rbrace; Experience Cloud is afgekeurd.
+### Verouderde functies en API&#39;s {#deprecated-21193}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-21005}
+### Beveiligingsproblemen {#security-21193}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 5 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt twee geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Kennisgeving wijzigen {#change-notice-21005}
-
-* Deze versie bevat de volgende nieuwe versies van de productindex:
-   * **damAssetLucene-12**
-
-Aangepaste versies van de vorige indexversies worden automatisch samengevoegd met de nieuwe versie van de productindex. Pas verdere aangepaste updates toe op de samengevoegde versie.
-
-#### Aem-cloud-testing-clients bijwerken {#update-aem-cloud-testing-clients-21005}
-
-De aanstaande veranderingen zullen de bibliotheek [ aem-wolk-test-cliënten ](https://github.com/adobe/aem-testing-clients) vereisen die in uw douane functionele tests worden gebruikt om aan minstens versie **1.2.1** worden bijgewerkt (geadviseerd: recentste versie 1.2.9)
-
-Controleer of uw afhankelijkheid in `it.tests/pom.xml` is bijgewerkt.
-
-```xml
-<dependency>
-   <groupId>com.adobe.cq</groupId>
-   <artifactId>aem-cloud-testing-clients</artifactId>
-   <version>1.2.9</version>
-</dependency>
-```
-
-Deze wijziging moet vóór 15 juni 2025 worden uitgevoerd.
-Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, treedt er een fout op bij de stap Aangepast functioneel testen.
-
-### Ingesloten technologieën {#embedded-tech-21005}
+### Ingesloten technologieën {#embedded-tech-21193}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
