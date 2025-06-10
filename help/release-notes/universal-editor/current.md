@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.04.04
-description: Dit zijn de release notes voor de release 2025.04.04 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.05.21
+description: Dit zijn de releaseopmerkingen voor de release 2025.05.21 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 1%
+source-wordcount: '72'
+ht-degree: 2%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.04.04 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.05.21 {#release-notes}
 
-Dit zijn de releaseopmerkingen voor de release van 4 april 2025 van de Universal Editor.
+Dit zijn de releaseopmerkingen voor de release van 21 mei 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ Dit zijn de releaseopmerkingen voor de release van 4 april 2025 van de Universal
 
 ## Wat is er nieuw? {#what-is-new}
 
-* **Dynamische Media met steun OpenAPI** - [ de activaselecteur ](/help/assets/overview-asset-selector.md#repository-switcher) in de Universele Redacteur steunt nu [ Dynamische Media met OpenAPI en verre activa ](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **IP staat het Lijst** toe - de Universele Redacteur steunt nu [ IP lijsten van gewenste personen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) U kunt IPs van de Universele Dienst van de Redacteur controleren gebruikend [ dit eindpunt.](http://universal-editor-service.adobe.io/ip-ranges)
-
-## Overige verbeteringen {#other-improvements}
-
-* Layoutcontext verwijderen is opgelost.
-* Er zijn verbeteringen aangebracht in e2e-tests.
-* Afhankelijkheidsupdates en het opschonen van code zijn uitgevoerd.
+* **maak open paginaknoop** onbruikbaar - de open paginaknoop [ kan nu worden onbruikbaar gemaakt.](/help/implementing/universal-editor/customizing.md#open-page)

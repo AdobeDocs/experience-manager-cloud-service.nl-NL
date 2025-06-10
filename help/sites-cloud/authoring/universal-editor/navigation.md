@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
 1. Meld u aan bij uw AEM as a Cloud Service-ontwerpinstantie.
-1. Gebruik de **console van 1&rbrace; Plaatsen [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md) om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.**
+1. Gebruik de **console van 1} Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md) om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.[**
 1. Bewerk de pagina.
 1. De Universal Editor wordt geopend om de geselecteerde pagina te bewerken.
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van Plaatsen [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina [&#128279;](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md).**
+>Wanneer het uitgeven van een pagina in de **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md).[**[
 
 ### Direct toegang {#accessing-directly}
 
@@ -79,7 +79,7 @@ De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker d
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -151,7 +151,7 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 
 #### Instellingen voor verificatiekoptekst {#authentication-settings}
 
-Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [&#128279;](/help/implementing/universal-editor/developer-overview.md#auth-header) moet plaatsen.
+Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden ](/help/implementing/universal-editor/developer-overview.md#auth-header) moet plaatsen.[
 
 ![ de knoop van de het hedentemenu van de Authentificatie ](assets/authentication-header-settings.png)
 
@@ -183,9 +183,9 @@ In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op
 >
 >Met de sneltoets `p` kunt u schakelen van en naar de voorvertoningsmodus.
 
-#### App-voorvertoning openen {#open-app-preview}
+#### Pagina openen {#open-page}
 
-Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina die u momenteel bewerkt te openen op een eigen browsertabblad, zodat de editor geen voorvertoning van uw inhoud kan weergeven.
+Selecteer het pictogram van de open pagina om de pagina te openen u momenteel in zijn eigen browser lusje uitgeeft, vrij van de redacteur om uw inhoud te bekijken.
 
 ![ Open app voorproef ](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina d
 >
 >De voorproef URL voor uw app [ kan worden aangepast ](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>De open paginaknoop [ kan ](/help/implementing/universal-editor/customizing.md#open-page) worden onbruikbaar gemaakt en zou daarom niet in uw redacteur kunnen verschijnen.
+
 #### Publiceren {#publish}
 
 Selecteer de knop Publiceren, zodat u de wijzigingen in de live inhoud kunt publiceren voor gebruik door uw lezers of voor een voorbeeldomgeving ter controle.
@@ -206,6 +210,10 @@ Selecteer de knop Publiceren, zodat u de wijzigingen in de live inhoud kunt publ
 >[!TIP]
 >
 >Zie het document [ het Publiceren Inhoud met de Universele Redacteur ](publishing.md) voor meer informatie bij het publiceren met de Universele Redacteur.
+
+>[!NOTE]
+>
+>De publiceerknoop [ kan ](/help/implementing/universal-editor/customizing.md#disable-publish) worden onbruikbaar gemaakt en zou daarom niet in uw redacteur kunnen verschijnen.
 
 #### Weglatingsteken {#ellipsis}
 

@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,14 @@ De **optie van de Voorproef** in publiceer venster kan daarom volledig in app wo
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Openingspagina uitschakelen {#open-page}
+
+De **Open knoop van de Pagina** kan volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## Componenten filteren {#filtering-components}
@@ -79,7 +87,7 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jso
 
 ![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB de Toestand van 0&rbrace; Waar &lbrace;] 
+>] de Toestand van 0} Waar {[!TAB 
 
 ![ Getoonde tekstgebied ](assets/shown.png)
 
