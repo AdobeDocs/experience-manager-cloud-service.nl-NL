@@ -4,13 +4,13 @@ description: Leer hoe u de toegangstokens die worden gebruikt voor 'Create Your 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Vroege adoptie" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
-
 
 # Toegangstokens beheren voor externe opslagruimten {#manage-access-tokens}
 
@@ -43,9 +43,9 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-man
 ## Een toegangstoken bewerken {#edit-access-tokens}
 
 1. In **beheert de Tokens van de Toegang** dialoogdoos, rechts van een symbolische naam, klik ![ uitgeven pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. In **geef Token van de Toegang** dialoogdoos uit, op het **Symbolische 3&rbrace; tekstgebied van de Naam &lbrace;, werk de symbolische naam bij.**
+1. In **geef Token van de Toegang** dialoogdoos uit, werk de **Symbolische Naam**, of de **Symbolische waarde van de Toegang**, of allebei bij.
 
-   Het geheim van de Token van de Toegang zelf kan niet worden uitgegeven.
+   Als het **Token van de Toegang** momenteel in gebruik is, verschijnt een bericht waarschuwend u dat alle bijbehorende bewaarplaatsen automatisch na de update worden opnieuw bevestigd.
 
    ![ geef de Token van de Toegang dialoogdoos uit ](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
