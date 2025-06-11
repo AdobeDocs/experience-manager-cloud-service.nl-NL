@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,18 @@ De **Open knoop van de Pagina** kan volledig in app worden onderdrukt door de vo
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
+## Knop Dupliceren uitschakelen {#duplicate-button}
+
+Het is mogelijk dat bepaalde ontwerpwerkstromen de mogelijkheid van de auteur van de inhoud om componenten te dupliceren moeten beperken. U kunt het [ dubbele pictogram ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) onbruikbaar maken door de volgende meta-gegevens toe te voegen.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Het veranderen van Uw Eindpunt {#custom-endpoint}
+
+Als u de Universal Editor-service, die door Adobe wordt gehost, maar uw eigen gehoste versie niet wilt gebruiken, kunt u dit instellen in een metatag. Gelieve te zien het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md##configuration-settings) voor details.
+
 ## Componenten filteren {#filtering-components}
 
 U kunt de toegestane componenten per container in de Universele Redacteur beperken gebruikend componentenfilters. Gelieve te zien het document [ Filtrerend Componenten ](/help/implementing/universal-editor/filtering.md) voor meer informatie.
@@ -87,7 +99,7 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jso
 
 ![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB de Toestand van 0&rbrace; Waar &lbrace;] 
+>] de Toestand van 0} Waar {[!TAB 
 
 ![ Getoonde tekstgebied ](assets/shown.png)
 
