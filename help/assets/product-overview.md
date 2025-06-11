@@ -2,9 +2,9 @@
 title: Content Hub - Overzicht
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: ecbc1783e6327b7d187eba01b698948111c3a2d3
+source-git-commit: cc6c227a566c4d4fd8c9a20d1bb39020974f494f
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,15 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Cloud Service voor het democratiseren van de toegang tot online-inhoud voor organisaties en hun zakelijke partners. Het richt zich op het distribueren van middelen voor activering op schaal en het creëren van varianten van on-brand-inhoud met het oog op verbeterde marketingflexibiliteit.
 
 ## Content Hub demo {#content-hub-demo}
+
+>[!IMPORTANT]
+>
+>[ Assets Ultimate ](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service omvatten 250 gebruikers van Content Hub. [ Assets Prime ](/help/assets/assets-prime.md) omvat 50 gebruikers van Content Hub.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
