@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '5392'
+source-wordcount: '5391'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Zodra de veranderingen in RDE zijn getest, kunnen zij aan een regelmatige milieu
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-U kunt extra video&#39;s zien die [ tonen hoe te om het ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [ te plaatsen hoe te om het ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) te gebruiken, en de [ cyclus van het ontwikkelingsleven ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) gebruikend RDE.
+U kunt extra video&#39;s zien die [ tonen hoe te om het ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [ te plaatsen hoe te om het ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) te gebruiken, en de [ cyclus van het ontwikkelingsleven ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) gebruikend RDE.
 
 ## Inleiding {#introduction}
 
@@ -47,7 +47,7 @@ Aanvullende RDE&#39;s kunnen in licentie worden gegeven voor productieprogramma&
 
    * RDEs kan aan zowel [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) als [ productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) worden toegevoegd.
 
-1. Van de **pagina van het Overzicht van het Programma**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+1. Van de **pagina van het Overzicht van het Programma**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -69,7 +69,7 @@ Aanvullende RDE&#39;s kunnen in licentie worden gegeven voor productieprogramma&
 
 1. Klik **sparen** om het gespecificeerde milieu toe te voegen.
 
-Het **scherm van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s.
+Het **scherm van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s.
 
 Bij het maken worden RDE&#39;s ingesteld op de laatst beschikbare AEM-versie. Een RDE-reset, die ook kan worden uitgevoerd met Cloud Manager, fietst de RDE en stelt deze in op de laatst beschikbare AEM-versie.
 
@@ -101,7 +101,7 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    De login informatie (teken) wordt opgeslagen in de globale luchtvaartconfiguratie en steunt daarom slechts één login en organisatie. Voor het geval u veelvoudige RDEs wilt gebruiken die verschillende logins of organisaties vereisen, volg het hieronder voorbeeld introducerend contexten.
 
    <details><summary>Volg dit voorbeeld aan opstelling een lokale context voor één van uw logins van de RDE</summary>
-   Voer de volgende stappen uit om de aanmeldingsgegevens lokaal op te slaan in een &grave;.aio'-bestand in de huidige map binnen een specifieke context. Een context is ook een slimme manier aan opstelling een milieu CI/CD of een manuscript.  Gebruik ten minste AIR versie 10.3.1 om van deze functie gebruik te maken. Werk deze bij met behulp van 'npm install -g @adobe/aio-cli'.
+   Voer de volgende stappen uit om de aanmeldingsgegevens lokaal op te slaan in een `.aio'-bestand in de huidige map binnen een specifieke context. Een context is ook een slimme manier aan opstelling een milieu CI/CD of een manuscript.  Gebruik ten minste AIR versie 10.3.1 om van deze functie gebruik te maken. Werk deze bij met behulp van 'npm install -g @adobe/aio-cli'.
 
    Nu, creeer een context genoemd m `ycontext` die u als standaardcontext plaatst gebruikend de authlug alvorens het login bevel te roepen.
 
@@ -179,7 +179,7 @@ In omgevingen waar geen enkele gebruiker interactief de instellingsopdracht kan 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Uw eigen organisatieidentiteitskaart kan omhoog worden gezocht gebruikend de methode die onder [ wordt gedocumenteerd Mening uw organisatieidentiteitskaart ](https://experienceleague.adobe.com/nl/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Uw eigen organisatieidentiteitskaart kan omhoog worden gezocht gebruikend de methode die onder [ wordt gedocumenteerd Mening uw organisatieidentiteitskaart ](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Configureer vervolgens uw programma-id:
 
@@ -195,7 +195,7 @@ In omgevingen waar geen enkele gebruiker interactief de instellingsopdracht kan 
 
    Deze stappen vereisen u om een lid van de Cloud Manager **Ontwikkelaar te zijn - het Profiel van het Product van Cloud Service**. Zie [ de Leden van het Team aan de Profielen van het Product van Cloud Manager toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
 
-Voor meer informatie en demonstratie, bekijk het videoleerprogramma [ hoe te opstelling RDE (06:24) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Voor meer informatie en demonstratie, bekijk het videoleerprogramma [ hoe te opstelling RDE (06:24) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## RDE gebruiken tijdens het ontwikkelen van een nieuwe functie {#using-rde-while-developing-a-new-feature}
@@ -367,11 +367,11 @@ Dan stel de configuratie door dit bevel op:
 
 >[!TIP]
 >
->Het bovenstaande bevel veronderstelt u de [ configuraties van Dispatcher van het 1&rbrace; project van WKND &lbrace;. ](https://github.com/adobe/aem-guides-wknd) Vervang `X.X.X` door het corresponderende WKND-projectversienummer of uw projectspecifieke versienummer wanneer u de Dispatcher-configuratie van uw project implementeert.
+>Het bovenstaande bevel veronderstelt u de [ configuraties van Dispatcher van het 1} project van WKND {. ](https://github.com/adobe/aem-guides-wknd) Vervang `X.X.X` door het corresponderende WKND-projectversienummer of uw projectspecifieke versienummer wanneer u de Dispatcher-configuratie van uw project implementeert.
 
 >[!NOTE]
 >
->RDE ondersteunt de Dispatcher-configuratie &quot;Flexible Mode&quot;, maar niet de Dispatcher-configuratie &quot;Legacy Mode&quot;. Zie {de documentatie van 0} Dispatcher [&#128279;](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee wijzen.  U kunt de documentatie ook raadplegen over [ migrerend aan Flexibele wijze ](/help/implementing/dispatcher/validation-debug.md#migrating), als u dit niet reeds hebt gedaan.
+>RDE ondersteunt de Dispatcher-configuratie &quot;Flexible Mode&quot;, maar niet de Dispatcher-configuratie &quot;Legacy Mode&quot;. Zie {de documentatie van 0} Dispatcher ](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee wijzen. [ U kunt de documentatie ook raadplegen over [ migrerend aan Flexibele wijze ](/help/implementing/dispatcher/validation-debug.md#migrating), als u dit niet reeds hebt gedaan.
 
 Een succesvolle plaatsing produceert een reactie die op het volgende lijkt:
 
@@ -524,14 +524,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Voor meer informatie en demonstratie, zie het videoleerprogramma [ hoe te om de bevelen van RDE (10:01) te gebruiken ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Voor meer informatie en demonstratie, zie het videoleerprogramma [ hoe te om de bevelen van RDE (10:01) te gebruiken ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Implementeren naar een RDE van externe Git-providers {#deploy-to-rde}
 
 >[!NOTE]
 >
->Deze functie is beschikbaar via het programma Vroege adopter. Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ CloudManager_BYOG@adobe.com ](mailto:cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+>Deze functie is beschikbaar via het Beta-programma. Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ CloudManager_BYOG@adobe.com ](mailto:cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
 
 Cloud Manager steunt het opstellen van code aan RDE direct van externe leveranciers van het Git wanneer het gebruiken van [ uw eigen configuratie van het Git (BYOG) ](/help/implementing/cloud-manager/managing-code/external-repositories.md) brengt.
 
@@ -673,7 +673,7 @@ U kunt Cloud Manager gebruiken om uw RDE opnieuw in te stellen door de volgende 
 
    ![ Milieu&#39;s tabel ](/help/implementing/cloud-manager/assets/environments-tab2.png)
 
-   * Alternatief, klik **tonen Al** knoop op de **&#x200B;**&#x200B;kaart van Milieu&#39;s &lbrace;om rechtstreeks aan het **Milieu** lusje te springen.
+   * Alternatief, klik **tonen Al** knoop op de **** kaart van Milieu&#39;s {om rechtstreeks aan het **Milieu** lusje te springen.
 
      ![ toon alle optie ](/help/implementing/cloud-manager/assets/environment-showall.png)
 
@@ -697,7 +697,7 @@ Nadat de RDE-reset is gestart, duurt het meestal enkele minuten om de omgeving t
 
 ![ RDE terugstellingstatus ](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
-U kunt RDE ook terugstellen gebruikend de elliptische knoop direct van de **1&rbrace; kaart van Milieu&#39;s &lbrace;op de** Overzicht **pagina.**
+U kunt RDE ook terugstellen gebruikend de elliptische knoop direct van de **1} kaart van Milieu&#39;s {op de** Overzicht **pagina.**
 
 ![ RDE van het Terugstellen van de kaart van Milieu ](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
@@ -1151,7 +1151,7 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 
 ## RDE-zelfstudie
 
-Om over RDE in AEM as a Cloud Service te leren, zie het videoleerprogramma dat [ toont hoe te opstelling, hoe te om het te gebruiken, en de cyclus van het ontwikkelingsleven (01:25) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Om over RDE in AEM as a Cloud Service te leren, zie het videoleerprogramma dat [ toont hoe te opstelling, hoe te om het te gebruiken, en de cyclus van het ontwikkelingsleven (01:25) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Problemen oplossen {#troubleshooting}
 

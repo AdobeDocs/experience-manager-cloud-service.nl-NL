@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 225e355f7a802c1d0ac3432f305410cfa4d425a8
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -20,10 +20,10 @@ Experience Hub introduceert een gecentraliseerd beginpunt voor het beheer van in
 
 Bekijk een snelle rondleiding door de opnieuw bedacht AEM Experience Hub-werkruimte (1 minuten, 27 seconden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3463273?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
-Available to early adopters, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
+Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## Experience Hub sluiten {#aem-experience-hub-about}
 
@@ -59,7 +59,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-De **sectie van milieu&#39;s van de Auteurs** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, terwijl de **sectie van Recenten** een lijst van onlangs bezochte pagina&#39;s verstrekt die binnen de systemen van AEM worden gevolgd.
+De **sectie van milieu&#39;s van de Auteurs** {toont alle milieu&#39;s van AEM toegankelijk voor u, terwijl de **sectie van Recenten** een lijst van onlangs bezochte pagina&#39;s verstrekt die binnen de systemen van AEM worden gevolgd.
 
 De navigatie-elementen zijn onder andere Assets Browse, waarmee de opslagplaats van de productieomgeving die voor de gebruiker toegankelijk is, wordt geladen.
 

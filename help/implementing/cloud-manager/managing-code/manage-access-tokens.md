@@ -3,9 +3,9 @@ title: Toegangstokens beheren voor externe opslagplaatsen in Cloud Manager
 description: Leer hoe u de toegangstokens die worden gebruikt voor 'Create Your Own Git' in AEM Cloud Manager kunt weergeven, bewerken en verwijderen.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Vroege adoptie" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="Private bèta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-man
 
 >[!NOTE]
 >
->De in dit artikel beschreven kenmerken zijn alleen beschikbaar via het programma voor vroegtijdige goedkeuring. Voor meer details en om omhoog als vroege adopter te ondertekenen, zie [ Uw Eigen Git ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) brengen.
+>De functies die in dit artikel worden beschreven, zijn alleen beschikbaar via het persoonlijke bètaprogramma. Voor meer details en om omhoog voor privé bèta te ondertekenen, zie [ Uw Eigen Git ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket) brengen.
 
 ## Toegangstokens weergeven {#view-access-tokens}
 

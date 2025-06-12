@@ -1,5 +1,5 @@
 ---
-title: AI Assistant in Adobe Experience Manager (beperkte Beta)
+title: AI Assistant in Adobe Experience Manager (persoonlijke bèta)
 description: Met AI Assistant in Adobe Experience Manager kunt u antwoorden zoeken, problemen oplossen en sites, Assets, Forms en Cloud Manager verkennen.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
 
 # AI Assistant in Adobe Experience Manager {#aem-home}
 
-De AI-assistent in AEM (Adobe Experience Manager) biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op vragen over Adobe Experience Manager te stroomlijnen. Het helpt u tot productkennis toegang hebben, problemen oplossen, en informatie onderzoeken beschikbaar in Experience League. Tijdens het beperkte Beta-programma biedt de AI Assistant ondersteuning voor Adobe Experience Manager as a Cloud Service, waaronder Sites, Assets, Forms en Cloud Manager.
+De AI-assistent in AEM (Adobe Experience Manager) biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op vragen over Adobe Experience Manager te stroomlijnen. Het helpt u tot productkennis toegang hebben, problemen oplossen, en informatie onderzoeken beschikbaar in Experience League. Tijdens het persoonlijke bètaprogramma ondersteunt de AI Assistant Adobe Experience Manager as a Cloud Service, waaronder Sites, Assets, Forms en Cloud Manager.
 
 >[!IMPORTANT]
->Controleer of u de gebruikersovereenkomst hebt gecontroleerd en verzonden, zodat Adobe de functie AI Assistant kan inschakelen zodat u het Beta-programma kunt uittesten en hieraan kunt deelnemen.
+>Controleer of u de gebruikersovereenkomst hebt gecontroleerd en verzonden, zodat Adobe de functie AI Assistant kan inschakelen zodat u het persoonlijke bètaprogramma kunt uittesten en hieraan kunt deelnemen.
 >
 >Voor om het even welke vragen, verzend een e-mail naar [ Grp-AEMAIASSISTANT@adobe.com ](mailto:Grp-AEMAIASSISTANT@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
 
@@ -55,7 +55,7 @@ Naast algemene AI Medewerker voor productkennis, biedt AEM een gespecialiseerde 
 
 De AI Assistant voor AEM Forms biedt:
 
-* **Van de 10&rbrace; Vorm creatie: Creeer nieuwe vormen van kras gebruikend natuurlijke taalbeschrijvingen**
+* **Van de 10} Vorm creatie: Creeer nieuwe vormen van kras gebruikend natuurlijke taalbeschrijvingen**
 * **Invoer van het Ontwerp**: Zet bestaande ontwerpen (PDF, Figma, beelden) in de functionele vormen van AEM om
 * **Configuratie van de Vorm**: Voeg gebieden, panelen, bevestigingsregels, en voorwaardelijke logica toe
 * **het Beheer van de Lay-out**: Organiseer vormstructuur en optimaliseer voor verschillende apparaten
@@ -74,7 +74,7 @@ De AI Assistant voor AEM Forms is beschikbaar in:
 
 >[!NOTE]
 >
-> De AI Assistant voor AEM Forms (Forms Experience Builder) is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw het werkadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken.
+> De AI Assistant voor AEM Forms (Forms Experience Builder) is beschikbaar in het kader van het persoonlijke bètaprogramma. Verzend een e-mail van uw het werkadres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken.
 
 Meer over het gebruiken van de Medewerker AI voor AEM Forms, met inbegrip van gedetailleerde voorbeelden en beste praktijken leren, zie de [ Medewerker AI voor de documentatie van AEM Forms ](/help/edge/docs/forms/forms-ai-assistant.md).
 

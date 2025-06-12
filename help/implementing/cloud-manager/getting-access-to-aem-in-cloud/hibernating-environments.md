@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -44,7 +44,7 @@ U kunt uw sandboxprogramma handmatig via de Developer Console herbergen. Alle ge
 
 1. Op de **Developer Console** pagina, klik **Sluimerstand**.
 
-<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN PRIVATE BETA -->
 
 ![ knoop van de Slaapsteen ](assets/hibernate-1.png)
 
@@ -108,13 +108,13 @@ Wanneer een gebruiker een browser vraagt aan de auteur, voorproef, of publicatie
 
 ![ Gesamberneerde dienst die pagina ](assets/de-hibernation-img5.png) landen
 
-## Implementaties en AEM updates {#deployments-updates}
+## Implementaties en AEM-updates {#deployments-updates}
 
-In gesluimerde omgevingen zijn implementaties en handmatige AEM nog steeds mogelijk.
+In gesluimerde omgevingen kunnen nog implementaties en handmatige AEM-upgrades worden uitgevoerd.
 
 * Een gebruiker kan een pijpleiding gebruiken om douanecode aan gehiberneerde milieu&#39;s op te stellen. Het milieu blijft gehiberneerd en de nieuwe code verschijnt in het milieu zodra het wordt ontruimd.
 
-* AEM upgrades kunnen worden toegepast op gehiberde omgevingen en kunnen handmatig worden geactiveerd vanuit Cloud Manager. Het milieu blijft gehiberneerd en de nieuwe introductie verschijnt in het milieu als de stof eenmaal is gedehiberneerd.
+* AEM-upgrades kunnen worden toegepast op gehiberde omgevingen en kunnen handmatig worden geactiveerd vanuit Cloud Manager. Het milieu blijft gehiberneerd en de nieuwe introductie verschijnt in het milieu als de stof eenmaal is gedehiberneerd.
 
 ## Sluimerstand en verwijdering {#hibernation-deletion}
 
