@@ -1,11 +1,11 @@
 ---
 title: Toegang verlenen aan de front-end ontwikkelaar
-description: Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.
+description: Aan boord van de front-end ontwikkelaars in Cloud Manager zodat ze toegang hebben tot uw AEM-site git-opslagplaats en -pijpleiding.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -14,16 +14,18 @@ ht-degree: 0%
 
 # Toegang verlenen aan de front-end ontwikkelaar {#grant-fed-access}
 
-Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.
+{{traditional-aem}}
+
+Aan boord van de front-end ontwikkelaars in Cloud Manager zodat ze toegang hebben tot uw AEM-site git-opslagplaats en -pijpleiding.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Opstelling Uw Pijpleiding ](pipeline-setup.md), leerde u hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ Opstelling Uw Pijpleiding ](pipeline-setup.md), leerde u hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
 
 * Begrijp wat een front-end pijpleiding is.
 * Weet hoe u een front-end pijpleiding in Cloud Manager kunt opzetten.
 
-U moet nu uw front-end ontwikkelaar toegang tot Cloud Manager verlenen via het instapproces, zodat de front-end ontwikkelaar toegang heeft tot de AEM git repository en de pijpleiding die u hebt gemaakt.
+U moet nu uw front-end ontwikkelaar toegang tot Cloud Manager verlenen via het instapproces, zodat de front-end ontwikkelaar toegang heeft tot de AEM git-opslagplaats en de pijpleiding die u hebt gemaakt.
 
 ## Doelstelling {#objective}
 
@@ -44,17 +46,17 @@ Dit deel van de reis is van toepassing op de beheerder van Cloud Manager.
 
 * U moet een lid van **rol van BedrijfsEigenaar** in Cloud Manager zijn.
 * U moet Admin van a **Sys** in Cloud Manager zijn.
-* U moet toegang tot de Admin Console hebben.
+* U moet toegang hebben tot de Admin Console.
 
 ## Voeg de Front-End Ontwikkelaar als Gebruiker toe {#add-fed-user}
 
 Eerst moet u de front-end ontwikkelaar als gebruiker toevoegen door de Admin Console te gebruiken.
 
-1. Teken in de Admin Console in [ https://adminconsole.adobe.com/ ](https://adminconsole.adobe.com/).
+1. Teken in Admin Console in [ https://adminconsole.adobe.com/ ](https://adminconsole.adobe.com/).
 
 1. Nadat u zich hebt aangemeld, krijgt u een overzichtspagina te zien die lijkt op de volgende afbeelding.
 
-   ![ overzicht van de Admin Console ](assets/admin-console.png)
+   ![ overzicht van Admin Console ](assets/admin-console.png)
 
 1. Controleer de naam van de org in de rechterbovenhoek van het scherm en zorg ervoor dat u zich op de juiste org bevindt.
 
@@ -86,7 +88,7 @@ De uitgenodigde front-end ontwikkelaar kan tot Cloud Manager toegang hebben door
 
 ## Overhandigen aan front-end ontwikkelaar {#handover}
 
-Met een e-mailuitnodiging aan Cloud Manager onderweg naar de front-end ontwikkelaar, kunnen u en de AEM nu de front-end ontwikkelaar de resterende benodigde informatie geven om met aanpassingen te beginnen.
+Met een e-mailuitnodiging aan Cloud Manager onderweg naar de front-end ontwikkelaar, kunnen u en de AEM-beheerder de front-end ontwikkelaar nu de resterende benodigde informatie verschaffen om met aanpassingen te beginnen.
 
 * A [ weg aan typische inhoud ](#example-page)
 * De themabron die [ u ](#download-theme) downloadde
@@ -96,12 +98,12 @@ Met een e-mailuitnodiging aan Cloud Manager onderweg naar de front-end ontwikkel
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit gedeelte van de AEM snelle reis van de Plaats hebt voltooid zou u moeten weten:
+Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, moet u het volgende weten:
 
 * Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
-Bouw op deze kennis voort en zet uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken Wint de Informatie van de Toegang van de Bewaarplaats van de it ](retrieve-access.md) voort, die perspectief aan de front-end ontwikkelaar exclusief schakelt en verklaart hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot de informatie van de gogegevensopslagplaats toegang te hebben.
+Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Snelle door het document te herzien [ de Informatie van de Toegang van de Toegang van de Bewaarplaats van de it ](retrieve-access.md), die perspectief aan de front-end ontwikkelaar exclusief overschakelt en verklaart hoe de front-end ontwikkelaarsgebruikers Cloud Manager om tot informatie van de gogegevensopslagplaats toegang te hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 

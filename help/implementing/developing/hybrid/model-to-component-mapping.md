@@ -1,35 +1,37 @@
 ---
-title: Dynamisch model naar componenttoewijzing voor SPA
-description: In dit artikel wordt beschreven hoe het dynamische model naar componenttoewijzing plaatsvindt in de JavaScript SPA SDK for AEM.
+title: Dynamisch model aan Component Mapping voor SPAs
+description: Dit artikel beschrijft hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor AEM voorkomt.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Dynamisch model naar componenttoewijzing voor SPA {#dynamic-model-to-component-mapping-for-spas}
 
-In dit document wordt beschreven hoe het dynamische model wordt toegewezen aan componenttoewijzing in de JavaScript SPA SDK for AEM.
+# Dynamisch model aan Component Mapping voor SPAs {#dynamic-model-to-component-mapping-for-spas}
+
+Dit document beschrijft hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor AEM voorkomt.
 
 {{ue-over-spa}}
 
 ## ComponentMapping-module {#componentmapping-module}
 
-De module `ComponentMapping` wordt verstrekt als pakket NPM aan het front-end project. Het slaat front-end componenten op en verstrekt een manier voor de Enige Toepassing van de Pagina om front-end componenten aan AEM middeltypes in kaart te brengen. De module laat een dynamische resolutie van componenten toe wanneer het ontleden van het model JSON van de toepassing.
+De module `ComponentMapping` wordt verstrekt als pakket NPM aan het front-end project. Het slaat front-end componenten op en verstrekt een manier voor de Enige Toepassing van de Pagina om front-end componenten aan de middeltypes van AEM in kaart te brengen. De module laat een dynamische resolutie van componenten toe wanneer het ontleden van het model JSON van de toepassing.
 
-Elk item in het model bevat een `:type` -veld dat een AEM-brontype weergeeft. Als de front-end component is gekoppeld, kan deze zichzelf renderen met behulp van het fragment van het model dat is ontvangen van de onderliggende bibliotheken.
+Elk item in het model bevat een veld `:type` dat een AEM-brontype weergeeft. Als de front-end component is gekoppeld, kan deze zichzelf renderen met behulp van het fragment van het model dat is ontvangen van de onderliggende bibliotheken.
 
-Zie [ SPA het document van de Vervaging ](blueprint.md) voor meer informatie over model het ontleden en de front-end componententoegang tot het model.
+Zie [ het document van het Vervagen van het KUUROORD ](blueprint.md) voor meer informatie over model het ontleden en de front-end componententoegang tot het model.
 
 Zie ook het npm-pakket: [@adobe/aem-spa-component-mapping ](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Modelgestuurde toepassing voor één pagina {#model-driven-single-page-application}
 
-Toepassingen op één pagina die de JavaScript SPA SDK for AEM gebruiken, zijn gebaseerd op modellen:
+Toepassingen op één pagina die gebruikmaken van de JavaScript SPA SDK voor AEM, zijn gebaseerd op modellen:
 
 1. De front-end componenten registreren zich aan de [ Opslag van de Afbeelding van de Component ](#componentmapping-module).
 1. Dan de [ Container ](blueprint.md#container), eens voorzien van een model door de [ ModelLeverancier ](blueprint.md#the-model-provider), herhaalt over zijn modelinhoud (`:items`).

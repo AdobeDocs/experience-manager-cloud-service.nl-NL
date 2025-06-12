@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -14,13 +14,15 @@ ht-degree: 0%
 
 # Uw pijplijn instellen {#set-up-your-pipeline}
 
+{{traditional-aem}}
+
 Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Aanmaak van de Plaats, [ creeer Plaats van Malplaatje ](create-site.md), leerde u hoe te om een plaatsmalplaatje te gebruiken om snel een AEM plaats tot stand te brengen die verder kan worden aangepast gebruikend voorste hulpmiddelen en nu zou u moeten nu:
+In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ creeer Plaats van Malplaatje ](create-site.md), leerde u hoe te om een plaatsmalplaatje te gebruiken om snel een plaats van AEM tot stand te brengen die verder kan worden aangepast gebruikend front-end hulpmiddelen en nu zou u nu moeten:
 
-* Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
+* Begrijp hoe u AEM Site-sjablonen kunt verkrijgen.
 * Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
@@ -41,20 +43,20 @@ Dit deel van de reis is van toepassing op de beheerder van Cloud Manager.
 
 * Je moet toegang hebben tot Cloud Manager.
 * U moet een lid van de **rol van de Manager van de Plaatsing** in Cloud Manager zijn.
-* In Cloud Manager moet een git-repo voor de AEM worden opgezet.
+* In Cloud Manager moet een git-repo voor de AEM-omgeving worden opgezet.
    * Dit is in het algemeen al het geval voor elk actief project. Nochtans als het niet is, zie de documentatie van de Bewaarplaatsen van Cloud Manager beschikbaar onder de [ Extra sectie van Middelen ](#additional-resources).
 
 ## Wat is een voorste pijpleiding {#front-end-pipeline}
 
-Voor-end ontwikkeling omvat de aanpassing van JavaScript, CSS, en statische middelen die het stileren van uw AEM plaats bepalen. De front-end ontwikkelaar zal in hun eigen lokale milieu&#39;s werken om deze aanpassingen te maken. Zodra zij klaar zijn, worden de veranderingen geëngageerd aan de AEM git bewaarplaats. Maar zij zijn slechts geëngageerd aan de broncode. Ze leven nog niet.
+Voor-end ontwikkeling omvat de aanpassing van JavaScript, CSS, en statische middelen die het stileren van uw plaats van AEM bepalen. De front-end ontwikkelaar zal in hun eigen lokale milieu&#39;s werken om deze aanpassingen te maken. Zodra ze klaar zijn, worden de wijzigingen doorgevoerd in de AEM git-opslagplaats. Maar zij zijn slechts geëngageerd aan de broncode. Ze leven nog niet.
 
-De front-end pijpleiding neemt deze geëngageerde aanpassingen en stelt hen aan een AEM milieu, over het algemeen productie of non-production milieu&#39;s op.
+De front-end pijpleiding neemt deze geëngageerde aanpassingen en stelt hen aan een milieu van AEM, over het algemeen productie of non-production milieu&#39;s op.
 
-Op deze manier kan de ontwikkeling aan de voorzijde afzonderlijk van en parallel aan elke volledige back-end ontwikkeling op AEM werken, die zijn eigen distributiepijpleidingen heeft.
+Op deze manier kan de ontwikkeling aan de voorzijde los van en parallel aan elke volledige back-end ontwikkeling werken op AEM, dat zijn eigen distributiepijpleidingen heeft.
 
 >[!NOTE]
 >
->De front-end pijpleidingen kunnen JavaScript, CSS, en statische middelen slechts opstellen om uw AEM plaats te stileren. Site-inhoud, zoals pagina&#39;s of elementen, kan niet via een pijplijn worden geïmplementeerd.
+>De front-end pijpleidingen kunnen JavaScript, CSS, en statische middelen slechts opstellen om uw plaats van AEM te stileren. Site-inhoud, zoals pagina&#39;s of elementen, kan niet via een pijplijn worden geïmplementeerd.
 
 ## Toegang tot Cloud Manager {#login}
 
@@ -105,21 +107,21 @@ De nieuwe pijpleiding wordt gecreeerd en zichtbaar in de **sectie van Pijpleidin
 
 >[!TIP]
 >
->Als u reeds vertrouwd met pijpleidingen in AEMaaCS bent en meer over de verschillen tussen de verschillende types pijpleidingen met inbegrip van verdere details over de voorste eindpijpleiding wilt leren, zie CI/CD Pijpleiding vormen - Cloud Servicen verbonden in de [ Extra hieronder sectie van Middelen ](#additional-resources).
+>Als u reeds vertrouwd met pijpleidingen in AEMaaCS bent en meer over de verschillen tussen de verschillende types pijpleidingen met inbegrip van verdere details over de voorste eindpijpleiding wilt leren, zie CI/CD Pijpleiding - de Diensten van de Wolk verbonden in de [ Extra hieronder sectie van Middelen ](#additional-resources) vormen.
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
+Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volgende doen:
 
 * Begrijp wat een front-end pijpleiding is.
 * Weet hoe u een front-end pijpleiding in Cloud Manager kunt opzetten.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ Toegang van de Verlening tot de Ontwikkelaar van het Front-Eind ](grant-access.md) opnieuw te herzien, waar u aan boord de front-end ontwikkelaars in Cloud Manager zult zodat zij toegang tot uw AEM plaats en pijpleiding hebben.
+Bouw op deze kennis voort en ga uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [ Toegang van de Verlening tot de Ontwikkelaar van het Front-End ](grant-access.md) verder te herzien, waar u aan boord de front-end ontwikkelaars in Cloud Manager zult zodat zij toegang tot uw plaats en pijpleiding van de Plaats van AEM hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats ](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=nl-NL) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ Opslagplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - als u meer informatie over nodig hebt om git bewaarplaatsen voor uw project te vestigen en te beheren AEMaaCS, dit document zien.
-* [ vorm CI/CD Pijpleiding - Cloud Servicen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - leer meer details over vestiging pijpleidingen, zowel volledige stapel als vooreind, in dit document.
+* [ vorm CI/CD Pijpleiding - de Diensten van de Wolk ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - leer meer details over vestiging pijpleidingen, zowel volledige stapel als vooreind, in dit document.

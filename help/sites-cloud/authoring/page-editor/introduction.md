@@ -1,32 +1,34 @@
 ---
-title: De AEM Pagina-editor
-description: De AEM pagina-editor is een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
+title: De AEM Page Editor
+description: De AEM-pagina-editor is een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 0%
 
 ---
 
-# De AEM Pagina-editor {#editing-page-content}
+# De AEM Page Editor {#editing-page-content}
 
-Zodra uw pagina in de **console van de Plaatsen[** &lbrace;wordt gecreeerd, kunt u de inhoud van de pagina uitgeven gebruikend de AEM paginaredacteur, een krachtig hulpmiddel om uw inhoud te ontwerpen.](/help/sites-cloud/authoring/sites-console/introduction.md)
+Zodra uw pagina in de **console van de Plaatsen[** {wordt gecreeerd, kunt u de inhoud van de pagina uitgeven gebruikend de de paginaredacteur van AEM, een krachtig hulpmiddel om uw inhoud te ontwerpen.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van Plaatsen [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina [&#128279;](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur openen die in dit document wordt beschreven, of [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).**
+>Wanneer het uitgeven van een pagina in de **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur openen die in dit document wordt beschreven, of [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).[**[
 
 >[!NOTE]
 >
 >Uw account heeft de juiste toegangsrechten en machtigingen nodig om pagina&#39;s te kunnen bewerken. Neem contact op met de systeembeheerder als u geen machtigingen hebt.
 
+{{traditional-aem}}
+
 ## Afdrukstand {#orientation}
 
-De AEM pagina-editor bestaat voornamelijk uit drie secties:
+De AEM-pagina-editor bestaat voornamelijk uit drie secties:
 
 1. [ de toolbar ](#toolbar) - de toolbar geeft u snelle toegang om paginamodus te veranderen en tot extra paginamontages toegang te hebben.
 1. [ het zijpaneel ](#side-panel) - het zijpaneel geeft u toegang tot paginacomponenten en activa evenals andere auteurshulpmiddelen.
@@ -60,7 +62,7 @@ Zo hebt u toegang tot gedetailleerde pagina-informatie, waaronder paginagegevens
 * [Uitrolpagina](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Pagina vergrendelen](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
-* [Publish-pagina](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
+* [Pagina publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Publicatie van pagina ongedaan maken](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
 * [Sjabloon bewerken](/help/sites-cloud/authoring/page-editor/templates.md)
 * [Weergeven als gepubliceerd](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
@@ -78,7 +80,7 @@ Dit knevels de [ mededingertoolbar ](/help/sites-cloud/authoring/page-editor/res
 
 #### ContextHub {#context-hub}
 
-Dit opent [ ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md). Het is slechts beschikbaar op **1&rbrace; wijze van de Voorproef &lbrace;.**
+Dit opent [ ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md). Het is slechts beschikbaar op **1} wijze van de Voorproef {.**
 
 ![ knoop van de Hub van de Context ](assets/page-editor-context-hub.png)
 
@@ -146,7 +148,7 @@ In de editor kunt u rechtstreeks wijzigingen in uw pagina-inhoud aanbrengen. De 
 
 Nu u de pagina-editor begrijpt, kunt u de inhoud bewerken.
 
-Gelieve te zien het document [ Uitgevend Inhoud met de Redacteur van de Pagina van de AEM ](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie.
+Gelieve te zien het document [ Uitgevend Inhoud met de Redacteur van de Pagina van AEM ](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie.
 
 ## Statusmelding {#status-notification}
 
@@ -185,7 +187,7 @@ Bijvoorbeeld:
 
 Er zijn twee opties voor het voorvertonen van een pagina:
 
-* [&#128279;](#preview-mode) de Wijze van de Voorproef van 0&rbrace; - een snelle, op zijn plaats voorproef
+* ](#preview-mode) de Wijze van de Voorproef van 0} - een snelle, op zijn plaats voorproef[
 * [ Mening zoals Gepubliceerd ](#view-as-published) - een volledige voorproef die de pagina in een nieuw lusje opent
 
 >[!TIP]
@@ -204,7 +206,7 @@ Wanneer u inhoud bewerkt, kunt u een voorvertoning van de pagina weergeven in de
 
 * Hiermee verbergt u verschillende bewerkingsmechanismen waarmee u snel kunt zien hoe de pagina er bij het publiceren uitziet.
 * Hiermee kunt u navigeren met koppelingen.
-* Vernieuw **&#x200B;**&#x200B;niet de paginainhoud.
+* Vernieuw **** niet de paginainhoud.
 
 Bij het ontwerpen is de modus Voorvertoning beschikbaar met behulp van het pictogram rechtsboven in de paginaeditor:
 

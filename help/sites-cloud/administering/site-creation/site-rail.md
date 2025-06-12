@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 
 
 # Uw sitethema beheren met het deelvenster Site {#site-panel}
+
+{{traditional-aem}}
 
 Leer de krachtige eigenschappen van het paneel van de Plaats om u te helpen uw plaatsthema gemakkelijk aanpassen en beheren.
 
@@ -44,7 +46,7 @@ Selecteer **Bronnen van het Thema van de Download** om een lokaal exemplaar van 
 
 ## Sjabloonbronnen downloaden {#downloading-template-resources}
 
-&lbrace;de malplaatjes van de Plaats [&#128279;](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema ](site-themes.md) bevatten.  Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
+{de malplaatjes van de Plaats ](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema ](site-themes.md) bevatten. [ Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
 
 Als uw site is gebaseerd op een sitesjabloon en het Sitepaneel in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven, inclusief extra sitemiddelen.
 
@@ -66,9 +68,9 @@ Selecteer **Uitgezochte Versie** om vorige versies van het thema te bekijken.
 
 ![ Uitgezochte themaversie ](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Selecteer de versie u wilt veranderen en dan selecteren **&#x200B;**&#x200B;toepassen om de verandering aan te brengen.
+Selecteer de versie u wilt veranderen en dan selecteren **** toepassen om de verandering aan te brengen.
 
-Als AEM ontdekt dat een nieuwere versie van het thema via de front-end pijpleiding is opgesteld maar niet op uw plaats is toegepast, zal een berichtpictogram tonen.
+Als AEM detecteert dat een nieuwere versie van het thema is geïmplementeerd via de front-end pijplijn, maar niet is toegepast op uw site, wordt een waarschuwingspictogram weergegeven.
 
 ![ Nieuwere versie van themaindicator ](/help/sites-cloud/administering/assets/new-theme-version.png)
 

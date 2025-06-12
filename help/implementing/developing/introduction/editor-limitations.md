@@ -1,19 +1,20 @@
 ---
-title: Editor-beperkingen
-description: De editor in de interface met aanraakbediening maakt gebruik van overlays voor interactie met inhoud die zich in een iframe bevindt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars.
+title: Beperkingen in paginaeditor
+description: De Pagina-editor maakt gebruik van overlays om te werken met inhoud die is opgesloten in een iframe. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
-# Editor-beperkingen {#editor-limitations}
 
-De editor in de interface met aanraakbediening maakt gebruik van overlays voor interactie met inhoud die zich in een iframe bevindt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars. Deze pagina geeft een overzicht van deze beperkingen en biedt waar mogelijk oplossingen of tijdelijke oplossingen.
+# Beperkingen in paginaeditor {#editor-limitations}
+
+[ de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) maakt gebruik van bekledingen om met inhoud in te wisselen die in een iframe wordt beperkt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars. Deze pagina geeft een overzicht van deze beperkingen en biedt waar mogelijk oplossingen of tijdelijke oplossingen.
 
 ## Functionele beperkingen {#functional-limitations}
 
@@ -27,7 +28,7 @@ Wanneer [ het uitgeven van een pagina ](/help/sites-cloud/authoring/page-editor/
 
 ### Structuurpagina&#39;s {#structure-pages}
 
-De naam van Pagescan is niet `structure` . Pagina&#39;s met de naam `structure` kunnen niet worden bewerkt in de pagina-editor.
+Pagina&#39;s kunnen geen naam `structure` krijgen. Pagina&#39;s met de naam `structure` kunnen niet worden bewerkt in de pagina-editor.
 
 ## CSS-beperkingen {#css-limitations}
 

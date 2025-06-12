@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Het toelaten van de Voorste Pijpleiding {#enable-front-end-pipeline}
+
+{{traditional-aem}}
 
 Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om plaatsthema&#39;s te gebruiken om uw plaats sneller aan te passen.
 
@@ -26,7 +28,7 @@ De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen de front-end pijple
 
 >[!TIP]
 >
->Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen op te stellen snel gebruikend het en plaatssjablonen, zie [&#128279;](/help/journey-sites/quick-site/overview.md) de Reis van de Aanmaak van de Snelle Plaats  voor een inleiding.
+>Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen op te stellen snel gebruikend het en plaatssjablonen, zie ](/help/journey-sites/quick-site/overview.md) de Reis van de Aanmaak van de Snelle Plaats [ voor een inleiding.
 
 AEM kan uw site zo configureren dat deze thema&#39;s laadt die worden geïmplementeerd met de Front End Pipeline, zelfs als uw site niet is gemaakt met sitesjablonen en -thema&#39;s, door deze in lagen boven op bestaande clientbibliotheken te plaatsen.
 
@@ -44,7 +46,7 @@ Wanneer u de front-end pijplijn voor een plaats activeert, brengt AEM de volgend
 
 ## Vereisten {#requirements}
 
-AEM kan uw bestaande site automatisch aanpassen om de front-end pijplijn te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/page) gebruiken.
+AEM kan uw bestaande site automatisch aanpassen om de front-end pijplijn te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page) gebruiken.
 
 ## Het toelaten van Voorste Pijl-Eind {#enabling}
 
@@ -75,7 +77,7 @@ De voorste-Eind Pijpleiding kan met [ worden gebruikt de eigenschap van de douan
 
 Statische front-end activa die via de Voorste-Eind Pijpleiding worden opgesteld zullen, door gebrek, van het vooraf bepaalde statische domein van Adobe worden gediend.
 
-Als u een aangepast domein nodig hebt voor front-end elementen, kunt u een aangepast domein installeren op de publicatielijst en de Dispatcher zodanig configureren dat specifieke paden (zoals `/static/` ) naar de statische hostinglocatie van Adobe worden geleid. Deze methode vereist het bijwerken van uw [ regels van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) behoorlijk en geheim voorgeheugenverzoeken om statische activa door:sturen.
+Als u een aangepast domein nodig hebt voor front-end elementen, kunt u een aangepast domein installeren op de publicatielijst en de Dispatcher zodanig configureren dat specifieke paden (zoals `/static/` ) naar de statische hostinglocatie van Adobe worden geleid. Deze methode vereist het bijwerken van uw [ regels van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) behoorlijk en geheim voorgeheugenverzoeken om statische activa door:sturen.
 
 Nadat u het aangepaste domein en de dispatcher hebt geconfigureerd, kunt u AEM configureren voor de front-end elementen van het statische domein.
 
@@ -102,7 +104,7 @@ Pagina&#39;s voor de site verwijzen vervolgens naar themaartefacten van die bijg
 
 Als u front-end activa plaatselijk moet ontwikkelen en testen alvorens via de Voor-Eind Pijpleiding op te stellen, overweeg de volgende benaderingen:
 
-* Gebruik de Wijze van de Volmacht van de Bouwer van het Thema van de Plaats [&#128279;](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) om thema artefacten voor het testen plaatselijk met voeten te treden.
+* Gebruik de Wijze van de Volmacht van de Bouwer van het Thema van de Plaats ](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) om thema artefacten voor het testen plaatselijk met voeten te treden.[
 * Plaats uw themabestanden handmatig vanaf een lokale ontwikkelingsserver en werk de `prefixPath` in `HtmlPageItemsConfig` bij, zodat deze overeenkomt met het lokale serveradres.
 * Zorg ervoor dat het in cache plaatsen van browsers tijdens het testen is uitgeschakeld om live updates te zien.
 

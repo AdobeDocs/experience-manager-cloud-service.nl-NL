@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 2%
@@ -17,11 +17,9 @@ ht-degree: 2%
 
 Leer hoe u uw website kunt organiseren met AEM. Zodra u begrijpt hoe u uw pagina&#39;s moet organiseren, kunt u [ nieuwe pagina&#39;s ](/help/sites-cloud/authoring/sites-console/creating-pages.md) creëren en [ het bestaan pagina&#39;s ](/help/sites-cloud/authoring/sites-console/managing-pages.md) beheren.
 
-{{edge-delivery-authoring}}
-
 ## Uw site organiseren {#organizing-your-site}
 
-Als auteur moet u uw site binnen AEM ordenen. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
+Als auteur moet u uw site ordenen in AEM. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
 
 * U kunt deze gemakkelijk vinden in de ontwerpomgeving
 * Bezoekers naar uw site kunnen deze gemakkelijk in de publicatieomgeving bekijken
@@ -30,7 +28,7 @@ U kunt [ omslagen ](#creating-a-new-folder) ook gebruiken helpen uw inhoud organ
 
 De structuur van een website kan worden beschouwd als een structuur die uw inhoudspagina&#39;s bevat. De namen van deze inhoudspagina&#39;s worden gebruikt om URLs te vormen, terwijl de titels worden getoond wanneer de paginainhoud wordt bekeken.
 
-Het volgende toont een voorbeeld van de [ plaats van het Leerprogramma WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL), waar een artikel over skateparks (`la-skateparks`) wordt betreden:
+Het volgende toont een voorbeeld van de [ plaats van het Leerprogramma WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), waar een artikel over skateparks (`la-skateparks`) wordt betreden:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -77,7 +75,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Wanneer het creëren van een pagina, AEM [ bevestigt de paginanaam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd.
+Wanneer het creëren van een pagina, bevestigt AEM [ de paginanaam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
 De minimaal toegestane tekens zijn:
 
@@ -95,9 +93,9 @@ De volledige details van alle toegestane karakters kunnen in [ worden gevonden d
 
 ### Titel {#title}
 
-Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, AEM leidt de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd.
+Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, leidt AEM de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
-Het gebied van de Titel van A **&#x200B;**&#x200B;dat ongeldige karakters bevat wordt goedgekeurd, maar de afgeleide naam heeft de ongeldige karakters vervangen. Bijvoorbeeld:
+Het gebied van de Titel van A **** dat ongeldige karakters bevat wordt goedgekeurd, maar de afgeleide naam heeft de ongeldige karakters vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -106,7 +104,7 @@ Het gebied van de Titel van A **&#x200B;**&#x200B;dat ongeldige karakters bevat 
 
 ### Naam {#name}
 
-Wanneer u een pagina **Naam** wanneer het creëren van een pagina levert, AEM [ bevestigt de naam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd. U kunt geen ongeldige karakters op het **gebied van de Naam** voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een uitleg.
+Wanneer u een pagina **Naam** wanneer het creëren van een pagina levert, bevestigt AEM [ de naam volgens de overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md) die door AEM en JCR worden opgelegd. U kunt geen ongeldige karakters op het **gebied van de Naam** voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
 
 ![ Voorbeeld van het ingaan van een ongeldige paginanaam ](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -122,7 +120,7 @@ In AEM, is a [ malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md
 
 De sjabloon definieert de structuur van een pagina, inclusief een miniatuurafbeelding en andere eigenschappen. U hebt bijvoorbeeld aparte sjablonen voor productpagina&#39;s, sitemaps en contactgegevens. De malplaatjes worden samengesteld uit [ componenten ](#components).
 
-AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
+AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
 
 * **Titel** - de titel die op het resulterende Web-pagina wordt getoond
 * **Naam** - Gebruikt wanneer het noemen van de pagina
@@ -135,7 +133,7 @@ AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst.
 * Tekst
 * Afbeelding
 * Titel
-* Carousel
+* Carrousel
 * En nog veel meer
 
 Zodra u hebt gecreeerd en een pagina geopend kunt u [ inhoud toevoegen gebruikend de componenten ](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component), die van [ componentenbrowser ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) beschikbaar zijn.

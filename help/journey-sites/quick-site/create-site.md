@@ -1,11 +1,11 @@
 ---
 title: Site maken van sjabloon
-description: Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
+description: Leer hoe u snel een AEM-site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -14,39 +14,41 @@ ht-degree: 0%
 
 # Site maken van sjabloon {#create-site-from-template}
 
-Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
+{{traditional-aem}}
+
+Leer hoe u snel een AEM-site kunt maken met een sitesjabloon.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Begrijp Cloud Manager en het Snelle Werkschema van de Aanmaak van de Plaats ](cloud-manager.md), leerde u over Cloud Manager en hoe het het nieuwe Snelle proces van de Aanmaak van de Plaats verbindt en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ Begrijp Cloud Manager en het Snelle Werkschema van de Aanmaak van de Plaats ](cloud-manager.md), leerde u over Cloud Manager en hoe het het nieuwe Snelle proces van de Aanmaak van de Plaats verbindt en u zou nu moeten:
 
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om front-end ontwikkeling te vergemakkelijken
-* Ontdek hoe de stap voor aanpassing volledig losgekoppeld is van AEM en geen AEM kennis vereist.
+* Ontdek hoe de stap voor aanpassing aan de voorkant volledig losgekoppeld is van AEM en geen AEM-kennis vereist.
 
 Dit artikel bouwt op die grondbeginselen voort zodat kunt u de eerste configuratiestap nemen en een plaats voor een malplaatje tot stand brengen dat u later kunt aanpassen gebruikend voorste-eindhulpmiddelen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe u snel een AEM site kunt maken met een sitesjabloon. Na het lezen moet u:
+Dit document helpt u te begrijpen hoe u snel een AEM-site kunt maken met een sitesjabloon. Na het lezen moet u:
 
-* Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
+* Begrijp hoe u AEM Site-sjablonen kunt verkrijgen.
 * Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
 ## Verantwoordelijke rol {#responsible-role}
 
-Dit deel van de reis is op de AEM beheerder van toepassing.
+Dit deel van de reis is van toepassing op de beheerder van AEM.
 
 ## Sitesjablonen {#site-templates}
 
 Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig en herbruikbaar pakket. Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en informatie over de siteopmaak om snel met de nieuwe site aan de slag te kunnen gaan. De werkelijke structuur is als volgt:
 
-* `files`: Map met de UI-kit, XD bestand en mogelijk andere bestanden
+* `files`: map met de UI-kit, het XD-bestand en mogelijk andere bestanden
 * `previews`: map met screenshots van de sitesjabloon
 * `site`: Inhoudspakket met de inhoud die wordt gekopieerd voor elke site die met deze sjabloon wordt gemaakt, zoals paginasjablonen, pagina&#39;s enzovoort.
 * `theme`: bronnen van het sjabloonthema om de weergave van de site te wijzigen, zoals CSS, JavaScript enzovoort.
 
-Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inhoud snel een site kunnen maken. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om aan diverse bedrijfsbehoeften te voldoen.
+Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inhoud snel een site kunnen maken. En aangezien u veelvoudige malplaatjes in uw installatie van AEM kunt hebben, hebt u de flexibiliteit om aan diverse bedrijfsbehoeften te voldoen.
 
 >[!NOTE]
 >
@@ -54,13 +56,13 @@ Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inho
 
 ## Sitesjabloon verkrijgen {#obtaining-template}
 
-De eenvoudigste manier om begonnen te worden is [ de recentste versie van het AEM StandaardMalplaatje van de Plaats van zijn bewaarplaats GitHub ](https://github.com/adobe/aem-site-template-standard/releases) te downloaden.
+De eenvoudigste manier om begonnen te worden is de recentste versie van het Malplaatje van de Plaats van AEM Standaard van zijn bewaarplaats GitHub ](https://github.com/adobe/aem-site-template-standard/releases) te downloaden.[
 
-Nadat u het bestand hebt gedownload, kunt u het net als elk ander pakket uploaden naar de AEM. Zie de [ Extra sectie van Middelen ](#additional-resources) voor details op hoe te met pakketten werken als u meer informatie over dit onderwerp nodig hebt.
+Na het downloaden kunt u het net als elk ander pakket uploaden naar uw AEM-omgeving. Zie de [ Extra sectie van Middelen ](#additional-resources) voor details op hoe te met pakketten werken als u meer informatie over dit onderwerp nodig hebt.
 
 >[!TIP]
 >
->Het AEM Standaard Sjabloon van de Plaats kan worden aangepast aan de behoeften van uw project en kan verdere aanpassing overbodig maken. Dit onderwerp valt echter buiten het bereik van deze reis. Zie de documentatie GitHub van het StandaardMalplaatje van de Plaats voor meer informatie.
+>Het AEM Standard Site-sjabloon kan worden aangepast aan de behoeften van uw project en kan verdere aanpassing overbodig maken. Dit onderwerp valt echter buiten het bereik van deze reis. Zie de documentatie GitHub van het StandaardMalplaatje van de Plaats voor meer informatie.
 
 >[!TIP]
 >
@@ -70,7 +72,7 @@ Nadat u het bestand hebt gedownload, kunt u het net als elk ander pakket uploade
 
 Het is eenvoudig om een site te maken met een sjabloon.
 
-1. Onderteken in uw AEM ontwerpomgeving en navigeer naar de Sites-console
+1. Aanmelden bij uw AEM-ontwerpomgeving en naar de Sites-console navigeren
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
@@ -148,7 +150,7 @@ U hebt nu een kopie van de bronbestanden voor thema&#39;s in uw downloadbestande
 
 ## Proxy-gebruiker instellen {#proxy-user}
 
-Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met behulp van werkelijke AEM inhoud van uw site, moet u een proxygebruiker instellen.
+Als u wilt dat de front-end ontwikkelaar de aanpassingen voorvertoont met AEM-inhoud van uw site, moet u een proxygebruiker instellen.
 
 1. In AEM van belangrijkste navigatie gaat naar **Hulpmiddelen** > **Veiligheid** > **Gebruikers**.
 1. In de console van het gebruikersbeheer, uitgezochte **creeert**.
@@ -161,7 +163,7 @@ Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met
    ![ Nieuwe gebruikersdetails ](assets/new-user-details.png)
 
 1. Op het **lusje van Groepen**, voeg de volmachtsgebruiker aan de `contributors` groep toe.
-   * Als u de term `contributors` typt, wordt AEM functie voor automatisch aanvullen geactiveerd, zodat u de groep gemakkelijk kunt selecteren.
+   * Als u de term `contributors` typt, wordt de functie voor automatisch aanvullen in AEM geactiveerd, zodat u de groep gemakkelijk kunt selecteren.
 
    ![ toevoegen aan groep ](assets/add-to-group.png)
 
@@ -171,20 +173,20 @@ U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het ma
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
+Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volgende doen:
 
-* Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
+* Begrijp hoe u AEM Site-sjablonen kunt verkrijgen.
 * Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ eerst te herzien Opstelling Uw Pijpleiding ](pipeline-setup.md) voort, waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.
+Bouw op deze kennis voort en ga uw reis van het Gemaakt van de Plaats van AEM Snelle door het document [ eerst te herzien Opstelling Uw Pijpleiding ](pipeline-setup.md) voort, waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door de document [ Reeks te herzien Uw Pijpleiding ](pipeline-setup.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ AEM het StandaardMalplaatje van de Plaats ](https://github.com/adobe/aem-site-template-standard) - dit is de bewaarplaats GitHub van het AEM Standaardmalplaatje van de Plaats.
-* [ het Organiseren van Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Deze gids specificeert hoe te om de pagina&#39;s van uw Plaats van de AEM te organiseren.
+* [ het StandaardMalplaatje van de Plaats van AEM ](https://github.com/adobe/aem-site-template-standard) - dit is de bewaarplaats GitHub van het malplaatje van de Plaats van AEM Standaard.
+* [ het Organiseren van Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Deze gids specificeert hoe te om de pagina&#39;s van uw Plaats van AEM te organiseren.
 * [ Creërend Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Deze gids bepaalt hoe te om nieuwe pagina&#39;s aan uw plaats toe te voegen.
 * [ het Leiden Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Deze gids bepaalt hoe te om de pagina&#39;s van uw plaats te beheren met inbegrip van het bewegen, het kopiëren, en het schrappen.
 * [ hoe te met Pakket ](/help/implementing/developing/tools/package-manager.md) te werken - de Pakketten laten het invoeren en het uitvoeren van bewaarplaatsinhoud toe. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.

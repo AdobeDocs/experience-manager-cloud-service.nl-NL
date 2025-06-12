@@ -5,7 +5,7 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 3%
@@ -14,18 +14,20 @@ ht-degree: 3%
 
 # Toegang tot Git Repository ophalen {#retrieve-access}
 
+{{traditional-aem}}
+
 Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot informatie in de git-opslagplaats.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Als u een front-end ontwikkelaar slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van hoe AEM opstelling was vereist en kan aan de [ Doelstelling ](#objective) sectie van dit document overslaan.
+Als u een front-end ontwikkelaar slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van nodig hoe AEM opstelling was en aan de [ Doelstelling ](#objective) sectie van dit document kan overslaan.
 
-Als u ook de rol van Cloud Manager of AEM beheerder en front-end ontwikkelaar dient, leerde u in het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Toegang van de Verlening tot de Voorste-Eind Ontwikkelaar ](grant-access.md), hoe te aan boord de front-end ontwikkelaar zodat hebben zij toegang tot de git bewaarplaats, en u zou nu moeten weten:
+Als u ook de rol van de beheerder van Cloud Manager of van AEM en front-end ontwikkelaar dient, leerde u in het vorige document van de reis van de Aanmaak van de Plaats van AEM Snelle, [ Toegang van de Verlening tot de Front-End Ontwikkelaar ](grant-access.md), hoe te aan boord de front-end ontwikkelaar zodat hebben zij toegang tot de git bewaarplaats, en u zou nu moeten weten:
 
 * Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
-Dit artikel neemt de volgende stap om te tonen hoe de front-end ontwikkelaar de toegang van Cloud Manager gebruikt om geloofsbrieven terug te winnen om tot de AEM git bewaarplaats toegang te hebben.
+In dit artikel wordt de volgende stap gezet om te tonen hoe de front-end ontwikkelaar de Cloud Manager-toegang gebruikt om referenties op te halen voor toegang tot de AEM git-opslagplaats.
 
 Nu er een plaats is die op een malplaatje wordt gecreeerd, is er een pijpleidingsopstelling, wordt de front-end ontwikkelaar bewaakt en heeft alle informatie zij nodig hebben, verschuift dit artikel perspectief van de beheerders en exclusief aan de front-end ontwikkelaarrol.
 
@@ -34,7 +36,7 @@ Nu er een plaats is die op een malplaatje wordt gecreeerd, is er een pijpleiding
 In dit document wordt uitgelegd hoe u, in de rol van de front-end ontwikkelaar, toegang kunt krijgen tot Cloud Manager en toegangsreferenties kunt ophalen naar de AEM git-opslagplaats. Na het lezen zult u:
 
 * Begrijp op een hoog niveau wat Cloud Manager is.
-* Uw referenties zijn opgehaald voor toegang tot de AEM, zodat u uw aanpassingen kunt doorvoeren.
+* U hebt uw gegevens opgehaald voor toegang tot de AEM-kit zodat u uw aanpassingen kunt doorvoeren.
 
 ## Verantwoordelijke rol {#responsible-role}
 
@@ -42,9 +44,9 @@ Dit deel van de reis geldt voor de front-end ontwikkelaar.
 
 ## Vereisten {#requirements}
 
-Met het gereedschap Snel site maken kunnen ontwikkelaars aan de voorkant onafhankelijk werken zonder kennis van AEM of hoe ze zijn ingesteld. Nochtans, moet de beheerder van Cloud Manager op de front-end ontwikkelaar in het projectteam en de AEM beheerder u van wat vereiste informatie voorzien. Controleer of u de volgende informatie hebt voordat u doorgaat.
+Met het gereedschap Snel site maken kunnen ontwikkelaars aan de voorkant onafhankelijk werken zonder kennis van AEM of hoe deze is ingesteld. Nochtans, moet de beheerder van Cloud Manager op de front-end ontwikkelaar in het projectteam en de beheerder van AEM u van wat vereiste informatie voorzien. Controleer of u de volgende informatie hebt voordat u doorgaat.
 
-* Van de AEM beheerder:
+* Van de AEM-beheerder:
    * Themabronbestanden om aan te passen
    * Pad naar een voorbeeldpagina die als basis voor verwijzing moet worden gebruikt
    * Proxy-gebruikersgegevens om uw aanpassingen te testen op live AEM-inhoud
@@ -53,7 +55,7 @@ Met het gereedschap Snel site maken kunnen ontwikkelaars aan de voorkant onafhan
    * Een welkomstbericht van Cloud Manager waarin u op de hoogte wordt gesteld van toegang
    * De naam van het programma of de URL in Cloud Manager
 
-Neem contact op met de AEM beheerder of de Cloud Manager-beheerder als u een van deze items mist.
+Neem contact op met de AEM-beheerder of de Cloud Manager-beheerder als u een van deze items mist.
 
 Aangenomen wordt dat de front-end ontwikkelaar uitgebreide ervaring heeft met front-end ontwikkelingsworkflows en gangbare geïnstalleerde gereedschappen, waaronder:
 
@@ -64,11 +66,11 @@ Aangenomen wordt dat de front-end ontwikkelaar uitgebreide ervaring heeft met fr
 
 ## Cloud Manager begrijpen {#understanding-cloud-manager}
 
-Cloud Manager stelt organisaties in staat zelf AEM te beheren in de cloud. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid.
+Cloud Manager stelt organisaties in staat om AEM in de cloud zelf te beheren. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid.
 
 Voor de front-end ontwikkelaar, is het de gateway aan:
 
-* Toegang tot AEM informatie over de opslagplaats zodat u uw aanpassingen vooraf kunt doorvoeren.
+* Toegang tot de informatie van de AEM git-opslagplaats zodat u uw aanpassingen vooraf kunt doorvoeren.
 * Begin de plaatsingspijpleiding om uw aanpassingen op te stellen.
 
 De Cloud Manager-beheerder heeft u als Cloud Manager-gebruiker aangemeld. U zou een welkome e-mail gelijkend op het volgende moeten ontvangen hebben.
@@ -95,7 +97,7 @@ U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is 
 
    ![ Pijpleidingen ](assets/pipelines-repo-info.png)
 
-1. Het **dialoog van Info van de Bewaarplaats 0&rbrace; &lbrace;opent.**
+1. Het **dialoog van Info van de Bewaarplaats 0} {opent.**
 
    ![ Repo info ](assets/repo-info.png)
 
@@ -109,15 +111,15 @@ U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is 
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
+Nu u dit deel van de AEM Quick Site Creation-reis hebt voltooid, kunt u het volgende doen:
 
 * Begrijp op een hoog niveau wat Cloud Manager is.
-* Uw referenties zijn opgehaald voor toegang tot de AEM, zodat u uw aanpassingen kunt doorvoeren.
+* U hebt uw gegevens opgehaald voor toegang tot de AEM-kit zodat u uw aanpassingen kunt doorvoeren.
 
-Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ opnieuw te bekijken aanpassen het Thema van de Plaats ](customize-theme.md) voort, waar u leert hoe het plaatsthema wordt gebouwd, hoe te, en hoe te om het gebruiken van levende AEM inhoud te testen.
+Bouw op deze kennis voort en zet uw reis van de Gemaakt van de Plaats van AEM Snelle door het document [ te herzien pas het Thema van de Plaats ](customize-theme.md) aan, waar u leert hoe het plaatsthema wordt gebouwd, hoe te aan te passen, en hoe te om het gebruiken van levende inhoud van AEM te testen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien aanpast het Thema van de Plaats ](customize-theme.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [ de Documentatie van Adobe Experience Manager Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=nl-NL) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.
+* [ de Documentatie van Adobe Experience Manager Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Onderzoek de documentatie van Cloud Manager voor volledige details van zijn eigenschappen.

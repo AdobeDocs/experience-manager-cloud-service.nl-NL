@@ -4,9 +4,9 @@ description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ Met Edge Delivery Services kunt u:
 * Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via Operationele Telemetrie.
 * Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. In het vak kunt u zowel AEM-authoring gebruiken met de Universal Editor als documentgebaseerde authoring. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
 * Gebruik een ingebouwd raamwerk voor experimenteren dat het mogelijk maakt snel tests te maken, uit te voeren zonder invloed op de prestaties en snel vrij te maken voor de productie van een testwinnaar.
+
+>[!TIP]
+>
+>**wil om hands-on recht weg te krijgen?**
+>
+>Als u hands-on wilt onmiddellijk krijgen, kunt u uw eigen project van Edge Delivery Services met het schrijven van AEM in minder dan 30 minuten beginnen door [ uit het leerprogramma op aem.live te controleren.](https://www.aem.live/developer/ue-tutorial)
 
 ## Gelijke reactie op zakelijke behoeften {#agile-reaction}
 
@@ -54,6 +60,22 @@ In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten geb
 
 Edge Delivery Services gebruikt GitHub zodat kunt u code direct van uw bewaarplaats beheren en opstellen GitHub. Nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
+### AEM Authoring met de Universal Editor{#wysiwyg-authoring}
+
+De Universal Editor is een aanpasbare, one-stop-plaats om inhoud live en in-context te bewerken met een visuele voorvertoning.
+
+* Bij AEM-authoring met de Universal Editor verhoogt u de efficiëntie van de auteur, of deze nu koploos of kopend is.
+* U kunt profiteren van de uitgebreide mogelijkheden van AEM voor contentbeheer, waaronder workflow en governance.
+* Gebruikt talrijke uitbreidingspunten om uw eigen processen en integratie te steunen.
+* De functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub.
+
+![ AEM authoring met de Universele Redacteur ](assets/wysiwyg-authoring.png)
+
+Ga aan de slag met AEM authoring met de Universal Editor en Edge Delivery Services:
+
+* Voor een overzicht van AEM authoring met de Universele Redacteur, zie het document [ Authoring met AEM voor Edge Delivery Services ](https://www.aem.live/docs/aem-authoring) in de aem.live documentatie.
+* Voor een ontwikkelaarsoverzicht, zie het document [ Begonnen worden - Universele Zelfstudie van de Ontwikkelaar van de Redacteur ](https://www.aem.live/developer/ue-tutorial) in de documentatie aem.live.
+
 ### Authoring op basis van documenten {#document-based}
 
 Met documentgebaseerde ontwerpfuncties kunt u inhoud rechtstreeks vanuit Microsoft Word of Google Docs gebruiken, zodat deze bronnen pagina&#39;s op uw website worden. Koppen, lijsten, afbeeldingen en lettertype-elementen kunnen allemaal van de oorspronkelijke bron naar de website worden overgebracht.
@@ -71,22 +93,6 @@ Lees verder in de op documenten gebaseerde ontwerpdocumentatie:
 * Om te begrijpen om inhoud te schrijven en te publiceren door Edge Delivery te gebruiken, zie [ Publish sectie van de aem.live documentatie.](https://www.aem.live/docs/authoring)
 * Om te begrijpen hoe te om uw websiteproject behoorlijk te lanceren, zie de [ sectie van de Lancering van de aem.live documentatie ](https://www.aem.live/docs/#launch)
 
-### AEM Authoring met de Universal Editor{#wysiwyg-authoring}
-
-De Universal Editor is een aanpasbare, one-stop-plaats om inhoud live en in-context te bewerken met een visuele voorvertoning.
-
-* Bij AEM-authoring met de Universal Editor verhoogt u de efficiëntie van de auteur, of deze nu koploos of kopend is.
-* U kunt profiteren van de uitgebreide mogelijkheden van AEM voor contentbeheer, waaronder workflow en governance.
-* Gebruikt talrijke uitbreidingspunten om uw eigen processen en integratie te steunen.
-* De functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub.
-
-![ AEM authoring met de Universele Redacteur ](assets/wysiwyg-authoring.png)
-
-Ga aan de slag met AEM authoring met de Universal Editor en Edge Delivery Services:
-
-* Voor een overzicht van AEM authoring met de Universele Redacteur, zie het document [ Authoring met AEM voor Edge Delivery Services ](https://www.aem.live/docs/aem-authoring) in de aem.live documentatie.
-* Voor een ontwikkelaarsoverzicht, zie het document [ Begonnen worden - Universele Zelfstudie van de Ontwikkelaar van de Redacteur ](https://www.aem.live/developer/ue-tutorial) in de documentatie aem.live.
-
 ### Beslissen op uw auteursmethode {#authoring-method}
 
 Flexibiliteit bij AEM zorgt ervoor dat aan uw ontwerpbehoeften wordt voldaan. Adobe kan u helpen bepalen welke methode (of methoden) het beste aan uw vereisten voldoen.
@@ -102,7 +108,7 @@ Edge Delivery Services maakt deel uit van Adobe Experience Manager. Op die manie
 
 Zie het document [ Begonnen worden - Universele Zelfstudie van de Ontwikkelaar van de Redacteur ](https://www.aem.live/developer/ue-tutorial) in de aem.live documentatie leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
 
-U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration), [ Operationele Telemetrie ](https://www.aem.live/developer/rum) ook gebruiken om gebruik en prestaties van uw plaatsen te diagnostiseren, en [ Lancering.](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home)
+U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration), [ Operationele Telemetrie ](https://www.aem.live/developer/rum) ook gebruiken om gebruik en prestaties van uw plaatsen te diagnostiseren, en [ Lancering.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Help van Adobe opvragen {#getting-help}
 

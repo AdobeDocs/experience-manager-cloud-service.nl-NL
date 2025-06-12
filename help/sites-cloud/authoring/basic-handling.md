@@ -1,11 +1,11 @@
 ---
 title: Basisverwerking
-description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
+description: Geniet van comfortabel navigeren door AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 0%
@@ -15,17 +15,15 @@ ht-degree: 0%
 
 # Basisverwerking {#basic-handling}
 
-Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij het gebruik van de AEM-auteursomgeving.
+Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij gebruik van de AEM-auteursomgeving.
 
 >[!TIP]
 >
->Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [ het gebruiken van de plaatsenconsole ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) en [ de paginaredacteur ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
-
-{{edge-delivery-authoring}}
+>Sneltoetsen zijn beschikbaar in AEM. Met name wanneer [ het gebruiken van de plaatsenconsole ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) en [ de paginaredacteur ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
 
-AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, tikken en vegen. Omdat de AEM-interface aanraakbediening is, kunt u de aanraakbewegingen gebruiken op uw aanraakapparaten, zoals uw mobiele telefoon of tablet. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op een flexibele manier uw inhoud kunt ontwerpen.
+De AEM-gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, tikken en vegen. Omdat de gebruikersinterface van de AEM aanraakbediening is, kunt u de aanraakbewegingen gebruiken op uw aanraakapparaten, zoals uw mobiele telefoon of tablet. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op een flexibele manier uw inhoud kunt ontwerpen.
 
 ## Eerste stappen {#first-steps}
 
@@ -37,7 +35,7 @@ Om een goed inzicht in het basisgebruik van AEM te krijgen, is dit document geba
 
 ## Productnavigatie {#product-navigation}
 
-Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Neem een minuut om door te selecteren om een goed overzicht van de basisbehandeling van AEM te krijgen.
+Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Neem even de tijd om een keuze te maken voor een goed overzicht van de basisafhandeling van AEM.
 
 ![ zelfstudie van de Navigatie ](assets/basic-handling-tutorial.png)
 
@@ -73,9 +71,9 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Console | Doel |
 |---|---|
 | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [ de Projecten zijn virtuele dashboards ](/help/sites-cloud/authoring/projects/overview.md) die kunnen worden gebruikt om een team te bouwen. U kunt dat team dan toegang tot middelen, werkschema&#39;s, en taken geven, zo toestaand mensen om aan een gemeenschappelijk doel te werken. |
-| Sites | [ de console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md) laat u plaatsen creëren, bekijken en beheren die op uw AEM instantie lopen. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
+| Sites | [ de console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md) laat u plaatsen creëren, bekijken en beheren die op uw instantie van AEM lopen. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
 | Ervaar fragmenten | Een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/content-fragments.md) is een stand-alone ervaring die over kanalen kan worden hergebruikt en variaties hebben, die het probleem van herhaaldelijk het kopiëren en het kleven ervaringen of delen van ervaringen sparen. |
-| Assets | De console van Assets laat u [ digitale activa zoals beelden, video&#39;s, documenten, en audiodossiers invoeren en beheren ](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt [ Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) van de console van Assets ook tot stand brengen en beheren. |
+| Assets | De console van Assets laat u [ digitale activa zoals beelden, video&#39;s, documenten, en audiodossiers invoeren en beheren ](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM-instantie wordt uitgevoerd. U kunt [ Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) van de console van Assets ook tot stand brengen en beheren. |
 | Personalization | Deze console verstrekt een kader van hulpmiddelen voor [ creërend gerichte inhoud en presenterend gepersonaliseerde ervaringen ](/help/sites-cloud/authoring/personalization/overview.md). |
 | Inhoudsfragmenten | [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) staan u toe om, pagina-onafhankelijke inhoud te ontwerpen tot stand te brengen, te leiden en te publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
 | Variaties genereren | [ produceer Variaties ](/help/generative-ai/generate-variations.md) gebruik generatieve die Intelligentie Artificial (AI) om inhoudvariaties tot stand te brengen op herinneringen worden gebaseerd; deze herinneringen worden of verstrekt door Adobe of, en geleid, door gebruikers. |
@@ -102,7 +100,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * Uw IMS-organisatie - selecteer indien nodig om deze te wijzigen.
 
-* [ Oplossingen ](https://www.adobe.com/experience-cloud.html) - selecteer dit om tot uw andere oplossingen van de Adobe toegang te hebben.
+* [ Oplossingen ](https://www.adobe.com/experience-cloud.html) - selecteer dit om tot uw andere oplossingen van Adobe toegang te hebben.
 
   ![ knoop van Oplossingen ](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
@@ -130,7 +128,7 @@ Er zijn een aantal beschikbare hulpmiddelen en een paar manieren om tot het toeg
 
   ![ pictogram van de Hulp ](assets/basic-handling-help.png)
 
-* **Console** - de eerste keer u het systeem navigeert, [ introduceert een reeks dia&#39;s AEM navigatie ](#product-navigation).
+* **Console** - de eerste keer u het systeem navigeert, [ een reeks dia&#39;s introduceert de navigatie van AEM ](#product-navigation).
 
   ![ Leerprogramma ](assets/basic-handling-console-tutorial.png)
 
@@ -141,7 +139,7 @@ Er zijn een aantal beschikbare hulpmiddelen en een paar manieren om tot het toeg
    * Navigeer dit overzicht aangezien u het [ overzicht van de productnavigatie ](#product-navigation) wanneer eerst de toegang tot van om het even welke console.
    * Van het [**menu van de Informatie van de Pagina** kunt u **Hulp**](#accessing-help) selecteren om dit op elk ogenblik opnieuw te tonen.
 
-* **Console van Hulpmiddelen** - van de **3&rbrace; console van Hulpmiddelen &lbrace;kunt u tot de externe** Middelen **ook toegang hebben:**
+* **Console van Hulpmiddelen** - van de **3} console van Hulpmiddelen {kunt u tot de externe** Middelen **ook toegang hebben:**
 
    * **Documentatie** - bekijk de documentatie van het Beheer van de Ervaring van het Web
    * **Middelen van de Ontwikkelaar** - de middelen en de downloads van de Ontwikkelaar

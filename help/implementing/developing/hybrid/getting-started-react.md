@@ -1,53 +1,55 @@
 ---
-title: Aan de slag met SPA in AEM Reageren gebruiken
-description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag met het React-framework.
+title: Begonnen het worden met SPAs in AEM Gebruikend Reageren
+description: Dit artikel stelt een steekproeftoepassing van het KUUROORD voor, verklaart hoe het wordt samengesteld, en laat u in werking stellen met uw eigen KUUROORD snel gebruikend het kader van het Reageren.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met SPA in AEM Reageren gebruiken {#getting-started-with-spas-in-aem-using-react}
 
-Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van SPA frameworks.
+# Begonnen het worden met SPAs in AEM Gebruikend Reageren {#getting-started-with-spas-in-aem-using-react}
 
-De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Dit artikel biedt een vereenvoudigde SPA toepassing voor het React-framework, legt uit hoe het is samengesteld, zodat u snel aan de slag kunt met uw eigen SPA.
+Toepassingen van één pagina (SPAs) kunnen dwingende ervaringen voor websitegebruikers aanbieden. De ontwikkelaars willen plaatsen kunnen bouwen gebruikend het kader van het KUUROORD en de auteurs willen inhoud binnen AEM voor een plaats foutloos uitgeven die gebruikend het kader van het KUUROORD wordt gebouwd.
+
+De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het steunen van SPAs binnen AEM aan. Dit artikel stelt een vereenvoudigde toepassing van het KUUROORD op het kader van het Reageren voor, verklaart hoe het wordt samengesteld, toestaand u om snel met uw eigen KUUROORD in werking te stellen.
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van de Angular zie [ Begonnen het worden met SPA in AEM - Angular ](getting-started-angular.md).
+>Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van Angular zie [ Begonnen Worden met SPAs in AEM - Angular ](getting-started-angular.md).
 
 {{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
-Dit artikel vat het basisfunctioneren van een eenvoudige SPA en het minimum samen dat u moet weten om van u lopend te krijgen.
+Dit artikel vat het basisfunctioneren van een eenvoudige KUUROORD en het minimum samen dat u moet weten om van u lopende te krijgen.
 
-Raadpleeg de volgende documenten voor meer informatie over SPA werken in AEM:
+Voor meer detail op hoe SPAs in AEM werkt, zie de volgende documenten:
 
-* [SPA Inleiding en Analyse](introduction.md)
-* [Overzicht SPA Editor](editor-overview.md)
-* [SPA](blueprint.md)
+* [Introductie van het KUUROORD en Analyse](introduction.md)
+* [Overzicht van SPA-editor](editor-overview.md)
+* [SPA-blauwdruk](blueprint.md)
 
 >[!NOTE]
 >
->Om inhoud binnen een SPA te kunnen ontwerpen, moet de inhoud in AEM worden opgeslagen en door het inhoudsmodel worden blootgesteld.
+>Om inhoud binnen een SPA te kunnen schrijven, moet de inhoud in AEM worden opgeslagen en door het inhoudsmodel worden blootgesteld.
 >
->Een SPA die buiten AEM is ontwikkeld, is niet aanvaardbaar als het contract voor het inhoudsmodel niet wordt nageleefd.
+>Een SBZ die buiten AEM is ontwikkeld, is niet toegestaan als het contract voor het inhoudsmodel niet wordt nageleefd.
 
-Dit document doorloopt de structuur van een vereenvoudigde SPA die is gemaakt met het React-framework en illustreert hoe het werkt, zodat u deze interpretatie kunt toepassen op uw eigen SPA.
+Dit document zal door de structuur van een vereenvoudigde SPA lopen die gebruikend het React kader wordt gecreeerd en zal illustreren hoe het werkt zodat kunt u dit begrip op uw eigen SPA toepassen.
 
 ## Afhankelijkheden, configuratie en gebouwen {#dependencies-configuration-and-building}
 
-Naast de verwachte afhankelijkheid van React, kan de steekproef SPA extra bibliotheken gebruiken om de verwezenlijking van SPA efficiënter te maken.
+Naast de verwachte afhankelijkheid van het Reageren, kan de steekproefSPA extra bibliotheken gebruiken om de verwezenlijking van het KUUROORD efficiënter te maken.
 
 ### Afhankelijkheden {#dependencies}
 
-Het bestand `package.json` definieert de vereisten van het algemene SPA. De minimum AEM gebiedsdelen voor een werkende SPA zijn hier vermeld.
+Het `package.json` dossier bepaalt de vereisten van het algemene pakket van het KUUROORD. De minimum AEM gebiedsdelen voor een werkende SPA zijn hier vermeld.
 
 ```
   "dependencies": {
@@ -105,23 +107,23 @@ Eigenlijk bouwend app gebruikt [ Webpack ](https://webpack.js.org/) voor transpi
 
 `"build": "webpack && clientlib --verbose"`
 
-Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
+Nadat het pakket is gemaakt, kan het worden geüpload naar een AEM-instantie.
 
-### Projectarchetype AEM {#aem-project-archetype}
+### AEM Project Archetype {#aem-project-archetype}
 
-Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
+Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
-Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM-exemplaar.
+Als u de afhankelijkheden opneemt en uw app maakt zoals eerder beschreven, blijft er een werkende SPA-pakket over dat u kunt uploaden naar uw AEM-instantie.
 
-In het volgende gedeelte van dit document wordt uitgelegd hoe een SPA in AEM is gestructureerd, welke belangrijke bestanden de toepassing sturen en hoe deze samenwerken.
+De volgende sectie van dit document zal u door hoe een KUUROORD in AEM gestructureerd is, de belangrijke dossiers die de toepassing drijven, en hoe zij samenwerken.
 
 Een vereenvoudigde afbeeldingscomponent wordt als voorbeeld gebruikt, maar alle componenten van de toepassing zijn op hetzelfde concept gebaseerd.
 
 ### index.js {#index-js}
 
-Het ingangspunt in de SPA is het `index.js` bestand dat hier wordt weergegeven en dat u zich op de belangrijke inhoud wilt concentreren.
+Het ingangspunt in het SPA is het `index.js` dossier dat hier wordt getoond vereenvoudigd om zich op de belangrijke inhoud te concentreren.
 
 ```
 import ReactDOM from 'react-dom';
@@ -182,7 +184,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In dit voorbeeld breidt de `AppPage` -klasse `Page` uit, die de methoden voor binneninhoud bevat die vervolgens kunnen worden gebruikt.
 
-`Page` neemt de JSON-representatie van het paginamodel op en verwerkt de inhoud om elk element van de pagina te buigen of te versieren. De verdere details op `Page` kunnen in het document [ SPA Vervagen ](blueprint.md) worden gevonden.
+`Page` neemt de JSON-representatie van het paginamodel op en verwerkt de inhoud om elk element van de pagina te buigen of te versieren. De verdere details op `Page` kunnen in het document [ Vervagen van het KUUROORD ](blueprint.md) worden gevonden.
 
 ### Image.js {#image-js}
 
@@ -213,11 +215,11 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-Het centrale idee van SPA in AEM is het idee om SPA componenten aan AEM componenten in kaart te brengen en de component bij te werken wanneer de inhoud (en omgekeerd) wordt gewijzigd. Zie het document [ SPA het Overzicht van de Redacteur ](editor-overview.md) voor een samenvatting van dit communicatie model.
+Het centrale idee van SPAs in AEM is het idee om de componenten van SPA aan de componenten van AEM in kaart te brengen en de component bij te werken wanneer de inhoud (en omgekeerd) wordt gewijzigd. Zie het document [ Overzicht van de Redacteur van het KUUROORD ](editor-overview.md) voor een samenvatting van dit communicatie model.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
-De methode `MapTo` wijst de SPA component aan de AEM toe. Het ondersteunt het gebruik van één tekenreeks of een array van tekenreeksen.
+De methode `MapTo` wijst de component SPA aan de component van AEM toe. Het ondersteunt het gebruik van één tekenreeks of een array van tekenreeksen.
 
 `ImageEditConfig` is een configuratieobject dat de ontwerpmogelijkheden van een component helpt in te schakelen door de vereiste metagegevens voor de editor op te geven om plaatsaanduidingen te genereren
 
@@ -250,13 +252,13 @@ De functie `MapTo` retourneert een `Component` die het resultaat is van een comp
 
 Bij het exporteren met de functies `MapTo` of `withModel` , wordt de component `Page` omsloten met een component `ModelProvider` die standaardcomponenten toegang biedt tot de nieuwste versie van het paginamodel of een exacte locatie in dat paginamodel.
 
-Voor meer informatie zie het [ SPA document van de Vervaging ](blueprint.md).
+Voor meer informatie zie het [ document van de Vervaging van het KUUROORD ](blueprint.md).
 
 >[!NOTE]
 >
 >Standaard ontvangt u het gehele model van de component wanneer u de functie `withModel` gebruikt.
 
-## Informatie delen tussen SPA componenten {#sharing-information-between-spa-components}
+## Informatie delen tussen SPA-componenten {#sharing-information-between-spa-components}
 
 Componenten in een toepassing van één pagina moeten regelmatig informatie uitwisselen. Er zijn verschillende aanbevolen manieren om dit te doen, die als volgt worden opgesomd in toenemende mate van complexiteit.
 
@@ -266,8 +268,8 @@ Componenten in een toepassing van één pagina moeten regelmatig informatie uitw
 
 ## Volgende stappen {#next-steps}
 
-* [ Begonnen het Worden met SPA in AEM gebruikend Angular ](getting-started-angular.md) toont hoe een basis SPA wordt gebouwd om met de SPA Redacteur in AEM te werken gebruikend Angular.
-* [ SPA het Overzicht van de Redacteur ](editor-overview.md) gaat in meer diepte in het communicatie model tussen AEM en de SPA.
-* [ WKND SPA Project ](wknd-tutorial.md) is een geleidelijke leerprogramma die een eenvoudig SPA project in AEM uitvoeren.
-* [ Dynamisch Model aan de Toewijzing van de Component voor SPA ](model-to-component-mapping.md) verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
-* [ SPA Vervagen ](blueprint.md) biedt een diepe duik in hoe SPA SDK voor AEM werkt voor het geval u SPA in AEM voor een kader buiten Reageren of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.
+* [ Begonnen het Worden met SPAs in AEM die Angular gebruiken ](getting-started-angular.md) toont hoe een basisKUUROORD wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken gebruikend Angular.
+* [ het Overzicht van de Redacteur van het KUUROORD ](editor-overview.md) gaat in meer diepte in het communicatie model tussen AEM en het KUUROORD.
+* [ WKND Project van het KUUROORD ](wknd-tutorial.md) is een geleidelijke leerprogramma die een eenvoudig project van het KUUROORD in AEM uitvoeren.
+* [ Dynamisch Model aan de Afbeelding van de Component voor SPAs ](model-to-component-mapping.md) verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt.
+* [ het Blauwdruk van het KUUROORD ](blueprint.md) biedt een diepe duik in hoe het KUUROORD SDK voor de werken van AEM voor het geval u SPAs in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.

@@ -1,11 +1,11 @@
 ---
 title: Sitesjablonen
-description: Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de initiële inhoud vooraf te definiëren, zodat u snel sites kunt maken.
+description: Leer hoe u met AEM-sitesjablonen de sitestructuur en initiële inhoud vooraf definieert, zodat u snel sites kunt maken.
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 # Sitesjablonen {#site-templates}
 
-Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de initiële inhoud vooraf te definiëren, zodat u snel sites kunt maken.
+{{traditional-aem}}
+
+Leer hoe u met AEM-sitesjablonen de sitestructuur en initiële inhoud vooraf definieert, zodat u snel sites kunt maken.
 
 ## Overzicht {#overview}
 
@@ -22,19 +24,19 @@ Het is handig om vooraf gedefinieerde structuren beschikbaar te hebben om snel e
 
 De malplaatjes van de plaats bevatten over het algemeen inhoud en structuur van de basisplaats en plaats het stileren informatie, die als het [ plaatsthema ](site-themes.md) wordt bekend, om een nieuwe begonnen plaats snel te krijgen. De beheerders selecteren een plaatsmalplaatje waarop om de plaats [ tijdens het proces van de plaatsverwezenlijking ](create-site.md) te baseren.
 
-Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
+Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw installatie van AEM kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
 
 >[!NOTE]
 >
->AEM plaatssjablonen zouden niet met [ paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) moeten worden verward. Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
+>De plaatssjablonen van AEM zouden niet met [ paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) moeten worden verward. Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
 >
->AEM plaatssjablonen zouden niet met [ AEM plaatsthema&#39;s ](site-themes.md) moeten worden verward. AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. AEM plaatssjablonen bepalen plaatsstructuur en aanvankelijke inhoud, en bevatten een AEM plaatsthema om voor [ snelle plaatsverwezenlijking ](create-site.md) toe te staan.
+>De plaatssjablonen van AEM zouden niet met [ de plaatsthema&#39;s van AEM ](site-themes.md) moeten worden verward. AEM-sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM-site. De plaatssjablonen van AEM bepalen plaatsstructuur en aanvankelijke inhoud, en bevatten een de plaatsthema van AEM om voor [ snelle plaatsverwezenlijking ](create-site.md) toe te staan.
 
-## Een sitesjabloon toevoegen aan AEM {#adding}
+## Sjabloon site toevoegen aan AEM {#adding}
 
 U kunt veelvoudige malplaatjes aan AEM toevoegen, die dan kunnen worden gebruikt om plaatsen [ tot stand te brengen ](create-site.md).
 
-1. Onderteken in uw AEM ontwerpomgeving en navigeer naar de Sites-console
+1. Aanmelden bij uw AEM-ontwerpomgeving en naar de Sites-console navigeren
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
@@ -60,19 +62,19 @@ Als u een bestaande sjabloon selecteert, wordt informatie over de sjabloon in de
 
 Sitesjablonen zijn eenvoudig pakketten met een logische structuur die het doel van de pakketinhoud duidelijk weerspiegelt. Een sitesjabloon heeft de volgende structuur.
 
-* `files`: Map met de UI-kit, XD bestand en mogelijk andere bestanden
+* `files`: map met de UI-kit, het XD-bestand en mogelijk andere bestanden
 * `previews`: map met screenshots van de sitesjabloon
 * `site`: Inhoudspakket met de inhoud die wordt gekopieerd voor elke site die met deze sjabloon wordt gemaakt, zoals paginasjablonen, pagina&#39;s enzovoort.
 * `theme`: Bronnen van het [ plaatsthema ](site-themes.md) om te wijzigen hoe de plaats met inbegrip van CSS, JavaScript, etc. kijkt.
 
 ## Standaardsitesjabloon {#standard-site-template}
 
-Adobe biedt een referentiesjabloon voor best practices dat u kunt gebruiken als basis voor het maken van uw eigen sjablonen. [ het StandaardMalplaatje van de Plaats is beschikbaar op GitHub ](https://github.com/adobe/aem-site-template-standard).
+Adobe biedt een referentiesjabloon voor tips en trucs die u kunt gebruiken als basis voor het maken van uw eigen sjablonen. [ het StandaardMalplaatje van de Plaats is beschikbaar op GitHub ](https://github.com/adobe/aem-site-template-standard).
 
 [ De recentste versie van het StandaardMalplaatje van de Plaats ](https://github.com/adobe/aem-site-template-standard/releases) kan worden gedownload en direct voor [ worden gebruikt creërend nieuwe plaatsen ](create-site.md).
 
 ## Sitesjablonen ontwikkelen {#developing-templates}
 
-De Adobe verstrekt en AEM de Bouwer van het Malplaatje van de Plaats als reeks manuscripten voor het creëren van nieuwe plaatsmalplaatjes.
+Adobe biedt en AEM Site Template Builder als een set scripts voor het maken van nieuwe sitesjablonen.
 
-[ de Bouwer van het Malplaatje van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub ](https://github.com/adobe/aem-site-template-builder). De voorste-eindontwikkelaarervaring wordt vereist voor het aanpassen van het [ plaatsthema ](site-themes.md) en AEM ontwikkelaarskennis wordt vereist voor het aanpassen van de plaatsstructuur en de inhoud.
+[ de Bouwer van het Malplaatje van de Plaats van AEM is beschikbaar samen met gebruiksdocumentatie op GitHub ](https://github.com/adobe/aem-site-template-builder). De voorste-eindontwikkelaarervaring wordt vereist voor het aanpassen van het [ plaatsthema ](site-themes.md) en de de ontwikkelaarskennis van AEM wordt vereist voor het aanpassen van de de plaatsstructuur en inhoud.

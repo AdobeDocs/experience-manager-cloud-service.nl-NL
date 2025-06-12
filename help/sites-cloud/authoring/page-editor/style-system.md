@@ -5,18 +5,25 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
 
-# Stijlsysteem{#style-system}
+
+# Stijlsysteem {#style-system}
 
 Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor de component flexibeler wordt.
 
 Dit elimineert de behoefte om een douanecomponent voor elke stijl te ontwikkelen of het componentendialoogvenster aan te passen om dergelijke stijlfunctionaliteit toe te laten. Het leidt tot herbruikbaardere componenten die snel en gemakkelijk aan de behoeften van inhoudsauteurs zonder enige AEM achterwaartse ontwikkeling kunnen worden aangepast.
+
+>[!NOTE]
+>
+>Het Stijlsysteem is alleen van toepassing op pagina&#39;s die zijn gemaakt met de Pagina-editor.
+>
+>Het stileren Pagina&#39;s die met de [ Universele Redacteur ](/help/implementing/universal-editor/introduction.md) worden gecreeerd en met [ Edge Delivery Services ](/help/edge/overview.md) worden gediend kan volledig door uw project worden gedaan GitHub.
 
 ## Hoofdletters gebruiken {#use-case}
 
@@ -37,17 +44,17 @@ Het gebruik van het Stijlsysteem heeft doorgaans de volgende vorm.
 
 1. De webontwerper maakt verschillende visuele variaties van een component.
 
-1. De ontwikkelaar van HTML wordt voorzien van de HTML output van de componenten en de gewenste visuele variaties om uit te voeren.
+1. De HTML-ontwikkelaar krijgt de HTML-uitvoer van de componenten en de gewenste visuele variaties die u wilt implementeren.
 
-1. De ontwikkelaar van HTML bepaalt de CSS klassen die aan elke visuele variatie beantwoorden en op het element moeten worden opgenomen die de componenten verpakt.
+1. De HTML-ontwikkelaar definieert de CSS-klassen die overeenkomen met elke visuele variatie en die moeten worden ingevoegd op het element dat de componenten omvat.
 
 1. De HTML-ontwikkelaar implementeert de bijbehorende CSS-code (en eventueel JS-code) voor elk van de visuele variaties, zodat deze er zo uitzien als gedefinieerd.
 
-1. De AEM ontwikkelaar plaatst verstrekte CSS (en facultatieve JS) in de Bibliotheek van de a [ Cliënt ](/help/implementing/developing/introduction/clientlibs.md) en stelt het op.
+1. De ontwikkelaar van AEM plaatst verstrekte CSS (en facultatieve JS) in de Bibliotheek van de a [ Cliënt ](/help/implementing/developing/introduction/clientlibs.md) en stelt het op.
 
-1. De AEM ontwikkelaar of sjabloonauteur configureert de paginasjablonen en bewerkt het beleid van elke opgemaakte component, voegt de gedefinieerde CSS-klassen toe, geeft gebruikersvriendelijke namen aan elke stijl en geeft aan welke stijlen kunnen worden gecombineerd.
+1. De AEM-ontwikkelaar of sjabloonauteur configureert de paginasjablonen en bewerkt het beleid van elke opgemaakte component, voegt de gedefinieerde CSS-klassen toe, geeft gebruikersvriendelijke namen aan elke stijl en geeft aan welke stijlen kunnen worden gecombineerd.
 
-1. De auteur van de AEM pagina kan vervolgens de ontworpen stijlen in de pagina-editor kiezen via het stijlmenu van de werkbalk van de component.
+1. De auteur van de AEM-pagina kan vervolgens de ontworpen stijlen in de pagina-editor kiezen via het stijlmenu van de werkbalk van de component.
 
 Alleen de laatste drie stappen worden daadwerkelijk in AEM uitgevoerd. Dit betekent dat alle ontwikkeling van de vereiste CSS en JavaScript kan worden uitgevoerd zonder AEM.
 
@@ -59,7 +66,7 @@ Het volgende diagram illustreert de architectuur van het Systeem van de Stijl.
 
 ## Gebruiken {#use}
 
-Om de eigenschap aan te tonen, zullen wij [ WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) implementatie van de 2&rbrace; titelcomponent van de kerncomponent [&#128279;](https://www.adobe.com/go/aem_cmp_title_v2) als voorbeeld gebruiken.
+Om de eigenschap aan te tonen, zullen wij [ WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) implementatie van de 2} titelcomponent van de kerncomponent ](https://www.adobe.com/go/aem_cmp_title_v2) als voorbeeld gebruiken.[
 
 De volgende secties [ als Inhoudsauteur ](#as-a-content-author) en [ als Auteur van het Malplaatje ](#as-a-template-author) beschrijven hoe te om de functionaliteit van het Systeem van de Stijl te testen gebruikend het Systeem van de Stijl van WKND.
 
@@ -117,7 +124,7 @@ De volgende stappen zijn slechts noodzakelijk om het Systeem van de Stijl voor u
 
 ### Het tabblad Stijl in het dialoogvenster Ontwerpen inschakelen {#enable-styles-tab-design}
 
-Een component werkt alleen met AEM stijlsysteem en geeft het stijltabblad weer in het ontwerpdialoogvenster als de componentontwikkelaar het tabblad Stijl met de volgende instellingen voor de component bevat:
+Een component werkt alleen met het AEM Style System en geeft het stijltabblad weer in het ontwerpdialoogvenster als de ontwikkelaar van de component het tabblad Stijl met de volgende instellingen voor de component bevat:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
