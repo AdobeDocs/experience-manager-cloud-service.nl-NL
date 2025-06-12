@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2077'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -78,7 +78,7 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 **het Brandmerken UI**
 
-Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen [&#128279;](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen.  Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
+Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen. [ Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
 
 ![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
 
@@ -100,7 +100,7 @@ Content Hub laat u [ nu toegang tot inzamelingen tijdens verwezenlijking control
 
 **Download veelvoudige activa als ZIP**
 
-Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT [&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions) en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.
+Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT ](/help/assets/download-assets-content-hub.md#download-asset-renditions) en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.[
 
 **Dynamische vertoningen van Media in Content Hub**
 
@@ -112,9 +112,9 @@ Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en sl
 
 **Dynamische integratie van Media inheemse met de &#x200B; van AJO B2C**
 
-[ Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
+[ Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463788/?learn=on&enablevpops=&autoplay=true&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -134,7 +134,7 @@ Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en sl
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
@@ -201,7 +201,7 @@ Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen 
 
 ### Standaard leegmaken van oudere versies en controlelogboeken {#mt-defaults}
 
-Momenteel, hebben de inhoudsversies en de controlelogboeken hun bijbehorende *taken van het zuiveringsonderhoud* gehandicapt door gebrek en zo wordt geen gegeven verwijderd tenzij uitdrukkelijk gevormd via hun respectieve eigenschappen OSGi.
+Momenteel, hebben de inhoudsversies en de controlelogboeken hun bijbehorende *taken van het zuiveringsonderhoud* gehandicapt door gebrek en zo wordt geen gegeven verwijderd tenzij uitdrukkelijk gevormd.
 
 Nochtans, om bewaarplaatsprestaties te optimaliseren, die in **eind juni 2025** beginnen, zal het zuiveren door gebrek worden toegelaten, die deze richtlijnen volgen:
 
@@ -263,7 +263,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -283,4 +283,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
