@@ -21,7 +21,7 @@ Adobe Experience Platform Launch is de geadviseerde manier om Analytics, Doel, e
 
 ## Zelfstudie {#tutorial}
 
-Om te begrijpen hoe te om uw KUUROORD met Adobe Experience Platform Launch te integreren, zie dit [ artikel van de kennisbasis en leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). Deze begeleidt u door de installatie en implementatie van Experience Cloud die is gebouwd met Angular of React.
+Om te begrijpen hoe te om uw KUUROORD met Adobe Experience Platform Launch te integreren, zie dit [ artikel van de kennisbasis en leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL). Deze begeleidt u door de installatie en implementatie van Experience Cloud die is gebouwd met Angular of React.
 
 >[!NOTE]
 >

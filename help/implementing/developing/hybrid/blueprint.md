@@ -83,7 +83,7 @@ Het paginamodel gebruikt de JSON ModelExporter, die zelf op het [ Verschuivende 
 * `:itemsOrder`: geordende lijst met de onderliggende items. Het JSON-toewijzingsobject garandeert de volgorde van de velden niet. Door zowel de kaart als de huidige array te hebben, heeft de consument van de API de voordelen van beide structuren
 * `:path`: Inhoudspad van een item (aanwezig op items die een pagina vertegenwoordigen)
 
-Zie ook [ Begonnen het Worden met de Diensten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html).
+Zie ook [ Begonnen het Worden met de Diensten van de Inhoud van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL).
 
 ### Framework-Specific Module {#framework-specific-module}
 

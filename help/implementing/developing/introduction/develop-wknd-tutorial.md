@@ -25,15 +25,15 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar van AEM te
 
 ![ WKND ](assets/wknd-tutorial-homepage.png)
 
-[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) en leidt u door het creëren van een project van AEM gebruikend de recentste technologieën en beste praktijken.
+[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een project van AEM gebruikend de recentste technologieën en beste praktijken.
 
 ## Basisconcepten {#core-concepts}
 
 De zelfstudie-implementatie gebruikt veel krachtige functies van AEM. De site wordt geïmplementeerd met:
 
-* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
+* [ Gemaakt AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=nl-NL)
 * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
-* [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [ Bewerkbare Malplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL)
+* [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=nl-NL)

@@ -78,5 +78,5 @@ U kunt nu aan de slag met uw Adobe Quick Site Creation-tocht.
 
 Zie deze extra bronnen voor meer informatie over hoe de krachtige functies van AEM samenwerken.
 
-* [ AEM as a Cloud Service technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - als u reeds een vast begrip van AEM hebt, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ AEM as a Cloud Service technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) - als u reeds een vast begrip van AEM hebt, kunt u de diepgaande technische documenten direct willen raadplegen.
 * [ Documentatie van het Beleid van de Plaats ](/help/sites-cloud/administering/site-creation/create-site.md) - Controle uit de technische documenten op plaatsverwezenlijking voor meer details op de Snelle eigenschappen van het hulpmiddel van de Aanmaak van de Plaats.
