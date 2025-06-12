@@ -69,7 +69,7 @@ Als u de metagegevens van een element wilt weergeven, bladert u naar het element
 
 ![ meta-gegevens van de Mening van een activa ](assets/metadata-view.png)
 
-*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
+*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
 
 De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar op het tabblad [!UICONTROL Basic] . Het tabblad [!UICONTROL Advanced] bevat meer geavanceerde metagegevens, zoals cameramodel, lensdetails en geotags. Het tabblad [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
 
@@ -85,7 +85,7 @@ De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd o
 
 ![ Slimme Markeringen van de Mening van een activa ](assets/metadata-view-tags.png)
 
-*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
+*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
@@ -298,7 +298,7 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
