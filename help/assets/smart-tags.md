@@ -3,13 +3,13 @@ title: Auto-markering activa met  [!DNL Adobe Sensei]  slimme dienst
 description: Elementen labelen met een kunstmatig intelligente service die contextuele en beschrijvende bedrijfstags toepast.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
-
 
 # Slimme tags voor AEM Assets {#using-smart-tags}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Niet-gelabelde Assets in DAM {#smart-tag-existing-assets}
 
-De bestaande of oudere elementen in DAM worden niet automatisch gemarkeerd met slimme tags. U moet [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=nl-NL#adjusting-load) Assets opnieuw verwerken  manueel om Slimme Markeringen voor hen te produceren. Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] -pagina van elk element in de map. De automatisch toegevoegde tags worden weergegeven in de sectie [!UICONTROL Smart Tags] op het tabblad [!UICONTROL Basic] . Deze toegepaste Slimme Markeringen worden gesorteerd in dalende orde van [ betrouwbaarheidsscore ](#confidence-score).
+De bestaande of oudere elementen in DAM worden niet automatisch gemarkeerd met slimme tags. U moet ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets opnieuw verwerken [ manueel om Slimme Markeringen voor hen te produceren. Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] -pagina van elk element in de map. De automatisch toegevoegde tags worden weergegeven in de sectie [!UICONTROL Smart Tags] op het tabblad [!UICONTROL Basic] . Deze toegepaste Slimme Markeringen worden gesorteerd in dalende orde van [ betrouwbaarheidsscore ](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Detectie van inhoud verbeteren met door AI gegenereerde slimme tags {#ai-smart-tags}
+## Detectie van inhoud verbeteren met door AI gegenereerde metagegevens {#ai-smart-tags}
 
 In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [ Onderzoek Assets ](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![ Verbeterde slimme markeringen ](assets/enhanced-smart-tags1.png)
 
-### Door AI gegenereerde slimme tags gebruiken {#using-ai-generated-smart-tags}
+### Hoe kan ik door AI gegenereerde metagegevens inschakelen? {#enable-ai-generated-metadata}
+
+Door AI gegenereerde metagegevens inschakelen:
+
+* Minimaal vereiste AEM-releaseversie is `20626` .
+
+* U moet een GenAI Rider-overeenkomst ondertekenen. Neem voor meer informatie contact op met uw Adobe-vertegenwoordiger.
+
+  >[!IMPORTANT]
+  >
+  > De door AI gegenereerde titel van een element wordt alleen op de Asset-kaart weergegeven wanneer u de titel van het element niet hebt gedefinieerd. De titel van het element die u hebt opgegeven, wordt niet overschreven.
+
+### Door AI gegenereerde metagegevens gebruiken {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 1. Wacht tot het net geüploade element is verwerkt. Ga vervolgens naar de eigenschappen van de elementen.
 
-1. Ga naar tabblad **[!UICONTROL AI-Generated]** . Als de [!DNL Experience Manager] -versie incompatibel is of niet wordt bijgewerkt, is dit tabblad niet zichtbaar. De minimaal vereiste AEM-releaseversie is `20626` . De volgende velden zijn beschikbaar:
+1. Ga naar tabblad **[!UICONTROL AI-Generated]** . Als de [!DNL Experience Manager] -versie incompatibel is of niet wordt bijgewerkt, is dit tabblad niet zichtbaar. De volgende velden zijn beschikbaar:
 
    * **[!UICONTROL Generated title]:** de titel verstrekt een duidelijke en beknopte titel die het kernidee van een geüploade activa vangt, die het gemakkelijk maken in een blik te begrijpen. Als u een element toevoegt en u een titel opgeeft (in `dc:title` ), wordt deze weergegeven in de bladerweergave met elementen. Als deze optie leeg blijft, wordt automatisch een door AI gegenereerde titel toegewezen.
    * **[!UICONTROL Generated description]:** De beschrijving geeft een korte maar informatieve samenvatting van wat de activa over is, die gebruikers en onderzoeksmodule helpen om zijn relevantie snel te begrijpen.

@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2411'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Als u de metagegevens van een element wilt weergeven, bladert u naar het element
 
 ![ meta-gegevens van de Mening van een activa ](assets/metadata-view.png)
 
-*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar op het tabblad [!UICONTROL Basic] . Het tabblad [!UICONTROL Advanced] bevat meer geavanceerde metagegevens, zoals cameramodel, lensdetails en geotags. Het tabblad [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
 
@@ -85,7 +85,7 @@ De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd o
 
 ![ Slimme Markeringen van de Mening van een activa ](assets/metadata-view-tags.png)
 
-*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
@@ -251,13 +251,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Als u de geconfigureerde hoofdcodes wilt weergeven, gaat u naar de detailpagina van het element waar de koppeling tussen het metagegevensformulier en de basiscodes wordt uitgevoerd.
 
-## Detectie van inhoud verbeteren met door AI gegenereerde slimme tags {#ai-smart-tags}
+## Detectie van inhoud verbeteren met door AI gegenereerde metagegevens {#ai-smart-tags}
 
 In plaats van handmatig in te voeren, wijst AI automatisch beschrijvende tags toe aan digitale elementen. Deze door AI gegenereerde tags verbeteren de kwaliteit van de metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, gecategoriseerd en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud. Als het element bijvoorbeeld een afbeelding is, kan AI objecten, scènes, emoties of zelfs merklogo&#39;s in het element herkennen en relevante tags genereren, zoals &quot;zonsondergang&quot;, &quot;strand&quot;, &quot;vakantie&quot; of &quot;glimlachen&quot;. Door AI gegenereerde inhoud kan het zoeken naar elementen verbeteren door gebruik te maken van zowel semantische als lexicale zoektechnieken. Zie meer [ Onderzoek Assets ](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![ Verbeterde slimme markeringen ](assets/enhanced-smart-tags.png)
+![ AI Gegenereerde meta-gegevens ](/help/assets/assets/enhanced-smart-tags.png)
 
-### Door AI gegenereerde slimme tags gebruiken {#using-ai-generated-smart-tags}
+### Hoe kan ik door AI gegenereerde metagegevens inschakelen? {#enable-ai-generated-metadata}
+
+Door AI gegenereerde metagegevens inschakelen:
+
+* Minimaal vereiste AEM-releaseversie is `20626` .
+
+* U moet een GenAI Rider-overeenkomst ondertekenen. Neem voor meer informatie contact op met uw Adobe-vertegenwoordiger.
+
+  >[!IMPORTANT]
+  >
+  > De door AI gegenereerde titel van een element wordt alleen op de Asset-kaart weergegeven wanneer u de titel van het element niet hebt gedefinieerd. De titel van het element die u hebt opgegeven, wordt niet overschreven.
+
+### Door AI gegenereerde metagegevens gebruiken {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -270,7 +282,7 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 1. Wacht tot het net geüploade element is verwerkt. Als u klaar bent, gaat u naar de elementdetails.
 
-1. Ga naar tabblad **[!UICONTROL AI-Generated]** . Als de [!DNL Experience Manager] -versie incompatibel is of niet wordt bijgewerkt, is dit tabblad niet zichtbaar. De minimaal vereiste AEM-releaseversie is `20626` . De volgende velden zijn beschikbaar:
+1. Ga naar tabblad **[!UICONTROL AI-Generated]** . Als de [!DNL Experience Manager] -versie incompatibel is of niet wordt bijgewerkt, is dit tabblad niet zichtbaar.  De volgende velden zijn beschikbaar:
 
    * **[!UICONTROL Generated title]:** de titel verstrekt een duidelijke en beknopte titel die het kernidee van een geüploade activa vangt, die het gemakkelijk maken in een blik te begrijpen. Als u een element toevoegt en u een titel opgeeft (in `dc:title` ), wordt deze weergegeven in de bladerweergave met elementen. Als deze optie leeg blijft, wordt automatisch een door AI gegenereerde titel toegewezen.
    * **[!UICONTROL Generated description]:** De beschrijving geeft een korte maar informatieve samenvatting van wat de activa over is, die gebruikers en onderzoeksmodule helpen om zijn relevantie snel te begrijpen.
@@ -280,13 +292,13 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
+* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
