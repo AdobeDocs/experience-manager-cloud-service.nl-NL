@@ -97,7 +97,7 @@ U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is 
 
    ![ Pijpleidingen ](assets/pipelines-repo-info.png)
 
-1. Het **dialoog van Info van de Bewaarplaats 0} {opent.**
+1. Het **dialoog van Info van de Bewaarplaats 0&rbrace; &lbrace;opent.**
 
    ![ Repo info ](assets/repo-info.png)
 

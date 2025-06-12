@@ -28,7 +28,7 @@ De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen de front-end pijple
 
 >[!TIP]
 >
->Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen op te stellen snel gebruikend het en plaatssjablonen, zie ](/help/journey-sites/quick-site/overview.md) de Reis van de Aanmaak van de Snelle Plaats [ voor een inleiding.
+>Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen op te stellen snel gebruikend het en plaatssjablonen, zie [&#128279;](/help/journey-sites/quick-site/overview.md) de Reis van de Aanmaak van de Snelle Plaats  voor een inleiding.
 
 AEM kan uw site zo configureren dat deze thema&#39;s laadt die worden geïmplementeerd met de Front End Pipeline, zelfs als uw site niet is gemaakt met sitesjablonen en -thema&#39;s, door deze in lagen boven op bestaande clientbibliotheken te plaatsen.
 
@@ -104,7 +104,7 @@ Pagina&#39;s voor de site verwijzen vervolgens naar themaartefacten van die bijg
 
 Als u front-end activa plaatselijk moet ontwikkelen en testen alvorens via de Voor-Eind Pijpleiding op te stellen, overweeg de volgende benaderingen:
 
-* Gebruik de Wijze van de Volmacht van de Bouwer van het Thema van de Plaats ](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) om thema artefacten voor het testen plaatselijk met voeten te treden.[
+* Gebruik de Wijze van de Volmacht van de Bouwer van het Thema van de Plaats [&#128279;](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) om thema artefacten voor het testen plaatselijk met voeten te treden.
 * Plaats uw themabestanden handmatig vanaf een lokale ontwikkelingsserver en werk de `prefixPath` in `HtmlPageItemsConfig` bij, zodat deze overeenkomt met het lokale serveradres.
 * Zorg ervoor dat het in cache plaatsen van browsers tijdens het testen is uitgeschakeld om live updates te zien.
 

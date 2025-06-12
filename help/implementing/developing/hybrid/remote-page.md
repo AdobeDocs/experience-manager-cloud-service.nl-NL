@@ -38,12 +38,13 @@ Zie het artikel [ Uitgevend een Externe KUUROORD binnen AEM ](editing-external-s
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+
      ![ entrypoints bezitsvoorbeeld ](assets/asset-manifest-entrypoints.png)
 * De toepassing moet kunnen initialiseren in een `<div id="root"></div>` onder het `body` -element. Als er een andere opmaak wordt verwacht voor de app om te instantiëren, moet deze dienovereenkomstig worden aangepast in de HTML-scripts van de proxycomponent met een `sling:resourceSuperType="spa-project-core/components/remotepage` .
 
 ## Beperkingen {#limitations}
 
-* De component RemotePage verwacht dat de implementatie activa-manifest zoals hier gevonden [ ](https://github.com/shellscape/webpack-manifest-plugin) verstrekt. De component RemotePage is echter alleen getest om te werken met het React-framework (en Next.js als de volgende component op afstand) en biedt daarom geen ondersteuning voor het extern laden van toepassingen vanuit andere frameworks, zoals Angular.
+* De component RemotePage verwacht dat de implementatie activa-manifest zoals hier gevonden [&#128279;](https://github.com/shellscape/webpack-manifest-plugin) verstrekt. De component RemotePage is echter alleen getest om te werken met het React-framework (en Next.js als de volgende component op afstand) en biedt daarom geen ondersteuning voor het extern laden van toepassingen vanuit andere frameworks, zoals Angular.
 * Interne CSS die is gedefinieerd in het HTML-hoofdbestand van de toepassing en inline CSS op het DOM-hoofdknooppunt zijn niet beschikbaar bij externe rendering in AEM.
 
 ## Technische details {#technical-details}

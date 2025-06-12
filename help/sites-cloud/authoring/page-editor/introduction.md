@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # De AEM Page Editor {#editing-page-content}
 
-Zodra uw pagina in de **console van de Plaatsen[** {wordt gecreeerd, kunt u de inhoud van de pagina uitgeven gebruikend de de paginaredacteur van AEM, een krachtig hulpmiddel om uw inhoud te ontwerpen.](/help/sites-cloud/authoring/sites-console/introduction.md)
+Zodra uw pagina in de **console van de Plaatsen[** &lbrace;wordt gecreeerd, kunt u de inhoud van de pagina uitgeven gebruikend de de paginaredacteur van AEM, een krachtig hulpmiddel om uw inhoud te ontwerpen.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van Plaatsen ](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur openen die in dit document wordt beschreven, of [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).[**[
+>Wanneer het uitgeven van een pagina in de **console van Plaatsen [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md), zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina [&#128279;](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur openen die in dit document wordt beschreven, of [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md).**
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Dit knevels de [ mededingertoolbar ](/help/sites-cloud/authoring/page-editor/res
 
 #### ContextHub {#context-hub}
 
-Dit opent [ ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md). Het is slechts beschikbaar op **1} wijze van de Voorproef {.**
+Dit opent [ ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md). Het is slechts beschikbaar op **1&rbrace; wijze van de Voorproef &lbrace;.**
 
 ![ knoop van de Hub van de Context ](assets/page-editor-context-hub.png)
 
@@ -187,7 +187,7 @@ Bijvoorbeeld:
 
 Er zijn twee opties voor het voorvertonen van een pagina:
 
-* ](#preview-mode) de Wijze van de Voorproef van 0} - een snelle, op zijn plaats voorproef[
+* [&#128279;](#preview-mode) de Wijze van de Voorproef van 0&rbrace; - een snelle, op zijn plaats voorproef
 * [ Mening zoals Gepubliceerd ](#view-as-published) - een volledige voorproef die de pagina in een nieuw lusje opent
 
 >[!TIP]
@@ -206,7 +206,7 @@ Wanneer u inhoud bewerkt, kunt u een voorvertoning van de pagina weergeven in de
 
 * Hiermee verbergt u verschillende bewerkingsmechanismen waarmee u snel kunt zien hoe de pagina er bij het publiceren uitziet.
 * Hiermee kunt u navigeren met koppelingen.
-* Vernieuw **** niet de paginainhoud.
+* Vernieuw **&#x200B;**&#x200B;niet de paginainhoud.
 
 Bij het ontwerpen is de modus Voorvertoning beschikbaar met behulp van het pictogram rechtsboven in de paginaeditor:
 

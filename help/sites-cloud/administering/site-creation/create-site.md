@@ -44,7 +44,7 @@ Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en
 
 >[!TIP]
 >
->Voor verder detail op plaatsmalplaatjes, zie {de Malplaatjes van 0} Plaats ](site-templates.md).[
+>Voor verder detail op plaatsmalplaatjes, zie {de Malplaatjes van 0} Plaats [&#128279;](site-templates.md).
 
 >[!NOTE]
 >

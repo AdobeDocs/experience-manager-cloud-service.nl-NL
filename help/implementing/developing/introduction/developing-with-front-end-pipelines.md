@@ -20,7 +20,7 @@ De [ front-end pijpleiding ](/help/implementing/cloud-manager/configuring-pipeli
 
 >[!TIP]
 >
->Als u nog niet vertrouwd met bent hoe te om de front-end pijpleiding en zijn voordelen te gebruiken, zie de ](/help/journey-sites/quick-site/overview.md) gids van de Reis van de Aanmaak van de Snel van de Plaats [. Het verstrekt een voorbeeld van hoe te om een nieuwe plaats snel op te stellen en zijn thema onafhankelijk van achterste-eindontwikkeling aan te passen.
+>Als u nog niet vertrouwd met bent hoe te om de front-end pijpleiding en zijn voordelen te gebruiken, zie de [&#128279;](/help/journey-sites/quick-site/overview.md) gids van de Reis van de Aanmaak van de Snel van de Plaats . Het verstrekt een voorbeeld van hoe te om een nieuwe plaats snel op te stellen en zijn thema onafhankelijk van achterste-eindontwikkeling aan te passen.
 
 ## Begrijp de front-end pijpleiding opstelling en bouwstijlproces in AEM Cloud Manager {#front-end-build-contract}
 

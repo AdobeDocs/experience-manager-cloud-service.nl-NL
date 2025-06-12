@@ -56,7 +56,7 @@ Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inho
 
 ## Sitesjabloon verkrijgen {#obtaining-template}
 
-De eenvoudigste manier om begonnen te worden is de recentste versie van het Malplaatje van de Plaats van AEM Standaard van zijn bewaarplaats GitHub ](https://github.com/adobe/aem-site-template-standard/releases) te downloaden.[
+De eenvoudigste manier om begonnen te worden is de recentste versie van het Malplaatje van de Plaats van AEM Standaard van zijn bewaarplaats GitHub [&#128279;](https://github.com/adobe/aem-site-template-standard/releases) te downloaden.
 
 Na het downloaden kunt u het net als elk ander pakket uploaden naar uw AEM-omgeving. Zie de [ Extra sectie van Middelen ](#additional-resources) voor details op hoe te met pakketten werken als u meer informatie over dit onderwerp nodig hebt.
 
