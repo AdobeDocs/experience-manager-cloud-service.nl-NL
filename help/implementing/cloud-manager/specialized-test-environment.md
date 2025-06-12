@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->>De functie die in dit artikel wordt beschreven, is alleen beschikbaar via het persoonlijke bètaprogramma. Om omhoog voor privé bèta te ondertekenen, zie [ Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>&#x200B;>De functie die in dit artikel wordt beschreven, is alleen beschikbaar via het persoonlijke bètaprogramma. Om omhoog voor privé bèta te ondertekenen, zie [ Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 De gespecialiseerde testomgeving (DevXL) is een nieuw type Cloud Manager-omgeving dat u kunt maken. Het is ontworpen om geavanceerde gebruiksgevallen zoals het Testen van de Erkenning van de Gebruiker (UAT) en prestatiesbevestiging te steunen. In tegenstelling tot traditionele Ontwikkeling, Snelle Ontwikkeling, of het Opvoeren van milieu&#39;s, werken de milieu&#39;s DevXL buiten de pijpleiding van de productieplaatsing. Als zodanig bieden ze u meer flexibiliteit terwijl u strikte isolatie behoudt om interferentie met productieworkflows te voorkomen.
 
@@ -54,11 +54,11 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
    Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen zijn.
 
-   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](assets/no-environments.png)
 
-   * Op het linkerzijpaneel, klik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0} {, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.![
+   * Op het linkerzijpaneel, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0&rbrace; &lbrace;, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.
 
      ![ Milieu&#39;s tabel ](assets/environments-tab.png)
 
@@ -73,4 +73,4 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. Klik **sparen**.
 
-   De **pagina van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
+   De **pagina van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.

@@ -47,7 +47,7 @@ Aanvullende RDE&#39;s kunnen in licentie worden gegeven voor productieprogramma&
 
    * RDEs kan aan zowel [ zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) als [ productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) worden toegevoegd.
 
-1. Van de **pagina van het Overzicht van het Programma**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+1. Van de **pagina van het Overzicht van het Programma**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -69,7 +69,7 @@ Aanvullende RDE&#39;s kunnen in licentie worden gegeven voor productieprogramma&
 
 1. Klik **sparen** om het gespecificeerde milieu toe te voegen.
 
-Het **scherm van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s.
+Het **scherm van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s.
 
 Bij het maken worden RDE&#39;s ingesteld op de laatst beschikbare AEM-versie. Een RDE-reset, die ook kan worden uitgevoerd met Cloud Manager, fietst de RDE en stelt deze in op de laatst beschikbare AEM-versie.
 
@@ -101,7 +101,7 @@ Nadat u een RDE voor uw programma gebruikend Cloud Manager hebt toegevoegd, kunt
    De login informatie (teken) wordt opgeslagen in de globale luchtvaartconfiguratie en steunt daarom slechts één login en organisatie. Voor het geval u veelvoudige RDEs wilt gebruiken die verschillende logins of organisaties vereisen, volg het hieronder voorbeeld introducerend contexten.
 
    <details><summary>Volg dit voorbeeld aan opstelling een lokale context voor één van uw logins van de RDE</summary>
-   Voer de volgende stappen uit om de aanmeldingsgegevens lokaal op te slaan in een `.aio'-bestand in de huidige map binnen een specifieke context. Een context is ook een slimme manier aan opstelling een milieu CI/CD of een manuscript.  Gebruik ten minste AIR versie 10.3.1 om van deze functie gebruik te maken. Werk deze bij met behulp van 'npm install -g @adobe/aio-cli'.
+   Voer de volgende stappen uit om de aanmeldingsgegevens lokaal op te slaan in een &grave;.aio'-bestand in de huidige map binnen een specifieke context. Een context is ook een slimme manier aan opstelling een milieu CI/CD of een manuscript.  Gebruik ten minste AIR versie 10.3.1 om van deze functie gebruik te maken. Werk deze bij met behulp van 'npm install -g @adobe/aio-cli'.
 
    Nu, creeer een context genoemd m `ycontext` die u als standaardcontext plaatst gebruikend de authlug alvorens het login bevel te roepen.
 
@@ -367,11 +367,11 @@ Dan stel de configuratie door dit bevel op:
 
 >[!TIP]
 >
->Het bovenstaande bevel veronderstelt u de [ configuraties van Dispatcher van het 1} project van WKND {. ](https://github.com/adobe/aem-guides-wknd) Vervang `X.X.X` door het corresponderende WKND-projectversienummer of uw projectspecifieke versienummer wanneer u de Dispatcher-configuratie van uw project implementeert.
+>Het bovenstaande bevel veronderstelt u de [ configuraties van Dispatcher van het 1&rbrace; project van WKND &lbrace;. ](https://github.com/adobe/aem-guides-wknd) Vervang `X.X.X` door het corresponderende WKND-projectversienummer of uw projectspecifieke versienummer wanneer u de Dispatcher-configuratie van uw project implementeert.
 
 >[!NOTE]
 >
->RDE ondersteunt de Dispatcher-configuratie &quot;Flexible Mode&quot;, maar niet de Dispatcher-configuratie &quot;Legacy Mode&quot;. Zie {de documentatie van 0} Dispatcher ](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee wijzen. [ U kunt de documentatie ook raadplegen over [ migrerend aan Flexibele wijze ](/help/implementing/dispatcher/validation-debug.md#migrating), als u dit niet reeds hebt gedaan.
+>RDE ondersteunt de Dispatcher-configuratie &quot;Flexible Mode&quot;, maar niet de Dispatcher-configuratie &quot;Legacy Mode&quot;. Zie {de documentatie van 0} Dispatcher [&#128279;](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee wijzen.  U kunt de documentatie ook raadplegen over [ migrerend aan Flexibele wijze ](/help/implementing/dispatcher/validation-debug.md#migrating), als u dit niet reeds hebt gedaan.
 
 Een succesvolle plaatsing produceert een reactie die op het volgende lijkt:
 
@@ -673,7 +673,7 @@ U kunt Cloud Manager gebruiken om uw RDE opnieuw in te stellen door de volgende 
 
    ![ Milieu&#39;s tabel ](/help/implementing/cloud-manager/assets/environments-tab2.png)
 
-   * Alternatief, klik **tonen Al** knoop op de **** kaart van Milieu&#39;s {om rechtstreeks aan het **Milieu** lusje te springen.
+   * Alternatief, klik **tonen Al** knoop op de **&#x200B;**&#x200B;kaart van Milieu&#39;s &lbrace;om rechtstreeks aan het **Milieu** lusje te springen.
 
      ![ toon alle optie ](/help/implementing/cloud-manager/assets/environment-showall.png)
 
@@ -697,7 +697,7 @@ Nadat de RDE-reset is gestart, duurt het meestal enkele minuten om de omgeving t
 
 ![ RDE terugstellingstatus ](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
-U kunt RDE ook terugstellen gebruikend de elliptische knoop direct van de **1} kaart van Milieu&#39;s {op de** Overzicht **pagina.**
+U kunt RDE ook terugstellen gebruikend de elliptische knoop direct van de **1&rbrace; kaart van Milieu&#39;s &lbrace;op de** Overzicht **pagina.**
 
 ![ RDE van het Terugstellen van de kaart van Milieu ](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
