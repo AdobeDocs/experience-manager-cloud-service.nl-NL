@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Heb een blik bij de Video van het Overzicht van de Versie van november 2024 voor een samenvatting van de eigenschappen die in de versie 2024.11.0 worden toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 

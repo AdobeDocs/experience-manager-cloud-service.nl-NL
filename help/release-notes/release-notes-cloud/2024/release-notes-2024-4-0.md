@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Bekijk de video Overzicht van de release van april 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3446313?quality=12&captions=dut)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 

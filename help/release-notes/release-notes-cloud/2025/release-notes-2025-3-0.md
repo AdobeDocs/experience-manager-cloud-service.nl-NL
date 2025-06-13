@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Bekijk de video Overzicht van de release van maart 2025 voor een overzicht van de functies die zijn toegevoegd in de release van 2025.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463882?quality=12&captions=dut)
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
