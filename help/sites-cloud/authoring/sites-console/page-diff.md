@@ -102,4 +102,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie {de documentatie van de 0} ontwikkelaar ](/help/implementing/developing/introduction/page-diff.md) van deze eigenschap.[
+>Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie {de documentatie van de 0} ontwikkelaar [&#128279;](/help/implementing/developing/introduction/page-diff.md) van deze eigenschap.
