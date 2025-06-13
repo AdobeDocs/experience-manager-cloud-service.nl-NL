@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2025.2.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Assets die in verschillende AEM as a Cloud Service-programma&#39;s zijn opgeslag
 
 **Uitvoer van de Redacteur van het Fragment van de Inhoud**
 
-We blijven de nieuwe op Spectrum UI gebaseerde Content Fragment Editor inschakelen in AEM as a Cloud Service. Nadat deze standaard is geworden voor alle Cloud Service Developer-omgevingen in november 2024, wordt deze standaard ingesteld voor alle Stage-omgevingen op 1 april 2025 en voor alle Production-omgevingen op 1 mei 2025. In alle gevallen hebben gebruikers nog steeds de mogelijkheid om terug te keren naar de traditionele Content Fragment Editor in AEM Touch UI.
+Wij zullen blijven toelatend de nieuwe [ Redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) in AEM as a Cloud Service, gebruikend [ Verenigde Shell ](/help/overview/aem-cloud-service-on-unified-shell.md) (gebruikend het spectrum-UI). Nadat deze standaard is geworden voor alle Cloud Service Developer-omgevingen in november 2024, wordt deze standaard ingesteld voor alle Stage-omgevingen op 1 april 2025 en voor alle Production-omgevingen op 1 mei 2025. In alle gevallen hebben gebruikers nog steeds de mogelijkheid om terug te keren naar de traditionele Content Fragment Editor in AEM Touch UI.
 
 **Vertaling HTTP API**
 
@@ -99,7 +99,7 @@ In Content Hub kunt u nu naast de bestaande statische uitvoeringen ook dynamisch
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### HTML-e-mailsjablonen in Adaptive Forms
 
@@ -141,7 +141,7 @@ E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedbac
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
 
-Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
+Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
 
 Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
 
@@ -158,7 +158,7 @@ Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Co
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -178,4 +178,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
