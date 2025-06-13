@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Om vroege toegang tot AI-Gegenereerde titelsteun op uw Dynamische rekening van M
 
 Krijg leveringsinzichten voor activa die met Dynamische Media worden geleverd, met de telling van de levering op activaniveau, verwijzende informatie, activaweg in AEM Assets en unieke activa ID. Er kunnen rapporten worden gegenereerd voor alle elementen die via Dynamic Media voor AEM Assets-opslagplaats worden geleverd of voor een specifieke maphiërarchie in AEM Assets. Met behulp van inzichten kunt u het rendement van de geleverde middelen meten, de kanaalprestaties meten en weloverwogen taken voor middelenbeheer voor middelen uitvoeren.
 
-Om vroege toegang tot het Dynamische Rapport van de Levering van Media op uw Dynamische rekening van Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Om vroege toegang tot het Dynamische Rapport van de Levering van Media op uw Dynamische rekening van Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van Adobe ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
@@ -121,7 +121,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
   ![ HTML Forms (op XFA-Gebaseerde Vormen van het Web) ](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
 
-* **[Base64 de Gecodeerde Steun van het Koord voor de Bijlage van het Dossier ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: De component van de Bijlage van het Dossier in Aanpassende Forms die op de Componenten van de Kern wordt gebaseerd omvat nu een optie om dossiers in bijlage als Base64-Gecodeerde koorden voor te leggen.
+* **[Base64 de Gecodeerde Steun van het Koord voor de Bijlage van het Dossier ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: De component van de Bijlage van het Dossier in Aanpassende Forms die op de Componenten van de Kern wordt gebaseerd omvat nu een optie om dossiers in bijlage als Base64-Gecodeerde koorden voor te leggen.
 
 #### Interactieve communicatie- en communicatie-API&#39;s
 
@@ -147,7 +147,7 @@ intuitive and improving the mobile form-filling experience.
 
 ## Automated Forms Conversion Service
 
-* **[zet PDF forms in de Componenten van de Kern om Gebaseerde Aangepaste Forms ](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: U kunt de Geautomatiseerde Dienst van de Omzetting van Vormen nu gebruiken om PDF forms, AcroForms, of op XFA-Gebaseerde vormen in de Componenten van de Kern Aangepaste Forms om te zetten.
+* **[zet PDF forms in de Componenten van de Kern om Gebaseerde Aangepaste Forms ](https://experienceleague.adobe.com/nl/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: U kunt de Geautomatiseerde Dienst van de Omzetting van Vormen nu gebruiken om PDF forms, AcroForms, of op XFA-Gebaseerde vormen in de Componenten van de Kern Aangepaste Forms om te zetten.
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ intuitive and improving the mobile form-filling experience.
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen zullen worden geproduceerd door de projecten van Adobe Developer Console te creëren.
 
-Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
+Leer meer over [ OpenAPI-Gebaseerde AEM APIs ](/help/implementing/developing/open-api-based-apis.md) en probeer uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) die configuratie en gebruik illustreren.
 
 Concreet zijn de API-eindpunten die hieronder worden vermeld, beschikbaar als onderdeel van een programma voor vroege adoptie. Als geinteresseerd, e-mail [ aem-apis@adobe.com ](mailto:aem-apis@adobe.com) beschrijvend hoe u van hen van plan bent gebruik te maken.
 * [ de Fragmenten APIs van de Inhoud van Plaatsen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
@@ -190,7 +190,7 @@ Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Co
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -210,4 +210,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.

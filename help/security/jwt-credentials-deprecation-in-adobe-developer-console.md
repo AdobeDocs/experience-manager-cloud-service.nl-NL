@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM 6.5 klanten zou [ de vergelijkbare documentatie voor AEM 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) voor meer informatie moeten van verwijzingen voorzien.
+>AEM 6.5 klanten zou [ de vergelijkbare documentatie voor AEM 6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) voor meer informatie moeten van verwijzingen voorzien.
 
 De klanten van Adobe gebruiken [ Adobe Developer Console ](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 3 juni 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet op of na 30 juni 2025 werken. U kunt [ lezen over de veroudering ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -86,8 +86,8 @@ Adobe zal in het eerste kwartaal van 2025 een gefaseerde migratieaanpak starten,
 
 Automatisch gegenereerde projectintegratie werkt niet meer als ze in juni 2025 niet naar OAuth worden gemigreerd.
 
-Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
 
 **kan ik aan een gesteunde versie OAuth bevorderen zonder mijn Versie van AEM as a Cloud Service AEM te bevorderen?**
 
-Nee. Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+Nee. Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
