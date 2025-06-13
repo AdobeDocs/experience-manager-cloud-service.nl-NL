@@ -5,9 +5,9 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk bo
 
 ![ Versies zij aan zij mening ](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
-Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
+De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
 **de Veranderingen van de Component**
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**de Veranderingen van de HTML**
+**de Veranderingen van HTML**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -90,6 +90,7 @@ U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op d
 
 In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert zoals u had verwacht.
 
+* Wanneer het verschillen van pagina&#39;s voor gebruik met [ Edge Delivery Services worden gecreeerd, ](/help/edge/overview.md) de pagina&#39;s zullen naast-zij voor gemakkelijke vergelijking worden getoond, maar de verschillen zullen niet worden benadrukt.
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
@@ -101,4 +102,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie {de documentatie van de 0} ontwikkelaar [&#128279;](/help/implementing/developing/introduction/page-diff.md) van deze eigenschap.
+>Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie {de documentatie van de 0} ontwikkelaar ](/help/implementing/developing/introduction/page-diff.md) van deze eigenschap.[
