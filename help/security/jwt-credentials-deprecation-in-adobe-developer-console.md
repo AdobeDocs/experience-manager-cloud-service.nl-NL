@@ -37,7 +37,7 @@ In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun J
 
 AEM-klanten gebruiken AEM om integratie met veel andere Adobe-oplossingen te configureren. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
-Zie {de Integraties IMS van de Opstelling voor AEM as a Cloud Service ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) voor details van hoe te:[
+Zie &lbrace;de Integraties IMS van de Opstelling voor AEM as a Cloud Service [&#128279;](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) voor details van hoe te:
 
 * configuraties maken met OAuth-gebruikersgegevens
 * migreer configuraties, die met geloofsbrieven JWT werden gecreeerd, om geloofsbrieven te gebruiken OAuth
@@ -86,8 +86,8 @@ Adobe zal in het eerste kwartaal van 2025 een gefaseerde migratieaanpak starten,
 
 Automatisch gegenereerde projectintegratie werkt niet meer als ze in juni 2025 niet naar OAuth worden gemigreerd.
 
-Om een vlotte overgang te verzekeren zouden de klanten ](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0} Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken. [ Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
 
 **kan ik aan een gesteunde versie OAuth bevorderen zonder mijn Versie van AEM as a Cloud Service AEM te bevorderen?**
 
-Nee. Om een vlotte overgang te verzekeren zouden de klanten ](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0} Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken. [ Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.
+Nee. Om een vlotte overgang te verzekeren zouden de klanten [&#128279;](https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html) van de Klant van 0&rbrace; Adobe moeten contacteren en onmiddellijk met het proces beginnen om aan de [ recentste Versie van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) bij te werken.  Dit zal voldoende tijd bieden voor regressietests en Adobe in staat stellen de migratie van projecten efficiënt te beheren.

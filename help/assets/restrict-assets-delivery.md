@@ -53,7 +53,7 @@ ht-degree: 0%
 >
 >De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  Dynamische Media met OpenAPI mogelijkhedenGids PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Met centraal beheer van bedrijfsmiddelen in Experience Manager kunnen de DAM-beheerder of -bedrijfsleiders de toegang beheren tot middelen die beschikbaar zijn via Dynamic Media met OpenAPI-mogelijkheden. Zij kunnen levering van goedgekeurde activa (neer aan individuele activa) aan geselecteerde [ Gebruiker of Groepen van het Systeem van Adobe Identity Management van het Systeem van (IMS) ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beperken door bepaalde meta-gegevens op activa op hun de auteursdienst van AEM as a Cloud Service te vormen.
 
