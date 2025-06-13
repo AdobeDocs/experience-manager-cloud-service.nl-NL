@@ -3,7 +3,7 @@ title: Integreer  [!DNL AEM Assets]  terwijl het ontwerpen van inhoud voor  [!DN
 description: Leer hoe te om  [!DNL AEM Assets]  met  [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  met  [!DNL Microsoft Word]  te integreren en  [!DNL Google Docs], integrate [!DNL AEM Assets]  met  [!DNL Universal Editor], integrate [!DNL Dynamic Media]  met  [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities]  met  [!DNL Universal Editor]  en  [!DNL Dynamic Media with OpenAPI capabilities]  met  [!DNL Microsoft Word]  te integreren en  [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![ de activa van AEM integratie met Universele redacteur ](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services] ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u ontwerpt en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend  [!DNL Universal Editor]  evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[[!DNL Edge Delivery Services] ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u ontwerpt en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend  [!DNL Universal Editor]  evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 U kunt inhoud bewerken in:
 
@@ -88,7 +88,7 @@ U kunt ook elementen gebruiken die met [!DNL Dynamic Media with OpenAPI capabili
 * Rijke media optimalisering en levering, zoals adaptieve video die uit-van-de-doos, en originele levering van activa voor PDFs stroomt.
 * Het activa-vlakke beeld rapporteert ([ beperkte beschikbaarheid ](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
-Voor meer details over de mogelijkheden, zie [[!DNL Dynamic Media with OpenAPI capabilities] ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentatie.
+Voor meer details over de mogelijkheden, zie [[!DNL Dynamic Media with OpenAPI capabilities] ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentatie.
 
 ### Vereisten {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
@@ -113,7 +113,7 @@ Bekijk deze video voor informatie over hoe u elementen in uw inhoud kunt leveren
 
 ## Voorbeeld [!DNL Edge Delivery Services] -site{#dynamic-media-with-google-docs-and-ms-word}
 
-Zie [ WKND Reizen ](http://bit.ly/3DExLnf), een plaats die gebruikend op document-Gebaseerde Authoring mogelijkheden van [!DNL Edge Delivery Services] wordt gebouwd. De inhoud van de plaats wordt authored in [ Google Docs ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) en [!DNL Dynamic Media with OpenAPI capabilities] wordt gebruikt om activa in de inhoud te leveren. Na het ontwerpen wordt de inhoud rechtstreeks vanuit het document gepubliceerd. Onderzoek deze [ bewaarplaats van de Git ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) om over alle essentiële dossiers, omslagen, configuraties, het stileren van de website en functionaliteitcodes te weten die worden gebruikt om de op document-Gebaseerde Authoring opstelling voor deze [!DNL Edge Delivery Services (EDS)] plaats tot stand te brengen.
+Zie [ WKND Reizen ](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home), een plaats die gebruikend op document-Gebaseerde Authoring mogelijkheden van [!DNL Edge Delivery Services] wordt gebouwd. De inhoud van de plaats wordt authored in [ Google Docs ](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) en [!DNL Dynamic Media with OpenAPI capabilities] wordt gebruikt om activa in de inhoud te leveren. Na het ontwerpen wordt de inhoud rechtstreeks vanuit het document gepubliceerd. Onderzoek deze [ bewaarplaats van de Git ](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) om over alle essentiële dossiers, omslagen, configuraties, het stileren van de website en functionaliteitcodes te weten die worden gebruikt om de op document-Gebaseerde Authoring opstelling voor deze [!DNL Edge Delivery Services (EDS)] plaats tot stand te brengen.
 
 ## [!DNL AEM Assets] integreren met [!DNL Universal Editor] gebaseerde ontwerpflows voor [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 

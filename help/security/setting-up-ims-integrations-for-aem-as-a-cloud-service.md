@@ -4,7 +4,7 @@ description: Meer informatie over het instellen van IMS-integratie voor AEM as a
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >Auto-provisioned JWT configuraties zouden niet manueel moeten worden gemigreerd, aangezien zij automatisch door Adobe zullen worden behandeld.
 
-Adobe Experience Manager (AEM) as a Cloud Service kan met vele andere Adobe oplossingen worden geïntegreerd. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
+Adobe Experience Manager (AEM) as a Cloud Service kan worden geïntegreerd met vele andere Adobe-oplossingen. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
 De integratie gebruikt een integratie IMS, die met S2S OAuth wordt gevormd.
 
@@ -49,7 +49,7 @@ Raadpleeg de documentatie bij Developer Console voor meer informatie over hoe u 
 
 * Een nieuwe OAuth-referentie maken:
 
-   * [ OAuth Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [ OAuth Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Een bestaande JWT-referentie migreren naar een OAuth-referentie:
 
@@ -67,7 +67,7 @@ Een nieuwe Adobe IMS-integratie maken met OAuth:
 
 1. Selecteer **creeer**.
 
-1. Voltooi de configuratie die op details van [ wordt gebaseerd Developer Console ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Bijvoorbeeld:
+1. Voltooi de configuratie die op details van [ wordt gebaseerd Developer Console ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation). Bijvoorbeeld:
 
    ![ creeer OAuth Configuratie ](assets/ims-create-oauth-configuration.png)
 

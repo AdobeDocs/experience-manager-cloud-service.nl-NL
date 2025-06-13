@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dit artikel |
 
 AEM Forms ondersteunt aangepaste functies, zodat gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Met deze opties kunt u het formuliergedrag dynamisch wijzigen op basis van vooraf gedefinieerde criteria. Met aangepaste functies kunnen ontwikkelaars ook complexe validatielogica afdwingen, dynamische berekeningen uitvoeren en de weergave of het gedrag van formulierelementen bepalen op basis van gebruikersinteracties of vooraf gedefinieerde criteria.
@@ -168,7 +168,6 @@ U kunt een aangepaste functie maken met of zonder jsdoc-opmerkingen.
             // code to be executed
         }
 ```
-
 Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt deze door de functienaam in de regeleditor weergegeven. Het wordt echter aanbevolen JavaScript-annotaties op te nemen om de leesbaarheid van de aangepaste functies te verbeteren.
 
 ### Pijlfunctie met verplichte JavaScript-annotaties of -opmerkingen

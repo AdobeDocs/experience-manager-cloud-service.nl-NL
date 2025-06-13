@@ -4,9 +4,9 @@ description: Release-aantekeningen voor migratiehulpmiddelen in AEM as a Cloud S
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -38,8 +38,8 @@ De releasedatum voor Content Transfer Tool v2.0.16 is 8 maart 2023.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Toewijzing van gebruikers is gestroomlijnd en geïntegreerd in de extractiestap voor inhoud. Er is geen installatie nodig en door de standaardgebruikerstoewijzing wordt automatisch uitgevoerd wanneer de gebruiker inhoud afhaalt. De gebruiker heeft de optie om gebruikerstoewijzing indien nodig uit te schakelen. Leer meer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail).
-* De precopystap die [ AzCopy ](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) gebruikt is geïntegreerd met het Hulpmiddel van de Overdracht van de Inhoud om inhoudextracties beduidend te versnellen. De precopy wordt automatisch gevormd en geïnstalleerd wanneer deze versie van CTT wordt geïnstalleerd. Wanneer de extractie wordt gestart, wordt de migratie standaard automatisch uitgevoerd voor migratiesets die groter zijn dan 200 GB. De gebruiker heeft de optie om het onbruikbaar te maken indien nodig. Leer meer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL).
+* Toewijzing van gebruikers is gestroomlijnd en geïntegreerd in de extractiestap voor inhoud. Er is geen installatie nodig en door de standaardgebruikerstoewijzing wordt automatisch uitgevoerd wanneer de gebruiker inhoud afhaalt. De gebruiker heeft de optie om gebruikerstoewijzing indien nodig uit te schakelen.
+* De precopystap die [ AzCopy ](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) gebruikt is geïntegreerd met het Hulpmiddel van de Overdracht van de Inhoud om inhoudextracties beduidend te versnellen. De precopy wordt automatisch gevormd en geïnstalleerd wanneer deze versie van CTT wordt geïnstalleerd. Wanneer de extractie wordt gestart, wordt de migratie standaard automatisch uitgevoerd voor migratiesets die groter zijn dan 200 GB. De gebruiker heeft de optie om het onbruikbaar te maken indien nodig. Leer meer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html).
 * CTT kan nu op de servers van Vensters worden gebruikt.
 
 ### Opgeloste problemen {#bug-fixes-ctt}

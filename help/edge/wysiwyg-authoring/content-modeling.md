@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2160'
 ht-degree: 0%
 
 ---
@@ -348,7 +348,7 @@ Voor sommige waarden kunnen we de semantische betekenis afleiden van de waarden 
 * **Beelden** - als een verwijzing naar een middel in AEM een activa met een MIME type is dat met `image/` begint, wordt de verwijzing teruggegeven als `<picture><img src="${reference}"></picture>`.
 * **Verbindingen** - als een verwijzing in AEM bestaat en geen beeld is, of als de waarde met `https?://` of `#` begint, wordt de verwijzing teruggegeven als `<a href="${reference}">${reference}</a>`.
 * **Rijke Tekst** - als een in orde gemaakte waarde met een paragraaf (`p`, `ul`, `ol`, `h1` - `h6`, enz.) begint, wordt de waarde teruggegeven als rijke tekst.
-* **Namen van de Klasse** - het `classes` bezit wordt behandeld als [ blokopties ](/help/edge/developer/markup-sections-blocks.md#block-options) en in de lijstkopbal voor [ eenvoudige blokken ](#simple) teruggegeven, of als waardelijst voor punten in a [ containerblok ](#container). Het is nuttig als u een blok [&#128279;](/help/edge/wysiwyg-authoring/create-block.md#block-options) verschillend wilt  opmaken, maar te hoeven om geen volledig nieuw blok tot stand te brengen.
+* **Namen van de Klasse** - het `classes` bezit wordt behandeld als [ blokopties ](/help/edge/developer/markup-sections-blocks.md#block-options) en in de lijstkopbal voor [ eenvoudige blokken ](#simple) teruggegeven, of als waardelijst voor punten in a [ containerblok ](#container). Het is nuttig als u een blok ](/help/edge/wysiwyg-authoring/create-block.md#block-options) verschillend wilt [ opmaken, maar te hoeven om geen volledig nieuw blok tot stand te brengen.
 * **Lijsten van de Waarde** - als een waarde een multi-waardebezit is en de eerste waarde geen van het vorige is, worden alle waarden samengevoegd als komma-gescheiden lijst.
 
 Alle andere elementen worden weergegeven als onbewerkte tekst.
@@ -645,8 +645,3 @@ Nu u weet hoe u inhoud kunt modelleren, kunt u blokken voor uw eigen Edge Delive
 Zie het document [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](/help/edge/wysiwyg-authoring/create-block.md) om te leren hoe te tot blokken tot stand brengen die voor gebruik met de Universele Redacteur in WYSIWYG authoring met de projecten van Edge Delivery Services worden voorzien.
 
 Als u reeds vertrouwd met het creëren van blokken bent, te zien gelieve de document [ Begonnen Gids van de Ontwikkelaar Begonnen voor het schrijven van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om u aan de slag te krijgen met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud authoring.
-
->[!TIP]
->
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit webinar van AEM GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
-

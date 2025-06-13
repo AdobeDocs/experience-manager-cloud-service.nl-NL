@@ -1,31 +1,31 @@
 ---
-title: Welke workflowstappen zijn beschikbaar voor AEM Forms Cloud Service om een workflow te maken of voor BPM (Business Process Automation)?
+title: Welke workflowstappen zijn beschikbaar voor AEM Forms Cloud Service om een workflow of BPM (Business Process Automation) te maken?
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: Gebruik AEM werkstromen, gebruik taakstappen, zet om in stap PDF/A, produceer document van geregistreerde stap, gebruik werkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
+keywords: De werkschema's van AEM van het gebruik, het gebruiken van taakstappen, zet in stap PDF/A om, produceer document van geregistreerde stap, gebruikwerkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '6730'
+source-wordcount: '6721'
 ht-degree: 0%
 
 ---
 
 
-# Forms-centrische AEM Workflows gebruiken - Step Reference to automatisate business processes {#forms-centric-workflow-on-osgi-step-reference}
+# Forms-gecentreerde AEM Workflows gebruiken - Step Reference to automate Business Processors {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse AEM stappen van het Werkschema in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) te bereiken.
+U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse stappen van het Werkschema van AEM in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) te bereiken.
 
 ## Forms-centric stappen {#forms-workflow-steps}
 
-Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel een op Adaptive Forms gebaseerde Forms-gerichte workflow bouwen op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne processen en bedrijfsprocessen binnen de firewall. U kunt ook stappen van de Forms Workflow gebruiken om:
+Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM-workflow. Met deze stappen kunt u snel een op Adaptive Forms gebaseerde Forms-gerichte workflow bouwen op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne processen en bedrijfsprocessen binnen de firewall. U kunt ook Forms Workflow-stappen gebruiken om:
 
 * Maak bedrijfsprocessen, workflows na verzending en back-endworkflows om inschrijvingsprocessen te beheren.
 
@@ -41,11 +41,11 @@ Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een
 
 >[!NOTE]
 >
->Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle stappen in de Forms Workflow alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
+>Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle Forms Workflow-stappen alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
 
 ## Taakstap toewijzen {#assign-task-step}
 
-De taakstap toewijzen maakt een tijdelijk item en wijst dit toe aan een gebruiker of groep. Naast het toewijzen van de taak geeft de component ook het adaptieve formulier of de niet-interactieve PDF voor de taak op. Het adaptieve formulier is vereist voor het accepteren van invoer van gebruikers en niet-interactieve PDF of een alleen-lezen adaptief formulier wordt gebruikt voor workflows die alleen voor revisie bestemd zijn.
+De taakstap toewijzen maakt een tijdelijk item en wijst dit toe aan een gebruiker of groep. Naast het toewijzen van de taak geeft de component ook het adaptieve formulier of de niet-interactieve PDF voor de taak op. Het adaptieve formulier is vereist voor het accepteren van invoer van gebruikers en niet-interactieve PDF of een alleen-lezen adaptief formulier wordt gebruikt voor workflows die alleen voor revisie zijn.
 
 U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijvoorbeeld, creërend een automatisch Document van Verslag, toewijzend de taak aan een specifieke gebruiker of een groep, specificerend de weg van de voorgelegde gegevens, specificerend de weg van te vullen gegevens, en specificerend standaardacties. De stap Taak toewijzen heeft de volgende eigenschappen:
 
@@ -53,7 +53,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **[!UICONTROL Description]**: uitleg van de bewerkingen die in de taak worden uitgevoerd. Deze informatie is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
 * **[!UICONTROL Thumbnail Path]**: pad van de taakminiatuur. Als er geen pad is opgegeven, wordt voor een adaptief formulier een standaardminiatuur weergegeven en voor Document of Record, wordt een standaardpictogram weergegeven.
-* **[!UICONTROL Workflow Stage]**: een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model (Sidekick > Pagina > Pagina-eigenschappen > Staven).
+* **[!UICONTROL Workflow Stage]**: een werkstroom kan uit meerdere fasen bestaan. Deze fases worden weergegeven in het AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model (Sidekick > Pagina-eigenschappen > Pagina-eigenschappen > Fases).
 * **[!UICONTROL Priority]**: de geselecteerde prioriteit wordt weergegeven in het AEM Inbox. De beschikbare opties zijn Hoog, Medium en Laag. De standaardwaarde is Medium.
 * **[!UICONTROL Due Date]**: geef het aantal dagen of uren op waarna de taak achterstallig is. Als u **[!UICONTROL Off]** selecteert, wordt de taak nooit achterstallig gemarkeerd. U kunt ook een time-outhandler opgeven om specifieke taken uit te voeren nadat de taak is uitgevoerd.
 
@@ -62,7 +62,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **[!UICONTROL Time-out after Due Date]**: Selecteer deze optie om het selectieveld Tijdlijnhandler in te schakelen.
 * **[!UICONTROL Timeout Handler]**: selecteer het script dat moet worden uitgevoerd wanneer de taakstap toewijzen de juiste datum overschrijdt. De manuscripten die in CRX-bewaarplaats bij [ worden geplaatst apps ]/fd/dashboard/scripts/timeoutHandler zijn beschikbaar voor selectie. Het opgegeven pad bestaat niet in de crx-gegevensopslagruimte. Een beheerder maakt het pad voordat het wordt gebruikt.
 * **[!UICONTROL Highlight the action and comment from the last task in Task Details]**: Selecteer deze optie om de laatste actie weer te geven die is uitgevoerd en de opmerking die is ontvangen in het gedeelte met taakdetails van een taak.
-* **[!UICONTROL Type]**: Kies het type document dat moet worden ingevuld wanneer de werkstroom wordt gestart. U kunt een adaptief formulier kiezen, een alleen-lezen adaptief formulier, een niet-interactief PDF-document.
+* **[!UICONTROL Type]**: Kies het type document dat moet worden ingevuld wanneer de werkstroom wordt gestart. U kunt een adaptief, alleen-lezen, adaptief formulier kiezen, een niet-interactief PDF-document.
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
@@ -81,7 +81,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 -->
 
 * **[!UICONTROL Adaptive Form Path]**: geef het pad op van het adaptieve formulier. U kunt het Adaptief formulier gebruiken dat naar de workflow wordt verzonden, beschikbaar via een absoluut pad, of het Adaptief formulier ophalen via een pad dat is opgeslagen in een variabele van het type tekenreeksgegevens.
-* **[!UICONTROL Select input PDF using]**: geef het pad op van een niet-interactief PDF-document. Het veld is beschikbaar wanneer u een niet-interactief PDF-document kiest in het veld Type. U kunt de invoer-PDF selecteren met behulp van het pad dat relatief is ten opzichte van de payload, opgeslagen op een absoluut pad of met behulp van een variabele van het gegevenstype Document. Bijvoorbeeld, [ Payload_Directory ] /Workflow/PDF/credit-card.pdf. Het pad bestaat niet in crx-repository. Een beheerder maakt het pad voordat het wordt gebruikt. U hebt een Document of Record-optie ingeschakeld of op een formuliersjabloon gebaseerde Adaptieve Forms nodig om de optie PDF-pad te kunnen gebruiken.
+* **[!UICONTROL Select input PDF using]**: geef het pad op van een niet-interactief PDF-document. Het veld is beschikbaar wanneer u in het veld Type een niet-interactief PDF-document kiest. U kunt de invoer-PDF selecteren met behulp van het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met behulp van een variabele van het gegevenstype Document. Bijvoorbeeld, [ Payload_Directory ] /Workflow/PDF/credit-card.pdf. Het pad bestaat niet in crx-repository. Een beheerder maakt het pad voordat het wordt gebruikt. U hebt een Document of Record-optie ingeschakeld of op een formuliersjabloon gebaseerde Adaptieve Forms nodig om de PDF Path-optie te kunnen gebruiken.
 * **[!UICONTROL For completed task, render the Adaptive Form as]**: wanneer een taak is gemarkeerd als voltooid, kunt u het adaptieve formulier weergeven als een alleen-lezen adaptief formulier of als een PDF-document. U hebt een Document of Record-optie ingeschakeld of op een formuliersjabloon gebaseerde Adaptieve Forms nodig om het Adaptief formulier weer te geven als Document of Record.
 * **[!UICONTROL Pre-populated]**: De volgende velden hieronder dienen als invoer voor de taak:
 
@@ -120,8 +120,8 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
     
     -->
 
-* **[!UICONTROL Assignee]** > **[!UICONTROL Assign options]** : geef de methode op die u aan een gebruiker wilt toewijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM gebruiker of groep.
-* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van de douane Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&amp;CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Assignee]** > **[!UICONTROL Assign options]** : geef de methode op die u aan een gebruiker wilt toewijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM-gebruiker of -groep.
+* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ Creërend een stap van de Dynamische Deelnemer van de douaneAdobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participants]**: Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het veld **[!UICONTROL Participant Chooser]** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
@@ -138,8 +138,8 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 * **[!UICONTROL HTML Email Template]**: selecteer de e-mailsjabloon voor de e-mailmelding. Als u een sjabloon wilt bewerken, wijzigt u het bestand op /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in de crx-repository.
 * **[!UICONTROL Allow Delegation To]**: AEM Inbox biedt de aangemelde gebruiker een optie om de toegewezen workflow te delegeren aan een andere gebruiker. U kunt delegeren binnen dezelfde groep of aan de werkschemagebruiker van een andere groep. Als de taak aan één gebruiker wordt toegewezen en de optie **[!UICONTROL allow delegation to members of the assignee group]** wordt geselecteerd, dan is het niet mogelijk om de taak aan een andere gebruiker of groep te delegeren.
-* **[!UICONTROL Share Settings]**: AEM Inbox biedt opties om een of alle taken in het Postvak IN te delen met een andere gebruiker:
-   * Wanneer de optie **[!UICONTROL Allow assignee to share explicitly in inbox]** is geselecteerd, kan de gebruiker de taak in AEM Postvak In selecteren en deze met een andere AEM delen.
+* **[!UICONTROL Share Settings]**: AEM Inbox biedt opties voor het delen van een of alle taken in het Postvak IN met een andere gebruiker:
+   * Wanneer de optie **[!UICONTROL Allow assignee to share explicitly in inbox]** is geselecteerd, kan de gebruiker de taak selecteren in AEM Inbox en deze delen met een andere AEM-gebruiker.
    * Wanneer de optie **[!UICONTROL Allow assignee to share via inbox sharing]** is geselecteerd en gebruikers hun Postvak IN-items delen of andere gebruikers toegang geven tot hun Postvak IN-items, worden alleen taken waarvoor de eerder vermelde optie is ingeschakeld, gedeeld met andere gebruikers.
    * Wanneer **[!UICONTROL Allow assignee to delegate using 'Out of Office' settings]** is geselecteerd. De ontvanger kan de optie toelaten om de taak aan andere gebruikers samen met andere uit opties van het Bureau te delegeren. Om het even welke nieuwe die taken aan de uit-van-bureaugebruiker worden toegewezen worden automatisch gedelegeerd (toegewezen) aan de gebruikers in uit-van-bureaumontages worden vermeld.
 
@@ -151,10 +151,10 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 * **[!UICONTROL Route Title]**: geef de titel voor de route op. Deze wordt weergegeven in het AEM Inbox.
 * **[!UICONTROL Coral Icon]**: geef een HTML-kenmerk van een koraalpictogram op. De Adobe CorelUI-bibliotheek biedt een uitgebreide set aanraakpictogrammen. U kunt een pictogram voor de route kiezen en gebruiken. Deze wordt samen met de titel weergegeven in het AEM Inbox. Als u de routes in een variabele opslaat, gebruiken de routes een standaard &quot;Tags&quot;koraalpictogram.
-* **[!UICONTROL Allow assignee to add comment]**: Selecteer deze optie om opmerkingen voor de taak in te schakelen. Een toegewezen persoon kan de opmerkingen toevoegen vanuit het Postvak AEM op het moment dat de taak wordt verzonden.
+* **[!UICONTROL Allow assignee to add comment]**: Selecteer deze optie om opmerkingen voor de taak in te schakelen. Een toegewezen persoon kan de opmerkingen vanuit het AEM Inbox toevoegen op het moment dat de taak wordt verzonden.
 * **[!UICONTROL Save comment in variable]**: sla de opmerking op in een variabele van het gegevenstype String. Deze optie wordt alleen weergegeven als u het selectievakje **[!UICONTROL Allow assignee to add comment]** inschakelt.
 
-* **[!UICONTROL Allow assignee to add attachments to the task]**: selecteer deze optie om bijlagen in te schakelen voor de taak. Een toegewezen persoon kan de bijlagen toevoegen vanuit het AEM Postvak In op het moment dat de taak wordt verzonden. U kunt ook de maximale grootte **[!UICONTROL (Maximum File Size)]** van een bijlage beperken. De standaardgrootte is 2 MB.
+* **[!UICONTROL Allow assignee to add attachments to the task]**: selecteer deze optie om bijlagen in te schakelen voor de taak. Een toegewezen persoon kan de bijlagen toevoegen vanuit het AEM Inbox op het moment dat de taak wordt verzonden. U kunt ook de maximale grootte **[!UICONTROL (Maximum File Size)]** van een bijlage beperken. De standaardgrootte is 2 MB.
 
 * **[!UICONTROL Save output task attachments using]**: geef de locatie van de map met bijlagen op. U kunt uitvoertaakbijlagen opslaan met een pad dat is gebaseerd op de lading of in een variabele van een array met documentgegevenstypen. Deze optie wordt alleen weergegeven als u het selectievakje **[!UICONTROL Allow assignee to add attachments to the task]** inschakelt en **[!UICONTROL Adaptive Form]** , **[!UICONTROL Read-only Adaptive Form]** of **[!UICONTROL Non-interactive PDF document]** selecteert in de vervolgkeuzelijst **[!UICONTROL Type]** op het tabblad **[!UICONTROL Form/Document]** .
 
@@ -166,18 +166,18 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 >[!NOTE]
 >
->De opties om de Assign stap van de Taak als ontwerp te bewaren en de geschiedenis van de Assign stap van de Taak terug te winnen worden onbruikbaar gemaakt wanneer u een AEM werkschemamodel voor externe gegevensopslag vormt. In Postvak In is bovendien de optie om op te slaan uitgeschakeld.
+>De opties om de stap Taak toewijzen als concept op te slaan en de geschiedenis van de stap Taak toewijzen op te halen, zijn uitgeschakeld wanneer u een AEM-workflowmodel voor externe gegevensopslag configureert. In Postvak In is bovendien de optie om op te slaan uitgeschakeld.
 
-## Omzetten in stap PDF/A {#convert-pdfa}
+## Omzetten in PDF/A-stap {#convert-pdfa}
 
-PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het document, door de lettertypen in te sluiten en de compressie van het bestand op te heffen. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. U kunt ***gebruiken zet in PDF/A*** stap in een AEMWerkschema om uw documenten van PDF in formaat om te zetten PDF/A.
+PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het document, door de lettertypen in te sluiten en de compressie van het bestand ongedaan te maken. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. U kunt ***gebruiken zet in PDF/A*** stap in een Werkschema van AEM om uw documenten van PDF in formaat om te zetten PDF/A.
 
 De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, als een lading kunnen worden verstrekt of in een variabele van het gegevenstype Document worden opgeslagen.
 
 **[!UICONTROL Conversion Options]**: Met deze eigenschap worden de instellingen opgegeven voor het converteren van PDF-documenten naar PDF/A-documenten. Onder dit tabblad zijn verschillende opties beschikbaar:
-* **[!UICONTROL Compliance]** - Geeft de standaard aan waaraan het uitvoer-PDF/A-document moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b, of PDF/A-3b.
+* **[!UICONTROL Compliance]** - Geeft de standaard aan waaraan het PDF/A-uitvoerdocument moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b, of PDF/A-3b.
 * **[!UICONTROL Result Level]** - Geeft het resultaatniveau op als PassFail, Summary of Gedetailleerd voor de conversie-uitvoer.
 * **[!UICONTROL Color Space]**: geeft de vooraf gedefinieerde kleurruimte op als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED of SWOP, die kan worden gebruikt voor uitvoer van PDF/A-bestanden.
 * **[!UICONTROL Optional Content]**: Toestaan dat specifieke grafische objecten en/of annotaties alleen zichtbaar zijn in uitvoer-PDF/A-document als aan een bepaalde set criteria wordt voldaan.
@@ -187,9 +187,9 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 ## E-mailstap verzenden {#send-email-step}
 
-Met de stap E-mail kunt u bijvoorbeeld een e-mail verzenden met een document of record, een koppeling naar een adaptief formulier <!-- , link of an interactive communication--> of een bijgevoegd PDF-document. Verzend E-mailstap steunt [ HTML e-mail ](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de vormgeving, het kleurenschema en het gedrag van de e-mail definiëren.
+Met de stap E-mail kunt u bijvoorbeeld een e-mail verzenden met een document of record, een koppeling naar een adaptief formulier <!-- , link of an interactive communication--> of een bijgevoegd PDF-document. Verzend E-mailstap steunt [ e-mail van HTML ](https://en.wikipedia.org/wiki/HTML_email). HTML-e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. U kunt een HTML-e-mailsjabloon gebruiken om de weergave, het kleurenschema en het gedrag van de e-mail te definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
 
 De e-mailstap heeft de volgende eigenschappen:
 
@@ -203,7 +203,7 @@ De e-mailstap heeft de volgende eigenschappen:
 * **[!UICONTROL Retrieve from Workflow metadata]** - Haal het onderwerp op van een eigenschap metadata.
 * **[!UICONTROL Variable]** - Haal het onderwerp op uit de waarde die is opgeslagen in een variabele van het gegevenstype String.
 
-**[!UICONTROL HTML Email Template]**: HTML sjabloon voor e-mail. U kunt variabelen in een e-mailsjabloon opgeven. De E-mailstap extraheert en geeft alle variabelen weer die in een sjabloon zijn opgenomen voor invoer.
+**[!UICONTROL HTML Email Template]**: HTML-sjabloon voor de e-mail. U kunt variabelen in een e-mailsjabloon opgeven. De E-mailstap extraheert en geeft alle variabelen weer die in een sjabloon zijn opgenomen voor invoer.
 
 **[!UICONTROL Email Template Metadata]**: de waarde van de sjabloonvariabelen voor e-mail kan een door de gebruiker opgegeven waarde zijn, het pad van een element op de auteur of de publicatieserver, afbeelding of eigenschap voor metagegevens van de workflow.
 
@@ -229,7 +229,7 @@ Selecteer de optie **[!UICONTROL Variable]** om de bestandsbijlage op te halen d
 
 ## Document met recordstap genereren {#generate-document-of-record-step}
 
-Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Deze record wordt een Document of Record (DoR) genoemd. Met de stap Document van record genereren kunt u een alleen-lezen of interactieve PDF versie van een adaptief formulier maken. De PDF-versie bevat informatie die in het formulier is ingevuld en de indeling van het adaptieve formulier.
+Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Deze record wordt een Document of Record (DoR) genoemd. Met de stap Document van record genereren kunt u een alleen-lezen of interactieve PDF-versie van een adaptief formulier maken. De PDF-versie bevat informatie die in het formulier is ingevuld en de indeling van het adaptieve formulier.
 
 De stap Document of Record heeft de volgende eigenschappen:
 
@@ -250,7 +250,7 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 ## DDX-stap aanroepen {#invokeddx}
 
-XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***aanhalen stap DDX*** in een AEM Werkschema gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van documenten, het Creëren van, en het wijzigen van Acrobat en XFA Forms, en anderen die in de [ documentatie van de Verwijzing DDX ](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) worden beschreven.
+XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***aanhalen stap DDX*** in een Werkschema van AEM gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van documenten, het Creëren van, en het wijzigen van Acrobat en XFA Forms, en anderen die in de [ documentatie van de Verwijzing DDX ](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) worden beschreven.
 
 De aanroepende DDX-stap heeft de volgende eigenschappen:
 
@@ -390,14 +390,14 @@ De stap Document ondertekenen heeft de volgende eigenschappen:
 
 * **[!UICONTROL Locale]**: geef de taal op voor de opties voor e-mail en verificatie. U kunt de landinstelling opslaan in een variabele van het gegevenstype String of **[!UICONTROL Literal]** selecteren om de landinstelling te kiezen in de lijst met beschikbare opties. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **[!UICONTROL en_US]** op voor Engels en **[!UICONTROL fr_FR]** voor Frans.
 
-* **[!UICONTROL Adobe Sign Cloud Configuration]**: kies een [!DNL Adobe Sign] cloudconfiguratie. Als u niet [!DNL Adobe Sign] voor [!DNL AEM Forms] hebt gevormd, zie [ Adobe Sign met  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) integreren.
+* **[!UICONTROL Adobe Sign Cloud Configuration]**: kies een [!DNL Adobe Sign] cloudconfiguratie. Als u niet [!DNL Adobe Sign] voor [!DNL AEM Forms] hebt gevormd, zie [ het Teken van Adobe met  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) integreren.
 
 * **[!UICONTROL Select Document to be signed using]**: U kunt een document kiezen op een locatie die relatief is ten opzichte van de lading, de lading gebruiken als het document, een absoluut pad van het document opgeven of het document ophalen dat is opgeslagen in een variabele van het gegevenstype Document.
 * **[!UICONTROL Days Until Deadline]**: Een document is gemarkeerd als vervallen (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het veld **[!UICONTROL Days Until Deadline]** . Het aantal dagen wordt geteld nadat de documentatie aan een gebruiker is toegewezen voor ondertekening.
 * **[!UICONTROL Reminder Email Frequency]**: U kunt een herinnering per e-mail verzenden met een dagelijkse of wekelijkse interval. De week wordt geteld vanaf de dag waarop de documentatie aan een gebruiker is toegewezen voor ondertekening.
 * **[!UICONTROL Signature Process]**: u kunt ervoor kiezen een document in een opeenvolgende of parallelle volgorde te ondertekenen. Eén ondertekenaar ontvangt het document op volgorde voor ondertekening. Nadat de eerste ondertekenaar het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ondertekenaar, enzovoort. Parallel hieraan kunnen meerdere ondertekenaars een document tegelijk ondertekenen.
 * **[!UICONTROL Redirection URL]**: geef een URL voor omleiding op. Nadat het document is ondertekend, kunt u de ontvanger omleiden naar een URL. Gewoonlijk bevat deze URL een bedankbericht of verdere instructies.
-* **[!UICONTROL Workflow Stage]**: een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model ( **[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Page Properties]** > **[!UICONTROL Stages]** ).
+* **[!UICONTROL Workflow Stage]**: een werkstroom kan uit meerdere fasen bestaan. Deze fases worden weergegeven in het AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model ( **[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Page Properties]** > **[!UICONTROL Stages]** ).
 * **[!UICONTROL Select Recipients]**: geef de methode op waarmee u ontvangers voor het document kunt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ontvanger handmatig toevoegen. Wanneer u Handmatig selecteert in de vervolgkeuzelijst, voegt u de gewenste gegevens toe, zoals E-mail, Rol en Verificatiemethode.
 
   >[!NOTE]
@@ -580,15 +580,15 @@ Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvar
 
 ### Uitvoerdocument {#output-document}
 
-**Document van de Output**: Specificeert de naam van de geproduceerde vorm van de PDF.
+**Document van de Output**: Specificeert de naam van de geproduceerde vorm van PDF.
 
 ### Aanvullende parameters {#additional-parameters-1}
 
 * **Wortel van de Inhoud**: Specificeert de weg aan de omslag in de bewaarplaats waar de fragmenten of de beelden die in het inputXDP malplaatje worden gebruikt worden opgeslagen.
 * **Landinstelling**: Specificeert de standaardscène voor de geproduceerde vorm van PDF.
 * **Versie van Acrobat**: Specificeert de gerichte versie van Acrobat voor de geproduceerde vorm van PDF.
-* **Gelineariseerde PDF**: Specificeert of om de geproduceerde PDF voor Web het bekijken te optimaliseren.
-* **Tagged PDF**: Specificeert of om de geproduceerde PDF toegankelijk te maken.
+* **Gelineariseerde PDF**: Specificeert of om geproduceerde PDF voor Webweergave te optimaliseren.
+* **Tagged PDF**: Specificeert of om geproduceerde PDF toegankelijk te maken.
 * **XCI document**: Specificeert de weg aan het XCI dossier.
 
 ## Zie ook {#see-also}

@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  Prime en het dienstenaanbod v
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 82a3016149645701abe829ad89c493f480956267
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ De eerste stap in het proces om [!DNL Dynamic Media] Ultimate toe te laten is [[
 
 Zorg ervoor dat u aan de volgende vereisten voldoet voordat u het activeringsproces start:
 
-1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [ Uw programma omvat  [!DNL Dynamic Media]  oplossingen ](#configure-dynamic-media-solutions).
 1. U hebt een [!DNL Dynamic Media] Prime- of Ultimate-licentie.
 
@@ -84,9 +84,9 @@ Zorg ervoor dat u aan de volgende vereisten voldoet voordat u het activeringspro
 
 Voer de volgende stappen uit om [!DNL Dynamic Media with OpenAPI] in te schakelen voor uw cloudserviceomgeving:
 
-1. [ navigeer aan Cloud Manager UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [ navigeer aan Cloud Manager UI ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [ creeer een milieu ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments), als u geen toegang tot bestaande hebt.
+1. [ creeer een milieu ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments), als u geen toegang tot bestaande hebt.
 
 1. Selecteer **[!UICONTROL Click to activate]** in de **[!UICONTROL Dynamic Media]** rij van de **[!UICONTROL Environment Information]** sectie op de pagina met omgevingsdetails.
 
@@ -127,14 +127,14 @@ Vorm [!UICONTROL Dynamic Media] oplossingen om de basis en geavanceerde mogelijk
 
 Zorg ervoor dat u de volgende functies hebt om [!UICONTROL Dynamic Media] -oplossingen te configureren:
 
-1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. U hebt [!DNL Dynamic Media] Ultimate-licentie.
 
 #### [!DNL Dynamic Media] -oplossingen configureren voor de levering van bedrijfsmiddelen {#configure-dynamic-media-solutions-for-asset-delivery}
 
 Voer de volgende stappen uit:
 
-1. [ creeer een nieuw programma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) of navigeer aan een bestaand programma en klik **[!UICONTROL Edit]**. Op de pagina **[!UICONTROL Set up for production]** wordt het tabblad **[!UICONTROL Solutions & Add-ons]** weergegeven.
+1. [ creeer een nieuw programma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) of navigeer aan een bestaand programma en klik **[!UICONTROL Edit]**. Op de pagina **[!UICONTROL Set up for production]** wordt het tabblad **[!UICONTROL Solutions & Add-ons]** weergegeven.
 
 1. Selecteer **[!UICONTROL Assets]** , **[!UICONTROL Assets Prime]** , **[!UICONTROL Assets Ultimate]** of **[!UICONTROL Sites]** om de **[!UICONTROL Dynamic Media]** -oplossing aan uw programma toe te voegen.
 
@@ -152,7 +152,7 @@ Creëer en maak een lijst van [!DNL Dynamic Media] bedrijven in uw AEM-cloudserv
 
 Als u de bestaande bedrijven (accounts) wilt zien of een nieuw [!DNL Dynamic Media] -bedrijf (account) wilt toevoegen aan uw IMS-org, moet u beschikken over:
 
-1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
 1. U hebt [!DNL Dynamic Media] Ultimate-licentie.
 
@@ -203,20 +203,20 @@ Als AEM as a Cloud Service wordt geleverd met een standaarddomein, kunt u dit na
 
 Zorg ervoor dat u aan de volgende vereisten voldoet voordat u het configuratieproces start:
 
-1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [ Toegang tot Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [ reeds geactiveerd  [!DNL Dynamic Media with OpenAPI]  in uw milieu ](#activate-dynamic-media-with-openapi).
 1. Ingeschakeld [!DNL Dynamic Media with OpenAPI] in gebruiksklare toestand.
-1. EV- of OV-typecertificaat voor het domein dat moet worden gebruikt voor de leveringslaag. Zie [ Inleiding aan SSL certificaten ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) voor meer details.
+1. EV- of OV-typecertificaat voor het domein dat moet worden gebruikt voor de leveringslaag. Zie [ Inleiding aan SSL certificaten ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) voor meer details.
 
 #### Aangepast domein in leveringslaag configureren met Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
 Voer de volgende stappen in Cloud Manager uit om een aangepast domein in de leveringsrij te vormen:
 
-1. [ voeg een klant geleid SSL certificaat ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert) toe.
+1. [ voeg een klant geleid SSL certificaat ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert) toe.
 
-1. [ voeg een naam van het douanedomein ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings) toe.
+1. [ voeg een naam van het douanedomein ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings) toe.
 
-1. Navigeer aan de pagina van milieudetails en [ voeg een configuratie CDN ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping) toe. Selecteer tijdens het toevoegen van de configuratie **[!UICONTROL Delivery]** in het veld **[!UICONTROL Tier]** in het dialoogvenster **[!UICONTROL Configure CDN]** .
+1. Navigeer aan de pagina van milieudetails en [ voeg een configuratie CDN ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping) toe. Selecteer tijdens het toevoegen van de configuratie **[!UICONTROL Delivery]** in het veld **[!UICONTROL Tier]** in het dialoogvenster **[!UICONTROL Configure CDN]** .
 
    ![ vorm CDN ](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
@@ -228,7 +228,7 @@ Voer de volgende stappen in Cloud Manager uit om een aangepast domein in de leve
 
    ![ ga levende bereidheid optie ](/help/assets/assets/go-live-readiness-option.png)
 
-1. Voer de **[!UICONTROL Configure CNAME]** stappen uit om [ cdn.adobeaemcloud.com ](http://cdn.adobeaemcloud.com/) (het verslag van CNAME) in het DNS verslag van de DNS dienstverlener in kaart te brengen. Deze afbeelding zorgt ervoor dat de verzoeken die bij het douanedomein worden ontvangen aan Adobe CDN opnieuw worden gericht.
+1. Voer de **[!UICONTROL Configure CNAME]** -stappen uit om `cdn.adobeaemcloud.com` (CNAME-record) in de DNS-record van het DNS-servicebureau toe te wijzen. Deze afbeelding zorgt ervoor dat de verzoeken die bij het douanedomein worden ontvangen aan Adobe CDN opnieuw worden gericht.
 
    ![ ga levende gereedheidsdialoogdoos ](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
@@ -248,9 +248,9 @@ Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery 
 
 To start the API keys onboarding process, ensure you have:
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
-1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
+1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
@@ -273,7 +273,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
-1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
+1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
@@ -297,7 +297,7 @@ headers: {
       'X-Api-Key': 'YOUR_API_KEY_HERE'
     `},
 ```
-See [Search Assets API](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
+See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 

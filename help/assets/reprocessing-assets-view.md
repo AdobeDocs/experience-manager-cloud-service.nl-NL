@@ -3,9 +3,9 @@ title: Digitale middelen opnieuw verwerken
 description: Meer informatie over verschillende methoden voor het opwerken van digitale elementen
 role: User, Leader, Developer
 exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Als u een map selecteert:
 
       * **[!UICONTROL Post-processing Workflow]:** Kies deze optie als aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt. Er kunnen extra nabewerkingsworkflows worden toegevoegd aan de configuratie. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-Zie [ gebruik activa microservices en verwerkingsprofielen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=nl-NL) om meer over verwerkingsprofielen en naverwerkingswerkschema te leren.
+Zie [ gebruik activa microservices en verwerkingsprofielen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) om meer over verwerkingsprofielen en naverwerkingswerkschema te leren.
 
 ![ Geavanceerde Opwerking Assets Options2 ](assets/reprocessing-options-advanced-2.png)
 
@@ -103,23 +103,21 @@ Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebru
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
-Lees meer over [ Slimme markeringen voor videoactiva ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=nl-NL).
-
-Lees meer over [ opnieuw verwerkings kleurenmarkeringen voor bestaande beelden in DAM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=nl-NL#color-tags-existing-images).
+Lees meer over [ opnieuw verwerkings kleurenmarkeringen voor bestaande beelden in DAM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
 
 ### Slim uitsnijden {#reprocessing-smart-crop}
 
-Lees meer over [ Dynamische Slimme gewas van Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=nl-NL) die u specifieke het bebouwen (**[!UICONTROL Smart Cropping]** en pixel het bebouwen) en het scherpen configuratie op de geuploade activa laat toepassen.
+Lees meer over [ Dynamische Slimme gewas van Media ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) die u specifieke het bebouwen (**[!UICONTROL Smart Cropping]** en pixel het bebouwen) en het scherpen configuratie op de geuploade activa laat toepassen.
 
 ### Metagegevens {#reprocessing-metadata}
 
 [!DNL Adobe Experience Manager Assets] houdt metagegevens bij voor elk element. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid om metagegevens te extraheren uit bestanden die naar Experience Manager Assets zijn geüpload, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
-Lees meer over [ het Opverwerken van meta-gegevensprofielen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=nl-NL).
+Lees meer over [ het Opverwerken van meta-gegevensprofielen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
 
 ### Dynamische media-elementen in een map opnieuw verwerken {#reprocessing-dynamic-media}
 
-U kunt middelen in een omslag opnieuw verwerken die reeds een bestaand Dynamisch Profiel van het Beeld van Media of een Dynamisch Profiel van Media Video heeft dat u later veranderde. Voor meer informatie, bezoek [ opnieuw verwerken de Dynamische activa van Media in een omslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=nl-NL).
+U kunt middelen in een omslag opnieuw verwerken die reeds een bestaand Dynamisch Profiel van het Beeld van Media of een Dynamisch Profiel van Media Video heeft dat u later veranderde. Voor meer informatie, bezoek [ opnieuw verwerken de Dynamische activa van Media in een omslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >
@@ -128,4 +126,4 @@ U kunt middelen in een omslag opnieuw verwerken die reeds een bestaand Dynamisch
 
 ### Workflows
 
-Lees meer over [ verwerkingsprofielen en post-verwerkende werkschema&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=nl-NL).
+Lees meer over [ verwerkingsprofielen en post-verwerkende werkschema&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).

@@ -4,7 +4,7 @@ description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in 
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 0%
@@ -13,36 +13,36 @@ ht-degree: 0%
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![ Hulpmiddelen van de Ontwikkelaar van de Experience Manager voor het embleem van de Verduistering ](assets/eclipse-logo.png)
+![ Experience Manager Developer Tools for Eclipse logo ](assets/eclipse-logo.png)
 
 ## Overzicht {#overview}
 
-{de Hulpmiddelen van de Ontwikkelaar van 0} Experience Manager voor Verduistering _is een stop Eclipse die op de [ wordt gebaseerd de stop van de Verduistering voor Apache Sling ](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache._
+_Experience Manager de Hulpmiddelen van de Ontwikkelaar voor Verduistering_ is een stop van de Verduistering die op de [ wordt gebaseerd de stop van de Verduistering voor Apache die ](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache.
 
-Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
+Het biedt verschillende functies die de ontwikkeling van AEM vereenvoudigen:
 
-* Naadloze integratie met AEM instanties via Eclipse Server Connector
+* Naadloze integratie met AEM-instanties via Eclipse Server Connector
 * Synchronisatie voor zowel inhoud als OSGi-bundels
 * Ondersteuning voor foutopsporing met functie voor hot-swapping van code
-* Eenvoudige Bootstrap van AEM Projecten door middel van een specifieke Tovenaar van de Aanmaak van het Project
+* Eenvoudige Bootstrap van AEM-projecten via een specifieke wizard voor het maken van projecten
 * Eenvoudig bewerken van JCR-eigenschappen
 
 ## Vereisten {#requirements}
 
 Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming &lbrace;](https://www.eclipse.org/downloads/packages/).
-* Vorm uw eclipse installatie om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier te uitgeven zoals die in [ wordt beschreven Veelgestelde Veelgestelde vragen van de Verduistering ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse) hebt.
+* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming {](https://www.eclipse.org/downloads/packages/).
+* Vorm uw eclipse installatie om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier te uitgeven zoals die in [ wordt beschreven Veelgestelde vragen van de Verduistering.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
 >Op macOS, moet u **Eclipse.app** met de rechtermuisknop aanklikken, en dan selecteren **toont de Inhoud van het Pakket** om uw `eclipse.ini`**te vinden.**
 
-## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
+## AEM Developer Tools for Eclipse installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de stop als volgt installeren:
 
-1. Open de [ AEM Website van de Hulpmiddelen van de Ontwikkelaar ](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Open de [ Website van de Hulpmiddelen van de Ontwikkelaar van AEM ](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Kopieer de **Verbinding van de Installatie**.
 
@@ -60,26 +60,26 @@ Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de 
 1. Accepteer de vergunningsovereenkomsten en klik **Afwerking**.
 1. Klik **RestartNow** om Eclipse opnieuw te beginnen.
 
-## Het AEM perspectief {#the-aem-perspective}
+## Het AEM-perspectief {#the-aem-perspective}
 
 In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over Perspectief, zie de [ documentatie van de Verduistering ](https://help.eclipse.org/latest/index.jsp).
 
-_Hulpmiddelen van de Ontwikkeling van de Experience Manager voor Verduistering_ verstrekken een AEM Perspectief dat u volledige controle over uw AEM Projecten en instanties aanbiedt. Het AEM perspectief openen:
+_de Ontwikkelingshulpmiddelen van Experience Manager voor Verduistering_ verstrekken een Perspectief van AEM dat u volledige controle over uw Projecten en instanties van AEM aanbiedt. Het AEM-perspectief openen:
 
 1. Van de het menubar van de Verduistering, uitgezocht **Venster** Perspectief **>** Open Perspectief **>** Andere **.**
 1. Selecteer **AEM** in de dialoog en klik **Open**.
 
-![ het AEM perspectief in Verduistering ](assets/eclipse-aem-perspective.png)
+![ het perspectief van AEM in Verduistering ](assets/eclipse-aem-perspective.png)
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De _Hulpmiddelen van de Ontwikkelaar van de Experience Manager voor Verduistering_ komt met een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt omhoog krijgen. Het dient ook als gids voor beste praktijken aan verscheidene AEM eigenschappen. [ leer meer over het Archetype van het Project ](https://github.com/adobe/aem-project-archetype).
+De _Hulpmiddelen van de Ontwikkelaar van Experience Manager voor Verduistering_ komt met een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt omhoog krijgen. Het fungeert ook als gids voor beste praktijken voor verschillende functies van AEM. [ leer meer over het Archetype van het Project ](https://github.com/adobe/aem-project-archetype).
 
 Ga als volgt te werk om het voorbeeldproject te maken:
 
-1. In het **Dossier** > **Nieuw** > **het menu van het Project**, doorblader aan de **AEM** sectie en selecteer **AEM het Project van de Steekproef Multi-Module**.
+1. In het **Dossier** > **Nieuw** > **het menu van het Project**, doorblader aan de **sectie van AEM** en selecteer **de Steekproef van AEM Multi-Module Project**.
 
-   ![ AEM Steekproef Multi-Module Project ](assets/aem-sample-project.png)
+   ![ de Steekproef van AEM Multi-Module Project ](assets/aem-sample-project.png)
 
 1. Klik op **Next**.
 
@@ -104,15 +104,15 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
 1. Klik op **Next**.
 
-1. Vervolgens configureert u een AEM server waarmee Eclipse verbinding maakt.
+1. Vervolgens configureert u een AEM-server waarmee Eclipse verbinding maakt.
 
-   Om de debugger eigenschap te gebruiken, moet u AEM op zuivert wijze begonnen zijn - die kan worden bereikt, voor door het volgende aan de bevellijn toe te voegen:
+   Als u de functie voor foutopsporing wilt gebruiken, moet u AEM hebben gestart in de foutopsporingsmodus. Dit kan worden bereikt door het volgende toe te voegen aan de opdrachtregel:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
    ```
 
-   ![ verbind met AEM server ](assets/connect-server.png)
+   ![ verbind met de server van AEM ](assets/connect-server.png)
 
 1. Klik **Afwerking**. De projectstructuur wordt gemaakt.
 
@@ -189,10 +189,10 @@ U kunt de **Nieuwe eigenschap van het Project** gebruiken om de juiste structuur
         </workspaceFilter>
         ```
 
-1. Zorg ervoor dat u al uw wijzigingen opslaat. U kunt die nieuwe inhoud nu synchroniseren met uw AEM.
+1. Zorg ervoor dat u al uw wijzigingen opslaat. U kunt deze nieuwe inhoud nu synchroniseren met uw AEM-exemplaar.
 
 1. Controleer of in het deelvenster Servers de verbinding is gestart en start deze als dat niet het geval is.
-1. Klik het **Schone en Publish** pictogram.
+1. Klik **Schoon en publiceer** pictogram.
 
 Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het bestand opslaat, wordt elke wijziging automatisch gesynchroniseerd met de instantie.
 
@@ -218,11 +218,11 @@ Eclipse downloadt de vereiste afhankelijkheden. Dit kan even duren.
 
 Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informatie:
 
-* [**Apache het Verdelen van winde tooling voor de Gids van de Gebruiker van de Verduistering** ](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
+* [**Apache het Verdelen van winde tooling voor de Gids van de Gebruiker van de Verduistering** ](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van AEM worden gesteund.
 * De [ sectie van het Oplossen van problemen ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * De [ Bekende lijst van kwesties ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende officiële [&#128279;](https://www.eclipse.org/) documentatie van de Verduistering  kan helpen aan opstelling uw milieu:
+De volgende officiële ](https://www.eclipse.org/) documentatie van de Verduistering [ kan helpen aan opstelling uw milieu:
 
 * [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
 * [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)

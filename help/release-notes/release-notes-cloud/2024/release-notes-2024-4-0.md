@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2024.4.0 versie van  [!DNL Adobe Experien
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=nl-NL) voor details van documentatieupdates niet direct met een versie verwant.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Bekijk de video Overzicht van de release van april 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446313?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -74,7 +74,7 @@ Experience Manager Assets omvat nu [ gemakkelijke en intuïtieve video het uitge
 
 **Dynamische vertoningen**
 
-U kunt dynamische vertoningen (met inbegrip van slimme gewassen) [&#128279;](/help/assets/renditions.md) in Experience Manager Assets nu bekijken en downloaden.  Dynamische uitvoeringen zijn aangepaste versies van afbeeldingselementen die in real-time worden gemaakt om aan specifieke behoeften te voldoen, zoals het formaat van afbeeldingen wijzigen op basis van de apparaatresolutie of het uitsnijden om aan verschillende hoogte-breedteverhoudingen te voldoen. Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren.
+U kunt dynamische vertoningen (met inbegrip van slimme gewassen) ](/help/assets/renditions.md) in Experience Manager Assets nu bekijken en downloaden. [ Dynamische uitvoeringen zijn aangepaste versies van afbeeldingselementen die in real-time worden gemaakt om aan specifieke behoeften te voldoen, zoals het formaat van afbeeldingen wijzigen op basis van de apparaatresolutie of het uitsnijden om aan verschillende hoogte-breedteverhoudingen te voldoen. Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren.
 
 ![ Dynamische vertoningen ](/help/assets/assets/preset_smart_crop.png)
 
@@ -192,7 +192,7 @@ Vorm 301/302 server-zij richt in broncontrole, en stel aan CDN op. [ leer meer ]
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven &lbrace;de Regels van de Filter van het Verkeer [&#128279;](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Nu kunt u **<aemcs-cdn-config-adopter@adobe.com>** per e-mail verzenden om deel te nemen aan het vroege adoptieprogramma zodat kunt u worden gewaarschuwd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
@@ -206,7 +206,7 @@ De door Adobe beheerde CDN biedt nu ondersteuning voor ESI (Edge Side Includes),
 
 #### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitemasjablonen (programma voor vroege adopters) {#rde-frontend-early-adopter}
 
-{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) [&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md) steunen nu front-end code die op [ plaatsthema&#39;s ](/help/sites-cloud/administering/site-creation/site-themes.md) en [ plaatsmalplaatjes ](/help/sites-cloud/administering/site-creation/site-templates.md) wordt gebaseerd, voor vroege adopters.  Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan a [ front-end pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
+{de milieu&#39;s van de Snelle Ontwikkeling van 0} (RDEs) ](/help/implementing/developing/introduction/rapid-development-environments.md) steunen nu front-end code die op [ plaatsthema&#39;s ](/help/sites-cloud/administering/site-creation/site-themes.md) en [ plaatsmalplaatjes ](/help/sites-cloud/administering/site-creation/site-templates.md) wordt gebaseerd, voor vroege adopters. [ Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan a [ front-end pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
 
 #### Verbeterde logboekregistratie voor RDE&#39;s (Early Introducter Program) {#rde-logging-early-adopter}
 
@@ -239,9 +239,6 @@ Als beheerder kunt u taalgroepen maken en deze configureren naar meerdere mappro
 
 Het maken van taalgroepen verbetert over het algemeen de efficiëntie en productiviteit van vertaalprojecten en verbetert uiteindelijk het lokalisatieproces in meerdere talen.
 
-
-Leer hoe te [ documenten van de Redacteur van het Web ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor) vertalen
-
 ### Nieuwe ervaring voor het zoeken naar en filteren van bestanden in de gegevensopslagweergave
 
 Nu hebt u een verbeterde ervaring bij het filteren van bestanden. De vernieuwde functionaliteit voor het filteren van bestanden biedt een verbeterde manier om bestanden moeiteloos te doorzoeken en door te bladeren.
@@ -256,7 +253,7 @@ Geniet van voordelen zoals snellere toegang tot relevante bestanden en een intu�
 
 *gebruik de snelle filters om naar DITA en niet-DITA dossiers te zoeken.*
 
-Leer meer over de **eigenschap van het Onderzoek van de Filter** in de [ Linkerpaneel ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sectie.
+Leer meer over de **eigenschap van het Onderzoek van de Filter** in de [ Linkerpaneel ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sectie.
 
 ### Verbeteringen in de Data Source Connectors
 
@@ -284,9 +281,9 @@ Met deze functie kunt u de gegevens die in uw JSON-bestanden zijn opgeslagen, ge
 #### Vorm Meerdere Middel URLs voor een Schakelaar om Inhoud Fragmenten of Onderwerpen tot stand te brengen
 
 Als beheerder, kunt u veelvoudige middel URLs voor sommige schakelaars zoals de Generische Cliënt van de REST, Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) vormen.
-Dan, als auteur, verbind met de gegevensbronnen om inhoudsfragmenten of onderwerpen tot stand te brengen gebruikend de generators. Deze functie is handig omdat u geen gegevensbron hoeft te maken voor elke URL. Het helpt u om gegevens van om het even welke middelen voor een bepaalde gegevensbron in één enkel inhoudsfragment of onderwerp snel te halen. Bekijk meer details over de gegevensbronschakelaars en hoe te [ een gegevensbronschakelaar van het gebruikersinterface ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools) vormen. Leer hoe te [ gegevens van uw gegevensbron ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet) gebruiken.
+Dan, als auteur, verbind met de gegevensbronnen om inhoudsfragmenten of onderwerpen tot stand te brengen gebruikend de generators. Deze functie is handig omdat u geen gegevensbron hoeft te maken voor elke URL. Het helpt u om gegevens van om het even welke middelen voor een bepaalde gegevensbron in één enkel inhoudsfragment of onderwerp snel te halen. Bekijk meer details over de gegevensbronschakelaars en hoe te [ een gegevensbronschakelaar van het gebruikersinterface ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools) vormen. Leer hoe te [ gegevens van uw gegevensbron ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet) gebruiken.
 
-Voor meer informatie over de nieuwe eigenschappen en de verhogingen, geeft de mening [ Experience Manager Guides informatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vrij.
+Voor meer informatie over de nieuwe eigenschappen en de verhogingen, geeft de mening [ Experience Manager Guides informatie ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vrij.
 
 ## Cloud Manager {#cloud-manager}
 
