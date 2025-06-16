@@ -1,9 +1,9 @@
 ---
 title: 'Probleemoplossing 403: Verboden fouten in Edge Delivery Services-formulierverzending'
 description: Leer hoe u 403 Verboden fouten kunt opsporen en oplossen bij het verzenden van formulieren van Edge Delivery Services naar AEM Publish. Deze handleiding behandelt algemene oorzaken, zoals CORS, Dispatcher-regels en problemen met het filter Referrer.
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 0%
@@ -75,7 +75,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Vervang `main--abc--adobe.aem.live` en `main--abc1--adobe.aem.live` door de werkelijke sitedomeinen. Voor elke site die vanuit dezelfde opslagplaats wordt gehost, is een apart CORS-configuratieitem vereist.
 
-Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Dispatcher-regels
 
@@ -262,8 +262,8 @@ Houd Helix-5 en repoless architecturen aan de volgende richtlijnen:
 ## Aanvullende bronnen
 
 - [Configuratie van filters met verwijzing naar AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ Begrijpend Middel dat van de dwars-Oorsprong ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) deelt
+- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [ Begrijpend Middel dat van de dwars-Oorsprong ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) deelt
 - [Edge Delivery Services Forms-documentatie](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## Verwante onderwerpen
