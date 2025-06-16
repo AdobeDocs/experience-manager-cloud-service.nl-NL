@@ -4,9 +4,9 @@ description: Leer over het vermogen van de Uitbreidbaarheid UI van  [!DNL AEM As
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ U kunt uw uitbreidingen aan **Activa** toevoegen, **Omslag** en **het niveau van
 >[!IMPORTANT]
 >
 > * [!DNL AEM Assets View] De uitbreidbaarheid van de gebruikersinterface is beschikbaar in [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md) .
-> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * U kunt documentfeedback opgeven door **[!UICONTROL Detailed Feedback options]** uit te vouwen en op **[!UICONTROL Report an issue]** te klikken.
 
 ## <a id="1"></a> Toegang tot de weergave Assets {#add-UI-Extensibility-in-AEM-Assets-View}
@@ -73,7 +73,7 @@ Voldoe aan de volgende vereisten om de uitbreidbaarheidscomponent aan uw [!DNL A
 * [ Toegang tot  [!DNL Assets View]](#1).
 * Toegang tot [[!DNL Adobe app builder] ](https://developer.adobe.com/app-builder/docs/overview/).
 * Recht op de ontwikkelaar van de rol van systeembeheerder binnen de organisatie. Zie [ deze documentatie ](https://developer.adobe.com/uix/docs/guides/get-access/) voor meer informatie.
-* [!DNL Adobe IO command line tool (AIO CLI)] is geïnstalleerd op uw lokale computers. Dit hulpmiddel is essentieel voor het creëren van en het opstellen van uitbreidingsprojecten. Zie [ deze documentatie ](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) voor meer informatie.
+* [!DNL Adobe IO command line tool (AIO CLI)] is geïnstalleerd op uw lokale computers. Dit hulpmiddel is essentieel voor het creëren van en het opstellen van uitbreidingsprojecten. Zie [ uw Eerste Toepassing van App Builder ](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (vereist authentificatie voor toegang) voor meer informatie creëren.
 * Goed inzicht in [!DNL JavaScript] -, [!DNL Node.js] - en [!DNL React] -technologieën.
 
 ## De UI-uitbreidingscomponent toevoegen aan [!DNL Assets View] {#ui-extensibility-in-assets-view}
