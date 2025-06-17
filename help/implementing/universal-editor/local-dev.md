@@ -4,7 +4,7 @@ description: Leer hoe u uw eigen Universal Editor-service kunt uitvoeren voor lo
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Binnen een buitenframe dat is beveiligd met HTTPS, kan een onbeveiligd HTTP-fram
 
 Hiervoor moet u AEM instellen om op HTTPS te kunnen worden uitgevoerd. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
 
-[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=nl-NL) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
+[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) op hoe te opstelling AEM die op HTTPS met inbegrip van een zelf-ondertekend certificaat loopt u kunt gebruiken.
 
 ## De Universal Editor-service installeren {#install-ue-service}
 
@@ -53,7 +53,7 @@ De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universe
 
 [ versie NodeJS 20 ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
 
-De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) voor details op hoe te om tot het toegang te hebben.
+De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) voor details op hoe te om tot het toegang te hebben.
 
 Sla het `universal-editor-service.cjs` -bestand op van Softwaredistributie naar uw lokale ontwikkelomgeving.
 
@@ -156,7 +156,7 @@ Als deze eenmaal is ingesteld, wordt elke aanroep van de inhoudsupdate weergegev
 
 ## Een pagina bewerken met de lokale universele editor {#editing}
 
-Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst ](#using-loca-ue) te gebruiken, kunt u de redacteur nu beginnen.
+Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst ](/help/implementing/universal-editor/getting-started.md) te gebruiken, kunt u de redacteur nu beginnen.
 
 1. Open uw browser naar `https://localhost:8000/ping` .
 1. Verricht uw browser om [ uw zelf-ondertekend certificaat ](#ue-https) goed te keuren.
