@@ -4,9 +4,9 @@ description: Leer hoe u de Clear-Cache-functie in AEM CIF inschakelt en verifiee
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
+source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,13 @@ De functie clear-cache wordt standaard uitgeschakeld in de CIF-configuratie. Om 
 * Laat de luisteraar toe om geheim voorgeheugen van elke instantie van AEM (te ontruimen publiceer en auteur) door de `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuratie in uw project toe te voegen zoals [ hier ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) getoond.
    * Configuratie moet zijn ingeschakeld voor zowel auteur- als publicatieinstanties.
    * De Dispatcher-cache inschakelen (optioneel): u kunt de cacheinstelling voor de dispatcher wissen inschakelen door de eigenschap `enableDispatcherCacheInvalidation` in te stellen op true in de bovenstaande configuratie. Dit verstrekt functionaliteit om het geheime voorgeheugen van de verzender te ontruimen.
-
      >[!NOTE]
      >
      > Dit werkt alleen met publicatie-instanties.
 
    * Zorg er ook voor dat u het overeenkomende patroon opgeeft dat bij het product, de categorie en de CMS-pagina past, en dat u deze aan het bovenstaande configuratiebestand toevoegt om het uit de verzendcache te verwijderen.
 
-* Als u de prestaties van SQL-query&#39;s wilt verbeteren om de bijbehorende pagina te zoeken die betrekking heeft op product en categorie, voegt u de corresponderende index toe aan uw project (aanbevolen). Voor meer informatie, zie [ cifCacheInvalidationSupport/] (verbinding https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+* Als u de prestaties van SQL-query&#39;s wilt verbeteren om de bijbehorende pagina te zoeken die betrekking heeft op product en categorie, voegt u de corresponderende index toe aan uw project (aanbevolen). Voor meer informatie, zie [ cifCacheInvalidationSupport ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Cache-functie wissen verifiëren {#verify-clear-cache}
 
@@ -64,8 +63,7 @@ Nu, om te controleren of de geheime voorgeheugens behoorlijk worden ontruimd:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-Als alles goed gaat, worden de nieuwe veranderingen in elk geval weerspiegeld. Als de wijzigingen niet worden doorgevoerd voor de publicatie-instantie, checkt u het privévenster in voor de corresponderende PLP- en PDP-pagina&#39;s.
+Als alles goed gaat, worden de nieuwe veranderingen in elk geval weerspiegeld. Als de wijzigingen niet zichtbaar zijn op het publicatieexemplaar, probeert u de relevante PLP- en PDP-pagina&#39;s te openen in een browservenster van het type private/incognito.
 
 >[!NOTE]
 >
