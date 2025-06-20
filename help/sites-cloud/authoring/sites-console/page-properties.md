@@ -35,7 +35,7 @@ Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de tit
 ### Titel en tags {#title-tags}
 
 * **Titel** - bepaalt de titel van paginameta voor SEO doeleinden evenals de titel die in de paginacontent wordt getoond (tenzij met voeten getreden)
-   * De titel van de pagina wordt getoond in diverse plaatsen in AEM UI met inbegrip van de **kaart/lijstmeningen van 0} Plaatsen {in de [ Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/introduction.md)**
+   * De titel van de pagina wordt getoond in diverse plaatsen in AEM UI met inbegrip van de **kaart/lijstmeningen van 0&rbrace; Plaatsen &lbrace;in de [ Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/introduction.md)**
    * Dit is een verplicht veld.
 * **Markeringen** - bepaalt de markeringen van paginameta voor SEO doeleinden
    * U kunt codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken.
@@ -172,7 +172,7 @@ Met deze eigenschap kunt u een vanity-URL voor deze pagina invoeren, waarmee u e
 
 Deze sectie wordt gebruikt om het beeld te selecteren en te vormen om te omvatten. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
-* **Beeld** - u kunt **** een activa kiezen, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **ontruimen** het geselecteerde beeld.
+* **Beeld** - u kunt **&#x200B;**&#x200B;een activa kiezen, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **ontruimen** het geselecteerde beeld.
 * **Alternatieve Tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van het beeld te vertegenwoordigen, algemeen gebruikt door het schermlezers
 * **erven - Waarde die van de activa DAM** wordt genomen - wanneer gecontroleerd, wordt de alternatieve tekst bevolkt met de waarde van de `dc:description` meta-gegevens in DAM.
 

@@ -19,7 +19,7 @@ Zodra u hebt gecreeerd en uw inhoud op het auteursmilieu herzien, moet het doel 
 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u publiceert en het publiceren ongedaan maakt, blijft de pagina beschikbaar in de auteursomgeving voor verdere wijzigingen totdat u deze verwijdert.
 
-U kunt de **console ](/help/sites-cloud/authoring/sites-console/introduction.md) van Plaatsen gebruiken 0} om een pagina onmiddellijk of bij een vooraf bepaalde datum/tijd in de toekomst te publiceren/unpublish.[**
+U kunt de **console [&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md) van Plaatsen gebruiken 0&rbrace; om een pagina onmiddellijk of bij een vooraf bepaalde datum/tijd in de toekomst te publiceren/unpublish.**
 
 >[!TIP]
 >

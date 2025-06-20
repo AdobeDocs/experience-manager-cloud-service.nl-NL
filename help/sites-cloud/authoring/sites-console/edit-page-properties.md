@@ -55,7 +55,7 @@ Wanneer het uitgeven van een pagina gebruikend de Redacteur van de Pagina, kunt 
 
 ## Van de universele editor {#from-the-universal-editor}
 
-Wanneer het uitgeven van een pagina gebruikend de Universele Redacteur, kunt u het **pictogram van Eigenschappen van de Pagina gebruiken 0} om de eigenschappen uit te geven:**
+Wanneer het uitgeven van een pagina gebruikend de Universele Redacteur, kunt u het **pictogram van Eigenschappen van de Pagina gebruiken 0&rbrace; om de eigenschappen uit te geven:**
 
 1. In de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties), open de pagina waarvoor u eigenschappen wilt uitgeven.
 1. Selecteer het **pictogram van de Eigenschappen van de Pagina** in de toolbar.
@@ -67,7 +67,7 @@ Wanneer het uitgeven van een pagina gebruikend de Universele Redacteur, kunt u h
 
 ## De eigenschappen van meerdere pagina&#39;s bewerken {#editing-multiple-pages}
 
-Van de **console van de Plaatsen[** ](/help/sites-cloud/authoring/sites-console/introduction.md) u kunt verscheidene pagina&#39;s dan gebruiken **Eigenschappen van de Mening** om de pagina eigenschappen te bekijken en/of uit te geven. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
+Van de **console van de Plaatsen[*&#128279;*](/help/sites-cloud/authoring/sites-console/introduction.md) u kunt verscheidene pagina&#39;s dan gebruiken &#x200B;** Eigenschappen van de Mening** om de pagina eigenschappen te bekijken en/of uit te geven. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
 U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende manieren, zoals:
 
@@ -101,7 +101,7 @@ U kunt de waarden bijwerken in de velden die beschikbaar zijn op de pagina&#39;s
 
 ## Overerving van eigenschappen {#inheritance}
 
-Als de pagina op een blauwdruk gebaseerd is of anders inhoud van een andere pagina erft, wordt de overerving weerspiegeld in het **venster van de Eigenschappen van de 1} pagina** voor het individuele gebied.
+Als de pagina op een blauwdruk gebaseerd is of anders inhoud van een andere pagina erft, wordt de overerving weerspiegeld in het **venster van de Eigenschappen van de 1&rbrace; pagina** voor het individuele gebied.
 
 ![ Overgenomen eigenschappen ](assets/property-inhertiance.png)
 
