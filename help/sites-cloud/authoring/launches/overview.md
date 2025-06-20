@@ -5,9 +5,9 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '977'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereidin
 >For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 -->
 
-U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3&rbrace; pagina&#39;s van de Lancering &lbrace;u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3} pagina&#39;s van de Lancering {u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
@@ -115,11 +115,13 @@ Met Launches kunt u:
 
 ## De opstartconsole {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->Deze console is alleen voor Launches voor Pagina&#39;s.
+>This console is only for Launches for Pages. 
 >
->Om uw Fragmenten van de Inhoud te beheren zie [ Lanceringen voor de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen.
 
