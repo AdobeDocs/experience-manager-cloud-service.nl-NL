@@ -4,9 +4,9 @@ description: Leer hoe te om AEM-Geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1744'
 ht-degree: 2%
 
 ---
@@ -78,10 +78,10 @@ Voor lichte gebruikersverificatiegevallen, waaronder die van zakelijke belangheb
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="CDN van klant wijst naar door AEM beheerde CDN"
+>title="CDN van de klant (of volmacht) richt aan AEM Beheerde CDN"
 >abstract="AEM als Cloud Service biedt klanten de mogelijkheid om de bestaande CDN te gebruiken. Voor de publicatielaag kunnen klanten optioneel naar de laag verwijzen vanuit hun eigen CDN, die ze moeten beheren. Dit scenario wordt toegestaan op een geval-voor-geval basis, gebaseerd op het voldoen van bepaalde voorwaarden met inbegrip van, maar niet beperkt tot, de klant die een erfenisintegratie met hun leverancier CDN heeft die moeilijk is te verlaten."
 
-Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het richten aan AEM-geleide CDN, op voorwaarde dat het volgende wordt voldaan:
+Als een klant zijn bestaande CDN (of om het even welk soort omgekeerde volmacht, bijvoorbeeld een loadbalancer of een WAF) moet gebruiken, kunnen zij het beheren en het richten aan AEM-Geleide CDN, op voorwaarde dat het volgende wordt voldaan:
 
 * De klant moet een bestaande CDN hebben die moeilijk te vervangen zou zijn.
 * De klant moet het beheren.
