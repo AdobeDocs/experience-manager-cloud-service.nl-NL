@@ -1,24 +1,32 @@
 ---
-title: Lanceringen
-description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
+title: Starten voor pagina's
+description: Leer hoe u Launches voor pagina's in Adobe Experience Manager as a Cloud Service gebruikt. Met behulp van Starten kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release, terwijl uw huidige pagina's behouden blijven.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
 
-# Lanceringen {#launches}
+# Starten voor pagina&#39;s {#launches-for-pages}
 
-Met behulp van opstartprogramma&#39;s kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release.
+Met Launches kunt u in Adobe Experience Manager (AEM) as a Cloud Service op efficiënte wijze inhoud ontwikkelen voor een toekomstige release.
 
-A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereiding op toekomstige publicatie aan te brengen, tezelfdertijd als het handhaven van uw huidige pagina&#39;s. Dit betekent dat u in feite twee versies tegelijk bewerkt: pagina&#39;s die momenteel worden gepubliceerd en een versie van deze pagina&#39;s die in de toekomst tegelijk worden gepubliceerd. Zodra dat tijdstip is bereikt, kunt u de originele pagina&#39;s vervangen en de nieuwe versie publiceren.
+A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereiding op toekomstige publicatie aan te brengen, tezelfdertijd als het handhaven van uw huidige inhoud. Voor AEM-pagina&#39;s betekent dit dat u in feite twee versies tegelijk bewerkt: pagina&#39;s die momenteel worden gepubliceerd en een versie van deze pagina&#39;s die in de toekomst tegelijk worden gepubliceerd. Zodra dat tijdstip is bereikt, kunt u de originele pagina&#39;s vervangen en de nieuwe versies publiceren.
 
-U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3&rbrace; pagina&#39;s van de Lancering &lbrace;u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
+
+U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3} pagina&#39;s van de Lancering {u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
@@ -28,7 +36,7 @@ De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld
 U kunt ook:
 
 * Navigeren door inhoud in de startvertakking; zo nodig pagina&#39;s toevoegen of verwijderen.
-* Geef een voorvertoning weer van hoe gepubliceerde inhoud er in de toekomst uitziet naar een specifieke datum/tijd.
+* Geef een voorvertoning weer van hoe gepubliceerde inhoud er in de toekomst uitziet op een bepaalde datum.
 
 Wanneer het volgende kwartaal verschijnt, promoot u de startpagina&#39;s zodat u de bronpagina&#39;s kunt publiceren (met de bijgewerkte inhoud). U kunt alle pagina&#39;s of alleen de pagina&#39;s die u hebt gewijzigd, opwaarderen.
 
@@ -106,6 +114,12 @@ Met Launches kunt u:
    ![ Acties om lanceringen in plaatsenconsole ](/help/sites-cloud/authoring/assets/launches-references-actions.png) over te nemen
 
 ## De opstartconsole {#the-launches-console}
+
+>[!NOTE]
+>
+>Deze console is alleen voor Launches voor Pagina&#39;s.
+>
+>Om uw Fragmenten van de Inhoud te beheren zie [ Lanceringen voor de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen.
 
