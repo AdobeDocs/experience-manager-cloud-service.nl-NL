@@ -26,7 +26,7 @@ A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereidin
 >For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 -->
 
-U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3} pagina&#39;s van de Lancering {u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3&rbrace; pagina&#39;s van de Lancering &lbrace;u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
