@@ -7,13 +7,13 @@ hide: true
 hidefromtoc: true
 index: false
 solution: Experience Manager Sites
-source-git-commit: f2adbc7fd92e846c6e09e52644f45c720c04dc4e
+exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
+source-git-commit: 231ce792429347882c93804d370e7a99111ec916
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 0%
 
 ---
-
 
 # Starten voor inhoudsfragmenten {#launches-for-content-fragments}
 
@@ -76,8 +76,8 @@ Met de werkbalk kunt u:
 
 In het rechterdeelvenster kunt u:
 
-* Bewerk de Titel van de Lancering **&#x200B;**
-* Bewerk de Beschrijving van de Lancering **&#x200B;**
+* Bewerk de Titel van de Lancering ****
+* Bewerk de Beschrijving van de Lancering ****
 * De configuratiedetails van de update die werden geplaatst toen u [ de lancering ](#create-a-launch) creeerde:
 
    * **omvat verwijzingen**: Creeer de Lancering of met, of zonder, met inbegrip van om het even welke referenced Fragments van de Inhoud. Standaard worden fragmenten waarnaar wordt verwezen, opgenomen.
@@ -126,7 +126,7 @@ Om uw lancering te creëren:
 
 1. **sparen** de configuratie.
 
-1. U bent teruggekeerd aan het **1&rbrace; lusje van Lanceringen &lbrace;van de console van de Fragmenten van de Inhoud, waar:**
+1. U bent teruggekeerd aan het **1} lusje van Lanceringen {van de console van de Fragmenten van de Inhoud, waar:**
 
    * uw nieuwe lancering nu vermeld
    * er wordt een bericht weergegeven om te bevestigen dat de lancering is gestart :
@@ -235,7 +235,7 @@ Wanneer de bronfragmenten zijn bijgewerkt en u deze wijzigingen wilt kopiëren n
 
 >[!NOTE]
 >
->U kunt **een lancering van**&#x200B;[ ook opnieuw vestigen **&lbrace;vergelijken Lancering aan Source](#compare-launch-to-source)**.
+>U kunt **een lancering van**[ ook opnieuw vestigen **{vergelijken Lancering aan Source](#compare-launch-to-source)**.
 
 ## Starten bevorderen (naar Source) {#promote-a-launch-to-source}
 
@@ -255,7 +255,7 @@ Wanneer uw lancering klaar is om te worden gepubliceerd kan het aan de bron met 
 
 >[!NOTE]
 >
->U kunt **ook bevorderen 1&rbrace; een lancering van** Begin aan Source **vergelijken.**
+>U kunt **ook bevorderen 1} een lancering van** Begin aan Source **vergelijken.**
 
 ### Automatisch bevorderen {#promote-automatically}
 
