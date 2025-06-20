@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -57,7 +57,7 @@ U kunt of [ een nieuwe pagina ](/help/sites-cloud/authoring/sites-console/creati
 
 1. Gebruik de **console van Plaatsen** aan [ navigeer aan de nieuwe of bestaande pagina ](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) die u wenst om als malplaatje te gebruiken en het te ontsteken of te klikken om het te selecteren.
 
-1. Zodra de pagina wordt geselecteerd, tik of klik het [**pictogram van Eigenschappen** ](/help/sites-cloud/authoring/sites-console/page-properties.md) in de toolbar.
+1. Zodra de pagina wordt geselecteerd, tik of klik het [**pictogram van Eigenschappen** ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) in de toolbar.
 
 1. Op het **Geavanceerde** lusje van de eigenschappendialoog onder de **sectie van de Montages van het Malplaatje**, selecteer de knevel **Pagina van het Gebruik als Malplaatje**.
 

@@ -1,28 +1,35 @@
 ---
-title: Pagina's publiceren
-description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
+title: Pagina's publiceren vanuit de siteconsole
+description: Leer hoe u uw pagina's publiceert en publiceert met de Sites Console.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 4%
+source-wordcount: '1635'
+ht-degree: 5%
 
 ---
 
-# Pagina&#39;s publiceren {#publishing-pages}
+
+# Pagina&#39;s publiceren vanuit de siteconsole {#publishing-pages}
 
 Zodra u hebt gecreeerd en uw inhoud op het auteursmilieu herzien, moet het doel [ het op uw openbare website ](/help/sites-cloud/authoring/author-publish.md) (uw publicatiemilieu) ter beschikking stellen.
 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u publiceert en het publiceren ongedaan maakt, blijft de pagina beschikbaar in de auteursomgeving voor verdere wijzigingen totdat u deze verwijdert.
 
-U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of de publicatie ervan ongedaan maken.
+U kunt de **console ](/help/sites-cloud/authoring/sites-console/introduction.md) van Plaatsen gebruiken 0} om een pagina onmiddellijk of bij een vooraf bepaalde datum/tijd in de toekomst te publiceren/unpublish.[**
 
->[!NOTE]
+>[!TIP]
 >
->Het publiceren van een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) volgt fundamenteel de zelfde procedure zoals voor het publiceren van een pagina, hoewel van de console of de redacteur van de Fragmenten van de Ervaring.
+>U kunt publiceren van plaatsen buiten de console van Plaatsen.
+>
+>* [ van de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [ van de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [ van de console of de redacteur van het Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+>
+>Publiceren vanaf deze locaties biedt verschillende opties, maar volgt vergelijkbare procedures en algemene ideeën die hier worden beschreven.
 
 ## Terminologie {#terminology}
 
@@ -38,14 +45,6 @@ Bij het werken met Adobe Experience Manager (AEM) as a Cloud Service kunnen er v
    * Dit zijn de technische termen die de verplaatsing beschrijven van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikersopmerkingen) van de ene service naar de andere wanneer u een pagina publiceert (bijvoorbeeld van auteur naar voorbeeld).
    * Deze termen worden vooral gebruikt door ontwikkelaars.
 
-## Pagina&#39;s publiceren {#publishing-pages-1}
-
-Afhankelijk van uw locatie kunt u publiceren:
-
-* [Vanuit de paginaeditor](#publishing-from-the-page-editor)
-* [Van de ](#publishing-from-the-sites-console)
-* [Van de universele editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >Als u niet over de vereiste rechten voor het publiceren van een specifieke pagina beschikt:
@@ -60,50 +59,17 @@ Afhankelijk van uw locatie kunt u publiceren:
 >
 >Paginavolgorde is niet gegarandeerd:
 >
->* als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de orderinformatie op de bovenliggende pagina staat)
->* als de bovenliggende en onderliggende pagina&#39;s in afzonderlijke handelingen worden gepubliceerd
+>* Als er alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de ordergegevens op de bovenliggende pagina staan)
+>* Als de bovenliggende en onderliggende pagina&#39;s in afzonderlijke handelingen worden gepubliceerd
 
-### Publiceren vanuit de Pagina-editor {#publishing-from-the-page-editor}
-
-Als u een pagina in de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/introduction.md) uitgeeft, kan het direct van de redacteur worden gepubliceerd.
-
-1. Selecteer het **pictogram van de Informatie van de Pagina** om het menu te openen en dan de **publiceer de optie van de Pagina**.
-
-   ![ het Publiceren van een pagina via paginaopties ](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. Afhankelijk van het feit of de pagina verwijzingen bevat die moeten worden gepubliceerd:
-
-   * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
-   * Als de pagina verwijzingen heeft die het publiceren vereisen, zijn deze vermeld in **publiceer** tovenaar, waar u of kunt:
-      * Specificeer welke van de activa, of markeringen, etc., die u samen met de pagina wilt publiceren, dan gebruik **publiceren** om het proces te voltooien.
-      * Het gebruik **annuleert** om de actie af te breken.
-
-   ![ het Publiceren verwijzingen met de pagina ](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. Het selecteren **publiceert** zal de pagina aan het publicatiemilieu herhalen. In de paginaredacteur, wordt een informatiebanner getoond die de publicatieactie bevestigen.
-
-   ![ publiceer statusinfo banner ](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   Wanneer u dezelfde pagina in de console weergeeft, is de bijgewerkte publicatiestatus zichtbaar.
-
-   ![ de publicatiestatus van de Pagina in kolommening in de plaatsenconsole ](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->Publiceren vanuit de pagina-editor is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina(&#39;s) niet.
-
->[!NOTE]
->
->De pagina&#39;s die door [ aliassen ](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in de redacteur worden betreden kunnen niet worden gepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
-
-### Publiceren vanuit de siteconsole {#publishing-from-the-sites-console}
+## Pagina&#39;s publiceren vanuit de siteconsole {#publishing-from-the-sites-console}
 
 In de **console van Plaatsen** zijn er twee opties voor het publiceren:
 
 * [Snel publiceren](#quick-publish)
 * [Publicatie beheren](#manage-publication)
 
-#### Snel publiceren {#quick-publish}
+### Snel publiceren {#quick-publish}
 
 **Snel publiceren** is voor eenvoudige gevallen en publiceert de geselecteerde pagina(s) onmiddellijk zonder enige verdere interactie. Daarom worden niet-gepubliceerde verwijzingen ook automatisch gepubliceerd.
 
@@ -123,7 +89,7 @@ Een pagina publiceren met Snel publiceren:
 >
 >Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina of pagina&#39;s worden gepubliceerd en onderliggende pagina&#39;s niet.
 
-#### Publicatie beheren {#manage-publication}
+### Publicatie beheren {#manage-publication}
 
 **beheer Publicatie** aanbiedingen meer opties dan **Snel publiceren**, die voor de opneming van kindpagina&#39;s, aanpassing van de verwijzingen, het publiceren aan de voorproefdienst (als beschikbaar,) en het beginnen van om het even welke toepasselijke werkschema&#39;s toestaan en de optie aanbieden om op een recentere datum te publiceren.
 
@@ -149,13 +115,13 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
      Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >Als u wilt annuleren publiceren/unpublish later, ga naar de [ Console van het Werkschema ](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) om het overeenkomstige werkschema te eindigen.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >Het plannen van inhoud voor het publiceren is niet het zelfde als [**op Tijd** en **van Tijd** beschikbaar in de paginaeigenschappen, ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) maar kan in gelijkaardige omstandigheden worden gebruikt.
+     >Door inhoud te plannen voor publicatie worden de workflows voor de publicatie van inhoud gerepliceerd en worden de publicatieworkflows gerespecteerd. Als u wenst om reeds gepubliceerde inhoud tijdelijk te verbergen zonder unpublishing, overweeg [**op Tijd** en **van Tijd** beschikbaar in de paginaeigenschappen.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![ beheert de Opties van de Publicatie ](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
 1. Klik op **Publiceren** of **Later publiceren** om de publicatie te voltooien.
 
-
-
 ## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
-Het ongedaan maken van een pagina zal het uit uw publiceren, of [ voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md), milieu verwijderen zodat het niet meer beschikbaar aan uw lezers is.
-
-Op a [ manier gelijkend op het publiceren ](#publishing-pages), kunnen één of meerdere pagina&#39;s van de gewenste bestemming unpublished:
-
-* [Vanuit de paginaeditor](#unpublishing-from-the-editor)
-* [Van de plaatsenconsole](#unpublishing-from-the-console)
-
-### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
-
-Wanneer het uitgeven van een pagina, als u die pagina ongedaan wilt maken, uitgezocht **publiceert Pagina** in het **menu van de Informatie van de Pagina**, veel aangezien u [ de pagina ](#publishing-from-the-editor) zou publiceren.
-
->[!NOTE]
->
->De pagina&#39;s die door [ aliassen ](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in de redacteur worden betreden kunnen niet worden ongepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
-
-### Publicatie ongedaan maken vanuit de console {#unpublishing-from-the-console}
+Het ongedaan maken van een pagina zal het uit uw publiceren of [ voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) milieu verwijderen zodat het niet meer beschikbaar aan uw lezers is.
 
 Enkel aangezien u [ de Manage optie van de Publicatie gebruikt om ](#manage-publication) te publiceren, kunt u het ook gebruiken om unpublish.
 

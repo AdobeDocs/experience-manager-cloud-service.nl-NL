@@ -1,373 +1,283 @@
 ---
-title: Pagina-eigenschappen bewerken
-description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
+title: Pagina-eigenschappen
+description: Leer meer over de verschillende eigenschappen die een pagina kan hebben en hoe ze het gedrag van de pagina bepalen en hoe deze wordt beheerd.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
+mini-toc-levels: 2
+source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 2%
+source-wordcount: '2138'
+ht-degree: 0%
 
 ---
 
-# Pagina-eigenschappen bewerken {#editing-page-properties}
 
-U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina&#39;s kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is op de juiste wijze beschikbaar.
+# Pagina-eigenschappen {#page-properties}
 
-## Pagina-eigenschappen {#page-properties}
+Leer meer over de verschillende eigenschappen die een pagina kan hebben en hoe ze het gedrag van de pagina bepalen en hoe deze wordt beheerd.
 
-De eigenschappen worden verdeeld over verscheidene lusjes.
+>[!TIP]
+>
+>Voor details op hoe u de eigenschappen van een pagina kunt uitgeven en veranderen, te zien gelieve het document [ het Uitgeven Eigenschappen van de Pagina.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 
-### Basis {#basic}
+## Overzicht en beschikbaarheid van eigenschappen {#overview}
 
-* **Titel &amp; Markeringen**
+Met pagina-eigenschappen kunt u vele aspecten van een pagina beheren, van de titel en branding van de pagina tot aan de machtigingen. De eigenschappen worden over verschillende tabbladen verdeeld, waarvan sommige afhankelijk van het type pagina kunnen worden verborgen. Zoals de meeste eigenschappen in AEM, [ pagina kunnen eigenschappen worden geërft.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
-   * **Titel** - de titel van de pagina wordt getoond in diverse plaatsen. Bijvoorbeeld, de **het tablijst van Websites** en de **3&rbrace; kaart/lijstmeningen van Plaatsen &lbrace;.**
-      * Dit is een verplicht veld.
-   * **Markeringen** - hier kunt u markeringen toevoegen, of verwijderen uit de pagina door de lijst in de selectievak bij te werken.
-      * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
-      * U kunt een volledig nieuwe tag invoeren door de naam in een leeg selectievak te typen.
-         * De nieuwe tag wordt gemaakt wanneer u op Enter drukt.
-         * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
-      * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
-      * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
-      * Voor meer informatie over markeringen, zie [ Gebruikend Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md).
-   * **Verbergen in Navigatie** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen.
+>[!NOTE]
+>
+>In dit document worden alle mogelijke pagina-eigenschappen beschreven. Afhankelijk van het type pagina zijn niet alle eigenschappen beschikbaar.
 
-* **Branding**
+## Tabblad Standaard {#basic}
 
-  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
+### Titel en tags {#title-tags}
 
-   * **Merk Slug**
+* **Titel** - bepaalt de titel van paginameta voor SEO doeleinden evenals de titel die in de paginacontent wordt getoond (tenzij met voeten getreden)
+   * De titel van de pagina wordt getoond in diverse plaatsen in AEM UI met inbegrip van de **kaart/lijstmeningen van 0} Plaatsen {in de [ Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/introduction.md)**
+   * Dit is een verplicht veld.
+* **Markeringen** - bepaalt de markeringen van paginameta voor SEO doeleinden
+   * U kunt codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken.
+   * Gebruik de vervolgkeuzelijst om een bestaande tag te selecteren.
+   * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
+   * U kunt een volledig nieuwe tag invoeren door de naam in een leeg selectievak te typen.
+      * De nieuwe tag wordt gemaakt wanneer u op Enter drukt.
+      * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
+   * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
+   * Voor meer informatie over markeringen, zie [ Gebruikend Markering.](/help/sites-cloud/authoring/sites-console/tags.md)
+* **Verbergen in Navigatie** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen
 
-      * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
-         * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
-      * **waarde van de Overschrijving** - de tekst van de merkschuine streep die aan de paginatitel moet worden toegevoegd.
-         * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
+### Branding {#branding}
 
-* **identiteitskaart van HTML**
+Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-   * **identiteitskaart** - identiteitskaart van HTML om op de component van toepassing te zijn.
+* **Merk Slug**
+   * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
+      * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
+   * **waarde van de Overschrijving** - de tekst van de merkschuine streep die aan de paginatitel moet worden toegevoegd.
+      * De waarde wordt aan de paginatitel toegevoegd na een pipe-teken, zoals `Cycling Tuscany | Always ready for the WKND`
 
-* **Meer Titels en Beschrijving**
+### HTML-id {#html-id}
 
-   * **Titel van de Pagina** - een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als leeg, wordt de **Titel** gebruikt.
-   * **Titel van de Navigatie** - U kunt een afzonderlijke titel voor gebruik in de navigatie (bijvoorbeeld, specificeren als u iets beknopter wilt). Als leeg, wordt de **Titel** gebruikt.
-   * **Titel** - een ondertitel voor gebruik op de pagina.
-   * **Beschrijving** - Uw beschrijving van de pagina, zijn doel, of een andere details u wilt toevoegen.
+* **identiteitskaart** - identiteitskaart van HTML om op de component van toepassing te zijn.
 
-* **Aan/uit Tijd**
+### Meer titels en beschrijving {#more-titles}
 
-  >[!NOTE]
-  >
-  > Zie [ aan en van Tijden - de Configuratie van de Trekker ](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
+* **Titel van de Pagina** - een titel die op de pagina moet worden gebruikt
+   * Dit wordt meestal gebruikt door titelcomponenten.
+   * Als leeg, wordt de **Titel** gebruikt.
+* **Titel van de Navigatie** - U kunt een afzonderlijke titel voor gebruik in de navigatie (bijvoorbeeld, specificeren als u iets beknopter wilt).
+   * Als leeg, wordt de **Titel van de Pagina** gebruikt.
+* **Ondertitel** - een ondertitel voor gebruik op de pagina
+* **Beschrijving** - Uw beschrijving van de pagina, zijn doel, of een andere details u wilt toevoegen
 
-  >[!NOTE]
-  >Als of **op Tijd** of **van Tijd** in het verleden is, en de automatische replicatie wordt gevormd, dan wordt de relevante actie onmiddellijk teweeggebracht.
+### Aan/Uit-tijd {#on-off-time}
 
-   * **op Tijd** - de datum en de tijd waarop de gepubliceerde pagina zichtbaar (teruggegeven) op het publicatiemilieu wordt gemaakt. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
+De aan/uit-tijd voor een pagina is een handige manier om inhoud die al is gepubliceerd, tijdelijk te verbergen. De inhoud blijft op de publicatie-instantie staan wanneer deze is uitgeschakeld. Als u een pagina uitschakelt, wordt de publicatie van de inhoud niet ongedaan gemaakt.
 
-      * Als reeds [ gepubliceerd (manueel) ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) deze pagina wordt gehouden slapend (verborgen) tot het teruggeven in de gespecificeerde tijd.
-      * Als niet gepubliceerd, en gevormd voor auto-replicatie, wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
-      * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, wordt de pagina niet automatisch gepubliceerd, zodat wordt 404 gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
+* **op Tijd** - de datum en de tijd waarop de gepubliceerde pagina zichtbaar (teruggegeven) op het publicatiemilieu wordt gemaakt. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
-   * **Van Tijd** - Gelijkaardig aan en vaak gebruikt in combinatie met **op Tijd**, bepaalt dit de tijd waarbij de gepubliceerde pagina op het publicatiemilieu wordt verborgen.
+   * Als reeds [ gepubliceerd, ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) is deze pagina beschikbaar op publiceer instantie, maar gehouden slapend (verborgen) tot het teruggeven op de gespecificeerde tijd.
+   * Als niet gepubliceerd en [ voor auto-replicatie wordt gevormd, ](/help/operations/replication.md#on-and-off-times-trigger-configuratio) wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
+   * Als niet gepubliceerd en niet gevormd voor auto-replicatie, wordt de pagina niet automatisch gepubliceerd, zodat wordt 404 gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
 
-   * Verlaat deze gebieden (**op Tijd** en **van Tijd**) leeg voor pagina&#39;s u onmiddellijk wilt publiceren en beschikbaar op publiceer milieu hebben tot zij (het normale scenario) worden gedeactiveerd.
+* **Van Tijd** - Gelijkaardig aan en vaak gebruikt in combinatie met **op Tijd**, bepaalt dit de tijd waarbij de gepubliceerde pagina op het publicatiemilieu wordt verborgen.
 
-* **Vanity URL**
+Verlaat deze gebieden (**op Tijd** en **van Tijd**) leeg voor pagina&#39;s u wilt publiceren en beschikbaar hebben onmiddellijk en beschikbaar op publiceer milieu tot zij (het normale scenario) worden gedeactiveerd.
 
-   * Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of meer expressieve URL kunt gebruiken.
-   * Als de URL vanity bijvoorbeeld is ingesteld op `welcome` op de pagina die wordt aangegeven door het pad `/v1.0/startpage` voor de website `http://example.com` , is `http://example.com/welcome` de URL van de vanity van `http://example.com/content/v1.0/startpage` .
+>[!NOTE]
+>Als of **op Tijd** of **van Tijd** in het verleden is, en de automatische replicatie wordt gevormd, dan wordt de relevante actie onmiddellijk teweeggebracht.
 
-  >[!CAUTION]
-  >
-  >Vanity-URL&#39;s:
-  >
-  >* Dit moet uniek zijn, dus zorg ervoor dat de waarde niet al door een andere pagina wordt gebruikt.
-  >* Geen ondersteuning voor regex-patronen.
-  >* Deze mag niet op een bestaande pagina worden ingesteld.
+>[!TIP]
+>
+>Aan/uit-tijden hebben uitsluitend betrekking op inhoud die al is gepubliceerd (handmatig of via automatische replicatie). Daarom hebben publicatieworkflows, zoals die voor het goedkeuren van inhoud, geen invloed op de publicatiestatus van de pagina als gevolg van aan-/uittijden en aan/uit-tijden. Daarom zijn aan/uit-tijden het meest geschikt voor het tijdelijk tonen/verbergen van inhoud die al is goedgekeurd en gepubliceerd.
+>
+>Als u wenst om nieuwe inhoud met alle bijbehorende werkschema&#39;s te publiceren of (unpublish inhoud) volledig te verwijderen uit uw plaats, overweeg [ het leiden van uw publicatie.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
 
-   * **voeg** toe - Uitgezocht om een gebied te tonen om een ijdelheid URL voor de pagina te bepalen.
-      * Selecteer nogmaals om meerdere items toe te voegen.
-      * Selecteer **verwijder** pictogram om ijdelheid URL te schrappen.
-   * **Redirect Vanity URL** - wijst erop of u de pagina de ijdelheid URL wilt gebruiken.
+### Vanity URL {#vanity-url}
 
-### Geavanceerd {#advanced}
+Met deze eigenschap kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of meer expressieve URL kunt gebruiken. Als de URL vanity bijvoorbeeld is ingesteld op `welcome` op de pagina die wordt aangegeven door het pad `/v1.0/startpage` voor de website `http://example.com` , is `http://example.com/welcome` de URL van de vanity van `http://example.com/content/v1.0/startpage` .
 
-* **Montages**
+>[!CAUTION]
+>
+>Vanity-URL&#39;s:
+>
+>* Moet uniek zijn.
+>* Geen ondersteuning voor regex-patronen.
+>* Deze mag niet op een bestaande pagina worden ingesteld.
 
-   * **Taal** - de paginataal
-   * **Wortel van de Taal** - moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is
-   * **opnieuw richt** - wijst op de pagina waaraan deze pagina automatisch met een status van HTML `302 Found` zou moeten opnieuw richten.
-      * **Permanent opnieuw richten** - wanneer gecontroleerd, richt de pagina aan de doelweg die samen met een status van HTML `301 Moved Permanently` wordt verstrekt.
-   * **Ontwerp** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen
-   * **Alias** - specificeert een alias die met deze pagina moet worden gebruikt
-      * Als u bijvoorbeeld een alias van `private` voor de pagina `/content/wknd/us/en/magazine/members-only` definieert, kunt u deze pagina ook openen via `/content/wknd/us/en/magazine/private`
-      * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld. Dit heeft alleen invloed op de bron, niet op het pad naar de opslagplaats.
-      * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ publiceer opties ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
-      * Zie [ Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL ](/help/overview/seo-and-url-management.md#localized-page-names).
+* **voeg** toe - Uitgezocht om een gebied te tonen om een ijdelheid URL voor de pagina te bepalen.
+   * Selecteer nogmaals om meerdere items toe te voegen.
+   * Selecteer **verwijder** pictogram om ijdelheid URL te schrappen.
+* **Redirect Vanity URL** - wijst erop of u de pagina de ijdelheid URL wilt gebruiken of aan daadwerkelijke URL van de pagina opnieuw richten
 
-* **Configuratie**
+## Geavanceerd {#advanced}
 
-   * **Geërft van &lt;path>** - laat/maak overerving toe onbruikbaar; knevels beschikbaarheid van **de Configuratie van de Wolk** voor selectie
+### Instellingen {#settings}
 
-   * **Configuratie van de Wolk** - de weg aan de geselecteerde configuratie
+* **Taal** - de paginataal
+* **Wortel van de Taal** - moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is
+* **opnieuw richt** - wijst op de pagina waaraan deze pagina automatisch met een status van HTML `302 Found` zou moeten opnieuw richten
+   * **Permanent opnieuw richten** - wanneer gecontroleerd, richt de pagina aan de doelweg die samen met een status van HTML `301 Moved Permanently` wordt verstrekt.
+* **Ontwerp**
+* **Alias** - specificeert een alias die met deze pagina moet worden gebruikt
+   * Als u bijvoorbeeld een alias van `private` voor de pagina `/content/wknd/us/en/magazine/members-only` definieert, kunt u deze pagina ook openen via `/content/wknd/us/en/magazine/private`
+   * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld. Dit heeft alleen invloed op de bron, niet op het pad naar de opslagplaats.
+   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ publiceer opties ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
+   * Zie [ Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL ](/help/overview/seo-and-url-management.md#localized-page-names) voor meer informatie.
 
-* **Montages van het Malplaatje**
+### Configuratie {#configuration}
 
-   * **Toegestane Malplaatjes** - [ bepaalt de lijst van malplaatjes die ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) binnen deze subtak beschikbaar zijn
-   * **Pagina van het Gebruik als Malplaatje** - [ creeer een nieuw malplaatje dat op de huidige pagina wordt gebaseerd.](/help/sites-cloud/authoring/universal-editor/templates.md)
-      * Dit is alleen van toepassing op pagina&#39;s die zijn gemaakt voor gebruik met Edge Delivery Services van de Universal Editor.
+* **Geërft van &lt;path>** - laat/maak overerving van de **Configuratie van de Wolk** voor de pagina toe onbruikbaar
+   * De beschikbaarheid van knevels van **Configuratie van de Wolk** voor het uitgeven
 
-* **Vereiste van de Authentificatie**
+* **Configuratie van de Wolk** - de weg aan de geselecteerde configuratie
 
-   * **laat** toe - laat gebruik van authentificatie toe om tot de pagina toegang te hebben
+### Sjablooninstellingen {#template-settings}
 
-     >[!NOTE]
-     >
-     >De gesloten gebruikersgroepen voor de pagina worden bepaald op de **[Toestemmingen](#permissions)** tabel.
+* **Toegestane Malplaatjes** - [ bepaalt de lijst van malplaatjes die ](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) binnen deze subtak beschikbaar zijn
+   * Elke waarde moet een absoluut pad naar een sjabloon zijn.
+   * Gebruik `/.*` om alle sjablonen onder dit pad toe te staan.
+* **Pagina van het Gebruik als Malplaatje** - [ creeer een nieuw malplaatje dat op de huidige pagina wordt gebaseerd.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * Dit is alleen van toepassing op pagina&#39;s die zijn gemaakt voor gebruik met Edge Delivery Services van de Universal Editor.
 
-   * **Login Pagina** - de pagina die voor login moet worden gebruikt
+### Verificatievereiste {#authentication}
 
-* **Uitvoer**
+* **laat** toe - laat gebruik van authentificatie toe om tot de pagina toegang te hebben
 
-   * **de Configuratie van de Uitvoer** - specificeert een de uitvoerconfiguratie
+>[!NOTE]
+>
+>De gesloten gebruikersgroepen voor de pagina worden bepaald op de **[Toestemmingen](#permissions)** tabel.
 
-* **SEO**
+* **Login Pagina** - de pagina die voor login moet worden gebruikt
 
-   * **Canonical Url** - kan worden gebruikt om canonical Url van de pagina te beschrijven; als verlaten leeg is is URL van de pagina zijn canonical Url
+### Exporteren {#export}
 
-   * **Codes Robots** - selecteer de robots markeringen om het gedrag van de kruipende zoekmachine te controleren.
+* **de Configuratie van de Uitvoer** - specificeert een de uitvoerconfiguratie
 
-     >[!NOTE]
-     >
-     >Sommige opties veroorzaken een conflict met elkaar. In geval van een conflict krijgt de meer permissieve optie voorrang.
+## SEO {#seo}
 
-   * **produceer Sitemap** - wanneer geselecteerd, wordt sitemap.xml geproduceerd voor deze pagina, en zijn nakomelingen
+* **Canonical Url** - die wordt gebruikt om canonical URL van de pagina te beschrijven
+   * Als de URL van de pagina leeg wordt gelaten, is deze de canonieke URL.
 
-### Afbeeldingen {#images}
+* **Codes Robots** - gebruik dropdown om de robots markeringen te selecteren om het gedrag van de kruipende zoekmachine te controleren
+   * Sommige opties zijn in strijd met elkaar, in welk geval de meer permissieve optie voorrang krijgt.
 
-* **Aanbevolen Beeld**
+* **produceer Sitemap** - wanneer geselecteerd, wordt a `sitemap.xml` geproduceerd voor deze pagina, en zijn nakomelingen.
 
-  Selecteer en configureer de afbeelding die u wilt weergeven. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
+## Afbeeldingen {#images}
 
-   * **Beeld**
+### Aanbevolen afbeelding {#featured-image}
 
-     U kunt **een Activa kiezen**, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **Duidelijk**.
+Deze sectie wordt gebruikt om het beeld te selecteren en te vormen om te omvatten. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
-   * **Alternatieve Tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van het beeld te vertegenwoordigen; bijvoorbeeld, voor gebruik door het schermlezers.
+* **Beeld** - u kunt **** een activa kiezen, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **ontruimen** het geselecteerde beeld.
+* **Alternatieve Tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van het beeld te vertegenwoordigen, algemeen gebruikt door het schermlezers
+* **erven - Waarde die van de activa DAM** wordt genomen - wanneer gecontroleerd, wordt de alternatieve tekst bevolkt met de waarde van de `dc:description` meta-gegevens in DAM.
 
-   * **erven - Waarde die van de activa DAM** wordt genomen - wanneer gecontroleerd zal dit de alternatieve tekst met de waarde van de `dc:description` meta-gegevens in DAM bevolken
+### Miniatuur {#thumbnail}
 
-* **Duimnagel**
+In deze sectie wordt de miniatuur van de afbeelding voor de pagina geselecteerd en geconfigureerd. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
-  De paginaminiatuur configureren
+* **produceer Voorproef** - produceer een voorproef van de pagina om als duimnagel te gebruiken
+* **upload Beeld** - upload een beeld om als duimnagel te gebruiken
+* **Uitgezochte Beeld** - selecteer een bestaand element om als duimnagel te gebruiken
+* **terugkeren** - deze optie wordt beschikbaar nadat u een verandering in de duimnagel hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
-   * **produceer Voorproef** - produceer een voorproef van de pagina om als duimnagel te gebruiken
-   * **upload Beeld** - upload een beeld om als duimnagel te gebruiken
-   * **Uitgezochte Beeld** - selecteer een bestaand Middel om als duimnagel te gebruiken
-   * **terugkeren** - deze optie wordt beschikbaar nadat u een verandering in de duimnagel hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
+## Cloud Services {#cloud-services}
 
-### Cloud Services {#cloud-services}
+* **de Configuraties van Cloud Service** - bepaalt welke configuratie voor de wolkendiensten voor de pagina wordt gebruikt
+* **die van** wordt overgeërfd - voor Levende Exemplaren en de Kopieën van de Taal, worden de wolkenconfiguraties door gebrek geërfd van de Vervaging.
+   * Uitschakelen om overerving te overschrijven
 
-* **de Configuraties van Cloud Service** - bepalen eigenschappen voor de diensten van de wolk
+## Personalization {#personalization}
 
-### Personalization {#personalization}
+### ContextHub-configuraties {#contexthub-config}
 
-* **Configuraties ContextHub**
+* **ContextHub Weg** - bepaal de [ configuratie ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md)
+* **Weg van Segmenten** - bepaal de [ weg van Segmenten ](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
-   * **Geërft van &lt;path>** - laat/maak overerving toe onbruikbaar; knevels beschikbaarheid van **Het Weg van ContextHub** en **Weg van Segmenten** voor selectie
+### Doelconfiguratie {#targeting-config}
 
-   * **ContextHub Weg** - bepaal de [ configuratie ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Weg van Segmenten** - bepaal de [ weg van Segmenten ](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+* **Merk** - bepaalt a [ Merk om een werkingsgebied te specificeren voor het richten ](/help/sites-cloud/authoring/personalization/targeted-content.md)
+   * Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Administrators` -groep.
 
-* **richtend Configuratie**
+## Machtigingen {#permissions}
 
-   * **Merk** - bepaalt a [ Merk om een werkingsgebied te specificeren voor het richten ](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [ gesloten gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) tot de pagina kunnen toegang hebben en/of wijzigen.
 
-  >[!NOTE]
-  >Deze optie vereist de gebruikersrekening om in de `Target Administrators` groep te zijn.
+* **voeg Toestemmingen** toe
+* **geeft Gesloten Groep van de Gebruiker uit**
+* Bekijk de **Effectieve Toestemmingen**
 
-### Machtigingen {#permissions}
+## Blauwdruk {#blueprint}
 
-* **Toestemmingen**
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [ Multisite Beheer.](/help/sites-cloud/administering/msm/overview.md)
 
-   * **voeg Toestemmingen** toe
-   * **geeft Gesloten Groep van de Gebruiker uit**
-   * Bekijk de **Effectieve Toestemmingen**
+* **Uitdraaiing** - stel een uitrol van blauwdrukinhoud aan Levende Exemplaren in werking
+* **Levend Overzicht van het Exemplaar** - Open een venster om de Levende de paginastructuur van het Exemplaar te doorbladeren
+* **Huidige Levende Kopieën** - een lijst van pagina&#39;s die op (namelijk Levende Kopieën van) worden gebaseerd de geselecteerde blauwdrukpagina
 
-### Blauwdruk {#blueprint}
+## Live kopie {#live-copy}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [ Multisite Beheer van de Plaats ](/help/sites-cloud/administering/msm/overview.md).
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met [ blauwdrukken, ](#blueprint) Levende Exemplaren deel van [ Multisite Beheer zijn.](/help/sites-cloud/administering/msm/overview.md)
 
-* **Huidige Levende Kopieën** - Lijsten pagina&#39;s die op (namelijk zijn Levende Kopieën van) deze blauwdrukpagina gebaseerd zijn
-
-* **Rollout vormt** - controleert de omstandigheden waaronder de wijzigingen aan het Levende Exemplaar worden verspreid
-
-### Live kopie {#live-copy}
-
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met Vervagen, maken de Levende Kopieën deel uit van [ Beheer van de MultiPlaats ](/help/sites-cloud/administering/msm/overview.md).
-
-* **synchroniseer** - synchroniseer Levende Exemplaar met Vervaging, die lokale wijzigingen houden
-* **Teruggestelde** - het Levende Exemplaar van het Terugstellen aan staat van Vervaging, verwijderend lokale aanpassingen
+* **synchroniseer** - synchroniseer Levend Exemplaar met blauwdruk, die lokale wijzigingen houden
+* **Teruggestelde** - het Levende Exemplaar van het Terugstellen aan staat van blauwdruk, verwijderend lokale aanpassingen
 * **Opschorting** - onderbreek Levend Exemplaar van verdere rollout wijzigingen
-* **losmaken** - loskoppel Levend Exemplaar van Vervaging
+* **losmaken** - loskoppel Levend Exemplaar van blauwdruk
 
-* **Source**
+### Source {#source}
 
-   * Hiermee geeft u het pad van de blauwdruk voor deze actieve kopie weer
+* Hiermee geeft u het pad van de blauwdruk voor deze actieve kopie weer
 
-* **Status**
+### Status {#status}
 
-   * Hiermee geeft u de huidige status van Live kopie van de pagina weer
+* Hiermee geeft u de huidige status van Live kopie van de pagina weer
 
-* **Configuratie**
+### Configuratie {#live-copy-config}
 
-   * **Levende Overerving van het Exemplaar** - als gecontroleerd, is de Levende configuratie van het Exemplaar efficiënt op alle kinderen
-   * **erven de Vormen van de Output van de Ouder** - als gecontroleerd, wordt de rollout configuratie geërft van de ouder van de pagina
-   * **kies Configuratie van de Uitvoer** - bepaalt de omstandigheden waaronder de wijzigingen van het Vervagen en slechts beschikbaar worden verspreid wanneer **Inherit de Vorm van de Uitvoer van Bovenliggend** niet wordt geselecteerd
+* **Levende Overerving van het Exemplaar** - als gecontroleerd, is de Levende configuratie van het Exemplaar efficiënt op alle kinderen.
+* **erven de Vorm van de Output van het Overerven van Bovenliggend** - als gecontroleerd, wordt de rollout configuratie geërft van de ouder van de pagina.
+* **kies Configuratie van de Uitvoer** - bepaalt de omstandigheden waaronder de wijzigingen van het Vervagen en slechts beschikbaar worden verspreid wanneer **Inherit de Vorm van de Uitvoer van Bovenliggend** niet wordt geselecteerd
+* **Lijst van uitgesloten wegen**
 
-### Voorvertoning {#preview}
+## Voorvertoning {#preview}
 
-Wanneer een omgeving van de Voorproef wordt toegelaten, ziet u het volgende:
+Wanneer het milieu van de a [ voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) wordt toegelaten, zijn de volgende details beschikbaar:
 
-* Voorbeeld-URL - de URL die wordt gebruikt voor toegang tot de inhoud in de voorvertoningsomgeving
+* **Voorproef URL** - URL die voor de toegang tot van de inhoud op het voorproefmilieu wordt gebruikt
 
-### Progressieve webtoepassing {#progressive-web-app}
+## Progressieve webtoepassing {#progressive-web-app}
 
-Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies voor progressieve webapps (PWA) inschakelen voor ervaringen die zijn gemaakt in AEM Sites.
+Een auteur van inhoud kan via een eenvoudige configuratie functies voor progressieve webapps (PWA) inschakelen voor ervaringen die zijn gemaakt in AEM Sites. Uw site kan zich dan gedragen als een native app door deze te installeren op het thuisscherm van het bezoekersapparaat en vervolgens offline beschikbaar te maken.
+
+{{pwa-deprecation}}
+
+### Installeerbare ervaring configureren {#config-pwa}
+
+* **laat PWA** toe - wanneer toegelaten, kunnen de bezoekers van de pagina de plaats als PWA installeren.
+* **Opstarten URL** - URL die zou moeten worden geladen wanneer de gebruiker Webapp lanceert
+   * Als de URL relatief is, wordt de manifest-URL gebruikt als basis-URL om
+   * Als deze URL leeg is, wordt de URL gebruikt van de pagina vanwaar de app is geïnstalleerd.
+   * U wordt aangeraden een waarde in te stellen.
+* **Wijze van de Vertoning** - hoe browser zou moeten worden verborgen of anders aan de gebruiker op het lokale apparaat worden voorgesteld
+* **de richtlijn van het Scherm** - hoe PWA apparatenrichtingen zal behandelen
+* **kleur van het Thema** - de kleur van app die beïnvloedt hoe het werkende systeem van de lokale gebruiker de inheemse toolbar UI en navigatiecontroles toont
+* **Achtergrondkleur** - de achtergrondkleur van app, die wordt getoond aangezien app laadt
+* **Pictogram** - het pictogram dat app op het apparaat van de gebruiker vertegenwoordigt wanneer PWA wordt geïnstalleerd
+
+### Cachebeheer (geavanceerd) {#cache-management}
+
+* **Caching strategie en frequentie van inhoud verfrissen zich** - bepaalt het caching model voor uw PWA.
+* **Dossiers aan geheime voorgeheugen voor off-line gebruik**
+   * **Dossier pre-caching (technische voorproef)** - de Dossiers op AEM worden ontvangen worden bewaard aan het lokale browser geheime voorgeheugen wanneer de de dienstarbeider installeert en alvorens het wordt gebruikt.
+   * **Cliënt-zij Bibliotheken** - Cliënt-zijbibliotheken aan geheim voorgeheugen voor off-line ervaring
+   * **de uitbreidingen van de Weg** - De verzoeken van het netwerk voor de bepaalde wegen worden onderschept en de caching inhoud is teruggekeerd in overeenstemming met de gevormde Caching strategie en de frequentie van inhoud verfrissen zich
+   * **de uitsluitingen van de Weg** - Deze dossiers zullen nooit in het voorgeheugen ondergebracht worden ongeacht de montages onder Dossier pre-caching en de opneming van de Weg.
 
 >[!NOTE]
 >
 >Zie [ toelatend de Progressieve Eigenschappen van de App van het Web ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) voor meer details.
 
-{{pwa-deprecation}}
-
-* **vorm installeerbare ervaring**
-
-   * **laat PWA** toe - laat/maak de eigenschap toe onbruikbaar; staat gebruikers toe om de plaats als PWA te installeren
-   * **StartupURL** - de aangewezen opstartenURL
-   * **Wijze van de Vertoning** - hoe browser zou moeten worden verborgen of anders aan de gebruiker op het lokale apparaat worden voorgesteld
-   * **de richtlijn van het Scherm** - hoe PWA apparatenrichtingen zal behandelen
-   * **kleur van het Thema** - de kleur van app die beïnvloedt hoe het werkende systeem van de lokale gebruiker de inheemse toolbar UI en navigatiecontroles toont
-   * **Achtergrondkleur** - de achtergrondkleur van app, die wordt getoond aangezien app laadt
-   * **Pictogram** - het pictogram dat app op het apparaat van de gebruiker vertegenwoordigt
-
-* **(Geavanceerd) het beheer van het Geheime voorgeheugen**
-
-   * **Caching strategie en frequentie van inhoud verfrissen zich** - bepaalt het caching model voor uw PWA
-   * **Dossiers aan geheime voorgeheugen voor off-line gebruik**
-      * **Dossier pre-caching (technische voorproef)** - de dossiers op AEM worden ontvangen worden bewaard aan het lokale browser geheime voorgeheugen wanneer de de dienstarbeider installeert en alvorens het wordt gebruikt
-      * **Client-side Bibliotheken** - cliënt-zijbibliotheken om voor off-line ervaring in het voorgeheugen op te slaan
-      * **de uitbreidingen van de Weg** - de netwerkverzoeken voor de bepaalde wegen worden onderschept en de caching inhoud is teruggekeerd in overeenstemming met de gevormde Caching strategie en de frequentie van inhoud verfrissen zich
-      * **de uitsluitingen van de Weg** - deze dossiers zullen nooit in het voorgeheugen ondergebracht worden ongeacht de montages onder Dossier pre-caching en de opneming van de Weg
-
-## Pagina-eigenschappen bewerken {#editing-page-properties-1}
-
-* Van de **console van Plaatsen**:
-   * [ Creërend een nieuwe pagina ](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) (een ondergroep van de eigenschappen)
-   * Het klikken of het tappen **Eigenschappen**
-      * Voor één pagina
-      * Voor meerdere pagina&#39;s (alleen een subset van de eigenschappen is beschikbaar voor massabewerking)
-* Vanuit de pagina-editor:
-   * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
-
-### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
-
-Het klikken of het tappen **Eigenschappen** om de pagina eigenschappen te bepalen:
-
-1. Gebruikend de **console van Plaatsen**, navigeer aan de plaats van de pagina waarvoor u eigenschappen bekijken en wilt uitgeven.
-1. Selecteer de **optie van Eigenschappen** voor de vereiste pagina die of gebruikt:
-   * [Snelle acties](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
-   * [Selectiemodus](/help/sites-cloud/authoring/basic-handling.md#selecting-resources)
-   * De pagina-eigenschappen worden weergegeven met de juiste tabbladen.
-1. Bekijk of bewerk de eigenschappen naar wens.
-1. Dan gebruik **sparen** om uw updates te bewaren die door **worden gevolgd dicht** om aan de console terug te keren.
-
-### Bij het bewerken van een pagina {#when-editing-a-page}
-
-Wanneer het uitgeven van een pagina kunt u **Informatie van de Pagina** gebruiken om de paginaeigenschappen te bepalen:
-
-1. Open de pagina waarvan u de eigenschappen wilt bewerken.
-1. Selecteer het **pictogram van de Informatie van de Pagina** om het selectiemenu te openen:
-1. Selecteer **Open Eigenschappen** en een dialoogdoos opent die u de eigenschappen laat uitgeven, die door het aangewezen lusje worden gesorteerd. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
-   * **annuleert**
-   * **sparen &amp; Sluiten**
-1. Gebruik **sparen &amp; sluit** knoop om de veranderingen te bewaren.
-
-### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
-
-Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
-
-U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende manieren, zoals:
-
-* Wanneer het doorbladeren van de **console van Plaatsen**
-* Na het gebruiken van **Onderzoek** om van een reeks pagina&#39;s de plaats te bepalen
-
-Na het selecteren van de pagina&#39;s en dan het klikken of het tikken van de **optie van Eigenschappen**, worden de bulkeigenschappen getoond:
-
-![ Bulk het uitgeven paginaeigenschappen ](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
-
-U kunt alleen pagina&#39;s bulksgewijs bewerken die:
-
-* Hetzelfde brontype delen
-* Maakt geen deel uit van een livecopy
-   * Als een van de pagina&#39;s zich in een live kopie bevindt, wordt een bericht weergegeven wanneer de eigenschappen worden geopend.
-
-Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
-
-* **Mening**
-
-   * Een lijst met de betrokken pagina&#39;s
-      * U kunt desgewenst selecteren of deselecteren
-      * Tabs
-         * Net als bij het weergeven van eigenschappen voor één pagina, worden de eigenschappen onder tabbladen geordend.
-   * Een subset van eigenschappen
-      * Eigenschappen die beschikbaar zijn op alle geselecteerde pagina&#39;s en die expliciet zijn gedefinieerd als beschikbaar voor bulkbewerking, zijn zichtbaar.
-      * Als u de paginaselectie tot één pagina reduceert, zijn alle eigenschappen zichtbaar.
-   * Algemene eigenschappen met een gemeenschappelijke waarde
-      * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
-      * Wanneer het gebied multi-waarde (bijvoorbeeld, Markeringen) is, zullen de waarden slechts worden getoond wanneer *allen* gemeenschappelijk zijn. Als slechts enkele van de algemene voorbeelden worden weergegeven, worden deze alleen weergegeven tijdens het bewerken.
-      * Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
-
-* **geeft** uit
-
-   * U kunt de waarden in de beschikbare velden bijwerken.
-      * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed** selecteert.
-      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
-   * Velden die veel voorkomen, maar die verschillende waarden hebben op de verschillende pagina&#39;s, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>` .
-
-## Overerving van eigenschappen {#inheritance}
-
-Als de pagina op een blauwdruk gebaseerd is of anders inhoud van een andere pagina erft, wordt de overerving weerspiegeld in het **venster van de Eigenschappen van de 1&rbrace; pagina** voor het individuele gebied.
-
-![ Overgenomen eigenschappen ](assets/property-inhertiance.png)
-
-Overerfde eigenschappen kunnen niet worden bewerkt. Tik of klik **annuleer overerving** pictogram naast een bepaald gebied om zijn overerving te breken.
-
-![ annuleert overerving ](assets/cancel-inheritance.png)
-
-Bevestig de annulering in **annuleert overerving** modaal.
-
-![ annuleert overervingsbevestiging modaal ](assets/cancel-inheriance-confirmation.png)
-
-Nadat de overerving voor een veld is geannuleerd, wordt het veld bewerkbaar.
-
-![ Geannuleerde overerving ](assets/property-inheritance-broken.png)
-
-Om overerving opnieuw op te nemen, ontweek of klik **terugkeren overerving** pictogram naast het gebied.
-
-![ keert overerving ](assets/revert-inheritance.png) terug
-
-Bevestig de terugkeer in **terugkeren overerving** modaal.
-
-![ keert overervingsbevestiging modaal terug ](assets/revert-inhertiance-confirmation.png)
-
-Selecteer **Synchronize Pagina na het terugkeren van overerving** om het gebied met de recentste waarden in de blauwdruk bij te werken. Als u dat niet doet, worden de waarden bijgewerkt wanneer LiveCopy opnieuw wordt gesynchroniseerd.
-
->[!TIP]
->
->Voor meer informatie over overerving, gelieve te zien het document [ Meerdere Manager van de Plaats en Vertaling ](/help/sites-cloud/administering/msm-and-translation.md)

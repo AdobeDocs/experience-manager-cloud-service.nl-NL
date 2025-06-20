@@ -1,11 +1,11 @@
 ---
 title: De siteconsole
-description: Leer hoe u de Sites-console kunt gebruiken om uw AEM te beheren en in te delen.
+description: Leer hoe u uw AEM-pagina's beheert en ordent met de Sites-console.
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # De siteconsole {#sites-console}
 
-Leer hoe te om de **console van Plaatsen** te gebruiken om uw AEM pagina&#39;s te beheren en te organiseren.
+Leer hoe te om de **console van Plaatsen** te gebruiken om uw pagina&#39;s van AEM te beheren en te organiseren.
 
 ## Afdrukstand {#orientation}
 
@@ -98,7 +98,7 @@ De **console van Plaatsen** biedt drie verschillende meningen van uw inhoudshië
 * [Kaartweergave](#card-view)
 * [Lijstweergave](#list-view)
 
-Het **pictogram van de Mening** bij uiterst rechts van de AEM toolbar wijst op de huidige geselecteerde mening.
+Het **pictogram van de Mening** bij uiterst rechts van de toolbar van AEM wijst op de huidige geselecteerde mening.
 
 Als u hierop tikt of erop klikt, kunt u een andere weergave selecteren.
 
@@ -236,13 +236,13 @@ De actietoolbar verschijnt slechts wanneer een middel in de console wordt gesele
 
 * [**creeer**](#create-action) - creeer nieuwe inhoud of inhoud-verwante acties
 * **geeft** uit - afhankelijk van hoe de geselecteerde pagina werd gecreeerd, **geeft** actie uit zal de aangewezen redacteur openen.
-   * [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) - voor pagina&#39;s die met de Redacteur van de Pagina van de AEM worden gecreeerd
+   * [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) - voor pagina&#39;s die met de Redacteur van de Pagina van AEM worden gecreeerd
    * [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) - voor pagina&#39;s die met de Universele Redacteur worden gecreeerd
-* [**Eigenschappen**](/help/sites-cloud/authoring/sites-console/page-properties.md) - opent het venster van pagina-eigenschappen
+* [**Eigenschappen**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) - opent het venster van pagina-eigenschappen
 * [**Slot**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - vergrendel een pagina om anderen te verhinderen het te veranderen
 * [**Exemplaar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Kopieer een pagina
 * [**Beweging**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - beweeg of noem een pagina anders
-* [**Snelle Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish een pagina of pagina&#39;s onmiddellijk
+* [**Snelle publiceer**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - publiceer onmiddellijk een pagina of pagina&#39;s
 * [**beheer Publicatie**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Plan een pagina of pagina&#39;s voor publicatie
 * [**herstel**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - herstel een versie van een pagina of paginaboom
 * [**Schrapping**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - schrap een pagina of pagina&#39;s
@@ -253,7 +253,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 ### Handeling maken {#create-action}
 
-Creeer actie biedt gelijkaardige opties aan [**&#x200B;** tot werkbalkknop ](#create-button) voor het creëren van nieuwe pagina&#39;s en gelijkaardige punten aan.
+Creeer actie biedt gelijkaardige opties aan [**** tot werkbalkknop ](#create-button) voor het creëren van nieuwe pagina&#39;s en gelijkaardige punten aan.
 
 Bovendien biedt het de mogelijkheid om paginagerelateerde acties te maken.
 
