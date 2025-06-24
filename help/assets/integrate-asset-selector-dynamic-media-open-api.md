@@ -3,9 +3,9 @@ title: Asset Selector integreren met de open API voor dynamische media
 description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Alle geselecteerde elementen worden gedragen door de functie `handleSelection` d
 | Object | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| API-hoofdmap | `/adobe/dynamicmedia/deliver` |
+| API-hoofdmap | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | format | `.jpg` |
@@ -105,16 +105,17 @@ Alle geselecteerde elementen worden gedragen door de functie `handleSelection` d
 #### API-specificatie voor levering van goedgekeurde middelen {#approved-assets-delivery-api-specification}
 
 URL-indeling:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Wanneer
 
 * Host is `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * API-hoofdmap is `"/adobe/assets"`
 * `<asset-id>` is element-id
+* `as` is het constante onderdeel van de open API-specificatie die aangeeft waarnaar het element moet worden verwezen
 * `<seo-name>` is de naam van een element
 * `<format>` is de uitvoerindeling
-* `<image modification query parameters>` als ondersteuning door de API-specificatie voor levering van goedgekeurde middelen
+* `<image modification query parameters>` wordt ondersteund door de API-specificatie voor levering van goedgekeurde middelen
 
 #### Goedgekeurde middelen Oorspronkelijke leverings-API van de vertoning {#approved-assets-delivery-api}
 
@@ -168,7 +169,7 @@ In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijk
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ Na de integratie met de Adobe Micro-Frontend Asset Selector kunt u de structuur 
 
 ![ Dynamische Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
 
-* **A**: [ verberg/toon paneel ](#hide-show-panel)
-* **B**: [ Assets ](#repository)
-* **C**: [ Sorterend ](#sorting)
-* **D**: [ Filters ](#filters)
-* **E**: [ bar van het Onderzoek ](#search-bar)
-* **F**: [ Sorterend in het stijgen of dalende orde ](#sorting)
+* **A**: Verberg/toon paneel
+* **B**: Assets
+* **C**: Sorteren
+* **D**: Filters
+* **E**: De bar van het onderzoek
+* **F**: Het sorteren in stijgende of dalende orde
 * **G**: Cancel Selectie
 * **H**: Selecteer enige of veelvoudige activa
 
