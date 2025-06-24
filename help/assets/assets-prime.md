@@ -4,9 +4,9 @@ description: Meer informatie over belangrijke aspecten van Assets Prime, zoals b
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Assets as a Cloud Service Prime bevat een lichtgewicht DAM waarmee u verschillen
 
   >[!NOTE]
   >
-  >Dynamic Media met OpenAPI-mogelijkheden, die u toegang biedt tot elementaire opties voor afbeeldingen zoals roteren, uitsnijden (alleen handmatig - geen slim uitsnijden), spiegelen, formaat, voorkeur, hoogte, breedte, kwaliteit, indeling en adaptieve videostreaming, is ook beschikbaar in Assets Prime. Neem contact op met het Adobe-accountteam voor meer informatie.
+  >Dynamische media met OpenAPI-mogelijkheden, die u toegang bieden tot basisopties voor afbeeldingen zoals roteren, uitsnijden (alleen handmatig - geen slim uitsnijden), spiegelen, hoogte, breedte, kwaliteit, indeling en adaptieve videostreaming, is ook beschikbaar in Assets Prime. Neem contact op met het Adobe-accountteam voor meer informatie.
 
 1. [ creeer een nieuw programma ](/help/journey-onboarding/create-program.md).
 

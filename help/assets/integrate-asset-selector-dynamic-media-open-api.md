@@ -3,9 +3,9 @@ title: Asset Selector integreren met de open API voor dynamische media
 description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -105,25 +105,26 @@ Alle geselecteerde elementen worden gedragen door de functie `handleSelection` d
 #### API-specificatie voor levering van goedgekeurde middelen {#approved-assets-delivery-api-specification}
 
 URL-indeling:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Wanneer
 
 * Host is `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API-hoofdmap is `"/adobe/dynamicmedia/deliver"`
+* API-hoofdmap is `"/adobe/assets"`
 * `<asset-id>` is element-id
 * `<seo-name>` is de naam van een element
 * `<format>` is de uitvoerindeling
 * `<image modification query parameters>` als ondersteuning door de API-specificatie voor levering van goedgekeurde middelen
 
-#### API voor levering van goedgekeurde middelen {#approved-assets-delivery-api}
+#### Goedgekeurde middelen Oorspronkelijke leverings-API van de vertoning {#approved-assets-delivery-api}
 
 De dynamische leverings-URL heeft de volgende syntaxis:
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>` , waarbij:
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>` , waarbij:
 
 * Host is `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API-hoofdmap voor originele uitvoering is `"/adobe/assets/deliver"`
+* API-hoofdmap voor originele uitvoering is `"/adobe/assets"`
 * `<asset-id>` is element-id
+* `/original/as` is het constante onderdeel van de open API-specificatie die aangeeft naar welke oorspronkelijke vertoning moet worden verwezen.
 * `<seo-name>` is naam van de activa die al dan niet een uitbreiding kunnen hebben
 
 ### Gereed om dynamische URL voor levering te kiezen {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +134,7 @@ Alle geselecteerde elementen worden gedragen door de functie `handleSelection` d
 | Object | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| API-hoofdmap | `/adobe/assets/deliver` |
+| API-hoofdmap | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -153,12 +154,12 @@ Als er eenmaal een PDF is geselecteerd in sidekick, wordt in de selectiecontext 
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijke PDF-uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijke PDF-uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
 * **Video:** u videospeler URL voor de videotypeactiva kunt gebruiken die ingebedde iFrame gebruiken. U kunt de volgende arrayuitvoeringen gebruiken in de doelervaring:
   <!--![Video dynamic delivery url](image.png)-->
@@ -167,7 +168,7 @@ In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijk
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +177,7 @@ In de bovenstaande schermafbeelding moet de bezorgings-URL van de oorspronkelijk
 
   Het codefragment in de bovenstaande schermafbeelding is een voorbeeld van een video-element. De array met uitvoeringen bevat koppelingen. `selection[5]` in het fragment is het voorbeeld van een afbeeldingsminiatuur die kan worden gebruikt als tijdelijke aanduiding voor een videominiatuur in de doelervaring. De `selection[5]` in de array van uitvoeringen is voor de videospeler. Dit dient een HTML en kan worden ingesteld als `src` van het iframe. De functie ondersteunt adaptieve bitsnelheidstreaming, dat wil zeggen, voor het web geoptimaliseerde levering van de video.
 
-  In het bovenstaande voorbeeld is de URL van de videospeler `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  In het bovenstaande voorbeeld is de URL van de videospeler `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 ### Aangepaste filters configureren {#configure-custom-filters-dynamic-media-open-api}
 

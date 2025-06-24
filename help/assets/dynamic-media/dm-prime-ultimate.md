@@ -3,9 +3,9 @@ title: Dynamic Media Prime en Ultimate
 description: Meer weten over Dynamic Media Prime en Ultimate, de voordelen ervan en de verschillen tussen beide?
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '395'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,7 @@ Met Adobe Experience Manager as a Cloud Service hebt u toegang tot de Dynamic Me
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
-De dynamische Media Prime is de activeringsdienst voor Experience Manager Assets, die [ Dynamische Media met OpenAPI basismogelijkheden ](/help/assets/dynamic-media-open-apis-overview.md) toelatend organisaties aanbiedt om AEM Assets met Adobe of niet-Adobe toepassingen te integreren. Deze ondersteunt transformatie (roteren, uitsnijden, spiegelen, formaat, voorkeur, hoogte, breedte, kwaliteit) en geoptimaliseerde aflevering.
+De dynamische Media Prime is de activeringsdienst voor Experience Manager Assets, die [ Dynamische Media met OpenAPI basismogelijkheden ](/help/assets/dynamic-media-open-apis-overview.md) toelatend organisaties aanbiedt om AEM Assets met Adobe of niet-Adobe toepassingen te integreren. Deze ondersteunt transformatie (roteren, uitsnijden, spiegelen, hoogte, breedte, kwaliteit) en geoptimaliseerde aflevering.
 
 Als u de Dynamische basis van Media evenals geavanceerde mogelijkheden en toegang tot Dynamische oplossing van Media in AEM as a Cloud Service nodig hebt, zie [ Dynamische Media Ultimate ](#dynamic-media-ultimate).
 
@@ -40,9 +40,9 @@ Tot de andere belangrijke voordelen van Dynamic Media Prime behoren:
 
 De dynamische Media Ultimate is de activeringsdienst voor Experience Manager Assets, die [ Dynamische Media met OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) basis en geavanceerde mogelijkheden evenals [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md) omvat. Het laat organisaties toe om veelvoudige variaties van rijke inhoud in real time door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk te produceren en te leveren.
 
-Dynamic Media Ultimate biedt naast de functies van Dynamic Media Prime, zoals de integratie van AEM Assets met Adobe- of niet-Adobe-toepassingen, transformatie (roteren, uitsnijden, spiegelen, formaat, voorkeur, hoogte, breedte, kwaliteit) en geoptimaliseerde levering ook:
+Naast de Dynamic Media Prime-functies, zoals AEM Assets-integratie met Adobe- of niet-Adobe-toepassingen, transformatie (roteren, uitsnijden, spiegelen, hoogte, breedte, kwaliteit) en geoptimaliseerde levering, biedt Dynamic Media Ultimate ook:
 
-* [ Dynamische Media met 1&rbrace; mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
+* [ Dynamische Media met 1} mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
 
    * Veilige levering van activa,
    * [ het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) vooraf in.
@@ -50,8 +50,8 @@ Dynamic Media Ultimate biedt naast de functies van Dynamic Media Prime, zoals de
 * [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
 
    * [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [ Visuele Configuratie ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [ Visuele Configuratie ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Vereisten {#pre-requisites-dm-ultimate}
 
