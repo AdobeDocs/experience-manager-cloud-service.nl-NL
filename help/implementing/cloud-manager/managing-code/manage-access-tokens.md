@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private bèta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,9 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-man
 1. In **beheert de Tokens van de Toegang** dialoogdoos, rechts van een symbolische naam, klik ![ uitgeven pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 1. In **geef Token van de Toegang** dialoogdoos uit, werk de **Symbolische Naam**, of de **Symbolische waarde van de Toegang**, of allebei bij.
 
-   Als het **Token van de Toegang** momenteel in gebruik is, verschijnt een bericht waarschuwend u dat alle bijbehorende bewaarplaatsen automatisch na de update worden opnieuw bevestigd.
-
    ![ geef de Token van de Toegang dialoogdoos uit ](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. Als het token in gebruik is, wordt u in een melding gewaarschuwd dat alle gekoppelde repositories automatisch opnieuw worden gevalideerd.
+1. Als het **Token van de Toegang** momenteel in gebruik is, verschijnt een bericht waarschuwend u dat alle bijbehorende bewaarplaatsen automatisch na de update worden opnieuw bevestigd.
 
 1. Klik **Update** om de veranderingen te bewaren.
 
