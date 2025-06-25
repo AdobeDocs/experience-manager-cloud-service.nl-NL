@@ -258,6 +258,7 @@ Dit gebruiksgeval wordt hieronder geïllustreerd door het voorbeeld van een rand
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
+
 1. Wanneer het tijd is om de sleutel te roteren, creeer een nieuw geheim van Cloud Manager, bijvoorbeeld `${{CDN_EDGEKEY_041425}}`.
 1. Verwijs er in de configuratie naar vanuit `edgeKey2` en implementeer deze.
 
@@ -279,6 +280,7 @@ Dit gebruiksgeval wordt hieronder geïllustreerd door het voorbeeld van een rand
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
+
 1. Verwijder de oude geheime verwijzing (`${{CDN_EDGEKEY_052824}}`) uit Cloud Manager en implementeer deze.
 
 1. Wanneer u gereed bent voor de volgende rotatie, volgt u dezelfde procedure, maar deze keer voegt u `edgeKey1` toe aan de configuratie en verwijst u naar een nieuw Cloud Manager-omgevingsgeheim met de naam `${{CDN_EDGEKEY_031426}}` .
