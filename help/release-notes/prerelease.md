@@ -4,9 +4,9 @@ description: Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van 
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service biedt regelmatig nieuwe functies. De
 
 De volgende functies worden doorgaans op twee manieren beschikbaar gesteld:
 
-* In het kader van een programma voor vroegtijdige adoptie
+* Als onderdeel van een Alpha-, Beta- of Limited Availability-programma
 * Als onderdeel van het prereleasekanaal
 
 In dit document wordt beschreven hoe u het prereleasekanaal kunt inschakelen. Het pre-releasekanaal verleent toegang tot vroege eigenschappen die een toekomstige eigenschapversie van AEM zullen worden geïntroduceerd. Dit geeft u de kans om nieuwe eigenschappen te bevestigen en voor hun goedkeuring vóór hun toekomstige versie te plannen. Gelieve te zien de document [ Nota&#39;s van de Versie voor Adobe Experience Manager (AEM) as a Cloud Service ](/help/release-notes/home.md) voor details op het de versieschema van AEM.
@@ -152,7 +152,7 @@ JavaDocs wordt gepubliceerd aan Centrale Maven.
 > 
 > De `aem-prerelease-sdk-api` artifactId mag nooit worden gebruikt bij de implementatie naar het werkgebied of de productie. Gebruikt altijd `aem-sdk-api` wanneer het opstellen via de productiepijplijn. Ook de code die verwijzingen prerelease APIs niet via de productiepijplijn zou moeten worden opgesteld.
 
-De [ AEM CS SDK bouwt Analysator die stop in v1.0 wordt gemaakt en hoger ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=nl-NL#developing) zal ontdekken als prerelease API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het pre-versie SDK API gebruiken om het project te analyseren.
+De [ AEM CS SDK bouwt Analysator die stop in v1.0 wordt gemaakt en hoger ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) zal ontdekken als prerelease API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het pre-versie SDK API gebruiken om het project te analyseren.
 
 ## Overwegingen {#considerations}
 

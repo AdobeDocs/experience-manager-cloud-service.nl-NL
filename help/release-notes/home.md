@@ -4,9 +4,9 @@ description: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 3d25a9279433e5bf6cc2b2e552ae6266a811c88b
+source-git-commit: 4b729f7d06ff3ef546dee2a67065cced7e5bb3fa
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Als het bijvoorbeeld mei is, kunt u komende functies evalueren die in een volgen
 
 Deze ervaring biedt u een rolvenster om het effect van om het even welke aanstaande eigenschappen aan uw projecten en aanpassingen te beoordelen en de introductie van plannen van dergelijke eigenschappen, het testen, en gebruikersopleiding te plannen.
 
-Controleer de [ versies van Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service) voor details over aanstaande versies.
+Controleer de [ versies van Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) voor details over aanstaande versies.
 
 ## Hoe te om voor een Versie voor te bereiden {#how-to-prepare}
 
@@ -51,7 +51,7 @@ Een release voorbereiden:
 
 ## Uw kalenders markeren {#mark-calendars}
 
-De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [ de Liga van de Ervaring van Adobe.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service)
+De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [ de Liga van de Ervaring van Adobe.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 Neem nota van de versiedata zodat kunt u tijd plannen om aanstaande eigenschappen te herzien en te testen.
 
@@ -67,12 +67,12 @@ U kunt ook [ de bekende kwesties ](/help/release-notes/maintenance/latest.md) co
 
 De volgende functies worden doorgaans op twee manieren beschikbaar gesteld:
 
-* In het kader van een programma voor vroegtijdige adoptie
+* Als onderdeel van een Alpha-, Beta- of Limited Availability-programma
 * Als onderdeel van het prereleasekanaal
 
 Hoe een aanstaande eigenschap beschikbaar wordt gemaakt zal in de [ versienota&#39;s worden gedetailleerd.](#release-notes)
 
-* Als het deel uitmaakt van een programma voor vroegtijdige adoptie, moet u over het algemeen contact opnemen met Adobe om dit mogelijk te maken, zoals in de opmerkingen bij de release wordt beschreven.
+* Als het deel uitmaakt van een Alpha-, Beta- of Beperkte Beschikbaarheid-programma, moet u doorgaans contact opnemen met Adobe om het programma in te schakelen zoals in de releaseopmerkingen wordt beschreven.
 * Als het deel van het prereleasekanaal uitmaakt, zult u het prereleasekanaal in een ontwikkeling of een zandbakmilieu [ moeten toelaten.](/help/release-notes/prerelease.md)
 
 ## Uw gebruikers trainen {#train-users}
@@ -81,8 +81,8 @@ Nadat u de volgende functies hebt getest en hebt besloten deze te gebruiken in u
 
 Adobe Experience League biedt veel bronnen om AEMaaCS te leren.
 
-* [ de documentatie AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL)
-* [ Zelfstudies ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=nl-NL)
+* [ de documentatie AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [ Zelfstudies ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
 * [ de maandversie overzichtsvideo ](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) in de versienota&#39;s
 
 ## Informatie over sleutelrelease {#key-articles}
