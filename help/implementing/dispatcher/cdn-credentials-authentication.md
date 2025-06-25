@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1939'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ data:
 
 Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan `1` moeten worden geplaatst.
 
-Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
+Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
 
 Tot de aanvullende eigenschappen behoren:
 
@@ -119,6 +119,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 Na het met succes testen, kan de extra voorwaarde worden verwijderd en de configuratie wordt opnieuw opgesteld.
 
+### Migratieproces als Adobe eerder de waarde voor `X-AEM-Edge-Key` HTTP-koptekst heeft gegenereerd {#migrating-legacy}
+
+>[!NOTE]
+>Voordat u verdergaat met de migratie, plant u een testmigratie in de werkgebiedomgeving om de strategie te controleren.
+
+>[!WARNING]
+> Verander niet de sleutel in klant-geleide CDN tot stap 4.
+
+Eerder, omvatte het proces om met een klant-beheerde CDN te integreren klanten die om een X-AEM-Edge-Zeer belangrijke waarde van de Kopbal van HTTP van de Steun van Adobe vroegen, eerder dan het bepalen van de waarde op hun eigen. Als u wilt migreren naar de nieuwere zelfserverbenadering waarbij u uw eigen Edge-sleutelwaarden definieert, volgt u deze stappen om een vloeiende overgang zonder downtime te garanderen:
+
+1. Configureer de CDN-configuratie met de nieuwe (door de klant gegenereerde) en oude (door Adobe gegenereerde) geheimen die zijn opgegeven als `edgeKey1` en `edgeKey2` . Dit is een variatie van [ het roteren geheimen ](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentatie.
+
+2. Stel de geheimen en de zelf-gediende configuratie CDN op. Op dit punt in het proces, zou het oude Adobe-bepaalde geheim nog als x-AEM-Edge-Zeer belangrijke waarde moeten blijven die door klant-beheerde CDN wordt overgegaan.
+
+3. Neem contact op met de Adobe-ondersteuning en vraag of Adobe overschakelt naar de configuratie met zelfbediening, waarbij u opgeeft dat u deze al hebt geïmplementeerd.
+
+4. Zodra Adobe bevestigt dat het die actie heeft uitgevoerd, vorm uw klant-geleide CDN om de nieuwe, klant-bepaalde sleutel voor de `X-AEM-Edge-Key` waarde van de Kopbal van HTTP te gebruiken.
+
+5. Verwijder de oude sleutel uit de configuratie CDN en stel opnieuw de configuratiepijplijn op.
+
+>[!WARNING]
+>Als u niet de reserve met beide sleutels hebt die gelijktijdig worden gevormd, zou het tot onderbreking tijdens de migratie kunnen leiden.
+
 ## API-token wissen {#purge-API-token}
 
 De klanten kunnen [ het CDN geheime voorgeheugen ](/help/implementing/dispatcher/cdn-cache-purge.md) zuiveren door een verklaard Stem API teken te gebruiken. Het token wordt gedeclareerd in een bestand met de naam `cdn.yaml` of een vergelijkbaar bestand, ergens onder een map op hoofdniveau `config` . Lees [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure) voor details over de omslagstructuur en hoe te om de configuratie op te stellen.
@@ -164,7 +187,7 @@ Tot de aanvullende eigenschappen behoren:
 >[!NOTE]
 >De zuiveringssleutel moet als a [ geheime typeVariabele van het Milieu van Cloud Manager ](/help/operations/config-pipeline.md#secret-env-vars) worden gevormd, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld. Het wordt aanbevolen een unieke willekeurige sleutel van minimaal 32 bytes te gebruiken. De cryptografische bibliotheek van Open SSL kan bijvoorbeeld een willekeurige sleutel genereren door de opdracht rand -hex 32 te openen.
 
-U kunt [ een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
+U kunt [ een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
 
 ## Basisverificatie {#basic-auth}
 
@@ -235,7 +258,6 @@ Dit gebruiksgeval wordt hieronder geïllustreerd door het voorbeeld van een rand
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. Wanneer het tijd is om de sleutel te roteren, creeer een nieuw geheim van Cloud Manager, bijvoorbeeld `${{CDN_EDGEKEY_041425}}`.
 1. Verwijs er in de configuratie naar vanuit `edgeKey2` en implementeer deze.
 
@@ -257,7 +279,6 @@ Dit gebruiksgeval wordt hieronder geïllustreerd door het voorbeeld van een rand
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Verwijder de oude geheime verwijzing (`${{CDN_EDGEKEY_052824}}`) uit Cloud Manager en implementeer deze.
 
 1. Wanneer u gereed bent voor de volgende rotatie, volgt u dezelfde procedure, maar deze keer voegt u `edgeKey1` toe aan de configuratie en verwijst u naar een nieuw Cloud Manager-omgevingsgeheim met de naam `${{CDN_EDGEKEY_031426}}` .
