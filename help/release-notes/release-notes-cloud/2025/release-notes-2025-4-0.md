@@ -3,9 +3,10 @@ title: Nota's van de versie voor 2025.4.0 versie van  [!DNL Adobe Experience Man
 description: Nota's van de versie voor 2025.4.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: a3bdb58e3a53ffc422320b08bfb260b47fb2ddef
+exl-id: 48e09824-5c67-49d8-8896-358d679649fc
+source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1744'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -32,15 +33,11 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-<!-- 
+## Video vrijgeven {#release-video}
 
-## Release Video {#release-video}
+Bekijk de video Overzicht van de release van april 2025 voor een overzicht van de functies die zijn toegevoegd in de release van 2025.4.0:
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -58,7 +55,7 @@ Als u de lijst met nieuwe gebruikersinterfaces aan de clientzijde verder invult 
 
 Dynamic Media (Scene7) op AEM as a Cloud Service is niet geschikt voor HIPAA en kan niet worden gebruikt in AEM-omgevingen waar uitgebreide beveiliging is ingeschakeld.
 
-Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1&rbrace; kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
+Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1} kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
 
 Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn dat de Dynamische stapel van Media (Scene7) niet HIPAA-klaar is.
 
@@ -68,7 +65,7 @@ Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn
 
 Het tabblad Bandbreedte in het Dynamic Media Classic-rapportagedashboard wordt niet meer ondersteund vanaf april 2025.
 
-Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 ## Nieuwe functies in Assets View {#new-features-assets-view}
 
@@ -102,7 +99,7 @@ Met de Assets-weergave kunt u nu snel elke versie van een element selecteren en 
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
@@ -128,7 +125,7 @@ De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnen
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console tot stand te brengen en steun OAuth server-aan-Server, Web App, en Enige Pagina App (SPA).
 
-[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
+[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
 
 Bekijk deze video om te leren hoe u een geverifieerde API voor later gebruik kunt configureren:
 
@@ -199,7 +196,7 @@ E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedbac
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -219,4 +216,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.

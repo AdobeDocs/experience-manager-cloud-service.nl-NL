@@ -1,20 +1,18 @@
 ---
-title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Nota's van de versie voor 2025.5.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2025.5.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
+source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
 workflow-type: tm+mt
-source-wordcount: '1332'
+source-wordcount: '2108'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2025.5.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2025.5.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -28,37 +26,112 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.6.0) is 26 juni 2025. De volgende release met functies (2025.7.0) is gepland voor 31 juli 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.5.0) is 5 juni 2025. De volgende release met functies (2025.6.0) is gepland voor 26 juni 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-<!-- 
+## Video vrijgeven {#release-video}
 
-## Release Video {#release-video}
+Bekijk de video Overzicht van de release van mei 2025 voor een overzicht van de functies die in de release van 2025.5.0 zijn toegevoegd:
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-**Verbeterd beheer van de Vorm van Meta-gegevens in de Mening van Assets**
+**AI-Gegenereerde meta-gegevens**
 
-U kunt metagegevensformulieren nu rechtstreeks vanuit de beheerweergave importeren in de Assets-weergave. Wijzigingen die in de weergave Assets in deze formulieren worden aangebracht, weerspiegelen automatisch in de beheerweergave, zodat ze consistent blijven in beide ervaringen. Deze mogelijkheid biedt ondersteuning voor een naadloze overgang naar de nieuwe Assets-weergave, terwijl de continuïteit met de bestaande configuraties van metagegevens behouden blijft.
+AEM Assets gebruikt nu [ AI om meta-gegevens, met inbegrip van Titel, Beschrijving, en Sleutelwoorden ](/help/assets/metadata-assets-view.md#ai-smart-tags) automatisch te produceren. Deze door AI gegenereerde velden verbeteren de nauwkeurigheid van metagegevens, waardoor de elementen gemakkelijker kunnen worden doorzocht, ingedeeld en aanbevolen. Deze aanpak verbetert niet alleen de efficiëntie door handmatige codering te elimineren, maar zorgt ook voor consistentie en schaalbaarheid op grote volumes digitale inhoud.
 
-![ AI geproduceerde meta-gegevens ](/help/assets/assets/import-metadata-forms-page.png)
+![ AI geproduceerde meta-gegevens ](/help/assets/assets/enhanced-smart-tags.png)
+
+**Integratie met Figma**
+
+AEM Assets integreert native met Figma, waardoor ontwerpers rechtstreeks vanuit de gebruikersinterface van Figma toegang hebben tot de elementen die in AEM Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, in het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in de AEM Assets-opslagruimte. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [ hier ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
+
 
 ### Nieuwe functies in Content Hub {#new-features-content-hub}
+
+**Op attributen-Gebaseerd Toegangsbeheer (ABAC)**
+
+[ Content Hub staat nu u toe om op regel-gebaseerde beperkingen op toegangsactiva ](/help/assets/attribute-based-access-control.md) toe te passen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
+
+De regels voor het beperken van elementen zijn gebaseerd op metagegevens en als de voorwaarden die in de regel zijn gedefinieerd overeenkomen met de metagegevens van het element, wordt het element weergegeven aan de gebruikersgroepen.
+
+Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
+
+* Elimineert de afhankelijkheid van de mapstructuur voor machtigingen
+
+* Staat beheerders toe om activa te uploaden en toestemmingsstructuren met terugwerkende kracht te bepalen
+
+* Vermindert het aantal duplicaten - verbetert de integriteit van elementen. Er zijn dubbele machtigingen nodig in op mappen gebaseerde machtigingen wanneer dezelfde elementen met verschillende groepen worden gedeeld.
+
+**het Brandmerken UI**
+
+Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen. [ Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
+
+![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
+
+**Openbare verbinding delend**
+
+Content Hub steunt nu [ het produceren van shareable verbindingen om externe gebruikers ](/help/assets/share-assets-content-hub.md##share-assets), zonder toepassingstoegang toe te staan, om activa meta-gegevens of downloadactiva te bekijken.
+
+![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
 
 **het bestuur van Inzamelingen**
 
 Content Hub laat u [ nu toegang tot inzamelingen tijdens verwezenlijking controleren, die slechts erkende gebruikers verzekeren kan gegroepeerde activa ](/help/assets/collections-content-hub.md##create-collections) bekijken of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>Beheer van verzamelingen is een beperkte beschikbaarheid. U kunt het toegelaten krijgen door een steunkaartje te creëren.
+
+**Download veelvoudige activa als ZIP**
+
+Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT ](/help/assets/download-assets-content-hub.md#download-asset-renditions) en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.[
+
+**Dynamische vertoningen van Media in Content Hub**
+
+Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en slim-gewassen voor download, direct van binnen het Gebruikersinterface van Content Hub ](/help/assets/download-assets-content-hub.md#download-asset-renditions).
+
+&#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Nieuwe functies in dynamische media {#new-features-dynamic-media}
+
+**Dynamische integratie van Media inheemse met de &#x200B; van AJO B2C**
+
+[ Inheemse integratie van de Dynamische Media van Experience Manager (AEM) met Journey Optimizer (AJO) B2C ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), toelatend marketers om AEM Dynamic Media activa (vertoning en Malplaatje DM) in de inhoud van AJO gemakkelijk in te bedden en updates in real time en hyper-gepersonaliseerde ervaringen over kanalen te leveren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+
+## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
+
+### Functies vóór de release
+
+* [ Universele Redacteur - de Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): De Universele Redacteur staat u nu toe om de Fragmenten van de Vorm voor Adaptieve Forms tot stand te brengen en opnieuw te gebruiken. Deze fragmenten zijn herbruikbare formuliersecties (bijvoorbeeld contactgegevens, toestemmingsvelden) die één keer kunnen worden gemaakt en op meerdere formulieren kunnen worden toegepast. Met deze functie stroomlijnt u het maken van formulieren, zorgt u voor consistentie en verbetert u de efficiëntie van het ontwerpen.
+
+* [ de Bibliotheek van het Document van SharePoint - sparen Bijlagen met Oorspronkelijke Filenames ](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): U hebt nu de optie om vormgehechtheid te bewaren gebruikend hun originele filenames wanneer het opslaan van hen in een Bibliotheek van het Document van SharePoint. Deze verbetering vereenvoudigt de identificatie en het beheer van geüploade bestanden.
+
+* **Redacteur van de Regel**:
+   * [ Binaire Voorwaarde met de Gebeurtenis van de Klik in &quot;wanneer&quot;Clausule ](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): De Redacteur van de Regel staat nu toe combinerend een gebeurtenis van de knoopklik (_wordt geklikt_) met andere voorwaarden binnen de &quot;wanneer&quot;clausule. Dit laat nauwkeurigere controle over regeluitvoering toe die op gebruikersinteractie en andere factoren wordt gebaseerd. Opmerking: wanneer u meerdere voorwaarden gebruikt, moet de gebeurtenis click de eerste weergegeven voorwaarde zijn.
+   * [ de Voorwaarden van de Bevestiging voor Gebieden en Comités ](/help/forms/rule-editor-core-components-usecases.md): De Redacteur van de Regel omvat nu _IsValid_ en _IsNotValid_ voorwaarden. Hiermee kunt u de validatiestatus controleren van specifieke velden of volledige deelvensters (zoals lay-outs zoals Horizontale tabbladen, Verticale tabbladen, Accordeons en Wizards), waardoor de navigatie en gebruikerservaring van formulieren op basis van validatieresultaten wordt verbeterd.
+* [ Verbeterd Beheer van het Toepassingsgebied voor de Lijsten van SharePoint ](/help/forms/connect-forms-to-sharepoint-list.md): De plaatsen van SharePoint steunen nu alle beheerde wegen, bijvoorbeeld, /sites en /teams. Deze verbetering maakt een bredere integratie mogelijk in verschillende SharePoint-sitestructuren, waardoor u flexibeler kunt werken met organisatorische inhoud.
+* [ Steun voor het Opslaan van Document van Verslag aan de Lijst van SharePoint ](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms die gebruikend een op lijst-Gebaseerd Model van de Gegevens van de Vorm van SharePoint (FDM) wordt gecreeerd kan het Document van Verslag (DoR) aan de Lijsten van SharePoint nu opslaan door het Document van het het gebiedsbezit van de Verwijzing van de Bind van het Verslag te vormen. Dankzij deze verbetering kunnen ondersteunde formuliergegevens en -documenten naadloos worden geïntegreerd met SharePoint-opslag.
+
+### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
+
+Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
+
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
+
+#### Adobe Experience Platform (AEP) Integratie met Forms
+
+De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnende gebruikers.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
@@ -112,7 +185,7 @@ Opmerking: de runtimeversie staat los van de build-versie van uw code. We raden 
 
 Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Beginnend in **eind Augustus**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
+Beginnend in **eind Augustus**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Gebaseerd op onze analyse, zullen de meeste klanten niet beïnvloed worden en Adobe zal direct om het even welke klanten contacteren waarvan huidige configuratie kan worden beïnvloed.
 
 Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen die zich op het gedrag van het douaneregistreren baseren. Bijvoorbeeld:
 
@@ -123,7 +196,7 @@ Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen 
 
 Momenteel, hebben de inhoudsversies en de controlelogboeken hun bijbehorende *taken van het zuiveringsonderhoud* gehandicapt door gebrek en zo wordt geen gegeven verwijderd tenzij uitdrukkelijk gevormd.
 
-Nochtans, om bewaarplaatsprestaties te optimaliseren, die in **begin juli 2025** beginnen, zal het zuiveren door gebrek worden toegelaten, die deze richtlijnen volgen:
+Nochtans, om bewaarplaatsprestaties te optimaliseren, die in **eind juni 2025** beginnen, zal het zuiveren door gebrek worden toegelaten, die deze richtlijnen volgen:
 
 #### Inhoudversies {#mt-content}
 
