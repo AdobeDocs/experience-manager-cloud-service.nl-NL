@@ -3,9 +3,9 @@ title: Verzamelingen beheren in Content Hub
 description: Leer hoe u verzamelingen beheert in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -13,40 +13,75 @@ ht-degree: 0%
 # Verzamelingen beheren in [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+
         </td>
+
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate  toe</b></a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -56,7 +91,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Een verzameling verwijst naar een set elementen die onder gebruikers kunnen worden gedeeld. Een verzameling kan elementen van verschillende locaties bevatten, terwijl de referentiële integriteit ervan behouden blijft.
 
@@ -77,7 +112,7 @@ Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middele
 
 ## Verzamelingen maken{#create-collections}
 
-U kunt verkiezen om een nieuwe inzameling [&#128279;](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.
+U kunt verkiezen om een nieuwe inzameling ](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.[
 
 ### Een nieuwe verzameling maken{#create-new-collection}
 
@@ -93,17 +128,22 @@ Voer de onderstaande stappen uit om de toegang te beheren terwijl u verzamelinge
 
    | Toegangsmethode | Toegangstype | Beschrijving |
    |---|---|---|
-   | **slechts u en de beheerders kunnen tot** toegang hebben | Persoonlijk | Alleen de maker en de beheerders kunnen deze verzameling bewerken en openen. |
-   | **iedereen kan tot** toegang hebben | Openbaar | Iedereen kan tot deze inzameling toegang hebben, maar slechts kunnen de schepper en de Beheerders uitgeven. |
-   | **iedereen kan tot** toegang hebben en uitgeven | Openbaar | Deze verzameling is toegankelijk voor iedereen, met volledige toegang en bewerkingsmachtigingen die zonder beperkingen zijn verleend. |
+   | **slechts u en de beheerders kunnen uitgeven** | Persoonlijk | Alleen de maker en de beheerders kunnen deze verzameling bewerken en openen. |
+   | **iedereen kan** bekijken | Openbaar | Iedereen kan tot deze inzameling toegang hebben, maar slechts kunnen de schepper en de Beheerders uitgeven. |
+   | **iedereen kan** bekijken en uitgeven | Openbaar | Deze verzameling is toegankelijk voor iedereen, met volledige toegang en bewerkingsmachtigingen die zonder beperkingen zijn verleend. |
+
+   >[!NOTE]
+   >
+   > [!DNL Content Hub] de beheerder kan alle opties bekijken beschikbaar onder **[!UICONTROL Who can access]** dropdown, terwijl voor regelmatige gebruikers, u [ moet specificeren en ](configure-content-hub-ui-options.md) vormen welke opties zij kunnen toegang hebben.
 
 1. Klik op **[!UICONTROL Create]**. Zodra gedaan, kunt u activa [ toevoegen aan de inzameling ](#add-assets-to-existing-collection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
+<!--
 >[!NOTE]
 >
->Beheer van verzamelingen is een beperkte beschikbaarheid. U kunt het toegelaten krijgen door een steunkaartje te creëren. Zodra toegelaten, moet u [ Inzamelingen in Content Hub ](configure-content-hub-ui-options.md#configure-collections-content-hub) vormen.
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
 
 <!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
@@ -174,17 +214,23 @@ Leer hoe te om [ activa van  [!DNL Content Hub]](download-assets-content-hub.md)
 
 U kunt ook de elementen delen die beschikbaar zijn in een verzameling. Zorg ervoor om [ openbaar verbinding toe te laten delend in Content Hub ](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigeer naar de tab **[!UICONTROL Collections]** . Selecteer het ![ pictogram van het aandeel ](assets/share.svg) pictogram op de inzamelingskaart. De koppeling voor delen wordt gekopieerd. U kunt de gekopieerde koppeling delen met de ontvanger. Leer meer over [ delend activa in  [!DNL Content Hub]](share-assets-content-hub.md).
 
-Tijdens het delen van verzamelingen in Content Hub kunt u het bereik definiëren van toegang en handelingen die ontvangers kunnen uitvoeren op digitale bronnen in het systeem. Content Hub Collections biedt uitgebreide governancegereedschappen voor effectief middelenbeheer, waaronder aanpasbare deelmachtigingen en samenwerkingsfuncties. Van read-only toegang tot volledige administratieve controle, steunen deze montages fijn bestuur over activadistributie.
+Content Hub Collections biedt uitgebreide governancegereedschappen voor effectief middelenbeheer, waaronder aanpasbare deelmachtigingen en samenwerkingsfuncties. Van read-only toegang tot volledige administratieve controle, steunen deze montages fijn bestuur over activadistributie. Wanneer het delen van activa of individueel of als deel van een inzameling, wordt het werkingsgebied van toegang bepaald door het huidige toegangsniveau van de inzameling dat aan de gebruiker wordt toegewezen. U kunt ook geen privéverzameling delen.
 
 ## Details van een verzameling bewerken {#edit-details-of-collection}
 
-Om **[!UICONTROL Title]** en **[!UICONTROL Description]** van een inzameling uit te geven, klik de inzamelingsnaam en klik dan het ![ infopictogram ](assets/info-icon.svg) pictogram. [!UICONTROL Collection Details] wordt weergegeven, zodat u de **[!UICONTROL Title]** en **[!UICONTROL Description]** van een verzameling kunt bewerken. Klik op **[!UICONTROL Save Changes]** om de wijzigingen te bevestigen.
+Om **[!UICONTROL Title]** en **[!UICONTROL Description]** van een inzameling uit te geven, klik de inzamelingsnaam en klik dan het ![ infopictogram ](assets/info-icon.svg) pictogram. [!UICONTROL Collection Details] wordt weergegeven, zodat u de **[!UICONTROL Title]** en **[!UICONTROL Description]** van een verzameling kunt bewerken. Klik op **[!UICONTROL Save Changes]** om de wijzigingen te bevestigen. Bovendien kunt u de toegang tot de inzameling door de Edit dialoog van de Inzameling, afhankelijk van de configuratie bijwerken.
 
 ![ inzamelingsdetails ](assets/collection-details.png)
 
 ## Elementen uit een verzameling verwijderen{#remove-assets-from-a-collection}
 
-U kunt een of meer elementen uit een verzameling verwijderen. Als u elementen uit een verzameling wilt verwijderen, klikt u op de verzameling waaruit u elementen wilt verwijderen, selecteert u de elementen en klikt u op **[!UICONTROL Remove from collection]** .
+De volgende gebruikers kunnen een of meer elementen uit een verzameling verwijderen:
+
+* Beheerder
+* Een eigenaar van de collectie
+* Een gebruiker die geen beheerder is met de bewerkingsrechten
+
+Als u elementen uit een verzameling wilt verwijderen, klikt u op de verzameling waaruit u elementen wilt verwijderen, selecteert u de elementen en klikt u op **[!UICONTROL Remove from collection]** .
 
 ![ verwijder inzameling ](assets/remove-collection-new.jpg)
 
@@ -193,7 +239,7 @@ De geselecteerde elementen worden uit de verzameling verwijderd.
 
 ## Een verzameling verwijderen{#delete-collection}
 
-Als u een verzameling wilt verwijderen, navigeert u naar het tabblad **[!UICONTROL Collections]** en klikt u op de verzameling die u wilt verwijderen. Klik ![ verwijderen pictogram ](assets/remove-icon.svg) pictogram om de inzameling te schrappen.
+Alleen beheerders en makers kunnen een verzameling verwijderen. Als u een verzameling wilt verwijderen, navigeert u naar het tabblad **[!UICONTROL Collections]** en klikt u op de verzameling die u wilt verwijderen. Klik ![ schrappingspictogram ](assets/delete-icon.svg) pictogram om de inzameling te schrappen.
 
 
 
