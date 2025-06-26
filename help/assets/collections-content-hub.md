@@ -91,7 +91,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Een verzameling verwijst naar een set elementen die onder gebruikers kunnen worden gedeeld. Een verzameling kan elementen van verschillende locaties bevatten, terwijl de referentiële integriteit ervan behouden blijft.
 
@@ -112,7 +112,7 @@ Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middele
 
 ## Verzamelingen maken{#create-collections}
 
-U kunt verkiezen om een nieuwe inzameling ](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.[
+U kunt verkiezen om een nieuwe inzameling [&#128279;](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.
 
 ### Een nieuwe verzameling maken{#create-new-collection}
 
