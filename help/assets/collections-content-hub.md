@@ -3,9 +3,9 @@ title: Verzamelingen beheren in Content Hub
 description: Leer hoe u verzamelingen beheert in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+source-git-commit: c98d5ba776f13549c4b82bdbe8f9220663ccb50e
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -13,40 +13,75 @@ ht-degree: 0%
 # Verzamelingen beheren in [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+
         </td>
+
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b> toe</a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -56,7 +91,7 @@ ht-degree: 0%
 >
 >Content Hub-gids is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Een verzameling verwijst naar een set elementen die onder gebruikers kunnen worden gedeeld. Een verzameling kan elementen van verschillende locaties bevatten, terwijl de referentiële integriteit ervan behouden blijft.
 
@@ -77,7 +112,7 @@ Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middele
 
 ## Verzamelingen maken{#create-collections}
 
-U kunt verkiezen om een nieuwe inzameling [&#128279;](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.
+U kunt verkiezen om een nieuwe inzameling ](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.[
 
 ### Een nieuwe verzameling maken{#create-new-collection}
 
@@ -134,7 +169,7 @@ Met Content Hub kunt u de weergave Verzamelingen filteren, zodat u gemakkelijk k
 
 Ga naar de tab **[!DNL Collections]** en navigeer naar de vervolgkeuzelijst Verzamelingen om de weergave Verzamelingen te filteren. Kies een van de volgende opties:
 
-* **[!UICONTROL All Collections]:** selecteer deze optie om alle inzamelingen te bekijken die privé en met u worden gedeeld.
+* **[!UICONTROL All Collections]:** selecteer deze optie om alle inzamelingen, met inbegrip van die te bekijken en uit te geven die privé of met u worden gedeeld.
 * **[!UICONTROL Only me]:** selecteer deze optie om inzamelingen te bekijken die voor u toegankelijk zijn.
 * **[!UICONTROL Anyone can view]:** deze optie laat u inzamelingen filtreren die voor iedereen toegankelijk maar editable slechts door de schepper zijn.
 * **[!UICONTROL Anyone can edit]:** selecteer deze optie aan filterinzamelingen die zowel toegankelijk als editable door iedereen zijn.
