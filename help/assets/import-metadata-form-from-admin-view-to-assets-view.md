@@ -85,7 +85,7 @@ Als beheerder voert u de volgende stappen uit om de metagegevensformulieren die 
    * Selecteer het geïmporteerde formulier en klik op **[!UICONTROL Remove from folder(s)]** en controleer vervolgens de mapnaam in het mappad om te bevestigen dat de map correct is geëxporteerd.
 
      ![ verifieer de pagina van meta-gegevensvormen ](/help/assets/assets/confirm-ported-folder.png)
-   * Selecteer het geïmporteerde formulier en klik op **[!UICONTROL Edit]** om alle ondersteunde configuraties van het metagegevensformulier weer te geven. Zie &lbrace;de Meta-gegevens van de Opstelling Forms [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) voor meer informatie over de meta-gegevensvormen, hun componenten, en gebieden.
+   * Selecteer het geïmporteerde formulier en klik op **[!UICONTROL Edit]** om alle ondersteunde configuraties van het metagegevensformulier weer te geven. Zie &lbrace;de Meta-gegevens van de Opstelling Forms [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) voor meer informatie over de meta-gegevensvormen, hun componenten, en gebieden.
 
    ![ verifieer de pagina van meta-gegevensvormen ](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -94,8 +94,8 @@ Als beheerder voert u de volgende stappen uit om de metagegevensformulieren die 
 Nadat u de metagegevensformulieren van [!DNL Admin View] naar [!DNL Assets View] hebt geïmporteerd, voert u de volgende stappen uit om het importeren te controleren:
 
 1. Navigeer naar een van de bijbehorende mappen van het geïmporteerde metagegevensformulier.
-1. Navigeer aan de detailspagina van een [ element ](/help/assets/navigate-assets-view.md#preview-assets) en verifieer dat de gesteunde meta-gegevenscomponenten, componentengebieden, en gebiedswaarden van [!DNL Admin View] worden gesynchroniseerd. Zie [ Meta-gegevens in de Hoofdzaak van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) artikel voor meer informatie over meta-gegevenscomponenten, componentengebieden, en de gebiedswaarden.
+1. Navigeer aan de detailspagina van een [ element ](/help/assets/navigate-assets-view.md#preview-assets) en verifieer dat de gesteunde meta-gegevenscomponenten, componentengebieden, en gebiedswaarden van [!DNL Admin View] worden gesynchroniseerd. Zie [ Meta-gegevens in de Hoofdzaak van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/metadata) artikel voor meer informatie over meta-gegevenscomponenten, componentengebieden, en de gebiedswaarden.
 
    >[!NOTE]
    >
-   > In [[!DNL Assets View]  detailspagina ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) of [[!DNL Admin View]  eigenschappen pagina ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), worden de veranderingen in de waarden van het meta-gegevensbezit automatisch gesynchroniseerd tussen de twee interfaces. Structuurwijzigingen in het formulier, zoals het toevoegen of verwijderen van velden of andere wijzigingen, worden echter niet gesynchroniseerd.
+   > In [[!DNL Assets View]  detailspagina ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) of [[!DNL Admin View]  eigenschappen pagina ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/administer/metadata-schemas), worden de veranderingen in de waarden van het meta-gegevensbezit automatisch gesynchroniseerd tussen de twee interfaces. Structuurwijzigingen in het formulier, zoals het toevoegen of verwijderen van velden of andere wijzigingen, worden echter niet gesynchroniseerd.
