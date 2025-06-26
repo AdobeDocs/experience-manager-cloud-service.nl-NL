@@ -3,7 +3,7 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u enkele of meerdere middelen en de bijbehorende uitvoeringen downloadt van de Content Hub-portal.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
@@ -56,7 +56,7 @@ ht-degree: 0%
 >
 > [!DNL Content Hub] -hulplijn is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
 >
->[!BADGE &#x200B; de Gids PDF van Content Hub &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE  de Gids PDF van Content Hub ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Met [!DNL Content Hub] kunt u uw elementen downloaden en delen. In de gebruikersinterface van [!DNL Content Hub] worden alleen goedgekeurde elementen weergegeven. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. Met [!DNL Content Hub] verbetert u de toegankelijkheid en het aanpassingsvermogen voor een effectieve middelendistributie.
 
@@ -82,8 +82,8 @@ Als in het dialoogvenster **[!UICONTROL Download assets]** licenties voor elemen
 
    >[!NOTE]
    >
-   >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) Gebruikersinterface wordt toegelaten.
-   >* Gebruikers met toegang tot [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme uitsnijduitvoeringen weergeven en downloaden.
+   >* De vertoningen van vertoningen slechts als hun zicht gebruikend het [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) Gebruikersinterface wordt toegelaten.
+   >* Gebruikers met toegang tot [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) kunnen dynamische en slimme uitsnijduitvoeringen weergeven en downloaden.
    >* De voorvertoning van de licentie wordt alleen weergegeven als het element is goedgekeurd in de [!DNL Assets as a Cloud Service] -ontwerpomgeving. Voor meer informatie, zie [ Gelicentieerde activa op Content Hub ](/help/assets/manage-licensed-assets-on-content-hub.md) beheren.
 
 <!--
@@ -179,7 +179,7 @@ Leer meer over [ mening en beheer vertoningen in  [!DNL Experience Manager Asset
 
 * [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [ Dynamische vertoningen ](#enable-dynamic-media-renditions) toelaten.
 
-* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe Sensei, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe Sensei, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
 
@@ -195,7 +195,7 @@ Dynamische uitvoeringen inschakelen:
 
 1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
 
-1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3} Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
 
 1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
 
