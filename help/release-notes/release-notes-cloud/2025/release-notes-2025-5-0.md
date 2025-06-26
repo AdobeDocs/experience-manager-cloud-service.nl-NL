@@ -71,7 +71,7 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 **het Brandmerken UI**
 
-Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen ](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen. [ Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
+Content Hub staat nu beheerders toe om het gebruikersinterface met brand-specifieke elementen [&#128279;](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), met inbegrip van bannerbeelden, bannertitels en lichaamstekst, evenals primaire en secundaire kleuren aan te passen.  Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
 
 ![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
 
@@ -93,7 +93,7 @@ Content Hub laat u [ nu toegang tot inzamelingen tijdens verwezenlijking control
 
 **Download veelvoudige activa als ZIP**
 
-Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT ](/help/assets/download-assets-content-hub.md#download-asset-renditions) en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.[
+Content Hub staat nu ook u toe om de geselecteerde activa en hun vertoningen in een dossier van het PIT [&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions) en niet als afzonderlijke dossiers te downloaden die dossierbeheer voor u vereenvoudigen.
 
 **Dynamische vertoningen van Media in Content Hub**
 
@@ -127,7 +127,7 @@ Heb toegang tot al uw [ Dynamische vooraf ingestelde vertoningen van Media en sl
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
