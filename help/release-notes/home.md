@@ -4,7 +4,7 @@ description: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 4b729f7d06ff3ef546dee2a67065cced7e5bb3fa
+source-git-commit: ccf148d66fbee68e057b05afc69e4bf9eef65c77
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2025,5,0 |
+| Versie | 2025,6,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -38,7 +38,7 @@ Als het bijvoorbeeld mei is, kunt u komende functies evalueren die in een volgen
 
 Deze ervaring biedt u een rolvenster om het effect van om het even welke aanstaande eigenschappen aan uw projecten en aanpassingen te beoordelen en de introductie van plannen van dergelijke eigenschappen, het testen, en gebruikersopleiding te plannen.
 
-Controleer de [ versies van Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service) voor details over aanstaande versies.
+Controleer de [ versies van Experience Manager roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) voor details over aanstaande versies.
 
 ## Hoe te om voor een Versie voor te bereiden {#how-to-prepare}
 
@@ -51,7 +51,7 @@ Een release voorbereiden:
 
 ## Uw kalenders markeren {#mark-calendars}
 
-De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [ de Liga van de Ervaring van Adobe.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=nl-NL#aem-as-cloud-service)
+De versies van de eigenschap zijn gepland goed van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [ de Liga van de Ervaring van Adobe.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 Neem nota van de versiedata zodat kunt u tijd plannen om aanstaande eigenschappen te herzien en te testen.
 
@@ -81,8 +81,8 @@ Nadat u de volgende functies hebt getest en hebt besloten deze te gebruiken in u
 
 Adobe Experience League biedt veel bronnen om AEMaaCS te leren.
 
-* [ de documentatie AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL)
-* [ Zelfstudies ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=nl-NL)
+* [ de documentatie AEMaaCS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [ Zelfstudies ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
 * [ de maandversie overzichtsvideo ](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) in de versienota&#39;s
 
 ## Informatie over sleutelrelease {#key-articles}
