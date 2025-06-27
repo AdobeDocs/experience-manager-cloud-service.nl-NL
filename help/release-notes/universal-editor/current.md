@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.05.21
-description: Dit zijn de releaseopmerkingen voor de release 2025.05.21 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.06.19
+description: Dit zijn de releaseopmerkingen voor de release 2025.06.19 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
+source-git-commit: 5ffae9e548ca952975b3ea805808e227102ec99f
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.05.21 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.06.19 {#release-notes}
 
-Dit zijn de releaseopmerkingen voor de release van 21 mei 2025 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 19 juni 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,11 +22,29 @@ Dit zijn de releaseopmerkingen voor de release van 21 mei 2025 van de Universal 
 
 ## Wat is er nieuw? {#what-is-new}
 
-* **maak open paginaknoop** onbruikbaar - de open paginaknoop [ kan nu worden onbruikbaar gemaakt.](/help/implementing/universal-editor/customizing.md#open-page)
-* **eigenschappen van de Toegang van inhoudsboom** - [ wanneer u een ingang in de inhoudsboom tweemaal klikt, ](/help/sites-cloud/authoring/universal-editor/navigation.md) zullen de bijbehorende eigenschappen automatisch in het zijpaneel openen.
+* **Steun voor multi-fields in het Spoorwegverkeer van Eigenschappen** -
+  [ de containercomponent ](/help/implementing/universal-editor/field-types.md#container) kan nu worden gebruikt om multi-gebiedseigenschappen tot stand te brengen.
+* **Steun voor genestelde eigenschappen** - het [`name` gebied ](/help/implementing/universal-editor/field-types.md#nesting) steunt nu wegen om bezit het nesten toe te laten.
+* **resizable juist paneel** - het zijpaneel kan nu resized aan betere rekening voor langere die inhoud in het zijpaneel wordt getoond.
+
+## Functies voor vroege adoptie {#early-adopter}
+
+U kunt bepaalde functies testen door deel uit te maken van het Adobe-programma voor vroegtijdige adoptie.
+
+### **ongedaan maken/opnieuw** {#undo-redo}
+
+Ongedaan maken en opnieuw uitvoeren is nu beschikbaar voor auteurs van inhoud in de Universal Editor.
+
+* Dit omvat bewerkingen die in de context zijn uitgevoerd, bewerkingen die zijn uitgevoerd via het deelvenster Eigenschappen, en het toevoegen (of dupliceren), verplaatsen en verwijderen van blokken.
+* Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
+
+Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar Customer Success Manager van Adobe via het e-mailadres dat bij uw Adobe ID hoort.
 
 ## Overige verbeteringen {#other-improvements}
 
-* Verwijzingen die al zijn gepubliceerd, worden nu standaard uitgeschakeld in het dialoogvenster Publiceren om te voorkomen dat ze opnieuw worden gepubliceerd.
-* Het laden van extensies is verbeterd.
-* De uitzonderingen die door uitbreidingen worden opgeheven worden nu behandeld beter om de redacteur niet te beïnvloeden.
+* De zeer belangrijke botsingsfouten van het middel toen het bewegen van blokken tussen containers werden bevestigd.
+* Er is een probleem opgelost waardoor het dupliceren van het laatste blok van een container mislukt.
+* In de vervolgkeuzelijst Handeling toevoegen worden nu alleen componenten weergegeven waarvoor een geschikte plug-in is gedefinieerd in het `component-definition.json` -bestand.
+* De wijzigingsdatum die in het dialoogvenster Publiceren wordt gebruikt, is vastgesteld op het moment dat pagina&#39;s in sommige gevallen niet als gewijzigd werden herkend en niet opnieuw werden gepubliceerd.
+* Het overervingsgedrag MSM waarbij het bewerken van een container geannuleerde overerving voor onderliggende knooppunten. Dit gedrag is nu opgelost.
+* `fetchUrl` is hersteld, waardoor bewegende blokken van de ene container naar de andere worden hersteld.

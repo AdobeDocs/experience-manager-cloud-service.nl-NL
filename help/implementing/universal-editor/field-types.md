@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Een veldobject heeft de volgende typedefinitie.
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `component` | `ComponentType` | Renderer van de component | Ja |
-| `name` | `string` | Eigenschap waar de gegevens moeten worden gecontinueerd | Ja |
+| `name` | `string` | Bezit [ of weg ](#nesting) waar de gegevens zullen worden voortgeduurd | Ja |
 | `label` | `FieldLabel` | Label van het veld | Ja |
 | `description` | `FieldDescription` | Beschrijving van het veld | Nee |
 | `placeholder` | `string` | Plaatsaanduiding voor het veld | Nee |
@@ -104,6 +104,14 @@ Een veldobject heeft de volgende typedefinitie.
 | `multi` | `boolean` | Is het veld een veld met meerdere velden | Nee |
 | `validation` | `ValidationType` | Validatieregel(s) voor het veld | Nee |
 | `raw` | `unknown` | Onbewerkte gegevens die door de component kunnen worden gebruikt | Nee |
+
+### naamveld en nesten {#nesting}
+
+Het veld `name` kan rechtstreeks naar een eigenschap van de huidige bron verwijzen, of in het geval van componenten in `cq:Pages` kan het ook een pad naar een geneste eigenschap gebruiken. Bijvoorbeeld:
+
+```json
+"name": "teaser/image/fileReference"
+```
 
 ### Componenttypen {#component-types}
 
@@ -281,7 +289,7 @@ Net als bij een booleaanse component staat een componenttype voor selectievakjes
 
 #### Container {#container}
 
-Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt een extra configuratie aan.
+Met een containercomponenttype kunnen componenten worden gegroepeerd, inclusief ondersteuning voor meerdere velden. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -324,7 +332,36 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt 
 
 ![ Screenshot van het type van containercomponent ](assets/component-types/container.png)
 
+>[!TAB  Multifield Steun ]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### Inhoudsfragment {#content-fragment}
 
