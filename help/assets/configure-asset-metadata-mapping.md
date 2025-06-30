@@ -4,51 +4,14 @@ description: De metagegevensvelden voor elementen toewijzen aan Adobe Workfront-
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
 # Metagegevenstoewijzing tussen Adobe Workfront en Experience Manager Assets configureren {#asset-metadata-mapping-workfront-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 U kunt de metagegevensvelden voor elementen toewijzen tussen Adobe Workfront- en Experience Manager as a Cloud Service-toepassingen. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
 
@@ -68,7 +31,7 @@ Er bestaat een afbeelding `add-users-workfront.png` in het `Metadata Syncs` -pro
 
 * Beheerders hebben toegang tot Workfront- en Experience Manager Assets as a Cloud Service-toepassingen.
 
-* Een integratie tussen [ Workfront en Experience Manager Assets as a Cloud Service toepassingen ](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus).
+* Een integratie tussen [ Workfront en Experience Manager Assets as a Cloud Service toepassingen ](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&_LANG=enus).
 
 ## Metagegevenstoewijzing instellen in Workfront {#set-up-metadata-mapping}
 
@@ -128,7 +91,6 @@ U kunt als volgt metagegevenstoewijzing configureren met een nieuw metagegevensf
    1. Geef `Project Name` op in het veld **[!UICONTROL Field Label]** .
 
    1. Geef `./jcr:content/metadata/wm:projectName` op in het veld **[!UICONTROL Map to property]** . Gebruik als richtlijn de volgende sjabloon om de veldtoewijzingen in Experience Manager Assets te definiëren:
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Tijdens het configureren van toewijzingen in Workfront, hebt u het veld `wm:projectName` Experience Manager Assets toegewezen aan Project > Naam Workfront.

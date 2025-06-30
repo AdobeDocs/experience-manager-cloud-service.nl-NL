@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '927'
 ht-degree: 2%
 
 ---
@@ -16,43 +16,6 @@ ht-degree: 2%
 # Introductie van Assets als [!DNL Cloud Service] voor Digital Asset Management in AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 Adobe Experience Manager Assets als [!DNL Cloud Service] biedt een native, PaS-oplossing in de cloud waarmee bedrijven niet alleen hun bewerkingen met Digital Asset Management en Dynamic Media met snelheid en impact kunnen uitvoeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerzaam is.
 
@@ -99,7 +62,7 @@ Integreer AEM Assets met Document-based Authoring voor Edge Delivery Services zo
 
 ## Integratie met Adobe Journey Optimizer {#integration-with-ajo}
 
-[ Adobe Journey Optimizer ](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) vereenvoudigt reisbeheer voor klanten om omnichannel campagnes van intelligente besluitvorming en inzichten te voorzien. Bij het ontwerpen van berichten met Journey Optimizer hebt u rechtstreeks vanuit de Journey Optimizer-interface toegang tot de Assets as a Cloud Service-gegevensopslagruimte. Gebruikers krijgen toegang tot elementen via de ingesloten gebruikersinterface van Experience Manager Assets. Voor meer informatie, zie [ activa met Experience Manager Assets ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=nl-NL) creëren en beheren.
+[ Adobe Journey Optimizer ](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) vereenvoudigt reisbeheer voor klanten om omnichannel campagnes van intelligente besluitvorming en inzichten te voorzien. Bij het ontwerpen van berichten met Journey Optimizer hebt u rechtstreeks vanuit de Journey Optimizer-interface toegang tot de Assets as a Cloud Service-gegevensopslagruimte. Gebruikers krijgen toegang tot elementen via de ingesloten gebruikersinterface van Experience Manager Assets. Voor meer informatie, zie [ activa met Experience Manager Assets ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html) creëren en beheren.
 
 ## Nieuwe Assets-mogelijkheden {#whats-new-assets}
 

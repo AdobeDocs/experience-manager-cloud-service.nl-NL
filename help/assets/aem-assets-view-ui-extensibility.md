@@ -4,48 +4,14 @@ description: Leer over het vermogen van de Uitbreidbaarheid UI van  [!DNL AEM As
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # UI-uitbreidbaarheid inschakelen in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets View] ondersteunt de uitbreidbaarheid van de gebruikersinterface, zodat u aangepaste UI-componenten aan uw [!DNL Assets View] -gebruikersinterface kunt toevoegen voor specifieke workflows en bedrijfsvereisten waaraan de out-of-the-box-mogelijkheden van [!DNL AEM Assets View] niet voldoen. Deze UI-uitbreidingsmogelijkheid van [!DNL AEM Assets View] verbetert de flexibiliteit, waardoor organisaties de interface voor specifieke workflows en vereisten kunnen aanpassen.\
 U kunt uw uitbreidingen aan **Activa** toevoegen, **Omslag** en **het niveau van de Inzameling**. De toegevoegde uitbreidingsvertoningen op een specifiek paneel op de **Activa**, **Inzameling**, of **omslag** **[!UICONTROL Details]** pagina.
@@ -53,7 +19,7 @@ U kunt uw uitbreidingen aan **Activa** toevoegen, **Omslag** en **het niveau van
 >[!IMPORTANT]
 >
 > * [!DNL AEM Assets View] De uitbreidbaarheid van de gebruikersinterface is beschikbaar in [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md) .
-> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+> * Om toegang tot [!DNL Assets view] uitbreidbaarheid UI te krijgen, [ creeer en voorleg het geval van de Steun van de a [!DNL Adobe]  Klant ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 > * U kunt documentfeedback opgeven door **[!UICONTROL Detailed Feedback options]** uit te vouwen en op **[!UICONTROL Report an issue]** te klikken.
 
 ## <a id="1"></a> Toegang tot de weergave Assets {#add-UI-Extensibility-in-AEM-Assets-View}

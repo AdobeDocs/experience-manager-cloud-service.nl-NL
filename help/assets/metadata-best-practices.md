@@ -4,9 +4,9 @@ description: Leer meer over best practices voor metagegevens om uw digitale midd
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
@@ -18,43 +18,9 @@ experience manager metadata-->
 
 # Metagegevensbeheer en best practices {#metadata-best-practices}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
-
 Om uw bedrijf te laten opvallen en meer klanten aan te trekken, is het van cruciaal belang gebruik te maken van beelden, video&#39;s en andere digitale middelen van hoge kwaliteit. Hiervoor hebt u een proces nodig waarmee u metagegevens kunt toevoegen aan alle digitale elementen, zodat u deze gemakkelijk kunt doorzoeken. Metagegevens zijn de gegevens die essentiële gegevens bevatten over digitale elementen, zoals de naam, het type, de locatie in een opslagplaats, de gewijzigde datum en de bijbehorende tags. Metagegevens stroomlijnen het middelenbeheer, verbeteren de doorzoekbaarheid en toegankelijkheid en zorgen voor een effectieve versiebeheersing.
 
-Leer hoe te om meta-gegevens in het Digitale systeem van het Beheer van Activa te gebruiken (DAM) om meta-gegevens van uw digitale activa [&#128279;](manage-metadata.md) effectief te beheren.
+Leer hoe te om meta-gegevens in het Digitale systeem van het Beheer van Activa te gebruiken (DAM) om meta-gegevens van uw digitale activa ](manage-metadata.md) effectief te beheren.[
 
 ## Typen metagegevens
 
@@ -131,7 +97,7 @@ Bepaal waar de informatie vandaan komt en bestudeer de details van de metagegeve
 
 >[!NOTE]
 >
->Leer hoe te [ meta-gegevens van uw digitale activa ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=nl-NL) beheren.
+>Leer hoe te [ meta-gegevens van uw digitale activa ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html) beheren.
 
 ### Verenigbaar zijn met de metagegevensstrategie
 
@@ -170,7 +136,7 @@ U kunt meerdere trefwoorden toevoegen en deze rangschikken naar prioriteit.
    1. Klik op **[!UICONTROL Save & Close]** .
 Zoek het element met de trefwoorden die u hebt toegevoegd. Het element wordt weergegeven in de bovenste zoekresultaten.
 
-  Leer hoe te om [ onderzoek in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL) op te voeren.
+  Leer hoe te om [ onderzoek in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html) op te voeren.
 
 * **de meta-gegevensgebieden van de Douane:** pas uw meta-gegevensgebieden aan om extra informatie over activa te vangen. Voeg bijvoorbeeld specifieke velden toe voor projectdetails, copyrightinformatie of andere relevante gegevens die de zoekmogelijkheden verbeteren. Leer [ om douanemetagegevens ](meta-edit.md) in Experience Manager Assets uit te geven of toe te voegen.
 
@@ -200,4 +166,4 @@ Onderzoek de leveringsketen van de inhoud om meta-gegevensbronnen te vinden en a
 
 Geef vroegtijdig informatie over doelstellingen, vooruitgang, mijlpalen en uitdagingen, zodat alle belanghebbenden er hun bijdrage aan kunnen leveren en kunnen samenwerken. Stimuleer samenwerking in de hele organisatie om efficiënte processen en waardevolle metagegevens te maken.
 
-Leer meer over [ meta-gegevens en zijn verwante concepten ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=nl-NL) om uw meta-gegevens van Experience Manager effectief te beheren.
+Leer meer over [ meta-gegevens en zijn verwante concepten ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) om uw meta-gegevens van Experience Manager effectief te beheren.

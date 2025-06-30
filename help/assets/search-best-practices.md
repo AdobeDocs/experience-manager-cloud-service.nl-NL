@@ -5,48 +5,14 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2437'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen werkwijzen voor zoeken in AEM Assets
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het zoeken naar elementen waarmee u een hogere snelheid van de inhoud kunt bereiken. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden. Zoekmiddelen in [!DNL Adobe Experience Manager Assets] zijn dan ook van cruciaal belang voor het gebruik van een digitaal assetmanagementsysteem - of het nu gaat om verder gebruik door creatieve klanten, voor een robuust beheer van bedrijfsmiddelen door zakelijke gebruikers en marketers of voor beheer door DAM-beheerders.
 
@@ -64,7 +30,7 @@ In de **mening van Assets**, is de onderzoeksbar zichtbaar op de bovenkant en ka
 
 **Scenario 1: Voer een basisonderzoek uit gebruikend a `classic car` als onderzoekssleutelwoord.**
 
-Het sleutelwoordonderzoek is niet case-sensitive en is een full-text onderzoek over de meta-gegevensgebieden die in het volledige de tekstonderzoek van Activa *index van 0&rbrace; inbegrepen zijn (configureerbaar in de indexdefinitie).* Als meer dan één sleutelwoord wordt gebruikt, **EN is de standaardexploitant tussen de sleutelwoorden, aldus, overweegt het een onderzoek naar &quot;klassieke auto&quot;om &quot;klassieke EN auto&quot;te zijn**.
+Het sleutelwoordonderzoek is niet case-sensitive en is een full-text onderzoek over de meta-gegevensgebieden die in het volledige de tekstonderzoek van Activa *index van 0} inbegrepen zijn (configureerbaar in de indexdefinitie).* Als meer dan één sleutelwoord wordt gebruikt, **EN is de standaardexploitant tussen de sleutelwoorden, aldus, overweegt het een onderzoek naar &quot;klassieke auto&quot;om &quot;klassieke EN auto&quot;te zijn**.
 
 De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. De weergavevolgorde van zoekresultaten is bij benadering:
 
@@ -302,7 +268,7 @@ U gaat naar de verzameling elementen met vergelijkbare kleuren en metagegevens.
 
 ## Aangepaste zoekfacetten {#custom-search-facets}
 
-Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [ Facetten van het Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
+Met zoekfacetten in Adobe Experience Manager kunt u op meerdere manieren zoeken naar elementen in plaats van in één, vooraf bepaalde of taxonomische volgorde. U kunt zoekfacetten aanpassen en voorspelden toevoegen naar wens. Lees [ Facetten van het Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) voor de geleidelijke gids over het toevoegen van een douane predikaat.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -350,7 +316,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Aangepaste facetten </td>
-        <td> U kunt <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL"> facetten van het douaneonderzoek toevoegen zoals door het vereiste.</td>
+        <td> U kunt <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en"> facetten van het douaneonderzoek toevoegen zoals door het vereiste.</td>
         <td> De aangepaste facetten worden gedeeltelijk ondersteund in de Assets-weergave. De ondersteunde facetten zijn:
             <ul>
             <li> Voorspelde labels
@@ -464,5 +430,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Assets doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=nl-NL)
->* [Facetten doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL)
+>* [Assets doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Facetten doorzoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)

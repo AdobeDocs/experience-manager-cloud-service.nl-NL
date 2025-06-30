@@ -9,51 +9,14 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
 
 # Abonnement configureren in [!DNL Experience Manager Assets] {#configure-transcription-service}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 Transcriptie is het proces waarbij de audio van een audio- of videobestand in tekst (spraak naar tekst) wordt omgezet met behulp van de spraakherkenningstechnologie.
 [!DNL Adobe Experience Manager Assets] is geconfigureerd met [!DNL Azure Media Services] , dat automatisch teksttranscriptie van de gesproken taal genereert in een ondersteund audio- of videobestand in de WebVTT-indeling (.vtt). Wanneer een audio- of video-element wordt verwerkt in [!DNL Experience Manager Assets] , genereert de transcriptieservice automatisch de tekstranscriptie-uitvoering van het audio- of videoelement en slaat deze op dezelfde locatie op in de Assets-opslagplaats waar het oorspronkelijke element zich bevindt. Met de transcriptieservice van [!DNL Experience Manager Assets] kunnen marketers hun audio- en video-inhoud effectief beheren, waarbij de tekstinhoud extra kan worden gedetecteerd en de ROI van deze elementen kan worden verhoogd door toegankelijkheid en lokalisatie te ondersteunen.
@@ -161,7 +124,7 @@ Als u [ gevormde Dynamische Media ](/help/assets/dynamic-media/config-dm.md) in 
 
 Zie ook:
 
-* [ Videozelfstudie op hoe te om CC Gesloten Bijschrift aan Dynamische video van Media toe te voegen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=nl-NL#add-cc-closed-captioning-to-dynamic-media-video)
+* [ Videozelfstudie op hoe te om CC Gesloten Bijschrift aan Dynamische video van Media toe te voegen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [Dynamische media-video&#39;s publiceren naar YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 In de volgende afbeelding geeft de URL het bijschriftgedeelte weer dat naar de transcriptie (.vtt-bestand) verwijst. De video weerspiegelt de gesproken taal (getranscripte tekst) als een **[!UICONTROL Closed Caption]** op het opgegeven tijdstempel in de video. De gebruiker kan het bijschrift in- of uitschakelen met de knop **[!UICONTROL CC]** .

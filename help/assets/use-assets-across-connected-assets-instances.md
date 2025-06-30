@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '3802'
+source-wordcount: '3756'
 ht-degree: 12%
 
 ---
@@ -16,46 +16,9 @@ ht-degree: 12%
 
 # Connected Assets gebruiken om DAM-middelen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
-
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen overnames zijn die leiden tot heterogene infrastructuren, waaronder verschillende [!DNL Experience Manager] -versies, die het moederbedrijf samen wil gebruiken.
@@ -81,7 +44,7 @@ Voor de [!DNL Sites] -auteurs zijn de externe elementen beschikbaar als alleen-l
 Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
-* Voor [!DNL Adobe Experience Manager] -implementatietypen is aan een van de ondersteunde criteria voldaan. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] werkt met [!DNL Experience Manager] 6.5. Voor meer informatie over hoe deze functionaliteit in [!DNL Experience Manager] 6.5 werkt, zie [ Verbonden Assets in  [!DNL Experience Manager]  6.5  [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=nl-NL).
+* Voor [!DNL Adobe Experience Manager] -implementatietypen is aan een van de ondersteunde criteria voldaan. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] werkt met [!DNL Experience Manager] 6.5. Voor meer informatie over hoe deze functionaliteit in [!DNL Experience Manager] 6.5 werkt, zie [ Verbonden Assets in  [!DNL Experience Manager]  6.5  [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
   | | [!DNL Sites] als een [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] op AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
   |---|---|---|---|
@@ -171,7 +134,7 @@ Voer de volgende stappen uit om Connected Assets en de lokale [!DNL Sites] conne
    >
    >Alle uitvoeringen die beschikbaar zijn op de externe implementatie worden opgehaald, wanneer auteurs middelen ophalen. Als u meer weergaven van een opgehaalde asset tot stand wilt brengen, moet u deze configuratiestap overslaan. De [!UICONTROL DAM Update Asset] -workflow wordt geactiveerd en er worden meer uitvoeringen gemaakt. Deze uitvoeringen zijn alleen beschikbaar bij de lokale [!DNL Sites] implementatie en niet bij de externe DAM-implementatie.
 
-1. Voeg de [!DNL Sites] -implementatie toe als een toegestane oorsprong in de CORS-configuratie voor de [!DNL Assets] -implementatie. Voor meer informatie, zie [ CORS ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL) begrijpen.
+1. Voeg de [!DNL Sites] -implementatie toe als een toegestane oorsprong in de CORS-configuratie voor de [!DNL Assets] -implementatie. Voor meer informatie, zie [ CORS ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) begrijpen.
 
 1. Vorm [ de zelfde steun van het plaatskoekje ](/help/security/same-site-cookie-support.md).
 
@@ -210,7 +173,7 @@ Om [!DNL Dynamic Media] op [!DNL Assets] en [!DNL Sites] plaatsingen te vormen:
    * Selecteer **[!UICONTROL Selective Publish]** bij Lokaal [!DNL Sites] in de optie **[!UICONTROL Publish Assets]** . Selecteer **[!UICONTROL Sync All Content]** niet.
    * Bij externe [!DNL Assets] -implementatie selecteert u [!UICONTROL Dynamic Media sync mode] in **[!UICONTROL Enabled by default]** .
 
-1. Laat [[!DNL Dynamic Media]  steun in de Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL#dynamic-media) toe. Deze eigenschap laat de standaard [ component van het Beeld ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) toe om [!DNL Dynamic Media] beelden te tonen wanneer [!DNL Dynamic Media] beelden door auteurs in webpages op lokale [!DNL Sites] plaatsing worden gebruikt.
+1. Laat [[!DNL Dynamic Media]  steun in de Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media) toe. Deze eigenschap laat de standaard [ component van het Beeld ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) toe om [!DNL Dynamic Media] beelden te tonen wanneer [!DNL Dynamic Media] beelden door auteurs in webpages op lokale [!DNL Sites] plaatsing worden gebruikt.
 
 ## Externe elementen gebruiken {#use-remote-assets}
 
@@ -356,10 +319,10 @@ U kunt elementen toevoegen aan de [!DNL Sites] -implementatie, maar deze element
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
-* Om inzicht over activagebruik te krijgen, vorm de [&#128279;](/help/assets/assets-insights.md) functionaliteit van het Inzicht van 0&rbrace; Assets &lbrace;op de [!DNL Sites] instantie.
+* Om inzicht over activagebruik te krijgen, vorm de [ Assets Insight ](/help/assets/assets-insights.md) functionaliteit op de [!DNL Sites] instantie.
 * Het gebruik van padbrowser in ontwerpcomponenten wordt niet ondersteund in verbonden elementen.
 
-* U kunt niet de verre activa op de [ Component van het Beeld slepen vormt dialoog ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL#configure-dialog). U kunt het externe element echter rechtstreeks naar de afbeeldingscomponent op de pagina Sites slepen zonder op **[!UICONTROL Configure]** te klikken.
+* U kunt niet de verre activa op de [ Component van het Beeld slepen vormt dialoog ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). U kunt het externe element echter rechtstreeks naar de afbeeldingscomponent op de pagina Sites slepen zonder op **[!UICONTROL Configure]** te klikken.
 
 ### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 

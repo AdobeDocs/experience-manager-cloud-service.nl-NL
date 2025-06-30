@@ -3,57 +3,14 @@ title: Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkhede
 description: Leer hoe u de levering van middelen kunt beperken met OpenAPI-mogelijkheden.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
 
 # Levering van middelen beperken met Dynamic Media met OpenAPI-mogelijkheden {#restrict-access-to-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
-
->[!AVAILABILITY]
->
->De handleiding Dynamic Media met OpenAPI-mogelijkheden is nu beschikbaar in PDF-indeling. Download de volledige handleiding en gebruik Adobe Acrobat AI Assistant om je vragen te beantwoorden.
->
->[!BADGE &#x200B; Dynamische Media met OpenAPI mogelijkhedenGids PDF &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Met centraal beheer van bedrijfsmiddelen in Experience Manager kunnen de DAM-beheerder of -bedrijfsleiders de toegang beheren tot middelen die beschikbaar zijn via Dynamic Media met OpenAPI-mogelijkheden. Zij kunnen levering van goedgekeurde activa (neer aan individuele activa) aan geselecteerde [ Gebruiker of Groepen van het Systeem van Adobe Identity Management van het Systeem van (IMS) ](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) beperken door bepaalde meta-gegevens op activa op hun de auteursdienst van AEM as a Cloud Service te vormen.
 
@@ -113,7 +70,7 @@ Op dezelfde manier voert u voor de weergave Assets de volgende stappen uit als u
 
 ## Levering van beperkte activa {#delivery-restricted-assets}
 
-De levering van beperkte activa is gebaseerd op een geslaagde toelating tot activa. De vergunning is of door [ IMS Dragertokens ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (toepassing voor verzoeken die van [ de Kiezer van de Activa van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) worden in werking gesteld), of veilig-koekje (als u de leveranciers van de douaneidentiteit opstelling op uw AEM hebt publiceren/de diensten van de Voorproef, en opstelling de koekjesverwezenlijking en opneming op de pagina&#39;s).
+De levering van beperkte activa is gebaseerd op een geslaagde toelating tot activa. De vergunning is of door [ IMS Dragertokens ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (toepassing voor verzoeken die van [ de Kiezer van de Activa van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) worden in werking gesteld), of veilig-koekje (als u de leveranciers van de douaneidentiteit opstelling op uw AEM hebt publiceren/de diensten van de Voorproef, en opstelling de koekjesverwezenlijking en opneming op de pagina&#39;s).
 
 ### Levering voor AEM-auteur- of Asset Selector-verzoeken {#delivery-aem-author-asset-selector}
 
@@ -125,8 +82,8 @@ Op de auteur-services van AEM Cloud Service en Asset Selector wordt de token IMS
 >Neem contact op met de Enterprise Support voor meer informatie over hoe u IMS-verificatie kunt inschakelen bij de op AEM Asset Selector gebaseerde integratie
 
 1. AEM as a Cloud Service en Dynamic Media met OpenAPI-mogelijkheden ondersteunen momenteel API-integratie aan de serverzijde en kunnen IMS-tokens voor toonder genereren.
-   * Volg de instructies [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) om dienst-aan-server API integratie uit te voeren die de tokens IMS van de Drager door [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) kan terugwinnen
-   * Voor beperkte duur, kan de lokale ontwikkelaarstoegang (niet bedoeld voor de gevallen van het productiegebruik), de korte - levende tokens IMS van de Drager voor de gebruiker die op [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) wordt voor authentiek verklaard door de instructies [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow) te volgen
+   * Volg de instructies [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) om dienst-aan-server API integratie uit te voeren die de tokens IMS van de Drager door [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) kan terugwinnen
+   * Voor beperkte duur, kan de lokale ontwikkelaarstoegang (niet bedoeld voor de gevallen van het productiegebruik), de korte - levende tokens IMS van de Drager voor de gebruiker die op [ AEM as a Cloud Service Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) wordt voor authentiek verklaard door de instructies [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow) te volgen
 
 1. Terwijl het maken van [ Onderzoek ](search-assets-api.md) en [ levering ](deliver-assets-apis.md) API verzoeken, voeg het verkregen token IMS Betower aan de **[!UICONTROL Authorization]** kopbal van het HTTP- verzoek toe (zorg ervoor dat zijn waarde met **[!UICONTROL Bearer]** vooraf bepaald is).
 
@@ -136,4 +93,4 @@ Op de auteur-services van AEM Cloud Service en Asset Selector wordt de token IMS
 
 ### Levering voor aangepaste identiteitsproviders bij de publicatieservice {#delivery-custom-identity-provider}
 
-AEM Sites-, AEM Assets- en Dynamic Media met OpenAPI-licenties kunnen samen worden gebruikt, zodat beperkte levering van middelen kan worden geconfigureerd op websites die worden gehost op de AEM-service Publiceren of Voorvertoning. De veilige leveringsstroom gebruikt browser koekjes om de toegang van de gebruiker te vestigen en het hebben van een douanedomein voor leveringsrij die subdomein van publiceer domein is is een vereiste voor het uitvoeren van dit gebruiksgeval. In het geval dat de de Publicatie en diensten van de Voorproef van AEM Sites worden gevormd om a [ leverancier van de douaneidentiteit (IdP) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) te gebruiken, moet een nieuw koekje genoemd `delivery-token` het inkapselen van de groepslidmaatschap van de gebruiker op de authentificatie van de publicatiepost van het domein worden geplaatst. De leveringsrij haalt het vergunningsmateriaal uit veilig-koekje en bevestigt de toegang. Gelieve te registreren een [ kaartje van de ondernemingssteun ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) voor meer details.
+AEM Sites-, AEM Assets- en Dynamic Media met OpenAPI-licenties kunnen samen worden gebruikt, zodat beperkte levering van middelen kan worden geconfigureerd op websites die worden gehost op de AEM-service Publiceren of Voorvertoning. De veilige leveringsstroom gebruikt browser koekjes om de toegang van de gebruiker te vestigen en het hebben van een douanedomein voor leveringsrij die subdomein van publiceer domein is is een vereiste voor het uitvoeren van dit gebruiksgeval. In het geval dat de de Publicatie en diensten van de Voorproef van AEM Sites worden gevormd om a [ leverancier van de douaneidentiteit (IdP) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) te gebruiken, moet een nieuw koekje genoemd `delivery-token` het inkapselen van de groepslidmaatschap van de gebruiker op de authentificatie van de publicatiepost van het domein worden geplaatst. De leveringsrij haalt het vergunningsmateriaal uit veilig-koekje en bevestigt de toegang. Gelieve te registreren een [ kaartje van de ondernemingssteun ](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) voor meer details.

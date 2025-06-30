@@ -4,51 +4,14 @@ description: Notable veranderingen in  [!DNL Adobe Experience Manager Assets]  i
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
 
 # Notable changes to [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt veel nieuwe functies en mogelijkheden om uw Experience Manager-projecten te beheren. Er zijn veel verschillen tussen [!DNL Experience Manager Assets] on-premise of hosted als Adobe Managed Service en [!DNL Experience Manager] as a [!DNL Cloud Service] . In dit artikel worden de belangrijke verschillen voor [!DNL Assets] -mogelijkheden belicht.
 
@@ -88,18 +51,18 @@ Om een bevestiging van begin tot eind van de code en het proces met inbegrip van
 
 | Functionaliteit of gebruikscase | Status in [!DNL Experience Manager] als een [!DNL Cloud Service] | Opmerkingen |
 |-----|-----|-----|
-| [ Dubbele activaopsporing ](/help/assets/detect-duplicate-assets.md) | Dit werkt anders | Zie [ hoe het in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/managing/duplicate-detection) werkte. |
+| [ Dubbele activaopsporing ](/help/assets/detect-duplicate-assets.md) | Dit werkt anders | Zie [ hoe het in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/duplicate-detection) werkte. |
 | [ voor slechts (FPO) vertoningen van de Plaatsing ](/help/assets/configure-fpo-renditions.md) | Dit werkt anders | Bij de verwerking van profielen worden de asset-microservices gebruikt om FPO-uitvoeringen te genereren. In Experience Manager 6.5 was een oplossing van derden, zoals [!DNL ImageMagick] , beschikbaar om de uitvoeringen te genereren. |
 | Metagegevens terugschrijven | Dit werkt anders | Standaard uitgeschakeld. Schakel indien nodig de bijbehorende workflow voor het starten van de workflow in. Asset microservices handelt de callback af. |
 | Verwerking van geüploade elementen met gebruik van Package Manager | Dit vereist handmatige interventie | Handmatig opnieuw verwerken met de handeling **[!UICONTROL Reprocess Asset]** . |
-| MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [ MIME typeopsporing in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
-| Subasset genereren voor samengestelde activa | Niet ondersteund. | Het is mogelijk dat niet wordt voldaan aan afhankelijke gebruiksgevallen, zoals annotaties. Zie [ subasset verwezenlijking in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). De voorproef van PDF van sommige dossiertypes is beschikbaar beginnend [ versie 2021.7.0 ](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| Afbeeldingen bewerken | Niet ondersteund | Het bewerken van elementen wordt niet ondersteund in Experience Manager as a Cloud Service. Zie [ hoe het in Experience Manager 6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images) werkte. |
-| Homepage | Niet ondersteund | Zie {de ervaring van de Pagina van 0} Huis in  [!DNL Experience Manager]  6.5 [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/using/assets-home-page) [!DNL Assets]  |
-| Elementen extraheren uit ZIP-archief | Niet ondersteund | Zie {de extractie van 0} ZIP in  [!DNL Experience Manager]  6.5 [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip). |
+| MIME-typedetectie | Niet ondersteund. | Als u een digitaal element uploadt zonder extensie of met een onjuiste extensie, wordt het mogelijk niet naar wens verwerkt. De gebruikers kunnen de binaire dossiers zonder een uitbreiding in DAM nog opslaan. Zie [ MIME typeopsporing in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
+| Subasset genereren voor samengestelde activa | Niet ondersteund. | Het is mogelijk dat niet wordt voldaan aan afhankelijke gebruiksgevallen, zoals annotaties. Zie [ subasset verwezenlijking in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). De voorproef van PDF van sommige dossiertypes is beschikbaar beginnend [ versie 2021.7.0 ](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| Afbeeldingen bewerken | Niet ondersteund | Het bewerken van elementen wordt niet ondersteund in Experience Manager as a Cloud Service. Zie [ hoe het in Experience Manager 6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images) werkte. |
+| Homepage | Niet ondersteund | Zie {de ervaring van de Pagina van 0} Huis in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page)[[!DNL Assets]  |
+| Elementen extraheren uit ZIP-archief | Niet ondersteund | Zie {de extractie van 0} ZIP in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip).[ |
 | Assets-ratings | Niet ondersteund | De beoordelingswidget in de schema-editor voor metagegevens wordt niet ondersteund. |
-| Inhoudsverwijderingsfilter | Niet ondersteund | Een veelgebruikte optie van `ContentDispositionFilter` is om beheerders [!DNL Experience Manager] te laten configureren om HTML-bestanden te bedienen en PDF-bestanden inline te openen in plaats van deze te downloaden. Bij de publicatie-instanties kunt u de indeling beheren met behulp van de Dispatcher-configuratie. In de ontwerpinstanties beveelt Adobe geen wijziging aan in de header Content Disposition. Zie {het filter van de Verplaatsing van 0} Inhoud in  [!DNL Experience Manager]  6.5 [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/content-disposition-filter). |
-| Fotosjabloon voor product | Niet ondersteund | Zie [ malplaatje van de productfotoshoot in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
+| Inhoudsverwijderingsfilter | Niet ondersteund | Een veelgebruikte optie van `ContentDispositionFilter` is om beheerders [!DNL Experience Manager] te laten configureren om HTML-bestanden te bedienen en PDF-bestanden inline te openen in plaats van deze te downloaden. Bij de publicatie-instanties kunt u de indeling beheren met behulp van de Dispatcher-configuratie. In de ontwerpinstanties beveelt Adobe geen wijziging aan in de header Content Disposition. Zie {het filter van de Verplaatsing van 0} Inhoud in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter).[ |
+| Fotosjabloon voor product | Niet ondersteund | Zie [ malplaatje van de productfotoshoot in  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
 | Slimme omzetting | Niet ondersteund | Slimme vertaling wordt niet ondersteund in [!DNL Experience Manager] als een [!DNL Cloud Service] . |
 | WebDAV | Niet ondersteund | Voor alternatieven, zie [[!DNL Creative Cloud]  integratie ](/help/assets/aem-cc-integration-best-practices.md) of [ het verwijzingsmateriaal van de Ontwikkelaar ](/help/assets/developer-reference-material-apis.md). |
 | Klassieke interface | Niet ondersteund | Alleen een gebruikersinterface met aanraakbediening is beschikbaar. |
@@ -130,4 +93,4 @@ Om een bevestiging van begin tot eind van de code en het proces met inbegrip van
 >* [ de architectuur ](/help/overview/architecture.md)
 >* [ Notable veranderingen ](/help/release-notes/aem-cloud-changes.md)
 >* [ Notable veranderingen  [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [ Videozelfstudies ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/overview)
+>* [ Videozelfstudies ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview)

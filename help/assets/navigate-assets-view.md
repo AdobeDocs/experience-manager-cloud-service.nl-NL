@@ -4,51 +4,14 @@ description: Begrijp gebruikersinterface van en navigatie in  [!DNL Assets view]
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # Naar bestanden en mappen navigeren en elementen weergeven {#view-assets-and-details}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -62,7 +25,7 @@ Wanneer u zich aanmeldt bij [!DNL Assets view] , ziet u de volgende interface.
 
 ![[!DNL Assets view] gebruikersinterface ](assets/assets-view-interface.png)
 
-**A**: De linkerzijbalk om bewaarplaats te doorbladeren en toegang tot een paar andere opties **B** verleent: Vertoning of doet ineenstorten de linkerzijbalk om activa-bekijkend gebied **C** te verhogen: De onderzoeksresultaten van de filter **D**: Selecteer alle inhoud van de geselecteerde omslag **E**: Opties om activa **F** te sorteren: De doos van het Onderzoek **2&rbrace; G**: Upload of sleep en laat vallen dossiers gebruikend `Add Assets` knoop **H**: Creeer een nieuwe omslag **I**: Schakelaar tussen verschillende meningen
+**A**: De linkerzijbalk om bewaarplaats te doorbladeren en toegang tot een paar andere opties **B** verleent: Vertoning of doet ineenstorten de linkerzijbalk om activa-bekijkend gebied **C** te verhogen: De onderzoeksresultaten van de filter **D**: Selecteer alle inhoud van de geselecteerde omslag **E**: Opties om activa **F** te sorteren: De doos van het Onderzoek **2} G**: Upload of sleep en laat vallen dossiers gebruikend `Add Assets` knoop **H**: Creeer een nieuwe omslag **I**: Schakelaar tussen verschillende meningen
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -113,7 +76,7 @@ Om activa voor te vertonen, het te selecteren en [!UICONTROL Details] ![ details
 
 ![ Voorproef een activa ](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**&rbrace;: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
+**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**}: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 
@@ -133,7 +96,7 @@ Other use cases after previewing.
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
 
 >[!MORELIKETHIS]
 >

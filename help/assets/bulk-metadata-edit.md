@@ -1,52 +1,15 @@
 ---
 title: Bulkmetagegevens bewerken in  [!DNL Assets View]
-description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere middelen die beschikbaar zijn op de [!DNL !] Assets View&rbrack; tegelijkertijd.
+description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere middelen die beschikbaar zijn op de [DNL!] Assets View] tegelijkertijd.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Bulkmetagegevens bewerken in [!DNL Assets View]{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 Met de **[!DNL Bulk Metadata Edit]** mogelijkheid van [!DNL Assets View] kunt u een vooraf gedefinieerde set standaardmetagegevensvelden voor meerdere elementbestanden tegelijk bewerken. Selecteer meerdere elementen en bulksgewijs werk de vooraf gedefinieerde set standaardmetagegevens tegelijk bij in plaats van deze standaardmetagegevens voor elk element afzonderlijk bij te werken. Met deze functie blijven de efficiëntie, consistentie en nauwkeurigheid van de set standaardeigenschappen voor metagegevens in de grote sets elementen behouden, waardoor de doorzoekbaarheid en organisatie van deze elementen worden verbeterd.
 
@@ -65,7 +28,6 @@ Voer de volgende stappen uit om de metagegevens van meerdere elementen tegelijk 
    * **[!UICONTROL Keywords]:** voeg specifieke termijnen of tekstkoorden toe die een informatie op hoog niveau over de activa verstrekken om hun ontdekkingsbaarheid te verbeteren. Voeg een sleutelwoord toe en druk **ga** of **terugkeer** in om een ander sleutelwoord aan de lijst toe te voegen.
    * **[!UICONTROL Tags]:** klik ![ bulkmeta-gegevens uitgeven ](/help/assets/assets/tags-icon.svg) om markeringen van de beschikbare opties te selecteren. Tags bieden specifiekere informatie over de elementen en verbeteren de ontdekkingsmogelijkheden ervan. Labels die al zijn toegepast op de geselecteerde elementen, worden weergegeven in het deelvenster **[!UICONTROL Properties]** . Als u de relevante tags niet kunt vinden, maakt u deze en wijst u deze toe aan de geselecteerde elementen. Zie [ markeringen binnen beheren  [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) voor details bij het creëren van en het toewijzen van markeringen aan activa.
    * Klik op **[!UICONTROL Save]** om de bovenstaande updates van metagegevens toe te passen op de geselecteerde elementen. Als de gegevens voor **[!UICONTROL Status]** , **[!UICONTROL Expiration date]** en **[!UICONTROL Author]** eenmaal zijn opgeslagen, worden **[!UICONTROL Keywords]** en **[!UICONTROL Tags]** toegevoegd en worden de bestaande gegevens door de bijgewerkte details voor  ,  en  genegeerd.
-
      ![ sparen-bulk-meta-gegeven-geef-eigenschappen uit ](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]

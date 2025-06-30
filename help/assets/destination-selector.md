@@ -5,51 +5,14 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
 
 # Micro-front-bestemmingskiezer {#Overview}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
-        </td>
-    </tr>
-</table>
 
 Micro-Frontend de Selector van de Bestemming verstrekt een gebruikersinterface binnen uw toepassing die gemakkelijk met de [!DNL Experience Manager Assets as a Cloud Service] bewaarplaats integreert. U kunt zoeken naar of bladeren naar de juiste map in de [!DNL Experience Manager Assets as a Cloud Service] -opslagplaats en elementen van uw toepassing uploaden.
 
@@ -85,7 +48,7 @@ De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=nl-NL).
+* U integreert een [!DNL Adobe] toepassing op [ Verenigde Shell ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
 * Er is al een IMS-token gegenereerd voor verificatie.
 
 ## Vereisten {#prerequisites}
@@ -186,7 +149,7 @@ Voor een volledige lijst van eigenschappen en gedetailleerd voorbeeld, bezoek [ 
 
 In dit voorbeeld wordt getoond hoe u de doelkiezer kunt gebruiken met een niet-SUSI-flow wanneer u een [!DNL Adobe] -toepassing uitvoert onder Unified Shell of wanneer u `imsToken` al hebt gegenereerd voor verificatie.
 
-Omvat het pakket van de Selecteur van de Bestemming in uw code gebruikend de `script` markering, zoals aangetoond in _lijnen 6-15_ van het hieronder voorbeeld. Nadat het script is geladen, is de algemene variabele `PureJSSelectors` beschikbaar voor gebruik. Bepaal de Eigenschappen van de Selecteur van de Bestemming [&#128279;](#destination-selector-properties) zoals aangetoond in _lijnen 16-23_. De eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in niet-SUSI-stroom. De eigenschap `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Selector van de Bestemming terug te geven, roep de `renderDestinationSelector` functie zoals vermeld in _lijn 17_. De selecteur van de Bestemming wordt getoond in het `<div>` containerelement, zoals aangetoond in _lijnen 21 en 22_.
+Omvat het pakket van de Selecteur van de Bestemming in uw code gebruikend de `script` markering, zoals aangetoond in _lijnen 6-15_ van het hieronder voorbeeld. Nadat het script is geladen, is de algemene variabele `PureJSSelectors` beschikbaar voor gebruik. Bepaal de Eigenschappen van de Selecteur van de Bestemming [ ](#destination-selector-properties) zoals aangetoond in _lijnen 16-23_. De eigenschappen `imsOrg` en `imsToken` zijn beide vereist voor verificatie in niet-SUSI-stroom. De eigenschap `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Selector van de Bestemming terug te geven, roep de `renderDestinationSelector` functie zoals vermeld in _lijn 17_. De selecteur van de Bestemming wordt getoond in het `<div>` containerelement, zoals aangetoond in _lijnen 21 en 22_.
 
 Als u deze stappen uitvoert, kunt u de doelkiezer gebruiken met een niet-SUSI-stroom in de [!DNL Adobe] -toepassing.
 
@@ -219,7 +182,7 @@ Als u deze stappen uitvoert, kunt u de doelkiezer gebruiken met een niet-SUSI-st
 </html>
 ```
 
-Voor gedetailleerd voorbeeld, bezoek {het Voorbeeld van de Code van de Selecteur van de Bestemming 0} [&#128279;](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Voor gedetailleerd voorbeeld, bezoek {het Voorbeeld van de Code van de Selecteur van de Bestemming 0} ](https://github.com/adobe/aem-assets-selectors-mfe-examples).[
 
 ## Eigenschappen doelkiezer gebruiken {#destination-selector-properties}
 
@@ -240,13 +203,13 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 | *viewType* | string | Nee | | De eigenschap `viewType` wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
 | *viewTypeOptions* | string | Nee | | Deze eigenschap is gerelateerd aan de eigenschap `viewType` . u kunt een of meer weergaven opgeven om elementen weer te geven. Beschikbare viewTypeOptions zijn: Lijstweergave, Rasterweergave, Galerieweergave, Watervalweergave en Boomweergave. |
 | *itemNameFormatter* | string | Nee | | Met deze eigenschap kunt u de itemnaam opmaken |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde aangepaste waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Om de opheffing uit te voeren, moet u een geldig [&#128279;](https://formatjs.io/docs/react-intl/api/#message-descriptor) voorwerp van de Beschrijver van het Bericht  tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen gelokaliseerde aangepaste waarden kunt doorgeven via de `i18nSymbols` -proxy. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Om de opheffing uit te voeren, moet u een geldig ](https://formatjs.io/docs/react-intl/api/#message-descriptor) voorwerp van de Beschrijver van het Bericht [ tot de sleutel van `i18nSymbols` overgaan die u wilt met voeten treden. |
 | *inlineAlertSetup* | string | Nee | | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
 | *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via de eigenschap `intl.locale` . Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> de gesteunde scènekoorden volgen [ ISO 639 - Codes ](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van de doelkiezer {#usage-examples}
 
-U kunt de Eigenschappen van de Selecteur van de Bestemming [&#128279;](#destination-selector-properties) in het `index.html` dossier bepalen om de vertoning van de Selecteur van de Bestemming binnen uw toepassing aan te passen.
+U kunt de Eigenschappen van de Selecteur van de Bestemming [ ](#destination-selector-properties) in het `index.html` dossier bepalen om de vertoning van de Selecteur van de Bestemming binnen uw toepassing aan te passen.
 
 ### Voorbeeld 1: Een map maken in de doelkiezer
 
@@ -306,7 +269,7 @@ Hiermee kunt u als [!DNL Cloud Service] een map maken in de doelmap van de [!DNL
 Met de optie Doelselectie kunt u het element in vier verschillende weergaven weergeven:
 
 * ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**]: De lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* ![&#128279;](assets/do-not-localize/grid-view.png) [!UICONTROL **de Mening van het Net**] van de netmening &lbrace;: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
+* ](assets/do-not-localize/grid-view.png) [!UICONTROL **de Mening van het Net**] van de netmening {: De netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.![
 * ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**]: De galeriemening toont dossiers of omslagen in een centrum-gesloten horizontale lijst.
 * ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Mening van de Waterval**]: De watervalmening toont dossiers of omslagen in de vorm van een Bridge.
 
