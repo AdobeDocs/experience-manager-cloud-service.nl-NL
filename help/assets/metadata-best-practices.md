@@ -20,7 +20,7 @@ experience manager metadata-->
 
 Om uw bedrijf te laten opvallen en meer klanten aan te trekken, is het van cruciaal belang gebruik te maken van beelden, video&#39;s en andere digitale middelen van hoge kwaliteit. Hiervoor hebt u een proces nodig waarmee u metagegevens kunt toevoegen aan alle digitale elementen, zodat u deze gemakkelijk kunt doorzoeken. Metagegevens zijn de gegevens die essentiële gegevens bevatten over digitale elementen, zoals de naam, het type, de locatie in een opslagplaats, de gewijzigde datum en de bijbehorende tags. Metagegevens stroomlijnen het middelenbeheer, verbeteren de doorzoekbaarheid en toegankelijkheid en zorgen voor een effectieve versiebeheersing.
 
-Leer hoe te om meta-gegevens in het Digitale systeem van het Beheer van Activa te gebruiken (DAM) om meta-gegevens van uw digitale activa ](manage-metadata.md) effectief te beheren.[
+Leer hoe te om meta-gegevens in het Digitale systeem van het Beheer van Activa te gebruiken (DAM) om meta-gegevens van uw digitale activa [&#128279;](manage-metadata.md) effectief te beheren.
 
 ## Typen metagegevens
 

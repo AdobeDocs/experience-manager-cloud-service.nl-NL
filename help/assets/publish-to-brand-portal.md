@@ -32,8 +32,8 @@ Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzame
 >[!NOTE]
 >
 >Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
->>Assets moet in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
->> Voor [!DNL Experience Manager Assets] als a [!DNL Cloud Service], is de overdrachtsnelheid die onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
+>&#x200B;>Assets moet in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
+>&#x200B;> Voor [!DNL Experience Manager Assets] als a [!DNL Cloud Service], is de overdrachtsnelheid die onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
 
 ## Elementen publiceren naar Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +93,12 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 >
 > * Het bestaande gebruikersonderdeel van de groep DAM-Users heeft leestoegang op het pad &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
 > * De nieuwe gebruikers (of gebruikers die geen beheerder zijn) hebben de volgende rechten nodig om op het merkportaal te publiceren.
->   > Paden:
->   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   >`/libs : jcr:read`
->   >`/conf : jcr:read`
->   >`/content : jcr:read, crx:replicate`
->   >`/content/dam/ : jcr:read,modify, crx:replicate`
+>   &#x200B;> Paden:
+>   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   &#x200B;>`/libs : jcr:read`
+>   &#x200B;>`/conf : jcr:read`
+>   &#x200B;>`/content : jcr:read, crx:replicate`
+>   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 

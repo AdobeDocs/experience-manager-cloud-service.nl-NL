@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Voorbeelden voor het gebruik van de eigenschappen van Asset Selector {#usage-examples}
 
-U kunt de Eigenschappen van de Selecteur van Activa [ ](/help/assets/asset-selector-properties.md) in het **index.html** dossier bepalen om de vertoning van de Selecteur van Activa binnen uw toepassing aan te passen.
+U kunt de Eigenschappen van de Selecteur van Activa [&#128279;](/help/assets/asset-selector-properties.md) in het **index.html** dossier bepalen om de vertoning van de Selecteur van Activa binnen uw toepassing aan te passen.
 
 ## Voorbeeld 1: Kiezer voor bedrijfsmiddelen in spoorwegweergave
 

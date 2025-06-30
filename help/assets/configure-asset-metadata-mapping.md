@@ -91,6 +91,7 @@ U kunt als volgt metagegevenstoewijzing configureren met een nieuw metagegevensf
    1. Geef `Project Name` op in het veld **[!UICONTROL Field Label]** .
 
    1. Geef `./jcr:content/metadata/wm:projectName` op in het veld **[!UICONTROL Map to property]** . Gebruik als richtlijn de volgende sjabloon om de veldtoewijzingen in Experience Manager Assets te definiëren:
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Tijdens het configureren van toewijzingen in Workfront, hebt u het veld `wm:projectName` Experience Manager Assets toegewezen aan Project > Naam Workfront.

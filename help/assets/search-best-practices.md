@@ -30,7 +30,7 @@ In de **mening van Assets**, is de onderzoeksbar zichtbaar op de bovenkant en ka
 
 **Scenario 1: Voer een basisonderzoek uit gebruikend a `classic car` als onderzoekssleutelwoord.**
 
-Het sleutelwoordonderzoek is niet case-sensitive en is een full-text onderzoek over de meta-gegevensgebieden die in het volledige de tekstonderzoek van Activa *index van 0} inbegrepen zijn (configureerbaar in de indexdefinitie).* Als meer dan één sleutelwoord wordt gebruikt, **EN is de standaardexploitant tussen de sleutelwoorden, aldus, overweegt het een onderzoek naar &quot;klassieke auto&quot;om &quot;klassieke EN auto&quot;te zijn**.
+Het sleutelwoordonderzoek is niet case-sensitive en is een full-text onderzoek over de meta-gegevensgebieden die in het volledige de tekstonderzoek van Activa *index van 0&rbrace; inbegrepen zijn (configureerbaar in de indexdefinitie).* Als meer dan één sleutelwoord wordt gebruikt, **EN is de standaardexploitant tussen de sleutelwoorden, aldus, overweegt het een onderzoek naar &quot;klassieke auto&quot;om &quot;klassieke EN auto&quot;te zijn**.
 
 De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. De weergavevolgorde van zoekresultaten is bij benadering:
 

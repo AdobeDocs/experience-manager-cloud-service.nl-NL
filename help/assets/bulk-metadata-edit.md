@@ -1,6 +1,6 @@
 ---
 title: Bulkmetagegevens bewerken in  [!DNL Assets View]
-description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere middelen die beschikbaar zijn op de [DNL!] Assets View] tegelijkertijd.
+description: Leer hoe u een vooraf gedefinieerde set standaardmetagegevensvelden kunt bijwerken voor meerdere middelen die beschikbaar zijn op de [!DNL !] Assets View&rbrack; tegelijkertijd.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
@@ -28,6 +28,7 @@ Voer de volgende stappen uit om de metagegevens van meerdere elementen tegelijk 
    * **[!UICONTROL Keywords]:** voeg specifieke termijnen of tekstkoorden toe die een informatie op hoog niveau over de activa verstrekken om hun ontdekkingsbaarheid te verbeteren. Voeg een sleutelwoord toe en druk **ga** of **terugkeer** in om een ander sleutelwoord aan de lijst toe te voegen.
    * **[!UICONTROL Tags]:** klik ![ bulkmeta-gegevens uitgeven ](/help/assets/assets/tags-icon.svg) om markeringen van de beschikbare opties te selecteren. Tags bieden specifiekere informatie over de elementen en verbeteren de ontdekkingsmogelijkheden ervan. Labels die al zijn toegepast op de geselecteerde elementen, worden weergegeven in het deelvenster **[!UICONTROL Properties]** . Als u de relevante tags niet kunt vinden, maakt u deze en wijst u deze toe aan de geselecteerde elementen. Zie [ markeringen binnen beheren  [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) voor details bij het creëren van en het toewijzen van markeringen aan activa.
    * Klik op **[!UICONTROL Save]** om de bovenstaande updates van metagegevens toe te passen op de geselecteerde elementen. Als de gegevens voor **[!UICONTROL Status]** , **[!UICONTROL Expiration date]** en **[!UICONTROL Author]** eenmaal zijn opgeslagen, worden **[!UICONTROL Keywords]** en **[!UICONTROL Tags]** toegevoegd en worden de bestaande gegevens door de bijgewerkte details voor  ,  en  genegeerd.
+
      ![ sparen-bulk-meta-gegeven-geef-eigenschappen uit ](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]

@@ -15,7 +15,7 @@ Als beheerder kunt u het metagegevensformulier bewerken en het veld voor de elem
 
 Voer de volgende stappen uit:
 
-1. Bewerk het metagegevensformulier om een nieuw tekstveld op te nemen waarin de licentiegegevens worden opgenomen. Wijs het tekstveld toe aan de eigenschap `dc:license` . Voor meer informatie over hoe te om gebieden aan een meta-gegevensvorm toe te voegen en eigenschappen te bepalen, zie {de Meta-gegevens van de Opstelling Forms ](/help/assets/metadata-assets-view.md#metadata-forms).[
+1. Bewerk het metagegevensformulier om een nieuw tekstveld op te nemen waarin de licentiegegevens worden opgenomen. Wijs het tekstveld toe aan de eigenschap `dc:license` . Voor meer informatie over hoe te om gebieden aan een meta-gegevensvorm toe te voegen en eigenschappen te bepalen, zie &lbrace;de Meta-gegevens van de Opstelling Forms [&#128279;](/help/assets/metadata-assets-view.md#metadata-forms).
    ![ zip extractie ](/help/assets/assets/metadata-form-edit.png)
 1. Pas het metagegevensformulier toe op de elementmap om de instellingen in stap 1 toe te passen. Voor informatie over hoe te om een meta-gegevensvorm aan de activaomslag toe te wijzen, zie [ meta-gegevensvorm aan een omslag ](/help/assets/metadata-assets-view.md#metadata-forms) toewijzen.
 1. [De PDF met licentie goedkeuren](/help/assets/manage-organize-assets-view.md#set-asset-status)

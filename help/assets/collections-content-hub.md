@@ -34,7 +34,7 @@ Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middele
 
 ## Verzamelingen maken{#create-collections}
 
-U kunt verkiezen om een nieuwe inzameling ](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.[
+U kunt verkiezen om een nieuwe inzameling [&#128279;](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.
 
 ### Een nieuwe verzameling maken{#create-new-collection}
 

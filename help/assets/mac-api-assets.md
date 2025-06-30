@@ -52,7 +52,7 @@ Voor meer informatie, zie [ de steun van de Fragmenten van de Inhoud in  [!DNL E
 
 ## Onderzoek het gegevensmodel {#data-model}
 
-De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en standaardactiva. Het biedt ook gedetailleerde elementen voor aangepaste gegevensmodellen die in Inhoudsfragmenten worden gebruikt. Zie Gegevensmodellen van inhoudsfragmenten voor meer informatie. Zie {de gegevensmodellen van het Fragment van 0} Inhoud ](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor verdere informatie.[
+De [!DNL Assets] HTTP API stelt hoofdzakelijk twee elementen bloot: omslagen en standaardactiva. Het biedt ook gedetailleerde elementen voor aangepaste gegevensmodellen die in Inhoudsfragmenten worden gebruikt. Zie Gegevensmodellen van inhoudsfragmenten voor meer informatie. Zie {de gegevensmodellen van het Fragment van 0} Inhoud [&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor verdere informatie.
 
 >[!NOTE]
 >

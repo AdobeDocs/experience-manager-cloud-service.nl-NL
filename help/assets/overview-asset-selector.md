@@ -162,9 +162,9 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
 * ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* ](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.![
+* ![&#128279;](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
 * ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
-* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** ] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** &#x200B;] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
 
 ### Gegevens en metagegevens van middelen {#asset-details-and-metadata}
 

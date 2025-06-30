@@ -34,6 +34,7 @@ Ondersteuning voor externe middelen die gebruik maken van Dynamic Media met Open
 * Opstelling de volgende [ milieuvariabelen ](/help/implementing/cloud-manager/environment-variables.md#add-variables) voor AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` verwijst naar de programma-id <br>
      `eYYYY` verwijst naar de milieu-id
 
@@ -90,7 +91,7 @@ Met Dynamic Media met OpenAPI-mogelijkheden hebt u toegang tot de middelen die b
 Voer de onderstaande stappen uit om externe middelen te gebruiken in de AEM Page Editor op uw AEM Sites-exemplaar. U kunt deze integratie uitvoeren in AEM as a Cloud Service en AEM 6.5.
 
 1. Ga naar **[!UICONTROL Sites]** > _uw website_ waar AEM **[!UICONTROL Page]** aanwezig is waarin u het verre activa moet toevoegen.
-1. Selecteer de pagina en klik **[!UICONTROL Edit (_e _)]**. De AEM **[!UICONTROL Page Editor]**wordt geopend.
+1. Selecteer de pagina en klik **[!UICONTROL Edit (_e _)]**. De AEM **[!UICONTROL Page Editor]**&#x200B;wordt geopend.
 1. Klik op de container voor lay-out en voeg een component **[!UICONTROL Image]** toe.
 1. Klik de **[!UICONTROL Image]** component en klik ![ montagespictogram ](/help/assets/assets/do-not-localize/settings-icon.svg) pictogram.
 1. Schakel de optie **[!UICONTROL Inherit featured image from page]** uit.

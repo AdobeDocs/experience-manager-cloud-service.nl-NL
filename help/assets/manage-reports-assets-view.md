@@ -50,6 +50,7 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
    1. **Beschrijving:** voeg een facultatieve beschrijving aan het rapport toe.
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om het rapport van geupload en gedownloade activa binnen die specifieke omslag te produceren. Als u bijvoorbeeld het rapport met middelen nodig hebt die naar een map zijn geüpload, geeft u het pad naar die map op.
    1. **Uitgezochte datuminterval:** selecteer de datumwaaier om te bekijken uploadt of downloadactiviteit binnen de omslag.
+
    <br>
 
    >[!NOTE]
@@ -202,9 +203,10 @@ Volg onderstaande stappen om een rapport te plannen:
    1. **Beschrijving**: Voeg een facultatieve beschrijving aan het rapport toe.
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om een rapport voor activa te produceren die aan of van die specifieke omslag in de toekomst zullen worden geupload.
    1. Wissel **rapport van het Programma:** Wissel om het rapport voor een recentere tijd of voor zijn herhaalde voorkomen te plannen.
+
       ![ planningsrapport ](/help/assets/assets/schedule-reports1.svg)
 
-   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde type activiteit in de AEM-omgeving. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1} gebied van het datuminterval {.**
+   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde type activiteit in de AEM-omgeving. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1&rbrace; gebied van het datuminterval &lbrace;.**
 
    >[!NOTE]
    >

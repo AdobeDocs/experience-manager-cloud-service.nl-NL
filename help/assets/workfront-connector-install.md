@@ -32,7 +32,7 @@ Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL
 >
 >* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, zie stap 5 (a) van [ verbeterde instructies van de schakelaarinstallatie ](workfront-connector-install.md).
 >
->* Zie [ de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar ](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen ](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).[
+>* Zie [ de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar ](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen [&#128279;](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 Volg de volgende stappen voordat u de aansluiting installeert:
 
@@ -52,7 +52,7 @@ Volg de volgende stappen voordat u de aansluiting installeert:
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. Zorg ervoor dat de volgende overlays niet bestaan in de [!DNL Experience Manager] -opslagplaats. Als u bestaande overlays op deze paden hebt, moet u de overlays verwijderen of de delta van wijzigingen tussen de twee overlays samenvoegen:
