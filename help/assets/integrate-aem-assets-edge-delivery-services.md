@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ![ de activa van AEM integratie met Universele redacteur ](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services] ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u ontwerpt en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend  [!DNL Universal Editor]  evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[[!DNL Edge Delivery Services] ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u ontwerpt en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend  [!DNL Universal Editor]  evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 U kunt inhoud bewerken in:
 
@@ -54,7 +54,7 @@ U kunt ook elementen gebruiken die met [!DNL Dynamic Media with OpenAPI capabili
 * Rijke media optimalisering en levering, zoals adaptieve video die uit-van-de-doos, en originele levering van activa voor PDFs stroomt.
 * Het activa-vlakke beeld rapporteert ([ beperkte beschikbaarheid ](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
-Voor meer details over de mogelijkheden, zie [[!DNL Dynamic Media with OpenAPI capabilities] ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentatie.
+Voor meer details over de mogelijkheden, zie [[!DNL Dynamic Media with OpenAPI capabilities] ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentatie.
 
 ### Vereisten {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 

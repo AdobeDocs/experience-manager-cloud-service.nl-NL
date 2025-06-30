@@ -17,14 +17,14 @@ Met [!UICONTROL Experience Manager Assets as a Cloud Service] kunt u de versie v
 
 >[!TIP]
 >
->Zoekt u naar [!DNL Workfront for Experience Manager enhanced connector] updatedocumentatie voor AEM 6.5? Klik [ hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>Zoekt u naar [!DNL Workfront for Experience Manager enhanced connector] updatedocumentatie voor AEM 6.5? Klik [ hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=nl-NL##update-enhanced-connector-for-workfront).
 
 
 Ga als volgt te werk om [!DNL Workfront for Experience Manager enhanced connector] bij te werken naar de meest recente versie:
 
 1. Download de recentste versie van de verbeterde schakelaar van [ de Distributie van de Software van Adobe ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [ Toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
+1. [ Toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=nl-NL) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
 
 1. Open de gekloonde Experience Manager as a Cloud Service-opslagplaats met een IDE van uw keuze.
 
@@ -85,4 +85,4 @@ Ga als volgt te werk om [!DNL Workfront for Experience Manager enhanced connecto
 
 1. Breng de wijzigingen aan in de repository.
 
-1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.

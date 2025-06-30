@@ -47,7 +47,7 @@ De systeemeigen PDF Doc Cloud-viewer heeft de volgende componenten in AEM Assets
 
 In Adobe Experience Manager Assets kunt u een voorbeeld van een PDF-document bekijken dat uit meerdere pagina&#39;s bestaat. Neem de volgende stappen om een voorvertoning weer te geven van meerdere pagina&#39;s van een PDF-document:
 
-1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en) te uploaden.
+1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL) te uploaden.
 1. Blader naar het PDF-document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. De PDF-documentviewer wordt standaard geladen. U kunt ook PDF-uitvoering selecteren onder het deelvenster Vertoning.
@@ -126,7 +126,7 @@ Naast de PDF-documenten kunt u ook meerdere pagina&#39;s voorvertonen voor docum
 
 Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van andere ondersteunde documentindelingen:
 
-1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en) te uploaden.
+1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=nl-NL) te uploaden.
 1. Blader naar het document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. Selecteer PDF onder het statische gedeelte in het linkerdeelvenster. In het rechterdeelvenster ziet u de voorvertoning van meerdere pagina&#39;s van een element. Selecteer een miniatuur in het linkerdeelvenster om de pagina te kiezen waarvan u een voorvertoning wilt weergeven.

@@ -62,7 +62,7 @@ Integreer AEM Assets met Document-based Authoring voor Edge Delivery Services zo
 
 ## Integratie met Adobe Journey Optimizer {#integration-with-ajo}
 
-[ Adobe Journey Optimizer ](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) vereenvoudigt reisbeheer voor klanten om omnichannel campagnes van intelligente besluitvorming en inzichten te voorzien. Bij het ontwerpen van berichten met Journey Optimizer hebt u rechtstreeks vanuit de Journey Optimizer-interface toegang tot de Assets as a Cloud Service-gegevensopslagruimte. Gebruikers krijgen toegang tot elementen via de ingesloten gebruikersinterface van Experience Manager Assets. Voor meer informatie, zie [ activa met Experience Manager Assets ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html) creëren en beheren.
+[ Adobe Journey Optimizer ](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) vereenvoudigt reisbeheer voor klanten om omnichannel campagnes van intelligente besluitvorming en inzichten te voorzien. Bij het ontwerpen van berichten met Journey Optimizer hebt u rechtstreeks vanuit de Journey Optimizer-interface toegang tot de Assets as a Cloud Service-gegevensopslagruimte. Gebruikers krijgen toegang tot elementen via de ingesloten gebruikersinterface van Experience Manager Assets. Voor meer informatie, zie [ activa met Experience Manager Assets ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=nl-NL) creëren en beheren.
 
 ## Nieuwe Assets-mogelijkheden {#whats-new-assets}
 

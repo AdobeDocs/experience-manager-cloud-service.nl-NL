@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve Adobe-oplossingen. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
@@ -118,7 +118,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Klik op **[!UICONTROL Done]** nadat [!DNL Experience Manager] de rapportsuite heeft ingesteld.
 
-Voor meer informatie, zie {de Diensten van het Web van 0} Adobe Analytics [&#128279;](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
+Voor meer informatie, zie {de Diensten van het Web van 0} Adobe Analytics [&#128279;](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=nl-NL#api-access-information).
 
 ### Paginanummer {#page-tracker}
 

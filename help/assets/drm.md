@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Digitale middelen zijn vaak gekoppeld aan een licentie waarin de gebruiksvoorwaarden en -duur zijn vastgelegd. Met het [!DNL Experience Manager] -platform kunt u op efficiënte wijze informatie over het verlopen van bedrijfsmiddelen en licentiegegevens beheren.

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Experience Manager Assets] houdt metagegevens bij voor elk element. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid om metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets] , kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
@@ -238,7 +238,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * CQ - Wordt gebruikt door [!DNL Experience Manager Assets] .
 * DAM - Wordt gebruikt door [!DNL Experience Manager Assets] .
 * DEX - [ de Optimale ontdekkingsreiziger van de Beschrijving van SC ](https://www.optimasc.com/products/dex/index.html) is een inzameling van hulpmiddelen voor meta-gegevens en dossierbeheer voor de werkende systemen van Vensters.
-* CRS - [ Ruwe Adobe Photoshop Camera ](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [ Ruwe Adobe Photoshop Camera ](https://helpx.adobe.com/nl/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom] .
 * MediaPro - [ iView MediaPro ](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto en MP - Microsoft Photo.

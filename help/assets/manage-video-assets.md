@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
@@ -410,7 +410,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 1. Selecteer **[!UICONTROL Save and Close]** in de rechterbovenhoek van de eigenschappenpagina van de video.
 1. Selecteer **[!UICONTROL Quick Publish]** op de werkbalk.
 
-   Zie ook [ het Beheer van de Publicatie van het Gebruik met Experience Manager Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
+   Zie ook [ het Beheer van de Publicatie van het Gebruik met Experience Manager Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=nl-NL#page-authoring).
 
    U kunt desgewenst de gepubliceerde video op uw YouTube-kanaal verifiëren.
 

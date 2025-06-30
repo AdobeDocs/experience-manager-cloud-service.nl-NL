@@ -15,7 +15,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Een gebruiker met beheerderstoegang in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] installeert de verbeterde schakelaar. Alvorens u installeert, herzie de platformsteun en andere [ eerste vereisten voor de schakelaar ](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
@@ -38,9 +38,9 @@ Volg de volgende stappen voordat u de aansluiting installeert:
 
 1. Als uw AEM as a Cloud Service-programma Advanced Networking heeft geconfigureerd en IP Allow-Listing heeft ingeschakeld, moet u de Workfront IP&#39;s toevoegen aan deze allow-list om het verzenden van abonnementen voor gebeurtenissen en verschillende API-aanroepen toe te staan om door te gaan naar AEM.
 
-   * [ de Cluster IPs van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL System]** > **[!UICONTROL Customer Info]** om het IP-cluster in [!DNL Workfront] te kennen.
+   * [ de Cluster IPs van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=nl-NL#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL System]** > **[!UICONTROL Customer Info]** om het IP-cluster in [!DNL Workfront] te kennen.
 
-   * [ Abonnement API IPs van de Gebeurtenis van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+   * [ Abonnement API IPs van de Gebeurtenis van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=nl-NL)
 
    >[!IMPORTANT]
    >
@@ -66,14 +66,14 @@ Volg de volgende stappen voordat u de aansluiting installeert:
 
 1. Deze installatie vereist de kennis om een Maven-project in [!DNL Experience Manager] in te stellen als een [!DNL Cloud Service] . Gebruik de volgende bronnen om te begrijpen hoe u een pakket van derden kunt opnemen in uw Maven-project:
 
-   * [ omvat derdepakket in uw Gemaakt project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
-   * [ opstellen met  [!DNL Cloud Manager] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
+   * [ omvat derdepakket in uw Gemaakt project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#including-third-party).
+   * [ opstellen met  [!DNL Cloud Manager] ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL).
 
 Voer de volgende stappen uit om de invoegtoepassing in [!DNL Experience Manager] als een [!DNL Cloud Service] te installeren:
 
 1. Download de verbeterde schakelaar van [ de Distributie van de Software van Adobe ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
-1. [ Toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
+1. [ Toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=nl-NL) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
 
 1. Open de gekloonde AEM as a Cloud Service-opslagplaats met een IDE van uw keuze.
 
@@ -136,7 +136,7 @@ Voer de volgende stappen uit om de invoegtoepassing in [!DNL Experience Manager]
 
 1. Breng de wijzigingen aan in de repository.
 
-1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL) op te stellen.
 
 1. Als u een systeemgebruikersconfiguratie wilt maken, maakt u `wf-workfront-users` in [!DNL Experience Manager] Gebruikersgroep en wijst u de machtiging `jcr:all` toe aan `/content/dam` . Er wordt automatisch een systeemgebruiker `workfront-tools` gemaakt en de vereiste machtigingen worden automatisch beheerd. Alle gebruikers van [!DNL Workfront] die de verbeterde connector gebruiken, worden automatisch toegevoegd als onderdeel van deze groep.
 

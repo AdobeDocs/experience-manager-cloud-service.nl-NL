@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets] -implementatie beoordelen. Met [!DNL Assets] kunt u verschillende rapporten genereren voor uw digitale elementen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die <!-- downloaded and --> worden gedeeld.
@@ -66,7 +66,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
 
    >[!NOTE]
    >
-   >Entitle zelf aan een **het productprofiel van de Beheerder van AEM** om a **te creëren download** rapport. Zie [ Toewijzend de Profielen van het Product van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) om zich aan een het productprofiel van de Beheerder van AEM toe te laten.
+   >Entitle zelf aan een **het productprofiel van de Beheerder van AEM** om a **te creëren download** rapport. Zie [ Toewijzend de Profielen van het Product van AEM ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) om zich aan een het productprofiel van de Beheerder van AEM toe te laten.
 
    ![ Uitgezochte rapporttype ](assets/choose_report.png)
 
