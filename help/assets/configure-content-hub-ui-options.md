@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1955'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,10 @@ Klik op de schakeloptie **[!UICONTROL Auto-approval]** als u alle elementen die 
 
 Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
 
-![ UI van de Configuratie uploadt details op Content Hub ](assets/configuration-ui-upload-details.png)
+![ UI van de Configuratie uploadt details op Content Hub ](/help/assets/assets/import-content-hub.png)
 
 Metagegevens die zijn ingeschakeld op de gebruikersinterfaceweergave van de configuratie op de pagina voor het uploaden van elementen:
-
-![ upload meta-gegevens op Content Hub ](assets/configuration-ui-add-assets.png)
+![ upload meta-gegevens op Content Hub ](assets/add-assets-for-approval.png)
 
 ### Filters {#configure-filters-content-hub}
 
@@ -120,12 +119,10 @@ Met Content Hub kunnen beheerders filters configureren die worden weergegeven te
    >Het nieuwe filter wordt alleen op de zoekpagina weergegeven als er ten minste één element in de opslagplaats aanwezig is dat voldoet aan de filtercriteria.
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elke beschikbare filter, om de etiketten uit te geven of het schrappingspictogram te klikken om het even welk bestaand filter te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
-
-![ filters UI van de Configuratie op Content Hub ](assets/configuration-ui-filters.png)
+![ filters UI van de Configuratie op Content Hub ](assets/configuration-filter.png)
 
 De filters die op de vertoning van het Gebruikersinterface van de Configuratie op de pagina van het Onderzoek worden toegelaten:
-
-![ Onderzoek op Content Hub ](assets/filters-for-search.png)
+![ Onderzoek op Content Hub ](assets/content-hub-filters.png)
 
 
 ### Gegevens van element {#configure-asset-details-content-hub}
@@ -143,25 +140,24 @@ U kunt ook de elementeigenschappen configureren die voor elk element worden weer
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elk beschikbaar bezit, om de etiketten uit te geven of het schrappingspictogram te klikken om het even welk bestaand activadetail te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
 
-![ de activadetails van de Configuratie UI op Content Hub ](assets/configuration-ui-asset-details.png)
+![ de activadetails van de Configuratie UI op Content Hub ](assets/configuration-asset-details.png)
 
 De eigenschappen die op de vertoning van het Gebruikersinterface van de Configuratie op de pagina van de Details van Activa worden toegelaten:
 
-![ eigenschappen van Activa op Content Hub ](assets/config-ui-asset-properties.png)
+![ eigenschappen van Activa op Content Hub ](assets/asset-details-page-content-hub.png)
 
 ### Asset Card {#asset-card}
 
-U kunt de zeer belangrijke meta-gegevensgebieden ook vormen die u op de **Kaart van Activa** tot een maximum van 6 gebieden moet tonen. Voer daartoe de volgende stappen uit:
-
-![ zeer belangrijke meta-gegevens op de Kaart van Activa ](/help/assets/assets/asset-card-key-metadata.png)
+U kunt de zeer belangrijke meta-gegevenseigenschappen ook vormen die u op de **Kaart van Activa** tot een maximum van 6 gebieden moet tonen.
+![ zeer belangrijke meta-gegevens op de Kaart van Activa ](/help/assets/assets/asset-card-metadata.png)
+Voer de volgende stappen uit om de eigenschappen van meta-gegevens te vormen om hen op **[!UICONTROL Asset card]** te tonen:
 
 1. Op het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **Kaart van Activa**.
 2. Klik **toevoegen meta-gegevens**. **voegt de meta-gegevens van de activakaart** vertoningen van de dialoogdoos toe.
 3. Specificeer de meta-gegevensnaam op het **gebied van het Etiket** en selecteer een meta-gegevensbezit op het **Meta-gegevens** gebied.
 4. Klik **bevestigen** en klik dan **sparen** om de veranderingen toe te passen zodat de nieuwe bezitsvertoning op de pagina van activadetails.
-   ![ activakaart ](/help/assets/assets/asset-card.png)
-
-Op dezelfde manier geeft de klik ![ ](/help/assets/assets/edit-content-hub.svg) uit die naast elk beschikbaar bezit beschikbaar is, om het even welke vereiste wijzigingen te maken of ![ schrapping ](/help/assets/assets/delete-content-hub.svg) te klikken om het even welk bestaand meta-gegevensbezit te schrappen. Klik **sparen** na het aanbrengen van alle wijzigingen om de veranderingen toe te passen.
+   ![ activakaart ](/help/assets/assets/configuration-asset-card.png)
+Op dezelfde manier geeft de klik ![ uit ](/help/assets/assets/edit-content-hub.svg) dat naast elk beschikbaar bezit beschikbaar is, om het even welke vereiste wijzigingen te maken of ![ schrapping ](/help/assets/assets/delete-content-hub.svg) te klikken om het even welk bestaand meta-gegevensbezit te schrappen. Klik **sparen** na het aanbrengen van alle wijzigingen om de veranderingen toe te passen.
 
 ### Zoeken {#configure-metadata-search-content-hub}
 
@@ -174,11 +170,13 @@ Beheerders kunnen de metagegevensvelden definiëren die worden doorzocht wanneer
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen, zodat de nieuwe eigenschap metadata wordt weergegeven in de lijst met metagegevensvelden.
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elk beschikbaar meta-gegevensbezit, om het bezit uit te geven of het schrappingspictogram te klikken om het even welk bestaand bezit te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
-![ Onderzoek UI van de Configuratie op Content Hub ](assets/configuration-ui-metadata-search.png)
+![ Onderzoek UI van de Configuratie op Content Hub ](assets/configuration-search.png)
 
 ### Branding {#configure-branding-content-hub}
 
-Als beheerder past u uw [!DNL Content Hub] -portal aan uw vereisten voor branding aan. Voor ![ het Branding ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** paginanummer gebruikt **[!UICONTROL Banner]**, **[!UICONTROL Colors]** en **[!UICONTROL Banner image]** secties om de volgende aanpassingen uit te voeren:
+Als beheerder past u uw [!DNL Content Hub] -portal aan uw vereisten voor branding aan.
+![ teruggestelde gebrek ](/help/assets/assets/reset-default-content-hub.png)
+Voor ![ het Branding ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** paginanummer gebruikt **[!UICONTROL Banner]**, **[!UICONTROL Colors]** en **[!UICONTROL Banner image]** secties om de volgende aanpassingen uit te voeren:
 
 1. [De bannerafbeelding wijzigen vanuit de sectie [!UICONTROL Banner image]](#Change-the-banner-image)
 1. [Werk de titel en de platte tekst op de banner bij en wijzig de tekstkleur vanuit de sectie [!UICONTROL Banner] .](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
@@ -192,21 +190,23 @@ Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Brand
 
 1. Klik ![ uitgezochte beeld ](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** om een bannerbeeld te selecteren gebruikend de doos van de activaselecteur. De elementenkiezer geeft alleen goedgekeurde afbeeldingen weer.
 1. Selecteer de afbeelding, klik op **[!UICONTROL Select]** en klik vervolgens op **[!UICONTROL Save]** om deze weer te geven als de bannerafbeelding van uw [!DNL Content Hub] -implementatie.
+   ![ bannerbeeld ](/help/assets/assets/banner-image-content-hub.png)
 
 #### Voeg titel en lichaamstekst aan uw banner toe en verander de tekstkleur{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** pagina, gebruik de respectieve gebieden in de **[!UICONTROL Banner]** sectie om titel en lichaamsteksten aan uw banner toe te voegen.
 Klik op het vakje naast de **[!UICONTROL Banner text color]** om een tekstkleur te selecteren in de kleurkiezer voor de bannertekst of geef de hexadecimale code van de kleur op in het veld naast het vak van de kleurkiezer.
+![ hub van de tekstinhoud van de banner ](/help/assets/assets/banner-text-content-hub.png)
 
 #### De primaire en secundaire kleur wijzigen{#Change-the-primary-and-secondary-color}
 
 Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** pagina, gebruik de **[!UICONTROL Colors]** sectie om primaire en secundaire kleuren te plaatsen door of hen te selecteren gebruikend kleurenplukker of het bepalen van de hexadecimale code van de kleur. Met deze kleuren worden de achtergrond-, tekst- en pictogramkleuren van UI-elementen zo ingesteld dat de gebruikersinterface van [!DNL Content Hub] wordt uitgelijnd op het thema van uw merk.
-
-**[!UICONTROL Primary color]:** Het primaire kleurenschema is van toepassing op selectiehandelingen, interactieve elementen zoals selectievakjes, zoekbalken en schakelbare schakelopties [!DNL Content Hub] inclusief [!DNL Content Hub] startpagina en [!UICONTROL Configuration] pagina. De klasse is ook van toepassing op actieopties die beschikbaar zijn op primaire [!DNL Content Hub] -interfaces, zoals opties die beschikbaar zijn op **[!UICONTROL All Assets]** - en **[!UICONTROL Collections]** -pagina&#39;s.
+![ primaire en secundaire kleur ](/help/assets/assets/primary-secondary-color-content-hub.png)
+**[!UICONTROL Primary color]:** Het primaire kleurenschema is van toepassing op selectiehandelingen, interactieve elementen zoals selectievakjes, zoekbalken en schakelbare schakelopties over [!DNL Content Hub] , waaronder [!DNL Content Hub] homepage en [!UICONTROL Configuration] pagina. De klasse is ook van toepassing op actieopties die beschikbaar zijn op primaire [!DNL Content Hub] -interfaces, zoals opties die beschikbaar zijn op **[!UICONTROL All Assets]** - en **[!UICONTROL Collections]** -pagina&#39;s.
 
 **[!UICONTROL Secondary color]:** Op de [!DNL Content Hub] startpagina is het secundaire kleurenschema van toepassing op UI-opties en invoervelden die beschikbaar zijn in dialoogvensters. Deze is van toepassing op alle opties in configuratiemenu die beschikbaar zijn op de pagina van [!UICONTROL Configuration] , met uitzondering van selectiehandelingen, selectievakjes, zoekbalken en schakelopties.
 
-### Verlopen activa{#expired-assets-content-hub}
+### Zichtbaarheid van element{#asset-visibility-content-hub}
 
 Beheerders kunnen bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
 
@@ -214,15 +214,15 @@ Verlopen elementen worden standaard niet weergegeven in Content Hub.
 
 Voer daartoe de volgende stappen uit:
 
-1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Expired Assets]**.
+1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Asset Visibility]**.
 
 1. Schakel in de sectie **[!UICONTROL Visible]** de schakeloptie **[!UICONTROL Allow users to view expired assets]** in om alle verlopen elementen zichtbaar te maken op Content Hub.
 
 1. Nadat u de zichtbaarheid van elementen hebt ingeschakeld, kunt u de mogelijkheid om verlopen elementen te downloaden in- of uitschakelen met de schakeloptie **[!UICONTROL Allow users to download expired assets]** .
-
+1. Schakel de schakeloptie **[!UICONTROL Allow users to view assets approved for delivery]** in om alle elementen weer te geven die zijn goedgekeurd voor levering in Content Hub.
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
-   ![ Verlopen activa op Content Hub ](assets/expired-assets-content-hub.png)
+   ![ Verlopen activa op Content Hub ](assets/asset-visibility-content-hub.png)
 
 Nadat u de zichtbaarheid van elementen hebt ingeschakeld, kunt u de verlopen elementen op Content Hub weergeven, zoals in de volgende afbeelding wordt getoond:
 
@@ -234,7 +234,7 @@ Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hu
 
 ### Uitvoeringen {#renditions-content-hub}
 
-Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Voer daartoe de volgende stappen uit:
 
@@ -244,7 +244,7 @@ Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options
 
 * Schakel **[!UICONTROL Allow users to download original assets]** in of uit om te bepalen of de oorspronkelijke elementen kunnen worden gedownload.
 
-  ![ vorm vertoningen op Content Hub ](assets/config-renditions.png)
+  ![ vorm vertoningen op Content Hub ](assets/configuration-renditions.png)
 
 Voor informatie over hoe te om vertoningen in Content Hub te bekijken en te downloaden, zie [ downloadactiva in Content Hub ](/help/assets/download-assets-content-hub.md).
 
@@ -263,11 +263,9 @@ U kunt ook aangepaste tabbladen toevoegen naast de standaardtabbladen **[!UICONT
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
 Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elke URL, om de verbindingen uit te geven of het schrappingspictogram te klikken om het even welke bestaande URL te schrappen. Klik op **[!UICONTROL Save]** nadat u alle wijzigingen hebt aangebracht om de wijzigingen toe te passen.
-
-![ Verbindingen van de Douane UI van de Configuratie UI op Content Hub ](assets/configuration-ui-custom-links.png)
+![ Verbindingen van de Douane UI van de Configuratie UI op Content Hub ](assets/configuration-custom-links.png)
 
 De aangepaste koppeling wordt weergegeven als een nieuw tabblad naast het tabblad Inzichten op de startpagina van Content Hub.
-
 ![ UI van de Configuratie de lusjes van de Verbindingen van de Douane op Content Hub ](assets/configuration-ui-custom-link-tab.png)
 
 ### Verzamelingen en delen {#configure-collections-content-hub}
