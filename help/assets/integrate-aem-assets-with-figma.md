@@ -4,12 +4,13 @@ description: Leer om  [!DNL AEM Assets]  met  [!DNL Figma]  te integreren om tot
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
 
 ---
+
 
 # [!DNL AEM Assets] integreren met [!DNL Figma]{#integrate-aem-assets-with-figma}
 
@@ -26,20 +27,20 @@ ht-degree: 0%
 Voer de volgende stappen uit om toegang te krijgen tot [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] :
 
 1. Klik op de startpagina van [!DNL Figma] op **[!UICONTROL Actions]** op de werkbalk onder aan het canvas en zoek naar [!DNL Adobe Experience Manager (AEM) Assets Connector] op de zoekbalk in het dialoogvenster.
-1. Selecteer [!DNL Adobe Experience Manager (AEM) Assets Connector] om het deelvenster [!DNL Adobe Experience Manager (AEM) Assets Connector] weer te geven.  [!DNL AEM]  activa van de Invoer [ &lbrace;in uw  [!DNL Figma]  canvas ](#import-aem-assets-into-figma-workflow) gebruikend dit paneel.
+1. Selecteer [!DNL Adobe Experience Manager (AEM) Assets Connector] om het deelvenster [!DNL Adobe Experience Manager (AEM) Assets Connector] weer te geven.  [!DNL AEM]  activa van de Invoer [ {in uw  [!DNL Figma]  canvas ](#import-aem-assets-into-figma-workflow) gebruikend dit paneel.
    ![ acties ](/help/assets/assets/actions-on-figma.png)
 U kunt ook de [[!DNL Adobe Experience Manager (AEM) Assets Connector] ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) beschikbare informatie over [!DNL Figma] -community openen, op **[!UICONTROL Open in...]** klikken, een recent bestand selecteren of een nieuw bestand maken en op **[!UICONTROL Run]** klikken om het deelvenster [!DNL Adobe Experience Manager (AEM) Assets Connector] te openen.
    ![ insteekmodule-pagina-op-beeld-gemeenschap ](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
 >
-> [ de Steun van Adobe van het Contact ](https://helpx.adobe.com/nl/contact.html) voor hulp als u een **[!UICONTROL Network Error]** bericht na het programma openen aan uw [!DNL AEM] milieu ziet.
+> [ de Steun van Adobe van het Contact ](https://helpx.adobe.com/contact.html) voor hulp als u een **[!UICONTROL Network Error]** bericht na het programma openen aan uw [!DNL AEM] milieu ziet.
 
 ## [!DNL AEM] -elementen importeren in [!DNL Figma] canvas{#import-aem-assets-into-figma-workflow}
 
 [ toegang [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] paneel ](#access-aem-assets-connector) binnen uw [!DNL Figma] ontwerpinterface en doe het volgende:
 
-1. Zoeken naar elementen in het deelvenster [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] . Voor meer informatie, zie [ gebruikend de Selecteur van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Zoeken naar elementen in het deelvenster [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] . Voor meer informatie, zie [ gebruikend de Selecteur van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Sleep het element naar het canvas of selecteer het element en klik op **[!UICONTROL Select]** om het element op het canvas te plaatsen.
 

@@ -5,7 +5,7 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 U kunt verschillende DAM-taken (Digital Asset Management) eenvoudig uitvoeren met de gebruikersvriendelijke interface van [!DNL Assets view] . Nadat u de elementen hebt toegevoegd, kunt u uw elementen zoeken, downloaden, verplaatsen, kopiëren, hernoemen, verwijderen, bijwerken en bewerken.
 
-Gebruik [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voeren. Wanneer u een element selecteert, worden de volgende opties bovenaan op de werkbalk weergegeven.
+Gebruik [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voeren. Als u een element selecteert, worden de volgende opties bovenaan op de werkbalk weergegeven.
 
 ![ de opties van de Toolbar wanneer u activa ](assets/toolbar-image-selected.png) selecteert
 
@@ -42,9 +42,9 @@ Gebruik [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voere
 
 * ![ schrappingspictogram ](assets/do-not-localize/delete-icon.png) schrapt de geselecteerde activa of de omslag.
 
-* ![&#128279;](assets/do-not-localize/copy-icon.png) Kopieer het pictogram van 0&rbrace; exemplaar het geselecteerde dossier of de omslag.
+* ](assets/do-not-localize/copy-icon.png) Kopieer het pictogram van 0} exemplaar het geselecteerde dossier of de omslag.![
 
-* ![&#128279;](assets/do-not-localize/move-icon.png) Beweeg het pictogram van de beweging 0&rbrace; &lbrace;het geselecteerde activa of de omslag naar een verschillende plaats in de bewaarplaatshiërarchie.
+* ](assets/do-not-localize/move-icon.png) Beweeg het pictogram van de beweging 0} {het geselecteerde activa of de omslag naar een verschillende plaats in de bewaarplaatshiërarchie.![
 
 * ![ anders noem pictogram ](assets/do-not-localize/rename-icon.png) noem het geselecteerde activa of de omslag anders. Gebruik een unieke naam anders ontbreekt het anders noemen met een waarschuwing. U kunt het opnieuw proberen met een nieuwe naam.
 Bovendien kunt u op de titel van een element of map klikken om de naam ervan te wijzigen. Vermelding de nieuwe tekst in **anders noemt Activa** textbox en klikt **sparen**. Deze mogelijkheid is beschikbaar in de raster-, galerie-, waterval- en lijstweergaven.
@@ -73,7 +73,7 @@ In [!DNL Assets view] worden alleen de relevante opties op de werkbalk weergegev
 
 ## Elementen downloaden en distribueren {#download}
 
-U kunt een of meer elementen of mappen of een combinatie van beide selecteren en de selectie naar uw lokale bestandssysteem downloaden. U kunt de elementen bewerken en opnieuw uploaden of de elementen buiten [!DNL Assets view] verspreiden. Ook, kunt u de vertoningen [&#128279;](/help/assets/add-delete-assets-view.md#renditions) van een activa  downloaden.
+U kunt een of meer elementen of mappen of een combinatie van beide selecteren en de selectie naar uw lokale bestandssysteem downloaden. U kunt de elementen bewerken en opnieuw uploaden of de elementen buiten [!DNL Assets view] verspreiden. Ook, kunt u de vertoningen ](/help/assets/add-delete-assets-view.md#renditions) van een activa [ downloaden.
 
 ## Asset versioning {#versions-of-assets}
 
@@ -231,11 +231,11 @@ Als u het metagegevensveld Vervaldatum aan het formulier wilt toevoegen, sleept 
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om activa in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=nl-NL)
+* [ bekijk een video om activa in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
 

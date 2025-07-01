@@ -3,7 +3,7 @@ title: Middelen downloaden van Content Hub
 description: Leer hoe u enkele of meerdere middelen en de bijbehorende uitvoeringen downloadt van de Content Hub-portal.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Leer meer over [ mening en beheer vertoningen in  [!DNL Experience Manager Asset
 
 * [ Dynamische vertoningen ](/help/assets/renditions.md#dynamic-renditions): De dynamische vertoningen zijn in real time, aangepaste versies van activa om diverse acties uit te voeren, zoals het resizing van beelden voor verschillende apparatenresoluties of het bebouwen om diverse aspectverhoudingen te passen. Met deze uitvoeringen kunt u persoonlijke en geoptimaliseerde ervaringen bieden voor bredere vereisten. Dynamische uitvoeringen van elementen worden gemaakt in de [!DNL Adobe Experience Manager Assets] -auteursomgeving. Voor informatie over stappen die worden vereist om Dynamische vertoningen toe te laten, zie [ Dynamische vertoningen ](#enable-dynamic-media-renditions) toelaten.
 
-* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe Sensei, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [ Slimme gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Het slimme gewas concentreert zich slechts op het essentiële deel van een activa tijdens het bebouwingsproces. Dynamic Media Smart snijdt kunstmatige intelligentie uit, aangedreven door Adobe Sensei, om het interessepunt bij te houden, zodat onze middelen er optimaal uitzien op alle schermgrootten. [!DNL Adobe Experience Manager] Met Slim uitsnijden worden de breedte en hoogte van een element en de titel weergegeven. Zie meer bij [ gebruikend Slimme Uitsnede met de Dynamische Media van AEM Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   De slimme vertoning van de Uitsnijdvertoning van het Gewas en is beschikbaar voor download slechts als u toegang tot [ Dynamische Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) hebt. Slimme uitsnijduitvoeringen zijn alleen beschikbaar voor afbeeldingselementen.
 
@@ -149,7 +149,7 @@ Dynamische uitvoeringen inschakelen:
 
 1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
 
-1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3} Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
 
 1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
 

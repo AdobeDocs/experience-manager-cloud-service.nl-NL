@@ -3,7 +3,7 @@ title: Implementeren  [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en toegang kunt bieden aan gebruikers met verschillende typen rechten (middelen uploaden, Adobe Express-gebruikers) en hoe u beheerdersrechten kunt verlenen aan gebruikers.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 0%

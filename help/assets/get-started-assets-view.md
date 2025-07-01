@@ -4,7 +4,7 @@ description: Hoe te om tot, login ervaring van, gesteunde gebruiksgevallen van, 
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -60,13 +60,13 @@ Hieronder vindt u de verschillende DAM-taken (Digital Asset Management) die u me
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om met de Mening van Assets te beginnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=nl-NL)
+* [ bekijk een video om met de Mening van Assets te beginnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van Assets View
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

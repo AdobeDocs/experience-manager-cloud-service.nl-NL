@@ -2,7 +2,7 @@
 title: Veelgestelde vragen (FAQ's) voor Content Hub
 description: Antwoorden op enkele veelgestelde vragen (FAQ's) voor Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Wat is Content Hub? {#what-is-content-hub}
 
-Content Hub is een onderdeel van Adobe Experience Manager Assets as a Cloud Service.
+Content Hub is een functie van Adobe Experience Manager Assets as a Cloud Service.
 
 Content Hub stelt bredere teams in staat om eenvoudig relevante, goedgekeurde middelen te ontdekken via een intuïtief portaal en deze snel aan te passen aan hun behoeften.  Daarnaast biedt Content Hub een inspraakmechanisme waarmee deze gebruikers eenvoudig zelf kunnen werken wanneer ze elementen uploaden naar de DAM. Dit komt direct tegemoet aan de behoefte van organisaties aan een hogere snelheid voor het creëren van inhoud, terwijl de consistentie van merken en de naleving van passende waarborgen behouden blijven.
 
@@ -84,7 +84,7 @@ Er zijn een paar configuraties van hoe gebruikers worden toegewezen aan [!DNL Co
    >
    >De gebruiker die aan Uitdrukkelijke en Assets productprofielen in twee Consoles Admin wordt toegewezen moet het zelfde e-mailadres hebben en een bedrijfs **rekening van de Onderneming of van de School gebruiken**, en niet **Persoonlijke**. De ideale configuratie moet zowel Consoles Admin opstelling als **Federated ID** met vertrouwensverhouding opstelling tussen hen hebben, zodat de gebruiker een naadloze enige sign-on ervaring heeft. Sommige Express-plannen (bijvoorbeeld Express Teams) bieden geen ondersteuning voor Federated ID/Single Sign-On.
 
-Naast de juiste productrechten vereist de integratie van Adobe Express in Content Hub dat de toegewezen gebruiker minstens [!UICONTROL Can Edit] toestemmingen op de het auteursmilieu van Assets die Content Hub aandrijft, op minstens de **[!UICONTROL # /content/dam/hydrated-assets/]** omslaghiërarchie heeft, waar de gebruikers van Content Hub inhoud kunnen bewaren die zij gebruikend Druk creeerden. Zie [ het Beheer van Toestemmingen ](/help/security/touch-ui-principal-view.md) in de mening Admin (Aanraak UI) of een vereenvoudigd [ toestemmingenbeheer in de mening van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Naast de juiste productrechten vereist de integratie van Adobe Express in Content Hub dat de toegewezen gebruiker minstens [!UICONTROL Can Edit] toestemmingen op de het auteursmilieu van Assets die Content Hub aandrijft, op minstens de **[#UICONTROL /content/dam/hydrated-assets/]** omslaghiërarchie heeft, waar de gebruikers van Content Hub inhoud kunnen bewaren die zij gebruikend Druk creeerden. Zie [ het Beheer van Toestemmingen ](/help/security/touch-ui-principal-view.md) in de mening Admin (Aanraak UI) of een vereenvoudigd [ toestemmingenbeheer in de mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kan ik Content Hub zo instellen dat de merkrichtlijnen van mijn organisatie als een link op de homepage worden weergegeven? {#content-hub-setup-brand-guidelines}
 
