@@ -27,7 +27,7 @@ ht-degree: 0%
 Voer de volgende stappen uit om toegang te krijgen tot [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] :
 
 1. Klik op de startpagina van [!DNL Figma] op **[!UICONTROL Actions]** op de werkbalk onder aan het canvas en zoek naar [!DNL Adobe Experience Manager (AEM) Assets Connector] op de zoekbalk in het dialoogvenster.
-1. Selecteer [!DNL Adobe Experience Manager (AEM) Assets Connector] om het deelvenster [!DNL Adobe Experience Manager (AEM) Assets Connector] weer te geven.  [!DNL AEM]  activa van de Invoer [ {in uw  [!DNL Figma]  canvas ](#import-aem-assets-into-figma-workflow) gebruikend dit paneel.
+1. Selecteer [!DNL Adobe Experience Manager (AEM) Assets Connector] om het deelvenster [!DNL Adobe Experience Manager (AEM) Assets Connector] weer te geven.  [!DNL AEM]  activa van de Invoer [ &lbrace;in uw  [!DNL Figma]  canvas ](#import-aem-assets-into-figma-workflow) gebruikend dit paneel.
    ![ acties ](/help/assets/assets/actions-on-figma.png)
 U kunt ook de [[!DNL Adobe Experience Manager (AEM) Assets Connector] ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) beschikbare informatie over [!DNL Figma] -community openen, op **[!UICONTROL Open in...]** klikken, een recent bestand selecteren of een nieuw bestand maken en op **[!UICONTROL Run]** klikken om het deelvenster [!DNL Adobe Experience Manager (AEM) Assets Connector] te openen.
    ![ insteekmodule-pagina-op-beeld-gemeenschap ](/help/assets/assets/plugin-page-on-figma-community.png)
