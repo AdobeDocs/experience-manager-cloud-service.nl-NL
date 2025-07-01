@@ -4,9 +4,9 @@ description: Meer informatie over de levering van tAEM-inhoudsfragmenten met Ope
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -76,9 +76,11 @@ Voor een voorvertoning kan de levering van inhoudsfragmenten met OpenAPI:
 
 De toegestane oorsprong van CORS aan de kant van de verzendersconfiguratie, specifiek voor GraphQL, wordt niet in aanmerking genomen door deze API.
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## Limieten voor API-snelheden {#api-rate-limits}
+
+De API maakt nieuwe aanvragen mogelijk met een snelheid van maximaal 200 aanvragen per seconde, per omgeving.
+
+Zodra deze limiet is overschreden, verzendt de API 429 fouten. Deze fouten moeten door om het even welke cliënttoepassingen worden behandeld, en ontbroken verzoeken die na een exponentiële backoff opnieuw worden geprobeerd.
 
 <!-- 
 ## Limitations {#limitations}
