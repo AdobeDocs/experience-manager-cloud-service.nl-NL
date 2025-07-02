@@ -4,7 +4,7 @@ description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Of u nu koploos of kopend bent, u kunt de juiste inhoud in de juiste indeling le
 
 Edge Delivery Services is een set services die u kunt samenstellen en waarmee u een hoge mate van flexibiliteit hebt bij het schrijven van inhoud op uw website. Het vervangt AEM Publish / Dispatcher en de traditionele manier om ervaringen op te bouwen met AEM Core Components met een multi-cloud SaaS oplossing en zuivere front-end ontwikkelingsbenadering.
 
-![ Architectuur van Edge Delivery ](assets/AEM-with-EDS-architecture.png)
+![ Architectuur van Edge Delivery ](assets/aem-with-eds-architecture.png)
 
 Edge Delivery Services gebruikt GitHub zodat kunt u code direct van uw bewaarplaats beheren en opstellen GitHub. Nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
@@ -90,7 +90,7 @@ Ga aan de slag met AEM authoring met de Universal Editor en Edge Delivery Servic
 
 Edge Delivery Services maakt deel uit van Adobe Experience Manager. Op die manier kunnen Edge Delivery Services en AEM Sites op hetzelfde domein naast elkaar bestaan, wat een veelvoorkomend geval is voor grotere websites. Bovendien kunnen uw AEM Sites-pagina&#39;s naadloos inhoud uit Edge Delivery Services verbruiken en het omgekeerde geldt ook.
 
-U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration) en [ Lancering ook gebruiken.](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home)
+U kunt Edge Delivery Services met [ Adobe Target ](https://www.aem.live/developer/target-integration) en [ Lancering ook gebruiken.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Help van Adobe opvragen {#getting-help}
 
