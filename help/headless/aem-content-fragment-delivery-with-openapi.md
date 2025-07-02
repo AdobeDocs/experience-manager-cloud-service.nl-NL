@@ -4,9 +4,9 @@ description: Meer informatie over de levering van tAEM-inhoudsfragmenten met Ope
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ De toegestane oorsprong van CORS aan de kant van de verzendersconfiguratie, spec
 
 De API maakt nieuwe aanvragen mogelijk met een snelheid van maximaal 200 aanvragen per seconde, per omgeving.
 
-Zodra deze limiet is overschreden, verzendt de API 429 fouten. Deze fouten moeten door om het even welke cliënttoepassingen worden behandeld, en ontbroken verzoeken die na een exponentiële backoff opnieuw worden geprobeerd.
+Zodra deze grens wordt overschreden, begint API [ 429 fout ](https://www.rfc-editor.org/rfc/rfc6585#section-4) reacties te verzenden. Deze fouten moeten door om het even welke cliënttoepassingen worden behandeld, en ontbroken verzoeken die na een exponentiële backoff opnieuw worden geprobeerd. De HTTP-reactie wordt geleverd met een specifieke header, `Retry-After` , die aan de client aangeeft hoelang ze moeten wachten voordat ze de aanvraag opnieuw verzenden.
 
 <!-- 
 ## Limitations {#limitations}
