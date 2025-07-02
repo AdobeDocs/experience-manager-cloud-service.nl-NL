@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1336'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dit artikel |
 
 AEM Forms ondersteunt aangepaste functies, zodat gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Met deze opties kunt u het formuliergedrag dynamisch wijzigen op basis van vooraf gedefinieerde criteria. Met aangepaste functies kunnen ontwikkelaars ook complexe validatielogica afdwingen, dynamische berekeningen uitvoeren en de weergave of het gedrag van formulierelementen bepalen op basis van gebruikersinteracties of vooraf gedefinieerde criteria.
@@ -214,6 +214,16 @@ Als u aangepaste functies wilt weergeven in de regeleditor van een adaptief form
 ```
 
 Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt de aangepaste functie niet vermeld in de regeleditor van een adaptief formulier.
+
+## Bekend probleem
+
+* Aangepaste functies ondersteunen geen reguliere-expressieliterals van JavaScript. Het gebruik van regex-literals in een aangepaste functie resulteert in fouten tijdens de uitvoering. Bijvoorbeeld:
+  `const pattern = /^abc$/;`
+
+  Voor compatibiliteit gebruikt u de constructor RegExp in de aangepaste functies.
+
+  `const pattern = new RegExp("^abc$");`
+Reguliere expressies van Refactor om de constructor RegExp te gebruiken voor consistente en betrouwbare uitvoering.
 
 ## Volgende stap
 

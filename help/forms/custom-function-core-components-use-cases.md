@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ Raadpleeg de illustratie van de onderstaande `console window` om aan te tonen da
 
 U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de server worden voorgelegd:
 
-![ gegevens van Inspect bij het consolevenster ](/help/forms/assets/custom-function-submit-data-console-data.png)
+![ inspecteer gegevens bij het consolevenster ](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## Voltooien van verzenden van formulieren en fouthandlers negeren
 
@@ -370,7 +370,7 @@ Raadpleeg de onderstaande afbeelding om aan te tonen dat wanneer het verzenden v
 
 Als u het verzenden van formulieren standaard wilt laten slagen of mislukken, zijn de functies `Default submit Form Success Handler` en `Default submit Form Error Handler` beschikbaar buiten het vak.
 
-In het geval, ontbreekt de manager van de douanevoorlegging om zoals verwacht in bestaande AEM Projecten of vormen uit te voeren, verwijs naar de [ het oplossen van problemen](#troubleshooting) sectie.
+In geval, de manager van de douanevoorlegging niet zoals verwacht in bestaande Projecten of vormen van AEM uit te voeren, verwijs naar de [ het oplossen van problemen](#troubleshooting) sectie.
 
 ## Handelingen uitvoeren in een specifieke instantie van het herhaalbare deelvenster
 
@@ -513,13 +513,22 @@ Zie de onderstaande GIF, die aantoont dat wanneer op de knop `Delete Traveler` w
 
 ![ schrapt Comité ](/help/forms/assets/custom-function-delete-panel.gif)
 
+## Bekend probleem
+
+* Aangepaste functies ondersteunen geen reguliere-expressieliterals van JavaScript. Het gebruik van regex-literals in een aangepaste functie resulteert in fouten tijdens de uitvoering. Bijvoorbeeld:
+  `const pattern = /^abc$/;`
+
+  Voor compatibiliteit gebruikt u de constructor RegExp in de aangepaste functies.
+
+  `const pattern = new RegExp("^abc$");`
+Reguliere expressies van Refactor om de constructor RegExp te gebruiken voor consistente en betrouwbare uitvoering.
 
 ## Problemen oplossen
 
-* Als de manager van de douanevoorlegging niet zoals verwacht in bestaande AEM Projecten of vormen uitvoert, voer de volgende stappen uit:
-   * Zorg ervoor dat de [ versie van de kerncomponenten aan 3.0.18 en later ](https://github.com/adobe/aem-core-forms-components) wordt bijgewerkt. Voor bestaande AEM projecten en formulieren moeten echter aanvullende stappen worden ondernomen:
+* Voer de volgende stappen uit als de aangepaste verzendhandler niet naar behoren kan worden uitgevoerd in bestaande AEM-projecten of -formulieren:
+   * Zorg ervoor dat de [ versie van de kerncomponenten aan 3.0.18 en later ](https://github.com/adobe/aem-core-forms-components) wordt bijgewerkt. Voor bestaande AEM-projecten en -formulieren moeten echter aanvullende stappen worden ondernomen:
 
-   * Voor het AEM project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` vervangen door `submitForm()` en het project implementeren via de Cloud Manager-pijplijn.
+   * Voor het AEM-project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` vervangen door `submitForm()` en het project implementeren via de Cloud Manager-pijplijn.
 
    * Voor bestaande vormen, als de managers van de douanevoorlegging niet correct functioneren, moet de gebruiker de `submitForm` regel op **openen en bewaren** knoop gebruikend de Redacteur van de Regel. Deze handeling vervangt de bestaande regel van `submitForm('custom:submitSuccess', 'custom:submitError')` door `submitForm()` in het formulier.
 
