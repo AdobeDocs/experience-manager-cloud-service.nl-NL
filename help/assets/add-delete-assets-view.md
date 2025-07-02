@@ -4,7 +4,7 @@ description: Upload activa aan  [!DNL Assets view], bekijk uploadstatussen, en l
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -102,10 +102,10 @@ Gebruikers kunnen afzonderlijke elementen of mappen verwijderen die niet meer ve
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om activa in de mening van Assets te uploaden ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=nl-NL)
+* [ bekijk een video om activa in de mening van Assets te uploaden ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
