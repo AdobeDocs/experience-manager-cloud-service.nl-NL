@@ -37,8 +37,8 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] ondersteunt alleen de bestandsindelingen die in dit artikel worden vermeld.
->>Sommige functies werken mogelijk met andere indelingen, maar deze indelingen worden officieel niet ondersteund. De resultaten kunnen inconsistent zijn en de functies werken mogelijk niet zoals verwacht.
->>Gebruik alleen de ondersteunde indelingen voor consistente en betrouwbare resultaten.
+>&#x200B;>Sommige functies werken mogelijk met andere indelingen, maar deze indelingen worden officieel niet ondersteund. De resultaten kunnen inconsistent zijn en de functies werken mogelijk niet zoals verwacht.
+>&#x200B;>Gebruik alleen de ondersteunde indelingen voor consistente en betrouwbare resultaten.
 
 ## Adobe-indelingen {#adobe-formats}
 
