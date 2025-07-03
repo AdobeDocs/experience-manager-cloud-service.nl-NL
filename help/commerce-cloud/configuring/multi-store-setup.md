@@ -35,7 +35,7 @@ Ga als volgt te werk om een AEM-site en AEM CIF Core Components te verbinden met
 
 ## Configuratie {#configuration}
 
-1. Vorm veelvoudige opslag &amp; opslagmeningen volgens het patroon dat in [ wordt beschreven Websites van Adobe Commerce, Opslag &amp; Weergaven ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Vorm veelvoudige opslag &amp; opslagmeningen volgens het patroon dat in [ wordt beschreven Websites van Adobe Commerce, Opslag &amp; Weergaven ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL)
 
 2. Controleer of de verbinding tussen AEM en Adobe Commerce werkt.
 
@@ -61,7 +61,7 @@ Ga als volgt te werk om een AEM-site en AEM CIF Core Components te verbinden met
 
 ## Aanvullende bronnen
 
-* [ Websites van Adobe Commerce, Opslag &amp; Mening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [ Websites van Adobe Commerce, Opslag &amp; Mening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=nl-NL)
 * [ de Componenten van de Kern van AEM CIF - Multistore/plaatconfiguratie ](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [ Gebruikend Manager Van meerdere plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [ Gebruikend Manager Van meerdere plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=nl-NL)
 * [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-cloud/administering/msm/overview.md)

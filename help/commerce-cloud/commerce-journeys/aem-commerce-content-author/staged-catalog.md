@@ -28,7 +28,7 @@ Dit document helpt u te begrijpen hoe u de ervaring van de productcatalogus kunt
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor extra informatie.
+>Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=nl-NL) voor extra informatie.
 
 Eerst, zien wij hoe de auteurs tot gefaseerde productgegevens met CIF kunnen toegang hebben.
 
