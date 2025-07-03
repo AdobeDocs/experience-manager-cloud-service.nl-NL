@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,12 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | ✓ | Ondersteund |
 | * | Zie de opmerkingen onder de tabel |
 | - | Niet van toepassing |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] ondersteunt alleen de bestandsindelingen die in dit artikel worden vermeld.
+>>Sommige functies werken mogelijk met andere indelingen, maar deze indelingen worden officieel niet ondersteund. De resultaten kunnen inconsistent zijn en de functies werken mogelijk niet zoals verwacht.
+>>Gebruik alleen de ondersteunde indelingen voor consistente en betrouwbare resultaten.
 
 ## Adobe-indelingen {#adobe-formats}
 
