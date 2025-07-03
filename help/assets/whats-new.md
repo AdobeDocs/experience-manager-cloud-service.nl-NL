@@ -3,9 +3,9 @@ title: Nieuwe functies in Content Hub
 description: Meer informatie over enkele onlangs gestarte Content Hub-mogelijkheden
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: a573f0deec4ca4e9502c2170b22b0dec68fc291e
+source-git-commit: 9d706fcaf0014ec5a719e52d37a563f222d760d0
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 * Vermindert het aantal duplicaten - verbetert de integriteit van elementen. Er zijn dubbele machtigingen nodig in op mappen gebaseerde machtigingen wanneer dezelfde elementen met verschillende groepen worden gedeeld.
 
-[!BADGE &#x200B; leer meer &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ## UI-branding {#ui-branding}
 
@@ -58,7 +58,7 @@ In Content Hub kunnen beheerders nu de gebruikersinterface aanpassen met merkspe
 
 ![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE &#x200B; leer meer &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ## Openbare koppeling delen {#public-link-sharing}
 
@@ -66,7 +66,7 @@ Content Hub ondersteunt nu het genereren van deelbare koppelingen, zodat externe
 
 ![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE &#x200B; leer meer &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ## Beheer van verzamelingen {#collections-governance}
 
@@ -74,7 +74,7 @@ Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE &#x200B; leer meer &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren
 
 Met Content Hub kunt u nu ook de geselecteerde elementen en de bijbehorende uitvoeringen downloaden in een ZIP-bestand en niet als afzonderlijke bestanden die het bestandsbeheer voor u vereenvoudigen.
 
-[!BADGE &#x200B; leer meer &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## Dynamische media-uitvoeringen in Content Hub {#dynamic-media-renditions}
 
@@ -92,4 +92,4 @@ Open al uw dynamische vooraf ingestelde vertoningen van Media en slimme gewassen
 
 &#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE &#x200B; leer meer &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
