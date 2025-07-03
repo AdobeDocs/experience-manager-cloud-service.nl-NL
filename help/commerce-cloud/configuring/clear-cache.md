@@ -4,7 +4,8 @@ description: Leer hoe u de Clear-Cache-functie in AEM CIF inschakelt en verifiee
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 0%
@@ -31,7 +32,6 @@ De functie clear-cache wordt standaard uitgeschakeld in de CIF-configuratie. Om 
 * Laat de luisteraar toe om geheim voorgeheugen van elke instantie van AEM (te ontruimen publiceer en auteur) door de `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuratie in uw project toe te voegen zoals [ hier ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) getoond.
    * Configuratie moet zijn ingeschakeld voor zowel auteur- als publicatieinstanties.
    * De Dispatcher-cache inschakelen (optioneel): u kunt de cacheinstelling voor de dispatcher wissen inschakelen door de eigenschap `enableDispatcherCacheInvalidation` in te stellen op true in de bovenstaande configuratie. Dit verstrekt functionaliteit om het geheime voorgeheugen van de verzender te ontruimen.
-
      >[!NOTE]
      >
      > Dit werkt alleen met publicatie-instanties.
@@ -64,7 +64,6 @@ Nu, om te controleren of de geheime voorgeheugens behoorlijk worden ontruimd:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Als alles goed gaat, worden de nieuwe veranderingen in elk geval weerspiegeld. Als de wijzigingen niet zichtbaar zijn op het publicatieexemplaar, probeert u de relevante PLP- en PDP-pagina&#39;s te openen in een browservenster van het type private/incognito.
 
 >[!NOTE]

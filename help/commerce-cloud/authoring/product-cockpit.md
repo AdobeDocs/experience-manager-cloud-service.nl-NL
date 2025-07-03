@@ -4,7 +4,8 @@ description: Leer hoe u met de productwakkit werkt, die een uniform overzicht bi
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -25,9 +26,9 @@ De gefaseerde productgegevens omvatten om het even welke mutatie in de toekomst 
 
 ## Configuratie {#configuration}
 
-Productcatalogi moeten in AEM worden geconfigureerd. Zie [ het vormen opslag en catalogi ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=nl-NL#catalog) voor meer informatie.
+Productcatalogi moeten in AEM zijn geconfigureerd. Zie [ het vormen opslag en catalogi ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) voor meer informatie.
 
-Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=nl-NL) voor meer informatie.
+Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) voor meer informatie.
 
 >[!NOTE]
 >
@@ -35,9 +36,9 @@ Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereis
 
 ## De productcockpit openen {#opening-product-cockpit}
 
-De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Commerce&#39; in AEM hoofdmenu. Het is ook mogelijk Omnsearch (search for Commerce) of open `https://<yourAEMInstance>/commerce.html` te gebruiken.
+De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Commerce&#39; in het hoofdmenu van AEM. Het is ook mogelijk Omnsearch (search for Commerce) of open `https://<yourAEMInstance>/commerce.html` te gebruiken.
 
-![ AEM menu ](../assets/aem-menu.png)
+![ het menu van AEM ](../assets/aem-menu.png)
 
 ## Bladeren door productcatalogi {#browsing-product-catalogs}
 
@@ -79,8 +80,8 @@ De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit 
 
 ![ cataloguseigenschappen ](../assets/catalog-properties.png)
 
-### Tabs Inhoud AEM {#content-tabs}
+### AEM Content Tabs {#content-tabs}
 
-Op deze tabbladen, gegroepeerd op AEM inhoudstypen (Experience Fragments, Content Fragments, Associated Assets), wordt AEM inhoud weergegeven die aan het commerceobject is gekoppeld. Met de handeling Details weergeven wordt een nieuw browsertabblad met de geselecteerde inhoud geopend.
+Op deze tabbladen, gegroepeerd op AEM-inhoudstypen (Experience Fragments, Content Fragments, Associated Assets), wordt AEM-inhoud weergegeven die aan het commerceobject is gekoppeld. Met de handeling Details weergeven wordt een nieuw browsertabblad met de geselecteerde inhoud geopend.
 
 ![ inhoudseigenschappen ](../assets/content-properties.png)

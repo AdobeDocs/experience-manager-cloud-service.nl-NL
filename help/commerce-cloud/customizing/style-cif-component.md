@@ -12,7 +12,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 # Stijl AEM CIF Core-componenten {#style-aem-cif-core-components}
 
-Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U creeert ook een stijl gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0&rbrace; Product.**
+Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U creeert ook een stijl gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0} Product.**
 
 >[!TIP]
 >
@@ -72,7 +73,7 @@ CSS en JavaScript verantwoordelijk voor het teruggeven van het thema/de stijlen 
 
 Brand-specifieke stijlen kunnen worden toegepast op AEM CIF Core Components door de CSS die door deze clientbibliotheken wordt beheerd toe te voegen en te overschrijven. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is essentieel.
 
-[ ui.frontend ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) is een specifiek [ webpack ](https://webpack.js.org/) project om alle front-end activa voor een project te beheren. Dit webpack laat front-end ontwikkelaars om het even welk aantal talen en technologieën zoals [ gebruiken TypeScript ](https://www.typescriptlang.org/), [ Volgen ](https://sass-lang.com/), en veel meer.
+[ ui.frontend ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) is een specifiek [ webpack ](https://webpack.js.org/) project om alle front-end activa voor een project te beheren. Dit webpack laat front-end ontwikkelaars om het even welk aantal talen en technologieën zoals [ gebruiken TypeScript ](https://www.typescriptlang.org/), [ Volgen ](https://sass-lang.com/), en veel meer.
 
 De `ui.frontend` module is ook een GMaven module en geïntegreerd met het grotere project door een module NPM te gebruiken [ aem-client-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator). Tijdens een build kopieert `aem-clientlib-generator` de gecompileerde CSS- en JavaScript-bestanden naar een clientbibliotheek in de module `ui.apps` .
 
@@ -82,7 +83,7 @@ De `ui.frontend` module is ook een GMaven module en geïntegreerd met het groter
 
 ## Teastijl bijwerken {#ui-frontend-module}
 
-Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de module `ui.frontend` en de clientbibliotheken werken. Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code).
+Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de module `ui.frontend` en de clientbibliotheken werken. Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Navigeer en breid **ui.frontend** module uit en breid de omslaghiërarchie aan uit: `ui.frontend/src/main/styles/commerce`
 
@@ -179,7 +180,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
    Deze clientbibliotheken worden niet beheerd door de module `ui.frontend` . In plaats daarvan bevatten deze clientbibliotheken CSS- en JavaScript-afhankelijkheden die door Adobe worden geleverd. De definitie voor deze clientbibliotheken staat in het `.content.xml` -bestand onder elke map.
 
-   **client-base** - een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) inbedt. De categorie is `venia.base` .
+   **client-base** - een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) inbedt. De categorie is `venia.base` .
 
    **client-cif** - een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [ de Componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components) inbedt. De categorie is `venia.cif` .
 
@@ -264,7 +265,7 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
 
    ![ geef het malplaatje ](../assets/style-cif-component/edit-template.png) uit
 
-   Het **Landing malplaatje van de Pagina** wordt geopend dat de **3&rbrace; pagina van het Huis &lbrace;op wordt gebaseerd.**
+   Het **Landing malplaatje van de Pagina** wordt geopend dat de **3} pagina van het Huis {op wordt gebaseerd.**
 
    >[!NOTE]
    >
@@ -345,7 +346,7 @@ Wijzig vervolgens de bestanden Sass in de module `ui.frontend` om een kaartachti
 
 Terugkeer aan winde en het geproduceerde project.
 
-1. In de {**module 0} ui.frontend, open het dossier `_productteaser.scss` bij `ui.frontend/src/main/styles/commerce/_productteaser.scss` opnieuw.**
+1. In de {**module 0} ui.frontend, open het dossier** bij `_productteaser.scss` opnieuw.`ui.frontend/src/main/styles/commerce/_productteaser.scss`
 
 1. Breng de volgende wijzigingen aan in de rand Product Teaser:
 
@@ -446,7 +447,7 @@ Terugkeer aan winde en het geproduceerde project.
    ```
 
    >[!NOTE]
-   >Er zijn extra [ Opstelling van winde en Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL#set-up-an-integrated-development-environment) die projectdossiers rechtstreeks aan een lokale instantie van AEM kunnen synchroniseren zonder het moeten een volledige Gemaakt bouwstijl uitvoeren.
+   >Er zijn extra [ Opstelling van winde en Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) die projectdossiers rechtstreeks aan een lokale instantie van AEM kunnen synchroniseren zonder het moeten een volledige Gemaakt bouwstijl uitvoeren.
 
 ## Bijgewerkte producttaser weergeven {#view-updated-product-teaser}
 
@@ -474,7 +475,7 @@ U hebt de eerste AEM CIF Core Component opgemaakt en u hebt een webpack Dev Serv
 
 ## Bonus Challenge {#bonus-challenge}
 
-Gebruik het [ systeem van de Stijl van AEM ](/help/sites-cloud/authoring/page-editor/style-system.md) om twee stijlen tot stand te brengen die of van door een inhoudsauteur kunnen worden van een knevel voorzien. [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=nl-NL) omvat gedetailleerde stappen en informatie over hoe te om deze taak te verwezenlijken.
+Gebruik het [ systeem van de Stijl van AEM ](/help/sites-cloud/authoring/page-editor/style-system.md) om twee stijlen tot stand te brengen die of van door een inhoudsauteur kunnen worden van een knevel voorzien. [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) omvat gedetailleerde stappen en informatie over hoe te om deze taak te verwezenlijken.
 
 ![ Uitdaging van de Bonus - stijlSysteem ](../assets/style-cif-component/bonus-challenge.png)
 
@@ -482,7 +483,7 @@ Gebruik het [ systeem van de Stijl van AEM ](/help/sites-cloud/authoring/page-ed
 
 * [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype)
 * [ de Componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components)
-* [ opstelling een Lokale Milieu van de Ontwikkeling van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL)
+* [ opstelling een Lokale Milieu van de Ontwikkeling van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Client-Side bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
-* [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
-* [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=nl-NL)
+* [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)

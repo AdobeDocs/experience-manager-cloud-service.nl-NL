@@ -1,24 +1,25 @@
 ---
-title: '[!DNL Live Search] Pop-over CIF component'
-description: Het gebruiken van CIF componenten om  [!DNL Live Search]  Popover component op een AEM plaats toe te laten
+title: '[!DNL Live Search] De component Popover CIF'
+description: Het gebruiken van de componenten van CIF om  [!DNL Live Search]  Popover component op een plaats van AEM toe te laten
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Pop-over CIF component {#live-search-popover}
+# [!DNL Live Search] Popover CIF-component {#live-search-popover}
 
 De [!DNL Live Search] Popover is het element dat de [!DNL Live Search] resultaten bevat aangezien u op het onderzoeksgebied typt.
-Dit onderwerp beschrijft hoe te om deze component in uw AEM plaats te integreren.
+In dit onderwerp wordt beschreven hoe u deze component kunt integreren in uw AEM-site.
 
 ## Bestandsstructuur {#file-strucure}
 
-Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
+Bestanden moeten worden bewerkt en gemaakt om de CIF-component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 

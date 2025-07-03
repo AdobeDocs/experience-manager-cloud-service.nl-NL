@@ -1,16 +1,18 @@
 ---
-title: Aangepaste kenmerken voor CIF productcarrousel
-description: Leer hoe u de AEM CIF component Product Carousel kunt uitbreiden door het verkoopmodel bij te werken en de markering aan te passen.
+title: Aangepaste kenmerken voor CIF Product Carousel
+description: Leer hoe u de AEM CIF Product Carousel-component kunt uitbreiden door het Sling Model bij te werken en de markering aan te passen.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# Aangepaste kenmerken voor CIF productcarrousel {#product-carousel}
+# Aangepaste kenmerken voor CIF Product Carousel {#product-carousel}
 
 ## Inleiding {#intro}
 
@@ -30,7 +32,7 @@ De component Product Carousel wordt uitgebreid door deze zelfstudie. Als eerste 
 
 U kunt de bedrijfslogica van de Carousel van het Product uitbreiden door een het Verkopen Model uit te voeren:
 
-1. In uw winde, navigeer onder de kernmodule aan `core/src/main/java/com/venia/core/models/commerce` en creeer een Interface CustomCarousel die de interface CIF ProductCarousel uitbreidt:
+1. In uw winde, navigeer onder de kernmodule aan `core/src/main/java/com/venia/core/models/commerce` en creeer een Interface CustomCarousel die de interface van CIF ProductCarousel uitbreidt:
 
    ```
    package com.venia.core.models.commerce;
@@ -38,7 +40,6 @@ U kunt de bedrijfslogica van de Carousel van het Product uitbreiden door een het
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
 1. Maak vervolgens een implementatieklasse `CustomCarouselImpl.java` op `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java` .
 Met het delegatiepatroon voor Sling Models kan `CustomCarouselImpl` via de eigenschap `ProductCarousel` model verwijzen: `sling:resourceSuperType`
 
@@ -87,4 +88,4 @@ De markering verder aanpassen:
    ..
    ```
 
-1. Sparen de veranderingen en stel de updates in om het gebruiken van uw Gemaakt bevel, van een bevel-lijn terminal te AEM. U kunt de aangepaste kenmerkwaarde `accessory_gemstone_addon` voor de geselecteerde producten op de pagina zien.
+1. Sparen de veranderingen en stel de updates aan AEM op gebruikend uw Maven bevel, van een bevel-lijn terminal. U kunt de aangepaste kenmerkwaarde `accessory_gemstone_addon` voor de geselecteerde producten op de pagina zien.

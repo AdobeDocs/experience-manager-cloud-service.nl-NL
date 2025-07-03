@@ -4,7 +4,8 @@ description: Meer informatie over het beheren van productcataloguspagina's en -s
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
@@ -17,7 +18,7 @@ Meer weten over het beheren van productcataloguspagina&#39;s en -sjablonen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Inhoud en de auteursreis van Commerce, [ Begonnen het worden met AEM CIF authoringbeginselen ](getting-started.md), leerde u de basis van CIF creatie.
+In het vorige document van de de auteursreis van de Inhoud van AEM en van Commerce, [ Begonnen het worden met de auteursgrondbeginselen van AEM CIF ](getting-started.md), leerde u de basis van de creatie van CIF.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
@@ -33,7 +34,7 @@ Dit document helpt u begrijpen hoe te om de pagina&#39;s en de malplaatjes van d
 
 De Venia-winkel wordt geleverd met een typische ervaring in de productcatalogus met navigatie, landen, categorieën (PLP) en productdetails (PDP).
 
-Cataloguspagina&#39;s worden dynamisch gebouwd gebruikend een AEM CIF catalogusmalplaatje en productgegevens in real time die van het handelseindpunt wanneer nodig worden gehaald. Elke catalogus heeft een algemene sjabloon voor product- en categoriepagina&#39;s.
+Cataloguspagina&#39;s worden dynamisch gebouwd gebruikend een de catalogusmalplaatje van AEM CIF en productgegevens in real time die van het handelseindpunt wanneer nodig worden gehaald. Elke catalogus heeft een algemene sjabloon voor product- en categoriepagina&#39;s.
 ![ catalogusstructuur ](assets/catalog-structure.png)
 
 De navigatiecomponent toont inhoud en cataloguspagina&#39;s. Het is mogelijk om de bestemmingspagina van de catalogus of de categorieën van het eerste niveau in de navigatie te tonen. Als u de muisaanwijzer boven een categorie houdt, worden de categorieën op het tweede niveau weergegeven als een tweede regel.
@@ -109,11 +110,11 @@ Nu u dit deel van de reis hebt voltooid, moet u:
 * hoe generieke sjablonen werken
 * een afzonderlijke sjabloon hebben gemaakt
 
-Bouw op deze kennis voort en ga uw reis door het document [ te herzien voort Geleide ervaringen van de productcatalogus ](staged-catalog.md) beheren, waar u leert hoe te met gefaseerde productgegevens en AEM Lanceringen te werken.
+Bouw op deze kennis voort en ga uw reis door het document [ te herzien voort Geleide ervaringen van de productcatalogus ](staged-catalog.md) beheren, waar u leert hoe te met gefaseerde productgegevens en de Lanceringen van AEM werken.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Terwijl het wordt geadviseerd dat u zich op het volgende deel van de reis door het document [ te herzien leidt gestage ervaringen van de productcatalogus ](staged-catalog.md), zijn het volgende enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan:
 
 * [Meerdere categorieën en productpagina&#39;s maken](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [ gids van de Migratie voor de Experience Manager Cloud Service ](/help/commerce-cloud/migration.md) - hoe te aan het AEM Commerce integration framework (CIF) toe:voegen-op van een oude versie migreren
+* [ de gids van de Migratie voor Experience Manager Cloud Service ](/help/commerce-cloud/migration.md) - hoe te aan AEM Commerce integration framework (CIF) toe:voegen-binnen van een oude versie migreren

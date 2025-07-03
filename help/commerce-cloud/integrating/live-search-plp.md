@@ -1,27 +1,28 @@
 ---
-title: '[!DNL Live Search] CIF component Product Listening Page'
-description: Het gebruiken van CIF componenten om  [!DNL Live Search]  component van de Pagina van het Product toe te laten van een AEM plaats
+title: '[!DNL Live Search] Product Listening Page CIF-component'
+description: Het gebruiken van de componenten van CIF om  [!DNL Live Search]  de component van de Pagina van het Product toe te laten op een plaats van AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] CIF {#live-search-cif-component}
+# [!DNL Live Search] CIF-component {#live-search-cif-component}
 
 Live zoeken naar Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring zonder extra kosten. Live zoeken, aangedreven door Adobe Sensei, maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van geaggregeerde bezoekersgegevens uit te voeren. Als deze gegevens in combinatie met uw Adobe Commerce-catalogus worden gebruikt, krijgt u een relevante en gepersonaliseerde winkelervaring.
 
-In dit onderwerp wordt beschreven hoe u een AEM CIF gebruikt om de widget [!DNL Live Search] Product Listing Page (PLP) in uw AEM-site te implementeren.
+In dit onderwerp wordt beschreven hoe u een AEM CIF-component kunt gebruiken om de widget [!DNL Live Search] Product Listing Page (PLP) in uw AEM-site te implementeren.
 
 ## Vereisten {#prerequisites}
 
-Dit onderwerp veronderstelt u een lokale [ AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL) opstelling hebt.
+Dit onderwerp veronderstelt u een lokale [ milieu van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) opstelling hebt.
 
-De component PLP vereist de [[!DNL Live Search]  Popover CIF component ](live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
+De component PLP vereist [[!DNL Live Search]  Popover de component van CIF ](live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
 
 ## Composer bijwerken {#update-composer}
 

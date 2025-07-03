@@ -1,37 +1,38 @@
 ---
-title: Aan de slag met CIF ontwerpen
-description: Aan de slag met CIF ontwerpen.
+title: Aan de slag met CIF Authoring
+description: Aan de slag met CIF Authoring.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM CIF ontwerpen {#getting-started}
+# Aan de slag met AEM CIF Authoring {#getting-started}
 
-Meer weten over Adobe Experience Manager (AEM) CIF Authoring.
+Meer informatie over Adobe Experience Manager (AEM) CIF Authoring.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van deze AEM en reis van Commerce, [ Leer over AEM Inhoud en Commerce ](/help/commerce-cloud/introduction.md), leerde u de basistheorie en de concepten hoofdloze CMS en AEM Inhoud en Commerce.
+In het vorige document van deze reis van de Inhoud van AEM en van Commerce, [ Leer over de Inhoud van AEM en Commerce ](/help/commerce-cloud/introduction.md), leerde u de basistheorie en de concepten CMS en AEM Content en Commerce zonder kop.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe u CIF kunt gebruiken voor het maken van inhoud en voor het maken van specifieke Commerce-toepassingen. Na het lezen moet u:
+Dit document helpt u te begrijpen hoe u CIF for Content en Commerce-specifieke authoring kunt gebruiken. Na het lezen moet u:
 
-* Begrijp de concepten CIF creatie gebruikend de Redacteur van de Pagina in AEM
-* Toegang krijgen tot productcatalogusgegevens in AEM met product- en categoriekiezers
+* Begrijp de concepten van CIF authoring using Page Editor in AEM
+* Toegang tot productcatalogusgegevens in AEM met product- en categoriekiezers
 * Toegang krijgen tot inhoud en handelsgegevens met de productcockpit en AEM Omnsearch
 
-## CIF maken in AEM paginaeditor {#cif-authoring}
+## CIF Authoring in AEM Page Editor {#cif-authoring}
 
-CIF breidt de Redacteur van de Pagina in AEM met mogelijkheden uit om tot de productgegevens in real time toegang te hebben zonder de context te verlaten:
+CIF breidt de Pagina-editor in AEM uit met mogelijkheden om toegang te krijgen tot de realtime productgegevens zonder de context te verlaten:
 
 Open het zijpaneel en selecteer &quot;Producten&quot;van de drop-down lijst.
 ![ Uitgezochte producttype ](assets/asset-finder-overview.png)
@@ -43,7 +44,7 @@ Producten kunnen worden neergezet op componenten die productdruppels (bijvoorbee
 
 ## Product- en rubriekkiezers {#pickers}
 
-Als de product en categoriegegevens in handelscomponenten of AEM achterkantoordialogen worden vereist, kunnen AEM auteurs plukkers gebruiken die UI-elementen zijn om gemakkelijk gegevens van de productcatalogus te zoeken en te selecteren.
+Als product- en categoriegegevens vereist zijn in commerciële componenten of in AEM-dialoogvensters voor back-office, kunnen AEM-auteurs gebruikmaken van kiezers die UI-elementen zijn voor het eenvoudig zoeken naar en selecteren van productcatalogusgegevens.
 
 ### Productkiezer
 
@@ -84,21 +85,21 @@ U kunt de eigenschappen van het product openen door op het eigenschapspictogram 
 Alle producteigenschappen zijn alleen-lezen omdat de gegevens in real-time worden geladen vanaf de verbonden backend. Het veranderen van producteigenschappen moet in het achterste systeem worden gedaan dat het systeem van verslag is. De lusje **Varianten** verschijnen slechts als het product variaties heeft. Wanneer u op het tabblad klikt, worden alle variaties met de bijbehorende kenmerken weergegeven.
 ![ cockpit productvarianten ](assets/cockpit-properties-variants.png)
 
-Op de resterende tabbladen ziet u alle AEM inhoud die aan het product is gekoppeld. Deze lusjes worden besproken in één van de volgende modules.
+Op de resterende tabbladen ziet u alle AEM-inhoud die aan het product is gekoppeld. Deze lusjes worden besproken in één van de volgende modules.
 
 ## AEM Omnissearch {#omnisearch}
 
-Het gebruik van Omnissearch is een eenvoudige manier om AEM inhoud te zoeken met behulp van full-text zoekopdrachten. CIF breidt Omnissearch uit met full-text onderzoek van productcatalogi met zijn bijbehorende AEM inhoud.
+Het gebruik van Omnissearch is een eenvoudige manier om AEM-inhoud te zoeken met behulp van full-text zoekopdrachten. CIF breidt Omnissearch uit met full-text zoekopdrachten van productcatalogi met de bijbehorende AEM-inhoud.
 ![ het punt van het handelingenmenu ](assets/omnisearch.png)
 
-Omnissearch voert een full-text zoekopdracht uit in de commerceback om alle verwante producten te zoeken. Het resultaat wordt vermeld onder **Mening Alle Producten**. Het onderzoek van Omnissearch zoekt ook AEM naar inhoud die aan het gezochte product wordt geassocieerd. De resultaten worden vermeld in de respectieve AEM categorieën. In dit voorbeeld is één inhoudsfragment gerelateerd aan het product.
+Omnissearch voert een full-text zoekopdracht uit in de commerceback om alle verwante producten te zoeken. Het resultaat wordt vermeld onder **Mening Alle Producten**. Het onderzoek van Omnissearch zoekt ook AEM naar inhoud die met het gezochte product wordt geassocieerd. De resultaten worden vermeld in de respectieve categorieën van AEM. In dit voorbeeld is één inhoudsfragment gerelateerd aan het product.
 
 ## Volgende functies {#what-is-next}
 
 Nu u dit deel van de reis hebt voltooid, moet u:
 
-* Begrijp de concepten CIF creatie gebruikend de Redacteur van de Pagina
-* Toegang tot productcatalogus in AEM met product- en categoriekiezers
+* Begrijp de concepten van CIF authoring gebruikend de Redacteur van de Pagina
+* Toegang krijgen tot productcatalogus in AEM met product- en rubriekkiezers
 * Toegang krijgen tot inhoud en handelsgegevens met de productcockpit en AEM Omnsearch
 
 Bouw op deze kennis voort en zet uw reis door het document [ te herzien leiden de Pagina&#39;s en de Malplaatjes van de Catalogus van het Product ](catalog-templates.md), waar u leert om uw eerste ervaring van de productcatalogus te bouwen en aan te passen.

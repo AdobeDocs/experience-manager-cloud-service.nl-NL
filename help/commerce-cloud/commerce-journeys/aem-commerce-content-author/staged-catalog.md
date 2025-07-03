@@ -4,7 +4,8 @@ description: Leer hoe u ervaringen met gefaseerde productcatalogi beheert.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -17,7 +18,7 @@ Leer hoe u ervaringen met gefaseerde productcatalogi beheert.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis van de AEM Inhoud en van Commerce, [ leiden de Pagina&#39;s en de Malplaatjes van de Catalogus van het Product ](catalog-templates.md), leerde u hoe te om de ervaringen van de productcatalogus te beheren en te bouwen die op malplaatjes worden gebaseerd.
+In het vorige document van de reis van de Inhoud van AEM en van Commerce, [ leiden de Pagina&#39;s en de Malplaatjes van de Catalogus van het Product ](catalog-templates.md), leerde u hoe te om de ervaringen van de productcatalogus te beheren en te bouwen die op malplaatjes worden gebaseerd.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
@@ -27,13 +28,13 @@ Dit document helpt u te begrijpen hoe u de ervaring van de productcatalogus kunt
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=nl-NL) voor extra informatie.
+>Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor extra informatie.
 
 Eerst, zien wij hoe de auteurs tot gefaseerde productgegevens met CIF kunnen toegang hebben.
 
 ## Werken met gefaseerde productgegevens {#staged-product-data}
 
-Een manier om gefaseerde productgegevens te openen is het gebruik van de productcockpit. Open de productcatalogus door op het Commerce-pictogram in het AEM te klikken. Hierdoor hebt u toegang tot live productgegevens. Open het filterlusje op de linkerzijde en breid **STAGED CATALOG** uit. Met de voorvertoningsgegevens hebt u nu toegang tot de gefaseerde productgegevens voor elk gewenst moment. De gefaseerde gegevens omvatten nieuwe categorieën, producten, of bijgewerkte gebieden zoals prijs.
+Een manier om gefaseerde productgegevens te openen is het gebruik van de productcockpit. Open de productcatalogus door op het Commerce-pictogram in het AEM-hoofdmenu te klikken. Hierdoor hebt u toegang tot live productgegevens. Open het filterlusje op de linkerzijde en breid **STAGED CATALOG** uit. Met de voorvertoningsgegevens hebt u nu toegang tot de gefaseerde productgegevens voor elk gewenst moment. De gefaseerde gegevens omvatten nieuwe categorieën, producten, of bijgewerkte gebieden zoals prijs.
 
 ![ cockpit van het stadium ](assets/staged-cockpit.png)
 
@@ -49,7 +50,7 @@ U kunt nu door de catalogus bladeren met de gegevens in het werkgebied. Als u ee
 >
 >Omnissearch heeft geen context en retourneert dus alleen live productcatalogusgegevens
 
-## AEM starten {#launches}
+## AEM Launches {#launches}
 
 Met AEM Launches kunt u inhoud maken voor gefaseerde productgegevens. Als u niet vertrouwd met Lanceren bent, volg de documentatieverbinding onder de [ Extra sectie van Middelen ](#additional-resources). De datum van de Lancering wordt dan gebruikt om tot gefaseerde productgegevens toegang te hebben.
 

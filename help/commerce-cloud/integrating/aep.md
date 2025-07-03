@@ -11,7 +11,8 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '1868'
 ht-degree: 0%
@@ -21,11 +22,11 @@ ht-degree: 0%
 
 # AEM-CIF-kerncomponenten en Adobe Experience Platform-integratie {#aem-cif-aep-integration}
 
-De [ Commerce integration framework (CIF) ](https://github.com/adobe/aem-core-cif-components) kerncomponenten verstrekken naadloze integratie met [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=nl-NL) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals __toe te voegen aan wagentje__.
+De [ Commerce integration framework (CIF) ](https://github.com/adobe/aem-core-cif-components) kerncomponenten verstrekken naadloze integratie met [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals __toe te voegen aan wagentje__.
 
-Het [&#128279;](https://github.com/adobe/aem-core-cif-components) project van de Componenten van de Kern van AEM CIF  verstrekt een bibliotheek van JavaScript genoemd [ schakelaar van Adobe Experience Platform voor Adobe Commerce ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens van uw Commerce storefront te verzamelen. Deze gebeurtenisgegevens worden naar de Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door Commerce-gegevens aan te sluiten op andere producten in de Adobe Experience Cloud, kunt u taken uitvoeren zoals het gebruikersgedrag op uw site analyseren, AB-tests uitvoeren en gepersonaliseerde campagnes maken.
+Het [ project van de Componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components) verstrekt een bibliotheek van JavaScript genoemd [ schakelaar van Adobe Experience Platform voor Adobe Commerce ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens van uw Commerce storefront te verzamelen. Deze gebeurtenisgegevens worden naar de Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door Commerce-gegevens aan te sluiten op andere producten in de Adobe Experience Cloud, kunt u taken uitvoeren zoals het gebruikersgedrag op uw site analyseren, AB-tests uitvoeren en gepersonaliseerde campagnes maken.
 
-Leer meer over de [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=nl-NL) reeks van de Gegevensverzameling van 0&rbrace; Experience Platform van technologieën die u toestaan om gegevens van de klantenervaring van cliënt-zijbronnen te verzamelen.
+Leer meer over de [ reeks van de Gegevensverzameling van 0} Experience Platform van technologieën die u toestaan om gegevens van de klantenervaring van cliënt-zijbronnen te verzamelen.](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)
 
 ## `addToCart` -gebeurtenisgegevens verzenden naar Experience Platform {#send-addtocart-to-aep}
 
@@ -37,7 +38,7 @@ In de volgende stappen wordt getoond hoe u de gebeurtenisgegevens van `addToCart
 
 Gebruik een lokale ontwikkelomgeving om deze demo te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. Herzie de vereisten en de stappen voor [ vestiging lokale ontwikkeling met AEM as a Cloud Service SDK ](../develop.md).
 
-U hebt ook toegang tot [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=nl-NL) en toestemmingen nodig om het schema, de dataset, en de gegevensstromen voor gegevensinzameling tot stand te brengen. Voor meer informatie, zie [ het beheer van de Toestemming ](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=nl-NL).
+U hebt ook toegang tot [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) en toestemmingen nodig om het schema, de dataset, en de gegevensstromen voor gegevensinzameling tot stand te brengen. Voor meer informatie, zie [ het beheer van de Toestemming ](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
 
 ## AEM Commerce as a Cloud Service instellen {#aem-setup}
 
@@ -45,11 +46,11 @@ Om een werkende __AEM Commerce as a Cloud Service__ lokaal milieu met de noodzak
 
 ### Lokale instellingen
 
-Volg de [ Lokale 1&rbrace; stappen van de Opstelling &lbrace;zodat kunt u het werkende milieu van AEM as a Cloud Service hebben.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=nl-NL&#local-setup)
+Volg de [ Lokale 1} stappen van de Opstelling {zodat kunt u het werkende milieu van AEM as a Cloud Service hebben.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup)
 
 ### Projectinstelling
 
-Volg de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=nl-NL&#project) stappen van de Archetype van het Project van 0&rbrace; AEM &lbrace;zodat kunt u een gloednieuw project van AEM Commerce (CIF) tot stand brengen.
+Volg de [ stappen van de Archetype van het Project van 0} AEM {zodat kunt u een gloednieuw project van AEM Commerce (CIF) tot stand brengen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project)
 
 >[!TIP]
 >
@@ -133,7 +134,7 @@ Schakel van de standaard `.babelrc` bestands relatieve configuratie bestandsinde
 
 ### Webpack configureren voor gebruik van Babel
 
-Bewerk het `webpack.common.js` -bestand als u de JavaScript-bestanden wilt omzetten met behulp van Babel loader ( `babel-loader` ) en webpack.
+Bewerk het `babel-loader` -bestand als u de JavaScript-bestanden wilt omzetten met behulp van Babel loader ( `webpack.common.js` ) en webpack.
 
 Navigeer naar de module `ui.frontend` en werk het bestand `webpack.common.js` bij, zodat u de volgende regel binnen de waarde van de eigenschap `module` kunt gebruiken:
 
@@ -364,7 +365,7 @@ Om de structuur voor de gegevens van de handelsgebeurtenis te bepalen, moet u ee
 
 >[!TIP]
 >
->Zie de [ Grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=nl-NL) voor meer informatie.
+>Zie de [ Grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) voor meer informatie.
 
 ### Gegevensset maken
 
@@ -390,7 +391,7 @@ Om de gebeurtenisgegevens op te slaan, moet u een Dataset tot stand brengen die 
 
 >[!TIP]
 >
->Zie het [ overzicht van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=nl-NL) voor meer informatie.
+>Zie het [ overzicht van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) voor meer informatie.
 
 
 ### DataStream maken
@@ -403,7 +404,7 @@ Voer de volgende stappen uit zodat u een DataStream kunt maken in de Experience 
 
    ![ AEP leidt tot gegevensstromen ](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Noem uw DataStream gebruikend het __Naam__ vereiste gebied. Onder het __gebied van het Schema van de Gebeurtenis 0&rbrace;, selecteer het gecreeerde schema en klik__ sparen __.__
+1. Noem uw DataStream gebruikend het __Naam__ vereiste gebied. Onder het __gebied van het Schema van de Gebeurtenis 0}, selecteer het gecreeerde schema en klik__ sparen __.__
 
    ![ AEP bepaalt gegevensstromen ](../assets/aep-integration/AEP-Datastream-Define.png)
 
@@ -417,7 +418,7 @@ Voer de volgende stappen uit zodat u een DataStream kunt maken in de Experience 
 
 >[!TIP]
 >
->Zie het [ Overzicht DataStream ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=nl-NL) voor meer informatie.
+>Zie het [ Overzicht DataStream ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) voor meer informatie.
 
 ## Gegevensstroomwaarde toevoegen aan AEM Commerce-configuratie {#add-aep-values-to-aem}
 
@@ -500,6 +501,6 @@ __de Gebeurtenissen van XDM van het Profiel:__
 Zie de volgende bronnen voor meer informatie:
 
 - [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection]  overzicht ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=nl-NL)
-- [[!DNL Data Connection]  Gebeurtenissen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=nl-NL)
-- [ overzicht van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
+- [[!DNL Data Connection]  overzicht ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection]  Gebeurtenissen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [ overzicht van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

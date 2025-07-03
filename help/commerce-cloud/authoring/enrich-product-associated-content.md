@@ -11,7 +11,8 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Leer hoe marketers productgegevens kunnen verrijken met bijbehorende inhoud uit 
 
 ## Digital Assets {#digital-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/3447315/?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
 Digitale middelen kunnen aan één of meerdere product SKUs worden geassocieerd. Zodra verbonden, kan de digitale activa met sleutelwoordonderzoeken worden ontdekt die op SKU worden gebaseerd. Het element wordt automatisch ook weergegeven als gekoppelde inhoud wanneer u een pagina bewerkt die het relevante product bevat, waardoor het nog eenvoudiger wordt om de volgende digitale ervaring te maken.
 
@@ -36,7 +37,7 @@ De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager d
 
 ## Inhoudsfragmenten {#content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/3452163/?quality=12&learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
 De Fragmenten van de inhoud zijn een eigenschap van Adobe Experience Manager die een teller toestaat om **gestructureerde** herbruikbare inhoud tot stand te brengen. Inhoudsfragmenten kunnen worden gekoppeld aan een product-SKU of catalogus-id. Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. U kunt inhoudsfragmenten ook dynamisch opnemen op een productcataloguspagina via een tijdelijke aanduiding en koppeling.
 
