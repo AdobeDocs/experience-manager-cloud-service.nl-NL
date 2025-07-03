@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Stijl AEM CIF Core-componenten {#style-aem-cif-core-components}
 
-Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U creeert ook een stijl gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0} Product.**
+Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U creeert ook een stijl gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0&rbrace; Product.**
 
 >[!TIP]
 >
@@ -265,7 +265,7 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
 
    ![ geef het malplaatje ](../assets/style-cif-component/edit-template.png) uit
 
-   Het **Landing malplaatje van de Pagina** wordt geopend dat de **3} pagina van het Huis {op wordt gebaseerd.**
+   Het **Landing malplaatje van de Pagina** wordt geopend dat de **3&rbrace; pagina van het Huis &lbrace;op wordt gebaseerd.**
 
    >[!NOTE]
    >
