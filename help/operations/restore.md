@@ -4,9 +4,9 @@ description: Leer hoe u uw AEM as a Cloud Service-inhoud kunt herstellen vanaf e
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ Leer hoe u uw AEM as a Cloud Service-inhoud kunt herstellen vanaf een back-up me
 
 ## Overzicht {#overview}
 
-Cloud Manager, dat zelf-dienst terugzet proces kopieert gegevens van de steunen van het systeem van de Adobe en herstelt het aan zijn originele milieu. Herstel wordt uitgevoerd om gegevens terug te keren die zijn verloren, beschadigd of per ongeluk verwijderd.
+Cloud Manager-proces voor het terugzetten van zelfbediening kopieert gegevens van Adobe-systeemback-ups en herstelt deze in de oorspronkelijke omgeving. Herstel wordt uitgevoerd om gegevens terug te keren die zijn verloren, beschadigd of per ongeluk verwijderd.
 
-Het terugzetproces beïnvloedt slechts inhoud, verlatend uw code en versie van AEM onveranderd. U kunt op elk gewenst moment een herstelbewerking van afzonderlijke omgevingen starten.
+Het herstelproces heeft alleen invloed op inhoud, zodat uw code en versie van AEM ongewijzigd blijven. U kunt op elk gewenst moment een herstelbewerking van afzonderlijke omgevingen starten.
 
 Cloud Manager biedt twee typen back-ups waarvan u de inhoud kunt herstellen.
 
 * **punt-in-tijd (PIT):** Dit type herstelt van ononderbroken systeemsteunen van de laatste 24 uren van de huidige tijd.
 * **Vorige week:** Dit type herstelt van systeemsteunen in de laatste zeven dagen exclusief vorige 24 uren.
 
-In beide gevallen blijven de versie van de aangepaste code en de AEM ongewijzigd.
+In beide gevallen blijven de versie van uw aangepaste code en de AEM-versie ongewijzigd.
 
 >[!TIP]
 >
@@ -55,11 +55,11 @@ Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad s
 Standaard heeft geen enkele gebruiker toestemming om inhoud te herstellen in ontwikkelings-, productie- of testomgevingen. Om deze toestemming aan specifieke gebruikers of groepen na deze algemene stappen te delegeren.
 
 1. Maak een productprofiel met een expressieve naam die verwijst naar het herstellen van inhoud.
-1. Verstrek de **toestemming van de Toegang van het Programma 0&rbrace; &lbrace;op het vereiste programma.**
-1. Verstrek de **Inhoud herstelt** toestemming op het vereiste milieu of alle milieu&#39;s van het programma, afhankelijk van uw gebruiksgeval.
+1. Verstrek de **toestemming van de Toegang van het Programma 0} {op het vereiste programma.**
+1. Verstrek het **Milieu herstellen creeert** toestemming op het vereiste milieu of alle milieu&#39;s van het programma, afhankelijk van uw gebruiksgeval.
 1. Wijs gebruikers toe aan dat profielprofiel.
 
-Voor details bij het beheren van toestemmingen, zie [&#128279;](/help/implementing/cloud-manager/custom-permissions.md) documentatie van de Toestemmingen van de Douane 0&rbrace;.
+Voor details bij het beheren van toestemmingen, zie [ documentatie van de Toestemmingen van de Douane 0}.](/help/implementing/cloud-manager/custom-permissions.md)
 
 ## Inhoud herstellen {#restoring-content}
 
@@ -73,7 +73,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
 1. Klik op het programma waarvoor u een herstelbewerking wilt starten.
 
-1. Van de **pagina van het Overzicht van het Programma**, in de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik de ellipsis knoop naast het milieu waarvoor u wilt in werking stellen herstellen en **selecteren herstellen Inhoud**.
+1. Van de **pagina van het Overzicht van het Programma**, in de **** kaart van Milieu&#39;s, klik de ellipsis knoop naast het milieu waarvoor u wilt in werking stellen herstellen en **selecteren herstellen Inhoud**.
 
    ![ herstel optie ](assets/backup-option.png)
 
@@ -85,7 +85,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
       ![ Laatste 24 uren ](assets/backup-time.png)
 
-   1. Als u **Vorige week** het naburige **3&rbrace; gebied van de Dag &lbrace;selecteert laat u een datum binnen de afgelopen zeven dagen, exclusief de vorige 24 uren selecteren.**
+   1. Als u **Vorige week** het naburige **3} gebied van de Dag {selecteert laat u een datum binnen de afgelopen zeven dagen, exclusief de vorige 24 uren selecteren.**
 
       ![ Vorige week ](assets/backup-date.png)
 
@@ -93,7 +93,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
    ![ beschikbare Steunen ](assets/backup-available.png)
 
-1. Vind de steun u wilt herstellen door het informatiepictogram te gebruiken om informatie betreffende de versie van de code en AEM versie inbegrepen in die steun te bekijken en de implicaties van te overwegen herstellen wanneer [ de steun ](#choosing-the-right-backup) kiest.
+1. Vind de steun u wilt herstellen door het informatiepictogram te gebruiken om informatie betreffende de versie van de code en de versie van AEM inbegrepen in die steun te bekijken en de implicaties van te overwegen herstellen wanneer [ de steun ](#choosing-the-right-backup) kiest.
 
    ![ Steun info ](assets/backup-info.png)
 
@@ -109,12 +109,12 @@ Het reserveproces wordt in werking gesteld en u kunt zijn status in **[bekijken 
 
 Wanneer het herstel met succes wordt voltooid, zal de omgeving:
 
-* Voer dezelfde code en AEM release uit als op het moment dat de terugzetbewerking wordt gestart.
+* Voer dezelfde code en AEM-release uit als op het moment dat de terugzetbewerking wordt gestart.
 * Dezelfde inhoud hebben die beschikbaar was op het tijdstempel van de gekozen opname, met de indexen die opnieuw zijn samengesteld en overeenkomen met de huidige code.
 
 ## De juiste reservekopie kiezen {#choosing-backup}
 
-Cloud Manager-proces voor het terugzetten van zelfstandige bestanden herstelt alleen inhoud naar AEM. Om deze reden, moet u zorgvuldig codeveranderingen overwegen die tussen uw gewenste herstelt punt en de huidige tijd door te herzien begaat geschiedenis tussen huidige begaan identiteitskaart en wordt teruggegeven aan.
+Cloud Manager-proces voor zelfherstel herstelt alleen inhoud naar AEM. Om deze reden, moet u zorgvuldig codeveranderingen overwegen die tussen uw gewenste herstelt punt en de huidige tijd door te herzien begaat geschiedenis tussen huidige begaan identiteitskaart en wordt teruggegeven aan.
 
 Er zijn verschillende scenario&#39;s.
 
@@ -136,11 +136,11 @@ Door op het informatiepictogram voor een back-up te klikken, kunt u logboeken vo
 
 ## Offsite back-up {#offsite-backup}
 
-Regelmatige back-ups dekken het risico van onopzettelijke verwijderingen of technische storingen binnen AEM Cloud Servicen, maar extra risico&#39;s kunnen het gevolg zijn van het falen van een regio. Naast beschikbaarheid is het grootste risico in dergelijke regionale uitvallen een gegevensverlies.
+Regelmatige back-ups dekken het risico van onopzettelijke verwijderingen of technische storingen in AEM Cloud Services, maar extra risico&#39;s kunnen het gevolg zijn van een fout in een regio. Naast beschikbaarheid is het grootste risico in dergelijke regionale uitvallen een gegevensverlies.
 
-AEM as a Cloud Service beperkt dit risico voor alle AEM productieomgevingen door voortdurend alle AEM inhoud naar een afgelegen gebied te kopiëren en deze gedurende drie maanden beschikbaar te stellen voor herstel. Dit vermogen wordt bedoeld als off-site steun.
+AEM as a Cloud Service beperkt dit risico voor alle AEM-productieomgevingen door alle AEM-inhoud voortdurend naar een afgelegen gebied te kopiëren en gedurende drie maanden beschikbaar te stellen voor herstel. Dit vermogen wordt bedoeld als off-site steun.
 
-De restauratie van AEM Cloud Servicen voor het opvoeren en productiemilieu&#39;s van off-site steun wordt uitgevoerd door AEM de Techniek van de Betrouwbaarheid van de Dienst in het geval van gegevensgebiedstroomonderbrekingen.
+Het herstel van AEM Cloud Services voor het maken van testomgevingen en productieomgevingen vanaf offsite back-ups wordt uitgevoerd door AEM Service Reliability Engineering in het geval van een storing in een gegevensgebied.
 
 ## Beperkingen {#limitations}
 

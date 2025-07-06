@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
+source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1780'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21331 samengevat, die op 24 juni 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 2193.
 
-De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-21331}
 
@@ -147,6 +147,7 @@ De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is 
 ### Bekende problemen {#known-issues-21331}
 
 * SITES-33177: Sectiestijlen die zijn opgeslagen als door komma&#39;s gescheiden tekenreeksen, worden verbroken.
+* SITES-33262: Blokken zonder naameigenschap mislukken bij het renderen en publiceren van pagina&#39;s.
 
 ### Verouderde functies en API&#39;s {#deprecated-21331}
 
