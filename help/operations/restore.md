@@ -55,11 +55,11 @@ Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad s
 Standaard heeft geen enkele gebruiker toestemming om inhoud te herstellen in ontwikkelings-, productie- of testomgevingen. Om deze toestemming aan specifieke gebruikers of groepen na deze algemene stappen te delegeren.
 
 1. Maak een productprofiel met een expressieve naam die verwijst naar het herstellen van inhoud.
-1. Verstrek de **toestemming van de Toegang van het Programma 0} {op het vereiste programma.**
+1. Verstrek de **toestemming van de Toegang van het Programma 0&rbrace; &lbrace;op het vereiste programma.**
 1. Verstrek het **Milieu herstellen creeert** toestemming op het vereiste milieu of alle milieu&#39;s van het programma, afhankelijk van uw gebruiksgeval.
 1. Wijs gebruikers toe aan dat profielprofiel.
 
-Voor details bij het beheren van toestemmingen, zie [ documentatie van de Toestemmingen van de Douane 0}.](/help/implementing/cloud-manager/custom-permissions.md)
+Voor details bij het beheren van toestemmingen, zie [ documentatie van de Toestemmingen van de Douane 0&rbrace;.](/help/implementing/cloud-manager/custom-permissions.md)
 
 ## Inhoud herstellen {#restoring-content}
 
@@ -73,7 +73,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
 1. Klik op het programma waarvoor u een herstelbewerking wilt starten.
 
-1. Van de **pagina van het Overzicht van het Programma**, in de **** kaart van Milieu&#39;s, klik de ellipsis knoop naast het milieu waarvoor u wilt in werking stellen herstellen en **selecteren herstellen Inhoud**.
+1. Van de **pagina van het Overzicht van het Programma**, in de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik de ellipsis knoop naast het milieu waarvoor u wilt in werking stellen herstellen en **selecteren herstellen Inhoud**.
 
    ![ herstel optie ](assets/backup-option.png)
 
@@ -85,7 +85,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
       ![ Laatste 24 uren ](assets/backup-time.png)
 
-   1. Als u **Vorige week** het naburige **3} gebied van de Dag {selecteert laat u een datum binnen de afgelopen zeven dagen, exclusief de vorige 24 uren selecteren.**
+   1. Als u **Vorige week** het naburige **3&rbrace; gebied van de Dag &lbrace;selecteert laat u een datum binnen de afgelopen zeven dagen, exclusief de vorige 24 uren selecteren.**
 
       ![ Vorige week ](assets/backup-date.png)
 
