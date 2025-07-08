@@ -5,9 +5,9 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
+source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1620'
 ht-degree: 2%
 
 ---
@@ -202,10 +202,6 @@ Een vorige versie vergelijken met de huidige pagina:
 
 De tijdverdraaiing is een eigenschap die wordt ontworpen om de *gepubliceerde* staat van een pagina op specifieke tijden in het verleden te simuleren.
 
->[!TIP]
->
->[ de Tijd van de Onderbreking kan ook met Lanceringen worden gebruikt om de toekomst ](/help/sites-cloud/authoring/launches/preview.md) voor te vertonen.
-
 Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van Timewarp om auteurs in staat te stellen de gepubliceerde website in de loop van de tijd bij te houden, zodat ze kunnen begrijpen hoe de inhoud is gewijzigd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen.
 
 Deze functie gebruiken:
@@ -214,6 +210,16 @@ Deze functie gebruiken:
 * Het betekent de getoonde versie werd gecreeerd/geactiveerd *vóór* het punt in tijd die in Tijdverdraaiing wordt geselecteerd.
 * Wanneer u naar een pagina navigeert die is verwijderd, wordt deze ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
 * Als geen gepubliceerde versie wordt gevonden, keert Timewarp aan de huidige staat van de pagina op het auteursmilieu terug (de reden is om een fout/404 pagina te verhinderen, die het doorbladeren zou verhinderen).
+
+>[!NOTE]
+>
+>Timewarp werkt en is bedoeld om te worden gebruikt voor AEM-pagina&#39;s - versies voor geschiedenis en lanceringen voor toekomstige inhoudstatussen.
+>
+>De functie werkt niet bij geneste opstarts of wanneer er fragmenten worden gebruikt.
+
+>[!TIP]
+>
+>[ de Tijd van de Onderbreking kan ook met Lanceringen worden gebruikt om de toekomst ](/help/sites-cloud/authoring/launches/preview.md) voor te vertonen.
 
 ### Tijdverdraaiing gebruiken {#using-timewarp}
 
@@ -240,6 +246,7 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 * **Verwijderde versies beïnvloeden Timewarp** - als de versies uit de bewaarplaats dan worden verwijderd kan de Timewarp niet de correcte mening tonen.
 * **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat manueel doen gebruikend [ herstellen ](#revert-to-a-version).
 * **Tijdverdraaiing is gebaseerd op paginacontent** - als de elementen voor het teruggeven van de website, zoals code, css, en activa veranderden, verschilt de mening van wat het oorspronkelijk was. Deze items zijn niet in de gegevensopslagruimte geversiveerd.
+* Timewarp werkt niet voor geneste lanceringen of wanneer ervaringsfragmenten worden gebruikt.
 
 >[!CAUTION]
 >
