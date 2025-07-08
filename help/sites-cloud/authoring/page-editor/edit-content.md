@@ -1,20 +1,20 @@
 ---
-title: Pagina-inhoud bewerken met de AEM Pagina-editor
-description: De AEM pagina-editor is een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
+title: Pagina-inhoud bewerken met de AEM Page Editor
+description: De AEM-pagina-editor is een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 2%
 
 ---
 
-# Pagina-inhoud bewerken met de AEM Pagina-editor {#edit-content}
+# Pagina-inhoud bewerken met de AEM Page Editor {#edit-content}
 
-De AEM pagina-editor is een krachtig hulpmiddel voor het schrijven van de inhoud van een pagina. Leer hoe u dit kunt gebruiken om inhoud te slepen en neer te zetten en inhoud op plaats te bewerken.
+De AEM-pagina-editor is een krachtig hulpmiddel voor het schrijven van de inhoud van een pagina. Leer hoe u dit kunt gebruiken om inhoud te slepen en neer te zetten en inhoud op plaats te bewerken.
 
 ## Overzicht {#overview}
 
@@ -24,13 +24,17 @@ U kunt in de pagina-editor drie basishandelingen uitvoeren om de inhoud te bewer
 1. [ Toevoegend nieuwe activa ](#adding-asset) door hen op de pagina te slepen en te laten vallen.
 1. [ het uitgeven componenten op zijn plaats ](#edit-in-place) die reeds op de pagina bestaan.
 
-De AEM pagina-editor biedt een intuïtieve gebruikersinterface voor het uitvoeren van deze taken, maar biedt ook toegang tot meer geavanceerde functies.
+De AEM-pagina-editor biedt een intuïtieve gebruikersinterface voor het uitvoeren van deze taken, maar biedt ook toegang tot meer geavanceerde functies.
 
 Bovendien kunt u in de editor de bestaande inhoud op uw pagina ordenen door u toe te staan om
 
 * [Componenten verplaatsen](#moving-components)
 * [Componentindeling bewerken](#editing-component-layout)
 * [Componentovererving bewerken](#inherited-components)
+
+>[!NOTE]
+>
+>Uw projectteam kan de redacteur indien nodig aanpassen. Zie [ het Aanpassen van de Authoring van de Pagina ](/help/implementing/developing/extending/page-authoring.md) voor verdere details.
 
 ## Componenten toevoegen {#adding-components}
 
@@ -213,7 +217,7 @@ Een component verplaatsen:
 
 In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de lay-outmodus](/help/sites-cloud/authoring/page-editor/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
 
-1. Wanneer op **&#x200B;**&#x200B;wijze van de plaatsenconsole uitgeeft, selecteer een component om de toolbar van de component te openbaren.
+1. Wanneer op **** wijze van de plaatsenconsole uitgeeft, selecteer een component om de toolbar van de component te openbaren.
 
 1. Selecteer de **Lay-out** actie om de lay-out van de component aan te passen.
 
