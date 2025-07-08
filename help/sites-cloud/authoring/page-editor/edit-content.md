@@ -217,7 +217,7 @@ Een component verplaatsen:
 
 In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de lay-outmodus](/help/sites-cloud/authoring/page-editor/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
 
-1. Wanneer op **** wijze van de plaatsenconsole uitgeeft, selecteer een component om de toolbar van de component te openbaren.
+1. Wanneer op **&#x200B;**&#x200B;wijze van de plaatsenconsole uitgeeft, selecteer een component om de toolbar van de component te openbaren.
 
 1. Selecteer de **Lay-out** actie om de lay-out van de component aan te passen.
 
