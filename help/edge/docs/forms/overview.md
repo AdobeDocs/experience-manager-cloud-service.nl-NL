@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aan de slag met Forms op AEM Edge Delivery Services
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 Deze handleiding helpt u formulieren te begrijpen en implementeren met Adobe Experience Manager (AEM) Edge Delivery Services (EDS). Of u nu een eenvoudig contactformulier of een complex gereedschap voor gegevensverzameling maakt, op deze pagina worden uw opties weergegeven.
 

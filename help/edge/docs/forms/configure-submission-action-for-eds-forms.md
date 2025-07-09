@@ -151,7 +151,7 @@ In dit diagram ziet u hoe de hostpagina HTML ophaalt van de Form Source en deze 
 
 ## CORS instellen voor ingesloten Forms
 
-[ CORS (Cross-Origin Middel dat deelt) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) is een browser veiligheidseigenschap. Als uw hostpagina (bijvoorbeeld `site-a.com` ) een formulier probeert op te halen uit een ander domein (bijvoorbeeld `forms-site-b.com` ), blokkeert de browser het formulier tenzij `forms-site-b.com` het expliciet toestaat via CORS-koppen.
+[ CORS (Cross-Origin Middel dat deelt) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) is een browser veiligheidseigenschap. Als uw hostpagina (bijvoorbeeld `site-a.com` ) een formulier probeert op te halen uit een ander domein (bijvoorbeeld `forms-site-b.com` ), blokkeert de browser het formulier tenzij `forms-site-b.com` het expliciet toestaat via CORS-koppen.
 
 Zonder correcte kopballen CORS op de **server van Source van de Vorm**, verhindert browser de pagina van de Gastheer de vorm te laden, en uw ingebedde vorm zou niet verschijnen.
 
