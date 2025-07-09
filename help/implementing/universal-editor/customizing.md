@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jso
 
 ![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB de Toestand van 0&rbrace; Waar &lbrace;] 
+>[!TAB  de Toestand van 0} Waar {]
 
 ![ Getoonde tekstgebied ](assets/shown.png)
 
@@ -108,8 +108,6 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jso
 ## Aangepaste voorbeeld-URL&#39;s {#custom-preview-urls}
 
 U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [ top-right toolbar van de redacteur ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) zal openen.
-
-Dit is met name nuttig voor toepassingen met specifieke voorproefvereisten, zoals die [ gebruikend Edge Delivery Services met het auteursrecht van WYSIWYG ](/help/edge/wysiwyg-authoring/authoring.md).
 
 Hiervoor neemt u gewoon de gewenste voorvertoning-URL op in een metatag van de van instrumenten voorziene app, zoals in het volgende voorbeeld.
 
