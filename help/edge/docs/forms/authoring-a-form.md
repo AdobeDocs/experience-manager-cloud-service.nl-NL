@@ -3,13 +3,15 @@ title: Hoe kan ik formulieren ontwerpen in AEM?
 description: Leer meer over de verschillende formulierontwerpplatforms die beschikbaar zijn in Adobe Experience Manager (AEM) en hoe u de juiste kunt kiezen op basis van uw vereisten.
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
+exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
-
 
 # Hoe moet Forms in Adobe Experience Manager (AEM) worden geautoriseerd?
 
@@ -19,7 +21,7 @@ Adobe Experience Manager (AEM) biedt een flexibel platform voor het maken van aa
 
 AEM biedt meerdere opties voor het schrijven van formulieren om interactieve en aantrekkelijke formulieren te maken. Houd bij het selecteren van een formulierontwerpomgeving rekening met de volgende factoren:
 
-| ?? **Overweging** | ?? **wat te vragen** |
+| 📝 **Overweging** | 💡 **wat te vragen** |
 |----------------------|--------------------|
 | **Expertise van de Gebruiker** | Wie gaat de formulieren ontwerpen, ontwikkelaars, zakelijke gebruikers of auteurs van inhoud? |
 | **Complexiteit van de Vorm** | Heeft het formulier geavanceerde regels, dynamische secties of integraties nodig? |
@@ -42,7 +44,7 @@ AEM steunt veelvoudige auteursmethodes, elk geschikt voor verschillende gebruike
 * [ Edge Delivery Services Forms ](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms transformeert de manier de vormen worden authored, uitgevoerd, en verwerkt. Door gebruik te maken van Edge Delivery Services kunnen organisaties snelle, veilige en hoogst beschikbare digitale formulieren maken, waardoor de gebruikerservaring en de operationele efficiëntie worden verbeterd in een snelle ontwikkelomgeving. U kunt de Edge Delivery Services Forms op twee manieren ontwerpen:
    * [ het Authoring van WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Gebruik de Universele Redacteur voor visuele, belemmering-en-dalings vormverwezenlijking ideaal voor inhoudsauteurs met beperkte technische kennis. Forms die is geschreven met Universal Editor, wordt geleverd met Edge Delivery Services voor snelle, lichtgewichtrendering.
    * [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/tutorial.md): De hulpmiddelen van het gebruik zoals de Bladen van Microsoft Excel of van Google om vormstructuur en inhoud te bepalen. Deze methode is handig voor zakelijke gebruikers die de voorkeur geven aan spreadsheetinvoer. Deze formulieren worden doorgaans via Edge Delivery Services gepubliceerd en zijn geschikt voor eenvoudige, grote gebruiksgevallen.
-* [ Koploze Authoring ](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Gebruik APIs om formulieren als JSON voor om het even welk front, bijvoorbeeld, React, Angular, mobiele apps, of kiosken, zonder afhankelijk van AEM terug te geven. Momenteel ondersteunen alleen Core Components de levering zonder kop. Zwaarloze formulieren zijn ideaal voor omnichannel gebruiksgevallen en worden gebruikt onafhankelijk van de AEM-rendering van pagina&#39;s, waardoor ze flexibel zijn voor aangepaste front-end implementaties.
+* [ Koploze Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Gebruik APIs om formulieren als JSON voor om het even welk front, bijvoorbeeld, React, Angular, mobiele apps, of kiosken, zonder afhankelijk van AEM terug te geven. Momenteel ondersteunen alleen Core Components de levering zonder kop. Zwaarloze formulieren zijn ideaal voor omnichannel gebruiksgevallen en worden gebruikt onafhankelijk van de AEM-rendering van pagina&#39;s, waardoor ze flexibel zijn voor aangepaste front-end implementaties.
 
 ### Vergelijkende analyse van AEM-methoden voor formulierontwerp
 
@@ -81,24 +83,24 @@ In de volgende tabel vindt u een gedetailleerde vergelijking van de belangrijkst
 | **steun CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Vereist aangepaste integratie |
 | **Eigenschappen van de Verzending** | REST-eindpunt, e-mail, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST-eindpunt, e-mail, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | REST-eindpunt, e-mail, Form Data Model (FDM), Invoke AEM Workflow, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Alleen werkblad | Aangepaste API-eindpunten |
 | **Schema van Gegevens** | FDM, aangepast | FDM, aangepast | FDM, aangepast | Aangepast | Aangepast |
-| **pre-fill** | ✅ | ✅ | ?? (via wizard) | ✅ | Aangepaste implementatie |
+| **pre-fill** | ✅ | ✅ | 💡 (via wizard) | ✅ | Aangepaste implementatie |
 | **Fragments** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Visuele Redacteur van de Regel** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Localization** | ✅ | ✅ | ?? (via sites) | ℹ️ (Excel - handleiding, functie Google Sheets) | Aangepaste implementatie |
-| **Schema van Gegevens (de Boom van Gegevens)** | ✅ | ✅ | ?? (via UI-extensie) | ❌ | Aangepaste implementatie |
+| **Localization** | ✅ | ✅ | 💡 (via sites) | ℹ️ (Excel - handleiding, functie Google Sheets) | Aangepaste implementatie |
+| **Schema van Gegevens (de Boom van Gegevens)** | ✅ | ✅ | 💡 (via UI-extensie) | ❌ | Aangepaste implementatie |
 | **de Steun van het Malplaatje** | ✅ | ✅ | Alleen oorspronkelijke inhoud, geen beleid | ❌ | Aangepaste implementatie |
 | **Portaal** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **Authoring DoR** | ✅ | ✅ | ?? via Derlina) | ❌ | ❌ |
-| **Productie DoR** | ✅ | ✅ | ?? (FORMS-2475 Nieuw) | ❌ | ❌ |
+| **Authoring DoR** | ✅ | ✅ | 💡 (via Derline) | ❌ | ❌ |
+| **Productie DoR** | ✅ | ✅ | 💡 (FORMS-2475 Nieuw) | ❌ | ❌ |
 | **Thema** | ✅ | ✅ | ℹ️ (op projectniveau) | ℹ️ (op projectniveau) | Aangepaste implementatie |
 | **Component van de Douane** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB &amp; de Functies van de Douane** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Verwijzing van het Fragment** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Integratie van het Teken** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Steun RTL** | ❌ | ✅ | ?? | ?? | Aangepaste implementatie |
+| **Steun RTL** | ❌ | ✅ | 💡 | 💡 | Aangepaste implementatie |
 | **Experimentatie** | ❌ | ❌ | ✅ | ✅ | Aangepaste implementatie |
 | **Het Beheer van de Taak via Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **Uitbreiding van Personalization** | ❌ | ❌ | ?? | ❌ | Aangepaste implementatie |
+| **Uitbreiding van Personalization** | ❌ | ❌ | 💡 | ❌ | Aangepaste implementatie |
 | **de Aanpassing van de Redacteur** | ❌ | ❌ | ✅ (via UI-extensie) | ❌ | Aangepaste implementatie |
 | **legt Actie** voor | ✅ | ✅ | ✅ | Alleen werkblad | Aangepaste implementatie |
 
@@ -106,6 +108,6 @@ In de volgende tabel vindt u een gedetailleerde vergelijking van de belangrijkst
 ## Verwant artikel
 
 * [Op documenten gebaseerde authoring met Microsoft Excel of Google Sheets](/help/edge/docs/forms/create-forms.md)
-* [ Universele Redacteur voor het auteursrecht van WYSIWYG ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+* [ Universele Redacteur voor het auteursrecht van WYSIWYG ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 * [Een adaptief formulier maken (basiscomponenten)](/help/forms/creating-adaptive-form.md)
 * [Een adaptief formulier maken (kerncomponenten)](/help/forms/create-an-adaptive-form.md)
