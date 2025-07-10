@@ -3,7 +3,8 @@ title: Aanbevolen procedures voor het ontwerpen van krachtige Forms
 description: Leer essentiële beste praktijken voor het creëren van gebruikersvriendelijk, toegankelijk, en hoog-presterende vormen gebruikend AEM Forms. Verbeter de gegevenskwaliteit, de gebruikerservaring en de prestaties bij verzending.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Deze handleiding bevat een overzicht van het gebruik van formulieren met AEM Edg
 * [Authoring op basis van documenten met Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 * [Universele editor met Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [ Document Authoring (DA) en het Inbedden Inhoud ](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms-verzendservice](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [ de Verzenddienst van AEM Forms ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

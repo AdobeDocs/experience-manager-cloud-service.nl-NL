@@ -3,17 +3,17 @@ title: Verzendacties voor AEM Forms configureren met Edge Delivery Services
 description: Leer hoe u verzendacties in AEM Forms configureert met Edge Delivery Services. Kies tussen Forms-verzendservice en AEM-publicatieactie voor verzending om formuliergegevens veilig en efficiënt te verwerken.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 0%
 
 ---
 
-
 # Formulierverzendingen configureren: waar gaan uw gegevens naartoe?
 
-Nadat een gebruiker **&#x200B;**&#x200B;op uw vorm klikt voorlegt, moet u Edge Delivery Services vertellen wat met die gegevens te doen. U hebt twee hoofdopties:
+Nadat een gebruiker **** op uw vorm klikt voorlegt, moet u Edge Delivery Services vertellen wat met die gegevens te doen. U hebt twee hoofdopties:
 
 ## Methode 1: De AEM Forms-verzendservice gebruiken (vereenvoudigd)
 
@@ -46,7 +46,6 @@ De [ Dienst van de Verzending van Forms ](/help/forms/forms-submission-service.m
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![ de Verzending van Forms ](/help/forms/assets/eds-fss.png)
 
 In dit stroomschema ziet u hoe de Forms-verzendservice de verzonden gegevens verwerkt en naar een geconfigureerd werkblad of e-mail verzendt.
@@ -74,7 +73,7 @@ Voor complexere behoeften, [ vormen (vooral die die met de Universele Redacteur 
 * [Verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Verzenden naar Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Verzenden naar Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [ voorleggen aan Adobe Marketo Engage ](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
@@ -145,13 +144,12 @@ De pagina waar u het formulier wilt weergeven (we noemen het &quot;hostpagina&qu
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![ Ingebedde Architectuur van de Vorm ](/help/forms/assets/eds-embedded-form.png)
 In dit diagram ziet u hoe de hostpagina HTML ophaalt van de Form Source en deze weergeeft. Voor verzending wordt het geconfigureerde eindpunt van het oorspronkelijke formulier gebruikt.
 
 ## CORS instellen voor ingesloten Forms
 
-[ CORS (Cross-Origin Middel dat deelt) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) is een browser veiligheidseigenschap. Als uw hostpagina (bijvoorbeeld `site-a.com` ) een formulier probeert op te halen uit een ander domein (bijvoorbeeld `forms-site-b.com` ), blokkeert de browser het formulier tenzij `forms-site-b.com` het expliciet toestaat via CORS-koppen.
+[ CORS (Cross-Origin Middel dat deelt) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) is een browser veiligheidseigenschap. Als uw hostpagina (bijvoorbeeld `site-a.com` ) een formulier probeert op te halen uit een ander domein (bijvoorbeeld `forms-site-b.com` ), blokkeert de browser het formulier tenzij `forms-site-b.com` het expliciet toestaat via CORS-koppen.
 
 Zonder correcte kopballen CORS op de **server van Source van de Vorm**, verhindert browser de pagina van de Gastheer de vorm te laden, en uw ingebedde vorm zou niet verschijnen.
 
