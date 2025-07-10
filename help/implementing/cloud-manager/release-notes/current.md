@@ -33,7 +33,7 @@ De volgende geplande release is donderdag 7 augustus 2025.
 
 * **de vergunning-gebruik rapport van de Plaats van de Download**
 
-  Op de **pagina van de het gebruikdetails van Plaatsen** (in Cloud Manager, klik **Vergunning**. In de lijst van Oplossingen, in de **rij van de Plaatsen {, klik** het gebruiksdetails van de Mening **), kunnen de klanten** rapport van de Download **nu klikken om zijn gegevens als Csv- dossier uit te voeren.** Deze download vereenvoudigt het analyseren van en het delen van gebruikstendensen. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+  Op de **pagina van de het gebruikdetails van Plaatsen** (in Cloud Manager, klik **Vergunning**. In de lijst van Oplossingen, in de **rij van de Plaatsen &lbrace;, klik** het gebruiksdetails van de Mening **), kunnen de klanten** rapport van de Download **nu klikken om zijn gegevens als Csv- dossier uit te voeren.** Deze download vereenvoudigt het analyseren van en het delen van gebruikstendensen. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
 
   ![ pagina van de het gebruikdetails van Plaatsen ](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
@@ -49,15 +49,15 @@ De volgende mogelijkheden zijn momenteel beschikbaar:
 
 Snel aan een vorige plaatsing terugkeren als de recentste klantenbroncode niet zoals verwacht-geen behoefte werkt om de volledige pijpleiding opnieuw te voeren of begaat manueel terug.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**optie voor een geselecteerd milieu.*
+![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**&#x200B;optie voor een geselecteerd milieu.*
 
 
 ![ herstel vorige code opgesteld dialoogdoos ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*in **herstel vorige code opgesteld**dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt *****.
+*in **herstel vorige code opgesteld**&#x200B;dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt **&#x200B;***.
 
 
 ![ Herstellend activering ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**tot de plaatsing voltooit.*
+*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**&#x200B;tot de plaatsing voltooit.*
 
 
 ![ de codeversie van Source in gebruik ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *de mening van de Details van het Milieu, zoals hierboven gezien, toont nu ook de actieve bron-code versie in gebruik.*
@@ -121,7 +121,7 @@ Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt 
 
 Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services zijn gebouwd en deze mogelijkheid uitbreiden tot buiten de Cloud Service-omgevingen. U kunt **Pijpleidingen Config** gebruiken om montages zoals verkeer het filtreren regels en configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 

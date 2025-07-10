@@ -55,7 +55,7 @@ Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad s
 Standaard heeft geen enkele gebruiker toestemming om inhoud te herstellen in ontwikkelings-, productie- of staging-omgevingen. Gebruik de volgende algemene stappen om deze machtiging te delegeren aan specifieke gebruikers of groepen.
 
 1. Maak een productprofiel met een expressieve naam die verwijst naar het herstellen van inhoud.
-1. Verstrek de **toestemming van de Toegang van het Programma 0} {op het vereiste programma.**
+1. Verstrek de **toestemming van de Toegang van het Programma 0&rbrace; &lbrace;op het vereiste programma.**
 1. Verstrek het **Milieu herstellen creeert** toestemming op het vereiste milieu of alle milieu&#39;s van het programma, afhankelijk van uw gebruiksgeval.
 1. Wijs gebruikers toe aan dat profiel.
 
@@ -85,7 +85,7 @@ Voor details bij het beheren van toestemmingen, zie [ de Toestemmingen van de Do
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
 1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan inhoud u wilt herstellen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen Inhoud**.
 
