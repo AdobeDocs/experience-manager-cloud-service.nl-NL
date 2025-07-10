@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
    Als **toevoegt milieu** optie (gehandicapt) wordt gedimd, kan het aan een gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen zijn.
 
-   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **&#x200B;**&#x200B;kaart van Milieu&#39;s, klik **voegt Milieu** toe.
+   * Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, op de **** kaart van Milieu&#39;s, klik **voegt Milieu** toe.
 
    ![ kaart van Milieu&#39;s ](assets/no-environments.png)
 
-   * Op het linkerzijpaneel, klik ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s** van Gegevens 0&rbrace; &lbrace;, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik **toevoegt Milieu**.
+   * Op het linkerzijpaneel, klik ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) Milieu&#39;s **van Gegevens 0} {, dan op de pagina van Milieu&#39;s, dichtbij de hoger-juiste hoek, klik** toevoegt Milieu **.**
 
      ![ Milieu&#39;s tabel ](assets/environments-tab.png)
 
@@ -77,7 +77,7 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. Klik **sparen**.
 
-De **pagina van het Overzicht** toont nu uw nieuw milieu in de **&#x200B;**&#x200B;kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
+De **pagina van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
 
 ## Meerdere publicatiegebieden {#multiple-regions}
 
@@ -130,26 +130,29 @@ Wijzigingen in de productieomgeving zijn van toepassing op zowel de productie- a
 
 Als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) voor het programma wilt voorzien, adviseert men dat deze levering wordt gedaan alvorens extra toe te voegen publiceert gebieden aan de milieu&#39;s. Anders, gaat het extra publiceer gebiedsverkeer door de volmacht van het primaire gebied.
 
-## Details van toegangsomgeving {#viewing-environment}
+## Details van een omgeving weergeven {#viewing-environment}
 
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Voer een van de volgende handelingen uit om toegang te krijgen tot de omgevingsdetails:
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u details van een milieu wilt bekijken.
 
-   * Van de **pagina van het Overzicht**, in het linkerzijmenu, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
+1. Maak een lijst van alle milieu&#39;s voor het programma door één van het volgende te doen:
 
-   ![ Milieu&#39;s tabel ](assets/environments-tab2.png)
+   * Van het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu&#39;s**.
 
-   * Van de **kaart van Milieu&#39;s**, klik ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen**.
+   ![ Milieu&#39;s tabel ](assets/environments-1.png)
 
-     ![ toon alle optie ](assets/environment-showall.png)
+   * Van het linkerzijmenu, onder **Programma**, klik **Overzicht**, dan van de **Milieu** kaart, klik ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen**.
 
-   De **pagina van Milieu&#39;s** opent en maakt een lijst van alle milieu&#39;s voor het programma.
+     ![ toon alle optie ](assets/environments-2.png)
 
-   ![ het milieu tabel ](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
 1. Voer op de pagina Omgevingen een van de volgende handelingen uit:
 
-   * Klik op een omgeving in de lijst om de details weer te geven.
+   * Klik op een omgeving in de lijst om de details ervan weer te geven.
 
    ![ de details van het Milieu ](assets/environ-preview1.png)
 
@@ -157,9 +160,11 @@ Als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanc
 
    ![ het omgevingsdetails van de Mening ](assets/view-environment-details.png)
 
->[!NOTE]
->
->De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om alle milieu&#39;s van het programma te zien.
+
+## Inhoud van een omgeving herstellen (Alpha) {#restore-environment}
+
+Zie [ Inhoud herstellen in AEM as a Cloud Service ](/help/operations/restore.md).
+
 
 ### De voorbeeldservice openen {#access-preview-service}
 
@@ -191,9 +196,9 @@ Als deze optie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservice
 
 Als u extra hebt geactiveerd publiceer gebieden, kunt u het statuut van deze gebieden van de **kaart van Milieu** controleren.
 
-1. Voor de **pagina van het Overzicht**, bepaal de plaats van de **&#x200B;**&#x200B;kaart van Milieu&#39;s.
+1. Voor de **pagina van het Overzicht**, bepaal de plaats van de **** kaart van Milieu&#39;s.
 
-1. Op de **kaart van Milieu&#39;s**, wijst de **3&rbrace; kolom van de Status &lbrace;op als er om het even welke kwesties met gevormd extra zijn publiceer gebieden.** Klik het **pictogram van Info** voor details van de gebieden.
+1. Op de **kaart van Milieu&#39;s**, wijst de **3} kolom van de Status {op als er om het even welke kwesties met gevormd extra zijn publiceer gebieden.** Klik het **pictogram van Info** voor details van de gebieden.
 
    ![ extra publiceer gebiedsstatusinformatie over de kaart van Milieu ](assets/additional-publish-region-status-environments-card.png)
 
@@ -220,7 +225,7 @@ Ongeacht, [ verkeer wordt altijd verpletterd aan het dichtste gebied dat online 
 
 Als cloudservice beheert Adobe automatisch updates voor uw ontwikkelings-, staging- en productieomgeving in productieprogramma&#39;s.
 
-Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer zulk een milieu niet de recentste openbaar beschikbare versie van AEM in werking stelt, toont de status op de **1&rbrace; kaart van Milieu&#39;s {op het** 3} scherm van het Overzicht **Beschikbare Update**.**&#x200B;**
+Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer zulk een milieu niet de recentste openbaar beschikbare versie van AEM in werking stelt, toont de status op de **1} kaart van Milieu&#39;s {op het** 3} scherm van het Overzicht **Beschikbare Update**.****
 
 ![ de updatestatus van het Milieu ](assets/environ-update.png)
 
@@ -266,7 +271,7 @@ Het **gedrag van de Update** optie varieert afhankelijk van de configuratie en d
 
 Een gebruiker met de **Manager van de Plaatsing** of **BedrijfsEigenaar** rol kan een ontwikkelomgeving schrappen.
 
-Van het **scherm van het Overzicht** van het programma op de **3&rbrace; kaart van Milieu&#39;s &lbrace;, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het ontwikkelmilieu u wilt schrappen.**
+Van het **scherm van het Overzicht** van het programma op de **3} kaart van Milieu&#39;s {, klik** Meer pictogram ![ van het ontwikkelmilieu u wilt schrappen.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)
 
 ![ de optie van de Schrapping ](assets/environ-delete.png)
 
@@ -299,7 +304,7 @@ Een nieuw lusje wordt geopend in uw browser met de openings van een sessiepagina
 
 Slechts heeft een gebruiker met de **rol van de Ontwikkelaar** toegang tot **Developer Console**. Nochtans, voor zandbakprogramma&#39;s, heeft om het even welke gebruiker met toegang tot het zandbakprogramma toegang tot **Developer Console**.
 
-Zie [ Sluimerende en Sluiting van Sandbox Milieu&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) voor meer details.
+Zie [ Sluimerende en Sluiting van Sandbox Milieu&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) voor meer details.
 
 Deze optie is ook beschikbaar bij het **Milieu** lusje van het **venster van het Overzicht** wanneer het klikken van ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van een individueel milieu.
 

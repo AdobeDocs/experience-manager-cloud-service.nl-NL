@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.7.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,11 @@ De volgende geplande release is donderdag 7 augustus 2025.
 
 * **de vergunning-gebruik rapport van de Plaats van de Download**
 
-  Op de **pagina van de het gebruikdetails van Plaatsen** (in Cloud Manager, klik **Vergunning**. In de lijst van Oplossingen, in de **rij van de Plaatsen &lbrace;, klik** het gebruiksdetails van de Mening **), kunnen de klanten** rapport van de Download **nu klikken om zijn gegevens als Csv- dossier uit te voeren.** Deze download vereenvoudigt het analyseren van en het delen van gebruikstendensen. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+  Op de **pagina van de het gebruikdetails van Plaatsen** (in Cloud Manager, klik **Vergunning**. In de lijst van Oplossingen, in de **rij van de Plaatsen {, klik** het gebruiksdetails van de Mening **), kunnen de klanten** rapport van de Download **nu klikken om zijn gegevens als Csv- dossier uit te voeren.** Deze download vereenvoudigt het analyseren van en het delen van gebruikstendensen. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
 
   ![ pagina van de het gebruikdetails van Plaatsen ](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
+
+  Zie [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md).
 
 ## Programma&#39;s voor vroege adoptie {#private-beta-program}
 
@@ -43,28 +45,42 @@ Neem deel aan Cloud Manager alfa- en bètaprogramma&#39;s om exclusieve vroege t
 
 De volgende mogelijkheden zijn momenteel beschikbaar:
 
-
 ### Één-klik terugschroeven van prijzen voor pijpleidingsplaatsingen {#one-click-rollback}
 
-Ga snel aan een vorige plaatsing terug als de recentste code niet zoals verwacht-geen behoefte werkt om de volledige pijpleiding opnieuw uit te voeren of begaat manueel terug.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Snel aan een vorige plaatsing terugkeren als de recentste klantenbroncode niet zoals verwacht-geen behoefte werkt om de volledige pijpleiding opnieuw te voeren of begaat manueel terug.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**optie voor een geselecteerd milieu.*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![ herstel vorige code opgesteld dialoogdoos ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*in **herstel vorige code opgesteld**dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt *****.
+
+
+![ Herstellend activering ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**tot de plaatsing voltooit.*
+
+
+![ de codeversie van Source in gebruik ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *de mening van de Details van het Milieu, zoals hierboven gezien, toont nu ook de actieve bron-code versie in gebruik.*
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ restorecode@adobe.com ](mailto:restorecode@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
+
+Zie ook [ Inhoud terugzetten in AEM as a Cloud Service ](/help/operations/restore.md).
+
+
+### Speciale testomgeving {#specialized-test-environment}
+
+Cloud Manager steunt nu de toevoeging van een nieuw milieutype genoemd **Gespecialiseerde het Testen Milieu**. De omgeving is ontworpen om teams te helpen functies onder bijna-productieomstandigheden te valideren voordat ze live gaan. Dit omgevingstype is verschillend van *Productie + Stadium*, *Ontwikkeling*, of *Snelle Ontwikkeling* milieu&#39;s en biedt een geconcentreerde ruimte voor het runnen van geavanceerde bevestigingsscenario&#39;s aan.
+
+Recente verbetering: U kunt gespecialiseerde testmilieu&#39;s op een niet productiepijplijn nu vormen door een eenvoudigere, meer intuïtieve werkschema. De gestroomlijnde installatie versnelt voltooiing en vermindert configuratiefouten.
+
+Zie [ een Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/specialized-test-environment.md) toevoegen.
+
+![ voeg milieu dialoogdoos met Gespecialiseerde het Testen van Milieu geselecteerde radioknoop ](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png) toe
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ grp-earlyadopter_cs_advtestenvironment@adobe.com ](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
+
+
+### Kies voor uw eigen git (BYOG) - nu met ondersteuning voor Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -105,7 +121,7 @@ Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt 
 
 Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services zijn gebouwd en deze mogelijkheid uitbreiden tot buiten de Cloud Service-omgevingen. U kunt **Pijpleidingen Config** gebruiken om montages zoals verkeer het filtreren regels en configuraties van de Firewall van de Toepassing van het Web (WAF) te beheren, waar toepasselijk. Zie [ Ondersteunde Configuraties ](/help/operations/config-pipeline.md#configurations).
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 
