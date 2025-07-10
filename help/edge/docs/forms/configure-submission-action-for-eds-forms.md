@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formulierverzendingen configureren: waar gaan uw gegevens naartoe?
 
-Nadat een gebruiker **** op uw vorm klikt voorlegt, moet u Edge Delivery Services vertellen wat met die gegevens te doen. U hebt twee hoofdopties:
+Nadat een gebruiker **&#x200B;**&#x200B;op uw vorm klikt voorlegt, moet u Edge Delivery Services vertellen wat met die gegevens te doen. U hebt twee hoofdopties:
 
 ## Methode 1: De AEM Forms-verzendservice gebruiken (vereenvoudigd)
 
@@ -46,6 +46,7 @@ De [ Dienst van de Verzending van Forms ](/help/forms/forms-submission-service.m
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![ de Verzending van Forms ](/help/forms/assets/eds-fss.png)
 
 In dit stroomschema ziet u hoe de Forms-verzendservice de verzonden gegevens verwerkt en naar een geconfigureerd werkblad of e-mail verzendt.
@@ -144,6 +145,7 @@ De pagina waar u het formulier wilt weergeven (we noemen het &quot;hostpagina&qu
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![ Ingebedde Architectuur van de Vorm ](/help/forms/assets/eds-embedded-form.png)
 In dit diagram ziet u hoe de hostpagina HTML ophaalt van de Form Source en deze weergeeft. Voor verzending wordt het geconfigureerde eindpunt van het oorspronkelijke formulier gebruikt.
 
