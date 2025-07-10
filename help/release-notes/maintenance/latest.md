@@ -4,7 +4,7 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ff500e08e31e53f5452eed6cfe06539cabe2ecdd
+source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 1%
@@ -18,9 +18,9 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 ## Release 21484 {#21484}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21484 samengevat, die op 8 juli 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21331.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21484 samengevat, die op 10 juli 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21331.
 
-De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-21484}
 
@@ -38,7 +38,7 @@ Geen.
 * GUIDEN-28104: Het publiceren van een kaart DITA met `chunk=to-content` attributen leidt tot dubbele knopen JCR in de nieuwe output van AEM Sites, die tot overtollige inhoudsstructuur in AEM Sites leiden.
 * GUIDES-29065, GUIDES-28793: De kwesties van prestaties zoals langere ladingstijden en intermitterende onderbrekingen worden waargenomen wanneer het werken met grote inzamelingen.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekende problemen {#known-issues-21484}
 
