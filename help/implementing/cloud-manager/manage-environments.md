@@ -304,7 +304,7 @@ Een nieuw lusje wordt geopend in uw browser met de openings van een sessiepagina
 
 Slechts heeft een gebruiker met de **rol van de Ontwikkelaar** toegang tot **Developer Console**. Nochtans, voor zandbakprogramma&#39;s, heeft om het even welke gebruiker met toegang tot het zandbakprogramma toegang tot **Developer Console**.
 
-Zie [ Sluimerende en Sluiting van Sandbox Milieu&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) voor meer details.
+Zie [ Sluimerende en Sluiting van Sandbox Milieu&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) voor meer details.
 
 Deze optie is ook beschikbaar bij het **Milieu** lusje van het **venster van het Overzicht** wanneer het klikken van ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van een individueel milieu.
 
