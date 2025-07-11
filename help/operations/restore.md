@@ -4,9 +4,9 @@ description: Leer hoe u uw AEM as a Cloud Service-inhoud kunt herstellen vanaf e
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ U kunt uw AEM as a Cloud Service-inhoud vanaf een back-up herstellen met Cloud M
 
 Cloud Manager-proces voor het terugzetten van zelfbediening kopieert gegevens van Adobe-systeemback-ups en herstelt deze in de oorspronkelijke omgeving. Herstel wordt uitgevoerd om gegevens terug te keren die zijn verloren, beschadigd of per ongeluk verwijderd.
 
-Het herstelproces heeft alleen invloed op inhoud, zodat uw code en versie van AEM ongewijzigd blijven. U kunt op elk gewenst moment een herstelbewerking van afzonderlijke omgevingen starten.
+Het herstelproces heeft alleen invloed op inhoud, zodat uw code en versie van AEM ongewijzigd blijven. U kunt op elk gewenst moment een herstelbewerking van afzonderlijke omgevingen starten. (Als u eerder opgestelde broncode op een gemakkelijke en snelle manier moet herstellen, zonder de behoefte om een nieuwe pijpleidingsuitvoering te beginnen, kunt u [ gebruiken herstelt de Vorige Gestelde Code ](/help/operations/restore-previous-code-deployed.md)).
 
 Cloud Manager biedt twee typen back-ups waarvan u de inhoud kunt herstellen.
 
@@ -55,7 +55,7 @@ Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad s
 Standaard heeft geen enkele gebruiker toestemming om inhoud te herstellen in ontwikkelings-, productie- of staging-omgevingen. Gebruik de volgende algemene stappen om deze machtiging te delegeren aan specifieke gebruikers of groepen.
 
 1. Maak een productprofiel met een expressieve naam die verwijst naar het herstellen van inhoud.
-1. Verstrek de **toestemming van de Toegang van het Programma 0&rbrace; &lbrace;op het vereiste programma.**
+1. Verstrek de **toestemming van de Toegang van het Programma 0} {op het vereiste programma.**
 1. Verstrek het **Milieu herstellen creeert** toestemming op het vereiste milieu of alle milieu&#39;s van het programma, afhankelijk van uw gebruiksgeval.
 1. Wijs gebruikers toe aan dat profiel.
 
@@ -85,9 +85,9 @@ Voor details bij het beheren van toestemmingen, zie [ de Toestemmingen van de Do
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
-1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan inhoud u wilt herstellen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen Inhoud**.
+1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan inhoud u wilt herstellen, klik ![ Meer pictogram of ellipse menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen Inhoud**.
 
    ![ herstelt inhoudsoptie van het ellipsmenu ](/help/operations/assets/environments-ellipsis-menu.png)
 
