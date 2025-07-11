@@ -3,9 +3,9 @@ title: Integreer  [!DNL AEM Assets]  terwijl het ontwerpen van inhoud voor  [!DN
 description: Leer hoe te om  [!DNL AEM Assets]  met  [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  met  [!DNL Microsoft Word]  te integreren en  [!DNL Google Docs], integrate [!DNL AEM Assets]  met  [!DNL Universal Editor], integrate [!DNL Dynamic Media]  met  [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities]  met  [!DNL Universal Editor]  en  [!DNL Dynamic Media with OpenAPI capabilities]  met  [!DNL Microsoft Word]  te integreren en  [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ![ de activa van AEM integratie met Universele redacteur ](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services] ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u ontwerpt en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend  [!DNL Universal Editor]  evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[[!DNL Edge Delivery Services] ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u ontwerpt en inhoud op uw website levert. U kunt zowel [ AEM inhoudsbeheer ](/help/sites-cloud/authoring/author-publish.md) gebruiken en [ het auteursrecht van WYSIWYG gebruikend  [!DNL Universal Editor]  evenals op document-Gebaseerde Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 U kunt inhoud bewerken in:
 
@@ -52,9 +52,13 @@ U kunt ook elementen gebruiken die met [!DNL Dynamic Media with OpenAPI capabili
 * Governance (verwijzingen versus kopieën van het element), wat helpt met automatische propagatie van gebeurtenissen in de levenscyclus van elementen zoals vervaldatum, verwijdering en updates.
 * Dynamische afbeeldingsuitvoeringen en Slim uitsnijden.
 * Rijke media optimalisering en levering, zoals adaptieve video die uit-van-de-doos, en originele levering van activa voor PDFs stroomt.
-* Het activa-vlakke beeld rapporteert ([ beperkte beschikbaarheid ](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+<!--
 
-Voor meer details over de mogelijkheden, zie [[!DNL Dynamic Media with OpenAPI capabilities] ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentatie.
+* Asset-level impressions report ([limited availability](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+
+-->
+
+Voor meer details over de mogelijkheden, zie [[!DNL Dynamic Media with OpenAPI capabilities] ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentatie.
 
 ### Vereisten {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 

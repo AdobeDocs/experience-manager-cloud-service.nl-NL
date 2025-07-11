@@ -4,7 +4,9 @@ description: Open de gegevens in de sectie Rapporten van de mening van Assets om
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+hide: true
+hidefromtoc: true
+source-git-commit: 132f601e1bbeeea59dc6a14392a9f6c786b20682
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -50,7 +52,6 @@ De AEM Assets-weergaveomgeving biedt uitgebreide rapportagemogelijkheden via het
    1. **Beschrijving:** voeg een facultatieve beschrijving aan het rapport toe.
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om het rapport van geupload en gedownloade activa binnen die specifieke omslag te produceren. Als u bijvoorbeeld het rapport met middelen nodig hebt die naar een map zijn geüpload, geeft u het pad naar die map op.
    1. **Uitgezochte datuminterval:** selecteer de datumwaaier om te bekijken uploadt of downloadactiviteit binnen de omslag.
-
    <br>
 
    >[!NOTE]
@@ -141,7 +142,7 @@ Krijg leveringsinzichten voor activa die met Dynamische Media worden geleverd, m
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Vereisten {#prereqs-dynamic-media-delivery-reports}
@@ -203,10 +204,9 @@ Volg onderstaande stappen om een rapport te plannen:
    1. **Beschrijving**: Voeg een facultatieve beschrijving aan het rapport toe.
    1. **Uitgezochte omslagweg:** selecteer een omslagweg om een rapport voor activa te produceren die aan of van die specifieke omslag in de toekomst zullen worden geupload.
    1. Wissel **rapport van het Programma:** Wissel om het rapport voor een recentere tijd of voor zijn herhaalde voorkomen te plannen.
-
       ![ planningsrapport ](/help/assets/assets/schedule-reports1.svg)
 
-   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde type activiteit in de AEM-omgeving. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1&rbrace; gebied van het datuminterval &lbrace;.**
+   1. **kies frequentie:** specificeer het interval voor het produceren van het rapport (bijvoorbeeld, dagelijks, wekelijks, maandelijks, jaarlijks, of eens) en plaats de datum en de tijd om het rapport samen met de einddatum voor herhaling in werking te stellen. Voor een eenmalig rapport selecteert u het datumbereik voor het rapport over het geselecteerde type activiteit in de AEM-omgeving. Bijvoorbeeld, als u een rapport over gedownloade activa van de tiende tot 29e (toekomstige data) van een specifieke maand nodig hebt, selecteer deze data in het **Uitgezochte 1} gebied van het datuminterval {.**
 
    >[!NOTE]
    >

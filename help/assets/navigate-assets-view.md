@@ -4,9 +4,9 @@ description: Begrijp gebruikersinterface van en navigatie in  [!DNL Assets view]
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Wanneer u zich aanmeldt bij [!DNL Assets view] , ziet u de volgende interface.
 
 ![[!DNL Assets view] gebruikersinterface ](assets/assets-view-interface.png)
 
-**A**: De linkerzijbalk om bewaarplaats te doorbladeren en toegang tot een paar andere opties **B** verleent: Vertoning of doet ineenstorten de linkerzijbalk om activa-bekijkend gebied **C** te verhogen: De onderzoeksresultaten van de filter **D**: Selecteer alle inhoud van de geselecteerde omslag **E**: Opties om activa **F** te sorteren: De doos van het Onderzoek **2&rbrace; G**: Upload of sleep en laat vallen dossiers gebruikend `Add Assets` knoop **H**: Creeer een nieuwe omslag **I**: Schakelaar tussen verschillende meningen
+**A**: De linkerzijbalk om bewaarplaats te doorbladeren en toegang tot een paar andere opties **B** verleent: Vertoning of doet ineenstorten de linkerzijbalk om activa-bekijkend gebied **C** te verhogen: De onderzoeksresultaten van de filter **D**: Selecteer alle inhoud van de geselecteerde omslag **E**: Opties om activa **F** te sorteren: De doos van het Onderzoek **2} G**: Upload of sleep en laat vallen dossiers gebruikend `Add Assets` knoop **H**: Creeer een nieuwe omslag **I**: Schakelaar tussen verschillende meningen
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -40,7 +40,11 @@ Wanneer u door elementen in een map bladert, kunt u met de interface elementmini
 * **onlangs Bekeken**: Lijst van activa die u onlangs previewde. [!DNL Assets view] geeft alleen de elementen weer die u voorvertoont. De elementen die u voorbij schuift tijdens het bladeren door de bestanden of mappen in de opslagplaats worden niet weergegeven.
 * [ Inzamelingen ](/help/assets/manage-collections-assets-view.md): Een inzameling is een reeks activa, omslagen, of andere inzamelingen binnen de mening van Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
-* [ Inzichten ](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], kunt u inzichten in real time op uw dashboard bekijken. Met de Assets-weergave kunt u realtime gegevens voor uw Assets-weergaveomgeving bekijken met het dashboard Insights. U kunt real-time gebeurtenismetriek tijdens de laatste 30 dagen of voor de laatste 12 maanden bekijken.
+<!--
+
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
+
+-->
 * **Afval**: Maak een lijst van de activa die van de wortel **[!UICONTROL Assets]** omslag worden geschrapt. U kunt een middel in de omslag van het Afval selecteren om het aan zijn originele plaats te herstellen of het permanent te schrappen. U kunt een trefwoord opgeven of filters toepassen, zoals de status van het element, het bestandstype, het mime-type, de afbeeldingsgrootte, het maken van elementen, wijzigingen en vervaldatums, en het filteren op elementen die de huidige gebruiker heeft verwijderd. U kunt ook aangepaste filters toepassen om te zoeken naar de juiste middelen in de map met prullenmand. Voor meer informatie bij het gebruiken van standaard en douanefilters, zie hoe te [ onderzoeksactiva in de mening van Assets ](/help/assets/search-assets-view.md).
 * **Montages**: U kunt diverse opties van de mening vormen Assets gebruikend **Montages**, zoals, de vormen van Meta-gegevens, Rapporten, en het Beheer van de Taxonomie.
 
@@ -76,7 +80,7 @@ Om activa voor te vertonen, het te selecteren en [!UICONTROL Details] ![ details
 
 ![ Voorproef een activa ](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**&rbrace;: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
+**A**: Terugkeer aan de huidige omslag of het huidige onderzoeksresultaat in de bewaarplaats **B**: Naam en formaat voor het dossier u **C** previewing: Wijs taken **D** toe: Geavanceerde meta-gegevens **E**: Trefwoorden en slimme markeringen **F**: De opmerking en annoteert **G**}: De taken van de mening met betrekking tot de geselecteerde Activa **H**: [ Mening en beheer versies ](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: De vertoningen van de mening van beeld **J**: geef beeld **K** uit: De uitvoeringen van de Media van de mening Dynamische met inbegrip van het Slim Uitsnijden en Dynamische Media met mogelijkheden OpenAPI handelingen. **L**: Basis meta-gegevens **M**: Geavanceerde meta-gegevens **N**: Trefwoorden en slimme markeringen **O**: Ga aan vorige of volgende activa in de huidige omslag zonder terug naar de omslag **P** te gaan: Beeld dichter. Zoomen, volledig scherm en andere opties.
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 
@@ -96,7 +100,7 @@ Other use cases after previewing.
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
