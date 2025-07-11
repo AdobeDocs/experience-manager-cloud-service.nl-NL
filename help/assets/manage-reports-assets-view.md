@@ -143,7 +143,7 @@ Krijg leveringsinzichten voor activa die met Dynamische Media worden geleverd, m
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Vereisten {#prereqs-dynamic-media-delivery-reports}
