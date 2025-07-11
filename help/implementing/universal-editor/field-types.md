@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ Een veldobject heeft de volgende typedefinitie.
 | `readOnly` | `boolean` | Is het veld alleen-lezen | Nee |
 | `hidden` | `boolean` | Is het veld standaard verborgen | Nee |
 | `condition` | `RulesLogic` | Regel om het gebied te tonen of te verbergen dat op a [ wordt gebaseerd voorwaarde ](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nee |
-| `multi` | `boolean` | Is het veld een veld met meerdere velden | Nee |
+| `multi` | `boolean` | Is het gebied een multi gebied <br/> Nota dat container het nesten niet voor multi-gebieden in het eigenschappen paneel wordt toegelaten | Nee |
 | `validation` | `ValidationType` | Validatieregel(s) voor het veld | Nee |
 | `raw` | `unknown` | Onbewerkte gegevens die door de component kunnen worden gebruikt | Nee |
 
@@ -289,7 +289,7 @@ Net als bij een booleaanse component staat een componenttype voor selectievakjes
 
 #### Container {#container}
 
-Met een containercomponenttype kunnen componenten worden gegroepeerd, inclusief ondersteuning voor meerdere velden. Het biedt een extra configuratie aan.
+Met een containercomponenttype kunnen componenten worden gegroepeerd, inclusief ondersteuning voor meerdere velden. Het biedt een extra configuratie aan. Het nesten van containers is niet toegestaan voor meerdere velden in het deelvenster Eigenschappen
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|

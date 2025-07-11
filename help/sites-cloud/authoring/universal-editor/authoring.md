@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -130,6 +130,8 @@ Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht
 
    ![ Uitgezocht voeg pictogram toe ](assets/add-icon.png)
 
+1. Als er meer dan één component is toegestaan voor de container, selecteert u in de vervolgkeuzelijst welke component u wilt invoegen. Als slechts één component wordt toegestaan, wordt het opgenomen automatisch.
+
 De component wordt opgenomen in de container en kan in de redacteur worden uitgegeven.
 
 >[!TIP]
@@ -176,7 +178,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ## Inhoud voorvertonen {#previewing-content}
 
@@ -190,7 +192,7 @@ Overerving is het mechanisme waarbij inhoud kan worden gekoppeld, zodat het ene 
 
 Met de Universal Editor kunt u overerving voor inhoud annuleren door de inhoud eenvoudig bij te werken. De redacteur maakt automatisch overerving voor alle veranderingen onbruikbaar die door auteurs op die pagina worden aangebracht, ervoor zorgen dat de gewijzigde inhoud wordt behouden wanneer de updates van de blauwdruk worden gesynchroniseerd.
 
-Als de {**Uitbreiding van 0} AEM Multi-Site-Management (MSM) voor uw programma wordt toegelaten, hebt u [ extra toolbaropties ](#inheritance-extension) om de overervingsstatus van een individuele component binnen de Universele Redacteur te bekijken en te veranderen.**
+Als de {**Uitbreiding van 0} AEM Multi-Site-Management (MSM) voor uw programma wordt toegelaten, hebt u** extra toolbaropties [ om de overervingsstatus van een individuele component binnen de Universele Redacteur te bekijken en te veranderen.](#inheritance-extension)
 
 Voor meer details op hoe de overerving het gebruiken van de Universele Redacteur werkt, zie [ Overerving van de Inhoud in de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
@@ -222,7 +224,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 

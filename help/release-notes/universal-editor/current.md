@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.06.19
-description: Dit zijn de releaseopmerkingen voor de release 2025.06.19 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.07.09
+description: Dit zijn de releaseopmerkingen voor de release 2025.07.09 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5ffae9e548ca952975b3ea805808e227102ec99f
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.06.19 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.07.09 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 19 juni 2025 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 9 juli 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,29 +22,35 @@ Dit zijn de opmerkingen bij de release van 19 juni 2025 van de Universal Editor.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* **Steun voor multi-fields in het Spoorwegverkeer van Eigenschappen** -
-  [ de containercomponent ](/help/implementing/universal-editor/field-types.md#container) kan nu worden gebruikt om multi-gebiedseigenschappen tot stand te brengen.
-* **Steun voor genestelde eigenschappen** - het [`name` gebied ](/help/implementing/universal-editor/field-types.md#nesting) steunt nu wegen om bezit het nesten toe te laten.
-* **resizable juist paneel** - het zijpaneel kan nu resized aan betere rekening voor langere die inhoud in het zijpaneel wordt getoond.
+* [ wanneer het klikken van **voegt** toolbarknoop op containers toe, ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) als slechts één componententype wordt toegestaan, wordt het opgenomen onmiddellijk zonder selectie van het drop-down menu te vereisen.
+* [ de optie van de authentificatiekopbaltoolbar ](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) is geplaatst achter een eigenschapknevel, aangezien het in de meeste gevallen niet nuttig is.
+* [ aangezien container het nesten niet voor multi-gebieden in het eigenschappen paneel wordt toegelaten, ](/help/implementing/universal-editor/field-types.md#fields) de teruggevende routine nu filters uit genestelde containers van de gebiedslijst om ongeldig het nesten te verhinderen.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
-U kunt bepaalde functies testen door deel uit te maken van het Adobe-programma voor vroegtijdige adoptie.
+Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar Customer Success Manager van Adobe via het e-mailadres dat bij uw Adobe ID hoort.
 
-### **ongedaan maken/opnieuw** {#undo-redo}
+### Nieuwe RTE {#new-rte}
+
+De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster.
+
+### Ongedaan maken/Opnieuw {#undo-redo}
 
 Ongedaan maken en opnieuw uitvoeren is nu beschikbaar voor auteurs van inhoud in de Universal Editor.
 
 * Dit omvat bewerkingen die in de context zijn uitgevoerd, bewerkingen die zijn uitgevoerd via het deelvenster Eigenschappen, en het toevoegen (of dupliceren), verplaatsen en verwijderen van blokken.
 * Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
 
-Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar Customer Success Manager van Adobe via het e-mailadres dat bij uw Adobe ID hoort.
-
 ## Overige verbeteringen {#other-improvements}
 
-* De zeer belangrijke botsingsfouten van het middel toen het bewegen van blokken tussen containers werden bevestigd.
-* Er is een probleem opgelost waardoor het dupliceren van het laatste blok van een container mislukt.
-* In de vervolgkeuzelijst Handeling toevoegen worden nu alleen componenten weergegeven waarvoor een geschikte plug-in is gedefinieerd in het `component-definition.json` -bestand.
-* De wijzigingsdatum die in het dialoogvenster Publiceren wordt gebruikt, is vastgesteld op het moment dat pagina&#39;s in sommige gevallen niet als gewijzigd werden herkend en niet opnieuw werden gepubliceerd.
-* Het overervingsgedrag MSM waarbij het bewerken van een container geannuleerde overerving voor onderliggende knooppunten. Dit gedrag is nu opgelost.
-* `fetchUrl` is hersteld, waardoor bewegende blokken van de ene container naar de andere worden hersteld.
+* Er is een probleem opgelost waarbij het verwijderen van een enkele elementverwijzing niet mogelijk was bij bewerking via de vastgoedrail.
+* Er is een probleem opgelost waarbij het deelvenster Eigenschappen oneindig zou worden geladen omdat elementverwijzingen automatisch naar arrays werden geconverteerd, waardoor een oneindige laadstatus ontstond.
+   * De referentiewaarden van elementen worden nu als zodanig opgeslagen, zonder automatische omzetting in arrays.
+* Er is een probleem opgetreden waarbij in het deelvenster Eigenschappen geen velden werden weergegeven wanneer een model was gedefinieerd, maar geen inhoud bevatte.
+   * Hierdoor werd een oneindige laadstatus voor het deelvenster Eigenschappen veroorzaakt voor lege detailreacties, zoals lege inhoudsfragmenten.
+* De configuratie ESLint is refactored voor verenigbaarheid met versie 9, met inbegrip van bijgewerkte regels en plugin steun.
+
+## Afwijkingen {#deprecations}
+
+* De component `text-input` is nu officieel vervangen.
+   * Gebruik in `model-definition.json` de tekstcomponent om tekstinvoer voor het deelvenster Eigenschappen te maken.

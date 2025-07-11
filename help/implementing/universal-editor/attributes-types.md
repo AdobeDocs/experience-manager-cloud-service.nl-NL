@@ -4,9 +4,9 @@ description: Leer over de gegevensattributen en de punttypes die de Universele R
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,6 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 * Dit is niet rechtstreeks vereist voor de tag waarin de eigenschap `data-aue-type` is ingesteld.
 * Als deze niet is ingesteld, wordt het kenmerk `data-aue-resource` van het dichtstbijzijnde bovenliggende element gebruikt.
 
-`data-aue-prop` is vereist wanneer u een bewerking wilt uitvoeren in context en met uitzondering van een container waarin dit optioneel is (als de container een inhoudsfragment is en de eigenschap verwijst naar een veld met meerdere referenties).
+`data-aue-prop` is vereist wanneer u in context wilt bewerken, behalve in een container waarin dit optioneel is (als de container een inhoudsfragment is en de eigenschap verwijst naar een veld met meerdere referenties).
 
 * `data-aue-prop` is het kenmerk dat moet worden bijgewerkt voor de primaire sleutel van `data-aue-resource` .
