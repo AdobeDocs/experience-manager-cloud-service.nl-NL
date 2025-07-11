@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -67,17 +67,15 @@ Doe een groeten aan een Digital Asset Management-oplossing die de uiteenlopende 
 
 [![ zie de Gids ](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
-<!--
 
-### Insights to take data-driven decisions {#insights-data}
+### Inzichten om gegevensgestuurde beslissingen te nemen {#insights-data}
 
-To keep pace with content velocity, actionable insights are essential. The Assets view offers advanced insights within the My Workspace, providing valuable data on asset performance, audience usage, and engagements. Marketers can make data-driven decisions, optimize content strategies, and refine their downstream delivery to achieve optimal results. With access to meaningful insights, businesses can stay ahead of the competition and drive exceptional outcomes.
+Om gelijke tred te houden met de snelheid van de inhoud, zijn activeerbare inzichten essentieel. De Assets-weergave biedt geavanceerde inzichten binnen de My Workspace en biedt waardevolle gegevens over de prestaties van bedrijfsmiddelen, het gebruik van het publiek en services. Marktdeelnemers kunnen gegevensgestuurde beslissingen nemen, inhoudsstrategieën optimaliseren en hun aflevering achteraf verfijnen om optimale resultaten te behalen. Met toegang tot betekenisvolle inzichten kunnen bedrijven de concurrentie blijven voorlopen en uitzonderlijke resultaten aansturen.
 
-![Insights overview](assets/insights-overview.gif)
+![ Overzicht van Inzichten ](assets/insights-overview.gif)
 
-[![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
--->
 
 ### Adobe Photoshop Express-integratie om samenwerking te versnellen {#accelerate-collaboration}
 
