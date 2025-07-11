@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2025.4.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de versie
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Bekijk de video Overzicht van de release van april 2025 voor een overzicht van de functies die zijn toegevoegd in de release van 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464008?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
@@ -55,7 +55,7 @@ Als u de lijst met nieuwe gebruikersinterfaces aan de clientzijde verder invult 
 
 Dynamic Media (Scene7) op AEM as a Cloud Service is niet geschikt voor HIPAA en kan niet worden gebruikt in AEM-omgevingen waar uitgebreide beveiliging is ingeschakeld.
 
-Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1&rbrace; kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
+Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1} kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
 
 Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn dat de Dynamische stapel van Media (Scene7) niet HIPAA-klaar is.
 
@@ -65,7 +65,7 @@ Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn
 
 Het tabblad Bandbreedte in het Dynamic Media Classic-rapportagedashboard wordt niet meer ondersteund vanaf april 2025.
 
-Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Zie [ Bandbreedte en Opslag, Types van rapporten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 ## Nieuwe functies in Assets View {#new-features-assets-view}
 
@@ -81,29 +81,31 @@ Met de Assets-weergave kunt u nu snel elke versie van een element selecteren en 
 
 ![ vergelijk versies van activa ](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Functies vóór de release
 
-* [ Universele Redacteur - de Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): De Universele Redacteur staat u nu toe om de Fragmenten van de Vorm voor Adaptieve Forms tot stand te brengen en opnieuw te gebruiken. Deze fragmenten zijn herbruikbare formuliersecties (bijvoorbeeld contactgegevens, toestemmingsvelden) die één keer kunnen worden gemaakt en op meerdere formulieren kunnen worden toegepast. Met deze functie stroomlijnt u het maken van formulieren, zorgt u voor consistentie en verbetert u de efficiëntie van het ontwerpen.
+* [ Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): De Universele Redacteur steunt nu de verwezenlijking van zowel AanpassingsForms als herbruikbare Fragments van de Vorm. Auteurs kunnen visueel formulieren maken, verzendacties configureren en reCAPTCHA-validatie toevoegen, allemaal in een vereenvoudigde WYSIWYG-ontwerpomgeving. Deze mogelijkheid versnelt het maken van formulieren, verbetert de consistentie en verbetert de bescherming tegen spam en geautomatiseerd misbruik.
 
 * [ de Bibliotheek van het Document van SharePoint - sparen Bijlagen met Oorspronkelijke Filenames ](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): U hebt nu de optie om vormgehechtheid te bewaren gebruikend hun originele filenames wanneer het opslaan van hen in een Bibliotheek van het Document van SharePoint. Deze verbetering vereenvoudigt de identificatie en het beheer van geüploade bestanden.
 
 * **Redacteur van de Regel**:
    * [ Binaire Voorwaarde met de Gebeurtenis van de Klik in &quot;wanneer&quot;Clausule ](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): De Redacteur van de Regel staat nu toe combinerend een gebeurtenis van de knoopklik (_wordt geklikt_) met andere voorwaarden binnen de &quot;wanneer&quot;clausule. Dit laat nauwkeurigere controle over regeluitvoering toe die op gebruikersinteractie en andere factoren wordt gebaseerd. Opmerking: wanneer u meerdere voorwaarden gebruikt, moet de gebeurtenis click de eerste weergegeven voorwaarde zijn.
    * [ de Voorwaarden van de Bevestiging voor Gebieden en Comités ](/help/forms/rule-editor-core-components-usecases.md): De Redacteur van de Regel omvat nu _IsValid_ en _IsNotValid_ voorwaarden. Hiermee kunt u de validatiestatus controleren van specifieke velden of volledige deelvensters (zoals lay-outs zoals Horizontale tabbladen, Verticale tabbladen, Accordeons en Wizards), waardoor de navigatie en gebruikerservaring van formulieren op basis van validatieresultaten wordt verbeterd.
-* **Verbeterd Beheer van het Toepassingsgebied voor de Lijsten van SharePoint**: De plaatsen van SharePoint steunen nu alle beheerde wegen, bijvoorbeeld, /sites en /teams. Deze verbetering maakt een bredere integratie mogelijk in verschillende SharePoint-sitestructuren, waardoor u flexibeler kunt werken met organisatorische inhoud.
-* **Steun voor het Opslaan van Document van Verslag aan de Lijst van SharePoint**: Forms die gebruikend een op lijst-Gebaseerd Model van de Gegevens van de Vorm van SharePoint (FDM) wordt gecreeerd kan het Document van Verslag (DoR) aan de Lijsten van SharePoint nu opslaan door het Document van het het gebiedsbezit van de Verwijzing van de Bind van het Verslag te vormen. Dankzij deze verbetering kunnen ondersteunde formuliergegevens en -documenten naadloos worden geïntegreerd met SharePoint-opslag.
+* [ Verbeterd Beheer van het Toepassingsgebied voor de Lijsten van SharePoint ](/help/forms/connect-forms-to-sharepoint-list.md): De plaatsen van SharePoint steunen nu alle beheerde wegen, bijvoorbeeld, /sites en /teams. Deze verbetering maakt een bredere integratie mogelijk in verschillende SharePoint-sitestructuren, waardoor u flexibeler kunt werken met organisatorische inhoud.
+* [ Steun voor het Opslaan van Document van Verslag aan de Lijst van SharePoint ](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms die gebruikend een op lijst-Gebaseerd Model van de Gegevens van de Vorm van SharePoint (FDM) wordt gecreeerd kan het Document van Verslag (DoR) aan de Lijsten van SharePoint nu opslaan door het Document van het het gebiedsbezit van de Verwijzing van de Bind van het Verslag te vormen. Dankzij deze verbetering kunnen ondersteunde formuliergegevens en -documenten naadloos worden geïntegreerd met SharePoint-opslag.
+* [ auto-Toewijzing Steun voor de AanpassingsFragmenten van de Vorm ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form): De adaptieve Forms steunt nu automatische toevoeging van passende fragmenten wanneer de schemavoorwerpen zich op een bepaalde fragmentstructuur richten, vormverwezenlijking stroomlijnen en hergebruik bevorderen.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
-De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnende gebruikers.
+* [ Integratie van AEM Forms met Adobe Experience Platform ](/help/forms/aem-forms-aep-connector.md): AEM Forms aan de Schakelaar van Adobe Experience Platform laat naadloze integratie tussen Aanpassings Forms en Adobe Experience Platform toe. Met deze functie kunnen formuliergegevens worden toegewezen aan XDM-schema&#39;s en in real-time rechtstreeks naar AEP worden verzonden. Het stroomlijnt gegevensvangst voor verpersoonlijking en activeringsgebruiksgevallen over de oplossingen van Adobe Experience Cloud.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -125,7 +127,7 @@ De integratiemogelijkheden tussen Forms en AEP zijn nu beschikbaar voor beginnen
 
 Ontwikkelaars kunnen AEM als Cloud Service-functies diep integreren in hun eigen toepassingen en tools. Nieuwe AEM as a Cloud Service API&#39;s volgen de OpenAPI-specificatie, met als doel consistent, goed gedocumenteerd en gebruikersvriendelijk te zijn. De geloofsbrieven voor eindpunten die authentificatie vereisen worden geproduceerd door de projecten van Adobe Developer Console tot stand te brengen en steun OAuth server-aan-Server, Web App, en Enige Pagina App (SPA).
 
-[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
+[ zie de volledige lijst ](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) van op OpenAPI-Gebaseerde APIs, [ meer ](/help/implementing/developing/open-api-based-apis.md) leren, en probeert uit een [ leerprogramma van begin tot eind ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrerend configuratie en gebruik.
 
 Bekijk deze video om te leren hoe u een geverifieerde API voor later gebruik kunt configureren:
 
@@ -196,7 +198,7 @@ E-mail [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedbac
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -216,4 +218,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.

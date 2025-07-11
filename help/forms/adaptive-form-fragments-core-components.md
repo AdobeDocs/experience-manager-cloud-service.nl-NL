@@ -6,9 +6,9 @@ keywords: Adaptieve formulierfragmenten toevoegen, Adaptieve formulierfragmenten
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/adaptive-form-fragments.md) |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Hoewel elk formulier voor een bepaald doel is ontworpen, zijn er in de meeste vormen enkele gangbare segmenten, zoals het verstrekken van persoonlijke gegevens zoals naam en adres, familiedetails en inkomstengegevens. Formulierontwikkelaars moeten deze algemene segmenten telkens maken wanneer een nieuw formulier wordt gemaakt.
 
@@ -32,7 +32,7 @@ U kunt een fragment meerdere keren aan een document toevoegen en eigenschappen v
 
 >[!NOTE]
 >
-> U kunt uw fragmentervaring voor gebruikers met [ gemakkelijk aanpassen vormt dialoog en de dialoog van het Ontwerp van de component van het Fragment van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> U kunt uw fragmentervaring voor gebruikers met [ gemakkelijk aanpassen vormt dialoog en de dialoog van het Ontwerp van de component van het Fragment van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Een adaptief formulierfragment maken {#create-a-fragment}
 
@@ -119,15 +119,14 @@ U kunt een formulierfragment op basis van geen en schema meerdere keren gebruike
 
 ![ gebruikend veelvoudige fragment in adaptieve vorm ](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## Ondersteuning voor automatische toewijzing van fragmenten in een adaptief formulier
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+Wanneer u een adaptief formulierfragment maakt op basis van een JSON-schemadefinitie, kan dit automatisch opnieuw worden gebruikt in formulieren die met hetzelfde schema zijn gemaakt.
+Als u een schemaobject of geneste objecten sleept die overeenkomen met de JSON-schemadefinitietoewijzing van een adaptief formulierfragment, wordt het object vervangen door het overeenkomende adaptieve formulierfragment. In plaats van een deelvenster met afzonderlijke velden toe te voegen, voegt het formulier het toegewezen adaptieve formulierfragment in.
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+![ belemmering en laat vallen een fragment ](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+U kunt een gebonden adaptief formulierfragment ook slepen en neerzetten vanuit de bibliotheek met adaptief formulierfragment in de zoekfunctie voor AEM-inhoud en de juiste bindingsverwijzing opgeven in het dialoogvenster Component bewerken van het deelvenster Adaptief formulierfragment.
 
 ## Fragmenten beheren {#manage-fragments}
 
@@ -149,7 +148,7 @@ U kunt verschillende bewerkingen uitvoeren op Adaptief-formulierfragmenten met d
   </tr>
    <tr>
    <td><p>Voorvertoning</p> </td>
-   <td><p>Hiermee kunt u een voorbeeld van het fragment weergeven als een HTML of aangepaste voorvertoning door gegevens uit een XML-bestand samen te voegen met het fragment. Voor meer informatie, zie <a> Previewing een vorm </a>.<br /> <br /> </p> </td>
+   <td><p>Hiermee kunt u een voorvertoning van het fragment weergeven als een HTML of een aangepaste voorvertoning door gegevens uit een XML-bestand samen te voegen met het fragment. Voor meer informatie, zie <a> Previewing een vorm </a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Downloaden</p> </td>
@@ -164,7 +163,7 @@ U kunt verschillende bewerkingen uitvoeren op Adaptief-formulierfragmenten met d
    <td><p>Genereert een woordenboek voor het lokaliseren van het geselecteerde fragment. Voor meer informatie, zie <a> Localizing Adaptive Forms </a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publish / Unpublish</p> </td>
+   <td><p>Publiceren/Publiceren ongedaan maken</p> </td>
    <td><p>Hiermee publiceert u het geselecteerde fragment of maakt u de publicatie ervan ongedaan. <br /> <br /> </p> </td>
   </tr>
   <tr>

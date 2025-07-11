@@ -4,17 +4,17 @@ description: Met de adaptieve Forms-regeleditor kunnen gebruikers regels schrijv
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
+source-git-commit: 7d5e9690d84d2389576eb85b2030271b76588488
 workflow-type: tm+mt
 source-wordcount: '2169'
 ht-degree: 0%
 
 ---
 
-
 # De gebruikersinterface van de Redacteur van de regel voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd
 
-De gebruikersinterface van de Rule Editor voor Adaptive Forms op basis van Core Components verbetert het proces voor het maken van formulieren in Adobe Experience Manager (AEM). Het stelt zowel zakelijke gebruikers als ontwikkelaars in staat dynamisch gedrag en complexe logica in formulieren te implementeren door regels te schrijven die handelingen activeren op basis van vooraf gedefinieerde voorwaarden, gebruikersinvoer en interacties. Deze functie ondersteunt moderne JavaScript-functies, waaronder ES10-functies, en biedt een intuïtieve visuele editor die het regelschrijfproces vereenvoudigt.
+De gebruikersinterface van de Rule Editor voor Adaptive Forms op basis van Core Components verbetert het proces voor het maken van formulieren in Adobe Experience Manager (AEM). Het stelt zowel zakelijke gebruikers als ontwikkelaars in staat dynamisch gedrag en complexe logica in formulieren te implementeren door regels te schrijven die handelingen activeren op basis van vooraf gedefinieerde voorwaarden, gebruikersinvoer en interacties. Deze functie ondersteunt moderne JavaScript-functies tot ES2022 en biedt een intuïtieve visuele editor die het regelschrijfproces vereenvoudigt.
 De Editor voor regels is handig voor het stroomlijnen van de ervaring die het invullen van formulieren met zich meebrengt, zodat u zowel accuraat als efficiënt kunt werken. Hiermee kunt u deelvensters en formulieren valideren of opnieuw instellen en kunt u aangepaste functies uitvoeren om waarden van formulierobjecten te berekenen. Met zijn steun voor geneste voorwaarden en de capaciteit om de modeldiensten van de Gegevens van de Vorm aan te halen, is het Gebruikersinterface van de Redacteur van de Regel een essentiële component voor het creëren van ontvankelijke, gebruikersvriendelijke, en adaptieve vormen.
 
 ## Het begrip van de regel redacteur gebruikersinterface {#understanding-the-rule-editor-user-interface}
@@ -238,7 +238,7 @@ U kunt een gecombineerde regel schrijven om de zichtbaarheid van het veld Echtge
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -340,7 +340,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -478,7 +478,7 @@ Ga als volgt te werk om regels te kopiëren en te plakken:
 
 ## Volgende stap
 
-Om de diverse exploitanttypes en de gebeurtenissen in de regelredacteur van een Aanpassende Vorm te begrijpen, verwijs naar de [ Beschikbare Types en Gebeurtenissen van Exploitant in de Redacteur van de Regel van een Aangepast 1&rbrace; artikel van de Vorm.](/help/forms/rule-editor-core-components-events-operators.md)
+Om de diverse exploitanttypes en de gebeurtenissen in de regelredacteur van een Aanpassende Vorm te begrijpen, verwijs naar de [ Beschikbare Types en Gebeurtenissen van Exploitant in de Redacteur van de Regel van een Aangepast 1} artikel van de Vorm.](/help/forms/rule-editor-core-components-events-operators.md)
 
 
 ## Zie ook

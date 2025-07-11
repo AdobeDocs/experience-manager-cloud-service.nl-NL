@@ -4,9 +4,9 @@ description: Leer een sjabloon te genereren voor een Document of Record (DoR) vo
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4085'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -395,6 +395,14 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
    ```
 
 1. Selecteer **[!UICONTROL Done]** om de wijzigingen in de branding op te slaan.
+
+>[!NOTE]
+> 
+> Om een titel van de douanevorm in uw Document van Verslag te tonen, geef de **Titel van de Vorm van de Douane** in **Document van Eigenschappen van het Verslag** > **Eigenschappen van de Hoofdpagina** uit. Deze aangepaste titel:
+> 
+> * Wordt weergegeven in de koptekst van de gegenereerde PDF
+> * Wordt weergegeven als de titel in de documenteigenschappen van PDF
+> * Wordt weergegeven als de titel Weergave bij openen als de PDF wordt geopend
 
 ## Document met ondersteuning voor records in de Adaptive Form Editor {#dor-support-in-adaptiveform}
 

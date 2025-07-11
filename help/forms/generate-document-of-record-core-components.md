@@ -4,9 +4,9 @@ description: Leer een sjabloon te genereren voor een Document of Record (DoR) vo
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3099'
 ht-degree: 0%
 
 ---
@@ -380,7 +380,13 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
 1. Selecteer **[!UICONTROL Done]** om de wijzigingen in de branding op te slaan.
 
-
+>[!NOTE]
+> 
+> Om een titel van de douanevorm in uw Document van Verslag te tonen, geef de **Titel van de Vorm van de Douane** in **Document van Eigenschappen van het Verslag** > **Eigenschappen van de Hoofdpagina** uit. Deze aangepaste titel:
+> 
+> * Wordt weergegeven in de koptekst van de gegenereerde PDF
+> * Wordt weergegeven als de titel in de documenteigenschappen van PDF
+> * Wordt weergegeven als de titel Weergave bij openen als de PDF wordt geopend
 
 ## Tabel- en kolomindelingen voor deelvensters in document van record {#table-and-column-layouts-for-panels-in-document-of-record}
 

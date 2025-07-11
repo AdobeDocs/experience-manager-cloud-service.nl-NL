@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2654'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 > **Beschikbaarheid van de Versie**
 >
-> * **AEM 6.5**: [ Overzicht van de Diensten van het Document van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=nl-NL)
+> * **AEM 6.5**: [ Overzicht van de Diensten van het Document van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: Dit artikel
 
 ## Inleiding
@@ -44,7 +44,7 @@ De [ API verwijzingsdocumentatie ](https://developer.adobe.com/experience-cloud/
 
 ## Document genereren
 
-Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens (XML) om documenten te genereren in PDF en de indeling Afdrukken, zoals de indelingen PS, PCL, DPL, IPL en ZPL. Deze APIs gebruikt PDF en de malplaatjes XFA met [ gegevens van XML ](communications-known-issues-limitations.md#form-data) om één enkel document op bestelling of veelvoudige documenten te produceren die een partijbaan gebruiken.
+Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens (XML) om documenten te genereren in de indelingen PDF, AFP (Advanced Function Presentation) en Afdrukformaten zoals PS, PCL, DPL, IPL en ZPL. Deze APIs gebruiken PDF en de malplaatjes XFA met [ gegevens van XML ](communications-known-issues-limitations.md#form-data) om één enkel document op bestelling of veelvoudige documenten te produceren die een partijbaan gebruiken.
 
 Typisch, creeert u een malplaatje gebruikend [ Designer ](use-forms-designer.md) en gebruikt Mededelingen APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
@@ -54,14 +54,28 @@ Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen
 
 ### Belangrijke mogelijkheden voor het genereren van documenten
 
-#### PDF-documenten maken {#create-pdf-documents}
+#### Documenten maken in de elektronische indeling PDF/AFP
 
-Met de API&#39;s voor het genereren van documenten kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief PDF-document. Met andere woorden, gebruikers kunnen de formuliergegevens niet invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een PDF-document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
+Met de API&#39;s voor het genereren van documenten kunt u een document maken in PDF- of AFP-indeling die is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief document. Met andere woorden, gebruikers kunnen de formuliergegevens niet invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
 
 ![ creeer PDF documenten ](assets/outPutPDF_popup.png)
-Afbeelding: Normale workflow voor het maken van een PDF-document
+Afbeelding: Standaardworkflow voor het maken van een document
 
-De API voor het genereren van documenten retourneert het gegenereerde PDF-document. U kunt de gegenereerde PDF&#39;s optioneel ook uploaden naar Azure Blob Storage.
+In de onderstaande tabel ziet u het verschil tussen de AFP- en PDF-indelingen:
+
+| **Eigenschap** | **AFP (de Geavanceerde Presentatie van de Functie)** | **PDF (Portable Document Format)** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **Doel** | Afdrukken op grote schaal en productie van transactiedocumenten | Documenten delen en weergeven voor algemeen gebruik |
+| **Geval van het Gebruik** | Bankafschriften, rekeningen, facturen, verzekeringsdocumenten | E-boeken, formulieren, rapporten, hervatten, handleidingen |
+| **Oorsprong van het Platform** | Ontwikkeld door IBM | Ontwikkeld door Adobe |
+| **Structuur** | Paginageoriënteerde indeling met gestructureerde velden en objecten | Paginageoriënteerd maar met vaste indeling |
+| **Editability** | Ontworpen voor afdrukken in productie en zelden bewerkt | Kan worden bewerkt met verschillende gereedschappen, bijvoorbeeld Adobe Acrobat |
+| **Grootte &amp; Prestaties van het Dossier** | Geoptimaliseerd voor prestaties in een omgeving met hoge snelheden | Kan groter en minder geoptimaliseerd zijn voor bulkuitvoer |
+| **Interactiviteit** | Minimaal tot nul; statische pagina&#39;s | Ondersteunt interactieve elementen zoals formulieren, koppelingen, JavaScript |
+| **Controle van de Output** | Fijne controle over de lay-out van printers | Visuele lay-out geoptimaliseerd voor scherm en afdrukken |
+| **Doopvonten en Grafieken** | Gebruikt font- en bronverwijzingen; vereist dat renderers deze interpreteren | Hiermee worden lettertypen en afbeeldingen rechtstreeks in het bestand ingesloten |
+
+De API voor het genereren van documenten retourneert het gegenereerde PDF-document of AFP-document. U kunt de gegenereerde PDF&#39;s optioneel ook uploaden naar Azure Blob Storage.
 
 <span class="preview"> Het uploaden van geproduceerde PDFs die de generatie API van het document aan het vermogen van de Opslag van Azure Blob gebruiken is onder [ Vroege Programma van de Aannemer ](/help/forms/early-access-ea-features.md). U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
