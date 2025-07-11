@@ -38,7 +38,7 @@ Genereert een AFP-bestand (Advanced Function Presentation) met een XDP-sjabloon 
 
 ### Toestemming
 
-U kunt of **BasicAuth** gebruiken (geloofsbrieven Admin) voor lokale milieu&#39;s of **** vergunning BeveelAuth voor de instanties van de Wolk van AEM.
+U kunt of **BasicAuth** gebruiken (geloofsbrieven Admin) voor lokale milieu&#39;s of **&#x200B;**&#x200B;vergunning BeveelAuth voor de instanties van de Wolk van AEM.
 
 ### Verzoek
 
