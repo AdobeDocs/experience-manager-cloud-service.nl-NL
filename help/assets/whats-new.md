@@ -3,9 +3,9 @@ title: Nieuwe functies in Content Hub
 description: Meer informatie over enkele onlangs gestarte Content Hub-mogelijkheden
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 9d706fcaf0014ec5a719e52d37a563f222d760d0
+source-git-commit: dfbe7a639f69c2e5a8a6fc864b6071e1aa1fb7ba
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,23 @@ In de volgende video ziet u Content Hub-sleutelmogelijkheden:
 >
 >[ Assets Ultimate ](/help/assets/assets-ultimate-overview.md) en Assets as a Cloud Service omvatten 250 Beperkte gebruikers van Content Hub. [ Assets Prime ](/help/assets/assets-prime.md) omvat 50 Beperkte gebruikers van Content Hub.
 
-Enkele van de onlangs gestarte Content Hub mogelijkheden omvatten:
+## Releasedatum {#release-date}
+
+De releasedatum van de Content Hub-functierelease (2025.6.0) is 26 juni 2025 (dezelfde datum als die van de AEM as a Cloud Service-release). De volgende release met functies (2025.7.0) is gepland voor 31 juli 2025.
+
+## Release-functies juni {#june-release-features}
+
+### Beheer van verzamelingen {#collections-governance}
+
+Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren, zodat alleen geautoriseerde gebruikers gegroepeerde elementen kunnen weergeven of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+
+## Functies van mei release {#may-release-features}
+
+De release van Content Hub May bevat de volgende functies:
 
 * [Toegangsbeheer op basis van kenmerken](#attribute-based-access-control)
 
@@ -30,13 +46,11 @@ Enkele van de onlangs gestarte Content Hub mogelijkheden omvatten:
 
 * [Openbare koppeling delen](#public-link-sharing)
 
-* [Beheer van verzamelingen](#collections-governance)
-
 * [Meerdere elementen downloaden als ZIP](#download-multiple-assets-as-zip)
 
 * [Dynamische media-uitvoeringen in Content Hub](#dynamic-media-renditions)
 
-## Op kenmerken gebaseerde toegangscontrole (ABAC) {#attribute-based-access-control}
+### Op kenmerken gebaseerde toegangscontrole (ABAC) {#attribute-based-access-control}
 
 Met Content Hub kunt u nu op regels gebaseerde beperkingen toepassen op toegang tot elementen. Machtigingen voor bedrijfsmiddelen zorgen voor governance en zorgen er ook voor dat alleen de relevante bedrijfsmiddelen toegankelijk zijn voor gebruikers.
 
@@ -50,46 +64,34 @@ Enkele belangrijke voordelen van op Attribuut-Gebaseerd Toegangsbeheer omvatten:
 
 * Vermindert het aantal duplicaten - verbetert de integriteit van elementen. Er zijn dubbele machtigingen nodig in op mappen gebaseerde machtigingen wanneer dezelfde elementen met verschillende groepen worden gedeeld.
 
-[!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
-## UI-branding {#ui-branding}
+### UI-branding {#ui-branding}
 
 In Content Hub kunnen beheerders nu de gebruikersinterface aanpassen met merkspecifieke elementen, zoals bannerafbeeldingen, bannertitels en platte tekst, en met primaire en secundaire kleuren. Deze verbeteringen zorgen voor consistentie tussen merken, vereenvoudigen het instappen van gebruikers en bouwen vertrouwen.
 
 ![ het Brandmerken UI ](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
-## Openbare koppeling delen {#public-link-sharing}
+### Openbare koppeling delen {#public-link-sharing}
 
 Content Hub ondersteunt nu het genereren van deelbare koppelingen, zodat externe gebruikers zonder toegang tot de toepassing metagegevens van middelen kunnen bekijken of elementen kunnen downloaden.
 
 ![ het Brandmerken UI ](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
-## Beheer van verzamelingen {#collections-governance}
-
-Met Content Hub kunt u nu de toegang tot verzamelingen tijdens het maken beheren, zodat alleen geautoriseerde gebruikers gegroepeerde elementen kunnen weergeven of beheren. Het zorgt voor betere veiligheid, betere samenwerking, georganiseerd activabeheer, en vereenvoudigd bestuur.
-
->[!VIDEO](https://video.tv.adobe.com/v/3463336)
-
-[!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
-
->[!NOTE]
->
->Beheer van verzamelingen is een beperkte beschikbaarheid. U kunt het toegelaten krijgen door een steunkaartje te creëren.
-
-## Meerdere elementen downloaden als ZIP {#download-multiple-assets-as-zip}
+### Meerdere elementen downloaden als ZIP {#download-multiple-assets-as-zip}
 
 Met Content Hub kunt u nu ook de geselecteerde elementen en de bijbehorende uitvoeringen downloaden in een ZIP-bestand en niet als afzonderlijke bestanden die het bestandsbeheer voor u vereenvoudigen.
 
-[!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
-## Dynamische media-uitvoeringen in Content Hub {#dynamic-media-renditions}
+### Dynamische media-uitvoeringen in Content Hub {#dynamic-media-renditions}
 
 Open al uw dynamische vooraf ingestelde vertoningen van Media en slimme gewassen voor download, direct van binnen de Gebruikersinterface van Content Hub.
 
 &#x200B; ![ Dynamische vertoningen van Media ](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE &#x200B; Dive dieper in deze Eigenschap &#x200B;]{type=Informative url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE  Dive dieper in deze Eigenschap ]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}

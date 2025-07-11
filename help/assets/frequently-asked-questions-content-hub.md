@@ -2,9 +2,9 @@
 title: Veelgestelde vragen (FAQ's) voor Content Hub
 description: Antwoorden op enkele veelgestelde vragen (FAQ's) voor Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Het is mogelijk om Content Hub te evalueren zonder gevolgen voor uw gebruikers/p
 
 Er is een programma voor vroege toegang tot Content Hub voor Sandbox-programma&#39;s en de productieomgevingen van de auteur. Voor meer informatie, zie [ Inleiding aan Programma&#39;s Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Neem contact op met uw Adobe-accountteam voor meer informatie over het programma voor vroege toegang.
 
-Content Hub is nog niet beschikbaar voor niet-productieomgevingen (stadium &amp; ontwikkeling). Assets Ultimate zal naar verwachting in maart 2025 beschikbaar zijn voor stadium-/ontwikkelomgevingen.
+Content Hub is nog niet beschikbaar voor niet-productieomgevingen (stadium &amp; ontwikkeling). De verwachte beschikbaarheid voor stadium-/ontwikkelomgevingen voor Assets Ultimate is maart 2025.
 
 ## Waarom zie ik geen middelen na het aanmelden bij Content Hub? {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Er zijn een paar configuraties van hoe gebruikers worden toegewezen aan [!DNL Co
    >
    >De gebruiker die aan Uitdrukkelijke en Assets productprofielen in twee Consoles Admin wordt toegewezen moet het zelfde e-mailadres hebben en een bedrijfs **rekening van de Onderneming of van de School gebruiken**, en niet **Persoonlijke**. De ideale configuratie moet zowel Consoles Admin opstelling als **Federated ID** met vertrouwensverhouding opstelling tussen hen hebben, zodat de gebruiker een naadloze enige sign-on ervaring heeft. Sommige Express-plannen (bijvoorbeeld Express Teams) bieden geen ondersteuning voor Federated ID/Single Sign-On.
 
-Naast de juiste productrechten vereist de integratie van Adobe Express in Content Hub dat de toegewezen gebruiker minstens [!UICONTROL Can Edit] toestemmingen op de het auteursmilieu van Assets die Content Hub aandrijft, op minstens de **[!UICONTROL # /content/dam/hydrated-assets/]** omslaghiërarchie heeft, waar de gebruikers van Content Hub inhoud kunnen bewaren die zij gebruikend Druk creeerden. Zie [ het Beheer van Toestemmingen ](/help/security/touch-ui-principal-view.md) in de mening Admin (Aanraak UI) of een vereenvoudigd [ toestemmingenbeheer in de mening van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Naast de juiste productrechten vereist de integratie van Adobe Express in Content Hub dat de toegewezen gebruiker minstens [!UICONTROL Can Edit] toestemmingen op de het auteursmilieu van Assets die Content Hub aandrijft, op minstens de **[#UICONTROL /content/dam/hydrated-assets/]** omslaghiërarchie heeft, waar de gebruikers van Content Hub inhoud kunnen bewaren die zij gebruikend Druk creeerden. Zie [ het Beheer van Toestemmingen ](/help/security/touch-ui-principal-view.md) in de mening Admin (Aanraak UI) of een vereenvoudigd [ toestemmingenbeheer in de mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kan ik Content Hub zo instellen dat de merkrichtlijnen van mijn organisatie als een link op de homepage worden weergegeven? {#content-hub-setup-brand-guidelines}
 
@@ -97,3 +97,42 @@ Adobe biedt migratiesupport van Brand Portal naar Content Hub die u kunt gebruik
 ## Waarom kan ik de optie Productinstellingen/Configuratie in Content Hub niet zien? {#ui-configuration-option-missing}
 
 Om tot het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md) toegang te hebben, moet u a [ Beheerder van Content Hub ](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator) zijn. Als u aan het het productprofiel van de Beheerders van AEM op de productie auteurinstantie in Adobe Admin Console wordt toegewezen en u nog niet de configuratieoptie ziet, zorg ervoor dat het de productprofiel van de Beheerders van AEM niet anders wordt genoemd. Zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) voor meer details.
+
+## Hoe pakt Content Hub de beperkingen van Brand Portal aan? {#content-hub-brand-portal-comparison}
+
+
+De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tussen de twee oplossingen:
+
+| Gebied | Capaciteit | Content Hub | Brand Portal |
+|---|---|----|----|
+| Distributie configureren | Metagegevens voor filters, elementdetails en elementenpagina toevoegen | ✓ | - |
+|  | Externe koppelingen configureren vanuit portal | ✓ | - |
+|  | Bannerberichten configureren | ✓ | ✓ |
+|  | Bannerafbeelding voor branding configureren | ✓ | ✓ |
+|  | Primaire en secundaire kleuren voor UI configureren volgens de vereisten voor branding | ✓ | - |
+| Elementen delen via het DAM | Oorspronkelijke goedgekeurde middelen delen via DAM | ✓ | ✓ |
+|  | Goedgekeurde elementen worden automatisch gesynchroniseerd | ✓ | - |
+| Zoeken en filters | Dynamische filters (opties worden dynamisch weergegeven op basis van de weergegeven elementen) | ✓ | - |
+|  | Zoekgeschiedenis | ✓ | - |
+| Elementen uploaden | Lokaal station | ✓ | ✓ |
+|  | Configureerbare metagegevens toevoegen tijdens het uploaden van elementen | ✓ | - |
+| Downloaden en uitvoeren | Oorspronkelijk middel downloaden | ✓ | ✓ |
+|  | Statische vertoningen delen en downloaden van DAM | ✓ | ✓ |
+|  | Dynamische uitvoeringen downloaden (voorinstelling en slimme gewassen) | ✓ | ✓ |
+|  | Weergave en downloaden van verlopen elementen beperken | ✓ | - |
+| Delen en verzamelingen van koppelingen | Delen van koppeling voor gebruikers met aanmelding | ✓ | ✓ |
+|  | Openbare collecties | ✓ | ✓ |
+|  | Zoeken in verzamelingen | ✓ | - |
+|  | Anonieme koppeling delen | ✓ | ✓ |
+|  | Privéverzamelingen | ✓ | ✓ |
+| Machtigingen | Op ACL gebaseerde toestemmingen | - | ✓ |
+|  | Toegangsbeheer op basis van kenmerken | ✓ | - |
+| Express-integratie | Content Hub Assets bewerken in Adobe Express en opslaan naar DAM | ✓ | - |
+| Dashboards en rapporten | Het dashboard met inzichten | ✓ | - |
+| UI-uitbreidbaarheid | Aangepaste extensiepunten op pagina met elementdetails | Beperkte beschikbaarheid | - |
+| Innovaties komen binnenkort | Favoriete verzamelingen per gebruiker | ✓ | - |
+|  | Vastgezette verzamelingen door beheerder | ✓ | - |
+|  | Semantische zoekopdracht | ✓ | - |
+|  | Lokale weergave van zoekopdrachten en metagegevens | ✓ | - |
+
+

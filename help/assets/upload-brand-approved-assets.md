@@ -3,9 +3,9 @@ title: Upload uw door uw merk goedgekeurde middelen naar  [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -61,21 +61,6 @@ Voer de volgende stappen uit om elementen aan Content Hub toe te voegen:
 1. Klik op **[!UICONTROL Upload]** om elementen te uploaden naar de Content Hub. Het bevestigingsvak [!UICONTROL Review details] wordt weergegeven. Klik op [!UICONTROL Continue].
 
 1. Assets begint met uploaden. Klik op [!UICONTROL New Upload] om de uploadprocedure opnieuw te starten. Klik op [!UICONTROL Done] om het uploaden te voltooien.
-
-Beheerders kunnen ook de verplichte en optionele velden configureren die worden weergegeven tijdens het uploaden van elementen, zoals de naam van een campagne, trefwoorden, kanalen enzovoort. Voor meer informatie, zie [ het gebruikersinterface van Content Hub ](configure-content-hub-ui-options.md#configure-upload-options-content-hub) vormen.
-
-
-## Middelen aan Content Hub toevoegen vanuit OneDrive- of Dropbox-gegevensbronnen {#add-assets-onedrive-dropbox}
-
-Middelen toevoegen aan Content Hub vanaf OneDrive of Dropbox-gegevensbronnen:
-
-1. Klik op **[!UICONTROL Add Assets]** om het dialoogvenster **[!UICONTROL Add your approved assets]** weer te geven waarin u elementen kunt importeren van OneDrive of Dropbox.
-
-1. Klik op **[!UICONTROL OneDrive]** of **[!UICONTROL Dropbox]** om het importproces te starten. Content Hub vraagt u zich aan te melden bij uw OneDrive- of Dropbox-account en vervolgens de mapstructuur van OneDrive of Dropbox weer te geven in het linkerdeelvenster.
-
-1. Klik op het plus-pictogram naast het bestand of de mapnaam om het item in de lijst met geselecteerde items weer te geven. Na het selecteren van alle dossiers die u aan het portaal van Content Hub moet toevoegen, herhaal stap 3 tot 6 van [ activa aan Content Hub van het lokale dossiersysteem ](#add-assets-local-file-system) toevoegen om het uploadproces te voltooien.
-
-   ![ upload activa aan Content Hub van OneDrive of Dropbox ](assets/add-assets-onedrive-dropbox.png)
 
 Beheerders kunnen ook de verplichte en optionele velden configureren die worden weergegeven tijdens het uploaden van elementen, zoals de naam van een campagne, trefwoorden, kanalen enzovoort. Voor meer informatie, zie [ het gebruikersinterface van Content Hub ](configure-content-hub-ui-options.md#configure-upload-options-content-hub) vormen.
 
