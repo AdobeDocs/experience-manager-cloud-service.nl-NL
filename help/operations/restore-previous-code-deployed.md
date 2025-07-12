@@ -1,12 +1,12 @@
 ---
-title: De vorige Source-code die in AEM as a Cloud Service is geïmplementeerd herstellen
+title: Vorige Source-code die is geïmplementeerd herstellen
 description: Leer hoe te om een milieu aan zijn laatste succesvolle bouw&amp te herstellen;ndash; geen vereiste pijpleiding.
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->&#x200B;>De functie die in dit artikel wordt beschreven, is alleen beschikbaar via het alfakanaalprogramma voor vroege adoptie. Om omhoog voor alpha te ondertekenen, zie [ Één-klik terugschroeven van prijzen voor pijpleidingsplaatsingen ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>>De functie die in dit artikel wordt beschreven, is alleen beschikbaar via het alfakanaalprogramma voor vroege adoptie. Om omhoog voor alpha te ondertekenen, zie [ Één-klik terugschroeven van prijzen voor pijpleidingsplaatsingen ](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Het gebruik **herstelt vorige code die** wordt opgesteld om een milieu terug onmiddellijk aan zijn laatste succesvolle bouwstijl-geen vereiste pijpleidingslooppas terug te rollen.
 
@@ -61,7 +61,7 @@ Als u enkel gegevens wilt herstellen, die zijn verloren, beschadigd, of toevalli
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
 1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan broncode u wilt herstellen, klik ![ Meer pictogram of ellipse menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen** > **Vorige opgestelde code**.
 
