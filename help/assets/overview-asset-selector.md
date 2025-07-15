@@ -3,7 +3,7 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a57bcc24798dbb3acd3d19526848c4dd9adf3d1f
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 0%
@@ -162,9 +162,9 @@ U kunt elementen in de Asset Selector sorteren op naam, afmetingen of grootte va
 Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
 
 * ![ lijstmening ](assets/do-not-localize/list-view.png) [!UICONTROL **de Mening van de Lijst**] de lijstmening toont scrollable dossiers en omslagen in één enkele kolom.
-* ![&#128279;](assets/do-not-localize/grid-view.png) [!UICONTROL **de mening van het Net**] van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.
+* ![ ](assets/do-not-localize/grid-view.png) de mening van het Net [!UICONTROL **van de netmening toont scrollable dossiers en omslagen in een net van rijen en kolommen.**]
 * ![ galeriemening ](assets/do-not-localize/gallery-view.png) [!UICONTROL **de Mening van de Galerij**] de dossiers of de omslagen van de galeriemening in een centrum-gesloten horizontale lijst.
-* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** &#x200B;] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
+* ![ watervalmening ](assets/do-not-localize/waterfall-view.png) [!UICONTROL **de Mening van de Waterval** ] de dossiers of de omslagen van de watervalmening in de vorm van een Bridge.
 
 ### Gegevens en metagegevens van middelen {#asset-details-and-metadata}
 
@@ -202,7 +202,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -230,7 +230,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <p>
         <em> dig omhoog de mogelijkheden om de Selector van Activa met toepassingen te integreren niet-Adobe.</em>
         </p>
-    </td>
+    </td>   
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Afbeelding voor middelenkiezer integreren"><br/>
         <a href="integrate-asset-selector-dynamic-media-open-api.md"> integreer de Selector van Activa met Dynamische Media Open APIs </a>
@@ -286,4 +286,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
 >* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
 >* [ integreer de Selector van Activa met Dynamische Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [ Visuals van het Product aangedreven door de Integratie van AEM Assets voor Commerce ](https://experienceleague.adobe.com/nl/docs/commerce/product-visuals/overview)
+>* [ Visuals van het Product aangedreven door de Integratie van AEM Assets voor Commerce ](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)

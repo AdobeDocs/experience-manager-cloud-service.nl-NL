@@ -3,9 +3,9 @@ title: Toepassing Asset Selector aanpassen
 description: Gebruik functies om de kiezer van het element in uw toepassing aan te passen.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Met Asset Selector kunt u verschillende componenten aanpassen op basis van voork
 * [Contextafhankelijke aanroepfilter](#contextual-invocation-filter)
 * [dragOptions, eigenschap](#drag-options-property)
 
-U moet de eerste vereisten in het {**dossier 0} index.html of een gelijkaardig dossier binnen uw toepassingsimplementatie bepalen om de authentificatiedetails te bepalen om tot de [!DNL Experience Manager Assets] bewaarplaats toegang te hebben.** Als u klaar bent, kunt u naar wens codefragmenten toevoegen.
+U moet de eerste vereisten in het {**dossier 0} index.html of een gelijkaardig dossier binnen uw toepassingsimplementatie bepalen om de authentificatiedetails te bepalen om tot de** bewaarplaats toegang te hebben. [!DNL Experience Manager Assets] Als u klaar bent, kunt u naar wens codefragmenten toevoegen.
 
 ## Deelvenster Filter aanpassen {#customize-filter-panel}
 
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## Uploaden in Asset Selector {#upload-in-asset-selector}
 
-U kunt bestanden of mappen vanuit uw lokale bestandssysteem uploaden naar Asset Selector. Als u bestanden wilt uploaden met het lokale bestandssysteem, moet u doorgaans een upload-functie gebruiken die wordt geleverd door een Asset Selector-microfront-end toepassing. Verschillende codefragmenten die vereist zijn om het uploaden in de elementenkiezer aan te roepen, zijn:
+U kunt bestanden of mappen vanuit uw lokale bestandssysteem uploaden naar Asset Selector. Als u bestanden wilt uploaden met het lokale bestandssysteem, moet u doorgaans een upload-functie gebruiken die wordt geleverd door een Asset Selector-microfront-end toepassing. De `upload` verschillende codefragmenten die vereist zijn om het uploaden in een elementenkiezer aan te roepen, zijn:
 
 * [Eenvoudig formuliercodefragment uploaden](#basic-upload)
+* [Configuratie uploaden](#upload-config)
 * [Uploaden met metagegevens](#upload-with-metadata)
 * [Aangepaste upload](#customized-upload)
 * [Uploaden met bronnen van derden](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Configuratie uploaden {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*Meer eigenschappen zijn `metadataSchema` , `onMetadataFormChange` , `targetUploadPath` , `hideUploadButton` , `onUploadStart` , `importSettings` `onUploadComplete` , `onFilesChange` ,`uploadingPlaceholder`* . Zie [ de eigenschappen van de Selecteur van Activa ](#asset-selector-properties.md) voor meer informatie.
 
 ### Uploaden met metagegevens {#upload-with-metadata}
 
