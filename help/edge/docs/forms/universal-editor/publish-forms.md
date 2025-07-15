@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adaptief formulier publiceren naar Edge Delivery Services
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
 
 
 Wanneer het formulier gereed en gebruiksklaar is, kunt u het publiceren zodat het voor uw klanten toegankelijk is voor gegevensverzameling en -verzending. Als u het formulier publiceert, weet u zeker dat het formulier beschikbaar is op Edge Delivery, zodat gebruikers er probleemloos mee kunnen werken. Met dit proces kunnen klanten het formulier in real-time invullen en verzenden, zodat ze gegevens op efficiënte wijze kunnen vastleggen en de verwerking kunnen stroomlijnen.
@@ -66,7 +66,7 @@ export const submitBaseUrl = 'http://localhost:4503';
 
 ### De configuratie van CORS wijzigen
 
-Pas de **montages CORS** aan om de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery toe te staan. Verwijs naar de [ Gids van de Configuratie CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) voor details.
+Pas de **montages CORS** aan om de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery toe te staan. Verwijs naar de [ Gids van de Configuratie CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) voor details.
 
 **de Configuratie van de Steekproef CORS:**
 
@@ -81,11 +81,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
 
-Voor lokale ontwikkeling, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) om CORS van uw **gastheer URL van ontwikkelingsUI** toe te laten.
+Voor lokale ontwikkeling, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) om CORS van uw **gastheer URL van ontwikkelingsUI** toe te laten.
 
 ### Filter Referrer configureren
 
-Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud Manager. [ weet meer ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) over het vormen van het verwijzingsfilter op een instantie van de Dienst van de Wolk AEM die een wolkenmanager gebruikt.
+Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud Manager. [ weet meer ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) over het vormen van het verwijzingsfilter op een instantie van de Dienst van de Wolk AEM die een wolkenmanager gebruikt.
 
 **Configuratie JSON voor de Filter van de Referateur:**
 
