@@ -4,9 +4,9 @@ description: Creëer en lever hoogwaardige formulieren op Adobe Experience Manag
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,11 @@ maakt gebruik van gewone HTML, moderne CSS en vanilla JavaScript om uitzonderlij
 
 Met Adobe Experience Manager (AEM) Edge Delivery Services (EDS) kunt u vanaf de rand genieten van supersnelle, zeer schaalbare webbeleving. Deze gids verklaart **hoe te om vormen voor die ervaringen** te bouwen en te publiceren—met een duidelijke aanbevelingshiërarchie:
 
-1. **Universele Redacteur (UE) - Beste keus voor de meeste teams**
-2. **document-Gebaseerde Authoring (Docs/Sheets) - Uitstekend voor snelle, eenvoudige vormen**
-3. **Document Authoring (DA) - Gebruik om formulieren in te sluiten in pagina&#39;s die met DA zijn geschreven**
+* **Universele Redacteur (UE) - Beste keus voor de meeste teams**
+* **document-Gebaseerde Authoring (Docs/Sheets) - Uitstekend voor snelle, eenvoudige vormen**
+* **Document Authoring (DA) - Gebruik om formulieren in te sluiten in pagina&#39;s die met DA zijn geschreven**
 
 Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijpen en de volgende stappen volgen in de richting van formulieren die klaar zijn voor productie.
-
-
-
 
 
 | Team en vereisten | Aanbevolen methode | Waarom |
@@ -52,9 +49,9 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 
 ### Universele editor
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
-De Universele Redacteur is een visueel, belemmering-en-dalingsauteursinstrument voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
+[ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is een visueel, belemmering-en-dalingsauteursgereedschap voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
 
 * WYSIWYG-bewerkingen in realtime en voorvertoningen van apparaten.
 * Directe integratie met AEM-elementen, -workflows en -formuliergegevensmodel (FDM).
@@ -70,12 +67,12 @@ De Universele Redacteur is een visueel, belemmering-en-dalingsauteursinstrument 
 * De mogelijkheid om te kiezen uit meerdere verzendacties voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
 * Verzenden met gebruik van verzendacties voor Forms Submission Service (FSS) of AEM Publish
 
-> **Aanbeveling**: Begin elk nieuw vormproject met Universele Redacteur tenzij uw team 100 % document-centric is en de vorm zeer fundamenteel is.
+**Aanbeveling**: Begin elk nieuw vormproject met Universele Redacteur tenzij uw team 100 % document-centric is en de vorm zeer fundamenteel is.
 
 
 ### Op documenten gebaseerde ontwerpfuncties (met Microsoft Docs of Google Sheets)
 
-Authoring op basis van documenten is het meest geschikt voor het maken van eenvoudige, complexe formulieren met behulp van vertrouwde gereedschappen, zoals Microsoft Word, Google Docs of Google Sheets. Deze methode is ideaal voor inhoudsteams die een snelle en eenvoudige manier nodig hebben om formulieren te maken.
+[ op document-Gebaseerde creatie ](/help/edge/docs/forms/tutorial.md) is best geschikt voor het creëren van eenvoudige, laag-ingewikkelde vormen gebruikend vertrouwde hulpmiddelen zoals Microsoft Word, Google Docs, of de Bladen van Google. Deze methode is ideaal voor inhoudsteams die een snelle en eenvoudige manier nodig hebben om formulieren te maken.
 
 * Toegankelijke onderdelen voor een gebruiksvriendelijke ervaring.
 * Gestandaardiseerde HTML-structuur voor consistente rendering.
@@ -116,9 +113,11 @@ In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Exce
 
 ## Volgende stappen
 
-1. **Begin met Universele Redacteur:** zie de [ Universele Redacteur begonnen gids ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) beginnen creërende vormen te beginnen.
-1. **Gebruik op document-Gebaseerde Authoring:** om vormen met Microsoft Excel of de Bladen van Google tot stand te brengen, volg het [ op document-Gebaseerde Authoring leerprogramma ](/help/edge/docs/forms/tutorial.md).
-1. **bed Forms in Document Authoring in:** als u pagina&#39;s in Document Authoring bouwt, creeer de vorm gebruikend de **Universele Redacteur** (geadviseerd) of Document-Gebaseerde Authoring, en bedt de vorm aan a [ pagina DA ](https://www.aem.live/developer/da-tutorial) in.
+* [Functies en mogelijkheden van de Universal Editor voor Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [ creeer uw eerste vorm gebruikend de Bladen van Google of Microsoft Excel ](/help/edge/docs/forms/tutorial.md).
+* [ bed Forms in Document Authoring (DA) in ](https://www.aem.live/developer/da-tutorial)
+
 
 U kunt nu uw eerste krachtige formulier maken met AEM Edge Delivery Services.
 
