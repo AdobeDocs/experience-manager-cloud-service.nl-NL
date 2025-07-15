@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5d00bed4008c70e81f3a70d219ddc411ec8bdc59
+source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 1%
+source-wordcount: '214'
+ht-degree: 2%
 
 ---
 
@@ -16,43 +16,37 @@ ht-degree: 1%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 21484 {#21484}
+## Release 21570 {#21570}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21484 samengevat, die op 10 juli 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21331.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21570 samengevat, die op 15 juli 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21484.
 
-De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+>[!NOTE]
+>
+>[ Versie 21484 ](/help/release-notes/maintenance/2025/2025-7-0.md#21484) werd gemaakt privé en door versie 21570 vervangen.
 
-### Verbeteringen {#enhancements-21484}
+De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-Geen.
+### Verbeteringen {#enhancements-21570}
 
-### Opgeloste problemen {#fixed-issues-21484}
+Geen
 
-Geen.
+### Opgeloste problemen {#fixed-issues-21570}
 
-#### AEM Guides {#guides-21484}
+* SKYOPS-112722 - Probleem verholpen waarbij vanity URL-oplossingen mislukten
 
-* GUIDEN-29781: Wanneer een commentaar van XML binnen een element in de mening van Source wordt toegevoegd, worden de belangrijke en het slepen ruimten rond de commentaar verloren op omschakelingsmeningen.
-* GUIDEN-29078: Wanneer het openen van een onderwerp in de mening van de Auteur na browser verfrist, worden eerder toegepaste markeringen in het paneel van de Eigenschappen van het Dossier niet behouden, en het toevoegen van nieuwe markeringen beschrijft de bestaande, vooral wanneer een groot aantal markeringen voor selectie beschikbaar zijn.
-* GUIDES-28214: Pogingen om overzichtstaken tot stand te brengen door het werkschema van AEM ontbreken constant omdat de overzichtsknoop niet wordt gecreeerd.
-* GUIDEN-28104: Het publiceren van een kaart DITA met `chunk=to-content` attributen leidt tot dubbele knopen JCR in de nieuwe output van AEM Sites, die tot overtollige inhoudsstructuur in AEM Sites leiden.
-* GUIDES-29065, GUIDES-28793: De kwesties van prestaties zoals langere ladingstijden en intermitterende onderbrekingen worden waargenomen wanneer het werken met grote inzamelingen.
+### Bekende problemen {#known-issues-21570}
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+* De gerelateerde AEM SDK heeft een andere release-id (21575) en is beschikbaar via de Software Distribution Portal.
 
-### Bekende problemen {#known-issues-21484}
-
-* De SDK die beschikbaar wordt gesteld in het portal voor softwaredistributie, heeft problemen die lokaal worden uitgevoerd. Gebruik de vorige SDK voor lokale tests.
-
-### Verouderde functies en API&#39;s {#deprecated-21484}
+### Verouderde functies en API&#39;s {#deprecated-21570}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-21484}
+### Beveiligingsproblemen {#security-21570}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 5 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+Geen
 
-### Ingesloten technologieën {#embedded-tech-21484}
+### Ingesloten technologieën {#embedded-tech-21570}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
