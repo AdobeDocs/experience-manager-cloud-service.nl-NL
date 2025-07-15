@@ -278,6 +278,7 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    * Selecteer **[!UICONTROL Minus]** in het veld **[!UICONTROL Select Operator]** .
 
    * Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Additional Deduction]** gebied in het andere **[!UICONTROL Drop object or select here]** gebied.
+
      ![ de Redacteur example15 van de Regel ](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
@@ -295,6 +296,7 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    * Selecteer **[!UICONTROL Multiplied by]** in het veld **[!UICONTROL Select Operator]** .
 
    * Selecteer **Aantal** van het **[!UICONTROL Select Option]** gebied en ga de waarde als `10` op het **[!UICONTROL Enter a Number]** gebied in.
+
      ![ de Redacteur example18 van de Regel ](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]** .
    ![ de Redacteur example19 van de Regel ](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -360,6 +362,7 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
+
 ![ Toevoegend douanefunctie ](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Een aangepaste functie gebruiken in de regeleditor
