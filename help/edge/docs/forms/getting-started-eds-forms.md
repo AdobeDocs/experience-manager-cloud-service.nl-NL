@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aan de slag met Forms op AEM Edge Delivery Services
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
 
 Met Adobe Experience Manager (AEM) Edge Delivery Services (EDS) kunt u vanaf de rand genieten van supersnelle, zeer schaalbare webbeleving. Deze gids verklaart **hoe te om vormen voor die ervaringen** te bouwen en te publiceren—met een duidelijke aanbevelingshiërarchie:
 
