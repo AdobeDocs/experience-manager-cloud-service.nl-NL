@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,8 @@ U opent eenvoudig het geselecteerde milieu ![ Meer pictogram van het pictogram o
 * Uw organisatie is ingeschreven voor het programma Early adopter en de markering feature is ingeschakeld.
 * Het programma loopt op AEM as a Cloud Service.
 * De gekozen omgeving is een `Development` -omgeving (tijdelijke Alpha-limiet).
-* De laatste pijpleiding voor dat milieu eindigde met succes en liep **minder dan 10 dagen** geleden.
+* De laatste pijpleiding voor dat milieu eindigde met succes en liep **minder dan 30 dagen** geleden.
 * De milieustatus is *Lopend* en geen pijpleiding is lopend.
-* De versie van de doelbroncode die u wilt herstellen werd opgesteld **binnen 30 dagen**.
 
 Als om het even welke controle ontbreekt, opent Cloud Manager de volgende dialoogdoos die van één of meerdere onvervulde voorwaarden een lijst maakt en **bevestigt** onbruikbaar, verhinderend herstellen.
 
@@ -62,7 +61,7 @@ Als u enkel gegevens wilt herstellen, die zijn verloren, beschadigd, of toevalli
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
 1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan broncode u wilt herstellen, klik ![ Meer pictogram of ellipse menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen** > **Vorige opgestelde code**.
 
