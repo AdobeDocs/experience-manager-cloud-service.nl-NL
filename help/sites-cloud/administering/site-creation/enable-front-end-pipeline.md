@@ -47,7 +47,7 @@ Wanneer u de front-end pijplijn voor een plaats activeert, brengt AEM de volgend
 
 ## Vereisten {#requirements}
 
-AEM kan uw bestaande site automatisch aanpassen om de front-end pijplijn te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page) gebruiken.
+AEM kan uw bestaande site automatisch aanpassen om de front-end pijplijn te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/page) gebruiken.
 
 ## Het toelaten van Voorste Pijl-Eind {#enabling}
 
@@ -78,7 +78,7 @@ De voorste-Eind Pijpleiding kan met [ worden gebruikt de eigenschap van de douan
 
 Statische front-end activa die via de Voorste-Eind Pijpleiding worden opgesteld zullen, door gebrek, van het vooraf bepaalde statische domein van Adobe worden gediend.
 
-Als u een aangepast domein nodig hebt voor front-end elementen, kunt u een aangepast domein installeren op de publicatielijst en de Dispatcher zodanig configureren dat specifieke paden (zoals `/static/` ) naar de statische hostinglocatie van Adobe worden geleid. Deze methode vereist het bijwerken van uw [ regels van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) behoorlijk en geheim voorgeheugenverzoeken om statische activa door:sturen.
+Als u een aangepast domein nodig hebt voor front-end elementen, kunt u een aangepast domein installeren op de publicatielijst en de Dispatcher zodanig configureren dat specifieke paden (zoals `/static/` ) naar de statische hostinglocatie van Adobe worden geleid. Deze methode vereist het bijwerken van uw [ regels van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) behoorlijk en geheim voorgeheugenverzoeken om statische activa door:sturen.
 
 Nadat u het aangepaste domein en de dispatcher hebt geconfigureerd, kunt u AEM configureren voor de front-end elementen van het statische domein.
 
