@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
-[!BADGE  voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
+[!BADGE &#x200B; voor het ontwerpen van de inhoud van AEM voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM-inhoud ontwerpen voor Edge Delivery Services"}
 
 ## Zie ook {#see-also}
 
@@ -120,7 +120,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    <tr>
    <td>Service-uitvoereigenschap</td>
    <td> Het de outputbezit van de Dienst wordt gesteund in de <b> Vastgestelde Waarde van </b> optie van de Redacteur van de Regel. </td>
-   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3} bezit van de output van de Dienst {voor het aanhalen van APIs in de Redacteur van de Regel.</b>
+   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3&rbrace; bezit van de output van de Dienst &lbrace;voor het aanhalen van APIs in de Redacteur van de Regel.</b>
    </td>
    </tr>
    <tr>
@@ -169,11 +169,11 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >[!IMPORTANT]
 >
 >De front-end pijpleiding vereist dat de volgende IP Lijst van gewenste personen vooraf aan Cloud Manager wordt toegevoegd.
->>Indien nodig, [ voeg de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
->>Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u de pijpleiding toelaat.
+>&#x200B;>Indien nodig, [ voeg de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
+>&#x200B;>Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u de pijpleiding toelaat.
 >
 >**Cloud Manager IP Lijst van gewenste personen**
->>52.254.106.192/28,20.186.185.181, 52.254.106.240/28, 52.254.107.128/28, 52.254.105.192/28, 52.254.106.176/28, 20.186.185.227, 52.254.106.144/28, 52.254.107.64/28, 20.186.185.239, 20.22.83.112, 52.254.107.80/28, 52.254.107.144/28, 52.254.106.224/28, 20.14.241.153, 52.254.107.0/28, 52.254.107.32/28, 52.254.106.208/28, 40.70.154.136/29, 52.254.106.160/28, 52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>&#x200B;>52.254.106.192/28,20.186.185.181, 52.254.106.240/28, 52.254.107.128/28, 52.254.105.192/28, 52.254.106.176/28, 20.186.185.227, 52.254.106.144/28, 52.254.107.64/28, 20.186.185.239, 20.22.83.112, 52.254.107.80/28, 52.254.107.144/28, 52.254.106.224/28, 20.14.241.153, 52.254.107.0/28, 52.254.107.32/28, 52.254.106.208/28, 40.70.154.136/29, 52.254.106.160/28, 52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Voeg een Lijst van gewenste personen van Cloud Manager IP en front-end pijpleidingen toe {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >[!IMPORTANT]
 >
 >Als u gebruikt-of van plan bent te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
->>Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>&#x200B;>Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## IP Lijsten van gewenste personen en de Universele Redacteur {#ip-allow-lists-ue}
 
