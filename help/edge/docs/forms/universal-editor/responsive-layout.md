@@ -4,9 +4,9 @@ description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Responsieve modus in WYSIWYG Authoring
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 ## Introductie tot responsieve Forms
 
@@ -85,7 +85,7 @@ De indeling van deelvensters is handig om verwante velden zo te ordenen dat u ge
 
 **Reactiegedrag:** op kleinere schermen, stapelen de panelen typisch verticaal, die hun verschillende groeperingen handhaven terwijl het aanpassen aan de lagere breedte.
 
-U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Wizard Layout
 
@@ -97,7 +97,7 @@ De indeling van de wizard helpt een complex formulier te vereenvoudigen door het
 
 **Responsief gedrag:** op mobiele apparaten, handhaaft de tovenaar zijn geleidelijke benadering maar past de inhoud binnen elke stap aan om het smallere scherm te passen, vaak stapelend elementen die zij aan zij op grotere schermen zouden verschijnen.
 
-U kunt de [ tovenaar component ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+U kunt de [ tovenaar component ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Accordeonlay-out
 
@@ -109,7 +109,7 @@ De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer 
 
 **Responsief gedrag:** het werk van Accordeons in het bijzonder goed op mobiele apparaten aangezien zij natuurlijk verticale ruimte door slechts de uitgebreide inhoudssectie te tonen besparen, die hen ideaal maken voor kleinere schermen.
 
-U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) artikel van de component 0&rbrace; accordeon &lbrace;.
+U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [ artikel van de component 0} accordeon {.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)
 
 ### Hoe te om de juiste lay-out te kiezen?
 
@@ -120,7 +120,7 @@ Het is belangrijk om de juiste indeling te selecteren voor een optimale gebruike
 | **Doel** | Hiermee groepeert u gerelateerde inhoud in afzonderlijke secties | Hiermee worden gebruikers door een proces of formulier met meerdere stappen geleid | Inhoud indelen in inklapbare secties |
 | **Structuur** | Afzonderlijke secties | Opeenvolgende stappen/pagina&#39;s | Inklapbare deelvensters/secties |
 | **Navigatie** | Klik op de kopteksten van het deelvenster om te navigeren | - Voorwaarts: &quot;Volgende&quot;knoop <br> - Achteruit: &quot;Achtergrond&quot;knoop <br> - Facultatieve het overslaan stappen | Klik op kopteksten om secties uit te vouwen/samen te vouwen |
-| **Ervaring van 0&rbrace; Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Compacte weergave met uitgevouwen/samengevouwen secties |
+| **Ervaring van 0} Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Compacte weergave met uitgevouwen/samengevouwen secties |
 | **Geval van het Gebruik** | Complexe formulieren met gecategoriseerde secties | Installatieprocessen, complexe formulieren | Veelgestelde vragen, instellingenmenu&#39;s, gedetailleerde inhoudssecties |
 | **Best voor mobiel** | Modern - panelen worden verticaal gestapeld | Goed - alleen de huidige stap wordt actief | Uitstekend - ruimte met inklapbare gedeelten behouden |
 

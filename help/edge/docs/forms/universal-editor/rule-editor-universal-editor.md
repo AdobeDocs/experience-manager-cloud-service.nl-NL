@@ -4,9 +4,9 @@ description: Met de regeleditor in de Universal Editor kunt u dynamisch gedrag t
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2091'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inleiding tot de Redacteur van de Regel in de Authoring van WYSIWYG
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 
 U kunt dynamisch formuliergedrag toevoegen met de Regeleditor, waarmee u regels kunt maken. Deze regels maken voorwaardelijke veldzichtbaarheid mogelijk, automatiseren berekeningen op basis van gebruikersinvoer en verbeteren de gebruikerservaring. Door het invullen van formulieren te stroomlijnen, zorgt de Rule Editor voor zowel nauwkeurigheid als efficiëntie.
@@ -278,7 +278,6 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    * Selecteer **[!UICONTROL Minus]** in het veld **[!UICONTROL Select Operator]** .
 
    * Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Additional Deduction]** gebied in het andere **[!UICONTROL Drop object or select here]** gebied.
-
      ![ de Redacteur example15 van de Regel ](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
@@ -296,7 +295,6 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    * Selecteer **[!UICONTROL Multiplied by]** in het veld **[!UICONTROL Select Operator]** .
 
    * Selecteer **Aantal** van het **[!UICONTROL Select Option]** gebied en ga de waarde als `10` op het **[!UICONTROL Enter a Number]** gebied in.
-
      ![ de Redacteur example18 van de Regel ](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]** .
    ![ de Redacteur example19 van de Regel ](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![ Toevoegend douanefunctie ](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Een aangepaste functie gebruiken in de regeleditor

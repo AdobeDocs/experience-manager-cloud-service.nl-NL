@@ -4,16 +4,16 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1804'
 ht-degree: 0%
 
 ---
 
 # Aangepaste component maken in WYSIWYG Authoring
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 
 Edge Delivery Services Forms biedt aanpassing, waardoor ontwikkelaars aan de voorzijde op maat aangepaste formulieronderdelen kunnen maken. Deze aangepaste componenten worden naadloos geïntegreerd in de WYSIWYG-ontwerpervaring, zodat formulierauteurs ze eenvoudig kunnen toevoegen, configureren en beheren in de formuliereditor. Met aangepaste componenten kunnen auteurs de functionaliteit verbeteren en tegelijkertijd zorgen voor een vloeiend en intuïtief ontwerpproces.
@@ -104,7 +104,7 @@ Het bestand `_range.json` ziet er na het toevoegen van de componentdefinitie als
 
 >[!NOTE]
 >
-> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
+> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
 
 ### &#x200B;2. De eigenschappen van de aangepaste component definiëren voor ontwerpen
 
@@ -161,7 +161,7 @@ De aangepaste component bevat een componentmodel dat aangeeft welke eigenschappe
 
    >[!NOTE]
    >
-   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    U kunt [ douaneeigenschappen ](#adding-custom-properties-for-your-custom-component) aan een douanecomponent ook toevoegen om zijn functionaliteit uit te breiden.
 
@@ -184,7 +184,7 @@ Om het de douanebezit van de Waarde van de Stap toe te voegen, voeg het componen
       }
 ```
 
-Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a **&#x200B;**. Hieronder volgt een uitsplitsing van elk veld:
+Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a ****. Hieronder volgt een uitsplitsing van elk veld:
 
 * **component**: Specificeert het type van inputgebied dat in de dialoog van het Bezit wordt gebruikt. In dit geval geeft `number` aan dat het veld numerieke waarden accepteert.
 * **naam**: Het herkenningsteken voor het bezit, dat wordt gebruikt om het in de logica van de component van verwijzingen te voorzien. Hier vertegenwoordigt `stepValue` de step waarde die voor de waaier wordt geplaatst.
@@ -392,7 +392,6 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    float: right;
    }
    ```
-
    Met de code kunt u de opmaak en visuele weergave van de aangepaste component definiëren.
 
 1. Als u de functionaliteit wilt toevoegen, navigeert u naar het `/blocks/form/components/range/range.js` -bestand en voegt u de volgende coderegel toe:

@@ -4,16 +4,16 @@ description: Publiceer uw Edge Delivery Services-formulieren snel en naadloos.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Adaptief formulier publiceren naar Edge Delivery Services
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 
 Wanneer het formulier gereed en gebruiksklaar is, kunt u het publiceren zodat het voor uw klanten toegankelijk is voor gegevensverzameling en -verzending. Als u het formulier publiceert, weet u zeker dat het formulier beschikbaar is op Edge Delivery, zodat gebruikers er probleemloos mee kunnen werken. Met dit proces kunnen klanten het formulier in real-time invullen en verzenden, zodat ze gegevens op efficiënte wijze kunnen vastleggen en de verwerking kunnen stroomlijnen.
@@ -32,7 +32,7 @@ U kunt om het even welke **op EDS-Gebaseerde Aangepaste Vorm** aan Edge Delivery
 1. Open uw adaptieve vorm in de redacteur en klik het **Publish** pictogram op het hogere spoor.
    ![ klik publiceren ](/help/forms/assets/publish-icon-eds-form.png)
 
-1. Wanneer u **klikt publiceer**, verschijnt een scherm of pop-up dat de het publiceren activa, met inbegrip van de titel van de vorm toont. In dit voorbeeld, wordt het **&#x200B;**&#x200B;malplaatje Wknd_Form gebruikt.
+1. Wanneer u **klikt publiceer**, verschijnt een scherm of pop-up dat de het publiceren activa, met inbegrip van de titel van de vorm toont. In dit voorbeeld, wordt het **** malplaatje Wknd_Form gebruikt.
    ![ op Klik publiceren ](/help/forms/assets/on-click-publish.png)
 
 1. Klik **publiceren** opnieuw, en een bevestigingspop-up verschijnt, erop wijzend dat uw vorm nu wordt gepubliceerd.
@@ -57,7 +57,6 @@ Wijzig `submitBaseUrl` in het {**dossier 1} constant.js binnen het vormblok om d
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **voor Lokale Ontwikkeling:**
 
 ```js
@@ -66,7 +65,7 @@ export const submitBaseUrl = 'http://localhost:4503';
 
 ### De configuratie van CORS wijzigen
 
-Pas de **montages CORS** aan om de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery toe te staan. Verwijs naar de [ Gids van de Configuratie CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) voor details.
+Pas de **montages CORS** aan om de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery toe te staan. Verwijs naar de [ Gids van de Configuratie CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) voor details.
 
 **de Configuratie van de Steekproef CORS:**
 
@@ -80,12 +79,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
-Voor lokale ontwikkeling, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) om CORS van uw **gastheer URL van ontwikkelingsUI** toe te laten.
+Voor lokale ontwikkeling, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) om CORS van uw **gastheer URL van ontwikkelingsUI** toe te laten.
 
 ### Filter Referrer configureren
 
-Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud Manager. [ weet meer ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) over het vormen van het verwijzingsfilter op een instantie van de Dienst van de Wolk AEM die een wolkenmanager gebruikt.
+Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud Manager. [ weet meer ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) over het vormen van het verwijzingsfilter op een instantie van de Dienst van de Wolk AEM die een wolkenmanager gebruikt.
 
 **Configuratie JSON voor de Filter van de Referateur:**
 
