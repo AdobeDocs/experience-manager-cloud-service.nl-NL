@@ -142,6 +142,7 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
   }
   
 ```
+
 * `.{Type}-wrapper`: richt het buitenste `div` -element op basis van    het veldtype. `.text-wrapper` richt bijvoorbeeld alle tekst op    velden.
 * `.field-{Name}`: hiermee selecteert u het element verder op basis van de specifieke veldnaam. `.field-first-name` verwijst bijvoorbeeld naar het tekstveld Voornaam. Terwijl deze selecteur voor het richten van elementen met de gebied {Name} klasse kan worden gebruikt, is het belangrijk om voorzichtig te zijn. In dit specifieke geval zou het niet nuttig zijn voor het opmaken van invoervelden omdat het niet alleen de invoer zelf, maar ook de label- en beschrijvingselementen betreft. Het is raadzaam specifiekere kiezers te gebruiken, zoals de kiezers die u hebt voor tekstinvoervelden (.text-wrapper input).
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * Richt op Wrapper: De eerste selecteur (`.drop-down-wrapper`) richt het buitenomslagelement, die ervoor zorgt dat de stijlen op de volledige dropdown component van toepassing zijn.
 * Flexbox Layout: in Flexbox worden het label, de vervolgkeuzelijst en de beschrijving verticaal gerangschikt voor een zuivere lay-out.
 * Labelstijlen: het label wordt weergegeven met een grotere tekendikte en een kleine marge.
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### Keuzerondjes
 
@@ -282,6 +284,7 @@ Keuzerondjes hebben een eigen HTML-structuur en CSS-structuur, net als vervolgke
     padding: 10px;
   }
 ```
+
 Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is ingesteld. Dit is handig als u algemene stijlen wilt toepassen op de hele groep keuzerondjes.
 
 * Labels voor keuzerondjes als doel instellen
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Het veldsetelement fungeert als de deelvenstercontainer met de klassepaneel-wrapper en aanvullende klassen voor opmaak op basis van de naam van het deelvenster (veldaanmelding).
-* Het element legenda (<legend>) fungeert als de titel van het deelvenster met de tekst &quot;Aanmeldingsgegevens&quot; en de veldlabel voor de klasse. Het attribuut data-visible=&quot;false&quot; kan met JavaScript worden gebruikt om de zichtbaarheid van de titel te regelen.
+* Het element legenda (&lt;legend>) fungeert als de titel van het deelvenster met de tekst &quot;Aanmeldingsgegevens&quot; en de veldlabel voor de klasse. Het attribuut data-visible=&quot;false&quot; kan met JavaScript worden gebruikt om de zichtbaarheid van de titel te regelen.
 * Binnen de veldset, meerdere.{Type} -wrapper-elementen (.text-wrapper en .password-wrapper in dit geval) vertegenwoordigen afzonderlijke formuliervelden in het deelvenster.
 * Elke omslag bevat een etiket, een inputgebied, en een beschrijving, gelijkend op de vorige voorbeelden.
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 Met deze kiezer worden alle veldomlooptekens binnen een herhaalbaar deelvenster geplaatst, waarbij een consistente afstand tussen velden behouden blijft.
 
 * Specifieke velden activeren (binnen een deelvenster):

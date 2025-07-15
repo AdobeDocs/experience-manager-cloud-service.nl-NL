@@ -32,7 +32,7 @@ U kunt om het even welke **op EDS-Gebaseerde Aangepaste Vorm** aan Edge Delivery
 1. Open uw adaptieve vorm in de redacteur en klik het **Publish** pictogram op het hogere spoor.
    ![ klik publiceren ](/help/forms/assets/publish-icon-eds-form.png)
 
-1. Wanneer u **klikt publiceer**, verschijnt een scherm of pop-up dat de het publiceren activa, met inbegrip van de titel van de vorm toont. In dit voorbeeld, wordt het **** malplaatje Wknd_Form gebruikt.
+1. Wanneer u **klikt publiceer**, verschijnt een scherm of pop-up dat de het publiceren activa, met inbegrip van de titel van de vorm toont. In dit voorbeeld, wordt het **&#x200B;**&#x200B;malplaatje Wknd_Form gebruikt.
    ![ op Klik publiceren ](/help/forms/assets/on-click-publish.png)
 
 1. Klik **publiceren** opnieuw, en een bevestigingspop-up verschijnt, erop wijzend dat uw vorm nu wordt gepubliceerd.
@@ -57,6 +57,7 @@ Wijzig `submitBaseUrl` in het {**dossier 1} constant.js binnen het vormblok om d
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
+
 **voor Lokale Ontwikkeling:**
 
 ```js
@@ -79,6 +80,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
+
 Voor lokale ontwikkeling, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) om CORS van uw **gastheer URL van ontwikkelingsUI** toe te laten.
 
 ### Filter Referrer configureren
