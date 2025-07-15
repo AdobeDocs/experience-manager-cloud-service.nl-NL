@@ -1,13 +1,13 @@
 ---
 title: Het Sitepaneel gebruiken om uw sitethema te beheren
-description: Leer de krachtige eigenschappen van het paneel van de Plaats om u te helpen uw plaatsthema gemakkelijk aanpassen en beheren.
+description: Leer de krachtige eigenschappen van het paneel van de Plaats om u te helpen uw plaatsthema voor traditionele het auteursprojecten van AEM met publicatielevering gemakkelijk aanpassen en beheren.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 {{traditional-aem}}
 
-Leer de krachtige eigenschappen van het paneel van de Plaats om u te helpen uw plaatsthema gemakkelijk aanpassen en beheren.
+Leer de krachtige eigenschappen van het paneel van de Plaats om u te helpen uw plaatsthema voor traditionele het auteursprojecten van AEM met publicatielevering gemakkelijk aanpassen en beheren.
 
 ## Overzicht {#overview}
 
-In het paneel Site kunt u het thema en de sjabloonbronnen van uw site beheren. [ als andere panelen ](/help/sites-cloud/authoring/sites-console/console-side-panel.md) zoals de Inhoudsboom, Verwijzingen, of panelen van de Chronologie, wordt het paneel van de Plaats getoond als uiterst linkse paneel in de plaatsenconsole, tonend informatie over het geselecteerde punt. In tegenstelling tot andere deelvensters is het deelvenster Site alleen van toepassing op de hoofdmap van de site.
+Het paneel van de Plaats laat u de thema en malplaatjemiddelen van uw plaats voor traditionele het auteursprojecten van AEM met [ leiden publiceert levering.](/help/sites-cloud/authoring/author-publish.md) [ {zoals andere panelen ](/help/sites-cloud/authoring/sites-console/console-side-panel.md) zoals de Inhoudsboom, Verwijzingen, of panelen van de Chronologie, wordt het paneel van de Plaats getoond als meest linkse paneel in de plaatsenconsole, tonend informatie over het geselecteerde punt. In tegenstelling tot andere deelvensters is het deelvenster Site alleen van toepassing op de hoofdmap van de site.
 
 Het paneel Site wordt gebruikt voor het beheer van thema&#39;s en sjabloongerelateerde informatie voor uw site, waaronder:
 
@@ -36,7 +36,7 @@ Het paneel Site wordt gebruikt voor het beheer van thema&#39;s en sjabloongerela
 
 ## Themabronnen downloaden {#downloading-theme-sources}
 
-Wanneer u een plaats in AEM creeert die op het malplaatje van de a [ plaats ](site-templates.md) wordt gebaseerd, kunt u uw [ plaatsthema ](site-themes.md) downloaden gebruikend het paneel van de Plaats.
+Wanneer u een plaats in AEM creeert die op het malplaatje van de a [ plaats wordt gebaseerd, ](site-templates.md) kunt u uw [ plaatsthema ](site-themes.md) downloaden gebruikend het paneel van de Plaats.
 
 Selecteer, terwijl het deelvenster Site wordt weergegeven in de siteconsole, de hoofdmap van uw site om themagegevens over de site weer te geven.
 
@@ -46,7 +46,7 @@ Selecteer **Bronnen van het Thema van de Download** om een lokaal exemplaar van 
 
 ## Sjabloonbronnen downloaden {#downloading-template-resources}
 
-&lbrace;de malplaatjes van de Plaats [&#128279;](site-templates.md) kunnen informatie naast uw structuur van de plaatsinhoud en [ plaatsthema ](site-themes.md) bevatten.  Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
+{de malplaatjes van de Plaats [ kunnen informatie naast uw structuur van de plaatsinhoud en ](site-templates.md) plaatsthema bevatten.[](site-themes.md) Sitesjablonen kunnen bijvoorbeeld draadframe-ontwerpen of andere sitegerelateerde bestanden bevatten.
 
 Als uw site is gebaseerd op een sitesjabloon en het Sitepaneel in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven, inclusief extra sitemiddelen.
 
@@ -68,7 +68,7 @@ Selecteer **Uitgezochte Versie** om vorige versies van het thema te bekijken.
 
 ![ Uitgezochte themaversie ](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Selecteer de versie u wilt veranderen en dan selecteren **&#x200B;**&#x200B;toepassen om de verandering aan te brengen.
+Selecteer de versie u wilt veranderen en dan selecteren **** toepassen om de verandering aan te brengen.
 
 Als AEM detecteert dat een nieuwere versie van het thema is geïmplementeerd via de front-end pijplijn, maar niet is toegepast op uw site, wordt een waarschuwingspictogram weergegeven.
 
@@ -86,4 +86,4 @@ Met het paneel dat van de Plaats in de plaatsenconsole toont, selecteer de worte
 
 ![ toelatend front-end pijpleiding ](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Voor meer informatie, zie het document [ Toelatend de Voorste-Eind Pijpleiding ](enable-front-end-pipeline.md).
+Voor meer informatie, zie het document [ Toelatend de Voorste-Eind Pijpleiding.](enable-front-end-pipeline.md)
