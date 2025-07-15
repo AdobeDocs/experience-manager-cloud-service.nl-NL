@@ -4,9 +4,9 @@ description: Leer hoe u formulierfragmenten maakt in de Universal Editor en deze
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Forms bevat vaak algemene secties zoals contactgegevens, identificatiegegevens of toestemmingsovereenkomsten. De formulierontwikkelaars maken deze secties telkens wanneer ze een nieuw formulier maken. Dit is een herhalend en tijdrovend formulier.
 Om deze dubbele inspanning te elimineren, verstrekt de Universele Redacteur een manier om herbruikbare vormsegmenten, zoals panelen of groepen gebieden, slechts eenmaal tot stand te brengen en hen over diverse vormen opnieuw te gebruiken. Deze herbruikbare, modulaire en standalone segmenten worden formulierfragmenten genoemd. Hetzelfde fragment voor noodcontact kan bijvoorbeeld worden gebruikt in verschillende secties van een formulier, zoals voor de contactgegevens van de werknemer en de toezichthouder.
@@ -108,7 +108,7 @@ Voer de volgende stappen uit om een formulierfragment te maken in de Universal E
 
    In de onderstaande schermafbeelding wordt de `contact fragment` weergegeven die in de Universal Editor is gemaakt.
 
-   ![ fragment van het Contact ](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![ Schermafbeelding van een voltooid fragment van de de vorm van contactdetails in de Universele Redacteur, die gebieden voor naam, telefoon, e-mail, en adres tonen die over veelvoudige vormen kunnen worden opnieuw gebruikt ](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    Zodra u het fragment hebt gecreeerd, kunt u [ toevoegen het gecreeerd fragment in Edge Delivery Services Forms ](#adding-form-fragments-in-forms).
 
@@ -140,7 +140,7 @@ Laten we een eenvoudig `Employee Details` formulier maken dat zowel werknemers- 
 
    Het formulierfragment wordt toegevoegd ten opzichte van het formulier en blijft gesynchroniseerd met het zelfstandige formulierfragment.
 
-   ![ Fragment in vorm ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![ Schermschot die het fragment van contactdetails tonen met succes in een werknemersvorm binnen de Universele Redacteur wordt geïntegreerd, die aantoont hoe de fragmenten hun structuur handhaven wanneer hergebruikt ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    U kunt voorproef de vorm zien hoe de vorm op de **wijze van de Voorproef** verschijnt.
 

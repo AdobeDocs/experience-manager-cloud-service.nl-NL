@@ -4,9 +4,9 @@ description: Leer formulieren te maken op basis van een formuliergegevensmodel (
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Door formulieren te integreren met een formuliergegevensmodel (FDM) in de Univer
 
 * Als u niet het **pictogram van Gegevensbronnen** in uw Universele interface van de Redacteur ziet of **Bind het bezit van de Verwijzing** in het juiste bezitspaneel, laat de **bron** uitbreiding van de Gegevensbron in **Extension Manager** toe.
 
-  ![ uitbreidingsmanager ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![ Schermafbeelding van de Universele interface die van de Redacteur Extension Manager beschikbare uitbreidingen met inbegrip van de uitbreiding van Gegevensbronnen toont die voor vormintegratie ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png) kan worden toegelaten
 
-  Verwijs naar het [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.
+  Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 * De prefill-service voor formulieren in de Universal Editor wordt momenteel niet ondersteund.
 
@@ -69,7 +69,7 @@ Wanneer u een op een schema gebaseerd formulier maakt, wordt het automatisch gec
 
      Standaard worden alle velden van het bijbehorende JSON-schema of het formuliergegevensmodel (FDM) automatisch geselecteerd en geconverteerd naar de overeenkomstige formuliercomponenten, waardoor het ontwerpproces wordt vereenvoudigd. Met de wizard kunt u ook selectief kiezen welke velden u in het formulier wilt opnemen met selectievakjes.
 
-1. Klik **[!UICONTROL Create]** en de **creeer 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt.**
+1. Klik **[!UICONTROL Create]** en de **creeer 2} tovenaar van de Vorm {verschijnt.**
 1. Specificeer de **Naam** en **Titel**.
 1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
    `https://github.com/wkndforms/edsforms`
@@ -79,7 +79,7 @@ Wanneer u een op een schema gebaseerd formulier maakt, wordt het automatisch gec
 
    Zodra u op **[!UICONTROL Create]** klikt, wordt het formulier in de Universal Editor geopend voor ontwerpen.
 
-   ![ auteur de vorm ](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![ Schermafbeelding van de Universele Redacteur die een op schema-gebaseerde vorm met pre-bevolkte vormgebieden en Browser van de Inhoud toont beschikbare gegevensbronelementen ](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    Het formulier wordt gemaakt met behulp van de gegevenselementen van de bijbehorende gegevensbron, waarbij de formuliervelden vooraf ingestelde gegevensbinding hebben.
 
@@ -131,7 +131,7 @@ Wanneer u een formulier maakt dat niet op een schema is gebaseerd, wordt er geen
 
    U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken. Wanneer u op **[!UICONTROL Add]** klikt, worden de geselecteerde elementen op het tabblad **[!UICONTROL Datasource]** aan het formulier toegevoegd en wordt een vinkje vóór de toegevoegde elementen weergegeven.
 
-   ![ bouwt vorm ](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![ Schermafbeelding die de Universele Redacteur met een niet-schemavorm toont die door gegevenselementen van het lusje van Source van Gegevens te slepen en te laten vallen in de vormstructuur ](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png) wordt gebouwd
 
 U kunt gegevens toevoegen die aan een vormgebied binden door het van het **Bind bezit van de Verwijzing** te selecteren. Bijvoorbeeld, voeg een gegevensbindende verwijzing naar **toe Identiteitskaart** tekstvakje dat reeds in de vorm aanwezig is.
 Voer de volgende stappen uit om de gegevensbinding voor het formulierveld in de gegevensbronstructuur te selecteren:

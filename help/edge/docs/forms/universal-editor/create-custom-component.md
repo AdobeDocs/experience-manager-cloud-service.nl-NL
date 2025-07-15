@@ -4,9 +4,9 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1841'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Als u een aangepaste component toevoegt in de Universal Editor, moet u een nieuw
 
 Neem een voorbeeld van het creëren van een nieuwe douanecomponent genoemd **waaier**. De bereikcomponent wordt weergegeven als een rechte lijn en geeft waarden weer zoals de minimum-, maximum- of geselecteerde waarde.
 
-![ de componentenstijl van de Waaier ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![ A visuele vertegenwoordiging van een waaiercomponent die een schuif met minimum en maximumwaarden tonen, en een geselecteerde waardeindicator ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 Aan het einde van dit artikel leert u zelf aangepaste componenten te maken.
 
-### 1. Structuur toevoegen voor nieuwe aangepaste component
+### &#x200B;1. Structuur toevoegen voor nieuwe aangepaste component
 
 Voordat een aangepaste component kan worden gebruikt, moet deze zijn geregistreerd, zodat de Universal Editor deze herkent als een beschikbare optie. Dit wordt bereikt door een componentdefinitie, die een unieke id, standaardeigenschappen en de structuur van de component bevat. Voer de volgende stappen uit om de aangepaste component beschikbaar te maken voor het ontwerpen van formulieren:
 
@@ -104,9 +104,9 @@ Het bestand `_range.json` ziet er na het toevoegen van de componentdefinitie als
 
 >[!NOTE]
 >
-> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
+> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
 
-### 2. De eigenschappen van de aangepaste component definiëren voor ontwerpen
+### &#x200B;2. De eigenschappen van de aangepaste component definiëren voor ontwerpen
 
 De aangepaste component bevat een componentmodel dat aangeeft welke eigenschappen door de auteur van het formulier kunnen worden geconfigureerd. Deze eigenschappen verschijnen in de **dialoog van Eigenschappen** van de Universele Redacteur, toestaand auteurs om montages zoals etiketten, bevestigingsregels, stijlen, en andere attributen aan te passen. Eigenschappen definiëren:
 
@@ -161,7 +161,7 @@ De aangepaste component bevat een componentmodel dat aangeeft welke eigenschappe
 
    >[!NOTE]
    >
-   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    U kunt [ douaneeigenschappen ](#adding-custom-properties-for-your-custom-component) aan een douanecomponent ook toevoegen om zijn functionaliteit uit te breiden.
 
@@ -184,7 +184,7 @@ Om het de douanebezit van de Waarde van de Stap toe te voegen, voeg het componen
       }
 ```
 
-Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a **&#x200B;**. Hieronder volgt een uitsplitsing van elk veld:
+Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a ****. Hieronder volgt een uitsplitsing van elk veld:
 
 * **component**: Specificeert het type van inputgebied dat in de dialoog van het Bezit wordt gebruikt. In dit geval geeft `number` aan dat het veld numerieke waarden accepteert.
 * **naam**: Het herkenningsteken voor het bezit, dat wordt gebruikt om het in de logica van de component van verwijzingen te voorzien. Hier vertegenwoordigt `stepValue` de step waarde die voor de waaier wordt geplaatst.
@@ -253,7 +253,7 @@ Het uiteindelijke bestand van `_range.json` ziet er daarom als volgt uit na het 
 ![ componentendefinitie en model ](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. De aangepaste component zichtbaar maken in de lijst met WYSIWYG-componenten
+### &#x200B;3. De aangepaste component zichtbaar maken in de lijst met WYSIWYG-componenten
 
 Een filter bepaalt welke sectie waarin de douanecomponent in Universele Redacteur kan worden gebruikt. Dit zorgt ervoor dat de component alleen in de juiste secties kan worden gebruikt, waarbij de structuur en bruikbaarheid behouden blijven.
 
@@ -299,7 +299,7 @@ Om ervoor te zorgen dat de aangepaste component tijdens het ontwerpen van formul
 
 ![ componentenfilter ](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. Uw aangepaste component registreren
+### &#x200B;4. Uw aangepaste component registreren
 
 Als u wilt dat het formulierblok de aangepaste component herkent en zijn eigenschappen die in het componentmodel zijn gedefinieerd tijdens het ontwerpen van het formulier laadt, voegt u de `fd:viewType` -waarde van de componentdefinitie toe aan het `mappings.js` -bestand.
 Een component registreren:
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, wordt de aangepaste component weergegeven in de lijst met componenten van het formulier in de Universal Editor. U kunt het vervolgens slepen en neerzetten in uw formuliersectie.
 
-![ waaiercomponent ](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![ Screenshot van het Universele de componentenpalet van de Redacteur die de component van de douanewaaier beschikbaar voor belemmering-en-daling in vormen tonen ](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 In de onderstaande schermafbeelding worden de eigenschappen getoond van de component `range` die aan het componentmodel is toegevoegd, waarmee de eigenschappen worden opgegeven die de auteur van het formulier kan configureren.:
 
-![ Eigenschappen van waaiercomponent ](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![ Schermafbeelding van het Universele paneel van de Eigenschappen van de Redacteur die configureerbare montages voor de waaiercomponent met inbegrip van basiseigenschappen, bevestigingsregels, en het stileren opties ](/help/edge/docs/forms/universal-editor/assets/range-properties.png) tonen
 
 U kunt nu het runtimegedrag van uw aangepaste component definiëren door stijlen en functionaliteit toe te voegen.
 
-### 5. Het runtimegedrag voor uw aangepaste component toevoegen
+### &#x200B;5. Het runtimegedrag voor uw aangepaste component toevoegen
 
 U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoals die in [ wordt verklaard het Stileren van vormgebieden ](/help/edge/docs/forms/style-theme-forms.md). Dit kan worden bereikt met aangepaste CSS (Cascading Style Sheets) en aangepaste code om de vormgeving van de component te verbeteren. Het runtimegedrag voor de component toevoegen:
 
@@ -392,7 +392,6 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    float: right;
    }
    ```
-
    Met de code kunt u de opmaak en visuele weergave van de aangepaste component definiëren.
 
 1. Als u de functionaliteit wilt toevoegen, navigeert u naar het `/blocks/form/components/range/range.js` -bestand en voegt u de volgende coderegel toe:
@@ -457,7 +456,7 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    Nadat u aangepaste stijlen en functionaliteit hebt opgenomen, worden de weergave en het gedrag van de bereikcomponent verbeterd. Het bijgewerkte ontwerp weerspiegelt de toegepaste stijlen, terwijl de toegevoegde functionaliteit een dynamischere en interactieve gebruikerservaring garandeert.
 In de onderstaande schermafbeelding ziet u de bijgewerkte bereikcomponent.
 
-![ de componentenstijl van de Waaier ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![ de definitieve waaiercomponent in actie die een gestileerde schuif met de vertoning van de waardebel en interactieve functionaliteit in de Universele Redacteur tonen ](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Veelgestelde vraag
 

@@ -4,9 +4,9 @@ description: In dit artikel wordt uitgelegd hoe u Adaptive Forms kunt maken door
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Een schema van de beslissingsstroom om de opstelling en de publicatie van Adapti
 
 Voer de volgende stappen uit om formulieren te ontwerpen in AEM en deze te publiceren op Edge Delivery Services:
 
-[1. Kies een sjabloon en maak het formulier](#choose-a-template-and-create-the-form)
+[&#x200B;1. Kies een sjabloon en maak het formulier](#choose-a-template-and-create-the-form)
 
-[2. Auteur van het formulier](#author-the-form)
+[&#x200B;2. Auteur van het formulier](#author-the-form)
 
-[3. Een formulier publiceren](#publish-a-form)
+[&#x200B;3. Een formulier publiceren](#publish-a-form)
 
 ### Een sjabloon kiezen en het formulier maken
 
@@ -75,18 +75,17 @@ Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
    Wanneer u een **op Edge Delivery Services-Gebaseerde malplaatje** selecteert, wordt de **[!UICONTROL Create]** knoop toegelaten.
 1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
 1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
-1. Klik **[!UICONTROL Create]** en de **Create 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt:**
+1. Klik **[!UICONTROL Create]** en de **Create 2} tovenaar van de Vorm {verschijnt:**
 
    1. Specificeer de **Naam** en **Titel**.
    1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
-
       `https://github.com/wkndforms/edsforms`
 
    ![ creeer de tovenaar van de Vorm ](/help/edge/assets/create-form-wizard.png)
 
    Wanneer u op **[!UICONTROL Create]** klikt, wordt het formulier in de Universal Editor geopend voor ontwerpen.
 
-   ![ auteur de vorm ](/help/edge/assets/author-form.png)
+   ![ Schermafbeelding van de Universele Redacteur die een vorm tonen die met het componentenpalet op de linkerzijde, vormcanvas in het centrum wordt ontworpen, en eigenschappen paneel op het recht ](/help/edge/assets/author-form.png)
 1. Klik op **[!UICONTROL Create]** om het formulier te maken. Nu, kunt u [ auteur de vorm gebruikend de Universele Redacteur ](#author-the-form).
 
 >[!TAB  Component-based malplaatje van de Kern ]
@@ -102,7 +101,7 @@ Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
 
 1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
 1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
-1. Klik **[!UICONTROL Create]** en de **Create 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt voor:**
+1. Klik **[!UICONTROL Create]** en de **Create 2} tovenaar van de Vorm {verschijnt voor:**
    1. Specificeer de **Naam** en **Titel**.
    1. Specificeer de plaats in het **gebied van de Weg** waar de Aangepaste Vorm moet worden bewaard.
 
@@ -136,7 +135,7 @@ Voer de volgende stappen uit om formulieren te ontwerpen met de sjabloon Univers
 
    In de onderstaande schermafbeelding wordt de `Registration Form` weergegeven die in de Universal Editor is geschreven:
 
-   ![ contacteer ons vorm ](/help/edge/assets/contact-us.png)
+   ![ Schermafbeelding van een voltooid contact ons vorm in de Universele Redacteur die vormgebieden voor naam, e-mail, telefoon, en bericht met juiste het stileren en lay-out tonen ](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -168,7 +167,7 @@ Nu kunt u [ vormen voorlegt acties voor vormen ](/help/forms/configure-submit-ac
 
 ### Het formulier publiceren
 
-Om een AanpassingsVorm op Edge Delivery Services te publiceren, moet u [ een Configuratie van Edge Delivery Services op een 1&rbrace; instantie van AEM tot stand brengen.](#create-an-edge-delivery-services-configuration)
+Om een AanpassingsVorm op Edge Delivery Services te publiceren, moet u [ een Configuratie van Edge Delivery Services op een 1} instantie van AEM tot stand brengen.](#create-an-edge-delivery-services-configuration)
 
 #### Een Edge Delivery Services-configuratie maken
 
@@ -220,7 +219,7 @@ Als u het formulier wilt openen op Edge Delivery Services, moet u het formulier 
 
 1. Publiceer het formulier door op de knop **[!UICONTROL Publish]** in de rechterbovenhoek van de Universal Editor te klikken.
 
-![ publiceer vorm ](/help/edge/assets/publish-form.png)
+![ Schermafbeelding van de Universele Redacteur die publiceer dialoog met de opties van de vormpublicatie en bevestigingsknopen tonen ](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

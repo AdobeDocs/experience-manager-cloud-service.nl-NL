@@ -4,14 +4,52 @@ description: Configureer Verzendhandelingen voor adaptief formulier.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
 
 # Handeling Adaptief verzenden van formulier
+
+## Overzicht
+
+De voorlegging van de vorm is de kritieke definitieve stap in de gebruikersreis-het is waar de verzamelde gegevens worden verwerkt en de acties worden genomen. Dit document bevat een uitgebreide handleiding voor het configureren en beheren van verzendhandelingen voor Adaptive Forms in Universal Editor.
+
+### Wat leert u?
+
+Aan het einde van dit document leert u hoe u:
+
+* Verschillende typen verzendacties configureren voor uw formulieren
+* REST-eindpuntindieningen instellen voor integratie met externe systemen
+* E-mailverzendingen voor formulierreacties configureren
+* Implementeer aangepaste verzendacties voor specifieke bedrijfsbehoeften
+* Formuliervalidatie en foutscenario&#39;s tijdens verzending verwerken
+
+### Doelpubliek
+
+Deze handleiding is ontworpen voor:
+
+* **de ontwikkelaars van de Vorm** die voorleggingslogica uitvoeren
+* **integrators van het Systeem** verbindend vormen met achterste systemen
+* **Bedrijfs analisten** die vormwerkschema&#39;s bepalen
+* **Technische architecten** ontwerpend processen van de vormvoorlegging
+
+### Beschikbare verzendhandelingen
+
+De Universal Editor biedt twee primaire verzendactietypen:
+
+1. **voorleggen aan REST eindpunt** * Verzend vormgegevens naar API eindpunten
+2. **verzendt E-mail** * levert vormreacties via e-mail
+
+### Vereisten
+
+Voordat u verzendacties configureert, moet u ervoor zorgen dat:
+
+* Toegang tot de universele editor
+* Juiste machtigingen voor formulierconfiguratie
+* Begrijpen van uw doel voorleggings eindpunt of e-mailconfiguratie
 
 Met een handeling Verzenden geeft u de bestemming op voor de gegevens die via een adaptief formulier worden verzameld. Het verzendingsproces begint wanneer de gebruiker op de knop **[!UICONTROL Submit]** op het formulier klikt. AEM Forms biedt twee soorten verzendacties die hieronder worden beschreven. U kunt aangepaste verzendacties maken en gebruiken om aan uw specifieke behoeften te voldoen. De verzendacties buiten de box zijn:
 
@@ -42,7 +80,7 @@ Om een REST eindpunt te vormen:
 1. Geef de URL van het REST-eindpunt op.
 1. U kunt **POST verzoek** ook toelaten en URL verstrekken om het verzoek te posten.
 
-![ laat postverzoek voor adaptieve vormen ](/help/forms/assets/enable-post-request-ue.png) toe
+![ Schermafbeelding van het Universele paneel van de Eigenschappen van de Redacteur die de gebieden van de het eindpuntconfiguratie van REST met inbegrip van invoer URL tonen en POST- verzoekknevel voor vormvoorlegging toelaten ](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ Een verzendactie configureren als een e-mail voor het verzenden van het formulie
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

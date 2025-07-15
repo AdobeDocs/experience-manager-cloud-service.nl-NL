@@ -4,9 +4,9 @@ description: Met de regeleditor in de Universal Editor kunt u dynamisch gedrag t
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2128'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Nu, onderzoeken hoe te [ regels in de Redacteur van de Regel ](#write-rules) sch
 
 Om te begrijpen hoe te om regels in de Visuele Redacteur van de Regel te schrijven, denken een eenvoudig voorbeeld van een vorm van de belastingberekening:
 
-![ Voorbeeld van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-1.png)
+![ Schermafbeelding van de interface die van de Redacteur van de Regel de verwezenlijking van een voorwaardelijke regel met wanneer-toen logica voor het zicht van het vormgebied toont ](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 In het hierboven beschreven formulier voert de gebruiker het brutosalaris in. Op basis van deze invoer wordt het voorwaardelijke veld weergegeven en wordt de verschuldigde belasting berekend.
 
@@ -209,7 +209,7 @@ In het hierboven beschreven formulier voert de gebruiker het brutosalaris in. Op
 
 Voer de volgende stappen uit om regels te schrijven:
 
-### 1. Auteur van een formulier
+### &#x200B;1. Auteur van een formulier
 
 Een formulier maken in de universele editor:
 
@@ -223,9 +223,9 @@ Een formulier maken in de universele editor:
    * Verzenden (knop Verzenden)
 1. Verberg het formulierveld `Additional Deduction` door het `Properties` ervan te openen.
 
-   ![ Voorbeeld van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![ Schermafbeelding van een vorm van de belastingberekening met inputgebieden voor bruto salaris, huwelijkse status, en afhankelijke kinderen, die de vormstructuur aantonen alvorens de regels worden toegepast ](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. Een voorwaardelijke regel toevoegen voor een formulierveld
+### &#x200B;2. Een voorwaardelijke regel toevoegen voor een formulierveld
 
 Nadat u het formulier hebt gemaakt, schrijft u de eerste regel om het veld `Additional Deduction` alleen weer te geven als het brutosalaris hoger is dan € 50.000. Een voorwaardelijke regel toevoegen:
 
@@ -243,7 +243,7 @@ Standaard is het regeltype `Set Value Of` geselecteerd. U kunt het geselecteerde
 1. Typ `50000` in het **[!UICONTROL Enter a Number]** -veld in de regel.
    ![ de Redacteur example6 van de Regel ](/help/edge/docs/forms/assets/rule-editor8.png)
 U hebt de voorwaarde gedefinieerd als `When Gross Salary is greater than 50000` . Definieer vervolgens de actie die moet worden uitgevoerd als deze voorwaarde `True` is.
-1. Selecteer **[!UICONTROL Show]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie `Then` .
+1. Selecteer `Then` in de vervolgkeuzelijst **[!UICONTROL Show]** in de instructie **[!UICONTROL Select Action]** .
    ![ de Redacteur example7 van de Regel ](/help/edge/docs/forms/assets/rule-editor9.png)
 1. Sleep het veld **[!UICONTROL Additional Deduction]** naar het tabblad Formulierobjecten in het veld **[!UICONTROL Drop object or select here]** . U kunt ook het veld **[!UICONTROL Drop object or select here]** selecteren en het veld **[!UICONTROL Additional Deduction]** in het pop-upmenu selecteren, waarin alle formulierobjecten in het formulier worden vermeld.
    ![ de Redacteur example8 van de Regel ](/help/edge/docs/forms/assets/rule-editor10.png)
@@ -261,7 +261,7 @@ De regel verschijnt als volgt in de Redacteur van de Regel.
 >
 > Alternatief, kunt u een Show regel op het Extra gebied van de Aftrek, in plaats van een wanneer regel op het Bruto gebied van de Salaris schrijven, om het zelfde gedrag uit te voeren.
 
-### 3. Berekeningen toevoegen voor de formuliervelden
+### &#x200B;3. Berekeningen toevoegen voor de formuliervelden
 
 Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het verschil tussen `Gross Salary` en `Additional Deduction` (indien van toepassing). Voer de volgende stappen uit om een berekeningsregel toe te voegen aan het veld **[!UICONTROL Taxable Income]** :
 
@@ -278,7 +278,6 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    * Selecteer **[!UICONTROL Minus]** in het veld **[!UICONTROL Select Operator]** .
 
    * Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Additional Deduction]** gebied in het andere **[!UICONTROL Drop object or select here]** gebied.
-
      ![ de Redacteur example15 van de Regel ](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
@@ -296,7 +295,6 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    * Selecteer **[!UICONTROL Multiplied by]** in het veld **[!UICONTROL Select Operator]** .
 
    * Selecteer **Aantal** van het **[!UICONTROL Select Option]** gebied en ga de waarde als `10` op het **[!UICONTROL Enter a Number]** gebied in.
-
      ![ de Redacteur example18 van de Regel ](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]** .
    ![ de Redacteur example19 van de Regel ](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,7 +302,7 @@ Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het 
    ![ de Redacteur example20 van de Regel ](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
 
-### 4. Een voorbeeld van een formulier bekijken
+### &#x200B;4. Een voorbeeld van een formulier bekijken
 
 Nu, wanneer u voorproef de vorm en **Bruto Salaris** als `60,000` ingaat, verschijnt het **Extra Vermindering** gebied, en **Belastbaar Inkomen** en **Betaalbare Belasting** worden dienovereenkomstig berekend.
 
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![ Toevoegend douanefunctie ](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Een aangepaste functie gebruiken in de regeleditor

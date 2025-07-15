@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -72,21 +72,6 @@ Hier is wat meer Conversational Forms brengt:
 
 
 Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaar voor gebruikerservaring.  Verhoog uw betrokkenheid, verminder het aantal gebruikers dat het formulier verlaat en maak interactie met uw website een prettiger ervaring voor iedereen.
-
-
-### WYSIWYG Authoring voor Edge Delivery Services
-
-WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. De Authoring van WYSIWYG biedt alle mogelijkheden van [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
-
-* Geavanceerde regeleditor voor het maken van complexe logica.
-* Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
-* WYSIWYG-bewerkingservaring voor het maken en visualiseren van formulieren.
-* Document met recordfunctionaliteit om tamper-proof archieven van verzonden gegevens te maken.
-* Integratie met Adobe Sign for Electronic signatures.
-* Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
-* Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
-* Mogelijkheid om te kiezen uit meerdere verzendacties voor het verwerken van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
-
 
 ### AEM Forms naar Marketo Connector
 
@@ -195,7 +180,7 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance API&#39;s
 

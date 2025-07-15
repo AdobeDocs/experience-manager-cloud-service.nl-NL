@@ -4,9 +4,9 @@ description: Met Universal Editor voor Edge Delivery Services for Forms kunt u A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Met de Universal Editor kunt u snel responsieve, interactieve formulieren ontwer
 
 Of u nu lichtgewicht weergave op de client beheert, compatibiliteit tussen browsers garandeert of voldoet aan strenge toegankelijkheidsnormen, de Universal Editor biedt een gestroomlijnde oplossing voor het maken en beheren van formulieren.
 
-![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png) {width=80%, richten-centrum}
+![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Belangrijke functies van de Universal Editor voor Edge Delivery Services for Forms
 
@@ -45,7 +45,7 @@ Of u nu lichtgewicht weergave op de client beheert, compatibiliteit tussen brows
 
 | ![ Analytics &amp; het Volgen ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![ Gegevens die ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics &amp; het Volgen** ](https://www.aem.live/developer/martech-integration) | **Fragmenten van de Vorm** (Binnenkort komend) | **Gegevens die** binden (Binnenkort komt) |
+| [**Analytics &amp; het Volgen** ](https://www.aem.live/developer/martech-integration) | **Fragmenten van de Vorm** (Binnenkort komend) | [**Gegevens die**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) binden |
 | Bekijk meer inzicht in gebruikersgedrag, formulierinteracties en verzendingssnelheden met ingebouwde analyses en tracering om gegevensgestuurde optimalisatie van formulieren mogelijk te maken. | Met formulierfragmenten kunt u hergebruik mogelijk maken door veelgebruikte secties één keer te maken en opnieuw te gebruiken in meerdere formulieren. Dit zorgt voor consistentie en vermindert de onderhoudsinspanning. | Gegevensbinding maakt directe verbindingen mogelijk tussen formuliervelden en achterwaartse gegevensbronnen, met ondersteuning voor realtime updates en geavanceerde gegevenstoewijzing. |
 
 | ![ CAPTCHA ](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![ Inbeddend Forms ](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![ Dank u Configuratie ](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-Om de Universele Redacteur en zijn geavanceerde eigenschappen zoals de Redacteur van de Regel toe te laten schrijven aan ons bij aem-forms-ea@adobe.com van uw officiële e-mailidentiteitskaart Het Adobe-team is hier om u te helpen bij het transformeren van uw ervaring op het gebied van formulieropbouw.
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 ## Veelgestelde vragen (FAQ)
 
