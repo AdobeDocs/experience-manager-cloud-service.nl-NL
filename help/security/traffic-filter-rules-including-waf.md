@@ -103,9 +103,9 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 
 1. Als WAF-regels een licentie hebben, moet u de functie in Cloud Manager inschakelen, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
 
-   1. Om WAF op een nieuw programma te vormen, controleer de **controle-doos van de Bescherming WAF-DDOS op het** 3} lusje van de Veiligheid **een productieprogramma** toevoegen.[](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. Om WAF op een nieuw programma te vormen, controleer de **controle-doos van de Bescherming WAF-DDOS op het** 3&rbrace; lusje van de Veiligheid **een productieprogramma** toevoegen.[&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3} lusje van de Veiligheid {uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
+   1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3&rbrace; lusje van de Veiligheid &lbrace;uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
 
 1. Creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager). De pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier van verwijzingen voorzien dat ergens onder wordt geplaatst, zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
@@ -113,7 +113,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 
 U kunt *regels van de verkeersfilter* vormen om op patronen zoals IPs, gebruikersagent, verzoekkopballen, hostname, geo, en url aan te passen.
 
-De klanten die van Verbeterde Veiligheid of WAF-DDoS het aanbieden van de Veiligheid van de Bescherming ook een speciale categorie van de regels van de verkeersfilter genoemd *van de het verkeersfilter van 0} WAF (of* regels van WAF *voor kort) vormen die één of meer* vlaggen van WAF [ van verwijzingen voorzien.](#waf-flags-list)
+De klanten die van Verbeterde Veiligheid of WAF-DDoS het aanbieden van de Veiligheid van de Bescherming ook een speciale categorie van de regels van de verkeersfilter genoemd *van de het verkeersfilter van 0&rbrace; WAF (of* regels van WAF *voor kort) vormen die één of meer* vlaggen van WAF [ van verwijzingen voorzien.](#waf-flags-list)
 
 Hier is een voorbeeld van een reeks regels van de verkeersfilter, die ook een regel van WAF omvat.
 
@@ -212,7 +212,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ snelst verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid {](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ snelst verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid &lbrace;](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Handelingsstructuur {#action-structure}
@@ -529,7 +529,7 @@ data:
 
 ## Standaardverkeersspiegel bij oorspronkelijke waarschuwing {#traffic-spike-at-origin-alert}
 
-Een [ e-mailbericht van het Centrum van Acties 1} zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.](/help/operations/actions-center.md)
+Een [ e-mailbericht van het Centrum van Acties 1&rbrace; zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.](/help/operations/actions-center.md)
 
 Als deze greep wordt ontmoet, zal Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van verkeersregels ](#tutorial-blocking-DDoS-with-rules) voor een geleide looppas-door.
 
@@ -547,7 +547,7 @@ data:
 
 ## CDN-logs {#cdn-logs}
 
-AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager ****, wanneer het selecteren van de Auteur of de Publish dienst.
+AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager **&#x200B;**, wanneer het selecteren van de Auteur of de Publish dienst.
 
 CDN-logbestanden kunnen maximaal vijf minuten worden vertraagd.
 
@@ -799,6 +799,7 @@ Vóór juli 2025 heeft Adobe de hieronder vermelde WAF-regels aanbevolen, die no
           - PRIVATEFILE
           - NULLBYTE
 ```
+
 </details>
 
 ## Zelfstudie {#tutorial}
