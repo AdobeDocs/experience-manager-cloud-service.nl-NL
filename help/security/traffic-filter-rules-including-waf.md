@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
 workflow-type: tm+mt
-source-wordcount: '4262'
+source-wordcount: '4582'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag 
 * Het vestigen van tariefgrenzen om minder vatbaar voor volumetrische aanvallen van Dos te zijn
 * Voorkomen dat IP-adressen waarvan bekend is dat ze kwaadaardig zijn, zich richten op uw pagina&#39;s
 
-De meeste van deze verkeersfilterregels zijn beschikbaar aan alle klanten van AEM as a Cloud Service Sites en van Forms. Zij werken hoofdzakelijk op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, hostname, weg, en gebruikersagent.
+Veel van deze regels voor verkeersfilters zijn beschikbaar voor alle AEM as a Cloud Service-sites en Forms-klanten. Verwezen als *standaardregels van de verkeersfilter*, werken zij hoofdzakelijk op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, hostname, weg, en gebruikersagent. De standaard regels van de verkeersfilter omvatten tarief grensregels om tegen verkeerspikes te beschermen.
 
-Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) die later in dit artikel worden beschreven.
+Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of *WAF regels* voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) later in dit artikel wordt beschreven dat.
 
 De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
@@ -59,25 +59,25 @@ Adobe neemt standaard maatregelen om te voorkomen dat de prestaties achteruitgaa
 
 De klanten kunnen pro-actieve maatregelen nemen om de aanvallen van de toepassingslaag (laag 7) te verlichten door regels bij diverse lagen van de stroom van de inhoudslevering te vormen.
 
-Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
+Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
 
-Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen ](/help/operations/config-pipeline.md). Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
+Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen ](/help/operations/config-pipeline.md). Naast *standaard die de filterregels van het verkeer* op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd *WAF regels*.
 
 ## Voorgesteld proces {#suggested-process}
 
 Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor het komen met de juiste regels van de verkeersfilter:
 
 1. Vorm niet-productie en productie config pijpleidingen, zoals die in de [ sectie van de Opstelling ](#setup) worden beschreven.
-1. Klanten die een licentie voor de subcategorie van WAF-verkeersfilterregels hebben, moeten deze in Cloud Manager inschakelen.
+1. De klanten die de *regels van de het verkeersfilter van WAF* vergunning hebben gegeven zouden hen in Cloud Manager moeten toelaten.
 1. Lees en probeer uit het leerprogramma om concreet te begrijpen hoe te om de regels van de verkeersfilter, met inbegrip van de regels van WAF te gebruiken als zij vergunning hebben gekregen. Het leerprogramma begeleidt u door het opstellen van regels aan een dev milieu, dat kwaadwillig verkeer simuleert, de [ CDN- logboeken ](#cdn-logs) downloadt, en hen analyseert in [ dashboard tooling ](#dashboard-tooling).
-1. Kopieer de aanbevolen startregels naar `cdn.yaml` en implementeer de configuratie in de logmodus in de productieomgeving.
-1. Na het verzamelen van wat verkeer, analyseer de resultaten gebruikend [ dashboard tooling ](#dashboard-tooling) om te zien of waren er om het even welke gelijken. Lookout voor valse positieven, en maak om het even welke noodzakelijke aanpassingen, uiteindelijk toelatend de starterregels op blokwijze.
-1. Voeg douaneregels toe die op analyse van de logboeken CDN worden gebaseerd, eerst het testen met gesimuleerd verkeer op ontwikkelmilieu&#39;s alvorens aan stadium en productiemilieu&#39;s op logboekwijze, dan blokwijze op te stellen.
+1. Kopieer de geadviseerde starterregels aan `cdn.yaml` en stel de configuratie aan het productiemilieu, met sommige regels op logboekwijze op.
+1. Na het verzamelen van wat verkeer, analyseer de resultaten gebruikend [ dashboard tooling ](#dashboard-tooling) om te zien of waren er om het even welke gelijken. Lookout voor valse positieven, en maak om het even welke noodzakelijke aanpassingen, uiteindelijk toelatend alle starterregels op blokwijze.
+1. Indien nodig, voeg douaneregels toe die op analyse van de CDN- logboeken worden gebaseerd, eerst het testen met gesimuleerd verkeer op dev milieu&#39;s alvorens aan stadium en productiemilieu&#39;s op logboekwijze op te stellen, dan blokwijze.
 1. Het verkeer van de controle voortdurend, veranderend de regels aangezien het bedreigingslandschap evolueert.
 
 ## Instellen {#setup}
 
-1. Maak een bestand `cdn.yaml` met een set verkeersfilterregels, waaronder WAF-regels.
+1. Maak een bestand `cdn.yaml` met een set verkeersfilterregels, waaronder WAF-regels. Bijvoorbeeld:
 
    ```
    kind: "CDN"
@@ -103,17 +103,17 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 
 1. Als WAF-regels een licentie hebben, moet u de functie in Cloud Manager inschakelen, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
 
-   1. Om WAF op een nieuw programma te vormen, controleer de **controle-doos van de Bescherming WAF-DDOS op het** 3&rbrace; lusje van de Veiligheid [ een productieprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) toevoegen.**&#x200B;**
+   1. Om WAF op een nieuw programma te vormen, controleer de **controle-doos van de Bescherming WAF-DDOS op het** 3} lusje van de Veiligheid **een productieprogramma** toevoegen.[](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3&rbrace; lusje van de Veiligheid &lbrace;uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
+   1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3} lusje van de Veiligheid {uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
 
-1. Creeer een config pijpleiding in Cloud Manager, zoals die in [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager). De pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier van verwijzingen voorzien dat ergens onder wordt geplaatst, zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
+1. Creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager). De pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier van verwijzingen voorzien dat ergens onder wordt geplaatst, zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 
 U kunt *regels van de verkeersfilter* vormen om op patronen zoals IPs, gebruikersagent, verzoekkopballen, hostname, geo, en url aan te passen.
 
-De klanten die van Verbeterde Veiligheid of WAF-DDoS het aanbieden van de Veiligheid van de Bescherming ook vergunning geven kunnen een speciale categorie van de regels van de verkeersfilter vormen genoemd *de regels van de het verkeersfilter van 0&rbrace; WAF (of de regels van WAF voor kort) die één of meer [ vlaggen van WAF ](#waf-flags-list) van verwijzingen voorzien.*
+De klanten die van Verbeterde Veiligheid of WAF-DDoS het aanbieden van de Veiligheid van de Bescherming ook een speciale categorie van de regels van de verkeersfilter genoemd *van de het verkeersfilter van 0} WAF (of* regels van WAF *voor kort) vormen die één of meer* vlaggen van WAF [ van verwijzingen voorzien.](#waf-flags-list)
 
 Hier is een voorbeeld van een reeks regels van de verkeersfilter, die ook een regel van WAF omvat.
 
@@ -212,7 +212,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ snelst verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid &lbrace;](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ snelst verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid {](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Handelingsstructuur {#action-structure}
@@ -237,8 +237,8 @@ De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels
 
 | **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
 |---|---|---|
-| AANVALLEN | Aanvallen | Markering om verzoeken te identificeren die een of meer van de aanvalstypen bevatten die in die tabel worden vermeld |
-| AANVALLEN VANUIT BAD-IP | Aanval van slechte IP | Markering voor het identificeren van aanvragen afkomstig uit `BAD-IP` en die een of meer van de aanvalstypen bevatten die in die tabel worden vermeld |
+| AANVALLEN | Aanvallen | Een samenvoeging van vlaggen met betrekking tot kwaadwillig verkeer (SQLI, CMDEXE, XSS, enz.). Zie de [ Aanbevolen sectie van de WAF-regels ](#recommended-waf-starter-rules) voor hoe deze vlag effectief kan worden gebruikt. |
+| AANVALLEN VANUIT BAD-IP | Aanval van slechte IP | Vergelijkbaar met de markering ATTACK, maar &quot;logisch EN-met&quot; met de markering `BAD-IP` , zodat een aanvraag wordt gemarkeerd als deze zowel overeenkomt met de markering ATTACK als met de tag BAD-IP. Zie de [ Aanbevolen sectie van de WAF-regels ](#recommended-waf-starter-rules) voor hoe deze vlag effectief kan worden gebruikt. |
 | SQLI | SQL-injectie | SQL de Injectie is de poging om toegang tot een toepassing te verkrijgen of bevoorrechte informatie te verkrijgen door willekeurige gegevensbestandvragen uit te voeren. |
 | BACKEUR | Achterkant | Een achterdeursignaal is een verzoek dat probeert te bepalen als een gemeenschappelijk achterdeurdossier op het systeem aanwezig is. |
 | CMDEXE | Opdracht uitvoeren | De Uitvoering van het bevel is de poging om controle te verkrijgen of een doelsysteem door willekeurige systeembevelen door middel van gebruikersinput te beschadigen. |
@@ -254,7 +254,7 @@ De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels
 | **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
 |---|---|---|
 | ABNORMALPATH | Abnormaal pad | Abnormaal pad geeft aan dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (`/foo/./bar` is bijvoorbeeld genormaliseerd naar `/foo/bar`) |
-| BAD-IP | Onjuiste IP | De vlag om verzoek te identificeren dat van IPs komt identificeert zich slecht, of omdat er als kwaadwillige bronnen (`SANS`, `TORNODE`) geïdentificeerd zijn of omdat zij door WAF slecht zijn geïdentificeerd nadat zij teveel kwaadwillige verzoeken verzonden |
+| BAD-IP | Onjuiste IP | Identificeert verzoeken die afkomstig zijn van IP-adressen waarvan bekend is dat ze kwaadaardig zijn, door opname in gegevenssets zoals `SANS` en `TORNODE` of op basis van eerdere detectie van kwaadaardig gedrag door de WAF |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
 | CODEINJECTIE | Code-injectie | De Injectie van de code is de poging om controle te verkrijgen of een doelsysteem door arbitraire bevelen van de toepassingscode door gebruikersinput te beschadigen. |
 | GECOMPRIMEERD | Compressie gedetecteerd | De POST-aanvraaginstantie is gecomprimeerd en kan niet worden gecontroleerd. Als bijvoorbeeld een aanvraagheader `Content-Encoding: gzip` is opgegeven en de hoofdtekst van de POST geen onbewerkte tekst is. |
@@ -529,7 +529,7 @@ data:
 
 ## Standaardverkeersspiegel bij oorspronkelijke waarschuwing {#traffic-spike-at-origin-alert}
 
-Een [&#128279;](/help/operations/actions-center.md) e-mailbericht van het Centrum van Acties 1&rbrace; zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.
+Een [ e-mailbericht van het Centrum van Acties 1} zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.](/help/operations/actions-center.md)
 
 Als deze greep wordt ontmoet, zal Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van verkeersregels ](#tutorial-blocking-DDoS-with-rules) voor een geleide looppas-door.
 
@@ -547,7 +547,7 @@ data:
 
 ## CDN-logs {#cdn-logs}
 
-AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager **&#x200B;**, wanneer het selecteren van de Auteur of de Publish dienst.
+AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager ****, wanneer het selecteren van de Auteur of de Publish dienst.
 
 CDN-logbestanden kunnen maximaal vijf minuten worden vertraagd.
 
@@ -661,11 +661,20 @@ Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar 
 
 Het tooling van het dashboard kan direct van de [ worden gekloond AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats GitHub.
 
-[ Leerprogramma&#39;s ](#tutorial) zijn beschikbaar voor concrete instructies op hoe te om het dashboardhulpmiddel te gebruiken.
+[ een leerprogramma van A ](#tutorial) is beschikbaar voor concrete instructies op hoe te om het dashboardhulpmiddel te gebruiken.
 
-## Aanbevolen startregels {#recommended-starter-rules}
+## Aanbevolen starterregels {#recommended-starter-rules}
 
-U kunt de aanbevolen regels hieronder naar uw `cdn.yaml` kopiëren om aan de slag te gaan. Begin op logboekwijze, analyseer uw verkeer, en wanneer tevreden, verandering in blokwijze. Mogelijk wilt u de regels wijzigen op basis van de unieke kenmerken van het live verkeer van uw website.
+Adobe stelt voor eerst de regels voor het verkeersfilter hieronder te gebruiken en deze vervolgens in de loop van de tijd te verfijnen. *Standaardregels* zijn beschikbaar met een vergunning van Plaatsen of van Forms, terwijl *de regels van WAF* een Verbeterde vergunning van de Bescherming van de Veiligheid of van WAF-DDoS vereisen.
+
+### Aanbevolen standaardregels {#recommended-nonwaf-starter-rules}
+
+Begin met deze regels:
+
+1. snelheidslimiet (logbestandmodus):
+   * logboek wanneer het verkeer van bepaalde IP een tariefgrens overschrijdt. Overschakelen naar de blokmodus na te hebben gecontroleerd of er geen waarschuwingen zijn ontvangen; indien er wel waarschuwingen zijn ontvangen, zou de grenswaarde te laag zijn.
+2. specifieke landen (blokmodus):
+   * blokverkeer uit bepaalde landen (wijzig de landcodes die op uw bedrijfsvereisten worden gebaseerd)
 
 ```
 kind: "CDN"
@@ -701,8 +710,9 @@ data:
         groupBy:
           - reqProperty: clientIp
       action: log
+      alert: true
     # Block requests coming from OFAC countries
-    - name: block-ofac-countries
+    - name: ofac-countries
       when:
         allOf:
           - { reqProperty: tier, in: ["author", "publish"] }
@@ -720,7 +730,53 @@ data:
               - ZW
               - CU
               - CI
-      action: log
+      action: block
+```
+
+### Aanbevolen WAF-regels {#recommended-waf-starter-rules}
+
+Voeg de volgende regels toe aan uw bestaande configuratie:
+
+1. Vlag-VAN-BAD-IP (blokmodus):
+   * Onmiddellijk blokverkeer dat beide verdachte patronen (met inbegrip van verscheidene in de [ de vlaggen van WAF lijst ](#waf-flags-list)) aanpast en uit IP adressen voortkomt die om kwaadwillig worden gekend te zijn.
+   * De markering ATTACK-VAN-BAD-IP voldoet inherent aan beide voorwaarden (patroongelijke en bekende kwaadwillige IP), die het risico van valse positieven minimaliseren. U kunt deze regel dus direct toepassen in de blokkeermodus.
+2. Vlag koppelen (logbestandmodus):
+   * Logboek aanvankelijk (eerder dan blok) verkeer dat verdachte patronen aanpast maar niet uit bekende kwaadwillige IP adressen voortkomt. Deze voorzichtige benadering van het registreren eerder dan het blokkeren helpt onbedoeld het legitieme verkeer (valse positieven) blokkeren.
+   * Na het opstellen van deze regel, analyseer zorgvuldig CDN- logboeken om te verifiëren dat de wettige verzoeken niet verkeerd worden gemarkeerd. Zodra u zeker bent dat geen wettig verkeer wordt beïnvloed, schakelaar aan blokwijze.
+
+>[!NOTE]
+> Uit onze ervaring blijkt dat valse positieven in verband met de ATTACK-markering zeldzaam zijn. Daarom kan het een praktische strategie zijn om al verdacht verkeer-zelfs onmiddellijk te blokkeren als het IP adres niet gekend is om kwaadwillig-en gebruik daarna CDN logboekanalyse te identificeren en toe te voegen staat regels voor wettig verkeer toe. Elke organisatie moet haar eigen tolerantie ten aanzien van risico&#39;s beoordelen en de voordelen van een betere bescherming afwegen tegen het risico van onopzettelijke blokkering van legitieme verzoeken.
+>
+
+```
+    # blocks likely attack traffic, which also comes from suspected IPs
+    - name: attacks-from-bad-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: block
+        wafFlags:
+          - ATTACK-FROM-BAD-IP
+    # log likely attack traffic, and later switch to block mode if false positives aren't observed
+    - name: attacks-from-any-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: log
+        wafFlags:
+          - ATTACK
+```
+
+### Aanbevolen WAF-regels voor oudere versies {#previous-waf-starter-rules}
+
+Vóór juli 2025 heeft Adobe de hieronder vermelde WAF-regels aanbevolen, die nog steeds geldig en doeltreffend zijn in de strijd tegen kwaadwillig verkeer. Raadpleeg de zelfstudie voor meer informatie over het migreren naar de nieuwe aanbevolen regels.
+
+<details>
+  <summary>Breid uit om de oudere aanbevolen WAF-regels te bekijken.</summary>
+
+```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
@@ -743,32 +799,21 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
+</details>
 
-## Tutorials {#tutorial}
+## Zelfstudie {#tutorial}
 
-Er zijn twee zelfstudies beschikbaar.
+Het werk door [ een reeks leerprogramma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van WAF te bereiken.
 
-### Websites beschermen met verkeersfilterregels (inclusief WAF-regels) {#tutorial-protecting-websites}
+De zelfstudies omvatten:
 
-[ het Werk door een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om algemene, praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van WAF te bereiken.
-
-De zelfstudie begeleidt u door:
-
-* De Cloud Manager config-pijplijn instellen
-* Het gebruiken van hulpmiddelen om kwaadwillig verkeer te simuleren
-* Regels voor het declareren van verkeersfilters, inclusief WAF-regels
-* Resultaten analyseren met dashboardgereedschappen
+* Een overzicht van standaard en WAF verkeersfilterregels
+* Het vormen van de geadviseerde norm en het verkeersfilterregels van WAF om aanvallen met inbegrip van Ontkenning van de Dienst (Dos) en andere bedreigingen te blokkeren
+* Het opstellen van regels die de Cloud Manager config pijpleiding gebruiken
+* Testen van uw regels gebruikend hulpmiddelen om kwaadwillig verkeer te simuleren
+* Resultaten analyseren met de Log Analyse Tooling
 * Aanbevolen procedures
 
-### Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter {#tutorial-blocking-DDoS-with-rules}
-
-[ diepte-duik op hoe te om ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ontkenning van de Dienst (Dos) en Verspreid Ontkenning van de aanvallen van de Dienst (DDoS) te blokkeren gebruikend de regels van de het verkeersfilter van de snelheidsbeperking en andere strategieën.
-
-De zelfstudie begeleidt u door:
-
-* begrijpen, beveiliging
-* ontvangen van waarschuwingen wanneer tarieflimieten worden overschreden
-* het analyseren van verkeerspatronen gebruikend dashboardtooling om drempels voor de regels van de snelheidsgrensfilter te vormen
 
 
 
