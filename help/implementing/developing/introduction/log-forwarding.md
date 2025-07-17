@@ -4,9 +4,9 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2409'
 ht-degree: 0%
 
 ---
@@ -19,23 +19,107 @@ ht-degree: 0%
 
 Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM-logboeken (inclusief Apache/Dispatcher) en CDN-logbestanden doorsturen naar de bijbehorende logbestemming. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
-* Amazon S3 (private bèta, zie onderstaande opmerking)
-* Azure Blob Storage
-* Datahond
-* Elasticsearch of OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic (persoonlijke bèta, zie onderstaande opmerking)
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Logboektechnologie</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nee</td>
+    </tr>
+    <tr>
+      <td>Azure Blob Storage</td>
+      <td>Nee</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>Nee</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nee</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch <br> OpenSearch</td>
+      <td>Nee</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>Nee</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nee</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>Nee</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Sumo Logic</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nee</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> Voor technologieën in Private Beta, gelieve te e-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
 Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en kan via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
 De AEM- en Apache-/Dispatcher-logboeken kunnen worden gerouteerd via de AEM-infrastructuur voor geavanceerde netwerken, zoals speciale IP-adressen.
 
 Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbestemming worden verzonden als deel van het I/O gebruik van het Netwerk van uw organisatie worden beschouwd.
-
->[!NOTE]
->
->Amazon S3 en Sumo Logic bevinden zich in Private Beta en ondersteunen alleen AEM logs (inclusief Apache/Dispatcher).  New Relic via HTTPS wordt ook in persoonlijke bèta uitgevoerd. E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
@@ -49,7 +133,7 @@ Dit artikel is als volgt geordend:
 
 ## Instellen {#setup}
 
-1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ worden beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) (**soort** zou aan `LogForwarding` moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).
+1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0} worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ Een ander scenario is of het door:sturen van de logboeken CDN of AEM (met inbegr
 Sommige organisaties kiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen, anderen kunnen vereisen om havens buiten HTTPS (443) te gebruiken.  Als zo [ het Geavanceerde Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) zal moeten worden gevormd alvorens logboek het door:sturen configuratie op te stellen.
 
 Gebruik de lijst hieronder om te zien wat de vereisten voor Geavanceerde die Voorzien van een netwerk en Logging configuratie zijn op of u haven 443 of niet gebruikt, en of u uw logboeken om van een vast IP adres nodig hebt te verschijnen.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>LogForwarding.yaml Poortdefinitie vereist</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2" ro>HTTPS (443)</td>
       <td>Nee</td>
       <td>Nee</td>
       <td>Nee</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>Ja</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >Of uw logboeken van één enkel IP adres verschijnen wordt bepaald door uw keus van de Geavanceerde configuratie van het Voorzien van een netwerk.  Om dit mogelijk te maken, moet speciale eieren worden gebruikt.
@@ -194,13 +278,17 @@ De configuraties voor de gesteunde registrerenbestemmingen worden hieronder verm
 
 ### Amazon S3 {#amazons3}
 
+Log Doorsturen naar Amazon S3 ondersteunt AEM- en Dispatcher-logbestanden, CDN-logbestanden worden nog niet ondersteund.
+
 >[!NOTE]
 >
->Logboeken die periodiek aan S3, om de 10 minuten voor elk type van logboekdossier worden geschreven.  Dit kan resulteren in een aanvankelijke vertraging voor logboeken die aan S3 worden geschreven zodra de eigenschap wordt van een knevel voorzien.  Meer informatie over waarom dit gedrag bestaat kan [ hier ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs) worden gevonden.
+>Logboeken die periodiek aan S3, om de 10 minuten voor elk type van logboekdossier worden geschreven.  Dit kan resulteren in een aanvankelijke vertraging voor logboeken die aan S3 worden geschreven zodra de eigenschap wordt van een knevel voorzien.  [ Verdere informatie over dit gedrag ](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-Als u de S3 Log Forwarder wilt gebruiken, moet u een AWS IAM-gebruiker vooraf configureren met het juiste beleid voor toegang tot uw S3 emmertje.  Zie [ hier ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) voor hoe te om IAM gebruikersgeloofsbrieven tot stand te brengen.
+Als u de S3 Log Forwarder wilt gebruiken, moet u een AWS IAM-gebruiker vooraf configureren met het juiste beleid voor toegang tot uw S3 emmertje.  Zie [ de Documentatie van de Gebruiker van AWS IAM ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) voor hoe te om gebruikersgeloofsbrieven tot stand te brengen IAM.
 
 Met het IAM-beleid kan de gebruiker `s3:putObject` gebruiken.  Bijvoorbeeld:
 
@@ -228,7 +316,7 @@ Met het IAM-beleid kan de gebruiker `s3:putObject` gebruiken.  Bijvoorbeeld:
 }
 ```
 
-Zie [ hier ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) voor meer informatie over de implementatie van het Beleid van het Emmertje van AWS.
+Zie {de Documentatie van het Beleid van het Emmertje van 0} AWS [ voor meer informatie over hoe te om uit te voeren.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
 
 ### Azure Blob Storage {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-Overwegingen:
+#### Overwegingen
 
 * Maak een API-sleutel zonder integratie met een specifieke cloud provider.
 * De eigenschap tags is optioneel
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-Overwegingen:
+#### Overwegingen
 
 * standaard is de poort 443 . Optioneel kan deze worden overschreven met de naam `port`
 * Voor geloofsbrieven, zorg ervoor om plaatsingsgeloofsbrieven te gebruiken, eerder dan rekeningsgeloofsbrieven. Dit zijn de referenties die worden gegenereerd in een scherm dat op deze afbeelding lijkt:
@@ -378,21 +466,14 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-Overwegingen:
+#### Overwegingen
 
 * Het url koord moet **https://** omvatten of de bevestiging zal ontbreken.
 * De URL kan een poort bevatten. Bijvoorbeeld `https://example.com:8443/aem_logs/aem` . Als er geen poort is opgenomen in de URL-tekenreeks, wordt poort 443 (de standaard-HTTPS-poort) gebruikt.
 
-#### New Relic Log API {#newrelic-https}
-
-E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
-
->[!NOTE]
->New Relic biedt regiospecifieke eindpunten op basis van waar uw New Relic-account is ingericht.  Zie [ hier ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) voor de documentatie van New Relic.
-
 #### HTTPS CDN-logbestanden {#https-cdn}
 
-De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [&#128279;](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.
+De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
 
 Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde `aemcdn` .
 
@@ -402,7 +483,7 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 #### HTTPS AEM-logbestanden {#https-aem}
 
-Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [&#128279;](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.
+Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
 
 Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
@@ -412,6 +493,52 @@ Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende wa
 * amemdispatcher
 * aemhttpdaccess
 * aemhttpderror
+
+### New Relic Log API {#newrelic-https}
+
+Bij Log Doorsturen naar New Relic wordt de New Relic HTTPS API gebruikt voor opname.  Momenteel worden alleen logboekbestanden van AEM en Dispatcher ondersteund. CDN-logbestanden worden nog niet ondersteund.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>Log-forward naar New Relic is alleen beschikbaar voor New Relic-accounts die eigendom zijn van klanten.
+>
+>E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
+>
+>New Relic biedt regiospecifieke eindpunten op basis van waar uw New Relic-account is ingericht.  Zie {de documentatie van 0} New Relic [ voor verdere informatie.](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)
+
+### Dynatrace Log API {#dynatrace-https}
+
+Bij Log Doorsturen naar Dynatrace wordt de Dynatrace HTTPS API gebruikt voor opname.  Momenteel worden alleen logboekbestanden van AEM en Dispatcher ondersteund. CDN-logbestanden worden nog niet ondersteund.
+
+Het bereikattribuut &quot;Ingest Logs&quot; is vereist voor het token.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
 ### Splunk {#splunk}
 
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-Overwegingen:
+#### Overwegingen
 
 * Standaard is de poort 443. Optioneel kan deze worden overschreven door een eigenschap met de naam `port` .
 * Het sourcetype gebied zal één van de volgende waarden, afhankelijk van het specifieke logboek hebben: *aemaccess*, *aemerror*,
@@ -441,6 +568,8 @@ Overwegingen:
 > [ als het migreren ](#legacy-migration) van erfenisLogboek dat aan dit zelf-servermodel door:sturen, kunnen de `sourcetype` waarden van het gebied die naar uw Splunk index worden verzonden veranderd zijn, zo dienovereenkomstig aangepast.
 
 ### Sumo Logic {#sumologic}
+
+Log Forwarding to Sumo Logic biedt ondersteuning voor AEM- en Dispatcher-logbestanden; CDN-logbestanden worden nog niet ondersteund.
 
 Wanneer u Sumo Logic configureert voor gegevensinvoer, krijgt u een &quot;HTTP Source-adres&quot; dat de host, ontvangerURI en de persoonlijke sleutel in één tekenreeks levert.  Bijvoorbeeld:
 
