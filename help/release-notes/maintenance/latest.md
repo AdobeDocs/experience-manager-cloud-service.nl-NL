@@ -24,7 +24,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21570 same
 >
 >[ Versie 21484 ](/help/release-notes/maintenance/2025/2025-7-0.md#21484) werd gemaakt privé en door versie 21570 vervangen.
 
-De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-21570}
 
