@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [ Vorm Bridge ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) te gebruiken. Het neemt widgetConfigObject als input.
+Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [ Vorm Bridge ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) te gebruiken. Het neemt widgetConfigObject als input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
