@@ -4,9 +4,9 @@ description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,17 @@ AEM biedt een `404.jsp` -script onder `/libs/sling/servlet/errorhandler` om op f
 
 >[!NOTE]
 >
->Op een auteursinstantie, [&#128279;](/help/implementing/deploying/configuring-osgi.md) wordt de Debug Filter van 0&rbrace; CQ WCM toegelaten door gebrek.  Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, [ wordt de Debug Filter van 0} CQ WCM toegelaten door gebrek. ](/help/implementing/deploying/configuring-osgi.md) Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
 >Op publiceer instantie, is CQ WCM zuivert Filter **altijd** gehandicapt (zelfs als gevormd zoals toegelaten).
 
+>[!NOTE]
+>
+>Voor verdere informatie over fout behandeling met Dispatcher zie [ Vormend CDN de Pagina&#39;s van de Fout ](/help/implementing/dispatcher/cdn-error-pages.md).
+
 ## Hoe te om Pagina&#39;s aan te passen die door de Handler van de Fout worden getoond {#how-to-customize-pages-shown-by-the-error-handler}
 
-U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. Om dit te doen gebruikt u [ AEM standaard bedekkingsmechanisme ](/help/implementing/developing/introduction/overlays.md) zodat uw aangepaste pagina&#39;s onder `/apps` worden gecreeerd en de standaardpagina&#39;s bedekken die onder `/libs` zijn.
+U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. Om dit te doen gebruikt u [ AEM standaardbedekkingsmechanisme ](/help/implementing/developing/introduction/overlays.md) zodat uw aangepaste pagina&#39;s onder `/apps` worden gecreeerd en de standaardpagina&#39;s bedekken die onder `/libs` zijn.
 
 1. Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
 
@@ -49,7 +53,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
 >[!CAUTION]
 >
->Het script van `404.jsp` is specifiek ontworpen om te kunnen voldoen aan AEM verificatie, met name om systeemaanmelding mogelijk te maken in het geval van deze fouten.
+>Het script van `404.jsp` is specifiek ontworpen om te voldoen aan AEM-verificatie, met name om systeemaanmelding mogelijk te maken in het geval van deze fouten.
 >
 >Daarom zou de vervanging van dit manuscript met grote voorzichtigheid moeten worden gedaan.
 
@@ -57,7 +61,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
 De interne Fout van de Server van HTTP [ 500 ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) wijst op een server-zijfout zoals de server die een onverwachte voorwaarde ontmoet die het verhinderde het verzoek te vervullen.
 
-Wanneer de verzoekverwerking in een uitzondering resulteert, het kader Apache Sling (dat AEM wordt voortgebouwd op):
+Als de verwerking van een verzoek resulteert in een uitzondering, is het Apache Sling-framework (waarop AEM is gebaseerd):
 
 * Hiermee wordt de uitzondering geregistreerd
 * En retourneert in de hoofdtekst van de respons:
@@ -73,11 +77,11 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 >[!NOTE]
 >
 >In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Als u wilt toestaan dat de werkelijke reactie van de backend wordt doorgegeven, moet u de volgende koptekst toevoegen aan de reactie: `x-aem-error-pass: true` .
->Dit werkt alleen voor reacties die afkomstig zijn van AEM of de laag Apache/Dispatcher. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
+>>Dit werkt alleen voor reacties die afkomstig zijn uit AEM of de Apache-/Dispatcher-laag. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
 
 >[!CAUTION]
 >
->Op een auteursinstantie, [&#128279;](/help/implementing/deploying/configuring-osgi.md) wordt de Debug Filter van 0&rbrace; CQ WCM toegelaten door gebrek.  Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, [ wordt de Debug Filter van 0} CQ WCM toegelaten door gebrek. ](/help/implementing/deploying/configuring-osgi.md) Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
 >Voor een douane fout-manager, zijn de reacties met code 500 nodig - zodat moet de [ CQ WCM zuivert Filter ](/help/implementing/deploying/configuring-osgi.md) worden onbruikbaar gemaakt. Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >
