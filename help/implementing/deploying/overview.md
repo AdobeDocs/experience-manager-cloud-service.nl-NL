@@ -112,7 +112,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
    * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [ het filevault documentatie van het Jasrabbit ](https://jackrabbit.apache.org/filevault/installhooks.html) over installeert haken. AEM CS gebruikt momenteel FileVault versie 3.4.0, die installatiekoppen beperkt tot beheergebruikers, systeemgebruikers en leden van de beheerdersgroep).
 
-U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details over geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden gevonden.
+U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details over geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=nl-NL) worden gevonden.
 
 >[!NOTE]
 >Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. De inhoud die voor een milieu specifiek is vereist handinstallatie als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +121,7 @@ Er is ook geen mechanisme om wijzigingen in het veranderbare inhoudspakket terug
 
 Alle meegeleverde pakketten van derden moeten als compatibel met AEM as a Cloud Service worden gevalideerd, anders leidt de opname ervan tot een implementatiefout.
 
-Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening moeten in overeenstemming zijn nodig door de veranderingen van de 6.5 bewaarplaats die in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden beschreven.
+Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening moeten in overeenstemming zijn nodig door de veranderingen van de 6.5 bewaarplaats die in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=nl-NL) worden beschreven.
 
 ## Opnieuw plaatsen {#repoinit}
 
@@ -177,7 +177,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
 >abstract="Verken het gebruik van Package Manager voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;one off&#39;. De installatie omvat het importeren van specifieke inhoud van de productie naar het opbouwen om een productieprobleem op te lossen, het overbrengen van een pakket met kleine inhoud van een on-premise omgeving naar AEM Cloud-omgevingen en nog veel meer."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL" text="Inhoud overbrengen"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld, het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s, [ de Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) kan in milieu&#39;s op AEM as a Cloud Service worden gebruikt.
 
@@ -263,7 +263,7 @@ AEM as a Cloud Service werkt momenteel niet met indexbeheerprogramma&#39;s zoals
 
 ## Replicatie {#replication}
 
-Het publicatiemechanisme is achterwaarts compatibel met [ de Replicatie Java™ APIs van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
+Het publicatiemechanisme is achterwaarts compatibel met [ de Replicatie Java™ APIs van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
 
 Voor het ontwikkelen en testen van replicatie met de AEM QuickStart die klaar is voor de cloud, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Author/Publish-instelling. Als het ingangspunt voor de gebruikersinterface van AEM Author voor de wolk wordt verwijderd, gaan de gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
 
