@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
+source-git-commit: 2e90e40a0fe439653987a23792a4c1ec612aafd6
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '276'
 ht-degree: 2%
 
 ---
@@ -24,11 +24,11 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21570 same
 >
 >[ Versie 21484 ](/help/release-notes/maintenance/2025/2025-7-0.md#21484) werd gemaakt privé en door versie 21570 vervangen.
 
-De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-21570}
 
-Geen
+* Gemigreerd naar Apache Httpd 2.4.63
 
 ### Opgeloste problemen {#fixed-issues-21570}
 
@@ -37,6 +37,7 @@ Geen
 ### Bekende problemen {#known-issues-21570}
 
 * De gerelateerde AEM SDK heeft een andere release-id (21575) en is beschikbaar via de Software Distribution Portal.
+* Apache HTTP Server versie 2.4.63 introduceerde een eindeloze verandering in hoe `mod_rewrite` vraagtekens (`?`) in URLs behandelt. Deze wijziging is geïmplementeerd om te voorkomen dat de markering `UnsafeAllow3F` wordt gebruikt, wat als een beveiligingsrisico werd beschouwd. Dit is van invloed op `RewriteRule` -instructies die gebruikmaken van detectie van vraagtekens in URL-patronen.
 
 ### Verouderde functies en API&#39;s {#deprecated-21570}
 
@@ -53,4 +54,5 @@ Geen
 | AEM Oak | 1 80,0 | [ Oak API 1.80.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
+| Apache HTTP Server | 2,4,63 | [ Apache Httpd 2.4.63 ](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM-kerncomponenten | 2 29,0 | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
