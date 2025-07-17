@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,30 @@ U kunt AEM Forms verbinden met Adobe Experience Platform (AEP) om klantprofielen
 
 Klaar om te beginnen? [ Leer meer over het integreren van AEM Forms met Adobe Experience Platform (AEP) ](/help/forms/aem-forms-aep-connector.md).
 
+### AEM Forms HTML5 Forms
+
+Met AEM Forms HTML5 Forms kunt u bestaande XFA-formuliersjablonen (XML Forms Architecture) weergeven in HTML5-indeling, zodat deze toegankelijk zijn voor moderne browsers en mobiele apparaten waarvoor PDF op XFA-basis niet wordt ondersteund. Deze mogelijkheid overbrugt de kloof tussen traditionele PDF forms en moderne webervaringen.
+
+![ HTML5 de Voorproef van Forms ](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**Zeer belangrijke mogelijkheden:**
+
+* **op HTML5-Gebaseerde teruggeven van XFA vormmalplaatjes**: geef uw bestaande op XFA-Gebaseerde vormen in formaat HTML5 terug om uw cliëntplatform tot mobiele apparaten (Apple iPad, de tablet van Android, smartphones, en meer) uit te breiden die HTML5 steunen maar geen Lezer van Adobe met XFA Forms steunen.
+
+* **mobiel-klaar vormen**: HTML5 Forms brengt talrijke mogelijkheden over die mobiel-klaar zijn, die u helpen uw huidige oplossingen en werkschema&#39;s aan tablets of smartphones met HTML5 browsers uitbreiden.
+
+* **de steun van de Toegankelijkheid**: HTML5 Forms gebruikt de toegankelijkheidsnorm ARIA HTML5 en steun van labels voorzien navigatie, die hen compatibel maken met gemeenschappelijke het schermlezers zoals JAWS en VoiceOver.
+
+* **mogelijkheden van de Aanpassing**: U kunt de verschijning van bestaande widgets aanpassen, uw eigen douanewidgets tot stand brengen, of douanestijlen in vormen gebruiken die standaardWebtechnologieën zoals CSS en JavaScript gebruiken.
+
+* **van rechts naar links taalsteun**: HTML5 Forms steunt van rechts naar links talen zoals Hebreeuws, toestaand u om vormen in talen te tonen en te vullen RTL.
+
+* **steun van de Bijlage**: Upload, voorproef, en leg gehechtheid met HTML5 vormen voor verbeterde gegevensinzameling voor.
+
+* **Bespaart van het Ontwerp**: Sparen een vorm HTML5 als ontwerp en hervat het invullen van de vorm in een recentere fase.
+
+Klaar om te beginnen? De [ Inleiding aan HTML5 vormen ](/help/forms/introductionhtml5.md) documentatie verstrekt een uitvoerig overzicht en begonnen gids voor deze innovatie.
+
 ## Aanvullende innovaties voor vroege toegang
 
 ### HTML-e-mailsjablonen in Adaptive Forms
@@ -180,7 +204,7 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance API&#39;s
 
