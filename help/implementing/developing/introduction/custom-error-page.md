@@ -25,7 +25,7 @@ AEM biedt een `404.jsp` -script onder `/libs/sling/servlet/errorhandler` om op f
 
 >[!NOTE]
 >
->Op een auteursinstantie, [ wordt de Debug Filter van 0} CQ WCM toegelaten door gebrek. ](/help/implementing/deploying/configuring-osgi.md) Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, [ wordt de Debug Filter van 0&rbrace; CQ WCM toegelaten door gebrek. ](/help/implementing/deploying/configuring-osgi.md) Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
 >Op publiceer instantie, is CQ WCM zuivert Filter **altijd** gehandicapt (zelfs als gevormd zoals toegelaten).
 
@@ -77,11 +77,11 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 >[!NOTE]
 >
 >In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Als u wilt toestaan dat de werkelijke reactie van de backend wordt doorgegeven, moet u de volgende koptekst toevoegen aan de reactie: `x-aem-error-pass: true` .
->>Dit werkt alleen voor reacties die afkomstig zijn uit AEM of de Apache-/Dispatcher-laag. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
+>&#x200B;>Dit werkt alleen voor reacties die afkomstig zijn uit AEM of de Apache-/Dispatcher-laag. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
 
 >[!CAUTION]
 >
->Op een auteursinstantie, [ wordt de Debug Filter van 0} CQ WCM toegelaten door gebrek. ](/help/implementing/deploying/configuring-osgi.md) Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, [ wordt de Debug Filter van 0&rbrace; CQ WCM toegelaten door gebrek. ](/help/implementing/deploying/configuring-osgi.md) Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
 >Voor een douane fout-manager, zijn de reacties met code 500 nodig - zodat moet de [ CQ WCM zuivert Filter ](/help/implementing/deploying/configuring-osgi.md) worden onbruikbaar gemaakt. Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >
