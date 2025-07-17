@@ -19,22 +19,22 @@ ht-degree: 0%
 
 Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM-logboeken (inclusief Apache/Dispatcher) en CDN-logbestanden doorsturen naar de bijbehorende logbestemming. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
-<html>
-<style>
-table {
+&lt;html>
+&lt;style>
+table &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
   table-layout: fixed;
-}
-th, td {
+&rbrace;
+th, td &lbrace;
   width: 5%;
   max-width: 100%;
   border: 1px solid black;
   padding: 8px;
   word-wrap: break-word;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +109,7 @@ th, td {
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Dit artikel is als volgt geordend:
 
 ## Instellen {#setup}
 
-1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0} worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
+1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0&rbrace; worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
 
    ```yaml
    kind: "LogForwarding"
@@ -200,14 +200,14 @@ Een ander scenario is of het door:sturen van de logboeken CDN of AEM (met inbegr
 Sommige organisaties kiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen, anderen kunnen vereisen om havens buiten HTTPS (443) te gebruiken.  Als zo [ het Geavanceerde Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) zal moeten worden gevormd alvorens logboek het door:sturen configuratie op te stellen.
 
 Gebruik de lijst hieronder om te zien wat de vereisten voor Geavanceerde die Voorzien van een netwerk en Logging configuratie zijn op of u haven 443 of niet gebruikt, en of u uw logboeken om van een vast IP adres nodig hebt te verschijnen.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -239,7 +239,7 @@ table, th, td {
       <td>Ja</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >Of uw logboeken van één enkel IP adres verschijnen wordt bepaald door uw keus van de Geavanceerde configuratie van het Voorzien van een netwerk.  Om dit mogelijk te maken, moet speciale eieren worden gebruikt.
@@ -473,7 +473,7 @@ data:
 
 #### HTTPS CDN-logbestanden {#https-cdn}
 
-De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
+De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.](#log-formats)
 
 Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde `aemcdn` .
 
@@ -483,7 +483,7 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 #### HTTPS AEM-logbestanden {#https-aem}
 
-Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
+Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.](#log-formats)
 
 Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
