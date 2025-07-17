@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met de gemoderniseerde OpenAPI-implementatie van de API voor contentfragmentbeheer kunnen ontwikkelaars via programmacode bewerkingen Maken, Lezen, Bijwerken en Verwijderen uitvoeren op AEM Author voor het beheer van modellen van inhoudsfragmenten en inhoudsfragmenten die zijn opgeslagen in AEM. Deze API&#39;s ondersteunen een aantal gebruiksgevallen.
 
-Het bestaande gebruik van [ HTTP API van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) voor de Fragmenten van de Inhoud zou aan het nieuwe Beheer OpenAPI van het Fragment van de Inhoud moeten worden gemigreerd. Voor volledige documentatie zie [ Beheer API van het Fragment van de Inhoud ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+Het bestaande gebruik van [ HTTP API van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) voor de Fragmenten van de Inhoud zou aan het nieuwe Beheer OpenAPI van het Fragment van de Inhoud moeten worden gemigreerd. Voor volledige documentatie zie [ Beheer API van het Fragment van de Inhoud ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
 
 >[!NOTE]
 >
