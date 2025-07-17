@@ -2,9 +2,10 @@
 title: Toegangsbeheer op basis van kenmerken
 description: Leer hoe te om op Attributen-gebaseerde toegangsbeheer toe te laten om op meta-gegevens-gebaseerde regels te bepalen om het niveau van toegang tot activa te bepalen beschikbaar in Content Hub
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,18 @@ Enkele zeer belangrijke voordelen van op attribuut-gebaseerde toegangsbeheer omv
 
 ## Hoe te om op Attribuut-Gebaseerd toegangsbeheer toe te laten? {#enable-attribute-based-access-control}
 
-Op dit moment kunt u op kenmerken gebaseerde toegangsbeheerregels niet zelf maken met de Content Hub-gebruikersinterface. Maak een Adobe-ondersteuningsticket om regels in een spreadsheet te definiëren aan de hand van de richtlijnen die in dit artikel zijn gedefinieerd.
+Op dit moment kunt u op kenmerken gebaseerde toegangsbeheerregels niet zelf maken met de Content Hub-gebruikersinterface.
+
+Klik **Spreadsheet van de Download** om regels in een spreadsheet te downloaden en te bepalen. Maak een Adobe-ondersteuningsticket en verstrek de regels die in het spreadsheet zijn gedefinieerd aan Adobe.
+
+[!BADGE  Spreadsheet van de Download ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Definieer regels in het werkblad aan de hand van de richtlijnen die in dit artikel zijn gedefinieerd.
+
+>[!IMPORTANT]
+>
+> Na het bepalen van de regels, navigeer aan het **lusje van de Fouten van de Bevestiging** van spreadsheet en klik **in werking gestelde ABAC Bevestigingen**. **Alle overgegaane bevestigingen** bericht bevestigt dat u de bepaalde regels aan Adobe kunt verstrekken.
 
 ## Voorbeeld van een op kenmerken gebaseerde optie voor het gebruik van toegangsbeheer {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ Hierdoor kunt u eenvoudige en expressieve regels schrijven, zoals: ALLOW if regi
 * Leg de bedrijfsintentie van de regel in de opmerking vast, ongeacht of de voorwaarde correct is geschreven, aangezien de intent ons helpt de logica indien nodig te valideren en te corrigeren.
 
 * De PDF-bestanden voor licenties die zijn ingesteld voor DRM, moeten zichtbaar zijn voor iedereen, zodat gebruikers ze kunnen zien wanneer ze het element met licentie downloaden.
-
-
-
-
-
-
-
-
-
-
