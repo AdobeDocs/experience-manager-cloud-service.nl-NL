@@ -32,7 +32,7 @@ HTML5 vormenfunctionaliteit wordt opgesteld als pakket binnen de ingebedde insta
 
 ### Sling Framework gebruiken {#using-sling-framework}
 
-[ Apache Sling ](https://sling.apache.org/) is middel-centric. Er wordt een aanvraag-URL gebruikt om de bron eerst op te lossen. Elk middel heeft a **sling:resourceType** (of **sling:resourceSuperType**) bezit. Gebaseerd op dit bezit, de verzoekmethode, en de eigenschappen van het verzoek URL, wordt een sling manuscript dan geselecteerd om het verzoek te behandelen. Dit sling script kan een JSP of een servlet zijn. Voor HTML5 vormen, **de knopen van het 0} Profiel {dienst als sling middelen en** Renderer van het Profiel **doet dienst als sling manuscript dat het verzoek behandelt om de mobiele vorm met een bepaald profiel terug te geven.** A **Renderer van het Profiel** is JSP die parameters van een verzoek leest en Forms OSGi Service roept.
+[ Apache Sling ](https://sling.apache.org/) is middel-centric. Er wordt een aanvraag-URL gebruikt om de bron eerst op te lossen. Elk middel heeft a **sling:resourceType** (of **sling:resourceSuperType**) bezit. Gebaseerd op dit bezit, de verzoekmethode, en de eigenschappen van het verzoek URL, wordt een sling manuscript dan geselecteerd om het verzoek te behandelen. Dit sling script kan een JSP of een servlet zijn. Voor HTML5 vormen, **de knopen van het 0&rbrace; Profiel &lbrace;dienst als sling middelen en** Renderer van het Profiel **doet dienst als sling manuscript dat het verzoek behandelt om de mobiele vorm met een bepaald profiel terug te geven.** A **Renderer van het Profiel** is JSP die parameters van een verzoek leest en Forms OSGi Service roept.
 
 Voor details op REST eindpunt en gesteunde verzoekparameters, zie [ Teruggevend het Malplaatje van de Vorm ](/help/forms/rendering-form-template.md).
 
@@ -134,7 +134,7 @@ Tijdens het renderen wordt het FormCalc-script vertaald (en in cache geplaatst) 
 
 Deze scriptengine gebruikt een deel van de functie van ECMAScript5, zoals Object.defineProperty. De motor/de bibliotheek wordt geleverd als Bibliotheek van de Cliënt CQ met de categorienaam **xfaforms.profile**. Het verstrekt ook **FormBridge API** om externe portals of apps toe te laten om met vorm in wisselwerking te staan. Met FormBridge kan een externe toepassing via programmacode bepaalde elementen verbergen, de waarden ervan ophalen of instellen of de kenmerken ervan wijzigen.
 
-Voor meer details, zie het [ artikel van Bridge van de Vorm 0} {.](/help/forms/integrate-form-bridge-forms-portal.md)
+Voor meer details, zie het [ artikel van Bridge van de Vorm 0&rbrace; &lbrace;.](/help/forms/integrate-form-bridge-forms-portal.md)
 
 #### Layout Engine {#layout-engine}
 

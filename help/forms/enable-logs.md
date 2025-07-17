@@ -28,7 +28,7 @@ U kunt het hulpprogramma Logger configureren om logboeken te maken voor HTML5-fo
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr` . Bepaal en open de *van de het Registreren registrerenconfiguratie van de PlaatsING van de Plaatsing de 1} optie.* Er wordt een dialoogvenster weergegeven:
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr` . Bepaal en open de *van de het Registreren registrerenconfiguratie van de PlaatsING van de Plaatsing de 1&rbrace; optie.* Er wordt een dialoogvenster weergegeven:
 
    ![ Het dialoogvenster voor de configuratieoptie van het logbestand voor spellingcontrole van Apace ](assets/logconfig.png)
 
@@ -172,9 +172,9 @@ Bijvoorbeeld:
 >[!NOTE]
 >
 >Het standaardlogniveau voor elke logcategorie a (xfa), b (xfaView), en c (xfaPerf) is 2 (ERROR). Voor logconfiguratie 2-b6 zijn de logniveaus voor de verschillende categorieën dienovereenkomstig:
->>a (xfa): 2 (standaardniveauFOUT)
->>b (xfaView): 6 (door gebruiker opgegeven TRACE)
->>a (xfaPerf): 2 (standaardniveauFOUT)
+>&#x200B;>a (xfa): 2 (standaardniveauFOUT)
+>&#x200B;>b (xfaView): 6 (door gebruiker opgegeven TRACE)
+>&#x200B;>a (xfaPerf): 2 (standaardniveauFOUT)
 
 ### Registreren inschakelen met Configuratiebeheer {#enabling-logging-using-configuration-manager}
 

@@ -30,7 +30,7 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
    | multiSelect | true of false (standaard true) |
    | fileSizeLimit | Aantal in MBs (2 MBs door gebrek). Bijvoorbeeld 5. |
    | buttonText | Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard) |
-   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standaard) |
+   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot; standaard) |
 
    Bijvoorbeeld:
 

@@ -96,7 +96,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
 
    Hier volgt een voorbeeldscript dat u kunt toevoegen om waarden in een formulierveld in te stellen.
 
-   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **** en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
+   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **&#x200B;**&#x200B;en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
 
    Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API te roepen.
 
