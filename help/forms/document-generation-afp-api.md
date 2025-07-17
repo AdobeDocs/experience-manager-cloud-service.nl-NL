@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # AFP-uitvoer genereren met de AEM Forms API
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
 
 Advanced Function Presentation (AFP) is een krachtige documentindeling die voornamelijk voor afdrukdoeleinden is ontworpen.\
 In deze handleiding worden alle stappen en configuraties beschreven die nodig zijn om AFP-uitvoer met AEM Forms te genereren.
