@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Voor het maken en gebruiken van uw eigen aangepaste machtigingen zijn drie stapp
 1. [ wijs douanetoestemmingen aan het productprofiel ](#assign-permissions) toe.
 1. [ wijs gebruikers aan het productprofiel ](#assign-users) toe.
 
-In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3&rbrace; secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
+In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3} secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ 
 
 ### Een nieuw productprofiel maken {#create}
 
-Maak eerst een productprofiel voordat u aangepaste machtigingen kunt toewijzen.
+Maak eerst een productprofiel waaraan u aangepaste machtigingen kunt toewijzen.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/).
 
@@ -110,7 +110,7 @@ U kunt nu gebruikers toewijzen aan het nieuwe productprofiel dat u met aangepast
 
 1. Selecteer **toevoegen Gebruikers** knoop en wijs gebruikers aan uw nieuw productprofiel met douanetoestemmingen toe.
 
-Zie de sectie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [ toevoegen productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
+Zie de sectie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [ toevoegen productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
 
 ## Configureerbare machtigingen {#configurable-permissions}
 
@@ -174,7 +174,7 @@ De punten van de toestemming verwijzen naar het werkingsgebied waar de toestemmi
 
 | Type machtigingsitem | Voorbeeld | Beschrijving |
 | --- | --- | --- |
-| Organisatie | organisatie:bedrijfA | Alle toepasselijke middelen van een organisatie. Een bron kan een programma, omgeving of pijpleiding zijn. Als de gebruiker een organisatie voor om het even welke toestemming toevoegt, dan hebben alle nieuwe middelen in die organisatie ook die toestemming. |
+| Organisatie | organisatie :companyA | Alle toepasselijke middelen van een organisatie. Een bron kan een programma, omgeving of pijpleiding zijn. Als de gebruiker een organisatie voor om het even welke toestemming toevoegt, dan hebben alle nieuwe middelen in die organisatie ook die toestemming. |
 | Programma | Programma A | Alle toepasselijke middelen van een programma. |
 | Omgeving | Programma A: milieu | Van toepassing op een specifieke omgeving. |
 | Pijpleiding | Programma A : Pipeline | Van toepassing op een specifieke pijpleiding. |
@@ -214,4 +214,4 @@ Ja, een gebruiker kan deel uitmaken van meerdere profielen, waaronder vooraf ged
 
 ### Wat gebeurt als een gebruiker toestemming heeft om een milieu/pijpleiding uit te geven maar geen toegang tot een programma heeft dat het milieu/de pijpleiding bevat?
 
-In dit geval, kan de gebruiker tot het milieu of de pijpleiding toegang hebben als zij niet de **toestemmingen hebben van de Toegang van het 0&rbrace; Programma die het milieu of de pijpleiding bevatten.**
+In dit geval, kan de gebruiker tot het milieu of de pijpleiding toegang hebben als zij niet de **toestemmingen hebben van de Toegang van het 0} Programma die het milieu of de pijpleiding bevatten.**
