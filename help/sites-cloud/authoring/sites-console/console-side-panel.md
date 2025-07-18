@@ -1,11 +1,11 @@
 ---
 title: Zijpaneel siteconsole
-description: Leer hoe u het zijpaneel in de AEM siteconsole kunt gebruiken om uw inhoud beter te begrijpen en door de inhoud te navigeren.
+description: Leer hoe u het zijpaneel in de AEM-siteconsole kunt gebruiken om uw inhoud beter te begrijpen en door de inhoud te navigeren.
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 # Zijpaneel siteconsole {#side-panel}
 
-Leer hoe te om het zijpaneel in de AEM **console van Plaatsen** te gebruiken om uw inhoud beter te begrijpen en te navigeren.
+Leer hoe te om het zijpaneel in de console van de Plaatsen van AEM **te gebruiken** om uw inhoud beter te begrijpen en te navigeren.
 
 ## Afdrukstand {#orientation}
 
 Het zijpaneel is door gebrek gesloten wanneer u de **console van Plaatsen** ingaat. Op deze manier wordt het scherm volledig aan uw inhoud gewijd.
 
-Tik of klik het **Zijpaneel** pictogram in de **3&rbrace; consoletoolbar van Plaatsen &lbrace;om het zijpaneel te activeren en uw mening van de inhoud te kiezen.**
+Tik of klik het **Zijpaneel** pictogram in de **3} consoletoolbar van Plaatsen {om het zijpaneel te activeren en uw mening van de inhoud te kiezen.**
 
 * [Alleen inhoud](#content-only)
 * [Inhoudsstructuur](#content-tree)
@@ -79,7 +79,7 @@ Het **paneel van de Chronologie** zijpaneel laat u diverse gebeurtenissen met be
 
 Bovendien kunt u commentaren over het geselecteerde punt toevoegen/bekijken door de **doos van de Commentaar** te gebruiken die bij de bodem van de lijst van gebeurtenissen wordt getoond. Als u een opmerking typt die wordt gevolgd door `Return` , wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
-In de **console van Plaatsen** kunt u tot extra eigenschappen via de ellipsis knoop naast het **3&rbrace; gebied van de Commentaar &lbrace;ook toegang hebben.**
+In de **console van Plaatsen** kunt u tot extra eigenschappen via de ellipsis knoop naast het **3} gebied van de Commentaar {ook toegang hebben.**
 
 * [Een versie opslaan](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Een workflow starten](/help/sites-cloud/authoring/workflows/applying.md)
@@ -99,8 +99,8 @@ De **mening van Verwijzingen** toont een lijst van verwijzingstypes aan of van a
 
 Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties zijn aanvullende acties beschikbaar wanneer u een specifieke verwijzing selecteert, zoals:
 
-* **Binnenkomende Verbindingen**, verstrekt een lijst van pagina&#39;s die de pagina van verwijzingen voorzien, samen met directe toegang tot **geeft** één van die pagina&#39;s uit wanneer u een specifieke verbinding selecteert.
-   * Dit kan alleen statische koppelingen weergeven, niet dynamisch gegenereerde koppelingen, zoals koppelingen uit de component List.
+* **Binnenkomende Verbindingen**, verstrekt een lijst van pagina&#39;s die direct de uitgezochte pagina van verwijzingen voorzien, samen directe toegang tot **geeft** één van die pagina&#39;s uit wanneer u een specifieke verbinding selecteert.
+   * Dit toont slechts statische verbindingen, niet dynamisch geproduceerde verbindingen zoals van de component van de Lijst.
 * [ Lanceringen ](/help/sites-cloud/authoring/launches/overview.md), verleent toegang tot verwante lanceringen
 * [ Levende Exemplaren ](/help/sites-cloud/administering/msm/overview.md) toont de wegen van alle levende exemplaren die op het geselecteerde middel gebaseerd zijn.
 * [ Vervaging ](/help/sites-cloud/administering/msm/best-practices.md), verstrekt details en diverse acties
