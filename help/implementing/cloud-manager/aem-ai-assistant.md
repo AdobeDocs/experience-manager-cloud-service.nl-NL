@@ -81,7 +81,7 @@ Beheerders moeten het normale bestuur van Cloud Manager in gedachten houden. U m
 
 ![ de verwezenlijking van het de steunkaartje van de Technische steun in de Medewerker van AEM AI van Admin Console ](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-Voor een geleide analyse van vestiging gebruikers en groepen in AEM as a Cloud Service, zie [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview).
+Voor een geleide analyse van vestiging gebruikers en groepen in AEM as a Cloud Service, zie [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/overview).
 
 Zie ook [ Toestemmingen van de Douane ](/help/implementing/cloud-manager/custom-permissions.md).
 
