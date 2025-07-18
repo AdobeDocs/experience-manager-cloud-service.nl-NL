@@ -34,7 +34,7 @@ Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder co
 
 Na [ creërend een pagina ](/help/sites-cloud/authoring/sites-console/creating-pages.md) of het navigeren aan een bestaande pagina gebruikend [ de **console van Plaatsen** ](/help/sites-cloud/authoring/sites-console/introduction.md), kunt u het voor het uitgeven openen.
 
-1. Open [ de **2} console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [ de **2&rbrace; console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigeer naar de pagina die u wilt bewerken.
 1. Selecteer de pagina door een van de volgende twee methoden te gebruiken:
 
@@ -53,14 +53,14 @@ Na [ creërend een pagina ](/help/sites-cloud/authoring/sites-console/creating-p
 
 U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëren:
 
-1. Open [ de **2} console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [ de **2&rbrace; console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigeer naar de pagina die u wilt kopiëren.
 1. Selecteer de pagina met behulp van:
 
    * [Snelle acties](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [ wijze van de Selectie ](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) en de toolbar
 
-1. Tik of klik het **1} paginapictogram van het Exemplaar {.**
+1. Tik of klik het **1&rbrace; paginapictogram van het Exemplaar &lbrace;.**
 
    ![ Exemplaar ](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -95,14 +95,14 @@ De procedure voor het verplaatsen of wijzigen van de naam van een pagina is in f
 
 AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijzen naar de pagina waarvan de naam wordt gewijzigd of die wordt verplaatst. Dit kan per pagina worden gedaan om volledige flexibiliteit te bieden.
 
-1. Open [ de **2} console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [ de **2&rbrace; console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigeer naar de pagina die u wilt verplaatsen.
 1. Selecteer de pagina met behulp van:
 
    * [Snelle acties](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [ wijze van de Selectie ](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) en de toolbar
 
-1. Tik of klik het **1} paginapictogram van de Beweging {om de tovenaar van de bewegingspagina te openen.**
+1. Tik of klik het **1&rbrace; paginapictogram van de Beweging &lbrace;om de tovenaar van de bewegingspagina te openen.**
 
    ![ knoop van de Beweging ](/help/sites-cloud/authoring/assets/move.png)
 
@@ -174,7 +174,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 Handelingen voor het verplaatsen van pagina&#39;s worden altijd asynchroon verwerkt, zodat de gebruiker de bewerkingen in de gebruikersinterface ongehinderd kan voortzetten.
 
-Het statuut van asynchrone banen kan in het [**dashboard van de Banen van 0} Async** bij ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Globale Navigatie **worden gecontroleerd >** Hulpmiddelen **>** Verrichtingen **>** Banen ****
+Het statuut van asynchrone banen kan in het [**dashboard van de Banen van 0&rbrace; Async** bij ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Globale Navigatie **worden gecontroleerd >** Hulpmiddelen **>** Verrichtingen **>** Banen **&#x200B;**
 
 >[!TIP]
 >
@@ -182,7 +182,7 @@ Het statuut van asynchrone banen kan in het [**dashboard van de Banen van 0} Asy
 
 ### Een pagina verwijderen {#deleting-a-page}
 
-1. Open [ de **2} console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [ de **2&rbrace; console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigeer naar de pagina die u wilt verwijderen.
 1. Gebruik [ selectiemodus ](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) om de vereiste pagina te selecteren, dan gebruik **Schrapping** van de toolbar:
 
@@ -214,9 +214,9 @@ U kunt [ vergrendelen/ontgrendelen een pagina ](/help/sites-cloud/authoring/page
 
 U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
-1. Open [ de **2} console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [ de **2&rbrace; console van Plaatsen**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigeer naar de gewenste locatie.
-1. Om de optielijst te openen, creeer **** van de toolbar
+1. Om de optielijst te openen, creeer **&#x200B;**&#x200B;van de toolbar
 1. Selecteer **Omslag** om de dialoog te openen. Hier kunt u de **Naam** ingaan en **Titel**:
 
    ![ creeer omslag ](/help/sites-cloud/authoring/assets/organizing-create-folder.png)
