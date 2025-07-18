@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
+
 
 # Een HTML5-formulier opslaan als concept {#saving-an-html-form-as-a-draft}
 
@@ -75,4 +78,4 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
  </tbody>
 </table>
 
-Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [ de opslag van de Douane voor de componenten van Concepten en van Verzending ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [ de opslag van de Douane voor de componenten van Concepten en van Verzending ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

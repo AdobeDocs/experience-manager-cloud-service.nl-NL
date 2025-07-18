@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
+
 
 # Formulierset in AEM Forms{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ Formuliersets worden ook ondersteund in de AEM Forms-app, zodat uw medewerkers i
 
 U kunt verschillende XDP&#39;s of formuliersjablonen, gemaakt met Designer, koppelen aan een formulierset. Formuliersets kunnen vervolgens selectief worden gebruikt om de XDP&#39;s te renderen op basis van waarden die de gebruikers hebben ingevoerd in eerste formulieren en hun profielen.
 
-Het gebruikersinterface van AEM Forms van het gebruik [&#128279;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) om al uw vormen, vormreeksen, en verwante activa te beheren.
+Het gebruikersinterface van AEM Forms van het gebruik [ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) om al uw vormen, vormreeksen, en verwante activa te beheren.
 
 ### Een formulierset maken {#create-a-form-set}
 
@@ -65,7 +68,7 @@ Ga als volgt te werk om een formulierset te maken:
 
    * Formuliervolgorde: sleep de formulieren om ze opnieuw te ordenen. De formuliervolgorde definieert de volgorde waarin formulieren aan de eindgebruiker worden weergegeven in de AEM Forms-app en zelfstandige uitvoering.
    * Formulierid: geeft een unieke identiteit op voor de formulieren die moeten worden gebruikt in geschiktheidsexpressies.
-   * Gegevensbasis: voor elk formulier in een formulierset kan de auteur de XPATH configureren waar de gegevens van dat formulier zich in verzonden XML bevinden. De standaardwaarde is /. Als alle formulieren in een formulierset zijn gebonden met een schema en hetzelfde XML-schema delen, kunt u deze waarde wijzigen. Het wordt aanbevolen dat voor elk veld in het formulier de juiste gegevensbinding is opgegeven in de XDP. Als twee velden in twee verschillende formulieren dezelfde gegevensbinding hebben, worden in het tweede formulier voorgevulde waarden uit het eerste formulier weergegeven. Bind twee subformulieren met dezelfde interne inhoud niet aan hetzelfde XML-knooppunt. Voor meer informatie ziet de structuur van XML van vormreeks, [ vooraf ingevulde XML voor de reeks van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Gegevensbasis: voor elk formulier in een formulierset kan de auteur de XPATH configureren waar de gegevens van dat formulier zich in verzonden XML bevinden. De standaardwaarde is /. Als alle formulieren in een formulierset zijn gebonden met een schema en hetzelfde XML-schema delen, kunt u deze waarde wijzigen. Het wordt aanbevolen dat voor elk veld in het formulier de juiste gegevensbinding is opgegeven in de XDP. Als twee velden in twee verschillende formulieren dezelfde gegevensbinding hebben, worden in het tweede formulier voorgevulde waarden uit het eerste formulier weergegeven. Bind twee subformulieren met dezelfde interne inhoud niet aan hetzelfde XML-knooppunt. Voor meer informatie ziet de structuur van XML van vormreeks, [ vooraf ingevulde XML voor de reeks van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Beleenbaarheidsuitdrukking: geeft een JavaScript-expressie op die een Booleaanse waarde evalueert en aangeeft of een formulier in een formulierset in aanmerking komt voor invulling. Indien onwaar, wordt de gebruiker niet gevraagd of zelfs getoond het te vullen formulier. De expressie is doorgaans gebaseerd op de waarden van de velden die vóór dit formulier zijn vastgelegd. Expressies bevatten ook aanroepen van de formulierset-API fs.valueOf om de waarden te extraheren die de gebruiker heeft ingevuld in een veld van een formulierset:
 
    *fs.valueOf (&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
@@ -315,7 +318,7 @@ Dit label geeft het begin van HTML5 Form XML aan. Dit wordt toegevoegd in het ve
 
 `children: xfa:data`
 
-### XFA:GEGEVENS {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
@@ -341,7 +344,7 @@ Dit label geeft het begin van HTML5 Form XML aan. Dit wordt toegevoegd in het ve
 
 Het name rootElement is slechts een plaatsaanduiding. De werkelijke naam wordt gekozen uit de formulieren die in de formulierset worden gebruikt. De substructuur die begint met rootElement bevat de gegevens van de velden en subformulieren in de Forms in de formulierset. Er zijn veelvoudige factoren die de structuur van rootElement en zijn kinderen bepalen.
 
-In vooraf ingevulde XML is dit label optioneel, maar als het ontbreekt, wordt de volledige XML genegeerd.
+In vooraf ingevulde XML is deze tag optioneel, maar als deze ontbreekt, wordt de volledige XML genegeerd.
 
 NAAM VAN DE TAG BASISELEMENT
 
