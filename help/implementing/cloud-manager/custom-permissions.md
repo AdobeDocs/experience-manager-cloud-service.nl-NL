@@ -40,7 +40,7 @@ Voor het maken en gebruiken van uw eigen aangepaste machtigingen zijn drie stapp
 1. [ wijs douanetoestemmingen aan het productprofiel ](#assign-permissions) toe.
 1. [ wijs gebruikers aan het productprofiel ](#assign-users) toe.
 
-In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3} secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
+In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3&rbrace; secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
 
 >[!NOTE]
 >
@@ -214,4 +214,4 @@ Ja, een gebruiker kan deel uitmaken van meerdere profielen, waaronder vooraf ged
 
 ### Wat gebeurt als een gebruiker toestemming heeft om een milieu/pijpleiding uit te geven maar geen toegang tot een programma heeft dat het milieu/de pijpleiding bevat?
 
-In dit geval, kan de gebruiker tot het milieu of de pijpleiding toegang hebben als zij niet de **toestemmingen hebben van de Toegang van het 0} Programma die het milieu of de pijpleiding bevatten.**
+In dit geval, kan de gebruiker tot het milieu of de pijpleiding toegang hebben als zij niet de **toestemmingen hebben van de Toegang van het 0&rbrace; Programma die het milieu of de pijpleiding bevatten.**
