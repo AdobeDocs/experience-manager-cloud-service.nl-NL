@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 13124956fcce105ad42767f67b700284c8250012
+source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21644 samengevat, die op 22 juli 2025 openbaar werd gemaakt. De vorige onderhoudrelease was release 21570.
 
-De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-21644}
 
@@ -63,7 +63,7 @@ De activering van de 2025.7.0-functie biedt de volledige functionaliteit die is 
 * CQ-4360256: Neem het pad van de servlet-context op in het aanvraagpad voor HTTP-aanvragen die worden afgehandeld via de `/adobe` servlet-context.
 * CQ-4360317: Methode toevoegen voor het instellen van de header Zonnedatum bij het maken van reacties.
 * GRANITE-60311: AEM SDK Quickstart - NPE op &quot;OSGi Installer Configuration Printer&quot;.
-* GS-15285: gebruikers geven aan dat het systeem is gedeactiveerd.
+* GS-15285: gebruikers worden weergegeven als gedeactiveerd.
 
 ### Bekende problemen {#known-issues-21644}
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en pre
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 80,0 | [ Oak API 1.80.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
+| AEM Oak | 1 80,0 | [ Oak API 1.80.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2,4,63 | [ Apache Httpd 2.4.63 ](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
