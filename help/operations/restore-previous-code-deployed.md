@@ -61,7 +61,7 @@ Als u enkel gegevens wilt herstellen, die zijn verloren, beschadigd, of toevalli
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
 1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan broncode u wilt herstellen, klik ![ Meer pictogram of ellipse menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen** > **Vorige opgestelde code**.
 
