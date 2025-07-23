@@ -4,9 +4,9 @@ description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Ass
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '2193'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >id="assets_search"
 >title="Zoeken in Assets"
 >abstract="Zoek naar activa door een sleutelwoord in de bar van het Onderzoek te specificeren of door activa te filtreren die op hun status, dossiertype, MIME type, grootte, verwezenlijking, wijziging, en vervaldata worden gebaseerd. Naast de standaardfilters kunt u ook aangepaste filters toepassen. U kunt de gefilterde resultaten opslaan als een opgeslagen zoekopdracht of als een slimme verzameling."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=nl-NL#manage-smart-collection" text="Slimme verzamelingen maken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Slimme verzamelingen maken"
 
 [!DNL Assets view] biedt een effectieve zoekfunctie die standaard werkt. De zoekopdracht is uitgebreid omdat het een zoekopdracht in volledige tekst betreft. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren. [!DNL Assets view] biedt zoekopdrachten in volledige tekst en zoekopdrachten via metagegevens, zoals slimme tags, titel, gemaakte datum en copyright.
 
-Als u elementen wilt zoeken,
+Elementen zoeken:
 
 * Klik in het zoekvak boven aan de pagina. Standaard wordt gezocht in de map waarin u momenteel bladert. Voer een van de volgende handelingen uit:
 
@@ -121,6 +121,40 @@ Aangepaste filters verwijderen:
 
 1. Klik op **[!UICONTROL Confirm]** om de filters uit de gebruikersinterface te verwijderen.
 
+## Semantische zoekopdracht {#semantic-search}
+
+Semantische Onderzoek is een geavanceerd onderzoeksvermogen dat de betekenis en de intentie achter de vraag van een gebruiker eerder dan het baseren op nauwkeurige sleutelwoordgelijken begrijpt. Het gebruikt artificiële intelligentie (AI), de verwerking van de natuurlijke taal (NLP), en machine het leren om nauwkeurigere en context-bewuste resultaten te leveren.
+
+In tegenstelling tot traditionele op sleutelwoord-gebaseerde onderzoek, die nauwkeurige termijnen zoekt, interpreteert het Semantische Onderzoek relaties tussen woorden, concepten, en gebruikersintentie. Dit zorgt ervoor dat de gebruikers vinden wat zij-zelfs als hun vraag verschillend wordt gephrased, typos bevat, of in een andere taal is.
+
+Sommige hiervan zijn de belangrijkste voordelen:
+
+* **Meertalige steun**: Onderzoek over veelvoudige talen zonder nauwkeurige vertalingen te vereisen. Gebruikers kunnen relevante inhoud vinden, ongeacht hun querytaal.
+
+* **handvatten spelfouten**: Corrigeert of interpreteert automatisch typos en spelfouten, die nauwkeurige resultaten zelfs met imperfecte input verzekeren.
+
+* **begrijpt synoniemen**: Levert resultaten voor verwante termijnen en uitdrukkingen, zodat te hoeven de gebruikers niet om het juiste sleutelwoord te raden.
+
+* **context-Aware onderzoek**: Erkent de bedoeling achter een vraag, niet alleen de woorden.
+
+* **Onderzoek dat op op tekst-gebaseerde herinneringen** wordt gebaseerd: Experience Manager Assets past filters op inhoud toe en toont aangewezen resultaten automatisch gebaseerd op eenvoudige op tekst-gebaseerde herinneringen.
+
+>[!IMPORTANT]
+>
+> Geef drie of meer dan drie woorden op voor de semantische zoekopdracht om de juiste resultaten weer te geven.
+
+### Voorbeelden voor semantische zoekopdracht {#examples-semantic-search}
+
+**Vraag van het Voorbeeld**: *Vrouw die koffie* drinkt
+
+Bij de traditionele zoekopdracht op basis van trefwoorden wordt gezocht naar exacte overeenkomsten met metagegevens over elementen, zoals Vrouw, Koffie, enzovoort, en worden elementen geretourneerd die deze trefwoorden bevatten.
+
+Semantic Search zoekt echter naar vergelijkbare woorden, zoals `Girl` , `Lady` in het geval van `Woman` en koffieopties, zoals `Cappuccino` en `Latte` in het geval van `Coffee` .
+
+Op dezelfde manier kunt u deze vraag in het Spaans of de spelfout `Woman` als `Wman` specificeren en nog steeds dezelfde resultaten krijgen.
+
+![ Semantic Onderzoek in de mening van Assets ](assets/semantic-search.png)
+
 ## Middelen zoeken met [!DNL Adobe Firefly] {#search-firefly}
 
 U kunt zoeken naar elementen die niet beschikbaar zijn in een van de mappen met elementen door de functie [!DNL Adobe Firefly] voor het zoeken naar elementen in [!DNL Experience Manager Assets] te gebruiken. Op deze manier kunt u op efficiënte wijze elementen in real-time genereren die niet in de mappen met elementen zijn opgeslagen.
@@ -139,7 +173,7 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
 
    ![ de integratie van Firefly ](assets/firefly-integration.png)
 
-   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer [&#128279;](https://helpx.adobe.com/in/firefly/using/text-to-image.html) uitgeven.
+   De nieuwe elementen worden gegenereerd. Bovendien kunt u de beschrijving van de afbeelding wijzigen door de nieuwe tekstprompt in het beschrijvingsvak te typen. [ Leer hoe te om een goede AI herinnering te schrijven om buitengewone en relevante inhoud ](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) te produceren. Alternatief, kunt u beeld met diverse andere eigenschappen zoals veranderende stijl, beelddimensies, en meer [ uitgeven.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
 
    ![ de integratie van Firefly ](assets/bugatti-type-57.png)
 
@@ -216,7 +250,7 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **Wijs Taken** toe: Wijs taken aan gebruikers voor een activa toe.
 
-* **Controle**: [ controleert de verrichtingen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/search-assets) die op activa worden uitgevoerd.
+* **Controle**: [ controleert de verrichtingen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) die op activa worden uitgevoerd.
 
 ## Eerste homepage van zoekopdracht configureren {#configuring-search-first-homepage}
 
@@ -337,12 +371,12 @@ Als u moet verstrekken terugkoppelt op de Contextuele eigenschap van het Onderzo
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video aan onderzoeksactiva in de mening van Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=nl-NL)
+* [ bekijk een video aan onderzoeksactiva in de mening van Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
