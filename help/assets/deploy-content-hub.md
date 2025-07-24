@@ -3,9 +3,9 @@ title: Implementeren  [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en toegang kunt bieden aan gebruikers met verschillende typen rechten (middelen uploaden, Adobe Express-gebruikers) en hoe u beheerdersrechten kunt verlenen aan gebruikers.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Clou
 De activa die op Experience Manager Assets as a Cloud Service zijn gemarkeerd met Goedgekeurd, zijn beschikbaar voor distributie van activa op Content Hub.
 
 Dit artikel biedt een end-to-end workflow om Content Hub toegang te bieden aan gebruikers, inclusief de variaties van bevoegdheden op basis van hun behoeften.
+
+Bekijk deze video voor informatie over hoe u Content Hub for Experience Manager Assets kunt inschakelen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
 
 De verschillende privileges in Content Hub zijn onder meer:
 
