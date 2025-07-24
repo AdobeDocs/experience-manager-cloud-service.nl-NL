@@ -4,7 +4,7 @@ description: Meer informatie over distributie en probleemoplossing voor replicat
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermoge
 >[!NOTE]
 >
 >Als u in bulk het publiceren inhoud geinteresseerd bent, creeer een werkschema gebruikend de [ Stap van het Werkschema van de Activering van de Boom ](#tree-activation), die grote ladingen efficiënt kan behandelen.
->Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
->Als u om welke reden dan ook moet aanpassen, kunt u een werkstroom met deze stap teweegbrengen door bestaande Werkstroom APIs te gebruiken.
->Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u niet probeert grote aantallen inhoud te publiceren, als dat niet nodig is. Er gelden echter geen limieten voor de hoeveelheid inhoud die u via workflows kunt verzenden met de Workflowstap voor boomactivering.
+>>Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
+>>Als u om welke reden dan ook moet aanpassen, kunt u een werkstroom met deze stap teweegbrengen door bestaande Werkstroom APIs te gebruiken.
+>>Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u niet probeert grote aantallen inhoud te publiceren, als dat niet nodig is. Er gelden echter geen limieten voor de hoeveelheid inhoud die u via workflows kunt verzenden met de Workflowstap voor boomactivering.
 
 ### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
 
@@ -58,7 +58,7 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
 
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
 1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
-1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Verwijder in het volgende venster de standaard weergegeven Stap
 1. Sleep de Stap van het Proces aan de huidige modelstroom en laat vallen:
@@ -66,7 +66,7 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
    ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
-1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
+1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
 
    ![ Treeactivation ](/help/operations/assets/new-treeactivationstep.png)
 
@@ -135,20 +135,20 @@ U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen te kiezen - Werksche
 
 Roep het oorspronkelijke model niet aan. Let er in plaats daarvan op dat u het model eerst kopieert en dat exemplaar aanroept.
 
-Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [ Interacting met Workflows programmatically ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=nl-NL#extending-aem).
+Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [ Interacting met Workflows programmatically ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 U kunt ook een workflowmodel maken waarin de processtap `Publish Content Tree` wordt gebruikt.
 
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
 1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
-1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
 
    ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
-1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
+1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
 
    ![ Treeactivation ](/help/operations/assets/newstep.png)
 
@@ -193,7 +193,6 @@ Hieronder volgen voorbeelden van logboeken die worden gegenereerd tijdens een wo
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
 </details>
 
 ### Replicatie-API {#replication-api}
@@ -272,7 +271,7 @@ De grootte van de inhoud die per replicatieaanroep wordt verzonden, mag niet gro
 
 Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de Auteur van AEM:
 
-1. Van het Menu van het Begin van AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
+1. Van AEM [ Globale Navigatie ](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
 1. Selecteer kaart **publiceren**
 
    ![ Status ](assets/publish-status.png " Status ")
