@@ -58,7 +58,7 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
 
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
 1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
-1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
 1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Verwijder in het volgende venster de standaard weergegeven Stap
 1. Sleep de Stap van het Proces aan de huidige modelstroom en laat vallen:
@@ -135,13 +135,13 @@ U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen te kiezen - Werksche
 
 Roep het oorspronkelijke model niet aan. Let er in plaats daarvan op dat u het model eerst kopieert en dat exemplaar aanroept.
 
-Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [ Interacting met Workflows programmatically ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [ Interacting met Workflows programmatically ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=nl-NL#extending-aem).
 
 U kunt ook een workflowmodel maken waarin de processtap `Publish Content Tree` wordt gebruikt.
 
 1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
 1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
-1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL).
 1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
 
