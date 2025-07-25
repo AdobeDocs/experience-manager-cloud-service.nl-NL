@@ -50,7 +50,7 @@ U moet de URL van de sleutelkluis, de naam van de coderingssleutel en informatie
 
 ## Uw omgeving instellen {#setup-your-environment}
 
-De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [ ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [&#128279;](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
 Meld u aan bij uw CLI met `az login` voordat u verder gaat met de rest van deze handleiding.
 
@@ -182,6 +182,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 Geef deze informatie op in de CMK-gebruikersinterface:
 ![ Vul de informatie in UI ](./assets/cmk/step3a.png)
 
