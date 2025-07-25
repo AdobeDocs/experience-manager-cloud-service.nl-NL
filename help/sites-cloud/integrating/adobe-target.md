@@ -26,7 +26,7 @@ Integreer uw AEM-sites met Adobe Target, zodat u de inhoud van uw pagina&#39;s k
 
 Voer de volgende taken uit om met Doel te integreren:
 
-* [ voer in eerste instantie vereiste taken ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html) uit: Register met Adobe Target en vorm bepaalde aspecten van de de auteursinstantie van AEM. Uw rekening van Adobe Target moet **het niveautoestemmingen van de goedkeuraar {op een minimum hebben.** Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
+* [ voer in eerste instantie vereiste taken ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html) uit: Register met Adobe Target en vorm bepaalde aspecten van de de auteursinstantie van AEM. Uw rekening van Adobe Target moet **het niveautoestemmingen van de goedkeuraar &lbrace;op een minimum hebben.** Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
 
 * Launch by Adobe is de facto tool voor het van instrumenten voorzien van een AEM-site met doelmogelijkheden (JS-bibliotheken). Daarom gaat de integratie van AEM as a Cloud Service met Launch en Adobe Target hand in hand (zie de koppelingen hieronder).
 
