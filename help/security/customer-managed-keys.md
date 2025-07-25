@@ -6,14 +6,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
+source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# Setup van door klanten beheerde sleutels voor AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+# Setup van door klanten beheerde sleutels voor AEM as a Cloud Service {#customer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service slaat de klantgegevens momenteel op in Azure Blob Storage en MongoDB, waarbij standaard door de leverancier beheerde coderingssleutels worden gebruikt om gegevens te beveiligen. Terwijl deze opstelling aan de veiligheidsbehoeften van vele organisaties voldoet, kunnen de ondernemingen in gereglementeerde industrieën of die die verbeterde gegevensveiligheid vereisen grotere controle over hun encryptiepraktijken zoeken. Voor organisaties die prioriteit geven aan gegevensbeveiliging, compatibiliteit en de mogelijkheid om hun coderingssleutels te beheren, biedt de CMK-oplossing (Customer Managed Keys) een essentiële verbetering.
 
@@ -42,25 +42,40 @@ U zult ook door de volgende stappen voor het creëren van en het vormen van de v
 1. Uw omgeving instellen
 1. Een toepassings-id verkrijgen van Adobe
 1. Een nieuwe bronnengroep maken
-1. Een sleutelhanger maken
-1. Adobe toegang verlenen tot de sleutelkault
+1. Een sleutelvault maken
+1. Adobe toegang verlenen tot de sleutelkluis
 1. Een coderingssleutel maken
 
 U moet de URL van de sleutelkluis, de naam van de coderingssleutel en informatie over de sleutelvault delen met Adobe.
 
 ## Uw omgeving instellen {#setup-your-environment}
 
-De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [&#128279;](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [ ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
-Meld uw CLI aan met `az login` voordat u verder gaat met de rest van deze handleiding.
+Meld u aan bij uw CLI met `az login` voordat u verder gaat met de rest van deze handleiding.
 
 >[!NOTE]
 >
 >Terwijl deze gids Azure CLI gebruikt, is het mogelijk om de zelfde verrichtingen via de Azure console uit te voeren. Als u liever de Azure-console gebruikt, gebruikt u de onderstaande opdrachten als referentie.
 
+
+## Het CMK-configuratieproces voor AEM as a Cloud Service starten {#request-cmk-for-aem-as-a-cloud-service}
+
+U moet de configuratie CMK (Customer Managed Keys) voor uw AEM as a Cloud Service-omgeving aanvragen via de gebruikersinterface. Om dit te doen, navigeer aan de Veiligheid UI van het Huis van AEM, onder de **Klant Beheerde Sleutels** sectie.
+U kunt dan beginnen het onboarding proces door op het **Begin te klikken onboarding** knoop.
+
+![ Begin op instapniveau van een website gebruikend CMK UI ](./assets/cmk/step1.png)
+
+
 ## Een toepassings-id verkrijgen van Adobe {#obtain-an-application-id-from-adobe}
 
-Adobe geeft u een Entra-toepassings-id die u in de rest van deze handleiding nodig hebt. Als u nog geen toepassings-id hebt, neemt u contact op met Adobe om een id te verkrijgen.
+Na het starten van het instapproces wordt een Entra-toepassings-id geleverd door Adobe. Deze toepassings-id is nodig voor de rest van de handleiding en wordt gebruikt om een serviceprincipal te maken waarmee Adobe toegang heeft tot uw sleutelkluis. Als u nog geen toepassings-id hebt, moet u wachten tot deze door Adobe is opgegeven.
+
+![ het verzoek wordt proces, wacht op Adobe om identiteitskaart van de Toepassing te verstrekken Entra ](./assets/cmk/step2.png)
+
+Nadat het verzoek is voltooid, kunt u de toepassings-id zien in de CMK-interface.
+
+![ Entra identiteitskaart van de Toepassing wordt verstrekt door Adobe ](./assets/cmk/step3.png)
 
 ## Een nieuwe bronnengroep maken {#create-a-new-resource-group}
 
@@ -79,7 +94,7 @@ Als u al een middelgroep hebt, voel vrij om het in plaats daarvan te gebruiken. 
 
 ## Een belangrijke vault maken {#create-a-key-vault}
 
-U moet een sleutelkluis maken voor de coderingssleutel. De sleutelvault moet ontruimingsbescherming hebben toegelaten. De zuiveringsbescherming is noodzakelijk voor het coderen van gegevens in rust van andere Azure diensten. Openbare netwerktoegang moet ook worden toegelaten, om ervoor te zorgen dat de huurder van Adobe tot de belangrijkste kluis kan toegang hebben.
+U moet een sleutelkluis maken voor de coderingssleutel. De sleutelvault moet ontruimingsbescherming hebben toegelaten. De zuiveringsbescherming is noodzakelijk voor het coderen van gegevens in rust van andere Azure diensten. Toegang tot een openbaar netwerk moet zijn ingeschakeld om ervoor te zorgen dat de Adobe-services toegang hebben tot de sleutelkluis.
 
 >[!IMPORTANT]
 >Het maken van de Key Vault met Public Network Access is uitgeschakeld. Hiermee wordt afgedwongen dat alle belangrijke vaultbewerkingen, zoals het maken van sleutels of het roteren, moeten worden uitgevoerd vanuit een omgeving die toegang heeft tot het netwerk van KeyVault, bijvoorbeeld een VM die toegang heeft tot de KeyVault.
@@ -97,7 +112,7 @@ az keyvault create `
   --location $location `
   --resource-group $resourceGroup `
   --name $keyVaultName `
-  --default-action=Deny `
+  --default-action=Allow `
   --enable-purge-protection `
   --enable-rbac-authorization `
   --public-network-access Enabled
@@ -107,7 +122,7 @@ az keyvault create `
 
 In deze stap geeft u Adobe via een Entra-toepassing toegang tot de keyvault. De id van de Entra-toepassing had al door Adobe moeten worden verstrekt.
 
-Eerst, moet u een de diensthoofd tot stand brengen in bijlage aan de Entra toepassing en aan het toewijzen de **Zeer belangrijke Uitvault Reader** en **Zeer belangrijke Server van Crypto Gebruiker** rollen. De rollen zijn beperkt tot de sleutelkluis die in deze gids wordt gecreeerd.
+Eerst, moet u een de diensthoofd tot stand brengen in bijlage aan de toepassing van de Entra en aan het toewijzen **Zeer belangrijke Uitvault Reader** en **Zeer belangrijke Server Crypto van de Gebruiker** rollen. De rollen zijn beperkt tot de sleutelkluis die in deze gids wordt gecreeerd.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -128,7 +143,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## Een coderingssleutel maken {#create-an-ecryption-key}
+## Een coderingssleutel maken {#create-an-encryption-key}
 
 Tot slot kunt u een encryptiesleutel in uw zeer belangrijke vault tot stand brengen. Gelieve te merken op dat u de **Zeer belangrijke rol van de Medewerker van Crypto** zult nodig hebben om deze stap te voltooien. Als de het programma geopende gebruiker deze rol niet heeft, contacteer uw systeembeheerder om deze rol te hebben die aan u wordt verleend of vraag iemand die reeds die rol heeft om deze stap voor u te voltooien.
 
@@ -138,7 +153,7 @@ Netwerktoegang tot de sleutelkluis is is vereist om de coderingssleutel te maken
 # Reuse this information from the previous steps.
 $keyVaultName="<KEY VAULT NAME>"
 
-# Chose a name for your key.
+# Choose a name for your key.
 $keyName="<KEY NAME>"
 
 # Create the key.
@@ -147,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## De belangrijkste vaultgegevens delen {#share-the-key-vault-information}
 
-U bent nu allemaal ingesteld. U hoeft slechts enkele vereiste informatie te delen met Adobe, die ervoor zal zorgen dat uw omgeving voor u wordt geconfigureerd.
+U bent nu allemaal ingesteld. U hoeft slechts enkele vereiste informatie te delen via de CMK-interface, die het configuratieproces van de omgeving start.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -167,7 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
+Geef deze informatie op in de CMK-gebruikersinterface:
+![ Vul de informatie in UI ](./assets/cmk/step3a.png)
 
 ## Implicaties van het Herhalen van Zeer belangrijke Toegang {#implications-of-revoking-key-access}
 
@@ -177,27 +193,16 @@ Als u besluit om de toegang van het Platform tot uw gegevens in te trekken, kunt
 
 ## Volgende stappen {#next-steps}
 
-Contact opnemen met Adobe en delen:
+Nadat u de vereiste informatie in de CMK-interface hebt opgegeven, start Adobe het configuratieproces voor uw AEM as a Cloud Service-omgeving. Dit proces kan enige tijd duren en u wordt op de hoogte gesteld zodra het is voltooid.
 
-* De URL van de sleutelkluis. U hebt deze in deze stap opgehaald en opgeslagen in de variabele `$keyVaultUri` .
-* De naam van de coderingssleutel. U hebt de sleutel in een vorige stap gemaakt en in de variabele `$keyName` opgeslagen.
-* De `$resourceGroup` , `$subscriptionId` en `$tenantId` die vereist zijn om de verbinding met de sleutelvault in te stellen.
+![ wacht op Adobe om het milieu te vormen.](./assets/cmk/step4.png)
 
-<!-- Alexandru: hiding this for now
 
-### Private Link Approvals {#private-link-approvals}
+## CMK-instelling voltooien {#complete-the-cmk-setup}
 
->[!TIP]
->You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
+Zodra het configuratieproces wordt voltooid, zult u de status van uw opstelling CMK in UI kunnen zien. U kunt ook de sleutelvault en de encryptiesleutel zien.
+![ het proces nu voltooide ](./assets/cmk/step5.png)
 
-Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
+## Vragen en ondersteuning {#questions-and-support}
 
-`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
-
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
-
-## Door klanten beheerde toetsen in Private Beta {#customer-managed-keys-in-private-beta}
-
-Het Engineering-team van Adobe werkt momenteel aan een verbeterde implementatie van CMK met gebruikmaking van Azure&#39;s Private Link. Met de nieuwe implementatie kunt u uw sleutel delen via de Azure-backbone dankzij een directe Private Link-verbinding tussen de Adobe-gebruiker en uw Key Vault.
-
-Deze verbeterde implementatie is momenteel in Private Beta en kan worden ingeschakeld voor geselecteerde klanten die zich aansluiten bij het Private Beta-programma en nauw samenwerken met Adobe Engineering. Neem voor meer informatie contact op met Adobe als u interesse hebt in de Private Beta for CMK via Private Link.
+Neem contact met ons op als u vragen hebt, vragen hebt of hulp nodig hebt bij de installatie van door Klant beheerde sleutels voor AEM as a Cloud Service. Adobe Support kan u helpen met alle vragen die u hebt.
