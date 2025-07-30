@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Zie ook [ Adobe Beheerde CDN ](https://www.aem.live/docs/byo-cdn-adobe-managed).
    | Hoofdletters gebruiken | Stappen |
    | --- | --- |
    | Ik wil een configuratie CDN aan een *bestaande* plaats van Edge Delivery in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ pictogram Webpagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.<br> b. In de lijst van Edge Delivery, aan het eind van een rij die geen domein verbonden aan het heeft, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br> c. Klik **vormen CDN**. |
-   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van het Sociale netwerk ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.<br> b. Bij de hoger-juiste hoek van de pagina van Toewijzingen van het Domein, voegt de klik **&#x200B;**&#x200B;toe. |
+   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van het Sociale netwerk ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.<br> b. Bij de hoger-juiste hoek van de pagina van Toewijzingen van het Domein, voegt de klik **** toe. |
 
 1. In **vorm CDN** dialoogdoos, in de **Vervolgkeuzelijst van de Oorsprong**, selecteer één van het volgende:
 
@@ -53,3 +53,22 @@ Zie ook [ Adobe Beheerde CDN ](https://www.aem.live/docs/byo-cdn-adobe-managed).
    | Andere CDN-provider | Selecteer deze optie als u uw eigen CDN-provider gebruikt en niet de door Adobe beheerde CDN die voor u beschikbaar is.<br> onder **details van de Configuratie**, in de **drop-down lijst van het Domein**, selecteer de domeinnaam die u wilt gebruiken.<br> Geen geverifieerde domeinen beschikbaar in de drop-down lijst? Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
 
 1. Klik **sparen**.
+
+   Adobe raadt u aan de domeintoewijzing te testen.
+
+## De domeintoewijzing testen {#test-domain-mapping}
+
+U kunt verifiëren dat een nieuwe domeinafbeelding op Adobe-Beheerde CDN zonder het wachten op openbare DNS propagatie levend is.
+
+Laad a **krullen** bevel dat DNS resolutie met voeten treedt en richt recht aan de CDN rand:
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Vervang **`www.example.com`** door uw domein.
+* Vervang **151.101.3.10** door het Edge IP-adres dat in Cloud Manager wordt weergegeven voor deze toewijzing.
+
+De markering `--resolve` dwingt het verzoek tot gespecificeerde IP en keert succes slechts terug nadat het certificaat en het verpletteren voor uw domein correct zijn geïnstalleerd.
+

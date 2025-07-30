@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Zie ook [ een naam van het douanedomein ](/help/implementing/cloud-manager/custo
    | Als u het certificaattype hebt geselecteerd | Beschrijving |
    | --- | ---  |
    | Door Adobe beheerd certificaat | a. Voltooi de [ Adobe beheerde certificaatstappen ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Wanneer u de stappen in **voltooit verifieer domein** dialoogdoos, **verifieert**.<ul><li>DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.</li><li>Cloud Manager verifieert uiteindelijk het bezit van de domeinnaam en werkt de status in de **lijst van de Montages van het Domein** bij. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li>![ verifieer domeinstatus ](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. U bent nu klaar om [ een Adobe geleid (DV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert) toe te voegen.</li></ul> |
-   | Door de klant beheerd certificaat | a. Klik **OK**.<br> b. U bent nu klaar om [ een klant beheerde (OV/EV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) toe te voegen.<br> nadat u het certificaat toevoegt, wordt uw domeinnaam duidelijk zoals geverifieerd in de **2&rbrace; lijst van de Montages van het Domein &lbrace;.** Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li></ul><br>![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | Door de klant beheerd certificaat | a. Klik **OK**.<br> b. U bent nu klaar om [ een klant beheerde (OV/EV) SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) toe te voegen.<br> nadat u het certificaat toevoegt, wordt uw domeinnaam duidelijk zoals geverifieerd in de **2} lijst van de Montages van het Domein {.** Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.</li></ul><br>![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
 ## Een aangepaste domeinnaam uit alle bijbehorende omgevingen verwijderen {#deleting}
@@ -105,6 +105,12 @@ Een gebruiker met de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsi
 
 
 ### Een aangepaste domeinnaam uit een specifieke omgeving verwijderen {#delete-cdn-specific}
+
+>[!WARNING]
+>
+>Verwijder DNS van het domein verslagen met uw DNS leverancier *alvorens* het domein in Cloud Manager te schrappen. Verlaten (gevaarlijk) DNS-vermeldingen kunnen worden gekaapt en vormen een beveiligingsrisico.
+
+**om een naam van het douanedomein van een specifiek milieu te schrappen:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 

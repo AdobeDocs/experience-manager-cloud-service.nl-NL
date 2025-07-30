@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 1%
 >id="aemcloud_golive_domains"
 >title="Aangepaste domeinnamen beheren"
 >abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
 
 Adobe Experience Manager as a Cloud Service wordt voorzien van een standaarddomeinnaam, eindigend in `*.adobeaemcloud.com`. Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam. De standaarddomeinnaam `*.adobeaemcloud.com` blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
@@ -49,15 +49,19 @@ In één milieu, kunt u beide domeinen hebben die in AEM-Beheerde CDN worden ge�
 
 ## Workflow {#workflow}
 
-Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-service en Cloud Manager vereist. Vanwege deze workflow zijn er verschillende stappen vereist voor het installeren, configureren en verifiëren van aangepaste domeinnamen. In de volgende tabel vindt u een overzicht van de vereiste stappen, waaronder koppelingen naar documentatiebronnen om deze stappen te voltooien.
+Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-service en Cloud Manager vereist. Vanwege deze workflow zijn er verschillende stappen vereist voor het installeren, configureren en verifiëren van aangepaste domeinnamen. In de volgende tabel worden de vereiste stappen beschreven, met koppelingen naar de documentatiebronnen om die stappen te voltooien.
 
-| Stap | Beschrijving | Documentatie |
-| --- | --- | --- |
-| 1 | SSL-certificaat toevoegen aan Cloud Manager | [ voeg een SSL certificaat toe ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Aangepast domein toevoegen aan Cloud Manager | [ voeg een naam van het douanedomein toe ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | DNS-instellingen configureren door DNS CNAME- of APEX-records toe te voegen die naar AEM as a Cloud Service wijzen | [ voeg een naam van het douanedomein toe ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | Status van domeinverificatie controleren | [ de status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | DNS-recordstatus controleren | [ DNS van de Controle verslagstatus ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+>[!WARNING]
+>
+>Stap 4 van de looppas (vorm DNS) *slechts nadat* Stap 3 (voeg domeinafbeelding toe) met succes heeft voltooid. Na deze orde registreert het domein met Adobe CDN en plaatst - omhoog het correcte verpletteren, beschermend uw plaats tegen domeinovernames.
+
+| Stap | Beschrijving |
+| --- | --- |
+| 1 | [ voeg SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe |
+| 2 | [ voeg een douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toe |
+| 3 | [ voeg domeinafbeelding ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toe |
+| 4 | [ vorm DNS ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | [ DNS van de Controle status ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
@@ -77,5 +81,5 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 
 ## Aan de slag {#get-started}
 
-* Krijg begonnen een nieuwe naam van het douanedomein voor uw project te vormen door een SSL certificaat [&#128279;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe te voegen.
+* Krijg begonnen een nieuwe naam van het douanedomein voor uw project te vormen door een SSL certificaat [ toe te voegen.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * Beheer uw bestaande domeinnamen door het document [ te herzien beheert de namen van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
