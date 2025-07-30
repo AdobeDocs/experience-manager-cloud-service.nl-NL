@@ -1,29 +1,48 @@
 ---
-title: AI Assistant in Adobe Experience Manager (persoonlijke bèta)
-description: Met AI Assistant in Adobe Experience Manager kunt u antwoorden zoeken, problemen oplossen en sites, Assets, Dynamic Media, Cloud Manager en Forms verkennen.
+title: AI Assistant in Adobe Experience Manager (Beta)
+description: Met AI Assistant kunt u zoeken naar antwoorden en problemen oplossen voor de oplossingen die beschikbaar zijn in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1308'
 ht-degree: 0%
 
 ---
 
-# AEM AI Assistant in Adobe Experience Manager {#aem-home}
+# AI Assistant in Adobe Experience Manager {#aem-home}
 
-De AI-assistent in AEM (Adobe Experience Manager) biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op vragen over Adobe Experience Manager te stroomlijnen. Het helpt u tot productkennis toegang hebben, problemen oplossen, en informatie onderzoeken beschikbaar in Experience League. Tijdens het persoonlijke bètaprogramma biedt de AEM AI Assistant ondersteuning voor Adobe Experience Manager as a Cloud Service, waaronder Sites, Assets, Dynamic Media, Cloud Manager en Forms.
+De AEM (Adobe Experience Manager) AI Assistant biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op vragen over Adobe Experience Manager te stroomlijnen. Het helpt u onmiddellijke antwoorden aan uw product-verwante vragen van AEM (*beschikbaar aan alle gebruikers*) krijgen, en de verwezenlijking van het steunkaartje automatiseren (*beschikbaar om Admins* te steunen).
+
+Tijdens de persoonlijke bètaversie biedt de AEM AI Assistant ondersteuning voor AEM as a Cloud Service, inclusief de volgende oplossingen:
+
+* Sites
+* Assets
+* Dynamische media
+* Edge Delivery Services
+* Cloud Manager
+* Forms
+
+Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub, Cloud Manager en de gebruikersinterface van de auteur.
 
 >[!IMPORTANT]
 >Controleer of u de gebruikersovereenkomst hebt gecontroleerd en verzonden, zodat Adobe de functie AI Assistant kan inschakelen zodat u het persoonlijke bètaprogramma kunt uittesten en hieraan kunt deelnemen.
 >
 >Voor om het even welke vragen, verzend een e-mail naar [ Grp-AEMAIASSISTANT@adobe.com ](mailto:Grp-AEMAIASSISTANT@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
 
-## Privacy, beveiliging en bestuur
+## Scope {#scope}
+
+Het huidige bereik van de AEM AI Assistant is gericht op het aanpakken van productkennisvragen voor Adobe Experience Manager as a Cloud Service. Dit bereik omvat uitgebreide ondersteuning voor belangrijke gebieden, zoals Sites, Assets, Forms, Edge Delivery Services en Cloud Manager.
+
+* **Gebieden**: Beschikbaar over AEM Experience Hub, Auteur UI, Cloud Manager.
+* **Mogelijkheden**: Product-kennis en eerste-stop voor het oplossen van problemen en begeleiding, geautomatiseerde verwezenlijking van steunkaartjes en raadpleging.
+* **Waarde**: Bespart tijd, versnelt het leren en tijd aan waarde, vermindert de behoefte om steunkaartjes manueel tot stand te brengen, en verbetert efficiency in het creëren van steunkaartjes.
+
+## Privacy, beveiliging en bestuur{#privacy-security-governance}
 
 De AEM AI Assistant is ontworpen met een sterke nadruk op privacy, veiligheid en bestuur.
 
@@ -37,26 +56,31 @@ In dit artikel worden de vertrouwde functies beschreven die u kunt verwachten va
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
 
-## Vraag de AEM AI Assistant om productkennis {#ai-prod-insights}
+## Vraag de AEM AI Assistant om productkennis en automatische ondersteuning voor het maken van tickets {#ai-prod-insights}
 
 De productkennis omvat concepten en onderwerpen die uit de documentatie van de Liga van de Ervaring van Adobe worden afgeleid. Deze vragen kunnen in de volgende subgroepen worden ingedeeld:
 
-| Productkennis | Voorbeelden |
-| --- | --- |
+
+| Productkennis | Beschikbaar aan alle gebruikers <br> Voorbeelden |
+| :--- | :--- |
 | Aanbevolen lessen | <ul><li>Wat is de Universele Redacteur?</li><li>Hoe maak ik een programma in Cloud Manager?</li></ul> |
 | Openbare detectie | <ul><li>Hoe gebruik ik de Universal Editor?</li><li>Is er een manier om inhoud van één milieu aan een andere te kopiëren?</li></ul> |
 | Problemen oplossen | <ul><li>Waarom heb ik geen toegang tot de Universal Editor?</li><li>Waarom mislukt mijn pijpleiding?</li></ul> |
+| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen **<br>**Voorbeelden** |
+| Geautomatiseerde steun de verwezenlijking van kaartjes het vangen AI Hulp praatjegeschiedenis en context | <ul><li>Maak een ondersteuningsticket voor mij.</li></ul> |
+| Status van ondersteuningsticket ophalen | <ul><li>Toon me alle steunkaartjes die ik heb geopend.</li><li>Toon me de status van kaartje &quot;E—&quot;</li></ul> |
 
-Het huidige bereik van de AEM AI Assistant is gericht op het aanpakken van productkennisvragen voor Adobe Experience Manager as a Cloud Service. Dit bereik omvat uitgebreide ondersteuning voor belangrijke gebieden, zoals Sites, Assets, Forms en Cloud Manager.
+{style="table-layout:auto"}
+
 
 ## Werkelijke vragen stellen {#ai-craft-questions}
 
-Om de meest accurate antwoorden van de AEM AI Assistant te ontvangen, is het belangrijk dat u uw vragen duidelijk en in een context plaatst. Gebruik de volgende uiteinden om ervoor te zorgen dat uw vragen duidelijk en goed gestructureerd zijn:
+Om de meest nauwkeurige antwoorden van de AEM AI Assistant te ontvangen, is het belangrijk dat u uw vragen duidelijk en in een context plaatst. Gebruik de volgende uiteinden om ervoor te zorgen dat uw vragen duidelijk en goed gestructureerd zijn:
 
 * Geef uw taak of vraag duidelijk beknopt weer.
 * Vermijd dubbelzinnige bewoordingen of te complexe syntaxis om het begrip te verbeteren.
 * Neem de relevante context van uw taak of vraag op, omdat deze aanpak de AEM AI Assistant helpt preciezere en relevante antwoorden te geven.
-In uw vraag helpt het bijvoorbeeld om de AEM-oplossing waarin u werkt, een naam te geven: Sites, Assets, Dynamic Media, Cloud Manager en Forms.
+In uw vraag helpt het bijvoorbeeld om de AEM-oplossing waarin u werkt, een naam te geven: Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager of Forms.
 
 ### Voorbeelden van niet-ondersteunde vragen {#ai-unsupported-questions}
 
@@ -69,21 +93,22 @@ In uw vraag helpt het bijvoorbeeld om de AEM-oplossing waarin u werkt, een naam 
 
 ## AEM AI Assistant gebruiken {#ai-use}
 
-### AEM AI Assistant-toegang via Admin Console inschakelen
+<!-- UNHIDE AFTER BETA or at GA
+### Enable AEM AI Assistant access through Admin Console 
 
-Als u de AEM AI Assistant wilt gebruiken, moet uw organisatie zich aanmelden op Admin Console-niveau. Een productbeheerder maakt (of kiest) een gebruikersgroep en verleent deze de nieuwe machtiging &quot;AI Assistant&quot;. Iedereen die aan die groep wordt toegevoegd krijgt direct toegang tot de Medewerker over AEM. Als het doel bedrijfsbrede beschikbaarheid is, wijst admin eenvoudig alle gebruikers aan die groep toe.
+To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
-![ de Medewerker van AEM AI in Admin Console ](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
+![AEM AI Assistant in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
-Vanuit het perspectief van een werknemer, is het proces ongecompliceerd: identificeer de productbeheerder voor Adobe Experience Manager in uw organisatie en verzoek om aan de AI-Toegelaten gebruikersgroep te worden toegevoegd. Zodra u in die groep verschijnt, verschijnt het Hulppictogram automatisch de volgende tijd u binnen ondertekent.
+From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
-Beheerders moeten het normale bestuur van Cloud Manager in gedachten houden. U moet de rechten van de productbeheerder in Admin Console houden om profielen tot stand te brengen, gebruikersgroepen te beheren, of toestemmingen uit te geven. Als de gebruikers ook de ingebouwde **eigenschap van het Ticket van de Steun** van de Hulp nodig hebben, voeg de standaard **rol Admin van de Steun** (standaardrol van Admin Console) aan de zelfde individuen of de groep toe.
+Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![ de verwezenlijking van het de steunkaartje van de Technische steun in de Medewerker van AEM AI van Admin Console ](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-Voor een geleide analyse van vestiging gebruikers en groepen in AEM as a Cloud Service, zie [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/overview).
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-Zie ook [ Toestemmingen van de Douane ](/help/implementing/cloud-manager/custom-permissions.md).
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
 ### Een gesprek starten of opnieuw instellen
