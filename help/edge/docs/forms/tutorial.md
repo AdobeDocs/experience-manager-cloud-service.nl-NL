@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -111,8 +111,8 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 1. Nu u uw opstelling van de inhoudsomslag hebt, is het tijd om het met uw project op GitHub te verbinden die u eerder gebruikend AEM Forms Boilerplate creeerde. Verbinding maken:
 
    1. Ga naar de bewaarplaats GitHub die u eerder gebruikend AEM Forms Boilerplate creeerde.
-   1. Open de `fstab.yaml` voor bewerking.
-   1. Vervang de bestaande verwijzing door het pad naar de map die u met de AEM-gebruiker hebt gedeeld (forms@adobe.com).
+   1. Voeg het `fstab.yaml` -bestand toe aan de hoofdmap.
+   1. Voeg de verwijzing met het pad toe aan de map die u met de AEM-gebruiker hebt gedeeld (forms@adobe.com).
 
       ![ Inhoud van de Steekproef op de Aandrijving van Google ](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
       Voor meer informatie bij het beheren van dossiers met Microsoft SharePoint, zie [ hoe te Adobe SharePoint ](https://www.aem.live/docs/setup-customer-sharepoint) gebruiken.
 
 
-   1. Leg het bijgewerkte `fsatb.yaml` -bestand vast nadat u de verwijzing hebt bijgewerkt en alles er goed uitziet. Als u om het even welke bouwstijlkwesties ontmoet, zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+   1. Leg het `fsatb.yaml` -bestand vast nadat u de verwijzing hebt toegevoegd en alles er goed uitziet. Als u om het even welke bouwstijlkwesties ontmoet, zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
       ![ Leg bijgewerkt fsatab.yaml- dossier ](/help/edge/assets/commit-updated-fstab-yaml.png) vast
 
@@ -241,7 +241,7 @@ Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
        npm install -g @adobe/aem-cli
    ```
 
-1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt &lt;owner> met de eigenaar van de opslagplaats en &lt;repo> met de naam van de opslagplaats:
+1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt <owner> met de eigenaar van de opslagplaats en <repo> met de naam van de opslagplaats:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -284,7 +284,7 @@ Integreren:
    * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
    * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
    * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
-1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het &lbrace;[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
+1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het {[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
 1. Navigeer naar `/models/_section.json` in uw AEM-project en voeg &quot;form&quot; en &quot;embed-adaptive-form&quot; toe aan de componentarray van het `filters` -object:
 
    ```
@@ -367,7 +367,7 @@ Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
 Als u de fout &quot;Onbekwaam ontmoet om weg aan module &quot;&quot;/scripts/lib-franklin.js&quot;op te lossen, navigeer aan het [ EDS Project ] /blocks/forms/form.js- dossier. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
 
 * **handvat het Leiden Fouten:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het &rbrack; /package.json dossier van het Project van 0&rbrace; EDS &lbrace;en wijzig het &quot;plusteken&quot;manuscript van `"lint": "npm run lint:js && npm run lint:css"` aan `"lint": "echo 'skipping linting for now'"`. &lbrack; Sparen het dossier en begaat de veranderingen in uw project GitHub.
+Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het [ /package.json dossier van het Project van 0} EDS {en wijzig het &quot;plusteken&quot;manuscript van ] aan `"lint": "npm run lint:js && npm run lint:css"`. `"lint": "echo 'skipping linting for now'"` Sparen het dossier en begaat de veranderingen in uw project GitHub.
 
 
 ## Zie ook
