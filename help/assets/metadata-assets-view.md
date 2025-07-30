@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2342'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Als u de metagegevens van een element wilt weergeven, bladert u naar het element
 
 ![ meta-gegevens van de Mening van een activa ](assets/metadata-view.png)
 
-*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar op het tabblad [!UICONTROL Basic] . Het tabblad [!UICONTROL Advanced] bevat meer geavanceerde metagegevens, zoals cameramodel, lensdetails en geotags. Het tabblad [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
 
@@ -48,7 +48,7 @@ De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd o
 
 ![ Slimme Markeringen van de Mening van een activa ](assets/metadata-view-tags.png)
 
-*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
@@ -130,10 +130,10 @@ Hieronder ziet u een overzicht van elk type eigenschap en de manier waarop deze 
 | Selectievakje | Voeg een Booleaanse waarde toe. Opgeslagen als TRUE of FALSE zodra een waarde is opgeslagen. |
 | Datum | Voeg een datumcomponent toe. |
 | Vervolgkeuzelijst | Voeg een vervolgkeuzelijst toe. |
-| Staat | De statuseigenschap voor de repository toevoegen (toegewezen aan repo:state) |
-| Status van element | De standaardeigenschap Asset Status toevoegen (toegewezen aan dam:assetStatus) |
-| Tags | Voeg een tag toe uit waarden die zijn opgeslagen in Taxonomy Management (toegewezen aan xcm:tags). |
-| Trefwoorden | Vrije-vormtrefwoorden toevoegen (toegewezen aan dc:subject). |
+| Staat | Voeg het de staatseigenschap van de bewaarplaats (in kaart gebracht aan repo :state) toe |
+| Status van element | Voeg het bezit standaard van de Status van Activa toe (in kaart gebracht aan dam :assetStatus) |
+| Tags | Voeg een markering van waarden toe die in het Beheer worden opgeslagen Taxonomy (die aan xcm :tags wordt in kaart gebracht). |
+| Trefwoorden | Voeg vrije-vormsleutelwoorden toe (die aan dc :subject worden in kaart gebracht). |
 | Slimme tags | U kunt zoekmogelijkheden uitbreiden door automatisch metagegevenstags toe te voegen. |
 
 ### Metagegevensformulier toewijzen aan een map {#assign-metadata-form-folder}
@@ -228,9 +228,6 @@ Door AI gegenereerde metagegevens inschakelen:
 
 * U moet een GenAI Rider-overeenkomst ondertekenen. Neem voor meer informatie contact op met uw Adobe-vertegenwoordiger.
 
-  >[!IMPORTANT]
-  >
-  > De door AI gegenereerde titel van een element wordt alleen op de Asset-kaart weergegeven wanneer u de titel van het element niet hebt gedefinieerd. De titel van het element die u hebt opgegeven, wordt niet overschreven.
 
 ### Door AI gegenereerde metagegevens gebruiken {#using-ai-generated-smart-tags}
 
@@ -253,15 +250,17 @@ Voer de volgende stappen uit om de verbeterde functie Slimme tags te gebruiken:
 
 1. [ Facultatief ] u kunt extra markeringen toevoegen of uw creëren als u om het even welke relevante markeringen voelt ontbreken. U doet dit door uw tags in het veld **[!UICONTROL Generated keywords]** te schrijven en op **[!UICONTROL Save]** te klikken.
 
+Voor informatie over hoe te om AI-Gegenereerde meta-gegevens onbruikbaar te maken, zie [ AI-Gegenereerde meta-gegevens ](/help/assets/smart-tags.md#disable-ai-generated-metadata) onbruikbaar maken.
+
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
+* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
