@@ -1,19 +1,57 @@
 ---
 title: Hoe te om  [!DNL Dynamic Media]  malplaatjes te beheren?
-description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te brengen gebruikend een het malplaatjeredacteur van WYSIWYG en veelvoudige beelden en tekstlagen te omvatten om banners en vliegers snel tot stand te brengen en hen in stroomafwaartse toepassingen te gebruiken.
+description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te brengen gebruikend een het malplaatjeredacteur van WYSIWYG en veelvoudige beelden, teksten en vormlagen te omvatten om banners en vliegers snel tot stand te brengen en hen in stroomafwaartse toepassingen te gebruiken.
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 69e6b5a50f4625b9ef868216f6e44381771bf05b
 workflow-type: tm+mt
-source-wordcount: '2970'
+source-wordcount: '3245'
 ht-degree: 0%
 
 ---
 
+
 # [!DNL Dynamic Media] sjablonen{#dynamic-media-templates}
 
-Maak aanpasbare sjablonen in real time voor uw banners en vliegers met gebruik van [!DNL Dynamic Media] sjablonen, een WYSIWYG-sjablooneditor. Publiceer de [!DNL Dynamic Media] -sjabloon en gebruik deze in downstreamtoepassingen. Een [!DNL Dynamic Media] -sjabloon bevat afbeeldings- en tekstlagen. Voeg parameters aan het beeld en tekstlagen van het malplaatje toe en gebruik [[!DNL Dynamic Media]  URLs ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) om de laag te verplaatsen en resize en zijn inhoud in real time bij te werken.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b> Dynamische Media Prime en Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b> AEM Assets Ultimate </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b> integratie van AEM Assets met Edge Delivery Services </b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuwe </i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b> Uitbreidbaarheid UI </b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> Nieuw </i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> laat Dynamische Media Prime en Ultimate </b></a> toe
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b> Beste praktijken van het Onderzoek </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b> Beste praktijken van Meta-gegevens </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b> Content Hub </b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b> Dynamische Media met mogelijkheden OpenAPI </b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b> de ontwikkelaarsdocumentatie van AEM Assets </b></a>
+        </td>
+    </tr>
+</table>
+
+Maak aanpasbare sjablonen in real time voor uw banners en vliegers met gebruik van [!DNL Dynamic Media] sjablonen, een WYSIWYG-sjablooneditor. Publiceer de [!DNL Dynamic Media] -sjabloon en gebruik deze in downstreamtoepassingen. Een [!DNL Dynamic Media] -sjabloon bevat afbeeldings- en tekstlagen. Voeg parameters aan het beeld en tekstlagen van het malplaatje toe en gebruik [[!DNL Dynamic Media]  URLs ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) om de laag te verplaatsen en resize en zijn inhoud in real time bij te werken.
 
 Enkele van de belangrijkste functies zijn:
 
@@ -25,7 +63,7 @@ Enkele van de belangrijkste functies zijn:
 
 Enkele belangrijke voordelen van [!DNL Dynamic Media] sjablonen zijn:
 
-* **optimaliseer 1:1 Personalization:** Inhoud van de Tailor aan klantensignalen in real time.
+* **optimaliseer 1 :1 Personalization:** Inhoud van de spoorstaaf aan klantensignalen in real time.
 * **Verminder Handmatige inspanning:** Automate en versnelt inhoudsverwezenlijking en beheer.
 * **verzekert Consistente Ervaringen Omnichannel:** handhaaf merkconsistentie over kanalen.
 * **Reuse Inhoud effectief:** vermijd enig-gebruiksinhoud en schaal met dynamische, geparametereerde malplaatjes.
@@ -44,10 +82,10 @@ Leer hoe u in deze video stap voor stap een [!DNL Dynamic Media] -sjabloon maakt
 Voer de volgende vereisten in om een [!DNL Dynamic Media] -sjabloon te maken en de URL voor levering te genereren:
 
 1. Toegang tot [!DNL Dynamic Media] .
-1. Op de startpagina van [!DNL Assets View] hebt u een map in **[!UICONTROL Dynamic Media Assets]** om uw sjabloon op te slaan. [ creeer een omslag ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;om die omslag in **[!UICONTROL Dynamic Media Assets]**&#x200B;te herhalen.
+1. Op de startpagina van [!DNL Assets View] hebt u een map in **[!UICONTROL Dynamic Media Assets]** om uw sjabloon op te slaan. [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**om die omslag in **[!UICONTROL Dynamic Media Assets]**te herhalen.
 1. [ Synchroniseer de beelden beschikbaar in uw  [!DNL AEM Assets]  instantie met  [!DNL Dynamic Media]  om hen te gebruiken voor het creëren van het malplaatje ](/help/assets/dynamic-media/config-dm.md).
 1. Publiceer de afbeeldingen die u wilt gebruiken bij het maken van de sjabloon om de URL van de levering van de sjabloon te genereren nadat u deze hebt gemaakt. De leverings-URL kan worden gebruikt in downstreamtoepassingen.
-1. Om een doopvont buiten het gebrek [!UICONTROL Adobe Sans F2] doopvont in de de tekstlaag van het malplaatje te gebruiken, [ upload en publiceer gelijktijdig het doopvontdossier aan AEM en Dynamische Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ook, verzeker om [&#128279;](/help/assets/reprocessing-assets-view.md) opnieuw te verwerken de bestaande doopvonten om hen te gebruiken. Zie [ Doopvonten ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/support-files/fonts) voor meer informatie.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Om een doopvont buiten het gebrek [!UICONTROL Adobe Sans F2] doopvont in de de tekstlaag van het malplaatje te gebruiken, [ upload en publiceer gelijktijdig het doopvontdossier aan AEM en Dynamische Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ook, verzeker om [ ](/help/assets/reprocessing-assets-view.md) opnieuw te verwerken de bestaande doopvonten om hen te gebruiken. Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) voor meer informatie.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. Controleer het volgende in de aanraakinterface:
    * Op het tabblad **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]** wordt **[!UICONTROL [!DNL Dynamic Media] sync mode]** dat is ingesteld op **[!UICONTROL Disabled by default]** , niet toegepast op alle AEM-mappen (**[!UICONTROL Sync all content]** is uitgeschakeld). Zie [ vormend Dynamische Media Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
    * **[!UICONTROL [!DNL Dynamic Media] sync mode]** wordt ingesteld op **[!UICONTROL Enable for subfolders]** voor de doelmap of -submap waarin u de sjabloon na het maken wilt opslaan. Zie [ het vormen  [!DNL Dynamic Media]  Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
@@ -56,13 +94,14 @@ Voer de volgende vereisten in om een [!DNL Dynamic Media] -sjabloon te maken en 
 
 Voer de volgende stappen uit om een [!DNL Dynamic Media] -sjabloon te maken:
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 1. [Een leeg canvas maken](#create-a-canvas)
 1. [Afbeeldingen toevoegen aan het canvas](#add-images-to-the-canvas)
 1. [Tekstlagen toevoegen aan het canvas](#add-text-to-the-canvas)
+1. [Vormen toevoegen aan het canvas](#add-shapes-to-the-canvas)
 1. [Een laag bewerken of verwijderen](#edit-or-delete-a-layer)
 1. [Lagen parametereren](#parameterise-a-layer)
 
@@ -78,7 +117,7 @@ Voer de volgende stappen uit om een leeg canvas te maken:
    ![ hoe te om dynamische malplaatjes tot stand te brengen die in real time kunnen worden aangepast ](/help/assets/assets/new-template.png)
    >[!NOTE]
    >
-   >  De sjabloon wordt opgeslagen op de locatie waar u de sjabloon maakt. Selecteer op de startpagina van [!DNL Assets View] de optie **[!UICONTROL Dynamic Media Assets]** en klik **[!UICONTROL Create Template]** om de sjabloon op te slaan in de hoofdmap van **[!UICONTROL Dynamic Media Assets]** .
+   >  De sjabloon wordt opgeslagen op de locatie waar u de sjabloon maakt. Selecteer [!DNL Assets View] op de startpagina van **[!UICONTROL Dynamic Media Assets]** en klik op **[!UICONTROL Create Template]** om de sjabloon op te slaan in de hoofdmap van **[!UICONTROL Dynamic Media Assets]** .
 
 1. Geef een sjabloonnaam op, definieer de canvasbreedte en -hoogte en klik op **[!UICONTROL Create]** . Er wordt een leeg canvas weergegeven met menuopties aan beide zijden voor het maken van de sjabloon. Houd de muisaanwijzer boven de menuopties om de knopinfo weer te geven.
    ![ in real time aanpasbaar malplaatje ](/help/assets/assets/blank-canvas-page.png)
@@ -96,13 +135,13 @@ Voer de volgende stappen uit om een leeg canvas te maken:
 **opties van het Menu op de linkerruit:** Gebruik deze opties voor de volgende gemeenschappelijke redacteursacties.
 
 * ![ DM Malplaatjes ](/help/assets/assets/layer-selector.svg): Selecteer ![ Malplaatjes DM ](/help/assets/assets/layer-selector.svg) en klik een laag op het canvas om het te selecteren.
-* ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen: Klik ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen of toetsenbordkortere weg gebruiken, **CTRL** + **&rbrack;** (Vensters) of **Cmd** + **&rbrack;** (Mac) om een geselecteerde laag vooruit te brengen.
+* ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen: Klik ![ malplaatjes die aanpassing ](/help/assets/assets/bring-forward.svg) steunen of toetsenbordkortere weg gebruiken, **CTRL** + **]** (Vensters) of **Cmd** + **]** (Mac) om een geselecteerde laag vooruit te brengen.
 * ![ hoe te om een malplaatje tot stand te brengen dat gemakkelijk kan worden aangepast ](/help/assets/assets/send-backward.svg): Klik ![ hoe te om een malplaatje tot stand te brengen dat gemakkelijk ](/help/assets/assets/send-backward.svg) kan worden aangepast of toetsenbordkortere weg, **CTRL** + **()** (Vensters) of **Cmd** + **(** (Mac) gebruiken om een geselecteerde laag achterwaarts te verzenden.
 * ![ creeer een malplaatje dat onmiddellijk ](/help/assets/assets/undo.svg) kan worden aangepast: Klik ![ creeer een malplaatje dat onmiddellijk ](/help/assets/assets/undo.svg) of gebruikstoetsenbordkortere weg kan worden aangepast, **CTRL** + **Z** (Vensters) of **Cmd** + **Z** (Mac) om de laatste actie ongedaan te maken.
 * ![ malplaatje om banners snel ](/help/assets/assets/redo.svg) tot stand te brengen: Klik ![ malplaatje om banners snel ](/help/assets/assets/redo.svg) tot stand te brengen of toetsenbordkortere weg te gebruiken, **CTRL** + **Y** (Vensters) of **Cmd** + **Y** (Mac) om de laatste actie opnieuw uit te voeren.
 * ![ malplaatje om snel vliegers ](/help/assets/assets/zoom-in.svg) tot stand te brengen: Klik ![ malplaatje om snel vliegers ](/help/assets/assets/zoom-in.svg) tot stand te brengen of toetsenbordkortere weg te gebruiken, **CTRL** + **+** (Vensters) of **Cmd** + **+** (Mac) om binnen het canvas te zoemen.
 * ![ malplaatje om banners snel ](/help/assets/assets/Zoom-out.svg) tot stand te brengen: Klik ![ malplaatje om banners snel ](/help/assets/assets/Zoom-out.svg) tot stand te brengen of toetsenbordkortere weg te gebruiken, **CTRL** + **-** (Vensters) of **Cmd** + **-** (Mac) om uit het canvas te zoemen.
-* Pers **Backspace** of **schrapt** om de geselecteerde laag te schrappen als geen tekst of het bezit wordt uitgegeven.
+* De pers **backspace** of **schrapt** om de geselecteerde laag te schrappen als geen tekst of het bezit wordt uitgegeven.
 
 Klik ![ malplaatje om snel flyers ](/help/assets/assets/show-layers-list.svg) tot stand te brengen en meer opties (![](/help/assets/assets/three-dots.svg)) op de laag van het Canvas te selecteren om de canvasdimensies op elk ogenblik uit te geven terwijl het creëren van het malplaatje.
 ![](/help/assets/assets/edit-canvas1.png)
@@ -115,10 +154,12 @@ Klik ![ malplaatje om snel flyers ](/help/assets/assets/show-layers-list.svg) to
 
 Voer de volgende stappen uit om afbeeldingen aan het canvas toe te voegen:
 
-1. Klik ![ creeer een banner in geen tijd ](/help/assets/assets/add-image.svg) om het [ paneel van de Selecteur van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) te openen. In het deelvenster worden de afbeeldingen weergegeven die in uw AEM Assets-instantie zijn gesynchroniseerd met [!DNL Dynamic Media] .
+1. Klik ![ creeer een banner in geen tijd ](/help/assets/assets/add-image.svg) om het [ paneel van de Selecteur van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) te openen. In het deelvenster worden de afbeeldingen weergegeven die in uw AEM Assets-instantie zijn gesynchroniseerd met [!DNL Dynamic Media] .
 1. Blader in het deelvenster of gebruik trefwoorden in de zoekbalk om een specifieke afbeelding te zoeken.
 1. Sleep een afbeelding naar het canvas om deze te gebruiken. Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) voor het wijzigen van het formaat of het verplaatsen van een laag op het canvas.
    ![ creeer een banner binnen seconden ](/help/assets/assets/add-image-to-canvas.png)
+1. Schakel de schakeloptie **[!UICONTROL Uniform Radius]** in en gebruik de schuifregelaar **[!UICONTROL Corner Radius]** om de afronding van alle vier de hoeken van een afbeelding op uniforme wijze aan te passen. Schakel de schakeloptie uit om de afronding van hoeken aan te passen door aan elke hoek specifieke straalwaarden toe te wijzen.
+   ![ pas hoekronding van beeld ](/help/assets/assets/enable-uniform-radius-image.png) aan
 
 ### Tekstlagen toevoegen aan het canvas{#add-text-to-the-canvas}
 
@@ -130,6 +171,17 @@ Voer de volgende stappen uit om tekstlagen aan het canvas toe te voegen:
    ![ best klantgerichte banners ](/help/assets/assets/add-text-layer.png)
 
 Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. In het veld **[!UICONTROL Font Family]** wordt het standaardlettertype van [!UICONTROL Adobe Sans F2] weergegeven, evenals de opnieuw verwerkte bestaande lettertypen en de nieuw geüploade en gepubliceerde lettertypen. Zie punt 5 in [ alvorens u ](#prerequisites-for-dynamic-media-wysiwyg-template) sectie hierboven voor meer informatie begint.
+
+### Vormen toevoegen aan het canvas {#add-shapes-to-the-canvas}
+
+Voer de volgende stappen uit om vormen toe te voegen aan het canvas:
+
+1. Klik ![ creërend vormen ](/help/assets/assets/Shapes.svg), selecteer een vorm (rechthoek of cirkel) om het aan het canvas toe te voegen. Gebruik de vorm [[!UICONTROL Properties Panel]](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen.
+1. Blader naar de sectie **[!UICONTROL Style]** van het deelvenster, definieer een hexadecimale code in het veld **[!UICONTROL Shape Color]** of gebruik de kleurkiezer om de kleur in de geselecteerde vorm te vullen.
+1. Schakel de schakeloptie **[!UICONTROL Uniform Radius]** in en gebruik de schuifregelaar **[!UICONTROL Corner Radius]** om de afronding van alle vier de hoeken van de rechthoek uniform aan te passen. Schakel de schakeloptie uit om de afronding van hoeken aan te passen door aan elke hoek specifieke straalwaarden toe te wijzen.
+   ![ pas hoekronding van vormen ](/help/assets/assets/enable-uniform-radius-shape.png) aan
+1. [ voeg de **[!UICONTROL Hide]** parameter aan de geselecteerde laag ](#parameterise-a-layer) toe om de laag in het malplaatje in real time te tonen of te verbergen gebruikend het malplaatje URL.
+1. Selecteer de laag aan [ om a [!UICONTROL CTA] verbinding ](#add-CTA-in-dynamic-media-templates) aan het toe te voegen, toestaand gebruikers om de vorm als hyperlink in het levende malplaatje te klikken.
 
 ### Een laag bewerken of verwijderen {#edit-or-delete-a-layer}
 
@@ -143,42 +195,37 @@ Voer de volgende stappen uit om een canvaslaag te bewerken of te verwijderen:
 
 ### Deelvenster Eigenschappen{#properties-panel}
 
-Navigeren naar het deelvenster met laageigenschappen:
-
-1. Klik ![ snelle inhoudsverwezenlijking ](/help/assets/assets/show-layers-list.svg).
-1. Selecteer de laag in de lijst.
-
-In dit deelvenster worden de positie van het middelpunt van de laag op het canvasvlak (X- en Y-waarden) en de afmetingen van de laag (breedte en hoogte) weergegeven, samen met tekstopmaakopties.
+[!UICONTROL Properties] paneel omvat secties aan [ herpositie ](#reposition-resize-delete-a-layer), [ resize ](#reposition-resize-delete-a-layer) en [ roteert ](#reposition-resize-delete-a-layer) een laag.  Het verstrekt ook de opties van de kleurenvulling voor [ vormlagen ](#add-shapes-to-the-canvas), [ tekst het formatteren opties ](#text-formatting-options-on-properties-panel) voor [ tekstlagen ](#add-text-to-the-canvas), en een optie om [ toe te voegen a [!UICONTROL CTA] verbinding ](#add-CTA-in-dynamic-media-templates) aan om het even welke geselecteerde laag.
+Om aan het de eigenschappenpaneel van een laag te navigeren, klik ![ snelle inhoudsverwezenlijking ](/help/assets/assets/show-layers-list.svg) en selecteer de laag van de lijst om zijn [!UICONTROL Properties] paneel te tonen.
 
 ![ snelle inhoudsverwezenlijking ](/help/assets/assets/properties-panel.png)
 
-Selecteer in het deelvenster Eigenschappen van een laag een andere laag op het canvas om naar het deelvenster met eigenschappen te navigeren.
-
+Selecteer in het deelvenster [!UICONTROL Properties] van een laag een andere laag op het canvas om naar het deelvenster [!UICONTROL Properties] te navigeren.
 
 #### Een laag verplaatsen, vergroten, verkleinen, roteren of verwijderen{#reposition-resize-delete-a-layer}
 
 Zie de volgende algemene handelingen voor het bewerken van lagen om tekst of een afbeeldingslaag te bewerken:
 
-* **verplaats de laag:** sleep de laag om het overal op het canvas te bewegen. Met deze actie worden de X- en Y-waarden in het deelvenster Eigenschappen bijgewerkt.
+* **verplaats de laag:** sleep de laag om het overal op het canvas te bewegen. Met deze actie worden de X- en Y-waarden in het deelvenster Eigenschappen bijgewerkt. X en Y zijn de coördinaten van het middelpunt van de laag op het canvasvlak.
 * **resize de laag:** selecteer de laag en sleep zijn randhandvatten om het te resize. Met deze handeling worden de waarden voor B (breedte) en H (hoogte) in het deelvenster Eigenschappen bijgewerkt.
 * **roteer de laag:** sleep het vierkante handvat dat verticaal boven de laag wordt geplaatst om het rond zijn centrum te roteren. Met deze handeling worden de hoekwaarden in het deelvenster Eigenschappen bijgewerkt.
 * **Schrap de laag:** Pers **Backspace** of **schrapt** en klikt dan **[!UICONTROL Confirm]** om een geselecteerde laag te schrappen.
 
 #### Opties voor tekstopmaak{#text-formatting-options-on-properties-panel}
 
-Maak de tekst op in het gewenste lettertype, formaat, kleur, stijl, uitlijning (binnen de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** in het deelvenster.
-Zorg ervoor dat u **[!UICONTROL Smart Text Resize]** opneemt. [!UICONTROL Smart Text Resize] werkt op [ Copyfitting ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algoritme om tekst in het tekstgebied optimaal te vullen en tekstoverloop te verhinderen en extra ruimte bij de bodem van de tekst te minimaliseren.
+Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (binnen de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** in het deelvenster.
+Zorg ervoor dat u **[!UICONTROL Smart Text Resize]** opneemt. [!UICONTROL Smart Text Resize] werkt op [ Copyfitting ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algoritme om tekst in het tekstgebied optimaal te vullen en tekstoverloop te verhinderen en extra ruimte bij de bodem van de tekst te minimaliseren.
 
 ![ inhoudsverwezenlijking in geen tijd ](/help/assets/assets/smart-text-resize.png)
 
 ### Lagen parametereren {#parameterise-a-layer}
 
-Nadat u een sjabloon met meerdere lagen afbeeldingen en tekst hebt gemaakt, kunt u de parameters van de geselecteerde lagen bepalen. Wanneer een laag of zijn bezit wordt bepaald, krijgt het een zeer belangrijk-waardepaar (ook genoemd als parameter). Deze parameter kan in het malplaatje URL worden omvat om de positie, de grootte of de inhoud van de laag in echt bij te werken - tijd resulterend in malplaatjeaanpassing in geen tijd.
+Nadat u een sjabloon hebt gemaakt met meerdere lagen afbeeldingen, tekst en vormen, kunt u de geselecteerde lagen het beste bepalen. Wanneer een laag of zijn bezit wordt bepaald, krijgt het een zeer belangrijk-waardepaar (ook genoemd als parameter). Deze parameter kan in het malplaatje URL worden omvat om de positie, de grootte of de inhoud van de laag in echt bij te werken - tijd resulterend in malplaatjeaanpassing in geen tijd.
 
 U kunt als volgt een laag bepalen:
 
 1. klik ![ onmiddellijke inhoudsverwezenlijking ](/help/assets/assets/show-layers-list.svg), selecteer een laag en klik **[!UICONTROL Parameters]**. Het deelvenster **[!UICONTROL Parameters]** wordt weergegeven.
-1. Schakel **[!UICONTROL Include Parameter]** in om een eigenschap te bepalen. Zie [ het paneeloptie van Parameters ](#parameterisation-options-or-allowed-parameters) om het gedrag van het bezit na parameterization te kennen.
+1. Schakel **[!UICONTROL Include Parameter]** in om een eigenschap te bepalen. Zie de [ het paneeloptie van Parameters ](#parameterisation-options-or-allowed-parameters) om het gedrag van het bezit na parameterization te kennen.
 1. **Facultatief:** noem de parameternaam anders. Een parameternaam heeft een laagnaam gevolgd door een achtervoegsel. Voor een geselecteerde laag delen alle eigenschappen met parameters dezelfde laagnaam, gevolgd door een variërend achtervoegsel. Wijzig de naam van de laag door de semantische noemende overeenkomst te volgen zodat wanneer u de parameter in URL omvat, de parameternaam zelf over de inhoud van de laag of zijn doel verklaart.
 1. Klik op **[!UICONTROL Save]**.
    ![ onmiddellijke inhoudsverwezenlijking ](/help/assets/assets/parameterise-a-layer.png)
@@ -191,7 +238,7 @@ De parameters van eigenschappen kunnen als parameters URL in het malplaatje URL 
 **parameters van het Beeld:**
 
 **[!UICONTROL X]:** neem op om de laag horizontaal langs zijn middellijn, parallel aan de x-as van het malplaatjevliegtuig, te bewegen door de waarde van de parameter in URL te veranderen.
-**[!UICONTROL Y]:** neem op om de laag verticaal langs zijn centrumlijn, parallel aan de y-as van het malplaatjevlak te bewegen, door de waarde van de parameter in URL te veranderen.
+**[!UICONTROL Y]:** neem op om de laag verticaal langs zijn middellijn, parallel aan de y-as van het malplaatjevliegtuig, te bewegen door de waarde van de parameter in URL te veranderen.
 **[!UICONTROL Width]:** neem op om de breedte van de laag aan te passen door de waarde van de parameter in URL te wijzigen.
 **[!UICONTROL Height]:** neem op om de hoogte van de laag aan te passen door de waarde van de parameter in URL te wijzigen.
 **[!UICONTROL Hide]:** neem op om de laag in de sjabloon te verbergen of weer te geven met 0 (show) en 1 (hide).
@@ -210,7 +257,7 @@ Neem de onderstaande parameters op om de tekst, het lettertype, de kleur en de g
 
 Een andere manier om uw malplaatjes flexibel te houden, is door één enkele parameternaam te gebruiken om veelvoudige lagen te controleren. Deze strategie is handig voor de zichtbaarheidsparameter (lagen verbergen of weergeven) om het ontwerp of de afbeeldingen van één sjabloon bij te werken.
 
-Volg deze stappen om de zelfde naam aan de huidenparameters (![ toe te wijzen snelle inhoudsverwezenlijking ](/help/assets/assets/Visibility-icon.svg)) van veelvoudige lagen, toestaand u om hen gelijktijdig te verbergen of te tonen.
+Volg deze stappen om de zelfde naam aan de [!UICONTROL Hide] parameters (![ snelle inhoudsverwezenlijking ](/help/assets/assets/Visibility-icon.svg)) van veelvoudige lagen toe te wijzen, toestaand u om hen gelijktijdig te verbergen of te tonen.
 
 1. Navigeer naar de [**[!UICONTROL Properties Panel]**](#parameterise-a-layer) van een laag.
 1. Schakel de parameter **[!UICONTROL Hide]** in als deze niet eerder is geparametereerd.
@@ -268,14 +315,14 @@ Plak deze bijgewerkte URL in uw browser om de wijzigingen weer te geven.
 
 Voer de volgende stappen uit om de sjabloon te bewerken:
 
-1. Klik op **[!UICONTROL Dynamic Media Assets]** in het [!DNL Assets view] .
+1. Klik op [!DNL Assets view] in het **[!UICONTROL Dynamic Media Assets]** .
 2. Navigeer naar de sjabloonlocatie.
 3. Selecteer de sjabloon.
 4. Klik op **[!UICONTROL Edit Template]**. Op het sjablooncanvas worden de sjabloon en de lijst met alle lagen in het deelvenster Lagen weergegeven. Begin uw sjabloon naar wens te bewerken.
 
 ## Koppeling naar Call to action (CTA) toevoegen aan uw sjabloonlaag{#add-CTA-in-dynamic-media-templates}
 
-Zet een afbeeldings- of tekstlaag van de [!DNL Dynamic Media] -sjabloon om in een hyperlink door er een CTA-koppeling aan toe te voegen die gebruikers naar een doelpagina stuurt.
+U kunt elke afbeelding, tekst of vormlaag van uw [!DNL Dynamic Media] -sjabloon omzetten in een hyperlink door er een CTA-koppeling aan toe te voegen die gebruikers naar een doelpagina stuurt.
 
 Voer de volgende stappen uit om een CTA-koppeling aan een laag toe te voegen:
 
@@ -314,9 +361,9 @@ Bekijk deze stapsgewijze video om te leren hoe u een CTA-koppeling aan een sjabl
 ## Belangrijke opmerkingen {#important-points-to-note}
 
 * Nadat u een sjabloon hebt gemaakt met geparametriseerde afbeeldingslagen voor dynamische updates, zorgt u ervoor dat de afbeeldingen die u wilt bijwerken in de toekomst dezelfde afmetingen hebben als de geparametriseerde afbeeldingen. Zo kunt u ervoor zorgen dat de afbeeldingen perfect in de lagen passen zonder dat ze te veel stromen of lege ruimten overblijven. De sjabloon ondersteunt momenteel geen automatische dimensionering om afbeeldingen in de lagen te passen.
-* Een tekstlaag biedt geen ondersteuning voor subtekenreeksen. De gebruiker kan geen verschillende doopvonteigenschappen op substring van een tekstlaag toepassen.
+* Een tekstlaag biedt geen ondersteuning voor subtekenreeksen. De gebruiker kan geen verschillende lettertype-eigenschappen toepassen op een subtekenreeks van een tekstlaag.
 * Ondersteuning voor meerdere [!DNL Dynamic Media] -bedrijven is momenteel niet beschikbaar voor [!DNL Dynamic Media] Templates.
-* In het geval van kopiëren of verplaatsen toont de Bestemmingskiezer alle mappen (inclusief niet- [!DNL Dynamic Media] gesynchroniseerde mappen). Momenteel worden de [!DNL Dynamic Media] Sjabloonelementen niet weergegeven (beide zijn beperkingen van de doelkiezer).
+* In het geval van kopiëren of verplaatsen toont de Bestemmingskiezer alle mappen (inclusief niet- [!DNL Dynamic Media] gesynchroniseerde mappen). Momenteel worden ook niet de sjabloonelementen van [!DNL Dynamic Media] weergegeven (beide zijn beperkingen van de doelkiezer).
 * Elke updatebewerking in een map (bijvoorbeeld Publiceren of Verwijderen) uit de Assets-sectie heeft invloed op de [!DNL Dynamic Media] -sjablonen die beschikbaar zijn in die map.
 * Prullenbak werkt niet voor [!DNL Dynamic Media] sjablonen. Als een element naar de prullenbak wordt verplaatst en vervolgens wordt teruggezet, wordt het element in AEM teruggezet, maar niet op [!DNL Dynamic Media] . Hetzelfde geldt voor [!DNL Dynamic Media] Templates.
 
