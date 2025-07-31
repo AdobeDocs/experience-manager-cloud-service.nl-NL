@@ -3,11 +3,11 @@ title: Hoe kan ik een adaptief formulier integreren met Microsoft&reg; Power Aut
 description: Een adaptief formulier integreren met Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: AEM-formaten aansluiten op automatisering, automatisering van Power Automate AEM Forms, stroomautomatisering integreren in Adaptive Forms, gegevens verzenden van Adaptive Forms naar Power Automate
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ U kunt een adaptief formulier configureren om een Microsoft® Power Automate Clo
 
 De adaptieve redacteur van Forms verstrekt **roept een stroom van de Macht Microsoft®** automatisch verzendt actie om adaptieve vormgegevens, gehechtheid, en Document van Verslag te verzenden worden verzonden naar de Stroom van de Wolk van de Macht van de Macht van de Automatisering.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/aem-forms-submit-action.md).
 
 
 ## Voordelen
@@ -140,12 +140,17 @@ Uw Forms as a Cloud Service-exemplaar is nu verbonden met Microsoft® Power Auto
 
 Nadat u [ uw instantie van Forms as a Cloud Service met Microsoft® Macht ](#connect-forms-server-with-power-automate) verbindt, voer de volgende actie uit om uw adaptieve vorm te vormen om gevangen gegevens naar een stroom te verzenden Microsoft® bij vormvoorlegging.
 
+>[!BEGINTABS]
+
+>[!TAB  Component van de Stichting ]
+
 1. Meld u aan bij de instantie van de auteur, selecteer het adaptieve formulier en klik op **[!UICONTROL Properties]** .
 1. In de Container van de Configuratie, doorblader en selecteer de container die in sectie [ wordt gecreeerd de Macht Microsoft® Automate Configuratie van de Wolk Dataverse ](#microsoft-power-automate-dataverse-cloud-configuration), en selecteer **[!UICONTROL Save and Close]**.
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Selecteer in de eigenschappencontainer bij **[!UICONTROL Submit Actions]** de optie **[!UICONTROL Invoke a Power Automate flow]** en selecteer een **[!UICONTROL Power Automate flow]** . Selecteer de vereiste stroom en de Adaptieve Forms-gegevens worden bij verzending naar de server verzonden.
 
    ![ vormen voorleggen Actie ](assets/submission.png)
+1. Klik op **[!UICONTROL Done]**.
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ Nadat u [ uw instantie van Forms as a Cloud Service met Microsoft® Macht ](#con
             }
         }
 ```
+
+>[!TAB  Component van de Kern ]
+
+1. Meld u aan bij de instantie van de auteur, selecteer het adaptieve formulier en klik op **[!UICONTROL Properties]** .
+1. In de Container van de Configuratie, doorblader en selecteer de container die in sectie [ wordt gecreeerd de Macht Microsoft® Automate Configuratie van de Wolk Dataverse ](#microsoft-power-automate-dataverse-cloud-configuration), en selecteer **[!UICONTROL Save and Close]**.
+1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik op de tab **[!UICONTROL Submission]** .
+1. Selecteer de optie **[!UICONTROL Invoke a Power Automate flow]** in de vervolgkeuzelijst Handeling verzenden en selecteer een **[!UICONTROL Power Automate flow]** . Selecteer de vereiste stroom en de Adaptieve Forms-gegevens worden bij verzending naar de server verzonden.
+
+   ![ vormen voorleggen Actie ](/help/forms/assets/power-automate-cc.png)
+1. Klik op **[!UICONTROL Done]**.
+
+>[!NOTE]
+>
+> Voordat u het adaptieve formulier verzendt, moet u ervoor zorgen dat de trigger `When an HTTP Request is received` met onder JSON-schema wordt toegevoegd aan de stroom Automatisch.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB  Universele Redacteur ]
+
+1. Meld u aan bij de instantie Auteur en selecteer het adaptieve formulier.
+1. In de Container van de Configuratie, doorblader en selecteer de container die in sectie [ wordt gecreeerd de Macht Microsoft® Automate Configuratie van de Wolk Dataverse ](#microsoft-power-automate-dataverse-cloud-configuration), en selecteer **[!UICONTROL Save and Close]**.
+1. Open het adaptieve formulier voor bewerking.
+1. Klik **uitgeven de uitbreiding van de Eigenschappen van de Vorm** op de redacteur.
+Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
+
+   >[!NOTE]
+   >
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
+
+1. Klik **Verzending** lusje en selecteer **[!UICONTROL Invoke a Power Automate flow]** voorleggen actie. Selecteer de vereiste stroom en de Adaptieve Forms-gegevens worden bij verzending naar de server verzonden.
+
+   ![ vormen voorleggen Actie ](/help/forms/assets/power-automate-ue.png)
+1. Klik op **[!UICONTROL Save&Close]**.
+
+>[!NOTE]
+>
+> Voordat u het adaptieve formulier verzendt, moet u ervoor zorgen dat de trigger `When an HTTP Request is received` met onder JSON-schema wordt toegevoegd aan de stroom Automatisch.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

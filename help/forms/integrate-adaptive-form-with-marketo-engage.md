@@ -5,9 +5,9 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/nl/docs/marketo/using/home) te integreren.
+Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/en/docs/marketo/using/home) te integreren.
 
-U kunt een Marketo Engage verbinden met een adaptief formulier met de wizard Formulier. Hiermee vereenvoudigt u het configuratieproces door u door elke stap te begeleiden. Het omvat het selecteren van sjablonen, stijlen en gegevensvelden en het instellen van gegevenstoewijzing om te controleren of uw formulier klaar is om te communiceren met het Marketo Engage nadat het is gemaakt. Met de wizard Formulier kunt u het Adaptief formulier ook zodanig configureren dat gegevens bij verzending rechtstreeks naar Adobe Marketo Engage worden verzonden.
+U kunt Marketo Engage verbinden met een adaptief formulier via de wizard Formulier, die het configuratieproces vereenvoudigt door u door elke stap te begeleiden. Het omvat het selecteren van sjablonen, stijlen en gegevensvelden en het instellen van gegevenstoewijzing om te controleren of uw formulier klaar is om te communiceren met Marketo Engage nadat het is gemaakt. Met de wizard Formulier kunt u het Adaptief formulier ook zodanig configureren dat gegevens bij verzending rechtstreeks naar Adobe Marketo Engage worden verzonden.
 
-## Overwegingen bij het configureren van de gegevensbron van het Marketo Engage voor formulieren
+## Overwegingen bij het configureren van de Marketo Engage-gegevensbron voor formulieren
 
-Tijdens het configureren van de gegevensbron van Marketo&#39;s Engage voor formulieren wordt rekening gehouden met het volgende:
+Denk aan het configureren van Marketo Engage-gegevensbron voor formulieren:
 
 * Het is niet mogelijk om Edge Delivery Services Forms met Marketo Engage te verbinden.
 
@@ -38,7 +38,50 @@ Vereiste om Marketo Engage te verbinden met formulieren:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
-Voer de volgende stappen uit om een nieuw adaptief formulier te configureren voor integratie met Marketo Engage:
+>[!BEGINTABS]
+
+>[!TAB  Component van de Stichting ]
+
+Voer de volgende stappen uit om een nieuw adaptief formulier te configureren dat is gebaseerd op Foundation Components om te integreren met Marketo Engage:
+
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+
+   ![ Uitgezochte Forms en Documenten ](/help/forms/assets/select-forms.png)
+
+1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard Formulier maken wordt geopend.
+
+   ![ Uitgezochte AF ](/help/forms/assets/select-create-forms.png)
+
+1. Selecteer op het tabblad **[!UICONTROL Source]** een sjabloon
+
+   ![ Uitgezochte Malplaatjes ](/help/forms/assets/select-template-af1.png)
+
+1. Selecteer het thema in het **[!UICONTROL Style]** .
+
+   ![ Uitgezochte Thema ](/help/forms/assets/select-form-theme-af1.png)
+1. In het **[!UICONTROL Data]** lusje, selecteer een gegevensmodel als **Marketo Engage**.
+1. Selecteer **[!UICONTROL Cloud Configuration]** van de drop-down lijst die in de juiste ruit van het scherm verschijnt.
+Standaard worden alle velden in de gekoppelde configuratie weergegeven. De wizard biedt u het gemak om via selectievakjes te kiezen welke velden moeten worden opgenomen in het adaptieve formulier.
+
+   ![ Uitgezochte Gegevensmodel ](/help/forms/assets/select-marketo-data-af1.png)
+
+1. Selecteer op het tabblad **[!UICONTROL Submission]** de optie Verzenden als **[!UICONTROL Submit to Marketo]** .
+
+   Wanneer u het gegevensmodel als **Marketo Engage** selecteert, dan verzend actie zoals **voorlegt aan Marketo** wordt auto-geselecteerd. U kunt een andere verzendactie selecteren op het tabblad **[!UICONTROL Submission]** . Op het tabblad **[!UICONTROL Submission]** worden alle beschikbare verzendhandelingen weergegeven.
+
+   ![ voorleggen aan Marketo treedt ](/help/forms/assets/select-marketo-engage.png) in werking
+
+1. Selecteer **[!UICONTROL Create]**. Geef een titel, naam en locatie op om het adaptieve formulier op te slaan.
+
+   ![ creeer Vorm ](/help/forms/assets/create-marketo-form.png)
+
+1. Selecteer **[!UICONTROL Create]** .
+
+Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Engage-instantie. U kunt ook de eigenschappen van het Adaptief formulier bewerken om de bijbehorende configuratie te wijzigen
+
+>[!TAB  Component van de Kern ]
+
+Voer de volgende stappen uit om een nieuw adaptief formulier te configureren op basis van kerncomponenten voor integratie met Marketo Engage:
 
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
@@ -78,10 +121,49 @@ Standaard worden alle velden in de gekoppelde configuratie weergegeven. De wizar
 
 Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Engage-instantie. U kunt ook de eigenschappen van het adaptieve formulier bewerken om de bijbehorende configuratie te wijzigen.
 
+>[!TAB  Universele Redacteur ]
+
+Voer de volgende stappen uit om een nieuw adaptief formulier te configureren dat in de Universal Editor is ontworpen voor integratie met Marketo Engage:
+
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+
+   ![ Uitgezochte Forms en Documenten ](/help/forms/assets/select-forms.png)
+
+1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard Formulier maken wordt geopend.
+
+   ![ Uitgezochte AF ](/help/forms/assets/select-create-forms.png)
+
+1. Selecteer op het tabblad **[!UICONTROL Source]** een sjabloon
+
+   ![ Uitgezochte Malplaatjes ](/help/forms/assets/select-template-ue.png)
+
+1. In het **[!UICONTROL Data]** lusje, selecteer een gegevensmodel als **Marketo Engage**.
+
+1. Selecteer **[!UICONTROL Cloud Configuration]** van de drop-down lijst die in de juiste ruit van het scherm verschijnt.
+Standaard worden alle velden in de gekoppelde configuratie weergegeven. De wizard biedt u het gemak om via selectievakjes te kiezen welke velden moeten worden opgenomen in het adaptieve formulier.
+
+   ![ Uitgezochte Gegevensmodel ](/help/forms/assets/select-marketo-data-ue.png)
+
+1. Selecteer op het tabblad **[!UICONTROL Submission]** de optie Verzenden als **[!UICONTROL Submit to Marketo]** .
+
+   Wanneer u het gegevensmodel als **Marketo Engage** selecteert, dan verzend actie zoals **voorlegt aan Marketo** wordt auto-geselecteerd. U kunt een andere verzendactie selecteren op het tabblad **[!UICONTROL Submission]** . Op het tabblad **[!UICONTROL Submission]** worden alle beschikbare verzendhandelingen weergegeven.
+
+   ![ voorleggen aan Marketo treedt ](/help/forms/assets/select-marketo-engage-ue.png) in werking
+
+1. Selecteer **[!UICONTROL Create]**. Geef een titel, naam en locatie op om het adaptieve formulier op te slaan.
+
+   ![ creeer Vorm ](/help/forms/assets/create-marketo-form.png)
+
+1. Selecteer **[!UICONTROL Create]** .
+
+Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Engage-instantie. U kunt ook de eigenschappen van het adaptieve formulier bewerken om de bijbehorende configuratie te wijzigen.
+
+>[!ENDTABS]
+
 ## Veelgestelde vragen (FAQ&#39;s)
 
-**Q: Kan u verzendactie voor vormen veranderen die om met het schema van het Marketo Engage worden gevormd te verbinden?**
-**A:** Door gebrek, **voorleggen aan Marketo** actie wordt geselecteerd wanneer een vorm wordt gevormd om met het schema van het Marketo Engage te verbinden. U kunt de verzendactie voor de formulieren echter wijzigen als dat nodig is.
+**Q: Kan u verzendactie voor vormen veranderen die om met het schema van Marketo Engage worden gevormd te verbinden?**
+**A:** Door gebrek, **voorleggen aan Marketo** actie wordt geselecteerd wanneer een vorm wordt gevormd om met het schema van Marketo Engage te verbinden. U kunt de verzendactie voor de formulieren echter wijzigen als dat nodig is.
 
 
 **Q: Wat gebeurt wanneer u de schakelaar van de vorm verandert?**\
@@ -89,13 +171,14 @@ Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Eng
 
 **Q: Wat zijn de drie verrichtingen beschikbaar in de Invoke Dienst van de Redacteur van de Regel voor vormen die met Marketo Engage worden geïntegreerd?**\
 **A:** de drie uit-van-de-doos verrichtingen beschikbaar in **roepen de Dienst** voor vormen die met Marketo Engage worden geïntegreerd zijn:
+
 * Lead synchroniseren
 * Lead ophalen op id
 * Regelafstand op filtertype ophalen
 
 ## Volgende stap
 
-U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
+U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
 
 ## Verwante artikelen
 

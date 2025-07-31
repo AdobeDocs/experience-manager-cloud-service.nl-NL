@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=nl-NL) |
-| AEM as a Cloud Service (Core Components) | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (Core Components) | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (Foundation Components) | Dit artikel |
 
 Een adaptief formulier biedt meerdere OTB-acties (Verzenden buiten de box). In een handeling Verzenden worden de details opgegeven van de handelingen die moeten worden uitgevoerd op de gegevens die via het adaptieve formulier zijn verzameld. Bijvoorbeeld, verzendend gegevens over een e-mail.
@@ -78,7 +78,7 @@ Als u bestanden bijvoegt bij het adaptieve formulier, valideert de server de bes
 
 * De grootte van de bestandsbijlage is 0 bytes.
 
-* Het formaat van de dossiergehechtheid wordt niet bepaald in de [ Ondersteunde sectie van de Types van Dossier ](https://helpx.adobe.com/nl/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) terwijl het vormen van de component van de Bijlage van het Dossier in een Aangepaste Vorm.
+* Het formaat van de dossiergehechtheid wordt niet bepaald in de [ Ondersteunde sectie van de Types van Dossier ](https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) terwijl het vormen van de component van de Bijlage van het Dossier in een Aangepaste Vorm.
 
 ### Pad doorsturen en URL omleiden {#forward-path-and-redirect-url}
 
@@ -94,7 +94,7 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 
 ## Handeling verzenden {#submit-action}
 
-Een handeling Verzenden is een sling:map die het volgende bevat:
+Een Submit Actie is een helling :Folder die het volgende omvat:
 
 * **addfields.jsp**: Dit manuscript verstrekt de actievelden die aan het dossier van HTML tijdens vertoning worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die vereist zijn tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit manuscript is gelijkaardig aan de dialoog van de Component CQ. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u Handeling verzenden selecteert.
@@ -103,7 +103,7 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
    * **guideComponentType** van typeKoord en waarde **fd/af/components/guidesubmittype**
    * **guideDataModel** van typeKoord dat het type van AanpassingsVorm specificeert waarvoor de Submit Actie van toepassing is. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** wordt gesteund voor op XSD-Gebaseerde Aanpassings Forms. **basis** wordt gesteund voor Aanpassings Forms die geen XDP of XSD gebruiken. Voeg de overeenkomende tekenreeksen toe om de handeling weer te geven op meerdere typen Adaptief Forms. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op <!--XFA- and --> XSD-gebaseerde Adaptieve Forms, geeft u de waarde op als <!--**xfa** and--> **xsd**.
 
-   * **jcr:beschrijving** van typeKoord. De waarde van deze eigenschap wordt weergegeven in de lijst Handeling verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De OOTB-acties zijn aanwezig in de CRX-opslagplaats op de locatie **/libs/fd/af/components/guidesubmittype** .
+   * **jcr:description** van typeKoord. De waarde van deze eigenschap wordt weergegeven in de lijst Handeling verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De OOTB-acties zijn aanwezig in de CRX-opslagplaats op de locatie **/libs/fd/af/components/guidesubmittype** .
 
    * **submitService** van typeKoord. Voor meer informatie, zie [ de Aangepaste voorlegging van de Vorm van het Programma voor douaneacties ](#schedule-adaptive-form-submission).
 
@@ -111,23 +111,23 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
 
 >[!NOTE]
 >
-> Leren hoe te om een douane te creëren voorlegt actie voor de Componenten van de Kern, zie [ een douane verzend actie voor Aanpassings Forms (de Componenten van de Kern) ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+> Leren hoe te om een douane te creëren voorlegt actie voor de Componenten van de Kern, zie [ een douane verzend actie voor Aanpassings Forms (de Componenten van de Kern) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
 
 Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de afgekeurde OOTB-code voor het verzenden van Action Store-inhoud die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt AEM a [ Post ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mail te verzenden. Voordat u de e-mail-API gebruikt, configureert u de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
 
-1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
+1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Creeer een knoop met het bezit verbinden :Folder en naam store_and_mail in de /apps/custom_submit_action omslag. Maak de map custom_submit_action als deze nog niet bestaat.
 
-   ![ Scherenshot die de verwezenlijking van een knoop met het bezit toont:Omslag ](assets/step1.png)
+   ![ Scherenshot die de verwezenlijking van een knoop met het bezit toont - noem :Folder](assets/step1.png)
 
 2. **verstrek de verplichte configuratiegebieden.**
 
-   Voeg de configuratie toe die de winkelactie vereist. Kopieer **cq:dialoog** knoop van de actie van de Opslag van /libs/fd/af/components/guidesubmittype/store aan de actiemap bij /apps/custom_submit_action/store_and_email.
+   Voeg de configuratie toe die de winkelactie vereist. Kopieer de **cq:dialog** knoop van de actie van de Opslag van /libs/fd/af/components/guidesubmittype/store aan de actiemap bij /apps/custom_submit_action/store_and_email.
 
    ![ Schermafbeelding die het kopiëren van de dialoogknoop aan de actiemap tonen ](assets/step2.png)
 
 3. **verstrek configuratiegebieden om de auteur voor e-mailconfiguratie te veroorzaken.**
 
-   Het adaptieve formulier bevat ook een e-mailactie waarmee e-mailberichten naar gebruikers worden verzonden. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knooppunten in het cq:dialog-knooppunt naar cq:dialog-knooppunt van uw verzendhandeling (/apps/custom_submit_action/store_and_email/dialog).
+   Het adaptieve formulier bevat ook een e-mailactie waarmee e-mailberichten naar gebruikers worden verzonden. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knopen binnen cq :dialog knoop aan cq :dialog knoop van uw Verzendactie (/apps/custom_submit_action/store_and_email/dialog).
 
    ![ Aanpassen van de e-mailactie ](assets/step3.png)
 
@@ -139,7 +139,7 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
    * **guideDataModel** van type **Koord** en waarde **<!--xfa, -->xsd, basis**
 
-   * **jcr:beschrijving** van type **Koord** en waarde **Slag en E-mailActie**
+   * **jcr:description** van type **Koord** en waarde **Actie van de Opslag en E-mail**
 
    * **submitService** van type **Koord** en waarde **opslag en E-mail**. Voor meer informatie, zie [ de Aangepaste voorlegging van de Vorm van het Programma voor douaneacties ](#schedule-adaptive-form-submission).
 
@@ -209,7 +209,7 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
 ## Use submitService property for custom Submit Actions {#submitservice-property}
 
-Wanneer u de douane plaatst legt Actie voor, die het `submitService` bezit omvat, brengt de vorm [ FormSubmitActionService ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) op voorlegging in werking. In `FormSubmitActionService` wordt de methode `getServiceName` gebruikt om de waarde voor de eigenschap `submitService` op te halen. Gebaseerd op de waarde van het `submitService` bezit, roept de dienst aangewezen voorlegt methode aan. Neem de `FormSubmitActionService` op in de aangepaste bundel die u uploadt naar de [!DNL AEM Forms] -server.
+Wanneer u de douane plaatst legt Actie voor, die het `submitService` bezit omvat, brengt de vorm [ FormSubmitActionService ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) op voorlegging in werking. In `FormSubmitActionService` wordt de methode `getServiceName` gebruikt om de waarde voor de eigenschap `submitService` op te halen. Gebaseerd op de waarde van het `submitService` bezit, roept de dienst aangewezen voorlegt methode aan. Neem de `FormSubmitActionService` op in de aangepaste bundel die u uploadt naar de [!DNL AEM Forms] -server.
 
 Voeg de eigenschap `submitService` van het type tekenreeks toe aan de `sling:Folder` van de aangepaste handeling Verzenden om [!DNL Adobe Sign] in te schakelen voor het adaptieve formulier. U kunt de optie **[!UICONTROL Enable Adobe Sign]** alleen selecteren in het gedeelte **[!UICONTROL Electronic Signature]** van de containereigenschappen van het adaptieve formulier nadat u de waarde hebt ingesteld voor de eigenschap `submitService` van de aangepaste verzendactie.
 
@@ -217,6 +217,7 @@ Voeg de eigenschap `submitService` van het type tekenreeks toe aan de `sling:Fol
 
 
 ![ voorlegt de dienstbezit ](assets/submit-service-property.png)
+
 
 <!-- You can't do comments within comments, so I changed comment tags to <start-comment> <end-comment> -->
 

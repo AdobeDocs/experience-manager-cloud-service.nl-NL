@@ -3,13 +3,13 @@ title: Integratie van Adobe Workfront Fusion met AEM Forms-verzending
 description: Met Adobe Workfront Fusion kunt u zich richten op nieuwe taken in plaats van zich te richten op herhaalde taken. U kunt Adobe Workfront Fusion via Formulierverzending verbinden met een adaptief formulier.
 keywords: Een adaptief formulier verzenden naar Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms en Workfront Fusion, How to connect Workfront Fusion with AEM Forms, Connect Workfront Fusion to a Form?
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 0%
+source-wordcount: '1210'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-[ de Fusie van Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=nl-NL) automatiseert het proces om de zelfde taken, zoals de werkschema&#39;s van de documentgoedkeuring, e-mailfiltreren en het sorteren te herhalen, toestaand u om zich op nieuwe taken in plaats van terugkomende degenen te concentreren. Adobe Workfront Fusion bevat meerdere scenario&#39;s. Een scenario bestaat uit een reeks modules die gegevensoverdracht tussen toepassingen en Webdiensten uitvoert. In een scenario, voegt u diverse stappen (modules) toe om een taak te automatiseren.
+[ de Fusie van Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiseert het proces om de zelfde taken, zoals de werkschema&#39;s van de documentgoedkeuring, e-mailfiltreren en het sorteren te herhalen, toestaand u om zich op nieuwe taken in plaats van terugkomende degenen te concentreren. Adobe Workfront Fusion bevat meerdere scenario&#39;s. Een scenario bestaat uit een reeks modules die gegevensoverdracht tussen toepassingen en Webdiensten uitvoert. In een scenario, voegt u diverse stappen (modules) toe om een taak te automatiseren.
 
 Met Workfront Fusion kunt u bijvoorbeeld een scenario maken voor het verzamelen van gegevens met Adaptief formulier, het verwerken van de gegevens en het verzenden van de gegevens naar een gegevensopslagruimte voor archivering. Wanneer een scenario is ingesteld, voert Workfront Fusion automatisch de taken uit wanneer een gebruiker een formulier invult en de gegevensopslag naadloos bijwerkt.
 
@@ -35,12 +35,12 @@ AEM Forms as a Cloud Service beschikt over een OOTB-connector om een adaptief fo
 
 Voor het tot stand brengen van een verbinding tussen Workfront Fusion en AEM Forms is het volgende noodzakelijk:
 
-* Een geldige [ Workfront en de vergunning van de Fusie van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=nl-NL).
-* Een AEM gebruiker met recht om tot [ Dev Console ](https://my.cloudmanager.adobe.com/) toegang te hebben [ wint de de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) terug.
+* Een geldige [ Workfront en de vergunning van de Fusie van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Een gebruiker van AEM met recht op toegang tot [ Dev Console ](https://my.cloudmanager.adobe.com/) om [ de de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug te winnen.
 
 ## AEM Forms integreren met Adobe Workfront Fusion
 
-### 1. Een Workfront-scenario maken {#workflow-scenario}
+### &#x200B;1. Een Workfront-scenario maken {#workflow-scenario}
 
 Voer de volgende stappen uit om een Workfront-scenario te maken:
 
@@ -51,6 +51,7 @@ Voer de volgende stappen uit om een Workfront-scenario te maken:
 #### Een scenario maken {#create-scenario}
 
 Een scenario maken:
+
 1. Teken in uw [ rekening van de Fusie van Workfront ](https://app-qa.workfrontfusion.com/).
 1. Klik **[!UICONTROL Scenarios]** ![ pictogram van het Aandeel ](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in het linkerpaneel.
 1. Klik op **[!UICONTROL Create a new scenario]** rechtsboven op de pagina. Op het scherm verschijnt een pagina waarop u een nieuw scenario kunt maken.
@@ -78,7 +79,7 @@ Een webhaak toevoegen:
 
    >[!NOTE]
    >
-   > U wordt aangeraden de naam van uw webhaak zorgvuldig te kiezen, aangezien de opgegeven naam van de webhaak in het AEM wordt weergegeven.
+   > U wordt aangeraden de naam van uw webhaak zorgvuldig te kiezen, zoals de opgegeven naam van de webhaak in het AEM-exemplaar wordt weergegeven.
 
 1. Klik op **[!UICONTROL Add]** om een nieuwe verbinding toe te voegen. Het dialoogvenster **[!UICONTROL Create a Connection]** wordt weergegeven.
 
@@ -102,7 +103,7 @@ Een verbinding toevoegen:
    >
    > Instance-URL is het unieke webadres dat verwijst naar een specifieke AEM Forms-instantie.
 
-   U kunt de [ dienstgeloofsbrieven van de console van de Ontwikkelaar terugwinnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) wordt vereist om een verbinding tot stand te brengen die.
+   U kunt de [ dienstgeloofsbrieven van de console van de Ontwikkelaar terugwinnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) wordt vereist om een verbinding tot stand te brengen die.
 
 1. Vervang `ims-na1.adobelogin.com` in het **IMS eindpunt** met de waarde van **imsEndpoint** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
 
@@ -143,53 +144,60 @@ Een verbinding toevoegen:
 >
 > Als u het Workfront-scenario niet activeert, wordt het verzenden van het formulier niet gedetecteerd. Als u de actie Verzenden instelt op Workfront, resulteert dit in een mislukte verzending.
 
-### 2. De verzendactie van een adaptief formulier voor Workfront Fusion configureren
+### &#x200B;2. De verzendactie van een adaptief formulier voor Workfront Fusion configureren
 
-U kunt de verzendactie voor Workfront Fusion configureren voor:
-* [Nieuwe adaptieve Forms](#new-af-submit-action)
-* [Bestaande adaptieve formulieren](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### Verzendactie voor nieuw adaptief formulier voor Workfront Fusion configureren {#new-af-submit-action}
+>[!TAB  Component van de Stichting ]
 
-Verzendactie van nieuw adaptief formulier voor Workfront Fusion configureren:
+Verzendactie van een adaptief formulier configureren op basis van Foundation Components for Workfront Fusion:
 
-1. Meld u aan bij uw AEM.
-1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]** > **[!UICONTROL Create]** > **[!UICONTROL Adaptive Form]** . De wizard **[!UICONTROL Create Form]** wordt weergegeven.
-1. Selecteer een adaptieve formuliersjabloon op het tabblad **[!UICONTROL Source]** .
-1. Selecteer een thema op het tabblad **[!UICONTROL Style]** .
+1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
+1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Invoke a WorkFront Fusion Scenario]**.
+   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-fusion-fc.png)
 
-   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-scenario-new-af.png)
-
-1. Selecteer **[!UICONTROL Invoke a WorkFront Fusion Scenario]** van het **[!UICONTROL Submission]** lusje.
-1. Selecteer de gemaakte webhaak op de tab **[!UICONTROL Options]** in het **[!UICONTROL Properties]** -venster.
-
-   >[!NOTE]
-   >
-   > De webhaaknaam van het scenario van Workfront verschijnt in de **drop-down lijst van Opties**.
-
-1. Klik op **[!UICONTROL Create]**.
-1. Geef de naam voor het nieuwe adaptieve formulier op en klik op **[!UICONTROL Create]** .
-
-#### Verzendactie van bestaand adaptief formulier voor Workfront Fusion configureren {#existing-af-submit-action}
-
-Verzendactie van bestaand adaptief formulier voor Workfront Fusion configureren:
-
-1. Meld u aan bij uw AEM.
-1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]** .
-1. Selecteer een adaptief formulier en open het formulier in de bewerkingsmodus.
-1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
-
-   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. Open de tab **[!UICONTROL Submission]** .
-1. Selecteer **[!UICONTROL Submit action]** als **[!UICONTROL Invoke a WorkFront Fusion Scenario]**
 1. Selecteer **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
 1. Klik op **[!UICONTROL Done]**.
 
+
+>[!TAB  Component van de Kern ]
+
+Verzendactie configureren op basis van kerncomponenten voor Workfront Fusion:
+
+1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik op de tab **[!UICONTROL Submission]** .
+1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Invoke a WorkFront Fusion Scenario]**.
+
+   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-scenario-existing-af.png)
+1. Selecteer **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
+1. Klik op **[!UICONTROL Done]**.
+
+>[!TAB  Universele Redacteur ]
+
+Verzendactie configureren van een adaptief formulier dat is geschreven met de Universal Editor:
+
+1. Open het adaptieve formulier voor bewerking.
+1. Klik **uitgeven de uitbreiding van de Eigenschappen van de Vorm** op de redacteur.
+Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
+
+   >[!NOTE]
+   >
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
+1. Klik **Verzending** lusje en selecteer **[!UICONTROL Invoke a WorkFront Fusion Scenario]** voorlegt actie.
+
+   ![ voorlegt actie voor de Fusie van Workfront ](/help/forms/assets/workfront-fusion-ue.png)
+
+1. Selecteer **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
+1. Klik op **[!UICONTROL Save&Close]**.
+
+>[!ENDTABS]
+
 ## Aanbevolen procedures {#best-practices}
 
-* U wordt aangeraden de naam van uw webhaak zorgvuldig te kiezen, omdat er geen manier is om de naam van het scenario op te halen bij het AEM. Als u de naam van de webhaak in de toekomst wijzigt, wordt deze niet meer weergegeven in de vervolgkeuzelijst Handeling voor verzenden van AEM Forms.
+* U wordt aangeraden de naam van uw webhaak zorgvuldig te kiezen, omdat er geen manier is om de naam van het scenario op te halen bij de AEM-instantie. Als u de naam van de webhaak in de toekomst wijzigt, wordt deze niet meer weergegeven in de vervolgkeuzelijst Handeling voor verzenden van AEM Forms.
 * Een scenario kan veelvoudige webhaakverbindingen hebben maar tegelijkertijd is slechts één webhaakverbinding actief. U wordt aangeraden de ontkoppelde webhaak te verwijderen, zodat deze niet wordt weergegeven in de vervolgkeuzelijst Handeling verzenden van AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
