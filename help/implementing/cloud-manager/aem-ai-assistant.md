@@ -31,7 +31,7 @@ Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub,
 
 De volgende 3 minuten, 39 seconden video levert een geleidelijke analyse van de Medewerker van AEM AI.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470361?learn=on&captions=dut)
 
 >[!IMPORTANT]
 >Controleer of u de gebruikersovereenkomst hebt gecontroleerd en verzonden, zodat Adobe de functie AI Assistant kan inschakelen zodat u het persoonlijke bètaprogramma kunt uittesten en hieraan kunt deelnemen.
