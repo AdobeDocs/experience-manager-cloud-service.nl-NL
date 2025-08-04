@@ -169,7 +169,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
      >[!NOTE]
      >
-     >Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
+     >Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=nl-NL), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
      >
      >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
      >
@@ -241,7 +241,7 @@ Uw framework is gemaakt. Om het kader aan te herhalen publiceer instantie, gebru
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ Een inhoudsfragment exporteren van AEM naar Target (nadat u de Cloud Configurati
 
 ## Inhoudsfragmenten in Adobe Target gebruiken {#using-your-content-fragments-in-adobe-target}
 
-Nadat u de voorgaande taken hebt uitgevoerd, wordt het inhoudsfragment weergegeven op de pagina Aanbiedingen in Doel. Zie [ specifieke documentatie van het Doel ](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) om over te leren wat u daar kunt bereiken.
+Nadat u de voorgaande taken hebt uitgevoerd, wordt het inhoudsfragment weergegeven op de pagina Aanbiedingen in Doel. Zie [ specifieke documentatie van het Doel ](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=nl-NL) om over te leren wat u daar kunt bereiken.
 
 >[!NOTE]
 >
@@ -378,10 +378,10 @@ Raadpleeg de volgende secties voor meer informatie:
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [ de Componenten van de Kern - de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [ de Componenten van de Kern - de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)
 
 * [ de ontwikkeling van Adobe Target ](https://developers.adobetarget.com/)
 
-* [ Adobe Target - Gebruikend de Fragmenten van de Inhoud van AEM in de activiteiten van het Doel om optimalisering of verpersoonlijking te helpen ](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [ Adobe Target - Gebruikend de Fragmenten van de Inhoud van AEM in de activiteiten van het Doel om optimalisering of verpersoonlijking te helpen ](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=nl-NL)
 
-* [ Adobe Target - het Overzicht van de Fragmenten van de Ervaring van AEM en van de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [ Adobe Target - het Overzicht van de Fragmenten van de Ervaring van AEM en van de Fragmenten van de Inhoud ](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=nl-NL)
