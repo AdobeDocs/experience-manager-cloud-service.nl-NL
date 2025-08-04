@@ -71,12 +71,12 @@ Beide modellen kunnen naast elkaar bestaan binnen hetzelfde Cloud Manager-progra
 ## Vereisten {#prerequisites}
 
 1. Aan boord van uw site in Cloud Manager
-- Vereist voor beide modellen. Volg een AEM-site aan boord.
+&#x200B;- Vereist voor beide modellen. Volg een AEM-site aan boord.
 
 2. Kies voor uw eigen git (BYOG) (optioneel)
-- Als u sitecode buiten Adobe Git opslaat, moet u BYOG inboarding voltooien.
+&#x200B;- Als u sitecode buiten Adobe Git opslaat, moet u BYOG inboarding voltooien.
 
 3. Edge Delivery-licentie
-- Controleer of er een licentie voor uw programma is voor Edge Delivery Services.
+&#x200B;- Controleer of er een licentie voor uw programma is voor Edge Delivery Services.
 
 
