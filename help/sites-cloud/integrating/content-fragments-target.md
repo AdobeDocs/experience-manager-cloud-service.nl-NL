@@ -80,7 +80,7 @@ De vereiste opties kunnen in **Eigenschappen** van de vereiste omslag worden ges
    >
    >Als u de wolkenconfiguratie aan de ouderomslag van het Fragment van de Inhoud toevoegt, wordt de configuratie geërft door alle kinderen.
 
-1. Selecteer de **tabel van de Diensten van de Wolk 0} {.**
+1. Selecteer de **tabel van de Diensten van de Wolk 0&rbrace; &lbrace;.**
 
 1. Onder **Configuratie van Cloud Service**, selecteer uw doelconfiguratie van de drop-down lijst.
 
@@ -121,7 +121,7 @@ Bijvoorbeeld: ([ http://localhost:4502 /libs/cq/core/content/tools/cloudservices
 1. In **creeer de dialoog van de Configuratie**:
 
    1. Geef de configuratie a **Titel**.
-   1. Selecteer het **malplaatje van de Configuratie van 0} Adobe Target.**
+   1. Selecteer het **malplaatje van de Configuratie van 0&rbrace; Adobe Target.**
    1. Klik **creëren**.
 
 U kunt nu de nieuwe configuratie selecteren om te bewerken.
@@ -204,7 +204,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
 <!-- Is this section needed? -->
 
-Nadat u de de wolkenconfiguratie van het Doel vormt, voeg een kader van het Doel toe. Het kader identificeert de standaardparameters die naar Adobe Target van de beschikbare [ ](/help/implementing/developing/personalization/configuring-contexthub.md) componenten ContextHub worden verzonden. Het doel gebruikt de parameters om de segmenten te bepalen die op de huidige context van toepassing zijn.
+Nadat u de de wolkenconfiguratie van het Doel vormt, voeg een kader van het Doel toe. Het kader identificeert de standaardparameters die naar Adobe Target van de beschikbare [&#128279;](/help/implementing/developing/personalization/configuring-contexthub.md) componenten ContextHub worden verzonden. Het doel gebruikt de parameters om de segmenten te bepalen die op de huidige context van toepassing zijn.
 
 U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. Meerdere frameworks zijn handig wanneer u een andere set parameters naar Doel moet sturen voor verschillende gedeelten van uw website. Maak een framework voor elke set parameters die u wilt verzenden. Koppel elk gedeelte van uw website aan het juiste framework. Opmerking t*dat een webpagina slechts één framework tegelijk kan gebruiken.
 
@@ -218,7 +218,7 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. 
 
    <!-- ![Configuring ContextHub](assets/chlimage_1-162.png) -->
 
-1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. Alternatief, sleep de **component van de Winkel 0} ContextHub aan het kader.**
+1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. Alternatief, sleep de **component van de Winkel 0&rbrace; ContextHub aan het kader.**
 
    >[!NOTE]
    >
