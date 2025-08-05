@@ -2,7 +2,7 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 0%
@@ -233,7 +233,7 @@ Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hu
 
 ### Uitvoeringen {#renditions-content-hub}
 
-Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Voer daartoe de volgende stappen uit:
 

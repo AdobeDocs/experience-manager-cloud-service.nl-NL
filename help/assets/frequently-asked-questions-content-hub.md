@@ -2,9 +2,9 @@
 title: Veelgestelde vragen (FAQ's) voor Content Hub
 description: Antwoorden op enkele veelgestelde vragen (FAQ's) voor Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1654'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Er zijn een paar configuraties van hoe gebruikers worden toegewezen aan [!DNL Co
    >
    >De gebruiker die aan Uitdrukkelijke en Assets productprofielen in twee Consoles Admin wordt toegewezen moet het zelfde e-mailadres hebben en een bedrijfs **rekening van de Onderneming of van de School gebruiken**, en niet **Persoonlijke**. De ideale configuratie moet zowel Consoles Admin opstelling als **Federated ID** met vertrouwensverhouding opstelling tussen hen hebben, zodat de gebruiker een naadloze enige sign-on ervaring heeft. Sommige Express-plannen (bijvoorbeeld Express Teams) bieden geen ondersteuning voor Federated ID/Single Sign-On.
 
-Naast de juiste productrechten vereist de integratie van Adobe Express in Content Hub dat de toegewezen gebruiker minstens [!UICONTROL Can Edit] toestemmingen op de het auteursmilieu van Assets die Content Hub aandrijft, op minstens de **[!UICONTROL # /content/dam/hydrated-assets/]** omslaghiërarchie heeft, waar de gebruikers van Content Hub inhoud kunnen bewaren die zij gebruikend Druk creeerden. Zie [ het Beheer van Toestemmingen ](/help/security/touch-ui-principal-view.md) in de mening Admin (Aanraak UI) of een vereenvoudigd [ toestemmingenbeheer in de mening van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Naast de juiste productrechten vereist de integratie van Adobe Express in Content Hub dat de toegewezen gebruiker minstens [!UICONTROL Can Edit] toestemmingen op de het auteursmilieu van Assets die Content Hub aandrijft, op minstens de **[#UICONTROL /content/dam/hydrated-assets/]** omslaghiërarchie heeft, waar de gebruikers van Content Hub inhoud kunnen bewaren die zij gebruikend Druk creeerden. Zie [ het Beheer van Toestemmingen ](/help/security/touch-ui-principal-view.md) in de mening Admin (Aanraak UI) of een vereenvoudigd [ toestemmingenbeheer in de mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kan ik Content Hub zo instellen dat de merkrichtlijnen van mijn organisatie als een link op de homepage worden weergegeven? {#content-hub-setup-brand-guidelines}
 
@@ -134,5 +134,29 @@ De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tusse
 |  | Vastgezette verzamelingen door beheerder | ✓ | - |
 |  | Semantische zoekopdracht | ✓ | - |
 |  | Lokale weergave van zoekopdrachten en metagegevens | ✓ | - |
+
+## Hoe kan ik een opslagplaats selecteren om activa slechts voor het geselecteerde milieu te bekijken? {#select-repository-multiple-environments}
+
+Wanneer u Content Hub for Production en andere lagere omgevingen voor hetzelfde programma hebt geconfigureerd, kunt u de opslagplaats selecteren en de middelen voor de geselecteerde omgeving weergeven. Voer de volgende stappen uit:
+
+1. Klik op het gebruikerspictogram in het rechterdeelvenster.
+
+1. Selecteer **[!UICONTROL Product Settings]** in de sectie **[!UICONTROL Select Repository]** .
+
+1. Selecteer de gegevensopslagruimte in het vervolgkeuzemenu **[!UICONTROL Repository]** en klik op **[!UICONTROL OK]** om te bevestigen.
+
+   Content Hub geeft nu elementen voor de geselecteerde omgeving weer.
+
+## Hoe kan Content Hub de miniatuurvoorvertoning van het ZIP-bestandstype weergeven? {#thumbnail-preview-zip-file}
+
+Als u een miniatuurvoorvertoning wilt weergeven voor bestandstypen zoals .ZIP in Content Hub, kunt u een uitvoering met de naam `cq5dam.preview.jpg` of `cq5dam.preview.png` toevoegen aan de hoofdmap van het pad waar het .ZIP-bestand beschikbaar is in de ontwerpomgeving van AEM as a Cloud Service.
+
+De afbeelding die u als uitvoering toevoegt:
+
+* Dit kan de JPG-, JPEG- of PNG-indeling hebben.
+
+* Moet minder dan 50 MB zijn
+
+Indien beschikbaar geeft Content Hub de afbeelding weer als voorvertoningsminiatuur voor het ZIP-bestand in Content Hub.
 
 
