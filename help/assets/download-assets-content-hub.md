@@ -153,7 +153,7 @@ Dynamische uitvoeringen inschakelen:
 
 1. Plaats het [ goedkeuringsdoel van de activa ](/help/assets/approve-assets-content-hub.md#set-approval-target) aan Content Hub om activa slechts voor Content Hub goed te keuren.
 
-1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3} Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
+1. Laat de **[!UICONTROL Enable availability of renditions]** knevel beschikbaar in het **[!UICONTROL Renditions]** lusje van het [ 3&rbrace; Gebruikersinterface van de Configuratie toe.](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)
 
 1. Sla de bestaande voorinstellingen voor afbeeldingen opnieuw op om deze beschikbaar te maken op Content Hub. Deze optie is alleen van toepassing als u onlangs bent aangemeld bij Dynamic Media met OpenAPI.
 
