@@ -3,22 +3,21 @@ title: Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen
 description: Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
 
 # Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**zijn alle activa in de bewaarplaats van Experience Manager Assets as a Cloud Service beschikbaar voor onderzoek en levering gebruikend Dynamische Media met mogelijkheden OpenAPI?**
+## Zijn alle middelen in de Experience Manager Assets as a Cloud Service-opslagplaats beschikbaar voor zoeken en leveren met behulp van Dynamic Media met OpenAPI-mogelijkheden? {#assets-available-for-search}
 
 Nr, slechts [ goedgekeurde en recentste versie van de activa ](/help/assets/approve-assets.md) zijn beschikbaar voor onderzoek en levering gebruikend Dynamische Media met mogelijkheden OpenAPI, die merkconsistentie over alle kanalen en toepassingen verzekeren.
 
-+++
 
-+++**hoe kunnen de beheerders nieuwe en bestaande activa merken die aan een omslag zoals worden toegevoegd?**
+## Hoe kunnen beheerders nieuwe en bestaande activa merken die aan een omslag zoals goedgekeurd worden toegevoegd? {#add-assets-to-folder-as-approved}
 
 De status van een element in Experience Manager Assets wordt bepaald door de eigenschap `jcr:content/metadata/dam:status` . De waarden van deze eigenschap kunnen zijn:
 
@@ -50,22 +49,19 @@ Op dezelfde manier maakt Experience Manager Assets een onderscheid tussen de sta
 ![ Geweigerde activa in de mening van Assets ](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-+++
+## Hoe kunt u gebruikers- of groepsidentiteitskaart van Adobe IMS (Adobe Identity Management Services) gebruiken om de rollen op activa in de mening van Admin van Experience Manager te plaatsen, voor het beveiligen van levering en onderzoekservaring? {#set-roles-secure-delivery-search}
 
-+++**Hoe kunt u de gebruiker of groepsidentiteitskaart van Adobe IMS (Adobe Identity Management Services) worden gebruikt om de rollen op activa in de mening van Admin van Experience Manager te plaatsen, voor het beveiligen van levering en onderzoekservaring?**
+Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
-Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=nl-NL).
 
-+++
-
-+++**kunt u veelvoudige activa gelijktijdig binnen een omslag goedkeuren?**
+## Kunt u meerdere elementen tegelijk in een map goedkeuren? {#approve-multiple-assets-in-folder}
 
 Ja, u kunt meerdere elementen in een map tegelijk goedkeuren.
 
 Voer de volgende stappen uit om meerdere elementen tegelijk goed te keuren in [!DNL Experience Manager Assets Admin view] :
 
 1. Selecteer de elementen en klik op **[!UICONTROL Properties]** .
-1. Schuif omlaag naar **[!UICONTROL Review Status]** op het tabblad **[!UICONTROL Basic]** .
+1. Schuif omlaag naar **[!UICONTROL Basic]** op het tabblad **[!UICONTROL Review Status]** .
 1. Wijzig de revisiestatus in **[!UICONTROL Approved]** .
 1. Klik op **[!UICONTROL Save & Close]**.
 
@@ -78,9 +74,7 @@ Op dezelfde manier als u meerdere elementen tegelijk wilt goedkeuren in een map 
 1. Klik op **[!UICONTROL Save]**.
 
 
-+++
-
-+++**hoe ik activalevering en onderzoek naar de Dynamische Media OpenAPIs kan beveiligen?**
+## Hoe kan ik de levering van middelen beveiligen en zoeken naar de Dynamic Media OpenAPI&#39;s? {#secure-asset-delivery}
 
 Met het beheer van centrale bedrijfsmiddelen in Experience Manager kunnen de DAM-beheerders of -beheerders de toegang tot bedrijfsmiddelen beheren. Ze kunnen de toegang beperken door rollen te configureren of door activerings- en deactiveringstijd in te stellen voor goedgekeurde elementen aan de ontwerpzijde, met name in de AEM as a Cloud Service-auteurinstantie.
 
@@ -88,21 +82,18 @@ Eindgebruikers die URL&#39;s van levering zoeken of gebruiken, kunnen toegang kr
 
 Voor meer informatie, zie [ Toegang tot activa in Experience Manager ](restrict-assets-delivery.md#authoring) beperken.
 
-+++
 
-+++**Hoe kunt u toestemmingen krijgen om de goedkeuringsstatus van een activa uit te geven?**
+## Hoe kunt u toestemmingen krijgen om de goedkeuringsstatus van een activa uit te geven? {#permissions-edit-approval-status}
 
 Als gebruiker DAM, zou u geen toestemmingen kunnen hebben om [ activa ](approve-assets.md#approve-assets) goed te keuren. Als u machtigingen wilt verkrijgen om de goedkeuringsstatus van een element te bewerken, kunnen de beheerders de standaardinstelling of elk ander metagegevensschema dat op de elementenmap wordt toegepast, bewerken en machtigingen voor het **[!UICONTROL Review Status]** -veld opgeven. Voor meer informatie, zie [ hoe te om uit te schakelen uitgeeft voor het gebied van de Status van het Overzicht ](approve-assets.md#configuration).
 
-+++
 
-+++**wat is de gesteunde dossiergrootte voor video&#39;s?**
+## Wat is de ondersteunde bestandsgrootte voor video&#39;s? {#supported-file-formats-videos}
 
 Dynamische media met OpenAPI-mogelijkheden ondersteunen lange formuliervideo&#39;s. De video&#39;s kunnen tot 50 GB en 2 uur steunen.
 
-+++
 
-+++**hoe de Dynamische Media met mogelijkheden OpenAPI van Dynamische oplossing van Media verschillend is?**
+## Hoe Dynamic Media met OpenAPI-mogelijkheden verschilt van Dynamic Media-oplossing? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 Dynamische media met OpenAPI-mogelijkheden en Dynamische media vertegenwoordigen afzonderlijke oplossingen die elk hun gespecialiseerde leveringsmogelijkheden bieden. Het is absoluut noodzakelijk om uw specifieke vereisten grondig te herzien om de meest passende oplossing te bepalen die op uw behoeften richt.
 
@@ -124,9 +115,8 @@ Hier volgen enkele belangrijke verschillen tussen Dynamic Media met OpenAPI-moge
 | Dynamische videocoderingscodes die ervoor zorgen dat de beste coderingen worden uitgevoerd op basis van de invoervideo. Er is geen installatie vereist voor native video-levering. | Standaard 3-coderingen, ongeacht de invoervideo (kan van invloed zijn op de prestaties van de video). U moet handmatig verschillende coderingen instellen voor verschillende bitsnelheden voor video. |
 | Moeilijk om op UID gebaseerde URL&#39;s met middelen te raden (maakt URL-verwarring mogelijk), maar SEO geoptimaliseerd. | URL-verwarring is alleen beschikbaar voor URL-queryparameters. Assets-id&#39;s (elementnamen) in URL&#39;s kunnen worden opgenomen. |
 
-+++
 
-+++**hoe de Dynamische Media met mogelijkheden OpenAPI de beperkingen van de Verbonden eigenschap van Assets richt?**
+## Hoe Dynamic Media met OpenAPI-mogelijkheden de beperkingen van de functie Connected Assets aanpakken? {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tussen de twee oplossingen:
 
@@ -141,4 +131,14 @@ De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tusse
 | Wijzigingen die worden aangebracht in goedgekeurde middelen die beschikbaar zijn op de externe DAM-implementatie, inclusief updates van versies en wijzigingen in metagegevens, worden automatisch weerspiegeld in de Sites-instantie binnen een korte tijd-voor-live (TTL)-waarde van 10 minuten. | Updates van middelen op externe DAM-implementatie worden automatisch afgehandeld via levenscyclusgebeurtenissen, maar nemen veel meer tijd in beslag dan bij Dynamic Media met OpenAPI-mogelijkheden. |
 | Metagegevens van middelen op externe DAM zijn ook beschikbaar in AEM Sites-instantie. | Metagegevens van middelen op externe DAM zijn niet beschikbaar op AEM Sites-instanties. |
 
-+++
+## Sommige bepalingen zijn gemarkeerd als Beperkte Beschikbaarheid. Hoe kan ik ze gaan gebruiken? {#use-limited-availability-modifiers}
+
+Om het productiegebruik van modifiers in Beperkte Beschikbaarheid op uw rekening toe te laten:
+
+1. [ creeer een geval van de Steun van Adobe gebruikend Admin Console ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
+1. Vermeld de volgende details in de Adobe Support-zaak:
+
+   * IMS Org
+
+   * Lijst met wijzigingstoetsen die moeten worden ingeschakeld
