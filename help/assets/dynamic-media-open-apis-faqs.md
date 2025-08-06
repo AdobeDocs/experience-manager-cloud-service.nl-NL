@@ -3,9 +3,9 @@ title: Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen
 description: Dynamische media met OpenAPI-mogelijkheden die vaak vragen stellen
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Op dezelfde manier maakt Experience Manager Assets een onderscheid tussen de sta
 
 ## Hoe kunt u gebruikers- of groepsidentiteitskaart van Adobe IMS (Adobe Identity Management Services) gebruiken om de rollen op activa in de mening van Admin van Experience Manager te plaatsen, voor het beveiligen van levering en onderzoekservaring? {#set-roles-secure-delivery-search}
 
-Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=nl-NL).
+Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
 
 ## Kunt u meerdere elementen tegelijk in een map goedkeuren? {#approve-multiple-assets-in-folder}
@@ -133,9 +133,9 @@ De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tusse
 
 ## Sommige bepalingen zijn gemarkeerd als Beperkte Beschikbaarheid. Hoe kan ik ze gaan gebruiken? {#use-limited-availability-modifiers}
 
-Om het productiegebruik van modifiers in Beperkte Beschikbaarheid op uw rekening toe te laten:
+Om het productiegebruik van [ bepalingen in Beperkte Beschikbaarheid ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) op uw rekening toe te laten:
 
-1. [ creeer een geval van de Steun van Adobe gebruikend Admin Console ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
+1. [ creeer een geval van de Steun van Adobe gebruikend Admin Console ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 1. Vermeld de volgende details in de Adobe Support-zaak:
 
