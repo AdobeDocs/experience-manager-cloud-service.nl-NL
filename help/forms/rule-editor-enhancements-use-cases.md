@@ -4,7 +4,9 @@ description: In dit artikel worden verschillende gebruiksgevallen voor de regele
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 4ff533de73fcb91fb2b68cfdb3fd2602645ff7aa
+hide: true
+hidefromtoc: true
+source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Verbeteringen in de regeleditor en hoofdletters/kleine letters gebruiken
 
-<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>.
+<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>.
 
 Dit artikel introduceert de meest recente verbeteringen aan de regeleditor in Adaptive Forms. Deze updates zijn ontworpen om u te helpen formuliergedrag gemakkelijker te definiëren, zonder aangepaste code te schrijven, en om een dynamischere, responsieve en gepersonaliseerde formulierervaring te maken.
 
@@ -169,7 +171,7 @@ Adaptieve Forms ondersteunt dynamische regeluitvoering met behulp van externe pa
 | Type parameter | Ondersteunde opties | Beschrijving | Voorbeeldwaarde |
 | --- | --- | --- | ---|
 | Query-parameter | `ref` (alleen tekenreekswaarden) | Algemeen sleutelwaardepaar in URL na `?` | `?ref=partner123` |
-| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1&rbrace; UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
+| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1} UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
 | URL-parameter | Hostnaam <br> Weg | Hiermee worden structurele componenten van de formulier-URL opgehaald | `hostname=www.example.com`, `path=/signup` |
 | Browserparameter | Browser van de Agent van de Agent <br> Browser Taal <br> Browser Platform | Waarden afgeleid van de browser of het apparaat van de gebruiker | `Browser Agent=Mozilla`, `Language=en-US` |
 
