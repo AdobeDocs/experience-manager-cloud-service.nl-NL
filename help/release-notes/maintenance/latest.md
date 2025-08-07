@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21772 samengevat, die op 6 augustus 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21706.
 
-De activering van de 2025.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Nieuwe functies  {#new-features-21772}
 
@@ -131,7 +131,7 @@ De activering van de 2025.8.0-functie biedt de volledige functie die is ingestel
 
 ### Bekende problemen {#known-issues-21772}
 
-* SITES-31791: Content Fragments GraphQL - Query mislukt met &quot;Maximum aantal velden overschreden&quot;. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
+* SITES-31791: Content Fragments GraphQL - Query mislukt met &quot;Maximum aantal velden overschreden&quot;. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-27231).
 
 ### Verouderde functies en API&#39;s {#deprecated-21772}
 
@@ -150,4 +150,4 @@ AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en pre
 | AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2,4,63 | [ Apache Httpd 2.4.63 ](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM-kerncomponenten | 2 29,0 | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
