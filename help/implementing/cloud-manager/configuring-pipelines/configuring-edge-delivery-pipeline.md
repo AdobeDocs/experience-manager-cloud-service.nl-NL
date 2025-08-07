@@ -6,28 +6,27 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private bèta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-hide: true
-hidefromtoc: true
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+hide: false
+hidefromtoc: false
+source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
-
 
 
 # Een Edge Delivery-pijpleiding toevoegen {#configure-production-pipeline}
 
 Leer hoe u Edge Delivery-pijpleidingen configureert voor het maken en implementeren van uw code in productieomgevingen. Een productiepijpleiding stelt code eerst aan het werkgebiedmilieu op. Bij goedkeuring, stelt het de zelfde code aan het productiemilieu op.
 
-Een gebruiker moet de [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0&rbrace; om productiepijpleidingen te vormen.**
+Een gebruiker moet de **[rol hebben van de Manager van de Plaatsing 0} om productiepijpleidingen te vormen.](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**
 
 >[!NOTE]
 >
->Een productiepijplijn kan pas worden aangelegd nadat het volgende is gebeurd:
+>Een pijpleiding van Edge Delivery kan niet worden gevormd tot het volgende is gebeurd:
 >
->* Het programma wordt gemaakt.
+>* Er wordt een programma gemaakt dat één Edge Delivery Services-site en één toegewezen domein bevat. Anders, voegt de optie **de Pijpleiding van Edge Delivery** toe verschijnt gehandicapt in het gebruikersinterface, en tooltip verklaart ontbrekende vereisten. <!-- CMGR‑69680 -->
 >* De Git-opslagplaats heeft minstens één vertakking.
 >* De productie- en staging-omgevingen worden gemaakt.
 
@@ -35,47 +34,56 @@ Alvorens u begint om uw code op te stellen, vorm uw pijpleidingsmontages van [!U
 
 >[!NOTE]
 >
->U kunt [ pijpleidingsmontages ](managing-pipelines.md) na de aanvankelijke opstelling uitgeven.
+>U kunt [ pijpleidingsmontages ](managing-pipelines.md) na de aanvankelijke configuratie uitgeven.
 
-## Een nieuwe Edge Delivery-pijpleiding toevoegen {#adding-production-pipeline}
+**om een pijpleiding van Edge Delivery toe te voegen:**
 
-Zodra u opstelling uw programma hebt en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI heeft, bent u bereid om een productiepijplijn toe te voegen door deze stappen te volgen.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de organisatie u wilt.
 
->[!TIP]
->
->Alvorens u een front-end pijpleiding vormt, zie de [ Reis van de Aanmaak van de Plaats van AEM Snelle ](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken hulpmiddel van de Aanmaak van de Plaats van AEM Snelle. Deze reis kan u helpen de front-end ontwikkeling van uw Plaats van AEM stroomlijnen, die u uw plaats met geen AEM achterste-eindkennis laat snel aanpassen.
+1. Voor **Mijn pagina van Programma&#39;s**, selecteer het programma u wilt.
 
-**om een nieuwe pijpleiding van Edge Delivery toe te voegen:**
+   ![ Mijn programmapagina in Cloud Manager ](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
+1. Voer een van de volgende handelingen uit:
 
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+   * **voeg een pijpleiding van Edge Delivery van de kaart van Pijpleidingen toe**
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik **toevoegen** om **te selecteren voeg de Pijpleiding van de Productie** toe.
+      1. In het linkerspoor, onder **Programma**, klik **![pictogram van het Overzicht ](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [ Overzicht](/help/implementing/cloud-manager/navigation.md#my-programs)**.
+      1. Op de **pagina van het Overzicht van het 0} Programma, onder de** Pijpleidingen **kaart, klik** plus teken **![toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg), dan uitgezocht** voeg de Pijpleiding van Edge Delivery toe **.**
 
-   ![ de kaart van Pijpleidingen op het overzicht van de Manager van het Programma ](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+         ![ de kaart van Pijpleidingen op de pagina van het Overzicht van het Programma ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
-1. **voegt de vertoningen van de de dialoogdoos van de Pijpleiding van de Productie** toe. Verstrek de Naam van de a **Pijpleiding** om uw pijpleiding samen met de volgende opties te identificeren. Klik **verdergaan**.
+   * **voeg een pijpleiding van Edge Delivery van de pagina van Pijpleidingen toe**
 
-   **Trigger van de Plaatsing** - u hebt de volgende opties wanneer het bepalen van de plaatsingstrekkers om de pijpleiding te beginnen.
+      1. In het linkerspoor, onder **Programma**, klik **![pictogram van het Werkschema of het pictogram van Pijpleidingen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pijpleidingen**.
+      1. Voor de pagina van Pijpleidingen, dichtbij de hoger-juiste hoek, klik **toevoegen Pijpleiding** > **voeg de Pijpleiding van Edge Delivery** toe.
 
-   * **Handboek** - Begin manueel de pijpleiding.
-   * **op de Veranderingen van het Git** - begint de pijpleiding CI/CD wanneer de bemoeienis aan de gevormde tak van het Git wordt toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
+         ![ de pagina van Pijpleidingen met Add knoop van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
-   **Belangrijk Metrisch Gedrag van Mislukt** - tijdens pijpleidingsopstelling of geef uit, heeft de **Manager van de Plaatsing** de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet. De beschikbare opties zijn:
+1. In **voeg de dialoogdoos van de Pijpleiding van Edge Delivery** toe, op het **de tekstgebied van de Naam van de Pijpleiding**, typ een beschrijvend pijpleidingsetiket.
 
-   * **vraag telkens als** - Gebrek het plaatsen. Het vereist handmatige ingrepen in elke belangrijke mislukking.
-   * **onmiddellijk het Eindigen** - als geselecteerd, wordt de pijpleiding geannuleerd wanneer een belangrijke mislukking voorkomt. Dit proces emuleert in wezen een gebruiker manueel die elke mislukking verwerpt.
-   * **gaat onmiddellijk** - als geselecteerd voort, gaat de pijpleiding automatisch wanneer een belangrijke mislukking voorkomt. Dit proces emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+   ![ voeg de dialoogdoos van de Pijpleiding van Edge Delivery toe ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-   ![ de pijpleidingsconfiguratie van de Productie ](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
+1. Selecteer de optie van de trekker van de Plaatsing van de pijpleiding **** u wilt.
 
-1. Op het **lusje van de Code van Source**, selecteer welk type van code de pijpleiding zou moeten verwerken.
+   * **Hand** - u begint de plaatsing.
+   * **op de Veranderingen van het Git** - het begin van het Git de plaatsing automatisch. Met deze optie, kunt u de pijpleiding nog manueel, indien nodig beginnen.
 
-   * **[vorm een volledige pijpleiding van de stapelcode](#full-stack-code)**
-   * **[vorm een gerichte plaatsingspijpleiding](#targeted-deployment)**
+1. Klik **verdergaan**.
 
-Zie [ CI/CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over de types van pijpleidingen.
+1. Onder **Code van Source**, plaats de volgende opties:
 
-De stappen om de verwezenlijking van uw productiepijplijn te voltooien variëren afhankelijk van het type van broncode u selecteerde. Volg de verbindingen hierboven om aan de volgende sectie van dit document te springen zodat kunt u de configuratie van uw pijpleiding voltooien.
+   * **Milieu van de Plaatsing** - toont het gebied van het doelmilieu; blijft read-only.
 
+   * **Bewaarplaats** - gebruik de drop-down lijst om de pijpleiding bij de nauwkeurige bewaarplaats van het Git te richten die de configuratie van Edge Delivery opslaat.
+
+     Zie ook [ bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) toevoegen en beheren om te leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+
+   * **de Tak van de Git** - gebruik de drop-down lijst om een specifieke tak binnen de gekozen bewaarplaats te selecteren. Indien noodzakelijk, klik ![ pictogram van de Recycling of verfrissen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om de de takdrop-down lijst van de Plaats na recente duwen opnieuw te laden
+   * **Plaats van de Code** - bepaalt de omslagweg binnen de bewaarplaats waar de pijpleiding-klaar code begint ( `/` evenaart de bewaarplaatswortel).
+
+   ![ Config pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
+
+1. Klik **sparen**.
+
+U kunt nu [ uw pijpleiding ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** of van de **pagina van de Pijpleidingen** beheren.
