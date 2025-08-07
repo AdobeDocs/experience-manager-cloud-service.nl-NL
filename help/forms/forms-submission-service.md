@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
@@ -98,11 +98,11 @@ Kies een van de ondersteunde platforms:
 
 - **geeft toestemmingen** voor het doelspreadsheet uit
 - **delend mogelijkheden** om toegang tot `forms@adobe.com` te verlenen
-- **toestemmingen van de generatie van de verbinding 0&rbrace; &lbrace;voor uw gekozen platform**
+- **toestemmingen van de generatie van de verbinding 0} {voor uw gekozen platform**
 
 >[!TIP]
 >
->**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
+>**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
 
 ## Configuratiemethoden
 
@@ -119,7 +119,7 @@ De Forms-verzendservice biedt twee configuratiemethoden. Kies de methode die het
 
 Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-projectstichting gereed is:
 
-1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Update`fstab.yaml`** in uw projectwortel:
 
@@ -148,7 +148,7 @@ Maak uw formulierstructuur met Google Sheets of Microsoft Excel.
 1. **open uw spreadsheetplatform** (Google Bladen of Microsoft Excel)
 2. **creeer een nieuw spreadsheet** voor uw vormproject
 3. **Naam uw blad** (moet of `helix-default` of `shared-aem` zijn)
-4. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ de Definitie van de Vorm ](/help/forms/assets/form-submission-definition.png)
 *Voorbeeld: De definitie van de vorm met gebiedstypes, etiketten, en bevestigingsregels*
@@ -217,8 +217,8 @@ Bied de Adobe Forms-verzendservice toegang tot uw spreadsheet.
 3. **verzend de het delen uitnodiging**
 4. **exemplaar de spreadsheetverbinding** voor de volgende stap
 
-![ Aankomend blad van het Aandeel ](/help/forms/assets/form-submission-share-incoming.png)
-*Stap-voor-stap het delen proces voor het verlenen van de de diensttoegang van Adobe*
+   ![ Aankomend blad van het Aandeel ](/help/forms/assets/form-submission-share-incoming.png)
+   *geleidelijke het delen proces voor het verlenen van de diensttoegang van Adobe*
 
 **Platform-Specifieke Instructies:**
 
@@ -234,8 +234,8 @@ Bied de Adobe Forms-verzendservice toegang tot uw spreadsheet.
 - Koppeling delen instellen op &quot;Iedereen met de koppeling kan bewerken&quot;
 - De URL voor delen kopiëren
 
-![ verbinding van het Exemplaar van inkomend blad ](/help/forms/assets/form-submission-copy-link.png)
-*Voorbeeld: Het kopiëren van de shareable verbinding voor vormconfiguratie*
+  ![ verbinding van het Exemplaar van inkomend blad ](/help/forms/assets/form-submission-copy-link.png)
+  *Voorbeeld: Het kopiëren van de shareable verbinding voor vormconfiguratie*
 
 **Controlepunt van de Bevestiging:**
 
@@ -254,8 +254,8 @@ Koppel uw formulierdefinitie aan het verzendwerkblad.
 3. **plak de gekopieerde spreadsheetverbinding** in de **kolom van de Actie** voor het Submit gebied
 4. **sparen de veranderingen** aan uw vormdefinitie
 
-![ Verbinding een spreadsheet ](/help/forms/assets/form-submission-sheet-linking.png)
-*Voorbeeld: Het verbinden van verzendt actie aan uw spreadsheet van de gegevensinzameling*
+   ![ Verbinding een spreadsheet ](/help/forms/assets/form-submission-sheet-linking.png)
+   *Voorbeeld: Verbindend voorlegt actie aan uw spreadsheet van de gegevensinzameling*
 
 **het Publiceren van Uw Vorm:**
 
@@ -337,29 +337,29 @@ Postman biedt een gebruikersvriendelijke interface voor het testen van API-verze
 
 **Configuratie van het verzoek:**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+     &quot;json 
+https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
-Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+Kopteksten:
+Inhoudstype: application/json
+x-adobe-routing: tier=live, bucket=main-your-repo-your-org
 
-Body (JSON):
+Lichaam (JSON):
 {
-    "data": {
-        "startDate": "2025-01-10",
-        "endDate": "2025-01-25",
-        "destination": "Australia",
-        "class": "First Class",
-        "budget": "2000",
-        "amount": "1000000",
-        "name": "Mary",
-        "age": "35",
-        "subscribe": null,
-        "email": "mary@gmail.com"
-    }
+&quot;data&quot;: {
+&quot;startDate&quot;: &quot;2025-01-10&quot;,
+&quot;endDate&quot;: &quot;2025-01-25&quot;,
+&quot;bestemming&quot;: &quot;Australië&quot;,
+&quot;class&quot;: &quot;First Class&quot;,
+&quot;budget&quot;: &quot;2000&quot;,
+&quot;bedrag&quot;: &quot;1000000&quot;,
+&quot;name&quot;: &quot;Mary&quot;,
+&quot;leeftijd&quot;: &quot;35&quot;,
+&quot;subscribe&quot;: null,
+&quot;email&quot;: &quot;mary@gmail.com&quot;
 }
-```
+}
+&quot;
 
 **Verwachte Reactie:**
 
@@ -387,29 +387,29 @@ Vervang de volgende plaatsaanduidingen in de onderstaande opdrachten:
 
 ```bash
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
-  --header "Content-Type: application/json" \
+    --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-  --data '{
-    "data": {
-      "startDate": "2025-01-10",
-      "endDate": "2025-01-25",
-      "destination": "Australia",
-      "class": "First Class",
-      "budget": "2000",
-      "amount": "1000000",
-      "name": "Joe",
-      "age": "35",
-      "subscribe": null,
+    --data '{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Joe",
+            "age": "35",
+            "subscribe": null,
       "email": "joe@example.com"
-    }
-  }'
-```
+                }
+            }'
+        ```
 
->[!TAB  de Herinnering van het Bevel van Vensters ]
-
+>[!TAB Windows Command Prompt]
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
-  --header "Content-Type: application/json" ^
+    --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
 ```
@@ -436,13 +436,13 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
-### API Reactie en verificatie
+### API Response & Verification
 
-**Succesvolle Reactie:**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -530,7 +530,7 @@ Nu u de gevormde Dienst van de Verzending van Forms hebt, onderzoek deze verwant
 
 ### **verbeter Uw Forms**
 
-- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
+- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
 - **[Gids van de Componenten van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - onderzoek beschikbare types van vormgebied
 
 ### **Alternatieve Methoden van de Verzending**

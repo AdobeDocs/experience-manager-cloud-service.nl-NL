@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Voordat u begint, moet u het volgende doen:
 
 >[!TIP]
 >
-> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL) wordt.
+> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html) wordt.
 
 ## Pad A: Nieuw project maken met Forms
 
@@ -182,8 +182,8 @@ Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgev
 
 **Bevestig Bevestiging:** bevestig uw verbinding van de bewaarplaats GitHub aan AEM.
 
->[!NOTE]
->
+    >[!NOTE] 
+    > 
 >Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
 +++
@@ -399,11 +399,11 @@ Laten we elke stap doorlopen:
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **Update.eslintrc.js**
@@ -641,14 +641,14 @@ Nu u een werkformulier hebt, kunt u:
 
 Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
 
-+++ AEM CLI en lokale ontwikkeling instellen
+++ AEM CLI en lokale ontwikkeling instellen
 
 1. **installeer AEM CLI**
 
    De AEM CLI vereenvoudigt lokale ontwikkelingstaken:
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **Kloon uw bewaarplaats**
