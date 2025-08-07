@@ -190,10 +190,10 @@ Voer de volgende stappen uit om een adaptief formulier te maken dat is geschreve
 
      >[!NOTE]
      >
-     >* Als u niet het pictogram van Gegevensbronnen in uw Universele interface van de Redacteur ziet of het bezit van de Verwijzing in het juiste bezitspaneel binden, laat de **uitbreiding van de 0} Gegevensbron {in Extension Manager toe.**
-     >* Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+     >* Als u niet het pictogram van Gegevensbronnen in uw Universele interface van de Redacteur ziet of het bezit van de Verwijzing in het juiste bezitspaneel binden, laat de **uitbreiding van de 0&rbrace; Gegevensbron &lbrace;in Extension Manager toe.**
+     >* Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
      > 
-     > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+     > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
    De prefill-service voor formulieren in de Universal Editor wordt momenteel niet ondersteund.
 

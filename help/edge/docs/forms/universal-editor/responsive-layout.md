@@ -74,7 +74,7 @@ Door uw formulieren op verschillende apparaten te testen, kunt u problemen die o
 
 **Stap 3: De Oriëntaties van het Apparaat van de test**
 
-Gebruik het **pictogram van de Rotator van het 1} Scherm** om allebei te testen:
+Gebruik het **pictogram van de Rotator van het 1&rbrace; Scherm** om allebei te testen:
 
 - **Staand wijze**: Standaard mobiele richtlijn
 - **Liggende wijze**: Geroteerde tablet of telefoonmening
