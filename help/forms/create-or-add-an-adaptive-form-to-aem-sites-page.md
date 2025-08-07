@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -41,7 +41,7 @@ Als u in het verleden adaptieve Forms Foundation Component of gewone HTML-formul
 * **het Tags toevoegen:** de pagina&#39;s van AEM Sites staan u toe [ markeringen of etiketten aan een pagina, een activa, of andere inhoud ](/help/implementing/developing/introduction/tagging-framework.md) toe. Tags zijn trefwoorden of metagegevenslabels waarmee u inhoud kunt indelen en indelen op basis van specifieke criteria. U kunt een of meer tags toewijzen aan pagina&#39;s, elementen of andere inhoud in AEM om de zoekopdracht te verbeteren en de elementen te categoriseren.
 * **het Vergrendelen en Ontgrendelen van inhoud:** AEM Sites staat gebruikers toe om [ toegang en wijzigingen aan pagina&#39;s ](/help/sites-cloud/authoring/page-editor/edit-content.md) binnen het milieu van AEM Sites te controleren. Wanneer een pagina is vergrendeld, betekent dit dat deze is beveiligd tegen onbevoegde wijzigingen of bewerkingen door andere gebruikers. Alleen de gebruiker die de inhoud heeft vergrendeld of een aangewezen beheerder kan deze ontgrendelen om wijzigingen toe te staan.
 
-Bovendien gebruikt de Aanpassings Forms in de Redacteur van de Pagina van AEM [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Deze Componenten van Kern verstrekken een standaard en gemakkelijkere methodes om de componenten te stileren en aan te passen, identiek aan [ de Componenten van AEM Sites WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+Bovendien gebruikt de Aanpassings Forms in de Redacteur van de Pagina van AEM [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL#features). Deze Componenten van Kern verstrekken een standaard en gemakkelijkere methodes om de componenten te stileren en aan te passen, identiek aan [ de Componenten van AEM Sites WCM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
 
 
 ## Hoe maakt u een adaptief formulier of voegt u dit toe aan een AEM Sites-pagina of AEM Experience-fragment? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -80,7 +80,7 @@ Zorg ervoor dat de [ Aangepaste Componenten van de Kern van Forms voor uw milieu
 
 Om volledige functionaliteit van de Adaptive Forms Container component toe te laten, voeg de Customheaderlibs en Customfooterlibs cliëntbibliotheken aan uw AEM Sites pagina toe gebruikend de plaatsingspijpleiding. De bibliotheken toevoegen:
 
-1. De toegang en kloon uw [ Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. De toegang en kloon uw [ Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=nl-NL).
 1. Open de map AEM Cloud Service Git Repository in een abonnementsteksteditor. Bijvoorbeeld Microsoft Visual Code.
 1. Open het bestand `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` en voeg de volgende code toe aan het bestand:
 
@@ -119,7 +119,7 @@ Om volledige functionaliteit van de Adaptive Forms Container component toe te la
        </sly> 
    ```
 
-1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
+1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=nl-NL) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
 
 ### Adaptieve Forms-container inschakelen voor uw AEM Sites-pagina of Experience-fragment
 

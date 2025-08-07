@@ -148,8 +148,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 ### Stap 3: Filter Referrer configureren
 
@@ -196,7 +196,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 ## Fase 3: Toegang tot uw gepubliceerde formulier
 

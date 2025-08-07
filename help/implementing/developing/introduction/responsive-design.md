@@ -85,7 +85,7 @@ Het [ WKND leerprogramma ](develop-wknd-tutorial.md) gebruikt deze strategie om 
 
 ### Mediaquery&#39;s gebruiken met AEM-pagina&#39;s {#using-media-queries-with-aem-pages}
 
-[ het WKND steekproefproject ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruiken de [ Component van de Kern van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), die de clientlibs via het paginabeleid omvat.
+[ het WKND steekproefproject ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) gebruiken de [ Component van de Kern van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=nl-NL), die de clientlibs via het paginabeleid omvat.
 
 Als uw eigen paginacomponent niet op de Component van de Kern van de Pagina wordt gebaseerd, kunt u de omslag van de cliëntbibliotheek in het manuscript van HTML of JSP van het ook omvatten. Als u dit doet, wordt het CSS-bestand gegenereerd en wordt ernaar verwezen met de mediaquery&#39;s die nodig zijn om het responsieve raster te laten werken.
 
@@ -135,10 +135,10 @@ Apparaatgroepknooppunten bevinden zich in de map `/etc/mobile/groups` .
 
 Responsieve pagina&#39;s worden dynamisch aangepast aan het apparaat waarop ze worden weergegeven en bieden een betere gebruikerservaring. Het is echter ook belangrijk dat elementen zijn geoptimaliseerd voor het onderbrekingspunt en het apparaat om de laadtijd van de pagina te minimaliseren.
 
-[ de Component van het Beeld van de Component van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) eigenschappen zoals adaptieve beeldselectie.
+[ de Component van het Beeld van de Component van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL) eigenschappen zoals adaptieve beeldselectie.
 
-* Door gebrek, gebruikt de Component van het Beeld de [ Aangepaste Servlet van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) om de juiste vertoning te leveren.
-* [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) is ook beschikbaar via eenvoudige checkbox in zijn beleid, dat beeldactiva van DAM in formaat WebP levert en de downloadgrootte van een beeld met ongeveer 25% gemiddeld kan verminderen.
+* Door gebrek, gebruikt de Component van het Beeld de [ Aangepaste Servlet van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=nl-NL) om de juiste vertoning te leveren.
+* [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=nl-NL) is ook beschikbaar via eenvoudige checkbox in zijn beleid, dat beeldactiva van DAM in formaat WebP levert en de downloadgrootte van een beeld met ongeveer 25% gemiddeld kan verminderen.
 
 ## De container voor lay-out {#layout-container}
 

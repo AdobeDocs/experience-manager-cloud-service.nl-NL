@@ -171,7 +171,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 **Stappen van de Implementatie:**
 
-1. Gebruik de [ Component van het Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+1. Gebruik de [ Component van het Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 2. Groepeer verwante velden in elk deelvenster.
 3. Voeg duidelijke koppen toe voor elke sectie.
 4. Zorg voor voldoende ruimte tussen deelvensters.
@@ -204,7 +204,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 **Stappen van de Implementatie:**
 
-1. Gebruik de [ Component van de Tovenaar ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+1. Gebruik de [ Component van de Tovenaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 2. Complexe formulieren onderbrengen in logische stappen (3-7 stappen zijn optimaal).
 3. Voeg voortgangsindicatoren toe voor de gebruikersierichting.
 4. Zorg voor duidelijke besturingselementen voor navigatie (Volgende, Vorige, Opslaan).
@@ -244,7 +244,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 **Stappen van de Implementatie:**
 
-1. Gebruik de [ Component van de Accordeon ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+1. Gebruik de [ Component van de Accordeon ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 2. Groepeer gerelateerde optionele inhoud in elke sectie.
 3. Gebruik beschrijvende sectiekoppen.
 4. Stel de juiste open/gesloten standaardstatussen in.
