@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
@@ -177,11 +177,20 @@ Als beheerder past u uw [!DNL Content Hub] -portal aan uw vereisten voor brandin
 ![ teruggestelde gebrek ](/help/assets/assets/reset-default-content-hub.png)
 Voor ![ het Branding ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** paginanummer gebruikt **[!UICONTROL Banner]**, **[!UICONTROL Colors]** en **[!UICONTROL Banner image]** secties om de volgende aanpassingen uit te voeren:
 
+1. [De afbeelding van het logo wijzigen vanuit de sectie [!UICONTROL Logo image]](#Change-the-logo-image)
 1. [De bannerafbeelding wijzigen vanuit de sectie [!UICONTROL Banner image]](#Change-the-banner-image)
 1. [Werk de titel en de platte tekst op de banner bij en wijzig de tekstkleur vanuit de sectie [!UICONTROL Banner] .](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [ verander de primaire en secundaire kleur van de [!UICONTROL Colors] sectie om een kleurenregeling toe te passen die zich op het thema van uw merk ](#Change-the-primary-and-secondary-color) richt
 
 Selecteer de optie **[!UICONTROL Reset Defaults]** om uw wijzigingen terug te draaien en het standaardthema te herstellen.
+
+#### De afbeelding van het logo wijzigen{#change-the-logo-image}
+
+Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** pagina, voer de volgende stappen uit om het embleembeeld van uw [!DNL Content Hub] plaatsing te veranderen:
+
+1. Klik ![ uitgezochte beeld ](/help/assets/assets/Browse.svg) **[!UICONTROL Select Image]** om een embleembeeld te selecteren gebruikend de doos van de activaselecteur. De elementenkiezer geeft alleen goedgekeurde afbeeldingen weer.
+1. Selecteer de afbeelding, klik op **[!UICONTROL Select]** en klik vervolgens op **[!UICONTROL Save]** om deze weer te geven als de logoafbeelding van uw [!DNL Content Hub] -implementatie.
+   ![ bannerbeeld ](/help/assets/assets/logo-image-content-hub1.png)
 
 #### De bannerafbeelding wijzigen{#Change-the-banner-image}
 
@@ -190,6 +199,12 @@ Voor de ![ Brandende ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Brand
 1. Klik ![ uitgezochte beeld ](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** om een bannerbeeld te selecteren gebruikend de doos van de activaselecteur. De elementenkiezer geeft alleen goedgekeurde afbeeldingen weer.
 1. Selecteer de afbeelding, klik op **[!UICONTROL Select]** en klik vervolgens op **[!UICONTROL Save]** om deze weer te geven als de bannerafbeelding van uw [!DNL Content Hub] -implementatie.
    ![ bannerbeeld ](/help/assets/assets/banner-image-content-hub1.png)
+
+>[!NOTE]
+>
+> * De geadviseerde grootte voor **Beeld van de Banner** is `height = 200 to 450px` en `width = 1920 to 2560px`.
+> * De geadviseerde grootte voor **Beeld van het Logo** is `height = 80 to 120px` en `width = 120 to 200px`.
+> * De **gesteunde types MIME** voor zowel Banner als beelden van het Logo zijn `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`.
 
 #### Voeg titel en lichaamstekst aan uw banner toe en verander de tekstkleur{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -233,7 +248,7 @@ Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hu
 
 ### Uitvoeringen {#renditions-content-hub}
 
-Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Voer daartoe de volgende stappen uit:
 
