@@ -1,381 +1,784 @@
 ---
-title: Aan de slag met Edge Delivery Services for AEM Forms in de Universal Editor - Zelfstudie voor ontwikkelaars
-description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Over tien tot twintig minuten hebt u uw eigen Edge Delivery Services Forms gemaakt in de Universal Editor.
+title: Aan de slag met Edge Delivery Services for AEM Forms met de Universal Editor
+description: Leer hoe u krachtige formulieren maakt en publiceert met Edge Delivery Services en de WYSIWYG-authoring van Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
 
 
-# Aan de slag met Edge Delivery Services for AEM Forms met Universal Editor (WYSIWYG)
+# Aan de slag met Edge Delivery Services for AEM Forms met de Universal Editor
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| Universal Editor-gebaseerde authoring | Dit artikel |
-| Authoring op basis van documenten | [ klik hier ](/help/edge/docs/forms/tutorial.md) |
+| Ontwerpmethode | Hulplijn |
+|---------------------------------|-----------------------------------------------------------------------|
+| **Universele Redacteur (WYSIWYG)** | Dit artikel |
+| **op document-gebaseerde Authoring** | [ op document-Gebaseerde leerprogramma ](/help/edge/docs/forms/tutorial.md) |
 
+Edge Delivery Services for AEM Forms combineert krachtige webservices met WYSIWYG authoring in Universal Editor. In deze handleiding vindt u het maken, aanpassen en publiceren van formulieren die snel worden geladen.
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail van uw officieel adres naar <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a> met uw GitHub organisatienaam en bewaarplaatsnaam. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+## Wat u gaat bereiken
 
-In het huidige digitale tijdperk zijn gebruikersvriendelijke formulieren essentieel voor alle organisaties. Edge Delivery Services Forms wordt gemaakt met de Universal Editor, die WYSIWYG-mogelijkheden (what-you-see-is-what-you-get) biedt. Het biedt een moderne, intuïtieve interface voor efficiënt ontwerpen van formulieren.
+Aan het einde van deze zelfstudie gaat u als volgt te werk:
 
-AEM Forms biedt een blok, het Adaptive Forms Block, waarmee u eenvoudig Edge Delivery Services Forms kunt maken om gegevens vast te leggen en op te slaan. U kunt [ een nieuw Project van AEM tot stand brengen dat met het AanpassingsBlok van Forms ](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) wordt gevormd of [ het Aangepaste Blok van Forms aan een bestaand Project van AEM ](#add-adaptive-forms-block-to-your-existing-aem-project) toevoegt.
+- Een GitHub-opslagplaats instellen met het Adaptive Forms Block
+- Een AEM-site maken die is geïntegreerd met Edge Delivery Services
+- Formulieren maken en publiceren met de Universal Editor
+- Lokale ontwikkelomgeving configureren
 
-![ Github het Werkschema van de Bewaarplaats ](/help/edge/assets/repo-workflow.png){width=auto}
+## Kies uw pad
 
-Deze zelfstudie begeleidt u bij het maken, voorvertonen en publiceren van uw eigen formulier met een nieuw of bestaand Adobe Experience Manager Site-project met behulp van de WYSIWYG-authoring van Universal Editor.
+Selecteer de benadering die uw scenario aanpast:
+
+![ kies Uw Gids van het Besluit van de Weg ](/help/edge/docs/forms/universal-editor/assets/choose-your-path.svg)
+*Figuur: Visuele gids om u te helpen de juiste implementatieweg* kiezen
+
+| **Weg A: Nieuw Project** | **Weg B: Bestaand Project** |
+|----------------------------------------|-------------------------------------------|
+| Begin met een vooraf geconfigureerde sjabloon | Formulieren toevoegen aan uw huidige AEM-project |
+| **Best voor:** Nieuwe implementaties | **Best voor:** Bestaande AEM Sites |
+| **wat u krijgt:** Vooraf gevormd Blok van Forms | **wat u krijgt:** Forms die aan bestaande plaats wordt toegevoegd |
+| **Stappen:** Malplaatje → Opstelling → Forms | **Stappen:** integratie → Configuratie → Forms |
+| [ Begin met Weg A ](#path-a-create-new-project-with-forms) | [ Begin met Weg B ](#path-b-add-forms-to-existing-project) |
 
 ## Vereisten
 
-* U hebt een rekening GitHub, en begrijpt de grondbeginselen van het Git.
-* U begrijpt de basisbeginselen van HTML, CSS en JavaScript.
-* Node/npm is geïnstalleerd voor lokale ontwikkeling.
+Voordat u begint, moet u het volgende doen:
 
-## Een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block
+### Vereiste toegang
 
-Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM-project dat vooraf is geconfigureerd met het Adaptive Forms Block. Dit is de snelste en eenvoudigste manier om de beste praktijken van AEM te volgen en meteen uw formulieren samen te stellen.
+- **GitHub rekening** met toestemming om bewaarplaatsen tot stand te brengen
+- **AEM as a Cloud Service** auteurstoegang
 
-### Aan de slag met de AEM Forms boilerplate-opslagsjabloon
+### Technische vereisten
 
-1. Creeer een bewaarplaats GitHub voor uw Project van AEM. Opslagplaats maken:
-   1. Ga naar [ https://github.com/adobe-rnd/aem-boilerplate-forms ](https://github.com/adobe-rnd/aem-boilerplate-forms).
+- **de grondbeginselen van de Git**: kloon, begaat, duw verrichtingen
+- **de technologieën van het Web**: HTML, CSS, de grondbeginselen van JavaScript
+- **Node.js** (versie 16+ geadviseerd) voor lokale ontwikkeling
+- **npm** of **garen** pakketmanager
 
-      ![ AEM Forms Boilerplate ](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
-   1. Klik het **Gebruik deze malplaatje** optie en selecteer **creeer een nieuwe bewaarplaats** optie.
+### Aanbevolen kennis
 
-      ![ creeer nieuwe bewaarplaats gebruikend AEM Forms Boilerplate ](/help/edge/docs/forms/assets/use-eds-form-template.png)
+- Basisbegrip van AEM Sites-concepten
+- Kennis van de beginselen van het formulierontwerp
+- Ervaring met WYSIWYG-editors
 
-      **creeer een nieuwe bewaarplaats** scherm opent.
+>[!TIP]
+>
+> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html) wordt.
 
-   1. Op **creeer een nieuwe bewaarplaats** scherm, selecteer de **eigenaar**, en specificeer **Naam van de Bewaarplaats**. Adobe adviseert om de bewaarplaats aan **Openbaar** te plaatsen. Zo, selecteer de **openbare** optie, en klik **creeer Bewaarplaats**.
+## Pad A: Nieuw project maken met Forms
 
-      ![ plaats de bewaarplaats aan openbaar ](/help/edge/docs/forms/assets/name-eds-repo.png)
+**Best voor:** Nieuwe implementaties of bewijs-van-concepten
 
-1. Installeer de AEM Code Sync GitHub App in uw repository. Installeren:
-   1. Ga naar [ https://github.com/apps/aem-code-sync/installations/new ](https://github.com/apps/aem-code-sync/installations/new).
-   1. Op **installeer het scherm van de Synchronisatie van de Code van AEM**, selecteer **slechts de optie van Bewaarplaatsen** en selecteer uw pas gecreëerde bewaarplaats. Klik **sparen**.
+De AEM Forms Boilerplate biedt een vooraf geconfigureerde sjabloon met een geïntegreerd adaptief Forms Block.
 
-   ![ plaats de bewaarplaats aan openbaar ](/help/edge/docs/forms/assets/aem-code-sync-up.png)
+### Overzicht van stappen
 
-1. Koppel nu de GitHub-opslagplaats die u met AEM Forms Boilerplate hebt gemaakt aan uw AEM Project-ontwerpomgeving. Verbinding maken:
+1. Opstelling een bewaarplaats van GitHub van het malplaatje
+2. AEM Code Sync installeren
+3. AEM-projectverbinding configureren
+4. Een AEM-site maken en publiceren
+5. Formulieren toevoegen met de Universal Editor
 
-   1. Ga naar de bewaarplaats GitHub die u eerder gebruikend AEM Forms Boilerplate creeerde.
-   1. Voeg het {**dossier 0} fstab.yaml in de wortelomslag toe.**
+Laten we elke stap doorlopen:
 
-      ![ open fstab.yaml- dossier ](/help/edge/docs/forms/assets/open-fstab.png)
++++Stap 1: Create GitHub Repository from Template
 
-   1. Voeg het bergpunt van uw project aan het {**dossier 0} fstab.yaml toe.** Voeg de URL van uw AEM as a Cloud Service-ontwerpinstantie toe.
+1. **heb toegang tot het malplaatje van AEM Forms Boilerplate**
+   - Ga naar [ https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)
 
-      `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
+   ![ AEM Forms Boilerplate Malplaatje ](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
+   *Cijfer: AEM Forms Boilerplate bewaarplaats met vooraf gevormd Adaptief Blok van Forms*
 
-      ![ geef fstab.yaml- dossier uit ](/help/edge/docs/forms/assets/edit-fstab-file.png)
+2. **creeer uw bewaarplaats**
+   - Klik **Gebruik dit malplaatje** > **creeer een nieuwe bewaarplaats**
 
-   1. Leg het {**dossier 0} fstab.yaml vast, zodra u de verwijzing hebt toegevoegd en alles ziet er goed uit.**
+   ![ creeer Bewaarplaats van Malplaatje ](/help/edge/docs/forms/assets/use-eds-form-template.png)
+   *Cijfer: Gebruikend het malplaatje om een nieuwe bewaarplaats* tot stand te brengen
 
-      ![ begaat de veranderingen ](/help/edge/docs/forms/assets/commit-fstab-changes.png)
+3. **vorm bewaarplaats montages**
+   - **Eigenaar**: Selecteer uw rekening GitHub of organisatie
+   - **Naam van de Bewaarplaats**: Kies een beschrijvende naam (b.v., `my-forms-project`)
+   - **Zichtbaarheid**: Selecteer **Openbaar** (geadviseerd voor Edge Delivery Services)
+   - Klik **creeer Bewaarplaats**
 
-      Als u om het even welke bouwstijlkwesties ontmoet, zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+   ![ Configuratie van de Bewaarplaats ](/help/edge/docs/forms/assets/name-eds-repo.png)
+   *Cijfer: Het vormen van uw nieuwe bewaarplaats met openbaar zicht*
 
-### Een nieuw AEM-project maken
+**Bevestiging:** bevestig u een nieuwe bewaarplaats GitHub hebt die op het malplaatje van AEM Forms wordt gebaseerd Boilerplate.
 
-Nu u een project GitHub hebt, kunt u te werk gaan om een nieuw Project van AEM bij de het auteursinstantie van AEM as a Cloud Service tot stand te brengen en te publiceren.
++++
 
-1. Een nieuw AEM-project maken:
++++Stap 2: AEM Code Sync installeren
 
-   1. Login aan de auteursinstantie van AEM as a Cloud Service en selecteert **Plaatsen**.
+Met AEM Code Sync worden wijzigingen in de inhoud automatisch gesynchroniseerd tussen uw AEM-ontwerpomgeving en uw GitHub-opslagplaats.
 
-      ![ uitgezochte plaatsen ](/help/edge/assets/select-sites.png)
+1. **installeer de App GitHub**
+   - Ga naar [ https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new)
 
-   1. Klik **creëren** > **Plaats van malplaatje**.
+2. **vorm toegangstoestemmingen**
+   - Selecteer **slechts uitgezochte bewaarplaatsen**
+   - Kies uw nieuwe opslagplaats
+   - Klik **sparen**
 
-      ![ creeer-plaatsen ](/help/edge/docs/forms/assets/create-sites.png)
+   ![ de Installatie van de Synchronisatie van de Code van AEM ](/help/edge/docs/forms/assets/aem-code-sync-up.png)
+   *Cijfer: Het installeren van de Synchronisatie van de Code van AEM met bewaarplaats-specifieke toestemmingen*
 
-   1. Selecteer het malplaatje van de Plaats van Edge Delivery Services en klik **daarna**.
+**Controlepunt:** de Synchronisatie van de Code van AEM is nu geïnstalleerd en heeft toegang tot uw bewaarplaats.
 
-      ![ selecteren-plaats-malplaatje ](/help/edge/docs/forms/assets/select-site-template.png)
++++
 
-      >[!NOTE]
-      >
-      > * Als de Edge Delivery Services Site-sjabloon niet beschikbaar is in uw ontwerpexemplaar, klikt u op de knop Importeren om de sjabloon te uploaden.
-      > * U kunt de malplaatjes van de Plaats van Edge Delivery Services van [ GitHub ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) downloaden.
++++Stap 3: AEM-integratie configureren
 
-   1. Voer de volgende gegevens in om een nieuw AEM-project te maken:
-      * **titel van de Plaats** - voeg een beschrijvende titel voor de plaats toe.
-      * **titel van de Plaats** - gebruik `site-name` dat u in de vorige stap bepaalde.
-      * **GitHub URL** - gebruik URL van het project GitHub u in de vorige stap creeerde.
+Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgeving voor inhoudssynchronisatie.
 
-      ![ creeer AEM Plaats ](/help/edge/docs/forms/assets/create-aem-site.png)
+1. **navigeer aan uw bewaarplaats**
+   - Ga naar uw nieuwe GitHub-opslagplaats
+   - De AEM Forms Boilerplate-bestanden worden weergegeven
 
-   1. **creeer de dialoog van de Plaats** verschijnt, klik **Oke**.
+2. **creeer het fstab.yaml- dossier**
+   - Klik **voeg dossier** toe > **creeer nieuw dossier** in de wortelfolder
+   - Geef het bestand een naam `fstab.yaml`
 
-      ![ klik o.k. ](/help/edge/docs/forms/assets/click-ok-aem-site.png)
+   ![ Creërend fstab.yaml- dossier ](/help/edge/docs/forms/assets/open-fstab.png)
+   *Cijfer: Creërend het fstab.yaml configuratiedossier*
 
-      Binnen een paar minuten wordt je nieuwe AEM Project gemaakt.
+3. **voeg uw de verbindingsdetails van AEM toe**
 
-   1. Navigeer aan uw onlangs-gecreeerd project van AEM in de console van Plaatsen en klik **uitgeven**.
-In dit geval wordt de pagina `index.html` gebruikt ter illustratie.
+   Kopieer en plak de volgende configuratie, waarbij u de plaatsaanduidingen vervangt:
 
-      ![ geef de Plaats van AEM uit ](/help/edge/docs/forms/assets/edit-site.png)
+   ```yaml
+   mountpoints:
+     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+   ```
 
-      Het AEM-project wordt op een nieuw tabblad in de Universal Editor geopend, zodat u WYSIWYG kunt ontwerpen. U kunt nu uw AEM-project bewerken.
+   **vervang:**
+   - `<aem-author>`: De URL van uw AEM as a Cloud Service-auteur (bijvoorbeeld `author-p12345-e67890.adobeaemcloud.com` )
+   - `<owner>`: Uw GitHub-gebruikersnaam of -organisatie
+   - `<repository>`: De naam van uw gegevensopslagruimte
 
-      ![ Plaats opent in Universele Redacteur ](/help/edge/docs/forms/assets/site-in-universal-editor.png)
+   **Voorbeeld:**
 
-1. Uw gemaakte AEM-project publiceren
+   ```yaml
+   mountpoints:
+     /: https://author-p12345-e67890.adobeaemcloud.com/bin/franklin.delivery/mycompany/my-forms-project/main
+   ```
 
-   Publiceer het AEM-project als u klaar bent met het bewerken. Publiceren:
+   ![ het Uitgeven fstab.yaml- dossier ](/help/edge/docs/forms/assets/edit-fstab-file.png)
+   *Cijfer: Het vormen van het bergpunt voor de integratie van AEM*
 
-   1. Voor de console van Plaatsen, selecteer alle pagina&#39;s van het Project van AEM en klik **Snel publiceren**.
+4. **zet de configuratie** vast
+   - Voeg een commit message toe: &quot;Add AEM integration configuration&quot;
+   - Klik **nieuw dossier** vastleggen
 
-      ![ publiceer AEM Sites Project ](/help/edge/docs/forms/assets/publish-sites.png)
+   ![ het Vastleggen van fstab veranderingen ](/help/edge/docs/forms/assets/commit-fstab-changes.png)
+   *Cijfer: Het vastmaken van de configuratie fstab.yaml*
 
-   1. Het **Snelle publiceer** bevestigingsdialoog verschijnt, **publiceert** om het het publiceren proces te beginnen.
-
-      ![ Snelle publiceer bevestigingsdialoog ](/help/edge/docs/forms/assets/quick-publish.png)
-
-      U kunt uw AEM-projectpagina&#39;s ook rechtstreeks vanuit de gebruikersinterface van de Universal Editor publiceren.
-
-      ![ Snelle publiceer bevestigingsdialoog ](/help/edge/docs/forms/assets/qui.png)
-
-   Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/` .
-
-   * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
-   * `<repository>` geeft uw GitHub-opslagplaats aan.
-   * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
-   * `<site-name>` verwijst naar de naam van de door u gemaakte site.
-
-   Als de naam van de vertakking bijvoorbeeld `main` is, de opslagplaats `edsforms` is, de eigenaar `wkndforms` is en `site-name` is `eds-forms` , wordt de website uitgevoerd op `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
-
-   >[!NOTE]
-   >
-   > * Als u de pagina `index.html` van het AEM-project wilt weergeven, gebruikt u de URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
-   > * Als u andere pagina&#39;s dan de `index page` van het AEM-project wilt weergeven, gebruikt u de URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<site-page-name>`
-
-Nu, kunt u beginnen [ creërend en toevoegend vormen aan uw Project van AEM ](#add-edge-delivery-services-forms-to-aem-project).
-
-## Aangepast Forms-blok toevoegen aan uw bestaande AEM-project
-
-Als u een bestaand AEM-project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren.
+**Bevestig Bevestiging:** bevestig uw verbinding van de bewaarplaats GitHub aan AEM.
 
 >[!NOTE]
 >
+>Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+
++++
+
++++Stap 4: Creeer een Plaats van AEM die met uw bewaarplaats GitHub wordt verbonden.
+
+1. **heb toegang tot de console van AEM Sites**
+   - Aanmelden bij uw AEM as a Cloud Service-ontwerpinstantie
+   - Ga aan **Plaatsen**
+
+   ![ AEM Sites Console ](/help/edge/assets/select-sites.png)
+   *Cijfer: Toegang tot de console van AEM Sites*
+
+2. **de plaatsverwezenlijking van het Begin**
+   - Klik **creëren** > **Plaats van malplaatje**
+
+   ![ creeer de Optie van de Plaats ](/help/edge/docs/forms/assets/create-sites.png)
+   *Cijfer: Creërend een nieuwe plaats van malplaatje*
+
+3. **selecteer het malplaatje van Edge Delivery Services**
+   - Kies het **malplaatje van de Plaats van Edge Delivery Services**
+   - Klik **daarna**
+
+   ![ de Selectie van het Malplaatje van de Plaats ](/help/edge/docs/forms/assets/select-site-template.png)
+   *Cijfer: Het selecteren van het de plaatsmalplaatje van Edge Delivery Services*
+
+   >[!NOTE]
+   >
+   >**niet beschikbaar Malplaatje?** Als de Edge Delivery Services-sjabloon niet wordt weergegeven:
+   >
+   >1. Klik **Invoer** om het malplaatje te uploaden
+   >2. De malplaatjes van de download van [ versies GitHub ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
+
+4. **vorm uw plaats**
+
+   Voer de volgende gegevens in:
+
+   | Veld | Waarde | Voorbeeld |
+   |-----------------|-----------------------------|-----------------------------------------|
+   | **Titel van de Plaats** | Beschrijvende naam voor site | &quot;Mijn Forms-project&quot; |
+   | **Naam van de Plaats** | URL-vriendelijke naam | &quot;my-forms-project&quot; |
+   | **GitHub URL** | URL van opslagplaats | `https://github.com/mycompany/my-forms-project` |
+
+   ![ Configuratie van de Plaats ](/help/edge/docs/forms/assets/create-aem-site.png)
+   *Cijfer: Het vormen van uw nieuwe plaats van AEM met integratie GitHub*
+
+5. **Volledige plaatsverwezenlijking**
+   - Uw instellingen controleren
+   - Klik **creëren**
+
+   ![ Bevestig de Creatie van de Plaats ](/help/edge/docs/forms/assets/click-ok-aem-site.png)
+   *Cijfer: Bevestigend plaatsverwezenlijking*
+
+   **Succes!** Uw AEM-site wordt nu gemaakt en verbonden met GitHub.
+
+6. **Open in Universele Redacteur**
+   - Zoek in de Sites-console uw nieuwe site
+   - Selecteer de pagina `index`
+   - Klik **uitgeven**
+
+   ![ geef Plaats in Universele Redacteur ](/help/edge/docs/forms/assets/edit-site.png) uit
+   *Cijfer: Het openen van uw plaats voor het uitgeven*
+
+   De Universal Editor wordt op een nieuw tabblad geopend en biedt mogelijkheden voor het schrijven van WYSIWYG.
+
+   ![ Universele Interface van de Redacteur ](/help/edge/docs/forms/assets/site-in-universal-editor.png)
+   *Figuur: Uw plaats die in Universele Redacteur voor WYSIWYG wordt geopend die* uitgeeft
+
+**Bevestiging:** bevestig uw plaats van AEM klaar voor vorm creatie is.
+
++++
+
++++Stap 5: Uw site publiceren
+
+Door te publiceren maakt u uw site beschikbaar op Edge Delivery Services voor wereldwijde toegang.
+
+1. **Snel publiceren van de console van Plaatsen**
+   - Terug naar de AEM Sites-console
+   - Selecteer uw sitepagina&#39;s (of selecteer alles met Ctrl+A)
+   - Klik **Snel publiceren**
+
+   ![ het Publiceren AEM Plaats ](/help/edge/docs/forms/assets/publish-sites.png)
+   *Figuur: Het selecteren van pagina&#39;s voor snel publiceert*
+
+2. **Bevestig het publiceren**
+   - In de bevestigingsdialoog, klik **publiceren**
+
+   ![ Snelle Publish Dialoog ](/help/edge/docs/forms/assets/quick-publish.png)
+   *Cijfer: Bevestigend publiceer actie*
+
+   **Alternatief:** u kunt direct van Universele Redacteur ook publiceren gebruikend publiceren knoop.
+
+   ![ publiceer van Universele Redacteur ](/help/edge/docs/forms/assets/qui.png)
+   *Cijfer: Het publiceren direct van Universele Redacteur*
+
+3. **toegang tot uw levende plaats**
+
+   Uw site is nu live op:
+
+   ```
+   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   ```
+
+   **Verklaarde Structuur URL:**
+   - `<branch>`: GitHub-vertakking (gewoonlijk `main`)
+   - `<repo>`: De naam van uw gegevensopslagruimte
+   - `<owner>`: Uw GitHub-gebruikersnaam of -organisatie
+   - `<site-name>`: De naam van uw AEM-site
+
+   **Voorbeeld:**
+
+   ```
+   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   ```
+
+**Bevestiging:** bevestig uw plaats op Edge Delivery Services levend is.
+
+>[!TIP]
 >
-> Deze stap is op projecten van toepassing die met [ AEM Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) worden gebouwd. Als u uw Project van AEM gebruikend het [ Boilerplate van AEM Forms ](https://github.com/adobe-rnd/aem-boilerplate-forms) creeerde, kunt u deze stap overslaan.
+> **Patronen URL:**
+>
+> - **Homepage:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
+> - **Andere pagina&#39;s:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-Integreren:
+**daarna:** [ creeer uw eerste vorm ](#create-your-first-form)
 
-1. Navigeer naar de map AEM Project repository op uw lokale systeem.
++++
 
-1. Kopieer en kleef de volgende omslagen en de dossiers van [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) in uw Project van AEM:
+## Pad B: Forms toevoegen aan bestaand project
 
-   * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
-   * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
-   * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
-1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het &lbrace;[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
-1. Navigeer naar `/models/_section.json` in uw AEM-project en voeg &quot;form&quot; en &quot;embed-adaptive-form&quot; toe aan de componentarray van het `filters` -object:
+**Best voor:** Bestaande AEM Sites met Edge Delivery Services
 
+Als u al een AEM-project hebt met Edge Delivery Services, kunt u formuliermogelijkheden toevoegen door het Adaptive Forms Block te integreren.
+
+### Vereisten voor pad B
+
+- Het bestaande project van AEM dat met [ wordt gebouwd AEM Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk)
+- Plaatselijke ontwikkelomgeving ingesteld
+- Toegang tot uw gegevensopslagruimte krijgen
+
+**Gebruikend AEM Forms Boilerplate?** als uw project met [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) werd gecreeerd, zijn de vormen reeds geïntegreerd. Skip aan [ creeer Uw Eerste Vorm ](#create-your-first-form).
+
+Laten we elke stap doorlopen:
+
+### Overzicht van stappen
+
+1. Aangepaste Forms-blokbestanden kopiëren
+2. Projectconfiguratie bijwerken
+3. ESLint-regels configureren
+4. Wijzigingen maken en toewijzen
+
++++Stap 1: Forms-blokbestanden kopiëren
+
+1. **navigeer aan uw lokaal project**
+
+   ```bash
+   cd /path/to/your/aem-project
    ```
-       "filters": [
-       {
-     "id": "section",
-     "components": [
-       .
-       .
-       .
-       "form",
-       "embed-adaptive-form"
+
+2. **Download vereiste dossiers van AEM Forms Boilerplate**
+
+   Kopieer deze dossiers van de [ bewaarplaats van AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms):
+
+   | Source | Doel | Doel |
+   |------------------------------------------------------------------------|----------------------------|----------------------------|
+   | [`blocks/form/`](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) | `blocks/form/` | Functionaliteit van kernformulieren |
+   | [`scripts/form-editor-support.js`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) | `scripts/form-editor-support.js` | Integratie van Universal Editor |
+   | [`scripts/form-editor-support.css`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) | `scripts/form-editor-support.css` | Editor-opmaak |
+
+3. **de redacteurssteun van de Update**
+   - Vervang uw `/scripts/editor-support.js` dossier met [ redacteur-support.js van AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+
+**Bevestig Bevestiging:** bevestig de dossiers van het vormblok in uw project zijn.
+
++++
+
++++Stap 2: Component Configuration bijwerken
+
+1. **het sectiemodel van de Update**
+
+   Open `/models/_section.json` en voeg formuliercomponenten aan de filters toe:
+
+   ```json
+   {
+        "filters": [
+        {
+      "id": "section",
+      "components": [
+           "text",
+           "image",
+           "button",
+        "form",
+        "embed-adaptive-form"
+      ]
+       }
      ]
-    }]
+   }
    ```
 
-1. (Optioneel) Navigeer naar `/.eslintignore` in uw AEM-project en voeg onderliggende coderegels toe:
+   **wat dit doet:** laat vormcomponenten in de Universele de componentenplukker van de Redacteur toe.
 
-   ```
-   blocks/form/rules/formula/*
-   blocks/form/rules/model/*
-   blocks/form/rules/functions.js
-   scripts/editor-support.js
-   scripts/editor-support-rte.js
-   ```
+**Bevestig Bevestiging:** bevestig vormcomponenten verschijnen in Universele Redacteur.
 
-1. (Optioneel) Navigeer naar `/.eslintrc.js` in uw AEM-project en voeg onderliggende coderegels toe in het `rules` -object:
++++
 
-   ```
-   'xwalk/max-cells': ['error', {
-     '*': 4, // default limit for all models
-     form: 15,
-     wizard: 12,
-     'form-button': 7,
-     'checkbox-group': 20,
-     checkbox: 19,
-     'date-input': 21,
-     'drop-down': 19,
-     email: 22,
-     'file-input': 20,
-     'form-fragment': 15,
-     'form-image': 7,
-     'multiline-input': 23,
-     'number-input': 22,
-     panel: 17,
-     'radio-group': 20,
-     'form-reset-button': 7,
-     'form-submit-button': 7,
-     'telephone-input': 20,
-     'text-input': 23,
-     accordion: 14,
-     modal: 11,
-     rating: 18,
-     password: 20,
-     tnc: 12,
-   }],
-   'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
++++Stap 3: ESLint configureren (optioneel)
+
+**waarom deze stap:** verhindert het verbinden fouten van vorm-specifieke dossiers en vormt juiste bevestigingsregels.
+
+1. **Update.eslintignore**
+
+   Voeg deze regels toe aan `/.eslintignore` :
+
+   ```bash
+   # Form block rule engine files
+    blocks/form/rules/formula/*
+    blocks/form/rules/model/*
+    blocks/form/rules/functions.js
+    scripts/editor-support.js
+    scripts/editor-support-rte.js
    ```
 
-1. Open de terminal en voer de onderstaande opdrachten uit:
+2. **Update.eslintrc.js**
 
+   Voeg de volgende regels toe aan het `rules` -object in `/.eslintrc.js` :
+
+   ```javascript
+   {
+     "rules": {
+       // Existing rules...
+   
+       // Form component cell limits
+    'xwalk/max-cells': ['error', {
+         '*': 4, // default limit
+      form: 15,
+      wizard: 12,
+      'form-button': 7,
+      'checkbox-group': 20,
+      checkbox: 19,
+      'date-input': 21,
+      'drop-down': 19,
+      email: 22,
+      'file-input': 20,
+      'form-fragment': 15,
+      'form-image': 7,
+      'multiline-input': 23,
+      'number-input': 22,
+      panel: 17,
+      'radio-group': 20,
+      'form-reset-button': 7,
+      'form-submit-button': 7,
+      'telephone-input': 20,
+      'text-input': 23,
+      accordion: 14,
+      modal: 11,
+      rating: 18,
+      password: 20,
+         tnc: 12
+       }],
+   
+       // Disable this rule for forms
+       'xwalk/no-orphan-collapsible-fields': 'off'
+     }
+   }
    ```
-   npm i
+
+**Bevestiging:** bevestig werken ESLint met vormcomponenten.
+
++++
+
++++Stap 4: Bouwen en implementeren
+
+1. **installeer gebiedsdelen en bouwt**
+
+   ```bash
+   # Install any new dependencies
+   npm install
+   
+   # Build component definitions
    npm run build:json
    ```
 
-   >[!NOTE]
-   >
-   > Voordat u de wijzigingen in de AEM Project-opslagplaats op GitHub aanbrengt, moet u ervoor zorgen dat de bestanden `component-definition.json` , `component-models.json` en `component-filters.json` op het hoofdniveau van het AEM-project worden bijgewerkt met de formuliergerelateerde objecten.
+   **wat dit doet:**
+   - Updates `component-definition.json` uitvoeren met formuliercomponenten
+   - Genereert `component-models.json` met formuliermodellen
+   - Creeert `component-filters.json` met het filtreren regels
 
-1. Leg deze wijzigingen vast en duw deze naar uw AEM Project-opslagplaats op GitHub.
+2. **verifieer geproduceerde dossiers**
 
-   <!--
-    1. **Update ESLint configuration file**
-    2. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-    
-     3. **Update component definitions and models files**
-       1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    3. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26) -->
+   Controleer of deze bestanden in de hoofdmap van het project formuliergerelateerde objecten bevatten:
+   - `component-definition.json`
+   - `component-models.json`
+   - `component-filters.json`
 
-Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM-project. U kunt [ beginnen tot stand te brengen en vormen toe te voegen aan uw Project van AEM ](#add-edge-delivery-services-forms-to-aem-site-project).
+3. **verbind en duw veranderingen**
 
-## Forms autoriseren met WYSIWYG
+   ```bash
+   git add .
+   git commit -m "Add Adaptive Forms Block integration"
+   git push origin main
+   ```
 
-U kunt uw AEM-project openen in de Universal Editor voor WYSIWYG-ontwerpen. Hierin kunt u het project bewerken en de sectie Adaptief formulier toevoegen om Edge Delivery Services-formulieren op AEM Project-pagina&#39;s toe te voegen.
+**Bevestiging:** bevestig uw project vormmogelijkheden omvat.
 
-1. Voeg de sectie Adaptief formulier toe aan uw AEM-projectpagina. Toevoegen:
-   1. Navigeer aan uw project van AEM in de console van Plaatsen, selecteer de plaatspagina u wilt uitgeven, en klik **uitgeven**. De AEM-projectpagina wordt geopend in de Universal Editor en kan worden bewerkt.
-In dit geval wordt de pagina `index.html` gebruikt ter illustratie.
-   1. Open de Inhoudsstructuur en navigeer naar een sectie waar u de sectie Aangepast formulier wilt toevoegen.
-   1. Klik op het pictogram **[!UICONTROL Add]** en selecteer de component **[!UICONTROL Adaptive Form]** in de lijst met componenten.
++++
 
-   ![ inhoudsboom ](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
+**daarna:** [ creeer Uw Eerste Vorm ](#create-your-first-form)
 
-   De sectie Adaptief formulier wordt toegevoegd. U kunt nu formuliercomponenten toevoegen aan de AEM-projectpagina.
+## Uw eerste formulier maken
 
-1. Voeg formuliercomponenten toe aan de toegevoegde sectie Adaptief formulier. Formuliercomponenten toevoegen:
-   1. Navigeer naar de toegevoegde sectie Adaptief formulier in de Inhoudsstructuur.
+**is op van toepassing:** zowel Weg A als de gebruikers van Weg B
 
-      ![ adaptief toegevoegd vormblok ](/help/edge/docs/forms/assets/adative-form-block.png)
+Nu uw project is ingesteld met formuliermogelijkheden, maken we uw eerste formulier met de WYSIWYG-interface van Universal Editor.
 
+### Overzicht van het proces voor het maken van formulieren
 
-   1. Klik het **[!UICONTROL Add]** pictogram en voeg de gewenste componenten van de **Adaptieve lijst van Componenten van de Vorm** toe.
+1. **voeg Aangepast Blok van de Vorm** aan uw pagina toe
+2. **voeg vormcomponenten** (tekstinput, knopen, enz.) toe
+3. **vorm componenteneigenschappen**
+4. **Voorproef en test** uw vorm
+5. **publiceer** de bijgewerkte pagina
 
-      ![ voeg component ](/help/edge/docs/forms/assets/add-component.png) toe
+Laten we elke stap doorlopen:
 
-      U kunt ook de vereiste Adaptieve Forms-componenten slepen en neerzetten, aangezien de Universal Editor een intuïtieve functie voor slepen en neerzetten biedt.
++++Stap 1: Adaptief formulierblok toevoegen
 
-   1. Selecteer de toegevoegde component Adaptief formulier om de eigenschappen van de component bij te werken met **[!UICONTROL Properties]** .
+1. **open uw pagina in Universele Redacteur**
+   - Navigeer aan de **Sites** console in AEM
+   - Selecteer de pagina waaraan u een formulier wilt toevoegen (bijvoorbeeld `index`)
+   - Klik **uitgeven**
 
-      ![ open eigenschappen ](/help/edge/docs/forms/assets/component-properties.png)
+   De pagina wordt geopend in de Universal Editor voor bewerking in WYSIWYG.
 
-   1. Bekijk een voorbeeld van het formulier.
-In de onderstaande schermafbeelding wordt het formulier weergegeven dat in het AEM Project is gemaakt en dat gebruikmaakt van WYSIWYG-authoring:
+2. **voeg de Adaptieve component van de Vorm** toe
+   - Open het **paneel van de Boom van de Inhoud** (linkerzijbalk)
+   - Ga naar een sectie waar u het formulier wilt toevoegen
+   - Klik **toevoegen** (+) pictogram
+   - Selecteer **Aangepaste Vorm** van de componentenlijst
 
-      ![ toegevoegde vorm ](/help/edge/docs/forms/assets/added-form-aem-sites.png)
+   ![ toevoegend Aangepast Blok van de Vorm ](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
+   *Cijfer: Het toevoegen van een Aangepast blok van de Vorm aan uw pagina*
 
-      Als de gebruiker tevreden is met de voorvertoning, kan hij doorgaan met het publiceren van de pagina.
+**Bevestiging:** bevestig u een lege vormcontainer hebt.
 
-      >[!NOTE]
-      >
-      > Het is belangrijk dat u de AEM Project-pagina opnieuw publiceert nadat u wijzigingen hebt aangebracht. Als dit niet het geval is, zijn de updates niet zichtbaar in de browser.
++++
 
-1. Publiceer de AEM-projectpagina opnieuw.
++++Stap 2: Formuliercomponenten toevoegen
 
-   1. Klik **publiceren** om de pagina van het Project van AEM na het toevoegen van de vorm opnieuw te publiceren.
+1. **ga aan uw vormblok**
+   - Zoek in de inhoudsstructuur de sectie Adaptief formulier die u zojuist hebt toegevoegd
 
-      ![ publiceer vorm ](/help/edge/docs/forms/assets/publish-form.png)
+   ![ Aangepast toegevoegd Blok van de Vorm ](/help/edge/docs/forms/assets/adative-form-block.png)
+   *Cijfer: Het adaptieve blok van de Vorm in de inhoudsboom*
 
-   1. De **publiceer** bevestigingsdialoog verschijnt op het scherm, **publiceert** om te beginnen publiceren.
+2. **voeg vormcomponenten** toe
 
-      ![ publiceer form1 ](/help/edge/docs/forms/assets/publish-form1.png)
+   U kunt componenten op twee manieren toevoegen:
 
-      Zodra u **klikt publiceer** knoop, verschijnt het `Publish started successfully` bericht.
+   **Methode A: Klik om toe te voegen**
+   - Klik **toevoegen** (+) pictogram in uw vormsectie
+   - Selecteer componenten van de **Adaptieve lijst van Componenten van de Vorm**
 
-      ![ publiceer form2 ](/help/edge/docs/forms/assets/publish-form2.png)
+   **Methode B: Sleep en Daling**
+   - Componenten rechtstreeks van het deelvenster Componenten naar het formulier slepen
 
-   U kunt nu de AEM-projectpagina met het toegevoegde Edge Delivery Services-formulier bekijken op de volgende URL:
-   `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`.
+   ![ toevoegend de Componenten van de Vorm ](/help/edge/docs/forms/assets/add-component.png)
+   *Cijfer: Het toevoegen van componenten aan uw vorm*
 
-   Als de naam van de vertakking bijvoorbeeld `main` is, de opslagplaats `edsforms` is, de eigenaar `wkndforms` is en de naam van de site `eds-forms` is, is de URL:
-   `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
+   **geadviseerde startercomponenten:**
+   - Tekstinvoer (voor naam, e-mail)
+   - Tekstgebied (voor berichten)
+   - Verzendknop
 
-   ![ indexpagina ](/help/edge/docs/forms/assets/publish-index-page.png)
+3. **vorm componenteneigenschappen**
+   - Een formuliercomponent selecteren
+   - Gebruik het **paneel van Eigenschappen** (juiste sidebar) om te vormen:
+      - Labels en plaatsaanduidingen
+      - Validatieregels
+      - Vereiste veldinstellingen
 
-U kunt Edge Delivery Services Forms opmaken door de `.css` en `.js` dossiers in het AanpassingsBlok van Forms en [ vestiging een lokale ontwikkelomgeving van AEM ](#set-up-local-aem-development-environment) uit te geven om de veranderingen in uw browser onmiddellijk te bekijken.
+   ![ het Comité van Eigenschappen van de Component ](/help/edge/docs/forms/assets/component-properties.png)
+   *Cijfer: Het vormen componenteneigenschappen*
 
->[!NOTE]
+4. **Voorproef uw vorm**
+
+   Uw formulier ziet er ongeveer als volgt uit:
+
+   ![ Voltooide Voorproef van de Vorm ](/help/edge/docs/forms/assets/added-form-aem-sites.png)
+   *Cijfer: De vorm van het voorbeeld die met Universele Redacteur* wordt gecreeerd
+
+**Bevestiging:** bevestig uw vorm klaar voor het publiceren is.
+
+>[!IMPORTANT]
 >
-> U kunt [ auteur een standalone vorm in Universele Redacteur ook en het publiceren aan Edge Delivery Services ](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Vergeet niet uw pagina te publiceren nadat u wijzigingen hebt aangebracht om updates in de browser te zien.
 
-## Lokale AEM-ontwikkelomgeving instellen
++++
 
-U kunt een lokale AEM-ontwikkelomgeving instellen voor het lokaal ontwikkelen van aangepaste stijlen en componenten. Aan de slag met een lokale AEM-ontwikkelomgeving:
++++Stap 3: Uw formulier publiceren
 
-1. **installeer CLI van AEM**: AEM CLI vereenvoudigt ontwikkelingstaken. Laten we het wereldwijd installeren met npm:
+1. **publiceer van Universele Redacteur**
+   - Klik **publiceren** knoop in Universele Redacteur
 
-   ```Bash
-       npm install -g @adobe/aem-cli
+   ![ het Publiceren Vorm ](/help/edge/docs/forms/assets/publish-form.png)
+   *Cijfer: Het publiceren van uw vorm van Universele Redacteur*
+
+2. **Bevestig het publiceren**
+   - In de bevestigingsdialoog, klik **publiceren**
+
+   ![ publiceer bevestiging ](/help/edge/docs/forms/assets/publish-form1.png)
+   *Cijfer: Bevestigend publiceer actie*
+
+   U ziet een succesbericht waarin de publicatie wordt bevestigd.
+
+   ![ publiceer Succes ](/help/edge/docs/forms/assets/publish-form2.png)
+   *Cijfer: Succesvolle publicatiebevestiging*
+
+3. **Mening uw levende vorm**
+
+   Uw formulier is nu live op:
+
+   ```
+   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
    ```
 
-1. **Kloon uw project GitHub**: Kloon uw plaats van het Project van AEM van GitHub gebruikend het volgende bevel, die vervangt &lt;owner> met de eigenaar van de opslagplaats en &lt;repo> met de naam van de opslagplaats:
+   **Voorbeeld URL:**
 
    ```
+   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   ```
+
+   ![ Levende Pagina van de Vorm ](/help/edge/docs/forms/assets/publish-index-page.png)
+   *Cijfer: Uw gepubliceerde vormpagina op Edge Delivery Services*
+
+**Gefeliciteerd!** Uw formulier is nu live en klaar om opmerkingen te verzamelen.
+
++++
+
+### Volgende stappen
+
+Nu u een werkformulier hebt, kunt u:
+
+- **pas het stileren** door CSS en de dossiers van JavaScript uit te geven aan
+- **voeg geavanceerde vormeigenschappen** als bevestigingsregels en voorwaardelijke logica toe
+- **opstelling lokale ontwikkeling** voor snellere herhaling
+- **creeer standalone vormen** voor specifieke gebruiksgevallen
+
+>[!TIP]
+>
+> **leer meer:** [ creeer standalone vormen in Universele Redacteur ](/help/edge/docs/forms/universal-editor/create-forms.md)
+
+## Lokale ontwikkelomgeving instellen
+
+**Best voor:** Ontwikkelaars die vorm het stileren en gedrag willen aanpassen
+
+Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
+
+++ AEM CLI en lokale ontwikkeling instellen
+
+1. **installeer AEM CLI**
+
+   De AEM CLI vereenvoudigt lokale ontwikkelingstaken:
+
+   ```bash
+   npm install -g @adobe/aem-cli
+   ```
+
+2. **Kloon uw bewaarplaats**
+
+   ```bash
    git clone https://github.com/<owner>/<repo>
-   ```
-
-1. **Begin Uw Lokaal Milieu**: Navigeer aan uw projectfolder en begin uw lokale instantie van AEM met één enkel bevel:
-
-   ```
    cd <repo>
+   ```
+
+   Vervang `<owner>` en `<repo>` door de werkelijke GitHub-gegevens.
+
+3. **Begin de lokale ontwikkelingsserver**
+
+   ```bash
    aem up
    ```
 
-U kunt lokale wijzigingen aanbrengen in de map Adaptive Forms Block `blocks/form` voor de opmaak en codering van uw formulieren. Bewerk de `.css` - of `.js` -bestanden in deze map en u ziet dat de wijzigingen direct in uw browser worden doorgevoerd.
+   Hiermee start u een lokale server met hot-reload-mogelijkheden.
 
-Nadat u de wijzigingen hebt aangebracht, gebruikt u de opdrachten van Git om deze vast te leggen en door te drukken. Hiermee werkt u de voorvertoning- en productieomgevingen bij, die toegankelijk zijn via de volgende URL&#39;s (vervang plaatsaanduidingen door uw projectdetails):
+4. **maak aanpassingen**
 
-Voorvertoning: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+   - Bestanden in de map `blocks/form/` bewerken voor formulieropmaak en -gedrag
+   - Wijzigen `form.css` voor opmaak
+   - `form.js` bijwerken voor gedrag
 
-Productie: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+   **zie onmiddellijk veranderingen** in uw browser bij `http://localhost:3000`
+
+5. **stel uw veranderingen** op
+
+   ```bash
+   git add .
+   git commit -m "Custom form styling"
+   git push origin main
+   ```
+
+   Uw wijzigingen zijn beschikbaar op:
+   - **Voorproef:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+   - **Productie:** `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+
++++
 
 
-## Het oplossen van problemen GitHub bouwt kwesties
+## Problemen oplossen
 
-Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
+### Veelvoorkomende problemen en oplossingen
 
-* **handvat het Leiden Fouten:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het [ /package.json dossier van het Project van 0&rbrace; EDS &lbrace;en wijzig het &quot;plusteken&quot;manuscript van ] aan `"lint": "npm run lint:js && npm run lint:css"`. `"lint": "echo 'skipping linting for now'"` Sparen het dossier en begaat de veranderingen in uw project GitHub.
++++GitHub bouwt Kwesties
 
-* **los de Fout van de Weg van de Module op:**
-Als u de fout &quot;Onbekwaam ontmoet om weg aan module &quot;&quot;/scripts/lib-franklin.js&quot;op te lossen, navigeer aan het [ EDS Project ] /blocks/forms/form.js- dossier. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
+**Probleem:** bouwt mislukkingen of het verbinden fouten
 
-## Zie ook
+**Oplossing 1: De Fouten van de handvat het Linting**
 
-{{universal-editor-see-also}}
+Als er verbindingsfouten optreden:
+
+1. `package.json` openen in de hoofdmap van het project
+2. Zoek het script `lint` :
+
+   ```json
+   "scripts": {
+     "lint": "npm run lint:js && npm run lint:css"
+   }
+   ```
+
+3. Koppeling tijdelijk uitschakelen:
+
+   ```json
+   "scripts": {
+     "lint": "echo 'skipping linting for now'"
+   }
+   ```
+
+4. De wijzigingen vastleggen en duwen
+
+**Oplossing 2: De Fouten van de Weg van de module**
+
+Als u &quot;Kan pad naar module &#39;/scripts/lib-franklin.js&#39; niet omzetten:
+
+1. Navigeren naar `blocks/form/form.js`
+2. De instructie import bijwerken:
+
+   ```javascript
+   // Change this:
+   import { ... } from '/scripts/lib-franklin.js';
+   
+   // To this:
+   import { ... } from '/scripts/aem.js';
+   ```
+
++++
+
++++Universal Editor-problemen
+
+**Probleem:** de componenten van de Vorm verschijnen niet in Universele Redacteur
+
+**Oplossingen:**
+
+- Controleren of AEM Code Sync is geïnstalleerd en uitgevoerd
+- Controleer of `fstab.yaml` de juiste URL van de AEM-auteur heeft
+- Zorg ervoor dat uw AEM-instantie vroege toegang heeft ingeschakeld
+- `component-definition.json` bevestigen bevat formuliercomponenten
+
+**Probleem:** Veranderingen niet zichtbaar na het publiceren
+
+**Oplossingen:**
+
+- Wacht op CDN-cache vernieuwen
+- Browser cache controleren (modus Incognito/Private proberen)
+- Controleren of de juiste URL-indeling wordt gebruikt
+
++++
+
++++Problemen met formulierfunctionaliteit
+
+**Probleem:** de inzendingen van de vorm werken niet
+
+**Oplossingen:**
+
+- Controleer of u een verzendknopcomponent hebt
+- URL-configuratie van formulieractie controleren
+- Formuliervalidatieregels controleren
+- Testen in voorvertoningsmodus eerst
+
+**Probleem:** het stileren kwesties
+
+**Oplossingen:**
+
+- CSS-bestandspaden controleren in `blocks/form/`
+- Browser-cache wissen
+- CSS-syntaxis verifiëren
+- Testen in de lokale ontwikkelomgeving
+
++++
+

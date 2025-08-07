@@ -4,9 +4,9 @@ description: Ga aan de slag met Edge Delivery Services voor AEM Forms. Creëer s
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Go
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* Opstelling een [ project van AEM gebruikend AEM Forms boilerplate ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ toevoegde Aangepast Blok van Forms aan uw bestaand Project van AEM ](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
+- Opstelling een [ project van AEM gebruikend AEM Forms boilerplate ](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ toevoegde Aangepast Blok van Forms aan uw bestaand Project van AEM ](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Aan opstelling Microsoft SharePoint als uw inhoudsbron, zie [ hoe te SharePoint ](https://www.aem.live/docs/setup-customer-sharepoint) gebruiken.
+- Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Aan opstelling Microsoft SharePoint als uw inhoudsbron, zie [ hoe te SharePoint ](https://www.aem.live/docs/setup-customer-sharepoint) gebruiken.
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ Stap 1: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
@@ -105,9 +105,9 @@ Ga als volgt te werk om het formulier te maken:
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
-   * `<repository>` geeft uw GitHub-opslagplaats aan.
-   * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
+   - `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
+   - `<repository>` geeft uw GitHub-opslagplaats aan.
+   - `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
    Bijvoorbeeld, als de bewaarplaats van uw project &quot;wefinance&quot;wordt genoemd, is het gevestigd onder de rekening &quot;wkndform&quot;, en u gebruikt de &quot;belangrijkste&quot;tak, kijkt URL als het volgende:
 
@@ -164,6 +164,3 @@ Tot nu toe hebt u de structuur van het formulier voorbereid. Nu een voorbeeld va
 [ bereidt uw spreadsheet ](/help/edge/docs/forms/submit-forms.md) voor beginnen goedkeurend gegevens op vormvoorlegging.
 
 
-## Zie ook
-
-{{see-more-forms-eds}}

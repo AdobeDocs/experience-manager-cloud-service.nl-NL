@@ -4,7 +4,7 @@ description: Gebruik thema's met een adaptief formulier om een adaptief formulie
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '5421'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt thema&#39;s tot stand brengen en toepassen om een Aangepast Vorm <!-- or an interactive communication--> te stileren. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Het thema wordt beheerd onafhankelijk zonder een verwijzing naar een Aanpassings Vorm <!-- or interactive communication -->.
@@ -212,7 +212,7 @@ De Thema-editor bestaat uit twee deelvensters:
 
 * **Canvas** - verschijnt op de rechterkant. Er wordt een voorbeeld van een adaptief formulier <!--  or interactive communication --> weergegeven waarin alle wijzigingen in de opmaak direct worden weerspiegeld. U kunt ook rechtstreeks objecten op het canvas selecteren om de bijbehorende stijlen op te zoeken en deze stijlen te bewerken. Een liniaal voor apparaatresolutie bovenaan bestuurt het canvas. Als u een onderbrekingspunt van de resolutie in de liniaal selecteert, wordt het voorbeeldformulier <!--  or interactive communication --> weergegeven voor de desbetreffende resolutie. Canvas wordt besproken in detail [ hieronder ](themes.md#using-canvas).
 
-* **Sidebar** - verschijnt op de linkerkant. Het heeft de volgende punten:
+* **Sidebar*** verschijnt op de linkerkant. Het heeft de volgende punten:
 
    * **Selecteur:** toont de component die voor het stileren wordt geselecteerd, en zijn eigenschappen die u kunt stileren. De kiezer vertegenwoordigt alle componenten van een type. Als u een tekstvakcomponent in een thema voor het stileren selecteert, erven alle tekstvakjes in uw vorm <!-- or interactive communication --> de stijl. Met kiezers kunt u een algemene component of een specifieke component voor opmaak selecteren. Een veldcomponent is bijvoorbeeld een algemeen onderdeel en een tekstvak is een specifiek onderdeel.
 
@@ -401,7 +401,7 @@ De opties voor het aanpassen van statusstijlen variëren voor verschillende comp
   </tr>
   <tr>
    <td><p>Afmetingen en positie</p> </td>
-   <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>U kunt kiezen uit opties voor weergave, opvulling, marge, breedte, hoogte en Z-index.</p> <p>U kunt de modus Lay-out ook gebruiken om de breedte van componenten te definiëren met behulp van een eenvoudige interface voor slepen en neerzetten. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten </a> te resize.<a href="resize-using-layout-mode.md"></p> </td>
+   <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>U kunt kiezen uit opties voor weergave, opvulling, marge, breedte, hoogte en Z-index.</p> <p>U kunt de modus Lay-out ook gebruiken om de breedte van componenten te definiëren met behulp van een eenvoudige interface voor slepen en neerzetten. Voor meer informatie, zie {de wijze van de Lay-out van het 0} Gebruik om componenten <a href="resize-using-layout-mode.md"> te resize.</a></p> </td>
   </tr>
   <tr>
    <td><p>Tekst</p> </td>
@@ -458,7 +458,7 @@ Voer de volgende stappen uit om de opmaak voor een bepaalde component (een numer
 1. De titel van het zijpaneel verandert in de widget Numerieke vak en bevat opties waarmee u de vormgeving kunt aanpassen.
 Gebruik de optie **[!UICONTROL Dimension & Position]** in het zijpaneel om de grootte van de component aan te passen. Controleer of de status **[!UICONTROL Default]** is.
 
-Selecteer **[!UICONTROL Field Widget]** in de werkbalk van de component en voer de bovenstaande stappen uit in plaats van **[!UICONTROL Numeric Box Widget]** te selecteren. Wanneer u afmetingen selecteert voor de optie **[!UICONTROL Field Widget]** , hebben alle tekstvakken behalve het numerieke vak dezelfde grootte.
+Selecteer **[!UICONTROL Numeric Box Widget]** in de werkbalk van de component en voer de bovenstaande stappen uit in plaats van **[!UICONTROL Field Widget]** te selecteren. Wanneer u afmetingen selecteert voor de optie **[!UICONTROL Field Widget]** , hebben alle tekstvakken behalve het numerieke vak dezelfde grootte.
 
 ### Velden voor een bepaalde status opmaken {#styling-fields-given-state}
 

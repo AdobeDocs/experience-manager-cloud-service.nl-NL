@@ -1,93 +1,163 @@
 ---
-title: Publiceer AEM Forms for Edge Delivery Services.
-description: Publiceer uw Edge Delivery Services-formulieren snel en naadloos.
+title: Adaptieve Forms met Edge Delivery Services publiceren
+description: Leer hoe u Adaptive Forms kunt publiceren, configureren en benaderen met Edge Delivery Services voor productiegebruik.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
+keywords: [formulieren publiceren, Edge Delivery Services, formulierconfiguratie, CORS, referentiefilter]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: 756
 ht-degree: 0%
 
 ---
 
-# Adaptief formulier publiceren naar Edge Delivery Services
+# Adaptieve Forms met Edge Delivery Services publiceren
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
+## Overzicht
 
+Als u een adaptief formulier publiceert, kunt u het op Edge Delivery Services beschikbaar stellen voor eindgebruikers en verzenden. Dit proces omvat drie hoofdfasen: het publiceren van het formulier, het configureren van beveiligingsinstellingen en het openen van het actieve formulier.
 
-Wanneer het formulier gereed en gebruiksklaar is, kunt u het publiceren zodat het voor uw klanten toegankelijk is voor gegevensverzameling en -verzending. Als u het formulier publiceert, weet u zeker dat het formulier beschikbaar is op Edge Delivery, zodat gebruikers er probleemloos mee kunnen werken. Met dit proces kunnen klanten het formulier in real-time invullen en verzenden, zodat ze gegevens op efficiënte wijze kunnen vastleggen en de verwerking kunnen stroomlijnen.
+**wat u zult verwezenlijken:**
+
+- Uw formulier publiceren naar Edge Delivery Services
+- Beveiligingsinstellingen configureren voor het verzenden van formulieren
+- Uw gepubliceerde formulier openen en verifiëren
+- Stel het juiste URL-routering en CORS-beleid in
 
 ## Vereisten
 
-* Een vorm die gebruikend het **malplaatje van Edge Delivery Services** wordt gecreeerd. [ leer meer ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) over het creëren van een op EDS-Gebaseerde vorm.
+- **Vereisten van de Vorm:**
+   - Adaptief formulier gemaakt met Edge Delivery Services-sjabloon
+   - Beproefd formulier en gebruiksklaar voor productie
 
-## Uw formulier publiceren
+- **Vereisten van de Toegang:**
+   - Machtigingen voor AEM Forms-auteurs
+   - Cloud Manager-toegang (voor productieconfiguratie)
+   - Ontwikkelaarstoegang tot formulierblokcode (voor installatie van verzending)
 
-U kunt om het even welke **op EDS-Gebaseerde Aangepaste Vorm** aan Edge Delivery publiceren door deze stappen te volgen:
+- **Verwante Documentatie:**
+   - [Formulieren maken met Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [Handelingen voor verzenden configureren](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
 
-<!--1. Select the **Adaptive Form** that you want to publish and click the **Edit** ![edit icon](/help/forms/assets/edit.svg) icon.
-   ![Select EDS-Based Form](/help/forms/assets/select-eds-based-form.png)-->
+## Fase 1: Uw formulier publiceren
 
-1. Open uw adaptieve vorm in de redacteur en klik het **Publish** pictogram op het hogere spoor.
+### Stap 1: Publiceren starten
+
+1. **heb toegang tot uw vorm**: Open uw AanpassingsVorm in de Universele Redacteur
+2. **Begin het publiceren**: Klik **publiceren** pictogram in de toolbar
+
    ![ klik publiceren ](/help/forms/assets/publish-icon-eds-form.png)
 
-1. Wanneer u **klikt publiceer**, verschijnt een scherm of pop-up dat de het publiceren activa, met inbegrip van de titel van de vorm toont. In dit voorbeeld, wordt het **&#x200B;**&#x200B;malplaatje Wknd_Form gebruikt.
+### Stap 2: Controleren en bevestigen
+
+1. **Overzicht het publiceren activa**: Het systeem toont alle activa die, met inbegrip van uw vorm worden gepubliceerd
+
    ![ op Klik publiceren ](/help/forms/assets/on-click-publish.png)
 
-1. Klik **publiceren** opnieuw, en een bevestigingspop-up verschijnt, erop wijzend dat uw vorm nu wordt gepubliceerd.
+2. **Bevestig het publiceren**: Klik **publiceren** te werk te gaan
+3. **verifieer succes**: Zoek het bevestigingsbericht
+
    ![ publiceer Succes ](/help/forms/assets/publish-success.png)
 
-1. Om de van de vorm te controleren publiceer status, klik **opnieuw publiceren**.
-   ![ publiceer Status ](/help/forms/assets/publish-status.png)
+### Stap 3: Publicatiestatus verifiëren
 
-1. **unpublish** een vorm, open uw vorm in de redacteur, klik het drie-punt menu in de hoger-juiste hoek en klik **unpublish**.
-   ![ Unpublish ](/help/forms/assets/unpublish--form.png)
+**de status van de Controle**: Klik **publiceren** opnieuw pictogram om huidige status te bekijken
 
-## Formulierverzending in Edge Delivery inschakelen door een referentiefilter voor AEM Publisher te configureren
+![ publiceer Status ](/help/forms/assets/publish-status.png)
 
-Om veilige vormvoorlegging te verzekeren, moet u de Filter van de a **Referrer** in de Uitgever van AEM vormen. Met dit filter zorgt u ervoor dat alleen geautoriseerde aanvragen van Edge Delivery schrijfbewerkingen (POST, PUT, DELETE, COPY, MOVE) kunnen uitvoeren om ongeoorloofde wijzigingen te voorkomen. Hieronder vindt u de stappen voor het configureren van een referentiefilter voor AEM Publisher:
+**Controlepunt van de Bevestiging:**
 
-### De AEM Instance URL in Edge Delivery bijwerken
+- Het formulier toont de status &quot;Gepubliceerd&quot; in de editor
+- Geen foutberichten tijdens publicatieproces
+- Het formulier wordt weergegeven in de lijst met gepubliceerde elementen
 
-Wijzig `submitBaseUrl` in het {**dossier 1} constant.js binnen het vormblok om de instantie URL van AEM te specificeren:**
+### Gepubliceerde Forms beheren
 
-**voor de Opstelling van de Wolk:**
+**om een vorm ongedaan te maken:**
 
-```js
+1. Uw formulier openen in de editor
+2. Klik op het menu met drie punten (⋯) in de rechterbovenhoek
+3. Selecteer **Unpublish**
+
+![ unpublish vorm ](/help/forms/assets/unpublish--form.png)
+
+## Fase 2: Beveiligingsinstellingen configureren
+
+### Waarom de Configuratie van de Veiligheid wordt vereist
+
+Om beveiligde formulierverzendingen in te schakelen, moet u beveiligingsinstellingen configureren die:
+
+- Edge Delivery Services toestaan gegevens naar AEM te verzenden
+- Ongeoorloofde toegang tot uw AEM-exemplaar voorkomen
+- CORS inschakelen (Cross-Origin Resource Sharing) voor formulierverzendingen
+- Aanvragen filteren om alleen legitieme Edge Delivery-domeinen toe te staan
+
+>[!IMPORTANT]
+>
+>**Vereist voor Productie**: Deze configuraties zijn verplicht voor vormvoorlegging om in productiemilieu&#39;s te werken.
+
+### Stap 1: URL voor formulierverzending configureren
+
+**Doel**: Directe vormbijdragen aan uw instantie van AEM
+
+**Plaats van het Dossier**: `blocks/form/constant.js` in uw project van Edge Delivery Services
+
+**Voorbeelden van de Configuratie:**
+
+```javascript
+// Production Environment
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
-```
 
-**voor Lokale Ontwikkeling:**
-
-```js
+// Local Development Environment  
 export const submitBaseUrl = 'http://localhost:4503';
+
+// Staging Environment
+export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com';
 ```
 
-### De configuratie van CORS wijzigen
+**Controlepunt van de Bevestiging:**
 
-Pas de **montages CORS** aan om de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery toe te staan. Verwijs naar de [ Gids van de Configuratie CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) voor details.
+- `constant.js` bestand bijgewerkt met juiste AEM-publicatie-URL
+- URL komt overeen met uw omgeving (productie, opbouw of lokaal)
+- Geen slash in de URL
 
-**de Configuratie van de Steekproef CORS:**
+### Stap 2: CORS-instellingen configureren
+
+**Doel**: Toestaan de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery Services
+
+**Implementatie**: voeg configuratie CORS aan uw de verzender of configuratie van AEM Apache toe
 
 ```apache
-# Developer Localhost
+# Local Development Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 
-# Franklin Stage
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+# Edge Delivery Services - Preview/Stage Environment  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true
 
-# Franklin Live
+# Edge Delivery Services - Production Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
 
-Voor lokale ontwikkeling, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) om CORS van uw **gastheer URL van ontwikkelingsUI** toe te laten.
+**Controlepunt van de Bevestiging:**
 
-### Filter Referrer configureren
+- CORS-regels toegepast op de configuratie van de verzender
+- Alle vereiste domeinen (localhost, hlx.page, hlx.live) worden opgenomen
+- Configuratie geïmplementeerd in doelomgeving
 
-Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud Manager. [ weet meer ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) over het vormen van het verwijzingsfilter op een instantie van de Dienst van de Wolk AEM die een wolkenmanager gebruikt.
+**Documentatie van de Verwijzing:**
 
-**Configuratie JSON voor de Filter van de Referateur:**
+- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+
+### Stap 3: Filter Referrer configureren
+
+**Doel**: Beperk schrijven verrichtingen tot erkende domeinen van Edge Delivery Services
+
+**Methode van de Implementatie**: Vorm via Cloud Manager in AEM as a Cloud Service
+
+**Dossier van de Configuratie**: Voeg aan de configuratie van OSGi van uw project toe
 
 ```json
 {
@@ -99,7 +169,7 @@ Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud
   ],
   "filter.methods": [
     "POST",
-    "PUT",
+    "PUT", 
     "DELETE",
     "COPY",
     "MOVE"
@@ -110,24 +180,91 @@ Opstelling de **Filter van de Verwijzer** in de Dienst van de Wolk AEM via Cloud
 }
 ```
 
-Deze configuratie specificeert welke methodes van HTTP worden gefiltreerd, welke verwijzingen worden toegestaan, en welke gebruikersagenten van de filter worden uitgesloten. Door deze configuraties uit te voeren, **vormvoorlegging via Edge Delivery** zal worden beveiligd en beperkt tot erkende bronnen slechts.
+**Uitsplitsing van de Configuratie:**
 
-### Gepubliceerd adaptief formulier openen
+- **`allow.empty`**: verwerpt aanvragen zonder verwijzingskoppen
+- **`allow.hosts.regexp`**: geeft aanvragen van Edge Delivery Services-domeinen toestemming
+- **`filter.methods`**: past filtering toe op deze HTTP-methoden
+- **`exclude.agents.regexp`**: Gebruikersagenten uitgesloten van filteren
 
-Uw Aangepaste Vorm is nu toegankelijk via **Edge Delivery** gebruikend het volgende formaat URL:
+**Controlepunt van de Bevestiging:**
+
+- Configuratie van het verwijzingsfilter geïmplementeerd via Cloud Manager
+- Configuratie actief op AEM-publicatie-instantie
+- Het verzenden van formulieren testen vanuit Edge Delivery Services-domein
+- Niet-geautoriseerde domeinen kunnen geen formulieren verzenden
+
+**Documentatie van de Verwijzing:**
+
+- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+
+## Fase 3: Toegang tot uw gepubliceerde formulier
+
+### URL-structuur voor Edge Delivery Services
+
+**StandaardFormaat URL:**
 
 ```
-https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
+https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
 ```
 
-Bijvoorbeeld, is URL voor **k-Vorm**:
+**Componenten URL:**
+
+- **`<branch>`**: naam van vertakking instellen (doorgaans `main` )
+- **`<repo>`**: Naam opslagplaats
+- **`<owner>`**: GitHub-organisatie of gebruikersnaam
+- **`<form_name>`**: De naam van het formulier (kleine letters, afgebroken)
+
+**milieu-Specifieke URLs:**
 
 ```
+# Production Environment (.aem.live)
 https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
+
+# Preview Environment (.aem.page) 
+https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
+### Eindvalidatiestappen
 
-## Zie ook
+**verifieer de Toegankelijkheid van de Vorm:**
 
-{{universal-editor-see-also}}
+1. **vorm het laden van de Test**: Bezoek uw vorm URL en bevestig het behoorlijk laadt
+2. **de vormvoorlegging van de Test**: Vul uit en verzend de vorm om gegevensverwerking te verifiëren
+3. **Controle ontvankelijk ontwerp**: De vorm van de test op verschillende apparaten en schermgrootte
+4. **bevestigt veiligheid**: Zorg CORS en verwijzersfilter correct werken
 
+**Verwachte Resultaten:**
+
+- Formulier wordt geladen zonder fouten
+- Alle formuliervelden worden correct weergegeven
+- Formulierverzendprocessen succesvol
+- Gegevens worden weergegeven in de geconfigureerde bestemming (werkblad, e-mail, enz.)
+- Geen consolefouten met betrekking tot CORS of veiligheidsbeleid
+
+
+## Volgende stappen
+
+**Onmiddellijke Acties:**
+
+- Het gepubliceerde formulier grondig testen
+- Gegevens over het verzenden van formulieren controleren
+- Indien nodig analytische tracking instellen
+
+**Geavanceerde Onderwerpen:**
+
+- [Formulierverzendacties configureren](/help/edge/docs/forms/universal-editor/submit-action.md)
+- [Stijl en thema voor uw formulieren](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+- [reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+- [Responsieve formulierindelingen maken](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+
+## Samenvatting
+
+U hebt het volgende bereikt:
+
+- Uw adaptieve formulier is gepubliceerd naar Edge Delivery Services
+- Gevormde beveiligingsinstellingen voor het verzenden van formulieren
+- De juiste URL-toegang voor eindgebruikers instellen
+- Functionaliteit en toegankelijkheid van geverifieerde formulieren
+
+Uw formulier is nu live en klaar voor productie.

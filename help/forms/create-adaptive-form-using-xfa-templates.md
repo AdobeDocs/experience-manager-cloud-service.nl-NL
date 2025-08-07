@@ -4,13 +4,13 @@ description: Leer hoe te om een Aangepast Vorm tot stand te brengen gebruikend  
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier maken (kerncomponenten) op basis van XFA-formuliersjablonen
 
@@ -25,7 +25,7 @@ U kunt uw XFA-formuliersjablonen of XDP-formuliersjablonen opnieuw gebruiken om 
 Enkele voordelen van het maken van formulieren op basis van XFA-formuliersjablonen of XDP-bestanden zijn:
 
 * **de besparingen van de Tijd**: U kunt bestaande XFA vormmalplaatjes (XDP dossiers) snel opnieuw gebruiken zonder het moeten de vormstructuur opnieuw creëren, die tijd en inspanning tijdens het auteursproces besparen.
-* **Efortless migratie**: Als u reeds XFA vormmalplaatjes in gebruik hebt, verstrekt deze optie een gemakkelijke migratieweg aan Adaptief Forms, die u toestaat om uit de voordelen van moderne AEMComponenten van de Kern voordeel te halen zonder bestaande vormgegevens en logica te verliezen.
+* **Efortless migratie**: Als u reeds XFA vormmalplaatjes in gebruik hebt, verstrekt deze optie een gemakkelijke migratieweg aan Adaptief Forms, die u toestaat om uit de voordelen van de moderne Componenten van de Kern van AEM voordeel te halen zonder bestaande vormgegevens en logica te verliezen.
 * **Verbeterde gebruikerservaring**: De adaptieve Forms is ontvankelijker en klantgericht dan vormen XFA. Door over te schakelen op Adaptive Forms kunt u een gebruiksvriendelijkere ervaring garanderen voor verschillende apparaten en schermgrootten.
 * **Verbeterde integratie**: De adaptieve Forms integreert beter met andere eigenschappen, zoals werkschema&#39;s, gegevensband, en vormverklaringen, toelatend soepelere werkschema&#39;s en beter algemeen vormbeheer.
 
@@ -43,7 +43,7 @@ U hebt het volgende nodig om een adaptief formulier te maken op basis van kernco
 Voer de volgende stappen uit om een adaptief formulier te maken met behulp van XFA- of XDP-formuliersjablonen:
 
 1. Meld u aan bij de auteurinstantie van [!DNL Experience Manager Forms] .
-1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Nadat u zich hebt aangemeld, selecteert u in de linkerbovenhoek **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+1. Voer uw referenties in op de Experience Manager-aanmeldingspagina. Nadat u zich hebt aangemeld, selecteert u in de linkerbovenhoek **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
    ![ Forms en Documenten ](/help/forms/assets/create-fdm.png)
 
@@ -84,7 +84,7 @@ Voer de volgende stappen uit om een adaptief formulier te maken met behulp van X
 
    >[!NOTE]
    >
-   > Na het selecteren van **Malplaatjes van de Vorm** in het 2&rbrace; Model **lusje van de Vorm, kan het niet worden veranderd.**
+   > Na het selecteren van **Malplaatjes van de Vorm** in het 2} Model **lusje van de Vorm, kan het niet worden veranderd.**
 
 
 Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.  Op basis van het type adaptief formulier worden de formulierelementen in de bijbehorende XFA-formuliersjabloon weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.
@@ -93,7 +93,3 @@ Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. 
 >
 > U kunt scripts voor XDP-formuliervelden uitschakelen met de paneelwerkbalk van het toegevoegde veld. Creeer logics voor de toegevoegde gebieden gebruikend de [ Visuele Redacteur van de Regel ](/help/forms/rule-editor-core-components.md).
 
-## Zie ook
-
-{{see-also}}
-* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](/help/forms/rule-editor-core-components.md)

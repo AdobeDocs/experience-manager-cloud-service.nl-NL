@@ -4,7 +4,7 @@ description: Creëer en lever hoogwaardige formulieren op Adobe Experience Manag
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Edge Delivery Services for AEM Forms is een set services die een snelle ontwikke
 
 Met deze services kunt u:
 
-* **creeer inschrijvingservaringen met hulpmiddelen van uw keus:** verhoog auteursefficiency door inhoudsbronnen te ontkoppelen. U kunt in het vak Document-based Authoring (Microsoft SharePoint of Google Drive), WYSIWYG Authoring (Universal Editor of Adaptive Forms Editor) gebruiken. U kunt met meerdere inhoudsbronnen werken op dezelfde formuliersite en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets, Universal Editor of Adaptive Forms Editor.
+- **creeer inschrijvingservaringen met hulpmiddelen van uw keus:** verhoog auteursefficiency door inhoudsbronnen te ontkoppelen. U kunt in het vak Document-based Authoring (Microsoft SharePoint of Google Drive), WYSIWYG Authoring (Universal Editor of Adaptive Forms Editor) gebruiken. U kunt met meerdere inhoudsbronnen werken op dezelfde formuliersite en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets, Universal Editor of Adaptive Forms Editor.
 
-* **Lever uitzonderlijke Ervaringen Digitale Inschrijving:** Lever de Ervaringen van de Inschrijving Digitale die en snel en onophoudelijk uw vormprestaties door Operationele Telemetrie laden en teruggeven controleren. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
+- **Lever uitzonderlijke Ervaringen Digitale Inschrijving:** Lever de Ervaringen van de Inschrijving Digitale die en snel en onophoudelijk uw vormprestaties door Operationele Telemetrie laden en teruggeven controleren. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
 
-* **ontwikkelaarsvriendelijke toolset van het Gebruik:** Edge Delivery Services voor AEM Forms
+- **ontwikkelaarsvriendelijke toolset van het Gebruik:** Edge Delivery Services voor AEM Forms
 maakt gebruik van gewone HTML, moderne CSS en vanilla JavaScript om uitzonderlijke ervaringen te creëren, waarbij de steile leercurve van een specifiek framework wordt vermeden. Een ontwikkelaar met basisvaardigheden voor webontwikkeling kan formuliercomponenten en -ervaringen aanpassen en eenvoudig bouwen. Er is geen behoefte om op een pijpleiding te wachten om te lopen, enkel controle-binnen uw code in GitHub en uw veranderingen zijn levend.
 
 ## Een ontwerpmethode kiezen
@@ -31,9 +31,9 @@ maakt gebruik van gewone HTML, moderne CSS en vanilla JavaScript om uitzonderlij
 
 Met Adobe Experience Manager (AEM) Edge Delivery Services (EDS) kunt u vanaf de rand genieten van supersnelle, zeer schaalbare webbeleving. Deze gids verklaart **hoe te om vormen voor die ervaringen** te bouwen en te publiceren—met een duidelijke aanbevelingshiërarchie:
 
-* **Universele Redacteur (UE) - Beste keus voor de meeste teams**
-* **document-Gebaseerde Authoring (Docs/Sheets) - Uitstekend voor snelle, eenvoudige vormen**
-* **Document Authoring (DA) - Gebruik om formulieren in te sluiten in pagina&#39;s die met DA zijn geschreven**
+- **Universele Redacteur (UE) - Beste keus voor de meeste teams**
+- **document-Gebaseerde Authoring (Docs/Sheets) - Uitstekend voor snelle, eenvoudige vormen**
+- **Document Authoring (DA) - Gebruik om formulieren in te sluiten in pagina&#39;s die met DA zijn geschreven**
 
 Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijpen en de volgende stappen volgen in de richting van formulieren die klaar zijn voor productie.
 
@@ -49,23 +49,23 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 
 ### Universele editor
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is een visueel, belemmering-en-dalingsauteursgereedschap voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
 
-* WYSIWYG-bewerkingen in realtime en voorvertoningen van apparaten.
-* Directe integratie met AEM-elementen, -workflows en -formuliergegevensmodel (FDM).
-* Naadloze overdracht aan ontwikkelaars voor aangepaste componenten in vanilla JS/CSS.
-* Geavanceerde regeleditor voor het maken van complexe logica.
-* Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
-* WYSIWYG-bewerkingservaring voor het maken en visualiseren van formulieren.
-* Document met recordfunctionaliteit om tamper-proof archieven van verzonden gegevens te maken.
-* Integratie met Adobe Sign for Electronic signatures.
-* Integratie met Adobe Workfront Fusion om Adobe Workfront Fusion-scenario&#39;s te activeren bij het verzenden van het formulier.
-* Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
-* Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
-* De mogelijkheid om te kiezen uit meerdere verzendacties voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
-* Verzenden met gebruik van verzendacties voor Forms Submission Service (FSS) of AEM Publish
+- WYSIWYG-bewerkingen in realtime en voorvertoningen van apparaten.
+- Directe integratie met AEM-elementen, -workflows en -formuliergegevensmodel (FDM).
+- Naadloze overdracht aan ontwikkelaars voor aangepaste componenten in vanilla JS/CSS.
+- Geavanceerde regeleditor voor het maken van complexe logica.
+- Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
+- WYSIWYG-bewerkingservaring voor het maken en visualiseren van formulieren.
+- Document met recordfunctionaliteit om tamper-proof archieven van verzonden gegevens te maken.
+- Integratie met Adobe Sign for Electronic signatures.
+- Integratie met Adobe Workfront Fusion om Adobe Workfront Fusion-scenario&#39;s te activeren bij het verzenden van het formulier.
+- Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
+- Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
+- De mogelijkheid om te kiezen uit meerdere verzendacties voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
+- Verzenden met gebruik van verzendacties voor Forms Submission Service (FSS) of AEM Publish
 
 **Aanbeveling**: Begin elk nieuw vormproject met Universele Redacteur tenzij uw team 100 % document-centric is en de vorm zeer fundamenteel is.
 
@@ -74,14 +74,14 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 
 [ op document-Gebaseerde creatie ](/help/edge/docs/forms/tutorial.md) is best geschikt voor het creëren van eenvoudige, laag-ingewikkelde vormen gebruikend vertrouwde hulpmiddelen zoals Microsoft Word, Google Docs, of de Bladen van Google. Deze methode is ideaal voor inhoudsteams die een snelle en eenvoudige manier nodig hebben om formulieren te maken.
 
-* Toegankelijke onderdelen voor een gebruiksvriendelijke ervaring.
-* Gestandaardiseerde HTML-structuur voor consistente rendering.
-* Regels en validaties om de nauwkeurigheid van de gegevens te garanderen.
-* Opties voor bestandsbijlagen voor het verzamelen van aanvullende informatie.
-* Google reCAPTCHA-integratie voor spambescherming.
-* Mogelijkheid om aangepaste formuliercomponenten te maken voor specifieke behoeften.
-* Formuliergegevens rechtstreeks verzenden naar Microsoft Excel of Google-werkbladen of e-mailadressen.
-* De prestaties van uw formulieren controleren met behulp van de operationele telemetrie
+- Toegankelijke onderdelen voor een gebruiksvriendelijke ervaring.
+- Gestandaardiseerde HTML-structuur voor consistente rendering.
+- Regels en validaties om de nauwkeurigheid van de gegevens te garanderen.
+- Opties voor bestandsbijlagen voor het verzamelen van aanvullende informatie.
+- Google reCAPTCHA-integratie voor spambescherming.
+- Mogelijkheid om aangepaste formuliercomponenten te maken voor specifieke behoeften.
+- Formuliergegevens rechtstreeks verzenden naar Microsoft Excel of Google-werkbladen of e-mailadressen.
+- De prestaties van uw formulieren controleren met behulp van de operationele telemetrie
 
 
 ### Forms insluiten in Document Authoring (DA)
@@ -113,10 +113,10 @@ In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Exce
 
 ## Volgende stappen
 
-* [Functies en mogelijkheden van de Universal Editor voor Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [ creeer uw eerste vorm gebruikend de Bladen van Google of Microsoft Excel ](/help/edge/docs/forms/tutorial.md).
-* [ bed Forms in Document Authoring (DA) in ](https://www.aem.live/developer/da-tutorial)
+- [Functies en mogelijkheden van de Universal Editor voor Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [Uw eerste formulier maken met de Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+- [ creeer uw eerste vorm gebruikend de Bladen van Google of Microsoft Excel ](/help/edge/docs/forms/tutorial.md).
+- [ bed Forms in Document Authoring (DA) in ](https://www.aem.live/developer/da-tutorial)
 
 
 U kunt nu uw eerste krachtige formulier maken met AEM Edge Delivery Services.
@@ -126,15 +126,15 @@ U kunt nu uw eerste krachtige formulier maken met AEM Edge Delivery Services.
 
 ## Start creating forms
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+- [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
+- [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+- [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+- [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
+- [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
+- [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
+- [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
+- [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+- [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
@@ -150,10 +150,10 @@ U kunt nu uw eerste krachtige formulier maken met AEM Edge Delivery Services.
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /* Adding transition effect */
+        transition: background-color 0.3s ease; /- Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /* Changing background color on hover */
+        background-color: #f0f0f0; /- Changing background color on hover */
     }
 </style>
 

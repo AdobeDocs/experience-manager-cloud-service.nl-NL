@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publice
 
 ## Vereisten
 
-* U hebt een rekening GitHub, en begrijpt de grondbeginselen van het Git.
-* Je hebt een Google- of Microsoft SharePoint-account.
-* U begrijpt de basisbeginselen van HTML, CSS en JavaScript.
-* Node/npm is geïnstalleerd voor lokale ontwikkeling.
+- U hebt een rekening GitHub, en begrijpt de grondbeginselen van het Git.
+- Je hebt een Google- of Microsoft SharePoint-account.
+- U begrijpt de basisbeginselen van HTML, CSS en JavaScript.
+- Node/npm is geïnstalleerd voor lokale ontwikkeling.
 
 **Koppen omhoog!** In deze zelfstudie worden macOS, Chrome en Visual Studio Code gebruikt. Terwijl de stappen voor andere montages kunnen worden aangepast, zouden de screenshots en specifieke elementen UI op uw gekozen werkend systeem, browser, en coderedacteur kunnen verschillen.
 
@@ -63,9 +63,9 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM-projec
 
    Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.aem.page/` .
 
-   * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
-   * `<repository>` geeft uw GitHub-opslagplaats aan.
-   * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
+   - `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
+   - `<repository>` geeft uw GitHub-opslagplaats aan.
+   - `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
    Als de naam van de vertakking bijvoorbeeld `main` is, de opslagplaats `wefinance` is en de eigenaar `wkndforms` is, wordt de website uitgevoerd op `https://main--wefinance--wkndforms.aem.page`
 &lt;!—(https://main—wefinance—wkndform.aem.page)—>
@@ -173,9 +173,9 @@ Niet-gepubliceerde inhoud voorvertonen:
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
-   * `<repository>` geeft uw GitHub-opslagplaats aan.
-   * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
+   - `<branch>` verwijst naar de vertakking van uw bewaarplaats GitHub.
+   - `<repository>` geeft uw GitHub-opslagplaats aan.
+   - `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
@@ -241,7 +241,7 @@ Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
        npm install -g @adobe/aem-cli
    ```
 
-1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt &lt;owner> met de eigenaar van de opslagplaats en &lt;repo> met de naam van de opslagplaats:
+1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt <owner> met de eigenaar van de opslagplaats en <repo> met de naam van de opslagplaats:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,10 +281,10 @@ Integreren:
 
 1. Kopieer en kleef de volgende omslagen en de dossiers van [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) in uw Project van AEM:
 
-   * [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
-   * [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
-   * [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
-1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het &lbrace;[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
+   - [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
+   - [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
+   - [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
+1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het {[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
 1. Navigeer naar `/models/_section.json` in uw AEM-project en voeg &quot;form&quot; en &quot;embed-adaptive-form&quot; toe aan de componentarray van het `filters` -object:
 
    ```
@@ -363,13 +363,9 @@ Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM-project. U kun
 
 Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
 
-* **los de Fout van de Weg van de Module op:**
+- **los de Fout van de Weg van de Module op:**
 Als u de fout &quot;Onbekwaam ontmoet om weg aan module &quot;&quot;/scripts/lib-franklin.js&quot;op te lossen, navigeer aan het [ EDS Project ] /blocks/forms/form.js- dossier. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
 
-* **handvat het Leiden Fouten:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het [ /package.json dossier van het Project van 0&rbrace; EDS &lbrace;en wijzig het &quot;plusteken&quot;manuscript van ] aan `"lint": "npm run lint:js && npm run lint:css"`. `"lint": "echo 'skipping linting for now'"` Sparen het dossier en begaat de veranderingen in uw project GitHub.
+- **handvat het Leiden Fouten:**
+Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het [ /package.json dossier van het Project van 0} EDS {en wijzig het &quot;plusteken&quot;manuscript van ] aan `"lint": "npm run lint:js && npm run lint:css"`. `"lint": "echo 'skipping linting for now'"` Sparen het dossier en begaat de veranderingen in uw project GitHub.
 
-
-## Zie ook
-
-{{see-more-forms-eds}}

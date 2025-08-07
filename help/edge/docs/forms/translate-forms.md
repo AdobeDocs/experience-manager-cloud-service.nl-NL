@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # Een Edge Delivery Services voor AEM Forms vertalen en lokaliseren
 
-Bij het vertalen van formulieren in Edge Delivery Services gaat het om het omzetten van formulierinhoud van de ene taal naar de andere, waarbij de nadruk ligt op nauwkeurigheid, helderheid en consistentie. Vertaalde of gelokaliseerde formulieren maken een breder bereik voor het publiek mogelijk op verschillende geografische locaties, waardoor de gebruikerservaring toeneemt en een betere communicatie tussen verschillende taalvoorkeuren mogelijk wordt.
+In Edge Delivery Services gaat het bij het vertalen van formulieren om het omzetten van formulierinhoud van de ene taal naar de andere, waarbij de nadruk ligt op nauwkeurigheid, helderheid en consistentie. Vertaalde of gelokaliseerde formulieren maken een breder bereik voor het publiek mogelijk op verschillende geografische locaties, waardoor de gebruikerservaring toeneemt en een betere communicatie tussen verschillende taalvoorkeuren mogelijk wordt.
 
 
 Aan het einde van het artikel leert u:
 
-* [Formulieren vertalen in Google Drive](#translate-form-google-drive)
-* [Formulieren vertalen binnen SharePoint-site](#translate-form-sharepoint)
+- [Formulieren vertalen in Google Drive](#translate-form-google-drive)
+- [Formulieren vertalen binnen SharePoint-site](#translate-form-sharepoint)
 
 ## Formulieren vertalen in Google Drive {#translate-form-google-drive}
 
@@ -68,11 +68,11 @@ https://main—wefinance—wkndforms.hlx.live/enquirytranslate
 
 ## Bekende problemen {#known-issues}
 
-* De labels van het formulier worden vertaald naar de opgegeven gelokaliseerde taal op het `shared-default` -blad, maar de foutberichten worden weergegeven in de standaardtaal van de browser.
+- De labels van het formulier worden vertaald naar de opgegeven gelokaliseerde taal op het `shared-default` -blad, maar de foutberichten worden weergegeven in de standaardtaal van de browser.
 
   ![ het bericht van de Fout ](/help/forms/assets/translate-error-message.png)
 
-* Wanneer u de kalender opent, wordt de kalenderdrop-down getoond in de standaardtaal van browser.
+- Wanneer u de kalender opent, wordt de kalenderdrop-down getoond in de standaardtaal van browser.
 
   ![ het bericht van de Fout ](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ https://main—wefinance—wkndforms.hlx.live/enquirytranslate
 
 **A**: Aan inputtekst in een specifieke gelokaliseerde taal, pas de toetsenbordmontages op uw apparaat aan. Raadpleeg de volgende koppelingen voor instructies over hoe u dit kunt doen:
 
-* [ opstelling uw Mac om input in een andere taal ](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac) te nemen
-* [ opstelling uw Vensters om input in een andere taal ](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options) te nemen
-* [ Opstelling uw Android of iPhones/iPads om input in een andere taal ](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid) te nemen
+- [ opstelling uw Mac om input in een andere taal ](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac) te nemen
+- [ opstelling uw Vensters om input in een andere taal ](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options) te nemen
+- [ Opstelling uw Android of iPhones/iPads om input in een andere taal ](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid) te nemen
 
 
 **Q**: Hoe kan ik een lijst van scènes terugwinnen die in de `GOOGLETRANSLATE` functie worden gebruikt?
 
 **A**: U kunt naar de [ officiële documentatie van Google ](https://cloud.google.com/translate/docs/languages) voor een uitvoerige lijst van scènes verwijzen die in GOOGLETRANSLATE worden gebruikt.
 
-## Zie ook
-
-{{see-more-forms-eds}}
 

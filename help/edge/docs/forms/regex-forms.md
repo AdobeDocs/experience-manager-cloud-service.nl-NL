@@ -1,14 +1,14 @@
 ---
-title: Edge Delivery Services voor AEM Forms die vaak worden gebruikt voor het valideren van formuliervelden
-description: Edge Delivery Services voor AEM Forms die vaak worden gebruikt voor het valideren van formuliervelden
+title: Edge Delivery Services for AEM Forms veelgebruikte regex-expressies voor validatie van formuliervelden
+description: Edge Delivery Services for AEM Forms veelgebruikte regex-expressies voor validatie van formuliervelden
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,10 @@ Hier volgen enkele reguliere expressies waarmee u formuliervalidatie kunt verbet
 
 Zorgt voor ten minste 8 tekens met:
 
-* Kleine letter (a-z)
-* Hoofdletter (A-Z)
-* Cijfer (0-9)
-* Speciaal teken (@$!%*?&amp;)
+- Kleine letter (a-z)
+- Hoofdletter (A-Z)
+- Cijfer (0-9)
+- Speciaal teken (@$!%*?&amp;)
 
 
 ## E-mailadres
@@ -70,13 +70,13 @@ Hiermee zorgt u voor een geldige URL die begint met http of https.
 Valideert datums in de notatie JJJJ-MM-DD.
 
 
-## Tijd (UU:MM)
+## Tijd (HH:MM)
 
 ```regex
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-Hiermee worden tijden gevalideerd in de notatie HH:MM (24-uursnotatie).
+Valideert tijden in formaat HH :MM (24-uurformaat).
 
 
 ## Postcode (Amerikaanse notatie)

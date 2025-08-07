@@ -1,24 +1,24 @@
 ---
 title: Aangepaste componenten van het Blok van de Vorm en hun eigenschappen
-description: Dit document biedt een overzicht van de formuliercomponenten en hun eigenschappen die beschikbaar zijn in Edge Delivery Services voor AEM Forms.
+description: Dit document bevat een overzicht van de formuliercomponenten en de bijbehorende eigenschappen die beschikbaar zijn in Edge Delivery Services for AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
 # Aangepaste componenten van het Blok van de Vorm en hun eigenschappen
 
-Met Edge Delivery Services voor AEM Forms kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van verschillende componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
+Met Edge Delivery Services for AEM Forms kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van verschillende componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
 
 
 ![ een steekproefspreadsheet van A met sommige componenten en eigenschappen ](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-Het Adaptieve Blok van Forms produceert a [ eenvormige HTML structuur ](/help/edge/docs/forms/style-theme-forms.md) voor alle gebiedstypes en containers (panelen) die de consistentie verzekeren. Deze verenigbare structuur maakt het gemakkelijker om [ een vorm ](/help/edge/docs/forms/style-theme-forms.md) te stileren.
+Het Adaptieve Blok van Forms produceert a [ eenvormige structuur van HTML ](/help/edge/docs/forms/style-theme-forms.md) voor alle gebiedstypes en containers (panelen) die de consistentie verzekeren. Deze verenigbare structuur maakt het gemakkelijker om [ een vorm ](/help/edge/docs/forms/style-theme-forms.md) te stileren.
 
 ## Beschikbare componenten
 
@@ -26,17 +26,17 @@ Hier volgt een overzicht van de beschikbare componenten:
 
 ### Invoervelden
 
-* Alle geldige HTML5 [ inputtypes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) en [ textarea ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Bijvoorbeeld knop, selectievakje, kleur, datum, datum, lokale datum, e-mail, bestand, verborgen, afbeelding, maand, nummer, wachtwoord, radio, bereik, reset, submit, tel, text, time, url en week.
+- Alle geldige HTML5 [ inputtypes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) en [ textarea ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Bijvoorbeeld knop, selectievakje, kleur, datum, datum, lokale datum, e-mail, bestand, verborgen, afbeelding, maand, nummer, wachtwoord, radio, bereik, reset, submit, tel, text, time, url en week.
 
 ### Selectie-elementen
 
-* [ de groepen van Checkbox ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Voor het selecteren van veelvoudige opties.
-* [ Keuzerondjes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Voor het selecteren van één enkele optie van een groep.
-* [ menu&#39;s Dropdown ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): Om een menu van opties te tonen. Bijvoorbeeld vervolgkeuzelijst.
+- [ de groepen van Checkbox ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Voor het selecteren van veelvoudige opties.
+- [ Keuzerondjes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Voor het selecteren van één enkele optie van een groep.
+- [ menu&#39;s Dropdown ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): Om een menu van opties te tonen. Bijvoorbeeld vervolgkeuzelijst.
 
 ### Containers
 
-* Deelvensters/containers: gerelateerde formulierelementen groeperen voor een betere organisatie. Het is een combinatie van [ veldset ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) en [ legenda ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+- Deelvensters/containers: gerelateerde formulierelementen groeperen voor een betere organisatie. Het is een combinatie van [ veldset ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) en [ legenda ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Eigenschappen van componenten
@@ -64,8 +64,3 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 | Herhalbaar | Alles | Een Booleaanse eigenschap voor `fieldset` die aangeeft dat een bepaalde veldset kan worden herhaald voor opgegeven `Min` en `Max` het aantal keren. De eigenschap `Min` moet op 1 of hoger worden ingesteld. Stel de eigenschap `Min` niet in op 0. |
 | Zichtbare expressie | Alles | Een zichtbare expressie verwijst naar een spreadsheetformule, aangeduid met de tag &#39;=&#39;, die wordt gebruikt om de zichtbaarheid van een veld te bepalen. In deze formule kan alleen de eigenschap value van andere velden worden gebruikt, zodat de zichtbaarheid van velden binnen het systeem eenvoudig kan worden beheerd. |
 | Waardeuitdrukking | Alles | Een waardexpressie verwijst naar een spreadsheetformule, aangeduid met de tag &#39;=&#39;, die wordt gebruikt om de waarde van een veld te bepalen. In deze formule kan alleen de eigenschap value van andere velden worden gebruikt, zodat de veldwaarde binnen het systeem eenvoudig kan worden beheerd. |
-
-
-## Zie ook
-
-{{see-more-forms-eds}}

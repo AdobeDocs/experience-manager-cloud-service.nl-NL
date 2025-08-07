@@ -1,46 +1,46 @@
 ---
-title: Opties vervolgkeuzelijst laden van een URL of een ander blad voor Edge Delivery Services voor AEM Forms as a Cloud Service
+title: Opties vervolgkeuzelijst laden vanaf een URL of een ander blad voor Edge Delivery Services voor AEM Forms as a Cloud Service
 description: De opties voor de vervolgkeuzelijst worden opgenomen in een afzonderlijk spreadsheet en vervolgens geïmporteerd in het primaire spreadsheet via de opgegeven URL.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
 
 
-# Opties van een URL of een ander blad voor Edge Delivery Services voor AEM Forms as a Cloud Service
+# Opties van een URL of een ander blad voor Edge Delivery Services for AEM Forms as a Cloud Service
 
 Forms bevat vaak vervolgkeuzemenu&#39;s die gebruikers kunnen selecteren op basis van vooraf gedefinieerde opties. Deze opties worden doorgaans in het formulier zelf gedefinieerd, maar het beheren van lange lijsten kan lastig zijn. In deze handleiding wordt beschreven hoe u het ontwerpen van formulieren kunt verbeteren door meerkeuzeopties te laden vanuit een afzonderlijk spreadsheet via een URL.
 
 
 De voordelen van het laden van een meerkeuzeoptie uit een afzonderlijk spreadsheet zijn:
 
-* Vereenvoudigd beheer: houd meerkeuzeopties op een gecentraliseerde locatie voor eenvoudigere updates en toevoegingen.
-* Verbeterde efficiëntie: u hoeft lange optielijsten niet handmatig toe te voegen aan de formulierdefinitie.
+- Vereenvoudigd beheer: houd meerkeuzeopties op een gecentraliseerde locatie voor eenvoudigere updates en toevoegingen.
+- Verbeterde efficiëntie: u hoeft lange optielijsten niet handmatig toe te voegen aan de formulierdefinitie.
 
 ![ drop-down opties ](/help/forms/assets/drop-down-options.png)
 
 
 Aan het einde van dit artikel leert u:
 
-* [Opties definiëren in een afzonderlijke spreadsheet](#define-options)
-* [URL toevoegen om opties voor vervolgkeuzelijsten te laden](#add-url)
+- [Opties definiëren in een afzonderlijke spreadsheet](#define-options)
+- [URL toevoegen om opties voor vervolgkeuzelijsten te laden](#add-url)
 
 ## Opties definiëren in een afzonderlijk blad {#define-options}
 
 Opties definiëren in een afzonderlijk werkblad
 
 1. Een werkblad maken:
-   1. Zoek de AEM projectmap in Microsoft® SharePoint of Google Drive.
+   1. Zoek de AEM-projectmap in Microsoft® SharePoint of Google Drive.
    1. Voeg een nieuw blad toe. Bijvoorbeeld &#39;gezamenlijk-land&#39;.
 1. Optie-kolommen definiëren:
 Voeg twee kolommen toe: &quot;Optie&quot; en &quot;Waarde&quot;.
-   * Met Option wordt de tekst gedefinieerd die in het vervolgkeuzemenu wordt weergegeven.
-   * &quot;Waarde&quot; definieert de verzonden waarde wanneer een gebruiker de optie selecteert.
+   - Met Option wordt de tekst gedefinieerd die in het vervolgkeuzemenu wordt weergegeven.
+   - &quot;Waarde&quot; definieert de verzonden waarde wanneer een gebruiker de optie selecteert.
 
    >[!NOTE]
    >
@@ -84,11 +84,6 @@ Nadat u de URL in de formulierdefinitie hebt geïntegreerd om vervolgkeuzelijsto
 Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndform&#39; en gebruikt u de &#39;main&#39;-vertakking, geeft de onderstaande URL het `enquiry` -formulier weer met de opties die in het afzonderlijke blad zijn opgeslagen:
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## Zie ook
-
-{{see-more-forms-eds}}
 
 

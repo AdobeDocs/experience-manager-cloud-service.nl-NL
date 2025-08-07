@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -93,7 +93,7 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
 
 ## Contextbewuste configuraties voor specifieke uitvoeringsmodi {#runmode-specific-context-aware-config}
 
-[!UICONTROL Form Data Model (FDM)] gebruikt [ Sling context-bewuste configuraties ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=nl-NL) om verschillende gegevensbronparameters te steunen om met gegevensbronnen voor verschillende [!DNL Experience Manager] looppaswijzen te verbinden.
+[!UICONTROL Form Data Model (FDM)] gebruikt [ Sling context-bewuste configuraties ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) om verschillende gegevensbronparameters te steunen om met gegevensbronnen voor verschillende [!DNL Experience Manager] looppaswijzen te verbinden.
 
 Wanneer [!UICONTROL Form Data Model (FDM)] cloudconfiguraties gebruikt om parameters op te slaan, die bij inchecken en implementeren via bronbesturing (GIT-opslagruimte van Cloud-Manager) cloudconfiguratie met dezelfde parameters maakt voor alle uitvoermodi (Ontwikkeling, Werkgebied en Productie). Als er echter verschillende gegevenssets nodig zijn voor test- en productieomgevingen, gebruiken we gegevensbronparameters (bijvoorbeeld de URL van de gegevensbron) voor verschillende uitvoermodi van [!DNL Experience Manager] .
 
@@ -110,7 +110,7 @@ Implementatiespecifieke cloudconfiguraties inschakelen in [!UICONTROL Form Data 
 1. Integreer de cloudconfiguratie in het project Archetype van [!DNL Experience Manager] .
    1. Pak het gedownloade pakket uit.
    1. Kopieer de map `jcr_root` en plaats deze `ui.content` > `src` > `main` > `content` .
-   1. Werk `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` bij voor het filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Voor details, zie [ ui.content module van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=nl-NL). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
+   1. Werk `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` bij voor het filter `/conf/{foldername}/settings/cloudconfigs/fdm` . Voor details, zie [ ui.content module van het Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
 
 1. Maak een contextbewuste configuratie voor Apache Sling. Om de configuratie te creëren OSGi:
    1. **opstelling OSGi configuratiedossiers in [!DNL Experience Manager] project Archetype.**
@@ -131,7 +131,7 @@ Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, zal de
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] de gebruikers kunnen de geheime waarden coderen gebruikend crypto steun voor details, zie [ encryptiesteun voor configuratieeigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=nl-NL#enabling-encryption-support) en plaats gecodeerde tekst in de waarde nadat [ context bewuste configuraties in de dienstpak 6.5.13.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL#runmode-specific-context-aware-config) beschikbaar zijn.
+      >[!DNL Adobe Managed Service] de gebruikers kunnen de geheime waarden coderen gebruikend crypto steun voor details, zie [ encryptiesteun voor configuratieeigenschappen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) en plaats gecodeerde tekst in de waarde nadat [ context bewuste configuraties in de dienstpak 6.5.13.0 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config) beschikbaar zijn.
 
 1. Vernieuw de gegevensbrondefinities gebruikend de optie om gegevensbrondefinities in de [ modelredacteur van Gegevens van de Vorm ](#data-sources) te verfrissen FDM geheime voorgeheugen door FDM UI en de recentste configuratie te krijgen.
 
@@ -142,6 +142,3 @@ U hebt nu een Model van de Gegevens van de Vorm (FDM) met gegevensbronnen die aa
 Voor meer informatie, zie [ Werk met model van vormgegevens ](work-with-form-data-model.md).
 
 
->[!MORELIKETHIS]
->
->* [ Model van de Gegevens van de Vorm van het Gebruik (FDM) ](/help/forms/using-form-data-model.md)

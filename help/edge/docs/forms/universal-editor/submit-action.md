@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ De voorlegging van de vorm is de kritieke definitieve stap in de gebruikersreis-
 
 Aan het einde van dit document leert u hoe u:
 
-* Verschillende typen verzendacties configureren voor uw formulieren
-* REST-eindpuntindieningen instellen voor integratie met externe systemen
-* E-mailverzendingen voor formulierreacties configureren
-* Implementeer aangepaste verzendacties voor specifieke bedrijfsbehoeften
-* Formuliervalidatie en foutscenario&#39;s tijdens verzending verwerken
+- Verschillende typen verzendacties configureren voor uw formulieren
+- REST-eindpuntindieningen instellen voor integratie met externe systemen
+- E-mailverzendingen voor formulierreacties configureren
+- Implementeer aangepaste verzendacties voor specifieke bedrijfsbehoeften
+- Formuliervalidatie en foutscenario&#39;s tijdens verzending verwerken
 
 ### Doelpubliek
 
 Deze handleiding is ontworpen voor:
 
-* **de ontwikkelaars van de Vorm** die voorleggingslogica uitvoeren
-* **integrators van het Systeem** verbindend vormen met achterste systemen
-* **Bedrijfs analisten** die vormwerkschema&#39;s bepalen
-* **Technische architecten** ontwerpend processen van de vormvoorlegging
+- **de ontwikkelaars van de Vorm** die voorleggingslogica uitvoeren
+- **integrators van het Systeem** verbindend vormen met achterste systemen
+- **Bedrijfs analisten** die vormwerkschema&#39;s bepalen
+- **Technische architecten** ontwerpend processen van de vormvoorlegging
 
 ### Beschikbare verzendhandelingen
 
@@ -49,16 +49,16 @@ De Universal Editor biedt twee primaire verzendactietypen:
 
 Voordat u verzendacties configureert, moet u ervoor zorgen dat:
 
-* Toegang tot de universele editor
-* Juiste machtigingen voor formulierconfiguratie
-* Begrijpen van uw doel voorleggings eindpunt of e-mailconfiguratie
+- Toegang tot de universele editor
+- Juiste machtigingen voor formulierconfiguratie
+- Begrijpen van uw doel voorleggings eindpunt of e-mailconfiguratie
 
 Met een handeling Verzenden geeft u de bestemming op voor de gegevens die via een adaptief formulier worden verzameld. Het verzendingsproces begint wanneer de gebruiker op de knop **[!UICONTROL Submit]** op het formulier klikt. AEM Forms biedt twee soorten verzendacties die hieronder worden beschreven. U kunt aangepaste verzendacties maken en gebruiken om aan uw specifieke behoeften te voldoen. De verzendacties buiten de box zijn:
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [Verzenden naar REST-eindpunt](#rest-endpoint-submission-ue)
-* [E-mail verzenden](#email-submission-ue)
+- [Verzenden naar REST-eindpunt](#rest-endpoint-submission-ue)
+- [E-mail verzenden](#email-submission-ue)
 
 
 ### Verzenden naar REST-eindpunt {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ Met een handeling Verzenden geeft u de bestemming op voor de gegevens die via ee
 Verzenden naar REST Endpoint-actie wordt gebruikt om de verzonden formuliergegevens naar een opgegeven REST-eindpunt te verzenden. Het eindpunt kan tot of een interne server behoren waar de vorm wordt ontvangen of tot een externe server door een relatieve weg of een absolute weg te gebruiken. Als u gegevens wilt verzenden naar de AEM-server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM-server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik het absolute pad om gegevens naar een andere server te verzenden.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ Om een REST eindpunt te vormen:
 
 >[!NOTE]
 >
-> * Als u gegevens naar een interne server wilt posten, geeft u het pad van de bron op. De gegevens worden naar het pad van de bron gepost. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
-> * Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
+> - Als u gegevens naar een interne server wilt posten, geeft u het pad van de bron op. De gegevens worden naar het pad van de bron gepost. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
+> - Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het POST- verzoek anoniem te behandelen.
 
 ### E-mail verzenden {#email-submission-ue}
 
@@ -176,11 +176,8 @@ Met de optie Verzenden kunt u een bericht Actie verzenden configureren bij het v
 1. Selecteer de **[!UICONTROL Adaptive Form Block]** .
 1. Klik de eigenschappen ![ eigenschappen ](/help/forms/assets/Smock_Properties_18_N.svg) pictogram.
 1. Bij klikken ziet u de volgende optie:
-   * **[!UICONTROL On Submit]**: Bij Verzenden kunt u een bericht aanpassen dat wordt weergegeven wanneer een formulier wordt verzonden. Standaard wordt een aangepast bericht &quot;Bedankt voor het verzenden van het formulier&quot; weergegeven aan de gebruiker wanneer een formulier is verzonden.
+   - **[!UICONTROL On Submit]**: Bij Verzenden kunt u een bericht aanpassen dat wordt weergegeven wanneer een formulier wordt verzonden. Standaard wordt een aangepast bericht &quot;Bedankt voor het verzenden van het formulier&quot; weergegeven aan de gebruiker wanneer een formulier is verzonden.
 U kunt ook het Dank u bericht op vormvoorlegging aanpassen, door de optie aan **[!UICONTROL Show message]** te selecteren, en uw bericht toe te voegen/uit te geven in de Rich Text **Redacteur**.
 
 
-## Zie ook
-
-{{universal-editor-see-also}}
 

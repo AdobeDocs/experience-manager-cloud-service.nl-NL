@@ -4,9 +4,9 @@ description: Leer een sjabloon te genereren voor een Document of Record (DoR) vo
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4081'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -281,7 +281,6 @@ In de volgende tabel worden de componenten Adaptief formulier en de corresponder
 | Component Adaptief formulier | Overeenkomende XFA-component | Notities |
 |---|---|---|
 | Afbeelding | Afbeelding | De componenten TextDraw en Afbeelding, zowel gebonden als niet gebonden, worden altijd in het Document of Record weergegeven voor een adaptief XSD-formulier, tenzij ze worden uitgesloten met de instellingen Document of Record. |
-| Tekst | Tekst |
 
 ### Tabellen {#tables}
 
@@ -364,7 +363,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **voor de componenten van de Doos van de Controle en van de Keuzerondje, toon slechts de geselecteerde waarden**: Het plaatsen van het bezit toont slechts geselecteerde waarden van controledoos en radioknoop in [!UICONTROL Document of Record].
       * **Scheidingsteken voor veelvoudige waarde(s)**: U kunt om het even welk separator zoals komma of lijnonderbreking kiezen om veelvoudige waarden te tonen.
       * **Uitlijning van Opties**: U kunt de gewenste uitlijning (Horizontaal, Verticaal, Zelfde als Aangepast Vorm) selecteren om de groepering voor de gebieden zoals controledoos of radioknoop te plaatsen om op [!UICONTROL Document of Record] worden getoond. Standaard wordt de verticale uitlijning ingesteld voor de velden in [!UICONTROL Document of Record] . Als u de eigenschappen van de [!UICONTROL Form Field Properties] van DoR instelt, worden de eigenschappen overschreven die zijn ingesteld in [!UICONTROL Item Alignment] voor de velden op een adaptief formulier. Als u de optie [!UICONTROL Same as Aaptive form] selecteert, wordt de uitlijning zoals geconfigureerd in een instantie van de auteur van een adaptief formulier gebruikt voor [!UICONTROL Document of Record] -velden.
-      * **Aantal opties voor horizontale groepering**:U kunt het aantal opties plaatsen dat op het Document van Verslag voor de horizontale groepering moet worden getoond.
+      * **Aantal opties voor horizontale groepering**:You kan het aantal opties plaatsen dat op het Document van Verslag voor de horizontale groepering moet worden getoond.
 
       ![ Eigenschappen van het Gebied van de Vorm ](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ Voer de volgende stappen uit vanuit de auteur-instantie van de Adaptieve formuli
 1. Klik ![ vormen pictogram van het Pictogram ](/help/forms/assets/configure-icon.svg) om **[!UICONTROL Properties]** van de Aangepaste container van de Vorm te openen.
 1. Open het tabblad **[!UICONTROL Document of Record Template]** en selecteer een van de volgende opties:
    * **[!UICONTROL None]**: Als deze optie is geselecteerd, wordt er geen [!UICONTROL Document of Record] -sjabloon gemaakt voor uw adaptieve formulier.
-
-   * **[!UICONTROL Associate Form Template as Document of Record Template]**:Als deze optie is geselecteerd, wordt XFA-formulier gebruikt als sjabloon voor Document of Record.
-
+   * **[!UICONTROL Associate Form Template as Document of Record Template]**:Whendeze optie is geselecteerd, wordt XFA-formulier gebruikt als sjabloon voor Document of Record.
    * **[!UICONTROL Generate Document of Record]**: Als deze optie is geselecteerd, wordt de sjabloon [!UICONTROL Document of Record] automatisch gegenereerd voor uw adaptieve formulier.
 
 1. Selecteer ![ sparen ](/help/forms/assets/check-button.png) om de eigenschappen te bewaren.

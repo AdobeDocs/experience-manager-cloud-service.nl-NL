@@ -4,9 +4,9 @@ description: Thema en stijlen aanpassen voor Edge Delivery Services for AEM Form
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -22,51 +22,51 @@ In dit document wordt de HTML-structuur voor verschillende formuliercomponenten 
 
 Aan het einde van het artikel zult u:
 
-* Begrijpen wat de structuur is van het standaard CSS-bestand dat is opgenomen in Adaptive Forms Block
-* Inzicht in de HTML-structuur van formuliercomponenten die worden geleverd door het Adaptief Forms-blok, inclusief algemene componenten en specifieke componenten zoals dropdowns, radiogroepen en selectievakjesgroepen
-* Leer hoe u formuliervelden kunt opmaken op basis van veldtype- en veldnamen met CSS-kiezers, zodat u consistent of uniek kunt opmaken op basis van vereisten
+- Begrijpen wat de structuur is van het standaard CSS-bestand dat is opgenomen in Adaptive Forms Block
+- Inzicht in de HTML-structuur van formuliercomponenten die worden geleverd door het Adaptief Forms-blok, inclusief algemene componenten en specifieke componenten zoals dropdowns, radiogroepen en selectievakjesgroepen
+- Leer hoe u formuliervelden kunt opmaken op basis van veldtype- en veldnamen met CSS-kiezers, zodat u consistent of uniek kunt opmaken op basis van vereisten
 
 
 ## Werken met formulierveldtypen
 
 Alvorens in het stileren te duiken, herzien de gemeenschappelijke vorm [ gebiedstypes ](/help/edge/docs/forms/form-components.md) die door het AanpassingsBlok van Forms worden gesteund:
 
-* Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer
-* Selectievakjesgroepen: gebruikt voor het selecteren van meerdere opties
-* Keuzerondjes: wordt gebruikt voor het selecteren van slechts één optie in een groep
-* Vervolgkeuzelijsten: ook wel selectiekaders genoemd, die worden gebruikt voor het selecteren van een optie in een lijst
-* Deelvensters/containers: gebruikt om gerelateerde formulierelementen te groeperen
+- Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer
+- Selectievakjesgroepen: gebruikt voor het selecteren van meerdere opties
+- Keuzerondjes: wordt gebruikt voor het selecteren van slechts één optie in een groep
+- Vervolgkeuzelijsten: ook wel selectiekaders genoemd, die worden gebruikt voor het selecteren van een optie in een lijst
+- Deelvensters/containers: gebruikt om gerelateerde formulierelementen te groeperen
 
 ## Basisbeginselen voor stijlen
 
 Het begrip van [ fundamentele CSS concepten ](https://www.w3schools.com/css/css_intro.asp) is essentieel alvorens specifieke vormgebieden te stileren:
 
-* [ Kiezers ](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken
-* [ Eigenschappen ](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer
-* [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd
-* Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ de lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen te creëren
+- [ Kiezers ](https://www.w3schools.com/css/css_selectors.asp): CSS de Kiezers staan u toe om specifieke elementen van HTML voor het stileren te richten. U kunt elementkiezers, klassekiezers of id-kiezers gebruiken
+- [ Eigenschappen ](https://www.w3schools.com/css/css_syntax.asp): CSS de eigenschappen bepalen de visuele verschijning van elementen. Veelvoorkomende eigenschappen voor het opmaken van formuliervelden zijn kleur, achtergrondkleur, rand, opvulling, marge en meer
+- [ Model van de Doos ](https://www.w3schools.com/css/css_boxmodel.asp): Het CSS kadermodel beschrijft de structuur van de elementen van HTML als inhoudsgebied dat door het opvullen, grenzen, en marges wordt omringd
+- Flexbox/Net: CSS [ Flexbox ](https://www.w3schools.com/css/css3_flexbox.asp) en [ de lay-outs van het Net ](https://www.w3schools.com/css/css_grid.asp) zijn krachtige hulpmiddelen om ontvankelijke en flexibele ontwerpen te creëren
 
 ## Een formulier opmaken voor Adaptief Forms-blok
 
 Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
 
-* **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door het `/blocks/form/form.css` dossier uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
+- **Update standaardstijlen**: U kunt de standaardstijlen van een vorm wijzigen door het `/blocks/form/form.css` dossier uit te geven. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het AanpassingsBlok van Forms aan uw project, verwijs naar [ creeer een vorm ](/help/edge/docs/forms/create-forms.md).
 
-* **Aanpassing**: Gebruik het gebrek `forms.css` als basis en pas het aan om de blik en het gevoel van uw vormcomponenten te wijzigen, die hen visueel aantrekkelijk en gebruikersvriendelijk maken. De bestandsstructuur stimuleert de organisatie en handhaaft stijlen voor formulieren, waardoor consistente ontwerpen op uw website worden bevorderd.
+- **Aanpassing**: Gebruik het gebrek `forms.css` als basis en pas het aan om de blik en het gevoel van uw vormcomponenten te wijzigen, die hen visueel aantrekkelijk en gebruikersvriendelijk maken. De bestandsstructuur stimuleert de organisatie en handhaaft stijlen voor formulieren, waardoor consistente ontwerpen op uw website worden bevorderd.
 
 ## Indeling van de structuur forms.css
 
-* **Globale variabelen:** die op het `:root` niveau wordt bepaald, slaan deze variabelen (`--variable-name`) waarden op die door het stijlblad voor consistentie en gemak van updates worden gebruikt. Deze variabelen definiëren kleuren, tekengrootten, opvulling en andere eigenschappen. U kunt uw eigen globale variabelen declareren of bestaande variabelen wijzigen om de stijl van het formulier te wijzigen.
+- **Globale variabelen:** die op het `:root` niveau wordt bepaald, slaan deze variabelen (`--variable-name`) waarden op die door het stijlblad voor consistentie en gemak van updates worden gebruikt. Deze variabelen definiëren kleuren, tekengrootten, opvulling en andere eigenschappen. U kunt uw eigen globale variabelen declareren of bestaande variabelen wijzigen om de stijl van het formulier te wijzigen.
 
-* **Universele selecteurstijlen:** de `*` selecteur past elk element in de vorm aan, die ervoor zorgen de stijlen worden toegepast op alle componenten door gebrek, met inbegrip van het plaatsen van het `box-sizing` bezit aan `border-box`.
+- **Universele selecteurstijlen:** de `*` selecteur past elk element in de vorm aan, die ervoor zorgen de stijlen worden toegepast op alle componenten door gebrek, met inbegrip van het plaatsen van het `box-sizing` bezit aan `border-box`.
 
-* **Formulier het stileren:** Deze sectie concentreert zich bij het stileren van vormcomponenten gebruikend selecteurs om specifieke elementen van HTML te richten. Hiermee worden stijlen gedefinieerd voor invoervelden, tekstgebieden, selectievakjes, keuzerondjes, bestandsinvoer, formulierlabels en beschrijvingen.
+- **Formulier het stileren:** Deze sectie concentreert zich bij het stileren van vormcomponenten gebruikend selecteurs om specifieke elementen van HTML te richten. Hiermee worden stijlen gedefinieerd voor invoervelden, tekstgebieden, selectievakjes, keuzerondjes, bestandsinvoer, formulierlabels en beschrijvingen.
 
-* **de stileren van de Tovenaar (als toepasselijk):** Deze sectie wordt gewijd aan het stileren van de tovenaar lay-out, een multi-step vorm waar elke stap tegelijkertijd wordt getoond. Hiermee worden stijlen gedefinieerd voor de tovenaarscontainer, veldsets, legenda&#39;s, navigatieknoppen en responsieve lay-outs.
+- **de stileren van de Tovenaar (als toepasselijk):** Deze sectie wordt gewijd aan het stileren van de tovenaar lay-out, een multi-step vorm waar elke stap tegelijkertijd wordt getoond. Hiermee worden stijlen gedefinieerd voor de tovenaarscontainer, veldsets, legenda&#39;s, navigatieknoppen en responsieve lay-outs.
 
-* **vragen van Media:** Deze verstrekken stijlen voor verschillende het schermgrootte, die lay-out aanpassen en dienovereenkomstig stileren.
+- **vragen van Media:** Deze verstrekken stijlen voor verschillende het schermgrootte, die lay-out aanpassen en dienovereenkomstig stileren.
 
-* **Diverse het stileren:** Deze sectie behandelt stijlen voor succes of foutenmeldingen, dossier uploadt gebieden, en andere elementen u in een vorm zou kunnen ontmoeten.
+- **Diverse het stileren:** Deze sectie behandelt stijlen voor succes of foutenmeldingen, dossier uploadt gebieden, en andere elementen u in een vorm zou kunnen ontmoeten.
 
 
 ## Structuur van componenten
@@ -89,14 +89,14 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 </div>
 ```
 
-* Klassen: het div-element heeft verschillende klassen voor het aanwijzen van specifieke elementen en opmaak. U hebt de klassen `{Type}-wrapper` of `field-{Name}` nodig om een CSS-kiezer te ontwikkelen waarmee u een formulierveld kunt opmaken:
-   * {Type}: identificeert de component op veldtype. Bijvoorbeeld tekst (tekstomloop), getal (nummeromloop), datum (datumomloop)
-   * {Name}: identificeert de component op naam. De naam van het veld mag alleen alfanumerieke tekens bevatten; meerdere opeenvolgende streepjes in de naam worden vervangen door één streepje `(-)` en de begin- en eindstreep in een veldnaam worden verwijderd. Voornaam (field-first-name field-wrapper) bijvoorbeeld
-   * {FieldId}: het is een unieke id voor het veld, die automatisch wordt gegenereerd
-   * {Required}: Het is een Booleaanse waarde die aangeeft of het veld vereist is
-* Label: het element `label` biedt beschrijvende tekst voor het veld en koppelt deze aan het invoerelement met het kenmerk `for` .
-* Invoer: het element `input` definieert het type gegevens dat moet worden ingevoerd. Bijvoorbeeld tekst, nummer, e-mail
-* Beschrijving (optioneel): De `div` with-klasse `field-description` biedt extra informatie of instructies voor de gebruiker
+- Klassen: het div-element heeft verschillende klassen voor het aanwijzen van specifieke elementen en opmaak. U hebt de klassen `{Type}-wrapper` of `field-{Name}` nodig om een CSS-kiezer te ontwikkelen waarmee u een formulierveld kunt opmaken:
+   - {Type}: identificeert de component op veldtype. Bijvoorbeeld tekst (tekstomloop), getal (nummeromloop), datum (datumomloop)
+   - {Name}: identificeert de component op naam. De naam van het veld mag alleen alfanumerieke tekens bevatten; meerdere opeenvolgende streepjes in de naam worden vervangen door één streepje `(-)` en de begin- en eindstreep in een veldnaam worden verwijderd. Voornaam (field-first-name field-wrapper) bijvoorbeeld
+   - {FieldId}: het is een unieke id voor het veld, die automatisch wordt gegenereerd
+   - {Required}: Het is een Booleaanse waarde die aangeeft of het veld vereist is
+- Label: het element `label` biedt beschrijvende tekst voor het veld en koppelt deze aan het invoerelement met het kenmerk `for` .
+- Invoer: het element `input` definieert het type gegevens dat moet worden ingevoerd. Bijvoorbeeld tekst, nummer, e-mail
+- Beschrijving (optioneel): De `div` with-klasse `field-description` biedt extra informatie of instructies voor de gebruiker
 
 **Voorbeeld van de Structuur van HTML**
 
@@ -138,8 +138,8 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 }
 ```
 
-* `.{Type}-wrapper`: hiermee wordt het buitenste `div` -element opgegeven op basis van het veldtype. `.text-wrapper` richt zich bijvoorbeeld op alle tekstvelden
-* `.field-{Name}`: hiermee selecteert u het element verder op basis van de specifieke veldnaam. `.field-first-name` verwijst bijvoorbeeld naar het tekstveld Voornaam. Terwijl deze selecteur voor het richten van elementen met de gebied {Name} klasse kan worden gebruikt, is het belangrijk om voorzichtig te zijn. In dit specifieke geval zou het niet nuttig zijn voor het opmaken van invoervelden omdat het niet alleen de invoer zelf, maar ook de label- en beschrijvingselementen betreft. Het is raadzaam specifiekere kiezers te gebruiken, zoals de kiezers die u hebt voor tekstinvoervelden (.text-wrapper input)
+- `.{Type}-wrapper`: hiermee wordt het buitenste `div` -element opgegeven op basis van het veldtype. `.text-wrapper` richt zich bijvoorbeeld op alle tekstvelden
+- `.field-{Name}`: hiermee selecteert u het element verder op basis van de specifieke veldnaam. `.field-first-name` verwijst bijvoorbeeld naar het tekstveld Voornaam. Terwijl deze selecteur voor het richten van elementen met de gebied {Name} klasse kan worden gebruikt, is het belangrijk om voorzichtig te zijn. In dit specifieke geval zou het niet nuttig zijn voor het opmaken van invoervelden omdat het niet alleen de invoer zelf, maar ook de label- en beschrijvingselementen betreft. Het is raadzaam specifiekere kiezers te gebruiken, zoals de kiezers die u hebt voor tekstinvoervelden (.text-wrapper input)
 
 **CSS van het Voorbeeld Selectors voor Algemene Componenten**
 
@@ -280,7 +280,7 @@ Keuzerondjes hebben een eigen HTML-structuur en CSS-structuur, net als vervolgke
 
 +++ CSS-kiezers voor keuzerondjes
 
-* Doelstelling van de veldset
+- Doelstelling van de veldset
 
 ```CSS
   .radio-group-wrapper {
@@ -291,7 +291,7 @@ Keuzerondjes hebben een eigen HTML-structuur en CSS-structuur, net als vervolgke
 
 Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is ingesteld. Dit is handig als u algemene stijlen wilt toepassen op de hele groep keuzerondjes.
 
-* Labels voor keuzerondjes als doel instellen
+- Labels voor keuzerondjes als doel instellen
 
 ```CSS
 .radio-wrapper label {
@@ -300,7 +300,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
   }
 ```
 
-* Alle keuzerondjes in een specifieke veldset op basis van de naam ervan als doel instellen
+- Alle keuzerondjes in een specifieke veldset op basis van de naam ervan als doel instellen
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -350,7 +350,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 
 +++ CSS-kiezers voor groepen selectievakjes
 
-* Doelstelling voor de buitenomsluitend omsluitend kader: deze kiezers richten zich op de buitenste containers van groepen keuzerondjes en selectievakjes, zodat u algemene stijlen kunt toepassen op de volledige groepsstructuur. Dit is handig voor het instellen van spatiëring, uitlijning of andere aan de layout gerelateerde eigenschappen.
+- Doelstelling voor de buitenomsluitend omsluitend kader: deze kiezers richten zich op de buitenste containers van groepen keuzerondjes en selectievakjes, zodat u algemene stijlen kunt toepassen op de volledige groepsstructuur. Dit is handig voor het instellen van spatiëring, uitlijning of andere aan de layout gerelateerde eigenschappen.
 
 
   ```CSS
@@ -366,7 +366,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
   ```
 
 
-* Doelgroeplabels: deze kiezer richt zich op het `.field-label` -element binnen zowel de groepsomvattende items voor keuzerondjes als voor selectievakjes. Hierdoor kunt u de labels specifiek voor deze groepen opmaken, waardoor deze beter opvallen.
+- Doelgroeplabels: deze kiezer richt zich op het `.field-label` -element binnen zowel de groepsomvattende items voor keuzerondjes als voor selectievakjes. Hierdoor kunt u de labels specifiek voor deze groepen opmaken, waardoor deze beter opvallen.
 
   ```CSS
    .radio-group-wrapper legend,
@@ -377,7 +377,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 
 
 
-* Afzonderlijke invoer en labels als doel instellen: deze kiezers bieden meer korrelige controle over afzonderlijke keuzerondjes, selectievakjes en de bijbehorende labels. U kunt deze stijlen gebruiken om het formaat, de spatiëring of de verschillende visuele stijlen aan te passen.
+- Afzonderlijke invoer en labels als doel instellen: deze kiezers bieden meer korrelige controle over afzonderlijke keuzerondjes, selectievakjes en de bijbehorende labels. U kunt deze stijlen gebruiken om het formaat, de spatiëring of de verschillende visuele stijlen aan te passen.
 
   ```CSS
   /* Styling radio buttons */
@@ -404,7 +404,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 
 
 
-* De weergave van keuzerondjes en selectievakjes aanpassen: hiermee wordt de standaardinvoer verborgen en worden `:before` en `:after` pseudo-elementen gebruikt om aangepaste visuele elementen te maken die de weergave wijzigen op basis van de status &#39;checked&#39;.
+- De weergave van keuzerondjes en selectievakjes aanpassen: hiermee wordt de standaardinvoer verborgen en worden `:before` en `:after` pseudo-elementen gebruikt om aangepaste visuele elementen te maken die de weergave wijzigen op basis van de status &#39;checked&#39;.
 
   ```CSS
   /* Hide the default radio button or checkbox */
@@ -475,10 +475,10 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 </fieldset>
 ```
 
-* Het veldsetelement fungeert als de deelvenstercontainer met de klassepaneel-wrapper en aanvullende klassen voor opmaak op basis van de naam van het deelvenster (veldaanmelding).
-* Het element legenda (&lt;legend>) fungeert als de titel van het deelvenster met de tekst &quot;Aanmeldingsgegevens&quot; en de veldlabel voor de klasse. Het attribuut data-visible=&quot;false&quot; kan met JavaScript worden gebruikt om de zichtbaarheid van de titel te regelen.
-* Binnen de veldset, meerdere.{Type} -wrapper-elementen (.text-wrapper en .password-wrapper in dit geval) vertegenwoordigen afzonderlijke formuliervelden in het deelvenster.
-* Elke omslag bevat een etiket, een inputgebied, en een beschrijving, gelijkend op de vorige voorbeelden.
+- Het veldsetelement fungeert als de deelvenstercontainer met de klassepaneel-wrapper en aanvullende klassen voor opmaak op basis van de naam van het deelvenster (veldaanmelding).
+- Het element legenda (<legend>) fungeert als de titel van het deelvenster met de tekst &quot;Aanmeldingsgegevens&quot; en de veldlabel voor de klasse. Het attribuut data-visible=&quot;false&quot; kan met JavaScript worden gebruikt om de zichtbaarheid van de titel te regelen.
+- Binnen de veldset, meerdere.{Type} -wrapper-elementen (.text-wrapper en .password-wrapper in dit geval) vertegenwoordigen afzonderlijke formuliervelden in het deelvenster.
+- Elke omslag bevat een etiket, een inputgebied, en een beschrijving, gelijkend op de vorige voorbeelden.
 
 +++
 
@@ -497,7 +497,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
  }
 ```
 
-* De kiezer van `.panel-wrapper` maakt alle elementen met de omloop van het klassepaneel, zodat alle deelvensters er consistent uitzien.
+- De kiezer van `.panel-wrapper` maakt alle elementen met de omloop van het klassepaneel, zodat alle deelvensters er consistent uitzien.
 
 1. Richting geven aan de titel van het deelvenster:
 
@@ -513,7 +513,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
   }
 ```
 
-* De kiezer van `.panel-wrapper legend` maakt een stijl van het legenda-element in het deelvenster, zodat de titel visueel opvalt.
+- De kiezer van `.panel-wrapper legend` maakt een stijl van het legenda-element in het deelvenster, zodat de titel visueel opvalt.
 
 
 1. Afzonderlijke velden aanwijzen in het deelvenster:
@@ -526,7 +526,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 }
 ```
 
-* De `.panel-wrapper .{Type}-wrapper` -kiezer richt zich op alle omslagen met de `.{Type}-wrapper` -klasse in het deelvenster, zodat u de ruimte tussen formuliervelden kunt opmaken.
+- De `.panel-wrapper .{Type}-wrapper` -kiezer richt zich op alle omslagen met de `.{Type}-wrapper` -klasse in het deelvenster, zodat u de ruimte tussen formuliervelden kunt opmaken.
 
 1. Specifieke velden instellen (optioneel):
 
@@ -542,7 +542,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
   }
 ```
 
-* Met deze optionele kiezers kunt u specifieke veldwrappers in het deelvenster gebruiken voor unieke opmaak, zoals het markeren van het veld gebruikersnaam.
+- Met deze optionele kiezers kunt u specifieke veldwrappers in het deelvenster gebruiken voor unieke opmaak, zoals het markeren van het veld gebruikersnaam.
 
 +++
 
@@ -604,15 +604,15 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 
 Elk deelvenster heeft dezelfde structuur als het voorbeeld van één deelvenster, met extra kenmerken:
 
-* data-herhaalable=&quot;true&quot;: dit kenmerk geeft aan dat het deelvenster dynamisch kan worden herhaald met JavaScript of een framework.
+- data-herhaalable=&quot;true&quot;: dit kenmerk geeft aan dat het deelvenster dynamisch kan worden herhaald met JavaScript of een framework.
 
-* Unieke IDs en namen: Elk element binnen het paneel heeft een unieke identiteitskaart (bijvoorbeeld, naam-1, e-mail-1) en naamattributen die op de index van het paneel (bijvoorbeeld, name= &quot;contacten [ 0 ].name&quot;) worden gebaseerd. Op deze manier kunnen de gegevens correct worden verzameld wanneer meerdere deelvensters worden verzonden.
+- Unieke IDs en namen: Elk element binnen het paneel heeft een unieke identiteitskaart (bijvoorbeeld, naam-1, e-mail-1) en naamattributen die op de index van het paneel (bijvoorbeeld, name= &quot;contacten [ 0 ].name&quot;) worden gebaseerd. Op deze manier kunnen de gegevens correct worden verzameld wanneer meerdere deelvensters worden verzonden.
 
 +++
 
 +++ CSS-kiezers voor een herhaalbaar deelvenster
 
-* Alle herhalende deelvensters als doel instellen:
+- Alle herhalende deelvensters als doel instellen:
 
 ```CSS
   /* Target all panels with the repeatable attribute */
@@ -628,7 +628,7 @@ Elk deelvenster heeft dezelfde structuur als het voorbeeld van één deelvenster
 De kiezer maakt stijlen van alle deelvensters die kunnen worden herhaald, zodat de vormgeving consistent blijft.
 
 
-* Afzonderlijke velden in een deelvenster aanwijzen:
+- Afzonderlijke velden in een deelvenster aanwijzen:
 
 ```CSS
 /* Target all form field wrappers within a repeatable panel */
@@ -637,10 +637,9 @@ De kiezer maakt stijlen van alle deelvensters die kunnen worden herhaald, zodat 
   margin-bottom: 10px;
 }
 ```
-
 Met deze kiezer worden alle veldomlooptekens binnen een herhaalbaar deelvenster geplaatst, waarbij een consistente afstand tussen velden behouden blijft.
 
-* Specifieke velden activeren (binnen een deelvenster):
+- Specifieke velden activeren (binnen een deelvenster):
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -694,15 +693,15 @@ Met deze kiezer worden alle veldomlooptekens binnen een herhaalbaar deelvenster 
 </div>
 ```
 
-* Het klassenkenmerk gebruikt de opgegeven naam voor de bestandsbijlage (claim_form).
-* De id- en naamkenmerken van het invoerelement komen overeen met de naam van de bestandsbijlage (claim_form).
-* De sectie voor de bestandenlijst is aanvankelijk leeg. Deze wordt dynamisch gevuld met JavaScript wanneer bestanden worden geüpload.
+- Het klassenkenmerk gebruikt de opgegeven naam voor de bestandsbijlage (claim_form).
+- De id- en naamkenmerken van het invoerelement komen overeen met de naam van de bestandsbijlage (claim_form).
+- De sectie voor de bestandenlijst is aanvankelijk leeg. Deze wordt dynamisch gevuld met JavaScript wanneer bestanden worden geüpload.
 
 +++
 
 +++ CSS-kiezers voor de component Bestandsbijlage
 
-* De volledige component Bestandsbijlage als doel instellen:
+- De volledige component Bestandsbijlage als doel instellen:
 
 ```CSS
 /* Target the entire file attachment component */
@@ -717,7 +716,7 @@ Met deze kiezer worden alle veldomlooptekens binnen een herhaalbaar deelvenster 
 
 Met deze kiezer wordt de gehele bestandsbijlage geschaald, inclusief de legenda, het sleepgebied, het invoerveld en de lijst.
 
-* Specifieke elementen:
+- Specifieke elementen:
 
 ```CSS
 /* Target the drag and drop area */
@@ -808,12 +807,12 @@ U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en s
 </div>
 ```
 
-* Elk veld wordt opgenomen in een element `div` met verschillende klassen:
-   * `{Type}-wrapper` - Hiermee wordt het type veld aangegeven. Bijvoorbeeld `form-text-wrapper` , `form-number-wrapper` , `form-email-wrapper` .
-   * `field-{Name}` - Identificeert het veld met de naam. Bijvoorbeeld `form-name` , `form-age` , `form-email` .
-   * `field-wrapper`: Een algemene klasse voor alle veldwrappers.
-* Het kenmerk `data-required` geeft aan of het veld verplicht of optioneel is.
-* Elk veld heeft een overeenkomstig label, invoerelement en mogelijke aanvullende elementen, zoals plaatsaanduidingen en beschrijvingen.
+- Elk veld wordt opgenomen in een element `div` met verschillende klassen:
+   - `{Type}-wrapper` - Hiermee wordt het type veld aangegeven. Bijvoorbeeld `form-text-wrapper` , `form-number-wrapper` , `form-email-wrapper` .
+   - `field-{Name}` - Identificeert het veld met de naam. Bijvoorbeeld `form-name` , `form-age` , `form-email` .
+   - `field-wrapper`: Een algemene klasse voor alle veldwrappers.
+- Het kenmerk `data-required` geeft aan of het veld verplicht of optioneel is.
+- Elk veld heeft een overeenkomstig label, invoerelement en mogelijke aanvullende elementen, zoals plaatsaanduidingen en beschrijvingen.
 
 
 +++
@@ -880,6 +879,3 @@ Deze CSS richt zich op alle inputelementen die binnen een element worden gevesti
 
 +++
 
-## Zie ook
-
-{{see-more-forms-eds}}

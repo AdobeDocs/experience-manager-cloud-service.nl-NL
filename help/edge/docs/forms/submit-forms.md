@@ -4,9 +4,9 @@ description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve F
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 Zodra u [ hebt gecreeerd en de vorm ](/help/edge/docs/forms/create-forms.md) previewde, is het tijd om het overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt
 
-* [ laat manueel spreadsheet toe om gegevens ](#manually-enable-the-spreadsheet-to-accept-data) goed te keuren
-* [Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+- [ laat manueel spreadsheet toe om gegevens ](#manually-enable-the-spreadsheet-to-accept-data) goed te keuren
+- [Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![ op document-gebaseerde het Authoring ecosysteem ](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -50,7 +50,7 @@ De spreadsheet inschakelen om gegevens te accepteren
 
    ![ Gebieden voor een contact-usvorm ](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Gebruik de [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) uitbreiding aan voorproef de vormupdates. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
+1. Gebruik de [ uitbreiding van AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef de vormupdates. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ Zodra het blad opstelling is om gegevens te ontvangen, kunt u [ voorproef de vor
 
 ## Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens
 
-U kunt ook een verzoek van de POST naar het formulier verzenden, zodat het formulier gegevens kan accepteren en kopteksten voor het `incoming` -blad kan configureren. Na ontvangst van het verzoek van de POST analyseert de dienst het lichaam van verzoek en produceert autonoom de essentiële kopballen en bladen nodig voor gegevensopname.
+U kunt ook een POST-aanvraag naar het formulier verzenden, zodat deze gegevens kan accepteren en kopteksten voor het `incoming` -blad kan configureren. Na ontvangst van het POST-verzoek analyseert de service de inhoud van het verzoek en genereert de service autonoom de essentiële koppen en bladen die nodig zijn voor het invoeren van gegevens.
 
 Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
@@ -77,7 +77,7 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
    >[!WARNING]
    >
-   > Als het `incoming` blad niet bestaat, zal AEM geen gegevens naar dit werkboek verzenden.
+   > Als het `incoming` sheet niet bestaat, zal AEM geen gegevens naar dit werkboek verzenden.
 
 1. Geef een voorvertoning van het blad weer in het zijpaneel.
 
@@ -85,9 +85,9 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
    >
    >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` -blad voor het eerst hebt gemaakt.
 
-1. Verzend het verzoek om de POST om de juiste kopteksten op het `incoming` -blad te genereren en voeg de `shared-default` -bladen toe aan uw spreadsheet, als dit nog niet het geval is.
+1. Verzend de POST-aanvraag om de juiste kopteksten op het `incoming` -blad te genereren en voeg de `shared-default` -bladen toe aan uw spreadsheet, als dit nog niet het geval is.
 
-   Om te begrijpen hoe te om het verzoek van de POST voor vestiging uw blad te formatteren, verwijs naar de [ Admin API documentatie ](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
+   Om te begrijpen hoe te om het POST- verzoek voor vestiging uw blad te formatteren, verwijs naar de [ Admin API documentatie ](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
 
    **Verzoek**
 
@@ -130,7 +130,7 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
    ```
 
-   U kunt gereedschappen zoals curl of Postman gebruiken om dit verzoek voor POSTEN uit te voeren, zoals hieronder wordt getoond:
+   U kunt gereedschappen zoals curl of Postman gebruiken om dit POST-verzoek uit te voeren, zoals hieronder wordt getoond:
 
    ```JSON
    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
@@ -150,7 +150,7 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
    }'
    ```
 
-   Het bovenstaande verzoek om POST bevat voorbeeldgegevens, waaronder zowel formuliervelden als de bijbehorende samplewaarden. Deze gegevens worden door de beheerservice gebruikt om het formulier in te stellen.
+   Het bovenstaande POST-verzoek bevat voorbeeldgegevens, waaronder zowel formuliervelden als de bijbehorende samplewaarden. Deze gegevens worden door de beheerservice gebruikt om het formulier in te stellen.
 
    Uw formulier is nu ingeschakeld voor het accepteren van gegevens. U ziet ook de volgende wijzigingen in uw spreadsheet:
 
@@ -158,15 +158,15 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
 Wanneer het werkblad is ingesteld op het ontvangen van gegevens, ziet u de volgende wijzigingen in het werkblad:
 
-Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad, kunt u automatische berichten voor een aangewezen kanaal van de Slack vormen wanneer de nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel steunt AEM berichten uitsluitend aan de organisatie van de Slack van de Techniek van de AEM en de organisatie van de Steun van de Onderneming van de Adobe.
+Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad kunt u automatische meldingen voor een bepaald Slack-kanaal configureren wanneer nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel ondersteunt AEM uitsluitend meldingen aan de AEM Engineering Slack-organisatie en de Adobe Enterprise Support-organisatie.
 
-1. Als u meldingen voor Slacks wilt instellen, voert u &#39;teamId&#39; van de werkruimte van de Slack en &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
+1. Als u Slack-berichten wilt instellen, voert u &#39;teamId&#39; van de Slack-werkruimte en de &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
 
    >[!NOTE]
    >
    > Oudere formulieren hadden niet de kolom &quot;teamId&quot;. &quot;teamId&quot; is opgenomen in de kanaalkolom, gescheiden door &quot;#&quot; of &quot;/&quot;.
 
-1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
+1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het Slack-bericht. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
 
    >[!WARNING]
    >
@@ -174,138 +174,5 @@ Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek
 
 
 
-<!--
-## Send data to your sheet {#send-data-to-your-sheet}
-
-After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
-
-### Use Admin APIs to send data to your sheet
-
-You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
-
-
-```JSON
-
-POST https://branch–repo–owner.aem.(page|live)/email-form
-POST https://my-domain.com/email-form
-
-```
-
->[!NOTE] 
->
-> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
-
-#### Formatting the form data
-
-There are a few different ways that you can format the form data in the POST body. You can use: 
-
-* array of `name:value` pairs: 
-    
-    ```JSON
-    
-    {
-      "data": [
-        { "name": "name", "value": "Clark Kent" },
-        { "name": "email", "value": "superman@example.com" },
-        { "name": "subject", "value": "Regarding Product Inquiry" },
-        { "name": "message", "value": "I have some questions about your products." },
-        { "name": "phone", "value": "123-456-7890" },
-        { "name": "company", "value": "Example Inc." },
-        { "name": "country", "value": "United States" },
-        { "name": "preferred_contact_method", "value": "Email" },
-        { "name": "newsletter_subscribe", "value": true }
-      ]
-    }
-
-    ```
-
-    For example
-
-    ```JSON
-
-    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
-        --header 'Content-Type: application/json' \
-        --data '{
-        "data": [
-            { "name": "name", "value": "Clark Kent" },
-            { "name": "email", "value": "superman@example.com" },
-            { "name": "subject", "value": "Regarding Product Inquiry" },
-            { "name": "message", "value": "I have some questions about your        products." },
-            { "name": "phone", "value": "123-456-7890" },
-            { "name": "company", "value": "Example Inc." },
-            { "name": "country", "value": "United States" },
-            { "name": "preferred_contact_method", "value": "Email" },
-            { "name": "newsletter_subscribe", "value": true }
-        ]
-    }'
-
-    ```
-
-
-
-* an object with `key:value` pairs:
-
-    ```JSON
-
-        {
-          "data": {
-            "name": "Jessica Jones",
-            "email": "jj@example.com",
-            "subject": "Regarding Product Inquiry",
-            "message": "I have some questions about your products.",
-            "phone": "123-456-7890",
-            "company": "Example Inc.",
-            "country": "United States",
-            "preferred_contact_method": "Email",
-            "newsletter_subscribe": true
-          }
-        }
-
-    ```
-
-    For example,
-
-    ```JSON
-
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "khushwant@wknd.com",
-            "Name": "khushwant",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
-
-* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
-
-    ```Shell
-
-    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-
-    ```
-
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
-
-    ```Shell
-
-    curl -s -i -X POST \
-      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--wefinance--wkndform.aem.live/contact-us
-
-    ```
--->
-
 Daarna, kunt u [ aanpassen dankt u bericht ](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Zie ook
-
-{{see-more-forms-eds}}

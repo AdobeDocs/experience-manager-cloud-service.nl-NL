@@ -1,10 +1,10 @@
 ---
 title: Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen
-description: Edge Delivery Services voor AEM Forms zijn gebouwd voor optimale prestaties, waardoor u de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers kunt inzien. Gebruik regels om dynamisch gedrag aan uw formulieren toe te voegen.
+description: Edge Delivery Services for AEM Forms is gebouwd voor optimale prestaties, waardoor u de toekomst van gestroomlijnde gegevensverzameling en betrokkenheid van gebruikers kunt inzien. Gebruik regels om dynamisch gedrag aan uw formulieren toe te voegen.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -21,16 +21,16 @@ Dit artikel begeleidt u door hoe te om diverse Adaptieve eigenschappen van het B
 
 Regels zijn als instructies die ons vertellen wat we in verschillende situaties moeten doen. Een regel heeft over het algemeen de volgende elementen:
 
-* Voorwaarden : Deze bepalen onder welke omstandigheden de regel van toepassing is. Beschouw ze als een vraag die beantwoord moet worden (ja of nee).
+- Voorwaarden : Deze bepalen onder welke omstandigheden de regel van toepassing is. Beschouw ze als een vraag die beantwoord moet worden (ja of nee).
 
-* Handelingen: deze definiëren wat er gebeurt wanneer aan de voorwaarde wordt voldaan (true) of wanneer niet (false).
+- Handelingen: deze definiëren wat er gebeurt wanneer aan de voorwaarde wordt voldaan (true) of wanneer niet (false).
 
 
 Als u bijvoorbeeld een e-mailvak wilt weergeven, selecteert u een selectievakje:
 
-* Voorwaarde: &quot;Wilt u zich abonneren op Tijdschrift en Activiteiten?&quot; selectievakje is ingeschakeld. (Ja of nee?) Deze voorwaarde wordt ingesteld in de eigenschap `Visible` van het formulier.
-* Actie (true): het e-mailvak wordt weergegeven. (Wat gebeurt er als dat het geval is). De `Visibility Expression` gebruikt de voorwaarde die voor de eigenschap `visible` is gedefinieerd om velden dynamisch weer te geven.
-* Handeling (Onwaar): Het e-mailvak is verborgen. (Wat gebeurt er als dit niet het geval is). In `Visibility Expression` wordt de gedefinieerde voorwaarde voor `Value` gebruikt om velden dynamisch te verbergen.
+- Voorwaarde: &quot;Wilt u zich abonneren op Tijdschrift en Activiteiten?&quot; selectievakje is ingeschakeld. (Ja of nee?) Deze voorwaarde wordt ingesteld in de eigenschap `Visible` van het formulier.
+- Actie (true): het e-mailvak wordt weergegeven. (Wat gebeurt er als dat het geval is). De `Visibility Expression` gebruikt de voorwaarde die voor de eigenschap `visible` is gedefinieerd om velden dynamisch weer te geven.
+- Handeling (Onwaar): Het e-mailvak is verborgen. (Wat gebeurt er als dit niet het geval is). In `Visibility Expression` wordt de gedefinieerde voorwaarde voor `Value` gebruikt om velden dynamisch te verbergen.
 
 Voor gedetailleerde geleidelijke instructies, zie [ tonen/verbergen e-mailgebied dat op een voorwaarde ](#example-1-conditional-email-field) wordt gebaseerd
 
@@ -41,8 +41,8 @@ Voor gedetailleerde geleidelijke instructies, zie [ tonen/verbergen e-mailgebied
 
 Stel u een lichtschakelaar voor uw formulierveld in. De eigenschap `Visible` lijkt op die switch, die bepaalt of het veld in eerste instantie zichtbaar is op het formulier wanneer het wordt geladen.
 
-* True (like the light switch is &quot;on&quot;): The field is displayed on the form.
-* Onwaar (als de lichtschakelaar &quot;weg&quot;is): Het gebied is verborgen op de vorm.
+- True (like the light switch is &quot;on&quot;): The field is displayed on the form.
+- Onwaar (als de lichtschakelaar &quot;weg&quot;is): Het gebied is verborgen op de vorm.
 
 U kunt de Formule SpreadSheet (met inbegrip van = markering) gebruiken om een formule te schrijven gebruikend spreadsheet-als logica om de zicht van het gebied te bepalen. U kunt de waarden van andere velden in het formulier in deze formule gebruiken. Als een gebruiker bijvoorbeeld Individueel selecteert in een registratietype veld, kunt u het e-mailveld verbergen met een formule die die waarde controleert.
 
@@ -73,10 +73,10 @@ Gebruik `=FORMULATEXT("Address of the corresponding Value property)` om de formu
 
 Hier is een analogie om deze concepten te verharden:
 
-* Zichtbaar: Stel je een vorm voor als een huis. De eigenschap &quot;Visible&quot; is vergelijkbaar met de lichtschakelaar voor elke kamer (veld). U bepaalt of de ruimte aanvankelijk verlicht (zichtbaar) of donker (verborgen) is wanneer iemand het huis binnenkomt (het formulier opent).
-* Zichtbare uitdrukking: dit is als een lichtschakelaar van de bewegingssensor. De ruimte (veld) kan aanvankelijk donker (verborgen) zijn, maar een formule (bewegingssensor) kan deze inschakelen (het veld weergeven) als iemand langs loopt (de waarde in een ander veld wijzigt).
-* Waarde: dit is als een vooraf ingestelde dimmer-schakelaar voor het licht (initiële gegevens in het veld). Gebruikers kunnen vervolgens de helderheid aanpassen (de waarde wijzigen).
-* Waardeuitdrukking: dit is als een mooie rekenmachine die in de prijstag van een product in het huis (vorm) is ingebouwd. De prijstag (veld) toont de uiteindelijke prijs op basis van een formule (bijvoorbeeld door belasting toe te voegen aan de basisprijs) die andere informatie gebruikt, zoals de basisprijs (waarde van een ander veld).
+- Zichtbaar: Stel je een vorm voor als een huis. De eigenschap &quot;Visible&quot; is vergelijkbaar met de lichtschakelaar voor elke kamer (veld). U bepaalt of de ruimte aanvankelijk verlicht (zichtbaar) of donker (verborgen) is wanneer iemand het huis binnenkomt (het formulier opent).
+- Zichtbare uitdrukking: dit is als een lichtschakelaar van de bewegingssensor. De ruimte (veld) kan aanvankelijk donker (verborgen) zijn, maar een formule (bewegingssensor) kan deze inschakelen (het veld weergeven) als iemand langs loopt (de waarde in een ander veld wijzigt).
+- Waarde: dit is als een vooraf ingestelde dimmer-schakelaar voor het licht (initiële gegevens in het veld). Gebruikers kunnen vervolgens de helderheid aanpassen (de waarde wijzigen).
+- Waardeuitdrukking: dit is als een mooie rekenmachine die in de prijstag van een product in het huis (vorm) is ingebouwd. De prijstag (veld) toont de uiteindelijke prijs op basis van een formule (bijvoorbeeld door belasting toe te voegen aan de basisprijs) die andere informatie gebruikt, zoals de basisprijs (waarde van een ander veld).
 
 Door deze eigenschappen met [ spreadsheetfuncties ](#spreadsheet-functions-for-rules) te combineren, kunt u een brede waaier van dynamisch gedrag binnen uw vormen bereiken.
 
@@ -86,19 +86,19 @@ Adaptief Forms Block ondersteunt diverse spreadsheetfuncties die kunnen worden g
 
 ### Logische functies
 
-* [ NIET () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Keert de logische staat (WAAR wordt VALS en vice versa) om.
-* [ EN () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Keert WAAR terug slechts als alle gespecificeerde voorwaarden WAAR zijn.
-* [ OF () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Keert WAAR terug als minstens één van de gespecificeerde voorwaarden WAAR is.
+- [ NIET () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Keert de logische staat (WAAR wordt VALS en vice versa) om.
+- [ EN () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Keert WAAR terug slechts als alle gespecificeerde voorwaarden WAAR zijn.
+- [ OF () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Keert WAAR terug als minstens één van de gespecificeerde voorwaarden WAAR is.
 
 ### Voorwaardelijke functies
 
-* [ IF () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Evalueert een voorwaarde en keert een specifieke waarde als WAAR, en een andere waarde als VALS terug.
+- [ IF () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Evalueert een voorwaarde en keert een specifieke waarde als WAAR, en een andere waarde als VALS terug.
 
 ### Wiskundige functies
 
-* [ SUM () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Voegt waarden van een gespecificeerde waaier van cellen toe.
-* [ ROND () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rondt een aantal aan een gespecificeerd aantal decimalen.
-* [ MIN () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Keert de kleinste waarde van een gespecificeerde waaier van cellen terug.
+- [ SUM () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Voegt waarden van een gespecificeerde waaier van cellen toe.
+- [ ROND () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rondt een aantal aan een gespecificeerd aantal decimalen.
+- [ MIN () ](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Keert de kleinste waarde van een gespecificeerde waaier van cellen terug.
 
 ## Een regel maken
 
@@ -156,7 +156,7 @@ Hier volgen enkele voorbeelden van de meestgebruikte spreadsheetfuncties:
 
 **Logische functies:**
 
-* **NIET ():** keert de logische staat (WAAR wordt VALS en vice versa) om.
+- **NIET ():** keert de logische staat (WAAR wordt VALS en vice versa) om.
 
   Voorbeeld: Een veld E-mail bevestigen verbergen als het e-mailveld leeg blijft.
 
@@ -170,9 +170,9 @@ Hier volgen enkele voorbeelden van de meestgebruikte spreadsheetfuncties:
       ![ AEM Forms zichtbare uitdrukkingsformule ](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND(): retourneert alleen TRUE als alle opgegeven voorwaarden TRUE zijn.
+- AND(): retourneert alleen TRUE als alle opgegeven voorwaarden TRUE zijn.
 
-   * Voorbeeld: een knop Verzenden alleen inschakelen als alle vereiste velden zijn ingevuld.
+   - Voorbeeld: een knop Verzenden alleen inschakelen als alle vereiste velden zijn ingevuld.
 
    1. Stel de eigenschap `Visible` van de knop &quot;submit&quot; in op:
 
@@ -202,9 +202,9 @@ Hier volgen enkele voorbeelden van de meestgebruikte spreadsheetfuncties:
 
       Met deze formule wordt de knop &quot;Verzenden&quot; (TRUE) alleen weergegeven als alle velden (naam, e-mail, telefoon) zijn ingevuld (NOT()) retourneert TRUE voor elke velden). Als dit niet het geval is, wordt de knop verborgen (AND(meerdere FALSES) = FALSE).
 
-* OR(): Geeft TRUE terug als ten minste een van de opgegeven voorwaarden TRUE is.
+- OR(): Geeft TRUE terug als ten minste een van de opgegeven voorwaarden TRUE is.
 
-   * Voorbeeld: een korting toepassen als een gebruiker een van de van toepassing zijnde codes voor het kortingscoupon invoert.
+   - Voorbeeld: een korting toepassen als een gebruiker een van de van toepassing zijnde codes voor het kortingscoupon invoert.
 
    1. Stel de eigenschap `Visible` van het veld &quot;final amount&quot; in op:
 
@@ -229,9 +229,9 @@ Hier volgen enkele voorbeelden van de meestgebruikte spreadsheetfuncties:
 
 **functies van de Tekst:**
 
-* IF(): evalueert een voorwaarde en geeft een specifieke waarde als TRUE, en een andere waarde als FALSE.
+- IF(): evalueert een voorwaarde en geeft een specifieke waarde als TRUE, en een andere waarde als FALSE.
 
-   * Voorbeeld: een aangepast bericht weergeven op basis van een gekozen productcategorie.
+   - Voorbeeld: een aangepast bericht weergeven op basis van een gekozen productcategorie.
 
    1. Stel de eigenschap `Value` van het `message` veld in op `Only upto 7 kg check-in lagguage is allowed!` :
 
@@ -264,7 +264,7 @@ Hier volgen enkele voorbeelden van de meestgebruikte spreadsheetfuncties:
 
 **functies Math:**
 
-* SUM(): voegt waarden uit een opgegeven celbereik toe.
+- SUM(): voegt waarden uit een opgegeven celbereik toe.
 
   Voorbeeld: de totale kosten berekenen van artikelen in een winkelwagentje.
 
@@ -273,7 +273,7 @@ SUM(prijs * hoeveelheid)
 
   In deze formule wordt ervan uitgegaan dat je afzonderlijke velden hebt voor &quot;prijs&quot; en &quot;hoeveelheid&quot; van elk object. Het vermenigvuldigt ze en gebruikt SUM() om de totale kosten voor alle artikelen in het winkelwagentje op te tellen.
 
-* ROUND(): rondt een getal af tot een opgegeven aantal decimalen.
+- ROUND(): rondt een getal af tot een opgegeven aantal decimalen.
 
   Voorbeeld: het afronden van een berekend kortingsbedrag op twee decimalen.
 
@@ -282,7 +282,7 @@ ROUND(korting, 2)
 
   Met deze formule wordt de kortingswaarde afgerond op twee decimalen.
 
-* MIN(): retourneert de laagste waarde van een opgegeven celbereik.
+- MIN(): retourneert de laagste waarde van een opgegeven celbereik.
 
   Voorbeeld: zoeken naar de minimumleeftijd voor een inschrijvingsformulier op basis van een geselecteerd land.
 
@@ -304,9 +304,9 @@ Het uit-van-de-Doos (OOTB) Aangepaste blok van Forms verstrekt implementaties vo
 
 Aangepaste functies bevinden zich in het `[Adaptive form block]/functions.js` -bestand. Het aanmaakproces omvat doorgaans de volgende stappen:
 
-* Functiedeclaratie: definieer de functienaam en de parameters ervan (de inputs die deze accepteert).
-* Logische implementatie: schrijf de code die de specifieke berekeningen of manipulaties beschrijft die door de functie worden uitgevoerd.
-* Functie exporteren: maak de functie toegankelijk binnen uw regels door deze uit het relevante bestand te exporteren.
+- Functiedeclaratie: definieer de functienaam en de parameters ervan (de inputs die deze accepteert).
+- Logische implementatie: schrijf de code die de specifieke berekeningen of manipulaties beschrijft die door de functie worden uitgevoerd.
+- Functie exporteren: maak de functie toegankelijk binnen uw regels door deze uit het relevante bestand te exporteren.
 
 ### Voorbeeld: functie Year
 
@@ -315,9 +315,9 @@ In dit voorbeeld worden twee aangepaste functies getoond die de functie YEAR() v
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

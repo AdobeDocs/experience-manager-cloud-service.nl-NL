@@ -4,17 +4,14 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
 
 # Aangepaste component maken in WYSIWYG Authoring
-
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
-
 
 Edge Delivery Services Forms biedt aanpassing, waardoor ontwikkelaars aan de voorzijde op maat aangepaste formulieronderdelen kunnen maken. Deze aangepaste componenten worden naadloos geïntegreerd in de WYSIWYG-ontwerpervaring, zodat formulierauteurs ze eenvoudig kunnen toevoegen, configureren en beheren in de formuliereditor. Met aangepaste componenten kunnen auteurs de functionaliteit verbeteren en tegelijkertijd zorgen voor een vloeiend en intuïtief ontwerpproces.
 
@@ -24,8 +21,8 @@ In dit document worden de stappen beschreven waarmee u aangepaste componenten ku
 
 Voordat u een aangepaste component gaat maken, moet u:
 
-* Heb een basiskennis van [ inheemse componenten van HTML ](/help/edge/docs/forms/form-components.md).
-* Weet hoe te [ de gebieden van de stijlvorm die op gebiedstype worden gebaseerd CSS selecteurs gebruiken ](/help/edge/docs/forms/style-theme-forms.md)
+- Heb een basiskennis van [ inheemse componenten van HTML ](/help/edge/docs/forms/form-components.md).
+- Weet hoe te [ de gebieden van de stijlvorm die op gebiedstype worden gebaseerd CSS selecteurs gebruiken ](/help/edge/docs/forms/style-theme-forms.md)
 
 ## Een aangepaste component maken
 
@@ -52,9 +49,9 @@ Voeg nieuwe map en bestanden toe voor uw nieuwe aangepaste component in uw AEM-p
    1. Open uw AEM-project en navigeer naar `../blocks/form/components/` .
    1. Voeg een nieuwe map voor uw aangepaste component toe op `../blocks/form/components/<component_name>` . In dit voorbeeld maken we een map met de naam `range` .
    1. Navigeer naar de nieuwe map op `../blocks/form/components/<component_name>` . Navigeer bijvoorbeeld naar `../blocks/form/components/range` en voeg de volgende bestanden toe:
-      * `/blocks/form/components/range/_range.json` - Bevat de definitie van de aangepaste component.
-      * `../blocks/form/components/range/range.css` - Definieert de opmaak voor de aangepaste component.
-      * `../blocks/form/components/range/range.js`: past de aangepaste component bij uitvoering aan.
+      - `/blocks/form/components/range/_range.json` - Bevat de definitie van de aangepaste component.
+      - `../blocks/form/components/range/range.css` - Definieert de opmaak voor de aangepaste component.
+      - `../blocks/form/components/range/range.js`: past de aangepaste component bij uitvoering aan.
 
         ![ Toevoegend de douanecomponent voor creatie ](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -68,12 +65,12 @@ Voeg nieuwe map en bestanden toe voor uw nieuwe aangepaste component in uw AEM-p
 
    Als u de definitie wilt toevoegen, moeten de velden die in het `_range.json` -bestand moeten worden toegevoegd, als volgt worden ingesteld:
 
-   * **titel**: De titel van de component die in de Universele Redacteur wordt getoond.
-   * **identiteitskaart**: Een uniek herkenningsteken van de component.
-   * **fieldType**: Forms steunt diverse **fieldType** om specifieke soorten gebruikersinput te vangen. U kunt [ gesteunde fieldType in de Extra sectie van de Byte ](#supported-fieldtypes) vinden.
-   * **resourceType**: Elke douanecomponent heeft een geassocieerd middeltype dat op zijn fieldType wordt gebaseerd. U kunt [ gesteunde resourceType in de Extra sectie van de Byte ](#supported-resourcetype) vinden.
-   * **jcr:titel**: Het is gelijkaardig aan een titel, maar het wordt opgeslagen binnen de structuur van de component.
-   * **fd:viewType**: Het vertegenwoordigt de naam van de douanecomponent. Dit is de unieke id voor de component. U moet een aangepaste weergave voor de component maken.
+   - **titel**: De titel van de component die in de Universele Redacteur wordt getoond.
+   - **identiteitskaart**: Een uniek herkenningsteken van de component.
+   - **fieldType**: Forms steunt diverse **fieldType** om specifieke soorten gebruikersinput te vangen. U kunt [ gesteunde fieldType in de Extra sectie van de Byte ](#supported-fieldtypes) vinden.
+   - **resourceType**: Elke douanecomponent heeft een geassocieerd middeltype dat op zijn fieldType wordt gebaseerd. U kunt [ gesteunde resourceType in de Extra sectie van de Byte ](#supported-resourcetype) vinden.
+   - **jcr:title**: Het is gelijkaardig aan een titel, maar het wordt opgeslagen binnen de structuur van de component.
+   - **fd:viewType**: Het vertegenwoordigt de naam van de douanecomponent. Dit is de unieke id voor de component. U moet een aangepaste weergave voor de component maken.
 
 Het bestand `_range.json` ziet er na het toevoegen van de componentdefinitie als volgt uit:
 
@@ -104,7 +101,7 @@ Het bestand `_range.json` ziet er na het toevoegen van de componentdefinitie als
 
 >[!NOTE]
 >
-> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
+> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
 
 ### &#x200B;2. De eigenschappen van de aangepaste component definiëren voor ontwerpen
 
@@ -118,17 +115,17 @@ De aangepaste component bevat een componentmodel dat aangeeft welke eigenschappe
 
    1. **creeer nieuw model**
 
-      * Voeg in de modellenarray een nieuw object toe en stel de `id` van het componentmodel in zodat deze overeenkomt met de eigenschap `fd:viewType` die eerder in de componentdefinitie is geconfigureerd.
-      * Neem een array met velden in dit object op.
+      - Voeg in de modellenarray een nieuw object toe en stel de `id` van het componentmodel in zodat deze overeenkomt met de eigenschap `fd:viewType` die eerder in de componentdefinitie is geconfigureerd.
+      - Neem een array met velden in dit object op.
 
    2. **bepaalt Gebieden voor de dialoog van het Bezit**
 
-      * Elk voorwerp in de gebiedsserie zou een container-type component moeten zijn, toestaand het om als lusje in de **dialoog van het Bezit** te verschijnen.
-      * Sommige velden kunnen verwijzen naar herbruikbare eigenschappen die beschikbaar zijn in `models/form-common` .
+      - Elk voorwerp in de gebiedsserie zou een container-type component moeten zijn, toestaand het om als lusje in de **dialoog van het Bezit** te verschijnen.
+      - Sommige velden kunnen verwijzen naar herbruikbare eigenschappen die beschikbaar zijn in `models/form-common` .
 
    3. **Gebruik een Bestaand Model van de Component als Verwijzing**
 
-      * U kunt de inhoud van een bestaand componentenmodel kopiëren dat aan uw gekozen `fieldType` beantwoordt en het wijzigen zoals nodig. Bijvoorbeeld, wordt de `number-input` component uitgebreid om a **waaier** component tot stand te brengen, zodat kunnen wij de modelserie van `models/form-components/_number-input.json` als verwijzing gebruiken.
+      - U kunt de inhoud van een bestaand componentenmodel kopiëren dat aan uw gekozen `fieldType` beantwoordt en het wijzigen zoals nodig. Bijvoorbeeld, wordt de `number-input` component uitgebreid om a **waaier** component tot stand te brengen, zodat kunnen wij de modelserie van `models/form-components/_number-input.json` als verwijzing gebruiken.
 
    Het bestand `_range.json` ziet er na het toevoegen van het componentmodel als volgt uit:
 
@@ -161,7 +158,7 @@ De aangepaste component bevat een componentmodel dat aangeeft welke eigenschappe
 
    >[!NOTE]
    >
-   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    U kunt [ douaneeigenschappen ](#adding-custom-properties-for-your-custom-component) aan een douanecomponent ook toevoegen om zijn functionaliteit uit te breiden.
 
@@ -184,12 +181,12 @@ Om het de douanebezit van de Waarde van de Stap toe te voegen, voeg het componen
       }
 ```
 
-Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a **&#x200B;**. Hieronder volgt een uitsplitsing van elk veld:
+Het fragment JSON bepaalt een douanebezit genoemd **Waarde van de Stap** voor de component van de Waaier van a ****. Hieronder volgt een uitsplitsing van elk veld:
 
-* **component**: Specificeert het type van inputgebied dat in de dialoog van het Bezit wordt gebruikt. In dit geval geeft `number` aan dat het veld numerieke waarden accepteert.
-* **naam**: Het herkenningsteken voor het bezit, dat wordt gebruikt om het in de logica van de component van verwijzingen te voorzien. Hier vertegenwoordigt `stepValue` de step waarde die voor de waaier wordt geplaatst.
-* **etiket**: De vertoningsnaam van het bezit zoals gezien in de dialoog van het Bezit.
-* **valueType**: Bepaalt het gegevenstype dat voor het bezit wordt verwacht. `number` zorgt ervoor dat alleen numerieke invoer is toegestaan.
+- **component**: Specificeert het type van inputgebied dat in de dialoog van het Bezit wordt gebruikt. In dit geval geeft `number` aan dat het veld numerieke waarden accepteert.
+- **naam**: Het herkenningsteken voor het bezit, dat wordt gebruikt om het in de logica van de component van verwijzingen te voorzien. Hier vertegenwoordigt `stepValue` de step waarde die voor de waaier wordt geplaatst.
+- **etiket**: De vertoningsnaam van het bezit zoals gezien in de dialoog van het Bezit.
+- **valueType**: Bepaalt het gegevenstype dat voor het bezit wordt verwacht. `number` zorgt ervoor dat alleen numerieke invoer is toegestaan.
 
 U kunt `stepValue` nu gebruiken als een aangepaste eigenschap in de JSON-eigenschappen van `range.js` en dynamisch gedrag implementeren op basis van de waarde ervan bij uitvoering.
 
@@ -263,46 +260,48 @@ Om ervoor te zorgen dat de aangepaste component tijdens het ontwerpen van formul
 1. Zoek de componentenarray in het object dat `id="form"` heeft.
 1. Voeg de `fd:viewType` -waarde van `definitions[]` toe aan de componentenarray van het object met `id="form"` .
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![ componentenfilter ](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. Uw aangepaste component registreren
 
 Als u wilt dat het formulierblok de aangepaste component herkent en zijn eigenschappen die in het componentmodel zijn gedefinieerd tijdens het ontwerpen van het formulier laadt, voegt u de `fd:viewType` -waarde van de componentdefinitie toe aan het `mappings.js` -bestand.
+
 Een component registreren:
+
 1. Navigeer naar het `/blocks/form/mappings.js` -bestand.
 1. Zoek de array `customComponents[]` .
 1. Voeg de `fd:viewType` -waarde van de `definitions[]` -array toe aan de `customComponents[]` -array.
@@ -347,7 +346,7 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -359,18 +358,18 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -408,7 +407,7 @@ U kunt douanecomponenten wijzigen gebruikend vooraf bepaalde prijsverhoging, zoa
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -461,18 +460,18 @@ In de onderstaande schermafbeelding ziet u de bijgewerkte bereikcomponent.
 
 ## Veelgestelde vraag
 
-* **als ik het stileren in zowel component.css als forms.css toevoegt, welke één prioriteit neemt?**
+- **als ik het stileren in zowel component.css als forms.css toevoegt, welke één prioriteit neemt?**
 Wanneer de stijlen in zowel `component.css` als **forms.css** worden bepaald, `component.css` neemt prioriteit. Dit komt doordat stijlen op componentniveau specifieker zijn en algemene stijlen uit `forms.css` overschrijven.
 
-* **Mijn douanecomponent is niet zichtbaar in de lijst van beschikbare componenten in Universele Redacteur. Hoe los ik dit op?**
+- **Mijn douanecomponent is niet zichtbaar in de lijst van beschikbare componenten in Universele Redacteur. Hoe los ik dit op?**
 Als uw aangepaste component niet wordt weergegeven, controleert u de volgende bestanden om te controleren of de component correct is geregistreerd:
-   * **component-definition.json**: Verifieer dat de component behoorlijk wordt bepaald.
-   * **component-filters.json**: verzeker de component in de aangewezen secties wordt toegestaan.
-   * **component-models.json**: Bevestig dat het componentenmodel correct wordt gevormd.
+   - **component-definition.json**: Verifieer dat de component behoorlijk wordt bepaald.
+   - **component-filters.json**: verzeker de component in de aangewezen secties wordt toegestaan.
+   - **component-models.json**: Bevestig dat het componentenmodel correct wordt gevormd.
 
 ## Aanbevolen procedures
 
-* Het wordt geadviseerd aan [ opstelling een lokale ontwikkelomgeving van AEM ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) voor het ontwikkelen van douanestijlen en componenten plaatselijk.
+- Het wordt geadviseerd aan [ opstelling een lokale ontwikkelomgeving van AEM ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) voor het ontwikkelen van douanestijlen en componenten plaatselijk.
 
 
 ## Extra byte
@@ -497,19 +496,17 @@ Als uw aangepaste component niet wordt weergegeven, controleert u de volgende be
 ### Ondersteunde veldtypen
 
 De ondersteunde fieldTypes voor formulieren zijn:
-* tekstinvoer
-* getal-invoer
-* date-input
-* deelvenster
-* selectievakje
-* vervolgkeuzelijst
-* radiogroep
-* onbewerkte tekst
-* bestandsinvoer
-* email
-* image
-* knop
 
-## Zie ook
+- tekstinvoer
+- getal-invoer
+- date-input
+- deelvenster
+- selectievakje
+- vervolgkeuzelijst
+- radiogroep
+- onbewerkte tekst
+- bestandsinvoer
+- email
+- image
+- knop
 
-{{universal-editor-see-also}}

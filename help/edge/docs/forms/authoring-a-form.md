@@ -6,7 +6,7 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -37,14 +37,14 @@ AEM biedt meerdere opties voor het schrijven van formulieren om interactieve en 
 
 AEM steunt veelvoudige auteursmethodes, elk geschikt voor verschillende gebruikersbehoeften, technische vaardigheidsniveaus, en het publiceren bestemmingen.
 
-* [ Componenten van de Stichting ](/help/forms/create-adaptive-form-tutorial.md): De Componenten van de Stichting van het gebruik om traditionele, interactieve vormen te bouwen. Deze indeling is het meest geschikt voor formulieren die integreren met verouderde systemen of die vertrouwen op langdurige workflows. Forms die is ontworpen met Foundation Components, kan alleen op AEM worden gepubliceerd en is niet compatibel met Edge Delivery Services.
+- [ Componenten van de Stichting ](/help/forms/create-adaptive-form-tutorial.md): De Componenten van de Stichting van het gebruik om traditionele, interactieve vormen te bouwen. Deze indeling is het meest geschikt voor formulieren die integreren met verouderde systemen of die vertrouwen op langdurige workflows. Forms die is ontworpen met Foundation Components, kan alleen op AEM worden gepubliceerd en is niet compatibel met Edge Delivery Services.
 
-* [ Componenten van de Kern ](/help/forms/creating-adaptive-form-core-components.md): De Componenten van de Kern van het gebruik om moderne, ontvankelijke, en scalable vormen tot stand te brengen. Ze ondersteunen herbruikbaarheid, toegankelijkheid en betere prestaties. Forms die is ontworpen met Core Components, kan zowel op AEM als op Edge Delivery Services worden gepubliceerd en biedt flexibiliteit op verschillende platforms.
+- [ Componenten van de Kern ](/help/forms/creating-adaptive-form-core-components.md): De Componenten van de Kern van het gebruik om moderne, ontvankelijke, en scalable vormen tot stand te brengen. Ze ondersteunen herbruikbaarheid, toegankelijkheid en betere prestaties. Forms die is ontworpen met Core Components, kan zowel op AEM als op Edge Delivery Services worden gepubliceerd en biedt flexibiliteit op verschillende platforms.
 
-* [ Edge Delivery Services Forms ](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms transformeert de manier de vormen worden authored, uitgevoerd, en verwerkt. Door gebruik te maken van Edge Delivery Services kunnen organisaties snelle, veilige en hoogst beschikbare digitale formulieren maken, waardoor de gebruikerservaring en de operationele efficiëntie worden verbeterd in een snelle ontwikkelomgeving. U kunt de Edge Delivery Services Forms op twee manieren ontwerpen:
-   * [ het Authoring van WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Gebruik de Universele Redacteur voor visuele, belemmering-en-dalings vormverwezenlijking ideaal voor inhoudsauteurs met beperkte technische kennis. Forms die is geschreven met Universal Editor, wordt geleverd met Edge Delivery Services voor snelle, lichtgewichtrendering.
-   * [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/tutorial.md): De hulpmiddelen van het gebruik zoals de Bladen van Microsoft Excel of van Google om vormstructuur en inhoud te bepalen. Deze methode is handig voor zakelijke gebruikers die de voorkeur geven aan spreadsheetinvoer. Deze formulieren worden doorgaans via Edge Delivery Services gepubliceerd en zijn geschikt voor eenvoudige, grote gebruiksgevallen.
-* [ Koploze Authoring ](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Gebruik APIs om formulieren als JSON voor om het even welk front, bijvoorbeeld, React, Angular, mobiele apps, of kiosken, zonder afhankelijk van AEM terug te geven. Momenteel ondersteunen alleen Core Components de levering zonder kop. Zwaarloze formulieren zijn ideaal voor omnichannel gebruiksgevallen en worden gebruikt onafhankelijk van de AEM-rendering van pagina&#39;s, waardoor ze flexibel zijn voor aangepaste front-end implementaties.
+- [ Edge Delivery Services Forms ](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms transformeert de manier de vormen worden authored, uitgevoerd, en verwerkt. Door gebruik te maken van Edge Delivery Services kunnen organisaties snelle, veilige en hoogst beschikbare digitale formulieren maken, waardoor de gebruikerservaring en de operationele efficiëntie worden verbeterd in een snelle ontwikkelomgeving. U kunt de Edge Delivery Services Forms op twee manieren ontwerpen:
+   - [ het Authoring van WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Gebruik de Universele Redacteur voor visuele, belemmering-en-dalings vormverwezenlijking ideaal voor inhoudsauteurs met beperkte technische kennis. Forms die is geschreven met Universal Editor, wordt geleverd met Edge Delivery Services voor snelle, lichtgewichtrendering.
+   - [ op document-Gebaseerde Authoring ](/help/edge/docs/forms/tutorial.md): De hulpmiddelen van het gebruik zoals de Bladen van Microsoft Excel of van Google om vormstructuur en inhoud te bepalen. Deze methode is handig voor zakelijke gebruikers die de voorkeur geven aan spreadsheetinvoer. Deze formulieren worden doorgaans via Edge Delivery Services gepubliceerd en zijn geschikt voor eenvoudige, grote gebruiksgevallen.
+- [ Koploze Authoring ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Gebruik APIs om formulieren als JSON voor om het even welk front, bijvoorbeeld, React, Angular, mobiele apps, of kiosken, zonder afhankelijk van AEM terug te geven. Momenteel ondersteunen alleen Core Components de levering zonder kop. Zwaarloze formulieren zijn ideaal voor omnichannel gebruiksgevallen en worden gebruikt onafhankelijk van de AEM-rendering van pagina&#39;s, waardoor ze flexibel zijn voor aangepaste front-end implementaties.
 
 ### Vergelijkende analyse van AEM-methoden voor formulierontwerp
 
@@ -107,7 +107,7 @@ In de volgende tabel vindt u een gedetailleerde vergelijking van de belangrijkst
 
 ## Verwant artikel
 
-* [Op documenten gebaseerde authoring met Microsoft Excel of Google Sheets](/help/edge/docs/forms/create-forms.md)
-* [ Universele Redacteur voor het auteursrecht van WYSIWYG ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [Een adaptief formulier maken (basiscomponenten)](/help/forms/creating-adaptive-form.md)
-* [Een adaptief formulier maken (kerncomponenten)](/help/forms/create-an-adaptive-form.md)
+- [Op documenten gebaseerde authoring met Microsoft Excel of Google Sheets](/help/edge/docs/forms/create-forms.md)
+- [ Universele Redacteur voor het auteursrecht van WYSIWYG ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Een adaptief formulier maken (basiscomponenten)](/help/forms/creating-adaptive-form.md)
+- [Een adaptief formulier maken (kerncomponenten)](/help/forms/create-an-adaptive-form.md)

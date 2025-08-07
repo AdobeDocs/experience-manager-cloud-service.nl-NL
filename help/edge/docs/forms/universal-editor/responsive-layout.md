@@ -1,159 +1,460 @@
 ---
-title: De modus Universal Editor - responsief
-description: In dit artikel wordt uitgelegd hoe u een voorbeeld van formulieren kunt bekijken met verschillende emulators in de Universal Editor om hun uiterlijk tijdens het ontwerpen te visualiseren.
+title: Responsieve Forms maken met Universal Editor
+description: Leer responsieve formulieren voor alle apparaten ontwerpen, testen en optimaliseren met de Universal Editor. Masterapparaat testen, layout patronen en mobiele optimalisatietechnieken voor AEM Forms met Edge Delivery Services.
+keywords: responsieve formulieren, mobiele formulieren, apparaattests, universele editor, adaptieve indeling, formulieroptimalisatie, mobiel ontwerp, responsief ontwerp, formulierindelingen, apparaatemulator
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: User, Developer
+level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
 
 
-# Responsieve modus in WYSIWYG Authoring
+# Responsieve Forms maken met Universal Editor
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
+Gebruikers kunnen formulieren openen op een groot aantal apparaten, zoals desktops, tablets en smartphones. Het ontwerpen van responsieve formulieren zorgt voor een optimale ervaring voor alle gebruikers, ongeacht het apparaat. In deze handleiding wordt uitgelegd hoe u formulieren voor elke schermgrootte ontwerpt, test en optimaliseert met de Universal Editor.
 
-## Introductie tot responsieve Forms
+Bij het maken van responsieve formulieren zijn twee hoofdactiviteiten betrokken:
 
-In de wereld van vandaag met meerdere apparaten moeten uw formulieren er fantastisch uitzien en goed functioneren op schermen van elke grootte - van desktopmonitoren tot smartphones. Met de responsieve modus in de Universal Editor kunt u dit bereiken door tijdens het ontwerpproces een voorbeeld van uw formulieren te bekijken en uw formulieren te testen op verschillende apparaatgrootten.
+- **Responsief het Testen:** Voorproef en test uw vormen over diverse het schermgrootte gebruikend apparatenmededingers.
+- **Responsief Ontwerp:** selecteer en voer lay-outpatronen uit die naadloos aan verschillende apparaten aanpassen.
 
-De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) laat u toe om vormen tot stand te brengen die automatisch aan verschillende het schermgrootte aanpassen, die een optimale gebruikerservaring ongeacht het apparaat verstrekken dat wordt gebruikt.
+**In deze gids, zult u leren hoe te:**
 
-## Forms voorvertonen in responsieve modus voor verschillende apparaten
+- Formulieren testen op computers, tablets en mobiele apparaten
+- Selecteer de juiste layoutpatronen voor uw inhoud
+- Aanbevolen werkwijzen voor responsief ontwerp toepassen
+- Algemene problemen met formulieren oplossen
+- Formulieren optimaliseren voor mobiele prestaties
 
-De Universele Redacteur verstrekt een **Emulator** pictogram dat bij de hoger-juiste hoek van het scherm wordt gevestigd dat u toestaat om pagina&#39;s over verschillende apparatengrootte voor te vertonen en het gedrag van uw ontvankelijk ontwerp voor een betere gebruikerservaring te testen.
+## Waarom responsieve Forms belangrijk is
 
-Een voorbeeld van een formulier weergeven in de responsieve modus:
+**Gevolgen van de Ervaring van de Gebruiker:**
 
-1. Open het formulier in de Universal Editor om het te bewerken.
-2. Klik het ![ pictogram van de Mededinger die een symbool van de apparatenvoorproef ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%, breedte=2%} in de toolbar tonen.
-3. Selecteer een apparaatindeling:
-   - Desktop (standaard)
-   - Tablet
-   - Mobiel
-   - Aangepast (breedte en hoogte opgeven)
+- Meer dan 60% van de gebruikers heeft toegang tot formulieren op mobiele apparaten
+- Slechte mobiele ervaringen leiden tot een 67% hogere wachttijd
+- Met responsieve formulieren kunt u de voltooiingstarieven met maximaal 25% verhogen
 
-![ Schermafbeelding van Universele Redacteur die ontvankelijke wijzeopties voor verschillende apparaten tonen ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+**BedrijfsVoordelen:**
 
-U kunt het **pictogram van de Omwenteling van het Scherm {ook gebruiken 0} om tussen staande en landschapsrichtingen van een knevel te voorzien wanneer het voorvertonen op tablet of mobiele apparaten.**
+- Hogere voltooiingssnelheden voor formulieren
+- Verbeterde gebruikerstevredenheid
+- Verbeterde toegankelijkheidscompatibiliteit
+- Lagere ontwikkelings- en onderhoudskosten
 
-De Universal Editor biedt verschillende emulators om formulieren voor te vertonen op verschillende apparaten. De onderstaande tabel bevat een overzicht van de beschikbare emulatortypen en de bijbehorende apparaatrepresentaties:
+>[!TIP]
+>
+> **mobiel-eerste Benadering:** Begin met het ontwerpen voor mobiele apparaten, dan verbetert voor grotere schermen. Dit verzekert kernfunctionaliteit in het meest beperkte milieu werkt.
 
-<table border="1" style="text-align:" left; border-collapse: collapse;">
-    <tr>
-        <th style="width: 20%">Type emulator</th>
-        <th style="width: 80%">Apparaatafbeelding</th>
-    </tr>
-    <tr>
-        <td style="width: 20%">Desktop</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Bureaubladweergave van een formulier met een volledige-breedtelay-out" style="width: auto; height: auto"></td>
-    </tr>
-    <tr>
-        <td style="width: 20%">Tablet</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tabletweergave van een formulier met een indeling met gemiddelde breedte en aangepaste componenten" style="width: auto; height: auto"></td>
-    </tr>
-    <tr>
-        <td style="width: 20%">Mobiel</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="De mobiele weergave van een formulier met een smalle indeling met gestapelde componenten" style="width: auto; height: auto"></td>
-    </tr>
-    <tr>
-        <td style="width: 20%">Aangepast apparaat</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Aangepaste apparaatweergave van een formulier met door de gebruiker opgegeven afmetingen" style="width: auto; height: auto"></td>
-    </tr>
-</table>
+## Deel 1: Forms testen op apparaten
 
-## Indelingsmogelijkheden
+Door uw formulieren op verschillende apparaten te testen, kunt u problemen die op een probleem reageren, opsporen en oplossen voordat gebruikers deze tegenkomen. De Universal Editor biedt een emulatormodus om verschillende schermgrootten en -oriëntaties te simuleren.
 
-Met de Universal Editor kunt u gebruiksvriendelijke formulieren maken die eindgebruikers een dynamische ervaring bieden. De formulierindeling bepaalt hoe items of componenten in een formulier worden weergegeven.
+### Je Forms testen
 
-De Universal Editor ondersteunt de volgende typen indelingen voor formulieren:
+**Stap 1: Open de Mededinger van het Apparaat**
 
-- [Deelvensterlay-out](#panel-layout)
-- [Wizard-indeling](#wizard-layout)
-- [Accordeonlay-out](#accordion-layout)
+1. Open het formulier in de Universal Editor.
+2. Klik het ![ pictogram van de Mededinger ](/help/edge/docs/forms/universal-editor/assets/emulator.png) {height=2%,width=2%} **Emulator** pictogram in de toolbar.
+3. Het menu van de apparaatkiezer wordt weergegeven.
+
+![ Universele Redacteur Responsieve het Testen Interface ](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+
+**Stap 2: Selecteer een Apparaat voor het Testen**
+
+- **Desktop** (1200px+ breedte): Standaard het uitgeven mening
+- **Tablet** (768px-1199px breedte): het schermtesten van Medium
+- **Mobiel** (320px-767px breedte): Kleine het schermtesten
+- **Douane**: Specificeer nauwkeurige afmetingen voor specifieke apparaten
+
+**Stap 3: De Oriëntaties van het Apparaat van de test**
+
+Gebruik het **pictogram van de Rotator van het 1} Scherm** om allebei te testen:
+
+- **Staand wijze**: Standaard mobiele richtlijn
+- **Liggende wijze**: Geroteerde tablet of telefoonmening
+
+### Resultaten van testen van apparaten
+
+Elk apparaattype onthult unieke responsieve gedragingen:
+
+| **Type van Apparaat** | **Breedte van het Scherm** | **wat te controleren** | **Gemeenschappelijke Kwesties** |
+|-----------------|------------------|-------------------|-------------------|
+| **Desktop** | 1200 px+ | Volledige layout, alle functies zichtbaar | Te veel witruimte, te brede lay-outs |
+| **Tablet** | 768 px-1199 px | Stapelen van componenten, bruikbaarheid van navigatie | Onhandige grootte, problemen met aanraakdoelen |
+| **Mobiel** | 320 px, 767 px | Lay-out met één kolom, duimnavigatie | Kleine tekst, knoppen met weinig tussenruimte |
+| **Douane** | Door gebruiker gedefinieerd | Apparaatspecifieke vereisten | Hoekgevallen van onderbrekingspunten |
+
+### Visuele voorbeelden door Apparaat
+
+**Mening van de Desktop (1200px+):**
+![ de vormmening van de Desktop ](/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png)
+*volledig-breedtelay-out met zij aan zij vormgebieden.*
+
+**Mening van de Tablet (768px-1199px):**
+![ de vormmening van Tablet ](/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png)
+*Medium-breedte lay-out met aangepaste component uit elkaar plaatsen.*
+
+**Mobiele Mening (320px-767px):**
+![ Mobiele vormmening ](/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png)
+*enig-kolomlay-out met gestapelde componenten.*
+
+**Mening van het Apparaat van de Douane:**
+![ het apparatenmening van de Douane ](/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png)
+*Gebruiker-gespecificeerde afmetingen voor het gerichte testen.*
+
+### Testworkflow
+
+**voor Nieuwe Forms:**
+
+1. **bouwt in Desktopmening:** Begin met volledige functionaliteit.
+2. **Test op tablet:** controleer aanpassingen voor middelgrote schermen.
+3. **Valideer op mobiel:** verzeker bruikbaarheid op kleine schermen.
+4. **bevestig ontvankelijke kwesties:** pas lay-outs aan zoals nodig.
+5. **herstelt alle apparaten:** bevestig moeilijke situaties over alle grootte.
+
+**voor Bestaande Forms:**
+
+1. **Snelle mobiele controle:** Werkt de vorm aan telefoons?
+2. **identificeer probleemgebieden:** de lay-out en bruikbaarheidskwesties van de nota.
+3. **Systematisch testen:** test grondig elke apparatengrootte.
+4. **de kwesties van het Document:** spoor wat moet worden bevestigd.
+5. **voert moeilijke situaties uit:** methodisch de kwesties van het Adres.
+
+## Deel 2: Responsieve layoutpatronen selecteren
+
+Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende schermgrootten. Het juiste patroon verbetert zowel de gebruikerservaring als de mobiele prestaties.
+
+### Overzicht van het layoutpatroon
+
+| **Type van Lay-out** | **Best voor** | **Mobiele Prestaties** | **Complexiteit** |
+|---------------------|-------------------------------------------|------------------------|----------------|
+| **Lay-out van het Comité** | Gecategoriseerde inhoud, formulieren in dashboardstijl | Goed | Laag |
+| **Lay-out van de Tovenaar** | Meerdere stappen, complexe workflows | Uitstekend | Medium |
+| **Lay-out van de Accordeon** | Inhoud in veelgestelde vragen, optionele secties | Uitstekend | Laag |
+
+### Handleiding voor snelle besluitvorming
+
+**Lay-out van het Comité van het Gebruik wanneer:**
+
+- Uw inhoud is verdeeld in verschillende categorieën
+- Gebruikers moeten meerdere secties tegelijk weergeven
+- De inhoud is relatief eenvoudig
+
+**Lay-out van de Tovenaar van het Gebruik wanneer:**
+
+- Het formulier bevat meerdere logische stappen
+- U wilt cognitieve belasting verminderen
+- Mobiele gebruikers zijn een primair publiek
+
+**Lay-out van de Accordeon van het Gebruik wanneer:**
+
+- Het formulier bevat optionele of secundaire inhoud
+- Ruimtebehoud is belangrijk
+- Inhoud kan logisch worden gegroepeerd
 
 ### Layout deelvenster
 
-De indeling van deelvensters is handig om verwante velden zo te ordenen dat u gemakkelijker kunt navigeren en de bijbehorende inhoud kunt vinden. In de indeling van het deelvenster worden formuliercomponenten in afzonderlijke secties of deelvensters gerangschikt in formulieren.
+**Doel:** organiseert verwante inhoud in visueel verschillende secties die gelijktijdig kunnen worden bekeken.
 
-![ lay-out van het Comité die veelvoudige verschillende secties binnen een vorm tonen ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+![ Voorbeeld van de Lay-out van het Comité ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Voorbeeld:** de vorm van de baantoepassing zou panelen kunnen gebruiken om &quot;Persoonlijke Informatie,&quot;Onderwijs,&quot;&quot;Ervaring van het Werk,&quot;en &quot;Verwijzingen&quot;in verschillende secties te scheiden.
+**Responsief Gedrag:**
 
-**Reactiegedrag:** op kleinere schermen, stapelen de panelen typisch verticaal, die hun verschillende groeperingen handhaven terwijl het aanpassen aan de lagere breedte.
+- **Desktop (1200px+):** de vertoningen van panelen zij aan zij of in een net
+- **Tablet (768px-1199px):** stapel van Panelen verticaal met het uit elkaar plaatsen
+- **Mobiel (320px-767px):** Enige-kolomlay-out met duidelijke sectieonderbrekingen
 
-U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+**Stappen van de Implementatie:**
+
+1. Gebruik de [ Component van het Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+2. Groepeer verwante velden in elk deelvenster.
+3. Voeg duidelijke koppen toe voor elke sectie.
+4. Zorg voor voldoende ruimte tussen deelvensters.
+
+**Beste praktijken:**
+
+- Beperk het aantal tot 3-4 deelvensters op het bureaublad om overweldigende gebruikers te voorkomen.
+- Gebruik beschrijvende titels voor elk deelvenster.
+- Groepeer verwante velden logisch om cognitieve belasting te verminderen.
+- Navigatie in het deelvenster Testen op aanraakapparaten.
+
+**Gevallen van het Gebruik van het Voorbeeld:**
+
+- **Toepassing van de Baan:** Persoonlijke Info, Onderwijs, Ervaring, Verwijzingen
+- **de Registratie van het Product:** Basisdetails, Technische Specificaties, Info van de Garantie
+- **Forms van het Onderzoek:** Demografieën, Voorkeur, Terugkoppeling, Contact
 
 ### Wizard Layout
 
-De indeling van de wizard helpt een complex formulier te vereenvoudigen door het op te splitsen in afzonderlijke stappen. Elke stap vertegenwoordigt een verschillend deel van het proces, en de gebruikers navigeren opeenvolgend door de stappen, vaak met **Volgende** en **Achter** knopen. U kunt de indeling van de wizard gebruiken om een formulier te maken dat uit meerdere secties of stappen bestaat.
+**Doel:** gidst gebruikers door complexe processen stap voor stap, verminderend cognitieve lading en verbeterend voltooiingstarieven.
 
-![ lay-out die van de Tovenaar een multi-step vorm met navigatiecontroles toont ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+![ het Voorbeeld van de Lay-out van de Tovenaar ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Voorbeeld:** Een vorm van de verzekeringseis zou een tovenaar kunnen gebruiken om gebruikers door het verstrekken van inherente details te begeleiden, bewijsmateriaal te uploaden, persoonlijke informatie in te gaan, en de voorlegging te herzien.
+**Responsief Gedrag:**
 
-**Responsief gedrag:** op mobiele apparaten, handhaaft de tovenaar zijn geleidelijke benadering maar past de inhoud binnen elke stap aan om het smallere scherm te passen, vaak stapelend elementen die zij aan zij op grotere schermen zouden verschijnen.
+- **Alle Apparaten:** handhaaft enig-stap nadruk voor optimale mobiele ervaring.
+- **Inhoud van de Stap:** past binnen elke stap (het stapelen of zij aan zij) aan.
+- **Navigatie:** Aanraakvriendelijke knopen met voldoende het uit elkaar plaatsen.
+- **Indicator van de Voortgang:** schrapt geschikt voor het schermgrootte.
 
-U kunt de [ tovenaar component ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+**Stappen van de Implementatie:**
+
+1. Gebruik de [ Component van de Tovenaar ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+2. Complexe formulieren onderbrengen in logische stappen (3-7 stappen zijn optimaal).
+3. Voeg voortgangsindicatoren toe voor de gebruikersierichting.
+4. Zorg voor duidelijke besturingselementen voor navigatie (Volgende, Vorige, Opslaan).
+
+**Mobiele Optimalisering:**
+
+- Gebruik grote aanraakdoelen (minimaal 44 px) voor navigatieknoppen.
+- Zorg ervoor dat de step-indicatoren duidelijk en zichtbaar zijn op kleine schermen.
+- Beperk het aantal velden per stap om schuiven te beperken.
+- Automatisch opslaan inschakelen om gegevensverlies te voorkomen.
+
+**Beste praktijken:**
+
+- Zorg voor logische stapvoortgang. Elke stap moet op de vorige voortbouwen.
+- Gebruik heldere staptitels, zodat gebruikers weten wat ze moeten verwachten.
+- Valideer de invoer bij elke stap om fouten vroeg af te vangen.
+- Gebruikers kunnen terugnavigeren om gegevens te bekijken of te bewerken.
+
+**Gevallen van het Gebruik van het Voorbeeld:**
+
+- **Verzekeringsclaims:** incident → Bewijs → Persoonlijk overzicht
+- **de Opstelling van de Rekening:** Basis Info → Voorkeur → Veiligheid → Bevestiging
+- **Proces van de Orde:** Producten → Verzending → Betaling → Samenvatting
 
 ### Accordeonlay-out
 
-De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer in een adaptief formulier. Wanneer een sectie wordt uitgevouwen, geeft deze de inhoud binnen weer, terwijl andere secties worden samengevouwen. Deze indeling is ideaal voor het weergeven van grote hoeveelheden gegevens in een compacte vorm.
+**Doel:** bespaart ruimte door inhoud in doen ineenstorten secties te organiseren, ideaal voor facultatieve of secundaire informatie.
 
-![ de lay-out van de Accordeon die uitbreidbare secties in een vorm tonen ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+![ het Voorbeeld van de Lay-out van de Accordeon ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Voorbeeld:** de vorm van de productconfiguratie van A zou harmoniesecties voor &quot;Basisopties,&quot;Geavanceerde Eigenschappen,&quot;Accessoires,&quot;en &quot;Betalingsplannen kunnen gebruiken,&quot;toestaand gebruikers om zich op één aspect in een tijd te concentreren.
+**Responsief Gedrag:**
 
-**Responsief gedrag:** het werk van Accordeons in het bijzonder goed op mobiele apparaten aangezien zij natuurlijk verticale ruimte door slechts de uitgebreide inhoudssectie te tonen besparen, die hen ideaal maken voor kleinere schermen.
+- **Uitstekende mobiele prestaties:** slechts relevante inhoud wordt getoond.
+- **aanraking-geoptimaliseerde kopballen:** Gemakkelijk om secties te tikken en uit te breiden.
+- **Vloeiende animaties:** verstrek visuele terugkoppelen voor interactie.
+- **ruimteefficiënt:** minimaliseert het scrollen op alle apparaten.
 
-U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [ artikel van de component 0&rbrace; accordeon &lbrace;.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)
+**Stappen van de Implementatie:**
 
-### Hoe te om de juiste lay-out te kiezen?
+1. Gebruik de [ Component van de Accordeon ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+2. Groepeer gerelateerde optionele inhoud in elke sectie.
+3. Gebruik beschrijvende sectiekoppen.
+4. Stel de juiste open/gesloten standaardstatussen in.
 
-Het is belangrijk om de juiste indeling te selecteren voor een optimale gebruikerservaring en functionaliteit van formulieren. De tabel geeft u inzicht in de verschillende beschikbare lay-outopties en helpt u bij het selecteren van de meest geschikte lay-out op basis van uw specifieke behoeften en gebruikssituaties:
+**Mobiele Voordelen:**
 
-| Functie | Layout deelvenster | Wizard Layout | Accordeonlay-out |
-|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Doel** | Hiermee groepeert u gerelateerde inhoud in afzonderlijke secties | Hiermee worden gebruikers door een proces of formulier met meerdere stappen geleid | Inhoud indelen in inklapbare secties |
-| **Structuur** | Afzonderlijke secties | Opeenvolgende stappen/pagina&#39;s | Inklapbare deelvensters/secties |
-| **Navigatie** | Klik op de kopteksten van het deelvenster om te navigeren | - Voorwaarts: &quot;Volgende&quot;knoop <br> - Achteruit: &quot;Achtergrond&quot;knoop <br> - Facultatieve het overslaan stappen | Klik op kopteksten om secties uit te vouwen/samen te vouwen |
-| **Ervaring van 0&rbrace; Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Compacte weergave met uitgevouwen/samengevouwen secties |
-| **Geval van het Gebruik** | Complexe formulieren met gecategoriseerde secties | Installatieprocessen, complexe formulieren | Veelgestelde vragen, instellingenmenu&#39;s, gedetailleerde inhoudssecties |
-| **Best voor mobiel** | Modern - panelen worden verticaal gestapeld | Goed - alleen de huidige stap wordt actief | Uitstekend - ruimte met inklapbare gedeelten behouden |
+- Vermindert het schuiven door ongebruikte secties samen te vouwen.
+- Aanraakvriendelijke interactie met natuurlijke bewegingen voor uitvouwen/samenvouwen.
+- Sneller laden—Alleen actieve inhoud is zichtbaar.
+- Verbeterde focus - gebruikers zien alleen wat ze nodig hebben.
 
-## Aanbevolen procedures voor responsieve Forms
+**Beste praktijken:**
 
-Volg de onderstaande aanbevolen procedures om ervoor te zorgen dat uw formulieren op alle apparaten de beste ervaring bieden:
+- Gebruik duidelijke sectiekoppen, zodat gebruikers weten wat er in staat voordat u gaat uitbreiden.
+- Gerelateerde inhoud logisch groeperen binnen elke sectie.
+- Stel de belangrijke secties in die moeten worden uitgevouwen als dat nodig is.
+- Geef korte sectievoorvertoningen weer om gebruikers te helpen beslissen wat ze willen uitbreiden.
 
-1. **Ontwerp voor mobiel eerst:** Begin door uw vorm voor mobiele apparaten te ontwerpen, dan verbetert voor grotere schermen. Deze benadering zorgt ervoor dat de kernfunctionaliteit op de kleinste schermen werkt.
+**Gevallen van het Gebruik van het Voorbeeld:**
 
-2. **Gebruik aangewezen gebiedstypes:** kies gebiedstypes die goed op aanrakingsapparaten werken:
-   - Vervolgkeuzelijsten gebruiken in plaats van keuzerondjes als er veel opties zijn
-   - Datumkiezers gebruiken die zijn ontworpen voor aanraakinvoer
-   - Zorg ervoor dat de knoppen en aanraakdoelen ten minste 44px x 44px zijn
+- **de Configuratie van het Product:** Basis → Geavanceerd → Bureau → Steun
+- **FAQ Forms:** Rekening → Facturatie → Technisch → Algemeen
+- **Forms van Montages:** Privacy → Meldingen → Vorm → Geavanceerd
 
-3. **vereenvoudig voor kleinere schermen:**
-   - Minder velden per rij weergeven op mobiele apparaten
-   - U kunt optionele velden verbergen achter de optie Meer weergeven
-   - Complexe formulieren onderbrengen in meer stappen op mobiele apparaten
+## Deel 3: Aanbevolen werkwijzen voor responsief ontwerp
 
-4. **Test grondig:** test altijd uw vormen op daadwerkelijke apparaten of gebruikend de emulatorwijze in Universele Redacteur om ervoor te zorgen zij behoorlijk over schermgrootte functioneren.
+### Beste praktijken door Type van Apparaat
 
-5. **overweeg ladingstijden:** optimaliseer beeldgrootte en minimaliseer vereiste middelen, vooral voor mobiele gebruikers die langzamere verbindingen kunnen hebben.
++++Mobiele optimalisatie (320 px-767 px)
 
-## Problemen met responsieve Forms oplossen
+**Essentiële Praktijken:**
 
-| Probleem | Mogelijke oorzaak | Oplossing |
-|-------|---------------|----------|
-| Formulier wordt afgesloten op mobiele apparaten | Problemen met vaste breedte of overloop | Relatieve eenheden (%, rem) gebruiken in plaats van pixels en controleren op overloop:verborgen eigenschappen |
-| Aanraakelementen die moeilijk te gebruiken zijn | Aanraakdoelen te klein of te dicht | De knoop/de inputgrootte van de verhoging tot minstens 44px 44px en voegt meer ruimte tussen interactieve elementen toe |
-| Inhoud overloopt op kleine schermen | Geen responsieve regels voor kleinere viewports | Mediaquery&#39;s of responsklassen toevoegen om de lay-out voor verschillende schermgrootten aan te passen |
-| Formulier te langzaam op mobiele apparaten | Grote afbeeldingen of buitensporige scripts | Afbeeldingen optimaliseren, JavaScript minimaliseren en lazy laden voor niet-kritieke elementen overwegen |
-| Verschillende weergave tussen emulator en echte apparaten | Browserspecifieke rendering of apparaatvariaties | Test waar mogelijk op echte apparaten, niet alleen emulators |
+- Gebruik een lay-out met één kolom voor alle inhoud.
+- Geef grote, aanraakvriendelijke knoppen (minimale hoogte van 44 px).
+- Vereenvoudig navigatie met duidelijke achterkant/volgende opties.
+- Minimaliseer het schuiven binnen elke sectie.
+- Automatisch focussen op het eerste veld om het toetsenbord weer te geven.
 
-## Zie ook
+**gebied-Specifieke Richtlijnen:**
 
-{#see-more-eds-forms}
+- **de input van de Tekst:** Volledige breedte met de veelvoudige opvulling.
+- **Dropdowns:** Gebruik inheemse uitgezochte elementen voor betere aanrakingservaring.
+- **plukkers van de Datum:** Gebruik inheemse datuminput voor mobiele verenigbaarheid.
+- **uploadt het Dossier:** verstrek grote, duidelijke uploadgebieden.
+
++++
+
++++Tablet optimaliseren (768 px-1199 px)
+
+**Strategieën van de Lay-out:**
+
+- Gebruik lay-outs met twee kolommen voor verwante velden.
+- Test zowel de stand Staand als Liggend.
+- Ondersteuning voor aanraak- en muisinteractie.
+- Grotere inhoudsgebieden bieden met behoud van leesbaarheid.
+
++++
+
++++Desktop Optimization (1200px+)
+
+**Geavanceerde Eigenschappen:**
+
+- Gebruik lay-outs met meerdere kolommen voor efficiënt ruimtegebruik.
+- Sneltoetsen voor stroomgebruikers aanbieden.
+- Hoverstatussen implementeren voor interactieve feedback.
+- Geavanceerde validatie voorzien van gedetailleerde foutberichten.
+
++++
+
+## Uitgebreide probleemoplossing
+
+### Lay-outproblemen
+
++++pagina-einden van formulierlay-outs op mobiele apparaten
+
+**Gemeenschappelijke Oorzaken:**
+
+- Elementen met vaste breedte die niet worden geschaald
+- CSS die is ontworpen voor eerste lay-outs voor desktops
+- Afbeeldingen of inhoud die de containers overlopen
+
+**Oplossingen:**
+
+- Zorg ervoor dat de afbeeldingen en containers worden geschaald naar de schermgrootte.
+- Gebruik een mobiel-eerste ontwerp met progressieve verbetering.
+- Testen met zowel apparaatemulators als echte apparaten.
+- Gebruik flexibele grootten in plaats van vaste afmetingen.
+
++++
+
++++Touch-doelen te klein
+
+**Gemeenschappelijke Oorzaken:**
+
+- Knoppen kleiner dan 44px × 44px
+- Interactieve elementen die te dicht bij elkaar zijn geplaatst
+- Aangepaste CSS-overschrijvingen voor aanraakvriendelijke standaardinstellingen
+
+**Oplossingen:**
+
+- Zorg ervoor dat alle interactieve elementen ten minste 44px × 44px zijn.
+- Tussenruimte toevoegen tussen knoppen en koppelingen.
+- Testen van aanrakingsinteractie met echte vingers, niet alleen met een muis.
+- Gebruik meer aanraakdoelgebieden om gemakkelijker te kunnen tikken.
+
++++
+
++++Problemen met overloop van inhoud
+
+**Gemeenschappelijke Oorzaken:**
+
+- Lange tekst of labels die niet omlopen
+- Containers met vaste breedte
+- Afbeeldingen die niet correct worden geschaald
+
+**Oplossingen:**
+
+- Tekstomloop inschakelen voor lange inhoud.
+- Gebruik responsieve afbeeldingen die op de juiste wijze worden geschaald.
+- Voer flexibele lay-outs uit die zich aan inhoud aanpassen.
+- Testen met verschillende lengte van inhoud.
+
++++
+
+### Prestatieproblemen
+
++++ Langzaam laden op mobiel
+
+**Gemeenschappelijke Oorzaken:**
+
+- Grote afbeeldingen zijn niet geoptimaliseerd voor mobiele apparaten
+- Buitengewone uitvoering van JavaScript
+- Te veel formuliervelden tegelijk laden
+
+**Oplossingen:**
+
+- Optimaliseer afbeeldingen voor verschillende schermgrootten.
+- Niet-kritieke inhoud alleen laden wanneer dat nodig is.
+- Gebruik technieken om het laden van mobiele apparaten te versnellen.
+- Scripts en widgets van derden minimaliseren.
+
++++
+
+### Problemen met testen en valideren
+
++++emulator vs. verschillen in echt apparaat
+
+**Gemeenschappelijke Oorzaken:**
+
+- Browserspecifieke renderverschillen
+- Verschillen tussen aanraken en muis
+- Netwerksnelheidsvariaties
+
+**Oplossingen:**
+
+- Test waar mogelijk op de werkelijke apparaten.
+- Gebruik meerdere browsers voor emulatortesten.
+- Simuleer verschillende netwerksnelheden tijdens het testen.
+- Valideren met echte gebruikers in doelomgevingen.
+
++++
+
+## Succeswaarden voor responsieve Forms
+
++++Belangrijkste prestatie-indicatoren
+
+**Metriek van de Ervaring van de Gebruiker:**
+
+- **de voltooiingstarief van de Vorm:** Doel 85%+ op mobiel
+- **Te voltooien Tijd:** De mobiele voltooiingstijd zou binnen 20% van Desktop moeten zijn
+- **tarief van de Fout:** minder dan 5% bevestigingsfouten
+- **Ontbrekingspunten:** identificeer waar de gebruikers weg vallen
+
+**Technische Prestaties:**
+
+- **de ladingstijd van de Pagina:** minder dan 3 seconden op netwerken 3G
+- **de Kernwaarden van het Web van de Kern:** ga alle prestaties van Google benchmarks over
+- **score van de Toegankelijkheid:** WCAG 2.1 de naleving van AA
+- **dwars-browser verenigbaarheid:** 98%+ functionaliteit over belangrijkste browsers
+
++++
+
++++Checklist voor testen
+
+**vóór het Publiceren:**
+
+- Test het formulier op mobiele apparaten.
+- Zorg ervoor dat alle aanraakdoelen ten minste 44px × 44px zijn.
+- Controleer de leesbaarheid van de tekst bij alle schermgrootten.
+- Bevestig dat formuliervalidatie werkt op alle apparaten.
+- Zorg ervoor dat de laadtijd op mobiele apparaten minder dan 3 seconden is.
+- Controleer of alle interactieve elementen toegankelijk zijn.
+- Test het formulier verzenden op alle ondersteunde apparaten.
+
++++
+
+## Volgende stappen
+
+**Onmiddellijke Acties:**
+
+1. **controleer uw huidige vormen:** test bestaande vormen gebruikend de apparatenmededinger.
+2. **identificeer snel wint:** bevestig duidelijke mobiele bruikbaarheidskwesties eerst.
+3. **voorrang geven aan hoog-verkeersvormen:** concentreer zich op vormen met het meest gebruikereffect.
+4. **voer een mobiel-eerste benadering uit:** Begin met het kleinste schermontwerp.
+
+**Geavanceerde Optimalisering:**
+
+- **Prestaties controle:** opstelling analyseert om vormmetriek te volgen.
+- **het testen A/B:** Experimenteer met verschillende lay-outs en benaderingen.
+- **gebruiker terugkoppelt inzameling:** verzamel inzichten van echte gebruikers.
+- **Ononderbroken verbetering:** herzie en optimaliseer regelmatig vormen.
+
+

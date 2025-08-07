@@ -4,7 +4,7 @@ description: Leer hoe u hoogwaardige formulieren maakt en levert op Adobe Experi
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aan de slag met Forms op AEM Edge Delivery Services
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
+<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. </span>
 
 Met Adobe Experience Manager (AEM) Edge Delivery Services (EDS) kunt u vanaf de rand genieten van supersnelle, zeer schaalbare webbeleving. Deze gids verklaart **hoe te om vormen voor die ervaringen** te bouwen en te publiceren—met een duidelijke aanbevelingshiërarchie:
 
@@ -41,11 +41,11 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 
 De Universele Redacteur is een visueel, belemmering-en-dalingsauteursinstrument voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
 
-* WYSIWYG-bewerkingen in realtime en voorvertoningen van apparaten.
-* Geavanceerde regels en validatie-UI—geen code vereist.
-* Directe integratie met AEM-elementen, -workflows en -formuliergegevensmodel (FDM).
-* Naadloze overdracht aan ontwikkelaars voor aangepaste componenten in vanilla JS/CSS.
-* De flexibele voorleggingsdoelstellingen: begin eenvoudig met de **Dienst van de Verzending van Forms (FSS)** of schakelaar aan **AEM publiceer acties** aangezien uw behoeften groeien.
+- WYSIWYG-bewerkingen in realtime en voorvertoningen van apparaten.
+- Geavanceerde regels en validatie-UI—geen code vereist.
+- Directe integratie met AEM-elementen, -workflows en -formuliergegevensmodel (FDM).
+- Naadloze overdracht aan ontwikkelaars voor aangepaste componenten in vanilla JS/CSS.
+- De flexibele voorleggingsdoelstellingen: begin eenvoudig met de **Dienst van de Verzending van Forms (FSS)** of schakelaar aan **AEM publiceer acties** aangezien uw behoeften groeien.
 
 > **Aanbeveling**: Begin elk nieuw vormproject met Universele Redacteur tenzij uw team 100 % document-centric is en de vorm zeer fundamenteel is.
 
@@ -54,10 +54,10 @@ De Universele Redacteur is een visueel, belemmering-en-dalingsauteursinstrument 
 
 Authoring op basis van documenten is het meest geschikt voor het maken van eenvoudige, complexe formulieren met behulp van vertrouwde gereedschappen, zoals Microsoft Word, Google Docs of Google Sheets. Deze methode is ideaal voor inhoudsteams die een snelle en eenvoudige manier nodig hebben om formulieren te maken.
 
-* Formuliervelden definiëren in een tabel (Docs) of als rijen (Sheets).
-* Ondersteunt basisveldvalidatie en Google reCAPTCHA voor spambeveiliging.
-* Formulierverzendingen worden uitsluitend via de Forms-verzendservice verzonden.
-* Onmiddellijk publiceren-om het even welke veranderingen die in het brondocument worden aangebracht worden onmiddellijk weerspiegeld op de plaats zonder een plaatsingspijpleiding te vereisen.
+- Formuliervelden definiëren in een tabel (Docs) of als rijen (Sheets).
+- Ondersteunt basisveldvalidatie en Google reCAPTCHA voor spambeveiliging.
+- Formulierverzendingen worden uitsluitend via de Forms-verzendservice verzonden.
+- Onmiddellijk publiceren-om het even welke veranderingen die in het brondocument worden aangebracht worden onmiddellijk weerspiegeld op de plaats zonder een plaatsingspijpleiding te vereisen.
 
 
 ### Forms insluiten in Document Authoring (DA)

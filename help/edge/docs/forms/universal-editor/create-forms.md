@@ -1,392 +1,533 @@
 ---
-title: Zelfstandige formulieren maken op basis van Core Component- of Edge Delivery Services-sjablonen en deze publiceren op Edge Delivery Services
-description: In dit artikel wordt uitgelegd hoe u Adaptive Forms kunt maken door in de wizard Formulier maken een op Core-componenten of Edge Delivery Services gebaseerde sjabloon te selecteren. U kunt de formulieren ook publiceren naar AEM Edge Delivery Services.
+title: Adaptieve Forms maken en publiceren met Edge Delivery Services
+description: Stapsgewijze instructies voor het maken, ontwerpen en publiceren van Adaptieve Forms met gebruik van Core Component- of Edge Delivery Services-sjablonen in AEM, met de nadruk op technische nauwkeurigheid en duidelijkheid.
+keywords: adaptieve formulieren, services voor randlevering, kerncomponenten, universele editor, formulierontwerp, AEM-formulieren, sjabloonselectie, formulierpublicatie
 feature: Edge Delivery Services
-role: User
+role: User, Developer
+level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1773'
 ht-degree: 0%
 
 ---
 
 
-# Van authoring tot publicatie: AEM Forms op Edge Delivery Services
+# Adaptieve Forms maken en publiceren met Edge Delivery Services
 
-<span class="preview"> Deze functie is beschikbaar via het programma voor vroege toegang. Om toegang te verzoeken, verzend een e-mail met uw GitHub organisatienaam en bewaarplaatsnaam van uw officieel adres aan <a href="mailto:aem-forms-ea@adobe.com"> aem-forms-ea@adobe.com </a>. Bijvoorbeeld, als de bewaarplaats URL https://github.com/adobe/abc is, is de organisatienaam adobe en de bewaarplaatsnaam abc.</span>
+Dit document bevat instructies voor het maken, configureren en publiceren van Adaptive Forms in AEM met Edge Delivery Services. De klasse omvat Core Component- en Edge Delivery Services-sjablonen.
 
-Met Adobe Experience Manager (AEM) kunt u aantrekkelijke, responsieve en dynamische formulieren maken. Het biedt veelvoudige auteursmethodes aan, elk geschikt aan verschillende vereisten en niveaus van gebruikersdeskundigheid. &#x200B;
+Aan het einde van deze handleiding leert u hoe u:
 
-Dit artikel richt zich op de aanpak waarbij formulieren worden geschreven in de AEM-omgeving en gepubliceerd via Edge Delivery Services. Forms die is gebouwd met Core Component-sjablonen kan zowel op AEM als op Edge Delivery Services worden gepubliceerd en biedt flexibiliteit bij de implementatie. Formulieren die zijn gemaakt met op Edge Delivery Services gebaseerde sjablonen kunnen daarentegen alleen worden gepubliceerd op Edge Delivery Services. &#x200B;
+- Selecteer het juiste sjabloontype voor uw gebruik
+- Formulieren maken met Core Components of Edge Delivery Services-sjablonen
+- Auteurformulieren met de juiste editor
+- Formulieren configureren en publiceren naar Edge Delivery Services
+- Gepubliceerde formulieren openen en implementatie controleren
 
-![ Auteur en publiceer Aangepaste Vorm ](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
+## Sjabloonselectie
 
-## Voordelen van het ontwerpen van formulieren in AEM en het publiceren met Edge Delivery Services:
+Voordat u begint, bepaalt u welk sjabloontype u op uw vereisten uitlijnt:
 
-* **Behoud van bestaande werkschema&#39;s van AEM**: De organisaties kunnen hun gevestigde werkschema&#39;s en governancestructuren van AEM blijven gebruiken, die consistentie en controle over inhoudsverwezenlijking verzekeren. &#x200B;
+| Criteria | Sjabloon voor kerncomponenten | Edge Delivery Services-sjabloon |
+|-------------------------|-----------------------------------------|-------------------------------------|
+| Best voor | Bedrijfsworkflows, complexe integratie | Krachtige openbare formulieren |
+| Editor | Adaptieve Forms Editor | Universele editor |
+| Publiceren | AEM Publish + Edge Delivery Services | Alleen Edge Delivery Services |
+| Complexiteit | Geavanceerde formuliermogelijkheden | Gestroomlijnde, snelle formulieren |
+| Integratie | Volledig AEM-ecosysteem | Ontwikkeling op basis van git |
+| Leercurve | Kennis hebben van AEM-gebruikers | Moderne, vereenvoudigde aanpak |
 
-* **Verbeterde prestaties**: Het publiceren door Edge Delivery Services resulteert in snellere teruggevende tijden, die de gebruikerservaring verbeteren en de tijden van de paginalading verminderen. &#x200B;
+**Begeleiding van het Besluit:**
 
-* **Verbeterde SEO**: Edge Delivery Services wordt ontworpen om inhoud met de hoge scores van de Lighthouse van Google te leveren, die tot betere optimalisering van de onderzoeksmotor en verhoogde zichtbaarheid kunnen leiden. &#x200B;
+- De Componenten van de Kern van het gebruik **voor complexe werkschema&#39;s, diepe integratie van AEM, of als het leveraging van bestaande activa van AEM.**
+- Het gebruik **Edge Delivery Services** voor prestaties, eenvoud, en moderne ontwikkelingspraktijken.
 
-* **Flexibele plaatsingsopties**: Forms die met de Componenten van de Kern wordt gebouwd kan op zowel AEM als Edge Delivery Services worden gepubliceerd, die flexibiliteit in plaatsingsstrategieën aanbieden. &#x200B;
+![ Besluit van de Selectie van het Malplaatje ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+*Stroomschema van het Besluit voor het kiezen van het aangewezen malplaatjetype*
 
-## Voordat u begint
+## Vereisten
 
-Voordat u begint met het ontwerpen van formulieren in AEM en deze publiceert via Edge Delivery Services, moet u controleren of aan de volgende voorwaarden is voldaan:
+Zorg ervoor dat aan de volgende voorwaarden is voldaan voordat u verdergaat:
 
-* Zorg ervoor dat u een gegevensopslagruimte van Github hebt geconfigureerd voor Edge Delivery Services.
-   * Als u geen bewaarplaats hebt, [ het nieuwe project van AEM preconfigured met het Adaptieve Blok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
-   * Als u een opslagplaats hebt, voegt u het Adaptive Forms Block toe aan uw bestaande opslagplaats. De gedetailleerde instructies zijn beschikbaar in [ Begonnen het worden met Edge Delivery Services voor AEM Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
-* Vestig een verbinding tussen uw milieu van AEM en bewaarplaats GitHub. [ hoe te om het te doen?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
+### Technische vereisten
 
-Een schema van de beslissingsstroom om de opstelling en de publicatie van Adaptive Forms te begeleiden:
+- **AEM Forms as a Cloud Service**: Een actieve auteursinstantie met een vergunning van Forms.
+- **Rekening GitHub**: Persoonlijke of organisatorische rekening voor bewaarplaatsbeheer.
+- **Opstelling van de Bewaarplaats**: Kies één van het volgende:
+   - **Nieuw Project**: [ creeer een nieuw project van AEM met het AanpassingsBlok van Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). De opslagplaats is vooraf geconfigureerd voor Edge Delivery Services.
+   - **Bestaand Project**: [ voeg het Aangepaste Blok van Forms aan een bestaande bewaarplaats ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toe en werk de configuratie bij.
 
-![ Github het Werkschema van de Bewaarplaats ](/help/forms/assets/repo-workflow.png){width=auto}
+### Omgevingsconfiguratie
 
-## Formulieren ontwerpen in AEM en publiceren naar Edge Delivery Services
+- **AEM-GitHub Verbinding**: [ Vestig een verbinding ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) tussen uw instantie van AEM en bewaarplaats GitHub.
+- **Edge Delivery Services**: Zorg ervoor de bewaarplaats voor automatische plaatsing wordt gevormd.
+- **Toestemmingen**: Verifieer u de noodzakelijke toegangsrechten voor vormverwezenlijking en het publiceren hebt.
 
-Voer de volgende stappen uit om formulieren te ontwerpen in AEM en deze te publiceren op Edge Delivery Services:
+### Validatie instellen
 
-[&#x200B;1. Kies een sjabloon en maak het formulier](#choose-a-template-and-create-the-form)
 
-[&#x200B;2. Auteur van het formulier](#author-the-form)
+1. Bevestig dat de GitHub-opslagplaats het Adaptive Forms Block bevat.
+2. Test de verbinding tussen AEM en uw gegevensopslagplaats GitHub.
+3. Zorg ervoor dat u inhoud naar Edge Delivery Services kunt publiceren.
 
-[&#x200B;3. Een formulier publiceren](#publish-a-form)
 
-### Een sjabloon kiezen en het formulier maken
 
-U kunt op een AEM-exemplaar formulieren maken voor publicatie naar Edge Delivery Services met:
+## Workflow voor het maken en publiceren van formulieren
+
+Het proces bestaat uit drie hoofdfasen:
+
+- **Fase 1:** [ de Selectie van het Malplaatje en de Creatie van de Vorm ](#step-1-template-selection-and-form-creation)
+- **Fase 2:** [ Authoring en Ontwerp van de Vorm ](#step-2-form-authoring-and-design)
+- **Fase 3:** [ Configuratie en het Publiceren ](#step-3-configuration-and-publishing)
+
+Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
+
+![ Drie Werkschema van de Fase ](/help/edge/docs/forms/universal-editor/assets/three-phase-workflow.svg)
+*Overzicht van de drie belangrijkste fasen in vormverwezenlijking en het publiceren*
+
+### Stap 1: Sjabloonselectie en Formulierontwerp
+
+Selecteer de workflow op basis van uw sjabloonkeuze:
 
 >[!BEGINTABS]
 
->[!TAB  op Edge Delivery Services-Gebaseerde malplaatje ]
+>[!TAB  Malplaatje van Edge Delivery Services ]
 
-Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
+**Geval van het Gebruik:** Krachtige vormen en moderne ontwikkelingswerkschema&#39;s.
 
-1. Meld u aan bij de AEM Forms as a Cloud Service-auteur.
-1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
-1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard wordt geopend.
-1. In het **Source** lusje, selecteer een **op Edge Delivery Services-Gebaseerde malplaatje**:
+**Eigenschappen:** Universal Editor creatie en het publiceren van Edge Delivery Services.
 
-   ![ creeer EDS Forms ](/help/edge/assets/create-eds-forms.png)
+#### Procedure
 
-   Wanneer u een **op Edge Delivery Services-Gebaseerde malplaatje** selecteert, wordt de **[!UICONTROL Create]** knoop toegelaten.
-1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
-1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
-1. Klik **[!UICONTROL Create]** en de **Create 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt:**
+1. **Van de Toegang Vorm creatie**
+   - Meld u aan bij de AEM Forms as a Cloud Service-auteur.
+   - Navigeer aan **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+   - Klik **creëren** > **Aanpassings Forms**.
 
-   1. Specificeer de **Naam** en **Titel**.
-   1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL:
+1. **Uitgezochte Malplaatje**
+   - In het **Source** lusje, selecteer een **op Edge Delivery Services-Gebaseerde malplaatje**.
+   - **creeer** knoop wordt toegelaten.
 
-      `https://github.com/wkndforms/edsforms`
+     ![ creeer EDS Forms ](/help/edge/assets/create-eds-forms.png)
 
-   ![ creeer de tovenaar van de Vorm ](/help/edge/assets/create-form-wizard.png)
+1. **vorm Opties (Facultatief)**
+   - **Gegevens Source tabel**: Selecteer gegevensintegratie indien vereist.
+   - **Verzending tabel**: Kies een verzendactie (kan later worden gevormd).
+   - **lusje van de Levering**: Plaats het publiceren/unpublishing programma.
 
-   Wanneer u op **[!UICONTROL Create]** klikt, wordt het formulier in de Universal Editor geopend voor ontwerpen.
+1. **Volledige Opstelling van de Vorm**
+   - Klik **creëren** om de tovenaar van de Aanmaak van de Vorm te openen.
+   - Voer het volgende in:
+      - **Naam**: Interne herkenningsteken (geen ruimten, gebruiks koppeltekens).
+      - **Titel**: De naam van de vertoning voor uw vorm.
+      - **GitHub URL**: Bewaarplaats URL (bijvoorbeeld, `https://github.com/your-org/your-repo`).
 
-   ![ Schermafbeelding van de Universele Redacteur die een vorm tonen die met het componentenpalet op de linkerzijde, vormcanvas in het centrum wordt ontworpen, en eigenschappen paneel op het recht ](/help/edge/assets/author-form.png)
-1. Klik op **[!UICONTROL Create]** om het formulier te maken. Nu, kunt u [ auteur de vorm gebruikend de Universele Redacteur ](#author-the-form).
+   ![ creeer de Tovenaar van de Vorm ](/help/edge/assets/create-form-wizard.png)
 
->[!TAB  Component-based malplaatje van de Kern ]
+1. **Bevestiging**
+   - Na het klikken **creeer**, verifieer:
+      - Het formulier wordt geopend in de Universal Editor.
+      - De GitHub URL is correct verbonden.
+      - Het componentpalet is beschikbaar.
+      - Het canvas van het formulier is zichtbaar.
 
-Voer de volgende stappen uit om de sjabloon te kiezen en het formulier te maken:
+   ![ Universele Interface van de Redacteur ](/help/edge/assets/author-form.png)
 
-1. Meld u aan bij de AEM Forms as a Cloud Service-auteur.
-1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
-1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard wordt geopend.
-1. In het **Source** lusje, selecteer a **Gebaseerde malplaatje van de Component van de Kern** en a **thema**, wordt de **[!UICONTROL Create]** knoop toegelaten.:
+**Resultaat:** de vorm is klaar voor creatie in de Universele Redacteur.
 
-   ![ Gebaseerde malplaatje van de Component van de Kern ](/help/forms/assets/core-component-based-template.png)
+>[!TAB  Malplaatje van de Component van de Kern ]
 
-1. (Optioneel) Op de tabbladen **[!UICONTROL Data Source]** of **[!UICONTROL Submission]** kunt u een gegevensbron selecteren of een handeling verzenden.
-1. (Optioneel) Op het tabblad **[!UICONTROL Delivery]** kunt u een datum voor het publiceren of verwijderen van een formulier opgeven.
-1. Klik **[!UICONTROL Create]** en de **Create 2&rbrace; tovenaar van de Vorm &lbrace;verschijnt voor:**
-   1. Specificeer de **Naam** en **Titel**.
-   1. Specificeer de plaats in het **gebied van de Weg** waar de Aangepaste Vorm moet worden bewaard.
+**Geval van het Gebruik:** de werkschema&#39;s van de Onderneming en complexe integratie.
 
-   ![ creeer de Tovenaar van de Vorm ](/help/forms/assets/create-cc-form.png)
+**Eigenschappen:** het Aanpassings van de Redacteur van Forms, het dubbele publiceren (AEM + Edge Delivery Services), geavanceerde vormmogelijkheden.
 
-   Wanneer u op **[!UICONTROL Create]** klikt, wordt het formulier geopend in de Adaptieve formuliereditor voor ontwerpen.
+#### Procedure
 
-   ![ de Aanpassings Redacteur van de Vorm ](/help/forms/assets/af-editor-form.png)
+1. **Van de Toegang Vorm creatie**
+   - Meld u aan bij de AEM Forms as a Cloud Service-auteur.
+   - Navigeer aan **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+   - Klik **creëren** > **Aanpassings Forms**.
 
-1. Klik op **[!UICONTROL Create]** om het formulier te maken. Nu, kunt u [ auteur de vorm gebruikend de Aanpassings Redacteur van de Vorm ](#author-the-form).
+1. **Uitgezochte Malplaatje en Thema**
+   - In het **Source** lusje, selecteer a **op component-Gebaseerde malplaatje van de Kern**.
+   - Kies a **thema** voor het stileren.
+   - **creeer** knoop wordt toegelaten.
+
+   {de Selectie van het Malplaatje van de Component van 0} Kern ![](/help/forms/assets/core-component-based-template.png)
+
+1. **vorm Opties (Facultatief)**
+   - **Gegevens Source tabel**: Selecteer gegevensintegratie indien vereist.
+   - **Verzending tabel**: Kies een verzendactie (kan later worden gevormd).
+   - **lusje van de Levering**: Plaats het publiceren/unpublishing programma.
+
+1. **Volledige Opstelling van de Vorm**
+   - Klik **creëren** om de tovenaar van de Aanmaak van de Vorm te openen.
+   - Voer het volgende in:
+      - **Naam**: Interne herkenningsteken (geen ruimten, gebruiks koppeltekens).
+      - **Titel**: De naam van de vertoning voor uw vorm.
+      - **Weg**: De plaats van de opslag in de bewaarplaats van AEM.
+
+     ![ creeer de Tovenaar van de Vorm ](/help/forms/assets/create-cc-form.png)
+
+1. **Bevestiging**
+   - Na het klikken **creeer**, verifieer:
+      - Het formulier wordt geopend in de Adaptive Forms Editor.
+      - De werkbalk van de component is beschikbaar.
+      - Het deelvenster Eigenschappen is toegankelijk.
+      - Thema-opmaak wordt toegepast.
+
+     ![ de Aanpassings Redacteur van de Vorm ](/help/forms/assets/af-editor-form.png)
+
+**Resultaat:** de vorm is klaar voor creatie in de Adaptieve Redacteur van Forms.
 
 >[!ENDTABS]
 
-### Auteur van het formulier
+### Stap 2: Formulierontwerp en -ontwerp
 
-De vormen die gebruikend het op Edge Delivery Services-Gebaseerde malplaatje worden gecreeerd open in de [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) voor creatie. De formulieren die zijn gemaakt met de sjabloon op basis van een kerncomponent, worden echter geopend in de Adaptieve formuliereditor voor ontwerpen.
+De ontwerpervaring varieert per sjabloon:
 
-Voer de volgende stappen uit om formulieren te ontwerpen met de sjabloon Universal Editor voor Edge Delivery Services of met de sjabloon Adaptive Form Editor voor Core Component:
+- **Malplaatje van Edge Delivery Services**: Universele Redacteur
+- **Malplaatje van de Component van de Kern**: De Adaptieve Redacteur van Forms
+
+![ Vergelijking van 0} Redacteur
+](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg) Vergelijking van Universele Redacteur met de Adaptieve mogelijkheden van de Redacteur van Forms **
 
 >[!BEGINTABS]
 
->[!TAB  op Edge Delivery Services-Gebaseerde malplaatje ]
+>[!TAB  Universele Redacteur (Edge Delivery Services) ]
 
+**Interface:** Modern, gestroomlijnde het uitgeven geoptimaliseerd voor prestaties.
 
-1. Open Inhoudsbrowser, en navigeer aan de **[!UICONTROL Adaptive Form]** component in de **boom van de Inhoud**.
+#### Formuliercomponenten toevoegen
 
-   ![ inhoudsboom ](/help/edge/assets/content-tree.png)
+1. **Bibliotheek van de Component van de Toegang**
+   - Open de Content browser in Universal Editor.
+   - Navigeer aan de **Aangepaste component van de Vorm** in de inhoudsboom.
 
-1. Klik het **[!UICONTROL Add]** pictogram en voeg de gewenste componenten van de **Adaptieve lijst van Componenten van de Vorm** toe.
-   ![ voeg component ](/help/edge/assets/add-component.png) toe
+   ![ de Navigatie van de Boom van 0} Inhoud](/help/edge/assets/content-tree.png)
 
-   In de onderstaande schermafbeelding wordt de `Registration Form` weergegeven die in de Universal Editor is geschreven:
+1. **voeg de Gebieden van de Vorm** toe
+   - Klik **toevoegen** pictogram om de componentenbibliotheek te openen.
+   - Selecteer componenten van de **Adaptieve lijst van Componenten van de Vorm**.
+   - Sleep componenten naar het canvas van het formulier.
 
-   ![ Schermafbeelding van een voltooid contact ons vorm in de Universele Redacteur die vormgebieden voor naam, e-mail, telefoon, en bericht met juiste het stileren en lay-out tonen ](/help/edge/assets/contact-us.png)
+   ![ voegt Componenten ](/help/edge/assets/add-component.png) toe
 
->[!NOTE]
->
-> Voor gedetailleerde instructies bij het ontwerpen van een AanpassingsVorm die de Universele Redacteur gebruiken, [ klik hier ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+1. **Ontwerp de Vorm**
+   - Veldeigenschappen configureren in het deelvenster Eigenschappen.
+   - Stel validatieregels en -gedrag in.
+*s Pas de opmaak en lay-out naar wens aan.
 
-Nu kunt u [ vormen en aanpassen voorlegt acties voor vormen ](/help/edge/docs/forms/universal-editor/submit-action.md).
+   ![ Voltooide Vorm van de Registratie ](/help/edge/assets/contact-us.png)
 
->[!TAB  Component-based malplaatje van de Kern ]
+#### Validatie
 
-1. Klik **[!UICONTROL Insert component]** in de **componenten van de Belemmering hier** sectie.
+- Alle vereiste velden zijn aanwezig.
+- Veldeigenschappen zijn op de juiste wijze geconfigureerd.
+- Layout is responsief en toegankelijk.
+- Validatieregels functioneren naar behoren.
 
-   ![ de componenten van de belemmering hier ](/help/forms/assets/drag-components-af-editor.png)
+#### Volgende stappen
 
-1. Voeg de gewenste componenten van de **Adaptieve lijst van Componenten van de Vorm** toe.
+- [ vormen voorlegt acties ](/help/edge/docs/forms/universal-editor/submit-action.md) voor gegevens behandeling.
+- [ Universele gids van de Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) voor geavanceerde eigenschappen.
 
-   ![ voegt componenten ](/help/forms/assets/add-component-af.png) toe
+>[!TAB  de Aangepaste Redacteur van Forms (de Componenten van de Kern) ]
 
-In de onderstaande schermafbeelding wordt de `Enrollment Form` weergegeven die is geschreven in de Adaptieve formuliereditor:
+**Interface:** Volledig-gekenmerkte het uitgeven met geavanceerde vormmogelijkheden.
 
-![ de Aanpassings Redacteur van de Vorm ](/help/forms/assets/af-editor-form.png)
+#### Formuliercomponenten toevoegen
 
->[!NOTE]
->
-> Voor gedetailleerde begeleiding bij het creëren van een AanpassingsVorm die op het malplaatje van de Component van de Kern wordt gebaseerd, [ klik hier ](/help/forms/creating-adaptive-form-core-components.md).
+1. **Bibliotheek van de Component van de Toegang**
+   - Klik **component van het Tussenvoegsel** in de **componenten van de Belemmering hier** sectie.
 
-Nu kunt u [ vormen voorlegt acties voor vormen ](/help/forms/configure-submit-actions-core-components.md).
+   ![ Gebied van de Invoeging van de Component ](/help/forms/assets/drag-components-af-editor.png)
+
+2. **voeg de Gebieden van de Vorm** toe
+   - Blader de **Adaptieve lijst van Componenten van de Vorm**.
+   - Sleep de gewenste componenten naar het formulier.
+   - Geavanceerde componenten van het gebruik zoals panelen, tovenaars, en gegevensintegratie.
+
+   ![ voeg de Bibliotheek van Componenten ](/help/forms/assets/add-component-af.png) toe
+
+3. **Ontwerp de Vorm**
+   - Veldeigenschappen configureren in het deelvenster Eigenschappen.
+   - Stel complexe validatieregels en bedrijfslogica in.
+   - Pas thema&#39;s en geavanceerde stijlen toe.
+
+   ![ Voltooide Vorm van de Inschrijving ](/help/forms/assets/af-editor-form.png)
+
+#### Validatie
+
+- Alle vereiste velden zijn aanwezig.
+- Complexe validatieregels worden geconfigureerd.
+- Thema-opmaak wordt toegepast.
+- Gegevensintegratie werkt zoals verwacht (indien van toepassing).
+
+#### Volgende stappen
+
+- [ vormen voorlegt acties ](/help/forms/configure-submit-actions-core-components.md) voor geavanceerde werkschema&#39;s.
+- {de gids van de Componenten van 0} Kern [ voor ondernemingseigenschappen.](/help/forms/creating-adaptive-form-core-components.md)
 
 >[!ENDTABS]
 
-### Het formulier publiceren
+### Stap 3: Configuratie en publicatie
 
-Om een AanpassingsVorm op Edge Delivery Services te publiceren, moet u [ een Configuratie van Edge Delivery Services op een 1&rbrace; instantie van AEM tot stand brengen.](#create-an-edge-delivery-services-configuration)
+Configureer Edge Delivery Services en publiceer uw formulier. Het proces verschilt per sjabloontype.
 
-#### Een Edge Delivery Services-configuratie maken
-
-Voer de volgende stappen uit om de Edge Delivery Services-configuratie te maken:
+#### Edge Delivery Services-configuratie
 
 >[!BEGINTABS]
->[!TAB  op Edge Delivery Services-Gebaseerde malplaatje ]
+>[!TAB  Malplaatje van Edge Delivery Services (Automatisch) ]
 
+**Configuratie:** Automatisch (geen vereiste handopstelling).
 
-De Edge Delivery Services-configuratie voor formulieren op basis van de Edge Delivery Services-sjabloon wordt automatisch gemaakt in de configuratiecontainer van het formulier.
+- De verbinding van de bewaarplaats GitHub en de configuratie van Edge Delivery Services worden gecreeerd tijdens vormverwezenlijking.
+- Publicatie-eindpunten worden automatisch geconfigureerd.
 
-![ Configuratie van Edge Delivery Services ](/help/edge/assets/aem-instance-eds-configuration.png)
+**Verificatie:**
 
->[!TAB  Component-based malplaatje van de Kern ]
+- De configuratie bevestigen wordt weergegeven in de instellingen van het formulier.
+- Zorg ervoor dat de GitHub-URL correct is gekoppeld.
 
-1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Edge Delivery Services Configuration]** op de AEM Forms as a Cloud Service-auteurinstantie.
+![ Automatische Configuratie EDS ](/help/edge/assets/aem-instance-eds-configuration.png)
 
-   ![ Uitgezochte Configuratie van Edge Delivery Services ](/help/edge/assets/select-eds-conf.png)
+>[!TAB  Malplaatje van de Component van de Kern (Hand) ]
 
-2. Selecteer de map met de naam van het formulier. Als het formulier bijvoorbeeld `enrollment-form` heet, kiest u de map `forms/enrollment-form` en klikt u op **[!UICONTROL Create]** > **[!UICONTROL Configuration]** :
+**Configuratie:** Vereiste handopstelling.
 
-   ![ Configuratie van Edge Delivery Services ](/help/forms/assets/create-eds-conf.png)
+#### Handmatige configuratiestappen
 
-3. Klik op **[!UICONTROL Edge Delivery Services Configuration]** en klik op **[!UICONTROL Properties]** om de eigenschappen te openen:
+1. **Hulpmiddelen van de Configuratie van de Toegang**
+   - Navigeer aan **Hulpmiddelen** > **de Diensten van de Wolk** > **Configuratie van Edge Delivery Services**.
 
-   ![ creeerde automatisch configuratie ](/help/forms/assets/eds-conf.png)
+   ![ EDS Toegang van de Configuratie ](/help/edge/assets/select-eds-conf.png)
 
-   De Edge Delivery Services-configuratie wordt weergegeven.
+1. **creeer Configuratie**
+   - Selecteer de map die overeenkomt met de naam van het formulier (bijvoorbeeld `forms/enrollment-form` ).
+   - Klik **creëren** > **Configuratie**.
 
-4. Geef het volgende op in de Edge Delivery Services-configuratie:
+   ![ creeer EDS Configuratie ](/help/forms/assets/create-eds-conf.png)
 
-   * **Organisatie**: Specificeer uw GitHub organisatienaam.
+1. **vorm Eigenschappen**
+   - Klik **Configuratie van Edge Delivery Services**.
+   - Selecteer **Eigenschappen** om de configuratiedialoog te openen.
 
-   * **Naam van de Plaats**: Specificeer uw bewaarplaatsnaam GitHub.
-   * **Tak**: Specificeer de taknaam. Laat het tekstvak leeg als u de hoofdvertakking gebruikt.
-   * **(Optioneel) Edge-host** : laat de optie Edge-host ongewijzigd. Het formulier wordt gepubliceerd naar zowel een voorbeeldomgeving (.page) als een live-omgeving (.live).
-   * **(Facultatief) Token van de Authentificatie van de Plaats**: Gebruik het Token van de Authentificatie van de Plaats om verzoeken tussen uw AEM instantie en Edge Delivery Services veilig voor authentiek te verklaren.
+   ![ Eigenschappen van de Configuratie ](/help/forms/assets/eds-conf.png)
 
-5. Klik op **[!UICONTROL Save and Close]**. De configuratie wordt gemaakt.
+1. **vastgestelde Parameters**
+   - **Vereist:**
+      - **Organisatie**: De organisatienaam van GitHub.
+      - **Naam van de Plaats**: De bewaarplaatsnaam van GitHub.
+      - **Tak**: De naam van de tak (verlaten leeg voor hoofd).
+   - **Facultatief:**
+      - **Gastheer van Edge**: Het gebrek (publiceert aan zowel .page als .live).
+      - **Token van de Authentificatie van de Plaats**: Voor veilige authentificatie (indien vereist).
+
+1. **sparen Configuratie**
+   - Klik **sparen en Sluiten**.
+
+#### Validatie
+
+- Configuratie is gemaakt.
+- De organisatie en de bewaarplaats van GitHub worden correct gespecificeerd.
+- Branch-instellingen komen overeen met de structuur van de repository.
+- Het formulier wordt weergegeven in de configuratiemap.
 
 >[!ENDTABS]
 
-#### Het formulier openen op Edge Delivery Services
-
-Als u het formulier wilt openen op Edge Delivery Services, moet u het formulier publiceren. Voer de volgende stappen uit om het formulier te publiceren:
+#### Het formulier publiceren
 
 >[!BEGINTABS]
->[!TAB  op Universele Redacteur ]
+>[!TAB  Universele Redacteur het Publiceren ]
 
-1. Publiceer het formulier door op de knop **[!UICONTROL Publish]** in de rechterbovenhoek van de Universal Editor te klikken.
+**voor de Malplaatjes van Edge Delivery Services**
 
-![ Schermafbeelding van de Universele Redacteur die publiceer dialoog met de opties van de vormpublicatie en bevestigingsknopen tonen ](/help/edge/assets/publish-form.png)
+1. In Universele Redacteur, klik **publiceren** knoop (hoger-juiste hoek).
+2. Bevestig het publiceren succes in de dialoog.
+3. Maak een notitie van de gegenereerde URL&#39;s voor gefaseerde en live versies.
 
->[!NOTE]
->
-> Verwijs naar [ publiceren en stel ](/help/edge/docs/forms/universal-editor/publish-forms.md) artikel op om te leren hoe te om een vorm aan Edge Delivery Services te publiceren.
+   ![ Universele Redacteur publiceert ](/help/edge/assets/publish-form.png)
 
->[!TAB  op de Adaptieve Redacteur van de Vorm ]
+- [Handleiding voor publiceren](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
-1. Navigeer in de Experience Manager Forms-console naar de bovenliggende map en selecteer een formulier dat u wilt publiceren.
+>[!TAB  het AanpassingsUitgeven van de Redacteur van Forms ]
 
-1. Klik op de optie **[!UICONTROL Publish]** op de werkbalk en bekijk alle referentie-elementen die met het formulier worden gepubliceerd.
+1. Selecteer in de Experience Manager Forms-console het formulier dat u wilt publiceren.
+2. Klik op **[!UICONTROL Publish]** op de werkbalk. Referentie-elementen controleren die moeten worden gepubliceerd.
 
 ![ publiceer Vorm op de Adaptieve Redacteur van de Vorm ](/help/forms/assets/publish-af-editor.png)
 
 >[!NOTE]
 >
-> Verwijs naar [ leiden Publicatie in Experience Manager Forms ](/help/forms/manage-publication.md) artikel om te leren hoe te om een vorm op de Adaptieve Redacteur van de Vorm te publiceren.
+> Zie [ Publicatie in Experience Manager Forms beheren ](/help/forms/manage-publication.md) voor details.
 
 >[!ENDTABS]
 
-* **Gelaagde Versie (voor het testen)**: De gestagte versie toont de niet gepubliceerde, werkende versie van de vorm voor het testen doeleinden. Gebruik de volgende URL-indeling om een voorbeeld van het formulier te bekijken voordat het live gaat:
+## URL&#39;s van formulier
 
-  `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
+Gepubliceerde formulieren zijn toegankelijk via Edge Delivery Services-URL&#39;s.
 
+### URL-structuur
 
+- **Gelaagd (Voorproef/het Testen):**
 
-* **Levende Versie (gepubliceerde vorm)**:   In de live versie wordt de meest recente gepubliceerde versie van het formulier weergegeven, die toegankelijk is voor eindgebruikers. Gebruik de volgende URL-indeling om toegang te krijgen tot de gepubliceerde, live versie van het formulier:
+  ```
+  https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
+  ```
 
-  `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
+- **Levend (Productie):**
 
-  De URL-structuur blijft hetzelfde voor zowel gefaseerde als actieve versies. De inhoud die u ziet, verschilt echter op basis van de context.
+  ```
+  https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
+  ```
 
-In de onderstaande schermafbeeldingen worden URL&#39;s van gefaseerde en live formulieren vergeleken met visuele voorvertoningen voor formulieren die zijn gemaakt met op Edge Delivery Services gebaseerde en op Core Component gebaseerde sjablonen:
+#### URL-parameters
 
->[!BEGINTABS]
->[!TAB  op Edge Delivery Services-Gebaseerde Malplaatje ]
+- `<branch>`: naam van GitHub-vertakking (bijvoorbeeld `main` , `develop` )
+- `<repo>`: naam van GitHub-opslagplaats (bijvoorbeeld `my-forms-project` )
+- `<owner>`: GitHub-organisatie of gebruikersnaam (bijvoorbeeld `company-name` )
+- `<form_name>`: Formulierid zoals gedefinieerd in AEM (bijvoorbeeld `contact-us` )
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-    <tr>
-      <th style="width: 20%;"><strong>Versie</strong></th>
-      <th style="width: 80%;"><strong>Afbeelding</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Stage-versie</td>
-      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="Geleidelijke versie van registratieformulier" style="width: 100%; height: auto;" /></td>
-    </tr>
-    <tr>
-      <td>Live versie</td>
-      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="Live versie van registratieformulier" style="width: 100%; height: auto;" /></td>
-    </tr>
-    </tbody>
-  </table>
+#### Voorbeeld
 
->[!TAB  Component-based Malplaatje van de Kern ]
+Voorbeeld voor formulier `contact-us` in gegevensopslagruimte `forms-project` onder organisatie `acme-corp` :
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-  <thead>
-    <tr>
-      <th style="width: 20%;"><strong>Versie</strong></th>
-      <th style="width: 80%;"><strong>Afbeelding</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Stage-versie</td>
-      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="Geleidelijke versie van inschrijvingsformulier" style="width: 100%; height: auto;" /></td>
-    </tr>
-    <tr>
-      <td>Live versie</td>
-      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="Live versie van inschrijvingsformulier" style="width: 100%; height: auto;" /></td>
-    </tr>
-  </tbody>
-  </table>
+- **Staged:** `https://main--forms-project--acme-corp.aem.page/content/forms/af/contact-us`
+- **Levend:** `https://main--forms-project--acme-corp.aem.live/content/forms/af/contact-us`
 
->[!ENDTABS]
+#### Omgevingsverschillen
+
+- **Gelaagd (.page):** Laatste veranderingen voor het testen.
+- **Levend (.live):** Gepubliceerde inhoud voor productie.
+
+![ Structuur URL ](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
+*de structuurindeling van Edge Delivery Services van URL*
+
+#### Visuele voorbeelden
+
+**Malplaatje van Edge Delivery Services:**
+
+- Staged: ![ Van de Registratie vorm gestage versie ](/help/forms/assets/registration-form-staged-version.png)
+- Levend: ![ de vorm van de Registratie levende versie ](/help/forms/assets/registration-form-live-version.png)
+
+**Malplaatje van de Component van de Kern:**
+
+- Staged: ![ de vorm van de Inschrijving gestapelde versie ](/help/forms/assets/enrollment-form-staged-version.png)
+- Levend: ![ de vorm van de Inschrijving levende versie ](/help/forms/assets/enrollment-form-live-version.png)
 
 ## Problemen oplossen
 
-Problemen met het laden van uw formulier? Hier volgen enkele veelvoorkomende problemen en hoe deze kunnen worden verholpen:
+Hieronder vindt u algemene problemen en oplossingen voor AEM Forms met Edge Delivery Services.
 
-* **Vorm URL**: Controle tweemaal dat URL van uw vorm niet de uitbreiding &quot;.html&quot;aan het eind omvat. Voor Edge Deliver Service is deze extensie niet vereist.
++++Formulier wordt niet geladen
 
-* **URL van de Auteur van AEM van**: Zorg ervoor de Auteur URL van AEM in uw `fstab.yaml` dossier wordt vermeld correct geformatteerd. Het moet de volgende gegevens bevatten:
+**Uitgave:** De Vorm URL keert 404 of lege pagina terug.
 
-   * De juiste GitHub-eigenaar
-   * De juiste naam van de opslagplaats
-   * De specifieke vertakking die je gebruikt voor Edge Delivery Services
+**Resolutie:**
 
-## Formulieren maken
+- Verwijder de extensie `.html` van URL&#39;s.
+- Controleer of het formulier is gepubliceerd.
+- Controleer de bewaarplaats GitHub voor het AanpassingsBlok van Forms.
+- Zorg ervoor dat de naam van het formulier overeenkomt met de URL (hoofdlettergevoelig).
 
-{{universal-editor-see-also}}
++++
 
-<!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
++++Configuratieproblemen
 
-### Managing a form
+**Uitgave:** de configuratie van Edge Delivery Services werkt niet.
 
-You can perform several operations on form using the AEM Forms user interface.
+**Resolutie:**
 
-1. Login into your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+- Zorg ervoor dat de GitHub-URL de `https://github.com/owner/repository` -indeling heeft.
+- Gebruik de correcte taknaam in configuratie.
+- Toegang tot opslagplaats controleren (openbaar of geverifieerd).
+- Controleer `fstab.yaml` voor correcte details GitHub.
 
-1. Select a form and the toolbar displays the following operations you can perform on the selected form.
++++
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Operation</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Edit</p> </td>
-   <td><p>Opens the form in edit mode.<br /> <br /> </p> </td>
-  </tr>
-    <tr>
-   <td><p>Properties</p> </td>
-   <td><p>Provides options to modify the properties of the form.<br /> <br /> </p> </td>
-  </tr>
-  <td><p>Copy</p> </td>
-   <td><p> Provides options to copy the form  and paste it at the desired location. <br /> <br /> </p> </td>
-  </tr>
-   <tr>
-   <td><p>Preview</p> </td>
-   <td><p>Provides options to preview the form as HTML or perform a custom preview by merging data from an XML file with the form. <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Download</p> </td>
-   <td><p>Downloads the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Start Review/Manage Review</p> </td>
-   <td><p>Allows initiating and managing a review of the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Publish / Unpublish</p> </td>
-   <td><p>Publishes / unpublishes the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Delete</p> </td>
-   <td><p>Deletes the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Compare</p> </td>
-   <td><p>Compares two different form for previewing purposes.<br /> <br /> </p> </td>
-  </tr>
- </tbody>
-</table> 
++++Problemen met publiceren
 
+**Uitgave:** Veranderingen verschijnen niet op de levende plaats.
 
-## How Edge Delivery Services Forms Work?
+**Resolutie:**
 
-Users can author Edge Delivery Services Forms using document-based authoring tools such as Google Drive, SharePoint, or the Universal Editor (WYSIWYG authoring), while leveraging the basic styling, behaviour and components available in the GitHub repository. Once authored, Edge Delivery Services Forms can send data to any platform using the Forms Submission Service.
+- Wacht 2-3 minuten op CDN geheim voorgeheugen verfrist zich.
+- Bevestig dat de publicatieworkflow is voltooid.
+- Test eerst op een gefaseerde (.page) omgeving.
+- Verzeker de bewaarplaats GitHub wordt bijgewerkt.
 
-![How Edge Delivery Services Forms works](/help/edge/docs/forms/assets/eds-forms-working.png)
++++
 
-### Key components of Edge Delivery Services Forms
++++Universal Editor-problemen
 
-The key components of Edge Delivery Servies Forms are:
+**Uitgave:** kan vorm of componenten uitgeven niet ladend.
 
-* **GitHub Repository**: The GitHub repository serves as a boilerplate for creating Edge Delivery Services Forms. The forms leverage basic styling and functionality from the repository and allow users to add customizations and custom components to the Edge Delivery Services Forms.
+**Resolutie:**
 
-* **Form Authoring**: Edge Delivery Services Forms support two types of authoring: WYSIWYG and document-based authoring. Document-based authoring enables users to create forms using familiar tools like Google Docs and Microsoft Office. WYSIWYG authoring allows users to design forms visually using the Universal Editor, making it easy for non-technical users to create and manage forms. Universal Editor offers an intuitive form creation experience and provides access to numerous form capabilities.
+- Gebruik een ondersteunde browser (Chrome, Firefox, Safari).
+- Cache en cookies van de browser wissen.
+- Controleer de netwerkconnectiviteit.
+- Machtigingen van auteur bevestigen.
 
-* **Forms Submission Service**: The Forms Submission Service allows you to store data from forms submissions on any platform, such as OneDrive, SharePoint, or Google Sheets, making it easy to access and manage form data within your preferred system.-->
++++
+
++++Fout bij verzenden van formulier
+
+**Uitgave:** de inzendingen van de Vorm werken niet.
+
+**Resolutie:**
+
+- Configureer de verzendactie in formuliereigenschappen.
+- Test de eindpunten van de verzending handmatig.
+- Controleer de CORS-instellingen bij het insluiten van formulieren.
+- Controleer of de vereiste velden zijn geconfigureerd.
+
++++
+
++++Prestatieproblemen
+
+**Uitgave:** Langzame vormlading of slechte prestaties.
+
+**Resolutie:**
+
+- Afbeeldingen optimaliseren.
+- Verwijder overbodige componenten.
+- Gebruik Edge Delivery Services CDN.
+- Aangepaste JavaScript/CSS minimaliseren.
+
++++
+
++++Help opvragen
+
+Als er problemen blijven optreden:
+
+1. Controleer de Adobe Experience Cloud-servicestatus.
+2. Herzie {de documentatie van 0} Edge Delivery Services [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)
+3. Bezoek [ Gemeenschap van de Liga van de Ervaring van Adobe ](https://experienceleaguecommunities.adobe.com/).
+4. Neem contact op met de klantenservice van Adobe.
+
++++
+
+## Volgende stappen
+
+Nadat u het maken en publiceren van formulieren hebt voltooid, kunt u het volgende overwegen:
+
+### Onmiddellijke handelingen
+
+- Test het formulier met deze handleiding.
+- Valideer uw GitHub-opslagplaats en AEM-verbinding.
+- Voorbeeldformulieren bekijken.
+
+### Geavanceerde onderwerpen
+
+- [ vormt voorleggen Acties ](/help/edge/docs/forms/universal-editor/submit-action.md): De opstelling gegevens die en integratie behandelen.
+- [ Modellen van de Gegevens van de Vorm ](/help/forms/create-form-data-models.md): Verbind vormen met achterste gegevensbronnen.
+
+### Optimalisatie van prestaties
+
+- [ Beste praktijken van Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): Maximaliseer prestaties.
+- [ Analytics van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): De vormprestaties en gebruikersgedrag van het spoor.
+
