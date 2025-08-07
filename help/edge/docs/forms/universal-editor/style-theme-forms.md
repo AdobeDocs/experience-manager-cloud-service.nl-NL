@@ -928,7 +928,7 @@ In uw Edge Delivery Services-project:
 
 1. **project-vlakke aanpassing**: Voeg stijlen aan `/styles/styles.css` toe
 2. **vorm-specifieke aanpassing**: wijzig `/blocks/form/form.css`
-3. **met voeten treedt van de Component 0}**: Gebruik aangewezen specificatieselectors in uw douaneCSS
+3. **met voeten treedt van de Component 0&rbrace;**: Gebruik aangewezen specificatieselectors in uw douaneCSS
 
 ## Problemen met CSS oplossen
 

@@ -98,7 +98,7 @@ Kies een van de ondersteunde platforms:
 
 - **geeft toestemmingen** voor het doelspreadsheet uit
 - **delend mogelijkheden** om toegang tot `forms@adobe.com` te verlenen
-- **toestemmingen van de generatie van de verbinding 0} {voor uw gekozen platform**
+- **toestemmingen van de generatie van de verbinding 0&rbrace; &lbrace;voor uw gekozen platform**
 
 >[!TIP]
 >

@@ -103,7 +103,7 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 
 **moet-kent Hulpmiddelen:**
 
-- **de Wijze van de Voorproef van 0} (** kortere weg) - test uw vorm aangezien de gebruikers het zullen zien`p`
+- **de Wijze van de Voorproef van 0&rbrace; (** kortere weg) - test uw vorm aangezien de gebruikers het zullen zien`p`
 - **Responsieve Wijze** - controleer hoe uw vorm op mobiele apparaten kijkt
 - **Open Pagina** (`o` kortere weg) - de vorm van de mening in een nieuw lusje
 - **publiceer** - maak uw vorm voor gebruikers levend
@@ -112,7 +112,7 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 
 **voor uw eerste vorm:**
 
-1. **Begin bouwend** - voeg componenten toe gebruikend **** knoop (`a`) toevoegt
+1. **Begin bouwend** - voeg componenten toe gebruikend **&#x200B;**&#x200B;knoop (`a`) toevoegt
 2. **vorm gebieden** - selecteer componenten en gebruik **Wijze van Eigenschappen** (`d`)
 3. **Test uw vorm** - Gebruik **Wijze van de Voorproef** (`p`) om met uw vorm in wisselwerking te staan
 4. **de mobiele mening van de Controle** - Schakelaar aan **Responsieve Wijze** voor mobiele het testen
@@ -157,12 +157,12 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 
 **Deze hulpmiddelen worden gebruikt in meeste vorm-bouwende zittingen:**
 
-#### **de Wijze van de Voorproef van 0} (** kortere weg)`p`
+#### **de Wijze van de Voorproef van 0&rbrace; (** kortere weg)`p`
 
 **Doel:** test uw vorm precies aangezien de gebruikers het zullen ervaren\
 **wanneer te gebruiken:** alvorens te publiceren, na het aanbrengen van veranderingen, om vormfunctionaliteit te testen
 
-![ Modus van de Voorproef 0}](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
+![ Modus van de Voorproef 0&rbrace;](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
 **Beste praktijken:** Voorproef na elke belangrijke verandering om kwesties vroeg te vangen.
 
@@ -475,7 +475,7 @@ Stel deze sneltoetsen in om formulieren sneller en efficiënter te maken:
 
 +++
 
-Problemen met de modus +++Voorvertoning
++++Problemen met de modus Voorvertoning
 
 **Probleem:** de Wijze van de Voorproef werkt correct niet of toont fouten
 
@@ -504,7 +504,7 @@ Problemen met de modus +++Voorvertoning
 - **Test op mobiele** - verzeker goede prestaties op langzamere mobiele verbindingen
 - **bevestigt vroeg** - opstelling juiste bevestiging om voorleggingsfouten te verhinderen
 
-### **Ervaring van 0} Gebruiker**
+### **Ervaring van 0&rbrace; Gebruiker**
 
 - **Test vaak** - de Wijze van de Voorproef van het gebruik na elke belangrijke verandering
 - **denk als gebruikers** - overweeg de volledige vorm-vullende ervaring

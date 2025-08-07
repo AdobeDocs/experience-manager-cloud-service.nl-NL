@@ -641,7 +641,7 @@ Nu u een werkformulier hebt, kunt u:
 
 Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
 
-++ AEM CLI en lokale ontwikkeling instellen
++++ AEM CLI en lokale ontwikkeling instellen
 
 1. **installeer AEM CLI**
 

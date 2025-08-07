@@ -150,13 +150,14 @@ Het delen van bronnen voor kruisoorsprong configureren op de formulierbron:
 
 2. **Configuratie van het Voorbeeld**:
 
-       # Configuratie voor site waarop het formulier wordt gehost 
+       &#x200B;# Configuratie voor site waarop het formulier wordt gehost 
         kopballen:
         - path: /forms/**
         douane:
         toegang-controle-staat-oorsprong toe: https://host-domain.com
         toegang-controle-staat-methodes toe: GET, OPTIONS 
    
+
 ### Stappen insluiten
 
 1. **creeer en publiceer Vorm**
