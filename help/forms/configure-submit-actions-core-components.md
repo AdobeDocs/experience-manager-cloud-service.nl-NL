@@ -5,7 +5,7 @@ keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptie
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 | AEM as a Cloud Service (Edge Delivery Services) | [ klik hier ](/help/forms/configure-submit-action-eds-forms.md) |
@@ -40,7 +40,7 @@ De volgende verzendacties worden ondersteund door Adaptive Forms op basis van Co
 * [Een automatische stroomvoorziening aanroepen](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Verzenden naar SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Een Workfront Fusion aanroepen](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Verzenden met gebruik van FDM (Form Data Model)](/help/forms/using-form-data-model.md)
+* [Verzenden met gebruik van FDM (Form Data Model)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Verzenden naar REST-eindpunt](/help/forms/configure-submit-action-restpoint.md)
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -66,7 +66,7 @@ Bovendien, kunt u [ aanpassen het gebrek verzendt Acties ](/help/forms/custom-su
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
   -->
 
-U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend het lusje van de Verzending van Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=nl-NL).
+U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend het lusje van de Verzending van Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
 
 ![ klik het pictogram van de Sleutel om de Adaptieve de dialoogdoos van de Container van de Vorm te openen om een verzendactie te vormen ](/help/forms/assets/adaptive-forms-submit-message.png)
 
@@ -125,7 +125,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -141,7 +141,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 

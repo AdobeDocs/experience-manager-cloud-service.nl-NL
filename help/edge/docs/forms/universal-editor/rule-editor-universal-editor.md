@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3472'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 # Rule Editor voor Dynamic Forms in Universal Editor
 
 De Redacteur van de Regel in Universele Redacteur laat u toe om intelligente, dynamische vormen tot stand te brengen die op gebruikersinput in echt - tijd antwoorden. U kunt statische formulieren transformeren in interactieve ervaringen met voorwaardelijke veldzichtbaarheid, geautomatiseerde berekeningen en complexe bedrijfslogica, zonder code te schrijven.
+
 
 ## Wat leert u?
 

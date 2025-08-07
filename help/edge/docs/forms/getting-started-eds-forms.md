@@ -4,9 +4,9 @@ description: Leer hoe u hoogwaardige formulieren maakt en levert op Adobe Experi
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aan de slag met Forms op AEM Edge Delivery Services
 
-<span class="preview"> Dit is een pre-versieeigenschap beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. </span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
 
 Met Adobe Experience Manager (AEM) Edge Delivery Services (EDS) kunt u vanaf de rand genieten van supersnelle, zeer schaalbare webbeleving. Deze gids verklaart **hoe te om vormen voor die ervaringen** te bouwen en te publiceren—met een duidelijke aanbevelingshiërarchie:
 

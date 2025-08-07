@@ -5,9 +5,9 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/nl/docs/marketo/using/home) te integreren.
+Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/en/docs/marketo/using/home) te integreren.
 
 U kunt Marketo Engage verbinden met een adaptief formulier via de wizard Formulier, die het configuratieproces vereenvoudigt door u door elke stap te begeleiden. Het omvat het selecteren van sjablonen, stijlen en gegevensvelden en het instellen van gegevenstoewijzing om te controleren of uw formulier klaar is om te communiceren met Marketo Engage nadat het is gemaakt. Met de wizard Formulier kunt u het Adaptief formulier ook zodanig configureren dat gegevens bij verzending rechtstreeks naar Adobe Marketo Engage worden verzonden.
 
@@ -37,6 +37,8 @@ Vereiste om Marketo Engage te verbinden met formulieren:
 ## Hoe te om nieuw Aangepast Vorm te vormen om met Marketo Engage te integreren?
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
+
+<span> Deze video is alleen van toepassing op Core Components. Voor de Componenten van de UE/Foundation, gelieve naar het artikel te verwijzen.</span>
 
 >[!BEGINTABS]
 
@@ -178,7 +180,7 @@ Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Eng
 
 ## Volgende stap
 
-U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
+U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
 
 ## Verwante artikelen
 

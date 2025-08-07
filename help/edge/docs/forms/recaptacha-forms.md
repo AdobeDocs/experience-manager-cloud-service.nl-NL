@@ -4,9 +4,9 @@ description: Google reCAPTCHA gebruiken in een formulier voor Edge Delivery Serv
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # reCAPTCHA gebruiken met Edge Delivery Services voor AEM Forms as a Cloud Service
 
-<span> **reCAPTCHA** eigenschap is onder het pre-versieprogramma. Om toegang tot **reCAPTCHA** eigenschap voor Edge Delivery Services voor AEM Forms te verzoeken, verzend een e-mail van uw het werkadres naar mailto :aem-forms-ea@adobe.com.</span>
+<!--<span>The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for Edge Delivery Services for AEM Forms, send an email from your work address to mailto:aem-forms-ea@adobe.com.</span>-->
 
 reCAPTCHA is een populair hulpmiddel dat wordt gebruikt om websites te beschermen tegen frauduleuze activiteiten, spam en misbruik. In Edge Delivery Services biedt het Adaptive Forms Block de mogelijkheid om Google reCAPTCHA toe te voegen om onderscheid te maken tussen mensen en bots. Met deze functie kunnen gebruikers hun website beschermen tegen spam en misbruik.
 Neem bijvoorbeeld een enquêteformulier waarin gegevens worden verzameld zoals begin- en eindreisdatums, kamerbudget, geschatte reiskosten en reizigersinformatie. In dergelijke gevallen bestaat het risico dat kwaadwillende gebruikers het formulier exploiteren voor doeleinden als het verzenden van phishinge-mails of het overlopen van het formulier met irrelevante of schadelijke inhoud met behulp van spambots. De integratie van reCAPTCHA biedt extra veiligheid door te verifiëren dat de bijdragen van echte gebruikers zijn, effectief minimaliserend spamingingingangen.

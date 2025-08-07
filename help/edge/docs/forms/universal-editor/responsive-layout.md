@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 # Responsieve Forms maken met Universal Editor
 
 Gebruikers kunnen formulieren openen op een groot aantal apparaten, zoals desktops, tablets en smartphones. Het ontwerpen van responsieve formulieren zorgt voor een optimale ervaring voor alle gebruikers, ongeacht het apparaat. In deze handleiding wordt uitgelegd hoe u formulieren voor elke schermgrootte ontwerpt, test en optimaliseert met de Universal Editor.
+
 
 Bij het maken van responsieve formulieren zijn twee hoofdactiviteiten betrokken:
 
@@ -73,7 +74,7 @@ Door uw formulieren op verschillende apparaten te testen, kunt u problemen die o
 
 **Stap 3: De Oriëntaties van het Apparaat van de test**
 
-Gebruik het **pictogram van de Rotator van het 1&rbrace; Scherm** om allebei te testen:
+Gebruik het **pictogram van de Rotator van het 1} Scherm** om allebei te testen:
 
 - **Staand wijze**: Standaard mobiele richtlijn
 - **Liggende wijze**: Geroteerde tablet of telefoonmening
@@ -171,7 +172,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 **Stappen van de Implementatie:**
 
-1. Gebruik de [ Component van het Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+1. Gebruik de [ Component van het Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 2. Groepeer verwante velden in elk deelvenster.
 3. Voeg duidelijke koppen toe voor elke sectie.
 4. Zorg voor voldoende ruimte tussen deelvensters.
@@ -204,7 +205,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 **Stappen van de Implementatie:**
 
-1. Gebruik de [ Component van de Tovenaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+1. Gebruik de [ Component van de Tovenaar ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 2. Complexe formulieren onderbrengen in logische stappen (3-7 stappen zijn optimaal).
 3. Voeg voortgangsindicatoren toe voor de gebruikersierichting.
 4. Zorg voor duidelijke besturingselementen voor navigatie (Volgende, Vorige, Opslaan).
@@ -244,7 +245,7 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 **Stappen van de Implementatie:**
 
-1. Gebruik de [ Component van de Accordeon ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+1. Gebruik de [ Component van de Accordeon ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 2. Groepeer gerelateerde optionele inhoud in elke sectie.
 3. Gebruik beschrijvende sectiekoppen.
 4. Stel de juiste open/gesloten standaardstatussen in.

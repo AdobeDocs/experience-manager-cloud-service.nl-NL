@@ -6,9 +6,9 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '2047'
 ht-degree: 0%
 
 ---
@@ -51,21 +51,23 @@ De onderstaande video bevat een stapsgewijze handleiding over de vereisten (zoal
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457850/)
 
+<span> Deze video is alleen van toepassing op Core Components. Voor de Componenten van de UE/Foundation, gelieve naar het artikel te verwijzen.</span>
+
 ## Vereisten {#prerequisites}
 
 Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volgende in Adobe Experience Platform is voltooid:
 
 1. Schema instellen
-   * [ creeer een schema XDM ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [ laat schema voor het profileren ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile) toe
-   * [ bepaalt identiteitsgebied ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [ creeer een schema XDM ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [ laat schema voor het profileren ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile) toe
+   * [ bepaalt identiteitsgebied ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Gegevensconfiguratie
-   * [ creeer een dataset ](https://experienceleague.adobe.com/nl/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [ opstelling die verbinding ](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/tutorials/create-streaming-connection) stromen (u hebt het stromen eindpunt URL later nodig, zo maak een nota van het nu.)
+   * [ creeer een dataset ](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [ opstelling die verbinding ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) stromen (u hebt het stromen eindpunt URL later nodig, zo maak een nota van het nu.)
 
 3. Verificatie
-   * [ produceer API geloofsbrieven ](https://experienceleague.adobe.com/nl/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identiteitskaart van de Cliënt en Geheime cliënt) van Adobe Developer Console
+   * [ produceer API geloofsbrieven ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identiteitskaart van de Cliënt en Geheime cliënt) van Adobe Developer Console
 
 
 ## Implementatiestappen
@@ -90,12 +92,17 @@ Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volge
 
 ### &#x200B;2. Formulier maken met XDM-schemaintegratie {#form-creation}
 
+>[!BEGINTABS]
+
+>[!TAB  Component van de Stichting ]
+
+Voer de volgende stappen uit om Aangepaste Vorm tot stand te brengen die op de Componenten van de Stichting met de Integratie van het Schema wordt gebaseerd:
+
 1. De wizard Formulier maken openen:
    * Navigeer aan uw **instantie van Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
    * Klik **creëren** > **AanpassingsVorm**.
-1. In het **bron** lusje, selecteer een malplaatje
+1. In het **bron** lusje, selecteer een stichtingsmalplaatje.
 1. In het **lusje van Gegevens**, selecteer de **Adobe Experience Platform** optie.
-
 1. Selecteer uw cloudconfiguratie in het deelvenster Eigenschappen.
 
    ![](/help/forms/assets/xdm-schema-integration.png)
@@ -121,6 +128,85 @@ Voordat u de AEP-connector instelt in AEM Forms, moet u controleren of het volge
    * Opslagpad
 1. Voeg de verzendknop toe aan het formulier. Uw formulier is klaar om gegevens naar AEP te verzenden.
 
+>[!TAB  Component van de Kern ]
+
+Voer de volgende stappen uit om een adaptief formulier te maken op basis van kerncomponenten met schemaintegratie:
+
+1. De wizard Formulier maken openen:
+   * Navigeer aan uw **instantie van Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+   * Klik **creëren** > **AanpassingsVorm**.
+1. In het **bron** lusje, selecteer een Gebaseerde malplaatje van de Component van de Kern.
+1. In het **lusje van Gegevens**, selecteer de **Adobe Experience Platform** optie.
+1. Selecteer uw cloudconfiguratie in het deelvenster Eigenschappen.
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   Het systeem laadt alle beschikbare schema&#39;s van Adobe Experience Platform
+
+   >[!NOTE]
+   >
+   >
+   > * Alleen schema&#39;s waarvoor een profiel is ingeschakeld en schema&#39;s die niet door het systeem worden gegenereerd, worden opgehaald.
+   > * Het laden van het eerste schema kan enige tijd in beslag nemen bij de eerste setup.
+
+1. Selecteer de juiste/verplichte velden van het schema. (Zie video voor gedetailleerde stappen)
+1. Op het tabblad Verzending:
+   * Selecteer **voorleggen aan Adobe Experience Platform** voorlegt actie
+   * Vorm de montages van de vormvoorlegging voor **AEM Forms gegevensvoorlegging aan Experience Platform**
+1. In het deelvenster Eigenschappen:
+   * Voeg de URL voor streaming toe (verkregen via AEP-bronnen > Streaming Connection)
+   * De gegevensstroom-id toevoegen (in AEP-bronnen > Stroom > API-gebruiksgegevens)
+1. Klik **sparen**. Geef de formuliergegevens op:
+   * Titel
+   * Naam
+   * Opslagpad
+1. Voeg de verzendknop toe aan het formulier. Uw formulier is klaar om gegevens naar AEP te verzenden.
+
+>[!TAB  Universele Redacteur ]
+
+Voer de volgende stappen uit om een adaptief formulier te maken dat is geschreven met Universal Editor met schemaintegratie:
+
+1. De wizard Formulier maken openen:
+   * Navigeer aan uw **instantie van Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+   * Klik **creëren** > **AanpassingsVorm**.
+1. In het **bron** lusje, uitgezochte op Edge Delivery gebaseerde malplaatje.
+1. In het **lusje van Gegevens**, selecteer de **Adobe Experience Platform** optie.
+1. Selecteer uw cloudconfiguratie in het deelvenster Eigenschappen.
+
+   ![ schemaintegratie ](/help/forms/assets/xdm-schema-integration.png)
+
+   Het systeem laadt alle beschikbare schema&#39;s van Adobe Experience Platform
+
+   >[!NOTE]
+   >
+   >
+   > * Alleen schema&#39;s waarvoor een profiel is ingeschakeld en schema&#39;s die niet door het systeem worden gegenereerd, worden opgehaald.
+   > * Het laden van het eerste schema kan enige tijd in beslag nemen bij de eerste setup.
+
+1. Selecteer de juiste/verplichte velden van het schema. (Zie video voor gedetailleerde stappen)
+1. Op het tabblad Verzending:
+   * Selecteer **voorleggen aan Adobe Experience Platform** voorlegt actie
+   * Vorm de montages van de vormvoorlegging voor **AEM Forms gegevensvoorlegging aan Experience Platform**
+
+     >[!NOTE]
+     >
+     >* Als u niet het pictogram van Gegevensbronnen in uw Universele interface van de Redacteur ziet of het bezit van de Verwijzing in het juiste bezitspaneel binden, laat de **uitbreiding van de 0} Gegevensbron {in Extension Manager toe.**
+     >* Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+     > 
+     > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
+   De prefill-service voor formulieren in de Universal Editor wordt momenteel niet ondersteund.
+
+1. In het deelvenster Eigenschappen:
+   * Voeg de URL voor streaming toe (verkregen via AEP-bronnen > Streaming Connection)
+   * De gegevensstroom-id toevoegen (in AEP-bronnen > Stroom > API-gebruiksgegevens)
+1. Klik **sparen**. Geef de formuliergegevens op:
+   * Titel
+   * Naam
+   * Opslagpad
+1. Voeg de verzendknop toe aan het formulier. Uw formulier is klaar om gegevens naar AEP te verzenden.
+
+>[!ENDTABS]
 
 ## Belangrijke opmerkingen {#important-notes}
 
@@ -163,7 +249,7 @@ A: Deze connector werkt met zowel Adaptive Forms Core Components als Adaptive Fo
 A: Op dit moment kan elk formulier slechts naar één gegevensset verzenden.
 
 **Q: Is er een grens aan hoeveel vormvoorlegging kan worden verwerkt?**
-A: De voorlegging van de vorm is onderworpen aan uw AEP die inname [ quota en tariefgrenzen ](https://experienceleague.adobe.com/nl/docs/experience-platform/data-lifecycle/api/quota) stromen.
+A: De voorlegging van de vorm is onderworpen aan uw AEP die inname [ quota en tariefgrenzen ](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota) stromen.
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -200,11 +286,11 @@ Aan de slag met deze integratie:
 
 ## Gerelateerde bronnen {#related-resources}
 
-* [ de documentatie van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL)
-* [ documentatie van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
-* [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl-NL)
-* [ Streaming opname in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=nl-NL)
-* [ overzicht van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl-NL)
+* [ de documentatie van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+* [ documentatie van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [ Streaming opname in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [ overzicht van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [AEM Forms-functies voor vroege toegang](/help/forms/early-access-ea-features.md)
 * [Adaptieve Forms maken met kerncomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Formuliergegevensmodellen gebruiken in AEM Forms](/help/forms/using-form-data-model.md)

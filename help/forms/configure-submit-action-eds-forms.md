@@ -4,19 +4,19 @@ description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een h
 keywords: hoe u verzendactie selecteert voor een adaptief formulier, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op een formuliergegevensmodel (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
-
 # Handelingen verzenden voor Edge Delivery Services Forms
 
 | Versie | Artikelkoppeling |
 |---------|-----------------------------|
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dit artikel |
@@ -33,7 +33,7 @@ Het volgende voorlegt acties wordt gesteund door [ Aangepaste Forms authored in 
 * [Een automatische stroomvoorziening aanroepen](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Verzenden naar SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion aanroepen](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Verzenden met gebruik van FDM (Form Data Model)](/help/forms/using-form-data-model.md)
+* [Verzenden met gebruik van FDM (Form Data Model)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Verzenden naar REST-eindpunt](/help/forms/configure-submit-action-restpoint.md)
 * [Verzenden naar OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -58,8 +58,8 @@ You can configure the submit action for forms created in the Universal Editor us
 
 >[!NOTE]
 >
-> * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-> * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+> * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+> * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Handelingen verzenden voor Forms op basis van document
 
@@ -68,4 +68,3 @@ Forms-supportverzending op basis van documenten alleen naar werkbladen. Leren ho
 ## Zie ook {#see-also}
 
 {{af-submit-action}}
-
