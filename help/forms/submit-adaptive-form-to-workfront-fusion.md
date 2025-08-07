@@ -17,7 +17,7 @@ ht-degree: 1%
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-[ de Fusie van Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiseert het proces om de zelfde taken, zoals de werkschema&#39;s van de documentgoedkeuring, e-mailfiltreren en het sorteren te herhalen, toestaand u om zich op nieuwe taken in plaats van terugkomende degenen te concentreren. Adobe Workfront Fusion bevat meerdere scenario&#39;s. Een scenario bestaat uit een reeks modules die gegevensoverdracht tussen toepassingen en Webdiensten uitvoert. In een scenario, voegt u diverse stappen (modules) toe om een taak te automatiseren.
+[ de Fusie van Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=nl-NL) automatiseert het proces om de zelfde taken, zoals de werkschema&#39;s van de documentgoedkeuring, e-mailfiltreren en het sorteren te herhalen, toestaand u om zich op nieuwe taken in plaats van terugkomende degenen te concentreren. Adobe Workfront Fusion bevat meerdere scenario&#39;s. Een scenario bestaat uit een reeks modules die gegevensoverdracht tussen toepassingen en Webdiensten uitvoert. In een scenario, voegt u diverse stappen (modules) toe om een taak te automatiseren.
 
 Met Workfront Fusion kunt u bijvoorbeeld een scenario maken voor het verzamelen van gegevens met Adaptief formulier, het verwerken van de gegevens en het verzenden van de gegevens naar een gegevensopslagruimte voor archivering. Wanneer een scenario is ingesteld, voert Workfront Fusion automatisch de taken uit wanneer een gebruiker een formulier invult en de gegevensopslag naadloos bijwerkt.
 
@@ -37,8 +37,8 @@ AEM Forms as a Cloud Service beschikt over een OOTB-connector om een adaptief fo
 
 Voor het tot stand brengen van een verbinding tussen Workfront Fusion en AEM Forms is het volgende noodzakelijk:
 
-* Een geldige [ Workfront en de vergunning van de Fusie van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* Een gebruiker van AEM met recht op toegang tot [ Dev Console ](https://my.cloudmanager.adobe.com/) om [ de de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) terug te winnen.
+* Een geldige [ Workfront en de vergunning van de Fusie van Workfront ](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=nl-NL).
+* Een gebruiker van AEM met recht op toegang tot [ Dev Console ](https://my.cloudmanager.adobe.com/) om [ de de dienstgeloofsbrieven ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) terug te winnen.
 
 ## AEM Forms integreren met Adobe Workfront Fusion
 
@@ -105,7 +105,7 @@ Een verbinding toevoegen:
    >
    > Instance-URL is het unieke webadres dat verwijst naar een specifieke AEM Forms-instantie.
 
-   U kunt de [ dienstgeloofsbrieven van de console van de Ontwikkelaar terugwinnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) wordt vereist om een verbinding tot stand te brengen die.
+   U kunt de [ dienstgeloofsbrieven van de console van de Ontwikkelaar terugwinnen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=nl-NL) wordt vereist om een verbinding tot stand te brengen die.
 
 1. Vervang `ims-na1.adobelogin.com` in het **IMS eindpunt** met de waarde van **imsEndpoint** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
 
