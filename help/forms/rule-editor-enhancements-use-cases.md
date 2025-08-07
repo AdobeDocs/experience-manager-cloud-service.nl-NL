@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Verbeteringen in de regeleditor en hoofdletters/kleine letters gebruiken
 
-<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>.
+<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>.
 
 Dit artikel introduceert de meest recente verbeteringen aan de regeleditor in Adaptive Forms. Deze updates zijn ontworpen om u te helpen formuliergedrag gemakkelijker te definiëren, zonder aangepaste code te schrijven, en om een dynamischere, responsieve en gepersonaliseerde formulierervaring te maken.
 
