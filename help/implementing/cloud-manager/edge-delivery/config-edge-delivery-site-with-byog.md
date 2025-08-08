@@ -28,7 +28,7 @@ U kunt uw Edge Delivery-site zo configureren dat code wordt opgehaald uit elke p
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma met gevormde Edge Delivery Services, waar u een plaats van Edge Delivery wilt vormen om een externe reactie van de it te gebruiken.
 1. In het linkerspoor, onder de **rubriek van het Programma**, klik **![pictogram van het Overzicht ](/help/implementing/cloud-manager/edge-delivery/assets/overview.svg) Overzicht**.
-1. Voor de **pagina van het Overzicht van het 0} Programma, klik** Edge Delivery **tabel.**
+1. Voor de **pagina van het Overzicht van het 0&rbrace; Programma, klik** Edge Delivery **tabel.**
 1. In de **plaatsen van Edge Delivery** lijst, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt vormen om een externe repo te gebruiken, dan **uw eigen Git** brengen.
 1. In Breng uw eigen de dialoogvakje van het Git, in de **drop-down lijst van de Naam van de Bewaarplaats**, kies een repo van de Git met `READY` status, dan klik **bevestigen**.
 
