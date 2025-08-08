@@ -1,18 +1,17 @@
 ---
-title: Procedure voor het vooraf invullen van adaptieve formuliervelden
+title: Aangepaste formuliervelden vooraf invullen
 description: Bestaande gegevens gebruiken om velden van een adaptief formulier vooraf in te vullen. Gebruikers kunnen basisgegevens vooraf invullen in een formulier door zich aan te melden met hun sociale profielen.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: vooraf instelbaar adaptief formulier, adaptieve services voor randweergave van formulieren, adaptief automatisch invullen van formulier
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
 
 ---
-
 
 # Prefill-service configureren in Adaptive Forms met Edge Delivery Services
 
@@ -37,9 +36,9 @@ In het volgende diagram ziet u het automatische vooraf ingevulde proces dat plaa
 Het vooraf ingevulde proces omvat vier belangrijke stappen:
 
 1. **Gebruiker opent Vorm**: De gebruiker heeft toegang tot een AanpassingsVorm door URL of navigatie
-2. **identificeer Gegevens Source**: De vooraf ingevulde dienst bepaalt de gevormde gegevensbron (het Model van Gegevens van de Vorm of de dienst van het Ontwerp)
-3. **wint Gegevens** terug: Het systeem haalt relevante gebruikersgegevens die op context, parameters, of gebruikersidentificatie worden gebaseerd
-4. **Kaart en Vertoning**: De gegevens worden in kaart gebracht aan vormgebieden gebruikend `bindRef` eigenschappen en de bevolkte vorm wordt getoond aan de gebruiker
+1. **identificeer Gegevens Source**: De vooraf ingevulde dienst bepaalt de gevormde gegevensbron (het Model van Gegevens van de Vorm of de dienst van het Ontwerp)
+1. **wint Gegevens** terug: Het systeem haalt relevante gebruikersgegevens die op context, parameters, of gebruikersidentificatie worden gebaseerd
+1. **Kaart en Vertoning**: De gegevens worden in kaart gebracht aan vormgebieden gebruikend `bindRef` eigenschappen en de bevolkte vorm wordt getoond aan de gebruiker
 
 Dit geautomatiseerde proces zorgt ervoor dat gebruikers een formulier zien dat vooraf is ingevuld met hun relevante informatie, wat de gebruikerservaring aanzienlijk verbetert en het voltooiingspercentage van het formulier aanzienlijk verbetert.
 
@@ -62,7 +61,6 @@ De gegevensindeling moet overeenkomen met uw formuliermodel:
 - **JSON schemavormen**: JSON volgzaam met het schema
 - **het Model van Gegevens van de Vorm (FDM) vormen**: JSON die de structuur FDM aanpassen
 - **schema-less vormen**: Alle gebieden zijn niet verbindend en gebruiken ongebonden XML
-
 
 ## Vereisten
 
@@ -106,39 +104,39 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
 ## Prefill-service voor een formulier configureren
 
-
 +++fase 1: Formuliergegevensmodel instellen
 
 ### Stap 1: Formuliergegevensmodel maken
 
 1. Aanmelden bij uw AEM Forms as a Cloud Service-exemplaar
-2. Ga aan **Adobe Experience Manager** > **Forms** > **Integraties van Gegevens**
-3. Selecteer **creëren** > **Model van de Gegevens van de Vorm**
-4. Kies uw **Configuratie van Source van Gegevens** en selecteer gevormde **Source van Gegevens**
+1. Ga aan **Adobe Experience Manager** > **Forms** > **Integraties van Gegevens**
+1. Selecteer **creëren** > **Model van de Gegevens van de Vorm**
+1. Kies uw **Configuratie van Source van Gegevens** en selecteer gevormde **Source van Gegevens**
 
    ![ Gemaakt Model van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > Voor gedetailleerde instructies bij het creëren van de Modellen van Gegevens van de Vorm, zie [ het Model van de Gegevens van de Vorm ](/help/forms/create-form-data-models.md) creëren.
+   >Voor gedetailleerde instructies bij het creëren van de Modellen van Gegevens van de Vorm, zie [ het Model van de Gegevens van de Vorm ](/help/forms/create-form-data-models.md) creëren.
 
 ### Stap 2: FDM-services configureren
 
 1. Ga naar **Adobe Experience Manager** > **Forms** > **Integraties van Gegevens**
-2. Het formuliergegevensmodel openen in de bewerkingsmodus
-3. Selecteer een gegevensmodelvoorwerp en klik **uitgeven Eigenschappen**
-4. Vorm **Gelezen** en **schrijven** diensten voor de geselecteerde voorwerpen van het gegevensmodel
+1. Het formuliergegevensmodel openen in de bewerkingsmodus
+1. Selecteer een gegevensmodelvoorwerp en klik **uitgeven Eigenschappen**
+1. Vorm **Gelezen** en **schrijven** diensten voor de geselecteerde voorwerpen van het gegevensmodel
 
    ![ vormen lees schrijven de dienst ](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Serviceargumenten configureren:
+1. Serviceargumenten configureren:
+
    - Klik op het bewerkingspictogram voor het argument van de leesservice
    - Bind het argument aan a **Attribuut van het Profiel van de Gebruiker**, **Attribuut van het Verzoek**, of **Letterlijke waarde**
    - Geef de bindingswaarde op (bijvoorbeeld `petid` voor een registratieformulier voor gezelschapsdieren)
 
    ![ vorm het argument van huisidentiteitskaart ](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Klik **Gedaan** om het argument en **sparen** te bewaren om FDM te bewaren
+1. Klik **Gedaan** om het argument en **sparen** te bewaren om FDM te bewaren
 
    >[!NOTE]
    >
@@ -156,7 +154,7 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
    ![ malplaatje van Edge Delivery Services ](/help/edge/assets/create-eds-forms.png)
 
-1. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm &lbrace;**
+1. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm {**
 1. Geef de formulierdetails op:
 
    - **Naam**: Ga een beschrijvende naam voor uw vorm in
@@ -188,7 +186,7 @@ De vormelementen van uw FDM verschijnen in het **Datasource** lusje van **Browse
 
 ### Stap 5: Gegevensbinding toevoegen aan formuliervelden
 
-1. Selecteer gegevenselementen van het **lusje van 0&rbrace; Gegevensbron &lbrace;**
+1. Selecteer gegevenselementen van het **lusje van 0} Gegevensbron {**
 2. Klik **toevoegen** of belemmering-en-dalingselementen om uw vorm te bouwen
 
    ![ Schermafbeelding van Universele Redacteur die op schema-gebaseerde vorm ](/help/edge/docs/forms/universal-editor/assets/ue-form.png) tonen
@@ -212,7 +210,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 1. **de Uitbreiding van de Eigenschappen van de Vorm van AEM**
 
    - Open **Extension Manager** in Universele Redacteur
-   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0&rbrace; AEM toe**
+   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0} AEM toe**
 
    ![ de eigenschappen van de Vorm pictogram ](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
@@ -251,7 +249,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 3. Kies **Voorproef als HTML**
 4. Test prefilling door parameters aan URL toe te voegen:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Voorbeeld:**
 
@@ -271,7 +269,7 @@ Het formulier moet automatisch gegevens vullen op basis van de opgegeven paramet
 
     &quot;
     
-    &lbrace;
+    {
      &quot;afBoundData&quot;: 
      &quot;user&quot;: 
      &quot;firstName&quot;: &quot;John&quot;, 
@@ -391,7 +389,7 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 +++Richtlijnen voor gebruikerservaring
 
 - **verstrekken terugkoppelt**: Toon ladingsindicatoren tijdens gegevenshaal
-- **elegant de fouten van het 0&rbrace; Handvat &lbrace;: De nuttige foutenmeldingen van de vertoning**
+- **elegant de fouten van het 0} Handvat {: De nuttige foutenmeldingen van de vertoning**
 - **staat met voeten treedt** toe: Laat gebruikers vooraf ingevulde gegevens wijzigen
 - **handhaaf consistentie**: Gebruik verenigbaar prefill gedrag over vormen
 
