@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2235'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Nieuwe functies in Experience Manager Sites {#enhancements-sites}
 
-**Verbeteringen van de Fragmenten van de Inhoud**
-
-* U kunt nu inhoudsfragmenten met onderliggende elementen kopiëren.
-* U kunt nu een aangepaste werkruimte configureren in de mapinstellingen om de inhoudsfragmenten te exporteren naar de geconfigureerde werkruimte in Adobe Target.
+* U kunt nu inhoudsfragmenten met fragmenten waarnaar wordt verwezen (onderliggende fragmenten) in één bewerking kopiëren. Zo kunt u bestaande structuren voor inhoudsfragmenten opnieuw gebruiken om nieuwe inhoud te maken.
+* In de Admin UI van de Fragmenten van de Inhoud kunt u nu de werkschemastatus voor inhoudsfragmenten, met gedetailleerde informatie over verleden en momenteel lopende werkschema&#39;s voor een geselecteerd fragment bekijken.
+* Als u de naam van een bronpagina voor een live kopie wijzigt of een bronpagina voor een live kopie verplaatst, wordt het opnieuw publiceren van een overeenkomstige hernoemde of verplaatste pagina voor live kopieën nu geactiveerd.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ Content Hub omvat nu a **tonen Al** optie binnen filters, toestaand gebruikers o
 
 Geniet van geautomatiseerde upload van nieuwe bestanden en mappen, verbeterde bestandsbewerkingen, slimmere detectie van middelen en naadloze integratie met AEM—waardoor contentbeheer sneller, duidelijker en intuïtiever wordt.
 
-Voor de volledige lijst van eigenschappen, zie {de Nota&#39;s van de Versie van de App van 0} Desktop [.](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/release-notes)
+Voor de volledige lijst van eigenschappen, zie {de Nota&#39;s van de Versie van de App van 0} Desktop [.](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)
 
 ### Nieuwe functies in dynamische media met OpenAPI-mogelijkheden {#new-features-dynamic-media-with-openapi}
 
@@ -147,7 +146,7 @@ De [ API van de Synchronisatie van de Output van AFP ](/help/forms/document-gene
 
 Het AEM Forms-programma voor vroege toegang biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan te helpen vormgeven.
 
-In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 
 <!-- **Forms Optimization opportunities**
@@ -223,7 +222,7 @@ OSGi-eigenschappen:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere &#x200B;** runtime Java 21**.
+**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
 
 Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
 
@@ -311,7 +310,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -331,4 +330,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
