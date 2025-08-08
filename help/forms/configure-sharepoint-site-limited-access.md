@@ -58,7 +58,7 @@ Verwijs naar het [ blogartikel - ontwikkelt Toepassingen die de toestemmingen Si
 
 Om een beperkte toegang tot een Microsoft SharePoint-site mogelijk te maken, is het van essentieel belang de reikwijdte van de vergunning correct vast te stellen. Om het vergunningswerkingsgebied te plaatsen en AEM Forms aan uw opslag van Microsoft® SharePoint te verbinden:
 
-1. Ga naar uw **1} instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
+1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
 1. Nadat u de **[!UICONTROL Microsoft® SharePoint]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL SharePoint Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
