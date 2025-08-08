@@ -3,7 +3,7 @@ title: Hoe te om het Model van de Gegevens van de Vorm (FDM) voor een vorm met A
 description: Leer formulieren te maken op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -54,6 +54,7 @@ Voer de volgende stappen uit om Formuliergegevensmodel te configureren met adapt
 1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op de tab **[!UICONTROL Submission]** .
 1. Van de **[!UICONTROL Submit Action]** drop-down lijst, uitgezochte **[voorleggen Gebruikend het Model van Gegevens van de Vorm]**.
+
    ![ voorleggen gebruikend het Model van de Gegevens van de Vorm ](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. Selecteer de gemaakte **[!UICONTROL Data Model to submit]** configuratie.
@@ -71,8 +72,8 @@ Voer de volgende stappen uit om Formuliergegevensmodel te configureren met Adapt
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** tabel en selecteer **[!UICONTROL Submit using Form Data Model]**.
 
