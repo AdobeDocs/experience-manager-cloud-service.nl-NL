@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=nl-NL#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Acrobat Sign] maakt workflows voor e-handtekeningen mogelijk voor adaptieve Forms- en AEM-workflows. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
@@ -37,7 +37,7 @@ U hebt de volgende instellingen nodig om [!DNL Adobe Acrobat Sign] te integreren
 1. Een actieve [ de ontwikkelaarsrekening van Adobe Acrobat Sign.](https://www.adobe.com/acrobat/business/developer-form.html)
 1. Een [ toepassing van Adobe Acrobat Sign API ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. Referenties (client-id en clientgeheim) van [!DNL Adobe Acrobat Sign] API-toepassing.
-1. (Slechts voor op identiteitskaart-Gebaseerde authentificatie van de Regering) [ laat de authentificatiemethode ](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) voor de authentificatie van identiteitskaart van de Regering toe.
+1. (Slechts voor op identiteitskaart-Gebaseerde authentificatie van de Regering) [ laat de authentificatiemethode ](https://helpx.adobe.com/nl/sign/using/adobesign-authentication-government-id.html#AuditReport) voor de authentificatie van identiteitskaart van de Regering toe.
 
 ### AEM Forms-auteur verbinden en instanties publiceren met Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
@@ -84,7 +84,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/nl/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/nl/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ Bijvoorbeeld, om de configuratiedienst dagelijks bij 00 :00 am in werking te ste
 }
 ```
 
-Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
+Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) aan uw instantie van Cloud Service op.
 
 ## Veelgestelde vragen
 
