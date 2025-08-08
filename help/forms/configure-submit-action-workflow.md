@@ -1,13 +1,13 @@
 ---
-Title: How to integrate AEM workflow with an Adaptive Form?
-Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
+title: Hoe te om de werkschema van AEM met een Aangepast Vorm te integreren?
+description: Verken het proces van automatische werkstroominitiëring met AEM Forms Submit Action.
 keywords: AEM-workflow, Adaptief formulier integreren met AEM-workflow, Invoke AEM-workflow Handeling verzenden
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: dc9fc0c7d886d976f9b0b9daa955f98402341527
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Met de handeling **[!UICONTROL Invoke an AEM Workflow]** Verzenden wordt een ada
 
 >[!NOTE]
 >
->  Leer hoe te [ een werkschemamodel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
+>  Leer hoe te [ een werkschemamodel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 
 AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
 
@@ -47,7 +47,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!TAB  Component van de Stichting ]
 
-Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Stichting wordt gebaseerd, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Stichting wordt gebaseerd, voer de volgende stappen uit:
 
 1. Open het Adaptief formulier voor bewerking en ga naar de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
 1. Van de **[!UICONTROL Submit Action]** drop-down lijst, uitgezochte **legt Actie** als **[!UICONTROL Invoke an AEM workflow]** voor.
@@ -73,7 +73,7 @@ Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://exp
 
 >[!TAB  Component van de Kern ]
 
-Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Kern wordt gebaseerd, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een Aanpassings Vorm die op de Componenten van de Kern wordt gebaseerd, voer de volgende stappen uit:
 
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
 1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
@@ -102,7 +102,7 @@ Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://exp
 
 >[!TAB  Universele Redacteur ]
 
-Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) voor een Aangepaste Vorm authored in Universele Redacteur, voer de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [ het Werkschema van AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een Aangepaste Vorm authored in Universele Redacteur, voer de volgende stappen uit:
 
 1. Open het adaptieve formulier voor bewerking.
 1. Klik **uitgeven de uitbreiding van de Eigenschappen van de Vorm** op de redacteur.
@@ -110,8 +110,8 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Invoke an AEM Workflow]** voorlegt actie.
 

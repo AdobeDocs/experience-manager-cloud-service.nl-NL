@@ -1,14 +1,13 @@
 ---
-Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
-Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
+description: Leer hoe u gegevens van uw Adaptief formulier naar een SharePoint-opslagruimte verzendt, zoals een SharePoint-lijst of documentbibliotheek wanneer u het formulier verzendt.
 keywords: Hoe verbindt u SharePoint-lijst met een adaptief formulier?, Hoe verbindt u een SharePoint-documentbibliotheek met een adaptief formulier, Verzenden naar SharePoint, Een SharePoint-documentbibliotheekconfiguratie maken, Verzenden naar SharePoint gebruiken in een adaptief formulier, Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 role: User, Developer
-source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---

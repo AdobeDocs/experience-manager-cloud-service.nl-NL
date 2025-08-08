@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Marketo Engage with AEM Forms using Form wizard?
-Description: Learn how to integrate your Marketo Engage instance with AEM Forms using form wizard.
-Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Hoe kunt u Marketo Engage integreren met AEM Forms met de wizard Formulier?
+description: Leer hoe u uw Marketo Engage-exemplaar met AEM Forms kunt integreren met de wizard Formulier.
+keywords: Hoe kan ik een Marketo-exemplaar verbinden met formulier? Een formulier aansluiten op Marketo, een formulier integreren met Marketo Engage, een adaptief formulier integreren met een Marketo-exemplaar.
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/nl/docs/marketo/using/home) te integreren.
+Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/en/docs/marketo/using/home) te integreren.
 
 U kunt Marketo Engage verbinden met een adaptief formulier via de wizard Formulier, die het configuratieproces vereenvoudigt door u door elke stap te begeleiden. Het omvat het selecteren van sjablonen, stijlen en gegevensvelden en het instellen van gegevenstoewijzing om te controleren of uw formulier klaar is om te communiceren met Marketo Engage nadat het is gemaakt. Met de wizard Formulier kunt u het Adaptief formulier ook zodanig configureren dat gegevens bij verzending rechtstreeks naar Adobe Marketo Engage worden verzonden.
 
@@ -180,7 +180,7 @@ Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Eng
 
 ## Volgende stap
 
-U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/nl/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
+U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
 
 ## Verwante artikelen
 

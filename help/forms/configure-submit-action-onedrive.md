@@ -1,14 +1,13 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+description: Ontdek het gestroomlijnde proces voor het verbinden van AEM Forms met Microsoft&reg; OneDrive met de handeling Verzenden naar OneDrive verzenden. Leer de stapsgewijze handleiding voor het configureren van OneDrive en het instellen van verzendacties voor efficiënte gegevensopslag en -ophaling
 keywords: AEM Forms OneDrive-integratie, verbinding maken met Microsoft OneDrive, OneDrive-configuratie met AEM-formulieren
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 role: User, Developer
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '876'
 ht-degree: 1%
 
 ---
@@ -41,7 +40,7 @@ Voer de volgende stappen uit als OneDrive wordt geconfigureerd voor AEM Forms-ve
 
 AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
-1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® OneDrive]**
+1. Ga naar uw **1} instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® OneDrive]**
 1. Nadat u de **[!UICONTROL Microsoft® OneDrive]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL OneDrive Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De OneDrive-configuratietovenaar wordt weergegeven.
@@ -117,8 +116,8 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 1. Klik **Verzending** tabel en selecteer **[!UICONTROL Submit to OneDrive]**.
    ![ OneDrive GIF ](/help/forms/assets/submit-to-onedrive-ue.png)
 Als u **sparen Bijlagen met Oorspronkelijke Naam** selecteert, worden de gehechtheid opgeslagen in de omslag gebruikend hun originele filenames. U kunt Document of Record (DoR) ook opslaan in de Azure Blob Storage.

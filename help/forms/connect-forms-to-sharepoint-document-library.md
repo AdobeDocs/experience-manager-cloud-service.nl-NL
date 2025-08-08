@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Adaptive Form to a SharePoint Document Library?
+title: Hoe te om Aangepast Vorm aan een Bibliotheek van het Document van SharePoint te integreren?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Een verbinding maken met een SharePoint-documentbibliotheek voor een adaptief formulier, Verzenden naar SharePoint, Een SharePoint-documentbibliotheekconfiguratie maken, De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier, AEM Forms Data Model SharePoint Document Library, Forms Data Model SharePoint Document Library, Forms Data Model integreren in de SharePoint Document Library
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ U kunt als volgt de **[!UICONTROL Submit to SharePoint Document Library]** Hande
 
 AEM Forms verbinden met uw Microsoft® SharePoint Document Library-opslagruimte:
 
-1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
+1. Ga naar uw **1} instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
 1. Nadat u de **[!UICONTROL Microsoft® SharePoint]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL SharePoint Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
@@ -115,8 +115,8 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Submit to SharePoint]** voorlegt actie.
    ![ SharePoint GIF ](/help/forms/assets/submit-to-sharepoint-ue.png)

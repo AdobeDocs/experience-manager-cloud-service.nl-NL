@@ -1,10 +1,10 @@
 ---
-title: Hoe te om een Redirect Pagina of Dank u bericht te vormen?
+title: Hoe te om een Redirect Pagina te vormen of Dank u bericht
 description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of aan een webpagina kunnen worden opnieuw gericht die de vormauteurs kunnen vormen terwijl het creëren van het formulier.
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In formulieren die zijn gemaakt met de Universal Editor kunnen formulierauteurs configureren wat er gebeurt nadat een gebruiker een formulier heeft verzonden. U kunt een bedankbericht weergeven of de gebruiker omleiden naar een specifieke webpagina via het tabblad Verzending in de extensie Formuliereigenschappen bewerken.
 
-U kunt het Thankyou-bericht of Rediect URLs voor vormen vormen vormen die in de Universele Redacteur worden gecreeerd gebruikend het **Verzending** lusje van de **3&rbrace; uitbreiding van de Eigenschappen van de Vorm van AEM.**
+U kunt het Thankyou-bericht of Rediect URLs voor vormen vormen vormen die in de Universele Redacteur worden gecreeerd gebruikend het **Verzending** lusje van de **3} uitbreiding van de Eigenschappen van de Vorm van AEM.**
 
 ## Vereisten
 
@@ -27,8 +27,8 @@ U kunt de verzendactie voor vormen vormen vormen die in de Universele Redacteur 
 
 >[!NOTE]
 >
->* Als u niet het **pictogram van de Eigenschappen van de Vorm** in uw Universele interface van de Redacteur ziet, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
->* Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+>* Als u niet het **pictogram van de Eigenschappen van de Vorm** in uw Universele interface van de Redacteur ziet, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+>* Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Hoe te om Redirect te vormen of Dank u Bericht?
 

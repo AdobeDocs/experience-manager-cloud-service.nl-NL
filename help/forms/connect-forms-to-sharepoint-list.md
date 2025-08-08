@@ -1,14 +1,13 @@
 ---
-Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: Hoe te om de lijst van SharePoint voor een toevoegend formulier te verbinden?, voorleggen aan SharePoint, creeer een Configuratie van de Lijst van SharePoint, gebruik de Verzenden aan SharePoint actie in een Aangepast Vorm, verbind een Aangepast Formulier met Microsoft&reg; de Lijst van SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---

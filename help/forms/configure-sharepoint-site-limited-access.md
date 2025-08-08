@@ -1,16 +1,16 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: Hoe te om een Plaats van SharePoint met beperkte toegang te vormen gebruikend vergunningswerkingsgebied?
+description: Leer hoe u SharePoint Site met beperkte toegang configureert met behulp van het machtigingsbereik.
 keywords: Hoe te om de Plaats van SharePoint met beperkte toegang te vormen?, vorm SharePoint met beperkte toegang, Gebruikend vergunningswerkingsgebied om toegang voor de Plaats van SharePoint te beperken.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 <span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
@@ -37,7 +37,7 @@ Voordelen om beperkte toegang tot de SharePoint-site te bieden:
 Voer de onderstaande stappen uit om SharePoint-sites met beperkte toegang te configureren met behulp van het machtigingsbereik:
 
 1. [Maak een toepassing met de ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
-1. [Reeks vergunningswerkingsgebied in AEM geval](#set-the-authorization-scope-at-aem-instance)
+1. [Het bereik van autorisaties instellen in AEM-instantie](#set-the-authorization-scope-at-aem-instance)
 
 ### Een toepassing maken met de beperkte machtiging in de Azure-portal
 
@@ -54,11 +54,11 @@ Voor het gebruik van de API-machtiging `Sites.Selected` is een toepassing vereis
 
 Verwijs naar het [ blogartikel - ontwikkelt Toepassingen die de toestemmingen Sites.Selected voor SPO plaatsen ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) voor instructies bij het ontwikkelen van toepassingen gebruiken die `Sites.Selected` toestemmingen voor de Plaatsen van SharePoint Online gebruiken.
 
-### Reeks vergunningswerkingsgebied in AEM geval
+### Het bereik van autorisaties instellen in AEM-instantie
 
 Om een beperkte toegang tot een Microsoft SharePoint-site mogelijk te maken, is het van essentieel belang de reikwijdte van de vergunning correct vast te stellen. Om het vergunningswerkingsgebied te plaatsen en AEM Forms aan uw opslag van Microsoft® SharePoint te verbinden:
 
-1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >**&#x200B;[!UICONTROL Tools]&#x200B;**>**&#x200B;[!UICONTROL Cloud Services]&#x200B;**>**&#x200B;[!UICONTROL Microsoft® SharePoint]&#x200B;**.**
+1. Ga naar uw **1} instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
 1. Nadat u de **[!UICONTROL Microsoft® SharePoint]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL SharePoint Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
