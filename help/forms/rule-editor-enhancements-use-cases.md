@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Verbeteringen in de regeleditor en hoofdletters/kleine letters gebruiken
 
-<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>.
+<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>.
 
 Dit artikel introduceert de meest recente verbeteringen aan de regeleditor in Adaptive Forms. Deze updates zijn ontworpen om u te helpen formuliergedrag gemakkelijker te definiëren, zonder aangepaste code te schrijven, en om een dynamischere, responsieve en gepersonaliseerde formulierervaring te maken.
 
@@ -59,7 +59,7 @@ In de bovengenoemde regel, controleert de **Volgende** knoop of de gebieden in d
 
 >[!NOTE]
 >
-> U kunt **gebruiken bevestigt ()** methode op vormen, fragmenten, of individuele gebieden. Wanneer een fragment in een formulier wordt opgenomen, worden zowel het formulier als het fragment als opties weergegeven in de validatiecontext. In dit geval verwijst het fragment naar de velden in het fragment, terwijl het formulier verwijst naar het bovenliggende formulier waarin het fragment is ingesloten.
+>U kunt **gebruiken bevestigt ()** methode op vormen, fragmenten, of individuele gebieden. Wanneer een fragment in een formulier wordt opgenomen, worden zowel het formulier als het fragment als opties weergegeven in de validatiecontext. In dit geval verwijst het fragment naar de velden in het fragment, terwijl het formulier verwijst naar het bovenliggende formulier waarin het fragment is ingesloten.
 
 ## DownloadDor als OOTB-functie in de Rule Editor
 
@@ -67,7 +67,7 @@ Gebruikend **DownloadDor ()** out-of-the-box (OOTB) functie in de Redacteur van 
 
 >[!NOTE]
 >
-> Als de vorm niet voor Document van Verslag wordt gevormd, wordt een foutenmelding getoond wanneer de regel gebruikend **downloadDoR ()** functie wordt toegepast op de knoop.
+>Als de vorm niet voor Document van Verslag wordt gevormd, wordt een foutenmelding getoond wanneer de regel gebruikend **downloadDoR ()** functie wordt toegepast op de knoop.
 
 **Scenario**: Een overheidsagentschap verstrekt een digitale toepassingsvorm voor het uitgeven van certificaten. Nadat de aanvrager het formulier heeft ingediend, verlangt hij vaak een kopie van het ingevulde formulier ter registratie of deelt hij dit met een andere dienst. Om de gebruikerservaring te verbeteren, wil het agentschap aanvragers de mogelijkheid bieden om een Document of Record (DoR) onmiddellijk na de indiening of in een stadium vóór de definitieve indiening te downloaden.
 
@@ -171,7 +171,7 @@ Adaptieve Forms ondersteunt dynamische regeluitvoering met behulp van externe pa
 | Type parameter | Ondersteunde opties | Beschrijving | Voorbeeldwaarde |
 | --- | --- | --- | ---|
 | Query-parameter | `ref` (alleen tekenreekswaarden) | Algemeen sleutelwaardepaar in URL na `?` | `?ref=partner123` |
-| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1&rbrace; UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
+| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1} UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
 | URL-parameter | Hostnaam <br> Weg | Hiermee worden structurele componenten van de formulier-URL opgehaald | `hostname=www.example.com`, `path=/signup` |
 | Browserparameter | Browser van de Agent van de Agent <br> Browser Taal <br> Browser Platform | Waarden afgeleid van de browser of het apparaat van de gebruiker | `Browser Agent=Mozilla`, `Language=en-US` |
 

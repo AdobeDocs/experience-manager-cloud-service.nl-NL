@@ -3,7 +3,7 @@ title: Een Edge Delivery-site configureren voor het gebruik van een externe Git-
 description: Leer hoe u een Edge Delivery-site koppelt aan een particuliere of zakelijke Git-opslagplaats.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 239ee3021057dd108d18ab2d7729680692223403
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -31,7 +31,7 @@ U kunt uw Edge Delivery-site zo configureren dat code wordt opgehaald uit elke p
 
 1. In het linkerspoor, onder de **rubriek van het Programma**, klik **![pictogram van het Overzicht ](/help/implementing/cloud-manager/edge-delivery/assets/overview.svg) Overzicht**.
 
-1. Voor de **pagina van het Overzicht van het 0&rbrace; Programma, klik** Edge Delivery **tabel.**
+1. Voor de **pagina van het Overzicht van het 0} Programma, klik** Edge Delivery **tabel.**
 
 1. In de **plaatsen van Edge Delivery** lijst, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan plaats u wilt vormen om een externe repo te gebruiken, dan **uw eigen Git** brengen.
 

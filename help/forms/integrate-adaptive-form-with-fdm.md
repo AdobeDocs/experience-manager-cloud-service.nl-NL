@@ -3,7 +3,7 @@ title: Hoe te om het Model van de Gegevens van de Vorm (FDM) voor een vorm met A
 description: Leer formulieren te maken op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -66,15 +66,19 @@ Voer de volgende stappen uit om Formuliergegevensmodel te configureren met Adapt
 
 1. Open het adaptieve formulier voor bewerking.
 1. Klik **uitgeven de uitbreiding van de Eigenschappen van de Vorm** op de redacteur.
-Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
+
+   Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 1. Klik **Verzending** tabel en selecteer **[!UICONTROL Submit using Form Data Model]**.
+
    ![ OneDrive GIF ](/help/forms/assets/submit-uisng-fdm-ue.png)
 Als u **sparen Bijlagen met Oorspronkelijke Naam** selecteert, worden de gehechtheid opgeslagen in de omslag gebruikend hun originele filenames. U kunt Document of Record (DoR) ook opslaan in de Azure Blob Storage.
+
 1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
 1. Klikken **[!UICONTROL Save&Close]**
 

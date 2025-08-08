@@ -4,7 +4,7 @@ description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In formulieren die zijn gemaakt met de Universal Editor kunnen formulierauteurs configureren wat er gebeurt nadat een gebruiker een formulier heeft verzonden. U kunt een bedankbericht weergeven of de gebruiker omleiden naar een specifieke webpagina via het tabblad Verzending in de extensie Formuliereigenschappen bewerken.
 
-U kunt het Thankyou-bericht of Rediect URLs voor vormen vormen vormen die in de Universele Redacteur worden gecreeerd gebruikend het **Verzending** lusje van de **3&rbrace; uitbreiding van de Eigenschappen van de Vorm van AEM.**
+U kunt het Thankyou-bericht of Rediect URLs voor vormen vormen vormen die in de Universele Redacteur worden gecreeerd gebruikend het **Verzending** lusje van de **3} uitbreiding van de Eigenschappen van de Vorm van AEM.**
 
 ## Vereisten
 
@@ -27,8 +27,8 @@ U kunt de verzendactie voor vormen vormen vormen die in de Universele Redacteur 
 
 >[!NOTE]
 >
-> * Als u niet het **pictogram van de Eigenschappen van de Vorm** in uw Universele interface van de Redacteur ziet, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-> * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+> * Als u niet het **pictogram van de Eigenschappen van de Vorm** in uw Universele interface van de Redacteur ziet, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+> * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Hoe te om Redirect te vormen of Dank u Bericht?
 
@@ -56,5 +56,3 @@ U kunt als volgt de omleidingspagina of het bedankbericht configureren:
 ![ bedankt ](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 Formulierauteurs kunnen een pagina configureren voor elk formulier, waarnaar de formuliergebruikers worden omgeleid na het verzenden van een formulier.
-
-
