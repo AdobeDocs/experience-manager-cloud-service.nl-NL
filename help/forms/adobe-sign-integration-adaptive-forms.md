@@ -84,7 +84,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
    >[!NOTE]
    > U kunt de bereikmodifier wijzigen van `self` in `account` rechtstreeks vanuit de gebruikersinterface van AEM, zoals in stap 12 wordt beschreven.
 
-   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Acrobat Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Acrobat Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2&rbrace; de ontwikkelaarsdocumentatie van de toepassing &lbrace;vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
 
    ![ OAuth Config ](/help/forms/assets/oauthconfig-new.png)
 
@@ -225,13 +225,13 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
    > * Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over de URL van de Adobe Sign Auth en Access Token URL.
 
-1. Gebruik de geloofsbrieven die door Adobe Acrobat Sign voor de vertegenwoordiger van de Oplossing van de Overheid ([ Adobe Professional Services teamlid ]) in de vorige sectie als [**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** worden gedeeld.
+1. Gebruik de geloofsbrieven die door Adobe Acrobat Sign voor de vertegenwoordiger van de Oplossing van de Overheid ([ Adobe Professional Services teamlid ]) in de vorige sectie als &lbrack;**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** worden gedeeld.
 
 1. Selecteer de optie **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** om bestanden die zijn gekoppeld aan een adaptief formulier, toe te voegen aan het corresponderende [!DNL Adobe Acrobat Sign] -document dat ter ondertekening is verzonden.
 
