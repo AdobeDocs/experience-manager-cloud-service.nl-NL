@@ -104,7 +104,7 @@ Het bestand `_range.json` ziet er na het toevoegen van de componentdefinitie als
 
 >[!NOTE]
 >
-> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
+> Alle componenten met betrekking tot formulieren volgen dezelfde aanpak als Sites wanneer u blokken toevoegt aan de Universal Editor. U kunt naar [ verwijzen Creërend Blokken Instrumented voor gebruik met het Universele artikel van de Redacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) voor meer informatie.
 
 ### &#x200B;2. De eigenschappen van de aangepaste component definiëren voor ontwerpen
 
@@ -161,7 +161,7 @@ De aangepaste component bevat een componentmodel dat aangeeft welke eigenschappe
 
    >[!NOTE]
    >
-   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Om een nieuw gebied aan de **dialoog van het Bezit** van een douanecomponent toe te voegen, houd aan het [ bepaalde schema ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    U kunt [ douaneeigenschappen ](#adding-custom-properties-for-your-custom-component) aan een douanecomponent ook toevoegen om zijn functionaliteit uit te breiden.
 
