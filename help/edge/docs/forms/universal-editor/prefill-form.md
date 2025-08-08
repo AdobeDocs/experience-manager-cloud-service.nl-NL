@@ -154,7 +154,7 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
    ![ malplaatje van Edge Delivery Services ](/help/edge/assets/create-eds-forms.png)
 
-1. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm {**
+1. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm &lbrace;**
 1. Geef de formulierdetails op:
 
    - **Naam**: Ga een beschrijvende naam voor uw vorm in
@@ -186,7 +186,7 @@ De vormelementen van uw FDM verschijnen in het **Datasource** lusje van **Browse
 
 ### Stap 5: Gegevensbinding toevoegen aan formuliervelden
 
-1. Selecteer gegevenselementen van het **lusje van 0} Gegevensbron {**
+1. Selecteer gegevenselementen van het **lusje van 0&rbrace; Gegevensbron &lbrace;**
 2. Klik **toevoegen** of belemmering-en-dalingselementen om uw vorm te bouwen
 
    ![ Schermafbeelding van Universele Redacteur die op schema-gebaseerde vorm ](/help/edge/docs/forms/universal-editor/assets/ue-form.png) tonen
@@ -210,7 +210,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 1. **de Uitbreiding van de Eigenschappen van de Vorm van AEM**
 
    - Open **Extension Manager** in Universele Redacteur
-   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0} AEM toe**
+   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0&rbrace; AEM toe**
 
    ![ de eigenschappen van de Vorm pictogram ](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
@@ -249,7 +249,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 3. Kies **Voorproef als HTML**
 4. Test prefilling door parameters aan URL toe te voegen:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Voorbeeld:**
 
@@ -269,7 +269,7 @@ Het formulier moet automatisch gegevens vullen op basis van de opgegeven paramet
 
     &quot;
     
-    {
+    &lbrace;
      &quot;afBoundData&quot;: 
      &quot;user&quot;: 
      &quot;firstName&quot;: &quot;John&quot;, 
@@ -389,7 +389,7 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 +++Richtlijnen voor gebruikerservaring
 
 - **verstrekken terugkoppelt**: Toon ladingsindicatoren tijdens gegevenshaal
-- **elegant de fouten van het 0} Handvat {: De nuttige foutenmeldingen van de vertoning**
+- **elegant de fouten van het 0&rbrace; Handvat &lbrace;: De nuttige foutenmeldingen van de vertoning**
 - **staat met voeten treedt** toe: Laat gebruikers vooraf ingevulde gegevens wijzigen
 - **handhaaf consistentie**: Gebruik verenigbaar prefill gedrag over vormen
 
