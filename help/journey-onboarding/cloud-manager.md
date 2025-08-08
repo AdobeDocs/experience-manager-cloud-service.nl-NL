@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronn
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In dit deel van de [ onboarding reis ](overview.md), leert u hoe te om tot Cloud
 
 ## Doelstelling {#objective}
 
-In het vorige artikel in dit onboarding reis, [ toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md), verleende u uw team AEMaaCS de juiste rollen. Leer nu hoe u toegang krijgt tot Cloud Manager, zodat u uw projectbronnen kunt instellen die uw team gebruikt.
+In het vorige artikel in dit onboarding reis, [ toewijzend de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md), verleende u uw team AEMaaCS de juiste rollen. Nu, leer hoe te om tot Cloud Manager toegang te hebben zodat u uw projectmiddelen kunt opstelling die uw team van plan is te gebruiken.
 
-Aangezien u de vorige stap hebt uitgevoerd, heeft uw team toegang tot Cloud Manager. Cloud Manager wordt gebruikt om uw projectmiddelen zoals programma&#39;s en milieu&#39;s tot stand te brengen en te beheren.
+Aangezien u de vorige stap hebt uitgevoerd, heeft uw team toegang tot Cloud Manager. Cloud Manager wordt gebruikt om uw projectmiddelen, zoals programma&#39;s en milieu&#39;s tot stand te brengen en te beheren.
 
 Nadat u dit document hebt gelezen, hebt u het volgende nodig:
 
@@ -28,21 +28,21 @@ Nadat u dit document hebt gelezen, hebt u het volgende nodig:
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert als één toegangspunt voor uw team. Het steunt klanten met ondernemingsontwikkelingsmontages met zijn speciaal gebouwde CI/CD pijpleidingen, die worden uitgerust om grondig te verzekeren en hoogste codekwaliteit om uitzonderlijke ervaringen te leveren. Cloud Manager biedt alles wat nodig is om op zelfbediening aan de slag te gaan, inclusief de mogelijkheid om cloudbronnen en -omgevingen te maken.
+Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert als één toegangspunt voor uw team. Het steunt klanten met ondernemingsontwikkelingsmontages met zijn speciaal gebouwde CI/CD pijpleidingen, die worden uitgerust om grondig te verzekeren en hoogste codekwaliteit om uitzonderlijke ervaringen te leveren. Cloud Manager biedt alles wat nodig is om op zelfbediening aan de slag te gaan, zoals de mogelijkheid om cloudbronnen en -omgevingen te maken.
 
-Typisch is een teamlid dat aan het **productprofiel van de Bedrijfs eigenaar** wordt toegewezen verantwoordelijk voor het toevoegen van uw wolkenmiddelen zoals programma&#39;s en milieu&#39;s. Dit individu begrijpt de bedrijfsbehoeften en wie de eerste Cloud Manager-configuratie voltooit.
+Typisch is een teamlid dat aan het **productprofiel van de Bedrijfs eigenaar** wordt toegewezen verantwoordelijk voor het toevoegen van uw wolkenmiddelen, zoals programma&#39;s en milieu&#39;s. Dit individu begrijpt de bedrijfsbehoeften en wie de eerste Cloud Manager-configuratie voltooit.
 
 Voor deze onboarding reis, wijst u, als systeembeheerder, reeds aan het **BedrijfsEigenaar** productprofiel toe en kan opstelling de wolkenmiddelen. Afhankelijk van daadwerkelijke projectvereisten, kunnen de bedrijfseigenaars of niet het zelfde als de systeembeheerder zijn.
 
 ## Cloud Manager openen als systeembeheerder en bedrijfseigenaar {#access-sysadmin-bo}
 
-Alvorens de teamleden die u aan de **rol van de Bedrijfs eigenaar** toewees tot wolkenmanager toegang hebben en beginnen wolkenmiddelen te creëren, moet de systeembeheerder de **rol van de Bedrijfs Eigenaar** worden toegewezen. Ze moeten zich ook aanmelden bij Cloud Manager, zoals u in de vorige stap op deze instapreis hebt gedaan.
+Vóór de teamleden die u aan de **rol van de Bedrijfs eigenaar** toewees kunnen tot Cloud Manager toegang hebben en beginnen wolkenmiddelen te creëren, moet de systeembeheerder de **rol van BedrijfsEigenaar** worden toegewezen. Ze moeten zich ook aanmelden bij Cloud Manager, zoals u in de vorige stap op deze instapreis hebt gedaan.
 
 1. Zorg ervoor dat u, als systeembeheerder, de **toegewezen rol van de BedrijfsEigenaar** hebt.
 
-   * Terugkeer aan de vorige stap in deze reis, [ wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) toe, voor meer informatie over het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
+   Terugkeer aan de vorige stap, [ wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) toe, voor details bij het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
 
-1. Teken in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en wordt voorgesteld van de normale het landen pagina.
+1. Teken in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/).
 
 Door met succes binnen als systeembeheerder met de **rol van de BedrijfsEigenaar te ondertekenen**, initialiseert u Cloud Manager voor gebruik door de andere gebruikers met de **BedrijfsEigenaar** rol. Je ontvangt geen bevestiging of bericht. Eenvoudig aanmelden is voldoende.
 
@@ -63,13 +63,13 @@ De gebruikers met de **rol van de BedrijfsEigenaar** ontvangen een welkome e-mai
 
 1. U wordt naar de bestemmingspagina van Cloud Manager geleid.
 
-Alternatief, kunt u aan Cloud Manager **Programma&#39;s en de pagina van Producten** van de homepage van Adobe Experience Cloud ook navigeren door deze stappen te volgen
+Alternatief, kunt u aan Cloud Manager **pagina van Programma&#39;s en van Producten** van de homepage van Adobe Experience Cloud navigeren gebruikend deze stappen.
 
 1. Navigeer rechtstreeks aan [ Adobe Experience Cloud ](https://experience.adobe.com) en login gebruikend uw Adobe ID.
 
-1. Van de homepage van Adobe Experience Cloud, uitgezochte **Experience Manager** om de AEM homepage te openen.
+1. Van de homepage van Adobe Experience Cloud, uitgezochte **Experience Manager** om de homepage van AEM te openen.
 
-   ![ homepage van het Experience Cloud ](/help/journey-onboarding/assets/setup-resources2.png)
+   ![ homepage van Experience Cloud ](/help/journey-onboarding/assets/setup-resources2.png)
 
 1. Op de **Cloud Manager** tegel, uitgezochte **Lancering**.
 
@@ -101,7 +101,7 @@ Als er programma&#39;s in uw organisatie aanwezig zijn, wordt op de landingspagi
 
 ### Wanneer een Programma bestaat en u een Beheerder van het Systeem bent {#programs-exist-sysadmin}
 
-Als de programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent, dan uw het landen paginasvertoningen **leiden de knoop van de Toegang** samen met **voegt de optie van het Programma** toe.
+Als de programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent, dan toont uw landende pagina **de Manage knoop van de Toegang** samen met **voegt de optie van het Programma** toe.
 
 ![ de beheerdermening van het Systeem ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
@@ -133,5 +133,5 @@ Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de in
 
 * [ Inleiding aan Cloud Manager ](/help/onboarding/cloud-manager-introduction.md) -
 Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
-* [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.
+* [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) - leer hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van Adobe kunnen verlenen en beperken.
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->
