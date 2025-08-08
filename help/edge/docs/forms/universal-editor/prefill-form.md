@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: vooraf instelbaar adaptief formulier, adaptieve services voor randweergave van formulieren, adaptief automatisch invullen van formulier
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 0%
@@ -142,7 +142,7 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
        >[!NOTE] 
        >
-       > Leer meer over het vormen van de diensten FDM in [ Werk met het Model van de Gegevens van de Vorm (FDM) ](/help/forms/work-with-form-data-model.md).
+   > Leer meer over het vormen van de diensten FDM in [ Werk met het Model van de Gegevens van de Vorm (FDM) ](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -156,7 +156,7 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
        ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
    
-4. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm &lbrace;**
+4. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm {**
 5. Geef de formulierdetails op:
    - **Naam**: Ga een beschrijvende naam voor uw vorm in
    - **Titel**: Verstrek een gebruikersvriendelijke titel
@@ -187,7 +187,7 @@ De vormelementen van uw FDM verschijnen in het **Datasource** lusje van **Browse
 
 ### Stap 5: Gegevensbinding toevoegen aan formuliervelden
 
-1. Selecteer gegevenselementen van het **lusje van 0&rbrace; Gegevensbron &lbrace;**
+1. Selecteer gegevenselementen van het **lusje van 0} Gegevensbron {**
 2. Klik **toevoegen** of belemmering-en-dalingselementen om uw vorm te bouwen
 
    ![ Schermafbeelding van Universele Redacteur die op schema-gebaseerde vorm ](/help/edge/docs/forms/universal-editor/assets/ue-form.png) tonen
@@ -209,7 +209,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 
 1. **de Uitbreiding van de Eigenschappen van de Vorm van AEM**
    - Open **Extension Manager** in Universele Redacteur
-   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0&rbrace; AEM toe**
+   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0} AEM toe**
 
    ![ de eigenschappen van de Vorm pictogram ](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
@@ -267,7 +267,7 @@ Het formulier moet automatisch gegevens vullen op basis van de opgegeven paramet
 
     &quot;
     
-    &lbrace;
+    {
      &quot;afBoundData&quot;: 
      &quot;user&quot;: 
      &quot;firstName&quot;: &quot;John&quot;, 
@@ -383,7 +383,7 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 +++Richtlijnen voor gebruikerservaring
 
 - **verstrekken terugkoppelt**: Toon ladingsindicatoren tijdens gegevenshaal
-- **elegant de fouten van het 0&rbrace; Handvat &lbrace;: De nuttige foutenmeldingen van de vertoning**
+- **elegant de fouten van het 0} Handvat {: De nuttige foutenmeldingen van de vertoning**
 - **staat met voeten treedt** toe: Laat gebruikers vooraf ingevulde gegevens wijzigen
 - **handhaaf consistentie**: Gebruik verenigbaar prefill gedrag over vormen
 
@@ -431,8 +431,6 @@ Verificatie is afhankelijk van de configuratie van de gegevensbron. Voor op FDM-
 U kunt per formulier één primaire vooraf ingevulde service configureren. U kunt echter verschillende gegevensbronnen in één formuliergegevensmodel combineren voor een vergelijkbare functionaliteit.
 
 +++
-
-=
 
 ## Verwante onderwerpen
 
