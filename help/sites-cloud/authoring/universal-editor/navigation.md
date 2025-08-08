@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
+source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1782'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
 1. Meld u aan bij uw AEM as a Cloud Service-ontwerpinstantie.
-1. Gebruik de [**console van 1&rbrace; Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Gebruik de [**console van 1} Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Bewerk de pagina.
 1. De Universal Editor wordt geopend om de geselecteerde pagina te bewerken.
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[&#128279;](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Direct toegang {#accessing-directly}
 
@@ -79,7 +79,7 @@ De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker d
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -154,10 +154,6 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [ moet plaatsen.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![ knoop van de kopbalmontages van de Authentificatie ](assets/authentication-header-settings.png)
-
->[!NOTE]
->
->Deze knop is standaard verborgen, omdat deze in de meeste gevallen van beperkte waarde is. Als u deze nodig hebt, stuurt u een e-mail naar de Adobe Customer Success Manager via het e-mailadres dat bij uw Adobe ID hoort.
 
 #### Emulatorinstellingen {#emulator}
 

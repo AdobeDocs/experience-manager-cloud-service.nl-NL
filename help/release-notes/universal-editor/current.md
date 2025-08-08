@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.07.09
-description: Dit zijn de releaseopmerkingen voor de release 2025.07.09 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.07.31
+description: Dit zijn de releaseopmerkingen voor de release 2025.07.31 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.07.09 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.07.31 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 9 juli 2025 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 31 juli 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,9 +22,15 @@ Dit zijn de opmerkingen bij de release van 9 juli 2025 van de Universal Editor.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [ wanneer het klikken van **voegt** toolbarknoop op containers toe, ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) als slechts één componententype wordt toegestaan, wordt het opgenomen onmiddellijk zonder selectie van het drop-down menu te vereisen.
-* [ de optie van de authentificatiekopbaltoolbar ](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) is geplaatst achter een eigenschapknevel, aangezien het in de meeste gevallen niet nuttig is.
-* [ aangezien container het nesten niet voor multi-gebieden in het eigenschappen paneel wordt toegelaten, ](/help/implementing/universal-editor/field-types.md#fields) de teruggevende routine nu filters uit genestelde containers van de gebiedslijst om ongeldig het nesten te verhinderen.
+* [ de optie van de authentificatiekopbal ](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) blijft achter een eigenschapknevel zoals geïntroduceerd in [ versie 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
+   * Deze optie is nu echter standaard ingeschakeld.
+* Nieuwe eigenschappen voor [ vroege adopters van RTE ](#new-rte)
+   * Ondersteuning voor de donkere modus is toegevoegd.
+   * Ondersteuning voor tekstuitlijning is toegevoegd.
+      * Standaard uitgeschakeld en alleen beschikbaar voor projecten zonder kop
+   * Ondersteuning voor inspringing is toegevoegd.
+      * Standaard uitgeschakeld en alleen beschikbaar voor projecten zonder kop
+   * Onderbrekingen (`<br>`) worden nu ingevoegd op shift+enter.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -43,14 +49,12 @@ Ongedaan maken en opnieuw uitvoeren is nu beschikbaar voor auteurs van inhoud in
 
 ## Overige verbeteringen {#other-improvements}
 
-* Er is een probleem opgelost waarbij het verwijderen van een enkele elementverwijzing niet mogelijk was bij bewerking via de vastgoedrail.
-* Er is een probleem opgelost waarbij het deelvenster Eigenschappen oneindig zou worden geladen omdat elementverwijzingen automatisch naar arrays werden geconverteerd, waardoor een oneindige laadstatus ontstond.
-   * De referentiewaarden van elementen worden nu als zodanig opgeslagen, zonder automatische omzetting in arrays.
-* Er is een probleem opgetreden waarbij in het deelvenster Eigenschappen geen velden werden weergegeven wanneer een model was gedefinieerd, maar geen inhoud bevatte.
-   * Hierdoor werd een oneindige laadstatus voor het deelvenster Eigenschappen veroorzaakt voor lege detailreacties, zoals lege inhoudsfragmenten.
-* De configuratie ESLint is refactored voor verenigbaarheid met versie 9, met inbegrip van bijgewerkte regels en plugin steun.
+* Correcties voor RTE voor vroegtijdige adoptie
+   * Wanneer u op Enter drukt, wordt er een nieuw lijstitem (`<li>`) gemaakt in een lijst.
+* Video&#39;s worden nu correct bijgewerkt wanneer externe DAM wordt gebruikt.
+* Servicesupport toegevoegd voor 6.5 LTS.
 
 ## Afwijkingen {#deprecations}
 
-* De component `text-input` is nu officieel vervangen.
+* `text-input` en `text-area` componenten werden officieel verouderd met [ versie 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
    * Gebruik in `model-definition.json` de tekstcomponent om tekstinvoer voor het deelvenster Eigenschappen te maken.
