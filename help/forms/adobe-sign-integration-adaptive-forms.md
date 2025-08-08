@@ -5,9 +5,9 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=nl-NL#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Acrobat Sign] maakt workflows voor e-handtekeningen mogelijk voor adaptieve Forms- en AEM-workflows. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
@@ -37,7 +37,7 @@ U hebt de volgende instellingen nodig om [!DNL Adobe Acrobat Sign] te integreren
 1. Een actieve [ de ontwikkelaarsrekening van Adobe Acrobat Sign.](https://www.adobe.com/acrobat/business/developer-form.html)
 1. Een [ toepassing van Adobe Acrobat Sign API ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. Referenties (client-id en clientgeheim) van [!DNL Adobe Acrobat Sign] API-toepassing.
-1. (Slechts voor op identiteitskaart-Gebaseerde authentificatie van de Regering) [ laat de authentificatiemethode ](https://helpx.adobe.com/nl/sign/using/adobesign-authentication-government-id.html#AuditReport) voor de authentificatie van identiteitskaart van de Regering toe.
+1. (Slechts voor op identiteitskaart-Gebaseerde authentificatie van de Regering) [ laat de authentificatiemethode ](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) voor de authentificatie van identiteitskaart van de Regering toe.
 
 ### AEM Forms-auteur verbinden en instanties publiceren met Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
@@ -84,7 +84,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/nl/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
    >[!NOTE]
    > U kunt de bereikmodifier wijzigen van `self` in `account` rechtstreeks vanuit de gebruikersinterface van AEM, zoals in stap 12 wordt beschreven.
 
-   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Acrobat Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2&rbrace; de ontwikkelaarsdocumentatie van de toepassing &lbrace;vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Acrobat Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
 
    ![ OAuth Config ](/help/forms/assets/oauthconfig-new.png)
 
@@ -119,7 +119,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
 1. Selecteer de optie **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** om bestanden die zijn gekoppeld aan een adaptief formulier, toe te voegen aan het corresponderende [!DNL Adobe Acrobat Sign] -document dat ter ondertekening is verzonden.
 
-1. Selecteer **[!UICONTROL Connect to Adobe Acrobat Sign]**. Wanneer ertoe aangezet voor geloofsbrieven, verstrek **gebruikersbenaming** en **wachtwoord** van de gebruikte rekening terwijl het creëren van [!DNL Adobe Acrobat Sign] toepassing. Klik op **[!UICONTROL Allow Access]** wanneer u wordt gevraagd om het document te bevestigen. `your developer account` Als de gegevens juist zijn en u [!DNL AEM Forms] toegang geeft tot uw [!DNL Adobe Acrobat Sign] -ontwikkelaarsaccount, verschijnt een succesbericht dat lijkt op het volgende.
+1. Selecteer **[!UICONTROL Connect to Adobe Acrobat Sign]**. Wanneer ertoe aangezet voor geloofsbrieven, verstrek **gebruikersbenaming** en **wachtwoord** van de gebruikte rekening terwijl het creëren van [!DNL Adobe Acrobat Sign] toepassing. Klik op `your developer account` wanneer u wordt gevraagd om het document te bevestigen. **[!UICONTROL Allow Access]** Als de gegevens juist zijn en u [!DNL AEM Forms] toegang geeft tot uw [!DNL Adobe Acrobat Sign] -ontwikkelaarsaccount, verschijnt een succesbericht dat lijkt op het volgende.
 
    ![ Succes van de Configuratie van de Wolk Adobe Acrobat Sign ](assets/adobe-sign-cloud-configuration-success.png)
 
@@ -201,7 +201,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
 1. Geef op het tabblad **[!UICONTROL General]** van de **[!UICONTROL Create Adobe Sign Configuration]** -pagina een **[!UICONTROL Name]** voor de configuratie op en selecteer **[!UICONTROL Next]** . U kunt optioneel een **[!UICONTROL Title]** opgeven en bladeren om een **[!UICONTROL Thumbnail]** voor de configuratie te selecteren. Klik op **[!UICONTROL Next]**.
 
-1. Selecteer [!DNL Adobe Acrobat Sign Solutions for Government] op het tabblad **[!UICONTROL Settings]** van de **[!UICONTROL Create Adobe Sign Configuration]** -pagina voor de optie **[!UICONTROL Select solution]** .
+1. Selecteer **[!UICONTROL Settings]** op het tabblad **[!UICONTROL Create Adobe Sign Configuration]** van de **[!UICONTROL Select solution]** -pagina voor de optie [!DNL Adobe Acrobat Sign Solutions for Government] .
 
 
    ![ Adobe Acrobat Sign Solutions voor Regering ](assets/adobe-sign-for-govt.png)
@@ -225,21 +225,23 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/nl/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
    > * Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over de URL van de Adobe Sign Auth en Access Token URL.
 
-1. Gebruik de geloofsbrieven die door Adobe Acrobat Sign voor de vertegenwoordiger van de Oplossing van de Overheid ([ Adobe Professional Services teamlid ]) in de vorige sectie als &lbrack;**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** worden gedeeld.
+1. Gebruik de geloofsbrieven die door Adobe Acrobat Sign voor de vertegenwoordiger van de Oplossing van de Overheid ([ Adobe Professional Services teamlid ]) in de vorige sectie als [**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** worden gedeeld.
 
 1. Selecteer de optie **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** om bestanden die zijn gekoppeld aan een adaptief formulier, toe te voegen aan het corresponderende [!DNL Adobe Acrobat Sign] -document dat ter ondertekening is verzonden.
 
-1. Selecteer **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt bij het maken van de [!DNL Adobe Acrobat Sign] -toepassing. Klik op **[!UICONTROL Allow Access]** wanneer u wordt gevraagd de toegang voor `your developer account` te bevestigen. Als de gegevens juist zijn en u [!DNL AEM Forms] toegang geeft tot uw [!DNL Adobe Acrobat Sign] -ontwikkelaarsaccount, verschijnt een succesbericht dat lijkt op het volgende.
+1. Selecteer **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt bij het maken van de [!DNL Adobe Acrobat Sign] -toepassing. Klik op `your developer account` wanneer u wordt gevraagd de toegang voor **[!UICONTROL Allow Access]** te bevestigen. Als de gegevens juist zijn en u [!DNL AEM Forms] toegang geeft tot uw [!DNL Adobe Acrobat Sign] -ontwikkelaarsaccount, verschijnt een succesbericht dat lijkt op het volgende.
 
    ![ Succes van de Configuratie van de Wolk Adobe Acrobat Sign ](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. Selecteer **[!UICONTROL Create]** om de configuratie te maken.
 
@@ -260,7 +262,7 @@ Standaard controleert de [!DNL Adobe Acrobat Sign] Scheduler-services de onderte
 
 Om het standaardinterval te veranderen, specificeer a [ cron uitdrukking ](https://en.wikipedia.org/wiki/Cron#CRON_expression) voor het {**bezit 2} sign.status.exp van de** configuratie van de Dienst van de Configuratie van Adobe Acrobat Sign **.**
 
-Bijvoorbeeld, om de configuratiedienst dagelijks bij 00 in werking te stellen:00 am, plaats het {**bezit 0} sign.status.exp van de** configuratie van de Dienst van de Configuratie van Adobe Acrobat Sign **om `0 0 0 1/1 * ? *` te specificeren.** In het volgende JSON-bestand wordt het voorbeeld weergegeven waarmee de configuratieservice dagelijks om 00:00 uur wordt uitgevoerd:
+Bijvoorbeeld, om de configuratiedienst dagelijks bij 00 :00 am in werking te stellen, plaats het {**bezit 1} sign.status.exp van de** configuratie van de Dienst van de Configuratie van Adobe Acrobat Sign **om** te specificeren. `0 0 0 1/1 * ? *` Het volgende JSON- dossier toont de steekproef om de configuratieservice dagelijks bij 00 :00 am in werking te stellen:
 
 ```json
 {
@@ -268,7 +270,7 @@ Bijvoorbeeld, om de configuratiedienst dagelijks bij 00 in werking te stellen:00
 }
 ```
 
-Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=nl-NL#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=nl-NL#deployment-process) aan uw instantie van Cloud Service op.
+Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van Cloud Service op.
 
 ## Veelgestelde vragen
 
