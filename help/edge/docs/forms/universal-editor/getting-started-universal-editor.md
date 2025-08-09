@@ -186,7 +186,7 @@ Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgev
 
     >[!NOTE] 
     > 
->Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+    >Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
 +++
 
@@ -661,7 +661,7 @@ Nu u een werkformulier hebt, kunt u:
 
 Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
 
-++ AEM CLI en lokale ontwikkeling instellen
++++ AEM CLI en lokale ontwikkeling instellen
 
 1. **installeer AEM CLI**
 

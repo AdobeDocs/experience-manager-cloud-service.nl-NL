@@ -147,6 +147,7 @@ Variabelen voor typografie en spatiëring bieden uitgebreide controle over de te
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ Lay-out- en structuurvariabelen
@@ -1108,6 +1109,7 @@ U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en s
   text-align: center;
 }
 ```
+
 +++
 
 +++ Stijlen op basis van veldnaam
@@ -1495,6 +1497,7 @@ main .form form .text-wrapper input {
   cursor: not-allowed;
 }
 ```
+
 +++
 
 ### **Component-Specifieke Beste praktijken**
