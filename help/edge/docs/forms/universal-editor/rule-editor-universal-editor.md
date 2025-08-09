@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '2598'
 ht-degree: 0%
 
 ---
@@ -15,778 +15,669 @@ ht-degree: 0%
 
 # Rule Editor voor Dynamic Forms in Universal Editor
 
-De Redacteur van de Regel in Universele Redacteur laat u toe om intelligente, dynamische vormen tot stand te brengen die op gebruikersinput in echt - tijd antwoorden. U kunt statische formulieren transformeren in interactieve ervaringen met voorwaardelijke veldzichtbaarheid, geautomatiseerde berekeningen en complexe bedrijfslogica, zonder code te schrijven.
+De Redacteur van de Regel staat auteurs toe om statische vormen in ontvankelijke, intelligente ervaring-zonder code te schrijven. U kunt voorwaardelijk gebieden tonen, berekeningen uitvoeren, gegevens bevestigen, gebruikers door stromen begeleiden, en bedrijfslogica integreren die zich aanpast aangezien mensen typen.
 
+## Wat u gaat leren
 
-## Wat leert u?
-
-Aan het einde van deze handleiding zult u:
+Aan het einde van deze handleiding kunt u het volgende doen:
 
 - Begrijp hoe de regels werken en wanneer om verschillende regeltypes te gebruiken
 - De Rule Editor in de Universal Editor inschakelen en openen
-- Voorwaardelijke logica maken om formuliervelden dynamisch weer te geven of te verbergen
+- Voorwaardelijke logica maken om velden dynamisch weer te geven of te verbergen
 - Automatische berekeningen en gegevensvalidatie implementeren
 - Bouw douanefuncties voor complexe bedrijfsregels
-- Beste werkwijzen toepassen voor optimale formulierprestaties
+- Beste werkwijzen toepassen voor prestaties, onderhoudbaarheid en UX
 
-## Waarom de Regeleditor gebruiken?
+## Waarom de Redacteur van de Regel gebruiken?
 
-**zet Statische Forms in Slimme Ervaringen om:**
+- **Voorwaardelijke logica**: toon relevante gebieden slechts wanneer nodig om lawaai en cognitieve lading te verminderen.
+- **Dynamische berekeningen**: Verwerk automatisch waarden (totalen, tarieven, belasting) als gebruikerstype.
+- **bevestiging van Gegevens**: Vermijd vroege fouten met controles in real time en duidelijke berichten.
+- **Geleide ervaringen**: Laad gebruikers door logische stappen (tovenaars, vertakkend).
+- **geen-code authoring**: Vorm krachtig gedrag door een visuele interface.
 
-- **Voorwaardelijke Logica**: Toon relevante gebieden die op gebruikersselecties worden gebaseerd
-- **Dynamische Berekeningen**: Verwerk automatisch waarden als gebruikerstype
-- **Bevestiging van Gegevens**: Verstrek in real time terugkoppelen en fouten verhinderen
-- **Verbeterde UX**: Verminder vormingewikkeldheid en gids gebruikers door logische stromen
-- **Geen Vereiste Codering**: Visuele interface toegankelijk voor niet-ontwikkelaars
-
-**Gemeenschappelijke Gevallen van het Gebruik:**
-
-- Formulieren voor belastingberekening met voorwaardelijke aftrek
-- Meerdere wizards met vertakkende paden
-- Verzekeringsformulieren met tariefberekeningen
-- Formulieren onderzoeken met voorwaardelijke vragen
-- E-commercevormen met dynamische prijsstelling
+Veelvoorkomende scenario&#39;s zijn onder meer belastingcalculators, lening- en premieschatters, subsidiabiliteitsstromen, meerfasentoepassingen en enquêtes met voorwaardelijke vragen.
 
 ## Hoe regels werken
 
-Regels zijn geautomatiseerde instructies die uw formulieren intelligent en responsief maken. Zij geven aan wat er moet gebeuren als aan bepaalde voorwaarden wordt voldaan.
+Een regel definieert wat er moet gebeuren als aan een voorwaarde wordt voldaan. Conceptueel bestaat een regel uit twee delen:
 
-### **Componenten van de Regel**
+- **Voorwaarde**: Een verklaring die aan waar of vals evalueert.
+   - Voorbeelden: &quot;Inkomen > 50.000&quot;, &quot;Dekking = &#39;Ja&#39;,&quot; &quot;Veld is leeg&quot;
+- **Actie**: Wat voorkomt wanneer de voorwaarde (en naar keuze, wanneer het vals is) waar is.
+   - Voorbeelden: Een veld tonen/verbergen, Een waarde instellen/wissen, Invoer valideren, Een knop inschakelen/uitschakelen
 
-**Voorwaarde**: Een logische test die aan waar of vals evalueert.
++++ Regellogische patronen
 
-- &quot;Is het inkomen van de gebruiker groter dan $50.000?&quot;
-- &quot;Heeft de gebruiker &quot;ja&quot;voor verzekeringsdekking geselecteerd?&quot;
-- &quot;Is het formulierveld leeg?&quot;
+- **Voorwaarde → Actie (toen/toen)**
 
-**Actie**: Het resultaat dat voorkomt wanneer de voorwaarde wordt voldaan aan.
+  ```text
+  WHEN Gross Salary > 50000
+  THEN Show "Additional Deduction"
+  ```
 
-- Formuliervelden tonen of verbergen
-- Waarden automatisch berekenen
-- Validatieberichten weergeven
-- Componenten in- of uitschakelen
+  Dit is het meest geschikt voor voorwaardelijke zichtbaarheid en progressieve openbaarmaking.
 
-### **Logische Patronen van de Regel**
+- **handeling randvoorwaarde (reeks als/slechts als)**
 
-**1. Voorwaarde-actie (toen-dan)**
+  ```text
+  SET Taxable Income = Gross Salary - Deductions
+  IF Deductions are applicable
+  ```
 
-```
-WHEN gross salary > 50000
-THEN show "Additional Deduction" field
-```
+  Dit is het meest geschikt voor berekeningen en gegevenstransformaties.
 
-*Best voor:* Voorwaardelijke gebiedszicht, dynamische inhoud
+- **als → toen → anders (Afwisselende actie)**
 
-**2. Handeling-Voorwaarde (reeks-als)**
+  ```text
+  IF Income > 50000
+  THEN Show "High Income" fields
+  ELSE Show "Standard Income" fields
+  ```
 
-```
-SET taxable income = gross salary - deductions
-IF deductions are applicable
-```
+  Het beste voor vertakkende logica en wederzijds uitsluitende stromen.
 
-*Best voor:* Berekeningen, gegevenstransformaties
++++
 
-**3. Handeling-voorwaarde-Afwisselend (als-toen-anders)**
-
-```
-IF income > 50000
-THEN show "High Income" fields
-ELSE show "Standard Income" fields
-```
-
-*Best voor:* Tak logica, wederzijds uitsluitende opties
-
-### **Echte-Wereld Voorbeeld**
-
-**Scenario**: De berekeningsvorm van de Belasting
++++ Voorbeeld van een echte wereld
 
 - **Voorwaarde**: &quot;Het bruto salaris overschrijdt $50.000&quot;
-- **Primaire Actie**: Toon &quot;Extra Vermindering&quot;gebied
-- **Afwisselende Actie**: Verberg &quot;Extra Vermindering&quot;gebied
-- **Resultaat**: De gebruikers zien slechts relevante gebieden die op hun inkomensniveau worden gebaseerd
+- **Primaire actie**: toon &quot;Extra Vermindering&quot;
+- **Afwisselende actie**: Verberg &quot;Extra Vermindering&quot;
+- **Resultaat**: De gebruikers zien slechts de gebieden die op hen van toepassing zijn
+
++++
 
 ## Vereisten
 
-Voordat u begint te werken met de Rule Editor, moet u het volgende doen:
 
-### **Vereisten van de Toegang**
++++ Toegangsvereisten
 
-- Authoring toegang tot **AEM as a Cloud Service**
-- **Universele Redacteur** met de toegelaten uitbreiding van de Redacteur van de Regel
-- Machtigingen voor het bewerken van formulieren in uw AEM-omgeving
+**Essentiële toestemmingen en opstelling**:
 
-### **Technische Vereisten**
+- **AEM as a Cloud Service**: De auteurstoegang met vorm het uitgeven toestemmingen
+- **Universele Redacteur**: Geïnstalleerd en gevormd op uw milieu
+- **de uitbreiding van de Redacteur van de Regel**: Toegelaten via [ Extension Manager ](/help/implementing/developing/extending/extension-manager.md)
+- **Vorm het uitgeven toestemmingen**: Mogelijkheid om vormcomponenten in Universele Redacteur tot stand te brengen en te wijzigen
 
-- **Basiskennis van het vormontwerp**: Vertrouwelijkheid met vormcomponenten en hun eigenschappen
-- **Vertrouwelijkheid van de Bedrijfs logica**: Mogelijkheid om voorwaardelijke vereisten te bepalen
-- **Basiskennis van JavaScript** (slechts die voor douanefuncties wordt vereist)
+**stappen van de Verificatie**:
 
-### **laat de Uitbreiding van de Redacteur van de Regel** toe
+1. Bevestig dat u vanuit uw AEM Sites-console toegang hebt tot Universal Editor
+2. Controleren of u formuliercomponenten kunt maken en bewerken
+3. Controle dat het pictogram van de Redacteur van de Regel ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg) wanneer het selecteren van vormcomponenten verschijnt
 
-De uitbreiding van de Redacteur van de Regel wordt niet toegelaten door gebrek in Universele Redacteur. U kunt het van [ Extension Manager ](/help/implementing/developing/extending/extension-manager.md) toelaten.
++++
 
-**na het toelaten van de uitbreiding:**
-Het ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram verschijnt in de hoger-juiste hoek wanneer u vormcomponenten selecteert.
++++ Technische voorschriften
+
+**Vereiste kennis en vaardigheden**:
+
+- **Universele vaardigheid van de Redacteur**: Ervaring creërend vormen met tekstinput, dropdowns, en basisgebiedseigenschappen
+- **Bedrijfs logisch begrip**: Mogelijkheid om voorwaardelijke vereisten en bevestigingsregels voor uw specifiek gebruiksgeval te bepalen
+- **de componentenvertrouwdheid van de Vorm**: Kennis van gebiedstypes (tekst, aantal, drop-down), eigenschappen (vereist, zichtbaar, read-only), en vormstructuur
+
+**Facultatief voor geavanceerd gebruik**:
+
+- **fundamentals van JavaScript**: Vereist slechts voor het creëren van douanefuncties (gegevenstypes, functies, basissyntaxis)
+- **JSON begrip**: Nuttig voor complexe gegevensmanipulatie en API integratie
+
+**vragen van de Beoordeling**:
+
+- Kunt u een basisformulier maken met tekstinvoer en een verzendknop in de Universal Editor?
+- Begrijp u wanneer de gebieden in uw bedrijfscontext vereist of facultatief zouden moeten zijn?
+- Kunt u aangeven welke formulierelementen voorwaardelijk zichtbaar moeten zijn in uw geval van gebruik?
+
++++
+
++++ De extensie Regeleditor inschakelen
+
+**Belangrijk**: De uitbreiding van de Redacteur van de Regel wordt niet toegelaten door gebrek in Universele milieu&#39;s van de Redacteur.
+
+**de stappen van de Activering**:
+
+1. Ga aan [ Extension Manager ](/help/implementing/developing/extending/extension-manager.md) in uw milieu van AEM
+2. Zoek de extensie &quot;Regel-editor&quot; in de lijst met beschikbare extensies
+3. Klik **toelaten** en bevestig de activering
+4. Wacht tot het systeem is vernieuwd (kan 1-2 minuten duren)
+
+**Verificatie**:
+
+- Na het toelaten, verschijnt het pictogram van de Redacteur van de Regel wanneer u een vormcomponent selecteert: ![ geef-regels uit ](/help/forms/assets/edit-rules-icon.svg)
 
 ![ Universele redacteur van de Regel van de Redacteur ](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
-*Figuur: Het pictogram van de Redacteur van de Regel verschijnt wanneer u vormcomponenten* selecteert
+Figuur: Het pictogram van de Redacteur van de Regel verschijnt wanneer u vormcomponenten selecteert
 
-**om tot de Redacteur van de Regel toegang te hebben:**
+U opent als volgt de regeleditor:
 
 1. Selecteer een formuliercomponent in de Universal Editor.
-2. Klik het ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram dat verschijnt.
-3. De interface van de Redacteur van de Regel opent in een nieuw paneel.
+2. Klik op het pictogram Regeleditor.
+3. De redacteur van de Regel opent in een zijpaneel.
 
 ![ gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-for-field.png)
-*Figuur: De interface van de Redacteur van de Regel voor het uitgeven van componentenregels*
+Figuur: De interface van de Redacteur van de regel voor het uitgeven componentenregels
 
 >[!NOTE]
 >
-> In dit artikel verwijzen &quot;formuliercomponent&quot; en &quot;formulierobject&quot; naar dezelfde elementen (zoals invoervelden, knoppen, deelvensters, enz.).
+> In dit artikel verwijzen &quot;formuliercomponent&quot; en &quot;formulierobject&quot; naar dezelfde elementen (bijvoorbeeld invoer, knoppen, deelvensters).
 
-## Interface van de Redacteur van de regel Overzicht
-
-De Redacteur van de Regel biedt een gebruikersvriendelijke visuele interface voor het creëren van en het beheren van regels aan:
+## Overzicht van de interface van Rule Editor
 
 ![ het gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-interface.png)
-*Cijfer: Volledige interface van de Redacteur van de Regel met genummerde componenten*
+Figuur: Volledige interface van de Redacteur van de Regel met genummerde componenten
 
-### **Componenten van de Interface**
+- **de titel van de Component en regeltype**: Bevestigt de geselecteerde component en het actieve regeltype.
+- **de Voorwerpen en het paneel van Functies van de Vorm**:
+   - Formulierobjecten: hiërarchische weergave van velden en containers voor verwijzing in regels
+   - Functies: ingebouwde wiskunde, koord, datum, en bevestigingshelpers
+- **knevel van het Comité**: Toon/verberg de voorwerpen en functies paneel om werkruimte te verhogen
+- **Visuele regelbouwer**: belemmering-en-daling, dropdown-gedreven regelcomponist
+- **Controles**: Gedaan (sparen), annuleer (verwerp). Regels altijd testen voordat ze worden opgeslagen.
 
-**1. Component Title &amp; Rule Type**
++++
 
-- **doel**: Toont de naam van de geselecteerde component en het huidige regeltype.
-- **Voorbeeld**: &quot;Ga Bruto Salaris&quot;(de Input van de Tekst) met de &quot;Wanneer&quot;geselecteerde regel in.
-- **Uiteinde**: Bevestig altijd dat u de correcte component uitgeeft.
++++ Bestaande regels beheren
 
-**2. Het paneel van Objecten en van Functies van de vorm**
+Wanneer een component al regels heeft, kunt u:
 
-- **het Lusje van Objecten van de Vorm**: Verstrekt een hiërarchische mening van alle vormcomponenten.
-   - Gebruik voor: Verwijzen naar andere velden in uw regels.
-   - Navigatie: uit- of samenvouwen om specifieke componenten te zoeken.
-- **het Lusje van Functies**: Bevat ingebouwde wiskundige en logische functies.
-   - Wordt gebruikt voor: complexe berekeningen en gegevensbewerkingen uitvoeren.
-   - Categorieën: functies Math, String, Date en Validation.
-
-**3. Knop voor schakelen tussen deelvensters**
-
-- **doel**: Toont of verbergt de voorwerpen en functies paneel.
-- **Uiteinde**: Knevel van het paneel om de regel te verhogen die werkruimte uitgeeft.
-- **kortere weg van het Toetsenbord**: Nuttig wanneer het werken met complexe regels.
-
-**4. Visual Rule Builder**
-
-- **Doel**: Het belangrijkste gebied voor het construeren van regellogica.
-- **Eigenschappen**: belemmering-en-dalingsinterface en dropdown selecteurs.
-- **Werkschema**: Selecteer regeltype → Bepaal voorwaarden → Vastgestelde acties.
-
-**5. Besturingsknoppen**
-
-- **Gedaan**: Slaat de regel op en sluit de redacteur.
-- **annuleert**: De veranderingen van de verwerping en sluit de redacteur zonder sparen.
-- **Uiteinde**: Test altijd uw regels alvorens Gedaan te klikken.
-
-### **Beheer van de Regel**
-
-Wanneer u de Redacteur van de Regel voor een component opent die reeds regels heeft:
-
-![ toon de beschikbare regels van vormvoorwerp ](/help/edge/docs/forms/assets/rule-editor15.png)
-*Cijfer: Het beheren van bestaande regels voor een vormcomponent*
-
-**Beschikbare Acties:**
-
-- **Mening**: De overzichten van de de regelregel van het overzicht en logica.
-- **geef** uit: wijzig bestaande regelvoorwaarden of acties.
-- **herordenen**: Verander de uitvoeringsorde van regels (de regels lopen van boven naar onder).
-- **toelaten/onbruikbaar maken**: Tijdelijk draai regels voor het testen doeleinden.
-- **Schrapping**: Verwijder permanent regels.
+- **Mening**: Zie regelsamenvattingen en logica
+- **geef** uit: wijzig voorwaarden en acties
+- **opnieuw orde**: De uitvoeringsorde van de verandering (van boven naar onder)
+- **toelaten/onbruikbaar maken**: De regels van de knevel voor het testen
+- **Schrapping**: Verwijder veilig regels
 
 >[!TIP]
 >
-> **de Orde van de Uitvoering van de Regel van de Orde van de Rij**: De regels worden uitgevoerd van boven naar onder. Plaats meer specifieke voorwaarden vóór algemene voorwaarden.
+> Plaats specifieke regels voor algemene regels. De uitvoering is van boven naar beneden.
+
++++
 
 ## Beschikbare regeltypen
 
-De Redacteur van de Regel biedt een uitvoerige reeks regeltypes aan die door functionaliteit worden georganiseerd. Selecteer het gewenste type op basis van uw specifieke gebruiksscenario:
+Kies het regeltype dat het meest overeenkomt met uw intentie.
 
-### **Voorwaardelijke Logische Regels**
++++ Voorwaardelijke logica
 
-**wanneer**
-
-- **Doel**: Werkt als primaire voorwaardelijke regel voor het uitvoeren van complexe logica.
-- **Geval van het Gebruik**: Bijvoorbeeld, &quot;wanneer de gebruiker &quot;Gehuwd&quot;selecteert, de gebieden van de showmuisinformatie toont.&quot;
-- **Logische patroon**: Voorwaarde → Actie (met een facultatieve afwisselende actie)
-
-**Verbergen/tonen**
-
-- **Doel**: Het gebiedszicht van controles die op gespecificeerde voorwaarden wordt gebaseerd.
-- **geval van het Gebruik**: Verberg irrelevante secties of laat progressieve onthulling toe.
-- **Beste praktijken**: Gebruik om een schone, geconcentreerde gebruikerservaring tot stand te brengen.
-
-**toelaten/onbruikbaar maken**
-
-- **Doel**: Controles of een gebied met, kan worden in wisselwerking gestaan gebaseerd op voorwaarden.
-- **Geval van het Gebruik**: maak de verzendknoop onbruikbaar tot alle vereiste gebieden worden voltooid.
-- **Beste praktijken**: Verstrek duidelijke visuele terugkoppelen aan gebruikers.
-
-### **Regels van de Manipulatie van Gegevens**
-
-**vastgestelde waarde van**
-
-- **Doel**: bevolkt automatisch gebiedswaarden.
-- **Geval van het Gebruik**: Plaats de datum van vandaag, bereken totalen, of kopieer waarden tussen gebieden.
-- **Beste praktijken**: Gebruik om gebruikersinspanning te verminderen en nauwkeurigheid te verzekeren.
-
-**duidelijke waarde van**
-
-- **Doel**: Verwijdert gegevens uit gebieden wanneer de voorwaarden veranderen.
-- **Geval van het Gebruik**: Duidelijke afhankelijke gebieden wanneer een ouderselectie verandert.
-- **Beste praktijken**: Handhaaf gegevensintegriteit en verhinder zwevende waarden.
-
-**Formaat**
-
-- **Doel**: Transformeert hoe de waarden worden getoond.
-- **geval van het Gebruik**: De munt van het formaat, telefoonaantallen, of data.
-- **Beste praktijken**: Verbeter leesbaarheid zonder de onderliggende gegevens te veranderen.
-
-### **Regels van de Bevestiging**
-
-**bevestigt**
-
-- **Doel**: Implementeert de logica van de douanebevestiging.
-- **geval van het Gebruik**: Dwingt complexe bedrijfsregels of dwars-gebiedsbevestiging.
-- **Beste praktijken**: Verstrek duidelijke en uitvoerbare foutenmeldingen.
-
-### **Regels van de Berekening**
-
-**Wiskundige Uitdrukking**
-
-- **Doel**: Voert geautomatiseerde berekeningen uit.
-- **geval van het Gebruik**: De berekeningen van de Belasting, totalen, of percentages.
-- **Beste praktijken**: De berekeningen van de update in echt - tijd zoals gebruikerstype.
-
-### **Regels van het Gebruikersinterface**
-
-**plaats Focus**
-
-- **Doel**: Richt gebruikersaandacht op specifieke gebieden.
-- **Geval van het Gebruik**: Nadruk op foutengebieden of gids gebruikers door tovenaarsstappen.
-- **Beste praktijken**: Gebruik spaarzaam om het verstoren van de gebruikersstroom te vermijden.
-
-**plaats Bezit**
-
-- **doel**: wijzigt dynamisch componenteneigenschappen.
-- **Geval van het Gebruik**: De placeholder tekst van de verandering of wijzigt opties in een dropdown.
-- **Beste praktijken**: Verbeter de gebruikerservaring met contextafhankelijke veranderingen.
-
-### **Regels van de Controle van de Vorm**
-
-**legt Vorm** voor
-
-- **Doel**: Triggers vorm voorlegging programmatically.
-- **geval van het Gebruik**: auto-voorlegt nadat de specifieke voorwaarden worden voldaan aan.
-- **Beste praktijken**: Bevestig altijd de vorm vóór voorlegging.
-
-**Vorm van het Terugstellen**
-
-- **Doel**: ontruimt alle vormgegevens en stelt de vorm aan zijn aanvankelijke staat opnieuw in.
-- **geval van het Gebruik**: &quot;Begin over&quot;functionaliteit.
-- **Beste praktijken**: Bevestig de actie met de gebruiker alvorens terug te stellen.
-
-**sparen Vorm**
-
-- **Doel**: Slaat de vorm als ontwerp voor recentere voltooiing op.
-- **geval van het Gebruik**: Nuttig voor lange vormen of multi-zittingswerkschema&#39;s.
-- **Beste praktijken**: Verstrek duidelijke terugkoppelen op sparen status.
-
-### **Geavanceerde Regels**
-
-**roept Dienst** aan
-
-- **Doel**: Vraag externe APIs of de diensten.
-- **geval van het Gebruik**: De raadpleging van het adres, bevestiging in real time, of gegevensverrijking.
-- **Beste praktijken**: Verwerk ladende staten en foutenscenario&#39;s geschikt.
-
-**voeg/verwijder Instantie** toe
-
-- **Doel**: Beheert dynamisch herhaalbare secties.
-- **geval van het Gebruik**: Voeg familieleden of veelvoudige adressen toe.
-- **Beste praktijken**: Verstrek duidelijke controles voor het toevoegen van of het verwijderen van instanties.
-
-**navigeer aan**
-
-- **Doel**: Richt gebruikers aan andere vormen of pagina&#39;s opnieuw.
-- **geval van het Gebruik**: De werkschema&#39;s van de multi-vorm of voorwaardelijk het verpletteren.
-- **Beste praktijken**: Behoud vormgegevens vóór navigatie.
-
-**navigeer onder Comités**
-
-- **Doel**: De navigatie van controles in tovenaar-stijl vormen.
-- **geval van het Gebruik**: De vormen van de multi-stap of voorwaardelijk stap het overslaan.
-- **Beste praktijken**: De duidelijke voortgangsindicatoren van de vertoning.
-
-**de Gebeurtenis van de Verzending**
-
-- **Doel**: De gebeurtenissen van de trekkers van de douanevorm voor geavanceerde integratie.
-- **Geval van het Gebruik**: Het volgen van Analytics of derdeintegratie.
-- **Beste praktijken**: Gebruik slechts voor niet-blokkerende acties.
-
-
-## Stapsgewijze zelfstudie: een slimme belastingcalculator maken
-
-Deze sectie verstrekt een praktisch voorbeeld om de mogelijkheden van de Redacteur van de Regel aan te tonen. Het voorbeeld leidt u door het bouwen van een vorm van de belastingberekening die voorwaardelijke logica en geautomatiseerde berekeningen gebruikt.
-
-![ Schermafbeelding van de interface die van de Redacteur van de Regel de verwezenlijking van een voorwaardelijke regel met wanneer-toen logica voor het zicht van het vormgebied toont ](/help/edge/docs/forms/assets/rule-editor-1.png)
-*Figuur: De berekeningsvorm van de Belasting met intelligente voorwaardelijke gebieden*
-
-### **Overzicht van het Leerprogramma**
-
-In deze zelfstudie maakt u een formulier dat:
-
-1. **past zich aan gebruikersinput** aan: Vertoningen relevante gebieden die op het inkomensniveau worden gebaseerd.
-2. **berekent automatisch**: Berekent belastingverplichting in echt - tijd.
-3. **bevestigt gegevens**: Zorgt nauwkeurige berekeningen en gegevensingang.
-
-### **Structuur van de Vorm**
-
-| Veldnaam | Type | Doel | Gedrag |
-|------------|------|---------|----------|
-| **Bruto Salaris** | Nummerinvoer | De gebruiker gaat jaarlijks inkomen in | Voorwaardelijke logica activeren |
-| **Extra Vermindering** | Nummerinvoer | Extra aftrek (indien van toepassing) | Geeft weer wanneer salaris > $50.000 |
-| **Belastbaar Inkomen** | Nummerinvoer | Automatisch berekend | Updates voor invoerwijzigingen |
-| **Betaalbare Belasting** | Nummerinvoer | Definitief belastingbedrag | Berekent met een snelheid van 10% |
-
-### **BedrijfsLogica om uit te voeren**
-
-**Regel 1: Voorwaardelijke Vertoning van het Gebied**
-
-```
-WHEN Gross Salary > 50,000
-THEN Show "Additional Deduction" field
-ELSE Hide "Additional Deduction" field
-```
-
-**Regel 2: De Belastbare Berekening van het Inkomen**
-
-```
-SET Taxable Income = Gross Salary - Additional Deduction
-(When Additional Deduction is applicable)
-```
-
-**Regel 3: De Berekening van de Belasting**
-
-```
-SET Tax Payable = Taxable Income × 10%
-(Simplified flat rate for demonstration)
-```
-
-### **Stappen van de Implementatie**
-
-Voer de volgende stappen uit om uw intelligente belastingformulier te maken:
-
-
-
-+++ 1: Maak het basisformulier
-
-**Doelstelling**: Bouw de basisvormstructuur met alle vereiste componenten
-
-Uw formulier voor belastingberekening maken in de Universal Editor:
-
-1. **Open Universele Redacteur**
-   - Ga naar uw AEM Sites-console
-   - Selecteer de pagina waaraan u het formulier wilt toevoegen
-   - Klik **uitgeven** om Universele Redacteur te openen
-
-2. **voeg de Componenten van de Vorm toe**
-
-   Voeg deze componenten in volgorde toe:
-
-   | Component | Type | Label | Instellingen |
-   |-----------|------|-------|----------|
-   | Titel | Titel | &quot;Formulier voor belastingberekening&quot; | Kop niveau H2 |
-   | Nummerinvoer | Nummerinvoer | &quot;Brutosalaris&quot; | Vereist: Ja, tijdelijke aanduiding: &quot;Voer jaarsalaris in&quot; |
-   | Nummerinvoer | Nummerinvoer | &quot;Aanvullende aftrek&quot; | Vereist: Nee, tijdelijke aanduiding: &quot;Voer aanvullende aftrekkingen in&quot; |
-   | Nummerinvoer | Nummerinvoer | &quot;Belastbaar inkomen&quot; | Vereist: Nee, alleen-lezen: Ja |
-   | Nummerinvoer | Nummerinvoer | &quot;Te betalen belasting&quot; | Vereist: Nee, alleen-lezen: Ja |
-   | Verzendknop | Verzenden | &quot;BTW berekenen&quot; | Type: verzenden |
-
-3. **vorm Eerste Montages**
-
-   - **verberg het Extra gebied van de Vermindering**:
-      - Selecteer de component &quot;Extra aftrek&quot;
-      - In het paneel van Eigenschappen, plaats **Zichtbaar** aan **Nr**
-      - Dit veld wordt voorwaardelijk weergegeven op basis van regels
-
-   - **maak berekende gebieden read-only**:
-      - Selecteer de velden &quot;Belastbaar inkomen&quot; en &quot;Belastbaar inkomen&quot;
-      - Plaats **Gelezen slechts** aan **ja** in Eigenschappen
-
-     ![ Schermafbeelding van een vorm van de belastingberekening met inputgebieden voor bruto salaris, huwelijkse status, en afhankelijke kinderen, die de vormstructuur aantonen alvorens de regels worden toegepast ](/help/edge/docs/forms/assets/rule-editor2.png)
-     *Cijfer: De aanvankelijke vormstructuur met basisgevormde componenten*
-
-**Controlepunt**: U zou nu een vorm met alle vereiste gebieden moeten hebben, waar de &quot;Extra Vermindering&quot;verborgen is en de berekende gebieden read-only zijn.
+- **wanneer**: Primaire regel voor complex voorwaardelijk gedrag (Voorwaarde → Actie ± anders)
+- **Verbergen/tonen**: De zichtbaarheid van controles die op een voorwaarde (progressieve mededeling wordt gebaseerd)
+- **toelaten/onbruikbaar maken**: Controles of een gebied interactief is (bijvoorbeeld, maak Submit onbruikbaar tot de vereiste gebieden geldig zijn)
 
 +++
 
-+++ &#x200B;2. Een voorwaardelijke regel toevoegen voor een formulierveld
++++ Gegevensmanipulatie
 
-Nadat u het formulier hebt gemaakt, schrijft u de eerste regel om het veld `Additional Deduction` alleen weer te geven als het brutosalaris hoger is dan € 50.000. Een voorwaardelijke regel toevoegen:
+- **Reeks Waarde van**: Auto-bevolkt waarden (bijvoorbeeld, data, totalen, exemplaren)
+- **Duidelijke Waarde van**: verwijder gegevens wanneer de voorwaarden veranderen
+- **Formaat**: De vertoning die van de transformatie formatteert (munt, telefoon, datum) zonder opgeslagen waarden te veranderen
 
-1. Open een vorm in Universele Redacteur voor het uitgeven en selecteer het **[!UICONTROL Gross Salary]** gebied in de inhoudsboom en selecteer ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg). U kunt het veld **[!UICONTROL Gross Salary]** ook rechtstreeks in het deelvenster **[!UICONTROL Forms Object]** selecteren.
-   ![ de Redacteur example1 van de Regel ](/help/edge/docs/forms/assets/rule-editor3.png)
-De visuele interface van de Redacteur van de Regel verschijnt.
-1. Klik op **[!UICONTROL Create]** om regels te maken.
-   ![ de Redacteur example2 van de Regel ](/help/edge/docs/forms/assets/rule-editor4.png)
-Standaard is het regeltype `Set Value Of` geselecteerd. U kunt het geselecteerde object niet wijzigen of wijzigen, maar u kunt de regelvervolgkeuzelijst gebruiken om een ander regeltype te selecteren.\
-   ![ de Redacteur example3 van de Regel ](/help/edge/docs/forms/assets/rule-editor5.png)
-1. Open de vervolgkeuzelijst met regeltypen en selecteer **[!UICONTROL When]** regeltype.
-   ![ voorbeeld4 van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor6.png)
-1. Selecteer **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is greater than]** . Het veld **[!UICONTROL Enter a Number]** wordt weergegeven.
-   ![ de Redacteur example5 van de Regel ](/help/edge/docs/forms/assets/rule-editor7.png)
-1. Typ `50000` in het **[!UICONTROL Enter a Number]** -veld in de regel.
-   ![ de Redacteur example6 van de Regel ](/help/edge/docs/forms/assets/rule-editor8.png)
-U hebt de voorwaarde gedefinieerd als `When Gross Salary is greater than 50000` . Definieer vervolgens de actie die moet worden uitgevoerd als deze voorwaarde `True` is.
-1. Selecteer `Then` in de vervolgkeuzelijst **[!UICONTROL Show]** in de instructie **[!UICONTROL Select Action]** .
-   ![ de Redacteur example7 van de Regel ](/help/edge/docs/forms/assets/rule-editor9.png)
-1. Sleep het veld **[!UICONTROL Additional Deduction]** naar het tabblad Formulierobjecten in het veld **[!UICONTROL Drop object or select here]** . U kunt ook het veld **[!UICONTROL Drop object or select here]** selecteren en het veld **[!UICONTROL Additional Deduction]** in het pop-upmenu selecteren, waarin alle formulierobjecten in het formulier worden vermeld.
-   ![ de Redacteur example8 van de Regel ](/help/edge/docs/forms/assets/rule-editor10.png)
-1. Klik op **[!UICONTROL Add Else Section]** om een andere voorwaarde voor het veld **[!UICONTROL Gross Salary]** toe te voegen, voor het geval u een salaris invoert dat lager is dan `50000` .
-   ![ de Redacteur example9 van de Regel ](/help/edge/docs/forms/assets/rule-editor11.png)
-1. Selecteer **[!UICONTROL Hide]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie `Else` .
-   ![ de Redacteur example10 van de Regel ](/help/edge/docs/forms/assets/rule-editor12.png)
-1. Sleep het veld **[!UICONTROL Additional Deduction]** naar het tabblad Formulierobjecten in het veld **[!UICONTROL Drop object or select here]** . U kunt ook het veld **[!UICONTROL Drop object or select here]** selecteren en het veld **[!UICONTROL Additional Deduction]** in het pop-upmenu selecteren, waarin alle formulierobjecten in het formulier worden vermeld.
-   ![ de Redacteur example11 van de Regel ](/help/edge/docs/forms/assets/rule-editor13.png)
-1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
-De regel verschijnt als volgt in de Redacteur van de Regel.
-   ![ de Redacteur example12 van de Regel ](/help/edge/docs/forms/assets/rule-editor14.png)
++++
+
++++ Validatie
+
+- **Valideer**: De bevestigingslogica van de douane, met inbegrip van dwars-gebiedscontroles en bedrijfsregels
+
++++
+
++++ Berekening
+
+- **Wiskundige Uitdrukking**: Verwerk waarden in echt - tijd (totalen, belasting, verhoudingen)
+
++++
+
++++ Gebruikersinterface
+
+- **Reeks Focus**: Beweeg nadruk aan een specifiek gebied (gebruik spaarzaam)
+- **Vastgesteld Bezit**: Wijzig componenteneigenschappen dynamisch (placeholder, opties, enz.)
+
++++
+
++++ Formulierbesturingselement
+
+- **legt Vorm** voor: Programmatiatically legt de vorm voor (slechts na bevestigingspas)
+- **Vorm van het Terugstellen**: Duidelijk en teruggesteld aan aanvankelijke staat (bevestig vóór gebruik)
+- **sparen Vorm**: sparen als ontwerp voor later (lange vormen, multi-sessie)
+
++++
+
++++ Geavanceerd
+
+- **roept Dienst** aan: Externe APIs/de diensten van de vraag (handvat ladend en fouten)
+- **voeg/verwijder Instantie** toe: beheer herhaalbare secties (bijvoorbeeld, gebiedsdelen, adressen)
+- **navigeer aan**: Route aan andere vormen/pagina&#39;s (bewaart gegevens vóór navigatie)
+- **navigeer onder Panelen**: De de opstapnavigatie van de tovenaar van de controle en het overslaan
+- **de Gebeurtenis van de Verzending**: De gebeurtenissen van de de douanetrekker voor integratie of analyse
+
++++
+
+## Stapsgewijze zelfstudie: Een slimme belastingcalculator maken
+
++++ Overzicht van zelfstudie
+
+In dit voorbeeld ziet u voorwaardelijke zichtbaarheid en automatische berekeningen.
+
+![ Schermafbeelding van de interface die van de Redacteur van de Regel de verwezenlijking van een voorwaardelijke regel met wanneer-toen logica voor het zicht van het vormgebied toont ](/help/edge/docs/forms/assets/rule-editor-1.png)
+Afbeelding: Formulier voor belastingberekening met intelligente voorwaardelijke velden
+
+U maakt een formulier dat:
+
+1. Aanpassing aan gebruikersinvoer door relevante velden weer te geven
+2. Hiermee worden waarden in real-time berekend
+3. Valideert gegevens om de nauwkeurigheid te verbeteren
+
++++
+
++++ Formulierstructuur
+
+| Veldnaam | Type | Doel | Gedrag |
+|-------------------------|---------------|--------------------------------|-----------------------------------------|
+| Brutosalaris | Nummerinvoer | Jaarinkomen van gebruiker | Voorwaardelijke logica activeren |
+| Aanvullende aftrek | Nummerinvoer | Extra aftrek (indien van toepassing) | Alleen zichtbaar wanneer Salary > $50.000 |
+| Belastbaar inkomen | Nummerinvoer | Berekende waarde | Alleen-lezen, updates bij wijziging |
+| Te betalen belasting | Nummerinvoer | Berekende waarde | Alleen-lezen, berekend op een vaste snelheid |
+
++++
+
++++ Bedrijfslogica
+
+- **Regel 1: Voorwaardelijke vertoning**
+
+  ```text
+  WHEN Gross Salary > 50,000
+  THEN Show "Additional Deduction"
+  ELSE Hide "Additional Deduction"
+  ```
+
+- **Regel 2: De belastbare berekening van het Inkomen**
+
+  ```text
+  SET Taxable Income = Gross Salary - Additional Deduction
+  (Only when Additional Deduction applies)
+  ```
+
+- **Regel 3: De belastbare berekening**
+
+  ```text
+  SET Tax Payable = Taxable Income × 10%
+  (Simplified flat rate)
+  ```
+
++++
+
++++ Stap 1: Het basisformulier maken
+
+**Doelstelling**: Bouw de basisvorm met alle gebieden en aanvankelijke montages.
+
+1. **Open Universele Redacteur**:
+   - Navigeer aan de console van AEM Sites, selecteer uw pagina, klik **uitgeven**
+   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) behoorlijk gevormd hebt
+
+2. **voeg vormcomponenten in deze orde** toe:
+   - Titel (H2): &quot;Formulier voor de berekening van belastingen&quot;
+   - Nummer input: &quot;Bruto salaris&quot; (Vereist: Ja, tijdelijke aanduiding: &quot;Jaarloon invullen&quot;)
+   - Nummer invoer: &quot;Aanvullende aftrek&quot; (Vereist: Nee, tijdelijke aanduiding: &quot;Aanvullende aftrekkingen invoeren&quot;)
+   - Invoernummer: &quot;Belastbaar inkomen&quot; (alleen-lezen: Ja)
+   - Nummerinvoer: &quot;Belastingplichtig&quot; (alleen-lezen: Ja)
+   - Verzenden, knop: BTW berekenen
+
+3. **vorm aanvankelijke gebiedseigenschappen**:
+   - &quot;Extra aftrek&quot; verbergen (instellen op Zichtbaar: Nee in deelvenster Eigenschappen)
+   - Stel &quot;Belastbaar inkomen&quot; en &quot;Belastbaar inkomen&quot; in op alleen-lezen: Ja
+
+![ Schermafbeelding van een vorm van de belastingberekening met inputgebieden voor bruto salaris, huwelijkse status, en afhankelijke kinderen, die de vormstructuur aantonen alvorens de regels worden toegepast ](/help/edge/docs/forms/assets/rule-editor2.png)
+Afbeelding: Oorspronkelijke formulierstructuur met basiscomponenten geconfigureerd
+
+**Controlepunt**: U zou een vorm met alle vereiste gebieden moeten hebben waar de &quot;Extra Vermindering&quot;verborgen is en de berekende gebieden read-only zijn.
+
++++
+
++++ Stap 2: Voorwaardelijke zichtbaarheidsregel toevoegen
+
+**Doel**: toon &quot;Extra Vermindering&quot;gebied slechts wanneer het Bruto Salaris $50.000 overschrijdt.
+
+1. **selecteer het Bruto gebied van het Salaris** en klik het pictogram van de Redacteur van de Regel ![ uitgeven-regels ](/help/forms/assets/edit-rules-icon.svg)
+2. **creeer een nieuwe regel**:
+   - Klik **creëren**
+   - Wijzig het regeltype van &quot;Waarde instellen van&quot; in **&quot;Wanneer&quot;**
+3. **vorm de voorwaarde**:
+   - Selecteer **&quot;is groter dan&quot;** van dropdown
+   - Voer `50000` in het nummerveld in
+4. **plaats toen actie**:
+   - Kies **&quot;tonen&quot;** van de Uitgezochte drop-down Actie
+   - Sleep of selecteer **&quot;Extra Vermindering&quot;** gebied van de Voorwerpen van de Vorm
+5. **voeg de Else actie** toe:
+   - Klik **&quot;voeg anders Sectie toe&quot;**
+   - Kies **&quot;Verbergen&quot;** van de Uitgezochte drop-down Actie
+   - Selecteer **&quot;Extra Vermindering&quot;** gebied
+6. **sparen de regel**: Klik **Gedaan**
 
 >[!NOTE]
 >
-> Alternatief, kunt u een Show regel op het Extra gebied van de Aftrek, in plaats van een wanneer regel op het Bruto gebied van de Salaris schrijven, om het zelfde gedrag uit te voeren.
+> Alternatieve benadering: u kunt hetzelfde resultaat bereiken door een regel Tonen/Verbergen rechtstreeks te maken op het veld Aanvullende aftrek in plaats van een regel bij Bruto Salaris.
 
 +++
 
-+++ &#x200B;3. Berekeningen toevoegen voor de formuliervelden
++++ Stap 3: Berekening toevoegen
 
-Vervolgens schrijft u een regel om de `Taxable Income` te berekenen. Dit is het verschil tussen `Gross Salary` en `Additional Deduction` (indien van toepassing). Voer de volgende stappen uit om een berekeningsregel toe te voegen aan het veld **[!UICONTROL Taxable Income]** :
+**Doel**: berekent automatisch &quot;Belastbaar Inkomen&quot;en &quot;Belastbaar die&quot;op gebruikersinput wordt verschuldigd.
 
-1. Op auteurswijze, selecteer het **[!UICONTROL Taxable Income]** gebied en selecteer ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit. U kunt het veld **[!UICONTROL Taxable Income]** ook rechtstreeks in het deelvenster **[!UICONTROL Forms Object]** selecteren.
-1. Selecteer vervolgens **[!UICONTROL Create]** om de regel te maken.
-   ![ de Redacteur example13 van de Regel ](/help/edge/docs/forms/assets/rule-editor16.png)
-1. Selecteer **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]** . Er wordt een veld voor het schrijven van wiskundige expressies geopend.
-   ![ de Redacteur example14 van de Regel ](/help/edge/docs/forms/assets/rule-editor17.png)
+**vorm de Belastbare berekening van het Inkomen**:
 
-1. In het veld Wiskundige expressie:
+1. **Uitgezochte &quot;Belastbaar Inkomen&quot;gebied** en open de Redacteur van de Regel
+2. **creeer Wiskundige Uitdrukking**:
+   - Klik **creëren** → Uitgezochte **&quot;Wiskundige uitdrukking&quot;**
+   - De uitdrukking van de bouw: **Bruto Salaris - de Extra Vermindering**
+   - Sleep &quot;Bruin salaris&quot; naar het eerste veld
+   - Selecteer **&quot;Min&quot;** exploitant
+   - Sleep &quot;Aanvullende aftrek&quot; naar tweede veld
+3. **sparen**: Klik **Gedaan**
 
-   - Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Gross Salary]** gebied in het eerste **[!UICONTROL Drop object or select here]** gebied.
+**vorm de Belastingverschuldigde berekening**:
 
-   - Selecteer **[!UICONTROL Minus]** in het veld **[!UICONTROL Select Operator]** .
-
-   - Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Additional Deduction]** gebied in het andere **[!UICONTROL Drop object or select here]** gebied.
-     ![ de Redacteur example15 van de Regel ](/help/edge/docs/forms/assets/rule-editor18.png)
-
-1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
-
-   Voeg nu een regel voor het veld `Tax Payable ` toe, die wordt bepaald door het belastbare inkomen te vermenigvuldigen met het belastingtarief. Veronderstel voor eenvoud een vast belastingtarief van `10%`.
-
-1. Op auteurswijze, selecteer het **[!UICONTROL Tax Payable]** gebied en selecteer ![ geef-regels ](/help/forms/assets/edit-rules-icon.svg) pictogram uit. Selecteer vervolgens **[!UICONTROL Create]** om regels te maken.
-   ![ de Redacteur example16 van de Regel ](/help/edge/docs/forms/assets/rule-editor19.png)
-1. Selecteer **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]** . Er wordt een veld voor het schrijven van wiskundige expressies geopend.
-   ![ de Redacteur example17 van de Regel ](/help/edge/docs/forms/assets/rule-editor20.png)
-1. In het veld Wiskundige expressie:
-
-   - Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Taxable Income]** gebied in het eerste **[!UICONTROL Drop object or select here]** gebied.
-
-   - Selecteer **[!UICONTROL Multiplied by]** in het veld **[!UICONTROL Select Operator]** .
-
-   - Selecteer **Aantal** van het **[!UICONTROL Select Option]** gebied en ga de waarde als `10` op het **[!UICONTROL Enter a Number]** gebied in.
-     ![ de Redacteur example18 van de Regel ](/help/edge/docs/forms/assets/rule-editor21.png)
-1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]** .
-   ![ de Redacteur example19 van de Regel ](/help/edge/docs/forms/assets/rule-editor22.png)
-1. Selecteer in het veld Uitgebreide expressie **[!UICONTROL divided by]** in het **[!UICONTROL Select Operator]** veld en **[!UICONTROL Number]** in het **[!UICONTROL Select Option]** veld. Geef vervolgens `100` op in het nummerveld.
-   ![ de Redacteur example20 van de Regel ](/help/edge/docs/forms/assets/rule-editor23.png)
-1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
+1. **Uitgezochte &quot;Belasting Betaalbaar&quot;gebied** en open de Redacteur van de Regel
+2. **creeer Wiskundige Uitdrukking**:
+   - Klik **creëren** → Uitgezochte **&quot;Wiskundige uitdrukking&quot;**
+   - Bouw uitdrukking: **Belastbaar Inkomen × 10:100**
+   - Sleep &quot;Belastbaar inkomen&quot; naar het eerste veld
+   - Selecteer **&quot;Multiplied door&quot;** exploitant
+   - Voer `10` in als getal
+   - Klik **&quot;Uitbreiden Uitdrukking&quot;**
+   - Selecteer **&quot;verdeeld door&quot;** exploitant
+   - Voer `100` in als getal
+3. **sparen**: Klik **Gedaan**
 
 +++
 
-+++ &#x200B;4. Een voorbeeld van een formulier bekijken
++++ Stap 4: Test het formulier
 
-Nu, wanneer u voorproef de vorm en **Bruto Salaris** als `60,000` ingaat, verschijnt het **Extra Vermindering** gebied, en **Belastbaar Inkomen** en **Betaalbare Belasting** worden dienovereenkomstig berekend.
+**verifieer uw implementatie door de volledige stroom** te testen:
+
+1. **Voorproef de vorm**: Klik de voorproefwijze in Universele Redacteur
+2. **Test de voorwaardelijke logica**:
+   - Voer Brutosalaris in = `30000` → &quot;Aanvullende aftrek&quot; moet verborgen blijven
+   - Voer het brutosalaris in = `60000` → &quot;Aanvullende aftrek&quot; moet worden weergegeven
+3. **berekeningen van de Test**:
+   - Voer bij Brutosalaris = `60000` de optie Aanvullende aftrek = `5000` in
+   - Belastbaar inkomen verifiëren = `55000` (60000 - 5000)
+   - Betaalbare belasting verifiëren = `5500` (55000 × 10%)
 
 ![ Voorproef een vorm ](/help/edge/docs/forms/assets/rule-editor-form.png)
+Afbeelding: Voltooide belastingcalculator met voorwaardelijke velden en automatische berekeningen
+
+**criteria van het Succes**: De vorm zou velden dynamisch tonen/verbergen en waarden in real time moeten berekenen aangezien de gebruikers typen.
+
 
 +++
-
-Naast ingebouwde functies zoals Som en Gemiddeld, kunt u douanefuncties tot stand brengen om complexe bedrijfslogica uit te voeren die aan uw specifieke vereisten wordt aangepast.
 
 ## Geavanceerd: aangepaste functies
 
-**wanneer om de Functies van de Douane te gebruiken:**
+Voor complexe bedrijfslogica buiten de ingebouwde mogelijkheden, kunt u de functies van douaneJavaScript tot stand brengen die naadloos met de Redacteur van de Regel integreren.
 
-- Voor complexe berekeningen die verder gaan dan de mogelijkheden van ingebouwde functies
-- Bedrijfsspecifieke validatieregels implementeren
-- Voor gegevenstransformaties en -opmaak
-- Integreren met externe systemen of API&#39;s
++++ Wanneer kunt u aangepaste functies gebruiken
 
-**Voordelen:**
+**Ideale scenario&#39;s voor douanefuncties**:
 
-- **Herbruikbaarheid**: Schrijf de functie eens en gebruik het over veelvoudige vormen en regels
-- **Handhaving**: Gecentraliseerde logica die gemakkelijk is bij te werken
-- **Prestaties**: Geoptimaliseerde uitvoering van JavaScript
-- **Flexibiliteit**: Mogelijkheid om complexe scenario&#39;s te behandelen die niet door standaardregels worden gericht
+- **Complexe berekeningen**: De multi-step berekeningen worden niet gemakkelijk uitgedrukt in de Wiskundige regel van de Uitdrukking
+- **zaken-specifieke bevestigingen**: De logica van de bevestiging van de douane specifiek voor uw organisatie of industrie
+- **de transformaties van Gegevens**: De omzettingen van het formaat, koordmanipulaties, of gegevens het ontleden
+- **Externe integraties**: Vraag aan interne APIs of derdediensten (met beperkingen)
 
-### **Creërend de Functies van de Douane**
+**Voordelen van douanefuncties**:
 
-**Plaats van het Dossier**: `/blocks/form/functions.js` in uw project van AEM
+- **Herbruikbaarheid**: Schrijf eens, gebruik over veelvoudige vormen en regels
+- **handhaafbaarheid**: Gecentraliseerde logica die gemakkelijker is bij te werken en te zuiveren
+- **Prestaties**: De geoptimaliseerde uitvoering van JavaScript in vergelijking met complexe regelketens
+- **Flexibiliteit**: De randgevallen van de handvat en complexe scenario&#39;s die niet door standaardregels worden gericht
 
-**Werkschema van de Ontwikkeling:**
++++
 
-1. **Verklaring van de Functie**
-   - Duidelijke en beschrijvende functienamen en parameters definiëren
-   - Namen gebruiken die het doel van de functie aangeven
-   - Documentparameters en retourneringstypen
++++ Aangepaste functies maken en implementeren
 
-2. **Logische Implementatie**
-   - Onbewerkte en efficiënte JavaScript-code schrijven
-   - Omgaan met randproblemen en foutscenario&#39;s
-   - Beste werkwijzen voor codering volgen
+**plaats van het Dossier**: Alle douanefuncties moeten in `/blocks/form/functions.js` in uw project van Edge Delivery Services worden bepaald.
 
-3. **de Uitvoer van de Functie**
-   - Exporteer functies om deze beschikbaar te maken in de Editor voor regels
-   - Benoemde exportfuncties gebruiken voor een betere organisatie
-   - Functies testen vóór implementatie
+**werkschema van de Ontwikkeling**:
 
-4. **Documentatie**
-   - JSDoc-opmerkingen toevoegen voor functiedocumentatie
-   - Gebruiksvoorbeelden opnemen
-   - Parametertypen en retourwaarden opgeven
+1. **het ontwerp van de Functie**
+   - Beschrijvende, actiegerichte functienamen gebruiken
+   - Definieer duidelijke parametertypen en retourwaarden
+   - Afbeeldingen met randen en ongeldige invoer netjes verwerken
 
-In het volgende voorbeeld worden twee aangepaste functies getoond: `getFullName` en `days` .
+2. **Implementatie**
+   - Schrijf schone JavaScript met goede opmerkingen
+   - Inclusief invoervalidatie en foutafhandeling
+   - Testfuncties onafhankelijk van elkaar vóór integratie
 
-```JavaScript
+3. **Documentatie**
+   - Uitgebreide JSDoc-opmerkingen toevoegen
+   - Gebruiksvoorbeelden en parameterbeschrijvingen opnemen
+   - Alle beperkingen of afhankelijkheden documenteren
+
+4. **Plaatsing**
+   - Exportfuncties met benoemde exportfuncties
+   - Distribueren naar de gegevensopslagruimte van uw project
+   - Voltooien van build controleren vóór testen
+
+**implementatie van het Voorbeeld**:
+
+```javascript
 /**
- - Get Full Name
- - @name getFullName Concats first name and last name
- - @param {string} firstname in Stringformat
- - @param {string} lastname in Stringformat
- - @return {string}
+ * Concatenates first and last name with proper formatting
+ * @name getFullName
+ * @description Combines first and last name, handles edge cases like missing values
+ * @param {string} firstName - The person's first name
+ * @param {string} lastName - The person's last name  
+ * @returns {string} Formatted full name or empty string if both inputs are invalid
  */
-function getFullName(firstname, lastname) {
-  return `${firstname} ${lastname}`.trim();
+function getFullName(firstName, lastName) {
+  // Handle null, undefined, or empty string inputs
+  const first = (firstName || '').toString().trim();
+  const last = (lastName || '').toString().trim();
+  
+  return `${first} ${last}`.trim();
 }
 
 /**
- - Calculate the number of days between two dates.
- - @param {*} endDate
- - @param {*} startDate
- - @name days Calculates the numebr of days between two dates
- - @returns {number} returns the number of days between two dates
+ * Calculates the number of days between two dates
+ * @name days
+ * @description Computes absolute difference in days, handles various date input formats
+ * @param {Date|string} endDate - End date (Date object or ISO string)
+ * @param {Date|string} startDate - Start date (Date object or ISO string)
+ * @returns {number} Number of days between dates, 0 if inputs are invalid
  */
 function days(endDate, startDate) {
+  // Convert string inputs to Date objects
   const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
   const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
 
-  // return zero if dates are valid
+  // Validate date objects
   if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
     return 0;
   }
 
+  // Calculate absolute difference in milliseconds, then convert to days
   const diffInMs = Math.abs(end.getTime() - start.getTime());
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
-// eslint-disable-next-line import/prefer-default-export
+// Export functions for use in Rule Editor
 export { getFullName, days };
 ```
 
 ![ Toevoegend douanefunctie ](/help/edge/docs/forms/assets/create-custom-function.png)
+Afbeelding: aangepaste functies toevoegen aan het bestand functions.js
 
-### Een aangepaste functie gebruiken in de regeleditor
++++
 
-Een aangepaste functie gebruiken in de Rule Editor:
++++ Aangepaste functies gebruiken in de artikeleditor
 
-1. **voeg de Functie** toe: Voeg uw douanefunctie aan het `../[blocks]/form/functions.js` dossier toe. Zorg ervoor dat u deze component opneemt in de instructie `export` in het bestand.
-2. **stel het Dossier** op: Stel het bijgewerkte `functions.js` dossier aan uw project GitHub op en bevestig dat de bouwstijl met succes voltooit.
-3. **Gebruik van de Functie**: In de Redacteur van de Regel van uw vorm, heb toegang tot de functie door de `Function Output` optie op het **[!UICONTROL Select Action]** gebied te selecteren.
+**stappen van de Integratie**:
 
-   ![ Functie van de Douane in de Redacteur van de Regel ](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+1. **voeg functie aan project** toe
+   - `/blocks/form/functions.js` maken of bewerken in uw project
+   - De functie opnemen in de instructie export
 
-4. **Voorproef de Vorm**: Voorproef uw vorm om te verifiëren dat de onlangs uitgevoerde functie zoals verwacht werkt.
+2. **opstellen en bouwt**
+   - Wijzigingen vastleggen in uw opslagplaats
+   - Ervoor zorgen dat het constructieproces met succes is voltooid
+   - Tijd toestaan voor CDN-cache-updates
 
-## Beste praktijken voor Regelontwikkeling
+3. **Toegang in de Redacteur van de Regel**
+   - Regeleditor openen voor formuliercomponenten
+   - Selecteer **&quot;Uitvoer van de Functie&quot;** in **Uitgezochte actie** dropdown
+   - Kies uw aangepaste functie in de lijst met beschikbare functies
+   - Functieparameters configureren met formuliervelden of statische waarden
 
-### **Optimalisering van Prestaties**
+4. **Test grondig**
+   - Geef een voorbeeld van het formulier weer om het gedrag van de functie te controleren
+   - Testen met verschillende invoercombinaties, inclusief randbehuizingen
+   - De invloed van prestaties op het laden van formulieren en interactie controleren
 
-**minimaliseer de Complexiteit van de Regel**
+![ Functie van de Douane in de Redacteur van de Regel ](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+Figuur: Het selecteren en het vormen van douanefuncties in de interface van de Redacteur van de Regel
 
-- Houd afzonderlijke regels eenvoudig en gefocust.
-- Breek complexe logica in veelvoudige kleinere regels.
-- Vermijd indien mogelijk diep geneste omstandigheden.
+**Beste praktijken voor functiegebruik**:
 
-**optimaliseer de Uitvoering van de Regel**
+- **de behandeling van de Fout**: Neem altijd fallback gedrag voor functiestoornissen op
+- **Prestaties**: De functies van het profiel met realistische gegevensvolumes
+- **Veiligheid**: Valideer alle input om veiligheidskwetsbaarheid te verhinderen
+- **het Testen**: Creeer testgevallen die normale en randgevallen behandelen
 
-- Plaats eerst de meestgetriggerde regels.
-- Gebruik specifieke voorwaarden om onnodige evaluaties te voorkomen.
-- Houd rekening met het effect van regels op de laadtijd van formulieren.
++++
 
-**Beheer van het Middel**
+## Aanbevolen werkwijzen voor het ontwikkelen van regels
 
-- Beperk het aantal regels per formuliercomponent.
-- Gebruik aangepaste functies voor herhaalde logica in plaats van dubbele regels.
-- Testprestaties met realistische gegevensvolumes.
 
-### **de Richtlijnen van de Ervaring van de Gebruiker**
++++ Optimalisatie van prestaties
 
-**verstrekken Duidelijke Terugkoppeling**
+- Minimaliseer regelcomplexiteit; verdeel grote logica in kleine, gerichte regels
+- Regels sorteren op frequentie (meest gangbare eerst)
+- Regelsets per component handelbaar houden
+- Voorkeur voor herbruikbare aangepaste functies in plaats van logica dupliceren
 
-- Gebruik validatieberichten die gebruikers naar juiste invoer leiden.
-- Ladingsindicatoren tonen voor regels die externe services omvatten.
-- Implementeer progressieve openbaarmaking om cognitieve belasting te verminderen.
++++
 
-**handhaaf de Reactie van de Vorm**
++++ Gebruikerservaring
 
-- Vermijd regels die abrupte visuele wijzigingen veroorzaken.
-- Hiermee implementeert u vloeiende overgangen voor tonen/verbergen-bewerkingen.
-- Testregels voor verschillende apparaten en schermgrootten.
+- Duidelijke validatie en inlinefeedback bieden
+- Vermijd schokkerige visuele wijzigingen; gebruik tonen/verbergen met het oog
+- Testen op apparaten en lay-outs
 
-**de Behandeling van de Fout**
++++
 
-- Voorzie fallback gedrag wanneer de regels ontbreken.
-- Gebruikersvriendelijke foutberichten weergeven.
-- Logfouten voor foutopsporing terwijl een positieve gebruikerservaring behouden blijft.
++++ Veiligheid
 
-### **Beste praktijken van de Ontwikkeling**
+- Testen met randbehuizingen en bekende waarden
+- Verifiëren in verschillende browsers
+- Documentintentie achter complexe regels, niet alleen mechanica
+- Regelinventarisatie bijhouden voor grote formulieren
+- Gebruik consistente naamgeving voor componenten en regels
+- Aangepaste versiefuncties en test in niet-productieomgevingen
 
-**het Testen Strategie**
++++
 
-- Testregels met randgevallen en grenswaarden.
-- Verifieer regelgedrag over verschillende browsers.
-- Functionaliteit van formulier testen, zowel met als zonder JavaScript ingeschakeld.
+## Problemen met algemene problemen oplossen
 
-**Documentatie**
 
-- Documenteer de bedrijfslogica achter complexe regels.
-- Een overzicht van regels bijhouden voor grote formulieren.
-- Gebruik consistente naamconventies voor componenten en regels.
++++ Regels die geen aanleiding geven
 
-**Controle van de Versie**
+- Componentnamen en -verwijzingen verifiëren
+- Uitvoervolgorde controleren (van boven naar beneden)
+- Voorwaarden met bekende waarden valideren
+- Browserconsole controleren op blokkeringsfouten
 
-- Wijzigingen bijhouden in aangepaste functies in versiebeheer.
-- Testregels in een ontwikkelomgeving vóór de productie.
-- Back-ups van werkregelconfiguraties bijhouden.
++++
 
-## Veelvoorkomende problemen oplossen
++++ Onjuist gedrag
 
-### **De Problemen van de Uitvoering van de Regel**
+- Operatoren en groepering controleren (AND/OR)
+- Expressiefragmenten afzonderlijk testen
+- Gegevenstypen bevestigen (getallen versus tekenreeksen)
 
-**Regels niet teweegbrengen**
++++
 
-- **de componentennamen van de Controle**: Verzeker referenced componenten bestaan en hebben correcte namen.
-- **verifieer regelorde**: De regels voeren van boven aan onder uit; reorder indien nodig.
-- **bevestigt voorwaarden**: De voorwaarden van de test met bekende waarden om logica te verifiëren.
-- **Browser console**: Controle voor de fouten van JavaScript die uitvoering zouden kunnen blokkeren.
++++ Prestatieproblemen
 
-**Onjuist Gedrag van de Regel**
+- Vereenvoudig diep geneste voorwaarden
+- Aangepaste functies profiel
+- Minimaliseer externe vraag binnen regels
+- Specifieke kiezers en verwijzingen gebruiken
 
-- **logische exploitanten van het Overzicht**: Bevestig EN/OF de voorwaarden zijn correct gestructureerd.
-- **Test met steekproefgegevens**: Gebruik bekende waarden om kwesties te isoleren.
-- **de gegevenstypes van de Controle**: Verzeker numerieke vergelijkingen aantallen, niet koorden gebruiken.
-- **bevestigt uitdrukkingen**: Test afzonderlijk wiskundige uitdrukkingen.
++++
 
-### **De Kwesties van Prestaties**
++++ Aangepaste functieproblemen
 
-**Langzame Reactie van de Vorm**
+- Bestandspad bevestigen: `/blocks/form/functions.js`
+- Ervoor zorgen dat benoemde exportbewerkingen correct zijn
+- Bevestig de build met uw wijzigingen
+- Browser cache wissen na implementatie
+- Parametertypen en foutafhandeling valideren
 
-- **Verminder regelingewikkeldheid**: Vereenvoudig complexe voorwaardelijke logica.
-- **optimaliseer douanefuncties**: Profiel en optimaliseer de code van JavaScript.
-- **de externe vraag van de grens**: Minimaliseer de dienstaanroepen in regels.
-- **Gebruik efficiënte selecteurs**: verzeker de verwijzingen van vormobjecten specifiek zijn.
++++
 
-**Gebruik van het Geheugen**
++++ Integratie van Universal Editor
 
-- **Schoon gebeurtenisluisteraars** op: verwijder ongebruikte regelbanden.
-- **optimaliseer douanefuncties**: Vermijd geheugenlekken in de code van JavaScript.
-- **het regelwerkingsgebied van de Beperking**: Gebruik gerichte regels in plaats van globale voorwaarden.
-
-### **De Kwesties van de Functie van de Douane**
-
-**niet Beschikbare Functies**
-
-- **de dossierweg van de Controle**: verifieer `functions.js` is in de correcte plaats: `/blocks/form/functions.js`.
-- **verifieer de uitvoer**: Zorg ervoor de functies behoorlijk worden uitgevoerd.
-- **bouwt proces**: Bevestig het project bouwt omvat het bijgewerkte functiedossier.
-- **Geheime voorgeheugen ontruimen**: Wis het browser geheime voorgeheugen na het opstellen van nieuwe functies.
-
-**de Fouten van de Functie**
-
-- **bevestiging van de Parameter**: Controle dat de functieparameters verwachte types aanpassen.
-- **de behandeling van de Fout**: Voeg poging-vangstblokken toe om uitzonderingen netjes te behandelen.
-- **Logboek van de Console**: Gebruik console.log voor het zuiveren functieuitvoering.
-- **JSDoc bevestiging**: Verzeker functiedocumentatie de implementatie aanpast.
-
-### **Universele Integratie van de Redacteur**
-
-**de Redacteur van de Regel verschijnt niet**
-
-- **toegelaten Uitbreiding**: Verifieer de uitbreiding van de Redacteur van de Regel wordt geactiveerd.
-- **de selectie van de Component**: Zorg ervoor u een gesteunde vormcomponent hebt geselecteerd.
-- **Browser verenigbaarheid**: Test in gesteunde browsers (Chrome, Firefox, Safari).
-- **toestemmingen van de Toegang**: Bevestig de gebruiker de noodzakelijke toestemmingen van AEM heeft.
-
-**Kwesties van de Interface**
-
-- **zicht van het Comité**: Gebruik de knevelknoop om het paneel van vormvoorwerpen te tonen of te verbergen.
-- **Opslag van de Regel**: Zorg ervoor de regels worden bewaard alvorens de redacteur te sluiten.
-- **Browser zoom**: Het browser van het terugstellen zoom aan 100% voor optimale interfacevertoning.
+- Bevestig de uitbreiding van de Redacteur van de Regel wordt toegelaten
+- Selecteer een ondersteunde component
+- Een ondersteunde browser gebruiken (Chrome, Firefox, Safari)
+- Controleer of u de vereiste machtigingen hebt
 
 ## Belangrijke beperkingen
 
 >[!IMPORTANT]
 >
-> **Beperkingen van de Functie van de Douane**:
+> Aangepaste functiebeperkingen:
 >
-> - Statische en dynamische import wordt niet ondersteund in scripts voor aangepaste functies.
-> - Alle code moet rechtstreeks in het `/blocks/form/functions.js` -bestand worden opgenomen.
-> - Functies moeten synchroon zijn (geen asynchroon, wacht of belofte).
-> - De toegang tot browser APIs is beperkt om veiligheidsredenen.
+> - Statische/dynamische import wordt niet ondersteund
+> - Alle logica moet zich bevinden in `/blocks/form/functions.js`
+> - Functies moeten synchroon zijn (geen asynchroon, wacht of belofte)
+> - Toegang tot browser-API is beperkt
 
 >[!WARNING]
 >
-> **Overwegingen van de Productie**:
+> Productieoverwegingen:
 >
-> - Test alle regels grondig in een testomgeving.
-> - De prestaties van formulieren controleren na het implementeren van complexe regels.
-> - Heb een terugschroeven van prijzen voor regel-verwante kwesties.
-> - Houd rekening met de gevolgen voor gebruikers met trage netwerkverbindingen.
+> - grondig testen in de halteplaats
+> - Prestaties bewaken na implementatie
+> - Heb een terugschroefplan voor regelkwesties
+> - Denk aan langzame netwerken en apparaten met lage specificaties
 
 ## Samenvatting
 
-De Redacteur van de Regel in Universele Redacteur laat u toe om intelligente, dynamische vormen tot stand te brengen die uitzonderlijke gebruikerservaring verstrekken. Door voorwaardelijke logica, geautomatiseerde berekeningen, en douanebedrijfsregels uit te voeren, kunt u:
+De Redacteur van de Regel in Universele Redacteur zet statische vormen in intelligente, ontvankelijke ervaringen om die aan gebruikersinput in real time aanpassen. Door gebruik te maken van voorwaardelijke logica, geautomatiseerde berekeningen en aangepaste bedrijfsregels, kunt u geavanceerde formulierworkflows maken zonder toepassingscode te schrijven.
 
-**Transformeer Statische Forms**:
+**Zeer belangrijke mogelijkheden u** hebt geleerd:
 
-- Voeg voorwaardelijke gebiedszicht voor schonere, meer geconcentreerde interfaces toe.
-- Berekeningen en gegevensvalidatie in real time implementeren.
-- Maak geavanceerde bedrijfslogica zonder codes.
+- **Voorwaardelijke logica**: toon en verberg gebieden die op gebruikersinput worden gebaseerd om geconcentreerde, relevante ervaringen tot stand te brengen
+- **Dynamische berekeningen**: berekent automatisch waarden (belastingen, totalen, tarieven) aangezien de gebruikers met de vorm in wisselwerking staan
+- **bevestiging van Gegevens**: Voer bevestiging in real time met duidelijke, actionable uit terugkoppelt berichten
+- **de functies van de Douane**: Breid mogelijkheden met JavaScript voor complexe bedrijfslogica en integratie uit
+- **optimalisering van Prestaties**: Pas beste praktijken voor handhaafbare, efficiënte regelontwikkeling toe
 
-**verbeter de Ervaring van de Gebruiker**:
+**Geleverde Waarde**:
 
-- Gebruikers door logische formulierstromen begeleiden.
-- Verminder fouten met intelligente validatie.
-- Geef onmiddellijk feedback en hulp.
+- **Verbeterde gebruikerservaring**: Verminder cognitieve lading met progressieve onthulling en intelligente vormstromen
+- **Verminderde fouten**: Vermijd ongeldige voorlegging door bevestiging in real time en geleide input
+- **Verbeterde efficiency**: Automatiseer berekeningen en gegevensingang om gebruikersinspanning te minimaliseren
+- **Handelbare oplossingen**: Creeer herbruikbare, goed gedocumenteerde regels die over uw organisatie schrapen
 
-**verbeter Efficiëntie**:
+**Bedrijfs effect**:
 
-- Hiermee automatiseert u herhaalde berekeningen en gegevensinvoer.
-- Complexe workflows stroomlijnen met slimme routering.
-- Verminder supportlasten met mogelijkheden voor zelfbediening.
+Forms wordt een krachtig hulpmiddel voor gegevensverzameling, kwalificatie van leads en betrokkenheid van gebruikers. De redacteur van de Regel laat niet-technische auteurs toe om verfijnde bedrijfslogica uit te voeren, die ontwikkelingskosten vermindert terwijl het verbeteren van vormvoltooiingstarieven en gegevenskwaliteit.
 
-### **Volgende Stappen**
++++
 
-Nu u de grondbeginselen van de Redacteur van de Regel begrijpt:
++++ Volgende stappen
 
-1. **Begin Eenvoudig**: Begin met basis tonen/verbergen regels alvorens aan complexe berekeningen vooruit te gaan.
-1. **Praktijk met Voorbeelden**: Gebruik het leerprogramma van de belastingcalculator als stichting.
-1. **onderzoek Geavanceerde Eigenschappen**: Experimenteer met douanefuncties voor gespecialiseerde vereisten.
-1. **Test grondig**: Bevestig altijd regels over verschillende scenario&#39;s en apparaten.
-1. **Prestaties van de Monitor**: Verzeker regels verbeteren eerder dan belemmerend gebruikerservaring.
+**geadviseerde het leren weg**:
+
+1. **Begin met grondbeginselen**: Creeer eenvoudige tonen/verbergen regels om de kernconcepten te begrijpen
+2. **Praktijk met leerprogramma&#39;s**: Gebruik het voorbeeld van de belastingcalculator als stichting voor uw eigen vormen
+3. **breid geleidelijk** uit: Voeg wiskundige uitdrukkingen en bevestigingsregels toe aangezien uw vertrouwen groeit
+4. **voer douanefuncties** uit: Ontwikkel de functies van JavaScript voor gespecialiseerde bedrijfsvereisten
+5. **optimaliseer en schaal**: Pas prestaties beste praktijken toe en handhaaf regeldocumentatie
+
+**Extra middelen**:
+
+- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) voor bredere context
+- [ de gids van Extension Manager ](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
+- [ de vormen van Edge Delivery Services ](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
+
++++

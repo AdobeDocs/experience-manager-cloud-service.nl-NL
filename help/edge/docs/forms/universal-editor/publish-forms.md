@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [formulieren publiceren, Edge Delivery Services, formulierconfiguratie, CORS, referentiefilter]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 0%
 
 ---
 
 # Adaptieve Forms met Edge Delivery Services publiceren
-
-## Overzicht
 
 Als u een adaptief formulier publiceert, kunt u het op Edge Delivery Services beschikbaar stellen voor eindgebruikers en verzenden. Dit proces omvat drie hoofdfasen: het publiceren van het formulier, het configureren van beveiligingsinstellingen en het openen van het actieve formulier.
 
@@ -28,29 +26,35 @@ Als u een adaptief formulier publiceert, kunt u het op Edge Delivery Services be
 
 ## Vereisten
 
-- **Vereisten van de Vorm:**
-   - Adaptief formulier gemaakt met Edge Delivery Services-sjabloon
-   - Beproefd formulier en gebruiksklaar voor productie
+- Adaptief formulier gemaakt met Edge Delivery Services-sjabloon
+- Beproefd formulier en gebruiksklaar voor productie
+- Machtigingen voor AEM Forms-auteurs
+- Cloud Manager-toegang (voor productieconfiguratie)
+- Ontwikkelaarstoegang tot formulierblokcode (voor installatie van verzending)
 
-- **Vereisten van de Toegang:**
-   - Machtigingen voor AEM Forms-auteurs
-   - Cloud Manager-toegang (voor productieconfiguratie)
-   - Ontwikkelaarstoegang tot formulierblokcode (voor installatie van verzending)
+## Overzicht van publicatieproces
 
-- **Verwante Documentatie:**
-   - [Formulieren maken met Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [Handelingen voor verzenden configureren](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+Voor het publiceren van formulieren naar Edge Delivery Services geldt een driefasenaanpak:
 
-## Fase 1: Uw formulier publiceren
+- **Fase 1: De Publicatie van de vorm** - publiceer uw vorm aan CDN en verifieer publicatiestatus
+- **Fase 2: De Configuratie van de veiligheid** - het beleid van CORS van de opstelling en verwijzerfilters voor veilige voorlegging
+- **Fase 3: Toegang en Bevestiging** - de vormfunctionaliteit van de Test en bevestigt het volledige werkschema
 
-### Stap 1: Publiceren starten
+Elke fase bouwt op vorige voort om veilige, functionele plaatsing te verzekeren.
+
+### Fase 1: Uw formulier publiceren
+
++++ Stap 1: Publiceren starten
 
 1. **heb toegang tot uw vorm**: Open uw AanpassingsVorm in de Universele Redacteur
 2. **Begin het publiceren**: Klik **publiceren** pictogram in de toolbar
 
    ![ klik publiceren ](/help/forms/assets/publish-icon-eds-form.png)
 
-### Stap 2: Controleren en bevestigen
++++
+
+
++++ Stap 2: Controleren en bevestigen
 
 1. **Overzicht het publiceren activa**: Het systeem toont alle activa die, met inbegrip van uw vorm worden gepubliceerd
 
@@ -61,7 +65,10 @@ Als u een adaptief formulier publiceert, kunt u het op Edge Delivery Services be
 
    ![ publiceer Succes ](/help/forms/assets/publish-success.png)
 
-### Stap 3: Publicatiestatus verifiëren
++++
+
+
++++ Stap 3: Publicatiestatus verifiëren
 
 **de status van de Controle**: Klik **publiceren** opnieuw pictogram om huidige status te bekijken
 
@@ -73,7 +80,10 @@ Als u een adaptief formulier publiceert, kunt u het op Edge Delivery Services be
 - Geen foutberichten tijdens publicatieproces
 - Het formulier wordt weergegeven in de lijst met gepubliceerde elementen
 
-### Gepubliceerde Forms beheren
++++
+
+
++++ Gepubliceerde Forms beheren
 
 **om een vorm ongedaan te maken:**
 
@@ -83,9 +93,12 @@ Als u een adaptief formulier publiceert, kunt u het op Edge Delivery Services be
 
 ![ unpublish vorm ](/help/forms/assets/unpublish--form.png)
 
-## Fase 2: Beveiligingsinstellingen configureren
++++
 
-### Waarom de Configuratie van de Veiligheid wordt vereist
+
+### Fase 2: Beveiligingsinstellingen configureren
+
++++ Waarom de Configuratie van de Veiligheid wordt vereist
 
 Om beveiligde formulierverzendingen in te schakelen, moet u beveiligingsinstellingen configureren die:
 
@@ -98,7 +111,11 @@ Om beveiligde formulierverzendingen in te schakelen, moet u beveiligingsinstelli
 >
 >**Vereist voor Productie**: Deze configuraties zijn verplicht voor vormvoorlegging om in productiemilieu&#39;s te werken.
 
-### Stap 1: URL voor formulierverzending configureren
++++
+
+
+
++++ Stap 1: URL voor formulierverzending configureren
 
 **Doel**: Directe vormbijdragen aan uw instantie van AEM
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL komt overeen met uw omgeving (productie, opbouw of lokaal)
 - Geen slash in de URL
 
-### Stap 2: CORS-instellingen configureren
++++
+
+
+
++++ Stap 2: CORS-instellingen configureren
 
 **Doel**: Toestaan de verzoeken van de vormvoorlegging van de domeinen van Edge Delivery Services
 
@@ -148,10 +169,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### Stap 3: Filter Referrer configureren
++++
+
+
+
++++ Stap 3: Filter Referrer configureren
 
 **Doel**: Beperk schrijven verrichtingen tot erkende domeinen van Edge Delivery Services
 
@@ -196,11 +221,16 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## Fase 3: Toegang tot uw gepubliceerde formulier
++++
 
-### URL-structuur voor Edge Delivery Services
+
+### Fase 3: Toegang tot uw gepubliceerde formulier
+
+
+
++++ URL-structuur voor Edge Delivery Services
 
 **StandaardFormaat URL:**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### Eindvalidatiestappen
++++
+
+
+
++++ Eindvalidatiestappen
 
 **verifieer de Toegankelijkheid van de Vorm:**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - Gegevens worden weergegeven in de geconfigureerde bestemming (werkblad, e-mail, enz.)
 - Geen consolefouten met betrekking tot CORS of veiligheidsbeleid
 
++++
+
 
 ## Volgende stappen
 
-**Onmiddellijke Acties:**
-
-- Het gepubliceerde formulier grondig testen
-- Gegevens over het verzenden van formulieren controleren
-- Indien nodig analytische tracking instellen
-
-**Geavanceerde Onderwerpen:**
 
 - [Formulierverzendacties configureren](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Stijl en thema voor uw formulieren](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Responsieve formulierindelingen maken](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## Samenvatting
 
-U hebt het volgende bereikt:
-
-- Uw adaptieve formulier is gepubliceerd naar Edge Delivery Services
-- Gevormde beveiligingsinstellingen voor het verzenden van formulieren
-- De juiste URL-toegang voor eindgebruikers instellen
-- Functionaliteit en toegankelijkheid van geverifieerde formulieren
-
-Uw formulier is nu live en klaar voor productie.

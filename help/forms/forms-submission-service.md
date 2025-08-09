@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: b8b5937919dceb83a11b2fe359a9accec7012f81
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -19,18 +19,14 @@ ht-degree: 0%
 
 De Forms-verzendservice is een door Adobe gehoste oplossing waarmee formulierverzendgegevens automatisch rechtstreeks in uw voorkeurspreadsheets worden opgeslagen: Google Sheets, Microsoft OneDrive of SharePoint. Dit elimineert de behoefte aan complexe backend infrastructuur terwijl het verstrekken van gegevens in real time en beheer.
 
->[!NOTE]
->
->**Vroege Programma van de Toegang:** Deze eigenschap is momenteel beschikbaar door vroege toegang. Om toegang te verzoeken, e-mail [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met uw organisatie GitHub en bewaarplaatsnaam van uw officieel adres.
->
->**Voorbeeld:** Voor bewaarplaats `https://github.com/adobe/abc`, verzend: organisatie = `adobe`, bewaarplaats = `abc`
+
 
 ## Overzicht
 
 ![ de voorleggingsdienst van Forms ](/help/forms/assets/form-submission-service.png)
 *Figuur: Het werkschema van de Dienst van de Verzending van Forms - van vormvoorlegging aan spreadsheetopslag*
 
-### Wie moet deze service gebruiken?
++++ Wie moet deze service gebruiken?
 
 **Perfect voor:**
 
@@ -45,7 +41,9 @@ De Forms-verzendservice is een door Adobe gehoste oplossing waarmee formulierver
 - Integratie van bedrijven met databases
 - Forms heeft geavanceerde validatie of verwerking nodig
 
-### Vaak voorkomende gevallen
++++
+
++++ Vaak voorkomende gevallen
 
 | Hoofdletters gebruiken | Voorbeeld | Voordelen voor werkblad |
 |----------|---------|-------------------|
@@ -54,38 +52,54 @@ De Forms-verzendservice is een door Adobe gehoste oplossing waarmee formulierver
 | **Loodgeneratie** | Nieuwsbrieven → SharePoint | Analyse van de marketingcampagne |
 | **de Inzameling van de Terugkoppeling** | Antwoorden van de enquête → Google-bladen | Snelle gegevensvisualisatie |
 
++++
+
 ## Belangrijkste voordelen
 
 De Forms-verzendservice biedt verschillende voordelen voor gestroomlijnde gegevensverzameling:
 
-### **Vereenvoudigde Opstelling**
+
+
++++ Vereenvoudigde installatie
 
 - **Geen backend infrastructuur** wordt vereist - de gastheren van Adobe het voorleggingseindpunt
 - **Directe integratie** met populaire spreadsheetplatforms
 - **Automatische gegevenstoewijzing** van vormgebieden aan spreadsheetkolommen
 
-### **Real-Time het Beheer van Gegevens**
++++
+
+
++++ Real-Time gegevensbeheer
 
 - **Onmiddellijke gegevens vangen** - de bijdragen verschijnen onmiddellijk in uw spreadsheet
 - **Gestructureerde opslag** - georganiseerde kolommen voor gemakkelijke analyse
 - **Levende samenwerking** - de veelvoudige teamleden kunnen tot gegevens toegang hebben en analyseren
 
-### **Ingebouwde Veiligheid &amp; Controle van de Toegang**
++++
+
++++ Ingebouwde beveiliging en toegangsbeheer
 
 - **Hefboomwerkingen bestaande toestemmingen** - gebruik de het delen van uw spreadsheetplatform controles
 - **Adobe-Beheerde veiligheid** - veilig voorlegging eindpunt met onderneming-rang bescherming
 - **Eigendom van Gegevens** - uw gegevensverblijven in uw gekozen spreadsheetplatform
 
++++
+
 ## Vereisten
 
 Voordat u de Forms-verzendservice instelt, moet u controleren of:
 
-### **Technische Vereisten**
+
+
++++ Technische vereisten
 
 - **GitHub bewaarplaats** opstelling voor uw project van Edge Delivery Services met het recentste Aangepast geïnstalleerd Blok van Forms
 - **goedkeuring van de Toegang** - bewaarplaats die aan de lijst van gewenste personen wordt toegevoegd
 
-### **Opstelling van het Platform van Spreadsheet**
++++
+
++++ Platforminstelling werkblad
+
 
 Kies een van de ondersteunde platforms:
 
@@ -93,33 +107,41 @@ Kies een van de ondersteunde platforms:
 - **Microsoft OneDrive** - Microsoft 365 rekening met de Online toegang van Excel
 - **SharePoint** - de toegang van SharePoint met lijst/bibliotheektoestemmingen
 
-### **Toestemmingen &amp; Toegang**
++++
+
++++ Machtigingen en toegang
 
 - **geeft toestemmingen** voor het doelspreadsheet uit
 - **delend mogelijkheden** om toegang tot `forms@adobe.com` te verlenen
-- **toestemmingen van de generatie van de verbinding 0&rbrace; &lbrace;voor uw gekozen platform**
+- **toestemmingen van de generatie van de verbinding 0} {voor uw gekozen platform**
+
++++
 
 >[!TIP]
 >
->**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
+>**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
 
 ## Configuratiemethoden
 
 De Forms-verzendservice biedt twee configuratiemethoden. Kies de methode die het beste bij uw workflow past:
 
-### Uw configuratiemethode kiezen
+
++++ Uw configuratiemethode kiezen
 
 | Methode | Best voor | Vereiste tijd | Technisch niveau |
 |--------|----------|---------------|-----------------|
 | **[Handmatige Opstelling](#manual-configuration)** | Inhoudsmakers, eenmalige installatie | 10-15 minuten | Beginnen |
 | **[API Configuratie](#api-configuration)** | Ontwikkelaars, geautomatiseerde workflows | 5-10 minuten | Intermediair |
 
-### Projectinstelling
++++
+
++++ Projectinstelling
 
 Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-projectstichting gereed is:
 
-1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-1. **Update`fstab.yaml`** in uw projectwortel:
+1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+
+2. **Update`fstab.yaml`** in uw projectwortel:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -127,7 +149,10 @@ Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-p
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-1. **deel uw projectomslag** met `forms@adobe.com` (geef vereiste toestemmingen uit)
+
+3. **deel uw projectomslag** met `forms@adobe.com` (geef vereiste toestemmingen uit)
+
++++
 
 ## Handmatige configuratie
 
@@ -136,16 +161,18 @@ Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-p
 
 Voer de volgende stapsgewijze instructies uit om het formulier in te stellen met verzending van werkbladen:
 
-### Stap 1: Uw formulierdefinitie maken
+
+
++++ Stap 1: Uw formulierdefinitie maken
 
 Maak uw formulierstructuur met Google Sheets of Microsoft Excel.
 
 **Stappen van de Making van de Vorm:**
 
 1. **open uw spreadsheetplatform** (Google Bladen of Microsoft Excel)
-1. **creeer een nieuw spreadsheet** voor uw vormproject
-1. **Naam uw blad** (moet of `helix-default` of `shared-aem` zijn)
-1. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+2. **creeer een nieuw spreadsheet** voor uw vormproject
+3. **Naam uw blad** (moet of `helix-default` of `shared-aem` zijn)
+4. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ de Definitie van de Vorm ](/help/forms/assets/form-submission-definition.png)
 *Voorbeeld: De definitie van de vorm met gebiedstypes, etiketten, en bevestigingsregels*
@@ -167,16 +194,18 @@ Maak uw formulierstructuur met Google Sheets of Microsoft Excel.
 - Werkblad krijgt de juiste naam (`helix-default` of `shared-aem`)
 - Veldtypen en validatieregels zijn op de juiste wijze geconfigureerd
 
-### Stap 2: Maak het werkblad voor gegevensverzameling
++++
+
++++ Stap 2: Maak het werkblad voor gegevensverzameling
 
 Stel een speciaal blad in voor het ontvangen van formulierverzendgegevens.
 
 **Opstelling van het Blad van Gegevens:**
 
 1. **voeg een nieuw blad** aan uw bestaand spreadsheet toe
-1. **noem het blad precies`incoming`** (case-sensitive)
-1. **de kolomkopballen van de opstelling** die uw vormgebieden aanpassen
-1. **sparen spreadsheet** om ervoor te zorgen de veranderingen worden bewaard
+2. **noem het blad precies`incoming`** (case-sensitive)
+3. **de kolomkopballen van de opstelling** die uw vormgebieden aanpassen
+4. **sparen spreadsheet** om ervoor te zorgen de veranderingen worden bewaard
 
 ![ Binnenkomend blad ](/help/forms/assets/form-submission-incoming-sheet.png)
 *Voorbeeld: Binnenkomend blad met kolomkopballen die vormgebieden aanpassen*
@@ -201,24 +230,23 @@ Stel een speciaal blad in voor het ontvangen van formulierverzendgegevens.
 >
 >**ProUiteinde:** kopieer de nauwkeurige gebiedsnamen van uw vormdefinitie om perfecte aanpassing tussen vormgebieden en spreadsheetkolommen te verzekeren.
 
-### Stap 3: Deel spreadsheet met de Dienst van Adobe
++++
+
++++ Stap 3: Deel spreadsheet met de Dienst van Adobe
 
 Bied de Adobe Forms-verzendservice toegang tot uw spreadsheet.
 
 **het Delen Proces:**
 
 1. **klik de knoop van het Aandeel** in de hoogste juiste hoek van uw spreadsheet
-1. **voeg de de dienstrekening van Adobe toe:**
-
+2. **voeg de de dienstrekening van Adobe toe:**
    - E-mail: `forms@adobe.com`
    - Het niveau van de toestemming: **Redacteur** (die voor gegevens wordt vereist schrijven)
-
-1. **verzend de het delen uitnodiging**
-1. **exemplaar de spreadsheetverbinding** voor de volgende stap
+3. **verzend de het delen uitnodiging**
+4. **exemplaar de spreadsheetverbinding** voor de volgende stap
 
    ![ Aankomend blad van het Aandeel ](/help/forms/assets/form-submission-share-incoming.png)
-
-*geleidelijke het delen proces voor het verlenen van de diensttoegang van Adobe*
+   *geleidelijke het delen proces voor het verlenen van de diensttoegang van Adobe*
 
 **Platform-Specifieke Instructies:**
 
@@ -243,26 +271,27 @@ Bied de Adobe Forms-verzendservice toegang tot uw spreadsheet.
 - De werkbladkoppeling is gekopieerd en klaar voor gebruik
 - Met machtigingen voor delen is externe toegang mogelijk
 
-### Stap 4: Formulier verbinden met werkblad
++++
+
++++ Stap 4: Formulier verbinden met werkblad
 
 Koppel uw formulierdefinitie aan het verzendwerkblad.
 
 **vorm-spreadsheet Verbinding:**
 
 1. **open uw spreadsheet van de vormdefinitie** (met `helix-default` of `shared-aem` blad)
-1. **plaats van de Submit veldrij** in uw vormdefinitie
-1. **plak de gekopieerde spreadsheetverbinding** in de **kolom van de Actie** voor het Submit gebied
-1. **sparen de veranderingen** aan uw vormdefinitie
+2. **plaats van de Submit veldrij** in uw vormdefinitie
+3. **plak de gekopieerde spreadsheetverbinding** in de **kolom van de Actie** voor het Submit gebied
+4. **sparen de veranderingen** aan uw vormdefinitie
 
    ![ Verbinding een spreadsheet ](/help/forms/assets/form-submission-sheet-linking.png)
-
-*Voorbeeld: Verbindend voorlegt actie aan uw spreadsheet van de gegevensinzameling*
+   *Voorbeeld: Verbindend voorlegt actie aan uw spreadsheet van de gegevensinzameling*
 
 **het Publiceren van Uw Vorm:**
 
 1. **Open AEM Sidekick** in uw browser
-1. **Voorproef uw vorm** om de configuratie te testen
-1. **publiceer de vorm** om het levend te maken
+2. **Voorproef uw vorm** om de configuratie te testen
+3. **publiceer de vorm** om het levend te maken
 
 **Definitieve Bevestiging:**
 
@@ -280,11 +309,14 @@ Koppel uw formulierdefinitie aan het verzendwerkblad.
 - [ Volledige voorbeeldspreadsheet ](/help/forms/assets/spreadsheet.xlsx) met juiste configuratie
 - [ documentatie van AEM Sidekick ](https://www.aem.live/docs/sidekick) voor het publiceren van begeleiding
 
++++
+
 ## API-configuratie
 
 Met de API-methode kunnen ontwikkelaars via programmacode gegevens verzenden naar de Forms-verzendservice, ideaal voor geautomatiseerde workflows en aangepaste integraties.
 
-### Wanneer gebruikt u de API
+
++++ Wanneer gebruikt u de API
 
 **Perfect voor:**
 
@@ -293,7 +325,9 @@ Met de API-methode kunnen ontwikkelaars via programmacode gegevens verzenden naa
 - Integratie met bestaande toepassingen
 - Werkstromen voor bulkgegevensverzending
 
-### API-vereisten
++++
+
++++ API-vereisten
 
 Controleer voordat u de API gebruikt of:
 
@@ -312,7 +346,9 @@ Controleer voordat u de API gebruikt of:
 >- `forms@adobe.com` moet Editor toegang hebben
 >- Blad moet via AEM Sidekick worden gepubliceerd
 
-### API-eindpunt en verificatie
++++
+
++++ API-eindpunt en verificatie
 
 **Basis URL:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 
@@ -323,45 +359,46 @@ Controleer voordat u de API gebruikt of:
 
 **API Documentatie:** [ Volledige API Verwijzing ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
-### Postman gebruiken
++++
+
++++ Postman gebruiken
 
 Postman biedt een gebruikersvriendelijke interface voor het testen van API-verzendingen.
 
 **Instructies van de Opstelling:**
 
 1. **creeer een nieuw POST verzoek** in Postman
-1. **vorm het eindpunt:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-1. **vervangt placeholders:**
-
+2. **vorm het eindpunt:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+3. **vervangt placeholders:**
    - `{id}` → Uw huidige formulier-id
    - `[repository]` → De naam van uw GitHub-opslagplaats
    - `[organization]` → Uw GitHub-organisatie/gebruikersnaam
 
 **Configuratie van het verzoek:**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+     &quot;json 
+https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
-Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+Kopteksten:
+Inhoudstype: application/json
+x-adobe-routing: tier=live, bucket=main-your-repo-your-org
 
-Body (JSON):
+Lichaam (JSON):
 {
-        "data": {
-            "startDate": "2025-01-10",
-            "endDate": "2025-01-25",
-            "destination": "Australia",
-            "class": "First Class",
-            "budget": "2000",
-            "amount": "1000000",
-            "name": "Mary",
-            "age": "35",
-            "subscribe": null,
-            "email": "mary@gmail.com"
-                }
+&quot;data&quot;: {
+&quot;startDate&quot;: &quot;2025-01-10&quot;,
+&quot;endDate&quot;: &quot;2025-01-25&quot;,
+&quot;bestemming&quot;: &quot;Australië&quot;,
+&quot;class&quot;: &quot;First Class&quot;,
+&quot;budget&quot;: &quot;2000&quot;,
+&quot;bedrag&quot;: &quot;1000000&quot;,
+&quot;name&quot;: &quot;Mary&quot;,
+&quot;leeftijd&quot;: &quot;35&quot;,
+&quot;subscribe&quot;: null,
+&quot;email&quot;: &quot;mary@gmail.com&quot;
 }
-```
+}
+&quot;
 
 **Verwachte Reactie:**
 
@@ -371,7 +408,9 @@ Body (JSON):
 ![ postmanscherm ](/help/forms/assets/postman-api.png)
 *Voorbeeld: Succesvolle API voorlegging gebruikend de interface van Postman*
 
-### Opdrachtregel gebruiken (curl)
++++
+
++++ Opdrachtregel gebruiken (curl)
 
 Voor ontwikkelaars die terminal/bevelherinnering verkiezen, gebruik krulling om gegevens programmatically voor te leggen.
 
@@ -405,10 +444,10 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
->[!TAB  de Herinnering van het Bevel van Vensters ]
-
+>[!TAB Windows Command Prompt]
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
@@ -438,13 +477,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
-### API Reactie en verificatie
++++
 
-**Succesvolle Reactie:**
++++ API Response & Verification
+
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -470,9 +511,13 @@ Controleer na een geslaagde verzending of de gegevens in uw spreadsheet worden w
 - **Gegevens verschijnt** in uw `incoming` blad binnen seconden
 - **Alle vormgebieden** worden behoorlijk in kaart gebracht aan spreadsheetkolommen
 
++++
+
 ## Problemen oplossen
 
-### Algemene problemen en oplossingen
+
+
++++ Algemene problemen en oplossingen
 
 **Probleem: 403 Verboden Fout**
 
@@ -518,7 +563,9 @@ Solutions:
 ```
 
 
-### Help opvragen
++++
+
++++ Help opvragen
 
 **Kanalen van de Steun:**
 
@@ -526,24 +573,33 @@ Solutions:
 - **API Documentatie:** [ Verwijzing van de Ontwikkelaar ](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 - **Communautaire Steun:** [ Gemeenschap van de Liga van de Ervaring van Adobe ](https://experienceleaguecommunities.adobe.com/)
 
++++
+
 ## Volgende stappen
 
 Nu u de gevormde Dienst van de Verzending van Forms hebt, onderzoek deze verwante onderwerpen:
 
-### **verbeter Uw Forms**
 
-- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
++++ Verbeter je Forms
+
+- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
 - **[Gids van de Componenten van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - onderzoek beschikbare types van vormgebied
 
-### **Alternatieve Methoden van de Verzending**
++++
+
++++ Alternatieve verzendmethoden
 
 - **[AEM publiceert Verzending](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)** - voor complexe werkschema&#39;s en ondernemingsintegratie
 - **[de Douane legt Acties](/help/forms/configure-submit-actions-core-components.md)** voor - Geavanceerde voorlegging behandeling
 
-### **het Beheer van Gegevens**
++++
+
++++ Gegevensbeheer
 
 - **[Analytics van de Vorm](/help/forms/view-understand-aem-forms-analytics-reports.md)** - de prestaties en het gebruik van de vorm van het spoor
 - **[Integratie van Gegevens](/help/forms/configure-data-sources.md)** - verbind vormen met gegevensbestanden en de systemen van CRM
+
++++
 
 ## Samenvatting
 
@@ -555,4 +611,4 @@ De Forms-verzendservice biedt een krachtige, niet-codeoplossing voor het rechtst
 - **API toegang** - Programmatic voorleggingsmogelijkheden
 - **veiligheid van de Onderneming** - Adobe-Beheerde eindpunten met toegangscontroles
 
-**Klaar om te beginnen?*** volg de [ handconfiguratie ](#manual-configuration) gids voor een visuele opstelling, of sprong aan [ API configuratie ](#api-configuration) voor programmatic integratie.
+**Klaar om te beginnen?** volg de [ handconfiguratie ](#manual-configuration) gids voor een visuele opstelling, of sprong aan [ API configuratie ](#api-configuration) voor programmatic integratie.

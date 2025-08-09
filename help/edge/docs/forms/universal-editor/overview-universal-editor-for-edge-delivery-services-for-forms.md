@@ -4,9 +4,9 @@ description: Met Universal Editor voor Edge Delivery Services for Forms kunt u A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Of u nu lichtgewicht weergave op de client beheert, compatibiliteit tussen brows
 
 | ![ het Stijlen ](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![ prefill de Diensten ](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![ het Testen A/B ](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**het Stijlen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **prefill de Diensten** (Binnenkort komend) | [**het Testen A/B** ](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**het Stijlen**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Vul vormen](/help/edge/docs/forms/universal-editor/prefill-form.md)** vooraf in | [**het Testen A/B** ](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Met CSS opmaken kunnen ontwikkelaars de weergave van formulierelementen aanpassen en een visueel aantrekkelijk ontwerp maken dat wordt uitgelijnd op de esthetiek van de website. | Pre-fill Services vult formuliervelden automatisch met relevante gebruikersgegevens uit verschillende bronnen, waardoor de handmatige invoer wordt verminderd en de gebruikerservaring wordt verbeterd. | Met A/B-tests kunnen organisaties experimenteren met verschillende formulierontwerpen, indelingen en functies om de best presterende varianten te identificeren. |
 
 | ![ Analytics &amp; het Volgen ](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Fragmenten van de Vorm ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![ Gegevens die ](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) binden |

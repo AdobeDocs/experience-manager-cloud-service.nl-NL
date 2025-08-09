@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2609'
 ht-degree: 0%
 
 ---
@@ -48,45 +48,47 @@ Selecteer de benadering die uw scenario aanpast:
 
 ## Vereisten
 
-Voordat u begint, moet u het volgende doen:
+Voor een vloeiende en geslaagde ervaring met Edge Delivery Services for AEM Forms met de Universal Editor, moet u de volgende voorwaarden controleren en bevestigen voordat u verdergaat:
 
-### Vereiste toegang
+### Toegangsvereisten
 
-- **GitHub rekening** met toestemming om bewaarplaatsen tot stand te brengen
-- **AEM as a Cloud Service** auteurstoegang
+- **Rekening GitHub**: U moet een rekening GitHub met toestemmingen hebben om nieuwe bewaarplaatsen tot stand te brengen. Dit is essentieel voor het beheren van uw projectbroncode en het samenwerken met uw team.
+- **Toegang van de Authoring van AEM as a Cloud Service**: Zorg ervoor u auteur-vlakke toegang tot uw milieu van AEM as a Cloud Service hebt. Deze toegang is vereist voor het maken, bewerken en publiceren van formulieren.
 
 ### Technische vereisten
 
-- **de grondbeginselen van de Git**: kloon, begaat, duw verrichtingen
-- **de technologieën van het Web**: HTML, CSS, de grondbeginselen van JavaScript
-- **Node.js** (versie 16+ geadviseerd) voor lokale ontwikkeling
-- **npm** of **garen** pakketmanager
+- **Familiariteit met Git**: U zou comfortabel moeten zijn uitvoerend basishandelingen van het Git zoals het klonen bewaarplaatsen, het begaan van veranderingen, en het duwen van updates. Deze vaardigheden zijn fundamenteel voor broncontrole en projectsamenwerking.
+- **Begrip van de Technologieën van het Web**: Een werkende kennis van HTML, CSS, en JavaScript wordt geadviseerd. Deze technologieën vormen de basis van formulieraanpassingen en probleemoplossing.
+- **Node.js (versie 16 of hoger)**: Node.js wordt vereist voor lokale ontwikkeling en het runnen bouwt hulpmiddelen. Zorg ervoor dat versie 16 of hoger op uw systeem is geïnstalleerd.
+- **de Manager van het Pakket (npm of garen)**: U zult of npm (de Manager van het Pakket van de Knoop) of garen nodig hebben om projectgebiedsdelen en manuscripten te beheren.
 
-### Aanbevolen kennis
+### Aanbevolen achtergrond
 
-- Basisbegrip van AEM Sites-concepten
-- Kennis van de beginselen van het formulierontwerp
-- Ervaring met WYSIWYG-editors
+- **de Concepten van AEM Sites**: Een basisbegrip van AEM Sites, met inbegrip van plaatsstructuur en inhoud creatie, zal u helpen en vormen effectief integreren navigeren.
+- **Beginselen van het Ontwerp van de Vorm**: De vertrouwdheid met beste praktijken in vorm ontwerp-zoals bruikbaarheid, toegankelijkheid, en gegevensbevestiging-zal u toelaten om efficiënte en gebruikersvriendelijke vormen tot stand te brengen.
+- **Ervaring met WYSIWYG Editors**: De vroegere ervaring die redacteurs gebruikt van What You See Is What You Get (WYSIWYG) zal u hefboomwerking de visuele auteursmogelijkheden van de Universele Redacteur efficiënter helpen.
 
 >[!TIP]
 >
-> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL) wordt.
+> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html) wordt.
 
-## Pad A: Nieuw project maken met Forms
+## Pad A: Een nieuw project maken met Forms
 
-**Best voor:** Nieuwe implementaties of bewijs-van-concepten
+**geadviseerd voor:** Nieuwe projecten, piloten, of bewijs-van-concept initiatieven
 
-De AEM Forms Boilerplate biedt een vooraf geconfigureerde sjabloon met een geïntegreerd adaptief Forms Block.
+Gebruik de AEM Forms Boilerplate om uw projectopstelling te versnellen. Deze bouwsteen biedt een gebruiksklare sjabloon die het Adaptive Forms Block naadloos integreert, waarmee u snel formulieren kunt maken en implementeren binnen uw AEM-site.
 
-### Overzicht van stappen
+### Overzicht
 
-1. Opstelling een bewaarplaats van GitHub van het malplaatje
-2. AEM Code Sync installeren
-3. AEM-projectverbinding configureren
-4. Een AEM-site maken en publiceren
-5. Formulieren toevoegen met de Universal Editor
+Als u uw nieuwe project met geïntegreerde formulieren wilt starten, gaat u als volgt te werk:
 
-Laten we elke stap doorlopen:
+1. Maak een GitHub-opslagplaats met de AEM Forms Boilerplate-sjabloon.
+2. Stel AEM Code Sync in om de synchronisatie van inhoud tussen AEM en uw repository te automatiseren.
+3. Vorm de verbinding tussen uw project GitHub en uw milieu van AEM.
+4. Een nieuwe AEM-site maken en publiceren.
+5. Formulieren toevoegen en beheren met de Universal Editor.
+
+De volgende secties zullen u door elke stap in detail begeleiden, die een vlotte en efficiënte ervaring verzekeren van de projectopstelling.
 
 +++Stap 1: Create GitHub Repository from Template
 
@@ -184,7 +186,7 @@ Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgev
 
     >[!NOTE] 
     > 
-    >Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+>Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
 +++
 
@@ -320,20 +322,26 @@ Als u al een AEM-project hebt met Edge Delivery Services, kunt u formuliermogeli
 
 ### Vereisten voor pad B
 
-- Het bestaande project van AEM dat met [ wordt gebouwd AEM Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk)
-- Plaatselijke ontwikkelomgeving ingesteld
-- Toegang tot uw gegevensopslagruimte krijgen
+Als u formulieren wilt integreren in uw bestaande AEM-project, moet u aan de volgende voorwaarden voldoen:
 
-**Gebruikend AEM Forms Boilerplate?** als uw project met [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) werd gecreeerd, zijn de vormen reeds geïntegreerd. Skip aan [ creeer Uw Eerste Vorm ](#create-your-first-form).
+- U hebt een bestaand project van AEM dat gebruikend [ AEM Boilerplate XWalk ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) werd gecreeerd.
+- U hebt opstelling van het a [ lokale ontwikkelmilieu ](#set-up-local-development-environment)
+- U hebt toegang tot uw projectopslagplaats, waardoor u wijzigingen kunt klonen, wijzigen en doorvoeren.
 
-Laten we elke stap doorlopen:
+>[!NOTE]
+>
+> Als uw project oorspronkelijk opstelling gebruikend [ AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms) was, is de vormfunctionaliteit reeds inbegrepen. In dit geval, kunt u zich naar [ bewegen leidt tot Uw Eerste sectie van de Vorm ](#create-your-first-form).
 
-### Overzicht van stappen
+De volgende handleiding biedt een gestructureerde aanpak voor het toevoegen van formuliermogelijkheden aan uw bestaande project. Elke stap is ontworpen voor een naadloze integratie en optimale functionaliteit in de Universal Editor-omgeving.
 
-1. Aangepaste Forms-blokbestanden kopiëren
-2. Projectconfiguratie bijwerken
-3. ESLint-regels configureren
-4. Wijzigingen maken en toewijzen
+### Overzicht
+
+U voert de volgende stappen op hoog niveau uit:
+
+1. Kopieer de Adaptive Forms Block-bestanden naar uw project.
+2. Werk de configuratie van uw project bij om vormcomponenten te erkennen en te steunen.
+3. Pas de regels ESLint aan om de nieuwe dossiers en coderingspatronen aan te passen.
+4. Stel uw project samen en leg de wijzigingen vast aan uw opslagplaats.
 
 +++Stap 1: Forms-blokbestanden kopiëren
 
@@ -494,19 +502,31 @@ Laten we elke stap doorlopen:
 
 ## Uw eerste formulier maken
 
-**is op van toepassing:** zowel Weg A als de gebruikers van Weg B
+**die deze sectie zou moeten volgen:**\
+Deze sectie is relevant voor gebruikers die of Weg A (nieuw project) of Weg B (bestaand project) volgen.
 
-Nu uw project is ingesteld met formuliermogelijkheden, maken we uw eerste formulier met de WYSIWYG-interface van Universal Editor.
+Met uw project dat nu is uitgerust voor het maken van formulieren, kunt u uw eerste formulier maken met de intuïtieve WYSIWYG-ontwerpomgeving van de Universal Editor. De volgende stappen bieden een gestructureerde aanpak voor het ontwerpen, configureren en publiceren van een formulier binnen uw AEM-site.
 
-### Overzicht van het proces voor het maken van formulieren
+### Overzicht
 
-1. **voeg Aangepast Blok van de Vorm** aan uw pagina toe
-2. **voeg vormcomponenten** (tekstinput, knopen, enz.) toe
-3. **vorm componenteneigenschappen**
-4. **Voorproef en test** uw vorm
-5. **publiceer** de bijgewerkte pagina
+Het proces voor het maken van een formulier in de Universal Editor bestaat uit verschillende belangrijke fasen:
 
-Laten we elke stap doorlopen:
+1. **Tussenvoegsel het Adaptieve Blok van de Vorm**\
+   Voeg eerst het Adaptief formulierblok toe aan de door u gekozen pagina.
+
+2. **voeg de Componenten van de Vorm toe**\
+   Vul het formulier door componenten in te voegen, zoals tekstvelden, knoppen en andere invoerelementen.
+
+3. **vorm de Eigenschappen van de Component**\
+   Pas de instellingen en eigenschappen van elke component aan aan de vereisten van het formulier aan.
+
+4. **Voorproef en test Uw Vorm**\
+   Gebruik de voorbeeldfunctionaliteit om de weergave en het gedrag van het formulier te valideren voordat u het publiceert.
+
+5. **publiceer de Bijgewerkte Pagina**\
+   Publiceer de pagina nadat deze is bevonden om het formulier beschikbaar te maken voor eindgebruikers.
+
+In de volgende secties vindt u een gedetailleerde handleiding voor elk van deze stappen, zodat u over een vloeiende en effectieve manier beschikt om formulieren te maken.
 
 +++Stap 1: Adaptief formulierblok toevoegen
 
@@ -641,7 +661,7 @@ Nu u een werkformulier hebt, kunt u:
 
 Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
 
-+++ AEM CLI en lokale ontwikkeling instellen
+++ AEM CLI en lokale ontwikkeling instellen
 
 1. **installeer AEM CLI**
 

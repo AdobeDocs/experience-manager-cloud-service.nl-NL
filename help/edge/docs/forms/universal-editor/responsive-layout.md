@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 0%
 
 # Responsieve Forms maken met Universal Editor
 
-Gebruikers kunnen formulieren openen op een groot aantal apparaten, zoals desktops, tablets en smartphones. Het ontwerpen van responsieve formulieren zorgt voor een optimale ervaring voor alle gebruikers, ongeacht het apparaat. In deze handleiding wordt uitgelegd hoe u formulieren voor elke schermgrootte ontwerpt, test en optimaliseert met de Universal Editor.
+Het moderne weblandschap vereist formulieren die naadloos werken in een steeds groter wordend spectrum van apparaten en schermgrootten. Van grote desktopmonitoren tot compacte smartphoneschermen verwachten gebruikers consistente, intuïtieve ervaringen, ongeacht het gekozen apparaat. Het maken van responsieve formulieren is niet meer optioneel. Het is een fundamentele vereiste voor het aanbieden van professionele, toegankelijke en voor conversie geoptimaliseerde digitale ervaringen.
 
+De Universal Editor biedt uitgebreide gereedschappen en methoden voor het ontwikkelen van responsieve formulieren die zich op intelligente wijze aanpassen aan verschillende schermafmetingen, invoermethoden en gebruikerscontexten. In deze handleiding worden de technische funderingen, implementatiestrategieën en optimalisatietechnieken besproken die nodig zijn om formulieren te maken die uitzonderlijk op alle apparaten kunnen worden toegepast, terwijl bruikbaarheid, toegankelijkheid en visuele aantrekkingskracht behouden blijven.
 
 Bij het maken van responsieve formulieren zijn twee hoofdactiviteiten betrokken:
 
@@ -74,7 +75,7 @@ Door uw formulieren op verschillende apparaten te testen, kunt u problemen die o
 
 **Stap 3: De Oriëntaties van het Apparaat van de test**
 
-Gebruik het **pictogram van de Rotator van het 1&rbrace; Scherm** om allebei te testen:
+Gebruik het **pictogram van de Rotator van het 1} Scherm** om allebei te testen:
 
 - **Staand wijze**: Standaard mobiele richtlijn
 - **Liggende wijze**: Geroteerde tablet of telefoonmening
@@ -160,115 +161,116 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 ### Layout deelvenster
 
-**Doel:** organiseert verwante inhoud in visueel verschillende secties die gelijktijdig kunnen worden bekeken.
+In de deelvensterindeling wordt gerelateerde inhoud gerangschikt in visueel verschillende secties, zodat gebruikers meerdere secties tegelijk kunnen bekijken. Deze indeling is ideaal voor formulieren met gecategoriseerde informatie die baat heeft bij een presentatie naast elkaar op grotere schermen.
 
 ![ Voorbeeld van de Lay-out van het Comité ](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Responsief Gedrag:**
+**Responsief Gedrag**
 
-- **Desktop (1200px+):** de vertoningen van panelen zij aan zij of in een net
-- **Tablet (768px-1199px):** stapel van Panelen verticaal met het uit elkaar plaatsen
-- **Mobiel (320px-767px):** Enige-kolomlay-out met duidelijke sectieonderbrekingen
+- **Desktop (1200px en hierboven):** de panelen worden getoond zij aan zij of in een net voor maximumzicht.
+- **tablet (768px-1199px):** stapel van Panelen verticaal met aangewezen spatiëring om duidelijkheid te handhaven.
+- **Mobiel (320px-767px):** de Comités worden voorgesteld in een enig-kolomlay-out, met duidelijke scheiding tussen secties voor gemakkelijke navigatie.
 
-**Stappen van de Implementatie:**
+**hoe te om uit te voeren**
 
-1. Gebruik de [ Component van het Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Groepeer verwante velden in elk deelvenster.
-3. Voeg duidelijke koppen toe voor elke sectie.
-4. Zorg voor voldoende ruimte tussen deelvensters.
+1. Voeg de [ Component van het Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
+2. Groepeer verwante velden binnen elk deelvenster om de logische organisatie te behouden.
+3. Wijs duidelijke, beschrijvende rubrieken aan elke paneelsectie toe.
+4. Zorg ervoor dat er voldoende ruimte is tussen deelvensters om visueel onoverzichtelijk te blijven.
 
-**Beste praktijken:**
+**Beste praktijken**
 
-- Beperk het aantal tot 3-4 deelvensters op het bureaublad om overweldigende gebruikers te voorkomen.
-- Gebruik beschrijvende titels voor elk deelvenster.
-- Groepeer verwante velden logisch om cognitieve belasting te verminderen.
-- Navigatie in het deelvenster Testen op aanraakapparaten.
+- Beperk het aantal deelvensters tot 3 of 4 op het bureaublad om overweldigende gebruikers te voorkomen.
+- Gebruik beknopte, beschrijvende titels voor elk deelvenster om de gebruiker meer inzicht te geven.
+- U kunt velden in deelvensters logisch ordenen om cognitief laden te minimaliseren.
+- Navigatie via het deelvenster Testen op aanraakapparaten om de bruikbaarheid op alle platforms te garanderen.
 
-**Gevallen van het Gebruik van het Voorbeeld:**
+**Gemeenschappelijke Gevallen van het Gebruik**
 
-- **Toepassing van de Baan:** Persoonlijke Info, Onderwijs, Ervaring, Verwijzingen
-- **de Registratie van het Product:** Basisdetails, Technische Specificaties, Info van de Garantie
-- **Forms van het Onderzoek:** Demografieën, Voorkeur, Terugkoppeling, Contact
+- **Toepassing van de Baan:** secties voor Persoonlijke Informatie, Onderwijs, Ervaring, en Verwijzingen.
+- **de Registratie van het Product:** Comités voor Basic Details, Technische Specificaties, en de Informatie van de Garantie.
+- **Forms van het Onderzoek:** Groepen voor Demografie, Voorkeur, Terugkoppeling, en de Informatie van het Contact.
 
 ### Wizard Layout
 
-**Doel:** gidst gebruikers door complexe processen stap voor stap, verminderend cognitieve lading en verbeterend voltooiingstarieven.
+De Lay-out van de Tovenaar begeleidt gebruikers door een multi-step proces, dat één sectie tegelijkertijd presenteert. Deze indeling is vooral handig voor complexe formulieren, omdat cognitieve belasting wordt verminderd en de voltooiingssnelheid toeneemt doordat het proces wordt opgedeeld in hanteerbare stappen.
 
 ![ het Voorbeeld van de Lay-out van de Tovenaar ](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Responsief Gedrag:**
+**Responsief Gedrag**
 
-- **Alle Apparaten:** handhaaft enig-stap nadruk voor optimale mobiele ervaring.
-- **Inhoud van de Stap:** past binnen elke stap (het stapelen of zij aan zij) aan.
-- **Navigatie:** Aanraakvriendelijke knopen met voldoende het uit elkaar plaatsen.
-- **Indicator van de Voortgang:** schrapt geschikt voor het schermgrootte.
+- **Alle Apparaten:** handhaaft een enig-stap nadruk, die voor mobiele gebruikers optimaal is.
+- **Inhoud van de Stap:** Elke stap past ontvankelijk aan, stapelend gebieden of het rangschikken van hen zij aan zij zoals aangewezen voor de het schermgrootte.
+- **Navigatie:** kenmerkt aanrakingsvriendelijke knopen met adequate spatiëring voor gemakkelijke interactie.
+- **de Indicator van de Voortgang:** de bars van de Voortgang of stap wijzen schalen geschikt voor verschillende apparaten, die duidelijke terugkoppelen op voltooiingsstatus verstrekken.
 
-**Stappen van de Implementatie:**
+**hoe te om uit te voeren**
 
-1. Gebruik de [ Component van de Tovenaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Complexe formulieren onderbrengen in logische stappen (3-7 stappen zijn optimaal).
-3. Voeg voortgangsindicatoren toe voor de gebruikersierichting.
-4. Zorg voor duidelijke besturingselementen voor navigatie (Volgende, Vorige, Opslaan).
+1. Neem de [ Component van de Tovenaar ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
+2. Verdeel het formulier in logische stappen, idealiter tussen 3 en 7, om elke stap geconcentreerd en beheerbaar te houden.
+3. Voeg voortgangsindicatoren toe om gebruikers te helpen hun positie in het proces te begrijpen.
+4. Zorg voor duidelijke besturingselementen voor navigatie, zoals de knoppen Volgende, Vorige en Opslaan.
 
-**Mobiele Optimalisering:**
+**Mobiele Tips van de Optimalisering**
 
-- Gebruik grote aanraakdoelen (minimaal 44 px) voor navigatieknoppen.
-- Zorg ervoor dat de step-indicatoren duidelijk en zichtbaar zijn op kleine schermen.
-- Beperk het aantal velden per stap om schuiven te beperken.
-- Automatisch opslaan inschakelen om gegevensverlies te voorkomen.
+- Gebruik grote aanraakdoelen (minimaal 44 px hoog) voor navigatiebesturingselementen om de toegankelijkheid te verbeteren.
+- Zorg ervoor dat de step-indicatoren zichtbaar en leesbaar zijn op kleine schermen.
+- Beperk het aantal velden per stap om schuiven te minimaliseren en de focus te verbeteren.
+- Schakel de functie Automatisch opslaan in om gegevensverlies te voorkomen als gebruikers het formulier verlaten.
 
-**Beste praktijken:**
+**Beste praktijken**
 
-- Zorg voor logische stapvoortgang. Elke stap moet op de vorige voortbouwen.
-- Gebruik heldere staptitels, zodat gebruikers weten wat ze moeten verwachten.
-- Valideer de invoer bij elke stap om fouten vroeg af te vangen.
-- Gebruikers kunnen terugnavigeren om gegevens te bekijken of te bewerken.
+- De stappen van het ontwerp om een logische vooruitgang te volgen, met elke stap voortbouwend op vorige.
+- Gebruik duidelijke, beschrijvende titels voor elke stap om gebruikersverwachtingen in te stellen.
+- Valideer gebruikersinvoer bij elke stap om fouten vroeg af te vangen en frustratie te verminderen.
+- Gebruikers toestaan terug te navigeren om eerdere informatie te bekijken of te bewerken zonder gegevens te verliezen.
 
-**Gevallen van het Gebruik van het Voorbeeld:**
+**Gemeenschappelijke Gevallen van het Gebruik**
 
-- **Verzekeringsclaims:** incident → Bewijs → Persoonlijk overzicht
-- **de Opstelling van de Rekening:** Basis Info → Voorkeur → Veiligheid → Bevestiging
-- **Proces van de Orde:** Producten → Verzending → Betaling → Samenvatting
+- **Vorderingen van de Verzekering:** Stappen voor de Details van het Ongeval, de Verzending van het Bewijs, Persoonlijke Informatie, en Overzicht.
+- **Opstelling van de Rekening:** Stages voor BasisInformatie, Voorkeur, de Montages van de Veiligheid, en Bevestiging.
+- **Proces van de Orde:** Stappen voor de Selectie van het Product, Verzendinformatie, Betalingsdetails, en Overzicht van de Orde.
 
 ### Accordeonlay-out
 
-**Doel:** bespaart ruimte door inhoud in doen ineenstorten secties te organiseren, ideaal voor facultatieve of secundaire informatie.
+Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelten te ordenen, waardoor deze ideaal is voor optionele of secundaire informatie. Deze indeling is vooral handig voor formulieren met inhoud die logisch kan worden gegroepeerd en die niet in één keer hoeft te worden weergegeven.
 
 ![ het Voorbeeld van de Lay-out van de Accordeon ](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Responsief Gedrag:**
+**Responsief Gedrag**
 
-- **Uitstekende mobiele prestaties:** slechts relevante inhoud wordt getoond.
-- **aanraking-geoptimaliseerde kopballen:** Gemakkelijk om secties te tikken en uit te breiden.
-- **Vloeiende animaties:** verstrek visuele terugkoppelen voor interactie.
-- **ruimteefficiënt:** minimaliseert het scrollen op alle apparaten.
+- **Mobiele Prestaties:** slechts wordt de relevante sectie uitgebreid, die de behoefte aan het scrollen verminderen en ladingstijden verbeteren.
+- **aanraking-Geoptimaliseerde Kopballen:** de kopballen van de Sectie zijn gemakkelijk te onttrekken en uit te breiden, ondersteunend natuurlijke gebaren op mobiele apparaten.
+- **Vloeiende Animaties:** het uitbreiden en het doen ineenstorten secties verstrekken visuele terugkoppelen voor gebruikersinteractie.
+- **Efficiëntie van de Ruimte:** de samengevouwen secties minimaliseren verticale ruimte, die de vorm gemakkelijker maken om op alle apparaten te navigeren.
 
-**Stappen van de Implementatie:**
+**hoe te om uit te voeren**
 
-1. Gebruik de [ Component van de Accordeon ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Groepeer gerelateerde optionele inhoud in elke sectie.
-3. Gebruik beschrijvende sectiekoppen.
-4. Stel de juiste open/gesloten standaardstatussen in.
+1. Voeg de [ Component van de Accordeon ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
+2. Groepeer gerelateerde optionele of secundaire inhoud binnen elke accordeonsectie.
+3. Gebruik duidelijke, beschrijvende kopteksten voor elke sectie om gebruikers te helpen begrijpen welke informatie bevat binnen is.
+4. Stel de juiste open of gesloten standaardinstellingen voor elke sectie in op basis van belang en gebruikersbehoeften.
 
-**Mobiele Voordelen:**
+**Mobiele Voordelen**
 
-- Vermindert het schuiven door ongebruikte secties samen te vouwen.
-- Aanraakvriendelijke interactie met natuurlijke bewegingen voor uitvouwen/samenvouwen.
-- Sneller laden—Alleen actieve inhoud is zichtbaar.
-- Verbeterde focus - gebruikers zien alleen wat ze nodig hebben.
+- Vermindert het schuiven door ongebruikte secties samen te vouwen, die gebruikers toestaan om zich op één sectie tegelijkertijd te concentreren.
+- Aanraakvriendelijke interactie ondersteunt natuurlijke bewegingen voor uit- en samenvouwen.
+- Sneller laden, omdat alleen de actieve inhoud zichtbaar is.
+- Verbeterde focus, omdat gebruikers op elk gewenst moment alleen de informatie zien die ze nodig hebben.
 
-**Beste praktijken:**
+**Beste praktijken**
 
-- Gebruik duidelijke sectiekoppen, zodat gebruikers weten wat er in staat voordat u gaat uitbreiden.
-- Gerelateerde inhoud logisch groeperen binnen elke sectie.
-- Stel de belangrijke secties in die moeten worden uitgevouwen als dat nodig is.
-- Geef korte sectievoorvertoningen weer om gebruikers te helpen beslissen wat ze willen uitbreiden.
+- Gebruik duidelijke sectiekoppen, zodat gebruikers weten wat ze moeten verwachten voordat ze een sectie uitbreiden.
+- Groepeer gerelateerde inhoud logisch binnen elke sectie om begrip te bevorderen.
+- Stel belangrijke secties in die moeten worden uitgebreid als directe aandacht vereist is.
+- Geef korte voorvertoningen of samenvattingen van secties weer, zodat gebruikers gemakkelijker kunnen beslissen welke secties ze willen uitvouwen.
 
-**Gevallen van het Gebruik van het Voorbeeld:**
+**Gemeenschappelijke Gevallen van het Gebruik**
 
-- **de Configuratie van het Product:** Basis → Geavanceerd → Bureau → Steun
-- **FAQ Forms:** Rekening → Facturatie → Technisch → Algemeen
-- **Forms van Montages:** Privacy → Meldingen → Vorm → Geavanceerd
+- **Configuratie van het Product:** secties voor BasisOpties, Geavanceerde Montages, Toebehoren, en Steun.
+- **FAQ Forms:** Groepen voor Rekening, het Factureren, Technische, en Algemene vragen.
+- **Montages Forms:** secties voor Privacy, Meldingen, Vormgeving, en Geavanceerde opties.
+
 
 ## Deel 3: Aanbevolen werkwijzen voor responsief ontwerp
 
@@ -276,42 +278,42 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 +++Mobiele optimalisatie (320 px-767 px)
 
-**Essentiële Praktijken:**
+**Lay-out en Interactie:**
 
-- Gebruik een lay-out met één kolom voor alle inhoud.
-- Geef grote, aanraakvriendelijke knoppen (minimale hoogte van 44 px).
-- Vereenvoudig navigatie met duidelijke achterkant/volgende opties.
-- Minimaliseer het schuiven binnen elke sectie.
-- Automatisch focussen op het eerste veld om het toetsenbord weer te geven.
+- Gebruik een indeling met één kolom voor alle formulierinhoud om de leesbaarheid en het gebruiksgemak te maximaliseren.
+- Zorg ervoor dat alle knoppen en interactieve elementen ten minste 44 px hoog zijn voor betrouwbare aanraakinteractie.
+- Zorg voor duidelijke, eenvoudige navigatie met zichtbare achterzijde en volgende knoppen.
+- Minimaliseer de behoefte om binnen elke sectie te scrollen door lange vormen te breken.
+- Focus automatisch op het eerste invoerveld om het mobiele toetsenbord te vragen.
 
-**gebied-Specifieke Richtlijnen:**
+**Richtlijnen van het Gebied:**
 
-- **de input van de Tekst:** Volledige breedte met de veelvoudige opvulling.
-- **Dropdowns:** Gebruik inheemse uitgezochte elementen voor betere aanrakingservaring.
-- **plukkers van de Datum:** Gebruik inheemse datuminput voor mobiele verenigbaarheid.
-- **uploadt het Dossier:** verstrek grote, duidelijke uploadgebieden.
+- Tekstvelden moeten de volledige breedte van het scherm beslaan met voldoende opvulling voor aanraakinvoer.
+- Gebruik native dropdown/select-elementen voor optimale mobiele bruikbaarheid.
+- Eigen datumkiezers implementeren voor een consistente mobiele ervaring.
+- Maak gebieden voor het uploaden van bestanden groot en duidelijk gemarkeerd voor eenvoudige toegang.
 
 +++
 
 +++Tablet optimaliseren (768 px-1199 px)
 
-**Strategieën van de Lay-out:**
+**Lay-out en Bruikbaarheid:**
 
-- Gebruik lay-outs met twee kolommen voor verwante velden.
-- Test zowel de stand Staand als Liggend.
-- Ondersteuning voor aanraak- en muisinteractie.
-- Grotere inhoudsgebieden bieden met behoud van leesbaarheid.
+- Gebruik lay-outs met twee kolommen voor verwante velden om te profiteren van de grotere schermruimte.
+- De vormgeving en bruikbaarheid van het formulier testen in zowel staande als liggende richting.
+- Ontwerpen voor zowel aanraak- als muisinvoer, zodat alle besturingselementen gemakkelijk toegankelijk zijn.
+- De grootte van het inhoudsgebied verhogen met behoud van duidelijke visuele hiërarchie en leesbaarheid.
 
 +++
 
 +++Desktop Optimization (1200px+)
 
-**Geavanceerde Eigenschappen:**
+**Geavanceerde Eigenschappen en Lay-out:**
 
-- Gebruik lay-outs met meerdere kolommen voor efficiënt ruimtegebruik.
-- Sneltoetsen voor stroomgebruikers aanbieden.
-- Hoverstatussen implementeren voor interactieve feedback.
-- Geavanceerde validatie voorzien van gedetailleerde foutberichten.
+- Gebruik lay-outs met meerdere kolommen om efficiënt horizontale ruimte te gebruiken en verticaal schuiven te verminderen.
+- Geef sneltoetsen op voor frequente acties ter ondersteuning van de gebruikers van stroom.
+- Implementeer aanwijsstatussen en visuele feedback voor interactieve elementen.
+- Geavanceerde validatie bieden met duidelijke, gedetailleerde foutberichten voor complexe formulieren.
 
 +++
 
@@ -321,52 +323,52 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 +++pagina-einden van formulierlay-outs op mobiele apparaten
 
-**Gemeenschappelijke Oorzaken:**
+**Mogelijke Oorzaken:**
 
-- Elementen met vaste breedte die niet worden geschaald
-- CSS die is ontworpen voor eerste lay-outs voor desktops
+- Elementen met vaste breedte die zich niet aanpassen aan kleinere schermen
+- Bureaubladeerste CSS die mobiele stijlen overschrijft
 - Afbeeldingen of inhoud die de containers overlopen
 
-**Oplossingen:**
+**hoe te bevestigen:**
 
-- Zorg ervoor dat de afbeeldingen en containers worden geschaald naar de schermgrootte.
-- Gebruik een mobiel-eerste ontwerp met progressieve verbetering.
-- Testen met zowel apparaatemulators als echte apparaten.
-- Gebruik flexibele grootten in plaats van vaste afmetingen.
+- Zorg ervoor dat alle afbeeldingen en containers een relatieve of op percentages gebaseerde grootte gebruiken.
+- Begin met een eerste benadering van CSS voor mobiele apparaten en laag op verbeteringen voor grotere schermen.
+- Formulieren testen met zowel apparaatemulators als echte apparaten.
+- Vermijd vaste afmetingen; gebruik flexibele lay-outs.
 
 +++
 
 +++Touch-doelen te klein
 
-**Gemeenschappelijke Oorzaken:**
+**Mogelijke Oorzaken:**
 
-- Knoppen kleiner dan 44px × 44px
+- Knoppen of koppelingen kleiner dan 44 bij 44 px
 - Interactieve elementen die te dicht bij elkaar zijn geplaatst
-- Aangepaste CSS-overschrijvingen voor aanraakvriendelijke standaardinstellingen
+- Aangepaste CSS die de standaardgrootte van het aanraakdoel reduceert
 
-**Oplossingen:**
+**hoe te bevestigen:**
 
-- Zorg ervoor dat alle interactieve elementen ten minste 44px × 44px zijn.
-- Tussenruimte toevoegen tussen knoppen en koppelingen.
-- Testen van aanrakingsinteractie met echte vingers, niet alleen met een muis.
-- Gebruik meer aanraakdoelgebieden om gemakkelijker te kunnen tikken.
+- Zorg ervoor dat elk interactief element ten minste 44px bij 44px is.
+- Voeg adequate spatiëring toe tussen knoppen, koppelingen en andere besturingselementen.
+- Test met echte aanraakapparaten, niet alleen met een muis.
+- Vouw de aanraakdoelgebieden naar wens uit voor toegankelijkheid.
 
 +++
 
 +++Problemen met overloop van inhoud
 
-**Gemeenschappelijke Oorzaken:**
+**Mogelijke Oorzaken:**
 
 - Lange tekst of labels die niet omlopen
-- Containers met vaste breedte
-- Afbeeldingen die niet correct worden geschaald
+- Containers met vaste breedten
+- Afbeeldingen die niet responsief worden geschaald
 
-**Oplossingen:**
+**hoe te bevestigen:**
 
-- Tekstomloop inschakelen voor lange inhoud.
-- Gebruik responsieve afbeeldingen die op de juiste wijze worden geschaald.
-- Voer flexibele lay-outs uit die zich aan inhoud aanpassen.
-- Testen met verschillende lengte van inhoud.
+- Tekstomloop inschakelen voor alle labels en inhoud.
+- Gebruik responsieve afbeeldingen die met de container worden geschaald.
+- Ontwerp flexibele lay-outs die zich aanpassen aan verschillende lengte van inhoud.
+- Test met zowel korte als lange inhoud om het aanpassingsvermogen te waarborgen.
 
 +++
 
@@ -374,18 +376,18 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 +++ Langzaam laden op mobiel
 
-**Gemeenschappelijke Oorzaken:**
+**Mogelijke Oorzaken:**
 
-- Grote afbeeldingen zijn niet geoptimaliseerd voor mobiele apparaten
-- Buitengewone uitvoering van JavaScript
+- Grote, niet-geoptimaliseerde afbeeldingen
+- Zware of excessieve JavaScript
 - Te veel formuliervelden tegelijk laden
 
-**Oplossingen:**
+**hoe te bevestigen:**
 
-- Optimaliseer afbeeldingen voor verschillende schermgrootten.
-- Niet-kritieke inhoud alleen laden wanneer dat nodig is.
-- Gebruik technieken om het laden van mobiele apparaten te versnellen.
-- Scripts en widgets van derden minimaliseren.
+- Optimaliseer afbeeldingen voor mobiele apparaten en gebruik de juiste bestandsindelingen.
+- Niet-kritieke inhoud uitstellen of wazig laden.
+- Gebruik van scripts en widgets van derden minimaliseren.
+- Formuliervelden stroomlijnen om alleen te laden wat nodig is.
 
 +++
 
@@ -393,18 +395,18 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 +++emulator vs. verschillen in echt apparaat
 
-**Gemeenschappelijke Oorzaken:**
+**Mogelijke Oorzaken:**
 
-- Browserspecifieke renderverschillen
-- Verschillen tussen aanraken en muis
-- Netwerksnelheidsvariaties
+- Verschillen in renderingengines van browsers
+- Aanraakinteractie niet nauwkeurig gesimuleerd
+- Verschillen in netwerksnelheid
 
-**Oplossingen:**
+**hoe te bevestigen:**
 
-- Test waar mogelijk op de werkelijke apparaten.
-- Gebruik meerdere browsers voor emulatortesten.
-- Simuleer verschillende netwerksnelheden tijdens het testen.
-- Valideren met echte gebruikers in doelomgevingen.
+- Test altijd op echte apparaten naast emulators.
+- Gebruik meerdere browsers en apparaten voor uitgebreide tests.
+- Simuleer diverse netwerksnelheden om prestatiesknelpunten te identificeren.
+- Feedback verzamelen van echte gebruikers in het doelpubliek.
 
 +++
 
@@ -412,33 +414,34 @@ Lay-outpatronen bepalen hoe de formulierinhoud wordt aangepast aan verschillende
 
 +++Belangrijkste prestatie-indicatoren
 
-**Metriek van de Ervaring van de Gebruiker:**
+**Ervaring van de Gebruiker:**
 
-- **de voltooiingstarief van de Vorm:** Doel 85%+ op mobiel
-- **Te voltooien Tijd:** De mobiele voltooiingstijd zou binnen 20% van Desktop moeten zijn
-- **tarief van de Fout:** minder dan 5% bevestigingsfouten
-- **Ontbrekingspunten:** identificeer waar de gebruikers weg vallen
+- **het voltooiingstarief van de Vorm:** Beoogd voor 85% of hoger op mobiele apparaten.
+- **Tijd om te voltooien:** de mobiele gebruikers zouden vormen binnen 20% van Desktop voltooiingstijden moeten voltooien.
+- **tarief van de Fout:** houd bevestigingsfouten onder 5%.
+- **de punten van de Omzetting:** identificeer en richt stappen waar de gebruikers weg vallen.
 
 **Technische Prestaties:**
 
-- **de ladingstijd van de Pagina:** minder dan 3 seconden op netwerken 3G
-- **de Kernwaarden van het Web van de Kern:** ga alle prestaties van Google benchmarks over
-- **score van de Toegankelijkheid:** WCAG 2.1 de naleving van AA
-- **dwars-browser verenigbaarheid:** 98%+ functionaliteit over belangrijkste browsers
+- **de ladingstijd van de Pagina:** minder dan 3 seconden op een verbinding 3G.
+- **de Kernsteden van het Web:** ontmoeten of overschrijden Google geadviseerde drempels.
+- **Toegankelijkheid:** bereikt naleving WCAG 2.1 van aa.
+- **Browser verenigbaarheid:** verzeker 98%+ functionaliteit over alle belangrijke browsers.
 
 +++
 
 +++Checklist voor testen
 
-**vóór het Publiceren:**
+**Controle vóór Publicatie:**
 
-- Test het formulier op mobiele apparaten.
+- Het formulier testen op mobiele apparaten (niet alleen emulators).
 - Zorg ervoor dat alle aanraakdoelen ten minste 44px × 44px zijn.
-- Controleer de leesbaarheid van de tekst bij alle schermgrootten.
-- Bevestig dat formuliervalidatie werkt op alle apparaten.
-- Zorg ervoor dat de laadtijd op mobiele apparaten minder dan 3 seconden is.
-- Controleer of alle interactieve elementen toegankelijk zijn.
+- Controleer de leesbaarheid van de tekst bij alle ondersteunde schermformaten.
+- Bevestig dat formuliervalidatie op alle apparaten en in alle browsers consistent werkt.
+- Zorg ervoor dat de laadtijd van de mobiele telefoon minder dan 3 seconden is.
+- Controleer of alle interactieve elementen toegankelijk zijn via het toetsenbord en de schermlezers.
 - Test het formulier verzenden op alle ondersteunde apparaten.
+
 
 +++
 

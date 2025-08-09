@@ -1,13 +1,13 @@
 ---
+title: Hoe een e-mail verzenden bij het verzenden van een adaptief formulier?
 description: Ontdek het proces voor het instellen van e-mailmeldingen bij het verzenden van een adaptief formulier.
 keywords: hoe u een e-mail verzendt voor een formulier, een handeling voor e-mail verzenden, een adaptief formulier per e-mail, een formulierverzending per e-mail, een verzendgids
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -89,8 +89,8 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
    >[!NOTE]
    >
-   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+   > * Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+   > * Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 
 1. Klik **Verzending** lusje en selecteer **[!UICONTROL Send email]** voorlegt actie.
@@ -113,7 +113,7 @@ Het **de dialoogvakje van de Eigenschappen van de Vorm** verschijnt.
 
 * Het wordt aanbevolen de e-mailinhoud duidelijk en beknopt te houden. Gebruikers dienen inzicht te hebben in het doel van de e-mail en in de acties die ze moeten ondernemen.
 * Het wordt aanbevolen dat alle formuliervelden unieke elementnamen hebben, zelfs als ze op verschillende deelvensters in een adaptief formulier zijn geplaatst.
-* Bij gebruik van AEM as a Cloud Service is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Om het te activeren, leg een steunkaartje voor aan [ verzoektoegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email).
+* Bij gebruik van AEM as a Cloud Service is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Om het te activeren, leg een steunkaartje voor aan [ verzoektoegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 ## Verwante artikelen
 

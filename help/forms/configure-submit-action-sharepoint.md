@@ -1,13 +1,13 @@
 ---
+title: Hoe kan ik gegevens naar een SharePoint-opslagplaats verzenden na verzending van een adaptief formulier?
 description: Leer hoe u gegevens van uw Adaptief formulier naar een SharePoint-opslagruimte verzendt, zoals een SharePoint-lijst of documentbibliotheek wanneer u het formulier verzendt.
 keywords: Hoe verbindt u SharePoint-lijst met een adaptief formulier?, Hoe verbindt u een SharePoint-documentbibliotheek met een adaptief formulier, Verzenden naar SharePoint, Een SharePoint-documentbibliotheekconfiguratie maken, Verzenden naar SharePoint gebruiken in een adaptief formulier, Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
