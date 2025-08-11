@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 60e693593778a558e91d68da41025277438c6f03
+source-git-commit: a2cdc36d4df7651d70d42118b6641935279673fc
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -109,13 +109,13 @@ Kies een van de ondersteunde platforms:
 
 - **geeft toestemmingen** voor het doelspreadsheet uit
 - **delend mogelijkheden** om toegang tot `forms@adobe.com` te verlenen
-- **toestemmingen van de generatie van de verbinding 0&rbrace; &lbrace;voor uw gekozen platform**
+- **toestemmingen van de generatie van de verbinding 0} {voor uw gekozen platform**
 
 +++
 
 >[!TIP]
 >
->**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
+>**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
 
 ## Configuratiemethoden
 
@@ -135,8 +135,9 @@ De Forms-verzendservice biedt twee configuratiemethoden. Kies de methode die het
 
 Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-projectstichting gereed is:
 
-1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-1. **Update`fstab.yaml`** in uw projectwortel:
+1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+
+2. **Update`fstab.yaml`** in uw projectwortel:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -144,7 +145,10 @@ Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-p
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-1. **deel uw projectomslag** met `forms@adobe.com` (geef vereiste toestemmingen uit)
+
+3. **deel uw projectomslag** met `forms@adobe.com` (geef vereiste toestemmingen uit)
+
++++
 
 +++
 
@@ -164,9 +168,9 @@ Maak uw formulierstructuur met Google Sheets of Microsoft Excel.
 **Stappen van de Making van de Vorm:**
 
 1. **open uw spreadsheetplatform** (Google Bladen of Microsoft Excel)
-1. **creeer een nieuw spreadsheet** voor uw vormproject
-1. **Naam uw blad** (moet of `helix-default` of `shared-aem` zijn)
-1. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+2. **creeer een nieuw spreadsheet** voor uw vormproject
+3. **Naam uw blad** (moet of `helix-default` of `shared-aem` zijn)
+4. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ de Definitie van de Vorm ](/help/forms/assets/form-submission-definition.png)
 *Voorbeeld: De definitie van de vorm met gebiedstypes, etiketten, en bevestigingsregels*
@@ -197,9 +201,9 @@ Stel een speciaal blad in voor het ontvangen van formulierverzendgegevens.
 **Opstelling van het Blad van Gegevens:**
 
 1. **voeg een nieuw blad** aan uw bestaand spreadsheet toe
-1. **noem het blad precies`incoming`** (case-sensitive)
-1. **de kolomkopballen van de opstelling** die uw vormgebieden aanpassen
-1. **sparen spreadsheet** om ervoor te zorgen de veranderingen worden bewaard
+2. **noem het blad precies`incoming`** (case-sensitive)
+3. **de kolomkopballen van de opstelling** die uw vormgebieden aanpassen
+4. **sparen spreadsheet** om ervoor te zorgen de veranderingen worden bewaard
 
 ![ Binnenkomend blad ](/help/forms/assets/form-submission-incoming-sheet.png)
 *Voorbeeld: Binnenkomend blad met kolomkopballen die vormgebieden aanpassen*
@@ -233,13 +237,11 @@ Bied de Adobe Forms-verzendservice toegang tot uw spreadsheet.
 **het Delen Proces:**
 
 1. **klik de knoop van het Aandeel** in de hoogste juiste hoek van uw spreadsheet
-1. **voeg de de dienstrekening van Adobe toe:**
-
+2. **voeg de de dienstrekening van Adobe toe:**
    - E-mail: `forms@adobe.com`
    - Het niveau van de toestemming: **Redacteur** (die voor gegevens wordt vereist schrijven)
-
-1. **verzend de het delen uitnodiging**
-1. **exemplaar de spreadsheetverbinding** voor de volgende stap
+3. **verzend de het delen uitnodiging**
+4. **exemplaar de spreadsheetverbinding** voor de volgende stap
 
    ![ Aankomend blad van het Aandeel ](/help/forms/assets/form-submission-share-incoming.png)
    *geleidelijke het delen proces voor het verlenen van de diensttoegang van Adobe*
@@ -276,18 +278,19 @@ Koppel uw formulierdefinitie aan het verzendwerkblad.
 **vorm-spreadsheet Verbinding:**
 
 1. **open uw spreadsheet van de vormdefinitie** (met `helix-default` of `shared-aem` blad)
-1. **plaats van de Submit veldrij** in uw vormdefinitie
-1. **plak de gekopieerde spreadsheetverbinding** in de **kolom van de Actie** voor het Submit gebied
-1. **sparen de veranderingen** aan uw vormdefinitie
+2. **plaats van de Submit veldrij** in uw vormdefinitie
+3. **plak de gekopieerde spreadsheetverbinding** in de **kolom van de Actie** voor het Submit gebied
+4. **sparen de veranderingen** aan uw vormdefinitie
 
    ![ Verbinding een spreadsheet ](/help/forms/assets/form-submission-sheet-linking.png)
-   *Voorbeeld: Verbindend voorlegt actie aan uw spreadsheet van de gegevensinzameling*
+
+*Voorbeeld: Verbindend voorlegt actie aan uw spreadsheet van de gegevensinzameling*
 
 **het Publiceren van Uw Vorm:**
 
 1. **Open AEM Sidekick** in uw browser
-1. **Voorproef uw vorm** om de configuratie te testen
-1. **publiceer de vorm** om het levend te maken
+2. **Voorproef uw vorm** om de configuratie te testen
+3. **publiceer de vorm** om het levend te maken
 
 **Definitieve Bevestiging:**
 
@@ -364,38 +367,37 @@ Postman biedt een gebruikersvriendelijke interface voor het testen van API-verze
 **Instructies van de Opstelling:**
 
 1. **creeer een nieuw POST verzoek** in Postman
-1. **vorm het eindpunt:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-1. **vervangt placeholders:**
-
+2. **vorm het eindpunt:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+3. **vervangt placeholders:**
    - `{id}` → Uw huidige formulier-id
    - `[repository]` → De naam van uw GitHub-opslagplaats
    - `[organization]` → Uw GitHub-organisatie/gebruikersnaam
 
 **Configuratie van het verzoek:**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+     &quot;json 
+https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
-Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+Kopteksten:
+Inhoudstype: application/json
+x-adobe-routing: tier=live, bucket=main-your-repo-your-org
 
-Body (JSON):
+Lichaam (JSON):
 {
-        "data": {
-            "startDate": "2025-01-10",
-            "endDate": "2025-01-25",
-            "destination": "Australia",
-            "class": "First Class",
-            "budget": "2000",
-            "amount": "1000000",
-            "name": "Mary",
-            "age": "35",
-            "subscribe": null,
-            "email": "mary@gmail.com"
-                }
+&quot;data&quot;: {
+&quot;startDate&quot;: &quot;2025-01-10&quot;,
+&quot;endDate&quot;: &quot;2025-01-25&quot;,
+&quot;bestemming&quot;: &quot;Australië&quot;,
+&quot;class&quot;: &quot;First Class&quot;,
+&quot;budget&quot;: &quot;2000&quot;,
+&quot;bedrag&quot;: &quot;1000000&quot;,
+&quot;name&quot;: &quot;Mary&quot;,
+&quot;leeftijd&quot;: &quot;35&quot;,
+&quot;subscribe&quot;: null,
+&quot;email&quot;: &quot;mary@gmail.com&quot;
 }
-```
+}
+&quot;
 
 **Verwachte Reactie:**
 
@@ -441,10 +443,10 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
->[!TAB  de Herinnering van het Bevel van Vensters ]
-
+>[!TAB Windows Command Prompt]
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
@@ -474,15 +476,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
 +++
 
-+++ API Reactie en verificatie
++++ API Response & Verification
 
-**Succesvolle Reactie:**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -579,7 +581,7 @@ Nu u de gevormde Dienst van de Verzending van Forms hebt, onderzoek deze verwant
 
 +++ Verbeter je Forms
 
-- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
+- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
 - **[Gids van de Componenten van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - onderzoek beschikbare types van vormgebied
 
 +++
