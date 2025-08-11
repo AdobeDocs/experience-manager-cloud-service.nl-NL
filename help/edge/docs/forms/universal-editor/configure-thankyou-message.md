@@ -4,9 +4,9 @@ description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -14,282 +14,238 @@ ht-degree: 0%
 
 # Uw berichten voor bedankt configureren en URL&#39;s omleiden
 
-Formulierfragmenten zijn herbruikbare componenten die herhalende ontwikkelingswerkzaamheden elimineren en zorgen voor consistentie in alle formulieren van uw organisatie. In plaats van gemeenschappelijke secties zoals contactinformatie, adresdetails, of toestemmingsovereenkomsten voor elk formulier opnieuw te maken, kunt u deze elementen één keer als fragmenten bouwen en ze in meerdere formulieren opnieuw gebruiken.
+De ervaringen na verzending hebben een aanzienlijke invloed op de tevredenheid van de gebruiker en het voltooiingspercentage van het formulier. Adobe Universal Editor biedt uitgebreide opties voor het configureren van wat gebruikers zien na het verzenden van formulieren, hetzij via persoonlijke dankwagens, hetzij via strategische omleidingen naar specifieke pagina&#39;s.
 
-**wat u in dit artikel zult verwezenlijken:**
-
-- Begrijp de bedrijfswaarde en de technische mogelijkheden van vormfragmenten
-- Herbruikbare formulierfragmenten maken met de universele editor
-- Fragmenten in bestaande formulieren integreren met de juiste configuratie
-- De levenscyclus van fragmenten beheren en consistentie in verschillende formulieren behouden
-
-**Bedrijfs voordelen:**
-
-- **Verminderde ontwikkelingstijd**: Bouw gemeenschappelijke vormsecties eens, hergebruik overal
-- **Verbeterde consistentie**: Gestandaardiseerde lay-outs en inhoud over alle vormen
-- **Vereenvoudigd onderhoud**: Werk een fragment eens bij om veranderingen over alle vormen te wijzen die het gebruiken
-- **Verbeterde naleving**: Verzeker regelgevende secties verenigbaar en bijgewerkt blijven
-
-Formulierfragmenten in Edge Delivery Services bieden ondersteuning voor geavanceerde functies, zoals geneste fragmenten, meerdere exemplaren in één formulier en naadloze integratie met gegevensbronnen.
-
-## Werken met formulierfragmenten
-
-Formulierfragmenten in Edge Delivery Services bieden krachtige mogelijkheden voor de ontwikkeling van modulaire formulieren:
-
-**mogelijkheden van de Kern:**
-
-- **beheer van de Consistentie**: De fragmenten handhaven identieke lay-outs en inhoud over veelvoudige vormen. Met de methode &quot;Eenmaal wijzigen, Overal spiegelen&quot; worden updates van een fragment automatisch toegepast op alle formulieren in de voorbeeldmodus.
-- **Veelvoudig gebruik**: Voeg het zelfde fragment veelvoudige tijden binnen één enkele vorm toe, elk met onafhankelijke gegevensband aan verschillende gegevensbronnen of schemaelementen.
-- **Geneste structuren**: Creeer complexe hiërarchieën door fragmenten binnen andere fragmenten voor verfijnde vormarchitectuur in te bedden.
-
-**Technische vereisten:**
-
-- **consistentie van GitHub URL**: Zowel moeten het fragment als om het even welke vorm gebruiken het zelfde GitHub bewaarplaats URL specificeren
-- **Standalone het uitgeven**: De fragmenten kunnen slechts in hun standalone vorm worden gewijzigd; de veranderingen kunnen niet binnen de gastheervorm worden aangebracht
-
-**Publicatie gedrag:**
-
->[!IMPORTANT]
->
->In de modus Voorbeeld worden fragmentwijzigingen direct in alle formulieren doorgevoerd. In de modus Publiceren moet u zowel het fragment als alle formulieren die het gebruiken opnieuw publiceren om updates te kunnen zien.
-
->[!CAUTION]
->
->Vermijd recursieve fragmentverwijzingen (het nesten van een fragment binnen zich) aangezien dit teruggevende fouten en onverwacht gedrag veroorzaakt.
+Dit artikel bevat gedetailleerde instructies voor het implementeren van zowel bedankberichten als omleidings-URL&#39;s, waaronder technische overwegingen, aanbevolen procedures en richtlijnen voor gebruikerservaring om de doeltreffendheid van uw formulierverzendingen te maximaliseren.
 
 ## Vereisten
 
-**Technische opstellingsvereisten:**
+Voordat u ervaringen na verzending configureert, moet u ervoor zorgen dat:
 
-- [ GitHub bewaarplaats die ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) met verbinding wordt gevormd tussen uw milieu van AEM en bewaarplaats GitHub
-- [ Latest Aangepast Forms blok ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) toegevoegd aan uw bewaarplaats GitHub (voor bestaande projecten van Edge Delivery Services)
-- AEM Forms Author-instantie met Edge Delivery Services-sjabloon beschikbaar
-- Toegang tot de URL van de AEM Forms as a Cloud Service-auteurinstantie en de GitHub-opslagplaats
+**Technische opstelling:**
 
-**Vereiste kennis en toestemmingen:**
+- Toegang tot de universele editor met de juiste machtigingen
+- Een bestaand adaptief formulier dat is gemaakt in de Universal Editor
+- Inzicht in de URL-vereisten voor omleiding van uw organisatie
 
-- Basiskennis van concepten van formulierontwerpen en componenthiërarchie
-- Vertrouwdheid met de interface van de Universal Editor en workflows voor het maken van formulieren
-- Machtigingen op auteurniveau in AEM Forms voor het maken en beheren van formulierelementen
-- Inzicht in de formulierstandaarden van uw organisatie en herbruikbare componentvereisten
+**planningsoverwegingen:**
 
-## Werken met Edge Delivery Services-formulierfragmenten
+- **strategie van het Bericht**: Bepaal de toon, de lengte, en de specifieke informatie om in dankweldingen te omvatten
+- **Redirect strategie**: Identificeer doelpagina&#39;s en zorg ervoor zij voor post-vormvoltooiingservaringen worden geoptimaliseerd
+- **de integratie van Analytics**: Plan hoe te om gebruikersinteractie met dank te volgen u berichten of opnieuw richt bestemmingen
 
-U kunt Edge Delivery Services-formulierfragmenten maken in de Universal Editor en de gemaakte fragmenten toevoegen aan Edge Delivery Services-formulieren. U kunt de volgende handelingen uitvoeren met Edge Delivery Services-formulierfragmenten:
+## Berichten met dankbetuigingen configureren
 
-- [Formulierfragmenten maken](#creating-form-fragments)
-- [Formulierfragmenten toevoegen aan een formulier](#adding-form-fragments-to-a-form)
-- [Formulierfragmenten beheren](#managing-form-fragments)
+Dank u berichten verstrekken onmiddellijk erkenning van succesvolle vormvoorlegging en kunnen gepersonaliseerde inhoud, volgende stappen, of belangrijke informatie omvatten relevant voor de voorlegging van de gebruiker.
 
-+++ Formulierfragmenten maken
+### Wanneer je berichten via Bedankt wilt gebruiken
 
-Voer de volgende stappen uit om een formulierfragment te maken in de Universal Editor:
+Dank u berichten het beste werken wanneer:
 
-1. Meld u aan bij de AEM Forms as a Cloud Service-auteur.
-1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
-1. Klik **creëren > het AanpassingsFragment van de Vorm**.
+- **Eenvoudige erkenning**: De gebruikers hebben bevestiging zonder extra navigatievereisten nodig
+- **Instructionele inhoud**: U moet specifieke volgende stappen of belangrijke informatie verstrekken
+- **de consistentie van het Merk**: Het bericht kan worden gecreeerd om met de communicatiestijl van uw organisatie te richten
+- **Enige-paginaervaring**: De gebruikers zouden op de huidige pagina voor werkschemagecontinuïteit moeten blijven
 
-   ![ creeer fragment ](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
+### Implementatiestappen
 
-   De **Create Aangepaste tovenaar van het Fragment van de Vorm** verschijnt.
-1. Selecteer het op Edge Delivery Services gebaseerde malplaatje van het **Uitgezochte Malplaatje** lusje en klik **[!UICONTROL Next]**.
-   ![ Uitgezochte het malplaatje van Edge Delivery Services ](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
+**1. Formuliereigenschappen openen**
 
-1. Geef een titel, naam, beschrijving en tags voor het fragment op. Zorg ervoor dat u een unieke naam voor het fragment opgeeft. Als een ander fragment met dezelfde naam bestaat, kan het fragment niet worden gemaakt.
-1. Specificeer **GitHub URL**. Als uw GitHub-opslagplaats bijvoorbeeld de naam `edsforms` heeft, bevindt deze zich onder de account `wkndforms` , is de URL `https://github.com/wkndforms/edsforms` .
+Open uw AanpassingsVorm in Universele Redacteur en klik **geef de pictogram van de Eigenschappen van de Vorm** in de toolbar uit. Hiermee wordt het dialoogvenster met uitgebreide formuliereigenschappen geopend.
 
-   ![ basiseigenschappen ](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
+**2. Navigeer om u configuratie te danken**
 
-1. (Facultatief) klik om het **Model van de Vorm** lusje te openen, en van **Uitgezocht van** drop-down menu, selecteer één van de volgende modellen voor het fragment:
+In de dialoog van de Eigenschappen van de Vorm, selecteer **Dank u** tabel om tot de opties van de post-voorleggingsconfiguratie toegang te hebben.
 
-   ![ modeltype van vertoningen in het Modellusje van de Vorm ](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
+**3. Vorm berichtvertoning**
 
-   - **Model van de Gegevens van de Vorm (FDM)**: Integreer de voorwerpen en de diensten van het gegevensmodel van gegevensbronnen in uw fragment. Kies FDM (Form Data Model) als in uw formulier gegevens uit meerdere bronnen moeten worden gelezen en geschreven.
+Selecteer **Bericht van de Show** van de beschikbare opties. Hiermee activeert u de berichtinhoudeditor met RTF-mogelijkheden.
 
-   - **JSON Schema**: Integreer uw vorm met een achterste deelsysteem door een schema te associëren JSON dat de gegevensstructuur bepaalt. Hiermee kunt u dynamische inhoud toevoegen met behulp van de schema-elementen.
-   - **niets**: Specificeert om het fragment van kras tot stand te brengen zonder enig vormmodel te gebruiken.
+**4. Maak uw berichtinhoud**
 
-   >[!NOTE]
-   >
-   > Leren hoe te om vormen of fragmenten met een Model van de Gegevens van de Vorm (FDM) in de Universele Redacteur te integreren om diverse achterste gegevensbronnen te gebruiken, zie [ vormen met het Model van de Gegevens van de Vorm in Universele Redacteur ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) integreren.
+Op het **de inhoudsgebied van het Bericht** gebied, vecht uw dankweld u bericht gebruikend de rijke tekstredacteur. De editor ondersteunt:
 
-1. (Facultatief) specificeer **publiceer Datum** of **publiceer Datum** voor het fragment in het **Geavanceerde** lusje.
+- **het formatteren van de Tekst**: Vet, cursief, onderstreept, en kleurenopties
+- **Lijsten**: Bulleted en genummerde lijsten voor het organiseren van informatie
+- **Verbindingen**: Directe verbindingen met relevante middelen of volgende stappen
+- **Volledig scherm dat** uitgeeft: Klik het uitvouwpictogram voor een grotere het uitgeven werkruimte
 
-   ![ Geavanceerd lusje ](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Klik **creëren** om het fragment te produceren. Er wordt een dialoogvenster weergegeven met bewerkingsopties.
+### Technische overwegingen
 
-   ![ geef fragment ](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png) uit
+**de vertoningsgedrag van het Bericht:**
 
-1. Klik **uitgeven** om het fragment in Universele Redacteur met het toegepaste standaardmalplaatje te openen.
+- Berichten worden direct na het verzenden van het formulier weergegeven in een modale overlay
+- Inhoud ondersteunt HTML-opmaak en behoudt een responsief ontwerp
+- Berichten kunnen door gebruikers worden verworpen of met auto-dichte tijdopnemers worden gevormd
 
-   ![ Fragment in Universele Redacteur voor creatie ](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+**richtlijnen van de Inhoud:**
 
-1. **Ontwerp uw fragmentinhoud**: voeg vormcomponenten (tekstgebieden, dropdowns, checkboxes) toe om de herbruikbare sectie te bouwen. Voor gedetailleerde componentenbegeleiding, zie [ Begonnen het Worden met Edge Delivery Services voor AEM Forms gebruikend Universele Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+- Houd berichten beknopt terwijl het verstrekken van noodzakelijke informatie
+- Indien nodig duidelijke volgende stappen opnemen
+- Neem bijvoorbeeld referentienummers of bevestigingsgegevens op
+- Mobiele opmaak garanderen
 
-1. **vorm componenteneigenschappen**: Plaats gebiedsnamen, bevestigingsregels, en standaardwaarden zoals nodig voor uw gebruiksgeval.
+### Voorbeeldimplementatie
 
-1. **sparen en voorproef**: Sparen uw fragment en gebruik de wijze van de Voorproef om de lay-out en de functionaliteit te verifiëren.
+     Dank u voor uw voorlegging!
+    
+     Uw toepassing is ontvangen en toegewezen verwijzingsaantal #REF-2024-001234.
+    
+    **Wat gebeurt er als volgt:**
+     - U ontvangt binnen 15 minuten een bevestigingsbericht 
+     - Ons team zal uw verzending binnen 2 werkdagen controleren 
+     - We zullen rechtstreeks contact met u opnemen als extra informatie nodig is 
+    
+    **Hulp nodig?** Contact opnemen met ons ondersteuningsteam op support@example.com
 
-   ![ Schermafbeelding van een voltooid fragment van de de vorm van contactdetails in de Universele Redacteur, die gebieden voor naam, telefoon, e-mail, en adres tonen die over veelvoudige vormen kunnen worden opnieuw gebruikt ](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+## Omleidings-URL&#39;s configureren
 
-**controlepunt van de Bevestiging:**
+URL&#39;s omleiden leidt gebruikers automatisch naar specifieke pagina&#39;s na het verzenden van het formulier, waardoor ze naadloos kunnen worden geïntegreerd met bestaande workflows of gebruikers naar relevante inhoud kunnen leiden.
 
-- Fragmentlasten zonder fouten in de Universal Editor
-- Alle formuliercomponenten worden correct weergegeven
-- Veldeigenschappen en validatieregels werken zoals verwacht
-- Fragment wordt opgeslagen en beschikbaar in de Forms &amp; Documents-console
+### Wanneer omleidings-URL&#39;s gebruiken
 
-Zodra uw fragment volledig is, kunt u het [ integreren in om het even welke vorm van Edge Delivery Services ](#adding-form-fragments-to-a-form).
+Omleiding van URL&#39;s is optimaal voor:
 
-+++
+- **integratie van het Werkschema**: Het leiden van gebruikers aan dashboards, rekeningspagina&#39;s, of volgende stappen in een proces
+- **levering van de Inhoud**: Het tonen van relevante producten, de diensten, of informatie die op vormreacties wordt gebaseerd
+- **Analytics die** volgen: Het leiden aan pagina&#39;s met specifieke het volgen implementaties
+- **multi-step processen**: Bewegend gebruikers naar de volgende fase van complexe werkschema&#39;s
 
+### Implementatiestappen
 
-+++ Formulierfragmenten toevoegen aan een formulier
+**1. Formuliereigenschappen openen**
 
-In dit voorbeeld ziet u hoe u een `Employee Details` -formulier maakt waarin het `Contact Details` -fragment wordt gebruikt voor de informatiesecties voor zowel werknemers als supervisors. Deze aanpak zorgt voor een consistente gegevensverzameling en vermindert tegelijkertijd de ontwikkelingsinspanningen.
+Open uw AanpassingsVorm in Universele Redacteur en klik **geef de Eigenschappen van de Vorm** pictogram uit om de dialoog van de vormconfiguratie te openen.
 
-Een formulierfragment integreren in uw formulier:
+**2. Navigeer om u configuratie te danken**
 
-1. Open het formulier in de bewerkingsmodus.
-1. Voeg de component Formulierfragment toe aan het formulier.
-1. Open Inhoudsbrowser, en navigeer aan de **[!UICONTROL Adaptive Form]** component in de **boom van de Inhoud**.
-1. Navigeer naar de sectie waar u een fragment wilt toevoegen. Bijvoorbeeld, navigeer aan het **paneel van de Details van de Werknemer**.
+Selecteer **Dank u** lusje in de dialoog van de Eigenschappen van de Vorm om tot herleidingsconfiguratieopties toegang te hebben.
 
-   ![ ga aan sectie ](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
+**3. Omleidingsfunctionaliteit inschakelen**
 
-1. Klik het **[!UICONTROL Add]** pictogram en voeg de **[!UICONTROL Form Fragment]** component van de **Aangepaste lijst van de Componenten van de Vorm** toe.
-   ![ voeg het Fragment van de Vorm ](/help/edge/docs/forms/universal-editor/assets/add-fragment.png) toe
+Kies **Omleiden aan URL** van de beschikbare post-voorleggingsopties.
 
-   Wanneer u de component **[!UICONTROL Form Fragment]** selecteert, wordt het fragment aan het formulier toegevoegd. U kunt de eigenschappen van het toegevoegde fragment vormen door zijn **Eigenschappen** te openen. Bijvoorbeeld, verberg de titel van het fragment van zijn **Eigenschappen**.
+**4. Doel-URL configureren**
 
-   ![ Vormend eigenschappen van fragment ](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
+Voer in het opgegeven veld de doel-URL in. Het systeem ondersteunt meerdere URL-indelingen voor flexibele implementatie.
 
-1. Selecteer de **verwijzing van het Fragment** in **Basis** tabel. Alle fragmenten die beschikbaar zijn voor het formulier, worden weergegeven, afhankelijk van het formuliermodel.
+### Opties voor URL-configuratie
 
-   Navigeer bijvoorbeeld naar `/content/forms/af` en selecteer het `Contact Details` -fragment.
+**Absolute URLs**
 
-   ![ Uitgezochte Fragment ](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
+Volledige webadressen, inclusief protocol en domein:
 
-1. Klik op **[!UICONTROL Select]**.
+     https://www.example.com/thank-you
+     https://dashboard.example.com/user/profile 
 
-   Het formulierfragment wordt toegevoegd ten opzichte van het formulier en blijft gesynchroniseerd met het zelfstandige formulierfragment.
+**Relatieve Wegen**
 
-   ![ Schermschot die het fragment van contactdetails tonen met succes in een werknemersvorm binnen de Universele Redacteur wordt geïntegreerd, die aantoont hoe de fragmenten hun structuur handhaven wanneer hergebruikt ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+Paden ten opzichte van uw huidige domein:
 
-   U kunt voorproef de vorm zien hoe de vorm op de **wijze van de Voorproef** verschijnt.
+    /dank-u 
+    /dashboard/user-profile 
+     ../confirmation-page.html
 
-   ![ Voorproef ](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
+**de Verwijzingen van de Pagina van AEM Sites**
 
-   Op dezelfde manier kunt u stap 3 tot en met 7 herhalen om het fragment `Contact Details` in te voegen voor het deelvenster `Supervisor Details` .
+Verwijzingen naar andere pagina&#39;s in uw AEM Sites-implementatie:
 
-   ![ vorm van de Details van de Werknemer ](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+     /content/mysite/nl/Dankuwel
+     /content/mysite/nl/next-stappen 
 
-+++
+### Technische overwegingen
 
+**Redirect gedrag:**
 
+- Omleidingen vinden direct plaats nadat het formulier is verzonden
+- De browsergeschiedenis bevat de omleiding voor de juiste functionaliteit voor de backbutton
+- Redirect timing kan met facultatieve vertragingen worden gevormd
 
-+++ Formulierfragmenten beheren
+**bevestiging URL:**
 
-U kunt verschillende bewerkingen uitvoeren op formulierfragmenten via de gebruikersinterface van AEM Forms.
+- Systeem valideert URL-indeling voordat configuratie wordt toegestaan
+- Relatieve URL&#39;s worden omgezet in het huidige domein
+- Externe URL&#39;s vereisen een juiste CORS-configuratie, indien nodig
 
-1. Meld u aan bij de AEM Forms as a Cloud Service-auteur.
-1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+## Beste praktijken en Aanbevelingen
 
-1. Selecteer een formulierfragment en op de werkbalk worden de volgende bewerkingen weergegeven die u op het geselecteerde fragment kunt uitvoeren.
+### Richtlijnen voor gebruikerservaring
 
-   ![ beheert fragment ](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
+**optimalisering van het Bericht:**
 
-   <table>
-    <tbody>
-    <tr>
-   <td><p><strong>Bewerking</strong></p> </td>
-   <td><p><strong>Beschrijving</strong></p> </td>
-    </tr>
-    <tr>
-   <td><p>Bewerken</p> </td>
-   <td><p>Hiermee opent u het formulierfragment in de bewerkingsmodus. <br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Eigenschappen</p> </td>
-   <td><p>Bevat opties voor het wijzigen van de eigenschappen van het formulierfragment. <br /> <br /> </p> </td>
-    </tr>
-    <td><p>Kopiëren</p> </td>
-   <td><p> Hier vindt u opties waarmee u het formulierfragment kunt kopiëren en op de gewenste locatie kunt plakken. <br /> <br /> </p> </td>
-    </tr>
-   <tr>
-   <td><p>Voorvertoning</p> </td>
-   <td><p>Hiermee kunt u een voorvertoning van het fragment weergeven als HTML of een aangepaste voorvertoning uitvoeren door gegevens uit een XML-bestand samen te voegen met het fragment. <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Downloaden</p> </td>
-   <td><p>Hiermee downloadt u het geselecteerde fragment. <br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Revisie starten/Revisie beheren</p> </td>
-   <td><p>Hiermee kunt u een revisie van het geselecteerde fragment starten en beheren. <br /> <br /> </p> </td>
-    </tr>
-    <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
-    <tr>
-   <td><p>Publiceren/Publiceren ongedaan maken</p> </td>
-   <td><p>Hiermee publiceert u het geselecteerde fragment of maakt u de publicatie ervan ongedaan. <br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Verwijderen</p> </td>
-   <td><p>Hiermee verwijdert u het geselecteerde fragment. <br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Ververgelijken</p> </td>
-   <td><p>Vergelijkt twee verschillende formulierfragmenten voor voorvertoningen. <br /> <br /> </p> </td>
-    </tr>
-    </tbody>
-    </table>
+- **Duidelijkheid eerst**: Zorg ervoor de gebruikers onmiddellijk begrijpen hun voorlegging succesvol was
+- **toevoeging van de Waarde**: Verstrek informatie die gebruikers van volgende stappen helpt
+- **Consistente branding**: Handhaaf de stem en visuele stijl van uw organisatie
+- **Mobiele overweging**: De berichten van de test op diverse het schermgrootte
 
-+++
+**Redirect optimalisering:**
 
-## Aanbevolen procedures
+- **de optimalisering van de Pagina**: Zorg ervoor opnieuw richt bestemmingen voor post-vormbezoekers worden geoptimaliseerd
+- **Ladende prestaties**: Verifieer opnieuw richt pagina&#39;s snel laden om gebruikerservaring te handhaven
+- **relevantie van de Inhoud**: Zorg ervoor omleiding inhoud relevant voor de vormcontext is
 
-**het ontwerp en het noemen van het fragment:**
+### Beveiligingsoverwegingen
 
-- **Gebruik beschrijvende, unieke namen**: Kies namen die duidelijk het doel van het fragment aangeven (bijvoorbeeld, &quot;contact-details-met-bevestiging&quot;eerder dan &quot;fragment1&quot;)
-- **Plan voor herbruikbaarheid**: De fragmenten van het ontwerp om context-onafhankelijk te zijn zodat werken zij over verschillende vormtypes
-- **houd gefocuste fragmenten**: Creeer enig-doelfragmenten eerder dan complexe, multifunctionele componenten
+**bevestiging URL:**
 
-**het werkschema van de Ontwikkeling:**
+- Voer juiste bevestiging voor omleiding URLs uit om kwaadwillige omleiding te verhinderen
+- Denk na whitelist benaderingen voor toegestane omleidingsdomeinen
+- Omleidingspatronen controleren voor ongebruikelijke activiteiten
 
-- **fragmenten van de Test onafhankelijk**: Verifieer fragmentfunctionaliteit alvorens in vormen te integreren
-- **handhaaf verenigbare URLs GitHub**: Verzeker de zelfde bewaarplaats URL over alle verwante fragmenten en vormen wordt gebruikt
-- **het fragmentdoel van het Document**: Omvat duidelijke beschrijvingen en markeringen om teamleden te helpen begrijpen wanneer om elk fragment te gebruiken
+**veiligheid van de Inhoud:**
 
-**Publicatie en onderhoud:**
+- Onthoud de inhoud van uw berichttekst om scriptinjectie te voorkomen
+- Een goed beleid voor inhoudsbeveiliging voor tekstopmaak implementeren
+- Regelmatige veiligheidscontroles van doorreisbestemmingen
 
-- **gecoördineerde publicatie**: Wanneer het bijwerken van fragmenten, van plan om alle afhankelijke vormen gelijktijdig opnieuw te publiceren
-- **de controle van de Versie**: Het gebruik verbindt betekenisvolle berichten wanneer het bijwerken van fragmenten aan spoorveranderingen in tijd
-- **gebiedsdelen van de Monitor**: Houd spoor waarvan de vormen elk fragment gebruiken om updateeffect te beoordelen
+### Analyse en reeksspatiëring
 
->[!TIP]
->
->Fragmentstijlen, scripts en expressies blijven behouden wanneer ze worden ingesloten. Ontwerp daarom met deze overerving.
+**Overwegingen van de Implementatie:**
 
-## Samenvatting
+- **Goal die** volgt: De doelstellingen van de opstelling analyseert voor zowel dank u berichtmeningen en redirect voltooit
+- **het reisafbeelding van de Gebruiker**: Spoor hoe de gebruikers met post-voorlegging ervaringen in wisselwerking staan
+- **optimalisering van de Omzetting**: A/B test verschillende dankweldingen en richt bestemmingen opnieuw.
 
-U hebt geleerd hoe u in Edge Delivery Services formulierfragmenten kunt gebruiken om de efficiëntie van de ontwikkeling te verbeteren en consistentie in de verschillende formulieren van uw organisatie te behouden.
+**strategieën van de Meting:**
 
-**Zeer belangrijke verwezenlijkingen:**
+- De tijd van de monitor besteed aan dankwoodberichten vóór ontslag
+- Houd klikthrough tarieven voor verbindingen binnen dank u berichten bij
+- Gebruikersgedrag op doelpagina&#39;s omleiden analyseren
 
-- **Begrijpend**: Grasped de bedrijfswaarde en de technische mogelijkheden van vormfragmenten
-- **Creatie**: Bouw herbruikbare vormfragmenten gebruikend Universele Redacteur met juiste configuratie
-- **Integratie**: Toegevoegde fragmenten aan vormen met correcte verwijzingsopstelling en bezitsconfiguratie
-- **Beheer**: Verkennende verrichtingen van de de levenscyclus van het fragment en onderhoudswerkschema&#39;s
+## Controlepunten voor validatie
 
-**Volgende stappen:**
+Na het configureren van uw ervaring na verzending:
 
-- Een bibliotheek maken van veelgebruikte fragmenten voor uw organisatie
-- Naamgevingsconventies en beheerbeleid voor fragmentgebruik instellen
-- Onderzoek geavanceerde integratie met [ Modellen van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) voor dynamische gegeven-gedreven fragmenten
-- Op fragmenten gebaseerde formuliersjablonen implementeren voor consistente gebruikerservaring
+**Controle van de Configuratie:**
 
-Uw formulieren profiteren nu van modulaire, onderhoudsbare architectuur die efficiënt over projecten kan worden geschaald en tegelijkertijd een consistente gebruikerservaring garandeert.
+- Formuliereigenschappen geven de geselecteerde optie Hartelijk dank correct weer
+- Berichtinhoud wordt correct weergegeven in de voorvertoningsmodus
+- URL&#39;s omleiden heeft de juiste notatie en is toegankelijk
+- Alle koppelingen in berichten functioneren correct
+
+**het testen van de gebruikerservaring:**
+
+- Testformulieren verzenden om te controleren of de berichtweergave goed is
+- Omleidingsfunctionaliteit testen voor verschillende browsers
+- Controleer de mobiele reactiesnelheid van de bedankberichten
+- Omleidingsdoelen correct laden bevestigen
+
+**opstelling van Analytics:**
+
+- Trackingcodes die correct zijn geïmplementeerd voor bedankberichten
+- Omleiding van tracering geconfigureerd
+- Gebeurtenissen voor het voltooien van het doel correct afvuren
+
+## Volgende stappen
+
+Nadat u uw ervaring na verzending hebt geconfigureerd:
+
+- **prestaties van de Monitor**: Analyseanalyse van het overzicht om gebruikersbetrokkenheid met dankweldingen te begrijpen of pagina&#39;s om te leiden
+- **herhaalt en verbetert**: De gebruiker van het gebruik koppelt en gegevensinzichten om uw post-voorleggingsstrategie te verfijnen
+- **implementatie van de Schaal**: Pas succesvolle patronen over andere vormen in uw organisatie toe
+
+**Verwante documentatie:**
+
+- [Configuratie-handleiding voor verzending van formulieren](submit-action.md)
+- [Beste praktijken van de Ervaring van de gebruiker](responsive-layout.md)
 

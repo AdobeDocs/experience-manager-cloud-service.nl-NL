@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [formulieren publiceren, Edge Delivery Services, formulierconfiguratie, CORS, referentiefilter]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 0%
@@ -169,8 +169,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [ Documentatie van de Filter van de Verwijzer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
@@ -221,7 +221,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentatie van de Verwijzing:**
 
-- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [ vorm de Filter van de Referateur via Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [Formulierverzendacties configureren](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Stijl en thema voor uw formulieren](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Responsieve formulierindelingen maken](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [reCAPTCHA-beveiliging toevoegen](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

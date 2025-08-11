@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Voor een vloeiende en geslaagde ervaring met Edge Delivery Services for AEM Form
 
 >[!TIP]
 >
-> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL) wordt.
+> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html) wordt.
 
 ## Pad A: Een nieuw project maken met Forms
 
@@ -186,7 +186,7 @@ Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgev
 
     >[!NOTE] 
     > 
-    >Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+>Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
 +++
 
@@ -661,7 +661,7 @@ Nu u een werkformulier hebt, kunt u:
 
 Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
 
-+++ AEM CLI en lokale ontwikkeling instellen
+++ AEM CLI en lokale ontwikkeling instellen
 
 1. **installeer AEM CLI**
 
@@ -759,27 +759,6 @@ Als u &quot;Kan pad naar module &#39;/scripts/lib-franklin.js&#39; niet omzetten
 
 +++
 
-+++Universal Editor-problemen
-
-**Probleem:** de componenten van de Vorm verschijnen niet in Universele Redacteur
-
-**Oplossingen:**
-
-- Controleren of AEM Code Sync is geïnstalleerd en uitgevoerd
-- Controleer of `fstab.yaml` de juiste URL van de AEM-auteur heeft
-- Zorg ervoor dat uw AEM-instantie vroege toegang heeft ingeschakeld
-- `component-definition.json` bevestigen bevat formuliercomponenten
-
-**Probleem:** Veranderingen niet zichtbaar na het publiceren
-
-**Oplossingen:**
-
-- Wacht op CDN-cache vernieuwen
-- Browser cache controleren (modus Incognito/Private proberen)
-- Controleren of de juiste URL-indeling wordt gebruikt
-
-+++
-
 +++Problemen met formulierfunctionaliteit
 
 **Probleem:** de inzendingen van de vorm werken niet
@@ -801,4 +780,27 @@ Als u &quot;Kan pad naar module &#39;/scripts/lib-franklin.js&#39; niet omzetten
 - Testen in de lokale ontwikkelomgeving
 
 +++
+
++++Universal Editor-problemen
+
+**Probleem:** de componenten van de Vorm verschijnen niet in Universele Redacteur
+
+**Oplossingen:**
+
+- Controleren of AEM Code Sync is geïnstalleerd en uitgevoerd
+- Controleer of `fstab.yaml` de juiste URL van de AEM-auteur heeft
+- Zorg ervoor dat uw AEM-instantie vroege toegang heeft ingeschakeld
+- `component-definition.json` bevestigen bevat formuliercomponenten
+
+**Probleem:** Veranderingen niet zichtbaar na het publiceren
+
+**Oplossingen:**
+
+- Wacht op CDN-cache vernieuwen
+- Browser cache controleren (modus Incognito/Private proberen)
+- Controleren of de juiste URL-indeling wordt gebruikt
+
++++
+
+
 

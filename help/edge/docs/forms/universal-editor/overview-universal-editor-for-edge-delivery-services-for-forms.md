@@ -4,7 +4,7 @@ description: Met Universal Editor voor Edge Delivery Services for Forms kunt u A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -173,11 +173,13 @@ Absoluut. De Universele Redacteur steunt naadloze gegevensband met achterste sys
 **Q: Is het mogelijk om de vormcomponenten aan te passen?**
 Ja, de Universele Redacteur staat ontwikkelaars toe om douanecomponenten tot stand te brengen die aan specifieke organisatorische behoeften worden aangepast. Daarnaast kunt u de functionaliteit van de editor uitbreiden via UI-extensies en aangepaste workflows.
 
+**Q: Welk soort analyses kan ik van de vormen krijgen?**
+De Universele Redacteur omvat ingebouwde analytische en het volgen hulpmiddelen om gebruikersinteractie, vormverzendingssnelheden, en omzettingsmetriek te controleren. Deze inzichten helpen uw formulieren te optimaliseren voor betere prestaties.
+
 **Q: Hoe behandelt de Universele Redacteur toegankelijkheid?**
 De Universal Editor is ontworpen met strikte naleving van toegankelijkheidsstandaarden, waaronder WCAG (Web Content Accessibility Guidelines). Dit zorgt ervoor dat de formulieren bruikbaar zijn voor personen met een handicap, en zorgt voor een inclusieve ervaring.
 
-**Q: Welk soort analyses kan ik van de vormen krijgen?**
-De Universele Redacteur omvat ingebouwde analytische en het volgen hulpmiddelen om gebruikersinteractie, vormverzendingssnelheden, en omzettingsmetriek te controleren. Deze inzichten helpen uw formulieren te optimaliseren voor betere prestaties.
+
 
 
 

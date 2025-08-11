@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2382'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Door uw formulieren op verschillende apparaten te testen, kunt u problemen die o
 
 **Stap 3: De Oriëntaties van het Apparaat van de test**
 
-Gebruik het **pictogram van de Rotator van het 1&rbrace; Scherm** om allebei te testen:
+Gebruik het **pictogram van de Rotator van het 1} Scherm** om allebei te testen:
 
 - **Staand wijze**: Standaard mobiele richtlijn
 - **Liggende wijze**: Geroteerde tablet of telefoonmening
@@ -173,7 +173,7 @@ In de deelvensterindeling wordt gerelateerde inhoud gerangschikt in visueel vers
 
 **hoe te om uit te voeren**
 
-1. Voeg de [ Component van het Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
+1. Voeg de [ Component van het Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
 2. Groepeer verwante velden binnen elk deelvenster om de logische organisatie te behouden.
 3. Wijs duidelijke, beschrijvende rubrieken aan elke paneelsectie toe.
 4. Zorg ervoor dat er voldoende ruimte is tussen deelvensters om visueel onoverzichtelijk te blijven.
@@ -206,7 +206,7 @@ De Lay-out van de Tovenaar begeleidt gebruikers door een multi-step proces, dat 
 
 **hoe te om uit te voeren**
 
-1. Neem de [ Component van de Tovenaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
+1. Neem de [ Component van de Tovenaar ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
 2. Verdeel het formulier in logische stappen, idealiter tussen 3 en 7, om elke stap geconcentreerd en beheerbaar te houden.
 3. Voeg voortgangsindicatoren toe om gebruikers te helpen hun positie in het proces te begrijpen.
 4. Zorg voor duidelijke besturingselementen voor navigatie, zoals de knoppen Volgende, Vorige en Opslaan.
@@ -246,7 +246,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 **hoe te om uit te voeren**
 
-1. Voeg de [ Component van de Accordeon ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
+1. Voeg de [ Component van de Accordeon ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
 2. Groepeer gerelateerde optionele of secundaire inhoud binnen elke accordeonsectie.
 3. Gebruik duidelijke, beschrijvende kopteksten voor elke sectie om gebruikers te helpen begrijpen welke informatie bevat binnen is.
 4. Stel de juiste open of gesloten standaardinstellingen voor elke sectie in op basis van belang en gebruikersbehoeften.
@@ -317,7 +317,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 +++
 
-## Uitgebreide probleemoplossing
+## Problemen oplossen
 
 ### Lay-outproblemen
 

@@ -6,7 +6,7 @@ keywords: reCAPTCHA in formulieren, met reCAPTCHA in de Universal Editor, voeg r
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Zorg ervoor dat u het volgende hebt voordat u begint:
 
 ## Waarom gebruik je reCAPTCHA in je Forms?
 
-| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0&rbrace; Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0} Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Verbeterde Veiligheid** | **Bot &amp; Preventie Spam** | **Naadloze Ervaring van de Gebruiker** |
 | Formulieren beschermen tegen frauduleuze activiteiten en aanvallen | Voorkomen dat automatische bots formulieren verzenden | Onzichtbare reCAPTCHA verstoort legitieme gebruikers niet |
@@ -365,5 +365,5 @@ https://<branch>--<repo>--<owner>.aem.live/content/forms/af/
 
 ```
 https://main--my-forms--company.aem.live/content/forms/af/
-contact-form
+contact-us-form
 ```

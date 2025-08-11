@@ -4,7 +4,7 @@ description: Leer hoe u formulierfragmenten maakt in de Universal Editor en deze
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 0%
@@ -12,12 +12,6 @@ ht-degree: 0%
 ---
 
 # Formulierfragmenten maken in Universal Editor
-
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
--->
 
 Formulierfragmenten zijn herbruikbare componenten die herhalende ontwikkelingswerkzaamheden elimineren en zorgen voor consistentie in alle formulieren van uw organisatie. In plaats van gemeenschappelijke secties zoals contactinformatie, adresdetails, of toestemmingsovereenkomsten voor elk formulier opnieuw te maken, kunt u deze elementen één keer als fragmenten bouwen en ze in meerdere formulieren opnieuw gebruiken.
 

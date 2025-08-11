@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1773'
 ht-degree: 0%
@@ -41,10 +41,12 @@ Voordat u begint, bepaalt u welk sjabloontype u op uw vereisten uitlijnt:
 
 **Begeleiding van het Besluit:**
 
+![ Besluit van de Selectie van het Malplaatje ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - De Componenten van de Kern van het gebruik **voor complexe werkschema&#39;s, diepe integratie van AEM, of als het leveraging van bestaande activa van AEM.**
 - Het gebruik **Edge Delivery Services** voor prestaties, eenvoud, en moderne ontwikkelingspraktijken.
 
-![ Besluit van de Selectie van het Malplaatje ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Stroomschema van het Besluit voor het kiezen van het aangewezen malplaatjetype*
 
 ## Vereisten
@@ -191,8 +193,8 @@ De ontwerpervaring varieert per sjabloon:
 - **Malplaatje van Edge Delivery Services**: Universele Redacteur
 - **Malplaatje van de Component van de Kern**: De Adaptieve Redacteur van Forms
 
-![&#128279;](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg) Vergelijking van 0&rbrace; Redacteur
- Vergelijking van Universele Redacteur met de Adaptieve mogelijkheden van de Redacteur van Forms **
+![ Vergelijking van 0} Redacteur
+](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg) Vergelijking van Universele Redacteur met de Adaptieve mogelijkheden van de Redacteur van Forms **
 
 >[!BEGINTABS]
 
@@ -206,7 +208,7 @@ De ontwerpervaring varieert per sjabloon:
    - Open de Content browser in Universal Editor.
    - Navigeer aan de **Aangepaste component van de Vorm** in de inhoudsboom.
 
-   ![ de Navigatie van de Boom van 0&rbrace; Inhoud](/help/edge/assets/content-tree.png)
+   ![ de Navigatie van de Boom van 0} Inhoud](/help/edge/assets/content-tree.png)
 
 1. **voeg de Gebieden van de Vorm** toe
    - Klik **toevoegen** pictogram om de componentenbibliotheek te openen.
@@ -505,7 +507,7 @@ Hieronder vindt u algemene problemen en oplossingen voor AEM Forms met Edge Deli
 Als er problemen blijven optreden:
 
 1. Controleer de Adobe Experience Cloud-servicestatus.
-2. Herzie {de documentatie van 0} Edge Delivery Services [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL)
+2. Herzie {de documentatie van 0} Edge Delivery Services [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)
 3. Bezoek [ Gemeenschap van de Liga van de Ervaring van Adobe ](https://experienceleaguecommunities.adobe.com/).
 4. Neem contact op met de klantenservice van Adobe.
 
@@ -528,6 +530,6 @@ Nadat u het maken en publiceren van formulieren hebt voltooid, kunt u het volgen
 
 ### Optimalisatie van prestaties
 
-- [ Beste praktijken van Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL): Maximaliseer prestaties.
+- [ Beste praktijken van Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): Maximaliseer prestaties.
 - [ Analytics van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): De vormprestaties en gebruikersgedrag van het spoor.
 

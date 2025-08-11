@@ -1,12 +1,12 @@
 ---
 title: Hoe te om het Model van de Gegevens van de Vorm (FDM) voor een vorm in Universele Redacteur te integreren?
-description: Leer formulieren te maken op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
+description: Leer formulieren te maken voor services voor randlevering op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Als u niet het **pictogram van Gegevensbronnen** in uw Universele interface van 
 
 ![ Schermafbeelding van de Universele interface die van de Redacteur Extension Manager beschikbare uitbreidingen met inbegrip van de uitbreiding van Gegevensbronnen toont die voor vormintegratie ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png) kan worden toegelaten
 
-Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Uw formuliertype kiezen
 
