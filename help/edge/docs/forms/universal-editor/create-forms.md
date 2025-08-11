@@ -507,7 +507,7 @@ Hieronder vindt u algemene problemen en oplossingen voor AEM Forms met Edge Deli
 Als er problemen blijven optreden:
 
 1. Controleer de Adobe Experience Cloud-servicestatus.
-2. Herzie {de documentatie van 0} Edge Delivery Services [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)
+2. Herzie {de documentatie van 0} Edge Delivery Services [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL)
 3. Bezoek [ Gemeenschap van de Liga van de Ervaring van Adobe ](https://experienceleaguecommunities.adobe.com/).
 4. Neem contact op met de klantenservice van Adobe.
 
@@ -530,6 +530,6 @@ Nadat u het maken en publiceren van formulieren hebt voltooid, kunt u het volgen
 
 ### Optimalisatie van prestaties
 
-- [ Beste praktijken van Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): Maximaliseer prestaties.
+- [ Beste praktijken van Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=nl-NL): Maximaliseer prestaties.
 - [ Analytics van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): De vormprestaties en gebruikersgedrag van het spoor.
 
