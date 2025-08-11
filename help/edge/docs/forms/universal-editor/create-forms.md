@@ -193,8 +193,8 @@ De ontwerpervaring varieert per sjabloon:
 - **Malplaatje van Edge Delivery Services**: Universele Redacteur
 - **Malplaatje van de Component van de Kern**: De Adaptieve Redacteur van Forms
 
-![ Vergelijking van 0} Redacteur
-](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg) Vergelijking van Universele Redacteur met de Adaptieve mogelijkheden van de Redacteur van Forms **
+![&#128279;](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg) Vergelijking van 0&rbrace; Redacteur
+ Vergelijking van Universele Redacteur met de Adaptieve mogelijkheden van de Redacteur van Forms **
 
 >[!BEGINTABS]
 
@@ -208,7 +208,7 @@ De ontwerpervaring varieert per sjabloon:
    - Open de Content browser in Universal Editor.
    - Navigeer aan de **Aangepaste component van de Vorm** in de inhoudsboom.
 
-   ![ de Navigatie van de Boom van 0} Inhoud](/help/edge/assets/content-tree.png)
+   ![ de Navigatie van de Boom van 0&rbrace; Inhoud](/help/edge/assets/content-tree.png)
 
 1. **voeg de Gebieden van de Vorm** toe
    - Klik **toevoegen** pictogram om de componentenbibliotheek te openen.

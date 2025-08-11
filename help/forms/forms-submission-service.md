@@ -109,7 +109,7 @@ Kies een van de ondersteunde platforms:
 
 - **geeft toestemmingen** voor het doelspreadsheet uit
 - **delend mogelijkheden** om toegang tot `forms@adobe.com` te verlenen
-- **toestemmingen van de generatie van de verbinding 0} {voor uw gekozen platform**
+- **toestemmingen van de generatie van de verbinding 0&rbrace; &lbrace;voor uw gekozen platform**
 
 +++
 
@@ -384,8 +384,8 @@ Inhoudstype: application/json
 x-adobe-routing: tier=live, bucket=main-your-repo-your-org
 
 Lichaam (JSON):
-{
-&quot;data&quot;: {
+&lbrace;
+&quot;data&quot;: &lbrace;
 &quot;startDate&quot;: &quot;2025-01-10&quot;,
 &quot;endDate&quot;: &quot;2025-01-25&quot;,
 &quot;bestemming&quot;: &quot;Australië&quot;,
@@ -396,8 +396,8 @@ Lichaam (JSON):
 &quot;leeftijd&quot;: &quot;35&quot;,
 &quot;subscribe&quot;: null,
 &quot;email&quot;: &quot;mary@gmail.com&quot;
-}
-}
+&rbrace;
+&rbrace;
 &quot;
 
 **Verwachte Reactie:**
