@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 840db9fff35af0da212fa03e2d9255cca9524ae6
+source-git-commit: 060a00e887a8709a4fd3c4b160b540a8e2867769
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Zie ook [ Adobe Beheerde CDN ](https://www.aem.live/docs/byo-cdn-adobe-managed).
    | Hoofdletters gebruiken | Stappen |
    | --- | --- |
    | Ik wil een configuratie CDN aan een *bestaande* plaats van Edge Delivery in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ pictogram Webpagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.<br> b. In de lijst van Edge Delivery, aan het eind van een rij die geen domein verbonden aan het heeft, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br> c. Klik **vormen CDN**. |
-   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van het Sociale netwerk ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.<br> b. Bij de hoger-juiste hoek van de pagina van Toewijzingen van het Domein, voegt de klik **&#x200B;**&#x200B;toe. |
+   | Ik wil een configuratie CDN in Cloud Manager toevoegen | a. In het linkerzijmenu, onder **Diensten**, klik ![ het pictogram van het Sociale netwerk ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Toewijzingen van het Domein**.<br> b. Bij de hoger-juiste hoek van de pagina van Toewijzingen van het Domein, voegt de klik **** toe. |
 
 1. In **vorm CDN** dialoogdoos, in de **Vervolgkeuzelijst van de Oorsprong**, selecteer één van het volgende:
 
@@ -67,8 +67,8 @@ curl -svo /dev/null https://www.example.com \
 --resolve www.example.com:443:151.101.3.10
 ```
 
-* Vervang **`www.example.com`** door uw domein.
-* Het IP-adres ``151.101.3.10`` is een van de IP&#39;s die kan worden gebruikt om toegang te krijgen tot de AEM Cloud Service. Zie ook {het verslag van 0} APEX [.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)
+* Vervang `www.example.com` door uw domein.
+* Het IP-adres `151.101.3.10` is een van de IP&#39;s die kan worden gebruikt om toegang te krijgen tot de AEM Cloud Service. Zie ook {het verslag van 0} APEX [.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)
 
 De markering `--resolve` dwingt het verzoek tot gespecificeerde IP en keert succes slechts terug nadat het certificaat en het verpletteren voor uw domein correct zijn geïnstalleerd.
 
