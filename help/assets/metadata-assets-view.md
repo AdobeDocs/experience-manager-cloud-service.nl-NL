@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
+
 
 # Metagegevens in Assets View {#metadata}
 
@@ -32,7 +33,7 @@ Als u de metagegevens van een element wilt weergeven, bladert u naar het element
 
 ![ meta-gegevens van de Mening van een activa ](assets/metadata-view.png)
 
-*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar op het tabblad [!UICONTROL Basic] . Het tabblad [!UICONTROL Advanced] bevat meer geavanceerde metagegevens, zoals cameramodel, lensdetails en geotags. Het tabblad [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
 
@@ -48,7 +49,7 @@ De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd o
 
 ![ Slimme Markeringen van de Mening van een activa ](assets/metadata-view-tags.png)
 
-*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**&#x200B;van toolbar of klik de activa tweemaal.*
+*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
@@ -181,7 +182,6 @@ Voer de onderstaande stappen uit om de koppelingscomponent te gebruiken in het m
    * Klik ![ uitgeven pictogram ](assets/do-not-localize/edit.svg) om URL uit te geven.
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
-
 ### Werken met de component Tags in het metagegevensformulier {#tag-component-metadata-form}
 
 Het hoofdelement vertegenwoordigt de boomstructuur van de markeringen die u met de activa kunt associëren, die helpen om activa te identificeren die op de markering worden gebaseerd die aan het wordt toegewezen. Bovendien kunt u de toegang tot een specifieke taxonomie beperken terwijl het vormen van de meta-gegevensvorm in meta-gegevensredacteur.
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 Als u de geconfigureerde hoofdcodes wilt weergeven, gaat u naar de detailpagina van het element waar de koppeling tussen het metagegevensformulier en de basiscodes wordt uitgevoerd.
+
+## Metagegevens Forms bewerken {#edit-metadata-forms}
+
+Voer de volgende stappen uit om een metagegevensformulier te bewerken:
+
+1. Navigeer naar de [!DNL Assets View] startpagina en selecteer **[!DNL Metadata Forms]** om een lijst met metagegevensformulieren weer te geven.
+1. Selecteer een formulier en klik op **[!UICONTROL Edit]** om de pagina van [!DNL Metadata Form Editor] te openen. Op deze pagina worden componenten van het metagegevensformulier weergegeven in het linkervenster, tabbladen zoals Standaard, Geavanceerd, Labels en meer in het middelste venster en het deelvenster Instellingen voor het bewerken van de eigenschappen van metagegevens in het rechterdeelvenster.
+1. Open een tab ( **[!DNL Basic]** , **[!DNL Advanced]** of **[!DNL Tags]** ).
+1. Selecteer een eigenschap voor metagegevens om de instellingen ervan te bewerken in het deelvenster **[!UICONTROL Settings]** . U kunt eigenschapstoewijzingen bijwerken, de naam van labels wijzigen, eigenschapswaarden wijzigen of toevoegen en meer van dergelijke bewerkingen uitvoeren in het deelvenster **[!UICONTROL Settings]** .
+1. Klik op **[!UICONTROL Preview]** om de wijzigingen in het formulier te bekijken voordat u deze wijzigingen opslaat.
+1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
 ## Detectie van inhoud verbeteren met door AI gegenereerde metagegevens {#ai-smart-tags}
 
@@ -254,13 +265,13 @@ Voor informatie over hoe te om AI-Gegenereerde meta-gegevens onbruikbaar te make
 
 ## Volgende stappen {#next-steps}
 
-* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=nl-NL)
+* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
 * Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support)
+* De Zorg van de Klant van het contact [](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
