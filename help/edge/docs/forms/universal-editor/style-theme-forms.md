@@ -4,7 +4,7 @@ description: Pas het thema en de stijl voor AEM Forms die via Edge Delivery Serv
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 0%
@@ -308,7 +308,7 @@ Het Adaptive Forms Block biedt een consistente HTML-structuur voor verschillende
 
 Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzerondjes en groepen selectievakjes, hebben de volgende HTML-structuur:
 
-#### HTML-structuur van algemene componenten
+### HTML-structuur van algemene componenten
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ U kunt formuliervelden opmaken op basis van het specifieke type (`{Type}-wrapper
 
 U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en stijlen consistent toe te passen.
 
-#### HTML-structuur
+### HTML-structuur
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en s
 
 
 
-#### Voorbeeld-CSS-kiezers
+### Voorbeeld-CSS-kiezers
 
 ```CSS
 /- Primary Pattern: Target all text input fields */

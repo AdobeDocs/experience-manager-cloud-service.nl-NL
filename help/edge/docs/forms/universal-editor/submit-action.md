@@ -4,7 +4,8 @@ description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een h
 keywords: hoe u verzendactie selecteert voor een adaptief formulier, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op een formuliergegevensmodel (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 |---------|-----------------------------|
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dit artikel |
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 De voorlegging van de vorm is de kritieke definitieve stap in de gebruikersreis-het is waar de verzamelde gegevens worden verwerkt en de acties worden genomen. Dit document bevat een uitgebreide handleiding voor het configureren en beheren van verzendhandelingen voor Adaptive Forms in Universal Editor.
 
-### Wat leert u?
+## Wat leert u?
 
 Aan het einde van dit document leert u hoe u:
 
@@ -33,7 +34,7 @@ Aan het einde van dit document leert u hoe u:
 - Implementeer aangepaste verzendacties voor specifieke bedrijfsbehoeften
 - Formuliervalidatie en foutscenario&#39;s tijdens verzending verwerken
 
-### Doelpubliek
+## Doelpubliek
 
 Deze handleiding is ontworpen voor:
 
@@ -75,8 +76,5 @@ U kunt de verzendactie voor vormen vormen vormen die in de Universele Redacteur 
 
 >[!NOTE]
 >
-> - Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3&rbrace; uitbreiding van de Eigenschappen van de Vorm &lbrace;in Extension Manager uit.**
-> - Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
-
-
+> - Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram in uw Universele interface van de Redacteur uit, laat **toe geef de 3} uitbreiding van de Eigenschappen van de Vorm {in Extension Manager uit.**
+> - Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren hoe te om uitbreidingen in of onbruikbaar te maken in de Universele Redacteur.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
