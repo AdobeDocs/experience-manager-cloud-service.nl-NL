@@ -50,7 +50,7 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 ### Universele editor
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features">pre-release channel</a>. </span>
 -->
 
 [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is een visueel, belemmering-en-dalingsauteursgereedschap voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
