@@ -33,7 +33,7 @@ Voordat u begint met het maken van uw eerste aangepaste verzendactie voor Adapti
 
 In het onderstaande diagram worden de stappen beschreven voor het maken van een aangepaste verzendactie voor een adaptieve vorm:
 
-![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) {width=50%, hoogte-50%)
+![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) &lbrace;width=50%, hoogte-50%)
 
 ### Clone AEM as a Cloud Service Git-gegevensopslagruimte.
 

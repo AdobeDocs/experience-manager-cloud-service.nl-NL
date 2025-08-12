@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermoge
 >[!NOTE]
 >
 >Als u in bulk het publiceren inhoud geinteresseerd bent, creeer een werkschema gebruikend de [ Stap van het Werkschema van de Activering van de Boom ](#tree-activation), die grote ladingen efficiënt kan behandelen.
->>Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
->>Als u om welke reden dan ook moet aanpassen, kunt u een werkstroom met deze stap teweegbrengen door bestaande Werkstroom APIs te gebruiken.
->>Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u niet probeert grote aantallen inhoud te publiceren, als dat niet nodig is. Er gelden echter geen limieten voor de hoeveelheid inhoud die u via workflows kunt verzenden met de Workflowstap voor boomactivering.
+>&#x200B;>Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
+>&#x200B;>Als u om welke reden dan ook moet aanpassen, kunt u een werkstroom met deze stap teweegbrengen door bestaande Werkstroom APIs te gebruiken.
+>&#x200B;>Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u niet probeert grote aantallen inhoud te publiceren, als dat niet nodig is. Er gelden echter geen limieten voor de hoeveelheid inhoud die u via workflows kunt verzenden met de Workflowstap voor boomactivering.
 
 ### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
 
@@ -66,7 +66,7 @@ Maak een workflowmodel dat gebruikmaakt van de processtap `TreeActivation` :
    ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
-1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
+1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
 
    ![ Treeactivation ](/help/operations/assets/new-treeactivationstep.png)
 
@@ -147,7 +147,7 @@ U kunt ook een workflowmodel maken waarin de processtap `Publish Content Tree` w
    ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
 1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
-1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
+1. Selecteer het **lusje van het Proces** &lbrace;en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler &lbrace;** controlevakje
 
    ![ Treeactivation ](/help/operations/assets/newstep.png)
 

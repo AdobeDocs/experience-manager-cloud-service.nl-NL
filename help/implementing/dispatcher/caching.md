@@ -241,7 +241,7 @@ Zie de [ zelfstudie van de de verhoudingsanalyse van de geheim voorgeheugentreff
 
 ### HEAD-aanvraaggedrag {#request-behavior}
 
-Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat **** niet {in het voorgeheugen ondergebracht is, wordt het verzoek omgezet en door de instantie van Dispatcher en/of AEM als verzoek van GET ontvangen. Als de reactie cacheable is, dan worden de verdere verzoeken van HEAD gediend van CDN. Als de reactie niet cacheable is, dan worden de verdere HEAD verzoeken overgegaan tot de instantie van Dispatcher, of AEM, of allebei, voor een tijd die van `Cache-Control` TTL afhangt.
+Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat **&#x200B;**&#x200B;niet &lbrace;in het voorgeheugen ondergebracht is, wordt het verzoek omgezet en door de instantie van Dispatcher en/of AEM als verzoek van GET ontvangen. Als de reactie cacheable is, dan worden de verdere verzoeken van HEAD gediend van CDN. Als de reactie niet cacheable is, dan worden de verdere HEAD verzoeken overgegaan tot de instantie van Dispatcher, of AEM, of allebei, voor een tijd die van `Cache-Control` TTL afhangt.
 
 ### Parameters van de marketingcampagne {#marketing-parameters}
 
@@ -267,7 +267,7 @@ data:
     removeMarketingParams: false
 ```
 
-In het geval dat `removeMarketingParams` de functionaliteit op CDN niveau wordt onbruikbaar gemaakt wordt het nog geadviseerd om het 1} bezit van de configuratie van Dispatcher te vormen {; zie `ignoreUrlParams` Vormend Dispatcher - het Negeren van Parameters URL [.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)
+In het geval dat `removeMarketingParams` de functionaliteit op CDN niveau wordt onbruikbaar gemaakt wordt het nog geadviseerd om het 1&rbrace; bezit van de configuratie van Dispatcher te vormen &lbrace;; zie `ignoreUrlParams` Vormend Dispatcher - het Negeren van Parameters URL [.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)
 
 Er zijn twee mogelijkheden om marketingparameters te negeren. (Waar de eerste voorkeur cachebusting via queryparameters negeert):
 

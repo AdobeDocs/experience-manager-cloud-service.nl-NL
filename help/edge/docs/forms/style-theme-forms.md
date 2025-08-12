@@ -637,6 +637,7 @@ De kiezer maakt stijlen van alle deelvensters die kunnen worden herhaald, zodat 
   margin-bottom: 10px;
 }
 ```
+
 Met deze kiezer worden alle veldomlooptekens binnen een herhaalbaar deelvenster geplaatst, waarbij een consistente afstand tussen velden behouden blijft.
 
 - Specifieke velden activeren (binnen een deelvenster):

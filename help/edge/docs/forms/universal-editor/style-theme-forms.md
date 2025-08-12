@@ -1109,6 +1109,7 @@ U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en s
   text-align: center;
 }
 ```
+
 +++
 
 +++ Stijlen op basis van veldnaam

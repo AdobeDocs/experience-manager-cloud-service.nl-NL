@@ -87,7 +87,7 @@ De Admin Console bevat twee afzonderlijke handelingen voor het uploaden en bewer
 
 >[!NOTE]
 >
->Een gebruiker zal in het **BulkGebruiker verschijnen uploadt** dossier als het in een groep is die tijdens de zelfde opname wordt opgenomen het dossier van wordt gecreeerd. Het kan ook verschijnen als de gebruiker direct op ACL of KUG van gemigreerde inhoud is, of een lid van een ingebouwde groep of een lokale groep is die op ACL of KUG van de gemigreerde inhoud is. Zie [ van de Migratie van de Groep 0} voor meer informatie over deze gevallen.](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
+>Een gebruiker zal in het **BulkGebruiker verschijnen uploadt** dossier als het in een groep is die tijdens de zelfde opname wordt opgenomen het dossier van wordt gecreeerd. Het kan ook verschijnen als de gebruiker direct op ACL of KUG van gemigreerde inhoud is, of een lid van een ingebouwde groep of een lokale groep is die op ACL of KUG van de gemigreerde inhoud is. Zie [ van de Migratie van de Groep 0&rbrace; voor meer informatie over deze gevallen.](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
 
 Voer de volgende stappen uit om de Admin Console-functionaliteit voor bulkupload van gebruikers te gebruiken:
 

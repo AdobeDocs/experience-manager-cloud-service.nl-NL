@@ -105,7 +105,7 @@ Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vorme
 
 1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
 
-1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3} lusje van de Authentificatie {en kopieer de waarde voor** Technische rekening identiteitskaart **.**
+1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3&rbrace; lusje van de Authentificatie &lbrace;en kopieer de waarde voor** Technische rekening identiteitskaart **.**
 
    * Het zal er ongeveer zo uitzien als `<tech-account-id>@techacct.adobe.com`
    * De technische account is hetzelfde voor alle sites in één AEM-auteuromgeving.
