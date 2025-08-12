@@ -115,6 +115,7 @@ Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen wo
       "storeRefreshToken": false
    }
    ```
+
 1. Configureer vervolgens de eigenschappen als volgt:
    * `groupsInIdToken`: wordt ingesteld op true als de groepen worden verzonden in een ID-token. Als de waarde vals is, of niet gespecificeerd, worden de groepen gelezen van eindpunt UserInfo.
    * `groupsClaimName`: De naam van de claim bevat de groepen die in AEM moeten worden gesynchroniseerd.
