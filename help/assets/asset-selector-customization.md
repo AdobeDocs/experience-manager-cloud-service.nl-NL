@@ -3,9 +3,9 @@ title: Toepassing Asset Selector aanpassen
 description: Gebruik functies om de kiezer van het element in uw toepassing aan te passen.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -174,15 +174,15 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 | *repo:id* | string | Unieke id voor het element. |
 | *repo:assetClass* | string | De classificatie van het element (bijvoorbeeld afbeelding, video, document). |
 | *repo:name* | string | De naam van het element, inclusief de bestandsextensie. |
-| *repo:grootte* | getal | De grootte van het element in bytes. |
-| *repo:weg* | string | De locatie van het middel in de opslagplaats. |
-| *repo:voorouders* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
-| *repo:staat* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
+| *repo:size* | getal | De grootte van het element in bytes. |
+| *repo:path* | string | De locatie van het middel in de opslagplaats. |
+| *repo:ancestors* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
+| *repo:state* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
 | *repo:createdBy* | string | De gebruiker of het systeem dat het element heeft gemaakt. |
-| *reactie:createDate* | string | De datum en tijd waarop het element is gemaakt. |
+| *repo:createDate* | string | De datum en tijd waarop het element is gemaakt. |
 | *repo:modifiedBy* | string | De gebruiker of het systeem dat het element als laatste heeft gewijzigd. |
-| *reactie:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
-| *dc:formaat* | string | De indeling van het element, zoals het bestandstype (bijvoorbeeld JPEG, PNG, enzovoort). |
+| *repo:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
+| *dc:format* | string | De indeling van het element, zoals het bestandstype (bijvoorbeeld JPEG, PNG, enzovoort). |
 | *tiff:imageWidth* | getal | De breedte van een element. |
 | *tiff:imageLength* | getal | De hoogte van een element. |
 | *computedMetadata* | `Record<string, any>` | Een object dat een emmertje vertegenwoordigt voor alle soorten metagegevens van het element (gegevensopslagruimte, toepassing of ingesloten metagegevens). |
@@ -255,6 +255,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

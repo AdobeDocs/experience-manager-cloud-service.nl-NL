@@ -4,17 +4,17 @@ description: Leer hoe u een aangepaste verzendactie maakt voor een adaptieve For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
 
 ---
 
-
 # Een aangepaste verzendactie maken voor Adaptive Forms (Core Components)
 
-Met een verzendactie kunnen gebruikers de bestemming selecteren voor de gegevens die in een formulier zijn vastgelegd en aanvullende functionaliteit definiëren die bij het verzenden van het formulier moet worden uitgevoerd. AEM vorm steunt veelvoudige [ voorlegt acties uit-van-de-doos (OOTB) ](/help/forms/configure-submit-actions-core-components.md), zoals het verzenden van een e-mail of het opslaan van gegevens naar SharePoint of OneDrive.
+Met een verzendactie kunnen gebruikers de bestemming selecteren voor de gegevens die in een formulier zijn vastgelegd en aanvullende functionaliteit definiëren die bij het verzenden van het formulier moet worden uitgevoerd. De vorm van AEM steunt veelvoudige [ voorlegt acties uit-van-de-doos (OTB) ](/help/forms/configure-submit-actions-core-components.md), zoals het verzenden van een e-mail of het opslaan van gegevens naar SharePoint of OneDrive.
 
 U kunt een douane ook creëren voorlegt actie om functionaliteit toe te voegen niet inbegrepen in [ uit-van-de-doos opties ](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). U kunt bijvoorbeeld de formuliergegevens integreren met een toepassing van een derde of een gepersonaliseerde SMS-melding activeren op basis van de gebruikersinvoer.
 
@@ -33,7 +33,7 @@ Voordat u begint met het maken van uw eerste aangepaste verzendactie voor Adapti
 
 In het onderstaande diagram worden de stappen beschreven voor het maken van een aangepaste verzendactie voor een adaptieve vorm:
 
-![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) &lbrace;width=50%, hoogte-50%)
+![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) {width=50%, hoogte-50%)
 
 ### Clone AEM as a Cloud Service Git-gegevensopslagruimte.
 
@@ -47,11 +47,11 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij het bepalen van de plaats van deze details, verwijs naar het artikel van Adobe Experience League &quot;[ tot Toegang hebbend Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[ Toegang tot Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Uw project is klaar!**
 
-   Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw toepassing (bijvoorbeeld app-id). Deze map bevat alle bestanden en code die u hebt gedownload van uw AEM as a Cloud Service Git-opslagplaats. U kunt `<appid>` voor uw AEM Project in het `archetype.properties` dossier vinden.
+   Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw toepassing (bijvoorbeeld app-id). Deze map bevat alle bestanden en code die u hebt gedownload van uw AEM as a Cloud Service Git-opslagplaats. U kunt `<appid>` voor uw AEM-project vinden in het `archetype.properties` -bestand.
 
    ![ archetype Eigenschappen ](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -81,7 +81,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: vervangen &lt;app-id> met uw werkelijke toepassings-id.
+   `Important`: vervang `<app-id>` door de werkelijke toepassings-id.
 
 1. Nieuw configuratiebestand maken.
 Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml` .
@@ -134,7 +134,7 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
 1. Navigeer naar de volgende map in de `[AEMaaCS project directory]` :
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: vervangen &lt;app-id> met uw werkelijke toepassings-id.
+   `Important`: vervang `<app-id>` door de werkelijke toepassings-id.
 1. Maak een nieuw Java-bestand om de service voor de toegevoegde verzendactie te implementeren. Voeg bijvoorbeeld het nieuwe Java-bestand toe als `CustomSubmitService.java` .
 
    ![ Douane legt de Omslag van de Actie ](/help/forms/assets/custom-submit-action-custom-submit-folder.png) voor
@@ -204,9 +204,9 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
       ![ Lokale Plaatsing ](/help/forms/assets/custom-submit-action-local-deployment.png)
 
-**stel de code voor het milieu van de Cloud Service** op
+**stel de code voor het milieu van Cloud Service** op
 
-* Implementeer de AEM as a Cloud Service, `[AEMaaCS project directory]` , in uw Cloud Service-omgeving. Implementeren in uw Cloud Service-omgeving:
+* Implementeer de AEM as a Cloud Service `[AEMaaCS project directory]` in uw Cloud Service-omgeving. Distribueren naar uw Cloud Service-omgeving:
 
    1. Uw wijzigingen vastleggen:
 
@@ -214,9 +214,9 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
    1. De bijgewerkte code implementeren:
 
-      Trigger een plaatsing van uw code door de [ bestaande volledig-stapelpijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
+      Trigger een plaatsing van uw code door de [ bestaande volledig-stapelpijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![ Plaatsing van de Wolk ](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 

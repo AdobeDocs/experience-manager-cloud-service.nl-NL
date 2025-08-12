@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -144,180 +144,180 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 >[!TAB  JSON Schema v4 ]
 
 ```json
-{
-"$schema": "https://json-schema.org/draft-04/schema#",
-"definitions": {
-  "employee": {
-  "type": "object",
-  "properties": {
-    "userName": {
-     "type": "string"
-   },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
+    "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
     },
-    "email": {
-    "type": "string",
-    "format": "email"
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
     },
-    "language": {
-     "type": "string"
-   },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-   },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
     "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
+     "type": "array",
+     "items": {
+     "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projects": {
+      "$ref": "#/definitions/projects"
+     }
     }
-  },
-  "required": [
-   "userName",
-   "dateOfBirth",
-   "language"
-  ]
-  },
-    "personalDetails": {
-   "type": "object",
-  "properties": {
-     "GeneralDetails": {
-    "$ref": "#/definitions/GeneralDetails"
    },
-    "Family": {
-     "$ref": "#/definitions/Family"
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projects": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projectsAdditional": {
+      "$ref": "#/definitions/projectsAdditional"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projectsAdditional": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "Additional_name": {
+      "type": "string"
+     },
+     "Additional_areacode": {
+      "type": "number"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "GeneralDetails": {
+   "type": "object",
+   "properties": {
+    "age": {
+     "type": "number"
+    },
+    "married": {
+     "type": "boolean"
+    },
+    "phone": {
+     "type": "number",
+     "aem:afProperties": {
+      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+      "guideNodeClass": "guideTelephone"
+     }
+    },
+    "address": {
+     "type": "string"
+    }
+   }
+  },
+  "Family": {
+   "type": "object",
+   "properties": {
+    "spouse": {
+     "$ref": "#/definitions/spouse"
+    },
+    "kids": {
+     "$ref": "#/definitions/kids"
+    }
+   }
+  },
+  "Income": {
+   "type": "object",
+   "properties": {
+    "monthly": {
+     "type": "number"
+    },
+    "yearly": {
+     "type": "number"
+    }
+   }
+  },
+  "spouse": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
     },
     "Income": {
      "$ref": "#/definitions/Income"
+    }
    }
-   }
-     },
-  "projectDetails": {
-   "type": "array",
-   "items": {
-   "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projects": {
-    "$ref": "#/definitions/projects"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projects": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projectsAdditional": {
-    "$ref": "#/definitions/projectsAdditional"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projectsAdditional": {
- "type": "array",
- "items": {
-  "properties": {
-   "Additional_name": {
-    "type": "string"
-   },
-   "Additional_areacode": {
-    "type": "number"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"GeneralDetails": {
- "type": "object",
- "properties": {
-  "age": {
-   "type": "number"
-  },
-  "married": {
-   "type": "boolean"
-  },
-  "phone": {
-   "type": "number",
-   "aem:afProperties": {
-    "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-    "guideNodeClass": "guideTelephone"
-   }
-  },
-  "address": {
-   "type": "string"
-  }
- }
-},
-"Family": {
- "type": "object",
- "properties": {
-  "spouse": {
-   "$ref": "#/definitions/spouse"
   },
   "kids": {
-   "$ref": "#/definitions/kids"
-  }
- }
-},
-"Income": {
- "type": "object",
- "properties": {
-  "monthly": {
-   "type": "number"
-  },
-  "yearly": {
-   "type": "number"
-  }
- }
-},
-"spouse": {
- "type": "object",
- "properties": {
-  "name": {
-   "type": "string"
-  },
-  "Income": {
-   "$ref": "#/definitions/Income"
-  }
- }
-},
-"kids": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     }
+    }
    },
-   "age": {
-    "type": "number"
-   }
+   "minItems": 1,
+   "maxItems": 4
   }
  },
- "minItems": 1,
- "maxItems": 4
-}
-},
-"type": "object",
-"properties": {
-"employee": {
- "$ref": "#/definitions/employee"
-}
-}
+ "type": "object",
+ "properties": {
+  "employee": {
+   "$ref": "#/definitions/employee"
+  }
+ }
 }
 ```
 
@@ -453,6 +453,7 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 >[!ENDTABS]
 
 De belangrijkste wijzigingen van de specificaties van JSON Schema V4 naar versie 2020-12 zijn:
+
 * Id is gedeclareerd als `$id`
 * definities worden gedeclareerd als `$defs`
 
@@ -489,7 +490,7 @@ In het bovenstaande voorbeeld wordt een klantrecord gedefinieerd, waarbij elke k
 
 ## Velden vooraf configureren in JSON-schemadefinitie {#pre-configuring-fields-in-json-schema-definition}
 
-U kunt **gebruiken aem:afProperties** bezit om het gebied van het Schema van JSON vooraf te vormen om aan een component van de Vorm van de douaneAanpassings in kaart te brengen. Hieronder ziet u een voorbeeld:
+U kunt het **aem:afProperties** bezit gebruiken om het gebied van het Schema van JSON vooraf te vormen om aan een component van de Vorm van de douaneAanpassings in kaart te brengen. Hieronder ziet u een voorbeeld:
 
 ```json
 {
@@ -883,7 +884,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
 
 Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve Forms in staat te stellen schema-compatibele gegevens te genereren bij het verzenden van formulieren:
 
-1. Ga naar de webconsole van de Experience Manager op `https://server:host/system/console/configMgr` .
+1. Ga naar Experience Manager-webconsole op `https://server:host/system/console/configMgr` .
 1. Zoek **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]** .
 1. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 1. Schakel het selectievakje **[!UICONTROL Generate Schema Compliant Data]** in.

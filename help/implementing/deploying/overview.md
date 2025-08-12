@@ -4,7 +4,7 @@ description: Meer informatie over de basisbeginselen en de beste werkwijzen van 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 0%
@@ -56,8 +56,7 @@ De volgende video biedt een overzicht op hoog niveau over hoe u code kunt implem
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model, dat is hoe een toepassing op AEM as a Cloud Service wordt beschreven wanneer deze in een cloudomgeving wordt uitgevoerd. Dientengevolge, wanneer het bekijken van de pakketten in [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op de milieu&#39;s van de Wolk, omvat de naam &quot;cp2fm&quot;en de getransformeerde pakketten hebben alle meta-gegevens verwijderd. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Zie [&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) voor gedetailleerde documentatie over de converter.
-sling-org-apache-sling-feature-cpconverter op GitHub .
+Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model, dat is hoe een toepassing op AEM as a Cloud Service wordt beschreven wanneer deze in een cloudomgeving wordt uitgevoerd. Dientengevolge, wanneer het bekijken van de pakketten in [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op de milieu&#39;s van de Wolk, omvat de naam &quot;cp2fm&quot;en de getransformeerde pakketten hebben alle meta-gegevens verwijderd. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Voor gedetailleerde documentatie over converter zie [ sling-org-apache-sling-feature-cpconverter op GitHub ](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhoudspakketten die voor toepassingen op AEM as a Cloud Service zijn geschreven, moeten een duidelijke scheiding hebben tussen onveranderbare en muteerbare inhoud en Cloud Manager installeert alleen de veranderbare inhoud en voert ook een bericht uit zoals:
 
@@ -112,7 +111,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
    * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie [ het filevault documentatie van het Jasrabbit ](https://jackrabbit.apache.org/filevault/installhooks.html) over installeert haken. AEM CS gebruikt momenteel FileVault versie 3.4.0, die installatiekoppen beperkt tot beheergebruikers, systeemgebruikers en leden van de beheerdersgroep).
 
-U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details over geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=nl-NL) worden gevonden.
+U kunt de installatie van veranderbare inhoud beperken tot auteur of publiceren door pakketten in te sluiten in de map install.auteur of install.publish onder `/apps` . De herstructurering om deze scheiding te weerspiegelen werd gedaan in AEM 6.5 en de details over geadviseerde projectherstructurering kunnen in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden gevonden.
 
 >[!NOTE]
 >Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. De inhoud die voor een milieu specifiek is vereist handinstallatie als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +120,7 @@ Er is ook geen mechanisme om wijzigingen in het veranderbare inhoudspakket terug
 
 Alle meegeleverde pakketten van derden moeten als compatibel met AEM as a Cloud Service worden gevalideerd, anders leidt de opname ervan tot een implementatiefout.
 
-Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening moeten in overeenstemming zijn nodig door de veranderingen van de 6.5 bewaarplaats die in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=nl-NL) worden beschreven.
+Zoals hierboven vermeld, zouden de klanten met bestaande codebases aan de opbergordeherstructureringsoefening moeten in overeenstemming zijn nodig door de veranderingen van de 6.5 bewaarplaats die in [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) worden beschreven.
 
 ## Opnieuw plaatsen {#repoinit}
 
@@ -177,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
 >abstract="Verken het gebruik van Package Manager voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;one off&#39;. De installatie omvat het importeren van specifieke inhoud van de productie naar het opbouwen om een productieprobleem op te lossen, het overbrengen van een pakket met kleine inhoud van een on-premise omgeving naar AEM Cloud-omgevingen en nog veel meer."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=nl-NL" text="Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Inhoud overbrengen"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld, het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s, [ de Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) kan in milieu&#39;s op AEM as a Cloud Service worden gebruikt.
 
@@ -263,7 +262,7 @@ AEM as a Cloud Service werkt momenteel niet met indexbeheerprogramma&#39;s zoals
 
 ## Replicatie {#replication}
 
-Het publicatiemechanisme is achterwaarts compatibel met [ de Replicatie Java™ APIs van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
+Het publicatiemechanisme is achterwaarts compatibel met [ de Replicatie Java™ APIs van AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
 Voor het ontwikkelen en testen van replicatie met de AEM QuickStart die klaar is voor de cloud, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Author/Publish-instelling. Als het ingangspunt voor de gebruikersinterface van AEM Author voor de wolk wordt verwijderd, gaan de gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
 

@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '458'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,11 @@ In deze handleiding wordt uitgelegd hoe u de functie JSON+LD in AEM CIF kunt ins
 ## JSON+LD inschakelen in CIF-configuratie {#enabling}
 
 Door gebrek, **laat JSON+LD** checkbox toe is niet zichtbaar in de configuratie van CIF. Om deze eigenschap toe te laten, moet het project de noodzakelijke configuratie OSGi omvatten, die checkbox om toestaat worden getoond. Met deze configuratie kunnen gebruikers JSON+LD-scriptondersteuning op productpagina&#39;s in- en uitschakelen.
-Om **toe te laten JSON+LD** checkbox beschikbaar in de configuratie van CIF, voeg de volgende configuratie OSGi aan uw project toe: &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+
+Om **toe te laten JSON+LD** checkbox beschikbaar in de configuratie van CIF te maken, voeg de volgende configuratie OSGi aan uw project toe:
+
+`com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
+
 Voor verdere details bij het toevoegen van deze configuratie, verwijs naar [ toevoegt configuratie voor json-Ld ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) in de openbare aem-cif-guides-venia bewaarplaats.
 
 Zodra deze configuratie wordt toegevoegd en opgesteld, wordt checkbox zichtbaar in de de configuratiemontages van CIF en hier zijn de stappen om **JSON+LD** toe te laten:
@@ -38,7 +41,7 @@ Zodra deze configuratie wordt toegevoegd en opgesteld, wordt checkbox zichtbaar 
 
 Om de stappen te illustreren om JSON+LD te verifiëren, wordt het project van Venia gebruikt als voorbeeld, waar de vereiste configuratie JSON+LD reeds wordt toegevoegd om de eigenschap toe te laten. Hier volgen de volgende stappen:
 
-1. Ga naar uw lokale AEM-exemplaar en open de pagina met productdetails (PDP): http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
+1. Navigeer aan uw lokale instantie van AEM en open de Pagina van het Detail van het Product (PDP): http://localhost:4502 /editor.html/content/venia/us/en/products/product-page.html
 1. Maak een product op de pagina met productdetails (PDP).
 1. Schakelaar aan **Mening als Publish** wijze.
 1. Open de **Pagina van de Mening Source** in uw browser.

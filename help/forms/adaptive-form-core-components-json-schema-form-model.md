@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -128,176 +128,176 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 >[!TAB  JSON Schema v4 ]
 
 ```json
-{
-"$schema": "https://json-schema.org/draft-04/schema#",
-"definitions": {
-  "employee": {
-  "type": "object",
-  "properties": {
-    "userName": {
-     "type": "string"
-   },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
+    "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
     },
-    "email": {
-    "type": "string",
-    "format": "email"
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
     },
-    "language": {
-     "type": "string"
-   },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-   },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
     "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
+     "type": "array",
+     "items": {
+     "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projects": {
+      "$ref": "#/definitions/projects"
+     }
     }
-  },
-  "required": [
-   "userName",
-   "dateOfBirth",
-   "language"
-  ]
-  },
-    "personalDetails": {
-   "type": "object",
-  "properties": {
-     "GeneralDetails": {
-    "$ref": "#/definitions/GeneralDetails"
    },
-    "Family": {
-     "$ref": "#/definitions/Family"
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projects": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projectsAdditional": {
+      "$ref": "#/definitions/projectsAdditional"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projectsAdditional": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "Additional_name": {
+      "type": "string"
+     },
+     "Additional_areacode": {
+      "type": "number"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "GeneralDetails": {
+   "type": "object",
+   "properties": {
+    "age": {
+     "type": "number"
+    },
+    "married": {
+     "type": "boolean"
+    },
+    "phone": {
+     "type": "number",
+    },
+    "address": {
+     "type": "string"
+    }
+   }
+  },
+  "Family": {
+   "type": "object",
+   "properties": {
+    "spouse": {
+     "$ref": "#/definitions/spouse"
+    },
+    "kids": {
+     "$ref": "#/definitions/kids"
+    }
+   }
+  },
+  "Income": {
+   "type": "object",
+   "properties": {
+    "monthly": {
+     "type": "number"
+    },
+    "yearly": {
+     "type": "number"
+    }
+   }
+  },
+  "spouse": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
     },
     "Income": {
      "$ref": "#/definitions/Income"
+    }
    }
-   }
-     },
-  "projectDetails": {
-   "type": "array",
-   "items": {
-   "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projects": {
-    "$ref": "#/definitions/projects"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projects": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projectsAdditional": {
-    "$ref": "#/definitions/projectsAdditional"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projectsAdditional": {
- "type": "array",
- "items": {
-  "properties": {
-   "Additional_name": {
-    "type": "string"
-   },
-   "Additional_areacode": {
-    "type": "number"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"GeneralDetails": {
- "type": "object",
- "properties": {
-  "age": {
-   "type": "number"
-  },
-  "married": {
-   "type": "boolean"
-  },
-  "phone": {
-   "type": "number",
-  },
-  "address": {
-   "type": "string"
-  }
- }
-},
-"Family": {
- "type": "object",
- "properties": {
-  "spouse": {
-   "$ref": "#/definitions/spouse"
   },
   "kids": {
-   "$ref": "#/definitions/kids"
-  }
- }
-},
-"Income": {
- "type": "object",
- "properties": {
-  "monthly": {
-   "type": "number"
-  },
-  "yearly": {
-   "type": "number"
-  }
- }
-},
-"spouse": {
- "type": "object",
- "properties": {
-  "name": {
-   "type": "string"
-  },
-  "Income": {
-   "$ref": "#/definitions/Income"
-  }
- }
-},
-"kids": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     }
+    }
    },
-   "age": {
-    "type": "number"
-   }
+   "minItems": 1,
+   "maxItems": 4
   }
  },
- "minItems": 1,
- "maxItems": 4
-}
-},
-"type": "object",
-"properties": {
-"employee": {
- "$ref": "#/definitions/employee"
-}
-}
+ "type": "object",
+ "properties": {
+  "employee": {
+   "$ref": "#/definitions/employee"
+  }
+ }
 }
 ```
 
@@ -429,6 +429,7 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 >[!ENDTABS]
 
 De belangrijkste wijzigingen van de specificaties van JSON Schema V4 naar versie 2020-12 zijn:
+
 * Id is gedeclareerd als `$id`
 * definities worden gedeclareerd als `$defs`
 
@@ -482,8 +483,10 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 
 ```
+-->
 
-<!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
+<!-- 
+## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 
@@ -857,7 +860,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
 
 Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve Forms in staat te stellen schema-compatibele gegevens te genereren bij het verzenden van formulieren:
 
-1. Ga naar de webconsole van de Experience Manager op `https://server:host/system/console/configMgr` .
+1. Ga naar Experience Manager-webconsole op `https://server:host/system/console/configMgr` .
 1. Zoek **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]** .
 1. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 1. Schakel het selectievakje **[!UICONTROL Generate Schema Compliant Data]** in.

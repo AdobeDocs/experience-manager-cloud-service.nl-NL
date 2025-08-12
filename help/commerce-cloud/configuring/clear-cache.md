@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ Dit document bevat een uitgebreide handleiding voor het inschakelen en verifiër
 De functie clear-cache wordt standaard uitgeschakeld in de CIF-configuratie. Om het toe te laten, moet u het volgende aan uw overeenkomstige projecten toevoegen:
 
 * Laat servlet `/bin/cif/invalidate-cache` toe die u helpt de duidelijk-geheime voorgeheugen API met hun overeenkomstige verzoeken teweegbrengen door de `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` configuratie in uw project toe te voegen zoals [ hier ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json) getoond.
+
   >[!NOTE]
   >
   > De configuratie moet slechts voor de auteursinstanties worden toegelaten.
@@ -45,11 +46,12 @@ De functie clear-cache wordt standaard uitgeschakeld in de CIF-configuratie. Om 
 
 Om te controleren of alles correct is ingesteld:
 
-* Trigger overeenkomstige servlet aan de Instantie AEM van de Auteur, bijvoorbeeld [ http://localhost:4502/bin/cif/invalidate-cache ](http://localhost:4502/bin/cif/invalidate-cache) en u zou een reactie van 200 HTTP moeten krijgen.
+* Trigger overeenkomstige servlet aan de Instantie AEM van de Auteur, bijvoorbeeld [ http://localhost :4502/bin/cif/invalidate-cache ](http://localhost:4502/bin/cif/invalidate-cache) en u zou een reactie van 200 HTTP moeten krijgen.
 * Controleer of er een knooppunt is gemaakt onder het volgende pad in auteurinstanties: `/var/cif/cacheinvalidation` . De knooppuntnaam volgt dit patroon: `cmd_{{timestamp}}`.
 * Verifieer dat de zelfde knoop in elke publicatieinstantie is gecreeerd.
 
 Nu, om te controleren of de geheime voorgeheugens behoorlijk worden ontruimd:
+
 1. Navigeer naar de corresponderende PLP- en PDP-pagina&#39;s.
 2. Werk een product of categorienaam in de handels motor bij. De wijzigingen worden niet direct doorgevoerd in AEM op basis van cacheconfiguraties.
 3. Trigger de servlet API zoals hier getoond:
@@ -57,7 +59,7 @@ Nu, om te controleren of de geheime voorgeheugens behoorlijk worden ontruimd:
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -109,7 +111,7 @@ Deze lijst toont het verplichte bezit dat in elke API vraag moet worden overgega
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

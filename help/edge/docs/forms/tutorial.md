@@ -4,7 +4,7 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 0%
@@ -241,7 +241,7 @@ Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
        npm install -g @adobe/aem-cli
    ```
 
-1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt &lt;owner> met de eigenaar van de opslagplaats en &lt;repo> met de naam van de opslagplaats:
+1. Clone your GitHub project: Clone your project repository from GitHub using the following command, replace `<owner>` with the repository owner and `<repo>` with the repository name:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -284,7 +284,7 @@ Integreren:
    - [ van het vormblok ](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) omslag
    - [ vorm-redacteur-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) dossier
    - [ vorm-redacteur-support.css ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) dossier
-1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het &lbrace;[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
+1. Navigeer aan het `/scripts/editor-support.js` dossier in uw Project van AEM en werk het met het {[ redacteur-support.js- dossier in AEM Forms Boilerplate ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js) bij
 1. Navigeer naar `/models/_section.json` in uw AEM-project en voeg &quot;form&quot; en &quot;embed-adaptive-form&quot; toe aan de componentarray van het `filters` -object:
 
    ```
@@ -367,5 +367,5 @@ Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
 Als u de fout &quot;Onbekwaam ontmoet om weg aan module &quot;&quot;/scripts/lib-franklin.js&quot;op te lossen, navigeer aan het [ EDS Project ] /blocks/forms/form.js- dossier. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
 
 - **handvat het Leiden Fouten:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het [ /package.json dossier van het Project van 0&rbrace; EDS &lbrace;en wijzig het &quot;plusteken&quot;manuscript van ] aan `"lint": "npm run lint:js && npm run lint:css"`. `"lint": "echo 'skipping linting for now'"` Sparen het dossier en begaat de veranderingen in uw project GitHub.
+Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open het [ /package.json dossier van het Project van 0} EDS {en wijzig het &quot;plusteken&quot;manuscript van ] aan `"lint": "npm run lint:js && npm run lint:css"`. `"lint": "echo 'skipping linting for now'"` Sparen het dossier en begaat de veranderingen in uw project GitHub.
 

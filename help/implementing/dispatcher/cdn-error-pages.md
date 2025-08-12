@@ -4,7 +4,7 @@ description: Leer hoe te om de standaardfoutenpagina met voeten te treden door s
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # CDN-foutpagina&#39;s configureren {#cdn-error-pages}
 
-In de onwaarschijnlijke gebeurtenis dat [ Adobe-geleide CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de AEM oorsprong kan bereiken, dient CDN door gebrek een unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals de Opslag van Amazon S3 of van Azure Blob te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de Cloud Manager [ config pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager) te gebruiken wordt opgesteld.
+In de onwaarschijnlijke gebeurtenis dat [ Adobe-Beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de oorsprong van AEM kan bereiken, dient CDN door gebrek unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals de Opslag van Amazon S3 of van Azure Blob te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de Cloud Manager [ config pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager) te gebruiken wordt opgesteld.
 
 ## Instellen {#setup}
 
@@ -30,7 +30,7 @@ Voordat u de standaardfoutpagina kunt overschrijven, moet u het volgende doen:
 
 ### Syntaxis {#syntax}
 
-De foutpagina wordt geïmplementeerd als een toepassing van één pagina (SPA) en verwijst naar een handvol eigenschappen, zoals in het onderstaande voorbeeld wordt getoond.  De statische bestanden waarnaar wordt verwezen door de URL&#39;s, moeten door u worden gehost op een service die toegankelijk is voor internet, zoals Amazon S3 of Azure Blob Storage.
+De foutenpagina wordt uitgevoerd als enige paginatoepassing (SPA), en verwijzingen een handvol eigenschappen, zoals aangetoond in het hieronder voorbeeld.  De statische bestanden waarnaar wordt verwezen door de URL&#39;s, moeten door u worden gehost op een service die toegankelijk is voor internet, zoals Amazon S3 of Azure Blob Storage.
 
 Voorbeeld van configuratie:
 
@@ -58,7 +58,7 @@ Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#comm
 |     | cssUrl | URL naar een CSS-bestand. |
 |     | jsUrl | URL naar een JavaScript-bestand. |
 
-### Monster van gegenereerde HTML {#sample-generated-html}
+### Voorbeeld gegenereerde HTML {#sample-generated-html}
 
 De code van HTML die door CDN wordt geproduceerd en aan de cliënt zoals browser wordt gediend zal (maar niet identiek aan) het volgende fragment lijken:
 
@@ -93,6 +93,6 @@ Op deze manier activeert u rechtstreeks de fouthandler van de CDN om de syntheti
 
 ### Zelfstudie
 
-Verwijs naar de [ CDN foutenpagina&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) leerprogramma voor geleidelijke instructies op om tot stand te brengen, op te stellen en te testen CDN diende foutenpagina&#39;s.
+Verwijs naar de [ CDN foutenpagina&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) leerprogramma voor geleidelijke instructies op om tot stand te brengen, op te stellen en te testen CDN diende foutenpagina&#39;s.
 
 

@@ -2,7 +2,7 @@
 title: Bulk uploaden van Principals naar IMS na gebruik van CTT
 description: Overzicht van Bulk uploadt dossiers voor groepen en gebruikers, en hoe te om hen op Admin Console te gebruiken om groepen en gebruikers in IMS tot stand te brengen.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -15,21 +15,21 @@ ht-degree: 0%
 >id="bulk-principal-uploading"
 >title="Bulk uploaden van Principals"
 >abstract="Overzicht van Bulk uploadt dossiers voor groepen en gebruikers, en hoe te om hen op Admin Console te gebruiken om groepen en gebruikers in IMS tot stand te brengen."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console-documentatie"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console-documentatie"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
 ## Inleiding {#introduction}
 
 Door inhoud naar de cloud te migreren met behulp van CTT en CAM worden groepen gemaakt op de AEM-cloud-instantie, maar kunnen groepen of gebruikers niet in IMS worden geplaatst. Zij moeten in IMS bestaan om behoorlijk door klanten worden beheerd. Gelukkig beschikt de Admin Console over functionaliteit om IMS-groepen en gebruikers in bulk te maken. De CAM-opname helpt dit proces door invoerbestanden op te slaan voor dit bulksgewijze ontwerp, zodat klanten deze Admin Console-actie kunnen voltooien als onderdeel van hun algehele migratieproces. Er worden twee soorten bulkuploadbestanden gemaakt: een voor groepen en een voor gebruikers.
 
-Zie ook [ gebruikers ](https://helpx.adobe.com/nl/enterprise/using/users.html) voor extra details over het beheren van de gebruikers van AEM as a Cloud Service leiden.
+Zie ook [ gebruikers ](https://helpx.adobe.com/enterprise/using/users.html) voor extra details over het beheren van de gebruikers van AEM as a Cloud Service leiden.
 
 ## Algemene regels voor het uploaden van bestanden {#rules}
 
 Er zijn een paar algemene richtlijnen voor het bewerken en gebruiken van beide soorten uploadbestanden:
 
 * Beheerders moeten eerst toegang krijgen tot de Admin Console voordat deze instructies kunnen worden opgevolgd.
-* Houd er rekening mee dat er verschillende manieren zijn om gebruikers en groepen te maken in IMS.  Zie [ Steun IMS voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/ims-support) om over alle beschikbare opties te leren.  Alleen de Admin Console bulkuploadmethoden worden hier beschreven.
+* Houd er rekening mee dat er verschillende manieren zijn om gebruikers en groepen te maken in IMS.  Zie [ Steun IMS voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support) om over alle beschikbare opties te leren.  Alleen de Admin Console bulkuploadmethoden worden hier beschreven.
 * Er zijn drie mogelijke identiteitstypen in IMS: Adobe ID, Enterprise ID en Federated ID.  De instructies op deze pagina worden verstrekt voor **slechts Adobe ID**.  Als u Enterprise ID of Federated ID moet gebruiken, gelieve te verwijzen naar de volledige [ documentatie van Admin Console ](https://helpx.adobe.com/ca/enterprise/using/admin-console.html) en ook de specifieke documentatie voor [ de BulkGroep van Admin Console uploadt ](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) en [ BulkGebruiker van Admin Console uploadt ](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html).  De specificaties voor de uploadbestanden verschillen enigszins voor deze twee identiteitstypen.
 * Als in één CSV-veld meerdere items zijn toegestaan (zoals meerdere productprofielen, meerdere groepen of meerdere beheerders), moeten de items worden opgenomen met dubbele aanhalingstekens en worden gescheiden door een komma, d.w.z. `"profile 1,profile 2"` .
 
@@ -37,9 +37,10 @@ Er zijn een paar algemene richtlijnen voor het bewerken en gebruiken van beide s
 
 ## Bulkgroep uploaden {#group-upload}
 
-#### Gebruik hoofdletters/kleine letters: groepen zijn gemigreerd naar AEM as a Cloud Service, maar deze groepen zijn niet aanwezig in IMS/Admin Console, zodat ze via de Admin Console naar IMS moeten worden geüpload.
+### Gebruik hoofdletters/kleine letters: groepen zijn gemigreerd naar AEM as a Cloud Service, maar deze groepen zijn niet aanwezig in IMS/Admin Console, zodat ze via de Admin Console naar IMS moeten worden geüpload.
 
 Voer de volgende stappen uit om de Admin Console-functionaliteit voor het uploaden van bulkgroepen te gebruiken na het uitvoeren van een CTT/CAM-migratie:
+
 1. Download het bulkgroepsbestand van CAM
 
    1. In CAM, ga naar **Overdracht van de Inhoud** en selecteer **IngestieBanen**.
@@ -54,7 +55,6 @@ Voer de volgende stappen uit om de Admin Console-functionaliteit voor het upload
       * _Naam van de Groep van de Gebruiker_ - de groepsnaam wordt vereist, en kan een maximum van 255 karakters bevatten.  Deze groepsnaam moet gelijk zijn in IMS en AEM
       * _Beschrijving_ - Dit gebied is facultatief, en kan een maximum van 255 karakters bevatten
       * _Admins van de Groep van de Gebruiker_ - minstens één groep admin moet op dit gebied worden omvat. U kunt meerdere beheerders toewijzen door elke beheerder te scheiden met een komma en de lijst binnen aanhalingstekens te plaatsen. De vermelding voor elke beheerder moet het identiteitstype van de gebruiker bevatten, gevolgd door een afbreekstreepje en vervolgens het e-mailadres.  Bijvoorbeeld
-
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. Plaats geen spatie na de komma-scheidingsbeheerders. U kunt geen gebruikers (als beheerders) opnemen die momenteel geen deel uitmaken van de organisatie in de Admin Console
       * _Toegewezen Profielen van het Product_ - Dit gebied is facultatief. U kunt meerdere productprofielen toewijzen door elk profiel te scheiden met een komma en de lijst tussen aanhalingstekens te plaatsen. De door u opgenomen productprofielen moeten echter al zijn ingesteld voor de organisatie. Zorg ervoor dat u de naam van het productprofiel opgeeft en niet de naam van het product.  Lidmaatschap van productprofielen die aan een groep zijn toegewezen, wordt overgenomen door alle gebruikers die in die groep zijn geplaatst.  Een productprofiel zoeken:
 
@@ -87,7 +87,7 @@ De Admin Console bevat twee afzonderlijke handelingen voor het uploaden en bewer
 
 >[!NOTE]
 >
->Een gebruiker zal in het **BulkGebruiker verschijnen uploadt** dossier als het in een groep is die tijdens de zelfde opname wordt opgenomen het dossier van wordt gecreeerd. Het kan ook verschijnen als de gebruiker direct op ACL of KUG van gemigreerde inhoud is, of een lid van een ingebouwde groep of een lokale groep is die op ACL of KUG van de gemigreerde inhoud is. Zie [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0&rbrace; voor meer informatie over deze gevallen.
+>Een gebruiker zal in het **BulkGebruiker verschijnen uploadt** dossier als het in een groep is die tijdens de zelfde opname wordt opgenomen het dossier van wordt gecreeerd. Het kan ook verschijnen als de gebruiker direct op ACL of KUG van gemigreerde inhoud is, of een lid van een ingebouwde groep of een lokale groep is die op ACL of KUG van de gemigreerde inhoud is. Zie [ van de Migratie van de Groep 0} voor meer informatie over deze gevallen.](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
 
 Voer de volgende stappen uit om de Admin Console-functionaliteit voor bulkupload van gebruikers te gebruiken:
 
@@ -97,7 +97,7 @@ Voer de volgende stappen uit om de Admin Console-functionaliteit voor bulkupload
    1. Op de dialoog die verschijnt, selecteert het **BulkDossier van de Gebruiker** van de dropdown lijst onder **Download een dossier...** en klikt de **Download** knoop.
    1. Het resulterende CSV-bestand opslaan
 1. Het bulkgebruikersbestand bewerken
-   * Elke regel vertegenwoordigt een gebruiker die moet worden geüpload en heeft vijftien velden (de namen van de velden vormen de eerste regel van het bestand). Sommige velden zijn optioneel en worden hier niet beschreven. Verwijs naar {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format).    De velden zijn:
+   * Elke regel vertegenwoordigt een gebruiker die moet worden geüpload en heeft vijftien velden (de namen van de velden vormen de eerste regel van het bestand). Sommige velden zijn optioneel en worden hier niet beschreven. Verwijs naar {het formaat van 0} BulkGebruiker CSV [.  ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)  De velden zijn:
 
       * _Type van Identiteit_ - Facultatief.  Indien niet opgegeven, wordt deze gemaakt als een Adobe ID
       * _Gebruikersnaam_ - Facultatief, en niet gebruikt voor uploads van Adobe ID
@@ -108,14 +108,14 @@ Voer de volgende stappen uit om de Admin Console-functionaliteit voor bulkupload
       * _Code van het Land_ - Facultatief, en niet gebruikt voor uploads van Adobe ID
       * _identiteitskaart_ - Facultatief, en niet gebruikt voor uploads van Adobe ID
       * _Configuraties van het Product_ - Facultatief. Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
-      * _Admin Roles_ - Facultatief. Gebruik dit veld als de gebruiker een beheerder is. Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details
-      * {de configuraties van 0} Product die _worden beheerd - Facultatief._  Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details.  Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
+      * _Admin Roles_ - Facultatief. Gebruik dit veld als de gebruiker een beheerder is. Zie {het formaat van 0} BulkGebruiker CSV [ voor details](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * {de configuraties van 0} Product die _worden beheerd - Facultatief._  Zie {het formaat van 0} BulkGebruiker CSV [ voor details. ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
       * _Groepen van de Gebruiker_ - Facultatief. Een lijst met groepen waaraan de gebruiker als lid moet worden toegewezen. Elke groep moet een bestaande IMS-groep zijn. Wanneer het bulkgebruikersdossier van CAM wordt gedownload, is dit gebied vooraf bevolkt met namen van IMS-Toegelaten groep de gebruiker (direct of indirect) lid van vóór de migratie was
-      * _Beheerde Groepen van de Gebruiker_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details.  Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
-      * _Beheerde Producten_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details.  Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
-      * _Geleide Contracten_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details
-      * _Toegang van de Ontwikkelaar_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details
-      * _Auto Toegewezen Producten_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [&#128279;](https://helpx.adobe.com/nl/enterprise/using/bulk-upload-users.html#csv-format) voor details
+      * _Beheerde Groepen van de Gebruiker_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [ voor details. ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
+      * _Beheerde Producten_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [ voor details. ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) Dit veld wordt ook overgenomen van groepen waarvan de gebruiker lid is
+      * _Geleide Contracten_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [ voor details](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _Toegang van de Ontwikkelaar_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [ voor details](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _Auto Toegewezen Producten_ - Facultatief.  Zie {het formaat van 0} BulkGebruiker CSV [ voor details](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
 
    * Bij het bewerken van de CSV kunnen sommige toepassingen extra aanhalingstekens toevoegen bij het opslaan, waardoor de verwerking mislukt. Het is een goede gewoonte om de onbewerkte CSV te inspecteren in een eenvoudige teksteditor om ervoor te zorgen dat elk veld slechts één openings- en één afsluitend aanhalingsteken heeft (en dat dit geen &quot;slimme aanhalingstekens&quot; mogen zijn).
 

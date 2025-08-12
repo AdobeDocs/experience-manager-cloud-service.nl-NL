@@ -1,27 +1,25 @@
 ---
-title: Hoe te om Aangepast Forms of PDF forms op een instantie van AEM Forms in te voeren, uit te voeren en te organiseren?
-description: Leer Adaptieve Forms, PDF forms, thema's en andere ondersteunende middelen migreren van en naar AEM instanties.
+title: Hoe kan ik Adaptive Forms of PDF forms importeren, exporteren en organiseren op een AEM Forms-exemplaar?
+description: Leer Adaptief Forms, PDF forms, thema's en andere ondersteunende middelen migreren van en naar AEM-instanties.
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 1%
 
 ---
 
-
+# Adaptieve Forms- en AEM Forms-middelen importeren of exporteren {#importing-and-exporting-assets-to-aem-forms}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Dit artikel |
 
-# Adaptieve Forms- en AEM Forms-middelen importeren of exporteren {#importing-and-exporting-assets-to-aem-forms}
-
-U kunt Adaptief Forms en gerelateerde elementen, zoals Adaptief formulierthema&#39;s, Formuliergegevensmodel (FDM), Aangepaste formuliersjablonen, Fragmenten en PDF forms, verplaatsen tussen [!DNL AEM Forms] -instanties.
+U kunt Adaptief Forms en gerelateerde elementen, zoals Adaptief formulierthema&#39;s, Formuliergegevensmodel (FDM), Aangepaste formuliersjablonen, Fragmenten en PDF forms, tussen [!DNL AEM Forms] -instanties verplaatsen.
 
 ## Adaptieve Forms, PDF forms of verwante middelen downloaden {#download-forms-amp-documents-assets}
 
@@ -44,7 +42,7 @@ Formulieren of gerelateerde elementen downloaden:
 
 De geselecteerde elementen worden gedownload als een archief (.zip-bestand).
 
-## Adaptieve Forms, PDF forms of verwante elementen uploaden {#upload-forms-amp-documents-assets}
+## Adaptieve Forms, PDF forms of verwante middelen uploaden {#upload-forms-amp-documents-assets}
 
 U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. Voor een ZIP-bestand worden de relatieve paden van alle ondersteunde elementen weergegeven. Niet-ondersteunde elementen in het ZIP-bestand worden genegeerd en niet vermeld. Als het ZIP-archief echter alleen de niet-ondersteunde elementen bevat, wordt een foutbericht weergegeven in plaats van het pop-updialoogvenster.
 Een formulier of een verwant element uploaden:
@@ -70,7 +68,7 @@ Een formulier of een verwant element uploaden:
 
 ## Een thema downloaden
 
-U kunt thema&#39;s in [!DNL AEM Forms] exporteren die u kunt gebruiken in andere projecten of instanties. Met AEM kunt u thema&#39;s downloaden als ZIP-bestand, dat u kunt uploaden bij de instantie.
+U kunt thema&#39;s in [!DNL AEM Forms] exporteren die u kunt gebruiken in andere projecten of instanties. Met AEM kunt u thema&#39;s downloaden als ZIP-bestand. U kunt dit bestand op dat moment uploaden.
 Een thema downloaden:
 
 1. Meld u aan bij de [!DNL Experience Manager Forms] Author-instantie.
@@ -183,7 +181,7 @@ Het element doorzoeken:
 
    ![Assets doorzoeken](/help/forms/assets/search-bar.png)
 
-Voor meer informatie en instructies bij het gebruiken van onderzoek, zie [ Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=nl-NL).
+Voor meer informatie en instructies bij het gebruiken van onderzoek, zie [ Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html).
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

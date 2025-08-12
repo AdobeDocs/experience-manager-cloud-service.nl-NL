@@ -4,7 +4,7 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 0%
@@ -65,7 +65,7 @@ data:
 
 Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan `1` moeten worden geplaatst.
 
-Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
+Zie [ vorm en stel de regel van CDN van de de Kopbal bevestiging van HTTP- regel ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial stap voor meer details op.
 
 Tot de aanvullende eigenschappen behoren:
 
@@ -187,7 +187,7 @@ Tot de aanvullende eigenschappen behoren:
 >[!NOTE]
 >De zuiveringssleutel moet als a [ geheime typeVariabele van het Milieu van Cloud Manager ](/help/operations/config-pipeline.md#secret-env-vars) worden gevormd, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld. Het wordt aanbevolen een unieke willekeurige sleutel van minimaal 32 bytes te gebruiken. De cryptografische bibliotheek van Open SSL kan bijvoorbeeld een willekeurige sleutel genereren door de opdracht rand -hex 32 te openen.
 
-U kunt [ een leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
+U kunt [ een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) van verwijzingen voorzien concentreerde zich op het vormen van zuiveringssleutels en het uitvoeren van CDN geheim voorgeheugenzuivering.
 
 ## Basisverificatie {#basic-auth}
 
@@ -241,6 +241,7 @@ Daarnaast bevat de syntaxis:
    * action - moet &quot;voor authentiek verklaren&quot;specificeren, met de voorgenomen authentificator referenced, die basisauth voor dit scenario is
 
 >[!NOTE]
+>
 >De wachtwoorden moeten als [ geheime het milieuvariabelen van typeCloud Manager ](/help/operations/config-pipeline.md#secret-env-vars) worden gevormd, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld.
 
 ## Geheimen roteren {#rotating-secrets}

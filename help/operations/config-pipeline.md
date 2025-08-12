@@ -4,7 +4,7 @@ description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende con
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 0%
@@ -63,10 +63,10 @@ Zoals vroeger genoteerd, wordt de configuratie voor RDEs opgesteld gebruikend [ 
 Elk configuratiebestand begint met eigenschappen die op het volgende voorbeeldfragment lijken:
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | Eigenschap | Beschrijving | Standaard |

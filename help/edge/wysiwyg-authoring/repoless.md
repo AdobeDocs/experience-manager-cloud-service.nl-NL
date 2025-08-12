@@ -7,7 +7,7 @@ exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Zodra u uw toegangstoken hebt, kan het in de kopbal van cURL- verzoeken in het v
 
 U moet een siteconfiguratie maken en deze toevoegen aan uw padtoewijzing.
 
-1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het **malplaatje van de Configuratie[*&#128279;*](/help/edge/wysiwyg-authoring/tabular-data.md#other).
+1. Creeer een nieuwe pagina bij de wortel van uw plaats en kies het [**malplaatje van de Configuratie** ](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * U kunt de configuratie leeg laten met alleen de vooraf gedefinieerde kolommen `key` en `value` . U hoeft deze alleen te maken.
 1. Creeer een afbeelding in de openbare configuratie aan de plaatsconfiguratie gebruikend een cURL bevel gelijkend op het volgende.
 
@@ -105,7 +105,7 @@ Zodra de plaatsconfiguratie in kaart wordt gebracht, kunt u toegangsbeheer vorme
 
 1. Teken in de auteursinstantie van AEM en ga naar **Hulpmiddelen** -> **de Diensten van de Wolk** -> **Configuratie van Edge Delivery Services** en selecteer de configuratie die automatisch voor uw plaats werd gecreeerd en tikken of **Eigenschappen** in de hulpmiddelbar klikken.
 
-1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3&rbrace; lusje van de Authentificatie &lbrace;en kopieer de waarde voor** Technische rekening identiteitskaart **.**
+1. In het **venster van de Configuratie van Edge Delivery Services**, selecteer het **3} lusje van de Authentificatie {en kopieer de waarde voor** Technische rekening identiteitskaart **.**
 
    * Het zal er ongeveer zo uitzien als `<tech-account-id>@techacct.adobe.com`
    * De technische account is hetzelfde voor alle sites in één AEM-auteuromgeving.

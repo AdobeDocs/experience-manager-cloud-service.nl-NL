@@ -4,9 +4,9 @@ description: Meer informatie over de beste werkwijzen voor het toewijzen van ser
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Houd er ook rekening mee dat `principalNames` de lijst is met hoofdnamen van ser
 * Elke dienst is idealiter verbindend aan een zeer specifieke en beperkte reeks verrichtingen
 * De nieuwe indeling met `[one,or,multiple,principalNames]` is de aanbevolen manier om servicetoewijzingen te definiëren vanaf AEM 6.4.
 
-Hieronder vindt u een lijst met redenen voor het wijzigen van de indeling en waarom Adobe u aanraadt deze te gebruiken in plaats van de versietoewijzing alleen voor één gebruiker-id:
+Hieronder vindt u een lijst met redenen waarom u de opmaak wilt wijzigen en waarom Adobe u aanraadt deze te gebruiken in plaats van de versietoewijzing alleen voor één gebruiker-id:
 
 * De capaciteit om de dienstgebruikers te hergebruiken door de speciale behoeften van klanten met gemeenschappelijke taken te combineren
 * Vermijd dubbel instellen van machtigingen
@@ -77,7 +77,7 @@ De volgorde voor het verkrijgen van een service `Session/ResourceResolver` werkt
 
 1. Belangrijkste namen ophalen van `ServiceUserMapper` => pre-auth repository login zoals hieronder beschreven
 1. Gebruikers-id ophalen uit `ServiceUserMapper`
-1. Controle voor afgekeurde 1ServiceUserConfiguration&quot;voor huidige gebruiker identiteitskaart
+1. Controleren op vervangen `1ServiceUserConfiguration` voor huidige gebruikers-id
 1. Standaard Sling-service-aanmelding met de gebruikersnaam (bijvoorbeeld een reeks `createAdministrativeSession` en imiteren voor de id van de servicegebruiker)
 
 De nieuwe toewijzing met belangrijkste namen resulteert in de volgende vereenvoudigde login van de bewaarplaats:
@@ -114,11 +114,11 @@ Bestaande servicegebruikers niet opnieuw gebruiken als:
 
 ### Een servicegebruiker maken {#creating-a-service-user}
 
-Nadat u hebt gecontroleerd dat er geen bestaande servicegebruiker in AEM van toepassing is voor uw use-case en de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud. In het ideale geval is een lid van het uitgebreide beveiligingsteam betrokken bij de RTC-stemming, dus zorg dat u ook de relevante belanghebbenden erbij betrekt.
+Nadat u hebt gecontroleerd dat er geen bestaande servicegebruiker in AEM van toepassing is voor uw gebruikscase en de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud. In het ideale geval is een lid van het uitgebreide beveiligingsteam betrokken bij de RTC-stemming, dus zorg dat u ook de relevante belanghebbenden erbij betrekt.
 
 **noemend Overeenkomst**
 
-Het AEM veiligheidsteam heeft de volgende noemende overeenkomst voor de dienstgebruikers bepaald om consistentie aan nieuwe de dienstgebruikers toe te voegen en hun leesbaarheid en onderhoudbaarheid te verbeteren.
+Het AEM-beveiligingsteam heeft de volgende naamgevingsconventie voor servicegebruikers gedefinieerd om consistentie toe te voegen aan nieuwe servicegebruikers en om hun leesbaarheid en onderhoudbaarheid te verbeteren.
 
 Een de dienstgebruikersnaam bestaat uit 3 elementen die door een streepje **&quot;-&quot;worden gescheiden**:
 

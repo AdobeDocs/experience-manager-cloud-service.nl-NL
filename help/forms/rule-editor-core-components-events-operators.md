@@ -1,13 +1,13 @@
 ---
-title: Wat zijn de verschillende typen operators en gebeurtenissen die beschikbaar zijn in de regeleditor van een adaptief formulier op basis van kerncomponenten?
-description: De regeleditor voor adaptieve formulieren ondersteunt verschillende typen operators en gebeurtenissen.
+title: Wat zijn de verschillende operatortypes en de gebeurtenissen beschikbaar in regel redacteur van een adaptieve vorm die op kerncomponenten wordt gebaseerd?
+description: De adaptieve Forms-regeleditor ondersteunt verschillende typen operatoren en gebeurtenissen.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In AEM Forms als Cloud bevat de regeleditor verschillende typen operatoren en ge
 
 De operatortypen die beschikbaar zijn in de regeleditor van een adaptief formulier bieden een robuust kader voor het samenstellen van nauwkeurige voorwaarden. Hiermee kunt u gegevens manipuleren, berekeningen uitvoeren en meerdere voorwaarden op een logische en coherente manier combineren. Of u nu waarden vergelijkt, rekenkundige bewerkingen uitvoert of tekenreeksen manipuleert, deze operatoren zorgen ervoor dat uw regels zowel flexibel als krachtig zijn.
 
-De gebeurtenissen in de regelredacteur dienen als trekkers die uw regels activeren. Ze definiëren de specifieke acties die optreden wanneer aan bepaalde voorwaarden wordt voldaan. Door gebruik te maken van verschillende soorten gebeurtenissen, kunt u reacties op een breed scala aan scenario&#39;s automatiseren, bijvoorbeeld gebruikersinteracties, geplande tijden, wijzigingen in gegevens en systeemstatussen. Met de mogelijkheid om deze triggers te specificeren, kunt u dynamische en responsieve regels maken die voldoen aan uw specifieke vereisten.
+De gebeurtenissen in de regelredacteur dienen als trekkers die uw regels activeren. Zij bepalen de specifieke acties die voorkomen wanneer aan bepaalde voorwaarden wordt voldaan. Door verschillende typen gebeurtenissen te gebruiken, kunt u reacties op een groot aantal scenario&#39;s automatiseren, bijvoorbeeld gebruikersinteractie, geplande tijden, veranderingen in gegevens, en systeemstaten. Met de capaciteit om deze trekkers te specificeren, kunt u dynamische en ontvankelijke regels tot stand brengen die aan uw specifieke vereisten voldoen.
 
 Door de beschikbare exploitanttypes en de gebeurtenissen te begrijpen en te gebruiken, kunt u het volledige potentieel van de regelredacteur ontgrendelen, die u toelaat om efficiënte, en efficiënte regels tot stand te brengen die aan uw unieke behoeften voldoen en algemene systeemfunctionaliteit te verbeteren.
 
@@ -68,12 +68,11 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Action 2 on Object B;`
 `AND`
-&quot;Actie 3 betreffende object C;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, terwijl het creëren van een regel voor die component, worden de opties automatisch teruggewonnen en ter beschikking gesteld van de regelmaker. U hoeft de optiewaarden niet nogmaals te typen.
 
@@ -83,15 +82,15 @@ Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens he
 
 Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden. U kunt de instructie Else toevoegen om meer voorwaarden toe te voegen
 
-![Duidelijke waarde van](assets/clearvalueof.png)
+![ Duidelijke waarde van ](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> Als het regeltype alleen ondersteuning biedt voor single-level then-else statements.
+> Wanneer het regeltype slechts single-level toen-else verklaringen steunt.
 
-##### Toegestaan Meerdere velden in [!UICONTROL When] {#allowed-multiple-fields}
+##### Meerdere velden toegestaan in [!UICONTROL When] {#allowed-multiple-fields}
 
-In de **voorwaarde Wanneer** hebt u de mogelijkheid om andere velden toe te voegen dan het veld waarop de regel wordt toegepast.
+In **wanneer** voorwaarde, hebt u de optie om andere gebieden behalve het gebied toe te voegen waarop de regel wordt toegepast.
 
 Met het regeltype Wanneer kunt u bijvoorbeeld een voorwaarde evalueren voor verschillende formulierobjecten en de handeling uitvoeren:
 
@@ -115,11 +114,11 @@ _
 
 * Zorg ervoor dat de [ kerncomponent aan versie 3.0.14 of recenter ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om deze eigenschap in de regelredacteur te gebruiken.
 * Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
-* U kunt alleen de meerdere velden toevoegen in de **voorwaarde Wanneer** voor een **EN-regel** . Het is niet mogelijk voor een **OF-regel** .
+* U kunt de veelvoudige gebieden in **slechts toevoegen wanneer** voorwaarde voor een **EN** regel. Het is niet mogelijk voor een **OF** regel.
 
 >[!NOTE]
 >
-> Als u meerdere voorwaarden wilt toevoegen die een klik op een knop bevatten, moet u ervoor zorgen dat de gebeurtenis &#39;Klikken op knop&#39; als eerste voorwaarde is geplaatst. Is `When button is clicked AND text input equals '5'` bijvoorbeeld geldig, terwijl `When text input equals '5' AND button is clicked` wordt niet ondersteund.
+> Om veelvoudige voorwaarden toe te voegen die een knoop omvatten klik, zorg ervoor de knoop klikgebeurtenis als eerste voorwaarde wordt geplaatst. `When button is clicked AND text input equals '5'` is bijvoorbeeld geldig, terwijl `When text input equals '5' AND button is clicked` niet wordt ondersteund.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -138,7 +137,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Als er problemen optreden met de toegestane meerdere velden in de functie Wanneer-voorwaarde, volgt u de stappen voor probleemoplossing als:
+Als er problemen optreden in de toegestane meerdere velden in de voorwaarde &#39;Wanneer&#39;, volgt u de stappen voor het oplossen van problemen als:
 
 1. Open het formulier in de bewerkingsmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
@@ -147,9 +146,9 @@ Als er problemen optreden met de toegestane meerdere velden in de functie Wannee
 
 **[!UICONTROL Hide]** Verbergt het opgegeven object.
 
-**[!UICONTROL Show]** Toont het opgegeven object.
+**[!UICONTROL Show]** Hiermee wordt het opgegeven object weergegeven.
 
-**[!UICONTROL Enable]** Hiermee schakelt u het opgegeven object in.
+**[!UICONTROL Enable]** Schakelt het opgegeven object in.
 
 **[!UICONTROL Disable]** Schakelt het opgegeven object uit.
 
@@ -163,11 +162,11 @@ Zie de voorbeeldregel voor het aanhalen van de diensten van het Model van de Geg
 
 Naast de service Formuliergegevensmodel kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Nochtans, heeft de modeldienst van de Gegevens van het Vorm vele voordelen en de geadviseerde benadering om de dienst aan te halen.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).[!DNL Experience Manager Forms] 
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [[!DNL Experience Manager Forms] .](data-integration.md)
 
 **[!UICONTROL Set value of]** Berekent en stelt de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met behulp van een wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde service Formuliergegevensmodel. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in het gehele FDM-formuliergegevensmodel zijn geconfigureerd op uw [!DNL Experience Manager] -instantie. Als u een service Formuliergegevensmodel kiest, worden meer velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).[!DNL Experience Manager Forms] 
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [[!DNL Experience Manager Forms] .](data-integration.md)
 
 Met het regeltype **[!UICONTROL Set Property]** kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie. U kunt de eigenschap instellen op een van de volgende opties:
 * visible (Boolean)
@@ -224,19 +223,19 @@ Met het **[!UICONTROL Set Value of]** -regeltype kunt u de waarde van een formul
 
 De **Vastgestelde Waarde van** regeltype is niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen. Een standaardsetwaarde van regel heeft de volgende structuur:
 
-Stel de waarde van object A in op:
+Stel de waarde van Object A in op:
 
-(Snaar ABC) OF
-(object eigenschap X van Object C) OF
-(waarde van een functie) OF
-(waarde van een wiskundige uitdrukking) OF
-(outputwaarde van een datamodelservice);
+(Tekenreeks ABC) OR
+(objecteigenschap X van Object C) OR
+(waarde van een functie) OR
+(waarde van een wiskundige expressie) OF
+(outputwaarde van een dienst van het gegevensmodel);
 
-Wanneer (optioneel):
+Indien (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is WAAR;
 
-In het volgende voorbeeld wordt de waarde van `Question2` geselecteerd als `True` en wordt de waarde van `Result` als `correct`ingesteld.
+In het volgende voorbeeld wordt de waarde `Question2` as `True` geselecteerd en wordt de waarde `Result` ingesteld als `correct` .
 
 ![ reeks-waarde-web-dienst ](assets/set-value-web-service.png)
 
@@ -246,7 +245,7 @@ Voorbeeld van waardeceregel instellen met de service Formuliergegevensmodel.
 
 Met het regeltype **[!UICONTROL Show]** kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of als `False` wordt geretourneerd.
 
-Een typische Show-regel is als volgt gestructureerd:
+Een typische Show regel is gestructureerd als volgt:
 
 `Show Object A;`
 
@@ -260,7 +259,7 @@ Een typische Show-regel is als volgt gestructureerd:
 
 #### [!UICONTROL Hide] {#hide}
 
-Net als bij het regeltype Weergeven kunt u het **[!UICONTROL Hide]** regeltype gebruiken om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de actie Weergeven voor het geval niet aan de voorwaarde wordt voldaan of terugkeert `False`.
+Net als bij het regeltype Weergeven kunt u het regeltype **[!UICONTROL Hide]** gebruiken om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de handeling Tonen voor het geval dat niet aan de voorwaarde wordt voldaan of dat `False` wordt geretourneerd.
 
 Een typische regel van de Huid is gestructureerd als volgt:
 
@@ -352,7 +351,7 @@ Voor meer details op hoe te om een regel tot stand te brengen om in een paneel t
 
 #### [!UICONTROL Async Function call]
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Met het **[!UICONTROL Async Function call]** -regeltype kunt u asynchrone functies uitvoeren. Het laat u toe om een functievraag in werking te stellen die onafhankelijk van de belangrijkste uitvoeringsdraad werkt, toestaand andere processen blijven lopend zonder het wachten op de asynchrone functie te voltooien.
 

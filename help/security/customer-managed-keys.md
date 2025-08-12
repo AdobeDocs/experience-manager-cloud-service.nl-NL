@@ -4,7 +4,7 @@ description: Meer informatie over het beheren van coderingssleutels voor AEM as 
 feature: Security
 role: Admin
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -48,7 +48,7 @@ U moet de URL van de sleutelkluis, de naam van de coderingssleutel en informatie
 
 ## Uw omgeving instellen {#setup-your-environment}
 
-De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [&#128279;](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+De Azure Command Line Interface (CLI) is de enige vereiste voor deze gids. Als u niet reeds geïnstalleerde Azure CLI hebt, volg hier de officiële installatieinstructies [ ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
 Meld u aan bij uw CLI met `az login` voordat u verder gaat met de rest van deze handleiding.
 

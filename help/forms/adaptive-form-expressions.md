@@ -5,19 +5,19 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve formulierexpressies {#adaptive-form-expressions}
 
 Adaptief Forms biedt geoptimaliseerde en vereenvoudigde ervaring voor het invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven om verschillende gedragingen toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
-JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van de Adaptieve klassen van Forms, de gebeurtenissen, de voorwerpen, en openbare APIs, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van de Adaptieve klassen van Forms, de gebeurtenissen, de voorwerpen, en openbare APIs, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
@@ -32,7 +32,7 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 * Als u een herhalend deelvenster wilt maken, opent u in het dialoogvenster van het deelvenster de instellingen en stelt u de waarde van het maximale telveld in op meer dan 1.
 * De minimale telwaarde van de herhalingsinstellingen van het deelvenster kan een of meer zijn, maar mag niet meer zijn dan de maximale telwaarde.
 * Wanneer een expressie verwijst naar een veld van een herhalend deelvenster, worden de veldnamen in de expressie omgezet naar het dichtstbijzijnde herhalende element.
-* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [ JavaScript™ API van de Bibliotheek verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/af.html)
+* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [ JavaScript™ API van de Bibliotheek verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * API&#39;s voor het manipuleren van instanties van herhalende deelvensters zijn:
 
    * Een deelvensterinstantie toevoegen: `panel1.instanceManager.addInstance()`
@@ -78,7 +78,7 @@ De expressie calculate wordt gebruikt om de waarde van een veld automatisch te b
 
 ### Klikken op uitdrukking {#click-expression}
 
-De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [ GuideBridge APIs ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
+De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [ GuideBridge APIs ](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **is op** van toepassing: De gebieden van de knoop
 
@@ -199,7 +199,7 @@ Er zijn meerdere validatiepatronen beschikbaar voor een veld. Om een validatiepa
 
 ### Validatie-expressies {#validation-expressions}
 
-De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
+De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3} lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
 
 ## Aanvullende informatie {#additional-information}
 
@@ -209,7 +209,7 @@ U kunt de indeling weergeven gebruiken om de gegevens in verschillende indelinge
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
-GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met Adaptive Forms in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/).
+GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met Adaptive Forms in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -217,15 +217,15 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 #### Gebruik van GuideBridge in verschillende expressies {#guidebridge-usage-in-various-expressions}
 
-* Als u formuliervelden opnieuw wilt instellen, kunt u de `guideBridge.reset()` API activeren op de klikexpressie van een knop. Er is ook een verzend API die als klikuitdrukking `guideBridge.submit()`**kan worden geroepen.**
+* Als u formuliervelden opnieuw wilt instellen, kunt u de `guideBridge.reset()` API activeren op de klikexpressie van een knop. Er is ook een API voor verzenden die kan worden aangeroepen als een klikexpressie `guideBridge.submit()` .
 
-* U kunt de API van `setFocus()` gebruiken om de focus in te stellen op verschillende velden of deelvensters (voor de vensterfocus wordt automatisch ingesteld op het eerste veld). `setFocus()` verstrekt een brede waaier van opties om te navigeren zoals navigatie over panelen, vorige/volgende traversal, plaatsend nadruk aan een bepaald gebied, en vele meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: &grave; guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
+* U kunt de API van `setFocus()` gebruiken om de focus in te stellen op verschillende velden of deelvensters (voor de vensterfocus wordt automatisch ingesteld op het eerste veld). `setFocus()` biedt een breed scala aan opties voor navigatie, zoals navigatie tussen deelvensters, Vorige/Volgende verplaatsing, focus instellen op een bepaald veld en nog veel meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: `guideBridge.setFocus(this.panel.somExpression, 'nextItem')` .
 
 * Gebruik `guideBridge.validate(errorList, somExpression).` om een adaptief formulier of de specifieke deelvensters te valideren
 
 #### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
-U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
+U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen de pagina HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
 Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, neemt u een instantie van GuideBridge op. Om de instantie te vangen, luister aan `bridgeInitializeStart` gebeurtenis van a `window` voorwerp:
 
@@ -249,13 +249,13 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->In AEM is het een goede praktijk om code in een clientLib te schrijven en het in uw pagina (header.jsp of footer.jsp van de pagina) op te nemen
+>In AEM is het een goede gewoonte om code te schrijven in een clientLib en deze op te nemen in uw pagina (header.jsp of footer.jsp van de pagina).
 
 Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de gebeurtenis `bridgeInitializeComplete` wordt verzonden), haalt u de GuideBridge-instantie op met `window.guideBridge` . U kunt de GuideBridge-initialisatiestatus controleren met de `guideBride.isConnected` API.
 
 #### GuideBridge-gebeurtenissen {#guidebridge-events}
 
-GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Adaptieve Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Adaptieve Forms ](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Gebruik de volgende code om handlers te registreren:
 
@@ -274,7 +274,7 @@ Zoals hierboven is vermeld, kan de auteur met Adaptive Forms patronen voor valid
 Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 
 1. Navigeer naar CRXDE Lite op de ontwerpinstantie.
-1. Maak een map om uw aangepaste patronen te behouden. Maak onder de map /apps een knooppunt van het type sling:folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns` . Onder dit knooppunt maakt u een ander knooppunt van het type `nt:unstructed` en geeft u het een naam `textboxpatterns` . Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.
+1. Maak een map om uw aangepaste patronen te behouden. Creëer onder de map /apps een knooppunt van het type sling :folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns` . Onder dit knooppunt maakt u een ander knooppunt van het type `nt:unstructed` en geeft u het een naam `textboxpatterns` . Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.
 1. Open het tabblad Eigenschappen van het gemaakte knooppunt. Open bijvoorbeeld het tabblad Eigenschappen van `textboxpatterns` . Voeg het `guideComponentType` bezit aan deze knoop toe en plaats zijn waarde aan *fd/af/components/formatter/guideTextBox*.
 
 1. De waarde van deze eigenschap is afhankelijk van het veld waarvoor u de patronen wilt definiëren. Voor numeriek gebied, is de waarde van het `guideComponentType` bezit *fd/af/components/formatter/guideNumericBox*. De waarde voor het gebied Datepicker is *fd/af/components/formatter/guideDatepicker*.
@@ -284,4 +284,3 @@ Voer de volgende stappen uit om een aangepast patroon te maken voor een specifie
    ![ Creërend douanepatronen voor gebieden in CrxDe ](assets/creating-custom-patterns.png)
 
    Aangepaste patronen maken
-

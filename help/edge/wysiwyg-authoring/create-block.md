@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -172,7 +172,7 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
    * Het **voegt** pictogram toe is een plus symbool.
    * U weet dat u een sectie hebt geselecteerd als het blauwe overzicht van het geselecteerde voorwerp een lusje genoemd **Sectie** heeft.
-   * In dit voorbeeld, selecteert het tikken of het klikken lichtjes boven de **rubriek 0&rbrace; Lorem Ipsum een sectie die de rubriek en lorem ipsum tekst bevat.**
+   * In dit voorbeeld, selecteert het tikken of het klikken lichtjes boven de **rubriek 0} Lorem Ipsum een sectie die de rubriek en lorem ipsum tekst bevat.**
 
    ![ selecteer een sectie in de Universele Redacteur ](assets/create-block/add-quote-block.png)
 
@@ -346,4 +346,4 @@ Gelieve te zien het document [ Modellering van de Inhoud voor WYSIWYG creatie me
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit webinar van AEM GEMs ](https://experienceleague.adobe.com/nl/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit webinar van AEM GEMs ](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

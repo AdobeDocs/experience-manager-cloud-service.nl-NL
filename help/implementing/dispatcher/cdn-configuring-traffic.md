@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ De regeltypen in de onderstaande secties hebben dezelfde syntaxis.
 
 Een regel wordt van verwijzingen voorzien door een naam, een voorwaardelijk &quot;wanneer clausule&quot;, en acties.
 
-De clausule &quot;wanneer&quot;bepaalt of een regel, gebaseerd op eigenschappen met inbegrip van domein, weg, vraagkoorden, kopballen, en koekjes zal worden geëvalueerd. De syntaxis is het zelfde over regeltypes; voor details, zie de [&#128279;](/help/security/traffic-filter-rules-including-waf.md#condition-structure) sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.
+De clausule &quot;wanneer&quot;bepaalt of een regel, gebaseerd op eigenschappen met inbegrip van domein, weg, vraagkoorden, kopballen, en koekjes zal worden geëvalueerd. De syntaxis is het zelfde over regeltypes; voor details, zie de [ sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.](/help/security/traffic-filter-rules-including-waf.md#condition-structure)
 
 De details van het actieknooppunt verschillen per regeltype en worden in de afzonderlijke secties hieronder beschreven.
 
-In de configuratieregels, kunt u geheimen van verwijzingen voorzien die als milieuvariabelen worden bepaald (zie {de Secreten van 0} Configuratie [&#128279;](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
+In de configuratieregels, kunt u geheimen van verwijzingen voorzien die als milieuvariabelen worden bepaald (zie {de Secreten van 0} Configuratie [).](/help/implementing/dispatcher/cdn-credentials-authentication.md)
 
 ## Transformaties aanvragen {#request-transformations}
 
@@ -172,8 +172,8 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 |     | var | Hiermee wordt een opgegeven variabele verwijderd. |
 |     | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
 |     | queryParamDoesNotMatch | Verwijdert alle queryparameters die niet overeenkomen met een opgegeven reguliere expressie. |
-| **transformatie** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie of var), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund), of verzoek header, of query parameter, cookie of variabele door een nieuwe waarde. |
-|              | op:tolower, (reqProperty of reqHeader of queryParam of reqCookie of var) | Stelt de parameter request (alleen eigenschap &quot;path&quot; ondersteund), of aanvraagheader, queryparameter, cookie of variabele in op de waarde in kleine letters. |
+| **transformatie** | op :replace, (reqProperty of reqHeader of queryParam of reqCookie of var), gelijke, vervanging | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund), of verzoek header, of query parameter, cookie of variabele door een nieuwe waarde. |
+|              | op :tolower, (reqProperty of reqHeader of queryParam of reqCookie of var) | Stelt de parameter request (alleen eigenschap &quot;path&quot; ondersteund), of aanvraagheader, queryparameter, cookie of variabele in op de waarde in kleine letters. |
 
 Vervang acties om vastgelegde groepen te ondersteunen, zoals hieronder wordt geïllustreerd:
 

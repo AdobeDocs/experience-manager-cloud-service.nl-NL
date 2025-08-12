@@ -5,16 +5,16 @@ keywords: Hoe te om de Plaats van SharePoint met beperkte toegang te vormen?, vo
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
-<span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
-
 # SharePoint-site configureren met beperkte toegang met behulp van machtigingsbereik
+
+<span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
 Beperkte of beperkte toegang heeft tot doel het beveiligingsbeheer te verbeteren door beheerders de toegang van gebruikers tot een bepaalde SharePoint-site of een groep SharePoint-sites te laten beheren. Het toestemmingsniveau is nuttig wanneer u een gebruiker of groepstoegang tot een specifieke Plaats moet verlenen zonder hen toe te staan om het even welke andere niet-toegestane Plaatsen van SharePoint te bekijken.
 
@@ -58,7 +58,7 @@ Verwijs naar het [ blogartikel - ontwikkelt Toepassingen die de toestemmingen Si
 
 Om een beperkte toegang tot een Microsoft SharePoint-site mogelijk te maken, is het van essentieel belang de reikwijdte van de vergunning correct vast te stellen. Om het vergunningswerkingsgebied te plaatsen en AEM Forms aan uw opslag van Microsoft® SharePoint te verbinden:
 
-1. Ga naar uw **1&rbrace; instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
+1. Ga naar uw **1} instantie van de Auteur van AEM Forms >** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.**[!UICONTROL Microsoft® SharePoint]**
 1. Nadat u de **[!UICONTROL Microsoft® SharePoint]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL SharePoint Browser]** .
 1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.

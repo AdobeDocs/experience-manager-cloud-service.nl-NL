@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,19 @@ ht-degree: 0%
 
 De component Product Carousel wordt uitgebreid door deze zelfstudie. Als eerste stap voegt u een exemplaar van de productcarrousel toe aan de startpagina om inzicht te krijgen in de basislijnfunctionaliteit:
 
-1. Navigeer aan de Homepage van de plaats, bijvoorbeeld [ http://localhost:4502/editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navigeer aan de Homepage van de plaats, bijvoorbeeld [ http://localhost :4502 /editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
 1. Plaats een nieuwe productcarrouselcomponent in de hoofdlay-outcontainer op de pagina.
    ![ component van de Carrousel van het Product ](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Breid het Zijpaneel (als niet reeds) van een knevel voorzien en schakelaar de activa finder dropdown aan **Producten**.
-     ![ Carrouselproducten ](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![ Carrouselproducten ](/help/commerce-cloud/assets/carousel-products.png)
+
 1. Dit zou een lijst van beschikbare producten van een verbonden instantie van Adobe Commerce moeten tonen.
+
    ![ Verbonden Instantie ](/help/commerce-cloud/assets/connected-instance.png)
+
 1. Producten worden hieronder weergegeven met standaardeigenschappen:
+
    ![ Product dat met Eigenschappen ](/help/commerce-cloud/assets/discount.png) wordt getoond
 
 ## Het verkoopmodel bijwerken {#update-sling-model}
@@ -50,7 +55,7 @@ Met het delegatiepatroon voor Sling Models kan `CustomCarouselImpl` via de eigen
    private ProductCarousel productCarousel;
    ```
 
-1. De @PostConstruct-annotatie zorgt ervoor dat deze methode wordt aangeroepen wanneer het Sling-model wordt geïnitialiseerd. De GraphQL-query voor het product is al uitgebreid met de methode extendProductQueryWith om kenmerken op te halen. Werk de GraphQL-query bij en voeg de  kenmerk in de gedeeltelijke query:
+1. De @PostConstruct-annotatie zorgt ervoor dat deze methode wordt aangeroepen wanneer het Sling-model wordt geïnitialiseerd. De GraphQL-query voor het product is al uitgebreid met de methode extendProductQueryWith om kenmerken op te halen. Werk de GraphQL-query bij om het kenmerk in de gedeeltelijke query op te nemen:
 
    ```
    @PostConstruct

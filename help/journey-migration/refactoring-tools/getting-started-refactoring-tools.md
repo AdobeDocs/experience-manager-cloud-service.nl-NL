@@ -1,7 +1,8 @@
 ---
 title: Aan de slag met Refactoring Tools
 description: Leer hoe u aan de slag kunt met Refactoring Tools in AEM as a Cloud Service
-source-git-commit: 20bb756c4a2eb37341da4582f19cf41e4d60304a
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=nl-NL" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -34,8 +35,6 @@ Gebruik het gereedschap Refactoring om uw code te migreren voor compatibiliteit 
 1. Wanneer u eerst tot de **Mening van de Code van Source** toegang hebt, zult u een lege staat zien die u ertoe aanzet om uw broncode te uploaden.
 
    ![afbeelding](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## Source-code uploaden {#uploading}
 
@@ -67,12 +66,12 @@ Wanneer de klanten eerst tot **Refactoring Hulpmiddelen** toegang hebben, worden
    ![afbeelding](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Als u een nieuw project uploadt, wordt het bestaande project verwijderd. Zorg ervoor dat de benodigde gegevens zijn opgeslagen voordat u verdergaat.
 
 >[!NOTE]
+>
 >Refactoring-taken kunnen alleen worden uitgevoerd als het uploaden van de broncode is gelukt.
-
-&#x200B;---
 
 ## Refactoring {#refactoring-jobs}
 
@@ -89,9 +88,8 @@ Wanneer u het **RefactoringBaan** lusje klikt, zult u een lijst van bestaande ba
 ![afbeelding](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >U kunt individuele refactoring banen teweegbrengen of alle beschikbare hulpmiddelen in één gaan gebruiken **Alle Hulpmiddelen samen** optie.
-
-&#x200B;---
 
 ### &#x200B;2. Taakstatus
 
@@ -110,5 +108,5 @@ Wanneer de baan met succes wordt voltooid, wordt de **Download** knoop beschikba
 ![afbeelding](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Elke taak kan tot 1 uur duren. Neem contact op met Adobe Support als de status niet is bijgewerkt.
-

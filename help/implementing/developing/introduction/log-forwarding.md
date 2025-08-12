@@ -4,7 +4,7 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 0%
@@ -19,22 +19,6 @@ ht-degree: 0%
 
 Klanten met een licentie bij een logboekleverancier of die een logproduct hosten, kunnen AEM-logboeken (inclusief Apache/Dispatcher) en CDN-logbestanden doorsturen naar de bijbehorende logbestemming. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -133,7 +117,7 @@ Dit artikel is als volgt geordend:
 
 ## Instellen {#setup}
 
-1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0&rbrace; worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
+1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0} worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
 
    ```yaml
    kind: "LogForwarding"
@@ -200,14 +184,7 @@ Een ander scenario is of het door:sturen van de logboeken CDN of AEM (met inbegr
 Sommige organisaties kiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen, anderen kunnen vereisen om havens buiten HTTPS (443) te gebruiken.  Als zo [ het Geavanceerde Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) zal moeten worden gevormd alvorens logboek het door:sturen configuratie op te stellen.
 
 Gebruik de lijst hieronder om te zien wat de vereisten voor Geavanceerde die Voorzien van een netwerk en Logging configuratie zijn op of u haven 443 of niet gebruikt, en of u uw logboeken om van een vast IP adres nodig hebt te verschijnen.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>Ja</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >Of uw logboeken van één enkel IP adres verschijnen wordt bepaald door uw keus van de Geavanceerde configuratie van het Voorzien van een netwerk.  Om dit mogelijk te maken, moet speciale eieren worden gebruikt.
@@ -270,6 +247,7 @@ data:
 Voor CDN- logboeken, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven Snelle documentatie - Openbare IP Lijst ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar een https server of (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van bekende IP naar hun uiteindelijke bestemming te verzenden.
 
 >[!NOTE]
+>
 >Het is niet mogelijk voor CDN- logboeken om van het zelfde IP adres te verschijnen dat uw AEM logboeken van verschijnen, is dit omdat de logboeken direct van de Snelle en niet de Dienst van de Wolk van AEM worden verzonden.
 
 ## Logboekdoelconfiguratie {#logging-destinations}
@@ -304,15 +282,15 @@ Als u de S3 Log Forwarder wilt gebruiken, moet u een AWS IAM-gebruiker vooraf co
 Met het IAM-beleid kan de gebruiker `s3:putObject` gebruiken.  Bijvoorbeeld:
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -473,7 +451,7 @@ data:
 
 #### HTTPS CDN-logbestanden {#https-cdn}
 
-De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.](#log-formats)
+De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
 
 Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde `aemcdn` .
 
@@ -483,7 +461,7 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 #### HTTPS AEM-logbestanden {#https-aem}
 
-Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.](#log-formats)
+Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
 
 Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
@@ -512,6 +490,7 @@ Bij Log Doorsturen naar New Relic wordt de New Relic HTTPS API gebruikt voor opn
 ```
 
 >[!NOTE]
+>
 >Log-forward naar New Relic is alleen beschikbaar voor New Relic-accounts die eigendom zijn van klanten.
 >
 >E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
@@ -538,6 +517,7 @@ Het bereikattribuut &quot;Ingest Logs&quot; is vereist voor het token.
 ```
 
 >[!NOTE]
+>
 > E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de vo
 Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelf-servercontrole zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-servermanier zijn gevormd.
 
 >[!NOTE]
+>
 >De waarden van het veld `sourcetype` die naar uw verzonken index zijn verzonden, zijn mogelijk gewijzigd, dus pas de waarden dienovereenkomstig aan.
 >
 >Wanneer Log Forwarding wordt opgesteld aan een milieu dat eerder door de steun van Adobe wordt gevormd, kunt u dubbele logboeken tot een paar uren ontvangen. Dit zal uiteindelijk automatisch worden opgelost.
