@@ -27,7 +27,7 @@ Zorg ervoor dat u:
 
 * Toegang tot [!DNL AEM Assets as a Cloud Service] .
 * Machtiging om de eigenschap Status van elementen te bewerken.
-* [ toegevoegde [!UICONTROL Preview] waarde aan het [!UICONTROL  Status] meta-gegevensbezit beschikbaar in [!UICONTROL Basic] lusje ](/help/assets/metadata-assets-view.md#edit-metadata-forms) van de meta-gegevensvorm die op de omslag wordt toegepast die de activa bevat aan voorproef.
+* [ toegevoegde [!UICONTROL Preview] waarde aan het [!UICONTROL &#x200B; Status] meta-gegevensbezit beschikbaar in [!UICONTROL Basic] lusje ](/help/assets/metadata-assets-view.md#edit-metadata-forms) van de meta-gegevensvorm die op de omslag wordt toegepast die de activa bevat aan voorproef.
   ![ voeg de optie van de Voorproef ](/help/assets/assets/metedata-form-preview.png) toe
 * De sleutel om het voorproefteken te produceren. [ de steun van Adobe van het Contact ](https://helpx.adobe.com/in/contact.html) en wint een verzoek voor de sleutel op.
 
