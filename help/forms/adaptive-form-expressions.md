@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adaptief Forms biedt geoptimaliseerde en vereenvoudigde ervaring voor het invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven om verschillende gedragingen toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
-JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van de Adaptieve klassen van Forms, de gebeurtenissen, de voorwerpen, en openbare APIs, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van de Adaptieve klassen van Forms, de gebeurtenissen, de voorwerpen, en openbare APIs, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
@@ -32,7 +32,7 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 * Als u een herhalend deelvenster wilt maken, opent u in het dialoogvenster van het deelvenster de instellingen en stelt u de waarde van het maximale telveld in op meer dan 1.
 * De minimale telwaarde van de herhalingsinstellingen van het deelvenster kan een of meer zijn, maar mag niet meer zijn dan de maximale telwaarde.
 * Wanneer een expressie verwijst naar een veld van een herhalend deelvenster, worden de veldnamen in de expressie omgezet naar het dichtstbijzijnde herhalende element.
-* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [ JavaScript™ API van de Bibliotheek verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [ JavaScript™ API van de Bibliotheek verwijzing voor Adaptieve Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/af.html)
 * API&#39;s voor het manipuleren van instanties van herhalende deelvensters zijn:
 
    * Een deelvensterinstantie toevoegen: `panel1.instanceManager.addInstance()`
@@ -78,7 +78,7 @@ De expressie calculate wordt gebruikt om de waarde van een veld automatisch te b
 
 ### Klikken op uitdrukking {#click-expression}
 
-De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [ GuideBridge APIs ](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [ GuideBridge APIs ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
 
 **is op** van toepassing: De gebieden van de knoop
 
@@ -209,7 +209,7 @@ U kunt de indeling weergeven gebruiken om de gegevens in verschillende indelinge
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
-GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met Adaptive Forms in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met Adaptive Forms in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Aanpassings Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de geb
 
 #### GuideBridge-gebeurtenissen {#guidebridge-events}
 
-GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Adaptieve Forms ](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [ JavaScript™ API van de Bibliotheek voor Adaptieve Forms ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html).
 
 Gebruik de volgende code om handlers te registreren:
 

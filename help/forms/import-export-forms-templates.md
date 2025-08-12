@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt Adaptief Forms en gerelateerde elementen, zoals Adaptief formulierthema&#39;s, Formuliergegevensmodel (FDM), Aangepaste formuliersjablonen, Fragmenten en PDF forms, tussen [!DNL AEM Forms] -instanties verplaatsen.
@@ -181,7 +181,7 @@ Het element doorzoeken:
 
    ![Assets doorzoeken](/help/forms/assets/search-bar.png)
 
-Voor meer informatie en instructies bij het gebruiken van onderzoek, zie [ Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html).
+Voor meer informatie en instructies bij het gebruiken van onderzoek, zie [ Onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=nl-NL).
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

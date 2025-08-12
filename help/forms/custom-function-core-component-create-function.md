@@ -42,7 +42,7 @@ Voordat u een aangepaste functie toevoegt aan de Adaptive Forms, moet u het volg
 
 ## Een aangepaste functie maken
 
-Creeer een cliëntbibliotheek om douanefuncties in de regelredacteur te roepen. Voor meer informatie, zie [ Gebruikend cliënt-Kant Bibliotheken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+Creeer een cliëntbibliotheek om douanefuncties in de regelredacteur te roepen. Voor meer informatie, zie [ Gebruikend cliënt-Kant Bibliotheken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
 
 Stappen voor het maken van aangepaste functies zijn:
 
@@ -55,7 +55,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 **Kloon de Bewaarplaats**
 
-Kloon uw [ Bewaarplaats van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Kloon uw [ Bewaarplaats van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git):
 
 1. Open de opdrachtregel of het terminalvenster.
 
@@ -169,7 +169,7 @@ Stel AEM as a Cloud Service, [ AEMaaCS projectfolder ], aan uw milieu van Cloud 
 
    1. Trigger een plaatsing van uw code door de bestaande full-stack pijpleiding. Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd.
 
-Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [ Aangepaste redacteur van de Regel van de Vorm ](/help/forms/rule-editor-core-components.md).
 
@@ -229,7 +229,7 @@ Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies wor
 
 >[!NOTE]
 >
-> U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/assets//customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/assets//customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Functies van Aangepaste functies
 
