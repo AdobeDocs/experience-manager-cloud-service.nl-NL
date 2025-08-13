@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.8.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c93716b1a2453c26169020b32e66eb4207f13002
+source-git-commit: c6493d05c60c01b4840c8f12d06aa4508bdbb534
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ De volgende geplande release is donderdag 4 september 2025.
 
      ![ Forms toe:voegen-op in Oplossingen &amp; toe:voegen-ONS wanneer het creëren van een productieprogramma ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *tijdens de Aanmaak van het Programma, kunt u toe:voegen-op Forms binnen de oplossing van Plaatsen selecteren.*
 
-     ![ Forms toe:voegen-op wanneer het uitgeven van een productieprogramma ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *in **geeft Programma**&#x200B;uit, selecteer Forms toe:voegen-op voor het programma van Plaatsen, dan stel de pijpleiding in werking om het in de milieu&#39;s te activeren.*
+     ![ Forms toe:voegen-op wanneer het uitgeven van een productieprogramma ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *in **geeft Programma**uit, selecteer Forms toe:voegen-op voor het programma van Plaatsen, dan stel de pijpleiding in werking om het in de milieu&#39;s te activeren.*
 
      Voor meer informatie, zie [ een productieprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) creëren.
 
@@ -68,13 +68,13 @@ De volgende mogelijkheden zijn momenteel beschikbaar:
 
 Snel aan een vorige plaatsing terugkeren als de recentste klantenbroncode niet zoals verwacht-geen behoefte werkt om de volledige pijpleiding opnieuw te voeren of begaat manueel terug.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**&#x200B;optie voor een geselecteerd milieu.*
+![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**optie voor een geselecteerd milieu.*
 
 ![ herstel vorige code opgesteld dialoogdoos ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*in **herstel vorige code opgesteld**&#x200B;dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt **&#x200B;***.
+*in **herstel vorige code opgesteld**dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt *****.
 
 ![ Herstellend activering ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**&#x200B;tot de plaatsing voltooit.*
+*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**tot de plaatsing voltooit.*
 
 ![ de codeversie van Source in gebruik ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *de mening van de Details van het Milieu, zoals hierboven gezien, toont nu ook de actieve bron-code versie in gebruik.*
 
@@ -97,7 +97,12 @@ Zie [ een Gespecialiseerde het Testen Milieu ](/help/implementing/cloud-manager/
 
 ![ voeg milieu dialoogdoos met Gespecialiseerde het Testen van Milieu geselecteerde radioknoop ](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png) toe
 
-Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ grp-earlyadopter_cs_advtestenvironment@adobe.com ](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
+>[!NOTE]
+>
+>Adobe heeft bètatoegangsaanvragen voor gespecialiseerde testomgevingen gesloten, omdat het voldoende aantal deelnemers heeft bereikt. De functie is nu in voorbereiding op algemene beschikbaarheid.
+
+<!--
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ### Je eigen gang (BYOG) {#gitlab-bitbucket-azure-vsts}
@@ -152,13 +157,13 @@ Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services
 
   ![ paneel die van de Filter het nieuwe type van Levering van Edge toont levering en publiceert levering ](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 
 Zie [ toevoegen de Pijpleiding van Edge Delivery ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ grp-aemeds-config-pipeline-adopter@adobe.com ](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
 
 
 ## Bugfixes
