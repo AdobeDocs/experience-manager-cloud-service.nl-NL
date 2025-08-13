@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.8.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
+source-git-commit: c93716b1a2453c26169020b32e66eb4207f13002
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ De releasedatum voor Cloud Manager 2025.8.0 in AEM as a Cloud Service is donderd
 De volgende geplande release is donderdag 4 september 2025.
 
 ## Nieuwe functies {#what-is-new}
+
+* **Experience Hub van Adobe die spoedig komt**
+
+  Vanaf 19 augustus 2025 start Adobe een gefaseerde uitrol van de nieuwe Experience Hub voor alle Adobe Experience Manager-gebruikers.
+
+  Experience Hub is een eenduidig beginpunt dat gepersonaliseerde contextafhankelijke ervaringen biedt om gebruikers te helpen sneller doelstellingen te bereiken. De uitrol wordt uiterlijk op 26 augustus 2025 voltooid en beschikbaar gesteld aan alle gebruikers. De nieuwe Experience Hub is toegankelijk direct bij [ experience.adobe.com ](https://experience.adobe.com/). Meer leren, zie [ Adobe Experience Hub ](/help/implementing/cloud-manager/aem-home.md).
 
 * **de vergunning van Edge Delivery Services kan in een programma van HIPAA op een zelfbediening manier worden omvat**
 
@@ -48,7 +54,7 @@ De volgende geplande release is donderdag 4 september 2025.
 
      ![ Forms toe:voegen-op in Oplossingen &amp; toe:voegen-ONS wanneer het creëren van een productieprogramma ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *tijdens de Aanmaak van het Programma, kunt u toe:voegen-op Forms binnen de oplossing van Plaatsen selecteren.*
 
-     ![ Forms toe:voegen-op wanneer het uitgeven van een productieprogramma ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *in **geeft Programma**&#x200B;uit, selecteer Forms toe:voegen-op voor het programma van Plaatsen, dan stel de pijpleiding in werking om het in de milieu&#39;s te activeren.*
+     ![ Forms toe:voegen-op wanneer het uitgeven van een productieprogramma ](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *in **geeft Programma**uit, selecteer Forms toe:voegen-op voor het programma van Plaatsen, dan stel de pijpleiding in werking om het in de milieu&#39;s te activeren.*
 
      Voor meer informatie, zie [ een productieprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) creëren.
 
@@ -62,13 +68,13 @@ De volgende mogelijkheden zijn momenteel beschikbaar:
 
 Snel aan een vorige plaatsing terugkeren als de recentste klantenbroncode niet zoals verwacht-geen behoefte werkt om de volledige pijpleiding opnieuw te voeren of begaat manueel terug.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**&#x200B;optie voor een geselecteerd milieu.*
+![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**optie voor een geselecteerd milieu.*
 
 ![ herstel vorige code opgesteld dialoogdoos ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*in **herstel vorige code opgesteld**&#x200B;dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt **&#x200B;***.
+*in **herstel vorige code opgesteld**dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt *****.
 
 ![ Herstellend activering ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**&#x200B;tot de plaatsing voltooit.*
+*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**tot de plaatsing voltooit.*
 
 ![ de codeversie van Source in gebruik ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *de mening van de Details van het Milieu, zoals hierboven gezien, toont nu ook de actieve bron-code versie in gebruik.*
 
@@ -146,7 +152,7 @@ Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services
 
   ![ paneel die van de Filter het nieuwe type van Levering van Edge toont levering en publiceert levering ](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 
