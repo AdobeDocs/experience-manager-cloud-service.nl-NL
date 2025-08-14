@@ -105,7 +105,7 @@ U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw i
 
   U kunt vanuit uw officiële e-mailid naar `aem-forms-ea@adobe.com` schrijven om deel te nemen aan het programma voor vroegtijdige adoptie en toegang tot deze functie aanvragen.
 
-* **[](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) de Zwaardeloze Adaptieve Forms van Forms 1}**: Gebruik Zwaardeloze Aangepaste om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking gesteld. Met behulp van hoofdloze adaptieve formulieren kunt u:
+* **[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) de Zwaardeloze Adaptieve Forms van Forms 1&rbrace;**: Gebruik Zwaardeloze Aangepaste om uw ontwikkelaars toe te laten om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking gesteld. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
    * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
    * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen

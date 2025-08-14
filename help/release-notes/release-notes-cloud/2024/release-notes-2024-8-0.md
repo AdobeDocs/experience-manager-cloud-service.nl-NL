@@ -45,7 +45,7 @@ Bekijk de video Overzicht van de release van augustus 2024 voor een overzicht va
 
 **Authoring van AEM voor Edge Delivery Services**
 
-De bestaande functionaliteit van de Overerving van Plaatsen [ ](/help/sites-cloud/authoring/universal-editor/inheritance.md) wordt nu gesteund met inbegrip van:
+De bestaande functionaliteit van de Overerving van Plaatsen [&#128279;](/help/sites-cloud/authoring/universal-editor/inheritance.md) wordt nu gesteund met inbegrip van:
 
 * [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
 * [ MSM ](/help/sites-cloud/administering/msm/overview.md) op het paginaniveau
@@ -99,7 +99,7 @@ Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarme
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 #### AEM Forms AI Assistant
 
