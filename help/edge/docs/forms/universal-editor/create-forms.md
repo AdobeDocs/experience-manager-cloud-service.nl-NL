@@ -102,7 +102,7 @@ Elke fase omvat bevestigingsstappen om correcte opstelling te bevestigen.
    - Open de Content browser in Universal Editor.
    - Navigeer aan de **Aangepaste component van de Vorm** in de inhoudsboom.
 
-   ![ de Navigatie van de Boom van 0} Inhoud](/help/edge/assets/content-tree.png)
+   ![ de Navigatie van de Boom van 0&rbrace; Inhoud](/help/edge/assets/content-tree.png)
 
 1. **voeg de Gebieden van de Vorm** toe
    - Klik **toevoegen** pictogram om de componentenbibliotheek te openen.
