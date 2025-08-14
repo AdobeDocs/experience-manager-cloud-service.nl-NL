@@ -4,9 +4,9 @@ description: Inleiding tot de architectuur van Adobe Experience Manager as a Clo
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2711'
 ht-degree: 8%
 
 ---
@@ -53,7 +53,7 @@ Er zijn vier soorten [ milieu ](/help/implementing/cloud-manager/manage-environm
 
 * Werkgebiedomgeving:
 
-   * Een werkgebiedomgeving wordt meestal gekoppeld aan een productieomgeving in een 1:1-relatie.
+   * Een werkgebiedmilieu wordt gewoonlijk gekoppeld aan een productiemilieu in een 1 :1 verhouding.
    * De werkgebiedomgeving is vooral ontworpen voor automatische tests voordat wijzigingen in de toepassing worden doorgevoerd in de productieomgeving.
       * Dit is onafhankelijk van de wijzigingen die door Adobe worden geïnitieerd als onderdeel van een onderhoudsupdate of door uw code-implementaties.
       * U kunt handtests ook uitvoeren in het geval van een code-implementatie.
@@ -238,5 +238,5 @@ De nieuwste architectuur voor AEM as a Cloud Service introduceert enkele fundame
    * [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
    * [AEM as a Cloud Service - Overzicht - met Edge Delivery Services](/help/edge/overview.md)
-   * [Edge Delivery Services gebruiken](/help/edge/using.md)
-   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=nl-NL)
+   * [Edge Delivery Services gebruiken](/help/edge/overview.md)
+   * [ Onderzoek de onderliggende architectuur en belangrijke stukken van AEM as a Cloud Service met Edge Delivery Services ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

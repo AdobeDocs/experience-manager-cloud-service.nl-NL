@@ -5,9 +5,9 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Als u de diensten van Edge Delivery gebruikt, kunt u verkiezen om uw inhoud als 
 
 Met op documenten gebaseerde authoring kunnen auteurs de gereedschappen gebruiken die ze al kennen en profiteren nog steeds van de snelheid en prestaties van AEM Edge Delivery Services om hun inhoud te publiceren. Voor schrijven op basis van documenten is geen gebruik van de AEM-console vereist.
 
-Meer over op document-gebaseerde creatie leren, zie [ Authoring en het Publiceren Inhoud ](/help/edge/docs/authoring.md).
+Meer over op document-gebaseerde creatie leren, zie [ Authoring en het Publiceren Inhoud ](https://www.aem.live/docs/aem-authoring).
 
 ## AEM Content Fragment Editor {#cf-editor}
 

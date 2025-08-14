@@ -4,22 +4,22 @@ description: Nota's van de versie voor 2024.8.0 versie van  [!DNL Adobe Experien
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
-# 2024.8.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2024.8.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the feature release notes for the 2024.8.0 version of [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2024.8.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -45,14 +45,14 @@ Bekijk de video Overzicht van de release van augustus 2024 voor een overzicht va
 
 **Authoring van AEM voor Edge Delivery Services**
 
-De bestaande functionaliteit van de Overerving van Plaatsen [&#128279;](/help/sites-cloud/authoring/universal-editor/inheritance.md) wordt nu gesteund met inbegrip van:
+De bestaande functionaliteit van de Overerving van Plaatsen [ ](/help/sites-cloud/authoring/universal-editor/inheritance.md) wordt nu gesteund met inbegrip van:
 
 * [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
 * [ MSM ](/help/sites-cloud/administering/msm/overview.md) op het paginaniveau
 
 Bovendien worden de volgende functies voor paginabeheer nu ondersteund:
 
-* [ de Markeringen van AEM ](/help/sites-cloud/authoring/sites-console/tags.md) kunnen als a [ taxonomie ](/help/edge/wysiwyg-authoring/taxonomy.md) aan Edge Delivery Services worden uitgevoerd.
+* [ de Markeringen van AEM ](/help/sites-cloud/authoring/sites-console/tags.md) kunnen als a [ taxonomie ](https://www.aem.live/docs/authoring-taxonomy) aan Edge Delivery Services worden uitgevoerd.
 * [ Malplaatjes ](/help/sites-cloud/authoring/universal-editor/templates.md) voor Edge Delivery Services komen binnenkort!
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
@@ -82,15 +82,15 @@ Assets as a Cloud Service ondersteunt nu grote documenten (PSB-bestanden) van Ph
 * Verbeterde miniaturen voor een betere verhouding tussen de inhoud en een groter inhoudsgebied.
 * Aangepaste miniatuurervaring vanuit AEM ondersteund met inhoudshub.
 * Verbeteringen in het zoeken naar kleuren.
-* Improvements in configurations save experience.
-* Improved info page of collections to reflect creator name.
+* Verbeteringen in configuraties besparen ervaring.
+* Verbeterde informatiepagina van verzamelingen om de auteursnaam te weerspiegelen.
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-### New Pre-release features in AEM Forms {#forms-new-prerelease-features}
+### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
-#### Auto-save a draft for Core Components based Adaptive Forms
+#### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
 
 Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversiesnelheden voor organisaties verhoogd door het aantal gebruikers dat het formulier verlaat te verminderen, aangezien gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
@@ -99,7 +99,7 @@ Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarme
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [&#128279;](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 #### AEM Forms AI Assistant
 
@@ -113,7 +113,7 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 * **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met Generatieve Herinneringen AI. Onze generatieve AI genereert automatisch gebruikersvriendelijke formulieren die keuzemogelijkheden verkleinen en de ervaring aanpassen.
 
-* **Panel Generation for Forms**: Generate form sections tailored to specific data collection needs. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
+* **de Generatie van het Comité voor Forms**: produceer vormsecties die aan specifieke behoeften van de gegevensinzameling worden aangepast. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
 
 * **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend Generatieve Herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik Generative AI-herinneringen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
 
@@ -121,7 +121,7 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 >[!IMPORTANT]
 >
-> If you are interested in joining the Early Access Program for any innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with the list of capabilities you are interested in.
+> Als u in het aansluiten bij het Vroege Programma van de Toegang voor om het even welke innovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden u in geinteresseerd bent.
 
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
@@ -148,7 +148,7 @@ Adobe beheerde CDN steunt nu [ de Zijde van Edge omvat (ESI) ](/help/implementin
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -168,4 +168,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.

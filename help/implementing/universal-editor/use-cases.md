@@ -4,9 +4,9 @@ description: Leer over de belangrijkste gebruiksgevallen van de Universele Redac
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Op deze manier kunt u profiteren van de gereedschappen die beschikbaar zijn in d
 
 Als dit uw gebruiksgeval is, als onmiddellijke volgende stap, gelieve de volgende documenten voor een volledig overzicht van hoe te om met de Universele Redacteur in AEM in gebruik te worden.
 
-1. [ Begonnen Begeleidende Gids van de Ontwikkelaar voor het schrijven van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - begin met uw eerste Universeel project van de Redacteur in AEM
-1. [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](/help/edge/wysiwyg-authoring/create-block.md) - leer hoe te instrumentblokken om uw inhoud in de Universele Redacteur editable te maken
-1. [ de Modellering van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md) - leer de details van hoe de blokken gestructureerd zijn om uw inhoud voor gebruik met de Universele Redacteur effectief te modelleren.
+1. [ Begonnen Begeleidende Gids van de Ontwikkelaar voor het schrijven van WYSIWYG met Edge Delivery Services ](https://www.aem.live/developer/ue-tutorial) - begin met uw eerste Universeel project van de Redacteur in AEM
+1. [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](https://www.aem.live/developer/universal-editor-blocks) - leer hoe te instrumentblokken om uw inhoud in de Universele Redacteur editable te maken
+1. [ de Modellering van de Inhoud voor WYSIWYG authoring met de Projecten van Edge Delivery Services ](https://www.aem.live/developer/component-model-definitions) - leer de details van hoe de blokken gestructureerd zijn om uw inhoud voor gebruik met de Universele Redacteur effectief te modelleren.
 
 Nadat u deze documenten hebt gelezen, kunt u terugkeren naar deze pagina voor meer informatie over het gebruik van koploze ontwerpen en over de algemene werking van de universele editor.
 
@@ -65,7 +65,7 @@ De macht van de Universele Redacteur is zijn capaciteit aan auteur om het even w
 De Universal Editor werkt als volgt.
 
 1. Een ontwikkelaar stuurt de app of pagina om de Universal Editor te gebruiken. Deze instrumentatie vertelt de redacteur welke inhoud editable is en hoe te om het voort te zetten.
-   * Als u de [ Begonnen Gids van de Ontwikkelaar die voor de Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) documentatie volgt, worden uw pagina&#39;s automatisch van instrumenten voorzien.
+   * Als u de [ Begonnen Gids van de Ontwikkelaar die voor de Authoring van WYSIWYG met Edge Delivery Services ](https://www.aem.live/developer/ue-tutorial) documentatie volgt, worden uw pagina&#39;s automatisch van instrumenten voorzien.
    * Voor ontwerpen zonder kop kan uw app eenvoudig van instrumenten worden voorzien.
 1. De auteur van de inhoud laadt de Universal Editor, die op zijn beurt de pagina voor bewerking laadt. Omdat het van instrumenten wordt voorzien, weet het welke inhoud editable is en hoe het moet worden vertegenwoordigd en voortgeduurd.
 1. De auteur van de inhoud bewerkt de pagina-inhoud in een intuïtieve WYSIWYG-interface en bewerkt deze op locatie.

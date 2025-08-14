@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Het gebruikersinterface van Adobe Experience Manager werkt met de volgende clië
 
 * [Universele editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [ op document-Gebaseerde creatie ](/help/edge/docs/authoring.md) gebruikend [ Sidekick ](/help/edge/docs/sidekick.md)
+* [ op document-Gebaseerde creatie ](https://www.aem.live/docs/aem-authoring) gebruikend [ Sidekick ](https://www.aem.live/docs/sidekick)
 
 Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 
@@ -64,4 +64,4 @@ Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 
 Browserondersteuning voor websites die door AEM worden weergegeven, is afhankelijk van de implementatie van AEM-paginasjablonen, -blokken, -ontwerpen en -componentuitvoer. Daarom hebben uw ontwikkelaars die uw project implementeren uiteindelijk controle over de compatibiliteit van uw site.
 
-AEM [ projectbouwsteen, ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [ Componenten van de Kern, ](/help/implementing/developing/components/overview.md#aem-core-components) en [ WKND steekproefplaats ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) zijn allen compatibel met alle moderne browsers.
+AEM [ projectbouwsteen, ](https://www.aem.live/developer/ue-tutorial#create-github-project) [ Componenten van de Kern, ](/help/implementing/developing/components/overview.md#aem-core-components) en [ WKND steekproefplaats ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) zijn allen compatibel met alle moderne browsers.

@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de mogelijkheden van Universel
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Zie de volgende bronnen voor informatie over de mogelijkheden om uw eigen extens
 
 >[!TIP]
 >
->Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
+>Als u het leren door voorbeeld verkiest, te zien gelieve het [ de rekbaarheidsleerprogramma van AEM UI ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
 
 [ Gebruikend Extension Manager in AEM Sites ](https://developer.adobe.com/uix/docs/extension-manager/), kunt u uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, tot Adobe toegang hebben eerste-partijuitbreidingen met inbegrip van die voor de Universele Redacteur, en veel meer.
 
@@ -59,6 +59,6 @@ Zie de volgende bronnen voor informatie over de mogelijkheden om uw eigen extens
 
 Naast UI-uitbreidbaarheid biedt de Universal Editor vele andere flexibele extensiepunten om een naadloze integratie van aangepaste bedrijfsvereisten mogelijk te maken.
 
-* **[Blokken](/help/edge/developer/block-collection.md)**: In eenvoudig formaat JSON, kunnen de projecten de blokken en de eigenschappen van de UE beschikbaar voor inhoudsverwezenlijking aanpassen.
+* **[Blokken ](https://www.aem.live/developer/block-collection)**: In eenvoudig formaat JSON, kunnen de projecten de blokken en de eigenschappen van de UE beschikbaar voor inhoudsverwezenlijking aanpassen.
 * **[Aangepast Gebruikersinterface](#extending-ui)**: De uitbreidingen kunnen noodzakelijke UI in zij-panelen of modale dialogen tonen.
 * **[Gebeurtenissen](/help/implementing/universal-editor/events.md)**: De uitbreidingen ontvangen gebeurtenissen over de acties en de selecties van de auteur op de pagina om geschikt te antwoorden.

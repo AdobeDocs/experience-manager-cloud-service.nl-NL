@@ -4,9 +4,9 @@ description: Leer hoe je Cloud Manager-projecten kunt leveren met Edge Delivery 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 040c8af18353cbcb9242570e6bb3bac73928e2fa
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | 6 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
 | 7 | De CDN van uw Edge Delivery-site configureren | Zie [ een Toewijzing van het Domein ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) toevoegen. |
 | 8 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
-| 9 | Go-Live | Zie [ gaan-Levende checklist ](/help/edge/docs/go-live-checklist.md). |
+| 9 | Go-Live | Zie [ gaan-Levende checklist ](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441567?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 

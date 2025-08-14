@@ -4,9 +4,9 @@ description: In het deelvenster Eigenschappen vindt u voorbeelden van velden en 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 1%
 
 ---
@@ -166,7 +166,7 @@ Een AEM-tagcomponenttype maakt een AEM-tagkiezer mogelijk, die kan worden gebrui
 
 >[!TIP]
 >
->Gelieve te zien het document [ Leiden Gegevens van de Taxonomie ](/help/edge/wysiwyg-authoring/taxonomy.md) voor meer informatie over hoe u spreadsheets kunt gebruiken om uw taxonomiegegevens voor uw project van Edge Delivery Services te beheren.
+>Gelieve te zien het document [ Leiden Gegevens van de Taxonomie ](https://www.aem.live/docs/authoring-taxonomy) voor meer informatie over hoe u spreadsheets kunt gebruiken om uw taxonomiegegevens voor uw project van Edge Delivery Services te beheren.
 
 #### AEM Content {#aem-content}
 

@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,6 @@ De volgende configuratieeigenschappen bepalen de naam van de productiegastheer e
 | `cdn.prod.host` | `<Production Host>` | Hostnaam van de productiesite. Bijvoorbeeld `www.example.com` . |
 | `cdn.prod.type` | beheerd |   |
 
-Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers voorproef en hen activeren gebruikend het [ hulpmiddel van de Sidekick ](/help/edge/docs/sidekick.md) om de updates toe te passen.
+Zodra de veranderingen in het configuratieblad worden aangebracht, moeten de gebruikers hen voorproef en activeren gebruikend het [ hulpmiddel van Sidekick ](https://www.aem.live/docs/sidekick) om de updates toe te passen.
 
 Zie ook [ Ongeveer Edge Delivery om lijst in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) te doen.
