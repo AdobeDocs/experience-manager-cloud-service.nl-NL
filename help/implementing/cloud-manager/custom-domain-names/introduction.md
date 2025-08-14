@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 1%
@@ -19,8 +19,8 @@ ht-degree: 1%
 >id="aemcloud_golive_domains"
 >title="Aangepaste domeinnamen beheren"
 >abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
 
 Adobe Experience Manager as a Cloud Service wordt voorzien van een standaarddomeinnaam, eindigend in `*.adobeaemcloud.com`. Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam. De standaarddomeinnaam `*.adobeaemcloud.com` blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
@@ -60,7 +60,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 | 1 | [ voeg SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe |
 | 2 | [ voeg een douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toe |
 | 3 | [ voeg domeinafbeelding ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toe |
-| 4 | [ vorm DNS ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 4 | [ vorm DNS ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#config-dns) |
 | 5 | [ DNS van de Controle status ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
