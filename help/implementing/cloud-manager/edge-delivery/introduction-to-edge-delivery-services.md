@@ -87,7 +87,7 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | 8 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Go-Live | Zie [ gaan-Levende checklist ](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441567?learn=on&captions=dut)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
