@@ -106,7 +106,7 @@ Het hulpmiddel van de Overdracht van de Inhoud heeft een eigenschap die de extra
 >[!NOTE]
 >Na de eerste overdracht van inhoud wordt aanbevolen regelmatig differentiële toevoegingen toe te passen om de periode waarin de inhoud wordt vastgezet voor de uiteindelijke differentiële overdracht van inhoud te verkorten voordat u live gaat op Cloud Service. Als u de pre-exemplaarstap voor de eerste opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingestions overslaan (als de top-up migratie vastgestelde grootte minder dan 200 GB is). De reden is dat het tijd kan toevoegen aan het hele proces.
 
-Om differentiële inhoud in te voeren nadat sommige ingestions volledig zijn, moet u a [ Hoogste Extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) in werking stellen, en dan de inlaatmethode met **gebruiken Wipe** gehandicapte optie ****. Ben zeker om de **Sluiterende** verklaring hierboven te lezen om het verliezen van inhoud reeds op de bestemming te vermijden.
+Om differentiële inhoud in te voeren nadat sommige ingestions volledig zijn, moet u a [ Hoogste Extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) in werking stellen, en dan de inlaatmethode met **gebruiken Wipe** gehandicapte optie **&#x200B;**. Ben zeker om de **Sluiterende** verklaring hierboven te lezen om het verliezen van inhoud reeds op de bestemming te vermijden.
 
 Begin door een Baan van de Opname te creëren en ervoor te zorgen dat **Sluitereffect** tijdens het opnemen wordt onbruikbaar gemaakt, zoals hieronder getoond:
 
@@ -192,7 +192,7 @@ Zorg ervoor dat de auteursomgeving beschikbaar is en wacht een paar minuten voor
 >abstract="Een gemeenschappelijke oorzaak van een niet-sluitingsmislukking is een conflict in knoop ids. Er kan slechts een van de conflicterende knooppunten bestaan."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Bovenste inname"
 
-Een gemeenschappelijke oorzaak van de mislukking van de Opname van de a [ ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een conflict in knoopids. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+Een gemeenschappelijke oorzaak van de mislukking van de Opname van de a [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een conflict in knoopids. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint overtreden bezit [ jcr :uuid] die waarde a1a1a1a1-b2b2-c3-d4d4-e5e5e5e5e5: /some/path/jcr :content, /some/other/path/jcr :content
 
@@ -212,7 +212,7 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 >abstract="Een gemeenschappelijke oorzaak van een niet-veeggebaren ingangsmislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. De versies van het knooppunt moeten worden hersteld."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Bovenste inname"
 
-Een andere gemeenschappelijke oorzaak van de mislukking van de Opname van de a [ ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+Een andere gemeenschappelijke oorzaak van de mislukking van de Opname van de a [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
 
@@ -243,7 +243,7 @@ Om deze beperking mogelijk te vermijden, stel de [ Analysator van Beste praktijk
 
 >[!NOTE]
 >
->[ versie 2.1.50+ van de Analysator van Beste praktijken van 0} zal over grote knopen rapporteren die unicode karakters bevatten die de maximumgrootte overschrijden. ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Zorg ervoor dat u de nieuwste versie uitvoert. In BPA-versies vóór 2.1.50 worden deze grote knooppunten niet geïdentificeerd en gerapporteerd. Deze knooppunten moeten afzonderlijk worden gedetecteerd met behulp van de hiervoor genoemde Oak-voorwaarde.
+>[ versie 2.1.50+ van de Analysator van Beste praktijken van 0&rbrace; zal over grote knopen rapporteren die unicode karakters bevatten die de maximumgrootte overschrijden. ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) Zorg ervoor dat u de nieuwste versie uitvoert. In BPA-versies vóór 2.1.50 worden deze grote knooppunten niet geïdentificeerd en gerapporteerd. Deze knooppunten moeten afzonderlijk worden gedetecteerd met behulp van de hiervoor genoemde Oak-voorwaarde.
 
 ### Ingestiefout als gevolg van onverwachte intermitterende fouten {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
