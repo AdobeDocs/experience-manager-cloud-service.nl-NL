@@ -116,7 +116,7 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
 
 >[!BEGINTABS]
 
->[!TAB  voeg individuele gebruikers ] toe
+>[!TAB voeg individuele gebruikers  toe]
 
 1. Op de **pagina van de Gebruikersgroepen**, in de **naam van de Groep** lijst, klik de naam van de gebruikersgroep die u, of een bestaande naam van de gebruikersgroep onlangs creeerde.
 
