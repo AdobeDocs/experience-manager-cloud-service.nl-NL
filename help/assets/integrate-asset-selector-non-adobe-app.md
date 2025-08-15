@@ -3,7 +3,7 @@ title: Asset Selector integreren met toepassing van andere leveranciers dan Adob
 description: Integreer de kiezer voor middelen met verschillende Adobe-, niet-Adobe- en externe toepassingen.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -102,6 +102,7 @@ De Selecteur van activa wordt teruggegeven op het `<div>` containerelement, zoal
         
 
         //function that will render the asset selector
+        function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
@@ -113,7 +114,7 @@ De Selecteur van activa wordt teruggegeven op het `<div>` containerelement, zoal
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
