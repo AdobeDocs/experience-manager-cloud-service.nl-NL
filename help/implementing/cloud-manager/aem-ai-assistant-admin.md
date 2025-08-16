@@ -89,7 +89,7 @@ Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe produc
 
    ![ Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-user-groups.png)
 
-1. Op de **pagina van de Groepen van de Gebruiker 0} {, klik** Nieuwe gebruikersgroep **.**
+1. Op de **pagina van de Groepen van de Gebruiker 0&rbrace; &lbrace;, klik** Nieuwe gebruikersgroep **.**
 
    ![ Nieuwe knoop van de gebruikersgroep op de pagina van de Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-new-user-group.png)
 
@@ -116,7 +116,7 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
 
 >[!BEGINTABS]
 
->[!TAB  voeg individuele gebruikers ] toe
+>[!TAB voeg individuele gebruikers  toe]
 
 1. Op de **pagina van de Gebruikersgroepen**, in de **naam van de Groep** lijst, klik de naam van de gebruikersgroep die u, of een bestaande naam van de gebruikersgroep onlangs creeerde.
 
