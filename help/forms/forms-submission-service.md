@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 1eae2bed903a1dace808a85ad984065351f3a41d
+source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 0%
@@ -107,13 +107,13 @@ Kies een van de ondersteunde platforms:
 
 - **geeft toestemmingen** voor het doelspreadsheet uit
 - **delend mogelijkheden** om toegang tot `forms@adobe.com` te verlenen
-- **toestemmingen van de generatie van de verbinding 0&rbrace; &lbrace;voor uw gekozen platform**
+- **toestemmingen van de generatie van de verbinding 0} {voor uw gekozen platform**
 
 +++
 
 >[!TIP]
 >
->**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
+>**Nieuw aan Edge Delivery Services?** Begin met het [ Begonnen Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) aan opstelling uw projectstichting.
 
 ## Configuratiemethoden
 
@@ -133,7 +133,7 @@ De Forms-verzendservice biedt twee configuratiemethoden. Kies de methode die het
 
 Voordat u een van beide methoden configureert, moet u ervoor zorgen dat uw AEM-projectstichting gereed is:
 
-1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **creeer of werk uw project van AEM** met het recentste Adaptieve Blok van Forms bij ([ Begonnen het Leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Update`fstab.yaml`** in uw projectwortel:
 
@@ -166,7 +166,7 @@ Maak uw formulierstructuur met Google Sheets of Microsoft Excel.
 1. **open uw spreadsheetplatform** (Google Bladen of Microsoft Excel)
 2. **creeer een nieuw spreadsheet** voor uw vormproject
 3. **Naam uw blad** (moet of `helix-default` of `shared-aem` zijn)
-4. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **bepaalt uw vormstructuur** gebruikend de [ gids van de vormverwezenlijking ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![ de Definitie van de Vorm ](/help/forms/assets/form-submission-definition.png)
 *Voorbeeld: De definitie van de vorm met gebiedstypes, etiketten, en bevestigingsregels*
@@ -234,8 +234,10 @@ Bied de Adobe Forms-verzendservice toegang tot uw spreadsheet.
 
 1. **klik de knoop van het Aandeel** in de hoogste juiste hoek van uw spreadsheet
 2. **voeg de de dienstrekening van Adobe toe:**
+
    - E-mail: `forms@adobe.com`
    - Het niveau van de toestemming: **Redacteur** (die voor gegevens wordt vereist schrijven)
+
 3. **verzend de het delen uitnodiging**
 4. **exemplaar de spreadsheetverbinding** voor de volgende stap
 
@@ -380,8 +382,8 @@ Inhoudstype: application/json
 x-adobe-routing: tier=live, bucket=main-your-repo-your-org
 
 Lichaam (JSON):
-&lbrace;
-&quot;data&quot;: &lbrace;
+{
+&quot;data&quot;: {
 &quot;startDate&quot;: &quot;2025-01-10&quot;,
 &quot;endDate&quot;: &quot;2025-01-25&quot;,
 &quot;bestemming&quot;: &quot;Australië&quot;,
@@ -392,8 +394,8 @@ Lichaam (JSON):
 &quot;leeftijd&quot;: &quot;35&quot;,
 &quot;subscribe&quot;: null,
 &quot;email&quot;: &quot;mary@gmail.com&quot;
-&rbrace;
-&rbrace;
+}
+}
 &quot;
 
 **Verwachte Reactie:**
@@ -578,7 +580,7 @@ Nu u de gevormde Dienst van de Verzending van Forms hebt, onderzoek deze verwant
 
 +++ Verbeter je Forms
 
-- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
+- **[creeer Geavanceerde Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - voeg bevestiging, voorwaardelijke logica, en douane het stileren toe
 - **[Gids van de Componenten van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - onderzoek beschikbare types van vormgebied
 
 +++

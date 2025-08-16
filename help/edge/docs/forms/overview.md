@@ -4,7 +4,7 @@ description: Creëer en lever hoogwaardige formulieren op Adobe Experience Manag
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Tegen het einde kunt u de juiste ontwerpmethode kiezen, de verzendopties begrijp
 ### Universele editor
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is een visueel, belemmering-en-dalingsauteursgereedschap voor marketers en ontwerpers die snelheid met onderneming-rang macht combineert:
@@ -121,7 +121,6 @@ In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Exce
 
 
 U kunt nu uw eerste krachtige formulier maken met AEM Edge Delivery Services.
-
 
 <!--
 ## Start creating forms
