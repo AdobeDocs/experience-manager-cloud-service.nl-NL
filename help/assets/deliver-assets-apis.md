@@ -64,7 +64,7 @@ headers: {
     }
 ```
 
-Om de leverings-API&#39;s aan te roepen, is in de `Authorization` -details een IMS-token vereist voor het leveren van een beperkt middel. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om het teken IMS te produceren en het te gebruiken geschikt in de de verzoekkopbal van levering APIs.
+Om de leverings-API&#39;s aan te roepen, is in de `Authorization` -details een IMS-token vereist voor het leveren van een beperkt middel. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om het teken IMS te produceren en het te gebruiken geschikt in de de verzoekkopbal van levering APIs.
 
 
 Om verzoeksteekproeven, reactiemonsters, en reactiecodes te bekijken, zie [ Levering APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
