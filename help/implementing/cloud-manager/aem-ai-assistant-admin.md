@@ -94,7 +94,7 @@ Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe produc
 
    ![ Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-user-groups.png)
 
-1. Op de **pagina van de Groepen van de Gebruiker 0} {, klik** Nieuwe gebruikersgroep **.**
+1. Op de **pagina van de Groepen van de Gebruiker 0&rbrace; &lbrace;, klik** Nieuwe gebruikersgroep **.**
 
    ![ Nieuwe knoop van de gebruikersgroep op de pagina van de Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-new-user-group.png)
 
@@ -121,7 +121,7 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
 
 >[!BEGINTABS]
 
->[!TAB  voeg individuele gebruikers ] toe
+>[!TAB voeg individuele gebruikers  toe]
 
 1. Op de **pagina van de Gebruikersgroepen**, in de **naam van de Groep** lijst, klik de naam van de gebruikersgroep die u, of een bestaande naam van de gebruikersgroep onlangs creeerde.
 
@@ -136,7 +136,7 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
    ![ voegt gebruikers aan deze pagina van de gebruikersgroep ](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png) toe
 
 1. In de laag-juiste hoek van de pagina, klik **sparen**.
-1. Wijs nu het productprofiel toe aan de gebruikersgroep] (#assign-product-profile).
+1. Wijs nu het productprofiel toe aan de gebruikersgroep&rbrack; (#assign-product-profile).
 
 >[!TAB  voegt gebruikers in bulk toe ]
 
@@ -144,7 +144,7 @@ U kunt de bulkupload-functie in de Admin Console gebruiken.
 
 1. Een CSV-bestand met gebruikersgegevens voorbereiden.
 1. Gebruik de optie **`Add users by CSV`** voor efficiënte bulktoevoeging.
-1. Wijs nu het productprofiel toe aan de gebruikersgroep] (#assign-product-profile).
+1. Wijs nu het productprofiel toe aan de gebruikersgroep&rbrack; (#assign-product-profile).
 
 >[!ENDTABS]
 
@@ -164,7 +164,7 @@ Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebru
 
    ![ de &quot;Assign producten en profielen&quot;pagina, die de &quot;Uitgezochte productprofielen&quot;dialoogdoos toont, en het &quot;AI Medewerker&quot;geselecteerde productprofiel ](/help/implementing/cloud-manager/assets/ai-assistant-select-product-profile.png)
 
-1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **** toe.
+1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **&#x200B;**&#x200B;toe.
 1. Vlak de laag-juiste hoek van **wijs producten en profielen** pagina toe, klik **sparen**.
 
    ![ het AI Hulpgetoonde profiel van het product dat aan de Hulpgebruikersgroep van AEM wordt toegewezen AI ](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
