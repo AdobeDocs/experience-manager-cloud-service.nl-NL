@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Deze editor biedt:
 * [ In-line het uploaden van activa als inhoudsverwijzingen ](#reference-images), zonder het moeten hen aan Activa DAM eerst uploaden.
 * [ produceer Variaties ](#generate-variations-ai) om Generatieve AI te gebruiken om inhoudsverwezenlijking te versnellen die op herinneringen wordt gebaseerd.
 * [ Voorproef ](#preview-content-fragment) van de teruggegeven ervaring die door het Fragment van de Inhoud wordt geleverd.
-* Capaciteit om [ te publiceren ](#publish-content-fragment) en [&#128279;](#unpublish-content-fragment) van de redacteur ongedaan te maken.
+* Capaciteit om [ te publiceren ](#publish-content-fragment) en [ ](#unpublish-content-fragment) van de redacteur ongedaan te maken.
 * Capaciteit aan [ mening, en open, bijbehorende taalexemplaren ](#view-language-copies) in de redacteur.
 * Mogelijkheid aan [ details van de meningsversie ](#view-version-history) in de redacteur. U kunt ook terugkeren naar een geselecteerde versie.
 * Capaciteit aan [ mening, en open, ouderverwijzingen ](#view-parent-references).
@@ -61,7 +61,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * In het **lusje van Commentaren** kunt u toevoegen, en lezen, commentaren helpen u met andere auteurs samenwerken
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
-      * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **&#x200B;**&#x200B;instanties van het relevante gebied toevoegen
+      * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **** instanties van het relevante gebied toevoegen
    * als **de gebieden van Tijdelijke aanduiding van het Lusje** worden bepaald binnen het model zij hier en worden getoond:
       * kan worden gebruikt voor navigatie
       * wordt horizontaal weergegeven of als een vervolgkeuzelijst
@@ -176,7 +176,7 @@ Zie [ Variaties produceren - in AEM Editors ](/help/generative-ai/generate-varia
 
 Een variatie van het inhoudsfragment verwijderen:
 
-    >[ !NOTA] 
+    >[!NOTA] 
     > 
     >U kunt niet **Main** schrappen.
 
@@ -190,7 +190,7 @@ Een variatie van het inhoudsfragment verwijderen:
 
 ## Tekstvelden met meerdere regels bewerken - Onbewerkte tekst of Markering {#edit-multi-line-text-fields-plaintext-markdown}
 
-[&#128279;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**de gebieden van de 0&rbrace; Meerdere lijntekst &lbrace;kunnen één van drie formaten hebben:**
+**[de gebieden van de 0} Meerdere lijntekst {kunnen één van drie formaten hebben:](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**
 
 * Onbewerkte tekst
 * [Markering](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -248,7 +248,7 @@ Bijvoorbeeld:
 
 ### Vergelijken en synchroniseren - RTF-tekst {#compare-and-synchronize-rich-text}
 
-De actie **vergelijkt** is beschikbaar voor Meerdere lijngebieden wanneer u open de Verandering van de a **&#x200B;**&#x200B;hebt.
+De actie **vergelijkt** is beschikbaar voor Meerdere lijngebieden wanneer u open de Verandering van de a **** hebt.
 
 Hiermee opent u het veld Meerdere regels op volledig scherm en:
 
@@ -267,7 +267,7 @@ Hiermee opent u het veld Meerdere regels op volledig scherm en:
 
   >[!CAUTION]
   >
-  >De synchronisatie is slechts beschikbaar om veranderingen *van **Hoofd**&#x200B;aan de variatie* te kopiëren.
+  >De synchronisatie is slechts beschikbaar om veranderingen *van **Hoofd**aan de variatie* te kopiëren.
   >
   >Het overbrengen van veranderingen *van een variatie aan **Hoofd*** is niet beschikbaar als optie.
 
@@ -314,7 +314,7 @@ In **de gebieden van de Verwijzing van de Inhoud** kunt u:
 
   >[!NOTE]
   >
-  >Om een beeld aan het **gebied van de Verwijzing van de Inhoud direct te uploaden**, moet het **&#x200B;**:
+  >Om een beeld aan het **gebied van de Verwijzing van de Inhoud direct te uploaden**, moet het ****:
   >
   >* hebben a **Weg van de Weg van de Weg van de Wortel** bepaald (in het [ Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Hiermee geeft u aan waar de afbeelding wordt opgeslagen.
   >* omvat **Beeld** in de lijst van toegelaten inhoudstypes
@@ -354,9 +354,9 @@ Er zijn enkele beperkingen wanneer wordt verwezen naar externe middelen:
 
 * Er worden geen metagegevens van middelen weergegeven via de API voor beheer of de API voor levering. U moet de API voor metagegevens van middelen gebruiken om de metagegevens van de elementen op te halen:
 
-   * de individuele activa meta-gegevens: [ https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * de individuele activa meta-gegevens: [ https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * krijg bulkmeta-gegevensinformatie gebruikend (experimenteel) onderzoek API: [ https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search ](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * krijg bulkmeta-gegevensinformatie gebruikend (experimenteel) onderzoek API: [ https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >

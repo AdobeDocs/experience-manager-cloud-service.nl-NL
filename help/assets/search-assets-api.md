@@ -3,7 +3,7 @@ title: Zoeken in Assets API
 description: Leer hoe u de zoek-Assets API gebruikt.
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -56,6 +56,6 @@ headers: {
     },
 ```
 
-Om de zoek-API aan te roepen, is een IMS-token vereist om in de `Authorization` -details te definiëren. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=nl-NL#generating-the-access-token) om het teken IMS te produceren en het te gebruiken geschikt in de activaAPI van het Onderzoek verzoekkopbal.
+Om de zoek-API aan te roepen, is een IMS-token vereist om in de `Authorization` -details te definiëren. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) om het teken IMS te produceren en het te gebruiken geschikt in de activaAPI van het Onderzoek verzoekkopbal.
 
-Om verzoeksteekproeven, reactiemonsters, en reactiecodes te bekijken, zie [ Onderzoek Assets API ](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+Om verzoeksteekproeven, reactiemonsters, en reactiecodes te bekijken, zie [ Onderzoek Assets API ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search).
