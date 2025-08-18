@@ -1,6 +1,6 @@
 ---
-title: Introductie van Assets as a Cloud Service for Digital Asset Management in AEM
-description: Introductie van Assets as a Cloud Service for Digital Asset Management in AEM
+title: Introductie van Assets as a Cloud Service voor Digital Asset Management in AEM
+description: Introductie van Assets as a Cloud Service voor Digital Asset Management in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Introductie van Assets as a Cloud Service for Digital Asset Management in AEM {#assets-as-cloud-service-digital-asset-management-aem}
+# Introductie van Assets as a Cloud Service voor Digital Asset Management in AEM {#assets-as-cloud-service-digital-asset-management-aem}
 
 Adobe Experience Manager Assets as a Cloud Service biedt bedrijven een geïntegreerde PaaS-oplossing voor de cloud zodat ze hun Digital Asset Management- en Dynamic Media-bewerkingen niet alleen snel en met impact kunnen uitvoeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, kunnen gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
 
@@ -57,12 +57,12 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
    <img alt="AEM-bureaubladtoepassing gebruiken" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/using">
-      <strong> Desktop app van AEM van het Gebruik &lbrace;</strong>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <strong> Desktop app van AEM van het Gebruik {</strong>
       </a>
    </div>
    <p>
@@ -70,11 +70,11 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
    <img alt="Adobe Asset Link gebruiken" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
       <strong> de Verband van Activa van Adobe van het Gebruik </strong>
       </a>
    </div>
@@ -517,7 +517,7 @@ U kunt Asset Selector integreren met een Adobe- of een niet-Adobe-toepassing.
 
 * **Integratie met Adobe Workfront**: [!DNL Adobe Workfront] is een het werkbeheertoepassing die u helpt de volledige levenscyclus van het werk in één plaats beheren. Dankzij de integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid en tijd-aan-markt van inhoud verbeteren door het werk en het beheer van digitale elementen intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
-  Adobe biedt aan [  [!DNL Workfront]  te integreren en  [!DNL Adobe Experience Manager Assets]  ](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=nl-NL).
+  Adobe biedt aan [  [!DNL Workfront]  te integreren en  [!DNL Adobe Experience Manager Assets]  ](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 * **Integratie met Cijfer**: AEM Assets integreert binnen met Cijfer, dat ontwerpers toestaat om tot de activa direct toegang te hebben die in AEM Assets van binnen het Gebruikersinterface van Figma worden opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, in het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in de AEM Assets-opslagruimte. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [ hier ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -583,11 +583,11 @@ Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Asset
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integratie met Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong> Integratie met Adobe Journey Optimizer </strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Asset
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Integratie met Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong> Integratie met Commerce </strong>
       </a>
    </div>
