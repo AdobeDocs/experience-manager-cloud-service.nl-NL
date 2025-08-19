@@ -1,24 +1,32 @@
 ---
-title: De AI-assistent in Adobe Experience Manager configureren
+title: De AI-assistent in AEM configureren
 description: Leer hoe u de AI Assistant instelt en configureert met de Admin Console in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: true
+index: false
 hidefromtoc: true
 exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
-source-git-commit: e853e7b46c762ab724d5eecb344897a83e4fb724
+source-git-commit: 7779f24244cce198e1c6a9b243a616c96f05ac8d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
 
-# De AI-assistent in Adobe Experience Manager configureren {#aem-ai-asst-admin-setup}
+# De AI-assistent in AEM configureren {#aem-ai-asst-admin-setup}
 
-Een beheerder moet toegang, machtigingen en instellingen configureren voordat gebruikers in hun organisatie de functies in AEM (Adobe Experience Manager) AI Assistant kunnen gebruiken.
+<!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
-Het configuratieproces van de AEM AI Assistant bestaat uit de volgende stappen:
+Als u de AI Assistant in AEM (Adobe Experience Manager) wilt gebruiken, moet uw organisatie zich aanmelden op Admin Console-niveau. Een productbeheerder maakt (of kiest) een gebruikersgroep en verleent deze de nieuwe machtiging &quot;AI Assistant&quot;. Iedereen die aan die groep wordt toegevoegd krijgt direct toegang tot de AI Medewerker over AEM. Als het doel bedrijfsbrede beschikbaarheid is, wijst admin eenvoudig alle gebruikers aan die groep toe.
+
+Vanuit het perspectief van een werknemer, is het proces ongecompliceerd: identificeer de productbeheerder voor Adobe Experience Manager in uw organisatie en verzoek om aan de AI-Toegelaten gebruikersgroep te worden toegevoegd. Zodra u in die groep verschijnt, verschijnt het Hulppictogram automatisch de volgende tijd u binnen ondertekent.
+
+Beheerders moeten het normale bestuur van Cloud Manager in gedachten houden. Houd de rechten van productbeheerders in de Admin Console in om profielen te maken, gebruikersgroepen te beheren of machtigingen te bewerken. Als de gebruikers ook de ingebouwde **eigenschap van het Ticket van de Steun** van de Hulp nodig hebben, voeg de standaard **rol Admin van de Steun** (standaardrol van Admin Console) aan de zelfde individuen of de groep toe.
+
+Het configuratieproces van de AI Assistant in AEM bestaat uit de volgende stappen:
 
 1. [ creeer een nieuw productprofiel in Adobe Admin Console ](#create-profile).
 1. [ laat de toestemming van de Kennis van het AI Hulpproduct ](#enable-permission) toe.
@@ -43,15 +51,15 @@ Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 ## 1 - Een nieuw productprofiel maken in de Adobe Admin Console{#create-profile}
 
-1. Volg de gedetailleerde instructies in [ creeer een nieuw productprofiel in Adobe Admin Console ](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/ui/create-profile) dat in de documentatie van Experience Platform wordt gevonden.
+1. Volg de gedetailleerde instructies in [ creeer een nieuw productprofiel in Adobe Admin Console ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) dat in de documentatie van Experience Platform wordt gevonden.
 
 1. Bij het maken van het nieuwe productprofiel kunt u de volgende voorgestelde waarden voor de AI Assistant gebruiken.
 
    | Tekstveld | Voorgestelde waarde |
    | --- | --- |
-   | Naam van productprofiel | `AEM AI Assistant` (of uw voorkeursbeschrijvende naam) |
+   | Naam van productprofiel | `AI Assistant in AEM` (of uw voorkeursbeschrijvende naam) |
    | Weergavenaam (optioneel) | `AI Assistant` |
-   | Beschrijving (optioneel) | `Product profile for managing AEM AI Assistant access` |
+   | Beschrijving (optioneel) | `Product profile for managing AI Assistant in AEM access` |
    | Melding | Configureren op basis van de voorkeuren van uw organisatie |
 
 
@@ -59,9 +67,9 @@ Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 Het proces voor het toewijzen van aangepaste machtigingen aan productprofielen volgt de standaard Adobe Cloud Manager-workflow voor aangepaste machtigingen.
 
-Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe productprofiel ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions) toe
+Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe productprofiel ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions) toe
 
-1. Klik in de Admin Console op de naam van het zojuist gemaakte productprofiel (`AEM AI Assistant`)
+1. Klik in de Admin Console op de naam van het zojuist gemaakte productprofiel (`AI Assistant in AEM`)
 
    ![ Screenshot ](/help/implementing/cloud-manager/assets/ai-assistant-console.png)
 
@@ -94,7 +102,7 @@ Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe produc
 
    ![ Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-user-groups.png)
 
-1. Op de **pagina van de Groepen van de Gebruiker 0&rbrace; &lbrace;, klik** Nieuwe gebruikersgroep **.**
+1. Op de **pagina van de Groepen van de Gebruiker 0} {, klik** Nieuwe gebruikersgroep **.**
 
    ![ Nieuwe knoop van de gebruikersgroep op de pagina van de Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-new-user-group.png)
 
@@ -102,8 +110,8 @@ Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe produc
 
    | Optie | Voorgestelde waarde |
    | --- | --- |
-   | Naam gebruikersgroep | `AEM AI Assistant` (of uw voorkeursnaam) |
-   | Beschrijving (optioneel) | `User group for managing AEM AI Assistant access` |
+   | Naam gebruikersgroep | `AI Assistant in AEM` (of uw voorkeursnaam) |
+   | Beschrijving (optioneel) | `User group for managing AI Assistant in AEM access` |
 
    ![ creeer een nieuwe pagina van de gebruikersgroep ](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
@@ -121,22 +129,22 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
 
 >[!BEGINTABS]
 
->[!TAB voeg individuele gebruikers  toe]
+>[!TAB  voeg individuele gebruikers ] toe
 
 1. Op de **pagina van de Gebruikersgroepen**, in de **naam van de Groep** lijst, klik de naam van de gebruikersgroep die u, of een bestaande naam van de gebruikersgroep onlangs creeerde.
 
-   ![ pagina van de Gebruikersgroepen die de naam van de de gebruikersgroep van AEM AI Hulpgroep in de lijst tonen ](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
+   ![ pagina die van de Gebruikersgroepen AI Medewerker in de naam van de AEM gebruikersgroep in de lijst tonen ](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
-1. In de **pagina van de groepen van de Gebruiker** voor de **Medewerker van AEM AI**, klik de **Gebruikers** tabel, dan klik **toevoegen gebruikers**.
+1. In de **pagina van de groepen van de Gebruiker** voor de **AI Medewerker in AEM**, klik het **Gebruikers** lusje, dan klik **voegt gebruikers** toe.
 
-   ![ De pagina van de gebruikersgroepen van AEM AI van de Hulp, die het lusje van Gebruikers en de Add gebruikersknoop toont ](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+   ![ AI Medewerker in de pagina van de gebruikersgroepen van AEM, die het lusje van Gebruikers en Add gebruikersknoop toont ](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. Zoek en selecteer op de pagina **`Add users to this user group`** gebruikers die toegang tot de AEM AI Assistant nodig hebben.
+1. Zoek en selecteer op de pagina **`Add users to this user group`** gebruikers die toegang tot de AI-assistent in AEM nodig hebben.
 
    ![ voegt gebruikers aan deze pagina van de gebruikersgroep ](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png) toe
 
 1. In de laag-juiste hoek van de pagina, klik **sparen**.
-1. Wijs nu het productprofiel toe aan de gebruikersgroep&rbrack; (#assign-product-profile).
+1. Nu, [ wijs het productprofiel aan de gebruikersgroep ](#assign-product-profile) toe.
 
 >[!TAB  voegt gebruikers in bulk toe ]
 
@@ -144,7 +152,7 @@ U kunt de bulkupload-functie in de Admin Console gebruiken.
 
 1. Een CSV-bestand met gebruikersgegevens voorbereiden.
 1. Gebruik de optie **`Add users by CSV`** voor efficiënte bulktoevoeging.
-1. Wijs nu het productprofiel toe aan de gebruikersgroep&rbrack; (#assign-product-profile).
+1. Nu, [ wijs het productprofiel aan de gebruikersgroep ](#assign-product-profile) toe.
 
 >[!ENDTABS]
 
@@ -153,21 +161,21 @@ U kunt de bulkupload-functie in de Admin Console gebruiken.
 
 Deze stap volgt de standaard Adobe Admin Console-workflow voor het toewijzen van productprofielen aan gebruikersgroepen.
 
-Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html)
+Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
 
-1. Terwijl nog in uw AEM AI Hulp gebruikersgroep van [ 4 - voeg gebruikers aan de gebruikersgroep ](#add-users) toe, klik de **Toegewezen productprofielen** tabel.
+1. Terwijl nog in uw Medewerker AI in AEM gebruikersgroep van [ 4 - voeg gebruikers aan de gebruikersgroep ](#add-users) toe, klik de **Toegewezen productprofielen** tabel.
 1. Klik **toewijzen profiel**.
 
-   ![ AEM AI de Hulp pagina van de gebruikersgroep met Toegewezen geselecteerde productprofielen ](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+   ![ AI Medewerker in de pagina van de gebruikersgroep van AEM met Toegewezen geselecteerde productprofielen ](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
 
 1. Op **wijs producten en profielen** pagina toe, in het **Uitgezochte de dialoogvakje van productprofielen**, onderzoek naar en selecteer uw **AI Medewerker** productprofiel.
 
    ![ de &quot;Assign producten en profielen&quot;pagina, die de &quot;Uitgezochte productprofielen&quot;dialoogdoos toont, en het &quot;AI Medewerker&quot;geselecteerde productprofiel ](/help/implementing/cloud-manager/assets/ai-assistant-select-product-profile.png)
 
-1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **&#x200B;**&#x200B;toe.
+1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **** toe.
 1. Vlak de laag-juiste hoek van **wijs producten en profielen** pagina toe, klik **sparen**.
 
-   ![ het AI Hulpgetoonde profiel van het product dat aan de Hulpgebruikersgroep van AEM wordt toegewezen AI ](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+   ![ het AI Hulp getoonde productprofiel dat aan de Medewerker AI in AEM wordt toegewezen gebruikersgroep ](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## De configuratie controleren
@@ -187,7 +195,8 @@ Een gebruiker van de toegewezen groep hebben doe het volgende:
 
 ## Zie ook
 
-* [ de Toegangscontrole van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/ui/overview)
+* [AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [ de Toegangscontrole van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Aangepaste Cloud Manager-machtigingen](/help/implementing/cloud-manager/custom-permissions.md)
 
 
