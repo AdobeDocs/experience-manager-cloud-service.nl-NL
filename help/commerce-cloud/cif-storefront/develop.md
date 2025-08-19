@@ -37,13 +37,13 @@ De CIF Add-On wordt geleverd als een archief met verkoopfuncties. Het ZIP-bestan
 >[!TIP]
 >
 >**Nieuw aan AEM as a Cloud Service?**
->&#x200B;>Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL)
 
 ### Vereiste software {#required-software}
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#download-the-aem-as-a-cloud-service-sdk)
 * [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
 * [ Node.js v10+ ](https://nodejs.org/en)

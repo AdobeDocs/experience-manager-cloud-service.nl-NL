@@ -258,5 +258,5 @@ Het [ project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat 
 ## Aanvullende bronnen {#additional}
 
 * [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
-* [ het Middel van AEM Afbeelding ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [ het Middel van AEM Afbeelding ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [ Sling Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

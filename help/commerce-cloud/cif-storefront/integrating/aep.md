@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # AEM-CIF-kerncomponenten en Adobe Experience Platform-integratie {#aem-cif-aep-integration}
 
-De [ Commerce integration framework (CIF) ](https://github.com/adobe/aem-core-cif-components) kerncomponenten verstrekken naadloze integratie met [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals __toe te voegen aan wagentje__.
+De [ Commerce integration framework (CIF) ](https://github.com/adobe/aem-core-cif-components) kerncomponenten verstrekken naadloze integratie met [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=nl-NL) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals __toe te voegen aan wagentje__.
 
 Het [ project van de Componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components) verstrekt een bibliotheek van JavaScript genoemd [ schakelaar van Adobe Experience Platform voor Adobe Commerce ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens van uw Commerce storefront te verzamelen. Deze gebeurtenisgegevens worden naar de Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door Commerce-gegevens aan te sluiten op andere producten in de Adobe Experience Cloud, kunt u taken uitvoeren zoals het gebruikersgedrag op uw site analyseren, AB-tests uitvoeren en gepersonaliseerde campagnes maken.
 
-Leer meer over de [ reeks van de Gegevensverzameling van 0&rbrace; Experience Platform van technologieën die u toestaan om gegevens van de klantenervaring van cliënt-zijbronnen te verzamelen.](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)
+Leer meer over de [ reeks van de Gegevensverzameling van 0&rbrace; Experience Platform van technologieën die u toestaan om gegevens van de klantenervaring van cliënt-zijbronnen te verzamelen.](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=nl-NL)
 
 ## `addToCart` -gebeurtenisgegevens verzenden naar Experience Platform {#send-addtocart-to-aep}
 
@@ -38,7 +38,7 @@ In de volgende stappen wordt getoond hoe u de gebeurtenisgegevens van `addToCart
 
 Gebruik een lokale ontwikkelomgeving om deze demo te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. Herzie de vereisten en de stappen voor [ vestiging lokale ontwikkeling met AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md)
 
-U hebt ook toegang tot [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) en toestemmingen nodig om het schema, de dataset, en de gegevensstromen voor gegevensinzameling tot stand te brengen. Voor meer informatie, zie [ beheer van de Toestemming.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)
+U hebt ook toegang tot [ Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=nl-NL) en toestemmingen nodig om het schema, de dataset, en de gegevensstromen voor gegevensinzameling tot stand te brengen. Voor meer informatie, zie [ beheer van de Toestemming.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=nl-NL)
 
 ## AEM Commerce as a Cloud Service instellen {#aem-setup}
 
@@ -366,7 +366,7 @@ Om de structuur voor de gegevens van de handelsgebeurtenis te bepalen, moet u ee
 
 >[!TIP]
 >
->Zie de [ Grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) voor meer informatie.
+>Zie de [ Grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=nl-NL) voor meer informatie.
 
 ### Gegevensset maken {#create-dataset}
 
@@ -392,7 +392,7 @@ Om de gebeurtenisgegevens op te slaan, moet u een Dataset tot stand brengen die 
 
 >[!TIP]
 >
->Zie het [ overzicht van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) voor meer informatie.
+>Zie het [ overzicht van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=nl-NL) voor meer informatie.
 
 
 ### DataStream maken {#create-datastream}
@@ -419,7 +419,7 @@ Voer de volgende stappen uit zodat u een DataStream kunt maken in de Experience 
 
 >[!TIP]
 >
->Zie het [ Overzicht DataStream ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) voor meer informatie.
+>Zie het [ Overzicht DataStream ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=nl-NL) voor meer informatie.
 
 ## Gegevensstroomwaarde toevoegen aan AEM Commerce-configuratie {#add-aep-values-to-aem}
 
@@ -494,6 +494,6 @@ __Profile XDM Events :__
 Zie de volgende bronnen voor meer informatie:
 
 - [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection]  overzicht ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
-- [[!DNL Data Connection]  Gebeurtenissen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
-- [ overzicht van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+- [[!DNL Data Connection]  overzicht ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=nl-NL)
+- [[!DNL Data Connection]  Gebeurtenissen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=nl-NL)
+- [ overzicht van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)

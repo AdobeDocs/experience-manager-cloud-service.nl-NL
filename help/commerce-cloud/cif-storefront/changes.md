@@ -46,7 +46,7 @@ Project beschikbaar in [ de Bewaarplaats van de Bewaarplaats van de Bezit van Cl
 ### Vorige CIF-versies {#previous-versions-venia}
 
 * CIF Classic: via AEM-pakket installeren
-* CIF open-source: Via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF open-source: Via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
 
 ## Productcatalogusgegevens {#product-catalog-data}
 
