@@ -37,7 +37,7 @@ De CIF Add-On wordt geleverd als een archief met verkoopfuncties. Het ZIP-bestan
 >[!TIP]
 >
 >**Nieuw aan AEM as a Cloud Service?**
->>Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 ### Vereiste software {#required-software}
 

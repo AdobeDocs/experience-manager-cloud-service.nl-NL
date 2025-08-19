@@ -68,7 +68,7 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
 1. Navigeer aan de **Pagina van het Huis** van de plaats: [ http://localhost :4502 /editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-1. Tussenvoegsel een nieuwe **Component van het Teaser van het 0} Product in de belangrijkste lay-outcontainer op de pagina.**
+1. Tussenvoegsel een nieuwe **Component van het Teaser van het 0&rbrace; Product in de belangrijkste lay-outcontainer op de pagina.**
 
    ![ Taser van het Product van het Tussenvoegsel ](../assets/customize-cif-components/product-teaser-add-component.png)
 
@@ -347,7 +347,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
        componentGroup="Venia - Commerce"/>
    ```
 
-   De bovenstaande componentdefinitie is voor de Product Teaser Component in uw project. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit bezit is een voorbeeld van het creëren van de component van de Volmacht van de a [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van de HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
+   De bovenstaande componentdefinitie is voor de Product Teaser Component in uw project. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit bezit is een voorbeeld van het creëren van de component van de Volmacht van de a [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van de HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
 
 1. Open het bestand `productteaser.html` . Dit dossier is een exemplaar van het `productteaser.html` dossier van de [ Teaser van het Product van CIF.](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 

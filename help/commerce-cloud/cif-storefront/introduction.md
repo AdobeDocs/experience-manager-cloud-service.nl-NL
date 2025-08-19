@@ -62,7 +62,7 @@ CIF biedt ondersteuning voor gestandaardiseerde integratiepatronen op basis van 
    * Geen toegang tot gefaseerde gegevens
    * Behoefte aan real-time productgegevens en ervaringen
 * Een groeiende digitale volwassenheid leidt tot een behoefte aan ervaringsbeheer
-* 
+* &#x200B;
    * CIF beschikt over mogelijkheden voor het beheer van productervaring die stapsgewijs kunnen worden geïntegreerd zonder extra IT-inspanningen.
 * Gereed voor omnichannel
    * CIF biedt ondersteuning voor verschillende aanraakpunttechnologieën (server-side, hybride, client-side) met patronen, versnellers en kerncomponenten.

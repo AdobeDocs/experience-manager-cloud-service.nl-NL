@@ -69,7 +69,7 @@ Als u op het actiepictogram klikt, wordt dat stuk inhoud geopend in een nieuw br
 
 In de vorige modules, hebt u geleerd hoe te met veelvoudige malplaatjes van de productcatalogus te werken. Meerdere sjablonen zijn een goede manier om verschillende sjablonen te maken, maar zijn vaak niet nodig. Vaak kan dezelfde sjabloon worden gebruikt met plaatsaanduidingen voor afzonderlijke inhoud. CIF ondersteunt plaatsaanduidingen voor inhoudsfragmenten en ervaringsfragmenten.
 
-Laten we beginnen met de tijdelijke aanduiding voor het ervaringsfragment. Open een productsjabloon in de AEM Editor. De belemmering en laat vallen de **component van het Fragment van de Ervaring 0} Commerce op het malplaatje, dan opent de config dialoog.**
+Laten we beginnen met de tijdelijke aanduiding voor het ervaringsfragment. Open een productsjabloon in de AEM Editor. De belemmering en laat vallen de **component van het Fragment van de Ervaring 0&rbrace; Commerce op het malplaatje, dan opent de config dialoog.**
 
 ![ pruimen placeholder ](assets/pem-placeholder.png)
 
@@ -81,7 +81,7 @@ Open het ervaringsfragment dat u in de vorige stap aan een product hebt gekoppel
 
 ![ pem xf ](assets/pem-xf.png)
 
-Nu belemmering en laat vallen de **component van het Fragment van de Inhoud 0} Commerce op het malplaatje en open de config dialoog.**
+Nu belemmering en laat vallen de **component van het Fragment van de Inhoud 0&rbrace; Commerce op het malplaatje en open de config dialoog.**
 
 ![ pem CF dialoog ](assets/pem-dialog-cf.png)
 

@@ -142,7 +142,7 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 
-Voor complexere montages, die veelvoudige de plaatsstructuren gebruiken van AEM die met verschillende handelscatalogi worden gecombineerd zien het [ leerprogramma van de Opstelling van de multi-Opslag van 0} Commerce {.](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+Voor complexere montages, die veelvoudige de plaatsstructuren gebruiken van AEM die met verschillende handelscatalogi worden gecombineerd zien het [ leerprogramma van de Opstelling van de multi-Opslag van 0&rbrace; Commerce &lbrace;.](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
 
 ## Aanvullende bronnen {#additional-resources}
 

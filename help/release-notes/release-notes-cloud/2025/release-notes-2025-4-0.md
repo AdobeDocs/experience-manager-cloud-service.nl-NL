@@ -55,7 +55,7 @@ Als u de lijst met nieuwe gebruikersinterfaces aan de clientzijde verder invult 
 
 Dynamic Media (Scene7) op AEM as a Cloud Service is niet geschikt voor HIPAA en kan niet worden gebruikt in AEM-omgevingen waar uitgebreide beveiliging is ingeschakeld.
 
-Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1} kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
+Vanaf de release van AEM as a Cloud Service van april 2025 voorkomt een technische beperking dat Dynamic Media (Scene7) wordt geconfigureerd in omgevingen met uitgebreide beveiliging. Dientengevolge, is de **Dynamische 1&rbrace; kaart van de Configuratie van Media onder** Hulpmiddelen **>** de Diensten van de Wolk **niet meer zichtbaar in deze milieu&#39;s.**
 
 Bovendien, zouden de klanten die AEM 6.5 gebruiken zich ervan bewust moeten zijn dat de Dynamische stapel van Media (Scene7) niet HIPAA-klaar is.
 
@@ -101,7 +101,7 @@ Met de Assets-weergave kunt u nu snel elke versie van een element selecteren en 
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 #### Adobe Experience Platform (AEP) Integratie met Forms
 
