@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: ecb2638cfa65a0a2a24779723bdb301f9d3f1268
+source-git-commit: 80f1c9548b8b87dc6280e0e95988d84a8376f7ab
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -33,13 +33,13 @@ Als uw zaken het snelste en AI-vriendelijkste winkelcentrum op het Web willen en
 
 #### &#x200B;1. Integratie met Adobe Commerce as a Cloud Service {#acaacs}
 
-Adobe adviseert gebruikend Edge Delivery en [ Adobe Commerce Storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=nl-NL) als uw uitgangspunt. De winkel wordt geleverd met een bouwsteenplaat die vooraf is geïntegreerd met Adobe Commerce-services, API&#39;s en die een groot aantal Commerce-drop-in-componenten biedt om snel een winkel te bouwen.
+Adobe adviseert gebruikend Edge Delivery en [ Adobe Commerce Storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/) als uw uitgangspunt. De winkel wordt geleverd met een bouwsteenplaat die vooraf is geïntegreerd met Adobe Commerce-services, API&#39;s en die een groot aantal Commerce-drop-in-componenten biedt om snel een winkel te bouwen.
 
 Geschikt: typische storefront-ervaring met Adobe Commerce as a Cloud Service
 
 #### &#x200B;2. Integratie met Adobe Commerce Optimizer (voor elke oplossing van derden) {#aco}
 
-Als u uw bestaande handelsoplossing wilt integreren en uw catalogusprestaties verhogen, moet de aanbeveling van Adobe [ Adobe Commerce Optimizer ](https://experienceleague.adobe.com/nl/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) als moderne integratielaag gebruiken. Commerce Optimizer verbetert uw handelsoplossing met de krachtige diensten SaaS voor catalogus en handel. Zoals met Adobe Commerce as a Cloud Service, [ Adobe Commerce Storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=nl-NL) werkt uit-van-de-doos met het.
+Als u uw bestaande handelsoplossing wilt integreren en uw catalogusprestaties verhogen, moet de aanbeveling van Adobe [ Adobe Commerce Optimizer ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) als moderne integratielaag gebruiken. Commerce Optimizer verbetert uw handelsoplossing met de krachtige diensten SaaS voor catalogus en handel. Zoals met Adobe Commerce as a Cloud Service, [ Adobe Commerce Storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/) werkt uit-van-de-doos met het.
 
 Integraties met commerciële handelsoplossingen zoals Salesforce Commerce zijn beschikbaar. Neem contact op met je Adobe-vertegenwoordiger.
 
@@ -53,12 +53,12 @@ Goed passend: lage waarde uit de Edge Deliery storefront
 
 ### Gebruik uw eigen winkel (Headless AEM-integratie) {#own-storefront}
 
-U hebt een bestaande winkel (bijvoorbeeld gebouwd met React JS) en wilt Adobe Experience Manager gebruiken voor inhoudsbeheer en levering (Content Fragments), activa, plus in-context het uitgeven (Universele Redacteur). Uw uitgangspunt voor een integratie is [ Inleiding aan Adobe Experience Manager als Hoofdloze CMS ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/introduction) en [ toe:voegen-op CIF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). Met de invoegtoepassing CIF kunt u uw productgegevens naadloos integreren in AEM (zoek-, blader- en zoekproducten in de AEM-interface) waarmee u specifieke ervaringen op handelsgebied kunt opbouwen.
+U hebt een bestaande winkel (bijvoorbeeld gebouwd met React JS) en wilt Adobe Experience Manager gebruiken voor inhoudsbeheer en levering (Content Fragments), activa, plus in-context het uitgeven (Universele Redacteur). Uw uitgangspunt voor een integratie is [ Inleiding aan Adobe Experience Manager als Hoofdloze CMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) en [ toe:voegen-op CIF ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). Met de invoegtoepassing CIF kunt u uw productgegevens naadloos integreren in AEM (zoek-, blader- en zoekproducten in de AEM-interface) waarmee u specifieke ervaringen op handelsgebied kunt opbouwen.
 
 ### AEM CIF storefront {#cif}
 
-Adobe adviseert en referentiearchitectuur is Edge Delivery Services te gebruiken. De CIF storefront met de AEM CIF Core Components bevindt zich nu in de onderhoudsmodus en mag niet worden gebruikt in nieuwe projecten. Voor verwijzing, gelieve te zien de [ documentatie van CIF.](/help/commerce-cloud/cif-introduction.md)
+Adobe adviseert en referentiearchitectuur is Edge Delivery Services te gebruiken. De CIF storefront met de AEM CIF Core Components bevindt zich nu in de onderhoudsmodus en mag niet worden gebruikt in nieuwe projecten. Voor verwijzing, gelieve te zien de [ documentatie van CIF.](/help/commerce-cloud/cif-storefront/introduction.md)
 
 >[!NOTE]
 >
->Bestaande klanten die de nieuwe AEM-/Commerce-functionaliteit willen benutten, moeten hun website naar Edge Delivery verplaatsen. Een gangbaar patroon is om te beginnen door alleen een subset van pagina&#39;s naar Edge Delivery te verplaatsen en Edge Deliery- en CIF-pagina&#39;s naast elkaar uit te voeren. Het is ook mogelijk om de componenten van AEM CIF met de nieuwe [ drop-in componenten van Commerce ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=nl-NL) aan hefboomwerking nieuwe mogelijkheden van Commerce te vervangen.
+>Bestaande klanten die de nieuwe AEM-/Commerce-functionaliteit willen benutten, moeten hun website naar Edge Delivery verplaatsen. Een gangbaar patroon is om te beginnen door alleen een subset van pagina&#39;s naar Edge Delivery te verplaatsen en Edge Deliery- en CIF-pagina&#39;s naast elkaar uit te voeren. Het is ook mogelijk om de componenten van AEM CIF met de nieuwe [ drop-in componenten van Commerce ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) aan hefboomwerking nieuwe mogelijkheden van Commerce te vervangen.

@@ -4,7 +4,7 @@ description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) as a
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Met de GraphQL API in AEM kunt u inhoudsfragmenten efficiënt aan JavaScript-cli
 >
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [ AEM Commerce verbruikt gegevens van een platform van Commerce via GraphQL ](/help/commerce-cloud/integrating/magento.md).
+>* [ AEM Commerce verbruikt gegevens van een platform van Commerce via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen.
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Voor Inhoudsfragmenten, zijn de schema&#39;s van GraphQL (structuur en types) ge
 
 >[!CAUTION]
 >
->Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **&#x200B;**) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
+>Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die ****) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
 >
 >Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden uitgelekt; dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
 
@@ -375,7 +375,7 @@ U kunt alle GraphQL-typen voor metagegevens weergeven als u het schema Gegeneree
 >[!NOTE]
 >
 >**Verschil tussen normale en seriemeta-gegevens**
->&#x200B;>Houd er rekening mee dat `StringMetadata` en `StringArrayMetadata` beide verwijzen naar wat in de opslagplaats is opgeslagen, en niet naar de manier waarop u ze ophaalt.
+>>Houd er rekening mee dat `StringMetadata` en `StringArrayMetadata` beide verwijzen naar wat in de opslagplaats is opgeslagen, en niet naar de manier waarop u ze ophaalt.
 >
 >Als u bijvoorbeeld het veld `stringMetadata` aanroept, ontvangt u een array van alle metagegevens die als `String` in de opslagplaats zijn opgeslagen. Als u `stringArrayMetadata` aanroept, ontvangt u een array van alle metagegevens die als `String[]` in de opslagplaats zijn opgeslagen.
 
@@ -743,7 +743,7 @@ query {
 
 Met webgeoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken:
 
-* Vraag een URL aan een element DAM beeld (die door de Verwijzing van de Inhoud van a **&#x200B;**&#x200B;wordt van verwijzingen voorzien)
+* Vraag een URL aan een element DAM beeld (die door de Verwijzing van de Inhoud van a **** wordt van verwijzingen voorzien)
 
 * Geef parameters door met de query, zodat er automatisch een specifieke uitvoering van de afbeelding wordt gegenereerd en geretourneerd
 
@@ -755,7 +755,7 @@ Met webgeoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken
 
 Met AEM kunt u:
 
-* Geef [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=nl-NL) in de vragen van GraphQL door.
+* Geef [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) in de vragen van GraphQL door.
 
 Dit betekent dat de opdrachten worden toegepast tijdens de uitvoering van de query, op dezelfde manier als URL-parameters bij GET-aanvragen voor die afbeeldingen.
 
@@ -947,7 +947,7 @@ De volgende beperkingen bestaan:
 
 ## Dynamische levering van media-elementen via URL in GraphQL-query&#39;s{#dynamic-media-asset-delivery-by-url}
 
-GraphQL voor de Fragmenten van de Inhoud van AEM staat u toe om een URL aan een activa van AEM te verzoeken Dynamische Media (Scene7) (die door de Verwijzing van de Inhoud van a **&#x200B;**&#x200B;worden van verwijzingen voorzien).
+GraphQL voor de Fragmenten van de Inhoud van AEM staat u toe om een URL aan een activa van AEM te verzoeken Dynamische Media (Scene7) (die door de Verwijzing van de Inhoud van a **** worden van verwijzingen voorzien).
 
 Met de oplossing in GraphQL kunt u:
 
@@ -1379,4 +1379,4 @@ AEM is van plan om in de AEM GraphQL API te investeren.*&quot;
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met de Zwaartepunt van AEM en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een headless scenario van CMS.
+Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met de Zwaartepunt van AEM en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een headless scenario van CMS.
