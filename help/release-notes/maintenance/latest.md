@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
+source-git-commit: 90e92cfb15a6dfe5a8a474996f52c8a0c689f5e6
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -16,138 +16,71 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 21772 {#21772}
+## Release 21994 {#21994}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21772 samengevat, die op 6 augustus 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21706.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21994 samengevat, die op 19 augustus 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21772.
 
-De activering van de 2025.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Nieuwe functies  {#new-features-21772}
+### Nieuwe functies  {#new-features-21994}
 
-* SITES-30049: Toegevoegd nieuw eindpunt voor het terugwinnen van de taalexemplaren van een Fragment van de Inhoud door zijn UUID.
+Geen.
 
-### Verbeteringen {#enhancements-21772}
+### Verbeteringen {#enhancements-21994}
 
-* CQ-4358722: Oplossing voor lokalisatieproblemen die zijn veroorzaakt door verschillende landinstellingscodes tussen Java 11 en Java 17.
-* FORMS-19624: Toegelaten Interactieve Mededelingen (IC). Het machtigt organisaties om gepersonaliseerde, op bestelling mededeling-zulke als verklaringen, facturen, en correspondentie-door gestructureerde malplaatjes met dynamische gegevens te combineren te leveren. Met eigenschappen zoals Web-based malplaatjeontwerp, herbruikbare inhoudsfragmenten, regel-gedreven variaties, en naadloze gegevensintegratie, laat IC verenigbare en scalable klantenmededelingen over kanalen toe.
-* FORMS-19587, FORMS-17107, FORMS-19591, FORMS-19582, FORMS-20129, FORMS-2002, FORMS-19593, FORMS-20655, FORMS-1 9583, FORMS-18024, FORMS-19581: De volgende verbeteringen zijn aangebracht in de Adaptive Forms Rule Editor:
-   * De methode `validate` in de functielijst kan nu deelvensters, velden en formulieren valideren.
-   * Verbeterde parsering van aangepaste functies aan de clientzijde ter ondersteuning van ES10+-functies en statische import.
-   * Toegevoegd uit-van-de-doos (OOTB) &quot;Download Document van Verslag (DoR)&quot;knoop in de regelredacteur.
-   * Toegevoegde ondersteuning voor dynamische variabelen binnen regels.
-   * Toegelaten verwezenlijking van regels die op douanegebeurtenissen worden gebaseerd.
-   * Regels voor herhaalbare deelvensters worden nu uitgevoerd in de juiste context en niet alleen in de laatste deelvensterinstantie.
-   * De regels kunnen nu worden teweeggebracht gebaseerd op vraagparameters, parameters UTM, en browser parameters.
-   * Toegevoegde ondersteuning voor formulierspecifieke aangepaste functiescripts in EDS (Experience Data Store).
-   * Extra ondersteuning voor het gebruik van `EVENT_PAYLOAD` in de handeling &quot;Navigeren naar&quot; in de succeshandler van de regeleditor.
-   * Ondersteunde functieaanroepen binnen invoerparameters in de regeleditor en de verzekerde regels worden niet opgeslagen als vereiste parameters ontbreken in de functieaanroep.
-   * Gemarkeerde gebroken regels in de regelredacteur UI.
-* FORMS-18450: reCAPTCHA V2 (inclusief onzichtbare reCAPTCHA) is nu gemakkelijker in te stellen en te gebruiken in Adaptive Forms. De configuratie wordt nu op één locatie beheerd, waardoor het eenvoudiger wordt voor u om spambeveiliging in uw formulieren in te schakelen.
-* FORMS-18385: extra ondersteuning voor AFP-generatie van XDP en gegevens in AEM Forms via de Output-service.
-* FORMS-17789: voegde een uit-van-de-doos knoop in de regelredacteur toe om Document van Verslag (DoR) te downloaden.
-* FORMS-20313, FORMS-2896: extra ondersteuning voor de eigenschap `dorExclude` om specifieke functies in kerncomponentformulieren uit te schakelen.
-* FORMS-20262: Ongeldige bestandsbijlagen (0 byte) verwerkt op de client.
-* FORMS-18347: verbeterde logboekregistratie voor de Adaptieve Forms-editor voor ontbrekende proxycomponenten van formuliercontainers.
-* FORMS-16205: Uitgesloten componenten van Document of Record (DoR) in kerncomponentformulieren.
-* FORMS-10836: Gewijzigde oriëntatie van eigenschappen van stramienpagina&#39;s in Document of Record (DoR) voor talen die van rechts naar links worden geschreven.
-* SITES-33025: Open nieuwe CF-editor via ID in plaats van pad.
-* SITES-32741: Trigger-update van verwijzingen naar pagina&#39;s met inhoudsfragmenten asynchroon.
-* SITES-32087: GraphQL: Voeg ondersteuning voor `_ignoreCase` toe op StringArray.
-* SITES-12211: Verbeterde prestaties in sjablooneditor
-* SITES-32861: Prestatieverbetering voor het maken van live kopieën via gehakte verwerking.
-* SITES-21383: Prestaties optimaliseren voor het starten van het verwijderingsproces van Content Fragment.
-* SITES-31165: Prestatieverbetering door rollout-bewerkingen op te splitsen in hanteerbare blokken.
-* SITES-21353: Verbeterde zoekprestaties voor het starten van inhoudsfragmenten met behulp van database-indexering.
-* SITES-30495: Verbetering voor ondersteuning van op UUID gebaseerde fragmentverwijzingen in het starten van inhoudsfragmenten.
-* SITES-32151: API-uitbreiding die functionaliteit van containereigenschappen toegankelijk maakt.
-* SITES-26849: Pas achterverwijzingen aan wanneer een Variatie van het Fragment van de Inhoud wordt bewogen of geschrapt.
-* SITES-31846: Voeg optie toe aan kopiëren/plakken van hoofdfragment en verwijzingen in dezelfde map voor kopieerboombewerking.
-* SITES-30241: Pas verwijzingen aan die zich in een lang tekstveld bevinden wanneer u een fragment verplaatst, hernoemt of verwijdert.
-* SITES-32684: Verbeter het mechanisme voor het synchroniseren van lusjeveranderingen in schema UI.
-* SITES-33308: Voeg opnieuw probeert mechanisme voor het synchroniseren van veranderingen in het Schema UI toe wanneer het uitgeven van modellen.
-* SITES-32247: Ontbrekende uitlijning van dialoogvenster Personalization en UI in de component &quot;Tekst en Personalization&quot;.
-* SITES-32261: ervaar fragment i18n niet toegepast op veld.
-* SITES-32666: Sjabloonvoorspelling bevat `\n` waardoor het opzoeken van HTML mislukt.
-* SITES-32674: Aanbevolen afbeeldingsveldafbeeldingskiezer werkt ondanks `cq:showOnCreate` niet voor de wizard Pagina maken.
-* SITES-32014: Edge Delivery met Universal Editor: voeg automatische configuratie van CORS-beleid toe voor localhost, aem.page en aem.live
-* SITES-26532: Edge Delivery met Universal Editor: Voeg ondersteuning voor gelokaliseerde URL&#39;s toe (vroege toegang).
-* SITES-30887: Add Content Fragment Uids stored in workflow metadata.
+* GRANITE-53488: Verbeter deleteconf.json eindpuntfout behandeling.
+* GRANITE-59968: Allow om REPLICATION_FORCE_READY_MILLIES te vormen.
+* GRANITE-60183: Apache commons-fileupload 1.6.0.
+* GRANITE-60306: Apache commons-lang tot 3.18.0.
+* GRANITE-60637: Apache commons-codec naar 1.19.0.
+* GRANITE-60645: Apache commons-ui 2.20.0.
+* GRANITE-60663: Apache commons-text 1.14.0.
+* GRANITE-60714: Mongo Java Driver 5.2.
+* GRANITE-60778: FileVault 4.0.0.
+* GRANITE-60823: Jackrabbit 2.2.2.
+* GRANITE-60967: Creeer metriek voor het volgen van clientlib compilatietijd.
+* SKYOPS-105469: Steun voor acsredirectMgr in autofix api toevoegen.
+* SKYOPS-113929: Voeg metriek toe voor replicatieluchtcontrole.
+* SKYOPS-84821: motor voor verkoop 2.16.6.
+* SKYOPS-114322: Bump up closure compiler language in level to `ECMASCRIPT_2018`.
 
-### Opgeloste problemen {#fixed-issues-21772}
+### Opgeloste problemen {#fixed-issues-21994}
 
-* CQ-4360190: Vast `UnsupportedOperationException` dat optreedt wanneer wordt geprobeerd om een keySet toe te voegen die de bewerking niet ondersteunt.
-* CQ-4360421: Oplossing voor een probleem met de codering van Microsoft Translator-abonnementssleutels om de beveiliging en compatibiliteit te verbeteren.
-* FORMS-20980: Problemen met de toegankelijkheid van het toetsenbord zijn opgelost in de Datumkiezer met aangepaste weergave-indeling in Adaptive Forms.
-* FORMS-20498: Voegt een controle op ongeldige wijzeruitzonderingen in OdataResponse toe om runtime fouten te verhinderen.
-* FORMS-20947: Oplossing voor meerdere toegankelijkheidsproblemen, waaronder schending van schermlezers en problemen met afkapping/overlapping.
-* FORMS-21030, FORMS-20630: Opgeloste problemen met vervolgkeuzevelden geconfigureerd voor meerdere selecties in adaptieve formulieren. Het gegenereerde PDF bevat nu correct alle geselecteerde waarden.
-* FORMS-19579: Oplossing voor het probleem waarbij de serviceregel Invoke niet automatisch corrigeerde bij het opnieuw opslaan.
-* FORMS-20734: Corrigeer de duplicatie van handtekeningvelden in PDF-documenten die zijn gegenereerd door de Output-service voor op XFAF gebaseerde PDF-invoersjablonen.
-* FORMS-20934: Oplossing voor het vervolgkeuzemenu Kenmerk automatisch vullen in de gebruikersinterface van AEM Forms voor het verwijderen van dubbele vermeldingen en het opnemen van alle standaard HTML-tokens voor automatisch aanvullen.
-* FORMS-20700: Los het flikkeren van dropdown help-text bij aanvankelijke lading in AEM Forms op.
-* FORMS-20307: Probleem verholpen waarbij formulieren die op een sitepagina zijn ingesloten, niet werden vertaald met landinstellingen van 4 tekens.
-* FORMS-20493: Het probleem waarbij formulieren automatisch werden vernieuwd wanneer gegevens werden opgehaald, waardoor de gebruiker ongemak kreeg, is opgelost.
-* FORMS-18455: Verbeterde Adaptive Forms Editor voor Core Components om punten voor gebruikte gegevensobjecten weer te geven in de gegevensbronstructuur.
-* FORMS-19373: Voorkwam replicatiefouten voor publicatiemilieu&#39;s die geen gevormde replicatiemiddelen hebben.
-* FORMS-20042: Oplossing voor de gebroken eigenschappenweergave die is veroorzaakt door de Apache Sling GET Servlet Configuration met HTML config ingeschakeld.
-* FORMS-20036, FORMS-19978: Oplossing voor compatibiliteits- en validatieproblemen met PDF/A-1b.
-* FORMS-19166: Verplaatst pagedatasource.jsp aan servlet om de helderheid van het spoorspoor van de foutenstapel te verbeteren en meer gidsen en registreren toe te voegen.
-* FORMS-16466: Problemen verholpen met herhaalbare deelvensters die niet correct worden gevuld in AEM Forms.
-* FORMS-19629: Opgeloste problemen met JSON-schemapparsering voor klanten die ongeldige resultaten opleveren.
-* LC-3923083: Opgeloste fout &quot;path object not tagged&quot; voor gegrensde items in XDP-sjablonen.
-* SITES-33177: Edge Delivery met Universal Editor: repareer verbroken sectiestijlen wanneer deze worden opgeslagen als door komma&#39;s gescheiden tekenreeksen.
-* SITES-33262: Edge Delivery met Universal Editor: repareer blokken zonder eigenschap name om pagina&#39;s te genereren en te publiceren.
-* SITES-33309: Edge Delivery met Universal Editor: repareer `IllegalArgumentException` bij het schrijven naar een spreadsheet met een slash in kolommen.
-* SITES-33408: Edge Delivery met Universal Editor: fix-werkbladen worden niet weergegeven als gewijzigd nadat u wijzigingen hebt aangebracht.
-* SITES-31992: GraphQL: Fix sporadical errors in model scan during bundles opstarten.
-* SITES-29967: GraphiQL: Lange vraagnamen zijn weggesneden.
-* SITES-26266: Inhoudsreferenties die niet beginnen met `/` worden niet geretourneerd door BE response (Java API).
-* SITES-17874: GraphQL persisted questions: Fix encoding for content-type application/graphql-response+json.
-* SITES-24506: Schermlezers zijn op de hoogte van zoekresultaten.
-* SITES-25268: Schermlezerverbeteringen voor annotaties.
-* SITES-32366: Resultaten van spellingcontrole verborgen achter RTE-dialoogvenster.
-* SITES-32829: Verbeteringen van de MediaQuery-emulator om mediaqueryniveau 3 en 4 te parseren.
-* SITES-32278: Velden labelen gecorrigeerd voor het correct gebruiken van veldlabel.
-* SITES-25244: Horizontale balk wordt niet meer weergegeven in modale afbeeldingen.
-* SITES-33395: Functionaliteit van de uitrolknop voor synchronisatie van livekopieën van inhoudsfragment is opgelost.
-* SITES-33147: Vaste service binding kwestie die de functionaliteit van de live relatie beïnvloedt.
-* SITES-33528: probleem met behoud van tijdstempel opgelost tijdens promotieacties.
-* SITES-33014: Oplossing voor het genereren van buitensporige waarschuwingslogbestanden van LaunchesAdapterFactory.
-* SITES-32305: Functionaliteit voor regeleinden van overerving van livekopieën na wijzigingen in de layout is opgelost.
-* SITES-32268: Schakel URL-codering uit voor zoeken naar inhoudsfragmenten.
-* SITES-32772: Eigenschap vergrendeld in de velden van variaties was altijd false wanneer de verbeteringen werden ingeschakeld vanuit SITES-31455 - gerelateerd aan het verenigen van de etag-waarde.
-* SITES-32696: Het probleem is opgelost dat een veld voor Live kopie van inhoudsfragment met verbroken overerving niet meer kon worden bewerkt.
-* SITES-31712: Trage query&#39;s van de Omni-search op prod Author.
-* SITES-33039: Pagina-gebeurtenissen worden niet correct geactiveerd.
-* SITES-31192: Ervaar Fragments die de Geschiedenis van de Versie na wordt bewogen verliezen.
-* SITES-33529: Fout terwijl het verbinden van de malplaatjes van de Campagne ACS met de pagina&#39;s van AEM.
-* SITES-33678: Add Toggle for SITES-33529.
-* SITES-33468: AEMaaCS kan geen verbinding maken met ACS.
+* GRANITE-60167: De indexupdate van Async in Skyline steunt geen Csv- gegevens.
+* GRANITE-60532: Wijziging van waardeschakelingen wordt niet opgenomen.
+* SITES-34277: Oplossing voor een blokkeringsfout in vertaalworkflows voor pagina&#39;s.
+* SKYOPS-105471: Steun dambaseredirect moeilijke situatie voor ook autofix.
+* SKYOPS-109532: het toevoegen van eigenschap verwijderde verbinding als commentaar achter knevel.
 
-### Gewijzigde functionaliteit {#altered-functionality-21772}
+#### AEM Guides {#guides-21994}
 
-* SITES-26344: Unify bevestiging van `fragmentId`/ `modelId` tussen eindpunten - deze ids wordt nu bevestigd en een 400 statuscode is teruggekeerd als zij ongeldig zijn.
-* SITES-29598: Verwijzingen naar inhoudsfragmenten die zijn toegevoegd in fragmentverwijzingsvelden, valideren bij het bijwerken van een inhoudsfragmentmodel.
+* GUIDES-26688: CSS- en paginalay-outbestanden in native PDF-sjablonen vertonen een inconsequent gedrag bij het vergrendelen van bestanden, waardoor bewerkingen mogelijk zijn, zelfs wanneer de bestanden zijn vergrendeld.
+* GUIDEN-30900: Het kopiëren van een map met een groot aantal elementen uit de gebruikersinterface van Assets leidt tot een API-time-out. De verrichting blijft in het achterste eind lopen en voltooit na wat tijd, maar geen succes of mislukkingsbericht, of bericht wordt getoond in UI.
+* GUIDEN-29090: In de Eigen output van PDF, verschijnt de Lijst van Index (LOI) in een niet alfabetische orde en de genestelde indextermijnen worden niet behoorlijk gegroepeerd, die de index moeilijk maken te navigeren.
+* HULPLIJNEN-11227: Het kopiëren van een kaart DITA van Assets UI kopieert ook zijn in bijlage Basislijn aan de nieuwe kaart.
+* GUIDEN-31506: De homepage gaat leeg wanneer één van de dossiers die in Recente dossiers widget worden vermeld op een malplaatje wordt gebaseerd de waarvan bronmalplaatje geen duimnagel omvat.
 
-### Bekende problemen {#known-issues-21772}
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-* SITES-31791: Content Fragments GraphQL - Query mislukt met &quot;Maximum aantal velden overschreden&quot;. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-27231).
+### Bekende problemen {#known-issues-21994}
 
-### Verouderde functies en API&#39;s {#deprecated-21772}
+* Apache HTTPD versie 2.4.65 introduceert wijzigingen die van invloed kunnen zijn op bepaalde configuraties vanwege nieuwe beperkingen die als onderdeel van beveiligingsoplossingen zijn geïmplementeerd. Deze oplossingen verhelpen kwetsbaarheden door ervoor te zorgen dat instructies zoals `RequestHeader set` , `edit` en `edit_r` die worden gebruikt om de header van het inhoudstype te wijzigen, nu correct worden beperkt tot aanvraagheaders. Door deze wijziging worden ongewenste wijzigingen in de reactiekoppen voorkomen, met name voor statische inhoud.
+
+### Verouderde functies en API&#39;s {#deprecated-21994}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-21772}
+### Beveiligingsproblemen {#security-21994}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 35 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt twee geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-21772}
+### Ingesloten technologieën {#embedded-tech-21994}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 80,0 | [ Oak API 1.80.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
+| AEM Oak | 1 84,0 | [ Oak API 1.84.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
 | AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2,4,63 | [ Apache Httpd 2.4.63 ](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
+| Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM-kerncomponenten | 2 29,0 | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
