@@ -105,7 +105,7 @@ Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot
 
    Als de app is geïnstalleerd en het geheime bestand in de opslagplaats aanwezig is, gaat u verder met de stap.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, klik** Valideren **.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, klik** Valideren **.**
 
 De app kan worden geïnstalleerd en een geheim bestand kan in elke willekeurige volgorde worden gemaakt. Beide stappen moeten echter zijn voltooid voordat u de validatie kunt uitvoeren.
 
@@ -113,7 +113,7 @@ Tot de validatie wordt de repository weergegeven met een rood pictogram dat aang
 
 ![ Unvalidate repo ](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-De **kolom van het Type** {in de lijst op de **pagina van Bewaarplaatsen** identificeert Adobe-Verstrekte bewaarplaatsen (**Adobe**) en uw eigen privé bewaarplaatsen (**GitHub**).
+De **kolom van het Type** &lbrace;in de lijst op de **pagina van Bewaarplaatsen** identificeert Adobe-Verstrekte bewaarplaatsen (**Adobe**) en uw eigen privé bewaarplaatsen (**GitHub**).
 
 Als u aan de bewaarplaats moet terugkeren later om de bevestiging, op de **pagina van Bewaarplaatsen** te voltooien, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de rij die de bewaarplaats vertegenwoordigt GitHub u enkel toevoegde. In de drop-down lijst, uitgezochte **Bevestiging van de Eigendom**.
 
