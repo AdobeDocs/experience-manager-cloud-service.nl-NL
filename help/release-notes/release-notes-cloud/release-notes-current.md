@@ -234,7 +234,7 @@ OSGi-eigenschappen:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
+**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere &#x200B;** runtime Java 21**.
 
 Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
 
