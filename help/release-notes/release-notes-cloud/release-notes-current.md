@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2350'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -88,7 +88,7 @@ Content Hub omvat nu a **tonen Al** optie binnen filters, toestaand gebruikers o
 
 Geniet van geautomatiseerde upload van nieuwe bestanden en mappen, verbeterde bestandsbewerkingen, slimmere detectie van middelen en naadloze integratie met AEM—waardoor contentbeheer sneller, duidelijker en intuïtiever wordt.
 
-Voor de volledige lijst van eigenschappen, zie {de Nota&#39;s van de Versie van de App van 0} Desktop [.](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/release-notes)
+Voor de volledige lijst van eigenschappen, zie {de Nota&#39;s van de Versie van de App van 0} Desktop [.](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)
 
 ### Nieuwe functies in dynamische media met OpenAPI-mogelijkheden {#new-features-dynamic-media-with-openapi}
 
@@ -105,32 +105,44 @@ Alle OpenAPI-afbeeldingsaanvragen maken nu volledig gebruik van Smart Imaging me
 
 ### Nieuwe functies in AEM Forms {#forms-new-features}
 
-**Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm**
+* **Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm**
 
-De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) steunt nu de verwezenlijking van zowel Aanpassings Forms als herbruikbare Fragments van de Vorm. Auteurs kunnen visueel formulieren maken, verzendacties configureren en reCAPTCHA-validatie toevoegen, allemaal in een vereenvoudigde WYSIWYG-ontwerpomgeving. Deze mogelijkheid versnelt het maken van formulieren, verbetert de consistentie en verbetert de bescherming tegen spam en geautomatiseerd misbruik.
+  De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) steunt nu de verwezenlijking van zowel Aanpassings Forms als herbruikbare Fragments van de Vorm. Auteurs kunnen visueel formulieren maken, verzendacties configureren en reCAPTCHA-validatie toevoegen, allemaal in een vereenvoudigde WYSIWYG-ontwerpomgeving. Deze mogelijkheid versnelt het maken van formulieren, verbetert de consistentie en verbetert de bescherming tegen spam en geautomatiseerd misbruik.
 
-![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**de Verzenddienst van Forms voor Edge Delivery Services Forms**
+* **de Verzenddienst van Forms voor Edge Delivery Services Forms**
 
-Zie [ de Dienst van de Verzending van Forms ](/help/forms/forms-submission-service.md). kunt u gegevens van Aangepaste formulierverzendingen naadloos opslaan in populaire spreadsheetplatforms zoals Google Sheets, Microsoft OneDrive of SharePoint. Deze integratie stroomlijnt het gegevensbeheer door de directe verzending van formuliergegevens naar het door u gekozen werkblad mogelijk te maken, handmatige gegevensoverdracht te voorkomen en fouten te beperken.
+  [ de Dienst van de Verzending van Forms ](/help/forms/forms-submission-service.md) staat u toe om gegevens van de AanpassingsVerzending van de Vorm in populaire spreadsheetplatforms zoals Google Sheets, Microsoft OneDrive, of SharePoint naadloos op te slaan. Deze integratie stroomlijnt het gegevensbeheer door de directe verzending van formuliergegevens naar het door u gekozen werkblad mogelijk te maken, handmatige gegevensoverdracht te voorkomen en fouten te beperken.Belangrijkste voordelen zijn:
 
-Belangrijkste voordelen zijn:
+   * **Directe integratie:** vorm uw vormen om gegevens aan een gespecificeerde spreadsheet direct voor te leggen.
+   * **de gegevenstoewijzing van de Douane:** kaart vormgebieden aan overeenkomstige spreadsheetkolommen voor georganiseerde opslag.
+   * **controle van de Toegang:** hefboomwerking bestaande spreadsheettoestemmingen om te beheren wie tot voorgelegde gegevens kan toegang hebben of wijzigen.
 
-* **Directe integratie:** vorm uw vormen om gegevens aan een gespecificeerde spreadsheet direct voor te leggen.
-* **de gegevenstoewijzing van de Douane:** kaart vormgebieden aan overeenkomstige spreadsheetkolommen voor georganiseerde opslag.
-* **controle van de Toegang:** hefboomwerking bestaande spreadsheettoestemmingen om te beheren wie tot voorgelegde gegevens kan toegang hebben of wijzigen.
+* **produceer en synchroniseer AFP-uitvoeringen van Adaptieve Forms**
 
-**produceer en synchroniseer AFP-uitvoeringen van Adaptieve Forms**
+  De [ API van de Synchronisatie van de Output van AFP ](/help/forms/document-generation-afp-api.md) laat beheerders en gebruikers toe om AFP (Geavanceerde Presentatie van de Functie) output van Adaptieve Forms te produceren en de output met externe systemen of opslagplaatsen te synchroniseren. AFP is een krachtige documentindeling die is geoptimaliseerd voor afdrukken en die vaak wordt gebruikt in grootschalige bedrijfsomgevingen.
 
-De [ API van de Synchronisatie van de Output van AFP ](/help/forms/document-generation-afp-api.md) laat beheerders en gebruikers toe om AFP (Geavanceerde Presentatie van de Functie) output van Adaptieve Forms te produceren en de output met externe systemen of opslagplaatsen te synchroniseren. AFP is een krachtige documentindeling die is geoptimaliseerd voor afdrukken en die vaak wordt gebruikt in grootschalige bedrijfsomgevingen.
+* **auto-Toewijzing Steun voor de Adaptieve Fragmenten van de Vorm**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  De adaptieve Forms steunt nu [ automatische afbeelding van de Adaptieve fragmenten van de Vorm ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). Met deze verbetering worden overeenkomende fragmenten automatisch ingevoegd wanneer schemaobjecten worden uitgelijnd met een gedefinieerde fragmentstructuur. Het vereenvoudigt het maken van formulieren, verbetert de herbruikbaarheid van fragmenten en zorgt voor consistentie tussen gegevensgeïntegreerde formulieren.
+
+* **Titel van de Vorm van de Douane in Document van Verslag**
+
+  De auteurs kunnen a [ titel van de douanevorm in het Document van Verslag ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) nu bepalen door de Titel van de Vorm van de Douane uit te geven. De aangepaste titel wordt weergegeven in de PDF-koptekst, de eigenschappen van het PDF-document en als de titel van de beginweergave wanneer de PDF wordt geopend, zodat u deze duidelijk kunt herkennen en een consistente branding hebt.
+
+* **Verbeterde Error die voor Beperkte Types van Dossier** behandelt
+
+  [ de behandeling van de Fout voor beperkte dossiertypes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wordt nu gesteund, die niet gestaafde dossieruploads blokkeert. Wanneer gebruikers proberen een bestand te verzenden door het type te wijzigen in een niet-ondersteunde indeling, wordt tijdens het verzenden een fout gegenereerd.
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ De [ API van de Synchronisatie van de Output van AFP ](/help/forms/document-gene
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### Nieuwe functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-Het AEM Forms-programma voor vroege toegang biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan te helpen vormgeven.
-
-In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ OSGi-eigenschappen:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere &#x200B;** runtime Java 21**.
+**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
 
 Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
 
@@ -312,7 +322,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -332,4 +342,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
