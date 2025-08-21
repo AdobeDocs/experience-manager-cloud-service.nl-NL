@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 0%
 
 ---
-
 
 # Forms Experience Builder - Snelle bibliotheek
 
@@ -141,7 +140,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **wanneer te gebruiken:** wanneer u nieuwe vormen moet creëren of bestaande degenen wijzigen.
 
-**hoe te gebruiken:** kies één van twee benaderingen: creeer van Scratch of de Invoer &amp; zet (zie [ Begonnen Gids ](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)) om.
+**hoe te gebruiken:** kies één van twee benaderingen: creeer van Scratch of de Invoer &amp; zet (zie [ Begonnen Gids ](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)) om.
 
 **Vragen van het Voorbeeld - Eenvoudige Making van de Vorm:**
 
@@ -518,7 +517,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **wanneer te gebruiken:** wanneer u bestaande vormen, documenten, of ontwerpen hebt om in moderne vormen van AEM om te zetten.
 
-**hoe te gebruiken:** upload uw brondossier en beschrijf de omzettingsvereisten (zie [ Gids van de Invoer ](forms-ai-assistant-getting-started.md#2-import-and-convert)).
+**hoe te gebruiken:** upload uw brondossier en beschrijf de omzettingsvereisten (zie [ Gids van de Invoer ](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
 
 **Vraag van het Voorbeeld - de Omzetting van de Vorm van PDF:**
 
@@ -1059,4 +1058,4 @@ Gebruik de syntaxis `@fieldName` om te verwijzen naar bestaande velden in uw vra
 
 Voor uitvoerige beste praktijken en bevestigingsrichtlijnen, zie de [ Begonnen Gids van de Bouwer van de Ervaring van Forms ](forms-ai-assistant-getting-started.md#best-practices).
 
-*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).*
+*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).*

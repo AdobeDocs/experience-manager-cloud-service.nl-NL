@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met Forms Experience Builder
 
@@ -483,4 +482,4 @@ De Forms Experience Builder kan u ook leren over AEM Forms-functies:
 
 **nog hulp nodig?** Typ `/help` gevolgd door uw specifieke vraag of neem contact op met de systeembeheerder.
 
-Voor extra steun, verwijs naar de belangrijkste [ Snelle Bibliotheek van de Bouwer van de Ervaring van Forms ](ai-assistant-prompt-library.md) of contacteer uw systeembeheerder voor technische bijstand.
+Voor extra steun, verwijs naar de belangrijkste [ Snelle Bibliotheek van de Bouwer van de Ervaring van Forms ](/help/edge/docs/forms/ai-assistant-prompt-library.md) of contacteer uw systeembeheerder voor technische bijstand.
