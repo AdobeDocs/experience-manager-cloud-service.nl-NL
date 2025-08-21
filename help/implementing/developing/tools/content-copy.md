@@ -4,9 +4,9 @@ description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruike
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -133,6 +133,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
       * Productie
       * Staging
       * Ontwikkeling/RDE
+   * Standaard is Kopie van inhoud voor meerdere programma&#39;s uitgeschakeld. Nochtans, op klantenverzoek, kan het worden toegelaten, die een extra **invoergebied van het Programma van de Bestemming** {beschikbaar zal maken.
 
 1. Indien nodig, kunt u ook verkiezen om **de Lijsten van het Toegangsbeheer** in uw exemplaarproces te omvatten.
 
@@ -193,7 +194,6 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 
 * Inhoud kan niet van een lagere omgeving naar een hogere omgeving worden gekopieerd.
 * Inhoud kan alleen van en naar ontwerpservices worden gekopieerd.
-* Kopiëren van inhoud naar andere programma&#39;s is niet mogelijk.
 * Het uitvoeren van gelijktijdige bewerkingen voor het kopiëren van inhoud in dezelfde omgeving is niet mogelijk.
 * Per inhoudenset kunnen maximaal 50 paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
 * Gebruik het gereedschap voor het kopiëren van inhoud niet als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud op de bron kan bijhouden.
