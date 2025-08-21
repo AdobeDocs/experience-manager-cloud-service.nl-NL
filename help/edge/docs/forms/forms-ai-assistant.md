@@ -3,22 +3,23 @@ title: AI Assistant voor AEM Forms (Forms Experience Builder)
 description: Krachtige formulieren sneller maken met formulierfragmenten
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
 
-# AI Assistant voor AEM Forms (Forms Experience Builder)
+
+# Aan de slag met AI Assistant voor AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> De Medewerker van AI voor AEM Forms (de Bouwer van de Ervaring van Forms) is beschikbaar onder het **vroege adoptieprogramma**. Als u geïnteresseerd bent, stuurt u een e-mail van uw werkadres naar mailto:aem-forms-ea@adobe.com om toegang tot de functie te vragen.
+> De Medewerker van AI voor AEM Forms (de Bouwer van de Ervaring van Forms) is beschikbaar onder het **vroege adoptieprogramma**. Als u geïnteresseerd bent, stuurt u een e-mail van uw werkadres naar mailto :aem-forms-ea@adobe.com om toegang tot de mogelijkheid te vragen.
 
 >[!IMPORTANT]
 >
