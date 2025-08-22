@@ -105,7 +105,7 @@ Deze uitgebreide handleiding bevat beproefde best practices voor het maken van e
 - Alternatieve tekst bieden voor alle afbeeldingen en pictogrammen
 - De juiste kopstructuur en semantische HTML implementeren
 
-**de Navigatie van 0} Keyboard**
+**de Navigatie van 0&rbrace; Keyboard**
 
 - Zorg ervoor dat alle formulierelementen toegankelijk zijn via toetsenbordnavigatie
 - Duidelijke focusindicatoren bieden voor alle interactieve elementen
