@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
+
 
 # Aan de slag met Forms Experience Builder
 
@@ -97,11 +97,10 @@ Probeer dit eenvoudige gesprek om te beginnen:
 * **Vraag om hulp**: Type `/help` gevolgd door uw vraag
 * **herhaalt**: Maak één verandering in een tijd voor beste resultaten
 
-## Basisfuncties
 
-### Twee manieren om Forms te maken
+## Manieren om een formulier te maken
 
-#### &#x200B;1. Maken met krassen
+### &#x200B;1. Begin met vragen over natuurlijke talen
 
 Beschrijf uw formuliervereisten in natuurlijke taal en de Forms Experience Builder genereert de volledige formulierstructuur:
 
@@ -111,17 +110,17 @@ Beschrijf uw formuliervereisten in natuurlijke taal en de Forms Experience Build
 * &quot;Maak een feedbackformulier voor klanten met beoordelingen, opmerkingen en productcategorieën&quot;
 * &quot;Ik heb een meertrapsgewijs registratieformulier nodig voor een conferentie met betalingsverwerking&quot;
 
-#### &#x200B;2. Invoer en Omzetten
+### &#x200B;2. Invoer en Omzetten
 
 Bestaande formulieren en documenten omzetten in moderne, interactieve ervaringen:
 
 **Gesteunde Bronnen:**
 
-* **PDF forms**: Upload statische PDFs → Interactieve digitale vormen met bevestiging
-* **Screenshots/Beelden**: Foto van papiervormen → Functionele digitale versies
-* **HTML Forms**: Basis Webvormen → Verbeterde AEM Forms met geavanceerde eigenschappen
-* **XFA Forms**: De vormen van Adobe van de erfenis → Modern ontvankelijke vormen
-* **URLs**: Bestaande Webvormen → Eigen AEM Forms met betere UX
+* **PDF forms**: Upload statische PDFs om deze in interactieve digitale vormen met bevestigingen om te zetten.
+* **Screenshots of Beelden**: Upload foto van papierformulieren om functionele digitale versies te produceren
+* **HTML Forms**: De invoer en zet basisWebvormen in verbeterde AEM Forms met geavanceerde eigenschappen om
+* **XFA Forms**: Comvert erfenis op XFA-Gebaseerde vormen aan moderne responsieve vormen
+* **URLs**: Zet bestaande Webvormen in inheemse AEM Forms met betere UX om
 
 **hoe te om in te voeren:**
 
@@ -482,4 +481,4 @@ De Forms Experience Builder kan u ook leren over AEM Forms-functies:
 
 **nog hulp nodig?** Typ `/help` gevolgd door uw specifieke vraag of neem contact op met de systeembeheerder.
 
-Voor extra steun, verwijs naar de belangrijkste [ Snelle Bibliotheek van de Bouwer van de Ervaring van Forms ](/help/edge/docs/forms/ai-assistant-prompt-library.md) of contacteer uw systeembeheerder voor technische bijstand.
+Voor extra steun, verwijs naar de belangrijkste [ Snelle Bibliotheek van de Bouwer van de Ervaring van Forms ](ai-assistant-prompt-library.md) of contacteer uw systeembeheerder voor technische bijstand.
