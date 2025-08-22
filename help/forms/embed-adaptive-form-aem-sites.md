@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
 
 -->
 
@@ -88,7 +88,7 @@ Als de optie **[!UICONTROL When form covers entire width of a page]** is geselec
 
 Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw pagina van AEM Sites toe gebruikend de plaatsingspijpleiding. De clientbibliotheken toevoegen:
 
-1. De toegang en kloon uw [ Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. De toegang en kloon uw [ Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=nl-NL).
 1. Open de map AEM Cloud Service Git Repository in een abonnementsteksteditor. Bijvoorbeeld Microsoft® Visual Code.
 1. Open het bestand `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` en voeg de volgende code toe aan het bestand:
 
@@ -126,7 +126,7 @@ Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw 
        </sly> 
    ```
 
-1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
+1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=nl-NL) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
 
 ### Adaptieve Forms - Embed(v2) inschakelen voor uw AEM Sites-pagina of Experience Fragment
 

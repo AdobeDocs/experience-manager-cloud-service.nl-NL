@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=nl-NL) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als u Adaptive Forms Core Components inschakelt op AEM Forms as a Cloud Service, kunt u beginnen met het maken, publiceren en leveren van Core Components based Adaptive Forms and Headless Forms met uw AEM Forms Cloud Service-instanties naar meerdere kanalen. Voor het gebruik van Headless Adaptive Forms hebt u de omgeving geschikt voor Adaptive Forms Core Components nodig.
@@ -301,7 +301,7 @@ Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-om
 
    Nadat het pakket met succes wordt gebouwd, kunt u het bij [ de Omslag van de Bewaarplaats van de it ] \all\target\ [appid].all- [ versie ].zip vinden
 
-1. Gebruik de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) om de [ Archetype Omslag van het Project van AEM ] \all\target\ [appid].all- [ versie ] .zip pakket op lokaal ontwikkelomgeving op te stellen.
+1. Gebruik de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) om de [ Archetype Omslag van het Project van AEM ] \all\target\ [appid].all- [ versie ] .zip pakket op lokaal ontwikkelomgeving op te stellen.
 
 
 ### Updatecode samenstellen en implementeren in een AEM Forms as a Cloud Service-omgeving {#core-components-on-aem-forms-cs}
@@ -317,7 +317,7 @@ Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-om
     git push origin
    ```
 
-1. Nadat de dossiers aan de Bewaarplaats van de Bewaarplaats van het Git worden geëngageerd, [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) in werking.
+1. Nadat de dossiers aan de Bewaarplaats van de Bewaarplaats van het Git worden geëngageerd, [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=nl-NL) in werking.
 
    Nadat de pijpleidingslooppas succesvol is, worden de Adaptieve Componenten van de Kern van Forms toegelaten voor het overeenkomstige milieu. Bovendien worden een Adaptive Forms (Core Components)-sjabloon en Canvas 3.0-thema toegevoegd aan uw Forms as a Cloud Service-omgeving, zodat u opties hebt voor het aanpassen en maken van op Core Components gebaseerde Adaptive Forms.
 
@@ -326,7 +326,7 @@ Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-om
 
 ### Wat zijn kerncomponenten? {#core-components}
 
-De [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
+De [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
 
 ### Welke mogelijkheden worden toegevoegd aan het toelaten van kerncomponenten? {#core-components-capabilities}
 
@@ -335,7 +335,7 @@ Wanneer de Adaptive Forms Core Components voor uw omgeving is ingeschakeld, word
 * [ creeer de Componenten van de Kern die Adaptieve Forms ](/help/forms/creating-adaptive-form-core-components.md) worden gebaseerd.
 * [ creeer de Componenten van de Kern gebaseerde Aangepaste malplaatjes van de Vorm ](/help/forms/template-editor.md).
 * [ creeer douanethema&#39;s voor de Componenten van de Kern de Gebaseerde Aangepaste malplaatjes van de Vorm ](/help/forms/using-themes-in-core-components.md).
-* [ de Reeks van de Kern van de Server Component gebaseerde Aangepaste vertegenwoordiging van de Vorm JSON aan kanalen zoals mobiel, Web, inheemse apps, en de diensten die de hoofdloze vertegenwoordiging van een vorm ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) vereisen.
+* [ de Reeks van de Kern van de Server Component gebaseerde Aangepaste vertegenwoordiging van de Vorm JSON aan kanalen zoals mobiel, Web, inheemse apps, en de diensten die de hoofdloze vertegenwoordiging van een vorm ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=nl-NL) vereisen.
 
 ### Zijn Adaptive Forms Core Components ingeschakeld voor mijn omgeving? {#enable-components}
 
