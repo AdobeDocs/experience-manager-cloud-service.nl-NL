@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Enkele voordelen van het maken van formulieren op basis van XFA-formuliersjablon
 
 U hebt het volgende nodig om een adaptief formulier te maken op basis van kerncomponenten met behulp van XFA-formuliersjablonen of XDP-bestanden:
 
-* [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu ](enable-adaptive-forms-core-components.md) toe.
+* Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
 * Aanbevolen wordt kennis te maken met de volgende gebieden:
    * Een adaptief formulier maken
    * XFA (XML Forms Architecture)
@@ -84,7 +84,7 @@ Voer de volgende stappen uit om een adaptief formulier te maken met behulp van X
 
    >[!NOTE]
    >
-   > Na het selecteren van **Malplaatjes van de Vorm** in het 2&rbrace; Model **lusje van de Vorm, kan het niet worden veranderd.**
+   > Na het selecteren van **Malplaatjes van de Vorm** in het 2} Model **lusje van de Vorm, kan het niet worden veranderd.**
 
 
 Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.  Op basis van het type adaptief formulier worden de formulierelementen in de bijbehorende XFA-formuliersjabloon weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.

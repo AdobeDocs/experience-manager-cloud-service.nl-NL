@@ -3,17 +3,17 @@ title: Hoe kan ik formulieren op een Adobe Experience Manager Sites-pagina weerg
 description: Leer hoe u formulieren kunt weergeven op een AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
 
-
 # Formulieren weergeven op de pagina Sites
 
-Stel je voor dat een gebruiker de website van de bank bezoekt op zoek naar een formulier voor het openen van een account. De bank gebruikt de Forms Portal-component om gebruikers te helpen snel het formulier te vinden door specifieke trefwoorden in te voeren of te filteren op categorieën zoals &#39;Nieuwe accounts&#39; of &#39;Persoonlijk bankieren&#39; en stelt gebruikers in staat het gewenste formulier gemakkelijk te vinden zonder door lange lijsten te hoeven bladeren.
+Stel je voor dat een gebruiker de website van de bank bezoekt op zoek naar een formulier voor het openen van een rekening. De bank gebruikt de Forms Portal-component om gebruikers te helpen snel het formulier te vinden door specifieke trefwoorden in te voeren of te filteren op categorieën zoals &#39;Nieuwe accounts&#39; of &#39;Persoonlijk bankieren&#39; en stelt gebruikers in staat het gewenste formulier gemakkelijk te vinden zonder door lange lijsten te hoeven bladeren.
 
 De **Onderzoek &amp; van het Registreren** component van het Portaal van Forms staat u toe om vormen op een pagina van Plaatsen te tonen en te maken. Gebruikers kunnen een uitgebreide lijst met formulieren configureren en presenteren op basis van specifieke criteria om aan de organisatorische vereisten te voldoen. Anonieme gebruikers kunnen de pagina Sites bezoeken om de beschikbare formulieren weer te geven en te bladeren. De vermelde vormen kunnen in stijgende of dalende orde worden gesorteerd gebruikend de **Soort door** drop-down optie die in de hoger-juiste hoek van het scherm wordt gevestigd.
 
@@ -21,14 +21,14 @@ De **Onderzoek &amp; van het Registreren** component van het Portaal van Forms s
 
 ## Voorwaarde
 
-Voordat u de verschillende mogelijkheden van een Forms Portal-component gaat verkennen, moet u ervoor zorgen dat Core Components geschikt zijn voor uw omgeving. Voor gedetailleerde instructies op hoe te om de Componenten van de Kern voor uw milieu toe te laten, [ klik hier ](/help/forms/enable-adaptive-forms-core-components.md).
+Voordat u de verschillende mogelijkheden van een Forms Portal-component gaat verkennen, moet u ervoor zorgen dat Core Components geschikt zijn voor uw omgeving. Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
 
 <!--
 ## Enable Forms Portal components for your existing environment
 
 To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
 
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=nl-NL).  
+1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).  
 
 1. **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 50](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-50) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
 
@@ -46,9 +46,9 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
     `mvn -PautoInstallPackage clean install`
 
-    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL#building-and-installing)
+    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL#embeddeds). -->
+1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
 Nadat u de nieuwste Core Components in uw omgeving hebt geïmplementeerd, zijn de Forms Portal-componenten toegankelijk in uw ontwerpomgeving.
 
@@ -60,7 +60,7 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
    ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
-1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Search & Lister]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
+1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Search & Lister]** checkbox onder de **[Naam van het Project van het Archetype van AEM ] - Forms en Communicatie Portaal**.
 
    ![ de Selectie van het Beleid ](/help/forms/assets/search-lister-enable-policy.png)
 
@@ -84,7 +84,7 @@ Nu, vorm de eigenschappen van het **Onderzoek en de component van het Registrere
 
 ## De eigenschappen van de component Search en Lister begrijpen
 
-U kunt **Onderzoek en 1&rbrace; componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
+U kunt **Onderzoek en 1} componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
 
 ### Tabblad Weergave
 
@@ -139,7 +139,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=nl-NL#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 

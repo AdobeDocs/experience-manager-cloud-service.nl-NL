@@ -5,9 +5,9 @@ keywords: Aangepaste formulieren met stijl Core Components. thema gebruiken in C
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2757'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt thema&#39;s maken en toepassen om een adaptief formulier op te maken. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Een thema wordt onafhankelijk beheerd zonder verwijzing naar een adaptief formulier en kan opnieuw worden gebruikt in meerdere Adaptieve Forms.
@@ -25,7 +25,7 @@ In dit artikel begrijpen we hoe we aangepaste ontwerpen kunnen maken voor op Cor
 
 ## Beschikbare thema&#39;s voor de opmaak van kerncomponenten
 
-Forms as Cloud Service biedt de onderstaande thema&#39;s voor op Core Components gebaseerde Adaptive Forms:
+Forms as Cloud Service biedt de volgende thema&#39;s voor op Core Components gebaseerde Adaptive Forms:
 
 * [ het thema van Canvas ](https://github.com/adobe/aem-forms-theme-canvas)
 * [ WKND thema ](https://github.com/adobe/aem-forms-theme-wknd)
@@ -37,9 +37,9 @@ Een thema is een pakket met opmaakcomponenten zoals CSS-bestanden, JavaScript-be
 
 * `src/theme.scss`: Deze map bevat het CSS-bestand dat een grote invloed heeft op het hele thema. Het fungeert als een gecentraliseerde locatie voor het definiëren en beheren van de opmaak en het gedrag van uw thema. Door dit bestand te bewerken, kunt u wijzigingen aanbrengen die overal in het thema worden toegepast. Zo kunt u de vormgeving en functionaliteit van zowel de adaptieve Forms- als AEM Sites-pagina&#39;s wijzigen.
 
-* `src/site`: Deze map bevat CSS-bestanden die worden toegepast op de gehele pagina van AEM site. Deze bestanden bestaan uit code en stijlen die van invloed zijn op de algemene functionaliteit en lay-out van de pagina van de AEM. Alle wijzigingen die u hier aanbrengt, worden doorgevoerd op alle pagina&#39;s van uw site. [ wanneer om het te gebruiken?]
+* `src/site`: Deze map bevat CSS-bestanden die worden toegepast op de hele pagina van de AEM-site. Deze bestanden bestaan uit code en stijlen die de algemene functionaliteit en lay-out van de pagina van uw AEM-site beïnvloeden. Alle wijzigingen die u hier aanbrengt, worden doorgevoerd op alle pagina&#39;s van uw site. [ wanneer om het te gebruiken?]
 
-* `src/components`: De CSS-bestanden in deze map zijn ontworpen voor afzonderlijke AEM kerncomponenten. Elke toegewijde map voor een component bevat een `.scss` -bestand waarmee die component in een adaptief formulier wordt geformatteerd. Het bestand /src/components/accordion/_accordion.scss bevat bijvoorbeeld stijlgegevens voor de component Adaptive Forms Accordion.
+* `src/components`: De CSS-bestanden in deze map zijn ontworpen voor afzonderlijke AEM-kerncomponenten. Elke toegewijde map voor een component bevat een `.scss` -bestand waarmee die component in een adaptief formulier wordt geformatteerd. Het bestand /src/components/accordion/_accordion.scss bevat bijvoorbeeld stijlgegevens voor de component Adaptive Forms Accordion.
 
   ![ adaptieve vorm gebaseerde themastructuur ](/help/forms/assets/theme_structure.png)
 
@@ -47,7 +47,7 @@ Een thema is een pakket met opmaakcomponenten zoals CSS-bestanden, JavaScript-be
 
 ## Een thema maken
 
-Forms as Cloud Service biedt de onderstaande Adaptive Form styling-thema&#39;s voor Core Components based Adaptive Forms.
+Forms as Cloud Service biedt de onderstaande Adaptive Form styling-thema&#39;s voor op Core Components gebaseerde Adaptive Forms.
 
 * [ het thema van Canvas ](https://github.com/adobe/aem-forms-theme-canvas)
 * [ WKND thema ](https://github.com/adobe/aem-forms-theme-wknd)
@@ -63,15 +63,15 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen, opmaken e
 
 ### Vereisten {#prerequisites-to-customize}
 
-* Verken zelf met [ vestiging een pijpleiding in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline) en het hebben van basiskennis van hoe te opstelling helpt u efficiënt uw themaaanpassingen beheren en opstellen.
-* Leer hoe te [ een gebruiker met de bijdragerrol ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=nl-NL) vormen. Begrijpen hoe te om een gebruiker met de bijdragerrol te vormen laat u de noodzakelijke toestemmingen voor themaaanpassing verlenen.
+* Verken zelf met [ vestiging een pijpleiding in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) en het hebben van basiskennis van hoe te opstelling helpt u efficiënt uw themaaanpassingen beheren en opstellen.
+* Leer hoe te [ een gebruiker met de bijdragerrol ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html) vormen. Begrijpen hoe te om een gebruiker met de bijdragerrol te vormen laat u de noodzakelijke toestemmingen voor themaaanpassing verlenen.
 * Installeer de recentste versie van [ Apache Maven ](https://maven.apache.org/download.cgi). Apache Maven is een tool voor automatisering van build die veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 * Installeer een teksteditor zonder opmaak. Bijvoorbeeld Microsoft® Visual Studio Code. Het gebruiken van een gewone tekstredacteur zoals de Code van Microsoft® Visual Studio verstrekt een gebruikersvriendelijk milieu voor het uitgeven en het wijzigen van themadossiers.
 
 ### Uw omgeving instellen
 
-* [ laat de Aangepaste Componenten van de Kern van Forms ](/help/forms/enable-adaptive-forms-core-components.md) voor uw lokale ontwikkeling en milieu van de Cloud Service toe.
-* Vorm a [ front-end plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=nl-NL) voor uw milieu van de Cloud Service. Alternatief, kunt u de pijpleiding vormen later, die u de flexibiliteit geven om aan het testen prioriteit te geven en het thema te verfijnen alvorens de plaatsingspijpleiding te vestigen.
+* Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
+* Vorm a [ front-end plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) voor uw milieu van Cloud Service. Alternatief, kunt u de pijpleiding vormen later, die u de flexibiliteit geven om aan het testen prioriteit te geven en het thema te verfijnen alvorens de plaatsingspijpleiding te vestigen.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -92,11 +92,11 @@ Het aanpassen van een thema is een proces met meerdere stappen. Voer de stappen 
 1. [Een thema testen](#test-the-theme)
 1. [Een thema implementeren](#deploy-the-theme)
 
-De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **&#x200B;**&#x200B;thema van het Canvas, maar het is belangrijk om op te merken dat u om het even welk thema kunt klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
+De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **** thema van het Canvas, maar het is belangrijk om op te merken dat u om het even welk thema kunt klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
 
 Laten we beginnen met een proces om een merkervaring te maken voor de Adaptieve Forms op basis van uw Core-component met gebruik van thema&#39;s.
 
-#### 1. Een thema klonen {#download-a-theme-core-components}
+#### &#x200B;1. Een thema klonen {#download-a-theme-core-components}
 
 Kies een van de volgende thema&#39;s om een thema voor op Core Components gebaseerde Adaptieve Forms te klonen:
 
@@ -125,7 +125,7 @@ Voer de volgende instructies uit om een thema te klonen:
    Nadat de opdracht is uitgevoerd, beschikt u over een lokale kopie van het thema op uw computer in de map `aem-forms-theme-canvas` .
 
 
-#### 2. Naam van thema instellen {#set-name-of-theme}
+#### &#x200B;2. Naam van thema instellen {#set-name-of-theme}
 
 1. Open de themamap in uw winde. Bijvoorbeeld, om de `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio te openen.
 
@@ -169,9 +169,9 @@ Voer de volgende instructies uit om een thema te klonen:
 * U wordt aangeraden het thema `version` in het `Package.json` -bestand en het `Package-lock.json` -bestand bij te werken om wijzigingen en verbeteringen in de tijd voor uw thema nauwkeurig weer te geven.
 * Voor de belangrijke informatie over het gebruik, de installatie-instructies en andere relevante details wordt aangeraden de naam van het thema in het `ReadMe` -bestand bij te werken.
 
-#### 3. Een thema aanpassen {#customize-the-theme}
+#### &#x200B;3. Een thema aanpassen {#customize-the-theme}
 
-U kunt afzonderlijke componenten aanpassen of wijzigingen op themaniveau aanbrengen met algemene variabelen van een thema. Wijzigingen in algemene variabelen zijn van invloed op alle afzonderlijke componenten. U kunt algemene variabelen bijvoorbeeld gebruiken om de randkleur te wijzigen van alle componenten van een adaptief formulier en een heldere vulkleur om CTA (Call to action) in te stellen met behulp van knopcomponent:
+U kunt afzonderlijke componenten aanpassen of wijzigingen op themaniveau aanbrengen met algemene variabelen van een thema. Wijzigingen in algemene variabelen zijn van invloed op alle afzonderlijke componenten. Met algemene variabelen kunt u bijvoorbeeld de randkleur wijzigen van alle componenten van een adaptief formulier en een heldere vulkleur om CTA (Call to action) in te stellen met behulp van een knopcomponent:
 
 * [Stijlen voor themaniveau instellen](#theme-customization-global-level)
 
@@ -211,9 +211,9 @@ U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen wijz
    >
    > Wanneer een stijl zowel op het thema als componentenniveau wordt bepaald, krijgt de stijl die op het componentenniveau wordt bepaald voorrang.
 
-#### 4. Test een aangepast thema {#test-the-theme}
+#### &#x200B;4. Test een aangepast thema {#test-the-theme}
 
-Voer de volgende stappen uit om een voorvertoning van de wijzigingen in de lokale omgeving te bekijken en deze te testen en het thema aan te passen aan de vereisten voor verschillende AEM:
+Voer de volgende stappen uit om een voorvertoning van de wijzigingen in de lokale omgeving weer te geven en deze te testen en het thema aan te passen aan de vereisten voor verschillende AEM-componenten:
 
 * 4.1 [ vorm een lokaal milieu voor het testen ](#rename-env-file-theme-folder)
 * 4.2 [ Test het thema gebruikend het lokale milieu ](#start-a-local-proxy-server)
@@ -309,11 +309,11 @@ U kunt ook het thema testen voor het adaptieve formulier dat wordt gehost op uw 
 1. Voer `npm run live` uit en u wordt omgeleid naar een lokale browser.
 1. Klik op `SIGN IN LOCALLY (ADMIN TASKS ONLY)` en meld u aan met de lokale gebruikersgegevens.
 
-U kunt een voorbeeld van het adaptieve formulier bekijken met de meest recente wijzigingen. Zodra, bent u tevreden met de wijzigingen die in een themamap worden gedaan, stel het thema aan uw milieu van AEM Cloud Service gebruikend de front-end pijpleiding op.
+U kunt een voorbeeld van het adaptieve formulier bekijken met de meest recente wijzigingen. Zodra, bent u tevreden met de wijzigingen die in een themamap worden gedaan, stel het thema aan uw milieu van de Dienst van de Wolk AEM gebruikend de front-end pijpleiding op.
 
-#### 5. Een thema gebruiken {#deploy-the-theme}
+#### &#x200B;5. Een thema gebruiken {#deploy-the-theme}
 
-Om het thema aan uw milieu van de Cloud Service op te stellen gebruikend de front-end pijpleiding:
+Om het thema aan uw milieu van Cloud Service op te stellen gebruikend de front-end pijpleiding:
 
 * 5.1 [ creeer een bewaarplaats voor thema ](#create-a-new-theme-repo)
 * 5.2 [ duw de veranderingen in de bewaarplaats ](#committing-the-changes)
@@ -321,7 +321,7 @@ Om het thema aan uw milieu van de Cloud Service op te stellen gebruikend de fron
 
 ##### 5.1 Een opslagplaats voor thema maken{#create-a-new-theme-repo}
 
-U hebt een opslagplaats nodig om het thema te implementeren. Login aan uw [ bewaarplaats van AEM Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git) en voeg nieuwe bewaarplaats voor uw thema toe.
+U hebt een opslagplaats nodig om het thema te implementeren. Login aan uw [ bewaarplaats van AEM Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) en voeg nieuwe bewaarplaats voor uw thema toe.
 
 1. Maak een nieuwe opslagplaats voor een thema door op **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]** te klikken.
 
@@ -345,7 +345,7 @@ U hebt een opslagplaats nodig om het thema te implementeren. Login aan uw [ bewa
 
 ##### 5.2. Verhoog de wijzigingen in de gegevensopslagruimte {#committing-the-changes}
 
-Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Service.
+Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms Cloud Service.
 
 1. Navigeer naar de hoofdmap van de themamap.  In dit geval is de naam van de themamap `aem-forms-theme-canvas` .
 1. Open de opdrachtprompt of terminal.
@@ -373,11 +373,11 @@ Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Servi
 
 ##### 5.3 Loop de frontend pijpleiding {#run-a-frontend-pipeline}
 
-Het thema wordt opgesteld gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=nl-NL). Voer de volgende stappen uit om thema te implementeren:
+Het thema wordt opgesteld gebruikend de [ front-end pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Voer de volgende stappen uit om thema te implementeren:
 
 1. Meld u aan bij uw AEM Cloud Manager-opslagplaats.
 1. Klik op de knop **[!UICONTROL Add]** in de sectie **[!UICONTROL Pipelines]** .
-1. Selecteer **[!UICONTROL Add Non-Production Pipeline]** of **[!UICONTROL Add Production Pipeline]** op basis van de omgeving van de Cloud Service. Hier is bijvoorbeeld de optie **[!UICONTROL Add Production Pipeline]** geselecteerd.
+1. Selecteer **[!UICONTROL Add Non-Production Pipeline]** of **[!UICONTROL Add Production Pipeline]** in de Cloud Service-omgeving. Hier is bijvoorbeeld de optie **[!UICONTROL Add Production Pipeline]** geselecteerd.
 1. Geef in het dialoogvenster **[!UICONTROL Add Production Pipeline]** de naam voor de pijplijn op als onderdeel van de stappen van **[!UICONTROL Configuration]** . De naam van de pijplijn is bijvoorbeeld `customcanvastheme` .
 1. Klik op **[!UICONTROL Continue]**.
 1. Selecteer de opties **[!UICONTROL Targeted Deployment]** > **[!UICONTROL Front-end code]** in
@@ -387,7 +387,7 @@ de **[!UICONTROL Source Code]** stappen.
 1. Klik op **[!UICONTROL Save]**.
    ![ creeer front-endpipe ](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
-   Nadat de pijpleidingsopstelling volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
+   Nadat de pijplijnopstelling volledig is, wordt de kaart van call-to-action bijgewerkt.
 
 1. Klik de gecreeerde pijpleiding met de rechtermuisknop aan.
 1. Klik op **[!UICONTROL Run]** .
@@ -441,12 +441,7 @@ De thema&#39;s Adaptief formulier worden gebruikt als onderdeel van een adaptiev
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)
-
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -457,5 +452,4 @@ De thema&#39;s Adaptief formulier worden gebruikt als onderdeel van een adaptiev
 * [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Document met record genereren voor adaptieve Forms (kerncomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Een adaptieve Forms maken met herhalende secties](/help/forms/create-forms-repeatable-sections.md)
-* [ de themasjablonen van de Steekproef en modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)
-* [Aangepaste Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+* [ de themasjablonen van de Steekproef en modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

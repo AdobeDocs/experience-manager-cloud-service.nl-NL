@@ -4,32 +4,32 @@ description: Een lokale ontwikkelomgeving instellen voor Adobe Experience Manage
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2756'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
 
 # Lokale ontwikkelomgeving instellen voor AEM Forms {#overview}
 
-Wanneer u een [!DNL &#x200B; Adobe Experience Manager Forms] als een [!DNL &#x200B; Cloud Service] -omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in in de cloud. Daarnaast kunt u ook een lokale ontwikkelomgeving instellen en configureren.
+Wanneer u een [!DNL  Adobe Experience Manager Forms] als een [!DNL  Cloud Service] -omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in in de cloud. Daarnaast kunt u ook een lokale ontwikkelomgeving instellen en configureren.
 
 U kunt de lokale ontwikkelomgeving gebruiken om de volgende acties uit te voeren zonder u aan te melden bij de ontwikkelomgeving van de cloud:
 
 * [ creeer vormen ](creating-adaptive-form.md) en verwante activa (thema&#39;s, malplaatjes, douane verzendt Acties, en meer)
-* [ zet PDF forms in AanpassingsForms ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=nl-NL) om
+* [ zet PDF forms in AanpassingsForms ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) om
 * Bouw toepassingen om [ Mededelingen van de Klant ](aem-forms-cloud-service-communications-introduction.md) op bestelling of in partijwijzen te produceren.
 
-Nadat een AanpassingsVorm of verwante activa op de lokale ontwikkelingsinstantie of een toepassing klaar zijn om [ Mededelingen van de Klant te produceren ] is, kunt u de AanpassingsVorm of Communicatie van de Klant toepassing van de lokale ontwikkelomgeving naar een milieu van de Cloud Service voor het verdere testen of het bewegen naar productiemilieu&#39;s uitvoeren.
+Nadat een Aangepast Vorm of verwante activa op de lokale ontwikkelingsinstantie of een toepassing klaar zijn om [ Mededelingen van de Klant te produceren ] is klaar, kunt u de AanpassingsVorm of Communicatie van de Klant toepassing van de lokale ontwikkelomgeving naar een milieu van Cloud Service voor verdere het testen of het bewegen naar productiemilieu&#39;s uitvoeren.
 
-U kunt ook aangepaste code zoals aangepaste componenten en vooraf ingevulde service ontwikkelen en testen in de lokale ontwikkelomgeving. Wanneer de aangepaste code is getest en gereed, kunt u de Git-opslagplaats van de ontwikkelomgeving van uw Cloud Service gebruiken om de aangepaste code te implementeren.
+U kunt ook aangepaste code zoals aangepaste componenten en vooraf ingevulde service ontwikkelen en testen in de lokale ontwikkelomgeving. Wanneer de aangepaste code is getest en gereed, kunt u de Git-opslagplaats van uw Cloud Service-ontwikkelomgeving gebruiken om de aangepaste code te implementeren.
 
 Als u een nieuwe lokale ontwikkelomgeving wilt instellen en deze wilt gebruiken voor de ontwikkeling van activiteiten, voert u de volgende acties uit in de aangegeven volgorde:
 
 * [Ontwikkelingshulpmiddelen instellen](#setup-development-tools-for-AEM-projects)
 
-* [Lokale auteur en Publish-instanties instellen](#set-up-local-experience-manager-environment-for-development)
+* [Lokale auteur- en publicatieinstanties instellen](#set-up-local-experience-manager-environment-for-development)
 
 * [Forms-archief toevoegen aan lokale ontwikkelingsinstanties en gebruikers configureren](#add-forms-archive-configure-users)
 
@@ -63,7 +63,7 @@ Use a local development environment:
 
 You can use the local development environment to create and test Adaptive Forms without connecting to the service. Adobe provides a SDK for the local development to help test all the cloud-ready functionalities. When your forms and related assets are ready and tested on the local development environment, you can import these forms and related assets to an [!DNL AEM Forms] as a Cloud Service instance for publishing. 
 
-You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html?lang=nl-NL) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
+You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
 
 -->
 
@@ -73,24 +73,24 @@ U hebt de volgende software nodig om een lokale ontwikkelomgeving in te stellen.
 
 | Software | Beschrijving | Koppelingen downloaden |
 |---|---|---|
-| ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE SDK | SDK bevat [!DNL Adobe Experience Manager] QuickStart- en Dispatcher-gereedschappen | Download recentste SDK van [ de Distributie van de Software ](#software-distribution) |  |
+| Adobe Experience Manager as a Cloud Service SDK | SDK bevat de gereedschappen [!DNL Adobe Experience Manager] QuickStart en Dispatcher | Download recentste SDK van [ Distributie van de Software ](#software-distribution) |  |
 | Archief met Adobe Experience Manager Forms-functies (AEM Forms-add-on) | Gereedschappen voor het maken, opmaken en optimaliseren van adaptieve Forms- en andere Adobe Experience Manager Forms-functies | Download van [ Distributie van de Software ](#software-distribution) |
 | (Optioneel) Adobe Experience Manager Forms-referentie-inhoud | Gereedschappen voor het maken, opmaken en optimaliseren van adaptieve Forms- en andere Adobe Experience Manager Forms-functies | Download van [ Distributie van de Software ](#software-distribution) |
 | (Optioneel) Adobe Experience Manager Forms Designer | Gereedschappen voor het maken, opmaken en optimaliseren van adaptieve Forms- en andere Adobe Experience Manager Forms-functies | Download van [ Distributie van de Software ](#software-distribution) |
 
 ### Download de nieuwste versie van software van Software Distribution {#software-distribution}
 
-Om recentste versie van SDK van Adobe Experience Manager as a Cloud Service, het eigenschaparchief van Experience Manager Forms (AEM Forms toe:voegen-op), de activa van de vormenverwijzing, of Forms Designer van [ de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) te downloaden:
+Om recentste versie van Adobe Experience Manager as a Cloud Service SDK, de eigenschaparchief van Experience Manager Forms (toe:voegen-aan AEM Forms), vormen verwijzingsactiva, of Forms Designer van [ de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) te downloaden:
 
 1. Meld u aan bij <https://experience.adobe.com/#/downloads> met uw Adobe ID
 
    >[!NOTE]
    >
-   > Uw Adobe-organisatie moet zijn ingericht zodat AEM as a Cloud Service de SDK van AEM as a Cloud Service kan downloaden.
+   > AEM as a Cloud Service moet uw Adobe-organisatie hebben ingericht om de AEM as a Cloud Service SDK te kunnen downloaden.
 
 1. Ga naar het tabblad **[!UICONTROL AEM as a Cloud Service]**.
 1. Sorteren op gepubliceerde datum in aflopende volgorde.
-1. Klik op de nieuwste Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-functiearchief (AEM Forms add-on), formulieren met naslaginformatie of Forms Designer.
+1. Klik op de nieuwste Adobe Experience Manager as a Cloud Service SDK, het Experience Manager Forms-functiearchief (AEM Forms add-on), de referentiebestanden voor formulieren of Forms Designer.
 
    >[!NOTE]
    >
@@ -98,49 +98,49 @@ Om recentste versie van SDK van Adobe Experience Manager as a Cloud Service, het
 
 1. De EULA evalueren en aanvaarden. Selecteer de knop **[!UICONTROL Download]** .
 
-## Ontwikkelingshulpmiddelen instellen voor AEM projecten {#setup-development-tools-for-AEM-projects}
+## Ontwikkelingshulpmiddelen instellen voor AEM-projecten {#setup-development-tools-for-AEM-projects}
 
-Het Adobe Experience Manager Forms-project is een aangepaste codebasis. Deze bevat code, configuraties en inhoud die via Cloud Manager wordt geïmplementeerd in [!DNL Adobe Experience Manager] as a Cloud Service. Het [ AEM Project Maven Archetype ](https://github.com/adobe/aem-project-archetype) verstrekt de basislijnstructuur voor het project.
+Het Adobe Experience Manager Forms-project is een aangepaste codebasis. Het bevat code, configuraties en inhoud die via Cloud Manager naar [!DNL Adobe Experience Manager] as a Cloud Service worden geïmplementeerd. Het [ Project van AEM Maven Archetype ](https://github.com/adobe/aem-project-archetype) verstrekt de basislijnstructuur voor het project.
 
 Stel de volgende ontwikkelingsprogramma&#39;s in die u voor uw [!DNL Adobe Experience Manager] -project wilt gebruiken voor ontwikkeling:
 
-* [ Java™ ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#local-development-environment-set-up)
-* [ Git ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#install-git)
-* [ Node.js (npm) ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#node-js)
-* [ Gemaakt ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#install-maven)
+* [ Java™ ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)
+* [ Git ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)
+* [ Node.js (npm) ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)
+* [ Gemaakt ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)
 
-Voor gedetailleerde instructies aan opstelling eerder vermelde ontwikkelingshulpmiddelen, zie [ de ontwikkelingshulpmiddelen van de Opstelling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL).
+Voor gedetailleerde instructies aan opstelling eerder vermelde ontwikkelingshulpmiddelen, zie [ de ontwikkelingshulpmiddelen van de Opstelling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html).
 
-## Lokale Experience Manager instellen voor ontwikkeling
+## Lokale Experience Manager-omgeving instellen voor ontwikkeling
 
-De Cloud Service SDK biedt een QuickStart-bestand. Er wordt een lokale versie van Experience Manager uitgevoerd. U kunt de instanties Auteur of Publish lokaal uitvoeren.
+De Cloud Service SDK biedt een QuickStart-bestand. Er wordt een lokale versie van Experience Manager uitgevoerd. U kunt de instanties Auteur of Publiceren lokaal uitvoeren.
 
-Hoewel QuickStart een lokale ontwikkelingservaring biedt, beschikt QuickStart niet over alle functies die beschikbaar zijn in [!DNL Adobe Experience Manager] as a Cloud Service. Test dus altijd uw functies en code met [!DNL Adobe Experience Manager] as a Cloud Service ontwikkelomgeving voordat u de functies verplaatst naar het werkgebied of de productie.
+Hoewel QuickStart een lokale ontwikkelingservaring biedt, beschikt QuickStart niet over alle functies die beschikbaar zijn in [!DNL Adobe Experience Manager] as a Cloud Service. Test dus altijd uw functies en code met de [!DNL Adobe Experience Manager] as a Cloud Service-ontwikkelomgeving voordat u de functies verplaatst naar het werkgebied of de productie.
 
 Voer de volgende stappen uit om de lokale Experience Manager-omgeving te installeren en te configureren:
 
-* [ Download en haal ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) de [!DNL Adobe Experience Manager] as a Cloud Service SDK uit
-* [ Opstelling een instantie van de Auteur ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#set-up-local-aem-author-service)
-* [ Opstelling een instantie van Publish ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#set-up-local-aem-publish-service)
+* [ Download en haal ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) uit as a Cloud Service SDK [!DNL Adobe Experience Manager]
+* [ Opstelling een instantie van de Auteur ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#set-up-local-aem-author-service)
+* [ opstelling een Publish instantie ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#set-up-local-aem-publish-service)
 
-## Forms-archief toevoegen aan lokale auteur- en Publish-instanties en Forms-specifieke gebruikers configureren {#add-forms-archive-configure-users}
+## Forms-archief toevoegen aan lokale instanties voor auteurs en publiceren en Forms-specifieke gebruikers configureren {#add-forms-archive-configure-users}
 
-Voer de volgende stappen in de vermelde volgorde uit om Forms-archief toe te voegen aan instanties van Experience Managers en formulierspecifieke gebruikers te configureren:
+Voer de volgende stappen in de vermelde volgorde uit om Forms-archief toe te voegen aan Experience Manager-instanties en formulierspecifieke gebruikers te configureren:
 
 ### Installeer het nieuwste Forms add-on functiearchief {#add-forms-archive}
 
-Het Adobe Experience Manager Forms as a Cloud Service-functiearchief biedt tools voor het maken, opmaken en optimaliseren van Adaptive Forms in de lokale ontwikkelomgeving. Installeer het pakket om een adaptief formulier te maken en gebruik verschillende andere functies van [!DNL AEM Forms] . Het pakket installeren:
+Het Adobe Experience Manager Forms as a Cloud Service-functiearchief biedt tools voor het maken, opmaken en optimaliseren van Adaptief Forms in de lokale ontwikkelomgeving. Installeer het pakket om een adaptief formulier te maken en gebruik verschillende andere functies van [!DNL AEM Forms] . Het pakket installeren:
 
 1. De download en haalt het recentste [!DNL AEM Forms] archief voor uw werkend systeem van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 1. Navigeer naar de map crx-quickstart/install. Als de map niet bestaat, maakt u deze.
 
-1. Stop uw AEM instantie, plaats het [!DNL AEM Forms] add-on functiearchief `aem-forms-addon-<version>.far` in de installatiemap.
+1. Stop uw AEM-instantie, plaats het archief met [!DNL AEM Forms] add-on-functies `aem-forms-addon-<version>.far` in de installatiemap.
 1. Ga naar het actieve opdrachtvenster en druk op `Ctrl + C` om de SDK opnieuw te starten.
 
    >[!NOTE]
    >
-   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+   > U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.
 
 <!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
 **A**: To resolve the issue:
@@ -151,9 +151,9 @@ Het Adobe Experience Manager Forms as a Cloud Service-functiearchief biedt tools
 
 ### Gebruikers en machtigingen configureren {#configure-users-and-permissions}
 
-Creeer gebruikers zoals de Ontwikkelaar van de Vorm en de Praktijk van de Vorm en [ voeg deze gebruikers aan vooraf bepaalde vormgroepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=nl-NL#accessing) toe om hen vereiste toestemmingen te verstrekken. In de onderstaande tabel worden alle typen gebruikers en vooraf gedefinieerde groepen voor elk type formuliergebruiker weergegeven:
+Creeer gebruikers zoals de Ontwikkelaar van de Vorm en de Praktijk van de Vorm en [ voeg deze gebruikers aan vooraf bepaalde vormgroepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=en#accessing) toe om hen vereiste toestemmingen te verstrekken. In de onderstaande tabel worden alle typen gebruikers en vooraf gedefinieerde groepen voor elk type formuliergebruiker weergegeven:
 
-| Gebruikerstype | AEM |
+| Gebruikerstype | AEM-groep |
 |---|---|
 | Formulierpraktiserer / | [!DNL forms-users] (AEM Forms Users), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] en [!DNL fdm-authors] |
 | Formulierontwikkelaar | [!DNL forms-users] (AEM Forms Users), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] en [!DNL fdm-authors] |
@@ -167,7 +167,7 @@ Creeer gebruikers zoals de Ontwikkelaar van de Vorm en de Praktijk van de Vorm e
 
 Perform the following steps in the listed order to set up and configure your local development environment:
 
-1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL).  
+1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html).  
 
 1. **Install the latest [!DNL AEM Forms] add-on feature archive:** [!DNL AEM Forms] add-on feature archive provides tools to create, style, and optimize Adaptive Forms on the local development environment. Install the package to create an Adaptive Form and use various other features of [!DNL AEM Forms]. To install the package:
 
@@ -192,16 +192,16 @@ Perform the following steps in the listed order to set up and configure your loc
 
 Use this project to update configurations, create overlays, develop custom Adaptive Form components, and custom code using the local development environment. To set up the project:
 
-1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=nl-NL).
+1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html).
 
-1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=nl-NL#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
+1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
 
-1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL#set-up-an-integrated-development-environment) for detailed instructions.
+1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) for detailed instructions.
  -->
 
 ## Lokale ontwikkelomgeving instellen voor Document of Record (DoR){#docker-microservices}
 
-AEM Forms als Cloud Servicen biedt een docker-gebaseerde SDK-omgeving voor een eenvoudigere ontwikkeling van Document of Record en voor het gebruik van andere microservices. U kunt hiermee geen handmatig platformspecifieke binaire bestanden en aanpassingen configureren. Omgeving instellen:
+AEM Forms als Cloud Services biedt een op dockers gebaseerde SDK-omgeving voor een eenvoudigere ontwikkeling van Document of Record en voor het gebruik van andere microservices. U kunt hiermee geen handmatig platformspecifieke binaire bestanden en aanpassingen configureren. Omgeving instellen:
 
 1. Docker installeren en configureren:
 
@@ -213,7 +213,7 @@ AEM Forms als Cloud Servicen biedt een docker-gebaseerde SDK-omgeving voor een e
 
    >[!NOTE]
    >
-   > * Voor Apple macOS, de omslagen van de lijst van gewenste personen die lokale AEM instanties van de Auteur bevatten.
+   > * Voor Apple macOS, de omslagen van de lijst van gewenste personen die lokale instanties van de Auteur van AEM bevatten.
    >
    > * Docker Desktop voor Windows ondersteunt twee achtergronden, Hyper-V
    > (oud) en WSL2 (modern). Bestanden delen wordt automatisch
@@ -226,9 +226,9 @@ AEM Forms als Cloud Servicen biedt een docker-gebaseerde SDK-omgeving voor een e
 
    ![ onttrokken naamvormen toevoegen op inheems ](assets/microservice-docker.png)
 
-1. Maak een omgevingsvariabele AEM_HOME en wijs naar de lokale installatie van AEM auteur. Bijvoorbeeld C:\aem\author\.
+1. Maak een omgevingsvariabele AEM_HOME en wijs naar de lokale installatie van AEM Author. Bijvoorbeeld C:\aem\author\.
 
-1. Open sdk.bat of sdk.sh voor bewerking. Stel de AEM_HOME in om naar de lokale installatie van AEM auteur te verwijzen. Bijvoorbeeld C:\aem\author\.
+1. Open sdk.bat of sdk.sh voor bewerking. Stel de AEM_HOME in om te wijzen naar de lokale installatie van AEM Author. Bijvoorbeeld C:\aem\author\.
 
 1. Open de opdrachtprompt en navigeer naar de map `aem-forms-addon-native-<version>` .
 
@@ -257,9 +257,9 @@ AEM Forms als Cloud Servicen biedt een docker-gebaseerde SDK-omgeving voor een e
 
 U kunt nu de lokale ontwikkelomgeving gebruiken om Document of Record te renderen. Upload een XDP-bestand naar uw omgeving en geef het weer om het te testen. <http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/cheque-request.xdp> converteert bijvoorbeeld het XDP-bestand naar het PDF-document.
 
-## Een ontwikkelingsproject voor Forms instellen op basis van het archetype Experience Manager {#forms-cloud-service-local-development-environment}
+## Een ontwikkelingsproject voor Forms opzetten op basis van Experience Manager archetype {#forms-cloud-service-local-development-environment}
 
-Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays implementeren, aangepaste componenten voor adaptieve formulieren maken, testen en aangepaste code voor de lokale [!DNL Experience Manager Forms] SDK gebruiken. Nadat u het project lokaal hebt getest, kunt u het in [!DNL Experience Manager Forms] as a Cloud Service productie- en niet-productieomgevingen implementeren. Wanneer u het project opstelt, worden de volgende activa van AEM Forms ook opgesteld:
+Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays implementeren, aangepaste componenten voor adaptieve formulieren maken, testen en aangepaste code op lokale [!DNL Experience Manager Forms] SDK gebruiken. Nadat u het project lokaal hebt getest, kunt u het in [!DNL Experience Manager Forms] as a Cloud Service-productieomgevingen en -omgevingen implementeren. Wanneer u het project opstelt, worden de volgende activa van AEM Forms ook opgesteld:
 
 | Thema&#39;s | Sjablonen | Formuliergegevensmodel (FDM) |
 ---------|----------|---------
@@ -271,21 +271,21 @@ Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays impl
 
 >[!NOTE]
 >
-> Opstelling AEM Archetype versie 30 of later gebaseerd project om Microsoft® Dynamics 365 en het Model van de Gegevens van de Vorm van Salesforce (FDM) met AEM Forms as a Cloud Service te krijgen en te gebruiken.
-> Opstelling AEM Archetype versie 32 of later gebaseerd project om Tranquil, Urbane, en Ultramarine thema&#39;s met AEM Forms as a Cloud Service te krijgen en te gebruiken.
+> Stel op AEM Archetype versie 30 of hoger gebaseerd project in voor Microsoft® Dynamics 365 en Salesforce Form Data Model (FDM) met AEM Forms as a Cloud Service.
+> > Stel op AEM Archetype versie 32 of hoger gebaseerd project in voor het ophalen en gebruiken van de thema&#39;s Tranquil, Urbane en Ultramarine met AEM Forms as a Cloud Service.
 
 Het project instellen:
 
-1. **de bewaarplaats van de Git van Cloud Manager van de Kloon op uw lokale ontwikkelingsinstantie:** Uw bewaarplaats van de Git van Cloud Manager bevat een standaard AEM project. Het is gebaseerd op [ AEM Archetype ](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. Voor details om tot de bewaarplaats toegang te hebben, zie [ Toegang hebbend tot Bewaarplaatsen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=nl-NL).
+1. **de bewaarplaats van de Git van Cloud Manager van de Kloon op uw lokale ontwikkelingsinstantie:** Uw bewaarplaats van de Git van Cloud Manager bevat een standaardAEM project. Het is gebaseerd op [ Archetype van AEM ](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. Voor details om tot de bewaarplaats toegang te hebben, zie [ Toegang hebbend tot Bewaarplaatsen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
 <!-- 1. 
-After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=nl-NL)
+After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
 
-**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=nl-NL) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
+**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **creeer een [!DNL Experience Manager Forms] als project van de a [ Cloud Service ]:** creeer een [!DNL Experience Manager Forms] als project van de a [ Cloud Service ] dat op recentste [ wordt gebaseerd AEM Archetype ](https://github.com/adobe/aem-project-archetype) of later. De ontwikkelaars van de archetype Help kunnen eenvoudig beginnen met het ontwikkelen voor [!DNL AEM Forms] as a Cloud Service. Het bevat ook enkele voorbeeldthema&#39;s en sjablonen waarmee u snel aan de slag kunt gaan.
+1. **creeer een [!DNL Experience Manager Forms] als a [ Cloud Service ] project:** creeer een [!DNL Experience Manager Forms] als a [ Cloud Service ] project dat op recentste [ wordt gebaseerd AEM Archetype ](https://github.com/adobe/aem-project-archetype) of later. De ontwikkelaars van de archetype Help kunnen eenvoudig beginnen met het ontwikkelen voor [!DNL AEM Forms] as a Cloud Service. Het bevat ook enkele voorbeeldthema&#39;s en sjablonen waarmee u snel aan de slag kunt gaan.
 
-   Open de opdrachtprompt en voer de onderstaande opdracht uit om een [!DNL Experience Manager Forms] as a Cloud Service project te maken.
+   Open de opdrachtprompt en voer de onderstaande opdracht uit om een [!DNL Experience Manager Forms] as a Cloud Service-project te maken.
 
    ```shell
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
@@ -299,19 +299,19 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     >* Wanneer het creëren van een project Archetype met versie 45, plaatst de [ AEM omslag van het Project van het Archetype ] /pom.xml aanvankelijk de versie van de componenten van de vormenkern aan 2.0.64. Voordat u het project Archetype gaat maken of implementeren, moet u de kerncomponentversie van de formulieren bijwerken naar versie 2.0.62.
+     >* Wanneer het creëren van een project Archetype met versie 45, plaatst de [ Archetype Omslag van het Project van AEM ] /pom.xml aanvankelijk de versie van de vormenkern componenten aan 2.0.64. Voordat u het project Archetype gaat maken of implementeren, moet u de kerncomponentversie van de formulieren bijwerken naar versie 2.0.62.
 
 1. Implementeer het project in uw lokale ontwikkelomgeving. U kunt het volgende bevel gebruiken om aan uw lokale ontwikkelomgeving op te stellen
 
    `mvn -PautoInstallPackage clean install`
 
-   Voor de volledige lijst van bevelen, zie [ Bouw en het Installeren ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL#building-and-installing)
+   Voor de volledige lijst van bevelen, zie [ Bouw en het Installeren ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [ stel de code aan uw  [!DNL AEM Forms]  as a Cloud Service milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#customer-releases) op.
+1. [ stel de code aan uw  [!DNL AEM Forms]  milieu van as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases) op.
 
 ## Lokale Dispatcher-gereedschappen instellen {#setup-local-dispatcher-tools}
 
-Dispatcher is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM de rij van Publish verstrekt. Dispatcher is een integraal onderdeel van de algehele architectuur van de Experience Manager en moet deel uitmaken van de lokale ontwikkelingsomgeving.
+Dispatcher is een Apache HTTP Web server module die een veiligheid en prestatieslaag tussen CDN en AEM verstrekt publiceren rij. Dispatcher is een integraal onderdeel van de algemene Experience Manager-architectuur en moet deel uitmaken van de lokale ontwikkelingsomgeving.
 
 Voer de volgende stappen uit om lokale Dispatcher te vormen en dan Forms-specifieke regels aan het toe te voegen:
 
@@ -321,13 +321,13 @@ De [!DNL Experience Manager] as a Cloud Service SDK bevat de aanbevolen versie v
 
 In cache plaatsen op Dispatcher kan [!DNL AEM Forms] Adaptieve Forms vooraf invullen op een client. Het verbetert de rendersnelheid van voorgevulde formulieren.
 
-Voor gedetailleerde instructies aan opstelling Dispatcher, zie [ de lokale hulpmiddelen van Dispatcher van de Opstelling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=nl-NL#local-development-environment-set-up)
+Voor gedetailleerde instructies aan opstelling Dispatcher, zie [ de lokale hulpmiddelen van Dispatcher van de Opstelling ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#local-development-environment-set-up)
 
 ### Specifieke Forms-regels toevoegen aan Dispatcher {#forms-specific-rules-to-dispatcher}
 
 Voer de volgende stappen uit om Dispatcher cache voor Experience Manager Forms as a Cloud Service te configureren:
 
-1. Open uw AEM Project en navigeer naar `\src\conf.dispatcher.d\available_farms`
+1. AEM-project openen en naar `\src\conf.dispatcher.d\available_farms` navigeren
 1. Maak een kopie van het `default.farm` -bestand. Bijvoorbeeld `forms.farm` .
 1. Open het gemaakte `forms.farm` -bestand om de volgende code te bewerken en te vervangen:
 
@@ -349,12 +349,12 @@ Voer de volgende stappen uit om Dispatcher cache voor Experience Manager Forms a
 
 1. Sla het bestand op en sluit het.
 1. Ga naar `conf.d/enabled_farms` en maak een symbolische koppeling naar het `forms.farm` -bestand.
-1. Compileer en implementeer het project in uw [!DNL AEM Forms] as a Cloud Service omgeving.
+1. Compileer en implementeer het project in uw [!DNL AEM Forms] as a Cloud Service-omgeving.
 
 ### Overwegingen over caching {#considerations-about-caching}
 
 * Met Dispatcher caching kan [!DNL AEM Forms] Adaptive Forms vooraf op een client invullen. Het verbetert de rendersnelheid van voorgevulde formulieren.
-* Functies voor beveiligde inhoud die in de cache worden geplaatst, zijn standaard uitgeschakeld. Om de eigenschap toe te laten, kunt u de instructies uitvoeren die in het [ Caching Beveiligde artikel van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL) worden verstrekt
+* Functies voor beveiligde inhoud die in de cache worden geplaatst, zijn standaard uitgeschakeld. Om de eigenschap toe te laten, kunt u de instructies uitvoeren die in het [ Caching Beveiligde artikel van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) worden verstrekt
 * De Dispatcher kan sommige Adaptive Forms en verwante Adaptive Forms niet valideren. Om dergelijke kwesties op te lossen, zie [[!DNL AEM Forms]  Caching ](troubleshooting-caching-performance.md) in het oplossen van problemensectie.
 * Gelokaliseerde adaptieve Forms in cache plaatsen:
    * Gebruik de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` om een gelokaliseerde versie van een adaptief formulier aan te vragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
@@ -364,20 +364,21 @@ Voer de volgende stappen uit om Dispatcher cache voor Experience Manager Forms a
 
 Uw lokale ontwikkelomgeving is klaar.
 
-## Aangepaste Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms
+## Aangepaste Forms Core-componenten inschakelen op AEM Forms as a Cloud Service en lokale ontwikkelomgeving
 
 Als u Adaptive Forms Core Components inschakelt op AEM Forms as a Cloud Service, kunt u beginnen met het maken, publiceren en leveren van Core Components based Adaptive Forms and Headless Forms met uw AEM Forms Cloud Service-instanties naar meerdere kanalen. Voor het gebruik van Headless Adaptive Forms hebt u de omgeving geschikt voor Adaptive Forms Core Components nodig.
 
-Voor instructies, zie [ de Aangepaste Componenten van de Kern van Forms op AEM Forms as a Cloud Service en lokale ontwikkelomgeving ](/help/forms/enable-adaptive-forms-core-components.md) toelaten
-
+>[!NOTE]
+>
+> Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
 
 ## Upgrade uw lokale ontwikkelomgeving {#upgrade-your-local-development-environment}
 
-Voor het upgraden van de SDK naar een nieuwe versie moet de volledige lokale ontwikkelomgeving worden vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale opslagruimten. Zorg ervoor dat om het even welke code, config, of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale instanties van de Experience Manager als CRX-Pakketten wordt uitgevoerd.
+Als u de SDK wilt upgraden naar een nieuwe versie, moet u de volledige lokale ontwikkelomgeving vervangen. Dit leidt tot verlies van alle code, configuratie en inhoud in de lokale opslagruimten. Zorg ervoor dat code, config, of inhoud die niet zou moeten worden vernietigd veilig aan Git wordt begaan, of uit de lokale instanties van Experience Manager als CRX-Pakketten wordt uitgevoerd.
 
-### Inhoud verliezen bij het upgraden van de SDK voorkomen {#avoid-content-loss-when-upgrading--SDK}
+### Inhoud verliezen bij upgrades van de SDK voorkomen {#avoid-content-loss-when-upgrading--SDK}
 
-De bevordering van SDK leidt effectief tot een gloednieuwe Instanties van de Auteur en van Publish, met inbegrip van een nieuwe bewaarplaats ([ Opstelling AEM project ](#forms-cloud-service-local-development-environment)), betekenend om het even welke veranderingen die aan de bewaarplaats van een vroegere SDK worden aangebracht worden verloren. Voor levensvatbare strategieën om in het voortbestaan inhoud tussen verbeteringen van SDK bij te staan, zie [ hoe te inhoudsverlies vermijden wanneer het bevorderen van de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#optional-local-aem-runtime-set-up-tasks)
+De bevordering van SDK leidt effectief tot een gloednieuwe Auteur en publiceert instanties, met inbegrip van een nieuwe bewaarplaats ([ het project van de Opstelling AEM ](#forms-cloud-service-local-development-environment)), betekenend om het even welke veranderingen die aan een vroegere bewaarplaats van SDK worden aangebracht worden verloren. Voor levensvatbare strategieën om in het voortbestaan inhoud tussen de verbeteringen van SDK bij te staan, zie [ hoe te inhoudsverlies vermijden wanneer het bevorderen van AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#optional-local-aem-runtime-set-up-tasks)
 
 <!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
 
@@ -397,11 +398,11 @@ Upgrading the AEM SDK is effectively creating a brand new AEM runtime ([Set up a
 
 Remember, using the above approaches to maintain code between AEM SDK upgrades, indicates a development anti-pattern. Non-disposable code should originate in your Development IDE and flow into AEM SDK via deployments.
 
-For information about troubleshooting, stopping local AEM environment, run modes, and deployment, see [Set up local AEM Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=nl-NL#local-development-environment-set-up).-->
+For information about troubleshooting, stopping local AEM environment, run modes, and deployment, see [Set up local AEM Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#local-development-environment-set-up).-->
 
 ### Een back-up maken van Forms-specifieke inhoud en deze importeren in een nieuwe SDK-omgeving {#backup-and-import-Forms-specific-content-to-new-SDK-environment}
 
-Een back-up maken van bestaande SDK en elementen verplaatsen naar een nieuwe SDK-omgeving:
+Een back-up maken van bestaande SDK en deze verplaatsen naar een nieuwe SDK-omgeving:
 
 * Maak een back-up van uw bestaande inhoud.
 
@@ -418,7 +419,7 @@ Maak een back-up van uw Adaptieve Forms, sjablonen, FDM (Form Data Model), thema
 
 1. Formuliergegevensmodellen downloaden
 
-1. Bewerkbare sjablonen, cloudconfiguraties en workflowmodel exporteren. Om alle eerder vermelde punten van uw bestaande SDK uit te voeren, creeer een [ CRX-Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL) met de volgende filters:
+1. Bewerkbare sjablonen, cloudconfiguraties en workflowmodel exporteren. Om alle eerder vermelde punten van uw bestaande SDK uit te voeren, creeer een [ CRX-Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html) met de volgende filters:
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs
@@ -435,10 +436,10 @@ Maak een back-up van uw Adaptieve Forms, sjablonen, FDM (Form Data Model), thema
 
 Importeer Adaptief Forms, sjablonen, formuliergegevensmodel, thema, configuraties en aangepaste code naar uw nieuwe omgeving. U kunt de volgende actie uitvoeren om een back-up te importeren:
 
-1. [&#128279;](import-export-forms-templates.md#manage-forms-and-related-assets) Aangepaste Forms, thema&#39;s, en PDF forms van de invoer van 0&rbrace; &lbrace;aan nieuwe milieu&#39;s SDK.
+1. [ de Invoer ](import-export-forms-templates.md#manage-forms-and-related-assets) Aangepaste Forms, thema&#39;s, en PDF forms aan nieuwe milieu&#39;s van SDK.
 1. Importeer Aangepaste formuliersjablonen naar de nieuwe SDK-omgeving.
 
-1. Upload modellen van formuliergegevens naar de nieuwe SDK-omgeving.
+1. Upload formuliergegevensmodellen naar de nieuwe SDK-omgeving.
 
 1. Bewerkbare sjablonen, cloudconfiguraties en workflowmodel importeren. Als u alle eerder vermelde items in uw nieuwe SDK-omgeving wilt importeren, importeert u het CRX-pakket met deze items in uw nieuwe SDK-omgeving.
 

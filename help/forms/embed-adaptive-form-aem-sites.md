@@ -5,18 +5,18 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2938'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
 
-# Een adaptief formulier insluiten op een pagina met AEM sites {#embed-an-adaptive-form-to-aem-sites-page}
+# Een adaptief formulier insluiten op een AEM-sitepagina {#embed-an-adaptive-form-to-aem-sites-page}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Met AEM Forms kunnen formulierontwikkelaars de Adaptieve Forms naadloos insluiten in een AEM Sites-pagina of een webpagina die buiten AEM wordt gehost. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren. Zo kunnen gebruikers formulieren eenvoudig invullen en verzenden zonder de pagina waarop ze staan te verlaten. Deze integratie biedt een handige manier om Adaptieve Forms die ze al hebben gemaakt, opnieuw te gebruiken.
 
-Met AEM paginaeditor kunt u snel meerdere formulieren insluiten op uw AEM Sites-pagina&#39;s. Met AEM Pagina-editor kunnen auteurs van inhoud naadloze ervaringen maken met het vastleggen van gegevens op een sitepagina. Hierbij worden adaptieve Forms-componenten gebruikt, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. Met deze functie kunt u ook verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, adressering, vertaling en beheer voor meerdere sites.
+Met de AEM Page Editor kunt u snel meerdere formulieren insluiten op uw AEM Sites-pagina&#39;s. Met de AEM Page Editor kunnen auteurs van inhoud naadloze ervaringen maken met het vastleggen van gegevens op een sitepagina. Hierbij worden adaptieve Forms-componenten gebruikt, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. Met deze functie kunt u ook verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, adressering, vertaling en beheer voor meerdere sites.
 
 AEM Forms biedt **[!UICONTROL Adaptive Form Container]** - en **[!UICONTROL Adaptive Forms – Embed(v2)]** -componenten. U kunt **[!UICONTROL Adaptive Forms – Embed(v2)]** gebruiken om een bestaand adaptief formulier toe te voegen of een formulier te maken met de Adaptive Forms Editor, terwijl **[!UICONTROL Adaptive Form Container]** nieuwe formulieren maakt in een Experience-fragment of AEM Sites-pagina.
 
@@ -44,11 +44,11 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
-## Hoe maakt of sluit u een adaptief formulier in op een AEM Sites-pagina of in AEM Experience Fragment? {#various-options-to-create-or-embed-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
+## Hoe maakt of sluit u een adaptief formulier in op een AEM Sites-pagina of in een AEM Experience-fragment? {#various-options-to-create-or-embed-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
 
 U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
@@ -60,9 +60,9 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 * **[creeer en voeg een douane Aangepaste Vorm aan een pagina van AEM Sites toe ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** u kunt de **[!UICONTROL Adaptive Form Container]** component gebruiken om een gloednieuwe vorm van kras te bouwen, die het specifiek aan uw vereisten en ontwerpvoorkeur aanpast.
 
-* **[creeer en voeg een douane Aangepaste Vorm aan een Fragmenten van de Ervaring toe ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** u kunt het bereik van uw vormen uitbreiden door hen aan AEM Fragmenten van de Ervaring toe te voegen, die voor naadloos hergebruik over veelvoudige pagina&#39;s of plaatsen toestaan.
+* **[creeer en voeg een douane Aangepaste Vorm aan een Fragmenten van de Ervaring toe ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** u kunt het bereik van uw vormen uitbreiden door hen aan de Fragmenten van de Ervaring van AEM toe te voegen, die voor naadloos hergebruik over veelvoudige pagina&#39;s of plaatsen toestaan.
 
-* **voeg veelvoudige vormen aan een de pagina of Fragment van de Ervaring van AEM Sites toe:** u kunt veelvoudige AanpassingsForms tot stand brengen of toevoegen aan een pagina van AEM Sites om veelvoudige keuzen aan gebruikers te verstrekken die op hun voorkeur en vereisten worden gebaseerd. Met AEM paginaeditor kunt u snel meerdere formulieren insluiten op uw AEM Sites-pagina&#39;s. U kunt de component **[!UICONTROL Adaptive Form Container]** meerdere keren gebruiken om Adaptieve Forms toe te voegen aan een AEM Sites-pagina. U kunt de component **[!UICONTROL Adaptive Forms - Embed]** meerdere keren gebruiken op een AEM Sites-pagina, alleen als de optie **[!UICONTROL Form covers entire width of the frame]** is geselecteerd. Als de optie **[!UICONTROL Form covers entire width of the frame]** niet is ingeschakeld, ondersteunt de AEM Sites-pagina slechts één adaptief formulier dat zonder iframe kan worden gebruikt. Als u meer Adaptieve Forms wilt toevoegen met de component **[!UICONTROL Adaptive Forms - Embed]** , selecteert u de optie **[!UICONTROL Form covers entire width of the frame]** .
+* **voeg veelvoudige vormen aan een de pagina of Fragment van de Ervaring van AEM Sites toe:** u kunt veelvoudige AanpassingsForms tot stand brengen of toevoegen aan een pagina van AEM Sites om veelvoudige keuzen aan gebruikers te verstrekken die op hun voorkeur en vereisten worden gebaseerd. Met de AEM Page Editor kunt u snel meerdere formulieren insluiten op uw AEM Sites-pagina&#39;s. U kunt de component **[!UICONTROL Adaptive Form Container]** meerdere keren gebruiken om Adaptieve Forms toe te voegen aan een AEM Sites-pagina. U kunt de component **[!UICONTROL Adaptive Forms - Embed]** meerdere keren gebruiken op een AEM Sites-pagina, alleen als de optie **[!UICONTROL Form covers entire width of the frame]** is geselecteerd. Als de optie **[!UICONTROL Form covers entire width of the frame]** niet is ingeschakeld, ondersteunt de AEM Sites-pagina slechts één adaptief formulier dat zonder iframe kan worden gebruikt. Als u meer Adaptieve Forms wilt toevoegen met de component **[!UICONTROL Adaptive Forms - Embed]** , selecteert u de optie **[!UICONTROL Form covers entire width of the frame]** .
 
 ## Overwegingen bij het insluiten van een adaptief formulier in een AEM Sites-pagina of AEM Experience Fragment {#consideration}
 
@@ -77,7 +77,7 @@ Alvorens u begint een nieuwe Aangepaste Vorm of een reeds bestaand Aangepast Vor
 
 ### Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving
 
-Zorg ervoor dat de [ Aangepaste Componenten van de Kern van Forms voor uw as a Cloud Service milieu van AEM Forms ](enable-adaptive-forms-core-components.md) worden toegelaten.
+Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
 
 ### Adaptieve Forms-clientbibliotheken toevoegen aan uw AEM Sites-pagina of Experience Fragment
 
@@ -88,8 +88,8 @@ Als de optie **[!UICONTROL When form covers entire width of a page]** is geselec
 
 Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw pagina van AEM Sites toe gebruikend de plaatsingspijpleiding. De clientbibliotheken toevoegen:
 
-1. De toegang en kloon uw [ Bewaarplaats van de it van AEM Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=nl-NL).
-1. Open de map AEM Cloud Service Git Repository in een planningsteksteditor. Bijvoorbeeld Microsoft® Visual Code.
+1. De toegang en kloon uw [ Bewaarplaats van de Bewaarplaats van het Bezit van de Bedieningsruimte van de Dienst van de Wolk van AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. Open de map AEM Cloud Service Git Repository in een abonnementsteksteditor. Bijvoorbeeld Microsoft® Visual Code.
 1. Open het bestand `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` en voeg de volgende code toe aan het bestand:
 
    ```
@@ -126,7 +126,7 @@ Voeg de **Klantenkopballen** en **Customfooterlibs** cliëntbibliotheken aan uw 
        </sly> 
    ```
 
-1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=nl-NL) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
+1. [ stel de plaatsingspijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) in werking om de cliëntbibliotheken aan uw milieu van AEM as a Cloud Service op te stellen.
 
 ### Adaptieve Forms - Embed(v2) inschakelen voor uw AEM Sites-pagina of Experience Fragment
 
@@ -134,7 +134,7 @@ Voer de volgende stappen uit om **[!UICONTROL Adaptive Forms – Embed(v2)]** -c
 
 1. Open de AEM Sites-pagina of Experience Fragment om te bewerken. Als u de pagina wilt openen om te bewerken, selecteert u de pagina en klikt u op **[!UICONTROL Edit]** .
 1. Open de sjabloon van de pagina Sites of Experience Fragment. Om het malplaatje te openen, ga naar **[!UICONTROL Page Information]** ![ de Informatie van de Pagina ](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
-1. In de mening van de Structuur, klik het **[!UICONTROL Policy]** ![ Beleid ](/help/forms/assets/Smock_FeedManagement_18_N.svg) pictogram in de menubar. In de **[!UICONTROL Allowed Components]** lijst en selecteer **[!UICONTROL Adaptive Forms – Embed(v2)]** checkbox onder **[AEM de Naam van het Project van Archetype ] - AanpassingsVorm**.
+1. In de mening van de Structuur, klik het **[!UICONTROL Policy]** ![ Beleid ](/help/forms/assets/Smock_FeedManagement_18_N.svg) pictogram in de menubar. In de **[!UICONTROL Allowed Components]** lijst en selecteer **[!UICONTROL Adaptive Forms – Embed(v2)]** checkbox onder de **[Naam van het Project van de Archetype van AEM ] - Aangepaste Vorm**.
 1. Klik op **[!UICONTROL Done]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
@@ -267,7 +267,7 @@ Een inline-frame (iframe) is een HTML-element dat een adaptief formulier laadt n
      >
      > Als u meerdere formulieren wilt insluiten in een AEM Sites-pagina, schakelt u het selectievakje **[!UICONTROL Form covers entire width of the frame]** in.
 
-   * Als het selectievakje **[!UICONTROL Form covers entire width of the frame]** niet is ingeschakeld, beslaat een adaptief formulier niet de volledige breedte van de container. In plaats daarvan wordt een iframe gebruikt om het formulier te genereren, dat niet verder kan worden uitgebreid dan een bepaalde breedte. Deze aanpak is handig wanneer een adaptief formulier duidelijke grenzen heeft en moet bestaan naast andere AEM componenten in de container. Als deze optie niet is ingeschakeld, kan slechts één adaptieve Forms-pagina in AEM Sites zonder iframe worden ingesloten.
+   * Als het selectievakje **[!UICONTROL Form covers entire width of the frame]** niet is ingeschakeld, beslaat een adaptief formulier niet de volledige breedte van de container. In plaats daarvan wordt een iframe gebruikt om het formulier te genereren, dat niet verder kan worden uitgebreid dan een bepaalde breedte. Deze aanpak is handig wanneer een adaptief formulier duidelijke grenzen heeft en moet bestaan naast andere AEM-componenten in de container. Als deze optie niet is ingeschakeld, kan slechts één adaptieve Forms-pagina in AEM Sites zonder iframe worden ingesloten.
 
      >[!NOTE]
      >
@@ -339,11 +339,11 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-## Publish ingesloten adaptief formulier {#publishing-embedded-adaptive-form}
+## Ingesloten adaptief formulier publiceren {#publishing-embedded-adaptive-form}
 
-Overweeg de volgende scenario&#39;s voor het publiceren van een ingebedde Aangepaste Vorm in AEM plaatspagina:
+Neem de volgende scenario&#39;s in overweging voor het publiceren van een ingesloten adaptief formulier in AEM-sitepagina:
 
-* Als u de pagina met AEM sites voor het eerst publiceert en deze een ingesloten adaptief formulier bevat, publiceert u de pagina met sites en het ingesloten element.
+* Als u de AEM-sitepagina voor het eerst publiceert en een ingesloten adaptief formulier bevat, publiceert u de sitepagina en het ingesloten element.
 * Als u alleen het ingesloten adaptieve formulier hebt gewijzigd in een gepubliceerde sitepagina, publiceert u het oorspronkelijke element en de wijzigingen worden weerspiegeld in de gepubliceerde sitepagina. De gepubliceerde sitepagina bevat een verwijzing naar het element en de pagina hoeft niet opnieuw te worden gepubliceerd.
 * Als u de sitepagina en het ingesloten adaptieve formulier hebt gewijzigd, publiceert u de sitepagina en het ingesloten element opnieuw.
 
@@ -360,7 +360,7 @@ Voer een van de volgende handelingen uit om een configuratie of eigenschap van h
 
 ## Aanbevolen procedures {#best-practices}
 
-Houd rekening met de volgende punten wanneer u Adaptive Forms insluit in AEM sitepagina&#39;s:
+Houd rekening met de volgende punten wanneer u Adaptive Forms insluit op AEM-sitepagina&#39;s:
 
 * Koptekst en voettekst in het oorspronkelijke formulier worden niet opgenomen in het ingesloten formulier.
 * Concepten en opmerkingen van gebruikers met ingesloten formulieren worden ondersteund en kunnen worden weergegeven op de tabbladen Concepten en Verzonden Forms op de Forms Portal.

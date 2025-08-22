@@ -3,13 +3,13 @@ title: Hoe kunt u formulierkoppelingen toevoegen op de AEM Sites-pagina met behu
 description: Leer hoe u koppelingen naar formulieren toevoegt aan de AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
-
 
 # Formulierkoppelingen toevoegen aan sitepagina
 
@@ -19,19 +19,19 @@ In het scenario van de bankenwebsite, verbetert de **Portaal van de Verbinding**
 
 ## Voorwaarde
 
-Voordat u de verschillende mogelijkheden van een Forms Portal-component gaat verkennen, moet u ervoor zorgen dat Core Components geschikt zijn voor uw omgeving. Voor gedetailleerde instructies op hoe te om de Componenten van de Kern voor uw milieu toe te laten, [ klik hier ](/help/forms/enable-adaptive-forms-core-components.md).
+Voordat u de verschillende mogelijkheden van een Forms Portal-component gaat verkennen, moet u ervoor zorgen dat Core Components geschikt zijn voor uw omgeving. Installeer de nieuwste versie om Adaptive Forms Core Components in te schakelen voor uw AEM Cloud Service-omgeving.
 
 Nadat u de nieuwste Core Components in uw omgeving hebt geïmplementeerd, zijn de Forms Portal-componenten toegankelijk in uw ontwerpomgeving.
 
 ## De component Koppeling toevoegen aan uw sitepagina
 
-Om de **poortcomponent van de Verbinding** &lbrace;aan uw pagina van Plaatsen toe te voegen, voer de volgende stappen uit:
+Om de **poortcomponent van de Verbinding** {aan uw pagina van Plaatsen toe te voegen, voer de volgende stappen uit:
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
    ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
-1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Link]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
+1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Link]** checkbox onder de **[Naam van het Project van het Archetype van AEM ] - Forms en Communicatie Portaal**.
 
    ![ de Selectie van het Beleid ](/help/forms/assets/add-link.png)
 
@@ -55,7 +55,7 @@ Nu, vorm de eigenschappen van de **component van de Verbinding**.
 
 ## Begrijp de eigenschappen van de component van de Verbinding
 
-U kunt **eigenschappen van de 1&rbrace; component van de Verbinding &lbrace;gemakkelijk aanpassen gebruikend Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Link]** wordt geopend.
+U kunt **eigenschappen van de 1} component van de Verbinding {gemakkelijk aanpassen gebruikend Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Link]** wordt geopend.
 
 ### Tabblad weergeven
 
@@ -77,7 +77,7 @@ Geef op het tabblad **[!UICONTROL Query Params]** de aanvullende parameters op i
 
 ## Formulierkoppelingen op de pagina Sites weergeven met de component Link
 
-Voorproef de pagina van Plaatsen om de verbinding aan een Aangepaste Vorm te bekijken, die in het **Info van Assets** eigenschappen lusje van de **&#x200B;**&#x200B;component van de Verbinding wordt gespecificeerd. Als u op de koppeling klikt, wordt het formulier op het scherm weergegeven voor gebruikers die het op basis van de machtigingen kunnen openen.
+Voorproef de pagina van Plaatsen om de verbinding aan een Aangepaste Vorm te bekijken, die in het **Info van Assets** eigenschappen lusje van de **** component van de Verbinding wordt gespecificeerd. Als u op de koppeling klikt, wordt het formulier op het scherm weergegeven voor gebruikers die het op basis van de machtigingen kunnen openen.
 
 ![ het Lusje van de Params van de Vraag ](/help/forms/assets/link-forms.png)
 
