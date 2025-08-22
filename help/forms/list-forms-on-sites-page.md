@@ -84,7 +84,7 @@ Nu, vorm de eigenschappen van het **Onderzoek en de component van het Registrere
 
 ## De eigenschappen van de component Search en Lister begrijpen
 
-U kunt **Onderzoek en 1} componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
+U kunt **Onderzoek en 1&rbrace; componenteneigenschappen gemakkelijk aanpassen Lister gebruikend de Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Search and Lister]** wordt geopend.
 
 ### Tabblad Weergave
 

@@ -84,7 +84,7 @@ Voer de volgende stappen uit om een adaptief formulier te maken met behulp van X
 
    >[!NOTE]
    >
-   > Na het selecteren van **Malplaatjes van de Vorm** in het 2} Model **lusje van de Vorm, kan het niet worden veranderd.**
+   > Na het selecteren van **Malplaatjes van de Vorm** in het 2&rbrace; Model **lusje van de Vorm, kan het niet worden veranderd.**
 
 
 Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.  Op basis van het type adaptief formulier worden de formulierelementen in de bijbehorende XFA-formuliersjabloon weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.

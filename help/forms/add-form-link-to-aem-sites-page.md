@@ -25,7 +25,7 @@ Nadat u de nieuwste Core Components in uw omgeving hebt geïmplementeerd, zijn d
 
 ## De component Koppeling toevoegen aan uw sitepagina
 
-Om de **poortcomponent van de Verbinding** {aan uw pagina van Plaatsen toe te voegen, voer de volgende stappen uit:
+Om de **poortcomponent van de Verbinding** &lbrace;aan uw pagina van Plaatsen toe te voegen, voer de volgende stappen uit:
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
@@ -55,7 +55,7 @@ Nu, vorm de eigenschappen van de **component van de Verbinding**.
 
 ## Begrijp de eigenschappen van de component van de Verbinding
 
-U kunt **eigenschappen van de 1} component van de Verbinding {gemakkelijk aanpassen gebruikend Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Link]** wordt geopend.
+U kunt **eigenschappen van de 1&rbrace; component van de Verbinding &lbrace;gemakkelijk aanpassen gebruikend Configure Dialoog voor een naadloze gebruikerservaring.** Om te vormen, selecteer de component en selecteer dan ![ pictogram ](assets/configure_icon.png) vormen. Het dialoogvenster **[!UICONTROL Link]** wordt geopend.
 
 ### Tabblad weergeven
 
@@ -77,7 +77,7 @@ Geef op het tabblad **[!UICONTROL Query Params]** de aanvullende parameters op i
 
 ## Formulierkoppelingen op de pagina Sites weergeven met de component Link
 
-Voorproef de pagina van Plaatsen om de verbinding aan een Aangepaste Vorm te bekijken, die in het **Info van Assets** eigenschappen lusje van de **** component van de Verbinding wordt gespecificeerd. Als u op de koppeling klikt, wordt het formulier op het scherm weergegeven voor gebruikers die het op basis van de machtigingen kunnen openen.
+Voorproef de pagina van Plaatsen om de verbinding aan een Aangepaste Vorm te bekijken, die in het **Info van Assets** eigenschappen lusje van de **&#x200B;**&#x200B;component van de Verbinding wordt gespecificeerd. Als u op de koppeling klikt, wordt het formulier op het scherm weergegeven voor gebruikers die het op basis van de machtigingen kunnen openen.
 
 ![ het Lusje van de Params van de Vraag ](/help/forms/assets/link-forms.png)
 

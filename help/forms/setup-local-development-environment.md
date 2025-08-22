@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Lokale ontwikkelomgeving instellen voor AEM Forms {#overview}
 
-Wanneer u een [!DNL  Adobe Experience Manager Forms] als een [!DNL  Cloud Service] -omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in in de cloud. Daarnaast kunt u ook een lokale ontwikkelomgeving instellen en configureren.
+Wanneer u een [!DNL &#x200B; Adobe Experience Manager Forms] als een [!DNL &#x200B; Cloud Service] -omgeving instelt en configureert, stelt u ontwikkelings-, staging- en productieomgevingen in in de cloud. Daarnaast kunt u ook een lokale ontwikkelomgeving instellen en configureren.
 
 U kunt de lokale ontwikkelomgeving gebruiken om de volgende acties uit te voeren zonder u aan te melden bij de ontwikkelomgeving van de cloud:
 
@@ -272,7 +272,7 @@ Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays impl
 >[!NOTE]
 >
 > Stel op AEM Archetype versie 30 of hoger gebaseerd project in voor Microsoft® Dynamics 365 en Salesforce Form Data Model (FDM) met AEM Forms as a Cloud Service.
-> > Stel op AEM Archetype versie 32 of hoger gebaseerd project in voor het ophalen en gebruiken van de thema&#39;s Tranquil, Urbane en Ultramarine met AEM Forms as a Cloud Service.
+> &#x200B;> Stel op AEM Archetype versie 32 of hoger gebaseerd project in voor het ophalen en gebruiken van de thema&#39;s Tranquil, Urbane en Ultramarine met AEM Forms as a Cloud Service.
 
 Het project instellen:
 

@@ -92,7 +92,7 @@ Het aanpassen van een thema is een proces met meerdere stappen. Voer de stappen 
 1. [Een thema testen](#test-the-theme)
 1. [Een thema implementeren](#deploy-the-theme)
 
-De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **** thema van het Canvas, maar het is belangrijk om op te merken dat u om het even welk thema kunt klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
+De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **&#x200B;**&#x200B;thema van het Canvas, maar het is belangrijk om op te merken dat u om het even welk thema kunt klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
 
 Laten we beginnen met een proces om een merkervaring te maken voor de Adaptieve Forms op basis van uw Core-component met gebruik van thema&#39;s.
 
