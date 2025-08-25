@@ -57,11 +57,11 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/get-started">
    <img alt="AEM-bureaubladtoepassing gebruiken" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/get-started">
       <strong> Desktop app van AEM van het Gebruik &lbrace;</strong>
       </a>
    </div>
@@ -70,11 +70,11 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html">
    <img alt="Adobe Asset Link gebruiken" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html">
       <strong> de Verband van Activa van Adobe van het Gebruik </strong>
       </a>
    </div>
@@ -213,11 +213,11 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+   <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
    <img alt="Slim uitsnijden" src="./assets/smart-cropping.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+      <a href="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
       <strong> Slim Uitsnijden </strong>
       </a>
    </div>
@@ -520,7 +520,7 @@ U kunt Asset Selector integreren met een Adobe- of een niet-Adobe-toepassing.
 
 * **Integratie met Adobe Workfront**: [!DNL Adobe Workfront] is een het werkbeheertoepassing die u helpt de volledige levenscyclus van het werk in één plaats beheren. Dankzij de integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid en tijd-aan-markt van inhoud verbeteren door het werk en het beheer van digitale elementen intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
-  Adobe biedt aan [  [!DNL Workfront]  te integreren en  [!DNL Adobe Experience Manager Assets]  ](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Adobe biedt aan [  [!DNL Workfront]  te integreren en  [!DNL Adobe Experience Manager Assets]  ](https://experienceleague.adobe.com/nl/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
 * **Integratie met Cijfer**: AEM Assets integreert binnen met Cijfer, dat ontwerpers toestaat om tot de activa toegang te hebben die direct in AEM Assets van binnen het Gebruikersinterface van Figma worden opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Figma-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud in de AEM Assets-opslagplaats opslaan. Om tot de Schakelaar van AEM Assets toegang te hebben beschikbaar op de Communautaire pagina van Figma, klik [ hier ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -586,11 +586,11 @@ Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Asset
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integratie met Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/combine/assets">
       <strong> Integratie met Adobe Journey Optimizer </strong>
       </a>
    </div>
@@ -599,11 +599,11 @@ Als u reeds een [!DNL Edge Delivery Services] website hebt, zie [[!DNL AEM Asset
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/nl/docs/commerce/aem-assets-integration/overview">
    <img alt="Integratie met Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/nl/docs/commerce/aem-assets-integration/overview">
       <strong> Integratie met Commerce </strong>
       </a>
    </div>
