@@ -150,7 +150,7 @@ Configureer het filter Referrer om uw specifieke Edge Delivery-sitedomeinen toe 
 
 3. De configuratie implementeren via Cloud Manager
 
-Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [ Gids van de Filter van de Verwijzer 0&rbrace;.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [ Gids van de Filter van de Verwijzer 0&rbrace;.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 #### &#x200B;3. Problemen met CORS (Cross Origin Resource Sharing)
 
@@ -180,10 +180,10 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Vervang `main--abc--adobe.aem.live` en `main--abc1--adobe.aem.live` door de werkelijke sitedomeinen. Voor elke site die vanuit dezelfde opslagplaats wordt gehost, is een apart CORS-configuratieitem vereist.
 
-Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Om CORS voor uw lokale ontwikkelomgeving toe te laten, verwijs naar [ het Delen van het Middel van de Cross-Origin (CORS) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) artikel begrijpen.
+Om CORS voor uw lokale ontwikkelomgeving toe te laten, verwijs naar [ het Delen van het Middel van de Cross-Origin (CORS) ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) artikel begrijpen.
 
 <!--
 #### 4. CDN Redirect Rules
