@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub,
 
 De volgende 3 minuten, 39 seconden video levert een geleidelijke analyse van AI Medewerker in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470361?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Toegang tot AI Assistant in AEM{#get-access}
 
@@ -44,17 +45,15 @@ Om gebruikers toegang tot de Medewerker AI in AEM te verlenen, moet uw Admin van
 
 AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [ overzicht van de Diensten van Adobe Identity Management ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
->[!NOTE]
-> 
->Klantenorganisaties moeten aanvullende wettelijke voorwaarden accepteren om AI Assistant mogelijk te maken. Neem contact op met uw Adobe-accountvertegenwoordiger voor meer informatie.
-
 **om toegang tot AI Medewerker in AEM te krijgen:**
 
-1. [ de Klanten moeten de AI van de Gen rijder met Adobe ](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1) ondertekenen.
+1. Klanten moeten een aanvullende overeenkomst hebben om toegang te krijgen tot de meeste door AI aangedreven en agentische mogelijkheden in Adobe Experience Manager. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie.
 
-   De GenAI Rider is een juridische overeenkomst tussen een klant en Adobe, die vereist is om de meeste AI- en Angic-mogelijkheden te gebruiken. Neem contact op met de klantenservice van Adobe voor meer informatie.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. AEM Admin vormt de AI Medewerker voor gebruik in hun organisatie. Zie [ de Medewerker AI in AEM ](/help/implementing/cloud-manager/aem-ai-assistant-admin.md) vormen.
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. AEM Admin vormt de AI Medewerker voor gebruik in hun organisatie. Zie [ de Medewerker AI in AEM ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) vormen.
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +92,7 @@ De productkennis omvat concepten en onderwerpen die uit de documentatie van de L
 | Aanbevolen lessen | <ul><li>Wat is de Universele Redacteur?</li><li>Hoe maak ik een programma in Cloud Manager?</li></ul> |
 | Openbare detectie | <ul><li>Hoe gebruik ik de Universal Editor?</li><li>Is er een manier om inhoud van één milieu aan een andere te kopiëren?</li></ul> |
 | Problemen oplossen | <ul><li>Waarom heb ik geen toegang tot de Universal Editor?</li><li>Waarom mislukt mijn pijpleiding?</li></ul> |
-| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen &#x200B;**<br>**Voorbeelden** |
+| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen **<br>**Voorbeelden** |
 | Geautomatiseerde steun de verwezenlijking van kaartjes het vangen AI Hulp praatjegeschiedenis en context | <ul><li>Maak een ondersteuningsticket voor mij.</li></ul> |
 | Status van ondersteuningsticket ophalen | <ul><li>Toon me alle steunkaartjes die ik heb geopend.</li><li>Toon me de status van kaartje &quot;E—&quot;</li></ul> |
 
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ U kunt de AI Medewerker in AEM terugstellen en een nieuw gesprek beginnen wannee
 
    ![ AI Hulp pictogram op de toolbar ](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag, dan druk `Enter` of klik ![ verzend pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag of herinnering, dan druk `Enter` of klik ![ verzend pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+   >[!NOTE]
+   >
+   >Persoonlijke gegevens mogen niet in uw invoer worden opgenomen, omdat het niet nodig is om dit gereedschap te gebruiken.
 
    ![ vakje van de Tekst bij bodem van het AI Hulppaneel ](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ AI Assistant in AEM bevat een functie voor het opsporen van ontdekkingen waarmee
    *Comité die snelle categorieën in AI Medewerker tonen.*
 
 1. Selecteer een categorie om een lijst met verwante vragen weer te geven.
-1. Selecteer een vraag om voorbeelden weer te geven van de typen vragen die de AEM AI Assistant kan beantwoorden.
+1. Selecteer een vraag om voorbeelden te zien van de typen vragen die de AI Assistant kan beantwoorden.
 
 1. Om het snelle ontdekkingspaneel te verbergen, klik ![ leer opnieuw pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 

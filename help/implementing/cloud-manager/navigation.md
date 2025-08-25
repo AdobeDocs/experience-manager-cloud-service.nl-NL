@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 0%
 
 Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma&#39;s en omgevingen te beheren.
 
+
 De interface voor cloud-beheer bestaat voornamelijk uit twee grafische interfaces:
 
 * [ de Mijn console van Programma&#39;s ](#my-programs-console) is waar u al uw programma&#39;s kunt bekijken en beheren.
@@ -25,6 +26,12 @@ De interface voor cloud-beheer bestaat voornamelijk uit twee grafische interface
 >[!TIP]
 >
 >Ook controleer de [ onboarding documentatiereis ](/help/journey-onboarding/overview.md) voor een volledig overzicht van hoe te met AEM as a Cloud Service het gebruiken van Cloud Manager in werking te stellen.
+
+
+## AI Assistant in AEM
+
+Voor klanten die [ voltooide noodzakelijke criteria ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [ Medewerker AI in AEM ](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
 
 ## Mijn programmaconsole {#my-programs-console}
 
@@ -39,7 +46,7 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
    * **Begin** mening (gebrek) die **Mijn mening van Programma&#39;s** met een overzicht van alle programma&#39;s selecteert
    * **Vergunning** die tot het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) toegang heeft.
    * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend ![ het menupictogram van de Show ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in de [ kopbal van Cloud Manager ](#cloud-manager-header).
-1. [ Statistieken en vraag-aan-actie ](#statistics) voor een overzicht van uw recente activiteit
+1. [ Statistieken en call-to-action ](#statistics) voor een overzicht van uw recente activiteit
 1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
 1. [ Snelle verbindingen ](#quick-links-section) om tot verwante middelen gemakkelijk toegang te hebben.
 
@@ -55,15 +62,15 @@ Er staan twee werkbalken boven op elkaar.
 
 De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Manager navigeert. Het is een anker dat u toegang geeft tot instellingen en informatie die van toepassing zijn op alle Cloud Manager-programma&#39;s.
 
-![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
+![ de kopbal van Experience Cloud ](assets/experience-cloud-header.png)
 
 1. Klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (toon of verberg zijmenu) om u toegang tot een verscheidenheid van lusjes te geven die u aan specifieke delen van een individueel programma kunnen nemen. Of, kunt u tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
-1. Klik op de knop Adobe Cloud Manager om terug te keren naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
+1. Klik op de knop Adobe Cloud Manager om terug te keren naar de My Programs console van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
 1. Klik **Terugkoppeling** om terugkoppelen aan Adobe over Cloud Manager te verstrekken.
 1. Klik de organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
-1. Klik ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (de schakelaar van Oplossingen) om snel aan andere oplossingen van het Experience Cloud te springen.
+1. Klik ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (de schakelaar van Oplossingen) om snel aan andere oplossingen van Experience Cloud te springen.
 1. Klik ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) om u snelle toegang tot het leren en steunmiddelen te geven.
-1. Klik het pictogram van de Bell ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([ Meldingen ](/help/implementing/cloud-manager/notifications.md)) om berichten en aankondigingen, onder andere te zien.
+1. Klik het pictogram van de Bell ![ (](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) Meldingen [) om berichten en aankondigingen, onder andere te zien.](/help/implementing/cloud-manager/notifications.md)
 1. Klik op het pictogram voor gebruikerstoegang tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 #### Programmawerkbalk {#program-toolbar}
@@ -78,17 +85,17 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 
 ### Statistieken en oproep tot actie {#statistics}
 
-De statistiek en de vraag-aan-actie sectie verstrekt gezamenlijke gegevens voor uw organisatie, bijvoorbeeld, als u met succes uw programma&#39;s hebt opgezet, zouden de statistieken van uw activiteiten in de afgelopen 90 dagen kunnen tonen, die omvatten:
+De sectie Statistieken en call-to-action bevat geaggregeerde gegevens voor uw organisatie. Als u bijvoorbeeld uw programma&#39;s hebt ingesteld, kunnen statistieken van uw activiteiten in de afgelopen 90 dagen worden weergegeven, zoals:
 
 * Aantal [ plaatsingen ](/help/implementing/cloud-manager/deploy-code.md)
-* Aantal [&#128279;](/help/implementing/cloud-manager/code-quality-testing.md) geïdentificeerde kwesties van de 0&rbrace; codekwaliteit
+* Aantal [ geïdentificeerde kwesties van de 0} codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
 * Aantal builds
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.
 
 ### Sectie Mijn programma&#39;s {#my-programs-section}
 
-De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3&rbrace; sectie van Programma&#39;s.**
+De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3} sectie van Programma&#39;s.**
 
 De **Mijn van Programma&#39;s** sectie maakt een lijst van kaarten die elk programma vertegenwoordigen. Klik een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
@@ -118,8 +125,8 @@ Een kaart (of rij in een tabel) vertegenwoordigt elk programma en biedt een over
 * Beeld verbonden aan het Programma, indien gevormd. De bovenstaande afbeelding is &quot;WKND&quot;.
 * Naam die aan het Programma wordt toegewezen. In de bovenstaande afbeelding ziet u &quot;SecurBank Sample&quot; als de naam van het programma.
 * Servicetype:
-   * **Cloud van de Experience Manager** — voor de programma&#39;s van AEM as a Cloud Service
-   * **Experience Manager** — voor [ AMS (Adobe Managed Services) programma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager Cloud** — voor de programma&#39;s van AEM as a Cloud Service
+   * **Experience Manager** — voor [ AMS (Adobe Managed Services) programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [ Type van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Productie
@@ -171,7 +178,7 @@ In het programmaoverzicht hebt u toegang tot alle details van een Cloud Manager-
 
 1. [ Toolbars ](#program-overview-toolbar) om terug naar de Mijn console van Programma&#39;s snel te springen, en het programma te navigeren
 1. [ Lusjes ](#program-tabs) om tussen verschillende aspecten van het programma te schakelen
-1. A [ vraag-aan-actie ](#cta) die op de laatste acties van het programma wordt gebaseerd
+1. A [ call-to-action ](#cta) die op de laatste acties van het programma wordt gebaseerd
 1. Een [ overzicht van de milieu&#39;s ](#environments) van het programma
 1. Een [ overzicht van de pijpleidingen ](#pipelines) van het programma
 1. Een [ overzicht van de prestaties ](#performance) van het programma
@@ -183,7 +190,7 @@ De toolbars voor het programmaoverzicht zijn gelijkaardig aan die toolbars van d
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-In de linkerbovenhoek van de pagina bevindt zich de Adobe Cloud Manager-koptekst. U kunt ![ het menupictogram van de Zijde ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klikken om het zijmenu van lusjes aan andere gebieden van de software te tonen of te verbergen.
+In de linkerbovenhoek van de pagina bevindt zich de Adobe Cloud Manager-header. U kunt ![ het menupictogram van de Zijde ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klikken om het zijmenu van lusjes aan andere gebieden van de software te tonen of te verbergen.
 
 ![ Cloud Manager zijmenu ](assets/cloud-manager-hamburger.png)
 
@@ -215,7 +222,7 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties e
 * ![ het pictogram van de Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [ Plaatsen van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - beheert de plaatsen van Edge Delivery
 * ![ pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ Montages van het Domein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de namen van het douanedomein voor het programma
 * ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - beheer SSL certificaten voor het programma
-* ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ Toewijzingen van het Domein 1&rbrace; Sociale netwerkpictogram ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de Toewijzingen van het Domein
+* ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) Toewijzingen van het Domein 1} Sociale netwerkpictogram [ - beheer de Toewijzingen van het Domein](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * ![ het lijstpictogram van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepalen lijsten van gewenste personen voor bepaalde IP adressen
 * ![ het pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [ Reeksen van de Inhoud ](/help/implementing/developing/tools/content-copy.md) - Reeksen inhoud die voor exemplaardoeleinden wordt gecreeerd
 * ![ pictogram van de Geschiedenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [ de Activiteit van de Inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md) - de activiteiten van het Inhoudsexemplaar
@@ -229,21 +236,21 @@ Door gebrek, wanneer u een programma opent u op het **Overzicht** tabel aankomt.
 
 In de upper-left hoek van de [ kopbal van Cloud Manager ](#cloud-manager-header-2), klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu van lusjes te tonen of te verbergen.
 
-### Oproep tot actie {#cta}
+### Call-to-action {#cta}
 
-De vraag-aan-actie sectie geeft u nuttige informatie afhankelijk van de status van uw programma. Voor een nieuw programma, kunt u volgende stappen zien gegeven en een herinnering van een go-live datum, [ die tijdens programmaverwezenlijking ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) wordt geplaatst.
+In de sectie call-to-action vindt u nuttige informatie, afhankelijk van de status van uw programma. Voor een nieuw programma, kunt u volgende stappen zien gegeven en een herinnering van een go-live datum, [ die tijdens programmaverwezenlijking ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) wordt geplaatst.
 
-![ vraag-aan-actie voor een nieuw programma ](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+![ Call-to-action voor een nieuw programma ](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 Voor een levend programma, de status van uw laatste plaatsing met verbindingen voor details en het beginnen van een nieuwe plaatsing.
 
-![ Vraag-aan-actie ](/help/implementing/cloud-manager/assets/info-banner.png)
+![ Call-to-action ](/help/implementing/cloud-manager/assets/info-banner.png)
 
 ### Milieukaart {#environments}
 
 De **kaart van Milieu** geeft u een overzicht van uw milieu&#39;s en verbindingen voor snelle acties.
 
-De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik {het pictogram van het 0} Werkschema ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen** om alle milieu&#39;s van het programma te zien.
+De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik {het pictogram van het 0} Werkschema ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) tonen allen **om alle milieu&#39;s van het programma te zien.**
 
 Zie ook [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) beheren.
 
@@ -251,7 +258,7 @@ Zie ook [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) behe
 
 De **Pijpleidingen** kaart geeft u een overzicht van uw pijpleidingen en verbindingen voor snelle acties.
 
-De **Pijpleidingen** kaart maakt slechts van drie pijpleidingen een lijst. Klik {het pictogram van het 0} Werkschema ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **tonen allen** om alle pijpleidingen van het programma te zien.
+De **Pijpleidingen** kaart maakt slechts van drie pijpleidingen een lijst. Klik {het pictogram van het 0} Werkschema ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) tonen allen **om alle pijpleidingen van het programma te zien.**
 
 Zie ook [ leiden Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) voor details op hoe te om uw pijpleidingen te beheren.
 
@@ -263,4 +270,4 @@ De **kaart van Prestaties** geeft een overzicht van het **[CDN Dashboard](/help/
 
 ### Nuttige bronnen {#useful-resources}
 
-De **Nuttige 1&rbrace; sectie van Middelen &lbrace;verstrekt verbindingen aan extra het leren middelen voor Cloud Manager.**
+De **Nuttige 1} sectie van Middelen {verstrekt verbindingen aan extra het leren middelen voor Cloud Manager.**

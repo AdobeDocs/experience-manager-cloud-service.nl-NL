@@ -4,13 +4,13 @@ description: Leer hoe u de AI Assistant instelt en configureert met de Admin Con
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive"
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: aafd21c894cb909635af285bb833baa9223ae630
+exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 # AI-assistent configureren in AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
+
+<!-- badge: label="Beta" type="Positive" -->
 
 Als u de AI Assistant in AEM (Adobe Experience Manager) wilt gebruiken, moet uw organisatie zich aanmelden op Admin Console-niveau. Een productbeheerder maakt (of kiest) een gebruikersgroep en verleent deze de nieuwe machtiging &quot;AI Assistant&quot;. Iedereen die aan die groep wordt toegevoegd krijgt direct toegang tot de AI Medewerker over AEM. Als het doel bedrijfsbrede beschikbaarheid is, wijst admin eenvoudig alle gebruikers aan die groep toe.
 
@@ -50,7 +52,7 @@ Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 ## 1 - Een nieuw productprofiel maken in de Adobe Admin Console{#create-profile}
 
-1. Volg de gedetailleerde instructies in [ creeer een nieuw productprofiel in Adobe Admin Console ](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/ui/create-profile) dat in de documentatie van Experience Platform wordt gevonden.
+1. Volg de gedetailleerde instructies in [ creeer een nieuw productprofiel in Adobe Admin Console ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) dat in de documentatie van Experience Platform wordt gevonden.
 
 1. Bij het maken van het nieuwe productprofiel kunt u de volgende voorgestelde waarden voor de AI Assistant gebruiken.
 
@@ -66,7 +68,7 @@ Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 Het proces voor het toewijzen van aangepaste machtigingen aan productprofielen volgt de standaard Adobe Cloud Manager-workflow voor aangepaste machtigingen.
 
-Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe productprofiel ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions) toe
+Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe productprofiel ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions) toe
 
 1. Klik in de Admin Console op de naam van het zojuist gemaakte productprofiel (`AI Assistant in AEM`)
 
@@ -101,7 +103,7 @@ Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe produc
 
    ![ Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-user-groups.png)
 
-1. Op de **pagina van de Groepen van de Gebruiker 0&rbrace; &lbrace;, klik** Nieuwe gebruikersgroep **.**
+1. Op de **pagina van de Groepen van de Gebruiker 0} {, klik** Nieuwe gebruikersgroep **.**
 
    ![ Nieuwe knoop van de gebruikersgroep op de pagina van de Gebruikersgroepen ](/help/implementing/cloud-manager/assets/ai-assistant-new-user-group.png)
 
@@ -128,7 +130,7 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
 
 >[!BEGINTABS]
 
->[!TAB voeg individuele gebruikers  toe]
+>[!TAB  voeg individuele gebruikers ] toe
 
 1. Op de **pagina van de Gebruikersgroepen**, in de **naam van de Groep** lijst, klik de naam van de gebruikersgroep die u, of een bestaande naam van de gebruikersgroep onlangs creeerde.
 
@@ -160,7 +162,7 @@ U kunt de bulkupload-functie in de Admin Console gebruiken.
 
 Deze stap volgt de standaard Adobe Admin Console-workflow voor het toewijzen van productprofielen aan gebruikersgroepen.
 
-Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html)
+Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
 
 1. Terwijl nog in uw Medewerker AI in AEM gebruikersgroep van [ 4 - voeg gebruikers aan de gebruikersgroep ](#add-users) toe, klik de **Toegewezen productprofielen** tabel.
 1. Klik **toewijzen profiel**.
@@ -171,7 +173,7 @@ Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebru
 
    ![ de &quot;Assign producten en profielen&quot;pagina, die de &quot;Uitgezochte productprofielen&quot;dialoogdoos toont, en het &quot;AI Medewerker&quot;geselecteerde productprofiel ](/help/implementing/cloud-manager/assets/ai-assistant-select-product-profile.png)
 
-1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **&#x200B;**&#x200B;toe.
+1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **** toe.
 1. Vlak de laag-juiste hoek van **wijs producten en profielen** pagina toe, klik **sparen**.
 
    ![ het AI Hulp getoonde productprofiel dat aan de Medewerker AI in AEM wordt toegewezen gebruikersgroep ](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
@@ -194,6 +196,6 @@ Een gebruiker van de toegewezen groep hebben doe het volgende:
 
 ## Zie ook
 
-* [AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
-* [ de Toegangscontrole van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/ui/overview)
+* [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+* [ de Toegangscontrole van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Aangepaste Cloud Manager-machtigingen](/help/implementing/cloud-manager/custom-permissions.md)
