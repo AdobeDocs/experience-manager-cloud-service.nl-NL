@@ -62,7 +62,7 @@ Gebruik de volgende koppelingen voor gedetailleerde documentatie over deze geree
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
-      <strong> Desktop app van AEM van het Gebruik {</strong>
+      <strong> Desktop app van AEM van het Gebruik &lbrace;</strong>
       </a>
    </div>
    <p>

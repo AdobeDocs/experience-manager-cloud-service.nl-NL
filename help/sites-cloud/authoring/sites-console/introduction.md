@@ -253,7 +253,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 ### Handeling maken {#create-action}
 
-Creeer actie biedt gelijkaardige opties aan [**** tot werkbalkknop ](#create-button) voor het creëren van nieuwe pagina&#39;s en gelijkaardige punten aan.
+Creeer actie biedt gelijkaardige opties aan [**&#x200B;** tot werkbalkknop ](#create-button) voor het creëren van nieuwe pagina&#39;s en gelijkaardige punten aan.
 
 Bovendien biedt het de mogelijkheid om paginagerelateerde acties te maken.
 
