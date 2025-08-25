@@ -150,7 +150,7 @@ Configureer het filter Referrer om uw specifieke Edge Delivery-sitedomeinen toe 
 
 3. De configuratie implementeren via Cloud Manager
 
-Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [ Gids van de Filter van de Verwijzer 0}.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [ Gids van de Filter van de Verwijzer 0&rbrace;.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 #### &#x200B;3. Problemen met CORS (Cross Origin Resource Sharing)
 
