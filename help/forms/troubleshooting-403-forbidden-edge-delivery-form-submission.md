@@ -3,13 +3,13 @@ title: 'Probleemoplossing 403: Verboden fouten in Edge Delivery Services-formuli
 description: Leer hoe u 403 Verboden fouten kunt opsporen en oplossen bij het verzenden van formulieren van Edge Delivery Services naar AEM Publish. Deze handleiding behandelt algemene oorzaken, zoals CORS, Dispatcher-regels en problemen met het filter Referrer.
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
-
 
 # Probleemoplossing 403: Verboden fouten in Edge Delivery Services-formulierverzending {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -75,7 +75,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Vervang `main--abc--adobe.aem.live` en `main--abc1--adobe.aem.live` door de werkelijke sitedomeinen. Voor elke site die vanuit dezelfde opslagplaats wordt gehost, is een apart CORS-configuratieitem vereist.
 
-Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Dispatcher-regels
 
@@ -169,7 +169,7 @@ Configureer het filter Referrer om uw specifieke Edge Delivery-sitedomeinen toe 
 
 >[!IMPORTANT]
 >
->**Forrepoless montages:** u moet elk plaatsdomein individueel aan de `allow.hosts` serie toevoegen. Het gebruik van alleen regex-patronen volstaat mogelijk niet voor alle scenario&#39;s. Omvat zowel specifieke domeinen als regex patronen voor uitvoerige dekking.
+>**voor repoless montages:** u moet elk plaatsdomein individueel aan de `allow.hosts` serie toevoegen. Het gebruik van alleen regex-patronen volstaat mogelijk niet voor alle scenario&#39;s. Omvat zowel specifieke domeinen als regex patronen voor uitvoerige dekking.
 
 >[!WARNING]
 >
@@ -262,8 +262,8 @@ Houd Helix-5 en repoless architecturen aan de volgende richtlijnen:
 ## Aanvullende bronnen
 
 - [Configuratie van filters met verwijzing naar AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [ Begrijpend Middel dat van de dwars-Oorsprong ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) deelt
+- [ de Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [ Begrijpend Middel dat van de dwars-Oorsprong ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) deelt
 - [Edge Delivery Services Forms-documentatie](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## Verwante onderwerpen

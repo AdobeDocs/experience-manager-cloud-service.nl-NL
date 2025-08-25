@@ -4,9 +4,9 @@ description: Leer hoe u verzendacties in AEM Forms configureert met Edge Deliver
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -98,27 +98,100 @@ Verzend formuliergegevens rechtstreeks naar uw AEM as a Cloud Service-publicatie
 
 ### Configuratievereisten
 
-#### &#x200B;1. AEM Dispatcher-configuratie
+#### &#x200B;1. AEM Instance URL bijwerken in Edge Delivery
 
-Configureer Dispatcher op uw AEM-publicatieexemplaar:
+Werk de instantie-URL van AEM Cloud Service bij in het `constant.js` -bestand in het `form` blok onder `submitBaseUrl` . U kunt URL vormen die op uw milieu wordt gebaseerd:
 
-- **Verzendpaden toestaan**: wijzig `filters.any` om POST-aanvragen toe te staan `/adobe/forms/af/submit/...`
-- **Geen Omleiding**: Zorg ervoor de regels van Dispatcher niet de wegen van de vormvoorlegging omleiden
+**voor de instantie van Cloud Service**
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+**voor lokale ontwikkeling**
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. OSGi Referrer-filter
 
-In AEM OSGi console (`/system/console/configMgr`):
+Configureer het filter Referrer om uw specifieke Edge Delivery-sitedomeinen toe te staan:
 
-1. Zoeken naar &quot;Apache Sling Referrer Filter&quot;
-2. Voeg uw Edge Delivery-domein toe aan de lijst Hosts toestaan
-3. Inclusief domeinen zoals `https://your-eds-domain.hlx.page`
+1. Maak of werk het OSGi-configuratiebestand bij: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-#### &#x200B;3. CDN-omleidingsregels
+2. Voeg de volgende configuratie toe met uw specifieke sitedomeinen:
 
-Configureer uw Edge Delivery CDN om verzendingen te routeren:
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- Verzoeken van `/adobe/forms/af/submit/...` naar uw AEM-publicatieexemplaar verzenden
-- De implementatie varieert per CDN-provider (Fastly, Akamai, Cloudflare)
+3. De configuratie implementeren via Cloud Manager
+
+Voor gedetailleerde configuratie van de Filter OSGi Referrer, verwijs naar de [ Gids van de Filter van de Verwijzer 0}.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+
+#### &#x200B;3. Problemen met CORS (Cross Origin Resource Sharing)
+
+Configureer CORS-instellingen in AEM om aanvragen van uw specifieke Edge Delivery-sitedomeinen toe te staan:
+
+**Localhost van de Ontwikkelaar**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**de Plaatsen van Edge Delivery - voeg individueel elk plaatsdomein toe**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**de domeinen van Franklin van de Oudheid (als nog in gebruik)**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>Vervang `main--abc--adobe.aem.live` en `main--abc1--adobe.aem.live` door de werkelijke sitedomeinen. Voor elke site die vanuit dezelfde opslagplaats wordt gehost, is een apart CORS-configuratieitem vereist.
+
+Voor gedetailleerde configuratie CORS, verwijs naar de [ Gids van de Configuratie van CORS ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+
+
+Om CORS voor uw lokale ontwikkelomgeving toe te laten, verwijs naar [ het Delen van het Middel van de Cross-Origin (CORS) ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) artikel begrijpen.
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. Formulierconfiguratie
 
@@ -128,55 +201,54 @@ Configureer uw Edge Delivery CDN om verzendingen te routeren:
 4. Formulier publiceren naar Edge Delivery-site
 
 +++
+<!--
++++ Form Embedding
 
-+++ Formulier insluiten (optioneel)
+Embed forms created in one location into different web pages or sites.
 
-Formulieren die op één locatie zijn gemaakt, insluiten in verschillende webpagina&#39;s of sites.
+### Use Cases
 
-### Gevallen gebruiken
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- Standaardformulieren hergebruiken op meerdere bestemmingspagina&#39;s
-- Gespecialiseerde formulieren opnemen in door document geschreven inhoud
-- Eén formulier bijhouden in meerdere EDS-projecten
+### CORS Configuration
 
-### CORS-configuratie
+Configure Cross-Origin Resource Sharing on the form source:
 
-Het delen van bronnen voor kruisoorsprong configureren op de formulierbron:
-
-1. **voeg de Kopballen van CORS** aan vormbronreacties toe:
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **Configuratie van het Voorbeeld**:
+2. **Example Configuration**:
 
-       &#x200B;# Configuratie voor site waarop het formulier wordt gehost 
-        kopballen:
-        - path: /forms/**
-        douane:
-        toegang-controle-staat-oorsprong toe: https://host-domain.com
-        toegang-controle-staat-methodes toe: GET, OPTIONS 
-   
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-### Stappen insluiten
+### Embedding Steps
 
-1. **creeer en publiceer Vorm**
-   - Formulier bouwen met Document Authoring of Universal Editor
-   - Verzendmethode configureren (FSS of AEM Publish)
-   - Publiceren naar zelfstandige URL
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-2. **vorm CORS**
-   - CORS-koppen instellen op formulierbronsite
-   - Toestaan dat het hostpaginadomein het formulier ophaalt
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-3. **bed in de Pagina van de Gastheer** in
-   - Insluitingsblok van formulier toevoegen aan hostpagina
-   - Puntblok voor gepubliceerde formulier-URL
-   - Hostpagina publiceren
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-![ Ingebedde Architectuur van de Vorm ](/help/forms/assets/eds-embedded-form.png)
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ Vaak voorkomende problemen
 
