@@ -51,7 +51,7 @@ Op dezelfde manier maakt Experience Manager Assets een onderscheid tussen de sta
 
 ## Hoe kunt u gebruikers- of groepsidentiteitskaart van Adobe IMS (Adobe Identity Management Services) gebruiken om de rollen op activa in de mening van Admin van Experience Manager te plaatsen, voor het beveiligen van levering en onderzoekservaring? {#set-roles-secure-delivery-search}
 
-Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
+Gebruikers die toegang tot de Experience Manager Author-omgeving nodig hebben, worden beheerd als gebruikers van Adobe IMS in Adobe Admin Console. Voor informatie over wat de gebruikers van Adobe IMS zijn, en hoe zij in Admin Console worden betreden en worden geleid, zie [ gebruikers IMS van Adobe ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=nl-NL).
 
 
 ## Kunt u meerdere elementen tegelijk in een map goedkeuren? {#approve-multiple-assets-in-folder}
@@ -135,7 +135,7 @@ De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tusse
 
 Om het productiegebruik van [ bepalingen in Beperkte Beschikbaarheid ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) op uw rekening toe te laten:
 
-1. [ creeer een geval van de Steun van Adobe gebruikend Admin Console ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [ creeer een geval van de Steun van Adobe gebruikend Admin Console ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 
 1. Vermeld de volgende details in de Adobe Support-zaak:
 
