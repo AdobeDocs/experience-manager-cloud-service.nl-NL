@@ -96,7 +96,7 @@ De volledig-stapel pijpleidingen kunnen configuraties van de Webrij opstellen al
 
 De volgende beperkingen zijn van toepassing.
 
-* Een gebruiker moet met de **rol van de Manager van de Plaatsing worden geregistreerd 0} om pijpleidingen te vormen of in werking te stellen.**
+* Een gebruiker moet met de **rol van de Manager van de Plaatsing worden geregistreerd 0&rbrace; om pijpleidingen te vormen of in werking te stellen.**
 * Op elk ogenblik, kan er slechts één volledig-stapelpijpleiding per milieu zijn.
 
 Bovendien ben zich bewust van hoe de volledig-stapelpijpleiding zich gedraagt als u verkiest om de configuratiepijplijn van de a [ Webrij ](#web-tier-config-pipelines) te introduceren.
@@ -130,7 +130,7 @@ De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces str
 
 >[!NOTE]
 >
->Een gebruiker met de **rol van de Manager van de Plaatsing 0} kan veelvoudige front-end pijpleidingen tot stand brengen en in werking stellen gelijktijdig.**
+>Een gebruiker met de **rol van de Manager van de Plaatsing 0&rbrace; kan veelvoudige front-end pijpleidingen tot stand brengen en in werking stellen gelijktijdig.**
 >
 >Er is echter een maximum van 300 pijpleidingen per programma (voor alle soorten).
 
@@ -163,7 +163,7 @@ De volgende beperkingen zijn van toepassing.
 
 * Gebruik AEM-versie `2021.12.6151.20211217T120950Z` of hoger als u configuratieleidingen op internet wilt gebruiken.
 * [ Opt binnen aan de flexibele wijze van de hulpmiddelen van Dispatcher ](/help/implementing/dispatcher/disp-overview.md#validation-debug) om web-rij config pijpleidingen te gebruiken.
-* Een gebruiker moet met de **rol van de Manager van de Plaatsing worden geregistreerd 0} om pijpleidingen te vormen of in werking te stellen.**
+* Een gebruiker moet met de **rol van de Manager van de Plaatsing worden geregistreerd 0&rbrace; om pijpleidingen te vormen of in werking te stellen.**
 * Op elk ogenblik, kan er slechts één Web rij config pijpleiding per milieu zijn.
 * De gebruiker kan geen Web rij config pijpleiding vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
 * De structuur van de Webrij moet aan de flexibele wijzestructuur, zoals die in het document [ wordt bepaald Dispatcher in de Wolk ](/help/implementing/dispatcher/disp-overview.md#validation-debug) naleven.
