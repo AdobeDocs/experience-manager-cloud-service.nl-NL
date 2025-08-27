@@ -4,9 +4,9 @@ description: Leer over Operationele Telemetrie, een geautomatiseerde dienst die 
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Met Operationele Telemetrie kunnen klanten en Adobe begrijpen hoe eindgebruikers
 
 ## Gegevensbemonstering van de operationele telemetrieservice {#operational-telemetry-service-data-sampling}
 
-Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. De AEM-service Operationele telemetrie legt alleen informatie van een klein deel van de paginaweergaven vast. De dienst is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van als vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-operators kunnen de bemonsteringsfrequentie op dit moment niet verhogen of verlagen. Om totaal verkeer nauwkeurig te schatten, voor elke 100 paginameningen, worden de gegevens verzameld van 1, die u een betrouwbare benadering van algemeen verkeer geven.
+Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. De AEM-service Operationele telemetrie legt alleen informatie van een klein deel van de paginaweergaven vast. De dienst is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van als vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1 :100 . Site-operators kunnen de bemonsteringsfrequentie op dit moment niet verhogen of verlagen. Om totaal verkeer nauwkeurig te schatten, voor elke 100 paginameningen, worden de gegevens verzameld van 1, die u een betrouwbare benadering van algemeen verkeer geven.
 
 Als u besluit of de gegevens worden verzameld, wordt deze per pagina weergegeven en is het vrijwel onmogelijk interacties op meerdere pagina&#39;s bij te houden. Operationele telemetrie heeft door ontwerp geen concept van bezoekers of sessies, alleen van paginaweergaven.
 
@@ -42,14 +42,14 @@ De operationele dienst van de Telemetrie wordt ontworpen om gegevensinzameling t
 * De hostnaam van de site die wordt bezocht, bijvoorbeeld: `experienceleague.adobe.com`
 * Het brede type gebruikersagent en besturingssysteem dat wordt gebruikt om de pagina weer te geven, zoals: `desktop:windows` of `mobile:ios`
 * De tijd van de gegevensverzameling, zoals: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs?lang=nl-NL`
+* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs`
 * De URL van de verwijzer (de URL van de pagina die aan de huidige pagina is gekoppeld, als de gebruiker een koppeling heeft gevolgd)
 * Een willekeurig gegenereerde id van de paginaweergave, in een indeling die vergelijkbaar is met: `2Ac6`
 * Het gewicht of het omgekeerde van de bemonsteringsfrequentie, bijvoorbeeld: `100` . Dit betekent dat slechts één op de honderd paginaweergaven wordt opgenomen
 * Het controlepunt, of de naam, van een bepaalde gebeurtenis in de volgorde waarin de pagina wordt geladen. Of, interactie met het als bezoeker
 * De bron, of id, van het DOM-element waarmee de gebruiker werkt voor het hierboven vermelde controlepunt. Het kan bijvoorbeeld een afbeelding zijn
 * Het doel, of verbinding met een externe pagina of een middel dat de gebruiker met voor het hierboven vermelde controlepunt in wisselwerking staat. Bijvoorbeeld: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* De {(CWV) [&#128279;](https://web.dev/articles/lcp) prestatiesmetriek 1} van het Web van de Kern [ Grootste Voorwaardelijke Verf (LCP) ](https://web.dev/articles/lcp), [ Interactie aan Volgende Verf (INP) ](https://web.dev/articles/inp) en [ Cumulatieve Verschuiving van de Lay-out (CLS) ](https://web.dev/articles/cls) die de kwaliteit van de bezoeker van ervaring beschrijven.
+* De {(CWV) [ prestatiesmetriek 1} van het Web van de Kern ](https://web.dev/articles/lcp) Grootste Voorwaardelijke Verf (LCP) [, ](https://web.dev/articles/lcp) Interactie aan Volgende Verf (INP) [ en ](https://web.dev/articles/inp) Cumulatieve Verschuiving van de Lay-out (CLS) [ die de kwaliteit van de bezoeker van ervaring beschrijven.](https://web.dev/articles/cls)
 
 ## Hoe de Operationele Telemetrie voor een klant werkt {#how-operational-telemetry-works-for-a-customer}
 
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **de `/.rum` weg wordt geblokkeerd op mijn plaats, hoe zou ik moeten bevestigen?**
 
-   Het pad `/.rum` is vereist voor de operationele Telemetrieverzameling. Als u een CDN vóór Adobe AEM as a Cloud Service gebruikt, moet u ervoor zorgen dat het `/.rum` -pad naar dezelfde AEM-oorsprong wordt doorgestuurd als de andere AEM-inhoud. En zorg ervoor dat het op geen enkele manier wordt aangepast.
+   Het pad `/.rum` is vereist voor de operationele Telemetrieverzameling. Als u een CDN vóór Adobe AEM as a Cloud Service gebruikt, moet u ervoor zorgen dat het `/.rum` -pad naar dezelfde AEM-oorsprong wordt doorgestuurd als de andere AEM-inhoud. En zorg ervoor dat het op geen enkele manier wordt aangepast. Alternatief, kunt u de gastheer veranderen die voor Operationele Telemetrie aan `rum.hlx.page` moet worden gebruikt door [ het plaatsen van een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_EXTERNAL` aan de waarde `true`. Als u terug naar zelfde domeinverzoeken op een recentere punt wilt veranderen, verwijder eenvoudig die omgevingsvariabele opnieuw.
 
 1. **telt de Operationele inzameling van Telemetrie naar inhoudsverzoeken voor contractuele doeleinden?**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe raadt u aan de operationele telemetrie te gebruiken vanwege de aanzienlijke voordelen ervan en om Adobe in staat te stellen uw digitale ervaringen te optimaliseren door de prestaties van de website te verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
 
-   Weigeren kan betekenen dat er een kans ontbreekt om de betrokkenheid van het verkeer op uw website te verbeteren. Neem contact op met Adobe Support als er problemen optreden.
+   Weigeren kan betekenen dat er een kans ontbreekt om de betrokkenheid van het verkeer op uw website te verbeteren. Nochtans, als u om het even welke kwesties ontmoet, kunt u Operationele Telemetrie onbruikbaar maken door [ het plaatsen van een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_DISABLED` aan de waarde `true`. Als u Operationele Telemetrie op een later punt opnieuw wilt toelaten, verwijder eenvoudig die omgevingsvariabele opnieuw.

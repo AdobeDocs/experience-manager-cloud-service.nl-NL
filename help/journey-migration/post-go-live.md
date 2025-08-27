@@ -4,25 +4,21 @@ description: Leer hoe u op problemen kunt controleren en de prestaties kunt verb
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 5%
+source-wordcount: '458'
+ht-degree: 4%
 
 ---
 
 # Post Go-Live {#post-go-live}
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Troubleshooting AEM"
->abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
-
--->
+>title="Problemen met AEM oplossen"
+>abstract="Beste praktijken voor de ononderbroken ontwikkeling en het beheer van logboeken evalueren. Meer informatie over tools zoals Developer Console en CRXDE Lite voor hulp bij het oplossen van problemen met AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Logbestanden openen en beheren"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service-ontwikkelingstools"
 
 Deze reis is het laatste deel, zodat leert u hoe te om op kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is. Zorgen voor de opschoning van tijdelijke bestanden, best practices voor continue ontwikkeling controleren en logbestanden beheren.
 
@@ -65,9 +61,9 @@ Zie [ Toegang tot en het Leiden Logboeken ](/help/implementing/cloud-manager/man
 >id="aemcloud_golive_support"
 >title="Help en ondersteuning"
 >abstract="Neem contact op met het ondersteuningsteam van Adobe dat AEM ondersteunt voor meer informatie of om eventuele problemen op te lossen."
->additional-url="https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
 
-Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) voor meer details.
+Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer details.
 
 ## Documentlessen {#document-learnings}
 
