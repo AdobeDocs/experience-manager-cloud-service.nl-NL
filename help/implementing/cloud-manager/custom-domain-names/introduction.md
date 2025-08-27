@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
@@ -15,12 +15,16 @@ ht-degree: 1%
 
 # Inleiding tot aangepaste domeinnamen {#introduction}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
->title="Aangepaste domeinnamen beheren"
->abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
+>title="Manage Custom Domain Names"
+>abstract="Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Adding a Custom Domain Name"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="View & Update Custom Domain Name"
+
+-->
 
 Adobe Experience Manager as a Cloud Service wordt voorzien van een standaarddomeinnaam, eindigend in `*.adobeaemcloud.com`. Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam. De standaarddomeinnaam `*.adobeaemcloud.com` blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
