@@ -19,8 +19,8 @@ ht-degree: 5%
 >id="aemcloud_golive_troubleshooting"
 >title="Troubleshooting AEM"
 >abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
 -->
 
@@ -65,9 +65,9 @@ Zie [ Toegang tot en het Leiden Logboeken ](/help/implementing/cloud-manager/man
 >id="aemcloud_golive_support"
 >title="Help en ondersteuning"
 >abstract="Neem contact op met het ondersteuningsteam van Adobe dat AEM ondersteunt voor meer informatie of om eventuele problemen op te lossen."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
+>additional-url="https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
 
-Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer details.
+Als u vragen over toegang tot Cloud Service hebt, contacteer uw vertegenwoordiger van Adobe of [ Steun voor Experience Cloud ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) voor meer details.
 
 ## Documentlessen {#document-learnings}
 
