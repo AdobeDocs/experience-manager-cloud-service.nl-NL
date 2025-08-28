@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
+source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '1902'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.7.0) is 7 augustus 2025. De volgende release met functies (2025.8.0) is gepland voor 28 augustus 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.8.0) is 28 augustus 2025. De volgende release met functies (2025.9.0) is gepland voor 25 september 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -40,124 +40,73 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
+
+## Experience Hub {#experience-hub}
+
+[ Experience Hub ](/help/experience-hub.md) is uw gecentraliseerd uitgangspunt voor de toegang tot van alle mogelijkheden van AEM. Het is gepersonaliseerd op basis van uw gebruikersnaam en de licenties waarover u beschikt, zodat elke gebruiker zijn resultaten efficiënt kan uitvoeren.
+
+## AI Assistant in AEM {#AI-assistant}
+
+De [ AI Medewerker ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) voor AEM biedt een gespreksinterface aan die wordt ontworpen om u onmiddellijke antwoorden aan uw product-verwante vragen van AEM te krijgen (*beschikbaar aan alle gebruikers*) en de verwezenlijking van het steunkaartje te automatiseren (*beschikbaar aan Admins van de Steun*). Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub, Cloud Manager en de gebruikersinterface van de auteur.
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functies in Experience Manager Sites {#enhancements-sites}
 
-* U kunt nu inhoudsfragmenten met fragmenten waarnaar wordt verwezen (onderliggende fragmenten) in één bewerking kopiëren. Zo kunt u bestaande structuren voor inhoudsfragmenten opnieuw gebruiken om nieuwe inhoud te maken.
 * In de Admin UI van de Fragmenten van de Inhoud kunt u nu de werkschemastatus voor inhoudsfragmenten, met gedetailleerde informatie over verleden en momenteel lopende werkschema&#39;s voor een geselecteerd fragment bekijken.
-* Als u de naam van een bronpagina voor een live kopie wijzigt of een bronpagina voor een live kopie verplaatst, wordt het opnieuw publiceren van een overeenkomstige hernoemde of verplaatste pagina voor live kopieën nu geactiveerd.
+* De prestaties voor het openen van inhoudsfragmenten in de nieuwe inhoudsfragmenteditor zijn in algemene scenario&#39;s met 25% verbeterd door fragmenten te openen via UUID in plaats van via pad.
+* Wanneer u inhoudsfragmenten kopieert met fragmenten waarnaar wordt verwezen, worden kopieën van de fragmenten waarnaar wordt verwezen nu opgeslagen op dezelfde locatie als de bovenliggende fragmentkopie.
+* U kunt nu een aangepaste werkruimte configureren in de mapinstellingen om de inhoudsfragmenten te exporteren naar de geconfigureerde werkruimte in Adobe Target.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-**voegt vormen aan Dynamische malplaatjes van Media** toe
-
-U kunt vormlagen [ nu toevoegen aan Dynamische malplaatjes van Media ](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Vormlagen ondersteunen parameters voor realtime updates via de sjabloon-URL, net als afbeeldings- en tekstlagen. U kunt ook call-to-action-koppelingen (CTA) naar vormen in uw sjablonen opnemen.
-
-![ voegt vormen aan Dynamische malplaatjes van Media ](/help/assets/assets/enable-uniform-radius-shape.png) toe
-
-**AI-Gegenereerde meta-gegevensverhogingen**
-
-AEM Assets laat u nu toe om de vertoning van activa titels in de mening van de Kaart of de mening van de Lijst [ op de Activa te vormen doorbladert pagina. ](/help/assets/smart-tags.md#configure-ai-generated-titles) U kunt ervoor kiezen om de door u gedefinieerde elementtitel weer te geven, de titel die met AI is gegenereerd, of alleen een door AI gegenereerde titel te gebruiken als er geen bestaande titel voor het element bestaat.
-
-![ vorm AI-Gegenereerde titels ](/help/assets/assets/configure-title-ai-generated.png)
-
-U kunt nu ook door AI gegenereerde metagegevens op mapniveau uitschakelen.
-
 ### Nieuwe functies in Content Hub {#new-features-content-hub}
 
-**Verbeterde het brandmerken flexibiliteit in Content Hub**
+**BulkOnderzoek via de eigenschappen van de Filter**
 
-Dankzij de bestaande personalisatiefuncties kunnen beheerders in Content Hub hun implementatie verder aanpassen door aangepaste logoafbeeldingen toe te voegen. De ondersteuning voor de TIFF-bestandsindeling is ook toegevoegd voor zowel banner- als logoafbeeldingen, waardoor het ontwerp flexibeler wordt.
-
-**Slimmer delen met titelverbindingen**
-
-U kunt nu een titel toevoegen wanneer u een gedeelde koppeling genereert. Dit kan in de weergave Elementdetails of nadat u een of meer elementen hebt geselecteerd. Hierdoor kunnen ontvangers gemakkelijker het doel van elke koppeling identificeren, met name bij het ontvangen van meerdere gedeelde elementen.
-
-![ privé en openbare verbinding ](/help/assets/assets/shared-link-for-assets.png)
-
-**Verbeterde filternavigatie**
-
-Content Hub omvat nu a **tonen Al** optie binnen filters, toestaand gebruikers om alle beschikbare facetten samen met activa tellingen van de huidige beperking van het bekijken van slechts tien facetten te bekijken. De verbeterde mogelijkheden voor zoeken en sorteren binnen elk filter maken het gemakkelijker om middelen efficiënter te ontdekken en te beheren.
-
-### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
-
-Geniet van geautomatiseerde upload van nieuwe bestanden en mappen, verbeterde bestandsbewerkingen, slimmere detectie van middelen en naadloze integratie met AEM—waardoor contentbeheer sneller, duidelijker en intuïtiever wordt.
-
-Voor de volledige lijst van eigenschappen, zie {de Nota&#39;s van de Versie van de App van 0} Desktop [.](https://experienceleague.adobe.com/nl/docs/experience-manager-desktop-app/using/release-notes)
+Content Hub maakt het nu sneller om de middelen te ontdekken die u nodig hebt. Met het nieuwe Onduidelijke vermogen van het Onderzoek, kunt u veelvoudige waarden voor om het even welk filterbezit-die door een scheidingsteken (bijvoorbeeld, veelvoudige SKU IDs) wordt gescheiden ingaan-en onmiddellijk alle passende activa terugwinnen gebruikend één enkel onderzoek.
 
 ### Nieuwe functies in dynamische media met OpenAPI-mogelijkheden {#new-features-dynamic-media-with-openapi}
 
-**activa van de Voorproef alvorens** te publiceren
+**SEO vriendelijke DM met OpenAPI URLs**
 
-In [!DNL Dynamic Media with OpenAPI capabilities] kunt u nu rechtstreeks een voorvertoning van elementen weergeven op auteurspagina&#39;s van [!DNL AEM Sites] voordat u deze openbaar maakt. Deel voorvertoningspagina&#39;s met belanghebbenden om feedback te verzamelen over de visuele kwaliteit en contextafhankelijke weergave. Tijdens de revisiecyclus kunt u meerdere elementversies maken en beheren voordat u deze voltooit voor publicatie.
+Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waarbij lange door het systeem gegenereerde UUID&#39;s worden vervangen door korte, leesbare id&#39;s. Hierdoor wordt de koppeling met SEO-vriendelijk en beter afgestemd op uw merk of campagnes. URL&#39;s met Vanity worden tijdens runtime automatisch omgezet in de oorspronkelijke UUID van het element zonder bestaande workflows te onderbreken.
 
-**Verbeterde Slimme Beeldvorming voor OpenAPI beeldverzoeken**
-
-Alle OpenAPI-afbeeldingsaanvragen maken nu volledig gebruik van Smart Imaging met logica voor automatische promotie en fallback. Deze verbetering optimaliseert beelden die op apparaat en netwerkvoorwaarden worden gebaseerd, leverend snellere paginadalading en verminderd bandbreedtegebruik-terwijl het handhaven van visuele kwaliteit.
-
+>[!NOTE]
+>
+>Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-### Nieuwe functies in AEM Forms {#forms-new-features}
+* **Component van de Invoer van de Datum &amp; van de Tijd**: Een component van de Datum &amp; van de Tijd is nu beschikbaar, toelatend gebruikers om zowel datum en tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
+* [ Verbeterde de Behandeling van de Fout voor Dossier uploadt ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
+* **specificeerde de Reactie van de Fout voor Douane legt Actie** voor: Wanneer een douane voorlegt actie een niet behandelde fout ontmoet, foutencode 502 is teruggekeerd. Dit helpt identificeren dat de kwestie met de douane verwant is voorlegt actie, die het zuiveren gemakkelijker maakt.
+* [ exclusief Verborgen Gebieden van Document van Verslag ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Een nieuw bezit is toegevoegd om uitsluiting van verborgen gebieden van het Document van Verslag toe te staan. Deze optie is standaard niet geselecteerd en is van toepassing op alle formuliervelden.
 
-* **Universele Redacteur voor AanpassingsForms en de Fragmenten van de Vorm**
+### Functies vóór de release in AEM Forms
 
-  De [ Universele Redacteur ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) steunt nu de verwezenlijking van zowel Aanpassings Forms als herbruikbare Fragments van de Vorm. Auteurs kunnen visueel formulieren maken, verzendacties configureren en reCAPTCHA-validatie toevoegen, allemaal in een vereenvoudigde WYSIWYG-ontwerpomgeving. Deze mogelijkheid versnelt het maken van formulieren, verbetert de consistentie en verbetert de bescherming tegen spam en geautomatiseerd misbruik.
+* [ produceert en synchroniseert de Vertoningen van AFP ](/help/forms/document-generation-afp-api.md): U kunt de Communicatie API van AEM Forms nu gebruiken om een XDP dossier in formaat om te zetten AFP. AFP is een krachtige indeling die op grote schaal wordt gebruikt bij het afdrukken in grote ondernemingen.
+* **Verbeteringen in de Redacteur van de Regel**
+   * **bevestigt en de Verbeteringen van Functies van het Terugstellen**: Bevestig en stel methodes nu steun uitvoering op het paneel, het gebied, en vormniveaus. Eerder werden deze alleen ondersteund op formulierniveau.
+   * **Moderne Steun van JavaScript**: De steun voor ECMAScript 2019 en recentere eigenschappen is toegevoegd voor douanefuncties, die u toestaan om efficiëntere, modulaire, en herbruikbare code te schrijven
+   * **Optie van DoR van de Download in de Redacteur van de Regel**: Een functie om het Document van Verslag (DoR) te downloaden is toegevoegd als uit-van-de-doos (OTB) optie in de Redacteur van de Regel.
+     ![ document-van-Verslag ](/help/forms/assets/document-of-record-rn.gif)
+   * **Dynamische Variabelen in de Redacteur van de Regel**: U kunt dynamische (tijdelijke) variabelen in de Redacteur van de Regel voor grotere flexibiliteit nu gebruiken in het bepalen van voorwaarden en acties. Verborgen velden zijn niet meer vereist voor het opslaan van tijdelijke waarden.
+   * **Eigen gebeurtenis-Gebaseerde Regels in de Redacteur van de Regel**: U kunt douanegebeurtenissen en trekkerregels nu bepalen die op die gebeurtenissen worden gebaseerd.
+   * **context-Adequate Regels van het Comité**: In herhaalbare panelen, worden de regels nu uitgevoerd gebaseerd op context, in plaats van slechts op de laatste paneelinstantie worden toegepast.
+   * **Regels die door Parameters** worden teweeggebracht: De Redacteur van de Regel steunt nu regeluitvoering die op vraagparameters, parameters UTM, of browser parameters wordt gebaseerd.
+   * **vorm-Specifieke Functies van de Douane**: Edge Delivery Services Forms steunt nu vorm-specifieke manuscripten van de douanefunctie, die grotere flexibiliteit in het beheren van herbruikbare logica verstrekken.
+   * **Statische Invoer voor de Functies van de Douane**: De Redacteur van de Regel in Universele Redacteur steunt nu statische invoer, toestaand ontwikkelaars om, functies over veelvoudige vormen te organiseren te delen en opnieuw te gebruiken.
 
-  ![ Universele Redacteur ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+### Functies voor vroege adopters in AEM Forms
 
-
-* **de Verzenddienst van Forms voor Edge Delivery Services Forms**
-
-  [ de Dienst van de Verzending van Forms ](/help/forms/forms-submission-service.md) staat u toe om gegevens van de AanpassingsVerzending van de Vorm in populaire spreadsheetplatforms zoals Google Sheets, Microsoft OneDrive, of SharePoint naadloos op te slaan. Deze integratie stroomlijnt het gegevensbeheer door de directe verzending van formuliergegevens naar het door u gekozen werkblad mogelijk te maken, handmatige gegevensoverdracht te voorkomen en fouten te beperken.Belangrijkste voordelen zijn:
-
-   * **Directe integratie:** vorm uw vormen om gegevens aan een gespecificeerde spreadsheet direct voor te leggen.
-   * **de gegevenstoewijzing van de Douane:** kaart vormgebieden aan overeenkomstige spreadsheetkolommen voor georganiseerde opslag.
-   * **controle van de Toegang:** hefboomwerking bestaande spreadsheettoestemmingen om te beheren wie tot voorgelegde gegevens kan toegang hebben of wijzigen.
-
-* **produceer en synchroniseer AFP-uitvoeringen van Adaptieve Forms**
-
-  De [ API van de Synchronisatie van de Output van AFP ](/help/forms/document-generation-afp-api.md) laat beheerders en gebruikers toe om AFP (Geavanceerde Presentatie van de Functie) output van Adaptieve Forms te produceren en de output met externe systemen of opslagplaatsen te synchroniseren. AFP is een krachtige documentindeling die is geoptimaliseerd voor afdrukken en die vaak wordt gebruikt in grootschalige bedrijfsomgevingen.
-
-* **auto-Toewijzing Steun voor de Adaptieve Fragmenten van de Vorm**
-
-  De adaptieve Forms steunt nu [ automatische afbeelding van de Adaptieve fragmenten van de Vorm ](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). Met deze verbetering worden overeenkomende fragmenten automatisch ingevoegd wanneer schemaobjecten worden uitgelijnd met een gedefinieerde fragmentstructuur. Het vereenvoudigt het maken van formulieren, verbetert de herbruikbaarheid van fragmenten en zorgt voor consistentie tussen gegevensgeïntegreerde formulieren.
-
-* **Titel van de Vorm van de Douane in Document van Verslag**
-
-  De auteurs kunnen a [ titel van de douanevorm in het Document van Verslag ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) nu bepalen door de Titel van de Vorm van de Douane uit te geven. De aangepaste titel wordt weergegeven in de PDF-koptekst, de eigenschappen van het PDF-document en als de titel van de beginweergave wanneer de PDF wordt geopend, zodat u deze duidelijk kunt herkennen en een consistente branding hebt.
-
-* **Verbeterde Error die voor Beperkte Types van Dossier** behandelt
-
-  [ de behandeling van de Fout voor beperkte dossiertypes ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wordt nu gesteund, die niet gestaafde dossieruploads blokkeert. Wanneer gebruikers proberen een bestand te verzenden door het type te wijzigen in een niet-ondersteunde indeling, wordt tijdens het verzenden een fout gegenereerd.
-
+* **de Component van de Handtekening van de Krabbels**: U kunt de component van de Handtekening nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
+* **Directe API Integratie in de Redacteur van de Regel**: De adaptieve Forms steunt nu directe API integratie in de Visuele Redacteur van de Regel zonder een Model van de Gegevens van de Vorm te vereisen. Auteurs kunnen API&#39;s configureren met behulp van een URL- of cURL-import, invoer-/uitvoerparameters toewijzen en aanroepen beveiligen met verificatie.
 
 <!--
-### Pre-release features in AEM Forms {#forms-new-pre-release-features}
-
-**Enhancements in Rule Editor**
-
-* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
-* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
-* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
-* Rules now support the use of dynamic variables.
-* Custom event-based rules are now supported.
-* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
-* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
-* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
-
-### New Early Access Features in AEM Forms {#forms-new-early-access-features}
-
-The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
-
-These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-
 **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
@@ -173,40 +122,18 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
 
-**Redacteur van de Regel voor Interactieve Communicatie Redacteur**
-
-Creëer dynamische, gegevensgestuurde acties rechtstreeks in uw documenten met behulp van een intuïtieve, wijs-en-klik-interface. U kunt eenvoudig voorwaardelijke logica definiëren, workflows automatiseren en inhoud personaliseren zonder code te schrijven.
-
-**CLI van de Server van AEM Forms voor de Componenten van de Douane**
-
->[!VIDEO] (https://video.tv.adobe.com/v/3470514/aem-forms)
-
-Versnel uw AEM Forms Edge Delivery Services-ontwikkeling met dit CLI-programma. Produceer meteen de code en de bedrading nodig om de ontwikkeling van de douanecomponent te kickstart — geen boilerplate, geen gedoe.
-
-**API het Hulpmiddel van de Integratie voor Dynamische Gegevens van de Vorm**
-
-Met het API Integration Tool kunnen formulierauteurs dynamische, intelligente formulieren maken die automatisch gegevens ophalen en vullen van externe REST API&#39;s op basis van gebruikersinteracties. Deze integratiefunctie zonder code transformeert statische formulieren naar responsieve interfaces voor gegevensverzameling.
-
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### Knooppuntweergave voor machtigingenbeheer {#node-view}
+### JavaScript Compilation Update {#javascript-compilation}
 
-AEM introduceert het beheer voor Node-weergavemachtigingen. De belangrijkste functionaliteit blijft het zelfde als klassieke UI, maar is gebruikersvriendelijker en efficiënter. Zie het [ specifieke artikel ](/help/security/touch-ui-principal-view.md) voor verdere informatie.
+De standaard client-side bibliotheek (clientlibs) JavaScript-compilatie richt zich nu op ECMASCRIPT_2018 in plaats van ECMASCRIPT5. Deze update kan in het verleden worden overschreven, maar maakt prestatieverbeteringen, moderne JavaScript-syntaxis en functies standaard mogelijk.
 
-### Bijgewerkt implementatieproces {#updated-deprecation-process}
+### Opkomende Java API-implementaties {#java-api-deprecation}
 
-Adobe controleert regelmatig functies, bibliotheken, API&#39;s en configuraties om ervoor te zorgen dat deze voldoen aan de standaarden voor prestaties, beveiliging en waarde. Wanneer de mogelijkheden niet meer aan deze normen voldoen, zijn zij duidelijk voor verval en het gebruik moet tegen een gespecificeerde verwijderingsdatum ophouden. Adobe leidt tot deze datum en herinnert klanten aan e-mailmeldingen en acties die in Cloud Manager moeten worden uitgevoerd voordat ze nieuwe builds gaan gebruiken of implementeren. Als u de vereiste actie niet uitvoert, kan dit ertoe leiden dat u niet kunt upgraden naar nieuwe versies van AEM. Dit kan gevolgen hebben voor de beveiliging, prestaties, betrouwbaarheid en beschikbaarheid.
-
-Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md) voor verdere informatie.
-
-#### Verouderde Java API&#39;s en OSGi-configuratie die verwijderingsdatums naderen {#deprecated-near-removals}
-
-Vouw de onderstaande lijst uit om de verouderde API&#39;s en OSGi-configuraties weer te geven die niet meer moeten worden gebruikt. Raadpleeg het artikel over veroudering voor volledige informatie, inclusief de tijdlijn voor verwijderen.
+Verschillende verouderde API&#39;s richten zich op verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. Begin september worden Action Center-meldingen verzonden als API-gebruik wordt gedetecteerd. Na 25 september verschijnen er berichten tijdens Cloud Manager-builds om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
 
 <details>
-  <summary>Uitvouwen om de afwaarderingen weer te geven</summary>
-
-Java API&#39;s:
+  <summary>Uitvouwen om de afgekeurde Java API's weer te geven</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -224,19 +151,22 @@ Java API&#39;s:
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
-
-OSGi-eigenschappen:
-
-* `org.apache.sling.commons.log.LogManager` (alle eigenschappen)
-* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file` , `org.apache.sling.commons.log.pattern`)
-
 </details>
+
+<!--
+OSGi properties:
+
+* `org.apache.sling.commons.log.LogManager` (all properties)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
+* 
+
+-->
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-**Java 11 runtime* - is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere &#x200B;** runtime Java 21**.
+*Java 11 runtime* is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
 
-Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **28 augustus, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
+Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **1 Oktober, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
 
 Opmerking: de runtimeversie staat los van de build-versie van uw code. We raden u aan om samen te werken met Java 21, maar Java 11-builds worden voorlopig nog wel ondersteund. In de toekomst wordt een afzonderlijke aankondiging voor het vervangen van Java 11-builds gedeeld.
 
@@ -244,48 +174,14 @@ Opmerking: de runtimeversie staat los van de build-versie van uw code. We raden 
 
 Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Beginnend in **eind Augustus**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
+Beginnend op **25th September**, zullen om het even welke niet gesteunde douanehet registreren met voeten treden worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
 
 Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen die zich op het gedrag van het douaneregistreren baseren. Bijvoorbeeld:
 
 * Als uw logboek het door:sturen systeem een formaat van het douanelogboek verwacht, kunt u uw innameregels moeten aanpassen.
 * Als u eerder logboekbreedheid hebt verminderd door logboekniveaus te veranderen, gelieve te merken dat het terugkeren aan standaardniveaus logboekvolume kan verhogen.
 
-### Standaard leegmaken van oudere versies en controlelogboeken {#mt-defaults}
-
-Momenteel, hebben de inhoudsversies en de controlelogboeken hun bijbehorende *purge onderhoudstaken - onbruikbaar gemaakt door gebrek en zo worden geen gegevens verwijderd tenzij uitdrukkelijk gevormd.
-
-Om de prestaties van de opslagplaats te optimaliseren, wordt het leegmaken standaard ingeschakeld op een aangekondigde toekomstige datum, waarbij de volgende richtlijnen worden gevolgd:
-
-#### Inhoudversies {#mt-content}
-
-* **Nieuwe milieu&#39;s* - (gecreeerd na een aanstaande datum (die later worden meegedeeld)
-   * De versies ouder dan **30 dagen* - zullen periodiek worden geschrapt.
-   * De meest recente vijf versies in de afgelopen 30 dagen blijven behouden, samen met de meest recente versie en de huidige versie, ongeacht hun leeftijd.
-
-* **Bestaande milieu&#39;s* - (gecreeerd vóór deze aanstaande datum):
-   * De versies ouder dan **7 jaar* - zullen periodiek worden geschrapt.
-   * Alle versies in de afgelopen 7 jaar blijven behouden.
-   * Deze hoge standaarddrempel voorkomt dat recente gegevens onbedoeld worden verwijderd. Het wordt echter aanbevolen lagere waarden te configureren om de prestaties van de opslagplaats te optimaliseren.
-
-* U kunt deze gebreken door configuratie wijzigen YAML, die gebruikend de config pijpleiding wordt opgesteld.
-
-#### Controlelogboek {#mt-auditlogs}
-
-* **Nieuwe milieu&#39;s* - (gecreeerd na een aanstaande datum, die afzonderlijk zal worden meegedeeld):
-   * De replicatie, DAM, en de logboeken van de paginacontrole ouder dan * *7 dagen* - zullen periodiek worden geschrapt.
-   * Alle gebeurtenissen worden standaard geregistreerd.
-
-* **Bestaande milieu&#39;s* - (gecreeerd vóór deze aanstaande datum):
-   * De replicatie, DAM, en de logboeken van de paginacontrole ouder dan * *7 jaar* - zullen periodiek worden geschrapt.
-   * Alle gebeurtenissen worden standaard geregistreerd.
-   * Deze hoge standaarddrempel voorkomt dat recente gegevens onbedoeld worden verwijderd. Het wordt echter aanbevolen lagere waarden te configureren om de prestaties van de opslagplaats te optimaliseren.
-
-* U kunt deze gebreken door configuratie wijzigen YAML, die gebruikend de config pijpleiding wordt opgesteld.
-
-Voor meer details, zie het [ artikel van de Taken van het Onderhoud ](/help/operations/maintenance.md#defaults).
-
-### Edge Computing (Alpha-programma) {#edge-computing}
+### Edge Computing (Beta-programma) {#edge-computing}
 
 Met Edge Computing kunt u JavaScript uitvoeren op de CDN-laag, waardoor de gegevensverwerking dichter bij de eindgebruiker komt te staan. Dit vermindert latentie en maakt responsieve, dynamische ervaringen aan de rand mogelijk.
 
@@ -294,7 +190,7 @@ Vaak voorkomende gevallen van gebruik zijn:
 * Gebruikers verifiëren met een identiteitsprovider voordat toegang tot inhoud wordt verleend
 * Inhoud aanpassen op basis van geolocatie, apparaattype of gebruikerskenmerken
 * Handelend als middleware tussen CDN en uw oorsprong
-* Reacties van externe API&#39;s opnieuw opmaken (en wellicht meerdere API&#39;s samenvoegen) voordat deze naar de browser worden verzonden
+* Reacties van externe API&#39;s opnieuw opmaken (en wellicht meerdere API-reacties samenvoegen) voordat deze naar de browser worden verzonden
 * Door de server gerenderde HTML aan de rand samenstellen en bedienen met inhoud die vanuit verschillende achtergronden is geplaatst
 * Het blootstellen van een server MCP voor LLMs zoals ChatGPT en Claude om tot douanegereedschappen toegang te hebben
 
@@ -304,9 +200,9 @@ We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge De
 
 Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#configurations).
 
-Nu in een bèta, stel een config pijpleiding voor eigenschappen met inbegrip van CDN oorsprongselectors, reactie en verzoektransformaties, CDN logboek op door:sturen en meer. Gelieve te bereiken uit aan [ aemcs-cdn-config-adopter@adobe.com ](mailto:aemcs-cdn-config-adopter@adobe.com) met de details van uw gebruiksgeval.
+Nu in bèta, kunt u een config pijpleiding voor eigenschappen met inbegrip van CDN oorsprongselectors, reactie en verzoektransformaties, CDN logboek opstellen door:sturen en meer. Gelieve te bereiken uit aan [ aemcs-cdn-config-adopter@adobe.com ](mailto:aemcs-cdn-config-adopter@adobe.com) met de details van uw gebruiksgeval.
 
-### Momentopnamen voor RDE&#39;s (Alpha-programma) {#rde-snapshot-beta}
+### Momentopnamen voor RDE&#39;s (Alpha-programma) {#rde-snapshot-program}
 
 In alfa, steunen de Snelle Milieu&#39;s van de Ontwikkeling (RDEs) nu een eigenschap om een momentopname van de huidige staat van code en inhoud te nemen, die op een recentere tijd kan worden hersteld. Dit kan nuttig zijn wanneer het synchroniseren van code die kan moeten worden teruggekeerd, of wanneer het schakelen tussen ontwikkeling van verschillende eigenschappen. Het is ook mogelijk om alleen de veranderbare inhoud te herstellen als een bekend beginpunt voor het testen.
 
@@ -322,7 +218,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -342,4 +238,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
