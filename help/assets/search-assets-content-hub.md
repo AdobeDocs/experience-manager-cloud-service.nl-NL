@@ -3,9 +3,9 @@ title: Middelen zoeken in Content Hub
 description: Leer hoe te om activa in  [!DNL Content Hub] te zoeken
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,24 @@ De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeu
 
 -->
 
+## Bulkzoekopdracht {#bulk-search}
+
+Met Bulk zoeken op elementen kunt u meerdere elementen tegelijk opzoeken door een lijst met id&#39;s (zoals namen, bestandsindelingen, kleuren, tags en meer) in te voeren. In plaats van elementen één voor één te zoeken, maakt [!DNL Content Hub] Bulk Search het sneller om de middelen te ontdekken u wenst. Met dit vermogen, kunt u veelvoudige waarden voor om het even welk filterbezit-door een scheidingsteken (bijvoorbeeld, veelvoudige SKU IDs)-en onmiddellijk terugwinnen alle passende activa met één enkel onderzoek.
+
+Als u naar meerdere elementen tegelijk wilt zoeken, voert u meerdere waarden in één query in door deze te scheiden met scheidingstekens ` [ , | \t | \r | \n | \r\n ]` . U kunt ook meer scheidingstekens toevoegen, afhankelijk van uw gebruiksscenario. Zie [ BulkOnderzoek ](configure-content-hub-ui-options.md#bulk-search-configuration) vormen.
+
+Voer de volgende stappen uit om Bulk zoeken uit te voeren in de [!DNL Content Hub] :
+
+1. Zodra het BulkOnderzoek [ wordt gevormd ](configure-content-hub-ui-options.md#bulk-search-configuration), kunt u de knevel van het Onderzoek van het Bulk op de [!DNL Content Hub] filtereigenschappen zien die u vormde. U kunt deze naar wens in- of uitschakelen.
+
+1. Voeg een onderzoeksvraag toe die afbakeningen bevat die in de configuratie worden gespecificeerd. De zoekquery moet een tekenreeks bevatten die vergezeld gaat van meerdere door komma&#39;s gescheiden waarden.
+
+![ BulkOnderzoek UI ](assets/bulk-search-ui.png)
+
 ## Doe meer met zoeken {#do-more-with-search}
 
 [!DNL The Content Hub] is niet beperkt tot onderzoek, in plaats daarvan staat het u toe om extra acties uit te voeren, zoals [ download ](download-assets-content-hub.md), [ aandeel ](share-assets-content-hub.md), en [ voegt activa aan inzameling ](collections-content-hub.md), recht van het onderzoek of voorproefinterface toe. Selecteer de elementen op de pagina met zoekresultaten om deze opties weer te geven.
+
+Leer meer over [ het vormen activa in  [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+

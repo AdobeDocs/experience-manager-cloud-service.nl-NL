@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
+source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ U kunt de meta-gegevensgebieden vormen die aan de gebruikers tijdens het uploade
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
 
-Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) uit, beschikbaar naast elk beschikbaar bezit, om de etiketten uit te geven, deze gebieden verplicht of niet-verplicht te maken aan gebruikers terwijl het uploaden van activa gebruikend de **[!UICONTROL Required field]** knevel, of het pictogram van de Schrapping te klikken om het even welk meta-gegevensbezit te schrappen.
+Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/edit_icon.svg) beschikbaar naast elk beschikbaar bezit uit, om de etiketten uit te geven, deze gebieden verplicht of niet-verplicht te maken aan gebruikers terwijl het uploaden van activa gebruikend de **[!UICONTROL Required field]** knevel, of het pictogram van de Schrapping te klikken om het even welk meta-gegevensbezit te schrappen.
 
 Klik op de schakeloptie **[!UICONTROL Auto-approval]** als u alle elementen die u toevoegt aan de Experience Manager Assets-opslagplaats automatisch wilt laten goedkeuren, zodat ze direct beschikbaar zijn in Content Hub. Anders moeten DAM-auteurs of -beheerders de elementen handmatig goedkeuren om deze beschikbaar te maken op Content Hub. De schakeloptie is standaard ingesteld op Uit.
 
@@ -123,6 +123,20 @@ Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/ed
 
 De filters die op de vertoning van het Gebruikersinterface van de Configuratie op de pagina van het Onderzoek worden toegelaten:
 ![ Onderzoek op Content Hub ](assets/content-hub-filters1.png)
+
+#### Bulkzoekopdracht {#bulk-search-configuration}
+
+Voer de onderstaande stappen uit om het doorzoeken van meerdere elementen tegelijk in [!DNL Content Hub] in te schakelen:
+
+1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Filters]**.
+
+1. Klik ![ uitgeven pictogram ](assets/do-not-localize/edit_icon.svg) beschikbaar naast elke beschikbare filter.
+
+1. Schakel **[!UICONTROL Bulk Search]** in. De standaardscheidingstekens `[ , | \t | \r\n | \r | \n ]` worden automatisch weergegeven. Bovendien kunt u ook extra scheidingstekens toevoegen. Hiervoor geeft u scheidingstekens op in het invoervak, gescheiden door een `pipe symbol (|)` .
+
+   ![ BulkConfiguratie van het Onderzoek ](assets/bulk-search-configuration.png)
+
+1. Klik op **[!UICONTROL Confirm]** om de wijzigingen op te slaan. Zie [ BulkOnderzoek in Content Hub ](search-assets-content-hub.md#bulk-search) in actie.
 
 ### Gegevens van element {#configure-asset-details-content-hub}
 
@@ -248,7 +262,7 @@ Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hu
 
 ### Uitvoeringen {#renditions-content-hub}
 
-Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Uitvoeringen zijn aangepaste versies van digitale elementen, zoals afbeeldingen, documenten, enzovoort, die zijn ontworpen voor verschillende apparaten en platforms, voor optimale prestaties. Zie meer over [ vertoningen in Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Voer daartoe de volgende stappen uit:
 
@@ -312,3 +326,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Leer meer over [ delend activa in  [!DNL Content Hub]](share-assets-content-hub.md).
+
