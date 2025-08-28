@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -21,8 +21,8 @@ In deze video ziet u hoe u SSL-certificaten (Secure Socket Layer) installeert en
 >id="aemcloud_golive_sslcert"
 >title="SSL-certificaten beheren"
 >abstract="Leer hoe Cloud Manager functies voor zelfbediening heeft om SSL-certificaten te installeren en te beheren om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Status van een SSL-certificaat controleren"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Status van een SSL-certificaat controleren"
 
 ## Wat zijn SSL-certificaten? {#overview}
 

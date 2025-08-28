@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 1%
@@ -19,8 +19,8 @@ ht-degree: 1%
 >id="aemcloud_golive_domains"
 >title="Aangepaste domeinnamen beheren"
 >abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam."
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
->additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
 
 Adobe Experience Manager as a Cloud Service wordt voorzien van een standaarddomeinnaam, eindigend in `*.adobeaemcloud.com`. Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam. De standaarddomeinnaam `*.adobeaemcloud.com` blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
