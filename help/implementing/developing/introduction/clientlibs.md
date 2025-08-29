@@ -300,7 +300,7 @@ U kunt kiezen om de configuratie van preprocessoren per clientbibliotheek of sys
 
 * De eigenschappen multivalue `cssProcessor` en `jsProcessor` toevoegen aan het clientbibliotheekknooppunt
 
-Het bepalen van de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek van 0} HTML wordt niet gesteund.** Het zal slechts op de lokale SDK en niet op volledig-stapel pijpleiding executies van toepassing zijn.
+Het bepalen van de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek van 0&rbrace; HTML wordt niet gesteund.** Het zal slechts op de lokale SDK en niet op volledig-stapel pijpleiding executies van toepassing zijn.
 
 #### Indeling en voorbeelden {#format-and-examples}
 
