@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bda1ef43d452222036e9df20b6f3acee7bec8855
+source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2885'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
 * **Taal**: wijs om het even welke [ Taal ](#language-copies-fragment) exemplaren aan
 
-   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1&rbrace; exemplaren van de Taal &lbrace;verbonden aan het inhoudsfragment.](#language-copies-fragment)
+   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1} exemplaren van de Taal {verbonden aan het inhoudsfragment.](#language-copies-fragment)
 
      ![ de console van Fragmenten van de Inhoud - de indicator van de Taal ](assets/cf-managing-console-language-indicator.png)
 
@@ -246,18 +246,83 @@ Uw fragment openen voor bewerken:
 
 ## Een inhoudsfragment kopiëren {#copy-a-content-fragment}
 
+<!--
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
+
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+-->
+
+<!-- CQDOC-22785 - will replace above text -->
+
 **het Exemplaar** leidt tot een exemplaar van het geselecteerde fragment bij zijn plaats.
 
-* In de **actie van het Exemplaar** kunt u selecteren of aan **Exemplaar met kinderen** (referenced fragmenten). Hierdoor kunt u zowel het geselecteerde inhoudsfragment als alle fragmenten waarnaar wordt verwezen, kopiëren. AEM:
+* In de **actie van het Exemplaar** kunt u selecteren of aan **Exemplaar ook referenced inhoudsfragmenten**. Hierdoor kunt u zowel het geselecteerde inhoudsfragment als alle fragmenten waarnaar wordt verwezen, kopiëren. AEM:
 
    * Hiermee maakt u op de locatie een kopie van het geselecteerde inhoudsfragment.
-   * Hiermee maakt u kopieën van alle fragmenten waarnaar wordt verwezen door het geselecteerde fragment; deze worden gekopieerd naar dezelfde locatie als het oorspronkelijke fragment waarnaar wordt verwezen.
+   * Hiermee maakt u kopieën van alle fragmenten waarnaar wordt verwezen door het geselecteerde fragment.
+
+     De [ plaatsen die de referenced fragmenten aan ](#locations-that-the-referenced-fragments-are-copied-to) worden gekopieerd hangt van de optie af u selecteert:
+
+      * **Exemplaar aan de geselecteerde omslag**
+Wanneer deze optie is geselecteerd, worden de fragmenten waarnaar wordt verwezen naar dezelfde locatie gekopieerd als het oorspronkelijke geselecteerde fragment.
+
+      * **Exemplaar aan hun originele plaatsen**
+De fragmenten waarnaar wordt verwezen, worden naar dezelfde locatie gekopieerd als het oorspronkelijke fragment waarnaar wordt verwezen. Dit is de standaardinstelling en wordt gebruikt als er geen optie is geselecteerd.
 
 * De kopie van het geselecteerde fragment verwijst naar de kopieën van de fragmenten waarnaar wordt verwezen.
 
 * Er wordt een diepe kopie gemaakt. Als een inhoudsfragment waarnaar wordt verwezen ook verwijst naar fragmenten, worden deze ook gekopieerd.
 
 * De **actie van het Exemplaar** beïnvloedt andere referenced inhoud, zoals activa of beelden niet. De verwijzing (Content Reference) wordt gekopieerd als onderdeel van het nieuwe fragment, maar niet als onderdeel van de inhoud van het element of de afbeelding zelf.
+
+### Locaties waarnaar wordt verwezen, fragmenten worden gekopieerd {#locations-that-the-referenced-fragments-are-copied-to}
+
+Wanneer het kopiëren van de Fragmenten van de Inhoud u kunt specificeren waar de referenced fragmenten aan met **het Exemplaar ook zou moeten worden gekopieerd van verwijzingen voorzien inhoudsfragmenten** en de verwante opties:
+
+![ fragmenten van het Exemplaar ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### Kopiëren naar oorspronkelijke locaties {#copy-to-their-original-locations}
+
+Wanneer u **Exemplaar aan hun originele plaatsen** selecteert, worden de referenced fragmenten gekopieerd aan de zelfde plaats zoals het originele referenced fragment. Dit is ook de standaardhandeling als er geen selectie wordt gemaakt.
 
 Dus als we beginnen met:
 
@@ -289,75 +354,11 @@ FolderC
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
-<!-- CQDOC-22785 - will replace above text -->
+#### Kopiëren naar de geselecteerde map {#copy-to-the-selected-folder}
 
-<!--
-**Copy** creates a copy of the selected fragment at its location.
+Wanneer deze optie is geselecteerd, worden de fragmenten waarnaar wordt verwezen naar dezelfde locatie gekopieerd als het oorspronkelijke geselecteerde fragment.
 
-* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment.
-
-    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
-
-    * **Copy to the selected folder**
-      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
-
-    * **Copy to their original locations**
-      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
-
-When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
-
-![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
-
-#### Copy to their original locations {#copy-to-their-original-locations}
-
-When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
-
-#### Copy to the selected folder {#copy-to-the-selected-folder}
-
-When selected, the referenced fragments are copied to the same location as the original selected fragment.
-
-So, if we start with:
+Dus als we beginnen met:
 
 ```xml
 FolderA 
@@ -370,7 +371,7 @@ FolderB
    FragmentB
 ```
 
-Copying FragmentA to FolderC, would result in:
+Het kopiëren van FragmentA naar FolderC zou in resulteren:
 
 ```xml
 FolderA 
@@ -388,7 +389,6 @@ FolderC
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
--->
 
 ## Tags weergeven en beheren {#manage-tags}
 
@@ -480,7 +480,7 @@ U kunt de publicatie van inhoudsfragmenten ongedaan maken:
 
 * de toolbar van de [ redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **&#x200B;**&#x200B;of **wordt gevolgd Gepland**.
+In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **** of **wordt gevolgd Gepland**.
 
 Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service selecteren:
 
@@ -540,7 +540,7 @@ Bijvoorbeeld:
 
 Nadere bijzonderheden over de taalkopieën zijn te vinden op:
 
-* de **kolom van de Taal van de** Console van de Fragmenten van de Inhoud [&#128279;](#information-content-fragments)
+* de **kolom van de Taal van de** Console van de Fragmenten van de Inhoud [](#information-content-fragments)
 * het [ lusje van de Exemplaren van de Taal van de redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 Het pictogram geeft de landinstelling van het inhoudsfragment aan, samen met het totale aantal landinstellingen/taalkopieën dat aan het inhoudsfragment is gekoppeld. Bijvoorbeeld vanaf de console:
@@ -580,7 +580,7 @@ Zodra geselecteerd, wordt het **Filtreren door** opties getoond (onder het vakje
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3&rbrace; kolom van de Status &lbrace;:**
+Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3} kolom van de Status {:**
 
 >[!NOTE]
 >
