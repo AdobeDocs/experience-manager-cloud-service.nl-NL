@@ -5,16 +5,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: d0578e139c26372123e305e5d2ccf270ee5cec6c
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
 
 # AI Assistant in AEM {#about-ai-assistant-in-aem}
 
-De AEM (Adobe Experience Manager) AI Assistant biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op vragen over Adobe Experience Manager te stroomlijnen. Het helpt u onmiddellijke antwoorden aan uw product-verwante vragen van AEM (*beschikbaar aan alle gebruikers*) krijgen, en de verwezenlijking van het steunkaartje automatiseren (*beschikbaar om Admins* te steunen).
+De AI-assistent in Adobe Experience Manager (AEM) biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op vragen over AEM te stroomlijnen. Het helpt u onmiddellijke antwoorden aan uw product-verwante vragen van AEM (*beschikbaar aan alle gebruikers*) krijgen, en de verwezenlijking van het steunkaartje automatiseren (*beschikbaar om Admins* te steunen).
 
 De AI Assistant ondersteunt AEM as a Cloud Service, inclusief de volgende oplossingen:
 
@@ -89,7 +89,7 @@ De productkennis omvat concepten en onderwerpen die uit de documentatie van de L
 | Aanbevolen lessen | <ul><li>Wat is de Universele Redacteur?</li><li>Hoe maak ik een programma in Cloud Manager?</li></ul> |
 | Openbare detectie | <ul><li>Hoe gebruik ik de Universal Editor?</li><li>Is er een manier om inhoud van één milieu aan een andere te kopiëren?</li></ul> |
 | Problemen oplossen | <ul><li>Waarom heb ik geen toegang tot de Universal Editor?</li><li>Waarom mislukt mijn pijpleiding?</li></ul> |
-| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen &#x200B;**<br>**Voorbeelden** |
+| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen **<br>**Voorbeelden** |
 | Geautomatiseerde steun de verwezenlijking van kaartjes het vangen AI Hulp praatjegeschiedenis en context | <ul><li>Maak een ondersteuningsticket voor mij.</li></ul> |
 | Status van ondersteuningsticket ophalen | <ul><li>Toon me alle steunkaartjes die ik heb geopend.</li><li>Toon me de status van kaartje &quot;E—&quot;</li></ul> |
 
@@ -129,7 +129,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 

@@ -4,7 +4,7 @@ description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronn
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Vóór de teamleden die u aan de **rol van de Bedrijfs eigenaar** toewees kunnen
 
    Terugkeer aan de vorige stap, [ wijs de Leden van het Team aan de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) toe, voor details bij het toewijzen van de **BedrijfsEigenaar** rol aan de systeembeheerder.
 
-1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com/).
+1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com).
 1. In de Snelle groepering van de Toegang, klik **Experience Manager**.
 1. In het linkerzijpaneel, klik **Cloud Manager**.
 
@@ -112,7 +112,7 @@ Als de programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent,
 
 ## Verifieer uw gebruikersrollen {#verify-user-roles}
 
-Zodra u met succes in Cloud Manager hebt het programma geopend, kunt u verifiëren dat u het **productprofiel van de Bedrijfs eigenaar** &lbrace;wordt toegewezen.
+Zodra u met succes in Cloud Manager hebt het programma geopend, kunt u verifiëren dat u het **productprofiel van de Bedrijfs eigenaar** {wordt toegewezen.
 
 1. Vlak de hoger-juiste hoek van de pagina, klik het **pictogram van de Rekening**.
 
