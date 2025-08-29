@@ -487,7 +487,7 @@ Ga als volgt te werk om regels te kopiëren en te plakken:
 
 ## Volgende stap
 
-Om de diverse exploitanttypes en de gebeurtenissen in de regelredacteur van een Aanpassende Vorm te begrijpen, verwijs naar de [ Beschikbare Types en Gebeurtenissen van Exploitant in de Redacteur van de Regel van een Aangepast 1} artikel van de Vorm.](/help/forms/rule-editor-core-components-events-operators.md)
+Om de diverse exploitanttypes en de gebeurtenissen in de regelredacteur van een Aanpassende Vorm te begrijpen, verwijs naar de [ Beschikbare Types en Gebeurtenissen van Exploitant in de Redacteur van de Regel van een Aangepast 1&rbrace; artikel van de Vorm.](/help/forms/rule-editor-core-components-events-operators.md)
 
 
 ## Zie ook
