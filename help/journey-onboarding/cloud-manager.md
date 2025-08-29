@@ -112,7 +112,7 @@ Als de programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent,
 
 ## Verifieer uw gebruikersrollen {#verify-user-roles}
 
-Zodra u met succes in Cloud Manager hebt het programma geopend, kunt u verifiëren dat u het **productprofiel van de Bedrijfs eigenaar** {wordt toegewezen.
+Zodra u met succes in Cloud Manager hebt het programma geopend, kunt u verifiëren dat u het **productprofiel van de Bedrijfs eigenaar** &lbrace;wordt toegewezen.
 
 1. Vlak de hoger-juiste hoek van de pagina, klik het **pictogram van de Rekening**.
 
