@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2d2a206fea14d7e786a98e848bc2f2592ac65429
+source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -70,13 +70,10 @@ Beide modellen kunnen naast elkaar bestaan binnen hetzelfde Cloud Manager-progra
 
 ## Vereisten {#prerequisites}
 
-1. Aan boord van uw site in Cloud Manager
-&#x200B;- Vereist voor beide modellen. Volg een AEM-site aan boord.
+1. Aan boord van uw site in Cloud Manager - Vereist voor beide implementatiemodellen. Volg een AEM-site aan boord.
 
-2. Kies voor uw eigen git (BYOG) (optioneel)
-&#x200B;- Als u sitecode buiten Adobe Git opslaat, moet u BYOG inboarding voltooien.
+2. Breng uw eigen kit (BYOG) (optioneel) - Als u sitecode buiten Adobe Git opslaat, moet u BYOG volledig aan boord nemen.
 
-3. Edge Delivery-licentie
-&#x200B;- Controleer of er een licentie voor uw programma is voor Edge Delivery Services.
+3. Edge Delivery-licentie - Controleer of uw programma een licentie voor Edge Delivery Services heeft.
 
 
