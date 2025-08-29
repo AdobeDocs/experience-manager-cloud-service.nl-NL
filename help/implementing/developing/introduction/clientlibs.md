@@ -4,9 +4,9 @@ description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientl
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Client-Side Libraries gebruiken op AEM as a Cloud Service {#using-client-side-libraries}
 
-Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [ front-end bouwt proces in het AEM archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL), wordt het beheren van uw front-end code voor uw AEM project eenvoudig.
+Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Met AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [ front-end bouwt proces in het archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), wordt het beheren van uw front-end code voor uw project van AEM eenvoudig.
 
 Tot de voordelen van het gebruik van clientlibs in AEM behoren:
 
@@ -23,21 +23,21 @@ Tot de voordelen van het gebruik van clientlibs in AEM behoren:
 * Maak clientlibs via een weg bloot die door [ verzender ](/help/implementing/dispatcher/disp-overview.md) toegankelijk is
 * Hiermee kunt u paden herschrijven voor bestanden of afbeeldingen waarnaar wordt verwezen
 
-Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript van AEM.
+Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript vanuit AEM.
 
 >[!TIP]
 >
->De ontwikkelaars van het front-end die CSS en JavaScript voor AEM projecten creëren zouden zich met het [ AEM Archetype van het Project en zijn geautomatiseerd front-end bouwstijlproces ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) ook moeten vertrouwd maken.
+>De ontwikkelaars van het front-end die CSS en JavaScript voor de projecten van AEM creëren zouden zich met het [ Archetype van het Project van AEM en zijn geautomatiseerd front-end bouwstijlproces ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) ook moeten vertrouwd maken.
 
 ## Wat zijn clientbibliotheken? {#what-are-clientlibs}
 
-Voor sites moeten JavaScript- en CSS-bronnen en statische bronnen, zoals pictogrammen en weblettertypen, op de client worden verwerkt. Een clientlib AEM het mechanisme om (indien nodig per categorie) te verwijzen en dergelijke middelen te dienen.
+Voor sites moeten JavaScript- en CSS-bronnen en statische bronnen, zoals pictogrammen en weblettertypen, op de client worden verwerkt. Een client is een AEM-mechanisme dat naar deze bronnen verwijst (zo nodig per categorie) en deze middelen aanbiedt.
 
 AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale locatie, om ervoor te zorgen dat er maar één kopie van een bron wordt opgenomen in de HTML-uitvoer. Hierdoor wordt de efficiëntie van de levering gemaximaliseerd en kunnen dergelijke bronnen centraal in de opslagplaats worden onderhouden via proxy, zodat de toegang veilig blijft.
 
 ## Front-end ontwikkeling voor AEM as a Cloud Service {#fed-for-aemaacs}
 
-Alle JavaScript, CSS, en andere front-end activa zouden in de {[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van de AEM.  Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
+Alle JavaScript, CSS, en andere front-end activa zouden in de {[ moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van AEM. ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
 
 Het archetype kan de bronnen vervolgens compileren in één CSS- en JS-bestand en deze automatisch insluiten in een `cq:clientLibraryFolder` in de opslagplaats.
 
@@ -92,7 +92,7 @@ De clientbibliotheken onder `/apps` zijn alleen toegankelijk als er een proxyser
 1. Als u statische bronnen moet beheren, maakt u een submap met de naam `resources` onder de clientbibliotheekmap.
    * Als u statische bronnen ergens anders opslaat dan in de map `resources` , kan er niet naar worden verwezen op een publicatie-instantie.
 1. Bronbestanden toevoegen aan de bibliotheekmap.
-   * Dit wordt typisch gedaan door het front-end bouwstijlproces van [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL).
+   * Dit wordt typisch gedaan door front-end bouwt proces van het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * U kunt bronbestanden desgewenst in submappen ordenen.
 1. Selecteer de omslag van de cliëntbibliotheek en klik **creëren > dossier** creëren.
 1. Typ in het vak Bestandsnaam een van de volgende bestandsnamen en klik op OK:
@@ -123,11 +123,11 @@ Met de eigenschap `allowProxy` kunt u het volgende aanvragen:
 
 Zodra uw clientbibliotheken zijn opgeslagen en beheerd in hun clientbibliotheekmap, kunnen ze toegang krijgen via HTML.
 
-Clientbibliotheken worden geladen via een helpersjabloon die door AEM wordt geboden en die toegankelijk is via `data-sly-use` . De hulpmalplaatjes zijn beschikbaar in dit dossier, dat door `data-sly-call` kan worden geroepen.
+Clientbibliotheken worden geladen via een door AEM verschafte helpersjabloon, die toegankelijk is via `data-sly-use` . De hulpmalplaatjes zijn beschikbaar in dit dossier, dat door `data-sly-call` kan worden geroepen.
 
 Elke hulpsjabloon verwacht een `categories` optie voor het verwijzen naar de gewenste clientbibliotheken. Deze optie kan ofwel een array van tekenreekswaarden zijn, ofwel een tekenreeks met een lijst met door komma&#39;s gescheiden waarden.
 
-[ zie de documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=nl-NL#loading-client-libraries) voor meer details bij het laden van clientlibs via HTML.
+[ zie de documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) voor meer details bij het laden van clientlibs via HTML.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -135,11 +135,11 @@ Elke hulpsjabloon verwacht een `categories` optie voor het verwijzen naar de gew
 This is possible. Still need detail.
 -->
 
-## Client-bibliotheken op auteur versus Publish {#clientlibs-author-publish}
+## Clientbibliotheken op auteur versus publiceren {#clientlibs-author-publish}
 
-De meeste clientlibs zijn vereist op de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs op publiceer instanties, [ front-end bouwt hulpmiddelen ](#fed-for-aemaacs) kan worden gebruikt en via [ omslagen van de cliëntbibliotheek zoals hierboven beschreven ](#creating-clientlib-folders) worden opgesteld.
+De meeste clientlibs zijn vereist voor het AEM-publicatieexemplaar. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs op publiceer instanties, [ front-end bouwt hulpmiddelen ](#fed-for-aemaacs) kan worden gebruikt en via [ omslagen van de cliëntbibliotheek zoals hierboven beschreven ](#creating-clientlib-folders) worden opgesteld.
 
-Er zijn echter momenten waarop clientbibliotheken nodig kunnen zijn om de ontwerpervaring aan te passen. Als u bijvoorbeeld een dialoogvenster aanpast, moet u mogelijk kleine CSS- of JS-bits implementeren in de AEM ontwerpinstantie.
+Er zijn echter momenten waarop clientbibliotheken nodig kunnen zijn om de ontwerpervaring aan te passen. Als u bijvoorbeeld een dialoogvenster aanpast, moet u mogelijk kleine bits CSS of JS naar de AEM-ontwerpinstantie implementeren.
 
 ### Clientbibliotheken beheren op auteur {#clientlibs-on-author}
 
@@ -149,7 +149,7 @@ U kunt dan &quot;haken&quot;in auteursJS door uw cliëntbibliotheken aan een uit
 
 ## Foutopsporingsgereedschappen {#debugging-tools}
 
-AEM beschikt over verschillende gereedschappen voor foutopsporing en het testen van clientbibliotheekmappen.
+AEM biedt verschillende gereedschappen voor foutopsporing en het testen van clientbibliotheekmappen.
 
 ### Clientbibliotheken detecteren {#discover-client-libraries}
 
@@ -172,7 +172,7 @@ De component `dumplibs` bevat een testkiezer die de broncode weergeeft die voor 
 
 ## Extra functies voor clientbibliotheekmappen {#additional-features}
 
-Er zijn verscheidene andere eigenschappen die door de omslagen van de cliëntbibliotheek in AEM worden gesteund. Deze zijn echter niet verplicht voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Zij worden hier vermeld voor volledigheid.
+Er zijn verschillende andere functies die door clientbibliotheekmappen in AEM worden ondersteund. Deze zijn echter niet verplicht voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Zij worden hier vermeld voor volledigheid.
 
 >[!WARNING]
 >
@@ -180,14 +180,14 @@ Er zijn verscheidene andere eigenschappen die door de omslagen van de cliëntbib
 
 ### Adobe Granite HTML Library Manager {#html-library-manager}
 
-De extra montages van de cliëntbibliotheek kunnen door het **Adobe Granite Manager van de Bibliotheek van de HTML** paneel van de Console van het Systeem bij `https://<host>:<port>/system/console/configMgr` worden gecontroleerd.
+De extra montages van de cliëntbibliotheek kunnen door **Adobe Granite HTML van de Bibliotheek van de Manager** paneel van de Console van het Systeem bij `https://<host>:<port>/system/console/configMgr` worden gecontroleerd).
 
 ### Extra mapeigenschappen {#additional-folder-properties}
 
 De extra omslageigenschappen omvatten staan controle van gebiedsdelen en bedden toe, maar zijn over het algemeen niet meer nodig en hun gebruik wordt ontmoedigd:
 
-* `dependencies`: Dit is een lijst met andere categorieën in de clientbibliotheek waarvan deze bibliotheekmap afhankelijk is. Als een bestand in `F` bijvoorbeeld een ander bestand in `G` nodig heeft om correct te werken, moet op basis van twee `cq:ClientLibraryFolder` nodes `F` en `G` ten minste een van de `categories` of `G` -knooppunten deel uitmaken van de `dependencies` of `F` -lus.
-* `embed`: wordt gebruikt om code uit andere bibliotheken in te sluiten. Als knooppunt `F` knooppunten `G` en `H` insluit, is de resulterende HTML een samenvoeging van inhoud van knooppunten `G` en `H` .
+* `dependencies`: Dit is een lijst met andere categorieën in de clientbibliotheek waarvan deze bibliotheekmap afhankelijk is. Als een bestand in `cq:ClientLibraryFolder` bijvoorbeeld een ander bestand in `F` nodig heeft om correct te werken, moet op basis van twee `G` nodes `F` en `G` ten minste een van de `categories` of `G` -knooppunten deel uitmaken van de `dependencies` of `F` -lus.
+* `embed`: wordt gebruikt om code uit andere bibliotheken in te sluiten. Als node `F` knooppunten `G` en `H` insluit, is de resulterende HTML een samenvoeging van inhoud van knooppunten `G` en `H` .
 
 ### Koppeling naar afhankelijke instellingen {#linking-to-dependencies}
 
@@ -197,9 +197,9 @@ De afhankelijkheden moeten een andere `cq:ClientLibraryFolder` zijn. Om gebiedsd
 
 * **Naam:** gebiedsdelen
 * **Type:** Koord []
-* **Waarden:** de waarde van het categoriereigenschap van de cq:ClientLibraryFolder knoop die de huidige bibliotheekomslag van afhangt.
+* **Waarden:** de waarde van het categoriereigenschap van de cq :ClientLibraryFolder knoop die de huidige bibliotheekomslag van afhangt.
 
-De `/etc/clientlibs/myclientlibs/publicmain` is bijvoorbeeld afhankelijk van de `cq.jquery` -bibliotheek. De pagina die verwijst naar de hoofdclientbibliotheek genereert een HTML die de volgende code bevat:
+De `/etc/clientlibs/myclientlibs/publicmain` is bijvoorbeeld afhankelijk van de `cq.jquery` -bibliotheek. De pagina die verwijst naar de hoofdclientbibliotheek genereert een HTML met de volgende code:
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -224,7 +224,7 @@ Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren d
 
 #### Insluiten gebruiken om verzoeken te minimaliseren {#using-embedding-to-minimize-requests}
 
-In sommige gevallen zult u zien dat de uiteindelijke HTML die door uw publicatieexemplaar wordt gegenereerd voor een standaardpagina, een relatief groot aantal `<script>` -elementen bevat.
+In sommige gevallen zult u zien dat de uiteindelijke HTML die door uw publicatie-instantie wordt gegenereerd voor een standaardpagina, een relatief groot aantal `<script>` -elementen bevat.
 
 In dergelijke gevallen kan het handig zijn om alle vereiste code van de clientbibliotheek te combineren in één bestand, zodat het aantal heen en weer aanvragen bij het laden van de pagina wordt verminderd. Hiervoor kunt u `embed` de vereiste bibliotheken in uw toepassingsspecifieke clientbibliotheek plaatsen met de eigenschap embed van het knooppunt `cq:ClientLibraryFolder` .
 
@@ -288,7 +288,7 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 
 >[!NOTE]
 >
->AEM gebruikt standaard de YUI-compressor. Zie de [ documentatie van GitHub van de Compressor van YUI ](https://github.com/yui/yuicompressor/issues) voor een lijst van bekende kwesties. Het schakelen naar GCC-compressor voor bepaalde clientlibs kan een aantal problemen oplossen die tijdens het gebruik van YUI zijn waargenomen.
+>Standaard gebruikt AEM de GCC-compressor voor het miniaturen van JavaScript.
 
 >[!CAUTION]
 >
@@ -299,9 +299,8 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 U kunt kiezen om de configuratie van preprocessoren per clientbibliotheek of systeembreed te configureren.
 
 * De eigenschappen multivalue `cssProcessor` en `jsProcessor` toevoegen aan het clientbibliotheekknooppunt
-* Of bepaal de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek 0&rbrace; HTML**
 
-Een preprocessorconfiguratie op de clientlib knoop neemt belangrijkheid over de configuratie OSGI.
+Het bepalen van de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek van 0} HTML wordt niet gesteund.** Het zal slechts op de lokale SDK en niet op volledig-stapel pijpleiding executies van toepassing zijn.
 
 #### Indeling en voorbeelden {#format-and-examples}
 
@@ -337,19 +336,12 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Voor meer details op opties GCC, zie {de documentatie van 0} GCC [&#128279;](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Voor meer details op opties GCC, zie {de documentatie van 0} GCC [.](https://developers.google.com/closure/compiler/docs/compilation_levels)
 
 #### Systeemstandaardminiatuur instellen {#set-system-default-minifier}
 
-YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit om dit te wijzigen in GCC.
-
-1. Ga naar Apache Felix Config Manager op (`http://<host>:<port/system/console/configMgr`)
-1. Vind en geef de **Manager van de Bibliotheek van de HTML van de Adobe Granite** uit.
-1. Laat **toe** optie &lbrace;indien niet reeds toegelaten).
-1. Plaats het Standaard van de Bewerker van waarde **JS vormt** aan `min:gcc`.
-   * Opties kunnen worden doorgegeven als deze worden gescheiden met een puntkomma, bijvoorbeeld `min:gcc;obfuscate=true` .
-1. Klik **sparen** om de veranderingen te bewaren.
+Het instellen van de standaardminiatuur van het systeem wordt niet ondersteund in AEM as a Cloud Service.
