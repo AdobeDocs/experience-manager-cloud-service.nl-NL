@@ -5,13 +5,13 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: integreren API in regeleditor, serviceverbeteringen aanroepen
-source-git-commit: 5d25204516cb46334c4d594c16852b033f3e6c90
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
-
 
 # API integreren in regeleditor
 
@@ -25,7 +25,7 @@ Bovendien, laat de Visuele Redacteur van de Regel u **succes** en **mislukkingsm
 
 >[!NOTE]
 >
-> API-integratie in de Rule Editor is ook van toepassing op Edge Delivery Services Forms.
+> API integratie in de Redacteur van de Regel is ook van toepassing op [ Edge Delivery Services Forms authored in Universele Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Vergelijking: API-integratiemethoden
 
@@ -76,6 +76,8 @@ In de onderstaande schermafbeelding wordt het configuratievenster voor API-integ
    * **voeg/schrap** toe: Voeg nieuwe afbeeldingen toe of verwijder bestaande degenen.
 
 ## Hoofdlettergebruik: landvelden vullen in een Visumaanvraagformulier
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **Scenario**: Een overheidsagentschap verstrekt een online Vorm van de Toepassing van Visa van de volgende gebieden:
 
@@ -192,11 +194,11 @@ function retryHandler(requestFn) {
 }
 ```
 
-In de bovengenoemde code, beheert de **functie 0&rbrace; retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
+In de bovengenoemde code, beheert de **functie 0} retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
 
 >[!NOTE]
 >
-> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [ Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1&rbrace; artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
+> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [ Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1} artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
 
 ## Veelgestelde vragen
 

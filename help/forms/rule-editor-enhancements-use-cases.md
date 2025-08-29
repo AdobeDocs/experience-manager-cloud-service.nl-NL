@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verbeteringen in de regeleditor en hoofdletters/kleine letters gebruiken
 
-<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. Deze verbeteringen zijn ook van toepassing op Edge Delivery Services Forms.
+<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. Deze verbeteringen zijn ook van toepassing op Edge Delivery Services Forms.
 
 Dit artikel introduceert de meest recente verbeteringen aan de regeleditor in Adaptive Forms. Deze updates zijn ontworpen om u te helpen formuliergedrag gemakkelijker te definiëren, zonder aangepaste code te schrijven, en om een dynamischere, responsieve en gepersonaliseerde formulierervaring te maken.
 
@@ -105,6 +105,8 @@ Om te voorkomen dat het formulier door verborgen velden wordt bedekt, besluiten 
 
 **Implementatie die de Vastgestelde Waarde van de Variabele gebruikt en de functies van de Waarde van de Variabele in de Redacteur van de Regel krijgt**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 Een regel wordt gevormd op het **fragment van het Adres** gebruikend de **Vastgestelde Variabele functie van de Waarde** om een tijdelijke genoemde variabele toe te wijzen **extra heffing**. De waarde van deze variabele wordt dynamisch gewijzigd op basis van het geselecteerde land. Bijvoorbeeld:
 
 * Als de gebruiker Verenigde Staten selecteert, **extra lading** wordt geplaatst aan 500.
@@ -122,7 +124,7 @@ Het **Totale gebied van de Kosten van de Verzending** werkt dynamisch bij om op 
 >[!NOTE]
 >
 > U kunt **ook toevoegen krijgt veranderlijke waarde** functie in wanneer voorwaarde.
-> &#x200B;> ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Deze aanpak maakt dynamische, real-time berekeningen mogelijk zonder extra velden aan het formulier toe te voegen, zodat de structuur schoon en gebruiksvriendelijk blijft.
 
@@ -136,11 +138,14 @@ In plaats van het rechtstreeks binden van logica aan de gebieden, gebruikt de vo
 
 **Implementatie die de Gebeurtenis van de Verzending en op de Gebeurtenis van de Trekker gebruiken**
 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
+
 Het aanmeldingsfragment wordt aan het formulier toegevoegd, dat vooraf gedefinieerde velden voor Gebruikersnaam en Wachtwoord bevat. Een regel wordt gevormd op **krijgt OTP** knoop om het **Comité van de Bevestiging** te tonen, dat het inputgebied voor het ingaan van en het bevestigen van OTP omvat.
 
 ![ krijgt OTP Regel ](/help/forms/assets/get-otp-rule.png)
 
-In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **&#x200B;**&#x200B;teweeggebracht met de gebeurtenislading die de API reactie bevatten.
+In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **** teweeggebracht met de gebeurtenislading die de API reactie bevatten.
 
 ![ In de regel van de trekkergebeurtenis ](/help/forms/assets/trigger-event-rule.png)
 
@@ -179,7 +184,7 @@ Adaptieve Forms ondersteunt dynamische regeluitvoering met behulp van externe pa
 | Type parameter | Ondersteunde opties | Beschrijving | Voorbeeldwaarde |
 | --- | --- | --- | ---|
 | Query-parameter | `ref` (alleen tekenreekswaarden) | Algemeen sleutelwaardepaar in URL na `?` | `?ref=partner123` |
-| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1&rbrace; UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
+| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1} UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
 | URL-parameter | Hostnaam <br> Weg | Hiermee worden structurele componenten van de formulier-URL opgehaald | `hostname=www.example.com`, `path=/signup` |
 | Browserparameter | Browser van de Agent van de Agent <br> Browser Taal <br> Browser Platform | Waarden afgeleid van de browser of het apparaat van de gebruiker | `Browser Agent=Mozilla`, `Language=en-US` |
 
