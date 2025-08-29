@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
+source-git-commit: 4a1dcc9f069bdf8f5cf8abaa3f784f5ebd4922cc
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -77,12 +77,12 @@ Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waar
 
 >[!NOTE]
 >
->Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+>Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 * [ Component van de Invoer van de Datum &amp; van de Tijd ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Een component van de Datum &amp; van de Tijd is nu beschikbaar, toelatend gebruikers om zowel datum en tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
-* [ Verbeterde de Behandeling van de Fout voor Dossier uploadt ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
+* [ Verbeterde de Behandeling van de Fout voor Dossier uploadt ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
 * [ specificeerde de Reactie van de Fout voor Douane legt Actie ](/help/forms/custom-submit-action-troubleshooting.md) voor: Wanneer een douane voorlegt actie een niet behandelde fout ontmoet, foutencode 502 is teruggekeerd. Dit helpt identificeren dat de kwestie met de douane verwant is voorlegt actie, die het zuiveren gemakkelijker maakt.
 * [ exclusief Verborgen Gebieden van Document van Verslag ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Een nieuw bezit is toegevoegd om uitsluiting van verborgen gebieden van het Document van Verslag toe te staan. Deze optie is standaard niet geselecteerd en is van toepassing op alle formuliervelden.
 
@@ -130,7 +130,7 @@ De standaard client-side bibliotheek (clientlibs) JavaScript-compilatie richt zi
 
 ### Opkomende Java API-implementaties {#java-api-deprecation}
 
-Verschillende verouderde API&#39;s richten zich op verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. Begin september worden Action Center-meldingen verzonden als API-gebruik wordt gedetecteerd. Na 25 september verschijnen er berichten tijdens Cloud Manager-builds om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
+Verschillende verouderde API&#39;s richten zich op verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. Begin september worden de kennisgevingen van het Actions Center verzonden als API-gebruik wordt gedetecteerd. Na 25 september verschijnen er berichten tijdens Cloud Manager-builds om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
 
 <details>
   <summary>Uitvouwen om de afgekeurde Java API's weer te geven</summary>
@@ -218,7 +218,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -238,4 +238,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
