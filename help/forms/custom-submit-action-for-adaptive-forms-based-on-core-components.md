@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Voordat u begint met het maken van uw eerste aangepaste verzendactie voor Adapti
 
 In het onderstaande diagram worden de stappen beschreven voor het maken van een aangepaste verzendactie voor een adaptieve vorm:
 
-![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) &lbrace;width=50%, hoogte-50%)
+![ Aangepast voorlegt actiewerkschema ](/help/forms/assets/custom-submit-action-workflow.png) {width=50%, hoogte-50%)
 
 ### Clone AEM as a Cloud Service Git-gegevensopslagruimte.
 
@@ -47,7 +47,7 @@ In het onderstaande diagram worden de stappen beschreven voor het maken van een 
 
    **waar om deze informatie te vinden?**
 
-   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[ Toegang tot Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git)&quot;.
+   Voor geleidelijke instructies bij de plaats bepalen van deze details, verwijs naar het artikel van de Liga van de Ervaring van Adobe &quot;[ Toegang tot Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Uw project is klaar!**
 
@@ -214,9 +214,9 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
    1. De bijgewerkte code implementeren:
 
-      Trigger een plaatsing van uw code door de [ bestaande volledig-stapelpijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
+      Trigger een plaatsing van uw code door de [ bestaande volledig-stapelpijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Het bouwt en stelt automatisch de bijgewerkte code met de nieuwe douane op om actiessteun voor te leggen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![ Plaatsing van de Wolk ](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -268,7 +268,14 @@ Maak in de map `customsubmitaction` een nieuw bestand met de naam `.content.xml`
 
    >[!NOTE]
    >
-   > Als u foutenlogboeken in de AEM as a Cloud Service-omgeving wilt weergeven, kunt u Splunk gebruiken.
+   > * Als u foutenlogboeken in de AEM as a Cloud Service-omgeving wilt weergeven, kunt u Splunk gebruiken.
+   > * Als een aangepaste verzendhandelingsservice een niet-afgehandelde fout aantreft, retourneert AEM as a Cloud Service een foutpagina van 502.
+
+
+## Veelgestelde vragen
+
+**Q: Waarom toont mijn Adaptief Vorm een 5.x.x foutenpagina na voorlegging?**
+De aangepaste verzendactieservice is mislukt vanwege een niet-afgehandelde fout. AEM Cloud Service retourneert vervolgens de standaardfoutpagina.
 
 <!--
 ## Best practices

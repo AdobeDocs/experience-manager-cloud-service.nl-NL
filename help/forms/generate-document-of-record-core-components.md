@@ -4,9 +4,9 @@ description: Leer een sjabloon te genereren voor een Document of Record (DoR) vo
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '3099'
+source-wordcount: '3136'
 ht-degree: 0%
 
 ---
@@ -348,7 +348,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **voor de componenten van de Doos van de Controle en van de Keuzerondje, toon slechts de geselecteerde waarden**: Het plaatsen van het bezit toont slechts geselecteerde waarden van controledoos en radioknoop in [!UICONTROL Document of Record].
       * **Scheidingsteken voor veelvoudige waarde(s)**: U kunt om het even welk separator zoals komma of lijnonderbreking kiezen om veelvoudige waarden te tonen.
       * **Uitlijning van Opties**: U kunt de gewenste uitlijning (Horizontaal, Verticaal, Zelfde als Aangepast Vorm) selecteren om de groepering voor de gebieden zoals controledoos of radioknoop te plaatsen om op [!UICONTROL Document of Record] worden getoond. Standaard wordt de verticale uitlijning ingesteld voor de velden in [!UICONTROL Document of Record] . Als u de eigenschappen van de [!UICONTROL Form Field Properties] van DoR instelt, worden de eigenschappen overschreven die zijn ingesteld in [!UICONTROL Item Alignment] voor de velden op een adaptief formulier. Als u de optie [!UICONTROL Same as Aaptive form] selecteert, wordt de uitlijning zoals geconfigureerd in een instantie van de auteur van een adaptief formulier gebruikt voor [!UICONTROL Document of Record] -velden.
-      * **Aantal opties voor horizontale groepering**:U kunt het aantal opties plaatsen dat op het Document van Verslag voor de horizontale groepering moet worden getoond.
+      * **Aantal opties voor horizontale groepering**:You kan het aantal opties plaatsen dat op het Document van Verslag voor de horizontale groepering moet worden getoond.
 
 
 
@@ -415,6 +415,7 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 * **het paneel van de Vertoning als lijst:** plaatsend het paneel van bezitsvertoningen als lijst in Document van Verslag als het paneel minder dan 6 gebieden in het heeft. Alleen van toepassing op het deelvenster.
 * **sluit titel van Document van Verslag uit:** het plaatsen van het bezit sluit titel van het paneel/de lijst van Document van Verslag uit. Alleen van toepassing op deelvenster en tabel.
 * **sluit beschrijving van Document van Verslag uit:** het plaatsen van het bezit sluit beschrijving van het paneel/de lijst van Document van Verslag uit. Alleen van toepassing op deelvenster en tabel.
+* **sluit verborgen gebieden van Document van Verslag** uit: het selecteren van dit bezit sluit verborgen gebieden van het Document van Verslag uit. Dit is van toepassing op alle formuliervelden. Door gebrek, **sluit verborgen gebieden van Document van het Verslag** optie uit wordt niet geselecteerd.
 
 **het niveau van de Vorm montages**
 

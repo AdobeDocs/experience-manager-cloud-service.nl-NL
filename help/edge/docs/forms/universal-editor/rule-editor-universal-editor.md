@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2781'
 ht-degree: 0%
 
 ---
@@ -308,7 +308,7 @@ U maakt een formulier dat:
 
 1. **Open Universele Redacteur**:
    - Navigeer aan de console van AEM Sites, selecteer uw pagina, klik **uitgeven**
-   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) behoorlijk gevormd hebt
+   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) behoorlijk gevormd hebt
 
 2. **voeg vormcomponenten in deze orde** toe:
    - Titel (H2): &quot;Formulier voor de berekening van belastingen&quot;
@@ -533,6 +533,7 @@ Afbeelding: aangepaste functies toevoegen aan het bestand functions.js
 ![ Functie van de Douane in de Redacteur van de Regel ](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figuur: Het selecteren en het vormen van douanefuncties in de interface van de Redacteur van de Regel
 
+
 **Beste praktijken voor functiegebruik**:
 
 - **de behandeling van de Fout**: Neem altijd fallback gedrag voor functiestoornissen op
@@ -541,6 +542,56 @@ Figuur: Het selecteren en het vormen van douanefuncties in de interface van de R
 - **het Testen**: Creeer testgevallen die normale en randgevallen behandelen
 
 +++
+
+
+### Statische import voor aangepaste functies
+
+De Algemene Editor van de Universele Editor ondersteunt statische importbewerkingen, waarmee u herbruikbare logica kunt indelen in meerdere bestanden en formulieren. In plaats van alle aangepaste functies in één bestand te plaatsen (/blocks/form/functions.js), kunt u functies uit andere modules importeren.
+Bijvoorbeeld: functies importeren uit een extern bestand
+Overweeg de volgende mapstructuur:
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+U kunt functies vanuit `commonLib/functions.js` importeren in het `functions.js` -hoofdbestand, zoals hieronder wordt weergegeven:
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### Aangepaste functies organiseren in verschillende Forms
+
+U kunt verschillende sets functies maken in afzonderlijke bestanden of mappen en deze naar wens exporteren:
+
+- Als u wilt dat bepaalde functies alleen beschikbaar zijn in specifieke formulieren, kunt u het pad naar het functiebestand in de formulierconfiguratie opgeven.
+
+- Als het tekstvak voor het pad leeg blijft, worden in de Regeleditor standaardfuncties geladen van `/blocks/form/functions.js`
+
+![ Functie van de Douane in UE ](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+In de bovenstaande schermafbeelding wordt het pad van de aangepaste functie toegevoegd in het tekstvak Pad aangepaste functie. De aangepaste functies voor dit formulier worden vanuit het opgegeven bestand (`cc_function.js`) geladen.
+
+Dit maakt flexibiliteit mogelijk door functies in meerdere formulieren te delen of ze per formulier geïsoleerd te houden.
 
 ## Aanbevolen werkwijzen voor het ontwikkelen van regels
 
@@ -676,7 +727,7 @@ Forms wordt een krachtig hulpmiddel voor gegevensverzameling, kwalificatie van l
 
 **Extra middelen**:
 
-- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) voor bredere context
+- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) voor bredere context
 - [ de gids van Extension Manager ](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
 - [ de vormen van Edge Delivery Services ](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
 

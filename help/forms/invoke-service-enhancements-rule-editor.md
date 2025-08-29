@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Roep de dienstverhogingen in VRE aan, bevolkend drop-down opties gebruikend de aanroepdienst, Reeks herhaalbaar paneel gebruikend output van de aanroepdienst, Reeks paneel gebruikend output van de aanroepdienst, de outputparameter van het Gebruik van de aanroepdienst om ander gebied te bevestigen.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De visuele regelredacteur staat u toe om regels voor succes en mislukkingsmanage
 
 Als u een geluids- of fouthandler wilt toevoegen, klikt u respectievelijk op **[!UICONTROL Add Success Handler]** of **[!UICONTROL Add Failure Handler]** .
 
-Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTROL Invoke Service Success Handler]** regelredacteur, toestaand u om regels of logica te specificeren om de **te beheren aanhaalt de 3&rbrace; outputreactie van de Dienst &lbrace;wanneer de verrichting succesvol is.** U kunt zelfs regels opgeven zonder voorwaarden te definiëren. U kunt echter voorwaarden voor de succeshandler toevoegen door op de optie **[!UICONTROL Add Condition]** te klikken.
+Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTROL Invoke Service Success Handler]** regelredacteur, toestaand u om regels of logica te specificeren om de **te beheren aanhaalt de 3} outputreactie van de Dienst {wanneer de verrichting succesvol is.** U kunt zelfs regels opgeven zonder voorwaarden te definiëren. U kunt echter voorwaarden voor de succeshandler toevoegen door op de optie **[!UICONTROL Add Condition]** te klikken.
 
 ![ de manager van het de dienstsucces aanhalen ](/help/forms/assets/invoke-service-success-handler.png)
 
@@ -94,7 +94,7 @@ Voeg de volgende velden toe aan het formulier:
 
 >[!NOTE]
 >
-> In het **Bind 1&rbrace; gebied van de Verwijzing &lbrace;in de** dialoog van Eigenschappen **van de vormgebieden, uitgezochte** folder search_18 ![ en navigeer om het binaire bezit te selecteren u in het Model van de Gegevens van de Vorm (FDM) toevoegde.](assets/folder-search-icon.svg)
+> In het **Bind 1} gebied van de Verwijzing {in de** dialoog van Eigenschappen **van de vormgebieden, uitgezochte** folder search_18 ![ en navigeer om het binaire bezit te selecteren u in het Model van de Gegevens van de Vorm (FDM) toevoegde.](assets/folder-search-icon.svg)
 
 **het Vormen panelen**
 
@@ -218,6 +218,10 @@ Maak een regel in het tekstvak `Pet ID` om de service `getPetById` aan te roepen
 Ga `102` in het `Pet ID` tekstvakje in, en **voorleggen** knoop is verborgen.
 
 ![ Output ](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> U kunt ook [ API direct in de interface van de Redacteur van de Regel ](/help/forms/api-integration-in-rule-editor.md) integreren zonder een vooraf bepaald Model van de Gegevens van de Vorm te gebruiken.
 
 ## Veelgestelde vragen
 

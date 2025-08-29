@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
+source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1903'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -77,34 +77,34 @@ Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waar
 
 >[!NOTE]
 >
->Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+>Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-* **Component van de Invoer van de Datum &amp; van de Tijd**: Een component van de Datum &amp; van de Tijd is nu beschikbaar, toelatend gebruikers om zowel datum en tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
-* [ Verbeterde de Behandeling van de Fout voor Dossier uploadt ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
-* **specificeerde de Reactie van de Fout voor Douane legt Actie** voor: Wanneer een douane voorlegt actie een niet behandelde fout ontmoet, foutencode 502 is teruggekeerd. Dit helpt identificeren dat de kwestie met de douane verwant is voorlegt actie, die het zuiveren gemakkelijker maakt.
+* [ Component van de Invoer van de Datum &amp; van de Tijd ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Een component van de Datum &amp; van de Tijd is nu beschikbaar, toelatend gebruikers om zowel datum en tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
+* [ Verbeterde de Behandeling van de Fout voor Dossier uploadt ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): De component van de Bijlage van het Dossier bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
+* [ specificeerde de Reactie van de Fout voor Douane legt Actie ](/help/forms/custom-submit-action-troubleshooting.md) voor: Wanneer een douane voorlegt actie een niet behandelde fout ontmoet, foutencode 502 is teruggekeerd. Dit helpt identificeren dat de kwestie met de douane verwant is voorlegt actie, die het zuiveren gemakkelijker maakt.
 * [ exclusief Verborgen Gebieden van Document van Verslag ](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Een nieuw bezit is toegevoegd om uitsluiting van verborgen gebieden van het Document van Verslag toe te staan. Deze optie is standaard niet geselecteerd en is van toepassing op alle formuliervelden.
 
 ### Functies vóór de release in AEM Forms
 
 * [ produceert en synchroniseert de Vertoningen van AFP ](/help/forms/document-generation-afp-api.md): U kunt de Communicatie API van AEM Forms nu gebruiken om een XDP dossier in formaat om te zetten AFP. AFP is een krachtige indeling die op grote schaal wordt gebruikt bij het afdrukken in grote ondernemingen.
 * **Verbeteringen in de Redacteur van de Regel**
-   * **bevestigt en de Verbeteringen van Functies van het Terugstellen**: Bevestig en stel methodes nu steun uitvoering op het paneel, het gebied, en vormniveaus. Eerder werden deze alleen ondersteund op formulierniveau.
-   * **Moderne Steun van JavaScript**: De steun voor ECMAScript 2019 en recentere eigenschappen is toegevoegd voor douanefuncties, die u toestaan om efficiëntere, modulaire, en herbruikbare code te schrijven
-   * **Optie van DoR van de Download in de Redacteur van de Regel**: Een functie om het Document van Verslag (DoR) te downloaden is toegevoegd als uit-van-de-doos (OTB) optie in de Redacteur van de Regel.
+   * [ bevestigt Methode in de Lijst van de Functie ](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): Bevestig en stel methodes nu uitvoering op het paneel, gebied, en vormniveaus terug. Eerder werden deze alleen ondersteund op formulierniveau.
+   * [ Moderne Steun van JavaScript ](/help/forms/rule-editor-core-components-difference-tables.md): De steun voor ECMAScript 2019 en recentere eigenschappen is toegevoegd voor douanefuncties, die u toestaan om efficiëntere, modulaire, en herbruikbare code te schrijven
+   * [ Optie van DoR van de Download in de Redacteur van de Regel ](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): Een functie om het Document van Verslag (DoR) te downloaden is toegevoegd als uit-van-de-doos (OTB) optie in de Redacteur van de Regel.
      ![ document-van-Verslag ](/help/forms/assets/document-of-record-rn.gif)
-   * **Dynamische Variabelen in de Redacteur van de Regel**: U kunt dynamische (tijdelijke) variabelen in de Redacteur van de Regel voor grotere flexibiliteit nu gebruiken in het bepalen van voorwaarden en acties. Verborgen velden zijn niet meer vereist voor het opslaan van tijdelijke waarden.
-   * **Eigen gebeurtenis-Gebaseerde Regels in de Redacteur van de Regel**: U kunt douanegebeurtenissen en trekkerregels nu bepalen die op die gebeurtenissen worden gebaseerd.
-   * **context-Adequate Regels van het Comité**: In herhaalbare panelen, worden de regels nu uitgevoerd gebaseerd op context, in plaats van slechts op de laatste paneelinstantie worden toegepast.
-   * **Regels die door Parameters** worden teweeggebracht: De Redacteur van de Regel steunt nu regeluitvoering die op vraagparameters, parameters UTM, of browser parameters wordt gebaseerd.
-   * **vorm-Specifieke Functies van de Douane**: Edge Delivery Services Forms steunt nu vorm-specifieke manuscripten van de douanefunctie, die grotere flexibiliteit in het beheren van herbruikbare logica verstrekken.
-   * **Statische Invoer voor de Functies van de Douane**: De Redacteur van de Regel in Universele Redacteur steunt nu statische invoer, toestaand ontwikkelaars om, functies over veelvoudige vormen te organiseren te delen en opnieuw te gebruiken.
+   * [ Dynamische Variabelen in de Redacteur van de Regel ](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): U kunt dynamische (tijdelijke) variabelen in de Redacteur van de Regel voor grotere flexibiliteit nu gebruiken in het bepalen van voorwaarden en acties. Verborgen velden zijn niet meer vereist voor het opslaan van tijdelijke waarden.
+   * [ de Gebaseerde Steun van de Regels van de Gebeurtenis van de Douane ](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): U kunt douanegebeurtenissen en trekkerregels nu bepalen die op die gebeurtenissen worden gebaseerd.
+   * [ context-Adequate Regels van het Comité ](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In herhaalbare panelen, worden de regels nu uitgevoerd gebaseerd op context, in plaats van slechts op de laatste paneelinstantie worden toegepast.
+   * [ Regels die door Parameters ](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms) worden teweeggebracht: De Redacteur van de Regel steunt nu regeluitvoering die op vraagparameters, parameters UTM, of browser parameters wordt gebaseerd.
+   * [ vorm-Specifieke Functies van de Douane ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms steunt nu vorm-specifieke manuscripten van de douanefunctie, die grotere flexibiliteit in het beheren van herbruikbare logica verstrekken.
+   * [ Statische Invoer voor de Functies van de Douane ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): De Redacteur van de Regel in Universele Redacteur steunt nu statische invoer, toestaand ontwikkelaars om, functies over veelvoudige vormen te organiseren te delen en opnieuw te gebruiken.
 
 ### Functies voor vroege adopters in AEM Forms
 
-* **de Component van de Handtekening van de Krabbels**: U kunt de component van de Handtekening nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
-* **Directe API Integratie in de Redacteur van de Regel**: De adaptieve Forms steunt nu directe API integratie in de Visuele Redacteur van de Regel zonder een Model van de Gegevens van de Vorm te vereisen. Auteurs kunnen API&#39;s configureren met behulp van een URL- of cURL-import, invoer-/uitvoerparameters toewijzen en aanroepen beveiligen met verificatie.
+* [ de Component van de Handtekening van de Krabbels ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): U kunt de component van de Handtekening nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
+* [ Directe API Integratie in de Redacteur van de Regel ](/help/forms/api-integration-in-rule-editor.md): De adaptieve Forms steunt nu directe API integratie in de Visuele Redacteur van de Regel zonder een Model van de Gegevens van de Vorm te vereisen. Auteurs kunnen API&#39;s configureren met behulp van een URL- of cURL-import, invoer-/uitvoerparameters toewijzen en aanroepen beveiligen met verificatie.
 
 <!--
 **Forms Optimization opportunities**
@@ -218,7 +218,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -238,4 +238,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
