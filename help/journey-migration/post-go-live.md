@@ -17,7 +17,7 @@ ht-degree: 4%
 >id="aemcloud_golive_troubleshooting"
 >title="Problemen met AEM oplossen"
 >abstract="Beste praktijken voor de ononderbroken ontwikkeling en het beheer van logboeken evalueren. Meer informatie over tools zoals Developer Console en CRXDE Lite voor hulp bij het oplossen van problemen met AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Logbestanden openen en beheren"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Logbestanden openen en beheren"
 >additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service-ontwikkelingstools"
 
 Deze reis is het laatste deel, zodat leert u hoe te om op kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is. Zorgen voor de opschoning van tijdelijke bestanden, best practices voor continue ontwikkeling controleren en logbestanden beheren.
