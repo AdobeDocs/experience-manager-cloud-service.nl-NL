@@ -4,9 +4,9 @@ description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruike
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 0%
 # Het gereedschap Inhoud kopiëren {#content-copy}
 
 Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun productieomgeving op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
+
+>[!NOTE]
+>Terwijl de primaire stroom van het inhoudsexemplaar van hogere milieu&#39;s aan lagere milieu&#39;s is, een extra vermogen - **Voorwaartse Stroom** - staat het kopiëren van lagere niet productiemilieu&#39;s aan hogere niet productiemilieu&#39;s (bijvoorbeeld Dev → Stadium, RDE → Stadium) toe. Zie [ Beperkingen ](#limitations) voor details, met inbegrip van beschikbaarheidsvereisten.
 
 ## Inleiding {#introduction}
 
@@ -84,7 +87,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
 1. U kunt de opgegeven paden desgewenst bewerken.
 
    1. Klik op de X naast de uitgesloten subpaden, zodat u deze kunt verwijderen.
-   1. Klik de ellipsknoop naast wegen zodat kunt u **openbaren uitgeven** en **schrapping** opties.
+   1. Klik de ellipsknoop naast de wegen zodat kunt u **openbaren uitgeven** en **schrapping** opties.
 
    ![ het Uitgeven weglijst ](assets/add-content-set-excluded-paths.png)
 
@@ -105,7 +108,7 @@ Wanneer u de inhoudenset bewerkt, kunt u de geconfigureerde paden uitbreiden om 
 Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Voer de volgende stappen uit om inhoud te kopiëren.
 
 >[!NOTE]
-> Gebruik geen Exemplaar van de Inhoud op een milieu terwijl de verrichting van de a [ inhoudsoverdracht ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) op dat milieu loopt.
+> Gebruik geen inhoudsexemplaar op een milieu terwijl de verrichting van de a [ inhoudsoverdracht ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) op dat milieu loopt.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -133,7 +136,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
       * Productie
       * Staging
       * Ontwikkeling/RDE
-   * Standaard is Kopie van inhoud voor meerdere programma&#39;s uitgeschakeld. Nochtans, op klantenverzoek, kan het worden toegelaten, die een extra **invoergebied van het Programma van de Bestemming** &lbrace;beschikbaar zal maken.
+   * Het kopiëren van inhoud naar andere programma&#39;s is standaard uitgeschakeld. Nochtans, op klantenverzoek, kan het worden toegelaten, die een extra **invoergebied van het Programma van de Bestemming** {beschikbaar zal maken.
 
 1. Indien nodig, kunt u ook verkiezen om **de Lijsten van het Toegangsbeheer** in uw exemplaarproces te omvatten.
 
@@ -192,7 +195,9 @@ De logbestanden worden naar uw lokale computer gedownload. Als het downloaden ni
 
 Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 
-* Inhoud kan niet van een lagere omgeving naar een hogere omgeving worden gekopieerd.
+* Het gereedschap Inhoud kopiëren ondersteunt twee stroommodi:
+   1. Top-Down Flow - Inhoud kan van hogere omgevingen naar lagere omgevingen worden gekopieerd (bijvoorbeeld Productie → werkgebied, Stage → Development/RDE).
+   2. Forward Flow (nieuwe functie) - Inhoud kan ook worden gekopieerd van een lagere niet-productieomgeving naar een hogere niet-productieomgeving (bijvoorbeeld Development → Stage, RDE → Stage). Deze functie is alleen beschikbaar op uitdrukkelijk verzoek en blijft ingeschakeld totdat expliciet wordt gevraagd om te worden uitgeschakeld. Productieomgevingen zijn nooit geldige doelen voor doorlopende stroom.
 * Inhoud kan alleen van en naar ontwerpservices worden gekopieerd.
 * Het uitvoeren van gelijktijdige bewerkingen voor het kopiëren van inhoud in dezelfde omgeving is niet mogelijk.
 * Per inhoudenset kunnen maximaal 50 paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
