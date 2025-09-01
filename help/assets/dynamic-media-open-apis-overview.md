@@ -3,9 +3,9 @@ title: Dynamische media met OpenAPI-mogelijkheden
 description: Leer belangrijke concepten zoals waarom Dynamic Media met OpenAPI-mogelijkheden wordt gebruikt en hoe u deze kunt inschakelen.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dynamische media met OpenAPI-mogelijkheden zetten DAM tot de kern van een flexib
 
 Dynamische media met OpenAPI-mogelijkheden bieden de volgende belangrijke voordelen:
 
-* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen [&#128279;](/help/assets/integrate-dynamic-media-open-apis.md) gemakkelijk  te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
+* **Naadloze integraties**: De dynamische Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen [ gemakkelijk ](/help/assets/integrate-dynamic-media-open-apis.md) te integreren. De toepassingen zijn onder andere Adobe en toepassingen van derden. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
 
 * **Gecentraliseerd beheer van digitale activa**: DAM is de enige bron van waarheid voor alle digitale activa. Uw digitale middelen worden centraal beheerd in AEM Assets en worden aan verbruikende toepassingen geleverd door verwijzing gebruikend levering URLs, zonder activa te kopiëren binaries.
 
@@ -30,7 +30,7 @@ Dynamische media met OpenAPI-mogelijkheden bieden de volgende belangrijke voorde
 
 * **Web-geoptimaliseerde levering**: De digitale activa worden geleverd in Web-geoptimaliseerde formaten om de Velen van het Web van de Kern van uw digitale ervaringen te verbeteren. Dit omvat ondersteuning voor WebP-uitvoeringen voor afbeeldingen, adaptieve streaming via HLS- of DASH-protocollen voor video&#39;s en originele uitvoeringen voor documenten.
 
-* **Dynamische activa transformatie**: Ons systeem staat voor de transformatie van het beeld toe het gebruiken van parameters URL die als beeldbepalingen worden bekend. [ bijvoorbeeld, breedte, hoogte, roteert, keert, kwaliteit, gewas, formaat, en slimme gewas ](/help/assets/deliver-assets-apis.md) om. Transformeerde uitvoeringen worden dynamisch gegenereerd en naadloos via de CDN geleverd.
+* [ Dynamische activa transformatie ](https://developer.adobe.com/experience-cloud/experience-manager-apis): Ons systeem staat voor de transformatie van het beeld toe het gebruiken van parameters URL die als beeldbepalingen worden bekend. Breedte, hoogte, roteren, spiegelen, kwaliteit, uitsnijden, opmaken en slim uitsnijden. Transformeerde uitvoeringen worden dynamisch gegenereerd en naadloos via de CDN geleverd.
 
 * **Veilige levering van activa**: De dynamische Media met mogelijkheden OpenAPI verstrekt een mechanisme voor controle over toegang tot uw digitale activa. U kunt gebruikersrollen of groepen als meta-gegevens voor te beveiligen activa specificeren en een vooraf bepaald tijdskader plaatsen waarin [ slechts geautoriseerde gebruikers tot deze activa ](/help/assets/restrict-assets-delivery.md) kunnen toegang hebben. De leverings-URL&#39;s voor beveiligde elementen worden tijdens de beperkte periode niet opgelost voor onbevoegde gebruikers.
 
