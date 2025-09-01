@@ -136,7 +136,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
       * Productie
       * Staging
       * Ontwikkeling/RDE
-   * Het kopiëren van inhoud naar andere programma&#39;s is standaard uitgeschakeld. Nochtans, op klantenverzoek, kan het worden toegelaten, die een extra **invoergebied van het Programma van de Bestemming** {beschikbaar zal maken.
+   * Het kopiëren van inhoud naar andere programma&#39;s is standaard uitgeschakeld. Nochtans, op klantenverzoek, kan het worden toegelaten, die een extra **invoergebied van het Programma van de Bestemming** &lbrace;beschikbaar zal maken.
 
 1. Indien nodig, kunt u ook verkiezen om **de Lijsten van het Toegangsbeheer** in uw exemplaarproces te omvatten.
 
