@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
-
 # Een interactieve communicatiesjabloon maken
+
+>[!NOTE]
+>
+> De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
+
+>[!IMPORTANT]
+>
+> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 Met interactieve communicatiesjablonen in AEM kunnen gebruikers opnieuw bruikbare layoutstructuren definiëren, zoals kop- en voetteksten, logo&#39;s en standaardstijlen. Deze malplaatjes dienen als basis om verenigbare, branded, en efficiënte mededelingen tot stand te brengen.
 

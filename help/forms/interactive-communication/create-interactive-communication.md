@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
-
 # Een interactieve communicatie maken
+
+>[!NOTE]
+>
+> De interactieve communicatiecapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Verzend een e-mail van uw werkadres naar `aem-forms-ea@adobe.com` om toegang aan te vragen.
+
+>[!IMPORTANT]
+>
+> **Documentatie onderworpen aan Verandering**: Deze snelle bibliotheek wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De herinneringen, de voorbeelden, en de beste praktijken kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
 De interactieve mededeling laat u toe om, gepersonaliseerde en interactieve mededelingen tot stand te brengen te beheren en te leveren, met inbegrip van de klantendienst, het factureren, het aan boord gaan documenten, brieven, rekeningsupdates, en meer aan te bieden. Het wordt ontworpen om om het even welk scenario te steunen waar de dynamische, gebruiker-specifieke inhoud de communicatie ervaring over industrieën verbetert.
 
