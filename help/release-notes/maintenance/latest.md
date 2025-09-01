@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 21994 samengevat, die op 19 augustus 2025 openbaar werd gemaakt. De vorige onderhoudsrelease was release 21772.
 
-De activering van de 2025.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2025.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Nieuwe functies  {#new-features-21994}
 
@@ -60,11 +60,13 @@ Geen.
 * HULPLIJNEN-11227: Het kopiëren van een kaart DITA van Assets UI kopieert ook zijn in bijlage Basislijn aan de nieuwe kaart.
 * GUIDEN-31506: De homepage gaat leeg wanneer één van de dossiers die in Recente dossiers widget worden vermeld op een malplaatje wordt gebaseerd de waarvan bronmalplaatje geen duimnagel omvat.
 
-Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Voor meer informatie over de nieuwe en verbeterde eigenschappen en kwesties die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekende problemen {#known-issues-21994}
 
 * Apache HTTPD versie 2.4.65 introduceert wijzigingen die van invloed kunnen zijn op bepaalde configuraties vanwege nieuwe beperkingen die als onderdeel van beveiligingsoplossingen zijn geïmplementeerd. Deze oplossingen verhelpen kwetsbaarheden door ervoor te zorgen dat instructies zoals `RequestHeader set` , `edit` en `edit_r` die worden gebruikt om de header van het inhoudstype te wijzigen, nu correct worden beperkt tot aanvraagheaders. Door deze wijziging worden ongewenste wijzigingen in de reactiekoppen voorkomen, met name voor statische inhoud.
+* Apache HTTPD versie 2.4.65 introduceert veranderingen in mod_proxy wanneer het gebruiken van verbindingen ProxyRemote. Stel de markering voor opnieuw gebruiken in op Aan als er problemen optreden.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Verouderde functies en API&#39;s {#deprecated-21994}
 
@@ -83,4 +85,4 @@ AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en pre
 | AEM HTML | 1.4.28-1.4.0 | [ Specificatie van de Taal van het Malplaatje van HTML ](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2,4,65 | [ Apache Httpd 2.4.65 ](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM-kerncomponenten | 2 29,0 | [ AEM WCM de Componenten van de Kern ](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (standaard) | [ Ondersteunde versies Node.js ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
