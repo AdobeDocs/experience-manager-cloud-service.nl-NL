@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
+source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -99,31 +99,38 @@ De Forms Experience Builder volgt een eenvoudige, conversationele aanpak:
 
 ## Voorbeeldscenario&#39;s
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=nl-NL)
-
-**Transform PDF forms aan Digitale Forms**
-
-Converteer Acrobat-, XFA-PDF&#39;s of vlakke PDF-documenten naar responsieve, interactieve digitale formulieren met verbeterde functionaliteit.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
-
-**Moderniseer Verouderde XFA Forms**
-
-Transformeer complexe XFA-toepassingen in moderne, toegankelijke digitale ervaringen met verbeterde gebruikersworkflows.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=nl-NL)
-
-**zet Schermafbeeldingen in Digitale Forms** om
-
-Zet afbeeldingen, screenshots of met de hand getekende formulieren om in volledig functionele digitale ervaringen.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">PDF forms transformeren naar Digital Forms</p>
+                    <p class="is-size-6">Converteer Acrobat-, XFA-PDF's of vlakke PDF-documenten naar responsieve, interactieve digitale formulieren met verbeterde functionaliteit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Verouderde XFA Forms moderniseren</p>
+                    <p class="is-size-6">Transformeer complexe XFA-toepassingen in moderne, toegankelijke digitale ervaringen met verbeterde gebruikersworkflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Screenshots converteren naar Digital Forms</p>
+                    <p class="is-size-6">Zet afbeeldingen, screenshots of met de hand getekende formulieren om in volledig functionele digitale ervaringen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- #### Import and Enhance Web Forms
 
@@ -148,39 +155,48 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Voordelen voor organisaties
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=nl-NL)
-
-**Gematificeerd de Making van de Vorm**
-
-Niet-technische gebruikers in staat stellen geavanceerde formulieren te maken zonder kennis te programmeren via gesprekken in de natuurlijke taal.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=nl-NL)
-
-**Verminderde Tijd aan Waarde (TTV)**
-
-De ontwikkeling van formulieren van dagen tot uren aanzienlijk versnellen, waardoor digitale initiatieven sneller op de markt kunnen worden gebracht.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=nl-NL)
-
-**Eenvoud van de Interface**
-
-Elimineer de het leren kromme met een intuïtieve gespreksinterface, verminderend trainingstijd en stijgende adoptie.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
-
-**het Schalen de Middelen van de Modernisering**
-
-Moderniseer verouderde formulierportfolio&#39;s efficiënt, zodat bedrijfslogica behouden blijft en de gebruikerservaring in het hele formulierecosysteem wordt verbeterd.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Gematificeerd formulier maken</p>
+                    <p class="is-size-6">Niet-technische gebruikers in staat stellen geavanceerde formulieren te maken zonder kennis te programmeren via gesprekken in de natuurlijke taal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Beperkte tijd tot waarde (TTV)</p>
+                    <p class="is-size-6">De ontwikkeling van formulieren van dagen tot uren aanzienlijk versnellen, waardoor digitale initiatieven sneller op de markt kunnen worden gebracht.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Eenvoud van interface</p>
+                    <p class="is-size-6">Elimineer de het leren kromme met een intuïtieve gespreksinterface, verminderend trainingstijd en stijgende adoptie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Moderniseringsinspanningen schalen</p>
+                    <p class="is-size-6">Moderniseer verouderde formulierportfolio's efficiënt, zodat bedrijfslogica behouden blijft en de gebruikerservaring in het hele formulierecosysteem wordt verbeterd.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Onboarding
 
