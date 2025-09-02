@@ -6,7 +6,8 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 0%
@@ -146,7 +147,7 @@ Deze uitgebreide gids voor probleemoplossing helpt u bij het werken met de Forms
    - De exacte veldnaam gebruiken zoals deze is gemaakt, geen weergavelabel
    - Veldnaamconventies verifiëren (camelCase, slang_case, enz.)
 
-2. **Syntaxis van de Verwijzing van 0&rbrace; Gebied**
+2. **Syntaxis van de Verwijzing van 0} Gebied**
    - Gebruik de juiste syntaxis `@fieldName` zonder spaties
    - Speciale tekens in veldverwijzingen vermijden
    - Controleren op onzichtbare tekens of opmaakproblemen
@@ -197,7 +198,6 @@ Deze uitgebreide gids voor probleemoplossing helpt u bij het werken met de Forms
         - Bericht (vereiste textarea, maximum 500 karakters) 
         - Verzenden naar e-mailmelding 
    
-
 ### Problemen met layout en opmaak
 
 **Symptomen:**
@@ -341,7 +341,7 @@ Deze uitgebreide gids voor probleemoplossing helpt u bij het werken met de Forms
    - Testen vanaf verschillende netwerkverbindingen
    - Controleren op proxy of beveiligingsbeperkingen van bedrijf
 
-3. {de Kwesties van de Bevestiging van 0} Gegevens **&#x200B;**
+3. {de Kwesties van de Bevestiging van 0} Gegevens ****
    - Controleer of alle vereiste velden zijn ingevuld
    - Controleren of gegevensindelingen overeenkomen met API-vereisten
    - Controleren op speciale tekens of coderingsproblemen
@@ -459,7 +459,7 @@ Deze uitgebreide gids voor probleemoplossing helpt u bij het werken met de Forms
    - Voorwaardelijke logica optimaliseren voor prestaties
    - Resultaten van validatie van de cache, indien van toepassing
 
-3. **de Verbeteringen van de Ervaring van 0&rbrace;**
+3. **de Verbeteringen van de Ervaring van 0}**
    - Geef direct feedback voor eenvoudige validaties
    - Gebruik progressieve validatie in plaats van real-time voor complexe regels
    - Belastingsindicatoren tonen tijdens validatieprocessen
@@ -532,7 +532,7 @@ Gebruik deze aanwijzingen voor meer informatie over formulierproblemen:
 
 - [Forms Experience Builder Promptbibliotheek](ai-assistant-prompt-library.md)
 - [Aanbevolen werkwijzen voor Forms Experience Builder](aem-forms-ai-assistant-best-practices.md)
-- [ Documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL)
+- [ Documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
 
 ### Doorverwijs en steun
 
@@ -573,4 +573,4 @@ Gebruik deze aanwijzingen voor meer informatie over formulierproblemen:
 - Trainings- en kennisdelingssessies
 - Feedback op productteam voor functieverbeteringen
 
-Deze gids voor probleemoplossing wordt voortdurend bijgewerkt op basis van feedback van gebruikers en nieuwe mogelijkheden van Forms Experience Builder. Voor de recentste informatie en de extra middelen, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).
+Deze gids voor probleemoplossing wordt voortdurend bijgewerkt op basis van feedback van gebruikers en nieuwe mogelijkheden van Forms Experience Builder. Voor de recentste informatie en de extra middelen, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).

@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -20,46 +20,21 @@ ht-degree: 0%
 >
 > **Documentatie onderworpen aan Verandering**: Deze documentatie wordt momenteel getest tegen het product en is onderworpen aan updates en revisies. De eigenschappen, de bevelen, en de voorbeelden kunnen veranderen aangezien de Bouwer van de Ervaring van Forms zich tijdens het vroege adoptieprogramma blijft ontwikkelen.
 
-De Forms Experience Builder biedt de kracht van kunstmatige intelligentie aan Adobe Experience Manager (AEM) Forms. Deze innovatieve oplossing transformeert hoe organisaties hun digitale formulieren maken, beheren en optimaliseren via interactie in natuurlijke talen en intelligente automatisering.
+De AEM Forms Experience Builder gebruikt de kracht van Generative AI om het maken en bijwerken van digitale formulierervaringen te democratiseren en te versnellen. Doordat workflows op basis van intenties via interactie in natuurlijke talen mogelijk zijn, kunnen gebruikers formulieren naadloos ontwerpen, aanpassen en optimaliseren met snelheid en eenvoud.
 
-De Forms Experience Builder is gebaseerd op moderne webtechnologieën en wordt aangedreven door geavanceerde AI-services. Met de Experience Builder kunnen zowel technische als niet-technische gebruikers geavanceerde, professionele formulieren maken via conversationele interfaces. Of u nu een zakelijke analist bent en een eenvoudig registratieformulier nodig hebt of een ontwikkelaar die complexe multistep workflows maakt, de Forms Experience Builder stroomlijnt het hele proces voor het maken van formulieren.
+De Forms Experience Builder is gebaseerd op moderne webtechnologieën en wordt aangedreven door geavanceerde AI-services. Met de Experience Builder kunnen zowel technische als niet-technische gebruikers geavanceerde, professionele formulieren maken via conversationele interfaces. Deze revolutionaire aanpak verkort de tijd tot waarde van dagen tot uren, elimineert technische barrières door interface eenvoud, en schaalt moderniseringsinspanningen over uw volledige vorm ecosysteem.
 
-## Conversation
 
-De Forms Experience Builder biedt een intuïtieve interface op chats die het maken van formulieren zo eenvoudig maakt als het voeren van een gesprek:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ Forms Experience Builder                               │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  👤 User: Create a customer feedback form              │
-│                                                         │
-│  🤖 AI: I'll help you create a feedback form. What    │
-│       type of feedback do you want to collect?         │
-│                                                         │
-│  👤 User: Product reviews with ratings and comments    │
-│                                                         │
-│  🤖 AI: Perfect! I've created a feedback form with:   │
-│       * Product rating (1-5 stars)                     │
-│       * Comment field                                   │
-│       * Customer email (optional)                       │
-│       * Submit to email notification                    │
-│                                                         │
-│  👤 User: Add a field for product category             │
-│                                                         │
-│  🤖 AI: Added a dropdown field with common categories  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## Kernmogelijkheden
 
-### Maken van AI-formulieren
+Forms Experience Builder biedt twee primaire workflows voor het maken van krachtige digitale formulieren:
+
+### &#x200B;1. Maken van formulieren met AI-voeding
 
 **de Natuurlijke Generatie van de Vorm van de Taal**
 
-Volledige formulieren maken op basis van eenvoudige Engelse beschrijvingen. Beschrijf gewoon uw vereisten, zoals &quot;Een feedbackformulier voor klanten maken met classificatieschalen en commentaarvelden&quot;, en de Forms Experience Builder genereert de juiste formulierstructuur, veldtypen en validatieregels.
+Volledige formulieren maken op basis van eenvoudige Engelse beschrijvingen. Beschrijf gewoon uw vereisten, zoals &quot;Een feedbackformulier voor klanten maken met beoordelingsschalen en commentaarvelden&quot;, en de Forms Experience Builder genereert de juiste formulierstructuur. U gebruikt de ervaringsontwikkelaar van visuele editors om meer gebieden, bevestigingsregels, en voorleggingslogica toe te voegen.
 
 **Dynamisch Beheer van het Gebied**
 
@@ -67,27 +42,7 @@ Formuliervelden toevoegen, wijzigen of verwijderen via conversatieopdrachten. AI
 
 **Optimalisering van de Lay-out**
 
-Formulierlay-outs en -configuraties bijwerken via de natuurlijke taal. Breng wijzigingen aan zoals &quot;Maak het formulier gebruiksvriendelijker&quot; of &quot;Rangschikt velden opnieuw in een logische flow&quot; en Forms Experience Builder past de juiste opmaak- en indelingsaanpassingen toe.
-
-### Intelligent importeren en omzetten
-
-**PDF aan de Omzetting van de Vorm**
-
-Statische PDF-documenten transformeren in interactieve, dynamische formulieren. Upload elk PDF-document en Forms Experience Builder analyseert de structuur om een corresponderend digitaal formulier met de juiste veldtypen en validatie te maken.
-
-**URL aan de Omzetting van de Vorm**
-
-Bestaande webformulieren of pagina&#39;s converteren naar AEM Forms. Geef gewoon een URL op en de Forms Experience Builder extraheert formulierelementen en maakt deze opnieuw als native AEM Forms met verbeterde functionaliteit.
-
-**Ondersteuning voor bestanden met meerdere indelingen**
-
-Verwerk verschillende bestandstypen voor het maken van formulieren, zoals PDF&#39;s, afbeeldingen, schermafbeeldingen en bestaande formuliersjablonen. De Forms Experience Builder kan deze verwerken en omzetten in functionele AEM Forms.
-
-### Geavanceerde formulierlogica en integratie
-
-**Intelligente Generatie van de Regel**
-
-Maak complexe formuliervalidatie- en bedrijfslogische regels in een natuurlijke taal. De Bouwer van de Ervaring van Forms kan verfijnde voorwaardelijke logica, gebiedsdelen, en bevestigingsregels produceren die typisch uitgebreide coderingskennis zouden vereisen.
+Formulierlay-outs en -configuraties bijwerken via de natuurlijke taal. Wijzigingen aanvragen zoals &#39;De formulierindeling wijzigen in wizardindeling&#39; en Forms Experience Builder past de juiste opmaak- en indelingsaanpassingen toe.
 
 **Uitgebreide voorlegt de Configuratie van de Actie**
 
@@ -100,126 +55,86 @@ Configureer formulierverzendingen voor integratie met uw bestaande bedrijfssyste
 - **de Platforms van de Marketing**: Directe integratie met Marketo voor lood beheer
 - **de Werkschema&#39;s van AEM**: De bestaande het werkschemamogelijkheden van AEM van de hefboomwerking
 
-**Analytics van Prestaties**
 
-De prestaties van de formulierconversie en de betrokkenheid van de gebruiker analyseren. De Forms Experience Builder biedt inzichten in de doeltreffendheid van formulieren en biedt optimalisaties om de voltooiingstarieven en gebruikerservaring te verbeteren.
+### &#x200B;2. Intelligente import en conversie
+
+**Gesteunde de Indelingen van de Invoer**
+
+Bestaande formulieren en documenten omzetten in interactieve digitale ervaringen. De Forms Experience Builder ondersteunt:
+
+- **Acroforms**: Interactieve PDF forms met bestaande gebiedsstructuren
+- **XFA PDFs**: De complexe op XML-Gebaseerde vormarchitectuur
+- **Vlakke PDFs**: De statische documenten die in interactieve vormen worden omgezet
+- **Beelden en Schermafbeeldingen**: JPG, formaten PNG (controle met team voor groottebeperkingen)
+- **hand-getekende Forms**: Schetsen en de foto&#39;s van de papiervorm
+
+
+**Intelligent Proces van de Omzetting**
+
+De geüploade inhoud wordt geanalyseerd op:
+
+- Veldtypen en relaties detecteren
+- Lay-out zoveel mogelijk behouden
+- Verbeteren met modern responsief ontwerp
+- Geavanceerde validatie en voorwaardelijke logica toevoegen
+- Optimaliseren voor toegankelijkheid en mobiele ervaring
 
 ## Hoe het werkt
 
 De Forms Experience Builder volgt een eenvoudige, conversationele aanpak:
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  1. Describe    │───▶│  2. AI Creates  │───▶│  3. Refine &    │
-│  Your Form      │    │  Initial Form   │    │  Configure      │
-│  Requirements   │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  "Create a loan application form"  →  Form with relevant        │
-│  "Add conditional logic"           →  fields and basic          │
-│  "Connect to CRM system"           →  validation rules          │
-└─────────────────────────────────────────────────────────────────┘
-```
+    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+    │ Beschrijven    │───▶│ 2. AI maakt │───▶│ 3. Verfijnen en    │
+    │ Uw formulier      │    │ Oorspronkelijk formulier   │    │ Configureren      │
+    │ Vereisten   │    │                 │    │                 │
+    └─────────────────┘    └─────────────────┘    └─────────────────┘
+    │                       │                       │
+    │                       │                       │
+    ▼                       ▼                       ▼
+    ┌───────────────────────────────────────────────────────────────────────────┐
+    │ &quot;Een aanvraagformulier voor een lening maken&quot; → Formulier met relevante informatie                  │
+    │ &quot;Veld voor e-mail toevoegen&quot;           → velden en basis                          │
+    │ &quot;Stel de waarde van het e-mailveld in op @firstname@gmail.com&quot; → validatieregels   │
+    └───────────────────────────────────────────────────────────────────────────┘
 
-## Voorbeelden van hoofdletters/kleine letters gebruiken
+## Voorbeeldscenario&#39;s
 
-### Toepassingsformulier voor leningen
+:::: landing-cards-container
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Loan Application - Multi-Step Form                    │
-├─────────────────────────────────────────────────────────┤
-│ Step 1: Personal Information                           │
-│  🏠 Property Type: [Primary] [Investment] [Commercial] │
-│  💰 Loan Amount: [$_______] (triggers different paths) │
-│  📊 Income Verification: [W2] [Self-Employed] [Other]  │
-│                                                         │
-│ Step 2: Financial Details (conditional based on above) │
-│  ↳ If Self-Employed: Show tax returns, profit/loss     │
-│  ↳ If W2: Show employment history, pay stubs           │
-│  ↳ Complex debt-to-income calculations                 │
-│                                                         │
-│ Step 3: Compliance & Review                            │
-│  📋 Regulatory disclosures, digital signatures         │
-│  🔍 Automated eligibility pre-screening                │
-└─────────────────────────────────────────────────────────┘
-```
+**Transform PDF forms aan Digitale Forms**
 
-### Formulier voor verzekeringsaanvraag
+Converteer Acrobat-, XFA-PDF&#39;s of vlakke PDF-documenten naar responsieve, interactieve digitale formulieren met verbeterde functionaliteit.
+:::
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Insurance Claim - Adaptive Form                        │
-├─────────────────────────────────────────────────────────┤
-│ 🚗 Claim Type: [Auto] [Property] [Health] [Business]   │
-│                                                         │
-│ ↳ Auto Selected: Shows accident details, police report │
-│ ↳ Property: Shows damage assessment, repair estimates  │
-│ ↳ Health: Shows medical provider network, pre-auth     │
-│                                                         │
-│ 📎 Dynamic Document Requirements:                       │
-│   * Photos/videos of damage                            │
-│   * Police reports (auto only)                         │
-│   * Medical records (health only)                      │
-│   * Repair estimates (property only)                   │
-│                                                         │
-│ 🔄 Real-time claim status updates                      │
-└─────────────────────────────────────────────────────────┘
-```
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
 
-### Migratie- en conversiescenario&#39;s
+**Moderniseer Verouderde XFA Forms**
 
-Zet uw bestaande formulieren om in krachtige digitale ervaringen met behulp van AI-conversie.
+Transformeer complexe XFA-toepassingen in moderne, toegankelijke digitale ervaringen met verbeterde gebruikersworkflows.
+:::
 
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/image.svg)
 
-#### PDF forms transformeren naar Digital Forms
+**zet Schermafbeeldingen in Digitale Forms** om
 
-Transformeer PDF forms met meerdere velden in een dynamische digitale ervaring met geautomatiseerde berekeningen en mobiel design.
+Zet afbeeldingen, screenshots of met de hand getekende formulieren om in volledig functionele digitale ervaringen.
+:::
+::::
 
-**Zeer belangrijke voordelen:**
+<!-- #### Import and Enhance Web Forms
 
-- Geautomatiseerde belastingberekeningen en gebiedsdelen
-- Digitale handtekeningen en integratie van e-bestanden
-- Optimalisatie van de lay-out voor mobiele telefonie
-- 95% reductie in verwerkingsfouten
+Import existing HTML forms and enhance them with advanced features while preserving existing functionality.
 
+**Key benefits:**
 
-#### Modernisering van oudere XFA-formulieren
-
-U kunt complexe XFA-toepassingen converteren naar moderne wizards met meerdere stappen en real-time validatie en compatibiliteit.
-
-**Zeer belangrijke voordelen:**
-
-- Gestroomlijnde wizardinterface met meerdere stappen
-- Real-time validatie met contextafhankelijke Help
-- Integratie van overheidsdatabases
-- Volledige WCAG 2.1 toegankelijkheidscompatibiliteit
-
-
-#### Screenshot van formulier converteren naar een digitaal formulier
-
-U kunt elk papieren formulier veranderen in een digitale ervaring. AEM Forms optimaliseert automatisch de indeling en maakt voor integratie geschikte digitale formulieren op basis van een schermafbeelding.
-
-**Zeer belangrijke voordelen:**
-
-- Intelligente veldtypedetectie
-- Geoptimaliseerde responsieve lay-outgeneratie
-- Verbeterde validatie na het oorspronkelijke papier
-- Architectuur die klaar is voor integratie
-
-#### Bestaande webformulieren importeren en verbeteren
-
-U kunt uw bestaande webformulier importeren en geavanceerde validatie, voorwaardelijke logica en verzending via meerdere kanalen toevoegen aan uw formulieren zonder de bestaande functionaliteit te verbreken.
-
-**Zeer belangrijke voordelen:**
-
-- Geavanceerde validatielogica en -regels
-- Voorwaardelijk gedrag en workflows in velden
-- Verzendopties voor meerdere kanalen
-- Geïntegreerde analyse en prestatiebewaking
+- Advanced validation and business logic
+- Conditional field behaviors
+- Multi-channel submission options
+- Enhanced user experience design -->
 
 ## Forms Experience Builder versus Traditionele Ontwikkeling
 
@@ -228,46 +143,83 @@ U kunt uw bestaande webformulier importeren en geavanceerde validatie, voorwaard
 | **Tijd om te creëren** | 2-3 dagen | 2-3 uur |
 | **Technische Kennis** | Vereist | Niet vereist |
 | **Regels van de Bevestiging** | Handmatige codering | Natuurlijke taal |
-| **Mobiele Optimalisering** | Handmatige CSS/JS | Automatisch |
 | **Toegankelijkheid** | Handmatige implementatie | Ingebouwde compatibiliteit |
-| **Updates** | Vereiste wijzigingen in code | Natuurlijke taal |
 
 
 ## Voordelen voor organisaties
 
-### Gematificeerd formulier maken
+:::: landing-cards-container
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/users.svg)
 
-Niet-technische gebruikers in staat stellen geavanceerde formulieren te maken zonder hun programmeerkennis. Zakelijke analisten, experts op het gebied van onderwerpen en makers van inhoud kunnen hun vereisten rechtstreeks vertalen in functionele vormen via gesprekken in natuurlijke talen.
+**Gematificeerd de Making van de Vorm**
 
-### Beperkte tijd tot waarde (TTV)
+Niet-technische gebruikers in staat stellen geavanceerde formulieren te maken zonder kennis te programmeren via gesprekken in de natuurlijke taal.
+:::
 
-De ontwikkeling van formulieren wordt aanzienlijk versneld, van dagen tot uren. Wat voorheen uitgebreide ontwikkelingscycli vereiste, kan nu in één enkele zitting door conversatie AI worden verwezenlijkt, toelatend snellere go-aan-markt voor digitale initiatieven.
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/bolt.svg)
 
-### Eenvoud van interface
+**Verminderde Tijd aan Waarde (TTV)**
 
-Elimineer de het leren kromme met een intuïtieve gespreksinterface. Gebruikers kunnen complexe formulieren maken met behulp van natuurlijke talen in plaats van technische hulpmiddelen voor het maken van formulieren te leren, waardoor de trainingstijd wordt verkort en de acceptatie toeneemt.
+De ontwikkeling van formulieren van dagen tot uren aanzienlijk versnellen, waardoor digitale initiatieven sneller op de markt kunnen worden gebracht.
+:::
 
-### Moderniseringsinspanningen schalen
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
 
-Verouderde formulierportfolio&#39;s efficiënt moderniseren. Bestaande PDF-, XFA- en HTML-formulieren converteren naar responsieve digitale ervaringen met behoud van bedrijfslogica en een betere gebruikerservaring in het gehele ecosysteem van het formulier.
+**Eenvoud van de Interface**
+
+Elimineer de het leren kromme met een intuïtieve gespreksinterface, verminderend trainingstijd en stijgende adoptie.
+:::
+
+:::
+![icon]( https://cdn.experienceleague.adobe.com/icons/layers.svg)
+
+**het Schalen de Middelen van de Modernisering**
+
+Moderniseer verouderde formulierportfolio&#39;s efficiënt, zodat bedrijfslogica behouden blijft en de gebruikerservaring in het hele formulierecosysteem wordt verbeterd.
+:::
+::::
+
+## Onboarding
+
+De Forms Experience Builder is momenteel beschikbaar als onderdeel van het programma Early Access (EA). Om deel te nemen en toegang te krijgen, zult u de volgende informatie nodig hebben:
+
+### Vereiste informatie
+
+- **identiteitskaart van de Organisatie IMS**: Uw organisatie van Adobe herkenningsteken
+- **identiteitskaart van het Programma**: Uw specifiek programma herkenningsteken binnen Adobe Experience Cloud
+- **Details van het Project**: Chronologie, werkingsgebied, en voorgenomen gebruiksgevallen
+- **Officiële E-mail van het Werk**: Verwante met de rekening van Adobe van uw organisatie
+
+
+### Procedure voor het verkrijgen van IMS Organisatie-id en programma-id
+
+Ga voor gedetailleerde stappen naar de locatie van uw IMS-organisatie-id en programma-id naar:
+
+- [Adobe Experience Cloud Organization Setup Guide](/help/onboarding/cloud-manager-introduction.md)
+- [Programma- en milieubeheer](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+### Toegang aanvragen
+
+1. Verzamel uw IMS-organisatie-id en programma-id met de bovenstaande hulplijnen
+2. Verzend een e-mail naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) verzoekend toegang
+3. Opnemen in uw verzoek:
+   - Naam van organisatie en IMS-organisatie-id
+   - Programma-id
+   - Tijdlijn en bereik van project
+   - Beoogde gebruiksgevallen en bedrijfsdoelstellingen
+
+>[!IMPORTANT]
+>
+> **Beperkt Programma van de Beschikbaarheid**: De toegang tot de Bouwer van de Ervaring van Forms is onderworpen aan goedkeuring van interne belanghebbenden. Adobe zal uw verzoek beoordelen op basis van de programmacapaciteit en de aanpassing aan de criteria voor vroege toegang. Goedkeuring is niet gegarandeerd en is afhankelijk van de beschikbaarheid van het huidige programma.
+
+Voor meer informatie over het Vroege programma van de Toegang en zijn eigenschappen, zie de [ documentatie van de Toegang van AEM Forms Vroege ](/help/forms/early-access-ea-features.md).
+
 
 ## Aan de slag
 
 Om met de Bouwer van de Ervaring van Forms te beginnen, bezoek de [ documentatie van de Bouwer van de Ervaring van Forms ](forms-ai-assistant-getting-started.md). U kunt de Forms Experience Builder openen via de AEM Forms Editor of de Universal Editor, afhankelijk van uw voorkeursworkflow.
 
 Voor organisaties die hun processen voor het maken van formulieren willen transformeren, biedt de Forms Experience Builder een krachtige, intuïtieve oplossing die de flexibiliteit van convergerende AI combineert met de robuustheid van het beheer van formulieren op bedrijfsniveau.
-
-## Onboarding en vroege toegang
-
-De Forms Experience Builder is momenteel beschikbaar als onderdeel van het programma Early Access (EA). Ga als volgt te werk om deel te nemen aan en toegang te krijgen tot:
-
-1. Controleer of u uw officiële e-mailadres voor uw werk gebruikt dat is gekoppeld aan uw organisatie.
-2. Verzend een e-mail naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) verzoekend toegang tot de Bouwer van de Ervaring van Forms.
-3. Neem de naam van uw organisatie en relevante projectdetails op in uw verzoek om het instapproces te helpen versnellen.
-
->[!NOTE]
->
-> Toegang tot de Forms Experience Builder is beperkt tot goedgekeurde deelnemers aan het programma Vroege toegang. Adobe zal je aanvraag beoordelen en verdere instructies geven voor instapweigering als je hiervoor in aanmerking komt.
-
-Voor meer informatie over het Vroege programma van de Toegang en zijn eigenschappen, zie de [ documentatie van de Toegang van AEM Forms Vroege ](/help/forms/early-access-ea-features.md).
-
