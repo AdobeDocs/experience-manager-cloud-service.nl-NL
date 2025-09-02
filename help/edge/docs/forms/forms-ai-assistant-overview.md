@@ -101,7 +101,7 @@ De Forms Experience Builder volgt een eenvoudige, conversationele aanpak:
 
 :::: landing-cards-container
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
 
 **Transform PDF forms aan Digitale Forms**
 
@@ -109,7 +109,7 @@ Converteer Acrobat-, XFA-PDF&#39;s of vlakke PDF-documenten naar responsieve, in
 :::
 
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
 
 **Moderniseer Verouderde XFA Forms**
 
@@ -117,7 +117,7 @@ Transformeer complexe XFA-toepassingen in moderne, toegankelijke digitale ervari
 :::
 
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/image.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
 
 **zet Schermafbeeldingen in Digitale Forms** om
 
@@ -150,7 +150,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 :::: landing-cards-container
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
 **Gematificeerd de Making van de Vorm**
 
@@ -158,7 +158,7 @@ Niet-technische gebruikers in staat stellen geavanceerde formulieren te maken zo
 :::
 
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/bolt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg)
 
 **Verminderde Tijd aan Waarde (TTV)**
 
@@ -166,7 +166,7 @@ De ontwikkeling van formulieren van dagen tot uren aanzienlijk versnellen, waard
 :::
 
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
 
 **Eenvoud van de Interface**
 
@@ -174,7 +174,7 @@ Elimineer de het leren kromme met een intuïtieve gespreksinterface, verminderen
 :::
 
 :::
-![icon]( https://cdn.experienceleague.adobe.com/icons/layers.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
 
 **het Schalen de Middelen van de Modernisering**
 

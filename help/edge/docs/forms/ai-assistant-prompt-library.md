@@ -140,7 +140,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
     - Contactgegevens (e-mail, telefoon, adres)
     - Contactgegevens
     
-     voor noodgevallen**Arbeidsgegevens:**
+     voor noodgevallen&#x200B;**Arbeidsgegevens:**
     - Functie- Functie- Functie-
      Startdatum met validatie
      op werkdag- Salarisinformatie met vertrouwelijkheidskennisgeving
@@ -245,6 +245,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      omvat een daling van Canadese provincies en gebieden 
      een gebied voor de districten van het VK en postgebieden 
  toe
+
 ### Gegevens voor bedrijven en de industrie
 
 **Classificaties van het Bedrijf:**
@@ -300,6 +301,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      voegt een gebied voor conferentiezaal het boeken met beschikbaarheid 
      tot een selectie voor terugkomende vergaderingspatronen 
  toe
+
 ### Product- en servicecategorieën
 
 **E-commerce Classificaties:**
@@ -349,7 +351,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - als @age minder dan 18 is:
      - toon de sectie van ouder/van de Bewaakzame informatie 
      - maak ouder handtekeningupload verplicht 
-     - vervang- Verzenden de Verandert de tekst aan &quot;Voorlegt knooptekst voor Overzicht&quot; 14} - als @age 65 of ouder is:
+     - vervang- Verzenden de Verandert de tekst aan &quot;Voorlegt knooptekst voor Overzicht&quot; 14&rbrace; - als @age 65 of ouder is:
      - toon senior kortingsopties 
      - voeg de sectie van toegankelijkheidsvoorkeuren toe 
     
@@ -394,7 +396,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
     - Formatteer gegevens als JSON met geneste objecten voor adres en dienstverband
     - Behandel succesvolle respons (201) door een bedankbericht
     
-     weer te geven**Secundaire acties:**
+     weer te geven&#x200B;**Secundaire acties:**
     - Stuur een e-mail met meldingen naar de aanvrager op @email adres
     - Kopieer aanvraaggegevens naar het volgsysteem
     - Activeer de workflow voor het goedkeuringsproces
