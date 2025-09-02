@@ -533,7 +533,7 @@ Gebruik deze aanwijzingen voor meer informatie over formulierproblemen:
 
 - [Forms Experience Builder Promptbibliotheek](ai-assistant-prompt-library.md)
 - [Aanbevolen werkwijzen voor Forms Experience Builder](aem-forms-ai-assistant-best-practices.md)
-- [ Documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+- [ Documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL)
 
 ### Doorverwijs en steun
 
@@ -574,4 +574,4 @@ Gebruik deze aanwijzingen voor meer informatie over formulierproblemen:
 - Trainings- en kennisdelingssessies
 - Feedback op productteam voor functieverbeteringen
 
-Deze gids voor probleemoplossing wordt voortdurend bijgewerkt op basis van feedback van gebruikers en nieuwe mogelijkheden van Forms Experience Builder. Voor de recentste informatie en de extra middelen, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).
+Deze gids voor probleemoplossing wordt voortdurend bijgewerkt op basis van feedback van gebruikers en nieuwe mogelijkheden van Forms Experience Builder. Voor de recentste informatie en de extra middelen, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).

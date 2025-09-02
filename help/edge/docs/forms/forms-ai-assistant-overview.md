@@ -101,7 +101,7 @@ De Forms Experience Builder volgt een eenvoudige, conversationele aanpak:
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=nl-NL)
 
 **Transform PDF forms aan Digitale Forms**
 
@@ -117,7 +117,7 @@ Transformeer complexe XFA-toepassingen in moderne, toegankelijke digitale ervari
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=nl-NL)
 
 **zet Schermafbeeldingen in Digitale Forms** om
 
@@ -150,7 +150,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=nl-NL)
 
 **Gematificeerd de Making van de Vorm**
 
@@ -158,7 +158,7 @@ Niet-technische gebruikers in staat stellen geavanceerde formulieren te maken zo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=nl-NL)
 
 **Verminderde Tijd aan Waarde (TTV)**
 
@@ -166,7 +166,7 @@ De ontwikkeling van formulieren van dagen tot uren aanzienlijk versnellen, waard
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=nl-NL)
 
 **Eenvoud van de Interface**
 
