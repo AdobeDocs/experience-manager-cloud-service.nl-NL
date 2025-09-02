@@ -4,9 +4,9 @@ description: Leer over Operationele Telemetrie, een geautomatiseerde dienst die 
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
+source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ De operationele dienst van de Telemetrie wordt ontworpen om gegevensinzameling t
 * De hostnaam van de site die wordt bezocht, bijvoorbeeld: `experienceleague.adobe.com`
 * Het brede type gebruikersagent en besturingssysteem dat wordt gebruikt om de pagina weer te geven, zoals: `desktop:windows` of `mobile:ios`
 * De tijd van de gegevensverzameling, zoals: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs?lang=nl-NL`
+* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs`
 * De URL van de verwijzer (de URL van de pagina die aan de huidige pagina is gekoppeld, als de gebruiker een koppeling heeft gevolgd)
 * Een willekeurig gegenereerde id van de paginaweergave, in een indeling die vergelijkbaar is met: `2Ac6`
 * Het gewicht of het omgekeerde van de bemonsteringsfrequentie, bijvoorbeeld: `100` . Dit betekent dat slechts één op de honderd paginaweergaven wordt opgenomen
@@ -104,3 +104,14 @@ Here are key considerations for customers to keep in mind when interpreting thei
    Adobe raadt u aan de operationele telemetrie te gebruiken vanwege de aanzienlijke voordelen ervan en om Adobe in staat te stellen uw digitale ervaringen te optimaliseren door de prestaties van de website te verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
 
    Weigeren kan betekenen dat er een kans ontbreekt om de betrokkenheid van het verkeer op uw website te verbeteren. Nochtans, als u om het even welke kwesties ontmoet, kunt u Operationele Telemetrie onbruikbaar maken door [ het plaatsen van een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_DISABLED` aan de waarde `true`. Als u Operationele Telemetrie op een later punt opnieuw wilt toelaten, verwijder eenvoudig die omgevingsvariabele opnieuw.
+
+1. **Kan ik een beleid voor inhoudsbeveiliging gebruiken met één keer?
+
+   De ondersteuning voor Operationele telemetrie bevat een experimentele functie ter ondersteuning van een beleid voor inhoudsbeveiliging met een nonce. Deze eigenschap kan worden toegelaten door [ plaatsend een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_NONCE` aan de waarde `true`. Als u dit later opnieuw wilt uitschakelen, verwijdert u gewoon de omgevingsvariabele opnieuw.
+
+   Neem contact op met Adobe Support als er problemen optreden met deze functie.
+
+1. **Hoe kan ik Operationele Telemetrie slechts voor bepaalde pagina&#39;s toelaten?**
+
+   De operationele telemetrie wordt standaard ingeschakeld voor alle pagina&#39;s onder de map `/content` in de opslagplaats. Door [ te plaatsen zal een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_INCLUDED_PATHS` aan een lijst van komma-afzonderlijke wegen in de bewaarplaats, Operationele Telemetrie slechts voor die pagina&#39;s worden toegelaten. Daarnaast kunt u `AEM_OPTEL_EXCLUDED_PATHS` instellen op een lijst met paden in de repository die worden uitgesloten. Met de combinatie van deze twee instellingen kunt u de opname van Operationele Telemetrie aanpassen aan uw vereisten.
+
