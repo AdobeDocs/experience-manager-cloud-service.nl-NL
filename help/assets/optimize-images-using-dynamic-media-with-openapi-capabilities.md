@@ -81,7 +81,7 @@ Voer de volgende stappen uit om voorinstellingen voor afbeeldingen in uw ontwerp
 
 1. Navigeer naar de ontwerppagina voor sites.
 1. Voer de stappen in [ de verre activa van de Toegang in de sectie van de Redacteur van de Pagina van AEM ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) uit om het [!DNL Asset Selector] paneel te gebruiken voor het selecteren van activa.
-1. Ga in het deelvenster [!DNL asset selector] naar **[!UICONTROL  Preset type]** en geef `Preset=Preset Name` op in het veld **[!UICONTROL Image Modifiers]** .
+1. Ga in het deelvenster [!DNL asset selector] naar **[!UICONTROL &#x200B; Preset type]** en geef `Preset=Preset Name` op in het veld **[!UICONTROL Image Modifiers]** .
 
    ![ vooraf ingesteld ](/help/assets/assets/preset-in-asset-selector-panel.png)
 
