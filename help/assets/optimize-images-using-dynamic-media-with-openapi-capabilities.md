@@ -3,9 +3,9 @@ title: Afbeeldingen optimaliseren met Dynamic Media met OpenAPI-mogelijkheden
 description: Leer hoe u afbeeldingen vlak voor de openbare levering kunt optimaliseren met de optimalisatiefuncties van Dynamic Media met OpenAPI-mogelijkheden
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 5a01aff1d6c10d86e2faef22da2dbe724e24e673
+source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [ het Slimme Gewas ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) is een dynamisch het rangschikken vermogen van [!DNL Dynamic Media with OpenAPI capabilities]. [!DNL Smart Crop] is een geavanceerde beeldverwerkingstechniek die door AI aangedreven inhoud-bewuste het bebouwen gebruikt om beelden voor diverse het schermgrootte intelligent uit te snijden terwijl het bewaren van de visuele context in bebouwde versies. De AI analyseert het beeld om het brandpunt of het voorgenomen punt van belang te identificeren, en dan het beeld automatisch om het brandpunt in alle bebouwde versies te behouden. [!DNL Smart Crop] is een belangrijk element van responsief ontwerp en biedt een voordelige en tijdbesparende manier om afbeeldingen uit te snijden.
 
-Zie het [ Dynamische Profiles van het Beeld van Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) artikel leren hoe te [ Slimme vertoningen van het Gewas ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) in [!DNL Admin View] tot stand brengen, [ hen op omslagen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) toepassen, of [ geeft vertoningen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) reeds op een beeld of een omslag uit. Leer om a [!DNL Smart Crop] stap voor stap in deze [ video ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) tot stand te brengen.
+Zie het [ Dynamische Profiles van het Beeld van Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) artikel leren hoe te [ Slimme vertoningen van het Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) in [!DNL Admin View] tot stand brengen, [ hen op omslagen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) toepassen, of [ geeft vertoningen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) reeds op een beeld of een omslag uit. Leer om a [!DNL Smart Crop] stap voor stap in deze [ video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) tot stand te brengen.
 
 De parameter [!DNL Smart Crop] verwacht dat benoemde-smartcrop-profielen bestaan en zijn toegepast op het element. Zie [ Slimme profielen van het Gewas ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) om meer over de [!DNL Smart Crop] parameter te leren en hoe de genoemde [!DNL Smart Crop] profielen worden toegepast.
 
@@ -35,7 +35,7 @@ Transformeer beelden op de vlucht gebruikend [ Beeld vooraf instelt ](https://de
 
 U kunt één voorinstelling toepassen op meerdere afbeeldingen via de [!DNL Dynamic Media with OpenAPI] -bezorgings-URL&#39;s. Dit zorgt voor een consistente opmaak in de verschillende elementen zonder dat elk element handmatig hoeft te worden bewerkt.
 
-Zie [ het leiden Beeld stelt ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) artikel vooraf in om [ te leren hoe te tot beeld leidt vooraf instelt in Mening Admin ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets), en [ hoe te om ontvankelijke beeld tot stand te brengen vooraf instelt ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) dat automatisch activa aanpast om verschillende het schermgrootte te passen.
+Zie [ het leiden Beeld stelt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) artikel vooraf in om [ te leren hoe te tot beeld leidt vooraf instelt in Mening Admin ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets), en [ hoe te om ontvankelijke beeld tot stand te brengen vooraf instelt ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) dat automatisch activa aanpast om verschillende het schermgrootte te passen.
 
 ### Voordelen van het gebruik van voorinstellingen voor afbeeldingen{#benefits-of-image-presets}
 
@@ -56,7 +56,7 @@ Nadat u [!DNL Image Presets] hebt gemaakt, kunt u deze gebruiken voor de volgend
 
 #### Voorinstellingen gebruiken in URL voor levering van afbeelding{#use-presets-in-delivery-urls}
 
-Met voorinstellingen kunt u uw URL&#39;s voor levering korter en gebruiksvriendelijker maken.  Elke naam van de voorinstelling fungeert als een unieke id in de leverings-URL. Verwijs in plaats van meerdere modifiers toe te voegen aan de leverings-URL van een element naar de naam van de voorinstelling om de uitvoering direct te genereren. [ Leer om het Dynamische Beeld van Media toe te passen vooraf instelt aan uw beeld ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
+Met voorinstellingen kunt u uw URL&#39;s voor levering korter en gebruiksvriendelijker maken.  Elke naam van de voorinstelling fungeert als een unieke id in de leverings-URL. Verwijs in plaats van meerdere modifiers toe te voegen aan de leverings-URL van een element naar de naam van de voorinstelling om de uitvoering direct te genereren. [ Leer om het Dynamische Beeld van Media toe te passen vooraf instelt aan uw beeld ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
 In het volgende voorbeeld wordt een URL met een voorinstelling vergeleken met een URL zonder voorinstelling.
 
 **URL zonder vooraf ingesteld (lange URL)**:
@@ -76,13 +76,10 @@ De vooraf ingestelde miniatuur bundelt dezelfde instellingen voor afbeeldingsmod
 #### Voorinstellingen gebruiken tijdens het ontwerpen in AEM Sites{#use-presets-during-authoring-in-aem-sites}
 
 Auteurs kunnen [!DNL Image Presets] selecteren tijdens het bewerken van pagina&#39;s in de [!DNL AEM Sites] ontwerppagina wanneer [!DNL Dynamic Media] -ondersteuning is ingeschakeld.
-
 Voer de volgende stappen uit om voorinstellingen voor afbeeldingen in uw ontwerppagina te gebruiken:
-
 1. Navigeer naar de ontwerppagina voor sites.
 1. Voer de stappen in [ de verre activa van de Toegang in de sectie van de Redacteur van de Pagina van AEM ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) uit om het [!DNL Asset Selector] paneel te gebruiken voor het selecteren van activa.
-1. Ga in het deelvenster [!DNL asset selector] naar **[!UICONTROL &#x200B; Preset type]** en geef `Preset=Preset Name` op in het veld **[!UICONTROL Image Modifiers]** .
-
+1. Blader in het deelvenster [!DNL asset selector] omlaag naar **[!UICONTROL Preset type]** , geef `Preset=Preset Name` op in het veld **[!UICONTROL Image Modifiers]** en klik op **[!UICONTROL Done]** .
    ![ vooraf ingesteld ](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## Slimme afbeeldingen{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
@@ -96,13 +93,13 @@ Wanneer u [!DNL Dynamic Media with OpenAPI capabilities] voor beeldlevering gebr
 
 ### Omzetten in automatische indeling{#auto-format-conversion}
 
-[!DNL Dynamic Media with OpenAPI] [ zet automatisch beelden in moderne, web-geoptimaliseerde formaten zoals AVIF of WEBP ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request) om. De omzetting hangt van de mogelijkheden van browser en [ vergunning-recht ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), ongeacht het gevraagde formaat af.
+[!DNL Dynamic Media with OpenAPI] [ zet automatisch beelden in moderne, web-geoptimaliseerde formaten zoals AVIF of WEBP ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request) om. De omzetting hangt van de mogelijkheden van browser en [ vergunning-recht ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), ongeacht het gevraagde formaat af.
 
 De indelingen AVIF en WEBP bieden een betere compressie, waardoor afbeeldingen kleiner en sneller worden gemaakt voor levering en laden. AVIF wordt gebruikt als standaardformaat aangezien het alle browser mogelijkheden behandelt.
 
 [!DNL Dynamic Media with OpenAPI] gebruikt de `auto-format` queryparameter om het gedrag van de browser te bepalen voor het omzetten van een afbeelding in verschillende indelingen voor geoptimaliseerde aflevering. De auto formaatomzetting omvat **autobevordering** en **autodemotion**. Wanneer het systeem voor levering een voor het web geoptimaliseerde indeling (AVIF of WEBP) via JPEG of PNG promoot, wordt deze automatisch promotie genoemd.
 
-Standaard is de parameter `auto-format` query ingesteld op `true` . Wanneer `auto-format` (waar) wordt toegelaten, negeert het systeem het gevraagde formaat en selecteert automatisch een Web-geoptimaliseerd formaat (AVIF of WEBP) dat op beeldkenmerken, browser mogelijkheden, en [ vergunning-recht ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate) wordt gebaseerd.
+Standaard is de parameter `auto-format` query ingesteld op `true` . Wanneer `auto-format` (waar) wordt toegelaten, negeert het systeem het gevraagde formaat en selecteert automatisch een Web-geoptimaliseerd formaat (AVIF of WEBP) dat op beeldkenmerken, browser mogelijkheden, en [ vergunning-recht ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate) wordt gebaseerd.
 
 Wanneer `auto-format` true is, levert het systeem de afbeeldingsindeling in de volgende volgorde:
 
