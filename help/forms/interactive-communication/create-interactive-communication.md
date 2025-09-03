@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De interactieve mededeling laat u toe om, gepersonaliseerde en interactieve mede
 
 Stel dat u een bankafschrift, een verzekeringspolis of een nutsrekening naar duizenden klanten moet sturen. Elk bestand heeft dezelfde indeling, maar is gepersonaliseerd. Interactieve communicatie (IC) maakt dat mogelijk efficiënt.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/Picture1.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/introimg.png)
 
 Het handmatig maken van deze documenten kan tijdrovend zijn en leidt vaak tot inconsistenties, vooral wanneer personalisatie en gegevensintegratie vereist zijn. Met de Interactieve Communicatie Redacteur, kunnen de gebruikers het proces stroomlijnen om Interactieve mededeling tot stand te brengen.
 
