@@ -35,7 +35,7 @@ Adobe Enterprise Documentation biedt meer dan een verzameling gebruikershandleid
 ### Inhoud en Commerce
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [ Optimizer Experience Manager Sites ](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [ Optimizer Experience Manager Sites ](https://experienceleague.adobe.com/nl/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
 + [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
@@ -87,8 +87,8 @@ Adobe Enterprise Documentation biedt meer dan een verzameling gebruikershandleid
 
 ### Documentatie
 
-+ [ Acrobat Leren &amp; Steun ](https://helpx.adobe.com/support/acrobat.html)
-+ [ Acrobat Sign Leren &amp; Steun ](https://helpx.adobe.com/support/sign.html)
++ [ Acrobat Leren &amp; Steun ](https://helpx.adobe.com/nl/support/acrobat.html)
++ [ Acrobat Sign Leren &amp; Steun ](https://helpx.adobe.com/nl/support/sign.html)
 
 ### Developer
 
@@ -97,32 +97,32 @@ Adobe Enterprise Documentation biedt meer dan een verzameling gebruikershandleid
 
 ### Nuttige bronnen voor Document Cloud
 
-+ [ Document Cloud Leren &amp; Steun ](https://helpx.adobe.com/support/document-cloud.html)
-+ [ de Zelfstudies van de Onderneming van Document Cloud ](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [ Document Cloud Leren &amp; Steun ](https://helpx.adobe.com/nl/support/document-cloud.html)
++ [ de Zelfstudies van de Onderneming van Document Cloud ](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=nl-NL#document-cloud-tutorials)
 + [ Status van Adobe ](https://status.adobe.com/)
-+ [ Gids Admin ](https://helpx.adobe.com/enterprise/admin-guide.html)
++ [ Gids Admin ](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
 
 ## Creative Cloud for Enterprise
 
 ### Documentatie
 
-+ [ Creative Cloud Leren &amp; Steun ](https://helpx.adobe.com/support/creative-cloud.html)
++ [ Creative Cloud Leren &amp; Steun ](https://helpx.adobe.com/nl/support/creative-cloud.html)
 
 ### Nuttige bronnen voor Creative Cloud for Enterprise
 
 + [Zelfstudies voor Creative Cloud for Enterprise](creative-cloud-enterprise-learn#cce-learning-hub)
 + [ Status van Adobe ](https://status.adobe.com/)
 + [ Adobe Developer ](https://developer.adobe.com/)
-+ [ Gids Admin ](https://helpx.adobe.com/enterprise/admin-guide.html)
++ [ Gids Admin ](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
 
 ## Aanvullende bronnen {#lists-resources}
 
 ### Bronnen voor verschillende cloud
 
-+ [ Gebeurtenissen van Experience League ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [ Gebeurtenissen van Experience League ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=nl-NL#events)
 + [ Status van Adobe ](https://status.adobe.com/)
 + [ Adobe Developer ](https://developer.adobe.com/)
-+ [ Gids Admin ](https://helpx.adobe.com/enterprise/admin-guide.html)
++ [ Gids Admin ](https://helpx.adobe.com/nl/enterprise/admin-guide.html)
 + [Softwaredistributie](experience-cloud#software-distribution)
 
 ### Middelen voor inschakelen en beheer
@@ -135,10 +135,10 @@ Adobe Enterprise Documentation biedt meer dan een verzameling gebruikershandleid
 
 + [Opmerkingen bij de release van Experience Cloud](release-notes#experience-cloud)
 + [Tutorials](home-tutorials.md)
-+ [ Playlists ](https://experienceleague.adobe.com/en/playlists)
++ [ Playlists ](https://experienceleague.adobe.com/nl/playlists)
 + [Certificering](certification#program)
 + [ Communautair Forum ](https://experienceleaguecommunities.adobe.com)
-+ [ Steun ](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
++ [ Steun ](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support)
 
 <!--
 + [Events](events.md)
