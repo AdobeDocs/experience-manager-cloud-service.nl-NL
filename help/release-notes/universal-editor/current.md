@@ -4,7 +4,7 @@ description: Dit zijn de releaseopmerkingen voor de release 2025.09.04 van de Un
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ca329ad8fe64ab4c45b01ce5906d51c8db45155
+source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -24,6 +24,13 @@ Dit zijn de opmerkingen bij de release van 4 september 2025 van de Universal Edi
 
 * Het exemplaar en de deeg is beschikbaar voor [ vroege adopters ](#copy-paste)
 
+### Ongedaan maken/Opnieuw {#undo-redo}
+
+Ongedaan maken en opnieuw uitvoeren is nu beschikbaar voor auteurs van inhoud in de Universal Editor.
+
+* Dit omvat bewerkingen die in de context zijn uitgevoerd, bewerkingen die zijn uitgevoerd via het deelvenster Eigenschappen, en het toevoegen (of dupliceren), verplaatsen en verwijderen van blokken.
+* Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
+
 ## Functies voor vroege adoptie {#early-adopter}
 
 Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar Customer Success Manager van Adobe via het e-mailadres dat bij uw Adobe ID hoort.
@@ -31,13 +38,6 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 ### Nieuwe RTE {#new-rte}
 
 De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster.
-
-### Ongedaan maken/Opnieuw {#undo-redo}
-
-Ongedaan maken en opnieuw uitvoeren is nu beschikbaar voor auteurs van inhoud in de Universal Editor.
-
-* Dit omvat bewerkingen die in de context zijn uitgevoerd, bewerkingen die zijn uitgevoerd via het deelvenster Eigenschappen, en het toevoegen (of dupliceren), verplaatsen en verwijderen van blokken.
-* Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
 
 ### Kopiëren/plakken {#copy-paste}
 
