@@ -3,9 +3,9 @@ title: Elementen en eigenschappen voorvertonen in  [!DNL the Content Hub]
 description: Leer hoe u elementen en eigenschappen voorvertoont in  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
 * **K:** Dichte voorproefscherm
 * **L:** Informatie van activa die titel, formaat, grootte, resolutie, markeringen, kleurenmarkeringen, en slimme markeringen omvat.
 
-## Ondersteunde bestandsindelingen {#supported-formats}
+## Ondersteunde elementindelingen {#supported-formats}
 
 [!DNL Content Hub] ondersteunt alle typen elementen en indelingen die door de onderliggende [!DNL Assets] -opslagplaats worden ondersteund. In de volgende tabel vindt u een overzicht van de belangrijkste bestandsindelingen in [!DNL the Content Hub] , die extra ondersteuning bieden voor het visueel voorvertonen van elementen:
 
@@ -54,23 +54,16 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
      <tr>
       <th><strong>Bestandstype</strong></th>
       <th><strong>Ondersteunde indelingen</strong></th>
-      <th><strong>Grootte</strong></th>
      </tr>
      <tr>
-        <td rowspan="4"> Afbeelding </td>
+        <td rowspan="3"> Afbeelding </td>
     </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 x 8000 pixels, maximaal 40 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 x 8000 pixels, maximaal 40 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Maximaal 250 kB</td>
     </tr>
     <tr>
         <td rowspan="4"> Video </td>
@@ -78,15 +71,12 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
     </tr>
     <tr>
         <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 x 3840 pixels, maximaal 200 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MPEG]</td>
-        <td> Maximaal 200 MB </td>
     </tr>
     <tr>
         <td rowspan="4"> Document </td>
@@ -94,15 +84,12 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
     </tr>
     <tr>
         <td>[!UICONTROL txt] (Normaal)</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL XML]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td rowspan="2"> Media afdrukken </td>
@@ -110,7 +97,6 @@ Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijk
     </tr>
     <tr>
         <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -125,7 +111,7 @@ Sommige eigenschappen voor elementen die worden weergegeven in [!DNL Content Hub
 
 * **Slimme Markeringen:** [!DNL The Content Hub] gebruikt de slimme inhoudsdiensten van Adobe Sensei om activa te trainen gebruikend herkenningsalgoritme op de op markeringen-gebaseerde structuur. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. Met slimme tags verhoogt u de snelheid van de inhoud van uw projecten doordat u snel relevante middelen kunt vinden. De slimme tags zijn een voorbeeld van informatie over elementen die niet in de afbeelding voorkomen. [!DNL Experience Manager Assets] past standaard automatisch slimme tags toe op elementen.
 
-* **de Markeringen van de Kleur:** [ de markeringen van de Kleur ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=nl-NL) helpen u activa herkennen gebruikend kleuren die automatisch in een activa gebruikend de mogelijkheden van Adobe AIR AI worden geïdentificeerd.
+* **de Markeringen van de Kleur:** [ de markeringen van de Kleur ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helpen u activa herkennen gebruikend kleuren die automatisch in een activa gebruikend de mogelijkheden van Adobe AIR AI worden geïdentificeerd.
 
 * Uploaddatum
 

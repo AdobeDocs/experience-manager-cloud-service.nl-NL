@@ -4,9 +4,9 @@ description: Dankzij de native integratie van AEM Assets met Adobe Express hebt 
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,10 @@ Nadat u de juiste wijzigingen hebt aangebracht in het Express-canvas, kunt u het
 
    ![ sparen activa in AEM ](assets/adobe-express-share.png)
 
-2. Van de sectie van de Opslag in de juiste ruit, uitgezochte **AEM Assets**. Adobe Express geeft het dialoogvenster voor uploaden weer.
+2. Van de **[!UICONTROL Recommended]** sectie in de juiste ruit, uitgezochte **AEM Assets**. Adobe Express geeft het dialoogvenster voor uploaden weer.
+
+   ![ sparen activa in AEM ](assets/adobe-express-aem.png)
+
 3. Selecteer of **Huidige Pagina** of **Alle Pagina&#39;s**. Geef een naam en indeling op voor de elementen die u wilt exporteren. U kunt de inhoud van het canvas exporteren in de indelingen PNG, JPEG, PDF, MP4, MP4+PNG of MP4+JPEG. De opmaak wordt automatisch aangepast op basis van de elementen op de canvaspagina(&#39;s).
 Het selecteren van **Huidige Pagina** slaat de activa op uw huidige pagina aan uw bestemmingsomslag op. Als u **Alle Pagina&#39;s** selecteert en het uitvoerformaat niet PDF is, worden alle canvaspagina&#39;s bewaard als afzonderlijke dossiers in een nieuwe omslag binnen uw bestemmingsomslag. Als de exportindeling PDF is, worden alle canvaspagina&#39;s als één PDF-bestand opgeslagen in de doelmap.
 
@@ -65,20 +68,12 @@ Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een v
 
 7. Klik op **[!UICONTROL Upload]** om de elementen te uploaden naar AEM Assets.
 
-Verwijs naar [ Gesteunde dossierformaten ](asset-properties-content-hub.md#supported-formats).
-
-[!DNL Content Hub] ondersteunt alle typen elementen en indelingen die door de onderliggende [!DNL Assets] -opslagplaats worden ondersteund. In de volgende tabel vindt u een overzicht van de belangrijkste bestandsindelingen in [!DNL the Content Hub] , die extra ondersteuning bieden voor het visueel voorvertonen van elementen:
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>Bestandstype</strong></th>
       <th><strong>Ondersteunde indelingen</strong></th>
       <th><strong>Grootte</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> Afbeelding </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -93,44 +88,11 @@ Verwijs naar [ Gesteunde dossierformaten ](asset-properties-content-hub.md#suppo
         <td> Maximaal 250 kB</td>
     </tr>
     <tr>
-        <td rowspan="4"> Video </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3840 x 3840 pixels, maximaal 200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> Maximaal 200 MB </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> Document </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt] (Normaal)</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> Media afdrukken </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ Verwijs naar [ Gesteunde dossierformaten ](asset-properties-content-hub.md#suppo
 
 1. Voor het importeren en exporteren is MP4 het ondersteunde videobestandstype.
 
-2. Voor **MP4 videoinvoer**, verwijs naar de [ gesteunde dossierformaten ](asset-properties-content-hub.md#supported-formats). Bovendien worden video&#39;s met transparante achtergronden (alfakanaal) niet ondersteund.
+2. Voor **MP4 videoinvoer**, worden de video&#39;s met transparante achtergronden (alpha- kanaal) niet gesteund.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
