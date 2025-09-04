@@ -1,28 +1,28 @@
 ---
-title: GitHub Check Configuration for Private Repositories
+title: Controleren op privéopslagplaatsen volbrengen
 description: Leer hoe u de pijpleidingen kunt beheren die automatisch worden gemaakt om elke pull-aanvraag naar een privéopslagplaats te valideren.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
-# GitHub-controleconfiguratie voor privéopslagruimten {#github-check-config}
+# Controles voor aanvragen van persoonlijke opslagplaatsen uitvoeren {#github-check-config}
 
 Leer hoe u de pijpleidingen kunt beheren die automatisch worden gemaakt om elke pull-aanvraag naar een privéopslagplaats te valideren.
 
-## Configuratie van GitHub-controles {#configuration}
+## Configuratie van controles van privéopslagplaatsen {#configuration}
 
 Wanneer het gebruiken van [ privé bewaarplaatsen ](private-repositories.md#using), wordt de a [ volledige pijpleiding van de kwaliteit van de stapelcode ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) automatisch gecreeerd. Deze pijpleiding is begonnen bij elke update van het trekkingsverzoek.
 
 U kunt deze controles besturen door een `.cloudmanager/pr_pipelines.yml` configuratiebestand te maken in de standaardvertakking van de privéopslagruimte.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:

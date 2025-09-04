@@ -4,9 +4,9 @@ description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarp
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,10 @@ Door Cloud Manager in te stellen om te integreren met uw persoonlijke GitHub Clo
 >
 >U kunt ook de volgende typen opslagplaatsen toevoegen met webhaken:
 >
->* GitHub Enterprise Server (zelfgehoste versie van GitHub)-opslagruimten
->* GitLab-opslagruimten (zowel `gitlab.com` als zelfgehoste versies van GitLab)
->* Bitbucket (zowel `bitbucket.org` als Bitbucket Server, de zelfgehoste versie van BitBucket) repositories
+>* GitHub Enterprise Server (zelfgehoste versie van GitHub)-opslagruimten.
+>* GitLab-opslagruimten (zowel `gitlab.com` als zelfgehoste versies van GitLab).
+>* Bitbucket (zowel `bitbucket.org` als Bitbucket Server, de zelfgehoste versie van BitBucket) repositories.
+>* Azure DevOps (zowel [ dev.azure.com ](http://dev.azure.com) als zelf-ontvangen versies van Azure DevOps) bewaarplaatsen.
 >
 >Zie [ Externe Bewaarplaatsen in Cloud Manager toevoegen - privé bèta ](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -105,7 +106,7 @@ Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot
 
    Als de app is geïnstalleerd en het geheime bestand in de opslagplaats aanwezig is, gaat u verder met de stap.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, klik** Valideren **.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, klik** Valideren **.**
 
 De app kan worden geïnstalleerd en een geheim bestand kan in elke willekeurige volgorde worden gemaakt. Beide stappen moeten echter zijn voltooid voordat u de validatie kunt uitvoeren.
 
@@ -113,7 +114,7 @@ Tot de validatie wordt de repository weergegeven met een rood pictogram dat aang
 
 ![ Unvalidate repo ](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-De **kolom van het Type** &lbrace;in de lijst op de **pagina van Bewaarplaatsen** identificeert Adobe-Verstrekte bewaarplaatsen (**Adobe**) en uw eigen privé bewaarplaatsen (**GitHub**).
+De **kolom van het Type** {in de lijst op de **pagina van Bewaarplaatsen** identificeert Adobe-Verstrekte bewaarplaatsen (**Adobe**) en uw eigen privé bewaarplaatsen (**GitHub**).
 
 Als u aan de bewaarplaats moet terugkeren later om de bevestiging, op de **pagina van Bewaarplaatsen** te voltooien, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de rij die de bewaarplaats vertegenwoordigt GitHub u enkel toevoegde. In de drop-down lijst, uitgezochte **Bevestiging van de Eigendom**.
 
@@ -153,13 +154,13 @@ Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijp
 
 
 
-## Gebruiksnotities {#usage-notes}
+## Beperkingen {#limitations}
 
-* De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen.
+Bij het gebruik van persoonlijke opslagruimten met Cloud Manager gelden bepaalde beperkingen.
+
 * Er wordt geen tag Git gemaakt en geduwd wanneer u privéopslagruimten gebruikt bij de productie van volledige stapelleidingen.
 * Als Adobe GitHub app wordt verwijderd uit uw organisatie GitHub, verwijdert het de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen.
 * De pijpleidingen die privé GitHub Cloud-bewaarplaatsen gebruiken en &quot;on-commit&quot;bouwen trekker zijn niet automatisch begonnen wanneer nieuw begaan in de geselecteerde tak wordt geduwd.
 * [ functionaliteit van het Hergebruik van Artefact ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) is niet op privé bewaarplaatsen van toepassing.
-* U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van Cloud Manager.
-Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, probeert Cloud Manager altijd om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
-* Als de organisatie GitHub IP beperkingen heeft, creeer een steungeval om de lijst van IP adressen te ontvangen om worden toegestaan.
+* U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van Cloud Manager. Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, probeert Cloud Manager altijd om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
+* Als uw organisatie GitHub IP beperkingen afdwingt, open een steungeval om de lijst van IP adressen te verkrijgen die moeten worden toegestaan.

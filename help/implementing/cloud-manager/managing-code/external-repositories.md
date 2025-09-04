@@ -4,9 +4,9 @@ description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoege
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
+source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
 workflow-type: tm+mt
-source-wordcount: '2321'
+source-wordcount: '2452'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,15 @@ ht-degree: 0%
 
 Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 
-Klanten kunnen nu ook hun Azure DevOps (Beta) Git-opslagruimten in Cloud Manager opnemen, met ondersteuning voor zowel moderne Azure DevOps- als oudere VSTS-opslagruimten (Visual Studio Team Services).
+Klanten kunnen nu ook hun Azure DevOps Git-opslagplaatsen in Cloud Manager aan boord nemen, met ondersteuning voor zowel moderne Azure DevOps- als oudere VSTS-opslagruimten (Visual Studio Team Services).
 
 * Voor Edge Delivery Services-gebruikers kan de ingebouwde opslagplaats worden gebruikt voor het synchroniseren en implementeren van sitecode.
 * Voor AEM as a Cloud Service- en Adobe Managed Services-gebruikers (AMS) kan de opslagplaats worden gekoppeld aan zowel full-stack als frontend pijpleidingen.
 
+<!--
 >[!NOTE]
 >
->De ondersteuning die is toegevoegd voor Azure DevOps die in dit artikel wordt beschreven, is alleen beschikbaar via het persoonlijke bètaprogramma. Voor meer details en om omhoog voor bèta te ondertekenen, zie [ Uw Eigen Git ](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts) brengen.
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
 
 
 ## Een externe opslagplaats configureren
@@ -75,7 +76,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit de vol
 
    Geef nu een toegangstoken om de eigendom van de externe opslagplaats te valideren.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben, dan klik** Bevestiging **.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben, dan klik** Bevestiging **.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
    *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket (voor illustratie slechts).*
@@ -121,14 +122,14 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 
 Zie ook [ de Tokens van de Toegang beheren ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
->[!TAB  Azure DevOps (Beta) ]
+>[!TAB  Azure DevOps ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Toegang tot token, optie | Beschrijving |
 | --- | --- |
 | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ Azure documentatie DevOps ](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Vereiste toestemmingen voor het Azure DevOps Persoonlijke Token van de Toegang (PAT).<br> Deze toestemmingen staan Cloud Manager toe om tot bewaarplaatsinhoud toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op WebHaakgebeurtenissen te reageren.<br> wanneer u het app wachtwoord in Azure DevOps creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)</li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ Azure documentatie DevOps ](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Vereiste toestemmingen voor het Azure DevOps Persoonlijke Token van de Toegang (PAT).<br> Deze toestemmingen staan Cloud Manager toe om tot bewaarplaatsinhoud toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op WebHaakgebeurtenissen te reageren.<br> wanneer u het app wachtwoord in Azure DevOps creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Code (lezen)</li><li>Code (status)</li><li>Verzoek om Threads intrekken (lezen en schrijven)</li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
 Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
 
@@ -151,7 +152,7 @@ Zie ook [ de Tokens van de Toegang beheren ](/help/implementing/cloud-manager/ma
 
 1. Wanneer het toevoegen van of het uitgeven van een pijpleiding, om de **plaats van de Code van Source** voor uw nieuwe of bestaande pijpleiding te specificeren, verkies de externe bewaarplaats u van de **drop-down lijst van de Bewaarplaats** wilt gebruiken.
 
-1. In de **drop-down lijst van de Tak van 0&rbrace; Git, selecteer de tak als bron voor de pijpleiding.**
+1. In de **drop-down lijst van de Tak van 0} Git, selecteer de tak als bron voor de pijpleiding.**
 
 1. Klik **sparen**.
 
@@ -197,15 +198,15 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken - zoals de Ond
 
    1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
-   1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik** pictogram van het Exemplaar ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik** pictogram van het Exemplaar ![.
+](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab, Bitbucket of Azure DevOps).
 
    Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Zie de tabel met tabbladen onder stap 8.
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -240,13 +241,13 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 | --- |
 | Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Volledige aanvraag: gemaakt<li>Verzoek tot uittrekken: Bijgewerkt<li>Pull-verzoeken: Samengevoegd<li>Volledige aanvraag: opmerking<li>Repository: Push</li></li></li></ul></ul></ul> |
 
->[!TAB  Azure DevOps (Beta) ]
+>[!TAB  Azure DevOps ]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Vereiste gebeurtenissen met betrekking tot de webhaak en verificatie |
 | --- |
-| Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Repository: Push</li></ul>Plaats authentificatie:<br> 1. Op het **Basis gebied van de authentificatiegebruikersbenaming**, type `cloudmanager`.<br> 2. Op het **Basis authentificatiewachtwoord** gebied, typ het Geheim van Webhaak dat van het gebruikersinterface van Cloud Manager wordt geproduceerd. |
+| Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Code gepushte</li><li>Verzoek om opvulling is becommentarieerd op</li><li>Pull request created</li><li>Verzoek intrekken bijgewerkt</li></ul>Plaats authentificatie:<br> 1. Op het **Basis gebied van de authentificatiegebruikersbenaming**, type `cloudmanager`.<br> 2. Op het **Basis authentificatiewachtwoord** gebied, typ het Geheim van Webhaak dat van het gebruikersinterface van Cloud Manager wordt geproduceerd. |
 
 >[!ENDTABS]
 
@@ -304,6 +305,25 @@ Gebruikt de status commit voor het volgen van voortgang van PR-validatie. In het
 
 ![ Trek de status van de verzoekbevestiging voor Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
+>[!TAB  Azure DevOps ]
+
+Azure DevOps tracks vragen validatie aan via statuscontroles. Wanneer de looppas van Cloud Manager de bevestiging van het trekkingsverzoek toevoegt, voegt het statuscontroles toe die in de Azure DevOps trekkingsverzoekinterface verschijnen.
+
+Tijdens de validatie van de codekwaliteit, toont een statuscontrole aan dat het proces lopend is:
+
+![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-1 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+
+Wanneer de validatie van de codekwaliteit is voltooid, wordt de statuscontrole bijgewerkt met de resultaten:
+
+![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-2 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+
+Als de validatie mislukt, wordt gedetailleerde foutinformatie gegeven in de statuscontrolegegevens. U kunt op de statuscontrole klikken om de volledige validatieresultaten in Cloud Manager weer te geven.
+
+![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-3 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+
+Cloud Manager voegt voor opmerkingen over pull-aanvragen en feedback opmerkingen rechtstreeks toe aan de pull-aanvraag in Azure DevOps met validatiegegevens en eventueel vereiste handelingen.
+
+![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-4 ](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]
