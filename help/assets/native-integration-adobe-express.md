@@ -4,9 +4,9 @@ description: Dankzij de native integratie van AEM Assets met Adobe Express hebt 
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,6 @@ AEM Assets kan op een native manier worden geïntegreerd met Adobe Express, waar
 ## Vereisten {#prerequisites}
 
 Toegang tot Adobe Express en ten minste één omgeving in AEM Assets. De omgeving kan elk van de opslagruimten in Assets as a Cloud Service of Assets Essentials zijn.
-
 
 ## AEM Assets gebruiken in Adobe Express-editor {#use-aem-assets-in-express}
 
@@ -66,19 +65,88 @@ Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een v
 
 7. Klik op **[!UICONTROL Upload]** om de elementen te uploaden naar AEM Assets.
 
+## Ondersteunde bestandsindelingen {#supported-formats}
+
+[!DNL Content Hub] ondersteunt alle typen elementen en indelingen die door de onderliggende [!DNL Assets] -opslagplaats worden ondersteund. In de volgende tabel vindt u een overzicht van de belangrijkste bestandsindelingen in [!DNL the Content Hub] , die extra ondersteuning bieden voor het visueel voorvertonen van elementen:
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>Bestandstype</strong></th>
+      <th><strong>Ondersteunde indelingen</strong></th>
+      <th><strong>Grootte</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> Afbeelding </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 x 8000 pixels, maximaal 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 x 8000 pixels, maximaal 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximaal 250 kB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Video </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 x 3840 pixels, maximaal 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> Maximaal 200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Document </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (Normaal)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Media afdrukken </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
+    </tbody>
+   </table>
+
 ## Beperkingen {#limitations}
 
 1. Voor het importeren en exporteren is MP4 het ondersteunde videobestandstype.
 
-2. Voor het importeren van MP4-video:
+2. Voor **MP4 videoinvoer**, verwijs naar de [ gesteunde dossierformaten ](#supported-formats). Bovendien worden video&#39;s met transparante achtergronden (alfakanaal) niet ondersteund.
+   <!--
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-   1. De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven.
-   2. De maximale ondersteunde resolutie is 3840 x 3840 pixels.
-   3. Video&#39;s met transparante achtergronden (alfakanaal) worden niet ondersteund.
-
-3. Voor het exporteren van MP4-video:
-
-   1. De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt in een waarschuwing aanbevolen de video te verkleinen tot 200 MB of minder, of deze handmatig te uploaden naar de AEM Assets-doelmap nadat deze is gedownload.
+3. Voor **MP4 videouitvoer**, is de maximumgesteunde dossiergrootte 200 MB. Als deze limiet wordt overschreden, wordt in een waarschuwing aanbevolen de video te verkleinen tot 200 MB of minder, of deze handmatig te uploaden naar de AEM Assets-doelmap nadat deze is gedownload.
 
 
 
