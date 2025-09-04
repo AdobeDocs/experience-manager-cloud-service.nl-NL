@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Leer hoe u Edge Delivery-pijpleidingen configureert voor het maken en implementeren van uw code in productieomgevingen. Een productiepijpleiding stelt code eerst aan het werkgebiedmilieu op. Bij goedkeuring, stelt het de zelfde code aan het productiemilieu op.
 
-Een gebruiker moet de **[rol hebben van de Manager van de Plaatsing 0} om productiepijpleidingen te vormen.](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**
+Een gebruiker moet de **[rol hebben van de Manager van de Plaatsing 0&rbrace; om productiepijpleidingen te vormen.](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Alvorens u begint om uw code op te stellen, vorm uw pijpleidingsmontages van [!U
    * **voeg een pijpleiding van Edge Delivery van de kaart van Pijpleidingen toe**
 
       1. In het linkerspoor, onder **Programma**, klik **![pictogram van het Overzicht ](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [ Overzicht](/help/implementing/cloud-manager/navigation.md#my-programs)**.
-      1. Op de **pagina van het Overzicht van het 0} Programma, onder de** Pijpleidingen **kaart, klik** plus teken **![toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg), dan uitgezocht** voeg de Pijpleiding van Edge Delivery toe **.**
+      1. Op de **pagina van het Overzicht van het 0&rbrace; Programma, onder de** Pijpleidingen **kaart, klik** plus teken **![toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg), dan uitgezocht** voeg de Pijpleiding van Edge Delivery toe **.**
 
          ![ de kaart van Pijpleidingen op de pagina van het Overzicht van het Programma ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
@@ -67,7 +67,7 @@ Alvorens u begint om uw code op te stellen, vorm uw pijpleidingsmontages van [!U
 
    ![ voeg de dialoogdoos van de Pijpleiding van Edge Delivery toe ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-1. Selecteer de optie van de trekker van de Plaatsing van de pijpleiding **** u wilt.
+1. Selecteer de optie van de trekker van de Plaatsing van de pijpleiding **&#x200B;**&#x200B;u wilt.
 
    * **Hand** - u begint de plaatsing.
    * **op de Veranderingen van het Git** - het begin van het Git de plaatsing automatisch. Met deze optie, kunt u de pijpleiding nog manueel, indien nodig beginnen.
