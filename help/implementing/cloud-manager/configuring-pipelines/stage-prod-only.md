@@ -5,7 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
-source-git-commit: 09a1bccd03d4efb277c8f3bb5baf6dbaaa8b6d87
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -80,7 +83,7 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 1. Op het **lusje van de Controle van de Ervaring**, is gespecificeerde Plaats URL publiceren URL die Cloud Manager voor paginakwaliteit controleert.
 
-1. Op het **gebied van de Weg van de Pagina 0&rbrace; &lbrace;, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
+1. Op het **gebied van de Weg van de Pagina 0} {, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
 
    De Experience Audit analyseert elk pad dat u toevoegt voor prestaties, toegankelijkheid, progressieve webapps, aanbevolen werkwijzen, SEO en andere kwaliteitscontroles. U kunt veelvoudige wegen toevoegen en om het even welk verwijderen door ![ Grootte 400 te klikken pictogram ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
@@ -137,7 +140,7 @@ Als er geen installatieprogramma is, wordt u gevraagd om er een te maken.
 
 ### Pijpleidingen met alleen profielen uitvoeren {#prod-only-run}
 
-Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0&rbrace; Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
+Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0} Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
 
 
 ![ details Artefact ](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
