@@ -19,7 +19,7 @@ ht-degree: 0%
 >id="aemcloud_ctt_precopy"
 >title="Afhandeling van grote opslagplaatsen voor inhoud"
 >abstract="Als u de extractie- en insluitingsfasen van de activiteit voor inhoudsoverdracht aanzienlijk wilt versnellen om inhoud naar AEM as a Cloud Service te verplaatsen, kunt u met het gereedschap Inhoud overbrengen (CTT) AzCopy gebruiken als een optionele stap vóór het kopiëren. Zodra deze voorstap is geconfigureerd, kopieert AzCopy in de extractiefase lobs van Amazon S3 of Azure Blob Storage naar de blob-opslag van de migratieset. In de innamefase kopieert AzCopy klodders van de blob store van de migratieset naar de AEM as a Cloud Service blob store van de bestemming."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="Aan de slag met AzCopy als een stap Vooraf kopiëren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=nl-NL#setting-up-pre-copy-step" text="Aan de slag met AzCopy als een stap Vooraf kopiëren"
 
 Het kopiëren van vele blobs met het hulpmiddel van de Overdracht van de Inhoud (CTT) kan veelvoudige dagen vergen.
 Om de extractie en inname fasen van de activiteit van de inhoudsoverdracht te versnellen om inhoud naar AEM as a Cloud Service te bewegen, kan CTT [ AzCopy ](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) als facultatieve pre-exemplaarstap gebruiken. Deze pre-exemplaarstap kan worden gebruikt wanneer de bronAEM instantie wordt gevormd om een Amazon S3, Azure Blob de gegevensopslag van de Opslag, of de Opslag van de Gegevens van het Dossier te gebruiken. De voorkopieerstap is het meest effectief voor de eerste volledige extractie en inname. Het gebruik van een voorkopie voor volgende top-ups wordt echter afgeraden (als de grootte van de top-up minder is dan 200 GB), omdat dit veel tijd kan kosten voor het gehele proces. Zodra deze voorstap is geconfigureerd, kopieert AzCopy in de extractiefase lobs van Amazon S3, Azure Blob Storage of File data store naar de migratieset blob store. In de innamefase kopieert AzCopy klodders van de blob store van de migratieset naar de AEM as a Cloud Service blob store van de bestemming.
@@ -32,13 +32,13 @@ Volg de onderstaande sectie om de belangrijke overwegingen te begrijpen voordat 
 
 * Source AEM moet 6.3 - 6.5 zijn.
 
-* Source AEM Data Store is geconfigureerd voor gebruik van Amazon S3 of Azure Blob Storage. Voor meer details, zie [ het Vormen knoopopslag en gegevensopslag in AEM 6 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
+* Source AEM Data Store is geconfigureerd voor gebruik van Amazon S3 of Azure Blob Storage. Voor meer details, zie [ het Vormen knoopopslag en gegevensopslag in AEM 6 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=nl-NL).
 
 * Elke migratieset kopieert de volledige gegevensopslag, zodat slechts één migratieset zou moeten worden gebruikt.
 
 * U hebt toegang nodig om [ AzCopy ](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) op de instantie (of VM) te installeren die de bronAEM instantie in werking stellen.
 
-* De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande zeven dagen op de bron in werking gesteld. Voor meer details, zie {de inzameling van het huisvuil van de 0} opslag van Gegevens [.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)
+* De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande zeven dagen op de bron in werking gesteld. Voor meer details, zie {de inzameling van het huisvuil van de 0} opslag van Gegevens [.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=nl-NL#data-store-garbage-collection)
 
 ### Aanvullende overwegingen als de AEM-broninstantie is geconfigureerd voor het gebruik van een Amazon S3- of Azure Blob Storage Data Store {#additional-considerations-amazons3-azure}
 
