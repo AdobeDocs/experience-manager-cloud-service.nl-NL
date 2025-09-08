@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.9.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ De volgende geplande release is donderdag 2 oktober 2025.
 
   ![ SSL certificaat vernieuwt ](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Steun nu toegevoegd voor Azure DevOps voor privé bewaarplaatsen**
+* **Steun nu toegevoegd voor Azure DevOps (privé bewaarplaatsen)**
 
   Documentatie-updates bevatten configuratiestappen voor Uw eigen IT met Azure DevOps en pull request-validatie. Zie [ Externe Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toevoegen.
 
-* **Trek verzoekcontroles voor privé bewaarplaatsen**
+* **breng Uw Eigen steun van het Git (BYOG) die aan config pijpleidingen (privé bewaarplaatsen) wordt uitgebreid**
 
-  Cloud Manager ondersteunt nu config-pijpleidingen met privéopslagruimten via GitHub, Bitbucket, Azure DevOps en GitLab. Zie [ de Controles van het Verzoek van de Trek voor Privé Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager ondersteunt nu config-pijpleidingen met privéopslagruimten via GitHub, Bitbucket, Azure DevOps en GitLab. Deze steun versnelt de ontwikkelingscyclus verder. Zie [ de Controles van het Verzoek van de Trek voor Privé Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Snel aan een vorige plaatsing terugkeren als de recentste klantenbroncode niet zoals verwacht-geen behoefte werkt om de volledige pijpleiding opnieuw te voeren of begaat manueel terug.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**&#x200B;optie voor een geselecteerd milieu.*
+![ herstel klantenbroncode van de kaart van Milieu ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *van Milieu&#39;s hierboven die **tonen herstelt**>**Vorige code stelde**optie voor een geselecteerd milieu.*
 
 ![ herstel vorige code opgesteld dialoogdoos ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*in **herstel vorige code opgesteld**&#x200B;dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt **&#x200B;***.
+*in **herstel vorige code opgesteld**dialoogdoos, herzie de momenteel opgestelde versie en de versie u wilt herstellen, dan klikken bevestigt *****.
 
 ![ Herstellend activering ](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**&#x200B;tot de plaatsing voltooit.*
+*Cloud Manager rolt het milieu terug naar de vroegere bouwstijl, houdt inhoud en configuratie intact, en merkt het milieu **Herstellend**tot de plaatsing voltooit.*
 
 ![ de codeversie van Source in gebruik ](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *de mening van de Details van het Milieu, zoals hierboven gezien, toont nu ook de actieve bron-code versie in gebruik.*
 
@@ -152,7 +152,7 @@ Config Pipelines worden nu ondersteund voor sites die met Edge Delivery Services
 
   ![ paneel die van de Filter het nieuwe type van Levering van Edge toont levering en publiceert levering ](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**&#x200B;kaart.*
+![ voeg de pijpleiding van Edge Delivery in Add drop-down lijst van de Pijpleiding ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) toe *toevoegend een pijpleiding van Edge Delivery van de **pagina van het Overzicht van het Programma**,**Pipelines**kaart.*
 
 ![ voeg de pijpleidingsdialoogdoos van Edge Delivery toe ](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *voeg de pijpleidingsdialoogdoos van Edge Delivery toe.*
 
