@@ -162,7 +162,7 @@ Als het bovenstaande configuratiebestand is geïnstalleerd, wordt de voorkopieer
 
 >[!NOTE]
 >Als AzCopy niet correct wordt gevormd, zou u het volgende bericht in de logboeken zien:
->>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Begin een extractie van CTT UI. Zie [ Begonnen het Worden met het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) en het [ Proces van de Uitwinning ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer details.
 
