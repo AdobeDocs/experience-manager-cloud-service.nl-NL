@@ -1,7 +1,7 @@
 ---
 title: Informatie over Experience Hub
-description: Meer weten over de Adobe Experience Hub-pagina?
-landing-page-description: Meer informatie over Experience Hub, een centraal startpunt voor toegang tot alle AEM-mogelijkheden.
+description: Lees meer over de Adobe Experience Hub-pagina.
+landing-page-description: Lees meer over Experience Hub, een centraal startpunt voor toegang tot alle AEM-mogelijkheden.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -9,7 +9,7 @@ exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-De **sectie van Milieu&#39;s van de Authoring** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
+De **sectie van Milieu&#39;s van de Authoring** {toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 

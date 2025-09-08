@@ -1,7 +1,7 @@
 ---
 title: Introductie tot headless voor AEM
 description: Meer informatie over Headless in Adobe Experience Manager (AEM) met een combinatie van gedetailleerde documentatie en headless journeys. Ontdek hoe functies zoals Content Fragment Models, Content Fragments en een GraphQL API worden gebruikt om headless-ervaringen mogelijk te maken.
-landing-page-description: Inzicht in gebruik en beheer van Headless in Adobe Experience Manager as a Cloud Service.
+landing-page-description: Krijg inzicht in gebruik en beheer van Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
@@ -46,7 +46,7 @@ AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zo
 1. **Inhoud API voor levering**
    * Zie [ AEM APIs voor Gestructureerde Inhoudslevering en Beheer ](/help/headless/apis-headless-and-content-fragments.md) voor een overzicht van diverse beschikbare APIs en vergelijking van sommige betrokken concepten.
 
-   * De directe inhoudslevering is ook mogelijk met de [ uitvoer JSON van de Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL).
+   * De directe inhoudslevering is ook mogelijk met de [ uitvoer JSON van de Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
 ## Uw eerste stappen {#first-steps}
 
@@ -56,7 +56,7 @@ Er zijn verschillende bronnen beschikbaar om aan de slag te gaan met functies zo
 |---|---|---|---|---|
 | [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) | **voor ontwikkelaars nieuw aan AEM en headless** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door met uw eerste headless project te leven te gaan. | Hulplijn | Ontwikkelaars **nieuw aan AEM en zonder kop** | 1 uur |
 | [ Hoofdloze Opstelling ](/help/headless/setup/introduction.md) | **voor ervaren gebruikers van AEM** die een korte samenvatting van de belangrijkste eigenschappen van AEM nodig hebben, controleer dit snelle beginoverzicht. | Referentie-instelling | De ontwikkelaars, Beheerders **met de ervaring van AEM** | 20 minuten |
-| [ Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) | **als u een hands-on benadering verkiest en met AEM** vertrouwd bent, duikt dit leerprogramma direct in het uitvoeren van een eenvoudige headless app. | Zelfstudie | Ontwikkelaars | 2 uur |
+| [ Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **als u een hands-on benadering verkiest en met AEM** vertrouwd bent, duikt dit leerprogramma direct in het uitvoeren van een eenvoudige headless app. | Zelfstudie | Ontwikkelaars | 2 uur |
 | [ Evolutie van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) | **voor architecten nieuw aan AEM en headless** technologieën, begin hier voor een inleiding aan krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te modelleren. | Hulplijn | Architecten | 1 uur |
 | [ Headless Authoring Reis ](/help/journey-headless/author/overview.md) | **voor bedrijfsgebruikers nieuw aan AEM en headless** technologieën, begin hier voor een inleiding aan krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager as a Cloud Service, en hoe te om inhoud voor uw project te modelleren. | Hulplijn | Inhoudsmakers | 1 uur |
 | [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md) | Voor die **geinteresseerd in de vertaalbenadering van AEM aan headless**. Leer meer over technologieën zonder kop en hoe u vertaalprojecten in AEM kunt maken en bijwerken van A naar Z. | Hulplijn | Vertaalspecialisten | 1 uur |
