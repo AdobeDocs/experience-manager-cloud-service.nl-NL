@@ -394,7 +394,7 @@ Deze modus werkt op dezelfde manier als bij paginabewerking. Zie [ het richten w
 Details van het fragment kunt u zien:
 
 1. Navigeer naar de locatie van uw ervaringsfragmenten (navigeer niet verder naar beneden naar de variaties in het fragment).
-De details worden getoond in alle meningen van de **console van Fragmenten van de 1} Ervaring, met de** Mening van de Lijst **met inbegrip van details van een** uitvoer naar Doel [:](/help/sites-cloud/integrating/integrating-adobe-target.md)
+De details worden getoond in alle meningen van de **console van Fragmenten van de 1&rbrace; Ervaring, met de** Mening van de Lijst **met inbegrip van details van een** uitvoer naar Doel [:](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
    ![ de details van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-15.png)
 
