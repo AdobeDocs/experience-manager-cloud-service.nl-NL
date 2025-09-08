@@ -5,9 +5,9 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2142'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan 
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=nl-NL#content-fragments).
+>Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
 * Wanneer u ervaringen wilt hergebruiken.
    * Ervaringen die opnieuw worden gebruikt met dezelfde of vergelijkbare inhoud.
 * Wanneer u AEM gebruikt als platform voor het leveren van inhoud voor derden.
-   * Om het even welke oplossing die AEM als platform van de inhoudslevering wil gebruiken.
+   * Elke oplossing die AEM wil gebruiken als platform voor de levering van inhoud.
    * Inhoud insluiten in aanraakpunten van derden.
 * Als u ervaring hebt met verschillende variaties of uitvoeringen.
    * Kanaal- of contextspecifieke variaties.
@@ -394,7 +394,7 @@ Deze modus werkt op dezelfde manier als bij paginabewerking. Zie [ het richten w
 Details van het fragment kunt u zien:
 
 1. Navigeer naar de locatie van uw ervaringsfragmenten (navigeer niet verder naar beneden naar de variaties in het fragment).
-De details worden getoond in alle meningen van de **console van Fragmenten van de 1&rbrace; Ervaring, met de** Mening van de Lijst **met inbegrip van details van een [ uitvoer naar Doel ](/help/sites-cloud/integrating/integrating-adobe-target.md):**
+De details worden getoond in alle meningen van de **console van Fragmenten van de 1} Ervaring, met de** Mening van de Lijst **met inbegrip van details van een** uitvoer naar Doel [:](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
    ![ de details van het Fragment van de Ervaring ](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -420,9 +420,9 @@ De details worden getoond in alle meningen van de **console van Fragmenten van d
       * **Aantal Webvarianten** - slechts informatie
       * **Aantal niet-Web varianten** - slechts informatie
       * **Aantal pagina&#39;s die dit fragment** gebruiken - slechts informatie
-   * **Cloud Servicen**
+   * **de Diensten van de Wolk**
       * **Configuratie van de Wolk**
-      * **Configuraties van de Cloud Service**
+      * **de Configuraties van Cloud Service**
       * **Facebook pagina ID**
       * **de raad van Pinterest**
    * **Verwijzingen**
@@ -432,9 +432,9 @@ De details worden getoond in alle meningen van de **console van Fragmenten van d
       * **Weg van Segmenten**
       * **Merk**
 
-## De normale HTML-vertoning {#the-plain-html-rendition}
+## De onbewerkte HTML-vertoning {#the-plain-html-rendition}
 
-Met de kiezer `.plain.` in de URL hebt u vanuit de browser toegang tot de uitvoering van normale HTML.
+Met de kiezer `.plain.` in de URL hebt u vanuit de browser toegang tot de normale HTML-uitvoering.
 
 >[!NOTE]
 >
@@ -446,9 +446,19 @@ Het publiceren van uw Fragment van de Ervaring is fundamenteel het zelfde als [ 
 
 Alternatief kunt u [ ook publiceren aan Voorproef ](/help/sites-cloud/authoring/sites-console/previewing-content.md) (opnieuw van de console of de redacteur van de Fragmenten van de Ervaring).
 
+>[!CAUTION]
+>
+>Standaard wordt de hoofdmap van Experience Fragments (die zich direct onder `/content/experience-fragments` bevindt) gepubliceerd:
+>
+>* alleen de containermap zelf publiceert
+>* publiceert geen onderliggende items
+>* publiceert alle reeds gepubliceerde kinderen ongedaan
+>
+>Voor publicatie van alle fragmenten van de Ervaring in de map, moet elke fragmenten afzonderlijk worden gepubliceerd.
+
 ## Exporteren van ervaringsfragmenten {#exporting-experience-fragments}
 
-Standaard worden Experience Fragments geleverd in de HTML-indeling. Dit kan zowel door AEM als derdekanalen worden gebruikt.
+Experience Fragments worden standaard geleverd in de HTML-indeling. Dit kan zowel door AEM als derdekanalen worden gebruikt.
 
 Voor export naar Adobe Target kan JSON ook worden gebruikt. Zie:
 
