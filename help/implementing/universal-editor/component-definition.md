@@ -94,8 +94,8 @@ Hieronder volgt een volledig, maar eenvoudig `component-definition.json` als voo
 
 `plugins` definieert welke plug-in verantwoordelijk is voor het voortduren van de component. Veelgebruikte plug-ins zijn:
 
-* `aem` voor [ AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
-* `aem65` voor [ AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* `aem` voor [ AEM as a Cloud Service.](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service)
+* `aem65` voor [ AEM 6.5.](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
 * `xwalk` voor [ Authoring met AEM Sites voor Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` of `cf` {#page-cf}
