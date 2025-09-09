@@ -1,21 +1,21 @@
 ---
-title: Rule Editor voor Dynamic Forms in Universal Editor
+title: Regeleditor voor Edge Delivery Services Forms
 description: Maak dynamische, intelligente formulieren met de Rule Editor in de Universal Editor. Voorwaardelijke logica, berekeningen en interactief gedrag toevoegen zonder codering.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2780'
 ht-degree: 0%
 
 ---
 
 
-# Rule Editor voor Dynamic Forms in Universal Editor
+# Regeleditor voor Edge Delivery Services Forms
 
-De Redacteur van de Regel staat auteurs toe om statische vormen in ontvankelijke, intelligente ervaring-zonder code te schrijven. U kunt voorwaardelijk gebieden tonen, berekeningen uitvoeren, gegevens bevestigen, gebruikers door stromen begeleiden, en bedrijfslogica integreren die zich aanpast aangezien mensen typen.
+De redacteur van de Regel staat auteurs toe om statische vormen in ontvankelijke, intelligente ervaringen te veranderen zonder code te schrijven. U kunt voorwaardelijk gebieden tonen, berekeningen uitvoeren, gegevens bevestigen, gebruikers door stromen begeleiden, en bedrijfslogica integreren die zich aanpast aangezien mensen typen.
 
 ## Wat u gaat leren
 
@@ -308,7 +308,7 @@ U maakt een formulier dat:
 
 1. **Open Universele Redacteur**:
    - Navigeer aan de console van AEM Sites, selecteer uw pagina, klik **uitgeven**
-   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) behoorlijk gevormd hebt
+   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) behoorlijk gevormd hebt
 
 2. **voeg vormcomponenten in deze orde** toe:
    - Titel (H2): &quot;Formulier voor de berekening van belastingen&quot;
@@ -727,7 +727,7 @@ Forms wordt een krachtig hulpmiddel voor gegevensverzameling, kwalificatie van l
 
 **Extra middelen**:
 
-- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) voor bredere context
+- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) voor bredere context
 - [ de gids van Extension Manager ](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
 - [ de vormen van Edge Delivery Services ](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
 

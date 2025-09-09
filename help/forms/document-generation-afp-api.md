@@ -4,16 +4,16 @@ description: Leer hoe u de AFP Output Sync API gebruikt om uitvoeruitvoeruitvoer
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
 # AFP-uitvoer genereren met de AEM Forms API
 
-<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Advanced Function Presentation (AFP) is een krachtige documentindeling die voornamelijk voor afdrukdoeleinden is ontworpen.\
 In deze handleiding worden alle stappen en configuraties beschreven die nodig zijn om AFP-uitvoer met AEM Forms te genereren.
@@ -39,7 +39,7 @@ Genereert een AFP-bestand (Advanced Function Presentation) met een XDP-sjabloon 
 
 ### Toestemming
 
-U kunt of **BasicAuth** gebruiken (geloofsbrieven Admin) voor lokale milieu&#39;s of **&#x200B;**&#x200B;vergunning BeveelAuth voor de instanties van de Wolk van AEM.
+U kunt of **BasicAuth** gebruiken (geloofsbrieven Admin) voor lokale milieu&#39;s of **** vergunning BeveelAuth voor de instanties van de Wolk van AEM.
 
 ### Verzoek
 
@@ -101,4 +101,4 @@ U kunt het .yaml-bestand downloaden en uploaden naar Postman om de functionalite
 
 U kunt het antwoord opslaan en het opgeslagen bestand openen in de AFP-lezer om het weer te geven.
 
-![ de lezer van PDF ](/help/forms/assets/afp-pdf.png)
+![ vind IC Docu ](/help/forms/interactive-communication/assets/introimg.png)

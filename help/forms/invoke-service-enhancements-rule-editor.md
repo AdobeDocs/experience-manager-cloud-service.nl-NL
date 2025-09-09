@@ -6,22 +6,25 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Roep de dienstverhogingen in VRE aan, bevolkend drop-down opties gebruikend de aanroepdienst, Reeks herhaalbaar paneel gebruikend output van de aanroepdienst, Reeks paneel gebruikend output van de aanroepdienst, de outputparameter van het Gebruik van de aanroepdienst om ander gebied te bevestigen.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
 
-# Het gebruiken roept Dienst in de Visuele Redacteur van de Regel voor vormen aan die op de Componenten van de Kern worden gebaseerd
+# Externe API&#39;s integreren met Visual Rule Editor in Core Component Forms
 
-De visuele Redacteur van de Regel in een AanpassingsVorm steunt de **Invoke eigenschap van de Dienst**, die u toestaat om de dienst van de lijst van de Modellen van de Gegevens van de Vorm (FDM) te selecteren die voor uw instantie wordt gevormd. U kunt formuliervelden rechtstreeks toewijzen aan de invoerparameters van de service. Als u formuliervelden wilt toewijzen aan uitvoerparameters, gebruikt u de optie voor gebeurtenislading voor de opgegeven service Formuliergegevensmodel. Bovendien, staat de Visuele regelredacteur u toe om regels voor succes en mislukkingsmanagers voor **tot stand te brengen de verrichtingen van de Dienst** aanhalen die op zijn outputreacties worden gebaseerd. De managers van het succes beheren de succesvolle uitvoering van **roepen de verrichting van de Dienst** aan, terwijl de mislukkingsmanagers om het even welke fouten richten die voorkomen.
+De visuele Redacteur van de Regel in een AanpassingsVorm steunt de **Invoke eigenschap van de Dienst**, toelatend u om met externe APIs door de Modellen van de Gegevens van de Vorm (FDM) te verbinden die voor uw instantie wordt gevormd. U kunt formuliervelden rechtstreeks toewijzen aan de invoerparameters van de service en de optie voor gebeurtenislading gebruiken om de uitvoerparameters toe te wijzen. De visuele Redacteur van de Regel laat u ook regels voor succes en mislukkingsmanagers bepalen die op de reactie van de dienst worden gebaseerd: de succesvolle handlers behandelen succesvolle API vraag, terwijl de mislukkingsmanagers fouten beheren.
+
+Zo kunt u gemakkelijk API-aanvragen van uw formulier verzenden, de API-reacties verwerken en de geretourneerde gegevens dynamisch weergeven of gebruiken in het formulier. Dit zorgt voor een naadloze integratie tussen uw adaptieve formulier en externe systemen of gegevensbronnen.
+
 
 ## Voordelen om de Invoke Service in de de regelredacteur van de vorm te gebruiken
 
 Hier zijn weinig voordelen om de verrichting van de Dienst van de Invoke in de regelredacteur van een Vorm Adaotive te gebruiken:
 
-* **Gestroomlijnde integratie**: De visuele Redacteur van de Regel vereenvoudigt het proces om de externe diensten of APIs in uw Aangepaste Forms te integreren. Door de **Invoke Dienst** te gebruiken, kunt u vormen aan diverse gegevensbronnen en de diensten zonder de behoefte aan complexe codering gemakkelijk verbinden, die vormintegratie efficiënter maken.
+* **Gestroomlijnde API integratie**: De visuele Redacteur van de Regel vereenvoudigt het proces om de externe diensten of APIs in uw Aangepaste Forms te integreren. Door de **Invoke Dienst** te gebruiken, kunt u vormen aan diverse gegevensbronnen en de diensten zonder de behoefte aan complexe codering gemakkelijk verbinden, die vormintegratie efficiënter maken.
 
 * **Dynamische reactie behandeling**: U kunt succes en foutenreacties beheren die op de outputreacties van de **worden gebaseerd roepen Dienst**, toestaand vormen om dynamisch op verschillende scenario&#39;s te reageren. Het zorgt ervoor dat formulieren op de juiste wijze omgaan met verschillende omstandigheden, waardoor de flexibiliteit en de controle worden verbeterd.
 
@@ -39,7 +42,7 @@ De visuele regelredacteur staat u toe om regels voor succes en mislukkingsmanage
 
 Als u een geluids- of fouthandler wilt toevoegen, klikt u respectievelijk op **[!UICONTROL Add Success Handler]** of **[!UICONTROL Add Failure Handler]** .
 
-Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTROL Invoke Service Success Handler]** regelredacteur, toestaand u om regels of logica te specificeren om de **te beheren aanhaalt de 3&rbrace; outputreactie van de Dienst &lbrace;wanneer de verrichting succesvol is.** U kunt zelfs regels opgeven zonder voorwaarden te definiëren. U kunt echter voorwaarden voor de succeshandler toevoegen door op de optie **[!UICONTROL Add Condition]** te klikken.
+Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTROL Invoke Service Success Handler]** regelredacteur, toestaand u om regels of logica te specificeren om de **te beheren aanhaalt de 3} outputreactie van de Dienst {wanneer de verrichting succesvol is.** U kunt zelfs regels opgeven zonder voorwaarden te definiëren. U kunt echter voorwaarden voor de succeshandler toevoegen door op de optie **[!UICONTROL Add Condition]** te klikken.
 
 ![ de manager van het de dienstsucces aanhalen ](/help/forms/assets/invoke-service-success-handler.png)
 
@@ -94,7 +97,7 @@ Voeg de volgende velden toe aan het formulier:
 
 >[!NOTE]
 >
-> In het **Bind 1&rbrace; gebied van de Verwijzing &lbrace;in de** dialoog van Eigenschappen **van de vormgebieden, uitgezochte** folder search_18 ![ en navigeer om het binaire bezit te selecteren u in het Model van de Gegevens van de Vorm (FDM) toevoegde.](assets/folder-search-icon.svg)
+> In het **Bind 1} gebied van de Verwijzing {in de** dialoog van Eigenschappen **van de vormgebieden, uitgezochte** folder search_18 ![ en navigeer om het binaire bezit te selecteren u in het Model van de Gegevens van de Vorm (FDM) toevoegde.](assets/folder-search-icon.svg)
 
 **het Vormen panelen**
 
