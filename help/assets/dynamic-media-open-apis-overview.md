@@ -3,9 +3,9 @@ title: Dynamische media met OpenAPI-mogelijkheden
 description: Leer belangrijke concepten zoals waarom Dynamic Media met OpenAPI-mogelijkheden wordt gebruikt en hoe u deze kunt inschakelen.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,13 @@ Dynamische media met OpenAPI-mogelijkheden bieden de volgende belangrijke voorde
 * **Inzichten van Gegevens om geïnformeerde besluiten (aanstaande) te nemen**: Buiten activabeheer en levering, vangt het de inzichten van leveringsgegevens in activa leveranties bij CDN die de managers van het Merk toestaan om leveringsmetriek over kanalen te volgen. Het stelt hen in staat gegevensgestuurde beslissingen te nemen met het oog op een continue optimalisering van het beheer en de leveringsstrategieën van activa.
 
 ![ Dynamische Media Open API gegevensstroomdiagram ](assets/dm-openapi-dfd.png)
+
+Voor informatie over het beschikbare Dynamische dienstenaanbod van Media en hun mogelijkheden, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>DM Prime-klanten kunnen basisopties voor het wijzigen van afbeeldingen gebruiken, zoals roteren, uitsnijden, spiegelen, hoogte, breedte en kwaliteit. Smart Imaging biedt geen ondersteuning voor AVIF voor DM Prime-klanten.
+
 
 ## Vereisten voor toegang tot dynamische media met OpenAPI-mogelijkheden {#prerequisites-dynaminc-media-open-apis}
 

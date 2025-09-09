@@ -3,9 +3,9 @@ title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,18 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 | [ de container van de Speler voor de videoactiva ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | Retourneert de spelercontainer voor het video-element. U kunt de speler insluiten in een iFrame HTML-element en de video afspelen. |
 | [ manifests van de Playback in het geselecteerde outputformaat ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | Retourneert het afspeelmanifestbestand voor het opgegeven video-element in de geselecteerde uitvoerindeling. U moet een aangepaste speler maken die het afspeelmanifestbestand kan ophalen en de video kan afspelen door middel van HLS- of DASH-protocollen. |
 
+>[!IMPORTANT]
+>
+>U kunt elke modifier testen, die niet algemeen beschikbaar is via experimentele API&#39;s. Bijvoorbeeld: `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>>Klik hier om meer op te kennen hoe te om [ experimentele APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) en [ volledige lijst van bepalingen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te gebruiken.
+
 Dynamische media met OpenAPI-mogelijkheden ondersteunen ook lange formuliervideo&#39;s. De video&#39;s kunnen tot 50 GB en 2 uur steunen.
 
 Voor informatie over het beschikbare Dynamische dienstenaanbod van Media en hun mogelijkheden, zie [ Dynamische Media Prime en Ultimate ](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>DM Prime-klanten kunnen basisopties voor het wijzigen van afbeeldingen gebruiken, zoals roteren, uitsnijden, spiegelen, hoogte, breedte en kwaliteit. Smart Imaging biedt geen ondersteuning voor AVIF voor DM Prime-klanten.
 
 ## Eindpunten van bezorgings-API&#39;s {#delivery-apis-endpoint}
 
@@ -64,7 +73,7 @@ headers: {
     }
 ```
 
-Om de leverings-API&#39;s aan te roepen, is in de `Authorization` -details een IMS-token vereist voor het leveren van een beperkt middel. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om het teken IMS te produceren en het te gebruiken geschikt in de de verzoekkopbal van levering APIs.
+Om de leverings-API&#39;s aan te roepen, is in de `Authorization` -details een IMS-token vereist voor het leveren van een beperkt middel. De token IMS wordt opgehaald van een technische account. Zie [ Vetsen de Referenties van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om een nieuwe technische rekening tot stand te brengen. Zie [ Genererend het toegangstoken ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) om het teken IMS te produceren en het te gebruiken geschikt in de de verzoekkopbal van levering APIs.
 
 
 Om verzoeksteekproeven, reactiemonsters, en reactiecodes te bekijken, zie [ Levering APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

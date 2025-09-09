@@ -3,10 +3,10 @@ title: Dynamic Media Prime en Ultimate
 description: Meer weten over Dynamic Media Prime en Ultimate, de voordelen ervan en de verschillen tussen beide?
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 6%
+source-wordcount: '421'
+ht-degree: 5%
 
 ---
 
@@ -30,6 +30,10 @@ Tot de andere belangrijke voordelen van Dynamic Media Prime behoren:
 * Voor het web geoptimaliseerde afbeeldingslevering
 * Adaptieve videostreaming
 
+>[!NOTE]
+>
+>DM Prime-klanten kunnen basisopties voor het wijzigen van afbeeldingen gebruiken, zoals roteren, uitsnijden, spiegelen, hoogte, breedte en kwaliteit. Smart Imaging biedt geen ondersteuning voor AVIF voor DM Prime-klanten.
+
 ### Vereisten {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
@@ -42,7 +46,7 @@ De dynamische Media Ultimate is de activeringsdienst voor Experience Manager Ass
 
 Naast de Dynamic Media Prime-functies, zoals AEM Assets-integratie met Adobe- of niet-Adobe-toepassingen, transformatie (roteren, uitsnijden, spiegelen, hoogte, breedte, kwaliteit) en geoptimaliseerde levering, biedt Dynamic Media Ultimate ook:
 
-* [ Dynamische Media met 1&rbrace; mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
+* [ Dynamische Media met 1} mogelijkheden OpenAPI geavanceerde eigenschappen zoals:](/help/assets/dynamic-media-open-apis-overview.md)
 
    * Veilige levering van activa,
    * [ het Slimme Gewas, Slimme Beeldvorming, Beeld stelt, en extra beeldbepalingen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) vooraf in.
@@ -50,8 +54,8 @@ Naast de Dynamic Media Prime-functies, zoals AEM Assets-integratie met Adobe- of
 * [ Dynamische oplossing van Media in AEM as a Cloud Service ](/help/assets/dynamic-media/dynamic-media.md), die ook de volgende belangrijkste mogelijkheden omvat:
 
    * [Dynamische mediasjablonen](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [ Visuele Configuratie ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [ Grondbeginselen van het Malplaatje ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [ Visuele Configuratie ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Vereisten {#pre-requisites-dm-ultimate}
 
