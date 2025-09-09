@@ -40,7 +40,7 @@ Gebruikers kunnen toegang krijgen tot de Cloud Manager Git-opslagplaats via een 
 
 Zodra een Git-client is ingesteld, kunt u de Git-opslagplaats beheren vanuit de Cloud Manager-gebruikersinterface. Om over te leren hoe te om Git te beheren gebruikend het gebruikersinterface van Cloud Manager, zie [ Git van de Toegang ](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-Als u de AEM Cloud-toepassing wilt gaan ontwikkelen, checkt u de toepassingscode uit van de Cloud Manager-opslagplaats naar uw lokale computer.
+Als u de AEM Cloud-toepassing wilt ontwikkelen, checkt u de toepassingscode uit van de Cloud Manager-opslagplaats naar uw lokale computer.
 
 ```java
 $ git clone {URL}
