@@ -35,7 +35,7 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 >[!IMPORTANT]
 >
 >U kunt elke modifier testen, die niet algemeen beschikbaar is via experimentele API&#39;s. Bijvoorbeeld: `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->>Klik hier om meer op te kennen hoe te om [ experimentele APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) en [ volledige lijst van bepalingen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te gebruiken.
+>&#x200B;>Klik hier om meer op te kennen hoe te om [ experimentele APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) en [ volledige lijst van bepalingen ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) te gebruiken.
 
 Dynamische media met OpenAPI-mogelijkheden ondersteunen ook lange formuliervideo&#39;s. De video&#39;s kunnen tot 50 GB en 2 uur steunen.
 
