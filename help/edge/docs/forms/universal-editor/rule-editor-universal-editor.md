@@ -310,7 +310,7 @@ U maakt een formulier dat:
 
 1. **Open Universele Redacteur**:
    - Navigeer aan de console van AEM Sites, selecteer uw pagina, klik **uitgeven**
-   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) behoorlijk gevormd hebt
+   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) behoorlijk gevormd hebt
 
 2. **voeg vormcomponenten in deze orde** toe:
    - Titel (H2): &quot;Formulier voor de berekening van belastingen&quot;
@@ -732,7 +732,7 @@ Forms wordt een krachtig hulpmiddel voor gegevensverzameling, kwalificatie van l
 
 **Extra middelen**:
 
-- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) voor bredere context
+- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) voor bredere context
 - [ de gids van Extension Manager ](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
 - [ de vormen van Edge Delivery Services ](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
 
