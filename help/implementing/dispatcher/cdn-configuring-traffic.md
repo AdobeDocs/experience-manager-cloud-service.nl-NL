@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -445,8 +445,9 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 
 Er zijn scenario&#39;s waar de oorsprongsselecteurs zouden moeten worden gebruikt om verkeer door AEM te leiden publiceer aan AEM Edge Delivery Services:
 
-* Sommige inhoud wordt geleverd door een domein dat wordt beheerd door AEM Publish, terwijl andere inhoud van hetzelfde domein door Edge Delivery Services wordt geleverd
-* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via config pijpleiding worden opgesteld, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties
+* Sommige inhoud wordt geleverd door een domein dat wordt beheerd door AEM Publish, terwijl andere inhoud van hetzelfde domein door Edge Delivery Services wordt geleverd.
+* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via config pijpleiding, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties worden opgesteld.
+* Met de Edge Delivery-configuratiepijplijn kunt u door Adobe beheerde CDN-instellingen configureren door regels zoals `trafficFilters` , `originSelectors` en `redirects` te definiëren. <!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u dit kunt bereiken:
 
@@ -474,7 +475,8 @@ data:
 ```
 
 >[!NOTE]
-> Aangezien Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigheid op **beheerde** wijze te vormen, door de de duw van de Opstelling van Edge Delivery Services [ documentatie van de ongeldigverklaring ](https://www.aem.live/docs/byo-dns#setup-push-invalidation) te volgen.
+>
+>Omdat Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigverklaring op **beheerde** wijze te vormen, door de de duw van de Opstelling van Edge Delivery Services [ documentatie van de ongeldigverklaring ](https://www.aem.live/docs/byo-dns#setup-push-invalidation) te volgen.
 
 
 ## Server-side omleidingen {#server-side-redirectors}
