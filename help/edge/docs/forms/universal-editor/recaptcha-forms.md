@@ -50,7 +50,7 @@ Zorg ervoor dat u het volgende hebt voordat u begint:
 
 ## Waarom gebruik je reCAPTCHA in je Forms?
 
-| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0} Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0&rbrace; Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Verbeterde Veiligheid** | **Bot &amp; Preventie Spam** | **Naadloze Ervaring van de Gebruiker** |
 | Formulieren beschermen tegen frauduleuze activiteiten en aanvallen | Voorkomen dat automatische bots formulieren verzenden | Onzichtbare reCAPTCHA verstoort legitieme gebruikers niet |
