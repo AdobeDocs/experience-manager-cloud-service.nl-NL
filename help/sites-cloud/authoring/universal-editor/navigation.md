@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
 1. Meld u aan bij uw AEM as a Cloud Service-ontwerpinstantie.
-1. Gebruik de [**console van 1&rbrace; Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Gebruik de [**console van 1} Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Bewerk de pagina.
 1. De Universal Editor wordt geopend om de geselecteerde pagina te bewerken.
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[&#128279;](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Direct toegang {#accessing-directly}
 
@@ -79,7 +79,7 @@ De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker d
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -89,15 +89,9 @@ Hier wordt de organisatie weergegeven waarmee u momenteel bent aangemeld. Schake
 
 ![ de indicator van de Organisatie ](assets/organization.png)
 
-#### Oplossingen {#solutions}
+#### Help Center {#help}
 
-Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere Experience Cloud-oplossingen gaan.
-
-![ de schakelaar van Oplossingen ](assets/solutions.png)
-
-#### Help {#help}
-
-Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbronnen.
+Het pictogram van het hulpcentrum verleent snelle toegang tot het leren en steunmiddelen.
 
 ![ Hulp ](assets/help.png)
 
@@ -107,9 +101,15 @@ Dit pictogram wordt getekend met het aantal momenteel toegewezen onvolledige [ b
 
 ![ Meldingen ](assets/notifications.png)
 
-#### Gebruikerseigenschappen {#user-properties}
+#### Apps {#solutions}
 
-Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
+Als u op de app-switch tikt of erop klikt, kunt u snel naar andere Experience Cloud-oplossingen gaan.
+
+![ App schakelaar ](assets/solutions.png)
+
+#### Account {#user-properties}
+
+Selecteer het pictogram dat uw gebruiker vertegenwoordigt voor toegang tot uw accountinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 ![ Eigenschappen van de Gebruiker ](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Op de startpagina kunt u de URL invoeren van de site die u wilt bewerken met de 
 >
 >Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md) te steunen.
 
+A **Snelle Verbindingen** sectie verstrekt u van hulpmiddelen en de sectie van de a **Recenten** verstrekt verbindingen aan pagina&#39;s u onlangs met de Universele Redacteur opende.
+
 #### Locatiebalk {#location-bar}
 
 Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze optie om het adres in te voeren van een andere pagina die u wilt bewerken.
@@ -149,21 +151,32 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 >
 >Om het even welke pagina die u met de Universele Redacteur wilt uitgeven moet [ van instrumenten worden voorzien om de Universele Redacteur ](/help/implementing/universal-editor/getting-started.md) te steunen.
 
-#### Instellingen voor verificatiekoptekst {#authentication-settings}
+#### Ongedaan maken en Opnieuw {#undo-redo}
 
-Selecteer het de montagespictogram van de authentificatiekopbal als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [ moet plaatsen.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de editor ongedaan te maken of opnieuw uit te voeren. Gelieve te zien het document [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) voor meer informatie.
+
+![ ongedaan maken pictogram ](assets/undo.png)
+![ opnieuw pictogram ](assets/redo.png)
+
+>[!TIP]
+>
+>Gebruik de sneltoets `Command-Z` of `Shift-Command-Z` om respectievelijk ongedaan te maken of opnieuw uit te voeren.
+
+#### Verificatiekoppen {#authentication-settings}
+
+Selecteer het pictogram van authentificatiekopballen als u een kopbal van de douaneauthentificatie voor lokale ontwikkelingsdoeleinden [ moet plaatsen. ](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![ knoop van de kopbalmontages van de Authentificatie ](assets/authentication-header-settings.png)
 
-#### Emulatorinstellingen {#emulator}
+#### Responsieve modus {#emulator}
 
-Selecteer het emulatiepictogram om te bepalen hoe de Universal Editor de pagina weergeeft.
+Selecteer het pictogram van de responsieve modus om te bepalen hoe de Universal Editor de pagina weergeeft.
 
-![ Emulatorpictogram ](assets/emulator.png)
+![ Responsief wijzepictogram ](assets/emulator.png)
 
-Als u op het emulatiepictogram tikt of erop klikt, worden de opties weergegeven.
+Als u op het pictogram van de responsieve modus tikt of erop klikt, worden de opties weergegeven.
 
-![ de opties van de Emulatie ](assets/emulation-options.png)
+![ Responsieve wijzeopties ](assets/emulation-options.png)
 
 Standaard wordt de editor geopend in de computerlay-out, waarbij de hoogte en breedte automatisch door de browser worden gedefinieerd.
 
@@ -173,7 +186,7 @@ U kunt er ook voor kiezen om een mobiel apparaat te emuleren en in de Universele
 * Breedte en hoogte definiëren
 * De richting wijzigen
 
-#### Voorvertoningsmodus {#preview-mode}
+#### Voorvertoning {#preview-mode}
 
 In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op uw gepubliceerde dienst zou worden gezien. Hierdoor kan de auteur van de inhoud door de inhoud navigeren door op koppelingen te klikken, enzovoort.
 

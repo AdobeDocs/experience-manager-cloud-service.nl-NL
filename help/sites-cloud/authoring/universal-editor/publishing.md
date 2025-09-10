@@ -5,9 +5,9 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvou
 ![ het Publiceren pagina&#39;s ](assets/publish-menu.png)
 
 1. In de Universele Redacteur, tik of klik [ het **publiceren** pictogram in de Universele het hulpmiddelbar van de Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. Als u de voorproefdienst van a [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **[Voorproef](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (als beschikbaar) of **publiceren**.
-1. De **Punten** sectie maakt een lijst van de inhoud die in de publicatie omvat:
+1. Als u de voorproefdienst van a [ ](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **[Voorproef](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (als beschikbaar) of **publiceren**.
+1. De **Punten** sectie maakt een lijst van de inhoud die in de publicatie inbegrepen is. Tik of klik **Mening** om de details met inbegrip van te tonen:
    * **Nieuwe** punten die nog niet zijn gepubliceerd.
    * **Gewijzigde** inhoud die is gepubliceerd, maar sinds de laatste publicatie gewijzigd.
    * **Gepubliceerde** inhoud die is gepubliceerd en niet sinds die publicatie gewijzigd.

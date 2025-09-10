@@ -4,9 +4,9 @@ description: Dit zijn de releaseopmerkingen voor de release 2025.09.04 van de Un
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,9 @@ Dit zijn de opmerkingen bij de release van 4 september 2025 van de Universal Edi
 ## Wat is er nieuw? {#what-is-new}
 
 * Het exemplaar en de deeg is beschikbaar voor [ vroege adopters ](#copy-paste)
-
-### Ongedaan maken/Opnieuw {#undo-redo}
-
-Ongedaan maken en opnieuw uitvoeren is nu beschikbaar voor auteurs van inhoud in de Universal Editor.
-
-* Dit omvat bewerkingen die in de context zijn uitgevoerd, bewerkingen die zijn uitgevoerd via het deelvenster Eigenschappen, en het toevoegen (of dupliceren), verplaatsen en verwijderen van blokken.
-* Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
+* [ ongedaan maken en opnieuw doen ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) is nu beschikbaar aan inhoudauteurs.
+   * Het ongedaan maken en het opnieuw doen kan voor uitgeeft in context worden uitgevoerd, uitgeeft die via het paneel van Eigenschappen wordt gedaan, evenals het toevoegen van, het dupliceren van, het bewegen van, en het schrappen van blokken.
+   * Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -47,8 +43,3 @@ Kopiëren en plakken van componenten op dezelfde pagina is nu beschikbaar voor a
 
 * De stijl van de redacteurstoolbar is bijgewerkt om zich beter aan aanstaande nieuwe RTE te richten.
 * De filters in het dialoogvenster met de elementkiezer zijn hersteld.
-
-## Afwijkingen {#deprecations}
-
-* `text-input` en `text-area` componenten werden officieel verouderd met [ versie 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * Gebruik in `model-definition.json` de tekstcomponent om tekstinvoer voor het deelvenster Eigenschappen te maken.

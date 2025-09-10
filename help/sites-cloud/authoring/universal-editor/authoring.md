@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2319'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of
 
 De dunne blauwe omtrek wordt omgezet in een zware blauwe omtrek om de selectie aan te geven en er wordt een cursor weergegeven. Breng de wijzigingen aan en druk vervolgens op Enter/Return of selecteer buiten het tekstvak om de wijzigingen op te slaan.
 
-Wanneer u selecteert om de tekstcomponent te selecteren, worden zijn details getoond in het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). U kunt de tekst in het deelvenster ook bewerken.
+Wanneer u de tekstcomponent selecteert, worden zijn details getoond in het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). U kunt de tekst in het deelvenster ook bewerken.
 
 ![ het Uitgeven tekst in het eigenschappen paneel ](assets/ue-editing-text-component-rail.png)
 
@@ -172,13 +172,27 @@ De geselecteerde component is verwijderd.
 
    ![ opnieuw rangschikt componenten ](assets/ue-reordering-components.png)
 
-1. De gesleepte component wordt grijs in de inhoudsstructuur, terwijl de invoegpositie wordt aangeduid met een blauwe lijn. Laat de component los om deze op de nieuwe locatie te plaatsen.
+1. De gesleepte component wordt grijs weergegeven in de inhoudsstructuur, terwijl de invoegpositie wordt aangeduid met een blauwe lijn. Laat de component los om deze op de nieuwe locatie te plaatsen.
 
 De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de redacteur.
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+
+### Ongedaan maken en Opnieuw {#undo-redo}
+
+Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de editor ongedaan te maken of opnieuw uit te voeren.
+
+![ ongedaan maken pictogram ](assets/undo.png)
+![ opnieuw pictogram ](assets/redo.png)
+
+* Het ongedaan maken en het opnieuw doen kan voor uitgeeft in context worden uitgevoerd, uitgeeft die via het paneel van Eigenschappen wordt gedaan, evenals het toevoegen van, het dupliceren van, het bewegen van, en het schrappen van blokken.
+* Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
+
+>[!TIP]
+>
+>Gebruik de sneltoets `Command-Z` of `Shift-Command-Z` om respectievelijk ongedaan te maken of opnieuw uit te voeren.
 
 ## Inhoud voorvertonen {#previewing-content}
 
@@ -224,7 +238,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 
