@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verbeteringen in de regeleditor en hoofdletters/kleine letters gebruiken
 
-<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. Deze verbeteringen zijn ook van toepassing op Edge Delivery Services Forms.
+<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. Deze verbeteringen zijn ook van toepassing op Edge Delivery Services Forms.
 
 Dit artikel introduceert de meest recente verbeteringen aan de regeleditor in Adaptive Forms. Deze updates zijn ontworpen om u te helpen formuliergedrag gemakkelijker te definiëren, zonder aangepaste code te schrijven, en om een dynamischere, responsieve en gepersonaliseerde formulierervaring te maken.
 
@@ -31,7 +31,7 @@ De onderstaande tabel bevat een overzicht van recente verbeteringen aan de regel
 
 >[!NOTE]
 >
-> De verbeteringen aan de Redacteur van de Regel zijn ook van toepassing op de Diensten Forms van Edge Delivery.
+> De verhogingen zijn ook van toepassing op de [ Redacteur van de Regel van de Diensten Forms van Edge Delivery ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Verken nu elke methode in detail met specifieke gebruiksgevallen om u te helpen begrijpen hoe deze eigenschappen kunnen worden gebruikt om een gepersonaliseerde ervaring voor gebruikers te leveren
 
@@ -124,7 +124,7 @@ Het **Totale gebied van de Kosten van de Verzending** werkt dynamisch bij om op 
 >[!NOTE]
 >
 > U kunt **ook toevoegen krijgt veranderlijke waarde** functie in wanneer voorwaarde.
-> &#x200B;> ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Deze aanpak maakt dynamische, real-time berekeningen mogelijk zonder extra velden aan het formulier toe te voegen, zodat de structuur schoon en gebruiksvriendelijk blijft.
 
@@ -145,7 +145,7 @@ Het aanmeldingsfragment wordt aan het formulier toegevoegd, dat vooraf gedefinie
 
 ![ krijgt OTP Regel ](/help/forms/assets/get-otp-rule.png)
 
-In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **&#x200B;**&#x200B;teweeggebracht met de gebeurtenislading die de API reactie bevatten.
+In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **** teweeggebracht met de gebeurtenislading die de API reactie bevatten.
 
 ![ In de regel van de trekkergebeurtenis ](/help/forms/assets/trigger-event-rule.png)
 
@@ -184,7 +184,7 @@ Adaptieve Forms ondersteunt dynamische regeluitvoering met behulp van externe pa
 | Type parameter | Ondersteunde opties | Beschrijving | Voorbeeldwaarde |
 | --- | --- | --- | ---|
 | Query-parameter | `ref` (alleen tekenreekswaarden) | Algemeen sleutelwaardepaar in URL na `?` | `?ref=partner123` |
-| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1&rbrace; UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
+| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1} UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
 | URL-parameter | Hostnaam <br> Weg | Hiermee worden structurele componenten van de formulier-URL opgehaald | `hostname=www.example.com`, `path=/signup` |
 | Browserparameter | Browser van de Agent van de Agent <br> Browser Taal <br> Browser Platform | Waarden afgeleid van de browser of het apparaat van de gebruiker | `Browser Agent=Mozilla`, `Language=en-US` |
 

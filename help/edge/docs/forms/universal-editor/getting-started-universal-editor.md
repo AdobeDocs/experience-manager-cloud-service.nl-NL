@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2609'
+source-wordcount: '2608'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Voor een vloeiende en geslaagde ervaring met Edge Delivery Services for AEM Form
 
 >[!TIP]
 >
-> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=nl-NL) wordt.
+> Nieuw bij AEM? Begin met [ AEM Sites die Begonnen Gids ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html) wordt.
 
 ## Pad A: Een nieuw project maken met Forms
 
@@ -157,7 +157,10 @@ Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgev
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **vervang:**
@@ -184,9 +187,9 @@ Het bestand `fstab.yaml` verbindt de GitHub-opslagplaats met de AEM-ontwerpomgev
 
 **Bevestig Bevestiging:** bevestig uw verbinding van de bewaarplaats GitHub aan AEM.
 
-    >[!NOTE] 
-    > 
-    >Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> Hebt u problemen opgebouwd? Zie [ het oplossen van problemen GitHub bouwt kwesties ](#troubleshooting-github-build-issues).
 
 +++
 
@@ -462,7 +465,7 @@ U voert de volgende stappen op hoog niveau uit:
 
 +++
 
-+++Stap 4: Bouwen en implementeren
++++Stap 4: Opbouwen en implementeren
 
 1. **installeer gebiedsdelen en bouwt**
 
@@ -626,13 +629,13 @@ In de volgende secties vindt u een gedetailleerde handleiding voor elk van deze 
    Uw formulier is nu live op:
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **Voorbeeld URL:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![ Levende Pagina van de Vorm ](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -661,7 +664,7 @@ Nu u een werkformulier hebt, kunt u:
 
 Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct bekijken zonder de publicatiecyclus te doorlopen.
 
-+++ AEM CLI en lokale ontwikkeling instellen
++++AEM CLI en lokale ontwikkeling instellen
 
 1. **installeer AEM CLI**
 
@@ -715,7 +718,7 @@ Met een lokale ontwikkelomgeving kunt u wijzigingen aanbrengen en deze direct be
 
 ### Veelvoorkomende problemen en oplossingen
 
-+++GitHub bouwt Kwesties
++++GitHub Build Issues
 
 **Probleem:** bouwt mislukkingen of het verbinden fouten
 
@@ -781,7 +784,7 @@ Als u &quot;Kan pad naar module &#39;/scripts/lib-franklin.js&#39; niet omzetten
 
 +++
 
-+++Universal Editor-problemen
++++Problemen met de Universal Editor
 
 **Probleem:** de componenten van de Vorm verschijnen niet in Universele Redacteur
 

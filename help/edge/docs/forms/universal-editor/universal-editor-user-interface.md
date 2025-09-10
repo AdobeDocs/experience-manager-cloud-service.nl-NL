@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2390'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 
 **moet-kent Hulpmiddelen:**
 
-- **de Wijze van de Voorproef van 0&rbrace; (** kortere weg) - test uw vorm aangezien de gebruikers het zullen zien`p`
+- **de Wijze van de Voorproef van 0} (** kortere weg) - test uw vorm aangezien de gebruikers het zullen zien`p`
 - **Responsieve Wijze** - controleer hoe uw vorm op mobiele apparaten kijkt
 - **Open Pagina** (`o` kortere weg) - de vorm van de mening in een nieuw lusje
 - **publiceer** - maak uw vorm voor gebruikers levend
@@ -112,11 +112,16 @@ De **Universele Toolbar van de Redacteur** verstrekt zeer belangrijke acties voo
 
 **voor uw eerste vorm:**
 
-1. **Begin bouwend** - voeg componenten toe gebruikend **&#x200B;**&#x200B;knoop (`a`) toevoegt
-2. **vorm gebieden** - selecteer componenten en gebruik **Wijze van Eigenschappen** (`d`)
-3. **Test uw vorm** - Gebruik **Wijze van de Voorproef** (`p`) om met uw vorm in wisselwerking te staan
-4. **de mobiele mening van de Controle** - Schakelaar aan **Responsieve Wijze** voor mobiele het testen
-5. **ga levende** - klik **publiceren** wanneer klaar
+1. **voeg een Aangepaste component van de Vorm** toe - neem de `Adaptive Form` component in een sectie op.
+2. **Begin bouwend** - voeg componenten toe gebruikend **** knoop (`a`) toevoegt
+3. **vorm gebieden** - selecteer componenten en gebruik **Wijze van Eigenschappen** (`d`)
+4. **Test uw vorm** - Gebruik **Wijze van de Voorproef** (`p`) om met uw vorm in wisselwerking te staan
+5. **de mobiele mening van de Controle** - Schakelaar aan **Responsieve Wijze** voor mobiele het testen
+6. **ga levende** - klik **publiceren** wanneer klaar
+
+>[!NOTE]
+>
+> Om de gedetailleerde stappen voor het creëren van vormen in Universele Redacteur te leren, zie [ Aangepaste Forms met Edge Delivery Services creëren en publiceren ](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Controlepunten van de Bevestiging:**
 
@@ -157,12 +162,12 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 
 **Deze hulpmiddelen worden gebruikt in meeste vorm-bouwende zittingen:**
 
-#### **de Wijze van de Voorproef van 0&rbrace; (** kortere weg)`p`
+#### **de Wijze van de Voorproef van 0} (** kortere weg)`p`
 
 **Doel:** test uw vorm precies aangezien de gebruikers het zullen ervaren\
 **wanneer te gebruiken:** alvorens te publiceren, na het aanbrengen van veranderingen, om vormfunctionaliteit te testen
 
-![ Modus van de Voorproef 0&rbrace;](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
+![ Modus van de Voorproef 0}](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
 **Beste praktijken:** Voorproef na elke belangrijke verandering om kwesties vroeg te vangen.
 
@@ -218,18 +223,18 @@ De **Universele Toolbar van de Redacteur** bevat uw primaire vorm het uitgeven e
 
 #### **de Eigenschappen van de Vorm van AEM**
 
-**Doel:** vorm-vlakke montages zoals het Model van de Gegevens van de Vorm (FDM) en publicatiedata vormen\
+**Doel:** vorm-vlakke montages zoals het Model van de Gegevens van de Vorm (FDM), vormend voorlegt acties en publicatiedata\
 **wanneer te gebruiken:** De integratie van opstellings gegevens, die publicatie plannen
 
 ![ Eigenschappen van de Vorm ](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
 
-![ tovenaar van de Eigenschappen van 0&rbrace; Vorm](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+![ tovenaar van de Eigenschappen van 0} Vorm](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 Het deelvenster Formuliereigenschappen bevat de volgende secties:
 
 - **Verzending**: Bepaal wat gebeurt nadat een gebruiker de vorm voorlegt. U kunt kiezen uit meerdere verzendacties, zoals het verzenden van gegevens via e-mail, het verzenden naar SharePoint, het gebruik van een formuliergegevensmodel of integratie met services zoals Adobe Experience Platform of Microsoft Power Automate. Voor een volledige lijst van gesteunde voorlegt acties, verwijs naar [ voorlegt het artikel van de Actie ](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-- **vooraf invullen**: Vorm hoe de vormgebieden automatisch bevolkt zijn alvorens de gebruiker met de vorm in wisselwerking staat. U kunt verbinding maken met gegevensbronnen zoals een FDM (Form Data Model) of URL-parameters gebruiken om velden vooraf in te vullen, waardoor de gebruikerservaring wordt verbeterd en handmatige invoer wordt verminderd. Om meer te leren, zie [ artikel van de Dienst van 0&rbrace; Vooraf ingevulde.](/help/edge/docs/forms/universal-editor/prefill-form.md)
+- **vooraf invullen**: Vorm hoe de vormgebieden automatisch bevolkt zijn alvorens de gebruiker met de vorm in wisselwerking staat. U kunt verbinding maken met gegevensbronnen zoals een FDM (Form Data Model) of URL-parameters gebruiken om velden vooraf in te vullen, waardoor de gebruikerservaring wordt verbeterd en handmatige invoer wordt verminderd. Om meer te leren, zie [ artikel van de Dienst van 0} Vooraf ingevulde.](/help/edge/docs/forms/universal-editor/prefill-form.md)
 
 - **Dank u**: Pas aan wat de gebruikers na het voorleggen van de vorm zien. U kunt een bevestigingsbericht weergeven of deze omleiden naar een andere webpagina voor een vloeiende en professionele voltooiing. Leren hoe te om een dank-u bericht voor vormen te vormen, zie [ vormen Dank u het artikel van het Bericht ](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
@@ -264,7 +269,7 @@ Het deelvenster Formuliereigenschappen bevat de volgende secties:
 
 Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bouw van en het vormen van vormen. Het verandert op basis van wat u selecteert en verstrekt verschillende hulpmiddelen voor verschillende taken.
 
-![ het Comité van Eigenschappen ](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![ het Comité van Eigenschappen ](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **de Hulpmiddelen van de Bouw van de Vorm van de Kern**
 
@@ -349,7 +354,7 @@ Het **Comité van Eigenschappen** (juiste kant) is uw controlecentrum voor de bo
 
     ![Variaties genereren](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Leer meer:** [ produceer de Gids van Variaties ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Leer meer:** [ produceer de Gids van Variaties ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Inhoudsconcepten**
 
@@ -507,7 +512,7 @@ Stel deze sneltoetsen in om formulieren sneller en efficiënter te maken:
 - **Plan alvorens** te bouwen - schets uw vormstructuur alvorens te beginnen
 - **houd het eenvoudig** - vermijd overweldigende gebruikers met teveel gebieden
 
-### **Ervaring van 0&rbrace; Gebruiker**
+### **Ervaring van 0} Gebruiker**
 
 - **Test vaak** - de Wijze van de Voorproef van het gebruik na elke belangrijke verandering
 - **denk als gebruikers** - overweeg de volledige vorm-vullende ervaring

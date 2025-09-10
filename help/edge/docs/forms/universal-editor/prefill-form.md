@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: vooraf instelbaar adaptief formulier, adaptieve services voor randweergave van formulieren, adaptief automatisch invullen van formulier
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
 ## Prefill-service voor een formulier configureren
 
-+++fase 1: Formuliergegevensmodel instellen
++++Fase 1: Formuliergegevensmodel instellen
 
 ### Stap 1: Formuliergegevensmodel maken
 
@@ -145,7 +145,7 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
 +++
 
-+++Fase 2: Het Aangepaste formulier maken en configureren
++++Fase 2: Het adaptieve formulier maken en configureren
 
 ### Stap 3: Een adaptief formulier maken
 
@@ -155,7 +155,12 @@ De Universal Editor biedt twee vooraf ingevulde serviceopties:
 
    ![ malplaatje van Edge Delivery Services ](/help/edge/assets/create-eds-forms.png)
 
-1. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm &lbrace;**
+1. Klik **creëren** om **te openen creeer de 3 tovenaar van de Vorm {**
+
+   >
+   >
+   > U kunt de gegevensbron van het **lusje van Gegevens** vormen of later door de vormeigenschappen uit te geven.
+
 1. Geef de formulierdetails op:
 
    - **Naam**: Ga een beschrijvende naam voor uw vorm in
@@ -187,7 +192,7 @@ De vormelementen van uw FDM verschijnen in het **Datasource** lusje van **Browse
 
 ### Stap 5: Gegevensbinding toevoegen aan formuliervelden
 
-1. Selecteer gegevenselementen van het **lusje van 0&rbrace; Gegevensbron &lbrace;**
+1. Selecteer gegevenselementen van het **lusje van 0} Gegevensbron {**
 2. Klik **toevoegen** of belemmering-en-dalingselementen om uw vorm te bouwen
 
    ![ Schermafbeelding van Universele Redacteur die op schema-gebaseerde vorm ](/help/edge/docs/forms/universal-editor/assets/ue-form.png) tonen
@@ -202,7 +207,7 @@ De vormelementen van uw FDM verschijnen in het **Datasource** lusje van **Browse
 
 +++
 
-+++Fase 3: Het vormen Prefill Dienst
++++Fase 3: Prefill-service configureren
 
 ### Stap 6: Vereiste extensies inschakelen
 
@@ -211,7 +216,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 1. **de Uitbreiding van de Eigenschappen van de Vorm van AEM**
 
    - Open **Extension Manager** in Universele Redacteur
-   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0&rbrace; AEM toe**
+   - Laat de **uitbreiding van de Eigenschappen van de Vorm van 0} AEM toe**
 
    ![ de eigenschappen van de Vorm pictogram ](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
@@ -250,7 +255,7 @@ Zorg ervoor dat deze extensies zijn ingeschakeld in de Universal Editor:
 3. Kies **Voorproef als HTML**
 4. Test prefilling door parameters aan URL toe te voegen:
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **Voorbeeld:**
 
@@ -314,7 +319,7 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 
 ## Problemen oplossen
 
-+++Algemene problemen en oplossingen
++++Veelvoorkomende problemen en oplossingen
 
 | Probleem | Mogelijke oorzaak | Oplossing |
 |-------|----------------|----------|
@@ -374,7 +379,7 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 
 +++
 
-+++Overwegingen voor beveiliging
++++Beveiligingsoverwegingen
 
 - **bevestigt inputparameters**: Bevestig altijd parameters URL
 - **Sanitize gegevens**: Reinig gegevens alvorens vormen vooraf in te vullen
@@ -386,7 +391,7 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 +++Richtlijnen voor gebruikerservaring
 
 - **verstrekken terugkoppelt**: Toon ladingsindicatoren tijdens gegevenshaal
-- **elegant de fouten van het 0&rbrace; Handvat &lbrace;: De nuttige foutenmeldingen van de vertoning**
+- **elegant de fouten van het 0} Handvat {: De nuttige foutenmeldingen van de vertoning**
 - **staat met voeten treedt** toe: Laat gebruikers vooraf ingevulde gegevens wijzigen
 - **handhaaf consistentie**: Gebruik verenigbaar prefill gedrag over vormen
 
@@ -394,13 +399,13 @@ De URL&#39;s hieronder dienen alleen ter illustratie en werken niet zoals ze zij
 
 ## Veelgestelde vragen
 
-+++Hoe kan ik testen of de prefilling correct werkt?
++++Hoe kan ik testen of het vooraf invullen correct werkt?
 
 Geef een voorbeeld van het formulier weer en voeg vooraf ingevulde parameters toe aan de URL met de volgende notatie: `?<bindreferencefield>=<value>` . Zorg ervoor dat het veld een geldige `bindRef` heeft die overeenkomt met de gegevensstructuur. Gebruik de browserontwikkelaarsgereedschappen om netwerkaanvragen te inspecteren en te controleren of gegevens correct worden opgehaald.
 
 +++
 
-+++Welke gegevensindelingen worden ondersteund voor het vooraf invullen van een adaptieve Forms?
++++Welke gegevensindelingen worden ondersteund voor het vooraf invullen van Adaptieve Forms?
 
 Adaptieve Forms ondersteunt meerdere indelingen, afhankelijk van uw formuliermodel:
 
@@ -417,7 +422,7 @@ Ja, u kunt beide typen velden vooraf invullen. Gebonden velden gebruiken de sect
 
 +++
 
-+++Wat zou ik moeten doen als slechts sommige gebieden prefilling zijn?
++++Wat moet ik doen als slechts enkele velden vooraf worden ingevuld?
 
 Controleer of alle velden juiste `bindRef` waarden hebben die exact overeenkomen met uw FDM. Controleer of de gegevensbron alle vereiste velden bevat en of de gegevensstructuur overeenkomt met het formuliermodelschema.
 

@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2443'
 ht-degree: 0%
 
 ---
 
 
-# Responsieve Forms maken met Universal Editor
+# Responsieve Forms maken met Universal Editor - Een volledige hulplijn
 
 Het moderne weblandschap vereist formulieren die naadloos werken in een steeds groter wordend spectrum van apparaten en schermgrootten. Van grote desktopmonitoren tot compacte smartphoneschermen verwachten gebruikers consistente, intuïtieve ervaringen, ongeacht het gekozen apparaat. Het maken van responsieve formulieren is niet meer optioneel. Het is een fundamentele vereiste voor het aanbieden van professionele, toegankelijke en voor conversie geoptimaliseerde digitale ervaringen.
 
@@ -33,20 +33,21 @@ Bij het maken van responsieve formulieren zijn twee hoofdactiviteiten betrokken:
 - Algemene problemen met formulieren oplossen
 - Formulieren optimaliseren voor mobiele prestaties
 
-## Waarom responsieve Forms belangrijk is
+<!--
+## Why Responsive Forms Are Important
 
-**Gevolgen van de Ervaring van de Gebruiker:**
+**User Experience Impact:**
 
-- Meer dan 60% van de gebruikers heeft toegang tot formulieren op mobiele apparaten
-- Slechte mobiele ervaringen leiden tot een 67% hogere wachttijd
-- Met responsieve formulieren kunt u de voltooiingstarieven met maximaal 25% verhogen
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**BedrijfsVoordelen:**
+**Business Benefits:**
 
-- Hogere voltooiingssnelheden voor formulieren
-- Verbeterde gebruikerstevredenheid
-- Verbeterde toegankelijkheidscompatibiliteit
-- Lagere ontwikkelings- en onderhoudskosten
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -75,7 +76,7 @@ Door uw formulieren op verschillende apparaten te testen, kunt u problemen die o
 
 **Stap 3: De Oriëntaties van het Apparaat van de test**
 
-Gebruik het **pictogram van de Rotator van het 1&rbrace; Scherm** om allebei te testen:
+Gebruik het **pictogram van de Rotator van het 1} Scherm** om allebei te testen:
 
 - **Staand wijze**: Standaard mobiele richtlijn
 - **Liggende wijze**: Geroteerde tablet of telefoonmening
@@ -173,7 +174,7 @@ In de deelvensterindeling wordt gerelateerde inhoud gerangschikt in visueel vers
 
 **hoe te om uit te voeren**
 
-1. Voeg de [ Component van het Comité ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
+1. Voeg de [ Component van het Comité ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) aan uw vorm toe.
 2. Groepeer verwante velden binnen elk deelvenster om de logische organisatie te behouden.
 3. Wijs duidelijke, beschrijvende rubrieken aan elke paneelsectie toe.
 4. Zorg ervoor dat er voldoende ruimte is tussen deelvensters om visueel onoverzichtelijk te blijven.
@@ -206,7 +207,7 @@ De Lay-out van de Tovenaar begeleidt gebruikers door een multi-step proces, dat 
 
 **hoe te om uit te voeren**
 
-1. Neem de [ Component van de Tovenaar ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
+1. Neem de [ Component van de Tovenaar ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in uw vorm op.
 2. Verdeel het formulier in logische stappen, idealiter tussen 3 en 7, om elke stap geconcentreerd en beheerbaar te houden.
 3. Voeg voortgangsindicatoren toe om gebruikers te helpen hun positie in het proces te begrijpen.
 4. Zorg voor duidelijke besturingselementen voor navigatie, zoals de knoppen Volgende, Vorige en Opslaan.
@@ -246,7 +247,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 **hoe te om uit te voeren**
 
-1. Voeg de [ Component van de Accordeon ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
+1. Voeg de [ Component van de Accordeon ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) aan uw vorm toe.
 2. Groepeer gerelateerde optionele of secundaire inhoud binnen elke accordeonsectie.
 3. Gebruik duidelijke, beschrijvende kopteksten voor elke sectie om gebruikers te helpen begrijpen welke informatie bevat binnen is.
 4. Stel de juiste open of gesloten standaardinstellingen voor elke sectie in op basis van belang en gebruikersbehoeften.
@@ -295,7 +296,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 +++
 
-+++Tablet optimaliseren (768 px-1199 px)
++++Tabletoptimalisatie (768 px-1199 px)
 
 **Lay-out en Bruikbaarheid:**
 
@@ -306,7 +307,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 +++
 
-+++Desktop Optimization (1200px+)
++++Desktopoptimalisatie (1200 px+)
 
 **Geavanceerde Eigenschappen en Lay-out:**
 
@@ -317,11 +318,45 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 +++
 
+## Aangepaste indelingen configureren met onderbrekingspunten voor mediaquery&#39;s
+
+Wanneer het bouwen van douanelay-outs voor componenten in Adaptieve Forms die **Universele Redacteur** gebruiken, moet u ontvankelijk gedrag bepalen gebruikend **CSS media vraagbreekpunten**. Zo zorgt u ervoor dat formulieren correct worden weergegeven op verschillende apparaten en schermgrootten.
+
+**geadviseerde Onderbrekingspunten (die op de Componenten van de Kern van AEM worden gebaseerd)**
+
+| **Type van Apparaat** | **Aanbevolen Onderbrekingspunt** |
+|-----------------|---------------------------|
+| **Desktop** | `min-width: 1200px` |
+| **Tablet** | `min-width: 768px and max-width: 1199px` |
+| **Mobiel** | `max-width: 767px` |
+
+**Zeer belangrijke Punten**
+
+- Gebruik deze onderbrekingspunten om te bepalen hoe componenten op verschillende apparaten vergroten/verkleinen, stapelen of verbergen.
+- Volg de responsieve ontwerprichtlijnen van uw organisatie voor een consistente UX.
+- Test lay-outs op meerdere apparaten en oriëntaties om de bruikbaarheid en toegankelijkheid te garanderen.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> De Universal Editor biedt geen interface voor het definiëren van responsief gedrag. Alle aanpassingen van de layout moeten worden afgehandeld met CSS.
+
+
+
 ## Problemen oplossen
 
 ### Lay-outproblemen
 
-+++pagina-einden van formulierlay-outs op mobiele apparaten
++++Formulierindelingseinden op mobiele apparaten
 
 **Mogelijke Oorzaken:**
 
@@ -338,7 +373,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 +++
 
-+++Touch-doelen te klein
++++Aanraakdoelen te klein
 
 **Mogelijke Oorzaken:**
 
@@ -374,7 +409,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 ### Prestatieproblemen
 
-+++ Langzaam laden op mobiel
++++Langzaam laden op mobiele apparaten
 
 **Mogelijke Oorzaken:**
 
@@ -393,7 +428,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 ### Problemen met testen en valideren
 
-+++emulator vs. verschillen in echt apparaat
++++Emulator versus verschillen in echt apparaat
 
 **Mogelijke Oorzaken:**
 
@@ -430,7 +465,7 @@ Met de accordeonindeling bespaart u ruimte door de inhoud in inklapbare gedeelte
 
 +++
 
-+++Checklist voor testen
++++Testcontrolelijst
 
 **Controle vóór Publicatie:**
 

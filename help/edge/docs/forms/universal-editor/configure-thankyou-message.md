@@ -4,13 +4,13 @@ description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Uw berichten voor bedankt configureren en URL&#39;s omleiden
 
@@ -53,13 +53,19 @@ Dank u berichten het beste werken wanneer:
 
 Open uw AanpassingsVorm in Universele Redacteur en klik **geef de pictogram van de Eigenschappen van de Vorm** in de toolbar uit. Hiermee wordt het dialoogvenster met uitgebreide formuliereigenschappen geopend.
 
+![ de eigenschappen van de Vorm pictogram ](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Navigeer om u configuratie te danken**
 
 In de dialoog van de Eigenschappen van de Vorm, selecteer **Dank u** tabel om tot de opties van de post-voorleggingsconfiguratie toegang te hebben.
 
+![ Universele Eigenschappen van de Vorm van de Redacteur ](/help/forms/assets/ue-form-properties.png)
+
 **3. Vorm berichtvertoning**
 
-Selecteer **Bericht van de Show** van de beschikbare opties. Hiermee activeert u de berichtinhoudeditor met RTF-mogelijkheden.
+Selecteer **Bericht van de Show** van de beschikbare opties.
+
+![ bedankt ](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. Maak uw berichtinhoud**
 
@@ -117,13 +123,19 @@ Omleiding van URL&#39;s is optimaal voor:
 
 Open uw AanpassingsVorm in Universele Redacteur en klik **geef de Eigenschappen van de Vorm** pictogram uit om de dialoog van de vormconfiguratie te openen.
 
+![ de eigenschappen van de Vorm pictogram ](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Navigeer om u configuratie te danken**
 
 Selecteer **Dank u** lusje in de dialoog van de Eigenschappen van de Vorm om tot herleidingsconfiguratieopties toegang te hebben.
 
+![ Universele Eigenschappen van de Vorm van de Redacteur ](/help/forms/assets/ue-form-properties.png)
+
 **3. Omleidingsfunctionaliteit inschakelen**
 
 Kies **Omleiden aan URL** van de beschikbare post-voorleggingsopties.
+
+![ redirect ](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Doel-URL configureren**
 
@@ -248,4 +260,3 @@ Nadat u uw ervaring na verzending hebt geconfigureerd:
 
 - [Configuratie-handleiding voor verzending van formulieren](submit-action.md)
 - [Beste praktijken van de Ervaring van de gebruiker](responsive-layout.md)
-

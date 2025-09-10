@@ -4,9 +4,9 @@ description: Leer hoe u formulierfragmenten maakt in de Universal Editor en deze
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -76,9 +76,12 @@ Formulierfragmenten in Edge Delivery Services bieden krachtige mogelijkheden voo
 
 U kunt Edge Delivery Services-formulierfragmenten maken in de Universal Editor en de gemaakte fragmenten toevoegen aan Edge Delivery Services-formulieren. U kunt de volgende handelingen uitvoeren met Edge Delivery Services-formulierfragmenten:
 
-- [Formulierfragmenten maken](#creating-form-fragments)
-- [Formulierfragmenten toevoegen aan een formulier](#adding-form-fragments-to-a-form)
-- [Formulierfragmenten beheren](#managing-form-fragments)
+- [Formulierfragmenten maken in Universal Editor](#creating-form-fragments-in-universal-editor)
+   - [Werken met formulierfragmenten](#understanding-form-fragments)
+   - [Vereisten](#prerequisites)
+   - [Werken met Edge Delivery Services-formulierfragmenten](#working-with-edge-delivery-services-form-fragments)
+   - [Aanbevolen procedures](#best-practices)
+   - [Samenvatting](#summary)
 
 +++ Formulierfragmenten maken
 
@@ -175,6 +178,10 @@ Een formulierfragment integreren in uw formulier:
 
    ![ Schermschot die het fragment van contactdetails tonen met succes in een werknemersvorm binnen de Universele Redacteur wordt geïntegreerd, die aantoont hoe de fragmenten hun structuur handhaven wanneer hergebruikt ](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
+   >[!NOTE]
+   >
+   > De **geeft de knoop van het Fragment** uit staat gebruikers toe om rechtstreeks aan het vormfragment voor het uitgeven te navigeren.
+
    U kunt voorproef de vorm zien hoe de vorm op de **wijze van de Voorproef** verschijnt.
 
    ![ Voorproef ](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
@@ -246,7 +253,7 @@ U kunt verschillende bewerkingen uitvoeren op formulierfragmenten via de gebruik
     </tbody>
     </table>
 
-+++
++++ 
 
 ## Aanbevolen procedures
 
@@ -285,10 +292,10 @@ U hebt geleerd hoe u in Edge Delivery Services formulierfragmenten kunt gebruike
 
 **Volgende stappen:**
 
-- Een bibliotheek maken van veelgebruikte fragmenten voor uw organisatie
-- Naamgevingsconventies en beheerbeleid voor fragmentgebruik instellen
+- Maak een bibliotheek met veelgebruikte fragmenten voor uw organisatie.
+- Vaststellen van naamconventies en beheerbeleid voor fragmentgebruik.
 - Onderzoek geavanceerde integratie met [ Modellen van de Gegevens van de Vorm ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) voor dynamische gegeven-gedreven fragmenten
-- Op fragmenten gebaseerde formuliersjablonen implementeren voor consistente gebruikerservaring
+- Op fragment gebaseerde formuliersjablonen implementeren voor consistente gebruikerservaring.
 
 Uw formulieren profiteren nu van modulaire, onderhoudsbare architectuur die efficiënt over projecten kan worden geschaald en tegelijkertijd een consistente gebruikerservaring garandeert.
 

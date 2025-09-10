@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
+source-wordcount: '2824'
 ht-degree: 0%
 
 ---
@@ -165,13 +165,15 @@ Figuur: De interface van de Redacteur van de regel voor het uitgeven componenten
 ![ het gebruikersinterface van de Redacteur van de Regel ](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Figuur: Volledige interface van de Redacteur van de Regel met genummerde componenten
 
-- **de titel van de Component en regeltype**: Bevestigt de geselecteerde component en het actieve regeltype.
-- **de Voorwerpen en het paneel van Functies van de Vorm**:
+1. **de titel van de Component en regeltype**: Bevestigt de geselecteerde component en het actieve regeltype.
+2. **de Voorwerpen en het paneel van Functies van de Vorm**:
+
    - Formulierobjecten: hiërarchische weergave van velden en containers voor verwijzing in regels
    - Functies: ingebouwde wiskunde, koord, datum, en bevestigingshelpers
-- **knevel van het Comité**: Toon/verberg de voorwerpen en functies paneel om werkruimte te verhogen
-- **Visuele regelbouwer**: belemmering-en-daling, dropdown-gedreven regelcomponist
-- **Controles**: Gedaan (sparen), annuleer (verwerp). Regels altijd testen voordat ze worden opgeslagen.
+
+3. **knevel van het Comité**: Toon/verberg de voorwerpen en functies paneel om werkruimte te verhogen
+4. **Visuele regelbouwer**: belemmering-en-daling, dropdown-gedreven regelcomponist
+5. **Controles**: Gedaan (sparen), annuleer (verwerp). Regels altijd testen voordat ze worden opgeslagen.
 
 +++
 
@@ -302,13 +304,13 @@ U maakt een formulier dat:
 
 +++
 
-+++ Stap 1: Het basisformulier maken
++++ Stap 1: Maak het formulier
 
 **Doelstelling**: Bouw de basisvorm met alle gebieden en aanvankelijke montages.
 
 1. **Open Universele Redacteur**:
    - Navigeer aan de console van AEM Sites, selecteer uw pagina, klik **uitgeven**
-   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) behoorlijk gevormd hebt
+   - Verzeker u de [ Universele Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) behoorlijk gevormd hebt
 
 2. **voeg vormcomponenten in deze orde** toe:
    - Titel (H2): &quot;Formulier voor de berekening van belastingen&quot;
@@ -533,6 +535,9 @@ Afbeelding: aangepaste functies toevoegen aan het bestand functions.js
 ![ Functie van de Douane in de Redacteur van de Regel ](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figuur: Het selecteren en het vormen van douanefuncties in de interface van de Redacteur van de Regel
 
+>
+>
+> De verbeteringen aan de Redacteur van de Regel, met inbegrip van douane op gebeurtenis-gebaseerde regels, steun voor dynamische variabelen, en API integratie, zijn ook beschikbaar voor Edge Delivery Services Forms. Meer over deze verhogingen leren en hoe te om hen te gebruiken, zie de [ Verbeteringen van de Redacteur van de Regel en het Artikel van de Gevallen van het Gebruik ](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Beste praktijken voor functiegebruik**:
 
@@ -727,7 +732,7 @@ Forms wordt een krachtig hulpmiddel voor gegevensverzameling, kwalificatie van l
 
 **Extra middelen**:
 
-- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=nl-NL) voor bredere context
+- [ Universele documentatie van de Redacteur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) voor bredere context
 - [ de gids van Extension Manager ](/help/implementing/developing/extending/extension-manager.md) voor het toelaten van extra mogelijkheden
 - [ de vormen van Edge Delivery Services ](/help/edge/docs/forms/overview.md) voor uitvoerige begeleiding van de vormontwikkeling
 

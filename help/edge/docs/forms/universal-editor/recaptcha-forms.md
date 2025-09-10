@@ -6,9 +6,9 @@ keywords: reCAPTCHA in formulieren, met reCAPTCHA in de Universal Editor, voeg r
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,6 @@ Zorg ervoor dat u het volgende hebt voordat u begint:
 
 - AEM as a Cloud Service authoring
 - Universele Editor heeft toegang tot formulierbewerkingsmachtigingen
-- Inschrijving in het vroege toegangsprogramma voor de functies van reCAPTCHA
 
 ### Technische vereisten
 
@@ -51,7 +50,7 @@ Zorg ervoor dat u het volgende hebt voordat u begint:
 
 ## Waarom gebruik je reCAPTCHA in je Forms?
 
-| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0&rbrace; Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![ Veiligheid ](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![ Bot Bescherming ](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![ Ervaring van 0} Gebruiker](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Verbeterde Veiligheid** | **Bot &amp; Preventie Spam** | **Naadloze Ervaring van de Gebruiker** |
 | Formulieren beschermen tegen frauduleuze activiteiten en aanvallen | Voorkomen dat automatische bots formulieren verzenden | Onzichtbare reCAPTCHA verstoort legitieme gebruikers niet |
@@ -218,7 +217,7 @@ Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties. Gebruik d
 
 ## RECAPTCHA-standaard instellen
 
-+++Stap 1: Vraag de sleutels van de reCAPTCHA API (zie details)
++++Stap 1: haal API-sleutels voor reCAPTCHA aan (zie details)
 
 >[!IMPORTANT]
 >
@@ -256,7 +255,7 @@ Edge Delivery Services Forms ondersteunt twee Google reCAPTCHA-opties. Gebruik d
 
 +++
 
-+++Stap 2: Configuratie-container voor AEM Cloud configureren (zie details)
++++Stap 2: AEM Cloud Configuration Container configureren (zie details)
 
 Volg hetzelfde proces als in de Enterprise-instelling:
 
@@ -268,7 +267,7 @@ Volg hetzelfde proces als in de Enterprise-instelling:
 
 +++
 
-+++Stap 3: Vorm de StandaardDienst van reCAPTCHA in AEM (zie details)
++++Stap 3: Configureer de standaardservice reCAPTCHA in AEM (zie details)
 
 ![ reCAPTCHA Standaard configuratiescherm ](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Cijfer: reCAPTCHA Standaard configuratieinterface in AEM*
@@ -313,7 +312,7 @@ Nadat u de service reCAPTCHA hebt geconfigureerd, voegt u als volgt beveiliging 
 ![ Toevoegend de reCAPTCHA component aan een vorm ](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figuur: Het toevoegen van de Onzichtbare component Captcha aan uw vorm*
 
-+++1. Formulier openen in Universal Editor
++++&#x200B;1. Formulier openen in Universal Editor
 Ga naar uw formulier in AEM Sites en klik op Bewerken om het te openen in de Universal Editor. Wacht tot de editor is geladen.
 
 - Ga naar uw formulier in AEM Sites
@@ -321,14 +320,14 @@ Ga naar uw formulier in AEM Sites en klik op Bewerken om het te openen in de Uni
 - Wacht tot de editor is geladen
 +++
 
-+++2. De formulierstructuur zoeken
++++&#x200B;2. Zoek de formulierstructuur
 Zoek in de inhoudsstructuur (linkerdeelvenster) de sectie Adaptief formulier en vouw de formulierstructuur uit om de invoegpunten te zien.
 
 - Zoek in de inhoudsstructuur (linkerdeelvenster) de sectie Adaptief formulier
 - De formulierstructuur uitvouwen om invoegpunten te zien
 +++
 
-+++3. Component reCAPTCHA toevoegen
++++3. Add reCAPTCHA Component
 Voeg de component Captcha (onzichtbaar) toe aan uw formulier.
 
 - Klik op het pictogram Toevoegen (+) in uw formuliersectie
@@ -336,7 +335,7 @@ Voeg de component Captcha (onzichtbaar) toe aan uw formulier.
 - U kunt ook de component slepen en neerzetten vanuit het deelvenster Componenten
 +++
 
-+++4. Component configureren (optioneel)
++++&#x200B;4. Component configureren (optioneel)
 Selecteer de nieuw toegevoegde component captcha en verifieer het uw configuratie reCAPTCHA gebruikt.
 
 - De nieuw toegevoegde component captcha selecteren
@@ -344,7 +343,7 @@ Selecteer de nieuw toegevoegde component captcha en verifieer het uw configurati
 - Geen extra configuratie nodig voor basisopstelling
 +++
 
-+++5. Uw wijzigingen publiceren
++++&#x200B;5. Publiceer uw wijzigingen
 Publiceer uw wijzigingen en controleer of er geen fouten zijn.
 
 - Klik op Publiceren in universele editor
