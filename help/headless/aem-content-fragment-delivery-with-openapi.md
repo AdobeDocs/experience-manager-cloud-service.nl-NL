@@ -4,9 +4,9 @@ description: Meer informatie over de levering van tAEM-inhoudsfragmenten met Ope
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,14 @@ De toegestane oorsprong van CORS aan de kant van de verzendersconfiguratie, spec
 De API maakt nieuwe aanvragen mogelijk met een snelheid van maximaal 200 aanvragen per seconde, per omgeving.
 
 Zodra deze grens wordt overschreden, begint API [ 429 fout ](https://www.rfc-editor.org/rfc/rfc6585#section-4) reacties te verzenden. Deze fouten moeten door om het even welke cliënttoepassingen worden behandeld, en ontbroken verzoeken die na een exponentiële backoff opnieuw worden geprobeerd. De HTTP-reactie wordt geleverd met een specifieke header, `Retry-After` , die aan de client aangeeft hoelang ze moeten wachten voordat ze de aanvraag opnieuw verzenden.
+
+## Voor authentiek verklaarde Verzoeken {#authenticated-requests}
+
+De steun voor voor authentiek verklaarde verzoeken kan met de [ sleutel van AEM CDN Edge ](/help/implementing/dispatcher/cdn-credentials-authentication.md) worden uitgevoerd. Met de AEM CDN Edge-sleutel kunt u vertrouwen op de AEM CDN en ervoor zorgen dat alleen specifieke aanvragen toegang hebben tot de API, op basis van de opgegeven Edge-sleutelheader.
+
+>[!NOTE]
+>
+>De vergunning die op bewaarplaats-specifieke ACLs wordt gebaseerd wordt momenteel niet gesteund.
 
 <!-- 
 ## Limitations {#limitations}
