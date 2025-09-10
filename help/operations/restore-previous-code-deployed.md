@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,16 @@ U opent eenvoudig het geselecteerde milieu ![ Meer pictogram van het pictogram o
 >
 >![ de codeversie van Source in gebruik ](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-**herstelt vorige code die** wordt opgesteld eigenschap beschikbaar slechts wanneer **elke** voorwaarde hieronder waar is:
+**herstel vorige code die** wordt opgesteld beschikbaar slechts wanneer de volgende voorwaarden worden vervuld:
 
 * Slechts één wordt toegestaan herstellen per succesvolle pijpleidingsuitvoering; om opnieuw te herstellen, voltooi een andere succesvolle pijpleidingslooppas.
 * U houdt **Milieu herstellen creeert** toestemmingen. Voor details bij het beheren van toestemmingen, zie [ de Toestemmingen van de Douane ](/help/implementing/cloud-manager/custom-permissions.md).
 * Uw organisatie is ingeschreven voor het bètaprogramma en de functiemarkering is ingeschakeld.
 * Het programma loopt op AEM as a Cloud Service.
-* De vorige broncode kan worden hersteld in een `Development` -omgeving, `Stage` -omgeving of een `Specialized Testng Environment` -omgeving.
 * De laatste pijpleiding voor dat milieu eindigde met succes en liep **minder dan 30 dagen** geleden.
 * De milieustatus is *Lopend* en geen pijpleiding is lopend.
+* **herstel vorige code die** wordt opgesteld kan op een `Development` milieu, `Stage` milieu, of a `Specialized Testng Environment` worden gedaan.
 
-Herstel De gekozen omgeving is een `Development` -, Stage- of Specialized Testing Environment.
 Als om het even welke controle ontbreekt, opent Cloud Manager de volgende dialoogdoos die van één of meerdere onvervulde voorwaarden een lijst maakt en **bevestigt** onbruikbaar, verhinderend herstellen.
 
 ![ herstel vorige code opgezette de mislukkingsdialoogdoos ](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
@@ -63,7 +62,7 @@ Als u enkel gegevens wilt herstellen, die zijn verloren, beschadigd, of toevalli
 
      >[!NOTE]
      >
-     >De **kaart van milieu&#39;s** &lbrace;maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
+     >De **kaart van milieu&#39;s** {maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** in de kaart om *alle* milieu&#39;s van het programma te zien.
 
 1. In de lijst van Milieu&#39;s, rechts van een milieu waarvan broncode u wilt herstellen, klik ![ Meer pictogram of ellipse menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan klik **herstellen** > **Vorige opgestelde code**.
 
