@@ -4,9 +4,9 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ De aangepaste kaartcomponent wordt nu weergegeven, zoals hieronder wordt getoond
 
 ![ Aangepaste Component van de Kaart ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Wijzigingen vastleggen en duwen
+### &#x200B;3. Wijzigingen vastleggen en duwen
 
 Nadat u de JavaScript en CSS voor uw aangepaste component hebt geïmplementeerd en lokaal hebt geverifieerd, past u de wijzigingen toe op uw Git-opslagplaats en drukt u deze door.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 U hebt in een paar eenvoudige stappen een complexe component voor de selectie van een aangepaste kaart gemaakt.
 
-## Handmatige of verouderde methode om aangepaste component te maken
++++ ## Handmatige of verouderde methode om aangepaste component te maken
 
 De oudere manier om dit te doen is de hieronder beschreven stappen manueel te volgen:
 
@@ -522,13 +522,13 @@ De oudere manier om dit te doen is de hieronder beschreven stappen manueel te vo
 
 10. **Update _component-definition.json**: In `models/_component-definition.json` werk de serie binnen de groep met `id custom-components` met een voorwerp op de volgende manier bij:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
+   Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
 
 11. **stel het bouwstijl :json manuscript** in werking: voer `npm run build:json` uit om alle componentenJSON definities in één enkel dossier te compileren en samen te voegen dat van de server moet worden gediend. Dit zorgt ervoor dat het schema van uw nieuwe component wordt opgenomen in de samengevoegde uitvoer.
 
