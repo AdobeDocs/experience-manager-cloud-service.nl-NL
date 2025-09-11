@@ -505,13 +505,13 @@ De oudere manier om dit te doen is de hieronder beschreven stappen manueel te vo
 
 10. **Update _component-definition.json**: In `models/_component-definition.json` werk de serie binnen de groep met `id custom-components` met een voorwerp op de volgende manier bij:
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
+    Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
 
 11. **stel het bouwstijl :json manuscript** in werking: voer `npm run build:json` uit om alle componentenJSON definities in één enkel dossier te compileren en samen te voegen dat van de server moet worden gediend. Dit zorgt ervoor dat het schema van uw nieuwe component wordt opgenomen in de samengevoegde uitvoer.
 
