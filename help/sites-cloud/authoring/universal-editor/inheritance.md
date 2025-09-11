@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -67,4 +67,3 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 * Om overerving voor enige componenten terug te keren, moet de **multi-plaats-beheer van AEM (MSM) Uitbreiding** worden toegelaten.
 * Voor visueel terugkoppel om te zien welke componenten hun gehandicapte erving hebben en die het nog hebben behouden, moet de **uitbreiding van het Beheer van AEM multi-Plaats-Beheer (MSM)** worden toegelaten.
-* Deze eigenschappen zijn momenteel beperkt tot componenten in pagina&#39;s en zijn nog niet van toepassing op [ de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md), ondanks die ook die mogelijkheden MSM hebben en lanceren.

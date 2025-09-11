@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ### Ongedaan maken en Opnieuw {#undo-redo}
 
@@ -193,6 +193,24 @@ Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de edi
 >[!TIP]
 >
 >Gebruik de sneltoets `Command-Z` of `Shift-Command-Z` om respectievelijk ongedaan te maken of opnieuw uit te voeren.
+
+### Kopiëren en plakken {#copy-paste}
+
+U kunt componenten kopiëren en kleven die binnen [ containers zijn.](/help/implementing/universal-editor/field-types.md#container) Dit is mogelijk slechts binnen de zelfde pagina en als de [ doelcontainer de component om toelaat worden gekleefd.](/help/implementing/universal-editor/filtering.md)
+
+![ pictogram van het Exemplaar ](assets/copy.png)
+![ het pictogram van het Deeg ](assets/paste.png)
+
+1. Selecteer een component in de editor of in de inhoudsstructuur.
+1. Het **pictogram van het Exemplaar** verschijnt in het [ eigenschappen paneel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tik of klik erop.
+1. Het **Deeg** pictogram verschijnt in het eigenschappen paneel.
+1. Selecteer de component _na_ die u wenst om de gekopieerde component te kleven.
+1. Tik of klik op Plakken.
+1. De gekopieerde component wordt gekleefd _na_ de geselecteerde component.
+
+>[!TIP]
+>
+>Gebruik de sneltoets `Command-C` of `Command-V` om respectievelijk te kopiëren of te plakken.
 
 ## Inhoud voorvertonen {#previewing-content}
 
@@ -238,7 +256,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 

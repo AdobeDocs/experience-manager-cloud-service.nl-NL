@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.09.04
-description: Dit zijn de releaseopmerkingen voor de release 2025.09.04 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.09.11
+description: Dit zijn de releaseopmerkingen voor de release 2025.09.11 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.09.04 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.09.11 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 4 september 2025 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 11 september 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ Dit zijn de opmerkingen bij de release van 4 september 2025 van de Universal Edi
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Het exemplaar en de deeg is beschikbaar voor [ vroege adopters ](#copy-paste)
-* [ ongedaan maken en opnieuw doen ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) is nu beschikbaar aan inhoudauteurs.
-   * Het ongedaan maken en het opnieuw doen kan voor uitgeeft in context worden uitgevoerd, uitgeeft die via het paneel van Eigenschappen wordt gedaan, evenals het toevoegen van, het dupliceren van, het bewegen van, en het schrappen van blokken.
-   * Ongedaan maken en opnieuw uitvoeren is beperkt tot de huidige browsersessie.
+* [ Exemplaar en deeg ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) is nu beschikbaar voor componenten binnen containers op de zelfde pagina.
+* 6.5 LTS SP1 wordt nu gesteund.
+* De Universele Redacteur steunt nu [ multi-plaats-beheer overerving ](/help/sites-cloud/authoring/universal-editor/inheritance.md) voor de Fragmenten van de Inhoud met inbegrip van het automatisch breken van overerving wanneer een levend fragment van de exemplaarinhoud wordt uitgegeven.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -35,11 +34,11 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 
 De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster.
 
-### Kopiëren/plakken {#copy-paste}
+### Kopiëren en plakken op pagina&#39;s {#copy-paste}
 
-Kopiëren en plakken van componenten op dezelfde pagina is nu beschikbaar voor auteurs van inhoud.
+Kopiëren en plakken is nu mogelijk op meerdere pagina&#39;s naast de pagina.
 
 ## Overige verbeteringen {#other-improvements}
 
-* De stijl van de redacteurstoolbar is bijgewerkt om zich beter aan aanstaande nieuwe RTE te richten.
-* De filters in het dialoogvenster met de elementkiezer zijn hersteld.
+* Verschillende kleine prestatieverbeteringen zijn geïmplementeerd rondom de Universal Editor werken met AEM als back-end systeem.
+* Inhoudsfragmenten worden nu gepubliceerd met de API voor openen, waardoor de prestaties en consistentie worden verbeterd met de manier waarop de Content Fragment Editor en de console publiceren.
