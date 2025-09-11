@@ -4,7 +4,7 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
+source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
@@ -120,12 +120,14 @@ De API van de Component van de Douane bepaalt hoe te om het gedrag, de verschijn
 #### Functiehandtekening:
 
 ```javascript
-export default function decorate(element, fieldJson, container, formId) {
-// element: The HTML structure of the OOTB component you are extending
-// fieldJson: The JSON field definition (all authorable properties)
-// container: The parent element (fieldset or form)
-// formId: The id of the form
-// ... your logic here ...
+export default function decorate(element, fieldJson, container, formId) 
+{
+  // element: The HTML structure of the OOTB component you are extending
+  // fieldJson: The JSON field definition (all authorable properties)
+  // container: The parent element (fieldset or form)
+  // formId: The id of the form
+
+  // ... your logic here ...
 }
 ```
 
@@ -141,18 +143,20 @@ De **subscribe** functie laat uw component toe om op veranderingen in gebiedswaa
 
 ### Functiehandtekening:
 
-```JavaScript
+```javascript
 import { subscribe } from '../../rules/index.js';
-
 export default function decorate(fieldDiv, fieldJson, container, formId) {
-// Access custom properties defined in the JSON
-const { initialText, finalText, time } = fieldJson?.properties;
-// ... setup logic ...
-subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
-// React to custom event (e.g., resetCardOption)
-// ... logic ...
-}, 'resetCardOption');
-});
+  // Access custom properties defined in the JSON
+  const { initialText, finalText, time } = fieldJson?.properties;
+
+  // ... setup logic ...
+
+  subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => {
+    fieldModel.subscribe(() => {
+      // React to custom event (e.g., resetCardOption)
+      // ... logic ...
+    }, 'resetCardOption');
+  });
 }
 ```
 
@@ -249,28 +253,39 @@ Laat een klasse **kaart** aan de component voor het stileren toevoegen en een be
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
 
-export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
-element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
-jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
-});
-return element;
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+    const image = createOptimizedPicture(
+      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'card-image'
+    );
+    radioWrapper.appendChild(image);
+  });
+
+  return element;
 }
 ```
 
 **voeg RuntimeGedrag voor de Component van de Douane in cards.css** toe
 
 ```javascript
-.card .radio-wrapper { min-width: 320px;
-/* or whatever width fits your design */ max-width: 340px;
-background: #fff;
-border-radius: 16px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-flex: 0 0 auto;
-scroll-snap-align: start; padding: 24px 16px;
-margin-bottom: 0;
-position: relative;
-transition: box-shadow 0.2s; display: flex;
-align-items: flex-start; gap: 12px;
+.card .radio-wrapper {
+  min-width: 320px; /* or whatever width fits your design */
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 24px 16px;
+  margin-bottom: 0;
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 ```
 
@@ -289,64 +304,49 @@ Wanneer API wordt geroepen, plaatst het het gebiedsmodel en moet aan de verander
 Laten we de weergavecode in de vorige stap omzetten naar een functie en deze binnen de subscribe-functie in `cards.js` aanroepen, zoals hieronder wordt getoond:
 
 ```javascript
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { subscribe } from '../../rules/index.js';  
-function createCard(element, enums) {  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-    if (enums[index]?.name) {  
+      label.textContent = enums[index]?.name;
+    }
 
-      let label = radioWrapper.querySelector('label');  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-      if (!label) {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-        label = document.createElement('label');  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-        radioWrapper.appendChild(label);  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      }  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
+  });
 
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-
-    });  
-    return element;  
-
-} 
+  return element;
+}
 ```
 
 **Gebruik onderteken Functie om de Veranderingen van de Gebeurtenis in cards.js te luisteren**
@@ -362,81 +362,58 @@ Als u de weergavewijzigingen wilt synchroniseren met het veldmodel, moet u de wa
 **Gebruikend het ModelAPI van het Gebied in cards.js**
 
 ```javascript
- 
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  
+      label.textContent = enums[index]?.name;
+    }
 
-  
+    // Attach index to input element for later reference
+    radioWrapper.querySelector('input').dataset.index = index;
 
-function createCard(element, enums) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-    if (enums[index]?.name) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-      let label = radioWrapper.querySelector('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      if (!label) {  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
 
-        label = document.createElement('label');  
+    element.addEventListener('change', (e) => {
+      e.stopPropagation();
+      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      fieldModel.value = value.name;
+    });
+  });
 
-        radioWrapper.appendChild(label);  
-
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    radioWrapper.querySelector('input').dataset.index = index;  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-        element.addEventListener('change', (e) => {  
-
-            e.stopPropagation();  
-
-            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
-
-            fieldModel.value = value.name;  
-
-        });  
-
-    });  
-
-    return element;  
-} 
+  return element;
+}
 ```
 
 De aangepaste kaartcomponent wordt nu weergegeven, zoals hieronder wordt getoond:
@@ -453,7 +430,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 U hebt in een paar eenvoudige stappen een complexe component voor de selectie van een aangepaste kaart gemaakt.
 
-+++ ## Handmatige of verouderde methode om aangepaste component te maken
++++ **Handboek of Verouderde Methode om de Component van de Douane** te creëren
 
 De oudere manier om dit te doen is de hieronder beschreven stappen manueel te volgen:
 
@@ -484,23 +461,29 @@ De oudere manier om dit te doen is de hieronder beschreven stappen manueel te vo
 7. Registreer uw component als een variant in de vormbouwer en plaats het variantbezit of
    `fd:viewType/:type` in JSON aan de naam van uw component, bijvoorbeeld, voeg de `fd:viewType` waarde van `definitions[]` als kaarten aan de componentenserie van het voorwerp met `id="form` toe.
 
-   ```javascript
-   {
-   "definitions": [
-   {
-   "title": "Cards",
-   "id": "cards", "plugins": {
-   "xwalk": {
-   "page": {
-   "resourceType":
-   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
-   "jcr:title": "Cards",
-   "fieldType": "radio-button", "fd:viewType": "cards",
-   "enabled": true, "visible": true}
+   ```
+       {
+     "definitions": [
+       {
+         "title": "Cards",
+         "id": "cards",
+         "plugins": {
+           "xwalk": {
+             "page": {
+               "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+               "template": {
+                 "jcr:title": "Cards",
+                 "fieldType": "radio-button",
+                 "fd:viewType": "cards",
+                 "enabled": true,
+                 "visible": true
+               }
+             }
+           }
+         }
+       }
+     ]
    }
-   } }
-   }
-   ]}
    ```
 
 8. **Update mappings.js**: Voeg de naam van uw component aan **OOTBComponentDecorators** (voor OTB - stijlcomponenten) of **customComponents** lijst toe zodat wordt het erkend en door het systeem geladen.
@@ -522,19 +505,21 @@ De oudere manier om dit te doen is de hieronder beschreven stappen manueel te vo
 
 10. **Update _component-definition.json**: In `models/_component-definition.json` werk de serie binnen de groep met `id custom-components` met een voorwerp op de volgende manier bij:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
+   Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
 
 11. **stel het bouwstijl :json manuscript** in werking: voer `npm run build:json` uit om alle componentenJSON definities in één enkel dossier te compileren en samen te voegen dat van de server moet worden gediend. Dit zorgt ervoor dat het schema van uw nieuwe component wordt opgenomen in de samengevoegde uitvoer.
 
 12. Leg uw wijzigingen vast en duw deze naar uw Git-opslagplaats.
 
 Nu kunt u de aangepaste component aan het formulier toevoegen.
+
++++
 
 ## Een samengestelde component maken
 
@@ -548,81 +533,44 @@ Een samengestelde component Voorwaarden en Voorwaarden bestaat bijvoorbeeld uit 
 Deze compositiestructuur wordt gedefinieerd als een sjabloon binnen het JSON-bestand van de desbetreffende component. In het volgende voorbeeld wordt getoond hoe u een sjabloon voor een component Voorwaarden definieert:
 
 ```javascript
-{ 
-
-  "definitions": [ 
-
-    { 
-
-      "title": "Terms and conditions", 
-
-      "id": "tnc", 
-
-      "plugins": { 
-
-        "xwalk": { 
-
-          "page": { 
-
-            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
-
-            "template": { 
-
-              "jcr:title": "Terms and conditions", 
-
-              "fieldType": "panel", 
-
-              "fd:viewType": "tnc", 
-
-              "text": { 
-
-                "value": "Text related to the terms and conditions come here.", 
-
-                "sling:resourceType": "core/fd/components/form/text/v1/text", 
-
-                "fieldType": "plain-text", 
-
-                "textIsRich": true 
-
-              }, 
-
-              "approvalcheckbox": { 
-
-                "name": "approvalcheckbox", 
-
-                "jcr:title": "I agree to the terms & conditions.", 
-
-                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
-
-                "fieldType": "checkbox", 
-
-                "required": true, 
-
-                "type": "string", 
-
-                "enum": [ 
-
-                  "true" 
-
-                ] 
-
-              } 
-
-            } 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
-  ], 
-
-  ... 
-
-} 
+{
+  "definitions": [
+    {
+      "title": "Terms and conditions",
+      "id": "tnc",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions",
+            "template": {
+              "jcr:title": "Terms and conditions",
+              "fieldType": "panel",
+              "fd:viewType": "tnc",
+              "text": {
+                "value": "Text related to the terms and conditions come here.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
+              },
+              "approvalcheckbox": {
+                "name": "approvalcheckbox",
+                "jcr:title": "I agree to the terms & conditions.",
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
+                "fieldType": "checkbox",
+                "required": true,
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  ...
+}
 ```
 
 ## Aanbevolen procedures
