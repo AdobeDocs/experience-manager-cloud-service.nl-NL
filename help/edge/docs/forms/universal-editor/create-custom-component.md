@@ -4,7 +4,7 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 0%
@@ -175,6 +175,8 @@ In deze sectie, zult u het proces leren om de component van de a **kaartendouane
 #### 1.1 Bestanden en mappen
 
 De eerste stap is de opstelling van de noodzakelijke dossiers van de douanecomponent en het te telegraferen tot de code in de bewaarplaats. Dit proces wordt automatisch gedaan door **AEM Forms Scaffolder CLI**, die het sneller maakt om de noodzakelijke dossiers te scaffold en te telegraferen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. Open de terminal en navigeer naar de hoofdmap van het formulierproject.
 2. Voer de volgende opdrachten uit:
@@ -520,13 +522,13 @@ De oudere manier om dit te doen is de hieronder beschreven stappen manueel te vo
 
 10. **Update _component-definition.json**: In `models/_component-definition.json` werk de serie binnen de groep met `id custom-components` met een voorwerp op de volgende manier bij:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
+   Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
 
 11. **stel het bouwstijl :json manuscript** in werking: voer `npm run build:json` uit om alle componentenJSON definities in één enkel dossier te compileren en samen te voegen dat van de server moet worden gediend. Dit zorgt ervoor dat het schema van uw nieuwe component wordt opgenomen in de samengevoegde uitvoer.
 
