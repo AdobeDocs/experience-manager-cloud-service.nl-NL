@@ -4,9 +4,9 @@ description: Leer hoe u Git-submodules kunt gebruiken om de inhoud van meerdere 
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Het resultaat is een `.gitmodules` -bestand dat lijkt op het volgende:
 
 Zie ook het [ Handboek van de Verwijzing van de Git ](https://git-scm.com/book/en/v2/Git-Tools-Submodules) voor meer informatie over submodules van het Git.
 
-## Gebruiksnotities {#usage-notes}
+## Gebruiksnotities voor Adobe-opslagruimten {#usage-notes-recommendations-adobe-repos}
 
 * De URL voor de it moet exact de syntaxis hebben die in de vorige sectie is beschreven.
 * Alleen submodules in de hoofdmap van de vertakking worden ondersteund.
@@ -94,4 +94,4 @@ Nadat u het `pom.xml` -bestand hebt geconfigureerd en de `git submodule` -opdrac
 
 * URL&#39;s voor Git voor submodules kunnen de HTTPS- of SSH-indeling hebben, maar moeten verwijzen naar een GitHub.com-opslagplaats. Het toevoegen van een Adobe-opslagsubmodule aan een GitHub-aggregatoropslagplaats of het omgekeerde wordt niet ondersteund.
 * GitHub-submodules moeten toegankelijk zijn voor de Adobe GitHub App.
-* [ de beperkingen van het gebruiken van submodules van het Git met Adobe-Beheerde bewaarplaatsen ](#limitations-recommendations) zijn ook van toepassing.
+* [ de beperkingen van het gebruiken van submodules van het Git met Adobe-Beheerde bewaarplaatsen ](#usage-notes-recommendations-adobe-repos) zijn ook van toepassing.
