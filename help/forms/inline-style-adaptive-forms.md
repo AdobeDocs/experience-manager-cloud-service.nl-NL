@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt de algemene verschijning en de stijl van een Aangepaste Vorm bepalen door stijlen te specificeren gebruikend [ themaredacteur ](themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke componenten van Adaptief formulier en de wijzigingen direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
@@ -29,7 +29,7 @@ U kunt de algemene verschijning en de stijl van een Aangepaste Vorm bepalen door
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Om de wijze aan het stileren wijze, op de paginagoolbar te veranderen, selecteer ![ canvas-drop-down ](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
+1. Open het formulier in de formulierbuilder en wijzig de modus in opmaakmodus. Om de wijze aan het stileren wijze, op de paginagoolbar te veranderen, selecteer ![ canvas-drop-down ](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
 1. Selecteer een component in de pagina, en selecteer uitgeven knoop ![ uitgeven-knoop ](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
@@ -82,7 +82,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   </tr>
   <tr>
    <td><p>Label</p> </td>
-   <td><p>Dimensionen en positie &gt; breedte</p> </td>
+   <td><p>Afmetingen en positie &gt; breedte</p> </td>
    <td><p>100 px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>

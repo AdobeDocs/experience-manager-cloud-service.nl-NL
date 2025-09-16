@@ -1,18 +1,18 @@
 ---
-title: Hoe te om een Aangepast malplaatje van de Vorm tot stand te brengen dat op kerncomponent wordt gebaseerd?
-description: Maak adaptieve formuliersjablonen op basis van de kerncomponent om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
+title: Hoe te om een Aangepast malplaatje van de Vorm met de Componenten van de Kern te bouwen?
+description: Bouw Aangepaste malplaatjes van de Vorm die op kerncomponent worden gebaseerd om de basisstructuur en aanvankelijke inhoud te bepalen gebruikend de Redacteur van het Malplaatje.
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1871'
 ht-degree: 0%
 
 ---
 
-# Een adaptieve formuliersjabloon maken op basis van kerncomponenten {#adaptive-form-templates}
+# Een adaptieve formuliersjabloon maken met Core Components {#adaptive-form-templates}
 
 Wanneer u een formulier ontwerpt, voegt u velden en componenten toe om de formulierstructuur, inhoud en handelingen in de editor te definiëren. U voegt velden en componenten toe in `guideRootPanel` van de formuliercontainer. Met de Sjablooneditor kunt u een sjabloon maken met een basisstructuur en eerste inhoud die auteurs kunnen gebruiken om formulieren te maken.
 
@@ -42,7 +42,7 @@ U kunt de sjablooneditor openen via het menu Gereedschappen door te navigeren na
 >
 > U kunt de op de kerncomponent gebaseerde bewerkbare sjablonen vinden in de kernmappen voor componenten.
 
-Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=nl-NL#editing-templates-template-authors)
+Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)
 
 ## Een sjabloon maken {#create-template}
 
@@ -139,7 +139,7 @@ Wanneer u een sjabloon bewerkt, kunt u de lay-out definiëren, gebruikt dit de s
 
 ![ container van de Lay-out in de structuurlaag ](/help/forms/assets/layout-template-core-component.png)
 
-Verwijs naar het artikel [ begrip responsieve lay-out ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=nl-NL) voor extra informatie.
+Verwijs naar het artikel [ begrip responsieve lay-out ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) voor extra informatie.
 
 ## De sjabloon inschakelen {#enabling-the-template}
 
@@ -152,11 +152,11 @@ Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u 
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}
 
-Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier in een ander [!DNL AEM Forms] -exemplaar importeert, wordt het zonder de sjabloon geïmporteerd. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit het knooppunt `/conf` in `https://<server>:<port>/crx/packmgr` en deze poort in het exemplaar [!DNL AEM Forms] plaatsen waar u het formulier wilt uploaden. U kunt [ een malplaatje ook creëren gebruikend het Archetype van AEM en het opstellen aan uw instantie van de Diensten van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=nl-NL#prerequisites).
+Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier in een ander [!DNL AEM Forms] -exemplaar importeert, wordt het zonder de sjabloon geïmporteerd. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit het knooppunt `/conf` in `https://<server>:<port>/crx/packmgr` en deze poort in het exemplaar [!DNL AEM Forms] plaatsen waar u het formulier wilt uploaden. U kunt [ een malplaatje ook creëren gebruikend het Archetype van AEM en het opstellen aan uw instantie van de Diensten van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * U kunt de sjabloon [!UICONTROL Document of Record] ook rechtstreeks configureren vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren. Voor meer informatie, zie [ Document van Verslag voor Aanpassings Forms ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform) produceren.
+> * U kunt de sjabloon [!UICONTROL Document of Record] ook rechtstreeks configureren vanuit de builder van het adaptieve formulier of de Adaptieve formuliersjabloon. Voor meer informatie, zie [ Document van Verslag voor Aanpassings Forms ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform) produceren.
 
 ## Een formuliergegevensmodelschema koppelen aan een sjabloon {#associating-form-data-model-schema-in-template}
 
@@ -213,7 +213,7 @@ Aangepaste eigenschappen worden toegevoegd aan de kerndeelvelden van het Adaptie
 
 1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** .
 1. Selecteer de sjabloon op basis van kerncomponenten en open deze in de bewerkingsmodus.
-1. Klik het **[!UICONTROL Policy]** ![ 2&rbrace; pictogram van het Beleid &lbrace;van een Adaptief gebied van de Component van de Kern van de Vorm waarop de douaneeigenschappen moeten worden bepaald. ](/help/forms/assets/Smock_FeedManagement_18_N.svg) Het dialoogvenster **[!UICONTROL Adaptive Form Field]** wordt weergegeven.
+1. Klik het **[!UICONTROL Policy]** ![ 2} pictogram van het Beleid {van een Adaptief gebied van de Component van de Kern van de Vorm waarop de douaneeigenschappen moeten worden bepaald. ](/help/forms/assets/Smock_FeedManagement_18_N.svg) Het dialoogvenster **[!UICONTROL Adaptive Form Field]** wordt weergegeven.
 1. Selecteer de tab **[!UICONTROL Custom Properties]** .
 1. Geef de waarde **[!UICONTROL Policy Title]** op onder de sectie **[!UICONTROL Policy]** .
 1. Geef het **[!UICONTROL Group name]** op en voeg sleutelwaardepaar toe dat aan een specifieke groep is gekoppeld. De groepsnaam is zichtbaar voor formulierauteurs in het dialoogvenster Bewerken van een component. Als u de groepsnaam selecteert, is elk bijbehorend sleutel-waardepaar van toepassing op een component.
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Aanbevolen procedures {#best-practices}
 
-* Maak sjablonen met gebruik van de componenten die zijn gebaseerd op kerncomponenten, zoals Adaptieve formuliertekst, Adaptieve formuliercontainer en meer. Om informatie over de AanpassingsComponenten van de Kern van Forms te krijgen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL).
+* Maak sjablonen met gebruik van de componenten die zijn gebaseerd op kerncomponenten, zoals Adaptieve formuliertekst, Adaptieve formuliercontainer en meer. Om informatie over de AanpassingsComponenten van de Kern van Forms te krijgen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 * Beperk het aantal sjablonen zodat deze overeenkomen met de fundamenteel verschillende formuliertypen die op de websites beschikbaar zijn
 * Verstrek de noodzakelijke flexibiliteit en configuratiemogelijkheden aan uw douanecomponenten die in een malplaatje worden gebruikt.
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Zie ook {#see-also}
 
 {{see-also}}
+
 * [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
 * [Een adaptief formulier maken (kerncomponenten)](/help/forms/creating-adaptive-form-core-components.md)
 

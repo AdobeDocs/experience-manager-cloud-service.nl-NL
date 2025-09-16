@@ -6,7 +6,7 @@ keywords: Adaptieve formulierfragmenten toevoegen, Adaptieve formulierfragmenten
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Hoewel elk formulier voor een bepaald doel is ontworpen, zijn er in de meeste vormen enkele gangbare segmenten, zoals het verstrekken van persoonlijke gegevens zoals naam en adres, familiedetails en inkomstengegevens. Formulierontwikkelaars moeten deze algemene segmenten telkens maken wanneer een nieuw formulier wordt gemaakt.
 
@@ -32,7 +32,7 @@ U kunt een fragment meerdere keren aan een document toevoegen en eigenschappen v
 
 >[!NOTE]
 >
-> U kunt uw fragmentervaring voor gebruikers met [ gemakkelijk aanpassen vormt dialoog en de dialoog van het Ontwerp van de component van het Fragment van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> U kunt uw fragmentervaring voor gebruikers met [ gemakkelijk aanpassen vormt dialoog en de dialoog van het Ontwerp van de component van het Fragment van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Een adaptief formulierfragment maken {#create-a-fragment}
 
@@ -67,7 +67,7 @@ U kunt een adaptief formulierfragment helemaal opnieuw maken of een deelvenster 
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Als u bovendien een XML-schema hebt geselecteerd als het formuliermodel voor uw fragment, wordt een nieuw tabblad met de hiërarchie van het formuliermodel weergegeven in de zoeker naar inhoud. Hiermee kunt u formuliermodelelementen naar het fragment slepen en neerzetten. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Zodra het adaptieve fragment van de Vorm dat op een schema of een model van vormgegevens (FDM) wordt gebaseerd wordt gecreeerd, verschijnen het model van vormgegevens (FDM) of schemaelementen op het lusje van Gegevensbronnen van browser van de Inhoud in de Adaptieve redacteur van de Vorm. U kunt formuliermodelelementen naar het fragment slepen en neerzetten. De toegevoegde formuliermodelelementen worden geconverteerd naar formuliercomponenten terwijl de oorspronkelijke eigenschappen van het gekoppelde schema behouden blijven.
+Zodra het adaptieve fragment van de Vorm dat op een schema of model van vormgegevens (FDM) wordt gebaseerd wordt gecreeerd, verschijnen het model van vormgegevens (FDM) of schemaelementen op het lusje van Gegevensbronnen van browser van de Inhoud in de Adaptieve Bouwer van de Vorm. U kunt formuliermodelelementen naar het fragment slepen en neerzetten. De toegevoegde formuliermodelelementen worden geconverteerd naar formuliercomponenten terwijl de oorspronkelijke eigenschappen van het gekoppelde schema behouden blijven.
 
 
 ## Een fragment toevoegen aan een adaptief formulier {#insert-a-fragment-in-an-adaptive-form}

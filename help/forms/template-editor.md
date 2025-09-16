@@ -4,7 +4,7 @@ description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste in
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> De Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 Wanneer u een formulier ontwerpt, voegt u velden en componenten toe om de formulierstructuur, inhoud en handelingen in de editor te definiëren. U voegt velden en componenten toe in `guideRootPanel` van de formuliercontainer. Met de Sjablooneditor kunt u een sjabloon maken met een basisstructuur en eerste inhoud die auteurs kunnen gebruiken om formulieren te maken.
@@ -36,7 +36,7 @@ U kunt [!DNL AEM Forms] pakket van de verwijzingsinhoud van [ het portaal van de
 
 U kunt de sjablooneditor openen via het menu Gereedschappen door te navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** . Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen.
 
-Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=nl-NL#editing-templates-template-authors).
+Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)
 
 ### Een sjabloon maken {#create-template}
 
@@ -160,11 +160,11 @@ Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u 
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}
 
-Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier in een ander [!DNL AEM Forms] -exemplaar importeert, wordt het zonder de sjabloon geïmporteerd. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit het knooppunt `/conf` in `https://<server>:<port>/crx/packmgr` en deze poort in het exemplaar [!DNL AEM Forms] plaatsen waar u het formulier wilt uploaden. U kunt [ een malplaatje ook creëren gebruikend AEM Archeype en het aan uw instantie van Cloud Servicen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=nl-NL#prerequisites) opstellen.
+Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier in een ander [!DNL AEM Forms] -exemplaar importeert, wordt het zonder de sjabloon geïmporteerd. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit het knooppunt `/conf` in `https://<server>:<port>/crx/packmgr` en deze poort in het exemplaar [!DNL AEM Forms] plaatsen waar u het formulier wilt uploaden. U kunt [ een malplaatje ook creëren gebruikend AEM Archeype en het opstellen aan uw instantie van de Diensten van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * U kunt de sjabloon [!UICONTROL Document of Record] ook rechtstreeks configureren vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren. Voor meer informatie, zie [ Document van Verslag voor Aanpassings Forms ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform) produceren.
+> * U kunt de sjabloon [!UICONTROL Document of Record] ook rechtstreeks configureren vanuit de builder van het adaptieve formulier of de Adaptieve formuliersjabloon. Voor meer informatie, zie [ Document van Verslag voor Aanpassings Forms ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform) produceren.
 
 
 ## Een formuliergegevensmodelschema koppelen aan een sjabloon {#associating-form-data-model-schema-in-template}
@@ -222,11 +222,11 @@ U kunt een adaptief formulier ook opslaan als een sjabloon voor toekomstig gebru
 >
 >Als u hetzelfde containerbeleid wilt gebruiken als bij het adaptieve bronformulier, wordt u aangeraden de sjabloon op te slaan in dezelfde map als bij het adaptieve bronformulier. Als de sjabloon in een andere map wordt opgeslagen, gebruikt de gemaakte sjabloon een standaardcontainerbeleid.
 
-## Recommendations {#recommendations}
+## Aanbevelingen {#recommendations}
 
 * Wanneer u eigenschappen van het formulier in de sjablooneditor wijzigt, gebruikt u de eigenschap BindReference niet.
 * Als u een onderbrekingspunt wilt toevoegen, creeer het wanneer u een Adaptief malplaatje van de Vorm ontwerpt.
-Voor meer informatie over breekpunten, zie [ Responsieve Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=nl-NL#authoring).
+Voor meer informatie over breekpunten, zie [ Responsieve Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
 
 
 ## Zie ook {#see-also}

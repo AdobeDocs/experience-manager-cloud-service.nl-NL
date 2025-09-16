@@ -1,28 +1,28 @@
 ---
-title: Inleiding tot Adaptive Forms
-description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van Adaptive Forms. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
+title: Inleiding tot de opbouw van Adaptive Forms
+description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interface voor de bouw van Adaptive Forms. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
 
 ---
 
-# Adaptieve Forms-editor {#introduction-to-authoring-adaptive-forms}
+# Adaptive Forms builder {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -43,7 +43,7 @@ Voor adaptieve Forms die met deze optie is gemaakt, wordt geen formuliermodel ge
 
   >[!NOTE]
   >
-  > U kunt de eigenschappen van het formuliermodel wijzigen in de sjablooneditor voor Adaptief formulier of Adaptief formulier. Voor meer informatie, zie [ de Model eigenschappen van de Vorm van een AanpassingsVorm ](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) uitgeven.
+  > U kunt de eigenschappen van het formuliermodel wijzigen met de sjabloonconstructor Adaptief formulier of Adaptief formulier. Voor meer informatie, zie [ de Model eigenschappen van de Vorm van een AanpassingsVorm ](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) uitgeven.
 
 Om een AanpassingsVorm tot stand te brengen, zie [ Creërend een AanpassingsVorm ](creating-adaptive-form.md).
 
@@ -157,11 +157,11 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Hiermee voegt u een veld toe waarin u het e-mailadres kunt vastleggen. De component Email valideert standaard e-mailadressen met de volgende reguliere expressie.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Hiermee voegt u een veld toe waarin u het e-mailadres kunt vastleggen. De component Email valideert standaard e-mailadressen met de volgende reguliere expressie.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
-   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong> Nota: </strong> de component van de Bijlage van het Dossier steunt een vooraf bepaalde reeks dossierformaten in Aangepast Forms die voor het Teken van Adobe wordt toegelaten. Voor meer informatie, zie <a href="https://helpx.adobe.com/nl/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text"> Gesteunde dossierformaten </a>.</p> </td>
+   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong> Nota: </strong> de component van de Bijlage van het Dossier steunt een vooraf bepaalde reeks dossierformaten in Aangepast Forms die voor het Teken van Adobe wordt toegelaten. Voor meer informatie, zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text"> Gesteunde dossierformaten </a>.</p> </td>
   </tr>
   <tr>
    <td>Lijst met bestandsbijlagen</td>

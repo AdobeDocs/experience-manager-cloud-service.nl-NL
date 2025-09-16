@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 keywords: Indeling van adaptief formulier op basis van kerncomponenten, verschillende indelingen voor formulieren, dynamische formulierindelingen AEM, AEM Cloud Service-formulierindelingen, formulierindelingen in AEM Core-componenten, adaptieve formulierindelingen
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (Foundation Components) | [ klik hier ](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (Core Components) | Dit artikel |
 
@@ -32,6 +32,7 @@ Voordat u de verschillende mogelijkheden van een lay-out gaat verkennen, moet u 
 ## Aangepaste Forms-lay-outtypen
 
 Adaptief formulier op basis van kerncomponenten ondersteunt de volgende typen indelingen:
+
 * **lay-out van het Comité**
 * **lay-out van de Tovenaar**
 * **Verticale lay-out**
@@ -48,7 +49,7 @@ De indeling van deelvensters is handig om verwante velden zo te ordenen dat u ge
 
 Layout deelvenster
 
-U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) gebruiken om de paneellay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om diverse eigenschappen van de paneelcomponent te vormen, verwijs naar het [ artikel van de paneelcomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 >[!TAB  Lay-out van de Tovenaar ]
 
@@ -58,7 +59,7 @@ De indeling van de wizard helpt een complex formulier te vereenvoudigen door het
 
 Wizard Layout
 
-U kunt de [ tovenaar component ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+U kunt de [ tovenaar component ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) gebruiken om de tovenaarslay toe te voegen in een vorm. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de tovenaarscomponent te vormen, verwijs naar het [ artikel van de tovenaarscomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB  Verticale Lay-out van Lusjes ]
 
@@ -68,7 +69,7 @@ De lay-out van verticale tabbladen wordt ook wel tabbladen in de linkerlay-out g
 
 Lay-out verticale tabs
 
-U kunt de [ verticale component van lusjes ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) gebruiken om de verticale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de verticale component van lusjes te vormen, verwijs naar het [ verticale artikel van de luscomponent van lusjes ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
+U kunt de [ verticale component van lusjes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) gebruiken om de verticale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de verticale component van lusjes te vormen, verwijs naar het [ verticale artikel van de luscomponent van lusjes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
 
 
 >[!TAB  Horizontale Lay-out van Lusjes ]
@@ -80,7 +81,7 @@ De lay-out Horizontale tabbladen wordt ook wel Tabs in de bovenste lay-out genoe
 
 Lay-out horizontale tabs
 
-U kunt de [ horizontale component van lusjes ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) gebruiken om de horizontale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de horizontale component van lusjes te vormen, verwijs naar het [ horizontale artikel van de lussencomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+U kunt de [ horizontale component van lusjes ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) gebruiken om de horizontale lusjelay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de horizontale component van lusjes te vormen, verwijs naar het [ horizontale artikel van de lussencomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB  Lay-out van de Accordeon ]
@@ -91,7 +92,7 @@ De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer 
 
 Accordeonlay-out
 
-U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [ artikel van de component 0&rbrace; accordeon &lbrace;.](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)
+U kunt de [ accordeoncomponent ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) gebruiken om de accordeonlay-out in een vorm toe te voegen. Voor gedetailleerde instructies op hoe te om de diverse eigenschappen van de accordeoncomponent te vormen, verwijs naar het [ artikel van de component 0} accordeon {.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)
 
 >[!ENDTABS]
 
@@ -106,7 +107,7 @@ Het is belangrijk dat u de juiste indeling voor Adaptief formulier selecteert om
 | **Doel** | Hiermee groepeert u gerelateerde inhoud in afzonderlijke secties | Hiermee worden gebruikers door een proces of formulier met meerdere stappen geleid | Hiermee kunt u schakelen tussen secties/weergaven op dezelfde pagina | Vergelijkbaar met bovenste tabbladen, maar verticaal links gerangschikt | Inhoud indelen in inklapbare secties |
 | **Structuur** | Afzonderlijke secties | Opeenvolgende stappen/pagina&#39;s | Horizontale tabbladen boven | Verticale tabbladen aan de linkerkant | Inklapbare deelvensters/secties |
 | **Navigatie** | Klik op de kopteksten van het deelvenster om te navigeren | - Voorwaarts: &quot;Volgende&quot;knoop <br> - Achteruit: &quot;Achtergrond&quot;knoop <br> - Facultatieve het overslaan stappen | Klik op tabbladen om te schakelen tussen secties | Klik op tabbladen om te schakelen tussen secties | Klik op kopteksten om secties uit te vouwen/samen te vouwen |
-| **Ervaring van 0&rbrace; Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Duidelijk, toegankelijke omschakeling tussen meningen | Efficiënt gebruik van verticale ruimte, altijd zichtbare tabbladen | Compacte weergave met uitgevouwen/samengevouwen secties |
+| **Ervaring van 0} Gebruiker** | Hiermee ordent u grote hoeveelheden inhoud op een beheerbare manier | Stapsgewijze begeleiding, waardoor de overweldigende | Duidelijk, toegankelijke omschakeling tussen meningen | Efficiënt gebruik van verticale ruimte, altijd zichtbare tabbladen | Compacte weergave met uitgevouwen/samengevouwen secties |
 | **Geval van het Gebruik** | Complexe formulieren met gecategoriseerde secties | Installatieprocessen, complexe formulieren | Instellingen of inhoudscategorieën ordenen | Dashboards, complexe gegevensweergaven | Veelgestelde vragen, instellingenmenu&#39;s, gedetailleerde inhoudssecties |
 
 
@@ -136,9 +137,9 @@ Laten we het stapsgewijze proces verkennen om een lay-out in te voegen en er com
 
    Alternatief, kunt u [ nieuwe AanpassingsVorm ](/help/forms/creating-adaptive-form-core-components.md) ook creëren.
 
-1. Zoek de sectie in de formuliereditor waarin u een indeling kunt toevoegen.
+1. Zoek de sectie in de formulierbuilder waarin u een indeling kunt toevoegen.
 
-   ![ redacteur van de Vorm ](/help/forms/assets/form-editor.png)
+   ![ Bouwer van de Vorm ](/help/forms/assets/form-editor.png)
 1. Klik **toevoegen** pictogram. Het pictogram is een plusteken (+) waarmee u nieuwe componenten kunt toevoegen.
 
    ![ lay-out van het Tussenvoegsel ](/help/forms/assets/insert-layout-add-icon.png)
@@ -342,7 +343,7 @@ Voer de volgende stappen uit om de bestaande indeling van een formulier te verva
 
 ## Extra bytes
 
-Voer de volgende stappen uit om componenten naar de formuliereditor te slepen:
+Voer de volgende stappen uit om componenten naar de formulierbuilder te slepen:
 
 1. Zoek de sectie waarin u componenten kunt toevoegen.
 1. Navigeer aan het linkerpaneel binnen uw auteursmilieu en klik **Componenten**.

@@ -10,7 +10,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Referentie adaptieve formulierfragmenten {#reference-adaptive-form-fragments}
 
-Adaptief formulierfragment is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het vervolgens bewerken in de formuliereditor.
+Adaptief formulierfragment is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het vervolgens bewerken in de formulierbuilder.
 
 Voor Adaptive Forms-auteurs worden referentiefragmenten geleverd in het [!DNL AEM Forms] package [!DNL AEM FORMS] REFERENCE FRAGMENTS. Het bevat de volgende fragmenten:
 
@@ -34,7 +34,7 @@ Voor Adaptive Forms-auteurs worden referentiefragmenten geleverd in het [!DNL AE
 * Voorwaarden en bepalingen
 * Voorwaarden en bepalingen met krabbels
 
-Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [ het Opstellen van Inhoudspakketten via Cloud Manager en de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#deploying-content-packages-via-cloud-manager-and-package-manager) en [ hoe te met Pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) werken.
+Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [ het Opstellen van Inhoudspakketten via Cloud Manager en de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) en [ hoe te met Pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) werken.
 
 ![ Alle vermelde fragmenten ](assets/ootb-frags.png)
 

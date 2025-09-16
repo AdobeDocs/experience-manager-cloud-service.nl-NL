@@ -4,7 +4,7 @@ description: Gebruik thema's met een adaptief formulier om een adaptief formulie
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '5421'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 U kunt thema&#39;s tot stand brengen en toepassen om een Aangepast Vorm <!-- or an interactive communication--> te stileren. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Het thema wordt beheerd onafhankelijk zonder een verwijzing naar een Aanpassings Vorm <!-- or interactive communication -->.
@@ -299,7 +299,7 @@ Terwijl u een component opmaakt, worden de stijlen in de cache opgeslagen en in 
 
 In dit voorbeeld wordt de stijl voor het veldlabel gewijzigd. Wanneer de optie Beschrijving van responsief deelvenster is geselecteerd als stijl, wordt een lijstitem toegevoegd aan de elementenbibliotheek. Het item in de elementenbibliotheek kan worden gebruikt om de stijl voor de beschrijving van het deelvenster Responsief te wijzigen.
 
-Wanneer een stijl in de activabibliotheek wordt toegevoegd, is het beschikbaar voor andere thema&#39;s en op de [ stijlwijze ](inline-style-adaptive-forms.md) van de vormredacteur UI. Als u de stijlmodus van de gebruikersinterface van de formuliereditor <!-- or interactive communication editor --> gebruikt om een component op te maken, wordt de stijl in de cache geplaatst en is deze beschikbaar in thema&#39;s.
+Wanneer een stijl in de activabibliotheek wordt toegevoegd, is het beschikbaar voor andere thema&#39;s en op de [ stijlwijze ](inline-style-adaptive-forms.md) van de vormbouwer UI. Als u de stijlmodus van de gebruikersinterface van de formulierbuilder <!-- or interactive communication editor --> gebruikt om een component op te maken, wordt de stijl in de cache geplaatst en is deze beschikbaar in thema&#39;s.
 
 Met de plusknop in de elementenbibliotheek kunt u de stijl permanent opslaan met een naam die u opgeeft. Met de plusknop slaat u de stijl op, zelfs als u niet op de knop Opslaan in het zijpaneel klikt om de stijl toe te passen op een component. De plus knoop om een stijl voor later gebruik te bewaren is niet beschikbaar op de stijlwijze.
 
@@ -673,10 +673,10 @@ De gegenereerde CSS kunt u met de volgende opties zien:
 
   Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
 
-* **wanneer om vormredacteur of themaredacteur voor het werken met kopbal en footer te gebruiken**
+* **wanneer om vormbouwer of themaredacteur voor het werken met kopbal en footer te gebruiken**
 
   Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals lettertypestijl, achtergrond en transparantie.
-Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, een bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.
+Gebruik de opties voor het maken van formulieren als u informatie wilt opgeven zoals een logoafbeelding, een bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.
 
 
 ## Zie ook {#see-also}

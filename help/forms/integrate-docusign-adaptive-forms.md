@@ -4,7 +4,7 @@ description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 0%
@@ -21,7 +21,7 @@ DocuSign is een belangrijke oplossing voor e-handtekeningen. U kunt deze gebruik
 
 AEM Forms as a Cloud Service verstrekt a [ douane voorlegt actie voor DocuSign ](#deploy-custom-submit-action). Met de verzendactie kunt u de adaptieve formulieren voor e-handtekeningen verzenden met DocuSign API&#39;s.
 
-| U kunt ook Adobe Sign, de oplossing voor e-handtekeningen van Adobe, gebruiken om een adaptief formulier elektronisch te ondertekenen. AEM Forms heeft een veel diepere integratie met Adobe Sign en verstrekt veel fijnere controles zoals opeenvolgend en parallel ondertekenen, veelvoudige authentificatiemethodes, in-vorm het ondertekenen ervaring en meer. Voor meer informatie, zie [ Gebruikend Adobe Sign in een Aangepaste Vorm ](working-with-adobe-sign.md). |
+| U kunt ook een adaptief formulier elektronisch ondertekenen met de Adobe-oplossing voor e-handtekeningen, Adobe Sign. AEM Forms is veel beter geïntegreerd met Adobe Sign en biedt veel fijnere besturingselementen, zoals sequentiële en parallelle ondertekening, meerdere verificatiemethoden, ervaring met het ondertekenen van formulieren en meer. Voor meer informatie, zie [ Gebruikend het Teken van Adobe in een AanpassingsVorm ](working-with-adobe-sign.md). |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Vereisten {#prerequisites}
@@ -38,10 +38,10 @@ Voor de integratie van DocuSign met AEM Forms is het volgende vereist:
 
 AEM Forms as a Cloud Service biedt een aangepaste verzendactie voor DocuSign. Met de verzendactie kunt u de adaptieve formulieren voor e-handtekeningen verzenden met DocuSign API&#39;s. De code voor douane legt actie voor is beschikbaar op [ AEM Forms steekproeven openbare git bewaarplaats ](https://github.com/adobe/aem-forms-docusign-sample). U kunt de code implementeren zoals deze zich in uw AEM Forms-omgeving bevindt of deze aanpassen aan de vereisten van uw organisatie.
 
-Voer de volgende stappen uit om uit-van-de-doos aangepaste verzendactie en Cloud Service DocuSign te vormen:
+Voer de volgende stappen uit om uit-van-de-doos aangepaste verzendactie en DocuSign Cloud Service te vormen:
 
-1. [ Kloon uw as a Cloud Service project van AEM Forms ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) of creeer een [!DNL Experience Manager Forms] als [!DNL Cloud Service] project dat op [ wordt gebaseerd AEM Archetype 27 ](https://github.com/adobe/aem-project-archetype) of later. Een [!DNL Experience Manager Forms] maken als een [!DNL Cloud Service] -project op basis van AEM Archetype:
-   </br> Open de opdrachtregel en voer de onderstaande opdracht uit om een [!DNL Experience Manager Forms] as a Cloud Service project te maken:
+1. [ Kloon uw project van AEM Forms as a Cloud Service ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) of creeer een [!DNL Experience Manager Forms] als [!DNL Cloud Service] project dat op [ wordt gebaseerd AEM Archetype 27 ](https://github.com/adobe/aem-project-archetype) of later. Een [!DNL Experience Manager Forms] maken als een [!DNL Cloud Service] -project op basis van AEM Archetype:
+   </br> Open de opdrachtregel en voer de onderstaande opdracht uit om een [!DNL Experience Manager Forms] as a Cloud Service-project te maken:
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=27 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -51,7 +51,7 @@ Voer de volgende stappen uit om uit-van-de-doos aangepaste verzendactie en Cloud
 
 1. Kloon de [ aem-vormen-steekproeven ](https://github.com/adobe/aem-forms-docusign-sample) bewaarplaats. Deze opslagplaats bevat een aangepaste verzendactie voor DocuSign en configuratiegegevens om verbinding te maken met de DocuSign-server.
 
-1. Open het as a Cloud Service project van AEM Forms dat in Stap 1 voor het uitgeven in winde van uw keus wordt gecreeerd.
+1. Open het AEM Forms as a Cloud Service-project dat in Stap 1 is gemaakt voor bewerking in IDE van uw keuze.
 
 1. Open het `[AEM Forms as a Cloud Service project]\pom.xml` -bestand om het te bewerken en breng de volgende wijzigingen aan:
 
@@ -83,7 +83,7 @@ Voer de volgende stappen uit om uit-van-de-doos aangepaste verzendactie en Cloud
        </dependency>
       ```
 
-1. Voer de volgende stappen uit in het `all/pom.xml` -bestand dat beschikbaar is in de projectmap van de Cloud Service:
+1. Voer de volgende stappen uit in het `all/pom.xml` -bestand dat beschikbaar is in de Cloud Service-projectmap:
 
    1. Voeg de volgende tekst toe aan het einde van de tag `<embeddeds>` :
 
@@ -120,7 +120,7 @@ Voer de volgende stappen uit om uit-van-de-doos aangepaste verzendactie en Cloud
 
    Na het uitvoeren van deze stappen, kunt u een nieuwe douane bekijken voorlegt actie [ met elektronische handtekeningen DocuSign ](#enabledocusign) beschikbaar in de lijst van voorstellingsopties voor een adaptieve vorm en de configuratie van de a [ de wolkendienst DocuSign ](#configure-docusign-with-aem-forms) in uw lokale ontwikkelomgeving.
 
-1. Compileer en [ stel de code aan uw  [!DNL AEM Forms]  as a Cloud Service milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#customer-releases) op.
+1. Compileer en [ stel de code aan uw  [!DNL AEM Forms]  milieu van as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases) op.
 
 ## [!DNL DocuSign] integreren met [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 
@@ -140,7 +140,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL DocuSi
    1. Voeg in het vak **[!UICONTROL Redirect URI]** de URL toe die u in de vorige stap hebt gekopieerd en klik op **[!UICONTROL Save]** .
    1. Noteer de integratietoetsen en de geheime toetsen.
 
-   Voor geleidelijke informatie om montages OAuth voor een [!DNL DocuSign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2&rbrace; de ontwikkelaarsdocumentatie van de toepassing &lbrace;vormen.](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys)
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL DocuSign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys)
 
 1. Ga terug naar de **[!UICONTROL Create DocuSign Configuration]** pagina. Op het tabblad **[!UICONTROL Settings]** vermeldt het veld **[!UICONTROL OAuth URL]** de volgende standaard-URL:
 
@@ -148,7 +148,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL DocuSi
 
 1. Geef de opties **[!UICONTROL Client ID]** (DocuSign Integration Key) en **[!UICONTROL Client Secret]** (DocuSign Secret Key) op.
 
-1. Selecteer **[!UICONTROL Connect to DocuSign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt bij het maken van de [!DNL DocuSign] -toepassing. Klik op **[!UICONTROL Allow Access]** wanneer u wordt gevraagd de toegang voor `your developer account` te bevestigen. Als de gegevens juist zijn, wordt een succesbericht weergegeven.
+1. Selecteer **[!UICONTROL Connect to DocuSign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt bij het maken van de [!DNL DocuSign] -toepassing. Klik op `your developer account` wanneer u wordt gevraagd de toegang voor **[!UICONTROL Allow Access]** te bevestigen. Als de gegevens juist zijn, wordt een succesbericht weergegeven.
 
 1. Selecteer **[!UICONTROL Create]** om de [!DNL DocuSign] -configuratie te maken.
 
@@ -156,7 +156,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL DocuSi
 
 1. Herhaal alle bovenstaande stappen op uw ontwikkelaar-, werkgebied- en productieinstanties (afhankelijk van wat er nog over is) om het configureren van [!DNL DocuSign] met [!DNL AEM Forms] voor uw omgeving te voltooien.
 
-Nu is uw AEM Forms-omgeving geconfigureerd voor gebruik van DocuSign. Zorg ervoor dat u de configuratiecontainer die voor de Cloud Service wordt gebruikt toevoegt aan alle Adaptive Forms die voor [!DNL DocuSign] wordt toegelaten. U kunt een configuratiecontainer opgeven met de eigenschappen van een adaptief formulier.
+Nu is uw AEM Forms-omgeving geconfigureerd voor gebruik van DocuSign. Zorg ervoor dat u de configuratiecontainer die voor de Cloud Service wordt gebruikt, toevoegt aan alle Adaptive Forms die voor [!DNL DocuSign] wordt ingeschakeld. U kunt een configuratiecontainer opgeven met de eigenschappen van een adaptief formulier.
 
 ### [!DNL DocuSign] gebruiken in een adaptief formulier {#enabledocusign}
 
@@ -177,7 +177,7 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
    1. Selecteer de [ gemaakte configuratiecontainer ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) terwijl [ integreren  [!DNL DocuSign]  met  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   De configuratiecontainer bevat de [!DNL DocuSign] Cloud Servicen die voor uw milieu worden gevormd. Deze services zijn beschikbaar voor selectie in de Adaptieve formuliereditor.
+   De configuratiecontainer bevat de [!DNL DocuSign] Cloud Services die voor uw omgeving zijn geconfigureerd. Deze services zijn beschikbaar voor selectie in Adaptief formulier Builder.
 
 1. Selecteer op het tabblad **[!UICONTROL Form Model]** een van de volgende opties:
 
@@ -188,7 +188,7 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL DocuSign] -velden toevoegen aan het formulier en het verzenden voor ondertekening.
 1. Open het adaptieve formulier in de bewerkingsmodus. In het **[!UICONTROL Content]** lusje, selecteer **[!UICONTROL Form Container]** en selecteer ![ vormen ](assets/configure-icon.svg).
 
-1. Selecteer **[!UICONTROL Submit with DocuSign electronic signatures]** in de vervolgkeuzelijst **[!UICONTROL Submit Action]** in de sectie **[!UICONTROL Submission]** .
+1. Selecteer **[!UICONTROL Submission]** in de vervolgkeuzelijst **[!UICONTROL Submit with DocuSign electronic signatures]** in de sectie **[!UICONTROL Submit Action]** .
 
 1. Selecteer in de sectie **[!UICONTROL Action Configuration]** **[!UICONTROL Add]** om een ontvanger toe te voegen en geef het e-mailadres van de ontvanger op. Selecteer nogmaals **[!UICONTROL Add]** om meer ontvangers toe te voegen.
 
@@ -213,7 +213,7 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
 1. Open het adaptieve formulier in de bewerkingsmodus. In het **[!UICONTROL Content]** lusje, selecteer **[!UICONTROL Form Container]** en selecteer ![ vormen ](assets/configure-icon.svg).
 
-1. Selecteer **[!UICONTROL Submit with DocuSign electronic signatures]** in de vervolgkeuzelijst **[!UICONTROL Submit Action]** in de sectie **[!UICONTROL Submission]** .
+1. Selecteer **[!UICONTROL Submission]** in de vervolgkeuzelijst **[!UICONTROL Submit with DocuSign electronic signatures]** in de sectie **[!UICONTROL Submit Action]** .
 
 1. Selecteer in de sectie **[!UICONTROL Action Configuration]** **[!UICONTROL Add]** om een ontvanger toe te voegen en geef het e-mailadres van de ontvanger op. Selecteer nogmaals **[!UICONTROL Add]** om meer ontvangers toe te voegen.
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -56,7 +56,7 @@ U kunt [ AanpassingsForms ](creating-adaptive-form.md) en Aangepaste Fragmenten 
 
    ![ create-af-3 ](assets/create-af-3.png)
 
-   Nadat het adaptieve formulierfragment of het adaptieve formulierfragment op basis van een formuliergegevensmodel (FDM) is gemaakt, worden objecten van het formuliergegevensmodel weergegeven op het tabblad **[!UICONTROL Data Sources]** van de inhoudbrowser in de Adaptieve formuliereditor.
+   Zodra het adaptieve formulierfragment of het adaptieve formulierfragment dat is gebaseerd op een formuliergegevensmodel (FDM) is gemaakt, worden formuliergegevensmodelobjecten weergegeven op het tabblad **[!UICONTROL Data Sources]** van de inhoudbrowser in de Adaptief formulierbuilder.
 
    >[!NOTE]
    >
