@@ -3,7 +3,7 @@ title: AI in AEM as a Cloud Service
 description: Meer informatie over AI in Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 728163aca6ca8829829dd64cdc563d9c3b812c9d
+source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -39,6 +39,7 @@ Generatieve AI wordt in heel AEM gebruikt:
      >[!NOTE]
      >
      >Het wordt geadviseerd dat u tot [ toegang hebt produceert Variaties die in de redacteurs van AEM ](/help/generative-ai/generate-variations-integrated-editor.md) worden geïntegreerd, aangezien de vorige versie in de toekomst zal worden afgekeurd.
+
    * [Opmerkingen bij de release voor het genereren van variaties](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Content Hub - Overzicht](/help/assets/product-overview.md)
@@ -57,6 +58,6 @@ Generatieve AI wordt in heel AEM gebruikt:
 
 * [ Adobe AI Overzicht ](https://www.adobe.com/ai/overview.html)
 
-* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai)
+* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai#aem)
+   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
