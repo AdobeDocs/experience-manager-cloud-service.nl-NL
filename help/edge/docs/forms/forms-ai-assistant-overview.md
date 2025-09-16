@@ -6,7 +6,7 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
+source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 0%
@@ -23,8 +23,6 @@ ht-degree: 0%
 De AEM Forms Experience Builder gebruikt de kracht van Generative AI om het maken en bijwerken van digitale formulierervaringen te democratiseren en te versnellen. Doordat workflows op basis van intenties via interactie in natuurlijke talen mogelijk zijn, kunnen gebruikers formulieren naadloos ontwerpen, aanpassen en optimaliseren met snelheid en eenvoud.
 
 De Forms Experience Builder is gebaseerd op moderne webtechnologieën en wordt aangedreven door geavanceerde AI-services. Met de Experience Builder kunnen zowel technische als niet-technische gebruikers geavanceerde, professionele formulieren maken via conversationele interfaces. Deze revolutionaire aanpak verkort de tijd tot waarde van dagen tot uren, elimineert technische barrières door interface eenvoud, en schaalt moderniseringsinspanningen over uw volledige vorm ecosysteem.
-
-
 
 ## Kernmogelijkheden
 
@@ -54,7 +52,6 @@ Configureer formulierverzendingen voor integratie met uw bestaande bedrijfssyste
 - **Automatisering van het Werkschema**: Verbind met Macht Automate en de Fusie van Workfront
 - **de Platforms van de Marketing**: Directe integratie met Marketo voor lood beheer
 - **de Werkschema&#39;s van AEM**: De bestaande het werkschemamogelijkheden van AEM van de hefboomwerking
-
 
 ### &#x200B;2. Intelligente import en conversie
 
