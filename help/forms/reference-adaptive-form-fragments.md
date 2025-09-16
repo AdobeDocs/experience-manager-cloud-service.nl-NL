@@ -34,7 +34,7 @@ Voor Adaptive Forms-auteurs worden referentiefragmenten geleverd in het [!DNL AE
 * Voorwaarden en bepalingen
 * Voorwaarden en bepalingen met krabbels
 
-Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [ het Opstellen van Inhoudspakketten via Cloud Manager en de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) en [ hoe te met Pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) werken.
+Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [ het Opstellen van Inhoudspakketten via Cloud Manager en de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=nl-NL#deploying-content-packages-via-cloud-manager-and-package-manager) en [ hoe te met Pakketten ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) werken.
 
 ![ Alle vermelde fragmenten ](assets/ootb-frags.png)
 

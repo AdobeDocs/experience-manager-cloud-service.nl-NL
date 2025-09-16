@@ -323,7 +323,7 @@ Bewaak de prestaties van formulieren op dezelfde manier als bij realtime dashboa
 
 ### Buiten-de-doos het Volgen Mogelijkheden
 
-AEM Forms integreert naadloos met [ Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) om prestatiesmetriek voor uw gepubliceerde vormen automatisch te vangen en te volgen. U kunt het gedrag van zowel voor authentiek verklaarde als anonieme gebruikers zonder extra configuratie controleren.
+AEM Forms integreert naadloos met [ Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=nl-NL) om prestatiesmetriek voor uw gepubliceerde vormen automatisch te vangen en te volgen. U kunt het gedrag van zowel voor authentiek verklaarde als anonieme gebruikers zonder extra configuratie controleren.
 
 Alvorens vormanalyses uit te voeren, zorg ervoor uw [ milieu van AEM Forms behoorlijk wordt gevormd ](/help/forms/setup-forms-cloud-service.md) en u hebt [ uw adaptieve vormen ](/help/forms/creating-adaptive-form-core-components.md) gecreeerd gebruikend of de Componenten van de Kern of [ Componenten van de Stichting ](/help/forms/creating-adaptive-form.md).
 
@@ -527,12 +527,12 @@ Voordat u begint met de implementatie van de formulieranalyse, moet u controlere
 Maak voordat u [!DNL Adobe Analytics] configureert:
 
 - Een Adobe ID aan login aan [ Adobe Experience Cloud ](https://experience.adobe.com/#/home).
-- A [ rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+- A [ rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=nl-NL).
 
 
 ### AEM Forms- en [!DNL Adobe Analytics] extensies installeren {#install-extensions}
 
-Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) uitbreidingen te vormen:
+Voer de volgende stappen uit om AEM Forms en [ Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL) uitbreidingen te vormen:
 
 1. Meld u aan bij Adobe Experience Cloud en selecteer de gewenste naam voor het bedrijf.
 
@@ -676,7 +676,7 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 ## &#x200B;2. AEM Forms configureren {#configure-aem-forms}
 
-Alvorens een configuratie van de Lancering van Adobe tot stand te brengen, creeer een [ Configuratie van Adobe IMS gebruikend de Lancering van Adobe als Oplossing van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Alvorens een configuratie van de Lancering van Adobe tot stand te brengen, creeer een [ Configuratie van Adobe IMS gebruikend de Lancering van Adobe als Oplossing van de Wolk ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
 
 ### Adobe-startconfiguratie maken {#create-adobe-launch-configuration}
 
@@ -688,7 +688,7 @@ Voer de volgende stappen uit om een Adobe-startconfiguratie te maken:
 
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 
-1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. Selecteer de [ bijbehorende configuratie van Adobe IMS ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=nl-NL).
 
 1. Selecteer de naam van het gebruikte bedrijf terwijl [ het vormen Adobe Analytics ](#Configure-adobe-analytics).
 
@@ -708,7 +708,7 @@ De [!DNL Adobe Launch] -configuratie gebruiken in een bestaand adaptief formulie
 1. Selecteer **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics] .
 1. Publiceer het formulier.
 
-Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
+Nadat u [!DNL Adobe Analytics] voor een adaptieve vorm toelaat, kunt u [ bevestigen ](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=nl-NL#validate-the-page-view-beacon) als er een aangewezen stroom van de gegevensgebeurtenis tussen AEM Forms en [!DNL Adobe Analytics] is. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [ vormen en rapporten in Adobe Analytics ](#view-reports-adobe-analytics) bekijken.
 
 ### Regels maken om aangepaste gebeurtenissen vast te leggen (optioneel) {#capture-custom-events}
 

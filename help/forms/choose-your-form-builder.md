@@ -199,6 +199,6 @@ Neem contact op met uw AEM Forms-implementatieteam of Adobe-ondersteuning voor g
 ## Verwante artikelen
 
 - [Gedetailleerde vergelijking van formulierontwerpen](/help/edge/docs/forms/authoring-a-form.md)
-- [ overzicht van de Componenten van de Kern van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+- [ overzicht van de Componenten van de Kern van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL)
 - [Overzicht Edge Delivery Services for Forms](/help/edge/docs/forms/overview.md)
-- [ Zwaarloze Adaptieve Forms met de Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
+- [ Zwaarloze Adaptieve Forms met de Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
