@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor het genereren van variaties
 description: Opmerkingen bij de release voor het genereren van variaties, toegankelijk vanuit AEM as a Cloud Service en de Sidekick of Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-feature: Release Information
+feature: Release Information, AI Tools
 role: Admin
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
+source-git-commit: 33eab4e431284f3bb772f9e70a1fdb9e56c4c4aa
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
@@ -54,7 +54,7 @@ U kunt [ toegang tot Variaties ](/help/generative-ai/generate-variations-integra
 
 ## Bekende problemen {#known-issues}
 
-* Voor kwesties met douaneherinneringen wanneer het bewegen van een vroegere versie zie &lbrace;de herinneringen van de Douane in v2.0.0 [&#128279;](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* Voor kwesties met douaneherinneringen wanneer het bewegen van een vroegere versie zie {de herinneringen van de Douane in v2.0.0 [](/help/generative-ai/generate-variations.md#custom-prompts-v200)
 
 ## Eerdere releases {#previous-releases}
 
