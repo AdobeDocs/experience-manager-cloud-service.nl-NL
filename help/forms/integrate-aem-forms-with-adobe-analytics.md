@@ -104,7 +104,7 @@ De analyse van formulieren biedt diepgaande inzichten in het gedrag en de pijnpu
 - **minimaliseer de Eigenschap van de Gebruiker**: De de foutenpatronen van het spoor en bevestigingskwesties om vormbruikbaarheid te verbeteren
 - **optimaliseer de Orde van het Gebied**: Rangschik gebieden in de meest logische en gebruikersvriendelijke opeenvolging
 - **verbeter Hulp en Begeleiding**: Identificeer waar de gebruikers hulp nodig hebben en verstrek gerichte hulp
-- **Ervaring van 0} dwars-apparaat: Verzeker verenigbare prestaties over Desktop, tablet, en mobiele apparaten**
+- **Ervaring van 0&rbrace; dwars-apparaat: Verzeker verenigbare prestaties over Desktop, tablet, en mobiele apparaten**
 
 **BedrijfsEffect**: De betere gebruikerservaring leidt tot hogere scores van de klantentevredenheid en verhoogde merkloyaliteit.
 
@@ -338,7 +338,7 @@ Adobe Analytics legt automatisch een volledig beeld van de interactie van het ge
 - **Gebruik van de Inhoud van de Hulp**: Monitor wanneer de gebruikers tot hulpmiddelen toegang hebben, wijzend op gebieden van verwarring of ingewikkeldheid
 - **gebied-Vlakke Interacties**: De individuele gebiedsbetrokkenheid van het spoor, bestede tijd, en interactiepatronen
 - **Ontwerp sparen Gedrag**: Begrijp gebruikersintentie en vormingewikkeldheid door sparen-en-hervat gebruikspatronen
-- **het Volgen van de Zitting 1}: Volg gebruikers over veelvoudige vormzittingen om voltooiingsreizen te begrijpen**
+- **het Volgen van de Zitting 1&rbrace;: Volg gebruikers over veelvoudige vormzittingen om voltooiingsreizen te begrijpen**
 
 **Geavanceerde Inzichten van het Gedrag:**
 
@@ -890,7 +890,7 @@ Kennis van de manier waarop u analysegegevens van formulieren kunt interpreteren
 **Inzichten van de Optimalisering van Prestaties**
 
 - **gebied-Vlakke Optimalisering**: Identificeer specifieke vormgebieden die verbetering of verwijdering vereisen
-- **de Verbetering van de Ervaring van 0} Gebruiker: Ontdek de kwesties van de gebruikerservaring en voer gerichte verbeteringen uit**
+- **de Verbetering van de Ervaring van 0&rbrace; Gebruiker: Ontdek de kwesties van de gebruikerservaring en voer gerichte verbeteringen uit**
 - **Optimalisering van het Tarief van de Omzetting**: De analysegegevens van het gebruik om veranderingen uit te voeren die de tarieven van de vormvoltooiing verbeteren
 - **Technische Optimalisering van Prestaties**: De technische kwesties van het adres die vormlading en voorstellingsprestaties beïnvloeden
 
@@ -912,7 +912,7 @@ Zelfs met zorgvuldige implementatie, kunnen de configuraties van de vormanalyse 
 - **Ontbrekende Gegevens van de Vorm**: Verifieer de configuratie van de Lancering van Adobe en verzeker juiste markeringsplaatsing
 - **Onvolledige Gebeurtenis het Volgen**: De configuratie van de de regelregel van de controle en zorgt ervoor dat alle vormgebeurtenissen behoorlijk in kaart worden gebracht
 - **Latentie van Gegevens**: Begrijp normale vertragingen van de gegevensverwerking en identificeer abnormale rapporteringsvertragingen
-- **het Volgen van 0} dwars-Domein**: Los kwesties met vormanalyses over verschillende domeinen of subdomeinen op
+- **het Volgen van 0&rbrace; dwars-Domein**: Los kwesties met vormanalyses over verschillende domeinen of subdomeinen op
 
 >[!TIP]
 >
