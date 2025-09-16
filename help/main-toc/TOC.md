@@ -874,7 +874,7 @@ ht-degree: 1%
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-            + [ zet een bestaande Vorm van PDF in een AanpassingsVorm ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) om
+            + [ zet een bestaande Vorm van PDF in een AanpassingsVorm  om](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
             + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
