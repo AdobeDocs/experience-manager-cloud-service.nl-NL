@@ -4,7 +4,7 @@ description: Leer over Operationele Telemetrie, een geautomatiseerde dienst die 
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 0%
@@ -42,7 +42,7 @@ De operationele dienst van de Telemetrie wordt ontworpen om gegevensinzameling t
 * De hostnaam van de site die wordt bezocht, bijvoorbeeld: `experienceleague.adobe.com`
 * Het brede type gebruikersagent en besturingssysteem dat wordt gebruikt om de pagina weer te geven, zoals: `desktop:windows` of `mobile:ios`
 * De tijd van de gegevensverzameling, zoals: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs?lang=nl-NL`
+* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs`
 * De URL van de verwijzer (de URL van de pagina die aan de huidige pagina is gekoppeld, als de gebruiker een koppeling heeft gevolgd)
 * Een willekeurig gegenereerde id van de paginaweergave, in een indeling die vergelijkbaar is met: `2Ac6`
 * Het gewicht of het omgekeerde van de bemonsteringsfrequentie, bijvoorbeeld: `100` . Dit betekent dat slechts één op de honderd paginaweergaven wordt opgenomen
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Weigeren kan betekenen dat er een kans ontbreekt om de betrokkenheid van het verkeer op uw website te verbeteren. Nochtans, als u om het even welke kwesties ontmoet, kunt u Operationele Telemetrie onbruikbaar maken door [ het plaatsen van een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_DISABLED` aan de waarde `true`. Als u Operationele Telemetrie op een later punt opnieuw wilt toelaten, verwijder eenvoudig die omgevingsvariabele opnieuw.
 
-1. **Kan ik een beleid voor inhoudsbeveiliging gebruiken met één keer?
+1. **kan ik een Beleid van de Veiligheid van de Inhoud met een Nonce gebruiken?**
 
    De ondersteuning voor Operationele telemetrie bevat een experimentele functie ter ondersteuning van een beleid voor inhoudsbeveiliging met een nonce. Deze eigenschap kan worden toegelaten door [ plaatsend een milieu variabele in Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md#add-variables) genoemd `AEM_OPTEL_NONCE` aan de waarde `true`. Als u dit later opnieuw wilt uitschakelen, verwijdert u gewoon de omgevingsvariabele opnieuw.
 
