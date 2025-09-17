@@ -42,7 +42,7 @@ De operationele dienst van de Telemetrie wordt ontworpen om gegevensinzameling t
 * De hostnaam van de site die wordt bezocht, bijvoorbeeld: `experienceleague.adobe.com`
 * Het brede type gebruikersagent en besturingssysteem dat wordt gebruikt om de pagina weer te geven, zoals: `desktop:windows` of `mobile:ios`
 * De tijd van de gegevensverzameling, zoals: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs`
+* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs?lang=nl-NL`
 * De URL van de verwijzer (de URL van de pagina die aan de huidige pagina is gekoppeld, als de gebruiker een koppeling heeft gevolgd)
 * Een willekeurig gegenereerde id van de paginaweergave, in een indeling die vergelijkbaar is met: `2Ac6`
 * Het gewicht of het omgekeerde van de bemonsteringsfrequentie, bijvoorbeeld: `100` . Dit betekent dat slechts één op de honderd paginaweergaven wordt opgenomen
