@@ -3,13 +3,13 @@ title: Informatie over Experience Hub
 description: Lees meer over de Adobe Experience Hub-pagina.
 landing-page-description: Lees meer over Experience Hub, een centraal startpunt voor toegang tot alle AEM-mogelijkheden.
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '568'
 ht-degree: 3%
 
 ---
@@ -51,11 +51,11 @@ De Adobe Experience Manager-pagina is vernieuwd met verbeterde navigatie- en int
 >
 >De weergegeven widgets, gereedschappen en artefacten zijn afhankelijk van de persoon van de gebruiker, de rechten en het AEM-implementatietype (AEM as a Cloud Service of Managed Services 6.5/6.5 LTS).
 
-Deze oplossingen worden nu verplaatst naar de belangrijkste navigatie onder **Hulpmiddelen** of **Diensten**. Bovendien bieden nieuwe navigatie-elementen snelle toegang tot belangrijke Adobe Experience Manager-functies die specifiek zijn voor de oplossingen die zijn ingeschakeld, zoals Assets, Sites, Forms, Content Fragments, Launches en nog veel meer.
+Deze oplossingen worden nu verplaatst naar de belangrijkste navigatie onder **Hulpmiddelen** of **Diensten**. Met nieuwe navigatie-elementen hebt u snel toegang tot AEM-functies die aan uw ingeschakelde oplossingen zijn gekoppeld. Springen naar Assets, Sites, Forms, Content Fragments, Launches en meer.
 
 ![ de milieu&#39;s van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-Deze functies zijn beschikbaar voor de primaire productieomgeving waartoe u toegang hebt of u kunt een specifieke omgeving selecteren als u toegang hebt tot meerdere AEM-instanties.
+Gebruik deze functies in uw primaire productieomgeving. Als u toegang hebt tot meerdere AEM-instanties, selecteert u de omgeving waarop u zich wilt richten.
 
 ![ Prod en werkgebiedmilieu&#39;s ](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-De **sectie van Milieu&#39;s van de Authoring** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
+De **sectie van milieu&#39;s van de Authoring** {maakt een lijst van alle milieu&#39;s van AEM die u tot toegang hebt en kortere weg aan hun oplossingen en pagina&#39;s kunt omvatten. U kunt specifieke omgevingen vastzetten om deze boven aan de lijst te houden.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 
