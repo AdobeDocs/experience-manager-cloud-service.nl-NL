@@ -1,14 +1,14 @@
 ---
 title: Forms Experience Builder
-description: Krachtige formulieren sneller maken met formulierfragmenten
+description: Inleiding tot Forms Experience Builder
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,6 @@ Bestaande formulieren en documenten omzetten in interactieve digitale ervaringen
 - **Vlakke PDFs**: De statische documenten die in interactieve vormen worden omgezet
 - **Beelden en Schermafbeeldingen**: JPG, formaten PNG (controle met team voor groottebeperkingen)
 - **hand-getekende Forms**: Schetsen en de foto&#39;s van de papiervorm
-
 
 **Intelligent Proces van de Omzetting**
 
@@ -206,7 +205,6 @@ De Forms Experience Builder is momenteel beschikbaar als onderdeel van het progr
 - **Details van het Project**: Chronologie, werkingsgebied, en voorgenomen gebruiksgevallen
 - **Officiële E-mail van het Werk**: Verwante met de rekening van Adobe van uw organisatie
 
-
 ### Procedure voor het verkrijgen van IMS Organisatie-id en programma-id
 
 Ga voor gedetailleerde stappen naar de locatie van uw IMS-organisatie-id en programma-id naar:
@@ -229,7 +227,6 @@ Ga voor gedetailleerde stappen naar de locatie van uw IMS-organisatie-id en prog
 > **Beperkt Programma van de Beschikbaarheid**: De toegang tot de Bouwer van de Ervaring van Forms is onderworpen aan goedkeuring van interne belanghebbenden. Adobe zal uw verzoek beoordelen op basis van de programmacapaciteit en de aanpassing aan de criteria voor vroege toegang. Goedkeuring is niet gegarandeerd en is afhankelijk van de beschikbaarheid van het huidige programma.
 
 Voor meer informatie over het Vroege programma van de Toegang en zijn eigenschappen, zie de [ documentatie van de Toegang van AEM Forms Vroege ](/help/forms/early-access-ea-features.md).
-
 
 ## Aan de slag
 
