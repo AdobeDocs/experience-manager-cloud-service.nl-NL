@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -426,6 +426,8 @@ Uitleg in de onderstaande tabel is de beschikbare handeling.
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Naam van een van de gedefinieerde oorsprong. |
 |     | skipCache (optioneel, standaard is false) | Vlag of om caching voor verzoeken te gebruiken die deze regel aanpassen. De reacties worden standaard in de cache geplaatst op basis van de header voor het in cache plaatsen van reacties (bijvoorbeeld Cache-Control of Expires) |
+| **selectAemOrigin** | originName | Naam van een van de vooraf gedefinieerde AEM-oorsprong (ondersteunde waarde: `static`). |
+|     | skipCache (optioneel, standaard is false) | Vlag of om caching voor verzoeken te gebruiken die deze regel aanpassen. De reacties worden standaard in de cache geplaatst op basis van de header voor het in cache plaatsen van reacties (bijvoorbeeld Cache-Control of Expires) |
 
 **Oorsprong**
 
@@ -441,6 +443,29 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 | **forwardAuthorization** (facultatief, gebrek is vals) | Als de waarde true is, wordt de header &quot;Authorization&quot; van de clientaanvraag doorgegeven aan de back-end, anders wordt de machtigingsheader verwijderd. |
 | **onderbreking** (facultatief, in seconden, gebrek is 60) | Aantal seconden dat CDN op een backendserver moet wachten om de eerste byte van een HTTP-antwoordinstantie te leveren. Deze waarde wordt ook gebruikt als een tussenliggende time-out naar de backend-server. |
 
+### Aangepast domein uitbreiden naar statische AEM-laag {#proxy-custom-domain-static}
+
+De selecteurs van de oorsprong kunnen worden gebruikt om AEM te leiden publiceren verkeer aan AEM statische inhoud die gebruikend de [ front eindpijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) wordt opgesteld. De gevallen van het gebruik omvatten het dienen van statische middelen op het zelfde domein zoals de pagina (b.v., example.com/static) of op een uitdrukkelijk verschillend domein (b.v., static.example.com).
+
+Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u dit kunt bereiken:
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Proxeren naar Edge Delivery Services {#proxying-to-edge-delivery}
 
 Er zijn scenario&#39;s waar de oorsprongsselecteurs zouden moeten worden gebruikt om verkeer door AEM te leiden publiceer aan AEM Edge Delivery Services:
@@ -454,6 +479,8 @@ Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u 
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
