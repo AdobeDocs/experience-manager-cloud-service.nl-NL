@@ -30,7 +30,7 @@ Als u niet het **pictogram van Gegevensbronnen** in uw Universele interface van 
 
 ![ Schermafbeelding van de Universele interface die van de Redacteur Extension Manager beschikbare uitbreidingen met inbegrip van de uitbreiding van Gegevensbronnen toont die voor vormintegratie ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png) kan worden toegelaten
 
-Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Uw formuliertype kiezen
 
