@@ -3,15 +3,15 @@ title: Vanity-URL's maken met Dynamic Media met OpenAPI-mogelijkheden
 description: Gebruik Dynamic Media OpenAPI-mogelijkheden om uw lange URL's voor middelenlevering te transformeren in korte, merkloze URL's. Een ijdelheids-URL is een korte, schone, eenvoudig te onthouden en leesbare versie van uw complexe bezorgings-URL. U kunt uw merknaam, productnamen en relevante trefwoorden opnemen in de vanzelf-URL om de zichtbaarheid van uw merk en de betrokkenheid van gebruikers te vergroten
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 6c730591374b8ee4373a1a584f54386118e518da
+source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
 
 
-# Wat zijn Vanity URLs?{#vanity-urls}
+# ijdelings-URL&#39;s gebruiken?{#vanity-urls}
 
 Gebruik [!DNL Dynamic Media OpenAPI capabilities] om uw lange URL&#39;s voor middelenlevering te converteren naar korte, merkloze URL&#39;s. URL&#39;s voor standaardlevering van middelen omvatten door het systeem gegenereerde UUID&#39;s van elementen die de URL van de levering complex maken, moeilijk te onthouden en te delen. Vervang deze UUID&#39;s met elementen door eenvoudige id&#39;s (Vanity ID&#39;s) om een vanity URL te genereren. Een ijdelings-URL is een korte, schone en leesbare versie van uw complexe bezorgings-URL.
 
@@ -35,7 +35,7 @@ De standaard-URL voor het leveren van [!DNL Dynamic Media with OpenAPI] elemente
 
 De standaard levering URL omvat `aaid` (*daadwerkelijke activa herkenningsteken*) na `urn:` en UUID tussen `urn:aaid:aem:` en `/as/<seoname>.<format>`.
 
-***Voorbeeld:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
+***Voorbeeld:*** `https://delivery-p30902-e145436.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
 
 In het bovenstaande voorbeeld is `43341ab1-4086-44d2-b7ce-ee546c35613b` de UUID.
 
@@ -47,7 +47,7 @@ De vanity URLs omvat een ijdelings herkenningsteken in plaats van activa UUID en
 
 De vanity URL omvat `avid` (*daadwerkelijke vanity herkenningsteken*) na `urn:` en uw ijdelings identiteitskaart tussen `urn:avid:aem:` en `/<seoname>.<format>`.
 
-***Voorbeeld:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
+***Voorbeeld:*** `https://delivery-p30902-e145436.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
 
 In het bovenstaande voorbeeld is `VanityCheck` de ijdeligheids-id die de UUID heeft vervangen.
 
@@ -108,7 +108,7 @@ Voer de volgende stappen uit om een omgevingsvariabele te maken en deze toe te w
 
 1. [ navigeer aan de configuratiepagina van uw milieu van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md) en doe het volgende:
    1. Voeg `ASSET_DELIVERY_VANITY_ID` variabele toe. Dit is de sleutel.
-   1. Wijs in het waardeveld toe aan de eigenschap metadata met de vanity-id. De afbeelding volgt `dc:<your-metadata-property>` formaat, waar de prefix van de meta-gegevenstoewijzing (zoals *dc:*) zoals per het bezit van de meta-gegevensconfiguratie varieert.
+   1. Gebruik het waardegebied aan kaart aan het meta-gegevensbezit dat ijdelings identiteitskaart houdt De toewijzing volgt de `dc:<your-metadata-property>` indeling, waarbij het voorvoegsel voor de metagegevenstoewijzing (zoals dc:) varieert op basis van de configuratieeigenschap voor metagegevens.
       ![ variabele ASSET_DELIVERY_VANITY_ID ](/help/assets/assets/environment-config.png)
 1. Sla de wijzigingen op om de pods opnieuw te starten in uw omgeving.
 
@@ -132,7 +132,7 @@ Wanneer de gebruiker op de URL van de ijdelheid klikt, wijst [!DNL Dynamic Media
 
 ## Schalen met URL&#39;s met vanity{#scale-using-vanity-url}
 
-AEM as a Cloud Service laat u toe om [ de DNS en CDN namen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) binnen uw Webadressen aan te passen. Gebruik deze mogelijkheden AEMCS met uw ijdelheid URLs om hen in unieke web-adressen om te zetten die schoon, beschrijvend, van branding voorzien, intuïtief zijn en [ bovengenoemde voordelen ](#key-benefits) verstrekken.
+AEM as a Cloud Service laat u toe om [ de DNS en CDN namen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) binnen uw Webadressen aan te passen. Gebruik deze mogelijkheden AEMCS met uw ijdelheid URLs om hen in unieke web-adressen om te zetten die schoon, beschrijvend, van branding voorzien, intuïtief zijn en [ bovengenoemde voordelen ](#key-benefits) verstrekken.
 
 Zie de volgende vanity URL en zijn klantgerichte componenten:
 
@@ -141,30 +141,30 @@ Zie de volgende vanity URL en zijn klantgerichte componenten:
 `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
-  <tr valign="top">
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#customize-dns"> pas dit DNS </a> aan</div>
-    </td>
-    <td style="padding:0 6px; white-space:nowrap;">/</td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>adobe/assets/urn:avid:aem:</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#rewrite-cdn-rules"> pas URL met herschrijf regels aan </a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>&lt;vanity-id&gt;</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#create-vanity-urls"> creeer vanity identiteitskaart </a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap; width:1%;">
-      <div align="left"><code>/&lt;seoname&gt;.&lt;format&gt;</code></div>
-    </td>
-  </tr>
+<tr valign="top">
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#customize-dns"> pas dit DNS </a> aan</div>
+</td>
+<td style="padding:0 6px; white-space:nowrap; text-align:center;">/</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>adobe/assets/urn:avid:aem:</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#rewrite-cdn-rules"> pas URL met herschrijf regels aan </a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>&lt;vanity-id&gt;</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#create-vanity-urls"> creeer vanity identiteitskaart </a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
+<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+</td>
+</tr>
 </table>
 
-{het formaat van 0} Vanity URL met aangepaste DNS en CDN namen:**&#x200B;**
+{het formaat van 0} Vanity URL met aangepaste DNS en CDN namen:****
 
 `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
 
@@ -182,9 +182,9 @@ Zie de volgende vanity URL en zijn klantgerichte componenten:
 Voer de volgende stappen uit om de CDN-regels voor levering te herschrijven:
 
 1. Navigeer naar de AEM-opslagplaats om een YAML-configuratiebestand te maken.
-2. Voer de stappen in [ opstelling ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) sectie uit om CDN regels te vormen en de configuratie door uw de configuratiepijplijn van Cloud Manager op te stellen.
+2. Voer de stappen in [ opstelling ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) sectie uit om CDN regels te vormen en de configuratie door uw de configuratiepijplijn van Cloud Manager op te stellen.
 Volg deze [ beste praktijken ](#best-practices) voor het creëren van uw domeinweg.
-   [ Leer meer over CDN die regels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) herschrijven.
+   [ Leer meer over CDN die regels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) herschrijven.
 
 Hieronder volgen voorbeelden van herschrijfregels voor het toevoegen van bestandsnamen met extensies in vanity-URL&#39;s. Pas deze herschrijfregels aan volgens uw specifieke vereisten. [ de steun van Adobe van het Contact ](https://helpx.adobe.com/in/contact.html) voor verdere hulp:
 
