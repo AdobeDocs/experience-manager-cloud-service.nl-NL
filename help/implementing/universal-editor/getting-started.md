@@ -4,9 +4,9 @@ description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerst
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,6 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ### Voorbeeldverbinding {#example}
 
 ```html
-<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
-
 <html>
 <head>
     <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
@@ -133,7 +131,7 @@ Als u een bestaand project van AEM gebruikend [ de paginaredacteur ](/help/sites
 1. Bepaal waarvoor inhoudswegen of `sling:resourceType` s de Universele Redacteur zullen worden geopend.
 
    * Op het **Universele gebied van de Toewijzing van de Redacteur die** opent, verstrek de wegen waarvoor de Universele Redacteur wordt geopend.
-   * In **Sling:resourceTypes die door Universeel gebied van de Redacteur** zal worden geopend, verstrek een lijst van middelen die direct door de Universele Redacteur worden geopend.
+   * In het **Verdelen :resourceTypes dat door Universele gebied van de Redacteur** zal worden geopend, verstrek een lijst van middelen die direct door de Universele Redacteur worden geopend.
 
 1. Klik **sparen**.
 
@@ -148,10 +146,10 @@ Als u een bestaand project van AEM gebruikend [ de paginaredacteur ](/help/sites
 Zodra deze configuratiestappen volledig zijn, zal AEM de Universele Redacteur voor pagina&#39;s in de volgende orde openen.
 
 1. AEM controleert de toewijzingen onder `Universal Editor Opening Mapping` en als de inhoud zich onder de aldaar gedefinieerde paden bevindt, wordt de Universal Editor geopend.
-1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
+1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald het Verdelen :resourceTypes aanpast die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
 1. Anders opent AEM de Pagina-editor.
 
-De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1&rbrace; gebied van de Afbeelding te bepalen.**
+De volgende variabelen zijn beschikbaar om uw afbeeldingen op het **Universele het Openen van de Redacteur 1} gebied van de Afbeelding te bepalen.**
 
 * `path`: Inhoudspad van de bron die moet worden geopend
 * `localhost`: ExternalAlizer-item voor `localhost` zonder schema, bijvoorbeeld `localhost:4502`
