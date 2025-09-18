@@ -4,9 +4,9 @@ description: Aangepaste componenten maken voor een EDS-formulier
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Nu het formulier de aangepaste component bevat, kunt u het formulier als proxy i
 
 Laat een klasse **kaart** aan de component voor het stileren toevoegen en een beeld voor elke radio toevoegen, gebruik de hieronder code voor dit.
 
-**Stijl de Component van de Douane die functie in cards.js gebruikt**
+**Stijl de component gebruikend card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**voeg RuntimeGedrag voor de Component van de Douane in cards.css** toe
+**voeg Runtime Gedrag toe gebruikend cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ De oudere manier om dit te doen is de hieronder beschreven stappen manueel te vo
 
 10. **Update _component-definition.json**: In `models/_component-definition.json` werk de serie binnen de groep met `id custom-components` met een voorwerp op de volgende manier bij:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
+   Dit moet de verwijzing naar de nieuwe kaartcomponent verstrekken die met de rest van de componenten moet worden gebouwd
 
 11. **stel het bouwstijl :json manuscript** in werking: voer `npm run build:json` uit om alle componentenJSON definities in één enkel dossier te compileren en samen te voegen dat van de server moet worden gediend. Dit zorgt ervoor dat het schema van uw nieuwe component wordt opgenomen in de samengevoegde uitvoer.
 
@@ -587,7 +587,7 @@ Houd rekening met de onderstaande punten voordat u uw eigen aangepaste component
 
 ## Verwijzingen
 
-- form-field-types: Base HTML-structuren en -eigenschappen voor alle veldtypen. [ klik hier ](/help/edge/docs/forms/eds-form-field-properties) om gedetailleerde structuren en eigenschappen van vormgebied te bekijken.
+- [ vorm-gebied-types ](/help/edge/docs/forms/eds-form-field-properties.md): De structuren en de eigenschappen van HTML van de basis voor alle gebiedstypes.
 
 - **blokken/vorm/modellen/vorm-componenten**: OOTB en de definities van het douanecomponentenbezit.
 

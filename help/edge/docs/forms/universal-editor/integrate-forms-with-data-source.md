@@ -4,7 +4,7 @@ description: Leer formulieren te maken voor services voor randlevering op basis 
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 7d3ea5bdc6545b9610f595660fcfb2ef70c837de
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Als u niet het **pictogram van Gegevensbronnen** in uw Universele interface van 
 
 ![ Schermafbeelding van de Universele interface die van de Redacteur Extension Manager beschikbare uitbreidingen met inbegrip van de uitbreiding van Gegevensbronnen toont die voor vormintegratie ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png) kan worden toegelaten
 
-Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0&rbrace; Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Verwijs naar het [ artikel van de Hoogtepunten van de Eigenschap van 0} Extension Manager om te leren om uitbreidingen in de Universele Redacteur toe te laten en onbruikbaar te maken.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Uw formuliertype kiezen
 
