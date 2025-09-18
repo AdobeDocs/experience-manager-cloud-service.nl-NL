@@ -19,7 +19,7 @@ Voor volledige documentatie zie [ Beheer API van het Fragment van de Inhoud ](ht
 
 >[!NOTE]
 >
->Het bestaande gebruik van [ HTTP API van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) voor de Fragmenten van de Inhoud zou aan het nieuwe Beheer OpenAPI van het Fragment van de Inhoud moeten worden gemigreerd.
+>Het bestaande gebruik van [ HTTP API van Assets ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) voor de Fragmenten van de Inhoud zou aan het nieuwe Beheer OpenAPI van het Fragment van de Inhoud moeten worden gemigreerd.
 
 >[!NOTE]
 >
