@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,22 @@ Het [ eigenschappen paneel ](/help/sites-cloud/authoring/universal-editor/naviga
 ![ rijke tekst het uitgeven dialoog ](assets/rich-text-canvas.png)
 
 Tik of klik **annuleer** of **Gedaan** om de veranderingen, respectievelijk te verwerpen of te bewaren.
+
+#### Opmaakopties voor RTF-tekst {#formatting-options}
+
+Met de RTE-editor (RTE) van de Universal Editor kan de auteur de standaardopmaak voor tekst toepassen. Standaard zijn de volgende opties beschikbaar.
+
+* Alinea (h1, h2, h3, enz.)
+* Vet
+* Cursief
+* Onderstrepen
+* Superscript
+* Subscript
+* Lijst met opsommingstekens
+* Genummerde lijst
+* Koppeling
+
+De RTE kan worden gevormd om opties te verbergen of extra opties te tonen afhankelijk van auteurs&#39; behoeften. Gelieve te zien het document [ Vormend RTE voor de Universele Redacteur ](/help/implementing/universal-editor/configure-rte.md) voor meer informatie.
 
 ### Media bewerken {#edit-media}
 
@@ -178,7 +194,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ### Ongedaan maken en Opnieuw {#undo-redo}
 
@@ -256,7 +272,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 

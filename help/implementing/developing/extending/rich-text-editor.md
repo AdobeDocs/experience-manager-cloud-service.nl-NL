@@ -5,16 +5,17 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
+
 # De Rich Text Editor configureren {#configure-the-rich-text-editor}
 
-De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Zie hoe de auteurs [ RTE voor creatie ](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) webinhoud gebruiken.
+De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring voor tekstbewerking. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Zie hoe de auteurs [ RTE voor creatie ](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) webinhoud gebruiken.
 
 De concepten en de stappen van RTE die worden vereist om het te vormen zijn hieronder vermeld.
 
@@ -24,6 +25,10 @@ De concepten en de stappen van RTE die worden vereist om het te vormen zijn hier
 | [ Types van het uitgeven wijzen ](#editingmodes) | [ activeer stop-ins ](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [ plaats eigenschapeigenschappen ](#aboutplugins) |
 | [ Ongeveer stop-ins ](#aboutplugins) | [ vorm RTE toolbars ](#dialogfullscreen) | [ vorm de deegwijzen ](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
 
+>[!NOTE]
+>
+>De RTE die in dit document wordt beschreven, beschrijft de RTE die beschikbaar is in de Pagina-editor. Als u de moderne Universele Redacteur gebruikt, te zien gelieve het document [ Vormend RTE voor de Universele Redacteur ](/help/implementing/universal-editor/configure-rte.md) voor details.
+
 ## Begrijp de gebruikersinterface beschikbaar aan auteurs {#understand-rte-ui}
 
 De interface RTE biedt a [ ontvankelijk ontwerp ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) voor auteursmilieu aan. De interface is ontworpen voor gebruik op touch- en desktopapparaten.
@@ -32,7 +37,7 @@ De interface RTE biedt a [ ontvankelijk ontwerp ](/help/sites-cloud/authoring/pa
 
 *Cijfer: De rijke toolbar van de Redacteur van de Tekst met alle beschikbare toegelaten opties.*
 
-De werkbalk bevat de opties voor de WYSIWYG-ontwerpervaring. [!DNL Experience Manager] beheerders kunnen de opties vormen beschikbaar in de toolbar op de interface. In [!DNL Experience Manager] is standaard een uitgebreide set bewerkingsopties beschikbaar. Ontwikkelaars kunnen [!DNL Experience Manager] aanpassen om meer bewerkingsopties toe te voegen.
+De werkbalk bevat opties voor de WYSIWYG-ontwerpervaring. [!DNL Experience Manager] beheerders kunnen de opties vormen beschikbaar in de toolbar op de interface. In [!DNL Experience Manager] is standaard een uitgebreide set bewerkingsopties beschikbaar. Ontwikkelaars kunnen [!DNL Experience Manager] aanpassen om meer bewerkingsopties toe te voegen.
 
 ## Verschillende bewerkingsmodi {#editingmodes}
 
@@ -137,7 +142,7 @@ De [ wijze van RTE het uitgeven en de interface ](#editingmodes) die u voor uw a
 
 Configureer de volgende eigenschappen die van toepassing zijn in de bewerkingsmodus van dialoogvenster:
 
-* `useFixedInlineToolbar`: u kunt de werkbalk RTE laten vastzetten in plaats van zweven. Stel deze Booleaanse eigenschap in die op het RTE-knooppunt wordt gedefinieerd met sling:resourceType= `cq/gui/components/authoring/dialog/richtext` naar `True` . Wanneer deze eigenschap is ingesteld op `True` , wordt de RTF-bewerking gestart voor de gebeurtenis `foundation-contentloaded` . Om dit te voorkomen, stelt u de eigenschap `customStart` in op `True` en activeert u de gebeurtenis `rte-start` om RTE-bewerking te starten. Wanneer deze eigenschap `true` is, begint RTE niet bij het klikken en dit is het standaardgedrag.
+* `useFixedInlineToolbar`: u kunt de werkbalk RTE laten vastzetten in plaats van zweven. Stel deze Booleaanse eigenschap in die op het RTE-knooppunt wordt gedefinieerd met sling :resourceType= `cq/gui/components/authoring/dialog/richtext` to `True` . Wanneer deze eigenschap is ingesteld op `True` , wordt de RTF-bewerking gestart voor de gebeurtenis `foundation-contentloaded` . Om dit te voorkomen, stelt u de eigenschap `customStart` in op `True` en activeert u de gebeurtenis `rte-start` om RTE-bewerking te starten. Wanneer deze eigenschap `true` is, begint RTE niet bij het klikken en dit is het standaardgedrag.
 
 * `customStart`: stel deze Booleaanse eigenschap die op het RTE-knooppunt is gedefinieerd in op `True` om te bepalen wanneer RTE moet worden gestart door de gebeurtenis te activeren `rte-start` .
 
@@ -154,7 +159,7 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [ hoe te om de st
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-De [ de tekstcomponent van Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL#the-text-component-and-the-rich-text-editor) laat malplaatjeredacteurs om vele stop-ins te vormen RTE gebruikend het gebruikersinterface als inhoudsbeleid, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven. Voor meer informatie, zie [ paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) en de [ de ontwikkelaarsdocumentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=nl-NL) creëren.
+De [ de tekstcomponent van Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) laat malplaatjeredacteurs om vele stop-ins te vormen RTE gebruikend het gebruikersinterface als inhoudsbeleid, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven. Voor meer informatie, zie [ paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) en de [ de ontwikkelaarsdocumentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) creëren.
 
 >Ter referentie kunt u de standaardtekstcomponenten (geleverd als onderdeel van een standaardinstallatie) vinden op:
 >
@@ -228,7 +233,7 @@ De beschikbare opties in RTE stromen stroomafwaarts van de configuraties van het
 * Als de gebruikersinterfaceconfiguratie van RTE verwijderde of geen punt toelaat, kan het inhoudsbeleid niet het vormen.
 * Een auteur heeft toegang tot slechts dergelijke functionaliteit die door de gebruikersinterfaceconfiguraties en het inhoudsbeleid ter beschikking wordt gesteld.
 
-Als voorbeeld, kunt u de [ documentatie van de Component van de Kern van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL#the-text-component-and-the-rich-text-editor) zien.
+Als voorbeeld, kunt u de [ documentatie van de Component van de Kern van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) zien.
 
 ## Toewijzing aanpassen tussen werkbalkpictogrammen en -opdrachten {#iconstoolbar}
 
