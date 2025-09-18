@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en het maken van inhoud te versnellen, kunt u de functie Variaties genereren gebruiken die zijn geïntegreerd in de AEM-editors.
 
-Bij het genereren van variaties wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudvariaties te maken op basis van uw invoer. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1&rbrace; functionaliteit van de Experimentatie &lbrace;van ](https://www.aem.live/docs/experimentation) Edge Delivery Services [.](/help/edge/overview.md)
+Bij het genereren van variaties wordt gebruikgemaakt van generatieve kunstmatige intelligentie (AI) om inhoudvariaties te maken op basis van uw invoer. Na het creëren van variaties, kunt u de inhoud op uw website gebruiken, en ook hun succes meten gebruikend de [ 1} functionaliteit van de Experimentatie {van ](https://www.aem.live/docs/experimentation) Edge Delivery Services [.](/help/edge/overview.md)
 
 Dit helpt de snelheid van de inhoud te versnellen door binnen enkele minuten snel inhoud op het merk te maken. Hierdoor wordt de conversie met nieuwe kopieervarianten verbeterd.
 
@@ -80,7 +80,7 @@ Wanneer u Genereren-variaties opent die zijn geïntegreerd in een editor, ziet u
       * Toont de [ inhoud u ](#select-the-content) hebt geselecteerd.
       * Verstrekt steekproef **Suggesties** voor veranderingen.
       * Staat u toe om [ te beschrijven de veranderingen u ](#describe-the-changes-you-want) wilt.
-      * Staat u toe om [&#128279;](#generate-copy) nieuwe variaties te produceren.
+      * Staat u toe om [ ](#generate-copy) nieuwe variaties te produceren.
       * Geeft de gegenereerde variaties weer. <!--, together with their [brand score](#the-brand-score).-->
       * [ neem verdere acties op een variatie ](#take-further-action-on-a-variation).
       * [ Gebruik een geproduceerde variatie ](#use-a-generated-variation).
@@ -111,7 +111,7 @@ Werk een `.docx` -bestand bij met gegevens over de inhoudsopgave (10 MB of minde
 
 ### Kopie genereren {#generate-copy}
 
-Nadat u de veranderingen hebt beschreven u wilt, uitgezochte **&#x200B;**&#x200B;produceren om reacties van generatieve AI te zien.
+Nadat u de veranderingen hebt beschreven u wilt, uitgezochte **** produceren om reacties van generatieve AI te zien.
 
 ![ produceer Variaties - gebaseerd document produceert exemplaar ](assets/generate-variations-doc-based-generate-copy.png)
 
@@ -172,7 +172,7 @@ Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
 
   >[!NOTE]
   >
-  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+  >Zie [ Adobe Experience Manager: Cloud Service | Productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
 
 ## Toegang genereert variaties {#access-generate-variations}
 
@@ -328,9 +328,9 @@ Voor meer informatie kunt u ook lezen:
 
 * [ GenAI produceert Variaties op GitHub ](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [ de Experimentatie van Edge Delivery Services ](https://www.aem.live/docs/experimentation)
-* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai)
+* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai#aem)
+   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 * [ produceer Variaties die pagina op Experience Cloud ](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html) landen
 
