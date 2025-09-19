@@ -494,4 +494,4 @@ Gebruik de syntaxis `@fieldName` om te verwijzen naar bestaande velden in uw vra
 
 Voor uitvoerige beste praktijken en bevestigingsrichtlijnen, zie de [ Begonnen Gids van de Bouwer van de Ervaring van Forms ](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
-*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).*
+*Deze snelle bibliotheek wordt onophoudelijk bijgewerkt gebaseerd op gebruiker terugkoppelt en de nieuwe mogelijkheden van de Bouwer van de Ervaring van Forms. Voor de recentste eigenschappen en de voorbeelden, controleer de [ documentatie van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=nl-NL).*

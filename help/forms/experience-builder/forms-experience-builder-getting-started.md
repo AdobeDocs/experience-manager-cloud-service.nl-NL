@@ -75,7 +75,7 @@ Formulieren samenstellen met behulp van beschrijvingen van uw eigen taal.
 
 Bestaande documenten transformeren in interactieve digitale formulieren.
 
-Voordat u deze optie gebruikt, uploadt u uw PDF-bestand of een afbeelding van het formulier. De PDF kan een AcroForm- of een XFA-gebaseerd PDF-formulier zijn. Voor [ andere types van PDF forms ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), gebruik [ Voorbereiden de optie van de Vorm ](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat om hen in een AcroForm om te zetten
+Voordat u deze optie gebruikt, uploadt u uw PDF-bestand of een afbeelding van het formulier. De PDF kan een AcroForm- of een XFA-gebaseerd PDF-formulier zijn. Voor [ andere types van PDF forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), gebruik [ Voorbereiden de optie van de Vorm ](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat om hen in een AcroForm om te zetten
 
 **Wanneer te gebruiken:**
 
