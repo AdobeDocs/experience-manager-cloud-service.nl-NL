@@ -62,10 +62,10 @@ Formulieren samenstellen met behulp van beschrijvingen van uw eigen taal.
 **Voorbeeld:**
 
      creeer een klant terugkoppelt vorm met:
-     - de Rating van het Product (1-5 sterren) 
-     - het gebied van de Commentaar voor gedetailleerde terugkoppelt 
-     - de e-mail van de Klant (facultatief) 
-     - voorlegt aan e-mailbericht 
+     &#x200B;- de Rating van het Product (1-5 sterren) 
+     &#x200B;- het gebied van de Commentaar voor gedetailleerde terugkoppelt 
+     &#x200B;- de e-mail van de Klant (facultatief) 
+     &#x200B;- voorlegt aan e-mailbericht 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -133,7 +133,7 @@ Inclusief extra functionaliteit:
     
      toe - vraagType met opties: &quot;Algemene Vraag&quot;, &quot;Verzoek van de Steun&quot;, &quot;Onderzoek van de Verkoop&quot;, &quot;Partnerschap&quot;
     
-     - urgentLevel met opties (Laag, Medium, Hoog) 
+     &#x200B;- urgentLevel met opties (Laag, Medium, Hoog) 
 
 
 ![ toegevoegde een dropdown componenten gebruikend natuurlijke taalherinneringen in de bouwer van de vormervaring ](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +167,10 @@ Gebruik `@fieldName` om te verwijzen naar specifieke velden:
 
 Beschrijf wat u in duidelijk Engels wilt:
 
-     - voeg een sectie voor bedrijfsinformatie 
+     &#x200B;- voeg een sectie voor bedrijfsinformatie 
      toe - creeer een dropdown voor afdelingsselectie 
-     - omvat een dossier uploadt voor hervat 
-     - opstelling e-mailberichten wanneer de vorm wordt voorgelegd 
+     &#x200B;- omvat een dossier uploadt voor hervat 
+     &#x200B;- opstelling e-mailberichten wanneer de vorm wordt voorgelegd 
 
 ### Stapsgewijs opbouwen {#build-incrementally}
 
@@ -190,55 +190,55 @@ Begin eenvoudig en voeg geleidelijk complexiteit toe:
 **Basis contactvorm:**
 
      creeer een contactvorm met:
-     - Naam (vereist) 
-     - E-mail (vereist, bevestigd) 
-     - Onderwerp dropdown (Algemeen, Steun, Verkoop, Partnerschap) 
-     - Bericht (vereist, multi-lijn) 
-     - voorlegt knoop 
+     &#x200B;- Naam (vereist) 
+     &#x200B;- E-mail (vereist, bevestigd) 
+     &#x200B;- Onderwerp dropdown (Algemeen, Steun, Verkoop, Partnerschap) 
+     &#x200B;- Bericht (vereist, multi-lijn) 
+     &#x200B;- voorlegt knoop 
 
 **Klantenfeedback vorm:**
 
      creeer een klant terugkoppelt vorm met:
-     - de Rating van het Product (1-5 sterren) 
-     - het gebied van de Commentaar voor gedetailleerde terugkoppelt 
-     - de e-mail van de Klant (facultatief) 
-     - voorlegt aan e-mailbericht 
+     &#x200B;- de Rating van het Product (1-5 sterren) 
+     &#x200B;- het gebied van de Commentaar voor gedetailleerde terugkoppelt 
+     &#x200B;- de e-mail van de Klant (facultatief) 
+     &#x200B;- voorlegt aan e-mailbericht 
 
 ### Registratie- en instapformulieren {#registration-onboarding-forms}
 
 **de registratie van de Gebruiker:**
 
      creeer een vorm van de gebruikersregistratie met:
-     - Persoonlijke informatie (naam, e-mail, telefoon) 
-     - de voorkeur van de Rekening (bulletin, berichten) 
-     - de Termijnen en voorwaardenaanvaarding 
-     - de verwezenlijking van het Wachtwoord met sterktebevestiging 
+     &#x200B;- Persoonlijke informatie (naam, e-mail, telefoon) 
+     &#x200B;- de voorkeur van de Rekening (bulletin, berichten) 
+     &#x200B;- de Termijnen en voorwaardenaanvaarding 
+     &#x200B;- de verwezenlijking van het Wachtwoord met sterktebevestiging 
 
 **Werknemer op het instappen:**
 
      creeer een werknemer op het instappen vorm met:
-     - Persoonlijke details en contactinformatie 
-     - de informatie van de Werkgelegenheid en begindatum 
-     - het Document uploadt (hervat, identiteitskaart, belastingvormen) 
-     - de selectie en voorkeur van Voordelen 
+     &#x200B;- Persoonlijke details en contactinformatie 
+     &#x200B;- de informatie van de Werkgelegenheid en begindatum 
+     &#x200B;- het Document uploadt (hervat, identiteitskaart, belastingvormen) 
+     &#x200B;- de selectie en voorkeur van Voordelen 
 
 ### Beoordeling- en beoordelingsformulieren {#survey-assessment-forms}
 
 **het Tevredenheidsonderzoek van de Klant:**
 
      creeer een onderzoek van de klantentevredenheid met:
-     - Algemene classificatie (1-10 schaal) 
-     - de ratings van de Categorie (product, de dienst, steun) 
-     - Open-eind koppelt secties 
-     - Demografische informatie (facultatief) 
+     &#x200B;- Algemene classificatie (1-10 schaal) 
+     &#x200B;- de ratings van de Categorie (product, de dienst, steun) 
+     &#x200B;- Open-eind koppelt secties 
+     &#x200B;- Demografische informatie (facultatief) 
 
 **beoordeling van Vaardigheden:**
 
      creeer een vorm van de vaardigheidsbeoordeling met:
-     - de categorieën van de Vaardigheid met bekwaamheidsniveaus 
-     - de duur van de Ervaring voor elke vaardigheid 
-     - Certificatie en opleidingsinformatie 
-     - Zelfbeoordeling en doelstellingen 
+     &#x200B;- de categorieën van de Vaardigheid met bekwaamheidsniveaus 
+     &#x200B;- de duur van de Ervaring voor elke vaardigheid 
+     &#x200B;- Certificatie en opleidingsinformatie 
+     &#x200B;- Zelfbeoordeling en doelstellingen 
 
 ## Testen en valideren {#testing-validation}
 

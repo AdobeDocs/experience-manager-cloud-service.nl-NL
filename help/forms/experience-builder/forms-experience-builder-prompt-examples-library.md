@@ -142,7 +142,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - de formaatbevestiging van het aantal van de telefoon 
      - de Leeftijd moet 18 zijn of ouder 
      - Alle vereiste documenten moeten worden geupload 
-     - de Algemene voorwaarden worden goedgekeurd 27}**Submit Acties:** 
+     - de Algemene voorwaarden worden goedgekeurd 27&rbrace;**Submit Acties:** 
     
      - verzend bevestigingsmail naar nieuwe werknemer 
      - de afdeling van u op de hoogte brengen 
@@ -224,6 +224,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      omvat een daling van Canadese provincies en gebieden 
      een gebied voor de districten van het VK en postgebieden 
  toe
+
 ### Gegevens voor bedrijven en de industrie
 
 **Classificaties van het Bedrijf:**
@@ -279,6 +280,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      voegt een gebied voor conferentiezaal het boeken met beschikbaarheid 
      tot een selectie voor terugkomende vergaderingspatronen 
  toe
+
 ### Product- en servicecategorieën
 
 **E-commerce Classificaties:**
@@ -328,7 +330,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - als @age minder dan 18 is:
      - toon de sectie van ouder/van de Bewaakzame informatie 
      - maak ouder handtekeningupload verplicht 
-     - vervang- Verzenden de Verandert de tekst aan &quot;Voorlegt knooptekst voor Overzicht&quot; 14} - als @age 65 of ouder is:
+     - vervang- Verzenden de Verandert de tekst aan &quot;Voorlegt knooptekst voor Overzicht&quot; 14&rbrace; - als @age 65 of ouder is:
      - toon senior kortingsopties 
      - voeg de sectie van toegankelijkheidsvoorkeuren toe 
     
@@ -373,7 +375,7 @@ In deze voorbeelden ziet u hoe u stapsgewijs formulieren maakt, eenvoudig begint
      - de gegevens van het Formaat zoals JSON met genestelde voorwerpen voor adres en werkgelegenheid 
      - de succesvolle reactie van de Handle (201) door te tonen dank bericht 
     
-     * Secundair Handelingen:** 
+     &#x200B;* Secundair Handelingen:** 
      - verzend bericht e-mail naar aanvrager op @email adres 
      - de toepassingsgegevens van het Exemplaar aan het volgen systeem 
      - de werkschema van de trekker voor goedkeuringsproces 

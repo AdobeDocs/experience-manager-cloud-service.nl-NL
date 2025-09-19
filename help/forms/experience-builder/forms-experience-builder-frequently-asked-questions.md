@@ -111,6 +111,7 @@ Validatie toevoegen met opdrachten voor natuurlijke talen:
      toevoegen de formaatbevestiging van het Amerikaanse telefoonaantal aan @phoneNumber 
      vastgestelde leeftijdsbevestiging: moet 18 of ouder voor @dateOfBirth 
  zijn
+
 ## Geavanceerde functies
 
 ### Wat zijn LLM-Verbeterde slimme gebieden?

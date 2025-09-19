@@ -75,7 +75,7 @@ U kunt de builder rechtstreeks starten terwijl u een specifiek formulier bewerkt
 Voor formulieren die via Edge Delivery Services worden geleverd, is de builder geïntegreerd in de Universal Editor.
 
 1. Open uw Edge Delivery Services-formulier in de Universal Editor.
-2. Selecteer het **pictogram van de Bouwer van de Ervaring van 0} Forms {in het juiste paneel om de gespreksinterface te lanceren.**
+2. Selecteer het **pictogram van de Bouwer van de Ervaring van 0&rbrace; Forms &lbrace;in het juiste paneel om de gespreksinterface te lanceren.**
 
 ### Uw eerste formulier
 
