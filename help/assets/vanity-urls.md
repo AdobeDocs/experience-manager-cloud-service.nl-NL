@@ -3,9 +3,9 @@ title: Vanity-URL's maken met Dynamic Media met OpenAPI-mogelijkheden
 description: Gebruik Dynamic Media OpenAPI-mogelijkheden om uw lange URL's voor middelenlevering te transformeren in korte, merkloze URL's. Een ijdelheids-URL is een korte, schone, eenvoudig te onthouden en leesbare versie van uw complexe bezorgings-URL. U kunt uw merknaam, productnamen en relevante trefwoorden opnemen in de vanzelf-URL om de zichtbaarheid van uw merk en de betrokkenheid van gebruikers te vergroten
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
+source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # URL&#39;s met vanity gebruiken{#vanity-urls}
 
-Gebruik [!DNL Dynamic Media OpenAPI capabilities] om uw lange URL&#39;s voor middelenlevering te converteren naar korte, merkloze URL&#39;s. URL&#39;s voor standaardlevering van middelen omvatten door het systeem gegenereerde UUID&#39;s van elementen die de URL van de levering complex maken, moeilijk te onthouden en te delen. Vervang deze UUID&#39;s met elementen door eenvoudige id&#39;s (Vanity ID&#39;s) om een vanity URL te genereren. Een ijdelings-URL is een korte, schone en leesbare versie van uw complexe bezorgings-URL.
+Gebruik [!DNL Dynamic Media with OpenAPI capabilities] om uw lange URL&#39;s voor middelenlevering te converteren naar korte, merkloze URL&#39;s. URL&#39;s voor standaardlevering van middelen omvatten door het systeem gegenereerde UUID&#39;s van elementen die de URL van de levering complex maken, moeilijk te onthouden en te delen. Vervang deze UUID&#39;s met elementen door eenvoudige id&#39;s (Vanity ID&#39;s) om een vanity URL te genereren. Een ijdelings-URL is een korte, schone en leesbare versie van uw complexe bezorgings-URL.
 
 Zie de volgende URL-indelingen om het verschil te begrijpen:
 * [Standaard-leverings-URL](#standard-urls)
@@ -21,7 +21,7 @@ Zie de volgende URL-indelingen om het verschil te begrijpen:
 
 Standaard levering-URL&#39;s gebruiken `aaid` gevolgd door een UUID, terwijl vanity-URL&#39;s `avid` gebruiken, gevolgd door een aangepaste id (vanity identifier).
 
-Gebruik korte en eenvoudige ijdeligheidsidentificatoren om uw bezorgings-URL kort, schoon, leesbaar, gemakkelijk te onthouden en te delen te maken. Gebruik uw merknaam, productnamen en relevante trefwoorden als ijdelings-id&#39;s om de zichtbaarheid van uw merk en de betrokkenheid van de gebruiker te vergroten.
+Gebruik korte en eenvoudige ijdelingsidentificatoren om uw ijdelheid-URL kort, schoon, leesbaar, gemakkelijk te onthouden en te delen. Gebruik uw merknaam, productnamen en relevante trefwoorden als ijdelings-id&#39;s om de zichtbaarheid van uw merk en de betrokkenheid van de gebruiker te vergroten.
 
 Wanneer de gebruiker op de URL van uw ijdelheid klikt, wordt [!DNL Dynamic Media with OpenAPI] automatisch toegewezen aan de oorspronkelijke elementlocatie op het moment van inname en worden deze op de juiste wijze omgezet op het moment van levering naar de server waarop het element wordt geplaatst.
 
@@ -130,11 +130,11 @@ Leer hoe te [ om Dynamische Media met OpenAPI levering URLs ](/help/assets/appro
 
 Wanneer de gebruiker op de URL van de ijdelheid klikt, wijst [!DNL Dynamic Media with OpenAPI] automatisch de ijdelheidsidentiteitskaart aan het originele element UUID toe in ingstijd en lost hen op behoorlijk op leveringstijd om het middel aan de gebruiker zonder enige vertraging te dienen. U kunt de vanity-URL in real-time aanpassen zonder dat dit van invloed is op de prestaties van de levering van elementen.
 
-[Verbeter de impact van uw ijdelings-URL&#39;s met behulp van de geavanceerde aanpassingsmogelijkheden van de AEM Cloud Service.](#scale-using-vanity-url)
+[ gebruik de geavanceerde aanpassingsmogelijkheden van de Dienst van de Wolk AEM met uw ijdelheid URL om zijn effect ](#scale-using-vanity-url) te verbeteren.
 
 ## Schalen met URL&#39;s met vanity{#scale-using-vanity-url}
 
-AEM as a Cloud Service laat u toe om [ de DNS en CDN namen ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) binnen uw Webadressen aan te passen. Gebruik deze mogelijkheden AEMCS met uw ijdelheid URLs om hen in unieke web-adressen om te zetten die schoon, beschrijvend, van branding voorzien, intuïtief zijn en [ bovengenoemde voordelen ](#key-benefits) verstrekken.
+AEM as a Cloud Service laat u toe om [ de DNS en CDN namen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) binnen uw Webadressen aan te passen. Gebruik deze mogelijkheden AEMCS met uw ijdelheid URLs om hen in unieke web-adressen om te zetten die schoon, beschrijvend, van branding voorzien, intuïtief zijn en [ bovengenoemde voordelen ](#key-benefits) verstrekken.
 
 Zie de volgende vanity URL en zijn klantgerichte componenten:
 
@@ -166,7 +166,7 @@ Zie de volgende vanity URL en zijn klantgerichte componenten:
 </tr>
 </table>
 
-{het formaat van 0} Vanity URL met aangepaste DNS en CDN namen:**&#x200B;**
+{het formaat van 0} Vanity URL met aangepaste DNS en CDN namen:****
 
 `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/as/<seoname>.<format>`
 
@@ -184,9 +184,9 @@ Zie de volgende vanity URL en zijn klantgerichte componenten:
 Voer de volgende stappen uit om de CDN-regels voor levering te herschrijven:
 
 1. Navigeer naar de AEM-opslagplaats om een YAML-configuratiebestand te maken.
-2. Voer de stappen in [ opstelling ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) sectie uit om CDN regels te vormen en de configuratie door uw de configuratiepijplijn van Cloud Manager op te stellen.
+2. Voer de stappen in [ opstelling ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) sectie uit om CDN regels te vormen en de configuratie door uw de configuratiepijplijn van Cloud Manager op te stellen.
 Volg deze [ beste praktijken ](#best-practices) voor het creëren van uw domeinweg.
-   [ Leer meer over CDN die regels ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) herschrijven.
+   [ Leer meer over CDN die regels ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) herschrijven.
 
 Hieronder volgen voorbeelden van herschrijfregels voor het toevoegen van bestandsnamen met extensies in vanity-URL&#39;s. Pas deze herschrijfregels aan volgens uw specifieke vereisten. [ de steun van Adobe van het Contact ](https://helpx.adobe.com/in/contact.html) voor verdere hulp:
 
@@ -233,9 +233,9 @@ type: transform
 
 ## Volg de aanbevolen procedures voor het maken van schone vanity-URL&#39;s{#best-practices}
 
-Volg deze beste praktijken voor het creëren van vanity IDs, douaneDNS en domeinnamen:
+Volg deze beste praktijken voor het creëren van [ vanity IDs ](#create-vanity-urls), [ douane DNS ](#customize-dns) en [ CDN namen ](#rewrite-cdn-rules):
 
 1. Gebruik geen speciale tekens in vanity-id&#39;s, zoals spaties, schuine strepen, afbreekstreepjes en meer. Het systeem vervangt speciale karakters in vanity IDs gebruikend een vooraf bepaalde afbeelding.
-1. Gebruik uw merknaam, productnamen en relevante trefwoorden in uw ijdelings-id&#39;s, aangepaste DNS- en domeinnamen om uw merkzichtbaarheid en betrokkenheid van gebruikers te vergroten.
+1. Gebruik uw merknaam, productnamen, en relevante sleutelwoorden in uw [ ijkdentiteitskaarts ](#create-vanity-urls), [ douane DNS ](#customize-dns) en [ namen CDN ](#rewrite-cdn-rules) om uw merkzichtbaarheid en gebruikersbetrokkenheid te verhogen.
 1. Gebruik korte, beschrijvende woorden of tekenreeksen die betekenis overbrengen.
 1. Gebruik teksten die gebruikers voor kliks uitnodigen.
