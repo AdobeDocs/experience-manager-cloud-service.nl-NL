@@ -166,7 +166,7 @@ Zie de volgende vanity URL en zijn klantgerichte componenten:
 </tr>
 </table>
 
-{het formaat van 0} Vanity URL met aangepaste DNS en CDN namen:****
+{het formaat van 0} Vanity URL met aangepaste DNS en CDN namen:**&#x200B;**
 
 `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/as/<seoname>.<format>`
 
