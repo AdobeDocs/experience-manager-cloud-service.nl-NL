@@ -4,7 +4,7 @@ description: Leer hoe Experience Manager as a Cloud Service werkt en wat de soft
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 40%
@@ -15,9 +15,9 @@ ht-degree: 40%
 
 [Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) is nu beschikbaar as a Cloud Service.
 
-Adobe Experience Manager (AEM) as a Cloud Service is het nieuwste aanbod van de AEM productlijn, waardoor u uw klanten kunt blijven voorzien van persoonlijke, contentgestuurde ervaringen. Het biedt cloudnative flexibiliteit om tijd aan waarde te versnellen en is uitbreidbaar om aan uw unieke bedrijfsvereisten te voldoen. U kunt op vroegere investeringen en innovaties voortbouwen door al uw gebruiksgevallen en functionaliteit te behouden en uit te breiden.
+Adobe Experience Manager (AEM) as a Cloud Service is het nieuwste aanbod van de AEM-productlijn, waarmee u uw klanten kunt blijven voorzien van persoonlijke, contentgestuurde ervaringen. Het biedt cloudnative flexibiliteit om tijd aan waarde te versnellen en is uitbreidbaar om aan uw unieke bedrijfsvereisten te voldoen. U kunt op vroegere investeringen en innovaties voortbouwen door al uw gebruiksgevallen en functionaliteit te behouden en uit te breiden.
 
-Met AEM as a Cloud Service kunt u in de eigen cloud gebruikmaken van de AEM toepassingen, zodat u:
+Met AEM as a Cloud Service kunt u in de eigen cloud gebruikmaken van AEM-toepassingen, zodat u:
 
 * Schaal uw DevOps-inspanningen met Cloud Manager: CI/CD-framework, autoscaling, API-connectiviteit, flexibele implementatiemodi, gates voor de kwaliteit van code, transparantie van de servicelevering en updates met instructies.
 
@@ -46,6 +46,7 @@ Met AEM as a Cloud Service
 * De Beroeps van de marketing kunnen snellere tijd-aan-waarde bereiken.
 
 >[!NOTE]
+>
 >Zie [Terminologie](terminology.md) voor een aantal nieuwe termen die met AEM as a Cloud Service zijn geïntroduceerd.
 
 ## Toegevoegde waarde as a Cloud Service {#value-added-as-a-cloud-service}
@@ -76,10 +77,10 @@ AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne clou
 * [Opvallende wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Opvallende wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introductie van Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=nl-NL)
+* [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
 >Zodra u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [ Onboarding Reis ](/help/journey-onboarding/overview.md) te herzien.
 >
->Hebt u al een functie voor het testen van AEM? Installeer de [ AEM toe:voegen-aan van de Demo van de Verwijzing ](/help/journey-sites/demos-add-on/overview.md) om AEM het gebruiken van rijke voorbeelden te onderzoeken krachtige eigenschappen.
+>Hebt u al een functie voor het testen van AEM-functies? Installeer de [ toe:voegen-aan van de Demos van de Verwijzing van AEM ](/help/journey-sites/demos-add-on/overview.md) om de krachtige eigenschappen van AEM te onderzoeken gebruikend rijke voorbeelden.
