@@ -34,7 +34,7 @@ Op dit moment kunt u op kenmerken gebaseerde toegangsbeheerregels niet zelf make
 
 Klik **Spreadsheet van de Download** om regels in een spreadsheet te downloaden en te bepalen. Maak een Adobe-ondersteuningsticket en verstrek de regels die in het spreadsheet zijn gedefinieerd aan Adobe.
 
-[!BADGE  Spreadsheet van de Download ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
+[!BADGE &#x200B; Spreadsheet van de Download &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Definieer regels in het werkblad aan de hand van de richtlijnen die in dit artikel zijn gedefinieerd.
