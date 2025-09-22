@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
+source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 0%
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -77,7 +77,7 @@ Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waar
 
 >[!NOTE]
 >
->Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+>Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -85,11 +85,11 @@ Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waar
 
 **de Component van de Invoer van de Datum &amp; van de Tijd**
 
-De component van A [ Datum &amp; van de Tijd ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) is nu beschikbaar, toelatend gebruikers om zowel datum als tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
+De component van A [ Datum &amp; van de Tijd ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) is nu beschikbaar, toelatend gebruikers om zowel datum als tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
 
 **Verbeterde die Fout voor Dossier uploadt**
 
-De [ component van de Bijlage van het Dossier ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
+De [ component van de Bijlage van het Dossier ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
 
 **gespecificeerde Reactie van de Fout voor Douane legt Actie** voor
 
@@ -125,11 +125,11 @@ U kunt [ Communicatie API van AEM Forms ](/help/forms/document-generation-afp-ap
 
 Het AEM Forms-programma voor vroege toegang biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan te helpen vormgeven.
 
-In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 **Krabbelende Component van de Handtekening**
 
-U kunt de [ Krabbelcomponent van de Ondertekening ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
+U kunt de [ Krabbelcomponent van de Ondertekening ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
 
 **Directe API Integratie in de Redacteur van de Regel**
 
@@ -149,7 +149,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+-->
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
@@ -161,8 +162,7 @@ De standaard client-side bibliotheek (clientlibs) JavaScript-compilatie richt zi
 
 Verschillende verouderde API&#39;s richten zich op verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. Begin september worden de kennisgevingen van het Actions Center verzonden als API-gebruik wordt gedetecteerd. Na 25 september verschijnen er berichten tijdens Cloud Manager-builds om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
 
-<details>
-  <summary>Uitvouwen om de afgekeurde Java API's weer te geven</summary>
++++ Uitvouwen om de afgekeurde Java API&#39;s weer te geven
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -181,7 +181,7 @@ Verschillende verouderde API&#39;s richten zich op verwijdering op 31 augustus e
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:
@@ -248,7 +248,7 @@ Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/develop
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -268,4 +268,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
