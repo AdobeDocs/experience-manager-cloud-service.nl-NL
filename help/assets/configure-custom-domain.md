@@ -1,26 +1,26 @@
 ---
-title: Een aangepast domein voor de publicatiereeks configureren
-description: Leer hoe u een aangepast domein configureert voor een publicatielaag in Adobe Cloud Manager.
+title: Een aangepast domein voor de leveringsreeks configureren
+description: Leer hoe u een aangepast domein voor de leveringslaag configureert in Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-# Een aangepast domein voor de publicatielijst configureren{#configure-custom-domain}
+# Een aangepast domein voor de leveringslaag configureren{#configure-custom-domain}
 
 In Adobe Cloud Manager kunt u uw website laten opvallen door een aangepast domein toe te voegen. Als AEM as a Cloud Service wordt geleverd met een standaarddomein, kunt u dit naar wens aanpassen.
 
 ## Voordat u begint
 
 * U moet beschikken over een multi-SAN (Subject Alternative Name) TLS- of SSL-certificaat.
-* Het SSL-certificaat moet verschillende SAN&#39;s hebben ten opzichte van het certificaat dat is toegewezen voor de publicatielaag in hetzelfde domein.
+* Het SSL-certificaat moet verschillende SAN&#39;s hebben ten opzichte van het certificaat dat is toegewezen voor de leveringslaag binnen hetzelfde domein.
 * Het certificaatbeleid moet of Uitgebreide Bevestiging (EV) of de Bevestiging van de Organisatie (OV), en niet het beleid van de Bevestiging van het Domein naleven (DV).
 
 
-## Een aangepast domein voor de publicatielijst configureren
+## Een aangepast domein voor de leveringslaag configureren
 
 1. Ga naar **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]** en voeg uw SSL-certificaat toe.
    ![ beeld ](/help/assets/assets/ssl-certificate.png)
