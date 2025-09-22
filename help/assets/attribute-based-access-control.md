@@ -3,7 +3,7 @@ title: Toegangsbeheer op basis van kenmerken
 description: Leer hoe te om op Attributen-gebaseerde toegangsbeheer toe te laten om op meta-gegevens-gebaseerde regels te bepalen om het niveau van toegang tot activa te bepalen beschikbaar in Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Op dit moment kunt u op kenmerken gebaseerde toegangsbeheerregels niet zelf make
 
 Klik **Spreadsheet van de Download** om regels in een spreadsheet te downloaden en te bepalen. Maak een Adobe-ondersteuningsticket en verstrek de regels die in het spreadsheet zijn gedefinieerd aan Adobe.
 
-[!BADGE &#x200B; Spreadsheet van de Download &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE  Spreadsheet van de Download ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Definieer regels in het werkblad aan de hand van de richtlijnen die in dit artikel zijn gedefinieerd.
