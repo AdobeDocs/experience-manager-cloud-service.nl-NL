@@ -1,11 +1,11 @@
 ---
 title: Content Hub - Overzicht
-description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
+description: Lees meer over Content Hub, de belangrijkste voordelen, hoe u er toegang toe krijgt en hoe u feedback kunt geven over de beschikbare opties in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
