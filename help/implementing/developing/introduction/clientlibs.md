@@ -4,9 +4,9 @@ description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientl
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2428'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Client-Side Libraries gebruiken op AEM as a Cloud Service {#using-client-side-libraries}
 
-Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Met AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [ front-end bouwt proces in het archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL), wordt het beheren van uw front-end code voor uw project van AEM eenvoudig.
+Digitale ervaringen zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Met AEM Client-Side Libraries (clientlibs) kunt u deze clientbibliotheken organiseren en centraal opslaan in de opslagplaats. Gekoppeld aan [ front-end bouwt proces in het archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), wordt het beheren van uw front-end code voor uw project van AEM eenvoudig.
 
 Tot de voordelen van het gebruik van clientlibs in AEM behoren:
 
@@ -27,7 +27,7 @@ Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript v
 
 >[!TIP]
 >
->De ontwikkelaars van het front-end die CSS en JavaScript voor de projecten van AEM creëren zouden zich met het [ Archetype van het Project van AEM en zijn geautomatiseerd front-end bouwstijlproces ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) ook moeten vertrouwd maken.
+>De ontwikkelaars van het front-end die CSS en JavaScript voor de projecten van AEM creëren zouden zich met het [ Archetype van het Project van AEM en zijn geautomatiseerd front-end bouwstijlproces ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) ook moeten vertrouwd maken.
 
 ## Wat zijn clientbibliotheken? {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale
 
 ## Front-end ontwikkeling voor AEM as a Cloud Service {#fed-for-aemaacs}
 
-Alle JavaScript, CSS, en andere front-end activa zouden in de {[ moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van AEM. ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
+Alle JavaScript, CSS, en andere front-end activa zouden in de {[ moeten worden gehandhaafd module 0} ui.frontend van het Archetype van het Project van AEM. ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
 
 Het archetype kan de bronnen vervolgens compileren in één CSS- en JS-bestand en deze automatisch insluiten in een `cq:clientLibraryFolder` in de opslagplaats.
 
@@ -92,7 +92,7 @@ De clientbibliotheken onder `/apps` zijn alleen toegankelijk als er een proxyser
 1. Als u statische bronnen moet beheren, maakt u een submap met de naam `resources` onder de clientbibliotheekmap.
    * Als u statische bronnen ergens anders opslaat dan in de map `resources` , kan er niet naar worden verwezen op een publicatie-instantie.
 1. Bronbestanden toevoegen aan de bibliotheekmap.
-   * Dit wordt typisch gedaan door front-end bouwt proces van het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL).
+   * Dit wordt typisch gedaan door front-end bouwt proces van het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * U kunt bronbestanden desgewenst in submappen ordenen.
 1. Selecteer de omslag van de cliëntbibliotheek en klik **creëren > dossier** creëren.
 1. Typ in het vak Bestandsnaam een van de volgende bestandsnamen en klik op OK:
@@ -127,7 +127,7 @@ Clientbibliotheken worden geladen via een door AEM verschafte helpersjabloon, di
 
 Elke hulpsjabloon verwacht een `categories` optie voor het verwijzen naar de gewenste clientbibliotheken. Deze optie kan ofwel een array van tekenreekswaarden zijn, ofwel een tekenreeks met een lijst met door komma&#39;s gescheiden waarden.
 
-[ zie de documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=nl-NL#loading-client-libraries) voor meer details bij het laden van clientlibs via HTML.
+[ zie de documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) voor meer details bij het laden van clientlibs via HTML.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -288,7 +288,7 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 
 >[!NOTE]
 >
->Standaard gebruikt AEM de GCC-compressor voor het miniaturen van JavaScript.
+>Standaard gebruikt AEM de GCC-compressor voor het miniaturen van Javascript en voor het transpileren van code naar `ECMASCRIPT_2018` .
 
 >[!CAUTION]
 >
@@ -300,7 +300,7 @@ U kunt kiezen om de configuratie van preprocessoren per clientbibliotheek of sys
 
 * De eigenschappen multivalue `cssProcessor` en `jsProcessor` toevoegen aan het clientbibliotheekknooppunt
 
-Het bepalen van de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek van 0&rbrace; HTML wordt niet gesteund.** Het zal slechts op de lokale SDK en niet op volledig-stapel pijpleiding executies van toepassing zijn.
+Het bepalen van de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek van 0} HTML wordt niet gesteund.** Het zal slechts op de lokale SDK en niet op volledig-stapel pijpleiding executies van toepassing zijn.
 
 #### Indeling en voorbeelden {#format-and-examples}
 
