@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
+source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '572'
 ht-degree: 3%
 
 ---
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![ Adobe Experience Cloud homepage ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. In de **Snelle toegang** groepering, klik [**Experience Manager** ](https://experience.adobe.com).
-1. De eerste keer u tot het toegang hebt, op **vertelt ons wat u** pagina wilt doen, klikt de optie u zodat Adobe uw ervaring kan maken.
+1. Bij eerste toegang, wijst het systeem u toe vooraf ingesteld de **Auteur van de Inhoud** (die dichtbij de hoger-juiste hoek van de pagina wordt gezien). Het bestuurt de widgets, navigatie-items en inhoud die u ziet.
 
-   U kunt deze voorkeur op elk ogenblik veranderen.
+   U kunt deze voorinstelling op elk gewenst moment wijzigen.
 
-   ![ vertelt ons wat u pagina ](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png) wilt doen
+   ![ de drop-down lijst die de vooraf ingestelde Schrijver toont van de Inhoud wordt geselecteerd ](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 De Adobe Experience Manager-pagina is vernieuwd met verbeterde navigatie- en interactieve widgets. De vorige inzameling van oplossingskaarten verstrekte toegang tot hulpmiddelen als het volgende:
 
@@ -67,7 +67,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-De **sectie van milieu&#39;s van de Authoring** &lbrace;maakt een lijst van alle milieu&#39;s van AEM die u tot toegang hebt en kortere weg aan hun oplossingen en pagina&#39;s kunt omvatten. U kunt specifieke omgevingen vastzetten om deze boven aan de lijst te houden.
+De **sectie van milieu&#39;s van de Authoring** {maakt een lijst van alle milieu&#39;s van AEM die u tot toegang hebt en kortere weg aan hun oplossingen en pagina&#39;s kunt omvatten. U kunt specifieke omgevingen vastzetten om deze boven aan de lijst te houden.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 
