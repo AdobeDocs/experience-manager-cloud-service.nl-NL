@@ -4,9 +4,9 @@ description: Leer een sjabloon te genereren voor een Document of Record (DoR) vo
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4081'
+source-wordcount: '4077'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
+> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten.
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
@@ -142,7 +142,7 @@ Wanneer het adaptieve formulier wordt verzonden, wordt nu een bijgewerkt documen
 
 Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan Document of Record voor Adaptive Forms.
 
-* Document van de malplaatjes van het Verslag steunt rijke teksten niet. Alle RTF-tekst in het statische adaptieve formulier of in de informatie die de gebruiker heeft ingevuld, wordt daarom als onbewerkte tekst weergegeven in het Document of Record.
+* **Verrijkte tekststeun**: Het document van het Verslag steunt de prijsverhogingstags van HTML in rijke tekstgebieden. Voor volledige details op gesteunde markeringen en toegankelijkheidsoverwegingen, zie [ Ondersteunde de prijsverhogingstags van HTML in Document van Verslag ](html-markup-tags-support-in-document-of-record.md).
 * Documentfragmenten in een adaptief formulier worden niet weergegeven in het Document of Record. Adaptieve formulierfragmenten worden echter wel ondersteund.
 * Inhoudbinding in Document of Record gegenereerd voor adaptief formulier op basis van een XML-schema wordt niet ondersteund.
 * De gelokaliseerde versie van Document van Verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het Document van Verslag verzoekt. De lokalisatie van Document of Record vindt plaats samen met de lokalisatie van het adaptieve formulier. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -405,9 +405,9 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
 ## Document met ondersteuning voor records in de Adaptive Form Editor {#dor-support-in-adaptiveform}
 
-U kunt de sjabloon [!UICONTROL Document of Record] rechtstreeks configureren vanuit de builder van het adaptieve formulier of de Adaptieve formuliersjabloon.
+U kunt de sjabloon [!UICONTROL Document of Record] rechtstreeks configureren vanuit de editor voor Adaptieve formulieren of de sjablooneditor voor Adaptieve formulieren.
 
-Voer de volgende stappen uit vanuit de auteur van de Adaptive Form builder:
+Voer de volgende stappen uit vanuit de auteur-instantie van de Adaptieve formuliereditor:
 
 1. Selecteer de component **[!UICONTROL Adaptive Form container (Root)]** .
 1. Klik ![ vormen pictogram van het Pictogram ](/help/forms/assets/configure-icon.svg) om **[!UICONTROL Properties]** van de Aangepaste container van de Vorm te openen.
