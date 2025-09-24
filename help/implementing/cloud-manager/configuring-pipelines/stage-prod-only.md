@@ -8,9 +8,10 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ### Een alleen-werkgebiedpijpleiding maken {#stage-only}
 
-1. In **voeg niet-Productie pijplijn** dialoogdoos, op het **lusje van de Configuratie** toe, uitgezocht **Pijplijn van de Plaatsing** gebied voor uw pijpleiding.
+1. In **voeg niet-Productie pijplijn** dialoogdoos, op het **3} lusje van de Configuratie toe, selecteer het** gebied van de Pijpleiding van de Plaatsing **voor uw pijpleiding.**
 1. Voer in het veld Naam niet-productiepijplijn een naam in voor vrije tekst.
 1. Selecteer de gewenste plaatsingsopties, dan klik **verdergaan**.
 
@@ -81,11 +82,11 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
    ![ het lusje van de Code van Source in Add niet-Productie de dialoogdoos van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. Op het **lusje van de Controle van de Ervaring**, is gespecificeerde Plaats URL publiceren URL die Cloud Manager voor paginakwaliteit controleert.
+1. Op het **lusje van de Controle van de Ervaring**, is de gespecificeerde Plaats URL gepubliceerde URL die Cloud Manager voor paginakwaliteit controleert.
 
-1. Op het **gebied van de Weg van de Pagina 0&rbrace; &lbrace;, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
+1. Op het **gebied van de Weg van de Pagina 0} {, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
 
-   De Experience Audit analyseert elk pad dat u toevoegt voor prestaties, toegankelijkheid, progressieve webapps, aanbevolen werkwijzen, SEO en andere kwaliteitscontroles. U kunt veelvoudige wegen toevoegen en om het even welk verwijderen door ![ Grootte 400 te klikken pictogram ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+   In de Experience Audit wordt elk pad geanalyseerd dat u toevoegt voor prestaties, toegankelijkheid, progressieve webapps, aanbevolen werkwijzen, SEO en andere kwaliteitscontroles. U kunt veelvoudige wegen toevoegen en om het even welk verwijderen door ![ Grootte 400 te klikken pictogram ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
    ![ het lusje van de Controle van de Ervaring in Add niet-Productie de dialoogdoos van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
@@ -94,13 +95,13 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ### Een pijplijn maken die alleen in de vorm van een proxy kan worden weergegeven {#prod-only}
 
-1. In **voeg slechts de dialoogdoos van de Pijpleiding van de Productie**, op het **de tekstgebied van de Naam van de Pijpleiding** toe, ga de vrije-tekstnaam van de pijpleiding in.
+1. In de dialoogdoos **voeg slechts de Pijpleiding van de Productie**, op het **de tekstgebied van de Naam van de Pijpleiding** toe, ga de vrije-tekstnaam van de pijpleiding in.
 1. Op het **gebied van de Naam van de Pijpleiding**, typ de naam u wilt.
 1. Onder **de Opties van de Plaatsing van de Productie**, uitgezochte **Pauze alvorens aan Productie** op te stellen.
 
    Met deze optie voegt u een handmatige goedkeuringspoort in vlak voor de productiefase. De pijpleiding houdt op en wacht op een fiatteur (zoals een Manager van de Plaatsing, of een BedrijfsEigenaar) om de productie goed te keuren of te annuleren opstellen.
 
-   Gebruik dit voor veranderingscontrole of laatste-minieme controles.
+   Wordt gebruikt voor wijzigingsbeheer of voor controles op het laatste moment.
 
 1. Klik **sparen** om de productie-enige pijpleiding met deze opties tot stand te brengen.
 
@@ -129,7 +130,7 @@ In de uitvoeringsdetails, a **bevorderen bouwt** knoop na de het testen stappen.
 
 ![ werkgebied-enige pijpleiding loopt ](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Wanneer u **klikt bevordert bouw**, als een stadium-enige pijpleiding bestaat, opent een doos van de bevestigingsdialoog om het te beginnen. Klik **Looppas**.
+Wanneer u **bevordert bouw** klikt, opent een dialoogdoos voor u om de looppas van de verwante productie-enige pijpleiding te bevestigen. Klik **Looppas** om het te beginnen.
 
 ![ bevordert bouw - de dialoogdoos van de Pijpleiding van de Looppas ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -140,8 +141,7 @@ Als er geen installatieprogramma is, wordt u gevraagd om er een te maken.
 
 ### Pijpleidingen met alleen profielen uitvoeren {#prod-only-run}
 
-Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0&rbrace; Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
+Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0} Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
 
 
 ![ details Artefact ](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
