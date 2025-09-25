@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 >
 >Vanaf hier kunt u navigeren om notities van eerdere versies, zoals 2023 of 2024, vrij te geven.
 >
->Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
+>Heb een blik bij [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.8.0) is 28 augustus 2025. De volgende release met functies (2025.9.0) is gepland voor 25 september 2025.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2025.9.0) is 25 september 2025. De volgende release met functies (2025.10.0) is gepland voor 30 oktober 2025.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -40,34 +40,23 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440926?quality=12&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Experience Hub {#experience-hub}
-
-[ Experience Hub ](/help/experience-hub.md) is uw gecentraliseerd uitgangspunt voor de toegang tot van alle mogelijkheden van AEM. Het is gepersonaliseerd op basis van uw gebruikersnaam en de licenties waarover u beschikt, zodat elke gebruiker zijn resultaten efficiënt kan uitvoeren.
-
-## AI Assistant in AEM {#AI-assistant}
-
-De [ AI Medewerker ](/help/implementing/cloud-manager/ai-assistant-in-aem.md) voor AEM biedt een gespreksinterface aan die wordt ontworpen om u onmiddellijke antwoorden aan uw product-verwante vragen van AEM te krijgen (*beschikbaar aan alle gebruikers*) en de verwezenlijking van het steunkaartje te automatiseren (*beschikbaar aan Admins van de Steun*). Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub, Cloud Manager en de gebruikersinterface van de auteur.
-
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
-### Nieuwe functies in Experience Manager Sites {#enhancements-sites}
+### Nieuwe functies in Experience Manager Sites Prerelease {#prerelease-sites}
 
-* In de Admin UI van de Fragmenten van de Inhoud kunt u nu de werkschemastatus voor inhoudsfragmenten, met gedetailleerde informatie over verleden en momenteel lopende werkschema&#39;s voor een geselecteerd fragment bekijken.
-* De prestaties voor het openen van inhoudsfragmenten in de nieuwe inhoudsfragmenteditor zijn in algemene scenario&#39;s met 25% verbeterd door fragmenten te openen via UUID in plaats van via pad.
-* Wanneer u inhoudsfragmenten kopieert met fragmenten waarnaar wordt verwezen, worden kopieën van de fragmenten waarnaar wordt verwezen nu opgeslagen op dezelfde locatie als de bovenliggende fragmentkopie.
-* U kunt nu een aangepaste werkruimte configureren in de mapinstellingen om de inhoudsfragmenten te exporteren naar de geconfigureerde werkruimte in Adobe Target.
+De Content Model Editor voor AEM Content Fragments is gemoderniseerd en uitgelijnd met andere React Spectrum-gebaseerde interfaces in AEM. De implementatie- en uitbreidingsmodellen van de gebruikersinterface zijn nu consistent met de Content Fragment Editor en de Universal Editor. De nieuwe Modelbewerker is nu standaard wanneer deze wordt geopend vanuit de nieuwe beheerinterface voor inhoudsmodellen. Als u een inhoudsmodel opent in de Touch-gebruikersinterface, wordt de Touch UI-editor geopend en kunt u de nieuwe editor uitproberen.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in Content Hub {#new-features-content-hub}
+### Nieuwe functies in de Assets-weergave {#new-features-assets-view}
 
-**BulkOnderzoek via de eigenschappen van de Filter**
+**Verbeterde Opmaak van de Tekst met Substrings in Dynamische Malplaatjes van Media**
 
-Content Hub maakt het nu sneller om de middelen te ontdekken die u nodig hebt. Met het nieuwe Onduidelijke vermogen van het Onderzoek, kunt u veelvoudige waarden voor om het even welk filterbezit-die door een scheidingsteken (bijvoorbeeld, veelvoudige SKU IDs) wordt gescheiden ingaan-en onmiddellijk alle passende activa terugwinnen gebruikend één enkel onderzoek.
+U kunt nu opmaak toepassen op subtekenreeksen binnen tekstlagen van de sjabloon Dynamische media. Een geselecteerd woord of een geselecteerde woordgroep wordt beschouwd als een aparte laag, zodat u het lettertype, de tekengrootte, de kleur en meer kunt aanpassen. De subtekenreekslaag wordt geparametriseerd zodat u het in real time kunt bijwerken gebruikend de levering URL van het malplaatje
 
 ### Nieuwe functies in dynamische media met OpenAPI-mogelijkheden {#new-features-dynamic-media-with-openapi}
 
@@ -77,7 +66,25 @@ Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waar
 
 >[!NOTE]
 >
->Deze functie is op 10 september beschikbaar als functie Beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+>Deze functie is beschikbaar als functie voor beperkte beschikbaarheid. U kunt [ tot stand brengen en een geval van de Steun van de Klant van Adobe voorleggen ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) om het voor uw plaatsing toe te laten.
+
+<!--
+
+### New Features in Content Hub {#new-features-content-hub}
+
+**Mark Collections as Favourites**
+
+You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
+
+**Pin collections for quick access**
+
+Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
+
+>[!NOTE]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+-->
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -85,11 +92,11 @@ Maak Vanity URL&#39;s voor levering van bedrijfsmiddelen in DM met OpenAPI, waar
 
 **de Component van de Invoer van de Datum &amp; van de Tijd**
 
-De component van A [ Datum &amp; van de Tijd ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) is nu beschikbaar, toelatend gebruikers om zowel datum als tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
+De component van A [ Datum &amp; van de Tijd ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) is nu beschikbaar, toelatend gebruikers om zowel datum als tijd te selecteren gebruikend een kalender en klokinterface, of door waarden in een gesteund formaat manueel in te gaan.
 
 **Verbeterde die Fout voor Dossier uploadt**
 
-De [ component van de Bijlage van het Dossier ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
+De [ component van de Bijlage van het Dossier ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) bevestigt nu automatisch het geuploade dossiertype tegen de lijst van gewenste personen. Als een gebruiker een bestand in een niet-ondersteunde indeling uploadt, wordt tijdens het verzenden een fout weergegeven. De component controleert ook de bestandsinhoud om het type te valideren, waardoor de algemene beveiliging van het formulier wordt verbeterd.
 
 **gespecificeerde Reactie van de Fout voor Douane legt Actie** voor
 
@@ -125,11 +132,11 @@ U kunt [ Communicatie API van AEM Forms ](/help/forms/document-generation-afp-ap
 
 Het AEM Forms-programma voor vroege toegang biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan te helpen vormgeven.
 
-In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie &lbrace;de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
+In deze releaseopmerkingen worden de innovaties vermeld die in de huidige release zijn geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms [.](/help/forms/early-access-ea-features.md)
 
 **Krabbelende Component van de Handtekening**
 
-U kunt de [ Krabbelcomponent van de Ondertekening ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
+U kunt de [ Krabbelcomponent van de Ondertekening ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) nu gebruiken om gebruikers te helpen hun handtekeningen aan een vorm, zoals in een overeenkomstenvorm toevoegen. Met de component kunnen gebruikers hun handtekening rechtstreeks in het formulier tekenen met een muis, pen of touchscreen.
 
 **Directe API Integratie in de Redacteur van de Regel**
 
@@ -154,13 +161,29 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### JavaScript Compilation Update {#javascript-compilation}
+### Nieuwe functies in releasebeheer {#new-features-release-management}
 
-De standaard client-side bibliotheek (clientlibs) JavaScript-compilatie richt zich nu op ECMASCRIPT_2018 in plaats van ECMASCRIPT5. Deze update kan in het verleden worden overschreven, maar maakt prestatieverbeteringen, moderne JavaScript-syntaxis en functies standaard mogelijk.
+**de Automatische Updates van het Onderhoud van de onderbreking**
+
+Go-live dagen, live gebeurtenissen, piekverkoop-deze momenten kunnen niet breken. [ onze nieuwe zelfbediening eigenschappen ](/help/implementing/deploying/quiet-hours-update-free-periods.md) stoppen automatische onderhoudsupdates wanneer het van belang is, zodat blijven uw teams geconcentreerd.
+
+* Quiet Hours: Blokkeer automatisch onderhoud tijdens ingestelde tijden elke dag. Ideaal voor arbeidsuren, nachtelijke ritten of ochtendcutovers.
+* Periode zonder update: automatisch onderhoud gedurende een volledige week blokkeren. Gebruik deze optie voor lanceringen, promoties of jaarlijkse vastlopen.
+
+>[!NOTE]
+>
+>Beschikbaar als Beperkte Beschikbaarheid eigenschap op 25 september.
+>>E-mail [ aemcs-update-free@adobe.com ](mailto:aemcs-update-free@adobe.com) om het op uw programma&#39;s te krijgen geactiveerd.
+
+### Nieuwe release van AEM Developer Tools voor Eclipse {#aem-develeper-tools-for-eclipse}
+
+Versie 1.4.0 van de AEM Developer Tools for Eclipse is uitgebracht. Deze versie voegt ondersteuning toe voor Eclipse IDE 2022-12 of hoger en is gevalideerd met de huidige versie (2025-09). Het gereedschap werkt nu met moderne versies van het AEM Project Archetype en bevat verbeteringen van de Sling IDE Tooling 1.3.0.
+
+Installeer van de [ Marketplace van de Verduistering ](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) en zie de [ pagina van de Hulpmiddelen van de Ontwikkelaar van AEM ](https://eclipse.adobe.com) voor meer details.
 
 ### Opkomende Java API-implementaties {#java-api-deprecation}
 
-Verschillende verouderde API&#39;s richten zich op verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. Begin september worden de kennisgevingen van het Actions Center verzonden als API-gebruik wordt gedetecteerd. Na 25 september verschijnen er berichten tijdens Cloud Manager-builds om het belang van het verwijderen van het gebruik te versterken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
+Verschillende vervangen API&#39;s zijn gemarkeerd voor verwijdering op 31 augustus en moeten daarom niet langer worden vermeld. U ontvangt meldingen van het Actions Center als verouderd API-gebruik in uw code wordt gedetecteerd. Na 13 november worden tijdens Cloud Manager builds berichten weergegeven om het belang van het verwijderen van het gebruik te benadrukken. Zie het [ afgekeuringsartikel ](/help/release-notes/deprecated-removed-features.md#aem-apis) voor volledige details, maar voor gemak, zijn deze APIs hieronder vermeld:
 
 +++ Uitvouwen om de afgekeurde Java API&#39;s weer te geven
 
@@ -194,17 +217,19 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-*Java 11 runtime* is nu afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan uitvoerigere **runtime Java 21**.
+*Java 11 runtime* wordt afgekeurd, en de meeste milieu&#39;s zijn reeds bevorderd aan hoog-prestaties **Java 21 runtime**.
 
-Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ runtime van Java 21 vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met specifieke volgende stappen moeten ontvangen. Gelieve te verzekeren alle vereiste updates tegen **1 Oktober, 2025** worden voltooid, zodat kan uw milieu zonder verstoring worden bevorderd.
+Als uw milieu niet wegens niet gesteunde gebiedsdelen (zie [ Java 21 runtime vereisten ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)) kon worden bevorderd, zou u een e-mail van Adobe met volgende stappen moeten ontvangen. Zoals daar beschreven, verbeterde Adobe uw **Dev** en **RDE** milieu&#39;s op **September 18, 2025** zodat kunt u uw plaats en processen bevestigen en om het even welke kwesties richten. De verbeteringen voor **Stadium** en **Productie** zullen op **14 oktober, 2025** te werk gaan.
 
-Opmerking: de runtimeversie staat los van de build-versie van uw code. We raden u aan om samen te werken met Java 21, maar Java 11-builds worden voorlopig nog wel ondersteund. In de toekomst wordt een afzonderlijke aankondiging voor het vervangen van Java 11-builds gedeeld.
+>[!NOTE]
+>
+>De runtimeversie staat los van de constructieversie van uw code. We raden u aan om samen te werken met Java 21, maar Java 11-builds zijn nog steeds geaccepteerd. In de toekomst wordt een afzonderlijke aankondiging voor het vervangen van Java 11-builds gedeeld.
 
 ### Handhaving van het configuratiebeleid van AEM Java Logs {#logconfig-policy}
 
 Zoals vermeld in de opmerkingen bij de release van april, moeten AEM Java-logboeken een standaardindeling gebruiken voor betrouwbare bewaking in alle klantomgevingen. Aangepaste logboekconfiguraties, zoals wijzigingen in de logbestandsindeling, uitvoerbestanden of standaardlogniveaus, worden niet meer ondersteund. De logbestanden moeten naar de standaardbestanden worden geleid en de standaardlogniveaus voor AEM-productcode moeten worden behouden. Zie volledige details in het [ Registreren artikel ](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Beginnend op **25th September**, zullen om het even welke niet gesteunde douanehet registreren met voeten treden worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
+Beginnend op **30th van Oktober**, zullen om het even welke niet gestaafde overrides van het douaneregistreren worden genegeerd. Op basis van onze analyse zullen de meeste klanten niet worden beïnvloed en heeft Adobe contact opgenomen met klanten van wie de huidige configuratie mogelijk wordt beïnvloed.
 
 Gelieve te herzien en bij te werken om het even welke stroomafwaartse processen die zich op het gedrag van het douaneregistreren baseren. Bijvoorbeeld:
 
@@ -217,7 +242,6 @@ Met Edge Computing kunt u JavaScript uitvoeren op de CDN-laag, waardoor de gegev
 
 Vaak voorkomende gevallen van gebruik zijn:
 
-* Gebruikers verifiëren met een identiteitsprovider voordat toegang tot inhoud wordt verleend
 * Inhoud aanpassen op basis van geolocatie, apparaattype of gebruikerskenmerken
 * Handelend als middleware tussen CDN en uw oorsprong
 * Reacties van externe API&#39;s opnieuw opmaken (en wellicht meerdere API-reacties samenvoegen) voordat deze naar de browser worden verzonden
@@ -226,11 +250,22 @@ Vaak voorkomende gevallen van gebruik zijn:
 
 We hebben een beperkt aantal mogelijkheden voor AEM Publish Delivery- of Edge Delivery Services-projecten voor live productiesites. Als u in het deelnemen geinteresseerd bent of meer wilt leren, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval te e-mailen.
 
-### CDN-configuratie voor Edge Delivery Services (Beta-programma) {#cdn-eds-beta}
+### Edge-verificatie voor Edge Delivery Services (Beta-programma) {#edge-authentication}
 
-Adobe-Beheerde CDN biedt flexibele configuratieopties aan, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#configurations).
+Met Edge-verificatie kunt u de toegang tot Edge Delivery Services-pagina&#39;s beperken tot gebruikers die zijn geverifieerd bij uw identiteitsprovider (IdP). Dit wordt bereikt door het implementeren van een YAML-bestand met OpenID Connect-configuratie (OIDC).
 
-Nu in bèta, kunt u een config pijpleiding voor eigenschappen met inbegrip van CDN oorsprongselectors, reactie en verzoektransformaties, CDN logboek opstellen door:sturen en meer. Gelieve te bereiken uit aan [ aemcs-cdn-config-adopter@adobe.com ](mailto:aemcs-cdn-config-adopter@adobe.com) met de details van uw gebruiksgeval.
+Als geinteresseerd, gelieve [ aemcs-edgecompute-feedback@adobe.com ](mailto:aemcs-edgecompute-feedback@adobe.com) met een korte beschrijving van uw gebruiksgeval en om het even welke vragen te e-mailen u kunt hebben.
+
+Afzonderlijk van Edge Delivery Services, merk op dat vroeger dit jaar wij een eigenschap hebben vrijgegeven om Open identiteitskaart te vormen verbind [ voor de Dienst van de Wolk AEM publiceert rijprojecten ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) om de pagina&#39;s van AEM te beveiligen.
+
+<!--
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
 
 ### Momentopnamen voor RDE&#39;s (Alpha-programma) {#rde-snapshot-program}
 
@@ -246,9 +281,14 @@ Nu in bèta kunt u AEM-logs doorsturen naar Amazon S3, Sumo Logic, Dynatrace en 
 
 Leer meer in het [ logboek door:sturen documentatie ](/help/implementing/developing/introduction/log-forwarding.md).
 
+### Uitgebreide Application Performance Monitoring (APM) (Alpha-programma) {#apm-alpha}
+
+Voor waarneming, steunt de Dienst van de Wolk AEM momenteel Adobe-Geleverde [ New Relic One ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) en klant-geleide [ Dynatrace ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Aangezien wij steun voor extra opties van APM onderzoeken, gelieve ons in [ aemcs-apm-beta@adobe.com ](mailto:aemcs-apm-beta@adobe.com) met uw aangewezen verkoper of technologie, samen met gebruiksgevallen te e-mailen.
+
+
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
+U kunt een volledige lijst van nieuwe en verbeterde eigenschappen van de recentste versie van Adobe Experience Manager Guides [ hier ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -268,4 +308,4 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 
 ## Opmerkingen bij de release van Experience Cloud {#experience-cloud}
 
-U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/nl/docs/release-notes/experience-cloud/current) vinden.
+U kunt informatie over versies van andere toepassingen van Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
