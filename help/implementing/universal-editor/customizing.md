@@ -107,7 +107,7 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jso
 
 ![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB  de Toestand van 0} Waar {]
+>[!TAB  de Toestand van 0&rbrace; Waar &lbrace;]
 
 ![ Getoonde tekstgebied ](assets/shown.png)
 
