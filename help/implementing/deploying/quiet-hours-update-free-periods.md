@@ -26,7 +26,7 @@ U kunt deze tijdkaders vormen door twee het plannen opties te gebruiken:
 
 De functies voor vrije perioden en stille uren voor updates zijn geconfigureerd op basis van &quot;per programma&quot;.
 
-Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [ Uitgeven Roadmap van Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
+Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [ Uitgeven Roadmap van Experience Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
 
 ## Stil uur {#quiet-hours}
 
