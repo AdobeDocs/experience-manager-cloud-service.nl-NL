@@ -23,7 +23,7 @@ Dit zijn de opmerkingen bij de release van 25 september 2025 van de Universal Ed
 ## Wat is er nieuw? {#what-is-new}
 
 * [ de exemplaar en deegeigenschap ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) kunnen nu [ worden onbruikbaar gemaakt gebruikend een metatag.](/help/implementing/universal-editor/customizing.md#copy-paste)
-* [ wanneer het gebruiken van de Universele Redacteur in de ontvangen milieu&#39;s van AEM (AMS), ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) de Universele Redacteur zal nu de op AEM-Gegenereerde universele-redacteur-dienst gebruiken en zal niet meer op een lokale installatie van AMS vertrouwen, die ervoor zorgt dat u altijd de recentste Universele dienst van de Redacteur automatisch hebt.
+* [ wanneer het gebruiken van de Universele Redacteur in de ontvangen milieu&#39;s van AEM (AMS), ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) de Universele Redacteur zal nu de op AEM-Gegenereerde universele-redacteur-dienst gebruiken en zal niet meer op een lokale installatie van AMS vertrouwen, die ervoor zorgt dat u altijd de recentste Universele dienst van de Redacteur automatisch hebt.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
