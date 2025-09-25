@@ -4,9 +4,9 @@ description: Leer over de verschillende opties om de Universele Redacteur aan te
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,14 @@ Het is mogelijk dat bepaalde ontwerpwerkstromen de mogelijkheid van de auteur va
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
 ```
 
+## Kopiëren en plakken uitschakelen {#copy-paste}
+
+Het is mogelijk dat bepaalde ontwerpwerkstromen de mogelijkheid van de auteur van de inhoud om componenten te kopiëren en plakken moeten beperken. U kunt de [ exemplaar en deegpictogrammen ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) onbruikbaar maken door de volgende meta-gegevens toe te voegen.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
+```
+
 ## Het veranderen van Uw Eindpunt {#custom-endpoint}
 
 Als u de Universal Editor-service, die door Adobe wordt gehost, maar uw eigen gehoste versie niet wilt gebruiken, kunt u dit instellen in een metatag. Gelieve te zien het document [ Begonnen het worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md##configuration-settings) voor details.
@@ -99,7 +107,7 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic ](https://jso
 
 ![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB  de Toestand van 0&rbrace; Waar &lbrace;]
+>[!TAB  de Toestand van 0} Waar {]
 
 ![ Getoonde tekstgebied ](assets/shown.png)
 

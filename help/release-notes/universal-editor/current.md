@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release van Universal Editor 2025.09.18
-description: Dit zijn de releaseopmerkingen voor de release 2025.09.18 van de Universal Editor.
+title: Opmerkingen bij de release van Universal Editor 2025.09.25
+description: Dit zijn de releaseopmerkingen voor de release 2025.09.25 van de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release van Universal Editor 2025.09.18 {#release-notes}
+# Opmerkingen bij de release van Universal Editor 2025.09.25 {#release-notes}
 
-Dit zijn de opmerkingen bij de release van 18 september 2025 van de Universal Editor.
+Dit zijn de opmerkingen bij de release van 25 september 2025 van de Universal Editor.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Dit zijn de opmerkingen bij de release van 18 september 2025 van de Universal Ed
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [ universele-redacteur-service.adobe.io ](http://universal-editor-service.adobe.io/) wordt nu gebruikt als de diensteindpunt voor AMS in plaats van het moeten de dienst plaatselijk ontvangen.
-* Samengestelde meerdere velden worden nu ondersteund bij het gebruik van AEM-authoring.
+* [ de exemplaar en deegeigenschap ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) kunnen nu [ worden onbruikbaar gemaakt gebruikend een metatag.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [ wanneer het gebruiken van de Universele Redacteur in de ontvangen milieu&#39;s van AEM (AMS), ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) de Universele Redacteur zal nu de op AEM-Gegenereerde universele-redacteur-dienst gebruiken en zal niet meer op een lokale installatie van AMS vertrouwen, die ervoor zorgt dat u altijd de recentste Universele dienst van de Redacteur automatisch hebt.
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -39,5 +39,5 @@ Kopiëren en plakken is nu mogelijk op meerdere pagina&#39;s naast de pagina.
 
 ## Overige verbeteringen {#other-improvements}
 
-* Verschillende kleine prestatieverbeteringen zijn geïmplementeerd rondom de Universal Editor werken met AEM als back-end systeem.
-* Inhoudsfragmenten worden nu gepubliceerd met de API voor openen, waardoor de prestaties en consistentie worden verbeterd met de manier waarop de Content Fragment Editor en de console publiceren.
+* De eigenschappen van de spoorstaaf zijn gecorrigeerd wanneer deze wordt gebruikt met Document Authoring.
+* Een probleem met het bewerken van meerdere velden van een inhoudsfragment bij gebruik van MSM is opgelost.
