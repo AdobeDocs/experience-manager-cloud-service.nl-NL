@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2940'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Wanneer iemand een formulier verzendt op uw website die is gemaakt met AEM Adapt
 
 Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de omzettingspercentages van uw website verbeteren. Door loodgegevens automatisch naar Marketo te verzenden, kunt u ervoor zorgen dat gekwalificeerde leads snel worden ingevoerd in uw verpleegprogramma&#39;s.
 
-In wezen helpt AEM Forms naar Marketo Connector u de sterke punten van beide platforms te benutten om een efficiëntere en effectievere marketingtrechter te maken.
+AEM Forms to Marketo Connector helpt u in wezen de sterke punten van beide platforms te benutten om een efficiëntere en effectievere marketing-funnel te maken.
 
 Klaar om te beginnen? De volgende artikelen bevatten gedetailleerde instructies voor het gebruik van de innovatie.
 
@@ -117,6 +117,11 @@ Interactieve communicatie over Cloud is een krachtige oplossing voor het maken, 
 * **Flexibiliteit van het Formaat**: Output aan PDF, HTML, PCL, PostScript®, en formaten ZPL.
 
 * **Redacteur van de Regel**: Bouw dynamische, gegeven-gedreven acties direct binnen uw documenten gebruikend intuïtief, punt-en-klik interface. U kunt eenvoudig voorwaardelijke logica definiëren, workflows automatiseren en inhoud personaliseren zonder code te schrijven.
+
+* **Voorproef PDF:** Voorproef Interactieve Communicatie zonder gegevens, lokale JSON- dossiers, of gegevensmodellen voor flexibele, gegeven-gedreven het testen.
+* **de Doopvonten van de Douane:** bed douane of organisatie-goedgekeurde doopvonten in om verenigbare, van branding PDF die over apparaten teruggeeft te verzekeren.
+* **de Invoer en de Uitvoer:** migreer en hergebruik naadloos Interactieve Communicatie met hun fragmenten en gegevensmodellen over milieu&#39;s.
+
 
 #### Gevallen gebruiken:
 
@@ -161,7 +166,7 @@ Klaar om te beginnen? De [ Inleiding aan HTML5 vormen ](/help/forms/introduction
 
 Versnel uw AEM Forms Edge Delivery Services-ontwikkeling met de AEM Forms CLI-tool. Deze bevel-lijn interface laat u toe om de code en de bedrading onmiddellijk te produceren nodig om de ontwikkeling van de douanecomponent te kickstart—geen boilerplate, geen gedoe.
 
->[!VIDEO] (https://video.tv.adobe.com/v/3470514/aem-forms)
+>[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-aangepaste component generator-aem-forms cli-aem-forms aangepaste component-aem-forms ontwikkelingsgereedschap)
 
 **Zeer belangrijke mogelijkheden:**
 
@@ -238,7 +243,7 @@ AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te vo
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance API&#39;s
 
@@ -283,6 +288,10 @@ Het opslaan van PDF&#39;s in Azure Blob Storage maakt een gecentraliseerd beheer
 * **Verbeterde Veiligheid**: Door ingebouwde de veiligheidseigenschappen van Azure, zoals encryptie bij rust en op rol-gebaseerde toegangscontrole (RBAC) te leveraging, blijven de gevoelige documenten beschermd tijdens opslag.
 
 * **Aanpasbare Wegen van de Opslag**: De capaciteit om de wegen van de douanefolder te bepalen zorgt geproduceerde PDFs in georganiseerde en toepassing-specifieke plaatsen worden opgeslagen, verbeterend dossierbeheer.
+
+### Verbeteringen in de Visuele Redacteur van de Regel
+
+* De visuele Redacteur van de Regel in Aanpassings Forms steunt nu [ directe API integratie zonder een Model van de Gegevens van de Vorm te vereisen ](/help/forms/api-integration-in-rule-editor.md). U kunt verbinding maken met een API-eindpunt door de JSON-URL in te voeren of door de configuratie te importeren met een cURL-opdracht. Na integratie kan de API worden aangeroepen met de handeling `Invoke Service` .
 
 ## Zie ook
 

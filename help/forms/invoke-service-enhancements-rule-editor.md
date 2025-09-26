@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Roep de dienstverhogingen in VRE aan, bevolkend drop-down opties gebruikend de aanroepdienst, Reeks herhaalbaar paneel gebruikend output van de aanroepdienst, Reeks paneel gebruikend output van de aanroepdienst, de outputparameter van het Gebruik van de aanroepdienst om ander gebied te bevestigen.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ De visuele regelredacteur staat u toe om regels voor succes en mislukkingsmanage
 
 Als u een geluids- of fouthandler wilt toevoegen, klikt u respectievelijk op **[!UICONTROL Add Success Handler]** of **[!UICONTROL Add Failure Handler]** .
 
-Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTROL Invoke Service Success Handler]** regelredacteur, toestaand u om regels of logica te specificeren om de **te beheren aanhaalt de 3&rbrace; outputreactie van de Dienst &lbrace;wanneer de verrichting succesvol is.** U kunt zelfs regels opgeven zonder voorwaarden te definiëren. U kunt echter voorwaarden voor de succeshandler toevoegen door op de optie **[!UICONTROL Add Condition]** te klikken.
+Wanneer u **[!UICONTROL Add Success Handler]** klikt, verschijnt de **[!UICONTROL Invoke Service Success Handler]** regelredacteur, toestaand u om regels of logica te specificeren om de **te beheren aanhaalt de 3} outputreactie van de Dienst {wanneer de verrichting succesvol is.** U kunt zelfs regels opgeven zonder voorwaarden te definiëren. U kunt echter voorwaarden voor de succeshandler toevoegen door op de optie **[!UICONTROL Add Condition]** te klikken.
 
 ![ de manager van het de dienstsucces aanhalen ](/help/forms/assets/invoke-service-success-handler.png)
 
@@ -78,6 +78,7 @@ De lijst beschrijft hieronder een paar scenario&#39;s waarin de **Invoke Dienst*
 | **plaats herhaalbaar paneel gebruikend output van de Invoke Service** | Vormt een herhaalbaar paneel door gegevens van de Uitvoer van de Dienst van de Invoke te gebruiken, die voor dynamische panelen toestaan. [ klik hier ](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), om de implementatie te zien. |
 | **plaats paneel gebruikend output van de Dienst van de Invoke** | Hiermee stelt u de inhoud of zichtbaarheid van een deelvenster in met specifieke waarden uit de uitvoer Service aanroepen. [ klik hier ](#use-case-3-set-panel-using-output-of-invoke-service), om de implementatie te zien. |
 | **de outputparameter van het Gebruik van de Invoke Dienst om andere gebieden** te bevestigen | Hiermee gebruikt u specifieke uitvoerparameters van de Invoke-service om de formuliervelden te valideren. [ klik hier ](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), om de implementatie te zien. |
+| **de Payload van de Gebeurtenis van het Gebruik in Navigeer aan Actie in de Invoke Dienst** | Gebruikt de gebeurtenislading om succes en mislukkingsreacties te behandelen en gegevens over te gaan tot Navigeren aan actie tijdens navigatie. [ klik hier ](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) om de implementatie te zien. |
 
 Maak een `Get Information` -formulier waarmee waarden worden opgehaald op basis van de invoer die u hebt ingevoerd in het tekstvak `Pet ID` . In de onderstaande schermafbeelding ziet u het formulier dat in deze gevallen wordt gebruikt:
 
@@ -97,7 +98,7 @@ Voeg de volgende velden toe aan het formulier:
 
 >[!NOTE]
 >
-> In het **Bind 1&rbrace; gebied van de Verwijzing &lbrace;in de** dialoog van Eigenschappen **van de vormgebieden, uitgezochte** folder search_18 ![ en navigeer om het binaire bezit te selecteren u in het Model van de Gegevens van de Vorm (FDM) toevoegde.](assets/folder-search-icon.svg)
+> In het **Bind 1} gebied van de Verwijzing {in de** dialoog van Eigenschappen **van de vormgebieden, uitgezochte** folder search_18 ![ en navigeer om het binaire bezit te selecteren u in het Model van de Gegevens van de Vorm (FDM) toevoegde.](assets/folder-search-icon.svg)
 
 **het Vormen panelen**
 
@@ -142,7 +143,6 @@ Laat het volgende JSON posten gebruikend de [ addPet ](https://petstore.swagger.
         "status": "available"
     }
 ```
-
 
 De regels en de logica worden uitgevoerd gebruikend **roepen de actie van de Dienst** in de regelredacteur op `Pet ID` textbox om de vermelde gebruiksgevallen aan te tonen.
 
@@ -222,9 +222,38 @@ Ga `102` in het `Pet ID` tekstvakje in, en **voorleggen** knoop is verborgen.
 
 ![ Output ](/help/forms/assets/output4.png)
 
+### Hoofdlettergebruik 5: gebruik Event Payload in Navigeer naar de handeling in Invoke Service
+
+Dit gebruiksgeval toont aan hoe te om een regel op **te vormen voorlegt** knoop die **roept de Invoke Dienst** en richt dan de gebruiker aan een andere pagina opnieuw gebruikend **aan** actie navigeren.
+
+#### Implementatie
+
+Creeer een regel op **voorleggen** knoop om de `redirect-api` API dienst aan te halen. Deze dienst is verantwoordelijk voor het opnieuw richten van de gebruiker aan de **vorm van het Contact van ons**.
+
+U kunt een API rechtstreeks als de API-service `redirect-api` integreren in de Rule Editor met behulp van de JSON-gegevens die hieronder worden vermeld:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> U kunt ook [ API direct in de interface van de Redacteur van de Regel ](/help/forms/api-integration-in-rule-editor.md) integreren zonder een vooraf bepaald Model van de Gegevens van de Vorm te gebruiken.
+> Leren hoe te om API in de interface van de Redacteur van de Regel direct te integreren, [ klik hier ](/help/forms/api-integration-in-rule-editor.md) zonder een vooraf bepaald Model van de Gegevens van de Vorm te gebruiken.
+
+In **[!UICONTROL Add Success Handler]**, vorm **navigeer aan** actie om de gebruiker aan de **pagina van het Contact van het Contact** opnieuw te richten gebruikend de `Event Payload` parameter. Hier kan de gebruiker zijn contactgegevens verzenden.
+
+![ de Payload van de Gebeurtenis ](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Naar keuze, vorm een mislukkingsmanager om een foutenmelding te tonen als de de dienstvraag ontbreekt.
+
+#### Uitvoer
+
+Wanneer **voorlegt** knoop wordt geklikt, wordt de `redirect-api` API dienst aangehaald. Op succes, wordt de gebruiker opnieuw gericht aan de **pagina van het Contact van ons**.
+
+![ Uitvoer van de gebeurtenislading ](/help/forms/assets/output5.gif)
 
 ## Veelgestelde vragen
 

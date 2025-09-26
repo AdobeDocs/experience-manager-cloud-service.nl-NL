@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: 659351c76c53631834d20b032b6dff2a3b017ac4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2324'
 ht-degree: 0%
 
 ---
@@ -231,6 +231,12 @@ U kunt een gecombineerde regel schrijven om de zichtbaarheid van het veld Echtge
 
 +++
 
+### Ondersteuning voor functies en wiskundige expressies in invoerparameters
+
+Invoerparameters ondersteunen nu zowel functie-uitvoer, bijvoorbeeld concat, trim en join, als wiskundige expressies. Dankzij deze verbetering kunnen auteurs van formulieren dynamisch berekende waarden direct doorgeven, regelconfiguraties stroomlijnen, de behoefte aan extra velden verminderen en formulieren beter aanpassen aan complexe logische en op berekeningen gebaseerde scenario&#39;s.
+
+![ de vraag van de Functie en de Wiskundige steun van de Uitdrukking ](/help/forms/assets/mathematical-function-support.png)
+
 ### Verbroken regels verwerken
 
 Regels kunnen soms worden verbroken wanneer een veld waarnaar wordt verwezen, wordt verplaatst of verwijderd. Wanneer dit gebeurt, markeert de Redacteur van de Regel de beïnvloede regel met een rode stipindicator.
@@ -247,7 +253,7 @@ Regels kunnen soms worden verbroken wanneer een veld waarnaar wordt verwezen, wo
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -349,7 +355,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -487,7 +493,7 @@ Ga als volgt te werk om regels te kopiëren en te plakken:
 
 ## Volgende stap
 
-Om de diverse exploitanttypes en de gebeurtenissen in de regelredacteur van een Aanpassende Vorm te begrijpen, verwijs naar de [ Beschikbare Types en Gebeurtenissen van Exploitant in de Redacteur van de Regel van een Aangepast 1&rbrace; artikel van de Vorm.](/help/forms/rule-editor-core-components-events-operators.md)
+Om de diverse exploitanttypes en de gebeurtenissen in de regelredacteur van een Aanpassende Vorm te begrijpen, verwijs naar de [ Beschikbare Types en Gebeurtenissen van Exploitant in de Redacteur van de Regel van een Aangepast 1} artikel van de Vorm.](/help/forms/rule-editor-core-components-events-operators.md)
 
 
 ## Zie ook

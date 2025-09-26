@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: De werkschema's van AEM van het gebruik, het gebruiken van taakstappen, zet in stap PDF/A om, produceer document van geregistreerde stap, gebruikwerkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '6721'
+source-wordcount: '6760'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
+| AEM 6.5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse stappen van het Werkschema van AEM in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=nl-NL#extending-aem) te bereiken.
+U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse stappen van het Werkschema van AEM in een model omvatten om de bedrijfslogica ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) te bereiken.
 
 ## Forms-centric stappen {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
     -->
 
 * **[!UICONTROL Assignee]** > **[!UICONTROL Assign options]** : geef de methode op die u aan een gebruiker wilt toewijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM-gebruiker of -groep.
-* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ Creërend een stap van de Dynamische Deelnemer van de douaneAdobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ Creërend een stap van de Dynamische Deelnemer van de douaneAdobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participants]**: Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het veld **[!UICONTROL Participant Chooser]** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
@@ -189,7 +189,7 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 Met de stap E-mail kunt u bijvoorbeeld een e-mail verzenden met een document of record, een koppeling naar een adaptief formulier <!-- , link of an interactive communication--> of een bijgevoegd PDF-document. Verzend E-mailstap steunt [ e-mail van HTML ](https://en.wikipedia.org/wiki/HTML_email). HTML-e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. U kunt een HTML-e-mailsjabloon gebruiken om de weergave, het kleurenschema en het gedrag van de e-mail te definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=nl-NL#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [ contacteer het steunteam ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens toe te laten om e-mail te verzenden en protocol SMTP voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
 
 De e-mailstap heeft de volgende eigenschappen:
 
@@ -362,7 +362,12 @@ De stap FDM (Invoke Form Data Model)-service bevat de onderstaande velden om FDM
 
    * **[!UICONTROL Relative to Payload]**: gebruik de optie om de bestandsbijlage op te halen die is opgeslagen op een pad dat relatief is ten opzichte van de laadbewerking. Selecteer de optie en geef de mapnaam op die de bestandsbijlage bevat of geef de naam van de bestandsbijlage op in het tekstvak.
 
-     Als de map Relatief aan Payload in de CRX-opslagplaats bijvoorbeeld een bestandsbijlage bevat op de locatie `attachment\attachment-folder` , geeft u `attachment\attachment-folder` in het tekstvak op nadat u de optie **[!UICONTROL Relative to Payload]** hebt geselecteerd.
+     >[!NOTE]
+     >
+     > De **aanroepende Model van de Gegevens van de Vorm** werkschemastap steunt werkschemagegevens voor Base64 gecodeerde gehechtheidsseries in [ de Lijst gebaseerde Modellen van de Gegevens van de Vorm ](/help/forms/connect-forms-to-sharepoint-list.md) en laat werkschema&#39;s overgaan, opslaan, en terugwinnen meta-gegevens zoals dossiernaam, MIME type, of douaneeigenschappen voor de gehechtheid.
+     > ![ de Bijlagen van de Lijst van SP ](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > De map Relatief aan Payload bevat een bestandsbijlage op de `attachment` -locatie. Geef `attachment` op in het tekstvak nadat u de optie **[!UICONTROL Relative to Payload]** hebt geselecteerd.
 
    * **[!UICONTROL JSON Dot Notation]**: gebruik de optie wanneer de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie JSON-puntnotatie is alleen beschikbaar als invoervelden toewijzen van de JSON-invoeroptie is geselecteerd.
    * **[!UICONTROL Map input fields from input JSON]**: geef het pad op van een JSON-bestand om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad, of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON of Form Data Model (FDM).

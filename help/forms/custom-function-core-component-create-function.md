@@ -5,9 +5,9 @@ keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een doua
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,8 @@ Dit artikel begeleidt u door de stappen voor het maken van aangepaste functies v
    * Standaardparameters
    * Rustparameters
 
+* De nieuwste ECMAScript-functies zijn beschikbaar als Early Access (EA), terwijl ECMAScript 2019 in het algemeen beschikbaar is.
+
 ## Vereisten om een aangepaste functie te maken
 
 Voordat u een aangepaste functie toevoegt aan de Adaptive Forms, moet u het volgende doen:
@@ -42,7 +44,7 @@ Voordat u een aangepaste functie toevoegt aan de Adaptive Forms, moet u het volg
 
 ## Een aangepaste functie maken
 
-Creeer een cliëntbibliotheek om douanefuncties in de regelredacteur te roepen. Voor meer informatie, zie [ Gebruikend cliënt-Kant Bibliotheken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
+Creeer een cliëntbibliotheek om douanefuncties in de regelredacteur te roepen. Voor meer informatie, zie [ Gebruikend cliënt-Kant Bibliotheken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 Stappen voor het maken van aangepaste functies zijn:
 
@@ -55,7 +57,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 **Kloon de Bewaarplaats**
 
-Kloon uw [ Bewaarplaats van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#accessing-git):
+Kloon uw [ Bewaarplaats van AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Open de opdrachtregel of het terminalvenster.
 
@@ -144,12 +146,12 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
 
 1. Navigeer aan het `/ui.apps/src/main/content/META-INF/vault/filter.xml` dossier in uw [ AEMaaCS projectfolder ].
 
-1. Open het bestand en voeg de volgende regel aan het einde toe:
+2. Open het bestand en voeg de volgende regel aan het einde toe:
 
    `<filter root="/apps/experience-league" />`
-1. Sla het bestand op.
+3. Sla het bestand op.
 
-![ de filter xml van de douanefunctie &lbrace;](/help/forms/assets/custom-function-filterxml.png)
+![ de filter xml van de douanefunctie {](/help/forms/assets/custom-function-filterxml.png)
 
 **stel de pas gecreëerde de bibliotheekomslag van de Cliënt aan uw milieu van AEM** op
 
@@ -169,7 +171,7 @@ Stel AEM as a Cloud Service, [ AEMaaCS projectfolder ], aan uw milieu van Cloud 
 
    1. Trigger een plaatsing van uw code door de bestaande full-stack pijpleiding. Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd.
 
-Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=nl-NL#setup-pipeline).
+Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [ Aangepaste redacteur van de Regel van de Vorm ](/help/forms/rule-editor-core-components.md).
 
@@ -229,7 +231,7 @@ Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies wor
 
 >[!NOTE]
 >
-> U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/assets//customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/assets//customfunctions.zip) verwijzen. Download en installeer deze omslag in uw instantie van AEM gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Functies van Aangepaste functies
 

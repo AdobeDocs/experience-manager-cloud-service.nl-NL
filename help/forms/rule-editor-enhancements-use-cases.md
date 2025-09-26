@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verbeteringen in de regeleditor en hoofdletters/kleine letters gebruiken
 
-<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=nl-NL#new-features"> pre-vrijgavekanaal </a>. Deze verbeteringen zijn ook van toepassing op Edge Delivery Services Forms.
+<span class="preview"> Dit zijn pre-vrijlatingseigenschappen beschikbaar door ons <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features"> pre-vrijgavekanaal </a>. Deze verbeteringen zijn ook van toepassing op Edge Delivery Services Forms.
 
 Dit artikel introduceert de meest recente verbeteringen aan de regeleditor in Adaptive Forms. Deze updates zijn ontworpen om u te helpen formuliergedrag gemakkelijker te definiëren, zonder aangepaste code te schrijven, en om een dynamischere, responsieve en gepersonaliseerde formulierervaring te maken.
 
@@ -22,12 +22,12 @@ De onderstaande tabel bevat een overzicht van recente verbeteringen aan de regel
 
 | Verbetering | Beschrijving | Voordelen |
 |---|----|---|
-| **Bevestiging die de `validate()` methode** gebruikt | Beschikbaar in de functielijst om afzonderlijke velden, deelvensters of het hele formulier te valideren. | - Kortere validatie op deelvenster-, veld- of formulierniveau <br> - Betere gebruikerservaring met gericht foutbericht <br> - Voorkomt dat er vooruitgang wordt geboekt met onvolledige gegevens <br> - Vermindert de fout bij het verzenden van formulieren |
-| **Download DOR** | De functie uit-van-de-doos beschikbaar in de regelredacteur om het Document van Verslag (DoR) te downloaden. | - Geen aangepaste ontwikkeling vereist voor het downloaden van DoR <br> - Consistente downloadervaring in verschillende formulieren |
-| **Dynamische variabelen** | Maak regels met variabelen die worden gewijzigd op basis van gebruikersinvoer of andere voorwaarden. | - Maakt flexibele regelvoorwaarden mogelijk <br> - Minder behoefte aan dubbele logica <br> - elimineert de vereiste om verborgen velden te maken |
-| **Aangepaste op gebeurtenis-gebaseerde regels** | Definieer regels die reageren op aangepaste gebeurtenissen buiten de standaardtriggers. | - Biedt ondersteuning voor gevallen van geavanceerd gebruik <br> - Meer controle over wanneer en hoe regels worden uitgevoerd <br> - Verbetert de interactiviteit |
-| **context-bewuste herhaalbare paneeluitvoering** | Regels worden nu uitgevoerd in de juiste context voor elk herhaald deelvenster in plaats van alleen voor de laatste instantie. | - Nauwkeurige regeltoepassing voor elke herhalingsinstantie <br> - Vermindert fouten in dynamische secties <br> - Verbetert gebruikerservaring met herhaalde inhoud |
-| **Steun voor vraagkoord, UTM, en browser parameters** | Maak regels die het formuliergedrag aanpassen op basis van URL-parameters of browserspecifieke waarden. | - Schakelt personalisatie op basis van bron of omgeving in <br> - Geschikt voor marketing of tracking-specific flows <br> - Geen noodzaak voor extra scripts of aanpassing |
+| [ Bevestiging die gebruikt bevestigt () methode ](#validate-method-in-function-list) | Beschikbaar in de functielijst om afzonderlijke velden, deelvensters of het hele formulier te valideren. | - Kortere validatie op deelvenster-, veld- of formulierniveau <br> - Betere gebruikerservaring met gericht foutbericht <br> - Voorkomt dat er vooruitgang wordt geboekt met onvolledige gegevens <br> - Vermindert de fout bij het verzenden van formulieren |
+| [ Document van de Download van Verslag ](#download-document-of-record) | De functie uit-van-de-doos beschikbaar in de regelredacteur om het Document van Verslag (DoR) te downloaden. | - Geen aangepaste ontwikkeling vereist voor het downloaden van DoR <br> - Consistente downloadervaring in verschillende formulieren |
+| [ Dynamische variabelen ](#support-for-dynamic-variables-in-rules) | Maak regels met variabelen die worden gewijzigd op basis van gebruikersinvoer of andere voorwaarden. | - Maakt flexibele regelvoorwaarden mogelijk <br> - Minder behoefte aan dubbele logica <br> - elimineert de vereiste om verborgen velden te maken |
+| [ Aangepaste op gebeurtenis-gebaseerde regels ](#custom-event-based-rules-support) | Definieer regels die reageren op aangepaste gebeurtenissen buiten de standaardtriggers. | - Biedt ondersteuning voor gevallen van geavanceerd gebruik <br> - Meer controle over wanneer en hoe regels worden uitgevoerd <br> - Verbetert de interactiviteit |
+| [ context-bewuste herhaalbare paneeluitvoering ](#context-based-rule-execution-for-repeatable-panels) | Regels worden nu uitgevoerd in de juiste context voor elk herhaald deelvenster in plaats van alleen voor de laatste instantie. | - Nauwkeurige regeltoepassing voor elke herhalingsinstantie <br> - Vermindert fouten in dynamische secties <br> - Verbetert gebruikerservaring met herhaalde inhoud |
+| [ Steun voor vraagkoord, UTM, en browser parameters ](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Maak regels die het formuliergedrag aanpassen op basis van URL-parameters of browserspecifieke waarden. | - Schakelt personalisatie op basis van bron of omgeving in <br> - Geschikt voor marketing of tracking-specific flows <br> - Geen noodzaak voor extra scripts of aanpassing |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ In de bovengenoemde regel, controleert de **Volgende** knoop of de gebieden in d
 >
 >U kunt **gebruiken bevestigt ()** methode op vormen, fragmenten, of individuele gebieden. Wanneer een fragment in een formulier wordt opgenomen, worden zowel het formulier als het fragment als opties weergegeven in de validatiecontext. In dit geval verwijst het fragment naar de velden in het fragment, terwijl het formulier verwijst naar het bovenliggende formulier waarin het fragment is ingesloten.
 
-## DownloadDor als OOTB-functie in de Rule Editor
+## Document van record downloaden
 
 Gebruikend **DownloadDor ()** out-of-the-box (OOTB) functie in de Redacteur van de Regel, staat gebruiker toe om het Document van Verslag te downloaden, als de vorm wordt gevormd om Document van Recored te produceren.
 
@@ -124,7 +124,7 @@ Het **Totale gebied van de Kosten van de Verzending** werkt dynamisch bij om op 
 >[!NOTE]
 >
 > U kunt **ook toevoegen krijgt veranderlijke waarde** functie in wanneer voorwaarde.
-> &#x200B;> ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Hiermee wordt de functie Variabele-waarde opgehaald in Wanneer voorwaarde ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Deze aanpak maakt dynamische, real-time berekeningen mogelijk zonder extra velden aan het formulier toe te voegen, zodat de structuur schoon en gebruiksvriendelijk blijft.
 
@@ -145,7 +145,7 @@ Het aanmeldingsfragment wordt aan het formulier toegevoegd, dat vooraf gedefinie
 
 ![ krijgt OTP Regel ](/help/forms/assets/get-otp-rule.png)
 
-In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **&#x200B;**&#x200B;teweeggebracht met de gebeurtenislading die de API reactie bevatten.
+In het **Comité van de Bevestiging**, wordt een regel gevormd op Validate knoop. API integratie wordt gebruikt om OTP te bevestigen ingegaan op **ga OTP** gebied in. Als de bevestiging succesvol is, wordt a **genoemd** LoggedIn van de Gebeurtenis van de Verzending **** teweeggebracht met de gebeurtenislading die de API reactie bevatten.
 
 ![ In de regel van de trekkergebeurtenis ](/help/forms/assets/trigger-event-rule.png)
 
@@ -184,7 +184,7 @@ Adaptieve Forms ondersteunt dynamische regeluitvoering met behulp van externe pa
 | Type parameter | Ondersteunde opties | Beschrijving | Voorbeeldwaarde |
 | --- | --- | --- | ---|
 | Query-parameter | `ref` (alleen tekenreekswaarden) | Algemeen sleutelwaardepaar in URL na `?` | `?ref=partner123` |
-| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1&rbrace; UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
+| UTM-parameter | UTM Source <br> UTM Medium <br> de Campagne van UTM 1} UTM <br> Term van UTM <br> Inhoud UTM | Speciale queryparameters die worden gebruikt voor het bijhouden van campagnes | `?utm_source=google&utm_medium=email` |
 | URL-parameter | Hostnaam <br> Weg | Hiermee worden structurele componenten van de formulier-URL opgehaald | `hostname=www.example.com`, `path=/signup` |
 | Browserparameter | Browser van de Agent van de Agent <br> Browser Taal <br> Browser Platform | Waarden afgeleid van de browser of het apparaat van de gebruiker | `Browser Agent=Mozilla`, `Language=en-US` |
 
