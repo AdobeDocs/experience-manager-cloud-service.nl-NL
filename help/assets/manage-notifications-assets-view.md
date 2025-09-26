@@ -4,9 +4,9 @@ description: Met de Assets-weergavemeldingen kunt u de bewerkingen controleren d
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,8 @@ Abonneer u op de berichtcategorieën:
 
 ## Mappen, elementen of verzamelingen controleren en de controle ervan opheffen {#watch-unwatch-assets}
 
+U kunt mappen, elementen of verzamelingen bekijken en de controle er ongedaan maken om op de hoogte te blijven, zodat u beter kunt samenwerken rond de elementen die u controleert.
+
 Na [ het intekenen aan de berichtcategorieën ](#subscribe-to-notification-categories), moet u aan de inhoud intekenen beginnen berichten te ontvangen.
 
 >[!NOTE]
@@ -86,15 +88,49 @@ Na [ het intekenen aan de berichtcategorieën ](#subscribe-to-notification-categ
 >* Voor de berichtcategorieën **[!UICONTROL Requests]** en **[!UICONTROL Assigned to me]** hoeft u zich niet op de inhoud te abonneren nadat u zich hebt geabonneerd op de berichtcategorieën. Meldingen worden automatisch naar u verzonden voor aanvragen die u hebt gemaakt en wanneer een taak aan u is toegewezen.
 >* In de Assets-weergave worden alleen meldingen verzonden wanneer andere gebruikers handelingen op de geabonneerde inhoud uitvoeren. U ontvangt geen meldingen voor de acties die u uitvoert op de geabonneerde inhoud.
 
-Als u zich wilt abonneren op de inhoud, selecteert u de map, het element of de verzameling waarop u zich wilt abonneren en klikt u op **[!UICONTROL Watch]** .
+### Abonneren op de inhoud {#subscribe-to-content}
 
-In de Assets-weergave wordt een succesbericht weergegeven. U kunt **[!UICONTROL Go to notification preferences]** beschikbaar op het succesbericht klikken om uw [ abonnement aan berichtcategorieën ](#subscribe-to-notification-categories) uit te geven.
+Voer de volgende stappen uit om u te abonneren op mappen, elementen of verzamelingen:
 
-![ Meldingen in de mening van Assets ](assets/watch-assets.png)
+1. Blader naar de map, het element of de verzameling waarop u zich wilt abonneren en klik op **[!UICONTROL Watch]** .
 
-De Assets-weergave verzendt nu berichten voor de geabonneerde rubrieken. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** klikken om tijd te besparen. Als u echter meerdere entiteiten selecteert waarvan sommige al zijn geabonneerd, wordt de optie **[!UICONTROL Watch]** niet weergegeven.
+1. In de Assets-weergave wordt een succesbericht weergegeven. U kunt **[!UICONTROL Go to notification preferences]** in het succesbericht klikken om uw [ abonnement aan berichtcategorieën ](#subscribe-to-notification-categories) uit te geven.
 
-Als u een abonnement wilt opzeggen, selecteert u het element, de map of de verzameling waarvoor u een abonnement hebt genomen en klikt u op **[!UICONTROL Unwatch]** .
+   ![ Meldingen in de mening van Assets ](assets/watch-assets.png)
+
+De Assets-weergave verzendt nu berichten voor de geabonneerde rubrieken. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** klikken om tijd te besparen. Als u echter meerdere items selecteert en sommige al zijn geabonneerd, wordt de optie **[!UICONTROL Watch]** niet weergegeven.
+
+### Geabonneerde inhoud weergeven {#view-subscribed-content}
+
+Voer de volgende stappen uit om uw geabonneerde inhoud weer te geven:
+
+1. Navigeer naar **[!UICONTROL Watched Assets]** onder [!UICONTROL Asset Management] .
+
+1. In de Assets-weergave wordt een lijst met geabonneerde elementen weergegeven, inclusief hun naam, type en pad. Selecteer een activa, een omslag, of een inzameling van de lijst om zijn details, plaats te bekijken, of [ unsubscribe ](#unsubscribe-to-content).
+
+   ![ mening geabonneerde inhoud ](assets/view-watched-assets.png)
+
+### Inhoudsabonnees weergeven {#view-content-subscribers}
+
+Voer de volgende stappen uit om uw abonnees van inhoud weer te geven:
+
+1. Navigeer in de map, het element of de verzameling en selecteer **[!UICONTROL Details]** .
+
+1. Klik oog ![ oogpictogram ](assets/do-not-localize/eye-icon.png) van de juiste ruit om een lijst van horloges van de inhoud te zien.
+
+   Alternatief, klik {het pictogram van de Commentaar 0} ![ op de juiste ruit om inhoudsafwachters te zien.](assets/do-not-localize/comment-icon.svg)
+
+### Abonnement op de inhoud opzeggen {#unsubscribe-to-content}
+
+Abonnement opzeggen:
+
+1. Ga naar **[!UICONTROL Watched Assets]** onder [!UICONTROL Asset Management] .
+
+1. Selecteer het element, de map of de verzameling waarvan u het abonnement wilt opzeggen en klik op **[!UICONTROL Unwatch]** .
+
+   ![ unsubscribe inhoud ](assets/unsubscribe-assets.png)
+
+U kunt ook naar de map, het element of de verzameling bladeren onder [!UICONTROL Asset Management] . Selecteer de [ ingetekende activa ](#subscribe-to-content) en klik **[!UICONTROL Unwatch]**.
 
 ## Meldingen weergeven {#view-notifications}
 
