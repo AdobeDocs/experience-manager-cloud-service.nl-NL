@@ -151,7 +151,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 3. Sla het bestand op.
 
-![ de filter xml van de douanefunctie {](/help/forms/assets/custom-function-filterxml.png)
+![ de filter xml van de douanefunctie &lbrace;](/help/forms/assets/custom-function-filterxml.png)
 
 **stel de pas gecreëerde de bibliotheekomslag van de Cliënt aan uw milieu van AEM** op
 
