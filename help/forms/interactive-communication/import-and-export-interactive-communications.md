@@ -39,7 +39,7 @@ Creeer een Interactieve Communicatie (IC) in één milieu en gebruik het in een 
 
 +++&#x200B;1. Interactieve communicatie exporteren
 
-1.1. Selecteer a [ gecreeerd Interactieve Communicatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Selecteer a [ gecreeerd Interactieve Communicatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Klik de **optie van de Download** om het als dossier van het PIT uit te voeren.
 1.3. Het gedownloade dossier van het PIT omvat IC samen met zijn geselecteerde **malplaatje**, **fragmenten**, en **gegevensmodel**.
 
