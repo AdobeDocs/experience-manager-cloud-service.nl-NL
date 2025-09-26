@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Dynamic Media]  malplaatjes tot stand te bren
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 97be1d044ae23859e263756116c8bac8701178b4
+source-git-commit: d82d40ebb5417dfb7ce37c9995c5cadb74a2fe11
 workflow-type: tm+mt
-source-wordcount: '3604'
+source-wordcount: '3605'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
     </tr>
 </table>
 
-Maak aanpasbare sjablonen in real time voor uw banners en vliegers met gebruik van [!DNL Dynamic Media] sjablonen, een WYSIWYG-sjablooneditor. Publiceer de [!DNL Dynamic Media] -sjabloon en gebruik deze in downstreamtoepassingen. Een [!DNL Dynamic Media] -sjabloon bevat afbeeldings- en tekstlagen. Voeg parameters aan het beeld en tekstlagen van het malplaatje toe en gebruik [[!DNL Dynamic Media]  URLs ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) om de laag te verplaatsen en resize en zijn inhoud in real time bij te werken.
+Maak aanpasbare sjablonen in real time voor uw banners en vliegers met gebruik van [!DNL Dynamic Media] sjablonen, een WYSIWYG-sjablooneditor. Publiceer de [!DNL Dynamic Media] -sjabloon en gebruik deze in downstreamtoepassingen. Een [!DNL Dynamic Media] -sjabloon bevat afbeeldings- en tekstlagen. Voeg parameters aan het beeld en tekstlagen van het malplaatje toe en gebruik [[!DNL Dynamic Media]  URLs ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) om de laag te verplaatsen en resize en zijn inhoud in real time bij te werken.
 
 Enkele van de belangrijkste functies zijn:
 
@@ -83,10 +83,10 @@ Leer hoe u in deze video stap voor stap een [!DNL Dynamic Media] -sjabloon maakt
 Voer de volgende vereisten in om een [!DNL Dynamic Media] -sjabloon te maken en de URL voor levering te genereren:
 
 1. Toegang tot [!DNL Dynamic Media] .
-1. Op de startpagina van [!DNL Assets View] hebt u een map in **[!UICONTROL Dynamic Media Assets]** om uw sjabloon op te slaan. [ creeer een omslag ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;om die omslag in **[!UICONTROL Dynamic Media Assets]**&#x200B;te herhalen.
+1. Op de startpagina van [!DNL Assets View] hebt u een map in **[!UICONTROL Dynamic Media Assets]** om uw sjabloon op te slaan. [ creeer een omslag ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![ Assets ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**om die omslag in **[!UICONTROL Dynamic Media Assets]**te herhalen.
 1. [ Synchroniseer de beelden beschikbaar in uw  [!DNL AEM Assets]  instantie met  [!DNL Dynamic Media]  om hen te gebruiken voor het creëren van het malplaatje ](/help/assets/dynamic-media/config-dm.md).
 1. Publiceer de afbeeldingen die u wilt gebruiken bij het maken van de sjabloon om de URL van de levering van de sjabloon te genereren nadat u deze hebt gemaakt. De leverings-URL kan worden gebruikt in downstreamtoepassingen.
-1. Om een doopvont buiten het gebrek [!UICONTROL Adobe Sans F2] doopvont in de de tekstlaag van het malplaatje te gebruiken, [ upload en publiceer gelijktijdig het doopvontdossier aan AEM en Dynamische Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ook, verzeker om [&#128279;](/help/assets/reprocessing-assets-view.md) opnieuw te verwerken de bestaande doopvonten om hen te gebruiken. Zie [ Doopvonten ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/support-files/fonts) voor meer informatie.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Om een doopvont buiten het gebrek [!UICONTROL Adobe Sans F2] doopvont in de de tekstlaag van het malplaatje te gebruiken, [ upload en publiceer gelijktijdig het doopvontdossier aan AEM en Dynamische Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [ de gesteunde formaten van het doopvontdossier zijn, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ook, verzeker om [ ](/help/assets/reprocessing-assets-view.md) opnieuw te verwerken de bestaande doopvonten om hen te gebruiken. Zie [ Doopvonten ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) voor meer informatie.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. Controleer het volgende in de aanraakinterface:
    * Op het tabblad **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]** wordt **[!UICONTROL [!DNL Dynamic Media] sync mode]** dat is ingesteld op **[!UICONTROL Disabled by default]** , niet toegepast op alle AEM-mappen (**[!UICONTROL Sync all content]** is uitgeschakeld). Zie [ vormend Dynamische Media Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
    * **[!UICONTROL [!DNL Dynamic Media] sync mode]** wordt ingesteld op **[!UICONTROL Enable for subfolders]** voor de doelmap of -submap waarin u de sjabloon na het maken wilt opslaan. Zie [ het vormen  [!DNL Dynamic Media]  Cloud Service ](/help/assets/dynamic-media/config-dm.md) voor meer informatie.
@@ -96,9 +96,9 @@ Voer de volgende vereisten in om een [!DNL Dynamic Media] -sjabloon te maken en 
 Voer de volgende stappen uit om een [!DNL Dynamic Media] -sjabloon te maken:
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [Een leeg canvas maken](#create-a-canvas)
@@ -159,7 +159,7 @@ Klik ![ malplaatje om snel flyers ](/help/assets/assets/show-layers-list.svg) to
 
 Voer de volgende stappen uit om afbeeldingen aan het canvas toe te voegen:
 
-1. Klik ![ creeer een banner in geen tijd ](/help/assets/assets/add-image.svg) om het [ paneel van de Selecteur van Activa ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) te openen. In het deelvenster worden de afbeeldingen weergegeven die in uw AEM Assets-instantie zijn gesynchroniseerd met [!DNL Dynamic Media] .
+1. Klik ![ creeer een banner in geen tijd ](/help/assets/assets/add-image.svg) om het [ paneel van de Selecteur van Activa ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) te openen. In het deelvenster worden de afbeeldingen weergegeven die in uw AEM Assets-instantie zijn gesynchroniseerd met [!DNL Dynamic Media] .
 1. Blader in het deelvenster of gebruik trefwoorden in de zoekbalk om een specifieke afbeelding te zoeken.
 1. Sleep een afbeelding naar het canvas om deze te gebruiken. Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) voor het wijzigen van het formaat of het verplaatsen van een laag op het canvas.
    ![ creeer een banner binnen seconden ](/help/assets/assets/add-image-to-canvas.png)
@@ -177,14 +177,14 @@ Voer de volgende stappen uit om tekstlagen aan het canvas toe te voegen:
 
 Zie [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) om de laag te verplaatsen, te vergroten of te verkleinen, te roteren of te verwijderen. Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (in de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** van het deelvenster. In het veld **[!UICONTROL Font Family]** wordt het standaardlettertype van [!UICONTROL Adobe Sans F2] weergegeven, evenals de opnieuw verwerkte bestaande lettertypen en de nieuw geüploade en gepubliceerde lettertypen. Zie punt 5 in [ alvorens u ](#prerequisites-for-dynamic-media-wysiwyg-template) sectie hierboven voor meer informatie begint.
 
-[Pas opmaak toe op subtekenreeksen om specifieke delen van tekst afzonderlijk op te maken en te beheren.](#apply-formatting-to-substring)
+[ de specifieke delen van het Formaat van tekst ](#apply-formatting-to-substring) en [ bepalen hen om hen onafhankelijk te controleren ](#substring-parameterisation).
 
 #### Selectieve tekst opmaken{#apply-formatting-to-substring}
 
 Voer de volgende stappen uit om specifieke delen van een tekenreeks op te maken:
 
 1. Selecteer een of meer tekens in de tekenreeks die u wilt opmaken.
-1. Pas het formatteren op de selectie toe gebruikend het [ eigenschappen paneel ](#properties-panel). De volgende opmaakopties zijn van toepassing op subtekenreeksen en hun onderdelen:
+1. Formaat de selectie gebruikend het [ eigenschappen paneel ](#properties-panel). De volgende opmaakopties zijn van toepassing op subtekenreeksen en hun onderdelen:
    * **Stijl van de Doopvont**: Vet, cursief, onderstrepen, subscript, en superscript gebruikend de **[!UICONTROL Font Style]** optie.
    * **Eigenschappen van de Doopvont**: De doopvontfamilie van de verandering, kleur, en grootte gebruikend de respectieve paneelopties.
      ![ formaat-substring ](/help/assets/assets/format-substring.png)
@@ -233,7 +233,7 @@ Zie de volgende algemene handelingen voor het bewerken van lagen om tekst of een
 #### Opties voor tekstopmaak{#text-formatting-options-on-properties-panel}
 
 Maak de tekst op in het gewenste lettertype, de gewenste grootte, kleur, stijl, uitlijning (binnen de laag) door de waarden van de tekst te wijzigen in de desbetreffende velden onder de sectie **[!UICONTROL Text]** in het deelvenster.
-Zorg ervoor dat u **[!UICONTROL Smart Text Resize]** opneemt. [!UICONTROL Smart Text Resize] werkt op [ Copyfitting ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algoritme om tekst in het tekstgebied optimaal te vullen en tekstoverloop te verhinderen en extra ruimte bij de bodem van de tekst te minimaliseren.
+Zorg ervoor dat u **[!UICONTROL Smart Text Resize]** opneemt. [!UICONTROL Smart Text Resize] werkt op [ Copyfitting ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algoritme om tekst in het tekstgebied optimaal te vullen en tekstoverloop te verhinderen en extra ruimte bij de bodem van de tekst te minimaliseren.
 
 ![ inhoudsverwezenlijking in geen tijd ](/help/assets/assets/smart-text-resize.png)
 
@@ -285,11 +285,10 @@ Gebruik substring selecteur aan [ gespleten substrings ](#split-substring) om zi
 
 ###### Subtekenreeks splitsen{#split-substring}
 
-Als u een deel van een subtekenreeks wilt parameters toewijzen, trekt u deze uit om er een aparte subtekenreeks voor afzonderlijke selectie en parameterbepaling van te maken.
-Voer de volgende stappen uit om een subtekenreeks in afzonderlijke subtekenreeksen te splitsen:
+Als u een bepaald gedeelte van een subtekenreeks wilt parameteren, haalt u het onderdeel uit en maakt u het als een aparte subtekenreeks voor de afzonderlijke selectie en parameterbepaling. Voer de volgende stappen uit om een subtekenreeks in afzonderlijke subtekenreeksen te splitsen:
 
 1. Selecteer in de subtekenreeks-kiezer de tekens in een subtekenreeks om deze te scheiden.
-1. Klik ![ gespleten substring ](/help/assets/assets/unmerge.svg) om het uit te trekken en het een afzonderlijk substring binnen de **substring selecteur** te maken.
+1. Klik ![ gespleten substring ](/help/assets/assets/unmerge.svg) om de selectie uit te trekken en het een afzonderlijk substring binnen de **substring selecteur** te maken.
    ![ gespleten substring ](/help/assets/assets/split-a-substring.png)
 U kunt vereiste substring selecteren om [ zijn tekst, doopvontfamilie, doopvontgrootte, en kleur ](#text-formatting-parameters) te bepalen.
 
