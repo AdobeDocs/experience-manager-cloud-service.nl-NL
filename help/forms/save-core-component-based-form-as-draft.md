@@ -4,9 +4,9 @@ description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als 
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 8f1fa3a95f232f34ad6ae89c391e9e2272a2c072
+source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Formulieren opslaan als concepten en deze weergeven op de pagina Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, maar later moet pauzeren en terugsturen. AEM biedt een optie `save-as-draft` waarmee de gebruiker het formulier kan opslaan als concept dat later kan worden ingevuld. Om dit te vergemakkelijken, verstrekt AEM de **Concepten &amp; van de Verzending** de Poortcomponent van Forms uit de doos, die concepten en voorlegging op de pagina&#39;s van AEM Sites toont. De component bevat formulieren die zijn opgeslagen als concepten die later kunnen worden ingevuld, en formulieren die zijn verzonden. Alleen aangemelde gebruikers kunnen hun concepten bewerken of hun verzonden formulieren weergeven. Nochtans, als een anonieme gebruiker door de lijst van vormen navigeert gebruikend de **component van het Onderzoek &amp; van het Registreren** en een vorm als ontwerp opslaat, wordt dat ontwerp niet vermeld door de **Concepten &amp; van Submissies** component. Gebruikers moeten zich bij het verzenden van het formulier hebben aangemeld om concepten en verzendingen weer te geven.
 
@@ -128,7 +128,7 @@ U kunt Adaptive Forms op de volgende twee manieren configureren om deze als conc
 Om een vorm als Ontwerp te bewaren, creeer a **sparen de regel van de Vorm** op een vormcomponent, zoals een knoop. Wanneer op de knop wordt geklikt, wordt de regel geactiveerd en wordt het formulier opgeslagen als concept. Voer de volgende stappen uit om a **sparen de regel van de Vorm** op een knoopcomponent tot stand te brengen:
 
 1. Open een adaptief formulier in de bewerkingsmodus.
-1. Selecteer het **[!UICONTROL Edit Rules]** pictogram om de Redacteur van de Regel voor de **2&rbrace; component van de Knoop &lbrace;te openen.**
+1. Selecteer het **[!UICONTROL Edit Rules]** pictogram om de Redacteur van de Regel voor de **2} component van de Knoop {te openen.**
 1. Selecteer **[!UICONTROL Create]** om de regel voor knoop te vormen en tot stand te brengen.
 1. In de **[!UICONTROL When]** sectie, wordt de uitgezochte **geklikt** en in de **[!UICONTROL Then]** sectie, selecteert **sparen Vorm** optie.
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
@@ -171,7 +171,7 @@ U kunt de formulieren ook verwijderen door te klikken op de ellips (...) in de r
 
 >[!NOTE]
 >
-> In de lijst Verzending in het Forms Portal worden alleen formulierverzendingen weergegeven die zijn gebaseerd op basis van Stichting.
+> In het portaal van Forms, steunt de component Concepten &amp; Submissions slechts bijdragen van stichting-gebaseerde vormen.
 
 ## Volgende stappen
 
