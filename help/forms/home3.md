@@ -34,7 +34,7 @@ Kies de onderdelen die u nodig hebt, van eenvoudige formulierontwerpen tot compl
 **pre-Release Eigenschappen:**
 
 - **de Steun van het Formaat van AFP** - Onderneming-rang drukmogelijkheden met Communicatie APIs
-- **de Verbeteringen van de Redacteur van 0} Regel {de Moderne steun van JavaScript en dynamische variabelen**
+- **de Verbeteringen van de Redacteur van 0&rbrace; Regel &lbrace;de Moderne steun van JavaScript en dynamische variabelen**
 - **Verbeterde Methoden van de Bevestiging** - Comité, gebied, en vorm-vlakke bevestigingsverbeteringen
 
 [Volledige releaseopmerkingen weergeven →](/help/release-notes/release-notes-cloud/release-notes-current.md#forms)

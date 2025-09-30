@@ -38,7 +38,7 @@ Deze handleiding introduceert de kernmogelijkheden die rond de volledige levensc
 **pre-Release Eigenschappen:**
 
 - **de Steun van het Formaat van AFP** - Onderneming-rang drukmogelijkheden met Communicatie APIs
-- **de Verbeteringen van de Redacteur van 0} - de Moderne steun van JavaScript, dynamische variabelen, en context-bewuste paneelregels**
+- **de Verbeteringen van de Redacteur van 0&rbrace; - de Moderne steun van JavaScript, dynamische variabelen, en context-bewuste paneelregels**
 - **Verbeterde Methoden van de Bevestiging** - Comité, gebied, en vorm-vlakke bevestiging met betere flexibiliteit
 
 [Volledige releaseopmerkingen weergeven →](/help/release-notes/release-notes-cloud/release-notes-current.md#forms)
@@ -52,7 +52,7 @@ Profiteer van exclusieve toegang tot geavanceerde AEM Forms-innovaties voordat d
 - **de Medewerker van AEM Forms AI** - Generatieve AI voor geautomatiseerde vormverwezenlijking, paneelgeneratie, en optimaliseringsaanbevelingen
 - **Krabbelen Component van de Handtekening** - de directe handtekening vangt binnen vormen gebruikend muis, stift, of touchscreen
 - **Directe API Integratie** - verbind met APIs in de Redacteur van de Regel zonder de modelopstelling van de Gegevens van het Vorm te vereisen
-- **de Optimalisering van Forms van 0} {- AI-Verhoging van de prestatiesanalyse en van de omzettingssnelheid**
+- **de Optimalisering van Forms van 0&rbrace; &lbrace;- AI-Verhoging van de prestatiesanalyse en van de omzettingssnelheid**
 
 **sluit zich aan bij het Programma:**
 Wees een van de eersten om toegang te krijgen tot innovaties en de toekomst van AEM Forms te helpen vormgeven.
