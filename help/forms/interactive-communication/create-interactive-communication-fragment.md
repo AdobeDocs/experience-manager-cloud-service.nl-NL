@@ -4,12 +4,14 @@ description: Creeer Interactieve Communicatie Fragments in AEM Forms om modulair
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
 
 ---
+
 
 # Een interactief communicatiefragment maken
 
@@ -39,7 +41,7 @@ Voer de volgende stappen uit om een interactief communicatiefragment te maken:
 
 1. Als u Interactief communicatiefragment selecteert, verschijnt er een scherm waarin u de belangrijkste fragmentdetails definieert, zoals titel, naam, beschrijving, gegevensmodel (een gestructureerde weergave van de gegevens op de achtergrond) en tags.
 
-   Meer leren, verwijs naar de [ Gids van de Configuratie van het Model van Gegevens ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Meer leren, verwijs naar de [ Gids van de Configuratie van het Model van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![ vind IC Docu ](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -34,7 +34,7 @@ Kies de onderdelen die u nodig hebt, van eenvoudige formulierontwerpen tot compl
 **pre-Release Eigenschappen:**
 
 - **de Steun van het Formaat van AFP** - Onderneming-rang drukmogelijkheden met Communicatie APIs
-- **de Verbeteringen van de Redacteur van 0&rbrace; Regel &lbrace;de Moderne steun van JavaScript en dynamische variabelen**
+- **de Verbeteringen van de Redacteur van 0} Regel {de Moderne steun van JavaScript en dynamische variabelen**
 - **Verbeterde Methoden van de Bevestiging** - Comité, gebied, en vorm-vlakke bevestigingsverbeteringen
 
 [Volledige releaseopmerkingen weergeven →](/help/release-notes/release-notes-cloud/release-notes-current.md#forms)
@@ -102,7 +102,7 @@ Stel formulieren samen met de ontwerpaanpak die het beste aansluit bij uw behoef
 | **wat het doet:** Ontwerp gepersonaliseerde mededelingen die statische inhoud met dynamische gegevens voor druk en digitale kanalen combineren. |
 | **wanneer te gebruiken:** de verklaringen van de Klant, facturen, berichten, gepersonaliseerde mededelingen, document-zware werkschema&#39;s. |
 | 📄 Visueel documentontwerp 📄 Dynamische gegevensintegratie 📄 Multikanaaluitvoer 📄 Personalization |
-| [ worden begonnen met Interactieve Mededelingen → ](/help/forms/introduction-to-interactive-communication.md) |
+| [ worden begonnen met Interactieve Mededelingen → ](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 Gegevens en integratie {#data-integration}
 
@@ -304,7 +304,7 @@ Kies uw beginpunt op basis van uw directe behoeften en technische vereisten.
 
 **voor modernisering XFA:** Begin met [ HTML5 Forms ](/help/forms/introductionhtml5.md)
 
-**voor documentmededelingen:** Begin met [ Interactieve Mededelingen ](/help/forms/introduction-to-interactive-communication.md)
+**voor documentmededelingen:** Begin met [ Interactieve Mededelingen ](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Gegevensintegratie - snel aan de slag {#integration-start}
 

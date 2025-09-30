@@ -4,14 +4,15 @@ description: Ontwerp dynamische, gegevensgestuurde communicatie met eenvoudige i
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie
 
@@ -32,18 +33,18 @@ De kernmogelijkheden van de Interactieve Communicatie redacteur zijn:
 
 | Capaciteit | Beschrijving | Beschikbaarheid |
 |------------|-------------|--------------|
-| Gebruikersvriendelijk ontwerp | Intuïtieve punt-en-klikinterface die minimale technische kennis vereist | ✅ beschikbaar |
-| Gegevensintegratie | Verbinding maken met schema&#39;s, databases en webservices voor het genereren van dynamische inhoud | ✅ beschikbaar |
-| Rijke media | Tekst, afbeeldingen en interactieve elementen naadloos integreren | ✅ beschikbaar |
-| Versiebeheer | Wijzigingen bijhouden en de documenthistorie bijhouden | ✅ beschikbaar |
-| Sjabloonondersteuning | Geheel nieuw maken of sjablonen gebruiken om documenten efficiënt te maken | ✅ beschikbaar |
-| Cloud Integration | Documenten rechtstreeks bewerken in AEM Forms as a Cloud Service | ✅ beschikbaar |
-| Documentfragmenten | Modulaire inhoudsblokken in meerdere documenten hergebruiken voor consistentie en efficiëntie | ✅ beschikbaar |
-| Inline gegevensbinding | Gegevens rechtstreeks binden binnen inhoud voor realtime personalisatie zonder externe configuraties | ✅ beschikbaar |
-| Meerdere componenten | Diverse componenten gebruiken om complexe en aantrekkelijke documenten te maken | ✅ beschikbaar |
-| Multikanaal ontwerp | Uniforme ervaringen maken voor afdrukken en digitaal formaat met naleving van regelgeving | ?? Gedeeltelijk beschikbaar |
-| Dynamische inhoud | Genereer persoonlijke inhoud met bedrijfslogica en gegevensbinding | ?? Gedeeltelijk beschikbaar |
-| Flexibiliteit opmaken | Uitvoer naar de indelingen PDF, HTML, PCL, PostScript ®️ en ZPL | ?? Gedeeltelijk beschikbaar |
+| Gebruikersvriendelijk ontwerp | Intuïtieve punt-en-klikinterface die minimale technische kennis vereist | ✅ Beschikbaar |
+| Gegevensintegratie | Verbinding maken met schema&#39;s, databases en webservices voor het genereren van dynamische inhoud | ✅ Beschikbaar |
+| Rijke media | Tekst, afbeeldingen en interactieve elementen naadloos integreren | ✅ Beschikbaar |
+| Versiebeheer | Wijzigingen bijhouden en de documenthistorie bijhouden | ✅ Beschikbaar |
+| Sjabloonondersteuning | Geheel nieuw maken of sjablonen gebruiken om documenten efficiënt te maken | ✅ Beschikbaar |
+| Cloud Integration | Documenten rechtstreeks bewerken in AEM Forms as a Cloud Service | ✅ Beschikbaar |
+| Documentfragmenten | Modulaire inhoudsblokken in meerdere documenten hergebruiken voor consistentie en efficiëntie | ✅ Beschikbaar |
+| Inline gegevensbinding | Gegevens rechtstreeks binden binnen inhoud voor realtime personalisatie zonder externe configuraties | ✅ Beschikbaar |
+| Meerdere componenten | Diverse componenten gebruiken om complexe en aantrekkelijke documenten te maken | ✅ Beschikbaar |
+| Multikanaal ontwerp | Uniforme ervaringen maken voor afdrukken en digitaal formaat met naleving van regelgeving | 🌓 Gedeeltelijk beschikbaar |
+| Dynamische inhoud | Genereer persoonlijke inhoud met bedrijfslogica en gegevensbinding | 🌓 Gedeeltelijk beschikbaar |
+| Flexibiliteit opmaken | Uitvoer naar de indelingen PDF, HTML, PCL, PostScript ®️ en ZPL | 🌓 Gedeeltelijk beschikbaar |
 | Taalondersteuning | Communicaties in meerdere talen maken met ondersteuning voor aangepaste lettertypen | ⏳ Binnenkort beschikbaar |
 
 ## Onboarding

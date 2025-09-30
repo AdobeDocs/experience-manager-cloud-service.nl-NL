@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot AEM Forms as a Cloud Service {#introduction}
 
@@ -38,7 +38,7 @@ Deze handleiding introduceert de kernmogelijkheden die rond de volledige levensc
 **pre-Release Eigenschappen:**
 
 - **de Steun van het Formaat van AFP** - Onderneming-rang drukmogelijkheden met Communicatie APIs
-- **de Verbeteringen van de Redacteur van 0&rbrace; - de Moderne steun van JavaScript, dynamische variabelen, en context-bewuste paneelregels**
+- **de Verbeteringen van de Redacteur van 0} - de Moderne steun van JavaScript, dynamische variabelen, en context-bewuste paneelregels**
 - **Verbeterde Methoden van de Bevestiging** - Comité, gebied, en vorm-vlakke bevestiging met betere flexibiliteit
 
 [Volledige releaseopmerkingen weergeven →](/help/release-notes/release-notes-cloud/release-notes-current.md#forms)
@@ -52,7 +52,7 @@ Profiteer van exclusieve toegang tot geavanceerde AEM Forms-innovaties voordat d
 - **de Medewerker van AEM Forms AI** - Generatieve AI voor geautomatiseerde vormverwezenlijking, paneelgeneratie, en optimaliseringsaanbevelingen
 - **Krabbelen Component van de Handtekening** - de directe handtekening vangt binnen vormen gebruikend muis, stift, of touchscreen
 - **Directe API Integratie** - verbind met APIs in de Redacteur van de Regel zonder de modelopstelling van de Gegevens van het Vorm te vereisen
-- **de Optimalisering van Forms van 0&rbrace; &lbrace;- AI-Verhoging van de prestatiesanalyse en van de omzettingssnelheid**
+- **de Optimalisering van Forms van 0} {- AI-Verhoging van de prestatiesanalyse en van de omzettingssnelheid**
 
 **sluit zich aan bij het Programma:**
 Wees een van de eersten om toegang te krijgen tot innovaties en de toekomst van AEM Forms te helpen vormgeven.
@@ -95,7 +95,7 @@ Voer [ voorwaardelijke logica ](/help/forms/rule-editor-core-components.md), pro
 Render op XFA-Gebaseerde vormen als [ HTML5 vormen ](/help/forms/introductionhtml5.md) voor mobiele apparaten en erfenisbrowsers. HTML5 Forms biedt native mobiele ervaring zonder plug-ins, terwijl de formulierlogica en validatie van oorspronkelijke XDP-sjablonen behouden blijven.
 
 **Interactieve Mededelingen**
-U kunt documentafhankelijke communicatie maken met een visuele editor, zoals instructies, facturen en berichten. [ Interactieve Mededelingen ](/help/forms/introduction-to-interactive-communication.md) combineren statische inhoud met dynamische gegevens om gepersonaliseerde mededelingen over druk en digitale kanalen te produceren.
+U kunt documentafhankelijke communicatie maken met een visuele editor, zoals instructies, facturen en berichten. [ Interactieve Mededelingen ](/help/forms/interactive-communication/create-interactive-communication.md) combineren statische inhoud met dynamische gegevens om gepersonaliseerde mededelingen over druk en digitale kanalen te produceren.
 
 ### Besturen: controleren en naleven {#govern}
 
@@ -249,7 +249,7 @@ Voor complexe vereisten met betrekking tot meerdere systemen, het genereren van 
 **de Diensten &amp; Mededelingen van het Document:**
 
 1. **[voer Communicatie APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)** voor geautomatiseerde documentgeneratie uit
-2. **[creeer Interactieve Mededelingen](/help/forms/introduction-to-interactive-communication.md)** voor gepersonaliseerde verklaringen en berichten
+2. **[creeer Interactieve Mededelingen](/help/forms/interactive-communication/create-interactive-communication.md)** voor gepersonaliseerde verklaringen en berichten
 3. **[Poort van Forms van de opstelling](/help/forms/configure-forms-portal.md)** voor gecentraliseerd vormbeheer
 
 ### Implementatie voor bedrijven: schalen en beheren {#enterprise-deployment}
