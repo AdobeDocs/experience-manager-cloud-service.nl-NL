@@ -147,7 +147,7 @@ Maak de aangewezen server-aan-server API vraag van de niet-AEM toepassing aan ee
 
 ## Referenties vernieuwen {#refresh-credentials}
 
-Standaard verloopt de referentie op AEM as a Cloud Service na een jaar. Om de dienstcontinuïteit te verzekeren, hebben de ontwikkelaars de optie om de geloofsbrieven te verfrissen, die hun beschikbaarheid voor een extra jaar uitbreiden. Het gebruik **verfrist de Geloofsbrieven van de Dienst** van het **3} lusje van Integraties {in Developer Console, zoals hieronder getoond.**
+Standaard verloopt de referentie op AEM as a Cloud Service na een jaar. Om de dienstcontinuïteit te verzekeren, hebben de ontwikkelaars de optie om de geloofsbrieven te verfrissen, die hun beschikbaarheid voor een extra jaar uitbreiden. Het gebruik **verfrist de Geloofsbrieven van de Dienst** van het **3&rbrace; lusje van Integraties &lbrace;in Developer Console, zoals hieronder getoond.**
 
 ![ Referentie verfrist zich ](assets/credential-refresh.png)
 
