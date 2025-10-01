@@ -3,9 +3,9 @@ title: Toegangsbeheer op basis van kenmerken
 description: Leer hoe te om op Attributen-gebaseerde toegangsbeheer toe te laten om op meta-gegevens-gebaseerde regels te bepalen om het niveau van toegang tot activa te bepalen beschikbaar in Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -34,14 +34,18 @@ Op dit moment kunt u op kenmerken gebaseerde toegangsbeheerregels niet zelf make
 
 Klik **Spreadsheet van de Download** om regels in een spreadsheet te downloaden en te bepalen. Maak een Adobe-ondersteuningsticket en verstrek de regels die in het spreadsheet zijn gedefinieerd aan Adobe.
 
-[!BADGE &#x200B; Spreadsheet van de Download &#x200B;]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
+[!BADGE  Spreadsheet van de Download ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Definieer regels in het werkblad aan de hand van de richtlijnen die in dit artikel zijn gedefinieerd.
 
+<!--
+
 >[!IMPORTANT]
 >
-> Na het bepalen van de regels, navigeer aan het **lusje van de Fouten van de Bevestiging** van spreadsheet en klik **in werking gestelde ABAC Bevestigingen**. **Alle overgegaane bevestigingen** bericht bevestigt dat u de bepaalde regels aan Adobe kunt verstrekken.
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## Voorbeeld van een op kenmerken gebaseerde optie voor het gebruik van toegangsbeheer {#example-metadata-based-rules}
 
