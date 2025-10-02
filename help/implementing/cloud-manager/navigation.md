@@ -126,7 +126,7 @@ Een kaart (of rij in een tabel) vertegenwoordigt elk programma en biedt een over
 * Naam die aan het Programma wordt toegewezen. In de bovenstaande afbeelding ziet u &quot;SecurBank Sample&quot; als de naam van het programma.
 * Servicetype:
    * **Experience Manager Cloud** — voor de programma&#39;s van AEM as a Cloud Service
-   * **Experience Manager** — voor [&#x200B; AMS (Adobe Managed Services) programma&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — voor [&#x200B; AMS (Adobe Managed Services) programma&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction)
 * [&#x200B; Type van Programma &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Productie
