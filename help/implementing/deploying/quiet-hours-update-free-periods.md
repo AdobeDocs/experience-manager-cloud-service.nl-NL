@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Beperkte beschikbaarheid" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
+source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >Deze eigenschap zal als a **Beperkte eigenschap van de Beschikbaarheid** beschikbaar zijn die met 25th September begint. E-mail [ aemcs-update-free@adobe.com ](mailto:aemcs-update-free@adobe.com) om de eigenschap te hebben geactiveerd op uw programma&#39;s.
+
+>[!WARNING]
+>U kunt de stille uren gebruiken en de Vrije eigenschappen van Punten van de Update slechts nadat u in [ Automatische Updates van het Onderhoud ](/help/implementing/deploying/aem-version-updates.md) wordt ingezien.
 
 De AEM as a Cloud Service [ automatische onderhoudsupdates ](/help/implementing/deploying/aem-version-updates.md) zorgen ervoor dat uw instanties veilig en bijgewerkt met de recentste onderhoudsversies blijven. Dat gezegd hebbende, in sommige gevallen (zoals go-live gebeurtenissen) zou u die kritieke werkuren tegen om het even welke potentiële verstoringen kunnen &quot;beschermen&quot;moeten. AEM as a Cloud Service biedt daarom de mogelijkheid om een tijdsperiode in te stellen waarin automatische updates niet worden uitgevoerd voor lopende programma&#39;s.
 
@@ -26,7 +29,7 @@ U kunt deze tijdkaders vormen door twee het plannen opties te gebruiken:
 
 De functies voor vrije perioden en stille uren voor updates zijn geconfigureerd op basis van &quot;per programma&quot;.
 
-Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [ Uitgeven Roadmap van Experience Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
+Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [ Uitgeven Roadmap van Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
 
 ## Stil uur {#quiet-hours}
 
