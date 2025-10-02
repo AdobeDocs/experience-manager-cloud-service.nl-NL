@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 2%
+source-wordcount: '3588'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,14 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 >De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
 >De Fragmenten van de inhoud en de Modellen van het Fragment van de Inhoud worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, hoewel de Fragmenten van de Inhoud nog van de **Assets** console kunnen worden beheerd, en de Modellen van het Fragment van de Inhoud van de **Hulpmiddelen** console. Deze sectie behandelt beheer van **Assets** en **de consoles van Hulpmiddelen**.
+
+>[!NOTE]
+>
+>Als een model met de [ nieuwe modelredacteur ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) werd gecreeerd zou u die redacteur voor het model altijd moeten gebruiken.
+>
+>Als u dan het model met deze (originele) modelredacteur opent, zult u het bericht zien:
+>
+>* &quot;This model has a custom UI Schema configured. De volgorde van velden die in deze interface worden weergegeven, komt mogelijk niet overeen met het UI-schema. Als u de velden wilt weergeven die zijn uitgelijnd met het UI-schema, moet u overschakelen naar de nieuwe Inhoudsfragmenteditor.&quot;
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
@@ -67,6 +75,7 @@ Het model van het inhoudsfragment bepaalt effectief de structuur van de resulter
 
    * links: velden al gedefinieerd
    * rechts: **datatypen** voor het maken van velden (en **eigenschappen** voor gebruik als er velden zijn gemaakt)
+   * top: een optie om de [ nieuwe redacteur ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) te proberen
 
    >[!NOTE]
    >
@@ -87,7 +96,7 @@ Het model van het inhoudsfragment bepaalt effectief de structuur van de resulter
 
         >[!CAUTION]
         >
-        >Wanneer manueel het bijwerken van de naam van het bezit **&#x200B;**&#x200B;voor een gegevenstype, merk op dat de namen slechts a-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+        >Wanneer manueel het bijwerken van de naam van het bezit **** voor een gegevenstype, merk op dat de namen slechts a-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
         >
         >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
@@ -142,17 +151,43 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 * **Markeringen**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 
+* **Verwijzing van het Fragment**
+   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
+   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
+      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+      * Een nieuw inhoudsfragment maken op basis van het juiste model
+      * Nieuwe instanties van het veld maken
+   * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
+
+* **Verwijzing van het Fragment (UUID)**
+   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
+   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
+      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+      * Een nieuw inhoudsfragment maken op basis van het juiste model
+      * Nieuwe instanties van het veld maken
+   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
+      * U hoeft de UUID niet te weten; in de fragmenteditor kunt u naar het vereiste fragment bladeren
+
+  >[!NOTE]
+  >
+  >De UUID&#39;s zijn specifiek voor de gegevensopslagruimte. Als u het [ Hulpmiddel van het Exemplaar van de Inhoud ](/help/implementing/developing/tools/content-copy.md) gebruikt om de Fragmenten van de Inhoud te kopiëren, zal UUIDs in het doelmilieu opnieuw worden berekend.
+
 * **Verwijzing van de Inhoud**
    * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
    * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
+   * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
 
-* **Verwijzing van het Fragment**
-   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
-   * Het veld kan zo worden geconfigureerd dat auteurs van fragmenten:
-      * Het fragment waarnaar wordt verwezen, rechtstreeks bewerken
-      * Een nieuw inhoudsfragment maken op basis van het juiste model
-      * Nieuwe instanties van het veld maken
+* **Verwijzing van de Inhoud (UUID)**
+   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
+   * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
+   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
+   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
+      * U hoeft de UUID niet te weten; in de fragmenteditor kunt u naar de vereiste elementbron bladeren
+
+  >[!NOTE]
+  >
+  >De UUID&#39;s zijn specifiek voor de gegevensopslagruimte. Als u het [ Hulpmiddel van het Exemplaar van de Inhoud ](/help/implementing/developing/tools/content-copy.md) gebruikt om de Fragmenten van de Inhoud te kopiëren, zal UUIDs in het doelmilieu opnieuw worden berekend.
 
 * **voorwerp JSON**
    * Hiermee stelt u de auteur van inhoudsfragment in staat JSON-syntaxis in te voeren in de overeenkomende elementen van een fragment.
@@ -175,7 +210,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **de Naam van het Bezit**
 
-  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, merk op dat de namen **&#x200B;**&#x200B;*slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, merk op dat de namen **** *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
 
   >[!CAUTION]
   >
@@ -205,7 +240,7 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-  Bijvoorbeeld, het 1&rbrace; gebied van de a **Enige lijntekst &lbrace;in het Model van het Fragment van de Inhoud kan niet de waarde `Japan` in twee afhankelijke Fragmenten van de Inhoud hebben.**`Country` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld, het 1} gebied van de a **Enige lijntekst {in het Model van het Fragment van de Inhoud kan niet de waarde** in twee afhankelijke Fragmenten van de Inhoud hebben. `Country``Japan` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
   >[!NOTE]
   >
@@ -260,32 +295,43 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
 
 Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenstypen:
 
-* **[Verwijzing van de Inhoud](#content-reference)**
+* [Content Reference](#content-reference)
    * Verstrekt een eenvoudige verwijzing naar andere inhoud; van om het even welk type.
+   * Verstrekt door de gegevenstypes:
+      * **Verwijzing van de Inhoud** - gebaseerd weg
+      * **Verwijzing van de Inhoud (UUID)** - gebaseerd UUID
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
-* **[Verwijzing van het Fragment](#fragment-reference-nested-fragments)** (Geneste Fragmenten)
+* [ Verwijzing van het Fragment ](#fragment-reference-nested-fragments) (Geneste Fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
+   * Verstrekt door de gegevenstypes:
+      * **Verwijzing van het Fragment** - gebaseerd weg
+      * **Verwijzing van het Fragment (UUID)** - gebaseerd UUID
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
 
      >[!NOTE]
      >
-     >Deze methode is van bijzonder belang samen met [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Deze methode is van bijzonder belang wanneer u [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) gebruikt.
+
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
+
+>[!NOTE]
+>
+>Zie [ bevorderen uw Fragmenten van de Inhoud voor Verwijzingen UUID ](/help/headless/graphql-api/uuid-reference-upgrade.md) voor verdere informatie over de Verwijzing van de Inhoud/van het Fragment en de Verwijzing van de Inhoud/van het Fragment (UUID), en bevordering aan de op UUID-Gebaseerde gegevenstypes.
 
 >[!NOTE]
 >
 >AEM heeft een terugkerende bescherming voor:
 >
 >* Content References
->Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+>  >  Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
 >* Fragmentverwijzingen in GraphQL
->Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
+>  >  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
 
 ### Content Reference {#content-reference}
 
-Met de Content Reference kunt u inhoud van een andere bron renderen, bijvoorbeeld een afbeeldings- of inhoudsfragment.
+De **Verwijzing van de Inhoud** en **Verwijzing van de Inhoud (UUID)** gegevenstypes staan u toe om inhoud van een andere bron terug te geven; bijvoorbeeld, beeld, pagina of het Fragment van de Ervaring.
 
 Naast de standaardeigenschappen kunt u opgeven:
 
@@ -300,7 +346,7 @@ Naast de standaardeigenschappen kunt u opgeven:
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is vooral van belang bij het ophalen van inhoud voor gebruik in uw app, omdat u gestructureerde gegevens met meerdere lagen kunt ophalen.
+De **Verwijzing van het Fragment** en **Verwijzing van het Fragment (UUID)** gegevenstypes kunnen één, of meer, de Fragmenten van de Inhoud van verwijzingen voorzien. Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
 Bijvoorbeeld:
 
@@ -542,7 +588,7 @@ U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
 
    * U kunt **een model ontgrendelen** om uitgeeft toe te laten.
 
-     Als u **&#x200B;**&#x200B;ontgrendelt selecteert, wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen:
+     Als u **** ontgrendelt selecteert, wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen:
      ![ Bericht wanneer het ontgrendelen van het Model van het Fragment van de Inhoud ](assets/cfm-model-unlock-message.png)
 
      Vervolgens kunt u het model openen en bewerken.

@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 1%
+source-wordcount: '2201'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +24,14 @@ Op deze pagina wordt uitgelegd hoe u het fragmentmodel van de inhoud definieert 
 >
 >Voor verdere details zie [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen ](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>Als u een model met deze nieuwe redacteur creeert zou u deze redacteur voor dat model altijd moeten gebruiken.
+>
+>Als u dan het model met de [ originele modelredacteur ](/help/assets/content-fragments/content-fragments-models.md) opent, zult u het bericht zien:
+>
+>* &quot;This model has a custom UI Schema configured. De volgorde van velden die in deze interface worden weergegeven, komt mogelijk niet overeen met het UI-schema. Als u de velden wilt weergeven die zijn uitgelijnd met het UI-schema, moet u overschakelen naar de nieuwe Inhoudsfragmenteditor.&quot;
+
 ## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
 
 Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de resulterende Fragmenten van de Inhoud gebruikend een selectie van **[Types van Gegevens](#data-types)**. Gebruikend de modelredacteur kunt u instanties van de gegevenstypes toevoegen, dan hen vormen om de vereiste gebieden tot stand te brengen:
@@ -38,33 +46,53 @@ Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de r
    >
    >U kunt een model ook direct openen na [ creërend het ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
-1. Open het vereiste model voor **uitgeven**; gebruik of de snelle actie, of selecteer het model en toen de actie van de toolbar.
+1. Open het vereiste model voor **uitgeven**; gebruik of één van de snelle actieverbindingen, of selecteer het model en toen de actie van de toolbar.
 
-   Zodra open de modelredacteur toont:
-
-   * links: velden al gedefinieerd
-   * rechts: **datatypen** voor het maken van velden (en **eigenschappen** voor gebruik als er velden zijn gemaakt)
-
-   >[!NOTE]
-   >
-   >Wanneer een gebied als **Vereist** wordt bepaald, wordt het **Etiket** dat in de linkerruit wordt vermeld duidelijk met een asterix (**&#42;**).
 
    ![ Eigenschappen ](assets/cf-cfmodels-empty-model.png)
 
+   Zodra open de modelredacteur toont:
+
+   * boven:
+      * **Begin** pictogram
+      * optie om tussen [ origineel ](/help/assets/content-fragments/content-fragments-models.md) en nieuwe redacteur van een knevel te voorzien
+      * **annuleert**
+      * **sparen**
+
+   * links: **Types van Gegevens** beschikbaar voor het creëren van gebieden
+
+   * midden: de gebieden die reeds samen met **worden bepaald voegen** optie toe
+
+   * rechts: met de pictogrammen helemaal rechts kunt u kiezen tussen:
+
+      * **Eigenschappen**: bepaal en meningseigenschappen voor het geselecteerde gebied
+      * **Modeldetails**: toon **Toegelaten** status, **ModelTitel**, **Markeringen**, **Beschrijving** en **Voorproef URL**
+
 1. **om een Gebied** toe te voegen
 
-   * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
+   * Ofwel:
 
-     ![ Belemmering gegevenstype om gebied ](assets/cf-cfmodels-create-field.png) tot stand te brengen
+      * Sleep een gegevenstype van het linkerpaneel aan de vereiste plaats voor een gebied in het middelste paneel.
+      * Selecteer het pictogram **+** door een Type van Gegevens om het aan de bodem van de gebiedslijst toe te voegen.
+      * Selecteer **toevoegen** in het middelste paneel en dan het vereiste gegevenstype van de resulterende drop-down lijst om een gebied aan de bodem van de lijst toe te voegen.
 
-   * Zodra een gebied aan het model is toegevoegd, toont het juiste paneel de **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden bepaald. Hier kunt u definiëren wat voor dat veld is vereist.
+     >[!NOTE]
+     >
+     >**placeholder van het Lusje** gebieden moeten altijd boven bestaande gebieden verschijnen.
+
+   * U kunt de positie van een veld wijzigen door de stipvorming links van het veldvak te gebruiken:
+
+     ![ gebied van de Beweging ](assets/cf-cfmodels-move-field-icon.png)
+
+   * Zodra een gebied aan het model (en wordt geselecteerd) is toegevoegd, toont het juiste paneel de **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden bepaald. Hier kunt u bepalen wat voor specifiek wordt vereist
+veld.
 
       * Vele eigenschappen zijn zelf-verklarend, voor extra details zie [ Eigenschappen (de Types van Gegevens) ](#properties).
       * Het typen a **Etiket van het Gebied** auto-voltooit de **Naam van het Bezit** - als leeg, en het kan achteraf manueel worden bijgewerkt.
 
         >[!CAUTION]
         >
-        >Wanneer manueel het bijwerken van de naam van het bezit **&#x200B;**&#x200B;voor een gegevenstype, moeten de namen *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+        >Wanneer manueel het bijwerken van de naam van het bezit **** voor een gegevenstype, moeten de namen *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
         >
         >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
@@ -72,15 +100,17 @@ Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de r
 
      ![ eigenschappen van het Gebied ](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >Wanneer een gebied als **Vereist** wordt bepaald, wordt het **Etiket** dat in de middenruit wordt vermeld duidelijk met een asterix (**&#42;**).
+
 1. **om een Gebied** te verwijderen
 
-   Selecteer het vereiste veld en selecteer vervolgens het prullenbakpictogram. U wordt gevraagd de actie te bevestigen.
+   Selecteer het prullenbakpictogram voor het desbetreffende veld in het middelste deelvenster.
 
    ![ verwijder ](assets/cf-cfmodels-remove-icon.png)
 
-1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist. Bijvoorbeeld:
-
-   ![ sparen ](assets/cf-cfmodels-save.png)
+1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist.
 
 1. Selecteer **sparen** om de definitie voort te zetten.
 
@@ -118,6 +148,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 * **Markeringen**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
+
 * **Verwijzing van het Fragment**
    * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
    * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
@@ -126,18 +157,16 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
       * Nieuwe instanties van het veld maken
    * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
 
-* **Verwijzing van het Fragment (UUID)**
-   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
-   * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
-      * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
-      * Een nieuw inhoudsfragment maken op basis van het juiste model
-      * Nieuwe instanties van het veld maken
-   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
-      * U hoeft de UUID niet te weten; in de fragmenteditor kunt u naar het vereiste fragment bladeren
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >De UUID&#39;s zijn specifiek voor de gegevensopslagruimte. Als u het [ Hulpmiddel van het Exemplaar van de Inhoud ](/help/implementing/developing/tools/content-copy.md) gebruikt om de Fragmenten van de Inhoud te kopiëren, zal UUIDs in het doelmilieu opnieuw worden berekend.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Verwijzing van de Inhoud**
    * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
@@ -145,16 +174,16 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
    * De verwijzing geeft het pad naar de resource waarnaar wordt verwezen aan, bijvoorbeeld `/content/dam/path/to/resource`
 
-* **Verwijzing van de Inhoud (UUID)**
-   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
-   * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
-   * Het veld kan zo worden geconfigureerd dat fragmentauteurs nieuwe instanties van het veld kunnen maken
-   * In de redacteur, specificeert de verwijzing de weg aan het referenced middel; intern wordt de verwijzing gehouden als universeel unieke identiteitskaart (UUID) die verwijzingen het middel
-      * U hoeft de UUID niet te weten; in de fragmenteditor kunt u naar de vereiste elementbron bladeren
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >De UUID&#39;s zijn specifiek voor de gegevensopslagruimte. Als u het [ Hulpmiddel van het Exemplaar van de Inhoud ](/help/implementing/developing/tools/content-copy.md) gebruikt om de Fragmenten van de Inhoud te kopiëren, zal UUIDs in het doelmilieu opnieuw worden berekend.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **voorwerp JSON**
    * Hiermee stelt u de auteur van inhoudsfragment in staat JSON-syntaxis in te voeren in de overeenkomende elementen van een fragment.
@@ -162,7 +191,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
 
-* **Placeholder van het Lusje**
+* **placeholder van het Lusje**
    * Hiermee kunt u tabbladen invoeren die u kunt gebruiken bij het bewerken van de inhoud van het inhoudsfragment.
       * Deze worden getoond als verdelers in de modelredacteur, scheidend secties van de lijst van inhoudstypes. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
       * In de fragmenteditor wordt elke instantie weergegeven als een tab.
@@ -170,6 +199,8 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
      >[!NOTE]
      >
      >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het AEM GraphQL-schema.
+     >
+     >**placeholder van het Lusje** gebieden moeten altijd boven bestaande gebieden verschijnen.
 
 ## Eigenschappen (gegevenstypen) {#properties}
 
@@ -177,7 +208,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **de Naam van het Bezit**
 
-  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **&#x200B;**&#x200B;*slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **** *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
 
   >[!CAUTION]
   >
@@ -208,7 +239,7 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-  Bijvoorbeeld, het 1&rbrace; gebied van de a **Enige lijntekst &lbrace;in het Model van het Fragment van de Inhoud kan niet de waarde `Japan` in twee afhankelijke Fragmenten van de Inhoud hebben.**`Country` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld, het 1} gebied van de a **Enige lijntekst {in het Model van het Fragment van de Inhoud kan niet de waarde** in twee afhankelijke Fragmenten van de Inhoud hebben. `Country``Japan` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
   >[!NOTE]
   >
@@ -258,16 +289,12 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
 * [Content Reference](#content-reference)
    * Verstrekt een eenvoudige verwijzing naar andere inhoud; van om het even welk type.
-   * Verstrekt door de gegevenstypes:
-      * **Verwijzing van de Inhoud** - gebaseerd weg
-      * **Verwijzing van de Inhoud (UUID)** - gebaseerd UUID
+   * Verstrekt door het **gegevenstype van de Verwijzing van de Inhoud**
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 * [ Verwijzing van het Fragment ](#fragment-reference-nested-fragments) (Geneste Fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
-   * Verstrekt door de gegevenstypes:
-      * **Verwijzing van het Fragment** - gebaseerd weg
-      * **Verwijzing van het Fragment (UUID)** - gebaseerd UUID
+   * Verstrekt door het **gegevenstype van de Verwijzing van het Fragment**
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
 
      >[!NOTE]
@@ -275,19 +302,21 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
      >Deze methode is van bijzonder belang wanneer u [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) gebruikt.
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
+<!--
 >[!NOTE]
 >
->Zie [ bevorderen uw Fragmenten van de Inhoud voor Verwijzingen UUID ](/help/headless/graphql-api/uuid-reference-upgrade.md) voor verdere informatie over de Verwijzing van de Inhoud/van het Fragment en de Verwijzing van de Inhoud/van het Fragment (UUID), en bevordering aan de op UUID-Gebaseerde gegevenstypes.
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >AEM heeft een terugkerende bescherming voor:
 >
 >* Content References
->Hierdoor wordt voorkomen dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan dit leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+>  >  Hierdoor wordt voorkomen dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan dit leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
 >* Fragmentverwijzingen in GraphQL
->Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
+>  >  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
 ### Content Reference {#content-reference}
 
-De **Verwijzing van de Inhoud** en **Verwijzing van de Inhoud (UUID)** gegevenstypes staan u toe om inhoud van een andere bron terug te geven; bijvoorbeeld, beeld, pagina of het Fragment van de Ervaring.
+Het **gegevenstype van de Verwijzing van de Inhoud** staat u toe om inhoud van een andere bron terug te geven; bijvoorbeeld, beeld, pagina of het Fragment van de Ervaring.
 
 Naast de standaardeigenschappen kunt u opgeven:
 
@@ -324,7 +353,7 @@ Naast de standaardeigenschappen kunt u opgeven:
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-De **Verwijzing van het Fragment** en **Verwijzing van het Fragment (UUID)** gegevenstypes kunnen één, of meer, de Fragmenten van de Inhoud van verwijzingen voorzien. Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
+Het **gegevenstype van de Verwijzing van het 0} Fragment {kan één, of meer, de Fragmenten van de Inhoud van verwijzingen voorzien.** Deze functie is met name van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, aangezien u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
 Bijvoorbeeld:
 

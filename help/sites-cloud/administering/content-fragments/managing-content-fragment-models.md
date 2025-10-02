@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
 workflow-type: tm+mt
-source-wordcount: '2260'
+source-wordcount: '2496'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Als een zeer snel overzicht, om met de Modellen van het Fragment van de Inhoud t
 
 1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/setup.md)
 1. [ creeer ](#creating-a-content-fragment-model) uw Model van het Fragment van de Inhoud.
-   * Op dit punt kunt u **&#x200B;**&#x200B;het model (voor gebruik ook toelaten wanneer het creëren van de Fragmenten van de Inhoud).
+   * Op dit punt kunt u **** het model (voor gebruik ook toelaten wanneer het creëren van de Fragmenten van de Inhoud).
 1. [ bepaal ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) de structuur van uw model.
 1. [ laat uw Model van het Fragment van de Inhoud ](#enabling-a-content-fragment-model) toe, als nog niet gedaan.
 1. [ sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets ](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
@@ -54,8 +54,8 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
 
 * De bovenste werkbalk
    * Biedt standaard AEM-functionaliteit
-   * Ook uw IMS-organisatie tonen
-   * Verstrekt diverse [ acties ](#actions-unselected)
+   * Toont uw IMS-organisatie
+   * Verstrekt diverse [ acties ](#actions-unselected), die [ kunnen veranderen wanneer u één, of meer, modellen ](#actions-selected-content-fragment-models) selecteert
 * Het linkerdeelvenster
    * Toont de [ wegen aan alle configuraties ](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) die als omslagen worden vermeld
    * Hier kunt u de mappenstructuur verbergen of weergeven
@@ -97,20 +97,29 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Status**
    * Alleen informatie.
    * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt
-* **Gewijzigd**
+* **Status van de Replicatie**
    * Alleen informatie.
+   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+* **Voorproef**
+   * Alleen informatie.
+* **gewijzigd bij**
+   * Alleen informatie.
+   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
 * **gewijzigd door**
    * Alleen informatie.
    * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
 * **Markeringen**
    * Alleen informatie.
-   * Hiermee worden alle codes weergegeven die betrekking hebben op het model.
+   * Hiermee opent u een dialoogvenster met alle codes die betrekking hebben op het model.
    * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
 * **die bij** wordt gepubliceerd
    * Alleen informatie.
+   * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
 * **die door** wordt gepubliceerd
    * Alleen informatie.
    * Kan voor [ Snelle het Filtreren ](#fast-filtering) worden gebruikt.
+* **die door** wordt gebruikt
+   * Hiermee opent u een dialoogvenster met de inhoudsfragmenten die op het model zijn gebaseerd. De lijst bevat koppelingen waarmee u fragmenten rechtstreeks kunt openen.
 
 ## Modeleigenschappen {#model-properties}
 
@@ -125,7 +134,7 @@ Wanneer u een specifiek model selecteert, worden de eigenschappen van dat model 
 * **Beschrijving**
 * **het patroon van URL van de Voorproef**
 
-  De Modellen van het Fragment van de inhoud staan auteurs toe om **&#x200B;**&#x200B;hun inhoud in een externe frontend toepassing voor te vertonen. Zodra de **Dienst van de Voorproef** wordt gevormd, voeg URL voor de frontend toepassing toe.
+  De Modellen van het Fragment van de inhoud staan auteurs toe om **** hun inhoud in een externe frontend toepassing voor te vertonen. Zodra de **Dienst van de Voorproef** wordt gevormd, voeg URL voor de frontend toepassing toe.
 
   De voorbeeld-URL moet dit patroon volgen:
     `https://<preview_url>?param=${expression}`
@@ -169,9 +178,10 @@ Bepaalde acties zijn beschikbaar op de console - nadat u een map hebt geselectee
 Als u een specifiek model selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat model. U kunt ook meerdere modellen selecteren. De beschikbare acties worden dienovereenkomstig aangepast.
 
 * **[geeft](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)** uit om uw Model van het Fragment van de Inhoud te bepalen.
-* **publiceer** aan of [ publiceer ](/help/implementing/cloud-manager/manage-environments.md#environment-types) of [ Voorproef ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) rijen.
+* **[publiceer](#publishing-a-content-fragment-model)** en **[unpublish](#unpublishing-a-content-fragment-model)** aan of [ publiceer ](/help/implementing/cloud-manager/manage-environments.md#environment-types) of [ Voorproef ](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) rijen.
 * **Slot**/**ontgrendelt** om te controleren of een gebruiker wordt toegestaan om het Model te wijzigen.
-* **[laat](#enabling-a-content-fragment-model)** toe/**[&#128279;](#disabling-a-content-fragment-model)** onbruikbaar maken om te controleren of een gebruiker wordt toegestaan om tot Inhoudsfragmenten te leiden die op dit model worden gebaseerd.
+* **Exemplaar** uw model.
+* **[laat](#enabling-a-content-fragment-model)** toe/**[](#disabling-a-content-fragment-model)** onbruikbaar maken om te controleren of een gebruiker wordt toegestaan om tot Inhoudsfragmenten te leiden die op dit model worden gebaseerd.
 
 Het selecteren van één enkel model toont ook de [ modeleigenschappen ](#properties) in het juiste paneel.
 
@@ -206,7 +216,7 @@ Zodra geselecteerd, wordt het **Filtreren door** opties getoond (bij de bovenkan
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, selecteer **Toegelaten** in de **3&rbrace; kolom van de Status &lbrace;.** Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd.
+Bijvoorbeeld, selecteer **Toegelaten** in de **3} kolom van de Status {.** Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd.
 
 >[!NOTE]
 >
@@ -259,11 +269,11 @@ Nadat een model is gemaakt, moet het zijn ingeschakeld zodat het:
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
 * Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
 
-U kunt **&#x200B;**&#x200B;een model toelaten:
+U kunt **** een model toelaten:
 
 * Bij het maken van een nieuw model
    * Er wordt een optie weergegeven in het dialoogvenster.
-* Wanneer een model **&#x200B;**&#x200B;specifiek is onbruikbaar gemaakt
+* Wanneer een model **** specifiek is onbruikbaar gemaakt
    * Wanneer het vereiste Model wordt geselecteerd, **laat** actie toe is beschikbaar in de hoogste toolbar.
 
 ### Een inhoudsfragmentmodel uitschakelen {#disabling-a-content-fragment-model}
@@ -317,23 +327,21 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 * Als de overervingsketen geen resultaat levert, dan bekijk de **configuratie van de Diensten van de Wolk** voor die omslag (ook eerst direct en dan via overerving).
 * Als geen van de bovenstaande resultaten worden behaald, zijn er geen modellen toegestaan voor die map.
 
-<!--
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
+## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->Deleting a Content Fragment model can impact dependent fragments.
+>Het verwijderen van een model van een inhoudsfragment kan invloed hebben op afhankelijke fragmenten.
 
-To delete a Content Fragment model:
+Een model van een inhoudsfragment verwijderen:
 
-1. Navigate to, and select your Content Fragment Model. You can select multiple models.
+1. Navigeer naar en selecteer het inhoudsfragmentmodel. U kunt meerdere modellen selecteren.
 
-1. Select **Delete** from the toolbar.
+1. Selecteer **Schrapping** van de toolbar.
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven zodat u aangewezen actie kunt nemen.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -352,25 +360,25 @@ Een inhoudsfragmentmodel publiceren:
 
 1. De workflow voor het publiceren van de geselecteerde modellen en de bijbehorende referenties wordt gestart. De gepubliceerde status wordt dan getoond in de console.
 
-<!--
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
+Modellen van inhoudsfragmenten kunnen ongepubliceerd zijn als naar deze modellen niet wordt verwezen door fragmenten.
 
-To unpublish a Content Fragment Model:
+Publicatie van een inhoudsfragmentmodel ongedaan maken:
 
-1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
+1. Navigeer naar en selecteer het inhoudsfragmentmodel.
+De gepubliceerde status wordt vermeld in de console.
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. Selecteer **unpublish** van de toolbar.
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. In Unpublish selecteert de dialoog **Doel**:
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **de Publish dienst**
+   * **de dienst van de Voorproef**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. De workflow voor het ongedaan maken van de publicatie van de geselecteerde modellen en de bijbehorende referenties wordt gestart. De niet gepubliceerde status wordt dan getoond in de console.
+
+Als u de publicatie probeert ongedaan te maken van een model dat momenteel wordt gebruikt door een of meer fragmenten, wordt een foutwaarschuwing weergegeven. Het bericht stelt voor dat u het [ paneel van Verwijzingen ](/help/sites-cloud/authoring/basic-handling.md#references) controleert om verder te onderzoeken:
 
 ## Vergrendelde modellen van inhoudsfragmenten {#locked-content-fragment-models}
 
@@ -410,7 +418,7 @@ U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
 
    * U kunt **een model ontgrendelen** om uitgeeft toe te laten.
 
-     Als u **&#x200B;**&#x200B;selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen.
+     Als u **** selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen.
 
      Vervolgens kunt u het model openen en bewerken.
 
