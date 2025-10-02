@@ -20,33 +20,33 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* Mogelijkheid om [ pagina&#39;s en subpagina&#39;s (paginabomen) aan een vroegere versie ](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions) te herstellen.
+* Mogelijkheid om [&#x200B; pagina&#39;s en subpagina&#39;s (paginabomen) aan een vroegere versie &#x200B;](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions) te herstellen.
 
-* Mogelijkheid om [ Lanceren ](/help/sites-cloud/authoring/launches/overview.md) in de Redacteur van het KUUROORD van AEM [ ](/help/implementing/developing/hybrid/introduction.md) tot stand te brengen.
+* Mogelijkheid om [&#x200B; Lanceren &#x200B;](/help/sites-cloud/authoring/launches/overview.md) in de Redacteur van het KUUROORD van AEM [&#x200B; &#x200B;](/help/implementing/developing/hybrid/introduction.md) tot stand te brengen.
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
-* Videotranscodering wordt nu ondersteund met middelenmicroservices. In een nieuwe sectie in de [!UICONTROL Processing Profiles] -configuratie kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Voor details, zie [ videoactiva ](/help/assets/manage-video-assets.md#transcode-video) beheren. Gebruik [!DNL Dynamic Media] add-on voor meer transcoderingsopties en voor het afleveren van video.
+* Videotranscodering wordt nu ondersteund met middelenmicroservices. In een nieuwe sectie in de [!UICONTROL Processing Profiles] -configuratie kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Voor details, zie [&#x200B; videoactiva &#x200B;](/help/assets/manage-video-assets.md#transcode-video) beheren. Gebruik [!DNL Dynamic Media] add-on voor meer transcoderingsopties en voor het afleveren van video.
 
 * Bij nieuwe [!DNL Experience Manager Assets] implementaties is de functionaliteit voor slimme tags nu standaard geconfigureerd. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console] . Bij bestaande implementaties configureren beheerders de integratie van slimme tags zoals voorheen.
 
-* Een nieuwe [ ervaring van de activadownload ](/help/assets/download-assets-from-aem.md) staat toe,
+* Een nieuwe [&#x200B; ervaring van de activadownload &#x200B;](/help/assets/download-assets-from-aem.md) staat toe,
 
    * Asynchrone download voor grote downloads zodat de gebruikers niet hoeven te wachten.
    * Een nieuwe modulaire API voor uitbreidbaarheid voor ontwikkelaars.
 
 * De extractie van metagegevens voor assetmicroservices levert betere prestaties op. Het verhoogt de algemene productie van activa.
 
-* Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [ meta-gegevens van de Douane gebruikend verwerkingsprofiel ](/help/assets/manage-metadata.md#metadata-compute-service).
+* Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [&#x200B; meta-gegevens van de Douane gebruikend verwerkingsprofiel &#x200B;](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [ overzicht van de downloadervaring ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [&#x200B; overzicht van de downloadervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* PDF-documentvoorvertoningen met een native en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [ overzicht van de documentkijker ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* PDF-documentvoorvertoningen met een native en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [&#x200B; overzicht van de documentkijker &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM as a Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic] ). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [ het Invalideren van het CDN geheime voorgeheugen door middel van Dynamische Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM as a Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic] ). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [&#x200B; het Invalideren van het CDN geheime voorgeheugen door middel van Dynamische Media &#x200B;](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, bladeren en zoekervaring in [!DNL Assets] .
 
@@ -84,7 +84,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
   >[!NOTE]
   >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
 
-  Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md) voor meer details.
+  Zie [&#x200B; het Testen van de Controle van de Ervaring &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md) voor meer details.
 
 * Nieuwe omgevingen in Assets-programma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 
@@ -140,8 +140,8 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 ### Wat is er nieuw? {#what-is-new-refactoring}
 
-* De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [ Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer details.
+* De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [&#x200B; Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie &#x200B;](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer details.
 
-* AEM Dispatcher Converter is uitgebreid voor ondersteuning van conversies van On-premise en Adobe Managed Services Dispatcher-configuraties naar Dispatcher-compatibele configuraties. Zie [ Middel van de Git: De Convertor van Dispatcher van de Dienst van de Wolk AEM ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer details.
+* AEM Dispatcher Converter is uitgebreid voor ondersteuning van conversies van On-premise en Adobe Managed Services Dispatcher-configuraties naar Dispatcher-compatibele configuraties. Zie [&#x200B; Middel van de Git: De Convertor van Dispatcher van de Dienst van de Wolk AEM &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer details.
 
 * AEM Dispatcher Converter herschreven in ` node.js ` en geïntegreerd met de AIO-CLI-plug-in.

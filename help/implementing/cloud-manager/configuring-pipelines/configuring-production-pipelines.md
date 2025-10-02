@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu&#39;s te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan het werkgebiedmilieu op. Bij goedkeuring, stelt het de zelfde code aan het productiemilieu op.
 
-Een gebruiker moet de **[rol hebben van de Manager van de Plaatsing 0} om productiepijpleidingen te vormen.](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**
+Een gebruiker moet de **[rol hebben van de Manager van de Plaatsing 0&rbrace; om productiepijpleidingen te vormen.](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Alvorens u begint om uw code op te stellen, vorm uw pijpleidingsmontages van [!U
 
 >[!NOTE]
 >
->U kunt [ pijpleidingsmontages ](managing-pipelines.md) na de aanvankelijke opstelling uitgeven.
+>U kunt [&#x200B; pijpleidingsmontages &#x200B;](managing-pipelines.md) na de aanvankelijke opstelling uitgeven.
 
 ## Een nieuwe productiepijplijn toevoegen {#adding-production-pipeline}
 
@@ -40,9 +40,9 @@ Nadat u uw programma hebt opgezet en minstens één milieu gebruikend [!UICONTRO
 
 >[!TIP]
 >
->Alvorens u een front-end pijpleiding vormt, zie de [ Reis van de Aanmaak van de Plaats van AEM Snelle ](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken hulpmiddel van de Aanmaak van de Plaats van AEM Snelle. Deze reis kan u helpen de front-end ontwikkeling van uw Plaats van AEM stroomlijnen, die u uw plaats met geen AEM achterste-eindkennis laat snel aanpassen.
+>Alvorens u een front-end pijpleiding vormt, zie de [&#x200B; Reis van de Aanmaak van de Plaats van AEM Snelle &#x200B;](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken hulpmiddel van de Aanmaak van de Plaats van AEM Snelle. Deze reis kan u helpen de front-end ontwikkeling van uw Plaats van AEM stroomlijnen, die u uw plaats met geen AEM achterste-eindkennis laat snel aanpassen.
 
-1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com).
+1. Teken in Cloud Manager bij [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com).
 1. In de **Snelle toegang** sectie, klik **Experience Manager**.
 1. In het linkerzijpaneel, klik **Cloud Manager**.
 1. Selecteer de gewenste organisatie.
@@ -52,7 +52,7 @@ Nadat u uw programma hebt opgezet en minstens één milieu gebruikend [!UICONTRO
 
 1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik **toevoegen** om **te selecteren voeg de Pijpleiding van de Productie** toe.
 
-   ![ de kaart van Pijpleidingen op het overzicht van de Manager van het Programma ](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+   ![&#x200B; de kaart van Pijpleidingen op het overzicht van de Manager van het Programma &#x200B;](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **voegt de vertoningen van de de dialoogdoos van de Pijpleiding van de Productie** toe. Verstrek de Naam van de a **Pijpleiding** om uw pijpleiding samen met de volgende opties te identificeren. Klik **verdergaan**.
 
@@ -67,14 +67,14 @@ Nadat u uw programma hebt opgezet en minstens één milieu gebruikend [!UICONTRO
    * **onmiddellijk het Eindigen** - als geselecteerd, wordt de pijpleiding geannuleerd wanneer een belangrijke mislukking voorkomt. Dit proces emuleert in wezen een gebruiker manueel die elke mislukking verwerpt.
    * **gaat onmiddellijk** - als geselecteerd voort, gaat de pijpleiding automatisch wanneer een belangrijke mislukking voorkomt. Dit proces emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
-   ![ de pijpleidingsconfiguratie van de Productie ](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
+   ![&#x200B; de pijpleidingsconfiguratie van de Productie &#x200B;](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
 1. Op het **lusje van de Code van Source**, selecteer welk type van code de pijpleiding zou moeten verwerken.
 
    * **[vorm een volledige pijpleiding van de stapelcode](#full-stack-code)**
    * **[vorm een gerichte plaatsingspijpleiding](#targeted-deployment)**
 
-Zie [ CI/CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over de types van pijpleidingen.
+Zie [&#x200B; CI/CD Pijpleidingen &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over de types van pijpleidingen.
 
 De stappen om de verwezenlijking van uw productiepijplijn te voltooien variëren afhankelijk van het type van broncode u selecteerde. Volg de verbindingen hierboven om aan de volgende sectie van dit document te springen zodat kunt u de configuratie van uw pijpleiding voltooien.
 
@@ -94,7 +94,7 @@ Een full-stack codepijplijn implementeert tegelijkertijd back-end en front-end c
 
    >[!TIP]
    > 
-   >Zie [ Opslagplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) toevoegen en beheren om te leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+   >Zie [&#x200B; Opslagplaatsen &#x200B;](/help/implementing/cloud-manager/managing-code/managing-repositories.md) toevoegen en beheren om te leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
    * **Tak van het Git** - bepaalt van welke tak de geselecteerde pijpleiding de code zou moeten terugwinnen.
 Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld zoekt u de overeenkomende vertakkingen om u te helpen selecteren.
@@ -102,48 +102,48 @@ Voer de eerste paar tekens van de naam van de vertakking in en met de functie vo
    * **Pauze alvorens aan Productie** op te stellen - pauzeert de pijpleiding alvorens aan productie op te stellen.
    * **Gepland** - laat de gebruiker de geplande productieplaatsing toelaten.
 
-   ![ Volledige stapelcode ](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
+   ![&#x200B; Volledige stapelcode &#x200B;](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
 1. Klik **verdergaan** om aan het **lusje van de Controle van de Ervaring** te voorschijn te komen waar u de wegen kunt bepalen die altijd in de Controle van de Ervaring zouden moeten worden omvat.
 
-   ![ voeg de Controle van de Ervaring toe ](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+   ![&#x200B; voeg de Controle van de Ervaring toe &#x200B;](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. Verstrek wegen die in de Controle van de Ervaring moeten worden omvat.
 
-   * Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) voor details.
+   * Zie [&#x200B; het Testen van de Controle van de Ervaring &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) voor details.
 
 1. Klik **sparen** om uw pijpleiding te bewaren.
 
-Wanneer de pijpleiding loopt, worden de wegen die voor de Controle van de Ervaring worden gevormd voorgelegd en worden geëvalueerd gebaseerd op prestaties, toegankelijkheid, SEO, beste praktijken, en de tests van PWA. Voor meer details, zie [ Begrijpingsresultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Wanneer de pijpleiding loopt, worden de wegen die voor de Controle van de Ervaring worden gevormd voorgelegd en worden geëvalueerd gebaseerd op prestaties, toegankelijkheid, SEO, beste praktijken, en de tests van PWA. Voor meer details, zie [&#x200B; Begrijpingsresultaten van de Controle van de Ervaring &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen [ op de ](managing-pipelines.md) Pijpleidingen **kaart op de** pagina van het Overzicht van het Programma **nu beheren.**
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#x200B; op de &#x200B;](managing-pipelines.md) Pijpleidingen **kaart op de** pagina van het Overzicht van het Programma **nu beheren.**
 
 ### Vorm een gerichte plaatsingspijpleiding {#targeted-deployment}
 
-Een gerichte implementatie implementeert alleen code voor geselecteerde onderdelen van uw AEM-toepassing. In zulk een plaatsing, kunt u verkiezen om **** één van de volgende soorten code te omvatten:
+Een gerichte implementatie implementeert alleen code voor geselecteerde onderdelen van uw AEM-toepassing. In zulk een plaatsing, kunt u verkiezen om **&#x200B;**&#x200B;één van de volgende soorten code te omvatten:
 
 * **Config** - vorm montages voor diverse eigenschappen in uw milieu van AEM.
-   * Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvatten, en om hen in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+   * Zie [&#x200B; Gebruikend Pijpleidingen Config &#x200B;](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvatten, en om hen in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
    * Wanneer het runnen van een gerichte plaatsingspijpleiding, worden de configuraties opgesteld, mits zij aan het milieu, de bewaarplaats, en de tak worden bewaard die in de pijpleiding wordt bepaald.
    * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
-* **vorm Edge Delivery Services config pijpleiding** - de Pijpleidingen van de Configuratie van Edge Delivery hebben geen afzonderlijke ontwikkeling, het opvoeren, en productiemilieu&#39;s. In AEM as a Cloud Service worden wijzigingen doorgevoerd in ontwikkelings-, fase- en productieniveaus. Een Edge Delivery Configuration Pipeline past daarentegen zijn configuratie rechtstreeks toe op alle Edge Delivery Sites-domeinen die in Cloud Manager zijn geregistreerd. Meer leren, zie [ een Pijpleiding van Edge Delivery ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) toevoegen.
+* **vorm Edge Delivery Services config pijpleiding** - de Pijpleidingen van de Configuratie van Edge Delivery hebben geen afzonderlijke ontwikkeling, het opvoeren, en productiemilieu&#39;s. In AEM as a Cloud Service worden wijzigingen doorgevoerd in ontwikkelings-, fase- en productieniveaus. Een Edge Delivery Configuration Pipeline past daarentegen zijn configuratie rechtstreeks toe op alle Edge Delivery Sites-domeinen die in Cloud Manager zijn geregistreerd. Meer leren, zie [&#x200B; een Pijpleiding van Edge Delivery &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) toevoegen.
 * **Voorste Code van het Eind** - vorm JavaScript en CSS voor het vooreind van uw toepassing van AEM.
    * Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
-   * Zie het document [ Ontwikkelend Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) voor hoe dit proces samen met sommige overwegingen werkt om zich bewust te zijn van om het volledige potentieel uit dit proces te krijgen.
+   * Zie het document [&#x200B; Ontwikkelend Plaatsen met de Voorste-Eind Pijpleiding &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) voor hoe dit proces samen met sommige overwegingen werkt om zich bewust te zijn van om het volledige potentieel uit dit proces te krijgen.
 * **Config van de Rij van het Web** - Vorm de eigenschappen van Dispatcher om, Web-pagina&#39;s op te slaan te verwerken en te leveren aan de cliënt.
-   * Zie het document [ CI/CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) voor meer details.
+   * Zie het document [&#x200B; CI/CD Pijpleidingen &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) voor meer details.
    * Als er voor de geselecteerde omgeving een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
    * Als u een Web rij config pijpleiding voor een milieu met een bestaande full-stack pijpleiding creeert, wordt de configuratie van de Webrij in de full-stack pijpleiding genegeerd. Deze wijziging heeft alleen invloed op de configuratie van de weblaag in die omgeving.
 
 >[!NOTE]
 >
->De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie [ Toevoegend Privé Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen.
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie [&#x200B; Toevoegend Privé Bewaarplaatsen in Cloud Manager &#x200B;](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen.
 
 **om een gerichte plaatsingspijpleiding te vormen:**
 
 1. Kies welk implementatietype u nodig hebt.
 
-![ gerichte plaatsingsopties ](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
+![&#x200B; gerichte plaatsingsopties &#x200B;](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
 
 1. Bepaal de **In aanmerking komende Milieu&#39;s van de Plaatsing**.
 
@@ -155,7 +155,7 @@ Een gerichte implementatie implementeert alleen code voor geselecteerde onderdel
 
    >[!TIP]
    > 
-   >Zie [ Toevoegend en het Leiden Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) zodat kunt u leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+   >Zie [&#x200B; Toevoegend en het Leiden Bewaarplaatsen &#x200B;](/help/implementing/cloud-manager/managing-code/managing-repositories.md) zodat kunt u leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
    * **Tak van het Git** - Deze optie bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens in van de naam van de vertakking en de functie voor automatisch aanvullen van dit veld. U vindt de overeenkomende vertakkingen die u kunt selecteren.
@@ -163,11 +163,11 @@ Een gerichte implementatie implementeert alleen code voor geselecteerde onderdel
    * **Pauze alvorens aan Productie** op te stellen - deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
    * **Gepland** - laat de gebruiker de geplande productieplaatsing toelaten. Alleen beschikbaar voor doelgerichte webimplementaties.
 
-   ![ Config pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![&#x200B; Config pijpleiding &#x200B;](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Klik **sparen**.
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen [ op de ](managing-pipelines.md) Pijpleidingen **kaart op de** pagina van het Overzicht van het Programma **nu beheren.**
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#x200B; op de &#x200B;](managing-pipelines.md) Pijpleidingen **kaart op de** pagina van het Overzicht van het Programma **nu beheren.**
 
 ## Dispatcher-pakketten overslaan {#skip-dispatcher-packages}
 

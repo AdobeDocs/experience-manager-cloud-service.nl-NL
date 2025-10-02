@@ -21,11 +21,11 @@ Er zijn drie testcategorieën die worden ondersteund door Cloud Manager for Clou
 
    * Testen van de codekwaliteit evalueert de kwaliteit van uw toepassingscode.
    * De pijpleiding van de codekwaliteit wordt onmiddellijk na de bouwstap uitgevoerd in alle niet-productie- en productiepijpleidingen.
-   * De [ de kwaliteitsregels van de douanecode ](/help/implementing/cloud-manager/custom-code-quality-rules.md) die door Cloud Manager worden uitgevoerd worden gecreeerd gebaseerd op beste praktijken van de Techniek van AEM.
+   * De [&#x200B; de kwaliteitsregels van de douanecode &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md) die door Cloud Manager worden uitgevoerd worden gecreeerd gebaseerd op beste praktijken van de Techniek van AEM.
 
 1. [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
 
-   * De functionele testende looppas tijdens de stadium testende fase van a [ productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md). Het kan ook, naar keuze, tijdens de het testen fase van a [ niet-productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) lopen.
+   * De functionele testende looppas tijdens de stadium testende fase van a [&#x200B; productiepijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md). Het kan ook, naar keuze, tijdens de het testen fase van a [&#x200B; niet-productiepijpleiding &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) lopen.
 
 1. [Ervaring controleren testen](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 

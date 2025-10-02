@@ -32,7 +32,7 @@ De lijngrafiek van een geselecteerd jaar bevat gegevenspunten voor elke maand va
 
 **om een rapport van SLA te bekijken:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
@@ -40,7 +40,7 @@ De lijngrafiek van een geselecteerd jaar bevat gegevenspunten voor elke maand va
 
 1. Klik **Rapporten van SLA**.
 
-   ![ grafiek van de het rapportlijn van SLA ](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
+   ![&#x200B; grafiek van de het rapportlijn van SLA &#x200B;](/help/implementing/cloud-manager/reports/assets/cm-sla-report2.png)
 
 1. Klik op het gewenste jaar om een lijngrafiek met SLA-gegevens weer te geven.
 
@@ -56,7 +56,7 @@ De **sectie van de Analyse van de Gebeurtenis** onder de grafiek toont de reeks 
 
 Elk van de incidenten heeft een tijdbereik, een oorzaak en een reeks opmerkingen.
 
-![ Voorbeeld van de Analyse van de Gebeurtenis ](/help/implementing/cloud-manager/reports/assets/sla-reporting-c.png)
+![&#x200B; Voorbeeld van de Analyse van de Gebeurtenis &#x200B;](/help/implementing/cloud-manager/reports/assets/sla-reporting-c.png)
 
 ## Interval vernieuwen voor SLA-rapporten {#refresh}
 
