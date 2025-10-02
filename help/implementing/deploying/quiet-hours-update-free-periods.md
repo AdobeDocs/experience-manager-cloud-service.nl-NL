@@ -15,12 +15,12 @@ ht-degree: 0%
 # Gratis uren en perioden bijwerken {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Deze eigenschap zal als a **Beperkte eigenschap van de Beschikbaarheid** beschikbaar zijn die met 25th September begint. E-mail [ aemcs-update-free@adobe.com ](mailto:aemcs-update-free@adobe.com) om de eigenschap te hebben geactiveerd op uw programma&#39;s.
+>Deze eigenschap zal als a **Beperkte eigenschap van de Beschikbaarheid** beschikbaar zijn die met 25th September begint. E-mail [&#x200B; aemcs-update-free@adobe.com &#x200B;](mailto:aemcs-update-free@adobe.com) om de eigenschap te hebben geactiveerd op uw programma&#39;s.
 
 >[!WARNING]
->U kunt de stille uren gebruiken en de Vrije eigenschappen van Punten van de Update slechts nadat u in [ Automatische Updates van het Onderhoud ](/help/implementing/deploying/aem-version-updates.md) wordt ingezien.
+>U kunt de stille uren gebruiken en de Vrije eigenschappen van Punten van de Update slechts nadat u in [&#x200B; Automatische Updates van het Onderhoud &#x200B;](/help/implementing/deploying/aem-version-updates.md) wordt ingezien.
 
-De AEM as a Cloud Service [ automatische onderhoudsupdates ](/help/implementing/deploying/aem-version-updates.md) zorgen ervoor dat uw instanties veilig en bijgewerkt met de recentste onderhoudsversies blijven. Dat gezegd hebbende, in sommige gevallen (zoals go-live gebeurtenissen) zou u die kritieke werkuren tegen om het even welke potentiële verstoringen kunnen &quot;beschermen&quot;moeten. AEM as a Cloud Service biedt daarom de mogelijkheid om een tijdsperiode in te stellen waarin automatische updates niet worden uitgevoerd voor lopende programma&#39;s.
+De AEM as a Cloud Service [&#x200B; automatische onderhoudsupdates &#x200B;](/help/implementing/deploying/aem-version-updates.md) zorgen ervoor dat uw instanties veilig en bijgewerkt met de recentste onderhoudsversies blijven. Dat gezegd hebbende, in sommige gevallen (zoals go-live gebeurtenissen) zou u die kritieke werkuren tegen om het even welke potentiële verstoringen kunnen &quot;beschermen&quot;moeten. AEM as a Cloud Service biedt daarom de mogelijkheid om een tijdsperiode in te stellen waarin automatische updates niet worden uitgevoerd voor lopende programma&#39;s.
 
 U kunt deze tijdkaders vormen door twee het plannen opties te gebruiken:
 
@@ -29,7 +29,7 @@ U kunt deze tijdkaders vormen door twee het plannen opties te gebruiken:
 
 De functies voor vrije perioden en stille uren voor updates zijn geconfigureerd op basis van &quot;per programma&quot;.
 
-Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [ Uitgeven Roadmap van Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
+Bovendien, voor informatie over geplande automatische onderhoudsperiodes van AEM as a Cloud Service, gelieve te verwijzen naar de [&#x200B; Uitgeven Roadmap van Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pagina.
 
 ## Stil uur {#quiet-hours}
 
@@ -43,13 +43,13 @@ Het stille ureninterval kan worden gevormd door de interface van AEM Cloud Manag
 
 Ga naar **Activiteiten>Automatische Updates>de Opties van de Update**.
 
-![ Configuratie ](assets/main-config.png)
+![&#x200B; Configuratie &#x200B;](assets/main-config.png)
 
 1. Zorg ervoor **automatische updates tijdens specifieke uren** optie verhindert van een knevel wordt voorzien.
 2. Klik **uitgeven**.
 3. Plaats het stille ureninterval in het configuratievenster.
 
-![ Configuratie van QuietUren ](assets/quiet-hours.png)
+![&#x200B; Configuratie van QuietUren &#x200B;](assets/quiet-hours.png)
 
 Wanneer u deze hebt ingesteld, worden de opgegeven begin- en einduren toegepast op elke kalenderdag die zich voorwaarts verplaatst. U kunt of onbruikbaar maken of de stille tijdwaarde van uren opnieuw vormen zoals nodig.
 
@@ -67,12 +67,12 @@ De functie voor gratis updateperiodes kan als volgt worden geconfigureerd met de
 
 Ga naar **Activiteiten>Automatische Updates>de Opties van de Update**.
 
-![ Configuratie ](assets/main-config.png)
+![&#x200B; Configuratie &#x200B;](assets/main-config.png)
 
 1. Ga naar de sectie Vrije perioden bijwerken.
 2. Klik **toevoegen vrije periode van de Update**.
 3. Selecteer een periode van een week gratis voor bijwerken vanuit de kalender.
 
-![ de Vrije Configuratie van Punten van de Update ](assets/update-free-periods.png)
+![&#x200B; de Vrije Configuratie van Punten van de Update &#x200B;](assets/update-free-periods.png)
 
 Een **Actief** pictogram zal dichtbij de momenteel actieve update vrije periode en a **Volledige** pictogram dichtbij de voltooide update vrije periodes worden getoond.
