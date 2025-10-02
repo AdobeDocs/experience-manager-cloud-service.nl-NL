@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Het bouwstijlproces stelt uw code door de volgende drie bevolen fasen op:
 
 ### Implementatiefase van fase {#stage-deployment}
 
-De **fase van de Plaatsing van het 0&rbrace; Stadium impliceert de volgende stappen:**
+De **fase van de Plaatsing van het 0} Stadium impliceert de volgende stappen:**
 
 | Implementatiestap van werkgebied | Beschrijving |
 | --- | --- |
@@ -76,14 +76,14 @@ De **fase van de Plaatsing van het 0&rbrace; Stadium impliceert de volgende stap
 
 ### Fase van de testfase {#stage-testing}
 
-De **testende 1&rbrace; fase van het Stadium &lbrace;impliceert de volgende stappen:**
+De **testende 1} fase van het Stadium {impliceert de volgende stappen:**
 
 | Teststap werkgebied | Beschrijving |
 | --- | --- |
 | Functioneel testen van producten | De pijpleiding van Cloud Manager voert tests uit die tegen het werkgebiedmilieu lopen.<br> zie ook [ Functionele het Testen van het Product ](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Aangepaste functionele tests | Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Als de build geen test JAR produceert, slaagt de test automatisch.<br> zie ook [ het Functionele Testen van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Aangepaste UI-tests | Een optionele functie waarmee automatisch UI-tests worden uitgevoerd die voor aangepaste toepassingen zijn gemaakt.<br> de tests UI zijn op selenium-Gebaseerd en verpakt in een beeld van het Docker om flexibiliteit in taal en kaders aan te bieden. Met deze methode kunt u Java en Maven, Node en WebDriver.io of een op Selenium gebaseerd framework of technologie gebruiken.<br> zie ook [ het Testen UI van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Experience Audit | Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles in werking stelt.<ul><li>De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.</li><li>De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.</li><li>Deze insight is nuttig om te bepalen of er een regressie is die met de huidige plaatsing wordt geïntroduceerd.</li></ul>Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Experience Audit | Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles in werking stelt.<ul><li>De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.</li><li>De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.</li><li>Deze insight is nuttig om te bepalen of er een regressie is die met de huidige plaatsing wordt geïntroduceerd.</li></ul>Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![ het Testen van het Stadium ](assets/stage-testing.png)
 
@@ -97,7 +97,7 @@ Productieimplementaties volgen doorgaans dezelfde stappen als eerder beschreven,
 1. Koppel `dispatcher1` los van het taakverdelingsmechanisme.
 1. Gebruik AEM-pakketten in `publish1` en Dispatcher-pakketten in `dispatcher1` om de Dispatcher-cache te leegmaken.
 1. Plaats `dispatcher1` weer in het taakverdelingsmechanisme.
-1. Koppel `dispatcher2` los van het taakverdelingsmechanisme wanneer `dispatcher1` weer in service is.
+1. Koppel `dispatcher1` los van het taakverdelingsmechanisme wanneer `dispatcher2` weer in service is.
 1. Gebruik AEM-pakketten in `publish2` en Dispatcher-pakketten in `dispatcher2` om de Dispatcher-cache te leegmaken.
 1. Plaats `dispatcher2` weer in het taakverdelingsmechanisme.
 

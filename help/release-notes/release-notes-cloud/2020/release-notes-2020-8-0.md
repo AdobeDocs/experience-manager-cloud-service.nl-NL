@@ -1,17 +1,17 @@
 ---
 title: Nota's van de versie voor 2020.8.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release voor 2020.8.0."
+description: '[!DNL Adobe Experience Manager] Opmerkingen bij de release van as a Cloud Service voor 2020.8.0.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Opmerkingen bij de release van [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor Experience Manager as a Cloud Service 2020.8.0 beschreven.
 
@@ -22,7 +22,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Mogelijkheid om [ pagina&#39;s en subpagina&#39;s (paginabomen) aan een vroegere versie ](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions) te herstellen.
 
-* Mogelijkheid om [ Lanceringen ](/help/sites-cloud/authoring/launches/overview.md) in AEM [ SPA Redacteur ](/help/implementing/developing/hybrid/introduction.md) tot stand te brengen.
+* Mogelijkheid om [ Lanceren ](/help/sites-cloud/authoring/launches/overview.md) in de Redacteur van het KUUROORD van AEM [ ](/help/implementing/developing/hybrid/introduction.md) tot stand te brengen.
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -42,11 +42,11 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Gebruik een verwerkingsprofiel om aangepaste metagegevens te genereren met gebruik van de Compute Service. Zie [ meta-gegevens van de Douane gebruikend verwerkingsprofiel ](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [ overzicht van de downloadervaring ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL#download-configurations).
+* Een eenvoudigere downloadervaring voor Brand Portal-gebruikers die beheerders kunnen configureren. Zie [ overzicht van de downloadervaring ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* PDF-documentvoorvertoningen met een native en hoge getrouwheid zijn nu beschikbaar in Brand Portal. Zie [ overzicht van de documentkijker ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL#doc-viewer).
+* PDF-documentvoorvertoningen met een native en hoge kwaliteit zijn nu beschikbaar in Brand Portal. Zie [ overzicht van de documentkijker ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM as a Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic] ). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [ het Invalideren van het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* U kunt de CDN-cache (Content Delivery Network) nu rechtstreeks vanuit [!DNL Dynamic Media] in AEM as a Cloud Service ongeldig maken (in tegenstelling tot het gebruik van [!DNL Dynamic Media Classic] ). Hiermee zorgt u ervoor dat de nieuwste middelen binnen minuten worden gebruikt in plaats van binnen uren. Zie [ het Invalideren van het CDN geheime voorgeheugen door middel van Dynamische Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Verbeterde toegankelijkheidsondersteuning wordt toegevoegd aan besturingselementen voor gebruikersinterfaces, navigatie, bladeren en zoekervaring in [!DNL Assets] .
 
@@ -84,7 +84,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
   >[!NOTE]
   >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
 
-  Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor meer details.
+  Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md) voor meer details.
 
 * Nieuwe omgevingen in Assets-programma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 
@@ -142,6 +142,6 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 * De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [ Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer details.
 
-* AEM Dispatcher Converter uitgebreid om conversies van Managed Services Dispatcher-configuraties op locatie en in Adobe naar Dispatcher-compatibele configuraties te ondersteunen. Zie [ Middel van de Git: Convertor van AEM Cloud Service Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer details.
+* AEM Dispatcher Converter is uitgebreid voor ondersteuning van conversies van On-premise en Adobe Managed Services Dispatcher-configuraties naar Dispatcher-compatibele configuraties. Zie [ Middel van de Git: De Convertor van Dispatcher van de Dienst van de Wolk AEM ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer details.
 
 * AEM Dispatcher Converter herschreven in ` node.js ` en geïntegreerd met de AIO-CLI-plug-in.

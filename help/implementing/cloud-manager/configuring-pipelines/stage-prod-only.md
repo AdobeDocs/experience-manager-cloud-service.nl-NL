@@ -5,11 +5,11 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
-hide: true
-hidefromtoc: true
-index: false
+hide: false
+hidefromtoc: false
+index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
+source-git-commit: f61183c43d9380900b92fe040098e2eb3155979c
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ### Een alleen-werkgebiedpijpleiding maken {#stage-only}
 
-1. In **voeg niet-Productie pijplijn** dialoogdoos, op het **3&rbrace; lusje van de Configuratie toe, selecteer het** gebied van de Pijpleiding van de Plaatsing **voor uw pijpleiding.**
+1. In **voeg niet-Productie pijplijn** dialoogdoos, op het **3} lusje van de Configuratie toe, selecteer het** gebied van de Pijpleiding van de Plaatsing **voor uw pijpleiding.**
 1. Voer in het veld Naam niet-productiepijplijn een naam in voor vrije tekst.
 1. Selecteer de gewenste plaatsingsopties, dan klik **verdergaan**.
 
@@ -84,7 +84,7 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 1. Op het **lusje van de Controle van de Ervaring**, is de gespecificeerde Plaats URL gepubliceerde URL die Cloud Manager voor paginakwaliteit controleert.
 
-1. Op het **gebied van de Weg van de Pagina 0&rbrace; &lbrace;, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
+1. Op het **gebied van de Weg van de Pagina 0} {, specificeer welke pagina&#39;s u wilt controleren, dan klikken** pictogram **![toevoegen Pagina ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg).**
 
    In de Experience Audit wordt elk pad geanalyseerd dat u toevoegt voor prestaties, toegankelijkheid, progressieve webapps, aanbevolen werkwijzen, SEO en andere kwaliteitscontroles. U kunt veelvoudige wegen toevoegen en om het even welk verwijderen door ![ Grootte 400 te klikken pictogram ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
@@ -141,7 +141,7 @@ Als er geen installatieprogramma is, wordt u gevraagd om er een te maken.
 
 ### Pijpleidingen met alleen profielen uitvoeren {#prod-only-run}
 
-Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0&rbrace; Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
+Voor a **productie-enige** pijpleiding, toont Cloud Manager de bronartefacten die aan productie worden opgesteld. Controleer de **stap van de Voorbereiding van het 0} Artefact voor de bronuitvoering, dan open het om details en logboeken te bekijken.**
 
 
 ![ details Artefact ](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)

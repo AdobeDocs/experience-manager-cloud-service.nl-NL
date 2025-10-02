@@ -4,9 +4,9 @@ description: Leer hoe je Cloud Manager-projecten kunt leveren met Edge Delivery 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 1%
 
 ---
@@ -40,10 +40,10 @@ Maximaliseer uw voordelen van Adobe door uw Edge Delivery Services-licentie te o
 
 * [ Verbruik uw vergunning op uw gekozen programma ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md), of [ werk andere programma&#39;s ](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md) bij, of allebei.
 * Haal voordeel uit [ API-eerste ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) voordelen voor het uitvoeren van (creeer, Gelezen, Update, Schrapping) verrichtingen CRUD.
-* [ Toegang SLA die ](/help/implementing/cloud-manager/sla-reporting.md) meldt (*binnenkort komt*)
+* [SLA-rapportage openen](/help/implementing/cloud-manager/reports/report-sla.md)
 * [ de toegang van de winst tot de steun van Adobe ](/help/edge/overview.md#support-ticket) voor uw geregistreerde productieprogramma&#39;s.
 
-Als u een vergunning van Edge Delivery Services (EDS) hebt, kunt u een [ Adobe beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) voor uw plaats van Edge Delivery gebruiken en uit eigenschappen zoals zelfbediening CDN beheer en automatische vernieuwing van DV certificaten voordeel halen elke drie maanden, tenzij het wordt geschrapt.
+Als u een vergunning van Edge Delivery Services (EDS) hebt, kunt u een [ Adobe-Beheerde CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) voor uw plaats van Edge Delivery gebruiken. Dit laat zelfbediening CDN beheer en DV certificaten toe die automatisch om de drie maanden vernieuwen tenzij u het certificaat schrapt.
 
 Als u ervoor kiest om uw CDN (een niet door Adobe beheerde CDN) te gebruiken, ongeacht uw Edge Delivery Services-licentie, moet u de CDN configureren op het `aem.live` -platform. Zie [ BYO CDN Opstelling ](https://www.aem.live/docs/byo-cdn-setup).
 
@@ -79,7 +79,7 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | --- | --- | --- |
 | 1 | Deelnemen aan het samenwerkingskanaal voor producten | Het klikken **legt nu verzoek** voor een verzoek aan Adobe om een kanaal voor uw bedrijf tot stand te brengen. Als het kanaal reeds bestaat, door:sturen u aan het kanaal van uw bedrijf. |
 | 2 | Volledige voorwaarden | Zie [ Mening die Begonnen leerprogramma ](https://www.aem.live/developer/tutorial) krijgen. |
-| 3 | Edge Delivery-site toevoegen OF <br> Site maken | Zie [ een plaats van Edge Delivery ](#eds-add-site) toevoegen.<br> zie [ een plaats van Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) creëren. |
+| 3 | Edge Delivery-site toevoegen OF <br> Nu een site maken | Zie [ een plaats van Edge Delivery ](#eds-add-site) toevoegen.<br> zie [ een plaats van Edge Delivery in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md) creëren. |
 | 4 | Een Edge Delivery-site configureren voor het gebruik van een externe Git-opslagplaats | Zie [ een plaats van Edge Delivery vormen om een externe bewaarplaats van het Git te gebruiken ](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md). |
 | 5 | Domein toevoegen | Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
 | 6 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
@@ -87,7 +87,7 @@ De **Edge Delivery om lijst** in Cloud Manager te doen is een onboarding taak co
 | 8 | Pushvalidatie instellen | Zie [ de dupbevestiging van de Opstelling voor een plaats van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Go-Live | Zie [ gaan-Levende checklist ](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441567?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 

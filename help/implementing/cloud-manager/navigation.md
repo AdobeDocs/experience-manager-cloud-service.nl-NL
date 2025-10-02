@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -88,14 +88,14 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 De sectie Statistieken en call-to-action bevat geaggregeerde gegevens voor uw organisatie. Als u bijvoorbeeld uw programma&#39;s hebt ingesteld, kunnen statistieken van uw activiteiten in de afgelopen 90 dagen worden weergegeven, zoals:
 
 * Aantal [ plaatsingen ](/help/implementing/cloud-manager/deploy-code.md)
-* Aantal [ geïdentificeerde kwesties van de 0&rbrace; codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
+* Aantal [ geïdentificeerde kwesties van de 0} codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
 * Aantal builds
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.
 
 ### Sectie Mijn programma&#39;s {#my-programs-section}
 
-De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3&rbrace; sectie van Programma&#39;s.**
+De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3} sectie van Programma&#39;s.**
 
 De **Mijn van Programma&#39;s** sectie maakt een lijst van kaarten die elk programma vertegenwoordigen. Klik een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
@@ -126,7 +126,7 @@ Een kaart (of rij in een tabel) vertegenwoordigt elk programma en biedt een over
 * Naam die aan het Programma wordt toegewezen. In de bovenstaande afbeelding ziet u &quot;SecurBank Sample&quot; als de naam van het programma.
 * Servicetype:
    * **Experience Manager Cloud** — voor de programma&#39;s van AEM as a Cloud Service
-   * **Experience Manager** — voor [ AMS (Adobe Managed Services) programma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — voor [ AMS (Adobe Managed Services) programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [ Type van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Productie
@@ -214,7 +214,7 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties e
 * ![ het pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [ Activiteit ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - de geschiedenis van pijpleidingslooppas van het programma
 * ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [ Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Alle pijpleidingen die voor het programma worden gevormd
 * ![ het pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [ Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Alle bewaarplaatsen die voor het programma worden gevormd
-* ![ het schijfpictogram van de Grafiek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [ Rapporten ](/help/implementing/cloud-manager/sla-reporting.md) - Metriek zoals de gegevens van SLA
+* ![ het schijfpictogram van de Grafiek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [ Rapporten ](/help/implementing/cloud-manager/reports/report-sla.md) - Metriek zoals de gegevens van SLA
 
 **de Diensten**
 
@@ -222,8 +222,8 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties e
 * ![ het pictogram van de Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [ Plaatsen van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - beheert de plaatsen van Edge Delivery
 * ![ pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ Montages van het Domein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de namen van het douanedomein voor het programma
 * ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - beheer SSL certificaten voor het programma
-* ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) Toewijzingen van het Domein 1&rbrace; Sociale netwerkpictogram [ - beheer de Toewijzingen van het Domein](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* ![ het lijstpictogram van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepalen lijsten van gewenste personen voor bepaalde IP adressen
+* ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) Toewijzingen van het Domein 1} Sociale netwerkpictogram [ - beheer de Toewijzingen van het Domein](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* ![ het lijstpictogram van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepaalt lijsten van gewenste personen voor bepaalde IP adressen
 * ![ het pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [ Reeksen van de Inhoud ](/help/implementing/developing/tools/content-copy.md) - Reeksen inhoud die voor exemplaardoeleinden wordt gecreeerd
 * ![ pictogram van de Geschiedenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [ de Activiteit van de Inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md) - de activiteiten van het Inhoudsexemplaar
 * ![ pictogram van het Kanaal ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [ de Infrastructuur van het Netwerk ](/help/security/configuring-advanced-networking.md) - beheer geavanceerde voorzien van een netwerkopties voor het programma
@@ -270,4 +270,4 @@ De **kaart van Prestaties** geeft een overzicht van het **[CDN Dashboard](/help/
 
 ### Nuttige bronnen {#useful-resources}
 
-De **Nuttige 1&rbrace; sectie van Middelen &lbrace;verstrekt verbindingen aan extra het leren middelen voor Cloud Manager.**
+De **Nuttige 1} sectie van Middelen {verstrekt verbindingen aan extra het leren middelen voor Cloud Manager.**

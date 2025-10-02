@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu&#39;s te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan het werkgebiedmilieu op. Bij goedkeuring, stelt het de zelfde code aan het productiemilieu op.
 
-Een gebruiker moet de [&#128279;](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**rol hebben van de Manager van de Plaatsing 0&rbrace; om productiepijpleidingen te vormen.**
+Een gebruiker moet de **[rol hebben van de Manager van de Plaatsing 0} om productiepijpleidingen te vormen.](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**
 
 >[!NOTE]
 >
@@ -36,13 +36,17 @@ Alvorens u begint om uw code op te stellen, vorm uw pijpleidingsmontages van [!U
 
 ## Een nieuwe productiepijplijn toevoegen {#adding-production-pipeline}
 
-Zodra u opstelling uw programma hebt en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI heeft, bent u bereid om een productiepijplijn toe te voegen door deze stappen te volgen.
+Nadat u uw programma hebt opgezet en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI hebt, bent u bereid om een productiepijplijn toe te voegen door deze stappen te volgen.
 
 >[!TIP]
 >
->Alvorens u een front-end pijpleiding vormt, zie de [ AEM Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken Snelle hulpmiddel van de Aanmaak van de Plaats. Deze reis kan u helpen de front-end ontwikkeling van uw AEMPlaats stroomlijnen, die u uw plaats met geen AEM achterste-eindkennis laat snel aanpassen.
+>Alvorens u een front-end pijpleiding vormt, zie de [ Reis van de Aanmaak van de Plaats van AEM Snelle ](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken hulpmiddel van de Aanmaak van de Plaats van AEM Snelle. Deze reis kan u helpen de front-end ontwikkeling van uw Plaats van AEM stroomlijnen, die u uw plaats met geen AEM achterste-eindkennis laat snel aanpassen.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
+1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com).
+1. In de **Snelle toegang** sectie, klik **Experience Manager**.
+1. In het linkerzijpaneel, klik **Cloud Manager**.
+1. Selecteer de gewenste organisatie.
+1. Op de **Mijn console van Programma&#39;s**, klik een programma.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
@@ -76,7 +80,7 @@ De stappen om de verwezenlijking van uw productiepijplijn te voltooien variëren
 
 ### Vorm een volledige pijpleiding van de stapelcode {#full-stack-code}
 
-Een full-stack codepijplijn implementeert tegelijkertijd back-end en front-end code builds die een of meer AEM servertoepassingen bevatten samen met de configuratie HTTPD/Dispatcher.
+Een full-stack codepijplijn implementeert tegelijkertijd back-end en front-end code builds die een of meer AEM-servertoepassingen bevatten samen met de configuratie HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -106,23 +110,24 @@ Voer de eerste paar tekens van de naam van de vertakking in en met de functie vo
 
 1. Verstrek wegen die in de Controle van de Ervaring moeten worden omvat.
 
-   * Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) voor details.
+   * Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) voor details.
 
 1. Klik **sparen** om uw pijpleiding te bewaren.
 
-Wanneer de pijpleidingslooppas, de wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd en op prestaties, toegankelijkheid, SEO, beste praktijken, en de tests van PWA worden gebaseerd geëvalueerd. Voor meer details, zie [ Begrijpingsresultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+Wanneer de pijpleiding loopt, worden de wegen die voor de Controle van de Ervaring worden gevormd voorgelegd en worden geëvalueerd gebaseerd op prestaties, toegankelijkheid, SEO, beste praktijken, en de tests van PWA. Voor meer details, zie [ Begrijpingsresultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#128279;](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [ op de ](managing-pipelines.md) Pijpleidingen **kaart op de** pagina van het Overzicht van het Programma **nu beheren.**
 
 ### Vorm een gerichte plaatsingspijpleiding {#targeted-deployment}
 
-Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing, kunt u verkiezen om **&#x200B;**&#x200B;één van de volgende soorten code te omvatten:
+Een gerichte implementatie implementeert alleen code voor geselecteerde onderdelen van uw AEM-toepassing. In zulk een plaatsing, kunt u verkiezen om **** één van de volgende soorten code te omvatten:
 
-* **Config** - vorm montages voor diverse eigenschappen in uw AEM milieu.
-   * Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvat, en om hen in uw bewaarplaats te beheren zodat zij behoorlijk worden opgesteld.
-   * Wanneer het runnen van een gerichte plaatsingspijpleiding, worden de configuraties opgesteld, op voorwaarde dat zij aan het milieu, de bewaarplaats, en de tak in de pijpleiding worden bepaald.
+* **Config** - vorm montages voor diverse eigenschappen in uw milieu van AEM.
+   * Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvatten, en om hen in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+   * Wanneer het runnen van een gerichte plaatsingspijpleiding, worden de configuraties opgesteld, mits zij aan het milieu, de bewaarplaats, en de tak worden bewaard die in de pijpleiding wordt bepaald.
    * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
-* **Voorste Code van het Eind** - vorm JavaScript en CSS voor het vooreind van uw AEM toepassing.
+* **vorm Edge Delivery Services config pijpleiding** - de Pijpleidingen van de Configuratie van Edge Delivery hebben geen afzonderlijke ontwikkeling, het opvoeren, en productiemilieu&#39;s. In AEM as a Cloud Service worden wijzigingen doorgevoerd in ontwikkelings-, fase- en productieniveaus. Een Edge Delivery Configuration Pipeline past daarentegen zijn configuratie rechtstreeks toe op alle Edge Delivery Sites-domeinen die in Cloud Manager zijn geregistreerd. Meer leren, zie [ een Pijpleiding van Edge Delivery ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) toevoegen.
+* **Voorste Code van het Eind** - vorm JavaScript en CSS voor het vooreind van uw toepassing van AEM.
    * Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
    * Zie het document [ Ontwikkelend Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) voor hoe dit proces samen met sommige overwegingen werkt om zich bewust te zijn van om het volledige potentieel uit dit proces te krijgen.
 * **Config van de Rij van het Web** - Vorm de eigenschappen van Dispatcher om, Web-pagina&#39;s op te slaan te verwerken en te leveren aan de cliënt.
@@ -162,7 +167,7 @@ Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM to
 
 1. Klik **sparen**.
 
-De pijpleiding wordt bewaard en u kunt uw pijpleidingen [&#128279;](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.
+De pijpleiding wordt bewaard en u kunt uw pijpleidingen [ op de ](managing-pipelines.md) Pijpleidingen **kaart op de** pagina van het Overzicht van het Programma **nu beheren.**
 
 ## Dispatcher-pakketten overslaan {#skip-dispatcher-packages}
 
