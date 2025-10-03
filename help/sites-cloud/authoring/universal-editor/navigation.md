@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 ### Toegang tot AEM as a Cloud Service {#accessing-aem}
 
 1. Meld u aan bij uw AEM as a Cloud Service-ontwerpinstantie.
-1. Gebruik de [**console van 1&rbrace; Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Gebruik de [**console van 1} Plaatsen** om aan de pagina te navigeren die voor gebruik met de Universele Redacteur wordt gecreeerd die u wenst uit te geven.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Bewerk de pagina.
 1. De Universal Editor wordt geopend om de geselecteerde pagina te bewerken.
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3&rbrace; malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[&#128279;](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Wanneer het uitgeven van een pagina in de [**console van Plaatsen**, zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina ](/help/sites-cloud/authoring/sites-console/introduction.md) of de Universele Redacteur openen die in dit document wordt beschreven, of de [ paginaredacteur ](/help/sites-cloud/authoring/page-editor/templates.md).[](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Direct toegang {#accessing-directly}
 
@@ -79,7 +79,7 @@ De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker d
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [ Cloud Manager ](/help/onboarding/cloud-manager-introduction.md), [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [ de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
 
 ![ Globale knoop van de Navigatie ](assets/global-navigation.png)
 
@@ -112,6 +112,12 @@ Als u op de app-switch tikt of erop klikt, kunt u snel naar andere Experience Cl
 Selecteer het pictogram dat uw gebruiker vertegenwoordigt voor toegang tot uw accountinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 ![ Eigenschappen van de Gebruiker ](assets/user-properties.png)
+
+Als u op het accountpictogram tikt of erop klikt, wordt een menu met uw gebruikersinstellingen geopend. Deze montages zijn op Cloud Manager in het algemeen van toepassing en zijn eigenschappen zijn gedetailleerd [ in die documentatie.](/help/implementing/cloud-manager/navigation.md)
+
+![ Schakelaar van het Milieu ](assets/environment-switcher.png)
+
+Voor de Universele Redacteur, [ als u de voorproefdienst beschikbaar hebt, ](/help/sites-cloud/authoring/sites-console/previewing-content.md) hebt u ook een optie om tussen uw productie en voorproefmilieu&#39;s onder de rubriek **Montages van het Product** te schakelen.
 
 ### De werkbalk Universele editor {#universal-editor-toolbar}
 

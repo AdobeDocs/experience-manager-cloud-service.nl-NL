@@ -5,9 +5,9 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvou
 ![ het Publiceren pagina&#39;s ](assets/publish-menu.png)
 
 1. In de Universele Redacteur, tik of klik [ het **publiceren** pictogram in de Universele het hulpmiddelbar van de Redacteur.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. Als u de voorproefdienst van a [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **[Voorproef](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (als beschikbaar) of **publiceren**.
+1. Als u de voorproefdienst van a [ ](/help/sites-cloud/authoring/sites-console/previewing-content.md) beschikbaar hebt, kunt u kiezen waar u uw inhoud publiceert, of aan **[Voorproef](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (als beschikbaar) of **publiceren**.
 1. De **Punten** sectie maakt een lijst van de inhoud die in de publicatie inbegrepen is. Tik of klik **Mening** om de details met inbegrip van te tonen:
    * **Nieuwe** punten die nog niet zijn gepubliceerd.
    * **Gewijzigde** inhoud die is gepubliceerd, maar sinds de laatste publicatie gewijzigd.
@@ -43,6 +43,10 @@ Wanneer u als inhoudauteur bereid bent om uw inhoud te publiceren, moet u eenvou
    Tik of klik de achterpijl naast de **rubriek van Punten** om aan het overzicht terug te keren.
 
 1. Tik of klik **publiceer** om te publiceren of **annuleer** om te aborteren.
+
+>[!TIP]
+>
+>Als u aan uw voorproefmilieu publiceert, [ kunt u de optie in het **2} menu van de Rekening** in de kopbaltoolbar van Experience Manager gebruiken om tussen voorproef en productiemilieu&#39;s te schakelen.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
 >[!NOTE]
 >
