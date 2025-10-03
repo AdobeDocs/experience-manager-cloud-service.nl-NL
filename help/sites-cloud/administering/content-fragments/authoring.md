@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2778'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Deze editor biedt:
 * [ In-line het uploaden van activa als inhoudsverwijzingen ](#reference-images), zonder het moeten hen aan Activa DAM eerst uploaden.
 * [ produceer Variaties ](#generate-variations-ai) om Generatieve AI te gebruiken om inhoudsverwezenlijking te versnellen die op herinneringen wordt gebaseerd.
 * [ Voorproef ](#preview-content-fragment) van de teruggegeven ervaring die door het Fragment van de Inhoud wordt geleverd.
-* Capaciteit om [ te publiceren ](#publish-content-fragment) en [&#128279;](#unpublish-content-fragment) van de redacteur ongedaan te maken.
+* Capaciteit om [ te publiceren ](#publish-content-fragment) en [ ](#unpublish-content-fragment) van de redacteur ongedaan te maken.
 * Capaciteit aan [ mening, en open, bijbehorende taalexemplaren ](#view-language-copies) in de redacteur.
 * Mogelijkheid aan [ details van de meningsversie ](#view-version-history) in de redacteur. U kunt ook terugkeren naar een geselecteerde versie.
 * Capaciteit aan [ mening, en open, ouderverwijzingen ](#view-parent-references).
@@ -44,7 +44,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
 * bovenste werkbalk: voor belangrijke informatie en handelingen
    * een koppeling naar de Content Fragment Console (pictogram Start)
    * informatie over het model en de map
-   * verbindingen aan [ Voorproef (als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd) ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+   * verbindingen aan [ Voorproef ](#preview-content-fragment); als het StandaardPatroon van de Voorproef URL voor het model wordt gevormd
    * [ publiceer ](#publish-content-fragment), en [ unpublish ](#unpublish-content-fragment) acties
    * een optie om alle **Verwijzingen van de Ouder** (verbindingspictogram) te tonen
    * het fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, en laatst bewaarde informatie
@@ -61,7 +61,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * In het **lusje van Commentaren** kunt u toevoegen, en lezen, commentaren helpen u met andere auteurs samenwerken
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
-      * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **&#x200B;**&#x200B;instanties van het relevante gebied toevoegen
+      * wanneer gevormd (als veelvoud) in het model, staan diverse gegevenstypes u toe **** instanties van het relevante gebied toevoegen
    * als **de gebieden van Tijdelijke aanduiding van het Lusje** worden bepaald binnen het model zij hier en worden getoond:
       * kan worden gebruikt voor navigatie
       * wordt horizontaal weergegeven of als een vervolgkeuzelijst
@@ -190,7 +190,7 @@ Een variatie van het inhoudsfragment verwijderen:
 
 ## Tekstvelden met meerdere regels bewerken - Onbewerkte tekst of Markering {#edit-multi-line-text-fields-plaintext-markdown}
 
-**[de gebieden van de 0&rbrace; Meerdere lijntekst &lbrace;kunnen één van drie formaten hebben:](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**
+**[de gebieden van de 0} Meerdere lijntekst {kunnen één van drie formaten hebben:](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**
 
 * Onbewerkte tekst
 * [Markering](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -248,7 +248,7 @@ Bijvoorbeeld:
 
 ### Vergelijken en synchroniseren - RTF-tekst {#compare-and-synchronize-rich-text}
 
-De actie **vergelijkt** is beschikbaar voor Meerdere lijngebieden wanneer u open de Verandering van de a **&#x200B;**&#x200B;hebt.
+De actie **vergelijkt** is beschikbaar voor Meerdere lijngebieden wanneer u open de Verandering van de a **** hebt.
 
 Hiermee opent u het veld Meerdere regels op volledig scherm en:
 
@@ -267,7 +267,7 @@ Hiermee opent u het veld Meerdere regels op volledig scherm en:
 
   >[!CAUTION]
   >
-  >De synchronisatie is slechts beschikbaar om veranderingen *van **Hoofd**&#x200B;aan de variatie* te kopiëren.
+  >De synchronisatie is slechts beschikbaar om veranderingen *van **Hoofd**aan de variatie* te kopiëren.
   >
   >Het overbrengen van veranderingen *van een variatie aan **Hoofd*** is niet beschikbaar als optie.
 
@@ -314,7 +314,7 @@ In **de gebieden van de Verwijzing van de Inhoud** kunt u:
 
   >[!NOTE]
   >
-  >Om een beeld aan het **gebied van de Verwijzing van de Inhoud direct te uploaden**, moet het **&#x200B;**:
+  >Om een beeld aan het **gebied van de Verwijzing van de Inhoud direct te uploaden**, moet het ****:
   >
   >* hebben a **Weg van de Weg van de Weg van de Wortel** bepaald (in het [ Model van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Hiermee geeft u aan waar de afbeelding wordt opgeslagen.
   >* omvat **Beeld** in de lijst van toegelaten inhoudstypes
@@ -497,14 +497,7 @@ Om u toe te laten om in-product en in-context samen te werken, verstrekt het **l
 
 ## Voorvertoning van fragment weergeven {#preview-content-fragment}
 
-De inhoudsfragmenteditor biedt auteurs de mogelijkheid om een voorvertoning van hun bewerkingen weer te geven in een externe frontendtoepassing.
-
-Als u deze functie wilt gebruiken, moet u eerst:
-
-* Werk met uw IT-team om de externe frontendtoepassing in te stellen die het inhoudsfragment rendert door de JSON-uitvoer te verbruiken.
-* Wanneer de externe frontend toepassing opstelling is, moet het **StandaardPatroon van de Voorproef URL** als a [ bezit van het aangewezen Model van het Fragment van de Inhoud worden bepaald ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
-
-Wanneer URL is bepaald, is de **knoop van de Voorproef** actief. U kunt deze knop selecteren om de externe toepassing te starten (op een afzonderlijk tabblad) om het inhoudsfragment te renderen.
+De inhoudsfragmenteditor biedt auteurs de mogelijkheid om een voorvertoning van hun bewerkingen weer te geven in een externe frontendtoepassing. Dit vereist dat het **[StandaardPatroon van de Voorproef URL](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** wordt bepaald, om de **knoop van de Voorproef** in de hoogste toolbar van de redacteur te activeren. U kunt deze knop selecteren om de externe toepassing te starten (op een afzonderlijk tabblad) om het inhoudsfragment te renderen.
 
 ## Fragment publiceren {#publish-content-fragment}
 
