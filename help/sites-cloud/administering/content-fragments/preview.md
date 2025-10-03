@@ -19,9 +19,9 @@ Er zijn verscheidene methodes beschikbaar voor de Fragmenten van de Inhoud, die 
 
 U kunt een voorvertoning van het fragment weergeven:
 
-* gebruikend het [ patroon van URL van de Voorproef ](#preview-url-pattern)
+* gebruikend het [&#x200B; patroon van URL van de Voorproef &#x200B;](#preview-url-pattern)
 
-* door te publiceren aan, en unpublishing van, de [ instantie van de Voorproef ](#preview-instance)
+* door te publiceren aan, en unpublishing van, de [&#x200B; instantie van de Voorproef &#x200B;](#preview-instance)
 
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
@@ -37,9 +37,9 @@ U kunt een voorvertoning van het fragment weergeven:
 >
 >Zie voor meer informatie:
 >
->* gebruik van de **Assets** console voor [ het beheren van de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md)
->* gebruik van de [*originele* redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-variations.md),
->* het gebruiken van [ Fragmenten van de Inhoud voor pagina-creatie ](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>* gebruik van de **Assets** console voor [&#x200B; het beheren van de Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)
+>* gebruik van de [*originele* redacteur van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-variations.md),
+>* het gebruiken van [&#x200B; Fragmenten van de Inhoud voor pagina-creatie &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 ## Voorbeeld-URL-patroon {#preview-url-pattern}
 
@@ -49,7 +49,7 @@ Als u deze functie wilt gebruiken, moet u eerst:
 
 * Werk met uw IT-team om de externe frontendtoepassing in te stellen die het inhoudsfragment rendert door de JSON-uitvoer te verbruiken.
 
-* Wanneer de externe frontend toepassing opstelling is, moet het **StandaardPatroon van de Voorproef URL** als a [ bezit van het aangewezen Model van het Fragment van de Inhoud worden bepaald ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
+* Wanneer de externe frontend toepassing opstelling is, moet het **StandaardPatroon van de Voorproef URL** als a [&#x200B; bezit van het aangewezen Model van het Fragment van de Inhoud worden bepaald &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 De voorbeeld-URL moet dit patroon volgen:
 
@@ -73,9 +73,9 @@ U kunt het fragment publiceren vanuit de editor of de console.
 
 Zie:
 
-* [ het Publiceren en het Voorvertonen van een Fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) voor volledige details.
+* [&#x200B; het Publiceren en het Voorvertonen van een Fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) voor volledige details.
 
-* [ Unpublishing een fragment ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) voor volledige details.
+* [&#x200B; Unpublishing een fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) voor volledige details.
 
 <!--
 ## Preview based on a HTML Template {#preview-based-on-a-html-template}
