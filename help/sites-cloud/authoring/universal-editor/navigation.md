@@ -79,7 +79,7 @@ De Experience Cloud-header staat altijd boven aan het scherm. Het is een anker d
 
 #### Experience Manager {#experience-manager}
 
-Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [&#x200B; Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md), [&#x200B; Cloud Acceleration Manager &#x200B;](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [&#x200B; de Distributie van de Software &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) toegang te hebben.
+Selecteer de verbinding van Adobe Experience Cloud links van de kopbal om aan de wortel van uw oplossing van Experience Manager te navigeren om tot hulpmiddelen zoals [&#x200B; Cloud Manager &#x200B;](/help/onboarding/cloud-manager-introduction.md), [&#x200B; Cloud Acceleration Manager &#x200B;](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), en [&#x200B; de Distributie van de Software &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL) toegang te hebben.
 
 ![&#x200B; Globale knoop van de Navigatie &#x200B;](assets/global-navigation.png)
 
