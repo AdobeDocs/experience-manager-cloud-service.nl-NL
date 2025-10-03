@@ -31,9 +31,9 @@ Voor plaatsen die op Adobe Experience Manager lopen, is er &quot;uit de doos&quo
 
 ## Voordat u begint {#before-start}
 
-De experimentatiestop - binnen wordt gebruikt binnen de context van [ Edge Delivery Services ](/help/edge/overview.md) zodat zult u een rekening van Github, een inhoudsbewaarplaats zoals de Aandrijving van SharePoint of van Google, en ook zult u [ AEM Sidekick ](https://www.aem.live/docs/sidekick) nodig hebben. Zie ook [ Begonnen het Worden - de Universele pagina van het Leerprogramma van de Ontwikkelaar van de Redacteur ](https://www.aem.live/developer/tutorial) en [ Begonnen het worden - Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial).
+De experimentatiestop - binnen wordt gebruikt binnen de context van [&#x200B; Edge Delivery Services &#x200B;](/help/edge/overview.md) zodat zult u een rekening van Github, een inhoudsbewaarplaats zoals de Aandrijving van SharePoint of van Google, en ook zult u [&#x200B; AEM Sidekick &#x200B;](https://www.aem.live/docs/sidekick) nodig hebben. Zie ook [&#x200B; Begonnen het Worden - de Universele pagina van het Leerprogramma van de Ontwikkelaar van de Redacteur &#x200B;](https://www.aem.live/developer/tutorial) en [&#x200B; Begonnen het worden - Leerprogramma van de Ontwikkelaar &#x200B;](https://www.aem.live/developer/tutorial).
 
-Nadat u alles opstelling hebt, **gelieve op deze video** te letten titelde [ Onmiddellijke experimentatie ](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) voor een korte demonstratie op hoe het experimenteren plug-in werkt.
+Nadat u alles opstelling hebt, **gelieve op deze video** te letten titelde [&#x200B; Onmiddellijke experimentatie &#x200B;](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) voor een korte demonstratie op hoe het experimenteren plug-in werkt.
 
 ## Veelgebruikte termen {#frequently-used-terms}
 
@@ -48,10 +48,10 @@ Voordat u de rest van de handleiding volgt voor het instellen van uw eerste expe
 
 Over het algemeen gebruikt u bij het instellen van een experiment een reeds bestaande pagina als de controlepagina. Vervolgens maakt u een pagina voor ondervragers die de controlepagina voor sommige bezoekers vervangt. Op de pagina Challenger kunt u verschillende dingen testen, zoals inhoudvarianten, verschillende paginalay-outs, call-to-action (CTA) enzovoort. U kunt deze experimentele varianten configureren door metagegevensparameters toe te voegen aan de controlepagina (zie hieronder).
 
-De [ Operationele dienst van Telemetrie ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) verzamelt dan gegevens, bijvoorbeeld, het aantal bezoekers in de controlepagina tegenover de uitdagerpagina. Vervolgens gebruikt u deze gegevens om de noodzakelijke verbeteringen voor uw site te kiezen. Zolang u binnen de gevestigde ontwerptaal van uw website blijft en de bestaande blokfunctionaliteit gebruikt, zou u een proefvariant moeten kunnen opzetten en het naar productie binnen een paar minuten verzenden.
+De [&#x200B; Operationele dienst van Telemetrie &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) verzamelt dan gegevens, bijvoorbeeld, het aantal bezoekers in de controlepagina tegenover de uitdagerpagina. Vervolgens gebruikt u deze gegevens om de noodzakelijke verbeteringen voor uw site te kiezen. Zolang u binnen de gevestigde ontwerptaal van uw website blijft en de bestaande blokfunctionaliteit gebruikt, zou u een proefvariant moeten kunnen opzetten en het naar productie binnen een paar minuten verzenden.
 
 >[!NOTE]
->Houd er rekening mee dat de insteekmodule geen gegevens van de eindgebruiker gebruikt die tot hun identificatie kunnen leiden, noch deze gegevens blijft gebruiken. Geen eindgebruiker opt-in noch koekjestoestemming wordt vereist wanneer het gebruiken van de standaardconfiguratie die de [ Operationele dienst van Telemetrie in AEM as a Cloud Service ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) gebruikt.
+>Houd er rekening mee dat de insteekmodule geen gegevens van de eindgebruiker gebruikt die tot hun identificatie kunnen leiden, noch deze gegevens blijft gebruiken. Geen eindgebruiker opt-in noch koekjestoestemming wordt vereist wanneer het gebruiken van de standaardconfiguratie die de [&#x200B; Operationele dienst van Telemetrie in AEM as a Cloud Service &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) gebruikt.
 
 ### Id van experiment {#experiment-identifier}
 
@@ -63,15 +63,15 @@ Volgens de conventie verdient het aanbeveling een map te maken met een kleine-le
 
 De map met experimenten moet er ongeveer als volgt uitzien:
 
-![ experimenten-omslag ](/help/sites-cloud/administering/assets/experiments-folder.png)
+![&#x200B; experimenten-omslag &#x200B;](/help/sites-cloud/administering/assets/experiments-folder.png)
 
 Zodra de omslag wordt gecreeerd, zet een exemplaar van uw controlepagina in die omslag, en pas de veranderingen op de pagina toe die u als deel van uw proefvariant (zie video hierboven) zou willen testen. Laten we bijvoorbeeld aannemen dat we op de website de volgende pagina hebben waarop we een experiment willen uitvoeren:
 
-![ controle-pagina ](/help/sites-cloud/administering/assets/control-page.png)
+![&#x200B; controle-pagina &#x200B;](/help/sites-cloud/administering/assets/control-page.png)
 
 Uw exemplaar van de uitdager die in de `experiments/<experiment-id>` omslag wordt geplaatst zou als volgt kunnen kijken:
 
-![ challenger-page ](/help/sites-cloud/administering/assets/challenger-page.png)
+![&#x200B; challenger-page &#x200B;](/help/sites-cloud/administering/assets/challenger-page.png)
 
 Geef een voorvertoning weer van de pagina met de uitdager en publiceer deze met de assistent en wanneer u klaar bent met het ontwerpen van de pagina met de uitdager. De URL van de gepubliceerde uitdager wordt gebruikt in de volgende sectie - het configureren van het experiment.
 
@@ -87,11 +87,11 @@ Er zijn twee meta-gegevensrijen die voor een proefvariant moeten worden toegevoe
 
 Zie het onderstaande voorbeeld:
 
-![ meta-gegevens-pagina ](/help/sites-cloud/administering/assets/metadata-page.png)
+![&#x200B; meta-gegevens-pagina &#x200B;](/help/sites-cloud/administering/assets/metadata-page.png)
 
 Voor elk experiment, wordt het verkeer verdeeld over alle varianten (controle en uitdagers) en automatisch geplaatst aan een gelijke verdeling. Als je één toerist hebt, zal er automatisch een 50/50-verdeling zijn tussen controle en de toerist. Als u twee uitdagers hebt, zult u automatisch een derde van het verkeer zien dat aan controle wordt toegewezen en elke uitdager etc.
 
-U kunt de verkeersverdeling met voeten treden door de meta-gegevens te vormen. Voor meer informatie over hoe u de meta-gegevens kunt aanpassen die in uw experimenten worden gebruikt, zie de volgende [ pagina ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+U kunt de verkeersverdeling met voeten treden door de meta-gegevens te vormen. Voor meer informatie over hoe u de meta-gegevens kunt aanpassen die in uw experimenten worden gebruikt, zie de volgende [&#x200B; pagina &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
 
 ### Experimentele varianten voorvertonen en in een werkgebied plaatsen {#preview-stage-experiment}
 
@@ -101,7 +101,7 @@ Zodra u klaar bent om een voorvertoning van uw experiment te bekijken en deze te
 
 By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
 
-De gegevensinzameling om de doeltreffendheid van elke variant te meten is gebaseerd op de [ Operationele dienst van Telemetrie in AEM as a Cloud Service ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
+De gegevensinzameling om de doeltreffendheid van elke variant te meten is gebaseerd op de [&#x200B; Operationele dienst van Telemetrie in AEM as a Cloud Service &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
 ### Uw experimentele variant naar productie verzenden {#production-experiment}
 
@@ -215,7 +215,7 @@ Adobe Experience Manager gebruikt [ Operationele Telemetrie ] (/help/sites-cloud
 
 ### Privacy {#privacy-experimentation}
 
-[ de Operationele dienst van Telemetrie in AEM as a Cloud Service ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) wordt ontworpen om bezoekersprivacy te bewaren en gegevensinzameling te minimaliseren. Als bezoeker betekent dit dat Adobe niet zal proberen persoonlijke gegevens over jou te verzamelen of informatie die je kunt volgen. Als plaatsexploitant, herzie hieronder verzamelde gegevenspunten om te begrijpen als zij toestemming vereisen.
+[&#x200B; de Operationele dienst van Telemetrie in AEM as a Cloud Service &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) wordt ontworpen om bezoekersprivacy te bewaren en gegevensinzameling te minimaliseren. Als bezoeker betekent dit dat Adobe niet zal proberen persoonlijke gegevens over jou te verzamelen of informatie die je kunt volgen. Als plaatsexploitant, herzie hieronder verzamelde gegevenspunten om te begrijpen als zij toestemming vereisen.
 AEM Operational Telemetry gebruikt geen clientstatus of -id, zoals cookies of `localStorage` , `sessionStorage` of dergelijke, om gebruiksmaatstaven te verzamelen. Gegevens worden transparant verzonden via een `Navigator.sendBeacon` -aanroep, niet via pixels of vergelijkbare technieken. Er is geen &quot;vingerafdrukken&quot; van apparaten of personen via hun IP-adres, de tekenreeks Gebruikersagent of andere gegevens voor het vastleggen van gesamplede gegevens.
 
 Het is niet toegestaan persoonsgegevens toe te voegen aan de operationele telemetriegegevensverzameling en operationele telemetriegegevens mogen niet worden gebruikt voor gebruiksgevallen die verder gaan dan strikt noodzakelijk.
@@ -226,7 +226,7 @@ Hieronder vindt u een lijst met veelgestelde vragen:
 
 Q: Kan ik de splitsingsverhouding tussen de varianten van mijn experiment aanpassen, bijvoorbeeld 10% voor controle en 90% voor de uitdager?
 
-Ja, kan de gespleten verhouding via [ meta-gegevens ](#configure-experiment) worden gevormd.
+Ja, kan de gespleten verhouding via [&#x200B; meta-gegevens &#x200B;](#configure-experiment) worden gevormd.
 
 V: Kan ik experimenteren op zowel tekst als afbeeldingen?
 
