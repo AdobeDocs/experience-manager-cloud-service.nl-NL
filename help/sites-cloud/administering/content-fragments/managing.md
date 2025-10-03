@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
 source-wordcount: '2920'
 ht-degree: 0%
@@ -127,7 +127,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
 * **Taal**: wijs om het even welke [ Taal ](#language-copies-fragment) exemplaren aan
 
-   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1&rbrace; exemplaren van de Taal &lbrace;verbonden aan het inhoudsfragment.](#language-copies-fragment)
+   * Wijst op de scène van het inhoudsfragment, samen met het totale aantal lokale/[ 1} exemplaren van de Taal {verbonden aan het inhoudsfragment.](#language-copies-fragment)
 
      ![ de console van Fragmenten van de Inhoud - de indicator van de Taal ](assets/cf-managing-console-language-indicator.png)
 
@@ -433,7 +433,7 @@ U kunt inhoudsfragmenten publiceren naar:
 
 * de **[Publish Dienst](/help/headless/deployment/architecture.md)** - voor volledige, openbare toegang
 
-* De **[Dienst van de Voorproef](/help/headless/deployment/architecture.md)** - om de inhoud voorafgaand aan volledige beschikbaarheid voor te vertonen
+* De **[Dienst van de Voorproef](/help/headless/deployment/architecture.md)** - aan [ voorproef ](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) de inhoud voorafgaand aan volledige beschikbaarheid
 
   >[!CAUTION]
   >
@@ -492,7 +492,7 @@ U kunt de publicatie van inhoudsfragmenten ongedaan maken:
 
 * de toolbar van de [ redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **&#x200B;**&#x200B;of **wordt gevolgd Gepland**.
+In beide gevallen, uitgezocht **unpublish** van de toolbar, die door of **** of **wordt gevolgd Gepland**.
 
 Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service selecteren:
 
@@ -552,7 +552,7 @@ Bijvoorbeeld:
 
 Nadere bijzonderheden over de taalkopieën zijn te vinden op:
 
-* de **kolom van de Taal van de** Console van de Fragmenten van de Inhoud [&#128279;](#information-content-fragments)
+* de **kolom van de Taal van de** Console van de Fragmenten van de Inhoud [](#information-content-fragments)
 * het [ lusje van de Exemplaren van de Taal van de redacteur van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 Het pictogram geeft de landinstelling van het inhoudsfragment aan, samen met het totale aantal landinstellingen/taalkopieën dat aan het inhoudsfragment is gekoppeld. Bijvoorbeeld vanaf de console:
@@ -592,7 +592,7 @@ Zodra geselecteerd, wordt het **Filtreren door** opties getoond (onder het vakje
 
 U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
 
-Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3&rbrace; kolom van de Status &lbrace;:**
+Bijvoorbeeld, uitgezocht **Gepubliceerd** in de **3} kolom van de Status {:**
 
 >[!NOTE]
 >
