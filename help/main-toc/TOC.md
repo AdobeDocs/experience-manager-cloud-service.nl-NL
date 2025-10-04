@@ -1206,7 +1206,7 @@ ht-degree: 1%
       + Authoring{#authoring}
          + [&#x200B; Authoring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=nl-NL)
          + [&#x200B; de redacteur van de Prijsverlaging &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=nl-NL)
-      + [&#x200B; previewing Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [&#x200B; previewing Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=nl-NL)
       + [&#x200B; de Boom van de Structuur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=nl-NL)
       + [&#x200B; Voorproef JSON &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=nl-NL)
    + Selector inhoudfragment {#content-fragment-selector}
