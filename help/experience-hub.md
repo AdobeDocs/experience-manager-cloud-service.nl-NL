@@ -27,16 +27,16 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
 ## Experience Hub sluiten {#aem-experience-hub-about}
 
-1. Om begonnen te worden, klik [ Adobe Experience Cloud ](https://experience.adobe.com/#/@foundationinternal/home) om zijn homepage te openen.
+1. Om begonnen te worden, klik [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/@foundationinternal/home) om zijn homepage te openen.
 
-   ![ Adobe Experience Cloud homepage ](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![&#x200B; Adobe Experience Cloud homepage &#x200B;](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
-1. In de **Snelle toegang** groepering, klik [**Experience Manager** ](https://experience.adobe.com).
+1. In de **Snelle toegang** groepering, klik [**Experience Manager** &#x200B;](https://experience.adobe.com).
 1. Bij eerste toegang, wijst het systeem u toe vooraf ingesteld de **Auteur van de Inhoud** (die dichtbij de hoger-juiste hoek van de pagina wordt gezien). Het bestuurt de widgets, navigatie-items en inhoud die u ziet.
 
    U kunt deze voorinstelling op elk gewenst moment wijzigen.
 
-   ![ de drop-down lijst die de vooraf ingestelde Schrijver toont van de Inhoud wordt geselecteerd ](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+   ![&#x200B; de drop-down lijst die de vooraf ingestelde Schrijver toont van de Inhoud wordt geselecteerd &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 De Adobe Experience Manager-pagina is vernieuwd met verbeterde navigatie- en interactieve widgets. De vorige inzameling van oplossingskaarten verstrekte toegang tot hulpmiddelen als het volgende:
 
@@ -53,34 +53,34 @@ De Adobe Experience Manager-pagina is vernieuwd met verbeterde navigatie- en int
 
 Deze oplossingen worden nu verplaatst naar de belangrijkste navigatie onder **Hulpmiddelen** of **Diensten**. Met nieuwe navigatie-elementen hebt u snel toegang tot AEM-functies die aan uw ingeschakelde oplossingen zijn gekoppeld. Springen naar Assets, Sites, Forms, Content Fragments, Launches en meer.
 
-![ de milieu&#39;s van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
+![&#x200B; de milieu&#39;s van Experience Hub &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
 Gebruik deze functies in uw primaire productieomgeving. Als u toegang hebt tot meerdere AEM-instanties, selecteert u de omgeving waarop u zich wilt richten.
 
-![ Prod en werkgebiedmilieu&#39;s ](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
+![&#x200B; Prod en werkgebiedmilieu&#39;s &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
 Als centraal knooppunt voor Adobe Experience Manager wordt de Experience Hub-pagina uitgebreid met extra widgets en acties die zijn afgestemd op elke gebruikersrol (voorinstelling). Volledig aanpasbaar, laat de pagina u de optimale lay-out voor uw scherm kiezen. Widgets kunnen worden gefilterd, zodat alleen geselecteerde widgets op de hoofdpagina worden weergegeven, zodat u over een persoonlijke ervaring beschikt.
 
-![ aangepaste Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
+![&#x200B; aangepaste Experience Hub &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
 U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aanpassen aan uw behoeften en voorkeuren.
 
-![ widgets van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
+![&#x200B; widgets van Experience Hub &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-De **sectie van milieu&#39;s van de Authoring** {maakt een lijst van alle milieu&#39;s van AEM die u tot toegang hebt en kortere weg aan hun oplossingen en pagina&#39;s kunt omvatten. U kunt specifieke omgevingen vastzetten om deze boven aan de lijst te houden.
+De **sectie van milieu&#39;s van de Authoring** &lbrace;maakt een lijst van alle milieu&#39;s van AEM die u tot toegang hebt en kortere weg aan hun oplossingen en pagina&#39;s kunt omvatten. U kunt specifieke omgevingen vastzetten om deze boven aan de lijst te houden.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 
 **Snelle kortere weg** dichtbij de upper-left hoek van de pagina verstrekt een configureerbare lijst van kortere weg om u te helpen dagelijkse taken beginnen. De lijst is aanpasbaar en elke actie is gericht op de geselecteerde AEM-omgeving.
 
-![ Authoring milieu&#39;s ](/help/implementing/cloud-manager/assets/experience-hub-recents.png)
+![&#x200B; Authoring milieu&#39;s &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-recents.png)
 
-![ Snelle Kortere weg van Experience Hub ](/help/implementing/cloud-manager/assets/experience-hub-quick-shortcuts.png)
+![&#x200B; Snelle Kortere weg van Experience Hub &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-quick-shortcuts.png)
 
 Als er geen productie-AEM Cloud Service of Managed Services-omgevingen bestaan, worden de selectieopties grijs en niet beschikbaar weergegeven.
 
-![ Experience Hub op productiemilieu&#39;s ](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
+![&#x200B; Experience Hub op productiemilieu&#39;s &#x200B;](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
 ## AI Assistant in AEM
 
-Voor klanten die [ voltooide noodzakelijke criteria ](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [ Medewerker AI in AEM ](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Voor klanten die [&#x200B; voltooide noodzakelijke criteria &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [&#x200B; Medewerker AI in AEM &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
