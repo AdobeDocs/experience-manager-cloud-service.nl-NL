@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integreren API in regeleditor, serviceverbeteringen aanroepen
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 # API integreren in regeleditor
 
 <span> het integreren API in de Redacteur van de Regel is onder het Vroege Programma van de Goedkeuring. U kunt schrijven naar `aem-forms-ea@adobe.com` van uw officiële e-mailadres om deel te nemen aan het vroege adoptieprogramma en om toegang tot het vermogen te vragen.</span>
+
+>[!NOTE]
+>
+> De Visual Rule Editor ondersteunt API-integratie in Adaptive Forms op basis van Core Components en Edge Delivery Services Forms.
 
 De Visual Rule Editor in Adaptive Forms ondersteunt directe API-integratie zonder een Form Data Model te maken. U kunt verbinding maken met een API-eindpunt door de API-URL (in JSON-indeling) in te voeren of de configuratie te importeren via een cURL-opdracht. Zodra geïntegreerd, kan de **Invoke Actie van de Dienst** worden gebruikt om API te roepen.
 
@@ -194,11 +198,11 @@ function retryHandler(requestFn) {
 }
 ```
 
-In de bovengenoemde code, beheert de **functie 0&rbrace; retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
+In de bovengenoemde code, beheert de **functie 0} retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
 
 >[!NOTE]
 >
-> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [ Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1&rbrace; artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
+> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [ Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1} artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
 
 ## Veelgestelde vragen
 
