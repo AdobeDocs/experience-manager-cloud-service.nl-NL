@@ -4,10 +4,10 @@ description: Dit zijn de releaseopmerkingen voor de release 2025.10.02 van de Un
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 1%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +18,15 @@ Dit zijn de opmerkingen bij de release van 2 oktober 2025 van de Universal Edito
 
 >[!TIP]
 >
->Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [&#x200B; deze pagina &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Als u **komende** Universele eigenschappen van de Redacteur wenst te testen alvorens zij worden vrijgegeven, te zien gelieve de [ Universele Nota&#39;s van de Versie van de Voorproef van de Redacteur.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
+>Voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service, gelieve te zien [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [&#x200B; Een optie is toegevoegd &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) aan het **3&rbrace; menu van de Rekening &lbrace;in de kopbaltoolbar van Experience Manager om tussen de huidige productieversie van de Universele Redacteur en de aanstaande voorproefversie te schakelen.**
+* [ Een optie is toegevoegd ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) aan het **3} menu van de Rekening {in de kopbaltoolbar van Experience Manager om tussen de huidige productieversie van de Universele Redacteur en de aanstaande voorproefversie te schakelen.**
 
 ## Functies voor vroege adoptie {#early-adopter}
 
@@ -30,7 +34,7 @@ Als u deze functies wilt testen en feedback wilt delen, stuurt u een e-mail naar
 
 ### Nieuwe RTE {#new-rte}
 
-De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [&#x200B; dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
+De nieuwe ProseMirror RTE, die een paginakiezer in het koppelingsdialoogvenster bevat, is nu beschikbaar in het rechterdeelvenster. [ dit RTE kenmerkt flexibele configuratieopties.](/help/implementing/universal-editor/configure-rte.md)
 
 ### Kopiëren en plakken op pagina&#39;s {#copy-paste}
 
