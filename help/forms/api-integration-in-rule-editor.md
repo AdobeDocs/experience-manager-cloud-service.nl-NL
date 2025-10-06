@@ -29,7 +29,7 @@ Bovendien, laat de Visuele Redacteur van de Regel u **succes** en **mislukkingsm
 
 >[!NOTE]
 >
-> API integratie in de Redacteur van de Regel is ook van toepassing op [ Edge Delivery Services Forms authored in Universele Redacteur ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+> API integratie in de Redacteur van de Regel is ook van toepassing op [&#x200B; Edge Delivery Services Forms authored in Universele Redacteur &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Vergelijking: API-integratiemethoden
 
@@ -44,7 +44,7 @@ Bovendien, laat de Visuele Redacteur van de Regel u **succes** en **mislukkingsm
 
 In de onderstaande schermafbeelding wordt het configuratievenster voor API-integratie weergegeven:
 
-![ API de Configuratie van de Integratie ](/help/forms/assets/api-integration-configuration.png)
+![&#x200B; API de Configuratie van de Integratie &#x200B;](/help/forms/assets/api-integration-configuration.png)
 
 ### Opties voor sleutelconfiguratie
 
@@ -103,11 +103,11 @@ Hierdoor wordt gewaarborgd dat aanvragers altijd een actuele en nauwkeurige lijs
 
 U kunt API integreren zonder een Model van de Gegevens van de Vorm tot stand te brengen door **te klikken creeert API Integratie** knoop in de Redacteur van de Regel.
 
-![ creeer API Integratie ](/help/forms/assets/create-api-integration.png)
+![&#x200B; creeer API Integratie &#x200B;](/help/forms/assets/create-api-integration.png)
 
 Een API dienst genoemd **getcountry** wordt gevormd onder **API de Configuratie van de Integratie** in de Redacteur van de Regel:
 
-![ API de Configuratie van het eindpunt van het rustpunt ](/help/forms/assets/api-restendpoint.png)
+![&#x200B; API de Configuratie van het eindpunt van het rustpunt &#x200B;](/help/forms/assets/api-restendpoint.png)
 
 * **API Eindpunt URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Methode van HTTP** → GET
@@ -121,9 +121,9 @@ Wanneer de vorm laadt, **haalt de Dienst** de lijst van landen van API aan. De r
 
 Bijvoorbeeld, wanneer de gebruiker **Land van Burgerschap** opent, wordt de lijst van landen dynamisch getoond van de API reactie.
 
-![ aanhalen-dienst-api-integratie ](/help/forms/assets/invoke-service-api-integration.png)
+![&#x200B; aanhalen-dienst-api-integratie &#x200B;](/help/forms/assets/invoke-service-api-integration.png)
 
-![ API integratieoutput ](/help/forms/assets/api-integration-output.png)
+![&#x200B; API integratieoutput &#x200B;](/help/forms/assets/api-integration-output.png)
 
 Op dezelfde manier gebruiken het **Land van de Uitgave van het Paspoort** en **Land van de Bestemming** de zelfde API vraag, die verenigbare en bijgewerkte gegevens over alle drie gebieden verzekert.
 
@@ -198,11 +198,11 @@ function retryHandler(requestFn) {
 }
 ```
 
-In de bovengenoemde code, beheert de **functie 0} retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
+In de bovengenoemde code, beheert de **functie 0&rbrace; retryHandler API verzoeken met automatische herpogingen in het geval van mislukking.** Er wordt een aanvraagfunctie (requestFn) gebruikt en de aanvraag wordt maximaal twee keer uitgevoerd, waarbij metagegevens worden toegevoegd voor elke nieuwe poging.
 
 >[!NOTE]
 >
-> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [ Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1} artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
+> Voor gedetailleerde stappen op hoe te om douanefuncties toe te voegen, verwijs naar de [&#x200B; Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de 1&rbrace; artikel van de Componenten van de Kern wordt gebaseerd.](/help/forms/create-and-use-custom-functions.md)
 
 ## Veelgestelde vragen
 
