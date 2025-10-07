@@ -4,7 +4,7 @@ description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in 
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Het biedt verschillende functies die de ontwikkeling van AEM vereenvoudigen:
 
 Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming &lbrace;](https://www.eclipse.org/downloads/packages/).
+* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming {](https://www.eclipse.org/downloads/packages/).
 * Vorm uw eclipse installatie om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier te uitgeven zoals die in [ wordt beschreven Veelgestelde vragen van de Verduistering.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
@@ -42,7 +42,10 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
 Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de stop als volgt installeren:
 
-1. Open de [ Website van de Hulpmiddelen van de Ontwikkelaar van AEM ](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Open de [ Website van de Hulpmiddelen van de Ontwikkelaar van AEM ](https://eclipse.adobe.com/).
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Kopieer de **Verbinding van de Installatie**.
 
@@ -222,7 +225,7 @@ Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informati
 * De [ sectie van het Oplossen van problemen ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * De [ Bekende lijst van kwesties ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende officiële [&#128279;](https://www.eclipse.org/) documentatie van de Verduistering  kan helpen aan opstelling uw milieu:
+De volgende officiële [ documentatie van de Verduistering ](https://www.eclipse.org/) kan helpen aan opstelling uw milieu:
 
 * [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
 * [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)
