@@ -5,9 +5,9 @@ keywords: 'Marketo Engage-gegevensbron gebruiken in Adaptive Forms: Hoe kan ik e
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,6 @@ ht-degree: 0%
 Nadat u de configuratie van de cloudservice hebt gemaakt om Marketo Engage te integreren met de bestaande AEM Forms, kunt u de gegevensbron voor formulieren configureren.
 
 Door gegevensintegratie te configureren, kunnen gebruikers verbinding maken met verschillende gegevensbronnen of schema&#39;s. Door te integreren met de Marketo Engage-gegevensbron en deze in verschillende formulieren te gebruiken, kunt u bewerkingen op die gegevens uitvoeren. Om de gesteunde uit-van-de-doos gegevensbronnen voor een Aanpassings Vorm te onderzoeken, verwijs naar [ vormen Gegevensbronnen ](/help/forms/configure-data-sources.md) artikel.
-
-## Overwegingen bij het configureren van de Marketo Engage-gegevensbron voor formulieren
-
-Denk aan het configureren van Marketo Engage-gegevensbron voor formulieren:
-
-* Het is niet mogelijk om Edge Delivery Services Forms met Marketo Engage te verbinden.
 
 ## Vereiste om Marketo Engage-gegevensbron voor formulieren te gebruiken
 
