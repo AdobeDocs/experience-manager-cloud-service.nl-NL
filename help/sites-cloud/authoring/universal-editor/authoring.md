@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 0%
@@ -194,7 +194,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsboom als in de red
 
 >[!NOTE]
 >
->De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [&#128279;](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
+>De componenten kunnen slechts tussen containers worden bewogen als de de componentenfilter van doelcontainers [ ](/help/implementing/universal-editor/filtering.md) de geselecteerde component toestaat.
 
 ### Ongedaan maken en Opnieuw {#undo-redo}
 
@@ -212,7 +212,7 @@ Selecteer de knoppen Ongedaan maken of Opnieuw om de laatste bewerking in de edi
 
 ### Kopiëren en plakken {#copy-paste}
 
-U kunt componenten kopiëren en kleven die binnen [ containers zijn.](/help/implementing/universal-editor/field-types.md#container) Dit is mogelijk slechts binnen de zelfde pagina en als de [ doelcontainer de component om toelaat worden gekleefd.](/help/implementing/universal-editor/filtering.md)
+U kunt componenten kopiëren en kleven die binnen [ containers ](/help/implementing/universal-editor/field-types.md#container) op zelfde browser tabel zijn. Dit is mogelijk slechts als de [ doelcontainer geen geplaatste filters heeft.](/help/implementing/universal-editor/filtering.md)
 
 ![ pictogram van het Exemplaar ](assets/copy.png)
 ![ het pictogram van het Deeg ](assets/paste.png)
@@ -272,7 +272,7 @@ Voor informatie over hoe te om deze uitbreiding toe te laten, [ te zien gelieve 
 
 >[!NOTE]
 >
->De &lbrace;**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
+>De {**werken slechts voor pagina&#39;s, niet de Fragmenten van de Inhoud van AEM multi-plaats-beheer (MSM).**
 
 ### Pagina-eigenschappen openen {#page-properties}
 
