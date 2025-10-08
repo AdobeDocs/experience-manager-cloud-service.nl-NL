@@ -4,16 +4,16 @@ description: ExternalAlizer is de dienst OSGi die u programmatically een middelw
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
 
 # URL&#39;s extern maken {#externalizing-urls}
 
-In AEM, is **ExternalAlizer** de dienst OSGi die u programmatically een middelweg (bijvoorbeeld, `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld, `https://www.mycompany.com/path/to/my/page`) laat omzetten door de weg met pre-gevormde DNS te bevestigen.
+In AEM, is **externalizer** de dienst OSGi die u programmatically een middelweg (bijvoorbeeld, `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld, `https://www.mycompany.com/path/to/my/page`) laat omzetten door de weg met pre-gevormde DNS te bevestigen.
 
 Omdat een instantie van AEM as a Cloud Service zijn extern zichtbare URL niet kan kennen en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
@@ -21,7 +21,7 @@ Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het
 
 ## Standaardgedrag van Externalzer en Hoe te om met voeten te treden {#default-behavior}
 
-Buiten het vak wijst de service Externalzer een aantal domeinid&#39;s toe aan absolute URL-voorvoegsels die overeenkomen met de AEM service-URL&#39;s die voor de omgeving zijn gegenereerd, zoals `author https://author-p12345-e6789.adobeaemcloud.com` en `publish https://publish-p12345-e6789.adobeaemcloud.com` . De basis-URL&#39;s voor elk van deze standaarddomeinen worden gelezen van omgevingsvariabelen die door Cloud Manager worden gedefinieerd.
+Buiten het vak wijst de service Externalzer een aantal domeinid&#39;s toe aan absolute URL-voorvoegsels die overeenkomen met de AEM-service-URL&#39;s die voor de omgeving zijn gegenereerd, zoals `author https://author-p12345-e6789.adobeaemcloud.com` en `publish https://publish-p12345-e6789.adobeaemcloud.com` . De basis-URL&#39;s voor elk van deze standaarddomeinen worden gelezen van omgevingsvariabelen die door Cloud Manager worden gedefinieerd.
 
 Ter referentie is de standaard OSGi-configuratie voor `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` in feite:
 
@@ -42,7 +42,11 @@ Ter referentie is de standaard OSGi-configuratie voor `com.day.cq.commons.impl.E
 >
 >Het implementeren van een aangepast `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` -bestand naar AEM as a Cloud Service waarbij een van deze &#39;out-of-the-box&#39;-domeintoewijzingen wordt weggelaten, kan leiden tot onvoorspelbaar toepassingsgedrag.
 
-Om de `preview` en `publish` waarden met voeten te treden, gebruik de het omgevingsvariabelen van Cloud Manager zoals die in het artikel [ worden beschreven het Vormen OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en het plaatsen van vooraf bepaalde `AEM_CDN_DOMAIN_PUBLISH` en `AEM_CDN_DOMAIN_PREVIEW` variabelen.
+Definieer of overschrijf de omgevingsvariabelen van `EXTERNALIZER` (bijvoorbeeld `AEM_EXTERNALIZER_AUTHOR` ) in Cloud Manager niet. Als u in plaats daarvan de domeinwaarden `publish` of `preview` moet overschrijven, definieert en gebruikt u de omgevingsvariabelen `AEM_CDN_DOMAIN_PUBLISH` en `AEM_CDN_DOMAIN_PREVIEW` . Deze variabelen zullen automatisch aan de overeenkomstige gebieden in de configuratie ExternalAlizer tijdens opstarten worden toegewezen.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Het vormen van de Dienst Externalzer {#configuring-the-externalizer-service}
 
@@ -74,7 +78,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
    * **`scheme`** is meestal http of https, maar kan een ander protocol zijn.
 
-      * Adobe raadt u aan https te gebruiken om https-koppelingen af te dwingen.
+      * Adobe raadt u aan https te gebruiken om https-koppelingen te forceren.
       * Deze wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
 
    * **`server`** is de hostnaam (een domeinnaam of ip-adres).
@@ -83,7 +87,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
    Bijvoorbeeld: `production https://my.production.instance`
 
-   De volgende toewijzingsnamen zijn vooraf gedefinieerd en moeten altijd worden ingesteld op basis van AEM:
+   De volgende toewijzingsnamen zijn vooraf gedefinieerd en moeten altijd worden ingesteld als AEM erop vertrouwt:
 
    * `local` - de lokale instantie
    * `author` - de DNS van het ontwerpsysteem
@@ -91,7 +95,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
    >[!NOTE]
    >
-   >Met een aangepaste configuratie kunt u een nieuwe categorie toevoegen, zoals `production` , `staging` of zelfs externe niet-AEM systemen, zoals `my-internal-webservice` . Het is nuttig om harde codering dergelijke URLs over verschillende plaatsen in codebase van een project te vermijden.
+   >Met een aangepaste configuratie kunt u een nieuwe categorie toevoegen, zoals `production` , `staging` of zelfs externe niet-AEM-systemen, zoals `my-internal-webservice` . Het is nuttig om harde codering dergelijke URLs over verschillende plaatsen in codebase van een project te vermijden.
 
 1. Klik **sparen** om uw veranderingen te bewaren.
 
