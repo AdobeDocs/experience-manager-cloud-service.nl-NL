@@ -26,7 +26,7 @@ ht-degree: 0%
 
 De Component van de Lijn in de Interactieve Communicatie (IC) redacteur staat auteurs toe om horizontale of verticale lijnen binnen een communicatie lay-out op te nemen. Deze regels helpen u bij het visueel segmenteren van inhoud, het verbeteren van de leesbaarheid of het benadrukken van de formulierstructuur. Met aanpasbare stijlen, zoals ononderbroken lijnen of onderstrepingen en flexibele positionering, kan de lijncomponent zowel voor functionele als voor esthetische doeleinden in formulierontwerp worden gebruikt.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/line.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/line.png)
 
 ## &#x200B;2. Eigenschappen
 

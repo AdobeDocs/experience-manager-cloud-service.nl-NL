@@ -27,7 +27,7 @@ ht-degree: 0%
 Met de component Rectangle in de IC-editor (Interactive Communication) kunnen auteurs gevormde grafische elementen toevoegen die fungeren als lay-outscheidingslijnen, visuele accenten of inhoudscontainers. Met rechthoeken wordt de visuele hiërarchie verbeterd en wordt de aandacht van gebruikers gevestigd op gestructureerde communicatielay-outs.
 Deze component is niet gekoppeld aan gegevens, maar draagt bij tot een betere ontwerphelderheid, het groeperen van verwante velden en het verbeteren van de algehele presentatie.
 
-![ vind IC Docu ](/help/forms/interactive-communication/assets/rectangle.png)
+![&#x200B; vind IC Docu &#x200B;](/help/forms/interactive-communication/assets/rectangle.png)
 
 ## &#x200B;2. Eigenschappen
 

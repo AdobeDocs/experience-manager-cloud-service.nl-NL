@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Met de component Numeriek veld in de IC-editor (Interactive Communication) kunnen auteurs numerieke invoer van gebruikers verzamelen in een gecontroleerde indeling. Of u nu telefoonnummers, pincodes, beleids-id&#39;s of financiële cijfers vastlegt, dit veld zorgt ervoor dat alleen numerieke waarden worden geaccepteerd. De component steunt ook het stileren, het formatteren, bevestiging, en gegevensband, die het voor gestructureerde mededelingen essentieel maken.
 
-![ vinden IC Doc ](/help/forms/interactive-communication/assets/numericfield.png)
+![&#x200B; vinden IC Doc &#x200B;](/help/forms/interactive-communication/assets/numericfield.png)
 
 ## &#x200B;2. Eigenschappen
 
