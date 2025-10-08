@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [ Adobe Marketo Engage ](https://experienceleague.adobe.com/en/docs/marketo/using/home) te integreren.
+Na het creëren van de configuratie van de wolkendienst om Marketo Engage met AEM Forms te integreren, kunt u een Aangepast Vorm vormen om met [&#x200B; Adobe Marketo Engage &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/home) te integreren.
 
 U kunt Marketo Engage verbinden met een adaptief formulier via de wizard Formulier, die het configuratieproces vereenvoudigt door u door elke stap te begeleiden. Het omvat het selecteren van sjablonen, stijlen en gegevensvelden en het instellen van gegevenstoewijzing om te controleren of uw formulier klaar is om te communiceren met Marketo Engage nadat het is gemaakt. Met de wizard Formulier kunt u het Adaptief formulier ook zodanig configureren dat gegevens bij verzending rechtstreeks naar Adobe Marketo Engage worden verzonden.
 
@@ -26,7 +26,7 @@ U kunt Marketo Engage verbinden met een adaptief formulier via de wizard Formuli
 
 Vereiste om Marketo Engage te verbinden met formulieren:
 
-* Creeer de [ configuratie van de wolkendienst om Marketo Engage met vormen ](/help/forms/integrate-form-to-marketo-engage.md) te integreren.
+* Creeer de [&#x200B; configuratie van de wolkendienst om Marketo Engage met vormen &#x200B;](/help/forms/integrate-form-to-marketo-engage.md) te integreren.
 
 ## Hoe te om nieuw Aangepast Vorm te vormen om met Marketo Engage te integreren?
 
@@ -42,34 +42,34 @@ Voer de volgende stappen uit om een nieuw adaptief formulier te configureren dat
 
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![ Uitgezochte Forms en Documenten ](/help/forms/assets/select-forms.png)
+   ![&#x200B; Uitgezochte Forms en Documenten &#x200B;](/help/forms/assets/select-forms.png)
 
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard Formulier maken wordt geopend.
 
-   ![ Uitgezochte AF ](/help/forms/assets/select-create-forms.png)
+   ![&#x200B; Uitgezochte AF &#x200B;](/help/forms/assets/select-create-forms.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Source]** een sjabloon
 
-   ![ Uitgezochte Malplaatjes ](/help/forms/assets/select-template-af1.png)
+   ![&#x200B; Uitgezochte Malplaatjes &#x200B;](/help/forms/assets/select-template-af1.png)
 
 1. Selecteer het thema in het **[!UICONTROL Style]** .
 
-   ![ Uitgezochte Thema ](/help/forms/assets/select-form-theme-af1.png)
+   ![&#x200B; Uitgezochte Thema &#x200B;](/help/forms/assets/select-form-theme-af1.png)
 1. In het **[!UICONTROL Data]** lusje, selecteer een gegevensmodel als **Marketo Engage**.
 1. Selecteer **[!UICONTROL Cloud Configuration]** van de drop-down lijst die in de juiste ruit van het scherm verschijnt.
 Standaard worden alle velden in de gekoppelde configuratie weergegeven. De wizard biedt u het gemak om via selectievakjes te kiezen welke velden moeten worden opgenomen in het adaptieve formulier.
 
-   ![ Uitgezochte Gegevensmodel ](/help/forms/assets/select-marketo-data-af1.png)
+   ![&#x200B; Uitgezochte Gegevensmodel &#x200B;](/help/forms/assets/select-marketo-data-af1.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Submission]** de optie Verzenden als **[!UICONTROL Submit to Marketo]** .
 
    Wanneer u het gegevensmodel als **Marketo Engage** selecteert, dan verzend actie zoals **voorlegt aan Marketo** wordt auto-geselecteerd. U kunt een andere verzendactie selecteren op het tabblad **[!UICONTROL Submission]** . Op het tabblad **[!UICONTROL Submission]** worden alle beschikbare verzendhandelingen weergegeven.
 
-   ![ voorleggen aan Marketo treedt ](/help/forms/assets/select-marketo-engage.png) in werking
+   ![&#x200B; voorleggen aan Marketo treedt &#x200B;](/help/forms/assets/select-marketo-engage.png) in werking
 
 1. Selecteer **[!UICONTROL Create]**. Geef een titel, naam en locatie op om het adaptieve formulier op te slaan.
 
-   ![ creeer Vorm ](/help/forms/assets/create-marketo-form.png)
+   ![&#x200B; creeer Vorm &#x200B;](/help/forms/assets/create-marketo-form.png)
 
 1. Selecteer **[!UICONTROL Create]** .
 
@@ -81,19 +81,19 @@ Voer de volgende stappen uit om een nieuw adaptief formulier te configureren op 
 
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![ Uitgezochte Forms en Documenten ](/help/forms/assets/select-forms.png)
+   ![&#x200B; Uitgezochte Forms en Documenten &#x200B;](/help/forms/assets/select-forms.png)
 
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard Formulier maken wordt geopend.
 
-   ![ Uitgezochte AF ](/help/forms/assets/select-create-forms.png)
+   ![&#x200B; Uitgezochte AF &#x200B;](/help/forms/assets/select-create-forms.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Source]** een sjabloon
 
-   ![ Uitgezochte Malplaatjes ](/help/forms/assets/select-template.png)
+   ![&#x200B; Uitgezochte Malplaatjes &#x200B;](/help/forms/assets/select-template.png)
 
 1. Selecteer het thema in het **[!UICONTROL Style]** .
 
-   ![ Uitgezochte Thema ](/help/forms/assets/select-form-theme.png)
+   ![&#x200B; Uitgezochte Thema &#x200B;](/help/forms/assets/select-form-theme.png)
 
 
 1. In het **[!UICONTROL Data]** lusje, selecteer een gegevensmodel als **Marketo Engage**.
@@ -101,17 +101,17 @@ Voer de volgende stappen uit om een nieuw adaptief formulier te configureren op 
 1. Selecteer **[!UICONTROL Cloud Configuration]** van de drop-down lijst die in de juiste ruit van het scherm verschijnt.
 Standaard worden alle velden in de gekoppelde configuratie weergegeven. De wizard biedt u het gemak om via selectievakjes te kiezen welke velden moeten worden opgenomen in het adaptieve formulier.
 
-   ![ Uitgezochte Gegevensmodel ](/help/forms/assets/select-marketo-data.png)
+   ![&#x200B; Uitgezochte Gegevensmodel &#x200B;](/help/forms/assets/select-marketo-data.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Submission]** de optie Verzenden als **[!UICONTROL Submit to Marketo]** .
 
    Wanneer u het gegevensmodel als **Marketo Engage** selecteert, dan verzend actie zoals **voorlegt aan Marketo** wordt auto-geselecteerd. U kunt een andere verzendactie selecteren op het tabblad **[!UICONTROL Submission]** . Op het tabblad **[!UICONTROL Submission]** worden alle beschikbare verzendhandelingen weergegeven.
 
-   ![ voorleggen aan Marketo treedt ](/help/forms/assets/select-marketo-engage.png) in werking
+   ![&#x200B; voorleggen aan Marketo treedt &#x200B;](/help/forms/assets/select-marketo-engage.png) in werking
 
 1. Selecteer **[!UICONTROL Create]**. Geef een titel, naam en locatie op om het adaptieve formulier op te slaan.
 
-   ![ creeer Vorm ](/help/forms/assets/create-marketo-form.png)
+   ![&#x200B; creeer Vorm &#x200B;](/help/forms/assets/create-marketo-form.png)
 
 1. Selecteer **[!UICONTROL Create]** .
 
@@ -123,32 +123,32 @@ Voer de volgende stappen uit om een nieuw adaptief formulier te configureren dat
 
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
-   ![ Uitgezochte Forms en Documenten ](/help/forms/assets/select-forms.png)
+   ![&#x200B; Uitgezochte Forms en Documenten &#x200B;](/help/forms/assets/select-forms.png)
 
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]** . De wizard Formulier maken wordt geopend.
 
-   ![ Uitgezochte AF ](/help/forms/assets/select-create-forms.png)
+   ![&#x200B; Uitgezochte AF &#x200B;](/help/forms/assets/select-create-forms.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Source]** een sjabloon
 
-   ![ Uitgezochte Malplaatjes ](/help/forms/assets/select-template-ue.png)
+   ![&#x200B; Uitgezochte Malplaatjes &#x200B;](/help/forms/assets/select-template-ue.png)
 
 1. In het **[!UICONTROL Data]** lusje, selecteer een gegevensmodel als **Marketo Engage**.
 
 1. Selecteer **[!UICONTROL Cloud Configuration]** van de drop-down lijst die in de juiste ruit van het scherm verschijnt.
 Standaard worden alle velden in de gekoppelde configuratie weergegeven. De wizard biedt u het gemak om via selectievakjes te kiezen welke velden moeten worden opgenomen in het adaptieve formulier.
 
-   ![ Uitgezochte Gegevensmodel ](/help/forms/assets/select-marketo-data-ue.png)
+   ![&#x200B; Uitgezochte Gegevensmodel &#x200B;](/help/forms/assets/select-marketo-data-ue.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Submission]** de optie Verzenden als **[!UICONTROL Submit to Marketo]** .
 
    Wanneer u het gegevensmodel als **Marketo Engage** selecteert, dan verzend actie zoals **voorlegt aan Marketo** wordt auto-geselecteerd. U kunt een andere verzendactie selecteren op het tabblad **[!UICONTROL Submission]** . Op het tabblad **[!UICONTROL Submission]** worden alle beschikbare verzendhandelingen weergegeven.
 
-   ![ voorleggen aan Marketo treedt ](/help/forms/assets/select-marketo-engage-ue.png) in werking
+   ![&#x200B; voorleggen aan Marketo treedt &#x200B;](/help/forms/assets/select-marketo-engage-ue.png) in werking
 
 1. Selecteer **[!UICONTROL Create]**. Geef een titel, naam en locatie op om het adaptieve formulier op te slaan.
 
-   ![ creeer Vorm ](/help/forms/assets/create-marketo-form.png)
+   ![&#x200B; creeer Vorm &#x200B;](/help/forms/assets/create-marketo-form.png)
 
 1. Selecteer **[!UICONTROL Create]** .
 
@@ -174,7 +174,7 @@ Het adaptieve formulier is nu geconfigureerd voor verbinding met een Marketo Eng
 
 ## Volgende stap
 
-U kunt een AanpassingsVorm met de [ bibliotheek van Munchkin ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
+U kunt een AanpassingsVorm met de [&#x200B; bibliotheek van Munchkin &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) ook verbinden om het aantal bezoeken, klikken, en vormvoorlegging te volgen.
 
 ## Verwante artikelen
 
