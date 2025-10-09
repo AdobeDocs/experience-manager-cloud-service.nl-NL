@@ -3,9 +3,9 @@ title: Verzamelingen beheren in Content Hub
 description: Leer hoe u verzamelingen beheert in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Met [!DNL Content Hub] kunt u openbare verzamelingen maken. Deze verzamelingen z
 * **Download**: Download de activa.
 * **verwijder**: Verwijder specifieke activa uit een inzameling.
 * **Schrapping**: Schrap de volledige inzameling.
+* **Vastzetten/speld**: Vastzet of speld inzameling los.
+* **Favoriet**: De inzameling van het teken als favoriet.
 
 Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middelen die beschikbaar zijn in [!DNL Content Hub] en deze beheren.
 
@@ -34,13 +36,13 @@ Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middele
 
 ## Verzamelingen maken{#create-collections}
 
-U kunt verkiezen om een nieuwe inzameling [&#128279;](#create-new-collection) tot stand te brengen of [ activa aan een bestaande inzameling ](#add-assets-to-existing-collection) toe te voegen terwijl het beheren van bestuur.
+U kunt verkiezen om een nieuwe inzameling [ tot stand te brengen of ](#create-new-collection) activa aan een bestaande inzameling [ toe te voegen terwijl het beheren van bestuur.](#add-assets-to-existing-collection)
 
 ### Een nieuwe verzameling maken{#create-new-collection}
 
 Voer de onderstaande stappen uit om de toegang te beheren terwijl u verzamelingen maakt:
 
-1. Ga naar **[!DNL Collections]** en klik op **[!UICONTROL Create Collection]** . Het nieuwe venster Verzameling wordt weergegeven.
+1. Ga naar **[!DNL Collections]** en klik op **[!UICONTROL Create Collection]** . Er wordt een nieuw venster Verzameling weergegeven.
 
 1. Voeg **[!UICONTROL Title]** en **[!UICONTROL Description]** toe voor de verzameling.
 
@@ -163,5 +165,39 @@ De geselecteerde elementen worden uit de verzameling verwijderd.
 
 Alleen beheerders en makers kunnen een verzameling verwijderen. Als u een verzameling wilt verwijderen, navigeert u naar het tabblad **[!UICONTROL Collections]** en klikt u op de verzameling die u wilt verwijderen. Klik ![ schrappingspictogram ](assets/delete-icon.svg) pictogram om de inzameling te schrappen.
 
+## Verzameling vastzetten of vastzetten {#pin-unpin-collection}
 
+Content Hub-beheerders kunnen verzamelingen in Content Hub vastzetten, zodat ze snel toegankelijk zijn. Vastgezette verzamelingen worden weergegeven in een speciale sectie Vastgezet op de startpagina van Verzamelingen, zodat belangrijke verzamelingen gemakkelijker binnen bereik blijven. Voor snelle toegang, kunt u een inzameling vastzetten of losmaken door de hieronder stappen uit te voeren:
+
+1. Blader naar de verzamelingen die u wilt vastzetten of waarvan u de speld wilt vrijmaken.
+
+1. Klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Pin to quick access]**. Er verschijnt een bevestigingsvak.
+
+   ![ speldinzameling ](assets/pin-collection.png)
+
+1. Klik op **[!UICONTROL Pin]** om te bevestigen. Het waarschuwingsbericht wordt weergegeven wanneer u een privéverzameling vastzet.
+
+   ![ bevestigt speldinzameling ](assets/confirm-pin-collection.png)
+
+   De vastgezette verzamelingen worden bovenaan weergegeven, zodat u ze snel kunt gebruiken. Alternatief, om de inzameling los te maken, klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Unpin]**.
+
+   ![ Mening vastgezette inzamelingen ](assets/pinned-collections.png)
+
+## Verzamelingen markeren als favoriet {#favorite-collection}
+
+In Content Hub kunt u verzamelingen als favoriet markeren, zodat u ze eenvoudiger kunt organiseren en ophalen. Als je je favoriete verzamelingen hebt toegevoegd, kun je ze gemakkelijk vinden op het tabblad Favorieten op de startpagina van Content Hub. Daarnaast kunt u zoeken in elementen in Favoriete verzamelingen. Ga als volgt te werk als u verzamelingen als favorieten wilt markeren:
+
+1. Blader naar de verzamelingen die u wilt vastzetten of waarvan u de speld wilt vrijmaken.
+
+1. Klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Add to Favorites]** om inzameling als Favoriet te merken.
+
+   ![ de Inzamelingen van het Teken als Favoriet ](assets/mark-favorite-collection.png)
+
+   Verzamelingen die zijn gemarkeerd als Favorieten, worden nu weergegeven onder het tabblad **[!UICONTROL My Favorites]** . U kunt de verzamelingen ook verwijderen uit **[!UICONTROL My Favorites]** . Om dit te doen, klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Remove from Favorites]**.
+
+   ![ verwijder Inzameling als Favoriet ](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[ Vastzetten of de inzameling van de speld ](#pin-unpin-collection) en [ Verzamelingen van het Teken als Favorieten ](#favorite-collection) zijn een beperkte beschikbaarheidseigenschappen. U kunt een geval voor Adobe-klantenondersteuning maken en verzenden om deze voor uw implementatie in te schakelen.
 
