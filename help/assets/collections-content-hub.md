@@ -3,7 +3,7 @@ title: Verzamelingen beheren in Content Hub
 description: Leer hoe u verzamelingen beheert in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -32,11 +32,11 @@ Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middele
 
 ## Vereisten {#prerequisites}
 
-[&#x200B; de gebruikers van Content Hub &#x200B;](deploy-content-hub.md#onboard-content-hub-users) kunnen de acties uitvoeren die in dit artikel worden vermeld.
+[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen de acties uitvoeren die in dit artikel worden vermeld.
 
 ## Verzamelingen maken{#create-collections}
 
-U kunt verkiezen om een nieuwe inzameling [&#x200B; tot stand te brengen of &#x200B;](#create-new-collection) activa aan een bestaande inzameling [&#x200B; toe te voegen terwijl het beheren van bestuur.](#add-assets-to-existing-collection)
+U kunt verkiezen om een nieuwe inzameling [ tot stand te brengen of ](#create-new-collection) activa aan een bestaande inzameling [ toe te voegen terwijl het beheren van bestuur.](#add-assets-to-existing-collection)
 
 ### Een nieuwe verzameling maken{#create-new-collection}
 
@@ -46,7 +46,7 @@ Voer de onderstaande stappen uit om de toegang te beheren terwijl u verzamelinge
 
 1. Voeg **[!UICONTROL Title]** en **[!UICONTROL Description]** toe voor de verzameling.
 
-   ![&#x200B; inzamelingstoestemmingen &#x200B;](assets/collection-permissions.png)
+   ![ inzamelingstoestemmingen ](assets/collection-permissions.png)
 
 1. Selecteer onder **[!UICONTROL Who can access]** dropdown > het type van toegangsbeheer. De volgende opties zijn beschikbaar:
 
@@ -58,9 +58,9 @@ Voer de onderstaande stappen uit om de toegang te beheren terwijl u verzamelinge
 
    >[!NOTE]
    >
-   > [!DNL Content Hub] de beheerder kan alle opties bekijken beschikbaar onder **[!UICONTROL Who can access]** dropdown, terwijl voor regelmatige gebruikers, u [&#x200B; moet specificeren en &#x200B;](configure-content-hub-ui-options.md) vormen welke opties zij kunnen toegang hebben.
+   > [!DNL Content Hub] de beheerder kan alle opties bekijken beschikbaar onder **[!UICONTROL Who can access]** dropdown, terwijl voor regelmatige gebruikers, u [ moet specificeren en ](configure-content-hub-ui-options.md) vormen welke opties zij kunnen toegang hebben.
 
-1. Klik op **[!UICONTROL Create]**. Zodra gedaan, kunt u activa [&#x200B; toevoegen aan de inzameling &#x200B;](#add-assets-to-existing-collection).
+1. Klik op **[!UICONTROL Create]**. Zodra gedaan, kunt u activa [ toevoegen aan de inzameling ](#add-assets-to-existing-collection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
@@ -77,7 +77,7 @@ Voer de onderstaande stappen uit om de toegang te beheren terwijl u verzamelinge
 
 Als u elementen aan een bestaande verzameling wilt toevoegen, selecteert u de elementen die u aan de verzameling wilt toevoegen. Klik op **[!UICONTROL Add to collection]**. U wordt gevraagd de verzameling te selecteren.
 
-![&#x200B; creeer een nieuwe inzameling &#x200B;](assets/create-add-collection.jpg)
+![ creeer een nieuwe inzameling ](assets/create-add-collection.jpg)
 
 Kies de verzameling waar u het element wilt toevoegen. U kunt de bestaande verzameling ook doorzoeken met de zoekbalk. <br> selecteer de inzameling(s) waaraan u de activa moet toevoegen en **[!UICONTROL Add to collection]** klikken.
 
@@ -85,11 +85,11 @@ Kies de verzameling waar u het element wilt toevoegen. U kunt de bestaande verza
 
 Navigeer naar het tabblad **[!UICONTROL Collections]** en zoek naar de naam van de verzameling. Met filters kunt u de zoekresultaten verfijnen door specifieke criteria te selecteren, zodat u snel de meest relevante verzamelingen kunt vinden.
 
-Klik op de naam van de verzameling als u de lijst met elementen die beschikbaar zijn in een verzameling wilt weergeven. U kunt filters ook toepassen binnen een verzameling om de resultaten van de elementen te beperken. Klik op het element dat u wilt weergeven in een verzameling. [!DNL Content Hub] geeft de gedetailleerde weergave van het element weer. [&#x200B; zie activa details &#x200B;](asset-properties-content-hub.md).
+Klik op de naam van de verzameling als u de lijst met elementen die beschikbaar zijn in een verzameling wilt weergeven. U kunt filters ook toepassen binnen een verzameling om de resultaten van de elementen te beperken. Klik op het element dat u wilt weergeven in een verzameling. [!DNL Content Hub] geeft de gedetailleerde weergave van het element weer. [ zie activa details ](asset-properties-content-hub.md).
 
 ### Weergave Filterverzamelingen {#filter-collections-view}
 
-Met Content Hub kunt u de weergave Verzamelingen filteren, zodat u gemakkelijk kunt terugvinden wat u zoekt door de opties te verkleinen op basis van uw voorkeuren. Verzeker de [&#x200B; configuratie van Inzamelingen in Content Hub &#x200B;](configure-content-hub-ui-options.md#configure-collections-content-hub).
+Met Content Hub kunt u de weergave Verzamelingen filteren, zodat u gemakkelijk kunt terugvinden wat u zoekt door de opties te verkleinen op basis van uw voorkeuren. Verzeker de [ configuratie van Inzamelingen in Content Hub ](configure-content-hub-ui-options.md#configure-collections-content-hub).
 
 Ga naar de tab **[!DNL Collections]** en navigeer naar de vervolgkeuzelijst Verzamelingen om de weergave Verzamelingen te filteren. Kies een van de volgende opties:
 
@@ -98,7 +98,7 @@ Ga naar de tab **[!DNL Collections]** en navigeer naar de vervolgkeuzelijst Verz
 * **[!UICONTROL Anyone can view]:** deze optie laat u inzamelingen filtreren die voor iedereen toegankelijk maar editable slechts door de schepper zijn.
 * **[!UICONTROL Anyone can edit]:** selecteer deze optie aan filterinzamelingen die zowel toegankelijk als editable door iedereen zijn.
 
-  ![&#x200B; de mening van filterinzamelingen &#x200B;](assets/filter-collection-view.png)
+  ![ de mening van filterinzamelingen ](assets/filter-collection-view.png)
 
 Als u bovendien de weergave voor verzamelingen wilt filteren op basis van toegangsmachtigingen, gaat u naar het tabblad **[!DNL Collections]** en navigeert u naar een van de volgende opties:
 
@@ -106,7 +106,7 @@ Als u bovendien de weergave voor verzamelingen wilt filteren op basis van toegan
 
 * **[!UICONTROL Created by me]:** dit filter beperkt u tot meningsinzamelingen die door u worden gecreeerd.
 
-  ![&#x200B; de mening van filterinzamelingen &#x200B;](assets/filter-collection-view1.png)
+  ![ de mening van filterinzamelingen ](assets/filter-collection-view1.png)
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -124,27 +124,27 @@ Als u bovendien de weergave voor verzamelingen wilt filteren op basis van toegan
 ## Elementen downloaden die beschikbaar zijn in een verzameling{#download-assets-within-collection}
 
 Navigeer naar het tabblad **[!UICONTROL Collections]** als u elementen die beschikbaar zijn in een verzameling wilt downloaden.\
-Klik ![&#x200B; pictogram van de downloaddownload &#x200B;](assets/download-icon.svg) pictogram op de inzamelingskaart.
+Klik ![ pictogram van de downloaddownload ](assets/download-icon.svg) pictogram op de inzamelingskaart.
 
-![&#x200B; lusje van de Inzameling &#x200B;](assets/download-collection.png)
+![ lusje van de Inzameling ](assets/download-collection.png)
 
 Alle elementen in de verzameling worden gedownload.
 
 U kunt de verzameling ook openen om de elementen afzonderlijk te downloaden. Klik op de verzameling met de elementen die u wilt downloaden. Selecteer de elementen en klik op **[!UICONTROL Download]** .
 
-Leer hoe te om [&#x200B; activa van  [!DNL Content Hub]](download-assets-content-hub.md) te downloaden.
+Leer hoe te om [ activa van  [!DNL Content Hub]](download-assets-content-hub.md) te downloaden.
 
 ## Elementen delen die beschikbaar zijn in een verzameling {#share-assets-available-within-collection}
 
-U kunt ook de elementen delen die beschikbaar zijn in een verzameling. Zorg ervoor om [&#x200B; openbaar verbinding toe te laten delend in Content Hub &#x200B;](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigeer naar de tab **[!UICONTROL Collections]** . Selecteer het ![&#x200B; pictogram van het aandeel &#x200B;](assets/share.svg) pictogram op de inzamelingskaart. De koppeling voor delen wordt gekopieerd. U kunt de gekopieerde koppeling delen met de ontvanger. Leer meer over [&#x200B; delend activa in  [!DNL Content Hub]](share-assets-content-hub.md).
+U kunt ook de elementen delen die beschikbaar zijn in een verzameling. Zorg ervoor om [ openbaar verbinding toe te laten delend in Content Hub ](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigeer naar de tab **[!UICONTROL Collections]** . Selecteer het ![ pictogram van het aandeel ](assets/share.svg) pictogram op de inzamelingskaart. De koppeling voor delen wordt gekopieerd. U kunt de gekopieerde koppeling delen met de ontvanger. Leer meer over [ delend activa in  [!DNL Content Hub]](share-assets-content-hub.md).
 
 Content Hub Collections biedt uitgebreide governancegereedschappen voor effectief middelenbeheer, waaronder aanpasbare deelmachtigingen en samenwerkingsfuncties. Van read-only toegang tot volledige administratieve controle, steunen deze montages fijn bestuur over activadistributie. Wanneer het delen van activa of individueel of als deel van een inzameling, wordt het werkingsgebied van toegang bepaald door het huidige toegangsniveau van de inzameling dat aan de gebruiker wordt toegewezen. U kunt ook geen privéverzameling delen.
 
 ## Details van een verzameling bewerken {#edit-details-of-collection}
 
-Om **[!UICONTROL Title]** en **[!UICONTROL Description]** van een inzameling uit te geven, klik de inzamelingsnaam en klik dan het ![&#x200B; infopictogram &#x200B;](assets/info-icon.svg) pictogram. [!UICONTROL Collection Details] wordt weergegeven, zodat u de **[!UICONTROL Title]** en **[!UICONTROL Description]** van een verzameling kunt bewerken. Klik op **[!UICONTROL Save Changes]** om de wijzigingen te bevestigen. Bovendien kunt u de toegang tot de inzameling door de Edit dialoog van de Inzameling, afhankelijk van de configuratie bijwerken.
+Om **[!UICONTROL Title]** en **[!UICONTROL Description]** van een inzameling uit te geven, klik de inzamelingsnaam en klik dan het ![ infopictogram ](assets/info-icon.svg) pictogram. [!UICONTROL Collection Details] wordt weergegeven, zodat u de **[!UICONTROL Title]** en **[!UICONTROL Description]** van een verzameling kunt bewerken. Klik op **[!UICONTROL Save Changes]** om de wijzigingen te bevestigen. Bovendien kunt u de toegang tot de inzameling door de Edit dialoog van de Inzameling, afhankelijk van de configuratie bijwerken.
 
-![&#x200B; inzamelingsdetails &#x200B;](assets/collection-details.png)
+![ inzamelingsdetails ](assets/collection-details.png)
 
 ## Elementen uit een verzameling verwijderen{#remove-assets-from-a-collection}
 
@@ -156,14 +156,14 @@ De volgende gebruikers kunnen een of meer elementen uit een verzameling verwijde
 
 Als u elementen uit een verzameling wilt verwijderen, klikt u op de verzameling waaruit u elementen wilt verwijderen, selecteert u de elementen en klikt u op **[!UICONTROL Remove from collection]** .
 
-![&#x200B; verwijder inzameling &#x200B;](assets/remove-collection-new.jpg)
+![ verwijder inzameling ](assets/remove-collection-new.jpg)
 
 U wordt gevraagd de verwijdering van het element te bevestigen. Klik op **[!UICONTROL Remove]**.\
 De geselecteerde elementen worden uit de verzameling verwijderd.
 
 ## Een verzameling verwijderen{#delete-collection}
 
-Alleen beheerders en makers kunnen een verzameling verwijderen. Als u een verzameling wilt verwijderen, navigeert u naar het tabblad **[!UICONTROL Collections]** en klikt u op de verzameling die u wilt verwijderen. Klik ![&#x200B; schrappingspictogram &#x200B;](assets/delete-icon.svg) pictogram om de inzameling te schrappen.
+Alleen beheerders en makers kunnen een verzameling verwijderen. Als u een verzameling wilt verwijderen, navigeert u naar het tabblad **[!UICONTROL Collections]** en klikt u op de verzameling die u wilt verwijderen. Klik ![ schrappingspictogram ](assets/delete-icon.svg) pictogram om de inzameling te schrappen.
 
 ## Verzameling vastzetten of vastzetten {#pin-unpin-collection}
 
@@ -171,17 +171,17 @@ Content Hub-beheerders kunnen verzamelingen in Content Hub vastzetten, zodat ze 
 
 1. Blader naar de verzamelingen die u wilt vastzetten of waarvan u de speld wilt vrijmaken.
 
-1. Klik **[!UICONTROL More actions]** ![&#x200B; Meer actiepictogram &#x200B;](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Pin to quick access]**. Er verschijnt een bevestigingsvak.
+1. Klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Pin to quick access]**. Er verschijnt een bevestigingsvak.
 
-   ![&#x200B; speldinzameling &#x200B;](assets/pin-collection.png)
+   ![ speldinzameling ](assets/pin-collection.png)
 
 1. Klik op **[!UICONTROL Pin]** om te bevestigen. Het waarschuwingsbericht wordt weergegeven wanneer u een privéverzameling vastzet.
 
-   ![&#x200B; bevestigt speldinzameling &#x200B;](assets/confirm-pin-collection.png)
+   ![ bevestigt speldinzameling ](assets/confirm-pin-collection.png)
 
-   De vastgezette verzamelingen worden bovenaan weergegeven, zodat u ze snel kunt gebruiken. Alternatief, om de inzameling los te maken, klik **[!UICONTROL More actions]** ![&#x200B; Meer actiepictogram &#x200B;](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Unpin]**.
+   De vastgezette verzamelingen worden bovenaan weergegeven, zodat u ze snel kunt gebruiken. Alternatief, om de inzameling los te maken, klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Unpin]**.
 
-   ![&#x200B; Mening vastgezette inzamelingen &#x200B;](assets/pinned-collections.png)
+   ![ Mening vastgezette inzamelingen ](assets/pinned-collections.png)
 
 ## Verzamelingen markeren als favoriet {#favorite-collection}
 
@@ -189,15 +189,15 @@ In Content Hub kunt u verzamelingen als favoriet markeren, zodat u ze eenvoudige
 
 1. Blader naar de verzamelingen die u wilt vastzetten of waarvan u de speld wilt vrijmaken.
 
-1. Klik **[!UICONTROL More actions]** ![&#x200B; Meer actiepictogram &#x200B;](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Add to Favorites]** om inzameling als Favoriet te merken.
+1. Klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Add to Favorites]** om inzameling als Favoriet te merken.
 
-   ![&#x200B; de Inzamelingen van het Teken als Favoriet &#x200B;](assets/mark-favorite-collection.png)
+   ![ de Inzamelingen van het Teken als Favoriet ](assets/mark-favorite-collection.png)
 
-   Verzamelingen die zijn gemarkeerd als Favorieten, worden nu weergegeven onder het tabblad **[!UICONTROL My Favorites]** . U kunt de verzamelingen ook verwijderen uit **[!UICONTROL My Favorites]** . Om dit te doen, klik **[!UICONTROL More actions]** ![&#x200B; Meer actiepictogram &#x200B;](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Remove from Favorites]**.
+   Verzamelingen die als Favoriet zijn gemarkeerd, worden nu onder het tabblad **[!UICONTROL My Favorites]** weergegeven. U kunt de verzamelingen ook verwijderen uit **[!UICONTROL My Favorites]** . Om dit te doen, klik **[!UICONTROL More actions]** ![ Meer actiepictogram ](assets/do-not-localize/more-actions.png) en selecteer **[!UICONTROL Remove from Favorites]**.
 
-   ![&#x200B; verwijder Inzameling als Favoriet &#x200B;](assets/remove-favorite-collection.png)
+   ![ verwijder Inzameling als Favoriet ](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[&#x200B; Vastzetten of de inzameling van de speld &#x200B;](#pin-unpin-collection) en [&#x200B; Verzamelingen van het Teken als Favorieten &#x200B;](#favorite-collection) zijn een beperkte beschikbaarheidseigenschappen. U kunt een geval voor Adobe-klantenondersteuning maken en verzenden om deze voor uw implementatie in te schakelen.
+>[ Vastzetten of de inzameling van de speld ](#pin-unpin-collection) en [ Verzamelingen van het Teken als Favorieten ](#favorite-collection) zijn beperkte beschikbaarheidseigenschappen. U kunt [ een geval van de Steun van de Klant van Adobe tot stand brengen en voorleggen om hen voor uw plaatsing toe te laten.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 
