@@ -20,16 +20,16 @@ ht-degree: 0%
 
 In dit geval wordt uitgelegd hoe u een lead in Salesforce kunt maken met behulp van de API-integratie. Aan het einde van het proces kunt u het volgende doen:
 
-Opstelling a [ Verbonden App in Salesforce ](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) om veilige API toegang toe te laten.
+Opstelling a [&#x200B; Verbonden App in Salesforce &#x200B;](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) om veilige API toegang toe te laten.
 
 Configureer CORS (Cross-Origin Resource Sharing) om code (zoals JavaScript) die in een webbrowser wordt uitgevoerd, toe te staan te communiceren met Salesforce vanaf een bepaalde oorsprong, de oorsprong toe te voegen aan de lijst van gewenste personen, zoals hieronder wordt weergegeven
 
-![ kurken ](assets/salesforce-cors.png)
+![&#x200B; kurken &#x200B;](assets/salesforce-cors.png)
 
 ## Aangesloten toepassingsinstellingen
 
 De volgende instellingen worden gebruikt in de verbonden app. U kunt het bereik OAuth toewijzen afhankelijk van uw vereisten.
-![ verbonden-app-montages ](assets/salesforce-connected-app-settings.png)
+![&#x200B; verbonden-app-montages &#x200B;](assets/salesforce-connected-app-settings.png)
 
 ## API-integratie maken
 
@@ -44,7 +44,7 @@ De volgende instellingen worden gebruikt in de verbonden app. U kunt het bereik 
 | Autorisatiebereik | api chatter_api full id openid refresh_token visualforce web |
 | Autorisatieheader | Vergunninghouder |
 
-![ api-integratie ](assets/salesforce-api-integration-create-lead.png)
+![&#x200B; api-integratie &#x200B;](assets/salesforce-api-integration-create-lead.png)
 
 ## Invoer- en uitvoerparameters
 
@@ -57,15 +57,15 @@ Definieer de invoerparameters voor de API-aanroep en wijs de uitvoerparameters t
 }
 ```
 
-![ input-output ](assets/create-lead-api-integration-input-output.png)
+![&#x200B; input-output &#x200B;](assets/create-lead-api-integration-input-output.png)
 
 ## Een formulier maken
 
 Een eenvoudig adaptief formulier maken met de Universal Editor om de details van het object Lead vast te leggen, zoals hieronder wordt weergegeven
-![ lood-voorwerp-vorm ](assets/create-lead.png)
+![&#x200B; lood-voorwerp-vorm &#x200B;](assets/create-lead.png)
 
 Verwerk de klikgebeurtenis op Create leidt checkbox gebruikend de regelredacteur. Wijs de invoerparameters toe aan de waarden van de desbetreffende formulierobjecten, zoals hieronder wordt weergegeven. Geef de id van het nieuwe object Lead weer in het `leadid` object TextField
-![ regel-redacteur ](assets/create-leade-rule-editor.png)
+![&#x200B; regel-redacteur &#x200B;](assets/create-leade-rule-editor.png)
 
 ## Integratie testen
 
