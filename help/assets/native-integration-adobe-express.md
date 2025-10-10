@@ -4,9 +4,9 @@ description: Dankzij de native integratie van AEM Assets met Adobe Express hebt 
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
+source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Voer de volgende stappen uit om AEM Assets in Adobe Express Editor te gaan gebru
 
 3. Klik op **[!UICONTROL Assets]** in het navigatievenster aan de linkerkant. In Adobe Express wordt de lijst met opslagplaatsen weergegeven die u kunt openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau.
 
-4. Blader door of zoek naar middelen in uw repository om ze naar het canvas te slepen. U kunt elementen filteren met behulp van verschillende beschikbare filters, zoals bestandstype, MIME-type en afmetingen.
+4. Blader naar of zoek naar elementen in uw repository en sleep ze naar het canvas. U kunt ook op de elementen klikken om deze op het canvas te plaatsen. U kunt elementen ook filteren op verschillende criteria, zoals bestandstype, MIME-type en afmetingen.
 
    >[!NOTE]
    >
@@ -41,6 +41,21 @@ Voer de volgende stappen uit om AEM Assets in Adobe Express Editor te gaan gebru
 
    ![ omvat activa van Assets toe:voegen-op ](assets/adobe-express-native-integration.png)
 
+### Afbeelding vervangen met AEM-upload {#replace-image-using-aem-upload}
+
+Bovendien kunt u de toegevoegde afbeeldingen vervangen met **[!UICONTROL AEM Upload]** . Voer daartoe de volgende stappen uit:
+
+1. Blader naar elementen of zoek ze en sleep ze naar het canvas.
+
+1. Selecteer de afbeelding die u wilt vervangen. Klik op **[!UICONTROL Replace]** en selecteer **[!UICONTROL AEM Assets]** onder verschillende andere opties.
+
+   ![ AEM vervangt ](assets/aem-replace.png)
+
+1. **[!UICONTROL AEM Upload]** wordt geopend in het linkernavigatievenster. In Adobe Express wordt de lijst met opslagplaatsen weergegeven die u kunt openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau. Selecteer een element om een voorvertoning van de vervanging op het canvas weer te geven en klik vervolgens op **[!UICONTROL Replace]** om te bevestigen.
+
+   >[!NOTE]
+   >
+   > SVG-bestandstypen worden niet ondersteund.
 
 ## Adobe Express-projecten opslaan in AEM Assets {#save-express-projects-in-assets}
 
@@ -77,18 +92,15 @@ Het wordt aanbevolen dat Adobe waarden opgeeft in de rest van de velden en een v
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 x 8000 pixels, maximaal 40 MB</td>
+        <td> 65 MP (bijvoorbeeld 8.000 x 8.000 of 16.000 x 4.000) </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 x 8000 pixels, maximaal 40 MB</td>
+        <td> 65 MP (bijvoorbeeld 8.000 x 8.000 of 16.000 x 4.000) </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> Maximaal 250 kB</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
