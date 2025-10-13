@@ -4,7 +4,7 @@ description: Meer informatie over het instellen van Open ID Connect (OIDC) voor 
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Eerst, moeten wij de verbinding vormen OIDC. De veelvoudige verbindingen OIDC ku
 
 Nu, vorm de OIDC authentificatiemanager. Er kunnen meerdere OIDC-verbindingen worden geconfigureerd. Elke naam moet een andere naam hebben. Als zij de zelfde [ Externe Leverancier van de Identiteit van OAK ](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html) delen, kunnen zij gebruikers delen.
 
-1. Maak het configuratiebestand. Voor dit voorbeeld gebruiken we `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json` . Het achtervoegsel `azure` moet een unieke id zijn. Zie een voorbeeld van het configuratiedossier hieronder:
+1. Maak het configuratiebestand. Voor dit voorbeeld gebruiken we `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json` . Het achtervoegsel `azure` moet een unieke id zijn. Zie een voorbeeld van het configuratiedossier hieronder:
 
    ```
    {
