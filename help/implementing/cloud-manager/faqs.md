@@ -5,9 +5,9 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ In dit document worden antwoorden gegeven op de meest gestelde vragen over Cloud
 
 Ja. Voeg de `maven-toolchains-plugin` toe met de juiste instellingen voor Java™ 11.
 
-Het proces wordt gedocumenteerd - zie {de Tovenaar van de Aanmaak van het 0} Project [&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+Het proces wordt gedocumenteerd - zie {de Tovenaar van de Aanmaak van het 0} Project [.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)
 
-Bijvoorbeeld, zie de [ code van het de projectsteekproef van de projectsteekproef van het Web ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Bijvoorbeeld, zie de [ lWKND projectcode van de projectsteekproef ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mijn build mislukt met een fout over maven-scr-plugin na het schakelen van Java™ 8 via Java™ 11. Wat kan ik doen? {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ Voor Cloud Manager builds kan `maven-enforcer-plugin` mislukken met deze fout.
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Deze fout is een bekend probleem omdat Cloud Manager een andere versie van Java™ gebruikt om de gemaven opdracht uit te voeren in plaats van code te compileren. Laat `requireJavaVersion` gewoon weg van uw `maven-enforcer-plugin` configuraties.
+Deze fout is een bekend probleem omdat Cloud Manager een andere versie van Java™ gebruikt om de Maven-opdracht uit te voeren in plaats van code te compileren. Laat `requireJavaVersion` gewoon weg van uw `maven-enforcer-plugin` configuraties.
 
 ## De kwaliteitscontrole van de code is mislukt en de implementatie is vastgelopen. Is er een manier om deze controle te omzeilen? {#deployment-stuck}
 
-Ja. Alle mislukkingen van de controle van de codekwaliteit behalve de veiligheidsclassificatie zijn niet-kritieke metriek, zodat kunnen zij als deel van een plaatsingspijpleiding worden overgeslagen door de punten in resultatenUI uit te breiden.
+Ja. Alle mislukte controles van de codekwaliteit behalve de veiligheidsclassificatie zijn niet-kritieke metriek. Dientengevolge, kunnen zij als deel van een plaatsingspijpleiding worden overgeslagen door de punten in resultatenUI uit te breiden.
 
-Een gebruiker met [ Manager van de Plaatsing, de Manager van het Project, of de rol van de BedrijfsEigenaar ](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) kan de kwesties met voeten treden, in welk geval de pijpleiding te werk gaat of zij de kwesties kunnen goedkeuren, waarin de pijpleiding met een mislukking stopt.
+Een gebruiker met de Manager van de Plaatsing van a [, de Manager van het Project, of de rol van BedrijfsEigenaar ](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) kan de kwesties met voeten treden. In dat geval gaat de pijpleiding door of kunnen zij de kwesties aanvaarden, in welk geval de pijpleiding met een mislukking stopt.
 
 Zie de documenten [ het Testen van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) en [ het Vormen niet-Productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) voor meer details.
 
@@ -57,11 +57,11 @@ Zie de documenten [ het Testen van de Kwaliteit van de Code ](/help/implementing
 
 Ja. Voor ontwikkelaarsimplementaties moeten de `pom.xml` bestanden van de grijsvertakking `-SNAPSHOT` aan het einde van de `<version>` -waarde bevatten.
 
-Met deze waarde kan de volgende implementatie nog steeds worden geïnstalleerd wanneer de versie niet is gewijzigd. In ontwikkelaarsplaatsingen, wordt geen automatische versie toegevoegd of geproduceerd voor de beproefde bouwstijl.
+Met deze waarde kan de volgende implementatie nog worden geïnstalleerd wanneer de versie niet is gewijzigd. In ontwikkelaarsplaatsingen, wordt geen automatische versie toegevoegd of geproduceerd voor de beproefde bouwstijl.
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in de it. Indien nodig kunt u later naar dit label verwijzen.
 
-Voor verdere details over versie behandeling zie [ GeMaven de Afhandeling van de Versie van het Project ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Voor meer details over versie behandeling, zie [ Gemaakt Verwerking van de Versie van het Project ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Hoe werkt het pakket en de bundelversioning voor stadium en productieplaatsingen? {#snapshot-version}
 
@@ -94,13 +94,13 @@ De oplossing moet a [ RepositoryInitializer OSGi configuratiescript ](/help/impl
 
 In de vorige voorbeeldfout bevat het pakket `myapp-base.ui.content-*.zip` inhoud onder `/conf` en `/var/workflow` . Voor een succesvolle implementatie zijn machtigingen voor de `sling-distribution-importer` onder deze paden vereist.
 
-Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config` ](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) configuratie OSGi die extra toestemmingen voor de `sling-distribution-importer` gebruiker toevoegt. De configuratie voegt machtigingen toe onder `/var` . Een dergelijke configuratie moet onder `/apps/myapp/config` aan het toepassingspakket worden toegevoegd (waarbij mijnapp de map is waarin uw toepassingscode is opgeslagen).
+Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config` ](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) configuratie OSGi die extra toestemmingen voor de `sling-distribution-importer` gebruiker toevoegt. De configuratie voegt machtigingen toe onder `/var` . Een dergelijke configuratie moet onder `/apps/myapp/config` aan het toepassingspakket worden toegevoegd (waarbij `myapp` de map is waarin uw toepassingscode is opgeslagen).
 
 ## Mijn plaatsing van Cloud Manager ontbreekt bij de opstellen stap in AEM as a Cloud Service en ik voegde reeds een configuratie RepositoryInitializer OSGi toe. Wat kan ik nog meer doen? {#build-failures}
 
 Als [ toevoegend een configuratie RepositoryInitializer OSGi ](#cloud-manager-deployment-cloud-service) niet de fout oploste, kan het aan één van deze extra kwesties toe te schrijven zijn.
 
-* De plaatsing zou wegens een slechte configuratie kunnen ontbreken OSGi die een uit-van-de doosdienst breekt.
+* De plaatsing zou wegens een slechte configuratie kunnen ontbreken OSGi die een uit-van-de-doosdienst breekt.
    * Controleer de logboeken tijdens plaatsing zodat kunt u zien of zijn er om het even welke duidelijke fouten.
 
 * De implementatie kan mislukken als gevolg van slechte Dispatcher- of Apache-configuraties.
@@ -109,7 +109,7 @@ Als [ toevoegend een configuratie RepositoryInitializer OSGi ](#cloud-manager-de
 
 * De implementatie zou kunnen mislukken vanwege een andere fout tijdens de replicatie van de inhoudspakketten (de distributie van het Verdelen) van auteur om instanties te publiceren.
    * Voer de volgende stappen uit om het probleem op een lokale installatie te simuleren.
-      1. Installeer een auteur en publiceer een instantie lokaal met de nieuwste AEM SDK-jars.
+      1. Installeer een Author en een Publish instantie plaatselijk gebruikend de recentste Jars van AEM SDK.
       1. Meld u aan bij de instantie van de auteur.
       1. Ga naar **Hulpmiddelen** > **Plaatsing** > **Distributie**.
       1. Distribueer de inhoudspakketten die deel uitmaken van de codebasis en controleer of de rij met een fout wordt geblokkeerd.
@@ -134,6 +134,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-In dit geval, moet de gebruiker die deze bevelen in werking stelt aan de **rol van de Manager van de Plaatsing** in de Admin Console worden toegevoegd.
+In dit geval, moet de gebruiker die deze bevelen in werking stelt aan de **rol van de Manager van de Plaatsing** in Admin Console worden toegevoegd.
 
 Zie [ API Toestemmingen ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) voor meer details.

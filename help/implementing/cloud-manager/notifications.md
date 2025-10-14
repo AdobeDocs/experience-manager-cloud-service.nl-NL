@@ -5,9 +5,9 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 
 Deze berichten worden verzonden door het [!UICONTROL Experience Cloud] berichtsysteem naar gebruikers in **BedrijfsEigenaar**, **Manager van het Programma**, en **de rollen van de Manager van de Plaatsing**.
 
-De meldingen worden weergegeven in een zijbalk binnen [!UICONTROL Cloud Manager] en in de hele Adobe [!UICONTROL Experience Cloud] . Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
+De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] en in de hele Adobe [!UICONTROL Experience Cloud] . Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
 
 ![ pictogram van Meldingen ](assets/notifications-bell-badged.png)
 
@@ -31,7 +31,7 @@ Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. 
 
 ![ Notifications sidebar ](assets/notifications-activities.png)
 
-Het **lusje van Mededelingen** omvat de aankondigingen van het het productproduct van de Adobe. Aankondigingen betreffen het product.
+Het **lusje van Mededelingen** {omvat het productaankondigingen van Adobe. Aankondigingen betreffen het product.
 
 ![ Notifications sidebar ](assets/notificaitons-announcements.png)
 
@@ -45,11 +45,9 @@ Klik het **Teken allen als gelezen** optie bij de bodem van het paneel om alle o
 
 U kunt aanpassen hoe u meldingen ontvangt en welke meldingen u ontvangt.
 
-Klik op het tandwielpictogram boven aan de zijbalk met meldingen.
+Klik het tandwielpictogram bij de bovenkant van de berichten sidebar om het **voorkeurenvenster van Experience Cloud** te openen. Van hieruit kunt u uw meldingsabonnementen definiëren en bepalen hoe u uw meldingen ontvangt.
 
 ![ pictogram van de montages van het Bericht ](assets/notifications-configuration.png)
-
-Dit opent het **venster van de voorkeur van het Experience Cloud**, waar u uw berichtabonnementen kunt bepalen en hoe u uw berichten ontvangt.
 
 ### Abonnementen {#subscriptions}
 
@@ -63,7 +61,7 @@ Standaard ontvangt u alle meldingen voor alle producten, zowel in de toepassing 
 
 ### Prioriteit {#priority}
 
-Het prioritaire alarm wordt duidelijk met a **HOGE** markering en kan worden gevormd om als alarm uitsluitend worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
+Het prioritaire alarm wordt duidelijk met a **HOGE** markering. U kunt hen vormen om uitsluitend als alarm worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
 
 ![ prioriteit van het Bericht ](assets/notifications-priority.png)
 
@@ -83,7 +81,7 @@ U kunt het gedrag van de waarschuwingen definiëren.
 
 ### E-mails {#emails}
 
-Meldingen zijn beschikbaar in de webgebruikersinterface voor alle Adobe [!UICONTROL Experience Cloud] -oplossingen. U kunt voor deze berichten ook kiezen om door e-mail in de **E-mail** sectie worden verzonden.
+Meldingen zijn beschikbaar in de webgebruikersinterface van alle Adobe [!UICONTROL Experience Cloud] -oplossingen. U kunt voor deze berichten ook kiezen om door e-mail in de **E-mail** sectie worden verzonden.
 
 ![ E-mails van het Bericht ](assets/notifications-emails.png)
 
@@ -93,4 +91,4 @@ Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
 * Dagelijks
 * Wekelijks
 
-Wanneer **Onmiddellijke berichten** wordt gekozen, worden de e-mails verzonden onmiddellijk voor elk bericht. Voor **Dagelijkse samenvatting** en **Weekse samenvatting** kunt u kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.
+Wanneer u **Onmiddellijke berichten** kiest, worden de e-mails verzonden onmiddellijk voor elk bericht. Voor **Dagelijkse samenvatting** en **Weekse samenvatting** kunt u kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.

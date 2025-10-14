@@ -5,9 +5,9 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ Ga als volgt te werk om logbestanden te downloaden:
 
    ![ de dialoog van Logboeken van de Download ](assets/download-preview.png)
 
-   In het geval dat [ de Extra Gebieden van Publish ](/help/operations/additional-publish-regions.md) voor uw milieu worden toegelaten, zult u elk gebied kunnen selecteren en zijn logboeken afzonderlijk downloaden, zoals hieronder getoond:
+   In het geval dat [ de Extra Publish Gebieden ](/help/operations/additional-publish-regions.md) voor uw milieu worden toegelaten, kunt u elk gebied selecteren en zijn logboeken afzonderlijk downloaden, zoals hieronder getoond:
 
    ![ Logboeken van de Download voor extra publiceer gebieden ](assets/download-publish-region-logs.png)
 
 1. Nadat u de service hebt geselecteerd, klikt u op het downloadpictogram naast het logbestand dat u wilt ophalen.
 
-U kunt tot uw logboeken van de **pagina van Milieu &lbrace;ook toegang hebben.**
+U kunt tot uw logboeken van de **pagina van Milieu {ook toegang hebben.**
 
 ![ Logs van het scherm van Milieu&#39;s ](assets/download-logs.png)
 
@@ -101,5 +101,5 @@ Zie de volgende aanvullende bronnen voor meer informatie over de Cloud Manager A
 
 Zie de volgende aanvullende bronnen voor meer informatie over logbestanden in AEM as a Cloud Service:
 
-* [ Wolk 5 AEM Logdossiers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=nl-NL)
-* [ het Zuiveren AEM as a Cloud Service gebruikend logboeken ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=nl-NL)
+* [ Wolk 5 de Dossiers van het Logboek van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [ het Zuiveren AEM as a Cloud Service gebruikend logboeken ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

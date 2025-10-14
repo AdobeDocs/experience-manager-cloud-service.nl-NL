@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2601'
 ht-degree: 0%
 
 ---
@@ -18,27 +18,27 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI-tests"
->abstract="Het testen UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd)."
+>abstract="Het testen UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders toe te staan. Zoals Java en Maven, Node en WebDriver.io of een ander framework en technologie die op Selenium zijn gebaseerd."
 
 Het testen UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen.
 
 ## Overzicht {#custom-ui-testing}
 
-AEM verstrekt een geïntegreerde reeks van [ de kwaliteitsgates van Cloud Manager ](/help/implementing/cloud-manager/custom-code-quality-rules.md) om vlotte updates aan douanetoepassingen te verzekeren. Met name ondersteunen IT-testpoorten al het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
+AEM verstrekt een geïntegreerde reeks van [ de kwaliteitsgates van Cloud Manager ](/help/implementing/cloud-manager/custom-code-quality-rules.md) om vlotte updates aan douanetoepassingen te verzekeren. Met name de testpoorten van IT ondersteunen al het maken en automatiseren van aangepaste tests met AEM API&#39;s.
 
-De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress, Selenium, Java en Maven, en JavaScript) toe te staan. Ook, kan een UI testproject gemakkelijk worden geproduceerd door [ het Archieftype van het Project van de AEM te gebruiken ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview).
+De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress, Selenium, Java en Maven, en JavaScript) toe te staan. Ook, kan een UI testproject gemakkelijk worden geproduceerd door [ het Archetype van het Project van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) te gebruiken.
 
-Adobe stimuleert het gebruik van Cypress, omdat deze in real time opnieuw laden en automatisch wachten biedt, wat tijd bespaart en de productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor mensen die nog niet aan tests hebben gewerkt.
+Adobe moedigt het gebruik van Cypress aan, aangezien het in real time herladen en automatisch wachten aanbiedt, die helpt tijd te besparen en productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor gebruikers die nog niet aan tests hebben gewerkt.
 
-De tests UI worden uitgevoerd als deel van een specifieke kwaliteitsgate voor elke pijpleiding van Cloud Manager met het Testen van de Douane UI van de a [**&#x200B;** stap ](/help/implementing/cloud-manager/deploy-code.md) in [ productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of naar keuze [ niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten toelaten om fouten te ontdekken en te melden.
+De tests van UI lopen als kwaliteitsgate in het [**Testen van de Douane UI**](/help/implementing/cloud-manager/deploy-code.md) stap-vereist in [ productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), facultatief in [ niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten toelaten om fouten te ontdekken en te melden.
 
-In tegenstelling tot douane functionele tests, die de tests zijn van HTTP in Java worden geschreven, kunnen de tests UI een beeld van de Docker met tests zijn die in om het even welke taal worden geschreven, zolang zij de overeenkomsten volgen die in de sectie [ worden bepaald de Tests van de Bouw UI ](#building-ui-tests).
+In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Java zijn geschreven, kunnen UI-tests een Docker-afbeelding zijn. De tests kunnen in om het even welke taal worden geschreven, zolang zij de overeenkomsten volgen die in de sectie [ worden bepaald de Tests van de Bouw UI ](#building-ui-tests).
 
 >[!TIP]
 >
->De Adobe adviseert gebruikend Cypress voor het testen UI, na de code die in de [ wordt verstrekt AEM bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+>Adobe adviseert gebruikend Cypress voor het testen UI, na de code die in de [ bewaarplaats van de Steekproeven van AEM wordt verstrekt ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->De Adobe verstrekt ook UI de voorbeelden van de testmodule die op JavaScript van WebdriverIO (zie [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) en Java met WebDriver (zie [ AEM de bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)) worden gebaseerd.
+>Adobe verstrekt ook UI-testmodulevoorbeelden op basis van JavaScript met WebdriverIO (zie [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) en Java met WebDriver (zie [ de bewaarplaats van de Steekproeven van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Aan de slag met gebruikersinterfacetests {#get-started-ui-tests}
 
@@ -46,21 +46,21 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
 1. Bepaal het testframework dat u wilt gebruiken.
 
-   * Voor Cypress (gebrek), gebruik de steekproefcode van de [ AEM bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) of gebruik de steekproefcode die automatisch in de `ui.tests` omslag van uw bewaarplaats van Cloud Manager wordt geproduceerd.
+   * Voor Cypress (gebrek), gebruik de steekproefcode van de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) of gebruik de steekproefcode die automatisch in de `ui.tests` omslag van uw bewaarplaats van Cloud Manager wordt geproduceerd.
 
-   * Voor Playwright, gebruik de steekproefcode van de [ AEM bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+   * Voor Playwright, gebruik de steekproefcode van de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-   * Voor Webdriver.IO, gebruik de steekproefcode van de [ AEM bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+   * Voor Webdriver.IO, gebruik de steekproefcode van de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Voor Selenium WebDriver, gebruik de steekproefcode van de [ AEM bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Voor Selenium WebDriver, gebruik de steekproefcode van de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Voor andere programmeertalen raadpleegt u het gedeelte [UI-tests](#building-ui-tests) in dit document om het testproject op te zetten.
+   * Voor andere programmeertalen, zie de sectie [ Tests van de Bouw UI ](#building-ui-tests) in dit document aan opstelling het testproject.
 
-1. Zorg ervoor dat ui-tests zijn geactiveerd op grond van het gedeelte [&#39;Opt-In](#customer-opt-in) &#39; van de klant in dit document.
+1. Zorg ervoor dat het testen UI zoals per de sectie [ verkiesbare Klant ](#customer-opt-in) in dit document wordt geactiveerd.
 
-1. Ontwikkel uw testcases en [voer de tests lokaal](#run-ui-tests-locally) uit.
+1. Ontwikkel uw testgevallen en [ stel de tests plaatselijk ](#run-ui-tests-locally) in werking.
 
-1. Voer uw code door in de Cloud Manager-opslagplaats en voer een Cloud Manager-pipeline uit.
+1. Leg uw code vast in de Cloud Manager-opslagplaats en voer een Cloud Manager-pijplijn uit.
 
 ## Interfacetests maken {#building-ui-tests}
 
@@ -70,16 +70,16 @@ In deze sectie worden de stappen beschreven die nodig zijn om een UI-testproject
 
 >[!TIP]
 >
->Het [archetype](https://github.com/adobe/aem-project-archetype) van het AEM-project kan een UI-testproject voor u genereren, dat voldoet aan de volgende beschrijving als u geen speciale vereisten hebt voor de programmeertaal.
+>Het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) kan een project van de Tests UI voor u produceren, dat aan de volgende beschrijving volgzaam is, als u geen speciale vereisten voor de programmeertaal hebt.
 
-### Context van een Docker-build genereren {#generate-docker-build-context}
+### Een docker Build-context genereren {#generate-docker-build-context}
 
-Om een Docker-buildcontext te genereren, hebt u een Maven-module nodig die:
+Om Docker te produceren bouwt context, hebt u een Gemaakt module nodig die:
 
 * Produceert een archief dat een `Dockerfile` en elk ander dossier noodzakelijk bevat om het beeld van de Docker met uw tests te bouwen.
 * Hiermee wordt het archief gecodeerd met de classificator `ui-test-docker-context` .
 
-De eenvoudigste manier om dit te doen is de [ Gemaakt Insteekmodule van de Assemblage te vormen ](https://maven.apache.org/plugins/maven-assembly-plugin/) om het Docker te creëren bouwt contextarchief en wijst het juiste classificatiebureau aan het toe.
+De eenvoudigste manier is de [ Gemaakt Insteekmodule van de Assemblage te vormen ](https://maven.apache.org/plugins/maven-assembly-plugin/) om het Docker te creëren bouwt contextarchief en wijst het juiste classificatiebureau aan het toe.
 
 U kunt tests UI met verschillende technologieën en kaders bouwen, maar deze sectie veronderstelt dat uw project op een manier gelijkend op het volgende wordt opgemaakt.
 
@@ -155,7 +155,7 @@ De assemblagedescriptor geeft de plug-in de instructie een archief van het type 
 
 De assemblagebeschrijver sluit ook sommige dossiers uit die terwijl het runnen van de tests UI plaatselijk zouden kunnen worden geproduceerd. Dit garandeert een kleiner archief en snellere builds.
 
-Het archief met de Docker-build-context wordt automatisch opgepakt door Cloud Manager, dat het Docker-image met uw tests zal maken tijdens de implementatiepijplijnen. Uiteindelijk zal Cloud Manager het Docker-beeld in werking stellen om de tests UI tegen uw toepassing uit te voeren.
+Cloud Manager neemt automatisch het Docker build-context archive op en bouwt het testbeeld tijdens plaatsingspijpleidingen. Uiteindelijk voert Cloud Manager de Docker-afbeelding uit om de UI-tests op uw toepassing uit te voeren.
 
 De build moet nul of één archief produceren. Als het nul archieven produceert, gaat de teststap door gebrek over. Als de build meer dan één archief produceert, is het geselecteerde archief niet-deterministisch.
 
@@ -186,11 +186,11 @@ Als u een `testing.properties` -bestand wilt opnemen in het constructieartefact,
 >
 >Als uw project deze lijn niet omvat, geef het dossier uit om in het testen UI te kiezen.
 >
->Het bestand kan een regel bevatten die u adviseert het bestand niet te bewerken. Dit is toe te schrijven aan het worden geïntroduceerd in uw project alvorens het opt-in testen UI werd geïntroduceerd en de cliënten waren niet bedoeld om het dossier uit te geven. Dit kan veilig worden genegeerd.
+>Het bestand kan een regel bevatten die u adviseert het bestand niet te bewerken. De reden is omdat het in uw project wordt geïntroduceerd alvorens het opt-in testen UI werd geïntroduceerd en de cliënten waren niet bedoeld om het dossier uit te geven. U kunt het advies veilig negeren.
 
-Als u de voorbeelden gebruikt die door Adobe worden verstrekt:
+Als u de voorbeelden gebruikt die door Adobe worden geleverd:
 
-* Voor de op JavaScript-Gebaseerde `ui.tests` die omslag van [ wordt geproduceerd AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), kunt u onder bevel uitvoeren om de vereiste configuratie toe te voegen.
+* Voor op JavaScript-Gebaseerde `ui.tests` omslag die van het [ wordt geproduceerd Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), kunt u onder bevel uitvoeren om de vereiste configuratie toe te voegen.
 
   ```shell
   echo "ui-tests.version=1" > testing.properties
@@ -200,7 +200,7 @@ Als u de voorbeelden gebruikt die door Adobe worden verstrekt:
   fi
   ```
 
-* De Cypress- en Java Selenium-testmonsters die door de Adobe worden geleverd, beschikken al over de markering opt-in.
+* De door Adobe geleverde testmonsters voor Cypress en Java Selenium hebben al de markering opt-in ingesteld.
 
 ## Tests voor gebruikersinterface schrijven {#writing-ui-tests}
 
@@ -212,35 +212,35 @@ De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding d
 
 >[!NOTE]
 >
-> Deze waarden zullen automatisch tijdens pijpleidingsuitvoering worden geplaatst - er is geen behoefte om hen manueel als pijpleidingsvariabelen te plaatsen.
+> Deze waarden worden automatisch geplaatst tijdens pijpleidingsuitvoering; er is geen behoefte om hen manueel als pijpleidingsvariabelen te plaatsen.
 
 | Variabele | Voorbeelden | Beschrijving | Testframework |
 |----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | De URL van de seleniumserver | Alleen selenium |
-| `SELENIUM_BROWSER` | `chrome` | De browserimplementatie die wordt gebruikt door de seleniumserver | Alleen selenium |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur | Alles |
-| `AEM_AUTHOR_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de instantie van de AEM auteur | Alles |
-| `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om u aan te melden bij de AEM | Alle |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | De URL van de AEM-publicatie-instantie | Alle* |
-| `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam om u aan te melden bij de AEM-publicatie-instantie | Alle * |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie | Alle * |
-| `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om deze toegankelijk te maken voor het testframework | Alle |
-| `PROXY_HOST` | `proxy-host` | De hostnaam van de interne HTTP-proxy die moet worden gebruikt door het testframework | Alles behalve selenium |
-| `PROXY_HTTPS_PORT` | `8071` | De luisterpoort van de proxyserver voor HTTPS-verbindingen (kan leeg zijn) | Alles behalve selenium |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL van de seleniumserver | Alleen selenium |
+| `SELENIUM_BROWSER` | `chrome` | Browserimplementatie gebruikt door de seleniumserver | Alleen selenium |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL van de AEM-instantie Auteur | Alles |
+| `AEM_AUTHOR_USERNAME` | `admin` | Gebruikersnaam voor aanmelding bij de AEM-auteurinstantie | Alles |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Wachtwoord voor aanmelding bij de AEM-instantie van auteur | Alles |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | URL van de instantie AEM Publishing | Alle * |
+| `AEM_PUBLISH_USERNAME` | `admin` | Gebruikersnaam voor aanmelding bij AEM-publicatie-instantie | Alle * |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Wachtwoord voor aanmelding bij de AEM-publicatie-instantie | Alle * |
+| `REPORTS_PATH` | `/usr/src/app/reports` | Pad waarin het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL waarnaar het bestand moet worden geüpload om het toegankelijk te maken voor het testframework | Alles |
+| `PROXY_HOST` | `proxy-host` | Hostnaam van de interne HTTP-proxy die moet worden gebruikt door het testframework | Alles behalve selenium |
+| `PROXY_HTTPS_PORT` | `8071` | Luisterpoort naar proxyserver voor HTTPS-verbindingen (kan leeg zijn) | Alles behalve selenium |
 | `PROXY_HTTP_PORT` | `8070` | De luisterpoort van de proxyserver voor HTTP-verbindingen (kan leeg zijn) | Alles behalve selenium |
-| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | Het pad naar het CA-certificaat dat door het testkader moet worden gebruikt | Alles behalve selenium |
-| `PROXY_OBSERVABILITY_PORT` | `8081` | De HTTP-poort voor gezondheidscontrole van de proxyserver | Alles behalve selenium |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | Pad naar het CA-certificaat dat door het testkader moet worden gebruikt | Alles behalve selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | HTTP-poort `healthcheck` van de proxyserver | Alles behalve selenium |
 | `PROXY_RETRY_ATTEMPTS` | `12` | Voorgesteld aantal pogingen opnieuw proberen tijdens wachten op gereedheid van proxyserver | Alles behalve selenium |
 | `PROXY_RETRY_DELAY` | `5` | Voorgestelde vertraging tussen pogingen opnieuw proberen terwijl het wachten op de gereedheid van de volmachtsserver | Alles behalve selenium |
 
 `* these values will be empty if there is no publish instance`
 
-De testmonsters van de Adobe verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
+De Adobe-testmonsters bieden hulpfuncties voor toegang tot de configuratieparameters:
 
-* Cypress: de standaardfunctie gebruiken `Cypress.env('VARIABLE_NAME')`
-* JavaScript: Zie de module [`lib/config.js` ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js)
-* Java: Zie de [`Config` ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) -klasse
+Cypress: de standaardfunctie gebruiken `Cypress.env('VARIABLE_NAME')`
+<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
 
 ### Testrapporten genereren {#generate-test-reports}
 
@@ -254,7 +254,7 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 >
 >De beweringen van het gebruik in plaats van enkel het registreren van een fout aan STDERR of het terugkeren van een niet-nul uitgangscode anders kan uw plaatsingspijpleiding normaal te werk gaan.
 >
->Als een HTTP-proxy tijdens de uitvoering van de test is gebruikt, bevatten de resultaten een `request.log` -bestand.
+>Als een HTTP-proxy is gebruikt tijdens de uitvoering van tests, bevatten de resultaten een `request.log` -bestand.
 
 ### Vereisten {#prerequisites}
 
@@ -268,14 +268,14 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 
 | Type | Waarde | Beschrijving |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2,0 | De hoeveelheid CPU-tijd die per testuitvoering is gereserveerd. |
-| Geheugen | 1 GB | Hoeveelheid aan de test toegewezen geheugen, waarde in bytes. |
-| Time-out | 30 m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15 m | De Adobe beveelt aan de tests te schrijven om deze tijd niet langer te laten duren. |
+| CPU | 2,0 | Hoeveelheid CPU-tijd gereserveerd per uitgevoerde test. |
+| Geheugen | 1 GB | De hoeveelheid geheugen die aan de test wordt toegewezen. Waarde is in bytes. |
+| Time-out | 30 m | Hoe lang de test loopt. |
+| Aanbevolen duur | 15 m | Adobe beveelt aan dat de tests binnen deze termijn worden gehouden. |
 
 >[!NOTE]
 >
-> Als u meer middelen nodig hebt, maakt u een kwestie voor de klantenservice en beschrijft u uw gebruikscase. De Adobe zal uw verzoek beoordelen en de juiste hulp bieden.
+> Als u meer middelen nodig hebt, maakt u een kwestie voor de klantenservice en beschrijft u uw gebruikscase. Adobe beoordeelt uw verzoek en biedt de juiste hulp.
 
 ## Seleniumspecifieke details
 
@@ -287,38 +287,43 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 
 Alvorens de tests beginnen, is het de verantwoordelijkheid van het beeld van de Docker om ervoor te zorgen dat de server van Selenium in gebruik is. Wachten op de seleniumservice is een proces in twee stappen.
 
-1. Lees de URL van de Volgens de omgevingsvariabele `SELENIUM_BASE_URL` .
-1. Poll met regelmatige intervallen naar het [status-eindpunt](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) dat door de Api van Api van Tijd wordt blootgelegd.
+1. Lees URL van de dienst van Selenium van de `SELENIUM_BASE_URL` omgevingsvariabele.
+1. Opiniepeiling bij regelmatige intervallen aan het [ statuseindpunt ](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) dat door Selenium API wordt blootgesteld.
 
-Zodra het statuseindpunt van Endpoint met een positieve respons heeft beantwoord, kunnen de tests beginnen.
+Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kunnen de tests beginnen.
 
-De Adobe UI-testvoorbeelden verwerken dit met het script `wait-for-grid.sh`, dat wordt uitgevoerd bij het opstarten van Docker en dat de feitelijke testuitvoering pas start wanneer het raster klaar is.
+Voor Adobe UI-testvoorbeelden wordt `wait-for-grid.sh` gebruikt. Het loopt bij het begin van de Dokker en lanceert tests slechts nadat het net klaar is.
+
 
 ### Schermafbeeldingen en video&#39;s vastleggen {#capture-screenshots}
 
 De Docker-afbeelding kan aanvullende testuitvoer genereren (bijvoorbeeld schermafbeeldingen of video&#39;s) en deze opslaan in het pad dat wordt aangegeven door de omgevingsvariabele `REPORTS_PATH` . Alle bestanden die onder `REPORTS_PATH` worden gevonden, worden opgenomen in het archief met testresultaten.
 
-De teststeekproeven die door Adobe door gebrek worden verstrekt leiden tot schermafbeeldingen voor om het even welke ontbroken test.
+Met de testvoorbeelden die standaard door Adobe worden geleverd, maakt u schermafbeeldingen voor elke mislukte test.
 
 U kunt de hulpfuncties gebruiken om schermafbeeldingen tot stand te brengen door uw tests.
 
-* JavaScript: [opdracht takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [opdrachten](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+<!-- BOTH URLS ARE 404
+* JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-Als een archief van het testresultaat tijdens een UI testuitvoering wordt gecreeerd, kunt u het van Cloud Manager downloaden gebruikend de `Download Details` knoop onder de [**het Testen van de Douane UI** stap ](/help/implementing/cloud-manager/deploy-code.md).
+Als een archief van het testresultaat tijdens een UI testuitvoering wordt gecreeerd, kunt u het van Cloud Manager downloaden door de `Download Details` knoop onder de [**het Testen van de Douane UI** stap ](/help/implementing/cloud-manager/deploy-code.md) te klikken.
 
 ### Bestanden uploaden {#upload-files}
 
 Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de implementatie van Selenium flexibel te houden ten opzichte van uw tests, is het niet mogelijk om een middel rechtstreeks naar Selenium te uploaden. In plaats daarvan moet u de volgende stappen uitvoeren om een bestand te uploaden.
 
 1. Upload het bestand naar de URL die door de omgevingsvariabele `UPLOAD_URL` wordt opgegeven.
-   * Het uploaden moet worden uitgevoerd in één verzoek van de POST met een meerdelige vorm.
+   * Het uploaden moet worden uitgevoerd in één POST-aanvraag met een meerdelige vorm.
    * Het formulier met meerdere delen moet één bestandsveld hebben.
-   * Dit is gelijk aan `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"` .
+   * Gelijk aan `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Raadpleeg de documentatie en bibliotheken van de programmeertaal die in het beeld van de Docker wordt gebruikt om te weten hoe te om zulk een HTTP- verzoek uit te voeren.
-   * De testmonsters van de Adobe verstrekken helperfuncties voor het uploaden van dossiers:
-      * JavaScript: Zie [ getFileHandleForUpload ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) bevel.
-      * Java: Zie de [ klasse FileHandler ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java).
+
+   <!-- BOTH URLS ARE 404
+   * The Adobe test samples provide helper functions for uploading files:
+     * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+
 1. Als het uploaden is voltooid, retourneert de aanvraag een `200 OK` reactie van het type `text/plain` .
    * De inhoud van de reactie is een ondoorzichtige bestandshandgreep.
    * U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>` -element om het uploaden van bestanden in uw toepassing te testen.
@@ -333,15 +338,15 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
 
 Het ingangspunt van de Docker-container moet de waarde van de omgevingsvariabele `PROXY_HOST` controleren.
 
-Als deze waarde leeg is, zijn geen extra stappen vereist en de tests zouden zonder de volmacht van HTTP moeten worden uitgevoerd.
+Als deze waarde leeg is, zijn geen extra stappen vereist en de tests zouden zonder een volmacht van HTTP moeten worden uitgevoerd.
 
 Als het niet leeg is, moet het entryPoint manuscript:
 
-1. Vorm een de volmachtsverbinding van HTTP voor het runnen van tests UI. Dit kan worden bereikt door de omgevingsvariabele `HTTP_PROXY` die is samengesteld, te exporteren met de volgende waarden:
+1. Configureer een HTTP-proxyverbinding voor het uitvoeren van UI-tests door de omgevingsvariabele `HTTP_PROXY` te exporteren die met de volgende waarden is samengesteld:
    * Proxyhost, die wordt geleverd door `PROXY_HOST` variable
    * Proxypoort, die wordt opgegeven door `PROXY_HTTPS_PORT` of `PROXY_HTTP_PORT` variable (de variabele met een niet-lege waarde wordt gebruikt)
 2. Stel het CA-certificaat in dat wordt gebruikt wanneer u verbinding maakt met de HTTP-proxy. De locatie wordt opgegeven door de variabele `PROXY_CA_PATH` .
-   * Dit kan worden bereikt door de omgevingsvariabele `NODE_EXTRA_CA_CERTS` te exporteren.
+   * Omgevingsvariabele `NODE_EXTRA_CA_CERTS` exporteren.
 3. Wacht tot de HTTP-proxy gereed is.
    * U kunt de gereedheid controleren door de omgevingsvariabelen `PROXY_HOST` , `PROXY_OBSERVABILITY_PORT` , `PROXY_RETRY_ATTEMPTS` en `PROXY_RETRY_DELAY` te gebruiken.
    * U kunt controleren met een cURL-aanvraag. Controleer of u cURL hebt geïnstalleerd in uw `Dockerfile` .
@@ -352,17 +357,17 @@ Een voorbeeldimplementatie kan in het Centrum van de Test van de Steekproef van 
 
 >[!NOTE]
 >
-> Deze sectie is alleen van toepassing wanneer Playwright de gekozen testinfrastructuur is.
+> Deze sectie is alleen van toepassing wanneer `Playwright` de gekozen testinfrastructuur is.
 
 ### HTTP-proxy instellen
 
 >[!NOTE]
 >
-> In de voorgelegde voorbeelden, veronderstellen wij Chrome als projectbrowser wordt gebruikt.
+> In de gepresenteerde voorbeelden gaat Adobe ervan uit dat Chrome wordt gebruikt als een projectbrowser.
 
 Net als bij Cypress moeten tests de HTTP-proxy gebruiken als een niet-lege `PROXY_HOST` omgevingsvariabele wordt opgegeven.
 
-Daartoe moeten de volgende wijzigingen worden aangebracht.
+In dat geval moeten de volgende wijzigingen worden aangebracht.
 
 #### Dockerfile
 
@@ -379,7 +384,7 @@ RUN apt -y update \
 Neem een basscript op dat, voor het geval `PROXY_HOST` environment variable wordt gegeven, het volgende doet:
 
 1. Aan proxy gerelateerde variabelen exporteren, zoals `HTTP_PROXY` en `NODE_EXTRA_CA_CERTS`
-2. Gebruik `certutil` om CA-proxycertificaat voor chroom te installeren
+2. Gebruik `certutil` om CA-proxycertificaat voor Chromium™ te installeren.
 3. Wacht tot de volmacht van HTTP klaar is (of weg bij mislukking).
 
 Voorbeeldimplementatie:
@@ -432,18 +437,18 @@ if (proxyServer !== '') {
 
 >[!NOTE]
 >
-> Een voorbeeldimplementatie kan in de Module van de Test van de Steekproef van de Playwright op [ GitHub ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/) worden gevonden.
+> Een voorbeeldimplementatie kan in de Module van de Test van de Steekproef van de Playwright op [ GitHub ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright) worden gevonden.
 
 
 ## UI-tests lokaal uitvoeren {#run-ui-tests-locally}
 
-Voordat u UI-tests in een Cloud Manager-pipeline activeert, wordt het aanbevolen om de ui-tests lokaal uit te voeren op de [AEM als een Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of op een feitelijke AEM als een Cloud Service-instantie.
+Alvorens tests UI in een pijpleiding van Cloud Manager te activeren, adviseert Adobe dat u de tests UI plaatselijk tegen [ SDK van AEM as a Cloud Service ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) in werking stelt. Of u voert de bewerking uit tegen een AEM as a Cloud Service-instantie.
 
-### Cypress Test Monster {#cypress-sample}
+### Monster van Cypress-test {#cypress-sample}
 
-1. Een shell openen en naar de map in de `ui.tests/test-module` opslagplaats navigeren
+1. Open een shell en navigeer naar de `ui.tests/test-module` -map in uw repository
 
-1. Cypress en andere vereiste&#39;s installeren
+1. Cypress en andere voorwaarden installeren
 
    ```shell
    npm install
@@ -473,13 +478,13 @@ Voordat u UI-tests in een Cloud Manager-pipeline activeert, wordt het aanbevolen
 >
 >De logbestanden worden opgeslagen in de map `target/` van uw opslagplaats.
 >
->Voor details, zie [ AEM de bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Voor details, zie de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
-### Voorbeeld van JavaScript-webdriverIO-test {#javascript-sample}
+### JavaScript WebdriverIO-testvoorbeeld {#javascript-sample}
 
-1. Een shell openen en naar de map in de `ui.tests` opslagplaats navigeren
+1. Open een shell en navigeer naar de `ui.tests` map in uw repository.
 
-1. Voer de onderstaande opdracht uit om de tests te starten met Maven.
+1. Voer het volgende bevel uit om de tests te beginnen gebruikend Maven.
 
    ```shell
    mvn verify -Pui-tests-local-execution \
@@ -493,11 +498,11 @@ Voordat u UI-tests in een Cloud Manager-pipeline activeert, wordt het aanbevolen
 
 >[!NOTE]
 >
->* Dit begint een standalone selenium instantie en voert de tests tegen het uit.
+>* Met deze opdracht wordt een zelfstandige instantie van Selenium gestart en worden de tests tegen deze instantie uitgevoerd.
 >* De logbestanden worden opgeslagen in de map `target/reports` van uw opslagplaats
 >* U moet ervoor zorgen dat op uw computer de nieuwste Chrome-versie wordt uitgevoerd terwijl de test de meest recente release van ChromeDriver automatisch downloadt voor tests.
 >
->Voor details, zie [ AEM de bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+>Voor details, zie de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
 ### Voorbeeld van afspeelrechttest {#playwright-sample}
 
@@ -525,7 +530,7 @@ Voordat u UI-tests in een Cloud Manager-pipeline activeert, wordt het aanbevolen
 >
 >De logbestanden worden opgeslagen in de map `target/` van uw opslagplaats.
 >
->Voor details, zie [ AEM de bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+>Voor details, zie de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
 ### Java Selenium WebDriver Test Sample {#java-sample}
@@ -547,4 +552,4 @@ Voordat u UI-tests in een Cloud Manager-pipeline activeert, wordt het aanbevolen
 >
 >De logbestanden worden opgeslagen in de map `target/reports` van uw opslagplaats.
 >
->Voor details, zie [ AEM de bewaarplaats van de Steekproeven van de Test ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Voor details, zie de [ bewaarplaats van de Steekproeven van de Test van AEM ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

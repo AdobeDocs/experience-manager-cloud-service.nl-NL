@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 01fd825a64e0306f9e569075985bd30e1991634c
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe biedt de mogelijkheid om Dynatrace te gebruiken om AEM as a Cloud Service te bewaken als onderdeel van de implementatie van bedrijven, de oorzaak van mogelijke problemen te identificeren en actie te ondernemen om deze problemen indien nodig op te lossen.
 
-Met Dynatrace kunt u naadloze waarneming krijgen voor al uw AEM-toepassingen. Dynatrace biedt uitgebreide zichtbaarheid in de ervaring van eindgebruikers door uw AEM-toepassingen automatisch te detecteren en hun afhankelijkheden van de website naar de container naar de cloudservice te visualiseren. Intertwined met end-to-end sporen over elke rij en Reëel Toezicht van het Gebruik, neem uw AEM inhoud-geleide ervaringen tot het volgende niveau zonder hiaten of dode vlekken. Als er anomalieën optreden, worden deze door Dynatrace in realtime gediagnosticeerd met de Davis AI-engine en wordt de oorzaak van de beschadigde code aangegeven voordat de problemen bij uw klanten optreden. Hierdoor wordt de gemiddelde hersteltijd tot een minimum beperkt.
+Met Dynatrace kunt u naadloze waarneming krijgen voor al uw AEM-toepassingen. Dynatrace ontdekt uw AEM-apps en toont hun paden, van website tot container tot cloudservice, om de gebruikerservaring te onthullen. Intertwined met end-to-end sporen over elke rij en Reëel Toezicht van het Gebruik, neem uw AEM inhoud-geleide ervaringen tot het volgende niveau zonder hiaten of dode vlekken. Als er anomalieën optreden, stelt Dynatrace deze in real-time vast met de Davis AI-engine. Het benadrukt de worteloorzaak neer aan de gebroken code alvorens uw klanten worden beïnvloed, die de gemiddelde tijd minimaliseren om te herstellen.
 
 Meer over Dynatrace leren, zie de [ integratie van de Dienst van de Wolk van Adobe AEM ](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
@@ -31,16 +31,16 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 | **Gebied** | **Beschrijving** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | URL voor uw Dynatrace-omgeving.<br><br> voor klanten van Dynatrace SaaS, is het formaat `https://<your-environment-id>.live.dynatrace.com`.<br><br> Voor Dynatrace Managed-klanten is de indeling `https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | Je Dynatrace-omgeving-id. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u dit kunt verkrijgen. |
-| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u dit kunt verkrijgen.<br><br> dit zou als geheim moeten worden beschouwd, zo gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien. |
-| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van Dynatrace. Zie [ tot een toegangstoken van Dynatrace API ](#create-dynatrace-access-token) voor hoe te om dit tot stand te brengen.<br><br> dit zou als geheim moeten worden beschouwd zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien.<br> |
-| [!DNL Dynatrace ActiveGate Port] | De Dynatrace ActiveGate-poort waarmee de AEM-integratie verbinding moet maken.<br><br> Nota: Dit wordt slechts vereist voor Beheerde Dynatrace. |
+| [!DNL Dynatrace Environment ID] | Je Dynatrace-omgeving-id. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u het kunt ophalen. |
+| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u het kunt ophalen.<br><br> Dit teken zou als geheim moeten worden beschouwd, zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien. |
+| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van Dynatrace. Zie [ tot een de toegangstoken van Dynatrace API ](#create-dynatrace-access-token) voor hoe te om het tot stand te brengen.<br><br> Dit teken zou als geheim moeten worden beschouwd zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien.<br> |
+| [!DNL Dynatrace ActiveGate Port] | De Dynatrace ActiveGate-poort waarmee de AEM-integratie verbinding moet maken.<br><br> Deze haven wordt slechts vereist voor Beheerde Dynatrace. |
 | [!DNL Dynatrace ActiveGate Network Zone] | Uw [ het netwerkstreek van Dynatrace ActiveGate ](https://docs.dynatrace.com/docs/manage/network-zones) om AEM controlegegevens over gegevenscentra en netwerkgebieden efficiënt te leiden.<br><br> Nota: Een het netwerkstreek van Dynatrace ActiveGate is facultatief. |
-| [!DNL AEM Environment ID(s)] | De AEM-omgeving-id(s) die Dynatrace moet controleren. |
+| [!DNL AEM Environment IDs] | De AEM-omgeving-id of -id&#39;s die Dynatrace moet controleren. |
 
 >[!NOTE]
 >
->Als Dynatrace eenmaal is geïntegreerd, gaan de gegevens niet meer naar andere APM-gereedschappen, zoals New Relic, als deze voorheen was ingeschakeld.
+>Als Dynatrace eenmaal is geïntegreerd, worden de gegevens niet meer naar andere APM-gereedschappen, zoals New Relic, verzonden als deze voorheen was ingeschakeld.
 
 ## Veelgestelde vragen {#faq}
 
@@ -79,7 +79,7 @@ Meer over Dynatrace verlenen van vergunningen, zie het [ Abonnement van het Plat
 ### Een Dynatrace API-toegangstoken maken {#create-dynatrace-access-token}
 
 1. Meld u aan bij uw Dynatrace-omgeving.
-1. Ga naar **[!DNL Access tokens]** en selecteer **[!DNL Generate new token]** .
+1. Ga naar **[!DNL Access tokens]** en klik op de optie **[!DNL Generate new token]** .
 1. Definieer een [!DNL token name] .
 1. Stel het tokenbereik in op **[!DNL PaaS integration - Installer download]** .
 1. Selecteer **[!DNL Generate token]** .

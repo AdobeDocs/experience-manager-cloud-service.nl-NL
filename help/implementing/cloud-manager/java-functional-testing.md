@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+>Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Als u de inhoud van de map `it.tests` hebt, kunt u deze gebruiken als basis voor uw eigen tests en vervolgens:
 
@@ -32,15 +32,15 @@ Als u de inhoud van de map `it.tests` hebt, kunt u deze gebruiken als basis voor
 
 ## Aangepaste functionele tests schrijven {#writing-functional-tests}
 
-De zelfde hulpmiddelen die de Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [ product functionele tests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
+Dezelfde tools die Adobe gebruikt om functionele tests voor producten te schrijven, kunnen worden gebruikt om aangepaste functionele tests te schrijven. Gebruik de [ product functionele tests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
 
-De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Zie [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
+De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Zie [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
 
-De tests worden uitgevoerd op testinfrastructuur die door de Adobe wordt onderhouden, inclusief ten minste twee auteur-instanties, twee publiceer-instanties en een Dispatcher-configuratie. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel in werking stellen.
+De tests worden uitgevoerd op testinfrastructuren die door Adobe worden onderhouden, waaronder ten minste twee auteur-instanties, twee publiceer-instanties en een Dispatcher-configuratie. Dit betekent dat uw aangepaste functionele tests worden uitgevoerd op de hele AEM-stapel.
 
 ### Structuur van functionele tests {#functional-tests-structure}
 
-Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou deze build een aparte module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt doorgaans gemaakt met de `maven-assembly-plugin` met behulp van de `jar-with-dependencies` -descriptor.
+Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat door dezelfde Maven-build wordt geproduceerd als de artefacten die in AEM worden geïmplementeerd. Over het algemeen zou deze build een aparte module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt doorgaans gemaakt met de `maven-assembly-plugin` met behulp van de `jar-with-dependencies` -descriptor.
 
 Daarnaast moet voor de JAR de header `Cloud-Manager-TestType` manifest zijn ingesteld op `integration-test` .
 
@@ -107,12 +107,12 @@ Zie [`aem-testing-clients` reactie GitHub ](https://github.com/adobe/aem-testing
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0,5 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
 | Geheugen | 0,5 Gi | Hoeveelheid aan de test toegewezen geheugen, waarde in bytes |
-| Time-out | 30 m | De termijn waarna de test wordt stopgezet. |
-| Aanbevolen duur | 15 m | De Adobe beveelt aan de tests te schrijven zodat deze niet langer duren. |
+| Time-out | 30 m | De tijdslimiet waarna de test stopt. |
+| Aanbevolen duur | 15 m | Adobe raadt aan de tests te schrijven om deze tijd niet langer te laten duren. |
 
 >[!NOTE]
 >
-> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruiksscenario. Het team van de Adobe evalueert uw verzoek en biedt de gewenste hulp.
+> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruiksscenario. Het Adobe-team beoordeelt uw verzoek en biedt de juiste hulp.
 
 #### Afhankelijkheden
 
@@ -131,7 +131,7 @@ De aanstaande veranderingen in de containerized infrastructuur voor het uitvoere
 >[!NOTE]
 >
 >Deze wijziging moet worden uitgevoerd vóór 6 april 2024.
->Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, kan dit leiden tot mislukte pijplijnen bij de stap Aangepast functioneel testen.
+>>Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, kan dit leiden tot mislukte pijplijnen bij de stap Aangepast functioneel testen.
 
 ### Uitvoering lokale test {#local-test-execution}
 
