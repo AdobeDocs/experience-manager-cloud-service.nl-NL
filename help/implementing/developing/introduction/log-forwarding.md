@@ -4,9 +4,9 @@ description: Meer informatie over het doorsturen van logbestanden naar houtkapse
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 0%
 
 ---
@@ -23,80 +23,70 @@ Klanten met een licentie bij een logboekleverancier of die een logproduct hosten
   <tbody>
     <tr>
       <th>Logboektechnologie</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nee</td>
+      <td style="background-color: #ffb3b3;">Toekomst</td>
     </tr>
     <tr>
       <td>Azure Blob Storage</td>
-      <td>Nee</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>Nee</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nee</td>
+      <td style="background-color: #ffb3b3;">Toekomst</td>
     </tr>
     <tr>
       <td>Elasticsearch <br> OpenSearch</td>
-      <td>Nee</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>Nee</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nee</td>
+      <td style="background-color: #ffb3b3;">Toekomst</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>Nee</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>Sumo Logic</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nee</td>
+      <td style="background-color: #ffb3b3;">Toekomst</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Voor technologieën in Private Beta, gelieve te e-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
+> Voor de aanstaande Technologieën van het Logboek CDN die voor de toekomst worden gepland, gelieve te e-mailen [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om rente te registreren.
 
 Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en kan via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu te ontwikkelen. Het configuratiedossier kan aan de Milieu&#39;s van de Snelle Ontwikkeling (RDEs) worden opgesteld gebruikend bevellijn tooling.
 
@@ -116,7 +106,7 @@ Dit artikel is als volgt geordend:
 
 ## Instellen {#setup}
 
-1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0&rbrace; worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
+1. Maak een bestand met de naam `logForwarding.yaml` . Het zou meta-gegevens moeten bevatten, zoals die in het [ artikel van de Pijpleiding van de Configuratie 0} worden beschreven (](/help/operations/config-pipeline.md#common-syntax) soort **zou aan** moeten worden geplaatst en versie die aan &quot;1&quot;wordt geplaatst), met een configuratie gelijkend op het volgende (wij gebruiken Splunk als voorbeeld).`LogForwarding`
 
    ```yaml
    kind: "LogForwarding"
@@ -247,6 +237,8 @@ Voor CDN- logboeken, kunt u toestaan-lijst van de IP adressen, zoals die in [ wo
 >[!NOTE]
 >
 >Het is niet mogelijk voor CDN- logboeken om van het zelfde IP adres te verschijnen dat uw AEM logboeken van verschijnen, is dit omdat de logboeken direct van de Snelle en niet de Dienst van de Wolk van AEM worden verzonden.
+>
+>Om deze reden is het niet mogelijk Logboek te gebruiken dat met de Geavanceerde configuraties van VPN van het Voorzien van een netwerk door:sturen.
 
 ## Logboekdoelconfiguratie {#logging-destinations}
 
@@ -293,6 +285,9 @@ Met het IAM-beleid kan de gebruiker `s3:putObject` gebruiken.  Bijvoorbeeld:
 ```
 
 Zie {de Documentatie van het Beleid van het Emmertje van 0} AWS [ voor meer informatie over hoe te om uit te voeren.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
+
+>[!NOTE]
+>Ondersteuning voor CDN-logbestanden voor AWS S3 is gepland voor de toekomst. Gelieve te e-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om rente te registreren.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -449,7 +444,7 @@ data:
 
 #### HTTPS CDN-logbestanden {#https-cdn}
 
-De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.](#log-formats)
+De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
 
 Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde `aemcdn` .
 
@@ -459,7 +454,7 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 #### HTTPS AEM-logbestanden {#https-aem}
 
-Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0&rbrace;.](#log-formats)
+Voor de logboeken van AEM (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de [ hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.](#log-formats)
 
 Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
@@ -491,7 +486,7 @@ Bij Log Doorsturen naar New Relic wordt de New Relic HTTPS API gebruikt voor opn
 >
 >Log-forward naar New Relic is alleen beschikbaar voor New Relic-accounts die eigendom zijn van klanten.
 >
->E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
+>Ondersteuning voor CDN-logbestanden voor New Relic Log API is gepland voor de toekomst. Gelieve te e-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om rente te registreren.
 >
 >New Relic biedt regiospecifieke eindpunten op basis van waar uw New Relic-account is ingericht.  Zie {de documentatie van 0} New Relic [ voor verdere informatie.](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)
 
@@ -515,8 +510,7 @@ Het bereikattribuut &quot;Ingest Logs&quot; is vereist voor het token.
 ```
 
 >[!NOTE]
->
-> E-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om toegang te verzoeken.
+>Ondersteuning voor CDN-logbestanden voor Dynatrace Log API is gepland voor de toekomst. Gelieve te e-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om rente te registreren.
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>CDN-logondersteuning voor SumoLogic is gepland voor de toekomst. Gelieve te e-mail [ aemcs-logforwarding-beta@adobe.com ](mailto:aemcs-logforwarding-beta@adobe.com) om rente te registreren.
+>
 > U hebt een abonnement op Sumo Logic Enterprise nodig om de functionaliteit van het veld &quot;index&quot; te kunnen gebruiken.  Bij niet-Enterprise-abonnementen worden hun logbestanden standaard naar de `sumologic_default` -partitie gerouteerd.  Zie de [ Documentatie van de Partitionering van de Logica Sumo ](https://help.sumologic.com/docs/search/optimize-search-partitions/) voor meer informatie.
 
 ## Indelingen voor logbestandvermelding {#log-formats}
