@@ -22,19 +22,19 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend het [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+>Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend het [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Als u de inhoud van de map `it.tests` hebt, kunt u deze gebruiken als basis voor uw eigen tests en vervolgens:
 
-1. [ ontwikkelt uw testgevallen ](#writing-functional-tests).
-1. [ stel de tests plaatselijk in werking ](#local-test-execution).
+1. [&#x200B; ontwikkelt uw testgevallen &#x200B;](#writing-functional-tests).
+1. [&#x200B; stel de tests plaatselijk in werking &#x200B;](#local-test-execution).
 1. Leg uw code vast in de Cloud Manager-opslagplaats en voer een Cloud Manager-pijplijn uit.
 
 ## Aangepaste functionele tests schrijven {#writing-functional-tests}
 
-Dezelfde tools die Adobe gebruikt om functionele tests voor producten te schrijven, kunnen worden gebruikt om aangepaste functionele tests te schrijven. Gebruik de [ product functionele tests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
+Dezelfde tools die Adobe gebruikt om functionele tests voor producten te schrijven, kunnen worden gebruikt om aangepaste functionele tests te schrijven. Gebruik de [&#x200B; product functionele tests &#x200B;](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
 
-De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Zie [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
+De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Zie [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
 
 De tests worden uitgevoerd op testinfrastructuren die door Adobe worden onderhouden, waaronder ten minste twee auteur-instanties, twee publiceer-instanties en een Dispatcher-configuratie. Dit betekent dat uw aangepaste functionele tests worden uitgevoerd op de hele AEM-stapel.
 
@@ -86,11 +86,11 @@ Bovendien moet de testcode zich onder een pakket met de naam `it` bevinden om te
 
 De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig ontworpen en geconfigureerd dat deze compatibel is met de conventies die worden gebruikt in de testbibliotheek van `aem-testing-clients` . Ontwikkelaars worden aangeraden deze bibliotheek te gebruiken en de beste praktijken ervan te volgen.
 
-Zie [`aem-testing-clients` reactie GitHub ](https://github.com/adobe/aem-testing-clients) voor meer details.
+Zie [`aem-testing-clients` reactie GitHub &#x200B;](https://github.com/adobe/aem-testing-clients) voor meer details.
 
 >[!TIP]
 >
->[ bekijk deze video ](https://www.youtube.com/watch?v=yJX6r3xRLHU) over hoe u douane functionele tests kunt gebruiken om uw vertrouwen in uw pijpleidingen te verbeteren CI/CD.
+>[&#x200B; bekijk deze video &#x200B;](https://www.youtube.com/watch?v=yJX6r3xRLHU) over hoe u douane functionele tests kunt gebruiken om uw vertrouwen in uw pijpleidingen te verbeteren CI/CD.
 
 ### Vereisten {#prerequisites}
 
@@ -118,7 +118,7 @@ Zie [`aem-testing-clients` reactie GitHub ](https://github.com/adobe/aem-testing
 
 * aem-cloud-testing-clients:
 
-De aanstaande veranderingen in de containerized infrastructuur voor het uitvoeren van functionele tests vereisen het bijwerken van [ aem-wolk-test-cliënten ](https://github.com/adobe/aem-testing-clients) bibliotheek in uw douane functionele tests aan versie **1.2.1** of hoger. Zorg ervoor dat de afhankelijkheid in het `it.tests/pom.xml` -bestand overeenkomstig wordt bijgewerkt.
+De aanstaande veranderingen in de containerized infrastructuur voor het uitvoeren van functionele tests vereisen het bijwerken van [&#x200B; aem-wolk-test-cliënten &#x200B;](https://github.com/adobe/aem-testing-clients) bibliotheek in uw douane functionele tests aan versie **1.2.1** of hoger. Zorg ervoor dat de afhankelijkheid in het `it.tests/pom.xml` -bestand overeenkomstig wordt bijgewerkt.
 
 ```
 <dependency>
@@ -131,11 +131,11 @@ De aanstaande veranderingen in de containerized infrastructuur voor het uitvoere
 >[!NOTE]
 >
 >Deze wijziging moet worden uitgevoerd vóór 6 april 2024.
->>Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, kan dit leiden tot mislukte pijplijnen bij de stap Aangepast functioneel testen.
+>&#x200B;>Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, kan dit leiden tot mislukte pijplijnen bij de stap Aangepast functioneel testen.
 
 ### Uitvoering lokale test {#local-test-execution}
 
-Alvorens functionele tests in een pijpleiding van Cloud Manager te activeren, wordt het geadviseerd om de functionele tests plaatselijk in werking te stellen gebruikend [ AEM as a Cloud Service SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of een daadwerkelijke instantie van AEM as a Cloud Service.
+Alvorens functionele tests in een pijpleiding van Cloud Manager te activeren, wordt het geadviseerd om de functionele tests plaatselijk in werking te stellen gebruikend [&#x200B; AEM as a Cloud Service SDK &#x200B;](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of een daadwerkelijke instantie van AEM as a Cloud Service.
 
 #### Het lopen in winde {#running-in-an-ide}
 
